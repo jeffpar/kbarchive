@@ -6,6 +6,8 @@ permalink: /kb/132/Q132713/
 
 ## Q132713: Event ID 22 Appears After Upgrading to Windows NT 3.51
 
+{% raw %}
+
 	Article: Q132713
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -83,3 +85,5 @@ permalink: /kb/132/Q132713/
 	
 	=============================================================================
 	
+
+{% endraw %}

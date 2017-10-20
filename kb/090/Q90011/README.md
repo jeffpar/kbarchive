@@ -6,6 +6,8 @@ permalink: /kb/090/Q90011/
 
 ## Q90011: ClipBook Viewer: Page-Sharing Problems
 
+{% raw %}
+
 	Article: Q90011
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -73,3 +75,5 @@ permalink: /kb/090/Q90011/
 	
 	=============================================================================
 	
+
+{% endraw %}

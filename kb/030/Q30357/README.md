@@ -6,6 +6,8 @@ permalink: /kb/030/Q30357/
 
 ## Q30357: &quot;Type Mismatch&quot; Appears When Typing % to Respond to INPUT
 
+{% raw %}
+
 	Article: Q30357
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -29,3 +31,5 @@ permalink: /kb/030/Q30357/
 	
 	INPUT "Enter an integer: ",I%   ' type just % in response to the input.
 	PRINT I%
+
+{% endraw %}

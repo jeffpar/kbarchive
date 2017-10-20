@@ -6,6 +6,8 @@ permalink: /kb/247/Q247382/
 
 ## Q247382: PRB: ToolTips for Controls in ActiveX Document Server Are Hidden
 
+{% raw %}
+
 	Article: Q247382
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -138,3 +140,5 @@ permalink: /kb/247/Q247382/
 	
 	=============================================================================
 	
+
+{% endraw %}

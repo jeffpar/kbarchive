@@ -6,6 +6,8 @@ permalink: /kb/039/Q39020/
 
 ## Q39020: Error U2155 Modulename : Module Not In Library; Ignored
 
+{% raw %}
+
 	Article: Q39020
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -35,3 +37,5 @@ permalink: /kb/039/Q39020/
 	
 	A hyphen (dash, - ) in a subdirectory name in the path can cause this
 	error; this error occurs because of a problem in LIB.
+
+{% endraw %}

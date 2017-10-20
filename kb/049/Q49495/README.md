@@ -6,6 +6,8 @@ permalink: /kb/049/Q49495/
 
 ## Q49495: FIX: F1001: ctypes.c When FORTRAN Program Contains &#36;NOLOOPOPT
 
+{% raw %}
+
 	Article: Q49495
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.0,5.1
@@ -77,3 +79,5 @@ permalink: /kb/049/Q49495/
 	
 	=============================================================================
 	
+
+{% endraw %}

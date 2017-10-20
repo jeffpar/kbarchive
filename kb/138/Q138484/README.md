@@ -6,6 +6,8 @@ permalink: /kb/138/Q138484/
 
 ## Q138484: Incorrect Placement When Minimizing Telnet Window
 
+{% raw %}
+
 	Article: Q138484
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -47,3 +49,5 @@ permalink: /kb/138/Q138484/
 	
 	=============================================================================
 	
+
+{% endraw %}

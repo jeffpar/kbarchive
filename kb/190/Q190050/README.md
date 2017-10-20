@@ -6,6 +6,8 @@ permalink: /kb/190/Q190050/
 
 ## Q190050: PRB: BuildFile Property of DHTML Application Is Missing
 
+{% raw %}
+
 	Article: Q190050
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0;
@@ -72,3 +74,5 @@ permalink: /kb/190/Q190050/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163814/
 
 ## Q163814: Directory Replication Errors 3208 and 3216 on an NTFS Partition
 
+{% raw %}
+
 	Article: Q163814
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.5 3.51 4.0
@@ -66,3 +68,5 @@ permalink: /kb/163/Q163814/
 	
 	=============================================================================
 	
+
+{% endraw %}

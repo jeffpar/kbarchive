@@ -6,6 +6,8 @@ permalink: /kb/199/Q199848/
 
 ## Q199848: BUG: Fatal Error When Releasing a Converted FoxPro 2.x Form
 
+{% raw %}
+
 	Article: Q199848
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -206,3 +208,5 @@ permalink: /kb/199/Q199848/
 	
 	=============================================================================
 	
+
+{% endraw %}

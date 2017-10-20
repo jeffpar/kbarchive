@@ -6,6 +6,8 @@ permalink: /kb/034/Q34913/
 
 ## Q34913: QB.EXE &quot;String Space Corrupt&quot; Editing First Label in SUB
 
+{% raw %}
+
 	Article: Q34913
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -35,3 +37,5 @@ permalink: /kb/034/Q34913/
 	
 	This problem does not occur if the subroutine has parameters, or if the
 	first line in the subprogram contains anything other than a label.
+
+{% endraw %}

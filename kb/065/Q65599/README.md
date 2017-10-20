@@ -6,6 +6,8 @@ permalink: /kb/065/Q65599/
 
 ## Q65599: SELECT CASE Documentation Error in &quot;Learn BASIC Now&quot;, MS Press
 
+{% raw %}
+
 	Article: Q65599
 	Product(s): See article
 	Version(s): 4.50
@@ -75,3 +77,5 @@ permalink: /kb/065/Q65599/
 	QBI.EXE version 1.00 has the same language features as QuickBASIC
 	version 4.50, but note that QBI.EXE is just an interpreter and cannot
 	create .EXE programs.
+
+{% endraw %}

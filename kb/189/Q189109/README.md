@@ -6,6 +6,8 @@ permalink: /kb/189/Q189109/
 
 ## Q189109: BUG: Printing 'Find in Files' Adds alt-0176 After File Name
 
+{% raw %}
+
 	Article: Q189109
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0
@@ -66,3 +68,5 @@ permalink: /kb/189/Q189109/
 	
 	=============================================================================
 	
+
+{% endraw %}

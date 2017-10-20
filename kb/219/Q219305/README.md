@@ -6,6 +6,8 @@ permalink: /kb/219/Q219305/
 
 ## Q219305: Computer Stops Responding While Viewing Record in Event Viewer
 
+{% raw %}
+
 	Article: Q219305
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/219/Q219305/
 	
 	=============================================================================
 	
+
+{% endraw %}

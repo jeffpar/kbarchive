@@ -6,6 +6,8 @@ permalink: /kb/224/Q224286/
 
 ## Q224286: SMS: Client Accounts Used in Software Distribution
 
+{% raw %}
+
 	Article: Q224286
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -137,3 +139,5 @@ permalink: /kb/224/Q224286/
 	
 	=============================================================================
 	
+
+{% endraw %}

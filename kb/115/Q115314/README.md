@@ -6,6 +6,8 @@ permalink: /kb/115/Q115314/
 
 ## Q115314: File Manager Error Copying Files to Write-Protected Disk
 
+{% raw %}
+
 	Article: Q115314
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/115/Q115314/
 	
 	=============================================================================
 	
+
+{% endraw %}

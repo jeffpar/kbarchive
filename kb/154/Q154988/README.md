@@ -6,6 +6,8 @@ permalink: /kb/154/Q154988/
 
 ## Q154988: Troubleshooting Fast EtherLink and EtherLink III (R) Adapters
 
+{% raw %}
+
 	Article: Q154988
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -80,3 +82,5 @@ permalink: /kb/154/Q154988/
 	
 	=============================================================================
 	
+
+{% endraw %}

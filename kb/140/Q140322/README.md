@@ -6,6 +6,8 @@ permalink: /kb/140/Q140322/
 
 ## Q140322: FIX: GDI Resource Leak in Visual FoxPro DE in Windows 95
 
+{% raw %}
+
 	Article: Q140322
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -92,3 +94,5 @@ permalink: /kb/140/Q140322/
 	
 	=============================================================================
 	
+
+{% endraw %}

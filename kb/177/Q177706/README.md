@@ -6,6 +6,8 @@ permalink: /kb/177/Q177706/
 
 ## Q177706: SMS: Missing DLLs Cause an Access Violation with Audit32
 
+{% raw %}
+
 	Article: Q177706
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -51,3 +53,5 @@ permalink: /kb/177/Q177706/
 	
 	=============================================================================
 	
+
+{% endraw %}

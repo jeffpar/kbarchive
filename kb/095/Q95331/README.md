@@ -6,6 +6,8 @@ permalink: /kb/095/Q95331/
 
 ## Q95331: Novell Connectivity Limited to One Network Adapter
 
+{% raw %}
+
 	Article: Q95331
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -117,3 +119,5 @@ permalink: /kb/095/Q95331/
 	
 	=============================================================================
 	
+
+{% endraw %}

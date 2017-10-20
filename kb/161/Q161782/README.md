@@ -6,6 +6,8 @@ permalink: /kb/161/Q161782/
 
 ## Q161782: SMS: Stop 0xC000021a Error with SMS Remote Agent Installed
 
+{% raw %}
+
 	Article: Q161782
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,3.5,3.5 SP1,3.5 SP2,3.5 SP3,3.51,3.51 SP1,3.51 SP2,3.51 SP3,3.51 SP4,3.51 SP5
@@ -67,3 +69,5 @@ permalink: /kb/161/Q161782/
 	
 	=============================================================================
 	
+
+{% endraw %}

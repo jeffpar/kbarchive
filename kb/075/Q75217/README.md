@@ -6,6 +6,8 @@ permalink: /kb/075/Q75217/
 
 ## Q75217: Xerox Ventura Publisher Behaves Erratically
 
+{% raw %}
+
 	Article: Q75217
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -51,3 +53,5 @@ permalink: /kb/075/Q75217/
 	
 	=============================================================================
 	
+
+{% endraw %}

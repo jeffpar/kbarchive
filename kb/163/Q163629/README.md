@@ -6,6 +6,8 @@ permalink: /kb/163/Q163629/
 
 ## Q163629: Schedule+ Cannot Print Notes or Meeting Attendees
 
+{% raw %}
+
 	Article: Q163629
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -48,3 +50,5 @@ permalink: /kb/163/Q163629/
 	
 	=============================================================================
 	
+
+{% endraw %}

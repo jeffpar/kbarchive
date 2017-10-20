@@ -6,6 +6,8 @@ permalink: /kb/051/Q51597/
 
 ## Q51597: In .EXE, PAINT Used in a SUB Can Corrupt Passed Variables
 
+{% raw %}
+
 	Article: Q51597
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -64,3 +66,5 @@ permalink: /kb/051/Q51597/
 	This problem was corrected in Microsoft BASIC Compiler 7.00.
 	
 	Additional reference word: SR# S891128-117
+
+{% endraw %}

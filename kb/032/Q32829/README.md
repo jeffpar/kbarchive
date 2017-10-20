@@ -6,6 +6,8 @@ permalink: /kb/032/Q32829/
 
 ## Q32829: PRB: L1089 Error, TMP Environment Variable Missing, Incorrect
 
+{% raw %}
+
 	Article: Q32829
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.x,4.x,5.0x,5.1,5.11,5.13,5.15,5.3,5.31.009,5.5,5.6
@@ -50,3 +52,5 @@ permalink: /kb/032/Q32829/
 	
 	=============================================================================
 	
+
+{% endraw %}

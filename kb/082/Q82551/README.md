@@ -6,6 +6,8 @@ permalink: /kb/082/Q82551/
 
 ## Q82551: GP Faults in Excel on Corrupted Spreadsheets
 
+{% raw %}
+
 	Article: Q82551
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -41,3 +43,5 @@ permalink: /kb/082/Q82551/
 	
 	=============================================================================
 	
+
+{% endraw %}

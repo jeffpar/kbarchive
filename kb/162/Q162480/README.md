@@ -6,6 +6,8 @@ permalink: /kb/162/Q162480/
 
 ## Q162480: WD97: How Word Converts Execute-Only Macros
 
+{% raw %}
+
 	Article: Q162480
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -113,3 +115,5 @@ permalink: /kb/162/Q162480/
 	
 	=============================================================================
 	
+
+{% endraw %}

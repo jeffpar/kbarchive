@@ -6,6 +6,8 @@ permalink: /kb/120/Q120200/
 
 ## Q120200: PPT: Summary of TAB Key Usage with Text and Objects
 
+{% raw %}
+
 	Article: Q120200
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,7.0
@@ -75,3 +77,5 @@ permalink: /kb/120/Q120200/
 	
 	=============================================================================
 	
+
+{% endraw %}

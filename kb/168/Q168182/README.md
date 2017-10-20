@@ -6,6 +6,8 @@ permalink: /kb/168/Q168182/
 
 ## Q168182: XCLN: Wizard Doesn't Migrate Schedule+ Info to Outlook Calendar
 
+{% raw %}
+
 	Article: Q168182
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/168/Q168182/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199114/
 
 ## Q199114: SMS: How to Configure Traveling Mode on Client Computers
 
+{% raw %}
+
 	Article: Q199114
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -91,3 +93,5 @@ permalink: /kb/199/Q199114/
 	
 	=============================================================================
 	
+
+{% endraw %}

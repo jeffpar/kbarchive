@@ -6,6 +6,8 @@ permalink: /kb/249/Q249243/
 
 ## Q249243: XWEB: Appointments Created in OWA Appear Shifted One Hour Ahead
 
+{% raw %}
+
 	Article: Q249243
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP3
@@ -121,3 +123,5 @@ permalink: /kb/249/Q249243/
 	
 	=============================================================================
 	
+
+{% endraw %}

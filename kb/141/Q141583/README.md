@@ -6,6 +6,8 @@ permalink: /kb/141/Q141583/
 
 ## Q141583: CONN: Setup Error Indicates Duplicate Gateway
 
+{% raw %}
+
 	Article: Q141583
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -105,3 +107,5 @@ permalink: /kb/141/Q141583/
 	
 	=============================================================================
 	
+
+{% endraw %}

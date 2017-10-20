@@ -6,6 +6,8 @@ permalink: /kb/118/Q118665/
 
 ## Q118665: How to Install ISDN on WFWG 3.11 RAS
 
+{% raw %}
+
 	Article: Q118665
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11
@@ -180,3 +182,5 @@ permalink: /kb/118/Q118665/
 	
 	=============================================================================
 	
+
+{% endraw %}

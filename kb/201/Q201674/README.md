@@ -6,6 +6,8 @@ permalink: /kb/201/Q201674/
 
 ## Q201674: Reference Suite 99: Locations of Network Administrator's Guides
 
+{% raw %}
+
 	Article: Q201674
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/201/Q201674/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130291/
 
 ## Q130291: Mac 3270 Err Msg After Installing Windows NT 3.5 Service Pack 2
 
+{% raw %}
+
 	Article: Q130291
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2; win
@@ -75,3 +77,5 @@ permalink: /kb/130/Q130291/
 	
 	=============================================================================
 	
+
+{% endraw %}

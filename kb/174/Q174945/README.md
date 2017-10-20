@@ -6,6 +6,8 @@ permalink: /kb/174/Q174945/
 
 ## Q174945: How to Prevent MSCS from Using Specific Networks
 
+{% raw %}
+
 	Article: Q174945
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/174/Q174945/
 	
 	=============================================================================
 	
+
+{% endraw %}

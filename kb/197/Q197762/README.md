@@ -6,6 +6,8 @@ permalink: /kb/197/Q197762/
 
 ## Q197762: Windows NT ResKit WebAdmin Tool Cannot Change Password from BDC
 
+{% raw %}
+
 	Article: Q197762
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/197/Q197762/
 	
 	=============================================================================
 	
+
+{% endraw %}

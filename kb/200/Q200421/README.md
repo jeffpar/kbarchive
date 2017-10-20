@@ -6,6 +6,8 @@ permalink: /kb/200/Q200421/
 
 ## Q200421: HOWTO: Enhance File Open Dialog with Multiple Extension Filters
 
+{% raw %}
+
 	Article: Q200421
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -178,8 +180,8 @@ permalink: /kb/200/Q200421/
 	  b. In your implementation file, add the following code:
 	
 	  BEGIN_MESSAGE_MAP(CMultiExtFilterFileDialog, CFileDialog)
-	      //{ {AFX_MSG_MAP(CMultiExtFilterFileDialog)
-	      //} }AFX_MSG_MAP
+	      //{{AFX_MSG_MAP(CMultiExtFilterFileDialog)
+	      //}}AFX_MSG_MAP
 	      ON_MESSAGE(WM_SETUP_FLAGS, OnSetupFlags)
 	  END_MESSAGE_MAP()
 	
@@ -220,3 +222,5 @@ permalink: /kb/200/Q200421/
 	
 	=============================================================================
 	
+
+{% endraw %}

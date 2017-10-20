@@ -6,6 +6,8 @@ permalink: /kb/058/Q58961/
 
 ## Q58961: If .DLL Is Linked with CRTLIB, Then .EXE Must Be Linked, Too
 
+{% raw %}
+
 	Article: Q58961
 	Product(s): See article
 	Version(s): 5.10
@@ -50,3 +52,5 @@ permalink: /kb/058/Q58961/
 	For further information, query on the following words:
 	
 	   CRTLIB and DLL
+
+{% endraw %}

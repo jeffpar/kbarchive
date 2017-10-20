@@ -6,6 +6,8 @@ permalink: /kb/095/Q95973/
 
 ## Q95973: Using the Toshiba T5100 with Windows
 
+{% raw %}
+
 	Article: Q95973
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -115,3 +117,5 @@ permalink: /kb/095/Q95973/
 	
 	=============================================================================
 	
+
+{% endraw %}

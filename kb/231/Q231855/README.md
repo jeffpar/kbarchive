@@ -6,6 +6,8 @@ permalink: /kb/231/Q231855/
 
 ## Q231855: Wordpad.exe May Delete a File With Read Only Permissions
 
+{% raw %}
+
 	Article: Q231855
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -89,3 +91,5 @@ permalink: /kb/231/Q231855/
 	
 	=============================================================================
 	
+
+{% endraw %}

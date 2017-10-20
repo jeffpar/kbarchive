@@ -6,6 +6,8 @@ permalink: /kb/077/Q77471/
 
 ## Q77471: Knowledge Dynamics INSTALL.EXE and MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q77471
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -65,3 +67,5 @@ permalink: /kb/077/Q77471/
 	
 	=============================================================================
 	
+
+{% endraw %}

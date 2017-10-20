@@ -6,6 +6,8 @@ permalink: /kb/140/Q140502/
 
 ## Q140502: FIX: ClassView Cannot Find Function That Has Been Moved
 
+{% raw %}
+
 	Article: Q140502
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,5.0
@@ -83,3 +85,5 @@ permalink: /kb/140/Q140502/
 	
 	=============================================================================
 	
+
+{% endraw %}

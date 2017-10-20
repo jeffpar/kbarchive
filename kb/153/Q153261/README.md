@@ -6,6 +6,8 @@ permalink: /kb/153/Q153261/
 
 ## Q153261: INVDOS Fatal Error on Win95 Without TCP/IP Installed
 
+{% raw %}
+
 	Article: Q153261
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -46,3 +48,5 @@ permalink: /kb/153/Q153261/
 	
 	=============================================================================
 	
+
+{% endraw %}

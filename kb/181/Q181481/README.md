@@ -6,6 +6,8 @@ permalink: /kb/181/Q181481/
 
 ## Q181481: XFOR: Non-Delivery Report When Using SSL Without Authentication
 
+{% raw %}
+
 	Article: Q181481
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -52,3 +54,5 @@ permalink: /kb/181/Q181481/
 	
 	=============================================================================
 	
+
+{% endraw %}

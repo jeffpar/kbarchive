@@ -6,6 +6,8 @@ permalink: /kb/134/Q134394/
 
 ## Q134394: FIX: Unhandled Exception Win32S Error on Visual FoxPro Startup
 
+{% raw %}
+
 	Article: Q134394
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -100,3 +102,5 @@ permalink: /kb/134/Q134394/
 	
 	=============================================================================
 	
+
+{% endraw %}

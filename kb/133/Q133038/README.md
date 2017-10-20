@@ -6,6 +6,8 @@ permalink: /kb/133/Q133038/
 
 ## Q133038: Crystal Reports Cannot Find DLL Files in Windows NT
 
+{% raw %}
+
 	Article: Q133038
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:3.5,3.51
@@ -49,3 +51,5 @@ permalink: /kb/133/Q133038/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235707/
 
 ## Q235707: Frequently Asked Questions (FAQ) About VBCE 6.0
 
+{% raw %}
+
 	Article: Q235707
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -391,3 +393,5 @@ permalink: /kb/235/Q235707/
 	
 	=============================================================================
 	
+
+{% endraw %}

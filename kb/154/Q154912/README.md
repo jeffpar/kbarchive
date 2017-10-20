@@ -6,6 +6,8 @@ permalink: /kb/154/Q154912/
 
 ## Q154912: Novell's NPRINT Command Does Not Work in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q154912
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -40,3 +42,5 @@ permalink: /kb/154/Q154912/
 	
 	=============================================================================
 	
+
+{% endraw %}

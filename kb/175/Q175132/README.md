@@ -6,6 +6,8 @@ permalink: /kb/175/Q175132/
 
 ## Q175132: MGET Command Returns Unintelligible Characters from IBM Host
 
+{% raw %}
+
 	Article: Q175132
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/175/Q175132/
 	
 	=============================================================================
 	
+
+{% endraw %}

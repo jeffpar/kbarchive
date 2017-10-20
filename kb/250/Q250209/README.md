@@ -6,6 +6,8 @@ permalink: /kb/250/Q250209/
 
 ## Q250209: Printing to LPR Port Does Not Succeed
 
+{% raw %}
+
 	Article: Q250209
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -103,3 +105,5 @@ permalink: /kb/250/Q250209/
 	
 	=============================================================================
 	
+
+{% endraw %}

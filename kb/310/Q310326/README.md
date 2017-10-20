@@ -6,6 +6,8 @@ permalink: /kb/310/Q310326/
 
 ## Q310326: DOC: SourceSafe - Change Password Topic in Help is Incorrect
 
+{% raw %}
+
 	Article: Q310326
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,4.0a,5.0,6.0
@@ -66,3 +68,5 @@ permalink: /kb/310/Q310326/
 	
 	=============================================================================
 	
+
+{% endraw %}

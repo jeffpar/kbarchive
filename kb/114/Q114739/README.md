@@ -6,6 +6,8 @@ permalink: /kb/114/Q114739/
 
 ## Q114739: AppleTalk Print Jobs Stay in Queue and Don't Print
 
+{% raw %}
+
 	Article: Q114739
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -49,3 +51,5 @@ permalink: /kb/114/Q114739/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238272/
 
 ## Q238272: BUG: Show Difference Causes VSS to Hang on Large Text Files
 
+{% raw %}
+
 	Article: Q238272
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/238/Q238272/
 	
 	=============================================================================
 	
+
+{% endraw %}

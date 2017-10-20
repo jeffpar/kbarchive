@@ -6,6 +6,8 @@ permalink: /kb/162/Q162514/
 
 ## Q162514: WINSLI Thunking WinSliCleanup() Closes All Instances
 
+{% raw %}
+
 	Article: Q162514
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -81,3 +83,5 @@ permalink: /kb/162/Q162514/
 	
 	=============================================================================
 	
+
+{% endraw %}

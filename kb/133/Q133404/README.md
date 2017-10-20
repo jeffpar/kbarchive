@@ -6,6 +6,8 @@ permalink: /kb/133/Q133404/
 
 ## Q133404: Timex Data Link Stores Phone Numbers of Up to 12 Digits
 
+{% raw %}
+
 	Article: Q133404
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -53,3 +55,5 @@ permalink: /kb/133/Q133404/
 	
 	=============================================================================
 	
+
+{% endraw %}

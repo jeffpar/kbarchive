@@ -6,6 +6,8 @@ permalink: /kb/130/Q130738/
 
 ## Q130738: Persistent NetWare Connections Unavailable After Upgrading
 
+{% raw %}
+
 	Article: Q130738
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -53,3 +55,5 @@ permalink: /kb/130/Q130738/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196822/
 
 ## Q196822: INFO: Files Installed Windows 98&#92;SYSTEM Folder by MSDN Step 5
 
+{% raw %}
+
 	Article: Q196822
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -65,3 +67,5 @@ permalink: /kb/196/Q196822/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111336/
 
 ## Q111336: BUG: R2_XORPEN Binary ROP Code Ignored for Wide Pens
 
+{% raw %}
+
 	Article: Q111336
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -43,3 +45,5 @@ permalink: /kb/111/Q111336/
 	
 	=============================================================================
 	
+
+{% endraw %}

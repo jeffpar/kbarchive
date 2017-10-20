@@ -6,6 +6,8 @@ permalink: /kb/176/Q176400/
 
 ## Q176400: HOWTO: Print the WebBrowser Control
 
+{% raw %}
+
 	Article: Q176400
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -133,3 +135,5 @@ permalink: /kb/176/Q176400/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153925/
 
 ## Q153925: FAQ: How Can I Find Out if My VSS Database Has Been Upgraded?
 
+{% raw %}
+
 	Article: Q153925
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/153/Q153925/
 	
 	=============================================================================
 	
+
+{% endraw %}

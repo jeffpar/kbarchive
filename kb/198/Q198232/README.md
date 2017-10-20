@@ -6,6 +6,8 @@ permalink: /kb/198/Q198232/
 
 ## Q198232: PRB: Delete All Columns in the List Control
 
+{% raw %}
+
 	Article: Q198232
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0,6.0
@@ -142,3 +144,5 @@ permalink: /kb/198/Q198232/
 	
 	=============================================================================
 	
+
+{% endraw %}

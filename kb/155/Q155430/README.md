@@ -6,6 +6,8 @@ permalink: /kb/155/Q155430/
 
 ## Q155430: XCLN: ErrMsg: No Transport Provider was Available for Delivery
 
+{% raw %}
+
 	Article: Q155430
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -64,3 +66,5 @@ permalink: /kb/155/Q155430/
 	
 	=============================================================================
 	
+
+{% endraw %}

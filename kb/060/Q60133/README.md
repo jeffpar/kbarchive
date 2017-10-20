@@ -6,6 +6,8 @@ permalink: /kb/060/Q60133/
 
 ## Q60133: Description of How LOCATE Can Change the Cursor Size
 
+{% raw %}
+
 	Article: Q60133
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -83,3 +85,5 @@ permalink: /kb/060/Q60133/
 	  CLS
 	  LOCATE 10, 10, 1, StartLine%, StopLine%
 	LOOP
+
+{% endraw %}

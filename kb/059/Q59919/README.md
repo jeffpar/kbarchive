@@ -6,6 +6,8 @@ permalink: /kb/059/Q59919/
 
 ## Q59919: Mac Hyp: disposeMessageList Releases Memory in Server
 
+{% raw %}
+
 	Article: Q59919
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -42,3 +44,5 @@ permalink: /kb/059/Q59919/
 	
 	=============================================================================
 	
+
+{% endraw %}

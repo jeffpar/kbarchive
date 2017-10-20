@@ -6,6 +6,8 @@ permalink: /kb/031/Q31911/
 
 ## Q31911: How to Nest User-Defined TYPE Declarations in Compiled BASIC
 
+{% raw %}
+
 	Article: Q31911
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/031/Q31911/
 	t(1).n.y = "test"
 	PRINT k.n.x
 	PRINT t(1).n.y
+
+{% endraw %}

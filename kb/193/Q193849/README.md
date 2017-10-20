@@ -6,6 +6,8 @@ permalink: /kb/193/Q193849/
 
 ## Q193849: INFO: WhatsThisHelp is Different in Visual FoxPro 6.0
 
+{% raw %}
+
 	Article: Q193849
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -70,3 +72,5 @@ permalink: /kb/193/Q193849/
 	
 	=============================================================================
 	
+
+{% endraw %}

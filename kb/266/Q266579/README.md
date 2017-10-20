@@ -6,6 +6,8 @@ permalink: /kb/266/Q266579/
 
 ## Q266579: Encarta 2001: HTML Formatting Lost When Using Encarta Researcher
 
+{% raw %}
+
 	Article: Q266579
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/266/Q266579/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/309/Q309695/
 
 ## Q309695: Zoo Tycoon: Known Video Issues
 
+{% raw %}
+
 	Article: Q309695
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/309/Q309695/
 	
 	=============================================================================
 	
+
+{% endraw %}

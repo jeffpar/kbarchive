@@ -6,6 +6,8 @@ permalink: /kb/071/Q71989/
 
 ## Q71989: IBMCACHE.SYS Will Not Load If HIMEM.SYS Is Loaded
 
+{% raw %}
+
 	Article: Q71989
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.0,4.01,4.01a,5.0
@@ -58,3 +60,5 @@ permalink: /kb/071/Q71989/
 	
 	=============================================================================
 	
+
+{% endraw %}

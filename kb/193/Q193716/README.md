@@ -6,6 +6,8 @@ permalink: /kb/193/Q193716/
 
 ## Q193716: WD97: How to Use Microsoft Access 97 Data in Word
 
+{% raw %}
+
 	Article: Q193716
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -285,3 +287,5 @@ permalink: /kb/193/Q193716/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83708/
 
 ## Q83708: &quot;sLanguage=&lt;string&gt;&quot; Is Not Inserted into the WIN.INI File
 
+{% raw %}
+
 	Article: Q83708
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -70,3 +72,5 @@ permalink: /kb/083/Q83708/
 	
 	=============================================================================
 	
+
+{% endraw %}

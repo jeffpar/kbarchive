@@ -6,6 +6,8 @@ permalink: /kb/145/Q145731/
 
 ## Q145731: BUG: Z-Order Behavior Different with OLE (.OCX) Controls
 
+{% raw %}
+
 	Article: Q145731
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -235,3 +237,5 @@ permalink: /kb/145/Q145731/
 	
 	=============================================================================
 	
+
+{% endraw %}

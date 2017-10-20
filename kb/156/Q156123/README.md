@@ -6,6 +6,8 @@ permalink: /kb/156/Q156123/
 
 ## Q156123: Manic Marbles Trial Version: Known Issues
 
+{% raw %}
+
 	Article: Q156123
 	Product(s): Microsoft Home Kids Products
 	Version(s): Trial Version; WINDOWS:95
@@ -57,3 +59,5 @@ permalink: /kb/156/Q156123/
 	
 	=============================================================================
 	
+
+{% endraw %}

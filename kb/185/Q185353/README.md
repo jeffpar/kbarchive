@@ -6,6 +6,8 @@ permalink: /kb/185/Q185353/
 
 ## Q185353: SMS: Client Inventory Record Only Shows Ident. and NetMon Data
 
+{% raw %}
+
 	Article: Q185353
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -99,3 +101,5 @@ permalink: /kb/185/Q185353/
 	
 	=============================================================================
 	
+
+{% endraw %}

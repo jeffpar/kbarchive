@@ -6,6 +6,8 @@ permalink: /kb/196/Q196030/
 
 ## Q196030: XCLN: The Attachment Is a Type That Is Not Yet Supported
 
+{% raw %}
+
 	Article: Q196030
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -59,3 +61,5 @@ permalink: /kb/196/Q196030/
 	
 	=============================================================================
 	
+
+{% endraw %}

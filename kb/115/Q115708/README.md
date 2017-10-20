@@ -6,6 +6,8 @@ permalink: /kb/115/Q115708/
 
 ## Q115708: FIX: C++ Compiler Treats &amp;array&#91;&#93;&#91;&#93; as 2-D Array of References
 
+{% raw %}
+
 	Article: Q115708
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/115/Q115708/
 	
 	=============================================================================
 	
+
+{% endraw %}

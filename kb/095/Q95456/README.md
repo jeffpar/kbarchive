@@ -6,6 +6,8 @@ permalink: /kb/095/Q95456/
 
 ## Q95456: Overview of Printer Font Metrics (PFM) Files
 
+{% raw %}
+
 	Article: Q95456
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/095/Q95456/
 	
 	=============================================================================
 	
+
+{% endraw %}

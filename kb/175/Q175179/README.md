@@ -6,6 +6,8 @@ permalink: /kb/175/Q175179/
 
 ## Q175179: SAMPLE: VBFTP.EXE: Implementing FTP Using WinInet API from VB
 
+{% raw %}
+
 	Article: Q175179
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -85,3 +87,5 @@ permalink: /kb/175/Q175179/
 	
 	=============================================================================
 	
+
+{% endraw %}

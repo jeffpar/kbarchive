@@ -6,6 +6,8 @@ permalink: /kb/263/Q263697/
 
 ## Q263697: AoE II: How To Use the Map Editor to Place Natural Resources
 
+{% raw %}
+
 	Article: Q263697
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -59,3 +61,5 @@ permalink: /kb/263/Q263697/
 	
 	=============================================================================
 	
+
+{% endraw %}

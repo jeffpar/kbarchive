@@ -6,6 +6,8 @@ permalink: /kb/134/Q134589/
 
 ## Q134589: Some Programs May Not Print in Windows 95
 
+{% raw %}
+
 	Article: Q134589
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134589/
 	
 	=============================================================================
 	
+
+{% endraw %}

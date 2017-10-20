@@ -6,6 +6,8 @@ permalink: /kb/034/Q34274/
 
 ## Q34274: How to Perform Spell Checking in M
 
+{% raw %}
+
 	Article: Q34274
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -40,3 +42,5 @@ permalink: /kb/034/Q34274/
 	   4. The Shell command invokes COMMAND.COM and passes it the
 	      spell-am command. When spell-am completes its spell-check,
 	      it will return to the editor.
+
+{% endraw %}

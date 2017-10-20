@@ -6,6 +6,8 @@ permalink: /kb/225/Q225138/
 
 ## Q225138: SMSINST: SMS Installer Messages Truncated After Editing
 
+{% raw %}
+
 	Article: Q225138
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0
@@ -74,3 +76,5 @@ permalink: /kb/225/Q225138/
 	
 	=============================================================================
 	
+
+{% endraw %}

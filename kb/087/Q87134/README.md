@@ -6,6 +6,8 @@ permalink: /kb/087/Q87134/
 
 ## Q87134: Setting Up a 3Station to Remote Boot
 
+{% raw %}
+
 	Article: Q87134
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/087/Q87134/
 	
 	=============================================================================
 	
+
+{% endraw %}

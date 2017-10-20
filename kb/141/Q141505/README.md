@@ -6,6 +6,8 @@ permalink: /kb/141/Q141505/
 
 ## Q141505: HOWTO: Use LoadResData with Binary Data
 
+{% raw %}
+
 	Article: Q141505
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -166,3 +168,5 @@ permalink: /kb/141/Q141505/
 	
 	=============================================================================
 	
+
+{% endraw %}

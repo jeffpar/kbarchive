@@ -6,6 +6,8 @@ permalink: /kb/151/Q151103/
 
 ## Q151103: Cinemania 96: April Update Does Not Print Descriptions
 
+{% raw %}
+
 	Article: Q151103
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -50,3 +52,5 @@ permalink: /kb/151/Q151103/
 	
 	=============================================================================
 	
+
+{% endraw %}

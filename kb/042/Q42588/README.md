@@ -6,6 +6,8 @@ permalink: /kb/042/Q42588/
 
 ## Q42588: &quot;Variable Required&quot; Versus &quot;Duplicate Definition&quot; Error
 
+{% raw %}
+
 	Article: Q42588
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/042/Q42588/
 	The compile-time meaning of "Variable Required" explained in the
 	"Microsoft QuickBASIC: Programming in BASIC" manual for Version 4.50
 	is more accurate.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161196/
 
 ## Q161196: Problem Installing FC10/FC20 Driver from Drvlib Directory
 
+{% raw %}
+
 	Article: Q161196
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/161/Q161196/
 	
 	=============================================================================
 	
+
+{% endraw %}

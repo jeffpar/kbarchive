@@ -6,6 +6,8 @@ permalink: /kb/247/Q247370/
 
 ## Q247370: HOWTO: Pass Parameters to a SQL Server Stored Procedure
 
+{% raw %}
+
 	Article: Q247370
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -109,3 +111,5 @@ permalink: /kb/247/Q247370/
 	
 	=============================================================================
 	
+
+{% endraw %}

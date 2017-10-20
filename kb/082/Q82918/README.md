@@ -6,6 +6,8 @@ permalink: /kb/082/Q82918/
 
 ## Q82918: PC Win: Modified Shadowed Message Is Not Updated in Mail
 
+{% raw %}
+
 	Article: Q82918
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -41,3 +43,5 @@ permalink: /kb/082/Q82918/
 	
 	=============================================================================
 	
+
+{% endraw %}

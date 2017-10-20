@@ -6,6 +6,8 @@ permalink: /kb/176/Q176648/
 
 ## Q176648: XADM: Change in Delivery Restrictions Does Not Update
 
+{% raw %}
+
 	Article: Q176648
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -42,3 +44,5 @@ permalink: /kb/176/Q176648/
 	
 	=============================================================================
 	
+
+{% endraw %}

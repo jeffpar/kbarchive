@@ -6,6 +6,8 @@ permalink: /kb/255/Q255627/
 
 ## Q255627: XFOR: No Import/Export Vers. 8.x Option in Connector for cc:Mail
 
+{% raw %}
+
 	Article: Q255627
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/255/Q255627/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107354/
 
 ## Q107354: PC Win: Folder Rebuild Does Not Display Status Information
 
+{% raw %}
+
 	Article: Q107354
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -50,3 +52,5 @@ permalink: /kb/107/Q107354/
 	
 	=============================================================================
 	
+
+{% endraw %}

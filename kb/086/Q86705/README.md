@@ -6,6 +6,8 @@ permalink: /kb/086/Q86705/
 
 ## Q86705: Problems When Exiting Windows or WFWG After Running 386 Enh
 
+{% raw %}
+
 	Article: Q86705
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -100,3 +102,5 @@ permalink: /kb/086/Q86705/
 	
 	=============================================================================
 	
+
+{% endraw %}

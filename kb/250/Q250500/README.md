@@ -6,6 +6,8 @@ permalink: /kb/250/Q250500/
 
 ## Q250500: XADM: Sybari Antigen Software Interaction with Exchange Server
 
+{% raw %}
+
 	Article: Q250500
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -104,3 +106,5 @@ permalink: /kb/250/Q250500/
 	
 	=============================================================================
 	
+
+{% endraw %}

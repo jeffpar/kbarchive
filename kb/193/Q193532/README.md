@@ -6,6 +6,8 @@ permalink: /kb/193/Q193532/
 
 ## Q193532: Stop 0x0000000A When Running Executable from Floppy Disk
 
+{% raw %}
+
 	Article: Q193532
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/193/Q193532/
 	
 	=============================================================================
 	
+
+{% endraw %}

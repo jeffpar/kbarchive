@@ -6,6 +6,8 @@ permalink: /kb/314/Q314821/
 
 ## Q314821: FIX: Exception Error With For...Each Reference to Outlook Folder
 
+{% raw %}
+
 	Article: Q314821
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -103,3 +105,5 @@ permalink: /kb/314/Q314821/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196663/
 
 ## Q196663: XCON: MTA Unable to Deliver NDR When Message Fails
 
+{% raw %}
+
 	Article: Q196663
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -85,3 +87,5 @@ permalink: /kb/196/Q196663/
 	
 	=============================================================================
 	
+
+{% endraw %}

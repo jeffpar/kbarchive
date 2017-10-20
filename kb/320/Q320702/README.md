@@ -6,6 +6,8 @@ permalink: /kb/320/Q320702/
 
 ## Q320702: XCON: MTA Journaling Does Not Work to an SMTP Custom Recipient
 
+{% raw %}
+
 	Article: Q320702
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -135,3 +137,5 @@ permalink: /kb/320/Q320702/
 	
 	=============================================================================
 	
+
+{% endraw %}

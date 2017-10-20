@@ -6,6 +6,8 @@ permalink: /kb/047/Q47932/
 
 ## Q47932: C 5.10 Multi-Thread Library or DLL Limited to 32 Threads
 
+{% raw %}
+
 	Article: Q47932
 	Product(s): See article
 	Version(s): 5.10
@@ -35,3 +37,5 @@ permalink: /kb/047/Q47932/
 	
 	A substantially greater number of threads will be considered for
 	inclusion in a future release.
+
+{% endraw %}

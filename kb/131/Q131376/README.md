@@ -6,6 +6,8 @@ permalink: /kb/131/Q131376/
 
 ## Q131376: FIX: C2974 Error When Calling Templated Base Class Functions
 
+{% raw %}
+
 	Article: Q131376
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1
@@ -99,3 +101,5 @@ permalink: /kb/131/Q131376/
 	
 	=============================================================================
 	
+
+{% endraw %}

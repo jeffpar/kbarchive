@@ -6,6 +6,8 @@ permalink: /kb/128/Q128826/
 
 ## Q128826: Mac Srv: Server Settings Memory Incorrect on System 7.5
 
+{% raw %}
+
 	Article: Q128826
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -93,3 +95,5 @@ permalink: /kb/128/Q128826/
 	
 	=============================================================================
 	
+
+{% endraw %}

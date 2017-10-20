@@ -6,6 +6,8 @@ permalink: /kb/082/Q82442/
 
 ## Q82442: PowerPoint and Micrografx Picture Publisher
 
+{% raw %}
+
 	Article: Q82442
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/082/Q82442/
 	
 	=============================================================================
 	
+
+{% endraw %}

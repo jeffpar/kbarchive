@@ -6,6 +6,8 @@ permalink: /kb/043/Q43391/
 
 ## Q43391: INFO: Handling Floating-Point Errors in C
 
+{% raw %}
+
 	Article: Q43391
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:6.00ax,7.0; OS/2:5.1,6.00a; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.0,4.0,4.1,5.0
@@ -59,3 +61,5 @@ permalink: /kb/043/Q43391/
 	
 	=============================================================================
 	
+
+{% endraw %}

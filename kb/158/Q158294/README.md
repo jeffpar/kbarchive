@@ -6,6 +6,8 @@ permalink: /kb/158/Q158294/
 
 ## Q158294: Registry Editor Could Not Accomplish the Requested Operation
 
+{% raw %}
+
 	Article: Q158294
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -88,3 +90,5 @@ permalink: /kb/158/Q158294/
 	
 	=============================================================================
 	
+
+{% endraw %}

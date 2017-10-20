@@ -6,6 +6,8 @@ permalink: /kb/185/Q185153/
 
 ## Q185153: XFOR: Using Exchange As a Gateway Between UNIX and MS Mail
 
+{% raw %}
+
 	Article: Q185153
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -111,3 +113,5 @@ permalink: /kb/185/Q185153/
 	
 	=============================================================================
 	
+
+{% endraw %}

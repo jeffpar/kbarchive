@@ -6,6 +6,8 @@ permalink: /kb/152/Q152125/
 
 ## Q152125: Underscore Treated as Wildcard in Address Book Find Feature
 
+{% raw %}
+
 	Article: Q152125
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -34,3 +36,5 @@ permalink: /kb/152/Q152125/
 	
 	=============================================================================
 	
+
+{% endraw %}

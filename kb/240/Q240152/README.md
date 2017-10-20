@@ -6,6 +6,8 @@ permalink: /kb/240/Q240152/
 
 ## Q240152: XADM: What Determines a Limited Store in Exchange Server 5.5
 
+{% raw %}
+
 	Article: Q240152
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -98,3 +100,5 @@ permalink: /kb/240/Q240152/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155064/
 
 ## Q155064: PPT: Information About PointPlus
 
+{% raw %}
+
 	Article: Q155064
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,7.0
@@ -59,3 +61,5 @@ permalink: /kb/155/Q155064/
 	
 	=============================================================================
 	
+
+{% endraw %}

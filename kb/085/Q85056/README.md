@@ -6,6 +6,8 @@ permalink: /kb/085/Q85056/
 
 ## Q85056: FFAPI: Floppy Disk Layouts
 
+{% raw %}
+
 	Article: Q85056
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/085/Q85056/
 	
 	=============================================================================
 	
+
+{% endraw %}

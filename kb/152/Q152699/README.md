@@ -6,6 +6,8 @@ permalink: /kb/152/Q152699/
 
 ## Q152699: Paul Bunyan: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q152699
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -72,3 +74,5 @@ permalink: /kb/152/Q152699/
 	
 	=============================================================================
 	
+
+{% endraw %}

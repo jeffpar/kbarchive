@@ -6,6 +6,8 @@ permalink: /kb/192/Q192303/
 
 ## Q192303: HOWTO: Convert Decimal Integers to Hexadecimal Strings
 
+{% raw %}
+
 	Article: Q192303
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -152,3 +154,5 @@ permalink: /kb/192/Q192303/
 	
 	=============================================================================
 	
+
+{% endraw %}

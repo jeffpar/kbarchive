@@ -6,6 +6,8 @@ permalink: /kb/152/Q152298/
 
 ## Q152298: BUG: Conflict with Fax Software when Receiving a Fax
 
+{% raw %}
+
 	Article: Q152298
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -70,3 +72,5 @@ permalink: /kb/152/Q152298/
 	
 	=============================================================================
 	
+
+{% endraw %}

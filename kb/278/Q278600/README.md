@@ -6,6 +6,8 @@ permalink: /kb/278/Q278600/
 
 ## Q278600: XADM: Error c103aa11 Occurs When Saving Connection Agreement
 
+{% raw %}
+
 	Article: Q278600
 	Product(s): Microsoft Exchange
 	Version(s): 2000,5.5
@@ -98,3 +100,5 @@ permalink: /kb/278/Q278600/
 	
 	=============================================================================
 	
+
+{% endraw %}

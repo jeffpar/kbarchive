@@ -6,6 +6,8 @@ permalink: /kb/196/Q196512/
 
 ## Q196512: WD97: Frame Does Not Copy from One Column to Another
 
+{% raw %}
+
 	Article: Q196512
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/196/Q196512/
 	
 	=============================================================================
 	
+
+{% endraw %}

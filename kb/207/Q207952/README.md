@@ -6,6 +6,8 @@ permalink: /kb/207/Q207952/
 
 ## Q207952: PRB: Active Documents Flash and Disappear When Run
 
+{% raw %}
+
 	Article: Q207952
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -130,3 +132,5 @@ permalink: /kb/207/Q207952/
 	
 	=============================================================================
 	
+
+{% endraw %}

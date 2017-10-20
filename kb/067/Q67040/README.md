@@ -6,6 +6,8 @@ permalink: /kb/067/Q67040/
 
 ## Q67040: /Ol Causes register Variables to Be Allocated on the Stack
 
+{% raw %}
+
 	Article: Q67040
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -65,3 +67,5 @@ permalink: /kb/067/Q67040/
 	{
 	   return (1);
 	}
+
+{% endraw %}

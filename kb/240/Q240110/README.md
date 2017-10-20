@@ -6,6 +6,8 @@ permalink: /kb/240/Q240110/
 
 ## Q240110: NBA Inside Drive 2000: Game Commentary Stops Unexpectedly
 
+{% raw %}
+
 	Article: Q240110
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/240/Q240110/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/267/Q267583/
 
 ## Q267583: XADM: Exchange Server 5.5 Fix Setup.exe Won't Work
 
+{% raw %}
+
 	Article: Q267583
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -77,3 +79,5 @@ permalink: /kb/267/Q267583/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135755/
 
 ## Q135755: HOWTO: Use the OLE MAPI Control to Send Mail Messages
 
+{% raw %}
+
 	Article: Q135755
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -97,3 +99,5 @@ permalink: /kb/135/Q135755/
 	
 	=============================================================================
 	
+
+{% endraw %}

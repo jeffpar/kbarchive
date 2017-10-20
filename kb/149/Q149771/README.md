@@ -6,6 +6,8 @@ permalink: /kb/149/Q149771/
 
 ## Q149771: BUG: Rebind Fails if Retrieve Fields Are Set at Design Time
 
+{% raw %}
+
 	Article: Q149771
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -89,3 +91,5 @@ permalink: /kb/149/Q149771/
 	
 	=============================================================================
 	
+
+{% endraw %}

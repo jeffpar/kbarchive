@@ -6,6 +6,8 @@ permalink: /kb/196/Q196636/
 
 ## Q196636: XADM: RPC Server Unavailable Error During Setup On Cluster
 
+{% raw %}
+
 	Article: Q196636
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -82,3 +84,5 @@ permalink: /kb/196/Q196636/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/295/Q295703/
 
 ## Q295703: Cannot View Tour After Installing MSN Explorer
 
+{% raw %}
+
 	Article: Q295703
 	Product(s): The Microsoft Network
 	Version(s): 6.0
@@ -66,3 +68,5 @@ permalink: /kb/295/Q295703/
 	
 	=============================================================================
 	
+
+{% endraw %}

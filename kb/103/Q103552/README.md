@@ -6,6 +6,8 @@ permalink: /kb/103/Q103552/
 
 ## Q103552: SMARTDrive Version 5.0 Now Caches CD-ROM Drives
 
+{% raw %}
+
 	Article: Q103552
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -41,3 +43,5 @@ permalink: /kb/103/Q103552/
 	
 	=============================================================================
 	
+
+{% endraw %}

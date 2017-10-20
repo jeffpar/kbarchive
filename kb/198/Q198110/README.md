@@ -6,6 +6,8 @@ permalink: /kb/198/Q198110/
 
 ## Q198110: Combat Flight Simulator Does Not Detect Hardware Acceleration
 
+{% raw %}
+
 	Article: Q198110
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/198/Q198110/
 	
 	=============================================================================
 	
+
+{% endraw %}

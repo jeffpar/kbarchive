@@ -6,6 +6,8 @@ permalink: /kb/140/Q140491/
 
 ## Q140491: Multimedia Sound Card Support Files Are Missing or Corrupt
 
+{% raw %}
+
 	Article: Q140491
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 3.1,3.11
@@ -91,3 +93,5 @@ permalink: /kb/140/Q140491/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165306/
 
 ## Q165306: PRB: Error &quot;File c:&#92;.dbc does not exist&quot; in Visual FoxPro
 
+{% raw %}
+
 	Article: Q165306
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -78,3 +80,5 @@ permalink: /kb/165/Q165306/
 	
 	=============================================================================
 	
+
+{% endraw %}

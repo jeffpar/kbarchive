@@ -6,6 +6,8 @@ permalink: /kb/061/Q61026/
 
 ## Q61026: WD97: Unable to Remove Gap Between Heading and Following Text
 
+{% raw %}
+
 	Article: Q61026
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/061/Q61026/
 	
 	=============================================================================
 	
+
+{% endraw %}

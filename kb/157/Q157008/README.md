@@ -6,6 +6,8 @@ permalink: /kb/157/Q157008/
 
 ## Q157008: XCON: IMC Might Use the Wrong Code Page
 
+{% raw %}
+
 	Article: Q157008
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/157/Q157008/
 	
 	=============================================================================
 	
+
+{% endraw %}

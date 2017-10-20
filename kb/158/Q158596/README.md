@@ -6,6 +6,8 @@ permalink: /kb/158/Q158596/
 
 ## Q158596: Mac Encarta 97: Readme.txt: Performance
 
+{% raw %}
+
 	Article: Q158596
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -128,3 +130,5 @@ permalink: /kb/158/Q158596/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77701/
 
 ## Q77701: Finding Version Information for Multimedia Files
 
+{% raw %}
+
 	Article: Q77701
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/077/Q77701/
 	
 	=============================================================================
 	
+
+{% endraw %}

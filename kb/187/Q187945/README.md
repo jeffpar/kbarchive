@@ -6,6 +6,8 @@ permalink: /kb/187/Q187945/
 
 ## Q187945: HOWTO: Pass Text Fields to a Stored Procedure Using RDO 2.0
 
+{% raw %}
+
 	Article: Q187945
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -140,3 +142,5 @@ permalink: /kb/187/Q187945/
 	
 	=============================================================================
 	
+
+{% endraw %}

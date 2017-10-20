@@ -6,6 +6,8 @@ permalink: /kb/174/Q174740/
 
 ## Q174740: XFOR: Error When Migrating Version 6 cc:Mail Post Office
 
+{% raw %}
+
 	Article: Q174740
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -71,3 +73,5 @@ permalink: /kb/174/Q174740/
 	
 	=============================================================================
 	
+
+{% endraw %}

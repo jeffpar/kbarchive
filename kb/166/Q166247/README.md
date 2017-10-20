@@ -6,6 +6,8 @@ permalink: /kb/166/Q166247/
 
 ## Q166247: XADM: Inproxy.dll Creates Non-RFC Conformant SMTP Addresses
 
+{% raw %}
+
 	Article: Q166247
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -54,3 +56,5 @@ permalink: /kb/166/Q166247/
 	
 	=============================================================================
 	
+
+{% endraw %}

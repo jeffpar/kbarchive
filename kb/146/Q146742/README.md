@@ -6,6 +6,8 @@ permalink: /kb/146/Q146742/
 
 ## Q146742: XCLN: Modified Column Widths are not Preserved
 
+{% raw %}
+
 	Article: Q146742
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -45,3 +47,5 @@ permalink: /kb/146/Q146742/
 	
 	=============================================================================
 	
+
+{% endraw %}

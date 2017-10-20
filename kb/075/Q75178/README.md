@@ -6,6 +6,8 @@ permalink: /kb/075/Q75178/
 
 ## Q75178: FIX: ASSUME Using SEG on Communal Far Data Item
 
+{% raw %}
+
 	Article: Q75178
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.10,5.10a,6.0
@@ -89,3 +91,5 @@ permalink: /kb/075/Q75178/
 	
 	=============================================================================
 	
+
+{% endraw %}

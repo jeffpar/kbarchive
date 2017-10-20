@@ -6,6 +6,8 @@ permalink: /kb/137/Q137825/
 
 ## Q137825: How to Be Prompted for Optional Parameters for MS-DOS Program
 
+{% raw %}
+
 	Article: Q137825
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/137/Q137825/
 	
 	=============================================================================
 	
+
+{% endraw %}

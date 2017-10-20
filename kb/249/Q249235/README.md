@@ -6,6 +6,8 @@ permalink: /kb/249/Q249235/
 
 ## Q249235: DOC: AfxLoadLibrary() Documentation is not Clear on Usage
 
+{% raw %}
+
 	Article: Q249235
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -58,3 +60,5 @@ permalink: /kb/249/Q249235/
 	
 	=============================================================================
 	
+
+{% endraw %}

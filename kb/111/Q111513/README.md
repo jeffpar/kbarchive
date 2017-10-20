@@ -6,6 +6,8 @@ permalink: /kb/111/Q111513/
 
 ## Q111513: PRB: Application Tries to Locate Menu
 
+{% raw %}
+
 	Article: Q111513
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6,2.6a; WINDOWS:2.5,2.5x,2.6,2.6a,3.0
@@ -104,3 +106,5 @@ permalink: /kb/111/Q111513/
 	
 	=============================================================================
 	
+
+{% endraw %}

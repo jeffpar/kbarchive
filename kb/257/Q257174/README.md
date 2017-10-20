@@ -6,6 +6,8 @@ permalink: /kb/257/Q257174/
 
 ## Q257174: Using Mapped Drives with IIS
 
+{% raw %}
+
 	Article: Q257174
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -86,3 +88,5 @@ permalink: /kb/257/Q257174/
 	
 	=============================================================================
 	
+
+{% endraw %}

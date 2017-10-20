@@ -6,6 +6,8 @@ permalink: /kb/213/Q213001/
 
 ## Q213001: SMS: Remote Control Session Fails if Command Contains Quotes
 
+{% raw %}
+
 	Article: Q213001
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -63,3 +65,5 @@ permalink: /kb/213/Q213001/
 	
 	=============================================================================
 	
+
+{% endraw %}

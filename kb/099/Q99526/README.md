@@ -6,6 +6,8 @@ permalink: /kb/099/Q99526/
 
 ## Q99526: MS-BACKUP Err Msg: Cannot Read Volume From Virtual Memory...
 
+{% raw %}
+
 	Article: Q99526
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -54,3 +56,5 @@ permalink: /kb/099/Q99526/
 	
 	=============================================================================
 	
+
+{% endraw %}

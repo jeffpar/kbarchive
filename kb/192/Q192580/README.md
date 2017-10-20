@@ -6,6 +6,8 @@ permalink: /kb/192/Q192580/
 
 ## Q192580: SAMPLE: ADSfshare.exe Demonstrates Manipulating ADS File Shares
 
+{% raw %}
+
 	Article: Q192580
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0; winnt:2.5
@@ -93,3 +95,5 @@ permalink: /kb/192/Q192580/
 	
 	=============================================================================
 	
+
+{% endraw %}

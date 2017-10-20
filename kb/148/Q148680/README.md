@@ -6,6 +6,8 @@ permalink: /kb/148/Q148680/
 
 ## Q148680: Dialing with Eicon PCMCIA ISDN Adapter May Hang Computer
 
+{% raw %}
+
 	Article: Q148680
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -47,3 +49,5 @@ permalink: /kb/148/Q148680/
 	
 	=============================================================================
 	
+
+{% endraw %}

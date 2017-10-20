@@ -6,6 +6,8 @@ permalink: /kb/170/Q170120/
 
 ## Q170120: FP: Authors Cannot Log on to Virtual Servers on Multihomed IIS
 
+{% raw %}
+
 	Article: Q170120
 	Product(s): Word Front Page
 	Version(s): windows:97
@@ -125,3 +127,5 @@ permalink: /kb/170/Q170120/
 	
 	=============================================================================
 	
+
+{% endraw %}

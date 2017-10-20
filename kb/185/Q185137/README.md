@@ -6,6 +6,8 @@ permalink: /kb/185/Q185137/
 
 ## Q185137: Log Logical Record Request May Be Sent to Wrong Server
 
+{% raw %}
+
 	Article: Q185137
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -77,3 +79,5 @@ permalink: /kb/185/Q185137/
 	
 	=============================================================================
 	
+
+{% endraw %}

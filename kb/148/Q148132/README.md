@@ -6,6 +6,8 @@ permalink: /kb/148/Q148132/
 
 ## Q148132: Swapable Floppy/CD-ROM Components Support on NEC Versa 4050C
 
+{% raw %}
+
 	Article: Q148132
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -73,3 +75,5 @@ permalink: /kb/148/Q148132/
 	
 	=============================================================================
 	
+
+{% endraw %}

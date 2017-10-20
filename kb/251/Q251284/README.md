@@ -6,6 +6,8 @@ permalink: /kb/251/Q251284/
 
 ## Q251284: Cluster Server Cannot Start If the Quorum Disk Space Is Full
 
+{% raw %}
+
 	Article: Q251284
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -112,3 +114,5 @@ permalink: /kb/251/Q251284/
 	
 	=============================================================================
 	
+
+{% endraw %}

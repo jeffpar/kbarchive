@@ -6,6 +6,8 @@ permalink: /kb/183/Q183104/
 
 ## Q183104: XCON: Interop Issue with Lowercase PAB Address, Softswitch LMS
 
+{% raw %}
+
 	Article: Q183104
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/183/Q183104/
 	
 	=============================================================================
 	
+
+{% endraw %}

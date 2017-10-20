@@ -6,6 +6,8 @@ permalink: /kb/149/Q149651/
 
 ## Q149651: Back Button Selected by Default in MS Phone Tutorial
 
+{% raw %}
+
 	Article: Q149651
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -45,3 +47,5 @@ permalink: /kb/149/Q149651/
 	
 	=============================================================================
 	
+
+{% endraw %}

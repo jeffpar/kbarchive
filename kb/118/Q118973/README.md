@@ -6,6 +6,8 @@ permalink: /kb/118/Q118973/
 
 ## Q118973: Err Msg: Login Failure Account Restriction w/ NetWare Gateway
 
+{% raw %}
+
 	Article: Q118973
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/118/Q118973/
 	
 	=============================================================================
 	
+
+{% endraw %}

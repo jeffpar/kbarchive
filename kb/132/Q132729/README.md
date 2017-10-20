@@ -6,6 +6,8 @@ permalink: /kb/132/Q132729/
 
 ## Q132729: Windows 95 Does Not Prevent Choosing Unsupported Resolution
 
+{% raw %}
+
 	Article: Q132729
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/132/Q132729/
 	
 	=============================================================================
 	
+
+{% endraw %}

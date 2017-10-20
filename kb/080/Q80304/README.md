@@ -6,6 +6,8 @@ permalink: /kb/080/Q80304/
 
 ## Q80304: &quot;Missing Operating System&quot; and &quot;No ROM BASIC&quot; Error Messages
 
+{% raw %}
+
 	Article: Q80304
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22; WINDOWS:95
@@ -170,3 +172,5 @@ permalink: /kb/080/Q80304/
 	
 	=============================================================================
 	
+
+{% endraw %}

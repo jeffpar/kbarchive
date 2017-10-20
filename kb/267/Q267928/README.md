@@ -6,6 +6,8 @@ permalink: /kb/267/Q267928/
 
 ## Q267928: SMS: Remote Control Temporarily Disabled With IP Address Change
 
+{% raw %}
+
 	Article: Q267928
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2 SP4,2.0 SP2
@@ -61,3 +63,5 @@ permalink: /kb/267/Q267928/
 	
 	=============================================================================
 	
+
+{% endraw %}

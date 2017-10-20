@@ -6,6 +6,8 @@ permalink: /kb/196/Q196978/
 
 ## Q196978: WD97: How to Convert Between Lotus Word Pro 96 and Word
 
+{% raw %}
+
 	Article: Q196978
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -118,3 +120,5 @@ permalink: /kb/196/Q196978/
 	
 	=============================================================================
 	
+
+{% endraw %}

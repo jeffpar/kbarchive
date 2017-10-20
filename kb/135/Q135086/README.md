@@ -6,6 +6,8 @@ permalink: /kb/135/Q135086/
 
 ## Q135086: SMS Service Manager Pause Button Has No Effect
 
+{% raw %}
+
 	Article: Q135086
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -51,3 +53,5 @@ permalink: /kb/135/Q135086/
 	
 	=============================================================================
 	
+
+{% endraw %}

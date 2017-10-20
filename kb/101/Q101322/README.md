@@ -6,6 +6,8 @@ permalink: /kb/101/Q101322/
 
 ## Q101322: Peer Web Services 3.0 Inbound HTTP Connections Limit
 
+{% raw %}
+
 	Article: Q101322
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP2
@@ -110,3 +112,5 @@ permalink: /kb/101/Q101322/
 	
 	=============================================================================
 	
+
+{% endraw %}

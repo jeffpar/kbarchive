@@ -6,6 +6,8 @@ permalink: /kb/169/Q169707/
 
 ## Q169707: XADM: AV in Mad.exe w/ 20 or More IP Addresses for NIC
 
+{% raw %}
+
 	Article: Q169707
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -124,3 +126,5 @@ permalink: /kb/169/Q169707/
 	
 	=============================================================================
 	
+
+{% endraw %}

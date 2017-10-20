@@ -6,6 +6,8 @@ permalink: /kb/089/Q89125/
 
 ## Q89125: How to Obtain Updated Novell Drivers and VPICDA.386
 
+{% raw %}
+
 	Article: Q89125
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a
@@ -57,3 +59,5 @@ permalink: /kb/089/Q89125/
 	
 	=============================================================================
 	
+
+{% endraw %}

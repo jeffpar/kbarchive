@@ -6,6 +6,8 @@ permalink: /kb/255/Q255811/
 
 ## Q255811: 39-Character Host Name Address Limitation in Compass
 
+{% raw %}
+
 	Article: Q255811
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -56,3 +58,5 @@ permalink: /kb/255/Q255811/
 	
 	=============================================================================
 	
+
+{% endraw %}

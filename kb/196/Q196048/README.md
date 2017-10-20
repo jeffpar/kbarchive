@@ -6,6 +6,8 @@ permalink: /kb/196/Q196048/
 
 ## Q196048: WD97: Error Message in Place of BARCODE Field
 
+{% raw %}
+
 	Article: Q196048
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -155,3 +157,5 @@ permalink: /kb/196/Q196048/
 	
 	=============================================================================
 	
+
+{% endraw %}

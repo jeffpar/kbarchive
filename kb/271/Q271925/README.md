@@ -6,6 +6,8 @@ permalink: /kb/271/Q271925/
 
 ## Q271925: Err Msg: Domain Controller for this Domain Could Not Be Found
 
+{% raw %}
+
 	Article: Q271925
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/271/Q271925/
 	
 	=============================================================================
 	
+
+{% endraw %}

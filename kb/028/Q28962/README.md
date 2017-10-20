@@ -6,6 +6,8 @@ permalink: /kb/028/Q28962/
 
 ## Q28962: Missing Text: DECLARE Statement
 
+{% raw %}
+
 	Article: Q28962
 	Product(s): See article
 	Version(s): 6.00 6.00b | 6.00 6.00b
@@ -29,3 +31,5 @@ permalink: /kb/028/Q28962/
 	This documentation error was corrected in the documentation for
 	Microsoft BASIC Professional Development System (PDS) Version 7.00 for
 	MS-DOS and MS OS/2.
+
+{% endraw %}

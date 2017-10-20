@@ -6,6 +6,8 @@ permalink: /kb/093/Q93079/
 
 ## Q93079: How to Interpret Userlevel Output from READCFG.EXE
 
+{% raw %}
+
 	Article: Q93079
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/093/Q93079/
 	
 	=============================================================================
 	
+
+{% endraw %}

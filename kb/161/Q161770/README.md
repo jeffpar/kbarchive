@@ -6,6 +6,8 @@ permalink: /kb/161/Q161770/
 
 ## Q161770: Event 560 Leads to Inability to Restart SNA Server or SnaBase
 
+{% raw %}
+
 	Article: Q161770
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -92,3 +94,5 @@ permalink: /kb/161/Q161770/
 	
 	=============================================================================
 	
+
+{% endraw %}

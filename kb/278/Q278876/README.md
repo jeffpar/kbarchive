@@ -6,6 +6,8 @@ permalink: /kb/278/Q278876/
 
 ## Q278876: Motocross Madness 2: Game Stops Responding on Startup Screen
 
+{% raw %}
+
 	Article: Q278876
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/278/Q278876/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/051/Q51751/
 
 ## Q51751: Generating .COM Files with QuickAssembler Can Cause Link Error
 
+{% raw %}
+
 	Article: Q51751
 	Product(s): See article
 	Version(s): 2.01
@@ -75,3 +77,5 @@ permalink: /kb/051/Q51751/
 	
 	Microsoft is researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

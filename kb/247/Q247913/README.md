@@ -6,6 +6,8 @@ permalink: /kb/247/Q247913/
 
 ## Q247913: Replace a BDC with a New Computer But Use the Same Name
 
+{% raw %}
+
 	Article: Q247913
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/247/Q247913/
 	
 	=============================================================================
 	
+
+{% endraw %}

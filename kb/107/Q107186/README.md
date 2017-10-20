@@ -6,6 +6,8 @@ permalink: /kb/107/Q107186/
 
 ## Q107186: Contents of the Windows Sound System 1.0 README.TXT
 
+{% raw %}
+
 	Article: Q107186
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -241,3 +243,5 @@ permalink: /kb/107/Q107186/
 	
 	=============================================================================
 	
+
+{% endraw %}

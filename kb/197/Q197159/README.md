@@ -6,6 +6,8 @@ permalink: /kb/197/Q197159/
 
 ## Q197159: Dr. Watson Error in IE 4.0 After Installation on Terminal Server
 
+{% raw %}
+
 	Article: Q197159
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -165,3 +167,5 @@ permalink: /kb/197/Q197159/
 	
 	=============================================================================
 	
+
+{% endraw %}

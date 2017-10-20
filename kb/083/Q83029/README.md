@@ -6,6 +6,8 @@ permalink: /kb/083/Q83029/
 
 ## Q83029: MS-DOS Video Modes Displayed in a Window
 
+{% raw %}
+
 	Article: Q83029
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -105,3 +107,5 @@ permalink: /kb/083/Q83029/
 	
 	=============================================================================
 	
+
+{% endraw %}

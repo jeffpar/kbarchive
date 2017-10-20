@@ -6,6 +6,8 @@ permalink: /kb/288/Q288239/
 
 ## Q288239: How to Obtain the Latest Systems Management Server Service Pack
 
+{% raw %}
+
 	Article: Q288239
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -88,3 +90,5 @@ permalink: /kb/288/Q288239/
 	
 	=============================================================================
 	
+
+{% endraw %}

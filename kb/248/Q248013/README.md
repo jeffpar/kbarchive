@@ -6,6 +6,8 @@ permalink: /kb/248/Q248013/
 
 ## Q248013: Err Msg: HTTP Error 500-12 Application Restarting
 
+{% raw %}
+
 	Article: Q248013
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -92,3 +94,5 @@ permalink: /kb/248/Q248013/
 	
 	=============================================================================
 	
+
+{% endraw %}

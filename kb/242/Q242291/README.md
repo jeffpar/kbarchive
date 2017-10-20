@@ -6,6 +6,8 @@ permalink: /kb/242/Q242291/
 
 ## Q242291: INFO: GetResultView Event Does Not Fire As Expected
 
+{% raw %}
+
 	Article: Q242291
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.1,1.2,6.0
@@ -117,3 +119,5 @@ permalink: /kb/242/Q242291/
 	
 	=============================================================================
 	
+
+{% endraw %}

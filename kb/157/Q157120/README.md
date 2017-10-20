@@ -6,6 +6,8 @@ permalink: /kb/157/Q157120/
 
 ## Q157120: WD97: Two Shortcut Menus for Text Box
 
+{% raw %}
+
 	Article: Q157120
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/157/Q157120/
 	
 	=============================================================================
 	
+
+{% endraw %}

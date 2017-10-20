@@ -6,6 +6,8 @@ permalink: /kb/269/Q269813/
 
 ## Q269813: MSB: No Sound When You Run the Program on Terminal Server
 
+{% raw %}
+
 	Article: Q269813
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -48,3 +50,5 @@ permalink: /kb/269/Q269813/
 	
 	=============================================================================
 	
+
+{% endraw %}

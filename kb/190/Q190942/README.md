@@ -6,6 +6,8 @@ permalink: /kb/190/Q190942/
 
 ## Q190942: BUG: OLE DB AppWizard Generates Wrong SQL Statement
 
+{% raw %}
+
 	Article: Q190942
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -109,3 +111,5 @@ permalink: /kb/190/Q190942/
 	
 	=============================================================================
 	
+
+{% endraw %}

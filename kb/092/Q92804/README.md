@@ -6,6 +6,8 @@ permalink: /kb/092/Q92804/
 
 ## Q92804: PC WSPlus: Changes and Enhancements Made in Schedule+ 1.0a
 
+{% raw %}
+
 	Article: Q92804
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0a
@@ -74,3 +76,5 @@ permalink: /kb/092/Q92804/
 	
 	=============================================================================
 	
+
+{% endraw %}

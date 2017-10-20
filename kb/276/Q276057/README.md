@@ -6,6 +6,8 @@ permalink: /kb/276/Q276057/
 
 ## Q276057: XADM: Access Violation in Information Store
 
+{% raw %}
+
 	Article: Q276057
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -111,3 +113,5 @@ permalink: /kb/276/Q276057/
 	
 	=============================================================================
 	
+
+{% endraw %}

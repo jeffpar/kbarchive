@@ -6,6 +6,8 @@ permalink: /kb/126/Q126017/
 
 ## Q126017: Cannot Play Uncompressed Wave Sounds with Windows NT 3.5
 
+{% raw %}
+
 	Article: Q126017
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :1994 edition,1995 edition; winnt:3.5
@@ -87,3 +89,5 @@ permalink: /kb/126/Q126017/
 	
 	=============================================================================
 	
+
+{% endraw %}

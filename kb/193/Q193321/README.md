@@ -6,6 +6,8 @@ permalink: /kb/193/Q193321/
 
 ## Q193321: XCON: Recipient Name Not Recognized
 
+{% raw %}
+
 	Article: Q193321
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -80,3 +82,5 @@ permalink: /kb/193/Q193321/
 	
 	=============================================================================
 	
+
+{% endraw %}

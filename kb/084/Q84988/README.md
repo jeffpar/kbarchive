@@ -6,6 +6,8 @@ permalink: /kb/084/Q84988/
 
 ## Q84988: Mouse Problems with the Zenith MastersPort 386
 
+{% raw %}
+
 	Article: Q84988
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/084/Q84988/
 	
 	=============================================================================
 	
+
+{% endraw %}

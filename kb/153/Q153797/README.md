@@ -6,6 +6,8 @@ permalink: /kb/153/Q153797/
 
 ## Q153797: FIX: Memory Leak with ODBC Driver Manager During Connect
 
+{% raw %}
+
 	Article: Q153797
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5
@@ -72,3 +74,5 @@ permalink: /kb/153/Q153797/
 	
 	=============================================================================
 	
+
+{% endraw %}

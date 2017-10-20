@@ -6,6 +6,8 @@ permalink: /kb/113/Q113421/
 
 ## Q113421: PRB: Assertion Failed, WINCORE.CPP--Line 129, 133, 182, or 307
 
+{% raw %}
+
 	Article: Q113421
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -82,10 +84,10 @@ permalink: /kb/113/Q113421/
 	  class (for example, CMyEdit), as follows:
 	
 	        // Dialog Data
-	           //{ {AFX_DATA(CTestDlg)
+	           //{{AFX_DATA(CTestDlg)
 	           enum { IDD = IDD_TEST_DLG };
 	           CMyEdit m_EditControl;
-	           //} }AFX_DATA
+	           //}}AFX_DATA
 	
 	  This will cause the control to be automatically subclassed with your own type
 	  of window.
@@ -100,3 +102,5 @@ permalink: /kb/113/Q113421/
 	
 	=============================================================================
 	
+
+{% endraw %}

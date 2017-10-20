@@ -6,6 +6,8 @@ permalink: /kb/131/Q131044/
 
 ## Q131044: FIX: ClassWizard Incorrectly Reads LPDISPATCH Params from .TLB
 
+{% raw %}
+
 	Article: Q131044
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0,4.1,4.2
@@ -80,3 +82,5 @@ permalink: /kb/131/Q131044/
 	
 	=============================================================================
 	
+
+{% endraw %}

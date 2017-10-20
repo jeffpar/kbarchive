@@ -6,6 +6,8 @@ permalink: /kb/033/Q33712/
 
 ## Q33712: &quot;Subscript Out of Range&quot; DIM SHARED Dynamic Array in SUBmodule
 
+{% raw %}
+
 	Article: Q33712
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -91,3 +93,5 @@ permalink: /kb/033/Q33712/
 	   a(1,1,1) = 4
 	   PRINT a(1,1,1)
 	   END SUB
+
+{% endraw %}

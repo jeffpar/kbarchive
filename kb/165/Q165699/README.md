@@ -6,6 +6,8 @@ permalink: /kb/165/Q165699/
 
 ## Q165699: SMS_WORKING_DIR Environment Variable Ignored on Win16 Clients
 
+{% raw %}
+
 	Article: Q165699
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -46,3 +48,5 @@ permalink: /kb/165/Q165699/
 	
 	=============================================================================
 	
+
+{% endraw %}

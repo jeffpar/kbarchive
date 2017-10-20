@@ -6,6 +6,8 @@ permalink: /kb/086/Q86329/
 
 ## Q86329: PC Win: Header Displayed in Message Body
 
+{% raw %}
+
 	Article: Q86329
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -43,3 +45,5 @@ permalink: /kb/086/Q86329/
 	
 	=============================================================================
 	
+
+{% endraw %}

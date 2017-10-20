@@ -6,6 +6,8 @@ permalink: /kb/117/Q117653/
 
 ## Q117653: PC DOS: MAIL.EXE Command-Line Options
 
+{% raw %}
+
 	Article: Q117653
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a
@@ -138,3 +140,5 @@ permalink: /kb/117/Q117653/
 	
 	=============================================================================
 	
+
+{% endraw %}

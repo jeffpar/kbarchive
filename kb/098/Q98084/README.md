@@ -6,6 +6,8 @@ permalink: /kb/098/Q98084/
 
 ## Q98084: LAN Manager MS-DOS NET LOGON: LANAs and Validation
 
+{% raw %}
+
 	Article: Q98084
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/098/Q98084/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143081/
 
 ## Q143081: PRB: Ambiguous Msg If Function Template Return Type Omitted
 
+{% raw %}
+
 	Article: Q143081
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/143/Q143081/
 	
 	=============================================================================
 	
+
+{% endraw %}

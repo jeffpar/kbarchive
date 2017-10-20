@@ -6,6 +6,8 @@ permalink: /kb/133/Q133034/
 
 ## Q133034: FIX: CSpinButtonCtrl Causes Assertion in viewscrl.cpp line 698
 
+{% raw %}
+
 	Article: Q133034
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -106,3 +108,5 @@ permalink: /kb/133/Q133034/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150293/
 
 ## Q150293: INFO: Visual Basic &amp; Visual SourceSafe Add-In Options
 
+{% raw %}
+
 	Article: Q150293
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/150/Q150293/
 	
 	=============================================================================
 	
+
+{% endraw %}

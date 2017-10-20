@@ -6,6 +6,8 @@ permalink: /kb/172/Q172459/
 
 ## Q172459: MSN Setup Continues to Detect McAfee VirusScan
 
+{% raw %}
+
 	Article: Q172459
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,2.51,2.52,2.6,95
@@ -57,3 +59,5 @@ permalink: /kb/172/Q172459/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121791/
 
 ## Q121791: Settings for 3C509 Not Detected Correctly
 
+{% raw %}
+
 	Article: Q121791
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -85,3 +87,5 @@ permalink: /kb/121/Q121791/
 	
 	=============================================================================
 	
+
+{% endraw %}

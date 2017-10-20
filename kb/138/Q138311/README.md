@@ -6,6 +6,8 @@ permalink: /kb/138/Q138311/
 
 ## Q138311: PRB: Mapi Session Control and Exchange May Cause Errors
 
+{% raw %}
+
 	Article: Q138311
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -92,3 +94,5 @@ permalink: /kb/138/Q138311/
 	
 	=============================================================================
 	
+
+{% endraw %}

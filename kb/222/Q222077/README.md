@@ -6,6 +6,8 @@ permalink: /kb/222/Q222077/
 
 ## Q222077: AV in RRAS When Windows Time Service Adjusts System Time
 
+{% raw %}
+
 	Article: Q222077
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -102,3 +104,5 @@ permalink: /kb/222/Q222077/
 	
 	=============================================================================
 	
+
+{% endraw %}

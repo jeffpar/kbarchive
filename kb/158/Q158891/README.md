@@ -6,6 +6,8 @@ permalink: /kb/158/Q158891/
 
 ## Q158891: PPT: Using Macros Stored in Templates
 
+{% raw %}
+
 	Article: Q158891
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/158/Q158891/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274414/
 
 ## Q274414: &quot;Log On As&quot; Box Is Unavailable in the Services Tool on BDC
 
+{% raw %}
+
 	Article: Q274414
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/274/Q274414/
 	
 	=============================================================================
 	
+
+{% endraw %}

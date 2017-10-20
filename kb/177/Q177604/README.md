@@ -6,6 +6,8 @@ permalink: /kb/177/Q177604/
 
 ## Q177604: Multimedia: Troubleshooting Using Clean Boot of Windows 95
 
+{% raw %}
+
 	Article: Q177604
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,2.0,95
@@ -502,3 +504,5 @@ permalink: /kb/177/Q177604/
 	
 	=============================================================================
 	
+
+{% endraw %}

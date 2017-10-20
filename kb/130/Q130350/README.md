@@ -6,6 +6,8 @@ permalink: /kb/130/Q130350/
 
 ## Q130350: TYPE() Returns &quot;N&quot; for Double, Float, and Integer
 
+{% raw %}
+
 	Article: Q130350
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/130/Q130350/
 	
 	=============================================================================
 	
+
+{% endraw %}

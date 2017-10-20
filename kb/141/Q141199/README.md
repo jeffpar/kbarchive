@@ -6,6 +6,8 @@ permalink: /kb/141/Q141199/
 
 ## Q141199: FIX: Pop-Up Menu Items Disabled for an OLE Control
 
+{% raw %}
+
 	Article: Q141199
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0
@@ -97,3 +99,5 @@ permalink: /kb/141/Q141199/
 	
 	=============================================================================
 	
+
+{% endraw %}

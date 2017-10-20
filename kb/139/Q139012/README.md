@@ -6,6 +6,8 @@ permalink: /kb/139/Q139012/
 
 ## Q139012: FIX: Cannot Map Functions to Special Keys in Developer Studio
 
+{% raw %}
+
 	Article: Q139012
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/139/Q139012/
 	
 	=============================================================================
 	
+
+{% endraw %}

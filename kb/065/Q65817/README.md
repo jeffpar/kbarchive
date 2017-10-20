@@ -6,6 +6,8 @@ permalink: /kb/065/Q65817/
 
 ## Q65817: ILINK 1.20 and 1.21 Are Not Backwards Compatible
 
+{% raw %}
+
 	Article: Q65817
 	Product(s): See article
 	Version(s): 1.20 1.21 | 1.20 1.21
@@ -24,3 +26,5 @@ permalink: /kb/065/Q65817/
 	the .ILK file will be recognized correctly. ILINK versions 1.20 and
 	1.21 are not "backwards compatible" and will not work correctly with
 	earlier .ILK files.
+
+{% endraw %}

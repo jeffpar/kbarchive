@@ -6,6 +6,8 @@ permalink: /kb/085/Q85431/
 
 ## Q85431: MultFont.exe Modifies the Font Common Dialog Box
 
+{% raw %}
+
 	Article: Q85431
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -94,3 +96,5 @@ permalink: /kb/085/Q85431/
 	
 	=============================================================================
 	
+
+{% endraw %}

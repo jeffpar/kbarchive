@@ -6,6 +6,8 @@ permalink: /kb/189/Q189924/
 
 ## Q189924: BUG: Private Databound UserControl Loses DataBindings in EXE
 
+{% raw %}
+
 	Article: Q189924
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -123,3 +125,5 @@ permalink: /kb/189/Q189924/
 	
 	=============================================================================
 	
+
+{% endraw %}

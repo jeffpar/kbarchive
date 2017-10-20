@@ -6,6 +6,8 @@ permalink: /kb/083/Q83423/
 
 ## Q83423: Windows File Manager Loses Disk Menu Commands with OS/2
 
+{% raw %}
+
 	Article: Q83423
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -37,3 +39,5 @@ permalink: /kb/083/Q83423/
 	
 	=============================================================================
 	
+
+{% endraw %}

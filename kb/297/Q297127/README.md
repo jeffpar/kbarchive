@@ -6,6 +6,8 @@ permalink: /kb/297/Q297127/
 
 ## Q297127: Users With Web-based E-mail Accounts Can Receive At Both @msn.co
 
+{% raw %}
+
 	Article: Q297127
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -56,3 +58,5 @@ permalink: /kb/297/Q297127/
 	
 	=============================================================================
 	
+
+{% endraw %}

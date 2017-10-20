@@ -6,6 +6,8 @@ permalink: /kb/164/Q164458/
 
 ## Q164458: WD97: &quot;This Document May Be Corrupt&quot; Editing Master Document
 
+{% raw %}
+
 	Article: Q164458
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -174,3 +176,5 @@ permalink: /kb/164/Q164458/
 	
 	=============================================================================
 	
+
+{% endraw %}

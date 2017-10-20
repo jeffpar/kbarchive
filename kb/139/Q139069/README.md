@@ -6,6 +6,8 @@ permalink: /kb/139/Q139069/
 
 ## Q139069: FIX: Append-Only on Dynaset Recordsets Forces Read-Only
 
+{% raw %}
+
 	Article: Q139069
 	Product(s): Microsoft C Compiler
 	Version(s): 1.51 1.52 | 2.00 2.10 2.20
@@ -85,3 +87,5 @@ permalink: /kb/139/Q139069/
 	
 	=============================================================================
 	
+
+{% endraw %}

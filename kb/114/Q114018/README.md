@@ -6,6 +6,8 @@ permalink: /kb/114/Q114018/
 
 ## Q114018: Printing from an OS/2 Workstation to a WINNT Shared Printer
 
+{% raw %}
+
 	Article: Q114018
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -67,3 +69,5 @@ permalink: /kb/114/Q114018/
 	
 	=============================================================================
 	
+
+{% endraw %}

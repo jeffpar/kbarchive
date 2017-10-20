@@ -6,6 +6,8 @@ permalink: /kb/033/Q33032/
 
 ## Q33032: &quot;Field Overflow&quot; Using INPUT, ON ERROR to Set Record
 
+{% raw %}
+
 	Article: Q33032
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -46,3 +48,5 @@ permalink: /kb/033/Q33032/
 	     PRINT ERR
 	     c = 5
 	     RESUME
+
+{% endraw %}

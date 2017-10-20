@@ -6,6 +6,8 @@ permalink: /kb/228/Q228508/
 
 ## Q228508: Err Msg: Error 1907 User Account Set with Change Password
 
+{% raw %}
+
 	Article: Q228508
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/228/Q228508/
 	
 	=============================================================================
 	
+
+{% endraw %}

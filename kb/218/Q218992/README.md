@@ -6,6 +6,8 @@ permalink: /kb/218/Q218992/
 
 ## Q218992: INFO: Using Visual Basic 5.0 and RDO 2.0 With SQL Server 7.0
 
+{% raw %}
+
 	Article: Q218992
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -130,3 +132,5 @@ permalink: /kb/218/Q218992/
 	
 	=============================================================================
 	
+
+{% endraw %}

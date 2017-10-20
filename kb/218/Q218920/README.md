@@ -6,6 +6,8 @@ permalink: /kb/218/Q218920/
 
 ## Q218920: XADM: How to Prevent Logons During Move Mailbox
 
+{% raw %}
+
 	Article: Q218920
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -101,3 +103,5 @@ permalink: /kb/218/Q218920/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190719/
 
 ## Q190719: WD97: No Send To Mail Recipient with Outlook Express/Windows 98
 
+{% raw %}
+
 	Article: Q190719
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -161,3 +163,5 @@ permalink: /kb/190/Q190719/
 	
 	=============================================================================
 	
+
+{% endraw %}

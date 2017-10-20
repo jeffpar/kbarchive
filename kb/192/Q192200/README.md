@@ -6,6 +6,8 @@ permalink: /kb/192/Q192200/
 
 ## Q192200: XCLN: Schedule+ 1.0 Supports dates to 2019
 
+{% raw %}
+
 	Article: Q192200
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -42,3 +44,5 @@ permalink: /kb/192/Q192200/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/319/Q319797/
 
 ## Q319797: BUG: An Access Violation Occurs When You Use the /Og Switch for
 
+{% raw %}
+
 	Article: Q319797
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,4.0
@@ -100,3 +102,5 @@ permalink: /kb/319/Q319797/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66322/
 
 ## Q66322: D2030 Compiler Error in &quot;P3&quot; or Machine Hangs During Compile
 
+{% raw %}
+
 	Article: Q66322
 	Product(s): See article
 	Version(s): 6.00a  | 6.00a
@@ -61,3 +63,5 @@ permalink: /kb/066/Q66322/
 	Microsoft has confirmed this to be a problem with the C compiler
 	version 6.00a. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

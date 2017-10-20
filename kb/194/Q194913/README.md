@@ -6,6 +6,8 @@ permalink: /kb/194/Q194913/
 
 ## Q194913: BUG: VB/VBA Do Not Understand MIDL IUnknown&#42;&#42; Data Type
 
+{% raw %}
+
 	Article: Q194913
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -256,3 +258,5 @@ permalink: /kb/194/Q194913/
 	
 	=============================================================================
 	
+
+{% endraw %}

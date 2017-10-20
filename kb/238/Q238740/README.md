@@ -6,6 +6,8 @@ permalink: /kb/238/Q238740/
 
 ## Q238740: XCLN: Error Starting Exchange Client &quot;The information store cann
 
+{% raw %}
+
 	Article: Q238740
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/238/Q238740/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/022/Q22135/
 
 ## Q22135: INFO: Windows DEVICEDATA Escape Usage
 
+{% raw %}
+
 	Article: Q22135
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -71,3 +73,5 @@ permalink: /kb/022/Q22135/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/314/Q314700/
 
 ## Q314700: Encarta Reference Library: Err Msg Joining Club Encarta
 
+{% raw %}
+
 	Article: Q314700
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -170,3 +172,5 @@ permalink: /kb/314/Q314700/
 	
 	=============================================================================
 	
+
+{% endraw %}

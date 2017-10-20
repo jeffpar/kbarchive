@@ -6,6 +6,8 @@ permalink: /kb/184/Q184439/
 
 ## Q184439: Clicking Web Link in Document Prompts You to Disconnect from MSN
 
+{% raw %}
+
 	Article: Q184439
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -71,3 +73,5 @@ permalink: /kb/184/Q184439/
 	
 	=============================================================================
 	
+
+{% endraw %}

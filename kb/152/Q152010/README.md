@@ -6,6 +6,8 @@ permalink: /kb/152/Q152010/
 
 ## Q152010: LUA RUI/SLI Calls May Return Immediately or with LUA_IN_PROGRESS
 
+{% raw %}
+
 	Article: Q152010
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11,3.0
@@ -40,3 +42,5 @@ permalink: /kb/152/Q152010/
 	
 	=============================================================================
 	
+
+{% endraw %}

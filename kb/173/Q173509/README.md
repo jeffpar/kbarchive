@@ -6,6 +6,8 @@ permalink: /kb/173/Q173509/
 
 ## Q173509: XADM: Setup Fails when Installing Outlook Web Access
 
+{% raw %}
+
 	Article: Q173509
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -51,3 +53,5 @@ permalink: /kb/173/Q173509/
 	
 	=============================================================================
 	
+
+{% endraw %}

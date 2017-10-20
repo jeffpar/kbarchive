@@ -6,6 +6,8 @@ permalink: /kb/150/Q150651/
 
 ## Q150651: Microsoft DirectX 1.0 Questions and Answers
 
+{% raw %}
+
 	Article: Q150651
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -111,3 +113,5 @@ permalink: /kb/150/Q150651/
 	
 	=============================================================================
 	
+
+{% endraw %}

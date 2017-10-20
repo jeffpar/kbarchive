@@ -6,6 +6,8 @@ permalink: /kb/163/Q163188/
 
 ## Q163188: PPT: Sample VB Code to Create a Graph on a Slide
 
+{% raw %}
+
 	Article: Q163188
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -135,3 +137,5 @@ permalink: /kb/163/Q163188/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/065/Q65746/
 
 ## Q65746: Remote Control Programs Do Not Operate with Flight Simulator
 
+{% raw %}
+
 	Article: Q65746
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/065/Q65746/
 	
 	=============================================================================
 	
+
+{% endraw %}

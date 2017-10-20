@@ -6,6 +6,8 @@ permalink: /kb/296/Q296668/
 
 ## Q296668: FP: Authentication Error When You Log On
 
+{% raw %}
+
 	Article: Q296668
 	Product(s): Word Front Page
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/296/Q296668/
 	
 	=============================================================================
 	
+
+{% endraw %}

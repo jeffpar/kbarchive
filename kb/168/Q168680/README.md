@@ -6,6 +6,8 @@ permalink: /kb/168/Q168680/
 
 ## Q168680: XFOR: Replaying CCM files from cc:Mail Connector Store
 
+{% raw %}
+
 	Article: Q168680
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/168/Q168680/
 	
 	=============================================================================
 	
+
+{% endraw %}

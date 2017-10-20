@@ -6,6 +6,8 @@ permalink: /kb/172/Q172629/
 
 ## Q172629: WD97: Information About the Word Internet LookUp Template
 
+{% raw %}
+
 	Article: Q172629
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -238,3 +240,5 @@ permalink: /kb/172/Q172629/
 	
 	=============================================================================
 	
+
+{% endraw %}

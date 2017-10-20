@@ -6,6 +6,8 @@ permalink: /kb/190/Q190464/
 
 ## Q190464: HOWTO: Get to the Visual FoxPro Registration Wizard
 
+{% raw %}
+
 	Article: Q190464
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -54,3 +56,5 @@ permalink: /kb/190/Q190464/
 	
 	=============================================================================
 	
+
+{% endraw %}

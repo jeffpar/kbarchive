@@ -6,6 +6,8 @@ permalink: /kb/167/Q167943/
 
 ## Q167943: XCLN: Err Msg: The Item Could Not Be Printed
 
+{% raw %}
+
 	Article: Q167943
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/167/Q167943/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236052/
 
 ## Q236052: SMS: Recovering When a Client Connection Account Is Locked Out
 
+{% raw %}
+
 	Article: Q236052
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -186,3 +188,5 @@ permalink: /kb/236/Q236052/
 	
 	=============================================================================
 	
+
+{% endraw %}

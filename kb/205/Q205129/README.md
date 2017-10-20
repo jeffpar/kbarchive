@@ -6,6 +6,8 @@ permalink: /kb/205/Q205129/
 
 ## Q205129: Mac Encarta 98: Flashlight Pointer Not Displayed in Virtual Tour
 
+{% raw %}
+
 	Article: Q205129
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -46,3 +48,5 @@ permalink: /kb/205/Q205129/
 	
 	=============================================================================
 	
+
+{% endraw %}

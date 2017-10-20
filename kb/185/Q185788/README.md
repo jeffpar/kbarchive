@@ -6,6 +6,8 @@ permalink: /kb/185/Q185788/
 
 ## Q185788: Windows NT Hangs on Boot on DEC Alpha Clustered Servers
 
+{% raw %}
+
 	Article: Q185788
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/185/Q185788/
 	
 	=============================================================================
 	
+
+{% endraw %}

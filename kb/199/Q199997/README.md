@@ -6,6 +6,8 @@ permalink: /kb/199/Q199997/
 
 ## Q199997: SMS: Software Metering Doesn't Meter Some Applications
 
+{% raw %}
+
 	Article: Q199997
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -42,3 +44,5 @@ permalink: /kb/199/Q199997/
 	
 	=============================================================================
 	
+
+{% endraw %}

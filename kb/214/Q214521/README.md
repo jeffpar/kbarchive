@@ -6,6 +6,8 @@ permalink: /kb/214/Q214521/
 
 ## Q214521: Multithreaded SLI Application May Deadlock within WINSLI32.DLL
 
+{% raw %}
+
 	Article: Q214521
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
@@ -79,3 +81,5 @@ permalink: /kb/214/Q214521/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75737/
 
 ## Q75737: PRB: One Cause of Fatal Exit 0x001A
 
+{% raw %}
+
 	Article: Q75737
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -69,3 +71,5 @@ permalink: /kb/075/Q75737/
 	
 	=============================================================================
 	
+
+{% endraw %}

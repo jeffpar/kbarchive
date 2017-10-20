@@ -6,6 +6,8 @@ permalink: /kb/308/Q308533/
 
 ## Q308533: Encarta World Atlas 2001: Err Msg: MSVCIRT.DLL File Is Linked...
 
+{% raw %}
+
 	Article: Q308533
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/308/Q308533/
 	
 	=============================================================================
 	
+
+{% endraw %}

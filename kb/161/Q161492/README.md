@@ -6,6 +6,8 @@ permalink: /kb/161/Q161492/
 
 ## Q161492: INFO: LU Session Activation Using Dynamically Defined Dependent
 
+{% raw %}
+
 	Article: Q161492
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0
@@ -162,3 +164,5 @@ permalink: /kb/161/Q161492/
 	
 	=============================================================================
 	
+
+{% endraw %}

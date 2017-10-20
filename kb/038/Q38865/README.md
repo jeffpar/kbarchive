@@ -6,6 +6,8 @@ permalink: /kb/038/Q38865/
 
 ## Q38865: Cannot Use /2 Switch for Dual-Monitor Debugging on PS/2
 
+{% raw %}
+
 	Article: Q38865
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.2,3.0,3.05,3.06,3.07,3.11,3.14,4.0,4.01,4.05,4.1
@@ -43,3 +45,5 @@ permalink: /kb/038/Q38865/
 	
 	=============================================================================
 	
+
+{% endraw %}

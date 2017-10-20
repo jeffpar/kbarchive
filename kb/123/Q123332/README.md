@@ -6,6 +6,8 @@ permalink: /kb/123/Q123332/
 
 ## Q123332: BUG: True Type Font Display Problem with WINHELP ver 3.10.151
 
+{% raw %}
+
 	Article: Q123332
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -44,3 +46,5 @@ permalink: /kb/123/Q123332/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148189/
 
 ## Q148189: Free/Busy Time Planner Doesn't Translate Time Zones
 
+{% raw %}
+
 	Article: Q148189
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -62,3 +64,5 @@ permalink: /kb/148/Q148189/
 	
 	=============================================================================
 	
+
+{% endraw %}

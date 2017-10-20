@@ -6,6 +6,8 @@ permalink: /kb/156/Q156251/
 
 ## Q156251: ADT95: Cannot Configure Local Dropbox in Replication Manager
 
+{% raw %}
+
 	Article: Q156251
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -80,3 +82,5 @@ permalink: /kb/156/Q156251/
 	
 	=============================================================================
 	
+
+{% endraw %}

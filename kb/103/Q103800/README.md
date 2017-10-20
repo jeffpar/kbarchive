@@ -6,6 +6,8 @@ permalink: /kb/103/Q103800/
 
 ## Q103800: MHS: INPOST.EXE Strips Local User Aliases from To: Line
 
+{% raw %}
+
 	Article: Q103800
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -109,3 +111,5 @@ permalink: /kb/103/Q103800/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41250/
 
 ## Q41250: How to Manually Setup QuickC Version 2.00 on a Hard Drive
 
+{% raw %}
+
 	Article: Q41250
 	Product(s): See article
 	Version(s): 2.00
@@ -183,3 +185,5 @@ permalink: /kb/041/Q41250/
 	
 	or follow the recipe listed above for manually building them with
 	the Library Manager.
+
+{% endraw %}

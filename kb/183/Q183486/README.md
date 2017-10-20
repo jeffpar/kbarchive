@@ -6,6 +6,8 @@ permalink: /kb/183/Q183486/
 
 ## Q183486: Using Multilink and ISDN Adapter Second Channel Does Not Connect
 
+{% raw %}
+
 	Article: Q183486
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -77,3 +79,5 @@ permalink: /kb/183/Q183486/
 	
 	=============================================================================
 	
+
+{% endraw %}

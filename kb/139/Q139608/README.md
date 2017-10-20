@@ -6,6 +6,8 @@ permalink: /kb/139/Q139608/
 
 ## Q139608: SMB Traffic During Windows NT Domain Logon
 
+{% raw %}
+
 	Article: Q139608
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP2,4.0
@@ -359,3 +361,5 @@ permalink: /kb/139/Q139608/
 	
 	=============================================================================
 	
+
+{% endraw %}

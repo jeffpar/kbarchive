@@ -6,6 +6,8 @@ permalink: /kb/088/Q88324/
 
 ## Q88324: SoundBlaster Version 2.0 Needs Updated Drivers
 
+{% raw %}
+
 	Article: Q88324
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -78,3 +80,5 @@ permalink: /kb/088/Q88324/
 	
 	=============================================================================
 	
+
+{% endraw %}

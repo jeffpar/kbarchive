@@ -6,6 +6,8 @@ permalink: /kb/160/Q160233/
 
 ## Q160233: FIX: Can't Set SelStart Property of RichTextBox to &gt; 32K
 
+{% raw %}
+
 	Article: Q160233
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -104,3 +106,5 @@ permalink: /kb/160/Q160233/
 	
 	=============================================================================
 	
+
+{% endraw %}

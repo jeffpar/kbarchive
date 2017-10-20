@@ -6,6 +6,8 @@ permalink: /kb/176/Q176195/
 
 ## Q176195: XADM: Address Book Views Do Not Replicate Between Sites
 
+{% raw %}
+
 	Article: Q176195
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -77,3 +79,5 @@ permalink: /kb/176/Q176195/
 	
 	=============================================================================
 	
+
+{% endraw %}

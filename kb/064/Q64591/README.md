@@ -6,6 +6,8 @@ permalink: /kb/064/Q64591/
 
 ## Q64591: EMS40.SYS Is Valid LIM 4.0 Driver for EM Use in BASIC PDS
 
+{% raw %}
+
 	Article: Q64591
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -49,3 +51,5 @@ permalink: /kb/064/Q64591/
 	(within the limitations of software emulation) all 28 functions
 	specified in the LIM 4.0 EMS. It does not attempt, however, to emulate
 	the DMA functions included in Function 28, Alternate Map Register Set.
+
+{% endraw %}

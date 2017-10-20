@@ -6,6 +6,8 @@ permalink: /kb/314/Q314588/
 
 ## Q314588: XADM: Err Msg Running Backup Against a Clustered Exchange Server
 
+{% raw %}
+
 	Article: Q314588
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -58,3 +60,5 @@ permalink: /kb/314/Q314588/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249722/
 
 ## Q249722: No ODBC Logging Format in PWS4.0
 
+{% raw %}
+
 	Article: Q249722
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:4.0; winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/249/Q249722/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/233/Q233054/
 
 ## Q233054: XFOR: Migration Wizard Stops Processing Messages Too Soon
 
+{% raw %}
+
 	Article: Q233054
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -81,3 +83,5 @@ permalink: /kb/233/Q233054/
 	
 	=============================================================================
 	
+
+{% endraw %}

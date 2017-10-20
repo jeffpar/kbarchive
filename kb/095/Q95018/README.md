@@ -6,6 +6,8 @@ permalink: /kb/095/Q95018/
 
 ## Q95018: PROFS: &quot;Nickname File Filename Filetype Does Not Exist&quot; Error
 
+{% raw %}
+
 	Article: Q95018
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.3
@@ -56,3 +58,5 @@ permalink: /kb/095/Q95018/
 	
 	=============================================================================
 	
+
+{% endraw %}

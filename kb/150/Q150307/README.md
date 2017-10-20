@@ -6,6 +6,8 @@ permalink: /kb/150/Q150307/
 
 ## Q150307: NDIS Drivers Available with NetWare Real-Mode Client
 
+{% raw %}
+
 	Article: Q150307
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/150/Q150307/
 	
 	=============================================================================
 	
+
+{% endraw %}

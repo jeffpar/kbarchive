@@ -6,6 +6,8 @@ permalink: /kb/202/Q202240/
 
 ## Q202240: XFOR: Messages Queued at Lotus cc:Mail Post Office, Event ID 54
 
+{% raw %}
+
 	Article: Q202240
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -82,3 +84,5 @@ permalink: /kb/202/Q202240/
 	
 	=============================================================================
 	
+
+{% endraw %}

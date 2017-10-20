@@ -6,6 +6,8 @@ permalink: /kb/103/Q103318/
 
 ## Q103318: MoveLst.exe Moves Item in List Box Using Drag and Drop
 
+{% raw %}
+
 	Article: Q103318
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -58,3 +60,5 @@ permalink: /kb/103/Q103318/
 	
 	=============================================================================
 	
+
+{% endraw %}

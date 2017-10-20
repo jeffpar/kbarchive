@@ -6,6 +6,8 @@ permalink: /kb/149/Q149239/
 
 ## Q149239: SNA Server Distributed Link Service Supports IP Address
 
+{% raw %}
+
 	Article: Q149239
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1,3.0,4.0
@@ -46,3 +48,5 @@ permalink: /kb/149/Q149239/
 	
 	=============================================================================
 	
+
+{% endraw %}

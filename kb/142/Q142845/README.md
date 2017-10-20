@@ -6,6 +6,8 @@ permalink: /kb/142/Q142845/
 
 ## Q142845: How to Use SQL Functions in &#42;.IDC Scripts
 
+{% raw %}
+
 	Article: Q142845
 	Product(s): Internet Information Server
 	Version(s): 1.00
@@ -103,3 +105,5 @@ permalink: /kb/142/Q142845/
 	
 	=============================================================================
 	
+
+{% endraw %}

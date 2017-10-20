@@ -6,6 +6,8 @@ permalink: /kb/254/Q254796/
 
 ## Q254796: FILE: Updated Grid Control for Handheld PC Platform
 
+{% raw %}
+
 	Article: Q254796
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -100,3 +102,5 @@ permalink: /kb/254/Q254796/
 	
 	=============================================================================
 	
+
+{% endraw %}

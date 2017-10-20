@@ -6,6 +6,8 @@ permalink: /kb/129/Q129186/
 
 ## Q129186: PRB: Delta Labels Are Not Converted with DELTA_SS.EXE
 
+{% raw %}
+
 	Article: Q129186
 	Product(s): Microsoft SourceSafe
 	Version(s): MS-DOS:3.1; WINDOWS:3.1,4.0,5.0; winnt:3.1
@@ -42,3 +44,5 @@ permalink: /kb/129/Q129186/
 	
 	=============================================================================
 	
+
+{% endraw %}

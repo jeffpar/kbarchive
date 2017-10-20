@@ -6,6 +6,8 @@ permalink: /kb/035/Q35241/
 
 ## Q35241: Using Dual Video Display Cards and Monitors with QuickBASIC
 
+{% raw %}
+
 	Article: Q35241
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -44,3 +46,5 @@ permalink: /kb/035/Q35241/
 	PRINT #1, "This should be on the MONO Screen."
 	POKE &H449, 3
 	PRINT #1, "This should be on the COLOR Screen."
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169781/
 
 ## Q169781: XFOR: IMC Fails to Send Mail to Domains with Multiple MX Records
 
+{% raw %}
+
 	Article: Q169781
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5,0
@@ -87,3 +89,5 @@ permalink: /kb/169/Q169781/
 	
 	=============================================================================
 	
+
+{% endraw %}

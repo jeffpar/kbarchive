@@ -6,6 +6,8 @@ permalink: /kb/227/Q227020/
 
 ## Q227020: Software Metering Installation Fails to Complete Installation
 
+{% raw %}
+
 	Article: Q227020
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -59,3 +61,5 @@ permalink: /kb/227/Q227020/
 	
 	=============================================================================
 	
+
+{% endraw %}

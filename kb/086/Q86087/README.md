@@ -6,6 +6,8 @@ permalink: /kb/086/Q86087/
 
 ## Q86087: Mvfpprnt.exe Mastering Visual FoxPro Print Utility
 
+{% raw %}
+
 	Article: Q86087
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -112,3 +114,5 @@ permalink: /kb/086/Q86087/
 	
 	=============================================================================
 	
+
+{% endraw %}

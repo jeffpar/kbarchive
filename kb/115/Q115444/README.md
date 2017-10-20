@@ -6,6 +6,8 @@ permalink: /kb/115/Q115444/
 
 ## Q115444: X400: Admin Program Generates Error with TP4/CLNP Connection
 
+{% raw %}
+
 	Article: Q115444
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -73,3 +75,5 @@ permalink: /kb/115/Q115444/
 	
 	=============================================================================
 	
+
+{% endraw %}

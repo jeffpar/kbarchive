@@ -6,6 +6,8 @@ permalink: /kb/250/Q250670/
 
 ## Q250670: PRB: VC++ IDE May Hang During a Build Due to Anti-Virus Software
 
+{% raw %}
+
 	Article: Q250670
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -170,3 +172,5 @@ permalink: /kb/250/Q250670/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/051/Q51735/
 
 ## Q51735: Clock Function Sets errno
 
+{% raw %}
+
 	Article: Q51735
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.00 5.10
@@ -25,3 +27,5 @@ permalink: /kb/051/Q51735/
 	error and sets errno to the value in AL. In the case of a request for
 	the system date, AL (and therefore, errno) contains the day of the
 	week.
+
+{% endraw %}

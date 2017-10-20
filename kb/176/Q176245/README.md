@@ -6,6 +6,8 @@ permalink: /kb/176/Q176245/
 
 ## Q176245: XWEB: VBScript Error '800a03e3' When Accessing OWA Server 5.5
 
+{% raw %}
+
 	Article: Q176245
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -63,3 +65,5 @@ permalink: /kb/176/Q176245/
 	
 	=============================================================================
 	
+
+{% endraw %}

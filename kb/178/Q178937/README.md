@@ -6,6 +6,8 @@ permalink: /kb/178/Q178937/
 
 ## Q178937: WD97: Data Is Lost When You Type Information Through a Data Form
 
+{% raw %}
+
 	Article: Q178937
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/178/Q178937/
 	
 	=============================================================================
 	
+
+{% endraw %}

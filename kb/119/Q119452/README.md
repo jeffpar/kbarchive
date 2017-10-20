@@ -6,6 +6,8 @@ permalink: /kb/119/Q119452/
 
 ## Q119452: PC DirSync: No Requestor Updates to Send
 
+{% raw %}
+
 	Article: Q119452
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -175,3 +177,5 @@ permalink: /kb/119/Q119452/
 	
 	=============================================================================
 	
+
+{% endraw %}

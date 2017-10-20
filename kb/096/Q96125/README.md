@@ -6,6 +6,8 @@ permalink: /kb/096/Q96125/
 
 ## Q96125: 3COM: Conversion to Mail 3.0 Windows Client Fails
 
+{% raw %}
+
 	Article: Q96125
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -68,3 +70,5 @@ permalink: /kb/096/Q96125/
 	
 	=============================================================================
 	
+
+{% endraw %}

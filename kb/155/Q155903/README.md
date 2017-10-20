@@ -6,6 +6,8 @@ permalink: /kb/155/Q155903/
 
 ## Q155903: WD97: Error Inserting ActiveX Control
 
+{% raw %}
+
 	Article: Q155903
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/155/Q155903/
 	
 	=============================================================================
 	
+
+{% endraw %}

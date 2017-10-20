@@ -6,6 +6,8 @@ permalink: /kb/100/Q100082/
 
 ## Q100082: Change Icon Title Fonts in Program Manager
 
+{% raw %}
+
 	Article: Q100082
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -56,3 +58,5 @@ permalink: /kb/100/Q100082/
 	
 	=============================================================================
 	
+
+{% endraw %}

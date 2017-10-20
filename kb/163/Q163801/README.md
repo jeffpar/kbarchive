@@ -6,6 +6,8 @@ permalink: /kb/163/Q163801/
 
 ## Q163801: PRB: &quot;Error Locating Config File-Bad Path?&quot; in Visual FoxPro
 
+{% raw %}
+
 	Article: Q163801
 	Product(s): Microsoft FoxPro
 	Version(s): 2.0x,3.0,3.0b,5.0,5.0a,6.0
@@ -106,3 +108,5 @@ permalink: /kb/163/Q163801/
 	
 	=============================================================================
 	
+
+{% endraw %}

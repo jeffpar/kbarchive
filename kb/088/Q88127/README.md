@@ -6,6 +6,8 @@ permalink: /kb/088/Q88127/
 
 ## Q88127: BUG: No Dr. Watson Log File in Drive's Root Directory
 
+{% raw %}
+
 	Article: Q88127
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/088/Q88127/
 	
 	=============================================================================
 	
+
+{% endraw %}

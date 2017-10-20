@@ -6,6 +6,8 @@ permalink: /kb/229/Q229648/
 
 ## Q229648: XADM: Sent Field Displayed Incorrectly in Forwarded Message
 
+{% raw %}
+
 	Article: Q229648
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98; winnt:5.5
@@ -90,3 +92,5 @@ permalink: /kb/229/Q229648/
 	
 	=============================================================================
 	
+
+{% endraw %}

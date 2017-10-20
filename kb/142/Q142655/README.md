@@ -6,6 +6,8 @@ permalink: /kb/142/Q142655/
 
 ## Q142655: Stop Message Appears After Deleting ProductOption Registry Key
 
+{% raw %}
+
 	Article: Q142655
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/142/Q142655/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249017/
 
 ## Q249017: Print Job May Stop Responding and Event ID 2004 May Be Displayed
 
+{% raw %}
+
 	Article: Q249017
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4
@@ -84,3 +86,5 @@ permalink: /kb/249/Q249017/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259584/
 
 ## Q259584: XFOR: Notes Directory Synch Fails from Exchange to Notes
 
+{% raw %}
+
 	Article: Q259584
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -70,3 +72,5 @@ permalink: /kb/259/Q259584/
 	
 	=============================================================================
 	
+
+{% endraw %}

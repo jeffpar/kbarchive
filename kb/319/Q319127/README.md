@@ -6,6 +6,8 @@ permalink: /kb/319/Q319127/
 
 ## Q319127: Services Do Not Start and Event ID 7022 Is Logged
 
+{% raw %}
+
 	Article: Q319127
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -118,3 +120,5 @@ permalink: /kb/319/Q319127/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152948/
 
 ## Q152948: XADM: IS Won't Stop and PerfMon Shows No Processing
 
+{% raw %}
+
 	Article: Q152948
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/152/Q152948/
 	
 	=============================================================================
 	
+
+{% endraw %}

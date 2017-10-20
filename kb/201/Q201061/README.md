@@ -6,6 +6,8 @@ permalink: /kb/201/Q201061/
 
 ## Q201061: FIX: MDAC 2.0 SQL Server ODBC Driver Hangs On SQLDescribeCol()
 
+{% raw %}
+
 	Article: Q201061
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.5,3.6
@@ -75,3 +77,5 @@ permalink: /kb/201/Q201061/
 	
 	=============================================================================
 	
+
+{% endraw %}

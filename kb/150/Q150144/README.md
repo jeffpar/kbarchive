@@ -6,6 +6,8 @@ permalink: /kb/150/Q150144/
 
 ## Q150144: Multihomed Client Fails to Refresh Registration with WINS
 
+{% raw %}
+
 	Article: Q150144
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -58,3 +60,5 @@ permalink: /kb/150/Q150144/
 	
 	=============================================================================
 	
+
+{% endraw %}

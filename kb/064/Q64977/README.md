@@ -6,6 +6,8 @@ permalink: /kb/064/Q64977/
 
 ## Q64977: Using MS-DOS 5.0 Setup Rather Than MS-DOS 5 Upgrade Setup
 
+{% raw %}
+
 	Article: Q64977
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -43,3 +45,5 @@ permalink: /kb/064/Q64977/
 	
 	=============================================================================
 	
+
+{% endraw %}

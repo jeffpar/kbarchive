@@ -6,6 +6,8 @@ permalink: /kb/241/Q241980/
 
 ## Q241980: Description of Valid Labels for Domain Name System
 
+{% raw %}
+
 	Article: Q241980
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/241/Q241980/
 	
 	=============================================================================
 	
+
+{% endraw %}

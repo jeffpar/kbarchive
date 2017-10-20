@@ -6,6 +6,8 @@ permalink: /kb/163/Q163325/
 
 ## Q163325: XCON: MTA: Text Event Log (Evo.log)
 
+{% raw %}
+
 	Article: Q163325
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/163/Q163325/
 	
 	=============================================================================
 	
+
+{% endraw %}

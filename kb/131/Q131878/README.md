@@ -6,6 +6,8 @@ permalink: /kb/131/Q131878/
 
 ## Q131878: Microsoft Exchange Client Keeps Unsent Mail in Outbox
 
+{% raw %}
+
 	Article: Q131878
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/131/Q131878/
 	
 	=============================================================================
 	
+
+{% endraw %}

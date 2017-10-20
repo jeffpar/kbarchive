@@ -6,6 +6,8 @@ permalink: /kb/166/Q166986/
 
 ## Q166986: XCLN: Error Printing from MS Schedule+ If Normal.fmt Corrupted
 
+{% raw %}
+
 	Article: Q166986
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -105,3 +107,5 @@ permalink: /kb/166/Q166986/
 	
 	=============================================================================
 	
+
+{% endraw %}

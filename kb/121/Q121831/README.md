@@ -6,6 +6,8 @@ permalink: /kb/121/Q121831/
 
 ## Q121831: Writer 1.0: ErrMsg: Can't Look at ~Creative Writer Preferences
 
+{% raw %}
+
 	Article: Q121831
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -95,3 +97,5 @@ permalink: /kb/121/Q121831/
 	
 	=============================================================================
 	
+
+{% endraw %}

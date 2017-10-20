@@ -6,6 +6,8 @@ permalink: /kb/114/Q114491/
 
 ## Q114491: How to Contact the Microsoft Wish Program
 
+{% raw %}
+
 	Article: Q114491
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/114/Q114491/
 	
 	=============================================================================
 	
+
+{% endraw %}

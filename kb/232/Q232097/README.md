@@ -6,6 +6,8 @@ permalink: /kb/232/Q232097/
 
 ## Q232097: DirectX: List of Files Installed by the DirectPlay 6.1a Update
 
+{% raw %}
+
 	Article: Q232097
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:95
@@ -79,3 +81,5 @@ permalink: /kb/232/Q232097/
 	
 	=============================================================================
 	
+
+{% endraw %}

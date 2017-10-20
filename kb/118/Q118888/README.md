@@ -6,6 +6,8 @@ permalink: /kb/118/Q118888/
 
 ## Q118888: PC Ext: First Contact Form for Microsoft Mail EXTERNAL.EXE
 
+{% raw %}
+
 	Article: Q118888
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.10 3.00 3.20 3.50
@@ -80,3 +82,5 @@ permalink: /kb/118/Q118888/
 	
 	=============================================================================
 	
+
+{% endraw %}

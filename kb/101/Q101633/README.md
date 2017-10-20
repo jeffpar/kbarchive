@@ -6,6 +6,8 @@ permalink: /kb/101/Q101633/
 
 ## Q101633: Mac Needs TrueType Font Pack for Non-PostScript Printer
 
+{% raw %}
+
 	Article: Q101633
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 4.0
@@ -54,3 +56,5 @@ permalink: /kb/101/Q101633/
 	
 	=============================================================================
 	
+
+{% endraw %}

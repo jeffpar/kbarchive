@@ -6,6 +6,8 @@ permalink: /kb/150/Q150518/
 
 ## Q150518: NetLogon Service Fails When Secure Channel Not Functioning
 
+{% raw %}
+
 	Article: Q150518
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -165,3 +167,5 @@ permalink: /kb/150/Q150518/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/253/Q253640/
 
 ## Q253640: BUG: Crash When Closing Table with Dirty @...GET and READ Active
 
+{% raw %}
+
 	Article: Q253640
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0b,5.0,5.0a,6.0
@@ -123,3 +125,5 @@ permalink: /kb/253/Q253640/
 	
 	=============================================================================
 	
+
+{% endraw %}

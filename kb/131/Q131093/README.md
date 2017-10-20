@@ -6,6 +6,8 @@ permalink: /kb/131/Q131093/
 
 ## Q131093: PRB: SourceSafe 3.1 Cannot Use UNC Names
 
+{% raw %}
+
 	Article: Q131093
 	Product(s): Microsoft SourceSafe
 	Version(s): MS-DOS:3.1; WINDOWS:3.1; winnt:3.1
@@ -49,3 +51,5 @@ permalink: /kb/131/Q131093/
 	
 	=============================================================================
 	
+
+{% endraw %}

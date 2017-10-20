@@ -6,6 +6,8 @@ permalink: /kb/181/Q181559/
 
 ## Q181559: XADM: Error -1201 Occurs When Starting the Information Store
 
+{% raw %}
+
 	Article: Q181559
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -103,3 +105,5 @@ permalink: /kb/181/Q181559/
 	
 	=============================================================================
 	
+
+{% endraw %}

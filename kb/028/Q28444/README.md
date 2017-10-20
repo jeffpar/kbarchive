@@ -6,6 +6,8 @@ permalink: /kb/028/Q28444/
 
 ## Q28444: Example of Calling OS/2 DosGetVersion and DosGetMachineMode
 
+{% raw %}
+
 	Article: Q28444
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -47,3 +49,5 @@ permalink: /kb/028/Q28444/
 	   Print "The version number is : ";
 	   Print  peek(varptr(version)+1);".";peek(varptr(version))
 	END IF
+
+{% endraw %}

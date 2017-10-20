@@ -6,6 +6,8 @@ permalink: /kb/146/Q146349/
 
 ## Q146349: XCLN: Insert Document Not Update Vertical Scroll Bar
 
+{% raw %}
+
 	Article: Q146349
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -44,3 +46,5 @@ permalink: /kb/146/Q146349/
 	
 	=============================================================================
 	
+
+{% endraw %}

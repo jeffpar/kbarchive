@@ -6,6 +6,8 @@ permalink: /kb/174/Q174199/
 
 ## Q174199: XFOR: How to Change the NNTP Port
 
+{% raw %}
+
 	Article: Q174199
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -86,3 +88,5 @@ permalink: /kb/174/Q174199/
 	
 	=============================================================================
 	
+
+{% endraw %}

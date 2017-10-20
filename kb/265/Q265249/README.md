@@ -6,6 +6,8 @@ permalink: /kb/265/Q265249/
 
 ## Q265249: XADM: InterOrg Synchronization Tool Does Not Replicate
 
+{% raw %}
+
 	Article: Q265249
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -61,3 +63,5 @@ permalink: /kb/265/Q265249/
 	
 	=============================================================================
 	
+
+{% endraw %}

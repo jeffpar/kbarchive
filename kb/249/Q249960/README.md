@@ -6,6 +6,8 @@ permalink: /kb/249/Q249960/
 
 ## Q249960: COBOL Definitions Do Not Import Properly w/ COMTI COBOL Wizard
 
+{% raw %}
+
 	Article: Q249960
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,1.0 SP1,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -129,3 +131,5 @@ permalink: /kb/249/Q249960/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242387/
 
 ## Q242387: XFOR: Postmaster Addresses When Hosting Multiple Domains
 
+{% raw %}
+
 	Article: Q242387
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/242/Q242387/
 	
 	=============================================================================
 	
+
+{% endraw %}

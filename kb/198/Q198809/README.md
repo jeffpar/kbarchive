@@ -6,6 +6,8 @@ permalink: /kb/198/Q198809/
 
 ## Q198809: XIMS: Invisible Users Become Visible When Joining a Channel
 
+{% raw %}
+
 	Article: Q198809
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -47,3 +49,5 @@ permalink: /kb/198/Q198809/
 	
 	=============================================================================
 	
+
+{% endraw %}

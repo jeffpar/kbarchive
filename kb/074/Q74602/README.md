@@ -6,6 +6,8 @@ permalink: /kb/074/Q74602/
 
 ## Q74602: PRB: Private Profile (INI) Files Not Designed as Database
 
+{% raw %}
+
 	Article: Q74602
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -64,3 +66,5 @@ permalink: /kb/074/Q74602/
 	
 	=============================================================================
 	
+
+{% endraw %}

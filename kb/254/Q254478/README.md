@@ -6,6 +6,8 @@ permalink: /kb/254/Q254478/
 
 ## Q254478: Use the ActiveX Progress Bar OCX Control
 
+{% raw %}
+
 	Article: Q254478
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -82,3 +84,5 @@ permalink: /kb/254/Q254478/
 	
 	=============================================================================
 	
+
+{% endraw %}

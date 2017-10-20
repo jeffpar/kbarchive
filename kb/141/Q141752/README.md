@@ -6,6 +6,8 @@ permalink: /kb/141/Q141752/
 
 ## Q141752: Limiting 32-Bit MFC SDI/MDI Applications to a Single Instance
 
+{% raw %}
+
 	Article: Q141752
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0
@@ -192,3 +194,5 @@ permalink: /kb/141/Q141752/
 	
 	=============================================================================
 	
+
+{% endraw %}

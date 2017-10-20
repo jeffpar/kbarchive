@@ -6,6 +6,8 @@ permalink: /kb/256/Q256917/
 
 ## Q256917: BUG: Windows 2000 Upgrade Fails to Convert System Drive to NTFS
 
+{% raw %}
+
 	Article: Q256917
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -84,3 +86,5 @@ permalink: /kb/256/Q256917/
 	
 	=============================================================================
 	
+
+{% endraw %}

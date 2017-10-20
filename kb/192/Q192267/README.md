@@ -6,6 +6,8 @@ permalink: /kb/192/Q192267/
 
 ## Q192267: Various STOP Errors When Opening Files on Novell NetWare Servers
 
+{% raw %}
+
 	Article: Q192267
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/192/Q192267/
 	
 	=============================================================================
 	
+
+{% endraw %}

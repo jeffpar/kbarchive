@@ -6,6 +6,8 @@ permalink: /kb/278/Q278407/
 
 ## Q278407: XADM: Event ID 4097 Occurs If You Run the Move Mailbox Wizard
 
+{% raw %}
+
 	Article: Q278407
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -86,3 +88,5 @@ permalink: /kb/278/Q278407/
 	
 	=============================================================================
 	
+
+{% endraw %}

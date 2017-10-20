@@ -6,6 +6,8 @@ permalink: /kb/128/Q128932/
 
 ## Q128932: How Windows 95 Resolves Shortcut Links
 
+{% raw %}
+
 	Article: Q128932
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -116,3 +118,5 @@ permalink: /kb/128/Q128932/
 	
 	=============================================================================
 	
+
+{% endraw %}

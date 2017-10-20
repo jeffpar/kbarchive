@@ -6,6 +6,8 @@ permalink: /kb/082/Q82602/
 
 ## Q82602: Epson LQ-570 Pauses During Long Print Jobs
 
+{% raw %}
+
 	Article: Q82602
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/082/Q82602/
 	
 	=============================================================================
 	
+
+{% endraw %}

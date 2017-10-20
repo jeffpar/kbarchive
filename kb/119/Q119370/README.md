@@ -6,6 +6,8 @@ permalink: /kb/119/Q119370/
 
 ## Q119370: Creating Customized Configuration Defaults for TCP/IP-32
 
+{% raw %}
+
 	Article: Q119370
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 1.00
@@ -101,3 +103,5 @@ permalink: /kb/119/Q119370/
 	
 	=============================================================================
 	
+
+{% endraw %}

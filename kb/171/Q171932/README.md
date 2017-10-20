@@ -6,6 +6,8 @@ permalink: /kb/171/Q171932/
 
 ## Q171932: Help Author Kit: Windows 3.x Help File Information Is Inaccurate
 
+{% raw %}
+
 	Article: Q171932
 	Product(s): Microsoft Press
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/171/Q171932/
 	
 	=============================================================================
 	
+
+{% endraw %}

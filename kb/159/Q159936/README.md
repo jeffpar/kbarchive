@@ -6,6 +6,8 @@ permalink: /kb/159/Q159936/
 
 ## Q159936: Using the Windows NT 4.0 or Windows 95 System Policy Editor
 
+{% raw %}
+
 	Article: Q159936
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0;Win95
@@ -61,3 +63,5 @@ permalink: /kb/159/Q159936/
 	
 	=============================================================================
 	
+
+{% endraw %}

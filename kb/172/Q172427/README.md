@@ -6,6 +6,8 @@ permalink: /kb/172/Q172427/
 
 ## Q172427: Web Clients Cannot Resolve Name by Domain Name Only
 
+{% raw %}
+
 	Article: Q172427
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/172/Q172427/
 	
 	=============================================================================
 	
+
+{% endraw %}

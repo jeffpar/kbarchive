@@ -6,6 +6,8 @@ permalink: /kb/221/Q221122/
 
 ## Q221122: XGEN: Exchange Server Event ID Descriptions Are Missing
 
+{% raw %}
+
 	Article: Q221122
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -145,3 +147,5 @@ permalink: /kb/221/Q221122/
 	
 	=============================================================================
 	
+
+{% endraw %}

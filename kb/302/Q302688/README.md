@@ -6,6 +6,8 @@ permalink: /kb/302/Q302688/
 
 ## Q302688: Troubleshooting Context-Sensitive Cobranding
 
+{% raw %}
+
 	Article: Q302688
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -68,3 +70,5 @@ permalink: /kb/302/Q302688/
 	
 	=============================================================================
 	
+
+{% endraw %}

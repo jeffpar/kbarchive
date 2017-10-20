@@ -6,6 +6,8 @@ permalink: /kb/065/Q65169/
 
 ## Q65169: Windows Can't Use the PS/2 Port Mouse on Austin PC
 
+{% raw %}
+
 	Article: Q65169
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/065/Q65169/
 	
 	=============================================================================
 	
+
+{% endraw %}

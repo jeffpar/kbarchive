@@ -6,6 +6,8 @@ permalink: /kb/102/Q102933/
 
 ## Q102933: Mac Srv: User Name Retained in Group After User Is Removed
 
+{% raw %}
+
 	Article: Q102933
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -74,3 +76,5 @@ permalink: /kb/102/Q102933/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168487/
 
 ## Q168487: Quota Advisor May Cause Clients to Drop Connections.
 
+{% raw %}
+
 	Article: Q168487
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -97,3 +99,5 @@ permalink: /kb/168/Q168487/
 	
 	=============================================================================
 	
+
+{% endraw %}

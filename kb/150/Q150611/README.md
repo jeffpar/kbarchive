@@ -6,6 +6,8 @@ permalink: /kb/150/Q150611/
 
 ## Q150611: Qvision 2000 and Matrox Mga Ultima Cause Access Violation
 
+{% raw %}
+
 	Article: Q150611
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -119,3 +121,5 @@ permalink: /kb/150/Q150611/
 	
 	=============================================================================
 	
+
+{% endraw %}

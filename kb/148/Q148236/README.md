@@ -6,6 +6,8 @@ permalink: /kb/148/Q148236/
 
 ## Q148236: Bookshelf 96-97: Newsgroup Logon Asks You to Disconnect
 
+{% raw %}
+
 	Article: Q148236
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -50,3 +52,5 @@ permalink: /kb/148/Q148236/
 	
 	=============================================================================
 	
+
+{% endraw %}

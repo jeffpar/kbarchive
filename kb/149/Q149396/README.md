@@ -6,6 +6,8 @@ permalink: /kb/149/Q149396/
 
 ## Q149396: Cannot Change Expired Windows NT Password with DUN
 
+{% raw %}
+
 	Article: Q149396
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2
@@ -61,3 +63,5 @@ permalink: /kb/149/Q149396/
 	
 	=============================================================================
 	
+
+{% endraw %}

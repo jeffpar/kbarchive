@@ -6,6 +6,8 @@ permalink: /kb/165/Q165406/
 
 ## Q165406: WD97: HTML Page w/Style Tag Doesn't Display in Internet Explorer
 
+{% raw %}
+
 	Article: Q165406
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/165/Q165406/
 	
 	=============================================================================
 	
+
+{% endraw %}

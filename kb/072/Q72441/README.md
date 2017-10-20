@@ -6,6 +6,8 @@ permalink: /kb/072/Q72441/
 
 ## Q72441: WD97: Suppressing Blank Spaces in a Print Merge (Mail Merge)
 
+{% raw %}
+
 	Article: Q72441
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/072/Q72441/
 	
 	=============================================================================
 	
+
+{% endraw %}

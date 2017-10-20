@@ -6,6 +6,8 @@ permalink: /kb/190/Q190552/
 
 ## Q190552: WinNT 4.0 DHCP Client Modified to meet RFC 2131
 
+{% raw %}
+
 	Article: Q190552
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -84,3 +86,5 @@ permalink: /kb/190/Q190552/
 	
 	=============================================================================
 	
+
+{% endraw %}

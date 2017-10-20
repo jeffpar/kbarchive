@@ -6,6 +6,8 @@ permalink: /kb/230/Q230769/
 
 ## Q230769: XADM: Information Store Stops During RTF or HTML Conversion
 
+{% raw %}
+
 	Article: Q230769
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/230/Q230769/
 	
 	=============================================================================
 	
+
+{% endraw %}

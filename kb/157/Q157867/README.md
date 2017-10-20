@@ -6,6 +6,8 @@ permalink: /kb/157/Q157867/
 
 ## Q157867: Writer 2: Cannot Open Artwork with Real-Mode CD-ROM Drivers
 
+{% raw %}
+
 	Article: Q157867
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -57,3 +59,5 @@ permalink: /kb/157/Q157867/
 	
 	=============================================================================
 	
+
+{% endraw %}

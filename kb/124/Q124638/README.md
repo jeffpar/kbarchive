@@ -6,6 +6,8 @@ permalink: /kb/124/Q124638/
 
 ## Q124638: Settings - How to Change Them
 
+{% raw %}
+
 	Article: Q124638
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -168,3 +170,5 @@ permalink: /kb/124/Q124638/
 	
 	=============================================================================
 	
+
+{% endraw %}

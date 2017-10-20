@@ -6,6 +6,8 @@ permalink: /kb/259/Q259564/
 
 ## Q259564: INFO: Windowless Controls in the Mswless.ocx File Not Supported
 
+{% raw %}
+
 	Article: Q259564
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -55,3 +57,5 @@ permalink: /kb/259/Q259564/
 	
 	=============================================================================
 	
+
+{% endraw %}

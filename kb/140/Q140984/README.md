@@ -6,6 +6,8 @@ permalink: /kb/140/Q140984/
 
 ## Q140984: PPT7: Lines Appear Next to Slides on Printed Handouts
 
+{% raw %}
+
 	Article: Q140984
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -40,3 +42,5 @@ permalink: /kb/140/Q140984/
 	
 	=============================================================================
 	
+
+{% endraw %}

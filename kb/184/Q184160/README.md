@@ -6,6 +6,8 @@ permalink: /kb/184/Q184160/
 
 ## Q184160: XADM: Messages Left After Deleting Mailbox w/ Directory Import
 
+{% raw %}
+
 	Article: Q184160
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -65,3 +67,5 @@ permalink: /kb/184/Q184160/
 	
 	=============================================================================
 	
+
+{% endraw %}

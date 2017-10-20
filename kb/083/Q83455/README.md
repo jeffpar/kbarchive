@@ -6,6 +6,8 @@ permalink: /kb/083/Q83455/
 
 ## Q83455: PRB: XMS Version Information in MS-DOS Window Incorrect
 
+{% raw %}
+
 	Article: Q83455
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/083/Q83455/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124878/
 
 ## Q124878: DOCERR: WNetGetCachedPassword Returns WN_CANCEL (error 12)
 
+{% raw %}
+
 	Article: Q124878
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -41,3 +43,5 @@ permalink: /kb/124/Q124878/
 	
 	=============================================================================
 	
+
+{% endraw %}

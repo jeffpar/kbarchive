@@ -6,6 +6,8 @@ permalink: /kb/164/Q164991/
 
 ## Q164991: WD97: Word 97 Help Incorrectly References Tables7.dot
 
+{% raw %}
+
 	Article: Q164991
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -88,3 +90,5 @@ permalink: /kb/164/Q164991/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/037/Q37900/
 
 ## Q37900: Do Not LINK Multiple Modules with /PACKCODE
 
+{% raw %}
+
 	Article: Q37900
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -51,3 +53,5 @@ permalink: /kb/037/Q37900/
 	    ERROR 61
 	    PRINT "Returned from error routine"
 	END SUB
+
+{% endraw %}

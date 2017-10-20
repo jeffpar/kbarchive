@@ -6,6 +6,8 @@ permalink: /kb/163/Q163889/
 
 ## Q163889: XADM: Trust Levels not Used in Exchange Directory Replication
 
+{% raw %}
+
 	Article: Q163889
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -49,3 +51,5 @@ permalink: /kb/163/Q163889/
 	
 	=============================================================================
 	
+
+{% endraw %}

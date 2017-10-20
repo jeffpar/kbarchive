@@ -6,6 +6,8 @@ permalink: /kb/074/Q74666/
 
 ## Q74666: BUG: A2154 If Structure Member in Control-Flow Directive
 
+{% raw %}
+
 	Article: Q74666
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b,6.1,6.10a,6.11
@@ -122,3 +124,5 @@ permalink: /kb/074/Q74666/
 	
 	=============================================================================
 	
+
+{% endraw %}

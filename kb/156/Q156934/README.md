@@ -6,6 +6,8 @@ permalink: /kb/156/Q156934/
 
 ## Q156934: INFO: Visual C++ 4.2b Patch
 
+{% raw %}
+
 	Article: Q156934
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -617,3 +619,5 @@ permalink: /kb/156/Q156934/
 	
 	=============================================================================
 	
+
+{% endraw %}

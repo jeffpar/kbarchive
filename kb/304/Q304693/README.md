@@ -6,6 +6,8 @@ permalink: /kb/304/Q304693/
 
 ## Q304693: Event ID 644 May Be Logged When Auditing Is Not Enabled
 
+{% raw %}
+
 	Article: Q304693
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -50,3 +52,5 @@ permalink: /kb/304/Q304693/
 	
 	=============================================================================
 	
+
+{% endraw %}

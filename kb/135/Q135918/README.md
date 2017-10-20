@@ -6,6 +6,8 @@ permalink: /kb/135/Q135918/
 
 ## Q135918: RAS Does Not Function on IBM PS/Valuepoint 466DX2 Computers
 
+{% raw %}
+
 	Article: Q135918
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -77,3 +79,5 @@ permalink: /kb/135/Q135918/
 	
 	=============================================================================
 	
+
+{% endraw %}

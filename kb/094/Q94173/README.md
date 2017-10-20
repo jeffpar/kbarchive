@@ -6,6 +6,8 @@ permalink: /kb/094/Q94173/
 
 ## Q94173: Incorrect Printer Name in Setup Dialog Box
 
+{% raw %}
+
 	Article: Q94173
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -105,3 +107,5 @@ permalink: /kb/094/Q94173/
 	
 	=============================================================================
 	
+
+{% endraw %}

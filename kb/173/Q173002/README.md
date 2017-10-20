@@ -6,6 +6,8 @@ permalink: /kb/173/Q173002/
 
 ## Q173002: ACC: How Replication Manager Determines Base Replica
 
+{% raw %}
+
 	Article: Q173002
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0; :
@@ -182,3 +184,5 @@ permalink: /kb/173/Q173002/
 	
 	=============================================================================
 	
+
+{% endraw %}

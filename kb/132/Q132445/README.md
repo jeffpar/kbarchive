@@ -6,6 +6,8 @@ permalink: /kb/132/Q132445/
 
 ## Q132445: File Manager Hangs on Computer Using Mitsumi CD-ROM Driver
 
+{% raw %}
+
 	Article: Q132445
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/132/Q132445/
 	
 	=============================================================================
 	
+
+{% endraw %}

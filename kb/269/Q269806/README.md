@@ -6,6 +6,8 @@ permalink: /kb/269/Q269806/
 
 ## Q269806: MSB in Concert/Lands on Mars: How to View the About Dialog Box
 
+{% raw %}
+
 	Article: Q269806
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -59,3 +61,5 @@ permalink: /kb/269/Q269806/
 	
 	=============================================================================
 	
+
+{% endraw %}

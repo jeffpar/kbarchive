@@ -6,6 +6,8 @@ permalink: /kb/170/Q170856/
 
 ## Q170856: IIS Log File May Be Truncated When Logging to Text File
 
+{% raw %}
+
 	Article: Q170856
 	Product(s): Internet Information Server
 	Version(s): WinNT:3.0
@@ -74,3 +76,5 @@ permalink: /kb/170/Q170856/
 	
 	=============================================================================
 	
+
+{% endraw %}

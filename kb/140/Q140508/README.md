@@ -6,6 +6,8 @@ permalink: /kb/140/Q140508/
 
 ## Q140508: ErrMsg: You Must Have at Least 8 Megabytes of Free Disk Space
 
+{% raw %}
+
 	Article: Q140508
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -60,3 +62,5 @@ permalink: /kb/140/Q140508/
 	
 	=============================================================================
 	
+
+{% endraw %}

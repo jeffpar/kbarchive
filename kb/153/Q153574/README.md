@@ -6,6 +6,8 @@ permalink: /kb/153/Q153574/
 
 ## Q153574: Corrupt Display When Remote Controlling NetWare 4.0 Client
 
+{% raw %}
+
 	Article: Q153574
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -45,3 +47,5 @@ permalink: /kb/153/Q153574/
 	
 	=============================================================================
 	
+
+{% endraw %}

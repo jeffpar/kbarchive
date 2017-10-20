@@ -6,6 +6,8 @@ permalink: /kb/130/Q130008/
 
 ## Q130008: Wine Guide: MMTASK Causes GP Fault with Dell S3 1.32
 
+{% raw %}
+
 	Article: Q130008
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -130,3 +132,5 @@ permalink: /kb/130/Q130008/
 	
 	=============================================================================
 	
+
+{% endraw %}

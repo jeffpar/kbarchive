@@ -6,6 +6,8 @@ permalink: /kb/190/Q190008/
 
 ## Q190008: Using Host Header Names to Host Multiple Sites from 1 IP Address
 
+{% raw %}
+
 	Article: Q190008
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -130,3 +132,5 @@ permalink: /kb/190/Q190008/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199904/
 
 ## Q199904: EVG99: Search Results in Pinpointer Contain Illegible Characters
 
+{% raw %}
+
 	Article: Q199904
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/199/Q199904/
 	
 	=============================================================================
 	
+
+{% endraw %}

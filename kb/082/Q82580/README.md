@@ -6,6 +6,8 @@ permalink: /kb/082/Q82580/
 
 ## Q82580: Hollywood Version 1.0 Quits During Show Sample Template
 
+{% raw %}
+
 	Article: Q82580
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/082/Q82580/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/306/Q306201/
 
 ## Q306201: Contact Added To Hotmail Address Book Appears As Messenger Conta
 
+{% raw %}
+
 	Article: Q306201
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -55,3 +57,5 @@ permalink: /kb/306/Q306201/
 	
 	=============================================================================
 	
+
+{% endraw %}

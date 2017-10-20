@@ -6,6 +6,8 @@ permalink: /kb/189/Q189852/
 
 ## Q189852: HOWTO: Change Databindings on the Fly
 
+{% raw %}
+
 	Article: Q189852
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/189/Q189852/
 	
 	=============================================================================
 	
+
+{% endraw %}

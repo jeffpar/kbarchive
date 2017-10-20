@@ -6,6 +6,8 @@ permalink: /kb/139/Q139267/
 
 ## Q139267: PRB: Unable to Change Tab Order of Objects in Form
 
+{% raw %}
+
 	Article: Q139267
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/139/Q139267/
 	
 	=============================================================================
 	
+
+{% endraw %}

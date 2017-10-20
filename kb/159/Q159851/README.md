@@ -6,6 +6,8 @@ permalink: /kb/159/Q159851/
 
 ## Q159851: Rotated TrueType Fonts Printed Improperly on HP LaserJet 4
 
+{% raw %}
+
 	Article: Q159851
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/159/Q159851/
 	
 	=============================================================================
 	
+
+{% endraw %}

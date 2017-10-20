@@ -6,6 +6,8 @@ permalink: /kb/159/Q159579/
 
 ## Q159579: Slovenian Keyboard Layout Shows Dot Instead of Comma
 
+{% raw %}
+
 	Article: Q159579
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -39,3 +41,5 @@ permalink: /kb/159/Q159579/
 	
 	=============================================================================
 	
+
+{% endraw %}

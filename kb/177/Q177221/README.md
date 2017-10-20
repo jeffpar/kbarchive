@@ -6,6 +6,8 @@ permalink: /kb/177/Q177221/
 
 ## Q177221: XADM: Errors Occur During Exchange Service Pack Upgrade
 
+{% raw %}
+
 	Article: Q177221
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/177/Q177221/
 	
 	=============================================================================
 	
+
+{% endraw %}

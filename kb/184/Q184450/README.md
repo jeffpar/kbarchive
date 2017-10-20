@@ -6,6 +6,8 @@ permalink: /kb/184/Q184450/
 
 ## Q184450: Running Microsoft Access 97 Comments and Corrections
 
+{% raw %}
+
 	Article: Q184450
 	Product(s): Microsoft Press
 	Version(s): 
@@ -173,3 +175,5 @@ permalink: /kb/184/Q184450/
 	
 	=============================================================================
 	
+
+{% endraw %}

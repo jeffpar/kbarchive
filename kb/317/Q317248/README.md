@@ -6,6 +6,8 @@ permalink: /kb/317/Q317248/
 
 ## Q317248: XADM: Information Store Process Unexpectedly Stops in HrDecode
 
+{% raw %}
+
 	Article: Q317248
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -85,3 +87,5 @@ permalink: /kb/317/Q317248/
 	
 	=============================================================================
 	
+
+{% endraw %}

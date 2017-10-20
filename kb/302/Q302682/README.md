@@ -6,6 +6,8 @@ permalink: /kb/302/Q302682/
 
 ## Q302682: Passport Cobranding Troubleshooting Tips
 
+{% raw %}
+
 	Article: Q302682
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -84,3 +86,5 @@ permalink: /kb/302/Q302682/
 	
 	=============================================================================
 	
+
+{% endraw %}

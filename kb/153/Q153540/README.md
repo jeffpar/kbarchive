@@ -6,6 +6,8 @@ permalink: /kb/153/Q153540/
 
 ## Q153540: DBClean Only Merges One Computer at a Time
 
+{% raw %}
+
 	Article: Q153540
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -47,3 +49,5 @@ permalink: /kb/153/Q153540/
 	
 	=============================================================================
 	
+
+{% endraw %}

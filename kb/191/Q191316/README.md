@@ -6,6 +6,8 @@ permalink: /kb/191/Q191316/
 
 ## Q191316: PRB: SET DATASESSION TO Fails From a Method of _Screen
 
+{% raw %}
+
 	Article: Q191316
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -123,3 +125,5 @@ permalink: /kb/191/Q191316/
 	
 	=============================================================================
 	
+
+{% endraw %}

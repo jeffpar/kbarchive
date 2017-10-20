@@ -6,6 +6,8 @@ permalink: /kb/238/Q238904/
 
 ## Q238904: HOWTO: Use SQL Pass Through to Issue SELECT INTO a New SQL Table
 
+{% raw %}
+
 	Article: Q238904
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0; winnt:6.5,7.0
@@ -109,3 +111,5 @@ permalink: /kb/238/Q238904/
 	
 	=============================================================================
 	
+
+{% endraw %}

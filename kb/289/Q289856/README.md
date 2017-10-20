@@ -6,6 +6,8 @@ permalink: /kb/289/Q289856/
 
 ## Q289856: User Name Mapping May Not Be Updated
 
+{% raw %}
+
 	Article: Q289856
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -84,3 +86,5 @@ permalink: /kb/289/Q289856/
 	
 	=============================================================================
 	
+
+{% endraw %}

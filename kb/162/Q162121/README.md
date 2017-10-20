@@ -6,6 +6,8 @@ permalink: /kb/162/Q162121/
 
 ## Q162121: PPT: Sample Code to Animate All Graph 8.0 Objects
 
+{% raw %}
+
 	Article: Q162121
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -262,3 +264,5 @@ permalink: /kb/162/Q162121/
 	
 	=============================================================================
 	
+
+{% endraw %}

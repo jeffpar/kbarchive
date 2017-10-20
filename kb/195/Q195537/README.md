@@ -6,6 +6,8 @@ permalink: /kb/195/Q195537/
 
 ## Q195537: HOWTO: Copy Table Structures and Data From SQL Server
 
+{% raw %}
+
 	Article: Q195537
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -142,3 +144,5 @@ permalink: /kb/195/Q195537/
 	
 	=============================================================================
 	
+
+{% endraw %}

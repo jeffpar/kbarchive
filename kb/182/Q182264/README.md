@@ -6,6 +6,8 @@ permalink: /kb/182/Q182264/
 
 ## Q182264: 5250 or 3270 Applet Will Hang When Started
 
+{% raw %}
+
 	Article: Q182264
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,4.0
@@ -86,3 +88,5 @@ permalink: /kb/182/Q182264/
 	
 	=============================================================================
 	
+
+{% endraw %}

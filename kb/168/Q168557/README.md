@@ -6,6 +6,8 @@ permalink: /kb/168/Q168557/
 
 ## Q168557: XFOR: Recipient Name Not Recognized / Recipient Not Found
 
+{% raw %}
+
 	Article: Q168557
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/168/Q168557/
 	
 	=============================================================================
 	
+
+{% endraw %}

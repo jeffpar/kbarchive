@@ -6,6 +6,8 @@ permalink: /kb/152/Q152127/
 
 ## Q152127: Netsetup of Win95 to WinNT Server Changes Dates of All Files
 
+{% raw %}
+
 	Article: Q152127
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -49,3 +51,5 @@ permalink: /kb/152/Q152127/
 	
 	=============================================================================
 	
+
+{% endraw %}

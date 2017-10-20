@@ -6,6 +6,8 @@ permalink: /kb/124/Q124907/
 
 ## Q124907: How to Identify the CD Sampler Version Number
 
+{% raw %}
+
 	Article: Q124907
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): Fall 1993 edition,Fall 1994 edition,Spring 1994
@@ -47,3 +49,5 @@ permalink: /kb/124/Q124907/
 	
 	=============================================================================
 	
+
+{% endraw %}

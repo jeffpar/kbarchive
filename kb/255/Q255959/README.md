@@ -6,6 +6,8 @@ permalink: /kb/255/Q255959/
 
 ## Q255959: SMS: Turning Off Software Inventory on a Single Client
 
+{% raw %}
+
 	Article: Q255959
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -44,3 +46,5 @@ permalink: /kb/255/Q255959/
 	
 	=============================================================================
 	
+
+{% endraw %}

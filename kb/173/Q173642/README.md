@@ -6,6 +6,8 @@ permalink: /kb/173/Q173642/
 
 ## Q173642: SMSINST: Add Device To System.ini Command Causes GPF
 
+{% raw %}
+
 	Article: Q173642
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/173/Q173642/
 	
 	=============================================================================
 	
+
+{% endraw %}

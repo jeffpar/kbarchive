@@ -6,6 +6,8 @@ permalink: /kb/155/Q155293/
 
 ## Q155293: PRB: Time Displayed in IDE Not the Same as System Time
 
+{% raw %}
+
 	Article: Q155293
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155293/
 	
 	=============================================================================
 	
+
+{% endraw %}

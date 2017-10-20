@@ -6,6 +6,8 @@ permalink: /kb/168/Q168340/
 
 ## Q168340: SMS: .Tmp Files Not Converted to .Raw Files In Logon.srv
 
+{% raw %}
+
 	Article: Q168340
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -62,3 +64,5 @@ permalink: /kb/168/Q168340/
 	
 	=============================================================================
 	
+
+{% endraw %}

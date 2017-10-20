@@ -6,6 +6,8 @@ permalink: /kb/164/Q164359/
 
 ## Q164359: BUG: Incorrect Evaluation of Equation with Variables
 
+{% raw %}
+
 	Article: Q164359
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -66,3 +68,5 @@ permalink: /kb/164/Q164359/
 	
 	=============================================================================
 	
+
+{% endraw %}

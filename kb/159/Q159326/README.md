@@ -6,6 +6,8 @@ permalink: /kb/159/Q159326/
 
 ## Q159326: WD97: Macros Not Listed After Creating New Document in Explorer
 
+{% raw %}
+
 	Article: Q159326
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/159/Q159326/
 	
 	=============================================================================
 	
+
+{% endraw %}

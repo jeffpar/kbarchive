@@ -6,6 +6,8 @@ permalink: /kb/217/Q217193/
 
 ## Q217193: XCON: First Character in Line Is Deleted When Sending Message
 
+{% raw %}
+
 	Article: Q217193
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -96,3 +98,5 @@ permalink: /kb/217/Q217193/
 	
 	=============================================================================
 	
+
+{% endraw %}

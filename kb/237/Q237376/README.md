@@ -6,6 +6,8 @@ permalink: /kb/237/Q237376/
 
 ## Q237376: Extra Restart Required after Installing SNA 4.0 SP2 with HSI
 
+{% raw %}
+
 	Article: Q237376
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -104,3 +106,5 @@ permalink: /kb/237/Q237376/
 	
 	=============================================================================
 	
+
+{% endraw %}

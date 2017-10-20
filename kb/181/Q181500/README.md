@@ -6,6 +6,8 @@ permalink: /kb/181/Q181500/
 
 ## Q181500: XFOR: DXM Access Violation Processing NAMEM Macro
 
+{% raw %}
+
 	Article: Q181500
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -213,3 +215,5 @@ permalink: /kb/181/Q181500/
 	
 	=============================================================================
 	
+
+{% endraw %}

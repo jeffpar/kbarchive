@@ -6,6 +6,8 @@ permalink: /kb/139/Q139484/
 
 ## Q139484: ADT95: MS ADT Licensing Q &amp; A Available
 
+{% raw %}
+
 	Article: Q139484
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -56,3 +58,5 @@ permalink: /kb/139/Q139484/
 	
 	=============================================================================
 	
+
+{% endraw %}

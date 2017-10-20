@@ -6,6 +6,8 @@ permalink: /kb/232/Q232010/
 
 ## Q232010: 3D Text Screen Saver Does Not Display Custom Text
 
+{% raw %}
+
 	Article: Q232010
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/232/Q232010/
 	
 	=============================================================================
 	
+
+{% endraw %}

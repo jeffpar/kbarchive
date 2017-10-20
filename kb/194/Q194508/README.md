@@ -6,6 +6,8 @@ permalink: /kb/194/Q194508/
 
 ## Q194508: Unable to Install Printer Drivers in Other Languages
 
+{% raw %}
+
 	Article: Q194508
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -69,3 +71,5 @@ permalink: /kb/194/Q194508/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122921/
 
 ## Q122921: Windows NT Setup May Fail on IBM 8640-OP&#42;
 
+{% raw %}
+
 	Article: Q122921
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/122/Q122921/
 	
 	=============================================================================
 	
+
+{% endraw %}

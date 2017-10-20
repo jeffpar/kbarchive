@@ -6,6 +6,8 @@ permalink: /kb/309/Q309007/
 
 ## Q309007: HOW TO: Create an FTP Site in Internet Information Manager
 
+{% raw %}
+
 	Article: Q309007
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -96,3 +98,5 @@ permalink: /kb/309/Q309007/
 	
 	=============================================================================
 	
+
+{% endraw %}

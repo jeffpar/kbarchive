@@ -6,6 +6,8 @@ permalink: /kb/234/Q234144/
 
 ## Q234144: DNS Boot File Directives and Configuration for Windows NT 4.0
 
+{% raw %}
+
 	Article: Q234144
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -186,3 +188,5 @@ permalink: /kb/234/Q234144/
 	
 	=============================================================================
 	
+
+{% endraw %}

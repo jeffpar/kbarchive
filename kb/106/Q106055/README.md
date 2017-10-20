@@ -6,6 +6,8 @@ permalink: /kb/106/Q106055/
 
 ## Q106055: Multimedia PC Level 1 and Level 2 Specifications
 
+{% raw %}
+
 	Article: Q106055
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -376,3 +378,5 @@ permalink: /kb/106/Q106055/
 	
 	=============================================================================
 	
+
+{% endraw %}

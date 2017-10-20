@@ -6,6 +6,8 @@ permalink: /kb/146/Q146052/
 
 ## Q146052: &lt;1Ch&gt; Entries Can Be Removed From Static Mappings Dialog Box
 
+{% raw %}
+
 	Article: Q146052
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -38,3 +40,5 @@ permalink: /kb/146/Q146052/
 	
 	=============================================================================
 	
+
+{% endraw %}

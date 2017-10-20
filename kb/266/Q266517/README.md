@@ -6,6 +6,8 @@ permalink: /kb/266/Q266517/
 
 ## Q266517: Encarta Africana: Dictionary Feature Is Not Included
 
+{% raw %}
+
 	Article: Q266517
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/266/Q266517/
 	
 	=============================================================================
 	
+
+{% endraw %}

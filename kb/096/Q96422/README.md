@@ -6,6 +6,8 @@ permalink: /kb/096/Q96422/
 
 ## Q96422: Detecting Idle Time in Windows
 
+{% raw %}
+
 	Article: Q96422
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -60,3 +62,5 @@ permalink: /kb/096/Q96422/
 	
 	=============================================================================
 	
+
+{% endraw %}

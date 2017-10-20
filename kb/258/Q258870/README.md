@@ -6,6 +6,8 @@ permalink: /kb/258/Q258870/
 
 ## Q258870: How to Use TAMA Agent to Add Resources to Directory Objects
 
+{% raw %}
+
 	Article: Q258870
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -64,3 +66,5 @@ permalink: /kb/258/Q258870/
 	
 	=============================================================================
 	
+
+{% endraw %}

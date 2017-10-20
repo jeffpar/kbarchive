@@ -6,6 +6,8 @@ permalink: /kb/149/Q149296/
 
 ## Q149296: XCLN: Open Item Above or Below Applies Only to Active Msg
 
+{% raw %}
+
 	Article: Q149296
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -49,3 +51,5 @@ permalink: /kb/149/Q149296/
 	
 	=============================================================================
 	
+
+{% endraw %}

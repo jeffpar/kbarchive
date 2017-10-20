@@ -6,6 +6,8 @@ permalink: /kb/044/Q44816/
 
 ## Q44816: PRB: printf() Appears to Print Incorrect Results for Floats
 
+{% raw %}
+
 	Article: Q44816
 	Product(s): Microsoft C Compiler
 	Version(s): 5.1 6.0 6.0a 6.0ax 7.0 1.
@@ -89,3 +91,5 @@ permalink: /kb/044/Q44816/
 	
 	=============================================================================
 	
+
+{% endraw %}

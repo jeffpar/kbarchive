@@ -6,6 +6,8 @@ permalink: /kb/074/Q74496/
 
 ## Q74496: MS-DOS Device Driver Names Cannot be Used as File Names
 
+{% raw %}
+
 	Article: Q74496
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -67,3 +69,5 @@ permalink: /kb/074/Q74496/
 	
 	=============================================================================
 	
+
+{% endraw %}

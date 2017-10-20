@@ -6,6 +6,8 @@ permalink: /kb/166/Q166136/
 
 ## Q166136: PRB: User Without Administrator Rights Can Edit Existing Records
 
+{% raw %}
+
 	Article: Q166136
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/166/Q166136/
 	
 	=============================================================================
 	
+
+{% endraw %}

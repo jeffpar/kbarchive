@@ -6,6 +6,8 @@ permalink: /kb/163/Q163333/
 
 ## Q163333: Autosynch Compatible COM Applications May Fail w/ FIFO Enabled
 
+{% raw %}
+
 	Article: Q163333
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/163/Q163333/
 	
 	=============================================================================
 	
+
+{% endraw %}

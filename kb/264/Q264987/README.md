@@ -6,6 +6,8 @@ permalink: /kb/264/Q264987/
 
 ## Q264987: XADM: Lsmexif.dll 5.5.2651.22 Fix Breaks Inbody Addressing
 
+{% raw %}
+
 	Article: Q264987
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -155,3 +157,5 @@ permalink: /kb/264/Q264987/
 	
 	=============================================================================
 	
+
+{% endraw %}

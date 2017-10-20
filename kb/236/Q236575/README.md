@@ -6,6 +6,8 @@ permalink: /kb/236/Q236575/
 
 ## Q236575: XADM: Intersite Directory Replication Stops Functioning
 
+{% raw %}
+
 	Article: Q236575
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -110,3 +112,5 @@ permalink: /kb/236/Q236575/
 	
 	=============================================================================
 	
+
+{% endraw %}

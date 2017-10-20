@@ -6,6 +6,8 @@ permalink: /kb/149/Q149260/
 
 ## Q149260: VI Editor Cannot Open ReadOnly File on Windows NT with FPNW
 
+{% raw %}
+
 	Article: Q149260
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 95
@@ -45,3 +47,5 @@ permalink: /kb/149/Q149260/
 	
 	=============================================================================
 	
+
+{% endraw %}

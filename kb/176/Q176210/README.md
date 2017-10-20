@@ -6,6 +6,8 @@ permalink: /kb/176/Q176210/
 
 ## Q176210: Incorrect Time Is Displayed When You Run the Net Time Command
 
+{% raw %}
+
 	Article: Q176210
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0;Windows:95
@@ -49,3 +51,5 @@ permalink: /kb/176/Q176210/
 	
 	=============================================================================
 	
+
+{% endraw %}

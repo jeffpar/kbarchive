@@ -6,6 +6,8 @@ permalink: /kb/164/Q164574/
 
 ## Q164574: LUA Pools Cannot Be Assigned to SNA 3.0 TN3270 Service
 
+{% raw %}
+
 	Article: Q164574
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -65,3 +67,5 @@ permalink: /kb/164/Q164574/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101149/
 
 ## Q101149: MS-DOS Upgrade 720K Disk Set Does Not Have SMARTMON.&#42; Files
 
+{% raw %}
+
 	Article: Q101149
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -49,3 +51,5 @@ permalink: /kb/101/Q101149/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114091/
 
 ## Q114091: Telnet Using UNIX Vi Editor May Scroll Improperly
 
+{% raw %}
+
 	Article: Q114091
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.11 3.5
@@ -73,3 +75,5 @@ permalink: /kb/114/Q114091/
 	
 	=============================================================================
 	
+
+{% endraw %}

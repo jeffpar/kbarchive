@@ -6,6 +6,8 @@ permalink: /kb/172/Q172192/
 
 ## Q172192: PRB: Error: &quot;Failed to Get Expression Service&quot;
 
+{% raw %}
+
 	Article: Q172192
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.1x
@@ -75,3 +77,5 @@ permalink: /kb/172/Q172192/
 	
 	=============================================================================
 	
+
+{% endraw %}

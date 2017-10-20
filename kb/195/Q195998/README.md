@@ -6,6 +6,8 @@ permalink: /kb/195/Q195998/
 
 ## Q195998: SNA Server Fails With Access Violation in Routine s1pxsnd()
 
+{% raw %}
+
 	Article: Q195998
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
@@ -145,3 +147,5 @@ permalink: /kb/195/Q195998/
 	
 	=============================================================================
 	
+
+{% endraw %}

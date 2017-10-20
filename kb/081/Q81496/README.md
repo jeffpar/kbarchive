@@ -6,6 +6,8 @@ permalink: /kb/081/Q81496/
 
 ## Q81496: Modules, Instances, and Tasks
 
+{% raw %}
+
 	Article: Q81496
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,3.11
@@ -315,3 +317,5 @@ permalink: /kb/081/Q81496/
 	
 	=============================================================================
 	
+
+{% endraw %}

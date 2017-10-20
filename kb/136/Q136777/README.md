@@ -6,6 +6,8 @@ permalink: /kb/136/Q136777/
 
 ## Q136777: PCMCIA Token Ring Network Card May Not Work
 
+{% raw %}
+
 	Article: Q136777
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -127,3 +129,5 @@ permalink: /kb/136/Q136777/
 	
 	=============================================================================
 	
+
+{% endraw %}

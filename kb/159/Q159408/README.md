@@ -6,6 +6,8 @@ permalink: /kb/159/Q159408/
 
 ## Q159408: PRB: &quot;Error in Loading DLL&quot; if Calling Multimedia API Functions
 
+{% raw %}
+
 	Article: Q159408
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -73,3 +75,5 @@ permalink: /kb/159/Q159408/
 	
 	=============================================================================
 	
+
+{% endraw %}

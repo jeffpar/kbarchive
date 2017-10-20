@@ -6,6 +6,8 @@ permalink: /kb/173/Q173919/
 
 ## Q173919: How to Access Internet Sites with MSN Program Viewer
 
+{% raw %}
+
 	Article: Q173919
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -47,3 +49,5 @@ permalink: /kb/173/Q173919/
 	
 	=============================================================================
 	
+
+{% endraw %}

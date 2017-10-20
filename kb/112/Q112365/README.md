@@ -6,6 +6,8 @@ permalink: /kb/112/Q112365/
 
 ## Q112365: Explanation of NET DIAG /STATUS Information
 
+{% raw %}
+
 	Article: Q112365
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -134,3 +136,5 @@ permalink: /kb/112/Q112365/
 	
 	=============================================================================
 	
+
+{% endraw %}

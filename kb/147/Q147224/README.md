@@ -6,6 +6,8 @@ permalink: /kb/147/Q147224/
 
 ## Q147224: Shared Icon Does Not Appear After Sharing a Folder with a LFN
 
+{% raw %}
+
 	Article: Q147224
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -85,3 +87,5 @@ permalink: /kb/147/Q147224/
 	
 	=============================================================================
 	
+
+{% endraw %}

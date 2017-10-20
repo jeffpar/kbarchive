@@ -6,6 +6,8 @@ permalink: /kb/090/Q90254/
 
 ## Q90254: NE2000 Clone Card Doesn't Work with Windows for Workgroups
 
+{% raw %}
+
 	Article: Q90254
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -40,3 +42,5 @@ permalink: /kb/090/Q90254/
 	
 	=============================================================================
 	
+
+{% endraw %}

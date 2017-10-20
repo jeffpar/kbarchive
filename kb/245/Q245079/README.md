@@ -6,6 +6,8 @@ permalink: /kb/245/Q245079/
 
 ## Q245079: Cannot Synchronize Time Across Time Zone on Windows 95
 
+{% raw %}
+
 	Article: Q245079
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/245/Q245079/
 	
 	=============================================================================
 	
+
+{% endraw %}

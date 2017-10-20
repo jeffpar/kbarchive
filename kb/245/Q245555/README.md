@@ -6,6 +6,8 @@ permalink: /kb/245/Q245555/
 
 ## Q245555: Games Error Message: Invalid Page Fault in Module &lt;Program File&gt;
 
+{% raw %}
+
 	Article: Q245555
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -103,3 +105,5 @@ permalink: /kb/245/Q245555/
 	
 	=============================================================================
 	
+
+{% endraw %}

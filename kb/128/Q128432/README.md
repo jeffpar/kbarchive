@@ -6,6 +6,8 @@ permalink: /kb/128/Q128432/
 
 ## Q128432: MHS: Circular Routing Through the MHS Gateway
 
+{% raw %}
+
 	Article: Q128432
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/128/Q128432/
 	
 	=============================================================================
 	
+
+{% endraw %}

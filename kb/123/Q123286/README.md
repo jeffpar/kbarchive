@@ -6,6 +6,8 @@ permalink: /kb/123/Q123286/
 
 ## Q123286: WINNT /D Does Not Delete System Files
 
+{% raw %}
+
 	Article: Q123286
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -116,3 +118,5 @@ permalink: /kb/123/Q123286/
 	
 	=============================================================================
 	
+
+{% endraw %}

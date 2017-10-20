@@ -6,6 +6,8 @@ permalink: /kb/068/Q68445/
 
 ## Q68445: C1001: Internal Compiler Error: regMD.c, Line 1017
 
+{% raw %}
+
 	Article: Q68445
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -64,3 +66,5 @@ permalink: /kb/068/Q68445/
 	
 	  return((((long)d) << 16) | t);
 	}
+
+{% endraw %}

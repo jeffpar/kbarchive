@@ -6,6 +6,8 @@ permalink: /kb/190/Q190543/
 
 ## Q190543: DOC: Commands Missing From the Index List in Help
 
+{% raw %}
+
 	Article: Q190543
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -53,3 +55,5 @@ permalink: /kb/190/Q190543/
 	
 	=============================================================================
 	
+
+{% endraw %}

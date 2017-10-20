@@ -6,6 +6,8 @@ permalink: /kb/193/Q193788/
 
 ## Q193788: Devices with 64-bit Base Address Registers Do Not Function
 
+{% raw %}
+
 	Article: Q193788
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/193/Q193788/
 	
 	=============================================================================
 	
+
+{% endraw %}

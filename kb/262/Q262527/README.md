@@ -6,6 +6,8 @@ permalink: /kb/262/Q262527/
 
 ## Q262527: SMS Provider Does Not Always Use User Group Membership Cache
 
+{% raw %}
+
 	Article: Q262527
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -56,3 +58,5 @@ permalink: /kb/262/Q262527/
 	
 	=============================================================================
 	
+
+{% endraw %}

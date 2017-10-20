@@ -6,6 +6,8 @@ permalink: /kb/250/Q250889/
 
 ## Q250889: Multiprocessor System Hangs while running Norton Utilities 2.0
 
+{% raw %}
+
 	Article: Q250889
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/250/Q250889/
 	
 	=============================================================================
 	
+
+{% endraw %}

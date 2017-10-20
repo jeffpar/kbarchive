@@ -6,6 +6,8 @@ permalink: /kb/092/Q92411/
 
 ## Q92411: BUG: Cannot Map TT Font to Same Name PostScript Device Font
 
+{% raw %}
+
 	Article: Q92411
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -70,3 +72,5 @@ permalink: /kb/092/Q92411/
 	
 	=============================================================================
 	
+
+{% endraw %}

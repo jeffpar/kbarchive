@@ -6,6 +6,8 @@ permalink: /kb/131/Q131153/
 
 ## Q131153: Problems Retrieving Colors Using Video Capture Card
 
+{% raw %}
+
 	Article: Q131153
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/131/Q131153/
 	
 	=============================================================================
 	
+
+{% endraw %}

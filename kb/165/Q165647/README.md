@@ -6,6 +6,8 @@ permalink: /kb/165/Q165647/
 
 ## Q165647: BIND -RSP for Host-Initiated Dependent LU6.2 Sessions
 
+{% raw %}
+
 	Article: Q165647
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/165/Q165647/
 	
 	=============================================================================
 	
+
+{% endraw %}

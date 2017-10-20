@@ -6,6 +6,8 @@ permalink: /kb/186/Q186628/
 
 ## Q186628: Performance Tuning CPU Use for 16, 32-bit Windows Applications
 
+{% raw %}
+
 	Article: Q186628
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -158,3 +160,5 @@ permalink: /kb/186/Q186628/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151704/
 
 ## Q151704: XCLN: Remove All and Remove None buttons are Reversed
 
+{% raw %}
+
 	Article: Q151704
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -45,3 +47,5 @@ permalink: /kb/151/Q151704/
 	
 	=============================================================================
 	
+
+{% endraw %}

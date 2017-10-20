@@ -6,6 +6,8 @@ permalink: /kb/170/Q170273/
 
 ## Q170273: MSB Rainforest: Using the Toolbox to Replicate the Rainforest
 
+{% raw %}
+
 	Article: Q170273
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -90,3 +92,5 @@ permalink: /kb/170/Q170273/
 	
 	=============================================================================
 	
+
+{% endraw %}

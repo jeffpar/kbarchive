@@ -6,6 +6,8 @@ permalink: /kb/181/Q181747/
 
 ## Q181747: SMSINST: Configuration Registry List Box Displays Only 1024 Keys
 
+{% raw %}
+
 	Article: Q181747
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -72,3 +74,5 @@ permalink: /kb/181/Q181747/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195289/
 
 ## Q195289: Page Footers Do Not Work on ASP Pages
 
+{% raw %}
+
 	Article: Q195289
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/195/Q195289/
 	
 	=============================================================================
 	
+
+{% endraw %}

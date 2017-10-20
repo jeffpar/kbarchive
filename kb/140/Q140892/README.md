@@ -6,6 +6,8 @@ permalink: /kb/140/Q140892/
 
 ## Q140892: World Atlas Stops Responding with Ensoniq Card
 
+{% raw %}
+
 	Article: Q140892
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996
@@ -85,3 +87,5 @@ permalink: /kb/140/Q140892/
 	
 	=============================================================================
 	
+
+{% endraw %}

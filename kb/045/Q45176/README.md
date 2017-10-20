@@ -6,6 +6,8 @@ permalink: /kb/045/Q45176/
 
 ## Q45176: QB 4.50 On-Line Help Correction for UBOUND Statement
 
+{% raw %}
+
 	Article: Q45176
 	Product(s): See article
 	Version(s): 4.50
@@ -30,3 +32,5 @@ permalink: /kb/045/Q45176/
 	   -- Dimension, a numeric-expression that has an integer value,
 	      indicates the dimension of the array for which you want to see
 	      the largest available subscript.
+
+{% endraw %}

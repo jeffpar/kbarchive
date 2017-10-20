@@ -6,6 +6,8 @@ permalink: /kb/185/Q185377/
 
 ## Q185377: Users Cannot Access FTP or Web Site
 
+{% raw %}
+
 	Article: Q185377
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -233,3 +235,5 @@ permalink: /kb/185/Q185377/
 	
 	=============================================================================
 	
+
+{% endraw %}

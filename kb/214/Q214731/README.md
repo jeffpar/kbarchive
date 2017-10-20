@@ -6,6 +6,8 @@ permalink: /kb/214/Q214731/
 
 ## Q214731: PRB: AppWizard Bug when Altering ActiveDoc Child Window Styles
 
+{% raw %}
+
 	Article: Q214731
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -102,3 +104,5 @@ permalink: /kb/214/Q214731/
 	
 	=============================================================================
 	
+
+{% endraw %}

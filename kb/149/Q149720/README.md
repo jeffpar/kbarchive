@@ -6,6 +6,8 @@ permalink: /kb/149/Q149720/
 
 ## Q149720: Files May Be Deleted with Norton Protected Recycle Bin Enabled
 
+{% raw %}
+
 	Article: Q149720
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -60,3 +62,5 @@ permalink: /kb/149/Q149720/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83331/
 
 ## Q83331: DR DOS Policy and Workaround: Fault in MS-DOS Extender Error
 
+{% raw %}
+
 	Article: Q83331
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -141,3 +143,5 @@ permalink: /kb/083/Q83331/
 	
 	=============================================================================
 	
+
+{% endraw %}

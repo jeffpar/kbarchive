@@ -6,6 +6,8 @@ permalink: /kb/243/Q243525/
 
 ## Q243525: XCLN: Inbox Assistant Rule on Custom Field Does Not Start
 
+{% raw %}
+
 	Article: Q243525
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:97
@@ -50,3 +52,5 @@ permalink: /kb/243/Q243525/
 	
 	=============================================================================
 	
+
+{% endraw %}

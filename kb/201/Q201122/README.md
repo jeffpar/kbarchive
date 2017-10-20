@@ -6,6 +6,8 @@ permalink: /kb/201/Q201122/
 
 ## Q201122: XFOR: Troubleshooting Directory Synchronization with Lightspeed
 
+{% raw %}
+
 	Article: Q201122
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -116,3 +118,5 @@ permalink: /kb/201/Q201122/
 	
 	=============================================================================
 	
+
+{% endraw %}

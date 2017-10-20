@@ -6,6 +6,8 @@ permalink: /kb/061/Q61338/
 
 ## Q61338: Docerr in MenuSet and MenuSetState in UI Toolbox of PDS 7.00
 
+{% raw %}
+
 	Article: Q61338
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -24,3 +26,5 @@ permalink: /kb/061/Q61338/
 	also documented incorrectly because the lowest legal value of MenuSet
 	is actually -1, not 0. To make a menu item or menu title disappear,
 	you must call MenuSet with state% equal to -1.
+
+{% endraw %}

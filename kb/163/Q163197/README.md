@@ -6,6 +6,8 @@ permalink: /kb/163/Q163197/
 
 ## Q163197: Some Western Digital Chipsets Do Not Support 65,000 Colors
 
+{% raw %}
+
 	Article: Q163197
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:.0
@@ -50,3 +52,5 @@ permalink: /kb/163/Q163197/
 	
 	=============================================================================
 	
+
+{% endraw %}

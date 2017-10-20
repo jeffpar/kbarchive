@@ -6,6 +6,8 @@ permalink: /kb/265/Q265422/
 
 ## Q265422: How RDISK.EXE Updates Repair Information
 
+{% raw %}
+
 	Article: Q265422
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/265/Q265422/
 	
 	=============================================================================
 	
+
+{% endraw %}

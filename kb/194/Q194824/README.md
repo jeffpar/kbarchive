@@ -6,6 +6,8 @@ permalink: /kb/194/Q194824/
 
 ## Q194824: Combat Flight Simulator: Movie Unavailable for Training Mission
 
+{% raw %}
+
 	Article: Q194824
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/194/Q194824/
 	
 	=============================================================================
 	
+
+{% endraw %}

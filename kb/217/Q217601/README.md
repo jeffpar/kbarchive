@@ -6,6 +6,8 @@ permalink: /kb/217/Q217601/
 
 ## Q217601: XADM: Incorrect Time Appears After Directory Is Modified
 
+{% raw %}
+
 	Article: Q217601
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2
@@ -88,3 +90,5 @@ permalink: /kb/217/Q217601/
 	
 	=============================================================================
 	
+
+{% endraw %}

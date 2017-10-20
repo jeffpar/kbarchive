@@ -6,6 +6,8 @@ permalink: /kb/102/Q102751/
 
 ## Q102751: PC DOS: Err Msg: The Folder Is Busy...
 
+{% raw %}
+
 	Article: Q102751
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -92,3 +94,5 @@ permalink: /kb/102/Q102751/
 	
 	=============================================================================
 	
+
+{% endraw %}

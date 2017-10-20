@@ -6,6 +6,8 @@ permalink: /kb/256/Q256276/
 
 ## Q256276: Error Message: There Is No Catalog
 
+{% raw %}
+
 	Article: Q256276
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -109,3 +111,5 @@ permalink: /kb/256/Q256276/
 	
 	=============================================================================
 	
+
+{% endraw %}

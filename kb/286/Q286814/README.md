@@ -6,6 +6,8 @@ permalink: /kb/286/Q286814/
 
 ## Q286814: &quot;Event ID 36&quot; Err Msg When You Run ASP Pages
 
+{% raw %}
+
 	Article: Q286814
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -90,3 +92,5 @@ permalink: /kb/286/Q286814/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124486/
 
 ## Q124486: PC Win: Month Displays as &quot;MM&quot; in Received Date
 
+{% raw %}
+
 	Article: Q124486
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -73,3 +75,5 @@ permalink: /kb/124/Q124486/
 	
 	=============================================================================
 	
+
+{% endraw %}

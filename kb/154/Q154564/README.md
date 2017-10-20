@@ -6,6 +6,8 @@ permalink: /kb/154/Q154564/
 
 ## Q154564: Access Denied Using CHNGPASS When Logged On to FPNW
 
+{% raw %}
+
 	Article: Q154564
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -74,3 +76,5 @@ permalink: /kb/154/Q154564/
 	
 	=============================================================================
 	
+
+{% endraw %}

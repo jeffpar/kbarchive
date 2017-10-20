@@ -6,6 +6,8 @@ permalink: /kb/169/Q169371/
 
 ## Q169371: DNS Error Message: No More Endpoints
 
+{% raw %}
+
 	Article: Q169371
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/169/Q169371/
 	
 	=============================================================================
 	
+
+{% endraw %}

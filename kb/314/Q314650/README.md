@@ -6,6 +6,8 @@ permalink: /kb/314/Q314650/
 
 ## Q314650: FIX: Error Updating Table with Empty Date Using VFP OLEDB Provid
 
+{% raw %}
+
 	Article: Q314650
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -125,3 +127,5 @@ permalink: /kb/314/Q314650/
 	
 	=============================================================================
 	
+
+{% endraw %}

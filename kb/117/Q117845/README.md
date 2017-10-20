@@ -6,6 +6,8 @@ permalink: /kb/117/Q117845/
 
 ## Q117845: PC Win: Err Msg: MSSPELL.DLL Is Not Compatible
 
+{% raw %}
+
 	Article: Q117845
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -63,3 +65,5 @@ permalink: /kb/117/Q117845/
 	
 	=============================================================================
 	
+
+{% endraw %}

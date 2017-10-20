@@ -6,6 +6,8 @@ permalink: /kb/075/Q75359/
 
 ## Q75359: PRB: One Cause of Fatal Exit 0x0140 &quot;Local Heap Is Busy&quot;
 
+{% raw %}
+
 	Article: Q75359
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -46,3 +48,5 @@ permalink: /kb/075/Q75359/
 	
 	=============================================================================
 	
+
+{% endraw %}

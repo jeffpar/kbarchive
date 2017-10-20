@@ -6,6 +6,8 @@ permalink: /kb/160/Q160570/
 
 ## Q160570: Gopher Query Will Access Violate in Inetinfo.exe
 
+{% raw %}
+
 	Article: Q160570
 	Product(s): Internet Information Server
 	Version(s): Winnt:1.0,2.0
@@ -63,3 +65,5 @@ permalink: /kb/160/Q160570/
 	
 	=============================================================================
 	
+
+{% endraw %}

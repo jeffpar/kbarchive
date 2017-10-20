@@ -6,6 +6,8 @@ permalink: /kb/189/Q189851/
 
 ## Q189851: PRB: &quot;This Action was Cancelled by an Associated Object.(3426)&quot;
 
+{% raw %}
+
 	Article: Q189851
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -150,3 +152,5 @@ permalink: /kb/189/Q189851/
 	
 	=============================================================================
 	
+
+{% endraw %}

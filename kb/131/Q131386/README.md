@@ -6,6 +6,8 @@ permalink: /kb/131/Q131386/
 
 ## Q131386: PRB: Default Values Not Written on Local Views
 
+{% raw %}
+
 	Article: Q131386
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -100,3 +102,5 @@ permalink: /kb/131/Q131386/
 	
 	=============================================================================
 	
+
+{% endraw %}

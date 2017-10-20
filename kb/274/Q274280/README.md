@@ -6,6 +6,8 @@ permalink: /kb/274/Q274280/
 
 ## Q274280: XADM: Messages with RTF Text Strings Not Delivered Correctly
 
+{% raw %}
+
 	Article: Q274280
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -92,3 +94,5 @@ permalink: /kb/274/Q274280/
 	
 	=============================================================================
 	
+
+{% endraw %}

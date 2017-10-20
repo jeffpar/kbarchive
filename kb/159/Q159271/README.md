@@ -6,6 +6,8 @@ permalink: /kb/159/Q159271/
 
 ## Q159271: HOWTO: Set the BackColor Property to Same Color as Title Bar
 
+{% raw %}
+
 	Article: Q159271
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -64,3 +66,5 @@ permalink: /kb/159/Q159271/
 	
 	=============================================================================
 	
+
+{% endraw %}

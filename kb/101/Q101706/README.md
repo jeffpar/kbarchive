@@ -6,6 +6,8 @@ permalink: /kb/101/Q101706/
 
 ## Q101706: MS-DOS-Based Multimedia Application Support in Windows NT
 
+{% raw %}
+
 	Article: Q101706
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -43,3 +45,5 @@ permalink: /kb/101/Q101706/
 	
 	=============================================================================
 	
+
+{% endraw %}

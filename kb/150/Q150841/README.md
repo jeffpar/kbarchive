@@ -6,6 +6,8 @@ permalink: /kb/150/Q150841/
 
 ## Q150841: INFO: Troubleshooting Common APPC Error Codes
 
+{% raw %}
+
 	Article: Q150841
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -270,3 +272,5 @@ permalink: /kb/150/Q150841/
 	
 	=============================================================================
 	
+
+{% endraw %}

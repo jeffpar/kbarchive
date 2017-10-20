@@ -6,6 +6,8 @@ permalink: /kb/155/Q155691/
 
 ## Q155691: &quot;Fatal Exception Error 06&quot; with Sharp Mebius
 
+{% raw %}
+
 	Article: Q155691
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -50,3 +52,5 @@ permalink: /kb/155/Q155691/
 	
 	=============================================================================
 	
+
+{% endraw %}

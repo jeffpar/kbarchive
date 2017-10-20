@@ -6,6 +6,8 @@ permalink: /kb/118/Q118827/
 
 ## Q118827: How to Disable NetWare Broadcasts
 
+{% raw %}
+
 	Article: Q118827
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/118/Q118827/
 	
 	=============================================================================
 	
+
+{% endraw %}

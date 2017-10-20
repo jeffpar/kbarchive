@@ -6,6 +6,8 @@ permalink: /kb/070/Q70212/
 
 ## Q70212: Novell MAP ROOT and File Copy Errors
 
+{% raw %}
+
 	Article: Q70212
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/070/Q70212/
 	
 	=============================================================================
 	
+
+{% endraw %}

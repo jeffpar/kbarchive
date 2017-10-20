@@ -6,6 +6,8 @@ permalink: /kb/201/Q201003/
 
 ## Q201003: RRAS Services Do Not Start Correctly with Kixtart
 
+{% raw %}
+
 	Article: Q201003
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP3
@@ -55,3 +57,5 @@ permalink: /kb/201/Q201003/
 	
 	=============================================================================
 	
+
+{% endraw %}

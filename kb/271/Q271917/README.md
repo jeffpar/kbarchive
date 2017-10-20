@@ -6,6 +6,8 @@ permalink: /kb/271/Q271917/
 
 ## Q271917: Read-Only File Appears to Be Deleted from NFS Share But Is Not
 
+{% raw %}
+
 	Article: Q271917
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -88,3 +90,5 @@ permalink: /kb/271/Q271917/
 	
 	=============================================================================
 	
+
+{% endraw %}

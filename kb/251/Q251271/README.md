@@ -6,6 +6,8 @@ permalink: /kb/251/Q251271/
 
 ## Q251271: XCLN: Cannot Bcc Recipients Using Inbox Assistant
 
+{% raw %}
+
 	Article: Q251271
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:97
@@ -42,3 +44,5 @@ permalink: /kb/251/Q251271/
 	
 	=============================================================================
 	
+
+{% endraw %}

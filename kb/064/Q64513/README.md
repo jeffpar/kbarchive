@@ -6,6 +6,8 @@ permalink: /kb/064/Q64513/
 
 ## Q64513: Unrecoverable Application Error Printing to HP Series II
 
+{% raw %}
+
 	Article: Q64513
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -68,3 +70,5 @@ permalink: /kb/064/Q64513/
 	
 	=============================================================================
 	
+
+{% endraw %}

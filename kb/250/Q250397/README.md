@@ -6,6 +6,8 @@ permalink: /kb/250/Q250397/
 
 ## Q250397: Content is Lost at SF_NOTIFY_AUTH_COMPLETE
 
+{% raw %}
+
 	Article: Q250397
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -71,3 +73,5 @@ permalink: /kb/250/Q250397/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/201/Q201876/
 
 ## Q201876: XFOR: GroupWise Router Stops Responding with Errors 6064 and 605
 
+{% raw %}
+
 	Article: Q201876
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -70,3 +72,5 @@ permalink: /kb/201/Q201876/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160972/
 
 ## Q160972: Removing FPNW Does Not Remove The FPNW Icon in Control Panel
 
+{% raw %}
+
 	Article: Q160972
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/160/Q160972/
 	
 	=============================================================================
 	
+
+{% endraw %}

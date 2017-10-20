@@ -6,6 +6,8 @@ permalink: /kb/155/Q155802/
 
 ## Q155802: WD97: Word Doesn't Find &quot;Float Over Text&quot; Objects
 
+{% raw %}
+
 	Article: Q155802
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/155/Q155802/
 	
 	=============================================================================
 	
+
+{% endraw %}

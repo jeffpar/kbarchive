@@ -6,6 +6,8 @@ permalink: /kb/093/Q93033/
 
 ## Q93033: Cinemania: ListMaker Fails to Print Last Page
 
+{% raw %}
+
 	Article: Q93033
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 edition
@@ -51,3 +53,5 @@ permalink: /kb/093/Q93033/
 	
 	=============================================================================
 	
+
+{% endraw %}

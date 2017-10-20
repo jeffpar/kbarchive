@@ -6,6 +6,8 @@ permalink: /kb/108/Q108837/
 
 ## Q108837: PC Gen: PODIAG.INI Entries in &#91;User Mail Check&#93;
 
+{% raw %}
+
 	Article: Q108837
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -120,3 +122,5 @@ permalink: /kb/108/Q108837/
 	
 	=============================================================================
 	
+
+{% endraw %}

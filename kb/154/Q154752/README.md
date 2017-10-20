@@ -6,6 +6,8 @@ permalink: /kb/154/Q154752/
 
 ## Q154752: SMS: Client Does Not Deinstall for All Users
 
+{% raw %}
+
 	Article: Q154752
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -70,3 +72,5 @@ permalink: /kb/154/Q154752/
 	
 	=============================================================================
 	
+
+{% endraw %}

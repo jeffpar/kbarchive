@@ -6,6 +6,8 @@ permalink: /kb/100/Q100399/
 
 ## Q100399: How to Disable SoundBits
 
+{% raw %}
+
 	Article: Q100399
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/100/Q100399/
 	
 	=============================================================================
 	
+
+{% endraw %}

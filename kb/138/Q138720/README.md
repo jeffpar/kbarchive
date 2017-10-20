@@ -6,6 +6,8 @@ permalink: /kb/138/Q138720/
 
 ## Q138720: How to Enable Microsoft Word as the Exchange Editor
 
+{% raw %}
+
 	Article: Q138720
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/138/Q138720/
 	
 	=============================================================================
 	
+
+{% endraw %}

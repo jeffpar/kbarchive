@@ -6,6 +6,8 @@ permalink: /kb/175/Q175681/
 
 ## Q175681: Error Message: RealAudio Error 50: Cannot Open Audio Device
 
+{% raw %}
+
 	Article: Q175681
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -84,3 +86,5 @@ permalink: /kb/175/Q175681/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156469/
 
 ## Q156469: World Atlas: How to Run/Install if AutoRun is Disabled
 
+{% raw %}
+
 	Article: Q156469
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996
@@ -83,3 +85,5 @@ permalink: /kb/156/Q156469/
 	
 	=============================================================================
 	
+
+{% endraw %}

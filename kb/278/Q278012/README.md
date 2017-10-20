@@ -6,6 +6,8 @@ permalink: /kb/278/Q278012/
 
 ## Q278012: MapPoint Error Message: An Error Occurred While Printing
 
+{% raw %}
+
 	Article: Q278012
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -80,3 +82,5 @@ permalink: /kb/278/Q278012/
 	
 	=============================================================================
 	
+
+{% endraw %}

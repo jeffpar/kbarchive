@@ -6,6 +6,8 @@ permalink: /kb/151/Q151084/
 
 ## Q151084: Gardening/Do-It-Yourself: No Cancel Button in Settings Dialog
 
+{% raw %}
+
 	Article: Q151084
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/151/Q151084/
 	
 	=============================================================================
 	
+
+{% endraw %}

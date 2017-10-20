@@ -6,6 +6,8 @@ permalink: /kb/122/Q122903/
 
 ## Q122903: Error Message with Compaq Smart SCSI
 
+{% raw %}
+
 	Article: Q122903
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/122/Q122903/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100660/
 
 ## Q100660: INFO: Macros to Facilitate Porting Applications to Windows NT
 
+{% raw %}
+
 	Article: Q100660
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,5.0
@@ -119,3 +121,5 @@ permalink: /kb/100/Q100660/
 	
 	=============================================================================
 	
+
+{% endraw %}

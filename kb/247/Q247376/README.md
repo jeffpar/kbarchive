@@ -6,6 +6,8 @@ permalink: /kb/247/Q247376/
 
 ## Q247376: WWW and FTP Virtual Directories Are Not Displayed  in Directory
 
+{% raw %}
+
 	Article: Q247376
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0,4.0,5.0
@@ -65,3 +67,5 @@ permalink: /kb/247/Q247376/
 	
 	=============================================================================
 	
+
+{% endraw %}

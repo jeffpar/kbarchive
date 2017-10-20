@@ -6,6 +6,8 @@ permalink: /kb/094/Q94184/
 
 ## Q94184: PC WSPlus: Locating a Specific User's Online Calendar File
 
+{% raw %}
+
 	Article: Q94184
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -53,3 +55,5 @@ permalink: /kb/094/Q94184/
 	
 	=============================================================================
 	
+
+{% endraw %}

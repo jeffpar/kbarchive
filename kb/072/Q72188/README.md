@@ -6,6 +6,8 @@ permalink: /kb/072/Q72188/
 
 ## Q72188: MS-DOS Command Extension Table by Version
 
+{% raw %}
+
 	Article: Q72188
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -135,3 +137,5 @@ permalink: /kb/072/Q72188/
 	
 	=============================================================================
 	
+
+{% endraw %}

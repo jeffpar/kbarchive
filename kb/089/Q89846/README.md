@@ -6,6 +6,8 @@ permalink: /kb/089/Q89846/
 
 ## Q89846: Dr. Watson and Windows 3.1
 
+{% raw %}
+
 	Article: Q89846
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -120,3 +122,5 @@ permalink: /kb/089/Q89846/
 	
 	=============================================================================
 	
+
+{% endraw %}

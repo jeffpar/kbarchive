@@ -6,6 +6,8 @@ permalink: /kb/271/Q271348/
 
 ## Q271348: Microsoft Reader: Cannot Use Lookup Feature
 
+{% raw %}
+
 	Article: Q271348
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.5
@@ -57,3 +59,5 @@ permalink: /kb/271/Q271348/
 	
 	=============================================================================
 	
+
+{% endraw %}

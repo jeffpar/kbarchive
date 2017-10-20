@@ -6,6 +6,8 @@ permalink: /kb/194/Q194996/
 
 ## Q194996: FS98: Airport/Facility Directory Window Is Black
 
+{% raw %}
+
 	Article: Q194996
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -100,3 +102,5 @@ permalink: /kb/194/Q194996/
 	
 	=============================================================================
 	
+
+{% endraw %}

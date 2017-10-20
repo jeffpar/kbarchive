@@ -6,6 +6,8 @@ permalink: /kb/156/Q156509/
 
 ## Q156509: HOWTO: Display All Visual FoxPro Current System Settings
 
+{% raw %}
+
 	Article: Q156509
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,6.0
@@ -51,3 +53,5 @@ permalink: /kb/156/Q156509/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68872/
 
 ## Q68872: Ternary Operator Generates Incorrect Code for Bit Fields
 
+{% raw %}
+
 	Article: Q68872
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -61,3 +63,5 @@ permalink: /kb/068/Q68872/
 	
 	3. Simplify the printf() statement by moving the ternary condition to
 	   another line, or by using an else if statement.
+
+{% endraw %}

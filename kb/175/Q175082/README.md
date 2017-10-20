@@ -6,6 +6,8 @@ permalink: /kb/175/Q175082/
 
 ## Q175082: Bookshelf: Cannot Use ALT+F4 to Quit Program
 
+{% raw %}
+
 	Article: Q175082
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/175/Q175082/
 	
 	=============================================================================
 	
+
+{% endraw %}

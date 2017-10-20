@@ -6,6 +6,8 @@ permalink: /kb/180/Q180066/
 
 ## Q180066: Encarta 98: Research Organizer Video Clip Is Loaded Slowly
 
+{% raw %}
+
 	Article: Q180066
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/180/Q180066/
 	
 	=============================================================================
 	
+
+{% endraw %}

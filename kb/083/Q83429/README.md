@@ -6,6 +6,8 @@ permalink: /kb/083/Q83429/
 
 ## Q83429: Logitech Mouse May Not Work in Windowed MS-DOS Application
 
+{% raw %}
+
 	Article: Q83429
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/083/Q83429/
 	
 	=============================================================================
 	
+
+{% endraw %}

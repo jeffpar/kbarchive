@@ -6,6 +6,8 @@ permalink: /kb/077/Q77320/
 
 ## Q77320: Err Msg: SMARTDrive Reports Incompatible Partitions
 
+{% raw %}
+
 	Article: Q77320
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -101,3 +103,5 @@ permalink: /kb/077/Q77320/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223140/
 
 ## Q223140: SMB Size Negotiation When Copying Files with Windows NT Explorer
 
+{% raw %}
+
 	Article: Q223140
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -147,3 +149,5 @@ permalink: /kb/223/Q223140/
 	
 	=============================================================================
 	
+
+{% endraw %}

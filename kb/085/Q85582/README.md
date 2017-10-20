@@ -6,6 +6,8 @@ permalink: /kb/085/Q85582/
 
 ## Q85582: Group Icon Location Not Saved with Read-Only Attribute Set
 
+{% raw %}
+
 	Article: Q85582
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -78,3 +80,5 @@ permalink: /kb/085/Q85582/
 	
 	=============================================================================
 	
+
+{% endraw %}

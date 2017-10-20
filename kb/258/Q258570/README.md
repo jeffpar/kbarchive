@@ -6,6 +6,8 @@ permalink: /kb/258/Q258570/
 
 ## Q258570: Baseball 2001: Program Does Not Start When You Insert CD-ROM
 
+{% raw %}
+
 	Article: Q258570
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/258/Q258570/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145739/
 
 ## Q145739: Internet Mail Not Delivered: No Transport Provider Available
 
+{% raw %}
+
 	Article: Q145739
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -137,3 +139,5 @@ permalink: /kb/145/Q145739/
 	
 	=============================================================================
 	
+
+{% endraw %}

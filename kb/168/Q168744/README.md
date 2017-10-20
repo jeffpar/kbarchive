@@ -6,6 +6,8 @@ permalink: /kb/168/Q168744/
 
 ## Q168744: FIX: Printer May Lose Font Attributes
 
+{% raw %}
+
 	Article: Q168744
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -133,3 +135,5 @@ permalink: /kb/168/Q168744/
 	
 	=============================================================================
 	
+
+{% endraw %}

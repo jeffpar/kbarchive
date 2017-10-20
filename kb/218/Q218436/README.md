@@ -6,6 +6,8 @@ permalink: /kb/218/Q218436/
 
 ## Q218436: DOC: Wrong Technical Support Phone Number on MSDN 6.0 CD Insert
 
+{% raw %}
+
 	Article: Q218436
 	Product(s): Microsoft Developer Network
 	Version(s): winnt:6.0
@@ -35,3 +37,5 @@ permalink: /kb/218/Q218436/
 	
 	=============================================================================
 	
+
+{% endraw %}

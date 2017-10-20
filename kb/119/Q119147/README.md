@@ -6,6 +6,8 @@ permalink: /kb/119/Q119147/
 
 ## Q119147: Microsoft Systems Journal: September 1994
 
+{% raw %}
+
 	Article: Q119147
 	Product(s): Miscrosoft Systems Journal
 	Version(s): for September 1994
@@ -97,3 +99,5 @@ permalink: /kb/119/Q119147/
 	
 	=============================================================================
 	
+
+{% endraw %}

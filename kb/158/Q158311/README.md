@@ -6,6 +6,8 @@ permalink: /kb/158/Q158311/
 
 ## Q158311: SMS: Audit32 May Fail on Workstations Running Windows NT
 
+{% raw %}
+
 	Article: Q158311
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -111,3 +113,5 @@ permalink: /kb/158/Q158311/
 	
 	=============================================================================
 	
+
+{% endraw %}

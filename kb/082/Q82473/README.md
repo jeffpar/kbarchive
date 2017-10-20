@@ -6,6 +6,8 @@ permalink: /kb/082/Q82473/
 
 ## Q82473: HyperKey Does Not Function Properly in an MS-DOS VM
 
+{% raw %}
+
 	Article: Q82473
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; Win95:
@@ -68,3 +70,5 @@ permalink: /kb/082/Q82473/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128797/
 
 ## Q128797: Unable to Transfer Files Across DEC 250 and DEC 500 Routers
 
+{% raw %}
+
 	Article: Q128797
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -81,3 +83,5 @@ permalink: /kb/128/Q128797/
 	
 	=============================================================================
 	
+
+{% endraw %}

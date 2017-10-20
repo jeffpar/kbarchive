@@ -6,6 +6,8 @@ permalink: /kb/117/Q117199/
 
 ## Q117199: PC Adm: .XTN File for Downstream PO Not Updated Correctly
 
+{% raw %}
+
 	Article: Q117199
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -63,3 +65,5 @@ permalink: /kb/117/Q117199/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145971/
 
 ## Q145971: XCLN: Upgrading From SFS Mail to Exchange Causes E-Forms
 
+{% raw %}
+
 	Article: Q145971
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -47,3 +49,5 @@ permalink: /kb/145/Q145971/
 	
 	=============================================================================
 	
+
+{% endraw %}

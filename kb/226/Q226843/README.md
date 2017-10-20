@@ -6,6 +6,8 @@ permalink: /kb/226/Q226843/
 
 ## Q226843: SMS: Setup Doesn't Fail As Expected in Unsupported Installation
 
+{% raw %}
+
 	Article: Q226843
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -56,3 +58,5 @@ permalink: /kb/226/Q226843/
 	
 	=============================================================================
 	
+
+{% endraw %}

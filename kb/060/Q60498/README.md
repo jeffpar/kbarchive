@@ -6,6 +6,8 @@ permalink: /kb/060/Q60498/
 
 ## Q60498: HIMEM.SYS May Not Support All XMS API Functions
 
+{% raw %}
+
 	Article: Q60498
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -42,3 +44,5 @@ permalink: /kb/060/Q60498/
 	
 	=============================================================================
 	
+
+{% endraw %}

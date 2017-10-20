@@ -6,6 +6,8 @@ permalink: /kb/305/Q305829/
 
 ## Q305829: XADM: Exchange Server Administrator Program Mailbox Size Wrong
 
+{% raw %}
+
 	Article: Q305829
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -104,3 +106,5 @@ permalink: /kb/305/Q305829/
 	
 	=============================================================================
 	
+
+{% endraw %}

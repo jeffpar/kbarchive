@@ -6,6 +6,8 @@ permalink: /kb/322/Q322749/
 
 ## Q322749: Alerts Sender Error When You Connect to Alerts Database
 
+{% raw %}
+
 	Article: Q322749
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/322/Q322749/
 	
 	=============================================================================
 	
+
+{% endraw %}

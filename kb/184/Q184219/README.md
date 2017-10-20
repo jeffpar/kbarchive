@@ -6,6 +6,8 @@ permalink: /kb/184/Q184219/
 
 ## Q184219: Access Violation in Microsoft TAPI Browser 2.0
 
+{% raw %}
+
 	Article: Q184219
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/184/Q184219/
 	
 	=============================================================================
 	
+
+{% endraw %}

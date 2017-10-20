@@ -6,6 +6,8 @@ permalink: /kb/246/Q246037/
 
 ## Q246037: XADM: Public Folders &amp; Deleted Item Recovery in Exchange Server
 
+{% raw %}
+
 	Article: Q246037
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -91,3 +93,5 @@ permalink: /kb/246/Q246037/
 	
 	=============================================================================
 	
+
+{% endraw %}

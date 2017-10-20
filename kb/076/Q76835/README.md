@@ -6,6 +6,8 @@ permalink: /kb/076/Q76835/
 
 ## Q76835: General Multimedia Information: MPC Marketing Council
 
+{% raw %}
+
 	Article: Q76835
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/076/Q76835/
 	
 	=============================================================================
 	
+
+{% endraw %}

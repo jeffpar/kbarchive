@@ -6,6 +6,8 @@ permalink: /kb/131/Q131549/
 
 ## Q131549: INFO: Use Place-Holder Commas in Calls with Missing Parameters
 
+{% raw %}
+
 	Article: Q131549
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -118,3 +120,5 @@ permalink: /kb/131/Q131549/
 	
 	=============================================================================
 	
+
+{% endraw %}

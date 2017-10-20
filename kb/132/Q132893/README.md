@@ -6,6 +6,8 @@ permalink: /kb/132/Q132893/
 
 ## Q132893: PRB: Exceptions Thrown During Construction Can Orphan Memory
 
+{% raw %}
+
 	Article: Q132893
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0 2.1 4.0 4.2 5.0
@@ -114,3 +116,5 @@ permalink: /kb/132/Q132893/
 	
 	=============================================================================
 	
+
+{% endraw %}

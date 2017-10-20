@@ -6,6 +6,8 @@ permalink: /kb/124/Q124944/
 
 ## Q124944: Sound Blaster Cards and Windows Driver Information
 
+{% raw %}
+
 	Article: Q124944
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.1,3.11
@@ -232,3 +234,5 @@ permalink: /kb/124/Q124944/
 	
 	=============================================================================
 	
+
+{% endraw %}

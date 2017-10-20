@@ -6,6 +6,8 @@ permalink: /kb/253/Q253678/
 
 ## Q253678: HOWTO: Detect 16-Bit CD-ROM Drives in Windows 95 and Windows 98
 
+{% raw %}
+
 	Article: Q253678
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98,98 Second Edition
@@ -122,3 +124,5 @@ permalink: /kb/253/Q253678/
 	
 	=============================================================================
 	
+
+{% endraw %}

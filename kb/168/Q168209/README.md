@@ -6,6 +6,8 @@ permalink: /kb/168/Q168209/
 
 ## Q168209: PRB: QueryDef dbFailOnError Doesn't Rollback on Failure
 
+{% raw %}
+
 	Article: Q168209
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/168/Q168209/
 	
 	=============================================================================
 	
+
+{% endraw %}

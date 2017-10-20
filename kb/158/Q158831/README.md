@@ -6,6 +6,8 @@ permalink: /kb/158/Q158831/
 
 ## Q158831: PRB: &quot;Cannot Open File - Error Setting RESOURCE&quot; in VFP Mac
 
+{% raw %}
+
 	Article: Q158831
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -73,3 +75,5 @@ permalink: /kb/158/Q158831/
 	
 	=============================================================================
 	
+
+{% endraw %}

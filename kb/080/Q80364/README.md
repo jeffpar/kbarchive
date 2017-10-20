@@ -6,6 +6,8 @@ permalink: /kb/080/Q80364/
 
 ## Q80364: Removing Terminate-and-Stay-Resident Programs from Memory
 
+{% raw %}
+
 	Article: Q80364
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -70,3 +72,5 @@ permalink: /kb/080/Q80364/
 	
 	=============================================================================
 	
+
+{% endraw %}

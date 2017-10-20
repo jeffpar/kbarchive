@@ -6,6 +6,8 @@ permalink: /kb/216/Q216976/
 
 ## Q216976: How to Change the Drive Letter Used for ROOTDRIVE
 
+{% raw %}
+
 	Article: Q216976
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/216/Q216976/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/025/Q25053/
 
 ## Q25053: Unable to Activate the Mouse in Chart
 
+{% raw %}
+
 	Article: Q25053
 	Product(s): See article
 	Version(s): 6.00
@@ -28,3 +30,5 @@ permalink: /kb/025/Q25053/
 	2. Exit.
 	
 	3. Restart Chart.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132209/
 
 ## Q132209: PC WSPlus: Viewing Free/Busy on Remote Postoffice Via Async
 
+{% raw %}
+
 	Article: Q132209
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -54,3 +56,5 @@ permalink: /kb/132/Q132209/
 	
 	=============================================================================
 	
+
+{% endraw %}

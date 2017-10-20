@@ -6,6 +6,8 @@ permalink: /kb/319/Q319859/
 
 ## Q319859: Networking An MSN DSL Internet Connection To Multiple Computers
 
+{% raw %}
+
 	Article: Q319859
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -134,3 +136,5 @@ permalink: /kb/319/Q319859/
 	
 	=============================================================================
 	
+
+{% endraw %}

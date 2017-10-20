@@ -6,6 +6,8 @@ permalink: /kb/178/Q178972/
 
 ## Q178972: Description of Windows 95 OEM Service Release 2.5
 
+{% raw %}
+
 	Article: Q178972
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -155,3 +157,5 @@ permalink: /kb/178/Q178972/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/208/Q208208/
 
 ## Q208208: HOWTO: Add Records with Memo Data Using the VFP ODBC Driver
 
+{% raw %}
+
 	Article: Q208208
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.6,6.0
@@ -164,3 +166,5 @@ permalink: /kb/208/Q208208/
 	
 	=============================================================================
 	
+
+{% endraw %}

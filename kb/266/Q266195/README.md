@@ -6,6 +6,8 @@ permalink: /kb/266/Q266195/
 
 ## Q266195: SMS 2.0  Packages Are Not Distributed to Child Sites
 
+{% raw %}
+
 	Article: Q266195
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -65,3 +67,5 @@ permalink: /kb/266/Q266195/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/108/Q108593/
 
 ## Q108593: Flight Simulator 5.0: Fatal Error: Error Code: 0000
 
+{% raw %}
+
 	Article: Q108593
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -67,3 +69,5 @@ permalink: /kb/108/Q108593/
 	
 	=============================================================================
 	
+
+{% endraw %}

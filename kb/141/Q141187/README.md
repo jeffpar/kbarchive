@@ -6,6 +6,8 @@ permalink: /kb/141/Q141187/
 
 ## Q141187: User Must and Cannot Change Password
 
+{% raw %}
+
 	Article: Q141187
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -65,3 +67,5 @@ permalink: /kb/141/Q141187/
 	
 	=============================================================================
 	
+
+{% endraw %}

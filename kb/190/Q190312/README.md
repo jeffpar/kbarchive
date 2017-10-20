@@ -6,6 +6,8 @@ permalink: /kb/190/Q190312/
 
 ## Q190312: PRB: Computer &quot;Not Responding&quot; When Certain Commands Issued
 
+{% raw %}
+
 	Article: Q190312
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -76,3 +78,5 @@ permalink: /kb/190/Q190312/
 	
 	=============================================================================
 	
+
+{% endraw %}

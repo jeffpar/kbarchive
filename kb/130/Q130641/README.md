@@ -6,6 +6,8 @@ permalink: /kb/130/Q130641/
 
 ## Q130641: MS-DOS-Based Application Hangs on Beep Under Windows NT
 
+{% raw %}
+
 	Article: Q130641
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/130/Q130641/
 	
 	=============================================================================
 	
+
+{% endraw %}

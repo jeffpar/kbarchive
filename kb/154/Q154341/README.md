@@ -6,6 +6,8 @@ permalink: /kb/154/Q154341/
 
 ## Q154341: MSB Dinosaurs: How to Play the Games
 
+{% raw %}
+
 	Article: Q154341
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -120,3 +122,5 @@ permalink: /kb/154/Q154341/
 	
 	=============================================================================
 	
+
+{% endraw %}

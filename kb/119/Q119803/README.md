@@ -6,6 +6,8 @@ permalink: /kb/119/Q119803/
 
 ## Q119803: Windows for Workgroups: Error 58 on Protocol 0 - (Non-ODI)
 
+{% raw %}
+
 	Article: Q119803
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -65,3 +67,5 @@ permalink: /kb/119/Q119803/
 	
 	=============================================================================
 	
+
+{% endraw %}

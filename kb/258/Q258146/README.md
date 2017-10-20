@@ -6,6 +6,8 @@ permalink: /kb/258/Q258146/
 
 ## Q258146: HOWTO: Pin/Unpin files in SourceSafe from OLE Automation in VB
 
+{% raw %}
+
 	Article: Q258146
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/258/Q258146/
 	
 	=============================================================================
 	
+
+{% endraw %}

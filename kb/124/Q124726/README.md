@@ -6,6 +6,8 @@ permalink: /kb/124/Q124726/
 
 ## Q124726: MODEM.INF Settings for US Robotics Modems
 
+{% raw %}
+
 	Article: Q124726
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -152,3 +154,5 @@ permalink: /kb/124/Q124726/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176323/
 
 ## Q176323: SMS: How to Install Internet Explorer 4.0 with SMS
 
+{% raw %}
+
 	Article: Q176323
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -112,3 +114,5 @@ permalink: /kb/176/Q176323/
 	
 	=============================================================================
 	
+
+{% endraw %}

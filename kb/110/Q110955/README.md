@@ -6,6 +6,8 @@ permalink: /kb/110/Q110955/
 
 ## Q110955: Invalid EISA CFG File for Olicom Token Ring 16/4 Adapter
 
+{% raw %}
+
 	Article: Q110955
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -61,3 +63,5 @@ permalink: /kb/110/Q110955/
 	
 	=============================================================================
 	
+
+{% endraw %}

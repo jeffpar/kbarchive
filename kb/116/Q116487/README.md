@@ -6,6 +6,8 @@ permalink: /kb/116/Q116487/
 
 ## Q116487: BUG: No Compiler Error for Ambiguous C++ Conversion
 
+{% raw %}
+
 	Article: Q116487
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,4.1,4.2,5.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/116/Q116487/
 	
 	=============================================================================
 	
+
+{% endraw %}

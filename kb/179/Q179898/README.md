@@ -6,6 +6,8 @@ permalink: /kb/179/Q179898/
 
 ## Q179898: Close Combat Error Message: The Screen Size Has Changed...
 
+{% raw %}
+
 	Article: Q179898
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0; WINDOWS:2.0
@@ -84,3 +86,5 @@ permalink: /kb/179/Q179898/
 	
 	=============================================================================
 	
+
+{% endraw %}

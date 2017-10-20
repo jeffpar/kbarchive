@@ -6,6 +6,8 @@ permalink: /kb/143/Q143001/
 
 ## Q143001: PRB: Child Property Doesn't Reflect Parent Container Property
 
+{% raw %}
+
 	Article: Q143001
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -76,3 +78,5 @@ permalink: /kb/143/Q143001/
 	
 	=============================================================================
 	
+
+{% endraw %}

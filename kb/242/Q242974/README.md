@@ -6,6 +6,8 @@ permalink: /kb/242/Q242974/
 
 ## Q242974: PRB: Unable to Create/Modify REMOTE View with RIGHT JOIN
 
+{% raw %}
+
 	Article: Q242974
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,5.0a,6.0
@@ -109,3 +111,5 @@ permalink: /kb/242/Q242974/
 	
 	=============================================================================
 	
+
+{% endraw %}

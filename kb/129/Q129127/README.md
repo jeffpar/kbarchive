@@ -6,6 +6,8 @@ permalink: /kb/129/Q129127/
 
 ## Q129127: File Transfers Using TCP/IP-32 Take a Long Time
 
+{% raw %}
+
 	Article: Q129127
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11a; WINDOWS:3.11
@@ -51,3 +53,5 @@ permalink: /kb/129/Q129127/
 	
 	=============================================================================
 	
+
+{% endraw %}

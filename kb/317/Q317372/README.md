@@ -6,6 +6,8 @@ permalink: /kb/317/Q317372/
 
 ## Q317372: You Receive a &quot;STOP 0x00000050&quot; Error Message in Win32k.sys
 
+{% raw %}
+
 	Article: Q317372
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6
@@ -98,3 +100,5 @@ permalink: /kb/317/Q317372/
 	
 	=============================================================================
 	
+
+{% endraw %}

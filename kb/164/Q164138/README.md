@@ -6,6 +6,8 @@ permalink: /kb/164/Q164138/
 
 ## Q164138: Files in Macintosh Volume Disappear from Macintosh Clients
 
+{% raw %}
+
 	Article: Q164138
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -67,3 +69,5 @@ permalink: /kb/164/Q164138/
 	
 	=============================================================================
 	
+
+{% endraw %}

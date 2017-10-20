@@ -6,6 +6,8 @@ permalink: /kb/266/Q266786/
 
 ## Q266786: Error Message Appears After Installation of pcAnywhere
 
+{% raw %}
+
 	Article: Q266786
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/266/Q266786/
 	
 	=============================================================================
 	
+
+{% endraw %}

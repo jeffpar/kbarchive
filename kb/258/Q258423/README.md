@@ -6,6 +6,8 @@ permalink: /kb/258/Q258423/
 
 ## Q258423: Preferred Sender Capability Does Not Work with Starburst Sender
 
+{% raw %}
+
 	Article: Q258423
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -69,3 +71,5 @@ permalink: /kb/258/Q258423/
 	
 	=============================================================================
 	
+
+{% endraw %}

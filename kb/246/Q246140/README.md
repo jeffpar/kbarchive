@@ -6,6 +6,8 @@ permalink: /kb/246/Q246140/
 
 ## Q246140: FS2000: Game Intermittently Stops Responding
 
+{% raw %}
+
 	Article: Q246140
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/246/Q246140/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130938/
 
 ## Q130938: How to Install OS/2 1.3x System Management Server Clients
 
+{% raw %}
+
 	Article: Q130938
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -61,3 +63,5 @@ permalink: /kb/130/Q130938/
 	
 	=============================================================================
 	
+
+{% endraw %}

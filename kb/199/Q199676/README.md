@@ -6,6 +6,8 @@ permalink: /kb/199/Q199676/
 
 ## Q199676: PC Adm: Invalid Characters in Mailbox Name for Microsoft Mail
 
+{% raw %}
+
 	Article: Q199676
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a,3.5
@@ -131,3 +133,5 @@ permalink: /kb/199/Q199676/
 	
 	=============================================================================
 	
+
+{% endraw %}

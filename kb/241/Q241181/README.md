@@ -6,6 +6,8 @@ permalink: /kb/241/Q241181/
 
 ## Q241181: NBA Inside Drive 2000: Resolution of Crowd Texture Changes
 
+{% raw %}
+
 	Article: Q241181
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/241/Q241181/
 	
 	=============================================================================
 	
+
+{% endraw %}

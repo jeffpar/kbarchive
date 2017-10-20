@@ -6,6 +6,8 @@ permalink: /kb/011/Q11697/
 
 ## Q11697: Integer &quot;Overflow&quot; Is Not Trapped without /D Debug Switch
 
+{% raw %}
+
 	Article: Q11697
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -35,3 +37,5 @@ permalink: /kb/011/Q11697/
 	
 	These compilers don't handle type coercion, nor do they check for
 	overflow unless the program was compiled with the /D switch.
+
+{% endraw %}

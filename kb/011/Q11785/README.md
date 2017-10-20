@@ -6,6 +6,8 @@ permalink: /kb/011/Q11785/
 
 ## Q11785: Getting the DTA Address Using INT86
 
+{% raw %}
+
 	Article: Q11785
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -54,3 +56,5 @@ permalink: /kb/011/Q11785/
 	
 	The book "Advanced MS-DOS," by Ray Duncan (Microsoft Press, 1986) also
 	is a very helpful reference for using DOS function calls.
+
+{% endraw %}

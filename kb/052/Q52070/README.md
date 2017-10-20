@@ -6,6 +6,8 @@ permalink: /kb/052/Q52070/
 
 ## Q52070: Example of PPMT and PMT Financial Functions in Basic
 
+{% raw %}
+
 	Article: Q52070
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): MS-DOS:1.0; :7.0,7.1
@@ -164,3 +166,5 @@ permalink: /kb/052/Q52070/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/285/Q285672/
 
 ## Q285672: HOWTO: Create VFP Forms That Remember Size and Position
 
+{% raw %}
+
 	Article: Q285672
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -188,3 +190,5 @@ permalink: /kb/285/Q285672/
 	
 	=============================================================================
 	
+
+{% endraw %}

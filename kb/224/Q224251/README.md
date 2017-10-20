@@ -6,6 +6,8 @@ permalink: /kb/224/Q224251/
 
 ## Q224251: Streets and Trips 2000: Route Passes Through Avoided Area
 
+{% raw %}
+
 	Article: Q224251
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/224/Q224251/
 	
 	=============================================================================
 	
+
+{% endraw %}

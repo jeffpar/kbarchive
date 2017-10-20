@@ -6,6 +6,8 @@ permalink: /kb/047/Q47660/
 
 ## Q47660: Only One Scaletitle May Appear in Bar, Column, and Line Charts
 
+{% raw %}
+
 	Article: Q47660
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -86,3 +88,5 @@ permalink: /kb/047/Q47660/
 	chartenv types, axistypes, and titletypes, see the Presentation
 	Graphics chapter in "C for Yourself," the QuickC on-line help, or the
 	"Microsoft QuickC Graphics Library Reference."
+
+{% endraw %}

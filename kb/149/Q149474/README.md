@@ -6,6 +6,8 @@ permalink: /kb/149/Q149474/
 
 ## Q149474: BUG: F2333 Error Not Generated in Illegal Redefinition
 
+{% raw %}
+
 	Article: Q149474
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/149/Q149474/
 	
 	=============================================================================
 	
+
+{% endraw %}

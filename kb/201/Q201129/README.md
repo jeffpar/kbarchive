@@ -6,6 +6,8 @@ permalink: /kb/201/Q201129/
 
 ## Q201129: Unable to Delete Folders with Non-Standard MS-DOS Names
 
+{% raw %}
+
 	Article: Q201129
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -91,3 +93,5 @@ permalink: /kb/201/Q201129/
 	
 	=============================================================================
 	
+
+{% endraw %}

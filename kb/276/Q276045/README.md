@@ -6,6 +6,8 @@ permalink: /kb/276/Q276045/
 
 ## Q276045: Telnet IP+DM Is Ignored If TN3270 Server Is Already Queuing Data
 
+{% raw %}
+
 	Article: Q276045
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -155,3 +157,5 @@ permalink: /kb/276/Q276045/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/034/Q34386/
 
 ## Q34386: Maximum of 40 File Handles in C 5.10 Multi-Thread Programs
 
+{% raw %}
+
 	Article: Q34386
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -24,3 +26,5 @@ permalink: /kb/034/Q34386/
 	startup code constant _NFILE_, which is used to specify the number of
 	available file handles, cannot be changed from its default of 40, even
 	though the default number of file handles in OS/2 is 255.
+
+{% endraw %}

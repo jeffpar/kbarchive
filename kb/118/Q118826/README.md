@@ -6,6 +6,8 @@ permalink: /kb/118/Q118826/
 
 ## Q118826: File Copy to Netware Server Fails in File Manager
 
+{% raw %}
+
 	Article: Q118826
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -84,3 +86,5 @@ permalink: /kb/118/Q118826/
 	
 	=============================================================================
 	
+
+{% endraw %}

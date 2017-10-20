@@ -6,6 +6,8 @@ permalink: /kb/260/Q260698/
 
 ## Q260698: XADM: Demotion of Domain Controller Disables Exchange Server
 
+{% raw %}
+
 	Article: Q260698
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; winnt:4.0,5.0,5.5
@@ -237,3 +239,5 @@ permalink: /kb/260/Q260698/
 	
 	=============================================================================
 	
+
+{% endraw %}

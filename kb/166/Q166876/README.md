@@ -6,6 +6,8 @@ permalink: /kb/166/Q166876/
 
 ## Q166876: SMS: Remote Control Stops Win95 Client Using STB Lightspeed
 
+{% raw %}
+
 	Article: Q166876
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -50,3 +52,5 @@ permalink: /kb/166/Q166876/
 	
 	=============================================================================
 	
+
+{% endraw %}

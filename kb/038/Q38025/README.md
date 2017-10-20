@@ -6,6 +6,8 @@ permalink: /kb/038/Q38025/
 
 ## Q38025: Signed char Type Converted to int Type at Function Call
 
+{% raw %}
+
 	Article: Q38025
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 | 5.10
@@ -72,3 +74,5 @@ permalink: /kb/038/Q38025/
 	Output :
 	  ff80 ff81 ff91 00 7f 20 08
 	  -128 -127 -111 0  127 32 8
+
+{% endraw %}

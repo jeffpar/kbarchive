@@ -6,6 +6,8 @@ permalink: /kb/131/Q131743/
 
 ## Q131743: Fatal Exception Selecting to End of Line in Edit
 
+{% raw %}
+
 	Article: Q131743
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/131/Q131743/
 	
 	=============================================================================
 	
+
+{% endraw %}

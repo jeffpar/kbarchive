@@ -6,6 +6,8 @@ permalink: /kb/135/Q135463/
 
 ## Q135463: IPINFO.INF Values Ignored During Setup
 
+{% raw %}
+
 	Article: Q135463
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -77,3 +79,5 @@ permalink: /kb/135/Q135463/
 	
 	=============================================================================
 	
+
+{% endraw %}

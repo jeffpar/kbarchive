@@ -6,6 +6,8 @@ permalink: /kb/167/Q167392/
 
 ## Q167392: WD97: Changing Text Formatting Also Changes Paragraph Formatting
 
+{% raw %}
+
 	Article: Q167392
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/167/Q167392/
 	
 	=============================================================================
 	
+
+{% endraw %}

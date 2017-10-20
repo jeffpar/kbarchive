@@ -6,6 +6,8 @@ permalink: /kb/034/Q34377/
 
 ## Q34377: How to Implement a Function Pointer in MASM
 
+{% raw %}
+
 	Article: Q34377
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -134,3 +136,5 @@ permalink: /kb/034/Q34377/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195243/
 
 ## Q195243: ASP May Misinterpret Extra or Missing Delimiters as HTML
 
+{% raw %}
+
 	Article: Q195243
 	Product(s): Internet Information Server
 	Version(s): WINNT:3.0,4.0
@@ -52,3 +54,5 @@ permalink: /kb/195/Q195243/
 	
 	=============================================================================
 	
+
+{% endraw %}

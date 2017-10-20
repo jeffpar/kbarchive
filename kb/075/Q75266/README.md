@@ -6,6 +6,8 @@ permalink: /kb/075/Q75266/
 
 ## Q75266: WD97: Creating White Text on Dark Background
 
+{% raw %}
+
 	Article: Q75266
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -92,3 +94,5 @@ permalink: /kb/075/Q75266/
 	
 	=============================================================================
 	
+
+{% endraw %}

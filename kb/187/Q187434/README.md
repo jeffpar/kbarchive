@@ -6,6 +6,8 @@ permalink: /kb/187/Q187434/
 
 ## Q187434: Admin Process List Does Not Remove Deleted Processes
 
+{% raw %}
+
 	Article: Q187434
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -43,3 +45,5 @@ permalink: /kb/187/Q187434/
 	
 	=============================================================================
 	
+
+{% endraw %}

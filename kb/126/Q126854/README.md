@@ -6,6 +6,8 @@ permalink: /kb/126/Q126854/
 
 ## Q126854: NetWare Servers On FDDI Ring with Windows NT 3.5 May Fail
 
+{% raw %}
+
 	Article: Q126854
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -56,3 +58,5 @@ permalink: /kb/126/Q126854/
 	
 	=============================================================================
 	
+
+{% endraw %}

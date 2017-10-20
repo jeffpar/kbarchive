@@ -6,6 +6,8 @@ permalink: /kb/321/Q321929/
 
 ## Q321929: Version Information in COMTI Manager Application Is Incorrect
 
+{% raw %}
+
 	Article: Q321929
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/321/Q321929/
 	
 	=============================================================================
 	
+
+{% endraw %}

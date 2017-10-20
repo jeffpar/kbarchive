@@ -6,6 +6,8 @@ permalink: /kb/099/Q99285/
 
 ## Q99285: Extract From VidEdit Supports 8-Bit Color Only
 
+{% raw %}
+
 	Article: Q99285
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/099/Q99285/
 	
 	=============================================================================
 	
+
+{% endraw %}

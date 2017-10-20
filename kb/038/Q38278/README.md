@@ -6,6 +6,8 @@ permalink: /kb/038/Q38278/
 
 ## Q38278: User-Defined TYPE vs. FIELD &amp; MKS in Random-Access File PUT#
 
+{% raw %}
+
 	Article: Q38278
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -123,3 +125,5 @@ permalink: /kb/038/Q38278/
 	   GET #1, 2, dat
 	   PRINT dat.i, dat.l, dat.s, dat.d, dat.a
 	   CLOSE
+
+{% endraw %}

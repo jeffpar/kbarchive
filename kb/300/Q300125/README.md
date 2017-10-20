@@ -6,6 +6,8 @@ permalink: /kb/300/Q300125/
 
 ## Q300125: Using Passport Manager Verbose Mode
 
+{% raw %}
+
 	Article: Q300125
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -62,3 +64,5 @@ permalink: /kb/300/Q300125/
 	
 	=============================================================================
 	
+
+{% endraw %}

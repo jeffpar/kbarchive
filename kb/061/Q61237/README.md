@@ -6,6 +6,8 @@ permalink: /kb/061/Q61237/
 
 ## Q61237: C 6.00 README: Multithread (MT) and Dynamic-Link Library (DLL)
 
+{% raw %}
+
 	Article: Q61237
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -32,3 +34,5 @@ permalink: /kb/061/Q61237/
 	setting (as described under the single thread description). Since the
 	MT and DLL libraries are large model, be sure to compile _FILE.C with
 	the /AL switch.
+
+{% endraw %}

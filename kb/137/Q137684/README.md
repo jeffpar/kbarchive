@@ -6,6 +6,8 @@ permalink: /kb/137/Q137684/
 
 ## Q137684: Attachments in Microsoft Exchange Printed to Default Printer
 
+{% raw %}
+
 	Article: Q137684
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -75,3 +77,5 @@ permalink: /kb/137/Q137684/
 	
 	=============================================================================
 	
+
+{% endraw %}

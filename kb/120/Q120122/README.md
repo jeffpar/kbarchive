@@ -6,6 +6,8 @@ permalink: /kb/120/Q120122/
 
 ## Q120122: Network DDE Applications Fail with TCP/IP-32
 
+{% raw %}
+
 	Article: Q120122
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11
@@ -92,3 +94,5 @@ permalink: /kb/120/Q120122/
 	
 	=============================================================================
 	
+
+{% endraw %}

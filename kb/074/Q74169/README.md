@@ -6,6 +6,8 @@ permalink: /kb/074/Q74169/
 
 ## Q74169: PRB: L4001 Warning May Be Caused by Using Incorrect Linker
 
+{% raw %}
+
 	Article: Q74169
 	Product(s): Microsoft Programming Utilities
 	Version(s): 6.0,6.0a,6.0b,6.1
@@ -110,3 +112,5 @@ permalink: /kb/074/Q74169/
 	
 	=============================================================================
 	
+
+{% endraw %}

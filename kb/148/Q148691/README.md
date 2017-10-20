@@ -6,6 +6,8 @@ permalink: /kb/148/Q148691/
 
 ## Q148691: Error Using DIR Command With UNC Path in Windows NT 3.51 SP3
 
+{% raw %}
+
 	Article: Q148691
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP3
@@ -50,3 +52,5 @@ permalink: /kb/148/Q148691/
 	
 	=============================================================================
 	
+
+{% endraw %}

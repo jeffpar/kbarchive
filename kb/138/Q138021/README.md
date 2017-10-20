@@ -6,6 +6,8 @@ permalink: /kb/138/Q138021/
 
 ## Q138021: How Inventory Dataloader Finds Matching Computers In SMS
 
+{% raw %}
+
 	Article: Q138021
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -79,3 +81,5 @@ permalink: /kb/138/Q138021/
 	
 	=============================================================================
 	
+
+{% endraw %}

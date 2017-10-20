@@ -6,6 +6,8 @@ permalink: /kb/156/Q156186/
 
 ## Q156186: XCLN: Shared Install of Microsoft Exchange NT Client with SMS
 
+{% raw %}
+
 	Article: Q156186
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0; winnt:1.0,1.1,1.2
@@ -109,3 +111,5 @@ permalink: /kb/156/Q156186/
 	
 	=============================================================================
 	
+
+{% endraw %}

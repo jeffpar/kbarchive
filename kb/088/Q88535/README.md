@@ -6,6 +6,8 @@ permalink: /kb/088/Q88535/
 
 ## Q88535: Ports Above LPT3 Must Be Added to the WIN.INI File
 
+{% raw %}
+
 	Article: Q88535
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -87,3 +89,5 @@ permalink: /kb/088/Q88535/
 	
 	=============================================================================
 	
+
+{% endraw %}

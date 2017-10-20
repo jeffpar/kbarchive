@@ -6,6 +6,8 @@ permalink: /kb/279/Q279411/
 
 ## Q279411: Encarta 2001 Err Msg: Invalid Page Fault in Module Mfc42.dll
 
+{% raw %}
+
 	Article: Q279411
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/279/Q279411/
 	
 	=============================================================================
 	
+
+{% endraw %}

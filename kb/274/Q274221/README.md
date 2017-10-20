@@ -6,6 +6,8 @@ permalink: /kb/274/Q274221/
 
 ## Q274221: Encarta: Cannot Zoom in to an Urban Area on a Map
 
+{% raw %}
+
 	Article: Q274221
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/274/Q274221/
 	
 	=============================================================================
 	
+
+{% endraw %}

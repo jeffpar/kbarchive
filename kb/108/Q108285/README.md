@@ -6,6 +6,8 @@ permalink: /kb/108/Q108285/
 
 ## Q108285: FIX: Precision Problem with COMPLEX&#42;16 and /Op
 
+{% raw %}
+
 	Article: Q108285
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -85,3 +87,5 @@ permalink: /kb/108/Q108285/
 	
 	=============================================================================
 	
+
+{% endraw %}

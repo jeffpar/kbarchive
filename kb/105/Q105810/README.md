@@ -6,6 +6,8 @@ permalink: /kb/105/Q105810/
 
 ## Q105810: HPPCL5E.DRV Does Not Save Paper Tray Selection
 
+{% raw %}
+
 	Article: Q105810
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/105/Q105810/
 	
 	=============================================================================
 	
+
+{% endraw %}

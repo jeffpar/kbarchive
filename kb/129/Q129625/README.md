@@ -6,6 +6,8 @@ permalink: /kb/129/Q129625/
 
 ## Q129625: SNA Server: Event 18 Includes Sense Data = 00320008
 
+{% raw %}
+
 	Article: Q129625
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -90,3 +92,5 @@ permalink: /kb/129/Q129625/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/037/Q37606/
 
 ## Q37606: Entering Airplane Position Using Keyboard
 
+{% raw %}
+
 	Article: Q37606
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -28,3 +30,5 @@ permalink: /kb/037/Q37606/
 	
 	=============================================================================
 	
+
+{% endraw %}

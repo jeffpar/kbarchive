@@ -6,6 +6,8 @@ permalink: /kb/181/Q181894/
 
 ## Q181894: PRB: &quot;The Remote Procedure Call Failed&quot; During OLE Automation
 
+{% raw %}
+
 	Article: Q181894
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/181/Q181894/
 	
 	=============================================================================
 	
+
+{% endraw %}

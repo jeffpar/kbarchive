@@ -6,6 +6,8 @@ permalink: /kb/198/Q198386/
 
 ## Q198386: Changes in IRP Stack Size in Lanman Server
 
+{% raw %}
+
 	Article: Q198386
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -138,3 +140,5 @@ permalink: /kb/198/Q198386/
 	
 	=============================================================================
 	
+
+{% endraw %}

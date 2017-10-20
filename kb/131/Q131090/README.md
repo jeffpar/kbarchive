@@ -6,6 +6,8 @@ permalink: /kb/131/Q131090/
 
 ## Q131090: XCLN: Status Bar Message Count Not Updated During Filter
 
+{% raw %}
+
 	Article: Q131090
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -53,3 +55,5 @@ permalink: /kb/131/Q131090/
 	
 	=============================================================================
 	
+
+{% endraw %}

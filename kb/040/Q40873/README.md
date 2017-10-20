@@ -6,6 +6,8 @@ permalink: /kb/040/Q40873/
 
 ## Q40873: BC 6.00 Example of OS/2 API Function Call DosDupHandle
 
+{% raw %}
+
 	Article: Q40873
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -128,3 +130,5 @@ permalink: /kb/040/Q40873/
 	   print "The file is closed."
 	END IF
 	END
+
+{% endraw %}

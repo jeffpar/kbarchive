@@ -6,6 +6,8 @@ permalink: /kb/099/Q99134/
 
 ## Q99134: BUG: Application Errors From Long Text in the Dialog Editor
 
+{% raw %}
+
 	Article: Q99134
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -101,3 +103,5 @@ permalink: /kb/099/Q99134/
 	
 	=============================================================================
 	
+
+{% endraw %}

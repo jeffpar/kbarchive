@@ -6,6 +6,8 @@ permalink: /kb/040/Q40316/
 
 ## Q40316: QC 2.00 SAMPLES.DOC: Note on Graphics Libraries
 
+{% raw %}
+
 	Article: Q40316
 	Product(s): See article
 	Version(s): 2.00
@@ -32,3 +34,5 @@ permalink: /kb/040/Q40316/
 	For example, use this command line to compile LIFE:
 	
 	   QCL life.c tools.c graphics.lib
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90439/
 
 ## Q90439: Digitizing Technology for Pen-Based Systems
 
+{% raw %}
+
 	Article: Q90439
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -116,3 +118,5 @@ permalink: /kb/090/Q90439/
 	
 	=============================================================================
 	
+
+{% endraw %}

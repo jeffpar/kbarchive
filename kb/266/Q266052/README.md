@@ -6,6 +6,8 @@ permalink: /kb/266/Q266052/
 
 ## Q266052: XCON: White Paper: How to Configure the Dynamic RAS Connector
 
+{% raw %}
+
 	Article: Q266052
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -49,3 +51,5 @@ permalink: /kb/266/Q266052/
 	
 	=============================================================================
 	
+
+{% endraw %}

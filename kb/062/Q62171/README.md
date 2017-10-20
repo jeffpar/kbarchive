@@ -6,6 +6,8 @@ permalink: /kb/062/Q62171/
 
 ## Q62171: Mac Hyp: Saving a Message to Disk
 
+{% raw %}
+
 	Article: Q62171
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0
@@ -49,3 +51,5 @@ permalink: /kb/062/Q62171/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117778/
 
 ## Q117778: HOWTO: Change the Background Color of an MFC Edit Control
 
+{% raw %}
+
 	Article: Q117778
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -72,26 +74,26 @@ permalink: /kb/117/Q117778/
 	            CBrush* m_pEditBkBrush;
 	
 	        // Dialog Data
-	            //{ {AFX_DATA(CEditDialog)
+	            //{{AFX_DATA(CEditDialog)
 	            enum { IDD = IDD_EDITDIALOG };
 	                // NOTE: The ClassWizard will add data members here.
-	            //} }AFX_DATA
+	            //}}AFX_DATA
 	
 	        // Overrides
 	        // ClassWizard generated virtual function overrides
-	        //{ {AFX_VIRTUAL(CEditDialog)
+	        //{{AFX_VIRTUAL(CEditDialog)
 	        protected:
 	        virtual void DoDataExchange(CDataExchange* pDX); // DDX/DDV support
-	        //} }AFX_VIRTUAL
+	        //}}AFX_VIRTUAL
 	
 	        // Implementation
 	           protected:
 	
 	            // Generated message map functions
-	            //{ {AFX_MSG(CEditDialog)
+	            //{{AFX_MSG(CEditDialog)
 	            afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
 	            afx_msg void OnDestroy();
-	            //} }AFX_MSG
+	            //}}AFX_MSG
 	            DECLARE_MESSAGE_MAP()
 	        };
 	
@@ -113,9 +115,9 @@ permalink: /kb/117/Q117778/
 	        CEditDialog::CEditDialog(CWnd* pParent /*=NULL*/)
 	            : CDialog(CEditDialog::IDD, pParent)
 	        {
-	            //{ {AFX_DATA_INIT(CEditDialog)
+	            //{{AFX_DATA_INIT(CEditDialog)
 	                // NOTE: The ClassWizard will add member initialization here.
-	            //} }AFX_DATA_INIT
+	            //}}AFX_DATA_INIT
 	
 	            // Instantiate and initialize the background brush to black.
 	            m_pEditBkBrush = new CBrush(RGB(0, 0, 0));
@@ -124,16 +126,16 @@ permalink: /kb/117/Q117778/
 	        void CEditDialog::DoDataExchange(CDataExchange* pDX)
 	        {
 	            CDialog::DoDataExchange(pDX);
-	            //{ {AFX_DATA_MAP(CEditDialog)
+	            //{{AFX_DATA_MAP(CEditDialog)
 	                // NOTE: The ClassWizard will add DDX and DDV calls here.
-	            //} }AFX_DATA_MAP
+	            //}}AFX_DATA_MAP
 	        }
 	
 	        BEGIN_MESSAGE_MAP(CEditDialog, CDialog)
-	            //{ {AFX_MSG_MAP(CEditDialog)
+	            //{{AFX_MSG_MAP(CEditDialog)
 	            ON_WM_CTLCOLOR()
 	            ON_WM_DESTROY()
-	            //} }AFX_MSG_MAP
+	            //}}AFX_MSG_MAP
 	        END_MESSAGE_MAP()
 	
 	  ////////////////////////////////////////////////////////////////////// 
@@ -174,3 +176,5 @@ permalink: /kb/117/Q117778/
 	
 	=============================================================================
 	
+
+{% endraw %}

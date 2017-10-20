@@ -6,6 +6,8 @@ permalink: /kb/164/Q164227/
 
 ## Q164227: Second PC Card Not Recognized When Inserted in Dock
 
+{% raw %}
+
 	Article: Q164227
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164227/
 	
 	=============================================================================
 	
+
+{% endraw %}

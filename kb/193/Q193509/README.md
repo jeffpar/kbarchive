@@ -6,6 +6,8 @@ permalink: /kb/193/Q193509/
 
 ## Q193509: FIX: Exception When Calling strftime() Function
 
+{% raw %}
+
 	Article: Q193509
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -113,3 +115,5 @@ permalink: /kb/193/Q193509/
 	
 	=============================================================================
 	
+
+{% endraw %}

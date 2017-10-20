@@ -6,6 +6,8 @@ permalink: /kb/173/Q173574/
 
 ## Q173574: WD97: Cannot Use Visual Fox Pro ODBC Driver in Word Mail Merge
 
+{% raw %}
+
 	Article: Q173574
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/173/Q173574/
 	
 	=============================================================================
 	
+
+{% endraw %}

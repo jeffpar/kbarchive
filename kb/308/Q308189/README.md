@@ -6,6 +6,8 @@ permalink: /kb/308/Q308189/
 
 ## Q308189: BackupWithPassword and RestoreWithPassword method documentation
 
+{% raw %}
+
 	Article: Q308189
 	Product(s): Internet Information Server
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/308/Q308189/
 	
 	=============================================================================
 	
+
+{% endraw %}

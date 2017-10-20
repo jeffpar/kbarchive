@@ -6,6 +6,8 @@ permalink: /kb/166/Q166132/
 
 ## Q166132: PRB: Dialog With RichEdit May Fail During Creation
 
+{% raw %}
+
 	Article: Q166132
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -174,3 +176,5 @@ permalink: /kb/166/Q166132/
 	
 	=============================================================================
 	
+
+{% endraw %}

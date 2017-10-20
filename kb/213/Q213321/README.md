@@ -6,6 +6,8 @@ permalink: /kb/213/Q213321/
 
 ## Q213321: SMS: Site Server Performance Is Degraded with NetWare Redirector
 
+{% raw %}
+
 	Article: Q213321
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -65,3 +67,5 @@ permalink: /kb/213/Q213321/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164374/
 
 ## Q164374: FIX: Cannot Use Printer Fonts with ? Printing in VFP 5.0
 
+{% raw %}
+
 	Article: Q164374
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -98,3 +100,5 @@ permalink: /kb/164/Q164374/
 	
 	=============================================================================
 	
+
+{% endraw %}

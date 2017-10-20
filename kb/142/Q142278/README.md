@@ -6,6 +6,8 @@ permalink: /kb/142/Q142278/
 
 ## Q142278: Windows 95 Updated Modem .inf Files Readme.txt File
 
+{% raw %}
+
 	Article: Q142278
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/142/Q142278/
 	
 	=============================================================================
 	
+
+{% endraw %}

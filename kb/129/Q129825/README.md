@@ -6,6 +6,8 @@ permalink: /kb/129/Q129825/
 
 ## Q129825: Common Dialog Boxes Used by Visual FoxPro
 
+{% raw %}
+
 	Article: Q129825
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/129/Q129825/
 	
 	=============================================================================
 	
+
+{% endraw %}

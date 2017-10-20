@@ -6,6 +6,8 @@ permalink: /kb/131/Q131544/
 
 ## Q131544: HP Fast Ethernet Network Adapters Fail with Incorrect Cabling
 
+{% raw %}
+
 	Article: Q131544
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/131/Q131544/
 	
 	=============================================================================
 	
+
+{% endraw %}

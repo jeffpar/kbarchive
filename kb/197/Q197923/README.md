@@ -6,6 +6,8 @@ permalink: /kb/197/Q197923/
 
 ## Q197923: Memotool.exe Saves User Defined Toolbar Positions
 
+{% raw %}
+
 	Article: Q197923
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -87,3 +89,5 @@ permalink: /kb/197/Q197923/
 	
 	=============================================================================
 	
+
+{% endraw %}

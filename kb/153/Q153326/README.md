@@ -6,6 +6,8 @@ permalink: /kb/153/Q153326/
 
 ## Q153326: XADM: Information Store Returns Service Specific Error 4021
 
+{% raw %}
+
 	Article: Q153326
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -63,3 +65,5 @@ permalink: /kb/153/Q153326/
 	
 	=============================================================================
 	
+
+{% endraw %}

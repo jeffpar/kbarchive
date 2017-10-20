@@ -6,6 +6,8 @@ permalink: /kb/150/Q150565/
 
 ## Q150565: Creating DHCP Scopes Using DHCP Manager
 
+{% raw %}
+
 	Article: Q150565
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51 4.00
@@ -111,3 +113,5 @@ permalink: /kb/150/Q150565/
 	
 	=============================================================================
 	
+
+{% endraw %}

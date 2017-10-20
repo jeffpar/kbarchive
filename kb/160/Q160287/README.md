@@ -6,6 +6,8 @@ permalink: /kb/160/Q160287/
 
 ## Q160287: XADM: How to Embed an OLE Object in an Exchange Form
 
+{% raw %}
+
 	Article: Q160287
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/160/Q160287/
 	
 	=============================================================================
 	
+
+{% endraw %}

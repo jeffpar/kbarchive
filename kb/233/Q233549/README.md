@@ -6,6 +6,8 @@ permalink: /kb/233/Q233549/
 
 ## Q233549: Inaccurate Sample APPL Statement in Mainframe APPC/LU6.2 Wizard
 
+{% raw %}
+
 	Article: Q233549
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0SP2
@@ -89,3 +91,5 @@ permalink: /kb/233/Q233549/
 	
 	=============================================================================
 	
+
+{% endraw %}

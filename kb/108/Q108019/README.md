@@ -6,6 +6,8 @@ permalink: /kb/108/Q108019/
 
 ## Q108019: Flight Simulator 5.0: System Requirements on Box Incorrect
 
+{% raw %}
+
 	Article: Q108019
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -66,3 +68,5 @@ permalink: /kb/108/Q108019/
 	
 	=============================================================================
 	
+
+{% endraw %}

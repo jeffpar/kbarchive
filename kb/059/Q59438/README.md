@@ -6,6 +6,8 @@ permalink: /kb/059/Q59438/
 
 ## Q59438: Assembly Main Module Calling a C Function
 
+{% raw %}
+
 	Article: Q59438
 	Product(s): See article
 	Version(s): 5.10
@@ -72,3 +74,5 @@ permalink: /kb/059/Q59438/
 	    *a += 1;
 	    *b += 1;
 	}
+
+{% endraw %}

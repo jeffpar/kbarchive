@@ -6,6 +6,8 @@ permalink: /kb/106/Q106271/
 
 ## Q106271: WINVER.EXE Reports Incorrect Version
 
+{% raw %}
+
 	Article: Q106271
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -43,3 +45,5 @@ permalink: /kb/106/Q106271/
 	
 	=============================================================================
 	
+
+{% endraw %}

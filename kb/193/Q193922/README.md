@@ -6,6 +6,8 @@ permalink: /kb/193/Q193922/
 
 ## Q193922: XFOR: Preventing the Internet Mail Service From Relaying UCE
 
+{% raw %}
+
 	Article: Q193922
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -216,3 +218,5 @@ permalink: /kb/193/Q193922/
 	
 	=============================================================================
 	
+
+{% endraw %}

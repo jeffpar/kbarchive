@@ -6,6 +6,8 @@ permalink: /kb/137/Q137942/
 
 ## Q137942: Troubleshooting Poor Performance in Microsoft Backup
 
+{% raw %}
+
 	Article: Q137942
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -119,3 +121,5 @@ permalink: /kb/137/Q137942/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121726/
 
 ## Q121726: STOP Message Caused by NTFS with Long Filenames
 
+{% raw %}
+
 	Article: Q121726
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -69,3 +71,5 @@ permalink: /kb/121/Q121726/
 	
 	=============================================================================
 	
+
+{% endraw %}

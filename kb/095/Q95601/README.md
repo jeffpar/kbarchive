@@ -6,6 +6,8 @@ permalink: /kb/095/Q95601/
 
 ## Q95601: Windows Err Msg: Corrupt Swap File or Unsupported DOS Version
 
+{% raw %}
+
 	Article: Q95601
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a,3.1
@@ -218,3 +220,5 @@ permalink: /kb/095/Q95601/
 	
 	=============================================================================
 	
+
+{% endraw %}

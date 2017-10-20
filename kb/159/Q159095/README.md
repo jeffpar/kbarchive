@@ -6,6 +6,8 @@ permalink: /kb/159/Q159095/
 
 ## Q159095: STOP 0x0000001E in Win32k.sys When Exiting Applications
 
+{% raw %}
+
 	Article: Q159095
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/159/Q159095/
 	
 	=============================================================================
 	
+
+{% endraw %}

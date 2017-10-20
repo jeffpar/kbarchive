@@ -6,6 +6,8 @@ permalink: /kb/066/Q66830/
 
 ## Q66830: ASD: Clearing Scenery
 
+{% raw %}
+
 	Article: Q66830
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/066/Q66830/
 	
 	=============================================================================
 	
+
+{% endraw %}

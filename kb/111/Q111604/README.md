@@ -6,6 +6,8 @@ permalink: /kb/111/Q111604/
 
 ## Q111604: BUG: Explicitly Loaded Modules Not Removed from Memory
 
+{% raw %}
+
 	Article: Q111604
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -48,3 +50,5 @@ permalink: /kb/111/Q111604/
 	
 	=============================================================================
 	
+
+{% endraw %}

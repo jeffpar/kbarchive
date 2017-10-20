@@ -6,6 +6,8 @@ permalink: /kb/059/Q59689/
 
 ## Q59689: Installing Windows 3.0 Into a Directory With an Extension
 
+{% raw %}
+
 	Article: Q59689
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/059/Q59689/
 	
 	=============================================================================
 	
+
+{% endraw %}

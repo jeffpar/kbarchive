@@ -6,6 +6,8 @@ permalink: /kb/225/Q225066/
 
 ## Q225066: WD97: Application Error When Document Embedded in Lotus Notes
 
+{% raw %}
+
 	Article: Q225066
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/225/Q225066/
 	
 	=============================================================================
 	
+
+{% endraw %}

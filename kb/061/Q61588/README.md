@@ -6,6 +6,8 @@ permalink: /kb/061/Q61588/
 
 ## Q61588: QuickAssembler Error Messages Are Not in Manuals
 
+{% raw %}
+
 	Article: Q61588
 	Product(s): See article
 	Version(s): 2.01 2.51
@@ -34,3 +36,5 @@ permalink: /kb/061/Q61588/
 	error "A2009: Symbol not defined," type A2009 from within the QuickC
 	environment and press the F1 key. A help window will pop up with
 	information concerning the A2009 error.
+
+{% endraw %}

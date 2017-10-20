@@ -6,6 +6,8 @@ permalink: /kb/103/Q103602/
 
 ## Q103602: PRB: Menu Popups Not Appearing in FoxPro for Windows
 
+{% raw %}
+
 	Article: Q103602
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; WINDOWS:2.5x,2.6x,3.0
@@ -50,3 +52,5 @@ permalink: /kb/103/Q103602/
 	
 	=============================================================================
 	
+
+{% endraw %}

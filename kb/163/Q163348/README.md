@@ -6,6 +6,8 @@ permalink: /kb/163/Q163348/
 
 ## Q163348: ACC97: Tables That Appear to Be Checked In in VSS Are Not
 
+{% raw %}
+
 	Article: Q163348
 	Product(s): Microsoft SourceSafe
 	Version(s): 97
@@ -104,3 +106,5 @@ permalink: /kb/163/Q163348/
 	
 	=============================================================================
 	
+
+{% endraw %}

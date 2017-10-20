@@ -6,6 +6,8 @@ permalink: /kb/040/Q40192/
 
 ## Q40192: Error A2105 with PUSHA and POPA Instructions
 
+{% raw %}
+
 	Article: Q40192
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -47,3 +49,5 @@ permalink: /kb/040/Q40192/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190557/
 
 ## Q190557: XFOR: Attachments with &#36; in the File Name May Be Renamed
 
+{% raw %}
+
 	Article: Q190557
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:3.2;5.5
@@ -83,3 +85,5 @@ permalink: /kb/190/Q190557/
 	
 	=============================================================================
 	
+
+{% endraw %}

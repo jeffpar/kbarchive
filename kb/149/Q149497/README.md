@@ -6,6 +6,8 @@ permalink: /kb/149/Q149497/
 
 ## Q149497: SMS Does Not Correctly Identify New Pentium Processor Speeds
 
+{% raw %}
+
 	Article: Q149497
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -51,3 +53,5 @@ permalink: /kb/149/Q149497/
 	
 	=============================================================================
 	
+
+{% endraw %}

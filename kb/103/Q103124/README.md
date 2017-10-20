@@ -6,6 +6,8 @@ permalink: /kb/103/Q103124/
 
 ## Q103124: Bookshelf 1993: Find Does Not Show Location of Keyword
 
+{% raw %}
+
 	Article: Q103124
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 edition
@@ -57,3 +59,5 @@ permalink: /kb/103/Q103124/
 	
 	=============================================================================
 	
+
+{% endraw %}

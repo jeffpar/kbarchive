@@ -6,6 +6,8 @@ permalink: /kb/186/Q186113/
 
 ## Q186113: Internet Explorer Input Method Editor 4.0 for Japanese/Korean
 
+{% raw %}
+
 	Article: Q186113
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.0,3.x,4.0,4.x,5,5.01,5.5,95
@@ -64,3 +66,5 @@ permalink: /kb/186/Q186113/
 	
 	=============================================================================
 	
+
+{% endraw %}

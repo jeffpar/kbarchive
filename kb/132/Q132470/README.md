@@ -6,6 +6,8 @@ permalink: /kb/132/Q132470/
 
 ## Q132470: STOP Msg: 0x0000000A or 0x0000001E When Using PING
 
+{% raw %}
+
 	Article: Q132470
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/132/Q132470/
 	
 	=============================================================================
 	
+
+{% endraw %}

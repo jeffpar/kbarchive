@@ -6,6 +6,8 @@ permalink: /kb/192/Q192211/
 
 ## Q192211: PRB: Controls Not Getting Focus After Clicking IE Address Area
 
+{% raw %}
+
 	Article: Q192211
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -98,3 +100,5 @@ permalink: /kb/192/Q192211/
 	
 	=============================================================================
 	
+
+{% endraw %}

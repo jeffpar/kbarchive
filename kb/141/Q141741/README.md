@@ -6,6 +6,8 @@ permalink: /kb/141/Q141741/
 
 ## Q141741: Macintosh Dinosaurs 1.0: Files Installed During Installation
 
+{% raw %}
+
 	Article: Q141741
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -62,3 +64,5 @@ permalink: /kb/141/Q141741/
 	
 	=============================================================================
 	
+
+{% endraw %}

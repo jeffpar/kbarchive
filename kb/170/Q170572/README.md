@@ -6,6 +6,8 @@ permalink: /kb/170/Q170572/
 
 ## Q170572: Unable to Format a 1.44-MB Disk on an LS-120 After SP3
 
+{% raw %}
+
 	Article: Q170572
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/170/Q170572/
 	
 	=============================================================================
 	
+
+{% endraw %}

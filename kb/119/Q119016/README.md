@@ -6,6 +6,8 @@ permalink: /kb/119/Q119016/
 
 ## Q119016: PC DirSync: IMPORT.EXE Command-Line Options Used and Ignored
 
+{% raw %}
+
 	Article: Q119016
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -51,3 +53,5 @@ permalink: /kb/119/Q119016/
 	
 	=============================================================================
 	
+
+{% endraw %}

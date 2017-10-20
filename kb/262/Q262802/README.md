@@ -6,6 +6,8 @@ permalink: /kb/262/Q262802/
 
 ## Q262802: XADM: Server Monitor Clock Synchronize Sets Incorrect Time
 
+{% raw %}
+
 	Article: Q262802
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -85,3 +87,5 @@ permalink: /kb/262/Q262802/
 	
 	=============================================================================
 	
+
+{% endraw %}

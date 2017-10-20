@@ -6,6 +6,8 @@ permalink: /kb/171/Q171351/
 
 ## Q171351: Loopback Send/Receive Over IPX/SPX May Not Work Under Stress
 
+{% raw %}
+
 	Article: Q171351
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -99,3 +101,5 @@ permalink: /kb/171/Q171351/
 	
 	=============================================================================
 	
+
+{% endraw %}

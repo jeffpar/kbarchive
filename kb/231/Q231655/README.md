@@ -6,6 +6,8 @@ permalink: /kb/231/Q231655/
 
 ## Q231655: FIX: VC++ Crashes Opening Files or Adding Files to Projects
 
+{% raw %}
+
 	Article: Q231655
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/231/Q231655/
 	
 	=============================================================================
 	
+
+{% endraw %}

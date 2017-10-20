@@ -6,6 +6,8 @@ permalink: /kb/079/Q79245/
 
 ## Q79245: DOSKEY Macros Must Be Executed from the Command Prompt
 
+{% raw %}
+
 	Article: Q79245
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -61,3 +63,5 @@ permalink: /kb/079/Q79245/
 	
 	=============================================================================
 	
+
+{% endraw %}

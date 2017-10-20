@@ -6,6 +6,8 @@ permalink: /kb/177/Q177977/
 
 ## Q177977: FS95 Err Msg: Invalid Page Fault in Module Msvcrt.dll
 
+{% raw %}
+
 	Article: Q177977
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -115,3 +117,5 @@ permalink: /kb/177/Q177977/
 	
 	=============================================================================
 	
+
+{% endraw %}

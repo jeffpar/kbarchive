@@ -6,6 +6,8 @@ permalink: /kb/165/Q165831/
 
 ## Q165831: PRB: Anonymous User in NT Admin Group Breaks Source Control
 
+{% raw %}
+
 	Article: Q165831
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/165/Q165831/
 	
 	=============================================================================
 	
+
+{% endraw %}

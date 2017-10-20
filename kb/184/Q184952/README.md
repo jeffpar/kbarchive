@@ -6,6 +6,8 @@ permalink: /kb/184/Q184952/
 
 ## Q184952: Errors When Installing Lexmark Optra Drivers in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q184952
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -77,3 +79,5 @@ permalink: /kb/184/Q184952/
 	
 	=============================================================================
 	
+
+{% endraw %}

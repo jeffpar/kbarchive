@@ -6,6 +6,8 @@ permalink: /kb/159/Q159687/
 
 ## Q159687: WD97: How to Convert WordPerfect 6.x Data Files and Address Book
 
+{% raw %}
+
 	Article: Q159687
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -112,3 +114,5 @@ permalink: /kb/159/Q159687/
 	
 	=============================================================================
 	
+
+{% endraw %}

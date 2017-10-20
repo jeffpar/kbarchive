@@ -6,6 +6,8 @@ permalink: /kb/128/Q128603/
 
 ## Q128603: FIX: Visual Workbench Generates Dependencies for ODL Files
 
+{% raw %}
+
 	Article: Q128603
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -81,3 +83,5 @@ permalink: /kb/128/Q128603/
 	
 	=============================================================================
 	
+
+{% endraw %}

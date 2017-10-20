@@ -6,6 +6,8 @@ permalink: /kb/076/Q76922/
 
 ## Q76922: ROM and RAM Error Codes Explained
 
+{% raw %}
+
 	Article: Q76922
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -115,3 +117,5 @@ permalink: /kb/076/Q76922/
 	
 	=============================================================================
 	
+
+{% endraw %}

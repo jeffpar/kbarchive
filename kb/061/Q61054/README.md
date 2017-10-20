@@ -6,6 +6,8 @@ permalink: /kb/061/Q61054/
 
 ## Q61054: Erroneous 8086 Opcode for Logical AND Instruction
 
+{% raw %}
+
 	Article: Q61054
 	Product(s): See article
 	Version(s): m5.10 5.10a | 5.10 5.10a
@@ -43,3 +45,5 @@ permalink: /kb/061/Q61054/
 	Microsoft has confirmed this to be a problem in MASM Version 5.10. We
 	are researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

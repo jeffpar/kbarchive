@@ -6,6 +6,8 @@ permalink: /kb/082/Q82232/
 
 ## Q82232: CopyMetaFile() Creates Incorrectly Sized Destination
 
+{% raw %}
+
 	Article: Q82232
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -62,3 +64,5 @@ permalink: /kb/082/Q82232/
 	
 	=============================================================================
 	
+
+{% endraw %}

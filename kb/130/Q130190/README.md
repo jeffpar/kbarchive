@@ -6,6 +6,8 @@ permalink: /kb/130/Q130190/
 
 ## Q130190: SNADS: Postoffice to DGN Mapping
 
+{% raw %}
+
 	Article: Q130190
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.0,3.0
@@ -85,3 +87,5 @@ permalink: /kb/130/Q130190/
 	
 	=============================================================================
 	
+
+{% endraw %}

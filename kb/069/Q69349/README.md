@@ -6,6 +6,8 @@ permalink: /kb/069/Q69349/
 
 ## Q69349: File Component Constants Increased Beginning with C 6.00
 
+{% raw %}
+
 	Article: Q69349
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -126,3 +128,5 @@ permalink: /kb/069/Q69349/
 	   printf( "Extension is : %s\n", ext);
 	   printf( "New path is  : %s\n", newpath);
 	}
+
+{% endraw %}

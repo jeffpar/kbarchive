@@ -6,6 +6,8 @@ permalink: /kb/196/Q196180/
 
 ## Q196180: XADM: Move Server Wizard Fails when System Folders are Present
 
+{% raw %}
+
 	Article: Q196180
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1
@@ -52,3 +54,5 @@ permalink: /kb/196/Q196180/
 	
 	=============================================================================
 	
+
+{% endraw %}

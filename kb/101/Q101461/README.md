@@ -6,6 +6,8 @@ permalink: /kb/101/Q101461/
 
 ## Q101461: SMTP: Microsoft Mail SMTPGATE.EXE Version 3.0.9 Update
 
+{% raw %}
+
 	Article: Q101461
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -308,3 +310,5 @@ permalink: /kb/101/Q101461/
 	
 	=============================================================================
 	
+
+{% endraw %}

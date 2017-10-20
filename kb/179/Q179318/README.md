@@ -6,6 +6,8 @@ permalink: /kb/179/Q179318/
 
 ## Q179318: ACC97: How to Simulate Office Features in an ODE Application
 
+{% raw %}
+
 	Article: Q179318
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -267,3 +269,5 @@ permalink: /kb/179/Q179318/
 	
 	=============================================================================
 	
+
+{% endraw %}

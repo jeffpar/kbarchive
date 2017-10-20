@@ -6,6 +6,8 @@ permalink: /kb/119/Q119502/
 
 ## Q119502: PRB: PView Sample Does Not Behave Correctly
 
+{% raw %}
+
 	Article: Q119502
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00
@@ -60,3 +62,5 @@ permalink: /kb/119/Q119502/
 	
 	=============================================================================
 	
+
+{% endraw %}

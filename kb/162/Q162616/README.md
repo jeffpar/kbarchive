@@ -6,6 +6,8 @@ permalink: /kb/162/Q162616/
 
 ## Q162616: Extra Form Feed with Passthrough Functions to Text Only Driver
 
+{% raw %}
+
 	Article: Q162616
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -60,3 +62,5 @@ permalink: /kb/162/Q162616/
 	
 	=============================================================================
 	
+
+{% endraw %}

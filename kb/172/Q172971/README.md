@@ -6,6 +6,8 @@ permalink: /kb/172/Q172971/
 
 ## Q172971: XCLN: Changing the Binding Order Of the Macintosh Client
 
+{% raw %}
+
 	Article: Q172971
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -56,3 +58,5 @@ permalink: /kb/172/Q172971/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75753/
 
 ## Q75753: Winconnect and Windows 3.0
 
+{% raw %}
+
 	Article: Q75753
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -109,3 +111,5 @@ permalink: /kb/075/Q75753/
 	
 	=============================================================================
 	
+
+{% endraw %}

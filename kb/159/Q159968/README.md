@@ -6,6 +6,8 @@ permalink: /kb/159/Q159968/
 
 ## Q159968: WD97: Macro to Turn All Field Codes On and Off
 
+{% raw %}
+
 	Article: Q159968
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -139,3 +141,5 @@ permalink: /kb/159/Q159968/
 	
 	=============================================================================
 	
+
+{% endraw %}

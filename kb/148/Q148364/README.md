@@ -6,6 +6,8 @@ permalink: /kb/148/Q148364/
 
 ## Q148364: PC DirSync: Rebuild Terminating Without Status Message
 
+{% raw %}
+
 	Article: Q148364
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -90,3 +92,5 @@ permalink: /kb/148/Q148364/
 	
 	=============================================================================
 	
+
+{% endraw %}

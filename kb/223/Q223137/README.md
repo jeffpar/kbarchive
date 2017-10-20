@@ -6,6 +6,8 @@ permalink: /kb/223/Q223137/
 
 ## Q223137: IIS 4.0 Log Field May Contain Invalid Constant Time Field
 
+{% raw %}
+
 	Article: Q223137
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/223/Q223137/
 	
 	=============================================================================
 	
+
+{% endraw %}

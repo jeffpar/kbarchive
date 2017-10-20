@@ -6,6 +6,8 @@ permalink: /kb/115/Q115426/
 
 ## Q115426: Indexing on a Character and Numeric Field Together
 
+{% raw %}
+
 	Article: Q115426
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -88,3 +90,5 @@ permalink: /kb/115/Q115426/
 	
 	=============================================================================
 	
+
+{% endraw %}

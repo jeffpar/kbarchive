@@ -6,6 +6,8 @@ permalink: /kb/145/Q145953/
 
 ## Q145953: Unable to Install TCP/IP Protocol and Component After Setup
 
+{% raw %}
+
 	Article: Q145953
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -69,3 +71,5 @@ permalink: /kb/145/Q145953/
 	
 	=============================================================================
 	
+
+{% endraw %}

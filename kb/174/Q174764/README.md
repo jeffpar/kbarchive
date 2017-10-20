@@ -6,6 +6,8 @@ permalink: /kb/174/Q174764/
 
 ## Q174764: Memory Leak in Ntfs.sys
 
+{% raw %}
+
 	Article: Q174764
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/174/Q174764/
 	
 	=============================================================================
 	
+
+{% endraw %}

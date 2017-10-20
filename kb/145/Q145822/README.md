@@ -6,6 +6,8 @@ permalink: /kb/145/Q145822/
 
 ## Q145822: DOC: Creating Import Libraries for PowerPC Shared Libraries
 
+{% raw %}
+
 	Article: Q145822
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:4.0
@@ -67,3 +69,5 @@ permalink: /kb/145/Q145822/
 	
 	=============================================================================
 	
+
+{% endraw %}

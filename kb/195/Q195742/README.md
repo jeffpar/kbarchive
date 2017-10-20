@@ -6,6 +6,8 @@ permalink: /kb/195/Q195742/
 
 ## Q195742: XCON: Conversion Error When Receiving General-Text Message
 
+{% raw %}
+
 	Article: Q195742
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -86,3 +88,5 @@ permalink: /kb/195/Q195742/
 	
 	=============================================================================
 	
+
+{% endraw %}

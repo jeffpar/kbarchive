@@ -6,6 +6,8 @@ permalink: /kb/166/Q166017/
 
 ## Q166017: WD97: Color Borders Print Solid Black Instead of Gray
 
+{% raw %}
+
 	Article: Q166017
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/166/Q166017/
 	
 	=============================================================================
 	
+
+{% endraw %}

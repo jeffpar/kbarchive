@@ -6,6 +6,8 @@ permalink: /kb/171/Q171805/
 
 ## Q171805: FIX: Problems Binding Controls to Nonexistent Data Control
 
+{% raw %}
+
 	Article: Q171805
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97
@@ -74,3 +76,5 @@ permalink: /kb/171/Q171805/
 	
 	=============================================================================
 	
+
+{% endraw %}

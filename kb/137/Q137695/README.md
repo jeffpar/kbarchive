@@ -6,6 +6,8 @@ permalink: /kb/137/Q137695/
 
 ## Q137695: Proteon 1390 Fails to Initialize During Installation
 
+{% raw %}
+
 	Article: Q137695
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/137/Q137695/
 	
 	=============================================================================
 	
+
+{% endraw %}

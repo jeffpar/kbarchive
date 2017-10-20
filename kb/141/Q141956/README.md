@@ -6,6 +6,8 @@ permalink: /kb/141/Q141956/
 
 ## Q141956: BUG: 'Z' Function on @ GET Doesn't Suppress Display of Zero
 
+{% raw %}
+
 	Article: Q141956
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,6.0
@@ -68,3 +70,5 @@ permalink: /kb/141/Q141956/
 	
 	=============================================================================
 	
+
+{% endraw %}

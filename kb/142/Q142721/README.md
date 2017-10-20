@@ -6,6 +6,8 @@ permalink: /kb/142/Q142721/
 
 ## Q142721: Cannot Run Microsoft Access Using MSNDS
 
+{% raw %}
+
 	Article: Q142721
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/142/Q142721/
 	
 	=============================================================================
 	
+
+{% endraw %}

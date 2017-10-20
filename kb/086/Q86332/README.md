@@ -6,6 +6,8 @@ permalink: /kb/086/Q86332/
 
 ## Q86332: PRB: Bitmap Causes Windows Help Compiler Out-of-Memory Error
 
+{% raw %}
+
 	Article: Q86332
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -50,3 +52,5 @@ permalink: /kb/086/Q86332/
 	
 	=============================================================================
 	
+
+{% endraw %}

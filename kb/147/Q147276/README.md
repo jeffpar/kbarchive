@@ -6,6 +6,8 @@ permalink: /kb/147/Q147276/
 
 ## Q147276: MSB: How to Run Programs Via Multiple CD Changer
 
+{% raw %}
+
 	Article: Q147276
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -217,3 +219,5 @@ permalink: /kb/147/Q147276/
 	
 	=============================================================================
 	
+
+{% endraw %}

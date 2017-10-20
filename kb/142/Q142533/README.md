@@ -6,6 +6,8 @@ permalink: /kb/142/Q142533/
 
 ## Q142533: 0x640 SAP Packets Increase Using Remote Registry Service
 
+{% raw %}
+
 	Article: Q142533
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -71,3 +73,5 @@ permalink: /kb/142/Q142533/
 	
 	=============================================================================
 	
+
+{% endraw %}

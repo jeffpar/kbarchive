@@ -6,6 +6,8 @@ permalink: /kb/242/Q242200/
 
 ## Q242200: TPU: Setup Continues Even with Insufficient Disk Space
 
+{% raw %}
+
 	Article: Q242200
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5; :
@@ -80,3 +82,5 @@ permalink: /kb/242/Q242200/
 	
 	=============================================================================
 	
+
+{% endraw %}

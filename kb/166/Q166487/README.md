@@ -6,6 +6,8 @@ permalink: /kb/166/Q166487/
 
 ## Q166487: XCLN: Err Msg: Internet Idioms Could Not Locate the Controls
 
+{% raw %}
+
 	Article: Q166487
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0; Win95:5.0
@@ -106,3 +108,5 @@ permalink: /kb/166/Q166487/
 	
 	=============================================================================
 	
+
+{% endraw %}

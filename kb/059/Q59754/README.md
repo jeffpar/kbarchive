@@ -6,6 +6,8 @@ permalink: /kb/059/Q59754/
 
 ## Q59754: FIX: A2006: Phase Error May Be Caused By Incorrect NOP
 
+{% raw %}
+
 	Article: Q59754
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -95,3 +97,5 @@ permalink: /kb/059/Q59754/
 	
 	=============================================================================
 	
+
+{% endraw %}

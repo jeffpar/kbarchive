@@ -6,6 +6,8 @@ permalink: /kb/315/Q315715/
 
 ## Q315715: SMS: Cannot Reinstall Inventory Components on Windows XP
 
+{% raw %}
+
 	Article: Q315715
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -70,3 +72,5 @@ permalink: /kb/315/Q315715/
 	
 	=============================================================================
 	
+
+{% endraw %}

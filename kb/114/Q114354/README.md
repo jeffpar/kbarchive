@@ -6,6 +6,8 @@ permalink: /kb/114/Q114354/
 
 ## Q114354: How to Find the Number of Weekdays Between Two Dates
 
+{% raw %}
+
 	Article: Q114354
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -66,3 +68,5 @@ permalink: /kb/114/Q114354/
 	
 	=============================================================================
 	
+
+{% endraw %}

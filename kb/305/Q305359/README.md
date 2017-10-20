@@ -6,6 +6,8 @@ permalink: /kb/305/Q305359/
 
 ## Q305359: Incorrect Content Length May Cause Web Services to Fail
 
+{% raw %}
+
 	Article: Q305359
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -149,3 +151,5 @@ permalink: /kb/305/Q305359/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221662/
 
 ## Q221662: FIX: Error Calling FPOLE With Single Quote (') in Caption
 
+{% raw %}
+
 	Article: Q221662
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/221/Q221662/
 	
 	=============================================================================
 	
+
+{% endraw %}

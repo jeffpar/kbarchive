@@ -6,6 +6,8 @@ permalink: /kb/113/Q113278/
 
 ## Q113278: How to Replace a String in a Text File
 
+{% raw %}
+
 	Article: Q113278
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.50 2.50a 2.50b 2.60 | 2.5
@@ -78,3 +80,5 @@ permalink: /kb/113/Q113278/
 	
 	=============================================================================
 	
+
+{% endraw %}

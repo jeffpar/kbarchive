@@ -6,6 +6,8 @@ permalink: /kb/174/Q174304/
 
 ## Q174304: WD97: ODMA Save As Command Does Not Close the Previous Document
 
+{% raw %}
+
 	Article: Q174304
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -132,3 +134,5 @@ permalink: /kb/174/Q174304/
 	
 	=============================================================================
 	
+
+{% endraw %}

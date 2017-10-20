@@ -6,6 +6,8 @@ permalink: /kb/127/Q127833/
 
 ## Q127833: Cannot Remotely Administer Services for Macintosh
 
+{% raw %}
+
 	Article: Q127833
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -44,3 +46,5 @@ permalink: /kb/127/Q127833/
 	
 	=============================================================================
 	
+
+{% endraw %}

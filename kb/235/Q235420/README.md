@@ -6,6 +6,8 @@ permalink: /kb/235/Q235420/
 
 ## Q235420: FILE: VBRun60sp4.exe Installs Visual Basic 6 SP4 Run-Time Files
 
+{% raw %}
+
 	Article: Q235420
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -214,3 +216,5 @@ permalink: /kb/235/Q235420/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178407/
 
 ## Q178407: WD97: Punctuation May Cause Word to Constantly Check Same Word
 
+{% raw %}
+
 	Article: Q178407
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/178/Q178407/
 	
 	=============================================================================
 	
+
+{% endraw %}

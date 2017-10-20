@@ -6,6 +6,8 @@ permalink: /kb/247/Q247687/
 
 ## Q247687: Incorrect Partition Size Reported After Creating Volume Set
 
+{% raw %}
+
 	Article: Q247687
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/247/Q247687/
 	
 	=============================================================================
 	
+
+{% endraw %}

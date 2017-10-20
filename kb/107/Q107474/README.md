@@ -6,6 +6,8 @@ permalink: /kb/107/Q107474/
 
 ## Q107474: Setting Up a Shared Copy of WFWG on LAN Manager-Based Servers
 
+{% raw %}
+
 	Article: Q107474
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -124,3 +126,5 @@ permalink: /kb/107/Q107474/
 	
 	=============================================================================
 	
+
+{% endraw %}

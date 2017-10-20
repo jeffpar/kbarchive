@@ -6,6 +6,8 @@ permalink: /kb/044/Q44409/
 
 ## Q44409: Passing Dynamic Array of User-Defined TYPE from QB to MASM 5.x
 
+{% raw %}
+
 	Article: Q44409
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -155,3 +157,5 @@ permalink: /kb/044/Q44409/
 	     ret
 	Masm ENDP
 	     END
+
+{% endraw %}

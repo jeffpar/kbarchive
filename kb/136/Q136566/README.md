@@ -6,6 +6,8 @@ permalink: /kb/136/Q136566/
 
 ## Q136566: How to Use the DECLARE-DLL Command to Call Win32 SDK Functions
 
+{% raw %}
+
 	Article: Q136566
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/136/Q136566/
 	
 	=============================================================================
 	
+
+{% endraw %}

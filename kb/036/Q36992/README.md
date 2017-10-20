@@ -6,6 +6,8 @@ permalink: /kb/036/Q36992/
 
 ## Q36992: Warning C4067 Unexpected Characters Following 'directive'
 
+{% raw %}
+
 	Article: Q36992
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -42,3 +44,5 @@ permalink: /kb/036/Q36992/
 	As with Versions 4.00, 5.00, and 5.10 of the C optimizing compiler,
 	QuickC Versions 1.00 and 1.01 do not accept the extra characters
 	unless surrounded by comment delimeters.
+
+{% endraw %}

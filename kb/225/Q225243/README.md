@@ -6,6 +6,8 @@ permalink: /kb/225/Q225243/
 
 ## Q225243: Err Msg: A Device That Is Required to Play This Type of Media...
 
+{% raw %}
+
 	Article: Q225243
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :; Win2000:95
@@ -112,3 +114,5 @@ permalink: /kb/225/Q225243/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132971/
 
 ## Q132971: INFO: Merging SourceSafe Files
 
+{% raw %}
+
 	Article: Q132971
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/132/Q132971/
 	
 	=============================================================================
 	
+
+{% endraw %}

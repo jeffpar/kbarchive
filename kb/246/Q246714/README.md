@@ -6,6 +6,8 @@ permalink: /kb/246/Q246714/
 
 ## Q246714: Errors When AS/400 Network Attribute DDMACC Is Set to &#42;REJECT
 
+{% raw %}
+
 	Article: Q246714
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3
@@ -83,3 +85,5 @@ permalink: /kb/246/Q246714/
 	
 	=============================================================================
 	
+
+{% endraw %}

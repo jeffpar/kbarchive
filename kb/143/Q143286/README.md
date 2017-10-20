@@ -6,6 +6,8 @@ permalink: /kb/143/Q143286/
 
 ## Q143286: Nwgendbc.exe with Updated GENDBC
 
+{% raw %}
+
 	Article: Q143286
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -69,3 +71,5 @@ permalink: /kb/143/Q143286/
 	
 	=============================================================================
 	
+
+{% endraw %}

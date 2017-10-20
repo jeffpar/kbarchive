@@ -6,6 +6,8 @@ permalink: /kb/121/Q121015/
 
 ## Q121015: FIX: Incorrect Template Declaration Causes Compiler Hang
 
+{% raw %}
+
 	Article: Q121015
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -92,3 +94,5 @@ permalink: /kb/121/Q121015/
 	
 	=============================================================================
 	
+
+{% endraw %}

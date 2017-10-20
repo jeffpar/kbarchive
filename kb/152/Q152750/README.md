@@ -6,6 +6,8 @@ permalink: /kb/152/Q152750/
 
 ## Q152750: LPRHELP Does not Pass &quot;L&quot; Command When Banners Are Off
 
+{% raw %}
+
 	Article: Q152750
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -71,3 +73,5 @@ permalink: /kb/152/Q152750/
 	
 	=============================================================================
 	
+
+{% endraw %}

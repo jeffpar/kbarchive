@@ -6,6 +6,8 @@ permalink: /kb/157/Q157667/
 
 ## Q157667: WD97: Float Over Text Objects Cut Off in Online Layout View
 
+{% raw %}
+
 	Article: Q157667
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -106,3 +108,5 @@ permalink: /kb/157/Q157667/
 	
 	=============================================================================
 	
+
+{% endraw %}

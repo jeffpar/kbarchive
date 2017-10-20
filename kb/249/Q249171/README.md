@@ -6,6 +6,8 @@ permalink: /kb/249/Q249171/
 
 ## Q249171: INFO: Clarification of SET CENTURY Help Topic in VFP 6.0 Help
 
+{% raw %}
+
 	Article: Q249171
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -175,3 +177,5 @@ permalink: /kb/249/Q249171/
 	
 	=============================================================================
 	
+
+{% endraw %}

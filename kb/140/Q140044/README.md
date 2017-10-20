@@ -6,6 +6,8 @@ permalink: /kb/140/Q140044/
 
 ## Q140044: Visual Basic Menus Disappear Using Shell Technology Preview
 
+{% raw %}
+
 	Article: Q140044
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -74,3 +76,5 @@ permalink: /kb/140/Q140044/
 	
 	=============================================================================
 	
+
+{% endraw %}

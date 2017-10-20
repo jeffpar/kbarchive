@@ -6,6 +6,8 @@ permalink: /kb/260/Q260213/
 
 ## Q260213: SMS: Bindery Logon Server Manager Causes Logon Problems
 
+{% raw %}
+
 	Article: Q260213
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -68,3 +70,5 @@ permalink: /kb/260/Q260213/
 	
 	=============================================================================
 	
+
+{% endraw %}

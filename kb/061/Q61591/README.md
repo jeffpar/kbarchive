@@ -6,6 +6,8 @@ permalink: /kb/061/Q61591/
 
 ## Q61591: Intermittent Installation on the Packard-Bell PS/2 Port
 
+{% raw %}
+
 	Article: Q61591
 	Product(s): See article
 	Version(s): 1.00
@@ -22,3 +24,5 @@ permalink: /kb/061/Q61591/
 	
 	If you are experiencing this problem, contact Packard-Bell at
 	(818) 773-4400.
+
+{% endraw %}

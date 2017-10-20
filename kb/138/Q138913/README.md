@@ -6,6 +6,8 @@ permalink: /kb/138/Q138913/
 
 ## Q138913: How to Activate and Use the Record Marker of a Grid
 
+{% raw %}
+
 	Article: Q138913
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/138/Q138913/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173988/
 
 ## Q173988: WD97: Pressing F10 in Document in Binder Doesn't Access Menu Bar
 
+{% raw %}
+
 	Article: Q173988
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/173/Q173988/
 	
 	=============================================================================
 	
+
+{% endraw %}

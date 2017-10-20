@@ -6,6 +6,8 @@ permalink: /kb/125/Q125438/
 
 ## Q125438: Network Icon in Control Panel Does Not Work
 
+{% raw %}
+
 	Article: Q125438
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -79,3 +81,5 @@ permalink: /kb/125/Q125438/
 	
 	=============================================================================
 	
+
+{% endraw %}

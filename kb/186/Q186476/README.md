@@ -6,6 +6,8 @@ permalink: /kb/186/Q186476/
 
 ## Q186476: Changing Icon Names Changes the Name for All Users
 
+{% raw %}
+
 	Article: Q186476
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -37,3 +39,5 @@ permalink: /kb/186/Q186476/
 	
 	=============================================================================
 	
+
+{% endraw %}

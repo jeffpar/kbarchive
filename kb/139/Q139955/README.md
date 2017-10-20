@@ -6,6 +6,8 @@ permalink: /kb/139/Q139955/
 
 ## Q139955: Err Msg: This Is an Invalid CD Key Value. Check the...
 
+{% raw %}
+
 	Article: Q139955
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -110,3 +112,5 @@ permalink: /kb/139/Q139955/
 	
 	=============================================================================
 	
+
+{% endraw %}

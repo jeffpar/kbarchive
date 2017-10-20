@@ -6,6 +6,8 @@ permalink: /kb/184/Q184192/
 
 ## Q184192: How to Change Your Visibility Settings in Friends Online
 
+{% raw %}
+
 	Article: Q184192
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -91,3 +93,5 @@ permalink: /kb/184/Q184192/
 	
 	=============================================================================
 	
+
+{% endraw %}

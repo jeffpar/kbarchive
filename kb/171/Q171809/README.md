@@ -6,6 +6,8 @@ permalink: /kb/171/Q171809/
 
 ## Q171809: FIX: Memory Leak When Setting the ForeColor of a VB5 Object
 
+{% raw %}
+
 	Article: Q171809
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -68,3 +70,5 @@ permalink: /kb/171/Q171809/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85531/
 
 ## Q85531: ANSI Characters from Recorder Will Not Display in Write
 
+{% raw %}
+
 	Article: Q85531
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/085/Q85531/
 	
 	=============================================================================
 	
+
+{% endraw %}

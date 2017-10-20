@@ -6,6 +6,8 @@ permalink: /kb/123/Q123991/
 
 ## Q123991: Windows 95 Cannot Print to Coactive Network Shared Printer
 
+{% raw %}
+
 	Article: Q123991
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/123/Q123991/
 	
 	=============================================================================
 	
+
+{% endraw %}

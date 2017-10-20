@@ -6,6 +6,8 @@ permalink: /kb/091/Q91202/
 
 ## Q91202: Multiple Configuration Menu Is Not Displayed
 
+{% raw %}
+
 	Article: Q91202
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -87,3 +89,5 @@ permalink: /kb/091/Q91202/
 	
 	=============================================================================
 	
+
+{% endraw %}

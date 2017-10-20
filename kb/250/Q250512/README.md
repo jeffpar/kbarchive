@@ -6,6 +6,8 @@ permalink: /kb/250/Q250512/
 
 ## Q250512: OS() Function May Not Return &quot;NT&quot; Under Windows 2000
 
+{% raw %}
+
 	Article: Q250512
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0,6.0 SP3
@@ -124,3 +126,5 @@ permalink: /kb/250/Q250512/
 	
 	=============================================================================
 	
+
+{% endraw %}

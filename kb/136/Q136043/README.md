@@ -6,6 +6,8 @@ permalink: /kb/136/Q136043/
 
 ## Q136043: How to Allow Empty Fields in Visual FoxPro Crosstab Queries
 
+{% raw %}
+
 	Article: Q136043
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -78,3 +80,5 @@ permalink: /kb/136/Q136043/
 	
 	=============================================================================
 	
+
+{% endraw %}

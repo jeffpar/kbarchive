@@ -6,6 +6,8 @@ permalink: /kb/135/Q135329/
 
 ## Q135329: BUG: Pressing PAGE UP or PAGE DOWN Moves to New Code Window
 
+{% raw %}
+
 	Article: Q135329
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -101,3 +103,5 @@ permalink: /kb/135/Q135329/
 	
 	=============================================================================
 	
+
+{% endraw %}

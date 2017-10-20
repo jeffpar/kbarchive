@@ -6,6 +6,8 @@ permalink: /kb/092/Q92715/
 
 ## Q92715: Minimum System Requirements for Workgroup Connections
 
+{% raw %}
+
 	Article: Q92715
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/092/Q92715/
 	
 	=============================================================================
 	
+
+{% endraw %}

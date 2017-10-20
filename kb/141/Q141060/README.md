@@ -6,6 +6,8 @@ permalink: /kb/141/Q141060/
 
 ## Q141060: VB3 Using Visual Basic 3.0 to Play WAVE Files Stored in a DLL
 
+{% raw %}
+
 	Article: Q141060
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0,3.1
@@ -132,3 +134,5 @@ permalink: /kb/141/Q141060/
 	
 	=============================================================================
 	
+
+{% endraw %}

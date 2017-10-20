@@ -6,6 +6,8 @@ permalink: /kb/068/Q68975/
 
 ## Q68975: I/O Device Serialization and Virtualization
 
+{% raw %}
+
 	Article: Q68975
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -277,3 +279,5 @@ permalink: /kb/068/Q68975/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/224/Q224155/
 
 ## Q224155: Err Msg: &quot;Unable to Create RNA Phonebook Entry&quot;
 
+{% raw %}
+
 	Article: Q224155
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -91,3 +93,5 @@ permalink: /kb/224/Q224155/
 	
 	=============================================================================
 	
+
+{% endraw %}

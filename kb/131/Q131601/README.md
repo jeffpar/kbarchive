@@ -6,6 +6,8 @@ permalink: /kb/131/Q131601/
 
 ## Q131601: PRB: AselObj() Doesn't Work for Objects Added in Grid Columns
 
+{% raw %}
+
 	Article: Q131601
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/131/Q131601/
 	
 	=============================================================================
 	
+
+{% endraw %}

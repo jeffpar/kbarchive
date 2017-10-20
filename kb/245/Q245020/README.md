@@ -6,6 +6,8 @@ permalink: /kb/245/Q245020/
 
 ## Q245020: BUG: Bus Error When Copying and Pasting In Browse Window
 
+{% raw %}
+
 	Article: Q245020
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -87,3 +89,5 @@ permalink: /kb/245/Q245020/
 	
 	=============================================================================
 	
+
+{% endraw %}

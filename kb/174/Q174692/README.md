@@ -6,6 +6,8 @@ permalink: /kb/174/Q174692/
 
 ## Q174692: OLE Objects Don't Display Correctly on Macintosh Clients
 
+{% raw %}
+
 	Article: Q174692
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0; WINDOWS:4.0,5.0; winnt:5.5
@@ -68,3 +70,5 @@ permalink: /kb/174/Q174692/
 	
 	=============================================================================
 	
+
+{% endraw %}

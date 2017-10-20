@@ -6,6 +6,8 @@ permalink: /kb/213/Q213334/
 
 ## Q213334: SMS: &quot;All Systems By System Name&quot; Reports Only One NIC
 
+{% raw %}
+
 	Article: Q213334
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/213/Q213334/
 	
 	=============================================================================
 	
+
+{% endraw %}

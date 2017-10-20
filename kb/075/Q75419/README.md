@@ -6,6 +6,8 @@ permalink: /kb/075/Q75419/
 
 ## Q75419: Create a Bootable Floppy Disk Without Running Setup
 
+{% raw %}
+
 	Article: Q75419
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -92,3 +94,5 @@ permalink: /kb/075/Q75419/
 	
 	=============================================================================
 	
+
+{% endraw %}

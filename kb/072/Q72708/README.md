@@ -6,6 +6,8 @@ permalink: /kb/072/Q72708/
 
 ## Q72708: FIX: MASM 6.0 May Generate Incorrect Code for IMUL Instruction
 
+{% raw %}
+
 	Article: Q72708
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0
@@ -83,3 +85,5 @@ permalink: /kb/072/Q72708/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199918/
 
 ## Q199918: IIS 4.0 Upgrade Error on Servers with Windows NT 4.0 SP4
 
+{% raw %}
+
 	Article: Q199918
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/199/Q199918/
 	
 	=============================================================================
 	
+
+{% endraw %}

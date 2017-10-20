@@ -6,6 +6,8 @@ permalink: /kb/159/Q159111/
 
 ## Q159111: Multiprocessor Computer Hangs Under Stress Using Halsp.dll
 
+{% raw %}
+
 	Article: Q159111
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/159/Q159111/
 	
 	=============================================================================
 	
+
+{% endraw %}

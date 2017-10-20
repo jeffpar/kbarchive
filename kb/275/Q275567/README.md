@@ -6,6 +6,8 @@ permalink: /kb/275/Q275567/
 
 ## Q275567: MS00-091: Multiple NetBT Sessions May Hang Local Host
 
+{% raw %}
+
 	Article: Q275567
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0a,4.5
@@ -124,3 +126,5 @@ permalink: /kb/275/Q275567/
 	
 	=============================================================================
 	
+
+{% endraw %}

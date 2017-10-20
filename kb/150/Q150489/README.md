@@ -6,6 +6,8 @@ permalink: /kb/150/Q150489/
 
 ## Q150489: How to Enable the Windows 95 Welcome Dialog Box
 
+{% raw %}
+
 	Article: Q150489
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -51,3 +53,5 @@ permalink: /kb/150/Q150489/
 	
 	=============================================================================
 	
+
+{% endraw %}

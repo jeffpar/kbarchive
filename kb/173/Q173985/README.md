@@ -6,6 +6,8 @@ permalink: /kb/173/Q173985/
 
 ## Q173985: Flight Simulator 98: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q173985
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/173/Q173985/
 	
 	=============================================================================
 	
+
+{% endraw %}

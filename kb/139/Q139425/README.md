@@ -6,6 +6,8 @@ permalink: /kb/139/Q139425/
 
 ## Q139425: Windows Printing System Prints Incorrect Characters
 
+{% raw %}
+
 	Article: Q139425
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -64,3 +66,5 @@ permalink: /kb/139/Q139425/
 	
 	=============================================================================
 	
+
+{% endraw %}

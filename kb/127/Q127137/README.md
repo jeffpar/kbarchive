@@ -6,6 +6,8 @@ permalink: /kb/127/Q127137/
 
 ## Q127137: Disk Defragmenter Continuously Loops At 50% Completed
 
+{% raw %}
+
 	Article: Q127137
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/127/Q127137/
 	
 	=============================================================================
 	
+
+{% endraw %}

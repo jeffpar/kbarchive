@@ -6,6 +6,8 @@ permalink: /kb/087/Q87856/
 
 ## Q87856: WD97: Troubleshooting Damaged Documents in Word for Windows
 
+{% raw %}
+
 	Article: Q87856
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -328,3 +330,5 @@ permalink: /kb/087/Q87856/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185704/
 
 ## Q185704: How to Restrict Floppy Disk Drive Access Using Floplock Service
 
+{% raw %}
+
 	Article: Q185704
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -134,3 +136,5 @@ permalink: /kb/185/Q185704/
 	
 	=============================================================================
 	
+
+{% endraw %}

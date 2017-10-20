@@ -6,6 +6,8 @@ permalink: /kb/083/Q83033/
 
 ## Q83033: Novell NetWare: Error Message on Printer Reconnections
 
+{% raw %}
+
 	Article: Q83033
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -89,3 +91,5 @@ permalink: /kb/083/Q83033/
 	
 	=============================================================================
 	
+
+{% endraw %}

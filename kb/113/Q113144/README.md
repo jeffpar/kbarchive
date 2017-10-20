@@ -6,6 +6,8 @@ permalink: /kb/113/Q113144/
 
 ## Q113144: PC WSPlus: Schedule+ Schdupd.exe Update Available
 
+{% raw %}
+
 	Article: Q113144
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0a
@@ -111,3 +113,5 @@ permalink: /kb/113/Q113144/
 	
 	=============================================================================
 	
+
+{% endraw %}

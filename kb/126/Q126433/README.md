@@ -6,6 +6,8 @@ permalink: /kb/126/Q126433/
 
 ## Q126433: Haunted House Err Msg: HHOU04E9 GPF in HHOUSE.EXE
 
+{% raw %}
+
 	Article: Q126433
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -80,3 +82,5 @@ permalink: /kb/126/Q126433/
 	
 	=============================================================================
 	
+
+{% endraw %}

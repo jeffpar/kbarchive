@@ -6,6 +6,8 @@ permalink: /kb/200/Q200988/
 
 ## Q200988: XCLN: Netscape No Longer Default Browser After Installing 98 ODK
 
+{% raw %}
+
 	Article: Q200988
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -57,3 +59,5 @@ permalink: /kb/200/Q200988/
 	
 	=============================================================================
 	
+
+{% endraw %}

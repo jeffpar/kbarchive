@@ -6,6 +6,8 @@ permalink: /kb/089/Q89668/
 
 ## Q89668: FoxBASE+ 2.1 Memory Requirements
 
+{% raw %}
+
 	Article: Q89668
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -71,3 +73,5 @@ permalink: /kb/089/Q89668/
 	
 	=============================================================================
 	
+
+{% endraw %}

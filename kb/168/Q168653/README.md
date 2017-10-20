@@ -6,6 +6,8 @@ permalink: /kb/168/Q168653/
 
 ## Q168653: Unable to Connect to NetWare Server Using RConsole
 
+{% raw %}
+
 	Article: Q168653
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/168/Q168653/
 	
 	=============================================================================
 	
+
+{% endraw %}

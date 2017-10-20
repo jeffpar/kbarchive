@@ -6,6 +6,8 @@ permalink: /kb/254/Q254496/
 
 ## Q254496: HOWTO: Change Printer Settings for Kodak Image Edit Control
 
+{% raw %}
+
 	Article: Q254496
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/254/Q254496/
 	
 	=============================================================================
 	
+
+{% endraw %}

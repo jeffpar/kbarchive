@@ -6,6 +6,8 @@ permalink: /kb/231/Q231953/
 
 ## Q231953: How to Restrict Permissions for Telnet Users w/Services for UNIX
 
+{% raw %}
+
 	Article: Q231953
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/231/Q231953/
 	
 	=============================================================================
 	
+
+{% endraw %}

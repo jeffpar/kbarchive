@@ -6,6 +6,8 @@ permalink: /kb/116/Q116334/
 
 ## Q116334: README.TXT: Microsoft MS-DOS 6.22 Upgrade (Part 1 of 3)
 
+{% raw %}
+
 	Article: Q116334
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:
@@ -714,3 +716,5 @@ permalink: /kb/116/Q116334/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/309/Q309647/
 
 ## Q309647: Combat Flight Sim 2: Game Stops Responding or Sound Is Distorted
 
+{% raw %}
+
 	Article: Q309647
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -130,3 +132,5 @@ permalink: /kb/309/Q309647/
 	
 	=============================================================================
 	
+
+{% endraw %}

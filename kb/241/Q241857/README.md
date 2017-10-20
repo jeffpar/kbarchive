@@ -6,6 +6,8 @@ permalink: /kb/241/Q241857/
 
 ## Q241857: BUG: CComBSTR Does Not Allocate Enough Space Sometimes
 
+{% raw %}
+
 	Article: Q241857
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -139,3 +141,5 @@ permalink: /kb/241/Q241857/
 	
 	=============================================================================
 	
+
+{% endraw %}

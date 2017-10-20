@@ -6,6 +6,8 @@ permalink: /kb/153/Q153677/
 
 ## Q153677: PRB: Implementing Stock Error Event in Custom OLE Control
 
+{% raw %}
+
 	Article: Q153677
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -41,7 +43,7 @@ permalink: /kb/153/Q153677/
 	       methods:
 	        // NOTE - ClassWizard will maintain event information here.
 	        //    Use extreme caution when editing this section.
-	        //{ {AFX_ODL_EVENT(CTestCtrl)
+	        //{{AFX_ODL_EVENT(CTestCtrl)
 	
 	        [id(DISPID_ERROREVENT)] void Error(short Number, BSTR*
 	         Description, SCODE Scode, BSTR Source, BSTR HelpFile,
@@ -50,7 +52,7 @@ permalink: /kb/153/Q153677/
 	         .
 	         .
 	
-	        //} }AFX_ODL_EVENT
+	        //}}AFX_ODL_EVENT
 	        };
 	
 	This will generate the following event stub in Visual Basic:
@@ -89,3 +91,5 @@ permalink: /kb/153/Q153677/
 	
 	=============================================================================
 	
+
+{% endraw %}

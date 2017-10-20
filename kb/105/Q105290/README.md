@@ -6,6 +6,8 @@ permalink: /kb/105/Q105290/
 
 ## Q105290: SMTP: Err Msg: Insufficient Memory
 
+{% raw %}
+
 	Article: Q105290
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -76,3 +78,5 @@ permalink: /kb/105/Q105290/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147381/
 
 ## Q147381: How to Use System Policies On a Standalone Computer
 
+{% raw %}
+
 	Article: Q147381
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -114,3 +116,5 @@ permalink: /kb/147/Q147381/
 	
 	=============================================================================
 	
+
+{% endraw %}

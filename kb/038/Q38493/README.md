@@ -6,6 +6,8 @@ permalink: /kb/038/Q38493/
 
 ## Q38493: CodeView Problem Stepping into BASIC GOSUB Compiled /X or /D
 
+{% raw %}
+
 	Article: Q38493
 	Product(s): See article
 	Version(s): 4.50
@@ -50,3 +52,5 @@ permalink: /kb/038/Q38493/
 	   REM * Subroutine *
 	   100 PRINT "Point 2"
 	   200 RETURN
+
+{% endraw %}

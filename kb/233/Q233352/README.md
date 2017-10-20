@@ -6,6 +6,8 @@ permalink: /kb/233/Q233352/
 
 ## Q233352: Mac Encarta 98: AppleScript Is Not Loaded on Mac OS 8.5 or Later
 
+{% raw %}
+
 	Article: Q233352
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -64,3 +66,5 @@ permalink: /kb/233/Q233352/
 	
 	=============================================================================
 	
+
+{% endraw %}

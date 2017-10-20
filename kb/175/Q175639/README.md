@@ -6,6 +6,8 @@ permalink: /kb/175/Q175639/
 
 ## Q175639: Windows 95/98 and Windows NT 4.0 Can Share Virtual Memory
 
+{% raw %}
+
 	Article: Q175639
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/175/Q175639/
 	
 	=============================================================================
 	
+
+{% endraw %}

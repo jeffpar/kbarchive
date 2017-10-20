@@ -6,6 +6,8 @@ permalink: /kb/167/Q167395/
 
 ## Q167395: RIP Routes May Expire Early When Running Windows NT 4.0 RIP
 
+{% raw %}
+
 	Article: Q167395
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -127,3 +129,5 @@ permalink: /kb/167/Q167395/
 	
 	=============================================================================
 	
+
+{% endraw %}

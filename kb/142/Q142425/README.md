@@ -6,6 +6,8 @@ permalink: /kb/142/Q142425/
 
 ## Q142425: MSN Connection Hangs When You Change Service Type
 
+{% raw %}
+
 	Article: Q142425
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0
@@ -55,3 +57,5 @@ permalink: /kb/142/Q142425/
 	
 	=============================================================================
 	
+
+{% endraw %}

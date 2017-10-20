@@ -6,6 +6,8 @@ permalink: /kb/136/Q136279/
 
 ## Q136279: PRB: Program Error While Using Search in Wizard-Generated Form
 
+{% raw %}
+
 	Article: Q136279
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -85,3 +87,5 @@ permalink: /kb/136/Q136279/
 	
 	=============================================================================
 	
+
+{% endraw %}

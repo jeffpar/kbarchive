@@ -6,6 +6,8 @@ permalink: /kb/112/Q112397/
 
 ## Q112397: Windows NT Installation from MSDN CD-ROM
 
+{% raw %}
+
 	Article: Q112397
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 3.1
@@ -88,3 +90,5 @@ permalink: /kb/112/Q112397/
 	
 	=============================================================================
 	
+
+{% endraw %}

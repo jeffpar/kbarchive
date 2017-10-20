@@ -6,6 +6,8 @@ permalink: /kb/167/Q167106/
 
 ## Q167106: BUG: Rich Text Box Control Does Not Word Wrap
 
+{% raw %}
+
 	Article: Q167106
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -91,3 +93,5 @@ permalink: /kb/167/Q167106/
 	
 	=============================================================================
 	
+
+{% endraw %}

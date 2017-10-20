@@ -6,6 +6,8 @@ permalink: /kb/171/Q171968/
 
 ## Q171968: 3270 Applet May Stop Responding if Host Sends a Long Message
 
+{% raw %}
+
 	Article: Q171968
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -63,3 +65,5 @@ permalink: /kb/171/Q171968/
 	
 	=============================================================================
 	
+
+{% endraw %}

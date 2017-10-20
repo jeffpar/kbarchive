@@ -6,6 +6,8 @@ permalink: /kb/139/Q139531/
 
 ## Q139531: Multimedia Fonts Not Reinstalled in Maintenance Mode
 
+{% raw %}
+
 	Article: Q139531
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :1995 edition
@@ -62,3 +64,5 @@ permalink: /kb/139/Q139531/
 	
 	=============================================================================
 	
+
+{% endraw %}

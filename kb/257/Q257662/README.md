@@ -6,6 +6,8 @@ permalink: /kb/257/Q257662/
 
 ## Q257662: FIX: Entering Text w/IME Set to Double Byte Input Option Crashes
 
+{% raw %}
+
 	Article: Q257662
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -53,3 +55,5 @@ permalink: /kb/257/Q257662/
 	
 	=============================================================================
 	
+
+{% endraw %}

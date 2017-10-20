@@ -6,6 +6,8 @@ permalink: /kb/171/Q171074/
 
 ## Q171074: XCLN: How to Create Hyperlinks Containing Spaces
 
+{% raw %}
+
 	Article: Q171074
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -65,3 +67,5 @@ permalink: /kb/171/Q171074/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140960/
 
 ## Q140960: XADM: Read Receipts not Accepted from French Exchange Server
 
+{% raw %}
+
 	Article: Q140960
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/140/Q140960/
 	
 	=============================================================================
 	
+
+{% endraw %}

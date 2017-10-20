@@ -6,6 +6,8 @@ permalink: /kb/138/Q138480/
 
 ## Q138480: BUG: Using the Keyboard in SourceSafe Administrator May Fail
 
+{% raw %}
+
 	Article: Q138480
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/138/Q138480/
 	
 	=============================================================================
 	
+
+{% endraw %}

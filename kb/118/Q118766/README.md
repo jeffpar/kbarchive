@@ -6,6 +6,8 @@ permalink: /kb/118/Q118766/
 
 ## Q118766: Users Who Belong to More Than 95 Groups Cannot Log On
 
+{% raw %}
+
 	Article: Q118766
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5
@@ -114,3 +116,5 @@ permalink: /kb/118/Q118766/
 	
 	=============================================================================
 	
+
+{% endraw %}

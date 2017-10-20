@@ -6,6 +6,8 @@ permalink: /kb/080/Q80920/
 
 ## Q80920: FltSim: EFIS Flight Path for Martha's Vineyard Does Not Show
 
+{% raw %}
+
 	Article: Q80920
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/080/Q80920/
 	
 	=============================================================================
 	
+
+{% endraw %}

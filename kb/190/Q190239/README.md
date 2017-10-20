@@ -6,6 +6,8 @@ permalink: /kb/190/Q190239/
 
 ## Q190239: WD97: How to Edit an MS Graph Object Programmatically
 
+{% raw %}
+
 	Article: Q190239
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -104,3 +106,5 @@ permalink: /kb/190/Q190239/
 	
 	=============================================================================
 	
+
+{% endraw %}

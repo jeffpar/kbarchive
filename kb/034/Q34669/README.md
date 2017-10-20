@@ -6,6 +6,8 @@ permalink: /kb/034/Q34669/
 
 ## Q34669: PRB: L1087: &quot;Unexpected End-of-File on Scratch File&quot;
 
+{% raw %}
+
 	Article: Q34669
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.x,4.x,5.01,5.1x,5.3,5.31.009,5.5,5.6; OS/2:5.1x,5.3,5.31.009
@@ -57,3 +59,5 @@ permalink: /kb/034/Q34669/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107172/
 
 ## Q107172: Determining the Stack Size of an Application
 
+{% raw %}
+
 	Article: Q107172
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -127,3 +129,5 @@ permalink: /kb/107/Q107172/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194200/
 
 ## Q194200: Cannot Change WinNT Passwords from Exchange and Outlook Clients
 
+{% raw %}
+
 	Article: Q194200
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:4.0,5.0,5.5
@@ -79,3 +81,5 @@ permalink: /kb/194/Q194200/
 	
 	=============================================================================
 	
+
+{% endraw %}

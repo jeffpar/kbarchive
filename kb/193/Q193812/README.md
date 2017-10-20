@@ -6,6 +6,8 @@ permalink: /kb/193/Q193812/
 
 ## Q193812: Extended Characters in URL Translated into UTF-8 Characters
 
+{% raw %}
+
 	Article: Q193812
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -54,3 +56,5 @@ permalink: /kb/193/Q193812/
 	
 	=============================================================================
 	
+
+{% endraw %}

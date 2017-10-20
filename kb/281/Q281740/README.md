@@ -6,6 +6,8 @@ permalink: /kb/281/Q281740/
 
 ## Q281740: XCON: Internet Mail Service Settings Are Not Overridden
 
+{% raw %}
+
 	Article: Q281740
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -82,3 +84,5 @@ permalink: /kb/281/Q281740/
 	
 	=============================================================================
 	
+
+{% endraw %}

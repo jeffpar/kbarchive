@@ -6,6 +6,8 @@ permalink: /kb/078/Q78198/
 
 ## Q78198: Move'Em Memory Manager from Qualitas
 
+{% raw %}
+
 	Article: Q78198
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -72,3 +74,5 @@ permalink: /kb/078/Q78198/
 	
 	=============================================================================
 	
+
+{% endraw %}

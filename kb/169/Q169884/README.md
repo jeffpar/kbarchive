@@ -6,6 +6,8 @@ permalink: /kb/169/Q169884/
 
 ## Q169884: FIX: Unattended Setup Is Unable to Invoke External Program
 
+{% raw %}
+
 	Article: Q169884
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/169/Q169884/
 	
 	=============================================================================
 	
+
+{% endraw %}

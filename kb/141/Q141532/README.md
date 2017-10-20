@@ -6,6 +6,8 @@ permalink: /kb/141/Q141532/
 
 ## Q141532: FIX: OnInitMenuPopup Deletes Temporary Objects
 
+{% raw %}
+
 	Article: Q141532
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -119,3 +121,5 @@ permalink: /kb/141/Q141532/
 	
 	=============================================================================
 	
+
+{% endraw %}

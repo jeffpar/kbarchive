@@ -6,6 +6,8 @@ permalink: /kb/177/Q177271/
 
 ## Q177271: WD97: Converted WordBasic On Error Statements May Fail
 
+{% raw %}
+
 	Article: Q177271
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -143,3 +145,5 @@ permalink: /kb/177/Q177271/
 	
 	=============================================================================
 	
+
+{% endraw %}

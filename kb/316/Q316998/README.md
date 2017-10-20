@@ -6,6 +6,8 @@ permalink: /kb/316/Q316998/
 
 ## Q316998: PRB: FTP Banner Displayed on Command Line Cannot Be Removed
 
+{% raw %}
+
 	Article: Q316998
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -63,3 +65,5 @@ permalink: /kb/316/Q316998/
 	
 	=============================================================================
 	
+
+{% endraw %}

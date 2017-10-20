@@ -6,6 +6,8 @@ permalink: /kb/123/Q123447/
 
 ## Q123447: Err Msg: STOP Message in DLC.SYS
 
+{% raw %}
+
 	Article: Q123447
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -103,3 +105,5 @@ permalink: /kb/123/Q123447/
 	
 	=============================================================================
 	
+
+{% endraw %}

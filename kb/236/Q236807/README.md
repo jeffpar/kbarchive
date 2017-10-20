@@ -6,6 +6,8 @@ permalink: /kb/236/Q236807/
 
 ## Q236807: XFOR: AS/400 SND Commands Connector for SNADS Doesn't Handle
 
+{% raw %}
+
 	Article: Q236807
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -70,3 +72,5 @@ permalink: /kb/236/Q236807/
 	
 	=============================================================================
 	
+
+{% endraw %}

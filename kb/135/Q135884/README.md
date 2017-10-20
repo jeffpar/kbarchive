@@ -6,6 +6,8 @@ permalink: /kb/135/Q135884/
 
 ## Q135884: HOWTO: How to Make the CMiniFrameWnd Window Paint Its Background
 
+{% raw %}
+
 	Article: Q135884
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1
@@ -153,3 +155,5 @@ permalink: /kb/135/Q135884/
 	
 	=============================================================================
 	
+
+{% endraw %}

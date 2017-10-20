@@ -6,6 +6,8 @@ permalink: /kb/115/Q115357/
 
 ## Q115357: X400: Gateway Crashes on Receipt of a DEC VAX Delivery Report
 
+{% raw %}
+
 	Article: Q115357
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/115/Q115357/
 	
 	=============================================================================
 	
+
+{% endraw %}

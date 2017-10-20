@@ -6,6 +6,8 @@ permalink: /kb/138/Q138990/
 
 ## Q138990: No Ball on Table in 3D Pinball
 
+{% raw %}
+
 	Article: Q138990
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -72,3 +74,5 @@ permalink: /kb/138/Q138990/
 	
 	=============================================================================
 	
+
+{% endraw %}

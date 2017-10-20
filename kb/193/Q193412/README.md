@@ -6,6 +6,8 @@ permalink: /kb/193/Q193412/
 
 ## Q193412: PDF Files Do Not Index after Adobe Filter Is Installed
 
+{% raw %}
+
 	Article: Q193412
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0
@@ -84,3 +86,5 @@ permalink: /kb/193/Q193412/
 	
 	=============================================================================
 	
+
+{% endraw %}

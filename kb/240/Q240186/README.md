@@ -6,6 +6,8 @@ permalink: /kb/240/Q240186/
 
 ## Q240186: MSB Ocean: &quot;Error 2 Cannot Run&quot; or Black Screen
 
+{% raw %}
+
 	Article: Q240186
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/240/Q240186/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/028/Q28344/
 
 ## Q28344: PRB: PlayMetaFile() Not as Fast as More Complex Technique
 
+{% raw %}
+
 	Article: Q28344
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -60,3 +62,5 @@ permalink: /kb/028/Q28344/
 	
 	=============================================================================
 	
+
+{% endraw %}

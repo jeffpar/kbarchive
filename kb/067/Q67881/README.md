@@ -6,6 +6,8 @@ permalink: /kb/067/Q67881/
 
 ## Q67881: C 6.00 Pragmas Supported by QuickC
 
+{% raw %}
+
 	Article: Q67881
 	Product(s): See article
 	Version(s): 2.50 2.00
@@ -81,3 +83,5 @@ permalink: /kb/067/Q67881/
 	
 	   #pragma title()              Not supported -- ignored, same as
 	                                linesize.
+
+{% endraw %}

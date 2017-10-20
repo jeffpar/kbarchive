@@ -6,6 +6,8 @@ permalink: /kb/148/Q148939/
 
 ## Q148939: DHCP Server Creates Unnecessary Lease
 
+{% raw %}
+
 	Article: Q148939
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -67,3 +69,5 @@ permalink: /kb/148/Q148939/
 	
 	=============================================================================
 	
+
+{% endraw %}

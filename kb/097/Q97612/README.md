@@ -6,6 +6,8 @@ permalink: /kb/097/Q97612/
 
 ## Q97612: NCR Laptop Driver FD82365.SYS Causes &quot;Invalid Disk...&quot; Error
 
+{% raw %}
+
 	Article: Q97612
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/097/Q97612/
 	
 	=============================================================================
 	
+
+{% endraw %}

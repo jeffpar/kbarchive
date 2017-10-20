@@ -6,6 +6,8 @@ permalink: /kb/171/Q171807/
 
 ## Q171807: FIX: Selected Tab Changes After Removing Tab in Tabstrip
 
+{% raw %}
+
 	Article: Q171807
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -100,3 +102,5 @@ permalink: /kb/171/Q171807/
 	
 	=============================================================================
 	
+
+{% endraw %}

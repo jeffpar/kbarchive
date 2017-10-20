@@ -6,6 +6,8 @@ permalink: /kb/171/Q171298/
 
 ## Q171298: SMS: Win95 Clients May Get a GPF Logging on to a NetWare Server
 
+{% raw %}
+
 	Article: Q171298
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP2
@@ -69,3 +71,5 @@ permalink: /kb/171/Q171298/
 	
 	=============================================================================
 	
+
+{% endraw %}

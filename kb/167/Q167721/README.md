@@ -6,6 +6,8 @@ permalink: /kb/167/Q167721/
 
 ## Q167721: WD97: IPF Error Opening File with Recover Text Converter
 
+{% raw %}
+
 	Article: Q167721
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -72,3 +74,5 @@ permalink: /kb/167/Q167721/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165658/
 
 ## Q165658: Possible RPC Error When Performing a &quot;Remove All&quot; from Setup
 
+{% raw %}
+
 	Article: Q165658
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/165/Q165658/
 	
 	=============================================================================
 	
+
+{% endraw %}

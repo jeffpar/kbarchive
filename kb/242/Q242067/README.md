@@ -6,6 +6,8 @@ permalink: /kb/242/Q242067/
 
 ## Q242067: How To: Copy User Profiles from One Domain to Another.
 
+{% raw %}
+
 	Article: Q242067
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/242/Q242067/
 	
 	=============================================================================
 	
+
+{% endraw %}

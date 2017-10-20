@@ -6,6 +6,8 @@ permalink: /kb/200/Q200401/
 
 ## Q200401: SMS: Remote Control Uses TCP Instead of UDP
 
+{% raw %}
+
 	Article: Q200401
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -48,3 +50,5 @@ permalink: /kb/200/Q200401/
 	
 	=============================================================================
 	
+
+{% endraw %}

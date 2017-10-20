@@ -6,6 +6,8 @@ permalink: /kb/068/Q68462/
 
 ## Q68462: ISAM Files Open at Once, &quot;Too Many Files&quot; Error 67, Correction
 
+{% raw %}
+
 	Article: Q68462
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.10
@@ -42,3 +44,5 @@ permalink: /kb/068/Q68462/
 	(This correct ISAM information is taken from page 388 of the
 	"Microsoft BASIC 7.0: Programmer's Guide" for versions 7.00 and 7.10
 	[Chapter 10, "Database Programming with ISAM"].)
+
+{% endraw %}

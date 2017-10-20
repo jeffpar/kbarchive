@@ -6,6 +6,8 @@ permalink: /kb/071/Q71873/
 
 ## Q71873: MS-DOS 5 Upgrade README.TXT: Hardware Compatibility
 
+{% raw %}
+
 	Article: Q71873
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0
@@ -154,3 +156,5 @@ permalink: /kb/071/Q71873/
 	
 	=============================================================================
 	
+
+{% endraw %}

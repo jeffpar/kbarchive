@@ -6,6 +6,8 @@ permalink: /kb/216/Q216905/
 
 ## Q216905: Downlevel Clients Can Cause Excessive Spooler CPU Usage
 
+{% raw %}
+
 	Article: Q216905
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/216/Q216905/
 	
 	=============================================================================
 	
+
+{% endraw %}

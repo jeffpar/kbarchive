@@ -6,6 +6,8 @@ permalink: /kb/149/Q149588/
 
 ## Q149588: How to Change or Move the .pst File for Personal Folders
 
+{% raw %}
+
 	Article: Q149588
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -97,3 +99,5 @@ permalink: /kb/149/Q149588/
 	
 	=============================================================================
 	
+
+{% endraw %}

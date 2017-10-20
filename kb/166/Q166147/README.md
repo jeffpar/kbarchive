@@ -6,6 +6,8 @@ permalink: /kb/166/Q166147/
 
 ## Q166147: XFOR: Error Adding Connection to Microsoft Mail Connector
 
+{% raw %}
+
 	Article: Q166147
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/166/Q166147/
 	
 	=============================================================================
 	
+
+{% endraw %}

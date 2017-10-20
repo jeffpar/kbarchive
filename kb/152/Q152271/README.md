@@ -6,6 +6,8 @@ permalink: /kb/152/Q152271/
 
 ## Q152271: EnumServicesStatus() Results in Services.exe Memory Leak
 
+{% raw %}
+
 	Article: Q152271
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -55,3 +57,5 @@ permalink: /kb/152/Q152271/
 	
 	=============================================================================
 	
+
+{% endraw %}

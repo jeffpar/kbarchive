@@ -6,6 +6,8 @@ permalink: /kb/264/Q264795/
 
 ## Q264795: BUG: _MBCS String Functions of MSVCRT.DLL (version 6.1.8637.0)
 
+{% raw %}
+
 	Article: Q264795
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -157,3 +159,5 @@ permalink: /kb/264/Q264795/
 	
 	=============================================================================
 	
+
+{% endraw %}

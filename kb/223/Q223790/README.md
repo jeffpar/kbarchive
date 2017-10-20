@@ -6,6 +6,8 @@ permalink: /kb/223/Q223790/
 
 ## Q223790: WD97: How to Minimize Metadata in Word Documents
 
+{% raw %}
+
 	Article: Q223790
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -581,3 +583,5 @@ permalink: /kb/223/Q223790/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97125/
 
 ## Q97125: Bookshelf: Mouse Pointer Changes After Animation Sequence
 
+{% raw %}
+
 	Article: Q97125
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 2.0
@@ -45,3 +47,5 @@ permalink: /kb/097/Q97125/
 	
 	=============================================================================
 	
+
+{% endraw %}

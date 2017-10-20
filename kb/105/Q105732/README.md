@@ -6,6 +6,8 @@ permalink: /kb/105/Q105732/
 
 ## Q105732: Network-Based Installation Issues with WFWG 3.11
 
+{% raw %}
+
 	Article: Q105732
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -75,3 +77,5 @@ permalink: /kb/105/Q105732/
 	
 	=============================================================================
 	
+
+{% endraw %}

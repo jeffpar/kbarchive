@@ -6,6 +6,8 @@ permalink: /kb/161/Q161184/
 
 ## Q161184: FIX: Combo Box Behaves Erratically with Timer Control
 
+{% raw %}
+
 	Article: Q161184
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -175,3 +177,5 @@ permalink: /kb/161/Q161184/
 	
 	=============================================================================
 	
+
+{% endraw %}

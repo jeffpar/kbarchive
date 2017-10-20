@@ -6,6 +6,8 @@ permalink: /kb/155/Q155928/
 
 ## Q155928: SELECT - SQL's NOFILTER Clause Forces Physical File
 
+{% raw %}
+
 	Article: Q155928
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -66,3 +68,5 @@ permalink: /kb/155/Q155928/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166529/
 
 ## Q166529: APPC Applications Fail to Connect to SNA Server 3.0 and 4.0
 
+{% raw %}
+
 	Article: Q166529
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -106,3 +108,5 @@ permalink: /kb/166/Q166529/
 	
 	=============================================================================
 	
+
+{% endraw %}

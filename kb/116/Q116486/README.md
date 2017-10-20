@@ -6,6 +6,8 @@ permalink: /kb/116/Q116486/
 
 ## Q116486: FIX: Compiler May Generate Invalid Errors for Local Classes
 
+{% raw %}
+
 	Article: Q116486
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0
@@ -81,3 +83,5 @@ permalink: /kb/116/Q116486/
 	
 	=============================================================================
 	
+
+{% endraw %}

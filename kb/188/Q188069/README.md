@@ -6,6 +6,8 @@ permalink: /kb/188/Q188069/
 
 ## Q188069: How to Obtain SNA Server Version 4.0 U.S. Service Pack 1
 
+{% raw %}
+
 	Article: Q188069
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 U.S. SP1
@@ -101,3 +103,5 @@ permalink: /kb/188/Q188069/
 	
 	=============================================================================
 	
+
+{% endraw %}

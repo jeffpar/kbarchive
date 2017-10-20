@@ -6,6 +6,8 @@ permalink: /kb/098/Q98370/
 
 ## Q98370: Err Msg: Golf Requires a Minimum of 16 Color Graphics
 
+{% raw %}
+
 	Article: Q98370
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/098/Q98370/
 	
 	=============================================================================
 	
+
+{% endraw %}

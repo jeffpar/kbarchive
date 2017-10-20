@@ -6,6 +6,8 @@ permalink: /kb/151/Q151351/
 
 ## Q151351: FP: Web Permissions Must Be Unique to Be Modified
 
+{% raw %}
+
 	Article: Q151351
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97
@@ -78,3 +80,5 @@ permalink: /kb/151/Q151351/
 	
 	=============================================================================
 	
+
+{% endraw %}

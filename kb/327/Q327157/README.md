@@ -6,6 +6,8 @@ permalink: /kb/327/Q327157/
 
 ## Q327157: 3270 Emulator Traps in the SNAGetUserRecord Function
 
+{% raw %}
+
 	Article: Q327157
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -169,3 +171,5 @@ permalink: /kb/327/Q327157/
 	
 	=============================================================================
 	
+
+{% endraw %}

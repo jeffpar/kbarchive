@@ -6,6 +6,8 @@ permalink: /kb/120/Q120264/
 
 ## Q120264: Excessive Flicker on Fast Computers Using 320 x 400 Resolution
 
+{% raw %}
+
 	Article: Q120264
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/120/Q120264/
 	
 	=============================================================================
 	
+
+{% endraw %}

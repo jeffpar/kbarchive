@@ -6,6 +6,8 @@ permalink: /kb/314/Q314760/
 
 ## Q314760: Microsoft Access 2002 Visual Basic for Applications Step by Step
 
+{% raw %}
+
 	Article: Q314760
 	Product(s): Microsoft Press
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/314/Q314760/
 	
 	=============================================================================
 	
+
+{% endraw %}

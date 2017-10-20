@@ -6,6 +6,8 @@ permalink: /kb/142/Q142091/
 
 ## Q142091: XCLN: No E-form When Sent from a Public Folder
 
+{% raw %}
+
 	Article: Q142091
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/142/Q142091/
 	
 	=============================================================================
 	
+
+{% endraw %}

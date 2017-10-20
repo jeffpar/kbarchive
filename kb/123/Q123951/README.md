@@ -6,6 +6,8 @@ permalink: /kb/123/Q123951/
 
 ## Q123951: FIX: Problem with Remote Builds on Novell Netware Servers
 
+{% raw %}
+
 	Article: Q123951
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -78,3 +80,5 @@ permalink: /kb/123/Q123951/
 	
 	=============================================================================
 	
+
+{% endraw %}

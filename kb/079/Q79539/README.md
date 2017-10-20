@@ -6,6 +6,8 @@ permalink: /kb/079/Q79539/
 
 ## Q79539: FAST Versions 3.0x or Later Required with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q79539
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -52,3 +54,5 @@ permalink: /kb/079/Q79539/
 	
 	=============================================================================
 	
+
+{% endraw %}

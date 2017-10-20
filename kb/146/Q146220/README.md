@@ -6,6 +6,8 @@ permalink: /kb/146/Q146220/
 
 ## Q146220: PRB: The ODBC Text File Driver Only Supports INSERT Statement
 
+{% raw %}
+
 	Article: Q146220
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.6,3.0,3.0b,5.0,6.0
@@ -176,3 +178,5 @@ permalink: /kb/146/Q146220/
 	
 	=============================================================================
 	
+
+{% endraw %}

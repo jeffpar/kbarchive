@@ -6,6 +6,8 @@ permalink: /kb/287/Q287750/
 
 ## Q287750: Using SNACFG TNIPID /ADD Fails to Add Workstation Information
 
+{% raw %}
+
 	Article: Q287750
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/287/Q287750/
 	
 	=============================================================================
 	
+
+{% endraw %}

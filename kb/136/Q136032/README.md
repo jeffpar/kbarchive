@@ -6,6 +6,8 @@ permalink: /kb/136/Q136032/
 
 ## Q136032: Systems Management Server Sender Packet Size Computation
 
+{% raw %}
+
 	Article: Q136032
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -83,3 +85,5 @@ permalink: /kb/136/Q136032/
 	
 	=============================================================================
 	
+
+{% endraw %}

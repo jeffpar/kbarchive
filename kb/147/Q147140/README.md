@@ -6,6 +6,8 @@ permalink: /kb/147/Q147140/
 
 ## Q147140: Macintosh Ultimate Frank Lloyd Wright: ReadMe Contents
 
+{% raw %}
+
 	Article: Q147140
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -221,3 +223,5 @@ permalink: /kb/147/Q147140/
 	
 	=============================================================================
 	
+
+{% endraw %}

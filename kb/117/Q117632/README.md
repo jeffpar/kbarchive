@@ -6,6 +6,8 @@ permalink: /kb/117/Q117632/
 
 ## Q117632: Column Delimiter Options Toggle Incorrectly
 
+{% raw %}
+
 	Article: Q117632
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -59,3 +61,5 @@ permalink: /kb/117/Q117632/
 	
 	=============================================================================
 	
+
+{% endraw %}

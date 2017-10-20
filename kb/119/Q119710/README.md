@@ -6,6 +6,8 @@ permalink: /kb/119/Q119710/
 
 ## Q119710: ADT2: Local Microsoft Access Installation Required by ADT
 
+{% raw %}
+
 	Article: Q119710
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -72,3 +74,5 @@ permalink: /kb/119/Q119710/
 	
 	=============================================================================
 	
+
+{% endraw %}

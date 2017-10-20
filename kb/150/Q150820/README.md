@@ -6,6 +6,8 @@ permalink: /kb/150/Q150820/
 
 ## Q150820: RAS Service Broadcasts Name Query Every Two Minutes
 
+{% raw %}
+
 	Article: Q150820
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0,4.0a,4.5
@@ -125,3 +127,5 @@ permalink: /kb/150/Q150820/
 	
 	=============================================================================
 	
+
+{% endraw %}

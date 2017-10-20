@@ -6,6 +6,8 @@ permalink: /kb/142/Q142315/
 
 ## Q142315: Printout Incomplete When Using Canon Printers on ECP Port
 
+{% raw %}
+
 	Article: Q142315
 	Product(s): Microsoft Automap
 	Version(s): 1.0,2.0,4.0
@@ -134,3 +136,5 @@ permalink: /kb/142/Q142315/
 	
 	=============================================================================
 	
+
+{% endraw %}

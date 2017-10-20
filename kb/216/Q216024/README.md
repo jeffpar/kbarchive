@@ -6,6 +6,8 @@ permalink: /kb/216/Q216024/
 
 ## Q216024: Maintenance Mode Setup for BackOffice 4.5
 
+{% raw %}
+
 	Article: Q216024
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -80,3 +82,5 @@ permalink: /kb/216/Q216024/
 	
 	=============================================================================
 	
+
+{% endraw %}

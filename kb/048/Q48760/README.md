@@ -6,6 +6,8 @@ permalink: /kb/048/Q48760/
 
 ## Q48760: Flight Simulator 4.00: Version 2.00 Parameters Lost
 
+{% raw %}
+
 	Article: Q48760
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/048/Q48760/
 	
 	=============================================================================
 	
+
+{% endraw %}

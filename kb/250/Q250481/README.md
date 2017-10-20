@@ -6,6 +6,8 @@ permalink: /kb/250/Q250481/
 
 ## Q250481: How to Set Up a Referral in Microsoft Metadirectory Services
 
+{% raw %}
+
 	Article: Q250481
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -86,3 +88,5 @@ permalink: /kb/250/Q250481/
 	
 	=============================================================================
 	
+
+{% endraw %}

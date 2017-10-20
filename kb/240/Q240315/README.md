@@ -6,6 +6,8 @@ permalink: /kb/240/Q240315/
 
 ## Q240315: Contents of the IIS Exception Monitor Readme File
 
+{% raw %}
+
 	Article: Q240315
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -520,3 +522,5 @@ permalink: /kb/240/Q240315/
 	
 	=============================================================================
 	
+
+{% endraw %}

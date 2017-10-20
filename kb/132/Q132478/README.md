@@ -6,6 +6,8 @@ permalink: /kb/132/Q132478/
 
 ## Q132478: PRB: Grid Column's CurrentControl Reverts to Text1 Default
 
+{% raw %}
+
 	Article: Q132478
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -152,3 +154,5 @@ permalink: /kb/132/Q132478/
 	
 	=============================================================================
 	
+
+{% endraw %}

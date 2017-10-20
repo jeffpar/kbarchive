@@ -6,6 +6,8 @@ permalink: /kb/195/Q195522/
 
 ## Q195522: Host Password May Be Revealed By Manipulating SSCP-LU Session
 
+{% raw %}
+
 	Article: Q195522
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -122,3 +124,5 @@ permalink: /kb/195/Q195522/
 	
 	=============================================================================
 	
+
+{% endraw %}

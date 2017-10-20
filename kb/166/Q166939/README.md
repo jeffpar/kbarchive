@@ -6,6 +6,8 @@ permalink: /kb/166/Q166939/
 
 ## Q166939: BUG: CRecordset::Update Fails After Upgrading
 
+{% raw %}
+
 	Article: Q166939
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2 4.2b 5.0
@@ -73,3 +75,5 @@ permalink: /kb/166/Q166939/
 	
 	=============================================================================
 	
+
+{% endraw %}

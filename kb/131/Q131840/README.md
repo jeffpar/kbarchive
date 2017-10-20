@@ -6,6 +6,8 @@ permalink: /kb/131/Q131840/
 
 ## Q131840: WordPerfect Tutorial Hangs in Windows 95
 
+{% raw %}
+
 	Article: Q131840
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/131/Q131840/
 	
 	=============================================================================
 	
+
+{% endraw %}

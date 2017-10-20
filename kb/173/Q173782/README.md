@@ -6,6 +6,8 @@ permalink: /kb/173/Q173782/
 
 ## Q173782: PRB: MouseMove Events Fires on Disabled Control in VFP
 
+{% raw %}
+
 	Article: Q173782
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -76,3 +78,5 @@ permalink: /kb/173/Q173782/
 	
 	=============================================================================
 	
+
+{% endraw %}

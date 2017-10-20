@@ -6,6 +6,8 @@ permalink: /kb/122/Q122579/
 
 ## Q122579: PC WSPlus: Dynamic Connections Not Released
 
+{% raw %}
+
 	Article: Q122579
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/122/Q122579/
 	
 	=============================================================================
 	
+
+{% endraw %}

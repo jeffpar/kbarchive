@@ -6,6 +6,8 @@ permalink: /kb/130/Q130144/
 
 ## Q130144: PRB: SourceSafe for Windows Setup Fails w/ Novell VLM.EXE 1.1
 
+{% raw %}
+
 	Article: Q130144
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -104,3 +106,5 @@ permalink: /kb/130/Q130144/
 	
 	=============================================================================
 	
+
+{% endraw %}

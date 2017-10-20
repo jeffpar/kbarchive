@@ -6,6 +6,8 @@ permalink: /kb/182/Q182665/
 
 ## Q182665: XADM: Exchange Migration Wizard Fails with 7026 error
 
+{% raw %}
+
 	Article: Q182665
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -67,3 +69,5 @@ permalink: /kb/182/Q182665/
 	
 	=============================================================================
 	
+
+{% endraw %}

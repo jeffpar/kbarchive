@@ -6,6 +6,8 @@ permalink: /kb/166/Q166110/
 
 ## Q166110: FIX: Can Set SQL Breakpoints on Invalid Lines Inside a Trigger
 
+{% raw %}
+
 	Article: Q166110
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:5.0
@@ -95,3 +97,5 @@ permalink: /kb/166/Q166110/
 	
 	=============================================================================
 	
+
+{% endraw %}

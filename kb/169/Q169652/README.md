@@ -6,6 +6,8 @@ permalink: /kb/169/Q169652/
 
 ## Q169652: Windows 95 Stops Responding with CardBus Card Installed
 
+{% raw %}
+
 	Article: Q169652
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -58,3 +60,5 @@ permalink: /kb/169/Q169652/
 	
 	=============================================================================
 	
+
+{% endraw %}

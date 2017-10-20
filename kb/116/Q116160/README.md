@@ -6,6 +6,8 @@ permalink: /kb/116/Q116160/
 
 ## Q116160: Baseball: Can't Change or Delete Name in Player List
 
+{% raw %}
+
 	Article: Q116160
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -48,3 +50,5 @@ permalink: /kb/116/Q116160/
 	
 	=============================================================================
 	
+
+{% endraw %}

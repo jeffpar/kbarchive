@@ -6,6 +6,8 @@ permalink: /kb/117/Q117805/
 
 ## Q117805: PC DynAd: DynaAdmin Does Not Recognize 50 Line Screen Mode
 
+{% raw %}
+
 	Article: Q117805
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -59,3 +61,5 @@ permalink: /kb/117/Q117805/
 	
 	=============================================================================
 	
+
+{% endraw %}

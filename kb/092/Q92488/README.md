@@ -6,6 +6,8 @@ permalink: /kb/092/Q92488/
 
 ## Q92488: MicroKey/Audio Port and Sound Recorder
 
+{% raw %}
+
 	Article: Q92488
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -83,3 +85,5 @@ permalink: /kb/092/Q92488/
 	
 	=============================================================================
 	
+
+{% endraw %}

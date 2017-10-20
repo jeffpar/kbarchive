@@ -6,6 +6,8 @@ permalink: /kb/207/Q207957/
 
 ## Q207957: Broken Trust Between Domains Results in Unsuccessful Logon
 
+{% raw %}
+
 	Article: Q207957
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0,4.5
@@ -109,3 +111,5 @@ permalink: /kb/207/Q207957/
 	
 	=============================================================================
 	
+
+{% endraw %}

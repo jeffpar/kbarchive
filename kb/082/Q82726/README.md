@@ -6,6 +6,8 @@ permalink: /kb/082/Q82726/
 
 ## Q82726: NUCONFIG.EXE Is Not Compatible with Windows 3.1
 
+{% raw %}
+
 	Article: Q82726
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/082/Q82726/
 	
 	=============================================================================
 	
+
+{% endraw %}

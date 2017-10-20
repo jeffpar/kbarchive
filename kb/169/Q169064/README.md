@@ -6,6 +6,8 @@ permalink: /kb/169/Q169064/
 
 ## Q169064: WD97: Can't Convert Picture Object in Built-in Template
 
+{% raw %}
+
 	Article: Q169064
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -156,3 +158,5 @@ permalink: /kb/169/Q169064/
 	
 	=============================================================================
 	
+
+{% endraw %}

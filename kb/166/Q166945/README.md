@@ -6,6 +6,8 @@ permalink: /kb/166/Q166945/
 
 ## Q166945: DocErr: Microsoft BackOffice Resource Kit
 
+{% raw %}
+
 	Article: Q166945
 	Product(s): Microsoft Press
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/166/Q166945/
 	
 	=============================================================================
 	
+
+{% endraw %}

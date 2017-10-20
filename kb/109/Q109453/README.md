@@ -6,6 +6,8 @@ permalink: /kb/109/Q109453/
 
 ## Q109453: WD97: TOC Field Doesn't Display AUTONUM Fields
 
+{% raw %}
+
 	Article: Q109453
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/109/Q109453/
 	
 	=============================================================================
 	
+
+{% endraw %}

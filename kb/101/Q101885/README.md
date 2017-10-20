@@ -6,6 +6,8 @@ permalink: /kb/101/Q101885/
 
 ## Q101885: Backup Err Msg: Cannot Read Volume Information from Diskette
 
+{% raw %}
+
 	Article: Q101885
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -61,3 +63,5 @@ permalink: /kb/101/Q101885/
 	
 	=============================================================================
 	
+
+{% endraw %}

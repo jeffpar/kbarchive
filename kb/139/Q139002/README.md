@@ -6,6 +6,8 @@ permalink: /kb/139/Q139002/
 
 ## Q139002: Cinemania 1996: Readme.wri Contents
 
+{% raw %}
+
 	Article: Q139002
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -321,3 +323,5 @@ permalink: /kb/139/Q139002/
 	
 	=============================================================================
 	
+
+{% endraw %}

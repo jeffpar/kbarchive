@@ -6,6 +6,8 @@ permalink: /kb/132/Q132585/
 
 ## Q132585: Wallpaper You Select on Network May Not Appear After Reboot
 
+{% raw %}
+
 	Article: Q132585
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/132/Q132585/
 	
 	=============================================================================
 	
+
+{% endraw %}

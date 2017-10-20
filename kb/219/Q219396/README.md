@@ -6,6 +6,8 @@ permalink: /kb/219/Q219396/
 
 ## Q219396: Site Server 3.0 and Windows NT Service Pack 5 Interoperability
 
+{% raw %}
+
 	Article: Q219396
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -55,3 +57,5 @@ permalink: /kb/219/Q219396/
 	
 	=============================================================================
 	
+
+{% endraw %}

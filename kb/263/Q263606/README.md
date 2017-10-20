@@ -6,6 +6,8 @@ permalink: /kb/263/Q263606/
 
 ## Q263606: BUG: Optimization Bug When Using Array with memset Initializer
 
+{% raw %}
+
 	Article: Q263606
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -89,3 +91,5 @@ permalink: /kb/263/Q263606/
 	
 	=============================================================================
 	
+
+{% endraw %}

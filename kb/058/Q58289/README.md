@@ -6,6 +6,8 @@ permalink: /kb/058/Q58289/
 
 ## Q58289: Graphics Pasted Too Small into Write
 
+{% raw %}
+
 	Article: Q58289
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -37,3 +39,5 @@ permalink: /kb/058/Q58289/
 	
 	=============================================================================
 	
+
+{% endraw %}

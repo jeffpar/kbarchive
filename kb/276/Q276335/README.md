@@ -6,6 +6,8 @@ permalink: /kb/276/Q276335/
 
 ## Q276335: Casino: Bankroll Must Be Large Enough for Minimum Bet
 
+{% raw %}
+
 	Article: Q276335
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -44,3 +46,5 @@ permalink: /kb/276/Q276335/
 	
 	=============================================================================
 	
+
+{% endraw %}

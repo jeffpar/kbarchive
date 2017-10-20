@@ -6,6 +6,8 @@ permalink: /kb/124/Q124431/
 
 ## Q124431: SNMP Traps Sent to Wrong Port
 
+{% raw %}
+
 	Article: Q124431
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -70,3 +72,5 @@ permalink: /kb/124/Q124431/
 	
 	=============================================================================
 	
+
+{% endraw %}

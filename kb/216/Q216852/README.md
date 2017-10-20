@@ -6,6 +6,8 @@ permalink: /kb/216/Q216852/
 
 ## Q216852: Device Settings in Printer Properties Will Reset to Default
 
+{% raw %}
+
 	Article: Q216852
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/216/Q216852/
 	
 	=============================================================================
 	
+
+{% endraw %}

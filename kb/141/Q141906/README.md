@@ -6,6 +6,8 @@ permalink: /kb/141/Q141906/
 
 ## Q141906: Domain/Server Command Line Parameter Added to SNAADMIN
 
+{% raw %}
+
 	Article: Q141906
 	Product(s): Microsoft SNA Server
 	Version(s): winnt:
@@ -62,3 +64,5 @@ permalink: /kb/141/Q141906/
 	
 	=============================================================================
 	
+
+{% endraw %}

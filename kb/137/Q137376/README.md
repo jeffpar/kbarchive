@@ -6,6 +6,8 @@ permalink: /kb/137/Q137376/
 
 ## Q137376: Hierarchy Manager Site Status Codes
 
+{% raw %}
+
 	Article: Q137376
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -112,3 +114,5 @@ permalink: /kb/137/Q137376/
 	
 	=============================================================================
 	
+
+{% endraw %}

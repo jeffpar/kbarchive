@@ -6,6 +6,8 @@ permalink: /kb/131/Q131023/
 
 ## Q131023: DOC: How to Set Up a Shadow Directory
 
+{% raw %}
+
 	Article: Q131023
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/131/Q131023/
 	
 	=============================================================================
 	
+
+{% endraw %}

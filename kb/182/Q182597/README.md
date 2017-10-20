@@ -6,6 +6,8 @@ permalink: /kb/182/Q182597/
 
 ## Q182597: WinNT 3.51 FTP Service Displays Incorrect Date for Year 2000
 
+{% raw %}
+
 	Article: Q182597
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -83,3 +85,5 @@ permalink: /kb/182/Q182597/
 	
 	=============================================================================
 	
+
+{% endraw %}

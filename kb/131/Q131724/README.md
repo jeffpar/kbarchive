@@ -6,6 +6,8 @@ permalink: /kb/131/Q131724/
 
 ## Q131724: PC Win: INSERT Key Does Not Allow Overstrike
 
+{% raw %}
+
 	Article: Q131724
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b,3.2,3.2a
@@ -45,3 +47,5 @@ permalink: /kb/131/Q131724/
 	
 	=============================================================================
 	
+
+{% endraw %}

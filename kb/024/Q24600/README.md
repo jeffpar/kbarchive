@@ -6,6 +6,8 @@ permalink: /kb/024/Q24600/
 
 ## Q24600: AddMenu.exe Demonstrates Adding Menus Dynamically
 
+{% raw %}
+
 	Article: Q24600
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -73,3 +75,5 @@ permalink: /kb/024/Q24600/
 	
 	=============================================================================
 	
+
+{% endraw %}

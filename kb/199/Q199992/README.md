@@ -6,6 +6,8 @@ permalink: /kb/199/Q199992/
 
 ## Q199992: SMS: Comment Entered in Secondary Site Creation Does Not Appear
 
+{% raw %}
+
 	Article: Q199992
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -50,3 +52,5 @@ permalink: /kb/199/Q199992/
 	
 	=============================================================================
 	
+
+{% endraw %}

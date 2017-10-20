@@ -6,6 +6,8 @@ permalink: /kb/162/Q162785/
 
 ## Q162785: RPC Sample File Helloc.exe Requires Full Redirector
 
+{% raw %}
+
 	Article: Q162785
 	Product(s): Microsoft Windows NT
 	Version(s): MS-DOS:3.0; NT:; WINDOWS:
@@ -73,3 +75,5 @@ permalink: /kb/162/Q162785/
 	
 	=============================================================================
 	
+
+{% endraw %}

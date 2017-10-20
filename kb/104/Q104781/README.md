@@ -6,6 +6,8 @@ permalink: /kb/104/Q104781/
 
 ## Q104781: Cannot Delete SUBST Drives If You Are Using DoubleSpace
 
+{% raw %}
+
 	Article: Q104781
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -68,3 +70,5 @@ permalink: /kb/104/Q104781/
 	
 	=============================================================================
 	
+
+{% endraw %}

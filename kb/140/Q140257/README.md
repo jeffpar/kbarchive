@@ -6,6 +6,8 @@ permalink: /kb/140/Q140257/
 
 ## Q140257: Cannot Type User Name or Password Logging on as a Different User
 
+{% raw %}
+
 	Article: Q140257
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -114,3 +116,5 @@ permalink: /kb/140/Q140257/
 	
 	=============================================================================
 	
+
+{% endraw %}

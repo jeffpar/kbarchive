@@ -6,6 +6,8 @@ permalink: /kb/185/Q185618/
 
 ## Q185618: Schannel.dll and Schnl128.dll Updates in Windows NT 4.0 SP4
 
+{% raw %}
+
 	Article: Q185618
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/185/Q185618/
 	
 	=============================================================================
 	
+
+{% endraw %}

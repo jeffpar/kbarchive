@@ -6,6 +6,8 @@ permalink: /kb/164/Q164565/
 
 ## Q164565: Unsuccessful Appletalk Winsock Connection Using WSARECV()
 
+{% raw %}
+
 	Article: Q164565
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.00
@@ -66,3 +68,5 @@ permalink: /kb/164/Q164565/
 	
 	=============================================================================
 	
+
+{% endraw %}

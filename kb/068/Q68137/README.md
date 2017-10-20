@@ -6,6 +6,8 @@ permalink: /kb/068/Q68137/
 
 ## Q68137: Calculator Err Msg: Result Is Too Large for Display
 
+{% raw %}
+
 	Article: Q68137
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/068/Q68137/
 	
 	=============================================================================
 	
+
+{% endraw %}

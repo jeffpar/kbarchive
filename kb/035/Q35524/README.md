@@ -6,6 +6,8 @@ permalink: /kb/035/Q35524/
 
 ## Q35524: Separating TOOLS.INI Entries for M
 
+{% raw %}
+
 	Article: Q35524
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -48,3 +50,5 @@ permalink: /kb/035/Q35524/
 	TOOLS.INI to initialize the editor, depending on the environment in
 	which the editor is running. The statements in the [M] section are
 	always loaded.
+
+{% endraw %}

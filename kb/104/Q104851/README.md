@@ -6,6 +6,8 @@ permalink: /kb/104/Q104851/
 
 ## Q104851: FlightSim: Stall Warning Sounds During Replay
 
+{% raw %}
+
 	Article: Q104851
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:4.0,4.0a
@@ -52,3 +54,5 @@ permalink: /kb/104/Q104851/
 	
 	=============================================================================
 	
+
+{% endraw %}

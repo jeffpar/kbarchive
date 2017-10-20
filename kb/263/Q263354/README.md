@@ -6,6 +6,8 @@ permalink: /kb/263/Q263354/
 
 ## Q263354: NT Logon Server Manager Error Message When Deinstalling Domain
 
+{% raw %}
+
 	Article: Q263354
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/263/Q263354/
 	
 	=============================================================================
 	
+
+{% endraw %}

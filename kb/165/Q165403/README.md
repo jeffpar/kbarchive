@@ -6,6 +6,8 @@ permalink: /kb/165/Q165403/
 
 ## Q165403: Windows 95 Update Prevents Sending Clear-Text Password Over Net
 
+{% raw %}
+
 	Article: Q165403
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -143,3 +145,5 @@ permalink: /kb/165/Q165403/
 	
 	=============================================================================
 	
+
+{% endraw %}

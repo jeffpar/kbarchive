@@ -6,6 +6,8 @@ permalink: /kb/264/Q264020/
 
 ## Q264020: XADM: How to Restrict External Internet Mail in One Mailbox
 
+{% raw %}
+
 	Article: Q264020
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -84,3 +86,5 @@ permalink: /kb/264/Q264020/
 	
 	=============================================================================
 	
+
+{% endraw %}

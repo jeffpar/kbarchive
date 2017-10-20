@@ -6,6 +6,8 @@ permalink: /kb/126/Q126953/
 
 ## Q126953: How FoxPro Passes Parameters to a Form
 
+{% raw %}
+
 	Article: Q126953
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -73,3 +75,5 @@ permalink: /kb/126/Q126953/
 	
 	=============================================================================
 	
+
+{% endraw %}

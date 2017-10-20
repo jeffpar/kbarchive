@@ -6,6 +6,8 @@ permalink: /kb/131/Q131038/
 
 ## Q131038: How to Change Hot-Spot Color at Run Time in MediaView Titles
 
+{% raw %}
+
 	Article: Q131038
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 1.3
@@ -161,3 +163,5 @@ permalink: /kb/131/Q131038/
 	
 	=============================================================================
 	
+
+{% endraw %}

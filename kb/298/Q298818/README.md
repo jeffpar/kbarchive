@@ -6,6 +6,8 @@ permalink: /kb/298/Q298818/
 
 ## Q298818: SMS: Duplicate SNMP Traps Sent on Windows 2000
 
+{% raw %}
+
 	Article: Q298818
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -67,3 +69,5 @@ permalink: /kb/298/Q298818/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238989/
 
 ## Q238989: PRB: RichEdit Control in Applications That Call OleInitialize()
 
+{% raw %}
+
 	Article: Q238989
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -71,9 +73,9 @@ permalink: /kb/238/Q238989/
 	  	CMyRichEdit(){};
 	  	~CMyRichEdit(){};
 	
-	  	//{ {AFX_MSG(CMyRichEdit)
+	  	//{{AFX_MSG(CMyRichEdit)
 	  	afx_msg BOOL OnNcCreate(LPCREATESTRUCT lpCreateStruct);
-	  	//} }AFX_MSG
+	  	//}}AFX_MSG
 	  	DECLARE_MESSAGE_MAP()
 	
 	  };
@@ -83,9 +85,9 @@ permalink: /kb/238/Q238989/
 	  IMPLEMENT_DYNCREATE(CMyRichEdit, CRichEditCtrl)
 	
 	  BEGIN_MESSAGE_MAP(CMyRichEdit, CRichEditCtrl)
-	  	//{ {AFX_MSG_MAP(CMyRichEdit)
+	  	//{{AFX_MSG_MAP(CMyRichEdit)
 	  	ON_WM_NCCREATE()
-	  	//} }AFX_MSG_MAP
+	  	//}}AFX_MSG_MAP
 	  END_MESSAGE_MAP()
 	
 	3. Handle the OnNcCreate function as follows:
@@ -165,3 +167,5 @@ permalink: /kb/238/Q238989/
 	
 	=============================================================================
 	
+
+{% endraw %}

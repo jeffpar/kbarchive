@@ -6,6 +6,8 @@ permalink: /kb/072/Q72848/
 
 ## Q72848: How to Use Int 20h to Terminate an .EXE Program
 
+{% raw %}
+
 	Article: Q72848
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -92,3 +94,5 @@ permalink: /kb/072/Q72848/
 	
 	=============================================================================
 	
+
+{% endraw %}

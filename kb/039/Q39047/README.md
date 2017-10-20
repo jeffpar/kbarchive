@@ -6,6 +6,8 @@ permalink: /kb/039/Q39047/
 
 ## Q39047: Error R6008 Not Enough Space for Arguments
 
+{% raw %}
+
 	Article: Q39047
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -43,3 +45,5 @@ permalink: /kb/039/Q39047/
 	   problem, rewrite the _setargv or _setenvp routines (see
 	   Section 5.2.2, "Suppressing Command-Line Processing," for
 	   more information).
+
+{% endraw %}

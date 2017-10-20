@@ -6,6 +6,8 @@ permalink: /kb/097/Q97651/
 
 ## Q97651: PC WRmt Win: Problems Installing with DoubleSpace
 
+{% raw %}
+
 	Article: Q97651
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -63,3 +65,5 @@ permalink: /kb/097/Q97651/
 	
 	=============================================================================
 	
+
+{% endraw %}

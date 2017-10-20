@@ -6,6 +6,8 @@ permalink: /kb/134/Q134901/
 
 ## Q134901: WD97: How to Modify the Layout of an Address Book Entry
 
+{% raw %}
+
 	Article: Q134901
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -167,3 +169,5 @@ permalink: /kb/134/Q134901/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40357/
 
 ## Q40357: Operation of scanf When Using the Width Option in the Format
 
+{% raw %}
+
 	Article: Q40357
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -36,3 +38,5 @@ permalink: /kb/040/Q40357/
 	characters (including decimal if in a float) specified with the width
 	format. Entering Invalid characters (e.g. a decimal in an integer, any
 	alphabetic character) causes the termination and failure of the read.
+
+{% endraw %}

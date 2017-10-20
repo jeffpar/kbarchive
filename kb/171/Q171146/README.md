@@ -6,6 +6,8 @@ permalink: /kb/171/Q171146/
 
 ## Q171146: HOWTO: Create and Remove a DSN in Visual Basic
 
+{% raw %}
+
 	Article: Q171146
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -168,3 +170,5 @@ permalink: /kb/171/Q171146/
 	
 	=============================================================================
 	
+
+{% endraw %}

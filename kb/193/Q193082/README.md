@@ -6,6 +6,8 @@ permalink: /kb/193/Q193082/
 
 ## Q193082: HOWTO: Build a Setup Program Creating Multiple Groups and Icons
 
+{% raw %}
+
 	Article: Q193082
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -104,3 +106,5 @@ permalink: /kb/193/Q193082/
 	
 	=============================================================================
 	
+
+{% endraw %}

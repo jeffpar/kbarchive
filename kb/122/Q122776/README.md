@@ -6,6 +6,8 @@ permalink: /kb/122/Q122776/
 
 ## Q122776: Writer/Artist: Filenames Used For Saved Documents
 
+{% raw %}
+
 	Article: Q122776
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -85,3 +87,5 @@ permalink: /kb/122/Q122776/
 	
 	=============================================================================
 	
+
+{% endraw %}

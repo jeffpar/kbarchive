@@ -6,6 +6,8 @@ permalink: /kb/092/Q92781/
 
 ## Q92781: Must Use Quotation Marks if Shared Resource Names Have Spaces
 
+{% raw %}
+
 	Article: Q92781
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/092/Q92781/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/278/Q278906/
 
 ## Q278906: MSN Companion Supported Printers
 
+{% raw %}
+
 	Article: Q278906
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/278/Q278906/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174603/
 
 ## Q174603: You Do Not Receive E-mail When You Connect to MSN with DirectPC
 
+{% raw %}
+
 	Article: Q174603
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0
@@ -56,3 +58,5 @@ permalink: /kb/174/Q174603/
 	
 	=============================================================================
 	
+
+{% endraw %}

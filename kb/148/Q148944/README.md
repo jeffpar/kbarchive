@@ -6,6 +6,8 @@ permalink: /kb/148/Q148944/
 
 ## Q148944: SMS: Login Script Without Extension Will Not Be Modified
 
+{% raw %}
+
 	Article: Q148944
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2,2.0
@@ -59,3 +61,5 @@ permalink: /kb/148/Q148944/
 	
 	=============================================================================
 	
+
+{% endraw %}

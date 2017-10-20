@@ -6,6 +6,8 @@ permalink: /kb/279/Q279868/
 
 ## Q279868: Using Reserved Names as the Site Code in SMS 2.0
 
+{% raw %}
+
 	Article: Q279868
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -60,3 +62,5 @@ permalink: /kb/279/Q279868/
 	
 	=============================================================================
 	
+
+{% endraw %}

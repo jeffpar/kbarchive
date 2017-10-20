@@ -6,6 +6,8 @@ permalink: /kb/177/Q177273/
 
 ## Q177273: Err Msg: The Server Name You Specified Cannot Be Found...
 
+{% raw %}
+
 	Article: Q177273
 	Product(s): The Microsoft Network
 	Version(s): 2.5,97
@@ -90,3 +92,5 @@ permalink: /kb/177/Q177273/
 	
 	=============================================================================
 	
+
+{% endraw %}

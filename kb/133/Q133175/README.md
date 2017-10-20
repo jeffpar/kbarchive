@@ -6,6 +6,8 @@ permalink: /kb/133/Q133175/
 
 ## Q133175: Troubleshooting DriveSpace in Windows 95
 
+{% raw %}
+
 	Article: Q133175
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0,95
@@ -400,3 +402,5 @@ permalink: /kb/133/Q133175/
 	
 	=============================================================================
 	
+
+{% endraw %}

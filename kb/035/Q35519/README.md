@@ -6,6 +6,8 @@ permalink: /kb/035/Q35519/
 
 ## Q35519: PCOPY &amp; Multiple Pages Not Supported in MS OS/2 Protected Mode
 
+{% raw %}
+
 	Article: Q35519
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -196,3 +198,5 @@ permalink: /kb/035/Q35519/
 	PRINT "Enter a key to quit..."
 	WHILE INKEY$ = "": WEND
 	END
+
+{% endraw %}

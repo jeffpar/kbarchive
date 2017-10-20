@@ -6,6 +6,8 @@ permalink: /kb/134/Q134331/
 
 ## Q134331: Incorrect DOS Version Error When Using MS-DOS 6.22 PDF
 
+{% raw %}
+
 	Article: Q134331
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1
@@ -93,3 +95,5 @@ permalink: /kb/134/Q134331/
 	
 	=============================================================================
 	
+
+{% endraw %}

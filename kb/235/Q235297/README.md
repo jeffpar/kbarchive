@@ -6,6 +6,8 @@ permalink: /kb/235/Q235297/
 
 ## Q235297: Microsoft FrontPage 2000 At a Glance Comments and Corrections
 
+{% raw %}
+
 	Article: Q235297
 	Product(s): Microsoft Press
 	Version(s): 
@@ -121,3 +123,5 @@ permalink: /kb/235/Q235297/
 	
 	=============================================================================
 	
+
+{% endraw %}

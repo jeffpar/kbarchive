@@ -6,6 +6,8 @@ permalink: /kb/127/Q127898/
 
 ## Q127898: BUG: Err Msg: Control Caused Stack Fault in Module XBS200.DLL
 
+{% raw %}
+
 	Article: Q127898
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -68,3 +70,5 @@ permalink: /kb/127/Q127898/
 	
 	=============================================================================
 	
+
+{% endraw %}

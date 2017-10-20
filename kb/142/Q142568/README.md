@@ -6,6 +6,8 @@ permalink: /kb/142/Q142568/
 
 ## Q142568: Error 128 Upsizing Default Value to SQL Server
 
+{% raw %}
+
 	Article: Q142568
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -96,3 +98,5 @@ permalink: /kb/142/Q142568/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246165/
 
 ## Q246165: BUG: CDatabase::ExecuteSQL() Function Does Not Throw Exception w
 
+{% raw %}
+
 	Article: Q246165
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -204,3 +206,5 @@ permalink: /kb/246/Q246165/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244382/
 
 ## Q244382: Windows NT 4.0 Security Account Manager Replication
 
+{% raw %}
+
 	Article: Q244382
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -146,3 +148,5 @@ permalink: /kb/244/Q244382/
 	
 	=============================================================================
 	
+
+{% endraw %}

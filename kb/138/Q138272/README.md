@@ -6,6 +6,8 @@ permalink: /kb/138/Q138272/
 
 ## Q138272: Browse List Contains Obsolete Domain Names
 
+{% raw %}
+
 	Article: Q138272
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -113,3 +115,5 @@ permalink: /kb/138/Q138272/
 	
 	=============================================================================
 	
+
+{% endraw %}

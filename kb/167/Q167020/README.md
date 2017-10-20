@@ -6,6 +6,8 @@ permalink: /kb/167/Q167020/
 
 ## Q167020: ATI Graphics Pro Turbo PCI Video Adapter Resolution Problem
 
+{% raw %}
+
 	Article: Q167020
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -126,3 +128,5 @@ permalink: /kb/167/Q167020/
 	
 	=============================================================================
 	
+
+{% endraw %}

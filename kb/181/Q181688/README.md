@@ -6,6 +6,8 @@ permalink: /kb/181/Q181688/
 
 ## Q181688: Developing for MS Agent: Examples Folder Cannot Be Read
 
+{% raw %}
+
 	Article: Q181688
 	Product(s): Microsoft Press
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/181/Q181688/
 	
 	=============================================================================
 	
+
+{% endraw %}

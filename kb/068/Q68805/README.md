@@ -6,6 +6,8 @@ permalink: /kb/068/Q68805/
 
 ## Q68805: How to Reboot Your Machine Within a MASM Application
 
+{% raw %}
+
 	Article: Q68805
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -72,3 +74,5 @@ permalink: /kb/068/Q68805/
 	
 	=============================================================================
 	
+
+{% endraw %}

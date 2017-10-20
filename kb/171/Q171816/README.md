@@ -6,6 +6,8 @@ permalink: /kb/171/Q171816/
 
 ## Q171816: FIX: IPF Opening or Saving Form with Tab Control
 
+{% raw %}
+
 	Article: Q171816
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -132,3 +134,5 @@ permalink: /kb/171/Q171816/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264294/
 
 ## Q264294: Streets and Trips 2001: Information That You Need to Import Data
 
+{% raw %}
+
 	Article: Q264294
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -128,3 +130,5 @@ permalink: /kb/264/Q264294/
 	
 	=============================================================================
 	
+
+{% endraw %}

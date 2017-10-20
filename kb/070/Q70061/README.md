@@ -6,6 +6,8 @@ permalink: /kb/070/Q70061/
 
 ## Q70061: Invalid Set Temp Directory Name Example in User's Guide
 
+{% raw %}
+
 	Article: Q70061
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -38,3 +40,5 @@ permalink: /kb/070/Q70061/
 	
 	=============================================================================
 	
+
+{% endraw %}

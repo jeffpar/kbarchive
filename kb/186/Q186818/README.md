@@ -6,6 +6,8 @@ permalink: /kb/186/Q186818/
 
 ## Q186818: RPC Server Unavailable When Joining a Domain with NETDOM
 
+{% raw %}
+
 	Article: Q186818
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -90,3 +92,5 @@ permalink: /kb/186/Q186818/
 	
 	=============================================================================
 	
+
+{% endraw %}

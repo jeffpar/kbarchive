@@ -6,6 +6,8 @@ permalink: /kb/301/Q301301/
 
 ## Q301301: Broadband User Wants to Use Dial-up Access
 
+{% raw %}
+
 	Article: Q301301
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -50,3 +52,5 @@ permalink: /kb/301/Q301301/
 	
 	=============================================================================
 	
+
+{% endraw %}

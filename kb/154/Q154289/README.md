@@ -6,6 +6,8 @@ permalink: /kb/154/Q154289/
 
 ## Q154289: HOWTO: Identify the Symptoms of File Corruption Problems
 
+{% raw %}
+
 	Article: Q154289
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,1.52b,1.52c,2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -116,3 +118,5 @@ permalink: /kb/154/Q154289/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129997/
 
 ## Q129997: PC Win: Mail SCHEDMSG.DLL Version 3.2.4086 Update
 
+{% raw %}
+
 	Article: Q129997
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -122,3 +124,5 @@ permalink: /kb/129/Q129997/
 	
 	=============================================================================
 	
+
+{% endraw %}

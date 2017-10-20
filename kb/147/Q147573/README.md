@@ -6,6 +6,8 @@ permalink: /kb/147/Q147573/
 
 ## Q147573: PRB: Microsoft Excel Not Registered in Running Object Table
 
+{% raw %}
+
 	Article: Q147573
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,6.0
@@ -111,3 +113,5 @@ permalink: /kb/147/Q147573/
 	
 	=============================================================================
 	
+
+{% endraw %}

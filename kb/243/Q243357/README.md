@@ -6,6 +6,8 @@ permalink: /kb/243/Q243357/
 
 ## Q243357: ABNT2 Keyboard Layout Is Not Included in Windows NT
 
+{% raw %}
+
 	Article: Q243357
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5
@@ -108,3 +110,5 @@ permalink: /kb/243/Q243357/
 	
 	=============================================================================
 	
+
+{% endraw %}

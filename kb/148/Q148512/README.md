@@ -6,6 +6,8 @@ permalink: /kb/148/Q148512/
 
 ## Q148512: INFO:Description of the Properties/About Command Line Commands
 
+{% raw %}
+
 	Article: Q148512
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/148/Q148512/
 	
 	=============================================================================
 	
+
+{% endraw %}

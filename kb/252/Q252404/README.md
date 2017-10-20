@@ -6,6 +6,8 @@ permalink: /kb/252/Q252404/
 
 ## Q252404: Baseball 2000: Game Quits or You Receive Error Message
 
+{% raw %}
+
 	Article: Q252404
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -74,3 +76,5 @@ permalink: /kb/252/Q252404/
 	
 	=============================================================================
 	
+
+{% endraw %}

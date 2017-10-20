@@ -6,6 +6,8 @@ permalink: /kb/133/Q133478/
 
 ## Q133478: Blank Page is Printed with HP IIIsi and HP 4 Printer Driver
 
+{% raw %}
+
 	Article: Q133478
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -63,3 +65,5 @@ permalink: /kb/133/Q133478/
 	
 	=============================================================================
 	
+
+{% endraw %}

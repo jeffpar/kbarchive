@@ -6,6 +6,8 @@ permalink: /kb/187/Q187734/
 
 ## Q187734: Large Version ID Not Completely Visible in WINS Admin
 
+{% raw %}
+
 	Article: Q187734
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -80,3 +82,5 @@ permalink: /kb/187/Q187734/
 	
 	=============================================================================
 	
+
+{% endraw %}

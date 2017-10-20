@@ -6,6 +6,8 @@ permalink: /kb/129/Q129328/
 
 ## Q129328: Cannot View Files and Directories on a Compressed NTFS Partition
 
+{% raw %}
+
 	Article: Q129328
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/129/Q129328/
 	
 	=============================================================================
 	
+
+{% endraw %}

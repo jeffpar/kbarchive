@@ -6,6 +6,8 @@ permalink: /kb/223/Q223113/
 
 ## Q223113: FIX: EXE Crashes When Looping Through Array From Property Get
 
+{% raw %}
+
 	Article: Q223113
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -135,3 +137,5 @@ permalink: /kb/223/Q223113/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124519/
 
 ## Q124519: Increased File Libraries for Visual C++ 1.0 Available
 
+{% raw %}
+
 	Article: Q124519
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0
@@ -124,3 +126,5 @@ permalink: /kb/124/Q124519/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258745/
 
 ## Q258745: XIMS: Internet Mail Service Displays SMTP Banner Slowly
 
+{% raw %}
+
 	Article: Q258745
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -103,3 +105,5 @@ permalink: /kb/258/Q258745/
 	
 	=============================================================================
 	
+
+{% endraw %}

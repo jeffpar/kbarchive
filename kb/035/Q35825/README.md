@@ -6,6 +6,8 @@ permalink: /kb/035/Q35825/
 
 ## Q35825: Undocumented BC.EXE Metacommands That Affect .LST Listing
 
+{% raw %}
+
 	Article: Q35825
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -94,3 +96,5 @@ permalink: /kb/035/Q35825/
 	after n minus 6 lines have been printed.
 	
 	   REM $Pagesize:n
+
+{% endraw %}

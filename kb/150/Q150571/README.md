@@ -6,6 +6,8 @@ permalink: /kb/150/Q150571/
 
 ## Q150571: FIX: CWnd::DragAcceptFiles() in Books Online
 
+{% raw %}
+
 	Article: Q150571
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -68,3 +70,5 @@ permalink: /kb/150/Q150571/
 	
 	=============================================================================
 	
+
+{% endraw %}

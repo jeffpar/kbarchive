@@ -6,6 +6,8 @@ permalink: /kb/156/Q156431/
 
 ## Q156431: XFOR: Error 71 When Using NT Server from MSDN Select CD
 
+{% raw %}
+
 	Article: Q156431
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/156/Q156431/
 	
 	=============================================================================
 	
+
+{% endraw %}

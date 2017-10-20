@@ -6,6 +6,8 @@ permalink: /kb/190/Q190177/
 
 ## Q190177: BUG: Stop Statement in ActiveX Server Causes VB to Fail
 
+{% raw %}
+
 	Article: Q190177
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -117,3 +119,5 @@ permalink: /kb/190/Q190177/
 	
 	=============================================================================
 	
+
+{% endraw %}

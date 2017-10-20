@@ -6,6 +6,8 @@ permalink: /kb/151/Q151093/
 
 ## Q151093: Bookshelf '96-'97: Pop-Up Definition Fails To Close
 
+{% raw %}
+
 	Article: Q151093
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -54,3 +56,5 @@ permalink: /kb/151/Q151093/
 	
 	=============================================================================
 	
+
+{% endraw %}

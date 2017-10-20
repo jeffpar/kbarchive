@@ -6,6 +6,8 @@ permalink: /kb/249/Q249108/
 
 ## Q249108: Registry Data Is Viewable By All Users During Rdisk Repair Updat
 
+{% raw %}
+
 	Article: Q249108
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -144,3 +146,5 @@ permalink: /kb/249/Q249108/
 	
 	=============================================================================
 	
+
+{% endraw %}

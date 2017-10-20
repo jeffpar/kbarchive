@@ -6,6 +6,8 @@ permalink: /kb/305/Q305583/
 
 ## Q305583: MechCommander 2: You Cannot Start a Multiplayer Game
 
+{% raw %}
+
 	Article: Q305583
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -76,3 +78,5 @@ permalink: /kb/305/Q305583/
 	
 	=============================================================================
 	
+
+{% endraw %}

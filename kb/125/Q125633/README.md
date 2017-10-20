@@ -6,6 +6,8 @@ permalink: /kb/125/Q125633/
 
 ## Q125633: Start Menu Wraps Off the Display
 
+{% raw %}
+
 	Article: Q125633
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/125/Q125633/
 	
 	=============================================================================
 	
+
+{% endraw %}

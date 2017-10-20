@@ -6,6 +6,8 @@ permalink: /kb/318/Q318251/
 
 ## Q318251: Streets and Trips 2002: Error When You Use the Find Feature
 
+{% raw %}
+
 	Article: Q318251
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -133,3 +135,5 @@ permalink: /kb/318/Q318251/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177407/
 
 ## Q177407: Versions of Bookshelf and Word That Can Be Integrated
 
+{% raw %}
+
 	Article: Q177407
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0,2000,6.0,7.0,97
@@ -94,3 +96,5 @@ permalink: /kb/177/Q177407/
 	
 	=============================================================================
 	
+
+{% endraw %}

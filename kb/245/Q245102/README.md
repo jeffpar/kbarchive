@@ -6,6 +6,8 @@ permalink: /kb/245/Q245102/
 
 ## Q245102: XCLN: IMAP Ignores OL98, OL2000 Don't Download Messages Option
 
+{% raw %}
+
 	Article: Q245102
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,98
@@ -56,3 +58,5 @@ permalink: /kb/245/Q245102/
 	
 	=============================================================================
 	
+
+{% endraw %}

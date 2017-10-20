@@ -6,6 +6,8 @@ permalink: /kb/260/Q260031/
 
 ## Q260031: Error Message Generated when Exporting Foreign Users to Exchange
 
+{% raw %}
+
 	Article: Q260031
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -96,3 +98,5 @@ permalink: /kb/260/Q260031/
 	
 	=============================================================================
 	
+
+{% endraw %}

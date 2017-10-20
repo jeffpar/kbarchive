@@ -6,6 +6,8 @@ permalink: /kb/172/Q172173/
 
 ## Q172173: BUG: Stopping IIS WWW Service Causes Application Error
 
+{% raw %}
+
 	Article: Q172173
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -81,3 +83,5 @@ permalink: /kb/172/Q172173/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159721/
 
 ## Q159721: XADM: How to Add Templates for Different Language Clients
 
+{% raw %}
+
 	Article: Q159721
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -124,3 +126,5 @@ permalink: /kb/159/Q159721/
 	
 	=============================================================================
 	
+
+{% endraw %}

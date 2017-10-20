@@ -6,6 +6,8 @@ permalink: /kb/316/Q316103/
 
 ## Q316103: MCSE Training Kit Microsoft BizTalk Server 2000 Comments And Cor
 
+{% raw %}
+
 	Article: Q316103
 	Product(s): Microsoft Press
 	Version(s): 
@@ -125,3 +127,5 @@ permalink: /kb/316/Q316103/
 	
 	=============================================================================
 	
+
+{% endraw %}

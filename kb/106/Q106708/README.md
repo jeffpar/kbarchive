@@ -6,6 +6,8 @@ permalink: /kb/106/Q106708/
 
 ## Q106708: How to Generate Unique Key Field Values
 
+{% raw %}
+
 	Article: Q106708
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 2.6x 3.00 | 1.02 2.00 2.5x
@@ -93,3 +95,5 @@ permalink: /kb/106/Q106708/
 	
 	=============================================================================
 	
+
+{% endraw %}

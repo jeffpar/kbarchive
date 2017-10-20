@@ -6,6 +6,8 @@ permalink: /kb/124/Q124119/
 
 ## Q124119: Running Windows NT 3.5 on a ASUSTECH Dual Pentium Computer
 
+{% raw %}
+
 	Article: Q124119
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/124/Q124119/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/230/Q230176/
 
 ## Q230176: Error Message: Dr. Watson Exception (0x80000003)
 
+{% raw %}
+
 	Article: Q230176
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/230/Q230176/
 	
 	=============================================================================
 	
+
+{% endraw %}

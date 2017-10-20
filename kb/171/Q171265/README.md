@@ -6,6 +6,8 @@ permalink: /kb/171/Q171265/
 
 ## Q171265: Unable to Uninstall Cluster Administrator Tool
 
+{% raw %}
+
 	Article: Q171265
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -80,3 +82,5 @@ permalink: /kb/171/Q171265/
 	
 	=============================================================================
 	
+
+{% endraw %}

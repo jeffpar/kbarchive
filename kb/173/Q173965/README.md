@@ -6,6 +6,8 @@ permalink: /kb/173/Q173965/
 
 ## Q173965: Max Number of SQL Statements Reached in IDC
 
+{% raw %}
+
 	Article: Q173965
 	Product(s): Internet Information Server
 	Version(s): WinNT:3.0
@@ -67,3 +69,5 @@ permalink: /kb/173/Q173965/
 	
 	=============================================================================
 	
+
+{% endraw %}

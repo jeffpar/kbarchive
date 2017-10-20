@@ -6,6 +6,8 @@ permalink: /kb/048/Q48871/
 
 ## Q48871: Invalid Arg Filename Followed By F2 Causes Screen Error
 
+{% raw %}
+
 	Article: Q48871
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -37,3 +39,5 @@ permalink: /kb/048/Q48871/
 	Microsoft has confirmed this to be a problem with the Microsoft Editor
 	Version 1.00. We are researching this problem and will post new
 	information as it becomes available.
+
+{% endraw %}

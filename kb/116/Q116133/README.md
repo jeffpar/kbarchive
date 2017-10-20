@@ -6,6 +6,8 @@ permalink: /kb/116/Q116133/
 
 ## Q116133: PRB: /INFO or /VERBOSE Option May Delay Stopping a Build
 
+{% raw %}
+
 	Article: Q116133
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0
@@ -57,3 +59,5 @@ permalink: /kb/116/Q116133/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119144/
 
 ## Q119144: PC Win: Re-Creating MMF &amp; Still Maintaining Personal Groups
 
+{% raw %}
+
 	Article: Q119144
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -93,3 +95,5 @@ permalink: /kb/119/Q119144/
 	
 	=============================================================================
 	
+
+{% endraw %}

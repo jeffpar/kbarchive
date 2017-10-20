@@ -6,6 +6,8 @@ permalink: /kb/124/Q124656/
 
 ## Q124656: BUG: SQLColumns Returning NULLABLE May Not Be Accurate
 
+{% raw %}
+
 	Article: Q124656
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -51,3 +53,5 @@ permalink: /kb/124/Q124656/
 	
 	=============================================================================
 	
+
+{% endraw %}

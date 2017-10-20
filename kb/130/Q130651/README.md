@@ -6,6 +6,8 @@ permalink: /kb/130/Q130651/
 
 ## Q130651: PC-NFS and Client for Microsoft Networks Cannot Connect
 
+{% raw %}
+
 	Article: Q130651
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/130/Q130651/
 	
 	=============================================================================
 	
+
+{% endraw %}

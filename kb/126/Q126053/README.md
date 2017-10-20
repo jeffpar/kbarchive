@@ -6,6 +6,8 @@ permalink: /kb/126/Q126053/
 
 ## Q126053: NTDETECT.COM and INSTALLD.CMD Do Not Exist in Resource Kit
 
+{% raw %}
+
 	Article: Q126053
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -55,3 +57,5 @@ permalink: /kb/126/Q126053/
 	
 	=============================================================================
 	
+
+{% endraw %}

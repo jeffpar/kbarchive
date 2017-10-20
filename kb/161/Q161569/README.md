@@ -6,6 +6,8 @@ permalink: /kb/161/Q161569/
 
 ## Q161569: Event ID 5711 Fills Event Log on Primary Domain Controller
 
+{% raw %}
+
 	Article: Q161569
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.5 3.51 4.0
@@ -90,3 +92,5 @@ permalink: /kb/161/Q161569/
 	
 	=============================================================================
 	
+
+{% endraw %}

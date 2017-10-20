@@ -6,6 +6,8 @@ permalink: /kb/127/Q127838/
 
 ## Q127838: Unable to Install Drivers During GUI Portion of Setup
 
+{% raw %}
+
 	Article: Q127838
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/127/Q127838/
 	
 	=============================================================================
 	
+
+{% endraw %}

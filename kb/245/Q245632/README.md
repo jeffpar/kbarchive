@@ -6,6 +6,8 @@ permalink: /kb/245/Q245632/
 
 ## Q245632: Dial-Up AutoSync2 Link Service Support for SNA Server
 
+{% raw %}
+
 	Article: Q245632
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 (all versions),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 U.S. SP1
@@ -95,3 +97,5 @@ permalink: /kb/245/Q245632/
 	
 	=============================================================================
 	
+
+{% endraw %}

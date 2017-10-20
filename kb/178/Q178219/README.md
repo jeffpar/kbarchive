@@ -6,6 +6,8 @@ permalink: /kb/178/Q178219/
 
 ## Q178219: XADM: Administrator Cannot Specify a Font Size in IMC
 
+{% raw %}
+
 	Article: Q178219
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -93,3 +95,5 @@ permalink: /kb/178/Q178219/
 	
 	=============================================================================
 	
+
+{% endraw %}

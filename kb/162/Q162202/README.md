@@ -6,6 +6,8 @@ permalink: /kb/162/Q162202/
 
 ## Q162202: Encarta 97 Err Msg: Encarta Cannot Connect to the Web
 
+{% raw %}
+
 	Article: Q162202
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -88,3 +90,5 @@ permalink: /kb/162/Q162202/
 	
 	=============================================================================
 	
+
+{% endraw %}

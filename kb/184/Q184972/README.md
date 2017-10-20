@@ -6,6 +6,8 @@ permalink: /kb/184/Q184972/
 
 ## Q184972: Golf 98/99: Sounds Are Not Played in Multiplayer Game
 
+{% raw %}
+
 	Article: Q184972
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/184/Q184972/
 	
 	=============================================================================
 	
+
+{% endraw %}

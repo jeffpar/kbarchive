@@ -6,6 +6,8 @@ permalink: /kb/043/Q43567/
 
 ## Q43567: SUBprogram to Convert Integer to a String in Binary Notation
 
+{% raw %}
+
 	Article: Q43567
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -46,3 +48,5 @@ permalink: /kb/043/Q43567/
 	        NEXT
 	
 	END SUB
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197205/
 
 ## Q197205: RRAS IPX VPNs Generate Event ID 20124
 
+{% raw %}
+
 	Article: Q197205
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -145,3 +147,5 @@ permalink: /kb/197/Q197205/
 	
 	=============================================================================
 	
+
+{% endraw %}

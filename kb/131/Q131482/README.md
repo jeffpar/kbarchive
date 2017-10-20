@@ -6,6 +6,8 @@ permalink: /kb/131/Q131482/
 
 ## Q131482: Netstat Does Not Display Listening TCP Ports
 
+{% raw %}
+
 	Article: Q131482
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0,4.0 SP1,4.0 SP2
@@ -41,3 +43,5 @@ permalink: /kb/131/Q131482/
 	
 	=============================================================================
 	
+
+{% endraw %}

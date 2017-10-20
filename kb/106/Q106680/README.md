@@ -6,6 +6,8 @@ permalink: /kb/106/Q106680/
 
 ## Q106680: SFM: Macintosh Users Not Logged Off Despite Time Restrictions
 
+{% raw %}
+
 	Article: Q106680
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -48,3 +50,5 @@ permalink: /kb/106/Q106680/
 	
 	=============================================================================
 	
+
+{% endraw %}

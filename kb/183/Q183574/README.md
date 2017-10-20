@@ -6,6 +6,8 @@ permalink: /kb/183/Q183574/
 
 ## Q183574: Off-line Demo Script Fails in Non-US Locales
 
+{% raw %}
+
 	Article: Q183574
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -62,3 +64,5 @@ permalink: /kb/183/Q183574/
 	
 	=============================================================================
 	
+
+{% endraw %}

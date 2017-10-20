@@ -6,6 +6,8 @@ permalink: /kb/076/Q76883/
 
 ## Q76883: Performing a Search While Playing Atlas MIDI Anthems
 
+{% raw %}
+
 	Article: Q76883
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition
@@ -57,3 +59,5 @@ permalink: /kb/076/Q76883/
 	
 	=============================================================================
 	
+
+{% endraw %}

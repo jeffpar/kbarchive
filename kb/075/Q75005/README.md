@@ -6,6 +6,8 @@ permalink: /kb/075/Q75005/
 
 ## Q75005: Handling NULL lpDrawMode in a Display Driver
 
+{% raw %}
+
 	Article: Q75005
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1; WINDOWS:3.11
@@ -46,3 +48,5 @@ permalink: /kb/075/Q75005/
 	
 	=============================================================================
 	
+
+{% endraw %}

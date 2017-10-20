@@ -6,6 +6,8 @@ permalink: /kb/078/Q78444/
 
 ## Q78444: Incompatible COMMAND.COM with Solomon III Versions Before 7.0
 
+{% raw %}
+
 	Article: Q78444
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -70,3 +72,5 @@ permalink: /kb/078/Q78444/
 	
 	=============================================================================
 	
+
+{% endraw %}

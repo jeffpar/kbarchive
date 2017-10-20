@@ -6,6 +6,8 @@ permalink: /kb/131/Q131717/
 
 ## Q131717: Network Address Requires Trailing Zeros in NETWORKS File
 
+{% raw %}
+
 	Article: Q131717
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -58,3 +60,5 @@ permalink: /kb/131/Q131717/
 	
 	=============================================================================
 	
+
+{% endraw %}

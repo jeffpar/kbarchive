@@ -6,6 +6,8 @@ permalink: /kb/140/Q140388/
 
 ## Q140388: LPD L Command Is Not Passed with EnableBannerPages Disabled
 
+{% raw %}
+
 	Article: Q140388
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.51
@@ -58,3 +60,5 @@ permalink: /kb/140/Q140388/
 	
 	=============================================================================
 	
+
+{% endraw %}

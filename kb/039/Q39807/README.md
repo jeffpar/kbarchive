@@ -6,6 +6,8 @@ permalink: /kb/039/Q39807/
 
 ## Q39807: Error Code: 0006 in Flight Simulator Version 3.00 and 4.00
 
+{% raw %}
+
 	Article: Q39807
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/039/Q39807/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86149/
 
 ## Q86149: PROFS: Description of an Incident Report, How It Can Be Used
 
+{% raw %}
+
 	Article: Q86149
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -44,3 +46,5 @@ permalink: /kb/086/Q86149/
 	
 	=============================================================================
 	
+
+{% endraw %}

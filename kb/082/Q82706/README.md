@@ -6,6 +6,8 @@ permalink: /kb/082/Q82706/
 
 ## Q82706: Changing to No Network Doesn't Remove WinPopup from WIN.INI
 
+{% raw %}
+
 	Article: Q82706
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/082/Q82706/
 	
 	=============================================================================
 	
+
+{% endraw %}

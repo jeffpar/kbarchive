@@ -6,6 +6,8 @@ permalink: /kb/154/Q154054/
 
 ## Q154054: PRB: Possible Application Failure Using SmartHeap
 
+{% raw %}
+
 	Article: Q154054
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -70,3 +72,5 @@ permalink: /kb/154/Q154054/
 	
 	=============================================================================
 	
+
+{% endraw %}

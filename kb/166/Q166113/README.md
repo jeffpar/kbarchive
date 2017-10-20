@@ -6,6 +6,8 @@ permalink: /kb/166/Q166113/
 
 ## Q166113: PRB: User-defined Modules Can't Be Used Through ODBC or DAO
 
+{% raw %}
+
 	Article: Q166113
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2 5.0 6.0
@@ -89,3 +91,5 @@ permalink: /kb/166/Q166113/
 	
 	=============================================================================
 	
+
+{% endraw %}

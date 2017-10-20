@@ -6,6 +6,8 @@ permalink: /kb/196/Q196845/
 
 ## Q196845: WD97: Errors in Cross-References in Master Document or Sub Doc
 
+{% raw %}
+
 	Article: Q196845
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/196/Q196845/
 	
 	=============================================================================
 	
+
+{% endraw %}

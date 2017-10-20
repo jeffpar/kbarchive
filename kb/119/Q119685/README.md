@@ -6,6 +6,8 @@ permalink: /kb/119/Q119685/
 
 ## Q119685: FFAPI: ERRMSG: Mail Received for Unknown Addresses
 
+{% raw %}
+
 	Article: Q119685
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -63,3 +65,5 @@ permalink: /kb/119/Q119685/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102873/
 
 ## Q102873: BOOT.INI and ARC Path Naming Conventions and Usage
 
+{% raw %}
+
 	Article: Q102873
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -351,3 +353,5 @@ permalink: /kb/102/Q102873/
 	
 	=============================================================================
 	
+
+{% endraw %}

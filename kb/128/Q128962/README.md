@@ -6,6 +6,8 @@ permalink: /kb/128/Q128962/
 
 ## Q128962: PC WSPlus: Synchronizing Calendar Files for Remote Mail Users
 
+{% raw %}
+
 	Article: Q128962
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a,3.2
@@ -104,3 +106,5 @@ permalink: /kb/128/Q128962/
 	
 	=============================================================================
 	
+
+{% endraw %}

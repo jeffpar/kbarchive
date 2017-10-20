@@ -6,6 +6,8 @@ permalink: /kb/247/Q247620/
 
 ## Q247620: XCLN: Clients Cannot Download OAB After Exchange Server Upgrade
 
+{% raw %}
+
 	Article: Q247620
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -54,3 +56,5 @@ permalink: /kb/247/Q247620/
 	
 	=============================================================================
 	
+
+{% endraw %}

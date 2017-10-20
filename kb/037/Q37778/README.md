@@ -6,6 +6,8 @@ permalink: /kb/037/Q37778/
 
 ## Q37778: Emulator Math Operations in My DLL that Uses LLIBCDLL
 
+{% raw %}
+
 	Article: Q37778
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -28,3 +30,5 @@ permalink: /kb/037/Q37778/
 	emulator math package (default) and puts emulator math commands in
 	your code. When this emulator math code is linked with LLIBCDLL.LIB,
 	which uses alternate math, it will not work correctly.
+
+{% endraw %}

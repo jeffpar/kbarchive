@@ -6,6 +6,8 @@ permalink: /kb/147/Q147084/
 
 ## Q147084: XFOR: Message Received from Unknown Dirsync Requestor
 
+{% raw %}
+
 	Article: Q147084
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/147/Q147084/
 	
 	=============================================================================
 	
+
+{% endraw %}

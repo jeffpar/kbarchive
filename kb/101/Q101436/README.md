@@ -6,6 +6,8 @@ permalink: /kb/101/Q101436/
 
 ## Q101436: Deleting DoubleSpace Drives Causes the System to Hang
 
+{% raw %}
+
 	Article: Q101436
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -66,3 +68,5 @@ permalink: /kb/101/Q101436/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163853/
 
 ## Q163853: RAS Phone Book Terminal in Chinese Function Does Not Work
 
+{% raw %}
+
 	Article: Q163853
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -56,3 +58,5 @@ permalink: /kb/163/Q163853/
 	
 	=============================================================================
 	
+
+{% endraw %}

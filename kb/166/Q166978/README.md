@@ -6,6 +6,8 @@ permalink: /kb/166/Q166978/
 
 ## Q166978: WD97: Subdocuments Lost When Master Document Saved in HTML
 
+{% raw %}
+
 	Article: Q166978
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -112,3 +114,5 @@ permalink: /kb/166/Q166978/
 	
 	=============================================================================
 	
+
+{% endraw %}

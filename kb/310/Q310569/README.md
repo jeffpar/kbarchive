@@ -6,6 +6,8 @@ permalink: /kb/310/Q310569/
 
 ## Q310569: PRB: Using Object.Value in UPDATE - SQL Fails
 
+{% raw %}
+
 	Article: Q310569
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -170,3 +172,5 @@ permalink: /kb/310/Q310569/
 	
 	=============================================================================
 	
+
+{% endraw %}

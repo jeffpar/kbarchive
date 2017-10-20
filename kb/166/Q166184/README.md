@@ -6,6 +6,8 @@ permalink: /kb/166/Q166184/
 
 ## Q166184: Event ID 3870: Not a Valid Computer Name
 
+{% raw %}
+
 	Article: Q166184
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -93,3 +95,5 @@ permalink: /kb/166/Q166184/
 	
 	=============================================================================
 	
+
+{% endraw %}

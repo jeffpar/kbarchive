@@ -6,6 +6,8 @@ permalink: /kb/241/Q241530/
 
 ## Q241530: HOWTO: Call an API That Uses Structures from eVB/VBCE6
 
+{% raw %}
+
 	Article: Q241530
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,3.0
@@ -227,3 +229,5 @@ permalink: /kb/241/Q241530/
 	
 	=============================================================================
 	
+
+{% endraw %}

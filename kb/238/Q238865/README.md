@@ -6,6 +6,8 @@ permalink: /kb/238/Q238865/
 
 ## Q238865: SMS: SMSMon32 Process Hangs on Client After Applying SMS 2.0 SP1
 
+{% raw %}
+
 	Article: Q238865
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -112,3 +114,5 @@ permalink: /kb/238/Q238865/
 	
 	=============================================================================
 	
+
+{% endraw %}

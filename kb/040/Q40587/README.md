@@ -6,6 +6,8 @@ permalink: /kb/040/Q40587/
 
 ## Q40587: Floating-Point Routines Are Not Reentrant
 
+{% raw %}
+
 	Article: Q40587
 	Product(s): See article
 	Version(s): 5.10
@@ -23,3 +25,5 @@ permalink: /kb/040/Q40587/
 	If you want to develop a program that requires the coprocessor to be
 	reentrant, you must provide your own routines that save and restore
 	the registers of the coprocessor.
+
+{% endraw %}

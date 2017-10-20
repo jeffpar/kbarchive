@@ -6,6 +6,8 @@ permalink: /kb/317/Q317132/
 
 ## Q317132: &quot;0x0000007F&quot; Err on Windows NT Server 4.0, Terminal Server Ed
 
+{% raw %}
+
 	Article: Q317132
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -90,3 +92,5 @@ permalink: /kb/317/Q317132/
 	
 	=============================================================================
 	
+
+{% endraw %}

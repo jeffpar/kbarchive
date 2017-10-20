@@ -6,6 +6,8 @@ permalink: /kb/136/Q136023/
 
 ## Q136023: Batch Files Stop Executing with Windows NT version 3.51
 
+{% raw %}
+
 	Article: Q136023
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/136/Q136023/
 	
 	=============================================================================
 	
+
+{% endraw %}

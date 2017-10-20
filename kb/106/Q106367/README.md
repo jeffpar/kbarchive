@@ -6,6 +6,8 @@ permalink: /kb/106/Q106367/
 
 ## Q106367: WinPopup Message Incorrectly States Message Was Sent
 
+{% raw %}
+
 	Article: Q106367
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -71,3 +73,5 @@ permalink: /kb/106/Q106367/
 	
 	=============================================================================
 	
+
+{% endraw %}

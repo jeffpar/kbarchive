@@ -6,6 +6,8 @@ permalink: /kb/297/Q297292/
 
 ## Q297292: HOWTO: Use RegObji.exe to Copy a Registry Key Programmatically
 
+{% raw %}
+
 	Article: Q297292
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -138,3 +140,5 @@ permalink: /kb/297/Q297292/
 	
 	=============================================================================
 	
+
+{% endraw %}

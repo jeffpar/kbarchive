@@ -6,6 +6,8 @@ permalink: /kb/133/Q133192/
 
 ## Q133192: XCLN: Received Message Time Stamp Is Time Zone Impaired
 
+{% raw %}
+
 	Article: Q133192
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0 95
@@ -46,3 +48,5 @@ permalink: /kb/133/Q133192/
 	
 	=============================================================================
 	
+
+{% endraw %}

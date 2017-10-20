@@ -6,6 +6,8 @@ permalink: /kb/031/Q31526/
 
 ## Q31526: MASM 5.10 EXT.DOC: PFileToTop - Makes File Visible in Window
 
+{% raw %}
+
 	Article: Q31526
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -30,3 +32,5 @@ permalink: /kb/031/Q31526/
 	 */
 	void pascal pFileToTop (pFileTmp)
 	PFILE pFileTmp;
+
+{% endraw %}

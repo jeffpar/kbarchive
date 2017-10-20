@@ -6,6 +6,8 @@ permalink: /kb/142/Q142941/
 
 ## Q142941: Clients Using Novell ODI IPX/SPX Protocol Are Disconnected
 
+{% raw %}
+
 	Article: Q142941
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -73,3 +75,5 @@ permalink: /kb/142/Q142941/
 	
 	=============================================================================
 	
+
+{% endraw %}

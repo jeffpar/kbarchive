@@ -6,6 +6,8 @@ permalink: /kb/319/Q319179/
 
 ## Q319179: PRB: Starting IIS MMC to Retrieve Directory Properties Is Slow
 
+{% raw %}
+
 	Article: Q319179
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -75,3 +77,5 @@ permalink: /kb/319/Q319179/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/042/Q42420/
 
 ## Q42420: How to Get Help on Errors in QuickC
 
+{% raw %}
+
 	Article: Q42420
 	Product(s): See article
 	Version(s): 2.00
@@ -35,3 +37,5 @@ permalink: /kb/042/Q42420/
 	   will be e.c1015.
 	
 	Help on the error will now be displayed.
+
+{% endraw %}

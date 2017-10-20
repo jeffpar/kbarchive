@@ -6,6 +6,8 @@ permalink: /kb/138/Q138558/
 
 ## Q138558: PRB: INKEY() May Return Same ASCII Values for Different Keys
 
+{% raw %}
+
 	Article: Q138558
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -109,3 +111,5 @@ permalink: /kb/138/Q138558/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169673/
 
 ## Q169673: XADM: Remote Procedure Call Fails When Generating Offline AB
 
+{% raw %}
+
 	Article: Q169673
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.00
@@ -103,3 +105,5 @@ permalink: /kb/169/Q169673/
 	
 	=============================================================================
 	
+
+{% endraw %}

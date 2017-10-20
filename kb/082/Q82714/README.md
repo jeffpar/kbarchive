@@ -6,6 +6,8 @@ permalink: /kb/082/Q82714/
 
 ## Q82714: Available Conventional Memory for MS-DOS
 
+{% raw %}
+
 	Article: Q82714
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/082/Q82714/
 	
 	=============================================================================
 	
+
+{% endraw %}

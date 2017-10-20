@@ -6,6 +6,8 @@ permalink: /kb/194/Q194601/
 
 ## Q194601: WD97:Bottom Border Deleted in Converted WordPerfect 5.x Document
 
+{% raw %}
+
 	Article: Q194601
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -51,3 +53,5 @@ permalink: /kb/194/Q194601/
 	
 	=============================================================================
 	
+
+{% endraw %}

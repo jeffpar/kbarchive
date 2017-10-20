@@ -6,6 +6,8 @@ permalink: /kb/195/Q195129/
 
 ## Q195129: WD97: WordPerfect Table Formulas Are Not Retained in Word
 
+{% raw %}
+
 	Article: Q195129
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/195/Q195129/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126422/
 
 ## Q126422: DEC ALPHA AXP Firmware Revisions Needed for Windows NT 3.5
 
+{% raw %}
+
 	Article: Q126422
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/126/Q126422/
 	
 	=============================================================================
 	
+
+{% endraw %}

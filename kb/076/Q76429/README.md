@@ -6,6 +6,8 @@ permalink: /kb/076/Q76429/
 
 ## Q76429: Flight Simulator Not Supported with A/UX Operating System
 
+{% raw %}
+
 	Article: Q76429
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -28,3 +30,5 @@ permalink: /kb/076/Q76429/
 	
 	=============================================================================
 	
+
+{% endraw %}

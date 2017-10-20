@@ -6,6 +6,8 @@ permalink: /kb/128/Q128596/
 
 ## Q128596: Default Wavemix.ini from Golf 2.0
 
+{% raw %}
+
 	Article: Q128596
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -153,3 +155,5 @@ permalink: /kb/128/Q128596/
 	
 	=============================================================================
 	
+
+{% endraw %}

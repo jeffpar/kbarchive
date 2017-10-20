@@ -6,6 +6,8 @@ permalink: /kb/025/Q25407/
 
 ## Q25407: Assigning Key Sequence to ENTER and BACKSPACE Keys
 
+{% raw %}
+
 	Article: Q25407
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -21,3 +23,5 @@ permalink: /kb/025/Q25407/
 	
 	Consult Chapter 6 of the "Microsoft Editor User's Guide," titled
 	"Function Assignments and Macros."
+
+{% endraw %}

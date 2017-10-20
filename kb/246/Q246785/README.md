@@ -6,6 +6,8 @@ permalink: /kb/246/Q246785/
 
 ## Q246785: SMS: SMSExec Components Report SQL Error Messages
 
+{% raw %}
+
 	Article: Q246785
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -77,3 +79,5 @@ permalink: /kb/246/Q246785/
 	
 	=============================================================================
 	
+
+{% endraw %}

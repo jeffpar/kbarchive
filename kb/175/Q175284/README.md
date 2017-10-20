@@ -6,6 +6,8 @@ permalink: /kb/175/Q175284/
 
 ## Q175284: XADM: Remove All Does Not Remove JET Performance Counters
 
+{% raw %}
+
 	Article: Q175284
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -32,3 +34,5 @@ permalink: /kb/175/Q175284/
 	
 	=============================================================================
 	
+
+{% endraw %}

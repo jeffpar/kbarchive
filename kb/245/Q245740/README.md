@@ -6,6 +6,8 @@ permalink: /kb/245/Q245740/
 
 ## Q245740: XIMS: Addresses Rerouted to IPv4 Literals Result in NDRs
 
+{% raw %}
+
 	Article: Q245740
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/245/Q245740/
 	
 	=============================================================================
 	
+
+{% endraw %}

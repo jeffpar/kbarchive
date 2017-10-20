@@ -6,6 +6,8 @@ permalink: /kb/104/Q104451/
 
 ## Q104451: PPT: Copy Picture from Excel Automatically Paste Links
 
+{% raw %}
+
 	Article: Q104451
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,5.0,7.0
@@ -82,3 +84,5 @@ permalink: /kb/104/Q104451/
 	
 	=============================================================================
 	
+
+{% endraw %}

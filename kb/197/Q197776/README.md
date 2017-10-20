@@ -6,6 +6,8 @@ permalink: /kb/197/Q197776/
 
 ## Q197776: Pagefile Size Limited to 4,095 MB
 
+{% raw %}
+
 	Article: Q197776
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/197/Q197776/
 	
 	=============================================================================
 	
+
+{% endraw %}

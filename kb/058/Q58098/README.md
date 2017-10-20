@@ -6,6 +6,8 @@ permalink: /kb/058/Q58098/
 
 ## Q58098: Cannot Use a Pointer to Call Function in a Static Overlay
 
+{% raw %}
+
 	Article: Q58098
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:2.x,3.x,4.x,5.0x,5.1,5.11,5.13,5.15,5.2,5.3x,5.5,5.6
@@ -70,3 +72,5 @@ permalink: /kb/058/Q58098/
 	
 	=============================================================================
 	
+
+{% endraw %}

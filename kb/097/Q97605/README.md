@@ -6,6 +6,8 @@ permalink: /kb/097/Q97605/
 
 ## Q97605: Running Apex II Sketching Program from a DoubleSpace Volume
 
+{% raw %}
+
 	Article: Q97605
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -94,3 +96,5 @@ permalink: /kb/097/Q97605/
 	
 	=============================================================================
 	
+
+{% endraw %}

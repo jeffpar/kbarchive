@@ -6,6 +6,8 @@ permalink: /kb/190/Q190502/
 
 ## Q190502: PRB: Missing Files Dialog Box Appears When Running PDW
 
+{% raw %}
+
 	Article: Q190502
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -131,3 +133,5 @@ permalink: /kb/190/Q190502/
 	
 	=============================================================================
 	
+
+{% endraw %}

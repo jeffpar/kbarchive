@@ -6,6 +6,8 @@ permalink: /kb/320/Q320032/
 
 ## Q320032: XFOR: Cannot Establish Connection with Lotus Notes Server
 
+{% raw %}
+
 	Article: Q320032
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -114,3 +116,5 @@ permalink: /kb/320/Q320032/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145726/
 
 ## Q145726: BUG: Setting FontTransparent Has No Effect on Windows 95/98/Me
 
+{% raw %}
+
 	Article: Q145726
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -176,3 +178,5 @@ permalink: /kb/145/Q145726/
 	
 	=============================================================================
 	
+
+{% endraw %}

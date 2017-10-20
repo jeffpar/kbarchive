@@ -6,6 +6,8 @@ permalink: /kb/139/Q139295/
 
 ## Q139295: FIX: Local File Is Not Saved with Save All
 
+{% raw %}
+
 	Article: Q139295
 	Product(s): Microsoft C Compiler
 	Version(s): 2.2,4.0,4.1,4.2
@@ -103,3 +105,5 @@ permalink: /kb/139/Q139295/
 	
 	=============================================================================
 	
+
+{% endraw %}

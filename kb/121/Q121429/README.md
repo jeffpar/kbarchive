@@ -6,6 +6,8 @@ permalink: /kb/121/Q121429/
 
 ## Q121429: Scenes 2.0: Cannot Interrupt Display of Thumbnails
 
+{% raw %}
+
 	Article: Q121429
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -54,3 +56,5 @@ permalink: /kb/121/Q121429/
 	
 	=============================================================================
 	
+
+{% endraw %}

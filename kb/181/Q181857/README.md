@@ -6,6 +6,8 @@ permalink: /kb/181/Q181857/
 
 ## Q181857: PRB: RDO Run-time Error '40060': Incorrect Type for Parameter
 
+{% raw %}
+
 	Article: Q181857
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -124,3 +126,5 @@ permalink: /kb/181/Q181857/
 	
 	=============================================================================
 	
+
+{% endraw %}

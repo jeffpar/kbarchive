@@ -6,6 +6,8 @@ permalink: /kb/245/Q245473/
 
 ## Q245473: XADM: DMS: Installing Hotfixes or SPs on DMS Exchange Server
 
+{% raw %}
+
 	Article: Q245473
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/245/Q245473/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174141/
 
 ## Q174141: HOWTO: Display Outlook Folder Names
 
+{% raw %}
+
 	Article: Q174141
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/174/Q174141/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250060/
 
 ## Q250060: BUG: VC++ May Stop Responding When Importing a Type Library
 
+{% raw %}
+
 	Article: Q250060
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -86,3 +88,5 @@ permalink: /kb/250/Q250060/
 	
 	=============================================================================
 	
+
+{% endraw %}

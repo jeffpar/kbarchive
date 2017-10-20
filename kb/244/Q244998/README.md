@@ -6,6 +6,8 @@ permalink: /kb/244/Q244998/
 
 ## Q244998: Port Number Not Return with Content Location when URL Specified
 
+{% raw %}
+
 	Article: Q244998
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -68,3 +70,5 @@ permalink: /kb/244/Q244998/
 	
 	=============================================================================
 	
+
+{% endraw %}

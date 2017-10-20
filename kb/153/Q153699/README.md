@@ -6,6 +6,8 @@ permalink: /kb/153/Q153699/
 
 ## Q153699: XFOR: The character set files could not be found.
 
+{% raw %}
+
 	Article: Q153699
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/153/Q153699/
 	
 	=============================================================================
 	
+
+{% endraw %}

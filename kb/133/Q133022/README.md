@@ -6,6 +6,8 @@ permalink: /kb/133/Q133022/
 
 ## Q133022: FIX: Spinner Doesn't Inherit Color Props from .vcx Definition
 
+{% raw %}
+
 	Article: Q133022
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -83,3 +85,5 @@ permalink: /kb/133/Q133022/
 	
 	=============================================================================
 	
+
+{% endraw %}

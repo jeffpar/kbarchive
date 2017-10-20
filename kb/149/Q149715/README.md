@@ -6,6 +6,8 @@ permalink: /kb/149/Q149715/
 
 ## Q149715: Setup Using Msbatch.inf Pauses at Network Dialog Box
 
+{% raw %}
+
 	Article: Q149715
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/149/Q149715/
 	
 	=============================================================================
 	
+
+{% endraw %}

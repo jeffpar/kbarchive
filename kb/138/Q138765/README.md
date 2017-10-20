@@ -6,6 +6,8 @@ permalink: /kb/138/Q138765/
 
 ## Q138765: BUG: Ml.exe Hangs If ASSUME DataReg:ERROR Directive Used
 
+{% raw %}
+
 	Article: Q138765
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.11
@@ -73,3 +75,5 @@ permalink: /kb/138/Q138765/
 	
 	=============================================================================
 	
+
+{% endraw %}

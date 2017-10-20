@@ -6,6 +6,8 @@ permalink: /kb/146/Q146588/
 
 ## Q146588: XCON: Content Not Supported NDR When Using X.400 Connector
 
+{% raw %}
+
 	Article: Q146588
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/146/Q146588/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250482/
 
 ## Q250482: Establishing Replication Agreements Between MMS Servers
 
+{% raw %}
+
 	Article: Q250482
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -75,3 +77,5 @@ permalink: /kb/250/Q250482/
 	
 	=============================================================================
 	
+
+{% endraw %}

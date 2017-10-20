@@ -6,6 +6,8 @@ permalink: /kb/090/Q90251/
 
 ## Q90251: Hearts: Cannot Detect Other Player's Cards
 
+{% raw %}
+
 	Article: Q90251
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -41,3 +43,5 @@ permalink: /kb/090/Q90251/
 	
 	=============================================================================
 	
+
+{% endraw %}

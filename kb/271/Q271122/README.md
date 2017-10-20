@@ -6,6 +6,8 @@ permalink: /kb/271/Q271122/
 
 ## Q271122: SMS: Users Are Unexpectedly Notified of an Advertised Program
 
+{% raw %}
+
 	Article: Q271122
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -241,3 +243,5 @@ permalink: /kb/271/Q271122/
 	
 	=============================================================================
 	
+
+{% endraw %}

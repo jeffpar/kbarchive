@@ -6,6 +6,8 @@ permalink: /kb/135/Q135155/
 
 ## Q135155: Unable to See MDI Window Frames in True Color Modes
 
+{% raw %}
+
 	Article: Q135155
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/135/Q135155/
 	
 	=============================================================================
 	
+
+{% endraw %}

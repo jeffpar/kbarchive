@@ -6,6 +6,8 @@ permalink: /kb/173/Q173203/
 
 ## Q173203: MDG: Useful life exceeded sending to REMOTE
 
+{% raw %}
+
 	Article: Q173203
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 4.0
@@ -64,3 +66,5 @@ permalink: /kb/173/Q173203/
 	
 	=============================================================================
 	
+
+{% endraw %}

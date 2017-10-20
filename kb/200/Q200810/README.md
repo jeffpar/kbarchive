@@ -6,6 +6,8 @@ permalink: /kb/200/Q200810/
 
 ## Q200810: XWEB: Korean Language Outlook Web Access Empty Mail Dialog Box S
 
+{% raw %}
+
 	Article: Q200810
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -49,3 +51,5 @@ permalink: /kb/200/Q200810/
 	
 	=============================================================================
 	
+
+{% endraw %}

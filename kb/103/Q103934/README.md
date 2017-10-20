@@ -6,6 +6,8 @@ permalink: /kb/103/Q103934/
 
 ## Q103934: How to Add More Than Two IDE or ESDI Drives in Windows NT
 
+{% raw %}
+
 	Article: Q103934
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -138,3 +140,5 @@ permalink: /kb/103/Q103934/
 	
 	=============================================================================
 	
+
+{% endraw %}

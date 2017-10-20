@@ -6,6 +6,8 @@ permalink: /kb/158/Q158412/
 
 ## Q158412: Cannot Install MSN with Proxy Server Set Up
 
+{% raw %}
+
 	Article: Q158412
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,95
@@ -62,3 +64,5 @@ permalink: /kb/158/Q158412/
 	
 	=============================================================================
 	
+
+{% endraw %}

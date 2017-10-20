@@ -6,6 +6,8 @@ permalink: /kb/110/Q110733/
 
 ## Q110733: PC Win: Summary List of Mail for Windows 3.2 Bugs
 
+{% raw %}
+
 	Article: Q110733
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -929,3 +931,5 @@ permalink: /kb/110/Q110733/
 	
 	=============================================================================
 	
+
+{% endraw %}

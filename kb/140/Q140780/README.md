@@ -6,6 +6,8 @@ permalink: /kb/140/Q140780/
 
 ## Q140780: DocErr: WINS Help Lists Incorrect Max Value for Verify Interval
 
+{% raw %}
+
 	Article: Q140780
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -48,3 +50,5 @@ permalink: /kb/140/Q140780/
 	
 	=============================================================================
 	
+
+{% endraw %}

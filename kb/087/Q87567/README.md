@@ -6,6 +6,8 @@ permalink: /kb/087/Q87567/
 
 ## Q87567: Windows &amp; MS-DOS 5 Upgrade Disk Set (3.5 Inch)
 
+{% raw %}
+
 	Article: Q87567
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0
@@ -679,3 +681,5 @@ permalink: /kb/087/Q87567/
 	
 	=============================================================================
 	
+
+{% endraw %}

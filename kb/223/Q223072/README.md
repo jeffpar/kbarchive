@@ -6,6 +6,8 @@ permalink: /kb/223/Q223072/
 
 ## Q223072: FIX: DataReport Boolean TextBox Non-Blank Null Value Causes Erro
 
+{% raw %}
+
 	Article: Q223072
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -51,3 +53,5 @@ permalink: /kb/223/Q223072/
 	
 	=============================================================================
 	
+
+{% endraw %}

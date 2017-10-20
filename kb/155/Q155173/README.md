@@ -6,6 +6,8 @@ permalink: /kb/155/Q155173/
 
 ## Q155173: PRB: Undocumented Compiler Switches /QIfdiv, /QIf, and /QI6
 
+{% raw %}
+
 	Article: Q155173
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -60,3 +62,5 @@ permalink: /kb/155/Q155173/
 	
 	=============================================================================
 	
+
+{% endraw %}

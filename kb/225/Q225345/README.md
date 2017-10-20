@@ -6,6 +6,8 @@ permalink: /kb/225/Q225345/
 
 ## Q225345: XCON: MTA Mishandles Deferred Delivery Messages After DST
 
+{% raw %}
+
 	Article: Q225345
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -97,3 +99,5 @@ permalink: /kb/225/Q225345/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172063/
 
 ## Q172063: PRB: Visual Basic UserDocuments Are Displayed as Garbage Text
 
+{% raw %}
+
 	Article: Q172063
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -112,3 +114,5 @@ permalink: /kb/172/Q172063/
 	
 	=============================================================================
 	
+
+{% endraw %}

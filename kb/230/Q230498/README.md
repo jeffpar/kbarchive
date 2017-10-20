@@ -6,6 +6,8 @@ permalink: /kb/230/Q230498/
 
 ## Q230498: XCON: Message Looping NDR for Newly Created SMTP CR
 
+{% raw %}
+
 	Article: Q230498
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/230/Q230498/
 	
 	=============================================================================
 	
+
+{% endraw %}

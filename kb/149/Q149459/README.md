@@ -6,6 +6,8 @@ permalink: /kb/149/Q149459/
 
 ## Q149459: MS Exchange Tools Menu Does Not Work or Mouse Hangs
 
+{% raw %}
+
 	Article: Q149459
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2
@@ -75,3 +77,5 @@ permalink: /kb/149/Q149459/
 	
 	=============================================================================
 	
+
+{% endraw %}

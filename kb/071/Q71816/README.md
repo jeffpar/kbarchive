@@ -6,6 +6,8 @@ permalink: /kb/071/Q71816/
 
 ## Q71816: AT&amp;T 6286 Prints Corrupted Output in Standard Mode
 
+{% raw %}
+
 	Article: Q71816
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/071/Q71816/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/315/Q315737/
 
 ## Q315737: Zoo Tycoon: Black Screen or Blue Screen When You Start Game
 
+{% raw %}
+
 	Article: Q315737
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -225,3 +227,5 @@ permalink: /kb/315/Q315737/
 	
 	=============================================================================
 	
+
+{% endraw %}

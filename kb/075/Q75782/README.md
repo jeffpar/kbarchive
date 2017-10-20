@@ -6,6 +6,8 @@ permalink: /kb/075/Q75782/
 
 ## Q75782: Packard Bell ISV 286 Cannot Run Windows in Standard Mode
 
+{% raw %}
+
 	Article: Q75782
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -43,3 +45,5 @@ permalink: /kb/075/Q75782/
 	
 	=============================================================================
 	
+
+{% endraw %}

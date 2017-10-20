@@ -6,6 +6,8 @@ permalink: /kb/131/Q131422/
 
 ## Q131422: PC Ext: Purpose and Function of -V20 Switch
 
+{% raw %}
+
 	Article: Q131422
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -91,3 +93,5 @@ permalink: /kb/131/Q131422/
 	
 	=============================================================================
 	
+
+{% endraw %}

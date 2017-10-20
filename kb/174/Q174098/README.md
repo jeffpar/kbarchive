@@ -6,6 +6,8 @@ permalink: /kb/174/Q174098/
 
 ## Q174098: How to Stop Receiving MSN-Sponsored Promotions Through E-mail
 
+{% raw %}
+
 	Article: Q174098
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -100,3 +102,5 @@ permalink: /kb/174/Q174098/
 	
 	=============================================================================
 	
+
+{% endraw %}

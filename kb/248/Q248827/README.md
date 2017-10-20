@@ -6,6 +6,8 @@ permalink: /kb/248/Q248827/
 
 ## Q248827: XADM: Message Is Never Delivered to Foreign System User
 
+{% raw %}
+
 	Article: Q248827
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -97,3 +99,5 @@ permalink: /kb/248/Q248827/
 	
 	=============================================================================
 	
+
+{% endraw %}

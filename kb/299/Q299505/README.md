@@ -6,6 +6,8 @@ permalink: /kb/299/Q299505/
 
 ## Q299505: How to Deploy Passport Across Several Computers in a Cluster
 
+{% raw %}
+
 	Article: Q299505
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -113,3 +115,5 @@ permalink: /kb/299/Q299505/
 	
 	=============================================================================
 	
+
+{% endraw %}

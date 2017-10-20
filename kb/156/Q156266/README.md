@@ -6,6 +6,8 @@ permalink: /kb/156/Q156266/
 
 ## Q156266: BUG: Adding Menu Shifts Controls and Reduces SDI Form Height
 
+{% raw %}
+
 	Article: Q156266
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -204,3 +206,5 @@ permalink: /kb/156/Q156266/
 	
 	=============================================================================
 	
+
+{% endraw %}

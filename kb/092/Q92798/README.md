@@ -6,6 +6,8 @@ permalink: /kb/092/Q92798/
 
 ## Q92798: Windows Err Msg: There is a Problem with Your Media Device
 
+{% raw %}
+
 	Article: Q92798
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/092/Q92798/
 	
 	=============================================================================
 	
+
+{% endraw %}

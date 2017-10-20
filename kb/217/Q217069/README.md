@@ -6,6 +6,8 @@ permalink: /kb/217/Q217069/
 
 ## Q217069: Serial Printer Communication Fault Pop-up Notification Available
 
+{% raw %}
+
 	Article: Q217069
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -81,3 +83,5 @@ permalink: /kb/217/Q217069/
 	
 	=============================================================================
 	
+
+{% endraw %}

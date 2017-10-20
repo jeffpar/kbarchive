@@ -6,6 +6,8 @@ permalink: /kb/120/Q120438/
 
 ## Q120438: Starting Lotus Improv Installed from Server Fails w/ Net Error
 
+{% raw %}
+
 	Article: Q120438
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/120/Q120438/
 	
 	=============================================================================
 	
+
+{% endraw %}

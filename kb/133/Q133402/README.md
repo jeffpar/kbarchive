@@ -6,6 +6,8 @@ permalink: /kb/133/Q133402/
 
 ## Q133402: Timex Data Link: Invalid Anniversaries May Appear
 
+{% raw %}
+
 	Article: Q133402
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -51,3 +53,5 @@ permalink: /kb/133/Q133402/
 	
 	=============================================================================
 	
+
+{% endraw %}

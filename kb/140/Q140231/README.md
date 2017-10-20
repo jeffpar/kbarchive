@@ -6,6 +6,8 @@ permalink: /kb/140/Q140231/
 
 ## Q140231: Changing Boot Partition from NTFS to FAT Hangs Setup
 
+{% raw %}
+
 	Article: Q140231
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -73,3 +75,5 @@ permalink: /kb/140/Q140231/
 	
 	=============================================================================
 	
+
+{% endraw %}

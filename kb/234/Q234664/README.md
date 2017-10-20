@@ -6,6 +6,8 @@ permalink: /kb/234/Q234664/
 
 ## Q234664: BUG: Containers Show &lt;Unknown Verb&gt; for MFC Static OCXs
 
+{% raw %}
+
 	Article: Q234664
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -90,3 +92,5 @@ permalink: /kb/234/Q234664/
 	
 	=============================================================================
 	
+
+{% endraw %}

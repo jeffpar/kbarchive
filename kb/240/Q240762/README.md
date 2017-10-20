@@ -6,6 +6,8 @@ permalink: /kb/240/Q240762/
 
 ## Q240762: Password Synch Fails after Promoting Backup SNAPMP Service
 
+{% raw %}
+
 	Article: Q240762
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -130,3 +132,5 @@ permalink: /kb/240/Q240762/
 	
 	=============================================================================
 	
+
+{% endraw %}

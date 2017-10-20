@@ -6,6 +6,8 @@ permalink: /kb/152/Q152255/
 
 ## Q152255: PRB: Custom AppWizard Doesn't Initialize Custom Step Dialogs
 
+{% raw %}
+
 	Article: Q152255
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/152/Q152255/
 	
 	=============================================================================
 	
+
+{% endraw %}

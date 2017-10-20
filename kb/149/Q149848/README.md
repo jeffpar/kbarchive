@@ -6,6 +6,8 @@ permalink: /kb/149/Q149848/
 
 ## Q149848: How to Use the SQLMORERESULTS() Function
 
+{% raw %}
+
 	Article: Q149848
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0,3.0b
@@ -66,3 +68,5 @@ permalink: /kb/149/Q149848/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/052/Q52206/
 
 ## Q52206: MS-DOS Hangs when &quot;Relative&quot; PATH Is Used
 
+{% raw %}
+
 	Article: Q52206
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x
@@ -54,3 +56,5 @@ permalink: /kb/052/Q52206/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/215/Q215397/
 
 ## Q215397: BUG: Menu Cannot be Disabled By CommandBar Controls Collection
 
+{% raw %}
+
 	Article: Q215397
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,2.11,3.0
@@ -108,3 +110,5 @@ permalink: /kb/215/Q215397/
 	
 	=============================================================================
 	
+
+{% endraw %}

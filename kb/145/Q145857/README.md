@@ -6,6 +6,8 @@ permalink: /kb/145/Q145857/
 
 ## Q145857: How to Use Multiple Menus in MFC App That Uses GetDefaultMenu
 
+{% raw %}
+
 	Article: Q145857
 	Product(s): Microsoft C Compiler
 	Version(s): 1.50 1.51 1.52 | 2.00 2.10 2.20
@@ -125,3 +127,5 @@ permalink: /kb/145/Q145857/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188807/
 
 ## Q188807: XADM: Information Store Crashes While Client Downloads POP3 Mail
 
+{% raw %}
+
 	Article: Q188807
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -98,3 +100,5 @@ permalink: /kb/188/Q188807/
 	
 	=============================================================================
 	
+
+{% endraw %}

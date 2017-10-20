@@ -6,6 +6,8 @@ permalink: /kb/281/Q281257/
 
 ## Q281257: SMSINST: Access Violation When Appending Data to REG_MULTI_SZ
 
+{% raw %}
+
 	Article: Q281257
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -62,3 +64,5 @@ permalink: /kb/281/Q281257/
 	
 	=============================================================================
 	
+
+{% endraw %}

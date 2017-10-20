@@ -6,6 +6,8 @@ permalink: /kb/174/Q174101/
 
 ## Q174101: XFOR: OV/VM Connector Installation Instruction(LinkAge)
 
+{% raw %}
+
 	Article: Q174101
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 SP3,5.5
@@ -283,3 +285,5 @@ permalink: /kb/174/Q174101/
 	
 	=============================================================================
 	
+
+{% endraw %}

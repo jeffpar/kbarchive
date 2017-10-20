@@ -6,6 +6,8 @@ permalink: /kb/115/Q115596/
 
 ## Q115596: Problems with TrueType Fonts and Diamond Video Drivers
 
+{% raw %}
+
 	Article: Q115596
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -82,3 +84,5 @@ permalink: /kb/115/Q115596/
 	
 	=============================================================================
 	
+
+{% endraw %}

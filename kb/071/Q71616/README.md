@@ -6,6 +6,8 @@ permalink: /kb/071/Q71616/
 
 ## Q71616: Windows Entertainment Pack 1 Will Not Set Up
 
+{% raw %}
+
 	Article: Q71616
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/071/Q71616/
 	
 	=============================================================================
 	
+
+{% endraw %}

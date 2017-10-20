@@ -6,6 +6,8 @@ permalink: /kb/194/Q194199/
 
 ## Q194199: FIX: Not All Setup Wizard Options Are Saved in Wzsetup.ini
 
+{% raw %}
+
 	Article: Q194199
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -89,3 +91,5 @@ permalink: /kb/194/Q194199/
 	
 	=============================================================================
 	
+
+{% endraw %}

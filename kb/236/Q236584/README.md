@@ -6,6 +6,8 @@ permalink: /kb/236/Q236584/
 
 ## Q236584: 128-Bit RAS Client Is Authenticated but Cannot Use Resources
 
+{% raw %}
+
 	Article: Q236584
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP5
@@ -103,3 +105,5 @@ permalink: /kb/236/Q236584/
 	
 	=============================================================================
 	
+
+{% endraw %}

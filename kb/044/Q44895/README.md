@@ -6,6 +6,8 @@ permalink: /kb/044/Q44895/
 
 ## Q44895: INFO: kbhit() Does Not Take Character out of Buffer
 
+{% raw %}
+
 	Article: Q44895
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -65,3 +67,5 @@ permalink: /kb/044/Q44895/
 	
 	=============================================================================
 	
+
+{% endraw %}

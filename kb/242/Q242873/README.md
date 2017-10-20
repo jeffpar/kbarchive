@@ -6,6 +6,8 @@ permalink: /kb/242/Q242873/
 
 ## Q242873: XCLN: How to Secure Outlook When You Are Away from Your Computer
 
+{% raw %}
+
 	Article: Q242873
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -81,3 +83,5 @@ permalink: /kb/242/Q242873/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157450/
 
 ## Q157450: Matrox Millennium Adapter Occasionally Displays Blue Pixels
 
+{% raw %}
+
 	Article: Q157450
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/157/Q157450/
 	
 	=============================================================================
 	
+
+{% endraw %}

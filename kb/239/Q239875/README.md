@@ -6,6 +6,8 @@ permalink: /kb/239/Q239875/
 
 ## Q239875: HOW TO: Use ASP to Force SSL for Specific Pages
 
+{% raw %}
+
 	Article: Q239875
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -118,3 +120,5 @@ permalink: /kb/239/Q239875/
 	
 	=============================================================================
 	
+
+{% endraw %}

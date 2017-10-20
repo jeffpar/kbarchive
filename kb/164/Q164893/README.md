@@ -6,6 +6,8 @@ permalink: /kb/164/Q164893/
 
 ## Q164893: SNA Server Client Can Overwrite SNA Server Installation
 
+{% raw %}
+
 	Article: Q164893
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0; winnt:2.0,2.1,2.11,3.0
@@ -79,3 +81,5 @@ permalink: /kb/164/Q164893/
 	
 	=============================================================================
 	
+
+{% endraw %}

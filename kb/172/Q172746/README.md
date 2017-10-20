@@ -6,6 +6,8 @@ permalink: /kb/172/Q172746/
 
 ## Q172746: WD97: Deleted Browser Reappears in Web Page Preview Dialog Box
 
+{% raw %}
+
 	Article: Q172746
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/172/Q172746/
 	
 	=============================================================================
 	
+
+{% endraw %}

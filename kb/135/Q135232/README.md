@@ -6,6 +6,8 @@ permalink: /kb/135/Q135232/
 
 ## Q135232: CONN: Running MACGATE.EXE as an Idle Process to Dispatch
 
+{% raw %}
+
 	Article: Q135232
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -75,3 +77,5 @@ permalink: /kb/135/Q135232/
 	
 	=============================================================================
 	
+
+{% endraw %}

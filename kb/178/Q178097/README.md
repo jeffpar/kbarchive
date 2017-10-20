@@ -6,6 +6,8 @@ permalink: /kb/178/Q178097/
 
 ## Q178097: XADM: Delete Control Message Does Not Work in NNTP Protocol
 
+{% raw %}
+
 	Article: Q178097
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -49,3 +51,5 @@ permalink: /kb/178/Q178097/
 	
 	=============================================================================
 	
+
+{% endraw %}

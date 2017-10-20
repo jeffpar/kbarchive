@@ -6,6 +6,8 @@ permalink: /kb/066/Q66572/
 
 ## Q66572: NMAKE 1.11 Fails to Stop If Command Is Redirected
 
+{% raw %}
+
 	Article: Q66572
 	Product(s): See article
 	Version(s): 1.11
@@ -38,3 +40,5 @@ permalink: /kb/066/Q66572/
 	   nmake /f foo.mak >foo.err
 	
 	The drawback to this is that you can only have one error log.
+
+{% endraw %}

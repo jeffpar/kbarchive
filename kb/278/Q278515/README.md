@@ -6,6 +6,8 @@ permalink: /kb/278/Q278515/
 
 ## Q278515: How to use the &quot;page options&quot; feature on MSN Companion
 
+{% raw %}
+
 	Article: Q278515
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -59,3 +61,5 @@ permalink: /kb/278/Q278515/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158368/
 
 ## Q158368: Missing Control in Volume Control Tool
 
+{% raw %}
+
 	Article: Q158368
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -49,3 +51,5 @@ permalink: /kb/158/Q158368/
 	
 	=============================================================================
 	
+
+{% endraw %}

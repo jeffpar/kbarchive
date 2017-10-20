@@ -6,6 +6,8 @@ permalink: /kb/070/Q70422/
 
 ## Q70422: MS-DOS Editor &amp; QBasic (MCGA w/Mono. Monitor)
 
+{% raw %}
+
 	Article: Q70422
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -43,3 +45,5 @@ permalink: /kb/070/Q70422/
 	
 	=============================================================================
 	
+
+{% endraw %}

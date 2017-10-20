@@ -6,6 +6,8 @@ permalink: /kb/084/Q84143/
 
 ## Q84143: Windows 3.1 PRINT SCREEN May Fail in Low-Memory Situations
 
+{% raw %}
+
 	Article: Q84143
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/084/Q84143/
 	
 	=============================================================================
 	
+
+{% endraw %}

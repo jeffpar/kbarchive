@@ -6,6 +6,8 @@ permalink: /kb/157/Q157665/
 
 ## Q157665: WD97: Print to PostScript File Cuts Off Top of Picture
 
+{% raw %}
+
 	Article: Q157665
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/157/Q157665/
 	
 	=============================================================================
 	
+
+{% endraw %}

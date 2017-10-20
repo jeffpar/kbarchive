@@ -6,6 +6,8 @@ permalink: /kb/193/Q193761/
 
 ## Q193761: XFOR: cc:Mail Connector Doesn't Deliver NDRs from Certain ADMDs
 
+{% raw %}
+
 	Article: Q193761
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -78,3 +80,5 @@ permalink: /kb/193/Q193761/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156228/
 
 ## Q156228: Incorrect Help for NE1000 Network Adapter Setup
 
+{% raw %}
+
 	Article: Q156228
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -48,3 +50,5 @@ permalink: /kb/156/Q156228/
 	
 	=============================================================================
 	
+
+{% endraw %}

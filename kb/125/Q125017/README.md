@@ -6,6 +6,8 @@ permalink: /kb/125/Q125017/
 
 ## Q125017: PC WSPlus: Tentative Appointments Do Not Show in Planner
 
+{% raw %}
+
 	Article: Q125017
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/125/Q125017/
 	
 	=============================================================================
 	
+
+{% endraw %}

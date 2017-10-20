@@ -6,6 +6,8 @@ permalink: /kb/139/Q139895/
 
 ## Q139895: How To Convert Personal or Common Groups
 
+{% raw %}
+
 	Article: Q139895
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -74,3 +76,5 @@ permalink: /kb/139/Q139895/
 	
 	=============================================================================
 	
+
+{% endraw %}

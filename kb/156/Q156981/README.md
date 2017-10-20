@@ -6,6 +6,8 @@ permalink: /kb/156/Q156981/
 
 ## Q156981: FP: How to Assign IP Restrictions in FrontPage
 
+{% raw %}
+
 	Article: Q156981
 	Product(s): Word Front Page
 	Version(s): ; WINDOWS:1.1
@@ -98,3 +100,5 @@ permalink: /kb/156/Q156981/
 	
 	=============================================================================
 	
+
+{% endraw %}

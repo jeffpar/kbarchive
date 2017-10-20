@@ -6,6 +6,8 @@ permalink: /kb/111/Q111010/
 
 ## Q111010: HOWTO: Use PASSTHROUGH As An Alternative to SpoolFile()
 
+{% raw %}
+
 	Article: Q111010
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -333,3 +335,5 @@ permalink: /kb/111/Q111010/
 	
 	=============================================================================
 	
+
+{% endraw %}

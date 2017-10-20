@@ -6,6 +6,8 @@ permalink: /kb/179/Q179561/
 
 ## Q179561: SMS: Invproc Stops Responding on Long Raw File Records
 
+{% raw %}
+
 	Article: Q179561
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -65,3 +67,5 @@ permalink: /kb/179/Q179561/
 	
 	=============================================================================
 	
+
+{% endraw %}

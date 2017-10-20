@@ -6,6 +6,8 @@ permalink: /kb/180/Q180538/
 
 ## Q180538: SNA Server SDLC Connection Fails to Reactivate After Host IPL
 
+{% raw %}
+
 	Article: Q180538
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,4.0
@@ -74,3 +76,5 @@ permalink: /kb/180/Q180538/
 	
 	=============================================================================
 	
+
+{% endraw %}

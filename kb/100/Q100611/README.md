@@ -6,6 +6,8 @@ permalink: /kb/100/Q100611/
 
 ## Q100611: FIX: VB 2.0 Prof Demo Causes Error: Invalid File Format
 
+{% raw %}
+
 	Article: Q100611
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0
@@ -69,3 +71,5 @@ permalink: /kb/100/Q100611/
 	
 	=============================================================================
 	
+
+{% endraw %}

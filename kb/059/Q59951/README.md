@@ -6,6 +6,8 @@ permalink: /kb/059/Q59951/
 
 ## Q59951: DosWaitNmPipe() Behavior
 
+{% raw %}
+
 	Article: Q59951
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/059/Q59951/
 	
 	=============================================================================
 	
+
+{% endraw %}

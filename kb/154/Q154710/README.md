@@ -6,6 +6,8 @@ permalink: /kb/154/Q154710/
 
 ## Q154710: Cannot View Long File Names on Network in 16-Bit Programs
 
+{% raw %}
+
 	Article: Q154710
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/154/Q154710/
 	
 	=============================================================================
 	
+
+{% endraw %}

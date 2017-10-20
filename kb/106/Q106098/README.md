@@ -6,6 +6,8 @@ permalink: /kb/106/Q106098/
 
 ## Q106098: PC Adm: Err Msg: Failure to Read Record
 
+{% raw %}
+
 	Article: Q106098
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.0b,3.2
@@ -51,3 +53,5 @@ permalink: /kb/106/Q106098/
 	
 	=============================================================================
 	
+
+{% endraw %}

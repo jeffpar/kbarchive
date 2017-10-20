@@ -6,6 +6,8 @@ permalink: /kb/092/Q92661/
 
 ## Q92661: MoreFonts May Cause GP Fault in Windows 3.1 Help
 
+{% raw %}
+
 	Article: Q92661
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/092/Q92661/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/280/Q280411/
 
 ## Q280411: XADM: Sender Does Not Receive an NDR
 
+{% raw %}
+
 	Article: Q280411
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -114,3 +116,5 @@ permalink: /kb/280/Q280411/
 	
 	=============================================================================
 	
+
+{% endraw %}

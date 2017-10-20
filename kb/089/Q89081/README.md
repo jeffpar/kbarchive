@@ -6,6 +6,8 @@ permalink: /kb/089/Q89081/
 
 ## Q89081: WFWG Err Msg: No Files Found... Using CD-ROM and NetWare
 
+{% raw %}
+
 	Article: Q89081
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/089/Q89081/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190441/
 
 ## Q190441: XADM: Access Violation Deleting NT Accounts Using DAPI
 
+{% raw %}
+
 	Article: Q190441
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -104,3 +106,5 @@ permalink: /kb/190/Q190441/
 	
 	=============================================================================
 	
+
+{% endraw %}

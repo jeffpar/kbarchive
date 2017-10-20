@@ -6,6 +6,8 @@ permalink: /kb/154/Q154166/
 
 ## Q154166: PRB: ActiveX Control Painting Problems in Visual C++ 4.2
 
+{% raw %}
+
 	Article: Q154166
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0
@@ -74,3 +76,5 @@ permalink: /kb/154/Q154166/
 	
 	=============================================================================
 	
+
+{% endraw %}

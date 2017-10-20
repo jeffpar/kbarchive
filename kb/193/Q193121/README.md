@@ -6,6 +6,8 @@ permalink: /kb/193/Q193121/
 
 ## Q193121: Cannot Connect to DFS Leaf a Second Time If Server Is NetWare
 
+{% raw %}
+
 	Article: Q193121
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/193/Q193121/
 	
 	=============================================================================
 	
+
+{% endraw %}

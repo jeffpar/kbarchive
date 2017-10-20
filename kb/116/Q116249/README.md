@@ -6,6 +6,8 @@ permalink: /kb/116/Q116249/
 
 ## Q116249: Object Packager Font Is Unreadable in Windows 95
 
+{% raw %}
+
 	Article: Q116249
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/116/Q116249/
 	
 	=============================================================================
 	
+
+{% endraw %}

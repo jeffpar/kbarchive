@@ -6,6 +6,8 @@ permalink: /kb/308/Q308916/
 
 ## Q308916: Generic/Text Only Drivers Don't Correctly Print Eastern European
 
+{% raw %}
+
 	Article: Q308916
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -115,3 +117,5 @@ permalink: /kb/308/Q308916/
 	
 	=============================================================================
 	
+
+{% endraw %}

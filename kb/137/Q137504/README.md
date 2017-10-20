@@ -6,6 +6,8 @@ permalink: /kb/137/Q137504/
 
 ## Q137504: Server Operators Group Unable to Install FPNW
 
+{% raw %}
+
 	Article: Q137504
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/137/Q137504/
 	
 	=============================================================================
 	
+
+{% endraw %}

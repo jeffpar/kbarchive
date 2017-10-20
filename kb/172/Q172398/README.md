@@ -6,6 +6,8 @@ permalink: /kb/172/Q172398/
 
 ## Q172398: FIX: Debug Assertion When Assigning to STL String
 
+{% raw %}
+
 	Article: Q172398
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -91,3 +93,5 @@ permalink: /kb/172/Q172398/
 	
 	=============================================================================
 	
+
+{% endraw %}

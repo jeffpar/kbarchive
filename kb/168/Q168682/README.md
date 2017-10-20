@@ -6,6 +6,8 @@ permalink: /kb/168/Q168682/
 
 ## Q168682: SMS: Usage of Sendcode.exe and Its Service Codes
 
+{% raw %}
+
 	Article: Q168682
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -82,3 +84,5 @@ permalink: /kb/168/Q168682/
 	
 	=============================================================================
 	
+
+{% endraw %}

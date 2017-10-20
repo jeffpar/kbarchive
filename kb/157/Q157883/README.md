@@ -6,6 +6,8 @@ permalink: /kb/157/Q157883/
 
 ## Q157883: How Can I Get VSS and Visual InterDev Integration Working?
 
+{% raw %}
+
 	Article: Q157883
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:1.0,5.0,6.0
@@ -54,3 +56,5 @@ permalink: /kb/157/Q157883/
 	
 	=============================================================================
 	
+
+{% endraw %}

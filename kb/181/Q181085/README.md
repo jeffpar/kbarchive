@@ -6,6 +6,8 @@ permalink: /kb/181/Q181085/
 
 ## Q181085: BUG: SET COLLATE &amp; Queries - Additional Problem Scenarios
 
+{% raw %}
+
 	Article: Q181085
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a
@@ -223,3 +225,5 @@ permalink: /kb/181/Q181085/
 	
 	=============================================================================
 	
+
+{% endraw %}

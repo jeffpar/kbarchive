@@ -6,6 +6,8 @@ permalink: /kb/087/Q87180/
 
 ## Q87180: PROFS: Errors on Gateway PC
 
+{% raw %}
+
 	Article: Q87180
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -54,3 +56,5 @@ permalink: /kb/087/Q87180/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138247/
 
 ## Q138247: List of Documentation Errors in Windows 95 Readme.txt File
 
+{% raw %}
+
 	Article: Q138247
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/138/Q138247/
 	
 	=============================================================================
 	
+
+{% endraw %}

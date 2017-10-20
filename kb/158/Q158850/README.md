@@ -6,6 +6,8 @@ permalink: /kb/158/Q158850/
 
 ## Q158850: Cannot Compress Write-Protected Removable Media
 
+{% raw %}
+
 	Article: Q158850
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1,95
@@ -60,3 +62,5 @@ permalink: /kb/158/Q158850/
 	
 	=============================================================================
 	
+
+{% endraw %}

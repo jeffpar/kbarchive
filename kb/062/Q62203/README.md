@@ -6,6 +6,8 @@ permalink: /kb/062/Q62203/
 
 ## Q62203: ADAPTER.BAS Needs SLEEP Statement When Compiled
 
+{% raw %}
+
 	Article: Q62203
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -50,3 +52,5 @@ permalink: /kb/062/Q62203/
 	  Adapter
 	  SLEEP
 	  END
+
+{% endraw %}

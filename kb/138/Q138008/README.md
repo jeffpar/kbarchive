@@ -6,6 +6,8 @@ permalink: /kb/138/Q138008/
 
 ## Q138008: PCMCIA Utilities for Windows NT
 
+{% raw %}
+
 	Article: Q138008
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/138/Q138008/
 	
 	=============================================================================
 	
+
+{% endraw %}

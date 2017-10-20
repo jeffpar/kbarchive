@@ -6,6 +6,8 @@ permalink: /kb/086/Q86269/
 
 ## Q86269: PRB: IBM Proprinter Draft Mode Unavailable Under Windows 3.1
 
+{% raw %}
+
 	Article: Q86269
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -83,3 +85,5 @@ permalink: /kb/086/Q86269/
 	
 	=============================================================================
 	
+
+{% endraw %}

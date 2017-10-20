@@ -6,6 +6,8 @@ permalink: /kb/246/Q246123/
 
 ## Q246123: HOWTO: Add Web Projects to Multiple SourceSafe Databases
 
+{% raw %}
+
 	Article: Q246123
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0; winnt:
@@ -126,3 +128,5 @@ permalink: /kb/246/Q246123/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130546/
 
 ## Q130546: FIX: C2227 &amp; C2653 on Explicit Destructor Call in Template
 
+{% raw %}
+
 	Article: Q130546
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1
@@ -92,3 +94,5 @@ permalink: /kb/130/Q130546/
 	
 	=============================================================================
 	
+
+{% endraw %}

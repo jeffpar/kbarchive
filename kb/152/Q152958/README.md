@@ -6,6 +6,8 @@ permalink: /kb/152/Q152958/
 
 ## Q152958: XADM: Organizational Forms Unavailable to Other Servers in Site
 
+{% raw %}
+
 	Article: Q152958
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/152/Q152958/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111822/
 
 ## Q111822: PPT: How to Scale Bitmaps and Movies for Better Slide Shows
 
+{% raw %}
+
 	Article: Q111822
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:3.0,3.0b,4.0; WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -149,3 +151,5 @@ permalink: /kb/111/Q111822/
 	
 	=============================================================================
 	
+
+{% endraw %}

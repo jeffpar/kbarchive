@@ -6,6 +6,8 @@ permalink: /kb/045/Q45350/
 
 ## Q45350: Casting Pointer to Char in the Watch Window Will Hang Machine
 
+{% raw %}
+
 	Article: Q45350
 	Product(s): See article
 	Version(s): 2.00
@@ -44,3 +46,5 @@ permalink: /kb/045/Q45350/
 	}
 	
 	QuickC Versions 1.x do not exhibit this problem.
+
+{% endraw %}

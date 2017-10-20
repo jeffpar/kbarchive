@@ -6,6 +6,8 @@ permalink: /kb/292/Q292065/
 
 ## Q292065: Windows 2000 Resource Kits Missing Remote Administration Scripts
 
+{% raw %}
+
 	Article: Q292065
 	Product(s): Microsoft Press
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/292/Q292065/
 	
 	=============================================================================
 	
+
+{% endraw %}

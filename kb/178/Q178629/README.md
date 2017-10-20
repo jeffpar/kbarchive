@@ -6,6 +6,8 @@ permalink: /kb/178/Q178629/
 
 ## Q178629: XCLN: How To Set the Maximize Property of an Exchange Form
 
+{% raw %}
+
 	Article: Q178629
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -72,3 +74,5 @@ permalink: /kb/178/Q178629/
 	
 	=============================================================================
 	
+
+{% endraw %}

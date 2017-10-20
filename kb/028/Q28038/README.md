@@ -6,6 +6,8 @@ permalink: /kb/028/Q28038/
 
 ## Q28038: No &quot;Incompatible Runtime&quot; CHAIN Error with Mismatched COMMON
 
+{% raw %}
+
 	Article: Q28038
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -73,3 +75,5 @@ permalink: /kb/028/Q28038/
 	  common a,b,c,d,e
 	  print a,b,c,d,e
 	  end
+
+{% endraw %}

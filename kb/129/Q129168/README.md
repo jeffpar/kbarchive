@@ -6,6 +6,8 @@ permalink: /kb/129/Q129168/
 
 ## Q129168: How to Recover Corrupt DataBase Container Files
 
+{% raw %}
+
 	Article: Q129168
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -76,3 +78,5 @@ permalink: /kb/129/Q129168/
 	
 	=============================================================================
 	
+
+{% endraw %}

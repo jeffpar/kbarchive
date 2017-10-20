@@ -6,6 +6,8 @@ permalink: /kb/113/Q113122/
 
 ## Q113122: Bookshelf: After Jumping to Topic, Cannot Find Info
 
+{% raw %}
+
 	Article: Q113122
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1995 edition; WINDOWS:
@@ -54,3 +56,5 @@ permalink: /kb/113/Q113122/
 	
 	=============================================================================
 	
+
+{% endraw %}

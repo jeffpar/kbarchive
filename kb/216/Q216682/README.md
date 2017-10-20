@@ -6,6 +6,8 @@ permalink: /kb/216/Q216682/
 
 ## Q216682: XADM: Perfwiz Doesn't Recognize Logical Partitions on Clustered
 
+{% raw %}
+
 	Article: Q216682
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/216/Q216682/
 	
 	=============================================================================
 	
+
+{% endraw %}

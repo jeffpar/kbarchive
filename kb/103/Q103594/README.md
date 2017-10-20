@@ -6,6 +6,8 @@ permalink: /kb/103/Q103594/
 
 ## Q103594: SET LIBRARY TO Search Method
 
+{% raw %}
+
 	Article: Q103594
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,3.0
@@ -37,3 +39,5 @@ permalink: /kb/103/Q103594/
 	
 	=============================================================================
 	
+
+{% endraw %}

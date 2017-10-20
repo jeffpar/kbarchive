@@ -6,6 +6,8 @@ permalink: /kb/100/Q100484/
 
 ## Q100484: SoundBits: GP Fault after Switching Back to Windows
 
+{% raw %}
+
 	Article: Q100484
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/100/Q100484/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140323/
 
 ## Q140323: Microsoft Unimodem V Readme.txt File
 
+{% raw %}
+
 	Article: Q140323
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -192,3 +194,5 @@ permalink: /kb/140/Q140323/
 	
 	=============================================================================
 	
+
+{% endraw %}

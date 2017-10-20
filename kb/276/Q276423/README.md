@@ -6,6 +6,8 @@ permalink: /kb/276/Q276423/
 
 ## Q276423: How to Reinstall Audio and Video Codecs in Windows 2000
 
+{% raw %}
+
 	Article: Q276423
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/276/Q276423/
 	
 	=============================================================================
 	
+
+{% endraw %}

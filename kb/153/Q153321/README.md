@@ -6,6 +6,8 @@ permalink: /kb/153/Q153321/
 
 ## Q153321: Network Monitor Err Msg: Parser DLL Is Not Valid Message
 
+{% raw %}
+
 	Article: Q153321
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -46,3 +48,5 @@ permalink: /kb/153/Q153321/
 	
 	=============================================================================
 	
+
+{% endraw %}

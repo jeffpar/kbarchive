@@ -6,6 +6,8 @@ permalink: /kb/110/Q110800/
 
 ## Q110800: FIX: CEditView in Splitter Window Doesn't Update Document
 
+{% raw %}
+
 	Article: Q110800
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5
@@ -124,3 +126,5 @@ permalink: /kb/110/Q110800/
 	
 	=============================================================================
 	
+
+{% endraw %}

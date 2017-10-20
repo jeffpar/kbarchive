@@ -6,6 +6,8 @@ permalink: /kb/126/Q126745/
 
 ## Q126745: Explorapedia: ErrMsg: Error 8## (or 4##) When Starting
 
+{% raw %}
+
 	Article: Q126745
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -134,3 +136,5 @@ permalink: /kb/126/Q126745/
 	
 	=============================================================================
 	
+
+{% endraw %}

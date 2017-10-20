@@ -6,6 +6,8 @@ permalink: /kb/163/Q163574/
 
 ## Q163574: WD97: DisplayAlerts=wdAlertsNone Fails to Suppress Print Error
 
+{% raw %}
+
 	Article: Q163574
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/163/Q163574/
 	
 	=============================================================================
 	
+
+{% endraw %}

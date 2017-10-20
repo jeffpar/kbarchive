@@ -6,6 +6,8 @@ permalink: /kb/239/Q239049/
 
 ## Q239049: HTTP Compression Maximum Size Setting Not Checked Using HTMLA
 
+{% raw %}
+
 	Article: Q239049
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -50,3 +52,5 @@ permalink: /kb/239/Q239049/
 	
 	=============================================================================
 	
+
+{% endraw %}

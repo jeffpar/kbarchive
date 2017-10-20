@@ -6,6 +6,8 @@ permalink: /kb/259/Q259611/
 
 ## Q259611: Determining Intel Pentium Processor Identification/Frequency
 
+{% raw %}
+
 	Article: Q259611
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -80,3 +82,5 @@ permalink: /kb/259/Q259611/
 	
 	=============================================================================
 	
+
+{% endraw %}

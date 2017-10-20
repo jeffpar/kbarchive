@@ -6,6 +6,8 @@ permalink: /kb/096/Q96447/
 
 ## Q96447: Manifest Shows EMS Memory with NOEMS Switch
 
+{% raw %}
+
 	Article: Q96447
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -61,3 +63,5 @@ permalink: /kb/096/Q96447/
 	
 	=============================================================================
 	
+
+{% endraw %}

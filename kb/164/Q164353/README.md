@@ -6,6 +6,8 @@ permalink: /kb/164/Q164353/
 
 ## Q164353: SMSINST: Command Line Parameter Order for Installer Executables
 
+{% raw %}
+
 	Article: Q164353
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.2
@@ -84,3 +86,5 @@ permalink: /kb/164/Q164353/
 	
 	=============================================================================
 	
+
+{% endraw %}

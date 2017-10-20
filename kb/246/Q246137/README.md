@@ -6,6 +6,8 @@ permalink: /kb/246/Q246137/
 
 ## Q246137: FS2000: &quot;System Error&quot; When You Attempt to Start the Program
 
+{% raw %}
+
 	Article: Q246137
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/246/Q246137/
 	
 	=============================================================================
 	
+
+{% endraw %}

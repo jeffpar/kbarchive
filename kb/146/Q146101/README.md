@@ -6,6 +6,8 @@ permalink: /kb/146/Q146101/
 
 ## Q146101: XCLN: Dirty Open Freedoc Does Not Give Cancel Option
 
+{% raw %}
+
 	Article: Q146101
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146101/
 	
 	=============================================================================
 	
+
+{% endraw %}

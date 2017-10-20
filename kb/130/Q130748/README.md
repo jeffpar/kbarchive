@@ -6,6 +6,8 @@ permalink: /kb/130/Q130748/
 
 ## Q130748: No Error Message Associating Incompatible File Type with Paint
 
+{% raw %}
+
 	Article: Q130748
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/130/Q130748/
 	
 	=============================================================================
 	
+
+{% endraw %}

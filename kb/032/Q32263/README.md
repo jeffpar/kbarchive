@@ -6,6 +6,8 @@ permalink: /kb/032/Q32263/
 
 ## Q32263: &quot;Microsoft Mouse Driver Not Found&quot; Error Message
 
+{% raw %}
+
 	Article: Q32263
 	Product(s): See article
 	Version(s): 1.00
@@ -20,3 +22,5 @@ permalink: /kb/032/Q32263/
 	   This error message should not be confused with the message "Driver
 	not installed-- Microsoft Mouse not found", which is a mouse driver
 	not loading message.
+
+{% endraw %}

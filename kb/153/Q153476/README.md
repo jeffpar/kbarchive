@@ -6,6 +6,8 @@ permalink: /kb/153/Q153476/
 
 ## Q153476: Windows NT 3.51 DHCP Server Stops Assigning IP Addresses to Clie
 
+{% raw %}
+
 	Article: Q153476
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -47,3 +49,5 @@ permalink: /kb/153/Q153476/
 	
 	=============================================================================
 	
+
+{% endraw %}

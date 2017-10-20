@@ -6,6 +6,8 @@ permalink: /kb/151/Q151060/
 
 ## Q151060: Games AVI Files Choppy on a Minimum Configuration
 
+{% raw %}
+
 	Article: Q151060
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/151/Q151060/
 	
 	=============================================================================
 	
+
+{% endraw %}

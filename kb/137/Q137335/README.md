@@ -6,6 +6,8 @@ permalink: /kb/137/Q137335/
 
 ## Q137335: Error Message: Invalid VxD Dynamic Link Call from...
 
+{% raw %}
+
 	Article: Q137335
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -274,3 +276,5 @@ permalink: /kb/137/Q137335/
 	
 	=============================================================================
 	
+
+{% endraw %}

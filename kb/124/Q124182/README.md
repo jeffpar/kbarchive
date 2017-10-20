@@ -6,6 +6,8 @@ permalink: /kb/124/Q124182/
 
 ## Q124182: Vacuum Tool Hangs Computer with Pro Audio Spectrum
 
+{% raw %}
+
 	Article: Q124182
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -69,3 +71,5 @@ permalink: /kb/124/Q124182/
 	
 	=============================================================================
 	
+
+{% endraw %}

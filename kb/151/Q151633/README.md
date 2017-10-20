@@ -6,6 +6,8 @@ permalink: /kb/151/Q151633/
 
 ## Q151633: Event ID 7000: The Service Is Already Running
 
+{% raw %}
+
 	Article: Q151633
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -75,3 +77,5 @@ permalink: /kb/151/Q151633/
 	
 	=============================================================================
 	
+
+{% endraw %}

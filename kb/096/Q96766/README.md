@@ -6,6 +6,8 @@ permalink: /kb/096/Q96766/
 
 ## Q96766: Running Both Extended and Expanded Memory on Your Computer
 
+{% raw %}
+
 	Article: Q96766
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -382,3 +384,5 @@ permalink: /kb/096/Q96766/
 	
 	=============================================================================
 	
+
+{% endraw %}

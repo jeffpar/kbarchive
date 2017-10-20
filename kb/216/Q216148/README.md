@@ -6,6 +6,8 @@ permalink: /kb/216/Q216148/
 
 ## Q216148: Help on Index Server Not Available from MMC
 
+{% raw %}
+
 	Article: Q216148
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5
@@ -49,3 +51,5 @@ permalink: /kb/216/Q216148/
 	
 	=============================================================================
 	
+
+{% endraw %}

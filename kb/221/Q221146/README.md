@@ -6,6 +6,8 @@ permalink: /kb/221/Q221146/
 
 ## Q221146: INFO: Description of Visual SourceSafe Versions, Build Numbers
 
+{% raw %}
+
 	Article: Q221146
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,4.0a,5.0,6.0
@@ -112,3 +114,5 @@ permalink: /kb/221/Q221146/
 	
 	=============================================================================
 	
+
+{% endraw %}

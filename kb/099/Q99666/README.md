@@ -6,6 +6,8 @@ permalink: /kb/099/Q99666/
 
 ## Q99666: Mac Gty: Explanation of Gateway Naming Utility (GNU)
 
+{% raw %}
+
 	Article: Q99666
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -48,3 +50,5 @@ permalink: /kb/099/Q99666/
 	
 	=============================================================================
 	
+
+{% endraw %}

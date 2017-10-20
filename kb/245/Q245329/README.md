@@ -6,6 +6,8 @@ permalink: /kb/245/Q245329/
 
 ## Q245329: Convlog.exe Converts Year 2000 Dates to Year 2028
 
+{% raw %}
+
 	Article: Q245329
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0,4.0
@@ -191,3 +193,5 @@ permalink: /kb/245/Q245329/
 	
 	=============================================================================
 	
+
+{% endraw %}

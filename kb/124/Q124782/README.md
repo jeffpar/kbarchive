@@ -6,6 +6,8 @@ permalink: /kb/124/Q124782/
 
 ## Q124782: NBA Basketball Hangs After Running Maintenance Mode Setup
 
+{% raw %}
+
 	Article: Q124782
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994-1995 edition
@@ -81,3 +83,5 @@ permalink: /kb/124/Q124782/
 	
 	=============================================================================
 	
+
+{% endraw %}

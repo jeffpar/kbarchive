@@ -6,6 +6,8 @@ permalink: /kb/085/Q85524/
 
 ## Q85524: Page Size Unavailable for Toshiba P351/P1351
 
+{% raw %}
+
 	Article: Q85524
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/085/Q85524/
 	
 	=============================================================================
 	
+
+{% endraw %}

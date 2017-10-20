@@ -6,6 +6,8 @@ permalink: /kb/156/Q156753/
 
 ## Q156753: How to Determine Domestic/International Version of IIS
 
+{% raw %}
+
 	Article: Q156753
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0
@@ -64,3 +66,5 @@ permalink: /kb/156/Q156753/
 	
 	=============================================================================
 	
+
+{% endraw %}

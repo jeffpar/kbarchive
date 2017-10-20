@@ -6,6 +6,8 @@ permalink: /kb/269/Q269357/
 
 ## Q269357: INFO: INSERT/DELETE/UPDATE behavior in SQL Server ODBC apps
 
+{% raw %}
+
 	Article: Q269357
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.5
@@ -60,3 +62,5 @@ permalink: /kb/269/Q269357/
 	
 	=============================================================================
 	
+
+{% endraw %}

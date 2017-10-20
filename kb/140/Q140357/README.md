@@ -6,6 +6,8 @@ permalink: /kb/140/Q140357/
 
 ## Q140357: BUG: No Warning Using Extern &quot;C&quot; in a Namespace
 
+{% raw %}
+
 	Article: Q140357
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,5.0,6.0
@@ -120,3 +122,5 @@ permalink: /kb/140/Q140357/
 	
 	=============================================================================
 	
+
+{% endraw %}

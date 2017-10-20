@@ -6,6 +6,8 @@ permalink: /kb/172/Q172353/
 
 ## Q172353: Setting the NIC Driver Startup Value to SYSTEM Causes STOP 0X1E
 
+{% raw %}
+
 	Article: Q172353
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -46,3 +48,5 @@ permalink: /kb/172/Q172353/
 	
 	=============================================================================
 	
+
+{% endraw %}

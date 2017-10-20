@@ -6,6 +6,8 @@ permalink: /kb/136/Q136934/
 
 ## Q136934: Event ID 7000 and 7001 Appear When You Use HTTP and GSNW
 
+{% raw %}
+
 	Article: Q136934
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -76,3 +78,5 @@ permalink: /kb/136/Q136934/
 	
 	=============================================================================
 	
+
+{% endraw %}

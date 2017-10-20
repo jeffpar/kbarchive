@@ -6,6 +6,8 @@ permalink: /kb/094/Q94385/
 
 ## Q94385: Microsoft Systems Journal: February 1993
 
+{% raw %}
+
 	Article: Q94385
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/094/Q94385/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170324/
 
 ## Q170324: CMD PCI-0646U Accessed in Compatibility Mode in OSR2
 
+{% raw %}
+
 	Article: Q170324
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -59,3 +61,5 @@ permalink: /kb/170/Q170324/
 	
 	=============================================================================
 	
+
+{% endraw %}

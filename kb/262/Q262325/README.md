@@ -6,6 +6,8 @@ permalink: /kb/262/Q262325/
 
 ## Q262325: Motocross Madness 2: Distorted Textures on Motorcycle and Rider
 
+{% raw %}
+
 	Article: Q262325
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -64,3 +66,5 @@ permalink: /kb/262/Q262325/
 	
 	=============================================================================
 	
+
+{% endraw %}

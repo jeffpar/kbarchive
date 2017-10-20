@@ -6,6 +6,8 @@ permalink: /kb/237/Q237266/
 
 ## Q237266: Encarta 2000 Err Msg: An Essential Component Is Not Operating...
 
+{% raw %}
+
 	Article: Q237266
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -150,3 +152,5 @@ permalink: /kb/237/Q237266/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216059/
 
 ## Q216059: SMS: SQL Server Requirements Incorrect in Administrator's Guide
 
+{% raw %}
+
 	Article: Q216059
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -49,3 +51,5 @@ permalink: /kb/216/Q216059/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132995/
 
 ## Q132995: Games (I-Q) Requiring or Performing Better in MS-DOS Mode
 
+{% raw %}
+
 	Article: Q132995
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -458,3 +460,5 @@ permalink: /kb/132/Q132995/
 	
 	=============================================================================
 	
+
+{% endraw %}

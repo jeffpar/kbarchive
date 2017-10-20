@@ -6,6 +6,8 @@ permalink: /kb/145/Q145693/
 
 ## Q145693: PRB: _ED Functions in Toolbar Causes Fatal Error
 
+{% raw %}
+
 	Article: Q145693
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -172,3 +174,5 @@ permalink: /kb/145/Q145693/
 	
 	=============================================================================
 	
+
+{% endraw %}

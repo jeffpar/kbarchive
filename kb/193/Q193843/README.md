@@ -6,6 +6,8 @@ permalink: /kb/193/Q193843/
 
 ## Q193843: Demand Dial Fails to Connect When Using Two-Way Authentication
 
+{% raw %}
+
 	Article: Q193843
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/193/Q193843/
 	
 	=============================================================================
 	
+
+{% endraw %}

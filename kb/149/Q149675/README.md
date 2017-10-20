@@ -6,6 +6,8 @@ permalink: /kb/149/Q149675/
 
 ## Q149675: XFOR: Error Sending Mail from Exchange out an MHS Gateway
 
+{% raw %}
+
 	Article: Q149675
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/149/Q149675/
 	
 	=============================================================================
 	
+
+{% endraw %}

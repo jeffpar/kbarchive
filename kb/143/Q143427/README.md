@@ -6,6 +6,8 @@ permalink: /kb/143/Q143427/
 
 ## Q143427: FIX: Cannot Programmatically Select Items in ListView
 
+{% raw %}
+
 	Article: Q143427
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -101,3 +103,5 @@ permalink: /kb/143/Q143427/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271196/
 
 ## Q271196: IIS Log File Entries Have the Incorrect Date and Time Stamp
 
+{% raw %}
+
 	Article: Q271196
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -98,3 +100,5 @@ permalink: /kb/271/Q271196/
 	
 	=============================================================================
 	
+
+{% endraw %}

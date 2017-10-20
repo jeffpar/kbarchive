@@ -6,6 +6,8 @@ permalink: /kb/124/Q124317/
 
 ## Q124317: INF: SQLColAttributes(SQL_COLUMN_LABEL) and Field Description
 
+{% raw %}
+
 	Article: Q124317
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -46,3 +48,5 @@ permalink: /kb/124/Q124317/
 	
 	=============================================================================
 	
+
+{% endraw %}

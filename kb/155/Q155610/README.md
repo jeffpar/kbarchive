@@ -6,6 +6,8 @@ permalink: /kb/155/Q155610/
 
 ## Q155610: Network Neighborhood Cannot Open NFS Folders
 
+{% raw %}
+
 	Article: Q155610
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/155/Q155610/
 	
 	=============================================================================
 	
+
+{% endraw %}

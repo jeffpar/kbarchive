@@ -6,6 +6,8 @@ permalink: /kb/216/Q216765/
 
 ## Q216765: TCP/IP Experiences STOP 0x7F Under Heavy Load
 
+{% raw %}
+
 	Article: Q216765
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -77,3 +79,5 @@ permalink: /kb/216/Q216765/
 	
 	=============================================================================
 	
+
+{% endraw %}

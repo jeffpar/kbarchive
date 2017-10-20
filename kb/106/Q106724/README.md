@@ -6,6 +6,8 @@ permalink: /kb/106/Q106724/
 
 ## Q106724: Debugger Message EE0029 Cannot Access User Memory
 
+{% raw %}
+
 	Article: Q106724
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -75,3 +77,5 @@ permalink: /kb/106/Q106724/
 	
 	=============================================================================
 	
+
+{% endraw %}

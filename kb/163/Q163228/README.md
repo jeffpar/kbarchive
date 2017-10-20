@@ -6,6 +6,8 @@ permalink: /kb/163/Q163228/
 
 ## Q163228: Printing from Windows NT 4.0 to NetWare 3.12 Seems Slow
 
+{% raw %}
+
 	Article: Q163228
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -41,3 +43,5 @@ permalink: /kb/163/Q163228/
 	
 	=============================================================================
 	
+
+{% endraw %}

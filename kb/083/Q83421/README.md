@@ -6,6 +6,8 @@ permalink: /kb/083/Q83421/
 
 ## Q83421: Write Err Msg: There Are No Fonts Installed...
 
+{% raw %}
+
 	Article: Q83421
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/083/Q83421/
 	
 	=============================================================================
 	
+
+{% endraw %}

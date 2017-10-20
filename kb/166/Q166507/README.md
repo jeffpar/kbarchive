@@ -6,6 +6,8 @@ permalink: /kb/166/Q166507/
 
 ## Q166507: HOWTO: Recover from a Lost Anomaly Tracking System Password
 
+{% raw %}
+
 	Article: Q166507
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/166/Q166507/
 	
 	=============================================================================
 	
+
+{% endraw %}

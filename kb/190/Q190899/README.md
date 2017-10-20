@@ -6,6 +6,8 @@ permalink: /kb/190/Q190899/
 
 ## Q190899: How to Determine the OS Type in a Logon Script
 
+{% raw %}
+
 	Article: Q190899
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.51,4.0
@@ -148,3 +150,5 @@ permalink: /kb/190/Q190899/
 	
 	=============================================================================
 	
+
+{% endraw %}

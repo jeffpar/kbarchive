@@ -6,6 +6,8 @@ permalink: /kb/072/Q72160/
 
 ## Q72160: MS-DOS 5 README.TXT: Installing on OS/2 Dual-Boot System
 
+{% raw %}
+
 	Article: Q72160
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -77,3 +79,5 @@ permalink: /kb/072/Q72160/
 	
 	=============================================================================
 	
+
+{% endraw %}

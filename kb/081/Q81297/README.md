@@ -6,6 +6,8 @@ permalink: /kb/081/Q81297/
 
 ## Q81297: Toshiba T3100/10 /20 BIOS Required to Work with Windows 3.0
 
+{% raw %}
+
 	Article: Q81297
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/081/Q81297/
 	
 	=============================================================================
 	
+
+{% endraw %}

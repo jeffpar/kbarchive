@@ -6,6 +6,8 @@ permalink: /kb/137/Q137358/
 
 ## Q137358: Client Upgrade from U.S. to German SMS needs Repeated Upgrade
 
+{% raw %}
+
 	Article: Q137358
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.1
@@ -50,3 +52,5 @@ permalink: /kb/137/Q137358/
 	
 	=============================================================================
 	
+
+{% endraw %}

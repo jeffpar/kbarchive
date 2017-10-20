@@ -6,6 +6,8 @@ permalink: /kb/079/Q79850/
 
 ## Q79850: Buffer Lines Setting in Terminal Limited to 25-244 Lines
 
+{% raw %}
+
 	Article: Q79850
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -35,3 +37,5 @@ permalink: /kb/079/Q79850/
 	
 	=============================================================================
 	
+
+{% endraw %}

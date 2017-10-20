@@ -6,6 +6,8 @@ permalink: /kb/032/Q32309/
 
 ## Q32309: Using _harderr to Capture Critical Error Interrupt 24h
 
+{% raw %}
+
 	Article: Q32309
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -527,3 +529,5 @@ permalink: /kb/032/Q32309/
 	
 	=============================================================================
 	
+
+{% endraw %}

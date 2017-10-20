@@ -6,6 +6,8 @@ permalink: /kb/193/Q193621/
 
 ## Q193621: XCLN: Err Msg: Microsoft_OLE2--ProgIDFromCLSID not found
 
+{% raw %}
+
 	Article: Q193621
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0
@@ -94,3 +96,5 @@ permalink: /kb/193/Q193621/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/202/Q202621/
 
 ## Q202621: FIX: SQL PassThrough May Return Incorrect String
 
+{% raw %}
+
 	Article: Q202621
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.51,4.0,5.0,6.0,6.0 SP3,6.0 SP4,6.0 SP5
@@ -133,3 +135,5 @@ permalink: /kb/202/Q202621/
 	
 	=============================================================================
 	
+
+{% endraw %}

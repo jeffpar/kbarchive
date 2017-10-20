@@ -6,6 +6,8 @@ permalink: /kb/165/Q165735/
 
 ## Q165735: SMS: 3COM 3C589 PCMCIA Network Adapter Card Not Inventoried
 
+{% raw %}
+
 	Article: Q165735
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -59,3 +61,5 @@ permalink: /kb/165/Q165735/
 	
 	=============================================================================
 	
+
+{% endraw %}

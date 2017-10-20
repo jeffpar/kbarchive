@@ -6,6 +6,8 @@ permalink: /kb/125/Q125877/
 
 ## Q125877: WinWord 16 Cannot Open File When Path Contains Special Chars
 
+{% raw %}
+
 	Article: Q125877
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -52,3 +54,5 @@ permalink: /kb/125/Q125877/
 	
 	=============================================================================
 	
+
+{% endraw %}

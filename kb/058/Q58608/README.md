@@ -6,6 +6,8 @@ permalink: /kb/058/Q58608/
 
 ## Q58608: Bad EXE Result Assigning n Between 2 Statements Using Same n
 
+{% raw %}
+
 	Article: Q58608
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -50,3 +52,5 @@ permalink: /kb/058/Q58608/
 	   p = 200
 	   wrong = p
 	   PRINT wrong, p    'In EXE compiled without /X, this prints 0 and 200
+
+{% endraw %}

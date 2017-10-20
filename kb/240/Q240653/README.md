@@ -6,6 +6,8 @@ permalink: /kb/240/Q240653/
 
 ## Q240653: HOWTO: Copy the Screen or Active Window to the Clipboard from VB
 
+{% raw %}
+
 	Article: Q240653
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -147,3 +149,5 @@ permalink: /kb/240/Q240653/
 	
 	=============================================================================
 	
+
+{% endraw %}

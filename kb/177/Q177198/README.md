@@ -6,6 +6,8 @@ permalink: /kb/177/Q177198/
 
 ## Q177198: How to Reinstall Windows 95 Audio and Video Compression
 
+{% raw %}
+
 	Article: Q177198
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :; Win2000:95
@@ -101,3 +103,5 @@ permalink: /kb/177/Q177198/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156718/
 
 ## Q156718: XCLN: Attachment Unusable in Message but Opens in Folder
 
+{% raw %}
+
 	Article: Q156718
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -79,3 +81,5 @@ permalink: /kb/156/Q156718/
 	
 	=============================================================================
 	
+
+{% endraw %}

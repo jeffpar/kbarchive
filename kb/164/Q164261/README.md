@@ -6,6 +6,8 @@ permalink: /kb/164/Q164261/
 
 ## Q164261: Ntbackup Causes Cache to Grow During Restore
 
+{% raw %}
+
 	Article: Q164261
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/164/Q164261/
 	
 	=============================================================================
 	
+
+{% endraw %}

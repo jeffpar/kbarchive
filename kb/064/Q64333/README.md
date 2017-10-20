@@ -6,6 +6,8 @@ permalink: /kb/064/Q64333/
 
 ## Q64333: Marker Beacon Does Not Emit Tones Related to Marker
 
+{% raw %}
+
 	Article: Q64333
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -35,3 +37,5 @@ permalink: /kb/064/Q64333/
 	
 	=============================================================================
 	
+
+{% endraw %}

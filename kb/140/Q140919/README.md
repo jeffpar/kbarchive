@@ -6,6 +6,8 @@ permalink: /kb/140/Q140919/
 
 ## Q140919: INVDOS Reports an Intel Processor Running at 50Mhz as 66Mhz
 
+{% raw %}
+
 	Article: Q140919
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -42,3 +44,5 @@ permalink: /kb/140/Q140919/
 	
 	=============================================================================
 	
+
+{% endraw %}

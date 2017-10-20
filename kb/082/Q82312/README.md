@@ -6,6 +6,8 @@ permalink: /kb/082/Q82312/
 
 ## Q82312: Setup Does Not Modify CONFIG.SYS when ATDOSXL.SYS Is Loaded
 
+{% raw %}
+
 	Article: Q82312
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/082/Q82312/
 	
 	=============================================================================
 	
+
+{% endraw %}

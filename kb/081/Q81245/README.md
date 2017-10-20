@@ -6,6 +6,8 @@ permalink: /kb/081/Q81245/
 
 ## Q81245: DeviceCapabilities Function Sample Code
 
+{% raw %}
+
 	Article: Q81245
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -69,3 +71,5 @@ permalink: /kb/081/Q81245/
 	
 	=============================================================================
 	
+
+{% endraw %}

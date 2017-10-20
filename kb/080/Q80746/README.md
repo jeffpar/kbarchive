@@ -6,6 +6,8 @@ permalink: /kb/080/Q80746/
 
 ## Q80746: Dell NX-20 Requires HIMEM.SYS /M:1
 
+{% raw %}
+
 	Article: Q80746
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -68,3 +70,5 @@ permalink: /kb/080/Q80746/
 	
 	=============================================================================
 	
+
+{% endraw %}

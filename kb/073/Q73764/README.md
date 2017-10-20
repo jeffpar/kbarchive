@@ -6,6 +6,8 @@ permalink: /kb/073/Q73764/
 
 ## Q73764: Mac Form: Voice Form ReadMe File
 
+{% raw %}
+
 	Article: Q73764
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -135,3 +137,5 @@ permalink: /kb/073/Q73764/
 	
 	=============================================================================
 	
+
+{% endraw %}

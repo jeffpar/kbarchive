@@ -6,6 +6,8 @@ permalink: /kb/270/Q270064/
 
 ## Q270064: Attributes Do Not Flow When Case Sensitivity Changes
 
+{% raw %}
+
 	Article: Q270064
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -94,3 +96,5 @@ permalink: /kb/270/Q270064/
 	
 	=============================================================================
 	
+
+{% endraw %}

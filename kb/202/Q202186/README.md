@@ -6,6 +6,8 @@ permalink: /kb/202/Q202186/
 
 ## Q202186: XCLN: Creating and Selecting a Custom View for a Public Folder
 
+{% raw %}
+
 	Article: Q202186
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/202/Q202186/
 	
 	=============================================================================
 	
+
+{% endraw %}

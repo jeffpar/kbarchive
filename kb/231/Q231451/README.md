@@ -6,6 +6,8 @@ permalink: /kb/231/Q231451/
 
 ## Q231451: Optimizing Network Traffic Notes from the Field Comments and Cor
 
+{% raw %}
+
 	Article: Q231451
 	Product(s): Microsoft Press
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/231/Q231451/
 	
 	=============================================================================
 	
+
+{% endraw %}

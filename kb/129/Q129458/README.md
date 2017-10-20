@@ -6,6 +6,8 @@ permalink: /kb/129/Q129458/
 
 ## Q129458: Printers are not Displayed in Connect To Printer Dialog Box
 
+{% raw %}
+
 	Article: Q129458
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -51,3 +53,5 @@ permalink: /kb/129/Q129458/
 	
 	=============================================================================
 	
+
+{% endraw %}

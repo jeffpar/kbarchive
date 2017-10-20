@@ -6,6 +6,8 @@ permalink: /kb/179/Q179974/
 
 ## Q179974: FS98: Reduced Frame Rate When Flying LearJet 45
 
+{% raw %}
+
 	Article: Q179974
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/179/Q179974/
 	
 	=============================================================================
 	
+
+{% endraw %}

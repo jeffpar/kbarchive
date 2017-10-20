@@ -6,6 +6,8 @@ permalink: /kb/158/Q158846/
 
 ## Q158846: Black Screen Using ViewSonic 15G Monitor with S3 765
 
+{% raw %}
+
 	Article: Q158846
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/158/Q158846/
 	
 	=============================================================================
 	
+
+{% endraw %}

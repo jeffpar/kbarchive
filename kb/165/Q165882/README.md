@@ -6,6 +6,8 @@ permalink: /kb/165/Q165882/
 
 ## Q165882: WD97: Bottom Table Row Is Not Resized with Mouse
 
+{% raw %}
+
 	Article: Q165882
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/165/Q165882/
 	
 	=============================================================================
 	
+
+{% endraw %}

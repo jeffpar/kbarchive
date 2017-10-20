@@ -6,6 +6,8 @@ permalink: /kb/269/Q269201/
 
 ## Q269201: SMS: Query Builder Values Box Cannot Display Large Item List
 
+{% raw %}
+
 	Article: Q269201
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -102,3 +104,5 @@ permalink: /kb/269/Q269201/
 	
 	=============================================================================
 	
+
+{% endraw %}

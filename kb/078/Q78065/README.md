@@ -6,6 +6,8 @@ permalink: /kb/078/Q78065/
 
 ## Q78065: Proper Installation of the Redistributable DLLs
 
+{% raw %}
+
 	Article: Q78065
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -46,3 +48,5 @@ permalink: /kb/078/Q78065/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/265/Q265451/
 
 ## Q265451: HOWTO: Run an eVB Application Full Screen on a Pocket PC
 
+{% raw %}
+
 	Article: Q265451
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -221,3 +223,5 @@ permalink: /kb/265/Q265451/
 	
 	=============================================================================
 	
+
+{% endraw %}

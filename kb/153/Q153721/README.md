@@ -6,6 +6,8 @@ permalink: /kb/153/Q153721/
 
 ## Q153721: XCLN: TCPIP Clarification for Win16 Client in SP2 Readme.wri
 
+{% raw %}
+
 	Article: Q153721
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -58,3 +60,5 @@ permalink: /kb/153/Q153721/
 	
 	=============================================================================
 	
+
+{% endraw %}

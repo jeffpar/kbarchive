@@ -6,6 +6,8 @@ permalink: /kb/169/Q169356/
 
 ## Q169356: XCLN: Exchange Client Roving User Support
 
+{% raw %}
+
 	Article: Q169356
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -320,3 +322,5 @@ permalink: /kb/169/Q169356/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/203/Q203004/
 
 ## Q203004: SMS: How to Create Secondary Site from Files on Local Hard Disk
 
+{% raw %}
+
 	Article: Q203004
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -77,3 +79,5 @@ permalink: /kb/203/Q203004/
 	
 	=============================================================================
 	
+
+{% endraw %}

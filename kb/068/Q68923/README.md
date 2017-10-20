@@ -6,6 +6,8 @@ permalink: /kb/068/Q68923/
 
 ## Q68923: Flight Simulator: Planes Don't Fly Realistically
 
+{% raw %}
+
 	Article: Q68923
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/068/Q68923/
 	
 	=============================================================================
 	
+
+{% endraw %}

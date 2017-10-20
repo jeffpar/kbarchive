@@ -6,6 +6,8 @@ permalink: /kb/081/Q81821/
 
 ## Q81821: Program Manager Does Not Maximize
 
+{% raw %}
+
 	Article: Q81821
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -90,3 +92,5 @@ permalink: /kb/081/Q81821/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120449/
 
 ## Q120449: PC Gen: Summary List of Mail for PC Networks 3.2a Bug Fixes
 
+{% raw %}
+
 	Article: Q120449
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2a
@@ -779,3 +781,5 @@ permalink: /kb/120/Q120449/
 	
 	=============================================================================
 	
+
+{% endraw %}

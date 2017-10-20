@@ -6,6 +6,8 @@ permalink: /kb/235/Q235493/
 
 ## Q235493: XFOR:Stopping Connectivity Controller Doesn't Stop GWRouter
 
+{% raw %}
+
 	Article: Q235493
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -47,3 +49,5 @@ permalink: /kb/235/Q235493/
 	
 	=============================================================================
 	
+
+{% endraw %}

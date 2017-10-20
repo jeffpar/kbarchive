@@ -6,6 +6,8 @@ permalink: /kb/246/Q246575/
 
 ## Q246575: ADSI Scripts Do Not Work Between Windows 2000 and Windows NT 4.0
 
+{% raw %}
+
 	Article: Q246575
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -69,3 +71,5 @@ permalink: /kb/246/Q246575/
 	
 	=============================================================================
 	
+
+{% endraw %}

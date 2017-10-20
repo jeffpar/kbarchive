@@ -6,6 +6,8 @@ permalink: /kb/027/Q27291/
 
 ## Q27291: Example Passing Numeric Variables from BASIC to C by Value
 
+{% raw %}
+
 	Article: Q27291
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -78,3 +80,5 @@ permalink: /kb/027/Q27291/
 	LONG     32769
 	FLOAT    123.311996
 	DOUBLE   129381.333000
+
+{% endraw %}

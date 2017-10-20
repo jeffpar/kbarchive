@@ -6,6 +6,8 @@ permalink: /kb/193/Q193908/
 
 ## Q193908: SNA Server Application Exception When Using SET_TP_PROPERTIES
 
+{% raw %}
+
 	Article: Q193908
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -83,3 +85,5 @@ permalink: /kb/193/Q193908/
 	
 	=============================================================================
 	
+
+{% endraw %}

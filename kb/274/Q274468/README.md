@@ -6,6 +6,8 @@ permalink: /kb/274/Q274468/
 
 ## Q274468: MSN Companion setup error: username and password do not match up
 
+{% raw %}
+
 	Article: Q274468
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -93,3 +95,5 @@ permalink: /kb/274/Q274468/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/273/Q273613/
 
 ## Q273613: XFOR: RTF Info. Lost from Notes to CR over Internet Mail Service
 
+{% raw %}
+
 	Article: Q273613
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -82,3 +84,5 @@ permalink: /kb/273/Q273613/
 	
 	=============================================================================
 	
+
+{% endraw %}

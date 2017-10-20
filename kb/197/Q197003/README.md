@@ -6,6 +6,8 @@ permalink: /kb/197/Q197003/
 
 ## Q197003: ASP Cached Data for One Site Used in Multiple Sites
 
+{% raw %}
+
 	Article: Q197003
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/197/Q197003/
 	
 	=============================================================================
 	
+
+{% endraw %}

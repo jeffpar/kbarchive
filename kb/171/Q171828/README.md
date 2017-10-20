@@ -6,6 +6,8 @@ permalink: /kb/171/Q171828/
 
 ## Q171828: FIX: INET OpenURL Method Doesn't Download Complete Files
 
+{% raw %}
+
 	Article: Q171828
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -105,3 +107,5 @@ permalink: /kb/171/Q171828/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196875/
 
 ## Q196875: Error When EMS Memory Is Configured for MS-DOS App in .pif File
 
+{% raw %}
+
 	Article: Q196875
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -81,3 +83,5 @@ permalink: /kb/196/Q196875/
 	
 	=============================================================================
 	
+
+{% endraw %}

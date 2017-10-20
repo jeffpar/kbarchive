@@ -6,6 +6,8 @@ permalink: /kb/245/Q245009/
 
 ## Q245009: Batch Create User Accounts Without Forcing Password Change.
 
+{% raw %}
+
 	Article: Q245009
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/245/Q245009/
 	
 	=============================================================================
 	
+
+{% endraw %}

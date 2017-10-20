@@ -6,6 +6,8 @@ permalink: /kb/185/Q185072/
 
 ## Q185072: How to Configure Outlook 97 for Use with Multiple MSN Accounts
 
+{% raw %}
+
 	Article: Q185072
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.51,2.52,2.6
@@ -132,3 +134,5 @@ permalink: /kb/185/Q185072/
 	
 	=============================================================================
 	
+
+{% endraw %}

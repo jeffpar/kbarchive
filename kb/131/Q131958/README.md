@@ -6,6 +6,8 @@ permalink: /kb/131/Q131958/
 
 ## Q131958: Access Denied for Account Operators in User Manager for Domains
 
+{% raw %}
+
 	Article: Q131958
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11,3.5,3.51,4.0,95
@@ -76,3 +78,5 @@ permalink: /kb/131/Q131958/
 	
 	=============================================================================
 	
+
+{% endraw %}

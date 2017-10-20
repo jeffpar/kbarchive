@@ -6,6 +6,8 @@ permalink: /kb/137/Q137911/
 
 ## Q137911: Mac Srv: How to Configure One Way Address Propagation
 
+{% raw %}
+
 	Article: Q137911
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.x
@@ -53,3 +55,5 @@ permalink: /kb/137/Q137911/
 	
 	=============================================================================
 	
+
+{% endraw %}

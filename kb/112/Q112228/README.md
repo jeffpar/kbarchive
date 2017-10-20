@@ -6,6 +6,8 @@ permalink: /kb/112/Q112228/
 
 ## Q112228: FAX: FAX Boards Supported with the FAX Gateway Version 3.0
 
+{% raw %}
+
 	Article: Q112228
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/112/Q112228/
 	
 	=============================================================================
 	
+
+{% endraw %}

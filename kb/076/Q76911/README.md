@@ -6,6 +6,8 @@ permalink: /kb/076/Q76911/
 
 ## Q76911: FIX: JMP Jumps to the Proc When Using Duplicate Names
 
+{% raw %}
+
 	Article: Q76911
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -86,3 +88,5 @@ permalink: /kb/076/Q76911/
 	
 	=============================================================================
 	
+
+{% endraw %}

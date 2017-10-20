@@ -6,6 +6,8 @@ permalink: /kb/154/Q154964/
 
 ## Q154964: Error Reading Directory with Gateway Services for NetWare
 
+{% raw %}
+
 	Article: Q154964
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -46,3 +48,5 @@ permalink: /kb/154/Q154964/
 	
 	=============================================================================
 	
+
+{% endraw %}

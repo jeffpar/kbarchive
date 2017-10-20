@@ -6,6 +6,8 @@ permalink: /kb/174/Q174617/
 
 ## Q174617: Chkdsk Runs While Running Microsoft Cluster Server Setup
 
+{% raw %}
+
 	Article: Q174617
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -53,3 +55,5 @@ permalink: /kb/174/Q174617/
 	
 	=============================================================================
 	
+
+{% endraw %}

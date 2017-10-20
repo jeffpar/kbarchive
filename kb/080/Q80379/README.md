@@ -6,6 +6,8 @@ permalink: /kb/080/Q80379/
 
 ## Q80379: Stepping Through Self-Modifying Code in CodeView
 
+{% raw %}
+
 	Article: Q80379
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.2,3.0,3.11,3.14,4.0,4.01,4.02,4.05,4.1
@@ -82,3 +84,5 @@ permalink: /kb/080/Q80379/
 	
 	=============================================================================
 	
+
+{% endraw %}

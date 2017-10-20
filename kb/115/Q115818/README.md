@@ -6,6 +6,8 @@ permalink: /kb/115/Q115818/
 
 ## Q115818: CD Sampler: GPF If Works or Excel Is Also Running
 
+{% raw %}
+
 	Article: Q115818
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): Spring 1994
@@ -72,3 +74,5 @@ permalink: /kb/115/Q115818/
 	
 	=============================================================================
 	
+
+{% endraw %}

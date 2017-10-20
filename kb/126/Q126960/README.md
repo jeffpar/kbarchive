@@ -6,6 +6,8 @@ permalink: /kb/126/Q126960/
 
 ## Q126960: How to Disable TabWorks as the Windows Shell
 
+{% raw %}
+
 	Article: Q126960
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -90,3 +92,5 @@ permalink: /kb/126/Q126960/
 	
 	=============================================================================
 	
+
+{% endraw %}

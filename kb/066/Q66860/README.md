@@ -6,6 +6,8 @@ permalink: /kb/066/Q66860/
 
 ## Q66860: ASD: How to Remove Map from 747 Enhanced Control Panel
 
+{% raw %}
+
 	Article: Q66860
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/066/Q66860/
 	
 	=============================================================================
 	
+
+{% endraw %}

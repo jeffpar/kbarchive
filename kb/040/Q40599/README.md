@@ -6,6 +6,8 @@ permalink: /kb/040/Q40599/
 
 ## Q40599: Modifying Existing Help Files with HELPMAKE (QuickC Example)
 
+{% raw %}
+
 	Article: Q40599
 	Product(s): See article
 	Version(s): 1.00 1.04 1.05 1.06 | 1.04 1.05 1.06
@@ -97,3 +99,5 @@ permalink: /kb/040/Q40599/
 	
 	For further information, refer to the printed or online documentation
 	supplied with your version of HELPMAKE.
+
+{% endraw %}

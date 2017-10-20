@@ -6,6 +6,8 @@ permalink: /kb/246/Q246280/
 
 ## Q246280: XFOR: Chat Service Does Not Run with PowerChute Installed
 
+{% raw %}
+
 	Article: Q246280
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/246/Q246280/
 	
 	=============================================================================
 	
+
+{% endraw %}

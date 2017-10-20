@@ -6,6 +6,8 @@ permalink: /kb/130/Q130123/
 
 ## Q130123: PRB: Can't Find Transporter (TRANSPORT.PRG) in Visual FoxPro
 
+{% raw %}
+
 	Article: Q130123
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/130/Q130123/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274642/
 
 ## Q274642: MSN Explorer Can't Reconnect Over Dialup
 
+{% raw %}
+
 	Article: Q274642
 	Product(s): The Microsoft Network
 	Version(s): 6.0
@@ -123,3 +125,5 @@ permalink: /kb/274/Q274642/
 	
 	=============================================================================
 	
+
+{% endraw %}

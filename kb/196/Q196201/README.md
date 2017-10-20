@@ -6,6 +6,8 @@ permalink: /kb/196/Q196201/
 
 ## Q196201: INFO: Visual Basic Is Not Supported on Terminal Server 4.0
 
+{% raw %}
+
 	Article: Q196201
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -75,3 +77,5 @@ permalink: /kb/196/Q196201/
 	
 	=============================================================================
 	
+
+{% endraw %}

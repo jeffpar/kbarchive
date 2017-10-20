@@ -6,6 +6,8 @@ permalink: /kb/123/Q123399/
 
 ## Q123399: ADT2: Uninstalling ADT Does Not Unregister Custom Controls
 
+{% raw %}
+
 	Article: Q123399
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -91,3 +93,5 @@ permalink: /kb/123/Q123399/
 	
 	=============================================================================
 	
+
+{% endraw %}

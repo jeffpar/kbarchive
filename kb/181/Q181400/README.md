@@ -6,6 +6,8 @@ permalink: /kb/181/Q181400/
 
 ## Q181400: WD97: VBA Routines to Determine If Line or Document Is Empty
 
+{% raw %}
+
 	Article: Q181400
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -163,3 +165,5 @@ permalink: /kb/181/Q181400/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140670/
 
 ## Q140670: FIX: Using Run-Time Type Info May Cause Memory Leak Report
 
+{% raw %}
+
 	Article: Q140670
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10
@@ -99,3 +101,5 @@ permalink: /kb/140/Q140670/
 	
 	=============================================================================
 	
+
+{% endraw %}

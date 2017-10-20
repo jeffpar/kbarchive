@@ -6,6 +6,8 @@ permalink: /kb/065/Q65670/
 
 ## Q65670: Saving Resources Using Multiple PROGMAN.INI Files
 
+{% raw %}
+
 	Article: Q65670
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -104,3 +106,5 @@ permalink: /kb/065/Q65670/
 	
 	=============================================================================
 	
+
+{% endraw %}

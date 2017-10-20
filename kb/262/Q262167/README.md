@@ -6,6 +6,8 @@ permalink: /kb/262/Q262167/
 
 ## Q262167: WD97: Prompt to Save Normal Template When You Quit Word
 
+{% raw %}
+
 	Article: Q262167
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/262/Q262167/
 	
 	=============================================================================
 	
+
+{% endraw %}

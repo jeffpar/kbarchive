@@ -6,6 +6,8 @@ permalink: /kb/237/Q237185/
 
 ## Q237185: &quot;Access Violation&quot; Error Message When You Quit Phone Dialer
 
+{% raw %}
+
 	Article: Q237185
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.5
@@ -97,3 +99,5 @@ permalink: /kb/237/Q237185/
 	
 	=============================================================================
 	
+
+{% endraw %}

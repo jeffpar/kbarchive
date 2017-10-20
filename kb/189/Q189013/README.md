@@ -6,6 +6,8 @@ permalink: /kb/189/Q189013/
 
 ## Q189013: Atapi.sys Does Not Support Multiple Logical Devices
 
+{% raw %}
+
 	Article: Q189013
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/189/Q189013/
 	
 	=============================================================================
 	
+
+{% endraw %}

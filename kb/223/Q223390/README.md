@@ -6,6 +6,8 @@ permalink: /kb/223/Q223390/
 
 ## Q223390: How to Use a Blank PDT with SNA Server and Host Print Transform
 
+{% raw %}
+
 	Article: Q223390
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1,4.0SP2
@@ -46,3 +48,5 @@ permalink: /kb/223/Q223390/
 	
 	=============================================================================
 	
+
+{% endraw %}

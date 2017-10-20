@@ -6,6 +6,8 @@ permalink: /kb/279/Q279449/
 
 ## Q279449: MSN Companion Compaq IA-2 device has black screen
 
+{% raw %}
+
 	Article: Q279449
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -68,3 +70,5 @@ permalink: /kb/279/Q279449/
 	
 	=============================================================================
 	
+
+{% endraw %}

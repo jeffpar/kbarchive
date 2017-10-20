@@ -6,6 +6,8 @@ permalink: /kb/237/Q237956/
 
 ## Q237956: Taskbar Is Accessible Before You Type Screen Saver Password
 
+{% raw %}
+
 	Article: Q237956
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -81,3 +83,5 @@ permalink: /kb/237/Q237956/
 	
 	=============================================================================
 	
+
+{% endraw %}

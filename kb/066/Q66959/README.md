@@ -6,6 +6,8 @@ permalink: /kb/066/Q66959/
 
 ## Q66959: PRINTERS.INI Needed to Add PostScript Printers from SDL
 
+{% raw %}
+
 	Article: Q66959
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -83,3 +85,5 @@ permalink: /kb/066/Q66959/
 	
 	=============================================================================
 	
+
+{% endraw %}

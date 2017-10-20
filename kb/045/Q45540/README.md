@@ -6,6 +6,8 @@ permalink: /kb/045/Q45540/
 
 ## Q45540: Bad Library Environment Field Can Cause L1002
 
+{% raw %}
+
 	Article: Q45540
 	Product(s): See article
 	Version(s): 2.00
@@ -25,3 +27,5 @@ permalink: /kb/045/Q45540/
 	field with a backslash (\) and library name appended to it. The
 	forward slash (/) is read by LINK as the beginning of an option that
 	it doesn't understand.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106515/
 
 ## Q106515: Writer/Artist: Cannot Import Some Graphic Files
 
+{% raw %}
+
 	Article: Q106515
 	Product(s): Microsoft Home Kids Products
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/106/Q106515/
 	
 	=============================================================================
 	
+
+{% endraw %}

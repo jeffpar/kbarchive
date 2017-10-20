@@ -6,6 +6,8 @@ permalink: /kb/168/Q168088/
 
 ## Q168088: NTMMTA Leaves Os2.exe in Memory When Run as Service on NT 4.0
 
+{% raw %}
+
 	Article: Q168088
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -44,3 +46,5 @@ permalink: /kb/168/Q168088/
 	
 	=============================================================================
 	
+
+{% endraw %}

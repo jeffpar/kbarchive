@@ -6,6 +6,8 @@ permalink: /kb/162/Q162673/
 
 ## Q162673: FIX: ASCAN() Fails to Find Integer Value when Called in a Loop
 
+{% raw %}
+
 	Article: Q162673
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -67,3 +69,5 @@ permalink: /kb/162/Q162673/
 	
 	=============================================================================
 	
+
+{% endraw %}

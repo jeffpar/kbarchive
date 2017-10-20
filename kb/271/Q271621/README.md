@@ -6,6 +6,8 @@ permalink: /kb/271/Q271621/
 
 ## Q271621: HOWTO: Retrieve XML Data with a Template File from a VB Client
 
+{% raw %}
+
 	Article: Q271621
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.6,2.7,3.0,4.0,6.0
@@ -223,3 +225,5 @@ permalink: /kb/271/Q271621/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/289/Q289552/
 
 ## Q289552: SMS: Hardware Inventory Agent Causes SMS Client to Hang
 
+{% raw %}
+
 	Article: Q289552
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -205,3 +207,5 @@ permalink: /kb/289/Q289552/
 	
 	=============================================================================
 	
+
+{% endraw %}

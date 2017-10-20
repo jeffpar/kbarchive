@@ -6,6 +6,8 @@ permalink: /kb/154/Q154527/
 
 ## Q154527: BUG: C2374 in OLECTLID.H When Rebuilding DBDAO3.DLL for VC 4.2
 
+{% raw %}
+
 	Article: Q154527
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -76,3 +78,5 @@ permalink: /kb/154/Q154527/
 	
 	=============================================================================
 	
+
+{% endraw %}

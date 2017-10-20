@@ -6,6 +6,8 @@ permalink: /kb/125/Q125417/
 
 ## Q125417: PRB: Sharing Violation Error Message When Accessing EXE File
 
+{% raw %}
+
 	Article: Q125417
 	Product(s): Microsoft FoxPro
 	Version(s): 2.60a 3.00
@@ -58,3 +60,5 @@ permalink: /kb/125/Q125417/
 	
 	=============================================================================
 	
+
+{% endraw %}

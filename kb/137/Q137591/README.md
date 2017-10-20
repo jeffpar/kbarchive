@@ -6,6 +6,8 @@ permalink: /kb/137/Q137591/
 
 ## Q137591: Recycle Bin Icons Reversed After Removing Desktop Themes
 
+{% raw %}
+
 	Article: Q137591
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/137/Q137591/
 	
 	=============================================================================
 	
+
+{% endraw %}

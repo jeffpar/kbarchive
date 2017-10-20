@@ -6,6 +6,8 @@ permalink: /kb/168/Q168011/
 
 ## Q168011: FIX: C1001, file 'fppeeps.c', line 394, Caused By /Og
 
+{% raw %}
+
 	Article: Q168011
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -89,3 +91,5 @@ permalink: /kb/168/Q168011/
 	
 	=============================================================================
 	
+
+{% endraw %}

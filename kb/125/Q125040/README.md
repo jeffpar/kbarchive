@@ -6,6 +6,8 @@ permalink: /kb/125/Q125040/
 
 ## Q125040: WFWG Err Msg: Setup Cannot Find or Update Your AUTOEXEC.BAT...
 
+{% raw %}
+
 	Article: Q125040
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/125/Q125040/
 	
 	=============================================================================
 	
+
+{% endraw %}

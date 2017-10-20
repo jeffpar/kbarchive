@@ -6,6 +6,8 @@ permalink: /kb/085/Q85509/
 
 ## Q85509: FIX: ORG Calculated from Label May Fail in 6.0a/6.0b
 
+{% raw %}
+
 	Article: Q85509
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0a,6.0b
@@ -83,3 +85,5 @@ permalink: /kb/085/Q85509/
 	
 	=============================================================================
 	
+
+{% endraw %}

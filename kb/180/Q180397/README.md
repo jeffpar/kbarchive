@@ -6,6 +6,8 @@ permalink: /kb/180/Q180397/
 
 ## Q180397: XFOR: ICS Kill Notifications Not Sent to Administrator
 
+{% raw %}
+
 	Article: Q180397
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -63,3 +65,5 @@ permalink: /kb/180/Q180397/
 	
 	=============================================================================
 	
+
+{% endraw %}

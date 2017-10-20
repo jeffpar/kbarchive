@@ -6,6 +6,8 @@ permalink: /kb/154/Q154642/
 
 ## Q154642: Power Management in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q154642
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/154/Q154642/
 	
 	=============================================================================
 	
+
+{% endraw %}

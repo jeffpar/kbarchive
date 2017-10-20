@@ -6,6 +6,8 @@ permalink: /kb/092/Q92846/
 
 ## Q92846: Viewer Err Msg: An Error Was Found in the Bookmark File
 
+{% raw %}
+
 	Article: Q92846
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition,1992 edition,1993 edition,1994 edition
@@ -56,3 +58,5 @@ permalink: /kb/092/Q92846/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138213/
 
 ## Q138213: Uninstall Incorrectly Removes Dynamic Link Library Files
 
+{% raw %}
+
 	Article: Q138213
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/138/Q138213/
 	
 	=============================================================================
 	
+
+{% endraw %}

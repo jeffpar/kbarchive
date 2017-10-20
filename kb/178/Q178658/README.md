@@ -6,6 +6,8 @@ permalink: /kb/178/Q178658/
 
 ## Q178658: XADM: KCC Uses Increasingly Large Amounts of Memory
 
+{% raw %}
+
 	Article: Q178658
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -67,3 +69,5 @@ permalink: /kb/178/Q178658/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168416/
 
 ## Q168416: WD97: Using ActiveX Control in Mail Merge Causes Page Fault
 
+{% raw %}
+
 	Article: Q168416
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/168/Q168416/
 	
 	=============================================================================
 	
+
+{% endraw %}

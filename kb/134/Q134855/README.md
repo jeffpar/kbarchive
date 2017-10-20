@@ -6,6 +6,8 @@ permalink: /kb/134/Q134855/
 
 ## Q134855: PRB: Unable to Edit Blank Text Boxes in a Grid
 
+{% raw %}
+
 	Article: Q134855
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -115,3 +117,5 @@ permalink: /kb/134/Q134855/
 	
 	=============================================================================
 	
+
+{% endraw %}

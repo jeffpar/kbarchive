@@ -6,6 +6,8 @@ permalink: /kb/037/Q37927/
 
 ## Q37927: Mac DOS: Options Stored in MAIL.INI File
 
+{% raw %}
+
 	Article: Q37927
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0,3.1
@@ -90,3 +92,5 @@ permalink: /kb/037/Q37927/
 	
 	=============================================================================
 	
+
+{% endraw %}

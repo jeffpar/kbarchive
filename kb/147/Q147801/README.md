@@ -6,6 +6,8 @@ permalink: /kb/147/Q147801/
 
 ## Q147801: PPT7: Differences Between PowerPoint versions 7.0a and 7.0b
 
+{% raw %}
+
 	Article: Q147801
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0,7.0b
@@ -157,3 +159,5 @@ permalink: /kb/147/Q147801/
 	
 	=============================================================================
 	
+
+{% endraw %}

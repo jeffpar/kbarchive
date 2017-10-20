@@ -6,6 +6,8 @@ permalink: /kb/190/Q190924/
 
 ## Q190924: BUG: Command Line Argument /MAKE Truncates User Documents
 
+{% raw %}
+
 	Article: Q190924
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -120,3 +122,5 @@ permalink: /kb/190/Q190924/
 	
 	=============================================================================
 	
+
+{% endraw %}

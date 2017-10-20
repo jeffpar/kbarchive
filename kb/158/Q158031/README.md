@@ -6,6 +6,8 @@ permalink: /kb/158/Q158031/
 
 ## Q158031: GEX: Troubleshooting Sound Problems
 
+{% raw %}
+
 	Article: Q158031
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -105,3 +107,5 @@ permalink: /kb/158/Q158031/
 	
 	=============================================================================
 	
+
+{% endraw %}

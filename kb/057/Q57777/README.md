@@ -6,6 +6,8 @@ permalink: /kb/057/Q57777/
 
 ## Q57777: Repeated Word on Page 611 BASIC 7.0 Programmer's Guide
 
+{% raw %}
+
 	Article: Q57777
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -26,3 +28,5 @@ permalink: /kb/057/Q57777/
 	
 	   If you link with NOFLTIN.OBJ, all numbers used by INPUT, READ,
 	   and VAL must be legal long integers.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149485/
 
 ## Q149485: FIX: Scale Method Causes Error When Scale Is a Large Value
 
+{% raw %}
+
 	Article: Q149485
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/149/Q149485/
 	
 	=============================================================================
 	
+
+{% endraw %}

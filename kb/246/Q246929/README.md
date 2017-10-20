@@ -6,6 +6,8 @@ permalink: /kb/246/Q246929/
 
 ## Q246929: URI Cache Flushes Performance Counter Initializes Above Zero
 
+{% raw %}
+
 	Article: Q246929
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -67,3 +69,5 @@ permalink: /kb/246/Q246929/
 	
 	=============================================================================
 	
+
+{% endraw %}

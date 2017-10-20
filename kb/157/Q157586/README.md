@@ -6,6 +6,8 @@ permalink: /kb/157/Q157586/
 
 ## Q157586: Corporate Evaluation CD Fails Installing WinNT 4.0 Workstation
 
+{% raw %}
+
 	Article: Q157586
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/157/Q157586/
 	
 	=============================================================================
 	
+
+{% endraw %}

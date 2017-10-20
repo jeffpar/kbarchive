@@ -6,6 +6,8 @@ permalink: /kb/090/Q90485/
 
 ## Q90485: Passing Ink Between Hedit Controls
 
+{% raw %}
+
 	Article: Q90485
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -104,3 +106,5 @@ permalink: /kb/090/Q90485/
 	
 	=============================================================================
 	
+
+{% endraw %}

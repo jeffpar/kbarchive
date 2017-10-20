@@ -6,6 +6,8 @@ permalink: /kb/151/Q151720/
 
 ## Q151720: Auditing Stand-Alone Servers in a Windows NT Domain
 
+{% raw %}
+
 	Article: Q151720
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -58,3 +60,5 @@ permalink: /kb/151/Q151720/
 	
 	=============================================================================
 	
+
+{% endraw %}

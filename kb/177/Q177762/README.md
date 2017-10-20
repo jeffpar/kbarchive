@@ -6,6 +6,8 @@ permalink: /kb/177/Q177762/
 
 ## Q177762: XADM: Access Violation (0xc0000005) During Exchange Setup
 
+{% raw %}
+
 	Article: Q177762
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -62,3 +64,5 @@ permalink: /kb/177/Q177762/
 	
 	=============================================================================
 	
+
+{% endraw %}

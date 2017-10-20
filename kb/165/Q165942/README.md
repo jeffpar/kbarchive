@@ -6,6 +6,8 @@ permalink: /kb/165/Q165942/
 
 ## Q165942: HOWTO: Write Data to a File Using WriteFile API
 
+{% raw %}
+
 	Article: Q165942
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -171,3 +173,5 @@ permalink: /kb/165/Q165942/
 	
 	=============================================================================
 	
+
+{% endraw %}

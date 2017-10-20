@@ -6,6 +6,8 @@ permalink: /kb/072/Q72460/
 
 ## Q72460: INFO: Baseline Shifts in Cell When Character Italicized
 
+{% raw %}
+
 	Article: Q72460
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -113,3 +115,5 @@ permalink: /kb/072/Q72460/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238046/
 
 ## Q238046: Reference Suite 2000: Error Messages When You Restart Computer
 
+{% raw %}
+
 	Article: Q238046
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -72,3 +74,5 @@ permalink: /kb/238/Q238046/
 	
 	=============================================================================
 	
+
+{% endraw %}

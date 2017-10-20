@@ -6,6 +6,8 @@ permalink: /kb/168/Q168327/
 
 ## Q168327: WD97: Paragraph Mark Appears Cropped When Using Tahoma Font
 
+{% raw %}
+
 	Article: Q168327
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -49,3 +51,5 @@ permalink: /kb/168/Q168327/
 	
 	=============================================================================
 	
+
+{% endraw %}

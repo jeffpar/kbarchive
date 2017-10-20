@@ -6,6 +6,8 @@ permalink: /kb/201/Q201072/
 
 ## Q201072: XFOR: Mail to Postmaster Account Doesn't Arrive
 
+{% raw %}
+
 	Article: Q201072
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -43,3 +45,5 @@ permalink: /kb/201/Q201072/
 	
 	=============================================================================
 	
+
+{% endraw %}

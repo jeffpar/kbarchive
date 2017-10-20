@@ -6,6 +6,8 @@ permalink: /kb/062/Q62208/
 
 ## Q62208: Environment Variable Must Be Uppercase in ENVIRON&#36;
 
+{% raw %}
+
 	Article: Q62208
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -35,3 +37,5 @@ permalink: /kb/062/Q62208/
 	------
 	
 	   test
+
+{% endraw %}

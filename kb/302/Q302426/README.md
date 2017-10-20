@@ -6,6 +6,8 @@ permalink: /kb/302/Q302426/
 
 ## Q302426: MSN Explorer May Stop Responding When Deleting Text From A Forwa
 
+{% raw %}
+
 	Article: Q302426
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -52,3 +54,5 @@ permalink: /kb/302/Q302426/
 	
 	=============================================================================
 	
+
+{% endraw %}

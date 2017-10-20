@@ -6,6 +6,8 @@ permalink: /kb/192/Q192622/
 
 ## Q192622: PRB: ClassWizard Doesn't Display Ungrouped Radio Button
 
+{% raw %}
+
 	Article: Q192622
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:2.0,2.1,2.2,4.0,4.0a,4.1,4.2,4.2b,5.0,6.0
@@ -74,3 +76,5 @@ permalink: /kb/192/Q192622/
 	
 	=============================================================================
 	
+
+{% endraw %}

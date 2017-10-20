@@ -6,6 +6,8 @@ permalink: /kb/149/Q149643/
 
 ## Q149643: Printing to NetWare Deallocates Directory Handle
 
+{% raw %}
+
 	Article: Q149643
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -154,3 +156,5 @@ permalink: /kb/149/Q149643/
 	
 	=============================================================================
 	
+
+{% endraw %}

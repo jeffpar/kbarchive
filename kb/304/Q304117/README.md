@@ -6,6 +6,8 @@ permalink: /kb/304/Q304117/
 
 ## Q304117: Academic Learning Series Microsoft Windows 2000 Professional wit
 
+{% raw %}
+
 	Article: Q304117
 	Product(s): Microsoft Press
 	Version(s): 
@@ -770,3 +772,5 @@ permalink: /kb/304/Q304117/
 	
 	=============================================================================
 	
+
+{% endraw %}

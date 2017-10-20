@@ -6,6 +6,8 @@ permalink: /kb/117/Q117907/
 
 ## Q117907: Encarta: Text in MindMaze Looks Cut Off
 
+{% raw %}
+
 	Article: Q117907
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -44,3 +46,5 @@ permalink: /kb/117/Q117907/
 	
 	=============================================================================
 	
+
+{% endraw %}

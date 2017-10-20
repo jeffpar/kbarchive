@@ -6,6 +6,8 @@ permalink: /kb/305/Q305462/
 
 ## Q305462: Mouse and Keyboard Stop Working with Windows NT 4.0 SRP
 
+{% raw %}
+
 	Article: Q305462
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -88,3 +90,5 @@ permalink: /kb/305/Q305462/
 	
 	=============================================================================
 	
+
+{% endraw %}

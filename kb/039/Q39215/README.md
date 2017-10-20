@@ -6,6 +6,8 @@ permalink: /kb/039/Q39215/
 
 ## Q39215: Pattern Format for _setfillmask
 
+{% raw %}
+
 	Article: Q39215
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -40,3 +42,5 @@ permalink: /kb/039/Q39215/
 	When the fill mask above is used with _setfillmask and a graphics
 	function such as _rectangle or _ellipse, the pattern will create
 	a continuous field of faces.
+
+{% endraw %}

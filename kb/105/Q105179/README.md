@@ -6,6 +6,8 @@ permalink: /kb/105/Q105179/
 
 ## Q105179: Mac Wkst: Invoking System Information Window
 
+{% raw %}
+
 	Article: Q105179
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -60,3 +62,5 @@ permalink: /kb/105/Q105179/
 	
 	=============================================================================
 	
+
+{% endraw %}

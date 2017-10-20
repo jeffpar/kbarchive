@@ -6,6 +6,8 @@ permalink: /kb/147/Q147040/
 
 ## Q147040: PC Win: Large Recipient List Stops Download of New Mail
 
+{% raw %}
+
 	Article: Q147040
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -69,3 +71,5 @@ permalink: /kb/147/Q147040/
 	
 	=============================================================================
 	
+
+{% endraw %}

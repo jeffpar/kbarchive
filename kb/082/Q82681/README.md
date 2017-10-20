@@ -6,6 +6,8 @@ permalink: /kb/082/Q82681/
 
 ## Q82681: How Windows 3.1 Looks for COM Ports
 
+{% raw %}
+
 	Article: Q82681
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/082/Q82681/
 	
 	=============================================================================
 	
+
+{% endraw %}

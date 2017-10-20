@@ -6,6 +6,8 @@ permalink: /kb/047/Q47206/
 
 ## Q47206: FltSim: Ridge and Thermal Soaring with the Sailplane
 
+{% raw %}
+
 	Article: Q47206
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/047/Q47206/
 	
 	=============================================================================
 	
+
+{% endraw %}

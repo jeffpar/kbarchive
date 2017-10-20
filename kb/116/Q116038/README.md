@@ -6,6 +6,8 @@ permalink: /kb/116/Q116038/
 
 ## Q116038: Resource Type, Creator, &amp; Date for FoxPro for Mac and DK
 
+{% raw %}
+
 	Article: Q116038
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b; :2.5b,2.5c
@@ -64,3 +66,5 @@ permalink: /kb/116/Q116038/
 	
 	=============================================================================
 	
+
+{% endraw %}

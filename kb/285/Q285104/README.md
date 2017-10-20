@@ -6,6 +6,8 @@ permalink: /kb/285/Q285104/
 
 ## Q285104: PRB: SSARC.exe with the -X Switch Does Not Recurse Through Delet
 
+{% raw %}
+
 	Article: Q285104
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0,6.0c
@@ -76,3 +78,5 @@ permalink: /kb/285/Q285104/
 	
 	=============================================================================
 	
+
+{% endraw %}

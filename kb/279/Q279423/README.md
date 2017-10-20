@@ -6,6 +6,8 @@ permalink: /kb/279/Q279423/
 
 ## Q279423: XADM: How to Use the DSAdiag Utility
 
+{% raw %}
+
 	Article: Q279423
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/279/Q279423/
 	
 	=============================================================================
 	
+
+{% endraw %}

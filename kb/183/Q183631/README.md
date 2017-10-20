@@ -6,6 +6,8 @@ permalink: /kb/183/Q183631/
 
 ## Q183631: INFO: Add a Text File to a VB6 DHTML Page Dynamically
 
+{% raw %}
+
 	Article: Q183631
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/183/Q183631/
 	
 	=============================================================================
 	
+
+{% endraw %}

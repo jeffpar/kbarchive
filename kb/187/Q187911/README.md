@@ -6,6 +6,8 @@ permalink: /kb/187/Q187911/
 
 ## Q187911: XCLN: Outlook Template Adds Zeros to Raw Number Field
 
+{% raw %}
+
 	Article: Q187911
 	Product(s): Microsoft Exchange
 	Version(s): 8.03; WINDOWS:5.5
@@ -63,3 +65,5 @@ permalink: /kb/187/Q187911/
 	
 	=============================================================================
 	
+
+{% endraw %}

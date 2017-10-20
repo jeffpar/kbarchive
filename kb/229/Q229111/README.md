@@ -6,6 +6,8 @@ permalink: /kb/229/Q229111/
 
 ## Q229111: Clients with Different Language Version Replace Printer Settings
 
+{% raw %}
+
 	Article: Q229111
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -118,3 +120,5 @@ permalink: /kb/229/Q229111/
 	
 	=============================================================================
 	
+
+{% endraw %}

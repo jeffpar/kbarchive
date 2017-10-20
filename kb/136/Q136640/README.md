@@ -6,6 +6,8 @@ permalink: /kb/136/Q136640/
 
 ## Q136640: How to Fill a Combo Box with a Unique List of Items
 
+{% raw %}
+
 	Article: Q136640
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -82,3 +84,5 @@ permalink: /kb/136/Q136640/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160144/
 
 ## Q160144: XADM: You do not have Permission to Access Portions...
 
+{% raw %}
+
 	Article: Q160144
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -46,3 +48,5 @@ permalink: /kb/160/Q160144/
 	
 	=============================================================================
 	
+
+{% endraw %}

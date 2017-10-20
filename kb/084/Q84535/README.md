@@ -6,6 +6,8 @@ permalink: /kb/084/Q84535/
 
 ## Q84535: Roland MPU IMC Sound Card Driver Not Available
 
+{% raw %}
+
 	Article: Q84535
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/084/Q84535/
 	
 	=============================================================================
 	
+
+{% endraw %}

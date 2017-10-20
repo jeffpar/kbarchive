@@ -6,6 +6,8 @@ permalink: /kb/237/Q237388/
 
 ## Q237388: PRB: 32-Bit ODBC Drivers Can't Be Used from 16-Bit Applications
 
+{% raw %}
+
 	Article: Q237388
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 1.5,2.0,2.1,2.5,2.6
@@ -69,3 +71,5 @@ permalink: /kb/237/Q237388/
 	
 	=============================================================================
 	
+
+{% endraw %}

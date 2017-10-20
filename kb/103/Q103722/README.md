@@ -6,6 +6,8 @@ permalink: /kb/103/Q103722/
 
 ## Q103722: FIX: &#95;&#95;far Not Accepted in CodeView 4.0x Watch Window
 
+{% raw %}
+
 	Article: Q103722
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01
@@ -56,3 +58,5 @@ permalink: /kb/103/Q103722/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164554/
 
 ## Q164554: SMS: Different Site/Domain Message Is Always in English
 
+{% raw %}
+
 	Article: Q164554
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -54,3 +56,5 @@ permalink: /kb/164/Q164554/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153621/
 
 ## Q153621: Cannot Set Default File Location to NetWare 4.1 Network Drive
 
+{% raw %}
+
 	Article: Q153621
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 7.0,7.0a
@@ -97,3 +99,5 @@ permalink: /kb/153/Q153621/
 	
 	=============================================================================
 	
+
+{% endraw %}

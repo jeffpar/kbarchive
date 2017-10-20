@@ -6,6 +6,8 @@ permalink: /kb/061/Q61239/
 
 ## Q61239: C 6.00 README: Notes on &quot;C Reference&quot;
 
+{% raw %}
+
 	Article: Q61239
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -67,3 +69,5 @@ permalink: /kb/061/Q61239/
 	           ---------------------
 	
 	           The _strtold function is not an ANSI function.
+
+{% endraw %}

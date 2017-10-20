@@ -6,6 +6,8 @@ permalink: /kb/064/Q64487/
 
 ## Q64487: Cannot Close Files After UPS Service Warning Message
 
+{% raw %}
+
 	Article: Q64487
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/064/Q64487/
 	
 	=============================================================================
 	
+
+{% endraw %}

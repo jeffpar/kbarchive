@@ -6,6 +6,8 @@ permalink: /kb/068/Q68904/
 
 ## Q68904: Windows Applications that Work in the Windows Working Model
 
+{% raw %}
+
 	Article: Q68904
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -49,3 +51,5 @@ permalink: /kb/068/Q68904/
 	
 	=============================================================================
 	
+
+{% endraw %}

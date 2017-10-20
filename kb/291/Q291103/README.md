@@ -6,6 +6,8 @@ permalink: /kb/291/Q291103/
 
 ## Q291103: BUG: InsertObjDlg Fails with &quot;Unable to Access Source&quot; Err Msg
 
+{% raw %}
+
 	Article: Q291103
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -120,3 +122,5 @@ permalink: /kb/291/Q291103/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147467/
 
 ## Q147467: Using the Migration Tool for NetWare to Migrate Login Scripts
 
+{% raw %}
+
 	Article: Q147467
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/147/Q147467/
 	
 	=============================================================================
 	
+
+{% endraw %}

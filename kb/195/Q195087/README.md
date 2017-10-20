@@ -6,6 +6,8 @@ permalink: /kb/195/Q195087/
 
 ## Q195087: HOWTO: Enable Communications Between UserDocuments/UserControls
 
+{% raw %}
+
 	Article: Q195087
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -123,3 +125,5 @@ permalink: /kb/195/Q195087/
 	
 	=============================================================================
 	
+
+{% endraw %}

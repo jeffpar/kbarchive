@@ -6,6 +6,8 @@ permalink: /kb/235/Q235818/
 
 ## Q235818: SMS: Network Discovery May Time Out On Slow Network
 
+{% raw %}
+
 	Article: Q235818
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -65,3 +67,5 @@ permalink: /kb/235/Q235818/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130375/
 
 ## Q130375: List of Books About Windows NT
 
+{% raw %}
+
 	Article: Q130375
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -550,3 +552,5 @@ permalink: /kb/130/Q130375/
 	
 	=============================================================================
 	
+
+{% endraw %}

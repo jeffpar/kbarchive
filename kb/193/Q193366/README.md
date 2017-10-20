@@ -6,6 +6,8 @@ permalink: /kb/193/Q193366/
 
 ## Q193366: INFO: CAB Files Distributed with Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q193366
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -223,3 +225,5 @@ permalink: /kb/193/Q193366/
 	
 	=============================================================================
 	
+
+{% endraw %}

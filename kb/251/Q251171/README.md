@@ -6,6 +6,8 @@ permalink: /kb/251/Q251171/
 
 ## Q251171: Guest Account Cannot be Used When Anonymous Access Is Disabled
 
+{% raw %}
+
 	Article: Q251171
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/251/Q251171/
 	
 	=============================================================================
 	
+
+{% endraw %}

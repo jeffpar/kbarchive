@@ -6,6 +6,8 @@ permalink: /kb/089/Q89481/
 
 ## Q89481: Serial Network Connections Not Supported in WFWG
 
+{% raw %}
+
 	Article: Q89481
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -42,3 +44,5 @@ permalink: /kb/089/Q89481/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125865/
 
 ## Q125865: Creative Writer: Canon BubbleJet Prints Borders Incorrectly
 
+{% raw %}
+
 	Article: Q125865
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -94,3 +96,5 @@ permalink: /kb/125/Q125865/
 	
 	=============================================================================
 	
+
+{% endraw %}

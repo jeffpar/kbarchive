@@ -6,6 +6,8 @@ permalink: /kb/156/Q156474/
 
 ## Q156474: XADM: ISINTEG Reports Errors on Replicated NNTP News Folders
 
+{% raw %}
+
 	Article: Q156474
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/156/Q156474/
 	
 	=============================================================================
 	
+
+{% endraw %}

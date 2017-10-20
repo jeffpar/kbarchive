@@ -6,6 +6,8 @@ permalink: /kb/112/Q112876/
 
 ## Q112876: Mac OOF: Err Msg: ...Application...Has Unexpectedly Quit
 
+{% raw %}
+
 	Article: Q112876
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1d
@@ -59,3 +61,5 @@ permalink: /kb/112/Q112876/
 	
 	=============================================================================
 	
+
+{% endraw %}

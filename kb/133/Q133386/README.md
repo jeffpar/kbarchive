@@ -6,6 +6,8 @@ permalink: /kb/133/Q133386/
 
 ## Q133386: Event ID 19 Appears in Event Log When You Create a Printer
 
+{% raw %}
+
 	Article: Q133386
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -57,3 +59,5 @@ permalink: /kb/133/Q133386/
 	
 	=============================================================================
 	
+
+{% endraw %}

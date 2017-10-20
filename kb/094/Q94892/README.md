@@ -6,6 +6,8 @@ permalink: /kb/094/Q94892/
 
 ## Q94892: FIX: GPF When Making .EXE File If Forms Saved as Binary
 
+{% raw %}
+
 	Article: Q94892
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0
@@ -68,3 +70,5 @@ permalink: /kb/094/Q94892/
 	
 	=============================================================================
 	
+
+{% endraw %}

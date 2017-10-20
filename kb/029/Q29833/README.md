@@ -6,6 +6,8 @@ permalink: /kb/029/Q29833/
 
 ## Q29833: C 5.10 MTDYNA.DOC: Multiple-Thread Programs
 
+{% raw %}
+
 	Article: Q29833
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -91,3 +93,5 @@ permalink: /kb/029/Q29833/
 	
 	2. The other threads check the status of semaphores set by thread 1
 	   and respond accordingly.
+
+{% endraw %}

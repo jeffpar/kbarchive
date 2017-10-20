@@ -6,6 +6,8 @@ permalink: /kb/200/Q200832/
 
 ## Q200832: SMS: Conflict Does Not Allow Multiple Remote Control Sessions
 
+{% raw %}
+
 	Article: Q200832
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -69,3 +71,5 @@ permalink: /kb/200/Q200832/
 	
 	=============================================================================
 	
+
+{% endraw %}

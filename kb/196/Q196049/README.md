@@ -6,6 +6,8 @@ permalink: /kb/196/Q196049/
 
 ## Q196049: WD97: How to Use Examples Found in Style Gallery
 
+{% raw %}
+
 	Article: Q196049
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/196/Q196049/
 	
 	=============================================================================
 	
+
+{% endraw %}

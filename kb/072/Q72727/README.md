@@ -6,6 +6,8 @@ permalink: /kb/072/Q72727/
 
 ## Q72727: PRB: No Error for Same Register Listed Twice in USES Clause
 
+{% raw %}
+
 	Article: Q72727
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -75,3 +77,5 @@ permalink: /kb/072/Q72727/
 	
 	=============================================================================
 	
+
+{% endraw %}

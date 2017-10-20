@@ -6,6 +6,8 @@ permalink: /kb/150/Q150750/
 
 ## Q150750: Mac Bookshelf 96-97: Bookshelf Guide Quits on a PowerBook
 
+{% raw %}
+
 	Article: Q150750
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -75,3 +77,5 @@ permalink: /kb/150/Q150750/
 	
 	=============================================================================
 	
+
+{% endraw %}

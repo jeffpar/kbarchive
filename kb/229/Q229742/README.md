@@ -6,6 +6,8 @@ permalink: /kb/229/Q229742/
 
 ## Q229742: WD97: Error Message After You Undo a Deletion of a Section Break
 
+{% raw %}
+
 	Article: Q229742
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -130,3 +132,5 @@ permalink: /kb/229/Q229742/
 	
 	=============================================================================
 	
+
+{% endraw %}

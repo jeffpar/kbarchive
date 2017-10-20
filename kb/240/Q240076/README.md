@@ -6,6 +6,8 @@ permalink: /kb/240/Q240076/
 
 ## Q240076: Windows NT 4.0 Client Does Not Receive New Policy
 
+{% raw %}
+
 	Article: Q240076
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/240/Q240076/
 	
 	=============================================================================
 	
+
+{% endraw %}

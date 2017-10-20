@@ -6,6 +6,8 @@ permalink: /kb/314/Q314699/
 
 ## Q314699: Encarta 2002: Prompted to Insert CD When Accessing Content
 
+{% raw %}
+
 	Article: Q314699
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -897,3 +899,5 @@ permalink: /kb/314/Q314699/
 	
 	=============================================================================
 	
+
+{% endraw %}

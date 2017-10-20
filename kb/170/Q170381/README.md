@@ -6,6 +6,8 @@ permalink: /kb/170/Q170381/
 
 ## Q170381: PRB: Table Name Can't Include &quot;Call&quot; in Parameterized SQL
 
+{% raw %}
+
 	Article: Q170381
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -121,3 +123,5 @@ permalink: /kb/170/Q170381/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271960/
 
 ## Q271960: XADM: Address Book Search Takes Longer Than Expected
 
+{% raw %}
+
 	Article: Q271960
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/271/Q271960/
 	
 	=============================================================================
 	
+
+{% endraw %}

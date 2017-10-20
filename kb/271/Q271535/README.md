@@ -6,6 +6,8 @@ permalink: /kb/271/Q271535/
 
 ## Q271535: MCM2: Computer Hangs When You Quit and Restart Game
 
+{% raw %}
+
 	Article: Q271535
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -50,3 +52,5 @@ permalink: /kb/271/Q271535/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247067/
 
 ## Q247067: Cluster Server Is Not Configured Properly After Unattended Setup
 
+{% raw %}
+
 	Article: Q247067
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/247/Q247067/
 	
 	=============================================================================
 	
+
+{% endraw %}

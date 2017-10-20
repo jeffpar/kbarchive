@@ -6,6 +6,8 @@ permalink: /kb/271/Q271503/
 
 ## Q271503: Golf 2001 Edition: Help Documentation Error
 
+{% raw %}
+
 	Article: Q271503
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/271/Q271503/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175477/
 
 ## Q175477: Batch Files Run from Within Other Folders May Fail
 
+{% raw %}
+
 	Article: Q175477
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -81,3 +83,5 @@ permalink: /kb/175/Q175477/
 	
 	=============================================================================
 	
+
+{% endraw %}

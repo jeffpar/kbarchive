@@ -6,6 +6,8 @@ permalink: /kb/292/Q292732/
 
 ## Q292732: Small Business Server 2000 Resource Kit Comments And Corrections
 
+{% raw %}
+
 	Article: Q292732
 	Product(s): Microsoft Press
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/292/Q292732/
 	
 	=============================================================================
 	
+
+{% endraw %}

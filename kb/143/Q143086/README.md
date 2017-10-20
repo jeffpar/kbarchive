@@ -6,6 +6,8 @@ permalink: /kb/143/Q143086/
 
 ## Q143086: FIX: CFile::GetFileName() Always Returns CString w/Zero Length
 
+{% raw %}
+
 	Article: Q143086
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/143/Q143086/
 	
 	=============================================================================
 	
+
+{% endraw %}

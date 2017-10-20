@@ -6,6 +6,8 @@ permalink: /kb/150/Q150246/
 
 ## Q150246: Bookshelf 96: QuickShelf Not Installed With Office 95
 
+{% raw %}
+
 	Article: Q150246
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:7.0,97
@@ -173,3 +175,5 @@ permalink: /kb/150/Q150246/
 	
 	=============================================================================
 	
+
+{% endraw %}

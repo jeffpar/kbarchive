@@ -6,6 +6,8 @@ permalink: /kb/023/Q23856/
 
 ## Q23856: Code that Will Hang IBM XTs or Compatibles
 
+{% raw %}
+
 	Article: Q23856
 	Product(s): See article
 	Version(s): 1.00
@@ -41,3 +43,5 @@ permalink: /kb/023/Q23856/
 	
 	A workaround is to place a breakpoint at the instruction before or
 	after the assignment to f.
+
+{% endraw %}

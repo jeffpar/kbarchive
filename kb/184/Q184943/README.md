@@ -6,6 +6,8 @@ permalink: /kb/184/Q184943/
 
 ## Q184943: Monster Truck Madness 2: Screen Flashes Constantly
 
+{% raw %}
+
 	Article: Q184943
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -66,3 +68,5 @@ permalink: /kb/184/Q184943/
 	
 	=============================================================================
 	
+
+{% endraw %}

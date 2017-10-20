@@ -6,6 +6,8 @@ permalink: /kb/094/Q94710/
 
 ## Q94710: VidEdit: Combining .AVI Files with Different Frame Rates
 
+{% raw %}
+
 	Article: Q94710
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/094/Q94710/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/060/Q60857/
 
 ## Q60857: CodeView Does Not Watch Local Variables in Subprogram
 
+{% raw %}
+
 	Article: Q60857
 	Product(s): See article
 	Version(s): 4.00
@@ -67,3 +69,5 @@ permalink: /kb/060/Q60857/
 	   locali% = 10                      'Watch locali% displays 0
 	   PRINT param%, locali%, array%(10) 'These print correctly
 	   END SUB
+
+{% endraw %}

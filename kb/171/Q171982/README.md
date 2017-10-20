@@ -6,6 +6,8 @@ permalink: /kb/171/Q171982/
 
 ## Q171982: WD97: Tabs in Heading Styles Look Wrong in Table of Contents
 
+{% raw %}
+
 	Article: Q171982
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -167,3 +169,5 @@ permalink: /kb/171/Q171982/
 	
 	=============================================================================
 	
+
+{% endraw %}

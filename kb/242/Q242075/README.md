@@ -6,6 +6,8 @@ permalink: /kb/242/Q242075/
 
 ## Q242075: Establish Mirror Command Unavailable in Disk Administrator
 
+{% raw %}
+
 	Article: Q242075
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/242/Q242075/
 	
 	=============================================================================
 	
+
+{% endraw %}

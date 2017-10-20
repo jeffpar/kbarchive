@@ -6,6 +6,8 @@ permalink: /kb/172/Q172092/
 
 ## Q172092: WD97: Right-aligned Graphic Deletes HTML Code When Saved
 
+{% raw %}
+
 	Article: Q172092
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/172/Q172092/
 	
 	=============================================================================
 	
+
+{% endraw %}

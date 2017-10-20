@@ -6,6 +6,8 @@ permalink: /kb/131/Q131776/
 
 ## Q131776: How To Compile MIB.BIN With DHCP and WINS MIB Files Using MIBCC
 
+{% raw %}
+
 	Article: Q131776
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -52,3 +54,5 @@ permalink: /kb/131/Q131776/
 	
 	=============================================================================
 	
+
+{% endraw %}

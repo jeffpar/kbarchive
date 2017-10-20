@@ -6,6 +6,8 @@ permalink: /kb/304/Q304338/
 
 ## Q304338: XADM: OL OST Sync Fails If Large Number of Items in Exchange PF
 
+{% raw %}
+
 	Article: Q304338
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,SP1
@@ -73,3 +75,5 @@ permalink: /kb/304/Q304338/
 	
 	=============================================================================
 	
+
+{% endraw %}

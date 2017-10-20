@@ -6,6 +6,8 @@ permalink: /kb/234/Q234327/
 
 ## Q234327: Advertisements Do Not Run if Drive Letter Is Already Mapped
 
+{% raw %}
+
 	Article: Q234327
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -52,3 +54,5 @@ permalink: /kb/234/Q234327/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116167/
 
 ## Q116167: FIX: Visual Workbench Cannot Find WndProc in Windows 3.1 Apps
 
+{% raw %}
+
 	Article: Q116167
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/116/Q116167/
 	
 	=============================================================================
 	
+
+{% endraw %}

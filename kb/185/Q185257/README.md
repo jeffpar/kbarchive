@@ -6,6 +6,8 @@ permalink: /kb/185/Q185257/
 
 ## Q185257: How to Disable the Delete Confirmation Dialog Box
 
+{% raw %}
+
 	Article: Q185257
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINNT:4.0
@@ -49,3 +51,5 @@ permalink: /kb/185/Q185257/
 	
 	=============================================================================
 	
+
+{% endraw %}

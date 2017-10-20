@@ -6,6 +6,8 @@ permalink: /kb/103/Q103959/
 
 ## Q103959: PC Forms: Reply from PROFS Loses Form Data
 
+{% raw %}
+
 	Article: Q103959
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -54,3 +56,5 @@ permalink: /kb/103/Q103959/
 	
 	=============================================================================
 	
+
+{% endraw %}

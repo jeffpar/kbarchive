@@ -6,6 +6,8 @@ permalink: /kb/119/Q119284/
 
 ## Q119284: HOWTO: Distribute a Large Database with an Application
 
+{% raw %}
+
 	Article: Q119284
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/119/Q119284/
 	
 	=============================================================================
 	
+
+{% endraw %}

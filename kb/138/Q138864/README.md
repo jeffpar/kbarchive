@@ -6,6 +6,8 @@ permalink: /kb/138/Q138864/
 
 ## Q138864: SNA Server 2.11 Admin shows Inactive Status In Error
 
+{% raw %}
+
 	Article: Q138864
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -81,3 +83,5 @@ permalink: /kb/138/Q138864/
 	
 	=============================================================================
 	
+
+{% endraw %}

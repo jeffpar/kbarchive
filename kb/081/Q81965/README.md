@@ -6,6 +6,8 @@ permalink: /kb/081/Q81965/
 
 ## Q81965: Loading SMARTDrive Low May Improve Speed w/ Double Buffering
 
+{% raw %}
+
 	Article: Q81965
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/081/Q81965/
 	
 	=============================================================================
 	
+
+{% endraw %}

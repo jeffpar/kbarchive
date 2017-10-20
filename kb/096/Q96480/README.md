@@ -6,6 +6,8 @@ permalink: /kb/096/Q96480/
 
 ## Q96480: Fp0779.exe ISDISKIN Utility
 
+{% raw %}
+
 	Article: Q96480
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a,2.5b,2.6
@@ -193,3 +195,5 @@ permalink: /kb/096/Q96480/
 	
 	=============================================================================
 	
+
+{% endraw %}

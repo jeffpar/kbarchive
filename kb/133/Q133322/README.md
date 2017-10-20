@@ -6,6 +6,8 @@ permalink: /kb/133/Q133322/
 
 ## Q133322: List of Confirmed Bugs in Windows NT Version 3.51
 
+{% raw %}
+
 	Article: Q133322
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -227,3 +229,5 @@ permalink: /kb/133/Q133322/
 	
 	=============================================================================
 	
+
+{% endraw %}

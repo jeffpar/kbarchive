@@ -6,6 +6,8 @@ permalink: /kb/188/Q188674/
 
 ## Q188674: XADM: Directory Service Restore to Cluster Fails with Event 1002
 
+{% raw %}
+
 	Article: Q188674
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -104,3 +106,5 @@ permalink: /kb/188/Q188674/
 	
 	=============================================================================
 	
+
+{% endraw %}

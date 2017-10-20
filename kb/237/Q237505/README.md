@@ -6,6 +6,8 @@ permalink: /kb/237/Q237505/
 
 ## Q237505: Encarta Encyclopedia: Repeatedly Prompted to Insert CD-ROM
 
+{% raw %}
+
 	Article: Q237505
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -90,3 +92,5 @@ permalink: /kb/237/Q237505/
 	
 	=============================================================================
 	
+
+{% endraw %}

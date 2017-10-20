@@ -6,6 +6,8 @@ permalink: /kb/160/Q160855/
 
 ## Q160855: SMS: Pcmsvc32.exe Fails to Process PCM Instruction Files
 
+{% raw %}
+
 	Article: Q160855
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -57,3 +59,5 @@ permalink: /kb/160/Q160855/
 	
 	=============================================================================
 	
+
+{% endraw %}

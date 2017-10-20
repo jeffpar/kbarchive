@@ -6,6 +6,8 @@ permalink: /kb/287/Q287138/
 
 ## Q287138: PRB: eVT 3.0 Setup Does Not Detect Windows 98 SE Upgrade
 
+{% raw %}
+
 	Article: Q287138
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0
@@ -83,3 +85,5 @@ permalink: /kb/287/Q287138/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161281/
 
 ## Q161281: Error ID 1069 After Reinstalling FPNW
 
+{% raw %}
+
 	Article: Q161281
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -79,3 +81,5 @@ permalink: /kb/161/Q161281/
 	
 	=============================================================================
 	
+
+{% endraw %}

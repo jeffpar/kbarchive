@@ -6,6 +6,8 @@ permalink: /kb/107/Q107711/
 
 ## Q107711: ScanDisk Reports Compressed Floppy Too Full for Undo
 
+{% raw %}
+
 	Article: Q107711
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -65,3 +67,5 @@ permalink: /kb/107/Q107711/
 	
 	=============================================================================
 	
+
+{% endraw %}

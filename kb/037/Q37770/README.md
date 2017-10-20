@@ -6,6 +6,8 @@ permalink: /kb/037/Q37770/
 
 ## Q37770: &quot;Program Memory Overflow&quot;: Break into SUBprograms
 
+{% raw %}
+
 	Article: Q37770
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -128,3 +130,5 @@ permalink: /kb/037/Q37770/
 	For more information about stub files and optimizing code for size and
 	speed, see Chapter 15, "Optimizing Program Size and Speed," in the
 	"Microsoft BASIC 7.0: Programmer's Guide" for versions 7.00 and 7.10.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100015/
 
 ## Q100015: Converting to 8-Bit Color Results in Gray Scale from VidEdit
 
+{% raw %}
+
 	Article: Q100015
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/100/Q100015/
 	
 	=============================================================================
 	
+
+{% endraw %}

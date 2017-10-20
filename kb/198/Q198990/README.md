@@ -6,6 +6,8 @@ permalink: /kb/198/Q198990/
 
 ## Q198990: SMSINST: Cannot View Large Script Completely in 16-bit Installer
 
+{% raw %}
+
 	Article: Q198990
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0; winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/198/Q198990/
 	
 	=============================================================================
 	
+
+{% endraw %}

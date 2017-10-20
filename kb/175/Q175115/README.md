@@ -6,6 +6,8 @@ permalink: /kb/175/Q175115/
 
 ## Q175115: XADM: Err Msg: There is Something Wrong with the INI File
 
+{% raw %}
+
 	Article: Q175115
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -44,3 +46,5 @@ permalink: /kb/175/Q175115/
 	
 	=============================================================================
 	
+
+{% endraw %}

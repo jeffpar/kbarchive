@@ -6,6 +6,8 @@ permalink: /kb/097/Q97582/
 
 ## Q97582: Encarta: Printing Problems on Hewlett Packard Printers
 
+{% raw %}
+
 	Article: Q97582
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/097/Q97582/
 	
 	=============================================================================
 	
+
+{% endraw %}

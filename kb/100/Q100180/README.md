@@ -6,6 +6,8 @@ permalink: /kb/100/Q100180/
 
 ## Q100180: TrueType Fonts Print Incorrectly on HP DeskJet 500
 
+{% raw %}
+
 	Article: Q100180
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -68,3 +70,5 @@ permalink: /kb/100/Q100180/
 	
 	=============================================================================
 	
+
+{% endraw %}

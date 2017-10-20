@@ -6,6 +6,8 @@ permalink: /kb/130/Q130058/
 
 ## Q130058: Language-Independent Way to Update the Startup Group
 
+{% raw %}
+
 	Article: Q130058
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -60,3 +62,5 @@ permalink: /kb/130/Q130058/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155240/
 
 ## Q155240: Err Msg: Some Control Panel or Device Settings Have Changed...
 
+{% raw %}
+
 	Article: Q155240
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -65,3 +67,5 @@ permalink: /kb/155/Q155240/
 	
 	=============================================================================
 	
+
+{% endraw %}

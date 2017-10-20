@@ -6,6 +6,8 @@ permalink: /kb/168/Q168321/
 
 ## Q168321: Creating a DNS Record for a Host with Two or More IP Addresses
 
+{% raw %}
+
 	Article: Q168321
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/168/Q168321/
 	
 	=============================================================================
 	
+
+{% endraw %}

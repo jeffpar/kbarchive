@@ -6,6 +6,8 @@ permalink: /kb/086/Q86966/
 
 ## Q86966: X400: What to Order with the X.25 Card
 
+{% raw %}
+
 	Article: Q86966
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/086/Q86966/
 	
 	=============================================================================
 	
+
+{% endraw %}

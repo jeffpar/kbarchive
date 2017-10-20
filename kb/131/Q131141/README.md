@@ -6,6 +6,8 @@ permalink: /kb/131/Q131141/
 
 ## Q131141: DEC Alpha AXP Firmware Upgrade Required for Windows NT
 
+{% raw %}
+
 	Article: Q131141
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -69,3 +71,5 @@ permalink: /kb/131/Q131141/
 	
 	=============================================================================
 	
+
+{% endraw %}

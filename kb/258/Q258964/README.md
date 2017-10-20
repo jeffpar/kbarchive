@@ -6,6 +6,8 @@ permalink: /kb/258/Q258964/
 
 ## Q258964: FS2000 Pro: Control Problems After You Change to Mooney Bravo
 
+{% raw %}
+
 	Article: Q258964
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/258/Q258964/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67761/
 
 ## Q67761: GRAPHICS.LIB Cannot Be Used with Tiny Model
 
+{% raw %}
+
 	Article: Q67761
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -38,3 +40,5 @@ permalink: /kb/067/Q67761/
 	{
 	   _setvideomode(_DEFAULTMODE);
 	}
+
+{% endraw %}

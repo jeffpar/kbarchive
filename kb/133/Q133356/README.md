@@ -6,6 +6,8 @@ permalink: /kb/133/Q133356/
 
 ## Q133356: Form Wizard Makes EditBox for Fields Longer Than 45 Characters
 
+{% raw %}
+
 	Article: Q133356
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -36,3 +38,5 @@ permalink: /kb/133/Q133356/
 	
 	=============================================================================
 	
+
+{% endraw %}

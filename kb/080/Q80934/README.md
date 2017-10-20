@@ -6,6 +6,8 @@ permalink: /kb/080/Q80934/
 
 ## Q80934: Common Dialog Custom Control: FilterIndex Can Be Negative
 
+{% raw %}
+
 	Article: Q80934
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,3.0
@@ -50,3 +52,5 @@ permalink: /kb/080/Q80934/
 	
 	=============================================================================
 	
+
+{% endraw %}

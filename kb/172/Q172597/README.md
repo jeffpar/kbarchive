@@ -6,6 +6,8 @@ permalink: /kb/172/Q172597/
 
 ## Q172597: How to Manually Uninstall the NT 4.0 Resource Kit
 
+{% raw %}
+
 	Article: Q172597
 	Product(s): Microsoft Press
 	Version(s): 
@@ -137,3 +139,5 @@ permalink: /kb/172/Q172597/
 	
 	=============================================================================
 	
+
+{% endraw %}

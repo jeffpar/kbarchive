@@ -6,6 +6,8 @@ permalink: /kb/177/Q177787/
 
 ## Q177787: Age of Empires: WordPad Cannot Read Stratsmp.doc or Strattyp.doc
 
+{% raw %}
+
 	Article: Q177787
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -70,3 +72,5 @@ permalink: /kb/177/Q177787/
 	
 	=============================================================================
 	
+
+{% endraw %}

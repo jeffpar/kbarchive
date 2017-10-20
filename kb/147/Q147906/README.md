@@ -6,6 +6,8 @@ permalink: /kb/147/Q147906/
 
 ## Q147906: DOC: Rights.bak File Is Not Necessarily Present
 
+{% raw %}
+
 	Article: Q147906
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0
@@ -48,3 +50,5 @@ permalink: /kb/147/Q147906/
 	
 	=============================================================================
 	
+
+{% endraw %}

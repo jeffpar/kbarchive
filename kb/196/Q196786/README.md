@@ -6,6 +6,8 @@ permalink: /kb/196/Q196786/
 
 ## Q196786: PRB: MSDN Libraries 6.0 and October 1998 Fail to Coexist
 
+{% raw %}
+
 	Article: Q196786
 	Product(s): Microsoft Developer Network
 	Version(s): winnt:6.0
@@ -60,3 +62,5 @@ permalink: /kb/196/Q196786/
 	
 	=============================================================================
 	
+
+{% endraw %}

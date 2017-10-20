@@ -6,6 +6,8 @@ permalink: /kb/087/Q87256/
 
 ## Q87256: CONN: Errors Running Connection Name Utility
 
+{% raw %}
+
 	Article: Q87256
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0; WINDOWS:3.0,3.1
@@ -44,3 +46,5 @@ permalink: /kb/087/Q87256/
 	
 	=============================================================================
 	
+
+{% endraw %}

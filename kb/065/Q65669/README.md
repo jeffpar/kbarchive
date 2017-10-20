@@ -6,6 +6,8 @@ permalink: /kb/065/Q65669/
 
 ## Q65669: Microsoft Word's Use of ALT+SPACEBAR Under Windows
 
+{% raw %}
+
 	Article: Q65669
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/065/Q65669/
 	
 	=============================================================================
 	
+
+{% endraw %}

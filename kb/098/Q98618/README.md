@@ -6,6 +6,8 @@ permalink: /kb/098/Q98618/
 
 ## Q98618: File Sizes and Dates for Windows Disks with New &quot;User's Guide&quot;
 
+{% raw %}
+
 	Article: Q98618
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/098/Q98618/
 	
 	=============================================================================
 	
+
+{% endraw %}

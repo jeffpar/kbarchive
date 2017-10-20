@@ -6,6 +6,8 @@ permalink: /kb/195/Q195985/
 
 ## Q195985: XADM: Move Mailbox Fails with Client Operation Failed Error
 
+{% raw %}
+
 	Article: Q195985
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -76,3 +78,5 @@ permalink: /kb/195/Q195985/
 	
 	=============================================================================
 	
+
+{% endraw %}

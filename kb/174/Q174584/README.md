@@ -6,6 +6,8 @@ permalink: /kb/174/Q174584/
 
 ## Q174584: BUG: Scrolling in Grid May Be Slow with Filtered Cursor
 
+{% raw %}
+
 	Article: Q174584
 	Product(s): Microsoft FoxPro
 	Version(s): Win:3.0,3.0b,5.0,5.0a
@@ -95,3 +97,5 @@ permalink: /kb/174/Q174584/
 	
 	=============================================================================
 	
+
+{% endraw %}

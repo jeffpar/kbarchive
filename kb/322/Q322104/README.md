@@ -6,6 +6,8 @@ permalink: /kb/322/Q322104/
 
 ## Q322104: Streets and Trips 2002: Program Stops Responding at Startup
 
+{% raw %}
+
 	Article: Q322104
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -182,3 +184,5 @@ permalink: /kb/322/Q322104/
 	
 	=============================================================================
 	
+
+{% endraw %}

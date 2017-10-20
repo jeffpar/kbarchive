@@ -6,6 +6,8 @@ permalink: /kb/257/Q257711/
 
 ## Q257711: FIX: VB6CHT PDWizard Package NeedS to Include .Reg File
 
+{% raw %}
+
 	Article: Q257711
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -53,3 +55,5 @@ permalink: /kb/257/Q257711/
 	
 	=============================================================================
 	
+
+{% endraw %}

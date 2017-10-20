@@ -6,6 +6,8 @@ permalink: /kb/198/Q198076/
 
 ## Q198076: WD97: Go To Bookmark Selects Entire Inserted Document
 
+{% raw %}
+
 	Article: Q198076
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/198/Q198076/
 	
 	=============================================================================
 	
+
+{% endraw %}

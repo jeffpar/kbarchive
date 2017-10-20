@@ -6,6 +6,8 @@ permalink: /kb/163/Q163013/
 
 ## Q163013: Error &quot;The Plug and Play Service Is Not Available&quot;
 
+{% raw %}
+
 	Article: Q163013
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/163/Q163013/
 	
 	=============================================================================
 	
+
+{% endraw %}

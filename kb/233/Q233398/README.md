@@ -6,6 +6,8 @@ permalink: /kb/233/Q233398/
 
 ## Q233398: PRB: Common Dialog ShowHelp Method does not Work with CHM Files
 
+{% raw %}
+
 	Article: Q233398
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -91,3 +93,5 @@ permalink: /kb/233/Q233398/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/035/Q35522/
 
 ## Q35522: The Difference between M and MEP
 
+{% raw %}
+
 	Article: Q35522
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -24,3 +26,5 @@ permalink: /kb/035/Q35522/
 	mode. MEP.EXE runs under MS OS/2 protected mode only. You may want to
 	rename MEP.EXE to M.EXE. Functionally, the two editors are the same,
 	except for slight differences in background compilation.
+
+{% endraw %}

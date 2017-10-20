@@ -6,6 +6,8 @@ permalink: /kb/167/Q167023/
 
 ## Q167023: Windows NT Workstation Sends SMB Request Continuously
 
+{% raw %}
+
 	Article: Q167023
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -93,3 +95,5 @@ permalink: /kb/167/Q167023/
 	
 	=============================================================================
 	
+
+{% endraw %}

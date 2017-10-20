@@ -6,6 +6,8 @@ permalink: /kb/250/Q250042/
 
 ## Q250042: Performance Issue and Delay in Keyboard Input
 
+{% raw %}
+
 	Article: Q250042
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0; :4.0
@@ -89,3 +91,5 @@ permalink: /kb/250/Q250042/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139897/
 
 ## Q139897: Computer Profile Setup Fails to Setup Intel EtherExpress Pro NIC
 
+{% raw %}
+
 	Article: Q139897
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -84,22 +86,22 @@ permalink: /kb/139/Q139897/
 	     ;
 	        Ifstr(i) $(MachineType) == "MCA"
 	           set NewValueList =
-	           { {BusType,$(NoTitle),$(!REG_VT_DWORD),$(BusTypeNum)},+
+	           {{BusType,$(NoTitle),$(!REG_VT_DWORD),$(BusTypeNum)},+
 	           {McaPosId,$(NoTitle),$(!REG_VT_DWORD),$(NETCARD_ID)},+
 	           {SlotNumber,$(NoTitle),$(!REG_VT_DWORD),$(SlotNum)},+
-	           {MediaType,$(NoTitle),$(!REG_VT_DWORD),1} }
+	           {MediaType,$(NoTitle),$(!REG_VT_DWORD),1}}
 	        else
 	           Set IOAddrValue = *($(IOAddrValues),
 	           ~($(IOAddrList),$(IOAddrValue)))
 	           Shell "" DebugConfiguration "Before Writing Parameters"
 	           set NewValueList =
-	           { {INTERRUPT,$(NoTitle),$(!REG_VT_DWORD),$(IRQValue)},+
+	           {{INTERRUPT,$(NoTitle),$(!REG_VT_DWORD),$(IRQValue)},+
 	           {BusType,$(NoTitle),$(!REG_VT_DWORD),$(BusInterfaceType)},+
 	           {BusNumber,$(NoTitle),$(!REG_VT_DWORD),$(BusNumber)},+
 	           {MediaType,$(NoTitle),$(!REG_VT_DWORD),1},+
 	           {IoChannelReady,$(NoTitle),$(!REG_VT_DWORD),$(IOReadyValue)},+
 	           {Transceiver,$(NoTitle),$(!REG_VT_DWORD),$(TransceiverValue)},+
-	           {IOADDRESS,$(NoTitle),$(!REG_VT_DWORD),$(IOAddrValue)} }
+	           {IOADDRESS,$(NoTitle),$(!REG_VT_DWORD),$(IOAddrValue)}}
 	        endif
 	
 	        Shell  $(UtilityInf), AddValueList, $(KeyParameters),
@@ -128,3 +130,5 @@ permalink: /kb/139/Q139897/
 	
 	=============================================================================
 	
+
+{% endraw %}

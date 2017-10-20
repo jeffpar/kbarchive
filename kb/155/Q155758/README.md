@@ -6,6 +6,8 @@ permalink: /kb/155/Q155758/
 
 ## Q155758: IP Received Header Error Count May Be High
 
+{% raw %}
+
 	Article: Q155758
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/155/Q155758/
 	
 	=============================================================================
 	
+
+{% endraw %}

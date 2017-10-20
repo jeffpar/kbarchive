@@ -6,6 +6,8 @@ permalink: /kb/169/Q169733/
 
 ## Q169733: WD97: Equation 3.0 Incorrectly Converts Spaces From Version 2.x
 
+{% raw %}
+
 	Article: Q169733
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/169/Q169733/
 	
 	=============================================================================
 	
+
+{% endraw %}

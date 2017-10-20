@@ -6,6 +6,8 @@ permalink: /kb/101/Q101359/
 
 ## Q101359: Disk Format Fails in Enhanced Mode with GSI Drive Controller
 
+{% raw %}
+
 	Article: Q101359
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/101/Q101359/
 	
 	=============================================================================
 	
+
+{% endraw %}

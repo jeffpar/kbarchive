@@ -6,6 +6,8 @@ permalink: /kb/123/Q123660/
 
 ## Q123660: Maintenance Release for FORTRAN PowerStation
 
+{% raw %}
+
 	Article: Q123660
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -106,3 +108,5 @@ permalink: /kb/123/Q123660/
 	
 	=============================================================================
 	
+
+{% endraw %}

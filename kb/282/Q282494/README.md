@@ -6,6 +6,8 @@ permalink: /kb/282/Q282494/
 
 ## Q282494: SMS: Courier Sender Does Not Work When Sent to Grandchild Site
 
+{% raw %}
+
 	Article: Q282494
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -84,3 +86,5 @@ permalink: /kb/282/Q282494/
 	
 	=============================================================================
 	
+
+{% endraw %}

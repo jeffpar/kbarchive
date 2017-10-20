@@ -6,6 +6,8 @@ permalink: /kb/121/Q121521/
 
 ## Q121521: Printing Locally from a Toshiba Laptop 3600 or 4600c
 
+{% raw %}
+
 	Article: Q121521
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/121/Q121521/
 	
 	=============================================================================
 	
+
+{% endraw %}

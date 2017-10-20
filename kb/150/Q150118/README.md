@@ -6,6 +6,8 @@ permalink: /kb/150/Q150118/
 
 ## Q150118: XADM: Err Msg:  The Ordinal 25 Could Not be Located
 
+{% raw %}
+
 	Article: Q150118
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/150/Q150118/
 	
 	=============================================================================
 	
+
+{% endraw %}

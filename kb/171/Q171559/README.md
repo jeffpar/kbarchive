@@ -6,6 +6,8 @@ permalink: /kb/171/Q171559/
 
 ## Q171559: Inside COM Comments and Corrections
 
+{% raw %}
+
 	Article: Q171559
 	Product(s): Microsoft Press
 	Version(s): 
@@ -589,3 +591,5 @@ permalink: /kb/171/Q171559/
 	
 	=============================================================================
 	
+
+{% endraw %}

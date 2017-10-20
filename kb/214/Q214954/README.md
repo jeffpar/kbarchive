@@ -6,6 +6,8 @@ permalink: /kb/214/Q214954/
 
 ## Q214954: Software Metering Server Is Not Installed If LicMtr Share Exists
 
+{% raw %}
+
 	Article: Q214954
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -64,3 +66,5 @@ permalink: /kb/214/Q214954/
 	
 	=============================================================================
 	
+
+{% endraw %}

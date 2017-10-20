@@ -6,6 +6,8 @@ permalink: /kb/150/Q150608/
 
 ## Q150608: Multilanguage Font Entries Are Not Removed from WordPad
 
+{% raw %}
+
 	Article: Q150608
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/150/Q150608/
 	
 	=============================================================================
 	
+
+{% endraw %}

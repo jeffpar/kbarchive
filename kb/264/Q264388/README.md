@@ -6,6 +6,8 @@ permalink: /kb/264/Q264388/
 
 ## Q264388: Allegiance Error Message: Unable to Create a Game
 
+{% raw %}
+
 	Article: Q264388
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -101,3 +103,5 @@ permalink: /kb/264/Q264388/
 	
 	=============================================================================
 	
+
+{% endraw %}

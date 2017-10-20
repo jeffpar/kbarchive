@@ -6,6 +6,8 @@ permalink: /kb/266/Q266204/
 
 ## Q266204: Cannot Browse a Different Windows NT 4.0 Domain Across a Firewal
 
+{% raw %}
+
 	Article: Q266204
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/266/Q266204/
 	
 	=============================================================================
 	
+
+{% endraw %}

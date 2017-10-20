@@ -6,6 +6,8 @@ permalink: /kb/149/Q149213/
 
 ## Q149213: How Resource Accounts Automatically Accept Meeting Requests
 
+{% raw %}
+
 	Article: Q149213
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 7.0
@@ -126,3 +128,5 @@ permalink: /kb/149/Q149213/
 	
 	=============================================================================
 	
+
+{% endraw %}

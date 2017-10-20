@@ -6,6 +6,8 @@ permalink: /kb/116/Q116067/
 
 ## Q116067: Can't Set Default Paper Length to Maximum w/Panasonic KX-P1624
 
+{% raw %}
+
 	Article: Q116067
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -69,3 +71,5 @@ permalink: /kb/116/Q116067/
 	
 	=============================================================================
 	
+
+{% endraw %}

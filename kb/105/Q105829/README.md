@@ -6,6 +6,8 @@ permalink: /kb/105/Q105829/
 
 ## Q105829: MS-DOS 6.2 Setup May Overwrite Stacker DBLSPACE.BIN File
 
+{% raw %}
+
 	Article: Q105829
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -139,3 +141,5 @@ permalink: /kb/105/Q105829/
 	
 	=============================================================================
 	
+
+{% endraw %}

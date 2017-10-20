@@ -6,6 +6,8 @@ permalink: /kb/275/Q275227/
 
 ## Q275227: XADM: Error Message: &quot;Unable to Expand the Folder&quot;
 
+{% raw %}
+
 	Article: Q275227
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/275/Q275227/
 	
 	=============================================================================
 	
+
+{% endraw %}

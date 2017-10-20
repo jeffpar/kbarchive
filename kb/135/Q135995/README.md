@@ -6,6 +6,8 @@ permalink: /kb/135/Q135995/
 
 ## Q135995: Visual SourceSafe Integration with Visual Basic 4.0 and 5.0
 
+{% raw %}
+
 	Article: Q135995
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0,6.0
@@ -125,3 +127,5 @@ permalink: /kb/135/Q135995/
 	
 	=============================================================================
 	
+
+{% endraw %}

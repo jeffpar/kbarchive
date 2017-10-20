@@ -6,6 +6,8 @@ permalink: /kb/067/Q67929/
 
 ## Q67929: Rebooting from Within a Batch File
 
+{% raw %}
+
 	Article: Q67929
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.3,4.x,5.x,6.0,6.2,6.21,6.22
@@ -79,3 +81,5 @@ permalink: /kb/067/Q67929/
 	
 	=============================================================================
 	
+
+{% endraw %}

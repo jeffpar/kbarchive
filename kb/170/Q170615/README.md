@@ -6,6 +6,8 @@ permalink: /kb/170/Q170615/
 
 ## Q170615: INFO: Microsoft Sponsored Exchange NNTP Newsgroups
 
+{% raw %}
+
 	Article: Q170615
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,3.0,4.0
@@ -88,3 +90,5 @@ permalink: /kb/170/Q170615/
 	
 	=============================================================================
 	
+
+{% endraw %}

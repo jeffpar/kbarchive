@@ -6,6 +6,8 @@ permalink: /kb/161/Q161239/
 
 ## Q161239: Chips &amp; Technologies 65550 Refresh Rate Changes after Restart
 
+{% raw %}
+
 	Article: Q161239
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -51,3 +53,5 @@ permalink: /kb/161/Q161239/
 	
 	=============================================================================
 	
+
+{% endraw %}

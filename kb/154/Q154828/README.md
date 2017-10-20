@@ -6,6 +6,8 @@ permalink: /kb/154/Q154828/
 
 ## Q154828: PRB: Visual Basic Module Shuffle Looks Like Entire File Change
 
+{% raw %}
+
 	Article: Q154828
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:3.0,3.1,4.0
@@ -63,3 +65,5 @@ permalink: /kb/154/Q154828/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106628/
 
 ## Q106628: Comprehensive List - &quot;MS-DOS 6.2 Upgrade for Dummies&quot; Doc Errs
 
+{% raw %}
+
 	Article: Q106628
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -145,3 +147,5 @@ permalink: /kb/106/Q106628/
 	
 	=============================================================================
 	
+
+{% endraw %}

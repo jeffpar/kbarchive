@@ -6,6 +6,8 @@ permalink: /kb/122/Q122986/
 
 ## Q122986: Justified Words Printed with PostScript Driver Contain Spaces
 
+{% raw %}
+
 	Article: Q122986
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -65,3 +67,5 @@ permalink: /kb/122/Q122986/
 	
 	=============================================================================
 	
+
+{% endraw %}

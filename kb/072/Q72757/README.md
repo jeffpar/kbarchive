@@ -6,6 +6,8 @@ permalink: /kb/072/Q72757/
 
 ## Q72757: SETVER.EXE Not Affected By Read-Only Bit
 
+{% raw %}
+
 	Article: Q72757
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -59,3 +61,5 @@ permalink: /kb/072/Q72757/
 	
 	=============================================================================
 	
+
+{% endraw %}

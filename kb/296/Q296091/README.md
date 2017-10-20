@@ -6,6 +6,8 @@ permalink: /kb/296/Q296091/
 
 ## Q296091: PRB: MFC AppWizard Doesn't Show Oracle Synonyms w/MS ODBC Driver
 
+{% raw %}
+
 	Article: Q296091
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,2.0,2.1,2.5,2.6,4.2,5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/296/Q296091/
 	
 	=============================================================================
 	
+
+{% endraw %}

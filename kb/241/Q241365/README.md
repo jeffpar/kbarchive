@@ -6,6 +6,8 @@ permalink: /kb/241/Q241365/
 
 ## Q241365: XCON: PAB Address Parenthesis in DDA Converted to 040 &amp; 041
 
+{% raw %}
+
 	Article: Q241365
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -128,3 +130,5 @@ permalink: /kb/241/Q241365/
 	
 	=============================================================================
 	
+
+{% endraw %}

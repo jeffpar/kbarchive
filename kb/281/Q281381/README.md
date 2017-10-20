@@ -6,6 +6,8 @@ permalink: /kb/281/Q281381/
 
 ## Q281381: Error Message &quot;STOP 0xA&quot; While Using Novell Client Version 4.7
 
+{% raw %}
+
 	Article: Q281381
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/281/Q281381/
 	
 	=============================================================================
 	
+
+{% endraw %}

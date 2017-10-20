@@ -6,6 +6,8 @@ permalink: /kb/184/Q184867/
 
 ## Q184867: FS98 Err Msg: You Must Specify a Non-Floppy Disk to Install to
 
+{% raw %}
+
 	Article: Q184867
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -48,3 +50,5 @@ permalink: /kb/184/Q184867/
 	
 	=============================================================================
 	
+
+{% endraw %}

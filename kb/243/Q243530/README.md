@@ -6,6 +6,8 @@ permalink: /kb/243/Q243530/
 
 ## Q243530: PRB: Microsoft Lightweight Controls CAB Not on Web Site
 
+{% raw %}
+
 	Article: Q243530
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -62,3 +64,5 @@ permalink: /kb/243/Q243530/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165169/
 
 ## Q165169: PRB: Using ARROW Keys Ignores Page Deactivate Event NODEFAULT
 
+{% raw %}
+
 	Article: Q165169
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -78,3 +80,5 @@ permalink: /kb/165/Q165169/
 	
 	=============================================================================
 	
+
+{% endraw %}

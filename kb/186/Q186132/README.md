@@ -6,6 +6,8 @@ permalink: /kb/186/Q186132/
 
 ## Q186132: SMS: One Hour Delay for Mandatory Time w/Mandatory After Option
 
+{% raw %}
+
 	Article: Q186132
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP3
@@ -66,3 +68,5 @@ permalink: /kb/186/Q186132/
 	
 	=============================================================================
 	
+
+{% endraw %}

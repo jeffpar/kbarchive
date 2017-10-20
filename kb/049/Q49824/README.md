@@ -6,6 +6,8 @@ permalink: /kb/049/Q49824/
 
 ## Q49824: Debugging PM Apps with Two Monitors Does Not Require /2 Switch
 
+{% raw %}
+
 	Article: Q49824
 	Product(s): See article
 	Version(s): 2.20 2.30
@@ -47,3 +49,5 @@ permalink: /kb/049/Q49824/
 	   primary display by typing the following command:
 	
 	      mode co80
+
+{% endraw %}

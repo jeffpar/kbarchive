@@ -6,6 +6,8 @@ permalink: /kb/245/Q245036/
 
 ## Q245036: Cannot Delete DHCP Reservations.
 
+{% raw %}
+
 	Article: Q245036
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -104,3 +106,5 @@ permalink: /kb/245/Q245036/
 	
 	=============================================================================
 	
+
+{% endraw %}

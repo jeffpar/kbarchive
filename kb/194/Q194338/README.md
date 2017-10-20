@@ -6,6 +6,8 @@ permalink: /kb/194/Q194338/
 
 ## Q194338: Unusual Mappings Appear in WINS Database
 
+{% raw %}
+
 	Article: Q194338
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -151,3 +153,5 @@ permalink: /kb/194/Q194338/
 	
 	=============================================================================
 	
+
+{% endraw %}

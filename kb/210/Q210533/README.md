@@ -6,6 +6,8 @@ permalink: /kb/210/Q210533/
 
 ## Q210533: Golf 99: Program Hangs Drawing Fifth Hole in Donald Ross Course
 
+{% raw %}
+
 	Article: Q210533
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/210/Q210533/
 	
 	=============================================================================
 	
+
+{% endraw %}

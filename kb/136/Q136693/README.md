@@ -6,6 +6,8 @@ permalink: /kb/136/Q136693/
 
 ## Q136693: How To Build Distribution Disks for Different Op Systems
 
+{% raw %}
+
 	Article: Q136693
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 |3.00b
@@ -68,3 +70,5 @@ permalink: /kb/136/Q136693/
 	
 	=============================================================================
 	
+
+{% endraw %}

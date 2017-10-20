@@ -6,6 +6,8 @@ permalink: /kb/221/Q221472/
 
 ## Q221472: Unexpected Permissions After Moving Files w/ New ACL Editor
 
+{% raw %}
+
 	Article: Q221472
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -107,3 +109,5 @@ permalink: /kb/221/Q221472/
 	
 	=============================================================================
 	
+
+{% endraw %}

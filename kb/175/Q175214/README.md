@@ -6,6 +6,8 @@ permalink: /kb/175/Q175214/
 
 ## Q175214: DIRWALK.EXE: Directory Walking Control Sample
 
+{% raw %}
+
 	Article: Q175214
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -53,3 +55,5 @@ permalink: /kb/175/Q175214/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107724/
 
 ## Q107724: Writer: System Error 15 with Insufficient Disk Space
 
+{% raw %}
+
 	Article: Q107724
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -64,3 +66,5 @@ permalink: /kb/107/Q107724/
 	
 	=============================================================================
 	
+
+{% endraw %}

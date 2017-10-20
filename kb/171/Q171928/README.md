@@ -6,6 +6,8 @@ permalink: /kb/171/Q171928/
 
 ## Q171928: Learn VC++ Now: Some Files Can't Be Opened or Copied
 
+{% raw %}
+
 	Article: Q171928
 	Product(s): Microsoft Press
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/171/Q171928/
 	
 	=============================================================================
 	
+
+{% endraw %}

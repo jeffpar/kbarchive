@@ -6,6 +6,8 @@ permalink: /kb/120/Q120051/
 
 ## Q120051: DNS Reverse Name Resolution Requests Are Incorrect
 
+{% raw %}
+
 	Article: Q120051
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/120/Q120051/
 	
 	=============================================================================
 	
+
+{% endraw %}

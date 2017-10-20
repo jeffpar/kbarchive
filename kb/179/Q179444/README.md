@@ -6,6 +6,8 @@ permalink: /kb/179/Q179444/
 
 ## Q179444: Error Message: NetWare Authentication Failure
 
+{% raw %}
+
 	Article: Q179444
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -92,3 +94,5 @@ permalink: /kb/179/Q179444/
 	
 	=============================================================================
 	
+
+{% endraw %}

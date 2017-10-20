@@ -6,6 +6,8 @@ permalink: /kb/047/Q47511/
 
 ## Q47511: QuickBASIC Must Be Main Program in Mixed-Language Calling
 
+{% raw %}
+
 	Article: Q47511
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -26,3 +28,5 @@ permalink: /kb/047/Q47511/
 	and 4.50 for MS-DOS, to Microsoft BASIC Compiler Versions 6.00 and
 	6.00b for MS-DOS and MS OS/2, and to Microsoft BASIC PDS Version 7.00
 	for MS-DOS and MS OS/2.
+
+{% endraw %}

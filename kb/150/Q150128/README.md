@@ -6,6 +6,8 @@ permalink: /kb/150/Q150128/
 
 ## Q150128: BUG: MATHERRQQ() Complex Result Variable Not Used
 
+{% raw %}
+
 	Article: Q150128
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/150/Q150128/
 	
 	=============================================================================
 	
+
+{% endraw %}

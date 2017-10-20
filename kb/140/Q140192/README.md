@@ -6,6 +6,8 @@ permalink: /kb/140/Q140192/
 
 ## Q140192: PC WSPlus: Meeting Requests Returned as Undeliverable
 
+{% raw %}
+
 	Article: Q140192
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -88,3 +90,5 @@ permalink: /kb/140/Q140192/
 	
 	=============================================================================
 	
+
+{% endraw %}

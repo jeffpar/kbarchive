@@ -6,6 +6,8 @@ permalink: /kb/137/Q137766/
 
 ## Q137766: Bookshelf: Spell Cannot Check Multiple Words
 
+{% raw %}
+
 	Article: Q137766
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:
@@ -44,3 +46,5 @@ permalink: /kb/137/Q137766/
 	
 	=============================================================================
 	
+
+{% endraw %}

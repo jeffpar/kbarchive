@@ -6,6 +6,8 @@ permalink: /kb/148/Q148169/
 
 ## Q148169: HP LaserJet 5Si Printer Property Changes Affect All Programs
 
+{% raw %}
+
 	Article: Q148169
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/148/Q148169/
 	
 	=============================================================================
 	
+
+{% endraw %}

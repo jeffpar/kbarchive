@@ -6,6 +6,8 @@ permalink: /kb/190/Q190121/
 
 ## Q190121: INFO: Why Visual Basic 6.0 and Visual Studio 6.0 Require IE4
 
+{% raw %}
+
 	Article: Q190121
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -75,3 +77,5 @@ permalink: /kb/190/Q190121/
 	
 	=============================================================================
 	
+
+{% endraw %}

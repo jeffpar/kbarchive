@@ -6,6 +6,8 @@ permalink: /kb/318/Q318519/
 
 ## Q318519: PRB: Error -2147467259 When VB Client Calls Method on COM Object
 
+{% raw %}
+
 	Article: Q318519
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -71,3 +73,5 @@ permalink: /kb/318/Q318519/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118346/
 
 ## Q118346: Printer Driver Imaging Options Do Not Function Properly
 
+{% raw %}
+
 	Article: Q118346
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/118/Q118346/
 	
 	=============================================================================
 	
+
+{% endraw %}

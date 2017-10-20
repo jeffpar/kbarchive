@@ -6,6 +6,8 @@ permalink: /kb/131/Q131682/
 
 ## Q131682: PC Win: Err Msg:...Not Have Proper Access to the Postoffice...
 
+{% raw %}
+
 	Article: Q131682
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -45,3 +47,5 @@ permalink: /kb/131/Q131682/
 	
 	=============================================================================
 	
+
+{% endraw %}

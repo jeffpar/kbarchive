@@ -6,6 +6,8 @@ permalink: /kb/295/Q295968/
 
 ## Q295968: WD97: Line Numbers Are Missing from First Page
 
+{% raw %}
+
 	Article: Q295968
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/295/Q295968/
 	
 	=============================================================================
 	
+
+{% endraw %}

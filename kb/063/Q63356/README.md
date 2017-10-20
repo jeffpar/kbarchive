@@ -6,6 +6,8 @@ permalink: /kb/063/Q63356/
 
 ## Q63356: NetWare Options in the SYSTEM.INI in Windows 3.0
 
+{% raw %}
+
 	Article: Q63356
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -64,3 +66,5 @@ permalink: /kb/063/Q63356/
 	
 	=============================================================================
 	
+
+{% endraw %}

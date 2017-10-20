@@ -6,6 +6,8 @@ permalink: /kb/152/Q152721/
 
 ## Q152721: Low on Registry Quota Error Gives Wrong Steps for Resolution
 
+{% raw %}
+
 	Article: Q152721
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/152/Q152721/
 	
 	=============================================================================
 	
+
+{% endraw %}

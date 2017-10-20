@@ -6,6 +6,8 @@ permalink: /kb/215/Q215014/
 
 ## Q215014: SMS: APM16 Does Not Run Batch File Without Extension in Cmd Line
 
+{% raw %}
+
 	Article: Q215014
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -57,3 +59,5 @@ permalink: /kb/215/Q215014/
 	
 	=============================================================================
 	
+
+{% endraw %}

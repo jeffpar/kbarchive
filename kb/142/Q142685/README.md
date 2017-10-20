@@ -6,6 +6,8 @@ permalink: /kb/142/Q142685/
 
 ## Q142685: WD97: ODMA Close Document Function Not Issued
 
+{% raw %}
+
 	Article: Q142685
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/142/Q142685/
 	
 	=============================================================================
 	
+
+{% endraw %}

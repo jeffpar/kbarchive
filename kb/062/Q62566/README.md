@@ -6,6 +6,8 @@ permalink: /kb/062/Q62566/
 
 ## Q62566: MS-DOS FORMAT Program Writes Over ROM BIOS on 80486 PC
 
+{% raw %}
+
 	Article: Q62566
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.3,4.01,5.0
@@ -46,3 +48,5 @@ permalink: /kb/062/Q62566/
 	
 	=============================================================================
 	
+
+{% endraw %}

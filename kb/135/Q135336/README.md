@@ -6,6 +6,8 @@ permalink: /kb/135/Q135336/
 
 ## Q135336: FIX: LNK2001 on AfxSocketInit When Using &#95;&#95;stdcall Default
 
+{% raw %}
+
 	Article: Q135336
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -95,3 +97,5 @@ permalink: /kb/135/Q135336/
 	
 	=============================================================================
 	
+
+{% endraw %}

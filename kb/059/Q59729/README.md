@@ -6,6 +6,8 @@ permalink: /kb/059/Q59729/
 
 ## Q59729: QB 4.5 Learning to Use Correction; Preserving COMMON in CHAIN
 
+{% raw %}
+
 	Article: Q59729
 	Product(s): See article
 	Version(s): 4.50
@@ -29,3 +31,5 @@ permalink: /kb/059/Q59729/
 	   to create a stand-alone .EXE application, do not preserve open
 	   files or variables listed in COMMON statements when a CHAIN
 	   statement transfers control to another program.
+
+{% endraw %}

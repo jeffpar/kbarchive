@@ -6,6 +6,8 @@ permalink: /kb/057/Q57961/
 
 ## Q57961: Why External References Are Created When They're Not Needed
 
+{% raw %}
+
 	Article: Q57961
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -54,3 +56,5 @@ permalink: /kb/057/Q57961/
 	
 	  return 1;
 	}
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148334/
 
 ## Q148334: Remote Users Can Compress and Uncompress NTFS Files
 
+{% raw %}
+
 	Article: Q148334
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -46,3 +48,5 @@ permalink: /kb/148/Q148334/
 	
 	=============================================================================
 	
+
+{% endraw %}

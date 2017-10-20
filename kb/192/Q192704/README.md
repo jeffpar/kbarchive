@@ -6,6 +6,8 @@ permalink: /kb/192/Q192704/
 
 ## Q192704: PRB: CArchive::Read Might Hang When Using CSocketFile
 
+{% raw %}
+
 	Article: Q192704
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/192/Q192704/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122168/
 
 ## Q122168: WFWG Hangs with Intel EtherExpress ISA and Adaptec 2940 Cards
 
+{% raw %}
+
 	Article: Q122168
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/122/Q122168/
 	
 	=============================================================================
 	
+
+{% endraw %}

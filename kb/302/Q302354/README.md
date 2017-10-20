@@ -6,6 +6,8 @@ permalink: /kb/302/Q302354/
 
 ## Q302354: SMS: Hardware Inventory Logs Exception After Inventory Finishes
 
+{% raw %}
+
 	Article: Q302354
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -71,3 +73,5 @@ permalink: /kb/302/Q302354/
 	
 	=============================================================================
 	
+
+{% endraw %}

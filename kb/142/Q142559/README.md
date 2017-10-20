@@ -6,6 +6,8 @@ permalink: /kb/142/Q142559/
 
 ## Q142559: Creating Tag Files for IIS Gopher Service
 
+{% raw %}
+
 	Article: Q142559
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,4.0
@@ -111,3 +113,5 @@ permalink: /kb/142/Q142559/
 	
 	=============================================================================
 	
+
+{% endraw %}

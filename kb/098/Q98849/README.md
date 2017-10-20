@@ -6,6 +6,8 @@ permalink: /kb/098/Q98849/
 
 ## Q98849: Adjust Parameters to Connect to LAN Man Over Slow Link
 
+{% raw %}
+
 	Article: Q98849
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -140,3 +142,5 @@ permalink: /kb/098/Q98849/
 	
 	=============================================================================
 	
+
+{% endraw %}

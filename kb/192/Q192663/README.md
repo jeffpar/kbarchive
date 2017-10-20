@@ -6,6 +6,8 @@ permalink: /kb/192/Q192663/
 
 ## Q192663: SMSINST: ODBC Data Source May Fail to Be Installed
 
+{% raw %}
+
 	Article: Q192663
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/192/Q192663/
 	
 	=============================================================================
 	
+
+{% endraw %}

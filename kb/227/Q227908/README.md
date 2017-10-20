@@ -6,6 +6,8 @@ permalink: /kb/227/Q227908/
 
 ## Q227908: Domain-Level Printer List Is Not Refreshed
 
+{% raw %}
+
 	Article: Q227908
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -117,3 +119,5 @@ permalink: /kb/227/Q227908/
 	
 	=============================================================================
 	
+
+{% endraw %}

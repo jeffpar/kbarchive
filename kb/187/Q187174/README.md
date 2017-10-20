@@ -6,6 +6,8 @@ permalink: /kb/187/Q187174/
 
 ## Q187174: Messenger Messages Are Lost If Desktop at Screen Saver
 
+{% raw %}
+
 	Article: Q187174
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/187/Q187174/
 	
 	=============================================================================
 	
+
+{% endraw %}

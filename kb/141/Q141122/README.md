@@ -6,6 +6,8 @@ permalink: /kb/141/Q141122/
 
 ## Q141122: Event 2019 Running NTSweep Client/Server Anti-Virus Program
 
+{% raw %}
+
 	Article: Q141122
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -55,3 +57,5 @@ permalink: /kb/141/Q141122/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143299/
 
 ## Q143299: CFormView-Based Server Shows Metafile When Not Active
 
+{% raw %}
+
 	Article: Q143299
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,4.2b,5.0,6.0
@@ -164,3 +166,5 @@ permalink: /kb/143/Q143299/
 	
 	=============================================================================
 	
+
+{% endraw %}

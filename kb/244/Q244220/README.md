@@ -6,6 +6,8 @@ permalink: /kb/244/Q244220/
 
 ## Q244220: Computer Stops Responding When Creating IIS Server Instance
 
+{% raw %}
+
 	Article: Q244220
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/244/Q244220/
 	
 	=============================================================================
 	
+
+{% endraw %}

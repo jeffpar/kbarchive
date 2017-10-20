@@ -6,6 +6,8 @@ permalink: /kb/152/Q152867/
 
 ## Q152867: XADM: Backfilling Public Folders takes a Long Time
 
+{% raw %}
+
 	Article: Q152867
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/152/Q152867/
 	
 	=============================================================================
 	
+
+{% endraw %}

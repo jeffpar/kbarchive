@@ -6,6 +6,8 @@ permalink: /kb/074/Q74636/
 
 ## Q74636: A20 Hardware Error Installing Windows 3.0 on AST Premium
 
+{% raw %}
+
 	Article: Q74636
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -44,3 +46,5 @@ permalink: /kb/074/Q74636/
 	
 	=============================================================================
 	
+
+{% endraw %}

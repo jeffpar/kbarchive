@@ -6,6 +6,8 @@ permalink: /kb/151/Q151724/
 
 ## Q151724: Meeting Created by Delegate Shows Manager as Organizer
 
+{% raw %}
+
 	Article: Q151724
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -60,3 +62,5 @@ permalink: /kb/151/Q151724/
 	
 	=============================================================================
 	
+
+{% endraw %}

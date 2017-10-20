@@ -6,6 +6,8 @@ permalink: /kb/172/Q172449/
 
 ## Q172449: SMS: Unable to Find Logon Server and No Default Server
 
+{% raw %}
+
 	Article: Q172449
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -63,3 +65,5 @@ permalink: /kb/172/Q172449/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149507/
 
 ## Q149507: PRB: Cannot Change QuickWin Application Status Bar Color
 
+{% raw %}
+
 	Article: Q149507
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,4.0
@@ -63,3 +65,5 @@ permalink: /kb/149/Q149507/
 	
 	=============================================================================
 	
+
+{% endraw %}

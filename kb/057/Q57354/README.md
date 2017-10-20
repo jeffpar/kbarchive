@@ -6,6 +6,8 @@ permalink: /kb/057/Q57354/
 
 ## Q57354: How to Print BASIC Video Screens to Epson Printers
 
+{% raw %}
+
 	Article: Q57354
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -674,3 +676,5 @@ permalink: /kb/057/Q57354/
 	     PUT #1, , line$      ' Send formfeed (page eject)
 	     CLOSE 1              ' All done
 	   END SUB
+
+{% endraw %}

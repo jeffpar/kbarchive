@@ -6,6 +6,8 @@ permalink: /kb/137/Q137206/
 
 ## Q137206: Meeting Acceptance Differs in Schedule+ Versions 1.0 and 7.0
 
+{% raw %}
+
 	Article: Q137206
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -47,3 +49,5 @@ permalink: /kb/137/Q137206/
 	
 	=============================================================================
 	
+
+{% endraw %}

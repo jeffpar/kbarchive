@@ -6,6 +6,8 @@ permalink: /kb/198/Q198147/
 
 ## Q198147: Combat FS: How to Change the Coordinate Display Format
 
+{% raw %}
+
 	Article: Q198147
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -89,3 +91,5 @@ permalink: /kb/198/Q198147/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/312/Q312492/
 
 ## Q312492: Dutch and Polish Versions of the SRP Truncate the Country List
 
+{% raw %}
+
 	Article: Q312492
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -103,3 +105,5 @@ permalink: /kb/312/Q312492/
 	
 	=============================================================================
 	
+
+{% endraw %}

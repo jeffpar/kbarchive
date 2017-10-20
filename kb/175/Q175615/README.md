@@ -6,6 +6,8 @@ permalink: /kb/175/Q175615/
 
 ## Q175615: FIX: Upsize Wizard Keeps Structure of Removed Table for Mapping
 
+{% raw %}
+
 	Article: Q175615
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -76,3 +78,5 @@ permalink: /kb/175/Q175615/
 	
 	=============================================================================
 	
+
+{% endraw %}

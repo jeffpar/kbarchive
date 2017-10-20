@@ -6,6 +6,8 @@ permalink: /kb/270/Q270846/
 
 ## Q270846: Microsoft Reader: Minimum System Requirements for Windows
 
+{% raw %}
+
 	Article: Q270846
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/270/Q270846/
 	
 	=============================================================================
 	
+
+{% endraw %}

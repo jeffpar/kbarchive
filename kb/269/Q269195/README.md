@@ -6,6 +6,8 @@ permalink: /kb/269/Q269195/
 
 ## Q269195: Active Directoy MA Does Not Allow DN
 
+{% raw %}
+
 	Article: Q269195
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2
@@ -58,3 +60,5 @@ permalink: /kb/269/Q269195/
 	
 	=============================================================================
 	
+
+{% endraw %}

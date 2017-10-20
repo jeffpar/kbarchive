@@ -6,6 +6,8 @@ permalink: /kb/068/Q68677/
 
 ## Q68677: ASD: Large Mountain Immediately Disappears
 
+{% raw %}
+
 	Article: Q68677
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/068/Q68677/
 	
 	=============================================================================
 	
+
+{% endraw %}

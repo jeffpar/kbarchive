@@ -6,6 +6,8 @@ permalink: /kb/170/Q170476/
 
 ## Q170476: Illegal Operation Error Message When Emptying Recycle Bin
 
+{% raw %}
+
 	Article: Q170476
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -84,3 +86,5 @@ permalink: /kb/170/Q170476/
 	
 	=============================================================================
 	
+
+{% endraw %}

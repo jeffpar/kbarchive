@@ -6,6 +6,8 @@ permalink: /kb/067/Q67779/
 
 ## Q67779: C1001: Internal Compiler Error: regMD.c, Lines 3047 and 3020
 
+{% raw %}
+
 	Article: Q67779
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -61,3 +63,5 @@ permalink: /kb/067/Q67779/
 	        cp = wp;
 	    }
 	}
+
+{% endraw %}

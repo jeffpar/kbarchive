@@ -6,6 +6,8 @@ permalink: /kb/153/Q153517/
 
 ## Q153517: PGC Does Not Look For Current Connections
 
+{% raw %}
+
 	Article: Q153517
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -49,3 +51,5 @@ permalink: /kb/153/Q153517/
 	
 	=============================================================================
 	
+
+{% endraw %}

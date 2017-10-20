@@ -6,6 +6,8 @@ permalink: /kb/148/Q148726/
 
 ## Q148726: INF: ODBC Desktop Drivers and OLE in a Multithreaded App
 
+{% raw %}
+
 	Article: Q148726
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.4
@@ -116,3 +118,5 @@ permalink: /kb/148/Q148726/
 	
 	=============================================================================
 	
+
+{% endraw %}

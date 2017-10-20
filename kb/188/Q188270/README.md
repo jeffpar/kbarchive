@@ -6,6 +6,8 @@ permalink: /kb/188/Q188270/
 
 ## Q188270: FP97: Cannot View Global IP Restrictions in FrontPage Explorer
 
+{% raw %}
+
 	Article: Q188270
 	Product(s): Word Front Page
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/188/Q188270/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264374/
 
 ## Q264374: Motocross Madness 2: Textures Are Distorted on Windows 2000
 
+{% raw %}
+
 	Article: Q264374
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -82,3 +84,5 @@ permalink: /kb/264/Q264374/
 	
 	=============================================================================
 	
+
+{% endraw %}

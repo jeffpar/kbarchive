@@ -6,6 +6,8 @@ permalink: /kb/253/Q253718/
 
 ## Q253718: XCON: Message Transfer Agent Event IDs 2110, 2171
 
+{% raw %}
+
 	Article: Q253718
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -77,3 +79,5 @@ permalink: /kb/253/Q253718/
 	
 	=============================================================================
 	
+
+{% endraw %}

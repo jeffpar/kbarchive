@@ -6,6 +6,8 @@ permalink: /kb/111/Q111488/
 
 ## Q111488: Pipe Dream: Scoring Error in Help File
 
+{% raw %}
+
 	Article: Q111488
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -46,3 +48,5 @@ permalink: /kb/111/Q111488/
 	
 	=============================================================================
 	
+
+{% endraw %}

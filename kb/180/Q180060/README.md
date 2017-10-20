@@ -6,6 +6,8 @@ permalink: /kb/180/Q180060/
 
 ## Q180060: XCLN: Autoforwarded E-form Does Not Prefix Subject Line With FW:
 
+{% raw %}
+
 	Article: Q180060
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -51,3 +53,5 @@ permalink: /kb/180/Q180060/
 	
 	=============================================================================
 	
+
+{% endraw %}

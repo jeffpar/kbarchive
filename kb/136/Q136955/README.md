@@ -6,6 +6,8 @@ permalink: /kb/136/Q136955/
 
 ## Q136955: Hang When Ejecting Audio CD with Panasonic CR-562B Drive
 
+{% raw %}
+
 	Article: Q136955
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/136/Q136955/
 	
 	=============================================================================
 	
+
+{% endraw %}

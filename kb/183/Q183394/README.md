@@ -6,6 +6,8 @@ permalink: /kb/183/Q183394/
 
 ## Q183394: XADM: Event Agent Fires Every 15 min If No Schedule Is Defined
 
+{% raw %}
+
 	Article: Q183394
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/183/Q183394/
 	
 	=============================================================================
 	
+
+{% endraw %}

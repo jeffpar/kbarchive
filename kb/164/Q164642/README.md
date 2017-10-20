@@ -6,6 +6,8 @@ permalink: /kb/164/Q164642/
 
 ## Q164642: SNANLS API Problems Using Far-East Codepages
 
+{% raw %}
+
 	Article: Q164642
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -71,3 +73,5 @@ permalink: /kb/164/Q164642/
 	
 	=============================================================================
 	
+
+{% endraw %}

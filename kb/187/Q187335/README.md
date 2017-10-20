@@ -6,6 +6,8 @@ permalink: /kb/187/Q187335/
 
 ## Q187335: SMS: Clients Not Re-mapped After DOMAIN:SITECODE Change
 
+{% raw %}
+
 	Article: Q187335
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -73,3 +75,5 @@ permalink: /kb/187/Q187335/
 	
 	=============================================================================
 	
+
+{% endraw %}

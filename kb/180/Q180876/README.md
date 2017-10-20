@@ -6,6 +6,8 @@ permalink: /kb/180/Q180876/
 
 ## Q180876: XFOR: Err Msg: Invalid Home Server Definition in User List File
 
+{% raw %}
+
 	Article: Q180876
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -61,3 +63,5 @@ permalink: /kb/180/Q180876/
 	
 	=============================================================================
 	
+
+{% endraw %}

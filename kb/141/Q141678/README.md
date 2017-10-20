@@ -6,6 +6,8 @@ permalink: /kb/141/Q141678/
 
 ## Q141678: FIX: Changes Made to a Sub-Classed CommandGroup are not Saved
 
+{% raw %}
+
 	Article: Q141678
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -82,3 +84,5 @@ permalink: /kb/141/Q141678/
 	
 	=============================================================================
 	
+
+{% endraw %}

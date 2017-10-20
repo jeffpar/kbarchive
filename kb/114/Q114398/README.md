@@ -6,6 +6,8 @@ permalink: /kb/114/Q114398/
 
 ## Q114398: FAX: First Contact Form for FAX Gateway
 
+{% raw %}
+
 	Article: Q114398
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1,3.0,3.0a
@@ -80,3 +82,5 @@ permalink: /kb/114/Q114398/
 	
 	=============================================================================
 	
+
+{% endraw %}

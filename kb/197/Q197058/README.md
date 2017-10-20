@@ -6,6 +6,8 @@ permalink: /kb/197/Q197058/
 
 ## Q197058: XCON: NDRs Can Be Lost if a More Restrictive Size Limit is Set
 
+{% raw %}
+
 	Article: Q197058
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -124,3 +126,5 @@ permalink: /kb/197/Q197058/
 	
 	=============================================================================
 	
+
+{% endraw %}

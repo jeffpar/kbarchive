@@ -6,6 +6,8 @@ permalink: /kb/089/Q89879/
 
 ## Q89879: Differences Between PCM/ADPCM Wave Files Explained
 
+{% raw %}
+
 	Article: Q89879
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/089/Q89879/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148811/
 
 ## Q148811: PC NTMMTA: Err Msg: Fatal &#91; 7&#93; Error Renaming File...
 
+{% raw %}
+
 	Article: Q148811
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -99,3 +101,5 @@ permalink: /kb/148/Q148811/
 	
 	=============================================================================
 	
+
+{% endraw %}

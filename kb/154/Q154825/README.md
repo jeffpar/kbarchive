@@ -6,6 +6,8 @@ permalink: /kb/154/Q154825/
 
 ## Q154825: HOWTO: Extract Multiple RDO Resultsets from Stored Procedures
 
+{% raw %}
+
 	Article: Q154825
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -186,3 +188,5 @@ permalink: /kb/154/Q154825/
 	
 	=============================================================================
 	
+
+{% endraw %}

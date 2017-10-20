@@ -6,6 +6,8 @@ permalink: /kb/139/Q139822/
 
 ## Q139822: How to Restore a Backup to Computer with Different Hardware
 
+{% raw %}
+
 	Article: Q139822
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.00
@@ -107,3 +109,5 @@ permalink: /kb/139/Q139822/
 	
 	=============================================================================
 	
+
+{% endraw %}

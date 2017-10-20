@@ -6,6 +6,8 @@ permalink: /kb/247/Q247552/
 
 ## Q247552: Networking Essentials Plus, Third Edition Comments and Correctio
 
+{% raw %}
+
 	Article: Q247552
 	Product(s): Microsoft Press
 	Version(s): 
@@ -256,3 +258,5 @@ permalink: /kb/247/Q247552/
 	
 	=============================================================================
 	
+
+{% endraw %}

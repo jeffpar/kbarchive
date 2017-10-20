@@ -6,6 +6,8 @@ permalink: /kb/195/Q195474/
 
 ## Q195474: HOWTO: Determine RDO Files Needed for Distribution of App
 
+{% raw %}
+
 	Article: Q195474
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/195/Q195474/
 	
 	=============================================================================
 	
+
+{% endraw %}

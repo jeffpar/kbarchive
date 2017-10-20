@@ -6,6 +6,8 @@ permalink: /kb/249/Q249636/
 
 ## Q249636: HOWTO: Use the CoSetProxyBlanket Function in Visual Basic
 
+{% raw %}
+
 	Article: Q249636
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -183,3 +185,5 @@ permalink: /kb/249/Q249636/
 	
 	=============================================================================
 	
+
+{% endraw %}

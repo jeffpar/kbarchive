@@ -6,6 +6,8 @@ permalink: /kb/134/Q134463/
 
 ## Q134463: PPT7: System Requirements for PowerPoint for Windows 95
 
+{% raw %}
+
 	Article: Q134463
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -67,3 +69,5 @@ permalink: /kb/134/Q134463/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/252/Q252507/
 
 ## Q252507: SNA Server Service Pack 3 Appears to Update but Does Not
 
+{% raw %}
+
 	Article: Q252507
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -53,3 +55,5 @@ permalink: /kb/252/Q252507/
 	
 	=============================================================================
 	
+
+{% endraw %}

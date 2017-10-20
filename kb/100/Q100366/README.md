@@ -6,6 +6,8 @@ permalink: /kb/100/Q100366/
 
 ## Q100366: lstrcmpi, Accented Chars, and Sort Order in Windows
 
+{% raw %}
+
 	Article: Q100366
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -222,3 +224,5 @@ permalink: /kb/100/Q100366/
 	
 	=============================================================================
 	
+
+{% endraw %}

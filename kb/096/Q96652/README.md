@@ -6,6 +6,8 @@ permalink: /kb/096/Q96652/
 
 ## Q96652: PC DB: 3.0b Server Disk 4 &#91;3.5, 720K; 5.25 1.2 MB&#93;
 
+{% raw %}
+
 	Article: Q96652
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b
@@ -58,3 +60,5 @@ permalink: /kb/096/Q96652/
 	
 	=============================================================================
 	
+
+{% endraw %}

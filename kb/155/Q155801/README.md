@@ -6,6 +6,8 @@ permalink: /kb/155/Q155801/
 
 ## Q155801: WD97: CTRL+Page Up/Down Keys, Previous/Next Page Buttons Change
 
+{% raw %}
+
 	Article: Q155801
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -221,3 +223,5 @@ permalink: /kb/155/Q155801/
 	
 	=============================================================================
 	
+
+{% endraw %}

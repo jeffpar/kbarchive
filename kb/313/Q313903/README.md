@@ -6,6 +6,8 @@ permalink: /kb/313/Q313903/
 
 ## Q313903: HOW TO: Change a User Name in a Domain in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q313903
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/313/Q313903/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173670/
 
 ## Q173670: WD97: How to Recover a Saved Field Value
 
+{% raw %}
+
 	Article: Q173670
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/173/Q173670/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223166/
 
 ## Q223166: PRB: &quot;Error 7 - Out of Memory &quot; When Loading Books Online
 
+{% raw %}
+
 	Article: Q223166
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97
@@ -76,3 +78,5 @@ permalink: /kb/223/Q223166/
 	
 	=============================================================================
 	
+
+{% endraw %}

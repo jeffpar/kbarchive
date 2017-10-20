@@ -6,6 +6,8 @@ permalink: /kb/133/Q133036/
 
 ## Q133036: No Recording Control Slider with SoundBlaster Pro Sound Card
 
+{% raw %}
+
 	Article: Q133036
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/133/Q133036/
 	
 	=============================================================================
 	
+
+{% endraw %}

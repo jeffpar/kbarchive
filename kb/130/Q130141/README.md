@@ -6,6 +6,8 @@ permalink: /kb/130/Q130141/
 
 ## Q130141: HOWTO: Install SourceSafe on a Windows Client Workstation
 
+{% raw %}
+
 	Article: Q130141
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:3.1
@@ -73,3 +75,5 @@ permalink: /kb/130/Q130141/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163297/
 
 ## Q163297: XCON: MTA Taking a Long Time to Start
 
+{% raw %}
+
 	Article: Q163297
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/163/Q163297/
 	
 	=============================================================================
 	
+
+{% endraw %}

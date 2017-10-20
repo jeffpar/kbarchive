@@ -6,6 +6,8 @@ permalink: /kb/171/Q171520/
 
 ## Q171520: FIX: Unable to Set Binary Compatibility with Class Module
 
+{% raw %}
+
 	Article: Q171520
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -95,3 +97,5 @@ permalink: /kb/171/Q171520/
 	
 	=============================================================================
 	
+
+{% endraw %}

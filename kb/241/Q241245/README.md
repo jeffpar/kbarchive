@@ -6,6 +6,8 @@ permalink: /kb/241/Q241245/
 
 ## Q241245: PRB: &quot;Error 7 - Out of Memory&quot; from VB App Using FM20.DLL
 
+{% raw %}
+
 	Article: Q241245
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/241/Q241245/
 	
 	=============================================================================
 	
+
+{% endraw %}

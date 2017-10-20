@@ -6,6 +6,8 @@ permalink: /kb/181/Q181499/
 
 ## Q181499: USB Over Current Condition Causes Windows 95 Hang
 
+{% raw %}
+
 	Article: Q181499
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.1
@@ -54,3 +56,5 @@ permalink: /kb/181/Q181499/
 	
 	=============================================================================
 	
+
+{% endraw %}

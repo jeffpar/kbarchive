@@ -6,6 +6,8 @@ permalink: /kb/153/Q153610/
 
 ## Q153610: PGC Defaults to Wrong Drive Mode After Period of Inactivity
 
+{% raw %}
+
 	Article: Q153610
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -49,3 +51,5 @@ permalink: /kb/153/Q153610/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137044/
 
 ## Q137044: SMTP: Err Msg: 354 Start Mail Input; End wit
 
+{% raw %}
+
 	Article: Q137044
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/137/Q137044/
 	
 	=============================================================================
 	
+
+{% endraw %}

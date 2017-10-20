@@ -6,6 +6,8 @@ permalink: /kb/162/Q162408/
 
 ## Q162408: How to Make IE Recognize Foreign Characters on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q162408
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:3.0,3.01,3.02,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5; winnt:4.0
@@ -142,3 +144,5 @@ permalink: /kb/162/Q162408/
 	
 	=============================================================================
 	
+
+{% endraw %}

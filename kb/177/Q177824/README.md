@@ -6,6 +6,8 @@ permalink: /kb/177/Q177824/
 
 ## Q177824: DHCP Client Is Assigned Subnet Broadcast Address
 
+{% raw %}
+
 	Article: Q177824
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT: 4.0
@@ -78,3 +80,5 @@ permalink: /kb/177/Q177824/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192346/
 
 ## Q192346: WD97: Address Book Icon Doesn't Default to Outlook Contacts
 
+{% raw %}
+
 	Article: Q192346
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -123,3 +125,5 @@ permalink: /kb/192/Q192346/
 	
 	=============================================================================
 	
+
+{% endraw %}

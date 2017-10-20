@@ -6,6 +6,8 @@ permalink: /kb/152/Q152011/
 
 ## Q152011: Requirements for Using WinAPPCStartup and WinAPPCCleanup.
 
+{% raw %}
+
 	Article: Q152011
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11,3.0
@@ -73,3 +75,5 @@ permalink: /kb/152/Q152011/
 	
 	=============================================================================
 	
+
+{% endraw %}

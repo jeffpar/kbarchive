@@ -6,6 +6,8 @@ permalink: /kb/170/Q170669/
 
 ## Q170669: Creating C:&#92;Program Folder Causes Add/Remove Program to Fail
 
+{% raw %}
+
 	Article: Q170669
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -85,3 +87,5 @@ permalink: /kb/170/Q170669/
 	
 	=============================================================================
 	
+
+{% endraw %}

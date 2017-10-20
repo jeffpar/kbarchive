@@ -6,6 +6,8 @@ permalink: /kb/242/Q242576/
 
 ## Q242576: Err: MSBackup Has Encountered a Serious Error in List Manager
 
+{% raw %}
+
 	Article: Q242576
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -112,3 +114,5 @@ permalink: /kb/242/Q242576/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178995/
 
 ## Q178995: FIX: Visual C++ Wizards Ignore &quot;Insert Spaces&quot; in Tabs Option
 
+{% raw %}
+
 	Article: Q178995
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -121,3 +123,5 @@ permalink: /kb/178/Q178995/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138306/
 
 ## Q138306: Setup Changes Date and Time Stamp of Installed Files
 
+{% raw %}
+
 	Article: Q138306
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -91,3 +93,5 @@ permalink: /kb/138/Q138306/
 	
 	=============================================================================
 	
+
+{% endraw %}

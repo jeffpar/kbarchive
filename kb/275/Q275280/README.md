@@ -6,6 +6,8 @@ permalink: /kb/275/Q275280/
 
 ## Q275280: Workstation Definitions That Use MAC Addresses Fail on Win 2000
 
+{% raw %}
+
 	Article: Q275280
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3
@@ -90,3 +92,5 @@ permalink: /kb/275/Q275280/
 	
 	=============================================================================
 	
+
+{% endraw %}

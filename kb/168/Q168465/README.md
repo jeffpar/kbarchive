@@ -6,6 +6,8 @@ permalink: /kb/168/Q168465/
 
 ## Q168465: XFOR: Event ID 68 Running cc:Mail DirSync
 
+{% raw %}
+
 	Article: Q168465
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -90,3 +92,5 @@ permalink: /kb/168/Q168465/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/076/Q76833/
 
 ## Q76833: Changing the Focus from the Search Window in Bookshelf
 
+{% raw %}
+
 	Article: Q76833
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition,1992 edition,1993 edition
@@ -59,3 +61,5 @@ permalink: /kb/076/Q76833/
 	
 	=============================================================================
 	
+
+{% endraw %}

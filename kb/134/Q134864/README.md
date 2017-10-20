@@ -6,6 +6,8 @@ permalink: /kb/134/Q134864/
 
 ## Q134864: PPT7: Levels of Undo Greater Than Specified in PowerPoint
 
+{% raw %}
+
 	Article: Q134864
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -49,3 +51,5 @@ permalink: /kb/134/Q134864/
 	
 	=============================================================================
 	
+
+{% endraw %}

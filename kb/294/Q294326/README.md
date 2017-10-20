@@ -6,6 +6,8 @@ permalink: /kb/294/Q294326/
 
 ## Q294326: Event ID 1003: Terminal Service Client Has Provided an...
 
+{% raw %}
+
 	Article: Q294326
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6
@@ -98,3 +100,5 @@ permalink: /kb/294/Q294326/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243053/
 
 ## Q243053: HOWTO: Create an Application Role on Microsoft SQL Server 7.0
 
+{% raw %}
+
 	Article: Q243053
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0; winnt:7.0
@@ -226,3 +228,5 @@ permalink: /kb/243/Q243053/
 	
 	=============================================================================
 	
+
+{% endraw %}

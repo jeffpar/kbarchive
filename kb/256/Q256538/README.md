@@ -6,6 +6,8 @@ permalink: /kb/256/Q256538/
 
 ## Q256538: Creating an XML Page and Style Sheet to Display FoxPro Data
 
+{% raw %}
+
 	Article: Q256538
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -122,3 +124,5 @@ permalink: /kb/256/Q256538/
 	
 	=============================================================================
 	
+
+{% endraw %}

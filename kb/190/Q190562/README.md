@@ -6,6 +6,8 @@ permalink: /kb/190/Q190562/
 
 ## Q190562: FIX: SelectedFore/BackColor Ignored in Top-Level Forms
 
+{% raw %}
+
 	Article: Q190562
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -103,3 +105,5 @@ permalink: /kb/190/Q190562/
 	
 	=============================================================================
 	
+
+{% endraw %}

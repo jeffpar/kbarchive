@@ -6,6 +6,8 @@ permalink: /kb/192/Q192092/
 
 ## Q192092: WD97: Graphics Imported from Mac Displayed as QuickTime Logo
 
+{% raw %}
+
 	Article: Q192092
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/192/Q192092/
 	
 	=============================================================================
 	
+
+{% endraw %}

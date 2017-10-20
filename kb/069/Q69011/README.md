@@ -6,6 +6,8 @@ permalink: /kb/069/Q69011/
 
 ## Q69011: Bad Conditional Jump Generated in Inline Assembly
 
+{% raw %}
+
 	Article: Q69011
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -46,3 +48,5 @@ permalink: /kb/069/Q69011/
 	foo:  pop   ds
 	   }
 	}
+
+{% endraw %}

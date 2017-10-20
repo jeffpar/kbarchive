@@ -6,6 +6,8 @@ permalink: /kb/138/Q138816/
 
 ## Q138816: BUG: &quot;Error occurred while trying to rebuild&quot; w/ Setup Wizard
 
+{% raw %}
+
 	Article: Q138816
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -109,3 +111,5 @@ permalink: /kb/138/Q138816/
 	
 	=============================================================================
 	
+
+{% endraw %}

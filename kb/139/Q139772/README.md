@@ -6,6 +6,8 @@ permalink: /kb/139/Q139772/
 
 ## Q139772: Compression Agent Does Not Set Exceptions for Hidden Files
 
+{% raw %}
+
 	Article: Q139772
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -55,3 +57,5 @@ permalink: /kb/139/Q139772/
 	
 	=============================================================================
 	
+
+{% endraw %}

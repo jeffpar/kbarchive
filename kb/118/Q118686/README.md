@@ -6,6 +6,8 @@ permalink: /kb/118/Q118686/
 
 ## Q118686: Availability of Japanese Visual C++
 
+{% raw %}
+
 	Article: Q118686
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5; winnt:1.0,2.0,4.0
@@ -56,3 +58,5 @@ permalink: /kb/118/Q118686/
 	
 	=============================================================================
 	
+
+{% endraw %}

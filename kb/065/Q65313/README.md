@@ -6,6 +6,8 @@ permalink: /kb/065/Q65313/
 
 ## Q65313: Documentation for _strerror() Return Value Is Incorrect
 
+{% raw %}
+
 	Article: Q65313
 	Product(s): See article
 	Version(s): 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -42,3 +44,5 @@ permalink: /kb/065/Q65313/
 	The online help mentions the correct return value for the _strerror
 	function in the body of the "Description" section, but in the section
 	titled "Return Value," the return value is documented incorrectly.
+
+{% endraw %}

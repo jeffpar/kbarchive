@@ -6,6 +6,8 @@ permalink: /kb/258/Q258271/
 
 ## Q258271: SNA Application May be Slow When Locating HIS2000
 
+{% raw %}
+
 	Article: Q258271
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -134,3 +136,5 @@ permalink: /kb/258/Q258271/
 	
 	=============================================================================
 	
+
+{% endraw %}

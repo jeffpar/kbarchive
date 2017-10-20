@@ -6,6 +6,8 @@ permalink: /kb/102/Q102448/
 
 ## Q102448: PC Forms: Err: MAPI_FAILURE When Sending Message
 
+{% raw %}
+
 	Article: Q102448
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -49,3 +51,5 @@ permalink: /kb/102/Q102448/
 	
 	=============================================================================
 	
+
+{% endraw %}

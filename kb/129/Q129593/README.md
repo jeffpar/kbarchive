@@ -6,6 +6,8 @@ permalink: /kb/129/Q129593/
 
 ## Q129593: Windows NT Workstation and Server Optimized For Different Roles
 
+{% raw %}
+
 	Article: Q129593
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -131,3 +133,5 @@ permalink: /kb/129/Q129593/
 	
 	=============================================================================
 	
+
+{% endraw %}

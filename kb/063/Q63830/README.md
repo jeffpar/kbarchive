@@ -6,6 +6,8 @@ permalink: /kb/063/Q63830/
 
 ## Q63830: PRB: Incomplete Printing of File Using File Print Option
 
+{% raw %}
+
 	Article: Q63830
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/063/Q63830/
 	
 	=============================================================================
 	
+
+{% endraw %}

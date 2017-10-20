@@ -6,6 +6,8 @@ permalink: /kb/050/Q50704/
 
 ## Q50704: Compiling isatty() Sample Program Gives C2146: Syntax Error
 
+{% raw %}
+
 	Article: Q50704
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.00 5.10
@@ -21,3 +23,5 @@ permalink: /kb/050/Q50704/
 	correct syntax:
 	
 	   printf ("Is stdout redirected? %s", interactive ? "no" : "yes");
+
+{% endraw %}

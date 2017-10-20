@@ -6,6 +6,8 @@ permalink: /kb/221/Q221702/
 
 ## Q221702: FIX: C0000005 Fatal Error w/ ISBLANK( ) and Array Prop in Init
 
+{% raw %}
+
 	Article: Q221702
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a,6.0
@@ -158,3 +160,5 @@ permalink: /kb/221/Q221702/
 	
 	=============================================================================
 	
+
+{% endraw %}

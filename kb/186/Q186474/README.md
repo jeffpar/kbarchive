@@ -6,6 +6,8 @@ permalink: /kb/186/Q186474/
 
 ## Q186474: Java Applets Will Not Run on Terminal Server
 
+{% raw %}
+
 	Article: Q186474
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -50,3 +52,5 @@ permalink: /kb/186/Q186474/
 	
 	=============================================================================
 	
+
+{% endraw %}

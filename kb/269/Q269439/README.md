@@ -6,6 +6,8 @@ permalink: /kb/269/Q269439/
 
 ## Q269439: XADM: Synchronization of .ost Files Won't Work w. Antivirus API
 
+{% raw %}
+
 	Article: Q269439
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -135,3 +137,5 @@ permalink: /kb/269/Q269439/
 	
 	=============================================================================
 	
+
+{% endraw %}

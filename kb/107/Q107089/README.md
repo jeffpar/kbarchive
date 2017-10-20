@@ -6,6 +6,8 @@ permalink: /kb/107/Q107089/
 
 ## Q107089: SMTP: Err Msg
 
+{% raw %}
+
 	Article: Q107089
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -55,3 +57,5 @@ permalink: /kb/107/Q107089/
 	
 	=============================================================================
 	
+
+{% endraw %}

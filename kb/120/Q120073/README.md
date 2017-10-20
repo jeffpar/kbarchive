@@ -6,6 +6,8 @@ permalink: /kb/120/Q120073/
 
 ## Q120073: How to Rotate a Pen Windows Application
 
+{% raw %}
+
 	Article: Q120073
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -347,3 +349,5 @@ permalink: /kb/120/Q120073/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120228/
 
 ## Q120228: RAS Point-to-Point: Password Conventions and Common Problems
 
+{% raw %}
+
 	Article: Q120228
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -65,3 +67,5 @@ permalink: /kb/120/Q120228/
 	
 	=============================================================================
 	
+
+{% endraw %}

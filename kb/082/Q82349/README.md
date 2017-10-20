@@ -6,6 +6,8 @@ permalink: /kb/082/Q82349/
 
 ## Q82349: CodeView Hangs if VM Opened During Debugging
 
+{% raw %}
+
 	Article: Q82349
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/082/Q82349/
 	
 	=============================================================================
 	
+
+{% endraw %}

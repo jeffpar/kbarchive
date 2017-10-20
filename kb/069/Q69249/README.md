@@ -6,6 +6,8 @@ permalink: /kb/069/Q69249/
 
 ## Q69249: Oak Technology Inc. Video BIOS Version 2.14 and Windows 3.0
 
+{% raw %}
+
 	Article: Q69249
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/069/Q69249/
 	
 	=============================================================================
 	
+
+{% endraw %}

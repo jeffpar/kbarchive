@@ -6,6 +6,8 @@ permalink: /kb/181/Q181359/
 
 ## Q181359: BUG: Pop-up Menu Click Event Does Not Execute in an MDI Program
 
+{% raw %}
+
 	Article: Q181359
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -130,3 +132,5 @@ permalink: /kb/181/Q181359/
 	
 	=============================================================================
 	
+
+{% endraw %}

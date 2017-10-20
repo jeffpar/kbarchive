@@ -6,6 +6,8 @@ permalink: /kb/084/Q84718/
 
 ## Q84718: Redirecting a TSR May Leave File Handle Open
 
+{% raw %}
+
 	Article: Q84718
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -66,3 +68,5 @@ permalink: /kb/084/Q84718/
 	
 	=============================================================================
 	
+
+{% endraw %}

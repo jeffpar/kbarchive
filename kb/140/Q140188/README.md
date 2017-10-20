@@ -6,6 +6,8 @@ permalink: /kb/140/Q140188/
 
 ## Q140188: FIX: C1001 or C2434: Using Templates in Default Arguments
 
+{% raw %}
+
 	Article: Q140188
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -140,3 +142,5 @@ permalink: /kb/140/Q140188/
 	
 	=============================================================================
 	
+
+{% endraw %}

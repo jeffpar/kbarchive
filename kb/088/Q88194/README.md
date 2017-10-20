@@ -6,6 +6,8 @@ permalink: /kb/088/Q88194/
 
 ## Q88194: Can't Create Swap Files on SYDOS Removable Hard Drives
 
+{% raw %}
+
 	Article: Q88194
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/088/Q88194/
 	
 	=============================================================================
 	
+
+{% endraw %}

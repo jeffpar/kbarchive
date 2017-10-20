@@ -6,6 +6,8 @@ permalink: /kb/097/Q97892/
 
 ## Q97892: PC WRmt: 3.2 Mail Remote for Windows Disk 3 &#91;3.5&#93; - U.S.
 
+{% raw %}
+
 	Article: Q97892
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -48,3 +50,5 @@ permalink: /kb/097/Q97892/
 	
 	=============================================================================
 	
+
+{% endraw %}

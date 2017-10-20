@@ -6,6 +6,8 @@ permalink: /kb/304/Q304035/
 
 ## Q304035: SMS: Delete Package Wizard Displays Incorrect Value of &quot;Never&quot;
 
+{% raw %}
+
 	Article: Q304035
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -51,3 +53,5 @@ permalink: /kb/304/Q304035/
 	
 	=============================================================================
 	
+
+{% endraw %}

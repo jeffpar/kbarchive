@@ -6,6 +6,8 @@ permalink: /kb/083/Q83321/
 
 ## Q83321: Some Applications Won't Print from File Manager Version 3.1
 
+{% raw %}
+
 	Article: Q83321
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/083/Q83321/
 	
 	=============================================================================
 	
+
+{% endraw %}

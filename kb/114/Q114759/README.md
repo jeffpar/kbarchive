@@ -6,6 +6,8 @@ permalink: /kb/114/Q114759/
 
 ## Q114759: Dot Matrix Printer Controls Don't Function
 
+{% raw %}
+
 	Article: Q114759
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -55,3 +57,5 @@ permalink: /kb/114/Q114759/
 	
 	=============================================================================
 	
+
+{% endraw %}

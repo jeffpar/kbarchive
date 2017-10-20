@@ -6,6 +6,8 @@ permalink: /kb/249/Q249133/
 
 ## Q249133: XFOR: Messages from cc:Mail to Exchange Missing Address Info.
 
+{% raw %}
+
 	Article: Q249133
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -109,3 +111,5 @@ permalink: /kb/249/Q249133/
 	
 	=============================================================================
 	
+
+{% endraw %}

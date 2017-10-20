@@ -6,6 +6,8 @@ permalink: /kb/260/Q260386/
 
 ## Q260386: Allegiance Err Msg: CRC for &lt;Filename&gt; Does Not Match CRC...
 
+{% raw %}
+
 	Article: Q260386
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -68,3 +70,5 @@ permalink: /kb/260/Q260386/
 	
 	=============================================================================
 	
+
+{% endraw %}

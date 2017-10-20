@@ -6,6 +6,8 @@ permalink: /kb/161/Q161912/
 
 ## Q161912: SMS: Winpopup.exe May Cause Windows 95 Shut Down to Fail
 
+{% raw %}
+
 	Article: Q161912
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -68,3 +70,5 @@ permalink: /kb/161/Q161912/
 	
 	=============================================================================
 	
+
+{% endraw %}

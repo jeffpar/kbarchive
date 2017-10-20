@@ -6,6 +6,8 @@ permalink: /kb/073/Q73598/
 
 ## Q73598: HP Vectra CS Model 20 Needs 1.44 MB Floppy Disk in A Drive
 
+{% raw %}
+
 	Article: Q73598
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -42,3 +44,5 @@ permalink: /kb/073/Q73598/
 	
 	=============================================================================
 	
+
+{% endraw %}

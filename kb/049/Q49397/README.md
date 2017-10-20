@@ -6,6 +6,8 @@ permalink: /kb/049/Q49397/
 
 ## Q49397: Example of Passing a String Descriptor from MASM to BASIC
 
+{% raw %}
+
 	Article: Q49397
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -79,3 +81,5 @@ permalink: /kb/049/Q49397/
 	BSTRDESC.EXE produces the following output:
 	
 	   This is the string
+
+{% endraw %}

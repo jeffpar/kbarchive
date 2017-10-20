@@ -6,6 +6,8 @@ permalink: /kb/177/Q177217/
 
 ## Q177217: XADM: Store Stops with NNTP XHDR on Large Number of Articles
 
+{% raw %}
+
 	Article: Q177217
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -57,3 +59,5 @@ permalink: /kb/177/Q177217/
 	
 	=============================================================================
 	
+
+{% endraw %}

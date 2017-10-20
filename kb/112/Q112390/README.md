@@ -6,6 +6,8 @@ permalink: /kb/112/Q112390/
 
 ## Q112390: FIX: BK1506 : Cannot Open File : Permission Denied
 
+{% raw %}
+
 	Article: Q112390
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/112/Q112390/
 	
 	=============================================================================
 	
+
+{% endraw %}

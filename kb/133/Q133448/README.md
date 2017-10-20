@@ -6,6 +6,8 @@ permalink: /kb/133/Q133448/
 
 ## Q133448: PPT7: Cannot Customize AutoClipart List
 
+{% raw %}
+
 	Article: Q133448
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -66,3 +68,5 @@ permalink: /kb/133/Q133448/
 	
 	=============================================================================
 	
+
+{% endraw %}

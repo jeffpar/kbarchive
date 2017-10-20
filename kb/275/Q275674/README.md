@@ -6,6 +6,8 @@ permalink: /kb/275/Q275674/
 
 ## Q275674: BUG: C2955 Error When You Use Template Name as Function Argument
 
+{% raw %}
+
 	Article: Q275674
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -70,3 +72,5 @@ permalink: /kb/275/Q275674/
 	
 	=============================================================================
 	
+
+{% endraw %}

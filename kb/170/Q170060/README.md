@@ -6,6 +6,8 @@ permalink: /kb/170/Q170060/
 
 ## Q170060: XADM: Store Uses 100% of CPU on Incoming MIME Binhex Message
 
+{% raw %}
+
 	Article: Q170060
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -51,3 +53,5 @@ permalink: /kb/170/Q170060/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/093/Q93705/
 
 ## Q93705: WFWG Err Msg: Local Copy of Schedule+ Cannot Be Accessed
 
+{% raw %}
+
 	Article: Q93705
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:1.0,3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/093/Q93705/
 	
 	=============================================================================
 	
+
+{% endraw %}

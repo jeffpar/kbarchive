@@ -6,6 +6,8 @@ permalink: /kb/229/Q229833/
 
 ## Q229833: DOC: Syntax Changes with Ad Rotator Component
 
+{% raw %}
+
 	Article: Q229833
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0
@@ -78,3 +80,5 @@ permalink: /kb/229/Q229833/
 	
 	=============================================================================
 	
+
+{% endraw %}

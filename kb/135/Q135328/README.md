@@ -6,6 +6,8 @@ permalink: /kb/135/Q135328/
 
 ## Q135328: FIX: TOP and LEFT Properties Do not Reset to Default
 
+{% raw %}
+
 	Article: Q135328
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -84,3 +86,5 @@ permalink: /kb/135/Q135328/
 	
 	=============================================================================
 	
+
+{% endraw %}

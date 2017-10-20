@@ -6,6 +6,8 @@ permalink: /kb/168/Q168827/
 
 ## Q168827: FIX: ActiveX Control with &quot;Message&quot; Property Causes Page Fault
 
+{% raw %}
+
 	Article: Q168827
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -89,3 +91,5 @@ permalink: /kb/168/Q168827/
 	
 	=============================================================================
 	
+
+{% endraw %}

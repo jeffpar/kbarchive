@@ -6,6 +6,8 @@ permalink: /kb/159/Q159928/
 
 ## Q159928: Regedt32 Displays Multiple SIDS in HKEY_USERS Key
 
+{% raw %}
+
 	Article: Q159928
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -45,3 +47,5 @@ permalink: /kb/159/Q159928/
 	
 	=============================================================================
 	
+
+{% endraw %}

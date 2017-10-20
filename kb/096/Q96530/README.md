@@ -6,6 +6,8 @@ permalink: /kb/096/Q96530/
 
 ## Q96530: PC WRmt: Default Messages Store Files
 
+{% raw %}
+
 	Article: Q96530
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -43,3 +45,5 @@ permalink: /kb/096/Q96530/
 	
 	=============================================================================
 	
+
+{% endraw %}

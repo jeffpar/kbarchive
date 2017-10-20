@@ -6,6 +6,8 @@ permalink: /kb/175/Q175691/
 
 ## Q175691: BUG: VFP CDX with EMPTY Function Is Not Recognized in VB
 
+{% raw %}
+
 	Article: Q175691
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -117,3 +119,5 @@ permalink: /kb/175/Q175691/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101615/
 
 ## Q101615: PC WSPlus: Command-Line Parameters for Schedule+ Reminders
 
+{% raw %}
+
 	Article: Q101615
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -58,3 +60,5 @@ permalink: /kb/101/Q101615/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/318/Q318863/
 
 ## Q318863: HOW TO: Modify AuthPersistence Controls w/Authenticated Clients
 
+{% raw %}
+
 	Article: Q318863
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -132,3 +134,5 @@ permalink: /kb/318/Q318863/
 	
 	=============================================================================
 	
+
+{% endraw %}

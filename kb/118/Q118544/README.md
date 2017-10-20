@@ -6,6 +6,8 @@ permalink: /kb/118/Q118544/
 
 ## Q118544: Dangerous Creatures: GP Fault When Running with Squeegee
 
+{% raw %}
+
 	Article: Q118544
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/118/Q118544/
 	
 	=============================================================================
 	
+
+{% endraw %}

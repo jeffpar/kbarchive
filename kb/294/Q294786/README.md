@@ -6,6 +6,8 @@ permalink: /kb/294/Q294786/
 
 ## Q294786: SMS: How to Use a Non-Domain Administrator Service Account
 
+{% raw %}
+
 	Article: Q294786
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -84,3 +86,5 @@ permalink: /kb/294/Q294786/
 	
 	=============================================================================
 	
+
+{% endraw %}

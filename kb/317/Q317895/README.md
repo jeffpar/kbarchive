@@ -6,6 +6,8 @@ permalink: /kb/317/Q317895/
 
 ## Q317895: MS02-018: Patch for Cross-Site Scripting in IIS Help File Search
 
+{% raw %}
+
 	Article: Q317895
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -103,3 +105,5 @@ permalink: /kb/317/Q317895/
 	
 	=============================================================================
 	
+
+{% endraw %}

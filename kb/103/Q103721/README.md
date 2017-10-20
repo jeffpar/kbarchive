@@ -6,6 +6,8 @@ permalink: /kb/103/Q103721/
 
 ## Q103721: FIX: Prefix Bytes Are Order-Dependent in CodeView 4.0x
 
+{% raw %}
+
 	Article: Q103721
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01
@@ -80,3 +82,5 @@ permalink: /kb/103/Q103721/
 	
 	=============================================================================
 	
+
+{% endraw %}

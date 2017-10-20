@@ -6,6 +6,8 @@ permalink: /kb/093/Q93133/
 
 ## Q93133: PC DOS: Advanced Security on NetWare MS-DOS Client
 
+{% raw %}
+
 	Article: Q93133
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/093/Q93133/
 	
 	=============================================================================
 	
+
+{% endraw %}

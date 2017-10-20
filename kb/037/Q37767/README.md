@@ -6,6 +6,8 @@ permalink: /kb/037/Q37767/
 
 ## Q37767: BRUNxx.EXE Run-Time Module Must Reload from Disk After SHELL
 
+{% raw %}
+
 	Article: Q37767
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -31,3 +33,5 @@ permalink: /kb/037/Q37767/
 	To avoid the need to reload the run-time module after SHELL, you can
 	compile with the /O (stand alone) option, which includes the run-time
 	routines into the BASIC .EXE program at LINK time.
+
+{% endraw %}

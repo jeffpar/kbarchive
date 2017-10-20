@@ -6,6 +6,8 @@ permalink: /kb/091/Q91006/
 
 ## Q91006: Packing List: Windows 3.1 SDK Part 5 (5.25-Inch Disks)
 
+{% raw %}
+
 	Article: Q91006
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -106,3 +108,5 @@ permalink: /kb/091/Q91006/
 	
 	=============================================================================
 	
+
+{% endraw %}

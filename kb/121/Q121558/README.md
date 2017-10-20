@@ -6,6 +6,8 @@ permalink: /kb/121/Q121558/
 
 ## Q121558: Art Gallery Fonts Distorted, Colored, or Covered by Rectangles
 
+{% raw %}
+
 	Article: Q121558
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -50,3 +52,5 @@ permalink: /kb/121/Q121558/
 	
 	=============================================================================
 	
+
+{% endraw %}

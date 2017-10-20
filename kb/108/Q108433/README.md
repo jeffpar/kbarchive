@@ -6,6 +6,8 @@ permalink: /kb/108/Q108433/
 
 ## Q108433: Illustrates Multithreaded Programming Techniques
 
+{% raw %}
+
 	Article: Q108433
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,2.1,4.0,4.1,5.0,6.0
@@ -122,3 +124,5 @@ permalink: /kb/108/Q108433/
 	
 	=============================================================================
 	
+
+{% endraw %}

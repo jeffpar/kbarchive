@@ -6,6 +6,8 @@ permalink: /kb/137/Q137995/
 
 ## Q137995: Windows 95 Refresh.txt File in Drivers&#92;Display&#92;Trident Folder
 
+{% raw %}
+
 	Article: Q137995
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/137/Q137995/
 	
 	=============================================================================
 	
+
+{% endraw %}

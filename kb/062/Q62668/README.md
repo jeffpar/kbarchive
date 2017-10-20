@@ -6,6 +6,8 @@ permalink: /kb/062/Q62668/
 
 ## Q62668: FIX: Deleting Current Makefile in PWB 1.0 Causes R6000 Error
 
+{% raw %}
+
 	Article: Q62668
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0; OS/2:1.0
@@ -62,3 +64,5 @@ permalink: /kb/062/Q62668/
 	
 	=============================================================================
 	
+
+{% endraw %}

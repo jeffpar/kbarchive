@@ -6,6 +6,8 @@ permalink: /kb/082/Q82454/
 
 ## Q82454: TIGA May Hang with Window Border Width Equal to 1
 
+{% raw %}
+
 	Article: Q82454
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/082/Q82454/
 	
 	=============================================================================
 	
+
+{% endraw %}

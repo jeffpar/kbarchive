@@ -6,6 +6,8 @@ permalink: /kb/195/Q195462/
 
 ## Q195462: WINS Registration and IP Address Behavior for Microsoft Cluster
 
+{% raw %}
+
 	Article: Q195462
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/195/Q195462/
 	
 	=============================================================================
 	
+
+{% endraw %}

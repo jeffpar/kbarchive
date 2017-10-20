@@ -6,6 +6,8 @@ permalink: /kb/116/Q116026/
 
 ## Q116026: FIX: ExitInstance() Not Called in _USRDLL DLL
 
+{% raw %}
+
 	Article: Q116026
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -105,3 +107,5 @@ permalink: /kb/116/Q116026/
 	
 	=============================================================================
 	
+
+{% endraw %}

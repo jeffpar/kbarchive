@@ -6,6 +6,8 @@ permalink: /kb/174/Q174641/
 
 ## Q174641: Resource Parameters Tab Is Missing
 
+{% raw %}
+
 	Article: Q174641
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/174/Q174641/
 	
 	=============================================================================
 	
+
+{% endraw %}

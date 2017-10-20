@@ -6,6 +6,8 @@ permalink: /kb/171/Q171979/
 
 ## Q171979: PRB: Accessing Property in Initialize Event Causes Infinite Loop
 
+{% raw %}
+
 	Article: Q171979
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -141,3 +143,5 @@ permalink: /kb/171/Q171979/
 	
 	=============================================================================
 	
+
+{% endraw %}

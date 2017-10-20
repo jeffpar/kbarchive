@@ -6,6 +6,8 @@ permalink: /kb/063/Q63040/
 
 ## Q63040: LINK /F of Overlaid BRT70xx Program Causes &quot;Invalid Runtime&quot;
 
+{% raw %}
+
 	Article: Q63040
 	Product(s): See article
 	Version(s): 7.00
@@ -63,3 +65,5 @@ permalink: /kb/063/Q63040/
 	
 	These programs can be run properly if either /O is added to each BC
 	command line or the /F is omitted from the LINK line.
+
+{% endraw %}

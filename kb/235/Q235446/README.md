@@ -6,6 +6,8 @@ permalink: /kb/235/Q235446/
 
 ## Q235446: XGEN: Exchange 5.5 SP3 Mailbox Manager Release Notes Updates
 
+{% raw %}
+
 	Article: Q235446
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -152,3 +154,5 @@ permalink: /kb/235/Q235446/
 	
 	=============================================================================
 	
+
+{% endraw %}

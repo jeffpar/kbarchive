@@ -6,6 +6,8 @@ permalink: /kb/237/Q237998/
 
 ## Q237998: PRB: CDialog Class Doesn't Get WM_MOUSEWHEEL on Windows 95
 
+{% raw %}
+
 	Article: Q237998
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -135,3 +137,5 @@ permalink: /kb/237/Q237998/
 	
 	=============================================================================
 	
+
+{% endraw %}

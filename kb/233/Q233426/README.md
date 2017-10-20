@@ -6,6 +6,8 @@ permalink: /kb/233/Q233426/
 
 ## Q233426: Running Microsoft FrontPage 2000 Comments and Corrections
 
+{% raw %}
+
 	Article: Q233426
 	Product(s): Microsoft Press
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/233/Q233426/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43392/
 
 ## Q43392: INFO: Clarification of the &quot;g&quot; Format Specifier for printf()
 
+{% raw %}
+
 	Article: Q43392
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:6.0,6.00a,6.00ax,7.00; OS/2:6.0,6.00a; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.0,4.0,5
@@ -111,3 +113,5 @@ permalink: /kb/043/Q43392/
 	
 	=============================================================================
 	
+
+{% endraw %}

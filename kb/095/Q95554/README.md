@@ -6,6 +6,8 @@ permalink: /kb/095/Q95554/
 
 ## Q95554: Not Using the /P Switch with the SHELL Command
 
+{% raw %}
+
 	Article: Q95554
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.x,6.0,6.2,6.21,6.22; WINDOWS:95
@@ -158,3 +160,5 @@ permalink: /kb/095/Q95554/
 	
 	=============================================================================
 	
+
+{% endraw %}

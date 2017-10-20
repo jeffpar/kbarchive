@@ -6,6 +6,8 @@ permalink: /kb/173/Q173494/
 
 ## Q173494: Cannot Send Messages Using WinPopup
 
+{% raw %}
+
 	Article: Q173494
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -79,3 +81,5 @@ permalink: /kb/173/Q173494/
 	
 	=============================================================================
 	
+
+{% endraw %}

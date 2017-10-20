@@ -6,6 +6,8 @@ permalink: /kb/128/Q128145/
 
 ## Q128145: Cannot Remote Control Windows IPX/NetBIOS Client
 
+{% raw %}
+
 	Article: Q128145
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -59,3 +61,5 @@ permalink: /kb/128/Q128145/
 	
 	=============================================================================
 	
+
+{% endraw %}

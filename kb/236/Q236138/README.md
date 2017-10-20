@@ -6,6 +6,8 @@ permalink: /kb/236/Q236138/
 
 ## Q236138: BUG: Error Deleting VB ActiveX Control From Test Container
 
+{% raw %}
+
 	Article: Q236138
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:5.0,6.0
@@ -128,3 +130,5 @@ permalink: /kb/236/Q236138/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85282/
 
 ## Q85282: Application Dynamically Links to a DLL Using a Class
 
+{% raw %}
+
 	Article: Q85282
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -71,3 +73,5 @@ permalink: /kb/085/Q85282/
 	
 	=============================================================================
 	
+
+{% endraw %}

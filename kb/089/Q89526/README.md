@@ -6,6 +6,8 @@ permalink: /kb/089/Q89526/
 
 ## Q89526: Setup Errors With Productivity Pack on Removable Media
 
+{% raw %}
+
 	Article: Q89526
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/089/Q89526/
 	
 	=============================================================================
 	
+
+{% endraw %}

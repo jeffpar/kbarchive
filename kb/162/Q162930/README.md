@@ -6,6 +6,8 @@ permalink: /kb/162/Q162930/
 
 ## Q162930: Cannot Create New Connection with Internet Mail Service
 
+{% raw %}
+
 	Article: Q162930
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -56,3 +58,5 @@ permalink: /kb/162/Q162930/
 	
 	=============================================================================
 	
+
+{% endraw %}

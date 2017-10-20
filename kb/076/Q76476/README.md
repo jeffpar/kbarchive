@@ -6,6 +6,8 @@ permalink: /kb/076/Q76476/
 
 ## Q76476: General Information Regarding Dynamic-Link Libraries
 
+{% raw %}
+
 	Article: Q76476
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -147,3 +149,5 @@ permalink: /kb/076/Q76476/
 	
 	=============================================================================
 	
+
+{% endraw %}

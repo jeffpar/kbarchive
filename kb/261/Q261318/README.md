@@ -6,6 +6,8 @@ permalink: /kb/261/Q261318/
 
 ## Q261318: Access Violation with Long Environment Variables
 
+{% raw %}
+
 	Article: Q261318
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/261/Q261318/
 	
 	=============================================================================
 	
+
+{% endraw %}

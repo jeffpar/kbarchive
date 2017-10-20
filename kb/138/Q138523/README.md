@@ -6,6 +6,8 @@ permalink: /kb/138/Q138523/
 
 ## Q138523: PRB: MDI Child Form Drawn Incorrectly with Missing Title Bar
 
+{% raw %}
+
 	Article: Q138523
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0,4.0
@@ -90,3 +92,5 @@ permalink: /kb/138/Q138523/
 	
 	=============================================================================
 	
+
+{% endraw %}

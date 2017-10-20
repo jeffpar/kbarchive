@@ -6,6 +6,8 @@ permalink: /kb/187/Q187720/
 
 ## Q187720: HOWTO: How to Disable ODBC Login Prompt at Run-Time
 
+{% raw %}
+
 	Article: Q187720
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a
@@ -82,3 +84,5 @@ permalink: /kb/187/Q187720/
 	
 	=============================================================================
 	
+
+{% endraw %}

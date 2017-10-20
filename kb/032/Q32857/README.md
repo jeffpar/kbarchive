@@ -6,6 +6,8 @@ permalink: /kb/032/Q32857/
 
 ## Q32857: BACKUP /A Prompts for Last Disk
 
+{% raw %}
+
 	Article: Q32857
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x
@@ -39,3 +41,5 @@ permalink: /kb/032/Q32857/
 	
 	=============================================================================
 	
+
+{% endraw %}

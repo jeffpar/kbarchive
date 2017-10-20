@@ -6,6 +6,8 @@ permalink: /kb/132/Q132072/
 
 ## Q132072: FLIGHT SIMULATOR 5.1: Contents of README1.TXT
 
+{% raw %}
+
 	Article: Q132072
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1
@@ -428,3 +430,5 @@ permalink: /kb/132/Q132072/
 	
 	=============================================================================
 	
+
+{% endraw %}

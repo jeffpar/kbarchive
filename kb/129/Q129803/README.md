@@ -6,6 +6,8 @@ permalink: /kb/129/Q129803/
 
 ## Q129803: INFO: Variable Coercion Rules in Visual Basic
 
+{% raw %}
+
 	Article: Q129803
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -189,3 +191,5 @@ permalink: /kb/129/Q129803/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83139/
 
 ## Q83139: 'Enter Volume Label' when the Label Is Corrupt
 
+{% raw %}
+
 	Article: Q83139
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -82,3 +84,5 @@ permalink: /kb/083/Q83139/
 	
 	=============================================================================
 	
+
+{% endraw %}

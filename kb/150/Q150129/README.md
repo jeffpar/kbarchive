@@ -6,6 +6,8 @@ permalink: /kb/150/Q150129/
 
 ## Q150129: FTM Reports Incorrect Connect Speed for ISDN Modems
 
+{% raw %}
+
 	Article: Q150129
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -40,3 +42,5 @@ permalink: /kb/150/Q150129/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164015/
 
 ## Q164015: Understanding TCP/IP Addressing and Subnetting Basics
 
+{% raw %}
+
 	Article: Q164015
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,3.0,3.1,3.5,3.51,4.0
@@ -365,3 +367,5 @@ permalink: /kb/164/Q164015/
 	
 	=============================================================================
 	
+
+{% endraw %}

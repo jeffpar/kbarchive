@@ -6,6 +6,8 @@ permalink: /kb/243/Q243478/
 
 ## Q243478: STOP 0xA in Netbt.sys Occurs on Domain Master Browser
 
+{% raw %}
+
 	Article: Q243478
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/243/Q243478/
 	
 	=============================================================================
 	
+
+{% endraw %}

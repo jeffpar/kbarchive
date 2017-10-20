@@ -6,6 +6,8 @@ permalink: /kb/098/Q98719/
 
 ## Q98719: Error M0052 Installing Compaq EISA DualSpeed TRing Card
 
+{% raw %}
+
 	Article: Q98719
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/098/Q98719/
 	
 	=============================================================================
 	
+
+{% endraw %}

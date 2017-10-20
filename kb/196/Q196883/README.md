@@ -6,6 +6,8 @@ permalink: /kb/196/Q196883/
 
 ## Q196883: WD97: Invalid Field Name Can Be Added to Word Data Source
 
+{% raw %}
+
 	Article: Q196883
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/196/Q196883/
 	
 	=============================================================================
 	
+
+{% endraw %}

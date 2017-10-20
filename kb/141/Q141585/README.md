@@ -6,6 +6,8 @@ permalink: /kb/141/Q141585/
 
 ## Q141585: SMS 1.1 Does Not Detect IP Configuration Parameters
 
+{% raw %}
+
 	Article: Q141585
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -44,3 +46,5 @@ permalink: /kb/141/Q141585/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183275/
 
 ## Q183275: Changing the Display Name of Notes Users in Exchange GAL
 
+{% raw %}
+
 	Article: Q183275
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -140,3 +142,5 @@ permalink: /kb/183/Q183275/
 	
 	=============================================================================
 	
+
+{% endraw %}

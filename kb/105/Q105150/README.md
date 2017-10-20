@@ -6,6 +6,8 @@ permalink: /kb/105/Q105150/
 
 ## Q105150: HOWTO: Prevent Static Splitter Bars from Tracking
 
+{% raw %}
+
 	Article: Q105150
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0,4.1,4.2,5.0
@@ -73,3 +75,5 @@ permalink: /kb/105/Q105150/
 	
 	=============================================================================
 	
+
+{% endraw %}

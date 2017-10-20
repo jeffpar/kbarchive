@@ -6,6 +6,8 @@ permalink: /kb/165/Q165333/
 
 ## Q165333: New Features Available in Windows NT 4.0 Service Pack 3
 
+{% raw %}
+
 	Article: Q165333
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP3
@@ -126,3 +128,5 @@ permalink: /kb/165/Q165333/
 	
 	=============================================================================
 	
+
+{% endraw %}

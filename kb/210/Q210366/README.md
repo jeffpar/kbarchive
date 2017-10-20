@@ -6,6 +6,8 @@ permalink: /kb/210/Q210366/
 
 ## Q210366: SMS:Offline Client Shows Multiple Instances of Program Being Run
 
+{% raw %}
+
 	Article: Q210366
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -60,3 +62,5 @@ permalink: /kb/210/Q210366/
 	
 	=============================================================================
 	
+
+{% endraw %}

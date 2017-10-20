@@ -6,6 +6,8 @@ permalink: /kb/039/Q39187/
 
 ## Q39187: &quot;Bad File Name&quot; OPENing &quot;COM1:&quot; with 1.5 Stop Bits
 
+{% raw %}
+
 	Article: Q39187
 	Product(s): See article
 	Version(s): 1.00 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -35,3 +37,5 @@ permalink: /kb/039/Q39187/
 	The following is a code example:
 	
 	   OPEN "COM1:1200,N,8,1.5" FOR RANDOM AS #1
+
+{% endraw %}

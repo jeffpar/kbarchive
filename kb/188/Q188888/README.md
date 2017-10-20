@@ -6,6 +6,8 @@ permalink: /kb/188/Q188888/
 
 ## Q188888: BUG: &quot;String is too long to fit&quot; Error Passing Variables to COM
 
+{% raw %}
+
 	Article: Q188888
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -85,3 +87,5 @@ permalink: /kb/188/Q188888/
 	
 	=============================================================================
 	
+
+{% endraw %}

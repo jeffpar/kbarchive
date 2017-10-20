@@ -6,6 +6,8 @@ permalink: /kb/179/Q179622/
 
 ## Q179622: Err Msg: Encarta Was Not Able to Integrate Any New Updates
 
+{% raw %}
+
 	Article: Q179622
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -73,3 +75,5 @@ permalink: /kb/179/Q179622/
 	
 	=============================================================================
 	
+
+{% endraw %}

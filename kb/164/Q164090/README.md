@@ -6,6 +6,8 @@ permalink: /kb/164/Q164090/
 
 ## Q164090: Index Server Evaluation Version File List
 
+{% raw %}
+
 	Article: Q164090
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.0
@@ -628,3 +630,5 @@ permalink: /kb/164/Q164090/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/037/Q37305/
 
 ## Q37305: LONG Integer Parameter Passed to SUB Fails after Assignment
 
+{% raw %}
+
 	Article: Q37305
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -62,3 +64,5 @@ permalink: /kb/037/Q37305/
 	PRINT "Parameters after assignment: "; long1&, long2&
 	PRINT "Temporary variables after assignment: "; temp1%, temp2%
 	END SUB
+
+{% endraw %}

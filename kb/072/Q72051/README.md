@@ -6,6 +6,8 @@ permalink: /kb/072/Q72051/
 
 ## Q72051: HP Plotters Supported with Windows 3.0
 
+{% raw %}
+
 	Article: Q72051
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -66,3 +68,5 @@ permalink: /kb/072/Q72051/
 	
 	=============================================================================
 	
+
+{% endraw %}

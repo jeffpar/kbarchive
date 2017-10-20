@@ -6,6 +6,8 @@ permalink: /kb/260/Q260269/
 
 ## Q260269: How to Enable UPN (or Single) Logon with IIS 5.0
 
+{% raw %}
+
 	Article: Q260269
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -91,3 +93,5 @@ permalink: /kb/260/Q260269/
 	
 	=============================================================================
 	
+
+{% endraw %}

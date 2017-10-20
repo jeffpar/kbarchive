@@ -6,6 +6,8 @@ permalink: /kb/189/Q189834/
 
 ## Q189834: INFO: Visual Studio 6.0 Does Not Install on Windows NT 3.51
 
+{% raw %}
+
 	Article: Q189834
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -71,3 +73,5 @@ permalink: /kb/189/Q189834/
 	
 	=============================================================================
 	
+
+{% endraw %}

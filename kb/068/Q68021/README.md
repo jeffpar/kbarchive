@@ -6,6 +6,8 @@ permalink: /kb/068/Q68021/
 
 ## Q68021: LOCK May Fail to Properly Return Error After CHAIN Under OS/2
 
+{% raw %}
+
 	Article: Q68021
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -55,3 +57,5 @@ permalink: /kb/068/Q68021/
 	Under MS-DOS, the second (CHAINed) program correctly returns a
 	"Permission Denied" error (error code 70) for the LOCK statement;
 	however, under OS/2, this program fails to give an error.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72488/
 
 ## Q72488: Compaq Laptops Cannot Switch to External Monitor
 
+{% raw %}
+
 	Article: Q72488
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.x,2.x,3.0,3.0a
@@ -60,3 +62,5 @@ permalink: /kb/072/Q72488/
 	
 	=============================================================================
 	
+
+{% endraw %}

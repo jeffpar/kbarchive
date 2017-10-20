@@ -6,6 +6,8 @@ permalink: /kb/152/Q152883/
 
 ## Q152883: XADM: Configuring IMC Properties Page on German PPC Platform
 
+{% raw %}
+
 	Article: Q152883
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/152/Q152883/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176352/
 
 ## Q176352: FIX: VSSItem Does Not Handle Strings Greater Than 128 Bytes
 
+{% raw %}
+
 	Article: Q176352
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/176/Q176352/
 	
 	=============================================================================
 	
+
+{% endraw %}

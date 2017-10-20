@@ -6,6 +6,8 @@ permalink: /kb/231/Q231737/
 
 ## Q231737: XIMS: Internet Mail Service Doesn't Start; Logs 4070 and 4131
 
+{% raw %}
+
 	Article: Q231737
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/231/Q231737/
 	
 	=============================================================================
 	
+
+{% endraw %}

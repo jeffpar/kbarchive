@@ -6,6 +6,8 @@ permalink: /kb/182/Q182252/
 
 ## Q182252: HPLJ 4000N Printer Name Missing from Properties Printing Window
 
+{% raw %}
+
 	Article: Q182252
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -144,3 +146,5 @@ permalink: /kb/182/Q182252/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140989/
 
 ## Q140989: PRB: DHCP Skips Addresses If Exclusion Range Included in Scope
 
+{% raw %}
+
 	Article: Q140989
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -61,3 +63,5 @@ permalink: /kb/140/Q140989/
 	
 	=============================================================================
 	
+
+{% endraw %}

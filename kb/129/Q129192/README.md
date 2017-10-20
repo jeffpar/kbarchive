@@ -6,6 +6,8 @@ permalink: /kb/129/Q129192/
 
 ## Q129192: BUG: Keyword Expansion Fails on the Macintosh
 
+{% raw %}
+
 	Article: Q129192
 	Product(s): Microsoft SourceSafe
 	Version(s): MACINTOSH:3.04,3.1
@@ -64,3 +66,5 @@ permalink: /kb/129/Q129192/
 	
 	=============================================================================
 	
+
+{% endraw %}

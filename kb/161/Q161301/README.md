@@ -6,6 +6,8 @@ permalink: /kb/161/Q161301/
 
 ## Q161301: HOWTO: Pass a Point Structure to the Windows API by Value
 
+{% raw %}
+
 	Article: Q161301
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/161/Q161301/
 	
 	=============================================================================
 	
+
+{% endraw %}

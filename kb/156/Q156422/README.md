@@ -6,6 +6,8 @@ permalink: /kb/156/Q156422/
 
 ## Q156422: INFO: Internet Control Pack Is Not Supported by Microsoft
 
+{% raw %}
+
 	Article: Q156422
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/156/Q156422/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258189/
 
 ## Q258189: IIS Log Contains Wrong Data When ISAPI Uses Default File Size
 
+{% raw %}
+
 	Article: Q258189
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -71,3 +73,5 @@ permalink: /kb/258/Q258189/
 	
 	=============================================================================
 	
+
+{% endraw %}

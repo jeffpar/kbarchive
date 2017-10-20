@@ -6,6 +6,8 @@ permalink: /kb/171/Q171135/
 
 ## Q171135: Access Forbidden Accessing Secure Website
 
+{% raw %}
+
 	Article: Q171135
 	Product(s): Internet Information Server
 	Version(s): Winnt:2.0,3.0
@@ -54,3 +56,5 @@ permalink: /kb/171/Q171135/
 	
 	=============================================================================
 	
+
+{% endraw %}

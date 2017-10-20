@@ -6,6 +6,8 @@ permalink: /kb/228/Q228909/
 
 ## Q228909: FTP Virtual Directory Is Not Displayed in Directory Listing
 
+{% raw %}
+
 	Article: Q228909
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/228/Q228909/
 	
 	=============================================================================
 	
+
+{% endraw %}

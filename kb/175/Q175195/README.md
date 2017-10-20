@@ -6,6 +6,8 @@ permalink: /kb/175/Q175195/
 
 ## Q175195: CFS and FS95/98/2000: How to Use Trim to Keep the Aircraft Level
 
+{% raw %}
+
 	Article: Q175195
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -140,3 +142,5 @@ permalink: /kb/175/Q175195/
 	
 	=============================================================================
 	
+
+{% endraw %}

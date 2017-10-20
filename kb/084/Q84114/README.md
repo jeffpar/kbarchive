@@ -6,6 +6,8 @@ permalink: /kb/084/Q84114/
 
 ## Q84114: Incorrect Extended Characters with Mixed Device and TrueType
 
+{% raw %}
+
 	Article: Q84114
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -70,3 +72,5 @@ permalink: /kb/084/Q84114/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197857/
 
 ## Q197857: Windows 9x DHCP Clients Do Not Query WINS
 
+{% raw %}
+
 	Article: Q197857
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95,98
@@ -85,3 +87,5 @@ permalink: /kb/197/Q197857/
 	
 	=============================================================================
 	
+
+{% endraw %}

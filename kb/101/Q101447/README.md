@@ -6,6 +6,8 @@ permalink: /kb/101/Q101447/
 
 ## Q101447: Mac Srv: Mail Data File Compression Is Lowest Priority
 
+{% raw %}
+
 	Article: Q101447
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -40,3 +42,5 @@ permalink: /kb/101/Q101447/
 	
 	=============================================================================
 	
+
+{% endraw %}

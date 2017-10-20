@@ -6,6 +6,8 @@ permalink: /kb/132/Q132043/
 
 ## Q132043: Err Msg Using %USERNAME% Followed by a Character: The home dir
 
+{% raw %}
+
 	Article: Q132043
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/132/Q132043/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/299/Q299912/
 
 ## Q299912: FIX: Verify Connection With Access DB Changes Folder
 
+{% raw %}
+
 	Article: Q299912
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -79,3 +81,5 @@ permalink: /kb/299/Q299912/
 	
 	=============================================================================
 	
+
+{% endraw %}

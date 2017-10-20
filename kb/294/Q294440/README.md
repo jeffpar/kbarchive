@@ -6,6 +6,8 @@ permalink: /kb/294/Q294440/
 
 ## Q294440: Error Message: Operating System Was Unable to Load Your Profile
 
+{% raw %}
+
 	Article: Q294440
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/294/Q294440/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107645/
 
 ## Q107645: How to Disable Write Caching for the 32-Bit File System
 
+{% raw %}
+
 	Article: Q107645
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -55,3 +57,5 @@ permalink: /kb/107/Q107645/
 	
 	=============================================================================
 	
+
+{% endraw %}

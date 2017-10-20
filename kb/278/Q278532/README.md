@@ -6,6 +6,8 @@ permalink: /kb/278/Q278532/
 
 ## Q278532: XADM: How To Remove Corrupted Views That Are Shared
 
+{% raw %}
+
 	Article: Q278532
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -77,3 +79,5 @@ permalink: /kb/278/Q278532/
 	
 	=============================================================================
 	
+
+{% endraw %}

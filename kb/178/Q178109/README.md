@@ -6,6 +6,8 @@ permalink: /kb/178/Q178109/
 
 ## Q178109: Roving Profiles for Windows 95 Clients Stop Working
 
+{% raw %}
+
 	Article: Q178109
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/178/Q178109/
 	
 	=============================================================================
 	
+
+{% endraw %}

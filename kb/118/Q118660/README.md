@@ -6,6 +6,8 @@ permalink: /kb/118/Q118660/
 
 ## Q118660: RAS: ClientsPerProcess Registry Entry
 
+{% raw %}
+
 	Article: Q118660
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -67,3 +69,5 @@ permalink: /kb/118/Q118660/
 	
 	=============================================================================
 	
+
+{% endraw %}

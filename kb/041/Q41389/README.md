@@ -6,6 +6,8 @@ permalink: /kb/041/Q41389/
 
 ## Q41389: SIGNAL Is BASIC Reserved Word; SIGNAL ON Usable Only in OS/2
 
+{% raw %}
+
 	Article: Q41389
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -52,3 +54,5 @@ permalink: /kb/041/Q41389/
 	The above program always reports "Advanced feature unavailable" when
 	run in real mode (DOS) as a compiled executable or when run inside the
 	QuickBASIC QB.EXE or the BASIC PDS 7.00 QBX.EXE environments.
+
+{% endraw %}

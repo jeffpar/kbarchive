@@ -6,6 +6,8 @@ permalink: /kb/184/Q184021/
 
 ## Q184021: FP: List of WebBot Components that Require Server Extensions
 
+{% raw %}
+
 	Article: Q184021
 	Product(s): Word Front Page
 	Version(s): ; MACINTOSH:1.0
@@ -78,3 +80,5 @@ permalink: /kb/184/Q184021/
 	
 	=============================================================================
 	
+
+{% endraw %}

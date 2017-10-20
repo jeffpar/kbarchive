@@ -6,6 +6,8 @@ permalink: /kb/180/Q180118/
 
 ## Q180118: XADM: Information Available in the Offline Address Book
 
+{% raw %}
+
 	Article: Q180118
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -77,3 +79,5 @@ permalink: /kb/180/Q180118/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126521/
 
 ## Q126521: XGEN: Tech Resource Kit: Renaming a Server
 
+{% raw %}
+
 	Article: Q126521
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -109,3 +111,5 @@ permalink: /kb/126/Q126521/
 	
 	=============================================================================
 	
+
+{% endraw %}

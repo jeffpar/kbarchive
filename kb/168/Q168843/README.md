@@ -6,6 +6,8 @@ permalink: /kb/168/Q168843/
 
 ## Q168843: Puzzle Collection: Installing To A Floppy Drive Hangs Setup
 
+{% raw %}
+
 	Article: Q168843
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -85,3 +87,5 @@ permalink: /kb/168/Q168843/
 	
 	=============================================================================
 	
+
+{% endraw %}

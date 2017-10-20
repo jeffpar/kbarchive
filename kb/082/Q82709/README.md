@@ -6,6 +6,8 @@ permalink: /kb/082/Q82709/
 
 ## Q82709: SMARTDRV Cache Status -- What Does the Buffering Value Mean?
 
+{% raw %}
+
 	Article: Q82709
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:6.0,6.2,6.21; WINDOWS:3.0,3.0a,3.1,3.11
@@ -89,3 +91,5 @@ permalink: /kb/082/Q82709/
 	
 	=============================================================================
 	
+
+{% endraw %}

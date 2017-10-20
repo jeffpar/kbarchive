@@ -6,6 +6,8 @@ permalink: /kb/242/Q242492/
 
 ## Q242492: SMS: LSM Can Deinstall Domain If PDC Connectivity Lost
 
+{% raw %}
+
 	Article: Q242492
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1
@@ -103,3 +105,5 @@ permalink: /kb/242/Q242492/
 	
 	=============================================================================
 	
+
+{% endraw %}

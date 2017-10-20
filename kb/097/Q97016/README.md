@@ -6,6 +6,8 @@ permalink: /kb/097/Q97016/
 
 ## Q97016: Windows Err Msg with MS-DOS 6: EMM386: Unable to Start
 
+{% raw %}
+
 	Article: Q97016
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a,3.1,3.11
@@ -94,3 +96,5 @@ permalink: /kb/097/Q97016/
 	
 	=============================================================================
 	
+
+{% endraw %}

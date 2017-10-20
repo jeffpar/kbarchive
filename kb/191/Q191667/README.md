@@ -6,6 +6,8 @@ permalink: /kb/191/Q191667/
 
 ## Q191667: How to Use ScriptIt to Install FPNW via Unattended Installation
 
+{% raw %}
+
 	Article: Q191667
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -173,3 +175,5 @@ permalink: /kb/191/Q191667/
 	
 	=============================================================================
 	
+
+{% endraw %}

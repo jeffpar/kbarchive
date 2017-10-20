@@ -6,6 +6,8 @@ permalink: /kb/232/Q232017/
 
 ## Q232017: HOWTO: Add Text to Toolbar Buttons
 
+{% raw %}
+
 	Article: Q232017
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -160,3 +162,5 @@ permalink: /kb/232/Q232017/
 	
 	=============================================================================
 	
+
+{% endraw %}

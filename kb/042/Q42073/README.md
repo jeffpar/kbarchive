@@ -6,6 +6,8 @@ permalink: /kb/042/Q42073/
 
 ## Q42073: Initialized Local Arrays
 
+{% raw %}
+
 	Article: Q42073
 	Product(s): See article
 	Version(s): 2.00
@@ -31,3 +33,5 @@ permalink: /kb/042/Q42073/
 	{
 	    int test[5] = { 1, 2, 3, 4, 5 };
 	}
+
+{% endraw %}

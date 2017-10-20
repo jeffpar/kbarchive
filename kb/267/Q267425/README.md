@@ -6,6 +6,8 @@ permalink: /kb/267/Q267425/
 
 ## Q267425: XADM: Hiding Address Book Views During Address Book View Storms
 
+{% raw %}
+
 	Article: Q267425
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -79,3 +81,5 @@ permalink: /kb/267/Q267425/
 	
 	=============================================================================
 	
+
+{% endraw %}

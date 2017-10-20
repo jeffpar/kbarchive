@@ -6,6 +6,8 @@ permalink: /kb/269/Q269815/
 
 ## Q269815: MSB: Distorted Sound or MMSYSTEM326 Error Message in Program
 
+{% raw %}
+
 	Article: Q269815
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -72,3 +74,5 @@ permalink: /kb/269/Q269815/
 	
 	=============================================================================
 	
+
+{% endraw %}

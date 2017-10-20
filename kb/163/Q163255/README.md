@@ -6,6 +6,8 @@ permalink: /kb/163/Q163255/
 
 ## Q163255: WD97: Unexpected Memory Problems with Word 97 and Outlook 97
 
+{% raw %}
+
 	Article: Q163255
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/163/Q163255/
 	
 	=============================================================================
 	
+
+{% endraw %}

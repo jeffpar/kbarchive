@@ -6,6 +6,8 @@ permalink: /kb/028/Q28613/
 
 ## Q28613: Object Module Format Extensions
 
+{% raw %}
+
 	Article: Q28613
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -124,3 +126,5 @@ permalink: /kb/028/Q28613/
 	LIB adds a LIBMOD record when an .OBJ file is added to a library and
 	strips the LIBMOD record when an .OBJ file is removed from a library,
 	so this record usually only exists in .LIB files.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168130/
 
 ## Q168130: SMS: Despooler Service Processes SNI Files Slowly
 
+{% raw %}
+
 	Article: Q168130
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -155,3 +157,5 @@ permalink: /kb/168/Q168130/
 	
 	=============================================================================
 	
+
+{% endraw %}

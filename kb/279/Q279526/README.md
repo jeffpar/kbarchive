@@ -6,6 +6,8 @@ permalink: /kb/279/Q279526/
 
 ## Q279526: FIX: SQL Server ODBC Driver Ignores Authentication Setting
 
+{% raw %}
+
 	Article: Q279526
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.6,3.6
@@ -111,3 +113,5 @@ permalink: /kb/279/Q279526/
 	
 	=============================================================================
 	
+
+{% endraw %}

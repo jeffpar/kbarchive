@@ -6,6 +6,8 @@ permalink: /kb/172/Q172698/
 
 ## Q172698: NTBACKUP - Verify Option Does Not Verify WinNT Registry Files
 
+{% raw %}
+
 	Article: Q172698
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -61,3 +63,5 @@ permalink: /kb/172/Q172698/
 	
 	=============================================================================
 	
+
+{% endraw %}

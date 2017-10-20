@@ -6,6 +6,8 @@ permalink: /kb/124/Q124659/
 
 ## Q124659: How to Use Logitech Mouse in Windows 95 Setup
 
+{% raw %}
+
 	Article: Q124659
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/124/Q124659/
 	
 	=============================================================================
 	
+
+{% endraw %}

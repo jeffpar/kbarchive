@@ -6,6 +6,8 @@ permalink: /kb/198/Q198549/
 
 ## Q198549: WD97: How to Add Rows to Invoice and Purchase Order Templates
 
+{% raw %}
+
 	Article: Q198549
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -154,3 +156,5 @@ permalink: /kb/198/Q198549/
 	
 	=============================================================================
 	
+
+{% endraw %}

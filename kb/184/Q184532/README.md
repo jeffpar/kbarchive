@@ -6,6 +6,8 @@ permalink: /kb/184/Q184532/
 
 ## Q184532: XADM: Description of Directory Export/Import Event IDs
 
+{% raw %}
+
 	Article: Q184532
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -820,3 +822,5 @@ permalink: /kb/184/Q184532/
 	
 	=============================================================================
 	
+
+{% endraw %}

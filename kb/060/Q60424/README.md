@@ -6,6 +6,8 @@ permalink: /kb/060/Q60424/
 
 ## Q60424: &quot;The QuickBASIC Journal&quot; Magazine Available for BASIC Users
 
+{% raw %}
+
 	Article: Q60424
 	Product(s): See article
 	Version(s): 4.50
@@ -29,3 +31,5 @@ permalink: /kb/060/Q60424/
 	   126 Wellington Avenue
 	   Warwick, RI  02886
 	   (401) 274-5492
+
+{% endraw %}

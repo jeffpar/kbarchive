@@ -6,6 +6,8 @@ permalink: /kb/318/Q318784/
 
 ## Q318784: PRB: MSComm.Input returns comReadError (8020) with Some Ports
 
+{% raw %}
+
 	Article: Q318784
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -57,3 +59,5 @@ permalink: /kb/318/Q318784/
 	
 	=============================================================================
 	
+
+{% endraw %}

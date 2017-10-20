@@ -6,6 +6,8 @@ permalink: /kb/125/Q125202/
 
 ## Q125202: Cinemania 1995: Error When Using Long File Names
 
+{% raw %}
+
 	Article: Q125202
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:95; winnt:3.5x
@@ -61,3 +63,5 @@ permalink: /kb/125/Q125202/
 	
 	=============================================================================
 	
+
+{% endraw %}

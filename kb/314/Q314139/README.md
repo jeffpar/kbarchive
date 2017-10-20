@@ -6,6 +6,8 @@ permalink: /kb/314/Q314139/
 
 ## Q314139: Flight Simulator 2002: Cannot Use the Mouse as Flight Yoke
 
+{% raw %}
+
 	Article: Q314139
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/314/Q314139/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130304/
 
 ## Q130304: How to Create Stored Procedures in Visual FoxPro Programs
 
+{% raw %}
+
 	Article: Q130304
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -78,3 +80,5 @@ permalink: /kb/130/Q130304/
 	
 	=============================================================================
 	
+
+{% endraw %}

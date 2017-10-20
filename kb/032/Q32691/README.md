@@ -6,6 +6,8 @@ permalink: /kb/032/Q32691/
 
 ## Q32691: FIX: Error Message A4100: Impure Memory Reference
 
+{% raw %}
+
 	Article: Q32691
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -63,3 +65,5 @@ permalink: /kb/032/Q32691/
 	
 	=============================================================================
 	
+
+{% endraw %}

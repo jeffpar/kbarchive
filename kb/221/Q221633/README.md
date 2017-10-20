@@ -6,6 +6,8 @@ permalink: /kb/221/Q221633/
 
 ## Q221633: FIX: Visual FoxPro Hangs After Rebuilding an Application
 
+{% raw %}
+
 	Article: Q221633
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -123,3 +125,5 @@ permalink: /kb/221/Q221633/
 	
 	=============================================================================
 	
+
+{% endraw %}

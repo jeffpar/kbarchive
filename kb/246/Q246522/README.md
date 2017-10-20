@@ -6,6 +6,8 @@ permalink: /kb/246/Q246522/
 
 ## Q246522: Windows Clients Cannot Log On to Server Across Router Using IPX
 
+{% raw %}
+
 	Article: Q246522
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/246/Q246522/
 	
 	=============================================================================
 	
+
+{% endraw %}

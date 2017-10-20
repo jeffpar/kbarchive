@@ -6,6 +6,8 @@ permalink: /kb/200/Q200555/
 
 ## Q200555: HOWTO: Localize Stock ActiveX Property Pages With MFC Resources
 
+{% raw %}
+
 	Article: Q200555
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -111,3 +113,5 @@ permalink: /kb/200/Q200555/
 	
 	=============================================================================
 	
+
+{% endraw %}

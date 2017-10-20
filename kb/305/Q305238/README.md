@@ -6,6 +6,8 @@ permalink: /kb/305/Q305238/
 
 ## Q305238: FIX: FOR...EACH Fails with Character Array Element &gt; 255
 
+{% raw %}
+
 	Article: Q305238
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -58,3 +60,5 @@ permalink: /kb/305/Q305238/
 	
 	=============================================================================
 	
+
+{% endraw %}

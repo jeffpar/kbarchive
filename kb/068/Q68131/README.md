@@ -6,6 +6,8 @@ permalink: /kb/068/Q68131/
 
 ## Q68131: Windows Err Msg: You Cannot Format the Current Drive
 
+{% raw %}
+
 	Article: Q68131
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -39,3 +41,5 @@ permalink: /kb/068/Q68131/
 	
 	=============================================================================
 	
+
+{% endraw %}

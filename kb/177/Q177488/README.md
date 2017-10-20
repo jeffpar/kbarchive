@@ -6,6 +6,8 @@ permalink: /kb/177/Q177488/
 
 ## Q177488: SNA Client Takes Longer to Connect Than Normal
 
+{% raw %}
+
 	Article: Q177488
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -66,3 +68,5 @@ permalink: /kb/177/Q177488/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/201/Q201470/
 
 ## Q201470: XFOR: SMTP Address Incorrect If At Sign @ Is In Site Name
 
+{% raw %}
+
 	Article: Q201470
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -91,3 +93,5 @@ permalink: /kb/201/Q201470/
 	
 	=============================================================================
 	
+
+{% endraw %}

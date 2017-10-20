@@ -6,6 +6,8 @@ permalink: /kb/124/Q124157/
 
 ## Q124157: Cannot Build VC++ Projects (.PDB &amp; .PCH Files) on Netware Server
 
+{% raw %}
+
 	Article: Q124157
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -92,3 +94,5 @@ permalink: /kb/124/Q124157/
 	
 	=============================================================================
 	
+
+{% endraw %}

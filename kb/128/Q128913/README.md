@@ -6,6 +6,8 @@ permalink: /kb/128/Q128913/
 
 ## Q128913: PC Ext: Explanation of .PBB and .0LK Files
 
+{% raw %}
+
 	Article: Q128913
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a
@@ -121,3 +123,5 @@ permalink: /kb/128/Q128913/
 	
 	=============================================================================
 	
+
+{% endraw %}

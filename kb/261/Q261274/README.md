@@ -6,6 +6,8 @@ permalink: /kb/261/Q261274/
 
 ## Q261274: SMS: Software Wizard May Not Show All Distribution Points
 
+{% raw %}
+
 	Article: Q261274
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -56,3 +58,5 @@ permalink: /kb/261/Q261274/
 	
 	=============================================================================
 	
+
+{% endraw %}

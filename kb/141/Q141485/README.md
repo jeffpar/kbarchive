@@ -6,6 +6,8 @@ permalink: /kb/141/Q141485/
 
 ## Q141485: FIX: LNK1152 &amp; LNK1141 When Linking OLE Control to Mapi32.lib
 
+{% raw %}
+
 	Article: Q141485
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -126,3 +128,5 @@ permalink: /kb/141/Q141485/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186023/
 
 ## Q186023: FIX: Set Collate Causes Display Problems for Related Tables
 
+{% raw %}
+
 	Article: Q186023
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -121,3 +123,5 @@ permalink: /kb/186/Q186023/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96784/
 
 ## Q96784: Ami Pro 3.0: Text Not Visible in Tables or Frames
 
+{% raw %}
+
 	Article: Q96784
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/096/Q96784/
 	
 	=============================================================================
 	
+
+{% endraw %}

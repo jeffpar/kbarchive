@@ -6,6 +6,8 @@ permalink: /kb/159/Q159173/
 
 ## Q159173: XCLN: Scanpst.exe Fails w/ Divide By Zero During Step 7 (of 8)
 
+{% raw %}
+
 	Article: Q159173
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -63,3 +65,5 @@ permalink: /kb/159/Q159173/
 	
 	=============================================================================
 	
+
+{% endraw %}

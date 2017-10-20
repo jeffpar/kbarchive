@@ -6,6 +6,8 @@ permalink: /kb/198/Q198585/
 
 ## Q198585: Windows 95 DUN Client Authentication Fails
 
+{% raw %}
+
 	Article: Q198585
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -107,3 +109,5 @@ permalink: /kb/198/Q198585/
 	
 	=============================================================================
 	
+
+{% endraw %}

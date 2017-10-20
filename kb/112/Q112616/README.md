@@ -6,6 +6,8 @@ permalink: /kb/112/Q112616/
 
 ## Q112616: WFWG: System Error or Network Error with DEC Pathworks
 
+{% raw %}
+
 	Article: Q112616
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -73,3 +75,5 @@ permalink: /kb/112/Q112616/
 	
 	=============================================================================
 	
+
+{% endraw %}

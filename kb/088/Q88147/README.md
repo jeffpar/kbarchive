@@ -6,6 +6,8 @@ permalink: /kb/088/Q88147/
 
 ## Q88147: Data Files Without Extensions Cause Command-Line Fault
 
+{% raw %}
+
 	Article: Q88147
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/088/Q88147/
 	
 	=============================================================================
 	
+
+{% endraw %}

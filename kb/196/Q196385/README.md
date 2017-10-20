@@ -6,6 +6,8 @@ permalink: /kb/196/Q196385/
 
 ## Q196385: HOWTO: How to Terminate a Visual FoxPro .exe Using Apple Script
 
+{% raw %}
+
 	Article: Q196385
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -88,3 +90,5 @@ permalink: /kb/196/Q196385/
 	
 	=============================================================================
 	
+
+{% endraw %}

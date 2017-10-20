@@ -6,6 +6,8 @@ permalink: /kb/123/Q123370/
 
 ## Q123370: PRB: Debugging: Inter-Operability with Visual C++ 2.0
 
+{% raw %}
+
 	Article: Q123370
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -74,3 +76,5 @@ permalink: /kb/123/Q123370/
 	
 	=============================================================================
 	
+
+{% endraw %}

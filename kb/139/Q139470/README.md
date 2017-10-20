@@ -6,6 +6,8 @@ permalink: /kb/139/Q139470/
 
 ## Q139470: U.S. Robotics Sportster 28800 Modem Does Not Function with RAS
 
+{% raw %}
+
 	Article: Q139470
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -160,3 +162,5 @@ permalink: /kb/139/Q139470/
 	
 	=============================================================================
 	
+
+{% endraw %}

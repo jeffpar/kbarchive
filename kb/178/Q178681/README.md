@@ -6,6 +6,8 @@ permalink: /kb/178/Q178681/
 
 ## Q178681: Headers on SDK Documents Print Incorrectly
 
+{% raw %}
+
 	Article: Q178681
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -64,3 +66,5 @@ permalink: /kb/178/Q178681/
 	
 	=============================================================================
 	
+
+{% endraw %}

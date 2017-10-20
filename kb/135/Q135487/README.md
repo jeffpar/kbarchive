@@ -6,6 +6,8 @@ permalink: /kb/135/Q135487/
 
 ## Q135487: PC Ext: Running External and WAN Drives
 
+{% raw %}
+
 	Article: Q135487
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -102,3 +104,5 @@ permalink: /kb/135/Q135487/
 	
 	=============================================================================
 	
+
+{% endraw %}

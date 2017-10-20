@@ -6,6 +6,8 @@ permalink: /kb/128/Q128481/
 
 ## Q128481: Encarta '95: MindMaze Hangs with Ensoniq Sound Card
 
+{% raw %}
+
 	Article: Q128481
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition
@@ -54,3 +56,5 @@ permalink: /kb/128/Q128481/
 	
 	=============================================================================
 	
+
+{% endraw %}

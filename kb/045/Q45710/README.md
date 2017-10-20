@@ -6,6 +6,8 @@ permalink: /kb/045/Q45710/
 
 ## Q45710: L2002 When Linking Small Model Main with Other Memory Models
 
+{% raw %}
+
 	Article: Q45710
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -71,3 +73,5 @@ permalink: /kb/045/Q45710/
 	     /AL  | /AS       Links, hangs on run
 	          |
 	     /AL  | /AM       Links, prints trash for MOD2 on run
+
+{% endraw %}

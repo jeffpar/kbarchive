@@ -6,6 +6,8 @@ permalink: /kb/147/Q147093/
 
 ## Q147093: XCON: One Invalid X.400 Recp. Causes NDR For All X.400 Recps.
 
+{% raw %}
+
 	Article: Q147093
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -45,3 +47,5 @@ permalink: /kb/147/Q147093/
 	
 	=============================================================================
 	
+
+{% endraw %}

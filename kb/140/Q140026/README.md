@@ -6,6 +6,8 @@ permalink: /kb/140/Q140026/
 
 ## Q140026: RECEIVE_ALLOCATE Hangs on Windows NT SNA Server Client
 
+{% raw %}
+
 	Article: Q140026
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -84,3 +86,5 @@ permalink: /kb/140/Q140026/
 	
 	=============================================================================
 	
+
+{% endraw %}

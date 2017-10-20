@@ -6,6 +6,8 @@ permalink: /kb/170/Q170809/
 
 ## Q170809: XADM: Exchange Services Stop Due to Low Disk Space
 
+{% raw %}
+
 	Article: Q170809
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -88,3 +90,5 @@ permalink: /kb/170/Q170809/
 	
 	=============================================================================
 	
+
+{% endraw %}

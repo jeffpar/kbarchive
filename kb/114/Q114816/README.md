@@ -6,6 +6,8 @@ permalink: /kb/114/Q114816/
 
 ## Q114816: Faster 8.3 Converted Long Filenames in NTFS
 
+{% raw %}
+
 	Article: Q114816
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -91,3 +93,5 @@ permalink: /kb/114/Q114816/
 	
 	=============================================================================
 	
+
+{% endraw %}

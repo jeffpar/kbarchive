@@ -6,6 +6,8 @@ permalink: /kb/185/Q185337/
 
 ## Q185337: SMS: Existing UNC Connection to Distribution Server Not Reused
 
+{% raw %}
+
 	Article: Q185337
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -68,3 +70,5 @@ permalink: /kb/185/Q185337/
 	
 	=============================================================================
 	
+
+{% endraw %}

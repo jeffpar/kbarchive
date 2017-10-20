@@ -6,6 +6,8 @@ permalink: /kb/061/Q61973/
 
 ## Q61973: Internal Compiler Error: gencode.c, Line 437
 
+{% raw %}
+
 	Article: Q61973
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -49,3 +51,5 @@ permalink: /kb/061/Q61973/
 	
 	Note: The error message shown above also occurs when casting "a" to a
 	float.
+
+{% endraw %}

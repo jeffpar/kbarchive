@@ -6,6 +6,8 @@ permalink: /kb/086/Q86393/
 
 ## Q86393: PC OS2: Window Titles Incorrectly Map Extended Characters
 
+{% raw %}
+
 	Article: Q86393
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -43,3 +45,5 @@ permalink: /kb/086/Q86393/
 	
 	=============================================================================
 	
+
+{% endraw %}

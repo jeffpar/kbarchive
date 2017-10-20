@@ -6,6 +6,8 @@ permalink: /kb/128/Q128799/
 
 ## Q128799: Unable to Log On After Changing Keyboard Layout
 
+{% raw %}
+
 	Article: Q128799
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/128/Q128799/
 	
 	=============================================================================
 	
+
+{% endraw %}

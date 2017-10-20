@@ -6,6 +6,8 @@ permalink: /kb/196/Q196126/
 
 ## Q196126: FP: How to Edit/Delete Articles in a FrontPage Discussion Web
 
+{% raw %}
+
 	Article: Q196126
 	Product(s): Word Front Page
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/196/Q196126/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142039/
 
 ## Q142039: Restrictions on Making SQL Server Changes for a Child Site
 
+{% raw %}
+
 	Article: Q142039
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -64,3 +66,5 @@ permalink: /kb/142/Q142039/
 	
 	=============================================================================
 	
+
+{% endraw %}

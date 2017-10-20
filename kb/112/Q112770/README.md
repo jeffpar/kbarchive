@@ -6,6 +6,8 @@ permalink: /kb/112/Q112770/
 
 ## Q112770: VB3 PRB: Making .EXE Error: Wrong Version of Runtime DLL
 
+{% raw %}
+
 	Article: Q112770
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.00
@@ -64,3 +66,5 @@ permalink: /kb/112/Q112770/
 	
 	=============================================================================
 	
+
+{% endraw %}

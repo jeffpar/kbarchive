@@ -6,6 +6,8 @@ permalink: /kb/100/Q100483/
 
 ## Q100483: TMP Files Left Behind After Search
 
+{% raw %}
+
 	Article: Q100483
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition,1992 edition,1992 editions,1993 edition,1993 editions,1994 editions
@@ -43,3 +45,5 @@ permalink: /kb/100/Q100483/
 	
 	=============================================================================
 	
+
+{% endraw %}

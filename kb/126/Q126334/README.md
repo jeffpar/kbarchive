@@ -6,6 +6,8 @@ permalink: /kb/126/Q126334/
 
 ## Q126334: Turbo Tax Fails to Print Under Windows NT
 
+{% raw %}
+
 	Article: Q126334
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -50,3 +52,5 @@ permalink: /kb/126/Q126334/
 	
 	=============================================================================
 	
+
+{% endraw %}

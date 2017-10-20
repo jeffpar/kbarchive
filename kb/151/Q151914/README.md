@@ -6,6 +6,8 @@ permalink: /kb/151/Q151914/
 
 ## Q151914: SMS: Remote Control with 16 Colors Generates More Traffic
 
+{% raw %}
+
 	Article: Q151914
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.1
@@ -71,3 +73,5 @@ permalink: /kb/151/Q151914/
 	
 	=============================================================================
 	
+
+{% endraw %}

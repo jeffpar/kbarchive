@@ -6,6 +6,8 @@ permalink: /kb/149/Q149230/
 
 ## Q149230: XCLN: Setup Error: &quot;Exchange Setup Was Interrupted...&quot;
 
+{% raw %}
+
 	Article: Q149230
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -101,3 +103,5 @@ permalink: /kb/149/Q149230/
 	
 	=============================================================================
 	
+
+{% endraw %}

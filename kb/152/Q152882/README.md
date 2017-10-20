@@ -6,6 +6,8 @@ permalink: /kb/152/Q152882/
 
 ## Q152882: XCON: Unnecessary Files Left in Work Directory
 
+{% raw %}
+
 	Article: Q152882
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/152/Q152882/
 	
 	=============================================================================
 	
+
+{% endraw %}

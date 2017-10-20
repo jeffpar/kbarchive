@@ -6,6 +6,8 @@ permalink: /kb/271/Q271846/
 
 ## Q271846: Event 5170 Occurs If Backup Server Is Unavailable During Upgrade
 
+{% raw %}
+
 	Article: Q271846
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -114,3 +116,5 @@ permalink: /kb/271/Q271846/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216925/
 
 ## Q216925: PRB: Single-User Concurrency Problems With ADO and Jet
 
+{% raw %}
+
 	Article: Q216925
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:2.0,2.01,2.1,6.0
@@ -218,3 +220,5 @@ permalink: /kb/216/Q216925/
 	
 	=============================================================================
 	
+
+{% endraw %}

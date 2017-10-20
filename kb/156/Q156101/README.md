@@ -6,6 +6,8 @@ permalink: /kb/156/Q156101/
 
 ## Q156101: PRB: Caption Dithered If DisabledForeColor Equals ForeColor
 
+{% raw %}
+
 	Article: Q156101
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -174,3 +176,5 @@ permalink: /kb/156/Q156101/
 	
 	=============================================================================
 	
+
+{% endraw %}

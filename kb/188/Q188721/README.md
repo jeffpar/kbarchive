@@ -6,6 +6,8 @@ permalink: /kb/188/Q188721/
 
 ## Q188721: BUG: AV Using ios-Derived Type in Multithreaded Apps
 
+{% raw %}
+
 	Article: Q188721
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0,4.1,4.2,5.0
@@ -82,3 +84,5 @@ permalink: /kb/188/Q188721/
 	
 	=============================================================================
 	
+
+{% endraw %}

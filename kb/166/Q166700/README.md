@@ -6,6 +6,8 @@ permalink: /kb/166/Q166700/
 
 ## Q166700: XCLN: IE Mail Button Prompts You to Choose Profile
 
+{% raw %}
+
 	Article: Q166700
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.0,4.0
@@ -70,3 +72,5 @@ permalink: /kb/166/Q166700/
 	
 	=============================================================================
 	
+
+{% endraw %}

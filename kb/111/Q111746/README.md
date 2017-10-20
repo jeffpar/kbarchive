@@ -6,6 +6,8 @@ permalink: /kb/111/Q111746/
 
 ## Q111746: Contents of the &quot;FoxPro Settings&quot; file
 
+{% raw %}
+
 	Article: Q111746
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -63,3 +65,5 @@ permalink: /kb/111/Q111746/
 	
 	=============================================================================
 	
+
+{% endraw %}

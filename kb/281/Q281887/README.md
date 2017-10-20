@@ -6,6 +6,8 @@ permalink: /kb/281/Q281887/
 
 ## Q281887: FIX: Invalid Bookmark ErrMsg When Records Added to Recordset
 
+{% raw %}
+
 	Article: Q281887
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.5,6.0,6.0 SP3,6.0 SP4
@@ -129,3 +131,5 @@ permalink: /kb/281/Q281887/
 	
 	=============================================================================
 	
+
+{% endraw %}

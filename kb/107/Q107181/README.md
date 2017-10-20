@@ -6,6 +6,8 @@ permalink: /kb/107/Q107181/
 
 ## Q107181: Contents of the Windows Sound System 2.0 README.TXT
 
+{% raw %}
+
 	Article: Q107181
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -480,3 +482,5 @@ permalink: /kb/107/Q107181/
 	
 	=============================================================================
 	
+
+{% endraw %}

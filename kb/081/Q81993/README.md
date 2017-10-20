@@ -6,6 +6,8 @@ permalink: /kb/081/Q81993/
 
 ## Q81993: Controlling a Videodisc Player
 
+{% raw %}
+
 	Article: Q81993
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -55,3 +57,5 @@ permalink: /kb/081/Q81993/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68599/
 
 ## Q68599: Integer Divide by 0 Only on 8088/86 Machine
 
+{% raw %}
+
 	Article: Q68599
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -54,3 +56,5 @@ permalink: /kb/068/Q68599/
 	  int result;
 	  result=numerator/denominator;
 	}
+
+{% endraw %}

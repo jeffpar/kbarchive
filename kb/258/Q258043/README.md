@@ -6,6 +6,8 @@ permalink: /kb/258/Q258043/
 
 ## Q258043: PRB: WAV Sound Breaks As System Comes Out of Suspend Mode
 
+{% raw %}
+
 	Article: Q258043
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:1.0; Win2000:95,98,98 Second Edition; winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/258/Q258043/
 	
 	=============================================================================
 	
+
+{% endraw %}

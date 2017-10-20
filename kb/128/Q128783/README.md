@@ -6,6 +6,8 @@ permalink: /kb/128/Q128783/
 
 ## Q128783: RAS Clients Unable to Connect to NetWare Servers
 
+{% raw %}
+
 	Article: Q128783
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -62,3 +64,5 @@ permalink: /kb/128/Q128783/
 	
 	=============================================================================
 	
+
+{% endraw %}

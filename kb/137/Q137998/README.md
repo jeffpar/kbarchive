@@ -6,6 +6,8 @@ permalink: /kb/137/Q137998/
 
 ## Q137998: XFOR: Messages to Mac Users Not Processed in FIFO Order
 
+{% raw %}
+
 	Article: Q137998
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/137/Q137998/
 	
 	=============================================================================
 	
+
+{% endraw %}

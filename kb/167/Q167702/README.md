@@ -6,6 +6,8 @@ permalink: /kb/167/Q167702/
 
 ## Q167702: XCLN: Msremind.exe Not Available in Schedule+ 7.0
 
+{% raw %}
+
 	Article: Q167702
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; Win95:4.0,5.0
@@ -47,3 +49,5 @@ permalink: /kb/167/Q167702/
 	
 	=============================================================================
 	
+
+{% endraw %}

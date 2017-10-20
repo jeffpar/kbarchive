@@ -6,6 +6,8 @@ permalink: /kb/112/Q112716/
 
 ## Q112716: Err Msg with CorelDRAW: Not Enough Disk Space to Save...
 
+{% raw %}
+
 	Article: Q112716
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -67,3 +69,5 @@ permalink: /kb/112/Q112716/
 	
 	=============================================================================
 	
+
+{% endraw %}

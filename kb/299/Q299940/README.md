@@ -6,6 +6,8 @@ permalink: /kb/299/Q299940/
 
 ## Q299940: Train Simulator: How to Turn Off the Opening Movie
 
+{% raw %}
+
 	Article: Q299940
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/299/Q299940/
 	
 	=============================================================================
 	
+
+{% endraw %}

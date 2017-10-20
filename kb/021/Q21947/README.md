@@ -6,6 +6,8 @@ permalink: /kb/021/Q21947/
 
 ## Q21947: CIRCLE Starting Angle of -0 Does Not Draw Line from Center
 
+{% raw %}
+
 	Article: Q21947
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -37,3 +39,5 @@ permalink: /kb/021/Q21947/
 	
 	Microsoft considers this to be an acceptable difference between the
 	QuickBASIC Compiler and the BASIC interpreters.
+
+{% endraw %}

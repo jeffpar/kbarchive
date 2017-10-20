@@ -6,6 +6,8 @@ permalink: /kb/114/Q114872/
 
 ## Q114872: Restoring Disk Configuration Information
 
+{% raw %}
+
 	Article: Q114872
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -70,3 +72,5 @@ permalink: /kb/114/Q114872/
 	
 	=============================================================================
 	
+
+{% endraw %}

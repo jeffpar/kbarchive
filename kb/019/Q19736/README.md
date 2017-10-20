@@ -6,6 +6,8 @@ permalink: /kb/019/Q19736/
 
 ## Q19736: HOWTO: Split Scrolling Using Two Windows
 
+{% raw %}
+
 	Article: Q19736
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -53,3 +55,5 @@ permalink: /kb/019/Q19736/
 	
 	=============================================================================
 	
+
+{% endraw %}

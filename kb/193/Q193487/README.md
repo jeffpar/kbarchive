@@ -6,6 +6,8 @@ permalink: /kb/193/Q193487/
 
 ## Q193487: SNACFG Displays APPC Session Security Key in Clear Text
 
+{% raw %}
+
 	Article: Q193487
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
@@ -87,3 +89,5 @@ permalink: /kb/193/Q193487/
 	
 	=============================================================================
 	
+
+{% endraw %}

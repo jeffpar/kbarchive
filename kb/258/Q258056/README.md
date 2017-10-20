@@ -6,6 +6,8 @@ permalink: /kb/258/Q258056/
 
 ## Q258056: XADM: Store Generates 3079s and 3084s When It Can't Rehome PFs
 
+{% raw %}
+
 	Article: Q258056
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -143,3 +145,5 @@ permalink: /kb/258/Q258056/
 	
 	=============================================================================
 	
+
+{% endraw %}

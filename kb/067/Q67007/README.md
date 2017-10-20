@@ -6,6 +6,8 @@ permalink: /kb/067/Q67007/
 
 ## Q67007: Executing a Function From the Command or Watch Window
 
+{% raw %}
+
 	Article: Q67007
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -150,3 +152,5 @@ permalink: /kb/067/Q67007/
 	
 	=============================================================================
 	
+
+{% endraw %}

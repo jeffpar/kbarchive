@@ -6,6 +6,8 @@ permalink: /kb/320/Q320463/
 
 ## Q320463: Games: &quot;Exception C0000006H&quot; Error Message When Installing Game
 
+{% raw %}
+
 	Article: Q320463
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -106,3 +108,5 @@ permalink: /kb/320/Q320463/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124045/
 
 ## Q124045: PROFS: Requirement for Free and Busy Times
 
+{% raw %}
+
 	Article: Q124045
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.40a.0041
@@ -51,3 +53,5 @@ permalink: /kb/124/Q124045/
 	
 	=============================================================================
 	
+
+{% endraw %}

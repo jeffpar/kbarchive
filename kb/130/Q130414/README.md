@@ -6,6 +6,8 @@ permalink: /kb/130/Q130414/
 
 ## Q130414: PRB: &quot;Member Column&lt;n&gt; is a class member&quot; Error Message
 
+{% raw %}
+
 	Article: Q130414
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -83,3 +85,5 @@ permalink: /kb/130/Q130414/
 	
 	=============================================================================
 	
+
+{% endraw %}

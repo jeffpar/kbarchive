@@ -6,6 +6,8 @@ permalink: /kb/151/Q151494/
 
 ## Q151494: PCMCIA Token Ring Adapter Not Detected on Thinkpad 760
 
+{% raw %}
+
 	Article: Q151494
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -71,3 +73,5 @@ permalink: /kb/151/Q151494/
 	
 	=============================================================================
 	
+
+{% endraw %}

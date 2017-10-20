@@ -6,6 +6,8 @@ permalink: /kb/177/Q177636/
 
 ## Q177636: HOWTO: Check If Program Is Running in the IDE or an EXE File
 
+{% raw %}
+
 	Article: Q177636
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -164,3 +166,5 @@ permalink: /kb/177/Q177636/
 	
 	=============================================================================
 	
+
+{% endraw %}

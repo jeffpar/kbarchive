@@ -6,6 +6,8 @@ permalink: /kb/175/Q175094/
 
 ## Q175094: XADM: ErrMsg Attempting to Install Exchange 5.5 on WinNT 3.5
 
+{% raw %}
+
 	Article: Q175094
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -56,3 +58,5 @@ permalink: /kb/175/Q175094/
 	
 	=============================================================================
 	
+
+{% endraw %}

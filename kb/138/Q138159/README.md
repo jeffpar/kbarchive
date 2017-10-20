@@ -6,6 +6,8 @@ permalink: /kb/138/Q138159/
 
 ## Q138159: 16-Bit MS-DOS-Based Communications Program May Not Work
 
+{% raw %}
+
 	Article: Q138159
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -91,3 +93,5 @@ permalink: /kb/138/Q138159/
 	
 	=============================================================================
 	
+
+{% endraw %}

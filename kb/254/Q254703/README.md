@@ -6,6 +6,8 @@ permalink: /kb/254/Q254703/
 
 ## Q254703: PRB: Maximized MDI Child Form with Control Loses Focus
 
+{% raw %}
+
 	Article: Q254703
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -96,3 +98,5 @@ permalink: /kb/254/Q254703/
 	
 	=============================================================================
 	
+
+{% endraw %}

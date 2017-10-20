@@ -6,6 +6,8 @@ permalink: /kb/183/Q183890/
 
 ## Q183890: WD97: Can Save Changes to Read-Only Document on Novell Server
 
+{% raw %}
+
 	Article: Q183890
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -50,3 +52,5 @@ permalink: /kb/183/Q183890/
 	
 	=============================================================================
 	
+
+{% endraw %}

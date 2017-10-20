@@ -6,6 +6,8 @@ permalink: /kb/304/Q304001/
 
 ## Q304001: CSRSS May Stop Responding When the Text Mode Console Is Freed
 
+{% raw %}
+
 	Article: Q304001
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/304/Q304001/
 	
 	=============================================================================
 	
+
+{% endraw %}

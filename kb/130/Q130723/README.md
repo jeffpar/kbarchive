@@ -6,6 +6,8 @@ permalink: /kb/130/Q130723/
 
 ## Q130723: Multiple NwRdr Network Errors (8005) Recorded In Event Viewer
 
+{% raw %}
+
 	Article: Q130723
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -60,3 +62,5 @@ permalink: /kb/130/Q130723/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82138/
 
 ## Q82138: IBM Personal Printer 2380 &amp; 2381 Available for Windows
 
+{% raw %}
+
 	Article: Q82138
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/082/Q82138/
 	
 	=============================================================================
 	
+
+{% endraw %}

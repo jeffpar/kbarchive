@@ -6,6 +6,8 @@ permalink: /kb/159/Q159992/
 
 ## Q159992: System Policy Editor Error Opening Policy Template File
 
+{% raw %}
+
 	Article: Q159992
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/159/Q159992/
 	
 	=============================================================================
 	
+
+{% endraw %}

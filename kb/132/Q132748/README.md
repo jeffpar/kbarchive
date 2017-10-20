@@ -6,6 +6,8 @@ permalink: /kb/132/Q132748/
 
 ## Q132748: Choosing a Workstation OS: Windows 95/Windows NT Workstation
 
+{% raw %}
+
 	Article: Q132748
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.51
@@ -271,3 +273,5 @@ permalink: /kb/132/Q132748/
 	
 	=============================================================================
 	
+
+{% endraw %}

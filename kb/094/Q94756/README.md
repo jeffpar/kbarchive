@@ -6,6 +6,8 @@ permalink: /kb/094/Q94756/
 
 ## Q94756: LMLogon=YES/NO is Not Recognized by Control Panel
 
+{% raw %}
+
 	Article: Q94756
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -81,3 +83,5 @@ permalink: /kb/094/Q94756/
 	
 	=============================================================================
 	
+
+{% endraw %}

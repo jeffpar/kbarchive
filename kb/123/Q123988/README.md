@@ -6,6 +6,8 @@ permalink: /kb/123/Q123988/
 
 ## Q123988: Cannot Clear the Screen in HyperTerminal
 
+{% raw %}
+
 	Article: Q123988
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -35,3 +37,5 @@ permalink: /kb/123/Q123988/
 	
 	=============================================================================
 	
+
+{% endraw %}

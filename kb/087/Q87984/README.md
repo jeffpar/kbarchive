@@ -6,6 +6,8 @@ permalink: /kb/087/Q87984/
 
 ## Q87984: Novell Server Disconnect Hangs Enhanced Mode Windows
 
+{% raw %}
+
 	Article: Q87984
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/087/Q87984/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126622/
 
 ## Q126622: Automap Streets: Overview Window Missing on Toolbar
 
+{% raw %}
+
 	Article: Q126622
 	Product(s): Microsoft Automap
 	Version(s): 1.01
@@ -319,3 +321,5 @@ permalink: /kb/126/Q126622/
 	
 	=============================================================================
 	
+
+{% endraw %}

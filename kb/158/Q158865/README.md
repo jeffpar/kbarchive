@@ -6,6 +6,8 @@ permalink: /kb/158/Q158865/
 
 ## Q158865: WINS Fails to Start After Changing File Permissions
 
+{% raw %}
+
 	Article: Q158865
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -67,3 +69,5 @@ permalink: /kb/158/Q158865/
 	
 	=============================================================================
 	
+
+{% endraw %}

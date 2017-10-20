@@ -6,6 +6,8 @@ permalink: /kb/120/Q120816/
 
 ## Q120816: Voice Pilot Levels Limited to Four in Windows Sound System 2.0
 
+{% raw %}
+
 	Article: Q120816
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.0
@@ -42,3 +44,5 @@ permalink: /kb/120/Q120816/
 	
 	=============================================================================
 	
+
+{% endraw %}

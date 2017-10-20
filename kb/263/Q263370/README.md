@@ -6,6 +6,8 @@ permalink: /kb/263/Q263370/
 
 ## Q263370: SMS: Hardware Inventory Agent on Windows 9x Is Not Re-Enabled
 
+{% raw %}
+
 	Article: Q263370
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1,2.0 SP2
@@ -74,3 +76,5 @@ permalink: /kb/263/Q263370/
 	
 	=============================================================================
 	
+
+{% endraw %}

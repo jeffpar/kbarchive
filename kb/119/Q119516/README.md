@@ -6,6 +6,8 @@ permalink: /kb/119/Q119516/
 
 ## Q119516: Find Source: Please Enter the Path for MFC
 
+{% raw %}
+
 	Article: Q119516
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/119/Q119516/
 	
 	=============================================================================
 	
+
+{% endraw %}

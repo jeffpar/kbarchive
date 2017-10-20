@@ -6,6 +6,8 @@ permalink: /kb/104/Q104962/
 
 ## Q104962: BUG: PALETTEINDEX Not Working for Thin Lines on HP PaintJet
 
+{% raw %}
+
 	Article: Q104962
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -82,3 +84,5 @@ permalink: /kb/104/Q104962/
 	
 	=============================================================================
 	
+
+{% endraw %}

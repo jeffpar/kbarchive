@@ -6,6 +6,8 @@ permalink: /kb/181/Q181681/
 
 ## Q181681: Microsoft Project 98 Step by Step Corrections and Comments
 
+{% raw %}
+
 	Article: Q181681
 	Product(s): Microsoft Press
 	Version(s): 
@@ -178,3 +180,5 @@ permalink: /kb/181/Q181681/
 	
 	=============================================================================
 	
+
+{% endraw %}

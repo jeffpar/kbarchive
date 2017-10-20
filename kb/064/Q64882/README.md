@@ -6,6 +6,8 @@ permalink: /kb/064/Q64882/
 
 ## Q64882: Logitech Serial Mouse and Proteon P-1340 Card with Windows
 
+{% raw %}
+
 	Article: Q64882
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/064/Q64882/
 	
 	=============================================================================
 	
+
+{% endraw %}

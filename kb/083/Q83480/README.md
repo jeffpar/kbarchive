@@ -6,6 +6,8 @@ permalink: /kb/083/Q83480/
 
 ## Q83480: Automatically Starting All Applications in a Given Group
 
+{% raw %}
+
 	Article: Q83480
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/083/Q83480/
 	
 	=============================================================================
 	
+
+{% endraw %}

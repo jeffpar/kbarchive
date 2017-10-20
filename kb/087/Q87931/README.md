@@ -6,6 +6,8 @@ permalink: /kb/087/Q87931/
 
 ## Q87931: Preventing Microsoft LINK From Running CVPACK
 
+{% raw %}
+
 	Article: Q87931
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/087/Q87931/
 	
 	=============================================================================
 	
+
+{% endraw %}

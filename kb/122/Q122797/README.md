@@ -6,6 +6,8 @@ permalink: /kb/122/Q122797/
 
 ## Q122797: Standard Template Files Restrict Word Backward Compatibility
 
+{% raw %}
+
 	Article: Q122797
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -50,3 +52,5 @@ permalink: /kb/122/Q122797/
 	
 	=============================================================================
 	
+
+{% endraw %}

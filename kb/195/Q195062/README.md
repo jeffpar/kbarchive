@@ -6,6 +6,8 @@ permalink: /kb/195/Q195062/
 
 ## Q195062: MCM: Game Attempts to Read CD-ROM and Removable Media Drives
 
+{% raw %}
+
 	Article: Q195062
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/195/Q195062/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/062/Q62227/
 
 ## Q62227: Optimum Hardware for Running Flight Simulator
 
+{% raw %}
+
 	Article: Q62227
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/062/Q62227/
 	
 	=============================================================================
 	
+
+{% endraw %}

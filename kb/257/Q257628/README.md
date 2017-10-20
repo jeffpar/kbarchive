@@ -6,6 +6,8 @@ permalink: /kb/257/Q257628/
 
 ## Q257628: XFOR: Event 5017 When Starting GWise Router w/ Novell Client 4.7
 
+{% raw %}
+
 	Article: Q257628
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -79,3 +81,5 @@ permalink: /kb/257/Q257628/
 	
 	=============================================================================
 	
+
+{% endraw %}

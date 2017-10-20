@@ -6,6 +6,8 @@ permalink: /kb/131/Q131755/
 
 ## Q131755: 500 NATIONS: How to Distinguish Versions 1.0 from 1.0a
 
+{% raw %}
+
 	Article: Q131755
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a
@@ -62,3 +64,5 @@ permalink: /kb/131/Q131755/
 	
 	=============================================================================
 	
+
+{% endraw %}

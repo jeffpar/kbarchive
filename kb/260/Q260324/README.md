@@ -6,6 +6,8 @@ permalink: /kb/260/Q260324/
 
 ## Q260324: How to Obtain a List of Workstations and the Last Logged On User
 
+{% raw %}
+
 	Article: Q260324
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -127,3 +129,5 @@ permalink: /kb/260/Q260324/
 	
 	=============================================================================
 	
+
+{% endraw %}

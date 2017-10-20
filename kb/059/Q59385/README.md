@@ -6,6 +6,8 @@ permalink: /kb/059/Q59385/
 
 ## Q59385: Incomplete EXPORTS List May Cause L2022 and L2029
 
+{% raw %}
+
 	Article: Q59385
 	Product(s): See article
 	Version(s): 3.65
@@ -34,3 +36,5 @@ permalink: /kb/059/Q59385/
 	
 	Note: These errors can also occur with Presentation Manager programs
 	or programs that use DLLs under OS/2.
+
+{% endraw %}

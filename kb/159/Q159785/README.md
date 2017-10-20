@@ -6,6 +6,8 @@ permalink: /kb/159/Q159785/
 
 ## Q159785: DOCERR: Copying Classes with the Class Browser
 
+{% raw %}
+
 	Article: Q159785
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -64,3 +66,5 @@ permalink: /kb/159/Q159785/
 	
 	=============================================================================
 	
+
+{% endraw %}

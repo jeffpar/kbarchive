@@ -6,6 +6,8 @@ permalink: /kb/216/Q216339/
 
 ## Q216339: Using SSL, Root Certifying Authority Certificates, and Iisca.exe
 
+{% raw %}
+
 	Article: Q216339
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/216/Q216339/
 	
 	=============================================================================
 	
+
+{% endraw %}

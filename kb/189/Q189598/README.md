@@ -6,6 +6,8 @@ permalink: /kb/189/Q189598/
 
 ## Q189598: BUG: Full Outer Join Does Not Respect Deleted Records
 
+{% raw %}
+
 	Article: Q189598
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -106,3 +108,5 @@ permalink: /kb/189/Q189598/
 	
 	=============================================================================
 	
+
+{% endraw %}

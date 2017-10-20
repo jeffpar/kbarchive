@@ -6,6 +6,8 @@ permalink: /kb/162/Q162445/
 
 ## Q162445: DOC: DECLARE DLL Example Has Incorrect Information
 
+{% raw %}
+
 	Article: Q162445
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b 5.00
@@ -70,3 +72,5 @@ permalink: /kb/162/Q162445/
 	
 	=============================================================================
 	
+
+{% endraw %}

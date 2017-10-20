@@ -6,6 +6,8 @@ permalink: /kb/117/Q117905/
 
 ## Q117905: BUG: F1001 on a Structure Declaration with Arrays
 
+{% raw %}
+
 	Article: Q117905
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -107,3 +109,5 @@ permalink: /kb/117/Q117905/
 	
 	=============================================================================
 	
+
+{% endraw %}

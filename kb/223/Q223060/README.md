@@ -6,6 +6,8 @@ permalink: /kb/223/Q223060/
 
 ## Q223060: FIX: T-SQL Shows Incorrect Parameters in Local Variables Window
 
+{% raw %}
+
 	Article: Q223060
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -84,3 +86,5 @@ permalink: /kb/223/Q223060/
 	
 	=============================================================================
 	
+
+{% endraw %}

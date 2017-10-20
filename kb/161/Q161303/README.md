@@ -6,6 +6,8 @@ permalink: /kb/161/Q161303/
 
 ## Q161303: HOWTO: Close a Shelled Process When Finished Under Windows
 
+{% raw %}
+
 	Article: Q161303
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -65,3 +67,5 @@ permalink: /kb/161/Q161303/
 	
 	=============================================================================
 	
+
+{% endraw %}

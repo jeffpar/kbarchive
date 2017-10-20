@@ -6,6 +6,8 @@ permalink: /kb/302/Q302718/
 
 ## Q302718: Migrating From MSN Explorer 6.1 To 6.0 And Then Installing 6.1 A
 
+{% raw %}
+
 	Article: Q302718
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -62,3 +64,5 @@ permalink: /kb/302/Q302718/
 	
 	=============================================================================
 	
+
+{% endraw %}

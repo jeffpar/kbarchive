@@ -6,6 +6,8 @@ permalink: /kb/174/Q174744/
 
 ## Q174744: XADM: Counter Increases While Propagating Permissions
 
+{% raw %}
+
 	Article: Q174744
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -47,3 +49,5 @@ permalink: /kb/174/Q174744/
 	
 	=============================================================================
 	
+
+{% endraw %}

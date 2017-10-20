@@ -6,6 +6,8 @@ permalink: /kb/145/Q145708/
 
 ## Q145708: XCLN: Canceling Service Configuration Does Not Stop Addition
 
+{% raw %}
+
 	Article: Q145708
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -37,3 +39,5 @@ permalink: /kb/145/Q145708/
 	
 	=============================================================================
 	
+
+{% endraw %}

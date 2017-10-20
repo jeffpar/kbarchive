@@ -6,6 +6,8 @@ permalink: /kb/151/Q151721/
 
 ## Q151721: PRB: Mastering/Windows NT Err Msg: Cannot Find File
 
+{% raw %}
+
 	Article: Q151721
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0,1.0a; winnt:3.51
@@ -63,3 +65,5 @@ permalink: /kb/151/Q151721/
 	
 	=============================================================================
 	
+
+{% endraw %}

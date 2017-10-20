@@ -6,6 +6,8 @@ permalink: /kb/315/Q315988/
 
 ## Q315988: HOW TO: Use HTML Help from Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q315988
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -213,3 +215,5 @@ permalink: /kb/315/Q315988/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198484/
 
 ## Q198484: XCLN: Outlook for the Macintosh Cannot Use Outlook Contacts
 
+{% raw %}
+
 	Article: Q198484
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0,8.1
@@ -50,3 +52,5 @@ permalink: /kb/198/Q198484/
 	
 	=============================================================================
 	
+
+{% endraw %}

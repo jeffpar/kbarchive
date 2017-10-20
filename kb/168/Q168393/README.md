@@ -6,6 +6,8 @@ permalink: /kb/168/Q168393/
 
 ## Q168393: FIX: OLE Automation Server Creation Fails with Form and OCX
 
+{% raw %}
+
 	Article: Q168393
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -71,3 +73,5 @@ permalink: /kb/168/Q168393/
 	
 	=============================================================================
 	
+
+{% endraw %}

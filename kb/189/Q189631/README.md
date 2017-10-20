@@ -6,6 +6,8 @@ permalink: /kb/189/Q189631/
 
 ## Q189631: HOWTO: Add the Entire Directory Structure to a RichTextBox
 
+{% raw %}
+
 	Article: Q189631
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -223,7 +225,7 @@ permalink: /kb/189/Q189631/
 	           InF = CurDir
 	           MsgBox "This program is about to go through the entire " & InF & _
 	           " ,please be patient."
-	           DS = "{ {\b " & DbS(Dir1.List(-1)) & "}" + nL
+	           DS = "{{\b " & DbS(Dir1.List(-1)) & "}" + nL
 	           Call ScanFoldersC(1)
 	           DS = DS & "}"
 	           RichTextBox1.TextRTF = DS
@@ -233,7 +235,7 @@ permalink: /kb/189/Q189631/
 	           InF = CurDir
 	           MsgBox "This program is about to go through the entire " & InF & _
 	           " ,please be patient."
-	           DS = "{ {\b " & DbS(InF) & "}" + nL
+	           DS = "{{\b " & DbS(InF) & "}" + nL
 	           Call ScanFoldersD(InF, 1)
 	           DS = DS & "}"
 	           RichTextBox1.TextRTF = DS
@@ -309,3 +311,5 @@ permalink: /kb/189/Q189631/
 	
 	=============================================================================
 	
+
+{% endraw %}

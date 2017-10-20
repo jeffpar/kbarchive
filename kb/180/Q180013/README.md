@@ -6,6 +6,8 @@ permalink: /kb/180/Q180013/
 
 ## Q180013: XADM: Determining Which Windows NT Account Is the Service Accoun
 
+{% raw %}
+
 	Article: Q180013
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/180/Q180013/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82201/
 
 ## Q82201: DR DOS 6.0 EMM386.SYS and Windows
 
+{% raw %}
+
 	Article: Q82201
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -71,3 +73,5 @@ permalink: /kb/082/Q82201/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/313/Q313926/
 
 ## Q313926: Designing Microsoft ASP.NET Applications Comments And Correction
 
+{% raw %}
+
 	Article: Q313926
 	Product(s): Microsoft Press
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/313/Q313926/
 	
 	=============================================================================
 	
+
+{% endraw %}

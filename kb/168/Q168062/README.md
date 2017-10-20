@@ -6,6 +6,8 @@ permalink: /kb/168/Q168062/
 
 ## Q168062: WD97: Table Row Does Not Increase to Show All Vertical Text
 
+{% raw %}
+
 	Article: Q168062
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/168/Q168062/
 	
 	=============================================================================
 	
+
+{% endraw %}

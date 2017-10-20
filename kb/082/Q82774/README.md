@@ -6,6 +6,8 @@ permalink: /kb/082/Q82774/
 
 ## Q82774: Why Does Setup add STACKS=9,256 to the CONFIG.SYS File?
 
+{% raw %}
+
 	Article: Q82774
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -113,3 +115,5 @@ permalink: /kb/082/Q82774/
 	
 	=============================================================================
 	
+
+{% endraw %}

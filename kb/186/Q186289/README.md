@@ -6,6 +6,8 @@ permalink: /kb/186/Q186289/
 
 ## Q186289: XCON: Least-cost Routing Doesn't Consider Open-retry State
 
+{% raw %}
+
 	Article: Q186289
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -80,3 +82,5 @@ permalink: /kb/186/Q186289/
 	
 	=============================================================================
 	
+
+{% endraw %}

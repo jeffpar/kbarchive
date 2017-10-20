@@ -6,6 +6,8 @@ permalink: /kb/183/Q183163/
 
 ## Q183163: BUG: Setting Orientation Changes Background Mix Mode for Printer
 
+{% raw %}
+
 	Article: Q183163
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -180,3 +182,5 @@ permalink: /kb/183/Q183163/
 	
 	=============================================================================
 	
+
+{% endraw %}

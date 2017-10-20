@@ -6,6 +6,8 @@ permalink: /kb/157/Q157268/
 
 ## Q157268: Msbatch.inf Parameters: Install MS Exchange; Don't Run Wizard
 
+{% raw %}
+
 	Article: Q157268
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/157/Q157268/
 	
 	=============================================================================
 	
+
+{% endraw %}

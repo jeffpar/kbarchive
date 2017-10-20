@@ -6,6 +6,8 @@ permalink: /kb/263/Q263302/
 
 ## Q263302: The AM/PM Characters on the Taskbar Clock Are Garbled
 
+{% raw %}
+
 	Article: Q263302
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -77,3 +79,5 @@ permalink: /kb/263/Q263302/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196962/
 
 ## Q196962: WD97: How to Number Chapters, Page No., Appendix, and Title
 
+{% raw %}
+
 	Article: Q196962
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -166,3 +168,5 @@ permalink: /kb/196/Q196962/
 	
 	=============================================================================
 	
+
+{% endraw %}

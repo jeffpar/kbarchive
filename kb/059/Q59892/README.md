@@ -6,6 +6,8 @@ permalink: /kb/059/Q59892/
 
 ## Q59892: LIB.EXE Failure When Trying to Build Large Libraries
 
+{% raw %}
+
 	Article: Q59892
 	Product(s): See article
 	Version(s): 3.11   | 3.11
@@ -38,3 +40,5 @@ permalink: /kb/059/Q59892/
 	for which you should contact Microsoft Product Support. In general,
 	these errors indicate major LIB capacity overflow problems and the
 	best workaround is to update to a newer version of LIB.EXE.
+
+{% endraw %}

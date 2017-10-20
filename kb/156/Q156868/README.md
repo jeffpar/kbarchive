@@ -6,6 +6,8 @@ permalink: /kb/156/Q156868/
 
 ## Q156868: FIX: Click Event Triggered If &quot;S&quot; Is Used as Hot Key
 
+{% raw %}
+
 	Article: Q156868
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -63,3 +65,5 @@ permalink: /kb/156/Q156868/
 	
 	=============================================================================
 	
+
+{% endraw %}

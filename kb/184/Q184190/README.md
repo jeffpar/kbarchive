@@ -6,6 +6,8 @@ permalink: /kb/184/Q184190/
 
 ## Q184190: XADM: System Instabilities After Restoring Information Store
 
+{% raw %}
+
 	Article: Q184190
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -58,3 +60,5 @@ permalink: /kb/184/Q184190/
 	
 	=============================================================================
 	
+
+{% endraw %}

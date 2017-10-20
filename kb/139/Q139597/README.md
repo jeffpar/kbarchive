@@ -6,6 +6,8 @@ permalink: /kb/139/Q139597/
 
 ## Q139597: HOWTO: Use the Wizard txtbtns Class in a Non-Wizard Form
 
+{% raw %}
+
 	Article: Q139597
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/139/Q139597/
 	
 	=============================================================================
 	
+
+{% endraw %}

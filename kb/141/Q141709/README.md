@@ -6,6 +6,8 @@ permalink: /kb/141/Q141709/
 
 ## Q141709: Limit of 49 Named Pipe Connections from a Single Workstation
 
+{% raw %}
+
 	Article: Q141709
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:3.5,3.51,4.0
@@ -85,3 +87,5 @@ permalink: /kb/141/Q141709/
 	
 	=============================================================================
 	
+
+{% endraw %}

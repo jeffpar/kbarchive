@@ -6,6 +6,8 @@ permalink: /kb/325/Q325875/
 
 ## Q325875: MechWarrior 4: How to Use Custom Decals for Insignias
 
+{% raw %}
+
 	Article: Q325875
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/325/Q325875/
 	
 	=============================================================================
 	
+
+{% endraw %}

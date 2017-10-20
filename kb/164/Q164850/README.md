@@ -6,6 +6,8 @@ permalink: /kb/164/Q164850/
 
 ## Q164850: XFOR: Message Loop between Exchange and Microsoft Mail
 
+{% raw %}
+
 	Article: Q164850
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -126,3 +128,5 @@ permalink: /kb/164/Q164850/
 	
 	=============================================================================
 	
+
+{% endraw %}

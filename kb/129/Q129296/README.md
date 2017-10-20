@@ -6,6 +6,8 @@ permalink: /kb/129/Q129296/
 
 ## Q129296: Column Widths Saved for Each Folder
 
+{% raw %}
+
 	Article: Q129296
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -45,3 +47,5 @@ permalink: /kb/129/Q129296/
 	
 	=============================================================================
 	
+
+{% endraw %}

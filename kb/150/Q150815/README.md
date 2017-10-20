@@ -6,6 +6,8 @@ permalink: /kb/150/Q150815/
 
 ## Q150815: Windows NT May Fail to Boot on Toshiba Portable Computers
 
+{% raw %}
+
 	Article: Q150815
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -82,3 +84,5 @@ permalink: /kb/150/Q150815/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85424/
 
 ## Q85424: README.TXT: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2
 
+{% raw %}
+
 	Article: Q85424
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -1103,3 +1105,5 @@ permalink: /kb/085/Q85424/
 	
 	=============================================================================
 	
+
+{% endraw %}

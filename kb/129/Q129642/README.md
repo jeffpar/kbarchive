@@ -6,6 +6,8 @@ permalink: /kb/129/Q129642/
 
 ## Q129642: Buffering Must Be Handled Manually in DBC Rules/Triggers
 
+{% raw %}
+
 	Article: Q129642
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -53,3 +55,5 @@ permalink: /kb/129/Q129642/
 	
 	=============================================================================
 	
+
+{% endraw %}

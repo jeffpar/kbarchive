@@ -6,6 +6,8 @@ permalink: /kb/119/Q119811/
 
 ## Q119811: BUG: Dbase or FoxPro: Fox Memo Select Stopped by Dbase
 
+{% raw %}
+
 	Article: Q119811
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -112,3 +114,5 @@ permalink: /kb/119/Q119811/
 	
 	=============================================================================
 	
+
+{% endraw %}

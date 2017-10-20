@@ -6,6 +6,8 @@ permalink: /kb/161/Q161980/
 
 ## Q161980: Windows NT 4.0 Workstation Starts Here: Contents of Readme.wri
 
+{% raw %}
+
 	Article: Q161980
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -199,3 +201,5 @@ permalink: /kb/161/Q161980/
 	
 	=============================================================================
 	
+
+{% endraw %}

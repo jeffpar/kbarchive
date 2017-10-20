@@ -6,6 +6,8 @@ permalink: /kb/221/Q221432/
 
 ## Q221432: XFOR: Pickup Folder Mishandles Read-Only File Permissions
 
+{% raw %}
+
 	Article: Q221432
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:2.0,4.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/221/Q221432/
 	
 	=============================================================================
 	
+
+{% endraw %}

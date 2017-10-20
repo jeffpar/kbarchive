@@ -6,6 +6,8 @@ permalink: /kb/040/Q40349/
 
 ## Q40349: Chmod() on an Open File
 
+{% raw %}
+
 	Article: Q40349
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -21,3 +23,5 @@ permalink: /kb/040/Q40349/
 	if an attempt is made to chmod() on an open file. One of the results
 	is an error indicating the file is full, when only 1 byte is written
 	to an empty file.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/269/Q269864/
 
 ## Q269864: Error 14105 Index Duplication Generated in the MA Logs
 
+{% raw %}
+
 	Article: Q269864
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -76,3 +78,5 @@ permalink: /kb/269/Q269864/
 	
 	=============================================================================
 	
+
+{% endraw %}

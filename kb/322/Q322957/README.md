@@ -6,6 +6,8 @@ permalink: /kb/322/Q322957/
 
 ## Q322957: INFO: Formulate an Alert Category ID
 
+{% raw %}
+
 	Article: Q322957
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/322/Q322957/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/228/Q228452/
 
 ## Q228452: Baseball 2000: Game Pauses or Video Frame Rate Is Reduced
 
+{% raw %}
+
 	Article: Q228452
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/228/Q228452/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98783/
 
 ## Q98783: PC DOS: Password Option with Micro Not Consistent
 
+{% raw %}
+
 	Article: Q98783
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -50,3 +52,5 @@ permalink: /kb/098/Q98783/
 	
 	=============================================================================
 	
+
+{% endraw %}

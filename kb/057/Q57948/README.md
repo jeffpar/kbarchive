@@ -6,6 +6,8 @@ permalink: /kb/057/Q57948/
 
 ## Q57948: INFO: Escape Character Erases First Characters in gets() String
 
+{% raw %}
+
 	Article: Q57948
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,5.0,6.0
@@ -129,3 +131,5 @@ permalink: /kb/057/Q57948/
 	
 	=============================================================================
 	
+
+{% endraw %}

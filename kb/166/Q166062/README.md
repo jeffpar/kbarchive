@@ -6,6 +6,8 @@ permalink: /kb/166/Q166062/
 
 ## Q166062: WV: Word Viewer Always Starts as New Instance of Program
 
+{% raw %}
+
 	Article: Q166062
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/166/Q166062/
 	
 	=============================================================================
 	
+
+{% endraw %}

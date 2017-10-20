@@ -6,6 +6,8 @@ permalink: /kb/269/Q269817/
 
 ## Q269817: MSB Error Message: Cannot Find Vids:IV50 Decompressor
 
+{% raw %}
+
 	Article: Q269817
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/269/Q269817/
 	
 	=============================================================================
 	
+
+{% endraw %}

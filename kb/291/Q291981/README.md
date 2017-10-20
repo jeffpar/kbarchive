@@ -6,6 +6,8 @@ permalink: /kb/291/Q291981/
 
 ## Q291981: MCSE Training Kit, Designing a Microsoft Windows 2000 Directory
 
+{% raw %}
+
 	Article: Q291981
 	Product(s): Microsoft Press
 	Version(s): 
@@ -283,3 +285,5 @@ permalink: /kb/291/Q291981/
 	
 	=============================================================================
 	
+
+{% endraw %}

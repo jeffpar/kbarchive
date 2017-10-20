@@ -6,6 +6,8 @@ permalink: /kb/150/Q150481/
 
 ## Q150481: Mac Encarta 96: Explanation of Installer Options
 
+{% raw %}
+
 	Article: Q150481
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -61,3 +63,5 @@ permalink: /kb/150/Q150481/
 	
 	=============================================================================
 	
+
+{% endraw %}

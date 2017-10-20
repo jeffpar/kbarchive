@@ -6,6 +6,8 @@ permalink: /kb/167/Q167376/
 
 ## Q167376: Error Message When Starting Add Printer Wizard
 
+{% raw %}
+
 	Article: Q167376
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/167/Q167376/
 	
 	=============================================================================
 	
+
+{% endraw %}

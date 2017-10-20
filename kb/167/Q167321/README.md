@@ -6,6 +6,8 @@ permalink: /kb/167/Q167321/
 
 ## Q167321: FIX: Wrong Namespace Member Selected for Qualified ID
 
+{% raw %}
+
 	Article: Q167321
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/167/Q167321/
 	
 	=============================================================================
 	
+
+{% endraw %}

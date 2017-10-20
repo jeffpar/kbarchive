@@ -6,6 +6,8 @@ permalink: /kb/142/Q142307/
 
 ## Q142307: Name Resolution Fails on Multihomed Laptop and Docking Station
 
+{% raw %}
+
 	Article: Q142307
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -79,3 +81,5 @@ permalink: /kb/142/Q142307/
 	
 	=============================================================================
 	
+
+{% endraw %}

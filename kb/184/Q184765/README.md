@@ -6,6 +6,8 @@ permalink: /kb/184/Q184765/
 
 ## Q184765: XADM: Setting up the Organization Forms Library
 
+{% raw %}
+
 	Article: Q184765
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/184/Q184765/
 	
 	=============================================================================
 	
+
+{% endraw %}

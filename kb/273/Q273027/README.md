@@ -6,6 +6,8 @@ permalink: /kb/273/Q273027/
 
 ## Q273027: Gethostbyname() May Return Wrong IP Address
 
+{% raw %}
+
 	Article: Q273027
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -125,3 +127,5 @@ permalink: /kb/273/Q273027/
 	
 	=============================================================================
 	
+
+{% endraw %}

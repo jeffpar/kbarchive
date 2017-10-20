@@ -6,6 +6,8 @@ permalink: /kb/281/Q281507/
 
 ## Q281507: Dependent LU6.2 Session Requests May Hang If Default Pool Used
 
+{% raw %}
+
 	Article: Q281507
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -160,3 +162,5 @@ permalink: /kb/281/Q281507/
 	
 	=============================================================================
 	
+
+{% endraw %}

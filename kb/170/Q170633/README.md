@@ -6,6 +6,8 @@ permalink: /kb/170/Q170633/
 
 ## Q170633: XWEB: Requirements For Internet Explorer File Attachment Support
 
+{% raw %}
+
 	Article: Q170633
 	Product(s): Microsoft Exchange
 	Version(s): Windows:5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/170/Q170633/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/033/Q33620/
 
 ## Q33620: &quot;Illegal Function Call&quot; on WIDTH 40 with Monochrome Screen
 
+{% raw %}
+
 	Article: Q33620
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -27,3 +29,5 @@ permalink: /kb/033/Q33620/
 	
 	This problem does not occur in programs compiled with QuickBASIC
 	versions 2.00, 2.01, and 3.00.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176706/
 
 ## Q176706: &quot;Could Not Load or Run&quot; Error Message When You Start Windows
 
+{% raw %}
+
 	Article: Q176706
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,95
@@ -82,3 +84,5 @@ permalink: /kb/176/Q176706/
 	
 	=============================================================================
 	
+
+{% endraw %}

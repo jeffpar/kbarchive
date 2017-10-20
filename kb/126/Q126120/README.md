@@ -6,6 +6,8 @@ permalink: /kb/126/Q126120/
 
 ## Q126120: MS POWERPOINT 4 FOR WIN SBS: Corrections and Comments
 
+{% raw %}
+
 	Article: Q126120
 	Product(s): Microsoft Press
 	Version(s): 
@@ -104,3 +106,5 @@ permalink: /kb/126/Q126120/
 	
 	=============================================================================
 	
+
+{% endraw %}

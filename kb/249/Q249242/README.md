@@ -6,6 +6,8 @@ permalink: /kb/249/Q249242/
 
 ## Q249242: The Active Log Format Drop-Down List Box in ISM Is Empty
 
+{% raw %}
+
 	Article: Q249242
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/249/Q249242/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166867/
 
 ## Q166867: WD97: &quot;Bookmark Not Defined!&quot; Error with Converted Hyperlink
 
+{% raw %}
+
 	Article: Q166867
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -261,3 +263,5 @@ permalink: /kb/166/Q166867/
 	
 	=============================================================================
 	
+
+{% endraw %}

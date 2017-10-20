@@ -6,6 +6,8 @@ permalink: /kb/174/Q174426/
 
 ## Q174426: PRB: Date in Text Box Displays Year With Four Digits
 
+{% raw %}
+
 	Article: Q174426
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -111,3 +113,5 @@ permalink: /kb/174/Q174426/
 	
 	=============================================================================
 	
+
+{% endraw %}

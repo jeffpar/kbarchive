@@ -6,6 +6,8 @@ permalink: /kb/267/Q267902/
 
 ## Q267902: Applications Fail to Receive Data When Opening LUA LU
 
+{% raw %}
+
 	Article: Q267902
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP3
@@ -141,3 +143,5 @@ permalink: /kb/267/Q267902/
 	
 	=============================================================================
 	
+
+{% endraw %}

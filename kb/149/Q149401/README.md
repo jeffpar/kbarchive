@@ -6,6 +6,8 @@ permalink: /kb/149/Q149401/
 
 ## Q149401: Event 560, 562 When No Objects Have Been Selected for Auditing
 
+{% raw %}
+
 	Article: Q149401
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -52,3 +54,5 @@ permalink: /kb/149/Q149401/
 	
 	=============================================================================
 	
+
+{% endraw %}

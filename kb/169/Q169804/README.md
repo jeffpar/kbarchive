@@ -6,6 +6,8 @@ permalink: /kb/169/Q169804/
 
 ## Q169804: PPT7: Text Box Alignment Lost When Saved as PowerPoint 4.0 File
 
+{% raw %}
+
 	Article: Q169804
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -71,3 +73,5 @@ permalink: /kb/169/Q169804/
 	
 	=============================================================================
 	
+
+{% endraw %}

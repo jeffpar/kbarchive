@@ -6,6 +6,8 @@ permalink: /kb/136/Q136400/
 
 ## Q136400: INFO: Changing Visual SourceSafe User Name in Visual Basic
 
+{% raw %}
+
 	Article: Q136400
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/136/Q136400/
 	
 	=============================================================================
 	
+
+{% endraw %}

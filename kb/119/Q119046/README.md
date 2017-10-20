@@ -6,6 +6,8 @@ permalink: /kb/119/Q119046/
 
 ## Q119046: Mac Wkst: Err Msg: ...Mail Server Not Correct Version...
 
+{% raw %}
+
 	Article: Q119046
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1d
@@ -47,3 +49,5 @@ permalink: /kb/119/Q119046/
 	
 	=============================================================================
 	
+
+{% endraw %}

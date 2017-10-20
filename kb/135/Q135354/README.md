@@ -6,6 +6,8 @@ permalink: /kb/135/Q135354/
 
 ## Q135354: SNA Server DLC Outage Codes Should be Logged in Hex.
 
+{% raw %}
+
 	Article: Q135354
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -89,3 +91,5 @@ permalink: /kb/135/Q135354/
 	
 	=============================================================================
 	
+
+{% endraw %}

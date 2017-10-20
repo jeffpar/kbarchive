@@ -6,6 +6,8 @@ permalink: /kb/149/Q149681/
 
 ## Q149681: Cli_&#42;.exe (CLISETUP) Recreates an Empty MS Tree
 
+{% raw %}
+
 	Article: Q149681
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -49,3 +51,5 @@ permalink: /kb/149/Q149681/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132929/
 
 ## Q132929: PRB: &quot;DDE Connection Failed&quot; When Viewing a File
 
+{% raw %}
+
 	Article: Q132929
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/132/Q132929/
 	
 	=============================================================================
 	
+
+{% endraw %}

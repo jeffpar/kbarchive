@@ -6,6 +6,8 @@ permalink: /kb/194/Q194555/
 
 ## Q194555: X400: Gateway Hangs Sending Two Messages to Very Large DLs
 
+{% raw %}
+
 	Article: Q194555
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -69,3 +71,5 @@ permalink: /kb/194/Q194555/
 	
 	=============================================================================
 	
+
+{% endraw %}

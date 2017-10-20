@@ -6,6 +6,8 @@ permalink: /kb/251/Q251814/
 
 ## Q251814: XADM: Exchange Server 5.5 Setup Fails on a Member Server
 
+{% raw %}
+
 	Article: Q251814
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -73,3 +75,5 @@ permalink: /kb/251/Q251814/
 	
 	=============================================================================
 	
+
+{% endraw %}

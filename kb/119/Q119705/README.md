@@ -6,6 +6,8 @@ permalink: /kb/119/Q119705/
 
 ## Q119705: Windows Sound System and ASPI4DOS Causes Windows to Hang
 
+{% raw %}
+
 	Article: Q119705
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.0
@@ -54,3 +56,5 @@ permalink: /kb/119/Q119705/
 	
 	=============================================================================
 	
+
+{% endraw %}

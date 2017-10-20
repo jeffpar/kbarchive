@@ -6,6 +6,8 @@ permalink: /kb/191/Q191702/
 
 ## Q191702: SNA Server Manager Traps When Deleting LUA Pool
 
+{% raw %}
+
 	Article: Q191702
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1
@@ -87,3 +89,5 @@ permalink: /kb/191/Q191702/
 	
 	=============================================================================
 	
+
+{% endraw %}

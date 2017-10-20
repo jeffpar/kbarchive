@@ -6,6 +6,8 @@ permalink: /kb/152/Q152478/
 
 ## Q152478: ErrMsg: Local Policy Does not Permit You to Logon...
 
+{% raw %}
+
 	Article: Q152478
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -82,3 +84,5 @@ permalink: /kb/152/Q152478/
 	
 	=============================================================================
 	
+
+{% endraw %}

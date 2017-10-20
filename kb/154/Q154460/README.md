@@ -6,6 +6,8 @@ permalink: /kb/154/Q154460/
 
 ## Q154460: Denial of Service Attack Against WinNT Simple TCP/IP Services
 
+{% raw %}
+
 	Article: Q154460
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/154/Q154460/
 	
 	=============================================================================
 	
+
+{% endraw %}

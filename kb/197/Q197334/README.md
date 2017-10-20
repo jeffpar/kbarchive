@@ -6,6 +6,8 @@ permalink: /kb/197/Q197334/
 
 ## Q197334: XFOR: Setting All Chat TCP Ports to the Same Number Stops Linkin
 
+{% raw %}
+
 	Article: Q197334
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -42,3 +44,5 @@ permalink: /kb/197/Q197334/
 	
 	=============================================================================
 	
+
+{% endraw %}

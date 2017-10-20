@@ -6,6 +6,8 @@ permalink: /kb/196/Q196433/
 
 ## Q196433: XADM: Cannot Change IMC Conversion Method on Custom Recipient
 
+{% raw %}
+
 	Article: Q196433
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -86,3 +88,5 @@ permalink: /kb/196/Q196433/
 	
 	=============================================================================
 	
+
+{% endraw %}

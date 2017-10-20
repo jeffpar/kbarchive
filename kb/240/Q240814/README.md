@@ -6,6 +6,8 @@ permalink: /kb/240/Q240814/
 
 ## Q240814: ALT+PAGE DOWN and ALT+PAGE UP Change Keyboard Locale
 
+{% raw %}
+
 	Article: Q240814
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/240/Q240814/
 	
 	=============================================================================
 	
+
+{% endraw %}

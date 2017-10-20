@@ -6,6 +6,8 @@ permalink: /kb/187/Q187626/
 
 ## Q187626: &quot;Anonymous&quot; Group Members' Profiles Will Be Deleted at Logoff
 
+{% raw %}
+
 	Article: Q187626
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -41,3 +43,5 @@ permalink: /kb/187/Q187626/
 	
 	=============================================================================
 	
+
+{% endraw %}

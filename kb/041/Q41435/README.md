@@ -6,6 +6,8 @@ permalink: /kb/041/Q41435/
 
 ## Q41435: ESC Key Aborts Only the Compile Process in QC Environment
 
+{% raw %}
+
 	Article: Q41435
 	Product(s): See article
 	Version(s): 2.00
@@ -27,3 +29,5 @@ permalink: /kb/041/Q41435/
 	Microsoft has confirmed this to be a problem in Version 2.00. We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

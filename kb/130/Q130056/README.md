@@ -6,6 +6,8 @@ permalink: /kb/130/Q130056/
 
 ## Q130056: Writing Code that Works with Different International Formats
 
+{% raw %}
+
 	Article: Q130056
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.1; WINDOWS:1.2,3.5
@@ -105,3 +107,5 @@ permalink: /kb/130/Q130056/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161191/
 
 ## Q161191: TN3270 Client Cannot Get Past the USSTAB Screen Using ENTER
 
+{% raw %}
+
 	Article: Q161191
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -73,3 +75,5 @@ permalink: /kb/161/Q161191/
 	
 	=============================================================================
 	
+
+{% endraw %}

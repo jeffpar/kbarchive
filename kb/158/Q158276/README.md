@@ -6,6 +6,8 @@ permalink: /kb/158/Q158276/
 
 ## Q158276: INF: PC MMTA: NT MMTA Will Not Start As a Service
 
+{% raw %}
+
 	Article: Q158276
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -58,3 +60,5 @@ permalink: /kb/158/Q158276/
 	
 	=============================================================================
 	
+
+{% endraw %}

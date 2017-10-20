@@ -6,6 +6,8 @@ permalink: /kb/195/Q195339/
 
 ## Q195339: Stop 0xa Using NetSupport PC-Duo
 
+{% raw %}
+
 	Article: Q195339
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/195/Q195339/
 	
 	=============================================================================
 	
+
+{% endraw %}

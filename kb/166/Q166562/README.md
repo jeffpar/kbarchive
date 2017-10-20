@@ -6,6 +6,8 @@ permalink: /kb/166/Q166562/
 
 ## Q166562: XFOR: Store.exe GPFs When POP3 Client Submits Bad Message Header
 
+{% raw %}
+
 	Article: Q166562
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -58,3 +60,5 @@ permalink: /kb/166/Q166562/
 	
 	=============================================================================
 	
+
+{% endraw %}

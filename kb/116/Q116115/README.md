@@ -6,6 +6,8 @@ permalink: /kb/116/Q116115/
 
 ## Q116115: PC DOS: MS-DOS Client MAIL.EXE 3.0.2 Update
 
+{% raw %}
+
 	Article: Q116115
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -99,3 +101,5 @@ permalink: /kb/116/Q116115/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67706/
 
 ## Q67706: Using MS-DOS Edlin Utility to Edit Text Files
 
+{% raw %}
+
 	Article: Q67706
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -137,3 +139,5 @@ permalink: /kb/067/Q67706/
 	
 	=============================================================================
 	
+
+{% endraw %}

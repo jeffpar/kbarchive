@@ -6,6 +6,8 @@ permalink: /kb/220/Q220844/
 
 ## Q220844: HOWTO: Insert a Bitmap Into RTF Document Using RichEdit Control
 
+{% raw %}
+
 	Article: Q220844
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -236,3 +238,5 @@ permalink: /kb/220/Q220844/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242286/
 
 ## Q242286: BETA-HOWTO: Update an Existing Windows 2000 Migration DLL
 
+{% raw %}
+
 	Article: Q242286
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/242/Q242286/
 	
 	=============================================================================
 	
+
+{% endraw %}

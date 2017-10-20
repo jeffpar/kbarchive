@@ -6,6 +6,8 @@ permalink: /kb/050/Q50699/
 
 ## Q50699: Resetting the Screen to Graphics Mode in Flight Simulator
 
+{% raw %}
+
 	Article: Q50699
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/050/Q50699/
 	
 	=============================================================================
 	
+
+{% endraw %}

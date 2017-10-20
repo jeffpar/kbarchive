@@ -6,6 +6,8 @@ permalink: /kb/175/Q175196/
 
 ## Q175196: FS/CFS: Runway is Not Visible or Game Screen is Black
 
+{% raw %}
+
 	Article: Q175196
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -107,3 +109,5 @@ permalink: /kb/175/Q175196/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101784/
 
 ## Q101784: After Creating Backup Domain Controller Cannot Logon as Admin.
 
+{% raw %}
+
 	Article: Q101784
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -63,3 +65,5 @@ permalink: /kb/101/Q101784/
 	
 	=============================================================================
 	
+
+{% endraw %}

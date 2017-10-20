@@ -6,6 +6,8 @@ permalink: /kb/075/Q75468/
 
 ## Q75468: ATM Fonts and PostScript Fonts Don't Match in Windows
 
+{% raw %}
+
 	Article: Q75468
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/075/Q75468/
 	
 	=============================================================================
 	
+
+{% endraw %}

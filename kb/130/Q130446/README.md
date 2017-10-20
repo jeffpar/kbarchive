@@ -6,6 +6,8 @@ permalink: /kb/130/Q130446/
 
 ## Q130446: MSB Solar: Computer Freezes When Entering Games
 
+{% raw %}
+
 	Article: Q130446
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -94,3 +96,5 @@ permalink: /kb/130/Q130446/
 	
 	=============================================================================
 	
+
+{% endraw %}

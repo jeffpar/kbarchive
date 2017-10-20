@@ -6,6 +6,8 @@ permalink: /kb/264/Q264265/
 
 ## Q264265: SMTP: Access Component Determines SMTP Gateway Already Installed
 
+{% raw %}
+
 	Article: Q264265
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.x; WINDOWS:3.2,3.2a,3.5
@@ -50,3 +52,5 @@ permalink: /kb/264/Q264265/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171827/
 
 ## Q171827: FIX: Printing userdrawn usercontrol in IE Doesn't Work
 
+{% raw %}
+
 	Article: Q171827
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -76,3 +78,5 @@ permalink: /kb/171/Q171827/
 	
 	=============================================================================
 	
+
+{% endraw %}

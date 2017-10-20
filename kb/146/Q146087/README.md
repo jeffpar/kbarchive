@@ -6,6 +6,8 @@ permalink: /kb/146/Q146087/
 
 ## Q146087: XCLN: A Microsoft EFD Installation Cannot be Shared
 
+{% raw %}
+
 	Article: Q146087
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -35,3 +37,5 @@ permalink: /kb/146/Q146087/
 	
 	=============================================================================
 	
+
+{% endraw %}

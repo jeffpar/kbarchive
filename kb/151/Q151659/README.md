@@ -6,6 +6,8 @@ permalink: /kb/151/Q151659/
 
 ## Q151659: Bookshelf '96-'97: Bookshelf Not Added to Shortcut Bar
 
+{% raw %}
+
 	Article: Q151659
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:7.0
@@ -91,3 +93,5 @@ permalink: /kb/151/Q151659/
 	
 	=============================================================================
 	
+
+{% endraw %}

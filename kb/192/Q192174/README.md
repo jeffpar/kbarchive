@@ -6,6 +6,8 @@ permalink: /kb/192/Q192174/
 
 ## Q192174: XADM: Removing and Re-Installing the Event Service
 
+{% raw %}
+
 	Article: Q192174
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -101,3 +103,5 @@ permalink: /kb/192/Q192174/
 	
 	=============================================================================
 	
+
+{% endraw %}

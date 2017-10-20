@@ -6,6 +6,8 @@ permalink: /kb/139/Q139364/
 
 ## Q139364: RAS Error: &quot;The communications device attached to port...&quot;
 
+{% raw %}
+
 	Article: Q139364
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -94,3 +96,5 @@ permalink: /kb/139/Q139364/
 	
 	=============================================================================
 	
+
+{% endraw %}

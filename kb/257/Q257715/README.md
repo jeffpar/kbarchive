@@ -6,6 +6,8 @@ permalink: /kb/257/Q257715/
 
 ## Q257715: PC Win: Error Message: An Error Occurred Preventing Complete...
 
+{% raw %}
+
 	Article: Q257715
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -52,3 +54,5 @@ permalink: /kb/257/Q257715/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114469/
 
 ## Q114469: Setup: TCP/IP Binding Defaults To All Installed NIC's
 
+{% raw %}
+
 	Article: Q114469
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -52,3 +54,5 @@ permalink: /kb/114/Q114469/
 	
 	=============================================================================
 	
+
+{% endraw %}

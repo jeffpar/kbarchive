@@ -6,6 +6,8 @@ permalink: /kb/168/Q168515/
 
 ## Q168515: Explanation of an OSPF Area
 
+{% raw %}
+
 	Article: Q168515
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/168/Q168515/
 	
 	=============================================================================
 	
+
+{% endraw %}

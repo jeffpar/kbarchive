@@ -6,6 +6,8 @@ permalink: /kb/189/Q189756/
 
 ## Q189756: PerfMon Percentage of Registry Quota in Use Displayed Wrong
 
+{% raw %}
+
 	Article: Q189756
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/189/Q189756/
 	
 	=============================================================================
 	
+
+{% endraw %}

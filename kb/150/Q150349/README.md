@@ -6,6 +6,8 @@ permalink: /kb/150/Q150349/
 
 ## Q150349: FIX: Finish Button Fails Data Transfer from Page to Variables
 
+{% raw %}
+
 	Article: Q150349
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -96,10 +98,10 @@ permalink: /kb/150/Q150349/
 	  	try
 	  	{
 	  		CPropertyPage::DoDataExchange(pDX);
-	  		//{ {AFX_DATA_MAP(CMyPropertyPage)
+	  		//{{AFX_DATA_MAP(CMyPropertyPage)
 	  		DDX_Text(pDX, IDC_EDIT1, m_nDigit);
 	  		DDV_MinMaxInt(pDX, m_nDigit, 0, 10);
-	  		//} }AFX_DATA_MAP
+	  		//}}AFX_DATA_MAP
 	  	}
 	  	catch(CUserException* e)
 	  	{
@@ -145,3 +147,5 @@ permalink: /kb/150/Q150349/
 	
 	=============================================================================
 	
+
+{% endraw %}

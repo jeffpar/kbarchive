@@ -6,6 +6,8 @@ permalink: /kb/040/Q40359/
 
 ## Q40359: Turning the Scroll Lock On
 
+{% raw %}
+
 	Article: Q40359
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -37,3 +39,5 @@ permalink: /kb/040/Q40359/
 	Additional information on keyboard status can be found in the Peter
 	Norton "Programmer's Guide to the IBM PC and PS/2." The above information
 	also applies to QuickC.
+
+{% endraw %}

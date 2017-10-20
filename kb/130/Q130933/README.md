@@ -6,6 +6,8 @@ permalink: /kb/130/Q130933/
 
 ## Q130933: Administrators Granted Connection with No License Available
 
+{% raw %}
+
 	Article: Q130933
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/130/Q130933/
 	
 	=============================================================================
 	
+
+{% endraw %}

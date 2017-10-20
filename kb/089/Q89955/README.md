@@ -6,6 +6,8 @@ permalink: /kb/089/Q89955/
 
 ## Q89955: Windows Task Manager Does Not End Task for Sound Finder
 
+{% raw %}
+
 	Article: Q89955
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/089/Q89955/
 	
 	=============================================================================
 	
+
+{% endraw %}

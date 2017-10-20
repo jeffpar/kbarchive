@@ -6,6 +6,8 @@ permalink: /kb/134/Q134791/
 
 ## Q134791: PRB: Error at End of Visual FoxPro Installation on Windows NT
 
+{% raw %}
+
 	Article: Q134791
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -117,3 +119,5 @@ permalink: /kb/134/Q134791/
 	
 	=============================================================================
 	
+
+{% endraw %}

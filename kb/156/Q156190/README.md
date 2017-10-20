@@ -6,6 +6,8 @@ permalink: /kb/156/Q156190/
 
 ## Q156190: FIX: LNK1170 Building Project's Makefile from Command Line
 
+{% raw %}
+
 	Article: Q156190
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -124,3 +126,5 @@ permalink: /kb/156/Q156190/
 	
 	=============================================================================
 	
+
+{% endraw %}

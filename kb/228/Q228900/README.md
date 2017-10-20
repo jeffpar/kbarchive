@@ -6,6 +6,8 @@ permalink: /kb/228/Q228900/
 
 ## Q228900: SMS: How SMS 2.0 Network Discovery Sees Clients With Static IPs
 
+{% raw %}
+
 	Article: Q228900
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -91,3 +93,5 @@ permalink: /kb/228/Q228900/
 	
 	=============================================================================
 	
+
+{% endraw %}

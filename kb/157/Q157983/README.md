@@ -6,6 +6,8 @@ permalink: /kb/157/Q157983/
 
 ## Q157983: INFO: Platform Considerations with OLE Automation
 
+{% raw %}
+
 	Article: Q157983
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/157/Q157983/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162986/
 
 ## Q162986: WD97: Background Sound Object Embedded in Document Header
 
+{% raw %}
+
 	Article: Q162986
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/162/Q162986/
 	
 	=============================================================================
 	
+
+{% endraw %}

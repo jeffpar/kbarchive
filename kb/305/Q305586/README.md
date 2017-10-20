@@ -6,6 +6,8 @@ permalink: /kb/305/Q305586/
 
 ## Q305586: FIX: Err Msg When You Attach Visual C++ Debugger to a Process
 
+{% raw %}
+
 	Article: Q305586
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -85,3 +87,5 @@ permalink: /kb/305/Q305586/
 	
 	=============================================================================
 	
+
+{% endraw %}

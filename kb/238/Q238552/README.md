@@ -6,6 +6,8 @@ permalink: /kb/238/Q238552/
 
 ## Q238552: How to Install Hotfixes and Check Versions of Installed Hotfixes
 
+{% raw %}
+
 	Article: Q238552
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -130,3 +132,5 @@ permalink: /kb/238/Q238552/
 	
 	=============================================================================
 	
+
+{% endraw %}

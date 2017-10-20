@@ -6,6 +6,8 @@ permalink: /kb/193/Q193689/
 
 ## Q193689: IIS Security: Mapping IDC Reveals Paths for Web Directories
 
+{% raw %}
+
 	Article: Q193689
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/193/Q193689/
 	
 	=============================================================================
 	
+
+{% endraw %}

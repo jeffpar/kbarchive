@@ -6,6 +6,8 @@ permalink: /kb/165/Q165427/
 
 ## Q165427: Convlog.exe May Cause Access Violation
 
+{% raw %}
+
 	Article: Q165427
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0; :
@@ -56,3 +58,5 @@ permalink: /kb/165/Q165427/
 	
 	=============================================================================
 	
+
+{% endraw %}

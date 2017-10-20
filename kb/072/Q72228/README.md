@@ -6,6 +6,8 @@ permalink: /kb/072/Q72228/
 
 ## Q72228: BUG: Installing MASM 6.0 for OS/2 May Result in a Setup Error
 
+{% raw %}
+
 	Article: Q72228
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -75,3 +77,5 @@ permalink: /kb/072/Q72228/
 	
 	=============================================================================
 	
+
+{% endraw %}

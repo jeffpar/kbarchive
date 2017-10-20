@@ -6,6 +6,8 @@ permalink: /kb/310/Q310787/
 
 ## Q310787: Visual C++ Debugger Hangs on Windows 2000
 
+{% raw %}
+
 	Article: Q310787
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0,SP2
@@ -81,3 +83,5 @@ permalink: /kb/310/Q310787/
 	
 	=============================================================================
 	
+
+{% endraw %}

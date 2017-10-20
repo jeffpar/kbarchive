@@ -6,6 +6,8 @@ permalink: /kb/052/Q52200/
 
 ## Q52200: Manual Set Up for QuickAssembler on 3.5-Inch, 720K Floppies
 
+{% raw %}
+
 	Article: Q52200
 	Product(s): See article
 	Version(s): 2.01
@@ -128,3 +130,5 @@ permalink: /kb/052/Q52200/
 	QuickC with QuickAssembler Fulfillment Kit on 3.5-inch disks, except that
 	the libraries do not need to be built. The existing libraries from
 	QuickC 2.00 can be used for QuickC with QuickAssembler Version 2.01.
+
+{% endraw %}

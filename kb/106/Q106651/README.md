@@ -6,6 +6,8 @@ permalink: /kb/106/Q106651/
 
 ## Q106651: Font Assistant Tips and Information
 
+{% raw %}
+
 	Article: Q106651
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): 1.0,2.0; WINDOWS:1.0,3.1,6.0,6.0a
@@ -123,3 +125,5 @@ permalink: /kb/106/Q106651/
 	
 	=============================================================================
 	
+
+{% endraw %}

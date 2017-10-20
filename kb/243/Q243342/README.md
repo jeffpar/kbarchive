@@ -6,6 +6,8 @@ permalink: /kb/243/Q243342/
 
 ## Q243342: IISSYNC Returns a Status of 214598801
 
+{% raw %}
+
 	Article: Q243342
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -176,3 +178,5 @@ permalink: /kb/243/Q243342/
 	
 	=============================================================================
 	
+
+{% endraw %}

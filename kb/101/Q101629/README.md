@@ -6,6 +6,8 @@ permalink: /kb/101/Q101629/
 
 ## Q101629: Second Member of Mirror or Stripe Set Larger than First
 
+{% raw %}
+
 	Article: Q101629
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -52,3 +54,5 @@ permalink: /kb/101/Q101629/
 	
 	=============================================================================
 	
+
+{% endraw %}

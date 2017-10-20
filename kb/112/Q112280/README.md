@@ -6,6 +6,8 @@ permalink: /kb/112/Q112280/
 
 ## Q112280: PC DirSync: Err Msg: Fatal Error 2 Opening File: MSTTRANS
 
+{% raw %}
+
 	Article: Q112280
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -99,3 +101,5 @@ permalink: /kb/112/Q112280/
 	
 	=============================================================================
 	
+
+{% endraw %}

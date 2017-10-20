@@ -6,6 +6,8 @@ permalink: /kb/138/Q138705/
 
 ## Q138705: Files Installed by Visual FoxPro Professional in Windows 3.x
 
+{% raw %}
+
 	Article: Q138705
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -207,3 +209,5 @@ permalink: /kb/138/Q138705/
 	
 	=============================================================================
 	
+
+{% endraw %}

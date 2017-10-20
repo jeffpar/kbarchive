@@ -6,6 +6,8 @@ permalink: /kb/176/Q176407/
 
 ## Q176407: Inside Dynamic HTML Comments and Corrections
 
+{% raw %}
+
 	Article: Q176407
 	Product(s): Microsoft Press
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/176/Q176407/
 	
 	=============================================================================
 	
+
+{% endraw %}

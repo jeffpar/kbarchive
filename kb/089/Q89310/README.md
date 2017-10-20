@@ -6,6 +6,8 @@ permalink: /kb/089/Q89310/
 
 ## Q89310: MS LAN Manager 2.1 Test Summary (HP Vectra 386/25N)
 
+{% raw %}
+
 	Article: Q89310
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -162,3 +164,5 @@ permalink: /kb/089/Q89310/
 	
 	=============================================================================
 	
+
+{% endraw %}

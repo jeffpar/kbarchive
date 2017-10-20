@@ -6,6 +6,8 @@ permalink: /kb/197/Q197016/
 
 ## Q197016: SMS: How to Distribute a Package
 
+{% raw %}
+
 	Article: Q197016
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -139,3 +141,5 @@ permalink: /kb/197/Q197016/
 	
 	=============================================================================
 	
+
+{% endraw %}

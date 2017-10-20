@@ -6,6 +6,8 @@ permalink: /kb/235/Q235528/
 
 ## Q235528: XADM: Mailbox Item and Size Counts Are Incorrect
 
+{% raw %}
+
 	Article: Q235528
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -81,3 +83,5 @@ permalink: /kb/235/Q235528/
 	
 	=============================================================================
 	
+
+{% endraw %}

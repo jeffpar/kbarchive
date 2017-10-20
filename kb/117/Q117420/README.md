@@ -6,6 +6,8 @@ permalink: /kb/117/Q117420/
 
 ## Q117420: List of Major Sound Card Manufacturers (B-C)
 
+{% raw %}
+
 	Article: Q117420
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -302,3 +304,5 @@ permalink: /kb/117/Q117420/
 	
 	=============================================================================
 	
+
+{% endraw %}

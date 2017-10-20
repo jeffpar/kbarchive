@@ -6,6 +6,8 @@ permalink: /kb/159/Q159262/
 
 ## Q159262: Nick 3DMM: Compatability Between 3DMM and Nick 3DMM
 
+{% raw %}
+
 	Article: Q159262
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -44,3 +46,5 @@ permalink: /kb/159/Q159262/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130988/
 
 ## Q130988: PRB: Objects Stack Up When You Center Group of Objects in Form
 
+{% raw %}
+
 	Article: Q130988
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -77,3 +79,5 @@ permalink: /kb/130/Q130988/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118303/
 
 ## Q118303: Encarta 1994 Err Msg: Graphics Server EXE Wrong Version (2.20)
 
+{% raw %}
+
 	Article: Q118303
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition
@@ -108,3 +110,5 @@ permalink: /kb/118/Q118303/
 	
 	=============================================================================
 	
+
+{% endraw %}

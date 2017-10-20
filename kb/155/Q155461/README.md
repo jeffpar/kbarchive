@@ -6,6 +6,8 @@ permalink: /kb/155/Q155461/
 
 ## Q155461: MSD Fails w/ Application Error After Clicking OS Version
 
+{% raw %}
+
 	Article: Q155461
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -150,3 +152,5 @@ permalink: /kb/155/Q155461/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247080/
 
 ## Q247080: XADM: NDR After Deleting a User from DL in Other Site
 
+{% raw %}
+
 	Article: Q247080
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -74,3 +76,5 @@ permalink: /kb/247/Q247080/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158208/
 
 ## Q158208: FIX: Form with Toolbar Does Not Shut Down Under Windows NT 4.0
 
+{% raw %}
+
 	Article: Q158208
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0; winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/158/Q158208/
 	
 	=============================================================================
 	
+
+{% endraw %}

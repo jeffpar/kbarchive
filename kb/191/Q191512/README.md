@@ -6,6 +6,8 @@ permalink: /kb/191/Q191512/
 
 ## Q191512: PRB: DataFormat Property Not Reset to Blank Value
 
+{% raw %}
+
 	Article: Q191512
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/191/Q191512/
 	
 	=============================================================================
 	
+
+{% endraw %}

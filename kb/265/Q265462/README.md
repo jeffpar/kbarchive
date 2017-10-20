@@ -6,6 +6,8 @@ permalink: /kb/265/Q265462/
 
 ## Q265462: FP: Err Msg Installing Server Extensions with Disk-Based Web
 
+{% raw %}
+
 	Article: Q265462
 	Product(s): Word Front Page
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/265/Q265462/
 	
 	=============================================================================
 	
+
+{% endraw %}

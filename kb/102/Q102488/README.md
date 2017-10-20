@@ -6,6 +6,8 @@ permalink: /kb/102/Q102488/
 
 ## Q102488: Mac Wkst: Norton Directory Assistance II and Enclosures
 
+{% raw %}
+
 	Article: Q102488
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1,3.1a
@@ -57,3 +59,5 @@ permalink: /kb/102/Q102488/
 	
 	=============================================================================
 	
+
+{% endraw %}

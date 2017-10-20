@@ -6,6 +6,8 @@ permalink: /kb/214/Q214743/
 
 ## Q214743: HOWTO: Determine the IDE Mode From an Add-In
 
+{% raw %}
+
 	Article: Q214743
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -120,3 +122,5 @@ permalink: /kb/214/Q214743/
 	
 	=============================================================================
 	
+
+{% endraw %}

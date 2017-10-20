@@ -6,6 +6,8 @@ permalink: /kb/112/Q112283/
 
 ## Q112283: Mac Wkst: Shiva Config Init Version 3.4 and 3.5 Not Compatible
 
+{% raw %}
+
 	Article: Q112283
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -44,3 +46,5 @@ permalink: /kb/112/Q112283/
 	
 	=============================================================================
 	
+
+{% endraw %}

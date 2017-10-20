@@ -6,6 +6,8 @@ permalink: /kb/317/Q317549/
 
 ## Q317549: How To Configure TCP/IP Settings In A Macintosh OS For A Remote
 
+{% raw %}
+
 	Article: Q317549
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/317/Q317549/
 	
 	=============================================================================
 	
+
+{% endraw %}

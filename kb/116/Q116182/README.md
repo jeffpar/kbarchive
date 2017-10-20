@@ -6,6 +6,8 @@ permalink: /kb/116/Q116182/
 
 ## Q116182: BUG: ClipCursor() Restricts Mouse Movement in Debugger
 
+{% raw %}
+
 	Article: Q116182
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.1; WINDOWS:1.0,1.5
@@ -91,3 +93,5 @@ permalink: /kb/116/Q116182/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176256/
 
 ## Q176256: FIX: ODBC Driver May Return &quot;TDS Buffer Length Too Large&quot; Error
 
+{% raw %}
+
 	Article: Q176256
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.0,3.0
@@ -91,3 +93,5 @@ permalink: /kb/176/Q176256/
 	
 	=============================================================================
 	
+
+{% endraw %}

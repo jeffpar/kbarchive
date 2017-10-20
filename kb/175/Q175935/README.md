@@ -6,6 +6,8 @@ permalink: /kb/175/Q175935/
 
 ## Q175935: NBTSTAT -A May Return Host not Found Error Message
 
+{% raw %}
+
 	Article: Q175935
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -94,3 +96,5 @@ permalink: /kb/175/Q175935/
 	
 	=============================================================================
 	
+
+{% endraw %}

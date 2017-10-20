@@ -6,6 +6,8 @@ permalink: /kb/186/Q186277/
 
 ## Q186277: PRB: User Connection Designer: Zero-Length Input Parameter
 
+{% raw %}
+
 	Article: Q186277
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -121,3 +123,5 @@ permalink: /kb/186/Q186277/
 	
 	=============================================================================
 	
+
+{% endraw %}

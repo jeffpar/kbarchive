@@ -6,6 +6,8 @@ permalink: /kb/080/Q80436/
 
 ## Q80436: HP DeskJet, Print Manager, and Enhanced Error Detection
 
+{% raw %}
+
 	Article: Q80436
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/080/Q80436/
 	
 	=============================================================================
 	
+
+{% endraw %}

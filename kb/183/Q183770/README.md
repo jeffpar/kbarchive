@@ -6,6 +6,8 @@ permalink: /kb/183/Q183770/
 
 ## Q183770: SMS: Snmpelea Unable to Open Security Event Log
 
+{% raw %}
+
 	Article: Q183770
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -69,3 +71,5 @@ permalink: /kb/183/Q183770/
 	
 	=============================================================================
 	
+
+{% endraw %}

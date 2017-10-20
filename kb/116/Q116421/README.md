@@ -6,6 +6,8 @@ permalink: /kb/116/Q116421/
 
 ## Q116421: BUG: Evaluating _pascal Functions Can Give Erroneous CXX0039
 
+{% raw %}
+
 	Article: Q116421
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.1
@@ -103,3 +105,5 @@ permalink: /kb/116/Q116421/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147135/
 
 ## Q147135: CONN: Err Msg: The User Is Not the Network Manager
 
+{% raw %}
+
 	Article: Q147135
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -60,3 +62,5 @@ permalink: /kb/147/Q147135/
 	
 	=============================================================================
 	
+
+{% endraw %}

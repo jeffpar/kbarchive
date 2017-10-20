@@ -6,6 +6,8 @@ permalink: /kb/157/Q157697/
 
 ## Q157697: XCLN: Schedule+ Reminders Affect Screen Saver in Windows 95
 
+{% raw %}
+
 	Article: Q157697
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -55,3 +57,5 @@ permalink: /kb/157/Q157697/
 	
 	=============================================================================
 	
+
+{% endraw %}

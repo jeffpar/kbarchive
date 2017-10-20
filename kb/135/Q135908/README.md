@@ -6,6 +6,8 @@ permalink: /kb/135/Q135908/
 
 ## Q135908: FIX: Hot Keys Do Not Work If TabStop Is Set to False
 
+{% raw %}
+
 	Article: Q135908
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -88,3 +90,5 @@ permalink: /kb/135/Q135908/
 	
 	=============================================================================
 	
+
+{% endraw %}

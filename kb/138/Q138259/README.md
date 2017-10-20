@@ -6,6 +6,8 @@ permalink: /kb/138/Q138259/
 
 ## Q138259: Large File Copy Fails Using Thomas-Conrad 3045 Arcnet Adapter
 
+{% raw %}
+
 	Article: Q138259
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/138/Q138259/
 	
 	=============================================================================
 	
+
+{% endraw %}

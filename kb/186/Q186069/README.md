@@ -6,6 +6,8 @@ permalink: /kb/186/Q186069/
 
 ## Q186069: Distributed File System Client Does Not Connect to Another Share
 
+{% raw %}
+
 	Article: Q186069
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/186/Q186069/
 	
 	=============================================================================
 	
+
+{% endraw %}

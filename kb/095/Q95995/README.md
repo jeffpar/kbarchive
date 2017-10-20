@@ -6,6 +6,8 @@ permalink: /kb/095/Q95995/
 
 ## Q95995: WFWG Err Msg with an ATI Mach 32: &#92;DEV&#92;MS2000&#36; Error...
 
+{% raw %}
+
 	Article: Q95995
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -58,3 +60,5 @@ permalink: /kb/095/Q95995/
 	
 	=============================================================================
 	
+
+{% endraw %}

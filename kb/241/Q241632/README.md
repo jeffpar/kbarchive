@@ -6,6 +6,8 @@ permalink: /kb/241/Q241632/
 
 ## Q241632: XCON: Event ID 290 When Sending Mail to a Distribution List
 
+{% raw %}
+
 	Article: Q241632
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -104,3 +106,5 @@ permalink: /kb/241/Q241632/
 	
 	=============================================================================
 	
+
+{% endraw %}

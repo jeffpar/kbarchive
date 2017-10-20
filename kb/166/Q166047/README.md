@@ -6,6 +6,8 @@ permalink: /kb/166/Q166047/
 
 ## Q166047: Fatal Exception Error Running Add New Hardware Wizard
 
+{% raw %}
+
 	Article: Q166047
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/166/Q166047/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154442/
 
 ## Q154442: Application Handles Responses Received from DNS
 
+{% raw %}
+
 	Article: Q154442
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,3.0,4.0
@@ -63,3 +65,5 @@ permalink: /kb/154/Q154442/
 	
 	=============================================================================
 	
+
+{% endraw %}

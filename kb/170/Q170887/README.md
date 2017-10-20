@@ -6,6 +6,8 @@ permalink: /kb/170/Q170887/
 
 ## Q170887: WD97: Field Code Becomes Damaged Under Certain Circumstances
 
+{% raw %}
+
 	Article: Q170887
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -129,3 +131,5 @@ permalink: /kb/170/Q170887/
 	
 	=============================================================================
 	
+
+{% endraw %}

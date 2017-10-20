@@ -6,6 +6,8 @@ permalink: /kb/253/Q253594/
 
 ## Q253594: MA Updates Not Written to the Transaction Stack
 
+{% raw %}
+
 	Article: Q253594
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -67,3 +69,5 @@ permalink: /kb/253/Q253594/
 	
 	=============================================================================
 	
+
+{% endraw %}

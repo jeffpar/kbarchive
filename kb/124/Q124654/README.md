@@ -6,6 +6,8 @@ permalink: /kb/124/Q124654/
 
 ## Q124654: Event ID 8006: The Browser Has Received an Illegal Datagram...
 
+{% raw %}
+
 	Article: Q124654
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/124/Q124654/
 	
 	=============================================================================
 	
+
+{% endraw %}

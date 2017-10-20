@@ -6,6 +6,8 @@ permalink: /kb/125/Q125254/
 
 ## Q125254: PC WSPlus: Err Msg: The Schedule File Could Not Be Opened...
 
+{% raw %}
+
 	Article: Q125254
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/125/Q125254/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112091/
 
 ## Q112091: AWFAX: Manually Configuring for a Class 2 Modem
 
+{% raw %}
+
 	Article: Q112091
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -80,3 +82,5 @@ permalink: /kb/112/Q112091/
 	
 	=============================================================================
 	
+
+{% endraw %}

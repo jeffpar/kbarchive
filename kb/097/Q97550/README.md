@@ -6,6 +6,8 @@ permalink: /kb/097/Q97550/
 
 ## Q97550: Cable Considerations for Network Installations
 
+{% raw %}
+
 	Article: Q97550
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -213,3 +215,5 @@ permalink: /kb/097/Q97550/
 	
 	=============================================================================
 	
+
+{% endraw %}

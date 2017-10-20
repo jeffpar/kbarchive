@@ -6,6 +6,8 @@ permalink: /kb/135/Q135932/
 
 ## Q135932: PC DB: LISTUSER Version 2.1 Displays Unrecognizable Characters
 
+{% raw %}
+
 	Article: Q135932
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -107,3 +109,5 @@ permalink: /kb/135/Q135932/
 	
 	=============================================================================
 	
+
+{% endraw %}

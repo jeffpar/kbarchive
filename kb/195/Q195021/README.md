@@ -6,6 +6,8 @@ permalink: /kb/195/Q195021/
 
 ## Q195021: FIX: &quot;Version not found&quot; After Running ssarc -d -v
 
+{% raw %}
+
 	Article: Q195021
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/195/Q195021/
 	
 	=============================================================================
 	
+
+{% endraw %}

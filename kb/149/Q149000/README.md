@@ -6,6 +6,8 @@ permalink: /kb/149/Q149000/
 
 ## Q149000: PRB: REQUERY Function Reopens a View's Table Exclusively
 
+{% raw %}
+
 	Article: Q149000
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -106,3 +108,5 @@ permalink: /kb/149/Q149000/
 	
 	=============================================================================
 	
+
+{% endraw %}

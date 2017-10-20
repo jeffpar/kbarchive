@@ -6,6 +6,8 @@ permalink: /kb/139/Q139857/
 
 ## Q139857: XCLN: Closing Client by Double-Clicking the System Menu
 
+{% raw %}
+
 	Article: Q139857
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -57,3 +59,5 @@ permalink: /kb/139/Q139857/
 	
 	=============================================================================
 	
+
+{% endraw %}

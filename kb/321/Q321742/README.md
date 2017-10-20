@@ -6,6 +6,8 @@ permalink: /kb/321/Q321742/
 
 ## Q321742: Dungeon Siege: How to Troubleshoot Setup Errors
 
+{% raw %}
+
 	Article: Q321742
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -218,3 +220,5 @@ permalink: /kb/321/Q321742/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170004/
 
 ## Q170004: XCON: Message from PMDF MTA May Be Rejected
 
+{% raw %}
+
 	Article: Q170004
 	Product(s): Microsoft Exchange
 	Version(s): WinNT: 4.0,5.0,5.5
@@ -52,3 +54,5 @@ permalink: /kb/170/Q170004/
 	
 	=============================================================================
 	
+
+{% endraw %}

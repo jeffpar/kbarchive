@@ -6,6 +6,8 @@ permalink: /kb/129/Q129913/
 
 ## Q129913: FIX: Browse Key Record Pointer Moves Incorrectly
 
+{% raw %}
+
 	Article: Q129913
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a; MS-DOS:2.6a; UNIX:2.6; WINDOWS:2.6a,3.0,3.0b
@@ -80,3 +82,5 @@ permalink: /kb/129/Q129913/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235725/
 
 ## Q235725: SMSINST: Sleep Functionality Now Built Into SMS Installer
 
+{% raw %}
+
 	Article: Q235725
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0
@@ -56,3 +58,5 @@ permalink: /kb/235/Q235725/
 	
 	=============================================================================
 	
+
+{% endraw %}

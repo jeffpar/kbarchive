@@ -6,6 +6,8 @@ permalink: /kb/134/Q134895/
 
 ## Q134895: BUG: DragIcon Can Be Dragged Outside Visual FoxPro Window
 
+{% raw %}
+
 	Article: Q134895
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -74,3 +76,5 @@ permalink: /kb/134/Q134895/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182599/
 
 ## Q182599: XCLN: Multinational Clients Cannot Add Some Users to PAB
 
+{% raw %}
+
 	Article: Q182599
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -55,3 +57,5 @@ permalink: /kb/182/Q182599/
 	
 	=============================================================================
 	
+
+{% endraw %}

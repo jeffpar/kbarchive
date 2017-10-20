@@ -6,6 +6,8 @@ permalink: /kb/095/Q95877/
 
 ## Q95877: WFWG: MS-DOS Applications May Return FCB UNAVAILABLE Error
 
+{% raw %}
+
 	Article: Q95877
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -62,3 +64,5 @@ permalink: /kb/095/Q95877/
 	
 	=============================================================================
 	
+
+{% endraw %}

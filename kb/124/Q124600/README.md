@@ -6,6 +6,8 @@ permalink: /kb/124/Q124600/
 
 ## Q124600: Creating MS-DOS Style Full-Screens in FoxPro for Windows
 
+{% raw %}
+
 	Article: Q124600
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6a,3.0
@@ -90,3 +92,5 @@ permalink: /kb/124/Q124600/
 	
 	=============================================================================
 	
+
+{% endraw %}

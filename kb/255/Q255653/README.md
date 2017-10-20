@@ -6,6 +6,8 @@ permalink: /kb/255/Q255653/
 
 ## Q255653: Error Message: MDAC Install Was Unsuccessful
 
+{% raw %}
+
 	Article: Q255653
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -196,3 +198,5 @@ permalink: /kb/255/Q255653/
 	
 	=============================================================================
 	
+
+{% endraw %}

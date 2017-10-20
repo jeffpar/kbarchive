@@ -6,6 +6,8 @@ permalink: /kb/174/Q174472/
 
 ## Q174472: SMS: Inventory Does Not Report Macintosh OS Version 8
 
+{% raw %}
+
 	Article: Q174472
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -57,3 +59,5 @@ permalink: /kb/174/Q174472/
 	
 	=============================================================================
 	
+
+{% endraw %}

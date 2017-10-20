@@ -6,6 +6,8 @@ permalink: /kb/169/Q169445/
 
 ## Q169445: PRB: VisData Returns Incorrect Number of Records
 
+{% raw %}
+
 	Article: Q169445
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -86,3 +88,5 @@ permalink: /kb/169/Q169445/
 	
 	=============================================================================
 	
+
+{% endraw %}

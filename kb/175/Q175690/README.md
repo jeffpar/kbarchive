@@ -6,6 +6,8 @@ permalink: /kb/175/Q175690/
 
 ## Q175690: The Winmsd.exe Program Shows Multiple Users Are Logged On
 
+{% raw %}
+
 	Article: Q175690
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -45,3 +47,5 @@ permalink: /kb/175/Q175690/
 	
 	=============================================================================
 	
+
+{% endraw %}

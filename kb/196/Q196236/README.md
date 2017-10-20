@@ -6,6 +6,8 @@ permalink: /kb/196/Q196236/
 
 ## Q196236: FIX Error Generating Cab Files Error Code 3
 
+{% raw %}
+
 	Article: Q196236
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -116,3 +118,5 @@ permalink: /kb/196/Q196236/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158515/
 
 ## Q158515: Auto Started TP Is Not Invoked if TP Has Mixed-Case TP Name
 
+{% raw %}
+
 	Article: Q158515
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -105,3 +107,5 @@ permalink: /kb/158/Q158515/
 	
 	=============================================================================
 	
+
+{% endraw %}

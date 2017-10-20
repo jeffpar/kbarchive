@@ -6,6 +6,8 @@ permalink: /kb/159/Q159119/
 
 ## Q159119: NTFS Generates Cross-Linked Files
 
+{% raw %}
+
 	Article: Q159119
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/159/Q159119/
 	
 	=============================================================================
 	
+
+{% endraw %}

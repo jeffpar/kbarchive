@@ -6,6 +6,8 @@ permalink: /kb/031/Q31987/
 
 ## Q31987: Maximum Number of Object Modules LINK Supports
 
+{% raw %}
+
 	Article: Q31987
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.x,5.01.20,5.01.21,5.03,5.05,5.1,5.13,5.15,5.3,5.31.009,5.5,5.6; winnt:1.0,2.5
@@ -36,3 +38,5 @@ permalink: /kb/031/Q31987/
 	
 	=============================================================================
 	
+
+{% endraw %}

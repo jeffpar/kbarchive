@@ -6,6 +6,8 @@ permalink: /kb/180/Q180202/
 
 ## Q180202: WD97: How to Keep OnEntry Macro from Running at Document Open
 
+{% raw %}
+
 	Article: Q180202
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -122,3 +124,5 @@ permalink: /kb/180/Q180202/
 	
 	=============================================================================
 	
+
+{% endraw %}

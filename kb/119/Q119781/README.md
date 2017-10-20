@@ -6,6 +6,8 @@ permalink: /kb/119/Q119781/
 
 ## Q119781: Err Msg: There Is a Problem Loading Unicode Tables
 
+{% raw %}
+
 	Article: Q119781
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/119/Q119781/
 	
 	=============================================================================
 	
+
+{% endraw %}

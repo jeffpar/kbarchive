@@ -6,6 +6,8 @@ permalink: /kb/165/Q165545/
 
 ## Q165545: Odbc.inf File in ODBC Folder Prevents Use of Drvstp32.exe
 
+{% raw %}
+
 	Article: Q165545
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/165/Q165545/
 	
 	=============================================================================
 	
+
+{% endraw %}

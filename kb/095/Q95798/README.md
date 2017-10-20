@@ -6,6 +6,8 @@ permalink: /kb/095/Q95798/
 
 ## Q95798: Standard AdLib Card Cannot Play .WAV Files
 
+{% raw %}
+
 	Article: Q95798
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/095/Q95798/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/269/Q269958/
 
 ## Q269958: MSB in Concert: Minimum System Requirements for Macintosh
 
+{% raw %}
+
 	Article: Q269958
 	Product(s): Microsoft Home Kids Products
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/269/Q269958/
 	
 	=============================================================================
 	
+
+{% endraw %}

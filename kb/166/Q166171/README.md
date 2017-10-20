@@ -6,6 +6,8 @@ permalink: /kb/166/Q166171/
 
 ## Q166171: Long File Names Are Lost When Connecting to NetWare 4.11
 
+{% raw %}
+
 	Article: Q166171
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -58,3 +60,5 @@ permalink: /kb/166/Q166171/
 	
 	=============================================================================
 	
+
+{% endraw %}

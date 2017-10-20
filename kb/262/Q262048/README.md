@@ -6,6 +6,8 @@ permalink: /kb/262/Q262048/
 
 ## Q262048: XCON: Instances Don't Appear in MSExchangeMTA Connections Object
 
+{% raw %}
+
 	Article: Q262048
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -48,3 +50,5 @@ permalink: /kb/262/Q262048/
 	
 	=============================================================================
 	
+
+{% endraw %}

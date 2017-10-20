@@ -6,6 +6,8 @@ permalink: /kb/058/Q58333/
 
 ## Q58333: Windows 3.0 WIN.INI &#91;extensions&#93; Section
 
+{% raw %}
+
 	Article: Q58333
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -66,3 +68,5 @@ permalink: /kb/058/Q58333/
 	
 	=============================================================================
 	
+
+{% endraw %}

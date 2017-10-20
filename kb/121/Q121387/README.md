@@ -6,6 +6,8 @@ permalink: /kb/121/Q121387/
 
 ## Q121387: Use of the %0&#92;..&#92; Syntax in the Smsls.bat File
 
+{% raw %}
+
 	Article: Q121387
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -64,3 +66,5 @@ permalink: /kb/121/Q121387/
 	
 	=============================================================================
 	
+
+{% endraw %}

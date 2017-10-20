@@ -6,6 +6,8 @@ permalink: /kb/199/Q199875/
 
 ## Q199875: HTML in Action Corrections and Comments
 
+{% raw %}
+
 	Article: Q199875
 	Product(s): Microsoft Press
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/199/Q199875/
 	
 	=============================================================================
 	
+
+{% endraw %}

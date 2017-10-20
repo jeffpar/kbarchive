@@ -6,6 +6,8 @@ permalink: /kb/228/Q228743/
 
 ## Q228743: XFOR: NDR Msg from Downstream cc:Mail PO Doesn't Name Recipient
 
+{% raw %}
+
 	Article: Q228743
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -78,3 +80,5 @@ permalink: /kb/228/Q228743/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/316/Q316021/
 
 ## Q316021: SMS: SMSAPM32 Does Not Remove Software or Create Status Messages
 
+{% raw %}
+
 	Article: Q316021
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3,2.0 SP4
@@ -463,3 +465,5 @@ permalink: /kb/316/Q316021/
 	
 	=============================================================================
 	
+
+{% endraw %}

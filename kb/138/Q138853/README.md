@@ -6,6 +6,8 @@ permalink: /kb/138/Q138853/
 
 ## Q138853: PerfMon, Run Remotely, Fails to Show all Logical Drive Instances
 
+{% raw %}
+
 	Article: Q138853
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -62,3 +64,5 @@ permalink: /kb/138/Q138853/
 	
 	=============================================================================
 	
+
+{% endraw %}

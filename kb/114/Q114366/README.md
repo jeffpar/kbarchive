@@ -6,6 +6,8 @@ permalink: /kb/114/Q114366/
 
 ## Q114366: Device Errors Occur When Using Windows Sound System Apps
 
+{% raw %}
+
 	Article: Q114366
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/114/Q114366/
 	
 	=============================================================================
 	
+
+{% endraw %}

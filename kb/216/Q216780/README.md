@@ -6,6 +6,8 @@ permalink: /kb/216/Q216780/
 
 ## Q216780: DLC Protocol Stops Transmitting Packets
 
+{% raw %}
+
 	Article: Q216780
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/216/Q216780/
 	
 	=============================================================================
 	
+
+{% endraw %}

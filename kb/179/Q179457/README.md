@@ -6,6 +6,8 @@ permalink: /kb/179/Q179457/
 
 ## Q179457: Bookshelf 98: Footnote Number Is Displayed Beneath Pasted Text
 
+{% raw %}
+
 	Article: Q179457
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -76,3 +78,5 @@ permalink: /kb/179/Q179457/
 	
 	=============================================================================
 	
+
+{% endraw %}

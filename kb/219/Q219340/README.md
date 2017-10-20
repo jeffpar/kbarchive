@@ -6,6 +6,8 @@ permalink: /kb/219/Q219340/
 
 ## Q219340: Unable to Read Files from a Remote LANMAN 2.1 Compatible Server
 
+{% raw %}
+
 	Article: Q219340
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a
@@ -81,3 +83,5 @@ permalink: /kb/219/Q219340/
 	
 	=============================================================================
 	
+
+{% endraw %}

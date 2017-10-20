@@ -6,6 +6,8 @@ permalink: /kb/181/Q181939/
 
 ## Q181939: XCLN: Macintosh Mail Migration Fails to Import SMTP PAB Entries
 
+{% raw %}
+
 	Article: Q181939
 	Product(s): Microsoft Exchange
 	Version(s): Macintosh:4.0
@@ -70,3 +72,5 @@ permalink: /kb/181/Q181939/
 	
 	=============================================================================
 	
+
+{% endraw %}

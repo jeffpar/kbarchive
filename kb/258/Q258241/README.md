@@ -6,6 +6,8 @@ permalink: /kb/258/Q258241/
 
 ## Q258241: BUG: SYS(1271) Used in Property of a Class Crashes Visual FoxPro
 
+{% raw %}
+
 	Article: Q258241
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -129,3 +131,5 @@ permalink: /kb/258/Q258241/
 	
 	=============================================================================
 	
+
+{% endraw %}

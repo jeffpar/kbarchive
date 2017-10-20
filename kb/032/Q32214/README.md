@@ -6,6 +6,8 @@ permalink: /kb/032/Q32214/
 
 ## Q32214: &quot;Device I/O&quot; Error Using LPRINT or &quot;LPT1:&quot; After a CHAIN
 
+{% raw %}
+
 	Article: Q32214
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -59,3 +61,5 @@ permalink: /kb/032/Q32214/
 	   PRINT #15,"program 2"
 	   CLOSE #15
 	   SYSTEM
+
+{% endraw %}

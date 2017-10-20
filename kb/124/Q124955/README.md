@@ -6,6 +6,8 @@ permalink: /kb/124/Q124955/
 
 ## Q124955: MHS: Gateway to MHS INSTALL.EXE Version 3.0.1 Update
 
+{% raw %}
+
 	Article: Q124955
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -121,3 +123,5 @@ permalink: /kb/124/Q124955/
 	
 	=============================================================================
 	
+
+{% endraw %}

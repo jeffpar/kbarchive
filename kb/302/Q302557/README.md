@@ -6,6 +6,8 @@ permalink: /kb/302/Q302557/
 
 ## Q302557: Help Page Content Supported Media (Bug ID 3783)
 
+{% raw %}
+
 	Article: Q302557
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -63,3 +65,5 @@ permalink: /kb/302/Q302557/
 	
 	=============================================================================
 	
+
+{% endraw %}

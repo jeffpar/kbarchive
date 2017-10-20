@@ -6,6 +6,8 @@ permalink: /kb/247/Q247782/
 
 ## Q247782: XCON: Mail Slow Across Connectors, with Event IDs 3120 and 9316
 
+{% raw %}
+
 	Article: Q247782
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/247/Q247782/
 	
 	=============================================================================
 	
+
+{% endraw %}

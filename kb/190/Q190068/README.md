@@ -6,6 +6,8 @@ permalink: /kb/190/Q190068/
 
 ## Q190068: BUG: Control Interface Wizard May Not Expose BackColor Property
 
+{% raw %}
+
 	Article: Q190068
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -107,3 +109,5 @@ permalink: /kb/190/Q190068/
 	
 	=============================================================================
 	
+
+{% endraw %}

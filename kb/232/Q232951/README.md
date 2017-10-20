@@ -6,6 +6,8 @@ permalink: /kb/232/Q232951/
 
 ## Q232951: Err Msg: The Snap-in That Has Been Selected Failed to Initialize
 
+{% raw %}
+
 	Article: Q232951
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/232/Q232951/
 	
 	=============================================================================
 	
+
+{% endraw %}

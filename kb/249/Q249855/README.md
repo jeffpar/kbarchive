@@ -6,6 +6,8 @@ permalink: /kb/249/Q249855/
 
 ## Q249855: Secondary DNS Behavior Does Not Match Configured Options
 
+{% raw %}
+
 	Article: Q249855
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -49,3 +51,5 @@ permalink: /kb/249/Q249855/
 	
 	=============================================================================
 	
+
+{% endraw %}

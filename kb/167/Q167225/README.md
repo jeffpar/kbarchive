@@ -6,6 +6,8 @@ permalink: /kb/167/Q167225/
 
 ## Q167225: HOWTO: Access an Oracle Database Using RDO
 
+{% raw %}
+
 	Article: Q167225
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -257,3 +259,5 @@ permalink: /kb/167/Q167225/
 	
 	=============================================================================
 	
+
+{% endraw %}

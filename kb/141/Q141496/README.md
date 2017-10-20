@@ -6,6 +6,8 @@ permalink: /kb/141/Q141496/
 
 ## Q141496: DHCP Client Comment Disappears When Obtaining IP Address
 
+{% raw %}
+
 	Article: Q141496
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -61,3 +63,5 @@ permalink: /kb/141/Q141496/
 	
 	=============================================================================
 	
+
+{% endraw %}

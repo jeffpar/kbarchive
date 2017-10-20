@@ -6,6 +6,8 @@ permalink: /kb/107/Q107376/
 
 ## Q107376: Intel SatisFAXtion 100 &amp; 400E Are Class 1 and CAS Compatible
 
+{% raw %}
+
 	Article: Q107376
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -48,3 +50,5 @@ permalink: /kb/107/Q107376/
 	
 	=============================================================================
 	
+
+{% endraw %}

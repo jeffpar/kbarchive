@@ -6,6 +6,8 @@ permalink: /kb/155/Q155407/
 
 ## Q155407: Setting Up Windows NT on Motorola PowerStack When Drive Is New
 
+{% raw %}
+
 	Article: Q155407
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -142,3 +144,5 @@ permalink: /kb/155/Q155407/
 	
 	=============================================================================
 	
+
+{% endraw %}

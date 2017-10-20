@@ -6,6 +6,8 @@ permalink: /kb/162/Q162370/
 
 ## Q162370: Flight Simulator 95 Err Msg: Invalid Page Fault in Winsmsg.dll
 
+{% raw %}
+
 	Article: Q162370
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/162/Q162370/
 	
 	=============================================================================
 	
+
+{% endraw %}

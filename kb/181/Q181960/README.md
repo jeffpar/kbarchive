@@ -6,6 +6,8 @@ permalink: /kb/181/Q181960/
 
 ## Q181960: XCLN: Macintosh Does Not Correctly Support Adobe.pdf Attachments
 
+{% raw %}
+
 	Article: Q181960
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:4.0,5.0
@@ -50,3 +52,5 @@ permalink: /kb/181/Q181960/
 	
 	=============================================================================
 	
+
+{% endraw %}

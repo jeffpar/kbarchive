@@ -6,6 +6,8 @@ permalink: /kb/201/Q201220/
 
 ## Q201220: Err Msg: The Application Could Not Find a GPS on Your System
 
+{% raw %}
+
 	Article: Q201220
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:1.0,98
@@ -75,3 +77,5 @@ permalink: /kb/201/Q201220/
 	
 	=============================================================================
 	
+
+{% endraw %}

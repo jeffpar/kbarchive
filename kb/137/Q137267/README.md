@@ -6,6 +6,8 @@ permalink: /kb/137/Q137267/
 
 ## Q137267: SNA Server WinSLI Library Does Not Support Format 1 InitSelf
 
+{% raw %}
+
 	Article: Q137267
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -69,3 +71,5 @@ permalink: /kb/137/Q137267/
 	
 	=============================================================================
 	
+
+{% endraw %}

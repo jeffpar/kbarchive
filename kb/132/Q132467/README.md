@@ -6,6 +6,8 @@ permalink: /kb/132/Q132467/
 
 ## Q132467: Firing Order for Rules and Triggers in Visual FoxPro
 
+{% raw %}
+
 	Article: Q132467
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -186,3 +188,5 @@ permalink: /kb/132/Q132467/
 	
 	=============================================================================
 	
+
+{% endraw %}

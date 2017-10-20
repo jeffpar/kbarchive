@@ -6,6 +6,8 @@ permalink: /kb/156/Q156573/
 
 ## Q156573: WD97: How to Recover Text from Any File
 
+{% raw %}
+
 	Article: Q156573
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -146,3 +148,5 @@ permalink: /kb/156/Q156573/
 	
 	=============================================================================
 	
+
+{% endraw %}

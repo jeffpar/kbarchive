@@ -6,6 +6,8 @@ permalink: /kb/155/Q155972/
 
 ## Q155972: Mastering Internet Development: IE3.0 Won't Install on NT 3.51
 
+{% raw %}
+
 	Article: Q155972
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/155/Q155972/
 	
 	=============================================================================
 	
+
+{% endraw %}

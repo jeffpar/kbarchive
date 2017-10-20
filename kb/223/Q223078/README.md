@@ -6,6 +6,8 @@ permalink: /kb/223/Q223078/
 
 ## Q223078: FIX: DataGrid Column Widths Incorrect When Using MDAC 2.1
 
+{% raw %}
+
 	Article: Q223078
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -112,3 +114,5 @@ permalink: /kb/223/Q223078/
 	
 	=============================================================================
 	
+
+{% endraw %}

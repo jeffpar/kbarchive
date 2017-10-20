@@ -6,6 +6,8 @@ permalink: /kb/033/Q33366/
 
 ## Q33366: How _fheapwalk() Checks the Heap
 
+{% raw %}
+
 	Article: Q33366
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -35,3 +37,5 @@ permalink: /kb/033/Q33366/
 	block is omitted from the structure whose pointer is returned by
 	_fmalloc(). In particular, the size of the header is omitted from the
 	structure.
+
+{% endraw %}

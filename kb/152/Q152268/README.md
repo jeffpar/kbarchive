@@ -6,6 +6,8 @@ permalink: /kb/152/Q152268/
 
 ## Q152268: XFOR: MSMI Won't Set SNADS as Reply-To Address
 
+{% raw %}
+
 	Article: Q152268
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/152/Q152268/
 	
 	=============================================================================
 	
+
+{% endraw %}

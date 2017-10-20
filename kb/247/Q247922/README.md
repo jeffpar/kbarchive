@@ -6,6 +6,8 @@ permalink: /kb/247/Q247922/
 
 ## Q247922: Server Logs Netlogon Event 5719 When Starting
 
+{% raw %}
+
 	Article: Q247922
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/247/Q247922/
 	
 	=============================================================================
 	
+
+{% endraw %}

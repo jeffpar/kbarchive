@@ -6,6 +6,8 @@ permalink: /kb/239/Q239661/
 
 ## Q239661: XIMS: Err Mss: The Service Configuration Dynamic Link Library...
 
+{% raw %}
+
 	Article: Q239661
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/239/Q239661/
 	
 	=============================================================================
 	
+
+{% endraw %}

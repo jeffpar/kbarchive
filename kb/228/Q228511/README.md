@@ -6,6 +6,8 @@ permalink: /kb/228/Q228511/
 
 ## Q228511: Baseball 2000: Screen Is Redrawn Several Times During Game Play
 
+{% raw %}
+
 	Article: Q228511
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/228/Q228511/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169441/
 
 ## Q169441: MSB Human Body Minimizes When Printing To HP Deskjet
 
+{% raw %}
+
 	Article: Q169441
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -88,3 +90,5 @@ permalink: /kb/169/Q169441/
 	
 	=============================================================================
 	
+
+{% endraw %}

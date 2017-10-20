@@ -6,6 +6,8 @@ permalink: /kb/213/Q213340/
 
 ## Q213340: SMS: Can't Open Membership Rules Tab at Child Site
 
+{% raw %}
+
 	Article: Q213340
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -63,3 +65,5 @@ permalink: /kb/213/Q213340/
 	
 	=============================================================================
 	
+
+{% endraw %}

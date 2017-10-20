@@ -6,6 +6,8 @@ permalink: /kb/140/Q140981/
 
 ## Q140981: PPT7: Components That Cannot be Added or Removed
 
+{% raw %}
+
 	Article: Q140981
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -68,3 +70,5 @@ permalink: /kb/140/Q140981/
 	
 	=============================================================================
 	
+
+{% endraw %}

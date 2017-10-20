@@ -6,6 +6,8 @@ permalink: /kb/070/Q70671/
 
 ## Q70671: Return Must Match Memory Model for CALL to Label in Proc
 
+{% raw %}
+
 	Article: Q70671
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a,6.0,6.0a,6.0b
@@ -113,3 +115,5 @@ permalink: /kb/070/Q70671/
 	
 	=============================================================================
 	
+
+{% endraw %}

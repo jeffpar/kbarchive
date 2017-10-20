@@ -6,6 +6,8 @@ permalink: /kb/167/Q167994/
 
 ## Q167994: FIX: Cvpack INTERNAL ERROR When Linking Large Projects
 
+{% raw %}
+
 	Article: Q167994
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -62,3 +64,5 @@ permalink: /kb/167/Q167994/
 	
 	=============================================================================
 	
+
+{% endraw %}

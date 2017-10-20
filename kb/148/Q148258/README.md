@@ -6,6 +6,8 @@ permalink: /kb/148/Q148258/
 
 ## Q148258: Bookshelf 1993: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148258
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 edition
@@ -59,3 +61,5 @@ permalink: /kb/148/Q148258/
 	
 	=============================================================================
 	
+
+{% endraw %}

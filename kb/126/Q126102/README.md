@@ -6,6 +6,8 @@ permalink: /kb/126/Q126102/
 
 ## Q126102: Paintbrush Causes GP Fault with VGA or SVGA Display Driver
 
+{% raw %}
+
 	Article: Q126102
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/126/Q126102/
 	
 	=============================================================================
 	
+
+{% endraw %}

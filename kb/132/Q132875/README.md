@@ -6,6 +6,8 @@ permalink: /kb/132/Q132875/
 
 ## Q132875: MS Exchange Setup Wizard Loses Information When Backing Up
 
+{% raw %}
+
 	Article: Q132875
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/132/Q132875/
 	
 	=============================================================================
 	
+
+{% endraw %}

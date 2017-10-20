@@ -6,6 +6,8 @@ permalink: /kb/086/Q86947/
 
 ## Q86947: 3COM: What Occurs in the Event of a Mail Failure
 
+{% raw %}
+
 	Article: Q86947
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -41,3 +43,5 @@ permalink: /kb/086/Q86947/
 	
 	=============================================================================
 	
+
+{% endraw %}

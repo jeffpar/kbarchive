@@ -6,6 +6,8 @@ permalink: /kb/128/Q128094/
 
 ## Q128094: MSTEST Subdirectories Not Copied to Logon Server
 
+{% raw %}
+
 	Article: Q128094
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -41,3 +43,5 @@ permalink: /kb/128/Q128094/
 	
 	=============================================================================
 	
+
+{% endraw %}

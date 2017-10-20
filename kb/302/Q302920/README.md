@@ -6,6 +6,8 @@ permalink: /kb/302/Q302920/
 
 ## Q302920: Maximum Mailbox Size Displayed Incorrectly For Free Accounts In
 
+{% raw %}
+
 	Article: Q302920
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -55,3 +57,5 @@ permalink: /kb/302/Q302920/
 	
 	=============================================================================
 	
+
+{% endraw %}

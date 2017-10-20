@@ -6,6 +6,8 @@ permalink: /kb/186/Q186463/
 
 ## Q186463: Windows NT Replies to Address Mask Requests
 
+{% raw %}
+
 	Article: Q186463
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -115,3 +117,5 @@ permalink: /kb/186/Q186463/
 	
 	=============================================================================
 	
+
+{% endraw %}

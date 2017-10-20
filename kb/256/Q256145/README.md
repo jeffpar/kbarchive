@@ -6,6 +6,8 @@ permalink: /kb/256/Q256145/
 
 ## Q256145: Use Network Monitor to Determine Proxy Server Configuration
 
+{% raw %}
+
 	Article: Q256145
 	Product(s): Microsoft Windows NT
 	Version(s): NT:4.5; winnt:2.0,4.0,4.5
@@ -290,3 +292,5 @@ permalink: /kb/256/Q256145/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124257/
 
 ## Q124257: Disk Contents of Japan Scenery (3.5 Inch, 1.44 MB)
 
+{% raw %}
+
 	Article: Q124257
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -49,3 +51,5 @@ permalink: /kb/124/Q124257/
 	
 	=============================================================================
 	
+
+{% endraw %}

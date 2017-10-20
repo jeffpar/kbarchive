@@ -6,6 +6,8 @@ permalink: /kb/051/Q51489/
 
 ## Q51489: Error in SIMPLE Mouse Menu in Programmer's Reference
 
+{% raw %}
+
 	Article: Q51489
 	Product(s): See article
 	Version(s): 1.00
@@ -22,3 +24,5 @@ permalink: /kb/051/Q51489/
 	It should read as follows:
 	
 	   dn:  TYPE 0,80        ;Down-arrow key
+
+{% endraw %}

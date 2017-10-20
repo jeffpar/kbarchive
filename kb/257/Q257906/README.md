@@ -6,6 +6,8 @@ permalink: /kb/257/Q257906/
 
 ## Q257906: Unable to Stop the Cluster Server Service
 
+{% raw %}
+
 	Article: Q257906
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/257/Q257906/
 	
 	=============================================================================
 	
+
+{% endraw %}

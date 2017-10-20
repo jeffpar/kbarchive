@@ -6,6 +6,8 @@ permalink: /kb/125/Q125386/
 
 ## Q125386: SFM Files Lose Long Filenames When Backed Up &amp; Restored
 
+{% raw %}
+
 	Article: Q125386
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/125/Q125386/
 	
 	=============================================================================
 	
+
+{% endraw %}

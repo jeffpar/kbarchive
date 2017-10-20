@@ -6,6 +6,8 @@ permalink: /kb/066/Q66508/
 
 ## Q66508: -Aw/-Au Uses Wrong Segment When Passing Pascal Function Return
 
+{% raw %}
+
 	Article: Q66508
 	Product(s): See article
 	Version(s): 6.00 6.00a  | 6.00 6.00a
@@ -65,3 +67,5 @@ permalink: /kb/066/Q66508/
 	   *** 00007c      ff 77 02                push    WORD PTR [bx+2]
 	   *** 00007f      ff 37                   push    WORD PTR [bx]
 	   *** 000081      e8 c0 ff                call    _foobar
+
+{% endraw %}

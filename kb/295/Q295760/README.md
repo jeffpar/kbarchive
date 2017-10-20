@@ -6,6 +6,8 @@ permalink: /kb/295/Q295760/
 
 ## Q295760: CICS LINK &quot;Final Field to Host Is Variably Sized&quot; Does Not Work
 
+{% raw %}
+
 	Article: Q295760
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -94,3 +96,5 @@ permalink: /kb/295/Q295760/
 	
 	=============================================================================
 	
+
+{% endraw %}

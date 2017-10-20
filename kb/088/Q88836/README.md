@@ -6,6 +6,8 @@ permalink: /kb/088/Q88836/
 
 ## Q88836: PC WSPlus: Invalid Password Prevents Changing to Online
 
+{% raw %}
+
 	Article: Q88836
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/088/Q88836/
 	
 	=============================================================================
 	
+
+{% endraw %}

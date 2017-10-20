@@ -6,6 +6,8 @@ permalink: /kb/154/Q154732/
 
 ## Q154732: World Atlas 96: Text in Cosmo's Dialog Box Is Corrupt or Missing
 
+{% raw %}
+
 	Article: Q154732
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -76,3 +78,5 @@ permalink: /kb/154/Q154732/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127885/
 
 ## Q127885: Kids: Distorted AVIs and Transitions
 
+{% raw %}
+
 	Article: Q127885
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -94,3 +96,5 @@ permalink: /kb/127/Q127885/
 	
 	=============================================================================
 	
+
+{% endraw %}

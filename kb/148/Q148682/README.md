@@ -6,6 +6,8 @@ permalink: /kb/148/Q148682/
 
 ## Q148682: Comparison of Upgrade and Non-Upgrade Versions of Windows 95
 
+{% raw %}
+
 	Article: Q148682
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -96,3 +98,5 @@ permalink: /kb/148/Q148682/
 	
 	=============================================================================
 	
+
+{% endraw %}

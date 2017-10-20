@@ -6,6 +6,8 @@ permalink: /kb/259/Q259170/
 
 ## Q259170: Allegiance: Quits or Stops Responding When You Start Game
 
+{% raw %}
+
 	Article: Q259170
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/259/Q259170/
 	
 	=============================================================================
 	
+
+{% endraw %}

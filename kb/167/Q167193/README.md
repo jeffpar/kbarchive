@@ -6,6 +6,8 @@ permalink: /kb/167/Q167193/
 
 ## Q167193: FIX: Buffering Lost when txtbtns Exit Clicked
 
+{% raw %}
+
 	Article: Q167193
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0b 5.0 5.0a
@@ -158,3 +160,5 @@ permalink: /kb/167/Q167193/
 	
 	=============================================================================
 	
+
+{% endraw %}

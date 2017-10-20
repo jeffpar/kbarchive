@@ -6,6 +6,8 @@ permalink: /kb/124/Q124985/
 
 ## Q124985: Bookshelf: Double-clicking Book Title Screen Causes GPF
 
+{% raw %}
+
 	Article: Q124985
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -56,3 +58,5 @@ permalink: /kb/124/Q124985/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114090/
 
 ## Q114090: Can't Use Setup Disks with Dell DDA/DSA Controller
 
+{% raw %}
+
 	Article: Q114090
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -73,3 +75,5 @@ permalink: /kb/114/Q114090/
 	
 	=============================================================================
 	
+
+{% endraw %}

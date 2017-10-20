@@ -6,6 +6,8 @@ permalink: /kb/100/Q100319/
 
 ## Q100319: Err Msg: 530...Home Directory Inaccessible
 
+{% raw %}
+
 	Article: Q100319
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -81,3 +83,5 @@ permalink: /kb/100/Q100319/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156425/
 
 ## Q156425: Importing an LMHOSTS File During Windows NT 4.0 Setup
 
+{% raw %}
+
 	Article: Q156425
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/156/Q156425/
 	
 	=============================================================================
 	
+
+{% endraw %}

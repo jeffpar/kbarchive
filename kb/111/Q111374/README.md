@@ -6,6 +6,8 @@ permalink: /kb/111/Q111374/
 
 ## Q111374: PC Win: Mail Fails on Wollongong TCP/IP and LAN Manager 2.2
 
+{% raw %}
+
 	Article: Q111374
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -86,3 +88,5 @@ permalink: /kb/111/Q111374/
 	
 	=============================================================================
 	
+
+{% endraw %}

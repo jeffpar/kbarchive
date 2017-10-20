@@ -6,6 +6,8 @@ permalink: /kb/279/Q279805/
 
 ## Q279805: XFOR: Incorrect Time Is Displayed in Read Receipt from GroupWise
 
+{% raw %}
+
 	Article: Q279805
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -60,3 +62,5 @@ permalink: /kb/279/Q279805/
 	
 	=============================================================================
 	
+
+{% endraw %}

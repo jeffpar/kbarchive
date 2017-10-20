@@ -6,6 +6,8 @@ permalink: /kb/123/Q123614/
 
 ## Q123614: File Manager Err Msg: Menu File Open Error....
 
+{% raw %}
+
 	Article: Q123614
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/123/Q123614/
 	
 	=============================================================================
 	
+
+{% endraw %}

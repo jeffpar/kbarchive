@@ -6,6 +6,8 @@ permalink: /kb/062/Q62056/
 
 ## Q62056: Description of EM-Management Switches for BASIC PDS 7.00
 
+{% raw %}
+
 	Article: Q62056
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -126,3 +128,5 @@ permalink: /kb/062/Q62056/
 	
 	   * Note: /Es will not cause ISAM statements to be saved and restored
 	     if ISAM is NOT using EM.
+
+{% endraw %}

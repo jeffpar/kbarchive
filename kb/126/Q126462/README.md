@@ -6,6 +6,8 @@ permalink: /kb/126/Q126462/
 
 ## Q126462: Windows NT Setup Err Msg on NEC Express/II: STOP 0x0000000E
 
+{% raw %}
+
 	Article: Q126462
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/126/Q126462/
 	
 	=============================================================================
 	
+
+{% endraw %}

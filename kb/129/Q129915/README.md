@@ -6,6 +6,8 @@ permalink: /kb/129/Q129915/
 
 ## Q129915: Cannot Print Selected Text in WordPad or Paint
 
+{% raw %}
+
 	Article: Q129915
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -42,3 +44,5 @@ permalink: /kb/129/Q129915/
 	
 	=============================================================================
 	
+
+{% endraw %}

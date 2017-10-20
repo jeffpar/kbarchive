@@ -6,6 +6,8 @@ permalink: /kb/174/Q174159/
 
 ## Q174159: DOC: Correction for VB Setup Wizard Code Signing Info
 
+{% raw %}
+
 	Article: Q174159
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -94,3 +96,5 @@ permalink: /kb/174/Q174159/
 	
 	=============================================================================
 	
+
+{% endraw %}

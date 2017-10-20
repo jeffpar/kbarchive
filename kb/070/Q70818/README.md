@@ -6,6 +6,8 @@ permalink: /kb/070/Q70818/
 
 ## Q70818: BUG: No WM_SETFONT to Custom Controls
 
+{% raw %}
+
 	Article: Q70818
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/070/Q70818/
 	
 	=============================================================================
 	
+
+{% endraw %}

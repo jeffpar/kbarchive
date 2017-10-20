@@ -6,6 +6,8 @@ permalink: /kb/139/Q139409/
 
 ## Q139409: SFM Causes STOP 0xA on Multi-Processor DEC Alpha Computers
 
+{% raw %}
+
 	Article: Q139409
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -80,3 +82,5 @@ permalink: /kb/139/Q139409/
 	
 	=============================================================================
 	
+
+{% endraw %}

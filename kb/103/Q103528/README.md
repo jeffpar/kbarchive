@@ -6,6 +6,8 @@ permalink: /kb/103/Q103528/
 
 ## Q103528: Removing SWITCHES=/F/N from the DBLSPACE.INI File
 
+{% raw %}
+
 	Article: Q103528
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -74,3 +76,5 @@ permalink: /kb/103/Q103528/
 	
 	=============================================================================
 	
+
+{% endraw %}

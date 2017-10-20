@@ -6,6 +6,8 @@ permalink: /kb/167/Q167281/
 
 ## Q167281: XADM: Err Msg: Error Encountered Accessing Registry Keys/Values
 
+{% raw %}
+
 	Article: Q167281
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -67,3 +69,5 @@ permalink: /kb/167/Q167281/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196924/
 
 ## Q196924: XADM: Error Message: Extension SMTP Could Not Be Loaded
 
+{% raw %}
+
 	Article: Q196924
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -96,3 +98,5 @@ permalink: /kb/196/Q196924/
 	
 	=============================================================================
 	
+
+{% endraw %}

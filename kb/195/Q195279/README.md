@@ -6,6 +6,8 @@ permalink: /kb/195/Q195279/
 
 ## Q195279: Hitchhiker's Guide to VB &amp; SQL Server, 5th Ed. Corrections
 
+{% raw %}
+
 	Article: Q195279
 	Product(s): Microsoft Press
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/195/Q195279/
 	
 	=============================================================================
 	
+
+{% endraw %}

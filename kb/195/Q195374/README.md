@@ -6,6 +6,8 @@ permalink: /kb/195/Q195374/
 
 ## Q195374: BUG: PLIST Corruption or Crash with Call Attributive Profiling
 
+{% raw %}
+
 	Article: Q195374
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -112,3 +114,5 @@ permalink: /kb/195/Q195374/
 	
 	=============================================================================
 	
+
+{% endraw %}

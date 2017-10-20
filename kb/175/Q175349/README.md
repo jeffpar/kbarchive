@@ -6,6 +6,8 @@ permalink: /kb/175/Q175349/
 
 ## Q175349: Inside the Registry for Windows 95 Comments and Corrections
 
+{% raw %}
+
 	Article: Q175349
 	Product(s): Microsoft Press
 	Version(s): 
@@ -220,3 +222,5 @@ permalink: /kb/175/Q175349/
 	
 	=============================================================================
 	
+
+{% endraw %}

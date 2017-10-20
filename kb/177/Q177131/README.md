@@ -6,6 +6,8 @@ permalink: /kb/177/Q177131/
 
 ## Q177131: SMS: Cannot Remotely Monitor WinNT Client from Win95 NetMon
 
+{% raw %}
+
 	Article: Q177131
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -46,3 +48,5 @@ permalink: /kb/177/Q177131/
 	
 	=============================================================================
 	
+
+{% endraw %}

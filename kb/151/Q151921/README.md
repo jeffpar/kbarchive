@@ -6,6 +6,8 @@ permalink: /kb/151/Q151921/
 
 ## Q151921: PRB: LoadBitmap GPFaults on Compressed Bitmaps in Windows 3.1
 
+{% raw %}
+
 	Article: Q151921
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -71,3 +73,5 @@ permalink: /kb/151/Q151921/
 	
 	=============================================================================
 	
+
+{% endraw %}

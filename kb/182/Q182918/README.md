@@ -6,6 +6,8 @@ permalink: /kb/182/Q182918/
 
 ## Q182918: Account Lockout Event Also Stored in Security Event Log on DC
 
+{% raw %}
+
 	Article: Q182918
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -211,3 +213,5 @@ permalink: /kb/182/Q182918/
 	
 	=============================================================================
 	
+
+{% endraw %}

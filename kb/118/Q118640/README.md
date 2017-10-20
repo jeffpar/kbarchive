@@ -6,6 +6,8 @@ permalink: /kb/118/Q118640/
 
 ## Q118640: Bookshelf 1994: Atlas Gallery List Is Blank
 
+{% raw %}
+
 	Article: Q118640
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1995 edition
@@ -54,3 +56,5 @@ permalink: /kb/118/Q118640/
 	
 	=============================================================================
 	
+
+{% endraw %}

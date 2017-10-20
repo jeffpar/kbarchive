@@ -6,6 +6,8 @@ permalink: /kb/191/Q191314/
 
 ## Q191314: Installing Outlook on the Small Business Server
 
+{% raw %}
+
 	Article: Q191314
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:97; winnt:4.0,4.0a
@@ -209,3 +211,5 @@ permalink: /kb/191/Q191314/
 	
 	=============================================================================
 	
+
+{% endraw %}

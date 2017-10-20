@@ -6,6 +6,8 @@ permalink: /kb/083/Q83913/
 
 ## Q83913: NEC Pinwriter P6 Printer Driver Increases Top Margin
 
+{% raw %}
+
 	Article: Q83913
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/083/Q83913/
 	
 	=============================================================================
 	
+
+{% endraw %}

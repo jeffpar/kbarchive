@@ -6,6 +6,8 @@ permalink: /kb/189/Q189579/
 
 ## Q189579: F11 and F12 Keys Do Not Function in MS-DOS Applications
 
+{% raw %}
+
 	Article: Q189579
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/189/Q189579/
 	
 	=============================================================================
 	
+
+{% endraw %}

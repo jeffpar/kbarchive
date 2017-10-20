@@ -6,6 +6,8 @@ permalink: /kb/162/Q162778/
 
 ## Q162778: WINS May Report Database Corruption w/ More Than 100 Owners
 
+{% raw %}
+
 	Article: Q162778
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/162/Q162778/
 	
 	=============================================================================
 	
+
+{% endraw %}

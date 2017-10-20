@@ -6,6 +6,8 @@ permalink: /kb/158/Q158959/
 
 ## Q158959: Files Installed by DirectX 1.0
 
+{% raw %}
+
 	Article: Q158959
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/158/Q158959/
 	
 	=============================================================================
 	
+
+{% endraw %}

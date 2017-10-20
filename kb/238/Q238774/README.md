@@ -6,6 +6,8 @@ permalink: /kb/238/Q238774/
 
 ## Q238774: PRB: ODBC Driver Manager Error: &quot;Program Type out of Range&quot;
 
+{% raw %}
+
 	Article: Q238774
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.7
@@ -163,3 +165,5 @@ permalink: /kb/238/Q238774/
 	
 	=============================================================================
 	
+
+{% endraw %}

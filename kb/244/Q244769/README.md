@@ -6,6 +6,8 @@ permalink: /kb/244/Q244769/
 
 ## Q244769: After the Gold Rush: Creating a True Profession... Corrections
 
+{% raw %}
+
 	Article: Q244769
 	Product(s): Microsoft Press
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/244/Q244769/
 	
 	=============================================================================
 	
+
+{% endraw %}

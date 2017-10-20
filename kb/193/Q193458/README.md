@@ -6,6 +6,8 @@ permalink: /kb/193/Q193458/
 
 ## Q193458: Err Msg: A Previous Version of USB Supplement Has Been Found...
 
+{% raw %}
+
 	Article: Q193458
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -106,3 +108,5 @@ permalink: /kb/193/Q193458/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146457/
 
 ## Q146457: XCLN: Shortcut Key Does Not Switch Focus
 
+{% raw %}
+
 	Article: Q146457
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -45,3 +47,5 @@ permalink: /kb/146/Q146457/
 	
 	=============================================================================
 	
+
+{% endraw %}

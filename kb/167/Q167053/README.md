@@ -6,6 +6,8 @@ permalink: /kb/167/Q167053/
 
 ## Q167053: INFO: InstallSHIELD Not Supported by Microsoft Tech Support
 
+{% raw %}
+
 	Article: Q167053
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/167/Q167053/
 	
 	=============================================================================
 	
+
+{% endraw %}

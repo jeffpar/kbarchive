@@ -6,6 +6,8 @@ permalink: /kb/259/Q259599/
 
 ## Q259599: SMS: Slow Response When You Link Collections
 
+{% raw %}
+
 	Article: Q259599
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -126,3 +128,5 @@ permalink: /kb/259/Q259599/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184761/
 
 ## Q184761: HOWTO: Automate Internet Explorer 4 to Open a Specific Web Page
 
+{% raw %}
+
 	Article: Q184761
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -97,3 +99,5 @@ permalink: /kb/184/Q184761/
 	
 	=============================================================================
 	
+
+{% endraw %}

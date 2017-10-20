@@ -6,6 +6,8 @@ permalink: /kb/278/Q278861/
 
 ## Q278861: MSN Companion gets constant busy signal
 
+{% raw %}
+
 	Article: Q278861
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/278/Q278861/
 	
 	=============================================================================
 	
+
+{% endraw %}

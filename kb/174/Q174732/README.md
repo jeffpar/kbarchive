@@ -6,6 +6,8 @@ permalink: /kb/174/Q174732/
 
 ## Q174732: XFOR: Changing cc:Mail Import Container Does Not Remove cc:Mail
 
+{% raw %}
+
 	Article: Q174732
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -43,3 +45,5 @@ permalink: /kb/174/Q174732/
 	
 	=============================================================================
 	
+
+{% endraw %}

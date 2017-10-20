@@ -6,6 +6,8 @@ permalink: /kb/169/Q169574/
 
 ## Q169574: PPT: EPS Graphic with Clipping Path Not Supported
 
+{% raw %}
+
 	Article: Q169574
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,4.0a,4.0c,7.0
@@ -72,3 +74,5 @@ permalink: /kb/169/Q169574/
 	
 	=============================================================================
 	
+
+{% endraw %}

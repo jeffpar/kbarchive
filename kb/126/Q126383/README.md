@@ -6,6 +6,8 @@ permalink: /kb/126/Q126383/
 
 ## Q126383: RAS Callback Via ISDN Uses Only One Channel
 
+{% raw %}
+
 	Article: Q126383
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -55,3 +57,5 @@ permalink: /kb/126/Q126383/
 	
 	=============================================================================
 	
+
+{% endraw %}

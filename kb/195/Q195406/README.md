@@ -6,6 +6,8 @@ permalink: /kb/195/Q195406/
 
 ## Q195406: BUG: Using Class With Reserved Custom Property Name Gives Error
 
+{% raw %}
+
 	Article: Q195406
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -225,3 +227,5 @@ permalink: /kb/195/Q195406/
 	
 	=============================================================================
 	
+
+{% endraw %}

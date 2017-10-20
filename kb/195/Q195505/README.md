@@ -6,6 +6,8 @@ permalink: /kb/195/Q195505/
 
 ## Q195505: XADM: How to Recover When the Database Drive Fails
 
+{% raw %}
+
 	Article: Q195505
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/195/Q195505/
 	
 	=============================================================================
 	
+
+{% endraw %}

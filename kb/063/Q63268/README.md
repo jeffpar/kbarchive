@@ -6,6 +6,8 @@ permalink: /kb/063/Q63268/
 
 ## Q63268: BUILDRTM with PROISAM(D) Must Have OBJ and LIB in Export List
 
+{% raw %}
+
 	Article: Q63268
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -52,3 +54,5 @@ permalink: /kb/063/Q63268/
 	For more information about using BUILDRTM.EXE, see Chapter 21,
 	"Building Custom Run-Time Modules," in the "Microsoft BASIC 7.0:
 	Programmer's Guide" for 7.00 and 7.10.
+
+{% endraw %}

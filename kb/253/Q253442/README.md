@@ -6,6 +6,8 @@ permalink: /kb/253/Q253442/
 
 ## Q253442: XADM: Exchange 5.5 SP3 KMS on Windows 2000 Certificate Server
 
+{% raw %}
+
 	Article: Q253442
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; winnt:5.5 SP3
@@ -85,3 +87,5 @@ permalink: /kb/253/Q253442/
 	
 	=============================================================================
 	
+
+{% endraw %}

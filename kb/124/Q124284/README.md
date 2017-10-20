@@ -6,6 +6,8 @@ permalink: /kb/124/Q124284/
 
 ## Q124284: STOP 0x00000026 when Accessing a CD Using an Indirect Path
 
+{% raw %}
+
 	Article: Q124284
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/124/Q124284/
 	
 	=============================================================================
 	
+
+{% endraw %}

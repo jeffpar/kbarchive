@@ -6,6 +6,8 @@ permalink: /kb/249/Q249799/
 
 ## Q249799: Slow Network Performance with Service Pack 4, 5, 6, or 6a
 
+{% raw %}
+
 	Article: Q249799
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4,4.0 SP5,4.0 SP6
@@ -151,3 +153,5 @@ permalink: /kb/249/Q249799/
 	
 	=============================================================================
 	
+
+{% endraw %}

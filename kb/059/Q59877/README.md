@@ -6,6 +6,8 @@ permalink: /kb/059/Q59877/
 
 ## Q59877: Mouse Function 9 and Mouse Driver 7.00
 
+{% raw %}
+
 	Article: Q59877
 	Product(s): See article
 	Version(s): 1.00
@@ -26,3 +28,5 @@ permalink: /kb/059/Q59877/
 	
 	Major Products: First Publisher
 	                Ultravision
+
+{% endraw %}

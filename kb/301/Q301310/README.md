@@ -6,6 +6,8 @@ permalink: /kb/301/Q301310/
 
 ## Q301310: IIS 5 Common Registry Parameters (1 of 2)
 
+{% raw %}
+
 	Article: Q301310
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -318,3 +320,5 @@ permalink: /kb/301/Q301310/
 	
 	=============================================================================
 	
+
+{% endraw %}

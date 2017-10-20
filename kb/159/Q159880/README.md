@@ -6,6 +6,8 @@ permalink: /kb/159/Q159880/
 
 ## Q159880: WD97: Invalid Page Fault Clicking Check Errors
 
+{% raw %}
+
 	Article: Q159880
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/159/Q159880/
 	
 	=============================================================================
 	
+
+{% endraw %}

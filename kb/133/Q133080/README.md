@@ -6,6 +6,8 @@ permalink: /kb/133/Q133080/
 
 ## Q133080: PPT7: Meaning of 24-bit Rendering Options for WMF Files
 
+{% raw %}
+
 	Article: Q133080
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -69,3 +71,5 @@ permalink: /kb/133/Q133080/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141939/
 
 ## Q141939: HOWTO: Create an OLE Server to Implement &quot;Thunking&quot;
 
+{% raw %}
+
 	Article: Q141939
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -186,3 +188,5 @@ permalink: /kb/141/Q141939/
 	
 	=============================================================================
 	
+
+{% endraw %}

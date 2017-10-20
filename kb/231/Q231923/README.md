@@ -6,6 +6,8 @@ permalink: /kb/231/Q231923/
 
 ## Q231923: HOWTO: Distribute the Microsoft Data Engine (MSDE) With the PDW
 
+{% raw %}
+
 	Article: Q231923
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,6.0
@@ -215,3 +217,5 @@ permalink: /kb/231/Q231923/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170890/
 
 ## Q170890: WD97: Macro to Send a Word Document as Text or an Attachment
 
+{% raw %}
+
 	Article: Q170890
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/170/Q170890/
 	
 	=============================================================================
 	
+
+{% endraw %}

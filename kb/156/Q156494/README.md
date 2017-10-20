@@ -6,6 +6,8 @@ permalink: /kb/156/Q156494/
 
 ## Q156494: XADM: Restoring Lost Performance Counters for Exchange
 
+{% raw %}
+
 	Article: Q156494
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -138,3 +140,5 @@ permalink: /kb/156/Q156494/
 	
 	=============================================================================
 	
+
+{% endraw %}

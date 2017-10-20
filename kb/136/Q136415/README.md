@@ -6,6 +6,8 @@ permalink: /kb/136/Q136415/
 
 ## Q136415: Err Msg: SUWIN Caused a General Protection Fault in Module...
 
+{% raw %}
+
 	Article: Q136415
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -52,3 +54,5 @@ permalink: /kb/136/Q136415/
 	
 	=============================================================================
 	
+
+{% endraw %}

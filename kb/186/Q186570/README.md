@@ -6,6 +6,8 @@ permalink: /kb/186/Q186570/
 
 ## Q186570: Terminal Server Setup
 
+{% raw %}
+
 	Article: Q186570
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -98,3 +100,5 @@ permalink: /kb/186/Q186570/
 	
 	=============================================================================
 	
+
+{% endraw %}

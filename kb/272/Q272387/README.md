@@ -6,6 +6,8 @@ permalink: /kb/272/Q272387/
 
 ## Q272387: Unable to Connect to Local LPT Port with NET USE Command, 'Error
 
+{% raw %}
+
 	Article: Q272387
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/272/Q272387/
 	
 	=============================================================================
 	
+
+{% endraw %}

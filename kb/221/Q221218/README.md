@@ -6,6 +6,8 @@ permalink: /kb/221/Q221218/
 
 ## Q221218: SMS: Restrictive WinNT Account Policies Prevent DC Installation
 
+{% raw %}
+
 	Article: Q221218
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -68,3 +70,5 @@ permalink: /kb/221/Q221218/
 	
 	=============================================================================
 	
+
+{% endraw %}

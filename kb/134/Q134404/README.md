@@ -6,6 +6,8 @@ permalink: /kb/134/Q134404/
 
 ## Q134404: NETSTAT.EXE Does Not Show TCP Listen Sockets
 
+{% raw %}
+
 	Article: Q134404
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -52,3 +54,5 @@ permalink: /kb/134/Q134404/
 	
 	=============================================================================
 	
+
+{% endraw %}

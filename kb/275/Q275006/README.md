@@ -6,6 +6,8 @@ permalink: /kb/275/Q275006/
 
 ## Q275006: Combat Flight Simulator 2: Known Video Issues
 
+{% raw %}
+
 	Article: Q275006
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -421,3 +423,5 @@ permalink: /kb/275/Q275006/
 	
 	=============================================================================
 	
+
+{% endraw %}

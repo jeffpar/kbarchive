@@ -6,6 +6,8 @@ permalink: /kb/164/Q164115/
 
 ## Q164115: Play Button Unavailable When CD is Reinserted in CD-ROM Drive
 
+{% raw %}
+
 	Article: Q164115
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/164/Q164115/
 	
 	=============================================================================
 	
+
+{% endraw %}

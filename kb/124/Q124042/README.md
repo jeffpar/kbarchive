@@ -6,6 +6,8 @@ permalink: /kb/124/Q124042/
 
 ## Q124042: PC Adm: Notice 40 During Config, DirSync, Requestor, Import
 
+{% raw %}
+
 	Article: Q124042
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -103,3 +105,5 @@ permalink: /kb/124/Q124042/
 	
 	=============================================================================
 	
+
+{% endraw %}

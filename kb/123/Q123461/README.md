@@ -6,6 +6,8 @@ permalink: /kb/123/Q123461/
 
 ## Q123461: PRB: const char&#42; not same as const CPTR where #typedef char&#42; C
 
+{% raw %}
+
 	Article: Q123461
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/123/Q123461/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264378/
 
 ## Q264378: SMS: Site System Summarizer May Deadlock
 
+{% raw %}
+
 	Article: Q264378
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,6.5 Service Pack 4
@@ -73,3 +75,5 @@ permalink: /kb/264/Q264378/
 	
 	=============================================================================
 	
+
+{% endraw %}

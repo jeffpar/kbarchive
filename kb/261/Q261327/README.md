@@ -6,6 +6,8 @@ permalink: /kb/261/Q261327/
 
 ## Q261327: How to Add an Additional Parser to Network Monitor
 
+{% raw %}
+
 	Article: Q261327
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/261/Q261327/
 	
 	=============================================================================
 	
+
+{% endraw %}

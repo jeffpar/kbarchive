@@ -6,6 +6,8 @@ permalink: /kb/121/Q121926/
 
 ## Q121926: Second CD-ROM Drive Not Detected in Windows 95
 
+{% raw %}
+
 	Article: Q121926
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/121/Q121926/
 	
 	=============================================================================
 	
+
+{% endraw %}

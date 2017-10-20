@@ -6,6 +6,8 @@ permalink: /kb/094/Q94126/
 
 ## Q94126: Using Etherlink II TP Network Card with Synoptics Hubs
 
+{% raw %}
+
 	Article: Q94126
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/094/Q94126/
 	
 	=============================================================================
 	
+
+{% endraw %}

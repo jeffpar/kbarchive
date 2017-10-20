@@ -6,6 +6,8 @@ permalink: /kb/190/Q190835/
 
 ## Q190835: Paper Bin Displays Incorrect Form to Tray Assignment
 
+{% raw %}
+
 	Article: Q190835
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/190/Q190835/
 	
 	=============================================================================
 	
+
+{% endraw %}

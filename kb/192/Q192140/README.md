@@ -6,6 +6,8 @@ permalink: /kb/192/Q192140/
 
 ## Q192140: SMSINST: Runtime I/O Error When Calling a Program
 
+{% raw %}
+
 	Article: Q192140
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/192/Q192140/
 	
 	=============================================================================
 	
+
+{% endraw %}

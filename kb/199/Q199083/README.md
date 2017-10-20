@@ -6,6 +6,8 @@ permalink: /kb/199/Q199083/
 
 ## Q199083: XCLN: Windows 95 Exchange Client's Message Time Stamp is One Hou
 
+{% raw %}
+
 	Article: Q199083
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/199/Q199083/
 	
 	=============================================================================
 	
+
+{% endraw %}

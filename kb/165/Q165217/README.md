@@ -6,6 +6,8 @@ permalink: /kb/165/Q165217/
 
 ## Q165217: PPT: Sample VB Code to Create a Custom Slide Show
 
+{% raw %}
+
 	Article: Q165217
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -185,3 +187,5 @@ permalink: /kb/165/Q165217/
 	
 	=============================================================================
 	
+
+{% endraw %}

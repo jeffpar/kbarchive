@@ -6,6 +6,8 @@ permalink: /kb/320/Q320271/
 
 ## Q320271: Members of the Users Group Can't Install the HIS 2000 Web Client
 
+{% raw %}
+
 	Article: Q320271
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/320/Q320271/
 	
 	=============================================================================
 	
+
+{% endraw %}

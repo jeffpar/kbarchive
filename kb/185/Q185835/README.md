@@ -6,6 +6,8 @@ permalink: /kb/185/Q185835/
 
 ## Q185835: DirectX: Multiple Images on Startup Menu in DirectX-Based Games
 
+{% raw %}
+
 	Article: Q185835
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -151,3 +153,5 @@ permalink: /kb/185/Q185835/
 	
 	=============================================================================
 	
+
+{% endraw %}

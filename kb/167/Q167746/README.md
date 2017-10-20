@@ -6,6 +6,8 @@ permalink: /kb/167/Q167746/
 
 ## Q167746: HOWTO: Arrange Order of List Items within ListBox Control
 
+{% raw %}
+
 	Article: Q167746
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -147,3 +149,5 @@ permalink: /kb/167/Q167746/
 	
 	=============================================================================
 	
+
+{% endraw %}

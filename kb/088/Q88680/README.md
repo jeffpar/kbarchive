@@ -6,6 +6,8 @@ permalink: /kb/088/Q88680/
 
 ## Q88680: DOC: ControlData Structure Not Completely Documented
 
+{% raw %}
+
 	Article: Q88680
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -85,3 +87,5 @@ permalink: /kb/088/Q88680/
 	
 	=============================================================================
 	
+
+{% endraw %}

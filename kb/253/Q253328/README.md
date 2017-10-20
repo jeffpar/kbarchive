@@ -6,6 +6,8 @@ permalink: /kb/253/Q253328/
 
 ## Q253328: Flight Simulator Troubleshooters Available
 
+{% raw %}
+
 	Article: Q253328
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/253/Q253328/
 	
 	=============================================================================
 	
+
+{% endraw %}

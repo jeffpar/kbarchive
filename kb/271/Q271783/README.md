@@ -6,6 +6,8 @@ permalink: /kb/271/Q271783/
 
 ## Q271783: Readiness Review 70-029: Designing and Implementing Databases wi
 
+{% raw %}
+
 	Article: Q271783
 	Product(s): Microsoft Press
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/271/Q271783/
 	
 	=============================================================================
 	
+
+{% endraw %}

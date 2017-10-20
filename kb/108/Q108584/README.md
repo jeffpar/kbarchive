@@ -6,6 +6,8 @@ permalink: /kb/108/Q108584/
 
 ## Q108584: FIX: Handling of Invalid Values in Class Wizard for DDX/DDV
 
+{% raw %}
+
 	Article: Q108584
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0
@@ -99,3 +101,5 @@ permalink: /kb/108/Q108584/
 	
 	=============================================================================
 	
+
+{% endraw %}

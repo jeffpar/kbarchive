@@ -6,6 +6,8 @@ permalink: /kb/031/Q31533/
 
 ## Q31533: MASM 5.10 EXT.DOC: ReadCmd - Returns Next Command from User
 
+{% raw %}
+
 	Article: Q31533
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -31,3 +33,5 @@ permalink: /kb/031/Q31533/
 	 *  returns  Pointer to cmdDesc structure corresponding to next keystroke
 	 */
 	PCMD pascal ReadCmd ();
+
+{% endraw %}

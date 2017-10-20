@@ -6,6 +6,8 @@ permalink: /kb/097/Q97854/
 
 ## Q97854: Encarta: MindMaze Allows Two Players with the Same Name
 
+{% raw %}
+
 	Article: Q97854
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1993 edition,2.0
@@ -70,3 +72,5 @@ permalink: /kb/097/Q97854/
 	
 	=============================================================================
 	
+
+{% endraw %}

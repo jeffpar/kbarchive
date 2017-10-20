@@ -6,6 +6,8 @@ permalink: /kb/214/Q214980/
 
 ## Q214980: SMS: Mouse Not Reported in Hardware Inventory on 16-Bit Clients
 
+{% raw %}
+
 	Article: Q214980
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -41,3 +43,5 @@ permalink: /kb/214/Q214980/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/253/Q253964/
 
 ## Q253964: XWEB: Day or Year Inconsistencies in OWA Calendar View
 
+{% raw %}
+
 	Article: Q253964
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -70,3 +72,5 @@ permalink: /kb/253/Q253964/
 	
 	=============================================================================
 	
+
+{% endraw %}

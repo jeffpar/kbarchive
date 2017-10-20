@@ -6,6 +6,8 @@ permalink: /kb/194/Q194891/
 
 ## Q194891: Virtual Globe 99: Very Small Image of Photograph Is Displayed
 
+{% raw %}
+
 	Article: Q194891
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/194/Q194891/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103213/
 
 ## Q103213: Printing in Visual Basic and C
 
+{% raw %}
+
 	Article: Q103213
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -65,3 +67,5 @@ permalink: /kb/103/Q103213/
 	
 	=============================================================================
 	
+
+{% endraw %}

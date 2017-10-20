@@ -6,6 +6,8 @@ permalink: /kb/102/Q102328/
 
 ## Q102328: HOWTO: Center a Dialog Using the Microsoft Foundation Classes
 
+{% raw %}
+
 	Article: Q102328
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,7.0
@@ -142,3 +144,5 @@ permalink: /kb/102/Q102328/
 	
 	=============================================================================
 	
+
+{% endraw %}

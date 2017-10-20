@@ -6,6 +6,8 @@ permalink: /kb/138/Q138270/
 
 ## Q138270: SNA Server 2.11 Performance Improvements for 3270/LUA Apps
 
+{% raw %}
+
 	Article: Q138270
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -183,3 +185,5 @@ permalink: /kb/138/Q138270/
 	
 	=============================================================================
 	
+
+{% endraw %}

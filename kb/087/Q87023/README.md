@@ -6,6 +6,8 @@ permalink: /kb/087/Q87023/
 
 ## Q87023: SMTP: TCP/IP Stacks Supported by the Mail Gateway to SMTP
 
+{% raw %}
+
 	Article: Q87023
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/087/Q87023/
 	
 	=============================================================================
 	
+
+{% endraw %}

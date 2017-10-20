@@ -6,6 +6,8 @@ permalink: /kb/125/Q125599/
 
 ## Q125599: Err Msg: Cannot Find SMSROUTR.VXD in SYSTEM.INI
 
+{% raw %}
+
 	Article: Q125599
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -43,3 +45,5 @@ permalink: /kb/125/Q125599/
 	
 	=============================================================================
 	
+
+{% endraw %}

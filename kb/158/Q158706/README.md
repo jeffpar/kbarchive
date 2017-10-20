@@ -6,6 +6,8 @@ permalink: /kb/158/Q158706/
 
 ## Q158706: Netmon Performance Counters Support a Maximum of Eight Adapters
 
+{% raw %}
+
 	Article: Q158706
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/158/Q158706/
 	
 	=============================================================================
 	
+
+{% endraw %}

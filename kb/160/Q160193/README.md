@@ -6,6 +6,8 @@ permalink: /kb/160/Q160193/
 
 ## Q160193: Encarta 97 Err Msg: Visual C++ Runtime Error
 
+{% raw %}
+
 	Article: Q160193
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997
@@ -56,3 +58,5 @@ permalink: /kb/160/Q160193/
 	
 	=============================================================================
 	
+
+{% endraw %}

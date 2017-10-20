@@ -6,6 +6,8 @@ permalink: /kb/234/Q234029/
 
 ## Q234029: Err Msg: &quot;Temp Directory Not Accessible&quot; After Applying TSE SP4
 
+{% raw %}
+
 	Article: Q234029
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -95,3 +97,5 @@ permalink: /kb/234/Q234029/
 	
 	=============================================================================
 	
+
+{% endraw %}

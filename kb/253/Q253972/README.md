@@ -6,6 +6,8 @@ permalink: /kb/253/Q253972/
 
 ## Q253972: WD97: German Smart Quotes Incorrect in Doc Saved as 6.0/95
 
+{% raw %}
+
 	Article: Q253972
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/253/Q253972/
 	
 	=============================================================================
 	
+
+{% endraw %}

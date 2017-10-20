@@ -6,6 +6,8 @@ permalink: /kb/130/Q130324/
 
 ## Q130324: PRB: Invalid Foxuser Causes Frequent Win32s Errors
 
+{% raw %}
+
 	Article: Q130324
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/130/Q130324/
 	
 	=============================================================================
 	
+
+{% endraw %}

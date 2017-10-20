@@ -6,6 +6,8 @@ permalink: /kb/177/Q177202/
 
 ## Q177202: Installing WinNT SPs with Compaq's SSD and Insight Mgr
 
+{% raw %}
+
 	Article: Q177202
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:3.5,3.51,4.0
@@ -83,3 +85,5 @@ permalink: /kb/177/Q177202/
 	
 	=============================================================================
 	
+
+{% endraw %}

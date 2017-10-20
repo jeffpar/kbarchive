@@ -6,6 +6,8 @@ permalink: /kb/102/Q102753/
 
 ## Q102753: PC Win: No Notification for IPC-Type Messages
 
+{% raw %}
+
 	Article: Q102753
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -44,3 +46,5 @@ permalink: /kb/102/Q102753/
 	
 	=============================================================================
 	
+
+{% endraw %}

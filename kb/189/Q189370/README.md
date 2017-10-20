@@ -6,6 +6,8 @@ permalink: /kb/189/Q189370/
 
 ## Q189370: PPT7: Files Installed by the PowerPoint 97 to 95 Translator
 
+{% raw %}
+
 	Article: Q189370
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -101,3 +103,5 @@ permalink: /kb/189/Q189370/
 	
 	=============================================================================
 	
+
+{% endraw %}

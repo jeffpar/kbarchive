@@ -6,6 +6,8 @@ permalink: /kb/224/Q224174/
 
 ## Q224174: XADM: Administrator Program Inaccurate When Mailbox Is Over 2 GB
 
+{% raw %}
+
 	Article: Q224174
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -78,3 +80,5 @@ permalink: /kb/224/Q224174/
 	
 	=============================================================================
 	
+
+{% endraw %}

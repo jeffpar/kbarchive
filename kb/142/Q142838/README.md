@@ -6,6 +6,8 @@ permalink: /kb/142/Q142838/
 
 ## Q142838: PRB: DBList BoundText Property Ignored with Table Type
 
+{% raw %}
+
 	Article: Q142838
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/142/Q142838/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240639/
 
 ## Q240639: World Atlas 2000 Err Msg: Unable to Locate Favorites Folder...
 
+{% raw %}
+
 	Article: Q240639
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -91,3 +93,5 @@ permalink: /kb/240/Q240639/
 	
 	=============================================================================
 	
+
+{% endraw %}

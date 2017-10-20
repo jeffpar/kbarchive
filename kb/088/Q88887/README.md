@@ -6,6 +6,8 @@ permalink: /kb/088/Q88887/
 
 ## Q88887: Using the ON ESCAPE Command in FoxBASE+
 
+{% raw %}
+
 	Article: Q88887
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:1.21,2.1
@@ -70,3 +72,5 @@ permalink: /kb/088/Q88887/
 	
 	=============================================================================
 	
+
+{% endraw %}

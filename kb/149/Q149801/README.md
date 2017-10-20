@@ -6,6 +6,8 @@ permalink: /kb/149/Q149801/
 
 ## Q149801: UNBIND RSP Is Not Passed from SNA Server to a Downstream PU
 
+{% raw %}
+
 	Article: Q149801
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -64,3 +66,5 @@ permalink: /kb/149/Q149801/
 	
 	=============================================================================
 	
+
+{% endraw %}

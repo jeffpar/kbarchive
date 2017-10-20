@@ -6,6 +6,8 @@ permalink: /kb/319/Q319023/
 
 ## Q319023: XCON: Cannot Forward Messages Received Through an SAP Connector
 
+{% raw %}
+
 	Article: Q319023
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -109,3 +111,5 @@ permalink: /kb/319/Q319023/
 	
 	=============================================================================
 	
+
+{% endraw %}

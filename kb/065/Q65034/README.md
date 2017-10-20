@@ -6,6 +6,8 @@ permalink: /kb/065/Q65034/
 
 ## Q65034: QBX.EXE &quot;Out of Data Space&quot; for Variable-Length String Array
 
+{% raw %}
+
 	Article: Q65034
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -85,3 +87,5 @@ permalink: /kb/065/Q65034/
 	See Pages 719-720, "Variable Storage and Memory Use," and also Chapter
 	11, "Advanced String Storage," in the "Microsoft BASIC 7.0:
 	Programmer's Guide" for BASIC PDS versions 7.00 and 7.10.
+
+{% endraw %}

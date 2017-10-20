@@ -6,6 +6,8 @@ permalink: /kb/185/Q185898/
 
 ## Q185898: SMS: Scalar Information Is Incorrect When Accessed Through API
 
+{% raw %}
+
 	Article: Q185898
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -47,3 +49,5 @@ permalink: /kb/185/Q185898/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156503/
 
 ## Q156503: BUG: Error When Deleting a Record Using the Apex Grid Control
 
+{% raw %}
+
 	Article: Q156503
 	Product(s): Microsoft C Compiler
 	Version(s): 4.20
@@ -80,3 +82,5 @@ permalink: /kb/156/Q156503/
 	
 	=============================================================================
 	
+
+{% endraw %}

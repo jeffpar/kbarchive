@@ -6,6 +6,8 @@ permalink: /kb/146/Q146589/
 
 ## Q146589: Group By With Multiple Entries Doesn't Repaint Bottom of Grid
 
+{% raw %}
+
 	Article: Q146589
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -43,3 +45,5 @@ permalink: /kb/146/Q146589/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/317/Q317037/
 
 ## Q317037: &quot;Error 1703&quot; Err Msg When You Install Windows NT 4.0 Option Pack
 
+{% raw %}
+
 	Article: Q317037
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -110,3 +112,5 @@ permalink: /kb/317/Q317037/
 	
 	=============================================================================
 	
+
+{% endraw %}

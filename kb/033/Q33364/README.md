@@ -6,6 +6,8 @@ permalink: /kb/033/Q33364/
 
 ## Q33364: Small-Memory Model and Far Routines
 
+{% raw %}
+
 	Article: Q33364
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 | 5.10
@@ -24,3 +26,5 @@ permalink: /kb/033/Q33364/
 	Response:
 	   In order for this to work correctly you need to be sure that the
 	function is declared and defined as a far function (e.g. int far foo()).
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/325/Q325978/
 
 ## Q325978: Train Simulator: Error Message About Graphics Hardware
 
+{% raw %}
+
 	Article: Q325978
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -228,3 +230,5 @@ permalink: /kb/325/Q325978/
 	
 	=============================================================================
 	
+
+{% endraw %}

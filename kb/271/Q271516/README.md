@@ -6,6 +6,8 @@ permalink: /kb/271/Q271516/
 
 ## Q271516: Offline Servers Are Not Removed from the Service Table
 
+{% raw %}
+
 	Article: Q271516
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3
@@ -82,3 +84,5 @@ permalink: /kb/271/Q271516/
 	
 	=============================================================================
 	
+
+{% endraw %}

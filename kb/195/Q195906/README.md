@@ -6,6 +6,8 @@ permalink: /kb/195/Q195906/
 
 ## Q195906: XADM: How To Move A Public Folder To A Server In The Same Site
 
+{% raw %}
+
 	Article: Q195906
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -53,3 +55,5 @@ permalink: /kb/195/Q195906/
 	
 	=============================================================================
 	
+
+{% endraw %}

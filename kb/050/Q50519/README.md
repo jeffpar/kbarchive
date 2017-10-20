@@ -6,6 +6,8 @@ permalink: /kb/050/Q50519/
 
 ## Q50519: Loader Uses Return Value from a DLL's Initialization Routine
 
+{% raw %}
+
 	Article: Q50519
 	Product(s): See article
 	Version(s): 5.10
@@ -39,3 +41,5 @@ permalink: /kb/050/Q50519/
 	Initialization routines are mentioned in Ray Duncan's book, "Advanced
 	OS/2 Programming," in Chapter 19, "Dynamic Link Libraries," Pages
 	459-469.
+
+{% endraw %}

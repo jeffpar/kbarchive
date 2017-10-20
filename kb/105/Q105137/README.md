@@ -6,6 +6,8 @@ permalink: /kb/105/Q105137/
 
 ## Q105137: Explanation of Exporting Functions in Windows
 
+{% raw %}
+
 	Article: Q105137
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -111,3 +113,5 @@ permalink: /kb/105/Q105137/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/028/Q28249/
 
 ## Q28249: How to Derive Inverse (ARC) and Hyperbolic Trig Functions
 
+{% raw %}
+
 	Article: Q28249
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -76,3 +78,5 @@ permalink: /kb/028/Q28249/
 	   (discontinued product)
 	
 	9. Microsoft BASIC Interpreter (BASIC86.EXE) version 5.28 for MS-DOS
+
+{% endraw %}

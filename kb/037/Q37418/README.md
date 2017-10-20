@@ -6,6 +6,8 @@ permalink: /kb/037/Q37418/
 
 ## Q37418: LINK &quot;Cannot Open Response File&quot; When Make EXE File in 4.50
 
+{% raw %}
+
 	Article: Q37418
 	Product(s): See article
 	Version(s): 4.50
@@ -81,3 +83,5 @@ permalink: /kb/037/Q37418/
 	   number of characters long, make it odd, and vice-versa).
 	
 	3. Compile and link your program from the DOS command line.
+
+{% endraw %}

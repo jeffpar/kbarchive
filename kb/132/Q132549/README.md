@@ -6,6 +6,8 @@ permalink: /kb/132/Q132549/
 
 ## Q132549: How to Set the Color and Font of Grid Rows Conditionally
 
+{% raw %}
+
 	Article: Q132549
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -127,3 +129,5 @@ permalink: /kb/132/Q132549/
 	
 	=============================================================================
 	
+
+{% endraw %}

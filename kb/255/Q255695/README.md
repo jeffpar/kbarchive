@@ -6,6 +6,8 @@ permalink: /kb/255/Q255695/
 
 ## Q255695: XCON: Do Not Reroute Incoming SMTP Mail Allows Relay as NDR
 
+{% raw %}
+
 	Article: Q255695
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1,5.5 SP2,5.5 SP3
@@ -90,3 +92,5 @@ permalink: /kb/255/Q255695/
 	
 	=============================================================================
 	
+
+{% endraw %}

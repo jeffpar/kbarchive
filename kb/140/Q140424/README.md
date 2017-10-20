@@ -6,6 +6,8 @@ permalink: /kb/140/Q140424/
 
 ## Q140424: ErrMsg: &quot;Invalid port command&quot; AS400 Client FTP to NT 3.51 SP2
 
+{% raw %}
+
 	Article: Q140424
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -58,3 +60,5 @@ permalink: /kb/140/Q140424/
 	
 	=============================================================================
 	
+
+{% endraw %}

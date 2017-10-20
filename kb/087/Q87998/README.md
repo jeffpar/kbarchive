@@ -6,6 +6,8 @@ permalink: /kb/087/Q87998/
 
 ## Q87998: Cannot Print Lists of Merge Rules, File Types, Groups, etc.
 
+{% raw %}
+
 	Article: Q87998
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -50,3 +52,5 @@ permalink: /kb/087/Q87998/
 	
 	=============================================================================
 	
+
+{% endraw %}

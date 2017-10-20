@@ -6,6 +6,8 @@ permalink: /kb/199/Q199921/
 
 ## Q199921: SMS: Disk Serial Number Inventories as FFFF-FFFF
 
+{% raw %}
+
 	Article: Q199921
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -54,3 +56,5 @@ permalink: /kb/199/Q199921/
 	
 	=============================================================================
 	
+
+{% endraw %}

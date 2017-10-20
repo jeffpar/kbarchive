@@ -6,6 +6,8 @@ permalink: /kb/235/Q235455/
 
 ## Q235455: XCON: Modification in X.400 Blind Copy Implementation
 
+{% raw %}
+
 	Article: Q235455
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -90,3 +92,5 @@ permalink: /kb/235/Q235455/
 	
 	=============================================================================
 	
+
+{% endraw %}

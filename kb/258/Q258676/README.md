@@ -6,6 +6,8 @@ permalink: /kb/258/Q258676/
 
 ## Q258676: PRB: Inconsistent Behavior Using rdoParameter's Value Property
 
+{% raw %}
+
 	Article: Q258676
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/258/Q258676/
 	
 	=============================================================================
 	
+
+{% endraw %}

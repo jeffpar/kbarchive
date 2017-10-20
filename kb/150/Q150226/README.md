@@ -6,6 +6,8 @@ permalink: /kb/150/Q150226/
 
 ## Q150226: BUG: Sheridan Panel Receives Focus &amp; Active Control Loses Focus
 
+{% raw %}
+
 	Article: Q150226
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/150/Q150226/
 	
 	=============================================================================
 	
+
+{% endraw %}

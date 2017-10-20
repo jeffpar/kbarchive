@@ -6,6 +6,8 @@ permalink: /kb/154/Q154298/
 
 ## Q154298: XFOR: Mail Going to IMC or MSMail Stays in Outbox
 
+{% raw %}
+
 	Article: Q154298
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -80,3 +82,5 @@ permalink: /kb/154/Q154298/
 	
 	=============================================================================
 	
+
+{% endraw %}

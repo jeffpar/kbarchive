@@ -6,6 +6,8 @@ permalink: /kb/167/Q167373/
 
 ## Q167373: WD97: Hidden Text Is Ignored w/ Spelling and Grammar Checking
 
+{% raw %}
+
 	Article: Q167373
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -116,3 +118,5 @@ permalink: /kb/167/Q167373/
 	
 	=============================================================================
 	
+
+{% endraw %}

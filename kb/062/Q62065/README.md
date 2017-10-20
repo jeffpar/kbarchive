@@ -6,6 +6,8 @@ permalink: /kb/062/Q62065/
 
 ## Q62065: DPMI Specification Available from Intel
 
+{% raw %}
+
 	Article: Q62065
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -70,3 +72,5 @@ permalink: /kb/062/Q62065/
 	
 	=============================================================================
 	
+
+{% endraw %}

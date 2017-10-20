@@ -6,6 +6,8 @@ permalink: /kb/132/Q132291/
 
 ## Q132291: DOC: AfxRegisterWndClass with WS_&#42; Styles Causes Exception
 
+{% raw %}
+
 	Article: Q132291
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.0a,4.1,4.2,4.2b,5.0,5.0sp1,5.0sp2,5.0sp3,6.0
@@ -74,3 +76,5 @@ permalink: /kb/132/Q132291/
 	
 	=============================================================================
 	
+
+{% endraw %}

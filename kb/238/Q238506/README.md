@@ -6,6 +6,8 @@ permalink: /kb/238/Q238506/
 
 ## Q238506: XADM: Installing Exchange Server Message Transfer Agent MIXER
 
+{% raw %}
+
 	Article: Q238506
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -162,3 +164,5 @@ permalink: /kb/238/Q238506/
 	
 	=============================================================================
 	
+
+{% endraw %}

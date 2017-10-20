@@ -6,6 +6,8 @@ permalink: /kb/132/Q132248/
 
 ## Q132248: SMS Fails To Create Jobs On Non-US SQL Server 4.21a
 
+{% raw %}
+
 	Article: Q132248
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -72,3 +74,5 @@ permalink: /kb/132/Q132248/
 	
 	=============================================================================
 	
+
+{% endraw %}

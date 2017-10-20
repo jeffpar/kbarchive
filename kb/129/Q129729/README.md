@@ -6,6 +6,8 @@ permalink: /kb/129/Q129729/
 
 ## Q129729: Duplicate Computer Names with Multiple Networks Not Supported
 
+{% raw %}
+
 	Article: Q129729
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/129/Q129729/
 	
 	=============================================================================
 	
+
+{% endraw %}

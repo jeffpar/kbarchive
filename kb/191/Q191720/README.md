@@ -6,6 +6,8 @@ permalink: /kb/191/Q191720/
 
 ## Q191720: BUG: Option Button Value Changes When Group is Disabled
 
+{% raw %}
+
 	Article: Q191720
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/191/Q191720/
 	
 	=============================================================================
 	
+
+{% endraw %}

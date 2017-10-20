@@ -6,6 +6,8 @@ permalink: /kb/139/Q139709/
 
 ## Q139709: XCLN: Err Msg: Connection will be closed
 
+{% raw %}
+
 	Article: Q139709
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -46,3 +48,5 @@ permalink: /kb/139/Q139709/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135708/
 
 ## Q135708: BUG: Changing PageOrder in PageFrame Gives Incorrect PageName
 
+{% raw %}
+
 	Article: Q135708
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -78,3 +80,5 @@ permalink: /kb/135/Q135708/
 	
 	=============================================================================
 	
+
+{% endraw %}

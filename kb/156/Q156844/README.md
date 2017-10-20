@@ -6,6 +6,8 @@ permalink: /kb/156/Q156844/
 
 ## Q156844: XCON: Subject Line of Message Is Truncated to 40 Characters
 
+{% raw %}
+
 	Article: Q156844
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -56,3 +58,5 @@ permalink: /kb/156/Q156844/
 	
 	=============================================================================
 	
+
+{% endraw %}

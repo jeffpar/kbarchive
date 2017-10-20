@@ -6,6 +6,8 @@ permalink: /kb/112/Q112332/
 
 ## Q112332: Viewing a Function's Return Value from IDE
 
+{% raw %}
+
 	Article: Q112332
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -127,3 +129,5 @@ permalink: /kb/112/Q112332/
 	
 	=============================================================================
 	
+
+{% endraw %}

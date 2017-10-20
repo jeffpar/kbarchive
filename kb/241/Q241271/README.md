@@ -6,6 +6,8 @@ permalink: /kb/241/Q241271/
 
 ## Q241271: IIS 5.0 Returns 500;100 Error Page with Response.Buffer=False
 
+{% raw %}
+
 	Article: Q241271
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -65,3 +67,5 @@ permalink: /kb/241/Q241271/
 	
 	=============================================================================
 	
+
+{% endraw %}

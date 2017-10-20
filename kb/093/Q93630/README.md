@@ -6,6 +6,8 @@ permalink: /kb/093/Q93630/
 
 ## Q93630: PRB: Paste Link Command Not Available for Microsoft Graph
 
+{% raw %}
+
 	Article: Q93630
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0
@@ -48,3 +50,5 @@ permalink: /kb/093/Q93630/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133282/
 
 ## Q133282: Favorites Not Shared Between Internet Explorer and MS Network
 
+{% raw %}
+
 	Article: Q133282
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -41,3 +43,5 @@ permalink: /kb/133/Q133282/
 	
 	=============================================================================
 	
+
+{% endraw %}

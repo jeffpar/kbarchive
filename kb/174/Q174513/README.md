@@ -6,6 +6,8 @@ permalink: /kb/174/Q174513/
 
 ## Q174513: WD97: Nonbreaking Space Missing Using French Language
 
+{% raw %}
+
 	Article: Q174513
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/174/Q174513/
 	
 	=============================================================================
 	
+
+{% endraw %}

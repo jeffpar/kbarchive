@@ -6,6 +6,8 @@ permalink: /kb/127/Q127051/
 
 ## Q127051: Troubleshooting Problems Using RAS_SENDER with Remote Control
 
+{% raw %}
+
 	Article: Q127051
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -94,3 +96,5 @@ permalink: /kb/127/Q127051/
 	
 	=============================================================================
 	
+
+{% endraw %}

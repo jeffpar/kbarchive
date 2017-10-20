@@ -6,6 +6,8 @@ permalink: /kb/093/Q93264/
 
 ## Q93264: Problems Running Autocad 386 Version 12 in Privileged Mode
 
+{% raw %}
+
 	Article: Q93264
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/093/Q93264/
 	
 	=============================================================================
 	
+
+{% endraw %}

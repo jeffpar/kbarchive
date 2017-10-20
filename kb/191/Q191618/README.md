@@ -6,6 +6,8 @@ permalink: /kb/191/Q191618/
 
 ## Q191618: Urban Assault: Computer Hangs at the End of Movies
 
+{% raw %}
+
 	Article: Q191618
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/191/Q191618/
 	
 	=============================================================================
 	
+
+{% endraw %}

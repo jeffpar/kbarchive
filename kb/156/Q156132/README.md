@@ -6,6 +6,8 @@ permalink: /kb/156/Q156132/
 
 ## Q156132: DOC: Registration Card Reports Wrong Support Policy
 
+{% raw %}
+
 	Article: Q156132
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2
@@ -42,3 +44,5 @@ permalink: /kb/156/Q156132/
 	
 	=============================================================================
 	
+
+{% endraw %}

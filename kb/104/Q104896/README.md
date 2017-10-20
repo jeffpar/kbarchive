@@ -6,6 +6,8 @@ permalink: /kb/104/Q104896/
 
 ## Q104896: FIX: F6100 Reading Maximal Negative Integers
 
+{% raw %}
+
 	Article: Q104896
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -94,3 +96,5 @@ permalink: /kb/104/Q104896/
 	
 	=============================================================================
 	
+
+{% endraw %}

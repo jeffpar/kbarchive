@@ -6,6 +6,8 @@ permalink: /kb/231/Q231508/
 
 ## Q231508: MapPoint 2000: Unable to Import Latitude and Longitude Data
 
+{% raw %}
+
 	Article: Q231508
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/231/Q231508/
 	
 	=============================================================================
 	
+
+{% endraw %}

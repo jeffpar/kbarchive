@@ -6,6 +6,8 @@ permalink: /kb/128/Q128428/
 
 ## Q128428: Err Msg on MIPS computer: &quot;Can't find smssu16.dll&quot;
 
+{% raw %}
+
 	Article: Q128428
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -44,3 +46,5 @@ permalink: /kb/128/Q128428/
 	
 	=============================================================================
 	
+
+{% endraw %}

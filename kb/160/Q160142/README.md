@@ -6,6 +6,8 @@ permalink: /kb/160/Q160142/
 
 ## Q160142: Printer Operators Cannot Create DLC Ports
 
+{% raw %}
+
 	Article: Q160142
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -131,3 +133,5 @@ permalink: /kb/160/Q160142/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99962/
 
 ## Q99962: PC Win: Security=1 Plus Shortcut Key May Hang System
 
+{% raw %}
+
 	Article: Q99962
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -40,3 +42,5 @@ permalink: /kb/099/Q99962/
 	
 	=============================================================================
 	
+
+{% endraw %}

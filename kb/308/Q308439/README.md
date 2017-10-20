@@ -6,6 +6,8 @@ permalink: /kb/308/Q308439/
 
 ## Q308439: IIS Admin Service Fails to Start When the Metabase Is Too Large
 
+{% raw %}
+
 	Article: Q308439
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -137,3 +139,5 @@ permalink: /kb/308/Q308439/
 	
 	=============================================================================
 	
+
+{% endraw %}

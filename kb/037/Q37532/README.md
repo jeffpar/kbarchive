@@ -6,6 +6,8 @@ permalink: /kb/037/Q37532/
 
 ## Q37532: Meanings of Resource Compiler Messages
 
+{% raw %}
+
 	Article: Q37532
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -56,3 +58,5 @@ permalink: /kb/037/Q37532/
 	
 	=============================================================================
 	
+
+{% endraw %}

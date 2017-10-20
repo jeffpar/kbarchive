@@ -6,6 +6,8 @@ permalink: /kb/138/Q138126/
 
 ## Q138126: Event ID: 9 and 7000 if AppleTalk Zone Names Exceed 21 Chars.
 
+{% raw %}
+
 	Article: Q138126
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -57,3 +59,5 @@ permalink: /kb/138/Q138126/
 	
 	=============================================================================
 	
+
+{% endraw %}

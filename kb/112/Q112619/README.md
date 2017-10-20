@@ -6,6 +6,8 @@ permalink: /kb/112/Q112619/
 
 ## Q112619: Microsoft At Work PC Fax Does Not Display a Time/Date Stamp
 
+{% raw %}
+
 	Article: Q112619
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -76,3 +78,5 @@ permalink: /kb/112/Q112619/
 	
 	=============================================================================
 	
+
+{% endraw %}

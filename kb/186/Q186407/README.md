@@ -6,6 +6,8 @@ permalink: /kb/186/Q186407/
 
 ## Q186407: SMS: Access Violation When RAW Files Are Larger Than 48 KB
 
+{% raw %}
+
 	Article: Q186407
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -62,3 +64,5 @@ permalink: /kb/186/Q186407/
 	
 	=============================================================================
 	
+
+{% endraw %}

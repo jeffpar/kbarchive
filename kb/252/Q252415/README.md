@@ -6,6 +6,8 @@ permalink: /kb/252/Q252415/
 
 ## Q252415: Accelerated Remote Control Clients Lose Acceleration with SP1
 
+{% raw %}
+
 	Article: Q252415
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP1
@@ -124,3 +126,5 @@ permalink: /kb/252/Q252415/
 	
 	=============================================================================
 	
+
+{% endraw %}

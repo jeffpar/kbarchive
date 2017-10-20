@@ -6,6 +6,8 @@ permalink: /kb/136/Q136839/
 
 ## Q136839: DOC: Changing Default Icon Gives Wrong Step in Setup Wizard
 
+{% raw %}
+
 	Article: Q136839
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -53,3 +55,5 @@ permalink: /kb/136/Q136839/
 	
 	=============================================================================
 	
+
+{% endraw %}

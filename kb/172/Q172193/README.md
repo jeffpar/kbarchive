@@ -6,6 +6,8 @@ permalink: /kb/172/Q172193/
 
 ## Q172193: INFO: List of VB 4.0 Custom Controls Discontinued in VB 5.0
 
+{% raw %}
+
 	Article: Q172193
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -165,3 +167,5 @@ permalink: /kb/172/Q172193/
 	
 	=============================================================================
 	
+
+{% endraw %}

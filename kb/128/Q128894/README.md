@@ -6,6 +6,8 @@ permalink: /kb/128/Q128894/
 
 ## Q128894: PRB: C2189 and C2857 Errors When AFXDB.H Used for UNICODE
 
+{% raw %}
+
 	Article: Q128894
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -74,3 +76,5 @@ permalink: /kb/128/Q128894/
 	
 	=============================================================================
 	
+
+{% endraw %}

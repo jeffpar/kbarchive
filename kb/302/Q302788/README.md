@@ -6,6 +6,8 @@ permalink: /kb/302/Q302788/
 
 ## Q302788: Setting MSN Explorer As Default E-mail Program May Cause Issues
 
+{% raw %}
+
 	Article: Q302788
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -63,3 +65,5 @@ permalink: /kb/302/Q302788/
 	
 	=============================================================================
 	
+
+{% endraw %}

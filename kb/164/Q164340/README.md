@@ -6,6 +6,8 @@ permalink: /kb/164/Q164340/
 
 ## Q164340: XADM: Importing CSV to Directory Causes GPF in MAD
 
+{% raw %}
+
 	Article: Q164340
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -133,3 +135,5 @@ permalink: /kb/164/Q164340/
 	
 	=============================================================================
 	
+
+{% endraw %}

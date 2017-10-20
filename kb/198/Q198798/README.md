@@ -6,6 +6,8 @@ permalink: /kb/198/Q198798/
 
 ## Q198798: XADM: Troubleshooting the InterOrg Synch Tool
 
+{% raw %}
+
 	Article: Q198798
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -125,3 +127,5 @@ permalink: /kb/198/Q198798/
 	
 	=============================================================================
 	
+
+{% endraw %}

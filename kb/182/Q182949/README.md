@@ -6,6 +6,8 @@ permalink: /kb/182/Q182949/
 
 ## Q182949: BUG: Modal Form Disabled When Launched From ActiveX Control
 
+{% raw %}
+
 	Article: Q182949
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -139,3 +141,5 @@ permalink: /kb/182/Q182949/
 	
 	=============================================================================
 	
+
+{% endraw %}

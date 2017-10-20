@@ -6,6 +6,8 @@ permalink: /kb/135/Q135358/
 
 ## Q135358: WfWG 3.11 Computer Hangs Trying to Access Network Using RAS
 
+{% raw %}
+
 	Article: Q135358
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -61,3 +63,5 @@ permalink: /kb/135/Q135358/
 	
 	=============================================================================
 	
+
+{% endraw %}

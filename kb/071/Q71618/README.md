@@ -6,6 +6,8 @@ permalink: /kb/071/Q71618/
 
 ## Q71618: Windows Drivers for Summagraphics Digitizing Tablets
 
+{% raw %}
+
 	Article: Q71618
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -106,3 +108,5 @@ permalink: /kb/071/Q71618/
 	
 	=============================================================================
 	
+
+{% endraw %}

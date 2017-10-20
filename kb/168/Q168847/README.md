@@ -6,6 +6,8 @@ permalink: /kb/168/Q168847/
 
 ## Q168847: PRB: &quot;DM0025: Error attaching to process&quot; in Windows 95
 
+{% raw %}
+
 	Article: Q168847
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -111,3 +113,5 @@ permalink: /kb/168/Q168847/
 	
 	=============================================================================
 	
+
+{% endraw %}

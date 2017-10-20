@@ -6,6 +6,8 @@ permalink: /kb/196/Q196553/
 
 ## Q196553: WD97: Suppress Endnotes Option Unavailable
 
+{% raw %}
+
 	Article: Q196553
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/196/Q196553/
 	
 	=============================================================================
 	
+
+{% endraw %}

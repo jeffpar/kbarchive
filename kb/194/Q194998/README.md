@@ -6,6 +6,8 @@ permalink: /kb/194/Q194998/
 
 ## Q194998: XCON: Client Cannot Retrieve Message in Parts Using SSL
 
+{% raw %}
+
 	Article: Q194998
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -98,3 +100,5 @@ permalink: /kb/194/Q194998/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171936/
 
 ## Q171936: Configuring Microsoft Exchange for Use with MSN
 
+{% raw %}
+
 	Article: Q171936
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0
@@ -65,3 +67,5 @@ permalink: /kb/171/Q171936/
 	
 	=============================================================================
 	
+
+{% endraw %}

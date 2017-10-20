@@ -6,6 +6,8 @@ permalink: /kb/185/Q185073/
 
 ## Q185073: CardBus Controller Displays Error Code 29 on IBM ThinkPad
 
+{% raw %}
+
 	Article: Q185073
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0,2.1,2.5
@@ -93,3 +95,5 @@ permalink: /kb/185/Q185073/
 	
 	=============================================================================
 	
+
+{% endraw %}

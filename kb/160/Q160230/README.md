@@ -6,6 +6,8 @@ permalink: /kb/160/Q160230/
 
 ## Q160230: FP: User Registration File Not Hidden Automatically
 
+{% raw %}
+
 	Article: Q160230
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97; macintosh:1.0
@@ -92,3 +94,5 @@ permalink: /kb/160/Q160230/
 	
 	=============================================================================
 	
+
+{% endraw %}

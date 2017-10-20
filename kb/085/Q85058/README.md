@@ -6,6 +6,8 @@ permalink: /kb/085/Q85058/
 
 ## Q85058: FFAPI: What Files FFAPI Accesses in the PC Mail Database
 
+{% raw %}
+
 	Article: Q85058
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -198,3 +200,5 @@ permalink: /kb/085/Q85058/
 	
 	=============================================================================
 	
+
+{% endraw %}

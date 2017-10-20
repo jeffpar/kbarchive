@@ -6,6 +6,8 @@ permalink: /kb/222/Q222483/
 
 ## Q222483: SBS: Services Do Not Work After Installing Service Pack 3
 
+{% raw %}
+
 	Article: Q222483
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a
@@ -93,3 +95,5 @@ permalink: /kb/222/Q222483/
 	
 	=============================================================================
 	
+
+{% endraw %}

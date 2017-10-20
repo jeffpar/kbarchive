@@ -6,6 +6,8 @@ permalink: /kb/195/Q195490/
 
 ## Q195490: XADM: Deleted Items not Moved After a Move Mailbox
 
+{% raw %}
+
 	Article: Q195490
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -59,3 +61,5 @@ permalink: /kb/195/Q195490/
 	
 	=============================================================================
 	
+
+{% endraw %}

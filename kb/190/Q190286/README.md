@@ -6,6 +6,8 @@ permalink: /kb/190/Q190286/
 
 ## Q190286: SMS: &quot;Couldn't Connect to SQL Server&quot; Error Reusing Login IDs
 
+{% raw %}
+
 	Article: Q190286
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -65,3 +67,5 @@ permalink: /kb/190/Q190286/
 	
 	=============================================================================
 	
+
+{% endraw %}

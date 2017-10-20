@@ -6,6 +6,8 @@ permalink: /kb/223/Q223103/
 
 ## Q223103: FIX: Memory Leak with Command Button on Japanese Windows 95C
 
+{% raw %}
+
 	Article: Q223103
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -117,3 +119,5 @@ permalink: /kb/223/Q223103/
 	
 	=============================================================================
 	
+
+{% endraw %}

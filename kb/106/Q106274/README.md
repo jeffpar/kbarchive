@@ -6,6 +6,8 @@ permalink: /kb/106/Q106274/
 
 ## Q106274: Certain Network Adapters Can Use DMA Channels 0-3 Only
 
+{% raw %}
+
 	Article: Q106274
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -62,3 +64,5 @@ permalink: /kb/106/Q106274/
 	
 	=============================================================================
 	
+
+{% endraw %}

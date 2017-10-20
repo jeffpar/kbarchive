@@ -6,6 +6,8 @@ permalink: /kb/129/Q129945/
 
 ## Q129945: PRB: hCtl May Be Invalidated by Visual Basic
 
+{% raw %}
+
 	Article: Q129945
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -76,3 +78,5 @@ permalink: /kb/129/Q129945/
 	
 	=============================================================================
 	
+
+{% endraw %}

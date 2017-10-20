@@ -6,6 +6,8 @@ permalink: /kb/143/Q143154/
 
 ## Q143154: Indicate Expandable Branches In File Manager Causes Delay
 
+{% raw %}
+
 	Article: Q143154
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -49,3 +51,5 @@ permalink: /kb/143/Q143154/
 	
 	=============================================================================
 	
+
+{% endraw %}

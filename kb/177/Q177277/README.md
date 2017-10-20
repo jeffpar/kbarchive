@@ -6,6 +6,8 @@ permalink: /kb/177/Q177277/
 
 ## Q177277: How to Share a Network Printer to Novell and Microsoft Clients
 
+{% raw %}
+
 	Article: Q177277
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -79,3 +81,5 @@ permalink: /kb/177/Q177277/
 	
 	=============================================================================
 	
+
+{% endraw %}

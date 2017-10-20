@@ -6,6 +6,8 @@ permalink: /kb/138/Q138935/
 
 ## Q138935: Using Socket Handle with Writefile() API Causes STOP Message
 
+{% raw %}
+
 	Article: Q138935
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/138/Q138935/
 	
 	=============================================================================
 	
+
+{% endraw %}

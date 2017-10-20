@@ -6,6 +6,8 @@ permalink: /kb/132/Q132922/
 
 ## Q132922: INFO: Sharing SourceSafe Files
 
+{% raw %}
+
 	Article: Q132922
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.10
@@ -108,3 +110,5 @@ permalink: /kb/132/Q132922/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199235/
 
 ## Q199235: SMS: NetWare TCP/IP support in SMS 2.0
 
+{% raw %}
+
 	Article: Q199235
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -46,3 +48,5 @@ permalink: /kb/199/Q199235/
 	
 	=============================================================================
 	
+
+{% endraw %}

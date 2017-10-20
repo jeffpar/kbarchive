@@ -6,6 +6,8 @@ permalink: /kb/143/Q143195/
 
 ## Q143195: Error Msg: &quot;Can Not Install File...&quot; During IIS Setup
 
+{% raw %}
+
 	Article: Q143195
 	Product(s): Internet Information Server
 	Version(s): 1.00
@@ -59,3 +61,5 @@ permalink: /kb/143/Q143195/
 	
 	=============================================================================
 	
+
+{% endraw %}

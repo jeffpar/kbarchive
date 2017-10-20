@@ -6,6 +6,8 @@ permalink: /kb/063/Q63915/
 
 ## Q63915: Tandy 2500 XL ROM DOS Needs Configuration Setup
 
+{% raw %}
+
 	Article: Q63915
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -40,3 +42,5 @@ permalink: /kb/063/Q63915/
 	
 	=============================================================================
 	
+
+{% endraw %}

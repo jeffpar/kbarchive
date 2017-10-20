@@ -6,6 +6,8 @@ permalink: /kb/175/Q175410/
 
 ## Q175410: XFOR: IMS/IMC Will not Dial an ISP as Specified
 
+{% raw %}
+
 	Article: Q175410
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -114,3 +116,5 @@ permalink: /kb/175/Q175410/
 	
 	=============================================================================
 	
+
+{% endraw %}

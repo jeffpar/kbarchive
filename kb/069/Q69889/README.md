@@ -6,6 +6,8 @@ permalink: /kb/069/Q69889/
 
 ## Q69889: Sources of Information Regarding Windows DDE
 
+{% raw %}
+
 	Article: Q69889
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -125,3 +127,5 @@ permalink: /kb/069/Q69889/
 	
 	=============================================================================
 	
+
+{% endraw %}

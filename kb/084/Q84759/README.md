@@ -6,6 +6,8 @@ permalink: /kb/084/Q84759/
 
 ## Q84759: Windows 3.1: File Manager Does Not Update Floppy Disk Window
 
+{% raw %}
+
 	Article: Q84759
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/084/Q84759/
 	
 	=============================================================================
 	
+
+{% endraw %}

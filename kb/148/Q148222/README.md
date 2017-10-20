@@ -6,6 +6,8 @@ permalink: /kb/148/Q148222/
 
 ## Q148222: HOWTO: Update Property Values in a Property Page
 
+{% raw %}
+
 	Article: Q148222
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,5.0,6.0
@@ -56,14 +58,14 @@ permalink: /kb/148/Q148222/
 	     // Dispatch and event IDs
 	     public:
 	            enum {
-	            //{ {AFX_DISP_ID(CCirc3Ctrl)
+	            //{{AFX_DISP_ID(CCirc3Ctrl)
 	            dispidCircleShape = 2L,
 	            dispidCircleOffset = 3L,
 	            dispidFlashColor = 1L,
 	            dispidNote = 4L,
 	            eventidClickIn = 1L,
 	            eventidClickOut = 2L,
-	            //} }AFX_DISP_ID
+	            //}}AFX_DISP_ID
 	            };
 	
 	The following sample code shows how to modify the Circ3 sample to synchronize the
@@ -112,3 +114,5 @@ permalink: /kb/148/Q148222/
 	
 	=============================================================================
 	
+
+{% endraw %}

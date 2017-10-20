@@ -6,6 +6,8 @@ permalink: /kb/085/Q85603/
 
 ## Q85603: FAX: Retry Mechanism the Gateway Responds To
 
+{% raw %}
+
 	Article: Q85603
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -40,3 +42,5 @@ permalink: /kb/085/Q85603/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75926/
 
 ## Q75926: Installing Microsoft Entertainment Pack for Windows
 
+{% raw %}
+
 	Article: Q75926
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -75,3 +77,5 @@ permalink: /kb/075/Q75926/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150429/
 
 ## Q150429: Macintosh Bookshelf 96-97: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q150429
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -51,3 +53,5 @@ permalink: /kb/150/Q150429/
 	
 	=============================================================================
 	
+
+{% endraw %}

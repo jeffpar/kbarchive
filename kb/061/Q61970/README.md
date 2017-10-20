@@ -6,6 +6,8 @@ permalink: /kb/061/Q61970/
 
 ## Q61970: CodeView 3.00 Fades with Monochrome VGA
 
+{% raw %}
+
 	Article: Q61970
 	Product(s): See article
 	Version(s): 3.00   | 3.00
@@ -42,3 +44,5 @@ permalink: /kb/061/Q61970/
 	   BIOS.
 	
 	4. If the video BIOS is not replaceable, replace the card.
+
+{% endraw %}

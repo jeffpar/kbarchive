@@ -6,6 +6,8 @@ permalink: /kb/190/Q190442/
 
 ## Q190442: XADM: Error 0xc0020422 Installing Service Pack
 
+{% raw %}
+
 	Article: Q190442
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -54,3 +56,5 @@ permalink: /kb/190/Q190442/
 	
 	=============================================================================
 	
+
+{% endraw %}

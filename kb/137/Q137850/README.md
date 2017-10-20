@@ -6,6 +6,8 @@ permalink: /kb/137/Q137850/
 
 ## Q137850: Using IPX/SPX Support Driver with Microsoft Network Client 3.0
 
+{% raw %}
+
 	Article: Q137850
 	Product(s): Microsoft Windows NT
 	Version(s): 3.00
@@ -48,3 +50,5 @@ permalink: /kb/137/Q137850/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103912/
 
 ## Q103912: PC Win: Return Receipt Won't Print Color on IBM Color Printer
 
+{% raw %}
+
 	Article: Q103912
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.1,3.2
@@ -42,3 +44,5 @@ permalink: /kb/103/Q103912/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162961/
 
 ## Q162961: ODE97: Run-Time Application Cannot Find System.mdw After Setup
 
+{% raw %}
+
 	Article: Q162961
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -257,3 +259,5 @@ permalink: /kb/162/Q162961/
 	
 	=============================================================================
 	
+
+{% endraw %}

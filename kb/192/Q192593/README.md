@@ -6,6 +6,8 @@ permalink: /kb/192/Q192593/
 
 ## Q192593: XFOR: Attachment File Name in 8.3 Format in cc:Mail User Inbox
 
+{% raw %}
+
 	Article: Q192593
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -112,3 +114,5 @@ permalink: /kb/192/Q192593/
 	
 	=============================================================================
 	
+
+{% endraw %}

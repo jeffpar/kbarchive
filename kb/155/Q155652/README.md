@@ -6,6 +6,8 @@ permalink: /kb/155/Q155652/
 
 ## Q155652: Monster Truck Madness: Joystick and Controller Issues
 
+{% raw %}
+
 	Article: Q155652
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -83,3 +85,5 @@ permalink: /kb/155/Q155652/
 	
 	=============================================================================
 	
+
+{% endraw %}

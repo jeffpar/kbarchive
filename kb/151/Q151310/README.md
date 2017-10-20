@@ -6,6 +6,8 @@ permalink: /kb/151/Q151310/
 
 ## Q151310: Mastering Visual C++: Testing CD-ROM Drive for File Access
 
+{% raw %}
+
 	Article: Q151310
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0,1.0a
@@ -106,3 +108,5 @@ permalink: /kb/151/Q151310/
 	
 	=============================================================================
 	
+
+{% endraw %}

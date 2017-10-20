@@ -6,6 +6,8 @@ permalink: /kb/095/Q95783/
 
 ## Q95783: Compatibility Issues for Microsoft Windows Versions 3.x
 
+{% raw %}
+
 	Article: Q95783
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -188,3 +190,5 @@ permalink: /kb/095/Q95783/
 	
 	=============================================================================
 	
+
+{% endraw %}

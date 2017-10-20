@@ -6,6 +6,8 @@ permalink: /kb/148/Q148363/
 
 ## Q148363: PC Gen: Dir-Sync Files by Version
 
+{% raw %}
+
 	Article: Q148363
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0; WINDOWS:3.0,3.2,3.2a,3.5; :1.0b,3.2,3.5
@@ -177,3 +179,5 @@ permalink: /kb/148/Q148363/
 	
 	=============================================================================
 	
+
+{% endraw %}

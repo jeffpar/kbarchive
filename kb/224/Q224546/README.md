@@ -6,6 +6,8 @@ permalink: /kb/224/Q224546/
 
 ## Q224546: STOP 0xA in Ndis.sys or Netbt.sys on Compaq Proliant
 
+{% raw %}
+
 	Article: Q224546
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/224/Q224546/
 	
 	=============================================================================
 	
+
+{% endraw %}

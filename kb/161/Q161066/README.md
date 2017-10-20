@@ -6,6 +6,8 @@ permalink: /kb/161/Q161066/
 
 ## Q161066: Permissions on WWW Default File Creates Access Denied Error Msg.
 
+{% raw %}
+
 	Article: Q161066
 	Product(s): Internet Information Server
 	Version(s): Winnt:1.0
@@ -61,3 +63,5 @@ permalink: /kb/161/Q161066/
 	
 	=============================================================================
 	
+
+{% endraw %}

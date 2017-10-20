@@ -6,6 +6,8 @@ permalink: /kb/155/Q155450/
 
 ## Q155450: Windows NT 3.51 Resource Kit Utilities Do not Run on 4.0
 
+{% raw %}
+
 	Article: Q155450
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -73,3 +75,5 @@ permalink: /kb/155/Q155450/
 	
 	=============================================================================
 	
+
+{% endraw %}

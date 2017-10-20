@@ -6,6 +6,8 @@ permalink: /kb/177/Q177450/
 
 ## Q177450: WD97: Cannot Edit Graphic After Choosing Undo Picture
 
+{% raw %}
+
 	Article: Q177450
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -104,3 +106,5 @@ permalink: /kb/177/Q177450/
 	
 	=============================================================================
 	
+
+{% endraw %}

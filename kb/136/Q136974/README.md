@@ -6,6 +6,8 @@ permalink: /kb/136/Q136974/
 
 ## Q136974: PPT7: Error Opening Earlier Version Presentation
 
+{% raw %}
+
 	Article: Q136974
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 7.0
@@ -123,3 +125,5 @@ permalink: /kb/136/Q136974/
 	
 	=============================================================================
 	
+
+{% endraw %}

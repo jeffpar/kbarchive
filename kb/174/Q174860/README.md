@@ -6,6 +6,8 @@ permalink: /kb/174/Q174860/
 
 ## Q174860: No Sound in Windows After Installing Close Combat
 
+{% raw %}
+
 	Article: Q174860
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/174/Q174860/
 	
 	=============================================================================
 	
+
+{% endraw %}

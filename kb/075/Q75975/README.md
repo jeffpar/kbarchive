@@ -6,6 +6,8 @@ permalink: /kb/075/Q75975/
 
 ## Q75975: DOC: WM_RENDERFORMAT Documentation Incomplete
 
+{% raw %}
+
 	Article: Q75975
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -56,3 +58,5 @@ permalink: /kb/075/Q75975/
 	
 	=============================================================================
 	
+
+{% endraw %}

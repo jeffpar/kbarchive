@@ -6,6 +6,8 @@ permalink: /kb/155/Q155916/
 
 ## Q155916: XCLN: Event ID's 1047 and 1038 from the Free/Busy Connector
 
+{% raw %}
+
 	Article: Q155916
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/155/Q155916/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131379/
 
 ## Q131379: XCLN: Cannot Drag Directories into Messages
 
+{% raw %}
+
 	Article: Q131379
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -49,3 +51,5 @@ permalink: /kb/131/Q131379/
 	
 	=============================================================================
 	
+
+{% endraw %}

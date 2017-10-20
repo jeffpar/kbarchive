@@ -6,6 +6,8 @@ permalink: /kb/168/Q168380/
 
 ## Q168380: BUG: Incorrect Evaluation of Static Member Functions in Debugge
 
+{% raw %}
+
 	Article: Q168380
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/168/Q168380/
 	
 	=============================================================================
 	
+
+{% endraw %}

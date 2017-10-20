@@ -6,6 +6,8 @@ permalink: /kb/043/Q43698/
 
 ## Q43698: &quot;COMMON in Quick Library Too Small&quot; -- Use NAMED COMMON
 
+{% raw %}
+
 	Article: Q43698
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -44,3 +46,5 @@ permalink: /kb/043/Q43698/
 	SUB Test
 	PRINT a%, b%
 	END SUB
+
+{% endraw %}

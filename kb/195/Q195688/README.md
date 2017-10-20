@@ -6,6 +6,8 @@ permalink: /kb/195/Q195688/
 
 ## Q195688: WD97: Accented or Extended Characters Lost in Mail Merge
 
+{% raw %}
+
 	Article: Q195688
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -134,3 +136,5 @@ permalink: /kb/195/Q195688/
 	
 	=============================================================================
 	
+
+{% endraw %}

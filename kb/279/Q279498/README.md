@@ -6,6 +6,8 @@ permalink: /kb/279/Q279498/
 
 ## Q279498: SMS Sender Reschedules Send Request with No Instruction File
 
+{% raw %}
+
 	Article: Q279498
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -65,3 +67,5 @@ permalink: /kb/279/Q279498/
 	
 	=============================================================================
 	
+
+{% endraw %}

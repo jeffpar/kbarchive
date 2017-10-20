@@ -6,6 +6,8 @@ permalink: /kb/165/Q165087/
 
 ## Q165087: &quot;Change&quot; Keystroke on Server Configuration Dialog Box Is Missing
 
+{% raw %}
+
 	Article: Q165087
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/165/Q165087/
 	
 	=============================================================================
 	
+
+{% endraw %}

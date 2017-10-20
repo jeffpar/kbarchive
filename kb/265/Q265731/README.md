@@ -6,6 +6,8 @@ permalink: /kb/265/Q265731/
 
 ## Q265731: HOWTO: Automate Excel 2000 Subtotals Function in Visual FoxPro
 
+{% raw %}
+
 	Article: Q265731
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2000,6.0
@@ -131,3 +133,5 @@ permalink: /kb/265/Q265731/
 	
 	=============================================================================
 	
+
+{% endraw %}

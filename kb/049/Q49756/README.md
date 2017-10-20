@@ -6,6 +6,8 @@ permalink: /kb/049/Q49756/
 
 ## Q49756: Expressions in Switch Block Must Be Integral
 
+{% raw %}
+
 	Article: Q49756
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00
@@ -42,3 +44,5 @@ permalink: /kb/049/Q49756/
 	            statement
 	            break ;
 	  }
+
+{% endraw %}

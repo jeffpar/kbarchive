@@ -6,6 +6,8 @@ permalink: /kb/121/Q121735/
 
 ## Q121735: PC Ext: UNINIT Status Message on External
 
+{% raw %}
+
 	Article: Q121735
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -74,3 +76,5 @@ permalink: /kb/121/Q121735/
 	
 	=============================================================================
 	
+
+{% endraw %}

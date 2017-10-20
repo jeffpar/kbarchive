@@ -6,6 +6,8 @@ permalink: /kb/153/Q153248/
 
 ## Q153248: WinWord 2.0c GPF When Opening File Using Remote Control
 
+{% raw %}
+
 	Article: Q153248
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -47,3 +49,5 @@ permalink: /kb/153/Q153248/
 	
 	=============================================================================
 	
+
+{% endraw %}

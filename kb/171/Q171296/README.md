@@ -6,6 +6,8 @@ permalink: /kb/171/Q171296/
 
 ## Q171296: Description of the Undo Command in Windows Explorer
 
+{% raw %}
+
 	Article: Q171296
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -54,3 +56,5 @@ permalink: /kb/171/Q171296/
 	
 	=============================================================================
 	
+
+{% endraw %}

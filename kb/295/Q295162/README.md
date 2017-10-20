@@ -6,6 +6,8 @@ permalink: /kb/295/Q295162/
 
 ## Q295162: System Errors When You Open Services from Administrative Tools
 
+{% raw %}
+
 	Article: Q295162
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -113,3 +115,5 @@ permalink: /kb/295/Q295162/
 	
 	=============================================================================
 	
+
+{% endraw %}

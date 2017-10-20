@@ -6,6 +6,8 @@ permalink: /kb/177/Q177611/
 
 ## Q177611: NWConv Incorrectly Measures Disk Space Larger Than 4 GB
 
+{% raw %}
+
 	Article: Q177611
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/177/Q177611/
 	
 	=============================================================================
 	
+
+{% endraw %}

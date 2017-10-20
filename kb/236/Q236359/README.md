@@ -6,6 +6,8 @@ permalink: /kb/236/Q236359/
 
 ## Q236359: Denial of Service Attack Using Unprotected IOCTL Function Call
 
+{% raw %}
+
 	Article: Q236359
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -130,3 +132,5 @@ permalink: /kb/236/Q236359/
 	
 	=============================================================================
 	
+
+{% endraw %}

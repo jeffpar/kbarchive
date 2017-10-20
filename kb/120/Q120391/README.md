@@ -6,6 +6,8 @@ permalink: /kb/120/Q120391/
 
 ## Q120391: Err Msg Sharing ClipBook: ClipBook Viewer Cannot Currently...
 
+{% raw %}
+
 	Article: Q120391
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -52,3 +54,5 @@ permalink: /kb/120/Q120391/
 	
 	=============================================================================
 	
+
+{% endraw %}

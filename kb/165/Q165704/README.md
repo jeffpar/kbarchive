@@ -6,6 +6,8 @@ permalink: /kb/165/Q165704/
 
 ## Q165704: Snanmvt.exe Access Violation in SNADMOD!sbpibhrl
 
+{% raw %}
+
 	Article: Q165704
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0
@@ -111,3 +113,5 @@ permalink: /kb/165/Q165704/
 	
 	=============================================================================
 	
+
+{% endraw %}

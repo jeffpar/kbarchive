@@ -6,6 +6,8 @@ permalink: /kb/197/Q197195/
 
 ## Q197195: Schedule+ Four-Digit Year Entries Require All Four Digits
 
+{% raw %}
+
 	Article: Q197195
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.0a
@@ -74,3 +76,5 @@ permalink: /kb/197/Q197195/
 	
 	=============================================================================
 	
+
+{% endraw %}

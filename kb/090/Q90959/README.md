@@ -6,6 +6,8 @@ permalink: /kb/090/Q90959/
 
 ## Q90959: INFO: Using INDEX ON &lt;Tag&gt; UNIQUE to Create Unique Index
 
+{% raw %}
+
 	Article: Q90959
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:1.0,1.01,1.02,2.0,2.1,2.5,2.5a; WINDOWS:2.5,2.5a,5.0,6.0
@@ -52,3 +54,5 @@ permalink: /kb/090/Q90959/
 	
 	=============================================================================
 	
+
+{% endraw %}

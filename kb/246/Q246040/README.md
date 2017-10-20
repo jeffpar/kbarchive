@@ -6,6 +6,8 @@ permalink: /kb/246/Q246040/
 
 ## Q246040: SMS: How to Configure the Client Verify Cycle
 
+{% raw %}
+
 	Article: Q246040
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP1,2.0 SP2,2.0 SP3
@@ -76,3 +78,5 @@ permalink: /kb/246/Q246040/
 	
 	=============================================================================
 	
+
+{% endraw %}

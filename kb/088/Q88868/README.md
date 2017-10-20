@@ -6,6 +6,8 @@ permalink: /kb/088/Q88868/
 
 ## Q88868: Cannot Print Mixed Orientations on Same Page in Duplex Mode
 
+{% raw %}
+
 	Article: Q88868
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:2.0,2.0a,2.0a-CD,2.0b,2.0c,3.1,3.11,6.0,6.0a,6.0c,7.0,7.0a,95,97
@@ -87,3 +89,5 @@ permalink: /kb/088/Q88868/
 	
 	=============================================================================
 	
+
+{% endraw %}

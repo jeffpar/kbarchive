@@ -6,6 +6,8 @@ permalink: /kb/174/Q174967/
 
 ## Q174967: PRB: DoDefault() in Command Window Stops Visual FoxPro
 
+{% raw %}
+
 	Article: Q174967
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a
@@ -73,3 +75,5 @@ permalink: /kb/174/Q174967/
 	
 	=============================================================================
 	
+
+{% endraw %}

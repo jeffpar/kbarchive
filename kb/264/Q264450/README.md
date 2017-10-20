@@ -6,6 +6,8 @@ permalink: /kb/264/Q264450/
 
 ## Q264450: Reduced Working Set Size After Installing Windows NT SP6a
 
+{% raw %}
+
 	Article: Q264450
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6,4.0 SP6a
@@ -140,3 +142,5 @@ permalink: /kb/264/Q264450/
 	
 	=============================================================================
 	
+
+{% endraw %}

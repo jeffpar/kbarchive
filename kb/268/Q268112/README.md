@@ -6,6 +6,8 @@ permalink: /kb/268/Q268112/
 
 ## Q268112: Streets and Trips 2001: How to Clear the Find List
 
+{% raw %}
+
 	Article: Q268112
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/268/Q268112/
 	
 	=============================================================================
 	
+
+{% endraw %}

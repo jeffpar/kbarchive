@@ -6,6 +6,8 @@ permalink: /kb/181/Q181347/
 
 ## Q181347: Configuring RRAS Filters to Permit a One-Way Ping
 
+{% raw %}
+
 	Article: Q181347
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/181/Q181347/
 	
 	=============================================================================
 	
+
+{% endraw %}

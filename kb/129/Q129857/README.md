@@ -6,6 +6,8 @@ permalink: /kb/129/Q129857/
 
 ## Q129857: When to Use the New 3.0 DAO TypeLib in Visual Basic
 
+{% raw %}
+
 	Article: Q129857
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -97,3 +99,5 @@ permalink: /kb/129/Q129857/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173760/
 
 ## Q173760: XADM: User's GAL Displayed Differently Based on Search Control
 
+{% raw %}
+
 	Article: Q173760
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -48,3 +50,5 @@ permalink: /kb/173/Q173760/
 	
 	=============================================================================
 	
+
+{% endraw %}

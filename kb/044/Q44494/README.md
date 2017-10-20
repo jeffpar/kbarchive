@@ -6,6 +6,8 @@ permalink: /kb/044/Q44494/
 
 ## Q44494: QuickBASIC 4.50 Arrays Can Have 60 Elements, Not Just 8
 
+{% raw %}
+
 	Article: Q44494
 	Product(s): See article
 	Version(s): 4.50
@@ -31,3 +33,5 @@ permalink: /kb/044/Q44494/
 	7.0: Programmer's Guide" for Microsoft BASIC PDS Version 7.00 and in
 	the Microsoft Advisor on-line Help system of the QBX.EXE environment
 	in Microsoft BASIC PDS 7.00.
+
+{% endraw %}

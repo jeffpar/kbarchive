@@ -6,6 +6,8 @@ permalink: /kb/175/Q175687/
 
 ## Q175687: Win32k.sys Causes STOP 0x0000001e and 0x0000000a on SMP
 
+{% raw %}
+
 	Article: Q175687
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/175/Q175687/
 	
 	=============================================================================
 	
+
+{% endraw %}

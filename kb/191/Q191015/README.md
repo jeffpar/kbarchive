@@ -6,6 +6,8 @@ permalink: /kb/191/Q191015/
 
 ## Q191015: Dirsync Administrator Does Not Receive Dirsync Messages
 
+{% raw %}
+
 	Article: Q191015
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.0,3.2,3.5; winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/191/Q191015/
 	
 	=============================================================================
 	
+
+{% endraw %}

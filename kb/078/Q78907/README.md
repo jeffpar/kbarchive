@@ -6,6 +6,8 @@ permalink: /kb/078/Q78907/
 
 ## Q78907: Windows May Not Print with Norton Desktop
 
+{% raw %}
+
 	Article: Q78907
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -48,3 +50,5 @@ permalink: /kb/078/Q78907/
 	
 	=============================================================================
 	
+
+{% endraw %}

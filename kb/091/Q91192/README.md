@@ -6,6 +6,8 @@ permalink: /kb/091/Q91192/
 
 ## Q91192: HP IIIsi Printer Setup Creates GP Fault on 286 with Low Memory
 
+{% raw %}
+
 	Article: Q91192
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/091/Q91192/
 	
 	=============================================================================
 	
+
+{% endraw %}

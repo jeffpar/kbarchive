@@ -6,6 +6,8 @@ permalink: /kb/248/Q248468/
 
 ## Q248468: Installing Microsoft SNA Server Data Providers for TCP/IP Only
 
+{% raw %}
+
 	Article: Q248468
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3
@@ -92,3 +94,5 @@ permalink: /kb/248/Q248468/
 	
 	=============================================================================
 	
+
+{% endraw %}

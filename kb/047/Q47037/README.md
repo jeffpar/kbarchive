@@ -6,6 +6,8 @@ permalink: /kb/047/Q47037/
 
 ## Q47037: Using _pgmptr to Get the Full Path of the Executing Program
 
+{% raw %}
+
 	Article: Q47037
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -53,3 +55,5 @@ permalink: /kb/047/Q47037/
 	invoke the program. Therefore, in OS/2 protected mode, using _pgmptr
 	is the only way to easily access the executing program's full pathname
 	string.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149863/
 
 ## Q149863: PRB: Long Filenames Lost when Project is Loaded by Association
 
+{% raw %}
+
 	Article: Q149863
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/149/Q149863/
 	
 	=============================================================================
 	
+
+{% endraw %}

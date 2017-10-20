@@ -6,6 +6,8 @@ permalink: /kb/081/Q81712/
 
 ## Q81712: QMS Printer Emulation and Windows
 
+{% raw %}
+
 	Article: Q81712
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1
@@ -87,3 +89,5 @@ permalink: /kb/081/Q81712/
 	
 	=============================================================================
 	
+
+{% endraw %}

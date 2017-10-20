@@ -6,6 +6,8 @@ permalink: /kb/274/Q274150/
 
 ## Q274150: Web Page Does Not Display Data from Include File
 
+{% raw %}
+
 	Article: Q274150
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -87,3 +89,5 @@ permalink: /kb/274/Q274150/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138437/
 
 ## Q138437: PRB: File Does Not Appear to Be a Valid OLE Control
 
+{% raw %}
+
 	Article: Q138437
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/138/Q138437/
 	
 	=============================================================================
 	
+
+{% endraw %}

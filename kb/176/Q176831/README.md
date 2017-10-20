@@ -6,6 +6,8 @@ permalink: /kb/176/Q176831/
 
 ## Q176831: Multimedia: Computer Stops Responding When Accessing Web Links
 
+{% raw %}
+
 	Article: Q176831
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/176/Q176831/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157717/
 
 ## Q157717: INFO: VSS 5.0 Readme: Sec. 2, General Notes and Tips
 
+{% raw %}
+
 	Article: Q157717
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0
@@ -171,3 +173,5 @@ permalink: /kb/157/Q157717/
 	
 	=============================================================================
 	
+
+{% endraw %}

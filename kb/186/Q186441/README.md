@@ -6,6 +6,8 @@ permalink: /kb/186/Q186441/
 
 ## Q186441: Schedule on Server Can Be Locked by User with Read-Only Access
 
+{% raw %}
+
 	Article: Q186441
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.5
@@ -67,3 +69,5 @@ permalink: /kb/186/Q186441/
 	
 	=============================================================================
 	
+
+{% endraw %}

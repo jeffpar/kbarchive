@@ -6,6 +6,8 @@ permalink: /kb/141/Q141936/
 
 ## Q141936: Writer: How to Import Text
 
+{% raw %}
+
 	Article: Q141936
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0,1.1,1.1a,1.1b,1.1c
@@ -88,3 +90,5 @@ permalink: /kb/141/Q141936/
 	
 	=============================================================================
 	
+
+{% endraw %}

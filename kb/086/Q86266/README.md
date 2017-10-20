@@ -6,6 +6,8 @@ permalink: /kb/086/Q86266/
 
 ## Q86266: DOC: Overview Manual Documents PostAppMessage Incorrectly
 
+{% raw %}
+
 	Article: Q86266
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -61,3 +63,5 @@ permalink: /kb/086/Q86266/
 	
 	=============================================================================
 	
+
+{% endraw %}

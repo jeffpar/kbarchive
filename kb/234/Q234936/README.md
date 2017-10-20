@@ -6,6 +6,8 @@ permalink: /kb/234/Q234936/
 
 ## Q234936: XCLN: Support Boundaries of MAPI Provider Services
 
+{% raw %}
+
 	Article: Q234936
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,8.0,8.1,8.2,8.2.1
@@ -224,3 +226,5 @@ permalink: /kb/234/Q234936/
 	
 	=============================================================================
 	
+
+{% endraw %}

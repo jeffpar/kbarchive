@@ -6,6 +6,8 @@ permalink: /kb/254/Q254437/
 
 ## Q254437: MapPoint 2001: Maps Printed to Plotter Are Not Scaled Properly
 
+{% raw %}
+
 	Article: Q254437
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -50,3 +52,5 @@ permalink: /kb/254/Q254437/
 	
 	=============================================================================
 	
+
+{% endraw %}

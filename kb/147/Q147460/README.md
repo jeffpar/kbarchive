@@ -6,6 +6,8 @@ permalink: /kb/147/Q147460/
 
 ## Q147460: Unable to Change File Attributes From an OS/2 Client
 
+{% raw %}
+
 	Article: Q147460
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -51,3 +53,5 @@ permalink: /kb/147/Q147460/
 	
 	=============================================================================
 	
+
+{% endraw %}

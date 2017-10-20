@@ -6,6 +6,8 @@ permalink: /kb/173/Q173799/
 
 ## Q173799: WD97: Macro to List Custom Tab Stops in a Paragraph
 
+{% raw %}
+
 	Article: Q173799
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -107,3 +109,5 @@ permalink: /kb/173/Q173799/
 	
 	=============================================================================
 	
+
+{% endraw %}

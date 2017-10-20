@@ -6,6 +6,8 @@ permalink: /kb/157/Q157485/
 
 ## Q157485: Taskbar Leaves Trail on Programs with Auto Hide Enabled
 
+{% raw %}
+
 	Article: Q157485
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -45,3 +47,5 @@ permalink: /kb/157/Q157485/
 	
 	=============================================================================
 	
+
+{% endraw %}

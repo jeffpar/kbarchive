@@ -6,6 +6,8 @@ permalink: /kb/189/Q189293/
 
 ## Q189293: XADM: 4GT RAM Tuning Using Windows NT Server Enterprise Edition
 
+{% raw %}
+
 	Article: Q189293
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.5
@@ -82,3 +84,5 @@ permalink: /kb/189/Q189293/
 	
 	=============================================================================
 	
+
+{% endraw %}

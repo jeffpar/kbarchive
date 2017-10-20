@@ -6,6 +6,8 @@ permalink: /kb/104/Q104458/
 
 ## Q104458: Dinosaurs: Pteranodon and Diplodocus Missing from Word List
 
+{% raw %}
+
 	Article: Q104458
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -37,3 +39,5 @@ permalink: /kb/104/Q104458/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271963/
 
 ## Q271963: Services Do Not Start, Event ID 7023 Generates Message, 'Duplica
 
+{% raw %}
+
 	Article: Q271963
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -89,3 +91,5 @@ permalink: /kb/271/Q271963/
 	
 	=============================================================================
 	
+
+{% endraw %}

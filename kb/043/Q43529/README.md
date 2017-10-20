@@ -6,6 +6,8 @@ permalink: /kb/043/Q43529/
 
 ## Q43529: COBOL LINK.EXE 5.02.05 Causes BASIC Program to Hang
 
+{% raw %}
+
 	Article: Q43529
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -25,3 +27,5 @@ permalink: /kb/043/Q43529/
 	the BASIC compiler work correctly with those products. The linker
 	provided is tested with the product during its development and may
 	also contain features or options that are specific to that product.
+
+{% endraw %}

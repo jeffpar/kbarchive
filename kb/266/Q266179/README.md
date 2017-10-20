@@ -6,6 +6,8 @@ permalink: /kb/266/Q266179/
 
 ## Q266179: Unable to Create Volume When Adding a Directory to a Dfs Share
 
+{% raw %}
+
 	Article: Q266179
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/266/Q266179/
 	
 	=============================================================================
 	
+
+{% endraw %}

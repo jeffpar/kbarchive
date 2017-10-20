@@ -6,6 +6,8 @@ permalink: /kb/158/Q158999/
 
 ## Q158999: XCLN: ShivaRemote/Exchange Client Not Supported Under OS/2 4.00
 
+{% raw %}
+
 	Article: Q158999
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -64,3 +66,5 @@ permalink: /kb/158/Q158999/
 	
 	=============================================================================
 	
+
+{% endraw %}

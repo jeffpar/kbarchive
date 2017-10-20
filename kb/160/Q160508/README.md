@@ -6,6 +6,8 @@ permalink: /kb/160/Q160508/
 
 ## Q160508: Unnecessary DNS Zone Transfers
 
+{% raw %}
+
 	Article: Q160508
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/160/Q160508/
 	
 	=============================================================================
 	
+
+{% endraw %}

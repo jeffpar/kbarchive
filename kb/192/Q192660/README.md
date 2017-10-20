@@ -6,6 +6,8 @@ permalink: /kb/192/Q192660/
 
 ## Q192660: SMS: Login Scripts Do Not Run from Subfolder in Netlogon Share
 
+{% raw %}
+
 	Article: Q192660
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -78,3 +80,5 @@ permalink: /kb/192/Q192660/
 	
 	=============================================================================
 	
+
+{% endraw %}

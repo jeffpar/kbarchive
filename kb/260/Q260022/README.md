@@ -6,6 +6,8 @@ permalink: /kb/260/Q260022/
 
 ## Q260022: XADM: Isscan Utility Stops w. ecBadVersion w. Post-SP3 Store.exe
 
+{% raw %}
+
 	Article: Q260022
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -89,3 +91,5 @@ permalink: /kb/260/Q260022/
 	
 	=============================================================================
 	
+
+{% endraw %}

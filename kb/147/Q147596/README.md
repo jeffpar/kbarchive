@@ -6,6 +6,8 @@ permalink: /kb/147/Q147596/
 
 ## Q147596: HOWTO: Create a Form that Resizes Based on Resolution
 
+{% raw %}
+
 	Article: Q147596
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,6.0
@@ -104,3 +106,5 @@ permalink: /kb/147/Q147596/
 	
 	=============================================================================
 	
+
+{% endraw %}

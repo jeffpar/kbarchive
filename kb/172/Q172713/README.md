@@ -6,6 +6,8 @@ permalink: /kb/172/Q172713/
 
 ## Q172713: Registry Entries for Winpopup.exe in Windows 95
 
+{% raw %}
+
 	Article: Q172713
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -75,3 +77,5 @@ permalink: /kb/172/Q172713/
 	
 	=============================================================================
 	
+
+{% endraw %}

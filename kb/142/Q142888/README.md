@@ -6,6 +6,8 @@ permalink: /kb/142/Q142888/
 
 ## Q142888: FIX: Developer Studio Fails to Recognize Makefile and Quits
 
+{% raw %}
+
 	Article: Q142888
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -85,3 +87,5 @@ permalink: /kb/142/Q142888/
 	
 	=============================================================================
 	
+
+{% endraw %}

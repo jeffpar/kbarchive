@@ -6,6 +6,8 @@ permalink: /kb/103/Q103532/
 
 ## Q103532: DoubleSpace Reboots System After Compressing a Floptical Disk
 
+{% raw %}
+
 	Article: Q103532
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -40,3 +42,5 @@ permalink: /kb/103/Q103532/
 	
 	=============================================================================
 	
+
+{% endraw %}

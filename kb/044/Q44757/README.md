@@ -6,6 +6,8 @@ permalink: /kb/044/Q44757/
 
 ## Q44757: Multiple Targets in NMAKE Do Not Work
 
+{% raw %}
+
 	Article: Q44757
 	Product(s): See article
 	Version(s): 2.00
@@ -39,3 +41,5 @@ permalink: /kb/044/Q44757/
 	Microsoft has confirmed this to be a problem in QuickC Version 2.00.
 	We are researching this problem and will post new information as it
 	becomes available.
+
+{% endraw %}

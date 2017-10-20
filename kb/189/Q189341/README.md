@@ -6,6 +6,8 @@ permalink: /kb/189/Q189341/
 
 ## Q189341: XADM: Clearing Out &quot;Connect to Server&quot; List in Administrator
 
+{% raw %}
+
 	Article: Q189341
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -101,3 +103,5 @@ permalink: /kb/189/Q189341/
 	
 	=============================================================================
 	
+
+{% endraw %}

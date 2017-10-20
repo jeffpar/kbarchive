@@ -6,6 +6,8 @@ permalink: /kb/191/Q191004/
 
 ## Q191004: Crystal Reports 4.5: Allows Only One User Access
 
+{% raw %}
+
 	Article: Q191004
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -38,3 +40,5 @@ permalink: /kb/191/Q191004/
 	
 	=============================================================================
 	
+
+{% endraw %}

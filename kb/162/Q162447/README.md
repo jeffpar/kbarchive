@@ -6,6 +6,8 @@ permalink: /kb/162/Q162447/
 
 ## Q162447: Multiple Print Jobs When Printing Single Document
 
+{% raw %}
+
 	Article: Q162447
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/162/Q162447/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135729/
 
 ## Q135729: Kids: Screen Turns White or Computer Hangs When Playing Videos
 
+{% raw %}
+
 	Article: Q135729
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,3.x
@@ -88,3 +90,5 @@ permalink: /kb/135/Q135729/
 	
 	=============================================================================
 	
+
+{% endraw %}

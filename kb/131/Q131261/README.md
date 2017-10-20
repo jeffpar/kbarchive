@@ -6,6 +6,8 @@ permalink: /kb/131/Q131261/
 
 ## Q131261: Message Finder Does Not Search Shared or Deleted Folders
 
+{% raw %}
+
 	Article: Q131261
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -56,3 +58,5 @@ permalink: /kb/131/Q131261/
 	
 	=============================================================================
 	
+
+{% endraw %}

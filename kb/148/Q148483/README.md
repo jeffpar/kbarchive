@@ -6,6 +6,8 @@ permalink: /kb/148/Q148483/
 
 ## Q148483: XCLN: Prev/Next Unavailable After Open from Notify Dialog
 
+{% raw %}
+
 	Article: Q148483
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -56,3 +58,5 @@ permalink: /kb/148/Q148483/
 	
 	=============================================================================
 	
+
+{% endraw %}

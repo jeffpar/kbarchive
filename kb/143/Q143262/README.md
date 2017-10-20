@@ -6,6 +6,8 @@ permalink: /kb/143/Q143262/
 
 ## Q143262: HOWTO: Enable the Windows 95/98/Me Size Grip in a VB Form
 
+{% raw %}
+
 	Article: Q143262
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/143/Q143262/
 	
 	=============================================================================
 	
+
+{% endraw %}

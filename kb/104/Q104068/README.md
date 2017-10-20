@@ -6,6 +6,8 @@ permalink: /kb/104/Q104068/
 
 ## Q104068: DOC: Determining Message Removal from WH_GETMESSAGE Hook
 
+{% raw %}
+
 	Article: Q104068
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/104/Q104068/
 	
 	=============================================================================
 	
+
+{% endraw %}

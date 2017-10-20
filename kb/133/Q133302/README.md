@@ -6,6 +6,8 @@ permalink: /kb/133/Q133302/
 
 ## Q133302: FIX: Application Fails But Gives No Error Message
 
+{% raw %}
+
 	Article: Q133302
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2
@@ -138,3 +140,5 @@ permalink: /kb/133/Q133302/
 	
 	=============================================================================
 	
+
+{% endraw %}

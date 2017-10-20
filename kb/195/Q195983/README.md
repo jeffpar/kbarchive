@@ -6,6 +6,8 @@ permalink: /kb/195/Q195983/
 
 ## Q195983: PRB: DataGrid Control Does Not Return Contents of Edited Cell
 
+{% raw %}
+
 	Article: Q195983
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.5,2.6,6.0
@@ -155,3 +157,5 @@ permalink: /kb/195/Q195983/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106531/
 
 ## Q106531: BUG: Debugger Problems Modifying Character Variables
 
+{% raw %}
+
 	Article: Q106531
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -109,3 +111,5 @@ permalink: /kb/106/Q106531/
 	
 	=============================================================================
 	
+
+{% endraw %}

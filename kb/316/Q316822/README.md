@@ -6,6 +6,8 @@ permalink: /kb/316/Q316822/
 
 ## Q316822: FIX: Exception Error When You Use Wildcards in Find Dialog Box
 
+{% raw %}
+
 	Article: Q316822
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -81,3 +83,5 @@ permalink: /kb/316/Q316822/
 	
 	=============================================================================
 	
+
+{% endraw %}

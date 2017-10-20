@@ -6,6 +6,8 @@ permalink: /kb/179/Q179978/
 
 ## Q179978: XCLN: Spelling Check in Macintosh Client Slows Message Delivery
 
+{% raw %}
+
 	Article: Q179978
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -55,3 +57,5 @@ permalink: /kb/179/Q179978/
 	
 	=============================================================================
 	
+
+{% endraw %}

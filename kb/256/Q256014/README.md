@@ -6,6 +6,8 @@ permalink: /kb/256/Q256014/
 
 ## Q256014: PC WIN: SFS: Error Message: The Message Could Not Be Sent Due...
 
+{% raw %}
+
 	Article: Q256014
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5; :
@@ -120,3 +122,5 @@ permalink: /kb/256/Q256014/
 	
 	=============================================================================
 	
+
+{% endraw %}

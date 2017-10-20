@@ -6,6 +6,8 @@ permalink: /kb/259/Q259573/
 
 ## Q259573: BUG: SCSI Pass Through Fails with Invalid User Buffer Error
 
+{% raw %}
+
 	Article: Q259573
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:
@@ -72,3 +74,5 @@ permalink: /kb/259/Q259573/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120818/
 
 ## Q120818: Explanation of WFW&lt;nn&gt; Files in Windows for Workgroups 3.11
 
+{% raw %}
+
 	Article: Q120818
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -61,3 +63,5 @@ permalink: /kb/120/Q120818/
 	
 	=============================================================================
 	
+
+{% endraw %}

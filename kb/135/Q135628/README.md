@@ -6,6 +6,8 @@ permalink: /kb/135/Q135628/
 
 ## Q135628: PRB: Disabled Grid Column Allows Focus with Mouse Click
 
+{% raw %}
+
 	Article: Q135628
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/135/Q135628/
 	
 	=============================================================================
 	
+
+{% endraw %}

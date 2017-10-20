@@ -6,6 +6,8 @@ permalink: /kb/239/Q239839/
 
 ## Q239839: NFL Fever 2000: Video Adapter Does Not Appear in List of Drivers
 
+{% raw %}
+
 	Article: Q239839
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/239/Q239839/
 	
 	=============================================================================
 	
+
+{% endraw %}

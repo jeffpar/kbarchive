@@ -6,6 +6,8 @@ permalink: /kb/060/Q60112/
 
 ## Q60112: Mac AL: Reinstalling Custom Form for AppleLink Gateway
 
+{% raw %}
+
 	Article: Q60112
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -48,3 +50,5 @@ permalink: /kb/060/Q60112/
 	
 	=============================================================================
 	
+
+{% endraw %}

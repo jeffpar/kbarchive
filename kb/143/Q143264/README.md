@@ -6,6 +6,8 @@ permalink: /kb/143/Q143264/
 
 ## Q143264: PRB: RDC/ODBC Password Display Inconsistencies
 
+{% raw %}
+
 	Article: Q143264
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:2.5,4.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/143/Q143264/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/253/Q253650/
 
 ## Q253650: HOWTO: Use the SysInfo ActiveX Control in Visual FoxPro
 
+{% raw %}
+
 	Article: Q253650
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -257,3 +259,5 @@ permalink: /kb/253/Q253650/
 	
 	=============================================================================
 	
+
+{% endraw %}

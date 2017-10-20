@@ -6,6 +6,8 @@ permalink: /kb/074/Q74578/
 
 ## Q74578: Using ANSI.SYS to Disable CTRL+C Key Combination
 
+{% raw %}
+
 	Article: Q74578
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -76,3 +78,5 @@ permalink: /kb/074/Q74578/
 	
 	=============================================================================
 	
+
+{% endraw %}

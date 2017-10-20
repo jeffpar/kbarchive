@@ -6,6 +6,8 @@ permalink: /kb/187/Q187443/
 
 ## Q187443: Unable to Reconnect at Maximum Number of Sessions
 
+{% raw %}
+
 	Article: Q187443
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/187/Q187443/
 	
 	=============================================================================
 	
+
+{% endraw %}

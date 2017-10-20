@@ -6,6 +6,8 @@ permalink: /kb/133/Q133383/
 
 ## Q133383: Systems Management Server Setup Hangs with SMC Ethercard
 
+{% raw %}
+
 	Article: Q133383
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -44,3 +46,5 @@ permalink: /kb/133/Q133383/
 	
 	=============================================================================
 	
+
+{% endraw %}

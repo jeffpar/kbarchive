@@ -6,6 +6,8 @@ permalink: /kb/246/Q246604/
 
 ## Q246604: SMS: Software Inventory Is Not Processed Without Parent Site CAP
 
+{% raw %}
+
 	Article: Q246604
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -78,3 +80,5 @@ permalink: /kb/246/Q246604/
 	
 	=============================================================================
 	
+
+{% endraw %}

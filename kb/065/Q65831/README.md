@@ -6,6 +6,8 @@ permalink: /kb/065/Q65831/
 
 ## Q65831: BASIC 7.00 QBX.EXE: PAINT Statement Uses Far Heap
 
+{% raw %}
+
 	Article: Q65831
 	Product(s): See article
 	Version(s): 7.00
@@ -36,3 +38,5 @@ permalink: /kb/065/Q65831/
 	   PRINT FRE(-1)                      'Print far heap memory available
 	   PAINT (190, 100), 2, 1             'Fill in the ellipse
 	   PRINT FRE(-1)   'This FRE(-1) value is different than previous FRE(-1)
+
+{% endraw %}

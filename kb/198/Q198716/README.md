@@ -6,6 +6,8 @@ permalink: /kb/198/Q198716/
 
 ## Q198716: SMS: Server Side Remote Control Components Maintain SMS Security
 
+{% raw %}
+
 	Article: Q198716
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -52,3 +54,5 @@ permalink: /kb/198/Q198716/
 	
 	=============================================================================
 	
+
+{% endraw %}

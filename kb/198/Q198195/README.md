@@ -6,6 +6,8 @@ permalink: /kb/198/Q198195/
 
 ## Q198195: WD97: Linked Excel Object Shows Empty Cells
 
+{% raw %}
+
 	Article: Q198195
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/198/Q198195/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258965/
 
 ## Q258965: PRB: ImgEdit.OCX Causes Breakpoint in RtlFreeHeap w/ VC Debugger
 
+{% raw %}
+
 	Article: Q258965
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/258/Q258965/
 	
 	=============================================================================
 	
+
+{% endraw %}

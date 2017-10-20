@@ -6,6 +6,8 @@ permalink: /kb/032/Q32848/
 
 ## Q32848: Switch Settings For Gateway G/NET Adapters
 
+{% raw %}
+
 	Article: Q32848
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.x,2.x,3.0,3.0a
@@ -79,3 +81,5 @@ permalink: /kb/032/Q32848/
 	
 	=============================================================================
 	
+
+{% endraw %}

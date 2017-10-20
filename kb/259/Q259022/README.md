@@ -6,6 +6,8 @@ permalink: /kb/259/Q259022/
 
 ## Q259022: XADM: Exchange Server Service Account Has Access to Any Mailbox
 
+{% raw %}
+
 	Article: Q259022
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/259/Q259022/
 	
 	=============================================================================
 	
+
+{% endraw %}

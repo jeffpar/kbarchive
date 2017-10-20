@@ -6,6 +6,8 @@ permalink: /kb/215/Q215032/
 
 ## Q215032: SMS: Batch File Program on Windows 9x Not Closing Command Window
 
+{% raw %}
+
 	Article: Q215032
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -45,3 +47,5 @@ permalink: /kb/215/Q215032/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141831/
 
 ## Q141831: System Locks Up When Accessing Floppy Drive
 
+{% raw %}
+
 	Article: Q141831
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -85,3 +87,5 @@ permalink: /kb/141/Q141831/
 	
 	=============================================================================
 	
+
+{% endraw %}

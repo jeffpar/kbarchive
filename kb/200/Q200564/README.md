@@ -6,6 +6,8 @@ permalink: /kb/200/Q200564/
 
 ## Q200564: XFOR: Cc:Mail Migration Fails with Event ID 238, 8149 and 8002
 
+{% raw %}
+
 	Article: Q200564
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/200/Q200564/
 	
 	=============================================================================
 	
+
+{% endraw %}

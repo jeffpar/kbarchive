@@ -6,6 +6,8 @@ permalink: /kb/086/Q86177/
 
 ## Q86177: Citizen GSX-130 Tractor Paper Misfeeds
 
+{% raw %}
+
 	Article: Q86177
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/086/Q86177/
 	
 	=============================================================================
 	
+
+{% endraw %}

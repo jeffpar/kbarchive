@@ -6,6 +6,8 @@ permalink: /kb/099/Q99245/
 
 ## Q99245: OS/2 Version Levels in LEVEL8.XXX File
 
+{% raw %}
+
 	Article: Q99245
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/099/Q99245/
 	
 	=============================================================================
 	
+
+{% endraw %}

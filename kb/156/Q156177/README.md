@@ -6,6 +6,8 @@ permalink: /kb/156/Q156177/
 
 ## Q156177: PRB: Error Passing Multiple Parameters to DataToClip Method
 
+{% raw %}
+
 	Article: Q156177
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -129,3 +131,5 @@ permalink: /kb/156/Q156177/
 	
 	=============================================================================
 	
+
+{% endraw %}

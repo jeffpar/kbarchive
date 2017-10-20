@@ -6,6 +6,8 @@ permalink: /kb/121/Q121033/
 
 ## Q121033: MAC Dinosaurs: README Contents
 
+{% raw %}
+
 	Article: Q121033
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -257,3 +259,5 @@ permalink: /kb/121/Q121033/
 	
 	=============================================================================
 	
+
+{% endraw %}

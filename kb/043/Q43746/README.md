@@ -6,6 +6,8 @@ permalink: /kb/043/Q43746/
 
 ## Q43746: QuickBASIC Program to Send a Break through COM1 Port
 
+{% raw %}
+
 	Article: Q43746
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -113,3 +115,5 @@ permalink: /kb/043/Q43746/
 	NEXT
 	
 	END SUB
+
+{% endraw %}

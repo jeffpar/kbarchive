@@ -6,6 +6,8 @@ permalink: /kb/101/Q101458/
 
 ## Q101458: SMTP: Mail SMTPPUT.EXE Version 3.04.1 Update
 
+{% raw %}
+
 	Article: Q101458
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -95,3 +97,5 @@ permalink: /kb/101/Q101458/
 	
 	=============================================================================
 	
+
+{% endraw %}

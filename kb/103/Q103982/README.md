@@ -6,6 +6,8 @@ permalink: /kb/103/Q103982/
 
 ## Q103982: PRB: OnInitialUpdate() May Be Called More Than Once
 
+{% raw %}
+
 	Article: Q103982
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -50,3 +52,5 @@ permalink: /kb/103/Q103982/
 	
 	=============================================================================
 	
+
+{% endraw %}

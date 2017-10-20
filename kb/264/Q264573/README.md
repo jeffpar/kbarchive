@@ -6,6 +6,8 @@ permalink: /kb/264/Q264573/
 
 ## Q264573: IIS 5.0 May Cause an Access Violation in W3svc.dll Using DAV
 
+{% raw %}
+
 	Article: Q264573
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -62,3 +64,5 @@ permalink: /kb/264/Q264573/
 	
 	=============================================================================
 	
+
+{% endraw %}

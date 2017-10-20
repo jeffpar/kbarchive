@@ -6,6 +6,8 @@ permalink: /kb/128/Q128568/
 
 ## Q128568: XADM : Managing Distribution Lists from Windows Clients
 
+{% raw %}
+
 	Article: Q128568
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/128/Q128568/
 	
 	=============================================================================
 	
+
+{% endraw %}

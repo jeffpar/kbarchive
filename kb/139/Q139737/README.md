@@ -6,6 +6,8 @@ permalink: /kb/139/Q139737/
 
 ## Q139737: STOP 0xC0000221 After Upgrading to SP3 on Compaq Proliant
 
+{% raw %}
+
 	Article: Q139737
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10
@@ -70,3 +72,5 @@ permalink: /kb/139/Q139737/
 	
 	=============================================================================
 	
+
+{% endraw %}

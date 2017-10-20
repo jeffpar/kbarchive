@@ -6,6 +6,8 @@ permalink: /kb/068/Q68381/
 
 ## Q68381: The D Modifier to &#36;? Is Broken in NMAKE Version 1.11
 
+{% raw %}
+
 	Article: Q68381
 	Product(s): See article
 	Version(s): 1.11   | 1.11
@@ -24,3 +26,5 @@ permalink: /kb/068/Q68381/
 	
 	all : c:\dos\command.com
 	   echo The D modifier of $? is $(?D)
+
+{% endraw %}

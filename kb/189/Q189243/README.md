@@ -6,6 +6,8 @@ permalink: /kb/189/Q189243/
 
 ## Q189243: No Error Displays When Admin Is Running During Move Server
 
+{% raw %}
+
 	Article: Q189243
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -75,3 +77,5 @@ permalink: /kb/189/Q189243/
 	
 	=============================================================================
 	
+
+{% endraw %}

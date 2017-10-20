@@ -6,6 +6,8 @@ permalink: /kb/131/Q131491/
 
 ## Q131491: ALT+Arrow Does Not Move Day to Day in Yearly View
 
+{% raw %}
+
 	Article: Q131491
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -48,3 +50,5 @@ permalink: /kb/131/Q131491/
 	
 	=============================================================================
 	
+
+{% endraw %}

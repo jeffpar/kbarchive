@@ -6,6 +6,8 @@ permalink: /kb/261/Q261237/
 
 ## Q261237: Visual FoxPro Sample: Selects Printer Using Kodak Image Control
 
+{% raw %}
+
 	Article: Q261237
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -88,3 +90,5 @@ permalink: /kb/261/Q261237/
 	
 	=============================================================================
 	
+
+{% endraw %}

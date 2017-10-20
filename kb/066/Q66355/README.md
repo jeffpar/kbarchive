@@ -6,6 +6,8 @@ permalink: /kb/066/Q66355/
 
 ## Q66355: Description of IdleWild in the Windows Entertainment Pack
 
+{% raw %}
+
 	Article: Q66355
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/066/Q66355/
 	
 	=============================================================================
 	
+
+{% endraw %}

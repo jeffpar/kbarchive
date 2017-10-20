@@ -6,6 +6,8 @@ permalink: /kb/174/Q174059/
 
 ## Q174059: XADM: Cannot Create Custom Recipient with ^ as First Character
 
+{% raw %}
+
 	Article: Q174059
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -51,3 +53,5 @@ permalink: /kb/174/Q174059/
 	
 	=============================================================================
 	
+
+{% endraw %}

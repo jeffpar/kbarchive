@@ -6,6 +6,8 @@ permalink: /kb/174/Q174882/
 
 ## Q174882: FIX: Cannot Install &quot;Learn VB Now&quot; Program
 
+{% raw %}
+
 	Article: Q174882
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.51,5.0
@@ -64,3 +66,5 @@ permalink: /kb/174/Q174882/
 	
 	=============================================================================
 	
+
+{% endraw %}

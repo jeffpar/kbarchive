@@ -6,6 +6,8 @@ permalink: /kb/129/Q129930/
 
 ## Q129930: PRB: Compile-Time Error Occurs Instead of Run-Time Error
 
+{% raw %}
+
 	Article: Q129930
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -74,3 +76,5 @@ permalink: /kb/129/Q129930/
 	
 	=============================================================================
 	
+
+{% endraw %}

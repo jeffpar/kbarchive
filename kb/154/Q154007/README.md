@@ -6,6 +6,8 @@ permalink: /kb/154/Q154007/
 
 ## Q154007: HOWTO: Connect to a Network Printer with the Win32 API
 
+{% raw %}
+
 	Article: Q154007
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -107,3 +109,5 @@ permalink: /kb/154/Q154007/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99535/
 
 ## Q99535: Use Uppercase Field Data Type Entries for Windows
 
+{% raw %}
+
 	Article: Q99535
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/099/Q99535/
 	
 	=============================================================================
 	
+
+{% endraw %}

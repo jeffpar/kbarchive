@@ -6,6 +6,8 @@ permalink: /kb/035/Q35803/
 
 ## Q35803: DOCERR: External Addresses in &quot;=&quot; Directive
 
+{% raw %}
+
 	Article: Q35803
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -67,3 +69,5 @@ permalink: /kb/035/Q35803/
 	
 	=============================================================================
 	
+
+{% endraw %}

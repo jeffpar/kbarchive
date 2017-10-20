@@ -6,6 +6,8 @@ permalink: /kb/066/Q66732/
 
 ## Q66732: Windows Err Msg: Error Building WIN.COM
 
+{% raw %}
+
 	Article: Q66732
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -69,3 +71,5 @@ permalink: /kb/066/Q66732/
 	
 	=============================================================================
 	
+
+{% endraw %}

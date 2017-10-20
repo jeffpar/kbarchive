@@ -6,6 +6,8 @@ permalink: /kb/219/Q219282/
 
 ## Q219282: BUG: ScrollToPosition() Fails to Scroll CFormView
 
+{% raw %}
+
 	Article: Q219282
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -309,3 +311,5 @@ permalink: /kb/219/Q219282/
 	
 	=============================================================================
 	
+
+{% endraw %}

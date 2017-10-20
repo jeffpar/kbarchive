@@ -6,6 +6,8 @@ permalink: /kb/126/Q126651/
 
 ## Q126651: NetBIOS Data Codes (Windows NT and RAS)
 
+{% raw %}
+
 	Article: Q126651
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; winnt:3.5
@@ -111,3 +113,5 @@ permalink: /kb/126/Q126651/
 	
 	=============================================================================
 	
+
+{% endraw %}

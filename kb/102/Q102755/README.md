@@ -6,6 +6,8 @@ permalink: /kb/102/Q102755/
 
 ## Q102755: PC MAPI: &lt;PARAMBLK&gt; MAPI Calls in SHARED.INI
 
+{% raw %}
+
 	Article: Q102755
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b
@@ -44,3 +46,5 @@ permalink: /kb/102/Q102755/
 	
 	=============================================================================
 	
+
+{% endraw %}

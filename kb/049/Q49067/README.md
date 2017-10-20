@@ -6,6 +6,8 @@ permalink: /kb/049/Q49067/
 
 ## Q49067: QuickC and QuickAssembler Cannot Debug Code in Include Files
 
+{% raw %}
+
 	Article: Q49067
 	Product(s): See article
 	Version(s): 2.01
@@ -33,3 +35,5 @@ permalink: /kb/049/Q49067/
 	
 	The solution to this problem is to include only macros, equates, and
 	standard segment definitions in the include files when debugging.
+
+{% endraw %}

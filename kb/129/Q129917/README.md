@@ -6,6 +6,8 @@ permalink: /kb/129/Q129917/
 
 ## Q129917: How to Determine Which Tables Exist in a DBC
 
+{% raw %}
+
 	Article: Q129917
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/129/Q129917/
 	
 	=============================================================================
 	
+
+{% endraw %}

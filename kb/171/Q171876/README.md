@@ -6,6 +6,8 @@ permalink: /kb/171/Q171876/
 
 ## Q171876: SNA Server Traps After Receiving BIND +RSP With Invalid Data
 
+{% raw %}
+
 	Article: Q171876
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1,3.0,3.0 SP1
@@ -62,3 +64,5 @@ permalink: /kb/171/Q171876/
 	
 	=============================================================================
 	
+
+{% endraw %}

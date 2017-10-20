@@ -6,6 +6,8 @@ permalink: /kb/272/Q272030/
 
 ## Q272030: Encarta 2001: &quot;La Mome Piaf&quot; Tour Stop Does Not Have Audio
 
+{% raw %}
+
 	Article: Q272030
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/272/Q272030/
 	
 	=============================================================================
 	
+
+{% endraw %}

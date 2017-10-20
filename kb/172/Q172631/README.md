@@ -6,6 +6,8 @@ permalink: /kb/172/Q172631/
 
 ## Q172631: WD97: Custom Numbering Scheme Not Available on Other Computer
 
+{% raw %}
+
 	Article: Q172631
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -117,3 +119,5 @@ permalink: /kb/172/Q172631/
 	
 	=============================================================================
 	
+
+{% endraw %}

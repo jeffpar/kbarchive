@@ -6,6 +6,8 @@ permalink: /kb/087/Q87465/
 
 ## Q87465: PC DB: How to Tell if an ACCESS File Is Corrupt
 
+{% raw %}
+
 	Article: Q87465
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -63,3 +65,5 @@ permalink: /kb/087/Q87465/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177232/
 
 ## Q177232: FP/VID VSS Control of OOP Application Causes Random Errors
 
+{% raw %}
+
 	Article: Q177232
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/177/Q177232/
 	
 	=============================================================================
 	
+
+{% endraw %}

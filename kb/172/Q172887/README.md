@@ -6,6 +6,8 @@ permalink: /kb/172/Q172887/
 
 ## Q172887: FIX: Debugger Cannot Safely Change Current Location
 
+{% raw %}
+
 	Article: Q172887
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -56,3 +58,5 @@ permalink: /kb/172/Q172887/
 	
 	=============================================================================
 	
+
+{% endraw %}

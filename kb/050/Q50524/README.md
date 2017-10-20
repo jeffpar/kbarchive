@@ -6,6 +6,8 @@ permalink: /kb/050/Q50524/
 
 ## Q50524: C Run-Time Routines Cannot Be Placed in an Overlay
 
+{% raw %}
+
 	Article: Q50524
 	Product(s): See article
 	Version(s): 5.10
@@ -37,3 +39,5 @@ permalink: /kb/050/Q50524/
 	overlay and not in the root, so the overlay manager code (also in
 	_TEXT) is not present in memory at start up. This causes the machine
 	to hang.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117521/
 
 ## Q117521: MS-DOS 6.22 Upgrade Directory Listings for 5.25-Inch 360K Set
 
+{% raw %}
+
 	Article: Q117521
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -332,3 +334,5 @@ permalink: /kb/117/Q117521/
 	
 	=============================================================================
 	
+
+{% endraw %}

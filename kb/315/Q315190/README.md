@@ -6,6 +6,8 @@ permalink: /kb/315/Q315190/
 
 ## Q315190: Flight Simulator 2002: Aircraft Do Not Appear on Selection Menu
 
+{% raw %}
+
 	Article: Q315190
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/315/Q315190/
 	
 	=============================================================================
 	
+
+{% endraw %}

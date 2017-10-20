@@ -6,6 +6,8 @@ permalink: /kb/098/Q98811/
 
 ## Q98811: ATT: Err=-101 Function=FFAPI_RunGet / Error=20
 
+{% raw %}
+
 	Article: Q98811
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/098/Q98811/
 	
 	=============================================================================
 	
+
+{% endraw %}

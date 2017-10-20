@@ -6,6 +6,8 @@ permalink: /kb/113/Q113635/
 
 ## Q113635: MS-DOS 6.21 Upgrade Listings for 3.5-Inch 1.44 MB Set
 
+{% raw %}
+
 	Article: Q113635
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21
@@ -207,3 +209,5 @@ permalink: /kb/113/Q113635/
 	
 	=============================================================================
 	
+
+{% endraw %}

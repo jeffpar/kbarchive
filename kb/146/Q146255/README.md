@@ -6,6 +6,8 @@ permalink: /kb/146/Q146255/
 
 ## Q146255: XCLN: Hidden Recipient Names Are Not Resolved
 
+{% raw %}
+
 	Article: Q146255
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -47,3 +49,5 @@ permalink: /kb/146/Q146255/
 	
 	=============================================================================
 	
+
+{% endraw %}

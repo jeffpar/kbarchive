@@ -6,6 +6,8 @@ permalink: /kb/171/Q171555/
 
 ## Q171555: FIX: More Than One Sub Main May Cause EXE to Crash
 
+{% raw %}
+
 	Article: Q171555
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -99,3 +101,5 @@ permalink: /kb/171/Q171555/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82650/
 
 ## Q82650: OLE: SETUP.REG Can Be Used to Repair REG.DAT
 
+{% raw %}
+
 	Article: Q82650
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -97,3 +99,5 @@ permalink: /kb/082/Q82650/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66744/
 
 ## Q66744: How to POKE Keystrokes Such as F3 (Last Command) into Keyboard
 
+{% raw %}
+
 	Article: Q66744
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -59,3 +61,5 @@ permalink: /kb/066/Q66744/
 	of "Microsoft BASIC Compiler 6.0: Language Reference" for 6.00 and
 	6.00b; and in Appendix A of "Microsoft BASIC 7.0: Language Reference"
 	manual for BASIC PDS versions 7.00 and 7.10.
+
+{% endraw %}

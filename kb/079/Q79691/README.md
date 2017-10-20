@@ -6,6 +6,8 @@ permalink: /kb/079/Q79691/
 
 ## Q79691: Determining User Access Rights on a Banyan VINES Network
 
+{% raw %}
+
 	Article: Q79691
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.10
@@ -114,3 +116,5 @@ permalink: /kb/079/Q79691/
 	
 	=============================================================================
 	
+
+{% endraw %}

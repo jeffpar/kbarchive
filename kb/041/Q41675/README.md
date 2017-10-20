@@ -6,6 +6,8 @@ permalink: /kb/041/Q41675/
 
 ## Q41675: QuickC 2.00 README.DOC: Searching for OS/2 Include Files
 
+{% raw %}
+
 	Article: Q41675
 	Product(s): See article
 	Version(s): 2.00
@@ -29,3 +31,5 @@ permalink: /kb/041/Q41675/
 	   C1068  Cannot open file 'name.h'
 	
 	where 'name.h' is the name of the OS/2 include file.
+
+{% endraw %}

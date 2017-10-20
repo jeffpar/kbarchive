@@ -6,6 +6,8 @@ permalink: /kb/156/Q156030/
 
 ## Q156030: PRB: SET RELATION TO Has No Effect in Grid from Child
 
+{% raw %}
+
 	Article: Q156030
 	Product(s): Microsoft FoxPro
 	Version(s): 5.00
@@ -103,3 +105,5 @@ permalink: /kb/156/Q156030/
 	
 	=============================================================================
 	
+
+{% endraw %}

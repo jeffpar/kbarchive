@@ -6,6 +6,8 @@ permalink: /kb/139/Q139647/
 
 ## Q139647: XCLN: Address Book Combo Box Not Redrawn Correctly
 
+{% raw %}
+
 	Article: Q139647
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -43,3 +45,5 @@ permalink: /kb/139/Q139647/
 	
 	=============================================================================
 	
+
+{% endraw %}

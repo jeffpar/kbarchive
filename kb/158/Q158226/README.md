@@ -6,6 +6,8 @@ permalink: /kb/158/Q158226/
 
 ## Q158226: Encarta 97: Personal Nutrition Interactivity Does Not Save
 
+{% raw %}
+
 	Article: Q158226
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -52,3 +54,5 @@ permalink: /kb/158/Q158226/
 	
 	=============================================================================
 	
+
+{% endraw %}

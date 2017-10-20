@@ -6,6 +6,8 @@ permalink: /kb/165/Q165792/
 
 ## Q165792: FIX: MSDEV.EXE Application Error When Building an Application
 
+{% raw %}
+
 	Article: Q165792
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS NT: 5.0
@@ -104,3 +106,5 @@ permalink: /kb/165/Q165792/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163626/
 
 ## Q163626: XCLN: Error Occurs While Attempting to Access Personal Folders
 
+{% raw %}
+
 	Article: Q163626
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; Win95:4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/163/Q163626/
 	
 	=============================================================================
 	
+
+{% endraw %}

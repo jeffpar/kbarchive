@@ -6,6 +6,8 @@ permalink: /kb/130/Q130898/
 
 ## Q130898: Using Batch Files in Sharing Packages
 
+{% raw %}
+
 	Article: Q130898
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -52,3 +54,5 @@ permalink: /kb/130/Q130898/
 	
 	=============================================================================
 	
+
+{% endraw %}

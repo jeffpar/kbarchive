@@ -6,6 +6,8 @@ permalink: /kb/234/Q234540/
 
 ## Q234540: SP5 Includes Fixes for Stress-Induced Issues
 
+{% raw %}
+
 	Article: Q234540
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/234/Q234540/
 	
 	=============================================================================
 	
+
+{% endraw %}

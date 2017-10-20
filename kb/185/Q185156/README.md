@@ -6,6 +6,8 @@ permalink: /kb/185/Q185156/
 
 ## Q185156: WD97: Spelling Checker Deletes Tab/Spaces from Paragraph Start
 
+{% raw %}
+
 	Article: Q185156
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/185/Q185156/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178183/
 
 ## Q178183: XCLN: Creating New Profile Does Not Prompt for Profile Name
 
+{% raw %}
+
 	Article: Q178183
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0; WINDOWS:4.0,5.0,8.0; :8.0,8.01,8.02,8.03
@@ -94,3 +96,5 @@ permalink: /kb/178/Q178183/
 	
 	=============================================================================
 	
+
+{% endraw %}

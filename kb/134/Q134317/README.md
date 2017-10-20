@@ -6,6 +6,8 @@ permalink: /kb/134/Q134317/
 
 ## Q134317: PRB: Error: Bad Source File Value in INF File Description line
 
+{% raw %}
+
 	Article: Q134317
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -76,3 +78,5 @@ permalink: /kb/134/Q134317/
 	
 	=============================================================================
 	
+
+{% endraw %}

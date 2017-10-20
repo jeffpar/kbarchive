@@ -6,6 +6,8 @@ permalink: /kb/180/Q180002/
 
 ## Q180002: XADM: Error Message: Hotfix Already Installed
 
+{% raw %}
+
 	Article: Q180002
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/180/Q180002/
 	
 	=============================================================================
 	
+
+{% endraw %}

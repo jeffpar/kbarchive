@@ -6,6 +6,8 @@ permalink: /kb/075/Q75439/
 
 ## Q75439: INFO: Tips for Writing DBCS-Compatible Applications
 
+{% raw %}
+
 	Article: Q75439
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -155,3 +157,5 @@ permalink: /kb/075/Q75439/
 	
 	=============================================================================
 	
+
+{% endraw %}

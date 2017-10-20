@@ -6,6 +6,8 @@ permalink: /kb/238/Q238070/
 
 ## Q238070: Computer May Hang if Multiple TSE Users Print Simultaneously
 
+{% raw %}
+
 	Article: Q238070
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -136,3 +138,5 @@ permalink: /kb/238/Q238070/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130596/
 
 ## Q130596: WFWG Mail Password Case Sensitive Only When Changing Password
 
+{% raw %}
+
 	Article: Q130596
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/130/Q130596/
 	
 	=============================================================================
 	
+
+{% endraw %}

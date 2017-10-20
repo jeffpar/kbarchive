@@ -6,6 +6,8 @@ permalink: /kb/074/Q74580/
 
 ## Q74580: German Keyboard Configuration with Typewriter Mode
 
+{% raw %}
+
 	Article: Q74580
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -53,3 +55,5 @@ permalink: /kb/074/Q74580/
 	
 	=============================================================================
 	
+
+{% endraw %}

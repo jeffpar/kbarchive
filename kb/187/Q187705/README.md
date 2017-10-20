@@ -6,6 +6,8 @@ permalink: /kb/187/Q187705/
 
 ## Q187705: Application Error in CorelWEB.GALLERY
 
+{% raw %}
+
 	Article: Q187705
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.0,4.0a; WinNT:4.0
@@ -105,3 +107,5 @@ permalink: /kb/187/Q187705/
 	
 	=============================================================================
 	
+
+{% endraw %}

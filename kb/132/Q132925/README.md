@@ -6,6 +6,8 @@ permalink: /kb/132/Q132925/
 
 ## Q132925: Errors When ATM Is Installed in Windows&#92;Fonts Folder
 
+{% raw %}
+
 	Article: Q132925
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/132/Q132925/
 	
 	=============================================================================
 	
+
+{% endraw %}

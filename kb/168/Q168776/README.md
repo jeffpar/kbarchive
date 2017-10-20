@@ -6,6 +6,8 @@ permalink: /kb/168/Q168776/
 
 ## Q168776: SMSINST: Using the Repackager Successfully
 
+{% raw %}
+
 	Article: Q168776
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.2
@@ -138,3 +140,5 @@ permalink: /kb/168/Q168776/
 	
 	=============================================================================
 	
+
+{% endraw %}

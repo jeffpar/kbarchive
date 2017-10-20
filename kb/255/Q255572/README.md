@@ -6,6 +6,8 @@ permalink: /kb/255/Q255572/
 
 ## Q255572: FIX: Private Data Session and Rich Text Control Cause Error
 
+{% raw %}
+
 	Article: Q255572
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0,7.0
@@ -117,3 +119,5 @@ permalink: /kb/255/Q255572/
 	
 	=============================================================================
 	
+
+{% endraw %}

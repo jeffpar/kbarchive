@@ -6,6 +6,8 @@ permalink: /kb/246/Q246259/
 
 ## Q246259: FP98: Uppercase in Short file's Name Becomes Lowercase
 
+{% raw %}
+
 	Article: Q246259
 	Product(s): Word Front Page
 	Version(s): WINDOWS:
@@ -76,3 +78,5 @@ permalink: /kb/246/Q246259/
 	
 	=============================================================================
 	
+
+{% endraw %}

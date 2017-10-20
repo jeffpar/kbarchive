@@ -6,6 +6,8 @@ permalink: /kb/219/Q219428/
 
 ## Q219428: Cluster Server Returns SCSI Port Errors After Installing SP3
 
+{% raw %}
+
 	Article: Q219428
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP3
@@ -90,3 +92,5 @@ permalink: /kb/219/Q219428/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167196/
 
 ## Q167196: SNA Server 3.0 SP1 Update May Break Named Pipe Clients
 
+{% raw %}
+
 	Article: Q167196
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -111,3 +113,5 @@ permalink: /kb/167/Q167196/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67586/
 
 ## Q67586: Action Taken on Abort, Retry, Ignore, Fail
 
+{% raw %}
+
 	Article: Q67586
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -81,3 +83,5 @@ permalink: /kb/067/Q67586/
 	
 	=============================================================================
 	
+
+{% endraw %}

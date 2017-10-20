@@ -6,6 +6,8 @@ permalink: /kb/288/Q288723/
 
 ## Q288723: Certain SNA PerfMon Counters Cannot Be Added on Windows 2000
 
+{% raw %}
+
 	Article: Q288723
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -93,3 +95,5 @@ permalink: /kb/288/Q288723/
 	
 	=============================================================================
 	
+
+{% endraw %}

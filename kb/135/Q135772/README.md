@@ -6,6 +6,8 @@ permalink: /kb/135/Q135772/
 
 ## Q135772: TMP Files Left After Deinstall of SMS Admin UI Tool
 
+{% raw %}
+
 	Article: Q135772
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -68,3 +70,5 @@ permalink: /kb/135/Q135772/
 	
 	=============================================================================
 	
+
+{% endraw %}

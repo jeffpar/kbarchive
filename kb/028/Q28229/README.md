@@ -6,6 +6,8 @@ permalink: /kb/028/Q28229/
 
 ## Q28229: DOCERR: Result of Operation Stored in DESTINATION, Not SOURCE
 
+{% raw %}
+
 	Article: Q28229
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -39,3 +41,5 @@ permalink: /kb/028/Q28229/
 	
 	=============================================================================
 	
+
+{% endraw %}

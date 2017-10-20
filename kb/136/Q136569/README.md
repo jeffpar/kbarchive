@@ -6,6 +6,8 @@ permalink: /kb/136/Q136569/
 
 ## Q136569: Error Message Received in WINS Manager When Viewing Other Server
 
+{% raw %}
+
 	Article: Q136569
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -53,3 +55,5 @@ permalink: /kb/136/Q136569/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132250/
 
 ## Q132250: SMS Reports Incorrect Disk Information on NetWare Servers
 
+{% raw %}
+
 	Article: Q132250
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -51,3 +53,5 @@ permalink: /kb/132/Q132250/
 	
 	=============================================================================
 	
+
+{% endraw %}

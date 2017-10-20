@@ -6,6 +6,8 @@ permalink: /kb/222/Q222550/
 
 ## Q222550: XFOR: Mail Doesn't Flow from GroupWise to Exchange Server
 
+{% raw %}
+
 	Article: Q222550
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -132,3 +134,5 @@ permalink: /kb/222/Q222550/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258252/
 
 ## Q258252: TN5250 Fails to Issue RECEIVE_AND_WAIT
 
+{% raw %}
+
 	Article: Q258252
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -164,3 +166,5 @@ permalink: /kb/258/Q258252/
 	
 	=============================================================================
 	
+
+{% endraw %}

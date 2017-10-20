@@ -6,6 +6,8 @@ permalink: /kb/122/Q122176/
 
 ## Q122176: SMS Site Reset Recommended Before Upgrade
 
+{% raw %}
+
 	Article: Q122176
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -74,3 +76,5 @@ permalink: /kb/122/Q122176/
 	
 	=============================================================================
 	
+
+{% endraw %}

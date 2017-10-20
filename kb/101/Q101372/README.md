@@ -6,6 +6,8 @@ permalink: /kb/101/Q101372/
 
 ## Q101372: ADT: Use &quot;MSACCESS&quot; in DDEInitiate w/ Run-Time App (1.0, 2.0)
 
+{% raw %}
+
 	Article: Q101372
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.1,2.0
@@ -103,3 +105,5 @@ permalink: /kb/101/Q101372/
 	
 	=============================================================================
 	
+
+{% endraw %}

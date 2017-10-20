@@ -6,6 +6,8 @@ permalink: /kb/175/Q175423/
 
 ## Q175423: Monster Truck Madness Err Msg: Cannot Lock Back Buffer
 
+{% raw %}
+
 	Article: Q175423
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/175/Q175423/
 	
 	=============================================================================
 	
+
+{% endraw %}

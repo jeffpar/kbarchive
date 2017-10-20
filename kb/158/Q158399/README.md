@@ -6,6 +6,8 @@ permalink: /kb/158/Q158399/
 
 ## Q158399: XFOR: The Maximum Time for Delivering the Message Expired
 
+{% raw %}
+
 	Article: Q158399
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/158/Q158399/
 	
 	=============================================================================
 	
+
+{% endraw %}

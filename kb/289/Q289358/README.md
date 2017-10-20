@@ -6,6 +6,8 @@ permalink: /kb/289/Q289358/
 
 ## Q289358: FP: DHTML Effects Don't Occur in All Table Cells
 
+{% raw %}
+
 	Article: Q289358
 	Product(s): Word Front Page
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/289/Q289358/
 	
 	=============================================================================
 	
+
+{% endraw %}

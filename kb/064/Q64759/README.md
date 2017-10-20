@@ -6,6 +6,8 @@ permalink: /kb/064/Q64759/
 
 ## Q64759: INFO: wsprintf() %s Parameters Not Cast to LPSTR
 
+{% raw %}
+
 	Article: Q64759
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -122,3 +124,5 @@ permalink: /kb/064/Q64759/
 	
 	=============================================================================
 	
+
+{% endraw %}

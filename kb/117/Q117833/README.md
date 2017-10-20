@@ -6,6 +6,8 @@ permalink: /kb/117/Q117833/
 
 ## Q117833: FIX: C2662: &quot;'&#95;&#95;vbaseDtor' cannot convert 'this' pointer&quot;
 
+{% raw %}
+
 	Article: Q117833
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5
@@ -116,3 +118,5 @@ permalink: /kb/117/Q117833/
 	
 	=============================================================================
 	
+
+{% endraw %}

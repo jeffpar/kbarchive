@@ -6,6 +6,8 @@ permalink: /kb/157/Q157057/
 
 ## Q157057: XCLN: Display Name from GAL is not Added to PAB
 
+{% raw %}
+
 	Article: Q157057
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :4.0,5.0
@@ -65,3 +67,5 @@ permalink: /kb/157/Q157057/
 	
 	=============================================================================
 	
+
+{% endraw %}

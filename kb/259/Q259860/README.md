@@ -6,6 +6,8 @@ permalink: /kb/259/Q259860/
 
 ## Q259860: Zone: Single Player Game Window Is Distorted, Black, or Hangs
 
+{% raw %}
+
 	Article: Q259860
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/259/Q259860/
 	
 	=============================================================================
 	
+
+{% endraw %}

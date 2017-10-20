@@ -6,6 +6,8 @@ permalink: /kb/093/Q93583/
 
 ## Q93583: Unable to Connect to a Server Using Thomas Conrad TC6242 Card
 
+{% raw %}
+
 	Article: Q93583
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/093/Q93583/
 	
 	=============================================================================
 	
+
+{% endraw %}

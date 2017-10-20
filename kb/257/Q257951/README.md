@@ -6,6 +6,8 @@ permalink: /kb/257/Q257951/
 
 ## Q257951: WD97: Incorrect Result Performing Mail Merge w/Excel Data Source
 
+{% raw %}
+
 	Article: Q257951
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -96,3 +98,5 @@ permalink: /kb/257/Q257951/
 	
 	=============================================================================
 	
+
+{% endraw %}

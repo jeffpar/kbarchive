@@ -6,6 +6,8 @@ permalink: /kb/175/Q175494/
 
 ## Q175494: XFOR: Dequeing SMTP Mail Outside of Dialup Connections
 
+{% raw %}
+
 	Article: Q175494
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -158,3 +160,5 @@ permalink: /kb/175/Q175494/
 	
 	=============================================================================
 	
+
+{% endraw %}

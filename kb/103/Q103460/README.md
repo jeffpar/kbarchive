@@ -6,6 +6,8 @@ permalink: /kb/103/Q103460/
 
 ## Q103460: PC Ext: Running EXTERNAL.EXE Clears the Keyboard Buffer
 
+{% raw %}
+
 	Article: Q103460
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2
@@ -42,3 +44,5 @@ permalink: /kb/103/Q103460/
 	
 	=============================================================================
 	
+
+{% endraw %}

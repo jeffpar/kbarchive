@@ -6,6 +6,8 @@ permalink: /kb/104/Q104510/
 
 ## Q104510: Two NCBs per Session Based on Need Declining as Traffic Climbs
 
+{% raw %}
+
 	Article: Q104510
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/104/Q104510/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161102/
 
 ## Q161102: Removing &quot;Unknown Device&quot; Network Adapter Hangs Computer
 
+{% raw %}
+
 	Article: Q161102
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -65,3 +67,5 @@ permalink: /kb/161/Q161102/
 	
 	=============================================================================
 	
+
+{% endraw %}

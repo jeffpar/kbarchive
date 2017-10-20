@@ -6,6 +6,8 @@ permalink: /kb/129/Q129717/
 
 ## Q129717: Err Msg: Cannot Rename Folder: Cannot Find the Specified...
 
+{% raw %}
+
 	Article: Q129717
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/129/Q129717/
 	
 	=============================================================================
 	
+
+{% endraw %}

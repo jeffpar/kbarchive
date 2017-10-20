@@ -6,6 +6,8 @@ permalink: /kb/138/Q138677/
 
 ## Q138677: BUG: CREATE SQL VIEW Scrambles the Parentheses in SQL Command
 
+{% raw %}
+
 	Article: Q138677
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -81,3 +83,5 @@ permalink: /kb/138/Q138677/
 	
 	=============================================================================
 	
+
+{% endraw %}

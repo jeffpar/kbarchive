@@ -6,6 +6,8 @@ permalink: /kb/099/Q99372/
 
 ## Q99372: Tuning LAN Manager RAS Servers for Windows NT RAS Clients
 
+{% raw %}
+
 	Article: Q99372
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -110,3 +112,5 @@ permalink: /kb/099/Q99372/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247967/
 
 ## Q247967: Setup Hangs After First Restart with S3 Savage/MX or Savage/IX
 
+{% raw %}
+
 	Article: Q247967
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -81,3 +83,5 @@ permalink: /kb/247/Q247967/
 	
 	=============================================================================
 	
+
+{% endraw %}

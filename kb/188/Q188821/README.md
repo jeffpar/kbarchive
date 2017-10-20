@@ -6,6 +6,8 @@ permalink: /kb/188/Q188821/
 
 ## Q188821: FP: Determining if Index Server/FrontPage is Performing Search
 
+{% raw %}
+
 	Article: Q188821
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/188/Q188821/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/093/Q93240/
 
 ## Q93240: PC Win: Accented Characters Lost in Insert from File
 
+{% raw %}
+
 	Article: Q93240
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/093/Q93240/
 	
 	=============================================================================
 	
+
+{% endraw %}

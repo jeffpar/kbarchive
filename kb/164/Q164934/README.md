@@ -6,6 +6,8 @@ permalink: /kb/164/Q164934/
 
 ## Q164934: Error When 16-Bit Application Accesses a File in a Shared Folder
 
+{% raw %}
+
 	Article: Q164934
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/164/Q164934/
 	
 	=============================================================================
 	
+
+{% endraw %}

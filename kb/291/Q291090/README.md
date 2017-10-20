@@ -6,6 +6,8 @@ permalink: /kb/291/Q291090/
 
 ## Q291090: Windows 2000 Resource Kit Missing HWXPAD.DLL
 
+{% raw %}
+
 	Article: Q291090
 	Product(s): Microsoft Press
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/291/Q291090/
 	
 	=============================================================================
 	
+
+{% endraw %}

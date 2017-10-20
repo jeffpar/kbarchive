@@ -6,6 +6,8 @@ permalink: /kb/177/Q177685/
 
 ## Q177685: HOWTO: Handle Missing DataPoints with MSChart
 
+{% raw %}
+
 	Article: Q177685
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -143,3 +145,5 @@ permalink: /kb/177/Q177685/
 	
 	=============================================================================
 	
+
+{% endraw %}

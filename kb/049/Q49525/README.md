@@ -6,6 +6,8 @@ permalink: /kb/049/Q49525/
 
 ## Q49525: Ways to Stop LAN Manager 2.x Server or Workstation
 
+{% raw %}
+
 	Article: Q49525
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/049/Q49525/
 	
 	=============================================================================
 	
+
+{% endraw %}

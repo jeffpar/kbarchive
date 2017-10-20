@@ -6,6 +6,8 @@ permalink: /kb/112/Q112493/
 
 ## Q112493: Multimedia: Pause Button Turns to Play Before Segment Ends
 
+{% raw %}
+
 	Article: Q112493
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/112/Q112493/
 	
 	=============================================================================
 	
+
+{% endraw %}

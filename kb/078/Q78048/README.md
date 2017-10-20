@@ -6,6 +6,8 @@ permalink: /kb/078/Q78048/
 
 ## Q78048: Keyboard Commands More Reliable With Recorder
 
+{% raw %}
+
 	Article: Q78048
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -85,3 +87,5 @@ permalink: /kb/078/Q78048/
 	
 	=============================================================================
 	
+
+{% endraw %}

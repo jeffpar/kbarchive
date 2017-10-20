@@ -6,6 +6,8 @@ permalink: /kb/117/Q117923/
 
 ## Q117923: HP ScanJet IIcx Runs Slowly Under Windows 95
 
+{% raw %}
+
 	Article: Q117923
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/117/Q117923/
 	
 	=============================================================================
 	
+
+{% endraw %}

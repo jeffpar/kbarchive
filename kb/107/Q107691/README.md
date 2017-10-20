@@ -6,6 +6,8 @@ permalink: /kb/107/Q107691/
 
 ## Q107691: Using DebugOutput to Debug a Windows-Based Application
 
+{% raw %}
+
 	Article: Q107691
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -102,3 +104,5 @@ permalink: /kb/107/Q107691/
 	
 	=============================================================================
 	
+
+{% endraw %}

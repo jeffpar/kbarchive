@@ -6,6 +6,8 @@ permalink: /kb/240/Q240155/
 
 ## Q240155: MMC Security Rights Do Not Work with More Than 64 Global Groups
 
+{% raw %}
+
 	Article: Q240155
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -105,3 +107,5 @@ permalink: /kb/240/Q240155/
 	
 	=============================================================================
 	
+
+{% endraw %}

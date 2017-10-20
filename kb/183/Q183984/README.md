@@ -6,6 +6,8 @@ permalink: /kb/183/Q183984/
 
 ## Q183984: How to Obtain Information About Your MSN Classic Account
 
+{% raw %}
+
 	Article: Q183984
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -51,3 +53,5 @@ permalink: /kb/183/Q183984/
 	
 	=============================================================================
 	
+
+{% endraw %}

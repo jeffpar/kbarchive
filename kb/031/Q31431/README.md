@@ -6,6 +6,8 @@ permalink: /kb/031/Q31431/
 
 ## Q31431: Maximum Communications Baud Rate for QuickBASIC Is 9600
 
+{% raw %}
+
 	Article: Q31431
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -32,3 +34,5 @@ permalink: /kb/031/Q31431/
 	3. The Microsoft BASIC PDS Version 7.00 for MS-DOS and MS OS/2
 	
 	4. The Microsoft GW-BASIC Interpreter Version 3.20
+
+{% endraw %}

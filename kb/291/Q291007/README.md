@@ -6,6 +6,8 @@ permalink: /kb/291/Q291007/
 
 ## Q291007: INFO: All Submenu Items Cannot Be Invisible
 
+{% raw %}
+
 	Article: Q291007
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/291/Q291007/
 	
 	=============================================================================
 	
+
+{% endraw %}

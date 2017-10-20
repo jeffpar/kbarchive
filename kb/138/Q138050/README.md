@@ -6,6 +6,8 @@ permalink: /kb/138/Q138050/
 
 ## Q138050: Plug and Play Printer Detected Every Time Windows 95 Starts
 
+{% raw %}
+
 	Article: Q138050
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -92,3 +94,5 @@ permalink: /kb/138/Q138050/
 	
 	=============================================================================
 	
+
+{% endraw %}

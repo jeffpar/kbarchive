@@ -6,6 +6,8 @@ permalink: /kb/286/Q286467/
 
 ## Q286467: MechWarrior 4 Err Msg: STOP: Cannot Create Options.ini
 
+{% raw %}
+
 	Article: Q286467
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -229,3 +231,5 @@ permalink: /kb/286/Q286467/
 	
 	=============================================================================
 	
+
+{% endraw %}

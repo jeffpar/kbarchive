@@ -6,6 +6,8 @@ permalink: /kb/193/Q193695/
 
 ## Q193695: BUG: Right-Aligned Button Text Not Visible in Vertical Toolbar
 
+{% raw %}
+
 	Article: Q193695
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -73,3 +75,5 @@ permalink: /kb/193/Q193695/
 	
 	=============================================================================
 	
+
+{% endraw %}

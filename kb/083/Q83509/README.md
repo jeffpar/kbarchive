@@ -6,6 +6,8 @@ permalink: /kb/083/Q83509/
 
 ## Q83509: Installing Mouse Systems Driver for COM1 under Windows 3.1
 
+{% raw %}
+
 	Article: Q83509
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/083/Q83509/
 	
 	=============================================================================
 	
+
+{% endraw %}

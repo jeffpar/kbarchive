@@ -6,6 +6,8 @@ permalink: /kb/191/Q191201/
 
 ## Q191201: BUG: Cannot Edit User Defined Type in Watch Window
 
+{% raw %}
+
 	Article: Q191201
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -125,3 +127,5 @@ permalink: /kb/191/Q191201/
 	
 	=============================================================================
 	
+
+{% endraw %}

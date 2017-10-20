@@ -6,6 +6,8 @@ permalink: /kb/153/Q153436/
 
 ## Q153436: MSB: Hangs on Exit with Alliance Promotion Video Driver
 
+{% raw %}
+
 	Article: Q153436
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/153/Q153436/
 	
 	=============================================================================
 	
+
+{% endraw %}

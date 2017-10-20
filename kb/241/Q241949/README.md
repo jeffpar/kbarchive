@@ -6,6 +6,8 @@ permalink: /kb/241/Q241949/
 
 ## Q241949: BUG: C2059 Error on Out-Of-Class Definition of Member Templates
 
+{% raw %}
+
 	Article: Q241949
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/241/Q241949/
 	
 	=============================================================================
 	
+
+{% endraw %}

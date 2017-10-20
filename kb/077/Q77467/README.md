@@ -6,6 +6,8 @@ permalink: /kb/077/Q77467/
 
 ## Q77467: INFO: Verifying the Printer Connection
 
+{% raw %}
+
 	Article: Q77467
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -100,3 +102,5 @@ permalink: /kb/077/Q77467/
 	
 	=============================================================================
 	
+
+{% endraw %}

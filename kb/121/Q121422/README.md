@@ -6,6 +6,8 @@ permalink: /kb/121/Q121422/
 
 ## Q121422: How the UseMRCI1= Switch in DRVSPACE.INI Works in MS-DOS 6.22
 
+{% raw %}
+
 	Article: Q121422
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -70,3 +72,5 @@ permalink: /kb/121/Q121422/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135180/
 
 ## Q135180: Device Manager Reports a PCI-to-ISA Bridge Conflict
 
+{% raw %}
+
 	Article: Q135180
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -46,3 +48,5 @@ permalink: /kb/135/Q135180/
 	
 	=============================================================================
 	
+
+{% endraw %}

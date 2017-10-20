@@ -6,6 +6,8 @@ permalink: /kb/165/Q165590/
 
 ## Q165590: File Errors from 16-bit OLE Applications
 
+{% raw %}
+
 	Article: Q165590
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -79,3 +81,5 @@ permalink: /kb/165/Q165590/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139635/
 
 ## Q139635: RAS Authentication of Third Party PPP SPAP Clients Fail
 
+{% raw %}
+
 	Article: Q139635
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -60,3 +62,5 @@ permalink: /kb/139/Q139635/
 	
 	=============================================================================
 	
+
+{% endraw %}

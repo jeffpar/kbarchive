@@ -6,6 +6,8 @@ permalink: /kb/177/Q177447/
 
 ## Q177447: Cannot Change Printer Ports on a Printer
 
+{% raw %}
+
 	Article: Q177447
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/177/Q177447/
 	
 	=============================================================================
 	
+
+{% endraw %}

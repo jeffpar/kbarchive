@@ -6,6 +6,8 @@ permalink: /kb/085/Q85123/
 
 ## Q85123: Vector Fonts Can't Be Printed If TrueType As Graphics Selected
 
+{% raw %}
+
 	Article: Q85123
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/085/Q85123/
 	
 	=============================================================================
 	
+
+{% endraw %}

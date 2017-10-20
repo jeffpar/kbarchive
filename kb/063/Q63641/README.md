@@ -6,6 +6,8 @@ permalink: /kb/063/Q63641/
 
 ## Q63641: Configuring IBM PS/2s &amp; 3Com Adapters for Thick Ethernet
 
+{% raw %}
+
 	Article: Q63641
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/063/Q63641/
 	
 	=============================================================================
 	
+
+{% endraw %}

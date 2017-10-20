@@ -6,6 +6,8 @@ permalink: /kb/086/Q86148/
 
 ## Q86148: PROFS: How to Check Whether Mail Is Queued
 
+{% raw %}
+
 	Article: Q86148
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -52,3 +54,5 @@ permalink: /kb/086/Q86148/
 	
 	=============================================================================
 	
+
+{% endraw %}

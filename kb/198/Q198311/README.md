@@ -6,6 +6,8 @@ permalink: /kb/198/Q198311/
 
 ## Q198311: WD97: Style Does Not Change with Automatically Update Setting On
 
+{% raw %}
+
 	Article: Q198311
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/198/Q198311/
 	
 	=============================================================================
 	
+
+{% endraw %}

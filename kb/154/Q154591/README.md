@@ -6,6 +6,8 @@ permalink: /kb/154/Q154591/
 
 ## Q154591: FIX: Wrong Version of MSVCRT40.DLL(Forwarder DLL) in Windows 95
 
+{% raw %}
+
 	Article: Q154591
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -115,3 +117,5 @@ permalink: /kb/154/Q154591/
 	
 	=============================================================================
 	
+
+{% endraw %}

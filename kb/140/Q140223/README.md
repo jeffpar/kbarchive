@@ -6,6 +6,8 @@ permalink: /kb/140/Q140223/
 
 ## Q140223: PRB: Syntax Error When Convert 2.x Screen That Has a Spinner
 
+{% raw %}
+
 	Article: Q140223
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -97,3 +99,5 @@ permalink: /kb/140/Q140223/
 	
 	=============================================================================
 	
+
+{% endraw %}

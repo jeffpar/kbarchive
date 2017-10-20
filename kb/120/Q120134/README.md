@@ -6,6 +6,8 @@ permalink: /kb/120/Q120134/
 
 ## Q120134: Workgroup Add-On for MS-DOS Continuously Accesses Hard Disk
 
+{% raw %}
+
 	Article: Q120134
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -57,3 +59,5 @@ permalink: /kb/120/Q120134/
 	
 	=============================================================================
 	
+
+{% endraw %}

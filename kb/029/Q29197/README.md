@@ -6,6 +6,8 @@ permalink: /kb/029/Q29197/
 
 ## Q29197: INFO: Pointer Subtraction Yields Signed Value
 
+{% raw %}
+
 	Article: Q29197
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,4.1,5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/029/Q29197/
 	
 	=============================================================================
 	
+
+{% endraw %}

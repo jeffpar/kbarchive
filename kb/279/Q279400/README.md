@@ -6,6 +6,8 @@ permalink: /kb/279/Q279400/
 
 ## Q279400: MechWarrior 4: Vengeance: Contents of the Readme.rtf File, Pt 2
 
+{% raw %}
+
 	Article: Q279400
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -445,3 +447,5 @@ permalink: /kb/279/Q279400/
 	
 	=============================================================================
 	
+
+{% endraw %}

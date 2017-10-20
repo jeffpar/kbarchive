@@ -6,6 +6,8 @@ permalink: /kb/125/Q125477/
 
 ## Q125477: Windows NT Workstation Broadcasts to LAN Manager 2.x Clients
 
+{% raw %}
+
 	Article: Q125477
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/125/Q125477/
 	
 	=============================================================================
 	
+
+{% endraw %}

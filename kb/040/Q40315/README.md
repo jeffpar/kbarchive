@@ -6,6 +6,8 @@ permalink: /kb/040/Q40315/
 
 ## Q40315: QC 2.00 SAMPLES.DOC: Sample Program Descriptions
 
+{% raw %}
+
 	Article: Q40315
 	Product(s): See article
 	Version(s): 2.00
@@ -47,3 +49,5 @@ permalink: /kb/040/Q40315/
 	                      that each line is terminated by a carriage-return/
 	                      line-feed pair. CRLF.EXE is also provided on the
 	                      utilities disk.
+
+{% endraw %}

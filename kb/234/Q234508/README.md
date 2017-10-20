@@ -6,6 +6,8 @@ permalink: /kb/234/Q234508/
 
 ## Q234508: SMS: How to Determine SMS Thread Responsible for High CPU Use
 
+{% raw %}
+
 	Article: Q234508
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -97,3 +99,5 @@ permalink: /kb/234/Q234508/
 	
 	=============================================================================
 	
+
+{% endraw %}

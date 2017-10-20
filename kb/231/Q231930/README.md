@@ -6,6 +6,8 @@ permalink: /kb/231/Q231930/
 
 ## Q231930: Non-US Locales Cause Index Server Queries to Not Work
 
+{% raw %}
+
 	Article: Q231930
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:2.1; winnt:2.0,4.0 SP4
@@ -103,3 +105,5 @@ permalink: /kb/231/Q231930/
 	
 	=============================================================================
 	
+
+{% endraw %}

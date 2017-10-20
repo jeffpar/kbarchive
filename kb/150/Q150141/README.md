@@ -6,6 +6,8 @@ permalink: /kb/150/Q150141/
 
 ## Q150141: XADM: Auto Prefixing of Messages Sent Out the IMC
 
+{% raw %}
+
 	Article: Q150141
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/150/Q150141/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/047/Q47764/
 
 ## Q47764: Ambiguous Documentation of Enter ASCII (EA) Command
 
+{% raw %}
+
 	Article: Q47764
 	Product(s): See article
 	Version(s): 2.10 2.20 | 2.10 2.20
@@ -61,3 +63,5 @@ permalink: /kb/047/Q47764/
 	address of that specific character is a constant value. Since a
 	constant cannot be modified, EA changes the block of memory starting
 	at where the constant pointer is pointing.
+
+{% endraw %}

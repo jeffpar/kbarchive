@@ -6,6 +6,8 @@ permalink: /kb/094/Q94467/
 
 ## Q94467: MHS: Updating the MHS Gateway To Version 3.0
 
+{% raw %}
+
 	Article: Q94467
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/094/Q94467/
 	
 	=============================================================================
 	
+
+{% endraw %}

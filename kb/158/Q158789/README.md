@@ -6,6 +6,8 @@ permalink: /kb/158/Q158789/
 
 ## Q158789: Unexpected DRDA Reply Codepoint X.'220'C
 
+{% raw %}
+
 	Article: Q158789
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -64,3 +66,5 @@ permalink: /kb/158/Q158789/
 	
 	=============================================================================
 	
+
+{% endraw %}

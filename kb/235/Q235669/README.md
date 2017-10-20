@@ -6,6 +6,8 @@ permalink: /kb/235/Q235669/
 
 ## Q235669: XADM: Exchange Server 5.5 Setup Fails on Windows 2000 Server
 
+{% raw %}
+
 	Article: Q235669
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; winnt:5.5
@@ -89,3 +91,5 @@ permalink: /kb/235/Q235669/
 	
 	=============================================================================
 	
+
+{% endraw %}

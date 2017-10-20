@@ -6,6 +6,8 @@ permalink: /kb/131/Q131313/
 
 ## Q131313: HOWTO: Create 32-bit Import Libraries Without .OBJs or Source
 
+{% raw %}
+
 	Article: Q131313
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,5.0
@@ -183,3 +185,5 @@ permalink: /kb/131/Q131313/
 	
 	=============================================================================
 	
+
+{% endraw %}

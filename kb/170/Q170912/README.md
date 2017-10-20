@@ -6,6 +6,8 @@ permalink: /kb/170/Q170912/
 
 ## Q170912: WD97: Fonts in Converted RTF File Not Mapped Correctly
 
+{% raw %}
+
 	Article: Q170912
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -111,3 +113,5 @@ permalink: /kb/170/Q170912/
 	
 	=============================================================================
 	
+
+{% endraw %}

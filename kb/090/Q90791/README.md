@@ -6,6 +6,8 @@ permalink: /kb/090/Q90791/
 
 ## Q90791: DOCERR: Minimal SDK Profiler Functions Required
 
+{% raw %}
+
 	Article: Q90791
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -59,3 +61,5 @@ permalink: /kb/090/Q90791/
 	
 	=============================================================================
 	
+
+{% endraw %}

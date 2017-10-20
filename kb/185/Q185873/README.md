@@ -6,6 +6,8 @@ permalink: /kb/185/Q185873/
 
 ## Q185873: Reg.exe Displays Access Denied Error When Querying Registry
 
+{% raw %}
+
 	Article: Q185873
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/185/Q185873/
 	
 	=============================================================================
 	
+
+{% endraw %}

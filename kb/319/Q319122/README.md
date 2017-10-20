@@ -6,6 +6,8 @@ permalink: /kb/319/Q319122/
 
 ## Q319122: Slow Network Performance, and Event ID 3013 Is Logged
 
+{% raw %}
+
 	Article: Q319122
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -99,3 +101,5 @@ permalink: /kb/319/Q319122/
 	
 	=============================================================================
 	
+
+{% endraw %}

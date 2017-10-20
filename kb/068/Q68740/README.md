@@ -6,6 +6,8 @@ permalink: /kb/068/Q68740/
 
 ## Q68740: ASD: 747 Won't Move with Full Throttle
 
+{% raw %}
+
 	Article: Q68740
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/068/Q68740/
 	
 	=============================================================================
 	
+
+{% endraw %}

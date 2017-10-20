@@ -6,6 +6,8 @@ permalink: /kb/094/Q94656/
 
 ## Q94656: Excessive Memory Consumption in MS-DOS with WFWG
 
+{% raw %}
+
 	Article: Q94656
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0,3.11
@@ -53,3 +55,5 @@ permalink: /kb/094/Q94656/
 	
 	=============================================================================
 	
+
+{% endraw %}

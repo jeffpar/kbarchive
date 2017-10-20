@@ -6,6 +6,8 @@ permalink: /kb/201/Q201762/
 
 ## Q201762: SMS: Software Metering Clients Receive Error in liccli.log
 
+{% raw %}
+
 	Article: Q201762
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/201/Q201762/
 	
 	=============================================================================
 	
+
+{% endraw %}

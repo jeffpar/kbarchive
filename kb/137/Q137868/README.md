@@ -6,6 +6,8 @@ permalink: /kb/137/Q137868/
 
 ## Q137868: Changing Modem for DUN Connectoid Restores Default Settings
 
+{% raw %}
+
 	Article: Q137868
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/137/Q137868/
 	
 	=============================================================================
 	
+
+{% endraw %}

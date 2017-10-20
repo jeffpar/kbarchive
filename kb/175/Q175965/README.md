@@ -6,6 +6,8 @@ permalink: /kb/175/Q175965/
 
 ## Q175965: XFOR: MSMI Crashes Logging NDR Event, Generates Event ID 2380
 
+{% raw %}
+
 	Article: Q175965
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -82,3 +84,5 @@ permalink: /kb/175/Q175965/
 	
 	=============================================================================
 	
+
+{% endraw %}

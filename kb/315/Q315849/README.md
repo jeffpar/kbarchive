@@ -6,6 +6,8 @@ permalink: /kb/315/Q315849/
 
 ## Q315849: Programming Microsoft Windows With C# Comments And Corrections
 
+{% raw %}
+
 	Article: Q315849
 	Product(s): Microsoft Press
 	Version(s): 
@@ -387,3 +389,5 @@ permalink: /kb/315/Q315849/
 	
 	=============================================================================
 	
+
+{% endraw %}

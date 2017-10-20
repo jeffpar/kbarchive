@@ -6,6 +6,8 @@ permalink: /kb/172/Q172432/
 
 ## Q172432: ODE97: Setup Wizard Doesn't Include Intl ActiveX Dependency DLL
 
+{% raw %}
+
 	Article: Q172432
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/172/Q172432/
 	
 	=============================================================================
 	
+
+{% endraw %}

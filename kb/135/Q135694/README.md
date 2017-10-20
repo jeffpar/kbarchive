@@ -6,6 +6,8 @@ permalink: /kb/135/Q135694/
 
 ## Q135694: HP NS ARPA Services Support for Microsoft Network Clients
 
+{% raw %}
+
 	Article: Q135694
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.2c,3.11,3.11a,3.11b; WINDOWS:3.11
@@ -47,3 +49,5 @@ permalink: /kb/135/Q135694/
 	
 	=============================================================================
 	
+
+{% endraw %}

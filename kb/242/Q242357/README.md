@@ -6,6 +6,8 @@ permalink: /kb/242/Q242357/
 
 ## Q242357: Active Accessibility Sample Does Not Function with Active Access
 
+{% raw %}
+
 	Article: Q242357
 	Product(s): Microsoft Press
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/242/Q242357/
 	
 	=============================================================================
 	
+
+{% endraw %}

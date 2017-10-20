@@ -6,6 +6,8 @@ permalink: /kb/075/Q75491/
 
 ## Q75491: Performing a Transparent Sweep Within Paintbrush
 
+{% raw %}
+
 	Article: Q75491
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -70,3 +72,5 @@ permalink: /kb/075/Q75491/
 	
 	=============================================================================
 	
+
+{% endraw %}

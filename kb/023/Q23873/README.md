@@ -6,6 +6,8 @@ permalink: /kb/023/Q23873/
 
 ## Q23873: R6002 &quot;Floating Point Not Loaded&quot; May Result from printf() Use
 
+{% raw %}
+
 	Article: Q23873
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -34,3 +36,5 @@ permalink: /kb/023/Q23873/
 	To work around this problem, just declare and initialize a floating
 	point variable in your program. This will force the floating point
 	support to be linked into the .EXE file.
+
+{% endraw %}

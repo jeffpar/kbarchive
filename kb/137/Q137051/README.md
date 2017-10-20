@@ -6,6 +6,8 @@ permalink: /kb/137/Q137051/
 
 ## Q137051: Cannot Play .avi Files with Number 9 Video Card
 
+{% raw %}
+
 	Article: Q137051
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -122,3 +124,5 @@ permalink: /kb/137/Q137051/
 	
 	=============================================================================
 	
+
+{% endraw %}

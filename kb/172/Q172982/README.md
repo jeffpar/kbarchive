@@ -6,6 +6,8 @@ permalink: /kb/172/Q172982/
 
 ## Q172982: 16-bit ShellExecute Fails if Application Exists in Long Path
 
+{% raw %}
+
 	Article: Q172982
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/172/Q172982/
 	
 	=============================================================================
 	
+
+{% endraw %}

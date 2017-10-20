@@ -6,6 +6,8 @@ permalink: /kb/035/Q35649/
 
 ## Q35649: Width Function Not implemented
 
+{% raw %}
+
 	Article: Q35649
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -20,3 +22,5 @@ permalink: /kb/035/Q35649/
 	
 	This feature is under review and will be considered for inclusion in
 	a future release.
+
+{% endraw %}

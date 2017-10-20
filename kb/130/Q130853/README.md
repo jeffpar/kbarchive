@@ -6,6 +6,8 @@ permalink: /kb/130/Q130853/
 
 ## Q130853: Distributable Files in Visual FoxPro Distribution Kit
 
+{% raw %}
+
 	Article: Q130853
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -97,3 +99,5 @@ permalink: /kb/130/Q130853/
 	
 	=============================================================================
 	
+
+{% endraw %}

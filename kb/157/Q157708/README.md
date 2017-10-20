@@ -6,6 +6,8 @@ permalink: /kb/157/Q157708/
 
 ## Q157708: XADM: MTA Error 9405
 
+{% raw %}
+
 	Article: Q157708
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/157/Q157708/
 	
 	=============================================================================
 	
+
+{% endraw %}

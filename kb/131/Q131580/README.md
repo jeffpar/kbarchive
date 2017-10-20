@@ -6,6 +6,8 @@ permalink: /kb/131/Q131580/
 
 ## Q131580: PRB: ODBC Converts Microsoft Excel Character Data to Memos
 
+{% raw %}
+
 	Article: Q131580
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -102,3 +104,5 @@ permalink: /kb/131/Q131580/
 	
 	=============================================================================
 	
+
+{% endraw %}

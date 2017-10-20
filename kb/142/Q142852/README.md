@@ -6,6 +6,8 @@ permalink: /kb/142/Q142852/
 
 ## Q142852: Unable to Install Digiboard PC 8e (8k) Adapter
 
+{% raw %}
+
 	Article: Q142852
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -56,3 +58,5 @@ permalink: /kb/142/Q142852/
 	
 	=============================================================================
 	
+
+{% endraw %}

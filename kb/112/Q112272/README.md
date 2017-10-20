@@ -6,6 +6,8 @@ permalink: /kb/112/Q112272/
 
 ## Q112272: PC DOS: Monitor and Operator TSRs Only Use POL and PAL
 
+{% raw %}
+
 	Article: Q112272
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -41,3 +43,5 @@ permalink: /kb/112/Q112272/
 	
 	=============================================================================
 	
+
+{% endraw %}

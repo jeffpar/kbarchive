@@ -6,6 +6,8 @@ permalink: /kb/085/Q85169/
 
 ## Q85169: Color PRINT SCREEN from MS-DOS Application Is Black and White
 
+{% raw %}
+
 	Article: Q85169
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/085/Q85169/
 	
 	=============================================================================
 	
+
+{% endraw %}

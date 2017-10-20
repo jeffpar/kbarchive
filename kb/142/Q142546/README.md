@@ -6,6 +6,8 @@ permalink: /kb/142/Q142546/
 
 ## Q142546: How to Use a RAM Drive to Troubleshoot Memory
 
+{% raw %}
+
 	Article: Q142546
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -126,3 +128,5 @@ permalink: /kb/142/Q142546/
 	
 	=============================================================================
 	
+
+{% endraw %}

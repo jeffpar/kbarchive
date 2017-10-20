@@ -6,6 +6,8 @@ permalink: /kb/220/Q220888/
 
 ## Q220888: PRB: ErrMsg Returned w/Server-Side Cursorlocation for MSAccess
 
+{% raw %}
+
 	Article: Q220888
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -104,3 +106,5 @@ permalink: /kb/220/Q220888/
 	
 	=============================================================================
 	
+
+{% endraw %}

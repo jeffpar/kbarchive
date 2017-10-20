@@ -6,6 +6,8 @@ permalink: /kb/157/Q157189/
 
 ## Q157189: FIX: MLINE() with Select-SQL Group By Clause Causes Error
 
+{% raw %}
+
 	Article: Q157189
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -68,3 +70,5 @@ permalink: /kb/157/Q157189/
 	
 	=============================================================================
 	
+
+{% endraw %}

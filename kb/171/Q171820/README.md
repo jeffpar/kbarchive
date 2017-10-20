@@ -6,6 +6,8 @@ permalink: /kb/171/Q171820/
 
 ## Q171820: FIX: ListView/ListItems Don't Refresh When ColumnHeaders Cleared
 
+{% raw %}
+
 	Article: Q171820
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -91,3 +93,5 @@ permalink: /kb/171/Q171820/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263089/
 
 ## Q263089: WD97: &quot;This Is Not a Valid Filename&quot; Saving to Floppy Disk Drive
 
+{% raw %}
+
 	Article: Q263089
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97; :4.0
@@ -116,3 +118,5 @@ permalink: /kb/263/Q263089/
 	
 	=============================================================================
 	
+
+{% endraw %}

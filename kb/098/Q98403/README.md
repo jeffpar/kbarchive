@@ -6,6 +6,8 @@ permalink: /kb/098/Q98403/
 
 ## Q98403: DoubleSpace Err Msg: There Was a Problem Reading...
 
+{% raw %}
+
 	Article: Q98403
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -48,3 +50,5 @@ permalink: /kb/098/Q98403/
 	
 	=============================================================================
 	
+
+{% endraw %}

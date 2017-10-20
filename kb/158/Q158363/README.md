@@ -6,6 +6,8 @@ permalink: /kb/158/Q158363/
 
 ## Q158363: XADM: Acceptable Form of X.400 O/R Addresses in Exchange
 
+{% raw %}
+
 	Article: Q158363
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/158/Q158363/
 	
 	=============================================================================
 	
+
+{% endraw %}

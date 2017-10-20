@@ -6,6 +6,8 @@ permalink: /kb/137/Q137966/
 
 ## Q137966: Changing NetBIOS Name Resolution Order in Windows for Workgroups
 
+{% raw %}
+
 	Article: Q137966
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 1.0
@@ -76,3 +78,5 @@ permalink: /kb/137/Q137966/
 	
 	=============================================================================
 	
+
+{% endraw %}

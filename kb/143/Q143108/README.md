@@ -6,6 +6,8 @@ permalink: /kb/143/Q143108/
 
 ## Q143108: FIX: Assertion Failed Line 388 of Occmgr.cpp
 
+{% raw %}
+
 	Article: Q143108
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -105,3 +107,5 @@ permalink: /kb/143/Q143108/
 	
 	=============================================================================
 	
+
+{% endraw %}

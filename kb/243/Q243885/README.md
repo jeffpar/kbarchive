@@ -6,6 +6,8 @@ permalink: /kb/243/Q243885/
 
 ## Q243885: XFOR: Overview of the Exchange Application Converter for Notes
 
+{% raw %}
+
 	Article: Q243885
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -82,3 +84,5 @@ permalink: /kb/243/Q243885/
 	
 	=============================================================================
 	
+
+{% endraw %}

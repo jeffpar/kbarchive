@@ -6,6 +6,8 @@ permalink: /kb/131/Q131877/
 
 ## Q131877: How to Create Default PIF for MS-DOS-Based Programs
 
+{% raw %}
+
 	Article: Q131877
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/131/Q131877/
 	
 	=============================================================================
 	
+
+{% endraw %}

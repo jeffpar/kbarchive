@@ -6,6 +6,8 @@ permalink: /kb/122/Q122320/
 
 ## Q122320: Problems with Client PCMWIN16 and Mandatory Jobs
 
+{% raw %}
+
 	Article: Q122320
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -64,3 +66,5 @@ permalink: /kb/122/Q122320/
 	
 	=============================================================================
 	
+
+{% endraw %}

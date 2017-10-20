@@ -6,6 +6,8 @@ permalink: /kb/128/Q128822/
 
 ## Q128822: Fax/Modem Settings Ignored by Microsoft Fax
 
+{% raw %}
+
 	Article: Q128822
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/128/Q128822/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31882/
 
 ## Q31882: DATA Statements Not Allowed in SUB or FUNCTION Procedures
 
+{% raw %}
+
 	Article: Q31882
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -38,3 +40,5 @@ permalink: /kb/031/Q31882/
 	   module that are outside a SUB or FUNCTION definition. Error- or
 	   event-handling code and declarative statements such as COMMON,
 	   DECLARE, and TYPE can appear only at the module level.
+
+{% endraw %}

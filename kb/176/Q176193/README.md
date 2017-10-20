@@ -6,6 +6,8 @@ permalink: /kb/176/Q176193/
 
 ## Q176193: XCON: Outbound Conversion of UTF Messages Causes Infinite Loop
 
+{% raw %}
+
 	Article: Q176193
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -59,3 +61,5 @@ permalink: /kb/176/Q176193/
 	
 	=============================================================================
 	
+
+{% endraw %}

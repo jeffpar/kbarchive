@@ -6,6 +6,8 @@ permalink: /kb/160/Q160481/
 
 ## Q160481: Encarta 97: Setup Status Never Reaches 100 Percent
 
+{% raw %}
+
 	Article: Q160481
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997
@@ -52,3 +54,5 @@ permalink: /kb/160/Q160481/
 	
 	=============================================================================
 	
+
+{% endraw %}

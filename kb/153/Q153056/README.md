@@ -6,6 +6,8 @@ permalink: /kb/153/Q153056/
 
 ## Q153056: DOCFIX: Error in Code Sample for ColContaining Method
 
+{% raw %}
+
 	Article: Q153056
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -58,3 +60,5 @@ permalink: /kb/153/Q153056/
 	
 	=============================================================================
 	
+
+{% endraw %}

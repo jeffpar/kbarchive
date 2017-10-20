@@ -6,6 +6,8 @@ permalink: /kb/060/Q60651/
 
 ## Q60651: C 6.00 SAMPLES.DOC: Note on Naming Conventions
 
+{% raw %}
+
 	Article: Q60651
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -30,3 +32,5 @@ permalink: /kb/060/Q60651/
 	with an uppercase letter. For example, an identifier called
 	achFileName is an array (a) of characters (ch) containing a filename
 	(FileName).
+
+{% endraw %}

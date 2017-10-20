@@ -6,6 +6,8 @@ permalink: /kb/112/Q112640/
 
 ## Q112640: Odvarlb.exe Pages Down in Owner-Draw Variable List Box
 
+{% raw %}
+
 	Article: Q112640
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -199,3 +201,5 @@ permalink: /kb/112/Q112640/
 	
 	=============================================================================
 	
+
+{% endraw %}

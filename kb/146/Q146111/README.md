@@ -6,6 +6,8 @@ permalink: /kb/146/Q146111/
 
 ## Q146111: Perfmon Lists &#92; On Instance List For Network Segment Counters
 
+{% raw %}
+
 	Article: Q146111
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -52,3 +54,5 @@ permalink: /kb/146/Q146111/
 	
 	=============================================================================
 	
+
+{% endraw %}

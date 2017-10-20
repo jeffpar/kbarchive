@@ -6,6 +6,8 @@ permalink: /kb/270/Q270420/
 
 ## Q270420: MB_SERVICE_NOTIFICATION Message Box May Not Exit the Process
 
+{% raw %}
+
 	Article: Q270420
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6,4.0 SP6a
@@ -94,3 +96,5 @@ permalink: /kb/270/Q270420/
 	
 	=============================================================================
 	
+
+{% endraw %}

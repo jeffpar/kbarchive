@@ -6,6 +6,8 @@ permalink: /kb/179/Q179608/
 
 ## Q179608: XCLN: Exchange Client Message Body Appendage Not Visible
 
+{% raw %}
+
 	Article: Q179608
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -49,3 +51,5 @@ permalink: /kb/179/Q179608/
 	
 	=============================================================================
 	
+
+{% endraw %}

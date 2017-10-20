@@ -6,6 +6,8 @@ permalink: /kb/060/Q60967/
 
 ## Q60967: Dynamic Arrays, Far Strings Overwrite COMMAND.COM
 
+{% raw %}
+
 	Article: Q60967
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -62,3 +64,5 @@ permalink: /kb/060/Q60967/
 	COMMAND.COM. If the array were much smaller, COMMAND.COM would remain
 	intact. Note that even larger dynamic arrays that aren't huge (over
 	64K) can cause COMMAND.COM to be overwritten.
+
+{% endraw %}

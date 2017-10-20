@@ -6,6 +6,8 @@ permalink: /kb/165/Q165820/
 
 ## Q165820: Iomega Jaz Drive Not Recognized on Some Compaq Portables
 
+{% raw %}
+
 	Article: Q165820
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/165/Q165820/
 	
 	=============================================================================
 	
+
+{% endraw %}

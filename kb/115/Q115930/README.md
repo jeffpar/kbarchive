@@ -6,6 +6,8 @@ permalink: /kb/115/Q115930/
 
 ## Q115930: TBMI2.COM May Be Required on Alpha and MIPS Computers
 
+{% raw %}
+
 	Article: Q115930
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -63,3 +65,5 @@ permalink: /kb/115/Q115930/
 	
 	=============================================================================
 	
+
+{% endraw %}

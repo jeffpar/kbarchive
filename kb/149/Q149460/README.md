@@ -6,6 +6,8 @@ permalink: /kb/149/Q149460/
 
 ## Q149460: BUG: 16-Bit Setup Does Not Detect a 32-Bit Installation
 
+{% raw %}
+
 	Article: Q149460
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -73,3 +75,5 @@ permalink: /kb/149/Q149460/
 	
 	=============================================================================
 	
+
+{% endraw %}

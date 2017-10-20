@@ -6,6 +6,8 @@ permalink: /kb/267/Q267258/
 
 ## Q267258: SMS Hotfixes Not Installed If &quot;Full Version&quot; Value Is Missing
 
+{% raw %}
+
 	Article: Q267258
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -105,3 +107,5 @@ permalink: /kb/267/Q267258/
 	
 	=============================================================================
 	
+
+{% endraw %}

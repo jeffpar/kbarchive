@@ -6,6 +6,8 @@ permalink: /kb/197/Q197136/
 
 ## Q197136: WD97: Style Deleted from Style Dialog Box Remains in Template
 
+{% raw %}
+
 	Article: Q197136
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -138,3 +140,5 @@ permalink: /kb/197/Q197136/
 	
 	=============================================================================
 	
+
+{% endraw %}

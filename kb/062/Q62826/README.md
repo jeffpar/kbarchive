@@ -6,6 +6,8 @@ permalink: /kb/062/Q62826/
 
 ## Q62826: Zenith Computers and SWAPFILE.EXE with Windows 3.0
 
+{% raw %}
+
 	Article: Q62826
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/062/Q62826/
 	
 	=============================================================================
 	
+
+{% endraw %}

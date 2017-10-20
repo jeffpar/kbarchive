@@ -6,6 +6,8 @@ permalink: /kb/258/Q258816/
 
 ## Q258816: Microsoft Windows 2000 Server Resource Kit Comments and Correcti
 
+{% raw %}
+
 	Article: Q258816
 	Product(s): Microsoft Press
 	Version(s): 
@@ -441,3 +443,5 @@ permalink: /kb/258/Q258816/
 	
 	=============================================================================
 	
+
+{% endraw %}

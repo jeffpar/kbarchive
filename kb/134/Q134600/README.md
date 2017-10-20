@@ -6,6 +6,8 @@ permalink: /kb/134/Q134600/
 
 ## Q134600: RPL Setup Err Msg: Missing Batch File
 
+{% raw %}
+
 	Article: Q134600
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/134/Q134600/
 	
 	=============================================================================
 	
+
+{% endraw %}

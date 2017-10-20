@@ -6,6 +6,8 @@ permalink: /kb/171/Q171361/
 
 ## Q171361: Default Document Not Have .Asp Extension w/ Only Execute Access
 
+{% raw %}
+
 	Article: Q171361
 	Product(s): Internet Information Server
 	Version(s): WinNT:3.0
@@ -53,3 +55,5 @@ permalink: /kb/171/Q171361/
 	
 	=============================================================================
 	
+
+{% endraw %}

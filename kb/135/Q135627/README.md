@@ -6,6 +6,8 @@ permalink: /kb/135/Q135627/
 
 ## Q135627: FIX: Logical Fields Unavailable in Step 4 of Query Wizard
 
+{% raw %}
+
 	Article: Q135627
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/135/Q135627/
 	
 	=============================================================================
 	
+
+{% endraw %}

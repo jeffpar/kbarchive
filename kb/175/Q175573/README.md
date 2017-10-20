@@ -6,6 +6,8 @@ permalink: /kb/175/Q175573/
 
 ## Q175573: XWEB: Outlook Web Access Gives Bus Error
 
+{% raw %}
+
 	Article: Q175573
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -49,3 +51,5 @@ permalink: /kb/175/Q175573/
 	
 	=============================================================================
 	
+
+{% endraw %}

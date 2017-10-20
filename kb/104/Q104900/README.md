@@ -6,6 +6,8 @@ permalink: /kb/104/Q104900/
 
 ## Q104900: DOCERR: Q Edit Descriptor and % Intrinsics Not Supported
 
+{% raw %}
+
 	Article: Q104900
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -66,3 +68,5 @@ permalink: /kb/104/Q104900/
 	
 	=============================================================================
 	
+
+{% endraw %}

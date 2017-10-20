@@ -6,6 +6,8 @@ permalink: /kb/146/Q146883/
 
 ## Q146883: ADT2: WX1200 OLE Controls Cause Error Without OLE 2.02 or Later
 
+{% raw %}
+
 	Article: Q146883
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -63,3 +65,5 @@ permalink: /kb/146/Q146883/
 	
 	=============================================================================
 	
+
+{% endraw %}

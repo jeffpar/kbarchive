@@ -6,6 +6,8 @@ permalink: /kb/126/Q126095/
 
 ## Q126095: NCR StarLan 16/4 TokenRing NAU Not Supported
 
+{% raw %}
+
 	Article: Q126095
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/126/Q126095/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183193/
 
 ## Q183193: Mac Encarta 98: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q183193
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -68,3 +70,5 @@ permalink: /kb/183/Q183193/
 	
 	=============================================================================
 	
+
+{% endraw %}

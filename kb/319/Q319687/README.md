@@ -6,6 +6,8 @@ permalink: /kb/319/Q319687/
 
 ## Q319687: &quot;Failed to Save Document&quot; Err Msg When You Try to Save a Map
 
+{% raw %}
+
 	Article: Q319687
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -77,3 +79,5 @@ permalink: /kb/319/Q319687/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247909/
 
 ## Q247909: XCLN: From Box Pre-populated Replying to Mail on Shared Mailbox
 
+{% raw %}
+
 	Article: Q247909
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/247/Q247909/
 	
 	=============================================================================
 	
+
+{% endraw %}

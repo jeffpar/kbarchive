@@ -6,6 +6,8 @@ permalink: /kb/175/Q175760/
 
 ## Q175760: INFO: Contents of Analyze Window Limited to ~30,000 Characters
 
+{% raw %}
+
 	Article: Q175760
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0a,5.0,6.0
@@ -40,3 +42,5 @@ permalink: /kb/175/Q175760/
 	
 	=============================================================================
 	
+
+{% endraw %}

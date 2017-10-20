@@ -6,6 +6,8 @@ permalink: /kb/227/Q227478/
 
 ## Q227478: WD97: Invalid Page Fault When Printing in Photo Editor
 
+{% raw %}
+
 	Article: Q227478
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -83,3 +85,5 @@ permalink: /kb/227/Q227478/
 	
 	=============================================================================
 	
+
+{% endraw %}

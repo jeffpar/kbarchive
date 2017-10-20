@@ -6,6 +6,8 @@ permalink: /kb/173/Q173484/
 
 ## Q173484: Trip Planner Err Msg: Please Run Setup to Install This Product
 
+{% raw %}
+
 	Article: Q173484
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/173/Q173484/
 	
 	=============================================================================
 	
+
+{% endraw %}

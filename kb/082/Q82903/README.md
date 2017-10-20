@@ -6,6 +6,8 @@ permalink: /kb/082/Q82903/
 
 ## Q82903: Code Displays 256-Color DIB on Standard VGA
 
+{% raw %}
+
 	Article: Q82903
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -61,3 +63,5 @@ permalink: /kb/082/Q82903/
 	
 	=============================================================================
 	
+
+{% endraw %}

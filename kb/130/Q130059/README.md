@@ -6,6 +6,8 @@ permalink: /kb/130/Q130059/
 
 ## Q130059: Obsolete Macro functions in Japanese Windows Version 3.1
 
+{% raw %}
+
 	Article: Q130059
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.1; WINDOWS:1.2,3.5
@@ -58,3 +60,5 @@ permalink: /kb/130/Q130059/
 	
 	=============================================================================
 	
+
+{% endraw %}

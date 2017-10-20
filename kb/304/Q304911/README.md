@@ -6,6 +6,8 @@ permalink: /kb/304/Q304911/
 
 ## Q304911: Inside C# Comments And Corrections
 
+{% raw %}
+
 	Article: Q304911
 	Product(s): Microsoft Press
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/304/Q304911/
 	
 	=============================================================================
 	
+
+{% endraw %}

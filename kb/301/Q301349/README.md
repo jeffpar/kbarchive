@@ -6,6 +6,8 @@ permalink: /kb/301/Q301349/
 
 ## Q301349: PRB: Cannot Install on Server Appliance Via Software Update
 
+{% raw %}
+
 	Article: Q301349
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -94,3 +96,5 @@ permalink: /kb/301/Q301349/
 	
 	=============================================================================
 	
+
+{% endraw %}

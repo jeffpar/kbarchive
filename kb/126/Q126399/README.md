@@ -6,6 +6,8 @@ permalink: /kb/126/Q126399/
 
 ## Q126399: Event ID 49: Node ID from Remote Computer was Rejected
 
+{% raw %}
+
 	Article: Q126399
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3
@@ -70,3 +72,5 @@ permalink: /kb/126/Q126399/
 	
 	=============================================================================
 	
+
+{% endraw %}

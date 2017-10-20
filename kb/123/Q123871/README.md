@@ -6,6 +6,8 @@ permalink: /kb/123/Q123871/
 
 ## Q123871: PRB: Screen Saver Applications Cannot Be Debugged Properly
 
+{% raw %}
+
 	Article: Q123871
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2000,4.0,5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/123/Q123871/
 	
 	=============================================================================
 	
+
+{% endraw %}

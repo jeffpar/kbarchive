@@ -6,6 +6,8 @@ permalink: /kb/025/Q25581/
 
 ## Q25581: Can't Use Border Parameter of COLOR Statement on EGA, VGA Card
 
+{% raw %}
+
 	Article: Q25581
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -43,3 +45,5 @@ permalink: /kb/025/Q25581/
 	   COLOR foreground,background,border
 	
 	The border color is used to draw the screen border.
+
+{% endraw %}

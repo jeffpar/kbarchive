@@ -6,6 +6,8 @@ permalink: /kb/155/Q155026/
 
 ## Q155026: Stop 0xC000021a in Windows Subsystem with Status c00000005
 
+{% raw %}
+
 	Article: Q155026
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -64,3 +66,5 @@ permalink: /kb/155/Q155026/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/225/Q225120/
 
 ## Q225120: PRB: Error C0042116: Signature on CAB File Could Not Be Verified
 
+{% raw %}
+
 	Article: Q225120
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/225/Q225120/
 	
 	=============================================================================
 	
+
+{% endraw %}

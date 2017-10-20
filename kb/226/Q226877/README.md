@@ -6,6 +6,8 @@ permalink: /kb/226/Q226877/
 
 ## Q226877: SMS: 2.0 CD Key Format Differs SQL 6.5 CD Key Format
 
+{% raw %}
+
 	Article: Q226877
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -56,3 +58,5 @@ permalink: /kb/226/Q226877/
 	
 	=============================================================================
 	
+
+{% endraw %}

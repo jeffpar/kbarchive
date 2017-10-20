@@ -6,6 +6,8 @@ permalink: /kb/043/Q43930/
 
 ## Q43930: Recursive Procedure Variables Not Saved When in COMMON
 
+{% raw %}
+
 	Article: Q43930
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/043/Q43930/
 	    Reverse$ = Reverse$(MID$(S$, 2)) + C$
 	  END IF
 	END FUNCTION
+
+{% endraw %}

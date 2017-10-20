@@ -6,6 +6,8 @@ permalink: /kb/243/Q243392/
 
 ## Q243392: WD97: Document Appears Inaccessible in Internet Explorer
 
+{% raw %}
+
 	Article: Q243392
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -71,3 +73,5 @@ permalink: /kb/243/Q243392/
 	
 	=============================================================================
 	
+
+{% endraw %}

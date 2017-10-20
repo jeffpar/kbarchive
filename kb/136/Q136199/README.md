@@ -6,6 +6,8 @@ permalink: /kb/136/Q136199/
 
 ## Q136199: NetWare Programs Fail to Run and Display Error Messages
 
+{% raw %}
+
 	Article: Q136199
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -104,3 +106,5 @@ permalink: /kb/136/Q136199/
 	
 	=============================================================================
 	
+
+{% endraw %}

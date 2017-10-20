@@ -6,6 +6,8 @@ permalink: /kb/131/Q131014/
 
 ## Q131014: How to Instantiate a Templated Function
 
+{% raw %}
+
 	Article: Q131014
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10 4.00
@@ -92,3 +94,5 @@ permalink: /kb/131/Q131014/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166708/
 
 ## Q166708: &quot;Entry Point Not Found&quot; Error with CleanSweep 3.0 and Windows NT
 
+{% raw %}
+
 	Article: Q166708
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -66,3 +68,5 @@ permalink: /kb/166/Q166708/
 	
 	=============================================================================
 	
+
+{% endraw %}

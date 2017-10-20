@@ -6,6 +6,8 @@ permalink: /kb/129/Q129208/
 
 ## Q129208: Pixel Replaces Foxel as Default Scale Value in Design Mode
 
+{% raw %}
+
 	Article: Q129208
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -91,3 +93,5 @@ permalink: /kb/129/Q129208/
 	
 	=============================================================================
 	
+
+{% endraw %}

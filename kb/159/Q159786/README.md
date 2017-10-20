@@ -6,6 +6,8 @@ permalink: /kb/159/Q159786/
 
 ## Q159786: BUG: Setup Wizard Cannot Locate Files on Non-English Mac OS
 
+{% raw %}
+
 	Article: Q159786
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -103,3 +105,5 @@ permalink: /kb/159/Q159786/
 	
 	=============================================================================
 	
+
+{% endraw %}

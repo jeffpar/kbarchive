@@ -6,6 +6,8 @@ permalink: /kb/177/Q177775/
 
 ## Q177775: XADM: System Folders Are Not Secured To The Site By Default
 
+{% raw %}
+
 	Article: Q177775
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -48,3 +50,5 @@ permalink: /kb/177/Q177775/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/279/Q279191/
 
 ## Q279191: FIX: Analyze.exe Fails to Repair/Remove Orphaned Files in VSS
 
+{% raw %}
+
 	Article: Q279191
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -97,3 +99,5 @@ permalink: /kb/279/Q279191/
 	
 	=============================================================================
 	
+
+{% endraw %}

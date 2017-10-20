@@ -6,6 +6,8 @@ permalink: /kb/146/Q146143/
 
 ## Q146143: XCON: DeferredDeliveryTime Echoed Within DeliveryReportEnvelope
 
+{% raw %}
+
 	Article: Q146143
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -99,3 +101,5 @@ permalink: /kb/146/Q146143/
 	
 	=============================================================================
 	
+
+{% endraw %}

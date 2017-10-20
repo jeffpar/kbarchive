@@ -6,6 +6,8 @@ permalink: /kb/098/Q98547/
 
 ## Q98547: Cannot Print More Than 99 Copies with Some Printer Drivers
 
+{% raw %}
+
 	Article: Q98547
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/098/Q98547/
 	
 	=============================================================================
 	
+
+{% endraw %}

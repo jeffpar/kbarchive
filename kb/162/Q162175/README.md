@@ -6,6 +6,8 @@ permalink: /kb/162/Q162175/
 
 ## Q162175: PPT: Sample VB Code to Reverse Order of Slides
 
+{% raw %}
+
 	Article: Q162175
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -121,3 +123,5 @@ permalink: /kb/162/Q162175/
 	
 	=============================================================================
 	
+
+{% endraw %}

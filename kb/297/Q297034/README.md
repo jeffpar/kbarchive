@@ -6,6 +6,8 @@ permalink: /kb/297/Q297034/
 
 ## Q297034: Age of Empires II: Setup Stops, Program Is Uninstalled
 
+{% raw %}
+
 	Article: Q297034
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -142,3 +144,5 @@ permalink: /kb/297/Q297034/
 	
 	=============================================================================
 	
+
+{% endraw %}

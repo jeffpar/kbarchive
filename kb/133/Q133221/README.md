@@ -6,6 +6,8 @@ permalink: /kb/133/Q133221/
 
 ## Q133221: How to Install a Server-Based Windows 95 Setup
 
+{% raw %}
+
 	Article: Q133221
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -114,3 +116,5 @@ permalink: /kb/133/Q133221/
 	
 	=============================================================================
 	
+
+{% endraw %}

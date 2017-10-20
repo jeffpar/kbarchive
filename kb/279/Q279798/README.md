@@ -6,6 +6,8 @@ permalink: /kb/279/Q279798/
 
 ## Q279798: XADM: Information Store Service Hangs After You Apply SP4
 
+{% raw %}
+
 	Article: Q279798
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP3,5.5 SP4
@@ -106,3 +108,5 @@ permalink: /kb/279/Q279798/
 	
 	=============================================================================
 	
+
+{% endraw %}

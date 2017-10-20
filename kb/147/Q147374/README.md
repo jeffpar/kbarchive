@@ -6,6 +6,8 @@ permalink: /kb/147/Q147374/
 
 ## Q147374: XADM: Registry Key Modifications Made During Setup
 
+{% raw %}
+
 	Article: Q147374
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -104,3 +106,5 @@ permalink: /kb/147/Q147374/
 	
 	=============================================================================
 	
+
+{% endraw %}

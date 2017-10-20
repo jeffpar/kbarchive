@@ -6,6 +6,8 @@ permalink: /kb/161/Q161957/
 
 ## Q161957: WD97: Word Stops When You Resume Spelling Check (Error in Field)
 
+{% raw %}
+
 	Article: Q161957
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/161/Q161957/
 	
 	=============================================================================
 	
+
+{% endraw %}

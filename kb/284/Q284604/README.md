@@ -6,6 +6,8 @@ permalink: /kb/284/Q284604/
 
 ## Q284604: INFO: Logging On to Exchange by Using CDO Can Create Default Fol
 
+{% raw %}
+
 	Article: Q284604
 	Product(s): Microsoft Exchange
 	Version(s): 1.21,5.5
@@ -112,3 +114,5 @@ permalink: /kb/284/Q284604/
 	
 	=============================================================================
 	
+
+{% endraw %}

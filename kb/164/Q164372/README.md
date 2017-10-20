@@ -6,6 +6,8 @@ permalink: /kb/164/Q164372/
 
 ## Q164372: FIX: More Than One Keyboard Letter Will Activate Some Hot Keys
 
+{% raw %}
+
 	Article: Q164372
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0
@@ -120,3 +122,5 @@ permalink: /kb/164/Q164372/
 	
 	=============================================================================
 	
+
+{% endraw %}

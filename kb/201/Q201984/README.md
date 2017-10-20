@@ -6,6 +6,8 @@ permalink: /kb/201/Q201984/
 
 ## Q201984: Error:&quot;Procedure for service Content Filter in Qperf.dll Failed&quot;
 
+{% raw %}
+
 	Article: Q201984
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -119,3 +121,5 @@ permalink: /kb/201/Q201984/
 	
 	=============================================================================
 	
+
+{% endraw %}

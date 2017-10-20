@@ -6,6 +6,8 @@ permalink: /kb/171/Q171375/
 
 ## Q171375: 3270 Applet Does Not Return to a Normal State
 
+{% raw %}
+
 	Article: Q171375
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -66,3 +68,5 @@ permalink: /kb/171/Q171375/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67261/
 
 ## Q67261: Installing Windows 3.0 on a Head Start LX-CD Computer
 
+{% raw %}
+
 	Article: Q67261
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/067/Q67261/
 	
 	=============================================================================
 	
+
+{% endraw %}

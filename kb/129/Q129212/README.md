@@ -6,6 +6,8 @@ permalink: /kb/129/Q129212/
 
 ## Q129212: Problems Using Diamond Viper VLB Video Adapter
 
+{% raw %}
+
 	Article: Q129212
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -102,3 +104,5 @@ permalink: /kb/129/Q129212/
 	
 	=============================================================================
 	
+
+{% endraw %}

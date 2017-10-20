@@ -6,6 +6,8 @@ permalink: /kb/107/Q107212/
 
 ## Q107212: Encarta: Color Graphics Print Black &amp; White on PaintJet XL300
 
+{% raw %}
+
 	Article: Q107212
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition
@@ -85,3 +87,5 @@ permalink: /kb/107/Q107212/
 	
 	=============================================================================
 	
+
+{% endraw %}

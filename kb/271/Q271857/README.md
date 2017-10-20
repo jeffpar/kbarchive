@@ -6,6 +6,8 @@ permalink: /kb/271/Q271857/
 
 ## Q271857: Golf 1999 Edition: Game Menus Are Not Visible on the Screen
 
+{% raw %}
+
 	Article: Q271857
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -181,3 +183,5 @@ permalink: /kb/271/Q271857/
 	
 	=============================================================================
 	
+
+{% endraw %}

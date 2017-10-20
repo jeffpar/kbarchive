@@ -6,6 +6,8 @@ permalink: /kb/126/Q126747/
 
 ## Q126747: Print Manager Does Not Start Automatically with Shared Printer
 
+{% raw %}
+
 	Article: Q126747
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -65,3 +67,5 @@ permalink: /kb/126/Q126747/
 	
 	=============================================================================
 	
+
+{% endraw %}

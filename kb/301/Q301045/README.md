@@ -6,6 +6,8 @@ permalink: /kb/301/Q301045/
 
 ## Q301045: Problems When You Print Colored Text on a Black Background
 
+{% raw %}
+
 	Article: Q301045
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,4.0
@@ -65,3 +67,5 @@ permalink: /kb/301/Q301045/
 	
 	=============================================================================
 	
+
+{% endraw %}

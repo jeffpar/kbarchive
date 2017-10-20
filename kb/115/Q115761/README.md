@@ -6,6 +6,8 @@ permalink: /kb/115/Q115761/
 
 ## Q115761: SAMPLE: SPINDIB Demonstrates 90-degree DIB Rotation
 
+{% raw %}
+
 	Article: Q115761
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -54,3 +56,5 @@ permalink: /kb/115/Q115761/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120672/
 
 ## Q120672: RAS: X.3 PAD Parameters for X.25 Networks
 
+{% raw %}
+
 	Article: Q120672
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -169,3 +171,5 @@ permalink: /kb/120/Q120672/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141140/
 
 ## Q141140: HOWTO: Create a SQL Server Stored Procedure
 
+{% raw %}
+
 	Article: Q141140
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/141/Q141140/
 	
 	=============================================================================
 	
+
+{% endraw %}

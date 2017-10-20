@@ -6,6 +6,8 @@ permalink: /kb/176/Q176737/
 
 ## Q176737: XADM: Key Management Server Fails to Start and Logs Event 5060
 
+{% raw %}
+
 	Article: Q176737
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -60,3 +62,5 @@ permalink: /kb/176/Q176737/
 	
 	=============================================================================
 	
+
+{% endraw %}

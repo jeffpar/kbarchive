@@ -6,6 +6,8 @@ permalink: /kb/069/Q69504/
 
 ## Q69504: _bios_disk() May Require 3 Tries for Drive to Get Up to Speed
 
+{% raw %}
+
 	Article: Q69504
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 6.00 6.00a
@@ -103,3 +105,5 @@ permalink: /kb/069/Q69504/
 	
 	   exit( 1 );
 	}
+
+{% endraw %}

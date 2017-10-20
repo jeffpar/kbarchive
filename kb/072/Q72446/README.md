@@ -6,6 +6,8 @@ permalink: /kb/072/Q72446/
 
 ## Q72446: Emerson 386 Cannot Run Enhanced Mode
 
+{% raw %}
+
 	Article: Q72446
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/072/Q72446/
 	
 	=============================================================================
 	
+
+{% endraw %}

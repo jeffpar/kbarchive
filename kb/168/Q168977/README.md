@@ -6,6 +6,8 @@ permalink: /kb/168/Q168977/
 
 ## Q168977: Time Suffix Appears Distorted in Windows 95 Clock
 
+{% raw %}
+
 	Article: Q168977
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/168/Q168977/
 	
 	=============================================================================
 	
+
+{% endraw %}

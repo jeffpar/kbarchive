@@ -6,6 +6,8 @@ permalink: /kb/193/Q193838/
 
 ## Q193838: DNS Zone Transfer Fails from WinNT Server to UNIX DNS Server
 
+{% raw %}
+
 	Article: Q193838
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -96,3 +98,5 @@ permalink: /kb/193/Q193838/
 	
 	=============================================================================
 	
+
+{% endraw %}

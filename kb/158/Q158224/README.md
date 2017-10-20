@@ -6,6 +6,8 @@ permalink: /kb/158/Q158224/
 
 ## Q158224: WD97: Cannot Find Veenlr3.hlp After Typical Installation
 
+{% raw %}
+
 	Article: Q158224
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/158/Q158224/
 	
 	=============================================================================
 	
+
+{% endraw %}

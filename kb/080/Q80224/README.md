@@ -6,6 +6,8 @@ permalink: /kb/080/Q80224/
 
 ## Q80224: FORMAT May Incorrectly Return ERRORLEVEL of Zero
 
+{% raw %}
+
 	Article: Q80224
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -73,3 +75,5 @@ permalink: /kb/080/Q80224/
 	
 	=============================================================================
 	
+
+{% endraw %}

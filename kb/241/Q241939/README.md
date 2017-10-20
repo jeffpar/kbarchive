@@ -6,6 +6,8 @@ permalink: /kb/241/Q241939/
 
 ## Q241939: XADM: Routing Calculation Stops with Administrator ID c1031651
 
+{% raw %}
+
 	Article: Q241939
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/241/Q241939/
 	
 	=============================================================================
 	
+
+{% endraw %}

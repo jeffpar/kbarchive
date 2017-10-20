@@ -6,6 +6,8 @@ permalink: /kb/051/Q51324/
 
 ## Q51324: Searching in the M Editor with Regular Expressions
 
+{% raw %}
+
 	Article: Q51324
 	Product(s): See article
 	Version(s): 1.00 1.02 | 1.00 1.02
@@ -32,3 +34,5 @@ permalink: /kb/051/Q51324/
 	
 	For more information, see Chapter 5, Pages 51-63, in the "Microsoft
 	FORTRAN Microsoft Editor User's Guide."
+
+{% endraw %}

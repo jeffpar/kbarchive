@@ -6,6 +6,8 @@ permalink: /kb/155/Q155945/
 
 ## Q155945: WD97: Additional Word Templates Available in ValuPack Folder
 
+{% raw %}
+
 	Article: Q155945
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/155/Q155945/
 	
 	=============================================================================
 	
+
+{% endraw %}

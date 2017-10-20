@@ -6,6 +6,8 @@ permalink: /kb/176/Q176042/
 
 ## Q176042: FIX: Altering a Button's Tab Order Causes Illegal Operation
 
+{% raw %}
+
 	Article: Q176042
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -73,3 +75,5 @@ permalink: /kb/176/Q176042/
 	
 	=============================================================================
 	
+
+{% endraw %}

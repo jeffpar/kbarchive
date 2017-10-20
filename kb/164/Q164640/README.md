@@ -6,6 +6,8 @@ permalink: /kb/164/Q164640/
 
 ## Q164640: SNA 3.0 Manager Does Not Show APPC/CPI-C Application Name
 
+{% raw %}
+
 	Article: Q164640
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -65,3 +67,5 @@ permalink: /kb/164/Q164640/
 	
 	=============================================================================
 	
+
+{% endraw %}

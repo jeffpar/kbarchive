@@ -6,6 +6,8 @@ permalink: /kb/066/Q66142/
 
 ## Q66142: System Requirements for Windows Entertainment Pack
 
+{% raw %}
+
 	Article: Q66142
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/066/Q66142/
 	
 	=============================================================================
 	
+
+{% endraw %}

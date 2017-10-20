@@ -6,6 +6,8 @@ permalink: /kb/088/Q88278/
 
 ## Q88278: Creating Import Libraries with the &#95;&#95;export Modifier
 
+{% raw %}
+
 	Article: Q88278
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -108,3 +110,5 @@ permalink: /kb/088/Q88278/
 	
 	=============================================================================
 	
+
+{% endraw %}

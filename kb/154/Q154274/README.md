@@ -6,6 +6,8 @@ permalink: /kb/154/Q154274/
 
 ## Q154274: Error Message: The Item(s) Could Not Be Saved
 
+{% raw %}
+
 	Article: Q154274
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/154/Q154274/
 	
 	=============================================================================
 	
+
+{% endraw %}

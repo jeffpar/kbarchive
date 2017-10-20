@@ -6,6 +6,8 @@ permalink: /kb/196/Q196823/
 
 ## Q196823: INFO: Files Remaining Windows 98&#92;SYSTEM After Removing VFP6
 
+{% raw %}
+
 	Article: Q196823
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -169,3 +171,5 @@ permalink: /kb/196/Q196823/
 	
 	=============================================================================
 	
+
+{% endraw %}

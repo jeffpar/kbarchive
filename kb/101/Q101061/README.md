@@ -6,6 +6,8 @@ permalink: /kb/101/Q101061/
 
 ## Q101061: CHKDSK Reports &quot;Probable Non-DOS Disk&quot;
 
+{% raw %}
+
 	Article: Q101061
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -95,3 +97,5 @@ permalink: /kb/101/Q101061/
 	
 	=============================================================================
 	
+
+{% endraw %}

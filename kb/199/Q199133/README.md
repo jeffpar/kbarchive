@@ -6,6 +6,8 @@ permalink: /kb/199/Q199133/
 
 ## Q199133: Adding Application Mapping Returns File Path Error
 
+{% raw %}
+
 	Article: Q199133
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/199/Q199133/
 	
 	=============================================================================
 	
+
+{% endraw %}

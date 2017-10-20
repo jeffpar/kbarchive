@@ -6,6 +6,8 @@ permalink: /kb/140/Q140185/
 
 ## Q140185: XCLN: Distribution List in To: Field Not Bold in Message
 
+{% raw %}
+
 	Article: Q140185
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/140/Q140185/
 	
 	=============================================================================
 	
+
+{% endraw %}

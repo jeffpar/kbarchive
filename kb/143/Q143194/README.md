@@ -6,6 +6,8 @@ permalink: /kb/143/Q143194/
 
 ## Q143194: World Wide Web Server Monitor Counters
 
+{% raw %}
+
 	Article: Q143194
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -222,3 +224,5 @@ permalink: /kb/143/Q143194/
 	
 	=============================================================================
 	
+
+{% endraw %}

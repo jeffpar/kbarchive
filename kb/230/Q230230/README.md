@@ -6,6 +6,8 @@ permalink: /kb/230/Q230230/
 
 ## Q230230: Password Protected Screen Saver Does Not Function Properly
 
+{% raw %}
+
 	Article: Q230230
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5,4.0 SP6
@@ -61,3 +63,5 @@ permalink: /kb/230/Q230230/
 	
 	=============================================================================
 	
+
+{% endraw %}

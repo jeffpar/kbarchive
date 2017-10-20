@@ -6,6 +6,8 @@ permalink: /kb/165/Q165572/
 
 ## Q165572: 5250 Applet Issues with SNA 3.0
 
+{% raw %}
+
 	Article: Q165572
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -201,3 +203,5 @@ permalink: /kb/165/Q165572/
 	
 	=============================================================================
 	
+
+{% endraw %}

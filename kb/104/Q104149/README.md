@@ -6,6 +6,8 @@ permalink: /kb/104/Q104149/
 
 ## Q104149: Stravinsky: Pulling Down the Glossary List
 
+{% raw %}
+
 	Article: Q104149
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/104/Q104149/
 	
 	=============================================================================
 	
+
+{% endraw %}

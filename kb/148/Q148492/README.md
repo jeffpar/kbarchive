@@ -6,6 +6,8 @@ permalink: /kb/148/Q148492/
 
 ## Q148492: SCSI ID Configuration with Future Domain Controllers
 
+{% raw %}
+
 	Article: Q148492
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -63,3 +65,5 @@ permalink: /kb/148/Q148492/
 	
 	=============================================================================
 	
+
+{% endraw %}

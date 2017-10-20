@@ -6,6 +6,8 @@ permalink: /kb/123/Q123481/
 
 ## Q123481: Limit of Two Concurrent Print Queues from Windows NT to LANMan
 
+{% raw %}
+
 	Article: Q123481
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 | 2.20
@@ -101,3 +103,5 @@ permalink: /kb/123/Q123481/
 	
 	=============================================================================
 	
+
+{% endraw %}

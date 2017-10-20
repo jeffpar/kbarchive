@@ -6,6 +6,8 @@ permalink: /kb/189/Q189288/
 
 ## Q189288: XADM: Exchange Administrator Generates Dr. Watson Errors
 
+{% raw %}
+
 	Article: Q189288
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/189/Q189288/
 	
 	=============================================================================
 	
+
+{% endraw %}

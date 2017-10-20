@@ -6,6 +6,8 @@ permalink: /kb/253/Q253867/
 
 ## Q253867: XFOR: URL Links Not Active When HTML Message Routed to Notes
 
+{% raw %}
+
 	Article: Q253867
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -71,3 +73,5 @@ permalink: /kb/253/Q253867/
 	
 	=============================================================================
 	
+
+{% endraw %}

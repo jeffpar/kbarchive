@@ -6,6 +6,8 @@ permalink: /kb/235/Q235163/
 
 ## Q235163: Distributed Applications with Microsoft Visual Basic 6.0 MCSD Tr
 
+{% raw %}
+
 	Article: Q235163
 	Product(s): Microsoft Press
 	Version(s): 
@@ -217,3 +219,5 @@ permalink: /kb/235/Q235163/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/115/Q115704/
 
 ## Q115704: FIX: Loop Optimization Causes Infinite Do-While Loop
 
+{% raw %}
+
 	Article: Q115704
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -129,3 +131,5 @@ permalink: /kb/115/Q115704/
 	
 	=============================================================================
 	
+
+{% endraw %}

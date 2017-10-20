@@ -6,6 +6,8 @@ permalink: /kb/193/Q193033/
 
 ## Q193033: Troubleshooting IPX Connectivity
 
+{% raw %}
+
 	Article: Q193033
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -105,3 +107,5 @@ permalink: /kb/193/Q193033/
 	
 	=============================================================================
 	
+
+{% endraw %}

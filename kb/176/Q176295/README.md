@@ -6,6 +6,8 @@ permalink: /kb/176/Q176295/
 
 ## Q176295: Flight Simulator 98/2000: Basic Keyboard Controls
 
+{% raw %}
+
 	Article: Q176295
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -348,3 +350,5 @@ permalink: /kb/176/Q176295/
 	
 	=============================================================================
 	
+
+{% endraw %}

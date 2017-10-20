@@ -6,6 +6,8 @@ permalink: /kb/294/Q294665/
 
 ## Q294665: Unsolicited E-mail Reduction--Workaround Through Hotmail
 
+{% raw %}
+
 	Article: Q294665
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -64,3 +66,5 @@ permalink: /kb/294/Q294665/
 	
 	=============================================================================
 	
+
+{% endraw %}

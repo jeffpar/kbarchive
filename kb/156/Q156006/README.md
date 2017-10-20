@@ -6,6 +6,8 @@ permalink: /kb/156/Q156006/
 
 ## Q156006: FIX: Columns Properties Shows Numeric Codes Under &quot;Data Type&quot;
 
+{% raw %}
+
 	Article: Q156006
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2
@@ -85,3 +87,5 @@ permalink: /kb/156/Q156006/
 	
 	=============================================================================
 	
+
+{% endraw %}

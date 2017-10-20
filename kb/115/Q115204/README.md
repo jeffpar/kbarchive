@@ -6,6 +6,8 @@ permalink: /kb/115/Q115204/
 
 ## Q115204: Err Msg Creating Uninstall Disk: Bad Uninstall Disk...
 
+{% raw %}
+
 	Article: Q115204
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -56,3 +58,5 @@ permalink: /kb/115/Q115204/
 	
 	=============================================================================
 	
+
+{% endraw %}

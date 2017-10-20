@@ -6,6 +6,8 @@ permalink: /kb/162/Q162594/
 
 ## Q162594: SNARAS Receives 651 RAS Error After Failed Connection Attempt
 
+{% raw %}
+
 	Article: Q162594
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0,4.0
@@ -121,3 +123,5 @@ permalink: /kb/162/Q162594/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168500/
 
 ## Q168500: Router Identification Designation in OSPF
 
+{% raw %}
+
 	Article: Q168500
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -50,3 +52,5 @@ permalink: /kb/168/Q168500/
 	
 	=============================================================================
 	
+
+{% endraw %}

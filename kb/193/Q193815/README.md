@@ -6,6 +6,8 @@ permalink: /kb/193/Q193815/
 
 ## Q193815: Improved APPC/CPIC Performance on SNA Client Computer
 
+{% raw %}
+
 	Article: Q193815
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -131,3 +133,5 @@ permalink: /kb/193/Q193815/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158055/
 
 ## Q158055: WD97: Word 97 Table Borders Do Not Display
 
+{% raw %}
+
 	Article: Q158055
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/158/Q158055/
 	
 	=============================================================================
 	
+
+{% endraw %}

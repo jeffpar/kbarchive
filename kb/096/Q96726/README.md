@@ -6,6 +6,8 @@ permalink: /kb/096/Q96726/
 
 ## Q96726: PRB: MAKEFILE for HOOKS Sample Implemented Incorrectly
 
+{% raw %}
+
 	Article: Q96726
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -71,3 +73,5 @@ permalink: /kb/096/Q96726/
 	
 	=============================================================================
 	
+
+{% endraw %}

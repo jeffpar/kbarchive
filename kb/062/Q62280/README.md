@@ -6,6 +6,8 @@ permalink: /kb/062/Q62280/
 
 ## Q62280: Mac Hyp: Removing or Clearing a Message Field
 
+{% raw %}
+
 	Article: Q62280
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -57,3 +59,5 @@ permalink: /kb/062/Q62280/
 	
 	=============================================================================
 	
+
+{% endraw %}

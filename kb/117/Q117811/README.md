@@ -6,6 +6,8 @@ permalink: /kb/117/Q117811/
 
 ## Q117811: No Option to Set ArpCacheLife in Windows NT 3.5
 
+{% raw %}
+
 	Article: Q117811
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -36,3 +38,5 @@ permalink: /kb/117/Q117811/
 	
 	=============================================================================
 	
+
+{% endraw %}

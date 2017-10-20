@@ -6,6 +6,8 @@ permalink: /kb/158/Q158259/
 
 ## Q158259: XGEN: How to Obtain Exchange Server 4.0 Service Pack 3
 
+{% raw %}
+
 	Article: Q158259
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -89,3 +91,5 @@ permalink: /kb/158/Q158259/
 	
 	=============================================================================
 	
+
+{% endraw %}

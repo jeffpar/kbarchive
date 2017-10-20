@@ -6,6 +6,8 @@ permalink: /kb/202/Q202855/
 
 ## Q202855: XFOR: Exchange Migration Wizard for MS Mail Fails on Schedule+
 
+{% raw %}
+
 	Article: Q202855
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,3.2,3.2a,3.5,7.0,7.5; winnt:5.0,5.5
@@ -89,3 +91,5 @@ permalink: /kb/202/Q202855/
 	
 	=============================================================================
 	
+
+{% endraw %}

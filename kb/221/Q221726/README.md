@@ -6,6 +6,8 @@ permalink: /kb/221/Q221726/
 
 ## Q221726: FIX: C0000005 Fatal Error Creating Index Tag
 
+{% raw %}
+
 	Article: Q221726
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -89,3 +91,5 @@ permalink: /kb/221/Q221726/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193339/
 
 ## Q193339: PRB: Unexpected Errors Using OLE DB Provider for SQL Server
 
+{% raw %}
+
 	Article: Q193339
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,2.6,3.6,6.0,7.0
@@ -145,3 +147,5 @@ permalink: /kb/193/Q193339/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189484/
 
 ## Q189484: SAMPLE: SCRIPTEX.EXE Uses the ScriptControl with Visual Basic
 
+{% raw %}
+
 	Article: Q189484
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -156,3 +158,5 @@ permalink: /kb/189/Q189484/
 	
 	=============================================================================
 	
+
+{% endraw %}

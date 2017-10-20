@@ -6,6 +6,8 @@ permalink: /kb/151/Q151099/
 
 ## Q151099: Content of Readme.hlp File Shipped w/FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q151099
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -374,3 +376,5 @@ permalink: /kb/151/Q151099/
 	
 	=============================================================================
 	
+
+{% endraw %}

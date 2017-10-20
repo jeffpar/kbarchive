@@ -6,6 +6,8 @@ permalink: /kb/166/Q166064/
 
 ## Q166064: WV: IPF in Word Viewer When Document Opened on Server
 
+{% raw %}
+
 	Article: Q166064
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -100,3 +102,5 @@ permalink: /kb/166/Q166064/
 	
 	=============================================================================
 	
+
+{% endraw %}

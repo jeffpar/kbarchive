@@ -6,6 +6,8 @@ permalink: /kb/126/Q126231/
 
 ## Q126231: Printer Configuration Options Unavailable
 
+{% raw %}
+
 	Article: Q126231
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/126/Q126231/
 	
 	=============================================================================
 	
+
+{% endraw %}

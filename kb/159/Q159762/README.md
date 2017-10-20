@@ -6,6 +6,8 @@ permalink: /kb/159/Q159762/
 
 ## Q159762: MSB Human: ErrMsg: MIDI Device Is in Use by Another ...
 
+{% raw %}
+
 	Article: Q159762
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,3.x
@@ -75,3 +77,5 @@ permalink: /kb/159/Q159762/
 	
 	=============================================================================
 	
+
+{% endraw %}

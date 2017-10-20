@@ -6,6 +6,8 @@ permalink: /kb/234/Q234916/
 
 ## Q234916: SMS: Internal Err. in Admin. Console When Refreshing Pkg. Status
 
+{% raw %}
+
 	Article: Q234916
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -90,3 +92,5 @@ permalink: /kb/234/Q234916/
 	
 	=============================================================================
 	
+
+{% endraw %}

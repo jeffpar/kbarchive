@@ -6,6 +6,8 @@ permalink: /kb/122/Q122165/
 
 ## Q122165: Xircom PCMCIA Ethernet Card Fails to Initialize in WFWG
 
+{% raw %}
+
 	Article: Q122165
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/122/Q122165/
 	
 	=============================================================================
 	
+
+{% endraw %}

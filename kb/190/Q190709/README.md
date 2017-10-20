@@ -6,6 +6,8 @@ permalink: /kb/190/Q190709/
 
 ## Q190709: XFOR: Internet Mail Service Does Not Clean Up Temp Files
 
+{% raw %}
+
 	Article: Q190709
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -64,3 +66,5 @@ permalink: /kb/190/Q190709/
 	
 	=============================================================================
 	
+
+{% endraw %}

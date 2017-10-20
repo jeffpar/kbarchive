@@ -6,6 +6,8 @@ permalink: /kb/203/Q203778/
 
 ## Q203778: Windows NT Server 4.0, Enterprise Edition, Readme.doc File
 
+{% raw %}
+
 	Article: Q203778
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -285,3 +287,5 @@ permalink: /kb/203/Q203778/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136728/
 
 ## Q136728: PRB: Setup Failure with EZ-Drive Utility
 
+{% raw %}
+
 	Article: Q136728
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/136/Q136728/
 	
 	=============================================================================
 	
+
+{% endraw %}

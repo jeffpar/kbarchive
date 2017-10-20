@@ -6,6 +6,8 @@ permalink: /kb/147/Q147345/
 
 ## Q147345: Error Message: The Search Could Not Be Started
 
+{% raw %}
+
 	Article: Q147345
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -43,3 +45,5 @@ permalink: /kb/147/Q147345/
 	
 	=============================================================================
 	
+
+{% endraw %}

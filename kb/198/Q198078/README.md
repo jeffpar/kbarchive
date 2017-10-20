@@ -6,6 +6,8 @@ permalink: /kb/198/Q198078/
 
 ## Q198078: WD97: Go To Command Fails in Protected Document
 
+{% raw %}
+
 	Article: Q198078
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -48,3 +50,5 @@ permalink: /kb/198/Q198078/
 	
 	=============================================================================
 	
+
+{% endraw %}

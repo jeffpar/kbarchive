@@ -6,6 +6,8 @@ permalink: /kb/139/Q139910/
 
 ## Q139910: Error 6118: &quot;The List of Servers for This Workgroup...&quot;
 
+{% raw %}
+
 	Article: Q139910
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.0,3.11
@@ -61,3 +63,5 @@ permalink: /kb/139/Q139910/
 	
 	=============================================================================
 	
+
+{% endraw %}

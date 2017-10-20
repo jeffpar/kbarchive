@@ -6,6 +6,8 @@ permalink: /kb/175/Q175035/
 
 ## Q175035: Diskless Workstations Cannot Find BOOTP Server with DHCP
 
+{% raw %}
+
 	Article: Q175035
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -92,3 +94,5 @@ permalink: /kb/175/Q175035/
 	
 	=============================================================================
 	
+
+{% endraw %}

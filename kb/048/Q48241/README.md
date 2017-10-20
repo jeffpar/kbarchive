@@ -6,6 +6,8 @@ permalink: /kb/048/Q48241/
 
 ## Q48241: Relationship Between Map File and Physical Memory
 
+{% raw %}
+
 	Article: Q48241
 	Product(s): Microsoft Programming Utilities
 	Version(s): 3.x,4.x,5.x
@@ -87,3 +89,5 @@ permalink: /kb/048/Q48241/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86101/
 
 ## Q86101: PC Win: MSMAIL.INI Entries in &#91;MMF&#93;
 
+{% raw %}
+
 	Article: Q86101
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0,3.0b,3.2
@@ -118,3 +120,5 @@ permalink: /kb/086/Q86101/
 	
 	=============================================================================
 	
+
+{% endraw %}

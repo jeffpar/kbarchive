@@ -6,6 +6,8 @@ permalink: /kb/140/Q140381/
 
 ## Q140381: Evaluation Copies of SWEEP On July 1995 TechNet Disk
 
+{% raw %}
+
 	Article: Q140381
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -54,3 +56,5 @@ permalink: /kb/140/Q140381/
 	
 	=============================================================================
 	
+
+{% endraw %}

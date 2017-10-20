@@ -6,6 +6,8 @@ permalink: /kb/148/Q148532/
 
 ## Q148532: &quot;Fury 3: The Official Strategy Guide&quot; Book Available
 
+{% raw %}
+
 	Article: Q148532
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/148/Q148532/
 	
 	=============================================================================
 	
+
+{% endraw %}

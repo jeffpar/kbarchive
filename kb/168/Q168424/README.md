@@ -6,6 +6,8 @@ permalink: /kb/168/Q168424/
 
 ## Q168424: FIX: Localize Sample Can Not Be Built
 
+{% raw %}
+
 	Article: Q168424
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -79,3 +81,5 @@ permalink: /kb/168/Q168424/
 	
 	=============================================================================
 	
+
+{% endraw %}

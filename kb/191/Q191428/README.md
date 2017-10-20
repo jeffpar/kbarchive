@@ -6,6 +6,8 @@ permalink: /kb/191/Q191428/
 
 ## Q191428: WINS Replication Fails If More Than 30 Partners Are Configured
 
+{% raw %}
+
 	Article: Q191428
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/191/Q191428/
 	
 	=============================================================================
 	
+
+{% endraw %}

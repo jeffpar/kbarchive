@@ -6,6 +6,8 @@ permalink: /kb/188/Q188692/
 
 ## Q188692: How to Prevent Certain Folders from Uploading to Central Profile
 
+{% raw %}
+
 	Article: Q188692
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -93,3 +95,5 @@ permalink: /kb/188/Q188692/
 	
 	=============================================================================
 	
+
+{% endraw %}

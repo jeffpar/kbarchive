@@ -6,6 +6,8 @@ permalink: /kb/187/Q187837/
 
 ## Q187837: XWEB: Appointments Display As Busy or Tentative Only
 
+{% raw %}
+
 	Article: Q187837
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/187/Q187837/
 	
 	=============================================================================
 	
+
+{% endraw %}

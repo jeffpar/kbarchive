@@ -6,6 +6,8 @@ permalink: /kb/275/Q275678/
 
 ## Q275678: How to Troubleshoot STOP 0x0000001E KMODE_EXCEPTION_NOT_HANDLED
 
+{% raw %}
+
 	Article: Q275678
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -139,3 +141,5 @@ permalink: /kb/275/Q275678/
 	
 	=============================================================================
 	
+
+{% endraw %}

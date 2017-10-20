@@ -6,6 +6,8 @@ permalink: /kb/158/Q158544/
 
 ## Q158544: IBM Multiprotocol SDLC Adapter Not Work on HP Vectra XU 6/15
 
+{% raw %}
+
 	Article: Q158544
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
@@ -162,3 +164,5 @@ permalink: /kb/158/Q158544/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182108/
 
 ## Q182108: Availability of Windows Sockets 2.0 for Windows 95
 
+{% raw %}
+
 	Article: Q182108
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -79,3 +81,5 @@ permalink: /kb/182/Q182108/
 	
 	=============================================================================
 	
+
+{% endraw %}

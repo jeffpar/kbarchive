@@ -6,6 +6,8 @@ permalink: /kb/135/Q135596/
 
 ## Q135596: DOC: Controls Subdirectory Misspelled
 
+{% raw %}
+
 	Article: Q135596
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -38,3 +40,5 @@ permalink: /kb/135/Q135596/
 	
 	=============================================================================
 	
+
+{% endraw %}

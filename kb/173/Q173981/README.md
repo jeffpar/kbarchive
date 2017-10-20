@@ -6,6 +6,8 @@ permalink: /kb/173/Q173981/
 
 ## Q173981: PRB: Behavior Differences of Print Dialog on Different Platforms
 
+{% raw %}
+
 	Article: Q173981
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -140,3 +142,5 @@ permalink: /kb/173/Q173981/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/280/Q280341/
 
 ## Q280341: Non-Parsed Headers Stipped From CGI Apps with nph- Prefix
 
+{% raw %}
+
 	Article: Q280341
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -103,3 +105,5 @@ permalink: /kb/280/Q280341/
 	
 	=============================================================================
 	
+
+{% endraw %}

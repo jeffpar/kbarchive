@@ -6,6 +6,8 @@ permalink: /kb/106/Q106547/
 
 ## Q106547: Writer/Artist: Novell Network User Rights Needed
 
+{% raw %}
+
 	Article: Q106547
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.00 1.10 1.10a
@@ -67,3 +69,5 @@ permalink: /kb/106/Q106547/
 	
 	=============================================================================
 	
+
+{% endraw %}

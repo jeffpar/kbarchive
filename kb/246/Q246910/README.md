@@ -6,6 +6,8 @@ permalink: /kb/246/Q246910/
 
 ## Q246910: INFO: How Label Promotions Work in Visual SourceSafe 6.0
 
+{% raw %}
+
 	Article: Q246910
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -88,3 +90,5 @@ permalink: /kb/246/Q246910/
 	
 	=============================================================================
 	
+
+{% endraw %}

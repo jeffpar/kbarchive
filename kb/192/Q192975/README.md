@@ -6,6 +6,8 @@ permalink: /kb/192/Q192975/
 
 ## Q192975: BUG: ClassWizard Parsing Error with MBCS Helpstring in .odl File
 
+{% raw %}
+
 	Article: Q192975
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -125,3 +127,5 @@ permalink: /kb/192/Q192975/
 	
 	=============================================================================
 	
+
+{% endraw %}

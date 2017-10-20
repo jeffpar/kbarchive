@@ -6,6 +6,8 @@ permalink: /kb/170/Q170958/
 
 ## Q170958: FP: Multiple Body Tags Not Recognized by FrontPage Editor
 
+{% raw %}
+
 	Article: Q170958
 	Product(s): Word Front Page
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/170/Q170958/
 	
 	=============================================================================
 	
+
+{% endraw %}

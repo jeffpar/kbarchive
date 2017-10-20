@@ -6,6 +6,8 @@ permalink: /kb/125/Q125453/
 
 ## Q125453: Windows NT Account Requirements for SMS Site to Site Com.
 
+{% raw %}
+
 	Article: Q125453
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -65,3 +67,5 @@ permalink: /kb/125/Q125453/
 	
 	=============================================================================
 	
+
+{% endraw %}

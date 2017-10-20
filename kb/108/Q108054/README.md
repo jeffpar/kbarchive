@@ -6,6 +6,8 @@ permalink: /kb/108/Q108054/
 
 ## Q108054: SMTP: Err Msg: Error &lt;Address&gt; Is an Invalid Courier Mailbox
 
+{% raw %}
+
 	Article: Q108054
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -88,3 +90,5 @@ permalink: /kb/108/Q108054/
 	
 	=============================================================================
 	
+
+{% endraw %}

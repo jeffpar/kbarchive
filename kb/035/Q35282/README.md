@@ -6,6 +6,8 @@ permalink: /kb/035/Q35282/
 
 ## Q35282: &quot;Subscript Out of Range&quot; Using SGN Function Compiled BC /d
 
+{% raw %}
+
 	Article: Q35282
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -45,3 +47,5 @@ permalink: /kb/035/Q35282/
 	   b. The SGN expression is used in a formula that contains a
 	      reference to an array element and another operation of some
 	      kind.
+
+{% endraw %}

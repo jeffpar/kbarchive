@@ -6,6 +6,8 @@ permalink: /kb/284/Q284199/
 
 ## Q284199: PRB: Exchange 5.5 Mailbox Resources Orphaned with ADSI/LDAP
 
+{% raw %}
+
 	Article: Q284199
 	Product(s): Microsoft Exchange
 	Version(s): 2.5,4.0,5.5
@@ -319,3 +321,5 @@ permalink: /kb/284/Q284199/
 	
 	=============================================================================
 	
+
+{% endraw %}

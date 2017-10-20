@@ -6,6 +6,8 @@ permalink: /kb/302/Q302787/
 
 ## Q302787: No Error Message When POP Account Is Set Up Incorrectly In MSN E
 
+{% raw %}
+
 	Article: Q302787
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -56,3 +58,5 @@ permalink: /kb/302/Q302787/
 	
 	=============================================================================
 	
+
+{% endraw %}

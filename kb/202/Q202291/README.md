@@ -6,6 +6,8 @@ permalink: /kb/202/Q202291/
 
 ## Q202291: SMS: Remote Control Agent Takes Heavy CPU Use If Logging Enabled
 
+{% raw %}
+
 	Article: Q202291
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/202/Q202291/
 	
 	=============================================================================
 	
+
+{% endraw %}

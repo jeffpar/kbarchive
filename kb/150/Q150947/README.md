@@ -6,6 +6,8 @@ permalink: /kb/150/Q150947/
 
 ## Q150947: VB 4.0 Setup Fails w/&quot;VB4SETUP.STF Contains NULL Characters&quot;
 
+{% raw %}
+
 	Article: Q150947
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -66,3 +68,5 @@ permalink: /kb/150/Q150947/
 	
 	=============================================================================
 	
+
+{% endraw %}

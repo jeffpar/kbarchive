@@ -6,6 +6,8 @@ permalink: /kb/178/Q178095/
 
 ## Q178095: XADM: Access Violation when Importing Active Text File
 
+{% raw %}
+
 	Article: Q178095
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -51,3 +53,5 @@ permalink: /kb/178/Q178095/
 	
 	=============================================================================
 	
+
+{% endraw %}

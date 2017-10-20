@@ -6,6 +6,8 @@ permalink: /kb/134/Q134638/
 
 ## Q134638: BUG: SHOW GET Does Not Refresh Number of Elements
 
+{% raw %}
+
 	Article: Q134638
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -170,3 +172,5 @@ permalink: /kb/134/Q134638/
 	
 	=============================================================================
 	
+
+{% endraw %}

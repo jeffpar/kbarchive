@@ -6,6 +6,8 @@ permalink: /kb/112/Q112814/
 
 ## Q112814: Scenes 1.0: After Dark Does Not Recognize Custom Picture Sets
 
+{% raw %}
+
 	Article: Q112814
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/112/Q112814/
 	
 	=============================================================================
 	
+
+{% endraw %}

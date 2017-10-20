@@ -6,6 +6,8 @@ permalink: /kb/140/Q140899/
 
 ## Q140899: BUG: GPF When RecordSource Property is Blank at Design-Time
 
+{% raw %}
+
 	Article: Q140899
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -100,3 +102,5 @@ permalink: /kb/140/Q140899/
 	
 	=============================================================================
 	
+
+{% endraw %}

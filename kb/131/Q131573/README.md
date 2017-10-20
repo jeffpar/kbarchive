@@ -6,6 +6,8 @@ permalink: /kb/131/Q131573/
 
 ## Q131573: Windows 95 Does Not Disable Third-Party Screen Savers
 
+{% raw %}
+
 	Article: Q131573
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/131/Q131573/
 	
 	=============================================================================
 	
+
+{% endraw %}

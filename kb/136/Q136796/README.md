@@ -6,6 +6,8 @@ permalink: /kb/136/Q136796/
 
 ## Q136796: PRB: Graphics Do Not Display When Using List Box with Pictures
 
+{% raw %}
+
 	Article: Q136796
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -92,3 +94,5 @@ permalink: /kb/136/Q136796/
 	
 	=============================================================================
 	
+
+{% endraw %}

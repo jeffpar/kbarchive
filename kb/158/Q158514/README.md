@@ -6,6 +6,8 @@ permalink: /kb/158/Q158514/
 
 ## Q158514: PPT7: Internet Explorer Prevents Association of .ppt, .pot Files
 
+{% raw %}
+
 	Article: Q158514
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 3.0,7.0
@@ -79,3 +81,5 @@ permalink: /kb/158/Q158514/
 	
 	=============================================================================
 	
+
+{% endraw %}

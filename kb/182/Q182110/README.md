@@ -6,6 +6,8 @@ permalink: /kb/182/Q182110/
 
 ## Q182110: IIS Access Violates Calling Local COM Server
 
+{% raw %}
+
 	Article: Q182110
 	Product(s): Internet Information Server
 	Version(s): WINNT:3.0,4.0
@@ -106,3 +108,5 @@ permalink: /kb/182/Q182110/
 	
 	=============================================================================
 	
+
+{% endraw %}

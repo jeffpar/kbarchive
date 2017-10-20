@@ -6,6 +6,8 @@ permalink: /kb/170/Q170863/
 
 ## Q170863: Error in Event Log after Deleting the Anonymous User Account
 
+{% raw %}
+
 	Article: Q170863
 	Product(s): Internet Information Server
 	Version(s): WinNT:3.0
@@ -81,3 +83,5 @@ permalink: /kb/170/Q170863/
 	
 	=============================================================================
 	
+
+{% endraw %}

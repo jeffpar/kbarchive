@@ -6,6 +6,8 @@ permalink: /kb/198/Q198857/
 
 ## Q198857: XFOR: 8007010b Err: Notes/SNADS/PROFS Connector Fails To Install
 
+{% raw %}
+
 	Article: Q198857
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -69,3 +71,5 @@ permalink: /kb/198/Q198857/
 	
 	=============================================================================
 	
+
+{% endraw %}

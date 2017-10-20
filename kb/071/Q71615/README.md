@@ -6,6 +6,8 @@ permalink: /kb/071/Q71615/
 
 ## Q71615: Timer in Minesweeper Will Not Start
 
+{% raw %}
+
 	Article: Q71615
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/071/Q71615/
 	
 	=============================================================================
 	
+
+{% endraw %}

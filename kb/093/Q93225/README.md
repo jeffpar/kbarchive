@@ -6,6 +6,8 @@ permalink: /kb/093/Q93225/
 
 ## Q93225: Windows Err Msg: The Directory Path for Shared Code Invalid
 
+{% raw %}
+
 	Article: Q93225
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/093/Q93225/
 	
 	=============================================================================
 	
+
+{% endraw %}

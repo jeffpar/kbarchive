@@ -6,6 +6,8 @@ permalink: /kb/110/Q110971/
 
 ## Q110971: Using MemMaker with EMM386.EXE Frame=None Parameter
 
+{% raw %}
+
 	Article: Q110971
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/110/Q110971/
 	
 	=============================================================================
 	
+
+{% endraw %}

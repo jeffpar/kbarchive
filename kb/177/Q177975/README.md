@@ -6,6 +6,8 @@ permalink: /kb/177/Q177975/
 
 ## Q177975: BUG: VBClientExplicitSecurity:ActiveX Component Can't Create Obj
 
+{% raw %}
+
 	Article: Q177975
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0
@@ -88,3 +90,5 @@ permalink: /kb/177/Q177975/
 	
 	=============================================================================
 	
+
+{% endraw %}

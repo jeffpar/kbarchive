@@ -6,6 +6,8 @@ permalink: /kb/253/Q253556/
 
 ## Q253556: FIX: Error Message: MQ_ERROR_OBJECT_SERVER_NOT_AVAILABLE
 
+{% raw %}
+
 	Article: Q253556
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -133,3 +135,5 @@ permalink: /kb/253/Q253556/
 	
 	=============================================================================
 	
+
+{% endraw %}

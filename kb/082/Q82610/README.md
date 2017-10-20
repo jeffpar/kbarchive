@@ -6,6 +6,8 @@ permalink: /kb/082/Q82610/
 
 ## Q82610: DynaComm 3.0x Fails to Install from File Manager
 
+{% raw %}
+
 	Article: Q82610
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a,3.1,3.11
@@ -84,3 +86,5 @@ permalink: /kb/082/Q82610/
 	
 	=============================================================================
 	
+
+{% endraw %}

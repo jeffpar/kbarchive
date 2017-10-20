@@ -6,6 +6,8 @@ permalink: /kb/184/Q184032/
 
 ## Q184032: Accessing Internet Site Shows Default Proxy Server Page
 
+{% raw %}
+
 	Article: Q184032
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0,4.0
@@ -90,3 +92,5 @@ permalink: /kb/184/Q184032/
 	
 	=============================================================================
 	
+
+{% endraw %}

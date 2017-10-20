@@ -6,6 +6,8 @@ permalink: /kb/174/Q174351/
 
 ## Q174351: XFOR: How to Configure Exchange with Secondary SMTP Addresses
 
+{% raw %}
+
 	Article: Q174351
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/174/Q174351/
 	
 	=============================================================================
 	
+
+{% endraw %}

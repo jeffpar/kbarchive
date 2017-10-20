@@ -6,6 +6,8 @@ permalink: /kb/108/Q108296/
 
 ## Q108296: 9-to-25 Pin RAS Null Modem Cabling
 
+{% raw %}
+
 	Article: Q108296
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -54,3 +56,5 @@ permalink: /kb/108/Q108296/
 	
 	=============================================================================
 	
+
+{% endraw %}

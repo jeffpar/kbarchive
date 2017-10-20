@@ -6,6 +6,8 @@ permalink: /kb/246/Q246592/
 
 ## Q246592: SMS: Tracer Tool May Cause Watched Service to Hang
 
+{% raw %}
+
 	Article: Q246592
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -56,3 +58,5 @@ permalink: /kb/246/Q246592/
 	
 	=============================================================================
 	
+
+{% endraw %}

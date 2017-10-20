@@ -6,6 +6,8 @@ permalink: /kb/130/Q130714/
 
 ## Q130714: ScanDisk Marks Numerous Bad Sectors with XtraDrive
 
+{% raw %}
+
 	Article: Q130714
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/130/Q130714/
 	
 	=============================================================================
 	
+
+{% endraw %}

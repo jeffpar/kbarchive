@@ -6,6 +6,8 @@ permalink: /kb/146/Q146373/
 
 ## Q146373: XCLN: Persistent Finder on Public Folder Does Not Work
 
+{% raw %}
+
 	Article: Q146373
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -43,3 +45,5 @@ permalink: /kb/146/Q146373/
 	
 	=============================================================================
 	
+
+{% endraw %}

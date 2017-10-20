@@ -6,6 +6,8 @@ permalink: /kb/134/Q134990/
 
 ## Q134990: PCMCIA Hard Disks Not Recognized in Windows NT 3.51
 
+{% raw %}
+
 	Article: Q134990
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134990/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174809/
 
 ## Q174809: FIX: Developer Studio Crashes Randomly When Navigating Workspace
 
+{% raw %}
+
 	Article: Q174809
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -62,3 +64,5 @@ permalink: /kb/174/Q174809/
 	
 	=============================================================================
 	
+
+{% endraw %}

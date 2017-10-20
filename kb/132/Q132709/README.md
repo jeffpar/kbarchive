@@ -6,6 +6,8 @@ permalink: /kb/132/Q132709/
 
 ## Q132709: Sybase SQLServer May Fail With NWLink and Window NT 3.5 SP2
 
+{% raw %}
+
 	Article: Q132709
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/132/Q132709/
 	
 	=============================================================================
 	
+
+{% endraw %}

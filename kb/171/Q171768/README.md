@@ -6,6 +6,8 @@ permalink: /kb/171/Q171768/
 
 ## Q171768: WinNT Err: Registry Structure Not Set Properly
 
+{% raw %}
+
 	Article: Q171768
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/171/Q171768/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135619/
 
 ## Q135619: How to Define a Class Property Based on Property of Same Class
 
+{% raw %}
+
 	Article: Q135619
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -53,3 +55,5 @@ permalink: /kb/135/Q135619/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/217/Q217908/
 
 ## Q217908: SMS: &quot;Hhctrl.ocx&quot; Error Message When Viewing SMS 2.0 Online Help
 
+{% raw %}
+
 	Article: Q217908
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -54,3 +56,5 @@ permalink: /kb/217/Q217908/
 	
 	=============================================================================
 	
+
+{% endraw %}

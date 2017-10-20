@@ -6,6 +6,8 @@ permalink: /kb/179/Q179325/
 
 ## Q179325: FS98: Computer Hangs When You Click Time &amp; Season
 
+{% raw %}
+
 	Article: Q179325
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -83,3 +85,5 @@ permalink: /kb/179/Q179325/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96165/
 
 ## Q96165: Adding Extensions to the Windows File Manager
 
+{% raw %}
+
 	Article: Q96165
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -92,3 +94,5 @@ permalink: /kb/096/Q96165/
 	
 	=============================================================================
 	
+
+{% endraw %}

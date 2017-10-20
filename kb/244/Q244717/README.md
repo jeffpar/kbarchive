@@ -6,6 +6,8 @@ permalink: /kb/244/Q244717/
 
 ## Q244717: RAS Port Becomes Unavailable in Windows NT 4.0 Terminal Server
 
+{% raw %}
+
 	Article: Q244717
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -92,3 +94,5 @@ permalink: /kb/244/Q244717/
 	
 	=============================================================================
 	
+
+{% endraw %}

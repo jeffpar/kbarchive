@@ -6,6 +6,8 @@ permalink: /kb/262/Q262790/
 
 ## Q262790: SMS: Documentation Error Referencing .xnf Form Installation Fold
 
+{% raw %}
+
 	Article: Q262790
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -47,3 +49,5 @@ permalink: /kb/262/Q262790/
 	
 	=============================================================================
 	
+
+{% endraw %}

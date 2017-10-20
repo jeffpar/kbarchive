@@ -6,6 +6,8 @@ permalink: /kb/174/Q174724/
 
 ## Q174724: XWEB: Language of the Template and Message Content Don't Match
 
+{% raw %}
+
 	Article: Q174724
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -61,3 +63,5 @@ permalink: /kb/174/Q174724/
 	
 	=============================================================================
 	
+
+{% endraw %}

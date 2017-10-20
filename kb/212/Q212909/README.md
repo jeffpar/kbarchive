@@ -6,6 +6,8 @@ permalink: /kb/212/Q212909/
 
 ## Q212909: SMS: How to Confirm Number of Resources Contained in Collections
 
+{% raw %}
+
 	Article: Q212909
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -78,3 +80,5 @@ permalink: /kb/212/Q212909/
 	
 	=============================================================================
 	
+
+{% endraw %}

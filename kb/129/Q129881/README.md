@@ -6,6 +6,8 @@ permalink: /kb/129/Q129881/
 
 ## Q129881: Baseball '95: Houston Astros Invalid Opposing Team Reference
 
+{% raw %}
+
 	Article: Q129881
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -37,3 +39,5 @@ permalink: /kb/129/Q129881/
 	
 	=============================================================================
 	
+
+{% endraw %}

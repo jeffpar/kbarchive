@@ -6,6 +6,8 @@ permalink: /kb/176/Q176432/
 
 ## Q176432: HOWTO: How to Determine if APPC LU Partnerships are Required
 
+{% raw %}
+
 	Article: Q176432
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -150,3 +152,5 @@ permalink: /kb/176/Q176432/
 	
 	=============================================================================
 	
+
+{% endraw %}

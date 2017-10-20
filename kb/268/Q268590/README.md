@@ -6,6 +6,8 @@ permalink: /kb/268/Q268590/
 
 ## Q268590: Netscape Groups Are Not Discovered in MMS
 
+{% raw %}
+
 	Article: Q268590
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -73,3 +75,5 @@ permalink: /kb/268/Q268590/
 	
 	=============================================================================
 	
+
+{% endraw %}

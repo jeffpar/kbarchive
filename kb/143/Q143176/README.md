@@ -6,6 +6,8 @@ permalink: /kb/143/Q143176/
 
 ## Q143176: How to Compile IIS MIB Files
 
+{% raw %}
+
 	Article: Q143176
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/143/Q143176/
 	
 	=============================================================================
 	
+
+{% endraw %}

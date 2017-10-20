@@ -6,6 +6,8 @@ permalink: /kb/252/Q252786/
 
 ## Q252786: Allegiance: Unable to Cancel Technology Research
 
+{% raw %}
+
 	Article: Q252786
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/252/Q252786/
 	
 	=============================================================================
 	
+
+{% endraw %}

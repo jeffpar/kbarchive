@@ -6,6 +6,8 @@ permalink: /kb/182/Q182722/
 
 ## Q182722: Error Message: Another Program Is Using This Telephony Device
 
+{% raw %}
+
 	Article: Q182722
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -68,3 +70,5 @@ permalink: /kb/182/Q182722/
 	
 	=============================================================================
 	
+
+{% endraw %}

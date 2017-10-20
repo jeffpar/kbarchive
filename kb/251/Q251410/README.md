@@ -6,6 +6,8 @@ permalink: /kb/251/Q251410/
 
 ## Q251410: XADM: Backup Stops with Events 105 and 145 and Error 1032
 
+{% raw %}
+
 	Article: Q251410
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/251/Q251410/
 	
 	=============================================================================
 	
+
+{% endraw %}

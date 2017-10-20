@@ -6,6 +6,8 @@ permalink: /kb/147/Q147865/
 
 ## Q147865: Incorrect Error Message Displayed When Dialing Analog Line
 
+{% raw %}
+
 	Article: Q147865
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -53,3 +55,5 @@ permalink: /kb/147/Q147865/
 	
 	=============================================================================
 	
+
+{% endraw %}

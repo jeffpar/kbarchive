@@ -6,6 +6,8 @@ permalink: /kb/036/Q36675/
 
 ## Q36675: Filename from tmpnam Has Prefix from P_tmpdir
 
+{% raw %}
+
 	Article: Q36675
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10  | 5.10
@@ -35,3 +37,5 @@ permalink: /kb/036/Q36675/
 	Thus, a string for a temporary filename created under Version 4.00
 	will have the form \TMP\x (where x is the generated number), and it
 	will be necessary to have a TMP subdirectory.
+
+{% endraw %}

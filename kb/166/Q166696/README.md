@@ -6,6 +6,8 @@ permalink: /kb/166/Q166696/
 
 ## Q166696: NT 4 Err Msg: &quot;The INF OEMNADDI is missing the referenced file&quot;
 
+{% raw %}
+
 	Article: Q166696
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/166/Q166696/
 	
 	=============================================================================
 	
+
+{% endraw %}

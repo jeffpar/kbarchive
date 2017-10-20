@@ -6,6 +6,8 @@ permalink: /kb/121/Q121891/
 
 ## Q121891: Windows 95 Adds a Preceding &quot;1&quot; If Area Codes Are Different
 
+{% raw %}
+
 	Article: Q121891
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.00 95
@@ -197,3 +199,5 @@ permalink: /kb/121/Q121891/
 	
 	=============================================================================
 	
+
+{% endraw %}

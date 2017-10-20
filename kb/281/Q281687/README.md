@@ -6,6 +6,8 @@ permalink: /kb/281/Q281687/
 
 ## Q281687: Combat Flight Simulator: Known Video Issues
 
+{% raw %}
+
 	Article: Q281687
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -102,3 +104,5 @@ permalink: /kb/281/Q281687/
 	
 	=============================================================================
 	
+
+{% endraw %}

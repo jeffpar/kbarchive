@@ -6,6 +6,8 @@ permalink: /kb/153/Q153675/
 
 ## Q153675: How To Use Code to Print a Word Document in a General Field
 
+{% raw %}
+
 	Article: Q153675
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0;3.0b;6.0
@@ -77,3 +79,5 @@ permalink: /kb/153/Q153675/
 	
 	=============================================================================
 	
+
+{% endraw %}

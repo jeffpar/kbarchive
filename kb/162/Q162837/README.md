@@ -6,6 +6,8 @@ permalink: /kb/162/Q162837/
 
 ## Q162837: Replacing TCP/IP After SP2 Causes STOP 0x00000050
 
+{% raw %}
+
 	Article: Q162837
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -102,3 +104,5 @@ permalink: /kb/162/Q162837/
 	
 	=============================================================================
 	
+
+{% endraw %}

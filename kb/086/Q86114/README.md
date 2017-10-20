@@ -6,6 +6,8 @@ permalink: /kb/086/Q86114/
 
 ## Q86114: PROFS: How to Prevent the Gateway VM ID from &quot;Going to Sleep&quot;
 
+{% raw %}
+
 	Article: Q86114
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -41,3 +43,5 @@ permalink: /kb/086/Q86114/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139391/
 
 ## Q139391: Mac Gen: Extracting Access Document Does Not Extract User List
 
+{% raw %}
+
 	Article: Q139391
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1x
@@ -49,3 +51,5 @@ permalink: /kb/139/Q139391/
 	
 	=============================================================================
 	
+
+{% endraw %}

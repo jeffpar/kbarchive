@@ -6,6 +6,8 @@ permalink: /kb/228/Q228811/
 
 ## Q228811: Socket Programs May Not Connect to Server
 
+{% raw %}
+
 	Article: Q228811
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -72,3 +74,5 @@ permalink: /kb/228/Q228811/
 	
 	=============================================================================
 	
+
+{% endraw %}

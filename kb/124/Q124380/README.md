@@ -6,6 +6,8 @@ permalink: /kb/124/Q124380/
 
 ## Q124380: STB Video Drivers for Windows NT 3.5 and 3.51
 
+{% raw %}
+
 	Article: Q124380
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -48,3 +50,5 @@ permalink: /kb/124/Q124380/
 	
 	=============================================================================
 	
+
+{% endraw %}

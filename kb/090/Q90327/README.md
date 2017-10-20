@@ -6,6 +6,8 @@ permalink: /kb/090/Q90327/
 
 ## Q90327: Intel EtherExpress (EE) 16 32K Buffer
 
+{% raw %}
+
 	Article: Q90327
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -60,3 +62,5 @@ permalink: /kb/090/Q90327/
 	
 	=============================================================================
 	
+
+{% endraw %}

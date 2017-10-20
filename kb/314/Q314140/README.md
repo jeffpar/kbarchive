@@ -6,6 +6,8 @@ permalink: /kb/314/Q314140/
 
 ## Q314140: Flight Simulator 2002: Performance Is Slow and Choppy
 
+{% raw %}
+
 	Article: Q314140
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -133,3 +135,5 @@ permalink: /kb/314/Q314140/
 	
 	=============================================================================
 	
+
+{% endraw %}

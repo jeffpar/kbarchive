@@ -6,6 +6,8 @@ permalink: /kb/064/Q64105/
 
 ## Q64105: Example of Assembly Function Returning Long Integer to BASIC
 
+{% raw %}
+
 	Article: Q64105
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -72,3 +74,5 @@ permalink: /kb/064/Q64105/
 	   12345
 	   12345
 	   12345
+
+{% endraw %}

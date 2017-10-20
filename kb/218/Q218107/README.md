@@ -6,6 +6,8 @@ permalink: /kb/218/Q218107/
 
 ## Q218107: SNA Server 4.0 SP2 Requires Internet Explorer 3.02 or Later
 
+{% raw %}
+
 	Article: Q218107
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -186,3 +188,5 @@ permalink: /kb/218/Q218107/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147594/
 
 ## Q147594: Problems Running MS-DOS-Based Program from System Agent
 
+{% raw %}
+
 	Article: Q147594
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -120,3 +122,5 @@ permalink: /kb/147/Q147594/
 	
 	=============================================================================
 	
+
+{% endraw %}

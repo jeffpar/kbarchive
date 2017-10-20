@@ -6,6 +6,8 @@ permalink: /kb/251/Q251225/
 
 ## Q251225: BUG: Recordset EditMode Not Properly Set with DataCombo
 
+{% raw %}
+
 	Article: Q251225
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -253,3 +255,5 @@ permalink: /kb/251/Q251225/
 	
 	=============================================================================
 	
+
+{% endraw %}

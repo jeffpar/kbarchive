@@ -6,6 +6,8 @@ permalink: /kb/098/Q98946/
 
 ## Q98946: Formatting 2.8-MB Floppy Disks from File Manager
 
+{% raw %}
+
 	Article: Q98946
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/098/Q98946/
 	
 	=============================================================================
 	
+
+{% endraw %}

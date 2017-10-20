@@ -6,6 +6,8 @@ permalink: /kb/136/Q136273/
 
 ## Q136273: System Hangs When CD-ROM Is Not in Drive
 
+{% raw %}
+
 	Article: Q136273
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/136/Q136273/
 	
 	=============================================================================
 	
+
+{% endraw %}

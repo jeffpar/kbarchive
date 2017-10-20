@@ -6,6 +6,8 @@ permalink: /kb/169/Q169364/
 
 ## Q169364: FIX: CLEAR CLASS of Objects in Containers Causes GPF
 
+{% raw %}
+
 	Article: Q169364
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -79,3 +81,5 @@ permalink: /kb/169/Q169364/
 	
 	=============================================================================
 	
+
+{% endraw %}

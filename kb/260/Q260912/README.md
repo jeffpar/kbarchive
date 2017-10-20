@@ -6,6 +6,8 @@ permalink: /kb/260/Q260912/
 
 ## Q260912: XADM: Exchange Categorization Count Displays 4294967296
 
+{% raw %}
+
 	Article: Q260912
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -90,3 +92,5 @@ permalink: /kb/260/Q260912/
 	
 	=============================================================================
 	
+
+{% endraw %}

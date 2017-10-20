@@ -6,6 +6,8 @@ permalink: /kb/293/Q293638/
 
 ## Q293638: BUG: Header Corruption Causes END TRANSACTION to Discard Appends
 
+{% raw %}
+
 	Article: Q293638
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -137,3 +139,5 @@ permalink: /kb/293/Q293638/
 	
 	=============================================================================
 	
+
+{% endraw %}

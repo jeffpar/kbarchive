@@ -6,6 +6,8 @@ permalink: /kb/121/Q121723/
 
 ## Q121723: How to Display Any Column of an Array in a List or Popup
 
+{% raw %}
+
 	Article: Q121723
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 2.6x 3.00 | 2.00 2.5x 2.6x
@@ -94,3 +96,5 @@ permalink: /kb/121/Q121723/
 	
 	=============================================================================
 	
+
+{% endraw %}

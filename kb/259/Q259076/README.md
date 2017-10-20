@@ -6,6 +6,8 @@ permalink: /kb/259/Q259076/
 
 ## Q259076: Cannot Add Groups as Operators in Default FTP &amp; Default Web Site
 
+{% raw %}
+
 	Article: Q259076
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -67,3 +69,5 @@ permalink: /kb/259/Q259076/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149275/
 
 ## Q149275: FIX: MouseMove Button Is Incorrect with ListView MultiSelect
 
+{% raw %}
+
 	Article: Q149275
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -96,3 +98,5 @@ permalink: /kb/149/Q149275/
 	
 	=============================================================================
 	
+
+{% endraw %}

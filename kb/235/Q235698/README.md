@@ -6,6 +6,8 @@ permalink: /kb/235/Q235698/
 
 ## Q235698: IISSYNC Deletes the IIS In-Process Package on the Target Server
 
+{% raw %}
+
 	Article: Q235698
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/235/Q235698/
 	
 	=============================================================================
 	
+
+{% endraw %}

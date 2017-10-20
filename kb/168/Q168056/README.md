@@ -6,6 +6,8 @@ permalink: /kb/168/Q168056/
 
 ## Q168056: FIX: Mismatched pushjmp/popjmp Call Error and VFP Closes
 
+{% raw %}
+
 	Article: Q168056
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -93,3 +95,5 @@ permalink: /kb/168/Q168056/
 	
 	=============================================================================
 	
+
+{% endraw %}

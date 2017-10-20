@@ -6,6 +6,8 @@ permalink: /kb/263/Q263594/
 
 ## Q263594: SMS2.0 Fills Windows NT Registry to Capacity
 
+{% raw %}
+
 	Article: Q263594
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -90,3 +92,5 @@ permalink: /kb/263/Q263594/
 	
 	=============================================================================
 	
+
+{% endraw %}

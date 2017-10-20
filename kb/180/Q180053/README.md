@@ -6,6 +6,8 @@ permalink: /kb/180/Q180053/
 
 ## Q180053: SNA Server Access Violation in Function S1pimcrc
 
+{% raw %}
+
 	Article: Q180053
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -93,3 +95,5 @@ permalink: /kb/180/Q180053/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167726/
 
 ## Q167726: XFOR: Err Msg: The Message Could Not Be Delivered
 
+{% raw %}
+
 	Article: Q167726
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -47,3 +49,5 @@ permalink: /kb/167/Q167726/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135953/
 
 ## Q135953: 3D Landscape Displays Incorrectly When System Agent Is Running
 
+{% raw %}
+
 	Article: Q135953
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -65,3 +67,5 @@ permalink: /kb/135/Q135953/
 	
 	=============================================================================
 	
+
+{% endraw %}

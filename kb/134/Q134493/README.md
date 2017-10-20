@@ -6,6 +6,8 @@ permalink: /kb/134/Q134493/
 
 ## Q134493: Cannot Synchronize Files with Briefcase After Moving
 
+{% raw %}
+
 	Article: Q134493
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -59,3 +61,5 @@ permalink: /kb/134/Q134493/
 	
 	=============================================================================
 	
+
+{% endraw %}

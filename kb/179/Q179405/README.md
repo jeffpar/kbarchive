@@ -6,6 +6,8 @@ permalink: /kb/179/Q179405/
 
 ## Q179405: FS98/2000: &quot;Go to Airport&quot; Search Filters No Longer Available
 
+{% raw %}
+
 	Article: Q179405
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -89,3 +91,5 @@ permalink: /kb/179/Q179405/
 	
 	=============================================================================
 	
+
+{% endraw %}

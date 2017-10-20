@@ -6,6 +6,8 @@ permalink: /kb/038/Q38270/
 
 ## Q38270: Error C1037 Cannot Open Object File 'filename'
 
+{% raw %}
+
 	Article: Q38270
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -37,3 +39,5 @@ permalink: /kb/038/Q38270/
 	       space.
 	
 	   3.  A read-only file with the given name already exists.
+
+{% endraw %}

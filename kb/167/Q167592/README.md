@@ -6,6 +6,8 @@ permalink: /kb/167/Q167592/
 
 ## Q167592: ACC97: SourceSafe Integration Tips
 
+{% raw %}
+
 	Article: Q167592
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0 4.0a 5.0 97
@@ -179,3 +181,5 @@ permalink: /kb/167/Q167592/
 	
 	=============================================================================
 	
+
+{% endraw %}

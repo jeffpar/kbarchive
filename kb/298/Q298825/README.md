@@ -6,6 +6,8 @@ permalink: /kb/298/Q298825/
 
 ## Q298825: PRB: Run-time Error '6' When You Use the TextWidth Method
 
+{% raw %}
+
 	Article: Q298825
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -114,3 +116,5 @@ permalink: /kb/298/Q298825/
 	
 	=============================================================================
 	
+
+{% endraw %}

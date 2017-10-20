@@ -6,6 +6,8 @@ permalink: /kb/180/Q180648/
 
 ## Q180648: Windows NT 4.0 Traps with a Stop 0x24 or Stop 0xA
 
+{% raw %}
+
 	Article: Q180648
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/180/Q180648/
 	
 	=============================================================================
 	
+
+{% endraw %}

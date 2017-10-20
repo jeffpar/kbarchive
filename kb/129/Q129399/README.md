@@ -6,6 +6,8 @@ permalink: /kb/129/Q129399/
 
 ## Q129399: HOWTO: How to Convert FoxPro 3.0 Tables to FoxPro 2.x Format
 
+{% raw %}
+
 	Article: Q129399
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -77,3 +79,5 @@ permalink: /kb/129/Q129399/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127845/
 
 ## Q127845: PRB: Property is Ignored Under Program Control
 
+{% raw %}
+
 	Article: Q127845
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/127/Q127845/
 	
 	=============================================================================
 	
+
+{% endraw %}

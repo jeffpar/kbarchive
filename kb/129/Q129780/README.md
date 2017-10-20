@@ -6,6 +6,8 @@ permalink: /kb/129/Q129780/
 
 ## Q129780: PC Adm: ADMIN.EXE Does Not Report a Failure to Update an .XTN
 
+{% raw %}
+
 	Article: Q129780
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -44,3 +46,5 @@ permalink: /kb/129/Q129780/
 	
 	=============================================================================
 	
+
+{% endraw %}

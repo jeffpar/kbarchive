@@ -6,6 +6,8 @@ permalink: /kb/175/Q175405/
 
 ## Q175405: Plus! For Kids: All Bitmap (.bmp) Files Open With Paint It!
 
+{% raw %}
+
 	Article: Q175405
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -91,3 +93,5 @@ permalink: /kb/175/Q175405/
 	
 	=============================================================================
 	
+
+{% endraw %}

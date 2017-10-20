@@ -6,6 +6,8 @@ permalink: /kb/136/Q136451/
 
 ## Q136451: Incorrect Default Short Date Style Used After Changing Style
 
+{% raw %}
+
 	Article: Q136451
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -45,3 +47,5 @@ permalink: /kb/136/Q136451/
 	
 	=============================================================================
 	
+
+{% endraw %}

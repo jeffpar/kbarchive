@@ -6,6 +6,8 @@ permalink: /kb/262/Q262242/
 
 ## Q262242: SMS: Error in HINV32.LOG When Turnng On WIN32_NTLOGEVENT
 
+{% raw %}
+
 	Article: Q262242
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -72,3 +74,5 @@ permalink: /kb/262/Q262242/
 	
 	=============================================================================
 	
+
+{% endraw %}

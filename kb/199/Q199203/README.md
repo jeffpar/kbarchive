@@ -6,6 +6,8 @@ permalink: /kb/199/Q199203/
 
 ## Q199203: XFOR:Problems Rescheduling Meetings Between Exchange and Notes
 
+{% raw %}
+
 	Article: Q199203
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/199/Q199203/
 	
 	=============================================================================
 	
+
+{% endraw %}

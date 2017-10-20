@@ -6,6 +6,8 @@ permalink: /kb/133/Q133715/
 
 ## Q133715: FIX: Resource Editor Cannot Set LVS_OWNERDRAWFIXED Style
 
+{% raw %}
+
 	Article: Q133715
 	Product(s): Microsoft C Compiler
 	Version(s): 2.10
@@ -63,3 +65,5 @@ permalink: /kb/133/Q133715/
 	
 	=============================================================================
 	
+
+{% endraw %}

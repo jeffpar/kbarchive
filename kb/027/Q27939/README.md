@@ -6,6 +6,8 @@ permalink: /kb/027/Q27939/
 
 ## Q27939: Sample Program That Makes OS/2 Call to DosMkdir
 
+{% raw %}
+
 	Article: Q27939
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -40,3 +42,5 @@ permalink: /kb/027/Q27939/
 	  print "Directory was made"
 	END IF
 	END
+
+{% endraw %}

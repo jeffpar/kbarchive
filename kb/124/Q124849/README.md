@@ -6,6 +6,8 @@ permalink: /kb/124/Q124849/
 
 ## Q124849: GTWY: Application Notes and Replacement Files for Mail Gateways
 
+{% raw %}
+
 	Article: Q124849
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 
@@ -127,3 +129,5 @@ permalink: /kb/124/Q124849/
 	
 	=============================================================================
 	
+
+{% endraw %}

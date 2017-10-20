@@ -6,6 +6,8 @@ permalink: /kb/145/Q145589/
 
 ## Q145589: How to Add NetWare 4.x Servers to Windows NT Domain
 
+{% raw %}
+
 	Article: Q145589
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -64,3 +66,5 @@ permalink: /kb/145/Q145589/
 	
 	=============================================================================
 	
+
+{% endraw %}

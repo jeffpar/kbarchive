@@ -6,6 +6,8 @@ permalink: /kb/160/Q160562/
 
 ## Q160562: Network NIC Icon Appears with a Number for its Description
 
+{% raw %}
+
 	Article: Q160562
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/160/Q160562/
 	
 	=============================================================================
 	
+
+{% endraw %}

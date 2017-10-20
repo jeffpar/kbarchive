@@ -6,6 +6,8 @@ permalink: /kb/163/Q163485/
 
 ## Q163485: Active Server Pages Script Appears in Browser
 
+{% raw %}
+
 	Article: Q163485
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0
@@ -118,3 +120,5 @@ permalink: /kb/163/Q163485/
 	
 	=============================================================================
 	
+
+{% endraw %}

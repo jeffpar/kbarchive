@@ -6,6 +6,8 @@ permalink: /kb/141/Q141919/
 
 ## Q141919: Printing Problems with ECP Port
 
+{% raw %}
+
 	Article: Q141919
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -125,3 +127,5 @@ permalink: /kb/141/Q141919/
 	
 	=============================================================================
 	
+
+{% endraw %}

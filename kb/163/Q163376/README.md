@@ -6,6 +6,8 @@ permalink: /kb/163/Q163376/
 
 ## Q163376: XADM: Invalid Message Embedded in Internet Message Causes NDR
 
+{% raw %}
+
 	Article: Q163376
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/163/Q163376/
 	
 	=============================================================================
 	
+
+{% endraw %}

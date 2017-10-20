@@ -6,6 +6,8 @@ permalink: /kb/071/Q71207/
 
 ## Q71207: Previous Button Dimmed in Connect Net Drive Dialog Box
 
+{% raw %}
+
 	Article: Q71207
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -44,3 +46,5 @@ permalink: /kb/071/Q71207/
 	
 	=============================================================================
 	
+
+{% endraw %}

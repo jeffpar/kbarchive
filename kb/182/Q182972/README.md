@@ -6,6 +6,8 @@ permalink: /kb/182/Q182972/
 
 ## Q182972: Stepping Levels That Do Not Match May Cause Problems in WinNT
 
+{% raw %}
+
 	Article: Q182972
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -55,3 +57,5 @@ permalink: /kb/182/Q182972/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165542/
 
 ## Q165542: Service Pack 2 Uninstall Directory Gets Overwritten
 
+{% raw %}
+
 	Article: Q165542
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/165/Q165542/
 	
 	=============================================================================
 	
+
+{% endraw %}

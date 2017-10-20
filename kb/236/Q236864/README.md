@@ -6,6 +6,8 @@ permalink: /kb/236/Q236864/
 
 ## Q236864: WD97: Word Crashes When Embedding TrueType &quot;Characters in Use&quot;
 
+{% raw %}
+
 	Article: Q236864
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -106,3 +108,5 @@ permalink: /kb/236/Q236864/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194366/
 
 ## Q194366: Encarta: How to Contact Encarta Annual Update Program
 
+{% raw %}
+
 	Article: Q194366
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/194/Q194366/
 	
 	=============================================================================
 	
+
+{% endraw %}

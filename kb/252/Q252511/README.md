@@ -6,6 +6,8 @@ permalink: /kb/252/Q252511/
 
 ## Q252511: Statically Configured WINS Client Switches Between Servers
 
+{% raw %}
+
 	Article: Q252511
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -92,3 +94,5 @@ permalink: /kb/252/Q252511/
 	
 	=============================================================================
 	
+
+{% endraw %}

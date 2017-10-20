@@ -6,6 +6,8 @@ permalink: /kb/249/Q249840/
 
 ## Q249840: FS2000 Err Msg: Video Display Must Be in 16-bit Color Mode...
 
+{% raw %}
+
 	Article: Q249840
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -123,3 +125,5 @@ permalink: /kb/249/Q249840/
 	
 	=============================================================================
 	
+
+{% endraw %}

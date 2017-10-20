@@ -6,6 +6,8 @@ permalink: /kb/257/Q257376/
 
 ## Q257376: SMS: Unable to Reset Advertisement Counters for Secondary Sites
 
+{% raw %}
+
 	Article: Q257376
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -64,3 +66,5 @@ permalink: /kb/257/Q257376/
 	
 	=============================================================================
 	
+
+{% endraw %}

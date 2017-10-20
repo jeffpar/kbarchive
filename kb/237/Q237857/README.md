@@ -6,6 +6,8 @@ permalink: /kb/237/Q237857/
 
 ## Q237857: Error 5aa When Using the Regrest Tool
 
+{% raw %}
+
 	Article: Q237857
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/237/Q237857/
 	
 	=============================================================================
 	
+
+{% endraw %}

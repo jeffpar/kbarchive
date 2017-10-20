@@ -6,6 +6,8 @@ permalink: /kb/097/Q97104/
 
 ## Q97104: Installing MS-DOS Upgrade on a Quantum Hardcard (Plus Dev.)
 
+{% raw %}
+
 	Article: Q97104
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -87,3 +89,5 @@ permalink: /kb/097/Q97104/
 	
 	=============================================================================
 	
+
+{% endraw %}

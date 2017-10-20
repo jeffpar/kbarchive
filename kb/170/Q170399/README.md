@@ -6,6 +6,8 @@ permalink: /kb/170/Q170399/
 
 ## Q170399: INFO: Explanation of Vb50.vbp in the Os&#92;ShellNew Directory
 
+{% raw %}
+
 	Article: Q170399
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0,97
@@ -67,3 +69,5 @@ permalink: /kb/170/Q170399/
 	
 	=============================================================================
 	
+
+{% endraw %}

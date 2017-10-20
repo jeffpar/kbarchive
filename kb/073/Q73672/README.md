@@ -6,6 +6,8 @@ permalink: /kb/073/Q73672/
 
 ## Q73672: Upgrading to MS-DOS 5.0 over Stacker
 
+{% raw %}
+
 	Article: Q73672
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -127,3 +129,5 @@ permalink: /kb/073/Q73672/
 	
 	=============================================================================
 	
+
+{% endraw %}

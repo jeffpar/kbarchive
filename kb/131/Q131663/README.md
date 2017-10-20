@@ -6,6 +6,8 @@ permalink: /kb/131/Q131663/
 
 ## Q131663: Setup Error Message: Error SU0358
 
+{% raw %}
+
 	Article: Q131663
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -77,3 +79,5 @@ permalink: /kb/131/Q131663/
 	
 	=============================================================================
 	
+
+{% endraw %}

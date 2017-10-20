@@ -6,6 +6,8 @@ permalink: /kb/122/Q122555/
 
 ## Q122555: WD97: TOC Field Not Updated Properly from Recorded Macro
 
+{% raw %}
+
 	Article: Q122555
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/122/Q122555/
 	
 	=============================================================================
 	
+
+{% endraw %}

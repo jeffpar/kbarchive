@@ -6,6 +6,8 @@ permalink: /kb/156/Q156471/
 
 ## Q156471: Writer 2: Print Jobs May Spool to 10+ MB Files
 
+{% raw %}
+
 	Article: Q156471
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -60,3 +62,5 @@ permalink: /kb/156/Q156471/
 	
 	=============================================================================
 	
+
+{% endraw %}

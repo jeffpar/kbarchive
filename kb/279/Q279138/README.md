@@ -6,6 +6,8 @@ permalink: /kb/279/Q279138/
 
 ## Q279138: FIX: SQL Passthrough Does Not Map SQL_WLONGVARCHAR to Memo
 
+{% raw %}
+
 	Article: Q279138
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -78,3 +80,5 @@ permalink: /kb/279/Q279138/
 	
 	=============================================================================
 	
+
+{% endraw %}

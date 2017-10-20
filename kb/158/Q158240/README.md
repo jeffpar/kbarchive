@@ -6,6 +6,8 @@ permalink: /kb/158/Q158240/
 
 ## Q158240: BUG: Inconsistant Results with SET RELATION TO Command
 
+{% raw %}
+
 	Article: Q158240
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b 5.00
@@ -116,3 +118,5 @@ permalink: /kb/158/Q158240/
 	
 	=============================================================================
 	
+
+{% endraw %}

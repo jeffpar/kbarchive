@@ -6,6 +6,8 @@ permalink: /kb/199/Q199796/
 
 ## Q199796: Mfcfont.exe Persists MFC ActiveX Control Stock Font Property
 
+{% raw %}
+
 	Article: Q199796
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -91,3 +93,5 @@ permalink: /kb/199/Q199796/
 	
 	=============================================================================
 	
+
+{% endraw %}

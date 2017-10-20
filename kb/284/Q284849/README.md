@@ -6,6 +6,8 @@ permalink: /kb/284/Q284849/
 
 ## Q284849: Permissions Are Incorrect After Installing SCM
 
+{% raw %}
+
 	Article: Q284849
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -119,3 +121,5 @@ permalink: /kb/284/Q284849/
 	
 	=============================================================================
 	
+
+{% endraw %}

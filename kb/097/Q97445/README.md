@@ -6,6 +6,8 @@ permalink: /kb/097/Q97445/
 
 ## Q97445: LAN Man Does Not Turn On WRITE-THRU by Default
 
+{% raw %}
+
 	Article: Q97445
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/097/Q97445/
 	
 	=============================================================================
 	
+
+{% endraw %}

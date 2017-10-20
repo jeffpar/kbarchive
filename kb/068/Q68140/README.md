@@ -6,6 +6,8 @@ permalink: /kb/068/Q68140/
 
 ## Q68140: Modeless Dialogs May Be Clipped by Small Application Workspace
 
+{% raw %}
+
 	Article: Q68140
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/068/Q68140/
 	
 	=============================================================================
 	
+
+{% endraw %}

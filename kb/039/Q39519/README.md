@@ -6,6 +6,8 @@ permalink: /kb/039/Q39519/
 
 ## Q39519: Using Conditional-Assembly to Assemble for COM or EXE File
 
+{% raw %}
+
 	Article: Q39519
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10
@@ -57,3 +59,5 @@ permalink: /kb/039/Q39519/
 	"Any statements following the END directive are ignored by the
 	assembler." The error occurs because the endif is not being recognized
 	and "Number of open conditionals: 1" error is displayed.
+
+{% endraw %}

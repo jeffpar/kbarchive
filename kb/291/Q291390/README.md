@@ -6,6 +6,8 @@ permalink: /kb/291/Q291390/
 
 ## Q291390: &quot;Internal Server Error 500 &#91;20-0003-IS&#93;&quot; Connecting to IIS 4.0
 
+{% raw %}
+
 	Article: Q291390
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/291/Q291390/
 	
 	=============================================================================
 	
+
+{% endraw %}

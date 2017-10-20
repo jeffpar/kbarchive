@@ -6,6 +6,8 @@ permalink: /kb/066/Q66703/
 
 ## Q66703: C 6.00/6.00a Online Help Example for _heapwalk() Is Incorrect
 
+{% raw %}
+
 	Article: Q66703
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -52,3 +54,5 @@ permalink: /kb/066/Q66703/
 	
 	The problem with the loop is that the value of i is equal to 10 when
 	the loop begins; it should be 9.
+
+{% endraw %}

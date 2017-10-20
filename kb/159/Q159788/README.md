@@ -6,6 +6,8 @@ permalink: /kb/159/Q159788/
 
 ## Q159788: XADM: SP3 Update Fails on Admin Only Server
 
+{% raw %}
+
 	Article: Q159788
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/159/Q159788/
 	
 	=============================================================================
 	
+
+{% endraw %}

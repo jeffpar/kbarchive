@@ -6,6 +6,8 @@ permalink: /kb/272/Q272124/
 
 ## Q272124: Unable to Add Workstation to Domain: 'A Domain Controller for Yo
 
+{% raw %}
+
 	Article: Q272124
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -80,3 +82,5 @@ permalink: /kb/272/Q272124/
 	
 	=============================================================================
 	
+
+{% endraw %}

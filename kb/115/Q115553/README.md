@@ -6,6 +6,8 @@ permalink: /kb/115/Q115553/
 
 ## Q115553: MHS: Backboning Microsoft Mail over MHS
 
+{% raw %}
+
 	Article: Q115553
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -118,3 +120,5 @@ permalink: /kb/115/Q115553/
 	
 	=============================================================================
 	
+
+{% endraw %}

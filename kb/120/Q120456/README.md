@@ -6,6 +6,8 @@ permalink: /kb/120/Q120456/
 
 ## Q120456: RAS Server Cannot See Client Connected through IPX PPP Only
 
+{% raw %}
+
 	Article: Q120456
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.50
@@ -71,3 +73,5 @@ permalink: /kb/120/Q120456/
 	
 	=============================================================================
 	
+
+{% endraw %}

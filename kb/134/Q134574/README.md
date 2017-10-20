@@ -6,6 +6,8 @@ permalink: /kb/134/Q134574/
 
 ## Q134574: Cannot Format SRAM Card
 
+{% raw %}
+
 	Article: Q134574
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/134/Q134574/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153026/
 
 ## Q153026: How To Show a ListView or TreeView Item Programmatically
 
+{% raw %}
+
 	Article: Q153026
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -82,3 +84,5 @@ permalink: /kb/153/Q153026/
 	
 	=============================================================================
 	
+
+{% endraw %}

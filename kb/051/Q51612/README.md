@@ -6,6 +6,8 @@ permalink: /kb/051/Q51612/
 
 ## Q51612: QuickC 1.0x and the CL= and LINK= Environment Settings
 
+{% raw %}
+
 	Article: Q51612
 	Product(s): See article
 	Version(s): 1.00 1.01
@@ -138,3 +140,5 @@ permalink: /kb/051/Q51612/
 	   Notice that these errors occur only when you build a new program in
 	   the environment. If you compile and link at the DOS prompt, the
 	   environment settings are found correctly.
+
+{% endraw %}

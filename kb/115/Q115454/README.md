@@ -6,6 +6,8 @@ permalink: /kb/115/Q115454/
 
 ## Q115454: X400: No Indentations in Routing Table Written by Config
 
+{% raw %}
+
 	Article: Q115454
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -41,3 +43,5 @@ permalink: /kb/115/Q115454/
 	
 	=============================================================================
 	
+
+{% endraw %}

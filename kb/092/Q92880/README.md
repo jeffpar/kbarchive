@@ -6,6 +6,8 @@ permalink: /kb/092/Q92880/
 
 ## Q92880: WFWG Mail Incorrectly Displays Bad Network Connection Icon
 
+{% raw %}
+
 	Article: Q92880
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/092/Q92880/
 	
 	=============================================================================
 	
+
+{% endraw %}

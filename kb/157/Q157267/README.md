@@ -6,6 +6,8 @@ permalink: /kb/157/Q157267/
 
 ## Q157267: Msbatch.inf Parameters: Inserting TCP/IP Information
 
+{% raw %}
+
 	Article: Q157267
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/157/Q157267/
 	
 	=============================================================================
 	
+
+{% endraw %}

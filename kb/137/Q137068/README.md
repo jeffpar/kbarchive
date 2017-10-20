@@ -6,6 +6,8 @@ permalink: /kb/137/Q137068/
 
 ## Q137068: XADM: Err Msg: The Path Specified Is Invalid...
 
+{% raw %}
+
 	Article: Q137068
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -44,3 +46,5 @@ permalink: /kb/137/Q137068/
 	
 	=============================================================================
 	
+
+{% endraw %}

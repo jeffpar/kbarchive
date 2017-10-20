@@ -6,6 +6,8 @@ permalink: /kb/152/Q152569/
 
 ## Q152569: SNMP Agent Does Not Respond After Suspend Power Is Invoked
 
+{% raw %}
+
 	Article: Q152569
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
@@ -61,3 +63,5 @@ permalink: /kb/152/Q152569/
 	
 	=============================================================================
 	
+
+{% endraw %}

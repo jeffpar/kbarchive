@@ -6,6 +6,8 @@ permalink: /kb/093/Q93919/
 
 ## Q93919: FILE: New SHED.EXE Preserves Hot Spot Information
 
+{% raw %}
+
 	Article: Q93919
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -59,3 +61,5 @@ permalink: /kb/093/Q93919/
 	
 	=============================================================================
 	
+
+{% endraw %}

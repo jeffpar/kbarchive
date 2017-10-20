@@ -6,6 +6,8 @@ permalink: /kb/119/Q119431/
 
 ## Q119431: SHARE Internal Error: RSC: SFT Not Found in SFT List
 
+{% raw %}
+
 	Article: Q119431
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.20,3.21,4.x,5.x,6.0,6.2,6.21,6.22
@@ -61,3 +63,5 @@ permalink: /kb/119/Q119431/
 	
 	=============================================================================
 	
+
+{% endraw %}

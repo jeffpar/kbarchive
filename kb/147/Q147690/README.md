@@ -6,6 +6,8 @@ permalink: /kb/147/Q147690/
 
 ## Q147690: Recovering From Boot Failure Affecting Mirrored Drives
 
+{% raw %}
+
 	Article: Q147690
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -106,3 +108,5 @@ permalink: /kb/147/Q147690/
 	
 	=============================================================================
 	
+
+{% endraw %}

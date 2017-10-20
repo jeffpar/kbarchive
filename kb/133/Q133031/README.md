@@ -6,6 +6,8 @@ permalink: /kb/133/Q133031/
 
 ## Q133031: Event ID 4280 Appears for WINS Bound to One NIC
 
+{% raw %}
+
 	Article: Q133031
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -77,3 +79,5 @@ permalink: /kb/133/Q133031/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/321/Q321209/
 
 ## Q321209: PRB: Start Menu Hangs When You Install File-Monitoring Utilities
 
+{% raw %}
+
 	Article: Q321209
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6
@@ -56,3 +58,5 @@ permalink: /kb/321/Q321209/
 	
 	=============================================================================
 	
+
+{% endraw %}

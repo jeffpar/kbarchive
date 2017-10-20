@@ -6,6 +6,8 @@ permalink: /kb/237/Q237285/
 
 ## Q237285: SAMPLE: Daoprop.exe Sets a Custom Property on an Access Database
 
+{% raw %}
+
 	Article: Q237285
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -181,3 +183,5 @@ permalink: /kb/237/Q237285/
 	
 	=============================================================================
 	
+
+{% endraw %}

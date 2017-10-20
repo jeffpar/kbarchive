@@ -6,6 +6,8 @@ permalink: /kb/135/Q135008/
 
 ## Q135008: SMS NetMon Counters for Network Segment Object Show Wrong Info
 
+{% raw %}
+
 	Article: Q135008
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,3.5
@@ -64,3 +66,5 @@ permalink: /kb/135/Q135008/
 	
 	=============================================================================
 	
+
+{% endraw %}

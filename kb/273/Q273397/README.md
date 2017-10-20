@@ -6,6 +6,8 @@ permalink: /kb/273/Q273397/
 
 ## Q273397: AoE II: Enhancements and Fixes in Age of Empires 2.0a Update
 
+{% raw %}
+
 	Article: Q273397
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -100,3 +102,5 @@ permalink: /kb/273/Q273397/
 	
 	=============================================================================
 	
+
+{% endraw %}

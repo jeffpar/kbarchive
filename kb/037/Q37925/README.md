@@ -6,6 +6,8 @@ permalink: /kb/037/Q37925/
 
 ## Q37925: Mac DOS: Apple LocalTalk PC Network Card
 
+{% raw %}
+
 	Article: Q37925
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0,3.1
@@ -113,3 +115,5 @@ permalink: /kb/037/Q37925/
 	
 	=============================================================================
 	
+
+{% endraw %}

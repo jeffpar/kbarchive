@@ -6,6 +6,8 @@ permalink: /kb/177/Q177799/
 
 ## Q177799: PRB: &quot;License Information for This Component Not Found&quot; Error
 
+{% raw %}
+
 	Article: Q177799
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -175,3 +177,5 @@ permalink: /kb/177/Q177799/
 	
 	=============================================================================
 	
+
+{% endraw %}

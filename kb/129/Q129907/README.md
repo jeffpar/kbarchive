@@ -6,6 +6,8 @@ permalink: /kb/129/Q129907/
 
 ## Q129907: PRB: Clicking a Tab Does Not Activate Page in a Tabbed Dialog
 
+{% raw %}
+
 	Article: Q129907
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/129/Q129907/
 	
 	=============================================================================
 	
+
+{% endraw %}

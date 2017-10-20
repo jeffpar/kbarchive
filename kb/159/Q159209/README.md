@@ -6,6 +6,8 @@ permalink: /kb/159/Q159209/
 
 ## Q159209: XFOR: IMC Delivers Only the Mail in the Queue at Dial-Up
 
+{% raw %}
+
 	Article: Q159209
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/159/Q159209/
 	
 	=============================================================================
 	
+
+{% endraw %}

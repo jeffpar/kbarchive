@@ -6,6 +6,8 @@ permalink: /kb/159/Q159564/
 
 ## Q159564: NT 4.0 RESOURCE KIT UTILITIES Corrections and Comments
 
+{% raw %}
+
 	Article: Q159564
 	Product(s): Microsoft Press
 	Version(s): 
@@ -500,3 +502,5 @@ permalink: /kb/159/Q159564/
 	
 	=============================================================================
 	
+
+{% endraw %}

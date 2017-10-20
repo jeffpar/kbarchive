@@ -6,6 +6,8 @@ permalink: /kb/028/Q28208/
 
 ## Q28208: Printing Delayed when DOS PRINT Command Invoked from SHELL
 
+{% raw %}
+
 	Article: Q28208
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -69,3 +71,5 @@ permalink: /kb/028/Q28208/
 	2. Invoke the QuickBASIC editor (QB.EXE).
 	
 	3. Run the program above. Print loads resident portion.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/026/Q26677/
 
 ## Q26677: &quot;Out of Memory,&quot; &quot;Error R6005,&quot; with CHAIN/RUN in DOS 2.x
 
+{% raw %}
+
 	Article: Q26677
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -120,3 +122,5 @@ permalink: /kb/026/Q26677/
 	to RUN or CHAIN back to the first. This problem occurs in programs
 	compiled with BCOMxx.LIB in QuickBASIC 4.00, 4.00b, and 4.50 and BASIC
 	compiler 6.00 and 6.00b.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238185/
 
 ## Q238185: Unnecessary Security Failure Audit (Event 577)
 
+{% raw %}
+
 	Article: Q238185
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -111,3 +113,5 @@ permalink: /kb/238/Q238185/
 	
 	=============================================================================
 	
+
+{% endraw %}

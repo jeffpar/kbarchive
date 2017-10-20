@@ -6,6 +6,8 @@ permalink: /kb/041/Q41648/
 
 ## Q41648: QuickC 2.00 README.DOC: Using Braces in _asm Blocks
 
+{% raw %}
+
 	Article: Q41648
 	Product(s): See article
 	Version(s): 2.00
@@ -22,3 +24,5 @@ permalink: /kb/041/Q41648/
 	Disregard the part that explains how to use a backslash to continue a
 	line. The opening brace may appear on the same line or on the
 	following line. The backslash is never needed.
+
+{% endraw %}

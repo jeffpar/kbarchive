@@ -6,6 +6,8 @@ permalink: /kb/087/Q87202/
 
 ## Q87202: PROFS: How Third-Party Hardware and Software Can Be Tested
 
+{% raw %}
+
 	Article: Q87202
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -53,3 +55,5 @@ permalink: /kb/087/Q87202/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120750/
 
 ## Q120750: Setting Up VIDCAP32.EXE and Video Spigot
 
+{% raw %}
+
 	Article: Q120750
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/120/Q120750/
 	
 	=============================================================================
 	
+
+{% endraw %}

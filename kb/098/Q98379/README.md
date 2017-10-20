@@ -6,6 +6,8 @@ permalink: /kb/098/Q98379/
 
 ## Q98379: BUG: xlCoerce() Can Cause GP Fault in EXCEL.EXE
 
+{% raw %}
+
 	Article: Q98379
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/098/Q98379/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142415/
 
 ## Q142415: PRB: MFC Message Handler Not Called with PostThreadMessage()
 
+{% raw %}
+
 	Article: Q142415
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,2.2,4.0,4.1
@@ -110,3 +112,5 @@ permalink: /kb/142/Q142415/
 	
 	=============================================================================
 	
+
+{% endraw %}

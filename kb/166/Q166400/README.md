@@ -6,6 +6,8 @@ permalink: /kb/166/Q166400/
 
 ## Q166400: Inserting SRAM Card into Docking Station May Hang Computer
 
+{% raw %}
+
 	Article: Q166400
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -70,3 +72,5 @@ permalink: /kb/166/Q166400/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103449/
 
 ## Q103449: PC Win: Address Book Does Not Limit Extended Characters
 
+{% raw %}
+
 	Article: Q103449
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.1,3.2
@@ -50,3 +52,5 @@ permalink: /kb/103/Q103449/
 	
 	=============================================================================
 	
+
+{% endraw %}

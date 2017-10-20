@@ -6,6 +6,8 @@ permalink: /kb/166/Q166037/
 
 ## Q166037: Mac Kids/Multimedia: ErrMsg: Not Enough Room on Drive
 
+{% raw %}
+
 	Article: Q166037
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0,1.0a,1.1,1.1a,1.1b,1.1c
@@ -82,3 +84,5 @@ permalink: /kb/166/Q166037/
 	
 	=============================================================================
 	
+
+{% endraw %}

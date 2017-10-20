@@ -6,6 +6,8 @@ permalink: /kb/113/Q113143/
 
 ## Q113143: WT1230: Batch File Converter for PowerPoint for Windows 95
 
+{% raw %}
+
 	Article: Q113143
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 7.0
@@ -203,3 +205,5 @@ permalink: /kb/113/Q113143/
 	
 	=============================================================================
 	
+
+{% endraw %}

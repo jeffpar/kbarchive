@@ -6,6 +6,8 @@ permalink: /kb/086/Q86918/
 
 ## Q86918: Nondedicated Novell Server Hangs After Printing
 
+{% raw %}
+
 	Article: Q86918
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.17
@@ -50,3 +52,5 @@ permalink: /kb/086/Q86918/
 	
 	=============================================================================
 	
+
+{% endraw %}

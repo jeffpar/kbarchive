@@ -6,6 +6,8 @@ permalink: /kb/321/Q321124/
 
 ## Q321124: Combat Flight Simulator 2.0: No Sound Is Played When You Fly
 
+{% raw %}
+
 	Article: Q321124
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -97,3 +99,5 @@ permalink: /kb/321/Q321124/
 	
 	=============================================================================
 	
+
+{% endraw %}

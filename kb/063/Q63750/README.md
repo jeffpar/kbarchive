@@ -6,6 +6,8 @@ permalink: /kb/063/Q63750/
 
 ## Q63750: Screen Garbled with Toshiba T-5100 and Windows 3.0
 
+{% raw %}
+
 	Article: Q63750
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -57,3 +59,5 @@ permalink: /kb/063/Q63750/
 	
 	=============================================================================
 	
+
+{% endraw %}

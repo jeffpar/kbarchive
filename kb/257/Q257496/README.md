@@ -6,6 +6,8 @@ permalink: /kb/257/Q257496/
 
 ## Q257496: FIX: Optimized Code Incorrectly Compares Floating Point Numbers
 
+{% raw %}
+
 	Article: Q257496
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -162,3 +164,5 @@ permalink: /kb/257/Q257496/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96390/
 
 ## Q96390: Using DoubleSpace with Compressed Floppy and Removable Disks
 
+{% raw %}
+
 	Article: Q96390
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -55,3 +57,5 @@ permalink: /kb/096/Q96390/
 	
 	=============================================================================
 	
+
+{% endraw %}

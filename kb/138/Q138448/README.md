@@ -6,6 +6,8 @@ permalink: /kb/138/Q138448/
 
 ## Q138448: Certain Extended ASCII Characters are Not Valid in Zone Names
 
+{% raw %}
+
 	Article: Q138448
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -57,3 +59,5 @@ permalink: /kb/138/Q138448/
 	
 	=============================================================================
 	
+
+{% endraw %}

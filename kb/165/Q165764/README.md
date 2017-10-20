@@ -6,6 +6,8 @@ permalink: /kb/165/Q165764/
 
 ## Q165764: Pstat.exe Does Not Run on an Alpha Computer
 
+{% raw %}
+
 	Article: Q165764
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -49,3 +51,5 @@ permalink: /kb/165/Q165764/
 	
 	=============================================================================
 	
+
+{% endraw %}

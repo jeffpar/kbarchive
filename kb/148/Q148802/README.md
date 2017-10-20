@@ -6,6 +6,8 @@ permalink: /kb/148/Q148802/
 
 ## Q148802: Microsoft Windows 95 Telnet Has Buffer Limitation of 2180
 
+{% raw %}
+
 	Article: Q148802
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/148/Q148802/
 	
 	=============================================================================
 	
+
+{% endraw %}

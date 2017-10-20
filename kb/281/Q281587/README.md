@@ -6,6 +6,8 @@ permalink: /kb/281/Q281587/
 
 ## Q281587: XADM: Unwanted Address Space When Using a Site Connector
 
+{% raw %}
+
 	Article: Q281587
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -108,3 +110,5 @@ permalink: /kb/281/Q281587/
 	
 	=============================================================================
 	
+
+{% endraw %}

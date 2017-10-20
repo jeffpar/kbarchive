@@ -6,6 +6,8 @@ permalink: /kb/112/Q112738/
 
 ## Q112738: After Logging Off Shared Installation of WFWG, GP Faults Occur
 
+{% raw %}
+
 	Article: Q112738
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -45,3 +47,5 @@ permalink: /kb/112/Q112738/
 	
 	=============================================================================
 	
+
+{% endraw %}

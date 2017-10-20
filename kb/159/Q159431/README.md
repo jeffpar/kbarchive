@@ -6,6 +6,8 @@ permalink: /kb/159/Q159431/
 
 ## Q159431: FP97: WWW Links to Current Web Lose &quot;http://&quot; Prefix
 
+{% raw %}
+
 	Article: Q159431
 	Product(s): Word Front Page
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/159/Q159431/
 	
 	=============================================================================
 	
+
+{% endraw %}

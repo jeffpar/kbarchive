@@ -6,6 +6,8 @@ permalink: /kb/171/Q171142/
 
 ## Q171142: Safety Error During Internet Explorer Enrollment
 
+{% raw %}
+
 	Article: Q171142
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,3.0
@@ -72,3 +74,5 @@ permalink: /kb/171/Q171142/
 	
 	=============================================================================
 	
+
+{% endraw %}

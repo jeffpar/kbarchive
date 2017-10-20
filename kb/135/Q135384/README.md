@@ -6,6 +6,8 @@ permalink: /kb/135/Q135384/
 
 ## Q135384: FIX: Unbalanced Parentheses in IF Condition Not Seen by Parser
 
+{% raw %}
+
 	Article: Q135384
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6a; WINDOWS:2.6a,3.0,3.0b
@@ -66,3 +68,5 @@ permalink: /kb/135/Q135384/
 	
 	=============================================================================
 	
+
+{% endraw %}

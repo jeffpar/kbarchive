@@ -6,6 +6,8 @@ permalink: /kb/030/Q30820/
 
 ## Q30820: MASM 5.10 OS2.DOC: OS/2 Call Summary - Mouse Input
 
+{% raw %}
+
 	Article: Q30820
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -104,3 +106,5 @@ permalink: /kb/030/Q30820/
 	
 	   @MouInitReal - Initializes the real-mode mouse device driver
 	   Parameters - DriverName:PZ
+
+{% endraw %}

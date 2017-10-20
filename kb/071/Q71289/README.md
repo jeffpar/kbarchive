@@ -6,6 +6,8 @@ permalink: /kb/071/Q71289/
 
 ## Q71289: Two XGA Display Cards in one System
 
+{% raw %}
+
 	Article: Q71289
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/071/Q71289/
 	
 	=============================================================================
 	
+
+{% endraw %}

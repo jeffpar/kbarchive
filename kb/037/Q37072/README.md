@@ -6,6 +6,8 @@ permalink: /kb/037/Q37072/
 
 ## Q37072: meta Anomalous Behavior
 
+{% raw %}
+
 	Article: Q37072
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -35,3 +37,5 @@ permalink: /kb/037/Q37072/
 	   ; macro, employing the insetmode function modifier.
 	   InsertTest:=insertmode insertmode +> "ins off"=>0 :>1 "ins on":>0
 	   InsertTest:alt+2.
+
+{% endraw %}

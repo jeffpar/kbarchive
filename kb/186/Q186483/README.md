@@ -6,6 +6,8 @@ permalink: /kb/186/Q186483/
 
 ## Q186483: NetDDE Service: Error 2185 - The Service Name is Invalid
 
+{% raw %}
+
 	Article: Q186483
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/186/Q186483/
 	
 	=============================================================================
 	
+
+{% endraw %}

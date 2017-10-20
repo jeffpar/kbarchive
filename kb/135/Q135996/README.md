@@ -6,6 +6,8 @@ permalink: /kb/135/Q135996/
 
 ## Q135996: External Cache Enabled in CMOS May Hang Computer
 
+{% raw %}
+
 	Article: Q135996
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/135/Q135996/
 	
 	=============================================================================
 	
+
+{% endraw %}

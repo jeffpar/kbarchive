@@ -6,6 +6,8 @@ permalink: /kb/088/Q88368/
 
 ## Q88368: PC Win: Viewing Attachment Requires Association
 
+{% raw %}
+
 	Article: Q88368
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/088/Q88368/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139878/
 
 ## Q139878: BUG:16-bit App's Menu Destroyed Under Chinese NT 3.5
 
+{% raw %}
+
 	Article: Q139878
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:1.3,3.1,4.0; winnt:3.51
@@ -51,3 +53,5 @@ permalink: /kb/139/Q139878/
 	
 	=============================================================================
 	
+
+{% endraw %}

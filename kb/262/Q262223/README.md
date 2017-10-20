@@ -6,6 +6,8 @@ permalink: /kb/262/Q262223/
 
 ## Q262223: Delprof Does Not Delete Profiles When Run by Schedule Service
 
+{% raw %}
+
 	Article: Q262223
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0; :4.0
@@ -85,3 +87,5 @@ permalink: /kb/262/Q262223/
 	
 	=============================================================================
 	
+
+{% endraw %}

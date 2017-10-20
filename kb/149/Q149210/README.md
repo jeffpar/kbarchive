@@ -6,6 +6,8 @@ permalink: /kb/149/Q149210/
 
 ## Q149210: ACCESS FOR WINDOWS 95 STEP BY STEP Corrections and Comments
 
+{% raw %}
+
 	Article: Q149210
 	Product(s): Microsoft Press
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/149/Q149210/
 	
 	=============================================================================
 	
+
+{% endraw %}

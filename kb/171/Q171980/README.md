@@ -6,6 +6,8 @@ permalink: /kb/171/Q171980/
 
 ## Q171980: HOWTO: Play MIDI Files Using API Functions
 
+{% raw %}
+
 	Article: Q171980
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/171/Q171980/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154869/
 
 ## Q154869: PRB: Error &quot;Too many client tasks&quot; When Using Jet
 
+{% raw %}
+
 	Article: Q154869
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/154/Q154869/
 	
 	=============================================================================
 	
+
+{% endraw %}

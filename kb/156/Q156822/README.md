@@ -6,6 +6,8 @@ permalink: /kb/156/Q156822/
 
 ## Q156822: Tseng Labs ET4000-W32I Chipset Only Supports 65K Colors
 
+{% raw %}
+
 	Article: Q156822
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/156/Q156822/
 	
 	=============================================================================
 	
+
+{% endraw %}

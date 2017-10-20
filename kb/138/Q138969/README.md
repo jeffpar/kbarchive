@@ -6,6 +6,8 @@ permalink: /kb/138/Q138969/
 
 ## Q138969: HOWTO: Include Report Toolbars in a Distributed Application
 
+{% raw %}
+
 	Article: Q138969
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,5.0,6.0,7.0
@@ -106,3 +108,5 @@ permalink: /kb/138/Q138969/
 	
 	=============================================================================
 	
+
+{% endraw %}

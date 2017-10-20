@@ -6,6 +6,8 @@ permalink: /kb/271/Q271638/
 
 ## Q271638: BUG: Report Preview Unreadable When Zoom Is Set at 75 Percent
 
+{% raw %}
+
 	Article: Q271638
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -68,3 +70,5 @@ permalink: /kb/271/Q271638/
 	
 	=============================================================================
 	
+
+{% endraw %}

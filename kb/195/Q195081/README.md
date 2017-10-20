@@ -6,6 +6,8 @@ permalink: /kb/195/Q195081/
 
 ## Q195081: Fix2lBar.exe Fixes Spacing Errors in MFC's CToolBar
 
+{% raw %}
+
 	Article: Q195081
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -151,3 +153,5 @@ permalink: /kb/195/Q195081/
 	
 	=============================================================================
 	
+
+{% endraw %}

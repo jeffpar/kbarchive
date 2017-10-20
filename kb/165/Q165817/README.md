@@ -6,6 +6,8 @@ permalink: /kb/165/Q165817/
 
 ## Q165817: XCLN: Unable to Open NetBEUI Connection with Shiva
 
+{% raw %}
+
 	Article: Q165817
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -49,3 +51,5 @@ permalink: /kb/165/Q165817/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164161/
 
 ## Q164161: NTBACKUP Fails to Back up Microsoft Exchange Server Data
 
+{% raw %}
+
 	Article: Q164161
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/164/Q164161/
 	
 	=============================================================================
 	
+
+{% endraw %}

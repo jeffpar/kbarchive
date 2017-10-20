@@ -6,6 +6,8 @@ permalink: /kb/317/Q317653/
 
 ## Q317653: XCON: Internet Mail Service Stops with Events 4116 and 4102
 
+{% raw %}
+
 	Article: Q317653
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -143,3 +145,5 @@ permalink: /kb/317/Q317653/
 	
 	=============================================================================
 	
+
+{% endraw %}

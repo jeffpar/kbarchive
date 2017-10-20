@@ -6,6 +6,8 @@ permalink: /kb/035/Q35249/
 
 ## Q35249: Correction for MHex&#36; Real Number Format Example
 
+{% raw %}
+
 	Article: Q35249
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -43,3 +45,5 @@ permalink: /kb/035/Q35249/
 	line 7: ' removes unwanted bits.
 	line 10:      Bytes(I) = AsLong& \ Shift& AND &HFF&
 	line 11:      Shift&=Shift&*256
+
+{% endraw %}

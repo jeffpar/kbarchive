@@ -6,6 +6,8 @@ permalink: /kb/041/Q41469/
 
 ## Q41469: QuickC 2.00 Does Not Debug KBHIT() Correctly
 
+{% raw %}
+
 	Article: Q41469
 	Product(s): See article
 	Version(s): 2.00
@@ -82,3 +84,5 @@ permalink: /kb/041/Q41469/
 	
 	You can either place this routine in one of your existing
 	source modules, or in a separate module.
+
+{% endraw %}

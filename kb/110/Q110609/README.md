@@ -6,6 +6,8 @@ permalink: /kb/110/Q110609/
 
 ## Q110609: How to Use STYLE Clause for @ ... GETs in FoxBASE+/Mac
 
+{% raw %}
+
 	Article: Q110609
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -153,3 +155,5 @@ permalink: /kb/110/Q110609/
 	
 	=============================================================================
 	
+
+{% endraw %}

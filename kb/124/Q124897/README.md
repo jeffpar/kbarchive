@@ -6,6 +6,8 @@ permalink: /kb/124/Q124897/
 
 ## Q124897: FIX: Cursor Library Returns Duplicate Row in Asynchronous Mode
 
+{% raw %}
+
 	Article: Q124897
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -85,3 +87,5 @@ permalink: /kb/124/Q124897/
 	
 	=============================================================================
 	
+
+{% endraw %}

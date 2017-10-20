@@ -6,6 +6,8 @@ permalink: /kb/180/Q180230/
 
 ## Q180230: Windows NT or Win95 Client Sponsor Connection Returns Err. Msg.
 
+{% raw %}
+
 	Article: Q180230
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,3.0 SP1,3.0 SP2
@@ -104,3 +106,5 @@ permalink: /kb/180/Q180230/
 	
 	=============================================================================
 	
+
+{% endraw %}

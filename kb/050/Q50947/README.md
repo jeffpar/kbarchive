@@ -6,6 +6,8 @@ permalink: /kb/050/Q50947/
 
 ## Q50947: How to Get Extended Error in QuickBASIC Like EXTERR in GWBASIC
 
+{% raw %}
+
 	Article: Q50947
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -112,3 +114,5 @@ permalink: /kb/050/Q50947/
 	  PRINT "Your file was found, no extended error information is needed"
 	END IF
 	END
+
+{% endraw %}

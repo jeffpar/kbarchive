@@ -6,6 +6,8 @@ permalink: /kb/078/Q78946/
 
 ## Q78946: Flight Sim: Turning System Sound Off Doesn't Turn Off FS Sound
 
+{% raw %}
+
 	Article: Q78946
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/078/Q78946/
 	
 	=============================================================================
 	
+
+{% endraw %}

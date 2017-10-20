@@ -6,6 +6,8 @@ permalink: /kb/189/Q189090/
 
 ## Q189090: Age of Empires: Wall Is Built in the Wrong Direction
 
+{% raw %}
+
 	Article: Q189090
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -70,3 +72,5 @@ permalink: /kb/189/Q189090/
 	
 	=============================================================================
 	
+
+{% endraw %}

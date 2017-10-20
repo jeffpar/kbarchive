@@ -6,6 +6,8 @@ permalink: /kb/256/Q256894/
 
 ## Q256894: Windows 95 Clients Hang at Startup Randomly
 
+{% raw %}
+
 	Article: Q256894
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -68,3 +70,5 @@ permalink: /kb/256/Q256894/
 	
 	=============================================================================
 	
+
+{% endraw %}

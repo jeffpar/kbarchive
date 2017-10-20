@@ -6,6 +6,8 @@ permalink: /kb/318/Q318056/
 
 ## Q318056: BUG: Shutdown When Config Manager Triggers Checkout of Solution
 
+{% raw %}
+
 	Article: Q318056
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/318/Q318056/
 	
 	=============================================================================
 	
+
+{% endraw %}

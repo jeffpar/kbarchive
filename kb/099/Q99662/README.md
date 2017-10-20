@@ -6,6 +6,8 @@ permalink: /kb/099/Q99662/
 
 ## Q99662: PC WSPlus: Access Privileges Are Unavailable When Offline
 
+{% raw %}
+
 	Article: Q99662
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -46,3 +48,5 @@ permalink: /kb/099/Q99662/
 	
 	=============================================================================
 	
+
+{% endraw %}

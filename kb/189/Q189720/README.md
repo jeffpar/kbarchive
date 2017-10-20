@@ -6,6 +6,8 @@ permalink: /kb/189/Q189720/
 
 ## Q189720: BUG: _SCREEN.Height/Width May Increase When BorderStyle Is Set
 
+{% raw %}
+
 	Article: Q189720
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -122,3 +124,5 @@ permalink: /kb/189/Q189720/
 	
 	=============================================================================
 	
+
+{% endraw %}

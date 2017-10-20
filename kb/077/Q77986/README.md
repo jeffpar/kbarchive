@@ -6,6 +6,8 @@ permalink: /kb/077/Q77986/
 
 ## Q77986: How to Use _export Keyword or DEF File EXPORTS Statement
 
+{% raw %}
+
 	Article: Q77986
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -89,3 +91,5 @@ permalink: /kb/077/Q77986/
 	
 	=============================================================================
 	
+
+{% endraw %}

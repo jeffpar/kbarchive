@@ -6,6 +6,8 @@ permalink: /kb/102/Q102747/
 
 ## Q102747: X400: Err Msg: Only Four Organization Units Allowed in Address
 
+{% raw %}
+
 	Article: Q102747
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -50,3 +52,5 @@ permalink: /kb/102/Q102747/
 	
 	=============================================================================
 	
+
+{% endraw %}

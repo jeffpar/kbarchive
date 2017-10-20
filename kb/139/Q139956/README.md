@@ -6,6 +6,8 @@ permalink: /kb/139/Q139956/
 
 ## Q139956: RPC from a Big Endian Computer Causes GP Fault
 
+{% raw %}
+
 	Article: Q139956
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -83,3 +85,5 @@ permalink: /kb/139/Q139956/
 	
 	=============================================================================
 	
+
+{% endraw %}

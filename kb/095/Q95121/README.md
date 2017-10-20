@@ -6,6 +6,8 @@ permalink: /kb/095/Q95121/
 
 ## Q95121: FIX: L1101 Error Linking MASM Object Module w/ Large Structure
 
+{% raw %}
+
 	Article: Q95121
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -121,3 +123,5 @@ permalink: /kb/095/Q95121/
 	
 	=============================================================================
 	
+
+{% endraw %}

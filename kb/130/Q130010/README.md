@@ -6,6 +6,8 @@ permalink: /kb/130/Q130010/
 
 ## Q130010: File Manager: Windows NT Server Tools Security Menu Missing
 
+{% raw %}
+
 	Article: Q130010
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.11; Win2000:3.1; winnt:3.5
@@ -65,3 +67,5 @@ permalink: /kb/130/Q130010/
 	
 	=============================================================================
 	
+
+{% endraw %}

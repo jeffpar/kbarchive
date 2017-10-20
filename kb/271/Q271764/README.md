@@ -6,6 +6,8 @@ permalink: /kb/271/Q271764/
 
 ## Q271764: PRB: Application-defined or Object-defined Error in WebClass App
 
+{% raw %}
+
 	Article: Q271764
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -145,3 +147,5 @@ permalink: /kb/271/Q271764/
 	
 	=============================================================================
 	
+
+{% endraw %}

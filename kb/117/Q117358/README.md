@@ -6,6 +6,8 @@ permalink: /kb/117/Q117358/
 
 ## Q117358: Err Msg: An Error Occurred Trying to Initialize Video Adapter
 
+{% raw %}
+
 	Article: Q117358
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/117/Q117358/
 	
 	=============================================================================
 	
+
+{% endraw %}

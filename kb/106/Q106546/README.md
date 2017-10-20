@@ -6,6 +6,8 @@ permalink: /kb/106/Q106546/
 
 ## Q106546: Resouce Kit Doc Error: London Appears in the From Box...
 
+{% raw %}
+
 	Article: Q106546
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.1
@@ -43,3 +45,5 @@ permalink: /kb/106/Q106546/
 	
 	=============================================================================
 	
+
+{% endraw %}

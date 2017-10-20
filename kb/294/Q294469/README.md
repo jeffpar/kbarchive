@@ -6,6 +6,8 @@ permalink: /kb/294/Q294469/
 
 ## Q294469: PRB: Error &quot;Cannot Update the Cursor&quot; When You Modify Tables
 
+{% raw %}
+
 	Article: Q294469
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -125,3 +127,5 @@ permalink: /kb/294/Q294469/
 	
 	=============================================================================
 	
+
+{% endraw %}

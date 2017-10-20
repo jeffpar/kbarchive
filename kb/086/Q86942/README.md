@@ -6,6 +6,8 @@ permalink: /kb/086/Q86942/
 
 ## Q86942: 3COM: How to Check to See If Mail Is Queued for the Gateway
 
+{% raw %}
+
 	Article: Q86942
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -42,3 +44,5 @@ permalink: /kb/086/Q86942/
 	
 	=============================================================================
 	
+
+{% endraw %}

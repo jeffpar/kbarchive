@@ -6,6 +6,8 @@ permalink: /kb/266/Q266129/
 
 ## Q266129: Desktop Heap Corruption Causes &quot;Stop 0x00000050&quot; Error Message
 
+{% raw %}
+
 	Article: Q266129
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/266/Q266129/
 	
 	=============================================================================
 	
+
+{% endraw %}

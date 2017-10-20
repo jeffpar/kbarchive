@@ -6,6 +6,8 @@ permalink: /kb/088/Q88377/
 
 ## Q88377: PC Win: Deleting Messages from Shared Folders
 
+{% raw %}
+
 	Article: Q88377
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/088/Q88377/
 	
 	=============================================================================
 	
+
+{% endraw %}

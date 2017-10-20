@@ -6,6 +6,8 @@ permalink: /kb/105/Q105332/
 
 ## Q105332: Print Monitor Cannot Handle More Than 255 Zones
 
+{% raw %}
+
 	Article: Q105332
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -44,3 +46,5 @@ permalink: /kb/105/Q105332/
 	
 	=============================================================================
 	
+
+{% endraw %}

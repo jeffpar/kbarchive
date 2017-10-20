@@ -6,6 +6,8 @@ permalink: /kb/169/Q169226/
 
 ## Q169226: Path of Nested Desktop Folder Not Displayed Correctly
 
+{% raw %}
+
 	Article: Q169226
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/169/Q169226/
 	
 	=============================================================================
 	
+
+{% endraw %}

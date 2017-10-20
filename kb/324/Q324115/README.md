@@ -6,6 +6,8 @@ permalink: /kb/324/Q324115/
 
 ## Q324115: Building XML Web Services for the Microsoft .NET Platform Commen
 
+{% raw %}
+
 	Article: Q324115
 	Product(s): Microsoft Press
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/324/Q324115/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151264/
 
 ## Q151264: SMS Enumerates Partial User List Configuring Logon
 
+{% raw %}
+
 	Article: Q151264
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -47,3 +49,5 @@ permalink: /kb/151/Q151264/
 	
 	=============================================================================
 	
+
+{% endraw %}

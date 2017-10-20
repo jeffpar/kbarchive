@@ -6,6 +6,8 @@ permalink: /kb/076/Q76874/
 
 ## Q76874: MSCDEX CD-ROM Driver and Windows with Multimedia Extensions
 
+{% raw %}
+
 	Article: Q76874
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/076/Q76874/
 	
 	=============================================================================
 	
+
+{% endraw %}

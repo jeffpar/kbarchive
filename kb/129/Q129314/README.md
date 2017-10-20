@@ -6,6 +6,8 @@ permalink: /kb/129/Q129314/
 
 ## Q129314: SCATTER &amp; GATHER Commands Have a New NAME Argument
 
+{% raw %}
+
 	Article: Q129314
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -232,3 +234,5 @@ permalink: /kb/129/Q129314/
 	
 	=============================================================================
 	
+
+{% endraw %}

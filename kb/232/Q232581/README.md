@@ -6,6 +6,8 @@ permalink: /kb/232/Q232581/
 
 ## Q232581: BUG: GetMetaFile() Fails on Long File Names
 
+{% raw %}
+
 	Article: Q232581
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/232/Q232581/
 	
 	=============================================================================
 	
+
+{% endraw %}

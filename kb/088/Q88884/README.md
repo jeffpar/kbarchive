@@ -6,6 +6,8 @@ permalink: /kb/088/Q88884/
 
 ## Q88884: Leaving Routine in ON ERROR in FoxBASE+ or FoxPro
 
+{% raw %}
+
 	Article: Q88884
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:1.0,1.01,1.02,1.21,2.0,2.1,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -117,3 +119,5 @@ permalink: /kb/088/Q88884/
 	
 	=============================================================================
 	
+
+{% endraw %}

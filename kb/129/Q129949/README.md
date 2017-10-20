@@ -6,6 +6,8 @@ permalink: /kb/129/Q129949/
 
 ## Q129949: PRB: Empty Sub Procedures Are Not Persistent
 
+{% raw %}
+
 	Article: Q129949
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -97,3 +99,5 @@ permalink: /kb/129/Q129949/
 	
 	=============================================================================
 	
+
+{% endraw %}

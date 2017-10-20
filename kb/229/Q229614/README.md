@@ -6,6 +6,8 @@ permalink: /kb/229/Q229614/
 
 ## Q229614: No Error Message Occurs If Dragging from Exchange Does Not Work
 
+{% raw %}
+
 	Article: Q229614
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/229/Q229614/
 	
 	=============================================================================
 	
+
+{% endraw %}

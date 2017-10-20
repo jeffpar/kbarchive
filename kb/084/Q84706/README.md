@@ -6,6 +6,8 @@ permalink: /kb/084/Q84706/
 
 ## Q84706: Troubleshooting SMARTDrive Version 4.0
 
+{% raw %}
+
 	Article: Q84706
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -177,3 +179,5 @@ permalink: /kb/084/Q84706/
 	
 	=============================================================================
 	
+
+{% endraw %}

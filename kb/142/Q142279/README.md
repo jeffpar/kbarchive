@@ -6,6 +6,8 @@ permalink: /kb/142/Q142279/
 
 ## Q142279: Semi-Transparent Fills Are Black on Printout (Canon BJC-610)
 
+{% raw %}
+
 	Article: Q142279
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -52,3 +54,5 @@ permalink: /kb/142/Q142279/
 	
 	=============================================================================
 	
+
+{% endraw %}

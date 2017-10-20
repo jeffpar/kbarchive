@@ -6,6 +6,8 @@ permalink: /kb/037/Q37412/
 
 ## Q37412: MS Press &quot;Programmer's Toolbox&quot; Doesn't Have .OBJ for C Code
 
+{% raw %}
+
 	Article: Q37412
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -35,3 +37,5 @@ permalink: /kb/037/Q37412/
 	companion disks because using them also requires additional C run-time
 	libraries. These, too, would have to be included to accommodate people
 	without access to a C compiler.
+
+{% endraw %}

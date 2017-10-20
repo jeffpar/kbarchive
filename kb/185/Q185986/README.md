@@ -6,6 +6,8 @@ permalink: /kb/185/Q185986/
 
 ## Q185986: XADM: Attached DBCS Message Not Displayed Properly
 
+{% raw %}
+
 	Article: Q185986
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -69,3 +71,5 @@ permalink: /kb/185/Q185986/
 	
 	=============================================================================
 	
+
+{% endraw %}

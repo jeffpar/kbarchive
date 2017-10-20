@@ -6,6 +6,8 @@ permalink: /kb/089/Q89585/
 
 ## Q89585: PC OS2: Running CONVERT.EXE Under OS/2 1.3
 
+{% raw %}
+
 	Article: Q89585
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/089/Q89585/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/268/Q268577/
 
 ## Q268577: XADM: Directory Service Does Not Start with Event ID 1002
 
+{% raw %}
+
 	Article: Q268577
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/268/Q268577/
 	
 	=============================================================================
 	
+
+{% endraw %}

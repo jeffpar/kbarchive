@@ -6,6 +6,8 @@ permalink: /kb/278/Q278745/
 
 ## Q278745: SMS: Site Component Manager Reinstalls Component Servers
 
+{% raw %}
+
 	Article: Q278745
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -117,3 +119,5 @@ permalink: /kb/278/Q278745/
 	
 	=============================================================================
 	
+
+{% endraw %}

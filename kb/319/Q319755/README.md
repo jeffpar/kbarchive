@@ -6,6 +6,8 @@ permalink: /kb/319/Q319755/
 
 ## Q319755: XADM: Error c106fc0d When Upgrade to Exchange 5.5 Enterprise
 
+{% raw %}
+
 	Article: Q319755
 	Product(s): Microsoft Exchange
 	Version(s): 2000,5.5
@@ -65,3 +67,5 @@ permalink: /kb/319/Q319755/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153427/
 
 ## Q153427: PRB: Controls Not Initialized in CPropertyPage::OnInitDialog()
 
+{% raw %}
+
 	Article: Q153427
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -63,9 +65,9 @@ permalink: /kb/153/Q153427/
 	
 	  CMyPage::CMyPage() : CPropertyPage(CMyPage::IDD)
 	  {
-	      //{ {AFX_DATA_INIT(CMyPage)
+	      //{{AFX_DATA_INIT(CMyPage)
 	      m_strData = _T("Hello");
-	      //} }AFX_DATA_INIT
+	      //}}AFX_DATA_INIT
 	  }
 	
 	or
@@ -93,3 +95,5 @@ permalink: /kb/153/Q153427/
 	
 	=============================================================================
 	
+
+{% endraw %}

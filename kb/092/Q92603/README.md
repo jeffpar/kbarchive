@@ -6,6 +6,8 @@ permalink: /kb/092/Q92603/
 
 ## Q92603: What is a Clean Boot for WFWG 3.1 with Novell Connectivity
 
+{% raw %}
+
 	Article: Q92603
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -176,3 +178,5 @@ permalink: /kb/092/Q92603/
 	
 	=============================================================================
 	
+
+{% endraw %}

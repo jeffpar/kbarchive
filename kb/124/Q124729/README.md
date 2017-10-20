@@ -6,6 +6,8 @@ permalink: /kb/124/Q124729/
 
 ## Q124729: How to Program DMA Transfers in the Protected Mode Windows Env
 
+{% raw %}
+
 	Article: Q124729
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.1
@@ -126,3 +128,5 @@ permalink: /kb/124/Q124729/
 	
 	=============================================================================
 	
+
+{% endraw %}

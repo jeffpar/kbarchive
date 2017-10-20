@@ -6,6 +6,8 @@ permalink: /kb/082/Q82224/
 
 ## Q82224: DRIVER.SYS Incompatible with Windows File Manager
 
+{% raw %}
+
 	Article: Q82224
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/082/Q82224/
 	
 	=============================================================================
 	
+
+{% endraw %}

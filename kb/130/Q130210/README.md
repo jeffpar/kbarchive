@@ -6,6 +6,8 @@ permalink: /kb/130/Q130210/
 
 ## Q130210: Error Message Parameters Displayed with SYS(2018)
 
+{% raw %}
+
 	Article: Q130210
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -90,3 +92,5 @@ permalink: /kb/130/Q130210/
 	
 	=============================================================================
 	
+
+{% endraw %}

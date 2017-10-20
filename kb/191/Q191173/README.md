@@ -6,6 +6,8 @@ permalink: /kb/191/Q191173/
 
 ## Q191173: HOWTO: Display Web Content in the Component Gallery
 
+{% raw %}
+
 	Article: Q191173
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -68,3 +70,5 @@ permalink: /kb/191/Q191173/
 	
 	=============================================================================
 	
+
+{% endraw %}

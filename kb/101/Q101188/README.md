@@ -6,6 +6,8 @@ permalink: /kb/101/Q101188/
 
 ## Q101188: Order of Object Initialization Across Translation Units
 
+{% raw %}
+
 	Article: Q101188
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:7.0; :1.0,1.5,2.0,4.0
@@ -46,3 +48,5 @@ permalink: /kb/101/Q101188/
 	
 	=============================================================================
 	
+
+{% endraw %}

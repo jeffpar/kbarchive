@@ -6,6 +6,8 @@ permalink: /kb/120/Q120117/
 
 ## Q120117: DBLSPACE /LIST &amp; DRVSPACE /LIST Report 4096-MB Hard Disk
 
+{% raw %}
+
 	Article: Q120117
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -54,3 +56,5 @@ permalink: /kb/120/Q120117/
 	
 	=============================================================================
 	
+
+{% endraw %}

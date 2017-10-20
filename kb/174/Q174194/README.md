@@ -6,6 +6,8 @@ permalink: /kb/174/Q174194/
 
 ## Q174194: MDG: All Remote Users on Postoffice Get Error
 
+{% raw %}
+
 	Article: Q174194
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -66,3 +68,5 @@ permalink: /kb/174/Q174194/
 	
 	=============================================================================
 	
+
+{% endraw %}

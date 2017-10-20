@@ -6,6 +6,8 @@ permalink: /kb/041/Q41367/
 
 ## Q41367: QuickC 2.00 README.DOC: Changing AUTOEXEC.BAT
 
+{% raw %}
+
 	Article: Q41367
 	Product(s): See article
 	Version(s): 2.00
@@ -27,3 +29,5 @@ permalink: /kb/041/Q41367/
 	   or type it at the command line:
 	
 	   set cl=/FPi87
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179677/
 
 ## Q179677: XFOR: Comma Precedes SMTP Sender's Display Name
 
+{% raw %}
+
 	Article: Q179677
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/179/Q179677/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85891/
 
 ## Q85891: Dimmed or Missing Options Under Program Manager
 
+{% raw %}
+
 	Article: Q85891
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -112,3 +114,5 @@ permalink: /kb/085/Q85891/
 	
 	=============================================================================
 	
+
+{% endraw %}

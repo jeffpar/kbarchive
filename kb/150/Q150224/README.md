@@ -6,6 +6,8 @@ permalink: /kb/150/Q150224/
 
 ## Q150224: FIX: ListView &amp; TreeView Not Visible if DragMode is Automatic
 
+{% raw %}
+
 	Article: Q150224
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/150/Q150224/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145593/
 
 ## Q145593: Windows 95 and WFW Err Msg: No Domain Server Was Available...
 
+{% raw %}
+
 	Article: Q145593
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11,95; winnt:3.5,3.51
@@ -82,3 +84,5 @@ permalink: /kb/145/Q145593/
 	
 	=============================================================================
 	
+
+{% endraw %}

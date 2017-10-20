@@ -6,6 +6,8 @@ permalink: /kb/192/Q192934/
 
 ## Q192934: PRB: Error &quot;The Jet VBA File...Failed to Initialize When Called&quot;
 
+{% raw %}
+
 	Article: Q192934
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -220,3 +222,5 @@ permalink: /kb/192/Q192934/
 	
 	=============================================================================
 	
+
+{% endraw %}

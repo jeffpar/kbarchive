@@ -6,6 +6,8 @@ permalink: /kb/107/Q107097/
 
 ## Q107097: 3COM: Removing the 3COM Gateway with INSTALL -r
 
+{% raw %}
+
 	Article: Q107097
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/107/Q107097/
 	
 	=============================================================================
 	
+
+{% endraw %}

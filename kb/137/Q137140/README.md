@@ -6,6 +6,8 @@ permalink: /kb/137/Q137140/
 
 ## Q137140: ErrMsg: Unable to Read from &lt;Path&gt;, It Is Open by Someone Else
 
+{% raw %}
+
 	Article: Q137140
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -75,3 +77,5 @@ permalink: /kb/137/Q137140/
 	
 	=============================================================================
 	
+
+{% endraw %}

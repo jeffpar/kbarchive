@@ -6,6 +6,8 @@ permalink: /kb/242/Q242322/
 
 ## Q242322: PRB: ToolTipText Property On MMCToolbar Button Does Not Update
 
+{% raw %}
+
 	Article: Q242322
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.1,1.2,6.0
@@ -143,3 +145,5 @@ permalink: /kb/242/Q242322/
 	
 	=============================================================================
 	
+
+{% endraw %}

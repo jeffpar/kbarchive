@@ -6,6 +6,8 @@ permalink: /kb/042/Q42325/
 
 ## Q42325: 4.50 Language Manual Error Page 33 &quot;while program is running&quot;
 
+{% raw %}
+
 	Article: Q42325
 	Product(s): See article
 	Version(s): 4.50
@@ -17,3 +19,5 @@ permalink: /kb/042/Q42325/
 	BASIC Language Reference," the sentence should read "The storage taken
 	by dynamic arrays can be eliminated while the program is running ..."
 	instead of "The storage ... while the program is NOT running."
+
+{% endraw %}

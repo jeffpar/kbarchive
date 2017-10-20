@@ -6,6 +6,8 @@ permalink: /kb/105/Q105046/
 
 ## Q105046: HOWTO: How to Quit Windows from Within a FoxPro Application
 
+{% raw %}
+
 	Article: Q105046
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0
@@ -69,3 +71,5 @@ permalink: /kb/105/Q105046/
 	
 	=============================================================================
 	
+
+{% endraw %}

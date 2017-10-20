@@ -6,6 +6,8 @@ permalink: /kb/279/Q279888/
 
 ## Q279888: BUG: Error When Using Client Cursor to Add Record to SQL Table
 
+{% raw %}
+
 	Article: Q279888
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1 SP2,2.5,2.6,6.0,7.0
@@ -130,3 +132,5 @@ permalink: /kb/279/Q279888/
 	
 	=============================================================================
 	
+
+{% endraw %}

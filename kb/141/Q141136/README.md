@@ -6,6 +6,8 @@ permalink: /kb/141/Q141136/
 
 ## Q141136: PC WRmt: GP Fault with Mail Remote and Hebrew WFW
 
+{% raw %}
+
 	Article: Q141136
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -45,3 +47,5 @@ permalink: /kb/141/Q141136/
 	
 	=============================================================================
 	
+
+{% endraw %}

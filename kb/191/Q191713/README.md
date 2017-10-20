@@ -6,6 +6,8 @@ permalink: /kb/191/Q191713/
 
 ## Q191713: INFO: Type Declaration Character to Data Type Chart
 
+{% raw %}
+
 	Article: Q191713
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/191/Q191713/
 	
 	=============================================================================
 	
+
+{% endraw %}

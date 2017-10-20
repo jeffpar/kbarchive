@@ -6,6 +6,8 @@ permalink: /kb/092/Q92529/
 
 ## Q92529: INFO: Reasons for Failure of Bitmap Functions
 
+{% raw %}
+
 	Article: Q92529
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -167,3 +169,5 @@ permalink: /kb/092/Q92529/
 	
 	=============================================================================
 	
+
+{% endraw %}

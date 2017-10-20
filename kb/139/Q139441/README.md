@@ -6,6 +6,8 @@ permalink: /kb/139/Q139441/
 
 ## Q139441: Dangerous Creatures Camouflage Interactivity:No Screen Redraw
 
+{% raw %}
+
 	Article: Q139441
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -43,3 +45,5 @@ permalink: /kb/139/Q139441/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130511/
 
 ## Q130511: ScanDisk Fails Repairing Bad Allocated Cluster
 
+{% raw %}
+
 	Article: Q130511
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/130/Q130511/
 	
 	=============================================================================
 	
+
+{% endraw %}

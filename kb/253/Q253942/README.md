@@ -6,6 +6,8 @@ permalink: /kb/253/Q253942/
 
 ## Q253942: FIX: Task Scheduler Task Runs in the Background After Sysprep
 
+{% raw %}
+
 	Article: Q253942
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -158,3 +160,5 @@ permalink: /kb/253/Q253942/
 	
 	=============================================================================
 	
+
+{% endraw %}

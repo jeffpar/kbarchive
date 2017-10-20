@@ -6,6 +6,8 @@ permalink: /kb/171/Q171981/
 
 ## Q171981: HOWTO: Play an .AVI Video File in Full Screen in Visual Basic
 
+{% raw %}
+
 	Article: Q171981
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/171/Q171981/
 	
 	=============================================================================
 	
+
+{% endraw %}

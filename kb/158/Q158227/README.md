@@ -6,6 +6,8 @@ permalink: /kb/158/Q158227/
 
 ## Q158227: Mac Encarta 97: Pasting Text into Search Box Finds Nothing
 
+{% raw %}
+
 	Article: Q158227
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition; WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/158/Q158227/
 	
 	=============================================================================
 	
+
+{% endraw %}

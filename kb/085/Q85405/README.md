@@ -6,6 +6,8 @@ permalink: /kb/085/Q85405/
 
 ## Q85405: Epson T-750 Does Not Handle US Fanfold Correctly
 
+{% raw %}
+
 	Article: Q85405
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/085/Q85405/
 	
 	=============================================================================
 	
+
+{% endraw %}

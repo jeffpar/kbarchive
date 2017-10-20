@@ -6,6 +6,8 @@ permalink: /kb/269/Q269531/
 
 ## Q269531: How to Enable Fault Logging in Windows 95
 
+{% raw %}
+
 	Article: Q269531
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/269/Q269531/
 	
 	=============================================================================
 	
+
+{% endraw %}

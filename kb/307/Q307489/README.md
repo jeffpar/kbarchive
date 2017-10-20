@@ -6,6 +6,8 @@ permalink: /kb/307/Q307489/
 
 ## Q307489: Cannot Access .shtml Files with JRUN ISAPI Filter Installed
 
+{% raw %}
+
 	Article: Q307489
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -89,3 +91,5 @@ permalink: /kb/307/Q307489/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244792/
 
 ## Q244792: OLE/DB for DB2 Error: Could Not Resolve the Specified Host Name
 
+{% raw %}
+
 	Article: Q244792
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP3
@@ -68,3 +70,5 @@ permalink: /kb/244/Q244792/
 	
 	=============================================================================
 	
+
+{% endraw %}

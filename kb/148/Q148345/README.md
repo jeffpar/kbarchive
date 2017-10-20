@@ -6,6 +6,8 @@ permalink: /kb/148/Q148345/
 
 ## Q148345: Remote Shutdown Fails When Logon Screensaver Starts
 
+{% raw %}
+
 	Article: Q148345
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -56,3 +58,5 @@ permalink: /kb/148/Q148345/
 	
 	=============================================================================
 	
+
+{% endraw %}

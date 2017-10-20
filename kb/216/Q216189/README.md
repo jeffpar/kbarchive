@@ -6,6 +6,8 @@ permalink: /kb/216/Q216189/
 
 ## Q216189: HOWTO: Right Justify the Help Menu Item in Visual Basic
 
+{% raw %}
+
 	Article: Q216189
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -141,3 +143,5 @@ permalink: /kb/216/Q216189/
 	
 	=============================================================================
 	
+
+{% endraw %}

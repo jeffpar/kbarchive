@@ -6,6 +6,8 @@ permalink: /kb/177/Q177147/
 
 ## Q177147: Default for Use Locally Cached Profile Dialog
 
+{% raw %}
+
 	Article: Q177147
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0 SP4
@@ -89,3 +91,5 @@ permalink: /kb/177/Q177147/
 	
 	=============================================================================
 	
+
+{% endraw %}

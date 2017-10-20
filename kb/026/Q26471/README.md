@@ -6,6 +6,8 @@ permalink: /kb/026/Q26471/
 
 ## Q26471: Workarounds for CLOSE of COM(n) Disconnecting Phone Connection
 
+{% raw %}
+
 	Article: Q26471
 	Product(s): See article
 	Version(s): 4.00
@@ -98,3 +100,5 @@ permalink: /kb/026/Q26471/
 	BRUNxxx.EXE and the COM port is not CLOSEd, DTR and RTS should stay
 	high. Compiling with BCOMxxx.LIB or closing the COM port always drops
 	DTR.
+
+{% endraw %}

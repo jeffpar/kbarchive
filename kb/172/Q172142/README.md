@@ -6,6 +6,8 @@ permalink: /kb/172/Q172142/
 
 ## Q172142: Event ID 4129 May Appear When Using Compaq Insight Manager
 
+{% raw %}
+
 	Article: Q172142
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/172/Q172142/
 	
 	=============================================================================
 	
+
+{% endraw %}

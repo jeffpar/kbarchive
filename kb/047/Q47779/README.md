@@ -6,6 +6,8 @@ permalink: /kb/047/Q47779/
 
 ## Q47779: Linking without /NOI Causes SYS2070 in Program Calling CRTLIB
 
+{% raw %}
+
 	Article: Q47779
 	Product(s): See article
 	Version(s): 5.10
@@ -22,3 +24,5 @@ permalink: /kb/047/Q47779/
 	To avoid the problem, use the /NOI switch when linking. The proper use
 	of /NOI is described in Section 5.2 of the MTDYNA.DOC file supplied
 	with Microsoft C Version 5.10.
+
+{% endraw %}

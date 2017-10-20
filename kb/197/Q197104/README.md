@@ -6,6 +6,8 @@ permalink: /kb/197/Q197104/
 
 ## Q197104: Error Message If Laptop Is Ejected While Copying to Floppy Disk
 
+{% raw %}
+
 	Article: Q197104
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -86,3 +88,5 @@ permalink: /kb/197/Q197104/
 	
 	=============================================================================
 	
+
+{% endraw %}

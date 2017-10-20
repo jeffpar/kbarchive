@@ -6,6 +6,8 @@ permalink: /kb/125/Q125873/
 
 ## Q125873: FORTRAN PowerStation 1.0a ANSWERS.TXT
 
+{% raw %}
+
 	Article: Q125873
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0a
@@ -503,3 +505,5 @@ permalink: /kb/125/Q125873/
 	
 	=============================================================================
 	
+
+{% endraw %}

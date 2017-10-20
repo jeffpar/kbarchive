@@ -6,6 +6,8 @@ permalink: /kb/189/Q189156/
 
 ## Q189156: BUG: Crash When Closing Application That Uses ActiveX DLL
 
+{% raw %}
+
 	Article: Q189156
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -216,3 +218,5 @@ permalink: /kb/189/Q189156/
 	
 	=============================================================================
 	
+
+{% endraw %}

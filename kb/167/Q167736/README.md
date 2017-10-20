@@ -6,6 +6,8 @@ permalink: /kb/167/Q167736/
 
 ## Q167736: MFC ISAPI Generates Access Violation in CHtmlStream.Detach
 
+{% raw %}
+
 	Article: Q167736
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,4.0,4.1,4.2,4.2b,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/167/Q167736/
 	
 	=============================================================================
 	
+
+{% endraw %}

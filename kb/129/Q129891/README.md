@@ -6,6 +6,8 @@ permalink: /kb/129/Q129891/
 
 ## Q129891: ScanDisk Refers to Volume Label as File
 
+{% raw %}
+
 	Article: Q129891
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/129/Q129891/
 	
 	=============================================================================
 	
+
+{% endraw %}

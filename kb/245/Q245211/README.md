@@ -6,6 +6,8 @@ permalink: /kb/245/Q245211/
 
 ## Q245211: XADM: Incremental Backup Doesn't Work on Second Node of Cluster
 
+{% raw %}
+
 	Article: Q245211
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -70,3 +72,5 @@ permalink: /kb/245/Q245211/
 	
 	=============================================================================
 	
+
+{% endraw %}

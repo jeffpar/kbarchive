@@ -6,6 +6,8 @@ permalink: /kb/187/Q187926/
 
 ## Q187926: Use of the SAP Agent Service on a Windows NT Server
 
+{% raw %}
+
 	Article: Q187926
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -88,3 +90,5 @@ permalink: /kb/187/Q187926/
 	
 	=============================================================================
 	
+
+{% endraw %}

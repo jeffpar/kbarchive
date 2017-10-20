@@ -6,6 +6,8 @@ permalink: /kb/131/Q131324/
 
 ## Q131324: Use New Flags to Speed Up C Run-time Low-Level I/O Functions
 
+{% raw %}
+
 	Article: Q131324
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00 2.00 2.10 4.00
@@ -79,3 +81,5 @@ permalink: /kb/131/Q131324/
 	
 	=============================================================================
 	
+
+{% endraw %}

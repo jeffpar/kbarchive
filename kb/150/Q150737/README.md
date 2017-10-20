@@ -6,6 +6,8 @@ permalink: /kb/150/Q150737/
 
 ## Q150737: Setting Primary and Secondary WINS Server Options
 
+{% raw %}
+
 	Article: Q150737
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -126,3 +128,5 @@ permalink: /kb/150/Q150737/
 	
 	=============================================================================
 	
+
+{% endraw %}

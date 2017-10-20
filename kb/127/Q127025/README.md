@@ -6,6 +6,8 @@ permalink: /kb/127/Q127025/
 
 ## Q127025: Switch Required for USERTSR for WFW 3.1 Clients
 
+{% raw %}
+
 	Article: Q127025
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -43,3 +45,5 @@ permalink: /kb/127/Q127025/
 	
 	=============================================================================
 	
+
+{% endraw %}

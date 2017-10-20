@@ -6,6 +6,8 @@ permalink: /kb/129/Q129847/
 
 ## Q129847: HOWTO: How to Use the Upsizing (SQL) Wizard in Visual FoxPro
 
+{% raw %}
+
 	Article: Q129847
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5
@@ -183,3 +185,5 @@ permalink: /kb/129/Q129847/
 	
 	=============================================================================
 	
+
+{% endraw %}

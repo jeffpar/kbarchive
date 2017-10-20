@@ -6,6 +6,8 @@ permalink: /kb/169/Q169883/
 
 ## Q169883: FP: Extra Line Spacing Inserted after Pressing ENTER
 
+{% raw %}
+
 	Article: Q169883
 	Product(s): Word Front Page
 	Version(s): windows:97, macintosh:1.0
@@ -76,3 +78,5 @@ permalink: /kb/169/Q169883/
 	
 	=============================================================================
 	
+
+{% endraw %}

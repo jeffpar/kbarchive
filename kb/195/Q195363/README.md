@@ -6,6 +6,8 @@ permalink: /kb/195/Q195363/
 
 ## Q195363: XADM: Admin Error When Viewing Internet Newsgroups Root Folder
 
+{% raw %}
+
 	Article: Q195363
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2
@@ -99,3 +101,5 @@ permalink: /kb/195/Q195363/
 	
 	=============================================================================
 	
+
+{% endraw %}

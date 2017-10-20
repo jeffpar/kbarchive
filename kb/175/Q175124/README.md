@@ -6,6 +6,8 @@ permalink: /kb/175/Q175124/
 
 ## Q175124: XADM: Error Message &quot;The file mqrt.dll was not found.&quot;
 
+{% raw %}
+
 	Article: Q175124
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0
@@ -90,3 +92,5 @@ permalink: /kb/175/Q175124/
 	
 	=============================================================================
 	
+
+{% endraw %}

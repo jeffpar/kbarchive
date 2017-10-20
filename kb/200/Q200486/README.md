@@ -6,6 +6,8 @@ permalink: /kb/200/Q200486/
 
 ## Q200486: XFOR: Adding Foreign Address Book to Notes Global Address List
 
+{% raw %}
+
 	Article: Q200486
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/200/Q200486/
 	
 	=============================================================================
 	
+
+{% endraw %}

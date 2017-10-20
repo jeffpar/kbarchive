@@ -6,6 +6,8 @@ permalink: /kb/148/Q148742/
 
 ## Q148742: Troubleshooting the ISDN Accelerator Pack
 
+{% raw %}
+
 	Article: Q148742
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -175,3 +177,5 @@ permalink: /kb/148/Q148742/
 	
 	=============================================================================
 	
+
+{% endraw %}

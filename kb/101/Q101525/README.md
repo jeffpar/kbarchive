@@ -6,6 +6,8 @@ permalink: /kb/101/Q101525/
 
 ## Q101525: INF: How to Use the SQL_DRIVER_HSTMT Option in SQLGetInfo()
 
+{% raw %}
+
 	Article: Q101525
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/101/Q101525/
 	
 	=============================================================================
 	
+
+{% endraw %}

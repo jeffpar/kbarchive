@@ -6,6 +6,8 @@ permalink: /kb/140/Q140370/
 
 ## Q140370: Error Running NTBACKUP On DEC XL 590 Celebris
 
+{% raw %}
+
 	Article: Q140370
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -64,3 +66,5 @@ permalink: /kb/140/Q140370/
 	
 	=============================================================================
 	
+
+{% endraw %}

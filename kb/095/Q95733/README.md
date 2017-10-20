@@ -6,6 +6,8 @@ permalink: /kb/095/Q95733/
 
 ## Q95733: PC Win: Spell Does Not Check Words Containing Numbers
 
+{% raw %}
+
 	Article: Q95733
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/095/Q95733/
 	
 	=============================================================================
 	
+
+{% endraw %}

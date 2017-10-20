@@ -6,6 +6,8 @@ permalink: /kb/161/Q161273/
 
 ## Q161273: HOWTO: Create Data Bound Controls
 
+{% raw %}
+
 	Article: Q161273
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.00
@@ -162,3 +164,5 @@ permalink: /kb/161/Q161273/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/269/Q269278/
 
 ## Q269278: &quot;Stop 0x0000007f&quot; During Windows NT 4.0 Setup
 
+{% raw %}
+
 	Article: Q269278
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/269/Q269278/
 	
 	=============================================================================
 	
+
+{% endraw %}

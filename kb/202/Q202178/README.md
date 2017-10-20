@@ -6,6 +6,8 @@ permalink: /kb/202/Q202178/
 
 ## Q202178: XFOR: Messages to cc:Mail Queued in Submit Directory
 
+{% raw %}
+
 	Article: Q202178
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/202/Q202178/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137585/
 
 ## Q137585: STOP 0x0000007F on Pentium Pro Systems Running Windows NT 3.51
 
+{% raw %}
+
 	Article: Q137585
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -63,3 +65,5 @@ permalink: /kb/137/Q137585/
 	
 	=============================================================================
 	
+
+{% endraw %}

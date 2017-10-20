@@ -6,6 +6,8 @@ permalink: /kb/127/Q127955/
 
 ## Q127955: NT LPD Fails to Remove Double Digit Job Numbers via LPRM
 
+{% raw %}
+
 	Article: Q127955
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -50,3 +52,5 @@ permalink: /kb/127/Q127955/
 	
 	=============================================================================
 	
+
+{% endraw %}

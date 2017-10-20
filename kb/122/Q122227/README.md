@@ -6,6 +6,8 @@ permalink: /kb/122/Q122227/
 
 ## Q122227: FIX: Incremental Link Fails to Change the Subsystem Version
 
+{% raw %}
+
 	Article: Q122227
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.0
@@ -72,3 +74,5 @@ permalink: /kb/122/Q122227/
 	
 	=============================================================================
 	
+
+{% endraw %}

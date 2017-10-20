@@ -6,6 +6,8 @@ permalink: /kb/170/Q170053/
 
 ## Q170053: Netscape Unable to Find a Plug-in for Application/octet-stream
 
+{% raw %}
+
 	Article: Q170053
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0
@@ -75,3 +77,5 @@ permalink: /kb/170/Q170053/
 	
 	=============================================================================
 	
+
+{% endraw %}

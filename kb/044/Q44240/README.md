@@ -6,6 +6,8 @@ permalink: /kb/044/Q44240/
 
 ## Q44240: Problem Editing QuickBASIC 4.50 Module Without COMMON
 
+{% raw %}
+
 	Article: Q44240
 	Product(s): See article
 	Version(s): 4.50
@@ -65,3 +67,5 @@ permalink: /kb/044/Q44240/
 	
 	10. Press F5 and the program hangs. [Any combination of F5, SHIFT+F5,
 	    and ALT+R R (restart) in Steps 7 and 8 reproduces this problem.]
+
+{% endraw %}

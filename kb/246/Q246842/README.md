@@ -6,6 +6,8 @@ permalink: /kb/246/Q246842/
 
 ## Q246842: SMS: Access Violation in Remote.exe When Encryption Disabled
 
+{% raw %}
+
 	Article: Q246842
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP1,2.0 SP2
@@ -135,3 +137,5 @@ permalink: /kb/246/Q246842/
 	
 	=============================================================================
 	
+
+{% endraw %}

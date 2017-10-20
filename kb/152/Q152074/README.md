@@ -6,6 +6,8 @@ permalink: /kb/152/Q152074/
 
 ## Q152074: PRB: COleMessageFilter Doesn't Process WM_PAINT
 
+{% raw %}
+
 	Article: Q152074
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -108,3 +110,5 @@ permalink: /kb/152/Q152074/
 	
 	=============================================================================
 	
+
+{% endraw %}

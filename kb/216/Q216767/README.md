@@ -6,6 +6,8 @@ permalink: /kb/216/Q216767/
 
 ## Q216767: XFOR: OVVM/SNADS/Notes Connector Not Recognizing Apparently-To
 
+{% raw %}
+
 	Article: Q216767
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/216/Q216767/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185710/
 
 ## Q185710: STOP 0x3F Error When SFGW Fails to Create DBCS Folder
 
+{% raw %}
+
 	Article: Q185710
 	Product(s): Microsoft SNA Server
 	Version(s): Windows:4.0
@@ -71,3 +73,5 @@ permalink: /kb/185/Q185710/
 	
 	=============================================================================
 	
+
+{% endraw %}

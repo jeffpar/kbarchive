@@ -6,6 +6,8 @@ permalink: /kb/147/Q147630/
 
 ## Q147630: FIX: Remote Monitor Quits When TCP/IP Isn't Loaded
 
+{% raw %}
+
 	Article: Q147630
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -68,3 +70,5 @@ permalink: /kb/147/Q147630/
 	
 	=============================================================================
 	
+
+{% endraw %}

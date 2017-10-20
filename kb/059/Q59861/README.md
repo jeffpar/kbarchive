@@ -6,6 +6,8 @@ permalink: /kb/059/Q59861/
 
 ## Q59861: 400 DPI Serial Mouse and Northgate Computers
 
+{% raw %}
+
 	Article: Q59861
 	Product(s): See article
 	Version(s): 1.00
@@ -47,3 +49,5 @@ permalink: /kb/059/Q59861/
 	
 	   c. Attach this adapter to the 9- to 25-pin adapter that you have
 	      already attached to your computer.
+
+{% endraw %}

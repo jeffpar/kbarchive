@@ -6,6 +6,8 @@ permalink: /kb/253/Q253478/
 
 ## Q253478: XADM: Determining Default Permissions of Folders Using Mdbview
 
+{% raw %}
+
 	Article: Q253478
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -101,3 +103,5 @@ permalink: /kb/253/Q253478/
 	
 	=============================================================================
 	
+
+{% endraw %}

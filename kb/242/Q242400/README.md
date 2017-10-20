@@ -6,6 +6,8 @@ permalink: /kb/242/Q242400/
 
 ## Q242400: SNA Server 4.0 Service Pack 3 Readme.txt File
 
+{% raw %}
+
 	Article: Q242400
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP3
@@ -374,3 +376,5 @@ permalink: /kb/242/Q242400/
 	
 	=============================================================================
 	
+
+{% endraw %}

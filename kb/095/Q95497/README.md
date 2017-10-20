@@ -6,6 +6,8 @@ permalink: /kb/095/Q95497/
 
 ## Q95497: Less Disk Space After Converting a Stacker Drive
 
+{% raw %}
+
 	Article: Q95497
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -46,3 +48,5 @@ permalink: /kb/095/Q95497/
 	
 	=============================================================================
 	
+
+{% endraw %}

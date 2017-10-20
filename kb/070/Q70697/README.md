@@ -6,6 +6,8 @@ permalink: /kb/070/Q70697/
 
 ## Q70697: New 4/16 MB Token Ring NICs: Problems with LAN Man 1.10 &amp; 2.00
 
+{% raw %}
+
 	Article: Q70697
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/070/Q70697/
 	
 	=============================================================================
 	
+
+{% endraw %}

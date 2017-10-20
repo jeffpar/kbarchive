@@ -6,6 +6,8 @@ permalink: /kb/176/Q176335/
 
 ## Q176335: Flight Simulator 95: Sound Is Intermittent with Sound III Card
 
+{% raw %}
+
 	Article: Q176335
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/176/Q176335/
 	
 	=============================================================================
 	
+
+{% endraw %}

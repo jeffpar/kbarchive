@@ -6,6 +6,8 @@ permalink: /kb/246/Q246523/
 
 ## Q246523: Err Msg: 'RPC Service Unavailable' After Windows NT Upgrade
 
+{% raw %}
+
 	Article: Q246523
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/246/Q246523/
 	
 	=============================================================================
 	
+
+{% endraw %}

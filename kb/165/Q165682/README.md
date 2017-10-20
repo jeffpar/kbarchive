@@ -6,6 +6,8 @@ permalink: /kb/165/Q165682/
 
 ## Q165682: INFO: Visual C++ 5.0 Readme, Documentation Issues
 
+{% raw %}
+
 	Article: Q165682
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -302,3 +304,5 @@ permalink: /kb/165/Q165682/
 	
 	=============================================================================
 	
+
+{% endraw %}

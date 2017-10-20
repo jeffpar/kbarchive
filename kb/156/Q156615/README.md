@@ -6,6 +6,8 @@ permalink: /kb/156/Q156615/
 
 ## Q156615: Writer 2: Performance Decreases When Working with OLE Objects
 
+{% raw %}
+
 	Article: Q156615
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -69,3 +71,5 @@ permalink: /kb/156/Q156615/
 	
 	=============================================================================
 	
+
+{% endraw %}

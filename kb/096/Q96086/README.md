@@ -6,6 +6,8 @@ permalink: /kb/096/Q96086/
 
 ## Q96086: HP DeskJet Printer Driver Support in Windows 3.1
 
+{% raw %}
+
 	Article: Q96086
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -138,3 +140,5 @@ permalink: /kb/096/Q96086/
 	
 	=============================================================================
 	
+
+{% endraw %}

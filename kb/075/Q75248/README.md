@@ -6,6 +6,8 @@ permalink: /kb/075/Q75248/
 
 ## Q75248: PROC w/ Parameters Requires Language Specifier on .MODEL
 
+{% raw %}
+
 	Article: Q75248
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.1,5.10a,6.0
@@ -66,3 +68,5 @@ permalink: /kb/075/Q75248/
 	
 	=============================================================================
 	
+
+{% endraw %}

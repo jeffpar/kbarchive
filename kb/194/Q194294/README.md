@@ -6,6 +6,8 @@ permalink: /kb/194/Q194294/
 
 ## Q194294: HOWTO: Add Toolbars and Tooltips to ActiveX Controls
 
+{% raw %}
+
 	Article: Q194294
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0
@@ -144,13 +146,13 @@ permalink: /kb/194/Q194294/
 	  handler:
 	
 	        BEGIN_MESSAGE_MAP(CCToolBarCtrl, COleControl)
-	           //{ {AFX_MSG_MAP(CCToolBarCtrl)
+	           //{{AFX_MSG_MAP(CCToolBarCtrl)
 	           ON_WM_CREATE()
 	           ON_COMMAND(ID_BUTTON1, OnButton1) // first button on toolbar
 	           ON_COMMAND(ID_BUTTON2, OnButton2) // second button on toolbar
 	           ON_COMMAND(ID_BUTTON3, OnButton3) // third button on toolbar
 	           ON_WM_DESTROY()
-	           //} }AFX_MSG_MAP
+	           //}}AFX_MSG_MAP
 	           ON_OLEVERB(AFX_IDS_VERB_PROPERTIES, OnProperties)
 	
 	           // ANSI notification code (for Windows 95)
@@ -228,3 +230,5 @@ permalink: /kb/194/Q194294/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196169/
 
 ## Q196169: XADM: Option to Zero Out Deleted Messages on Exchange Server
 
+{% raw %}
+
 	Article: Q196169
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1
@@ -81,3 +83,5 @@ permalink: /kb/196/Q196169/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187194/
 
 ## Q187194: Published Application Session Does Not Offer Logoff
 
+{% raw %}
+
 	Article: Q187194
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/187/Q187194/
 	
 	=============================================================================
 	
+
+{% endraw %}

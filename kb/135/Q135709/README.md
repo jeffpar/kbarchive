@@ -6,6 +6,8 @@ permalink: /kb/135/Q135709/
 
 ## Q135709: PRB: Visual C++ Link Error LNK2001: unresolved external symbol
 
+{% raw %}
+
 	Article: Q135709
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/135/Q135709/
 	
 	=============================================================================
 	
+
+{% endraw %}

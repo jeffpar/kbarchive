@@ -6,6 +6,8 @@ permalink: /kb/194/Q194065/
 
 ## Q194065: How to Reset License Manager Throughout an Enterprise
 
+{% raw %}
+
 	Article: Q194065
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -199,3 +201,5 @@ permalink: /kb/194/Q194065/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180399/
 
 ## Q180399: Missing Outlook 97 CD Key on BackOffice Server 4.0 CD-ROM
 
+{% raw %}
+
 	Article: Q180399
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:97; winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/180/Q180399/
 	
 	=============================================================================
 	
+
+{% endraw %}

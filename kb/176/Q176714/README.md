@@ -6,6 +6,8 @@ permalink: /kb/176/Q176714/
 
 ## Q176714: Troubleshooting Joystick Problems in Flight Simulator 98
 
+{% raw %}
+
 	Article: Q176714
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -626,3 +628,5 @@ permalink: /kb/176/Q176714/
 	
 	=============================================================================
 	
+
+{% endraw %}

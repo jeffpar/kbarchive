@@ -6,6 +6,8 @@ permalink: /kb/229/Q229262/
 
 ## Q229262: Baseball 2000: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q229262
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/229/Q229262/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/079/Q79092/
 
 ## Q79092: File Manager Can Delete All Data on a Logical Drive
 
+{% raw %}
+
 	Article: Q79092
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -73,3 +75,5 @@ permalink: /kb/079/Q79092/
 	
 	=============================================================================
 	
+
+{% endraw %}

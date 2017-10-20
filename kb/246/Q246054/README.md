@@ -6,6 +6,8 @@ permalink: /kb/246/Q246054/
 
 ## Q246054: INFO: DCOMCNFG, APPID&#92;.exe Mapping and Implications
 
+{% raw %}
+
 	Article: Q246054
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,4.0
@@ -112,3 +114,5 @@ permalink: /kb/246/Q246054/
 	
 	=============================================================================
 	
+
+{% endraw %}

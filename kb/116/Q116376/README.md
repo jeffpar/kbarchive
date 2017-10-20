@@ -6,6 +6,8 @@ permalink: /kb/116/Q116376/
 
 ## Q116376: Delrina WinFax Pro 3.0 for Networks and WFWG 3.11
 
+{% raw %}
+
 	Article: Q116376
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -68,3 +70,5 @@ permalink: /kb/116/Q116376/
 	
 	=============================================================================
 	
+
+{% endraw %}

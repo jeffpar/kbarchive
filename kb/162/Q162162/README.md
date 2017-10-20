@@ -6,6 +6,8 @@ permalink: /kb/162/Q162162/
 
 ## Q162162: WD97: Recorded Find Method Not Based on Language Formatting
 
+{% raw %}
+
 	Article: Q162162
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -122,3 +124,5 @@ permalink: /kb/162/Q162162/
 	
 	=============================================================================
 	
+
+{% endraw %}

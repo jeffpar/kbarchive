@@ -6,6 +6,8 @@ permalink: /kb/207/Q207730/
 
 ## Q207730: Urban Assault: Display Blinks When You Switch from Help
 
+{% raw %}
+
 	Article: Q207730
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/207/Q207730/
 	
 	=============================================================================
 	
+
+{% endraw %}

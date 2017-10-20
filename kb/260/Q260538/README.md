@@ -6,6 +6,8 @@ permalink: /kb/260/Q260538/
 
 ## Q260538: XADM: Service Pack Unsuccessful with &quot;LODCTR DSACTRS.INI&quot; Error
 
+{% raw %}
+
 	Article: Q260538
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -86,3 +88,5 @@ permalink: /kb/260/Q260538/
 	
 	=============================================================================
 	
+
+{% endraw %}

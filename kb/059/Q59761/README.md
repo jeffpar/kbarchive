@@ -6,6 +6,8 @@ permalink: /kb/059/Q59761/
 
 ## Q59761: &quot;Permission Denied&quot; with &gt; 20 LOCKs with SHARE Loaded
 
+{% raw %}
+
 	Article: Q59761
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/059/Q59761/
 	   100 PRINT "Permission Denied (";ERR;")"
 	   110 PRINT "Number of locks = ";i%-1
 	   120 END
+
+{% endraw %}

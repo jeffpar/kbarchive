@@ -6,6 +6,8 @@ permalink: /kb/258/Q258842/
 
 ## Q258842: WD97: French or Spanish Word 97 Crashes When Saving to Full Disk
 
+{% raw %}
+
 	Article: Q258842
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 1 (SR-1),Service Release 2
@@ -60,3 +62,5 @@ permalink: /kb/258/Q258842/
 	
 	=============================================================================
 	
+
+{% endraw %}

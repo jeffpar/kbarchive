@@ -6,6 +6,8 @@ permalink: /kb/156/Q156142/
 
 ## Q156142: PRB: Symbol &lt;default&gt; Always Shown in Input Parameters Dialog
 
+{% raw %}
+
 	Article: Q156142
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -64,3 +66,5 @@ permalink: /kb/156/Q156142/
 	
 	=============================================================================
 	
+
+{% endraw %}

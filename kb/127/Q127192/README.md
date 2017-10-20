@@ -6,6 +6,8 @@ permalink: /kb/127/Q127192/
 
 ## Q127192: HOWTO: Draw Controls in an OLE Metafile
 
+{% raw %}
+
 	Article: Q127192
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0,4.1,5.0
@@ -164,3 +166,5 @@ permalink: /kb/127/Q127192/
 	
 	=============================================================================
 	
+
+{% endraw %}

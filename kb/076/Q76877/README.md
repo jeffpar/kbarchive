@@ -6,6 +6,8 @@ permalink: /kb/076/Q76877/
 
 ## Q76877: Blue Dots in Hammond Atlas Map of Australia
 
+{% raw %}
+
 	Article: Q76877
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition
@@ -39,3 +41,5 @@ permalink: /kb/076/Q76877/
 	
 	=============================================================================
 	
+
+{% endraw %}

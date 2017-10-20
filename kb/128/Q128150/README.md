@@ -6,6 +6,8 @@ permalink: /kb/128/Q128150/
 
 ## Q128150: DOC: Help File Incorrectly States SYS(1037) Ignored by Windows
 
+{% raw %}
+
 	Article: Q128150
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6,2.6a
@@ -51,3 +53,5 @@ permalink: /kb/128/Q128150/
 	
 	=============================================================================
 	
+
+{% endraw %}

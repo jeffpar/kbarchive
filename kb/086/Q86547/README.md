@@ -6,6 +6,8 @@ permalink: /kb/086/Q86547/
 
 ## Q86547: MHS: Software Required to Install the Gateway Postoffice
 
+{% raw %}
+
 	Article: Q86547
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -39,3 +41,5 @@ permalink: /kb/086/Q86547/
 	
 	=============================================================================
 	
+
+{% endraw %}

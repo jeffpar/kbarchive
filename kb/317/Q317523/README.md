@@ -6,6 +6,8 @@ permalink: /kb/317/Q317523/
 
 ## Q317523: PRB: &quot;Only One Database Connection at a Time Is Supported&quot; Error
 
+{% raw %}
+
 	Article: Q317523
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -123,3 +125,5 @@ permalink: /kb/317/Q317523/
 	
 	=============================================================================
 	
+
+{% endraw %}

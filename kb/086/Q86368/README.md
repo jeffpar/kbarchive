@@ -6,6 +6,8 @@ permalink: /kb/086/Q86368/
 
 ## Q86368: Windows Err Msg: Could Not Continue... Paging Error
 
+{% raw %}
+
 	Article: Q86368
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -110,3 +112,5 @@ permalink: /kb/086/Q86368/
 	
 	=============================================================================
 	
+
+{% endraw %}

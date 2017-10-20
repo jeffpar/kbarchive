@@ -6,6 +6,8 @@ permalink: /kb/138/Q138712/
 
 ## Q138712: Command Window Does Not Close When TSR Issues INT5c For DLC
 
+{% raw %}
+
 	Article: Q138712
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -55,3 +57,5 @@ permalink: /kb/138/Q138712/
 	
 	=============================================================================
 	
+
+{% endraw %}

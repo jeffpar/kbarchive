@@ -6,6 +6,8 @@ permalink: /kb/099/Q99595/
 
 ## Q99595: HOWTO: Use @ ... SAY Commands &amp; Control Codes to Print in FP/W
 
+{% raw %}
+
 	Article: Q99595
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0,5.0
@@ -203,3 +205,5 @@ permalink: /kb/099/Q99595/
 	
 	=============================================================================
 	
+
+{% endraw %}

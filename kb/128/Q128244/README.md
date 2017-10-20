@@ -6,6 +6,8 @@ permalink: /kb/128/Q128244/
 
 ## Q128244: INFO: SNA Server Load Balancing and Hot Backup
 
+{% raw %}
+
 	Article: Q128244
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11,2.11 SP1,3.0,4.0
@@ -354,3 +356,5 @@ permalink: /kb/128/Q128244/
 	
 	=============================================================================
 	
+
+{% endraw %}

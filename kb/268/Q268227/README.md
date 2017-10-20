@@ -6,6 +6,8 @@ permalink: /kb/268/Q268227/
 
 ## Q268227: XCON: Event ID 9406 and 2240 Occur When Starting the MTA
 
+{% raw %}
+
 	Article: Q268227
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/268/Q268227/
 	
 	=============================================================================
 	
+
+{% endraw %}

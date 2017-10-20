@@ -6,6 +6,8 @@ permalink: /kb/275/Q275713/
 
 ## Q275713: Access Violation When RAS Is Disabled
 
+{% raw %}
+
 	Article: Q275713
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/275/Q275713/
 	
 	=============================================================================
 	
+
+{% endraw %}

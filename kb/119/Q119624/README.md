@@ -6,6 +6,8 @@ permalink: /kb/119/Q119624/
 
 ## Q119624: FAX: Unable to Disable Cover Page and Distribution Box
 
+{% raw %}
+
 	Article: Q119624
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.0a
@@ -36,3 +38,5 @@ permalink: /kb/119/Q119624/
 	
 	=============================================================================
 	
+
+{% endraw %}

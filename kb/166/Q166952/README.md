@@ -6,6 +6,8 @@ permalink: /kb/166/Q166952/
 
 ## Q166952: WD97: Unable to Send to Fax Recipient from Word
 
+{% raw %}
+
 	Article: Q166952
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/166/Q166952/
 	
 	=============================================================================
 	
+
+{% endraw %}

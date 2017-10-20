@@ -6,6 +6,8 @@ permalink: /kb/131/Q131746/
 
 ## Q131746: Cannot Start TAPI-Aware Programs
 
+{% raw %}
+
 	Article: Q131746
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -80,3 +82,5 @@ permalink: /kb/131/Q131746/
 	
 	=============================================================================
 	
+
+{% endraw %}

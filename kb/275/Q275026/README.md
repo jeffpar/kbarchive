@@ -6,6 +6,8 @@ permalink: /kb/275/Q275026/
 
 ## Q275026: XADM: Notifications Not Sent by Mailbox Manager in Audit Mode
 
+{% raw %}
+
 	Article: Q275026
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -60,3 +62,5 @@ permalink: /kb/275/Q275026/
 	
 	=============================================================================
 	
+
+{% endraw %}

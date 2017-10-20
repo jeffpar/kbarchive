@@ -6,6 +6,8 @@ permalink: /kb/321/Q321561/
 
 ## Q321561: Phantom Connection Count When Keep-Alive Conns Switch HostHeader
 
+{% raw %}
+
 	Article: Q321561
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -149,3 +151,5 @@ permalink: /kb/321/Q321561/
 	
 	=============================================================================
 	
+
+{% endraw %}

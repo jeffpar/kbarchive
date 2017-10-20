@@ -6,6 +6,8 @@ permalink: /kb/078/Q78445/
 
 ## Q78445: Using MS-DOS with Pacific Rim External Drives
 
+{% raw %}
+
 	Article: Q78445
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -67,3 +69,5 @@ permalink: /kb/078/Q78445/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139491/
 
 ## Q139491: How to Use Functions in VERSION.DLL -- A 32-bit Sample App
 
+{% raw %}
+
 	Article: Q139491
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -605,3 +607,5 @@ permalink: /kb/139/Q139491/
 	
 	=============================================================================
 	
+
+{% endraw %}

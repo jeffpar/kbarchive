@@ -6,6 +6,8 @@ permalink: /kb/078/Q78906/
 
 ## Q78906: PRINT SCREEN to Clipboard Appears as Black-and-White Image
 
+{% raw %}
+
 	Article: Q78906
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -47,3 +49,5 @@ permalink: /kb/078/Q78906/
 	
 	=============================================================================
 	
+
+{% endraw %}

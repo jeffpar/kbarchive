@@ -6,6 +6,8 @@ permalink: /kb/282/Q282115/
 
 ## Q282115: If more than 4 SAP Exchange Connectors are installed, mail stop
 
+{% raw %}
+
 	Article: Q282115
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -152,3 +154,5 @@ permalink: /kb/282/Q282115/
 	
 	=============================================================================
 	
+
+{% endraw %}

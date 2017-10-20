@@ -6,6 +6,8 @@ permalink: /kb/156/Q156633/
 
 ## Q156633: PRB: Wizards Echo Commands to the FoxPro Desktop
 
+{% raw %}
+
 	Article: Q156633
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -74,3 +76,5 @@ permalink: /kb/156/Q156633/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102692/
 
 ## Q102692: FIX: FP Emulator Converts REAL to INTEGER Incorrectly
 
+{% raw %}
+
 	Article: Q102692
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 
@@ -121,3 +123,5 @@ permalink: /kb/102/Q102692/
 	
 	=============================================================================
 	
+
+{% endraw %}

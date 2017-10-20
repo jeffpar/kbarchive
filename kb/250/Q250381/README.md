@@ -6,6 +6,8 @@ permalink: /kb/250/Q250381/
 
 ## Q250381: SMS: Package Share Comment Date Displays Year as 100
 
+{% raw %}
+
 	Article: Q250381
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -104,3 +106,5 @@ permalink: /kb/250/Q250381/
 	
 	=============================================================================
 	
+
+{% endraw %}

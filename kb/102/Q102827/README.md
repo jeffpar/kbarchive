@@ -6,6 +6,8 @@ permalink: /kb/102/Q102827/
 
 ## Q102827: Replacing a View in a Splitter Window
 
+{% raw %}
+
 	Article: Q102827
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,4.1
@@ -105,3 +107,5 @@ permalink: /kb/102/Q102827/
 	
 	=============================================================================
 	
+
+{% endraw %}

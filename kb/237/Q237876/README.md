@@ -6,6 +6,8 @@ permalink: /kb/237/Q237876/
 
 ## Q237876: XADM: Cyrillic Characters in TNEF Not Converted Properly
 
+{% raw %}
+
 	Article: Q237876
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/237/Q237876/
 	
 	=============================================================================
 	
+
+{% endraw %}

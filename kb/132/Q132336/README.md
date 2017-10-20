@@ -6,6 +6,8 @@ permalink: /kb/132/Q132336/
 
 ## Q132336: Mac Ancient Lands: Volume Is Very Quiet for Some Sounds Only
 
+{% raw %}
+
 	Article: Q132336
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -58,3 +60,5 @@ permalink: /kb/132/Q132336/
 	
 	=============================================================================
 	
+
+{% endraw %}

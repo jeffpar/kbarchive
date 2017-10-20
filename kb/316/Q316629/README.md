@@ -6,6 +6,8 @@ permalink: /kb/316/Q316629/
 
 ## Q316629: XADM: 0xFFFFFC0B After Installing Sybari Antigen 6.2
 
+{% raw %}
+
 	Article: Q316629
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -103,3 +105,5 @@ permalink: /kb/316/Q316629/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105615/
 
 ## Q105615: README.TXT: Microsoft MS-DOS 6.2 (Part 3 of 4)
 
+{% raw %}
+
 	Article: Q105615
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -422,3 +424,5 @@ permalink: /kb/105/Q105615/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262024/
 
 ## Q262024: HOWTO: Use CPropertySheet as a Child of CSplitterWnd
 
+{% raw %}
+
 	Article: Q262024
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -122,3 +124,5 @@ permalink: /kb/262/Q262024/
 	
 	=============================================================================
 	
+
+{% endraw %}

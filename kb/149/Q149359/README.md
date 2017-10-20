@@ -6,6 +6,8 @@ permalink: /kb/149/Q149359/
 
 ## Q149359: XADM: Configuring Mailboxes to Reject Distribution List Messages
 
+{% raw %}
+
 	Article: Q149359
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/149/Q149359/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241985/
 
 ## Q241985: TCP/IP Clients May Intermittently Lose 3270 Sessions
 
+{% raw %}
+
 	Article: Q241985
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -123,3 +125,5 @@ permalink: /kb/241/Q241985/
 	
 	=============================================================================
 	
+
+{% endraw %}

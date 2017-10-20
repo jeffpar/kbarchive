@@ -6,6 +6,8 @@ permalink: /kb/135/Q135043/
 
 ## Q135043: 500 Nations: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q135043
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -306,3 +308,5 @@ permalink: /kb/135/Q135043/
 	
 	=============================================================================
 	
+
+{% endraw %}

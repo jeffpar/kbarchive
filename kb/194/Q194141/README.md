@@ -6,6 +6,8 @@ permalink: /kb/194/Q194141/
 
 ## Q194141: Cannot Connect to MSN After You Install Windows
 
+{% raw %}
+
 	Article: Q194141
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -86,3 +88,5 @@ permalink: /kb/194/Q194141/
 	
 	=============================================================================
 	
+
+{% endraw %}

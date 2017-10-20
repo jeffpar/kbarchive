@@ -6,6 +6,8 @@ permalink: /kb/075/Q75280/
 
 ## Q75280: FIX: ALIGN or EVEN Cannot follow DUP in Same Module
 
+{% raw %}
+
 	Article: Q75280
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -68,3 +70,5 @@ permalink: /kb/075/Q75280/
 	
 	=============================================================================
 	
+
+{% endraw %}

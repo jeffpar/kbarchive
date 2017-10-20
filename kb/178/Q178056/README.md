@@ -6,6 +6,8 @@ permalink: /kb/178/Q178056/
 
 ## Q178056: XCLN: One-Off RFC822 Addresses Supported
 
+{% raw %}
+
 	Article: Q178056
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,8.0,8.01,8.02,8.03
@@ -85,3 +87,5 @@ permalink: /kb/178/Q178056/
 	
 	=============================================================================
 	
+
+{% endraw %}

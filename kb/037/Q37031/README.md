@@ -6,6 +6,8 @@ permalink: /kb/037/Q37031/
 
 ## Q37031: Printer Error Can Hang; CALL INTERRUPT to Check Printer Status
 
+{% raw %}
+
 	Article: Q37031
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -126,3 +128,5 @@ permalink: /kb/037/Q37031/
 	   PRINT "Bit 1 - Unused : "; INFO$(1)
 	   PRINT "Bit 0 - Timed-Out : "; INFO$(0)
 	END SUB
+
+{% endraw %}

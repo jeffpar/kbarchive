@@ -6,6 +6,8 @@ permalink: /kb/120/Q120433/
 
 ## Q120433: Photoshop Screen Does Not Fully Redraw After Printing
 
+{% raw %}
+
 	Article: Q120433
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/120/Q120433/
 	
 	=============================================================================
 	
+
+{% endraw %}

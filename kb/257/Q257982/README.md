@@ -6,6 +6,8 @@ permalink: /kb/257/Q257982/
 
 ## Q257982: 100 Percent CPU Use with Cluster Service
 
+{% raw %}
+
 	Article: Q257982
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -71,3 +73,5 @@ permalink: /kb/257/Q257982/
 	
 	=============================================================================
 	
+
+{% endraw %}

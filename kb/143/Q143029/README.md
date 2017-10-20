@@ -6,6 +6,8 @@ permalink: /kb/143/Q143029/
 
 ## Q143029: How To Use Online Registration
 
+{% raw %}
+
 	Article: Q143029
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 1997
@@ -79,3 +81,5 @@ permalink: /kb/143/Q143029/
 	
 	=============================================================================
 	
+
+{% endraw %}

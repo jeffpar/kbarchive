@@ -6,6 +6,8 @@ permalink: /kb/263/Q263095/
 
 ## Q263095: SMS: Error Message When Removing Many Machine History Records
 
+{% raw %}
+
 	Article: Q263095
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -80,3 +82,5 @@ permalink: /kb/263/Q263095/
 	
 	=============================================================================
 	
+
+{% endraw %}

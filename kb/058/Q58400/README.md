@@ -6,6 +6,8 @@ permalink: /kb/058/Q58400/
 
 ## Q58400: Cannot Design B-2 Bomber in Flight Simulator Promotional Ad
 
+{% raw %}
+
 	Article: Q58400
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/058/Q58400/
 	
 	=============================================================================
 	
+
+{% endraw %}

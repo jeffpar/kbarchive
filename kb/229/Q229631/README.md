@@ -6,6 +6,8 @@ permalink: /kb/229/Q229631/
 
 ## Q229631: XFOR: InterOrg Fails to Replicate Public Folder with Backslash
 
+{% raw %}
+
 	Article: Q229631
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -74,3 +76,5 @@ permalink: /kb/229/Q229631/
 	
 	=============================================================================
 	
+
+{% endraw %}

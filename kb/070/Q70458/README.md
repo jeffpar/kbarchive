@@ -6,6 +6,8 @@ permalink: /kb/070/Q70458/
 
 ## Q70458: Err Msg: Missing &#42;.GRB File with Genoa Graphics
 
+{% raw %}
+
 	Article: Q70458
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -76,3 +78,5 @@ permalink: /kb/070/Q70458/
 	
 	=============================================================================
 	
+
+{% endraw %}

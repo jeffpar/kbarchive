@@ -6,6 +6,8 @@ permalink: /kb/112/Q112913/
 
 ## Q112913: PC Adm: Five Tildes Required Per Line in ADMIN.TPL File
 
+{% raw %}
+
 	Article: Q112913
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1x,3.0
@@ -56,3 +58,5 @@ permalink: /kb/112/Q112913/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107527/
 
 ## Q107527: Dinosaur Movies Are Garbled on COMPAQ 486C Portable
 
+{% raw %}
+
 	Article: Q107527
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/107/Q107527/
 	
 	=============================================================================
 	
+
+{% endraw %}

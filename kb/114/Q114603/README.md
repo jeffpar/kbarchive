@@ -6,6 +6,8 @@ permalink: /kb/114/Q114603/
 
 ## Q114603: Troubleshooting Guide for the 16-bit Setup Toolkit
 
+{% raw %}
+
 	Article: Q114603
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/114/Q114603/
 	
 	=============================================================================
 	
+
+{% endraw %}

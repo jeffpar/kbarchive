@@ -6,6 +6,8 @@ permalink: /kb/149/Q149128/
 
 ## Q149128: BUG: FOR2406 Error with Values Greater than 127 in ACHAR()
 
+{% raw %}
+
 	Article: Q149128
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/149/Q149128/
 	
 	=============================================================================
 	
+
+{% endraw %}

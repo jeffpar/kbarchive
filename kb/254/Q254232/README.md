@@ -6,6 +6,8 @@ permalink: /kb/254/Q254232/
 
 ## Q254232: WD97: Part 1: How to Troubleshoot Printing Problems from Word
 
+{% raw %}
+
 	Article: Q254232
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -242,3 +244,5 @@ permalink: /kb/254/Q254232/
 	
 	=============================================================================
 	
+
+{% endraw %}

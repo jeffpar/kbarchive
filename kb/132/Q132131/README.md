@@ -6,6 +6,8 @@ permalink: /kb/132/Q132131/
 
 ## Q132131: INF: ODBC Database Drivers 2.0 Supported Platforms
 
+{% raw %}
+
 	Article: Q132131
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -67,3 +69,5 @@ permalink: /kb/132/Q132131/
 	
 	=============================================================================
 	
+
+{% endraw %}

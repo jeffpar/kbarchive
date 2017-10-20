@@ -6,6 +6,8 @@ permalink: /kb/039/Q39806/
 
 ## Q39806: Quote Function and Typing in Graphic Characters in M
 
+{% raw %}
+
 	Article: Q39806
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -43,3 +45,5 @@ permalink: /kb/039/Q39806/
 	
 	Using the Quote function in the M editor can prevent these ASCII
 	characters from being interrupted as control characters.
+
+{% endraw %}

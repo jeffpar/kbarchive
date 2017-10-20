@@ -6,6 +6,8 @@ permalink: /kb/186/Q186935/
 
 ## Q186935: XWEB: Saving Attachment in OWA Causes File Size to Increase
 
+{% raw %}
+
 	Article: Q186935
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -54,3 +56,5 @@ permalink: /kb/186/Q186935/
 	
 	=============================================================================
 	
+
+{% endraw %}

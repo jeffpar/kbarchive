@@ -6,6 +6,8 @@ permalink: /kb/231/Q231274/
 
 ## Q231274: Macintosh Client Computer May Hang When Searching for Files
 
+{% raw %}
+
 	Article: Q231274
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -74,3 +76,5 @@ permalink: /kb/231/Q231274/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141868/
 
 ## Q141868: INFO: Visual FoxPro Language Tips and Tricks
 
+{% raw %}
+
 	Article: Q141868
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -255,3 +257,5 @@ permalink: /kb/141/Q141868/
 	
 	=============================================================================
 	
+
+{% endraw %}

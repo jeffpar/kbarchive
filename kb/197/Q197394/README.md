@@ -6,6 +6,8 @@ permalink: /kb/197/Q197394/
 
 ## Q197394: XADM: Euro Symbol Displays &quot;?&quot; Sending Plain Text
 
+{% raw %}
+
 	Article: Q197394
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -97,3 +99,5 @@ permalink: /kb/197/Q197394/
 	
 	=============================================================================
 	
+
+{% endraw %}

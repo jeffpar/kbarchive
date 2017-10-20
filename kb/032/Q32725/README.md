@@ -6,6 +6,8 @@ permalink: /kb/032/Q32725/
 
 ## Q32725: PEN Function Returns Mouse Cursor Position in BASIC
 
+{% raw %}
+
 	Article: Q32725
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -49,3 +51,5 @@ permalink: /kb/032/Q32725/
 	                PRINT "Y Pixel"; PEN(5)
 	        END IF
 	LOOP
+
+{% endraw %}

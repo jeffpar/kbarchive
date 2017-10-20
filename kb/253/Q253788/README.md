@@ -6,6 +6,8 @@ permalink: /kb/253/Q253788/
 
 ## Q253788: Unable to Open Images in Same Window
 
+{% raw %}
+
 	Article: Q253788
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/253/Q253788/
 	
 	=============================================================================
 	
+
+{% endraw %}

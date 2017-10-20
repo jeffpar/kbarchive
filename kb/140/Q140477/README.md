@@ -6,6 +6,8 @@ permalink: /kb/140/Q140477/
 
 ## Q140477: PRB: MFC 4.0 Applications Can't Be Run Under Windows NT 3.5
 
+{% raw %}
+
 	Article: Q140477
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -58,3 +60,5 @@ permalink: /kb/140/Q140477/
 	
 	=============================================================================
 	
+
+{% endraw %}

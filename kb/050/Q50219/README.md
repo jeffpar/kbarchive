@@ -6,6 +6,8 @@ permalink: /kb/050/Q50219/
 
 ## Q50219: Reasons for &quot;File Not Found&quot; Error Using &#36;INCLUDE Metacommand
 
+{% raw %}
+
 	Article: Q50219
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -47,3 +49,5 @@ permalink: /kb/050/Q50219/
 	the File menu and select Include. Then when you try to execute the
 	program in the editor, it will inform you to save the Include file
 	before execution can occur, preventing the "File not Found" error.
+
+{% endraw %}

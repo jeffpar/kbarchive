@@ -6,6 +6,8 @@ permalink: /kb/061/Q61785/
 
 ## Q61785: END.DATAGRAM Returning Undocumented Error
 
+{% raw %}
+
 	Article: Q61785
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/061/Q61785/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129402/
 
 ## Q129402: PRB: ERROR &quot;&lt;formname&gt; not an object&quot; When Accessing Form
 
+{% raw %}
+
 	Article: Q129402
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -111,3 +113,5 @@ permalink: /kb/129/Q129402/
 	
 	=============================================================================
 	
+
+{% endraw %}

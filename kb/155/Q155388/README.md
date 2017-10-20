@@ -6,6 +6,8 @@ permalink: /kb/155/Q155388/
 
 ## Q155388: PRB: CLEAR RESOURCE Does Not Appear to Work
 
+{% raw %}
+
 	Article: Q155388
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -147,3 +149,5 @@ permalink: /kb/155/Q155388/
 	
 	=============================================================================
 	
+
+{% endraw %}

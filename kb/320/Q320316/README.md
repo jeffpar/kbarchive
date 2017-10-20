@@ -6,6 +6,8 @@ permalink: /kb/320/Q320316/
 
 ## Q320316: MSN Explorer Sign In Screen Activates Unexpectedly
 
+{% raw %}
+
 	Article: Q320316
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -59,3 +61,5 @@ permalink: /kb/320/Q320316/
 	
 	=============================================================================
 	
+
+{% endraw %}

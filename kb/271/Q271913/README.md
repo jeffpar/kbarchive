@@ -6,6 +6,8 @@ permalink: /kb/271/Q271913/
 
 ## Q271913: XADM: CDO MAPI Session Logon Does Not Work Running As a Service
 
+{% raw %}
+
 	Article: Q271913
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -66,3 +68,5 @@ permalink: /kb/271/Q271913/
 	
 	=============================================================================
 	
+
+{% endraw %}

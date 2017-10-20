@@ -6,6 +6,8 @@ permalink: /kb/306/Q306826/
 
 ## Q306826: HOWTO: Get and Set the Memory Settings with eVB
 
+{% raw %}
+
 	Article: Q306826
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -178,3 +180,5 @@ permalink: /kb/306/Q306826/
 	
 	=============================================================================
 	
+
+{% endraw %}

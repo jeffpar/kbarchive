@@ -6,6 +6,8 @@ permalink: /kb/164/Q164630/
 
 ## Q164630: RPC over NetBEUI Fails from WinNT 4.0 RAS to WinNT 4.0 RAS
 
+{% raw %}
+
 	Article: Q164630
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/164/Q164630/
 	
 	=============================================================================
 	
+
+{% endraw %}

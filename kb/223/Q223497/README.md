@@ -6,6 +6,8 @@ permalink: /kb/223/Q223497/
 
 ## Q223497: Err Msg: Logon Failure: User Not Granted the Requested Logon...
 
+{% raw %}
+
 	Article: Q223497
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -100,3 +102,5 @@ permalink: /kb/223/Q223497/
 	
 	=============================================================================
 	
+
+{% endraw %}

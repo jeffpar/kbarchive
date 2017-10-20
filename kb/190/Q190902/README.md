@@ -6,6 +6,8 @@ permalink: /kb/190/Q190902/
 
 ## Q190902: HOWTO: Locate Files Cited By Help Topic AddLabel
 
+{% raw %}
+
 	Article: Q190902
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -75,3 +77,5 @@ permalink: /kb/190/Q190902/
 	
 	=============================================================================
 	
+
+{% endraw %}

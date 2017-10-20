@@ -6,6 +6,8 @@ permalink: /kb/156/Q156884/
 
 ## Q156884: Problems Saving Event Viewer Log from Windows NT 4.0 to 3.51
 
+{% raw %}
+
 	Article: Q156884
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -60,3 +62,5 @@ permalink: /kb/156/Q156884/
 	
 	=============================================================================
 	
+
+{% endraw %}

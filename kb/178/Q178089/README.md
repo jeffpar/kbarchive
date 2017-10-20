@@ -6,6 +6,8 @@ permalink: /kb/178/Q178089/
 
 ## Q178089: Thorn_Icelandic_Capital cannot be Mapped to a Macro in a PDF
 
+{% raw %}
+
 	Article: Q178089
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -58,3 +60,5 @@ permalink: /kb/178/Q178089/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/093/Q93702/
 
 ## Q93702: PPT: How to Write and Use a List File in PowerPoint Viewer
 
+{% raw %}
+
 	Article: Q93702
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -114,3 +116,5 @@ permalink: /kb/093/Q93702/
 	
 	=============================================================================
 	
+
+{% endraw %}

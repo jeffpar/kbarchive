@@ -6,6 +6,8 @@ permalink: /kb/261/Q261064/
 
 ## Q261064: MCM2: Game Does Not Respond to Keyboard Commands in Races
 
+{% raw %}
+
 	Article: Q261064
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -126,3 +128,5 @@ permalink: /kb/261/Q261064/
 	
 	=============================================================================
 	
+
+{% endraw %}

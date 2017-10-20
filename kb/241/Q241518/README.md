@@ -6,6 +6,8 @@ permalink: /kb/241/Q241518/
 
 ## Q241518: &quot;E_OUTOFMEMORY&quot; When Structured Storage Files Are Marshaled
 
+{% raw %}
+
 	Article: Q241518
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6a
@@ -85,3 +87,5 @@ permalink: /kb/241/Q241518/
 	
 	=============================================================================
 	
+
+{% endraw %}

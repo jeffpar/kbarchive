@@ -6,6 +6,8 @@ permalink: /kb/083/Q83914/
 
 ## Q83914: HotKeyed.exe Creates a Shortcut-Key Edit Control
 
+{% raw %}
+
 	Article: Q83914
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -81,3 +83,5 @@ permalink: /kb/083/Q83914/
 	
 	=============================================================================
 	
+
+{% endraw %}

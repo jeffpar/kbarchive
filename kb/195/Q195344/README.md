@@ -6,6 +6,8 @@ permalink: /kb/195/Q195344/
 
 ## Q195344: My Personal Tutor: Sound Is Distorted When You Run Program
 
+{% raw %}
+
 	Article: Q195344
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/195/Q195344/
 	
 	=============================================================================
 	
+
+{% endraw %}

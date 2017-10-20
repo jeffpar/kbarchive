@@ -6,6 +6,8 @@ permalink: /kb/176/Q176239/
 
 ## Q176239: XADM: DB Won't Start; Circular Logging Deleted Log File Too Soon
 
+{% raw %}
+
 	Article: Q176239
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -124,3 +126,5 @@ permalink: /kb/176/Q176239/
 	
 	=============================================================================
 	
+
+{% endraw %}

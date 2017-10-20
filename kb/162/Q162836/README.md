@@ -6,6 +6,8 @@ permalink: /kb/162/Q162836/
 
 ## Q162836: XCLN: TCP/IP RPC Calls Fail if AppleTalk Is Not Enabled
 
+{% raw %}
+
 	Article: Q162836
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:4.0,5.0
@@ -76,3 +78,5 @@ permalink: /kb/162/Q162836/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/213/Q213270/
 
 ## Q213270: Smsman.exe Does Not Display Error Message When Setup Fails
 
+{% raw %}
+
 	Article: Q213270
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/213/Q213270/
 	
 	=============================================================================
 	
+
+{% endraw %}

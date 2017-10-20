@@ -6,6 +6,8 @@ permalink: /kb/131/Q131742/
 
 ## Q131742: DLL Files in the HyperTerminal Folder
 
+{% raw %}
+
 	Article: Q131742
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/131/Q131742/
 	
 	=============================================================================
 	
+
+{% endraw %}

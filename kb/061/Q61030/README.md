@@ -6,6 +6,8 @@ permalink: /kb/061/Q61030/
 
 ## Q61030: WD97: Setting Custom Superscipt/Subscript Font Size and Position
 
+{% raw %}
+
 	Article: Q61030
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/061/Q61030/
 	
 	=============================================================================
 	
+
+{% endraw %}

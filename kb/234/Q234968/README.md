@@ -6,6 +6,8 @@ permalink: /kb/234/Q234968/
 
 ## Q234968: Windows NT Server 4.0 Resource Kit Supplement 4 Comments and Cor
 
+{% raw %}
+
 	Article: Q234968
 	Product(s): Microsoft Press
 	Version(s): 
@@ -202,3 +204,5 @@ permalink: /kb/234/Q234968/
 	
 	=============================================================================
 	
+
+{% endraw %}

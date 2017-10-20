@@ -6,6 +6,8 @@ permalink: /kb/190/Q190222/
 
 ## Q190222: BUG: UserConnection GPF When Inserting Multiple Queries
 
+{% raw %}
+
 	Article: Q190222
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/190/Q190222/
 	
 	=============================================================================
 	
+
+{% endraw %}

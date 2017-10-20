@@ -6,6 +6,8 @@ permalink: /kb/237/Q237547/
 
 ## Q237547: Backed-Up Files Not Listed When Viewing Catalog for Restore
 
+{% raw %}
+
 	Article: Q237547
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/237/Q237547/
 	
 	=============================================================================
 	
+
+{% endraw %}

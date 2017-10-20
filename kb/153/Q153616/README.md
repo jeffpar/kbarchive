@@ -6,6 +6,8 @@ permalink: /kb/153/Q153616/
 
 ## Q153616: Contents of Close Combat Trouble.doc
 
+{% raw %}
+
 	Article: Q153616
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -112,3 +114,5 @@ permalink: /kb/153/Q153616/
 	
 	=============================================================================
 	
+
+{% endraw %}

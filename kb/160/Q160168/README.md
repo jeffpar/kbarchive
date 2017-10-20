@@ -6,6 +6,8 @@ permalink: /kb/160/Q160168/
 
 ## Q160168: PRB: Can't Read Temporary Table Created Using # Sign in RDO
 
+{% raw %}
+
 	Article: Q160168
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -128,3 +130,5 @@ permalink: /kb/160/Q160168/
 	
 	=============================================================================
 	
+
+{% endraw %}

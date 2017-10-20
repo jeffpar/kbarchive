@@ -6,6 +6,8 @@ permalink: /kb/173/Q173672/
 
 ## Q173672: TCP/IP Training Kit Does Not Include CD-Key
 
+{% raw %}
+
 	Article: Q173672
 	Product(s): Microsoft Press
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/173/Q173672/
 	
 	=============================================================================
 	
+
+{% endraw %}

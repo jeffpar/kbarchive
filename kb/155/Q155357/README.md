@@ -6,6 +6,8 @@ permalink: /kb/155/Q155357/
 
 ## Q155357: PERL Scripts Fail to Execute &amp; Not Load the Advapi32.dll File
 
+{% raw %}
+
 	Article: Q155357
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -59,3 +61,5 @@ permalink: /kb/155/Q155357/
 	
 	=============================================================================
 	
+
+{% endraw %}

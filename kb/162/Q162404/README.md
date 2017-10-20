@@ -6,6 +6,8 @@ permalink: /kb/162/Q162404/
 
 ## Q162404: Service Pack 5 Breaks Microsoft Mail Shared Using FPNW
 
+{% raw %}
+
 	Article: Q162404
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -95,3 +97,5 @@ permalink: /kb/162/Q162404/
 	
 	=============================================================================
 	
+
+{% endraw %}

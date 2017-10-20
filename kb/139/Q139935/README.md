@@ -6,6 +6,8 @@ permalink: /kb/139/Q139935/
 
 ## Q139935: Unable to Print to Shared HP DeskJet 1200C Printer
 
+{% raw %}
+
 	Article: Q139935
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/139/Q139935/
 	
 	=============================================================================
 	
+
+{% endraw %}

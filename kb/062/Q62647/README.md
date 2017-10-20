@@ -6,6 +6,8 @@ permalink: /kb/062/Q62647/
 
 ## Q62647: How to View Recorder Macro Events
 
+{% raw %}
+
 	Article: Q62647
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/062/Q62647/
 	
 	=============================================================================
 	
+
+{% endraw %}

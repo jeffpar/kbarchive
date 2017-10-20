@@ -6,6 +6,8 @@ permalink: /kb/124/Q124281/
 
 ## Q124281: BBS Message Title Bar and Subject Line Differ When Using Tab
 
+{% raw %}
+
 	Article: Q124281
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -57,3 +59,5 @@ permalink: /kb/124/Q124281/
 	
 	=============================================================================
 	
+
+{% endraw %}

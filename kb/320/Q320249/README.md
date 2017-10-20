@@ -6,6 +6,8 @@ permalink: /kb/320/Q320249/
 
 ## Q320249: &quot;Stop 0x0000000A&quot; Error Occurs in Ntkrnlmp.exe in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q320249
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/320/Q320249/
 	
 	=============================================================================
 	
+
+{% endraw %}

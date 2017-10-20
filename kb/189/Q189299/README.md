@@ -6,6 +6,8 @@ permalink: /kb/189/Q189299/
 
 ## Q189299: SMS: Windows 95 Client Reports BIOS Manufacturer Name as Unknown
 
+{% raw %}
+
 	Article: Q189299
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -62,3 +64,5 @@ permalink: /kb/189/Q189299/
 	
 	=============================================================================
 	
+
+{% endraw %}

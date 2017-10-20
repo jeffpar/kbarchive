@@ -6,6 +6,8 @@ permalink: /kb/077/Q77983/
 
 ## Q77983: Using MS-DOS 5.x/6.x with Win 3.0 Enhanced Without WINA20.386
 
+{% raw %}
+
 	Article: Q77983
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a
@@ -66,3 +68,5 @@ permalink: /kb/077/Q77983/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165604/
 
 ## Q165604: WD97: WordBasic Object Returns Incorrect ASCII Number For Symbol
 
+{% raw %}
+
 	Article: Q165604
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/165/Q165604/
 	
 	=============================================================================
 	
+
+{% endraw %}

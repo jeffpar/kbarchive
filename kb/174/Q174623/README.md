@@ -6,6 +6,8 @@ permalink: /kb/174/Q174623/
 
 ## Q174623: Error Message After Upgrading Windows NT for Second Processor
 
+{% raw %}
+
 	Article: Q174623
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/174/Q174623/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94985/
 
 ## Q94985: MemMaker Fails to Undo Changes to CONFIG.SYS File
 
+{% raw %}
+
 	Article: Q94985
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/094/Q94985/
 	
 	=============================================================================
 	
+
+{% endraw %}

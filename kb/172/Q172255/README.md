@@ -6,6 +6,8 @@ permalink: /kb/172/Q172255/
 
 ## Q172255: FIX: Using Set for ListItem's SubItem Results in GPF
 
+{% raw %}
+
 	Article: Q172255
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97
@@ -82,3 +84,5 @@ permalink: /kb/172/Q172255/
 	
 	=============================================================================
 	
+
+{% endraw %}

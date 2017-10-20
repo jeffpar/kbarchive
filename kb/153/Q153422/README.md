@@ -6,6 +6,8 @@ permalink: /kb/153/Q153422/
 
 ## Q153422: V-Chat Designed to Run in 256-Color Mode
 
+{% raw %}
+
 	Article: Q153422
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -51,3 +53,5 @@ permalink: /kb/153/Q153422/
 	
 	=============================================================================
 	
+
+{% endraw %}

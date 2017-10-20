@@ -6,6 +6,8 @@ permalink: /kb/042/Q42458/
 
 ## Q42458: PRB: FatalExit 0x0001 Possible If WM_CTLCOLOR Used Improperly
 
+{% raw %}
+
 	Article: Q42458
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -89,3 +91,5 @@ permalink: /kb/042/Q42458/
 	
 	=============================================================================
 	
+
+{% endraw %}

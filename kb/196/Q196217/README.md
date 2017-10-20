@@ -6,6 +6,8 @@ permalink: /kb/196/Q196217/
 
 ## Q196217: XADM: IS Shuts Down with JET Reporting Out of Disk Space
 
+{% raw %}
+
 	Article: Q196217
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:4.0, 5.0, 5.5
@@ -157,3 +159,5 @@ permalink: /kb/196/Q196217/
 	
 	=============================================================================
 	
+
+{% endraw %}

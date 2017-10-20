@@ -6,6 +6,8 @@ permalink: /kb/103/Q103033/
 
 ## Q103033: Network Trash Folder While Running SFM
 
+{% raw %}
+
 	Article: Q103033
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -50,3 +52,5 @@ permalink: /kb/103/Q103033/
 	
 	=============================================================================
 	
+
+{% endraw %}

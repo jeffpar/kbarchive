@@ -6,6 +6,8 @@ permalink: /kb/111/Q111329/
 
 ## Q111329: How to Create Setup Floppy Disks for Viewer Title
 
+{% raw %}
+
 	Article: Q111329
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -125,3 +127,5 @@ permalink: /kb/111/Q111329/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130116/
 
 ## Q130116: Event Log Write Problem Causes SERVICES.EXE Failure
 
+{% raw %}
+
 	Article: Q130116
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -68,3 +70,5 @@ permalink: /kb/130/Q130116/
 	
 	=============================================================================
 	
+
+{% endraw %}

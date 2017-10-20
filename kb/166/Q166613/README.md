@@ -6,6 +6,8 @@ permalink: /kb/166/Q166613/
 
 ## Q166613: XCLN: Mac Client Can't Log On If NT Account Has Extended Chars
 
+{% raw %}
+
 	Article: Q166613
 	Product(s): Microsoft Exchange
 	Version(s): 1.00
@@ -75,3 +77,5 @@ permalink: /kb/166/Q166613/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61235/
 
 ## Q61235: C 6.00 README: Using a Large Number of Help Files
 
+{% raw %}
+
 	Article: Q61235
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -40,3 +42,5 @@ permalink: /kb/061/Q61235/
 	As a final step, be sure to delete the original help files, or move
 	them to a directory that is not listed in your HELPFILES environment
 	variable.
+
+{% endraw %}

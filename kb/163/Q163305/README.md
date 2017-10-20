@@ -6,6 +6,8 @@ permalink: /kb/163/Q163305/
 
 ## Q163305: WD97: Not Enough Memory with Effect Preview in Photo Editor
 
+{% raw %}
+
 	Article: Q163305
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -104,3 +106,5 @@ permalink: /kb/163/Q163305/
 	
 	=============================================================================
 	
+
+{% endraw %}

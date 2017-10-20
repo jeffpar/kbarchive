@@ -6,6 +6,8 @@ permalink: /kb/191/Q191922/
 
 ## Q191922: Error 1605 When Jetpacking DHCP Database
 
+{% raw %}
+
 	Article: Q191922
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/191/Q191922/
 	
 	=============================================================================
 	
+
+{% endraw %}

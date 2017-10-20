@@ -6,6 +6,8 @@ permalink: /kb/158/Q158951/
 
 ## Q158951: Incorrect DAC Type May Be Reported in Display Properties
 
+{% raw %}
+
 	Article: Q158951
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -49,3 +51,5 @@ permalink: /kb/158/Q158951/
 	
 	=============================================================================
 	
+
+{% endraw %}

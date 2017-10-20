@@ -6,6 +6,8 @@ permalink: /kb/131/Q131326/
 
 ## Q131326: XCLN: Err Msg: An Object Could Not Be Moved/Copied
 
+{% raw %}
+
 	Article: Q131326
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -76,3 +78,5 @@ permalink: /kb/131/Q131326/
 	
 	=============================================================================
 	
+
+{% endraw %}

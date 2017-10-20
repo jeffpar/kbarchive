@@ -6,6 +6,8 @@ permalink: /kb/263/Q263585/
 
 ## Q263585: How to Type International Characters on an English Keyboard
 
+{% raw %}
+
 	Article: Q263585
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -68,3 +70,5 @@ permalink: /kb/263/Q263585/
 	
 	=============================================================================
 	
+
+{% endraw %}

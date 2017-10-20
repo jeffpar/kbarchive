@@ -6,6 +6,8 @@ permalink: /kb/115/Q115943/
 
 ## Q115943: How to Determine Amount of Available Disk Space on a Mac
 
+{% raw %}
+
 	Article: Q115943
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -72,3 +74,5 @@ permalink: /kb/115/Q115943/
 	
 	=============================================================================
 	
+
+{% endraw %}

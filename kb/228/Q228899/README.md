@@ -6,6 +6,8 @@ permalink: /kb/228/Q228899/
 
 ## Q228899: SMS: How to Use Software Metering in Online Mode
 
+{% raw %}
+
 	Article: Q228899
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -122,3 +124,5 @@ permalink: /kb/228/Q228899/
 	
 	=============================================================================
 	
+
+{% endraw %}

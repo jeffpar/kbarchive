@@ -6,6 +6,8 @@ permalink: /kb/172/Q172008/
 
 ## Q172008: Default NTFS Permissions in Windows NT 3.5 and 3.51
 
+{% raw %}
+
 	Article: Q172008
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -408,3 +410,5 @@ permalink: /kb/172/Q172008/
 	
 	=============================================================================
 	
+
+{% endraw %}

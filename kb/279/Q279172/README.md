@@ -6,6 +6,8 @@ permalink: /kb/279/Q279172/
 
 ## Q279172: WP: &quot;Library not registered&quot; Error During Index Server Query
 
+{% raw %}
+
 	Article: Q279172
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -55,3 +57,5 @@ permalink: /kb/279/Q279172/
 	
 	=============================================================================
 	
+
+{% endraw %}

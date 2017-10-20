@@ -6,6 +6,8 @@ permalink: /kb/182/Q182266/
 
 ## Q182266: SNA APPC Event 93 Should Log Fully Qualified PLU Name
 
+{% raw %}
+
 	Article: Q182266
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -78,3 +80,5 @@ permalink: /kb/182/Q182266/
 	
 	=============================================================================
 	
+
+{% endraw %}

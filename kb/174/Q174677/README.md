@@ -6,6 +6,8 @@ permalink: /kb/174/Q174677/
 
 ## Q174677: INFO: VB5 CCE System Requirements Different Than Other Editions
 
+{% raw %}
+
 	Article: Q174677
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -48,3 +50,5 @@ permalink: /kb/174/Q174677/
 	
 	=============================================================================
 	
+
+{% endraw %}

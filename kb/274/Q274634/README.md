@@ -6,6 +6,8 @@ permalink: /kb/274/Q274634/
 
 ## Q274634: MSN Explorer Fails To Load With DBCS Character In Installation P
 
+{% raw %}
+
 	Article: Q274634
 	Product(s): The Microsoft Network
 	Version(s): 3.02,4.0,4.01,5,6.0,6.1
@@ -56,3 +58,5 @@ permalink: /kb/274/Q274634/
 	
 	=============================================================================
 	
+
+{% endraw %}

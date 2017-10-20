@@ -6,6 +6,8 @@ permalink: /kb/150/Q150009/
 
 ## Q150009: WinNT System Shutdown/Power Off Causes Boot-Sector Corruption
 
+{% raw %}
+
 	Article: Q150009
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5,3.51
@@ -89,3 +91,5 @@ permalink: /kb/150/Q150009/
 	
 	=============================================================================
 	
+
+{% endraw %}

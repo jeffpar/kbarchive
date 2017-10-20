@@ -6,6 +6,8 @@ permalink: /kb/084/Q84512/
 
 ## Q84512: HP LaserJet IIIP and IIID Settings Not Saved
 
+{% raw %}
+
 	Article: Q84512
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/084/Q84512/
 	
 	=============================================================================
 	
+
+{% endraw %}

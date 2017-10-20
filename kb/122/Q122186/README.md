@@ -6,6 +6,8 @@ permalink: /kb/122/Q122186/
 
 ## Q122186: Err Msg: Could Not Find Setup File F:&#92;&lt;Platform&gt;&#92;PRINTER.INF
 
+{% raw %}
+
 	Article: Q122186
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/122/Q122186/
 	
 	=============================================================================
 	
+
+{% endraw %}

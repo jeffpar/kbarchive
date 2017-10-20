@@ -6,6 +6,8 @@ permalink: /kb/067/Q67678/
 
 ## Q67678: List Box and Combo Box Capacity Limits
 
+{% raw %}
+
 	Article: Q67678
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -77,3 +79,5 @@ permalink: /kb/067/Q67678/
 	
 	=============================================================================
 	
+
+{% endraw %}

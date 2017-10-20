@@ -6,6 +6,8 @@ permalink: /kb/269/Q269129/
 
 ## Q269129: PC DirSync: Making Exchange Server Computer the Dirsync Server
 
+{% raw %}
+
 	Article: Q269129
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5; winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -169,3 +171,5 @@ permalink: /kb/269/Q269129/
 	
 	=============================================================================
 	
+
+{% endraw %}

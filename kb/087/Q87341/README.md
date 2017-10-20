@@ -6,6 +6,8 @@ permalink: /kb/087/Q87341/
 
 ## Q87341: DOC: Do Not Use MB_NOFOCUS Flag with MessageBox Function
 
+{% raw %}
+
 	Article: Q87341
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/087/Q87341/
 	
 	=============================================================================
 	
+
+{% endraw %}

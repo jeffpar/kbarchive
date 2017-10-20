@@ -6,6 +6,8 @@ permalink: /kb/125/Q125498/
 
 ## Q125498: Print Manager Network Error with MS Network Client for MS-DOS
 
+{% raw %}
+
 	Article: Q125498
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.1,3.11; winnt:3.0
@@ -76,3 +78,5 @@ permalink: /kb/125/Q125498/
 	
 	=============================================================================
 	
+
+{% endraw %}

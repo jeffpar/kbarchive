@@ -6,6 +6,8 @@ permalink: /kb/062/Q62050/
 
 ## Q62050: Mac Hyp: Get the Name of an Enclosed File
 
+{% raw %}
+
 	Article: Q62050
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -58,3 +60,5 @@ permalink: /kb/062/Q62050/
 	
 	=============================================================================
 	
+
+{% endraw %}

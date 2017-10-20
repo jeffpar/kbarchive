@@ -6,6 +6,8 @@ permalink: /kb/279/Q279139/
 
 ## Q279139: FIX: COM Servers Fail With Heavy Load in MTS and Windows 2000
 
+{% raw %}
+
 	Article: Q279139
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -150,3 +152,5 @@ permalink: /kb/279/Q279139/
 	
 	=============================================================================
 	
+
+{% endraw %}

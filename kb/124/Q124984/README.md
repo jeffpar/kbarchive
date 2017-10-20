@@ -6,6 +6,8 @@ permalink: /kb/124/Q124984/
 
 ## Q124984: Multimedia Titles Requiring 256 or More Colors
 
+{% raw %}
+
 	Article: Q124984
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1996 edition,2.0
@@ -116,3 +118,5 @@ permalink: /kb/124/Q124984/
 	
 	=============================================================================
 	
+
+{% endraw %}

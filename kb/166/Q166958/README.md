@@ -6,6 +6,8 @@ permalink: /kb/166/Q166958/
 
 ## Q166958: FIX: WWWQuote Sample Fails with Error Message
 
+{% raw %}
+
 	Article: Q166958
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -128,3 +130,5 @@ permalink: /kb/166/Q166958/
 	
 	=============================================================================
 	
+
+{% endraw %}

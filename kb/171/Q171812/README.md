@@ -6,6 +6,8 @@ permalink: /kb/171/Q171812/
 
 ## Q171812: FIX: Run-Time Error When DataObject Passed as Object
 
+{% raw %}
+
 	Article: Q171812
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -152,3 +154,5 @@ permalink: /kb/171/Q171812/
 	
 	=============================================================================
 	
+
+{% endraw %}

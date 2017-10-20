@@ -6,6 +6,8 @@ permalink: /kb/173/Q173827/
 
 ## Q173827: Project Step by Step 14Lesson.mpp and 15Lesson.mpp Will Not Open
 
+{% raw %}
+
 	Article: Q173827
 	Product(s): Microsoft Press
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/173/Q173827/
 	
 	=============================================================================
 	
+
+{% endraw %}

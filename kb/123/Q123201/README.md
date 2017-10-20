@@ -6,6 +6,8 @@ permalink: /kb/123/Q123201/
 
 ## Q123201: Bookshelf Atlas Map Printed on LaserJet III/IIISi Is Dithered
 
+{% raw %}
+
 	Article: Q123201
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/123/Q123201/
 	
 	=============================================================================
 	
+
+{% endraw %}

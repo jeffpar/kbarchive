@@ -6,6 +6,8 @@ permalink: /kb/146/Q146009/
 
 ## Q146009: Backup Cannot Find Hklmback and Hkuback Files During Compare
 
+{% raw %}
+
 	Article: Q146009
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -94,3 +96,5 @@ permalink: /kb/146/Q146009/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150968/
 
 ## Q150968: XADM: Initials Missing From Template Mapping Tables
 
+{% raw %}
+
 	Article: Q150968
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/150/Q150968/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243411/
 
 ## Q243411: SmartStor Jukeman Files Occupy Twice the Space on NTFS Partition
 
+{% raw %}
+
 	Article: Q243411
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -80,3 +82,5 @@ permalink: /kb/243/Q243411/
 	
 	=============================================================================
 	
+
+{% endraw %}

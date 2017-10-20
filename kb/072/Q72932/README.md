@@ -6,6 +6,8 @@ permalink: /kb/072/Q72932/
 
 ## Q72932: No &quot;Output Filename&quot; Prompt Printing to a File with PostScript
 
+{% raw %}
+
 	Article: Q72932
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/072/Q72932/
 	
 	=============================================================================
 	
+
+{% endraw %}

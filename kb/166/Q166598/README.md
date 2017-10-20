@@ -6,6 +6,8 @@ permalink: /kb/166/Q166598/
 
 ## Q166598: XCON: Wrong Attachment Names in Messages from Mail.D
 
+{% raw %}
+
 	Article: Q166598
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -122,3 +124,5 @@ permalink: /kb/166/Q166598/
 	
 	=============================================================================
 	
+
+{% endraw %}

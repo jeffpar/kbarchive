@@ -6,6 +6,8 @@ permalink: /kb/135/Q135907/
 
 ## Q135907: PRB: APPEND PROCEDURES Command Generates a Warning
 
+{% raw %}
+
 	Article: Q135907
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -95,3 +97,5 @@ permalink: /kb/135/Q135907/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75294/
 
 ## Q75294: The Netlogon Service and How It Works
 
+{% raw %}
+
 	Article: Q75294
 	Product(s): Microsoft LAN Manager
 	Version(s): 2.0c
@@ -114,3 +116,5 @@ permalink: /kb/075/Q75294/
 	
 	=============================================================================
 	
+
+{% endraw %}

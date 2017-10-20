@@ -6,6 +6,8 @@ permalink: /kb/131/Q131957/
 
 ## Q131957: PROFS: VMGATE.EXE Version 3.40.0042 Update
 
+{% raw %}
+
 	Article: Q131957
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4a
@@ -127,3 +129,5 @@ permalink: /kb/131/Q131957/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146416/
 
 ## Q146416: PRB: Page Fault When Using Bounds Checker STD or PRO
 
+{% raw %}
+
 	Article: Q146416
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/146/Q146416/
 	
 	=============================================================================
 	
+
+{% endraw %}

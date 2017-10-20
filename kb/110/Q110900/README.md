@@ -6,6 +6,8 @@ permalink: /kb/110/Q110900/
 
 ## Q110900: Mac Gen: Summary List of Mail 3.1a Bug Fixes
 
+{% raw %}
+
 	Article: Q110900
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1a
@@ -65,3 +67,5 @@ permalink: /kb/110/Q110900/
 	
 	=============================================================================
 	
+
+{% endraw %}

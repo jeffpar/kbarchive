@@ -6,6 +6,8 @@ permalink: /kb/188/Q188628/
 
 ## Q188628: XADM: Exporting and Importing Permissions on Objects
 
+{% raw %}
+
 	Article: Q188628
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -118,3 +120,5 @@ permalink: /kb/188/Q188628/
 	
 	=============================================================================
 	
+
+{% endraw %}

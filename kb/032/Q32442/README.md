@@ -6,6 +6,8 @@ permalink: /kb/032/Q32442/
 
 ## Q32442: _Heapchk() Performs Consistency Check on Heap
 
+{% raw %}
+
 	Article: Q32442
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -34,3 +36,5 @@ permalink: /kb/032/Q32442/
 	      memory with the fill value.
 	   4. If _heapchk() made it all the way through the heap (i.e., it checked
 	      the headers for all nodes), it returns _HEAPOK.
+
+{% endraw %}

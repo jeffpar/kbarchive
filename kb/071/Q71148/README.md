@@ -6,6 +6,8 @@ permalink: /kb/071/Q71148/
 
 ## Q71148: PRB: GetModuleHandle() and Long Path Causes UAE
 
+{% raw %}
+
 	Article: Q71148
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -42,3 +44,5 @@ permalink: /kb/071/Q71148/
 	
 	=============================================================================
 	
+
+{% endraw %}

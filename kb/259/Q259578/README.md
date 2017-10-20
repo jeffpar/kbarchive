@@ -6,6 +6,8 @@ permalink: /kb/259/Q259578/
 
 ## Q259578: XADM: Event ID 11/1023 Appear When Starting Exchange Event Svc
 
+{% raw %}
+
 	Article: Q259578
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -184,3 +186,5 @@ permalink: /kb/259/Q259578/
 	
 	=============================================================================
 	
+
+{% endraw %}

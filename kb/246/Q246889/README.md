@@ -6,6 +6,8 @@ permalink: /kb/246/Q246889/
 
 ## Q246889: XIMS: Exchange Server 5.5 Post-SP3 Internet Mail Service Fixes
 
+{% raw %}
+
 	Article: Q246889
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -152,3 +154,5 @@ permalink: /kb/246/Q246889/
 	
 	=============================================================================
 	
+
+{% endraw %}

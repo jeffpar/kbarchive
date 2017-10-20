@@ -6,6 +6,8 @@ permalink: /kb/157/Q157678/
 
 ## Q157678: DEC TLZ07 DAT Drive Not Recognized After Service Pack 5
 
+{% raw %}
+
 	Article: Q157678
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -78,3 +80,5 @@ permalink: /kb/157/Q157678/
 	
 	=============================================================================
 	
+
+{% endraw %}

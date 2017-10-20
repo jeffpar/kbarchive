@@ -6,6 +6,8 @@ permalink: /kb/089/Q89897/
 
 ## Q89897: How to Set Up Windows Sound System on a Network
 
+{% raw %}
+
 	Article: Q89897
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/089/Q89897/
 	
 	=============================================================================
 	
+
+{% endraw %}

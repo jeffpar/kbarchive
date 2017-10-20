@@ -6,6 +6,8 @@ permalink: /kb/140/Q140767/
 
 ## Q140767: Explorapedia: Clicking Taskbar Does Not Maximize Program
 
+{% raw %}
+
 	Article: Q140767
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,95
@@ -73,3 +75,5 @@ permalink: /kb/140/Q140767/
 	
 	=============================================================================
 	
+
+{% endraw %}

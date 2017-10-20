@@ -6,6 +6,8 @@ permalink: /kb/049/Q49711/
 
 ## Q49711: SUB Not Defined; Change CALL MOUSE to MOUSES in MS Press Book
 
+{% raw %}
+
 	Article: Q49711
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -92,3 +94,5 @@ permalink: /kb/049/Q49711/
 	    m2 = outregs.cx
 	    m3 = outregs.dx
 	END SUB
+
+{% endraw %}

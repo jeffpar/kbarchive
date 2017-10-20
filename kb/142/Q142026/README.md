@@ -6,6 +6,8 @@ permalink: /kb/142/Q142026/
 
 ## Q142026: Err: &quot;Hidden Console of WOW VDM&quot; Running 16-bit or MS-DOS App
 
+{% raw %}
+
 	Article: Q142026
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -117,3 +119,5 @@ permalink: /kb/142/Q142026/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152454/
 
 ## Q152454: Error Saving Write Document to a Network Drive
 
+{% raw %}
+
 	Article: Q152454
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -48,3 +50,5 @@ permalink: /kb/152/Q152454/
 	
 	=============================================================================
 	
+
+{% endraw %}

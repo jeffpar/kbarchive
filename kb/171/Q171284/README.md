@@ -6,6 +6,8 @@ permalink: /kb/171/Q171284/
 
 ## Q171284: Problems Enumerating CardBus Devices with No Free IRQs
 
+{% raw %}
+
 	Article: Q171284
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -75,3 +77,5 @@ permalink: /kb/171/Q171284/
 	
 	=============================================================================
 	
+
+{% endraw %}

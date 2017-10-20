@@ -6,6 +6,8 @@ permalink: /kb/121/Q121914/
 
 ## Q121914: WINNT Setup Fails Due to LASTDRIVE=F in CONFIG.SYS
 
+{% raw %}
+
 	Article: Q121914
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/121/Q121914/
 	
 	=============================================================================
 	
+
+{% endraw %}

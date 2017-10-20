@@ -6,6 +6,8 @@ permalink: /kb/076/Q76866/
 
 ## Q76866: List Separator Under International Setting Not Updated
 
+{% raw %}
+
 	Article: Q76866
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/076/Q76866/
 	
 	=============================================================================
 	
+
+{% endraw %}

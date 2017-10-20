@@ -6,6 +6,8 @@ permalink: /kb/125/Q125027/
 
 ## Q125027: DOCERR: DK Guide References Non-Existent Disk Image Screen
 
+{% raw %}
+
 	Article: Q125027
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a
@@ -46,3 +48,5 @@ permalink: /kb/125/Q125027/
 	
 	=============================================================================
 	
+
+{% endraw %}

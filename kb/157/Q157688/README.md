@@ -6,6 +6,8 @@ permalink: /kb/157/Q157688/
 
 ## Q157688: XCLN: Reminders not Processed When Default Store is PST
 
+{% raw %}
+
 	Article: Q157688
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0; :4.0
@@ -63,3 +65,5 @@ permalink: /kb/157/Q157688/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149974/
 
 ## Q149974: XADM: ISINTEG Prematurely Aborts Processing in Test 22
 
+{% raw %}
+
 	Article: Q149974
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -81,3 +83,5 @@ permalink: /kb/149/Q149974/
 	
 	=============================================================================
 	
+
+{% endraw %}

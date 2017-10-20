@@ -6,6 +6,8 @@ permalink: /kb/180/Q180358/
 
 ## Q180358: SNA User Information Not Updated On Windows NT Member Server
 
+{% raw %}
+
 	Article: Q180358
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP2,4.0
@@ -53,3 +55,5 @@ permalink: /kb/180/Q180358/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96280/
 
 ## Q96280: Mac Wkst: FindMail Prevents Notification
 
+{% raw %}
+
 	Article: Q96280
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -43,3 +45,5 @@ permalink: /kb/096/Q96280/
 	
 	=============================================================================
 	
+
+{% endraw %}

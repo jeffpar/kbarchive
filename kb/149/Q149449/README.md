@@ -6,6 +6,8 @@ permalink: /kb/149/Q149449/
 
 ## Q149449: IR Communications Driver 2.0 Relnotes.doc (Part 1 of 2)
 
+{% raw %}
+
 	Article: Q149449
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -350,3 +352,5 @@ permalink: /kb/149/Q149449/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102199/
 
 ## Q102199: How to Protect the MS UAM on Individual Macintoshes
 
+{% raw %}
+
 	Article: Q102199
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -79,3 +81,5 @@ permalink: /kb/102/Q102199/
 	
 	=============================================================================
 	
+
+{% endraw %}

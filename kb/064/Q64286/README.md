@@ -6,6 +6,8 @@ permalink: /kb/064/Q64286/
 
 ## Q64286: Crash Indicator Bar Remaining in Hangar Buzz Mode
 
+{% raw %}
+
 	Article: Q64286
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/064/Q64286/
 	
 	=============================================================================
 	
+
+{% endraw %}

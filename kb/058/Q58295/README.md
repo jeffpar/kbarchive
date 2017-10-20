@@ -6,6 +6,8 @@ permalink: /kb/058/Q58295/
 
 ## Q58295: Printing Is Slow with PaintJet Driver
 
+{% raw %}
+
 	Article: Q58295
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/058/Q58295/
 	
 	=============================================================================
 	
+
+{% endraw %}

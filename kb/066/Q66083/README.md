@@ -6,6 +6,8 @@ permalink: /kb/066/Q66083/
 
 ## Q66083: WIN.COM Ignores Command Line Parameters After File Name
 
+{% raw %}
+
 	Article: Q66083
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -75,3 +77,5 @@ permalink: /kb/066/Q66083/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243408/
 
 ## Q243408: XADM: Move Server Wizard Stops Working, Event ID 264
 
+{% raw %}
+
 	Article: Q243408
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -73,3 +75,5 @@ permalink: /kb/243/Q243408/
 	
 	=============================================================================
 	
+
+{% endraw %}

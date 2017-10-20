@@ -6,6 +6,8 @@ permalink: /kb/184/Q184228/
 
 ## Q184228: Dr. Watson in Nwssvc.exe Deleting Queue and Printer from FPNW
 
+{% raw %}
+
 	Article: Q184228
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/184/Q184228/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/299/Q299367/
 
 ## Q299367: NIS May Update the Group Files with an Invalid UNIX User
 
+{% raw %}
+
 	Article: Q299367
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -96,3 +98,5 @@ permalink: /kb/299/Q299367/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271788/
 
 ## Q271788: Err Msg: There Is a Problem Opening This File
 
+{% raw %}
+
 	Article: Q271788
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -125,3 +127,5 @@ permalink: /kb/271/Q271788/
 	
 	=============================================================================
 	
+
+{% endraw %}

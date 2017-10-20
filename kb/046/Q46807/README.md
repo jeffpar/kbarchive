@@ -6,6 +6,8 @@ permalink: /kb/046/Q46807/
 
 ## Q46807: Unrecognized Switch /Z1 Is Caused by Wrong Linker
 
+{% raw %}
+
 	Article: Q46807
 	Product(s): See article
 	Version(s): 2.00
@@ -27,3 +29,5 @@ permalink: /kb/046/Q46807/
 	by LINK 3.05, and the error is returned directly to the screen (over
 	the top of the program text). Check to make sure that the proper
 	version of the linker (4.06) is being found and used.
+
+{% endraw %}

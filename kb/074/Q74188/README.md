@@ -6,6 +6,8 @@ permalink: /kb/074/Q74188/
 
 ## Q74188: Running Paradox 3.5 with EMM386.EXE and MS-DOS 5.0 or later
 
+{% raw %}
+
 	Article: Q74188
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -75,3 +77,5 @@ permalink: /kb/074/Q74188/
 	
 	=============================================================================
 	
+
+{% endraw %}

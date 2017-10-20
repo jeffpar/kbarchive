@@ -6,6 +6,8 @@ permalink: /kb/097/Q97881/
 
 ## Q97881: LAN Manager LANAs on MS-DOS Workstations
 
+{% raw %}
+
 	Article: Q97881
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -234,3 +236,5 @@ permalink: /kb/097/Q97881/
 	
 	=============================================================================
 	
+
+{% endraw %}

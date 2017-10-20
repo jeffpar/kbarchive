@@ -6,6 +6,8 @@ permalink: /kb/266/Q266429/
 
 ## Q266429: BUG: &quot;Invalid DOS Path&quot; Error with VSS Command Line GET
 
+{% raw %}
+
 	Article: Q266429
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/266/Q266429/
 	
 	=============================================================================
 	
+
+{% endraw %}

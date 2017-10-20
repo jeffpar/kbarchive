@@ -6,6 +6,8 @@ permalink: /kb/268/Q268906/
 
 ## Q268906: HOWTO: Filter in a JOIN Condition
 
+{% raw %}
+
 	Article: Q268906
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -87,3 +89,5 @@ permalink: /kb/268/Q268906/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66491/
 
 ## Q66491: QuickBASIC Reply Letters: Appnotes BM0350, BM0351, BM0352
 
+{% raw %}
+
 	Article: Q66491
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -202,3 +204,5 @@ permalink: /kb/066/Q66491/
 	BASIC Languages Team Manager
 	Product Support Services
 	BM0352
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187668/
 
 ## Q187668: XFOR: Internet Mail Service Sets Text Color to &quot;Black&quot;
 
+{% raw %}
+
 	Article: Q187668
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -86,3 +88,5 @@ permalink: /kb/187/Q187668/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138439/
 
 ## Q138439: Some Fills Lost When Saving from PowerPoint 7.0 as 4.0
 
+{% raw %}
+
 	Article: Q138439
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -119,3 +121,5 @@ permalink: /kb/138/Q138439/
 	
 	=============================================================================
 	
+
+{% endraw %}

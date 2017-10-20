@@ -6,6 +6,8 @@ permalink: /kb/195/Q195616/
 
 ## Q195616: Writer 2: Creative Writer Couldn't Open a Piece of Art Work
 
+{% raw %}
+
 	Article: Q195616
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -77,3 +79,5 @@ permalink: /kb/195/Q195616/
 	
 	=============================================================================
 	
+
+{% endraw %}

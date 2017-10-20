@@ -6,6 +6,8 @@ permalink: /kb/272/Q272458/
 
 ## Q272458: BETA-BUG: Interpreting App Center 2000 8022 Event Log Messages
 
+{% raw %}
+
 	Article: Q272458
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -122,3 +124,5 @@ permalink: /kb/272/Q272458/
 	
 	=============================================================================
 	
+
+{% endraw %}

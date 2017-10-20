@@ -6,6 +6,8 @@ permalink: /kb/193/Q193780/
 
 ## Q193780: XFOR: Message Sent with X.400 One-Off Address Generates NDR
 
+{% raw %}
+
 	Article: Q193780
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -70,3 +72,5 @@ permalink: /kb/193/Q193780/
 	
 	=============================================================================
 	
+
+{% endraw %}

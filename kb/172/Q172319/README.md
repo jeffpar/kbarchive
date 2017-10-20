@@ -6,6 +6,8 @@ permalink: /kb/172/Q172319/
 
 ## Q172319: HOWTO: Determining Paths of Operating System Folders
 
+{% raw %}
+
 	Article: Q172319
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0
@@ -67,3 +69,5 @@ permalink: /kb/172/Q172319/
 	
 	=============================================================================
 	
+
+{% endraw %}

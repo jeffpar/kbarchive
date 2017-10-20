@@ -6,6 +6,8 @@ permalink: /kb/188/Q188639/
 
 ## Q188639: XADM: Dr. Watson When Installing 5.0 into 5.5 Site w/INS
 
+{% raw %}
+
 	Article: Q188639
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/188/Q188639/
 	
 	=============================================================================
 	
+
+{% endraw %}

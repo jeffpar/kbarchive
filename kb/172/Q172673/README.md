@@ -6,6 +6,8 @@ permalink: /kb/172/Q172673/
 
 ## Q172673: BUG: Control Unexpectedly Gains Focus When Made Visible
 
+{% raw %}
+
 	Article: Q172673
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/172/Q172673/
 	
 	=============================================================================
 	
+
+{% endraw %}

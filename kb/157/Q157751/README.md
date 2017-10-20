@@ -6,6 +6,8 @@ permalink: /kb/157/Q157751/
 
 ## Q157751: Cannot Open Internet Site When Connecting to MSN
 
+{% raw %}
+
 	Article: Q157751
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -72,3 +74,5 @@ permalink: /kb/157/Q157751/
 	
 	=============================================================================
 	
+
+{% endraw %}

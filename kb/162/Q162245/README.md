@@ -6,6 +6,8 @@ permalink: /kb/162/Q162245/
 
 ## Q162245: FP: IDC Queries Fail When Run From IIS 2.0, MSPWS 1.0 Servers
 
+{% raw %}
+
 	Article: Q162245
 	Product(s): Word Front Page
 	Version(s): ; WINDOWS:1.0,1.1
@@ -100,3 +102,5 @@ permalink: /kb/162/Q162245/
 	
 	=============================================================================
 	
+
+{% endraw %}

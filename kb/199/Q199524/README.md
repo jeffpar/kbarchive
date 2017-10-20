@@ -6,6 +6,8 @@ permalink: /kb/199/Q199524/
 
 ## Q199524: PRB: SS_BITMAP Not Supported for Macintosh Static Controls
 
+{% raw %}
+
 	Article: Q199524
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:4.0,4.0b
@@ -52,3 +54,5 @@ permalink: /kb/199/Q199524/
 	
 	=============================================================================
 	
+
+{% endraw %}

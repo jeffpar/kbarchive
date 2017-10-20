@@ -6,6 +6,8 @@ permalink: /kb/174/Q174722/
 
 ## Q174722: XFOR: Message Reprocessed Due to Error 80040C15-F0000000
 
+{% raw %}
+
 	Article: Q174722
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/174/Q174722/
 	
 	=============================================================================
 	
+
+{% endraw %}

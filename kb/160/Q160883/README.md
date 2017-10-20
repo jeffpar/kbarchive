@@ -6,6 +6,8 @@ permalink: /kb/160/Q160883/
 
 ## Q160883: Falcon 5250 Emulator May GP Fault While Opening Second Session
 
+{% raw %}
+
 	Article: Q160883
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1,3.0
@@ -73,3 +75,5 @@ permalink: /kb/160/Q160883/
 	
 	=============================================================================
 	
+
+{% endraw %}

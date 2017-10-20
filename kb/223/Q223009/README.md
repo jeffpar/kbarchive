@@ -6,6 +6,8 @@ permalink: /kb/223/Q223009/
 
 ## Q223009: SMS: Long Paths Make Audit Create a MIF That Cannot Be Processed
 
+{% raw %}
+
 	Article: Q223009
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -110,3 +112,5 @@ permalink: /kb/223/Q223009/
 	
 	=============================================================================
 	
+
+{% endraw %}

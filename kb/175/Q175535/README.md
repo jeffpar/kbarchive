@@ -6,6 +6,8 @@ permalink: /kb/175/Q175535/
 
 ## Q175535: PRB: Printing Rotated Text with Visual Basic
 
+{% raw %}
+
 	Article: Q175535
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0,97,97sp2,97sp3
@@ -233,3 +235,5 @@ permalink: /kb/175/Q175535/
 	
 	=============================================================================
 	
+
+{% endraw %}

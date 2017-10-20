@@ -6,6 +6,8 @@ permalink: /kb/176/Q176087/
 
 ## Q176087: LPRMON Status Strings Are No Longer Localized on German Version
 
+{% raw %}
+
 	Article: Q176087
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/176/Q176087/
 	
 	=============================================================================
 	
+
+{% endraw %}

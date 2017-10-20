@@ -6,6 +6,8 @@ permalink: /kb/093/Q93198/
 
 ## Q93198: Windows for Workgroups NET START Error 5736
 
+{% raw %}
+
 	Article: Q93198
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/093/Q93198/
 	
 	=============================================================================
 	
+
+{% endraw %}

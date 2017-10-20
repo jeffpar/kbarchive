@@ -6,6 +6,8 @@ permalink: /kb/068/Q68955/
 
 ## Q68955: Using a Bus Mouse on a Tandy 1000
 
+{% raw %}
+
 	Article: Q68955
 	Product(s): See article
 	Version(s): 1.x 6.x 7.x
@@ -23,3 +25,5 @@ permalink: /kb/068/Q68955/
 	
 	Later models used IRQ5 for hard cards. These models included the
 	Tandy 1000SL, Tandy 1000SL/2, Tandy 1000TL, and Tandy 1000TL/2.
+
+{% endraw %}

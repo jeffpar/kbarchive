@@ -6,6 +6,8 @@ permalink: /kb/085/Q85051/
 
 ## Q85051: FFAPI: The Components of Gateway FFAPI
 
+{% raw %}
+
 	Article: Q85051
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/085/Q85051/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182581/
 
 ## Q182581: Runtime Error: Attempt to Initialize Tagen.dll Fails
 
+{% raw %}
+
 	Article: Q182581
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,1.0 SP1
@@ -129,3 +131,5 @@ permalink: /kb/182/Q182581/
 	
 	=============================================================================
 	
+
+{% endraw %}

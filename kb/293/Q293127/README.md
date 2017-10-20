@@ -6,6 +6,8 @@ permalink: /kb/293/Q293127/
 
 ## Q293127: Net Logon of an NT 4 BDC Fails in Windows 2000 Domain
 
+{% raw %}
+
 	Article: Q293127
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -136,3 +138,5 @@ permalink: /kb/293/Q293127/
 	
 	=============================================================================
 	
+
+{% endraw %}

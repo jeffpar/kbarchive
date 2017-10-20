@@ -6,6 +6,8 @@ permalink: /kb/122/Q122786/
 
 ## Q122786: Steps to Remove Windows Entertainment Pack, Volume 4
 
+{% raw %}
+
 	Article: Q122786
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -67,3 +69,5 @@ permalink: /kb/122/Q122786/
 	
 	=============================================================================
 	
+
+{% endraw %}

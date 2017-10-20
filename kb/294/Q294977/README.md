@@ -6,6 +6,8 @@ permalink: /kb/294/Q294977/
 
 ## Q294977: XADM: RPC Denial of Service Attack Stops Information Store
 
+{% raw %}
+
 	Article: Q294977
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -145,3 +147,5 @@ permalink: /kb/294/Q294977/
 	
 	=============================================================================
 	
+
+{% endraw %}

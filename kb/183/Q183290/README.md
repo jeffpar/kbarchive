@@ -6,6 +6,8 @@ permalink: /kb/183/Q183290/
 
 ## Q183290: XFOR: Notes Client Gets Error Message: Error Loading Metafile
 
+{% raw %}
+
 	Article: Q183290
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5,8.03
@@ -303,3 +305,5 @@ permalink: /kb/183/Q183290/
 	
 	=============================================================================
 	
+
+{% endraw %}

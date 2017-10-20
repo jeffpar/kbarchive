@@ -6,6 +6,8 @@ permalink: /kb/102/Q102327/
 
 ## Q102327: INFO: Const Versus Non-Const CObList Objects
 
+{% raw %}
+
 	Article: Q102327
 	Product(s): Microsoft C Compiler
 	Version(s): 7.0
@@ -133,3 +135,5 @@ permalink: /kb/102/Q102327/
 	
 	=============================================================================
 	
+
+{% endraw %}

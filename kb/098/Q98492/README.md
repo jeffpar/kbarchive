@@ -6,6 +6,8 @@ permalink: /kb/098/Q98492/
 
 ## Q98492: How to Install Intel EtherExpress Card
 
+{% raw %}
+
 	Article: Q98492
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -227,3 +229,5 @@ permalink: /kb/098/Q98492/
 	
 	=============================================================================
 	
+
+{% endraw %}

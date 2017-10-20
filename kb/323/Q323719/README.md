@@ -6,6 +6,8 @@ permalink: /kb/323/Q323719/
 
 ## Q323719: Win32 Version of RSH Reports &quot;Option t Not Valid&quot; to Rcp Clients
 
+{% raw %}
+
 	Article: Q323719
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,2.1 OEM Only,2.2 OEM Only,2.3 OEM Only,3.0
@@ -87,3 +89,5 @@ permalink: /kb/323/Q323719/
 	
 	=============================================================================
 	
+
+{% endraw %}

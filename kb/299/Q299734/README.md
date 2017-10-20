@@ -6,6 +6,8 @@ permalink: /kb/299/Q299734/
 
 ## Q299734: Component Configuration Document Does Not Refresh
 
+{% raw %}
+
 	Article: Q299734
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -65,3 +67,5 @@ permalink: /kb/299/Q299734/
 	
 	=============================================================================
 	
+
+{% endraw %}

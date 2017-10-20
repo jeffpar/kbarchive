@@ -6,6 +6,8 @@ permalink: /kb/180/Q180771/
 
 ## Q180771: PRB: Enabled Property of Label Does Not Change Appearance
 
+{% raw %}
+
 	Article: Q180771
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -72,3 +74,5 @@ permalink: /kb/180/Q180771/
 	
 	=============================================================================
 	
+
+{% endraw %}

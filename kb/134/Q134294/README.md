@@ -6,6 +6,8 @@ permalink: /kb/134/Q134294/
 
 ## Q134294: Compression and Decompression of Attached Files in a BBS
 
+{% raw %}
+
 	Article: Q134294
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -59,3 +61,5 @@ permalink: /kb/134/Q134294/
 	
 	=============================================================================
 	
+
+{% endraw %}

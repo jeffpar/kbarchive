@@ -6,6 +6,8 @@ permalink: /kb/290/Q290287/
 
 ## Q290287: XCCC: How to Completely Remove and Re-Install OWA
 
+{% raw %}
+
 	Article: Q290287
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -183,3 +185,5 @@ permalink: /kb/290/Q290287/
 	
 	=============================================================================
 	
+
+{% endraw %}

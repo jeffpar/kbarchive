@@ -6,6 +6,8 @@ permalink: /kb/086/Q86556/
 
 ## Q86556: MHS: Specific Hardware Needed by the Gateway
 
+{% raw %}
+
 	Article: Q86556
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -37,3 +39,5 @@ permalink: /kb/086/Q86556/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/303/Q303116/
 
 ## Q303116: Links 2001: &quot;No 3D Acceleration&quot; Message When Starting Links
 
+{% raw %}
+
 	Article: Q303116
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/303/Q303116/
 	
 	=============================================================================
 	
+
+{% endraw %}

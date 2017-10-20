@@ -6,6 +6,8 @@ permalink: /kb/125/Q125171/
 
 ## Q125171: PROFS: How to Print a PROFS Address List
 
+{% raw %}
+
 	Article: Q125171
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -39,3 +41,5 @@ permalink: /kb/125/Q125171/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170818/
 
 ## Q170818: El59x Driver Shows Only Inbound Traffic with Network Monitor
 
+{% raw %}
+
 	Article: Q170818
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/170/Q170818/
 	
 	=============================================================================
 	
+
+{% endraw %}

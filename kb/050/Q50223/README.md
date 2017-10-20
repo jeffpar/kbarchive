@@ -6,6 +6,8 @@ permalink: /kb/050/Q50223/
 
 ## Q50223: Printing Double Quotation Marks from within an M Editor Macro
 
+{% raw %}
+
 	Article: Q50223
 	Product(s): See article
 	Version(s): 1.00 1.02 | 1.00 1.02
@@ -25,3 +27,5 @@ permalink: /kb/050/Q50223/
 	text, with the double quotation marks around the word hello.
 	
 	   say "hello"
+
+{% endraw %}

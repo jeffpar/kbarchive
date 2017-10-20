@@ -6,6 +6,8 @@ permalink: /kb/127/Q127082/
 
 ## Q127082: PC Mac: Case Sensitivity on Some Networks, such as UNIX
 
+{% raw %}
+
 	Article: Q127082
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -103,3 +105,5 @@ permalink: /kb/127/Q127082/
 	
 	=============================================================================
 	
+
+{% endraw %}

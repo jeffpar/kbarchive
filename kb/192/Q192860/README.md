@@ -6,6 +6,8 @@ permalink: /kb/192/Q192860/
 
 ## Q192860: PRB: Creating Join in Join Condition Dialog Box Creates Filter
 
+{% raw %}
+
 	Article: Q192860
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -68,3 +70,5 @@ permalink: /kb/192/Q192860/
 	
 	=============================================================================
 	
+
+{% endraw %}

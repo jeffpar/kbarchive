@@ -6,6 +6,8 @@ permalink: /kb/075/Q75086/
 
 ## Q75086: DOSSHELL.VID Not Compatible with AT&amp;T BIOS 1.21 and Earlier
 
+{% raw %}
+
 	Article: Q75086
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -50,3 +52,5 @@ permalink: /kb/075/Q75086/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194572/
 
 ## Q194572: HOWTO: Run an Unattended Setup of a Visual FoxPro Application
 
+{% raw %}
+
 	Article: Q194572
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0a,6.0
@@ -104,3 +106,5 @@ permalink: /kb/194/Q194572/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162808/
 
 ## Q162808: WD97: Commands on Web Toolbar Cannot be Recorded in a Macro
 
+{% raw %}
+
 	Article: Q162808
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/162/Q162808/
 	
 	=============================================================================
 	
+
+{% endraw %}

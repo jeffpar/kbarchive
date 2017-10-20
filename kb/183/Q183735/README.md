@@ -6,6 +6,8 @@ permalink: /kb/183/Q183735/
 
 ## Q183735: PRB: Saving a File in FrontPage Does a Silent Check In
 
+{% raw %}
+
 	Article: Q183735
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0,97
@@ -101,3 +103,5 @@ permalink: /kb/183/Q183735/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180736/
 
 ## Q180736: HOWTO: Create a Timer Event Using the Windows API Functions
 
+{% raw %}
+
 	Article: Q180736
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -181,3 +183,5 @@ permalink: /kb/180/Q180736/
 	
 	=============================================================================
 	
+
+{% endraw %}

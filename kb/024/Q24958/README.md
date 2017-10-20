@@ -6,6 +6,8 @@ permalink: /kb/024/Q24958/
 
 ## Q24958: Hexadecimal Numbers Must Begin With a Digit Between 0 and 9
 
+{% raw %}
+
 	Article: Q24958
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,6.0,6.0a,6.0b
@@ -56,3 +58,5 @@ permalink: /kb/024/Q24958/
 	
 	=============================================================================
 	
+
+{% endraw %}

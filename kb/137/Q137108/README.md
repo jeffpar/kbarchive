@@ -6,6 +6,8 @@ permalink: /kb/137/Q137108/
 
 ## Q137108: PC NTMMTA: Running NT MMTA on PC-NFS Client
 
+{% raw %}
+
 	Article: Q137108
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -51,3 +53,5 @@ permalink: /kb/137/Q137108/
 	
 	=============================================================================
 	
+
+{% endraw %}

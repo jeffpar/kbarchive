@@ -6,6 +6,8 @@ permalink: /kb/246/Q246686/
 
 ## Q246686: Inside SQL Server 7.0 Comments and Corrections
 
+{% raw %}
+
 	Article: Q246686
 	Product(s): Microsoft Press
 	Version(s): 
@@ -1238,3 +1240,5 @@ permalink: /kb/246/Q246686/
 	
 	=============================================================================
 	
+
+{% endraw %}

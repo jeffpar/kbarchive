@@ -6,6 +6,8 @@ permalink: /kb/177/Q177838/
 
 ## Q177838: XADM: NT Security Descriptor Associated w/ DL Owner Not Updated
 
+{% raw %}
+
 	Article: Q177838
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/177/Q177838/
 	
 	=============================================================================
 	
+
+{% endraw %}

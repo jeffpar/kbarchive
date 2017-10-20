@@ -6,6 +6,8 @@ permalink: /kb/113/Q113182/
 
 ## Q113182: SMC 8000 Elite Series Network Adapters Need Driver Updates
 
+{% raw %}
+
 	Article: Q113182
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -80,3 +82,5 @@ permalink: /kb/113/Q113182/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/294/Q294853/
 
 ## Q294853: Making A Connection File Or &quot;Connectoid&quot; For MSN Explorer
 
+{% raw %}
+
 	Article: Q294853
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -184,3 +186,5 @@ permalink: /kb/294/Q294853/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237420/
 
 ## Q237420: LPR Command to Remote Printer on RAS Connection Does Not Work
 
+{% raw %}
+
 	Article: Q237420
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -100,3 +102,5 @@ permalink: /kb/237/Q237420/
 	
 	=============================================================================
 	
+
+{% endraw %}

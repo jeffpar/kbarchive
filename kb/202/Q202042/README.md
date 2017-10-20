@@ -6,6 +6,8 @@ permalink: /kb/202/Q202042/
 
 ## Q202042: SMS: How to Get Query Operator to Find Items with NULL Values
 
+{% raw %}
+
 	Article: Q202042
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -51,3 +53,5 @@ permalink: /kb/202/Q202042/
 	
 	=============================================================================
 	
+
+{% endraw %}

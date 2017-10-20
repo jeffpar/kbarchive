@@ -6,6 +6,8 @@ permalink: /kb/184/Q184524/
 
 ## Q184524: XFOR: cc:Mail Connector Sends Messages Twice Under Load
 
+{% raw %}
+
 	Article: Q184524
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0 5.5
@@ -77,3 +79,5 @@ permalink: /kb/184/Q184524/
 	
 	=============================================================================
 	
+
+{% endraw %}

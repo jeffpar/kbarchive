@@ -6,6 +6,8 @@ permalink: /kb/085/Q85285/
 
 ## Q85285: PRB: Petzold's COLORS1 Sample Application Consumes Resources
 
+{% raw %}
+
 	Article: Q85285
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -85,3 +87,5 @@ permalink: /kb/085/Q85285/
 	
 	=============================================================================
 	
+
+{% endraw %}

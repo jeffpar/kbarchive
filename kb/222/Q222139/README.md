@@ -6,6 +6,8 @@ permalink: /kb/222/Q222139/
 
 ## Q222139: Flight Sim 95 Err Msg: Setup Has Detected a Newer Version...
 
+{% raw %}
+
 	Article: Q222139
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/222/Q222139/
 	
 	=============================================================================
 	
+
+{% endraw %}

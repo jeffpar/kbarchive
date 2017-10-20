@@ -6,6 +6,8 @@ permalink: /kb/173/Q173963/
 
 ## Q173963: Index Server Queries Don't Run
 
+{% raw %}
+
 	Article: Q173963
 	Product(s): Internet Information Server
 	Version(s): WinNT:1.1
@@ -104,3 +106,5 @@ permalink: /kb/173/Q173963/
 	
 	=============================================================================
 	
+
+{% endraw %}

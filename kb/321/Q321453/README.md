@@ -6,6 +6,8 @@ permalink: /kb/321/Q321453/
 
 ## Q321453: DHCP Transaction Log Files (J500xxx.log) Fill the Hard Disk
 
+{% raw %}
+
 	Article: Q321453
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -127,3 +129,5 @@ permalink: /kb/321/Q321453/
 	
 	=============================================================================
 	
+
+{% endraw %}

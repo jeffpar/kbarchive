@@ -6,6 +6,8 @@ permalink: /kb/129/Q129044/
 
 ## Q129044: Restoring to Alternate Path Using Windows NT Backup
 
+{% raw %}
+
 	Article: Q129044
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/129/Q129044/
 	
 	=============================================================================
 	
+
+{% endraw %}

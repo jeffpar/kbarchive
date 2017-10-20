@@ -6,6 +6,8 @@ permalink: /kb/252/Q252797/
 
 ## Q252797: XCLN: Extend Right-click Shortcut Menu for an Embedded Document
 
+{% raw %}
+
 	Article: Q252797
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -108,3 +110,5 @@ permalink: /kb/252/Q252797/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/230/Q230907/
 
 ## Q230907: Encarta Research Organizer: Images in Project Are not Exported
 
+{% raw %}
+
 	Article: Q230907
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -103,3 +105,5 @@ permalink: /kb/230/Q230907/
 	
 	=============================================================================
 	
+
+{% endraw %}

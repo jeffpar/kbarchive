@@ -6,6 +6,8 @@ permalink: /kb/156/Q156285/
 
 ## Q156285: Windows NT Setup Does Not Detect or Install Sound Cards
 
+{% raw %}
+
 	Article: Q156285
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/156/Q156285/
 	
 	=============================================================================
 	
+
+{% endraw %}

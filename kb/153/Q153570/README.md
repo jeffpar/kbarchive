@@ -6,6 +6,8 @@ permalink: /kb/153/Q153570/
 
 ## Q153570: How to Pass One OLE Control to Another
 
+{% raw %}
+
 	Article: Q153570
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -67,3 +69,5 @@ permalink: /kb/153/Q153570/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/039/Q39311/
 
 ## Q39311: Use 0x80 to Access Drive C when Calling _bios_disk
 
+{% raw %}
+
 	Article: Q39311
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -39,3 +41,5 @@ permalink: /kb/039/Q39311/
 	         .                 .
 	         .                 .
 	         .                 .
+
+{% endraw %}

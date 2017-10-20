@@ -6,6 +6,8 @@ permalink: /kb/226/Q226487/
 
 ## Q226487: IAS Returns Incorrect Data During Invalid Logon Attempt
 
+{% raw %}
+
 	Article: Q226487
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP5
@@ -109,3 +111,5 @@ permalink: /kb/226/Q226487/
 	
 	=============================================================================
 	
+
+{% endraw %}

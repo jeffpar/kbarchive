@@ -6,6 +6,8 @@ permalink: /kb/156/Q156979/
 
 ## Q156979: Natural Keyboard Context Sensitive Key Not Working in Wordpad
 
+{% raw %}
+
 	Article: Q156979
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/156/Q156979/
 	
 	=============================================================================
 	
+
+{% endraw %}

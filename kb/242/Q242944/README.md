@@ -6,6 +6,8 @@ permalink: /kb/242/Q242944/
 
 ## Q242944: XCON: MTA Generates a Large Number of Event ID 2125s
 
+{% raw %}
+
 	Article: Q242944
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -89,3 +91,5 @@ permalink: /kb/242/Q242944/
 	
 	=============================================================================
 	
+
+{% endraw %}

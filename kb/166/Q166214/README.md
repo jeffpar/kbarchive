@@ -6,6 +6,8 @@ permalink: /kb/166/Q166214/
 
 ## Q166214: WD97: Sample VB Code To Determine Text Box (or Text Frame) Link
 
+{% raw %}
+
 	Article: Q166214
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -118,3 +120,5 @@ permalink: /kb/166/Q166214/
 	
 	=============================================================================
 	
+
+{% endraw %}

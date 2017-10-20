@@ -6,6 +6,8 @@ permalink: /kb/193/Q193273/
 
 ## Q193273: BUG: FTP Creates Recursive Subfolders When Deploying
 
+{% raw %}
+
 	Article: Q193273
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/193/Q193273/
 	
 	=============================================================================
 	
+
+{% endraw %}

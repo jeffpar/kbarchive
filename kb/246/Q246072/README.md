@@ -6,6 +6,8 @@ permalink: /kb/246/Q246072/
 
 ## Q246072: Certificate Authorities: Using Digital Certificates
 
+{% raw %}
+
 	Article: Q246072
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -110,3 +112,5 @@ permalink: /kb/246/Q246072/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229921/
 
 ## Q229921: XFOR: LinkAge 3.2 Connectors Are Not Year 2000 Compliant
 
+{% raw %}
+
 	Article: Q229921
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/229/Q229921/
 	
 	=============================================================================
 	
+
+{% endraw %}

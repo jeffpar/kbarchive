@@ -6,6 +6,8 @@ permalink: /kb/105/Q105932/
 
 ## Q105932: FIX: String Concatenation May Cause Memory Errors
 
+{% raw %}
+
 	Article: Q105932
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -108,3 +110,5 @@ permalink: /kb/105/Q105932/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/033/Q33715/
 
 ## Q33715: &quot;Floating Point Error&quot; with Inboard 386 Configured Incorrectly
 
+{% raw %}
+
 	Article: Q33715
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -25,3 +27,5 @@ permalink: /kb/033/Q33715/
 	The "Floating Point Error" does not occur with QuickBASIC Version 4.00
 	because the presence of the coprocessor is detected differently than
 	it is in Versions 4.00b and 4.50.
+
+{% endraw %}

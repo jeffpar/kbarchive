@@ -6,6 +6,8 @@ permalink: /kb/156/Q156597/
 
 ## Q156597: Head-to-Head Play on Directly Connected Macintosh Computers
 
+{% raw %}
+
 	Article: Q156597
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0
@@ -116,3 +118,5 @@ permalink: /kb/156/Q156597/
 	
 	=============================================================================
 	
+
+{% endraw %}

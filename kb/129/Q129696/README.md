@@ -6,6 +6,8 @@ permalink: /kb/129/Q129696/
 
 ## Q129696: Resource Kit Setup Fails with a Space in Directory Name or Path
 
+{% raw %}
+
 	Article: Q129696
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.5
@@ -63,3 +65,5 @@ permalink: /kb/129/Q129696/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103280/
 
 ## Q103280: Using an Emergency Repair Disk Created by Windows NT
 
+{% raw %}
+
 	Article: Q103280
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51 4.0
@@ -129,3 +131,5 @@ permalink: /kb/103/Q103280/
 	
 	=============================================================================
 	
+
+{% endraw %}

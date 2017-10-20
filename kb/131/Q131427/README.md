@@ -6,6 +6,8 @@ permalink: /kb/131/Q131427/
 
 ## Q131427: Windows NT 3.51 TCP/IP System Network Interface Hang
 
+{% raw %}
+
 	Article: Q131427
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -63,3 +65,5 @@ permalink: /kb/131/Q131427/
 	
 	=============================================================================
 	
+
+{% endraw %}

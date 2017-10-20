@@ -6,6 +6,8 @@ permalink: /kb/247/Q247073/
 
 ## Q247073: CustWBC.exe: ATL HTML Control Customizes the WebBrowser Control
 
+{% raw %}
+
 	Article: Q247073
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -135,3 +137,5 @@ permalink: /kb/247/Q247073/
 	
 	=============================================================================
 	
+
+{% endraw %}

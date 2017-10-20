@@ -6,6 +6,8 @@ permalink: /kb/150/Q150479/
 
 ## Q150479: Mac Bookshelf '96-'97: Cannot Change Memory Allocation
 
+{% raw %}
+
 	Article: Q150479
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -56,3 +58,5 @@ permalink: /kb/150/Q150479/
 	
 	=============================================================================
 	
+
+{% endraw %}

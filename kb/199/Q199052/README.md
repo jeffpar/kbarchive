@@ -6,6 +6,8 @@ permalink: /kb/199/Q199052/
 
 ## Q199052: The My Briefcase Icon Is Displayed as a Folder Icon
 
+{% raw %}
+
 	Article: Q199052
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/199/Q199052/
 	
 	=============================================================================
 	
+
+{% endraw %}

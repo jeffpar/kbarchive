@@ -6,6 +6,8 @@ permalink: /kb/138/Q138215/
 
 ## Q138215: Julia Child: Button Bar Sounds Play Intermittently
 
+{% raw %}
+
 	Article: Q138215
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/138/Q138215/
 	
 	=============================================================================
 	
+
+{% endraw %}

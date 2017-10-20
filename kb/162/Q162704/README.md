@@ -6,6 +6,8 @@ permalink: /kb/162/Q162704/
 
 ## Q162704: STOP 0X0000001E in Nwrdr.sys When Copying Files to NetWare
 
+{% raw %}
+
 	Article: Q162704
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.5 3.51
@@ -59,3 +61,5 @@ permalink: /kb/162/Q162704/
 	
 	=============================================================================
 	
+
+{% endraw %}

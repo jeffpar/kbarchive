@@ -6,6 +6,8 @@ permalink: /kb/133/Q133442/
 
 ## Q133442: Safe Mode Boot Does Not Process Machine Switch for Himem.sys
 
+{% raw %}
+
 	Article: Q133442
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/133/Q133442/
 	
 	=============================================================================
 	
+
+{% endraw %}

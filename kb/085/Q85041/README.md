@@ -6,6 +6,8 @@ permalink: /kb/085/Q85041/
 
 ## Q85041: FFAPI: The Format of a FFAPI File
 
+{% raw %}
+
 	Article: Q85041
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -41,3 +43,5 @@ permalink: /kb/085/Q85041/
 	
 	=============================================================================
 	
+
+{% endraw %}

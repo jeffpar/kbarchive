@@ -6,6 +6,8 @@ permalink: /kb/253/Q253578/
 
 ## Q253578: SMS: Error When PCMMAC Runs Job on Multiple Clients at Same Time
 
+{% raw %}
+
 	Article: Q253578
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2 SP4
@@ -99,3 +101,5 @@ permalink: /kb/253/Q253578/
 	
 	=============================================================================
 	
+
+{% endraw %}

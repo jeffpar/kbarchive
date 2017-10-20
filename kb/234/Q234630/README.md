@@ -6,6 +6,8 @@ permalink: /kb/234/Q234630/
 
 ## Q234630: XADM: Event Scripts Fail after Installing Exchange 5.5 SP2
 
+{% raw %}
+
 	Article: Q234630
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -89,3 +91,5 @@ permalink: /kb/234/Q234630/
 	
 	=============================================================================
 	
+
+{% endraw %}

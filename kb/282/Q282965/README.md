@@ -6,6 +6,8 @@ permalink: /kb/282/Q282965/
 
 ## Q282965: Event ID 26 May Be Logged When a Resource Fails
 
+{% raw %}
+
 	Article: Q282965
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -76,3 +78,5 @@ permalink: /kb/282/Q282965/
 	
 	=============================================================================
 	
+
+{% endraw %}

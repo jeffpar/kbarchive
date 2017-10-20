@@ -6,6 +6,8 @@ permalink: /kb/160/Q160031/
 
 ## Q160031: Games Err Msg: Cannot Find Setup.exe or One of Its Components
 
+{% raw %}
+
 	Article: Q160031
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,3.0
@@ -114,3 +116,5 @@ permalink: /kb/160/Q160031/
 	
 	=============================================================================
 	
+
+{% endraw %}

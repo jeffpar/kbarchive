@@ -6,6 +6,8 @@ permalink: /kb/176/Q176128/
 
 ## Q176128: XCON: Message to SMTP Address Fails with Reason 0
 
+{% raw %}
+
 	Article: Q176128
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -68,3 +70,5 @@ permalink: /kb/176/Q176128/
 	
 	=============================================================================
 	
+
+{% endraw %}

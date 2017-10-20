@@ -6,6 +6,8 @@ permalink: /kb/139/Q139707/
 
 ## Q139707: Err Msg: System Agent Error - Cannot Find the File...
 
+{% raw %}
+
 	Article: Q139707
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/139/Q139707/
 	
 	=============================================================================
 	
+
+{% endraw %}

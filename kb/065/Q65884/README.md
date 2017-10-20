@@ -6,6 +6,8 @@ permalink: /kb/065/Q65884/
 
 ## Q65884: How to Pass a BASIC COMMON Block to a FORTRAN 5.00 Subroutine
 
+{% raw %}
+
 	Article: Q65884
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -137,3 +139,5 @@ permalink: /kb/065/Q65884/
 	             40.125000000000000
 	
 	   Back in BASIC
+
+{% endraw %}

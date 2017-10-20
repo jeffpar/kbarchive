@@ -6,6 +6,8 @@ permalink: /kb/039/Q39442/
 
 ## Q39442: DOCERR: asub and ctest in MASM Programmer's Guide
 
+{% raw %}
+
 	Article: Q39442
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -49,3 +51,5 @@ permalink: /kb/039/Q39442/
 	
 	=============================================================================
 	
+
+{% endraw %}

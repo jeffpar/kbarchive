@@ -6,6 +6,8 @@ permalink: /kb/119/Q119102/
 
 ## Q119102: Dangerous Creatures: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q119102
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.00
@@ -185,3 +187,5 @@ permalink: /kb/119/Q119102/
 	
 	=============================================================================
 	
+
+{% endraw %}

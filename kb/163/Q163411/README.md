@@ -6,6 +6,8 @@ permalink: /kb/163/Q163411/
 
 ## Q163411: BUG: Class Based on Grid Does Not Maintain FontBold Property
 
+{% raw %}
+
 	Article: Q163411
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/163/Q163411/
 	
 	=============================================================================
 	
+
+{% endraw %}

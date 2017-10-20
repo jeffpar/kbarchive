@@ -6,6 +6,8 @@ permalink: /kb/189/Q189614/
 
 ## Q189614: Internet Mail Service Event Descriptions Could Not Be Found
 
+{% raw %}
+
 	Article: Q189614
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -61,3 +63,5 @@ permalink: /kb/189/Q189614/
 	
 	=============================================================================
 	
+
+{% endraw %}

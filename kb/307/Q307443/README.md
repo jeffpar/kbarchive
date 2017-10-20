@@ -6,6 +6,8 @@ permalink: /kb/307/Q307443/
 
 ## Q307443: INFO: 16-Bit Version of Visual C++ Articles Are Archived
 
+{% raw %}
+
 	Article: Q307443
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,1.52a,1.52b,1.52c
@@ -48,3 +50,5 @@ permalink: /kb/307/Q307443/
 	
 	=============================================================================
 	
+
+{% endraw %}

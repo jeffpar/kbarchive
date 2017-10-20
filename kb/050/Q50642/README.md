@@ -6,6 +6,8 @@ permalink: /kb/050/Q50642/
 
 ## Q50642: Mhelp Function Is Always Assigned to SHIFT+F1
 
+{% raw %}
+
 	Article: Q50642
 	Product(s): See article
 	Version(s): 1.02   | 1.02
@@ -26,3 +28,5 @@ permalink: /kb/050/Q50642/
 	
 	   [M-MHELP]
 	   unassigned:shift+f1
+
+{% endraw %}

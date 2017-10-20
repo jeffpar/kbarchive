@@ -6,6 +6,8 @@ permalink: /kb/166/Q166060/
 
 ## Q166060: WV: Cannot Copy and Paste Floating Objects in Word Viewer
 
+{% raw %}
+
 	Article: Q166060
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -93,3 +95,5 @@ permalink: /kb/166/Q166060/
 	
 	=============================================================================
 	
+
+{% endraw %}

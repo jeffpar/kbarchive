@@ -6,6 +6,8 @@ permalink: /kb/131/Q131949/
 
 ## Q131949: FLTSIM 5.1: Disk 1 (Setup) Contents (3.5 1.44 MB)
 
+{% raw %}
+
 	Article: Q131949
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1
@@ -54,3 +56,5 @@ permalink: /kb/131/Q131949/
 	
 	=============================================================================
 	
+
+{% endraw %}

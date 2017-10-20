@@ -6,6 +6,8 @@ permalink: /kb/137/Q137272/
 
 ## Q137272: Damaged Cabinet File on Non-DMF MS Plus! Disk Set
 
+{% raw %}
+
 	Article: Q137272
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/137/Q137272/
 	
 	=============================================================================
 	
+
+{% endraw %}

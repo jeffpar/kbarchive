@@ -6,6 +6,8 @@ permalink: /kb/142/Q142795/
 
 ## Q142795: PRB: FoxPro DBF Opened/Saved by MacWord Alters File Type
 
+{% raw %}
+
 	Article: Q142795
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -154,3 +156,5 @@ permalink: /kb/142/Q142795/
 	
 	=============================================================================
 	
+
+{% endraw %}

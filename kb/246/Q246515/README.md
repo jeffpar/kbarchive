@@ -6,6 +6,8 @@ permalink: /kb/246/Q246515/
 
 ## Q246515: STOP Message When Backing Up Long File Names from Novell Server
 
+{% raw %}
+
 	Article: Q246515
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/246/Q246515/
 	
 	=============================================================================
 	
+
+{% endraw %}

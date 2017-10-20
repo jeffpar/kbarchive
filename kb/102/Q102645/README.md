@@ -6,6 +6,8 @@ permalink: /kb/102/Q102645/
 
 ## Q102645: PRB: Min/Max Boxes Do Not Work with DS_MODALFRAME
 
+{% raw %}
+
 	Article: Q102645
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/102/Q102645/
 	
 	=============================================================================
 	
+
+{% endraw %}

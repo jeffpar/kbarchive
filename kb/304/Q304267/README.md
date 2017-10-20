@@ -6,6 +6,8 @@ permalink: /kb/304/Q304267/
 
 ## Q304267: FIX: Error in VBA6.DLL When Concatenating ADO Recordset Field
 
+{% raw %}
+
 	Article: Q304267
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.6,2.6 SP1,6.0
@@ -126,3 +128,5 @@ permalink: /kb/304/Q304267/
 	
 	=============================================================================
 	
+
+{% endraw %}

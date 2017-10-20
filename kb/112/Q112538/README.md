@@ -6,6 +6,8 @@ permalink: /kb/112/Q112538/
 
 ## Q112538: Schubert: GPF or Insufficient Memory Error with Orchid Video
 
+{% raw %}
+
 	Article: Q112538
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -78,3 +80,5 @@ permalink: /kb/112/Q112538/
 	
 	=============================================================================
 	
+
+{% endraw %}

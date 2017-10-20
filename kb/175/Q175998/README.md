@@ -6,6 +6,8 @@ permalink: /kb/175/Q175998/
 
 ## Q175998: WD97: Reference Type Changed in Code, Not in Cross-reference
 
+{% raw %}
+
 	Article: Q175998
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -131,3 +133,5 @@ permalink: /kb/175/Q175998/
 	
 	=============================================================================
 	
+
+{% endraw %}

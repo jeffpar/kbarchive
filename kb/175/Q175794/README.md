@@ -6,6 +6,8 @@ permalink: /kb/175/Q175794/
 
 ## Q175794: SMSINST: ODBC Driver Path Is Incorrectly Set on Win95 Client
 
+{% raw %}
+
 	Article: Q175794
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.2
@@ -73,3 +75,5 @@ permalink: /kb/175/Q175794/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119686/
 
 ## Q119686: DRIVER.SYS Message: Please Insert a Diskette for Drive X:...
 
+{% raw %}
+
 	Article: Q119686
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -65,3 +67,5 @@ permalink: /kb/119/Q119686/
 	
 	=============================================================================
 	
+
+{% endraw %}

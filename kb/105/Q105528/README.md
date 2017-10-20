@@ -6,6 +6,8 @@ permalink: /kb/105/Q105528/
 
 ## Q105528: Mozart: Glossary Is on Top When Mozart Is Restored
 
+{% raw %}
+
 	Article: Q105528
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/105/Q105528/
 	
 	=============================================================================
 	
+
+{% endraw %}

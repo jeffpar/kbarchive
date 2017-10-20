@@ -6,6 +6,8 @@ permalink: /kb/171/Q171505/
 
 ## Q171505: FIX: VB5 IDE Disappears or IPFs When &quot;End&quot; Button Is Pressed
 
+{% raw %}
+
 	Article: Q171505
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -120,3 +122,5 @@ permalink: /kb/171/Q171505/
 	
 	=============================================================================
 	
+
+{% endraw %}

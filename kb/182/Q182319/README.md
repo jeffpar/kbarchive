@@ -6,6 +6,8 @@ permalink: /kb/182/Q182319/
 
 ## Q182319: XADM: Admin.exe Dr. Watsons While Importing an Active Newsgroup
 
+{% raw %}
+
 	Article: Q182319
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -79,3 +81,5 @@ permalink: /kb/182/Q182319/
 	
 	=============================================================================
 	
+
+{% endraw %}

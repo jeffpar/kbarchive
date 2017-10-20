@@ -6,6 +6,8 @@ permalink: /kb/064/Q64185/
 
 ## Q64185: PRINT USING Doesn't Work in UI Toolbox Window; Use FormatX&#36;
 
+{% raw %}
+
 	Article: Q64185
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -134,3 +136,5 @@ permalink: /kb/064/Q64185/
 	windowprint 1, "The formatted variable using the"
 	windowprint 1, "form '$0000.00':"
 	windowprint 1, x$
+
+{% endraw %}

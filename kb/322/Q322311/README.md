@@ -6,6 +6,8 @@ permalink: /kb/322/Q322311/
 
 ## Q322311: XADM: Users Cannot Move Messages with Attachments to Outlook
 
+{% raw %}
+
 	Article: Q322311
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -95,3 +97,5 @@ permalink: /kb/322/Q322311/
 	
 	=============================================================================
 	
+
+{% endraw %}

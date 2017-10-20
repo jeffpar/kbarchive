@@ -6,6 +6,8 @@ permalink: /kb/135/Q135168/
 
 ## Q135168: PCMCIA Disk Drive Not Available in Windows 95
 
+{% raw %}
+
 	Article: Q135168
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/135/Q135168/
 	
 	=============================================================================
 	
+
+{% endraw %}

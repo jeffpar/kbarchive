@@ -6,6 +6,8 @@ permalink: /kb/175/Q175055/
 
 ## Q175055: Cannot Use IPX/SPX with NetBIOS Support with Dial-Up Networking
 
+{% raw %}
+
 	Article: Q175055
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -94,3 +96,5 @@ permalink: /kb/175/Q175055/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/287/Q287650/
 
 ## Q287650: BUG: &quot;Error loading printer driver&quot; with Space in Printer Name
 
+{% raw %}
+
 	Article: Q287650
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -111,3 +113,5 @@ permalink: /kb/287/Q287650/
 	
 	=============================================================================
 	
+
+{% endraw %}

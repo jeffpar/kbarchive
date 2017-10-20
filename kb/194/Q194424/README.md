@@ -6,6 +6,8 @@ permalink: /kb/194/Q194424/
 
 ## Q194424: DHCP Server May Fail to Record Lease
 
+{% raw %}
+
 	Article: Q194424
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/194/Q194424/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138794/
 
 ## Q138794: Out of Memory Error Installing Windows NT 3.51 Service Pack 2
 
+{% raw %}
+
 	Article: Q138794
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP2,4.0
@@ -78,3 +80,5 @@ permalink: /kb/138/Q138794/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128964/
 
 ## Q128964: PC WSPlus: Mailbox Change Creates New Calendar Files
 
+{% raw %}
+
 	Article: Q128964
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -73,3 +75,5 @@ permalink: /kb/128/Q128964/
 	
 	=============================================================================
 	
+
+{% endraw %}

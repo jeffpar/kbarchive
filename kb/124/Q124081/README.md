@@ -6,6 +6,8 @@ permalink: /kb/124/Q124081/
 
 ## Q124081: Configuring Schedule Plus To Run Without a Postoffice
 
+{% raw %}
+
 	Article: Q124081
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/124/Q124081/
 	
 	=============================================================================
 	
+
+{% endraw %}

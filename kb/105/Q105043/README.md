@@ -6,6 +6,8 @@ permalink: /kb/105/Q105043/
 
 ## Q105043: Maximum Number of Bytes Read Using Low-Level Functions
 
+{% raw %}
+
 	Article: Q105043
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -57,3 +59,5 @@ permalink: /kb/105/Q105043/
 	
 	=============================================================================
 	
+
+{% endraw %}

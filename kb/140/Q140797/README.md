@@ -6,6 +6,8 @@ permalink: /kb/140/Q140797/
 
 ## Q140797: Streets 4.0: Scale Changes When Viewing Multiple Windows
 
+{% raw %}
+
 	Article: Q140797
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:4.0
@@ -41,3 +43,5 @@ permalink: /kb/140/Q140797/
 	
 	=============================================================================
 	
+
+{% endraw %}

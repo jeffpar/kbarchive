@@ -6,6 +6,8 @@ permalink: /kb/165/Q165971/
 
 ## Q165971: XADM: Error Message Applying Service Pack on Alpha Computer
 
+{% raw %}
+
 	Article: Q165971
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/165/Q165971/
 	
 	=============================================================================
 	
+
+{% endraw %}

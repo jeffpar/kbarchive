@@ -6,6 +6,8 @@ permalink: /kb/164/Q164214/
 
 ## Q164214: Distance Vector Routing Basics
 
+{% raw %}
+
 	Article: Q164214
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -90,3 +92,5 @@ permalink: /kb/164/Q164214/
 	
 	=============================================================================
 	
+
+{% endraw %}

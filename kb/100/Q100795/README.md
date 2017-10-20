@@ -6,6 +6,8 @@ permalink: /kb/100/Q100795/
 
 ## Q100795: MemMaker Err Msg: Bad Input Character (@)
 
+{% raw %}
+
 	Article: Q100795
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -58,3 +60,5 @@ permalink: /kb/100/Q100795/
 	
 	=============================================================================
 	
+
+{% endraw %}

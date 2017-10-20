@@ -6,6 +6,8 @@ permalink: /kb/193/Q193600/
 
 ## Q193600: Windows NT Load Balancing Service Setup Screen Is Slow to Load
 
+{% raw %}
+
 	Article: Q193600
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,4.0
@@ -52,3 +54,5 @@ permalink: /kb/193/Q193600/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186706/
 
 ## Q186706: XWEB: Edit E-mail Button Info Missing in Contact Help Link (?)
 
+{% raw %}
+
 	Article: Q186706
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -46,3 +48,5 @@ permalink: /kb/186/Q186706/
 	
 	=============================================================================
 	
+
+{% endraw %}

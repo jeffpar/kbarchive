@@ -6,6 +6,8 @@ permalink: /kb/182/Q182250/
 
 ## Q182250: Can't Start Multiple Nodes Simultaneously in MMC Snap-in
 
+{% raw %}
+
 	Article: Q182250
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -58,3 +60,5 @@ permalink: /kb/182/Q182250/
 	
 	=============================================================================
 	
+
+{% endraw %}

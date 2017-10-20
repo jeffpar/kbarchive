@@ -6,6 +6,8 @@ permalink: /kb/169/Q169417/
 
 ## Q169417: RAS Clients Cannot Access All Networks in an OSPF Network
 
+{% raw %}
+
 	Article: Q169417
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -64,3 +66,5 @@ permalink: /kb/169/Q169417/
 	
 	=============================================================================
 	
+
+{% endraw %}

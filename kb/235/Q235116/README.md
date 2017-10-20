@@ -6,6 +6,8 @@ permalink: /kb/235/Q235116/
 
 ## Q235116: XCLN: The Message Interface Has Returned an Unknown Error
 
+{% raw %}
+
 	Article: Q235116
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:95,98
@@ -74,3 +76,5 @@ permalink: /kb/235/Q235116/
 	
 	=============================================================================
 	
+
+{% endraw %}

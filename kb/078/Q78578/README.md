@@ -6,6 +6,8 @@ permalink: /kb/078/Q78578/
 
 ## Q78578: DRIVER.SYS Usage and Information
 
+{% raw %}
+
 	Article: Q78578
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -52,3 +54,5 @@ permalink: /kb/078/Q78578/
 	
 	=============================================================================
 	
+
+{% endraw %}

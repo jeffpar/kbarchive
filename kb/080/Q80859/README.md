@@ -6,6 +6,8 @@ permalink: /kb/080/Q80859/
 
 ## Q80859: Wordstar Err Msg: Application Has Violated System Integrity
 
+{% raw %}
+
 	Article: Q80859
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/080/Q80859/
 	
 	=============================================================================
 	
+
+{% endraw %}

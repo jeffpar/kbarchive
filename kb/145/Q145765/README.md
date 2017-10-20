@@ -6,6 +6,8 @@ permalink: /kb/145/Q145765/
 
 ## Q145765: Cannot Undock with PCMCIA Card in Databook PCMCIA Controller
 
+{% raw %}
+
 	Article: Q145765
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -48,3 +50,5 @@ permalink: /kb/145/Q145765/
 	
 	=============================================================================
 	
+
+{% endraw %}

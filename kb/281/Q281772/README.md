@@ -6,6 +6,8 @@ permalink: /kb/281/Q281772/
 
 ## Q281772: Simple Maps Are Not Mapped Correctly for User Group Mappings
 
+{% raw %}
+
 	Article: Q281772
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,2.0
@@ -92,3 +94,5 @@ permalink: /kb/281/Q281772/
 	
 	=============================================================================
 	
+
+{% endraw %}

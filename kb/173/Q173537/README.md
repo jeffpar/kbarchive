@@ -6,6 +6,8 @@ permalink: /kb/173/Q173537/
 
 ## Q173537: Compex PNP NE2000 Compatible NIC May Cause Event ID 7000
 
+{% raw %}
+
 	Article: Q173537
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/173/Q173537/
 	
 	=============================================================================
 	
+
+{% endraw %}

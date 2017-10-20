@@ -6,6 +6,8 @@ permalink: /kb/185/Q185916/
 
 ## Q185916: SMS: PCMCIA Network Card May Not Be Reported by Win95 Inventory
 
+{% raw %}
+
 	Article: Q185916
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -58,3 +60,5 @@ permalink: /kb/185/Q185916/
 	
 	=============================================================================
 	
+
+{% endraw %}

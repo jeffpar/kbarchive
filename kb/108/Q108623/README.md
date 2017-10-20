@@ -6,6 +6,8 @@ permalink: /kb/108/Q108623/
 
 ## Q108623: Forcing FoxPro Window to Always Remain on Top
 
+{% raw %}
+
 	Article: Q108623
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0
@@ -80,3 +82,5 @@ permalink: /kb/108/Q108623/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97041/
 
 ## Q97041: 32-Bit Disk Access Can Degrade Hard Drive Performance
 
+{% raw %}
+
 	Article: Q97041
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/097/Q97041/
 	
 	=============================================================================
 	
+
+{% endraw %}

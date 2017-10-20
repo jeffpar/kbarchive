@@ -6,6 +6,8 @@ permalink: /kb/226/Q226903/
 
 ## Q226903: SMS: Win2K Software Metering Server Always Creates New Profile
 
+{% raw %}
+
 	Article: Q226903
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -43,3 +45,5 @@ permalink: /kb/226/Q226903/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122983/
 
 ## Q122983: ScanDisk Does Not Check for Lowercase Characters in Filenames
 
+{% raw %}
+
 	Article: Q122983
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -55,3 +57,5 @@ permalink: /kb/122/Q122983/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/321/Q321020/
 
 ## Q321020: &quot;May Not Remove Local Logon Right&quot; Err Msg Editing User Rights
 
+{% raw %}
+
 	Article: Q321020
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -97,3 +99,5 @@ permalink: /kb/321/Q321020/
 	
 	=============================================================================
 	
+
+{% endraw %}

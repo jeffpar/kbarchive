@@ -6,6 +6,8 @@ permalink: /kb/243/Q243195/
 
 ## Q243195: Event ID 1034 for MSCS Shared Disk After Disk Replacement
 
+{% raw %}
+
 	Article: Q243195
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -585,3 +587,5 @@ permalink: /kb/243/Q243195/
 	
 	=============================================================================
 	
+
+{% endraw %}

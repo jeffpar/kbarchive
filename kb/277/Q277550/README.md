@@ -6,6 +6,8 @@ permalink: /kb/277/Q277550/
 
 ## Q277550: Cluster Service Attempts to Restart Resources
 
+{% raw %}
+
 	Article: Q277550
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -92,3 +94,5 @@ permalink: /kb/277/Q277550/
 	
 	=============================================================================
 	
+
+{% endraw %}

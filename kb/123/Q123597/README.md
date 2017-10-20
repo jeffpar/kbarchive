@@ -6,6 +6,8 @@ permalink: /kb/123/Q123597/
 
 ## Q123597: WinNT Err Msg: Error 614 Out of Buffers When Using RAS Script
 
+{% raw %}
+
 	Article: Q123597
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/123/Q123597/
 	
 	=============================================================================
 	
+
+{% endraw %}

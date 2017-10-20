@@ -6,6 +6,8 @@ permalink: /kb/074/Q74706/
 
 ## Q74706: PRB: NMAKE Does Not Parse Escape Character Correctly
 
+{% raw %}
+
 	Article: Q74706
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.11,1.12,1.13,1.2,1.21,1.3,1.4
@@ -103,3 +105,5 @@ permalink: /kb/074/Q74706/
 	
 	=============================================================================
 	
+
+{% endraw %}

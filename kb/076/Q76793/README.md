@@ -6,6 +6,8 @@ permalink: /kb/076/Q76793/
 
 ## Q76793: MS-DOS 5 Setup Screen Instructions are Unreadable
 
+{% raw %}
+
 	Article: Q76793
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -114,3 +116,5 @@ permalink: /kb/076/Q76793/
 	
 	=============================================================================
 	
+
+{% endraw %}

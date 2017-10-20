@@ -6,6 +6,8 @@ permalink: /kb/138/Q138972/
 
 ## Q138972: FIX: LNK4076: Invalid Incremental Status File
 
+{% raw %}
+
 	Article: Q138972
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/138/Q138972/
 	
 	=============================================================================
 	
+
+{% endraw %}

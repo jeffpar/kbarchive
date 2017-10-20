@@ -6,6 +6,8 @@ permalink: /kb/062/Q62202/
 
 ## Q62202: WHEREIS.BAS Problem Under MS-DOS 4.00 and 4.01
 
+{% raw %}
+
 	Article: Q62202
 	Product(s): See article
 	Version(s): 7.00
@@ -49,3 +51,5 @@ permalink: /kb/062/Q62202/
 	   END IF
 	
 	   SHELL "DIR " + StripPath$ + " > " + TempSpec$
+
+{% endraw %}

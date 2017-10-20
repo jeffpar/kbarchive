@@ -6,6 +6,8 @@ permalink: /kb/263/Q263898/
 
 ## Q263898: XCON: E. European Extended Char. Lost in T.61 Content Conversion
 
+{% raw %}
+
 	Article: Q263898
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -71,3 +73,5 @@ permalink: /kb/263/Q263898/
 	
 	=============================================================================
 	
+
+{% endraw %}

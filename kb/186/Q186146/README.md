@@ -6,6 +6,8 @@ permalink: /kb/186/Q186146/
 
 ## Q186146: Double-Clicking .reg File Will Not Add Extended ANSI Values
 
+{% raw %}
+
 	Article: Q186146
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/186/Q186146/
 	
 	=============================================================================
 	
+
+{% endraw %}

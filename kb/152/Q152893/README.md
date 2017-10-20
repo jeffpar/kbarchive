@@ -6,6 +6,8 @@ permalink: /kb/152/Q152893/
 
 ## Q152893: XADM: IS Causes High CPU Use and Drop in PF Performance
 
+{% raw %}
+
 	Article: Q152893
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/152/Q152893/
 	
 	=============================================================================
 	
+
+{% endraw %}

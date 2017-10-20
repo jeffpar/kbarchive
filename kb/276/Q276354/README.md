@@ -6,6 +6,8 @@ permalink: /kb/276/Q276354/
 
 ## Q276354: Access Violation in the Metabase Causes Deadlock in WAM
 
+{% raw %}
+
 	Article: Q276354
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/276/Q276354/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41147/
 
 ## Q41147: Getting Help on NULL CONST String Hangs QB 4.50 Editor
 
+{% raw %}
+
 	Article: Q41147
 	Product(s): See article
 	Version(s): 4.50
@@ -28,3 +30,5 @@ permalink: /kb/041/Q41147/
 	Position the cursor on anything in the line except CONST and press the
 	F1 key to invoke the QB Advisor Help. The computer now hangs and must
 	be restarted with CTRL+ALT+DELETE.
+
+{% endraw %}

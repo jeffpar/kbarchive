@@ -6,6 +6,8 @@ permalink: /kb/182/Q182781/
 
 ## Q182781: Client Connections to Multihomed Server Not Load Balanced
 
+{% raw %}
+
 	Article: Q182781
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT;4.0
@@ -80,3 +82,5 @@ permalink: /kb/182/Q182781/
 	
 	=============================================================================
 	
+
+{% endraw %}

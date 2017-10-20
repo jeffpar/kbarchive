@@ -6,6 +6,8 @@ permalink: /kb/143/Q143375/
 
 ## Q143375: XADM: Multiple Messages Received by Exchange Client
 
+{% raw %}
+
 	Article: Q143375
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/143/Q143375/
 	
 	=============================================================================
 	
+
+{% endraw %}

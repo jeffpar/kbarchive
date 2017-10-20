@@ -6,6 +6,8 @@ permalink: /kb/167/Q167214/
 
 ## Q167214: WD97: Heading Styles Missing From Style List
 
+{% raw %}
+
 	Article: Q167214
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -90,3 +92,5 @@ permalink: /kb/167/Q167214/
 	
 	=============================================================================
 	
+
+{% endraw %}

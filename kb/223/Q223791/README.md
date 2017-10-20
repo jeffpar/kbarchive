@@ -6,6 +6,8 @@ permalink: /kb/223/Q223791/
 
 ## Q223791: Spooler Service LPR Monitor Leaks Memory with Each Event 2004
 
+{% raw %}
+
 	Article: Q223791
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/223/Q223791/
 	
 	=============================================================================
 	
+
+{% endraw %}

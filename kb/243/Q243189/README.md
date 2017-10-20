@@ -6,6 +6,8 @@ permalink: /kb/243/Q243189/
 
 ## Q243189: SMS: %SMS_LOCAL_DIR%&#92;MS&#92;CORE&#92;BIN Added to Path Multiple Times
 
+{% raw %}
+
 	Article: Q243189
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -87,3 +89,5 @@ permalink: /kb/243/Q243189/
 	
 	=============================================================================
 	
+
+{% endraw %}

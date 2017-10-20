@@ -6,6 +6,8 @@ permalink: /kb/043/Q43998/
 
 ## Q43998: QuickC Internal Compiler Error: gencode.c, line 389
 
+{% raw %}
+
 	Article: Q43998
 	Product(s): See article
 	Version(s): 2.00
@@ -54,3 +56,5 @@ permalink: /kb/043/Q43998/
 	Microsoft has confirmed this to be a problem in Version 2.00 We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

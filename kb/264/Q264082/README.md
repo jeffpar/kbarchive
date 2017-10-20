@@ -6,6 +6,8 @@ permalink: /kb/264/Q264082/
 
 ## Q264082: SNA Client or DLS Cannot Connect as Guest User on Windows 2000
 
+{% raw %}
+
 	Article: Q264082
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,SP1
@@ -115,3 +117,5 @@ permalink: /kb/264/Q264082/
 	
 	=============================================================================
 	
+
+{% endraw %}

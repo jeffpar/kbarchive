@@ -6,6 +6,8 @@ permalink: /kb/078/Q78242/
 
 ## Q78242: Help Does Not Support Side-by-Side Paragraphs
 
+{% raw %}
+
 	Article: Q78242
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -43,3 +45,5 @@ permalink: /kb/078/Q78242/
 	
 	=============================================================================
 	
+
+{% endraw %}

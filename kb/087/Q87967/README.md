@@ -6,6 +6,8 @@ permalink: /kb/087/Q87967/
 
 ## Q87967: FIX: CVW 4.0 Does Not Work with Dynamically Loaded DLL
 
+{% raw %}
+
 	Article: Q87967
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01
@@ -70,3 +72,5 @@ permalink: /kb/087/Q87967/
 	
 	=============================================================================
 	
+
+{% endraw %}

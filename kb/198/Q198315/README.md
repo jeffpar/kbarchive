@@ -6,6 +6,8 @@ permalink: /kb/198/Q198315/
 
 ## Q198315: WD97: Word Assist Tips and Tips Back/Next Buttons Not Available
 
+{% raw %}
+
 	Article: Q198315
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/198/Q198315/
 	
 	=============================================================================
 	
+
+{% endraw %}

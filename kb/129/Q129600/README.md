@@ -6,6 +6,8 @@ permalink: /kb/129/Q129600/
 
 ## Q129600: Large Zeroing Operations Cause Systems To Appear Hung
 
+{% raw %}
+
 	Article: Q129600
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/129/Q129600/
 	
 	=============================================================================
 	
+
+{% endraw %}

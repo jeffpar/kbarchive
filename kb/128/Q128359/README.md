@@ -6,6 +6,8 @@ permalink: /kb/128/Q128359/
 
 ## Q128359: PC Adm: Err Msg: Error File Not Accessible
 
+{% raw %}
+
 	Article: Q128359
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -61,3 +63,5 @@ permalink: /kb/128/Q128359/
 	
 	=============================================================================
 	
+
+{% endraw %}

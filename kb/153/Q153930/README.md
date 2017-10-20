@@ -6,6 +6,8 @@ permalink: /kb/153/Q153930/
 
 ## Q153930: ADT95: &quot;Item Not Found In This Collection&quot; with ADT Setup Wizard
 
+{% raw %}
+
 	Article: Q153930
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -78,3 +80,5 @@ permalink: /kb/153/Q153930/
 	
 	=============================================================================
 	
+
+{% endraw %}

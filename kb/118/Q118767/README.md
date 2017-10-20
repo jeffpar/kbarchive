@@ -6,6 +6,8 @@ permalink: /kb/118/Q118767/
 
 ## Q118767: PRB: Custom Control or Library Not Working with VB 4.0
 
+{% raw %}
+
 	Article: Q118767
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/118/Q118767/
 	
 	=============================================================================
 	
+
+{% endraw %}

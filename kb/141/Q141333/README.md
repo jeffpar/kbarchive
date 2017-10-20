@@ -6,6 +6,8 @@ permalink: /kb/141/Q141333/
 
 ## Q141333: VSWAP Demos Multiple-View Switching in SDI
 
+{% raw %}
+
 	Article: Q141333
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,1.52
@@ -164,3 +166,5 @@ permalink: /kb/141/Q141333/
 	
 	=============================================================================
 	
+
+{% endraw %}

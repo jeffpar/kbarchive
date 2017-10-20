@@ -6,6 +6,8 @@ permalink: /kb/140/Q140433/
 
 ## Q140433: ScanDisk Err Msg: This Drive Was Compressed By a Program...
 
+{% raw %}
+
 	Article: Q140433
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/140/Q140433/
 	
 	=============================================================================
 	
+
+{% endraw %}

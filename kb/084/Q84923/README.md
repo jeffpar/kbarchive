@@ -6,6 +6,8 @@ permalink: /kb/084/Q84923/
 
 ## Q84923: Vector Fonts Don't Print When Printing TrueType As Graphics
 
+{% raw %}
+
 	Article: Q84923
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -76,3 +78,5 @@ permalink: /kb/084/Q84923/
 	
 	=============================================================================
 	
+
+{% endraw %}

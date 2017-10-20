@@ -6,6 +6,8 @@ permalink: /kb/176/Q176577/
 
 ## Q176577: Flight Simulator 98: Description of Aircraft/Adventures Converte
 
+{% raw %}
+
 	Article: Q176577
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -206,3 +208,5 @@ permalink: /kb/176/Q176577/
 	
 	=============================================================================
 	
+
+{% endraw %}

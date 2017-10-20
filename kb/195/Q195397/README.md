@@ -6,6 +6,8 @@ permalink: /kb/195/Q195397/
 
 ## Q195397: XCLN: Attachments with Long Filenames Crash Client
 
+{% raw %}
+
 	Article: Q195397
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0;WINDOWS:5.0;WinNT:5.0
@@ -112,3 +114,5 @@ permalink: /kb/195/Q195397/
 	
 	=============================================================================
 	
+
+{% endraw %}

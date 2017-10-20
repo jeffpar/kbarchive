@@ -6,6 +6,8 @@ permalink: /kb/230/Q230522/
 
 ## Q230522: XCLN: X.400 Address Not Displayed in Message Body
 
+{% raw %}
+
 	Article: Q230522
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -76,3 +78,5 @@ permalink: /kb/230/Q230522/
 	
 	=============================================================================
 	
+
+{% endraw %}

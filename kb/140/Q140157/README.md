@@ -6,6 +6,8 @@ permalink: /kb/140/Q140157/
 
 ## Q140157: How to Right-Click by Using the Keyboard in Visual FoxPro
 
+{% raw %}
+
 	Article: Q140157
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -71,3 +73,5 @@ permalink: /kb/140/Q140157/
 	
 	=============================================================================
 	
+
+{% endraw %}

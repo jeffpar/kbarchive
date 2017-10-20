@@ -6,6 +6,8 @@ permalink: /kb/139/Q139477/
 
 ## Q139477: FIX: Insufficient Disk Space Causes Visual C++ to Fail
 
+{% raw %}
+
 	Article: Q139477
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -75,3 +77,5 @@ permalink: /kb/139/Q139477/
 	
 	=============================================================================
 	
+
+{% endraw %}

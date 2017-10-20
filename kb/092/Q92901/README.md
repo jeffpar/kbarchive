@@ -6,6 +6,8 @@ permalink: /kb/092/Q92901/
 
 ## Q92901: Mouse Problems with Swap File and LRU Settings
 
+{% raw %}
+
 	Article: Q92901
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -97,3 +99,5 @@ permalink: /kb/092/Q92901/
 	
 	=============================================================================
 	
+
+{% endraw %}

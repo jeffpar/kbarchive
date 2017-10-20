@@ -6,6 +6,8 @@ permalink: /kb/183/Q183218/
 
 ## Q183218: HOWTO: Subclass a Dialog Item in ATL
 
+{% raw %}
+
 	Article: Q183218
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0,4.0,4.1,4.2,5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/183/Q183218/
 	
 	=============================================================================
 	
+
+{% endraw %}

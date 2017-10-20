@@ -6,6 +6,8 @@ permalink: /kb/163/Q163938/
 
 ## Q163938: Inserting Multifunction PC Card May Hang Computer
 
+{% raw %}
+
 	Article: Q163938
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -61,3 +63,5 @@ permalink: /kb/163/Q163938/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135148/
 
 ## Q135148: Phone Dialer Prompts to Pick Up Handset Before Dialing Is Done
 
+{% raw %}
+
 	Article: Q135148
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/135/Q135148/
 	
 	=============================================================================
 	
+
+{% endraw %}

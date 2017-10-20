@@ -6,6 +6,8 @@ permalink: /kb/098/Q98178/
 
 ## Q98178: DoubleSpace Setup Hangs During First Reboot
 
+{% raw %}
+
 	Article: Q98178
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -213,3 +215,5 @@ permalink: /kb/098/Q98178/
 	
 	=============================================================================
 	
+
+{% endraw %}

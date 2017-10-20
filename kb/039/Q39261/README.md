@@ -6,6 +6,8 @@ permalink: /kb/039/Q39261/
 
 ## Q39261: Don't Mix .OBJ or .EXE Modules Compiled in Different Versions
 
+{% raw %}
+
 	Article: Q39261
 	Product(s): See article
 	Version(s): 1.00 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -26,3 +28,5 @@ permalink: /kb/039/Q39261/
 	5.35 and 5.36 for MS-DOS; Microsoft BASIC Compiler 6.00 and 6.00b for
 	MS-DOS and MS OS/2; and Microsoft BASIC Professional Development
 	System (PDS) versions 7.00 and 7.10 for MS-DOS and MS OS/2.
+
+{% endraw %}

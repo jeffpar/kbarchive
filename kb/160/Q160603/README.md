@@ -6,6 +6,8 @@ permalink: /kb/160/Q160603/
 
 ## Q160603: No Output from DBMON Using OutputDebugString While Debugging
 
+{% raw %}
+
 	Article: Q160603
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/160/Q160603/
 	
 	=============================================================================
 	
+
+{% endraw %}

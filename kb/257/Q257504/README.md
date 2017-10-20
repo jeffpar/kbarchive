@@ -6,6 +6,8 @@ permalink: /kb/257/Q257504/
 
 ## Q257504: Errors Applying Permissions with Security Configuration Editor
 
+{% raw %}
+
 	Article: Q257504
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0; winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/257/Q257504/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155963/
 
 ## Q155963: WD97: Fax Wizard Sends Cover Sheets Before Form Letters
 
+{% raw %}
+
 	Article: Q155963
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/155/Q155963/
 	
 	=============================================================================
 	
+
+{% endraw %}

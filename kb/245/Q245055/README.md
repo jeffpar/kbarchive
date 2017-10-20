@@ -6,6 +6,8 @@ permalink: /kb/245/Q245055/
 
 ## Q245055: Streets and Trips: How to Import Outlook Express Contacts
 
+{% raw %}
+
 	Article: Q245055
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:; :
@@ -70,3 +72,5 @@ permalink: /kb/245/Q245055/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99298/
 
 ## Q99298: LMSFM Does Not Support Sharing Info on CD-ROM
 
+{% raw %}
+
 	Article: Q99298
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/099/Q99298/
 	
 	=============================================================================
 	
+
+{% endraw %}

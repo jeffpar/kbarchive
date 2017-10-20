@@ -6,6 +6,8 @@ permalink: /kb/123/Q123984/
 
 ## Q123984: DNS Lookup Does not Check List of Domain Suffixes
 
+{% raw %}
+
 	Article: Q123984
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -63,3 +65,5 @@ permalink: /kb/123/Q123984/
 	
 	=============================================================================
 	
+
+{% endraw %}

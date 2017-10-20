@@ -6,6 +6,8 @@ permalink: /kb/177/Q177101/
 
 ## Q177101: FIX: Modal Dialogs in MFC Regular DLL Cause ASSERT in AfxWndProc
 
+{% raw %}
+
 	Article: Q177101
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -119,3 +121,5 @@ permalink: /kb/177/Q177101/
 	
 	=============================================================================
 	
+
+{% endraw %}

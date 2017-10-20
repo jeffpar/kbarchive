@@ -6,6 +6,8 @@ permalink: /kb/043/Q43900/
 
 ## Q43900: VIEW SCREEN Parameters Passed through CHAIN Using BRUNxx.EXE
 
+{% raw %}
+
 	Article: Q43900
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -78,3 +80,5 @@ permalink: /kb/043/Q43900/
 	   PUT (225 + i, 50 + i), C#  'This will generate the error as soon as
 	NEXT i                               'the box leaves the bottom of the views
 	END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155649/
 
 ## Q155649: Monster Truck: Playing Music from a Music CD While Racing
 
+{% raw %}
+
 	Article: Q155649
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/155/Q155649/
 	
 	=============================================================================
 	
+
+{% endraw %}

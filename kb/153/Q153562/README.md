@@ -6,6 +6,8 @@ permalink: /kb/153/Q153562/
 
 ## Q153562: SMS: Close Button Fails in Windows NT Diagnostics
 
+{% raw %}
+
 	Article: Q153562
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -46,3 +48,5 @@ permalink: /kb/153/Q153562/
 	
 	=============================================================================
 	
+
+{% endraw %}

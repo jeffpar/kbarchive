@@ -6,6 +6,8 @@ permalink: /kb/134/Q134796/
 
 ## Q134796: App Hangs Printing Directly to Port without Printer Connected
 
+{% raw %}
+
 	Article: Q134796
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -51,3 +53,5 @@ permalink: /kb/134/Q134796/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89156/
 
 ## Q89156: PRB: &quot;File Access Denied&quot; Error Message When Writing to File
 
+{% raw %}
+
 	Article: Q89156
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.50x 2.60 2.60a | 2.50x 2.
@@ -71,3 +73,5 @@ permalink: /kb/089/Q89156/
 	
 	=============================================================================
 	
+
+{% endraw %}

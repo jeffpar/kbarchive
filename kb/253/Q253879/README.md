@@ -6,6 +6,8 @@ permalink: /kb/253/Q253879/
 
 ## Q253879: BUG: Forms Cannot Find Class Library When Calling .Exe File
 
+{% raw %}
+
 	Article: Q253879
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -335,3 +337,5 @@ permalink: /kb/253/Q253879/
 	
 	=============================================================================
 	
+
+{% endraw %}

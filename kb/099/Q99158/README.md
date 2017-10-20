@@ -6,6 +6,8 @@ permalink: /kb/099/Q99158/
 
 ## Q99158: Description of Maxwell's Maniac
 
+{% raw %}
+
 	Article: Q99158
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -89,3 +91,5 @@ permalink: /kb/099/Q99158/
 	
 	=============================================================================
 	
+
+{% endraw %}

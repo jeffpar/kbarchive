@@ -6,6 +6,8 @@ permalink: /kb/189/Q189188/
 
 ## Q189188: SMS: Miperf.bat - Add MIF File Counters to Performance Monitor
 
+{% raw %}
+
 	Article: Q189188
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -94,3 +96,5 @@ permalink: /kb/189/Q189188/
 	
 	=============================================================================
 	
+
+{% endraw %}

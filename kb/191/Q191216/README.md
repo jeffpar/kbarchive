@@ -6,6 +6,8 @@ permalink: /kb/191/Q191216/
 
 ## Q191216: DOC: CallByName Documentation Error
 
+{% raw %}
+
 	Article: Q191216
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -40,3 +42,5 @@ permalink: /kb/191/Q191216/
 	
 	=============================================================================
 	
+
+{% endraw %}

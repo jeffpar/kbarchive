@@ -6,6 +6,8 @@ permalink: /kb/179/Q179140/
 
 ## Q179140: BUG: &quot;Too Many Local, Nonstatic Variables&quot; Error Message
 
+{% raw %}
+
 	Article: Q179140
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0;
@@ -172,3 +174,5 @@ permalink: /kb/179/Q179140/
 	
 	=============================================================================
 	
+
+{% endraw %}

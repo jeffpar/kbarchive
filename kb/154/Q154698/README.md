@@ -6,6 +6,8 @@ permalink: /kb/154/Q154698/
 
 ## Q154698: WinNT &amp; Microsoft Exchange 4.0 Takes Long Time to Shut Down
 
+{% raw %}
+
 	Article: Q154698
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -45,3 +47,5 @@ permalink: /kb/154/Q154698/
 	
 	=============================================================================
 	
+
+{% endraw %}

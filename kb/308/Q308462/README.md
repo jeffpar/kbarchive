@@ -6,6 +6,8 @@ permalink: /kb/308/Q308462/
 
 ## Q308462: MCSE Readiness Review Exam 70-228 Microsoft SQL Server 2000 Admi
 
+{% raw %}
+
 	Article: Q308462
 	Product(s): Microsoft Press
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/308/Q308462/
 	
 	=============================================================================
 	
+
+{% endraw %}

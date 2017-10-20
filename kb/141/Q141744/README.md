@@ -6,6 +6,8 @@ permalink: /kb/141/Q141744/
 
 ## Q141744: Mac Dangerous Creatures: Files Installed During Installation
 
+{% raw %}
+
 	Article: Q141744
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -64,3 +66,5 @@ permalink: /kb/141/Q141744/
 	
 	=============================================================================
 	
+
+{% endraw %}

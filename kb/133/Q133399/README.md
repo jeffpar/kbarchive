@@ -6,6 +6,8 @@ permalink: /kb/133/Q133399/
 
 ## Q133399: How to Clear All Schedule+ Data
 
+{% raw %}
+
 	Article: Q133399
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -61,3 +63,5 @@ permalink: /kb/133/Q133399/
 	
 	=============================================================================
 	
+
+{% endraw %}

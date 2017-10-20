@@ -6,6 +6,8 @@ permalink: /kb/189/Q189755/
 
 ## Q189755: XADM: French Admin Reports Blank Password on Newly Created Windo
 
+{% raw %}
+
 	Article: Q189755
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -92,3 +94,5 @@ permalink: /kb/189/Q189755/
 	
 	=============================================================================
 	
+
+{% endraw %}

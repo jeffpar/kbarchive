@@ -6,6 +6,8 @@ permalink: /kb/177/Q177260/
 
 ## Q177260: BUG: Execution of REPORT FORM Command Sets Focus to Application
 
+{% raw %}
+
 	Article: Q177260
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -136,3 +138,5 @@ permalink: /kb/177/Q177260/
 	
 	=============================================================================
 	
+
+{% endraw %}

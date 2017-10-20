@@ -6,6 +6,8 @@ permalink: /kb/128/Q128891/
 
 ## Q128891: Project Info Dialog
 
+{% raw %}
+
 	Article: Q128891
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -79,3 +81,5 @@ permalink: /kb/128/Q128891/
 	
 	=============================================================================
 	
+
+{% endraw %}

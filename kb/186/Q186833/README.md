@@ -6,6 +6,8 @@ permalink: /kb/186/Q186833/
 
 ## Q186833: XADM: Internet Messages with Attachments Have Wrong Extension
 
+{% raw %}
+
 	Article: Q186833
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -62,3 +64,5 @@ permalink: /kb/186/Q186833/
 	
 	=============================================================================
 	
+
+{% endraw %}

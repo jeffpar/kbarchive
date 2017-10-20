@@ -6,6 +6,8 @@ permalink: /kb/128/Q128606/
 
 ## Q128606: Network Connectivity Problems with NetFlex-L ENET/PCI NIC
 
+{% raw %}
+
 	Article: Q128606
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/128/Q128606/
 	
 	=============================================================================
 	
+
+{% endraw %}

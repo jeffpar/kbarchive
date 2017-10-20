@@ -6,6 +6,8 @@ permalink: /kb/309/Q309685/
 
 ## Q309685: XCON: The Internet Mail Service Stops in ConnectToNextMXHost
 
+{% raw %}
+
 	Article: Q309685
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -102,3 +104,5 @@ permalink: /kb/309/Q309685/
 	
 	=============================================================================
 	
+
+{% endraw %}

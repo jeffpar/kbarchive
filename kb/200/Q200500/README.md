@@ -6,6 +6,8 @@ permalink: /kb/200/Q200500/
 
 ## Q200500: XADM: Move Server Stops When It Detects Duplicate Names
 
+{% raw %}
+
 	Article: Q200500
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/200/Q200500/
 	
 	=============================================================================
 	
+
+{% endraw %}

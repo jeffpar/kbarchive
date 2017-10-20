@@ -6,6 +6,8 @@ permalink: /kb/128/Q128829/
 
 ## Q128829: Mac Wkst: Performance Problem When Use ...Recently Used Items
 
+{% raw %}
+
 	Article: Q128829
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1,3.2
@@ -62,3 +64,5 @@ permalink: /kb/128/Q128829/
 	
 	=============================================================================
 	
+
+{% endraw %}

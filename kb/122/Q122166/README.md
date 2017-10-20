@@ -6,6 +6,8 @@ permalink: /kb/122/Q122166/
 
 ## Q122166: InfoMover PCMCIA Card in AST Laptop Fails to Work Under WFWG
 
+{% raw %}
+
 	Article: Q122166
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/122/Q122166/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186809/
 
 ## Q186809: Err Msg: HTTP Error 405, 405 Method Not Allowed
 
+{% raw %}
+
 	Article: Q186809
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -128,3 +130,5 @@ permalink: /kb/186/Q186809/
 	
 	=============================================================================
 	
+
+{% endraw %}

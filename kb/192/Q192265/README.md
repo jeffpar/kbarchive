@@ -6,6 +6,8 @@ permalink: /kb/192/Q192265/
 
 ## Q192265: Winlogon Leaks Because of SMTPSVC Performance Counters
 
+{% raw %}
+
 	Article: Q192265
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/192/Q192265/
 	
 	=============================================================================
 	
+
+{% endraw %}

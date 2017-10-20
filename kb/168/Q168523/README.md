@@ -6,6 +6,8 @@ permalink: /kb/168/Q168523/
 
 ## Q168523: FIX: Report Fails When Printing Under Windows NT 4.0
 
+{% raw %}
+
 	Article: Q168523
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -77,3 +79,5 @@ permalink: /kb/168/Q168523/
 	
 	=============================================================================
 	
+
+{% endraw %}

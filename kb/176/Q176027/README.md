@@ -6,6 +6,8 @@ permalink: /kb/176/Q176027/
 
 ## Q176027: Event ID 2026 Logged by FPNW Server
 
+{% raw %}
+
 	Article: Q176027
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -74,3 +76,5 @@ permalink: /kb/176/Q176027/
 	
 	=============================================================================
 	
+
+{% endraw %}

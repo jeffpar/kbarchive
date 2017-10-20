@@ -6,6 +6,8 @@ permalink: /kb/039/Q39235/
 
 ## Q39235: Declaring a Communal Variable of a Record Type
 
+{% raw %}
+
 	Article: Q39235
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -92,3 +94,5 @@ permalink: /kb/039/Q39235/
 	
 	=============================================================================
 	
+
+{% endraw %}

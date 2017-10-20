@@ -6,6 +6,8 @@ permalink: /kb/096/Q96167/
 
 ## Q96167: DoubleSpace Identifies Windows 3.1 in Standard Mode as Shell
 
+{% raw %}
+
 	Article: Q96167
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22; WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/096/Q96167/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117865/
 
 ## Q117865: DOCERR: Control and Status Word Missing Abbreviation Info
 
+{% raw %}
+
 	Article: Q117865
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.11
@@ -102,3 +104,5 @@ permalink: /kb/117/Q117865/
 	
 	=============================================================================
 	
+
+{% endraw %}

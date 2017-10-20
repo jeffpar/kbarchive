@@ -6,6 +6,8 @@ permalink: /kb/189/Q189998/
 
 ## Q189998: BUG: Data Environment: MSHFlexGrid Rebinding Data
 
+{% raw %}
+
 	Article: Q189998
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -118,3 +120,5 @@ permalink: /kb/189/Q189998/
 	
 	=============================================================================
 	
+
+{% endraw %}

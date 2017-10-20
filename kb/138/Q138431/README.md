@@ -6,6 +6,8 @@ permalink: /kb/138/Q138431/
 
 ## Q138431: System Policy Custom Desktop Icons Not Downloaded
 
+{% raw %}
+
 	Article: Q138431
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -76,3 +78,5 @@ permalink: /kb/138/Q138431/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98407/
 
 ## Q98407: How DoubleSpace Uses Sector Allocation
 
+{% raw %}
+
 	Article: Q98407
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22; WINDOWS:95
@@ -72,3 +74,5 @@ permalink: /kb/098/Q98407/
 	
 	=============================================================================
 	
+
+{% endraw %}

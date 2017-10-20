@@ -6,6 +6,8 @@ permalink: /kb/065/Q65447/
 
 ## Q65447: NetWare/286 (and Earlier) Trustee Rights with Windows
 
+{% raw %}
+
 	Article: Q65447
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -80,3 +82,5 @@ permalink: /kb/065/Q65447/
 	
 	=============================================================================
 	
+
+{% endraw %}

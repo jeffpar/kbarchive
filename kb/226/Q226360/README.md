@@ -6,6 +6,8 @@ permalink: /kb/226/Q226360/
 
 ## Q226360: Incorrect Time Format When Using HTMLA Web Administration Forms
 
+{% raw %}
+
 	Article: Q226360
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -67,3 +69,5 @@ permalink: /kb/226/Q226360/
 	
 	=============================================================================
 	
+
+{% endraw %}

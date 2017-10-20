@@ -6,6 +6,8 @@ permalink: /kb/065/Q65170/
 
 ## Q65170: Problems with Zenith 286 Desktop Systems with 84-Key Keyboards
 
+{% raw %}
+
 	Article: Q65170
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/065/Q65170/
 	
 	=============================================================================
 	
+
+{% endraw %}

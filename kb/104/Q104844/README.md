@@ -6,6 +6,8 @@ permalink: /kb/104/Q104844/
 
 ## Q104844: Changes to Windows NT Driver Library: Storage
 
+{% raw %}
+
 	Article: Q104844
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -146,3 +148,5 @@ permalink: /kb/104/Q104844/
 	
 	=============================================================================
 	
+
+{% endraw %}

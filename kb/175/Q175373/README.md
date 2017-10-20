@@ -6,6 +6,8 @@ permalink: /kb/175/Q175373/
 
 ## Q175373: Solar Err Msg: MMTASK Caused an Invalid Page Fault in Module...
 
+{% raw %}
+
 	Article: Q175373
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -193,3 +195,5 @@ permalink: /kb/175/Q175373/
 	
 	=============================================================================
 	
+
+{% endraw %}

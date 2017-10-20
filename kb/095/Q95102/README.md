@@ -6,6 +6,8 @@ permalink: /kb/095/Q95102/
 
 ## Q95102: MS-DOS: How to Combine All Logical Drives into One C Drive
 
+{% raw %}
+
 	Article: Q95102
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -99,3 +101,5 @@ permalink: /kb/095/Q95102/
 	
 	=============================================================================
 	
+
+{% endraw %}

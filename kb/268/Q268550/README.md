@@ -6,6 +6,8 @@ permalink: /kb/268/Q268550/
 
 ## Q268550: HOWTO: Use DCOMCNFG for a VB DCOM Client/Server Application
 
+{% raw %}
+
 	Article: Q268550
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -412,3 +414,5 @@ permalink: /kb/268/Q268550/
 	
 	=============================================================================
 	
+
+{% endraw %}

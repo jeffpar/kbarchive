@@ -6,6 +6,8 @@ permalink: /kb/215/Q215505/
 
 ## Q215505: XFOR: Error 14 While Running Import in MS Mail
 
+{% raw %}
+
 	Article: Q215505
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -119,3 +121,5 @@ permalink: /kb/215/Q215505/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97738/
 
 ## Q97738: Using US-Int'l Keyboard Layout to Type Accented Characters
 
+{% raw %}
+
 	Article: Q97738
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -151,3 +153,5 @@ permalink: /kb/097/Q97738/
 	
 	=============================================================================
 	
+
+{% endraw %}

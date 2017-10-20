@@ -6,6 +6,8 @@ permalink: /kb/276/Q276470/
 
 ## Q276470: Dynamically Defined LUs Show Pending Status After PU Recycled
 
+{% raw %}
+
 	Article: Q276470
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -87,3 +89,5 @@ permalink: /kb/276/Q276470/
 	
 	=============================================================================
 	
+
+{% endraw %}

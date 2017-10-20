@@ -6,6 +6,8 @@ permalink: /kb/113/Q113171/
 
 ## Q113171: PRB: Setup Wizard: Folder Is Empty or Folder Does Not Exist
 
+{% raw %}
+
 	Article: Q113171
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0b
@@ -73,3 +75,5 @@ permalink: /kb/113/Q113171/
 	
 	=============================================================================
 	
+
+{% endraw %}

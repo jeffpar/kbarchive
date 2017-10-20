@@ -6,6 +6,8 @@ permalink: /kb/259/Q259399/
 
 ## Q259399: XFOR: Cannot Send E-Mail from Notes to Exchange Server
 
+{% raw %}
+
 	Article: Q259399
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/259/Q259399/
 	
 	=============================================================================
 	
+
+{% endraw %}

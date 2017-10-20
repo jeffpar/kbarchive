@@ -6,6 +6,8 @@ permalink: /kb/119/Q119004/
 
 ## Q119004: WinNT 3.5 RAS Compression Lost If Linked to Older RAS Version
 
+{% raw %}
+
 	Article: Q119004
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11 3.50 3.51
@@ -129,3 +131,5 @@ permalink: /kb/119/Q119004/
 	
 	=============================================================================
 	
+
+{% endraw %}

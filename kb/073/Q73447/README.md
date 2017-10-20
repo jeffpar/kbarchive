@@ -6,6 +6,8 @@ permalink: /kb/073/Q73447/
 
 ## Q73447: MS-DOS 4.0 Redirector Needed When Upgrading PCSA Networks
 
+{% raw %}
+
 	Article: Q73447
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -53,3 +55,5 @@ permalink: /kb/073/Q73447/
 	
 	=============================================================================
 	
+
+{% endraw %}

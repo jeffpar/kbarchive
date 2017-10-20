@@ -6,6 +6,8 @@ permalink: /kb/087/Q87929/
 
 ## Q87929: PRB: CTRL+BREAK, CTRL+ALT+SYSRQ, CTRL+C Do Not Return Control
 
+{% raw %}
+
 	Article: Q87929
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.05,4.1
@@ -63,3 +65,5 @@ permalink: /kb/087/Q87929/
 	
 	=============================================================================
 	
+
+{% endraw %}

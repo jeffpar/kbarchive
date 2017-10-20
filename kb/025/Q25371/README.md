@@ -6,6 +6,8 @@ permalink: /kb/025/Q25371/
 
 ## Q25371: Underlining Spaces in Microsoft Windows Write
 
+{% raw %}
+
 	Article: Q25371
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.x,2.x,3.0,3.0a,3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/025/Q25371/
 	
 	=============================================================================
 	
+
+{% endraw %}

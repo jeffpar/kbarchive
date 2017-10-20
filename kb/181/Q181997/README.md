@@ -6,6 +6,8 @@ permalink: /kb/181/Q181997/
 
 ## Q181997: How SNA Server Operates w/ NetWare When Configured in NDS Mode
 
+{% raw %}
+
 	Article: Q181997
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
@@ -239,3 +241,5 @@ permalink: /kb/181/Q181997/
 	
 	=============================================================================
 	
+
+{% endraw %}

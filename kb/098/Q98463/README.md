@@ -6,6 +6,8 @@ permalink: /kb/098/Q98463/
 
 ## Q98463: Set PROTOCOL.INI Params for DLC Protocol 3270 Emulation
 
+{% raw %}
+
 	Article: Q98463
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/098/Q98463/
 	
 	=============================================================================
 	
+
+{% endraw %}

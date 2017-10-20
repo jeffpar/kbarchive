@@ -6,6 +6,8 @@ permalink: /kb/137/Q137876/
 
 ## Q137876: PPT7: Saving as PowerPoint 4.0 Presentation Can Lose OLE Objects
 
+{% raw %}
+
 	Article: Q137876
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -71,3 +73,5 @@ permalink: /kb/137/Q137876/
 	
 	=============================================================================
 	
+
+{% endraw %}

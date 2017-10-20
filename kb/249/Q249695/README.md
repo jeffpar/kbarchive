@@ -6,6 +6,8 @@ permalink: /kb/249/Q249695/
 
 ## Q249695: Encarta 2000: How to Install Entire CD-ROM or DVD-ROM Contents t
 
+{% raw %}
+
 	Article: Q249695
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/249/Q249695/
 	
 	=============================================================================
 	
+
+{% endraw %}

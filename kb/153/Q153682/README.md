@@ -6,6 +6,8 @@ permalink: /kb/153/Q153682/
 
 ## Q153682: BUG: MaskedEdit Control Misbehaves When DragMode Set to 1
 
+{% raw %}
+
 	Article: Q153682
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -71,3 +73,5 @@ permalink: /kb/153/Q153682/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232454/
 
 ## Q232454: How to Manually Configure Cluster MAC Addresses in WLBS
 
+{% raw %}
+
 	Article: Q232454
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,4.0
@@ -86,3 +88,5 @@ permalink: /kb/232/Q232454/
 	
 	=============================================================================
 	
+
+{% endraw %}

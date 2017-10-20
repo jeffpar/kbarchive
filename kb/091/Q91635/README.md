@@ -6,6 +6,8 @@ permalink: /kb/091/Q91635/
 
 ## Q91635: ATM Version 2.02 Information
 
+{% raw %}
+
 	Article: Q91635
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/091/Q91635/
 	
 	=============================================================================
 	
+
+{% endraw %}

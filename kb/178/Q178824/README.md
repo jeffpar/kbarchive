@@ -6,6 +6,8 @@ permalink: /kb/178/Q178824/
 
 ## Q178824: Error Message: Your Password Is Too Short
 
+{% raw %}
+
 	Article: Q178824
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/178/Q178824/
 	
 	=============================================================================
 	
+
+{% endraw %}

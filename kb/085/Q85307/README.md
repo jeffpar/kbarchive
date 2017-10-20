@@ -6,6 +6,8 @@ permalink: /kb/085/Q85307/
 
 ## Q85307: Outdated or Incorrect Sound Driver May Cause System to Hang
 
+{% raw %}
+
 	Article: Q85307
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/085/Q85307/
 	
 	=============================================================================
 	
+
+{% endraw %}

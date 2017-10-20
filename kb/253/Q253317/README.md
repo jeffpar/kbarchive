@@ -6,6 +6,8 @@ permalink: /kb/253/Q253317/
 
 ## Q253317: BUG: Using #import with ADO Causes C4146 Warning in Visual C++
 
+{% raw %}
+
 	Article: Q253317
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.5,2.6; winnt:6.0
@@ -80,3 +82,5 @@ permalink: /kb/253/Q253317/
 	
 	=============================================================================
 	
+
+{% endraw %}

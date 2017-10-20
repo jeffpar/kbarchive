@@ -6,6 +6,8 @@ permalink: /kb/224/Q224302/
 
 ## Q224302: HOWTO: Suppress a TextBox Control's Popup Menu
 
+{% raw %}
+
 	Article: Q224302
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -139,3 +141,5 @@ permalink: /kb/224/Q224302/
 	
 	=============================================================================
 	
+
+{% endraw %}

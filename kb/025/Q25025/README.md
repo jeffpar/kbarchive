@@ -6,6 +6,8 @@ permalink: /kb/025/Q25025/
 
 ## Q25025: Information Provided by Relocation Table
 
+{% raw %}
+
 	Article: Q25025
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.x,4.x,5.0x,5.1x,5.3,5.31.009,5.5,5.6; OS/2:5.0x,5.1,5.11,5.13,5.15
@@ -48,3 +50,5 @@ permalink: /kb/025/Q25025/
 	
 	=============================================================================
 	
+
+{% endraw %}

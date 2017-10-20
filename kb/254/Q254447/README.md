@@ -6,6 +6,8 @@ permalink: /kb/254/Q254447/
 
 ## Q254447: MapPoint: Imported Access Data Is Displayed as Numeric Values
 
+{% raw %}
+
 	Article: Q254447
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:; :
@@ -61,3 +63,5 @@ permalink: /kb/254/Q254447/
 	
 	=============================================================================
 	
+
+{% endraw %}

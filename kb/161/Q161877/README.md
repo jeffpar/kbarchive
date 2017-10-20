@@ -6,6 +6,8 @@ permalink: /kb/161/Q161877/
 
 ## Q161877: Event 0 Source 0: ExIfStart Registry Key for Server Not Found 2l
 
+{% raw %}
+
 	Article: Q161877
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.5 3.51 4.0
@@ -67,3 +69,5 @@ permalink: /kb/161/Q161877/
 	
 	=============================================================================
 	
+
+{% endraw %}

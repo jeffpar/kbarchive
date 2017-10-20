@@ -6,6 +6,8 @@ permalink: /kb/198/Q198194/
 
 ## Q198194: WD97: Page Number Format Doesn't Carry to Other Sections
 
+{% raw %}
+
 	Article: Q198194
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -118,3 +120,5 @@ permalink: /kb/198/Q198194/
 	
 	=============================================================================
 	
+
+{% endraw %}

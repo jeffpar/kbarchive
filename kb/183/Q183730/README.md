@@ -6,6 +6,8 @@ permalink: /kb/183/Q183730/
 
 ## Q183730: HTML Administrator Doesn't Work Through Proxy with NTLM
 
+{% raw %}
+
 	Article: Q183730
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -39,3 +41,5 @@ permalink: /kb/183/Q183730/
 	
 	=============================================================================
 	
+
+{% endraw %}

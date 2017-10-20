@@ -6,6 +6,8 @@ permalink: /kb/130/Q130344/
 
 ## Q130344: Adding Additional Target Device Types to Imagedit
 
+{% raw %}
+
 	Article: Q130344
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -82,3 +84,5 @@ permalink: /kb/130/Q130344/
 	
 	=============================================================================
 	
+
+{% endraw %}

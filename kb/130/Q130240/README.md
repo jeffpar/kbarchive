@@ -6,6 +6,8 @@ permalink: /kb/130/Q130240/
 
 ## Q130240: How to Use the Caption Field Property
 
+{% raw %}
+
 	Article: Q130240
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/130/Q130240/
 	
 	=============================================================================
 	
+
+{% endraw %}

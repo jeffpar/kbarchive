@@ -6,6 +6,8 @@ permalink: /kb/257/Q257692/
 
 ## Q257692: FIX: Resource Leak If Control's IMEMode &gt; 0 (Int'l Versions)
 
+{% raw %}
+
 	Article: Q257692
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/257/Q257692/
 	
 	=============================================================================
 	
+
+{% endraw %}

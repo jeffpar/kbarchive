@@ -6,6 +6,8 @@ permalink: /kb/273/Q273503/
 
 ## Q273503: Midtown Madness 2: Known Video Issues in Midtown Madness 2
 
+{% raw %}
+
 	Article: Q273503
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -269,3 +271,5 @@ permalink: /kb/273/Q273503/
 	
 	=============================================================================
 	
+
+{% endraw %}

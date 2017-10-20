@@ -6,6 +6,8 @@ permalink: /kb/237/Q237181/
 
 ## Q237181: Some LPD Print Servers Reject an LPD Connection from Windows NT
 
+{% raw %}
+
 	Article: Q237181
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/237/Q237181/
 	
 	=============================================================================
 	
+
+{% endraw %}

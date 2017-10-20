@@ -6,6 +6,8 @@ permalink: /kb/263/Q263324/
 
 ## Q263324: Create Shortcut Command Truncates Source Path Folder Names
 
+{% raw %}
+
 	Article: Q263324
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,2.0,2000,4.0
@@ -174,3 +176,5 @@ permalink: /kb/263/Q263324/
 	
 	=============================================================================
 	
+
+{% endraw %}

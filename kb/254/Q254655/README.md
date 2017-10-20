@@ -6,6 +6,8 @@ permalink: /kb/254/Q254655/
 
 ## Q254655: Ipconfig /All Command Does Not Display Domain Suffix
 
+{% raw %}
+
 	Article: Q254655
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/254/Q254655/
 	
 	=============================================================================
 	
+
+{% endraw %}

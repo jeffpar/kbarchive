@@ -6,6 +6,8 @@ permalink: /kb/157/Q157836/
 
 ## Q157836: SMS: Remote Control Chat Session Displays Incorrect Characters
 
+{% raw %}
+
 	Article: Q157836
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -51,3 +53,5 @@ permalink: /kb/157/Q157836/
 	
 	=============================================================================
 	
+
+{% endraw %}

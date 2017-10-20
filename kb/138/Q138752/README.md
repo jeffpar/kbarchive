@@ -6,6 +6,8 @@ permalink: /kb/138/Q138752/
 
 ## Q138752: FIX: C4114 Warning When Using Templates and Const Keyword
 
+{% raw %}
+
 	Article: Q138752
 	Product(s): Microsoft C Compiler
 	Version(s): 2.x4.0,4.1,4.2
@@ -95,3 +97,5 @@ permalink: /kb/138/Q138752/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/220/Q220952/
 
 ## Q220952: XWEB: &quot;There Were Problems Sending The Item&quot; Saving Contact in O
 
+{% raw %}
+
 	Article: Q220952
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -59,3 +61,5 @@ permalink: /kb/220/Q220952/
 	
 	=============================================================================
 	
+
+{% endraw %}

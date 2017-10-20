@@ -6,6 +6,8 @@ permalink: /kb/082/Q82665/
 
 ## Q82665: Causes of System Integrity Errors in Windows 3.1
 
+{% raw %}
+
 	Article: Q82665
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -94,3 +96,5 @@ permalink: /kb/082/Q82665/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66631/
 
 ## Q66631: Adding a Category in QuickHelp
 
+{% raw %}
+
 	Article: Q66631
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.7,1.83; OS/2:1..4,1.7,1.83
@@ -78,3 +80,5 @@ permalink: /kb/066/Q66631/
 	
 	=============================================================================
 	
+
+{% endraw %}

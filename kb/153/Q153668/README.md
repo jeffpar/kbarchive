@@ -6,6 +6,8 @@ permalink: /kb/153/Q153668/
 
 ## Q153668: WD97: Mail Merge Main Document Cannot Find Data Source
 
+{% raw %}
+
 	Article: Q153668
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:7.0,97
@@ -148,3 +150,5 @@ permalink: /kb/153/Q153668/
 	
 	=============================================================================
 	
+
+{% endraw %}

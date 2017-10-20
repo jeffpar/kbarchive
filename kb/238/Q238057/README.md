@@ -6,6 +6,8 @@ permalink: /kb/238/Q238057/
 
 ## Q238057: Encarta Dictionary 2000: Define Command Is Unavailable in Word
 
+{% raw %}
+
 	Article: Q238057
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2000; :
@@ -73,3 +75,5 @@ permalink: /kb/238/Q238057/
 	
 	=============================================================================
 	
+
+{% endraw %}

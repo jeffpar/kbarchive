@@ -6,6 +6,8 @@ permalink: /kb/104/Q104423/
 
 ## Q104423: PC DB: How to Reset the .MAI File Counter of MBG Owners
 
+{% raw %}
+
 	Article: Q104423
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -89,3 +91,5 @@ permalink: /kb/104/Q104423/
 	
 	=============================================================================
 	
+
+{% endraw %}

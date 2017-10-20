@@ -6,6 +6,8 @@ permalink: /kb/193/Q193361/
 
 ## Q193361: MSGINA.DLL does not Reset WINLOGON Structure
 
+{% raw %}
+
 	Article: Q193361
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/193/Q193361/
 	
 	=============================================================================
 	
+
+{% endraw %}

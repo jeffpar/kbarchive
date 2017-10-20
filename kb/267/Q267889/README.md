@@ -6,6 +6,8 @@ permalink: /kb/267/Q267889/
 
 ## Q267889: SMS: SMS_EXECUTIVE Service Not Installed During Setup
 
+{% raw %}
+
 	Article: Q267889
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0 SP2
@@ -145,3 +147,5 @@ permalink: /kb/267/Q267889/
 	
 	=============================================================================
 	
+
+{% endraw %}

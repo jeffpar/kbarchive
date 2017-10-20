@@ -6,6 +6,8 @@ permalink: /kb/080/Q80130/
 
 ## Q80130: DOCERR: L1008 Error from Incorrect /SEGMENTS Option Syntax
 
+{% raw %}
+
 	Article: Q80130
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.x,4.x,5.0x,5.1x,5.2,5.3x,5.5,5.6; OS/2:5.0x,5.1,5.11,5.13,5.15
@@ -76,3 +78,5 @@ permalink: /kb/080/Q80130/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/252/Q252852/
 
 ## Q252852: SMS: Admin Console Doesn't Display Local SMS Version Installed
 
+{% raw %}
+
 	Article: Q252852
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -70,3 +72,5 @@ permalink: /kb/252/Q252852/
 	
 	=============================================================================
 	
+
+{% endraw %}

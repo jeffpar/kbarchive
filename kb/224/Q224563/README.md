@@ -6,6 +6,8 @@ permalink: /kb/224/Q224563/
 
 ## Q224563: Bookshelf 99 Err Msg: Bshelf99 Caused an Invalid Page Fault...
 
+{% raw %}
+
 	Article: Q224563
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -75,3 +77,5 @@ permalink: /kb/224/Q224563/
 	
 	=============================================================================
 	
+
+{% endraw %}

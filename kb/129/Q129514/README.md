@@ -6,6 +6,8 @@ permalink: /kb/129/Q129514/
 
 ## Q129514: PRB: Loading and Unloading DLLs in the Design Environment
 
+{% raw %}
+
 	Article: Q129514
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -60,3 +62,5 @@ permalink: /kb/129/Q129514/
 	
 	=============================================================================
 	
+
+{% endraw %}

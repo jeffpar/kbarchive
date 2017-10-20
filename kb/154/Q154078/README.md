@@ -6,6 +6,8 @@ permalink: /kb/154/Q154078/
 
 ## Q154078: HOWTO: Send Raw Data to a Printer Using the Win32 API from VB
 
+{% raw %}
+
 	Article: Q154078
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -114,3 +116,5 @@ permalink: /kb/154/Q154078/
 	
 	=============================================================================
 	
+
+{% endraw %}

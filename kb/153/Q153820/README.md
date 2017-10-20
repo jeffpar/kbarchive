@@ -6,6 +6,8 @@ permalink: /kb/153/Q153820/
 
 ## Q153820: ADT95: &quot;Setup Error 992&quot; Installing ADT Application
 
+{% raw %}
+
 	Article: Q153820
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -86,3 +88,5 @@ permalink: /kb/153/Q153820/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121416/
 
 ## Q121416: PRB: GetPrivateProfileString() Generates &quot;Data Type Mismatch&quot;
 
+{% raw %}
+
 	Article: Q121416
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 2.60 2.60a 3.00
@@ -68,3 +70,5 @@ permalink: /kb/121/Q121416/
 	
 	=============================================================================
 	
+
+{% endraw %}

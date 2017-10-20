@@ -6,6 +6,8 @@ permalink: /kb/139/Q139168/
 
 ## Q139168: FoxPro Hangs Accessing Database on Macintosh Volume
 
+{% raw %}
+
 	Article: Q139168
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -62,3 +64,5 @@ permalink: /kb/139/Q139168/
 	
 	=============================================================================
 	
+
+{% endraw %}

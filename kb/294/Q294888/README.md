@@ -6,6 +6,8 @@ permalink: /kb/294/Q294888/
 
 ## Q294888: BUG: Instantiation of ActiveX EXE SingleUse Objects Is Blocked
 
+{% raw %}
+
 	Article: Q294888
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -128,3 +130,5 @@ permalink: /kb/294/Q294888/
 	
 	=============================================================================
 	
+
+{% endraw %}

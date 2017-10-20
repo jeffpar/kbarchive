@@ -6,6 +6,8 @@ permalink: /kb/265/Q265030/
 
 ## Q265030: Netscape Cannot Browse Intranet Site
 
+{% raw %}
+
 	Article: Q265030
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0,4.0,5.0
@@ -82,3 +84,5 @@ permalink: /kb/265/Q265030/
 	
 	=============================================================================
 	
+
+{% endraw %}

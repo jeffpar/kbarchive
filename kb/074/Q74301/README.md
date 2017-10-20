@@ -6,6 +6,8 @@ permalink: /kb/074/Q74301/
 
 ## Q74301: Information About Headings and Labels in HEAPWALK
 
+{% raw %}
+
 	Article: Q74301
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -157,3 +159,5 @@ permalink: /kb/074/Q74301/
 	
 	=============================================================================
 	
+
+{% endraw %}

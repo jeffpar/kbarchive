@@ -6,6 +6,8 @@ permalink: /kb/171/Q171603/
 
 ## Q171603: HOWTO: Get the Unread Message Count from an Outlook Folder
 
+{% raw %}
+
 	Article: Q171603
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0,97
@@ -100,3 +102,5 @@ permalink: /kb/171/Q171603/
 	
 	=============================================================================
 	
+
+{% endraw %}

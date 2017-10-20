@@ -6,6 +6,8 @@ permalink: /kb/066/Q66950/
 
 ## Q66950: Playing a Metafile into Another Metafile in Windows
 
+{% raw %}
+
 	Article: Q66950
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -67,3 +69,5 @@ permalink: /kb/066/Q66950/
 	
 	=============================================================================
 	
+
+{% endraw %}

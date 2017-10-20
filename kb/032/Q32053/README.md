@@ -6,6 +6,8 @@ permalink: /kb/032/Q32053/
 
 ## Q32053: Scrolling One Line at a Time
 
+{% raw %}
+
 	Article: Q32053
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -34,3 +36,5 @@ permalink: /kb/032/Q32053/
 	[M]
 	    hike:1
 	    vscroll:1
+
+{% endraw %}

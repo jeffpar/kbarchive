@@ -6,6 +6,8 @@ permalink: /kb/193/Q193930/
 
 ## Q193930: XFOR: Exchange and Internet Mail Client Co-existence
 
+{% raw %}
+
 	Article: Q193930
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/193/Q193930/
 	
 	=============================================================================
 	
+
+{% endraw %}

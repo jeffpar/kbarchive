@@ -6,6 +6,8 @@ permalink: /kb/167/Q167220/
 
 ## Q167220: How to Create Custom Calling Card Rules
 
+{% raw %}
+
 	Article: Q167220
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.0 95
@@ -135,3 +137,5 @@ permalink: /kb/167/Q167220/
 	
 	=============================================================================
 	
+
+{% endraw %}

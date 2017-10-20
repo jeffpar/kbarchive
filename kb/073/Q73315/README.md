@@ -6,6 +6,8 @@ permalink: /kb/073/Q73315/
 
 ## Q73315: Using Microsoft Mouse Menu Software with MS-DOS 4.x - 6.0
 
+{% raw %}
+
 	Article: Q73315
 	Product(s): Microsoft Disk Operating System
 	Version(s): 4.0,4.01,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -53,3 +55,5 @@ permalink: /kb/073/Q73315/
 	
 	=============================================================================
 	
+
+{% endraw %}

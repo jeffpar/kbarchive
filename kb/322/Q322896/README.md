@@ -6,6 +6,8 @@ permalink: /kb/322/Q322896/
 
 ## Q322896: HOWTO: Prevent Scanning Specific File Types in Index Server
 
+{% raw %}
+
 	Article: Q322896
 	Product(s): Internet Information Server
 	Version(s): 3.0
@@ -79,3 +81,5 @@ permalink: /kb/322/Q322896/
 	
 	=============================================================================
 	
+
+{% endraw %}

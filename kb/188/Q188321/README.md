@@ -6,6 +6,8 @@ permalink: /kb/188/Q188321/
 
 ## Q188321: FindFirstChangeNotification May Not Notify All Processes
 
+{% raw %}
+
 	Article: Q188321
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -54,3 +56,5 @@ permalink: /kb/188/Q188321/
 	
 	=============================================================================
 	
+
+{% endraw %}

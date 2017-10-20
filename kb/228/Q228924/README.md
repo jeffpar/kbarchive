@@ -6,6 +6,8 @@ permalink: /kb/228/Q228924/
 
 ## Q228924: SNA OLE: The Number of Objects Has Reached the Object Limit
 
+{% raw %}
+
 	Article: Q228924
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -67,3 +69,5 @@ permalink: /kb/228/Q228924/
 	
 	=============================================================================
 	
+
+{% endraw %}

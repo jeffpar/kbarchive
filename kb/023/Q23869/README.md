@@ -6,6 +6,8 @@ permalink: /kb/023/Q23869/
 
 ## Q23869: malloc() and free() Do Not Return Memory to DOS
 
+{% raw %}
+
 	Article: Q23869
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 6.00 6.00a
@@ -38,3 +40,5 @@ permalink: /kb/023/Q23869/
 	An alternative is to use halloc() and hfree(), which will return the
 	memory to DOS, rather than retaining it for use by the currently
 	executing program.
+
+{% endraw %}

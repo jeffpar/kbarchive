@@ -6,6 +6,8 @@ permalink: /kb/034/Q34375/
 
 ## Q34375: DOCERR: Documentation Error on the LGDT Instruction
 
+{% raw %}
+
 	Article: Q34375
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -41,3 +43,5 @@ permalink: /kb/034/Q34375/
 	
 	=============================================================================
 	
+
+{% endraw %}

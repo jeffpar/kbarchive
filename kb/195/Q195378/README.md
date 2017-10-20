@@ -6,6 +6,8 @@ permalink: /kb/195/Q195378/
 
 ## Q195378: DOC: Release Notes Incorrectly State that IStorage Is Broken
 
+{% raw %}
+
 	Article: Q195378
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:
@@ -43,3 +45,5 @@ permalink: /kb/195/Q195378/
 	
 	=============================================================================
 	
+
+{% endraw %}

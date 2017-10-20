@@ -6,6 +6,8 @@ permalink: /kb/272/Q272395/
 
 ## Q272395: Error Message: Boot Record Signature AA55 Not Found
 
+{% raw %}
+
 	Article: Q272395
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,3.51,4.0
@@ -176,3 +178,5 @@ permalink: /kb/272/Q272395/
 	
 	=============================================================================
 	
+
+{% endraw %}

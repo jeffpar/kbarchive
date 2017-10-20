@@ -6,6 +6,8 @@ permalink: /kb/164/Q164950/
 
 ## Q164950: INFO: LIBMOTO for PowerPC May Improve Application Performance
 
+{% raw %}
+
 	Article: Q164950
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/164/Q164950/
 	
 	=============================================================================
 	
+
+{% endraw %}

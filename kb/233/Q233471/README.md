@@ -6,6 +6,8 @@ permalink: /kb/233/Q233471/
 
 ## Q233471: Business Planner: Excel Template Always Prompts to Save Changes
 
+{% raw %}
+
 	Article: Q233471
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/233/Q233471/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/318/Q318109/
 
 ## Q318109: PRB: Changes Not Saved When You Bind Solution to Another Project
 
+{% raw %}
+
 	Article: Q318109
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/318/Q318109/
 	
 	=============================================================================
 	
+
+{% endraw %}

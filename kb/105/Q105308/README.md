@@ -6,6 +6,8 @@ permalink: /kb/105/Q105308/
 
 ## Q105308: Windows NT May Cause APC Smart UPS Battery to Discharge
 
+{% raw %}
+
 	Article: Q105308
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -70,3 +72,5 @@ permalink: /kb/105/Q105308/
 	
 	=============================================================================
 	
+
+{% endraw %}

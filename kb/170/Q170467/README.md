@@ -6,6 +6,8 @@ permalink: /kb/170/Q170467/
 
 ## Q170467: Poor Color Quality with HP DeskJet 800-Series Printers
 
+{% raw %}
+
 	Article: Q170467
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -58,3 +60,5 @@ permalink: /kb/170/Q170467/
 	
 	=============================================================================
 	
+
+{% endraw %}

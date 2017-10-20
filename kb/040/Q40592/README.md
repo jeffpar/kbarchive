@@ -6,6 +6,8 @@ permalink: /kb/040/Q40592/
 
 ## Q40592: SHELL Redirected to NUL Device Suppresses MS-DOS Message
 
+{% raw %}
+
 	Article: Q40592
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/040/Q40592/
 	In MS-DOS, the greater-than sign, ">", redirects standard output to
 	standard input. The less-than sign, "<", redirects standard input to
 	standard output.
+
+{% endraw %}

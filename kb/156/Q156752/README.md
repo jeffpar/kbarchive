@@ -6,6 +6,8 @@ permalink: /kb/156/Q156752/
 
 ## Q156752: PRB: Graph Wizard Graph Appears in Black And White
 
+{% raw %}
+
 	Article: Q156752
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/156/Q156752/
 	
 	=============================================================================
 	
+
+{% endraw %}

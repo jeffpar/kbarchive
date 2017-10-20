@@ -6,6 +6,8 @@ permalink: /kb/156/Q156645/
 
 ## Q156645: Deadly Tide: Sound Troubleshooting
 
+{% raw %}
+
 	Article: Q156645
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -114,3 +116,5 @@ permalink: /kb/156/Q156645/
 	
 	=============================================================================
 	
+
+{% endraw %}

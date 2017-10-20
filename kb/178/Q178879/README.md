@@ -6,6 +6,8 @@ permalink: /kb/178/Q178879/
 
 ## Q178879: WD97: Run-Time Error '4599' Using DDE to Internet Explorer 4.x
 
+{% raw %}
+
 	Article: Q178879
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -159,3 +161,5 @@ permalink: /kb/178/Q178879/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189072/
 
 ## Q189072: MTM2: Cannot Turn Right When Using the ThrustMaster T2 Wheel
 
+{% raw %}
+
 	Article: Q189072
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -145,3 +147,5 @@ permalink: /kb/189/Q189072/
 	
 	=============================================================================
 	
+
+{% endraw %}

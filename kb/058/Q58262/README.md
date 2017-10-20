@@ -6,6 +6,8 @@ permalink: /kb/058/Q58262/
 
 ## Q58262: Location of Installed Windows 3.0 Drivers
 
+{% raw %}
+
 	Article: Q58262
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -64,3 +66,5 @@ permalink: /kb/058/Q58262/
 	
 	=============================================================================
 	
+
+{% endraw %}

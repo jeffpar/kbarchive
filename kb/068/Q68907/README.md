@@ -6,6 +6,8 @@ permalink: /kb/068/Q68907/
 
 ## Q68907: Incorrect Code Generated for &quot;FILD QWord Ptr&quot;
 
+{% raw %}
+
 	Article: Q68907
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -60,3 +62,5 @@ permalink: /kb/068/Q68907/
 	Microsoft has confirmed this to be a problem in C versions 6.00 and
 	6.00a. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

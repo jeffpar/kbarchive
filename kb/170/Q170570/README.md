@@ -6,6 +6,8 @@ permalink: /kb/170/Q170570/
 
 ## Q170570: HOWTO: Build a Windows Message Handler with AddressOf in Visual
 
+{% raw %}
+
 	Article: Q170570
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -183,3 +185,5 @@ permalink: /kb/170/Q170570/
 	
 	=============================================================================
 	
+
+{% endraw %}

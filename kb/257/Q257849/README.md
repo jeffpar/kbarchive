@@ -6,6 +6,8 @@ permalink: /kb/257/Q257849/
 
 ## Q257849: HOWTO: Resize RichTextbox Control with Endless Bottom
 
+{% raw %}
+
 	Article: Q257849
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -280,3 +282,5 @@ permalink: /kb/257/Q257849/
 	
 	=============================================================================
 	
+
+{% endraw %}

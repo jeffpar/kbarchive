@@ -6,6 +6,8 @@ permalink: /kb/200/Q200808/
 
 ## Q200808: SMS: Tabs in MMC Help Are Not Accessible with the TAB Key
 
+{% raw %}
+
 	Article: Q200808
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -49,3 +51,5 @@ permalink: /kb/200/Q200808/
 	
 	=============================================================================
 	
+
+{% endraw %}

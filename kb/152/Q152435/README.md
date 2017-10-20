@@ -6,6 +6,8 @@ permalink: /kb/152/Q152435/
 
 ## Q152435: Network Client 3.0 Boot Disk and Error 2: The Specified File
 
+{% raw %}
+
 	Article: Q152435
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/152/Q152435/
 	
 	=============================================================================
 	
+
+{% endraw %}

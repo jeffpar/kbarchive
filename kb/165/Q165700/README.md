@@ -6,6 +6,8 @@ permalink: /kb/165/Q165700/
 
 ## Q165700: SNA 3.0 Win 3.x Client Fails to Initialize Due to Security.dll
 
+{% raw %}
+
 	Article: Q165700
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -65,3 +67,5 @@ permalink: /kb/165/Q165700/
 	
 	=============================================================================
 	
+
+{% endraw %}

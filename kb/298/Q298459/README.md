@@ -6,6 +6,8 @@ permalink: /kb/298/Q298459/
 
 ## Q298459: Frequently Asked Questions for Windows NT 3.51
 
+{% raw %}
+
 	Article: Q298459
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -205,3 +207,5 @@ permalink: /kb/298/Q298459/
 	
 	=============================================================================
 	
+
+{% endraw %}

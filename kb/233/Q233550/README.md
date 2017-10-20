@@ -6,6 +6,8 @@ permalink: /kb/233/Q233550/
 
 ## Q233550: Component Builder Appears to Change Component's Transaction ID
 
+{% raw %}
+
 	Article: Q233550
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0SP2
@@ -92,3 +94,5 @@ permalink: /kb/233/Q233550/
 	
 	=============================================================================
 	
+
+{% endraw %}

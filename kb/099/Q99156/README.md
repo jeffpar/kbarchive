@@ -6,6 +6,8 @@ permalink: /kb/099/Q99156/
 
 ## Q99156: Strategies for Boosting File Transfer Throughput Rates
 
+{% raw %}
+
 	Article: Q99156
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/099/Q99156/
 	
 	=============================================================================
 	
+
+{% endraw %}

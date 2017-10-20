@@ -6,6 +6,8 @@ permalink: /kb/048/Q48424/
 
 ## Q48424: Mixed-Language Examples for Calling Fortran Are Incorrect
 
+{% raw %}
+
 	Article: Q48424
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -67,3 +69,5 @@ permalink: /kb/048/Q48424/
 	                .
 	                .
 	   Maxparam (a,b);
+
+{% endraw %}

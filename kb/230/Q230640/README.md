@@ -6,6 +6,8 @@ permalink: /kb/230/Q230640/
 
 ## Q230640: SMS: Setup Sets &quot;Restrict filegrowth&quot; on SQL 7.0 Databases
 
+{% raw %}
+
 	Article: Q230640
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,7.0
@@ -96,3 +98,5 @@ permalink: /kb/230/Q230640/
 	
 	=============================================================================
 	
+
+{% endraw %}

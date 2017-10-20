@@ -6,6 +6,8 @@ permalink: /kb/067/Q67018/
 
 ## Q67018: Fontware Installation Kit Adding Typefaces Warning
 
+{% raw %}
+
 	Article: Q67018
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/067/Q67018/
 	
 	=============================================================================
 	
+
+{% endraw %}

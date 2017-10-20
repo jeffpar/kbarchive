@@ -6,6 +6,8 @@ permalink: /kb/253/Q253257/
 
 ## Q253257: HOWTO: Capture the EOF Character with the MSComm Control
 
+{% raw %}
+
 	Article: Q253257
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 SP2,5.0 SP3,6.0
@@ -174,3 +176,5 @@ permalink: /kb/253/Q253257/
 	
 	=============================================================================
 	
+
+{% endraw %}

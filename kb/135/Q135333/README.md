@@ -6,6 +6,8 @@ permalink: /kb/135/Q135333/
 
 ## Q135333: PRB: Decimals Don't Display Properly in Grid
 
+{% raw %}
+
 	Article: Q135333
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -97,3 +99,5 @@ permalink: /kb/135/Q135333/
 	
 	=============================================================================
 	
+
+{% endraw %}

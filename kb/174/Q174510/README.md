@@ -6,6 +6,8 @@ permalink: /kb/174/Q174510/
 
 ## Q174510: Print Job Corruption Printing on Fast Hardware Across Slow Link
 
+{% raw %}
+
 	Article: Q174510
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/174/Q174510/
 	
 	=============================================================================
 	
+
+{% endraw %}

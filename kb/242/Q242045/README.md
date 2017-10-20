@@ -6,6 +6,8 @@ permalink: /kb/242/Q242045/
 
 ## Q242045: HOWTO: Control Line Spacing when Printing from Visual Basic
 
+{% raw %}
+
 	Article: Q242045
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -133,3 +135,5 @@ permalink: /kb/242/Q242045/
 	
 	=============================================================================
 	
+
+{% endraw %}

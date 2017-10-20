@@ -6,6 +6,8 @@ permalink: /kb/130/Q130020/
 
 ## Q130020: XCLN: Attachment Icon Not Updated After App Installed
 
+{% raw %}
+
 	Article: Q130020
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -56,3 +58,5 @@ permalink: /kb/130/Q130020/
 	
 	=============================================================================
 	
+
+{% endraw %}

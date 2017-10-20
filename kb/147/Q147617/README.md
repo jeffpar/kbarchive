@@ -6,6 +6,8 @@ permalink: /kb/147/Q147617/
 
 ## Q147617: Third-Party Browsers Get Access Denied Msg Connecting to IIS
 
+{% raw %}
+
 	Article: Q147617
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.51,4.0
@@ -64,3 +66,5 @@ permalink: /kb/147/Q147617/
 	
 	=============================================================================
 	
+
+{% endraw %}

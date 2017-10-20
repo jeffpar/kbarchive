@@ -6,6 +6,8 @@ permalink: /kb/125/Q125272/
 
 ## Q125272: Determining Whether NEC Monitors Are Energy Star Compliant
 
+{% raw %}
+
 	Article: Q125272
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/125/Q125272/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107823/
 
 ## Q107823: Incorrect Sort Order in File Manager with Some Languages
 
+{% raw %}
+
 	Article: Q107823
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/107/Q107823/
 	
 	=============================================================================
 	
+
+{% endraw %}

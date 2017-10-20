@@ -6,6 +6,8 @@ permalink: /kb/221/Q221690/
 
 ## Q221690: FIX: C0000005 Error With Repeated SQL SELECTs Using BETWEEN(á)
 
+{% raw %}
+
 	Article: Q221690
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -75,3 +77,5 @@ permalink: /kb/221/Q221690/
 	
 	=============================================================================
 	
+
+{% endraw %}

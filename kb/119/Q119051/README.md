@@ -6,6 +6,8 @@ permalink: /kb/119/Q119051/
 
 ## Q119051: FAX: Macintosh ASCII Attachments Fax Incorrectly
 
+{% raw %}
+
 	Article: Q119051
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/119/Q119051/
 	
 	=============================================================================
 	
+
+{% endraw %}

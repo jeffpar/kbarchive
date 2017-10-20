@@ -6,6 +6,8 @@ permalink: /kb/120/Q120700/
 
 ## Q120700: Flight Simulator: Definition of Terms for Weather Areas
 
+{% raw %}
+
 	Article: Q120700
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -83,3 +85,5 @@ permalink: /kb/120/Q120700/
 	
 	=============================================================================
 	
+
+{% endraw %}

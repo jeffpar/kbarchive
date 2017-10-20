@@ -6,6 +6,8 @@ permalink: /kb/131/Q131459/
 
 ## Q131459: INFO: MS-DOS-Based RPC Application Cannot Use TCP/IP
 
+{% raw %}
+
 	Article: Q131459
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.11
@@ -52,3 +54,5 @@ permalink: /kb/131/Q131459/
 	
 	=============================================================================
 	
+
+{% endraw %}

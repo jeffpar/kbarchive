@@ -6,6 +6,8 @@ permalink: /kb/172/Q172310/
 
 ## Q172310: WD97: Bookman Font Fails to Print Bold on PS Printers
 
+{% raw %}
+
 	Article: Q172310
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:7.0,95,97; winnt:6.0
@@ -70,3 +72,5 @@ permalink: /kb/172/Q172310/
 	
 	=============================================================================
 	
+
+{% endraw %}

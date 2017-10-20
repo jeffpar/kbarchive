@@ -6,6 +6,8 @@ permalink: /kb/164/Q164740/
 
 ## Q164740: Start Menu Appears to the Right of the Start Button
 
+{% raw %}
+
 	Article: Q164740
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1,4.0
@@ -91,3 +93,5 @@ permalink: /kb/164/Q164740/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/268/Q268807/
 
 ## Q268807: PRB: Application Error Running or Closing a Project
 
+{% raw %}
+
 	Article: Q268807
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -108,3 +110,5 @@ permalink: /kb/268/Q268807/
 	
 	=============================================================================
 	
+
+{% endraw %}

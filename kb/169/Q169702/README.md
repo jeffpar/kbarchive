@@ -6,6 +6,8 @@ permalink: /kb/169/Q169702/
 
 ## Q169702: XCLN: Resolve_Netbios_Names_Last Registry Entry Does Not Work
 
+{% raw %}
+
 	Article: Q169702
 	Product(s): Microsoft Exchange
 	Version(s): Win95:4.0,5.0;WinNT:4.0,5.0
@@ -92,3 +94,5 @@ permalink: /kb/169/Q169702/
 	
 	=============================================================================
 	
+
+{% endraw %}

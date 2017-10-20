@@ -6,6 +6,8 @@ permalink: /kb/297/Q297486/
 
 ## Q297486: Incorrect Server Variables If You Use Client Certificate Mapping
 
+{% raw %}
+
 	Article: Q297486
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -81,3 +83,5 @@ permalink: /kb/297/Q297486/
 	
 	=============================================================================
 	
+
+{% endraw %}

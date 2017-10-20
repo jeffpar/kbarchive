@@ -6,6 +6,8 @@ permalink: /kb/130/Q130922/
 
 ## Q130922: Event Error 2022: Server Unable to Find a Free Connection
 
+{% raw %}
+
 	Article: Q130922
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/130/Q130922/
 	
 	=============================================================================
 	
+
+{% endraw %}

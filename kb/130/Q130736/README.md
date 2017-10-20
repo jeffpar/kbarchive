@@ -6,6 +6,8 @@ permalink: /kb/130/Q130736/
 
 ## Q130736: User Removed from Account Operators Can Still Edit Accounts
 
+{% raw %}
+
 	Article: Q130736
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -42,3 +44,5 @@ permalink: /kb/130/Q130736/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67035/
 
 ## Q67035: DS Used Instead of Base Segment for Based Pointer Dereference
 
+{% raw %}
+
 	Article: Q67035
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -50,3 +52,5 @@ permalink: /kb/067/Q67035/
 	
 	    return ( (char far *)(base:>NULL) );
 	}
+
+{% endraw %}

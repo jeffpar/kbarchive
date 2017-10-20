@@ -6,6 +6,8 @@ permalink: /kb/163/Q163111/
 
 ## Q163111: Remote Access Service (RAS) Error Code List
 
+{% raw %}
+
 	Article: Q163111
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,4.0,95
@@ -215,3 +217,5 @@ permalink: /kb/163/Q163111/
 	
 	=============================================================================
 	
+
+{% endraw %}

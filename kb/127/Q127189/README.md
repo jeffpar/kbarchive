@@ -6,6 +6,8 @@ permalink: /kb/127/Q127189/
 
 ## Q127189: DOCERR: Additional SourceSafe INI Settings
 
+{% raw %}
+
 	Article: Q127189
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.04 3.10 | 3.04 3.10 | 3.04 3.1
@@ -131,3 +133,5 @@ permalink: /kb/127/Q127189/
 	
 	=============================================================================
 	
+
+{% endraw %}

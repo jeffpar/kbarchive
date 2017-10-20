@@ -6,6 +6,8 @@ permalink: /kb/279/Q279031/
 
 ## Q279031: No Method of Installation for Internet Connector Licensing
 
+{% raw %}
+
 	Article: Q279031
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/279/Q279031/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138374/
 
 ## Q138374: PRB: Can't Undo After Dragging from One Window to Another
 
+{% raw %}
+
 	Article: Q138374
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/138/Q138374/
 	
 	=============================================================================
 	
+
+{% endraw %}

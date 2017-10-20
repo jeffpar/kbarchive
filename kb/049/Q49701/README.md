@@ -6,6 +6,8 @@ permalink: /kb/049/Q49701/
 
 ## Q49701: MASM Err Msg: A2056: Immediate Mode Illegal
 
+{% raw %}
+
 	Article: Q49701
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.00 5.10
@@ -23,3 +25,5 @@ permalink: /kb/049/Q49701/
 	
 	   You must move the segment address into a general register and then
 	   move it from that register to DS.
+
+{% endraw %}

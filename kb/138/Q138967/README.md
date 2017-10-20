@@ -6,6 +6,8 @@ permalink: /kb/138/Q138967/
 
 ## Q138967: PRB: Using Reserved Name as Filename Launches Converter
 
+{% raw %}
+
 	Article: Q138967
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/138/Q138967/
 	
 	=============================================================================
 	
+
+{% endraw %}

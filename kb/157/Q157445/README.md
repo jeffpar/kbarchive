@@ -6,6 +6,8 @@ permalink: /kb/157/Q157445/
 
 ## Q157445: SNA Connection Over Distributed Link Fails w/Event 77 err=0D0D
 
+{% raw %}
+
 	Article: Q157445
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -108,3 +110,5 @@ permalink: /kb/157/Q157445/
 	
 	=============================================================================
 	
+
+{% endraw %}

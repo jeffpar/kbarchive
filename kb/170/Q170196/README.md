@@ -6,6 +6,8 @@ permalink: /kb/170/Q170196/
 
 ## Q170196: CD-ROM Drive Inaccessible with FlexiCD PowerToy Installed
 
+{% raw %}
+
 	Article: Q170196
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/170/Q170196/
 	
 	=============================================================================
 	
+
+{% endraw %}

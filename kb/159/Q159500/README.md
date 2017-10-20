@@ -6,6 +6,8 @@ permalink: /kb/159/Q159500/
 
 ## Q159500: Using DLC and IPX Protocols May Corrupt Incoming Packets
 
+{% raw %}
+
 	Article: Q159500
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -61,3 +63,5 @@ permalink: /kb/159/Q159500/
 	
 	=============================================================================
 	
+
+{% endraw %}

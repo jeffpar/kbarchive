@@ -6,6 +6,8 @@ permalink: /kb/152/Q152321/
 
 ## Q152321: XADM: Migration Wizard Reports Invalid Home-Server Definition
 
+{% raw %}
+
 	Article: Q152321
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -47,3 +49,5 @@ permalink: /kb/152/Q152321/
 	
 	=============================================================================
 	
+
+{% endraw %}

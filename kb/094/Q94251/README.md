@@ -6,6 +6,8 @@ permalink: /kb/094/Q94251/
 
 ## Q94251: MISCO Software Catalog Refers to &quot;Windows 3.2&quot;
 
+{% raw %}
+
 	Article: Q94251
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -34,3 +36,5 @@ permalink: /kb/094/Q94251/
 	
 	=============================================================================
 	
+
+{% endraw %}

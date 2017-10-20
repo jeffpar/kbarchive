@@ -6,6 +6,8 @@ permalink: /kb/175/Q175780/
 
 ## Q175780: XCON: Sending to Nested DLs Fails
 
+{% raw %}
+
 	Article: Q175780
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -48,3 +50,5 @@ permalink: /kb/175/Q175780/
 	
 	=============================================================================
 	
+
+{% endraw %}

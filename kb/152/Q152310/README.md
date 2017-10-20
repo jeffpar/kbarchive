@@ -6,6 +6,8 @@ permalink: /kb/152/Q152310/
 
 ## Q152310: XADM: Event id 5007 - Check Free Disk Space
 
+{% raw %}
+
 	Article: Q152310
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/152/Q152310/
 	
 	=============================================================================
 	
+
+{% endraw %}

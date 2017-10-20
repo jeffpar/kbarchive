@@ -6,6 +6,8 @@ permalink: /kb/072/Q72435/
 
 ## Q72435: Wildcard File Copy in File Manager
 
+{% raw %}
+
 	Article: Q72435
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -64,3 +66,5 @@ permalink: /kb/072/Q72435/
 	
 	=============================================================================
 	
+
+{% endraw %}

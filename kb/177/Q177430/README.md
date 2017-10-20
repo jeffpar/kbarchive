@@ -6,6 +6,8 @@ permalink: /kb/177/Q177430/
 
 ## Q177430: Description of DirectX Setup Error Codes
 
+{% raw %}
+
 	Article: Q177430
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -198,3 +200,5 @@ permalink: /kb/177/Q177430/
 	
 	=============================================================================
 	
+
+{% endraw %}

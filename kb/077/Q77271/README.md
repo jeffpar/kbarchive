@@ -6,6 +6,8 @@ permalink: /kb/077/Q77271/
 
 ## Q77271: Using Expanded Memory on PS/2 286s Windows
 
+{% raw %}
+
 	Article: Q77271
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/077/Q77271/
 	
 	=============================================================================
 	
+
+{% endraw %}

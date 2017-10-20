@@ -6,6 +6,8 @@ permalink: /kb/135/Q135593/
 
 ## Q135593: Bottom Portion of CD Player Is Inaccessible
 
+{% raw %}
+
 	Article: Q135593
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -69,3 +71,5 @@ permalink: /kb/135/Q135593/
 	
 	=============================================================================
 	
+
+{% endraw %}

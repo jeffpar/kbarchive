@@ -6,6 +6,8 @@ permalink: /kb/183/Q183332/
 
 ## Q183332: BUG: TreeView Expand Event Does Not Occur When Using ENTER Key
 
+{% raw %}
+
 	Article: Q183332
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -154,3 +156,5 @@ permalink: /kb/183/Q183332/
 	
 	=============================================================================
 	
+
+{% endraw %}

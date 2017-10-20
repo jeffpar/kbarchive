@@ -6,6 +6,8 @@ permalink: /kb/194/Q194095/
 
 ## Q194095: Encarta: Blank Rectangle on Screen When You View Virtual Tour
 
+{% raw %}
+
 	Article: Q194095
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/194/Q194095/
 	
 	=============================================================================
 	
+
+{% endraw %}

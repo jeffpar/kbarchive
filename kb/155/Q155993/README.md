@@ -6,6 +6,8 @@ permalink: /kb/155/Q155993/
 
 ## Q155993: Hellbender: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q155993
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/155/Q155993/
 	
 	=============================================================================
 	
+
+{% endraw %}

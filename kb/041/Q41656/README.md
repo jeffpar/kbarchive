@@ -6,6 +6,8 @@ permalink: /kb/041/Q41656/
 
 ## Q41656: QuickC 2.00 README.DOC: The &#36;(MAKEFLAGS) Macro
 
+{% raw %}
+
 	Article: Q41656
 	Product(s): See article
 	Version(s): 2.00
@@ -21,3 +23,5 @@ permalink: /kb/041/Q41656/
 	
 	If you call NMAKE recursively with "$(MAKE) $(MAKEFLAGS)", the
 	following flags are NOT preserved: A, C, D, F, P, R, S, X.
+
+{% endraw %}

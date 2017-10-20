@@ -6,6 +6,8 @@ permalink: /kb/273/Q273923/
 
 ## Q273923: Crimson Skies: Cannot Start Game
 
+{% raw %}
+
 	Article: Q273923
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/273/Q273923/
 	
 	=============================================================================
 	
+
+{% endraw %}

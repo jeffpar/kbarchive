@@ -6,6 +6,8 @@ permalink: /kb/046/Q46918/
 
 ## Q46918: Keyboard Styles for IBM and IBM Compatibles
 
+{% raw %}
+
 	Article: Q46918
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -26,3 +28,5 @@ permalink: /kb/046/Q46918/
 	
 	3. The "expanded" keyboard widens the standard keyboard and reproduces
 	   the nonnumeric keys and the cursor keys in the additional space.
+
+{% endraw %}

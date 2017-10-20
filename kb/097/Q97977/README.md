@@ -6,6 +6,8 @@ permalink: /kb/097/Q97977/
 
 ## Q97977: RAS and Telebit PEP
 
+{% raw %}
+
 	Article: Q97977
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/097/Q97977/
 	
 	=============================================================================
 	
+
+{% endraw %}

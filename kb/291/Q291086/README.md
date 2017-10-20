@@ -6,6 +6,8 @@ permalink: /kb/291/Q291086/
 
 ## Q291086: XADM: How to Change Default SMTP Address for Domain
 
+{% raw %}
+
 	Article: Q291086
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -141,3 +143,5 @@ permalink: /kb/291/Q291086/
 	
 	=============================================================================
 	
+
+{% endraw %}

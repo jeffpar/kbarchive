@@ -6,6 +6,8 @@ permalink: /kb/227/Q227032/
 
 ## Q227032: SMS: Clients Are Using Wrong Instruction After Site Rebuild
 
+{% raw %}
+
 	Article: Q227032
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -93,3 +95,5 @@ permalink: /kb/227/Q227032/
 	
 	=============================================================================
 	
+
+{% endraw %}

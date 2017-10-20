@@ -6,6 +6,8 @@ permalink: /kb/063/Q63567/
 
 ## Q63567: Behavior of Tabs in QuickC 2.50
 
+{% raw %}
+
 	Article: Q63567
 	Product(s): See article
 	Version(s): 2.50
@@ -38,3 +40,5 @@ permalink: /kb/063/Q63567/
 	In the saved file with "Keep Tabs" off and with leading whitespace,
 	the leading whitespace is converted to tabs (and spaces if necessary),
 	and all other whitespace is converted to spaces.
+
+{% endraw %}

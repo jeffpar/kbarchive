@@ -6,6 +6,8 @@ permalink: /kb/249/Q249590/
 
 ## Q249590: SMS: Parent Is Unable to Update Site Property Comments
 
+{% raw %}
+
 	Article: Q249590
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP1
@@ -319,3 +321,5 @@ permalink: /kb/249/Q249590/
 	
 	=============================================================================
 	
+
+{% endraw %}

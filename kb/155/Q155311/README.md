@@ -6,6 +6,8 @@ permalink: /kb/155/Q155311/
 
 ## Q155311: Choosing Sound System for MIDI Enables MIDI on All Sound Cards
 
+{% raw %}
+
 	Article: Q155311
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/155/Q155311/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165002/
 
 ## Q165002: Corrupt Files Error After You Apply Service Pack 2
 
+{% raw %}
+
 	Article: Q165002
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -83,3 +85,5 @@ permalink: /kb/165/Q165002/
 	
 	=============================================================================
 	
+
+{% endraw %}

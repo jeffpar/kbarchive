@@ -6,6 +6,8 @@ permalink: /kb/260/Q260533/
 
 ## Q260533: PRB: &quot;Function Name Is Missing )&quot; When Modifying a Remote View
 
+{% raw %}
+
 	Article: Q260533
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -83,3 +85,5 @@ permalink: /kb/260/Q260533/
 	
 	=============================================================================
 	
+
+{% endraw %}

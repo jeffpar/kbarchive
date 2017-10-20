@@ -6,6 +6,8 @@ permalink: /kb/320/Q320949/
 
 ## Q320949: PRB: 1394 Devices Stop Responding During Isochronous Transfers
 
+{% raw %}
+
 	Article: Q320949
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/320/Q320949/
 	
 	=============================================================================
 	
+
+{% endraw %}

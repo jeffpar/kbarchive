@@ -6,6 +6,8 @@ permalink: /kb/189/Q189807/
 
 ## Q189807: SMS: Error Msg: Unable to Locate Dll NWPROVAU.DLL
 
+{% raw %}
+
 	Article: Q189807
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -67,3 +69,5 @@ permalink: /kb/189/Q189807/
 	
 	=============================================================================
 	
+
+{% endraw %}

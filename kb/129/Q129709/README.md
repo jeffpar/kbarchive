@@ -6,6 +6,8 @@ permalink: /kb/129/Q129709/
 
 ## Q129709: PRB: Run-Time Overflow Error w/Byte-Type Counter in For Loop
 
+{% raw %}
+
 	Article: Q129709
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -75,3 +77,5 @@ permalink: /kb/129/Q129709/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103390/
 
 ## Q103390: Network Access Validation Algorithm and Example
 
+{% raw %}
+
 	Article: Q103390
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -456,3 +458,5 @@ permalink: /kb/103/Q103390/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152528/
 
 ## Q152528: Library Odbc32.dll Could Not Be Loaded to Perform the Query
 
+{% raw %}
+
 	Article: Q152528
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/152/Q152528/
 	
 	=============================================================================
 	
+
+{% endraw %}

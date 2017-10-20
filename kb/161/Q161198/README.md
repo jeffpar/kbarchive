@@ -6,6 +6,8 @@ permalink: /kb/161/Q161198/
 
 ## Q161198: FIX: Program Code Cannot Set Database Property to Null String
 
+{% raw %}
+
 	Article: Q161198
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -92,3 +94,5 @@ permalink: /kb/161/Q161198/
 	
 	=============================================================================
 	
+
+{% endraw %}

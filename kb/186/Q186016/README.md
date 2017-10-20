@@ -6,6 +6,8 @@ permalink: /kb/186/Q186016/
 
 ## Q186016: WD97: Spelling Checker Constantly Rechecks Words in All Caps
 
+{% raw %}
+
 	Article: Q186016
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/186/Q186016/
 	
 	=============================================================================
 	
+
+{% endraw %}

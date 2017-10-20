@@ -6,6 +6,8 @@ permalink: /kb/130/Q130508/
 
 ## Q130508: Non-White Text or Graphics Printed in Black
 
+{% raw %}
+
 	Article: Q130508
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/130/Q130508/
 	
 	=============================================================================
 	
+
+{% endraw %}

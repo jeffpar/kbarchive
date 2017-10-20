@@ -6,6 +6,8 @@ permalink: /kb/095/Q95029/
 
 ## Q95029: CSS Laboratories 386-20 May Require BIOS Upgrade
 
+{% raw %}
+
 	Article: Q95029
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/095/Q95029/
 	
 	=============================================================================
 	
+
+{% endraw %}

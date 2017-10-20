@@ -6,6 +6,8 @@ permalink: /kb/163/Q163806/
 
 ## Q163806: SMS: Can't Remote Control Windows NT Client with NWLink IPX/SPX
 
+{% raw %}
+
 	Article: Q163806
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -68,3 +70,5 @@ permalink: /kb/163/Q163806/
 	
 	=============================================================================
 	
+
+{% endraw %}

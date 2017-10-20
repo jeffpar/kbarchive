@@ -6,6 +6,8 @@ permalink: /kb/167/Q167683/
 
 ## Q167683: SMS: Audit32 Causes an Access Violation
 
+{% raw %}
+
 	Article: Q167683
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -92,3 +94,5 @@ permalink: /kb/167/Q167683/
 	
 	=============================================================================
 	
+
+{% endraw %}

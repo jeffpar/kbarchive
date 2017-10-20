@@ -6,6 +6,8 @@ permalink: /kb/260/Q260180/
 
 ## Q260180: Access Violation in Inetinfo.exe
 
+{% raw %}
+
 	Article: Q260180
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -215,3 +217,5 @@ permalink: /kb/260/Q260180/
 	
 	=============================================================================
 	
+
+{% endraw %}

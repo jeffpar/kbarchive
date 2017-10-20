@@ -6,6 +6,8 @@ permalink: /kb/132/Q132029/
 
 ## Q132029: ADT2: DOC GetRecordsetClone Method Unsuccessful Win 95/NT 3.5
 
+{% raw %}
+
 	Article: Q132029
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -145,3 +147,5 @@ permalink: /kb/132/Q132029/
 	
 	=============================================================================
 	
+
+{% endraw %}

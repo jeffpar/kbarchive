@@ -6,6 +6,8 @@ permalink: /kb/134/Q134470/
 
 ## Q134470: Setup May Damage FAT on Primary 1 GB Internal SCSI Drive
 
+{% raw %}
+
 	Article: Q134470
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134470/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127887/
 
 ## Q127887: Cannot Print Legal Documents on TI MicroLaser Printer
 
+{% raw %}
+
 	Article: Q127887
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/127/Q127887/
 	
 	=============================================================================
 	
+
+{% endraw %}

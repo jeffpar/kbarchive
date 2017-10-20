@@ -6,6 +6,8 @@ permalink: /kb/246/Q246583/
 
 ## Q246583: SMS: RC Does Not Work in Master Domain Model Using Global Groups
 
+{% raw %}
+
 	Article: Q246583
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -169,3 +171,5 @@ permalink: /kb/246/Q246583/
 	
 	=============================================================================
 	
+
+{% endraw %}

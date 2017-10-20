@@ -6,6 +6,8 @@ permalink: /kb/156/Q156864/
 
 ## Q156864: FIX: Debugger Hangs Expanding TreeView in Debug Watch Window
 
+{% raw %}
+
 	Article: Q156864
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -90,3 +92,5 @@ permalink: /kb/156/Q156864/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193103/
 
 ## Q193103: HOWTO: Implement a View-Based Default Printer in MFC
 
+{% raw %}
+
 	Article: Q193103
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -253,11 +255,11 @@ permalink: /kb/193/Q193103/
 	      ...
 	      // Generated message map functions.
 	  protected:
-	      //{ {AFX_MSG(CMyPrintView)
+	      //{{AFX_MSG(CMyPrintView)
 	      ...
 	      afx_msg void OnFilePrintSetup();
 	      ...
-	      //} }AFX_MSG
+	      //}}AFX_MSG
 	      DECLARE_MESSAGE_MAP()
 	
 	      BOOL GetPrinterDevice(LPTSTR pszPrinterName,
@@ -459,3 +461,5 @@ permalink: /kb/193/Q193103/
 	
 	=============================================================================
 	
+
+{% endraw %}

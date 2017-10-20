@@ -6,6 +6,8 @@ permalink: /kb/134/Q134597/
 
 ## Q134597: BREAK and VERIFY Commands Do Not Work in MS-DOS Window
 
+{% raw %}
+
 	Article: Q134597
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/134/Q134597/
 	
 	=============================================================================
 	
+
+{% endraw %}

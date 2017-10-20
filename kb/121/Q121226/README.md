@@ -6,6 +6,8 @@ permalink: /kb/121/Q121226/
 
 ## Q121226: Network Install Needs DRVLIB and Platform Directories Shared
 
+{% raw %}
+
 	Article: Q121226
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/121/Q121226/
 	
 	=============================================================================
 	
+
+{% endraw %}

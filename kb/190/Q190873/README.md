@@ -6,6 +6,8 @@ permalink: /kb/190/Q190873/
 
 ## Q190873: WD97: Entries in Text Box/Callouts Missing from TOC
 
+{% raw %}
+
 	Article: Q190873
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/190/Q190873/
 	
 	=============================================================================
 	
+
+{% endraw %}

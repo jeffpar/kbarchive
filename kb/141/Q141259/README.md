@@ -6,6 +6,8 @@ permalink: /kb/141/Q141259/
 
 ## Q141259: Correct Answer Feedback Absent in Multimedia Matching Game
 
+{% raw %}
+
 	Article: Q141259
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/141/Q141259/
 	
 	=============================================================================
 	
+
+{% endraw %}

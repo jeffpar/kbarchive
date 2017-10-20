@@ -6,6 +6,8 @@ permalink: /kb/139/Q139203/
 
 ## Q139203: X400: Errors with Invalid X.400 Address Attributes
 
+{% raw %}
+
 	Article: Q139203
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -73,3 +75,5 @@ permalink: /kb/139/Q139203/
 	
 	=============================================================================
 	
+
+{% endraw %}

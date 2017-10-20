@@ -6,6 +6,8 @@ permalink: /kb/148/Q148998/
 
 ## Q148998: DOCERR: ListIndex (OutLine) Returns -1 If No Item Is Selected
 
+{% raw %}
+
 	Article: Q148998
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -88,3 +90,5 @@ permalink: /kb/148/Q148998/
 	
 	=============================================================================
 	
+
+{% endraw %}

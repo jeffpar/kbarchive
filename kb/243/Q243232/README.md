@@ -6,6 +6,8 @@ permalink: /kb/243/Q243232/
 
 ## Q243232: Ki386VdmSegmentNotPresent Causes &quot;Stop 0x00000050&quot; Error Message
 
+{% raw %}
+
 	Article: Q243232
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0,4.0 SP4
@@ -82,3 +84,5 @@ permalink: /kb/243/Q243232/
 	
 	=============================================================================
 	
+
+{% endraw %}

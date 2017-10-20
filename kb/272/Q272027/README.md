@@ -6,6 +6,8 @@ permalink: /kb/272/Q272027/
 
 ## Q272027: Encarta: Sounds Not Played During Serengeti Plain Virtual Tour
 
+{% raw %}
+
 	Article: Q272027
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/272/Q272027/
 	
 	=============================================================================
 	
+
+{% endraw %}

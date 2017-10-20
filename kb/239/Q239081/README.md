@@ -6,6 +6,8 @@ permalink: /kb/239/Q239081/
 
 ## Q239081: XADM: Event 1016 Logged During Mailbox Manager Cleanup
 
+{% raw %}
+
 	Article: Q239081
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -53,3 +55,5 @@ permalink: /kb/239/Q239081/
 	
 	=============================================================================
 	
+
+{% endraw %}

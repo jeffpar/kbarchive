@@ -6,6 +6,8 @@ permalink: /kb/168/Q168662/
 
 ## Q168662: DLC May Fail When Connecting Through an IBM 2210 Router
 
+{% raw %}
+
 	Article: Q168662
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -96,3 +98,5 @@ permalink: /kb/168/Q168662/
 	
 	=============================================================================
 	
+
+{% endraw %}

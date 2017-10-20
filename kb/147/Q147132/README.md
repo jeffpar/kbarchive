@@ -6,6 +6,8 @@ permalink: /kb/147/Q147132/
 
 ## Q147132: How to Prevent DoubleSpace or DriveSpace Drivers from Loading
 
+{% raw %}
+
 	Article: Q147132
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -106,3 +108,5 @@ permalink: /kb/147/Q147132/
 	
 	=============================================================================
 	
+
+{% endraw %}

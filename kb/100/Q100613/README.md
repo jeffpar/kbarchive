@@ -6,6 +6,8 @@ permalink: /kb/100/Q100613/
 
 ## Q100613: FIX: Data Access Setup Can Give Incorrect Error Message
 
+{% raw %}
+
 	Article: Q100613
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -87,3 +89,5 @@ permalink: /kb/100/Q100613/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223066/
 
 ## Q223066: FIX: Placing MsgBox in SelChange Event of DataGrid Causes IPF
 
+{% raw %}
+
 	Article: Q223066
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -122,3 +124,5 @@ permalink: /kb/223/Q223066/
 	
 	=============================================================================
 	
+
+{% endraw %}

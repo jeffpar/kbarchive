@@ -6,6 +6,8 @@ permalink: /kb/215/Q215415/
 
 ## Q215415: BUG: Access Key Works When UseMnemonic is Set to False
 
+{% raw %}
+
 	Article: Q215415
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,2.11,3.0
@@ -93,3 +95,5 @@ permalink: /kb/215/Q215415/
 	
 	=============================================================================
 	
+
+{% endraw %}

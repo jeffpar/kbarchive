@@ -6,6 +6,8 @@ permalink: /kb/262/Q262519/
 
 ## Q262519: FIX: SQLSetCursorName Fails Without ANSI Quoted Identifiers
 
+{% raw %}
+
 	Article: Q262519
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1,3.7,7.0
@@ -79,3 +81,5 @@ permalink: /kb/262/Q262519/
 	
 	=============================================================================
 	
+
+{% endraw %}

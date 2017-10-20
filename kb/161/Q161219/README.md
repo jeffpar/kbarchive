@@ -6,6 +6,8 @@ permalink: /kb/161/Q161219/
 
 ## Q161219: Cinemania 97: Corrupted Fonts on IBM Thinkpad with Cyber9320
 
+{% raw %}
+
 	Article: Q161219
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -86,3 +88,5 @@ permalink: /kb/161/Q161219/
 	
 	=============================================================================
 	
+
+{% endraw %}

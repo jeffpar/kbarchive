@@ -6,6 +6,8 @@ permalink: /kb/113/Q113754/
 
 ## Q113754: &quot;Syntax Error&quot; When Verifying UDF() in Report Writer
 
+{% raw %}
+
 	Article: Q113754
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.1,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -82,3 +84,5 @@ permalink: /kb/113/Q113754/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172364/
 
 ## Q172364: XCON: Move User Operation may Cause Mail to Stall or NDR
 
+{% raw %}
+
 	Article: Q172364
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -107,3 +109,5 @@ permalink: /kb/172/Q172364/
 	
 	=============================================================================
 	
+
+{% endraw %}

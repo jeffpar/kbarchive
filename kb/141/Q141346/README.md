@@ -6,6 +6,8 @@ permalink: /kb/141/Q141346/
 
 ## Q141346: FIX: ClassWizard Misspells CPropertyPage in OnFinalRelease()
 
+{% raw %}
+
 	Article: Q141346
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -66,3 +68,5 @@ permalink: /kb/141/Q141346/
 	
 	=============================================================================
 	
+
+{% endraw %}

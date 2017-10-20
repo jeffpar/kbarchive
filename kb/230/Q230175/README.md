@@ -6,6 +6,8 @@ permalink: /kb/230/Q230175/
 
 ## Q230175: Oracle's Fail Safe Server Does Not Work When Adding a Database
 
+{% raw %}
+
 	Article: Q230175
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/230/Q230175/
 	
 	=============================================================================
 	
+
+{% endraw %}

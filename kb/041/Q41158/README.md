@@ -6,6 +6,8 @@ permalink: /kb/041/Q41158/
 
 ## Q41158: C Versions 3.00, 4.00 Do Not Require Semicolon in Structure
 
+{% raw %}
+
 	Article: Q41158
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10
@@ -31,3 +33,5 @@ permalink: /kb/041/Q41158/
 	
 	Note: According to the Kernighan and Ritchie, semicolons are required
 	after each field in the structure declaration.
+
+{% endraw %}

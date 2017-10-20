@@ -6,6 +6,8 @@ permalink: /kb/036/Q36397/
 
 ## Q36397: Must Use A&#36;=INKEY&#36; after SLEEP to Clear Keyboard Buffer
 
+{% raw %}
+
 	Article: Q36397
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -39,3 +41,5 @@ permalink: /kb/036/Q36397/
 	'  a$ will be those 5 characters plus any entered at the prompt.
 	INPUT a$
 	PRINT a$
+
+{% endraw %}

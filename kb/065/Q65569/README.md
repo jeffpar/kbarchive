@@ -6,6 +6,8 @@ permalink: /kb/065/Q65569/
 
 ## Q65569: BC.EXE May Hang Using Single Quotation Marks in String CONST
 
+{% raw %}
+
 	Article: Q65569
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -43,3 +45,5 @@ permalink: /kb/065/Q65569/
 	   CONST A$ = "Hello World"
 	
 	Note: The CONST statement was first introduced in QuickBASIC 3.00.
+
+{% endraw %}

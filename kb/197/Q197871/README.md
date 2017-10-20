@@ -6,6 +6,8 @@ permalink: /kb/197/Q197871/
 
 ## Q197871: XFOR: Question Mark Characters in Message of the Day
 
+{% raw %}
+
 	Article: Q197871
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/197/Q197871/
 	
 	=============================================================================
 	
+
+{% endraw %}

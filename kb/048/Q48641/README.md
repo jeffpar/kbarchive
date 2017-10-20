@@ -6,6 +6,8 @@ permalink: /kb/048/Q48641/
 
 ## Q48641: Linesize Pragma Not Supported in QuickC
 
+{% raw %}
+
 	Article: Q48641
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00
@@ -24,3 +26,5 @@ permalink: /kb/048/Q48641/
 	   warning C4068: unknown pragma
 	
 	   warning C4000: unknown warning
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183376/
 
 ## Q183376: FP98 SBS: Pgs. 56-58: Shared Borders Directions Are Incorrect
 
+{% raw %}
+
 	Article: Q183376
 	Product(s): Microsoft Press
 	Version(s): 
@@ -113,3 +115,5 @@ permalink: /kb/183/Q183376/
 	
 	=============================================================================
 	
+
+{% endraw %}

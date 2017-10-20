@@ -6,6 +6,8 @@ permalink: /kb/249/Q249179/
 
 ## Q249179: SMS: Delays in Displaying Distribution Points in SMS 2.0 Site
 
+{% raw %}
+
 	Article: Q249179
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -73,3 +75,5 @@ permalink: /kb/249/Q249179/
 	
 	=============================================================================
 	
+
+{% endraw %}

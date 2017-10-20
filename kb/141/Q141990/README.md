@@ -6,6 +6,8 @@ permalink: /kb/141/Q141990/
 
 ## Q141990: WD97: How to Create an Online Form Using Form Fields
 
+{% raw %}
+
 	Article: Q141990
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -164,3 +166,5 @@ permalink: /kb/141/Q141990/
 	
 	=============================================================================
 	
+
+{% endraw %}

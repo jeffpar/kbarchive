@@ -6,6 +6,8 @@ permalink: /kb/042/Q42929/
 
 ## Q42929: Limit of 40 Files with LLIBCMT.LIB and LLIBCDLL.LIB
 
+{% raw %}
+
 	Article: Q42929
 	Product(s): See article
 	Version(s): 5.10
@@ -31,3 +33,5 @@ permalink: /kb/042/Q42929/
 	bumped up using DosSetMaxFH().  The problem was with the streams. In C
 	6.0, the readme.doc file details how to increase the file stream count
 	also.
+
+{% endraw %}

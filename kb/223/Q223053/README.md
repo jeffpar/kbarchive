@@ -6,6 +6,8 @@ permalink: /kb/223/Q223053/
 
 ## Q223053: SMS: Installation Does Not Finish If Spaces Exist in Folder Name
 
+{% raw %}
+
 	Article: Q223053
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/223/Q223053/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/218/Q218930/
 
 ## Q218930: DirectX: Mismatched DirectX Files After You Reinstall Windows 98
 
+{% raw %}
+
 	Article: Q218930
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -105,3 +107,5 @@ permalink: /kb/218/Q218930/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186538/
 
 ## Q186538: PointCast Business Network: Error with Pcn32.exe
 
+{% raw %}
+
 	Article: Q186538
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -53,3 +55,5 @@ permalink: /kb/186/Q186538/
 	
 	=============================================================================
 	
+
+{% endraw %}

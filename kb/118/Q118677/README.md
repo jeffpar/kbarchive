@@ -6,6 +6,8 @@ permalink: /kb/118/Q118677/
 
 ## Q118677: PC Gen: Bound Applications That Work with MMTA
 
+{% raw %}
+
 	Article: Q118677
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -97,3 +99,5 @@ permalink: /kb/118/Q118677/
 	
 	=============================================================================
 	
+
+{% endraw %}

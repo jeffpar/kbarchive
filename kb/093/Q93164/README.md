@@ -6,6 +6,8 @@ permalink: /kb/093/Q93164/
 
 ## Q93164: WFWG: Network Button Does Not Appear in Open Dialog Box
 
+{% raw %}
+
 	Article: Q93164
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -97,3 +99,5 @@ permalink: /kb/093/Q93164/
 	
 	=============================================================================
 	
+
+{% endraw %}

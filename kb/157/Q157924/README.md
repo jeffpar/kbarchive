@@ -6,6 +6,8 @@ permalink: /kb/157/Q157924/
 
 ## Q157924: Err Msg: &quot;IOS Failed to Initialize&quot; on Boot
 
+{% raw %}
+
 	Article: Q157924
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -100,3 +102,5 @@ permalink: /kb/157/Q157924/
 	
 	=============================================================================
 	
+
+{% endraw %}

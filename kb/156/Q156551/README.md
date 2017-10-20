@@ -6,6 +6,8 @@ permalink: /kb/156/Q156551/
 
 ## Q156551: HOWTO: Use SYS(3054) to Optimize a Query
 
+{% raw %}
+
 	Article: Q156551
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -144,3 +146,5 @@ permalink: /kb/156/Q156551/
 	
 	=============================================================================
 	
+
+{% endraw %}

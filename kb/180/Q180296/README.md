@@ -6,6 +6,8 @@ permalink: /kb/180/Q180296/
 
 ## Q180296: MS Mail Gateway to NGW Dirsync Fails to Provide Complete GAL
 
+{% raw %}
+
 	Article: Q180296
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -52,3 +54,5 @@ permalink: /kb/180/Q180296/
 	
 	=============================================================================
 	
+
+{% endraw %}

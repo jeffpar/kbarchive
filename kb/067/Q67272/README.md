@@ -6,6 +6,8 @@ permalink: /kb/067/Q67272/
 
 ## Q67272: C1001: Internal Compiler Error: codegen.x, Line 559
 
+{% raw %}
+
 	Article: Q67272
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -53,3 +55,5 @@ permalink: /kb/067/Q67272/
 	      DB_PTERM_PTR(pt_id)->factors[j++] = id;
 	   }
 	}
+
+{% endraw %}

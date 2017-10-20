@@ -6,6 +6,8 @@ permalink: /kb/162/Q162727/
 
 ## Q162727: SMS: Setup Switch &quot;/noautoupgrade&quot; Fails
 
+{% raw %}
+
 	Article: Q162727
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -51,3 +53,5 @@ permalink: /kb/162/Q162727/
 	
 	=============================================================================
 	
+
+{% endraw %}

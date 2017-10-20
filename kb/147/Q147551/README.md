@@ -6,6 +6,8 @@ permalink: /kb/147/Q147551/
 
 ## Q147551: Serial Mouse Fails With CalComp Digitizer
 
+{% raw %}
+
 	Article: Q147551
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -119,3 +121,5 @@ permalink: /kb/147/Q147551/
 	
 	=============================================================================
 	
+
+{% endraw %}

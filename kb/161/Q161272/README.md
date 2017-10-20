@@ -6,6 +6,8 @@ permalink: /kb/161/Q161272/
 
 ## Q161272: HOWTO: Make a Typelib (.TLB) File for ActiveX Components
 
+{% raw %}
+
 	Article: Q161272
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/161/Q161272/
 	
 	=============================================================================
 	
+
+{% endraw %}

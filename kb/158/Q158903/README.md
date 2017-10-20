@@ -6,6 +6,8 @@ permalink: /kb/158/Q158903/
 
 ## Q158903: Garbled Output from Macintosh to Shared PostScript Printer
 
+{% raw %}
+
 	Article: Q158903
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1; winnt:3.5,3.51,4.0
@@ -98,3 +100,5 @@ permalink: /kb/158/Q158903/
 	
 	=============================================================================
 	
+
+{% endraw %}

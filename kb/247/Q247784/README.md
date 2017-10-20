@@ -6,6 +6,8 @@ permalink: /kb/247/Q247784/
 
 ## Q247784: INFO: '80020101' Returned From Some ActiveX Scripting Methods
 
+{% raw %}
+
 	Article: Q247784
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,5.0sp1,5.0sp2,5.0sp3,6.0
@@ -67,3 +69,5 @@ permalink: /kb/247/Q247784/
 	
 	=============================================================================
 	
+
+{% endraw %}

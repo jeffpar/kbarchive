@@ -6,6 +6,8 @@ permalink: /kb/302/Q302442/
 
 ## Q302442: &quot;No Local Numbers&quot; Error When Switching Connection From LAN To M
 
+{% raw %}
+
 	Article: Q302442
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -61,3 +63,5 @@ permalink: /kb/302/Q302442/
 	
 	=============================================================================
 	
+
+{% endraw %}

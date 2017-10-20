@@ -6,6 +6,8 @@ permalink: /kb/156/Q156235/
 
 ## Q156235: BUG: MODIFY WINDOW SCREEN Does Not Reset BackColor Property
 
+{% raw %}
+
 	Article: Q156235
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -77,3 +79,5 @@ permalink: /kb/156/Q156235/
 	
 	=============================================================================
 	
+
+{% endraw %}

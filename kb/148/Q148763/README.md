@@ -6,6 +6,8 @@ permalink: /kb/148/Q148763/
 
 ## Q148763: IIS Returns IP Address Instead of Host Name
 
+{% raw %}
+
 	Article: Q148763
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/148/Q148763/
 	
 	=============================================================================
 	
+
+{% endraw %}

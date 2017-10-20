@@ -6,6 +6,8 @@ permalink: /kb/097/Q97303/
 
 ## Q97303: ToolBar.exe Demonstrates Creating a Toolbar
 
+{% raw %}
+
 	Article: Q97303
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -65,3 +67,5 @@ permalink: /kb/097/Q97303/
 	
 	=============================================================================
 	
+
+{% endraw %}

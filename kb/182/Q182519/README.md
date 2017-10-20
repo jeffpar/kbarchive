@@ -6,6 +6,8 @@ permalink: /kb/182/Q182519/
 
 ## Q182519: XADM: cc:Mail Addresses Not Created for 4.0 Site Recipients
 
+{% raw %}
+
 	Article: Q182519
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -53,3 +55,5 @@ permalink: /kb/182/Q182519/
 	
 	=============================================================================
 	
+
+{% endraw %}

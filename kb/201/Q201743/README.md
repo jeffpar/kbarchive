@@ -6,6 +6,8 @@ permalink: /kb/201/Q201743/
 
 ## Q201743: Rotated Text Prints Distorted When Using Non-Square Resolution
 
+{% raw %}
+
 	Article: Q201743
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/201/Q201743/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/070/Q70461/
 
 ## Q70461: Tetris for Windows Toggles NUM LOCK Key Off
 
+{% raw %}
+
 	Article: Q70461
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/070/Q70461/
 	
 	=============================================================================
 	
+
+{% endraw %}

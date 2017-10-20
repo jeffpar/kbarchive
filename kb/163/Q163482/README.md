@@ -6,6 +6,8 @@ permalink: /kb/163/Q163482/
 
 ## Q163482: XCLN: Exchange and Schedule+ Options Not Available On Start
 
+{% raw %}
+
 	Article: Q163482
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -55,3 +57,5 @@ permalink: /kb/163/Q163482/
 	
 	=============================================================================
 	
+
+{% endraw %}

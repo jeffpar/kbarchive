@@ -6,6 +6,8 @@ permalink: /kb/129/Q129439/
 
 ## Q129439: PRB: Connection Designer Doesn't Have OK or Cancel Buttons
 
+{% raw %}
+
 	Article: Q129439
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/129/Q129439/
 	
 	=============================================================================
 	
+
+{% endraw %}

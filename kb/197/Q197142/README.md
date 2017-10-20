@@ -6,6 +6,8 @@ permalink: /kb/197/Q197142/
 
 ## Q197142: XFOR: Internet Mail Service Stops when Routing Messages
 
+{% raw %}
+
 	Article: Q197142
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -84,3 +86,5 @@ permalink: /kb/197/Q197142/
 	
 	=============================================================================
 	
+
+{% endraw %}

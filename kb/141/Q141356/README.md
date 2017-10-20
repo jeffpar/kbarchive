@@ -6,6 +6,8 @@ permalink: /kb/141/Q141356/
 
 ## Q141356: FIX: PageFrame Refresh Fails with Stacked Pages
 
+{% raw %}
+
 	Article: Q141356
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/141/Q141356/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161520/
 
 ## Q161520: SMS Doc Err: Help Indicates Use of Colons in Machine Path
 
+{% raw %}
+
 	Article: Q161520
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -68,3 +70,5 @@ permalink: /kb/161/Q161520/
 	
 	=============================================================================
 	
+
+{% endraw %}

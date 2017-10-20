@@ -6,6 +6,8 @@ permalink: /kb/155/Q155258/
 
 ## Q155258: Level Indicator Does Not Work on MIPS with Wave Audio
 
+{% raw %}
+
 	Article: Q155258
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -44,3 +46,5 @@ permalink: /kb/155/Q155258/
 	
 	=============================================================================
 	
+
+{% endraw %}

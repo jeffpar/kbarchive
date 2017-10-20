@@ -6,6 +6,8 @@ permalink: /kb/152/Q152226/
 
 ## Q152226: XCLN: Inbox and OOF Assistants Missing from Tools Menu
 
+{% raw %}
+
 	Article: Q152226
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -49,3 +51,5 @@ permalink: /kb/152/Q152226/
 	
 	=============================================================================
 	
+
+{% endraw %}

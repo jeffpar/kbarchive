@@ -6,6 +6,8 @@ permalink: /kb/085/Q85329/
 
 ## Q85329: BUG: GlobalPageLock() Moves Memory Fixed by GlobalFix()
 
+{% raw %}
+
 	Article: Q85329
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/085/Q85329/
 	
 	=============================================================================
 	
+
+{% endraw %}

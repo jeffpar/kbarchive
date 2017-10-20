@@ -6,6 +6,8 @@ permalink: /kb/062/Q62666/
 
 ## Q62666: DosSetMaxFH Between 0-39 Fails Under CodeView 3.00
 
+{% raw %}
+
 	Article: Q62666
 	Product(s): See article
 	Version(s): 3.00
@@ -48,3 +50,5 @@ permalink: /kb/062/Q62666/
 	
 	You can call the DosSetMaxFH routine to set at least 40 file handles
 	to work around this problem.
+
+{% endraw %}

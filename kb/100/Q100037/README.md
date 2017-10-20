@@ -6,6 +6,8 @@ permalink: /kb/100/Q100037/
 
 ## Q100037: Mac Srv: Server Read Me File Fails to Print on LaserJet
 
+{% raw %}
+
 	Article: Q100037
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/100/Q100037/
 	
 	=============================================================================
 	
+
+{% endraw %}

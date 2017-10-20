@@ -6,6 +6,8 @@ permalink: /kb/140/Q140751/
 
 ## Q140751: PRB: Problems Occur When Defining _AFX_NO_XXX
 
+{% raw %}
+
 	Article: Q140751
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -109,3 +111,5 @@ permalink: /kb/140/Q140751/
 	
 	=============================================================================
 	
+
+{% endraw %}

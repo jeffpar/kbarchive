@@ -6,6 +6,8 @@ permalink: /kb/142/Q142648/
 
 ## Q142648: STOP 0x00000024 in Ntfs.sys
 
+{% raw %}
+
 	Article: Q142648
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142648/
 	
 	=============================================================================
 	
+
+{% endraw %}

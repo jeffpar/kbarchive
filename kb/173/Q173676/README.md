@@ -6,6 +6,8 @@ permalink: /kb/173/Q173676/
 
 ## Q173676: Client Cannot Resolve MX Record via Microsoft DNS Server
 
+{% raw %}
+
 	Article: Q173676
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/173/Q173676/
 	
 	=============================================================================
 	
+
+{% endraw %}

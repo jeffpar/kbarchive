@@ -6,6 +6,8 @@ permalink: /kb/252/Q252494/
 
 ## Q252494: XWEB: Attachments Cannot Be Opened in OWA 5.5 SP3
 
+{% raw %}
+
 	Article: Q252494
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -104,3 +106,5 @@ permalink: /kb/252/Q252494/
 	
 	=============================================================================
 	
+
+{% endraw %}

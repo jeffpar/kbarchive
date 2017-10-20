@@ -6,6 +6,8 @@ permalink: /kb/122/Q122164/
 
 ## Q122164: WFWG Doesn't Run with Novell/Eagle NE200 PCMCIA Ethernet Card
 
+{% raw %}
+
 	Article: Q122164
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/122/Q122164/
 	
 	=============================================================================
 	
+
+{% endraw %}

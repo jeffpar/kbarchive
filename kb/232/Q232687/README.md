@@ -6,6 +6,8 @@ permalink: /kb/232/Q232687/
 
 ## Q232687: XFOR: Cannot Send Messages to cc:Mail Recipients After Dirsync
 
+{% raw %}
+
 	Article: Q232687
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -77,3 +79,5 @@ permalink: /kb/232/Q232687/
 	
 	=============================================================================
 	
+
+{% endraw %}

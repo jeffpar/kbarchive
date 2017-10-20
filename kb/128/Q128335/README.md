@@ -6,6 +6,8 @@ permalink: /kb/128/Q128335/
 
 ## Q128335: IPX Subnet Clients Unable to Connect to Windows NT
 
+{% raw %}
+
 	Article: Q128335
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11,3.5
@@ -165,3 +167,5 @@ permalink: /kb/128/Q128335/
 	
 	=============================================================================
 	
+
+{% endraw %}

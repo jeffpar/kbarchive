@@ -6,6 +6,8 @@ permalink: /kb/191/Q191504/
 
 ## Q191504: XFOR: IMAP4 FETCH Command Returns Wrong Size
 
+{% raw %}
+
 	Article: Q191504
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -111,3 +113,5 @@ permalink: /kb/191/Q191504/
 	
 	=============================================================================
 	
+
+{% endraw %}

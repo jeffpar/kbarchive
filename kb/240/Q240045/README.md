@@ -6,6 +6,8 @@ permalink: /kb/240/Q240045/
 
 ## Q240045: INFO: Solve Microsoft Windows NT Setup Problems Like a Pro
 
+{% raw %}
+
 	Article: Q240045
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:NT 4.0; winnt:4.0,4.0 SP4,5.0
@@ -148,3 +150,5 @@ permalink: /kb/240/Q240045/
 	
 	=============================================================================
 	
+
+{% endraw %}

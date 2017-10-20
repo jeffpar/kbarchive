@@ -6,6 +6,8 @@ permalink: /kb/224/Q224992/
 
 ## Q224992: Maintaining Transactional Integrity with OPLOCKS
 
+{% raw %}
+
 	Article: Q224992
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/224/Q224992/
 	
 	=============================================================================
 	
+
+{% endraw %}

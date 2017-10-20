@@ -6,6 +6,8 @@ permalink: /kb/138/Q138757/
 
 ## Q138757: HOWTO: Change the Icon in an Application
 
+{% raw %}
+
 	Article: Q138757
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/138/Q138757/
 	
 	=============================================================================
 	
+
+{% endraw %}

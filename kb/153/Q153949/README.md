@@ -6,6 +6,8 @@ permalink: /kb/153/Q153949/
 
 ## Q153949: CSNW Does Not Support MS-DOS Name Space Correctly
 
+{% raw %}
+
 	Article: Q153949
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -84,3 +86,5 @@ permalink: /kb/153/Q153949/
 	
 	=============================================================================
 	
+
+{% endraw %}

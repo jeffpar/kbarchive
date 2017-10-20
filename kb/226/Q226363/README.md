@@ -6,6 +6,8 @@ permalink: /kb/226/Q226363/
 
 ## Q226363: HTMLA Web Administration Forms Display Incorrect Max Log Size
 
+{% raw %}
+
 	Article: Q226363
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -66,3 +68,5 @@ permalink: /kb/226/Q226363/
 	
 	=============================================================================
 	
+
+{% endraw %}

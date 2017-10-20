@@ -6,6 +6,8 @@ permalink: /kb/240/Q240760/
 
 ## Q240760: Error Message: Web Publishing Wizard Advanced INF Install INF...
 
+{% raw %}
+
 	Article: Q240760
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -67,3 +69,5 @@ permalink: /kb/240/Q240760/
 	
 	=============================================================================
 	
+
+{% endraw %}

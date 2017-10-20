@@ -6,6 +6,8 @@ permalink: /kb/173/Q173186/
 
 ## Q173186: XCLN: Installing the Server Space Client Extension Tool
 
+{% raw %}
+
 	Article: Q173186
 	Product(s): Microsoft Exchange
 	Version(s): Win95:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -112,3 +114,5 @@ permalink: /kb/173/Q173186/
 	
 	=============================================================================
 	
+
+{% endraw %}

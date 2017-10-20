@@ -6,6 +6,8 @@ permalink: /kb/110/Q110720/
 
 ## Q110720: Chess: Player Sides May Change After Restart
 
+{% raw %}
+
 	Article: Q110720
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/110/Q110720/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/078/Q78137/
 
 ## Q78137: Installing Multiple ELNK16 Adapters in a LAN Man Machine
 
+{% raw %}
+
 	Article: Q78137
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -139,3 +141,5 @@ permalink: /kb/078/Q78137/
 	
 	=============================================================================
 	
+
+{% endraw %}

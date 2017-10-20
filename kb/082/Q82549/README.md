@@ -6,6 +6,8 @@ permalink: /kb/082/Q82549/
 
 ## Q82549: GP Faults with Microsoft FORTRAN 5.1 Programs
 
+{% raw %}
+
 	Article: Q82549
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/082/Q82549/
 	
 	=============================================================================
 	
+
+{% endraw %}

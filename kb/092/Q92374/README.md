@@ -6,6 +6,8 @@ permalink: /kb/092/Q92374/
 
 ## Q92374: PC Win: Err Msg: That User's Mailbox Is Corrupt...
 
+{% raw %}
+
 	Article: Q92374
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b
@@ -56,3 +58,5 @@ permalink: /kb/092/Q92374/
 	
 	=============================================================================
 	
+
+{% endraw %}

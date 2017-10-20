@@ -6,6 +6,8 @@ permalink: /kb/165/Q165001/
 
 ## Q165001: Adding TCP/IP Support to RemoteBoot Workstations
 
+{% raw %}
+
 	Article: Q165001
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -192,3 +194,5 @@ permalink: /kb/165/Q165001/
 	
 	=============================================================================
 	
+
+{% endraw %}

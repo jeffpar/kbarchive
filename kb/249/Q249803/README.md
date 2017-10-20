@@ -6,6 +6,8 @@ permalink: /kb/249/Q249803/
 
 ## Q249803: BUG: Unicode Issue: Using MFC ODBC w/ the SQL Server ODBC Driver
 
+{% raw %}
+
 	Article: Q249803
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -206,3 +208,5 @@ permalink: /kb/249/Q249803/
 	
 	=============================================================================
 	
+
+{% endraw %}

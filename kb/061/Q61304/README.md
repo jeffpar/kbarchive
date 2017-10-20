@@ -6,6 +6,8 @@ permalink: /kb/061/Q61304/
 
 ## Q61304: CL: Error Output Not Redirected in Certain Cases
 
+{% raw %}
+
 	Article: Q61304
 	Product(s): See article
 	Version(s): 6.00
@@ -46,3 +48,5 @@ permalink: /kb/061/Q61304/
 	Microsoft has confirmed this to be a problem in C version 6.00. We
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

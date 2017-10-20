@@ -6,6 +6,8 @@ permalink: /kb/136/Q136970/
 
 ## Q136970: PMTU Black Hole Detection Algorithm Change for Windows NT 3.51
 
+{% raw %}
+
 	Article: Q136970
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -151,3 +153,5 @@ permalink: /kb/136/Q136970/
 	
 	=============================================================================
 	
+
+{% endraw %}

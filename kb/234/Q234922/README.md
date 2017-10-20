@@ -6,6 +6,8 @@ permalink: /kb/234/Q234922/
 
 ## Q234922: Upgrading to IIS 5.0 Shows Home Page from Previous IIS Version
 
+{% raw %}
+
 	Article: Q234922
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -60,3 +62,5 @@ permalink: /kb/234/Q234922/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162157/
 
 ## Q162157: Cyberbit Unicode Font Does Not Return Correct Charset
 
+{% raw %}
+
 	Article: Q162157
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/162/Q162157/
 	
 	=============================================================================
 	
+
+{% endraw %}

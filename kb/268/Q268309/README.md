@@ -6,6 +6,8 @@ permalink: /kb/268/Q268309/
 
 ## Q268309: HOWTO: Associate an Icon with an eVB Application
 
+{% raw %}
+
 	Article: Q268309
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -238,3 +240,5 @@ permalink: /kb/268/Q268309/
 	
 	=============================================================================
 	
+
+{% endraw %}

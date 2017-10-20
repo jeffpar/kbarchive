@@ -6,6 +6,8 @@ permalink: /kb/069/Q69108/
 
 ## Q69108: Instant Watch Truncates Display of String After Null Byte
 
+{% raw %}
+
 	Article: Q69108
 	Product(s): See article
 	Version(s): 4.50
@@ -68,3 +70,5 @@ permalink: /kb/069/Q69108/
 	
 	Note: CHR$(0) is displayed as a blank in the watch line at the top of
 	the editing screen.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111570/
 
 ## Q111570: System Hangs Using Super VGA Driver with Compaq QVision
 
+{% raw %}
+
 	Article: Q111570
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -59,3 +61,5 @@ permalink: /kb/111/Q111570/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242094/
 
 ## Q242094: ErrMsg: Unable to Find Primary Domain Controller for This Domain
 
+{% raw %}
+
 	Article: Q242094
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/242/Q242094/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102949/
 
 ## Q102949: PRB: DOSXNT: Fatal Error DX1070
 
+{% raw %}
+
 	Article: Q102949
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.0a,1.5,6.1,6.10a,6.11
@@ -77,3 +79,5 @@ permalink: /kb/102/Q102949/
 	
 	=============================================================================
 	
+
+{% endraw %}

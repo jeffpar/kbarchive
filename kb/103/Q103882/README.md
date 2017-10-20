@@ -6,6 +6,8 @@ permalink: /kb/103/Q103882/
 
 ## Q103882: Overview: The Network Application Programmer Interface (API)
 
+{% raw %}
+
 	Article: Q103882
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/103/Q103882/
 	
 	=============================================================================
 	
+
+{% endraw %}

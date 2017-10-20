@@ -6,6 +6,8 @@ permalink: /kb/130/Q130783/
 
 ## Q130783: STOP Msg: 0x0000003F NO_MORE_SYSTEMS_PTES Repetitive I/O on MIPS
 
+{% raw %}
+
 	Article: Q130783
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/130/Q130783/
 	
 	=============================================================================
 	
+
+{% endraw %}

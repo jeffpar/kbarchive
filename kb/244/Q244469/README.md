@@ -6,6 +6,8 @@ permalink: /kb/244/Q244469/
 
 ## Q244469: Logon Exp. Warning Appears to All Users Currently Logged On
 
+{% raw %}
+
 	Article: Q244469
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/244/Q244469/
 	
 	=============================================================================
 	
+
+{% endraw %}

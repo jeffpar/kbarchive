@@ -6,6 +6,8 @@ permalink: /kb/141/Q141347/
 
 ## Q141347: Err Msg: No Transport Provider Was Available for Delivery...
 
+{% raw %}
+
 	Article: Q141347
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -75,3 +77,5 @@ permalink: /kb/141/Q141347/
 	
 	=============================================================================
 	
+
+{% endraw %}

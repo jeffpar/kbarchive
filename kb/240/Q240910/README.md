@@ -6,6 +6,8 @@ permalink: /kb/240/Q240910/
 
 ## Q240910: XFOR: Err Msg: Error {Invalid syntax} with Notes Connector
 
+{% raw %}
+
 	Article: Q240910
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -69,3 +71,5 @@ permalink: /kb/240/Q240910/
 	
 	=============================================================================
 	
+
+{% endraw %}

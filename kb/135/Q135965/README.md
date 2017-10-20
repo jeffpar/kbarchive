@@ -6,6 +6,8 @@ permalink: /kb/135/Q135965/
 
 ## Q135965: More Disk Space Used After DriveSpace 3 Compression
 
+{% raw %}
+
 	Article: Q135965
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/135/Q135965/
 	
 	=============================================================================
 	
+
+{% endraw %}

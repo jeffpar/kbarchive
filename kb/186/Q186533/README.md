@@ -6,6 +6,8 @@ permalink: /kb/186/Q186533/
 
 ## Q186533: Allowing Users to Select an E-Mail Editor For Outlook 97
 
+{% raw %}
+
 	Article: Q186533
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -92,3 +94,5 @@ permalink: /kb/186/Q186533/
 	
 	=============================================================================
 	
+
+{% endraw %}

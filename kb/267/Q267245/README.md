@@ -6,6 +6,8 @@ permalink: /kb/267/Q267245/
 
 ## Q267245: XIMS: Internet Mail Service Returns NDR or Silently Drops E-Mail
 
+{% raw %}
+
 	Article: Q267245
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -68,3 +70,5 @@ permalink: /kb/267/Q267245/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156901/
 
 ## Q156901: INFO: STL Sample for the inplace_merge Function
 
+{% raw %}
+
 	Article: Q156901
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -175,3 +177,5 @@ permalink: /kb/156/Q156901/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104522/
 
 ## Q104522: Incorrect Swap File Name in Windows Resource Kit for 3.1
 
+{% raw %}
+
 	Article: Q104522
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -34,3 +36,5 @@ permalink: /kb/104/Q104522/
 	
 	=============================================================================
 	
+
+{% endraw %}

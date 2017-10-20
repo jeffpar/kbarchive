@@ -6,6 +6,8 @@ permalink: /kb/248/Q248690/
 
 ## Q248690: PRB: OLE Automation: CheckOut Recursive Fails
 
+{% raw %}
+
 	Article: Q248690
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -50,3 +52,5 @@ permalink: /kb/248/Q248690/
 	
 	=============================================================================
 	
+
+{% endraw %}

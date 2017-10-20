@@ -6,6 +6,8 @@ permalink: /kb/166/Q166243/
 
 ## Q166243: Access Violation in Office 97 ODBC Apps with StarSQL Driver
 
+{% raw %}
+
 	Article: Q166243
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/166/Q166243/
 	
 	=============================================================================
 	
+
+{% endraw %}

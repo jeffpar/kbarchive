@@ -6,6 +6,8 @@ permalink: /kb/137/Q137945/
 
 ## Q137945: How to Change the Font in All Controls Without Using a Builder
 
+{% raw %}
+
 	Article: Q137945
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -110,3 +112,5 @@ permalink: /kb/137/Q137945/
 	
 	=============================================================================
 	
+
+{% endraw %}

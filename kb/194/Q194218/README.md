@@ -6,6 +6,8 @@ permalink: /kb/194/Q194218/
 
 ## Q194218: XFOR: cc:Mail Migration Wizard Fails to Migrate cc:Mail User
 
+{% raw %}
+
 	Article: Q194218
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -77,3 +79,5 @@ permalink: /kb/194/Q194218/
 	
 	=============================================================================
 	
+
+{% endraw %}

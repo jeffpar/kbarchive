@@ -6,6 +6,8 @@ permalink: /kb/158/Q158981/
 
 ## Q158981: IBM Thinkpads 760ED and 760ELD May Hang During Shutdown
 
+{% raw %}
+
 	Article: Q158981
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -54,3 +56,5 @@ permalink: /kb/158/Q158981/
 	
 	=============================================================================
 	
+
+{% endraw %}

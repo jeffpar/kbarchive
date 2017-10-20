@@ -6,6 +6,8 @@ permalink: /kb/151/Q151748/
 
 ## Q151748: Contents of Windows 95 Support Assistant Readme.txt File
 
+{% raw %}
+
 	Article: Q151748
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -90,3 +92,5 @@ permalink: /kb/151/Q151748/
 	
 	=============================================================================
 	
+
+{% endraw %}

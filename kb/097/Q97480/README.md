@@ -6,6 +6,8 @@ permalink: /kb/097/Q97480/
 
 ## Q97480: Setting the Default Word Processing Application in Encarta
 
+{% raw %}
+
 	Article: Q97480
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 6.0
@@ -110,3 +112,5 @@ permalink: /kb/097/Q97480/
 	
 	=============================================================================
 	
+
+{% endraw %}

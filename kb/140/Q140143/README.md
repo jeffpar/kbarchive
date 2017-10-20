@@ -6,6 +6,8 @@ permalink: /kb/140/Q140143/
 
 ## Q140143: Windows 95 Computer Inventoried MouseInfo is Incorrect
 
+{% raw %}
+
 	Article: Q140143
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -42,3 +44,5 @@ permalink: /kb/140/Q140143/
 	
 	=============================================================================
 	
+
+{% endraw %}

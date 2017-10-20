@@ -6,6 +6,8 @@ permalink: /kb/225/Q225212/
 
 ## Q225212: Err Msg: STOP 0x0000000a Caused by Tcpip.sys on SP4 Computer
 
+{% raw %}
+
 	Article: Q225212
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -78,3 +80,5 @@ permalink: /kb/225/Q225212/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174061/
 
 ## Q174061: Error Message: This Page Contains a Script Which Is Taking...
 
+{% raw %}
+
 	Article: Q174061
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,95
@@ -61,3 +63,5 @@ permalink: /kb/174/Q174061/
 	
 	=============================================================================
 	
+
+{% endraw %}

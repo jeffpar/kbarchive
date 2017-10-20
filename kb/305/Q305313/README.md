@@ -6,6 +6,8 @@ permalink: /kb/305/Q305313/
 
 ## Q305313: Optimizing Internet Information Services 5.0
 
+{% raw %}
+
 	Article: Q305313
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -417,3 +419,5 @@ permalink: /kb/305/Q305313/
 	
 	=============================================================================
 	
+
+{% endraw %}

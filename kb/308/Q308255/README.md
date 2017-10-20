@@ -6,6 +6,8 @@ permalink: /kb/308/Q308255/
 
 ## Q308255: HTTP 403.5 - Forbidden: SSL 128 Required Error Occurs
 
+{% raw %}
+
 	Article: Q308255
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -107,3 +109,5 @@ permalink: /kb/308/Q308255/
 	
 	=============================================================================
 	
+
+{% endraw %}

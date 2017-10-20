@@ -6,6 +6,8 @@ permalink: /kb/105/Q105767/
 
 ## Q105767: MS Mail Err Msg: Mail Cannot Be Started Because it Cannot...
 
+{% raw %}
+
 	Article: Q105767
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -206,3 +208,5 @@ permalink: /kb/105/Q105767/
 	
 	=============================================================================
 	
+
+{% endraw %}

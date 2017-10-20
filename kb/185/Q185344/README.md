@@ -6,6 +6,8 @@ permalink: /kb/185/Q185344/
 
 ## Q185344: SMS: Service Pack Upgrades Not Automatic for RAS Clients
 
+{% raw %}
+
 	Article: Q185344
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -105,3 +107,5 @@ permalink: /kb/185/Q185344/
 	
 	=============================================================================
 	
+
+{% endraw %}

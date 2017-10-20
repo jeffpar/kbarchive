@@ -6,6 +6,8 @@ permalink: /kb/152/Q152177/
 
 ## Q152177: List of Documentation Errors in Service Pack 5 Readme.txt File
 
+{% raw %}
+
 	Article: Q152177
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -49,3 +51,5 @@ permalink: /kb/152/Q152177/
 	
 	=============================================================================
 	
+
+{% endraw %}

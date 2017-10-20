@@ -6,6 +6,8 @@ permalink: /kb/166/Q166523/
 
 ## Q166523: XFOR: 5.0 Mapi Causes IMS to be 10% Slower
 
+{% raw %}
+
 	Article: Q166523
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -63,3 +65,5 @@ permalink: /kb/166/Q166523/
 	
 	=============================================================================
 	
+
+{% endraw %}

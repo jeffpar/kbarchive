@@ -6,6 +6,8 @@ permalink: /kb/240/Q240866/
 
 ## Q240866: BUG: C2989 and C2988 on Class Template Partial Specializations
 
+{% raw %}
+
 	Article: Q240866
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/240/Q240866/
 	
 	=============================================================================
 	
+
+{% endraw %}

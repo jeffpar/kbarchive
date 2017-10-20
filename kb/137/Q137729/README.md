@@ -6,6 +6,8 @@ permalink: /kb/137/Q137729/
 
 ## Q137729: INFO: LenB Returns in-Memory Size of User-Defined Type
 
+{% raw %}
+
 	Article: Q137729
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -119,3 +121,5 @@ permalink: /kb/137/Q137729/
 	
 	=============================================================================
 	
+
+{% endraw %}

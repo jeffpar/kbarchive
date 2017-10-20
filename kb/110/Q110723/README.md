@@ -6,6 +6,8 @@ permalink: /kb/110/Q110723/
 
 ## Q110723: Documentation and Features for Visual Basic's 3.0 Data Manager
 
+{% raw %}
+
 	Article: Q110723
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -115,3 +117,5 @@ permalink: /kb/110/Q110723/
 	
 	=============================================================================
 	
+
+{% endraw %}

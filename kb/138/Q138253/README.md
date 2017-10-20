@@ -6,6 +6,8 @@ permalink: /kb/138/Q138253/
 
 ## Q138253: Write-Up Does Not Display Slides in Word 95
 
+{% raw %}
+
 	Article: Q138253
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -57,3 +59,5 @@ permalink: /kb/138/Q138253/
 	
 	=============================================================================
 	
+
+{% endraw %}

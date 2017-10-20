@@ -6,6 +6,8 @@ permalink: /kb/066/Q66429/
 
 ## Q66429: R6000 -- Stack Overflow at Compile Time with C Compiler
 
+{% raw %}
+
 	Article: Q66429
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -59,3 +61,5 @@ permalink: /kb/066/Q66429/
 	Microsoft has confirmed this to be a problem in the C compiler
 	versions 6.00 and 6.00a. We are researching this problem and will post
 	new information here as it becomes available.
+
+{% endraw %}

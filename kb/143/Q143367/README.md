@@ -6,6 +6,8 @@ permalink: /kb/143/Q143367/
 
 ## Q143367: Writer: Incomplete Border Printout On Ink-Jet Printers
 
+{% raw %}
+
 	Article: Q143367
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a,1.1b,1.1c,95
@@ -86,3 +88,5 @@ permalink: /kb/143/Q143367/
 	
 	=============================================================================
 	
+
+{% endraw %}

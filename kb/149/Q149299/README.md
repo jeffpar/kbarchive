@@ -6,6 +6,8 @@ permalink: /kb/149/Q149299/
 
 ## Q149299: PRB: &quot;RUN Command Failed&quot; (1405) Under Windows 95 &amp; Windows NT
 
+{% raw %}
+
 	Article: Q149299
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -67,3 +69,5 @@ permalink: /kb/149/Q149299/
 	
 	=============================================================================
 	
+
+{% endraw %}

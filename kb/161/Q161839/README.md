@@ -6,6 +6,8 @@ permalink: /kb/161/Q161839/
 
 ## Q161839: XFOR: IMC May Incorrectly Set Time Zone Information
 
+{% raw %}
+
 	Article: Q161839
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/161/Q161839/
 	
 	=============================================================================
 	
+
+{% endraw %}

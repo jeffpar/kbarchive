@@ -6,6 +6,8 @@ permalink: /kb/130/Q130080/
 
 ## Q130080: Error Messages with MS Exchange and Novell Post Office
 
+{% raw %}
+
 	Article: Q130080
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/130/Q130080/
 	
 	=============================================================================
 	
+
+{% endraw %}

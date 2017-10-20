@@ -6,6 +6,8 @@ permalink: /kb/157/Q157444/
 
 ## Q157444: INFO: Troubleshooting LU6.2 Event 17 or Event 18 Sense Code = 08
 
+{% raw %}
+
 	Article: Q157444
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -170,3 +172,5 @@ permalink: /kb/157/Q157444/
 	
 	=============================================================================
 	
+
+{% endraw %}

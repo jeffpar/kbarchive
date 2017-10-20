@@ -6,6 +6,8 @@ permalink: /kb/271/Q271819/
 
 ## Q271819: HOWTO: Spell Check in Visual FoxPro with Microsoft Wor
 
+{% raw %}
+
 	Article: Q271819
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2000,3.0,3.0b,5.0,5.0a,6.0,97
@@ -250,3 +252,5 @@ permalink: /kb/271/Q271819/
 	
 	=============================================================================
 	
+
+{% endraw %}

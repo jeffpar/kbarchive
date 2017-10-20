@@ -6,6 +6,8 @@ permalink: /kb/119/Q119557/
 
 ## Q119557: PC Win: Err Msg: Bad Windows Class, Ignored
 
+{% raw %}
+
 	Article: Q119557
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -49,3 +51,5 @@ permalink: /kb/119/Q119557/
 	
 	=============================================================================
 	
+
+{% endraw %}

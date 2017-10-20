@@ -6,6 +6,8 @@ permalink: /kb/067/Q67718/
 
 ## Q67718: Fatal Error When Running DayBook
 
+{% raw %}
+
 	Article: Q67718
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -42,3 +44,5 @@ permalink: /kb/067/Q67718/
 	
 	=============================================================================
 	
+
+{% endraw %}

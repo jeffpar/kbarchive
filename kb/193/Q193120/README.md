@@ -6,6 +6,8 @@ permalink: /kb/193/Q193120/
 
 ## Q193120: XCLN: JScript Error Using &quot;Open Link in New Window&quot; in OWA
 
+{% raw %}
+
 	Article: Q193120
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/193/Q193120/
 	
 	=============================================================================
 	
+
+{% endraw %}

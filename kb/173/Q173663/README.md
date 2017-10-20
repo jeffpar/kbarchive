@@ -6,6 +6,8 @@ permalink: /kb/173/Q173663/
 
 ## Q173663: FP97: How to Use Microsoft Personal Web Server on Different Port
 
+{% raw %}
+
 	Article: Q173663
 	Product(s): Word Front Page
 	Version(s): 
@@ -168,3 +170,5 @@ permalink: /kb/173/Q173663/
 	
 	=============================================================================
 	
+
+{% endraw %}

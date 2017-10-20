@@ -6,6 +6,8 @@ permalink: /kb/223/Q223138/
 
 ## Q223138: SMS: Client Service Error 1314: Fails to Start SMSAPM32
 
+{% raw %}
+
 	Article: Q223138
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -73,3 +75,5 @@ permalink: /kb/223/Q223138/
 	
 	=============================================================================
 	
+
+{% endraw %}

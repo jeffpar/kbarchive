@@ -6,6 +6,8 @@ permalink: /kb/096/Q96488/
 
 ## Q96488: MS-DOS 6 Upgrade Directory Listing for 3.5 Inch (1.44 MB)
 
+{% raw %}
+
 	Article: Q96488
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -222,3 +224,5 @@ permalink: /kb/096/Q96488/
 	
 	=============================================================================
 	
+
+{% endraw %}

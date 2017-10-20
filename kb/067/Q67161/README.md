@@ -6,6 +6,8 @@ permalink: /kb/067/Q67161/
 
 ## Q67161: STARTUP.BAT Gives Error U1073: Don't Know How to Make stdio.h
 
+{% raw %}
+
 	Article: Q67161
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -32,3 +34,5 @@ permalink: /kb/067/Q67161/
 	Microsoft has confirmed this to be a problem in the C Compiler
 	versions 6.00 and 6.00a. We are researching this problem and will post
 	new information here as it becomes available.
+
+{% endraw %}

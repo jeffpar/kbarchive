@@ -6,6 +6,8 @@ permalink: /kb/164/Q164387/
 
 ## Q164387: PRB: Send SQL Updates is Checked but Data Not Saved
 
+{% raw %}
+
 	Article: Q164387
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0 3.0b 5.0, 6.0
@@ -91,3 +93,5 @@ permalink: /kb/164/Q164387/
 	
 	=============================================================================
 	
+
+{% endraw %}

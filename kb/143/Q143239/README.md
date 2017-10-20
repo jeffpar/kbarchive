@@ -6,6 +6,8 @@ permalink: /kb/143/Q143239/
 
 ## Q143239: 5250 Applet Defaults To a French Canadian Host Code Page
 
+{% raw %}
+
 	Article: Q143239
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -59,3 +61,5 @@ permalink: /kb/143/Q143239/
 	
 	=============================================================================
 	
+
+{% endraw %}

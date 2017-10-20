@@ -6,6 +6,8 @@ permalink: /kb/043/Q43001/
 
 ## Q43001: Fopen() Description Is Incomplete in On-Line Help of QC 2.00
 
+{% raw %}
+
 	Article: Q43001
 	Product(s): See article
 	Version(s): 2.00
@@ -44,3 +46,5 @@ permalink: /kb/043/Q43001/
 	
 	Please note: Use the "w" and "w+" types with care, as they can destroy
 	existing files.
+
+{% endraw %}

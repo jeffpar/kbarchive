@@ -6,6 +6,8 @@ permalink: /kb/184/Q184542/
 
 ## Q184542: XFOR: Internet Mail Service Very Slow with High Message Volume
 
+{% raw %}
+
 	Article: Q184542
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -132,3 +134,5 @@ permalink: /kb/184/Q184542/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178271/
 
 ## Q178271: Problem Renaming Files on a UNIX-based DEC Pathworks Server
 
+{% raw %}
+
 	Article: Q178271
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/178/Q178271/
 	
 	=============================================================================
 	
+
+{% endraw %}

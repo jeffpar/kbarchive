@@ -6,6 +6,8 @@ permalink: /kb/131/Q131894/
 
 ## Q131894: Delta Knowledge Base Available as Help File (June 1995)
 
+{% raw %}
+
 	Article: Q131894
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/131/Q131894/
 	
 	=============================================================================
 	
+
+{% endraw %}

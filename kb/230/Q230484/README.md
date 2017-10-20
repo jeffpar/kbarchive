@@ -6,6 +6,8 @@ permalink: /kb/230/Q230484/
 
 ## Q230484: HOWTO: Label Pie Slices as Percentages in MSChart Pie Chart
 
+{% raw %}
+
 	Article: Q230484
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/230/Q230484/
 	
 	=============================================================================
 	
+
+{% endraw %}

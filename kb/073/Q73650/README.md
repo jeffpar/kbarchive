@@ -6,6 +6,8 @@ permalink: /kb/073/Q73650/
 
 ## Q73650: Appnote Reference: Corp Support (LAN, SQL, Mail, OS/2, PM)
 
+{% raw %}
+
 	Article: Q73650
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/073/Q73650/
 	
 	=============================================================================
 	
+
+{% endraw %}

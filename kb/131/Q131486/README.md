@@ -6,6 +6,8 @@ permalink: /kb/131/Q131486/
 
 ## Q131486: No Task Visible for Upcoming Tasks in Schedule+
 
+{% raw %}
+
 	Article: Q131486
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -50,3 +52,5 @@ permalink: /kb/131/Q131486/
 	
 	=============================================================================
 	
+
+{% endraw %}

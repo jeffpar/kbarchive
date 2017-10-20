@@ -6,6 +6,8 @@ permalink: /kb/159/Q159823/
 
 ## Q159823: HOWTO: Call Clipboard API from Visual Basic 4.0
 
+{% raw %}
+
 	Article: Q159823
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -325,3 +327,5 @@ permalink: /kb/159/Q159823/
 	
 	=============================================================================
 	
+
+{% endraw %}

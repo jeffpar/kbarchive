@@ -6,6 +6,8 @@ permalink: /kb/119/Q119562/
 
 ## Q119562: PC Forms: Working with Multiple-Selection List Boxes
 
+{% raw %}
+
 	Article: Q119562
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -88,3 +90,5 @@ permalink: /kb/119/Q119562/
 	
 	=============================================================================
 	
+
+{% endraw %}

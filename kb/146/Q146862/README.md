@@ -6,6 +6,8 @@ permalink: /kb/146/Q146862/
 
 ## Q146862: Automation Interfaces Can't Select Speech Engine Modes
 
+{% raw %}
+
 	Article: Q146862
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/146/Q146862/
 	
 	=============================================================================
 	
+
+{% endraw %}

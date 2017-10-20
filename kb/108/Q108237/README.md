@@ -6,6 +6,8 @@ permalink: /kb/108/Q108237/
 
 ## Q108237: Services for Macintosh: Differences in Permissions Dialogs
 
+{% raw %}
+
 	Article: Q108237
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -55,3 +57,5 @@ permalink: /kb/108/Q108237/
 	
 	=============================================================================
 	
+
+{% endraw %}

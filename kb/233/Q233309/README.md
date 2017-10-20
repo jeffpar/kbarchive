@@ -6,6 +6,8 @@ permalink: /kb/233/Q233309/
 
 ## Q233309: Error Message When Using IPX/SPX to Dial into RAS or RRAS
 
+{% raw %}
+
 	Article: Q233309
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/233/Q233309/
 	
 	=============================================================================
 	
+
+{% endraw %}

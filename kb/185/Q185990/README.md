@@ -6,6 +6,8 @@ permalink: /kb/185/Q185990/
 
 ## Q185990: HOWTO: Improve Performance of Object De-allocation
 
+{% raw %}
+
 	Article: Q185990
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/185/Q185990/
 	
 	=============================================================================
 	
+
+{% endraw %}

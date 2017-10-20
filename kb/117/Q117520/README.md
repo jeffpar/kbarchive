@@ -6,6 +6,8 @@ permalink: /kb/117/Q117520/
 
 ## Q117520: MS-DOS 6.21 Upgrade Directory Listing for 3.5-Inch (720K)
 
+{% raw %}
+
 	Article: Q117520
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21
@@ -246,3 +248,5 @@ permalink: /kb/117/Q117520/
 	
 	=============================================================================
 	
+
+{% endraw %}

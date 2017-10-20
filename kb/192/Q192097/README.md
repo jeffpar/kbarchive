@@ -6,6 +6,8 @@ permalink: /kb/192/Q192097/
 
 ## Q192097: INFO: MFC and ATL Are Not Supported on Windows CE Palm-size PC
 
+{% raw %}
+
 	Article: Q192097
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0; :2.0
@@ -60,3 +62,5 @@ permalink: /kb/192/Q192097/
 	
 	=============================================================================
 	
+
+{% endraw %}

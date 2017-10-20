@@ -6,6 +6,8 @@ permalink: /kb/156/Q156569/
 
 ## Q156569: How to Connect to Internet Service Providers from Windows NT 4.0
 
+{% raw %}
+
 	Article: Q156569
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -93,3 +95,5 @@ permalink: /kb/156/Q156569/
 	
 	=============================================================================
 	
+
+{% endraw %}

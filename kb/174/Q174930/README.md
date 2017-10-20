@@ -6,6 +6,8 @@ permalink: /kb/174/Q174930/
 
 ## Q174930: Stop 0x0000007f When Executing Tasks Through Remotely Possible
 
+{% raw %}
+
 	Article: Q174930
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -60,3 +62,5 @@ permalink: /kb/174/Q174930/
 	
 	=============================================================================
 	
+
+{% endraw %}

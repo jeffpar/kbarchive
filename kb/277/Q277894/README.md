@@ -6,6 +6,8 @@ permalink: /kb/277/Q277894/
 
 ## Q277894: Consecutive Inserts to DB2 from SQL Server by way of Linked Serv
 
+{% raw %}
+
 	Article: Q277894
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3
@@ -80,3 +82,5 @@ permalink: /kb/277/Q277894/
 	
 	=============================================================================
 	
+
+{% endraw %}

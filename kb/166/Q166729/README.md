@@ -6,6 +6,8 @@ permalink: /kb/166/Q166729/
 
 ## Q166729: Cannot Install Driver for ESS1888 Sound Card
 
+{% raw %}
+
 	Article: Q166729
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/166/Q166729/
 	
 	=============================================================================
 	
+
+{% endraw %}

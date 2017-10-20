@@ -6,6 +6,8 @@ permalink: /kb/061/Q61678/
 
 ## Q61678: Routine to Save and Restore a Block of Memory to a File
 
+{% raw %}
+
 	Article: Q61678
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -154,3 +156,5 @@ permalink: /kb/061/Q61678/
 	   CALL Interruptx(&H21, InRegsx, OutRegsx)
 	   CLOSE #Filenum
 	END SUB
+
+{% endraw %}

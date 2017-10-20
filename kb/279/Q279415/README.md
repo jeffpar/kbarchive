@@ -6,6 +6,8 @@ permalink: /kb/279/Q279415/
 
 ## Q279415: XCON: MSEXCHANGEMTA 9321 Err Msg When Attempting to Start MTA
 
+{% raw %}
+
 	Article: Q279415
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -92,3 +94,5 @@ permalink: /kb/279/Q279415/
 	
 	=============================================================================
 	
+
+{% endraw %}

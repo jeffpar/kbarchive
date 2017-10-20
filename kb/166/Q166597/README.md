@@ -6,6 +6,8 @@ permalink: /kb/166/Q166597/
 
 ## Q166597: XFOR: Outlook Chinese SFS Client Receives NDRs on Replies
 
+{% raw %}
+
 	Article: Q166597
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -72,3 +74,5 @@ permalink: /kb/166/Q166597/
 	
 	=============================================================================
 	
+
+{% endraw %}

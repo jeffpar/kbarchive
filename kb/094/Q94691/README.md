@@ -6,6 +6,8 @@ permalink: /kb/094/Q94691/
 
 ## Q94691: Bitmap Manipulation Techniques
 
+{% raw %}
+
 	Article: Q94691
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -73,3 +75,5 @@ permalink: /kb/094/Q94691/
 	
 	=============================================================================
 	
+
+{% endraw %}

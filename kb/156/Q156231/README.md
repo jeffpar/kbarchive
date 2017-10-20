@@ -6,6 +6,8 @@ permalink: /kb/156/Q156231/
 
 ## Q156231: &quot;Error 26&quot; After Installing Windows 95 from NetWare Server
 
+{% raw %}
+
 	Article: Q156231
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/156/Q156231/
 	
 	=============================================================================
 	
+
+{% endraw %}

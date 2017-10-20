@@ -6,6 +6,8 @@ permalink: /kb/136/Q136692/
 
 ## Q136692: General Functionality of the Setup Wizard
 
+{% raw %}
+
 	Article: Q136692
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -43,3 +45,5 @@ permalink: /kb/136/Q136692/
 	
 	=============================================================================
 	
+
+{% endraw %}

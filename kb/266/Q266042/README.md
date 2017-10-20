@@ -6,6 +6,8 @@ permalink: /kb/266/Q266042/
 
 ## Q266042: XADM: Developing a Workflow Application using Exchange WP
 
+{% raw %}
+
 	Article: Q266042
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -45,3 +47,5 @@ permalink: /kb/266/Q266042/
 	
 	=============================================================================
 	
+
+{% endraw %}

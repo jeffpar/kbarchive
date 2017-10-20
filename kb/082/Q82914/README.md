@@ -6,6 +6,8 @@ permalink: /kb/082/Q82914/
 
 ## Q82914: PC OS2: Icons Stack Over Each Other in Mail for OS/2
 
+{% raw %}
+
 	Article: Q82914
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -42,3 +44,5 @@ permalink: /kb/082/Q82914/
 	
 	=============================================================================
 	
+
+{% endraw %}

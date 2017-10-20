@@ -6,6 +6,8 @@ permalink: /kb/088/Q88464/
 
 ## Q88464: Golf Mouse Cursor Not Turning into Hourglass under Windows 3.0
 
+{% raw %}
+
 	Article: Q88464
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/088/Q88464/
 	
 	=============================================================================
 	
+
+{% endraw %}

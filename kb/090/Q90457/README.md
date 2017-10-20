@@ -6,6 +6,8 @@ permalink: /kb/090/Q90457/
 
 ## Q90457: WinLogin Doc Err: Group Settings Not Selected
 
+{% raw %}
+
 	Article: Q90457
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -68,3 +70,5 @@ permalink: /kb/090/Q90457/
 	
 	=============================================================================
 	
+
+{% endraw %}

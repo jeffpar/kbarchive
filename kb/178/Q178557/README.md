@@ -6,6 +6,8 @@ permalink: /kb/178/Q178557/
 
 ## Q178557: Dr. Watson May Display Message Box Even When Disabled
 
+{% raw %}
+
 	Article: Q178557
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/178/Q178557/
 	
 	=============================================================================
 	
+
+{% endraw %}

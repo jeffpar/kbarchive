@@ -6,6 +6,8 @@ permalink: /kb/158/Q158333/
 
 ## Q158333: Cannot Install OmniForm 2.0 in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q158333
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/158/Q158333/
 	
 	=============================================================================
 	
+
+{% endraw %}

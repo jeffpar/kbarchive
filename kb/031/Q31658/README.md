@@ -6,6 +6,8 @@ permalink: /kb/031/Q31658/
 
 ## Q31658: CVP Prompts &quot;SYS0197 OS/2 Not Configured...&quot; Error Message
 
+{% raw %}
+
 	Article: Q31658
 	Product(s): See article
 	Version(s): 2.20
@@ -28,3 +30,5 @@ permalink: /kb/031/Q31658/
 	have the following line in your CONFIG.SYS file:
 	
 	   IOPL=YES
+
+{% endraw %}

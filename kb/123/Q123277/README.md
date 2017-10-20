@@ -6,6 +6,8 @@ permalink: /kb/123/Q123277/
 
 ## Q123277: NEC 3X CD-ROM Drives Not Supported
 
+{% raw %}
+
 	Article: Q123277
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -76,3 +78,5 @@ permalink: /kb/123/Q123277/
 	
 	=============================================================================
 	
+
+{% endraw %}

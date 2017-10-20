@@ -6,6 +6,8 @@ permalink: /kb/096/Q96638/
 
 ## Q96638: PC MAPI: 3.0 MAPI Disks &#91;3.5, 5.25&#93;
 
+{% raw %}
+
 	Article: Q96638
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -148,3 +150,5 @@ permalink: /kb/096/Q96638/
 	
 	=============================================================================
 	
+
+{% endraw %}

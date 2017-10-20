@@ -6,6 +6,8 @@ permalink: /kb/181/Q181208/
 
 ## Q181208: FP98: How to Return Records From a Query as a Hyperlink
 
+{% raw %}
+
 	Article: Q181208
 	Product(s): Word Front Page
 	Version(s): 
@@ -207,3 +209,5 @@ permalink: /kb/181/Q181208/
 	
 	=============================================================================
 	
+
+{% endraw %}

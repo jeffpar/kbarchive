@@ -6,6 +6,8 @@ permalink: /kb/077/Q77517/
 
 ## Q77517: Creating the FORTRAN Run-Time DLL and User DLL for OS/2
 
+{% raw %}
+
 	Article: Q77517
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.1
@@ -139,3 +141,5 @@ permalink: /kb/077/Q77517/
 	
 	=============================================================================
 	
+
+{% endraw %}

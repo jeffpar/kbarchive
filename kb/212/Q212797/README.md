@@ -6,6 +6,8 @@ permalink: /kb/212/Q212797/
 
 ## Q212797: SMSINST: Get Temporary Filename Script Does Not Return Full Path
 
+{% raw %}
+
 	Article: Q212797
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.2,2.0
@@ -71,3 +73,5 @@ permalink: /kb/212/Q212797/
 	
 	=============================================================================
 	
+
+{% endraw %}

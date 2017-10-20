@@ -6,6 +6,8 @@ permalink: /kb/121/Q121377/
 
 ## Q121377: PC WRmt: Remote POL Not Updated After New Addr. List Download
 
+{% raw %}
+
 	Article: Q121377
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -97,3 +99,5 @@ permalink: /kb/121/Q121377/
 	
 	=============================================================================
 	
+
+{% endraw %}

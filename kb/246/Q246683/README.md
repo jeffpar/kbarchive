@@ -6,6 +6,8 @@ permalink: /kb/246/Q246683/
 
 ## Q246683: STOP 0xA on Compaq Computers When Upgrading to Service Pack 6
 
+{% raw %}
+
 	Article: Q246683
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP6
@@ -81,3 +83,5 @@ permalink: /kb/246/Q246683/
 	
 	=============================================================================
 	
+
+{% endraw %}

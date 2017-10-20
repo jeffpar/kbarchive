@@ -6,6 +6,8 @@ permalink: /kb/153/Q153793/
 
 ## Q153793: How To Check for a Remote Access Service Connection
 
+{% raw %}
+
 	Article: Q153793
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -149,3 +151,5 @@ permalink: /kb/153/Q153793/
 	
 	=============================================================================
 	
+
+{% endraw %}

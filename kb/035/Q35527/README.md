@@ -6,6 +6,8 @@ permalink: /kb/035/Q35527/
 
 ## Q35527: Merging Two Files Together
 
+{% raw %}
+
 	Article: Q35527
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -24,3 +26,5 @@ permalink: /kb/035/Q35527/
 	keystrokes corresponding to the following functions:
 	
 	   Arg Arg textarg Paste, where textarg is the name of file to be merged.
+
+{% endraw %}

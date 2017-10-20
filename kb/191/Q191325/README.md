@@ -6,6 +6,8 @@ permalink: /kb/191/Q191325/
 
 ## Q191325: FIX: Connection Designer Closes if Verify Connection Fails
 
+{% raw %}
+
 	Article: Q191325
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,5.0a
@@ -102,3 +104,5 @@ permalink: /kb/191/Q191325/
 	
 	=============================================================================
 	
+
+{% endraw %}

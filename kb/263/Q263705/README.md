@@ -6,6 +6,8 @@ permalink: /kb/263/Q263705/
 
 ## Q263705: XADM: Time Settings Incorrect
 
+{% raw %}
+
 	Article: Q263705
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -69,3 +71,5 @@ permalink: /kb/263/Q263705/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/047/Q47937/
 
 ## Q47937: /L Must Give Full Pathname to .DLL Unless in Current Directory
 
+{% raw %}
+
 	Article: Q47937
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -26,3 +28,5 @@ permalink: /kb/047/Q47937/
 	be debugged. If the full pathname is not given, CodeView will come up.
 	However, you will be unable to step into the DLL. CodeView will simply
 	step over that call.
+
+{% endraw %}

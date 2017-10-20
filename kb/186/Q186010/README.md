@@ -6,6 +6,8 @@ permalink: /kb/186/Q186010/
 
 ## Q186010: HOWTO: Calling the Splash Screen Foundation Class From Code
 
+{% raw %}
+
 	Article: Q186010
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -79,3 +81,5 @@ permalink: /kb/186/Q186010/
 	
 	=============================================================================
 	
+
+{% endraw %}

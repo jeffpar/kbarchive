@@ -6,6 +6,8 @@ permalink: /kb/058/Q58639/
 
 ## Q58639: Token Ring Network Driver May Conflict with BASIC 7.00 Setup
 
+{% raw %}
+
 	Article: Q58639
 	Product(s): See article
 	Version(s): 7.00
@@ -25,3 +27,5 @@ permalink: /kb/058/Q58639/
 	unpacked onto the hard disk, and subsequent library and toolbox builds
 	crashed because of the corrupt files used. Microsoft has not confirmed
 	this information.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/319/Q319692/
 
 ## Q319692: Winsock Control May Fire DataArrival Event After the Close Event
 
+{% raw %}
+
 	Article: Q319692
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -83,3 +85,5 @@ permalink: /kb/319/Q319692/
 	
 	=============================================================================
 	
+
+{% endraw %}

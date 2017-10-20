@@ -6,6 +6,8 @@ permalink: /kb/102/Q102340/
 
 ## Q102340: Mac Bkup: Destination Volume Must Be Mounted
 
+{% raw %}
+
 	Article: Q102340
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -60,3 +62,5 @@ permalink: /kb/102/Q102340/
 	
 	=============================================================================
 	
+
+{% endraw %}

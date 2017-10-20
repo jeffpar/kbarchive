@@ -6,6 +6,8 @@ permalink: /kb/062/Q62054/
 
 ## Q62054: Large COMMON in Multiple Modules Uses Up DGROUP in QB/QBX.EXE
 
+{% raw %}
+
 	Article: Q62054
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -115,3 +117,5 @@ permalink: /kb/062/Q62054/
 	loaded as a source or Quick library routine, then multiple DECLARE
 	statements for that procedure name do not take up additional space in
 	DGROUP.
+
+{% endraw %}

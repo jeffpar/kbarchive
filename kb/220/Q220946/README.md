@@ -6,6 +6,8 @@ permalink: /kb/220/Q220946/
 
 ## Q220946: Symptoms That You May Experience If the Lsass.exe Process Stops
 
+{% raw %}
+
 	Article: Q220946
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -109,3 +111,5 @@ permalink: /kb/220/Q220946/
 	
 	=============================================================================
 	
+
+{% endraw %}

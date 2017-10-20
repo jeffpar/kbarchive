@@ -6,6 +6,8 @@ permalink: /kb/242/Q242511/
 
 ## Q242511: AoE II: Hangs or Quits Unexpectedly During Opening Movie
 
+{% raw %}
+
 	Article: Q242511
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0; :
@@ -79,3 +81,5 @@ permalink: /kb/242/Q242511/
 	
 	=============================================================================
 	
+
+{% endraw %}

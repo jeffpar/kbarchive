@@ -6,6 +6,8 @@ permalink: /kb/195/Q195937/
 
 ## Q195937: SMS: Pcmsvc32.exe Fails to Execute Cmd Line Containing UNC Path
 
+{% raw %}
+
 	Article: Q195937
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -84,3 +86,5 @@ permalink: /kb/195/Q195937/
 	
 	=============================================================================
 	
+
+{% endraw %}

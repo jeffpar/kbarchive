@@ -6,6 +6,8 @@ permalink: /kb/198/Q198635/
 
 ## Q198635: SMS: Expected CPU Utilization During a Remote Control Session
 
+{% raw %}
+
 	Article: Q198635
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -63,3 +65,5 @@ permalink: /kb/198/Q198635/
 	
 	=============================================================================
 	
+
+{% endraw %}

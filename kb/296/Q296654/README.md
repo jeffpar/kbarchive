@@ -6,6 +6,8 @@ permalink: /kb/296/Q296654/
 
 ## Q296654: Heap Corruption Remote Debugging with eVB
 
+{% raw %}
+
 	Article: Q296654
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -99,3 +101,5 @@ permalink: /kb/296/Q296654/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173463/
 
 ## Q173463: PRB: WillExecute Event Cannot Be Used to Change CursorType
 
+{% raw %}
+
 	Article: Q173463
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -152,3 +154,5 @@ permalink: /kb/173/Q173463/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146119/
 
 ## Q146119: Macintosh Bookshelf '95 ErrMsg: Please Insert the Microsoft...
 
+{% raw %}
+
 	Article: Q146119
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -65,3 +67,5 @@ permalink: /kb/146/Q146119/
 	
 	=============================================================================
 	
+
+{% endraw %}

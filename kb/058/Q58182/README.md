@@ -6,6 +6,8 @@ permalink: /kb/058/Q58182/
 
 ## Q58182: Mac Wkst: Macintosh Beeps When Mail DA Is Chosen
 
+{% raw %}
+
 	Article: Q58182
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -52,3 +54,5 @@ permalink: /kb/058/Q58182/
 	
 	=============================================================================
 	
+
+{% endraw %}

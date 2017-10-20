@@ -6,6 +6,8 @@ permalink: /kb/083/Q83733/
 
 ## Q83733: Windows 3.1 Cannot Upgrade Windows 2.x
 
+{% raw %}
+
 	Article: Q83733
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/083/Q83733/
 	
 	=============================================================================
 	
+
+{% endraw %}

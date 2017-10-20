@@ -6,6 +6,8 @@ permalink: /kb/090/Q90294/
 
 ## Q90294: Using Large Memory Model, Microsoft C/C++, &amp; Windows 3.1
 
+{% raw %}
+
 	Article: Q90294
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -115,3 +117,5 @@ permalink: /kb/090/Q90294/
 	
 	=============================================================================
 	
+
+{% endraw %}

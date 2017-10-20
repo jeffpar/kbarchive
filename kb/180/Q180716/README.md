@@ -6,6 +6,8 @@ permalink: /kb/180/Q180716/
 
 ## Q180716: SFM Fails to Accept Associations with Two-Character Extensions
 
+{% raw %}
+
 	Article: Q180716
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -102,3 +104,5 @@ permalink: /kb/180/Q180716/
 	
 	=============================================================================
 	
+
+{% endraw %}

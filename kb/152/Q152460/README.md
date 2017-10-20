@@ -6,6 +6,8 @@ permalink: /kb/152/Q152460/
 
 ## Q152460: Troubleshooting SrvAny Using Cmd.exe
 
+{% raw %}
+
 	Article: Q152460
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -162,3 +164,5 @@ permalink: /kb/152/Q152460/
 	
 	=============================================================================
 	
+
+{% endraw %}

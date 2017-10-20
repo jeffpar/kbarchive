@@ -6,6 +6,8 @@ permalink: /kb/218/Q218607/
 
 ## Q218607: HOW TO: Create a File Defining the Constants for Use w/CDONTS
 
+{% raw %}
+
 	Article: Q218607
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -131,3 +133,5 @@ permalink: /kb/218/Q218607/
 	
 	=============================================================================
 	
+
+{% endraw %}

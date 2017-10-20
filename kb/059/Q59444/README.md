@@ -6,6 +6,8 @@ permalink: /kb/059/Q59444/
 
 ## Q59444: Mac Wkst: Unable to Read Mail While on a Macintosh Portable
 
+{% raw %}
+
 	Article: Q59444
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -40,3 +42,5 @@ permalink: /kb/059/Q59444/
 	
 	=============================================================================
 	
+
+{% endraw %}

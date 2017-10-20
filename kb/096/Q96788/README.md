@@ -6,6 +6,8 @@ permalink: /kb/096/Q96788/
 
 ## Q96788: Problems and Solutions with UPS Service
 
+{% raw %}
+
 	Article: Q96788
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/096/Q96788/
 	
 	=============================================================================
 	
+
+{% endraw %}

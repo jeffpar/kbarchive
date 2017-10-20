@@ -6,6 +6,8 @@ permalink: /kb/163/Q163312/
 
 ## Q163312: Incorrect Format 0 XID for Channel Connections
 
+{% raw %}
+
 	Article: Q163312
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1
@@ -61,3 +63,5 @@ permalink: /kb/163/Q163312/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/294/Q294905/
 
 ## Q294905: SMS: Build 698 or Later Is Required to Use the Advertview Tool
 
+{% raw %}
+
 	Article: Q294905
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -95,3 +97,5 @@ permalink: /kb/294/Q294905/
 	
 	=============================================================================
 	
+
+{% endraw %}

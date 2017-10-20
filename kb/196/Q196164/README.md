@@ -6,6 +6,8 @@ permalink: /kb/196/Q196164/
 
 ## Q196164: XADM: Move Server Wizard Disk Space Requirements are Incorrect
 
+{% raw %}
+
 	Article: Q196164
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -65,3 +67,5 @@ permalink: /kb/196/Q196164/
 	
 	=============================================================================
 	
+
+{% endraw %}

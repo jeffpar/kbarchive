@@ -6,6 +6,8 @@ permalink: /kb/060/Q60045/
 
 ## Q60045: Error in memchr() Definition
 
+{% raw %}
+
 	Article: Q60045
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -27,3 +29,5 @@ permalink: /kb/060/Q60045/
 	Instead of "Character to copy," the definition of int c should read
 	"Character to search for." Memchr() searches for, but does not copy, a
 	character in a string.
+
+{% endraw %}

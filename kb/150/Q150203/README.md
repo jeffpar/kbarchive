@@ -6,6 +6,8 @@ permalink: /kb/150/Q150203/
 
 ## Q150203: BUG: SizeGrip of Status Bar Paints Incorrectly in Windows NT
 
+{% raw %}
+
 	Article: Q150203
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -65,3 +67,5 @@ permalink: /kb/150/Q150203/
 	
 	=============================================================================
 	
+
+{% endraw %}

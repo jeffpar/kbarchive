@@ -6,6 +6,8 @@ permalink: /kb/128/Q128929/
 
 ## Q128929: LAN Manager Logon Script Window Placement in WFW
 
+{% raw %}
+
 	Article: Q128929
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11; :2.2b; winnt:3.5
@@ -90,3 +92,5 @@ permalink: /kb/128/Q128929/
 	
 	=============================================================================
 	
+
+{% endraw %}

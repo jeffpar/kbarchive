@@ -6,6 +6,8 @@ permalink: /kb/076/Q76441/
 
 ## Q76441: Flight Simulator: Keyboard Input Is Not Accepted During Demo
 
+{% raw %}
+
 	Article: Q76441
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/076/Q76441/
 	
 	=============================================================================
 	
+
+{% endraw %}

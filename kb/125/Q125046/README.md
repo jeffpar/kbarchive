@@ -6,6 +6,8 @@ permalink: /kb/125/Q125046/
 
 ## Q125046: INFO: Macro Subst, Name Expr, and EVALUATE() RunTime Evaluation
 
+{% raw %}
+
 	Article: Q125046
 	Product(s): Microsoft FoxPro
 	Version(s): 2.6a,3.0
@@ -219,3 +221,5 @@ permalink: /kb/125/Q125046/
 	
 	=============================================================================
 	
+
+{% endraw %}

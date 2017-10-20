@@ -6,6 +6,8 @@ permalink: /kb/244/Q244613/
 
 ## Q244613: IIS 4.0 SSL ISAPI Filter Can Leak Single Buffer of Plaintext
 
+{% raw %}
+
 	Article: Q244613
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -121,3 +123,5 @@ permalink: /kb/244/Q244613/
 	
 	=============================================================================
 	
+
+{% endraw %}

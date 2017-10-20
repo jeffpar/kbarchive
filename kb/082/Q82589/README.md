@@ -6,6 +6,8 @@ permalink: /kb/082/Q82589/
 
 ## Q82589: Becker Tools Running with MS-DOS 5.0 and Windows 3.1
 
+{% raw %}
+
 	Article: Q82589
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/082/Q82589/
 	
 	=============================================================================
 	
+
+{% endraw %}

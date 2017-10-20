@@ -6,6 +6,8 @@ permalink: /kb/182/Q182976/
 
 ## Q182976: Remote Access Server Service Does Not Start Automatically
 
+{% raw %}
+
 	Article: Q182976
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/182/Q182976/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186143/
 
 ## Q186143: HOWTO: Use the CallByName Function to Run a Procedure
 
+{% raw %}
+
 	Article: Q186143
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/186/Q186143/
 	
 	=============================================================================
 	
+
+{% endraw %}

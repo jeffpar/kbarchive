@@ -6,6 +6,8 @@ permalink: /kb/166/Q166154/
 
 ## Q166154: XFOR: DXA Doesn't Export New Recipients Container During Dirsync
 
+{% raw %}
+
 	Article: Q166154
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -111,3 +113,5 @@ permalink: /kb/166/Q166154/
 	
 	=============================================================================
 	
+
+{% endraw %}

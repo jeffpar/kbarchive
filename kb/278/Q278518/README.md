@@ -6,6 +6,8 @@ permalink: /kb/278/Q278518/
 
 ## Q278518: XADM: How to Change the Version and Build Information
 
+{% raw %}
+
 	Article: Q278518
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -79,3 +81,5 @@ permalink: /kb/278/Q278518/
 	
 	=============================================================================
 	
+
+{% endraw %}

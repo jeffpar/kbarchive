@@ -6,6 +6,8 @@ permalink: /kb/195/Q195642/
 
 ## Q195642: STOP 0xA on Computer Running Microsoft Client for NetWare
 
+{% raw %}
+
 	Article: Q195642
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/195/Q195642/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90983/
 
 ## Q90983: Real Mode Redir: No Support for LAN Manager Validated Logon
 
+{% raw %}
+
 	Article: Q90983
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1; :1.0
@@ -62,3 +64,5 @@ permalink: /kb/090/Q90983/
 	
 	=============================================================================
 	
+
+{% endraw %}

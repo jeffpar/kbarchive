@@ -6,6 +6,8 @@ permalink: /kb/246/Q246472/
 
 ## Q246472: Unable to Upgrade SNA Server from Back Office 4.5
 
+{% raw %}
+
 	Article: Q246472
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -51,3 +53,5 @@ permalink: /kb/246/Q246472/
 	
 	=============================================================================
 	
+
+{% endraw %}

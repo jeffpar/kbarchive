@@ -6,6 +6,8 @@ permalink: /kb/093/Q93438/
 
 ## Q93438: Installing XNS on LAN Man Workstation from a 3Server
 
+{% raw %}
+
 	Article: Q93438
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -167,3 +169,5 @@ permalink: /kb/093/Q93438/
 	
 	=============================================================================
 	
+
+{% endraw %}

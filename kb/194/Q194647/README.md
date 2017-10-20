@@ -6,6 +6,8 @@ permalink: /kb/194/Q194647/
 
 ## Q194647: XCLN: OWA Jscript Error Accessing Inbox After Public Calendar
 
+{% raw %}
+
 	Article: Q194647
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -60,3 +62,5 @@ permalink: /kb/194/Q194647/
 	
 	=============================================================================
 	
+
+{% endraw %}

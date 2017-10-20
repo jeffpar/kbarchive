@@ -6,6 +6,8 @@ permalink: /kb/109/Q109878/
 
 ## Q109878: FIX: Commas in NAMELIST Data Fields Cause F6511
 
+{% raw %}
+
 	Article: Q109878
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -89,3 +91,5 @@ permalink: /kb/109/Q109878/
 	
 	=============================================================================
 	
+
+{% endraw %}

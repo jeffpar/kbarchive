@@ -6,6 +6,8 @@ permalink: /kb/296/Q296255/
 
 ## Q296255: Setting the MaxFailedObjects Key in Microsoft Directory Synchron
 
+{% raw %}
+
 	Article: Q296255
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -66,3 +68,5 @@ permalink: /kb/296/Q296255/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167348/
 
 ## Q167348: FIX: Non-const Member Function Call Via const Object Allowed
 
+{% raw %}
+
 	Article: Q167348
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0
@@ -70,3 +72,5 @@ permalink: /kb/167/Q167348/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98648/
 
 ## Q98648: Error on Incorrect Line After SHELL Statement in CONFIG.SYS
 
+{% raw %}
+
 	Article: Q98648
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -51,3 +53,5 @@ permalink: /kb/098/Q98648/
 	
 	=============================================================================
 	
+
+{% endraw %}

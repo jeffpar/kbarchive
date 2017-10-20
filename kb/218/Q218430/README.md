@@ -6,6 +6,8 @@ permalink: /kb/218/Q218430/
 
 ## Q218430: XCLN: Client SMTP Connectivity Using Secure Socket Layer
 
+{% raw %}
+
 	Article: Q218430
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5,8.0,8.01,8.02,8.03
@@ -114,3 +116,5 @@ permalink: /kb/218/Q218430/
 	
 	=============================================================================
 	
+
+{% endraw %}

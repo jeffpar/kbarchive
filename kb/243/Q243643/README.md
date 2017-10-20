@@ -6,6 +6,8 @@ permalink: /kb/243/Q243643/
 
 ## Q243643: Logon Attempt Does Not Work After New Windows NT Installation
 
+{% raw %}
+
 	Article: Q243643
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -147,3 +149,5 @@ permalink: /kb/243/Q243643/
 	
 	=============================================================================
 	
+
+{% endraw %}

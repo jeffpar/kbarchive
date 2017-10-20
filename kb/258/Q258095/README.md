@@ -6,6 +6,8 @@ permalink: /kb/258/Q258095/
 
 ## Q258095: XFOR: Configuring the 5.5 Cal. Conn. to Use Exchange 2000 Router
 
+{% raw %}
+
 	Article: Q258095
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP2,5.5 SP3
@@ -143,3 +145,5 @@ permalink: /kb/258/Q258095/
 	
 	=============================================================================
 	
+
+{% endraw %}

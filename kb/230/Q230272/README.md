@@ -6,6 +6,8 @@ permalink: /kb/230/Q230272/
 
 ## Q230272: XFOR: How to Re-add Extensions to Exchange for SNADS Connector
 
+{% raw %}
+
 	Article: Q230272
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -92,3 +94,5 @@ permalink: /kb/230/Q230272/
 	
 	=============================================================================
 	
+
+{% endraw %}

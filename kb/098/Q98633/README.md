@@ -6,6 +6,8 @@ permalink: /kb/098/Q98633/
 
 ## Q98633: Ping Utility Does Not Work with Windows for Workgroups
 
+{% raw %}
+
 	Article: Q98633
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/098/Q98633/
 	
 	=============================================================================
 	
+
+{% endraw %}

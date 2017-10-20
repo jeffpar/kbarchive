@@ -6,6 +6,8 @@ permalink: /kb/160/Q160784/
 
 ## Q160784: XADM: Errmsg: Initialization of Dynamic Link Library Kernel32
 
+{% raw %}
+
 	Article: Q160784
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/160/Q160784/
 	
 	=============================================================================
 	
+
+{% endraw %}

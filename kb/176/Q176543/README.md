@@ -6,6 +6,8 @@ permalink: /kb/176/Q176543/
 
 ## Q176543: Windows 95 Client Is Unable to Receive Roaming Profiles
 
+{% raw %}
+
 	Article: Q176543
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 1,2,2.1,3.51,4.0
@@ -84,3 +86,5 @@ permalink: /kb/176/Q176543/
 	
 	=============================================================================
 	
+
+{% endraw %}

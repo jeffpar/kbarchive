@@ -6,6 +6,8 @@ permalink: /kb/074/Q74037/
 
 ## Q74037: Use Only Application Name when Adding to SETVER Version Table
 
+{% raw %}
+
 	Article: Q74037
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -68,3 +70,5 @@ permalink: /kb/074/Q74037/
 	
 	=============================================================================
 	
+
+{% endraw %}

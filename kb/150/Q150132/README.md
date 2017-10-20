@@ -6,6 +6,8 @@ permalink: /kb/150/Q150132/
 
 ## Q150132: PRB: Undefined Pointer Assignment Causes Application Error
 
+{% raw %}
+
 	Article: Q150132
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -84,3 +86,5 @@ permalink: /kb/150/Q150132/
 	
 	=============================================================================
 	
+
+{% endraw %}

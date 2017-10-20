@@ -6,6 +6,8 @@ permalink: /kb/068/Q68560/
 
 ## Q68560: DLL Installs an ISR That Can Signal an Application
 
+{% raw %}
+
 	Article: Q68560
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -72,3 +74,5 @@ permalink: /kb/068/Q68560/
 	
 	=============================================================================
 	
+
+{% endraw %}

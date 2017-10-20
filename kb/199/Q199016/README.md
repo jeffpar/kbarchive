@@ -6,6 +6,8 @@ permalink: /kb/199/Q199016/
 
 ## Q199016: EVG99: Menu Bar Is Active When Program Is Running in Background
 
+{% raw %}
+
 	Article: Q199016
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/199/Q199016/
 	
 	=============================================================================
 	
+
+{% endraw %}

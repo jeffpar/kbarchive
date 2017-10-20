@@ -6,6 +6,8 @@ permalink: /kb/125/Q125624/
 
 ## Q125624: INVDOS Crashes AutoCAD Mouse/Tablet Driver
 
+{% raw %}
+
 	Article: Q125624
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -66,3 +68,5 @@ permalink: /kb/125/Q125624/
 	
 	=============================================================================
 	
+
+{% endraw %}

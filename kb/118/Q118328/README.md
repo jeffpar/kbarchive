@@ -6,6 +6,8 @@ permalink: /kb/118/Q118328/
 
 ## Q118328: Multimedia Viewer Title Limits
 
+{% raw %}
+
 	Article: Q118328
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -154,3 +156,5 @@ permalink: /kb/118/Q118328/
 	
 	=============================================================================
 	
+
+{% endraw %}

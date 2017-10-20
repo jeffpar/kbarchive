@@ -6,6 +6,8 @@ permalink: /kb/156/Q156418/
 
 ## Q156418: SMS: Standalone Servers Report to Site Server Domain
 
+{% raw %}
+
 	Article: Q156418
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -58,3 +60,5 @@ permalink: /kb/156/Q156418/
 	
 	=============================================================================
 	
+
+{% endraw %}

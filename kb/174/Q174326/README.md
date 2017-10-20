@@ -6,6 +6,8 @@ permalink: /kb/174/Q174326/
 
 ## Q174326: WD97: Error Expanding Subdocuments If Network Connection Lost
 
+{% raw %}
+
 	Article: Q174326
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/174/Q174326/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/301/Q301056/
 
 ## Q301056: HOW TO: Debug a Migration DLL During a Windows 2000 Upgrade
 
+{% raw %}
+
 	Article: Q301056
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -190,3 +192,5 @@ permalink: /kb/301/Q301056/
 	
 	=============================================================================
 	
+
+{% endraw %}

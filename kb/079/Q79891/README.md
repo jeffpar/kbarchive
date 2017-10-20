@@ -6,6 +6,8 @@ permalink: /kb/079/Q79891/
 
 ## Q79891: PrintRite Version 1.5 or Later Compatible with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q79891
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -55,3 +57,5 @@ permalink: /kb/079/Q79891/
 	
 	=============================================================================
 	
+
+{% endraw %}

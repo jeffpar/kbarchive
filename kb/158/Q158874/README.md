@@ -6,6 +6,8 @@ permalink: /kb/158/Q158874/
 
 ## Q158874: Finding Extensible Counters Used by Performance Monitor
 
+{% raw %}
+
 	Article: Q158874
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/158/Q158874/
 	
 	=============================================================================
 	
+
+{% endraw %}

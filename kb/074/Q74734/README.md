@@ -6,6 +6,8 @@ permalink: /kb/074/Q74734/
 
 ## Q74734: Loading Programs Automatically into MS-DOS Shell Task List
 
+{% raw %}
+
 	Article: Q74734
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -77,3 +79,5 @@ permalink: /kb/074/Q74734/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168924/
 
 ## Q168924: Print to File with 5Si Mx PS Driver Inserts Wrong Control Code
 
+{% raw %}
+
 	Article: Q168924
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/168/Q168924/
 	
 	=============================================================================
 	
+
+{% endraw %}

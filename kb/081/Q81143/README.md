@@ -6,6 +6,8 @@ permalink: /kb/081/Q81143/
 
 ## Q81143: DOCERR: Get/SetCommEventMask Functions Documented Incorrectly
 
+{% raw %}
+
 	Article: Q81143
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/081/Q81143/
 	
 	=============================================================================
 	
+
+{% endraw %}

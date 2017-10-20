@@ -6,6 +6,8 @@ permalink: /kb/161/Q161507/
 
 ## Q161507: WD97: CD-ROM Contents (Part 7 of 7)
 
+{% raw %}
+
 	Article: Q161507
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -1210,3 +1212,5 @@ permalink: /kb/161/Q161507/
 	
 	=============================================================================
 	
+
+{% endraw %}

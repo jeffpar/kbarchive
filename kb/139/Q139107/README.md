@@ -6,6 +6,8 @@ permalink: /kb/139/Q139107/
 
 ## Q139107: Err Msg: Uninstall Is Unable to Write to the MBR
 
+{% raw %}
+
 	Article: Q139107
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -106,3 +108,5 @@ permalink: /kb/139/Q139107/
 	
 	=============================================================================
 	
+
+{% endraw %}

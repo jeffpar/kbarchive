@@ -6,6 +6,8 @@ permalink: /kb/173/Q173886/
 
 ## Q173886: ADT/ODE: Icon Doesn't Show in Title/Taskbar of Run-Time App
 
+{% raw %}
+
 	Article: Q173886
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -154,3 +156,5 @@ permalink: /kb/173/Q173886/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159567/
 
 ## Q159567: Windows 95 SNMP Agent Allows Only Read-Only Access
 
+{% raw %}
+
 	Article: Q159567
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -122,3 +124,5 @@ permalink: /kb/159/Q159567/
 	
 	=============================================================================
 	
+
+{% endraw %}

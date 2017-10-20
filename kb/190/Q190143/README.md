@@ -6,6 +6,8 @@ permalink: /kb/190/Q190143/
 
 ## Q190143: IIS 4.0 Crashes; IIS 3.0 Generates Corrupted Log Data for HTTPS
 
+{% raw %}
+
 	Article: Q190143
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0,4.0
@@ -66,3 +68,5 @@ permalink: /kb/190/Q190143/
 	
 	=============================================================================
 	
+
+{% endraw %}

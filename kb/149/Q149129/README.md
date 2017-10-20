@@ -6,6 +6,8 @@ permalink: /kb/149/Q149129/
 
 ## Q149129: PRB: LOCKING Replaced with SHARE= in OPEN Statement
 
+{% raw %}
+
 	Article: Q149129
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/149/Q149129/
 	
 	=============================================================================
 	
+
+{% endraw %}

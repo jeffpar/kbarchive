@@ -6,6 +6,8 @@ permalink: /kb/182/Q182989/
 
 ## Q182989: XCON: Attempt to Start MTA Fails with Error 1058
 
+{% raw %}
+
 	Article: Q182989
 	Product(s): Microsoft Exchange
 	Version(s): 2000,4.0,5.0,5.5
@@ -92,3 +94,5 @@ permalink: /kb/182/Q182989/
 	
 	=============================================================================
 	
+
+{% endraw %}

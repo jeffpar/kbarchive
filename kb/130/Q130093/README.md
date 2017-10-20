@@ -6,6 +6,8 @@ permalink: /kb/130/Q130093/
 
 ## Q130093: Err Msg: Incorrect Response from the Network
 
+{% raw %}
+
 	Article: Q130093
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -65,3 +67,5 @@ permalink: /kb/130/Q130093/
 	
 	=============================================================================
 	
+
+{% endraw %}

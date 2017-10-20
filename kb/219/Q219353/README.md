@@ -6,6 +6,8 @@ permalink: /kb/219/Q219353/
 
 ## Q219353: RRAS PPP Connections May Time-out on Slow or Delayed Links
 
+{% raw %}
+
 	Article: Q219353
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/219/Q219353/
 	
 	=============================================================================
 	
+
+{% endraw %}

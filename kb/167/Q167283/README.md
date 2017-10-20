@@ -6,6 +6,8 @@ permalink: /kb/167/Q167283/
 
 ## Q167283: WD97: Field Shading Split by Inline Object
 
+{% raw %}
+
 	Article: Q167283
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/167/Q167283/
 	
 	=============================================================================
 	
+
+{% endraw %}

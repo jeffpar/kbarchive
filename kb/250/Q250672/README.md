@@ -6,6 +6,8 @@ permalink: /kb/250/Q250672/
 
 ## Q250672: XCLN: Outlook For Macintosh Stops Responding at Splash Screen
 
+{% raw %}
+
 	Article: Q250672
 	Product(s): Microsoft Exchange
 	Version(s): 8.2
@@ -120,3 +122,5 @@ permalink: /kb/250/Q250672/
 	
 	=============================================================================
 	
+
+{% endraw %}

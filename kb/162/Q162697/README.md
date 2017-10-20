@@ -6,6 +6,8 @@ permalink: /kb/162/Q162697/
 
 ## Q162697: Remote Access Client Forgets Saved Password
 
+{% raw %}
+
 	Article: Q162697
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -54,3 +56,5 @@ permalink: /kb/162/Q162697/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118427/
 
 ## Q118427: Schubert: Insufficient Resources Error After Bookshelf Set Up
 
+{% raw %}
+
 	Article: Q118427
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/118/Q118427/
 	
 	=============================================================================
 	
+
+{% endraw %}

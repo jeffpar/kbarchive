@@ -6,6 +6,8 @@ permalink: /kb/128/Q128323/
 
 ## Q128323: PC WRmt: MCI Credit Card Calling /Modem Script
 
+{% raw %}
+
 	Article: Q128323
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -218,3 +220,5 @@ permalink: /kb/128/Q128323/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216055/
 
 ## Q216055: HOWTO: Pass an Array by Reference to LCK and Return Changes
 
+{% raw %}
+
 	Article: Q216055
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0a,6.0
@@ -146,3 +148,5 @@ permalink: /kb/216/Q216055/
 	
 	=============================================================================
 	
+
+{% endraw %}

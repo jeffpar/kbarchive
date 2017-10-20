@@ -6,6 +6,8 @@ permalink: /kb/107/Q107495/
 
 ## Q107495: PRB: Phar Lap Error 58 Running Visual C++ on Read-Only Drive
 
+{% raw %}
+
 	Article: Q107495
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,6.1,6.11,6.1a
@@ -95,3 +97,5 @@ permalink: /kb/107/Q107495/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245045/
 
 ## Q245045: XFOR: Restricting Inbound SMTP Mail Addressed to Encapsulated X.
 
+{% raw %}
+
 	Article: Q245045
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -106,3 +108,5 @@ permalink: /kb/245/Q245045/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118435/
 
 ## Q118435: INFO: Sharing Menus Between MDI Child Windows
 
+{% raw %}
+
 	Article: Q118435
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,2.2
@@ -149,3 +151,5 @@ permalink: /kb/118/Q118435/
 	
 	=============================================================================
 	
+
+{% endraw %}

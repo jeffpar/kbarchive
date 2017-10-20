@@ -6,6 +6,8 @@ permalink: /kb/098/Q98510/
 
 ## Q98510: How to Exit Defrag Without Losing Data
 
+{% raw %}
+
 	Article: Q98510
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -48,3 +50,5 @@ permalink: /kb/098/Q98510/
 	
 	=============================================================================
 	
+
+{% endraw %}

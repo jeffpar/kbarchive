@@ -6,6 +6,8 @@ permalink: /kb/061/Q61222/
 
 ## Q61222: C 6.00 README: CodeView Can't Call _fastcall Functions
 
+{% raw %}
+
 	Article: Q61222
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -22,3 +24,5 @@ permalink: /kb/061/Q61222/
 	- When using CodeView to debug programs containing _fastcall
 	  functions, you cannot call the _fastcall functions from within
 	  CodeView.
+
+{% endraw %}

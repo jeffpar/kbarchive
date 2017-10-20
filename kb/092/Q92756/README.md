@@ -6,6 +6,8 @@ permalink: /kb/092/Q92756/
 
 ## Q92756: Media Player: Basic AVI Playback Troubleshooting
 
+{% raw %}
+
 	Article: Q92756
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/092/Q92756/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182832/
 
 ## Q182832: Error in COBOL Export After Moving Type Library
 
+{% raw %}
+
 	Article: Q182832
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -67,3 +69,5 @@ permalink: /kb/182/Q182832/
 	
 	=============================================================================
 	
+
+{% endraw %}

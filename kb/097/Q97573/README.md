@@ -6,6 +6,8 @@ permalink: /kb/097/Q97573/
 
 ## Q97573: Using DoubleSpace with LANtastic
 
+{% raw %}
+
 	Article: Q97573
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -100,3 +102,5 @@ permalink: /kb/097/Q97573/
 	
 	=============================================================================
 	
+
+{% endraw %}

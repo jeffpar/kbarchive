@@ -6,6 +6,8 @@ permalink: /kb/159/Q159625/
 
 ## Q159625: WD97: Docerr: Message Box Refers to Multilevel Not Outline List
 
+{% raw %}
+
 	Article: Q159625
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -121,3 +123,5 @@ permalink: /kb/159/Q159625/
 	
 	=============================================================================
 	
+
+{% endraw %}

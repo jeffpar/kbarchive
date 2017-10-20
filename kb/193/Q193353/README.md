@@ -6,6 +6,8 @@ permalink: /kb/193/Q193353/
 
 ## Q193353: PRB: Policy to Not Display Last Username on RDP Client
 
+{% raw %}
+
 	Article: Q193353
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/193/Q193353/
 	
 	=============================================================================
 	
+
+{% endraw %}

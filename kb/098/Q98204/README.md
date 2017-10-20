@@ -6,6 +6,8 @@ permalink: /kb/098/Q98204/
 
 ## Q98204: PC WFW: MAPI Tools Disk &#91;5.25, 1.2 MB&#93;
 
+{% raw %}
+
 	Article: Q98204
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -147,3 +149,5 @@ permalink: /kb/098/Q98204/
 	
 	=============================================================================
 	
+
+{% endraw %}

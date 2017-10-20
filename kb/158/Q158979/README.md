@@ -6,6 +6,8 @@ permalink: /kb/158/Q158979/
 
 ## Q158979: STOP 0x0000000A Running Netmon on Token Ring Networks
 
+{% raw %}
+
 	Article: Q158979
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/158/Q158979/
 	
 	=============================================================================
 	
+
+{% endraw %}

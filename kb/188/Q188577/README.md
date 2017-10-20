@@ -6,6 +6,8 @@ permalink: /kb/188/Q188577/
 
 ## Q188577: HOWTO: What is the Licenses Collection Used For?
 
+{% raw %}
+
 	Article: Q188577
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -190,3 +192,5 @@ permalink: /kb/188/Q188577/
 	
 	=============================================================================
 	
+
+{% endraw %}

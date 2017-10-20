@@ -6,6 +6,8 @@ permalink: /kb/275/Q275598/
 
 ## Q275598: XCON: Invalid Characters Cause Information Store Crash
 
+{% raw %}
+
 	Article: Q275598
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -104,3 +106,5 @@ permalink: /kb/275/Q275598/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151715/
 
 ## Q151715: How to Toggle the CAPS LOCK and NUM LOCK Keys
 
+{% raw %}
+
 	Article: Q151715
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -174,3 +176,5 @@ permalink: /kb/151/Q151715/
 	
 	=============================================================================
 	
+
+{% endraw %}

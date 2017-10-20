@@ -6,6 +6,8 @@ permalink: /kb/128/Q128203/
 
 ## Q128203: FIX: No Generic/Text Only Printer Driver in Windows NT
 
+{% raw %}
+
 	Article: Q128203
 	Product(s): Microsoft FoxPro
 	Version(s): 2.60a 3.00
@@ -53,3 +55,5 @@ permalink: /kb/128/Q128203/
 	
 	=============================================================================
 	
+
+{% endraw %}

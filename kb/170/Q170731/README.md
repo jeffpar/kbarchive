@@ -6,6 +6,8 @@ permalink: /kb/170/Q170731/
 
 ## Q170731: WD97: Macro to Test for the Last Cell in a Table
 
+{% raw %}
+
 	Article: Q170731
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -102,3 +104,5 @@ permalink: /kb/170/Q170731/
 	
 	=============================================================================
 	
+
+{% endraw %}

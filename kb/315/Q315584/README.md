@@ -6,6 +6,8 @@ permalink: /kb/315/Q315584/
 
 ## Q315584: HOW TO: Automatically Log a User Off from a Web Application
 
+{% raw %}
+
 	Article: Q315584
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0,5.5
@@ -228,3 +230,5 @@ permalink: /kb/315/Q315584/
 	
 	=============================================================================
 	
+
+{% endraw %}

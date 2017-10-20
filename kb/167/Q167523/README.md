@@ -6,6 +6,8 @@ permalink: /kb/167/Q167523/
 
 ## Q167523: HOWTO: Redistributing DAO with Your Visual C++ 5.0 Application
 
+{% raw %}
+
 	Article: Q167523
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -337,3 +339,5 @@ permalink: /kb/167/Q167523/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181410/
 
 ## Q181410: XADM: Store Stops Responding with High CPU Usage for a Thread
 
+{% raw %}
+
 	Article: Q181410
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -96,3 +98,5 @@ permalink: /kb/181/Q181410/
 	
 	=============================================================================
 	
+
+{% endraw %}

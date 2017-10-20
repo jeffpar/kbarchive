@@ -6,6 +6,8 @@ permalink: /kb/100/Q100770/
 
 ## Q100770: HOWTO: Use Accelerator Keys with Modal Dialog Box Main Window
 
+{% raw %}
+
 	Article: Q100770
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,5.0,6.0
@@ -173,3 +175,5 @@ permalink: /kb/100/Q100770/
 	
 	=============================================================================
 	
+
+{% endraw %}

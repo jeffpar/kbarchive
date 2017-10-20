@@ -6,6 +6,8 @@ permalink: /kb/168/Q168385/
 
 ## Q168385: BUG: The &quot;this&quot; Pointer Is Incorrect in Destructor of Base Class
 
+{% raw %}
+
 	Article: Q168385
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/168/Q168385/
 	
 	=============================================================================
 	
+
+{% endraw %}

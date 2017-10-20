@@ -6,6 +6,8 @@ permalink: /kb/085/Q85271/
 
 ## Q85271: Word for MS-DOS Err Msg: System Integrity Violation
 
+{% raw %}
+
 	Article: Q85271
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -81,3 +83,5 @@ permalink: /kb/085/Q85271/
 	
 	=============================================================================
 	
+
+{% endraw %}

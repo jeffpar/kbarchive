@@ -6,6 +6,8 @@ permalink: /kb/254/Q254449/
 
 ## Q254449: EST2001: Help Answer Wizard and Index Tabs Hang
 
+{% raw %}
+
 	Article: Q254449
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -86,3 +88,5 @@ permalink: /kb/254/Q254449/
 	
 	=============================================================================
 	
+
+{% endraw %}

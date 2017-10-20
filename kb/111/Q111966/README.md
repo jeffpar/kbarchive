@@ -6,6 +6,8 @@ permalink: /kb/111/Q111966/
 
 ## Q111966: WFWG WinPopup Incorrectly Reports Print Job Completed
 
+{% raw %}
+
 	Article: Q111966
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -48,3 +50,5 @@ permalink: /kb/111/Q111966/
 	
 	=============================================================================
 	
+
+{% endraw %}

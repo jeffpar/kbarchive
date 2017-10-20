@@ -6,6 +6,8 @@ permalink: /kb/159/Q159182/
 
 ## Q159182: XCON: MTAs Unable to Establish X.400 Connection
 
+{% raw %}
+
 	Article: Q159182
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/159/Q159182/
 	
 	=============================================================================
 	
+
+{% endraw %}

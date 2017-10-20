@@ -6,6 +6,8 @@ permalink: /kb/171/Q171684/
 
 ## Q171684: WD97: Differences Between RTF and Binary Export Converter
 
+{% raw %}
+
 	Article: Q171684
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -241,3 +243,5 @@ permalink: /kb/171/Q171684/
 	
 	=============================================================================
 	
+
+{% endraw %}

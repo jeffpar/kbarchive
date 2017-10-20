@@ -6,6 +6,8 @@ permalink: /kb/084/Q84219/
 
 ## Q84219: SYSTEM.INI &#91;386enh&#93; Entries Not Removed When Driver Is Removed
 
+{% raw %}
+
 	Article: Q84219
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -41,3 +43,5 @@ permalink: /kb/084/Q84219/
 	
 	=============================================================================
 	
+
+{% endraw %}

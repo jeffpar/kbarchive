@@ -6,6 +6,8 @@ permalink: /kb/148/Q148896/
 
 ## Q148896: Return of Arcade: List of Supported Sound Cards
 
+{% raw %}
+
 	Article: Q148896
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/148/Q148896/
 	
 	=============================================================================
 	
+
+{% endraw %}

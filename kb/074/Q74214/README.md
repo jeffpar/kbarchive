@@ -6,6 +6,8 @@ permalink: /kb/074/Q74214/
 
 ## Q74214: Mouse Doesn't Work with Norton Utilities 5.0
 
+{% raw %}
+
 	Article: Q74214
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -64,3 +66,5 @@ permalink: /kb/074/Q74214/
 	
 	=============================================================================
 	
+
+{% endraw %}

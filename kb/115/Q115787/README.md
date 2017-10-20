@@ -6,6 +6,8 @@ permalink: /kb/115/Q115787/
 
 ## Q115787: Configuring PC/TCP for Windows for Workgroups 3.11
 
+{% raw %}
+
 	Article: Q115787
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11
@@ -169,3 +171,5 @@ permalink: /kb/115/Q115787/
 	
 	=============================================================================
 	
+
+{% endraw %}

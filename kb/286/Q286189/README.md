@@ -6,6 +6,8 @@ permalink: /kb/286/Q286189/
 
 ## Q286189: HOWTO: Invoke OLE DB Data Link Properties Dialog Box in VB Code
 
+{% raw %}
+
 	Article: Q286189
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.01,2.1,2.1 SP1,2.1 SP2,2.5,2.6,5.0,6.0,6.0 SP3,6.0 SP4
@@ -117,3 +119,5 @@ permalink: /kb/286/Q286189/
 	
 	=============================================================================
 	
+
+{% endraw %}

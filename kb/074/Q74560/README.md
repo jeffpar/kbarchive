@@ -6,6 +6,8 @@ permalink: /kb/074/Q74560/
 
 ## Q74560: Charts and Graphs for Windows-Based Applications
 
+{% raw %}
+
 	Article: Q74560
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -44,3 +46,5 @@ permalink: /kb/074/Q74560/
 	
 	=============================================================================
 	
+
+{% endraw %}

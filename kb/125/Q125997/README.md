@@ -6,6 +6,8 @@ permalink: /kb/125/Q125997/
 
 ## Q125997: Err Msg Closing File on LM Server: Parameter is Incorrect
 
+{% raw %}
+
 	Article: Q125997
 	Product(s): Microsoft Windows NT
 	Version(s): 2.x,3.5
@@ -57,3 +59,5 @@ permalink: /kb/125/Q125997/
 	
 	=============================================================================
 	
+
+{% endraw %}

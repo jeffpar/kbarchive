@@ -6,6 +6,8 @@ permalink: /kb/069/Q69684/
 
 ## Q69684: Installing Windows 3.0 on Everex 386/20 AGI 3000D
 
+{% raw %}
+
 	Article: Q69684
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -63,3 +65,5 @@ permalink: /kb/069/Q69684/
 	
 	=============================================================================
 	
+
+{% endraw %}

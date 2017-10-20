@@ -6,6 +6,8 @@ permalink: /kb/081/Q81454/
 
 ## Q81454: Creating Inference Rules for Nonstandard File Extensions
 
+{% raw %}
+
 	Article: Q81454
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.11,1.12,1.13,1.2,1.21,1.3
@@ -73,3 +75,5 @@ permalink: /kb/081/Q81454/
 	
 	=============================================================================
 	
+
+{% endraw %}

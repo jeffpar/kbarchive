@@ -6,6 +6,8 @@ permalink: /kb/263/Q263851/
 
 ## Q263851: XADM: MSExchaneIS Private Object Send Queue Size Counter
 
+{% raw %}
+
 	Article: Q263851
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -80,3 +82,5 @@ permalink: /kb/263/Q263851/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180653/
 
 ## Q180653: Microsoft Fax Status Icon Displays Incorrect Number of Faxes
 
+{% raw %}
+
 	Article: Q180653
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -74,3 +76,5 @@ permalink: /kb/180/Q180653/
 	
 	=============================================================================
 	
+
+{% endraw %}

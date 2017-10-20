@@ -6,6 +6,8 @@ permalink: /kb/123/Q123174/
 
 ## Q123174: Intergraph HardPC Incompatible with Windows 95
 
+{% raw %}
+
 	Article: Q123174
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/123/Q123174/
 	
 	=============================================================================
 	
+
+{% endraw %}

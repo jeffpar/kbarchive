@@ -6,6 +6,8 @@ permalink: /kb/089/Q89877/
 
 ## Q89877: Sound System: Description of Yamaha OPL3 and OPL2 Chips
 
+{% raw %}
+
 	Article: Q89877
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/089/Q89877/
 	
 	=============================================================================
 	
+
+{% endraw %}

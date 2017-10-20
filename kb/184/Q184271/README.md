@@ -6,6 +6,8 @@ permalink: /kb/184/Q184271/
 
 ## Q184271: INFO: Updated AutoAccept Event Script
 
+{% raw %}
+
 	Article: Q184271
 	Product(s): Microsoft Exchange
 	Version(s): 1.2,5.5
@@ -814,3 +816,5 @@ permalink: /kb/184/Q184271/
 	
 	=============================================================================
 	
+
+{% endraw %}

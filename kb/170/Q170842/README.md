@@ -6,6 +6,8 @@ permalink: /kb/170/Q170842/
 
 ## Q170842: Setup.exe Causes Errors When Logging on
 
+{% raw %}
+
 	Article: Q170842
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/170/Q170842/
 	
 	=============================================================================
 	
+
+{% endraw %}

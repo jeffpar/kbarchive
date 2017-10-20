@@ -6,6 +6,8 @@ permalink: /kb/304/Q304068/
 
 ## Q304068: SMS: The Ndiscldr Tool Cannot Import into Child Sites
 
+{% raw %}
+
 	Article: Q304068
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -83,3 +85,5 @@ permalink: /kb/304/Q304068/
 	
 	=============================================================================
 	
+
+{% endraw %}

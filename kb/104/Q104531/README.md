@@ -6,6 +6,8 @@ permalink: /kb/104/Q104531/
 
 ## Q104531: DoubleSpace Fails to Mount Compressed Disk in BackPack Drive
 
+{% raw %}
+
 	Article: Q104531
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -51,3 +53,5 @@ permalink: /kb/104/Q104531/
 	
 	=============================================================================
 	
+
+{% endraw %}

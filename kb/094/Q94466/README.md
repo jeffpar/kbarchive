@@ -6,6 +6,8 @@ permalink: /kb/094/Q94466/
 
 ## Q94466: 3COM: Microsoft Mail Gateway to 3Com Shuts Down Randomly
 
+{% raw %}
+
 	Article: Q94466
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/094/Q94466/
 	
 	=============================================================================
 	
+
+{% endraw %}

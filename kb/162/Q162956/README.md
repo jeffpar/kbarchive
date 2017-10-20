@@ -6,6 +6,8 @@ permalink: /kb/162/Q162956/
 
 ## Q162956: WD97: Cannot Delete Certain Objects in HTML Document
 
+{% raw %}
+
 	Article: Q162956
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/162/Q162956/
 	
 	=============================================================================
 	
+
+{% endraw %}

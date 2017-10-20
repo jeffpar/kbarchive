@@ -6,6 +6,8 @@ permalink: /kb/058/Q58024/
 
 ## Q58024: BASIC 7.00 MousePoll Gives Screen, Not Window Coordinates
 
+{% raw %}
+
 	Article: Q58024
 	Product(s): See article
 	Version(s): 7.00
@@ -48,3 +50,5 @@ permalink: /kb/058/Q58024/
 	Therefore, it is important to note that the MousePoll subprogram does
 	not return coordinates relative to any window's top-left corner, but
 	always returns coordinates relative to the screen's top-left corner.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140918/
 
 ## Q140918: SMS INVDOS Does Not Report IPX Address on IPX and TCP/IP Client
 
+{% raw %}
+
 	Article: Q140918
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -44,3 +46,5 @@ permalink: /kb/140/Q140918/
 	
 	=============================================================================
 	
+
+{% endraw %}

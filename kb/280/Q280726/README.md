@@ -6,6 +6,8 @@ permalink: /kb/280/Q280726/
 
 ## Q280726: XADM: How to Use Mdbview to Remove Mailbox Event Scripts
 
+{% raw %}
+
 	Article: Q280726
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -96,3 +98,5 @@ permalink: /kb/280/Q280726/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158060/
 
 ## Q158060: WD97: VBA Code Lost After Converting to Another Document Format
 
+{% raw %}
+
 	Article: Q158060
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97; :Service Release 1 (SR-1)
@@ -68,3 +70,5 @@ permalink: /kb/158/Q158060/
 	
 	=============================================================================
 	
+
+{% endraw %}

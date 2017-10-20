@@ -6,6 +6,8 @@ permalink: /kb/176/Q176707/
 
 ## Q176707: PRB: Error &quot;Not enough Diskspace&quot; When Closing a Table
 
+{% raw %}
+
 	Article: Q176707
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
@@ -158,3 +160,5 @@ permalink: /kb/176/Q176707/
 	
 	=============================================================================
 	
+
+{% endraw %}

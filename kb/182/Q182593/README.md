@@ -6,6 +6,8 @@ permalink: /kb/182/Q182593/
 
 ## Q182593: SMS Err: &quot;Unable to Initialize NetBIOS Protocol&quot; on Win95 Client
 
+{% raw %}
+
 	Article: Q182593
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -161,3 +163,5 @@ permalink: /kb/182/Q182593/
 	
 	=============================================================================
 	
+
+{% endraw %}

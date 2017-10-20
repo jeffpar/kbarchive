@@ -6,6 +6,8 @@ permalink: /kb/191/Q191859/
 
 ## Q191859: BUG: MonthView Control Prevents CommandButton Click Event
 
+{% raw %}
+
 	Article: Q191859
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -102,3 +104,5 @@ permalink: /kb/191/Q191859/
 	
 	=============================================================================
 	
+
+{% endraw %}

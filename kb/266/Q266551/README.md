@@ -6,6 +6,8 @@ permalink: /kb/266/Q266551/
 
 ## Q266551: Encarta Researcher: Contents of Article Is Not Displayed
 
+{% raw %}
+
 	Article: Q266551
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/266/Q266551/
 	
 	=============================================================================
 	
+
+{% endraw %}

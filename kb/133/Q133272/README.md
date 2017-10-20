@@ -6,6 +6,8 @@ permalink: /kb/133/Q133272/
 
 ## Q133272: Unattended Windows NT Setup Always Sets Up the Network
 
+{% raw %}
+
 	Article: Q133272
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -86,3 +88,5 @@ permalink: /kb/133/Q133272/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140710/
 
 ## Q140710: Incorrect Help Topic: Cannot Select Service Type During Signup
 
+{% raw %}
+
 	Article: Q140710
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -46,3 +48,5 @@ permalink: /kb/140/Q140710/
 	
 	=============================================================================
 	
+
+{% endraw %}

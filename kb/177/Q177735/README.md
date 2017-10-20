@@ -6,6 +6,8 @@ permalink: /kb/177/Q177735/
 
 ## Q177735: XADM: Unable To Access Exchange Administrator Program
 
+{% raw %}
+
 	Article: Q177735
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -118,3 +120,5 @@ permalink: /kb/177/Q177735/
 	
 	=============================================================================
 	
+
+{% endraw %}

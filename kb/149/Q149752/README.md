@@ -6,6 +6,8 @@ permalink: /kb/149/Q149752/
 
 ## Q149752: BUG: FOR2862 Error Caused by External Function Without Type
 
+{% raw %}
+
 	Article: Q149752
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -73,3 +75,5 @@ permalink: /kb/149/Q149752/
 	
 	=============================================================================
 	
+
+{% endraw %}

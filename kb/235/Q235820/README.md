@@ -6,6 +6,8 @@ permalink: /kb/235/Q235820/
 
 ## Q235820: SMS: Programs Advertised to Users Executed by Non Members
 
+{% raw %}
+
 	Article: Q235820
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -62,3 +64,5 @@ permalink: /kb/235/Q235820/
 	
 	=============================================================================
 	
+
+{% endraw %}

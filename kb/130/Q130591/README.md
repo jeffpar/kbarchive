@@ -6,6 +6,8 @@ permalink: /kb/130/Q130591/
 
 ## Q130591: INFO: CPropertyPage::CancelToClose() Documented Incorrectly
 
+{% raw %}
+
 	Article: Q130591
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -46,3 +48,5 @@ permalink: /kb/130/Q130591/
 	
 	=============================================================================
 	
+
+{% endraw %}

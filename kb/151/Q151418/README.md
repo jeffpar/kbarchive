@@ -6,6 +6,8 @@ permalink: /kb/151/Q151418/
 
 ## Q151418: WinNT TCP/IP May Reuse TIME-WAIT Connections Prior to 2MSL
 
+{% raw %}
+
 	Article: Q151418
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -105,3 +107,5 @@ permalink: /kb/151/Q151418/
 	
 	=============================================================================
 	
+
+{% endraw %}

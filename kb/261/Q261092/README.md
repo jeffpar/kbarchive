@@ -6,6 +6,8 @@ permalink: /kb/261/Q261092/
 
 ## Q261092: XADM: Requirements to Set Security Permission Roles
 
+{% raw %}
+
 	Article: Q261092
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -92,3 +94,5 @@ permalink: /kb/261/Q261092/
 	
 	=============================================================================
 	
+
+{% endraw %}

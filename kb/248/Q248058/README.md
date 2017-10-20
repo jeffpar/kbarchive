@@ -6,6 +6,8 @@ permalink: /kb/248/Q248058/
 
 ## Q248058: Error Message: HTTP 403.13 Forbidden: Client Certificate Revoked
 
+{% raw %}
+
 	Article: Q248058
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -107,3 +109,5 @@ permalink: /kb/248/Q248058/
 	
 	=============================================================================
 	
+
+{% endraw %}

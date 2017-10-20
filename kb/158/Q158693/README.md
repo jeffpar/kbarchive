@@ -6,6 +6,8 @@ permalink: /kb/158/Q158693/
 
 ## Q158693: XGEN: How to Obtain Exchange Server 4.0 Service Pack 4
 
+{% raw %}
+
 	Article: Q158693
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -171,3 +173,5 @@ permalink: /kb/158/Q158693/
 	
 	=============================================================================
 	
+
+{% endraw %}

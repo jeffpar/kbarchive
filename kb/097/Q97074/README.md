@@ -6,6 +6,8 @@ permalink: /kb/097/Q97074/
 
 ## Q97074: PC WRmt: Changing the AT&amp;T Driver User Sign In ID or Password
 
+{% raw %}
+
 	Article: Q97074
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -59,3 +61,5 @@ permalink: /kb/097/Q97074/
 	
 	=============================================================================
 	
+
+{% endraw %}

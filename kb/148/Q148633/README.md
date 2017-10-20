@@ -6,6 +6,8 @@ permalink: /kb/148/Q148633/
 
 ## Q148633: XADM: Cannot Sort Public Folders By Last Modified Date
 
+{% raw %}
+
 	Article: Q148633
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -44,3 +46,5 @@ permalink: /kb/148/Q148633/
 	
 	=============================================================================
 	
+
+{% endraw %}

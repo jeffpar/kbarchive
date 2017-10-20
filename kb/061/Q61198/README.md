@@ -6,6 +6,8 @@ permalink: /kb/061/Q61198/
 
 ## Q61198: C 6.00 README: setjmp/longjmp with /Ox, /Oe, /Ol, or /Og
 
+{% raw %}
+
 	Article: Q61198
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -30,3 +32,5 @@ permalink: /kb/061/Q61198/
 	        . . . {function containing setjmp or longjmp}
 	
 	   #pragma optimize( "",on )
+
+{% endraw %}

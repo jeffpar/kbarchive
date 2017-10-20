@@ -6,6 +6,8 @@ permalink: /kb/136/Q136898/
 
 ## Q136898: Desktop Icons Do Not Change When Different Users Log on
 
+{% raw %}
+
 	Article: Q136898
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -108,3 +110,5 @@ permalink: /kb/136/Q136898/
 	
 	=============================================================================
 	
+
+{% endraw %}

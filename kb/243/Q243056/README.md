@@ -6,6 +6,8 @@ permalink: /kb/243/Q243056/
 
 ## Q243056: INFO: Using SchemaName and the SchemaSeparator in ODBC
 
+{% raw %}
+
 	Article: Q243056
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0,3.5,3.51,3.6,3.7
@@ -76,3 +78,5 @@ permalink: /kb/243/Q243056/
 	
 	=============================================================================
 	
+
+{% endraw %}

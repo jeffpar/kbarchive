@@ -6,6 +6,8 @@ permalink: /kb/245/Q245062/
 
 ## Q245062: PRB: OptionButtons Do Not Hold Logical Values
 
+{% raw %}
+
 	Article: Q245062
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -100,3 +102,5 @@ permalink: /kb/245/Q245062/
 	
 	=============================================================================
 	
+
+{% endraw %}

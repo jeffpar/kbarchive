@@ -6,6 +6,8 @@ permalink: /kb/109/Q109786/
 
 ## Q109786: Mac Art Gallery/Wine Guide: Sound May Break or Not Play
 
+{% raw %}
+
 	Article: Q109786
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -63,3 +65,5 @@ permalink: /kb/109/Q109786/
 	
 	=============================================================================
 	
+
+{% endraw %}

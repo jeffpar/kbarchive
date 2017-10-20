@@ -6,6 +6,8 @@ permalink: /kb/105/Q105961/
 
 ## Q105961: PC Win: Failure to Connect to SHARED.INI Skips MSMAIL.INI
 
+{% raw %}
+
 	Article: Q105961
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b
@@ -54,3 +56,5 @@ permalink: /kb/105/Q105961/
 	
 	=============================================================================
 	
+
+{% endraw %}

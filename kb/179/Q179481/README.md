@@ -6,6 +6,8 @@ permalink: /kb/179/Q179481/
 
 ## Q179481: Err Msg: Parallel Cable on LPT&lt;n&gt; Disconnected
 
+{% raw %}
+
 	Article: Q179481
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -60,3 +62,5 @@ permalink: /kb/179/Q179481/
 	
 	=============================================================================
 	
+
+{% endraw %}

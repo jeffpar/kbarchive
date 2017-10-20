@@ -6,6 +6,8 @@ permalink: /kb/142/Q142602/
 
 ## Q142602: NBIPX: FPNW server &quot;NPRINT&quot; Returns Error If Not Logged On
 
+{% raw %}
+
 	Article: Q142602
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -52,3 +54,5 @@ permalink: /kb/142/Q142602/
 	
 	=============================================================================
 	
+
+{% endraw %}

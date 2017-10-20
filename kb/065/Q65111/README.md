@@ -6,6 +6,8 @@ permalink: /kb/065/Q65111/
 
 ## Q65111: INFO: Using WriteProfileString to Delete WIN.INI Entries
 
+{% raw %}
+
 	Article: Q65111
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -75,3 +77,5 @@ permalink: /kb/065/Q65111/
 	
 	=============================================================================
 	
+
+{% endraw %}

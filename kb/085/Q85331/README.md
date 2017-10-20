@@ -6,6 +6,8 @@ permalink: /kb/085/Q85331/
 
 ## Q85331: BUG: System Menu Wrong for CS_NOCLOSE-Style MDI Child
 
+{% raw %}
+
 	Article: Q85331
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -43,3 +45,5 @@ permalink: /kb/085/Q85331/
 	
 	=============================================================================
 	
+
+{% endraw %}

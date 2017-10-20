@@ -6,6 +6,8 @@ permalink: /kb/117/Q117370/
 
 ## Q117370: NCC Err Msg: IPX Initialize Failure
 
+{% raw %}
+
 	Article: Q117370
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -58,3 +60,5 @@ permalink: /kb/117/Q117370/
 	
 	=============================================================================
 	
+
+{% endraw %}

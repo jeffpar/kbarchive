@@ -6,6 +6,8 @@ permalink: /kb/129/Q129876/
 
 ## Q129876: Error Trapping Options in the Advanced Options Dialog
 
+{% raw %}
+
 	Article: Q129876
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -103,3 +105,5 @@ permalink: /kb/129/Q129876/
 	
 	=============================================================================
 	
+
+{% endraw %}

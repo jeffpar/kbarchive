@@ -6,6 +6,8 @@ permalink: /kb/074/Q74225/
 
 ## Q74225: INFO: Size Limits for a Multiline Edit Control
 
+{% raw %}
+
 	Article: Q74225
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -95,3 +97,5 @@ permalink: /kb/074/Q74225/
 	
 	=============================================================================
 	
+
+{% endraw %}

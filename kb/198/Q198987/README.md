@@ -6,6 +6,8 @@ permalink: /kb/198/Q198987/
 
 ## Q198987: SMSINST: SMS Installer Dialog Box Does Not Display All Text
 
+{% raw %}
+
 	Article: Q198987
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0; winnt:2.0
@@ -76,3 +78,5 @@ permalink: /kb/198/Q198987/
 	
 	=============================================================================
 	
+
+{% endraw %}

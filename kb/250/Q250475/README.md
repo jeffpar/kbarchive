@@ -6,6 +6,8 @@ permalink: /kb/250/Q250475/
 
 ## Q250475: PRB: VBCE: Deactivate Event Fires when Second Form is Closed
 
+{% raw %}
+
 	Article: Q250475
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.11,3.0
@@ -93,3 +95,5 @@ permalink: /kb/250/Q250475/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168405/
 
 ## Q168405: PRB: ResourceView Fails to Open Already Loaded .rc File
 
+{% raw %}
+
 	Article: Q168405
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0,97; winnt:5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/168/Q168405/
 	
 	=============================================================================
 	
+
+{% endraw %}

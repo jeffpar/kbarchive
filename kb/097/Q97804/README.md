@@ -6,6 +6,8 @@ permalink: /kb/097/Q97804/
 
 ## Q97804: Microsoft Windows &amp; MS-DOS 5 Err Msg: Incorrect DOS Version
 
+{% raw %}
+
 	Article: Q97804
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; :
@@ -57,3 +59,5 @@ permalink: /kb/097/Q97804/
 	
 	=============================================================================
 	
+
+{% endraw %}

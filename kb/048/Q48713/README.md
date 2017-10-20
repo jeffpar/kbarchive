@@ -6,6 +6,8 @@ permalink: /kb/048/Q48713/
 
 ## Q48713: DefBtn.exe Creates Default Border Around a Push Button
 
+{% raw %}
+
 	Article: Q48713
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -62,3 +64,5 @@ permalink: /kb/048/Q48713/
 	
 	=============================================================================
 	
+
+{% endraw %}

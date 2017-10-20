@@ -6,6 +6,8 @@ permalink: /kb/326/Q326811/
 
 ## Q326811: FIX: ODBC Driver for DB2 Maps DATE Fields to Text When You Link
 
+{% raw %}
+
 	Article: Q326811
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/326/Q326811/
 	
 	=============================================================================
 	
+
+{% endraw %}

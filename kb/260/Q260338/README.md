@@ -6,6 +6,8 @@ permalink: /kb/260/Q260338/
 
 ## Q260338: XADM: Error 5 &quot;Access Denied&quot; After Upgrade to Windows 2000
 
+{% raw %}
+
 	Article: Q260338
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -85,3 +87,5 @@ permalink: /kb/260/Q260338/
 	
 	=============================================================================
 	
+
+{% endraw %}

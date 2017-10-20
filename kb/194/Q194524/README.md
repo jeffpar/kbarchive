@@ -6,6 +6,8 @@ permalink: /kb/194/Q194524/
 
 ## Q194524: PRB: APPEND PROCEDURE FROM Does Not Bring Procs in for Viewing
 
+{% raw %}
+
 	Article: Q194524
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -87,3 +89,5 @@ permalink: /kb/194/Q194524/
 	
 	=============================================================================
 	
+
+{% endraw %}

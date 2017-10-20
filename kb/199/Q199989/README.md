@@ -6,6 +6,8 @@ permalink: /kb/199/Q199989/
 
 ## Q199989: XFOR: Completely Removing LinkAge V3.2 Connector Software
 
+{% raw %}
+
 	Article: Q199989
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2; winnt:4.0,5.0
@@ -67,3 +69,5 @@ permalink: /kb/199/Q199989/
 	
 	=============================================================================
 	
+
+{% endraw %}

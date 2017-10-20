@@ -6,6 +6,8 @@ permalink: /kb/237/Q237727/
 
 ## Q237727: NFL Fever 2000: Color of Taskbar Button Changes
 
+{% raw %}
+
 	Article: Q237727
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/237/Q237727/
 	
 	=============================================================================
 	
+
+{% endraw %}

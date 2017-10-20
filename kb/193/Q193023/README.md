@@ -6,6 +6,8 @@ permalink: /kb/193/Q193023/
 
 ## Q193023: EVG99: Cannot Distinguish Between Features Shown in Map Legend
 
+{% raw %}
+
 	Article: Q193023
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/193/Q193023/
 	
 	=============================================================================
 	
+
+{% endraw %}

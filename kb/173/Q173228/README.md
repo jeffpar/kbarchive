@@ -6,6 +6,8 @@ permalink: /kb/173/Q173228/
 
 ## Q173228: WD97: Borders Applied to More Lines in Selection Than Expected
 
+{% raw %}
+
 	Article: Q173228
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -141,3 +143,5 @@ permalink: /kb/173/Q173228/
 	
 	=============================================================================
 	
+
+{% endraw %}

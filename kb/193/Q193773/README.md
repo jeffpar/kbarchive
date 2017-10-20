@@ -6,6 +6,8 @@ permalink: /kb/193/Q193773/
 
 ## Q193773: HOWTO: Detect File System Changes under Windows NT
 
+{% raw %}
+
 	Article: Q193773
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -146,3 +148,5 @@ permalink: /kb/193/Q193773/
 	
 	=============================================================================
 	
+
+{% endraw %}

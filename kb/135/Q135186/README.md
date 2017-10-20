@@ -6,6 +6,8 @@ permalink: /kb/135/Q135186/
 
 ## Q135186: Open Dialog Box Does Not Work After Using Long Filename
 
+{% raw %}
+
 	Article: Q135186
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/135/Q135186/
 	
 	=============================================================================
 	
+
+{% endraw %}

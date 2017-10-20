@@ -6,6 +6,8 @@ permalink: /kb/243/Q243318/
 
 ## Q243318: How to Use Dh.exe to Troubleshoot User-Mode Memory Leaks
 
+{% raw %}
+
 	Article: Q243318
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -153,3 +155,5 @@ permalink: /kb/243/Q243318/
 	
 	=============================================================================
 	
+
+{% endraw %}

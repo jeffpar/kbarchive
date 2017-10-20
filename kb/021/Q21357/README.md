@@ -6,6 +6,8 @@ permalink: /kb/021/Q21357/
 
 ## Q21357: Using NAV Radio and OBI for VOR Navigation
 
+{% raw %}
+
 	Article: Q21357
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/021/Q21357/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153004/
 
 ## Q153004: PRB: Error C2065: '&#95;&#95;emul/&#95;&#95;emulu' : Undeclared Identifier
 
+{% raw %}
+
 	Article: Q153004
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -105,3 +107,5 @@ permalink: /kb/153/Q153004/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77624/
 
 ## Q77624: MS-DOS Shell Fails to Start
 
+{% raw %}
+
 	Article: Q77624
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -366,3 +368,5 @@ permalink: /kb/077/Q77624/
 	
 	=============================================================================
 	
+
+{% endraw %}

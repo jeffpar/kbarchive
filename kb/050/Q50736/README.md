@@ -6,6 +6,8 @@ permalink: /kb/050/Q50736/
 
 ## Q50736: How to Enter Extended ASCII Characters in QB.EXE Using ALT Key
 
+{% raw %}
+
 	Article: Q50736
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -94,3 +96,5 @@ permalink: /kb/050/Q50736/
 	   Reference" for Versions 6.00 and 6.00b for MS OS/2 and MS-DOS
 	
 	5. Pages 602-603 of "Microsoft BASIC 7.0: Language Reference"
+
+{% endraw %}

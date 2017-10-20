@@ -6,6 +6,8 @@ permalink: /kb/130/Q130730/
 
 ## Q130730: Windows NT 3.5 with SP2: Service Fails To Start
 
+{% raw %}
+
 	Article: Q130730
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 SP2
@@ -83,3 +85,5 @@ permalink: /kb/130/Q130730/
 	
 	=============================================================================
 	
+
+{% endraw %}

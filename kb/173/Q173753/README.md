@@ -6,6 +6,8 @@ permalink: /kb/173/Q173753/
 
 ## Q173753: Duplicate IP Addresses After Upgrading DHCP Clients to SP2
 
+{% raw %}
+
 	Article: Q173753
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -104,3 +106,5 @@ permalink: /kb/173/Q173753/
 	
 	=============================================================================
 	
+
+{% endraw %}

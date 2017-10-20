@@ -6,6 +6,8 @@ permalink: /kb/198/Q198098/
 
 ## Q198098: PRB: CSng/CDbl Not Using Regional Settings for Decimal Symbol
 
+{% raw %}
+
 	Article: Q198098
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -98,3 +100,5 @@ permalink: /kb/198/Q198098/
 	
 	=============================================================================
 	
+
+{% endraw %}

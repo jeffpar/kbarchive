@@ -6,6 +6,8 @@ permalink: /kb/258/Q258445/
 
 ## Q258445: English.dat File Listed Instead of English.cas in Casread.txt
 
+{% raw %}
+
 	Article: Q258445
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -99,3 +101,5 @@ permalink: /kb/258/Q258445/
 	
 	=============================================================================
 	
+
+{% endraw %}

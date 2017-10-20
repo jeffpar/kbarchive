@@ -6,6 +6,8 @@ permalink: /kb/171/Q171696/
 
 ## Q171696: Ending DUN Connection Not the Same as Logging Off
 
+{% raw %}
+
 	Article: Q171696
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -42,3 +44,5 @@ permalink: /kb/171/Q171696/
 	
 	=============================================================================
 	
+
+{% endraw %}

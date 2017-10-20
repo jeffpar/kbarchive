@@ -6,6 +6,8 @@ permalink: /kb/171/Q171492/
 
 ## Q171492: FIX: ActiveX Control Incorrectly Reports ScaleWidth/ScaleHeight
 
+{% raw %}
+
 	Article: Q171492
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97
@@ -108,3 +110,5 @@ permalink: /kb/171/Q171492/
 	
 	=============================================================================
 	
+
+{% endraw %}

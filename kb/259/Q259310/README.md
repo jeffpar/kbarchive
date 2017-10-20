@@ -6,6 +6,8 @@ permalink: /kb/259/Q259310/
 
 ## Q259310: Error Message &quot;0x80080005&quot; and Logon Problems
 
+{% raw %}
+
 	Article: Q259310
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -99,3 +101,5 @@ permalink: /kb/259/Q259310/
 	
 	=============================================================================
 	
+
+{% endraw %}

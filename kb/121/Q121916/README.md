@@ -6,6 +6,8 @@ permalink: /kb/121/Q121916/
 
 ## Q121916: CONN: Space After User=Admin in MSGATE.INI Causes Error
 
+{% raw %}
+
 	Article: Q121916
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0b
@@ -54,3 +56,5 @@ permalink: /kb/121/Q121916/
 	
 	=============================================================================
 	
+
+{% endraw %}

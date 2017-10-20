@@ -6,6 +6,8 @@ permalink: /kb/197/Q197146/
 
 ## Q197146: DNS Fails to Start w/ Event 1000 and 1004 and SCM 7023
 
+{% raw %}
+
 	Article: Q197146
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -94,3 +96,5 @@ permalink: /kb/197/Q197146/
 	
 	=============================================================================
 	
+
+{% endraw %}

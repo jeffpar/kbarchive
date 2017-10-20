@@ -6,6 +6,8 @@ permalink: /kb/193/Q193861/
 
 ## Q193861: XFOR: How to Dump the LDE Propagation Table Using SQL
 
+{% raw %}
+
 	Article: Q193861
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/193/Q193861/
 	
 	=============================================================================
 	
+
+{% endraw %}

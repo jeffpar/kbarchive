@@ -6,6 +6,8 @@ permalink: /kb/138/Q138454/
 
 ## Q138454: Using NetWare Utilities Without Making a Drive Connection
 
+{% raw %}
+
 	Article: Q138454
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -125,3 +127,5 @@ permalink: /kb/138/Q138454/
 	
 	=============================================================================
 	
+
+{% endraw %}

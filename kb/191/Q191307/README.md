@@ -6,6 +6,8 @@ permalink: /kb/191/Q191307/
 
 ## Q191307: SMS: Despooler Can't Create Temp Storage While Decompressing Pkg
 
+{% raw %}
+
 	Article: Q191307
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -69,3 +71,5 @@ permalink: /kb/191/Q191307/
 	
 	=============================================================================
 	
+
+{% endraw %}

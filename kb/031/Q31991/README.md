@@ -6,6 +6,8 @@ permalink: /kb/031/Q31991/
 
 ## Q31991: How LINK Orders and Combines Segments
 
+{% raw %}
+
 	Article: Q31991
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.x,4.x,5.0x,5.1x,5.3,5.31.009,5.5,5.6; OS/2:5.0x,5.1x,5.3,5.31.009
@@ -58,3 +60,5 @@ permalink: /kb/031/Q31991/
 	
 	=============================================================================
 	
+
+{% endraw %}

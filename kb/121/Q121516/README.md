@@ -6,6 +6,8 @@ permalink: /kb/121/Q121516/
 
 ## Q121516: Err Msg: There is Not Enough Memory Available to Start Mail
 
+{% raw %}
+
 	Article: Q121516
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -62,3 +64,5 @@ permalink: /kb/121/Q121516/
 	
 	=============================================================================
 	
+
+{% endraw %}

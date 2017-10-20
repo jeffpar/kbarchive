@@ -6,6 +6,8 @@ permalink: /kb/159/Q159970/
 
 ## Q159970: Slow List of Folders and Files with CSNW
 
+{% raw %}
+
 	Article: Q159970
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/159/Q159970/
 	
 	=============================================================================
 	
+
+{% endraw %}

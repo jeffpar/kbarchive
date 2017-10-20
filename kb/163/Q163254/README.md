@@ -6,6 +6,8 @@ permalink: /kb/163/Q163254/
 
 ## Q163254: WD97: Valupk8.hlp Topic for Macintosh Converter Incorrect
 
+{% raw %}
+
 	Article: Q163254
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/163/Q163254/
 	
 	=============================================================================
 	
+
+{% endraw %}

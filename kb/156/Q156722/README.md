@@ -6,6 +6,8 @@ permalink: /kb/156/Q156722/
 
 ## Q156722: XCON: Invalid Parameters When Using X.121 Field in X.400 Address
 
+{% raw %}
+
 	Article: Q156722
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/156/Q156722/
 	
 	=============================================================================
 	
+
+{% endraw %}

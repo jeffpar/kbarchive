@@ -6,6 +6,8 @@ permalink: /kb/245/Q245207/
 
 ## Q245207: Names and Descriptions of Windows NT Rights.
 
+{% raw %}
+
 	Article: Q245207
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -103,3 +105,5 @@ permalink: /kb/245/Q245207/
 	
 	=============================================================================
 	
+
+{% endraw %}

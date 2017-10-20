@@ -6,6 +6,8 @@ permalink: /kb/314/Q314762/
 
 ## Q314762: MSN Broadband Customer Unable to Complete CPE Setup after Using
 
+{% raw %}
+
 	Article: Q314762
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/314/Q314762/
 	
 	=============================================================================
 	
+
+{% endraw %}

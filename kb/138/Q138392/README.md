@@ -6,6 +6,8 @@ permalink: /kb/138/Q138392/
 
 ## Q138392: WordPad Print Preview Inaccurate Using Generic Text Printer
 
+{% raw %}
+
 	Article: Q138392
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -45,3 +47,5 @@ permalink: /kb/138/Q138392/
 	
 	=============================================================================
 	
+
+{% endraw %}

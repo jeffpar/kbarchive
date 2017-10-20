@@ -6,6 +6,8 @@ permalink: /kb/192/Q192902/
 
 ## Q192902: HOWTO: Change Colors to Patterns with the MSChart Control
 
+{% raw %}
+
 	Article: Q192902
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -102,3 +104,5 @@ permalink: /kb/192/Q192902/
 	
 	=============================================================================
 	
+
+{% endraw %}

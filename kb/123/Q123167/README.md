@@ -6,6 +6,8 @@ permalink: /kb/123/Q123167/
 
 ## Q123167: Support for the Compaq Ethernet 16TP Network Adapter
 
+{% raw %}
+
 	Article: Q123167
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/123/Q123167/
 	
 	=============================================================================
 	
+
+{% endraw %}

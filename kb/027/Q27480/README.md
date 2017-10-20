@@ -6,6 +6,8 @@ permalink: /kb/027/Q27480/
 
 ## Q27480: Passing FORTRAN COMMON Block to QuickBASIC SUBprogram
 
+{% raw %}
+
 	Article: Q27480
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -82,3 +84,5 @@ permalink: /kb/027/Q27480/
 	999
 	99.99
 	999.999
+
+{% endraw %}

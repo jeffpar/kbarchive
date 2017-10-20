@@ -6,6 +6,8 @@ permalink: /kb/150/Q150038/
 
 ## Q150038: Multimedia: Start Menu Shortcuts Missing
 
+{% raw %}
+
 	Article: Q150038
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,2.0
@@ -60,3 +62,5 @@ permalink: /kb/150/Q150038/
 	
 	=============================================================================
 	
+
+{% endraw %}

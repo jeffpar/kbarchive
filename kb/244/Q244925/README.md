@@ -6,6 +6,8 @@ permalink: /kb/244/Q244925/
 
 ## Q244925: Csrss.exe Stops Responding with a Stop 0xc000021A Error Message
 
+{% raw %}
+
 	Article: Q244925
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -101,3 +103,5 @@ permalink: /kb/244/Q244925/
 	
 	=============================================================================
 	
+
+{% endraw %}

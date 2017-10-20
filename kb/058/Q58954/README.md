@@ -6,6 +6,8 @@ permalink: /kb/058/Q58954/
 
 ## Q58954: &quot;R6002 - Floating Point Not Loaded&quot; Without Math Coprocessor
 
+{% raw %}
+
 	Article: Q58954
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -48,3 +50,5 @@ permalink: /kb/058/Q58954/
 	
 	      BC test /O;
 	      LINK test+87.LIB /NOE;
+
+{% endraw %}

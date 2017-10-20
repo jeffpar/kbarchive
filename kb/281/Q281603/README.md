@@ -6,6 +6,8 @@ permalink: /kb/281/Q281603/
 
 ## Q281603: SMS: Executive Service Hangs at Startup Waiting for User Respons
 
+{% raw %}
+
 	Article: Q281603
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -99,3 +101,5 @@ permalink: /kb/281/Q281603/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/285/Q285856/
 
 ## Q285856: Event 705 Logged with Client Computer Name &quot;UNKNOWN&quot;
 
+{% raw %}
+
 	Article: Q285856
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/285/Q285856/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170122/
 
 ## Q170122: FP: Opening Web Generates Out of Date Text Index Warning
 
+{% raw %}
+
 	Article: Q170122
 	Product(s): Word Front Page
 	Version(s): 1.0
@@ -69,3 +71,5 @@ permalink: /kb/170/Q170122/
 	
 	=============================================================================
 	
+
+{% endraw %}

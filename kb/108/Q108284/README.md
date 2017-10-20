@@ -6,6 +6,8 @@ permalink: /kb/108/Q108284/
 
 ## Q108284: FIX: DX2010 w/ GETARG When RUNQQ Takes Five or more Arguments
 
+{% raw %}
+
 	Article: Q108284
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -86,3 +88,5 @@ permalink: /kb/108/Q108284/
 	
 	=============================================================================
 	
+
+{% endraw %}

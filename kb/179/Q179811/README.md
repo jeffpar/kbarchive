@@ -6,6 +6,8 @@ permalink: /kb/179/Q179811/
 
 ## Q179811: Bookshelf 98: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q179811
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -53,3 +55,5 @@ permalink: /kb/179/Q179811/
 	
 	=============================================================================
 	
+
+{% endraw %}

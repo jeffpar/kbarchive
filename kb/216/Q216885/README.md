@@ -6,6 +6,8 @@ permalink: /kb/216/Q216885/
 
 ## Q216885: PRB: English Query Using SQL 7.0 Domain May Fail with SQL 6.5
 
+{% raw %}
+
 	Article: Q216885
 	Product(s): Microsoft C Compiler
 	Version(s): NT:7.0
@@ -162,3 +164,5 @@ permalink: /kb/216/Q216885/
 	
 	=============================================================================
 	
+
+{% endraw %}

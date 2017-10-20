@@ -6,6 +6,8 @@ permalink: /kb/174/Q174316/
 
 ## Q174316: WV: Word Viewer /p Command Parameter Doesn't Print Document
 
+{% raw %}
+
 	Article: Q174316
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -99,3 +101,5 @@ permalink: /kb/174/Q174316/
 	
 	=============================================================================
 	
+
+{% endraw %}

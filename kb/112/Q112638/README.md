@@ -6,6 +6,8 @@ permalink: /kb/112/Q112638/
 
 ## Q112638: WEPs, Windows, and Microsoft Visual C/C++ Compilers
 
+{% raw %}
+
 	Article: Q112638
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -233,3 +235,5 @@ permalink: /kb/112/Q112638/
 	
 	=============================================================================
 	
+
+{% endraw %}

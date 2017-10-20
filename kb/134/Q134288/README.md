@@ -6,6 +6,8 @@ permalink: /kb/134/Q134288/
 
 ## Q134288: Cannot Connect to Internet and MSN with Static DNS
 
+{% raw %}
+
 	Article: Q134288
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -83,3 +85,5 @@ permalink: /kb/134/Q134288/
 	
 	=============================================================================
 	
+
+{% endraw %}

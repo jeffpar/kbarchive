@@ -6,6 +6,8 @@ permalink: /kb/125/Q125667/
 
 ## Q125667: Security Options in File Manager for FAT or HPFS Available
 
+{% raw %}
+
 	Article: Q125667
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/125/Q125667/
 	
 	=============================================================================
 	
+
+{% endraw %}

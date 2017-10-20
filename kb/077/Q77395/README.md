@@ -6,6 +6,8 @@ permalink: /kb/077/Q77395/
 
 ## Q77395: Large Unprintable Region at Bottom of Page with Canon BJ-10e
 
+{% raw %}
+
 	Article: Q77395
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/077/Q77395/
 	
 	=============================================================================
 	
+
+{% endraw %}

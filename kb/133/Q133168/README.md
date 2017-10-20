@@ -6,6 +6,8 @@ permalink: /kb/133/Q133168/
 
 ## Q133168: Mac Ancient Lands: Folder not Removed By Installer
 
+{% raw %}
+
 	Article: Q133168
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -62,3 +64,5 @@ permalink: /kb/133/Q133168/
 	
 	=============================================================================
 	
+
+{% endraw %}

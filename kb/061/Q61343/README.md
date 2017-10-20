@@ -6,6 +6,8 @@ permalink: /kb/061/Q61343/
 
 ## Q61343: ON ERROR GOTO 0 in BASIC PDS Won't Give Error Line's Address
 
+{% raw %}
+
 	Article: Q61343
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -97,3 +99,5 @@ permalink: /kb/061/Q61343/
 	The address given in a program without ON ERROR trapping active is
 	still the address of the actual error line, x = 1/y, in BASIC 7.00 and
 	7.10 (and earlier versions of BC.EXE).
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/277/Q277020/
 
 ## Q277020: Encarta: How to Order Headset Replacement Parts
 
+{% raw %}
+
 	Article: Q277020
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/277/Q277020/
 	
 	=============================================================================
 	
+
+{% endraw %}

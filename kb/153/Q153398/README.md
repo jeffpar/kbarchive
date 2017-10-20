@@ -6,6 +6,8 @@ permalink: /kb/153/Q153398/
 
 ## Q153398: FIX: Namespace and Typedef Cause C1001:'msc1.cpp',line 1090
 
+{% raw %}
+
 	Article: Q153398
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -85,3 +87,5 @@ permalink: /kb/153/Q153398/
 	
 	=============================================================================
 	
+
+{% endraw %}

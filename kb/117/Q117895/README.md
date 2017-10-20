@@ -6,6 +6,8 @@ permalink: /kb/117/Q117895/
 
 ## Q117895: PC Adm: 007 Error Caused by Missing .MEM File
 
+{% raw %}
+
 	Article: Q117895
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -118,3 +120,5 @@ permalink: /kb/117/Q117895/
 	
 	=============================================================================
 	
+
+{% endraw %}

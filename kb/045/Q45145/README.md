@@ -6,6 +6,8 @@ permalink: /kb/045/Q45145/
 
 ## Q45145: Installing C 5.10 to Compile Both DOS and OS/2 Programs
 
+{% raw %}
+
 	Article: Q45145
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -83,3 +85,5 @@ permalink: /kb/045/Q45145/
 	To generate a DOS executable, you must use /Lr or /Lc. Instead, if you
 	rename the xLIBCyR libraries to xLIBCy, the default mode will be DOS
 	-- you must use /Lp to produce an OS/2 program.
+
+{% endraw %}

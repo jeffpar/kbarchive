@@ -6,6 +6,8 @@ permalink: /kb/152/Q152513/
 
 ## Q152513: Troubleshooting Performance Monitor Counter Problems
 
+{% raw %}
+
 	Article: Q152513
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.1,3.5,3.51,4.0
@@ -147,3 +149,5 @@ permalink: /kb/152/Q152513/
 	
 	=============================================================================
 	
+
+{% endraw %}

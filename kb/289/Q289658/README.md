@@ -6,6 +6,8 @@ permalink: /kb/289/Q289658/
 
 ## Q289658: FeedIgnoreInitial Not Always Honored on HIS 2000 Print Sessions
 
+{% raw %}
+
 	Article: Q289658
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -139,3 +141,5 @@ permalink: /kb/289/Q289658/
 	
 	=============================================================================
 	
+
+{% endraw %}

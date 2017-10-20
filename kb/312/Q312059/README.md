@@ -6,6 +6,8 @@ permalink: /kb/312/Q312059/
 
 ## Q312059: Encarta 2002: Err Msg: FF Has Caused an Invalid Page Fault...
 
+{% raw %}
+
 	Article: Q312059
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -134,3 +136,5 @@ permalink: /kb/312/Q312059/
 	
 	=============================================================================
 	
+
+{% endraw %}

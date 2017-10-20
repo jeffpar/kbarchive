@@ -6,6 +6,8 @@ permalink: /kb/154/Q154888/
 
 ## Q154888: SYSDIFF /inf Does Not Propagate Shortcuts to the Desktop
 
+{% raw %}
+
 	Article: Q154888
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/154/Q154888/
 	
 	=============================================================================
 	
+
+{% endraw %}

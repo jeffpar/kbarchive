@@ -6,6 +6,8 @@ permalink: /kb/151/Q151252/
 
 ## Q151252: No Helpdesk Template under SMS Security Manager
 
+{% raw %}
+
 	Article: Q151252
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -43,3 +45,5 @@ permalink: /kb/151/Q151252/
 	
 	=============================================================================
 	
+
+{% endraw %}

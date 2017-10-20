@@ -6,6 +6,8 @@ permalink: /kb/171/Q171986/
 
 ## Q171986: MSN Mail Does Not Start Microsoft Outlook
 
+{% raw %}
+
 	Article: Q171986
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -55,3 +57,5 @@ permalink: /kb/171/Q171986/
 	
 	=============================================================================
 	
+
+{% endraw %}

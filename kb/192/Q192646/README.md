@@ -6,6 +6,8 @@ permalink: /kb/192/Q192646/
 
 ## Q192646: PRB: Move 0 Does Not Refresh TimeStamp and Identity Fields
 
+{% raw %}
+
 	Article: Q192646
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -115,3 +117,5 @@ permalink: /kb/192/Q192646/
 	
 	=============================================================================
 	
+
+{% endraw %}

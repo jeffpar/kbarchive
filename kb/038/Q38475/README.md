@@ -6,6 +6,8 @@ permalink: /kb/038/Q38475/
 
 ## Q38475: Change for SELECT CASE Example 2 in QB.EXE 4.50 On-Line Help
 
+{% raw %}
+
 	Article: Q38475
 	Product(s): See article
 	Version(s): 4.50
@@ -33,3 +35,5 @@ permalink: /kb/038/Q38475/
 	Advisor, a hypertext-based, on-line help system with instant cross
 	referencing. This error was corrected in the QBX.EXE Microsoft Advisor
 	that is included with Microsoft BASIC PDS Version 7.00.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139619/
 
 ## Q139619: Printing From a Service To A Network Printer Fails
 
+{% raw %}
+
 	Article: Q139619
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -58,3 +60,5 @@ permalink: /kb/139/Q139619/
 	
 	=============================================================================
 	
+
+{% endraw %}

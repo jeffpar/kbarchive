@@ -6,6 +6,8 @@ permalink: /kb/238/Q238642/
 
 ## Q238642: XADM: Troubleshooting the InterOrg Replication Utility
 
+{% raw %}
+
 	Article: Q238642
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0 SP2,5.5
@@ -108,3 +110,5 @@ permalink: /kb/238/Q238642/
 	
 	=============================================================================
 	
+
+{% endraw %}

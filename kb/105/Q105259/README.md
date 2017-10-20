@@ -6,6 +6,8 @@ permalink: /kb/105/Q105259/
 
 ## Q105259: Using Microsoft Backup to Back Up to a Network Drive
 
+{% raw %}
+
 	Article: Q105259
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -53,3 +55,5 @@ permalink: /kb/105/Q105259/
 	
 	=============================================================================
 	
+
+{% endraw %}

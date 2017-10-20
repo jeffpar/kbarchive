@@ -6,6 +6,8 @@ permalink: /kb/171/Q171506/
 
 ## Q171506: FIX: Drag/Drop of ListView Control Fails
 
+{% raw %}
+
 	Article: Q171506
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -96,3 +98,5 @@ permalink: /kb/171/Q171506/
 	
 	=============================================================================
 	
+
+{% endraw %}

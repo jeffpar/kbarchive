@@ -6,6 +6,8 @@ permalink: /kb/303/Q303824/
 
 ## Q303824: DNS Service Fails with Access Violation Exception (0xc0000005)
 
+{% raw %}
+
 	Article: Q303824
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -80,3 +82,5 @@ permalink: /kb/303/Q303824/
 	
 	=============================================================================
 	
+
+{% endraw %}

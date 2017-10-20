@@ -6,6 +6,8 @@ permalink: /kb/149/Q149442/
 
 ## Q149442: Remote OLE Links Between Documents Are Broken
 
+{% raw %}
+
 	Article: Q149442
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -61,3 +63,5 @@ permalink: /kb/149/Q149442/
 	
 	=============================================================================
 	
+
+{% endraw %}

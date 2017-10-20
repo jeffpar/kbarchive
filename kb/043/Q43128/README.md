@@ -6,6 +6,8 @@ permalink: /kb/043/Q43128/
 
 ## Q43128: Producing an _TEXT Segment for Multiple Object Modules
 
+{% raw %}
+
 	Article: Q43128
 	Product(s): See article
 	Version(s): 3.x 4.06 | 5.01.20 5.01.21
@@ -42,3 +44,5 @@ permalink: /kb/043/Q43128/
 	MAPL_TEXT and MAP2_TEXT come from the files MAPL.OBJ and MAP2.OBJ,
 	respectively. The _TEXT is the Microsoft run-time library and any
 	third-party libraries.
+
+{% endraw %}

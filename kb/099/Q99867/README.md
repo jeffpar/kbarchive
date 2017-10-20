@@ -6,6 +6,8 @@ permalink: /kb/099/Q99867/
 
 ## Q99867: Random Keeps Running Even When Focus Is Changed
 
+{% raw %}
+
 	Article: Q99867
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -40,3 +42,5 @@ permalink: /kb/099/Q99867/
 	
 	=============================================================================
 	
+
+{% endraw %}

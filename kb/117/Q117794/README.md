@@ -6,6 +6,8 @@ permalink: /kb/117/Q117794/
 
 ## Q117794: PRB: Compiler Errors when Implementing CObject-Derived Class
 
+{% raw %}
+
 	Article: Q117794
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -108,3 +110,5 @@ permalink: /kb/117/Q117794/
 	
 	=============================================================================
 	
+
+{% endraw %}

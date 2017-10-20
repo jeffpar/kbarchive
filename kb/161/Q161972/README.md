@@ -6,6 +6,8 @@ permalink: /kb/161/Q161972/
 
 ## Q161972: PRB: Displaying a Modal Form Causes the SSTab Control to Blank
 
+{% raw %}
+
 	Article: Q161972
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -112,3 +114,5 @@ permalink: /kb/161/Q161972/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243415/
 
 ## Q243415: Your Computer Running Windows NT 4.0 Hangs Using MO Drives
 
+{% raw %}
+
 	Article: Q243415
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/243/Q243415/
 	
 	=============================================================================
 	
+
+{% endraw %}

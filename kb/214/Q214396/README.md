@@ -6,6 +6,8 @@ permalink: /kb/214/Q214396/
 
 ## Q214396: MSocUdp.exe Implement UDP Using CAsyncSocket
 
+{% raw %}
+
 	Article: Q214396
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -64,3 +66,5 @@ permalink: /kb/214/Q214396/
 	
 	=============================================================================
 	
+
+{% endraw %}

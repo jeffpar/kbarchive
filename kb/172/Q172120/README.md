@@ -6,6 +6,8 @@ permalink: /kb/172/Q172120/
 
 ## Q172120: BUG: Pressing TAB Key Does Not Move Focus on SSTab Control
 
+{% raw %}
+
 	Article: Q172120
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -93,3 +95,5 @@ permalink: /kb/172/Q172120/
 	
 	=============================================================================
 	
+
+{% endraw %}

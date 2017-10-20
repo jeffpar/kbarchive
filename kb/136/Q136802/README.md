@@ -6,6 +6,8 @@ permalink: /kb/136/Q136802/
 
 ## Q136802: XADM: Permissions Page Not Displayed
 
+{% raw %}
+
 	Article: Q136802
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -46,3 +48,5 @@ permalink: /kb/136/Q136802/
 	
 	=============================================================================
 	
+
+{% endraw %}

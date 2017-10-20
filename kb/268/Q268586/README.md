@@ -6,6 +6,8 @@ permalink: /kb/268/Q268586/
 
 ## Q268586: SMS: SMS 2.0 Clients Do Not Complete Installation Due to a Space
 
+{% raw %}
+
 	Article: Q268586
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -103,3 +105,5 @@ permalink: /kb/268/Q268586/
 	
 	=============================================================================
 	
+
+{% endraw %}

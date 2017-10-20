@@ -6,6 +6,8 @@ permalink: /kb/043/Q43238/
 
 ## Q43238: Mac Srv: Modifying a User's Name and/or Password
 
+{% raw %}
+
 	Article: Q43238
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -76,3 +78,5 @@ permalink: /kb/043/Q43238/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117142/
 
 ## Q117142: HOWTO: Print to a File from FoxPro (Printer Problems Test)
 
+{% raw %}
+
 	Article: Q117142
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/117/Q117142/
 	
 	=============================================================================
 	
+
+{% endraw %}

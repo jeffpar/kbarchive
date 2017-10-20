@@ -6,6 +6,8 @@ permalink: /kb/158/Q158025/
 
 ## Q158025: GEX Error Message: Cannot Find Dsound.dll
 
+{% raw %}
+
 	Article: Q158025
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -42,3 +44,5 @@ permalink: /kb/158/Q158025/
 	
 	=============================================================================
 	
+
+{% endraw %}

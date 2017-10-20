@@ -6,6 +6,8 @@ permalink: /kb/135/Q135898/
 
 ## Q135898: Windows 95 CD-ROM Programs.txt File (2 of 2)
 
+{% raw %}
+
 	Article: Q135898
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -403,3 +405,5 @@ permalink: /kb/135/Q135898/
 	
 	=============================================================================
 	
+
+{% endraw %}

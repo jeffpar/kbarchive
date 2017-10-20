@@ -6,6 +6,8 @@ permalink: /kb/116/Q116445/
 
 ## Q116445: FIX: Truncated String from &quot;#pragma comment(exestr, &lt;string&gt;)&quot;
 
+{% raw %}
+
 	Article: Q116445
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,7.0
@@ -115,3 +117,5 @@ permalink: /kb/116/Q116445/
 	
 	=============================================================================
 	
+
+{% endraw %}

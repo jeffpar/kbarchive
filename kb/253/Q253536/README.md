@@ -6,6 +6,8 @@ permalink: /kb/253/Q253536/
 
 ## Q253536: Modifying the HTML Search Results Page in MMS
 
+{% raw %}
+
 	Article: Q253536
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -85,3 +87,5 @@ permalink: /kb/253/Q253536/
 	
 	=============================================================================
 	
+
+{% endraw %}

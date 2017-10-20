@@ -6,6 +6,8 @@ permalink: /kb/067/Q67147/
 
 ## Q67147: BASIC Files Limited to 32 MB Without DOS 4.00/4.01 Patch
 
+{% raw %}
+
 	Article: Q67147
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -44,3 +46,5 @@ permalink: /kb/067/Q67147/
 	Knowledge Base on the following words:
 	
 	   DOS and 4.01 and 32 and MB
+
+{% endraw %}

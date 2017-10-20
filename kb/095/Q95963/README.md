@@ -6,6 +6,8 @@ permalink: /kb/095/Q95963/
 
 ## Q95963: PC Win: Err Msg: Stop: A New Message Could Not Be Created
 
+{% raw %}
+
 	Article: Q95963
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -51,3 +53,5 @@ permalink: /kb/095/Q95963/
 	
 	=============================================================================
 	
+
+{% endraw %}

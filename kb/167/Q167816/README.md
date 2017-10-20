@@ -6,6 +6,8 @@ permalink: /kb/167/Q167816/
 
 ## Q167816: Novell Client 32 Requestor Cannot Connect to FPNW
 
+{% raw %}
+
 	Article: Q167816
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -175,3 +177,5 @@ permalink: /kb/167/Q167816/
 	
 	=============================================================================
 	
+
+{% endraw %}

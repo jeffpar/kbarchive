@@ -6,6 +6,8 @@ permalink: /kb/122/Q122938/
 
 ## Q122938: Telnet is Not a Valid Option in Windows NT 3.5 Terminal
 
+{% raw %}
+
 	Article: Q122938
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -59,3 +61,5 @@ permalink: /kb/122/Q122938/
 	
 	=============================================================================
 	
+
+{% endraw %}

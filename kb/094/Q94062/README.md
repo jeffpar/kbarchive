@@ -6,6 +6,8 @@ permalink: /kb/094/Q94062/
 
 ## Q94062: Creating an OS/2 LAN Manager Boot Disk
 
+{% raw %}
+
 	Article: Q94062
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -395,3 +397,5 @@ permalink: /kb/094/Q94062/
 	
 	=============================================================================
 	
+
+{% endraw %}

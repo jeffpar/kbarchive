@@ -6,6 +6,8 @@ permalink: /kb/030/Q30492/
 
 ## Q30492: LOCAL Directive with Structure Type
 
+{% raw %}
+
 	Article: Q30492
 	Product(s): See article
 	Version(s): 5.10
@@ -33,3 +35,5 @@ permalink: /kb/030/Q30492/
 	/*RAID DATABASE: M600
 	/*BUG NUMBER: 788
 	/*
+
+{% endraw %}

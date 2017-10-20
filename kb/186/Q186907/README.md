@@ -6,6 +6,8 @@ permalink: /kb/186/Q186907/
 
 ## Q186907: HOWTO: Set Up Visual C++ to Use the HTML Help API
 
+{% raw %}
+
 	Article: Q186907
 	Product(s): Microsoft C Compiler
 	Version(s): 1.21,1.3,4.2,4.2b,5.0,6.0
@@ -104,3 +106,5 @@ permalink: /kb/186/Q186907/
 	
 	=============================================================================
 	
+
+{% endraw %}

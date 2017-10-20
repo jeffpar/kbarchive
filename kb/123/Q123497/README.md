@@ -6,6 +6,8 @@ permalink: /kb/123/Q123497/
 
 ## Q123497: ALR Evolution Pentium Does Not Detect COM Ports
 
+{% raw %}
+
 	Article: Q123497
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/123/Q123497/
 	
 	=============================================================================
 	
+
+{% endraw %}

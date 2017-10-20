@@ -6,6 +6,8 @@ permalink: /kb/231/Q231515/
 
 ## Q231515: MapPoint 2000: Cannot Drag and Drop Data from Text File
 
+{% raw %}
+
 	Article: Q231515
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -54,3 +56,5 @@ permalink: /kb/231/Q231515/
 	
 	=============================================================================
 	
+
+{% endraw %}

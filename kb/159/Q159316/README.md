@@ -6,6 +6,8 @@ permalink: /kb/159/Q159316/
 
 ## Q159316: FPNW Event ID 2024 Generated When Using JetAdmin
 
+{% raw %}
+
 	Article: Q159316
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -89,3 +91,5 @@ permalink: /kb/159/Q159316/
 	
 	=============================================================================
 	
+
+{% endraw %}

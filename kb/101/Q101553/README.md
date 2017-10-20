@@ -6,6 +6,8 @@ permalink: /kb/101/Q101553/
 
 ## Q101553: BUG: Bad Result If Multiple Aggregate Functions in SQL Stmt
 
+{% raw %}
+
 	Article: Q101553
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -104,3 +106,5 @@ permalink: /kb/101/Q101553/
 	
 	=============================================================================
 	
+
+{% endraw %}

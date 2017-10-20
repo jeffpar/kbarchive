@@ -6,6 +6,8 @@ permalink: /kb/128/Q128322/
 
 ## Q128322: PC WFW: EXTEND.EXE Not in Mail &amp; Schedule+ Extensions 3.2
 
+{% raw %}
+
 	Article: Q128322
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -50,3 +52,5 @@ permalink: /kb/128/Q128322/
 	
 	=============================================================================
 	
+
+{% endraw %}

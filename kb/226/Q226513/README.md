@@ -6,6 +6,8 @@ permalink: /kb/226/Q226513/
 
 ## Q226513: NPFS Leak When AddJob API Returns a Named Pipe
 
+{% raw %}
+
 	Article: Q226513
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/226/Q226513/
 	
 	=============================================================================
 	
+
+{% endraw %}

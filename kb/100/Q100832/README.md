@@ -6,6 +6,8 @@ permalink: /kb/100/Q100832/
 
 ## Q100832: INFO: Calling Conventions the 32-Bit Compiler Supports
 
+{% raw %}
+
 	Article: Q100832
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,4.0,5.0,6.0
@@ -134,3 +136,5 @@ permalink: /kb/100/Q100832/
 	
 	=============================================================================
 	
+
+{% endraw %}

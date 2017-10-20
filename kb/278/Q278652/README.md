@@ -6,6 +6,8 @@ permalink: /kb/278/Q278652/
 
 ## Q278652: Games: Reduced Graphics Performance After Installing DirectX 8.0
 
+{% raw %}
+
 	Article: Q278652
 	Product(s): Microsoft Home Games
 	Version(s): 2000,95
@@ -73,3 +75,5 @@ permalink: /kb/278/Q278652/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104611/
 
 ## Q104611: Arcade: Description of Asteroids
 
+{% raw %}
+
 	Article: Q104611
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0
@@ -95,3 +97,5 @@ permalink: /kb/104/Q104611/
 	
 	=============================================================================
 	
+
+{% endraw %}

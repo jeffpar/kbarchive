@@ -6,6 +6,8 @@ permalink: /kb/238/Q238085/
 
 ## Q238085: INFO: Windows 2000 Does Not Install MAPI 1.0 Subsystem
 
+{% raw %}
+
 	Article: Q238085
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,2000
@@ -74,3 +76,5 @@ permalink: /kb/238/Q238085/
 	
 	=============================================================================
 	
+
+{% endraw %}

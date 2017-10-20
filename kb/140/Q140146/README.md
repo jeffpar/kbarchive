@@ -6,6 +6,8 @@ permalink: /kb/140/Q140146/
 
 ## Q140146: Changing &quot;(SMS)&quot; Text in Shared Group Name
 
+{% raw %}
+
 	Article: Q140146
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -51,3 +53,5 @@ permalink: /kb/140/Q140146/
 	
 	=============================================================================
 	
+
+{% endraw %}

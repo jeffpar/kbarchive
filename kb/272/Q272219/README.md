@@ -6,6 +6,8 @@ permalink: /kb/272/Q272219/
 
 ## Q272219: PRB: VFP App Installed with VSI Creates Foxuser Files on Desktop
 
+{% raw %}
+
 	Article: Q272219
 	Product(s): Microsoft FoxPro
 	Version(s): 1.0,1.1,5.0,6.0
@@ -151,3 +153,5 @@ permalink: /kb/272/Q272219/
 	
 	=============================================================================
 	
+
+{% endraw %}

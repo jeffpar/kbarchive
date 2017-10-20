@@ -6,6 +6,8 @@ permalink: /kb/035/Q35230/
 
 ## Q35230: CPANEL Defaults to Display Page 0
 
+{% raw %}
+
 	Article: Q35230
 	Product(s): See article
 	Version(s): 6.x 1.00
@@ -18,3 +20,5 @@ permalink: /kb/035/Q35230/
 	graphics page.
 	
 	To work around this problem, use the /S switch to the mouse driver.
+
+{% endraw %}

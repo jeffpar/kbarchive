@@ -6,6 +6,8 @@ permalink: /kb/191/Q191335/
 
 ## Q191335: SMS: Some Clients Get Event ID 7022 After Applying SP3
 
+{% raw %}
+
 	Article: Q191335
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -68,3 +70,5 @@ permalink: /kb/191/Q191335/
 	
 	=============================================================================
 	
+
+{% endraw %}

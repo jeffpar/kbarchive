@@ -6,6 +6,8 @@ permalink: /kb/030/Q30800/
 
 ## Q30800: MASM 5.10 OS2.DOC: Calling OS/2 Macros
 
+{% raw %}
+
 	Article: Q30800
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -87,3 +89,5 @@ permalink: /kb/030/Q30800/
 	arguments. The macros may change the contents of AX or BX, so you
 	should save any important values in these registers before using an
 	OS/2 macro.
+
+{% endraw %}

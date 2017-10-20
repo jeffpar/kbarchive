@@ -6,6 +6,8 @@ permalink: /kb/184/Q184404/
 
 ## Q184404: XGEN: How to Obtain Exchange Server 5.5 Evaluation Edition
 
+{% raw %}
+
 	Article: Q184404
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -98,3 +100,5 @@ permalink: /kb/184/Q184404/
 	
 	=============================================================================
 	
+
+{% endraw %}

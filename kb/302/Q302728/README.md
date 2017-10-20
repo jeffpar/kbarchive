@@ -6,6 +6,8 @@ permalink: /kb/302/Q302728/
 
 ## Q302728: &quot;View Message Source&quot; Has No Effect On Unprepared Message In MSN
 
+{% raw %}
+
 	Article: Q302728
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -54,3 +56,5 @@ permalink: /kb/302/Q302728/
 	
 	=============================================================================
 	
+
+{% endraw %}

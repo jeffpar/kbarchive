@@ -6,6 +6,8 @@ permalink: /kb/168/Q168328/
 
 ## Q168328: PPT7: Error Inserting or Clicking Excel Object in PowerPoint
 
+{% raw %}
+
 	Article: Q168328
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 7.0
@@ -86,3 +88,5 @@ permalink: /kb/168/Q168328/
 	
 	=============================================================================
 	
+
+{% endraw %}

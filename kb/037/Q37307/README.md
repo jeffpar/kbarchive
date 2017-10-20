@@ -6,6 +6,8 @@ permalink: /kb/037/Q37307/
 
 ## Q37307: Conditionally Loading QBHERC Hercules Support from QuickBASIC
 
+{% raw %}
+
 	Article: Q37307
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -61,3 +63,5 @@ permalink: /kb/037/Q37307/
 	Hercules support was introduced in QuickBASIC Version 4.00. For more
 	information, please see the README.DOC file for QuickBASIC Versions
 	4.00 and 4.00b.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/260/Q260372/
 
 ## Q260372: SMS: Calculating SQL User Connections for SMS 2.0
 
+{% raw %}
+
 	Article: Q260372
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -216,3 +218,5 @@ permalink: /kb/260/Q260372/
 	
 	=============================================================================
 	
+
+{% endraw %}

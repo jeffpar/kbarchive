@@ -6,6 +6,8 @@ permalink: /kb/196/Q196601/
 
 ## Q196601: PRB: DCOMCNFG Displays One Class Name For Each ActiveX Server
 
+{% raw %}
+
 	Article: Q196601
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/196/Q196601/
 	
 	=============================================================================
 	
+
+{% endraw %}

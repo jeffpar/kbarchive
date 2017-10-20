@@ -6,6 +6,8 @@ permalink: /kb/269/Q269271/
 
 ## Q269271: PRB: High CPU Utilization in IIS When Session State Is Disabled
 
+{% raw %}
+
 	Article: Q269271
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/269/Q269271/
 	
 	=============================================================================
 	
+
+{% endraw %}

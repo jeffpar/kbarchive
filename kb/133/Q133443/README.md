@@ -6,6 +6,8 @@ permalink: /kb/133/Q133443/
 
 ## Q133443: PIFs Are Not Created in the PIF Folder
 
+{% raw %}
+
 	Article: Q133443
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/133/Q133443/
 	
 	=============================================================================
 	
+
+{% endraw %}

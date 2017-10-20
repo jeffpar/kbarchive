@@ -6,6 +6,8 @@ permalink: /kb/192/Q192887/
 
 ## Q192887: XFOR: MS Mail Connector Doesn't Support Turkish Characters
 
+{% raw %}
+
 	Article: Q192887
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -78,3 +80,5 @@ permalink: /kb/192/Q192887/
 	
 	=============================================================================
 	
+
+{% endraw %}

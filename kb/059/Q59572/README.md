@@ -6,6 +6,8 @@ permalink: /kb/059/Q59572/
 
 ## Q59572: Flt Sim: Kraft Multispeed Programmable Joystick Adapter Card
 
+{% raw %}
+
 	Article: Q59572
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/059/Q59572/
 	
 	=============================================================================
 	
+
+{% endraw %}

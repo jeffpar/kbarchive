@@ -6,6 +6,8 @@ permalink: /kb/122/Q122248/
 
 ## Q122248: Event Id 2000 Errors In System Log
 
+{% raw %}
+
 	Article: Q122248
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/122/Q122248/
 	
 	=============================================================================
 	
+
+{% endraw %}

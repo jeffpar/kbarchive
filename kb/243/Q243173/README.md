@@ -6,6 +6,8 @@ permalink: /kb/243/Q243173/
 
 ## Q243173: PRB: Install VCCE Causes ATL Windows Message Handler List Empty
 
+{% raw %}
+
 	Article: Q243173
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -100,3 +102,5 @@ permalink: /kb/243/Q243173/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176189/
 
 ## Q176189: WD97: Shading of Solid Black or Gray Wont Print Duplex on NT
 
+{% raw %}
+
 	Article: Q176189
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97; winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/176/Q176189/
 	
 	=============================================================================
 	
+
+{% endraw %}

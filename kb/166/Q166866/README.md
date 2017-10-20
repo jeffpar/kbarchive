@@ -6,6 +6,8 @@ permalink: /kb/166/Q166866/
 
 ## Q166866: XFOR: SMTP Outbound Mail Transfer Stops After SP1 is Installed
 
+{% raw %}
+
 	Article: Q166866
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -80,3 +82,5 @@ permalink: /kb/166/Q166866/
 	
 	=============================================================================
 	
+
+{% endraw %}

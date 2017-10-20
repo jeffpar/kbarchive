@@ -6,6 +6,8 @@ permalink: /kb/081/Q81223/
 
 ## Q81223: FIX: Animated Button Custom Control: Caption May Be Truncated
 
+{% raw %}
+
 	Article: Q81223
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0
@@ -84,3 +86,5 @@ permalink: /kb/081/Q81223/
 	
 	=============================================================================
 	
+
+{% endraw %}

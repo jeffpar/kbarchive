@@ -6,6 +6,8 @@ permalink: /kb/182/Q182292/
 
 ## Q182292: WD97: Document Margins Not Retained When Inserted as File
 
+{% raw %}
+
 	Article: Q182292
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -106,3 +108,5 @@ permalink: /kb/182/Q182292/
 	
 	=============================================================================
 	
+
+{% endraw %}

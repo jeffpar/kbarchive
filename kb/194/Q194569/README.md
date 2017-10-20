@@ -6,6 +6,8 @@ permalink: /kb/194/Q194569/
 
 ## Q194569: Installing Windows NT 4.0 Service Pack 4 from the Internet
 
+{% raw %}
+
 	Article: Q194569
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/194/Q194569/
 	
 	=============================================================================
 	
+
+{% endraw %}

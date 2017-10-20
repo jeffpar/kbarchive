@@ -6,6 +6,8 @@ permalink: /kb/159/Q159204/
 
 ## Q159204: IoCompletionPort Causes Blue Screen Error
 
+{% raw %}
+
 	Article: Q159204
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.00
@@ -52,3 +54,5 @@ permalink: /kb/159/Q159204/
 	
 	=============================================================================
 	
+
+{% endraw %}

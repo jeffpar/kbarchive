@@ -6,6 +6,8 @@ permalink: /kb/247/Q247547/
 
 ## Q247547: Kixtart Drive Mappings Disappear on Windows 95/98 Clients
 
+{% raw %}
+
 	Article: Q247547
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/247/Q247547/
 	
 	=============================================================================
 	
+
+{% endraw %}

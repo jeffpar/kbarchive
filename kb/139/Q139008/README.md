@@ -6,6 +6,8 @@ permalink: /kb/139/Q139008/
 
 ## Q139008: Problems Printing from Mastering Visual FoxPro
 
+{% raw %}
+
 	Article: Q139008
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/139/Q139008/
 	
 	=============================================================================
 	
+
+{% endraw %}

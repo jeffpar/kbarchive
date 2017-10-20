@@ -6,6 +6,8 @@ permalink: /kb/109/Q109119/
 
 ## Q109119: Large File Copy Failures Using File Manager
 
+{% raw %}
+
 	Article: Q109119
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -79,3 +81,5 @@ permalink: /kb/109/Q109119/
 	
 	=============================================================================
 	
+
+{% endraw %}

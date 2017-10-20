@@ -6,6 +6,8 @@ permalink: /kb/169/Q169542/
 
 ## Q169542: WD97: Messages When Attempting to Fax from Word
 
+{% raw %}
+
 	Article: Q169542
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:95,97
@@ -72,3 +74,5 @@ permalink: /kb/169/Q169542/
 	
 	=============================================================================
 	
+
+{% endraw %}

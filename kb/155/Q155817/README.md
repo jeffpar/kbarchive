@@ -6,6 +6,8 @@ permalink: /kb/155/Q155817/
 
 ## Q155817: XIMS: Chinese MIME-encoded Attachments Corrupted by IMC
 
+{% raw %}
+
 	Article: Q155817
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.5
@@ -52,3 +54,5 @@ permalink: /kb/155/Q155817/
 	
 	=============================================================================
 	
+
+{% endraw %}

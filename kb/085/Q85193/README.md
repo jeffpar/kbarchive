@@ -6,6 +6,8 @@ permalink: /kb/085/Q85193/
 
 ## Q85193: PC Win: Err Msg: System Error, Application Terminated
 
+{% raw %}
+
 	Article: Q85193
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/085/Q85193/
 	
 	=============================================================================
 	
+
+{% endraw %}

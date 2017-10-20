@@ -6,6 +6,8 @@ permalink: /kb/181/Q181630/
 
 ## Q181630: SMS: Stranded TMP Files on Logon Servers
 
+{% raw %}
+
 	Article: Q181630
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -77,3 +79,5 @@ permalink: /kb/181/Q181630/
 	
 	=============================================================================
 	
+
+{% endraw %}

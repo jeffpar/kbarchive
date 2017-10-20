@@ -6,6 +6,8 @@ permalink: /kb/099/Q99074/
 
 ## Q99074: Only IBM/National Semiconductor PCMCIA Cards Supported
 
+{% raw %}
+
 	Article: Q99074
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/099/Q99074/
 	
 	=============================================================================
 	
+
+{% endraw %}

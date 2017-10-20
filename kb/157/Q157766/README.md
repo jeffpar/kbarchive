@@ -6,6 +6,8 @@ permalink: /kb/157/Q157766/
 
 ## Q157766: FIX: Breakpoint Not Refreshed for Duplicate Watch Window Entry
 
+{% raw %}
+
 	Article: Q157766
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -78,3 +80,5 @@ permalink: /kb/157/Q157766/
 	
 	=============================================================================
 	
+
+{% endraw %}

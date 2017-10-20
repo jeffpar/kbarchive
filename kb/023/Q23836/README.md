@@ -6,6 +6,8 @@ permalink: /kb/023/Q23836/
 
 ## Q23836: Available Mouse Menus
 
+{% raw %}
+
 	Article: Q23836
 	Product(s): See article
 	Version(s): 4.x 5.x 6.x
@@ -18,3 +20,5 @@ permalink: /kb/023/Q23836/
 	DisplayWrite 3 Version 1.10. The "Mouse Programmer's Reference Guide"
 	contains "Standard Mouse Menus" for previous versions (date mid-1985)
 	of Symphony, WordStar, Multiplan, and VisiCalc.
+
+{% endraw %}

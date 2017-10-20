@@ -6,6 +6,8 @@ permalink: /kb/271/Q271919/
 
 ## Q271919: Access Volation in Visual Basic Snap-In Designer Run-Time DLL
 
+{% raw %}
+
 	Article: Q271919
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -86,3 +88,5 @@ permalink: /kb/271/Q271919/
 	
 	=============================================================================
 	
+
+{% endraw %}

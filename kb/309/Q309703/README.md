@@ -6,6 +6,8 @@ permalink: /kb/309/Q309703/
 
 ## Q309703: Bicycle Games: Disappearing or Flickering Mouse Pointer
 
+{% raw %}
+
 	Article: Q309703
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -221,3 +223,5 @@ permalink: /kb/309/Q309703/
 	
 	=============================================================================
 	
+
+{% endraw %}

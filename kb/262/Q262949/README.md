@@ -6,6 +6,8 @@ permalink: /kb/262/Q262949/
 
 ## Q262949: SMS: During 1.2 Upgrade, RC Won't Complete if Sms.ini Deleted
 
+{% raw %}
+
 	Article: Q262949
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -126,3 +128,5 @@ permalink: /kb/262/Q262949/
 	
 	=============================================================================
 	
+
+{% endraw %}

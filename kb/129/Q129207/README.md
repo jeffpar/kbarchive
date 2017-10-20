@@ -6,6 +6,8 @@ permalink: /kb/129/Q129207/
 
 ## Q129207: PRB: &quot;Property Not Found&quot; Occurs When Running Form
 
+{% raw %}
+
 	Article: Q129207
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -148,3 +150,5 @@ permalink: /kb/129/Q129207/
 	
 	=============================================================================
 	
+
+{% endraw %}

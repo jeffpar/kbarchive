@@ -6,6 +6,8 @@ permalink: /kb/145/Q145651/
 
 ## Q145651: Windows Sockets Program Generates Errors In WSIPX
 
+{% raw %}
+
 	Article: Q145651
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/145/Q145651/
 	
 	=============================================================================
 	
+
+{% endraw %}

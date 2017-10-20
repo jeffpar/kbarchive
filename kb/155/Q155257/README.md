@@ -6,6 +6,8 @@ permalink: /kb/155/Q155257/
 
 ## Q155257: Dialog Templates in Memory
 
+{% raw %}
+
 	Article: Q155257
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -94,3 +96,5 @@ permalink: /kb/155/Q155257/
 	
 	=============================================================================
 	
+
+{% endraw %}

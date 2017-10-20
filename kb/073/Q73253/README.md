@@ -6,6 +6,8 @@ permalink: /kb/073/Q73253/
 
 ## Q73253: Removing Ontrack Disk Manager Partitions
 
+{% raw %}
+
 	Article: Q73253
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.3,4.0,4.01,5.0
@@ -92,3 +94,5 @@ permalink: /kb/073/Q73253/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195035/
 
 ## Q195035: False Virus Report in Hitchhiker's Guide to VB &amp; SQL Server
 
+{% raw %}
+
 	Article: Q195035
 	Product(s): Microsoft Press
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/195/Q195035/
 	
 	=============================================================================
 	
+
+{% endraw %}

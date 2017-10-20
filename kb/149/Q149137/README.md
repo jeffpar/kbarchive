@@ -6,6 +6,8 @@ permalink: /kb/149/Q149137/
 
 ## Q149137: FIX: ODBC Long Binary Functions Use SQL_NO_TOTAL Incorrectly
 
+{% raw %}
+
 	Article: Q149137
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1
@@ -87,3 +89,5 @@ permalink: /kb/149/Q149137/
 	
 	=============================================================================
 	
+
+{% endraw %}

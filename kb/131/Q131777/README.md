@@ -6,6 +6,8 @@ permalink: /kb/131/Q131777/
 
 ## Q131777: SMSRUN16 Fails To Detect SECONDNET.DRV in Windows for Workgroups
 
+{% raw %}
+
 	Article: Q131777
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -61,3 +63,5 @@ permalink: /kb/131/Q131777/
 	
 	=============================================================================
 	
+
+{% endraw %}

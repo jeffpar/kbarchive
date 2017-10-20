@@ -6,6 +6,8 @@ permalink: /kb/061/Q61201/
 
 ## Q61201: C 6.00 README: Use /Gh to Build Windows 2.x Applications
 
+{% raw %}
+
 	Article: Q61201
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -23,3 +25,5 @@ permalink: /kb/061/Q61201/
 	This option is not needed for versions of Windows later than 2.x. In
 	addition, this feature exists only in C 6.00, and will be phased out
 	in future versions of the compiler.
+
+{% endraw %}

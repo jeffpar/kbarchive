@@ -6,6 +6,8 @@ permalink: /kb/176/Q176732/
 
 ## Q176732: PRB: Read-Only Files in Shadow Folder Are Not Updated
 
+{% raw %}
+
 	Article: Q176732
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0
@@ -86,3 +88,5 @@ permalink: /kb/176/Q176732/
 	
 	=============================================================================
 	
+
+{% endraw %}

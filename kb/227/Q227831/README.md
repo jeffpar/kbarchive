@@ -6,6 +6,8 @@ permalink: /kb/227/Q227831/
 
 ## Q227831: WD97: Track Changes Shows Changes When None Were Made
 
+{% raw %}
+
 	Article: Q227831
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/227/Q227831/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/218/Q218858/
 
 ## Q218858: USB Device Listed Under the Other Devices Section in Device Mgr
 
+{% raw %}
+
 	Article: Q218858
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.1,2.5
@@ -58,3 +60,5 @@ permalink: /kb/218/Q218858/
 	
 	=============================================================================
 	
+
+{% endraw %}

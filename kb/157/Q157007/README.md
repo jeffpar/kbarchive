@@ -6,6 +6,8 @@ permalink: /kb/157/Q157007/
 
 ## Q157007: XADM: Secondary Proxy Address Replaces Target Address of CR
 
+{% raw %}
+
 	Article: Q157007
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/157/Q157007/
 	
 	=============================================================================
 	
+
+{% endraw %}

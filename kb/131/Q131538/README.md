@@ -6,6 +6,8 @@ permalink: /kb/131/Q131538/
 
 ## Q131538: Macintosh Encarta 1995: Error Type 28 Occurs
 
+{% raw %}
+
 	Article: Q131538
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -146,3 +148,5 @@ permalink: /kb/131/Q131538/
 	
 	=============================================================================
 	
+
+{% endraw %}

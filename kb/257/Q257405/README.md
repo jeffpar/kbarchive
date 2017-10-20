@@ -6,6 +6,8 @@ permalink: /kb/257/Q257405/
 
 ## Q257405: FILE: Ramdisk.sys Sample Driver for Windows 2000
 
+{% raw %}
+
 	Article: Q257405
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -192,3 +194,5 @@ permalink: /kb/257/Q257405/
 	
 	=============================================================================
 	
+
+{% endraw %}

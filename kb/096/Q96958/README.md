@@ -6,6 +6,8 @@ permalink: /kb/096/Q96958/
 
 ## Q96958: Err Msg: Microsoft Defrag Will Not Run in Multitasking...
 
+{% raw %}
+
 	Article: Q96958
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -47,3 +49,5 @@ permalink: /kb/096/Q96958/
 	
 	=============================================================================
 	
+
+{% endraw %}

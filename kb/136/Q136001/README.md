@@ -6,6 +6,8 @@ permalink: /kb/136/Q136001/
 
 ## Q136001: Explorapedia: Nature: Tad's Mouth Doesn't Move
 
+{% raw %}
+
 	Article: Q136001
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -40,3 +42,5 @@ permalink: /kb/136/Q136001/
 	
 	=============================================================================
 	
+
+{% endraw %}

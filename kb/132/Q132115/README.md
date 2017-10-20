@@ -6,6 +6,8 @@ permalink: /kb/132/Q132115/
 
 ## Q132115: Setup May Detect Already Installed Hardware on MCA Computer
 
+{% raw %}
+
 	Article: Q132115
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -81,3 +83,5 @@ permalink: /kb/132/Q132115/
 	
 	=============================================================================
 	
+
+{% endraw %}

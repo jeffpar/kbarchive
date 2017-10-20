@@ -6,6 +6,8 @@ permalink: /kb/216/Q216318/
 
 ## Q216318: FIX: Slow Performance of Remote Views w/ SQL Server Text Fields
 
+{% raw %}
+
 	Article: Q216318
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.6,3.0,3.0b,5.0,5.0a,6.0
@@ -242,3 +244,5 @@ permalink: /kb/216/Q216318/
 	
 	=============================================================================
 	
+
+{% endraw %}

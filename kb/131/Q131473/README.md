@@ -6,6 +6,8 @@ permalink: /kb/131/Q131473/
 
 ## Q131473: How to Load the Class Browser into Memory on Startup
 
+{% raw %}
+
 	Article: Q131473
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/131/Q131473/
 	
 	=============================================================================
 	
+
+{% endraw %}

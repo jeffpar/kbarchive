@@ -6,6 +6,8 @@ permalink: /kb/130/Q130716/
 
 ## Q130716: Write Fault Error Printing from MS-DOS-Based Programs
 
+{% raw %}
+
 	Article: Q130716
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/130/Q130716/
 	
 	=============================================================================
 	
+
+{% endraw %}

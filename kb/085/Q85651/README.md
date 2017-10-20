@@ -6,6 +6,8 @@ permalink: /kb/085/Q85651/
 
 ## Q85651: PC MAPI: MAPI_SUPPRESS_ATTACH Incorrectly Defined
 
+{% raw %}
+
 	Article: Q85651
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -38,3 +40,5 @@ permalink: /kb/085/Q85651/
 	
 	=============================================================================
 	
+
+{% endraw %}

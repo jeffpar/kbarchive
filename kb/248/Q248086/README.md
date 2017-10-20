@@ -6,6 +6,8 @@ permalink: /kb/248/Q248086/
 
 ## Q248086: White Paper About Setting Up a New Cluster for Use with NTOP
 
+{% raw %}
+
 	Article: Q248086
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/248/Q248086/
 	
 	=============================================================================
 	
+
+{% endraw %}

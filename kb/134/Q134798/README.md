@@ -6,6 +6,8 @@ permalink: /kb/134/Q134798/
 
 ## Q134798: Screen Saver Causes STOP 0XC000021A Under Windows NT
 
+{% raw %}
+
 	Article: Q134798
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -82,3 +84,5 @@ permalink: /kb/134/Q134798/
 	
 	=============================================================================
 	
+
+{% endraw %}

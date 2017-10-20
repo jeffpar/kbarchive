@@ -6,6 +6,8 @@ permalink: /kb/130/Q130859/
 
 ## Q130859: Windows NT Does Not Display the Startup Boot Menu
 
+{% raw %}
+
 	Article: Q130859
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51
@@ -63,3 +65,5 @@ permalink: /kb/130/Q130859/
 	
 	=============================================================================
 	
+
+{% endraw %}

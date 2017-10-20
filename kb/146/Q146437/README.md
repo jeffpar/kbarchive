@@ -6,6 +6,8 @@ permalink: /kb/146/Q146437/
 
 ## Q146437: Horizontal Scrolling List Box in an MFC Class
 
+{% raw %}
+
 	Article: Q146437
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -106,3 +108,5 @@ permalink: /kb/146/Q146437/
 	
 	=============================================================================
 	
+
+{% endraw %}

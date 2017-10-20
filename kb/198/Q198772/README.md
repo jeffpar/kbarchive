@@ -6,6 +6,8 @@ permalink: /kb/198/Q198772/
 
 ## Q198772: XFOR: Configuring Transport Selectors with Exchange 5.5 SP1
 
+{% raw %}
+
 	Article: Q198772
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -103,3 +105,5 @@ permalink: /kb/198/Q198772/
 	
 	=============================================================================
 	
+
+{% endraw %}

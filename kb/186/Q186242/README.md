@@ -6,6 +6,8 @@ permalink: /kb/186/Q186242/
 
 ## Q186242: BUG: ALTER TABLE Cannot Create a Descending Primary Key
 
+{% raw %}
+
 	Article: Q186242
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0b,5.0,5.0a,6.0
@@ -75,3 +77,5 @@ permalink: /kb/186/Q186242/
 	
 	=============================================================================
 	
+
+{% endraw %}

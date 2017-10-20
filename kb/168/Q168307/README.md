@@ -6,6 +6,8 @@ permalink: /kb/168/Q168307/
 
 ## Q168307: MSN Err Msg: Disconnected from the Remote Servers
 
+{% raw %}
+
 	Article: Q168307
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6
@@ -67,3 +69,5 @@ permalink: /kb/168/Q168307/
 	
 	=============================================================================
 	
+
+{% endraw %}

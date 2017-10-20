@@ -6,6 +6,8 @@ permalink: /kb/105/Q105267/
 
 ## Q105267: STOP Message: Sequent Server After Heavy Use
 
+{% raw %}
+
 	Article: Q105267
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -46,3 +48,5 @@ permalink: /kb/105/Q105267/
 	
 	=============================================================================
 	
+
+{% endraw %}

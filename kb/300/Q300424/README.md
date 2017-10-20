@@ -6,6 +6,8 @@ permalink: /kb/300/Q300424/
 
 ## Q300424: Access Violation in Inetinfo.exe When an SMTP Message Received
 
+{% raw %}
+
 	Article: Q300424
 	Product(s): Internet Information Server
 	Version(s): 2000,2000 SP1,2000 SP2,5.0
@@ -98,3 +100,5 @@ permalink: /kb/300/Q300424/
 	
 	=============================================================================
 	
+
+{% endraw %}

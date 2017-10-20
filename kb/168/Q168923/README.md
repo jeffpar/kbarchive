@@ -6,6 +6,8 @@ permalink: /kb/168/Q168923/
 
 ## Q168923: WD97: Invalid Page Fault Using DOCVARIABLE Field
 
+{% raw %}
+
 	Article: Q168923
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -156,3 +158,5 @@ permalink: /kb/168/Q168923/
 	
 	=============================================================================
 	
+
+{% endraw %}

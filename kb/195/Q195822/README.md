@@ -6,6 +6,8 @@ permalink: /kb/195/Q195822/
 
 ## Q195822: Server Responds to PAP Client on Different AppleTalk Node
 
+{% raw %}
+
 	Article: Q195822
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/195/Q195822/
 	
 	=============================================================================
 	
+
+{% endraw %}

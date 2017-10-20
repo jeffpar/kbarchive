@@ -6,6 +6,8 @@ permalink: /kb/274/Q274616/
 
 ## Q274616: CFS2: Some Buildings Are Displayed with a Lower Level of Detail
 
+{% raw %}
+
 	Article: Q274616
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/274/Q274616/
 	
 	=============================================================================
 	
+
+{% endraw %}

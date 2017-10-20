@@ -6,6 +6,8 @@ permalink: /kb/195/Q195640/
 
 ## Q195640: Split Horizon with Poison Reverse Causes Incorrect RIP Updates
 
+{% raw %}
+
 	Article: Q195640
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -92,3 +94,5 @@ permalink: /kb/195/Q195640/
 	
 	=============================================================================
 	
+
+{% endraw %}

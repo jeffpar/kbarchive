@@ -6,6 +6,8 @@ permalink: /kb/081/Q81222/
 
 ## Q81222: Example of Sharing a Form Between Projects in VB for Windows
 
+{% raw %}
+
 	Article: Q81222
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,3.0
@@ -116,3 +118,5 @@ permalink: /kb/081/Q81222/
 	
 	=============================================================================
 	
+
+{% endraw %}

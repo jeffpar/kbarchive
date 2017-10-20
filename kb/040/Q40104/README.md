@@ -6,6 +6,8 @@ permalink: /kb/040/Q40104/
 
 ## Q40104: Hardware Compatibility List for QuickC Version 2.00
 
+{% raw %}
+
 	Article: Q40104
 	Product(s): See article
 	Version(s): 2.00
@@ -66,3 +68,5 @@ permalink: /kb/040/Q40104/
 	   NCR PC-6                    Zenith Z-386
 	   NCR PC-810                  Zenith Z-286 LP
 	                               Zenith Turbo Sport
+
+{% endraw %}

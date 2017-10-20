@@ -6,6 +6,8 @@ permalink: /kb/164/Q164936/
 
 ## Q164936: Shared Folders Gateway Creates Incorrect Drive &amp; Share Info.
 
+{% raw %}
+
 	Article: Q164936
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/164/Q164936/
 	
 	=============================================================================
 	
+
+{% endraw %}

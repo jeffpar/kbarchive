@@ -6,6 +6,8 @@ permalink: /kb/166/Q166432/
 
 ## Q166432: Chinese Code Converter Saves Incorrect Code Page Format
 
+{% raw %}
+
 	Article: Q166432
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/166/Q166432/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236586/
 
 ## Q236586: XCON: Mail Flow Stops with MTA Event ID 4287, Error Code 8640
 
+{% raw %}
+
 	Article: Q236586
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -104,3 +106,5 @@ permalink: /kb/236/Q236586/
 	
 	=============================================================================
 	
+
+{% endraw %}

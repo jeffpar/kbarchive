@@ -6,6 +6,8 @@ permalink: /kb/163/Q163457/
 
 ## Q163457: WD97: Customized Toolbar Button Reappears After Removing Button
 
+{% raw %}
+
 	Article: Q163457
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/163/Q163457/
 	
 	=============================================================================
 	
+
+{% endraw %}

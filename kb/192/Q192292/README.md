@@ -6,6 +6,8 @@ permalink: /kb/192/Q192292/
 
 ## Q192292: Unpredictable TCP Sequence Numbers in SP4
 
+{% raw %}
+
 	Article: Q192292
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a
@@ -64,3 +66,5 @@ permalink: /kb/192/Q192292/
 	
 	=============================================================================
 	
+
+{% endraw %}

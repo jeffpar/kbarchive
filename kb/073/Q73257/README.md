@@ -6,6 +6,8 @@ permalink: /kb/073/Q73257/
 
 ## Q73257: Manual Installation of Microsoft MS-DOS 5 Upgrade
 
+{% raw %}
+
 	Article: Q73257
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -91,3 +93,5 @@ permalink: /kb/073/Q73257/
 	
 	=============================================================================
 	
+
+{% endraw %}

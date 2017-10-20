@@ -6,6 +6,8 @@ permalink: /kb/195/Q195270/
 
 ## Q195270: Hitchhiker's Guide to VB &amp; SQL Server, 6th Ed. Corrections
 
+{% raw %}
+
 	Article: Q195270
 	Product(s): Microsoft Press
 	Version(s): 
@@ -168,3 +170,5 @@ permalink: /kb/195/Q195270/
 	
 	=============================================================================
 	
+
+{% endraw %}

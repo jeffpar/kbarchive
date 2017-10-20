@@ -6,6 +6,8 @@ permalink: /kb/201/Q201879/
 
 ## Q201879: HOWTO: Determine If an ActiveX Ambient Property Is Implemented
 
+{% raw %}
+
 	Article: Q201879
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -263,3 +265,5 @@ permalink: /kb/201/Q201879/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/076/Q76749/
 
 ## Q76749: Enabling Internal Modem on Zenith Laptop
 
+{% raw %}
+
 	Article: Q76749
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -53,3 +55,5 @@ permalink: /kb/076/Q76749/
 	
 	=============================================================================
 	
+
+{% endraw %}

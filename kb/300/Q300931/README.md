@@ -6,6 +6,8 @@ permalink: /kb/300/Q300931/
 
 ## Q300931: Files That You Can Safely Delete from the ImcData Folder
 
+{% raw %}
+
 	Article: Q300931
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/300/Q300931/
 	
 	=============================================================================
 	
+
+{% endraw %}

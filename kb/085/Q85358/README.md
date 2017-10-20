@@ -6,6 +6,8 @@ permalink: /kb/085/Q85358/
 
 ## Q85358: FAX: How Dir-Sync Affects the Fax Gateway Address List
 
+{% raw %}
+
 	Article: Q85358
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/085/Q85358/
 	
 	=============================================================================
 	
+
+{% endraw %}

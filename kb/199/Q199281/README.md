@@ -6,6 +6,8 @@ permalink: /kb/199/Q199281/
 
 ## Q199281: XWEB: New Message is Lost When Connection to Web Server is Lost
 
+{% raw %}
+
 	Article: Q199281
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -56,3 +58,5 @@ permalink: /kb/199/Q199281/
 	
 	=============================================================================
 	
+
+{% endraw %}

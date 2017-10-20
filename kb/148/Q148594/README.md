@@ -6,6 +6,8 @@ permalink: /kb/148/Q148594/
 
 ## Q148594: &quot;NameNumericTail=0&quot; Value Causes Problems for Some Programs
 
+{% raw %}
+
 	Article: Q148594
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -99,3 +101,5 @@ permalink: /kb/148/Q148594/
 	
 	=============================================================================
 	
+
+{% endraw %}

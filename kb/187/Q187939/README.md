@@ -6,6 +6,8 @@ permalink: /kb/187/Q187939/
 
 ## Q187939: IPX May Not Work When Packet Size Is Larger Than Receive Buffer
 
+{% raw %}
+
 	Article: Q187939
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/187/Q187939/
 	
 	=============================================================================
 	
+
+{% endraw %}

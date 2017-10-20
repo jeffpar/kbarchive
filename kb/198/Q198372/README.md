@@ -6,6 +6,8 @@ permalink: /kb/198/Q198372/
 
 ## Q198372: WD97: Merge Buttons in Mail Merge Helper, Toolbar Unavailable
 
+{% raw %}
+
 	Article: Q198372
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/198/Q198372/
 	
 	=============================================================================
 	
+
+{% endraw %}

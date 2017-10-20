@@ -6,6 +6,8 @@ permalink: /kb/158/Q158423/
 
 ## Q158423: WinNT 4.0 ERD Won't Allow Repair w/out Compact Disc Installed
 
+{% raw %}
+
 	Article: Q158423
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/158/Q158423/
 	
 	=============================================================================
 	
+
+{% endraw %}

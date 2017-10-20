@@ -6,6 +6,8 @@ permalink: /kb/139/Q139029/
 
 ## Q139029: DOC: Stlguide.rtf Different from Vector.h Header File
 
+{% raw %}
+
 	Article: Q139029
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1
@@ -55,3 +57,5 @@ permalink: /kb/139/Q139029/
 	
 	=============================================================================
 	
+
+{% endraw %}

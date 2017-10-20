@@ -6,6 +6,8 @@ permalink: /kb/136/Q136357/
 
 ## Q136357: Fury3: Help Text Hard to Read in Certain Color Schemes
 
+{% raw %}
+
 	Article: Q136357
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/136/Q136357/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/033/Q33035/
 
 ## Q33035: History On in Debug Menu Will Not Go through Event Traps
 
+{% raw %}
+
 	Article: Q33035
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -45,3 +47,5 @@ permalink: /kb/033/Q33035/
 	     PRINT "         a"
 	     PRINT "            trap!"   'Put Breakpoint here, or on the RETURN.
 	     RETURN
+
+{% endraw %}

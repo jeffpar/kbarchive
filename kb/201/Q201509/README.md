@@ -6,6 +6,8 @@ permalink: /kb/201/Q201509/
 
 ## Q201509: BUG: Textbox Can Be Sized To Less Than Minimum Height
 
+{% raw %}
+
 	Article: Q201509
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/201/Q201509/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158975/
 
 ## Q158975: Why Won't This Game Recognize My 3D Video Card?
 
+{% raw %}
+
 	Article: Q158975
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/158/Q158975/
 	
 	=============================================================================
 	
+
+{% endraw %}

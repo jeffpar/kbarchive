@@ -6,6 +6,8 @@ permalink: /kb/085/Q85135/
 
 ## Q85135: System Hangs After Two Beeps in Windows 386 Enhanced Mode
 
+{% raw %}
+
 	Article: Q85135
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/085/Q85135/
 	
 	=============================================================================
 	
+
+{% endraw %}

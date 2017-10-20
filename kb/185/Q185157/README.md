@@ -6,6 +6,8 @@ permalink: /kb/185/Q185157/
 
 ## Q185157: WD97: ODMA: Word Converts Document When Opening in DOCS Open
 
+{% raw %}
+
 	Article: Q185157
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -126,3 +128,5 @@ permalink: /kb/185/Q185157/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127064/
 
 ## Q127064: Changing Spool Settings Does Not Restore Defaults
 
+{% raw %}
+
 	Article: Q127064
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/127/Q127064/
 	
 	=============================================================================
 	
+
+{% endraw %}

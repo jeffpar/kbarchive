@@ -6,6 +6,8 @@ permalink: /kb/111/Q111507/
 
 ## Q111507: PRB: Generate Command on Program Menu Is Disabled
 
+{% raw %}
+
 	Article: Q111507
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
@@ -92,3 +94,5 @@ permalink: /kb/111/Q111507/
 	
 	=============================================================================
 	
+
+{% endraw %}

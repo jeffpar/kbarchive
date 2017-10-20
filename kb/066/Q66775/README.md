@@ -6,6 +6,8 @@ permalink: /kb/066/Q66775/
 
 ## Q66775: PRB: L2029/L2001 Unsized Array Declaration at File Scope &#91;utilit
 
+{% raw %}
+
 	Article: Q66775
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,5.1,5.1a,6.0,6.0a,6.0ax,7.0
@@ -85,3 +87,5 @@ permalink: /kb/066/Q66775/
 	
 	=============================================================================
 	
+
+{% endraw %}

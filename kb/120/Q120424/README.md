@@ -6,6 +6,8 @@ permalink: /kb/120/Q120424/
 
 ## Q120424: &quot;Ghost&quot; Mouse Pointers on Quattro Pro for MS-DOS Spreadsheets
 
+{% raw %}
+
 	Article: Q120424
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -49,3 +51,5 @@ permalink: /kb/120/Q120424/
 	
 	=============================================================================
 	
+
+{% endraw %}

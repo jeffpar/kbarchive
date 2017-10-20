@@ -6,6 +6,8 @@ permalink: /kb/153/Q153544/
 
 ## Q153544: Starting 16-Bit WOW Subsystem on Windows NT Server
 
+{% raw %}
+
 	Article: Q153544
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -60,3 +62,5 @@ permalink: /kb/153/Q153544/
 	
 	=============================================================================
 	
+
+{% endraw %}

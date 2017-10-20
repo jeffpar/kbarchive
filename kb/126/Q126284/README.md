@@ -6,6 +6,8 @@ permalink: /kb/126/Q126284/
 
 ## Q126284: Problem Running SMS on CNTFS Partition
 
+{% raw %}
+
 	Article: Q126284
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,3.51
@@ -77,3 +79,5 @@ permalink: /kb/126/Q126284/
 	
 	=============================================================================
 	
+
+{% endraw %}

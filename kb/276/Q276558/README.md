@@ -6,6 +6,8 @@ permalink: /kb/276/Q276558/
 
 ## Q276558: How to Uninstall and Reinstall SNA Server
 
+{% raw %}
+
 	Article: Q276558
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,4.0
@@ -89,3 +91,5 @@ permalink: /kb/276/Q276558/
 	
 	=============================================================================
 	
+
+{% endraw %}

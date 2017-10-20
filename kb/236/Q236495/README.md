@@ -6,6 +6,8 @@ permalink: /kb/236/Q236495/
 
 ## Q236495: MOD2000: VSS Login Allows Access with a Blank UserName from VBE
 
+{% raw %}
+
 	Article: Q236495
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/236/Q236495/
 	
 	=============================================================================
 	
+
+{% endraw %}

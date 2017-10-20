@@ -6,6 +6,8 @@ permalink: /kb/137/Q137511/
 
 ## Q137511: Anniversaries and Birthdays Appear in Mixed Order
 
+{% raw %}
+
 	Article: Q137511
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -63,3 +65,5 @@ permalink: /kb/137/Q137511/
 	
 	=============================================================================
 	
+
+{% endraw %}

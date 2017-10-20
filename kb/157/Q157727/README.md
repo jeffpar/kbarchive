@@ -6,6 +6,8 @@ permalink: /kb/157/Q157727/
 
 ## Q157727: BUG: Animated Mouse Cursor Does Not Work in .exe File
 
+{% raw %}
+
 	Article: Q157727
 	Product(s): Microsoft FoxPro
 	Version(s): 5.00
@@ -90,3 +92,5 @@ permalink: /kb/157/Q157727/
 	
 	=============================================================================
 	
+
+{% endraw %}

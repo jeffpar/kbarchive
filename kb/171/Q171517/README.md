@@ -6,6 +6,8 @@ permalink: /kb/171/Q171517/
 
 ## Q171517: FIX: Animation Control Prints Incorrectly at Design-Time
 
+{% raw %}
+
 	Article: Q171517
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -82,3 +84,5 @@ permalink: /kb/171/Q171517/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/039/Q39544/
 
 ## Q39544: INFO: Limit to the Number of Characters Stored in a List Box
 
+{% raw %}
+
 	Article: Q39544
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -41,3 +43,5 @@ permalink: /kb/039/Q39544/
 	
 	=============================================================================
 	
+
+{% endraw %}

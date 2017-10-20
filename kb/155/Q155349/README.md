@@ -6,6 +6,8 @@ permalink: /kb/155/Q155349/
 
 ## Q155349: &quot;Invalid Media&quot; Error Message Formatting FAT32 Partition
 
+{% raw %}
+
 	Article: Q155349
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -63,3 +65,5 @@ permalink: /kb/155/Q155349/
 	
 	=============================================================================
 	
+
+{% endraw %}

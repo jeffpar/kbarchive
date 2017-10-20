@@ -6,6 +6,8 @@ permalink: /kb/159/Q159269/
 
 ## Q159269: FIX: Label Caption Longer Than 255 Characters Causes GPF
 
+{% raw %}
+
 	Article: Q159269
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -67,3 +69,5 @@ permalink: /kb/159/Q159269/
 	
 	=============================================================================
 	
+
+{% endraw %}

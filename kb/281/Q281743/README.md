@@ -6,6 +6,8 @@ permalink: /kb/281/Q281743/
 
 ## Q281743: XCON: Internet Mail Service Dr. Watson Error
 
+{% raw %}
+
 	Article: Q281743
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -71,3 +73,5 @@ permalink: /kb/281/Q281743/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156871/
 
 ## Q156871: DOCERR: Visual FoxPro 5.0 AFIELDS() Remark Help Topic Outdated
 
+{% raw %}
+
 	Article: Q156871
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -54,3 +56,5 @@ permalink: /kb/156/Q156871/
 	
 	=============================================================================
 	
+
+{% endraw %}

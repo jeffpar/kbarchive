@@ -6,6 +6,8 @@ permalink: /kb/136/Q136338/
 
 ## Q136338: FIX: Windows 95 GDI Leak with Show Window Contents Setting
 
+{% raw %}
+
 	Article: Q136338
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -116,3 +118,5 @@ permalink: /kb/136/Q136338/
 	
 	=============================================================================
 	
+
+{% endraw %}

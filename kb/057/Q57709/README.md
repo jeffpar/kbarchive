@@ -6,6 +6,8 @@ permalink: /kb/057/Q57709/
 
 ## Q57709: &quot;Typed Variable Not Allowed in Expression&quot; Using Nested Arrays
 
+{% raw %}
+
 	Article: Q57709
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -69,3 +71,5 @@ permalink: /kb/057/Q57709/
 	   Var2% = Var.Number
 	   PRINT LBOUND(Array2(Var2%).Array1)
 	   '                   ^^^^^ Non-TYPEd variable will work.
+
+{% endraw %}

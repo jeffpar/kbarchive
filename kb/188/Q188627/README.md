@@ -6,6 +6,8 @@ permalink: /kb/188/Q188627/
 
 ## Q188627: XADM: MSExchangeIS Move Mailbox Error Event IDs
 
+{% raw %}
+
 	Article: Q188627
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -99,3 +101,5 @@ permalink: /kb/188/Q188627/
 	
 	=============================================================================
 	
+
+{% endraw %}

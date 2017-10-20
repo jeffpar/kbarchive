@@ -6,6 +6,8 @@ permalink: /kb/316/Q316332/
 
 ## Q316332: PRB: OLE Err Msg: 0x80010105: The Server Threw an Exception
 
+{% raw %}
+
 	Article: Q316332
 	Product(s): Microsoft FoxPro
 	Version(s): 4.0,5.0,5.0a,6.0,7.0
@@ -84,3 +86,5 @@ permalink: /kb/316/Q316332/
 	
 	=============================================================================
 	
+
+{% endraw %}

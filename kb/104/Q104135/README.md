@@ -6,6 +6,8 @@ permalink: /kb/104/Q104135/
 
 ## Q104135: PC Forms: Using Grid and OLE Client Controls in Routing Forms
 
+{% raw %}
+
 	Article: Q104135
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -65,3 +67,5 @@ permalink: /kb/104/Q104135/
 	
 	=============================================================================
 	
+
+{% endraw %}

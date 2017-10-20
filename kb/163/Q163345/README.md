@@ -6,6 +6,8 @@ permalink: /kb/163/Q163345/
 
 ## Q163345: ACC97: Error Running Switchboard Manager in SourceSafe Database
 
+{% raw %}
+
 	Article: Q163345
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/163/Q163345/
 	
 	=============================================================================
 	
+
+{% endraw %}

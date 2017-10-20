@@ -6,6 +6,8 @@ permalink: /kb/197/Q197629/
 
 ## Q197629: SLI Application Fails With LUA_RESERVED_FIELD_NOT_ZERO
 
+{% raw %}
+
 	Article: Q197629
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP3,4.0 SP1
@@ -148,3 +150,5 @@ permalink: /kb/197/Q197629/
 	
 	=============================================================================
 	
+
+{% endraw %}

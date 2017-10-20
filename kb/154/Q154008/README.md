@@ -6,6 +6,8 @@ permalink: /kb/154/Q154008/
 
 ## Q154008: What Microsoft Products Does VSS Integrate with?
 
+{% raw %}
+
 	Article: Q154008
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -59,3 +61,5 @@ permalink: /kb/154/Q154008/
 	
 	=============================================================================
 	
+
+{% endraw %}

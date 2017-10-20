@@ -6,6 +6,8 @@ permalink: /kb/248/Q248611/
 
 ## Q248611: Setsockopt Is Unable to Mark the Internet Protocol Type of Servi
 
+{% raw %}
+
 	Article: Q248611
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0,4.0 SP5
@@ -128,3 +130,5 @@ permalink: /kb/248/Q248611/
 	
 	=============================================================================
 	
+
+{% endraw %}

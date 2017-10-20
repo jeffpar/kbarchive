@@ -6,6 +6,8 @@ permalink: /kb/278/Q278389/
 
 ## Q278389: Telnet Server from SFU 2.0 Causes Error Message
 
+{% raw %}
+
 	Article: Q278389
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -56,3 +58,5 @@ permalink: /kb/278/Q278389/
 	
 	=============================================================================
 	
+
+{% endraw %}

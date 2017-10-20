@@ -6,6 +6,8 @@ permalink: /kb/190/Q190354/
 
 ## Q190354: Unattended Setup of MSCS with -JOIN Parameter Requires Input
 
+{% raw %}
+
 	Article: Q190354
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/190/Q190354/
 	
 	=============================================================================
 	
+
+{% endraw %}

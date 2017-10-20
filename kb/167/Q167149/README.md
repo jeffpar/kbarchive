@@ -6,6 +6,8 @@ permalink: /kb/167/Q167149/
 
 ## Q167149: WD97: Invalid Page Fault on NT 4.0 After Opening More Than 2000
 
+{% raw %}
+
 	Article: Q167149
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -60,3 +62,5 @@ permalink: /kb/167/Q167149/
 	
 	=============================================================================
 	
+
+{% endraw %}

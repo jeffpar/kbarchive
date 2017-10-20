@@ -6,6 +6,8 @@ permalink: /kb/155/Q155390/
 
 ## Q155390: PRB: Unable to Add Project Error in Visual Basic Integration
 
+{% raw %}
+
 	Article: Q155390
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0
@@ -100,3 +102,5 @@ permalink: /kb/155/Q155390/
 	
 	=============================================================================
 	
+
+{% endraw %}

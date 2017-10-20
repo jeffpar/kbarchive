@@ -6,6 +6,8 @@ permalink: /kb/129/Q129126/
 
 ## Q129126: New Access Privileges for Event Log, Audit Log and Registry
 
+{% raw %}
+
 	Article: Q129126
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -41,3 +43,5 @@ permalink: /kb/129/Q129126/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236024/
 
 ## Q236024: Cannot Use Connection Manager to Log On to Domain with RAS
 
+{% raw %}
+
 	Article: Q236024
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/236/Q236024/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98551/
 
 ## Q98551: Setting Up WFWG on a Workstation Without a Hard Disk
 
+{% raw %}
+
 	Article: Q98551
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -303,3 +305,5 @@ permalink: /kb/098/Q98551/
 	
 	=============================================================================
 	
+
+{% endraw %}

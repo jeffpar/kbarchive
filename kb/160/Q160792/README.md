@@ -6,6 +6,8 @@ permalink: /kb/160/Q160792/
 
 ## Q160792: &quot;Snap to default&quot; Mouse Feature Not Working
 
+{% raw %}
+
 	Article: Q160792
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -49,3 +51,5 @@ permalink: /kb/160/Q160792/
 	
 	=============================================================================
 	
+
+{% endraw %}

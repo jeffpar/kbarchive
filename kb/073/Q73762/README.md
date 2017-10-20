@@ -6,6 +6,8 @@ permalink: /kb/073/Q73762/
 
 ## Q73762: Mac Form: Resizing Form in Form Designer Causes Error Message
 
+{% raw %}
+
 	Article: Q73762
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -44,3 +46,5 @@ permalink: /kb/073/Q73762/
 	
 	=============================================================================
 	
+
+{% endraw %}

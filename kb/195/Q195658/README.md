@@ -6,6 +6,8 @@ permalink: /kb/195/Q195658/
 
 ## Q195658: WD97: How to Create and Save Custom Labels in Word
 
+{% raw %}
+
 	Article: Q195658
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -193,3 +195,5 @@ permalink: /kb/195/Q195658/
 	
 	=============================================================================
 	
+
+{% endraw %}

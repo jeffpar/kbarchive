@@ -6,6 +6,8 @@ permalink: /kb/191/Q191037/
 
 ## Q191037: INFO: VB6 Learning, Professional, and Enterprise Features
 
+{% raw %}
+
 	Article: Q191037
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -75,3 +77,5 @@ permalink: /kb/191/Q191037/
 	
 	=============================================================================
 	
+
+{% endraw %}

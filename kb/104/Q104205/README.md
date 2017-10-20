@@ -6,6 +6,8 @@ permalink: /kb/104/Q104205/
 
 ## Q104205: How to Remove an Extended NTFS Partition
 
+{% raw %}
+
 	Article: Q104205
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -164,3 +166,5 @@ permalink: /kb/104/Q104205/
 	
 	=============================================================================
 	
+
+{% endraw %}

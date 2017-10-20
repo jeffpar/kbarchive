@@ -6,6 +6,8 @@ permalink: /kb/245/Q245465/
 
 ## Q245465: XFOR: Configuring Message Filtering on the Internet Mail Service
 
+{% raw %}
+
 	Article: Q245465
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -79,3 +81,5 @@ permalink: /kb/245/Q245465/
 	
 	=============================================================================
 	
+
+{% endraw %}

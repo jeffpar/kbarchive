@@ -6,6 +6,8 @@ permalink: /kb/246/Q246088/
 
 ## Q246088: HOWTO: Apply RichText Effect in VFP Reports
 
+{% raw %}
+
 	Article: Q246088
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -70,7 +72,7 @@ permalink: /kb/246/Q246088/
 	  	*!!IMPORTANT!! The following richtext formatting line(s) need to be 
 	           *included as one line in your program.
 	           \\{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl
-	           {\f0\fnil\fcharset0 Times New Roman;} }\viewkind4\uc1\pard\f0\fs20
+	           {\f0\fnil\fcharset0 Times New Roman;}}\viewkind4\uc1\pard\f0\fs20
 	            The big \ul <<ALLT(dcolor.dcolor)>>\ulnone  dog\par}
 	  	SET TEXTMERGE TO
 	  	APPEND GENERAL gcolor FROM &_rtfFile CLASS "RICHTEXT.RICHTEXTCTRL.1"
@@ -107,3 +109,5 @@ permalink: /kb/246/Q246088/
 	
 	=============================================================================
 	
+
+{% endraw %}

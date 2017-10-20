@@ -6,6 +6,8 @@ permalink: /kb/028/Q28531/
 
 ## Q28531: UNDEL Does Not Work with DOS Version 2.x
 
+{% raw %}
+
 	Article: Q28531
 	Product(s): See article
 	Version(s): 5.10
@@ -28,3 +30,5 @@ permalink: /kb/028/Q28531/
 	
 	then you cannot rename UNDELB.EXE in order for it to work correctly on
 	DOS Version 2.x.
+
+{% endraw %}

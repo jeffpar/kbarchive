@@ -6,6 +6,8 @@ permalink: /kb/164/Q164183/
 
 ## Q164183: .HTM Files Are Indexed by Text Filter Instead of HTML Filter
 
+{% raw %}
+
 	Article: Q164183
 	Product(s): Internet Information Server
 	Version(s): WINNT: 1.1,2.0
@@ -52,3 +54,5 @@ permalink: /kb/164/Q164183/
 	
 	=============================================================================
 	
+
+{% endraw %}

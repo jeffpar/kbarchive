@@ -6,6 +6,8 @@ permalink: /kb/059/Q59976/
 
 ## Q59976: Mac Hyp: Getting the Subject of a Message
 
+{% raw %}
+
 	Article: Q59976
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -39,3 +41,5 @@ permalink: /kb/059/Q59976/
 	
 	=============================================================================
 	
+
+{% endraw %}

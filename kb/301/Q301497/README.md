@@ -6,6 +6,8 @@ permalink: /kb/301/Q301497/
 
 ## Q301497: FIX: The adAsyncExecute Flag Fails with VFPODBC on MDAC 2.6
 
+{% raw %}
+
 	Article: Q301497
 	Product(s): Microsoft FoxPro
 	Version(s): 1.0,2.0,2.6,2.6 SP1,3.0,4.0,5.0
@@ -111,3 +113,5 @@ permalink: /kb/301/Q301497/
 	
 	=============================================================================
 	
+
+{% endraw %}

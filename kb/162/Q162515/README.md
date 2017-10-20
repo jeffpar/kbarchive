@@ -6,6 +6,8 @@ permalink: /kb/162/Q162515/
 
 ## Q162515: &quot;-B&quot; Is Printed at End of TN3270 Print Job
 
+{% raw %}
+
 	Article: Q162515
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -66,3 +68,5 @@ permalink: /kb/162/Q162515/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157001/
 
 ## Q157001: XCLN: PRC Exchange Win 95 Client cannot Display DBCS Characters
 
+{% raw %}
+
 	Article: Q157001
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -62,3 +64,5 @@ permalink: /kb/157/Q157001/
 	
 	=============================================================================
 	
+
+{% endraw %}

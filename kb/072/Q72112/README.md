@@ -6,6 +6,8 @@ permalink: /kb/072/Q72112/
 
 ## Q72112: '0 Bytes Available Contiguous Extended Memory'
 
+{% raw %}
+
 	Article: Q72112
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.0
@@ -77,3 +79,5 @@ permalink: /kb/072/Q72112/
 	
 	=============================================================================
 	
+
+{% endraw %}

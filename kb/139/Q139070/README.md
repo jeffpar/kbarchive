@@ -6,6 +6,8 @@ permalink: /kb/139/Q139070/
 
 ## Q139070: PRB: Stack Violation Calling 16-Bit DLL with FoxTools
 
+{% raw %}
+
 	Article: Q139070
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -90,3 +92,5 @@ permalink: /kb/139/Q139070/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172194/
 
 ## Q172194: How to Determine If a Program Is 16-Bit or 32-Bit
 
+{% raw %}
+
 	Article: Q172194
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS NT:4.0
@@ -48,3 +50,5 @@ permalink: /kb/172/Q172194/
 	
 	=============================================================================
 	
+
+{% endraw %}

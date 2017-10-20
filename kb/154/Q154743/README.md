@@ -6,6 +6,8 @@ permalink: /kb/154/Q154743/
 
 ## Q154743: PRB: Using FoxBASE+ Label Form in Visual FoxPro
 
+{% raw %}
+
 	Article: Q154743
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b
@@ -91,3 +93,5 @@ permalink: /kb/154/Q154743/
 	
 	=============================================================================
 	
+
+{% endraw %}

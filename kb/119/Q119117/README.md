@@ -6,6 +6,8 @@ permalink: /kb/119/Q119117/
 
 ## Q119117: Video Hangs w/Gateway 2000 and ATI Mach32 Graphics Adapter
 
+{% raw %}
+
 	Article: Q119117
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/119/Q119117/
 	
 	=============================================================================
 	
+
+{% endraw %}

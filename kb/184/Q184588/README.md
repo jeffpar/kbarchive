@@ -6,6 +6,8 @@ permalink: /kb/184/Q184588/
 
 ## Q184588: Outwars: Frame Rate Is Reduced if You Enable Fogging
 
+{% raw %}
+
 	Article: Q184588
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -83,3 +85,5 @@ permalink: /kb/184/Q184588/
 	
 	=============================================================================
 	
+
+{% endraw %}

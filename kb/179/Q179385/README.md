@@ -6,6 +6,8 @@ permalink: /kb/179/Q179385/
 
 ## Q179385: HOWTO: Add Custom ATL Objects to the ATL Object Wizard
 
+{% raw %}
+
 	Article: Q179385
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.1,2.0,2.1,3.0,5.0,6.0
@@ -637,3 +639,5 @@ permalink: /kb/179/Q179385/
 	
 	=============================================================================
 	
+
+{% endraw %}

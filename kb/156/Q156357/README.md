@@ -6,6 +6,8 @@ permalink: /kb/156/Q156357/
 
 ## Q156357: Windows NT Pauses During Startup with Adaptec 1542CP
 
+{% raw %}
+
 	Article: Q156357
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -59,3 +61,5 @@ permalink: /kb/156/Q156357/
 	
 	=============================================================================
 	
+
+{% endraw %}

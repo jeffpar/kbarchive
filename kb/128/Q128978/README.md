@@ -6,6 +6,8 @@ permalink: /kb/128/Q128978/
 
 ## Q128978: Dead Gateway Detection in TCP/IP for Windows NT
 
+{% raw %}
+
 	Article: Q128978
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -105,3 +107,5 @@ permalink: /kb/128/Q128978/
 	
 	=============================================================================
 	
+
+{% endraw %}

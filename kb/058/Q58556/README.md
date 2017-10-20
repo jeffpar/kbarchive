@@ -6,6 +6,8 @@ permalink: /kb/058/Q58556/
 
 ## Q58556: Mac GW: How Gateway Servers Work
 
+{% raw %}
+
 	Article: Q58556
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -57,3 +59,5 @@ permalink: /kb/058/Q58556/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96685/
 
 ## Q96685: TCP Extensions for LAN Manager Require TCP/IP
 
+{% raw %}
+
 	Article: Q96685
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -116,3 +118,5 @@ permalink: /kb/096/Q96685/
 	
 	=============================================================================
 	
+
+{% endraw %}

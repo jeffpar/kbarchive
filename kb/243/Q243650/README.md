@@ -6,6 +6,8 @@ permalink: /kb/243/Q243650/
 
 ## Q243650: BUG: MSDN Library Favorites Are Lost
 
+{% raw %}
+
 	Article: Q243650
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/243/Q243650/
 	
 	=============================================================================
 	
+
+{% endraw %}

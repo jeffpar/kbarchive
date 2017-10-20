@@ -6,6 +6,8 @@ permalink: /kb/315/Q315108/
 
 ## Q315108: Combat Flight Simulator 2: Game Appears to Stop Responding
 
+{% raw %}
+
 	Article: Q315108
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -98,3 +100,5 @@ permalink: /kb/315/Q315108/
 	
 	=============================================================================
 	
+
+{% endraw %}

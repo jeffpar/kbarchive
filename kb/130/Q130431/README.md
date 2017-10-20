@@ -6,6 +6,8 @@ permalink: /kb/130/Q130431/
 
 ## Q130431: Appointments That End on the Next Day Are Not Archived
 
+{% raw %}
+
 	Article: Q130431
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -48,3 +50,5 @@ permalink: /kb/130/Q130431/
 	
 	=============================================================================
 	
+
+{% endraw %}

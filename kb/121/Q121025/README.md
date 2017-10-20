@@ -6,6 +6,8 @@ permalink: /kb/121/Q121025/
 
 ## Q121025: Print Screen Hangs Machine After Exiting Windows or WFWG
 
+{% raw %}
+
 	Article: Q121025
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/121/Q121025/
 	
 	=============================================================================
 	
+
+{% endraw %}

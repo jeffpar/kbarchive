@@ -6,6 +6,8 @@ permalink: /kb/187/Q187868/
 
 ## Q187868: XADM: Downloading Messages Using Outlook Express Crashes Store
 
+{% raw %}
+
 	Article: Q187868
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/187/Q187868/
 	
 	=============================================================================
 	
+
+{% endraw %}

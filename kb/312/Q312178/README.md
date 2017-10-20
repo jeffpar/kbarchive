@@ -6,6 +6,8 @@ permalink: /kb/312/Q312178/
 
 ## Q312178: Internet Explorer And DirectX Versions Are Out Of Date
 
+{% raw %}
+
 	Article: Q312178
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -75,3 +77,5 @@ permalink: /kb/312/Q312178/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188625/
 
 ## Q188625: XADM: Unattended Exchange Server 5.5 Setup
 
+{% raw %}
+
 	Article: Q188625
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -312,3 +314,5 @@ permalink: /kb/188/Q188625/
 	
 	=============================================================================
 	
+
+{% endraw %}

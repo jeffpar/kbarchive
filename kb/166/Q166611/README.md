@@ -6,6 +6,8 @@ permalink: /kb/166/Q166611/
 
 ## Q166611: XCON: No Rerouting Needed When OU Field is Empty
 
+{% raw %}
+
 	Article: Q166611
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -93,3 +95,5 @@ permalink: /kb/166/Q166611/
 	
 	=============================================================================
 	
+
+{% endraw %}

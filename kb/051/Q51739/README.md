@@ -6,6 +6,8 @@ permalink: /kb/051/Q51739/
 
 ## Q51739: DevMode.exe Changes Printer Parameters from Application
 
+{% raw %}
+
 	Article: Q51739
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -70,3 +72,5 @@ permalink: /kb/051/Q51739/
 	
 	=============================================================================
 	
+
+{% endraw %}

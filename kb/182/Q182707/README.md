@@ -6,6 +6,8 @@ permalink: /kb/182/Q182707/
 
 ## Q182707: MMC Component Does Not Prompt for Restart After Installation
 
+{% raw %}
+
 	Article: Q182707
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -52,3 +54,5 @@ permalink: /kb/182/Q182707/
 	
 	=============================================================================
 	
+
+{% endraw %}

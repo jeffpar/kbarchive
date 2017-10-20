@@ -6,6 +6,8 @@ permalink: /kb/137/Q137027/
 
 ## Q137027: BUG: ScrollBars Don't Display on DBList Control
 
+{% raw %}
+
 	Article: Q137027
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -168,3 +170,5 @@ permalink: /kb/137/Q137027/
 	
 	=============================================================================
 	
+
+{% endraw %}

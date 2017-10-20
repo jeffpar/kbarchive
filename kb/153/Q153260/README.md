@@ -6,6 +6,8 @@ permalink: /kb/153/Q153260/
 
 ## Q153260: Sender Disconnect Results in Sharing Violations
 
+{% raw %}
+
 	Article: Q153260
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -55,3 +57,5 @@ permalink: /kb/153/Q153260/
 	
 	=============================================================================
 	
+
+{% endraw %}

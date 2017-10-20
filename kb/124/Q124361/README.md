@@ -6,6 +6,8 @@ permalink: /kb/124/Q124361/
 
 ## Q124361: SMS: How to Remove Systems Management Server Clients
 
+{% raw %}
+
 	Article: Q124361
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -56,3 +58,5 @@ permalink: /kb/124/Q124361/
 	
 	=============================================================================
 	
+
+{% endraw %}

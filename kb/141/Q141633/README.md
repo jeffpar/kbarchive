@@ -6,6 +6,8 @@ permalink: /kb/141/Q141633/
 
 ## Q141633: PRB: Form with Subclassed Combo Looks for RowSource from Class
 
+{% raw %}
+
 	Article: Q141633
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -87,3 +89,5 @@ permalink: /kb/141/Q141633/
 	
 	=============================================================================
 	
+
+{% endraw %}

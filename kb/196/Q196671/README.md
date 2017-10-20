@@ -6,6 +6,8 @@ permalink: /kb/196/Q196671/
 
 ## Q196671: WD97: How to Format a Combination of 5- and 9-Digit ZIP Codes
 
+{% raw %}
+
 	Article: Q196671
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -35,7 +37,7 @@ permalink: /kb/196/Q196671/
 	Use the following field:
 	
 	  {IF {=ABS({MERGEFIELD zip \# "####'-'#####"}) }<> {MERGEFIELD zip}
-	  {MERGEFIELD zip \# "#####'-'####"} {MERGEFIELD zip} }
+	  {MERGEFIELD zip \# "#####'-'####"} {MERGEFIELD zip}}
 	
 	NOTES:
 	
@@ -94,3 +96,5 @@ permalink: /kb/196/Q196671/
 	
 	=============================================================================
 	
+
+{% endraw %}

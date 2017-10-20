@@ -6,6 +6,8 @@ permalink: /kb/275/Q275612/
 
 ## Q275612: SMS: Modifying &#91;Tokens&#93; Section of Smsbkup.ctl May Delete Files
 
+{% raw %}
+
 	Article: Q275612
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -123,3 +125,5 @@ permalink: /kb/275/Q275612/
 	
 	=============================================================================
 	
+
+{% endraw %}

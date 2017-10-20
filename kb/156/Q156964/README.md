@@ -6,6 +6,8 @@ permalink: /kb/156/Q156964/
 
 ## Q156964: Windows NT 4.0 Cannot Remove/Reinstall Internet Explorer 2.0
 
+{% raw %}
+
 	Article: Q156964
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,4.0
@@ -67,3 +69,5 @@ permalink: /kb/156/Q156964/
 	
 	=============================================================================
 	
+
+{% endraw %}

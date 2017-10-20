@@ -6,6 +6,8 @@ permalink: /kb/094/Q94208/
 
 ## Q94208: Support for Canon LBP-200 Series Printers
 
+{% raw %}
+
 	Article: Q94208
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/094/Q94208/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/069/Q69186/
 
 ## Q69186: WINSTART.BAT Won't Load Microsoft LAN Manager Driver
 
+{% raw %}
+
 	Article: Q69186
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -64,3 +66,5 @@ permalink: /kb/069/Q69186/
 	
 	=============================================================================
 	
+
+{% endraw %}

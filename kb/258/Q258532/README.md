@@ -6,6 +6,8 @@ permalink: /kb/258/Q258532/
 
 ## Q258532: FIX:All Characters in Report Don't Print Under Localized Windows
 
+{% raw %}
+
 	Article: Q258532
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -76,3 +78,5 @@ permalink: /kb/258/Q258532/
 	
 	=============================================================================
 	
+
+{% endraw %}

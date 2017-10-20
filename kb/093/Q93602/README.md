@@ -6,6 +6,8 @@ permalink: /kb/093/Q93602/
 
 ## Q93602: How to Disable F5 and F8 During Startup in MS-DOS
 
+{% raw %}
+
 	Article: Q93602
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -39,3 +41,5 @@ permalink: /kb/093/Q93602/
 	
 	=============================================================================
 	
+
+{% endraw %}

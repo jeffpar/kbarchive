@@ -6,6 +6,8 @@ permalink: /kb/059/Q59316/
 
 ## Q59316: Evaluating Floating-Point Values to Zero
 
+{% raw %}
+
 	Article: Q59316
 	Product(s): See article
 	Version(s): 5.10 6.00
@@ -56,3 +58,5 @@ permalink: /kb/059/Q59316/
 	          rz = rz * rz;
 	          i++;
 	    }
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177941/
 
 ## Q177941: 16-bit Windows Mail Client Slow on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q177941
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -62,3 +64,5 @@ permalink: /kb/177/Q177941/
 	
 	=============================================================================
 	
+
+{% endraw %}

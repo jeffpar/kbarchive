@@ -6,6 +6,8 @@ permalink: /kb/169/Q169570/
 
 ## Q169570: PPT7: Mouse Pointer Disappears After Editing Graph
 
+{% raw %}
+
 	Article: Q169570
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -93,3 +95,5 @@ permalink: /kb/169/Q169570/
 	
 	=============================================================================
 	
+
+{% endraw %}

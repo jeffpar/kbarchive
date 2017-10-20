@@ -6,6 +6,8 @@ permalink: /kb/293/Q293911/
 
 ## Q293911: SAMPLE: ABParam.exe Passes a BLOB Parameter with ATL
 
+{% raw %}
+
 	Article: Q293911
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0,6.0SP3,6.0sp4,6.0sp5
@@ -162,3 +164,5 @@ permalink: /kb/293/Q293911/
 	
 	=============================================================================
 	
+
+{% endraw %}

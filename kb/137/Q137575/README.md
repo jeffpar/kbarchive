@@ -6,6 +6,8 @@ permalink: /kb/137/Q137575/
 
 ## Q137575: Cannot Toggle NUMLOCK Key After Installing IntelliPoint v. 1.1
 
+{% raw %}
+
 	Article: Q137575
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.1,95
@@ -67,3 +69,5 @@ permalink: /kb/137/Q137575/
 	
 	=============================================================================
 	
+
+{% endraw %}

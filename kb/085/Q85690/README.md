@@ -6,6 +6,8 @@ permalink: /kb/085/Q85690/
 
 ## Q85690: Cannot Bold Device Fonts Unless the Device Supports Bold
 
+{% raw %}
+
 	Article: Q85690
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/085/Q85690/
 	
 	=============================================================================
 	
+
+{% endraw %}

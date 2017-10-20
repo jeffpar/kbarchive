@@ -6,6 +6,8 @@ permalink: /kb/142/Q142579/
 
 ## Q142579: XCLN: Setup/Attempt to Restart Fails on Windows NT
 
+{% raw %}
+
 	Article: Q142579
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -59,3 +61,5 @@ permalink: /kb/142/Q142579/
 	
 	=============================================================================
 	
+
+{% endraw %}

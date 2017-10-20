@@ -6,6 +6,8 @@ permalink: /kb/148/Q148349/
 
 ## Q148349: Basketball 95-96: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148349
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995-1996 edition
@@ -60,3 +62,5 @@ permalink: /kb/148/Q148349/
 	
 	=============================================================================
 	
+
+{% endraw %}

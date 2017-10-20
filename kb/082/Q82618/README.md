@@ -6,6 +6,8 @@ permalink: /kb/082/Q82618/
 
 ## Q82618: No Sound When Playing MIDI Files in Midisoft Studio
 
+{% raw %}
+
 	Article: Q82618
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/082/Q82618/
 	
 	=============================================================================
 	
+
+{% endraw %}

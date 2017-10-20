@@ -6,6 +6,8 @@ permalink: /kb/194/Q194881/
 
 ## Q194881: WinNT Router May Drop IP Packets While Awaiting ARP Response
 
+{% raw %}
+
 	Article: Q194881
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -81,3 +83,5 @@ permalink: /kb/194/Q194881/
 	
 	=============================================================================
 	
+
+{% endraw %}

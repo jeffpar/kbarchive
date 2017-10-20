@@ -6,6 +6,8 @@ permalink: /kb/042/Q42853/
 
 ## Q42853: Logically Same DOUBLE Precision Assignments, Different Results
 
+{% raw %}
+
 	Article: Q42853
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -100,3 +102,5 @@ permalink: /kb/042/Q42853/
 	A# =  3                   INT(A#) =  2    A# - INT(A#) =
 	                                                   .9999999999999996
 	A# =  4                   INT(A#) =  4    A# - INT(A#) =  0
+
+{% endraw %}

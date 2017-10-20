@@ -6,6 +6,8 @@ permalink: /kb/246/Q246136/
 
 ## Q246136: XADM: How to Increase Number of Exchange Server Tracking Logs
 
+{% raw %}
+
 	Article: Q246136
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -57,3 +59,5 @@ permalink: /kb/246/Q246136/
 	
 	=============================================================================
 	
+
+{% endraw %}

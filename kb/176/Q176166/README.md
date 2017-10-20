@@ -6,6 +6,8 @@ permalink: /kb/176/Q176166/
 
 ## Q176166: DOCFIX: RichTextBox OLEDragMode/OLEDropMode Defaults Incorrect
 
+{% raw %}
+
 	Article: Q176166
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/176/Q176166/
 	
 	=============================================================================
 	
+
+{% endraw %}

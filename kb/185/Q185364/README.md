@@ -6,6 +6,8 @@ permalink: /kb/185/Q185364/
 
 ## Q185364: Return of Arcade: Galaxian Does Not Include Bonus Levels
 
+{% raw %}
+
 	Article: Q185364
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -43,3 +45,5 @@ permalink: /kb/185/Q185364/
 	
 	=============================================================================
 	
+
+{% endraw %}

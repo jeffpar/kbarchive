@@ -6,6 +6,8 @@ permalink: /kb/066/Q66849/
 
 ## Q66849: ASD: Additional Objects Available
 
+{% raw %}
+
 	Article: Q66849
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/066/Q66849/
 	
 	=============================================================================
 	
+
+{% endraw %}

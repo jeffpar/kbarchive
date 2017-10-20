@@ -6,6 +6,8 @@ permalink: /kb/102/Q102432/
 
 ## Q102432: FIX: Incorrect RET Generated for PROC when EPILOGUE:NONE
 
+{% raw %}
+
 	Article: Q102432
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.1a
@@ -88,3 +90,5 @@ permalink: /kb/102/Q102432/
 	
 	=============================================================================
 	
+
+{% endraw %}

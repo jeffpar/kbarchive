@@ -6,6 +6,8 @@ permalink: /kb/181/Q181744/
 
 ## Q181744: FP: How to Change Where FrontPage Content is Stored in MS PWS
 
+{% raw %}
+
 	Article: Q181744
 	Product(s): Word Front Page
 	Version(s): 1.0,1.0a,4.0
@@ -157,3 +159,5 @@ permalink: /kb/181/Q181744/
 	
 	=============================================================================
 	
+
+{% endraw %}

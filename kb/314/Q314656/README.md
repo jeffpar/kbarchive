@@ -6,6 +6,8 @@ permalink: /kb/314/Q314656/
 
 ## Q314656: FIX: OLE DB Provider Can Fail After Updating 512 Records
 
+{% raw %}
+
 	Article: Q314656
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -106,3 +108,5 @@ permalink: /kb/314/Q314656/
 	
 	=============================================================================
 	
+
+{% endraw %}

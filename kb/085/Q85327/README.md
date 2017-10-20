@@ -6,6 +6,8 @@ permalink: /kb/085/Q85327/
 
 ## Q85327: Paste Link Option Not Available When File to Link Is Not Saved
 
+{% raw %}
+
 	Article: Q85327
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/085/Q85327/
 	
 	=============================================================================
 	
+
+{% endraw %}

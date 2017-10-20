@@ -6,6 +6,8 @@ permalink: /kb/071/Q71815/
 
 ## Q71815: Setting PSCRIPT.DRV to Print to an EPS File Isn't Saved
 
+{% raw %}
+
 	Article: Q71815
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,95
@@ -48,3 +50,5 @@ permalink: /kb/071/Q71815/
 	
 	=============================================================================
 	
+
+{% endraw %}

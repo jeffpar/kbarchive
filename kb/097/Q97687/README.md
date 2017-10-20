@@ -6,6 +6,8 @@ permalink: /kb/097/Q97687/
 
 ## Q97687: Starting Word for Windows with Template Other Than Normal
 
+{% raw %}
+
 	Article: Q97687
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/097/Q97687/
 	
 	=============================================================================
 	
+
+{% endraw %}

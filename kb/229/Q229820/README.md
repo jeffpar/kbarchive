@@ -6,6 +6,8 @@ permalink: /kb/229/Q229820/
 
 ## Q229820: Expedia Streets and Trips 2000: &quot;Runtime Error!&quot; When You Print
 
+{% raw %}
+
 	Article: Q229820
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -89,3 +91,5 @@ permalink: /kb/229/Q229820/
 	
 	=============================================================================
 	
+
+{% endraw %}

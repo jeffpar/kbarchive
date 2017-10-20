@@ -6,6 +6,8 @@ permalink: /kb/023/Q23308/
 
 ## Q23308: PRB: Debugging High Resolution EGA or VGA Graphics with CodeView
 
+{% raw %}
+
 	Article: Q23308
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.2,3.0,3.11,3.12,3.14,3.5,4.0,4.01,4.05,4.1
@@ -57,3 +59,5 @@ permalink: /kb/023/Q23308/
 	
 	=============================================================================
 	
+
+{% endraw %}

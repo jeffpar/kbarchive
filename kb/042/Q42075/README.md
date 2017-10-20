@@ -6,6 +6,8 @@ permalink: /kb/042/Q42075/
 
 ## Q42075: INFO: Next scanf/fscanf Apparently Is Skipped During Run Time
 
+{% raw %}
+
 	Article: Q42075
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,5.0,6.0
@@ -83,3 +85,5 @@ permalink: /kb/042/Q42075/
 	
 	=============================================================================
 	
+
+{% endraw %}

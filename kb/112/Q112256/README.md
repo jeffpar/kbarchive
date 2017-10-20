@@ -6,6 +6,8 @@ permalink: /kb/112/Q112256/
 
 ## Q112256: CONN: MACGATE Err Msg: Exiting...with Status 66
 
+{% raw %}
+
 	Article: Q112256
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0b
@@ -51,3 +53,5 @@ permalink: /kb/112/Q112256/
 	
 	=============================================================================
 	
+
+{% endraw %}

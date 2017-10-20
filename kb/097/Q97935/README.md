@@ -6,6 +6,8 @@ permalink: /kb/097/Q97935/
 
 ## Q97935: PC WFW: 3.0 Windows Client Disk 2 &#91;5.25, 1.2 MB&#93;
 
+{% raw %}
+
 	Article: Q97935
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/097/Q97935/
 	
 	=============================================================================
 	
+
+{% endraw %}

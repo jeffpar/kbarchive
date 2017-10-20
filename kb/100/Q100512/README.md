@@ -6,6 +6,8 @@ permalink: /kb/100/Q100512/
 
 ## Q100512: SMTP: Err Msg: SMTP_recv:system error
 
+{% raw %}
+
 	Article: Q100512
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -47,3 +49,5 @@ permalink: /kb/100/Q100512/
 	
 	=============================================================================
 	
+
+{% endraw %}

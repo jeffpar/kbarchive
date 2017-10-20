@@ -6,6 +6,8 @@ permalink: /kb/118/Q118952/
 
 ## Q118952: &quot;Cannot Open File&quot; Error Occurs When Trying to Start Falcon 3
 
+{% raw %}
+
 	Article: Q118952
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/118/Q118952/
 	
 	=============================================================================
 	
+
+{% endraw %}

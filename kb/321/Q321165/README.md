@@ -6,6 +6,8 @@ permalink: /kb/321/Q321165/
 
 ## Q321165: XADM: 0xc00206fc Error When Viewing Permissions in Admin Program
 
+{% raw %}
+
 	Article: Q321165
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -83,3 +85,5 @@ permalink: /kb/321/Q321165/
 	
 	=============================================================================
 	
+
+{% endraw %}

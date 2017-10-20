@@ -6,6 +6,8 @@ permalink: /kb/199/Q199760/
 
 ## Q199760: XADM: Prompt for Password When Re-enrolling in Advanced Security
 
+{% raw %}
+
 	Article: Q199760
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/199/Q199760/
 	
 	=============================================================================
 	
+
+{% endraw %}

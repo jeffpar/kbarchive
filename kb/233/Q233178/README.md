@@ -6,6 +6,8 @@ permalink: /kb/233/Q233178/
 
 ## Q233178: Third-Party Monitoring Programs Monitor Applications and Ports
 
+{% raw %}
+
 	Article: Q233178
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,4.0
@@ -71,3 +73,5 @@ permalink: /kb/233/Q233178/
 	
 	=============================================================================
 	
+
+{% endraw %}

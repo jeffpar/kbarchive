@@ -6,6 +6,8 @@ permalink: /kb/130/Q130521/
 
 ## Q130521: Novell Password Cached and Login Script Processed Only Once
 
+{% raw %}
+
 	Article: Q130521
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/130/Q130521/
 	
 	=============================================================================
 	
+
+{% endraw %}

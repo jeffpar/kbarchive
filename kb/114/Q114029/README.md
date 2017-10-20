@@ -6,6 +6,8 @@ permalink: /kb/114/Q114029/
 
 ## Q114029: PC WSPlus: Set Access Privileges Option Unavailable/Disabled
 
+{% raw %}
+
 	Article: Q114029
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a,3.11
@@ -64,3 +66,5 @@ permalink: /kb/114/Q114029/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95937/
 
 ## Q95937: DLL That is Callable from Microsoft Setup Script
 
+{% raw %}
+
 	Article: Q95937
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -65,3 +67,5 @@ permalink: /kb/095/Q95937/
 	
 	=============================================================================
 	
+
+{% endraw %}

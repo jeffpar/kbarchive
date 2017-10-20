@@ -6,6 +6,8 @@ permalink: /kb/073/Q73608/
 
 ## Q73608: Disk Manager 3.x Requires MS-DOS 3.x Bootable Disk
 
+{% raw %}
+
 	Article: Q73608
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.2,3.21,3.3,3.3a,4.0,4.01,4.01a,5.0
@@ -72,3 +74,5 @@ permalink: /kb/073/Q73608/
 	
 	=============================================================================
 	
+
+{% endraw %}

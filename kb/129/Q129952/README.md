@@ -6,6 +6,8 @@ permalink: /kb/129/Q129952/
 
 ## Q129952: PC NTMMTA: No Limitations on Memory Management
 
+{% raw %}
+
 	Article: Q129952
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -57,3 +59,5 @@ permalink: /kb/129/Q129952/
 	
 	=============================================================================
 	
+
+{% endraw %}

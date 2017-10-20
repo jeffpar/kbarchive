@@ -6,6 +6,8 @@ permalink: /kb/162/Q162972/
 
 ## Q162972: Troubleshooting Tape Backup Issues in Windows NT
 
+{% raw %}
+
 	Article: Q162972
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -302,3 +304,5 @@ permalink: /kb/162/Q162972/
 	
 	=============================================================================
 	
+
+{% endraw %}

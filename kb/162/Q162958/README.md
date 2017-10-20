@@ -6,6 +6,8 @@ permalink: /kb/162/Q162958/
 
 ## Q162958: FIX: Format of the Password Parameter for CompactDatabase
 
+{% raw %}
+
 	Article: Q162958
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2 5.0
@@ -106,3 +108,5 @@ permalink: /kb/162/Q162958/
 	
 	=============================================================================
 	
+
+{% endraw %}

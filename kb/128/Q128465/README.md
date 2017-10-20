@@ -6,6 +6,8 @@ permalink: /kb/128/Q128465/
 
 ## Q128465: How to Obtain Windows NT Version 3.51 U.S. Service Pack
 
+{% raw %}
+
 	Article: Q128465
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP5
@@ -116,3 +118,5 @@ permalink: /kb/128/Q128465/
 	
 	=============================================================================
 	
+
+{% endraw %}

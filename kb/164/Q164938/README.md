@@ -6,6 +6,8 @@ permalink: /kb/164/Q164938/
 
 ## Q164938: Event Logging Frozen While Doing Heavy Logging
 
+{% raw %}
+
 	Article: Q164938
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164938/
 	
 	=============================================================================
 	
+
+{% endraw %}

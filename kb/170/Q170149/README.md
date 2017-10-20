@@ -6,6 +6,8 @@ permalink: /kb/170/Q170149/
 
 ## Q170149: PRB: Recordset Name Property is Limited to 256 Characters
 
+{% raw %}
+
 	Article: Q170149
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -114,3 +116,5 @@ permalink: /kb/170/Q170149/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135929/
 
 ## Q135929: PC Adm: Do Not Use CONTROL.EXE from the July TechNet CD
 
+{% raw %}
+
 	Article: Q135929
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2
@@ -45,3 +47,5 @@ permalink: /kb/135/Q135929/
 	
 	=============================================================================
 	
+
+{% endraw %}

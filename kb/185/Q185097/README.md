@@ -6,6 +6,8 @@ permalink: /kb/185/Q185097/
 
 ## Q185097: SNA Server Does not Support Compression across 3270/FMI
 
+{% raw %}
+
 	Article: Q185097
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -76,3 +78,5 @@ permalink: /kb/185/Q185097/
 	
 	=============================================================================
 	
+
+{% endraw %}

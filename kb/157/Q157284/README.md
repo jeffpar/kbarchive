@@ -6,6 +6,8 @@ permalink: /kb/157/Q157284/
 
 ## Q157284: STL Sample for the upper_bound Function
 
+{% raw %}
+
 	Article: Q157284
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:; :4.2
@@ -152,3 +154,5 @@ permalink: /kb/157/Q157284/
 	
 	=============================================================================
 	
+
+{% endraw %}

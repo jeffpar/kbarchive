@@ -6,6 +6,8 @@ permalink: /kb/172/Q172324/
 
 ## Q172324: Unable to Print to AppleTalk Printer
 
+{% raw %}
+
 	Article: Q172324
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS NT:3.51,4.0
@@ -66,3 +68,5 @@ permalink: /kb/172/Q172324/
 	
 	=============================================================================
 	
+
+{% endraw %}

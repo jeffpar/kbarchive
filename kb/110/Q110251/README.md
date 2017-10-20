@@ -6,6 +6,8 @@ permalink: /kb/110/Q110251/
 
 ## Q110251: COMMAND Key in FoxPro for Mac Is Treated Same as CTRL Key
 
+{% raw %}
+
 	Article: Q110251
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -35,3 +37,5 @@ permalink: /kb/110/Q110251/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171596/
 
 ## Q171596: WD97: ErrMsg in Letter and Envelope Mail Merge w/ Excel DDE Data
 
+{% raw %}
+
 	Article: Q171596
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -121,3 +123,5 @@ permalink: /kb/171/Q171596/
 	
 	=============================================================================
 	
+
+{% endraw %}

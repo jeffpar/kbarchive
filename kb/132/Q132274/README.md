@@ -6,6 +6,8 @@ permalink: /kb/132/Q132274/
 
 ## Q132274: Installing MS Plus! Does Not Prevent Windows 95 Uninstall
 
+{% raw %}
+
 	Article: Q132274
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; Win2000:95
@@ -104,3 +106,5 @@ permalink: /kb/132/Q132274/
 	
 	=============================================================================
 	
+
+{% endraw %}

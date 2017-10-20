@@ -6,6 +6,8 @@ permalink: /kb/158/Q158078/
 
 ## Q158078: Configuring an HP JetDirect EX Plus 3 Interface Card
 
+{% raw %}
+
 	Article: Q158078
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/158/Q158078/
 	
 	=============================================================================
 	
+
+{% endraw %}

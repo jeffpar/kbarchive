@@ -6,6 +6,8 @@ permalink: /kb/272/Q272420/
 
 ## Q272420: BUG: ComboBox Text Is Missing When DoEvents Is in GotFocus Event
 
+{% raw %}
+
 	Article: Q272420
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,95,98
@@ -114,3 +116,5 @@ permalink: /kb/272/Q272420/
 	
 	=============================================================================
 	
+
+{% endraw %}

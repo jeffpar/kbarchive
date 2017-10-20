@@ -6,6 +6,8 @@ permalink: /kb/047/Q47753/
 
 ## Q47753: List of Run-Time Error Numbers and Messages for QuickBasic
 
+{% raw %}
+
 	Article: Q47753
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.00,1.01,1.02,2.00,2.01,3.00,4.00,4.00b,4.50; :6.0,6.0b,7.0
@@ -120,3 +122,5 @@ permalink: /kb/047/Q47753/
 	
 	=============================================================================
 	
+
+{% endraw %}

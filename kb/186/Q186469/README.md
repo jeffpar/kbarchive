@@ -6,6 +6,8 @@ permalink: /kb/186/Q186469/
 
 ## Q186469: PRB: Rights from Parent Project not Inherited
 
+{% raw %}
+
 	Article: Q186469
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0
@@ -86,3 +88,5 @@ permalink: /kb/186/Q186469/
 	
 	=============================================================================
 	
+
+{% endraw %}

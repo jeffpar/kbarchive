@@ -6,6 +6,8 @@ permalink: /kb/134/Q134570/
 
 ## Q134570: Network Adapter Errors Using Proteon 1346 ISA TokenRing Card
 
+{% raw %}
+
 	Article: Q134570
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -53,3 +55,5 @@ permalink: /kb/134/Q134570/
 	
 	=============================================================================
 	
+
+{% endraw %}

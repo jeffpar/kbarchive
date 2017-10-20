@@ -6,6 +6,8 @@ permalink: /kb/162/Q162569/
 
 ## Q162569: Monster Truck Madness: Patch is for the English Version Only
 
+{% raw %}
+
 	Article: Q162569
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -70,3 +72,5 @@ permalink: /kb/162/Q162569/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162440/
 
 ## Q162440: WD97: BuiltInDocumentProperties Returns Incorrect Page Count
 
+{% raw %}
+
 	Article: Q162440
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/162/Q162440/
 	
 	=============================================================================
 	
+
+{% endraw %}

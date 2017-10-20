@@ -6,6 +6,8 @@ permalink: /kb/171/Q171731/
 
 ## Q171731: DOC: LoadResData Function Does Not Support All Formats
 
+{% raw %}
+
 	Article: Q171731
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/171/Q171731/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132383/
 
 ## Q132383: PPT7: Colors and Shaded Fills Dither in PowerPoint
 
+{% raw %}
+
 	Article: Q132383
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -63,3 +65,5 @@ permalink: /kb/132/Q132383/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163195/
 
 ## Q163195: PPT: Sample Code to Copy Slide to Different Presentation
 
+{% raw %}
+
 	Article: Q163195
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -295,3 +297,5 @@ permalink: /kb/163/Q163195/
 	
 	=============================================================================
 	
+
+{% endraw %}

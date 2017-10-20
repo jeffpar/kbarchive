@@ -6,6 +6,8 @@ permalink: /kb/289/Q289848/
 
 ## Q289848: Profiles Are Not Saved To the Roaming Profile Location on NT 4.0
 
+{% raw %}
+
 	Article: Q289848
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4,4.0 SP5
@@ -68,3 +70,5 @@ permalink: /kb/289/Q289848/
 	
 	=============================================================================
 	
+
+{% endraw %}

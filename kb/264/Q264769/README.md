@@ -6,6 +6,8 @@ permalink: /kb/264/Q264769/
 
 ## Q264769: Event ID 576 Fills the Security Event Log When Auditing
 
+{% raw %}
+
 	Article: Q264769
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -99,3 +101,5 @@ permalink: /kb/264/Q264769/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181293/
 
 ## Q181293: WD97: Jumping to a Bookmark Located in a Header or Footer
 
+{% raw %}
+
 	Article: Q181293
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -86,3 +88,5 @@ permalink: /kb/181/Q181293/
 	
 	=============================================================================
 	
+
+{% endraw %}

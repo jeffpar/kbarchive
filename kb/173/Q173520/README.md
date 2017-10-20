@@ -6,6 +6,8 @@ permalink: /kb/173/Q173520/
 
 ## Q173520: Documentation Error in Migration Tool for NetWare
 
+{% raw %}
+
 	Article: Q173520
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -52,3 +54,5 @@ permalink: /kb/173/Q173520/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156143/
 
 ## Q156143: FIX: Execute SQL Button Does Not Show Change to Stop Execute
 
+{% raw %}
+
 	Article: Q156143
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2
@@ -55,3 +57,5 @@ permalink: /kb/156/Q156143/
 	
 	=============================================================================
 	
+
+{% endraw %}

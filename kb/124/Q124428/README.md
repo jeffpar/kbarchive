@@ -6,6 +6,8 @@ permalink: /kb/124/Q124428/
 
 ## Q124428: NE2000 and Panasonic CD-ROM Fails when Used Simultaneously
 
+{% raw %}
+
 	Article: Q124428
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -125,3 +127,5 @@ permalink: /kb/124/Q124428/
 	
 	=============================================================================
 	
+
+{% endraw %}

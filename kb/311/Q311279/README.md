@@ -6,6 +6,8 @@ permalink: /kb/311/Q311279/
 
 ## Q311279: SMS: Wuser32.exe ErrMsg Shutting Down Windows XP SMS Client
 
+{% raw %}
+
 	Article: Q311279
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -57,3 +59,5 @@ permalink: /kb/311/Q311279/
 	
 	=============================================================================
 	
+
+{% endraw %}

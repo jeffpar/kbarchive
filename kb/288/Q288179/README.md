@@ -6,6 +6,8 @@ permalink: /kb/288/Q288179/
 
 ## Q288179: Computer Hangs Randomly with NTFS and Cache Manager
 
+{% raw %}
+
 	Article: Q288179
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -84,3 +86,5 @@ permalink: /kb/288/Q288179/
 	
 	=============================================================================
 	
+
+{% endraw %}

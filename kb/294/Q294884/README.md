@@ -6,6 +6,8 @@ permalink: /kb/294/Q294884/
 
 ## Q294884: TN3270 and TN5250 Emulators Only Supported Through TN Service
 
+{% raw %}
+
 	Article: Q294884
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -89,3 +91,5 @@ permalink: /kb/294/Q294884/
 	
 	=============================================================================
 	
+
+{% endraw %}

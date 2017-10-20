@@ -6,6 +6,8 @@ permalink: /kb/168/Q168249/
 
 ## Q168249: Availability of Printer Driver for HP OfficeJet Printer
 
+{% raw %}
+
 	Article: Q168249
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -51,3 +53,5 @@ permalink: /kb/168/Q168249/
 	
 	=============================================================================
 	
+
+{% endraw %}

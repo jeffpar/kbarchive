@@ -6,6 +6,8 @@ permalink: /kb/221/Q221514/
 
 ## Q221514: HSE_REQ_GET_CERT_INFO_EX Not Exposed in ServerSupportFunction
 
+{% raw %}
+
 	Article: Q221514
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -105,3 +107,5 @@ permalink: /kb/221/Q221514/
 	
 	=============================================================================
 	
+
+{% endraw %}

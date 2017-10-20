@@ -6,6 +6,8 @@ permalink: /kb/150/Q150010/
 
 ## Q150010: XCLN: MS Mail Service May Not be Available for Win3.x Clients
 
+{% raw %}
+
 	Article: Q150010
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -84,3 +86,5 @@ permalink: /kb/150/Q150010/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172313/
 
 ## Q172313: FIX: Using ODBCDirect, Transactions and Oracle Causes Hang
 
+{% raw %}
+
 	Article: Q172313
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -147,3 +149,5 @@ permalink: /kb/172/Q172313/
 	
 	=============================================================================
 	
+
+{% endraw %}

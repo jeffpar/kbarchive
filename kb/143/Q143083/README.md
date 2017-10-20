@@ -6,6 +6,8 @@ permalink: /kb/143/Q143083/
 
 ## Q143083: FIX: C2664 When Array Is Passed as a Parameter to a Function
 
+{% raw %}
+
 	Article: Q143083
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -78,3 +80,5 @@ permalink: /kb/143/Q143083/
 	
 	=============================================================================
 	
+
+{% endraw %}

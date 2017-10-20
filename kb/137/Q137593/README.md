@@ -6,6 +6,8 @@ permalink: /kb/137/Q137593/
 
 ## Q137593: Cannot Insert Object as Icon in Fax Cover Page Editor
 
+{% raw %}
+
 	Article: Q137593
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -42,3 +44,5 @@ permalink: /kb/137/Q137593/
 	
 	=============================================================================
 	
+
+{% endraw %}

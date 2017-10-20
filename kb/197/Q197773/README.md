@@ -6,6 +6,8 @@ permalink: /kb/197/Q197773/
 
 ## Q197773: WD97: Cannot Replace All Occurrences of Invalid MERGEFIELD Field
 
+{% raw %}
+
 	Article: Q197773
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/197/Q197773/
 	
 	=============================================================================
 	
+
+{% endraw %}

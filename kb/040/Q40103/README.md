@@ -6,6 +6,8 @@ permalink: /kb/040/Q40103/
 
 ## Q40103: QuickC 2.00's In-Line Assembler
 
+{% raw %}
+
 	Article: Q40103
 	Product(s): See article
 	Version(s): 2.00
@@ -46,3 +48,5 @@ permalink: /kb/040/Q40103/
 	fragment:
 	
 	    _asm    mov  ah, 5   _asm   mov  al, 1    _asm  int 10h
+
+{% endraw %}

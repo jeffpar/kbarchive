@@ -6,6 +6,8 @@ permalink: /kb/286/Q286580/
 
 ## Q286580: Slow Performance Transferring Data with SNA DB2OLEDB Driver
 
+{% raw %}
+
 	Article: Q286580
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP4
@@ -121,3 +123,5 @@ permalink: /kb/286/Q286580/
 	
 	=============================================================================
 	
+
+{% endraw %}

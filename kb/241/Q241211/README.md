@@ -6,6 +6,8 @@ permalink: /kb/241/Q241211/
 
 ## Q241211: List of Bugs Fixed in Windows NT 4.0 Service Pack 6/6a (Part 1)
 
+{% raw %}
+
 	Article: Q241211
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6,4.0 SP6a
@@ -329,3 +331,5 @@ permalink: /kb/241/Q241211/
 	
 	=============================================================================
 	
+
+{% endraw %}

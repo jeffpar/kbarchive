@@ -6,6 +6,8 @@ permalink: /kb/174/Q174397/
 
 ## Q174397: Hewlett Packard NetRAID Card May Require Updated Firmware
 
+{% raw %}
+
 	Article: Q174397
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/174/Q174397/
 	
 	=============================================================================
 	
+
+{% endraw %}

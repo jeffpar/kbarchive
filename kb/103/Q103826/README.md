@@ -6,6 +6,8 @@ permalink: /kb/103/Q103826/
 
 ## Q103826: User Authentication Fails on LAN Manager Client
 
+{% raw %}
+
 	Article: Q103826
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -85,3 +87,5 @@ permalink: /kb/103/Q103826/
 	
 	=============================================================================
 	
+
+{% endraw %}

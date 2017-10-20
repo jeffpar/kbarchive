@@ -6,6 +6,8 @@ permalink: /kb/256/Q256817/
 
 ## Q256817: MapPoint 2001: Linked Data Is Not Mapped Properly
 
+{% raw %}
+
 	Article: Q256817
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/256/Q256817/
 	
 	=============================================================================
 	
+
+{% endraw %}

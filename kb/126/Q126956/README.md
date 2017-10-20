@@ -6,6 +6,8 @@ permalink: /kb/126/Q126956/
 
 ## Q126956: How to Return a Value from a Form
 
+{% raw %}
+
 	Article: Q126956
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -93,3 +95,5 @@ permalink: /kb/126/Q126956/
 	
 	=============================================================================
 	
+
+{% endraw %}

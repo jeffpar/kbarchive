@@ -6,6 +6,8 @@ permalink: /kb/151/Q151848/
 
 ## Q151848: Join Microsoft's FoxPro Add-On Component Builder Program
 
+{% raw %}
+
 	Article: Q151848
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a; MS-DOS:2.0,2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:2.5,2.5a
@@ -56,3 +58,5 @@ permalink: /kb/151/Q151848/
 	
 	=============================================================================
 	
+
+{% endraw %}

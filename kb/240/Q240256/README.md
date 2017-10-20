@@ -6,6 +6,8 @@ permalink: /kb/240/Q240256/
 
 ## Q240256: Understanding COM+ Comments and Corrections
 
+{% raw %}
+
 	Article: Q240256
 	Product(s): Microsoft Press
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/240/Q240256/
 	
 	=============================================================================
 	
+
+{% endraw %}

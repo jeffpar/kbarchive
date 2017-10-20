@@ -6,6 +6,8 @@ permalink: /kb/129/Q129648/
 
 ## Q129648: Calling a Form as If It Were a Function to Return a Value
 
+{% raw %}
+
 	Article: Q129648
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -105,3 +107,5 @@ permalink: /kb/129/Q129648/
 	
 	=============================================================================
 	
+
+{% endraw %}

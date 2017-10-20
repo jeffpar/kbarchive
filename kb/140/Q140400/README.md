@@ -6,6 +6,8 @@ permalink: /kb/140/Q140400/
 
 ## Q140400: GSNW/CSNW Creates 8.3-Format Directory Names in Uppercase Only
 
+{% raw %}
+
 	Article: Q140400
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,2000 SP2,3.51,4.0
@@ -97,3 +99,5 @@ permalink: /kb/140/Q140400/
 	
 	=============================================================================
 	
+
+{% endraw %}

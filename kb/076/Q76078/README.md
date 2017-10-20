@@ -6,6 +6,8 @@ permalink: /kb/076/Q76078/
 
 ## Q76078: FIX: Error A2114 When Using OPTION PROLOGUE
 
+{% raw %}
+
 	Article: Q76078
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -92,3 +94,5 @@ permalink: /kb/076/Q76078/
 	
 	=============================================================================
 	
+
+{% endraw %}

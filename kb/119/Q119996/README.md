@@ -6,6 +6,8 @@ permalink: /kb/119/Q119996/
 
 ## Q119996: Muliple Access of Clipper Index File Causes Corruption
 
+{% raw %}
+
 	Article: Q119996
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5
@@ -53,3 +55,5 @@ permalink: /kb/119/Q119996/
 	
 	=============================================================================
 	
+
+{% endraw %}

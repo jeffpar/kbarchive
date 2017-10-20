@@ -6,6 +6,8 @@ permalink: /kb/061/Q61346/
 
 ## Q61346: Dynamic Array Using INT in FOR Loop Returns Bad Results
 
+{% raw %}
+
 	Article: Q61346
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -65,3 +67,5 @@ permalink: /kb/061/Q61346/
 	
 	   1
 	   2
+
+{% endraw %}

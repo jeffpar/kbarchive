@@ -6,6 +6,8 @@ permalink: /kb/235/Q235739/
 
 ## Q235739: SMS: Intel P3 CPU Name Incorrectly Reported
 
+{% raw %}
+
 	Article: Q235739
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -56,3 +58,5 @@ permalink: /kb/235/Q235739/
 	
 	=============================================================================
 	
+
+{% endraw %}

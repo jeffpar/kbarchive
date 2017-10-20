@@ -6,6 +6,8 @@ permalink: /kb/246/Q246086/
 
 ## Q246086: XADM: Exchange Service Pack Stops with 0xc0020003 or 0xc0020002
 
+{% raw %}
+
 	Article: Q246086
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -80,3 +82,5 @@ permalink: /kb/246/Q246086/
 	
 	=============================================================================
 	
+
+{% endraw %}

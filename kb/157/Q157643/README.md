@@ -6,6 +6,8 @@ permalink: /kb/157/Q157643/
 
 ## Q157643: XCLN: Installing the Microsoft Exchange MS-DOS Client
 
+{% raw %}
+
 	Article: Q157643
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -43,3 +45,5 @@ permalink: /kb/157/Q157643/
 	
 	=============================================================================
 	
+
+{% endraw %}

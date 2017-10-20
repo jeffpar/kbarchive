@@ -6,6 +6,8 @@ permalink: /kb/248/Q248747/
 
 ## Q248747: Error Message: STOP 0x00000041 MUST_SUCCEED_POOL_EMPTY
 
+{% raw %}
+
 	Article: Q248747
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/248/Q248747/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104616/
 
 ## Q104616: INFO: Sharing Common C Types with MASM
 
+{% raw %}
+
 	Article: Q104616
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -155,3 +157,5 @@ permalink: /kb/104/Q104616/
 	
 	=============================================================================
 	
+
+{% endraw %}

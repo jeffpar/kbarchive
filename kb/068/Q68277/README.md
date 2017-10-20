@@ -6,6 +6,8 @@ permalink: /kb/068/Q68277/
 
 ## Q68277: ASD: Manual Installation
 
+{% raw %}
+
 	Article: Q68277
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/068/Q68277/
 	
 	=============================================================================
 	
+
+{% endraw %}

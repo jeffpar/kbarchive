@@ -6,6 +6,8 @@ permalink: /kb/192/Q192912/
 
 ## Q192912: PRB: MSDev Doesn't Close When COM Reference Count Is Zero
 
+{% raw %}
+
 	Article: Q192912
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.1,5.0,6.0,97
@@ -122,3 +124,5 @@ permalink: /kb/192/Q192912/
 	
 	=============================================================================
 	
+
+{% endraw %}

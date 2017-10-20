@@ -6,6 +6,8 @@ permalink: /kb/166/Q166180/
 
 ## Q166180: PRB: Certain Settings Of MaxLength Property Closes Visual FoxPro
 
+{% raw %}
+
 	Article: Q166180
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -118,3 +120,5 @@ permalink: /kb/166/Q166180/
 	
 	=============================================================================
 	
+
+{% endraw %}

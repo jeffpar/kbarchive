@@ -6,6 +6,8 @@ permalink: /kb/149/Q149526/
 
 ## Q149526: &quot;Access Denied&quot; When Using DIR Command on a NetWare Server
 
+{% raw %}
+
 	Article: Q149526
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -49,3 +51,5 @@ permalink: /kb/149/Q149526/
 	
 	=============================================================================
 	
+
+{% endraw %}

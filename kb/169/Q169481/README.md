@@ -6,6 +6,8 @@ permalink: /kb/169/Q169481/
 
 ## Q169481: XADM: MTA Doesn't Start After Upgrading 4.0 SP3 to 5.0
 
+{% raw %}
+
 	Article: Q169481
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -53,3 +55,5 @@ permalink: /kb/169/Q169481/
 	
 	=============================================================================
 	
+
+{% endraw %}

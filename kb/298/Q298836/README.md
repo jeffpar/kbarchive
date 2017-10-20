@@ -6,6 +6,8 @@ permalink: /kb/298/Q298836/
 
 ## Q298836: XIMS: Exchange Server 5.5 Generates Error Messages
 
+{% raw %}
+
 	Article: Q298836
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -92,3 +94,5 @@ permalink: /kb/298/Q298836/
 	
 	=============================================================================
 	
+
+{% endraw %}

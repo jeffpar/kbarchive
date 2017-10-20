@@ -6,6 +6,8 @@ permalink: /kb/252/Q252809/
 
 ## Q252809: Streets and Trips 2001: Unable to Configure Your GPS Receiver
 
+{% raw %}
+
 	Article: Q252809
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/252/Q252809/
 	
 	=============================================================================
 	
+
+{% endraw %}

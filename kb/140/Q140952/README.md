@@ -6,6 +6,8 @@ permalink: /kb/140/Q140952/
 
 ## Q140952: XCLN: Toolbar Buttons Missing After Upgrade from 16
 
+{% raw %}
+
 	Article: Q140952
 	Product(s): Microsoft Exchange
 	Version(s): 4.00
@@ -56,3 +58,5 @@ permalink: /kb/140/Q140952/
 	
 	=============================================================================
 	
+
+{% endraw %}

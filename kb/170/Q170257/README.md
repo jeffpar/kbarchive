@@ -6,6 +6,8 @@ permalink: /kb/170/Q170257/
 
 ## Q170257: FIX: CRecordset::AddNew Inserts 32484 Into int Fields (RFX_INT)
 
+{% raw %}
+
 	Article: Q170257
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -156,3 +158,5 @@ permalink: /kb/170/Q170257/
 	
 	=============================================================================
 	
+
+{% endraw %}

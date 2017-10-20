@@ -6,6 +6,8 @@ permalink: /kb/180/Q180114/
 
 ## Q180114: Netlogon Event ID 5770 and 5722 on Primary Domain Controller
 
+{% raw %}
+
 	Article: Q180114
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.51,4.0
@@ -107,3 +109,5 @@ permalink: /kb/180/Q180114/
 	
 	=============================================================================
 	
+
+{% endraw %}

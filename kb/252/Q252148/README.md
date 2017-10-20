@@ -6,6 +6,8 @@ permalink: /kb/252/Q252148/
 
 ## Q252148: How to Troubleshoot ETRN Using Telnet
 
+{% raw %}
+
 	Article: Q252148
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0a,4.5,5.5
@@ -116,3 +118,5 @@ permalink: /kb/252/Q252148/
 	
 	=============================================================================
 	
+
+{% endraw %}

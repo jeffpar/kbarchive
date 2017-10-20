@@ -6,6 +6,8 @@ permalink: /kb/161/Q161830/
 
 ## Q161830: Message from Unix Using Smbclient w/ Long Username Crashes
 
+{% raw %}
+
 	Article: Q161830
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/161/Q161830/
 	
 	=============================================================================
 	
+
+{% endraw %}

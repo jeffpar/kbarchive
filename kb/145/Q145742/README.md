@@ -6,6 +6,8 @@ permalink: /kb/145/Q145742/
 
 ## Q145742: File Structure and Contents of .VCX and .SCX Files
 
+{% raw %}
+
 	Article: Q145742
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -225,3 +227,5 @@ permalink: /kb/145/Q145742/
 	
 	=============================================================================
 	
+
+{% endraw %}

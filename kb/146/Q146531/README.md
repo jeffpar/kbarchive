@@ -6,6 +6,8 @@ permalink: /kb/146/Q146531/
 
 ## Q146531: XCLN: Modified OLE Object Changes Back to Original State
 
+{% raw %}
+
 	Article: Q146531
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146531/
 	
 	=============================================================================
 	
+
+{% endraw %}

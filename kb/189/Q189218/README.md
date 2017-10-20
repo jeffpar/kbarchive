@@ -6,6 +6,8 @@ permalink: /kb/189/Q189218/
 
 ## Q189218: Windows 98 Companion Comments and Corrections
 
+{% raw %}
+
 	Article: Q189218
 	Product(s): Microsoft Press
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/189/Q189218/
 	
 	=============================================================================
 	
+
+{% endraw %}

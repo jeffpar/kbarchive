@@ -6,6 +6,8 @@ permalink: /kb/149/Q149609/
 
 ## Q149609: How to Search for Duplicate Character Strings
 
+{% raw %}
+
 	Article: Q149609
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -70,3 +72,5 @@ permalink: /kb/149/Q149609/
 	
 	=============================================================================
 	
+
+{% endraw %}

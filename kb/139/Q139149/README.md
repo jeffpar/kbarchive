@@ -6,6 +6,8 @@ permalink: /kb/139/Q139149/
 
 ## Q139149: PPT7: Troubleshooting Video Driver UMA Conflicts
 
+{% raw %}
+
 	Article: Q139149
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -72,3 +74,5 @@ permalink: /kb/139/Q139149/
 	
 	=============================================================================
 	
+
+{% endraw %}

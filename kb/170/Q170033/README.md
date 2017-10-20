@@ -6,6 +6,8 @@ permalink: /kb/170/Q170033/
 
 ## Q170033: XADM: Individual Public Folder Age Limits Overridden
 
+{% raw %}
+
 	Article: Q170033
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/170/Q170033/
 	
 	=============================================================================
 	
+
+{% endraw %}

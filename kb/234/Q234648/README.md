@@ -6,6 +6,8 @@ permalink: /kb/234/Q234648/
 
 ## Q234648: BUG: WinCE Toolkit for Visual C++ 6.0 Forces a Rebuild All
 
+{% raw %}
+
 	Article: Q234648
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -70,3 +72,5 @@ permalink: /kb/234/Q234648/
 	
 	=============================================================================
 	
+
+{% endraw %}

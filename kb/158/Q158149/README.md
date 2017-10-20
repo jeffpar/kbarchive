@@ -6,6 +6,8 @@ permalink: /kb/158/Q158149/
 
 ## Q158149: MediaVision ThunderBoard Listed as Sound Blaster
 
+{% raw %}
+
 	Article: Q158149
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/158/Q158149/
 	
 	=============================================================================
 	
+
+{% endraw %}

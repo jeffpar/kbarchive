@@ -6,6 +6,8 @@ permalink: /kb/136/Q136019/
 
 ## Q136019: FAQ: Visual SourceSafe Integration with Visual C++ 4.0
 
+{% raw %}
+
 	Article: Q136019
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0,6.0
@@ -119,3 +121,5 @@ permalink: /kb/136/Q136019/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/035/Q35245/
 
 ## Q35245: Fixed-Length Strings Are Initialized to NULL (0), Not Blanks
 
+{% raw %}
+
 	Article: Q35245
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -57,3 +59,5 @@ permalink: /kb/035/Q35245/
 	j equals CHR$(0) + CHR$(0) + CHR$(0) + CHR$(0).
 	j does not equal "" or "    ".
 	But if I set j to "" then j will equal "    ".
+
+{% endraw %}

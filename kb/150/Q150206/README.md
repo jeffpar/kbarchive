@@ -6,6 +6,8 @@ permalink: /kb/150/Q150206/
 
 ## Q150206: BUG: DBGrid on a Modal Form Can Cause a Program to Hang
 
+{% raw %}
+
 	Article: Q150206
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -175,3 +177,5 @@ permalink: /kb/150/Q150206/
 	
 	=============================================================================
 	
+
+{% endraw %}

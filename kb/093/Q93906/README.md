@@ -6,6 +6,8 @@ permalink: /kb/093/Q93906/
 
 ## Q93906: PhonenetTalk Version 3.0 Required with Windows 3.1
 
+{% raw %}
+
 	Article: Q93906
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/093/Q93906/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181534/
 
 ## Q181534: WD97: Add Button Unavailable for Insert/Bookmark
 
+{% raw %}
+
 	Article: Q181534
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -110,3 +112,5 @@ permalink: /kb/181/Q181534/
 	
 	=============================================================================
 	
+
+{% endraw %}

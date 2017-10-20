@@ -6,6 +6,8 @@ permalink: /kb/059/Q59978/
 
 ## Q59978: Mac Hyp: Setting the Return Receipt Flag for a Message
 
+{% raw %}
+
 	Article: Q59978
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -45,3 +47,5 @@ permalink: /kb/059/Q59978/
 	
 	=============================================================================
 	
+
+{% endraw %}

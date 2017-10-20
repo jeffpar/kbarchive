@@ -6,6 +6,8 @@ permalink: /kb/182/Q182652/
 
 ## Q182652: Memory Leak When Transactional Method Fails Before Connect
 
+{% raw %}
+
 	Article: Q182652
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -71,3 +73,5 @@ permalink: /kb/182/Q182652/
 	
 	=============================================================================
 	
+
+{% endraw %}

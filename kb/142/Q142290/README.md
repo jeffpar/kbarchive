@@ -6,6 +6,8 @@ permalink: /kb/142/Q142290/
 
 ## Q142290: FIX: Printer Error When Printing from RTF Control
 
+{% raw %}
+
 	Article: Q142290
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -118,3 +120,5 @@ permalink: /kb/142/Q142290/
 	
 	=============================================================================
 	
+
+{% endraw %}

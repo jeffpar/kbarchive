@@ -6,6 +6,8 @@ permalink: /kb/201/Q201649/
 
 ## Q201649: FAQ: Visual SourceSafe Integration with Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q201649
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0a,5.0,6.0
@@ -123,3 +125,5 @@ permalink: /kb/201/Q201649/
 	
 	=============================================================================
 	
+
+{% endraw %}

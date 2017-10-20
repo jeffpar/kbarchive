@@ -6,6 +6,8 @@ permalink: /kb/124/Q124641/
 
 ## Q124641: Event ID 7000: RDR Service Failed to Start
 
+{% raw %}
+
 	Article: Q124641
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:3.5
@@ -43,3 +45,5 @@ permalink: /kb/124/Q124641/
 	
 	=============================================================================
 	
+
+{% endraw %}

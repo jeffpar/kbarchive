@@ -6,6 +6,8 @@ permalink: /kb/198/Q198427/
 
 ## Q198427: PRB: Unable to Edit Remote View When Base Table Name is PREF
 
+{% raw %}
+
 	Article: Q198427
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -180,3 +182,5 @@ permalink: /kb/198/Q198427/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232011/
 
 ## Q232011: Error Message Starting Windows 95 OSR2 with Unknown Device
 
+{% raw %}
+
 	Article: Q232011
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -61,3 +63,5 @@ permalink: /kb/232/Q232011/
 	
 	=============================================================================
 	
+
+{% endraw %}

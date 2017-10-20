@@ -6,6 +6,8 @@ permalink: /kb/108/Q108878/
 
 ## Q108878: PC Gen: PODIAG.EXE Reports Missing GALINDEX.GLB on 2.1 PO
 
+{% raw %}
+
 	Article: Q108878
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -55,3 +57,5 @@ permalink: /kb/108/Q108878/
 	
 	=============================================================================
 	
+
+{% endraw %}

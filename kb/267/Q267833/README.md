@@ -6,6 +6,8 @@ permalink: /kb/267/Q267833/
 
 ## Q267833: Cannot Set NTFS Permissions on Clustered File Share Resource
 
+{% raw %}
+
 	Article: Q267833
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,7.0
@@ -80,3 +82,5 @@ permalink: /kb/267/Q267833/
 	
 	=============================================================================
 	
+
+{% endraw %}

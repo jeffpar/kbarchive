@@ -6,6 +6,8 @@ permalink: /kb/107/Q107660/
 
 ## Q107660: Writer: Drop Caps Not Aligned with Indented Paragraph
 
+{% raw %}
+
 	Article: Q107660
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a,2.0
@@ -77,3 +79,5 @@ permalink: /kb/107/Q107660/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120018/
 
 ## Q120018: Err Msg: Volume Corrupt when NTFS Volume Exceeds 1 Million
 
+{% raw %}
+
 	Article: Q120018
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/120/Q120018/
 	
 	=============================================================================
 	
+
+{% endraw %}

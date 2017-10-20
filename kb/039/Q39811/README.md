@@ -6,6 +6,8 @@ permalink: /kb/039/Q39811/
 
 ## Q39811: No Symbolic Information Generated for Pascal Units
 
+{% raw %}
+
 	Article: Q39811
 	Product(s): See article
 	Version(s): 2.20   | 2.20
@@ -20,3 +22,5 @@ permalink: /kb/039/Q39811/
 	"symbol unknown" error.
 	
 	The only workaround is to transform the program Units into Modules.
+
+{% endraw %}

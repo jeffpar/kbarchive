@@ -6,6 +6,8 @@ permalink: /kb/197/Q197565/
 
 ## Q197565: Windows NT 4.0 SP4 Setup Does Not Update Winprint.dll
 
+{% raw %}
+
 	Article: Q197565
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -77,3 +79,5 @@ permalink: /kb/197/Q197565/
 	
 	=============================================================================
 	
+
+{% endraw %}

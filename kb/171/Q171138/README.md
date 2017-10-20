@@ -6,6 +6,8 @@ permalink: /kb/171/Q171138/
 
 ## Q171138: Secure TCP Port Not Properly Specified
 
+{% raw %}
+
 	Article: Q171138
 	Product(s): Internet Information Server
 	Version(s): WinNT:1.0,4.0
@@ -70,3 +72,5 @@ permalink: /kb/171/Q171138/
 	
 	=============================================================================
 	
+
+{% endraw %}

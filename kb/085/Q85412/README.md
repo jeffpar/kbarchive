@@ -6,6 +6,8 @@ permalink: /kb/085/Q85412/
 
 ## Q85412: MS-DOS 5.0a Upgrade README.TXT: Network Compatibility
 
+{% raw %}
+
 	Article: Q85412
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0a
@@ -203,3 +205,5 @@ permalink: /kb/085/Q85412/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158689/
 
 ## Q158689: WD97: Self-Help and Online Support Options
 
+{% raw %}
+
 	Article: Q158689
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -208,3 +210,5 @@ permalink: /kb/158/Q158689/
 	
 	=============================================================================
 	
+
+{% endraw %}

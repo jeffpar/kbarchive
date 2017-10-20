@@ -6,6 +6,8 @@ permalink: /kb/197/Q197758/
 
 ## Q197758: WD97: Cross-Reference Text Format Lost in Form Field Bookmark
 
+{% raw %}
+
 	Article: Q197758
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/197/Q197758/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172773/
 
 ## Q172773: Problems Using LS/120 Floppy Disk Drive with Windows NT Setup
 
+{% raw %}
+
 	Article: Q172773
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS NT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/172/Q172773/
 	
 	=============================================================================
 	
+
+{% endraw %}

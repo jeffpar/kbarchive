@@ -6,6 +6,8 @@ permalink: /kb/096/Q96823/
 
 ## Q96823: POWER Err Msg: Power Manager (POWER.EXE) Not Installed
 
+{% raw %}
+
 	Article: Q96823
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -49,3 +51,5 @@ permalink: /kb/096/Q96823/
 	
 	=============================================================================
 	
+
+{% endraw %}

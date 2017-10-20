@@ -6,6 +6,8 @@ permalink: /kb/199/Q199994/
 
 ## Q199994: SMS: Removing a Server as a Distribution Server Leaves Reg Value
 
+{% raw %}
+
 	Article: Q199994
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -74,3 +76,5 @@ permalink: /kb/199/Q199994/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129232/
 
 ## Q129232: Program Group Control Requires Logon Validation
 
+{% raw %}
+
 	Article: Q129232
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -81,3 +83,5 @@ permalink: /kb/129/Q129232/
 	
 	=============================================================================
 	
+
+{% endraw %}

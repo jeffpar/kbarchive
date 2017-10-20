@@ -6,6 +6,8 @@ permalink: /kb/044/Q44386/
 
 ## Q44386: Determining the Memory Model for Conditional Compilation
 
+{% raw %}
+
 	Article: Q44386
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -70,3 +72,5 @@ permalink: /kb/044/Q44386/
 	{
 	   printf("hello, world\n");
 	}
+
+{% endraw %}

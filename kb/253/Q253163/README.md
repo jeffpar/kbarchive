@@ -6,6 +6,8 @@ permalink: /kb/253/Q253163/
 
 ## Q253163: Games: Screen Turns Black, Program Stops Responding, or Err Msg
 
+{% raw %}
+
 	Article: Q253163
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -74,3 +76,5 @@ permalink: /kb/253/Q253163/
 	
 	=============================================================================
 	
+
+{% endraw %}

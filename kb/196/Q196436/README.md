@@ -6,6 +6,8 @@ permalink: /kb/196/Q196436/
 
 ## Q196436: WD97: &quot;Blue Background, White Text&quot; Option Makes Text Disappear
 
+{% raw %}
+
 	Article: Q196436
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -113,3 +115,5 @@ permalink: /kb/196/Q196436/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128438/
 
 ## Q128438: SMTP: Err Msg: Sockets Error: the Value for Key Host Name...
 
+{% raw %}
+
 	Article: Q128438
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/128/Q128438/
 	
 	=============================================================================
 	
+
+{% endraw %}

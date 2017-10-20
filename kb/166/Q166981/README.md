@@ -6,6 +6,8 @@ permalink: /kb/166/Q166981/
 
 ## Q166981: WD97: Back Button Not Available After Viewing HTML Source
 
+{% raw %}
+
 	Article: Q166981
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/166/Q166981/
 	
 	=============================================================================
 	
+
+{% endraw %}

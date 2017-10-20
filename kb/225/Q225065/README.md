@@ -6,6 +6,8 @@ permalink: /kb/225/Q225065/
 
 ## Q225065: PRB: Cannot Manipulate Columns of MS DataGrid in Visual C++ at D
 
+{% raw %}
+
 	Article: Q225065
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -120,3 +122,5 @@ permalink: /kb/225/Q225065/
 	
 	=============================================================================
 	
+
+{% endraw %}

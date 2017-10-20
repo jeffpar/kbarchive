@@ -6,6 +6,8 @@ permalink: /kb/098/Q98340/
 
 ## Q98340: PROFS: How to Check VM Host for REROUTE Statements
 
+{% raw %}
+
 	Article: Q98340
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.1,3.2,3.3
@@ -40,3 +42,5 @@ permalink: /kb/098/Q98340/
 	
 	=============================================================================
 	
+
+{% endraw %}

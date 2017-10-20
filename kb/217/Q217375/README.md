@@ -6,6 +6,8 @@ permalink: /kb/217/Q217375/
 
 ## Q217375: INFO: Windows CE Toolkit for Visual Basic 6.0 Release Notes
 
+{% raw %}
+
 	Article: Q217375
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -534,3 +536,5 @@ permalink: /kb/217/Q217375/
 	
 	=============================================================================
 	
+
+{% endraw %}

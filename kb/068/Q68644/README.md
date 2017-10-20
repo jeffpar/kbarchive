@@ -6,6 +6,8 @@ permalink: /kb/068/Q68644/
 
 ## Q68644: DOCERR: Segment and Handle Limits and Protected Mode Windows
 
+{% raw %}
+
 	Article: Q68644
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -117,3 +119,5 @@ permalink: /kb/068/Q68644/
 	
 	=============================================================================
 	
+
+{% endraw %}

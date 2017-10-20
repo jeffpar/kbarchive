@@ -6,6 +6,8 @@ permalink: /kb/107/Q107901/
 
 ## Q107901: Writer 1: Inserting Sounds from Floppy Disk Slow on Macintosh
 
+{% raw %}
+
 	Article: Q107901
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1
@@ -46,3 +48,5 @@ permalink: /kb/107/Q107901/
 	
 	=============================================================================
 	
+
+{% endraw %}

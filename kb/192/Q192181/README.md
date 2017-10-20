@@ -6,6 +6,8 @@ permalink: /kb/192/Q192181/
 
 ## Q192181: XADM: Renewing User Certificates in Key Management Server
 
+{% raw %}
+
 	Article: Q192181
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/192/Q192181/
 	
 	=============================================================================
 	
+
+{% endraw %}

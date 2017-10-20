@@ -6,6 +6,8 @@ permalink: /kb/131/Q131146/
 
 ## Q131146: PRB: CLEAR ALL in Cleanup Code of FoxPro 2.6 Form Causes Error
 
+{% raw %}
+
 	Article: Q131146
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/131/Q131146/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84779/
 
 ## Q84779: DOC: Don't Call Destroy Function on Loaded Cursor or Icon
 
+{% raw %}
+
 	Article: Q84779
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -76,3 +78,5 @@ permalink: /kb/084/Q84779/
 	
 	=============================================================================
 	
+
+{% endraw %}

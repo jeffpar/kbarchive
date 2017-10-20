@@ -6,6 +6,8 @@ permalink: /kb/175/Q175785/
 
 ## Q175785: Err Msg: There Was a Problem Logging onto Your Mail Server...
 
+{% raw %}
+
 	Article: Q175785
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -64,3 +66,5 @@ permalink: /kb/175/Q175785/
 	
 	=============================================================================
 	
+
+{% endraw %}

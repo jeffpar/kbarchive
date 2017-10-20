@@ -6,6 +6,8 @@ permalink: /kb/178/Q178820/
 
 ## Q178820: XADM: Collabra Migration Tool Does Not Handle OLE Embedded Docs
 
+{% raw %}
+
 	Article: Q178820
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/178/Q178820/
 	
 	=============================================================================
 	
+
+{% endraw %}

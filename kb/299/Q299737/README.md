@@ -6,6 +6,8 @@ permalink: /kb/299/Q299737/
 
 ## Q299737: Train Simulator: Sound Disabled After Restoring from Standby
 
+{% raw %}
+
 	Article: Q299737
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -40,3 +42,5 @@ permalink: /kb/299/Q299737/
 	
 	=============================================================================
 	
+
+{% endraw %}

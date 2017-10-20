@@ -6,6 +6,8 @@ permalink: /kb/170/Q170884/
 
 ## Q170884: HOWTO: Sort a ListView Control by Date
 
+{% raw %}
+
 	Article: Q170884
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -318,3 +320,5 @@ permalink: /kb/170/Q170884/
 	
 	=============================================================================
 	
+
+{% endraw %}

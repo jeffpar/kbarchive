@@ -6,6 +6,8 @@ permalink: /kb/096/Q96700/
 
 ## Q96700: MemMaker Cannot Continue if NewWave Is in Your AUTOEXEC.BAT
 
+{% raw %}
+
 	Article: Q96700
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -70,3 +72,5 @@ permalink: /kb/096/Q96700/
 	
 	=============================================================================
 	
+
+{% endraw %}

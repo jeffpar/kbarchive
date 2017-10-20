@@ -6,6 +6,8 @@ permalink: /kb/172/Q172444/
 
 ## Q172444: FPNW Generates Many Event ID 2024s
 
+{% raw %}
+
 	Article: Q172444
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -56,3 +58,5 @@ permalink: /kb/172/Q172444/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/288/Q288146/
 
 ## Q288146: WD97: Font Size Lost for Hebrew Characters in Round-Tripped Doc
 
+{% raw %}
+
 	Article: Q288146
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -128,3 +130,5 @@ permalink: /kb/288/Q288146/
 	
 	=============================================================================
 	
+
+{% endraw %}

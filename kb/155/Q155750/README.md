@@ -6,6 +6,8 @@ permalink: /kb/155/Q155750/
 
 ## Q155750: PRB: Combo Box Does Not Show Item After Selecting Item
 
+{% raw %}
+
 	Article: Q155750
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -89,3 +91,5 @@ permalink: /kb/155/Q155750/
 	
 	=============================================================================
 	
+
+{% endraw %}

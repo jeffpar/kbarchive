@@ -6,6 +6,8 @@ permalink: /kb/177/Q177994/
 
 ## Q177994: CICS Abend 'ADPL'
 
+{% raw %}
+
 	Article: Q177994
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/177/Q177994/
 	
 	=============================================================================
 	
+
+{% endraw %}

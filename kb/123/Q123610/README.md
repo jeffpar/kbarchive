@@ -6,6 +6,8 @@ permalink: /kb/123/Q123610/
 
 ## Q123610: Colored Text Does Not Print in Correct Color
 
+{% raw %}
+
 	Article: Q123610
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/123/Q123610/
 	
 	=============================================================================
 	
+
+{% endraw %}

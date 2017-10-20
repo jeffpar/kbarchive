@@ -6,6 +6,8 @@ permalink: /kb/093/Q93343/
 
 ## Q93343: Calling Int86?, Intdos?, and DOS3Call() from Windows
 
+{% raw %}
+
 	Article: Q93343
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -98,3 +100,5 @@ permalink: /kb/093/Q93343/
 	
 	=============================================================================
 	
+
+{% endraw %}

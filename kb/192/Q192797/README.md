@@ -6,6 +6,8 @@ permalink: /kb/192/Q192797/
 
 ## Q192797: Computer Stops Responding When Smart Card Is Ejected
 
+{% raw %}
+
 	Article: Q192797
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0,2.1,2.5
@@ -59,3 +61,5 @@ permalink: /kb/192/Q192797/
 	
 	=============================================================================
 	
+
+{% endraw %}

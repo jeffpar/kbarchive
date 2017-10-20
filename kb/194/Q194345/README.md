@@ -6,6 +6,8 @@ permalink: /kb/194/Q194345/
 
 ## Q194345: Bookshelf 99: Shockwavectrl Is Displayed on the Home Page
 
+{% raw %}
+
 	Article: Q194345
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -105,3 +107,5 @@ permalink: /kb/194/Q194345/
 	
 	=============================================================================
 	
+
+{% endraw %}

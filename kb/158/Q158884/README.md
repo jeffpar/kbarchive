@@ -6,6 +6,8 @@ permalink: /kb/158/Q158884/
 
 ## Q158884: SET: Problem Running Programs in German Resource Kit
 
+{% raw %}
+
 	Article: Q158884
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.51
@@ -91,3 +93,5 @@ permalink: /kb/158/Q158884/
 	
 	=============================================================================
 	
+
+{% endraw %}

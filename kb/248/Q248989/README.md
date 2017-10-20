@@ -6,6 +6,8 @@ permalink: /kb/248/Q248989/
 
 ## Q248989: SMS: Support for Third-Party Video Drivers with Remote Control
 
+{% raw %}
+
 	Article: Q248989
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -61,3 +63,5 @@ permalink: /kb/248/Q248989/
 	
 	=============================================================================
 	
+
+{% endraw %}

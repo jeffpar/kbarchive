@@ -6,6 +6,8 @@ permalink: /kb/149/Q149032/
 
 ## Q149032: PRB: VB 3.0 OLE Clients Do not Repaint Before OLE Call Returns
 
+{% raw %}
+
 	Article: Q149032
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -102,3 +104,5 @@ permalink: /kb/149/Q149032/
 	
 	=============================================================================
 	
+
+{% endraw %}

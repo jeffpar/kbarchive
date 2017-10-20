@@ -6,6 +6,8 @@ permalink: /kb/166/Q166123/
 
 ## Q166123: Mac Encarta 97: Collage Introductions and Sounds Stutter
 
+{% raw %}
+
 	Article: Q166123
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -47,3 +49,5 @@ permalink: /kb/166/Q166123/
 	
 	=============================================================================
 	
+
+{% endraw %}

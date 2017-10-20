@@ -6,6 +6,8 @@ permalink: /kb/090/Q90239/
 
 ## Q90239: Windows for Workgroups: How VSHARE.386 Manages File Sharing
 
+{% raw %}
+
 	Article: Q90239
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -175,3 +177,5 @@ permalink: /kb/090/Q90239/
 	
 	=============================================================================
 	
+
+{% endraw %}

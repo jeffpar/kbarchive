@@ -6,6 +6,8 @@ permalink: /kb/279/Q279638/
 
 ## Q279638: MechWarrior 4: Bottom of Introductory Movie Is Not Displayed
 
+{% raw %}
+
 	Article: Q279638
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/279/Q279638/
 	
 	=============================================================================
 	
+
+{% endraw %}

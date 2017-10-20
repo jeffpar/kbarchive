@@ -6,6 +6,8 @@ permalink: /kb/196/Q196022/
 
 ## Q196022: Cheyenne Backup Agent for Open Files Causes STOP 0x44
 
+{% raw %}
+
 	Article: Q196022
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/196/Q196022/
 	
 	=============================================================================
 	
+
+{% endraw %}

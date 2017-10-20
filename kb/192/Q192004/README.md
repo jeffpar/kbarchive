@@ -6,6 +6,8 @@ permalink: /kb/192/Q192004/
 
 ## Q192004: PRB: No Immediate Window or Macro Run Dialog in Script Control
 
+{% raw %}
+
 	Article: Q192004
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -51,3 +53,5 @@ permalink: /kb/192/Q192004/
 	
 	=============================================================================
 	
+
+{% endraw %}

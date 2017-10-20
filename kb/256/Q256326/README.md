@@ -6,6 +6,8 @@ permalink: /kb/256/Q256326/
 
 ## Q256326: Cluster Server Cannot Use Disk Beyond Device Number 25
 
+{% raw %}
+
 	Article: Q256326
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0
@@ -66,3 +68,5 @@ permalink: /kb/256/Q256326/
 	
 	=============================================================================
 	
+
+{% endraw %}

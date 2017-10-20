@@ -6,6 +6,8 @@ permalink: /kb/191/Q191133/
 
 ## Q191133: CG4: &quot;Can't open this item&quot; Error Opening Message with Clip Art
 
+{% raw %}
+
 	Article: Q191133
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,97
@@ -76,3 +78,5 @@ permalink: /kb/191/Q191133/
 	
 	=============================================================================
 	
+
+{% endraw %}

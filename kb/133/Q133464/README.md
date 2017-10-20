@@ -6,6 +6,8 @@ permalink: /kb/133/Q133464/
 
 ## Q133464: Mac Wine Guide: Movie Does Not Restart
 
+{% raw %}
+
 	Article: Q133464
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0,2.0
@@ -56,3 +58,5 @@ permalink: /kb/133/Q133464/
 	
 	=============================================================================
 	
+
+{% endraw %}

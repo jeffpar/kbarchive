@@ -6,6 +6,8 @@ permalink: /kb/164/Q164131/
 
 ## Q164131: Policy &quot;Path for Manual Update&quot; Support for %LogonServer%
 
+{% raw %}
+
 	Article: Q164131
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/164/Q164131/
 	
 	=============================================================================
 	
+
+{% endraw %}

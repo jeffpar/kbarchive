@@ -6,6 +6,8 @@ permalink: /kb/070/Q70078/
 
 ## Q70078: Forcing CVW to Find Source Files in Another Directory
 
+{% raw %}
+
 	Article: Q70078
 	Product(s): Microsoft Programming Utilities
 	Version(s): 3.05,3.14,4.0,4.01,4.1
@@ -70,3 +72,5 @@ permalink: /kb/070/Q70078/
 	
 	=============================================================================
 	
+
+{% endraw %}

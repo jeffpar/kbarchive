@@ -6,6 +6,8 @@ permalink: /kb/196/Q196480/
 
 ## Q196480: Problems After You Install Winzip Version 6.3 or 7.0
 
+{% raw %}
+
 	Article: Q196480
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/196/Q196480/
 	
 	=============================================================================
 	
+
+{% endraw %}

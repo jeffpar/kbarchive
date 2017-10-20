@@ -6,6 +6,8 @@ permalink: /kb/175/Q175947/
 
 ## Q175947: FILE: White Paper: Choosing the Right VB5 Data Access Interface
 
+{% raw %}
+
 	Article: Q175947
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -70,3 +72,5 @@ permalink: /kb/175/Q175947/
 	
 	=============================================================================
 	
+
+{% endraw %}

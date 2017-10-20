@@ -6,6 +6,8 @@ permalink: /kb/123/Q123956/
 
 ## Q123956: Recovering from Attempted PC Anywhere for Windows Installation
 
+{% raw %}
+
 	Article: Q123956
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -192,3 +194,5 @@ permalink: /kb/123/Q123956/
 	
 	=============================================================================
 	
+
+{% endraw %}

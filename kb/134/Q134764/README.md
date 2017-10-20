@@ -6,6 +6,8 @@ permalink: /kb/134/Q134764/
 
 ## Q134764: Windows for Workgroups DHCP TCP/IP-32 Client Fails to Start
 
+{% raw %}
+
 	Article: Q134764
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.11a,3.11b,3.5,3.51
@@ -101,3 +103,5 @@ permalink: /kb/134/Q134764/
 	
 	=============================================================================
 	
+
+{% endraw %}

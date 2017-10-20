@@ -6,6 +6,8 @@ permalink: /kb/260/Q260573/
 
 ## Q260573: XCLN: Use of Copy and Paste of Appointments in Outlook 2000
 
+{% raw %}
+
 	Article: Q260573
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/260/Q260573/
 	
 	=============================================================================
 	
+
+{% endraw %}

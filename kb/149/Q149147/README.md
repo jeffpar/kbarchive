@@ -6,6 +6,8 @@ permalink: /kb/149/Q149147/
 
 ## Q149147: BUG: Equivalence and Non-Common Block Variable Cause ASSERT
 
+{% raw %}
+
 	Article: Q149147
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -83,3 +85,5 @@ permalink: /kb/149/Q149147/
 	
 	=============================================================================
 	
+
+{% endraw %}

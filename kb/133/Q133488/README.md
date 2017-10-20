@@ -6,6 +6,8 @@ permalink: /kb/133/Q133488/
 
 ## Q133488: LPR Printing Fails After Setting Up Security
 
+{% raw %}
+
 	Article: Q133488
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -62,3 +64,5 @@ permalink: /kb/133/Q133488/
 	
 	=============================================================================
 	
+
+{% endraw %}

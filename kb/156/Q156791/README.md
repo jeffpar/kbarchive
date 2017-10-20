@@ -6,6 +6,8 @@ permalink: /kb/156/Q156791/
 
 ## Q156791: Writer 2: Creative Writer 1.x Cards Will Not Import
 
+{% raw %}
+
 	Article: Q156791
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -50,3 +52,5 @@ permalink: /kb/156/Q156791/
 	
 	=============================================================================
 	
+
+{% endraw %}

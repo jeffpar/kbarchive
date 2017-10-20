@@ -6,6 +6,8 @@ permalink: /kb/173/Q173839/
 
 ## Q173839: Windows NT Training Kit Supplemental Files Will Not Install
 
+{% raw %}
+
 	Article: Q173839
 	Product(s): Microsoft Press
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/173/Q173839/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161067/
 
 ## Q161067: IIS FTP RNTO Overwrites Existing Files
 
+{% raw %}
+
 	Article: Q161067
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0,4.0
@@ -59,3 +61,5 @@ permalink: /kb/161/Q161067/
 	
 	=============================================================================
 	
+
+{% endraw %}

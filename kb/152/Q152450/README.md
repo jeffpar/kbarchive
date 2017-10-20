@@ -6,6 +6,8 @@ permalink: /kb/152/Q152450/
 
 ## Q152450: Change Password Dialog Text Changed for NetWare
 
+{% raw %}
+
 	Article: Q152450
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -56,3 +58,5 @@ permalink: /kb/152/Q152450/
 	
 	=============================================================================
 	
+
+{% endraw %}

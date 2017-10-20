@@ -6,6 +6,8 @@ permalink: /kb/299/Q299261/
 
 ## Q299261: SMS: &quot;The Software Metering Server Is Not Running&quot; Message
 
+{% raw %}
+
 	Article: Q299261
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -89,3 +91,5 @@ permalink: /kb/299/Q299261/
 	
 	=============================================================================
 	
+
+{% endraw %}

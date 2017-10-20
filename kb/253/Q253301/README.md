@@ -6,6 +6,8 @@ permalink: /kb/253/Q253301/
 
 ## Q253301: FIX: Regular Users Cannot Open VSS Database on W2K Computers
 
+{% raw %}
+
 	Article: Q253301
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -82,3 +84,5 @@ permalink: /kb/253/Q253301/
 	
 	=============================================================================
 	
+
+{% endraw %}

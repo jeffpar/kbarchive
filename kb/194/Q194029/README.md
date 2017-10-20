@@ -6,6 +6,8 @@ permalink: /kb/194/Q194029/
 
 ## Q194029: INFO: How to Specify the Number of PPTP Ports During Unattended
 
+{% raw %}
+
 	Article: Q194029
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -151,3 +153,5 @@ permalink: /kb/194/Q194029/
 	
 	=============================================================================
 	
+
+{% endraw %}

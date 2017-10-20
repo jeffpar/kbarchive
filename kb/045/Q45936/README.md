@@ -6,6 +6,8 @@ permalink: /kb/045/Q45936/
 
 ## Q45936: Data Copied from Excel to Write Does Not Line Up
 
+{% raw %}
+
 	Article: Q45936
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/045/Q45936/
 	
 	=============================================================================
 	
+
+{% endraw %}

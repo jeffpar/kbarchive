@@ -6,6 +6,8 @@ permalink: /kb/131/Q131591/
 
 ## Q131591: Multimedia Applications: Solid Line Appears on Laser Printout
 
+{% raw %}
+
 	Article: Q131591
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0; :1995 edition
@@ -118,3 +120,5 @@ permalink: /kb/131/Q131591/
 	
 	=============================================================================
 	
+
+{% endraw %}

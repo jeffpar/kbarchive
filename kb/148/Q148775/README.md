@@ -6,6 +6,8 @@ permalink: /kb/148/Q148775/
 
 ## Q148775: DragMode=Automatic Isn't Supported for the OLE Outline Control
 
+{% raw %}
+
 	Article: Q148775
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/148/Q148775/
 	
 	=============================================================================
 	
+
+{% endraw %}

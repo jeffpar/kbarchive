@@ -6,6 +6,8 @@ permalink: /kb/124/Q124951/
 
 ## Q124951: BUG: F2374: Incorrect Reference of the Error in BLOCK DATA
 
+{% raw %}
+
 	Article: Q124951
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -66,3 +68,5 @@ permalink: /kb/124/Q124951/
 	
 	=============================================================================
 	
+
+{% endraw %}

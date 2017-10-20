@@ -6,6 +6,8 @@ permalink: /kb/165/Q165795/
 
 ## Q165795: PPT: Sample VB Code to Create Shape Using FreeForm Tool
 
+{% raw %}
+
 	Article: Q165795
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -143,3 +145,5 @@ permalink: /kb/165/Q165795/
 	
 	=============================================================================
 	
+
+{% endraw %}

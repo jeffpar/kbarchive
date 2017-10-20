@@ -6,6 +6,8 @@ permalink: /kb/129/Q129693/
 
 ## Q129693: X400: Err Msg: ERROR 4 (Converting X.400 Delivery Report)...
 
+{% raw %}
+
 	Article: Q129693
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -98,3 +100,5 @@ permalink: /kb/129/Q129693/
 	
 	=============================================================================
 	
+
+{% endraw %}

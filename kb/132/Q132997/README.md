@@ -6,6 +6,8 @@ permalink: /kb/132/Q132997/
 
 ## Q132997: PowerPoint 95 Files Saved as PowerPoint 4 Lose Font Embedding
 
+{% raw %}
+
 	Article: Q132997
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; :
@@ -65,3 +67,5 @@ permalink: /kb/132/Q132997/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/080/Q80679/
 
 ## Q80679: Mac Wkst: Err Msg: Mail System Could Not Be Loaded
 
+{% raw %}
+
 	Article: Q80679
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.0a,3.0b
@@ -41,3 +43,5 @@ permalink: /kb/080/Q80679/
 	
 	=============================================================================
 	
+
+{% endraw %}

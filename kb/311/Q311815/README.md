@@ -6,6 +6,8 @@ permalink: /kb/311/Q311815/
 
 ## Q311815: PRB: WSACleanUp()  AV If Host Name Longer Than 54 Characters
 
+{% raw %}
+
 	Article: Q311815
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -103,3 +105,5 @@ permalink: /kb/311/Q311815/
 	
 	=============================================================================
 	
+
+{% endraw %}

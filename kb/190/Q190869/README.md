@@ -6,6 +6,8 @@ permalink: /kb/190/Q190869/
 
 ## Q190869: INFO: Visual FoxPro 6.0 Required Run-Time Files
 
+{% raw %}
+
 	Article: Q190869
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -74,3 +76,5 @@ permalink: /kb/190/Q190869/
 	
 	=============================================================================
 	
+
+{% endraw %}

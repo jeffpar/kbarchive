@@ -6,6 +6,8 @@ permalink: /kb/317/Q317643/
 
 ## Q317643: MechWarrior 4: Computer Hangs When You Start  MechWarrior 4
 
+{% raw %}
+
 	Article: Q317643
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -134,3 +136,5 @@ permalink: /kb/317/Q317643/
 	
 	=============================================================================
 	
+
+{% endraw %}

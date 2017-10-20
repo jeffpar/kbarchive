@@ -6,6 +6,8 @@ permalink: /kb/189/Q189383/
 
 ## Q189383: PRB: ASSERT(hbrBtnFace != NULL) In AuxData.cpp
 
+{% raw %}
+
 	Article: Q189383
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -89,3 +91,5 @@ permalink: /kb/189/Q189383/
 	
 	=============================================================================
 	
+
+{% endraw %}

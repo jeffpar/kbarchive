@@ -6,6 +6,8 @@ permalink: /kb/078/Q78657/
 
 ## Q78657: Acer /M:1100 Switch Only for 1-MB Acer Machines
 
+{% raw %}
+
 	Article: Q78657
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/078/Q78657/
 	
 	=============================================================================
 	
+
+{% endraw %}

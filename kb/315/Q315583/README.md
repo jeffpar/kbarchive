@@ -6,6 +6,8 @@ permalink: /kb/315/Q315583/
 
 ## Q315583: HOW TO: Change Web Site Permissions on an IIS Server
 
+{% raw %}
+
 	Article: Q315583
 	Product(s): Internet Information Server
 	Version(s): 
@@ -176,3 +178,5 @@ permalink: /kb/315/Q315583/
 	
 	=============================================================================
 	
+
+{% endraw %}

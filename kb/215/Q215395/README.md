@@ -6,6 +6,8 @@ permalink: /kb/215/Q215395/
 
 ## Q215395: BUG: SelChange Event in a Grid Executes on a Selected Cell
 
+{% raw %}
+
 	Article: Q215395
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -76,3 +78,5 @@ permalink: /kb/215/Q215395/
 	
 	=============================================================================
 	
+
+{% endraw %}

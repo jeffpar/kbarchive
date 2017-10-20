@@ -6,6 +6,8 @@ permalink: /kb/226/Q226386/
 
 ## Q226386: XWEB: WLBS Failover Causes Accumulation of MMP Files in Webtemp
 
+{% raw %}
+
 	Article: Q226386
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -72,3 +74,5 @@ permalink: /kb/226/Q226386/
 	
 	=============================================================================
 	
+
+{% endraw %}

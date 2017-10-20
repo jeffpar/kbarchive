@@ -6,6 +6,8 @@ permalink: /kb/191/Q191338/
 
 ## Q191338: SMS: Job Cancellation Is Not Immediate
 
+{% raw %}
+
 	Article: Q191338
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -47,3 +49,5 @@ permalink: /kb/191/Q191338/
 	
 	=============================================================================
 	
+
+{% endraw %}

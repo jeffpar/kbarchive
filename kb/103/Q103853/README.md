@@ -6,6 +6,8 @@ permalink: /kb/103/Q103853/
 
 ## Q103853: ATT: DocErr: AT&amp;T Support Number Incorrect in Admin Guide
 
+{% raw %}
+
 	Article: Q103853
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -45,3 +47,5 @@ permalink: /kb/103/Q103853/
 	
 	=============================================================================
 	
+
+{% endraw %}

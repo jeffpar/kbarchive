@@ -6,6 +6,8 @@ permalink: /kb/164/Q164769/
 
 ## Q164769: UDCONFIG Displays Wrong User Name
 
+{% raw %}
+
 	Article: Q164769
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/164/Q164769/
 	
 	=============================================================================
 	
+
+{% endraw %}

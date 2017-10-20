@@ -6,6 +6,8 @@ permalink: /kb/295/Q295546/
 
 ## Q295546: FP: Names and Hex Values for the 16 Common Colors used in HTML
 
+{% raw %}
+
 	Article: Q295546
 	Product(s): Word Front Page
 	Version(s): 
@@ -137,3 +139,5 @@ permalink: /kb/295/Q295546/
 	
 	=============================================================================
 	
+
+{% endraw %}

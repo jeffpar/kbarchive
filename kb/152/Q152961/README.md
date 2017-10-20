@@ -6,6 +6,8 @@ permalink: /kb/152/Q152961/
 
 ## Q152961: How to Install TP4 Components on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q152961
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -122,3 +124,5 @@ permalink: /kb/152/Q152961/
 	
 	=============================================================================
 	
+
+{% endraw %}

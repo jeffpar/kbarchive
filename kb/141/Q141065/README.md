@@ -6,6 +6,8 @@ permalink: /kb/141/Q141065/
 
 ## Q141065: PC Win: MMF Displays No Messages After Integrity Check
 
+{% raw %}
+
 	Article: Q141065
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -64,3 +66,5 @@ permalink: /kb/141/Q141065/
 	
 	=============================================================================
 	
+
+{% endraw %}

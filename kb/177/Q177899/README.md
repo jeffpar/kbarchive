@@ -6,6 +6,8 @@ permalink: /kb/177/Q177899/
 
 ## Q177899: Dependent LU6.2 Bind Rejected with Sense Code 0835
 
+{% raw %}
+
 	Article: Q177899
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -71,3 +73,5 @@ permalink: /kb/177/Q177899/
 	
 	=============================================================================
 	
+
+{% endraw %}

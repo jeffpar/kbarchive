@@ -6,6 +6,8 @@ permalink: /kb/131/Q131593/
 
 ## Q131593: Return to Encarta 1995 Button Attempts to Start Encarta 1994
 
+{% raw %}
+
 	Article: Q131593
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -74,3 +76,5 @@ permalink: /kb/131/Q131593/
 	
 	=============================================================================
 	
+
+{% endraw %}

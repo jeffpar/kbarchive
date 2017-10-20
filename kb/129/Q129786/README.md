@@ -6,6 +6,8 @@ permalink: /kb/129/Q129786/
 
 ## Q129786: SNA Server and 802.2 Connection Timers (t1, t2, ti)
 
+{% raw %}
+
 	Article: Q129786
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -205,3 +207,5 @@ permalink: /kb/129/Q129786/
 	
 	=============================================================================
 	
+
+{% endraw %}

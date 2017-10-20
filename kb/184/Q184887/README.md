@@ -6,6 +6,8 @@ permalink: /kb/184/Q184887/
 
 ## Q184887: Golf 1998 Edition: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q184887
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/184/Q184887/
 	
 	=============================================================================
 	
+
+{% endraw %}

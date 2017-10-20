@@ -6,6 +6,8 @@ permalink: /kb/264/Q264282/
 
 ## Q264282: XFOR: Exchange Connector for Novell GroupWise Setup Instructions
 
+{% raw %}
+
 	Article: Q264282
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -43,3 +45,5 @@ permalink: /kb/264/Q264282/
 	
 	=============================================================================
 	
+
+{% endraw %}

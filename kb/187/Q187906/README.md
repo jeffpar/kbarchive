@@ -6,6 +6,8 @@ permalink: /kb/187/Q187906/
 
 ## Q187906: IIS Does Not Let You Save Changes to Web Page
 
+{% raw %}
+
 	Article: Q187906
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/187/Q187906/
 	
 	=============================================================================
 	
+
+{% endraw %}

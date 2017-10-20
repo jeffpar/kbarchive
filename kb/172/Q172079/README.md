@@ -6,6 +6,8 @@ permalink: /kb/172/Q172079/
 
 ## Q172079: HOWTO: Closing a Running Application from Visual FoxPro for Mac
 
+{% raw %}
+
 	Article: Q172079
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -151,3 +153,5 @@ permalink: /kb/172/Q172079/
 	
 	=============================================================================
 	
+
+{% endraw %}

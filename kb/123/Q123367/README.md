@@ -6,6 +6,8 @@ permalink: /kb/123/Q123367/
 
 ## Q123367: WFWG 3.11 Hangs with the Intel EtherExpress Pro
 
+{% raw %}
+
 	Article: Q123367
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/123/Q123367/
 	
 	=============================================================================
 	
+
+{% endraw %}

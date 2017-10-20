@@ -6,6 +6,8 @@ permalink: /kb/176/Q176873/
 
 ## Q176873: BUG: DBCombo Does Not Display the &quot;&amp;&quot; Character Correctly
 
+{% raw %}
+
 	Article: Q176873
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -105,3 +107,5 @@ permalink: /kb/176/Q176873/
 	
 	=============================================================================
 	
+
+{% endraw %}

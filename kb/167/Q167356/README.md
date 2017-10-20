@@ -6,6 +6,8 @@ permalink: /kb/167/Q167356/
 
 ## Q167356: FIX: Same Name for Function and Class Causes C2079
 
+{% raw %}
+
 	Article: Q167356
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -131,3 +133,5 @@ permalink: /kb/167/Q167356/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248720/
 
 ## Q248720: PRB: Performance Hit in SCSI Miniport with Multiple Requests
 
+{% raw %}
+
 	Article: Q248720
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -105,3 +107,5 @@ permalink: /kb/248/Q248720/
 	
 	=============================================================================
 	
+
+{% endraw %}

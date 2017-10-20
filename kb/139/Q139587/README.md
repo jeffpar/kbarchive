@@ -6,6 +6,8 @@ permalink: /kb/139/Q139587/
 
 ## Q139587: Novell Setpass and Whoami Failures with CSNW and GSNW
 
+{% raw %}
+
 	Article: Q139587
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -92,3 +94,5 @@ permalink: /kb/139/Q139587/
 	
 	=============================================================================
 	
+
+{% endraw %}

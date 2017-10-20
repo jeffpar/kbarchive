@@ -6,6 +6,8 @@ permalink: /kb/136/Q136352/
 
 ## Q136352: Fury3: Screen Turns Blank with Actix Picaso
 
+{% raw %}
+
 	Article: Q136352
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/136/Q136352/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130905/
 
 ## Q130905: Printing From Japanese Windows NT to a U.S. Windows NT Printer
 
+{% raw %}
+
 	Article: Q130905
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5
@@ -56,3 +58,5 @@ permalink: /kb/130/Q130905/
 	
 	=============================================================================
 	
+
+{% endraw %}

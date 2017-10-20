@@ -6,6 +6,8 @@ permalink: /kb/132/Q132458/
 
 ## Q132458: Custom Scaling Not Applied By TEXT Data Type with PostScript
 
+{% raw %}
+
 	Article: Q132458
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -64,3 +66,5 @@ permalink: /kb/132/Q132458/
 	
 	=============================================================================
 	
+
+{% endraw %}

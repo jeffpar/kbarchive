@@ -6,6 +6,8 @@ permalink: /kb/262/Q262660/
 
 ## Q262660: Baseball 2001: Pitcher Health Is Not Reset When You Restart Game
 
+{% raw %}
+
 	Article: Q262660
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -51,3 +53,5 @@ permalink: /kb/262/Q262660/
 	
 	=============================================================================
 	
+
+{% endraw %}

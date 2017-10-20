@@ -6,6 +6,8 @@ permalink: /kb/154/Q154798/
 
 ## Q154798: XFOR: SMTP Mail Attachments not Visible in PC Mail 3.x Clients
 
+{% raw %}
+
 	Article: Q154798
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.0,3.2,3.2a,3.5; winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/154/Q154798/
 	
 	=============================================================================
 	
+
+{% endraw %}

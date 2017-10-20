@@ -6,6 +6,8 @@ permalink: /kb/061/Q61777/
 
 ## Q61777: Why GlobalAlloc() Returns a Handle to a 0-Byte Segment
 
+{% raw %}
+
 	Article: Q61777
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -70,3 +72,5 @@ permalink: /kb/061/Q61777/
 	
 	=============================================================================
 	
+
+{% endraw %}

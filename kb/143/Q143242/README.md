@@ -6,6 +6,8 @@ permalink: /kb/143/Q143242/
 
 ## Q143242: Externally Locked System Files Can Cause SP Update Failure
 
+{% raw %}
+
 	Article: Q143242
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -84,3 +86,5 @@ permalink: /kb/143/Q143242/
 	
 	=============================================================================
 	
+
+{% endraw %}

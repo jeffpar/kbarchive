@@ -6,6 +6,8 @@ permalink: /kb/148/Q148201/
 
 ## Q148201: BUG: Unused Local Variables Are Unavailable in the Debugger
 
+{% raw %}
+
 	Article: Q148201
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/148/Q148201/
 	
 	=============================================================================
 	
+
+{% endraw %}

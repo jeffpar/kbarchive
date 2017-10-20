@@ -6,6 +6,8 @@ permalink: /kb/092/Q92872/
 
 ## Q92872: After Failed WFWG Setup, Not Enough Space to Setup Again
 
+{% raw %}
+
 	Article: Q92872
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/092/Q92872/
 	
 	=============================================================================
 	
+
+{% endraw %}

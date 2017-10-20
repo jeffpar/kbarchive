@@ -6,6 +6,8 @@ permalink: /kb/106/Q106418/
 
 ## Q106418: Cursor Remains an Hourglass When Loading Schedule+
 
+{% raw %}
+
 	Article: Q106418
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -50,3 +52,5 @@ permalink: /kb/106/Q106418/
 	
 	=============================================================================
 	
+
+{% endraw %}

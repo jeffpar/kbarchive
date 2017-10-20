@@ -6,6 +6,8 @@ permalink: /kb/062/Q62830/
 
 ## Q62830: X=(-1&#42;W)^2 Gives &quot;Division by Zero&quot; on 386 with 387; BASIC 7.1
 
+{% raw %}
+
 	Article: Q62830
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -41,3 +43,5 @@ permalink: /kb/062/Q62830/
 	
 	      TEMP = (-1 * W)
 	      X = TEMP ^ 2
+
+{% endraw %}

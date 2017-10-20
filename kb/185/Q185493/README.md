@@ -6,6 +6,8 @@ permalink: /kb/185/Q185493/
 
 ## Q185493: WD97: How to Reset &quot;Always Perform Batch Conversions&quot;
 
+{% raw %}
+
 	Article: Q185493
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -135,3 +137,5 @@ permalink: /kb/185/Q185493/
 	
 	=============================================================================
 	
+
+{% endraw %}

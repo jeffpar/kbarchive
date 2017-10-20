@@ -6,6 +6,8 @@ permalink: /kb/114/Q114415/
 
 ## Q114415: Writer: Font Used on Product Box and in Dialog Boxes
 
+{% raw %}
+
 	Article: Q114415
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/114/Q114415/
 	
 	=============================================================================
 	
+
+{% endraw %}

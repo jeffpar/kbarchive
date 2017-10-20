@@ -6,6 +6,8 @@ permalink: /kb/255/Q255212/
 
 ## Q255212: Event Viewer Records Event ID 8020 Errors for DSMN
 
+{% raw %}
+
 	Article: Q255212
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/255/Q255212/
 	
 	=============================================================================
 	
+
+{% endraw %}

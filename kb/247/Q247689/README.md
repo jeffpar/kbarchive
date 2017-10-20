@@ -6,6 +6,8 @@ permalink: /kb/247/Q247689/
 
 ## Q247689: XCLN: Readme in Exchange Server 5.5 SP3 Outlook Version Wrong
 
+{% raw %}
+
 	Article: Q247689
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -48,3 +50,5 @@ permalink: /kb/247/Q247689/
 	
 	=============================================================================
 	
+
+{% endraw %}

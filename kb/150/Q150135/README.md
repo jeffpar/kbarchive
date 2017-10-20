@@ -6,6 +6,8 @@ permalink: /kb/150/Q150135/
 
 ## Q150135: PRB: Error in ICHAR() Using Multi-Character Input Argument
 
+{% raw %}
+
 	Article: Q150135
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/150/Q150135/
 	
 	=============================================================================
 	
+
+{% endraw %}

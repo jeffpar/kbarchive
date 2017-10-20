@@ -6,6 +6,8 @@ permalink: /kb/312/Q312603/
 
 ## Q312603: FS2000: Err Msg During Installation Loading Language Resources
 
+{% raw %}
+
 	Article: Q312603
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/312/Q312603/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247275/
 
 ## Q247275: XADM: Recreating the Public Store on a Private Store Only Server
 
+{% raw %}
+
 	Article: Q247275
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -77,3 +79,5 @@ permalink: /kb/247/Q247275/
 	
 	=============================================================================
 	
+
+{% endraw %}

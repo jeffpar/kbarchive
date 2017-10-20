@@ -6,6 +6,8 @@ permalink: /kb/091/Q91066/
 
 ## Q91066: Message Looks Read or Opened After Move, Copy, or Print
 
+{% raw %}
+
 	Article: Q91066
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -34,3 +36,5 @@ permalink: /kb/091/Q91066/
 	
 	=============================================================================
 	
+
+{% endraw %}

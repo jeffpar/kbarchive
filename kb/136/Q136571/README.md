@@ -6,6 +6,8 @@ permalink: /kb/136/Q136571/
 
 ## Q136571: How WINS Resolves Name Conflicts During Replication
 
+{% raw %}
+
 	Article: Q136571
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -107,3 +109,5 @@ permalink: /kb/136/Q136571/
 	
 	=============================================================================
 	
+
+{% endraw %}

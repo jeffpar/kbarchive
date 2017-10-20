@@ -6,6 +6,8 @@ permalink: /kb/168/Q168035/
 
 ## Q168035: XADM: Performance Monitor Counters for PCMTA Show Zero Values
 
+{% raw %}
+
 	Article: Q168035
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -54,3 +56,5 @@ permalink: /kb/168/Q168035/
 	
 	=============================================================================
 	
+
+{% endraw %}

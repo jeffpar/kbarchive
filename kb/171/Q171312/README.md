@@ -6,6 +6,8 @@ permalink: /kb/171/Q171312/
 
 ## Q171312: CD-Key Missing from NT Evaluation Editions
 
+{% raw %}
+
 	Article: Q171312
 	Product(s): Microsoft Press
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/171/Q171312/
 	
 	=============================================================================
 	
+
+{% endraw %}

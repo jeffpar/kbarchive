@@ -6,6 +6,8 @@ permalink: /kb/224/Q224526/
 
 ## Q224526: Windows NT 4.0 Supports Maximum of 7.8-GB System Partition
 
+{% raw %}
+
 	Article: Q224526
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -154,3 +156,5 @@ permalink: /kb/224/Q224526/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169863/
 
 ## Q169863: PRB: Error Logging into the Anomaly Tracking System
 
+{% raw %}
+
 	Article: Q169863
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a
@@ -75,3 +77,5 @@ permalink: /kb/169/Q169863/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129474/
 
 ## Q129474: Encarta 94: MindMaze Doesn't Work with 95 ENCARAPI.DLL
 
+{% raw %}
+
 	Article: Q129474
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 editions
@@ -121,3 +123,5 @@ permalink: /kb/129/Q129474/
 	
 	=============================================================================
 	
+
+{% endraw %}

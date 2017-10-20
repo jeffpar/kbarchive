@@ -6,6 +6,8 @@ permalink: /kb/236/Q236294/
 
 ## Q236294: Domain Admins Group Has Full Network Access
 
+{% raw %}
+
 	Article: Q236294
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98
@@ -73,3 +75,5 @@ permalink: /kb/236/Q236294/
 	
 	=============================================================================
 	
+
+{% endraw %}

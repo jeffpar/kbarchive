@@ -6,6 +6,8 @@ permalink: /kb/155/Q155975/
 
 ## Q155975: SMS: File Transfer Does Not Display NTFS Compressed Files
 
+{% raw %}
+
 	Article: Q155975
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -56,3 +58,5 @@ permalink: /kb/155/Q155975/
 	
 	=============================================================================
 	
+
+{% endraw %}

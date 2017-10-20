@@ -6,6 +6,8 @@ permalink: /kb/166/Q166751/
 
 ## Q166751: Running Dskprobe.exe from WinNT 4.0 Resource Kit on WinNT 3.51
 
+{% raw %}
+
 	Article: Q166751
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -64,3 +66,5 @@ permalink: /kb/166/Q166751/
 	
 	=============================================================================
 	
+
+{% endraw %}

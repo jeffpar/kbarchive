@@ -6,6 +6,8 @@ permalink: /kb/121/Q121734/
 
 ## Q121734: PC Ext: SYS3175 MMTA Error in ASYNC.OVL
 
+{% raw %}
+
 	Article: Q121734
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -65,3 +67,5 @@ permalink: /kb/121/Q121734/
 	
 	=============================================================================
 	
+
+{% endraw %}

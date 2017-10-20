@@ -6,6 +6,8 @@ permalink: /kb/212/Q212788/
 
 ## Q212788: XFOR: Connector for cc:Mail Stops, No Errors Appear in Event Log
 
+{% raw %}
+
 	Article: Q212788
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/212/Q212788/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110136/
 
 ## Q110136: Default Settings and Behavior or NbtKeepAlive and TcpKeepCnt
 
+{% raw %}
+
 	Article: Q110136
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -87,3 +89,5 @@ permalink: /kb/110/Q110136/
 	
 	=============================================================================
 	
+
+{% endraw %}

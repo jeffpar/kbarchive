@@ -6,6 +6,8 @@ permalink: /kb/038/Q38769/
 
 ## Q38769: Error L1006 Option : Stack Size Exceeds 65535 Bytes
 
+{% raw %}
+
 	Article: Q38769
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -59,3 +61,5 @@ permalink: /kb/038/Q38769/
 	either /STACK or /ST. Specifying /STACKSIZE will generate the error:
 	
 	   LINK : fatal error L1002: STACKSIZE : unrecognized option name
+
+{% endraw %}

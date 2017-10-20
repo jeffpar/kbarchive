@@ -6,6 +6,8 @@ permalink: /kb/189/Q189796/
 
 ## Q189796: Cinemania Online and Music Central Online Retiring After 1998
 
+{% raw %}
+
 	Article: Q189796
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/189/Q189796/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/115/Q115139/
 
 ## Q115139: Windows NT 3.1 Resource Guide Utilities Files Description
 
+{% raw %}
+
 	Article: Q115139
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -215,3 +217,5 @@ permalink: /kb/115/Q115139/
 	
 	=============================================================================
 	
+
+{% endraw %}

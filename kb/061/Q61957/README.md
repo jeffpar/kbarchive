@@ -6,6 +6,8 @@ permalink: /kb/061/Q61957/
 
 ## Q61957: Err Msg: No Hard Drives on System (SMARTDrive)
 
+{% raw %}
+
 	Article: Q61957
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a
@@ -45,3 +47,5 @@ permalink: /kb/061/Q61957/
 	
 	=============================================================================
 	
+
+{% endraw %}

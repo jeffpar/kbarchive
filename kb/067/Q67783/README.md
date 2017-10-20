@@ -6,6 +6,8 @@ permalink: /kb/067/Q67783/
 
 ## Q67783: C1001: Internal Compiler Error: regMD.c, Lines 4634 and 4688
 
+{% raw %}
+
 	Article: Q67783
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -40,3 +42,5 @@ permalink: /kb/067/Q67783/
 	   for (x=0;x<=10;x++)
 	   pnt[x]=wi_lines(pnt[x]);
 	}
+
+{% endraw %}

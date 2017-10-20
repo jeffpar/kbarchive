@@ -6,6 +6,8 @@ permalink: /kb/113/Q113598/
 
 ## Q113598: Application Execution Error After Changing Country to Turkey
 
+{% raw %}
+
 	Article: Q113598
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -71,3 +73,5 @@ permalink: /kb/113/Q113598/
 	
 	=============================================================================
 	
+
+{% endraw %}

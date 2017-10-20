@@ -6,6 +6,8 @@ permalink: /kb/099/Q99746/
 
 ## Q99746: MS-DOS Upgrade May Not Find AUTOEXEC.BAT If You Use 4DOS
 
+{% raw %}
+
 	Article: Q99746
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -44,3 +46,5 @@ permalink: /kb/099/Q99746/
 	
 	=============================================================================
 	
+
+{% endraw %}

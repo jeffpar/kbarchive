@@ -6,6 +6,8 @@ permalink: /kb/142/Q142569/
 
 ## Q142569: Mac Encarta Err Msg: Encarta Cannot Play the Animation
 
+{% raw %}
+
 	Article: Q142569
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition,1996 edition
@@ -101,3 +103,5 @@ permalink: /kb/142/Q142569/
 	
 	=============================================================================
 	
+
+{% endraw %}

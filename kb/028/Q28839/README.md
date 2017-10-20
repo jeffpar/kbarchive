@@ -6,6 +6,8 @@ permalink: /kb/028/Q28839/
 
 ## Q28839: Case Sensitivity of Search Change... Command in Windows Write
 
+{% raw %}
+
 	Article: Q28839
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/028/Q28839/
 	
 	=============================================================================
 	
+
+{% endraw %}

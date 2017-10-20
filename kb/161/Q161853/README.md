@@ -6,6 +6,8 @@ permalink: /kb/161/Q161853/
 
 ## Q161853: Writer 2: Problems Spell Checking
 
+{% raw %}
+
 	Article: Q161853
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -149,3 +151,5 @@ permalink: /kb/161/Q161853/
 	
 	=============================================================================
 	
+
+{% endraw %}

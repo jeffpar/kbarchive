@@ -6,6 +6,8 @@ permalink: /kb/192/Q192503/
 
 ## Q192503: Running Office 97, Page xxxvi: Incorrect Setup Path for E-Book
 
+{% raw %}
+
 	Article: Q192503
 	Product(s): Microsoft Press
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/192/Q192503/
 	
 	=============================================================================
 	
+
+{% endraw %}

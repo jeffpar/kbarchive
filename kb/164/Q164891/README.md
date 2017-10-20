@@ -6,6 +6,8 @@ permalink: /kb/164/Q164891/
 
 ## Q164891: SMS: Invwin32.exe Does Not Respond to Resync Requests
 
+{% raw %}
+
 	Article: Q164891
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -63,3 +65,5 @@ permalink: /kb/164/Q164891/
 	
 	=============================================================================
 	
+
+{% endraw %}

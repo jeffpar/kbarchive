@@ -6,6 +6,8 @@ permalink: /kb/171/Q171518/
 
 ## Q171518: FIX: Controls May Not Print When Printing Form at Design Time
 
+{% raw %}
+
 	Article: Q171518
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -83,3 +85,5 @@ permalink: /kb/171/Q171518/
 	
 	=============================================================================
 	
+
+{% endraw %}

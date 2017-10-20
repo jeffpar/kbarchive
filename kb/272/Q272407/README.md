@@ -6,6 +6,8 @@ permalink: /kb/272/Q272407/
 
 ## Q272407: PATCH: Access Violation in VB Snap-in Designer Run Time DLL
 
+{% raw %}
+
 	Article: Q272407
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -76,3 +78,5 @@ permalink: /kb/272/Q272407/
 	
 	=============================================================================
 	
+
+{% endraw %}

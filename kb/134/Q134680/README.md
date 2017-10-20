@@ -6,6 +6,8 @@ permalink: /kb/134/Q134680/
 
 ## Q134680: Mapped NetWare Drives Missing in My Computer
 
+{% raw %}
+
 	Article: Q134680
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/134/Q134680/
 	
 	=============================================================================
 	
+
+{% endraw %}

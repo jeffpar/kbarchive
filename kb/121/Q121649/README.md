@@ -6,6 +6,8 @@ permalink: /kb/121/Q121649/
 
 ## Q121649: Err Msg: The Domain is Not Available
 
+{% raw %}
+
 	Article: Q121649
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -55,3 +57,5 @@ permalink: /kb/121/Q121649/
 	
 	=============================================================================
 	
+
+{% endraw %}

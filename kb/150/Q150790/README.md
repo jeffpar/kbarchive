@@ -6,6 +6,8 @@ permalink: /kb/150/Q150790/
 
 ## Q150790: How To Know if VFP for Mac Uses PPC or 68K ODBC Driver
 
+{% raw %}
+
 	Article: Q150790
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -50,3 +52,5 @@ permalink: /kb/150/Q150790/
 	
 	=============================================================================
 	
+
+{% endraw %}

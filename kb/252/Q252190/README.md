@@ -6,6 +6,8 @@ permalink: /kb/252/Q252190/
 
 ## Q252190: WINS Resolution Disabled by Default Viewing Network Properties
 
+{% raw %}
+
 	Article: Q252190
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -84,3 +86,5 @@ permalink: /kb/252/Q252190/
 	
 	=============================================================================
 	
+
+{% endraw %}

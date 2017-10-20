@@ -6,6 +6,8 @@ permalink: /kb/167/Q167361/
 
 ## Q167361: Drive Details Incorrectly Print on a Compaq Proliant 2500
 
+{% raw %}
+
 	Article: Q167361
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/167/Q167361/
 	
 	=============================================================================
 	
+
+{% endraw %}

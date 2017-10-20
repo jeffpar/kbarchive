@@ -6,6 +6,8 @@ permalink: /kb/318/Q318060/
 
 ## Q318060: DOC: List of Possible Errors When You Check Out a File from Visu
 
+{% raw %}
+
 	Article: Q318060
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/318/Q318060/
 	
 	=============================================================================
 	
+
+{% endraw %}

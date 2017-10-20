@@ -6,6 +6,8 @@ permalink: /kb/216/Q216071/
 
 ## Q216071: SYSPREP: Incorrect Shutdown Leaves Message in Event Log
 
+{% raw %}
+
 	Article: Q216071
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/216/Q216071/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117414/
 
 ## Q117414: Communication Through FDDI to MAC Address Fails
 
+{% raw %}
+
 	Article: Q117414
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -56,3 +58,5 @@ permalink: /kb/117/Q117414/
 	
 	=============================================================================
 	
+
+{% endraw %}

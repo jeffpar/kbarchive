@@ -6,6 +6,8 @@ permalink: /kb/180/Q180718/
 
 ## Q180718: SFM: Disconnect Macintosh Clients before Dismounting Volume
 
+{% raw %}
+
 	Article: Q180718
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -106,3 +108,5 @@ permalink: /kb/180/Q180718/
 	
 	=============================================================================
 	
+
+{% endraw %}

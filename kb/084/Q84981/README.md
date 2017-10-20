@@ -6,6 +6,8 @@ permalink: /kb/084/Q84981/
 
 ## Q84981: Code Demonstrates Keeping an Icon Fixed in Place
 
+{% raw %}
+
 	Article: Q84981
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -61,3 +63,5 @@ permalink: /kb/084/Q84981/
 	
 	=============================================================================
 	
+
+{% endraw %}

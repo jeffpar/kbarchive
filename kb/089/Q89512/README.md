@@ -6,6 +6,8 @@ permalink: /kb/089/Q89512/
 
 ## Q89512: IBM Quietwriter III: Enhanced Printing Mode Not Supported
 
+{% raw %}
+
 	Article: Q89512
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/089/Q89512/
 	
 	=============================================================================
 	
+
+{% endraw %}

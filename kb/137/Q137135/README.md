@@ -6,6 +6,8 @@ permalink: /kb/137/Q137135/
 
 ## Q137135: STOP Msg: 0x0000001E Running DEC Pathworks Version 4.1b
 
+{% raw %}
+
 	Article: Q137135
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/137/Q137135/
 	
 	=============================================================================
 	
+
+{% endraw %}

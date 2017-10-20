@@ -6,6 +6,8 @@ permalink: /kb/239/Q239578/
 
 ## Q239578: S&amp;T 2000 Err Msg: Setup Could Not Write to Line in the INI File
 
+{% raw %}
+
 	Article: Q239578
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -74,3 +76,5 @@ permalink: /kb/239/Q239578/
 	
 	=============================================================================
 	
+
+{% endraw %}

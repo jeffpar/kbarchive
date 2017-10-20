@@ -6,6 +6,8 @@ permalink: /kb/116/Q116162/
 
 ## Q116162: QuickShelf: Toolbar Has Large Buttons in Large Font Mode
 
+{% raw %}
+
 	Article: Q116162
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition; WINDOWS:3.x
@@ -67,3 +69,5 @@ permalink: /kb/116/Q116162/
 	
 	=============================================================================
 	
+
+{% endraw %}

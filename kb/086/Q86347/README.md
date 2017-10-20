@@ -6,6 +6,8 @@ permalink: /kb/086/Q86347/
 
 ## Q86347: Thomas Conrad Network Cards May Need BUFFER.COM
 
+{% raw %}
+
 	Article: Q86347
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/086/Q86347/
 	
 	=============================================================================
 	
+
+{% endraw %}

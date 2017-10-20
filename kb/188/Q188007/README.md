@@ -6,6 +6,8 @@ permalink: /kb/188/Q188007/
 
 ## Q188007: HOWTO: Simulate Visual Basic 6.0 String Functions in VB5
 
+{% raw %}
+
 	Article: Q188007
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -201,3 +203,5 @@ permalink: /kb/188/Q188007/
 	
 	=============================================================================
 	
+
+{% endraw %}

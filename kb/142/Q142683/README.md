@@ -6,6 +6,8 @@ permalink: /kb/142/Q142683/
 
 ## Q142683: Cannot Run Setup for Office 95 on Windows NT Alpha Platform
 
+{% raw %}
+
 	Article: Q142683
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -49,3 +51,5 @@ permalink: /kb/142/Q142683/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119901/
 
 ## Q119901: How to Use the UNION Clause in a FoxPro SELECT Statement
 
+{% raw %}
+
 	Article: Q119901
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.5x 2.60 2.60a | 2.5x 2.60
@@ -115,3 +117,5 @@ permalink: /kb/119/Q119901/
 	
 	=============================================================================
 	
+
+{% endraw %}

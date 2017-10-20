@@ -6,6 +6,8 @@ permalink: /kb/175/Q175970/
 
 ## Q175970: White Paper on Developing Advanced ActiveX Controls
 
+{% raw %}
+
 	Article: Q175970
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -83,3 +85,5 @@ permalink: /kb/175/Q175970/
 	
 	=============================================================================
 	
+
+{% endraw %}

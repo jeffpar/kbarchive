@@ -6,6 +6,8 @@ permalink: /kb/111/Q111596/
 
 ## Q111596: BUG: Dr. Watson Fails to Write Log File
 
+{% raw %}
+
 	Article: Q111596
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -48,3 +50,5 @@ permalink: /kb/111/Q111596/
 	
 	=============================================================================
 	
+
+{% endraw %}

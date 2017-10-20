@@ -6,6 +6,8 @@ permalink: /kb/169/Q169234/
 
 ## Q169234: Cannot Set Separator in Regional Settings Tool to Null
 
+{% raw %}
+
 	Article: Q169234
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -85,3 +87,5 @@ permalink: /kb/169/Q169234/
 	
 	=============================================================================
 	
+
+{% endraw %}

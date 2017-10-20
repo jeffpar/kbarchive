@@ -6,6 +6,8 @@ permalink: /kb/248/Q248052/
 
 ## Q248052: XGEN: Installing Encryption on Exchange Server w. French Setting
 
+{% raw %}
+
 	Article: Q248052
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,8.03,8.5,9.0
@@ -212,3 +214,5 @@ permalink: /kb/248/Q248052/
 	
 	=============================================================================
 	
+
+{% endraw %}

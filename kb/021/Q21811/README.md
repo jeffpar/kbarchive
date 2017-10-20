@@ -6,6 +6,8 @@ permalink: /kb/021/Q21811/
 
 ## Q21811: Maximum Number of Records in a Random Access File
 
+{% raw %}
+
 	Article: Q21811
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -37,3 +39,5 @@ permalink: /kb/021/Q21811/
 	1. 8.192 million records with 4 bytes each
 	
 	2. 2.048 million records with 16 bytes each
+
+{% endraw %}

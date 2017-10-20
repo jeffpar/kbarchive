@@ -6,6 +6,8 @@ permalink: /kb/101/Q101679/
 
 ## Q101679: X400: Err Msg: EiconCard X.25 Error Messages
 
+{% raw %}
+
 	Article: Q101679
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -99,3 +101,5 @@ permalink: /kb/101/Q101679/
 	
 	=============================================================================
 	
+
+{% endraw %}

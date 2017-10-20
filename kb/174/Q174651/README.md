@@ -6,6 +6,8 @@ permalink: /kb/174/Q174651/
 
 ## Q174651: PRB: Unexpected Message: &quot;Add this project to SourceSafe&quot; in VB
 
+{% raw %}
+
 	Article: Q174651
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/174/Q174651/
 	
 	=============================================================================
 	
+
+{% endraw %}

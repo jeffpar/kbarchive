@@ -6,6 +6,8 @@ permalink: /kb/295/Q295840/
 
 ## Q295840: HOWTO: Determine if a Service Exists Using Visual FoxPro
 
+{% raw %}
+
 	Article: Q295840
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -95,3 +97,5 @@ permalink: /kb/295/Q295840/
 	
 	=============================================================================
 	
+
+{% endraw %}

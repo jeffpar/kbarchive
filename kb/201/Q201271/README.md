@@ -6,6 +6,8 @@ permalink: /kb/201/Q201271/
 
 ## Q201271: XGEN: Exchange Server 5.5 Default File Structure
 
+{% raw %}
+
 	Article: Q201271
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -111,3 +113,5 @@ permalink: /kb/201/Q201271/
 	
 	=============================================================================
 	
+
+{% endraw %}

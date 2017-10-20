@@ -6,6 +6,8 @@ permalink: /kb/083/Q83583/
 
 ## Q83583: Windows 3.1 Does Not Allow Swap File on Stacker Drive
 
+{% raw %}
+
 	Article: Q83583
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.1,3.11
@@ -90,3 +92,5 @@ permalink: /kb/083/Q83583/
 	
 	=============================================================================
 	
+
+{% endraw %}

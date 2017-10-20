@@ -6,6 +6,8 @@ permalink: /kb/261/Q261033/
 
 ## Q261033: MCM2: Missing Textures on Bike &amp; Rider Tab After You Exit Event
 
+{% raw %}
+
 	Article: Q261033
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -61,3 +63,5 @@ permalink: /kb/261/Q261033/
 	
 	=============================================================================
 	
+
+{% endraw %}

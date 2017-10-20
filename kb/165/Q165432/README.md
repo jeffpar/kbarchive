@@ -6,6 +6,8 @@ permalink: /kb/165/Q165432/
 
 ## Q165432: PRB: DBGrid Does Not Insert Record If Field Name Contains Dash
 
+{% raw %}
+
 	Article: Q165432
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -106,3 +108,5 @@ permalink: /kb/165/Q165432/
 	
 	=============================================================================
 	
+
+{% endraw %}

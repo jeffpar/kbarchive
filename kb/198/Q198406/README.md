@@ -6,6 +6,8 @@ permalink: /kb/198/Q198406/
 
 ## Q198406: RIP Version 2 Does Not Advertise Subnet Routes
 
+{% raw %}
+
 	Article: Q198406
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/198/Q198406/
 	
 	=============================================================================
 	
+
+{% endraw %}

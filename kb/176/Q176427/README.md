@@ -6,6 +6,8 @@ permalink: /kb/176/Q176427/
 
 ## Q176427: Daorisc.exe Installs DAO for Alpha (RISC)
 
+{% raw %}
+
 	Article: Q176427
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -68,3 +70,5 @@ permalink: /kb/176/Q176427/
 	
 	=============================================================================
 	
+
+{% endraw %}

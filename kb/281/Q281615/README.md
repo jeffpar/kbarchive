@@ -6,6 +6,8 @@ permalink: /kb/281/Q281615/
 
 ## Q281615: Combat Flight Simulator 2: Frame Rate Drops with Tool Tips
 
+{% raw %}
+
 	Article: Q281615
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/281/Q281615/
 	
 	=============================================================================
 	
+
+{% endraw %}

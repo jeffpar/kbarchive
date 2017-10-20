@@ -6,6 +6,8 @@ permalink: /kb/176/Q176888/
 
 ## Q176888: PRB: Using &quot;!=&quot; in a Join Statement Does Not Return Records
 
+{% raw %}
+
 	Article: Q176888
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -97,3 +99,5 @@ permalink: /kb/176/Q176888/
 	
 	=============================================================================
 	
+
+{% endraw %}

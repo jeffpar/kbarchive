@@ -6,6 +6,8 @@ permalink: /kb/096/Q96494/
 
 ## Q96494: README.TXT: Microsoft MS-DOS 6 Upgrade (Part 3 of 3)
 
+{% raw %}
+
 	Article: Q96494
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -567,3 +569,5 @@ permalink: /kb/096/Q96494/
 	
 	=============================================================================
 	
+
+{% endraw %}

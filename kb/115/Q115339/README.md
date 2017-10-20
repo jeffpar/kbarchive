@@ -6,6 +6,8 @@ permalink: /kb/115/Q115339/
 
 ## Q115339: STOP Message During Setup on Compaq SystemPro
 
+{% raw %}
+
 	Article: Q115339
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -50,3 +52,5 @@ permalink: /kb/115/Q115339/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190159/
 
 ## Q190159: Returning Username Rather than Computername in Terminal Server
 
+{% raw %}
+
 	Article: Q190159
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -92,3 +94,5 @@ permalink: /kb/190/Q190159/
 	
 	=============================================================================
 	
+
+{% endraw %}

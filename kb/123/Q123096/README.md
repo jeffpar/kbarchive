@@ -6,6 +6,8 @@ permalink: /kb/123/Q123096/
 
 ## Q123096: Windows 95 Err Msg: Setup Error G1. Windows Setup Cannot...
 
+{% raw %}
+
 	Article: Q123096
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -75,3 +77,5 @@ permalink: /kb/123/Q123096/
 	
 	=============================================================================
 	
+
+{% endraw %}

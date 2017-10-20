@@ -6,6 +6,8 @@ permalink: /kb/130/Q130293/
 
 ## Q130293: Norton Desktop Groups Not Converted by Windows 95
 
+{% raw %}
+
 	Article: Q130293
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/130/Q130293/
 	
 	=============================================================================
 	
+
+{% endraw %}

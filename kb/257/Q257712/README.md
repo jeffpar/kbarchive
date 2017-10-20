@@ -6,6 +6,8 @@ permalink: /kb/257/Q257712/
 
 ## Q257712: FIX: DBCS Characters Cause Duplicate Column Name Using Jet 4
 
+{% raw %}
+
 	Article: Q257712
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -104,3 +106,5 @@ permalink: /kb/257/Q257712/
 	
 	=============================================================================
 	
+
+{% endraw %}

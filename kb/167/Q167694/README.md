@@ -6,6 +6,8 @@ permalink: /kb/167/Q167694/
 
 ## Q167694: WD97: HTML Alternate Text Displayed with Object
 
+{% raw %}
+
 	Article: Q167694
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/167/Q167694/
 	
 	=============================================================================
 	
+
+{% endraw %}

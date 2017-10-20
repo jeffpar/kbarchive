@@ -6,6 +6,8 @@ permalink: /kb/117/Q117852/
 
 ## Q117852: Writer: List of Picture Window Graphics
 
+{% raw %}
+
 	Article: Q117852
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0
@@ -97,3 +99,5 @@ permalink: /kb/117/Q117852/
 	
 	=============================================================================
 	
+
+{% endraw %}

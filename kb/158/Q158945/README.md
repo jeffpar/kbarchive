@@ -6,6 +6,8 @@ permalink: /kb/158/Q158945/
 
 ## Q158945: Display Changes to Low Resolution After Rebooting
 
+{% raw %}
+
 	Article: Q158945
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -48,3 +50,5 @@ permalink: /kb/158/Q158945/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104688/
 
 ## Q104688: PC Win: File Associations for WordPerfect Attachments
 
+{% raw %}
+
 	Article: Q104688
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -105,3 +107,5 @@ permalink: /kb/104/Q104688/
 	
 	=============================================================================
 	
+
+{% endraw %}

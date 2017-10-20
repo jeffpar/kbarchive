@@ -6,6 +6,8 @@ permalink: /kb/189/Q189753/
 
 ## Q189753: XCON: Exchange MTA Logs Event 1136
 
+{% raw %}
+
 	Article: Q189753
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -68,3 +70,5 @@ permalink: /kb/189/Q189753/
 	
 	=============================================================================
 	
+
+{% endraw %}

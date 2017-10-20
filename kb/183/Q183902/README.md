@@ -6,6 +6,8 @@ permalink: /kb/183/Q183902/
 
 ## Q183902: Dead Gateway Detection Is Not Triggered During Logon
 
+{% raw %}
+
 	Article: Q183902
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
@@ -118,3 +120,5 @@ permalink: /kb/183/Q183902/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83521/
 
 ## Q83521: Inconsistent File Manager Tiling Behavior
 
+{% raw %}
+
 	Article: Q83521
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -42,3 +44,5 @@ permalink: /kb/083/Q83521/
 	
 	=============================================================================
 	
+
+{% endraw %}

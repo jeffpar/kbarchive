@@ -6,6 +6,8 @@ permalink: /kb/216/Q216712/
 
 ## Q216712: Error Message in SPOOLER(03) Printing from MS-DOS Window
 
+{% raw %}
+
 	Article: Q216712
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -66,3 +68,5 @@ permalink: /kb/216/Q216712/
 	
 	=============================================================================
 	
+
+{% endraw %}

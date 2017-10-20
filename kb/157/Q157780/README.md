@@ -6,6 +6,8 @@ permalink: /kb/157/Q157780/
 
 ## Q157780: XADM:  How to Change the Service Account Password
 
+{% raw %}
+
 	Article: Q157780
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -109,3 +111,5 @@ permalink: /kb/157/Q157780/
 	
 	=============================================================================
 	
+
+{% endraw %}

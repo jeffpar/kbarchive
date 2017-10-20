@@ -6,6 +6,8 @@ permalink: /kb/177/Q177119/
 
 ## Q177119: Unable to Create Zones in DNS Manager
 
+{% raw %}
+
 	Article: Q177119
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -89,3 +91,5 @@ permalink: /kb/177/Q177119/
 	
 	=============================================================================
 	
+
+{% endraw %}

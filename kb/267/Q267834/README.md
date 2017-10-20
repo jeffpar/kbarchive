@@ -6,6 +6,8 @@ permalink: /kb/267/Q267834/
 
 ## Q267834: &quot;Terminal Service Client Disconnected&quot; Message Connecting to TS
 
+{% raw %}
+
 	Article: Q267834
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/267/Q267834/
 	
 	=============================================================================
 	
+
+{% endraw %}

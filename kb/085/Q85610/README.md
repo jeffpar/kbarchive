@@ -6,6 +6,8 @@ permalink: /kb/085/Q85610/
 
 ## Q85610: FAX: Microsoft Mail Gateway to Fax Floppy Disk Layout
 
+{% raw %}
+
 	Article: Q85610
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -71,3 +73,5 @@ permalink: /kb/085/Q85610/
 	
 	=============================================================================
 	
+
+{% endraw %}

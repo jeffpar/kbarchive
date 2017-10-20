@@ -6,6 +6,8 @@ permalink: /kb/195/Q195944/
 
 ## Q195944: SMS: Package Command Manager Preferred Server Selection
 
+{% raw %}
+
 	Article: Q195944
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -194,3 +196,5 @@ permalink: /kb/195/Q195944/
 	
 	=============================================================================
 	
+
+{% endraw %}

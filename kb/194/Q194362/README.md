@@ -6,6 +6,8 @@ permalink: /kb/194/Q194362/
 
 ## Q194362: Encarta 99: No Sound in Home Screen, Animations, Interactivities
 
+{% raw %}
+
 	Article: Q194362
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -103,3 +105,5 @@ permalink: /kb/194/Q194362/
 	
 	=============================================================================
 	
+
+{% endraw %}

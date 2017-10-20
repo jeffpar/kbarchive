@@ -6,6 +6,8 @@ permalink: /kb/155/Q155896/
 
 ## Q155896: XFOR: MTA Causes Application Exception Error in Oxpufret
 
+{% raw %}
+
 	Article: Q155896
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -62,3 +64,5 @@ permalink: /kb/155/Q155896/
 	
 	=============================================================================
 	
+
+{% endraw %}

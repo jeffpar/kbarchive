@@ -6,6 +6,8 @@ permalink: /kb/163/Q163287/
 
 ## Q163287: XCON: MTA Events 2200 and 2201
 
+{% raw %}
+
 	Article: Q163287
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -68,3 +70,5 @@ permalink: /kb/163/Q163287/
 	
 	=============================================================================
 	
+
+{% endraw %}

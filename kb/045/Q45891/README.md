@@ -6,6 +6,8 @@ permalink: /kb/045/Q45891/
 
 ## Q45891: QuickBASIC Can Corrupt COMSPEC under PC-DOS 3.30, Maybe Hang
 
+{% raw %}
+
 	Article: Q45891
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -74,3 +76,5 @@ permalink: /kb/045/Q45891/
 	END SUB
 	
 	Additional reference words: SR# S890511-152 B_BasicCom
+
+{% endraw %}

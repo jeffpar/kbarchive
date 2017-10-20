@@ -6,6 +6,8 @@ permalink: /kb/231/Q231517/
 
 ## Q231517: MapPoint 2000: Graphics in Legend Are Jagged When You Print Map
 
+{% raw %}
+
 	Article: Q231517
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -103,3 +105,5 @@ permalink: /kb/231/Q231517/
 	
 	=============================================================================
 	
+
+{% endraw %}

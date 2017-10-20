@@ -6,6 +6,8 @@ permalink: /kb/165/Q165348/
 
 ## Q165348: PPT7: Date Changes on Presentations Stored on Windows NT Server
 
+{% raw %}
+
 	Article: Q165348
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; winnt:3.51
@@ -50,3 +52,5 @@ permalink: /kb/165/Q165348/
 	
 	=============================================================================
 	
+
+{% endraw %}

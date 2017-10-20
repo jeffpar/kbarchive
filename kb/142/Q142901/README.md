@@ -6,6 +6,8 @@ permalink: /kb/142/Q142901/
 
 ## Q142901: No Response Dialing Another Computer with Chat
 
+{% raw %}
+
 	Article: Q142901
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11,95
@@ -85,3 +87,5 @@ permalink: /kb/142/Q142901/
 	
 	=============================================================================
 	
+
+{% endraw %}

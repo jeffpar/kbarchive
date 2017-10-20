@@ -6,6 +6,8 @@ permalink: /kb/092/Q92394/
 
 ## Q92394: HOWTO: Filter Keystrokes in Controls Derived from CEdit Class
 
+{% raw %}
+
 	Article: Q92394
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,2.2,4.0,7.0
@@ -81,3 +83,5 @@ permalink: /kb/092/Q92394/
 	
 	=============================================================================
 	
+
+{% endraw %}

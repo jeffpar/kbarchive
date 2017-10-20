@@ -6,6 +6,8 @@ permalink: /kb/108/Q108732/
 
 ## Q108732: X400: Address Syntax
 
+{% raw %}
+
 	Article: Q108732
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0,3.2
@@ -83,3 +85,5 @@ permalink: /kb/108/Q108732/
 	
 	=============================================================================
 	
+
+{% endraw %}

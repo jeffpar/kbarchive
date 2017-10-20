@@ -6,6 +6,8 @@ permalink: /kb/079/Q79829/
 
 ## Q79829: FIX: /Zm and &#36;-Constant Produces A2075 in MASM 6.0
 
+{% raw %}
+
 	Article: Q79829
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0
@@ -85,3 +87,5 @@ permalink: /kb/079/Q79829/
 	
 	=============================================================================
 	
+
+{% endraw %}

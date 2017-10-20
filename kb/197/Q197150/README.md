@@ -6,6 +6,8 @@ permalink: /kb/197/Q197150/
 
 ## Q197150: WD97: Automatic Captioning Doesn't Label Inserted Files
 
+{% raw %}
+
 	Article: Q197150
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -56,3 +58,5 @@ permalink: /kb/197/Q197150/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111606/
 
 ## Q111606: BUG: ROP2 Code Applied Incorrectly in Pie() Function
 
+{% raw %}
+
 	Article: Q111606
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -58,3 +60,5 @@ permalink: /kb/111/Q111606/
 	
 	=============================================================================
 	
+
+{% endraw %}

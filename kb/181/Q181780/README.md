@@ -6,6 +6,8 @@ permalink: /kb/181/Q181780/
 
 ## Q181780: WD97: Text from WordBasic.Input Command Truncated After Comma
 
+{% raw %}
+
 	Article: Q181780
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -96,3 +98,5 @@ permalink: /kb/181/Q181780/
 	
 	=============================================================================
 	
+
+{% endraw %}

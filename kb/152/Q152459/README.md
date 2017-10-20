@@ -6,6 +6,8 @@ permalink: /kb/152/Q152459/
 
 ## Q152459: XCLN: Save As Attachment Not Available in Messages
 
+{% raw %}
+
 	Article: Q152459
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -49,3 +51,5 @@ permalink: /kb/152/Q152459/
 	
 	=============================================================================
 	
+
+{% endraw %}

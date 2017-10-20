@@ -6,6 +6,8 @@ permalink: /kb/276/Q276502/
 
 ## Q276502: FP: Server Error: Unable to Retrieve the List of Record Sources
 
+{% raw %}
+
 	Article: Q276502
 	Product(s): Word Front Page
 	Version(s): 
@@ -194,3 +196,5 @@ permalink: /kb/276/Q276502/
 	
 	=============================================================================
 	
+
+{% endraw %}

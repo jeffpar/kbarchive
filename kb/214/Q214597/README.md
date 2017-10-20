@@ -6,6 +6,8 @@ permalink: /kb/214/Q214597/
 
 ## Q214597: Cannot Run Office in Maintenance Mode After Using Sysprep
 
+{% raw %}
+
 	Article: Q214597
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/214/Q214597/
 	
 	=============================================================================
 	
+
+{% endraw %}

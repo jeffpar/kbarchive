@@ -6,6 +6,8 @@ permalink: /kb/135/Q135356/
 
 ## Q135356: Win32 CPIC CMEPLN Call May Return Truncated Partner LU Name
 
+{% raw %}
+
 	Article: Q135356
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -67,3 +69,5 @@ permalink: /kb/135/Q135356/
 	
 	=============================================================================
 	
+
+{% endraw %}

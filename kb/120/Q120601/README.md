@@ -6,6 +6,8 @@ permalink: /kb/120/Q120601/
 
 ## Q120601: PPT: PowerPoint OLE Objects Ignore Default Template.
 
+{% raw %}
+
 	Article: Q120601
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -81,3 +83,5 @@ permalink: /kb/120/Q120601/
 	
 	=============================================================================
 	
+
+{% endraw %}

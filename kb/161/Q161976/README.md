@@ -6,6 +6,8 @@ permalink: /kb/161/Q161976/
 
 ## Q161976: WD97: Reveal Formatting Help Tool Not Installed
 
+{% raw %}
+
 	Article: Q161976
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/161/Q161976/
 	
 	=============================================================================
 	
+
+{% endraw %}

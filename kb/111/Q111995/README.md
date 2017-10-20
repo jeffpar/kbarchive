@@ -6,6 +6,8 @@ permalink: /kb/111/Q111995/
 
 ## Q111995: STOP Message: 0xc000000D
 
+{% raw %}
+
 	Article: Q111995
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -64,3 +66,5 @@ permalink: /kb/111/Q111995/
 	
 	=============================================================================
 	
+
+{% endraw %}

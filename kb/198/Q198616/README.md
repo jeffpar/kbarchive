@@ -6,6 +6,8 @@ permalink: /kb/198/Q198616/
 
 ## Q198616: MCSE Readiness Review Windows NT Server Corrections and Comments
 
+{% raw %}
+
 	Article: Q198616
 	Product(s): Microsoft Press
 	Version(s): 
@@ -209,3 +211,5 @@ permalink: /kb/198/Q198616/
 	
 	=============================================================================
 	
+
+{% endraw %}

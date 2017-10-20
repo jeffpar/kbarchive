@@ -6,6 +6,8 @@ permalink: /kb/082/Q82858/
 
 ## Q82858: How to Restore a System After Installing Desktop for Windows
 
+{% raw %}
+
 	Article: Q82858
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -81,3 +83,5 @@ permalink: /kb/082/Q82858/
 	
 	=============================================================================
 	
+
+{% endraw %}

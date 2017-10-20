@@ -6,6 +6,8 @@ permalink: /kb/191/Q191771/
 
 ## Q191771: How to Alter a Program's Base Priority at a Command Prompt
 
+{% raw %}
+
 	Article: Q191771
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/191/Q191771/
 	
 	=============================================================================
 	
+
+{% endraw %}

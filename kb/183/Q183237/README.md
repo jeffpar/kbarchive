@@ -6,6 +6,8 @@ permalink: /kb/183/Q183237/
 
 ## Q183237: Windows NT 4.0 Fails to Start on a Uniprocessor Compaq
 
+{% raw %}
+
 	Article: Q183237
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/183/Q183237/
 	
 	=============================================================================
 	
+
+{% endraw %}

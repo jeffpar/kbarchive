@@ -6,6 +6,8 @@ permalink: /kb/111/Q111827/
 
 ## Q111827: Using At Work PC Fax with Other Communications Software
 
+{% raw %}
+
 	Article: Q111827
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -65,3 +67,5 @@ permalink: /kb/111/Q111827/
 	
 	=============================================================================
 	
+
+{% endraw %}

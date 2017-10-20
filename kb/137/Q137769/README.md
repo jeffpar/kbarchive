@@ -6,6 +6,8 @@ permalink: /kb/137/Q137769/
 
 ## Q137769: Baseball Daily 1995: How to Download Previous Issues
 
+{% raw %}
+
 	Article: Q137769
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/137/Q137769/
 	
 	=============================================================================
 	
+
+{% endraw %}

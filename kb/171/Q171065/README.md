@@ -6,6 +6,8 @@ permalink: /kb/171/Q171065/
 
 ## Q171065: FIX: Breakpoint Skip Count Resets to Zero After First Pass
 
+{% raw %}
+
 	Article: Q171065
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -133,3 +135,5 @@ permalink: /kb/171/Q171065/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186103/
 
 ## Q186103: HOWTO: Use Oracle Nextval Function from Visual FoxPro
 
+{% raw %}
+
 	Article: Q186103
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -90,3 +92,5 @@ permalink: /kb/186/Q186103/
 	
 	=============================================================================
 	
+
+{% endraw %}

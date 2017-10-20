@@ -6,6 +6,8 @@ permalink: /kb/172/Q172434/
 
 ## Q172434: Manager Displays Wrong Values for 802.2 T1 and Ti Timer Ticks
 
+{% raw %}
+
 	Article: Q172434
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -107,3 +109,5 @@ permalink: /kb/172/Q172434/
 	
 	=============================================================================
 	
+
+{% endraw %}

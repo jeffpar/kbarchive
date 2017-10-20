@@ -6,6 +6,8 @@ permalink: /kb/089/Q89722/
 
 ## Q89722: Problems with MS-DOS 5.0 on Leading Edge Model M and Sperry HT
 
+{% raw %}
+
 	Article: Q89722
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -49,3 +51,5 @@ permalink: /kb/089/Q89722/
 	
 	=============================================================================
 	
+
+{% endraw %}

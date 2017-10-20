@@ -6,6 +6,8 @@ permalink: /kb/080/Q80523/
 
 ## Q80523: FltSim: Pause in Formation Flying Does Not Pause Chase Plane
 
+{% raw %}
+
 	Article: Q80523
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/080/Q80523/
 	
 	=============================================================================
 	
+
+{% endraw %}

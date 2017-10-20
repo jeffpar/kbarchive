@@ -6,6 +6,8 @@ permalink: /kb/132/Q132110/
 
 ## Q132110: HOWTO: How to Create a Recessed Status Bar Area
 
+{% raw %}
+
 	Article: Q132110
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0
@@ -63,3 +65,5 @@ permalink: /kb/132/Q132110/
 	
 	=============================================================================
 	
+
+{% endraw %}

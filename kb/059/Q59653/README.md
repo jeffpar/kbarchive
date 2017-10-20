@@ -6,6 +6,8 @@ permalink: /kb/059/Q59653/
 
 ## Q59653: Inappropriate File Save Error Message in Windows 3.0
 
+{% raw %}
+
 	Article: Q59653
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/059/Q59653/
 	
 	=============================================================================
 	
+
+{% endraw %}

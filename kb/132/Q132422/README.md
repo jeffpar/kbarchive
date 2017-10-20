@@ -6,6 +6,8 @@ permalink: /kb/132/Q132422/
 
 ## Q132422: HOWTO: Clear an istream Object During Extraction
 
+{% raw %}
+
 	Article: Q132422
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:7.0;WIN3X:1.0,1.5,1.51,1.52;WINNT:2.0,2.1,4.0,5.0;
@@ -110,3 +112,5 @@ permalink: /kb/132/Q132422/
 	
 	=============================================================================
 	
+
+{% endraw %}

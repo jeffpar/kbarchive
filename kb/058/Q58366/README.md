@@ -6,6 +6,8 @@ permalink: /kb/058/Q58366/
 
 ## Q58366: Installing Windows 3.0 on a Network Server
 
+{% raw %}
+
 	Article: Q58366
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/058/Q58366/
 	
 	=============================================================================
 	
+
+{% endraw %}

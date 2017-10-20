@@ -6,6 +6,8 @@ permalink: /kb/280/Q280803/
 
 ## Q280803: PRB: CoCreateInstance Stops and Creates Many ATL Objects
 
+{% raw %}
+
 	Article: Q280803
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -164,3 +166,5 @@ permalink: /kb/280/Q280803/
 	
 	=============================================================================
 	
+
+{% endraw %}

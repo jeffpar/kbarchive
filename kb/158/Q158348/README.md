@@ -6,6 +6,8 @@ permalink: /kb/158/Q158348/
 
 ## Q158348: WD97: How to Change the Default File Name and Directory
 
+{% raw %}
+
 	Article: Q158348
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -117,3 +119,5 @@ permalink: /kb/158/Q158348/
 	
 	=============================================================================
 	
+
+{% endraw %}

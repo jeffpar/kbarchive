@@ -6,6 +6,8 @@ permalink: /kb/314/Q314739/
 
 ## Q314739: XADM: Recipients Exmerged to New IS in New Org or Site Get NDRs
 
+{% raw %}
+
 	Article: Q314739
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -76,3 +78,5 @@ permalink: /kb/314/Q314739/
 	
 	=============================================================================
 	
+
+{% endraw %}

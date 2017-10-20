@@ -6,6 +6,8 @@ permalink: /kb/262/Q262781/
 
 ## Q262781: MSN 5.1 download client sometimes freezes at the select payment
 
+{% raw %}
+
 	Article: Q262781
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:5.1
@@ -46,3 +48,5 @@ permalink: /kb/262/Q262781/
 	
 	=============================================================================
 	
+
+{% endraw %}

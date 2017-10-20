@@ -6,6 +6,8 @@ permalink: /kb/197/Q197986/
 
 ## Q197986: How to Configure Windows 95 Policies with Load Balancing
 
+{% raw %}
+
 	Article: Q197986
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0
@@ -153,3 +155,5 @@ permalink: /kb/197/Q197986/
 	
 	=============================================================================
 	
+
+{% endraw %}

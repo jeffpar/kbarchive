@@ -6,6 +6,8 @@ permalink: /kb/142/Q142420/
 
 ## Q142420: DOC: Setdflag.c Sample for _CrtSetDbgFlag Missing Tilde (~)
 
+{% raw %}
+
 	Article: Q142420
 	Product(s): Microsoft C Compiler
 	Version(s): WinNT:4.0,4.1,4.2,5.0
@@ -58,3 +60,5 @@ permalink: /kb/142/Q142420/
 	
 	=============================================================================
 	
+
+{% endraw %}

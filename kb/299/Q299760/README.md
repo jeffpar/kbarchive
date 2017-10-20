@@ -6,6 +6,8 @@ permalink: /kb/299/Q299760/
 
 ## Q299760: Train Simulator: How to Use the Troubleshooter
 
+{% raw %}
+
 	Article: Q299760
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -124,3 +126,5 @@ permalink: /kb/299/Q299760/
 	
 	=============================================================================
 	
+
+{% endraw %}

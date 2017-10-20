@@ -6,6 +6,8 @@ permalink: /kb/222/Q222680/
 
 ## Q222680: OWA Does Not Work After Upgrading to Japanese Version of SBS 4.5
 
+{% raw %}
+
 	Article: Q222680
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -79,3 +81,5 @@ permalink: /kb/222/Q222680/
 	
 	=============================================================================
 	
+
+{% endraw %}

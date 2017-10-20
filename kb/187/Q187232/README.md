@@ -6,6 +6,8 @@ permalink: /kb/187/Q187232/
 
 ## Q187232: HOWTO: Add Multiple Controls to a CoolBar Control Band
 
+{% raw %}
+
 	Article: Q187232
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -159,3 +161,5 @@ permalink: /kb/187/Q187232/
 	
 	=============================================================================
 	
+
+{% endraw %}

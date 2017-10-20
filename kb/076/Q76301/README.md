@@ -6,6 +6,8 @@ permalink: /kb/076/Q76301/
 
 ## Q76301: SAMPLE: VFood.exe Contains Basic Virtual Device (VxD) Structure
 
+{% raw %}
+
 	Article: Q76301
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0
@@ -52,3 +54,5 @@ permalink: /kb/076/Q76301/
 	
 	=============================================================================
 	
+
+{% endraw %}

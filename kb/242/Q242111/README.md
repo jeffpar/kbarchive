@@ -6,6 +6,8 @@ permalink: /kb/242/Q242111/
 
 ## Q242111: Windows NT does not recognize a new CD-ROM drive.
 
+{% raw %}
+
 	Article: Q242111
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/242/Q242111/
 	
 	=============================================================================
 	
+
+{% endraw %}

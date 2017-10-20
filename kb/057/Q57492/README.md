@@ -6,6 +6,8 @@ permalink: /kb/057/Q57492/
 
 ## Q57492: FltSim: Location of Nondirectional Radio Beacons
 
+{% raw %}
+
 	Article: Q57492
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/057/Q57492/
 	
 	=============================================================================
 	
+
+{% endraw %}

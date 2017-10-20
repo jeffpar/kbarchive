@@ -6,6 +6,8 @@ permalink: /kb/011/Q11988/
 
 ## Q11988: Windows File I/O vs. C Run-time File I/O
 
+{% raw %}
+
 	Article: Q11988
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -103,3 +105,5 @@ permalink: /kb/011/Q11988/
 	
 	=============================================================================
 	
+
+{% endraw %}

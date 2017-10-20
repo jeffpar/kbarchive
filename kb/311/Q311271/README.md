@@ -6,6 +6,8 @@ permalink: /kb/311/Q311271/
 
 ## Q311271: Font Selection in a PDT
 
+{% raw %}
+
 	Article: Q311271
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,4.0
@@ -122,3 +124,5 @@ permalink: /kb/311/Q311271/
 	
 	=============================================================================
 	
+
+{% endraw %}

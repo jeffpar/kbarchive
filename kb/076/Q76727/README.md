@@ -6,6 +6,8 @@ permalink: /kb/076/Q76727/
 
 ## Q76727: FIX: MASM 5.1, 6.x, and the LOCK and REP Prefixes
 
+{% raw %}
+
 	Article: Q76727
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.10,5.10a,6.0,6.0a,6.0b,6.1,6.10a,6.11
@@ -136,3 +138,5 @@ permalink: /kb/076/Q76727/
 	
 	=============================================================================
 	
+
+{% endraw %}

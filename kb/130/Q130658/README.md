@@ -6,6 +6,8 @@ permalink: /kb/130/Q130658/
 
 ## Q130658: PRB: &quot;This operation not supported for Class Member Object&quot;
 
+{% raw %}
+
 	Article: Q130658
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -76,3 +78,5 @@ permalink: /kb/130/Q130658/
 	
 	=============================================================================
 	
+
+{% endraw %}

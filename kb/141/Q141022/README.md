@@ -6,6 +6,8 @@ permalink: /kb/141/Q141022/
 
 ## Q141022: How to Change the Setup Application Name
 
+{% raw %}
+
 	Article: Q141022
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -82,3 +84,5 @@ permalink: /kb/141/Q141022/
 	
 	=============================================================================
 	
+
+{% endraw %}

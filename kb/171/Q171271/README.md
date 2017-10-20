@@ -6,6 +6,8 @@ permalink: /kb/171/Q171271/
 
 ## Q171271: FIX: Internet Transfer Control 5.0 Has Bug with &quot;HEAD&quot; Request
 
+{% raw %}
+
 	Article: Q171271
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -276,3 +278,5 @@ permalink: /kb/171/Q171271/
 	
 	=============================================================================
 	
+
+{% endraw %}

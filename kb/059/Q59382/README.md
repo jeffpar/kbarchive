@@ -6,6 +6,8 @@ permalink: /kb/059/Q59382/
 
 ## Q59382: _setcliprgn() Fails to Clip _putimage() Operation
 
+{% raw %}
+
 	Article: Q59382
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -28,3 +30,5 @@ permalink: /kb/059/Q59382/
 	functions. Therefore, the entire image must fit in the clip region for
 	any of it to be displayed. This is in contrast to lines and circles,
 	which are a collection of objects and are clipped as expected.
+
+{% endraw %}

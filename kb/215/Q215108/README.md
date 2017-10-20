@@ -6,6 +6,8 @@ permalink: /kb/215/Q215108/
 
 ## Q215108: SMS: Advertised Programs Wizard Displays Incorrect Message
 
+{% raw %}
+
 	Article: Q215108
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/215/Q215108/
 	
 	=============================================================================
 	
+
+{% endraw %}

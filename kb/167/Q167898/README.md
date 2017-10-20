@@ -6,6 +6,8 @@ permalink: /kb/167/Q167898/
 
 ## Q167898: XCLN: Error Opening .xls from Public Folder
 
+{% raw %}
+
 	Article: Q167898
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.03
@@ -102,3 +104,5 @@ permalink: /kb/167/Q167898/
 	
 	=============================================================================
 	
+
+{% endraw %}

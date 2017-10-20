@@ -6,6 +6,8 @@ permalink: /kb/261/Q261022/
 
 ## Q261022: Motocross Madness 2: Mouse Pointer Is Not Redrawn Properly
 
+{% raw %}
+
 	Article: Q261022
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -76,3 +78,5 @@ permalink: /kb/261/Q261022/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190736/
 
 ## Q190736: FIX: Typing SYS Function Into Hidden Property Causes Crash
 
+{% raw %}
+
 	Article: Q190736
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -66,3 +68,5 @@ permalink: /kb/190/Q190736/
 	
 	=============================================================================
 	
+
+{% endraw %}

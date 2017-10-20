@@ -6,6 +6,8 @@ permalink: /kb/141/Q141640/
 
 ## Q141640: Mac Encarta 96 Encyclopedia: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q141640
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -110,3 +112,5 @@ permalink: /kb/141/Q141640/
 	
 	=============================================================================
 	
+
+{% endraw %}

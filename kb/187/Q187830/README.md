@@ -6,6 +6,8 @@ permalink: /kb/187/Q187830/
 
 ## Q187830: Performance Decrease Transmitting Data over the Network
 
+{% raw %}
+
 	Article: Q187830
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -70,3 +72,5 @@ permalink: /kb/187/Q187830/
 	
 	=============================================================================
 	
+
+{% endraw %}

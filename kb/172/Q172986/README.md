@@ -6,6 +6,8 @@ permalink: /kb/172/Q172986/
 
 ## Q172986: INFO: Microsoft Visual Basic 5.0 Service Pack 2 Release Notes
 
+{% raw %}
+
 	Article: Q172986
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97sp2
@@ -973,3 +975,5 @@ permalink: /kb/172/Q172986/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134876/
 
 ## Q134876: PPT7: PowerPoint Hangs After Canceling &quot;Print To File&quot;
 
+{% raw %}
+
 	Article: Q134876
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -64,3 +66,5 @@ permalink: /kb/134/Q134876/
 	
 	=============================================================================
 	
+
+{% endraw %}

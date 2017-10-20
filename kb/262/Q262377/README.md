@@ -6,6 +6,8 @@ permalink: /kb/262/Q262377/
 
 ## Q262377: SNA Services Fail to Start Due to Logon Failure
 
+{% raw %}
+
 	Article: Q262377
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1 and above,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -149,3 +151,5 @@ permalink: /kb/262/Q262377/
 	
 	=============================================================================
 	
+
+{% endraw %}

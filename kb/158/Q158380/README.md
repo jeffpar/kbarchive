@@ -6,6 +6,8 @@ permalink: /kb/158/Q158380/
 
 ## Q158380: Application Stops Responding after Logging Off
 
+{% raw %}
+
 	Article: Q158380
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:4.0,7.0,7.0a,7.0b; winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/158/Q158380/
 	
 	=============================================================================
 	
+
+{% endraw %}

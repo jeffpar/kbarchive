@@ -6,6 +6,8 @@ permalink: /kb/149/Q149392/
 
 ## Q149392: HOWTO: Using the DAO SDK dbDao Classes with Visual C++ 4.x
 
+{% raw %}
+
 	Article: Q149392
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1
@@ -212,3 +214,5 @@ permalink: /kb/149/Q149392/
 	
 	=============================================================================
 	
+
+{% endraw %}

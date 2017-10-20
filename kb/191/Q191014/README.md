@@ -6,6 +6,8 @@ permalink: /kb/191/Q191014/
 
 ## Q191014: XGEN: How to Obtain the Latest Exchange Server 5.5 Service Pack
 
+{% raw %}
+
 	Article: Q191014
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -111,3 +113,5 @@ permalink: /kb/191/Q191014/
 	
 	=============================================================================
 	
+
+{% endraw %}

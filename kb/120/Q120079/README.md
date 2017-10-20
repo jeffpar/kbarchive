@@ -6,6 +6,8 @@ permalink: /kb/120/Q120079/
 
 ## Q120079: PRB: INT 2Fh 1684h May Return ES == 0 and DI != 0
 
+{% raw %}
+
 	Article: Q120079
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.1
@@ -58,3 +60,5 @@ permalink: /kb/120/Q120079/
 	
 	=============================================================================
 	
+
+{% endraw %}

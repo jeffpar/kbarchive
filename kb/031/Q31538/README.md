@@ -6,6 +6,8 @@ permalink: /kb/031/Q31538/
 
 ## Q31538: MASM 5.10 EXT.DOC: RemoveFile - Frees Attached File Resources
 
+{% raw %}
+
 	Article: Q31538
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -29,3 +31,5 @@ permalink: /kb/031/Q31538/
 	 */
 	flagType pascal RemoveFile (pFileRem)
 	PFILE    pFileRem;
+
+{% endraw %}

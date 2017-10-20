@@ -6,6 +6,8 @@ permalink: /kb/124/Q124035/
 
 ## Q124035: ATI Graphics Pro Turbo Video DAC Incorrectly Detected
 
+{% raw %}
+
 	Article: Q124035
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/124/Q124035/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67086/
 
 ## Q67086: va_arg() Fails on Odd-Size Structs Packed on 1-Byte Boundaries
 
+{% raw %}
+
 	Article: Q67086
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -46,3 +48,5 @@ permalink: /kb/067/Q67086/
 	and 6.00a and QuickC versions 2.00, 2.01, 2.50, and 2.51 (buglist2.00,
 	buglist2.01, buglist2.50, and buglist2.51). We are researching this
 	problem and will post new information here as it becomes available.
+
+{% endraw %}

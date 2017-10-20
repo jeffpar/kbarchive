@@ -6,6 +6,8 @@ permalink: /kb/230/Q230285/
 
 ## Q230285: XADM:&quot;Denial of service&quot; Vulnerability in Store with IMAP
 
+{% raw %}
+
 	Article: Q230285
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -121,3 +123,5 @@ permalink: /kb/230/Q230285/
 	
 	=============================================================================
 	
+
+{% endraw %}

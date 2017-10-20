@@ -6,6 +6,8 @@ permalink: /kb/083/Q83301/
 
 ## Q83301: Retrieving Application Exit Code in MS-DOS Window
 
+{% raw %}
+
 	Article: Q83301
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -54,3 +56,5 @@ permalink: /kb/083/Q83301/
 	
 	=============================================================================
 	
+
+{% endraw %}

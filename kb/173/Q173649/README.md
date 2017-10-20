@@ -6,6 +6,8 @@ permalink: /kb/173/Q173649/
 
 ## Q173649: PRB: Memory Corruption in VB4-16 When Passing Recordset to Sub
 
+{% raw %}
+
 	Article: Q173649
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -149,3 +151,5 @@ permalink: /kb/173/Q173649/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159547/
 
 ## Q159547: WD97: Retrieving Settings from Word Dialog Boxes Using OLE
 
+{% raw %}
+
 	Article: Q159547
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -134,3 +136,5 @@ permalink: /kb/159/Q159547/
 	
 	=============================================================================
 	
+
+{% endraw %}

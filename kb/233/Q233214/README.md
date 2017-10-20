@@ -6,6 +6,8 @@ permalink: /kb/233/Q233214/
 
 ## Q233214: STOP Error Occurs Even If CrashOnAuditFail Is Disabled
 
+{% raw %}
+
 	Article: Q233214
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -96,3 +98,5 @@ permalink: /kb/233/Q233214/
 	
 	=============================================================================
 	
+
+{% endraw %}

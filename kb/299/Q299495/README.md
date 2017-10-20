@@ -6,6 +6,8 @@ permalink: /kb/299/Q299495/
 
 ## Q299495: Explanation of Passport Certificate Dialog Boxes from Browser
 
+{% raw %}
+
 	Article: Q299495
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -48,3 +50,5 @@ permalink: /kb/299/Q299495/
 	
 	=============================================================================
 	
+
+{% endraw %}

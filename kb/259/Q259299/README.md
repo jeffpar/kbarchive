@@ -6,6 +6,8 @@ permalink: /kb/259/Q259299/
 
 ## Q259299: 3270 LU/Pools Accumulate Using HIS 2000 with Active Directory
 
+{% raw %}
+
 	Article: Q259299
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -110,3 +112,5 @@ permalink: /kb/259/Q259299/
 	
 	=============================================================================
 	
+
+{% endraw %}

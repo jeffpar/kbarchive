@@ -6,6 +6,8 @@ permalink: /kb/198/Q198720/
 
 ## Q198720: SMSINST: Script Item Text Must be Defined for Every Language
 
+{% raw %}
+
 	Article: Q198720
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,2.0
@@ -59,3 +61,5 @@ permalink: /kb/198/Q198720/
 	
 	=============================================================================
 	
+
+{% endraw %}

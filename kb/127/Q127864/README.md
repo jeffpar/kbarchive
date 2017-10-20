@@ -6,6 +6,8 @@ permalink: /kb/127/Q127864/
 
 ## Q127864: User Manager for Domains Does Not Set Correct Access
 
+{% raw %}
+
 	Article: Q127864
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -59,3 +61,5 @@ permalink: /kb/127/Q127864/
 	
 	=============================================================================
 	
+
+{% endraw %}

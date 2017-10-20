@@ -6,6 +6,8 @@ permalink: /kb/262/Q262429/
 
 ## Q262429: StarLancer: Description of Enhancement (Cheat) Code
 
+{% raw %}
+
 	Article: Q262429
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -117,3 +119,5 @@ permalink: /kb/262/Q262429/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170657/
 
 ## Q170657: Paste From Command Missing in Embedded Paint Object
 
+{% raw %}
+
 	Article: Q170657
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -42,3 +44,5 @@ permalink: /kb/170/Q170657/
 	
 	=============================================================================
 	
+
+{% endraw %}

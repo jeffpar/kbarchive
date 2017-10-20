@@ -6,6 +6,8 @@ permalink: /kb/176/Q176574/
 
 ## Q176574: Correlation Error Causes Unexpected Loss of TN3270(E) Sessions
 
+{% raw %}
+
 	Article: Q176574
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2
@@ -75,3 +77,5 @@ permalink: /kb/176/Q176574/
 	
 	=============================================================================
 	
+
+{% endraw %}

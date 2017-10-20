@@ -6,6 +6,8 @@ permalink: /kb/161/Q161696/
 
 ## Q161696: XCLN: Unable to Open DCX (FAX) Attachments
 
+{% raw %}
+
 	Article: Q161696
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -98,3 +100,5 @@ permalink: /kb/161/Q161696/
 	
 	=============================================================================
 	
+
+{% endraw %}

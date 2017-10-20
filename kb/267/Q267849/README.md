@@ -6,6 +6,8 @@ permalink: /kb/267/Q267849/
 
 ## Q267849: PRB: Using Color Cursors in a Visual Basic Application
 
+{% raw %}
+
 	Article: Q267849
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -174,3 +176,5 @@ permalink: /kb/267/Q267849/
 	
 	=============================================================================
 	
+
+{% endraw %}

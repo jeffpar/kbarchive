@@ -6,6 +6,8 @@ permalink: /kb/089/Q89697/
 
 ## Q89697: MSD Reports XMS 2.0 When Running in MS-DOS Session
 
+{% raw %}
+
 	Article: Q89697
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21; WINDOWS:3.0,3.0a,3.1,3.11
@@ -38,3 +40,5 @@ permalink: /kb/089/Q89697/
 	
 	=============================================================================
 	
+
+{% endraw %}

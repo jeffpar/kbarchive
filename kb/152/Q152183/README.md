@@ -6,6 +6,8 @@ permalink: /kb/152/Q152183/
 
 ## Q152183: Home Products Err Msg: Invalid Dynamic Link Call to a DLL
 
+{% raw %}
+
 	Article: Q152183
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,95; :1.0,1997 edition
@@ -101,3 +103,5 @@ permalink: /kb/152/Q152183/
 	
 	=============================================================================
 	
+
+{% endraw %}

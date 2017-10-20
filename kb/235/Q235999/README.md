@@ -6,6 +6,8 @@ permalink: /kb/235/Q235999/
 
 ## Q235999: Savedump Does Not Write Event Log Message with Event ID 1000
 
+{% raw %}
+
 	Article: Q235999
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -138,3 +140,5 @@ permalink: /kb/235/Q235999/
 	
 	=============================================================================
 	
+
+{% endraw %}

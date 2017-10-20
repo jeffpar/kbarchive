@@ -6,6 +6,8 @@ permalink: /kb/171/Q171546/
 
 ## Q171546: FIX: VB4 Apps with Unbound DBGrid Fail with VB5 DBGrid
 
+{% raw %}
+
 	Article: Q171546
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,97,97sp1
@@ -83,3 +85,5 @@ permalink: /kb/171/Q171546/
 	
 	=============================================================================
 	
+
+{% endraw %}

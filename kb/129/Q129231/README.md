@@ -6,6 +6,8 @@ permalink: /kb/129/Q129231/
 
 ## Q129231: Digiboard PC/Xem on AT&amp;T Globalyst 600 ISA Causes Errors
 
+{% raw %}
+
 	Article: Q129231
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/129/Q129231/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164794/
 
 ## Q164794: SNA Server Issues with DBCS Printing to an AS/400
 
+{% raw %}
+
 	Article: Q164794
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -213,3 +215,5 @@ permalink: /kb/164/Q164794/
 	
 	=============================================================================
 	
+
+{% endraw %}

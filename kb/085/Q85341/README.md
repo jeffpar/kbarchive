@@ -6,6 +6,8 @@ permalink: /kb/085/Q85341/
 
 ## Q85341: FAX: Installing Fax Components
 
+{% raw %}
+
 	Article: Q85341
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -40,3 +42,5 @@ permalink: /kb/085/Q85341/
 	
 	=============================================================================
 	
+
+{% endraw %}

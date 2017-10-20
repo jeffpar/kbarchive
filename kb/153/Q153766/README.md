@@ -6,6 +6,8 @@ permalink: /kb/153/Q153766/
 
 ## Q153766: XCLN: Substitute IP Address for Server Name
 
+{% raw %}
+
 	Article: Q153766
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -43,3 +45,5 @@ permalink: /kb/153/Q153766/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97470/
 
 ## Q97470: PC WRmt: No Migration for Messages from MS-DOS Remote
 
+{% raw %}
+
 	Article: Q97470
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -49,3 +51,5 @@ permalink: /kb/097/Q97470/
 	
 	=============================================================================
 	
+
+{% endraw %}

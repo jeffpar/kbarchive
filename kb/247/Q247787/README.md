@@ -6,6 +6,8 @@ permalink: /kb/247/Q247787/
 
 ## Q247787: XFOR: SMTP Mail Staying in MTA Queue, with Events 9297 and 3161
 
+{% raw %}
+
 	Article: Q247787
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -86,3 +88,5 @@ permalink: /kb/247/Q247787/
 	
 	=============================================================================
 	
+
+{% endraw %}

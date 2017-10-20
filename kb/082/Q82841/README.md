@@ -6,6 +6,8 @@ permalink: /kb/082/Q82841/
 
 ## Q82841: IBM PC3270 for Windows Version 2.0 Configuration Problems
 
+{% raw %}
+
 	Article: Q82841
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/082/Q82841/
 	
 	=============================================================================
 	
+
+{% endraw %}

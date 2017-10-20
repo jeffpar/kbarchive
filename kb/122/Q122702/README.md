@@ -6,6 +6,8 @@ permalink: /kb/122/Q122702/
 
 ## Q122702: Using the System Account as a Service in Windows NT 3.5
 
+{% raw %}
+
 	Article: Q122702
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/122/Q122702/
 	
 	=============================================================================
 	
+
+{% endraw %}

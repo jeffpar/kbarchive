@@ -6,6 +6,8 @@ permalink: /kb/271/Q271568/
 
 ## Q271568: XCON: MTA Service Does Not Start Due to Event ID 3047
 
+{% raw %}
+
 	Article: Q271568
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -152,3 +154,5 @@ permalink: /kb/271/Q271568/
 	
 	=============================================================================
 	
+
+{% endraw %}

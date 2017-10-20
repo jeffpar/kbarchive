@@ -6,6 +6,8 @@ permalink: /kb/154/Q154741/
 
 ## Q154741: HOWTO: Transmit and Receive Binary Data using MSCOMM32
 
+{% raw %}
+
 	Article: Q154741
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0 3.0b
@@ -170,3 +172,5 @@ permalink: /kb/154/Q154741/
 	
 	=============================================================================
 	
+
+{% endraw %}

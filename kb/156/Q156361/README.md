@@ -6,6 +6,8 @@ permalink: /kb/156/Q156361/
 
 ## Q156361: Names Disappear from Name List in Directory Auditing Window
 
+{% raw %}
+
 	Article: Q156361
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -53,3 +55,5 @@ permalink: /kb/156/Q156361/
 	
 	=============================================================================
 	
+
+{% endraw %}

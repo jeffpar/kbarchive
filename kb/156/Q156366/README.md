@@ -6,6 +6,8 @@ permalink: /kb/156/Q156366/
 
 ## Q156366: How to Run Windows NT Explorer As a Separate Process
 
+{% raw %}
+
 	Article: Q156366
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -83,3 +85,5 @@ permalink: /kb/156/Q156366/
 	
 	=============================================================================
 	
+
+{% endraw %}

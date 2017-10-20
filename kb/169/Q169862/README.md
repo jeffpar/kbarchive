@@ -6,6 +6,8 @@ permalink: /kb/169/Q169862/
 
 ## Q169862: BUG: VFP Functions Cause Infinite Loop in Debugger Watch Window
 
+{% raw %}
+
 	Article: Q169862
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -91,3 +93,5 @@ permalink: /kb/169/Q169862/
 	
 	=============================================================================
 	
+
+{% endraw %}

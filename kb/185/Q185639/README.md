@@ -6,6 +6,8 @@ permalink: /kb/185/Q185639/
 
 ## Q185639: WD97: SaveAs Method Overwrites Existing Documents
 
+{% raw %}
+
 	Article: Q185639
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -143,3 +145,5 @@ permalink: /kb/185/Q185639/
 	
 	=============================================================================
 	
+
+{% endraw %}

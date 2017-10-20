@@ -6,6 +6,8 @@ permalink: /kb/139/Q139755/
 
 ## Q139755: Fax Not Sent or Listed in Files To Send Box
 
+{% raw %}
+
 	Article: Q139755
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/139/Q139755/
 	
 	=============================================================================
 	
+
+{% endraw %}

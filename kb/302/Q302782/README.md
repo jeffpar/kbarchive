@@ -6,6 +6,8 @@ permalink: /kb/302/Q302782/
 
 ## Q302782: Installing MSN Explorer On Windows 95 May Disable LAN Access, In
 
+{% raw %}
+
 	Article: Q302782
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -55,3 +57,5 @@ permalink: /kb/302/Q302782/
 	
 	=============================================================================
 	
+
+{% endraw %}

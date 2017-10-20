@@ -6,6 +6,8 @@ permalink: /kb/126/Q126229/
 
 ## Q126229: DOCERR: Moving Sender Outbox In SMS is Unsupported
 
+{% raw %}
+
 	Article: Q126229
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -79,3 +81,5 @@ permalink: /kb/126/Q126229/
 	
 	=============================================================================
 	
+
+{% endraw %}

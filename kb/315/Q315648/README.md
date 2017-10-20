@@ -6,6 +6,8 @@ permalink: /kb/315/Q315648/
 
 ## Q315648: HOW TO: Use Custom Formatting with a Visual Basic 6.0 Data Grid
 
+{% raw %}
+
 	Article: Q315648
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -232,3 +234,5 @@ permalink: /kb/315/Q315648/
 	
 	=============================================================================
 	
+
+{% endraw %}

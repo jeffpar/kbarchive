@@ -6,6 +6,8 @@ permalink: /kb/239/Q239573/
 
 ## Q239573: WD97: Changes Not Applied to Merged Cell
 
+{% raw %}
+
 	Article: Q239573
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -118,3 +120,5 @@ permalink: /kb/239/Q239573/
 	
 	=============================================================================
 	
+
+{% endraw %}

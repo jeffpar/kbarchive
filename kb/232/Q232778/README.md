@@ -6,6 +6,8 @@ permalink: /kb/232/Q232778/
 
 ## Q232778: FIX: MIDL Gives Warning MIDL2039 When Decimal Parameter Is Used
 
+{% raw %}
+
 	Article: Q232778
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -108,3 +110,5 @@ permalink: /kb/232/Q232778/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147923/
 
 ## Q147923: SHUTCMD.EXE Does Not Restart Remote Computer
 
+{% raw %}
+
 	Article: Q147923
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -54,3 +56,5 @@ permalink: /kb/147/Q147923/
 	
 	=============================================================================
 	
+
+{% endraw %}

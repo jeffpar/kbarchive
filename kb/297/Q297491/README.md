@@ -6,6 +6,8 @@ permalink: /kb/297/Q297491/
 
 ## Q297491: Error Message: MSN Explorer (MSN Version 6.1)--We Were Not Able
 
+{% raw %}
+
 	Article: Q297491
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -151,3 +153,5 @@ permalink: /kb/297/Q297491/
 	
 	=============================================================================
 	
+
+{% endraw %}

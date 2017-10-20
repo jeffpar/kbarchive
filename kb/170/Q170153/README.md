@@ -6,6 +6,8 @@ permalink: /kb/170/Q170153/
 
 ## Q170153: FIX: Excel Automation Samples Cause Errors with Excel 97
 
+{% raw %}
+
 	Article: Q170153
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -95,3 +97,5 @@ permalink: /kb/170/Q170153/
 	
 	=============================================================================
 	
+
+{% endraw %}

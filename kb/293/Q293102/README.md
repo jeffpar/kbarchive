@@ -6,6 +6,8 @@ permalink: /kb/293/Q293102/
 
 ## Q293102: Office 2000 Small Business At A Glance Comments and Corrections
 
+{% raw %}
+
 	Article: Q293102
 	Product(s): Microsoft Press
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/293/Q293102/
 	
 	=============================================================================
 	
+
+{% endraw %}

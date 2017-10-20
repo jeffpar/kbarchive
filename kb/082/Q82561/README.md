@@ -6,6 +6,8 @@ permalink: /kb/082/Q82561/
 
 ## Q82561: Shading Too Dark on Some Dot-Matrix &amp; Laser Printers
 
+{% raw %}
+
 	Article: Q82561
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/082/Q82561/
 	
 	=============================================================================
 	
+
+{% endraw %}

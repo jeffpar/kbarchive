@@ -6,6 +6,8 @@ permalink: /kb/318/Q318991/
 
 ## Q318991: FIX: Memory Leak with Function in SELECT with ORDER BY
 
+{% raw %}
+
 	Article: Q318991
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -81,3 +83,5 @@ permalink: /kb/318/Q318991/
 	
 	=============================================================================
 	
+
+{% endraw %}

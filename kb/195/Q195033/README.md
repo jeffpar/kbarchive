@@ -6,6 +6,8 @@ permalink: /kb/195/Q195033/
 
 ## Q195033: BUG: Assertion Failed When Opening a Second ActiveX Document
 
+{% raw %}
+
 	Article: Q195033
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -166,3 +168,5 @@ permalink: /kb/195/Q195033/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130245/
 
 ## Q130245: MAC Dangerous Creatures: Boxes Appear When Typing
 
+{% raw %}
+
 	Article: Q130245
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -51,3 +53,5 @@ permalink: /kb/130/Q130245/
 	
 	=============================================================================
 	
+
+{% endraw %}

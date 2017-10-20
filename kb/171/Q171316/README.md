@@ -6,6 +6,8 @@ permalink: /kb/171/Q171316/
 
 ## Q171316: FIX: Setting Default Value Using CreateField Gives Wrong Value
 
+{% raw %}
+
 	Article: Q171316
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0sp1
@@ -228,3 +230,5 @@ permalink: /kb/171/Q171316/
 	
 	=============================================================================
 	
+
+{% endraw %}

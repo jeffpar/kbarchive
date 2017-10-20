@@ -6,6 +6,8 @@ permalink: /kb/163/Q163400/
 
 ## Q163400: SET: Screen Displays &quot;Boot 2&gt;&quot; Prompt After First Setup Reboot
 
+{% raw %}
+
 	Article: Q163400
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -60,3 +62,5 @@ permalink: /kb/163/Q163400/
 	
 	=============================================================================
 	
+
+{% endraw %}

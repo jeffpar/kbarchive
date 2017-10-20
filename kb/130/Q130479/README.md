@@ -6,6 +6,8 @@ permalink: /kb/130/Q130479/
 
 ## Q130479: FTP OnNet PPP Connection to Windows NT 3.5 RAS Server Fails
 
+{% raw %}
+
 	Article: Q130479
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -52,3 +54,5 @@ permalink: /kb/130/Q130479/
 	
 	=============================================================================
 	
+
+{% endraw %}

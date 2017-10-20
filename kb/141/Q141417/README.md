@@ -6,6 +6,8 @@ permalink: /kb/141/Q141417/
 
 ## Q141417: FIX: Problem Occurs During File Open on Win32s
 
+{% raw %}
+
 	Article: Q141417
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -226,3 +228,5 @@ permalink: /kb/141/Q141417/
 	
 	=============================================================================
 	
+
+{% endraw %}

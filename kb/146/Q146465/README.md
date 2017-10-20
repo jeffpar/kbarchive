@@ -6,6 +6,8 @@ permalink: /kb/146/Q146465/
 
 ## Q146465: Err Msg: Setup Cannot Run In a 386 Enhanced Mode Windows...
 
+{% raw %}
+
 	Article: Q146465
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.51
@@ -77,3 +79,5 @@ permalink: /kb/146/Q146465/
 	
 	=============================================================================
 	
+
+{% endraw %}

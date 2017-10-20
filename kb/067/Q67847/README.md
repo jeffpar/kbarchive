@@ -6,6 +6,8 @@ permalink: /kb/067/Q67847/
 
 ## Q67847: C 6.00a CD-ROM Setup Does Not Install RAMDRIVE or SMARTDRV
 
+{% raw %}
+
 	Article: Q67847
 	Product(s): See article
 	Version(s): 6.00a  | 6.00a
@@ -30,3 +32,5 @@ permalink: /kb/067/Q67847/
 	Microsoft has confirmed this to be a problem in the C version 6.00a
 	CD-ROM Setup program. We are researching this problem and will post
 	new information here as it becomes available.
+
+{% endraw %}

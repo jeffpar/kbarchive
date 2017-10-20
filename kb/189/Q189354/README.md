@@ -6,6 +6,8 @@ permalink: /kb/189/Q189354/
 
 ## Q189354: Stop 0x0000000a Caused by Defpa.sys
 
+{% raw %}
+
 	Article: Q189354
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -50,3 +52,5 @@ permalink: /kb/189/Q189354/
 	
 	=============================================================================
 	
+
+{% endraw %}

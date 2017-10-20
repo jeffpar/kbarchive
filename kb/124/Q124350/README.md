@@ -6,6 +6,8 @@ permalink: /kb/124/Q124350/
 
 ## Q124350: WFWG Err Msg: The API Return Buffer Is Too Small
 
+{% raw %}
+
 	Article: Q124350
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -65,3 +67,5 @@ permalink: /kb/124/Q124350/
 	
 	=============================================================================
 	
+
+{% endraw %}

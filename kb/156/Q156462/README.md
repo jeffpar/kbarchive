@@ -6,6 +6,8 @@ permalink: /kb/156/Q156462/
 
 ## Q156462: Writer 2: Seven Levels of Character Sizes Allowable in HTML
 
+{% raw %}
+
 	Article: Q156462
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -54,3 +56,5 @@ permalink: /kb/156/Q156462/
 	
 	=============================================================================
 	
+
+{% endraw %}

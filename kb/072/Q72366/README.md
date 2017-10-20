@@ -6,6 +6,8 @@ permalink: /kb/072/Q72366/
 
 ## Q72366: Disabling Quattro Pro's Disk Cache
 
+{% raw %}
+
 	Article: Q72366
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/072/Q72366/
 	
 	=============================================================================
 	
+
+{% endraw %}

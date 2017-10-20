@@ -6,6 +6,8 @@ permalink: /kb/104/Q104033/
 
 ## Q104033: Uncompressed Removable Media Disk Files Displayed w/Host Drive
 
+{% raw %}
+
 	Article: Q104033
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/104/Q104033/
 	
 	=============================================================================
 	
+
+{% endraw %}

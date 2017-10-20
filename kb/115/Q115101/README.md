@@ -6,6 +6,8 @@ permalink: /kb/115/Q115101/
 
 ## Q115101: IP Counter Disappears from Performance Monitor
 
+{% raw %}
+
 	Article: Q115101
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -59,3 +61,5 @@ permalink: /kb/115/Q115101/
 	
 	=============================================================================
 	
+
+{% endraw %}

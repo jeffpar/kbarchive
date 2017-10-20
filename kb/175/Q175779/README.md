@@ -6,6 +6,8 @@ permalink: /kb/175/Q175779/
 
 ## Q175779: Microsoft Cluster Server Requires Service Pack 3 or Later.
 
+{% raw %}
+
 	Article: Q175779
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/175/Q175779/
 	
 	=============================================================================
 	
+
+{% endraw %}

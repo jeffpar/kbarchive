@@ -6,6 +6,8 @@ permalink: /kb/161/Q161192/
 
 ## Q161192: Cannot Load Lucida Typewriter Font
 
+{% raw %}
+
 	Article: Q161192
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0
@@ -75,3 +77,5 @@ permalink: /kb/161/Q161192/
 	
 	=============================================================================
 	
+
+{% endraw %}

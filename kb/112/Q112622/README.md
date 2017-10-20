@@ -6,6 +6,8 @@ permalink: /kb/112/Q112622/
 
 ## Q112622: WFWG Err Msg: The Compressed Disk...Is Not Set Up Correctly
 
+{% raw %}
+
 	Article: Q112622
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -82,3 +84,5 @@ permalink: /kb/112/Q112622/
 	
 	=============================================================================
 	
+
+{% endraw %}

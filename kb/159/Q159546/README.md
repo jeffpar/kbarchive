@@ -6,6 +6,8 @@ permalink: /kb/159/Q159546/
 
 ## Q159546: Monster Truck Madness: Configuring the Thrustmaster Formula
 
+{% raw %}
+
 	Article: Q159546
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -148,3 +150,5 @@ permalink: /kb/159/Q159546/
 	
 	=============================================================================
 	
+
+{% endraw %}

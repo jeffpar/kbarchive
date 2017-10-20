@@ -6,6 +6,8 @@ permalink: /kb/191/Q191679/
 
 ## Q191679: FIX: Wrong Line Number Information Debugging STL
 
+{% raw %}
+
 	Article: Q191679
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0sp3
@@ -81,3 +83,5 @@ permalink: /kb/191/Q191679/
 	
 	=============================================================================
 	
+
+{% endraw %}

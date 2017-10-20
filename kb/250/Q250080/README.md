@@ -6,6 +6,8 @@ permalink: /kb/250/Q250080/
 
 ## Q250080: BUG:Mouse Pointer Changes to Default Pointer on Text Box Border
 
+{% raw %}
+
 	Article: Q250080
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -74,3 +76,5 @@ permalink: /kb/250/Q250080/
 	
 	=============================================================================
 	
+
+{% endraw %}

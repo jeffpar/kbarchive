@@ -6,6 +6,8 @@ permalink: /kb/123/Q123449/
 
 ## Q123449: PPT: &quot;1 3/4.PPT. Sorry, the File Cannot Be Found&quot; Error
 
+{% raw %}
+
 	Article: Q123449
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -75,3 +77,5 @@ permalink: /kb/123/Q123449/
 	
 	=============================================================================
 	
+
+{% endraw %}

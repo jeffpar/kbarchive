@@ -6,6 +6,8 @@ permalink: /kb/312/Q312941/
 
 ## Q312941: PRB: IIS May Hang If You Enable ASP Server-Side Script Debugging
 
+{% raw %}
+
 	Article: Q312941
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -71,3 +73,5 @@ permalink: /kb/312/Q312941/
 	
 	=============================================================================
 	
+
+{% endraw %}

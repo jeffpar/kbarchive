@@ -6,6 +6,8 @@ permalink: /kb/132/Q132616/
 
 ## Q132616: International Character Creates Invalid Server Folder Name
 
+{% raw %}
+
 	Article: Q132616
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/132/Q132616/
 	
 	=============================================================================
 	
+
+{% endraw %}

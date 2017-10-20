@@ -6,6 +6,8 @@ permalink: /kb/089/Q89910/
 
 ## Q89910: Error in Quick Recorder Help
 
+{% raw %}
+
 	Article: Q89910
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/089/Q89910/
 	
 	=============================================================================
 	
+
+{% endraw %}

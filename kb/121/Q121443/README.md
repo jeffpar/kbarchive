@@ -6,6 +6,8 @@ permalink: /kb/121/Q121443/
 
 ## Q121443: Err Msg with Novell NetWare: Windows Cannot Write to This File
 
+{% raw %}
+
 	Article: Q121443
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/121/Q121443/
 	
 	=============================================================================
 	
+
+{% endraw %}

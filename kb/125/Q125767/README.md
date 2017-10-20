@@ -6,6 +6,8 @@ permalink: /kb/125/Q125767/
 
 ## Q125767: PRB: Query Too Complex Error After Execution of SQL Query
 
+{% raw %}
+
 	Article: Q125767
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -95,3 +97,5 @@ permalink: /kb/125/Q125767/
 	
 	=============================================================================
 	
+
+{% endraw %}

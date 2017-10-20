@@ -6,6 +6,8 @@ permalink: /kb/132/Q132512/
 
 ## Q132512: Selecting a Computer Type Before Windows NT Setup Begins
 
+{% raw %}
+
 	Article: Q132512
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -127,3 +129,5 @@ permalink: /kb/132/Q132512/
 	
 	=============================================================================
 	
+
+{% endraw %}

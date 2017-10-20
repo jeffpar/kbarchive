@@ -6,6 +6,8 @@ permalink: /kb/143/Q143235/
 
 ## Q143235: XADM: Error Message: Error -550 Has Occurred
 
+{% raw %}
+
 	Article: Q143235
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -114,3 +116,5 @@ permalink: /kb/143/Q143235/
 	
 	=============================================================================
 	
+
+{% endraw %}

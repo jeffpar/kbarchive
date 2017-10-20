@@ -6,6 +6,8 @@ permalink: /kb/105/Q105614/
 
 ## Q105614: Microsoft MS-DOS 6.2 (Part 4 of 4)
 
+{% raw %}
+
 	Article: Q105614
 	Product(s): Microsoft Disk Operating System
 	Version(s): 6.2
@@ -643,3 +645,5 @@ permalink: /kb/105/Q105614/
 	
 	=============================================================================
 	
+
+{% endraw %}

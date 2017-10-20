@@ -6,6 +6,8 @@ permalink: /kb/098/Q98994/
 
 ## Q98994: P.C. Logic Video Adapters Require Updated Drivers
 
+{% raw %}
+
 	Article: Q98994
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/098/Q98994/
 	
 	=============================================================================
 	
+
+{% endraw %}

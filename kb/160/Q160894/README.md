@@ -6,6 +6,8 @@ permalink: /kb/160/Q160894/
 
 ## Q160894: Incoming Fax Jobs Do Not Appear in Print Queue
 
+{% raw %}
+
 	Article: Q160894
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/160/Q160894/
 	
 	=============================================================================
 	
+
+{% endraw %}

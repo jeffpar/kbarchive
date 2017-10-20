@@ -6,6 +6,8 @@ permalink: /kb/109/Q109583/
 
 ## Q109583: PRB: SQL SELECT Causes ICE or &quot;Invalid Function Argument...&quot;
 
+{% raw %}
+
 	Article: Q109583
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; MS-DOS:2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
@@ -81,3 +83,5 @@ permalink: /kb/109/Q109583/
 	
 	=============================================================================
 	
+
+{% endraw %}

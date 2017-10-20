@@ -6,6 +6,8 @@ permalink: /kb/165/Q165339/
 
 ## Q165339: Non-administrator Users Cannot Remotely Monitor IIS
 
+{% raw %}
+
 	Article: Q165339
 	Product(s): Internet Information Server
 	Version(s): Winnt:2.0
@@ -56,3 +58,5 @@ permalink: /kb/165/Q165339/
 	
 	=============================================================================
 	
+
+{% endraw %}

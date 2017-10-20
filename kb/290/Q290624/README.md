@@ -6,6 +6,8 @@ permalink: /kb/290/Q290624/
 
 ## Q290624: HOWTO: Configure MSDTC in a Windows 2000 Cluster Environment
 
+{% raw %}
+
 	Article: Q290624
 	Product(s): Internet Information Server
 	Version(s): 2000,2000 SP1,2000 SP2,5.0,7.0
@@ -122,3 +124,5 @@ permalink: /kb/290/Q290624/
 	
 	=============================================================================
 	
+
+{% endraw %}

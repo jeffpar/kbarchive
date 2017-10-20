@@ -6,6 +6,8 @@ permalink: /kb/150/Q150427/
 
 ## Q150427: Mac Bookshelf '96-'97: Can't Select Menu Items in Apple Guide
 
+{% raw %}
+
 	Article: Q150427
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -59,3 +61,5 @@ permalink: /kb/150/Q150427/
 	
 	=============================================================================
 	
+
+{% endraw %}

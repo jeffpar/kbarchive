@@ -6,6 +6,8 @@ permalink: /kb/069/Q69768/
 
 ## Q69768: MIRROR Command Returns &quot;Invalid Parameter(s)&quot; Error
 
+{% raw %}
+
 	Article: Q69768
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -44,3 +46,5 @@ permalink: /kb/069/Q69768/
 	
 	=============================================================================
 	
+
+{% endraw %}

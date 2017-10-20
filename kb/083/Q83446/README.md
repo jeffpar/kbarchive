@@ -6,6 +6,8 @@ permalink: /kb/083/Q83446/
 
 ## Q83446: Windows: Using Identity Module on Epson LQ-1000 Printer
 
+{% raw %}
+
 	Article: Q83446
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/083/Q83446/
 	
 	=============================================================================
 	
+
+{% endraw %}

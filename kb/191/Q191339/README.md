@@ -6,6 +6,8 @@ permalink: /kb/191/Q191339/
 
 ## Q191339: SMSINST: Corel Perfect Office Generates Registry Key Error
 
+{% raw %}
+
 	Article: Q191339
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -131,3 +133,5 @@ permalink: /kb/191/Q191339/
 	
 	=============================================================================
 	
+
+{% endraw %}

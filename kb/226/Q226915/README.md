@@ -6,6 +6,8 @@ permalink: /kb/226/Q226915/
 
 ## Q226915: SMS: Can't Increased Status File Heartbeat to More Than 5 Days
 
+{% raw %}
+
 	Article: Q226915
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2 SP4
@@ -43,3 +45,5 @@ permalink: /kb/226/Q226915/
 	
 	=============================================================================
 	
+
+{% endraw %}

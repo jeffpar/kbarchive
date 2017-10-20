@@ -6,6 +6,8 @@ permalink: /kb/071/Q71127/
 
 ## Q71127: Windows: Masterpiece Requires SYSTEM.INI Modification
 
+{% raw %}
+
 	Article: Q71127
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -69,3 +71,5 @@ permalink: /kb/071/Q71127/
 	
 	=============================================================================
 	
+
+{% endraw %}

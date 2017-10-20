@@ -6,6 +6,8 @@ permalink: /kb/101/Q101665/
 
 ## Q101665: Adding Banyan VINES to Windows for Workgroups
 
+{% raw %}
+
 	Article: Q101665
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.1
@@ -265,3 +267,5 @@ permalink: /kb/101/Q101665/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90407/
 
 ## Q90407: WFWG Err Msg: EMM Exception Error #6... Old VNETBIOS.386
 
+{% raw %}
+
 	Article: Q90407
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -58,3 +60,5 @@ permalink: /kb/090/Q90407/
 	
 	=============================================================================
 	
+
+{% endraw %}

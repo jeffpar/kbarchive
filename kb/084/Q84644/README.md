@@ -6,6 +6,8 @@ permalink: /kb/084/Q84644/
 
 ## Q84644: Font Changes in the Clipboard Under Windows 3.1
 
+{% raw %}
+
 	Article: Q84644
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/084/Q84644/
 	
 	=============================================================================
 	
+
+{% endraw %}

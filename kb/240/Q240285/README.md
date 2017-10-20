@@ -6,6 +6,8 @@ permalink: /kb/240/Q240285/
 
 ## Q240285: NBA Inside Drive 2000: Cannot Hear Sound in Introductory Video
 
+{% raw %}
+
 	Article: Q240285
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/240/Q240285/
 	
 	=============================================================================
 	
+
+{% endraw %}

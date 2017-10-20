@@ -6,6 +6,8 @@ permalink: /kb/186/Q186913/
 
 ## Q186913: HOWTO: Assign FoxPro Foundation Classes via Field Mapping
 
+{% raw %}
+
 	Article: Q186913
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -140,3 +142,5 @@ permalink: /kb/186/Q186913/
 	
 	=============================================================================
 	
+
+{% endraw %}

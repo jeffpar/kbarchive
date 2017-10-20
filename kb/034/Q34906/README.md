@@ -6,6 +6,8 @@ permalink: /kb/034/Q34906/
 
 ## Q34906: Run-Time Library Reference _getfillmask, _setfillmask docerrs
 
+{% raw %}
+
 	Article: Q34906
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -51,3 +53,5 @@ permalink: /kb/034/Q34906/
 	 while ( !kbhit() ); /* Strike any key to continue */
 	 _setvideomode (_DEFAULTMODE);
 	}
+
+{% endraw %}

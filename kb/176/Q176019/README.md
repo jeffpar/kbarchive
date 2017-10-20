@@ -6,6 +6,8 @@ permalink: /kb/176/Q176019/
 
 ## Q176019: SNA Windows 95 Client Support for Multiple Users on Windows NT
 
+{% raw %}
+
 	Article: Q176019
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -81,3 +83,5 @@ permalink: /kb/176/Q176019/
 	
 	=============================================================================
 	
+
+{% endraw %}

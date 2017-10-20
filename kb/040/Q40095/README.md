@@ -6,6 +6,8 @@ permalink: /kb/040/Q40095/
 
 ## Q40095: Intra-Segment Near Calls in MASM
 
+{% raw %}
+
 	Article: Q40095
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10
@@ -56,3 +58,5 @@ permalink: /kb/040/Q40095/
 	To get the second generation, you must enter the following:
 	
 	   db 28h, 0d2h
+
+{% endraw %}

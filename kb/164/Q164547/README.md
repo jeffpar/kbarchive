@@ -6,6 +6,8 @@ permalink: /kb/164/Q164547/
 
 ## Q164547: WD97: Fillin Field Prompts Twice
 
+{% raw %}
+
 	Article: Q164547
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -152,3 +154,5 @@ permalink: /kb/164/Q164547/
 	
 	=============================================================================
 	
+
+{% endraw %}

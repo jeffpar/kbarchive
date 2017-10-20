@@ -6,6 +6,8 @@ permalink: /kb/028/Q28980/
 
 ## Q28980: &quot;NUL&quot; Device Behaves Different in QB 4.x than 3.00 or GWBASIC
 
+{% raw %}
+
 	Article: Q28980
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -50,3 +52,5 @@ permalink: /kb/028/Q28980/
 	   print#1,"second";
 	   print #1,"third"
 	   print buffer$
+
+{% endraw %}

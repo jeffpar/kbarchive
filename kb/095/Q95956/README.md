@@ -6,6 +6,8 @@ permalink: /kb/095/Q95956/
 
 ## Q95956: MSCDEX Doesn't Load with Trantor CD-ROM Driver
 
+{% raw %}
+
 	Article: Q95956
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -59,3 +61,5 @@ permalink: /kb/095/Q95956/
 	
 	=============================================================================
 	
+
+{% endraw %}

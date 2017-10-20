@@ -6,6 +6,8 @@ permalink: /kb/237/Q237531/
 
 ## Q237531: Encarta 2000: Macromedia Shockwave Director Documentation Error
 
+{% raw %}
+
 	Article: Q237531
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/237/Q237531/
 	
 	=============================================================================
 	
+
+{% endraw %}

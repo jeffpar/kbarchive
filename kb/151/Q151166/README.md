@@ -6,6 +6,8 @@ permalink: /kb/151/Q151166/
 
 ## Q151166: FIX: Fixes in VC++ 4.1 to Bugs in VC++ 4.0 32-Bit Edition
 
+{% raw %}
+
 	Article: Q151166
 	Product(s): Microsoft C Compiler
 	Version(s): 4.1
@@ -307,3 +309,5 @@ permalink: /kb/151/Q151166/
 	
 	=============================================================================
 	
+
+{% endraw %}

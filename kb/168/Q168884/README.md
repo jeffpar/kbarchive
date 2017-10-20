@@ -6,6 +6,8 @@ permalink: /kb/168/Q168884/
 
 ## Q168884: Service Receives TIMEOUT Error While Attempting To Load
 
+{% raw %}
+
 	Article: Q168884
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -45,3 +47,5 @@ permalink: /kb/168/Q168884/
 	
 	=============================================================================
 	
+
+{% endraw %}

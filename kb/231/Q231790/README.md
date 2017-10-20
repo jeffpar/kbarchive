@@ -6,6 +6,8 @@ permalink: /kb/231/Q231790/
 
 ## Q231790: File Sharing Operations to a Share on Local Computer May Be Slow
 
+{% raw %}
+
 	Article: Q231790
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -96,3 +98,5 @@ permalink: /kb/231/Q231790/
 	
 	=============================================================================
 	
+
+{% endraw %}

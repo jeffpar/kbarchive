@@ -6,6 +6,8 @@ permalink: /kb/114/Q114124/
 
 ## Q114124: PC MMTA: External Configured for CommType=X25Eicon May Hang
 
+{% raw %}
+
 	Article: Q114124
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -78,3 +80,5 @@ permalink: /kb/114/Q114124/
 	
 	=============================================================================
 	
+
+{% endraw %}

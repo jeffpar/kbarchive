@@ -6,6 +6,8 @@ permalink: /kb/061/Q61439/
 
 ## Q61439: TEXTCOMP in BASIC PDS 7.00 Must Have PROISAM Loaded
 
+{% raw %}
+
 	Article: Q61439
 	Product(s): See article
 	Version(s): 7.00
@@ -40,3 +42,5 @@ permalink: /kb/061/Q61439/
 	------------
 	
 	   areequal% = TEXTCOMP ("this is a test","this is a test too")
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/214/Q214486/
 
 ## Q214486: INFO: How SourceSafe Uses the DATA Directory
 
+{% raw %}
+
 	Article: Q214486
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/214/Q214486/
 	
 	=============================================================================
 	
+
+{% endraw %}

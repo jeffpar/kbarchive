@@ -6,6 +6,8 @@ permalink: /kb/188/Q188288/
 
 ## Q188288: HTTP Request with a Long Verb Is Not Logged
 
+{% raw %}
+
 	Article: Q188288
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/188/Q188288/
 	
 	=============================================================================
 	
+
+{% endraw %}

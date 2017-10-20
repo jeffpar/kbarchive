@@ -6,6 +6,8 @@ permalink: /kb/175/Q175048/
 
 ## Q175048: CACLS Quits on Access Denied Errors with /c
 
+{% raw %}
+
 	Article: Q175048
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/175/Q175048/
 	
 	=============================================================================
 	
+
+{% endraw %}

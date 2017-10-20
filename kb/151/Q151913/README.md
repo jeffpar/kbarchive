@@ -6,6 +6,8 @@ permalink: /kb/151/Q151913/
 
 ## Q151913: Decimal Character Appears as a Comma
 
+{% raw %}
+
 	Article: Q151913
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -71,3 +73,5 @@ permalink: /kb/151/Q151913/
 	
 	=============================================================================
 	
+
+{% endraw %}

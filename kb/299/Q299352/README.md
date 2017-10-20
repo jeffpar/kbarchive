@@ -6,6 +6,8 @@ permalink: /kb/299/Q299352/
 
 ## Q299352: SMS: The SMSCliToknAcct&amp; Account May Be Locked Out
 
+{% raw %}
+
 	Article: Q299352
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -53,3 +55,5 @@ permalink: /kb/299/Q299352/
 	
 	=============================================================================
 	
+
+{% endraw %}

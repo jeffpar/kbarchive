@@ -6,6 +6,8 @@ permalink: /kb/270/Q270783/
 
 ## Q270783: ELL: Cannot Switch Between Menus By Using the Arrow Keys
 
+{% raw %}
+
 	Article: Q270783
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/270/Q270783/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166820/
 
 ## Q166820: Unattended Install of PowerToys in WinNT Server Reskit 4.0
 
+{% raw %}
+
 	Article: Q166820
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -128,3 +130,5 @@ permalink: /kb/166/Q166820/
 	
 	=============================================================================
 	
+
+{% endraw %}

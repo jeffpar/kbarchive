@@ -6,6 +6,8 @@ permalink: /kb/193/Q193872/
 
 ## Q193872: BUG: VB6 Version of RDO Cannot Access Oracle Packages
 
+{% raw %}
+
 	Article: Q193872
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -89,3 +91,5 @@ permalink: /kb/193/Q193872/
 	
 	=============================================================================
 	
+
+{% endraw %}

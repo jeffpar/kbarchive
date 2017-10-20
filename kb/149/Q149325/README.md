@@ -6,6 +6,8 @@ permalink: /kb/149/Q149325/
 
 ## Q149325: BUG: Can't Load VB 3 Binary Form with Some Extended Characters
 
+{% raw %}
+
 	Article: Q149325
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -104,3 +106,5 @@ permalink: /kb/149/Q149325/
 	
 	=============================================================================
 	
+
+{% endraw %}

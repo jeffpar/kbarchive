@@ -6,6 +6,8 @@ permalink: /kb/058/Q58799/
 
 ## Q58799: Microsoft GRAPHICS.LIB Does Not Support Extended VGA
 
+{% raw %}
+
 	Article: Q58799
 	Product(s): See article
 	Version(s): 5.00 5.10 6.00
@@ -78,3 +80,5 @@ permalink: /kb/058/Q58799/
 	   printf ("Current video mode : %d\n", outregs.h.al);
 	   getch();
 	}
+
+{% endraw %}

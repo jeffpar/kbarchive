@@ -6,6 +6,8 @@ permalink: /kb/043/Q43331/
 
 ## Q43331: Changing System Time or Date Will Temporarily Pause Clock
 
+{% raw %}
+
 	Article: Q43331
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -74,3 +76,5 @@ permalink: /kb/043/Q43331/
 	
 	=============================================================================
 	
+
+{% endraw %}

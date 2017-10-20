@@ -6,6 +6,8 @@ permalink: /kb/182/Q182797/
 
 ## Q182797: XADM: Directory Replication Stops in Low Memory Condition
 
+{% raw %}
+
 	Article: Q182797
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -136,3 +138,5 @@ permalink: /kb/182/Q182797/
 	
 	=============================================================================
 	
+
+{% endraw %}

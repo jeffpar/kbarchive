@@ -6,6 +6,8 @@ permalink: /kb/214/Q214588/
 
 ## Q214588: Cannot Play Close Combat III on Windows NT 4.0-Based Computer
 
+{% raw %}
+
 	Article: Q214588
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/214/Q214588/
 	
 	=============================================================================
 	
+
+{% endraw %}

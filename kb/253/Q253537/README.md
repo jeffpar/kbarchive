@@ -6,6 +6,8 @@ permalink: /kb/253/Q253537/
 
 ## Q253537: How to Install the Samples for Windows 2000 Indexing Service
 
+{% raw %}
+
 	Article: Q253537
 	Product(s): Internet Information Server
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/253/Q253537/
 	
 	=============================================================================
 	
+
+{% endraw %}

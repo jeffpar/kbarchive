@@ -6,6 +6,8 @@ permalink: /kb/166/Q166600/
 
 ## Q166600: XCON: Message Subject Lost When Sending to SP3 Exchange Server
 
+{% raw %}
+
 	Article: Q166600
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -61,3 +63,5 @@ permalink: /kb/166/Q166600/
 	
 	=============================================================================
 	
+
+{% endraw %}

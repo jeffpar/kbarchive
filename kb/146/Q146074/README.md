@@ -6,6 +6,8 @@ permalink: /kb/146/Q146074/
 
 ## Q146074: XCLN: Restored Schedule+ File Not Synchronized w/ Server File
 
+{% raw %}
+
 	Article: Q146074
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -60,3 +62,5 @@ permalink: /kb/146/Q146074/
 	
 	=============================================================================
 	
+
+{% endraw %}

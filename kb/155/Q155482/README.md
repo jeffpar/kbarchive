@@ -6,6 +6,8 @@ permalink: /kb/155/Q155482/
 
 ## Q155482: PowerPoint Pattern Fills and Word's Picture Editor
 
+{% raw %}
+
 	Article: Q155482
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -56,3 +58,5 @@ permalink: /kb/155/Q155482/
 	
 	=============================================================================
 	
+
+{% endraw %}

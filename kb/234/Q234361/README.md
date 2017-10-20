@@ -6,6 +6,8 @@ permalink: /kb/234/Q234361/
 
 ## Q234361: XFOR: Notes Application Connector Prompts for Password with Pas
 
+{% raw %}
+
 	Article: Q234361
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/234/Q234361/
 	
 	=============================================================================
 	
+
+{% endraw %}

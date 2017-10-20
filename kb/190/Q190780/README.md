@@ -6,6 +6,8 @@ permalink: /kb/190/Q190780/
 
 ## Q190780: Zone Err Msg: We Are Not Able to Detect &lt;Game&gt; on Your Hard...
 
+{% raw %}
+
 	Article: Q190780
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/190/Q190780/
 	
 	=============================================================================
 	
+
+{% endraw %}

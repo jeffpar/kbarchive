@@ -6,6 +6,8 @@ permalink: /kb/079/Q79247/
 
 ## Q79247: MSCDEX.EXE Version 2.2 or Later Required with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q79247
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x; WINDOWS:3.0,3.0a,3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/079/Q79247/
 	
 	=============================================================================
 	
+
+{% endraw %}

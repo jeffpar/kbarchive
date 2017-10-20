@@ -6,6 +6,8 @@ permalink: /kb/263/Q263420/
 
 ## Q263420: SMS 2.0 Clients Cannot Change Windows 2000 Keyboard Rates
 
+{% raw %}
+
 	Article: Q263420
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1,2.0 SP2
@@ -48,3 +50,5 @@ permalink: /kb/263/Q263420/
 	
 	=============================================================================
 	
+
+{% endraw %}

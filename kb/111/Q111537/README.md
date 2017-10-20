@@ -6,6 +6,8 @@ permalink: /kb/111/Q111537/
 
 ## Q111537: PC Win: Frequently Asked Questions for Mail for Windows 3.2
 
+{% raw %}
+
 	Article: Q111537
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -346,3 +348,5 @@ permalink: /kb/111/Q111537/
 	
 	=============================================================================
 	
+
+{% endraw %}

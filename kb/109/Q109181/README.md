@@ -6,6 +6,8 @@ permalink: /kb/109/Q109181/
 
 ## Q109181: CD Sampler: Add to Shopping List Displays Colorless Dialog Box
 
+{% raw %}
+
 	Article: Q109181
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): Fall 1993 edition
@@ -48,3 +50,5 @@ permalink: /kb/109/Q109181/
 	
 	=============================================================================
 	
+
+{% endraw %}

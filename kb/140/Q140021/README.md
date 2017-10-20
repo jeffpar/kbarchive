@@ -6,6 +6,8 @@ permalink: /kb/140/Q140021/
 
 ## Q140021: FILE: DBGRIDUB.EXE Uses DBGRID in an Unbound Mode
 
+{% raw %}
+
 	Article: Q140021
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -824,3 +826,5 @@ permalink: /kb/140/Q140021/
 	
 	=============================================================================
 	
+
+{% endraw %}

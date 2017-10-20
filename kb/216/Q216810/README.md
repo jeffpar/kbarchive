@@ -6,6 +6,8 @@ permalink: /kb/216/Q216810/
 
 ## Q216810: Creating Packages for ODBC Driver for DB2 &amp; OLE DB Provider
 
+{% raw %}
+
 	Article: Q216810
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -127,3 +129,5 @@ permalink: /kb/216/Q216810/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112240/
 
 ## Q112240: Running Multiuser Screens Created w/ Screen Wizard
 
+{% raw %}
+
 	Article: Q112240
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6; WINDOWS:2.6,3.0
@@ -91,3 +93,5 @@ permalink: /kb/112/Q112240/
 	
 	=============================================================================
 	
+
+{% endraw %}

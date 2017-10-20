@@ -6,6 +6,8 @@ permalink: /kb/152/Q152956/
 
 ## Q152956: XCLN: Details Corrupt When Using Spanish Client
 
+{% raw %}
+
 	Article: Q152956
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -78,3 +80,5 @@ permalink: /kb/152/Q152956/
 	
 	=============================================================================
 	
+
+{% endraw %}

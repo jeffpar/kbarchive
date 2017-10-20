@@ -6,6 +6,8 @@ permalink: /kb/094/Q94279/
 
 ## Q94279: Windows Err Msg: EMM386 Exception Error #6
 
+{% raw %}
+
 	Article: Q94279
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -128,3 +130,5 @@ permalink: /kb/094/Q94279/
 	
 	=============================================================================
 	
+
+{% endraw %}

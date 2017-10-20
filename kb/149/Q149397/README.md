@@ -6,6 +6,8 @@ permalink: /kb/149/Q149397/
 
 ## Q149397: Cacls.exe May Terminate Prematurely
 
+{% raw %}
+
 	Article: Q149397
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -66,3 +68,5 @@ permalink: /kb/149/Q149397/
 	
 	=============================================================================
 	
+
+{% endraw %}

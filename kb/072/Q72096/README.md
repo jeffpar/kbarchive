@@ -6,6 +6,8 @@ permalink: /kb/072/Q72096/
 
 ## Q72096: Reporting Illegal Sales of MS-DOS
 
+{% raw %}
+
 	Article: Q72096
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -53,3 +55,5 @@ permalink: /kb/072/Q72096/
 	
 	=============================================================================
 	
+
+{% endraw %}

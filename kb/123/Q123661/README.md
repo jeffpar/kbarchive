@@ -6,6 +6,8 @@ permalink: /kb/123/Q123661/
 
 ## Q123661: BUG: No Error or Code for Multiple END Statements
 
+{% raw %}
+
 	Article: Q123661
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.11
@@ -59,3 +61,5 @@ permalink: /kb/123/Q123661/
 	
 	=============================================================================
 	
+
+{% endraw %}

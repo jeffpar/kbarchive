@@ -6,6 +6,8 @@ permalink: /kb/143/Q143168/
 
 ## Q143168: Routing IP Packets to Network Adapter Rather than RAS
 
+{% raw %}
+
 	Article: Q143168
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -127,3 +129,5 @@ permalink: /kb/143/Q143168/
 	
 	=============================================================================
 	
+
+{% endraw %}

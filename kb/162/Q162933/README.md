@@ -6,6 +6,8 @@ permalink: /kb/162/Q162933/
 
 ## Q162933: ACC97: User Without Permissions Can Check Out an Object in VSS
 
+{% raw %}
+
 	Article: Q162933
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:97
@@ -127,3 +129,5 @@ permalink: /kb/162/Q162933/
 	
 	=============================================================================
 	
+
+{% endraw %}

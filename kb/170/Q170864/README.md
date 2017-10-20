@@ -6,6 +6,8 @@ permalink: /kb/170/Q170864/
 
 ## Q170864: Error Trying to Run ADO When ASP Installed w/ SQL Server Running
 
+{% raw %}
+
 	Article: Q170864
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): Winnt:3.0
@@ -66,3 +68,5 @@ permalink: /kb/170/Q170864/
 	
 	=============================================================================
 	
+
+{% endraw %}

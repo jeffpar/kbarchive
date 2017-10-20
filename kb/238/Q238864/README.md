@@ -6,6 +6,8 @@ permalink: /kb/238/Q238864/
 
 ## Q238864: Windows 98/95 Clients Hang or Become Unstable After SP1 Upgrade
 
+{% raw %}
+
 	Article: Q238864
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:2.0
@@ -147,3 +149,5 @@ permalink: /kb/238/Q238864/
 	
 	=============================================================================
 	
+
+{% endraw %}

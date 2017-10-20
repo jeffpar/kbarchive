@@ -6,6 +6,8 @@ permalink: /kb/137/Q137826/
 
 ## Q137826: Disabling Password Caching and Changing Passwords
 
+{% raw %}
+
 	Article: Q137826
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -67,3 +69,5 @@ permalink: /kb/137/Q137826/
 	
 	=============================================================================
 	
+
+{% endraw %}

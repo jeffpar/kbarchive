@@ -6,6 +6,8 @@ permalink: /kb/154/Q154157/
 
 ## Q154157: Audit.rul Does Not Find Software
 
+{% raw %}
+
 	Article: Q154157
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -49,3 +51,5 @@ permalink: /kb/154/Q154157/
 	
 	=============================================================================
 	
+
+{% endraw %}

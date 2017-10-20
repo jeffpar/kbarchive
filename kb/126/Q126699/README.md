@@ -6,6 +6,8 @@ permalink: /kb/126/Q126699/
 
 ## Q126699: Wright: Cannot Use ALT+TAB in Modeling Wright Module
 
+{% raw %}
+
 	Article: Q126699
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/126/Q126699/
 	
 	=============================================================================
 	
+
+{% endraw %}

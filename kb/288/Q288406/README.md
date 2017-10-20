@@ -6,6 +6,8 @@ permalink: /kb/288/Q288406/
 
 ## Q288406: Red Stop Sign in IIS MMC When Connecting to Virtual Directory
 
+{% raw %}
+
 	Article: Q288406
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -45,3 +47,5 @@ permalink: /kb/288/Q288406/
 	
 	=============================================================================
 	
+
+{% endraw %}

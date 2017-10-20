@@ -6,6 +6,8 @@ permalink: /kb/023/Q23978/
 
 ## Q23978: Warning C4040: near/far/huge Ignored
 
+{% raw %}
+
 	Article: Q23978
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 | 5.10
@@ -41,3 +43,5 @@ permalink: /kb/023/Q23978/
 	declares a pointer that can point to data outside the default data
 	segment, but the pointer itself is within the default data segment.
 	This declaration is quite acceptable within the body of a function.
+
+{% endraw %}

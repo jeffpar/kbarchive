@@ -6,6 +6,8 @@ permalink: /kb/134/Q134714/
 
 ## Q134714: Inventory Processor Processes Large MIF Files Slowly
 
+{% raw %}
+
 	Article: Q134714
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -45,3 +47,5 @@ permalink: /kb/134/Q134714/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138495/
 
 ## Q138495: PRB: Compile Dialog Boxes Appear Inconsistent or Incomplete
 
+{% raw %}
+
 	Article: Q138495
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -102,3 +104,5 @@ permalink: /kb/138/Q138495/
 	
 	=============================================================================
 	
+
+{% endraw %}

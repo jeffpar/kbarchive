@@ -6,6 +6,8 @@ permalink: /kb/145/Q145585/
 
 ## Q145585: XADM: Migrated MS Mail 3.x X400 PAB Entries NDR w/ Bad Address
 
+{% raw %}
+
 	Article: Q145585
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -109,3 +111,5 @@ permalink: /kb/145/Q145585/
 	
 	=============================================================================
 	
+
+{% endraw %}

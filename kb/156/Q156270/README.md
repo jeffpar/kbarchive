@@ -6,6 +6,8 @@ permalink: /kb/156/Q156270/
 
 ## Q156270: SMS: Cannot Use Run Command Packages with NetWare Servers
 
+{% raw %}
+
 	Article: Q156270
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -56,3 +58,5 @@ permalink: /kb/156/Q156270/
 	
 	=============================================================================
 	
+
+{% endraw %}

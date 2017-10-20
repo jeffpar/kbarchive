@@ -6,6 +6,8 @@ permalink: /kb/039/Q39445/
 
 ## Q39445: The IN Instruction Receives Data from a Port
 
+{% raw %}
+
 	Article: Q39445
 	Product(s): See article
 	Version(s): 5.10
@@ -17,3 +19,5 @@ permalink: /kb/039/Q39445/
 	fourth paragraph incorrectly states that the IN instruction is used to
 	send data to a port. Instead, the IN instruction is used to receive
 	data from a port.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149003/
 
 ## Q149003: Bookshelf 96-97 ErrMsg: &quot;Unable to Process File...&quot;
 
+{% raw %}
+
 	Article: Q149003
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/149/Q149003/
 	
 	=============================================================================
 	
+
+{% endraw %}

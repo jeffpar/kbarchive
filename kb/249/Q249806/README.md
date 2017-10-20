@@ -6,6 +6,8 @@ permalink: /kb/249/Q249806/
 
 ## Q249806: STOP 0x0000001E Error Message on Windows NT 4.0 Terminal Server
 
+{% raw %}
+
 	Article: Q249806
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -67,3 +69,5 @@ permalink: /kb/249/Q249806/
 	
 	=============================================================================
 	
+
+{% endraw %}

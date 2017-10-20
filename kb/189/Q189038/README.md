@@ -6,6 +6,8 @@ permalink: /kb/189/Q189038/
 
 ## Q189038: DHCP Server Cannot Be Accessed with Dhcpadmin.exe Tool
 
+{% raw %}
+
 	Article: Q189038
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/189/Q189038/
 	
 	=============================================================================
 	
+
+{% endraw %}

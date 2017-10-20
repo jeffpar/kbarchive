@@ -6,6 +6,8 @@ permalink: /kb/154/Q154338/
 
 ## Q154338: Documentation for TCP/IP Shows Incorrect Print Destination
 
+{% raw %}
+
 	Article: Q154338
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -48,3 +50,5 @@ permalink: /kb/154/Q154338/
 	
 	=============================================================================
 	
+
+{% endraw %}

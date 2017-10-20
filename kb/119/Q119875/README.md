@@ -6,6 +6,8 @@ permalink: /kb/119/Q119875/
 
 ## Q119875: Limitations Using Only the Keyboard in Windows 95
 
+{% raw %}
+
 	Article: Q119875
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -57,3 +59,5 @@ permalink: /kb/119/Q119875/
 	
 	=============================================================================
 	
+
+{% endraw %}

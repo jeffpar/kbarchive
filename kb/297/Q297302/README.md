@@ -6,6 +6,8 @@ permalink: /kb/297/Q297302/
 
 ## Q297302: STOP 0x00000050 After Installing PCAnywhere 8.0
 
+{% raw %}
+
 	Article: Q297302
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -83,3 +85,5 @@ permalink: /kb/297/Q297302/
 	
 	=============================================================================
 	
+
+{% endraw %}

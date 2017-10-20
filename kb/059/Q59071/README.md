@@ -6,6 +6,8 @@ permalink: /kb/059/Q59071/
 
 ## Q59071: Changing a Compaq's CPU Speed
 
+{% raw %}
+
 	Article: Q59071
 	Product(s): See article
 	Version(s): 5.10
@@ -37,3 +39,5 @@ permalink: /kb/059/Q59071/
 	RETURN:
 	     AL = speed code (see function F0h for speed code)
 	          if AL = 09h, CX = speed code
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119647/
 
 ## Q119647: PC MAPI: List of MAPI Error Codes
 
+{% raw %}
+
 	Article: Q119647
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -69,3 +71,5 @@ permalink: /kb/119/Q119647/
 	
 	=============================================================================
 	
+
+{% endraw %}

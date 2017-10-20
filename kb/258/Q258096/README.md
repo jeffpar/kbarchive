@@ -6,6 +6,8 @@ permalink: /kb/258/Q258096/
 
 ## Q258096: Programming the Microsoft Windows Driver Model Comments and Corr
 
+{% raw %}
+
 	Article: Q258096
 	Product(s): Microsoft Press
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/258/Q258096/
 	
 	=============================================================================
 	
+
+{% endraw %}

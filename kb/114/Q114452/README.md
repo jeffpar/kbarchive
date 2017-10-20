@@ -6,6 +6,8 @@ permalink: /kb/114/Q114452/
 
 ## Q114452: Terminal Err Msg: Cannot Create Specified File. Make Sure...
 
+{% raw %}
+
 	Article: Q114452
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -122,3 +124,5 @@ permalink: /kb/114/Q114452/
 	
 	=============================================================================
 	
+
+{% endraw %}

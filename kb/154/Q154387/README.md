@@ -6,6 +6,8 @@ permalink: /kb/154/Q154387/
 
 ## Q154387: Tapisrv.exe Thread Uses Excessive CPU Time
 
+{% raw %}
+
 	Article: Q154387
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/154/Q154387/
 	
 	=============================================================================
 	
+
+{% endraw %}

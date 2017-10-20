@@ -6,6 +6,8 @@ permalink: /kb/243/Q243176/
 
 ## Q243176: Foreign Performance Counters Do Not Load
 
+{% raw %}
+
 	Article: Q243176
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -82,3 +84,5 @@ permalink: /kb/243/Q243176/
 	
 	=============================================================================
 	
+
+{% endraw %}

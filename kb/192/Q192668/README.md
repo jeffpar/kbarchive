@@ -6,6 +6,8 @@ permalink: /kb/192/Q192668/
 
 ## Q192668: SMS: Network Monitor Error &quot;The NAL Is Not Remotable&quot;
 
+{% raw %}
+
 	Article: Q192668
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -53,3 +55,5 @@ permalink: /kb/192/Q192668/
 	
 	=============================================================================
 	
+
+{% endraw %}

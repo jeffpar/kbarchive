@@ -6,6 +6,8 @@ permalink: /kb/063/Q63086/
 
 ## Q63086: How MS-DOS PRINT.COM Can Take 80K of Memory
 
+{% raw %}
+
 	Article: Q63086
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -143,3 +145,5 @@ permalink: /kb/063/Q63086/
 	
 	=============================================================================
 	
+
+{% endraw %}

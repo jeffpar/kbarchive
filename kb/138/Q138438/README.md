@@ -6,6 +6,8 @@ permalink: /kb/138/Q138438/
 
 ## Q138438: HOWTO: Display Child Records Based on a Parent Record
 
+{% raw %}
+
 	Article: Q138438
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/138/Q138438/
 	
 	=============================================================================
 	
+
+{% endraw %}

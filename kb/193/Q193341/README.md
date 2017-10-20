@@ -6,6 +6,8 @@ permalink: /kb/193/Q193341/
 
 ## Q193341: BUG: Circular Dependency Error With Embedded UserControls
 
+{% raw %}
+
 	Article: Q193341
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -78,3 +80,5 @@ permalink: /kb/193/Q193341/
 	
 	=============================================================================
 	
+
+{% endraw %}

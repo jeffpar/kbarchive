@@ -6,6 +6,8 @@ permalink: /kb/047/Q47836/
 
 ## Q47836: Incorrect Warning C4413 Issued After Editing Blank Line
 
+{% raw %}
+
 	Article: Q47836
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -45,3 +47,5 @@ permalink: /kb/047/Q47836/
 	Microsoft has confirmed this to be a problem with QuickC Versions 2.00
 	and 2.01. We are researching the problem and will post new information
 	as it becomes available.
+
+{% endraw %}

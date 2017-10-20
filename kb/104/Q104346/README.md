@@ -6,6 +6,8 @@ permalink: /kb/104/Q104346/
 
 ## Q104346: Limitations of Accessing General Fields from RQBE
 
+{% raw %}
+
 	Article: Q104346
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0
@@ -49,3 +51,5 @@ permalink: /kb/104/Q104346/
 	
 	=============================================================================
 	
+
+{% endraw %}

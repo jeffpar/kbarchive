@@ -6,6 +6,8 @@ permalink: /kb/031/Q31330/
 
 ## Q31330: Mouse Driver Conflict with Fixed-Disk Organizer
 
+{% raw %}
+
 	Article: Q31330
 	Product(s): See article
 	Version(s): 6.x
@@ -21,3 +23,5 @@ permalink: /kb/031/Q31330/
 	FDO is loading first, load it after the mouse driver.
 	   Please note that this workaround is not guaranteed to avert all
 	conflicts, but it has yielded positive results in many instances.
+
+{% endraw %}

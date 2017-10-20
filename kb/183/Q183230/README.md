@@ -6,6 +6,8 @@ permalink: /kb/183/Q183230/
 
 ## Q183230: Stop:0x00000082 with InocuLAN 4.0
 
+{% raw %}
+
 	Article: Q183230
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/183/Q183230/
 	
 	=============================================================================
 	
+
+{% endraw %}

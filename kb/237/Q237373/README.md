@@ -6,6 +6,8 @@ permalink: /kb/237/Q237373/
 
 ## Q237373: In Page I/O Error When Attempting to Install Service Pack 4
 
+{% raw %}
+
 	Article: Q237373
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -91,3 +93,5 @@ permalink: /kb/237/Q237373/
 	
 	=============================================================================
 	
+
+{% endraw %}

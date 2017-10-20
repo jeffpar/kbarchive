@@ -6,6 +6,8 @@ permalink: /kb/147/Q147826/
 
 ## Q147826: 3c595 Adapter Auto-Detects Wrong Media Speed
 
+{% raw %}
+
 	Article: Q147826
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -64,3 +66,5 @@ permalink: /kb/147/Q147826/
 	
 	=============================================================================
 	
+
+{% endraw %}

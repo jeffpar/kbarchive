@@ -6,6 +6,8 @@ permalink: /kb/074/Q74462/
 
 ## Q74462: DTC Hard Disk Controllers with BIOS Located in UMA
 
+{% raw %}
+
 	Article: Q74462
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -76,3 +78,5 @@ permalink: /kb/074/Q74462/
 	
 	=============================================================================
 	
+
+{% endraw %}

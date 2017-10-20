@@ -6,6 +6,8 @@ permalink: /kb/080/Q80641/
 
 ## Q80641: Mouse Behavior in MS-DOS Programs That Run in a Window
 
+{% raw %}
+
 	Article: Q80641
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/080/Q80641/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/321/Q321674/
 
 ## Q321674: HOW TO: Configure IISReset to Wait Longer than the Default Time
 
+{% raw %}
+
 	Article: Q321674
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -88,3 +90,5 @@ permalink: /kb/321/Q321674/
 	
 	=============================================================================
 	
+
+{% endraw %}

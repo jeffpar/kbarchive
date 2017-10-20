@@ -6,6 +6,8 @@ permalink: /kb/095/Q95685/
 
 ## Q95685: PPT: Viewer Cannot Access Multiple Disks Using Playlist
 
+{% raw %}
+
 	Article: Q95685
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -117,3 +119,5 @@ permalink: /kb/095/Q95685/
 	
 	=============================================================================
 	
+
+{% endraw %}

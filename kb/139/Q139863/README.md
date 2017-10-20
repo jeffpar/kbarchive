@@ -6,6 +6,8 @@ permalink: /kb/139/Q139863/
 
 ## Q139863: How to Determine the Variable Type
 
+{% raw %}
+
 	Article: Q139863
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -92,3 +94,5 @@ permalink: /kb/139/Q139863/
 	
 	=============================================================================
 	
+
+{% endraw %}

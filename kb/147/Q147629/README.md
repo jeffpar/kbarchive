@@ -6,6 +6,8 @@ permalink: /kb/147/Q147629/
 
 ## Q147629: PRB: Problems If ODBC or DAO in DLL's InitInstance or DLLMain
 
+{% raw %}
+
 	Article: Q147629
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.5; winnt:4.0,4.1,4.2,5.0,6.0
@@ -144,3 +146,5 @@ permalink: /kb/147/Q147629/
 	
 	=============================================================================
 	
+
+{% endraw %}

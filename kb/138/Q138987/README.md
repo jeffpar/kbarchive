@@ -6,6 +6,8 @@ permalink: /kb/138/Q138987/
 
 ## Q138987: Novell Clients are Denied Access Logging on to FPNW Servers
 
+{% raw %}
+
 	Article: Q138987
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -94,3 +96,5 @@ permalink: /kb/138/Q138987/
 	
 	=============================================================================
 	
+
+{% endraw %}

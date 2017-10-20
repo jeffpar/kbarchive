@@ -6,6 +6,8 @@ permalink: /kb/103/Q103612/
 
 ## Q103612: PRB: REPORT FORM &lt;Report&gt; TO &lt;File&gt; w/ IBM Laser Printer 4019
 
+{% raw %}
+
 	Article: Q103612
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0
@@ -46,3 +48,5 @@ permalink: /kb/103/Q103612/
 	
 	=============================================================================
 	
+
+{% endraw %}

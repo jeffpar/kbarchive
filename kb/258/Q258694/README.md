@@ -6,6 +6,8 @@ permalink: /kb/258/Q258694/
 
 ## Q258694: Dynamics of Software Development Comments and Corrections
 
+{% raw %}
+
 	Article: Q258694
 	Product(s): Microsoft Press
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/258/Q258694/
 	
 	=============================================================================
 	
+
+{% endraw %}

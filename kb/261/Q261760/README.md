@@ -6,6 +6,8 @@ permalink: /kb/261/Q261760/
 
 ## Q261760: Site Status Inaccurately Reports 0 KB Free Disk Space on NDS
 
+{% raw %}
+
 	Article: Q261760
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -54,3 +56,5 @@ permalink: /kb/261/Q261760/
 	
 	=============================================================================
 	
+
+{% endraw %}

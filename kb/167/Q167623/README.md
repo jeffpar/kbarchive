@@ -6,6 +6,8 @@ permalink: /kb/167/Q167623/
 
 ## Q167623: WD97: &quot;Check Drive&quot; Error When File Name Has Extended Characters
 
+{% raw %}
+
 	Article: Q167623
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:7.0,7.0a,97
@@ -133,3 +135,5 @@ permalink: /kb/167/Q167623/
 	
 	=============================================================================
 	
+
+{% endraw %}

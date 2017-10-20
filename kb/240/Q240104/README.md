@@ -6,6 +6,8 @@ permalink: /kb/240/Q240104/
 
 ## Q240104: BUG: Schema Calls to DB2 on OS/400 V4R4 Cause 100% CPU Spin
 
+{% raw %}
+
 	Article: Q240104
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -72,3 +74,5 @@ permalink: /kb/240/Q240104/
 	
 	=============================================================================
 	
+
+{% endraw %}

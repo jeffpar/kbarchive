@@ -6,6 +6,8 @@ permalink: /kb/086/Q86355/
 
 ## Q86355: SETUP.TXT: Microsoft Windows &amp; MS-DOS 5 Upgrade
 
+{% raw %}
+
 	Article: Q86355
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -1083,3 +1085,5 @@ permalink: /kb/086/Q86355/
 	
 	=============================================================================
 	
+
+{% endraw %}

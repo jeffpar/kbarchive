@@ -6,6 +6,8 @@ permalink: /kb/229/Q229314/
 
 ## Q229314: XFOR: cc:Mail Migration Fails; PO Name Has Non-AlphaNumeric Char
 
+{% raw %}
+
 	Article: Q229314
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -86,3 +88,5 @@ permalink: /kb/229/Q229314/
 	
 	=============================================================================
 	
+
+{% endraw %}

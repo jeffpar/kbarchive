@@ -6,6 +6,8 @@ permalink: /kb/110/Q110820/
 
 ## Q110820: Mac Wkst: Resizable Forms Available with Upgrade to 3.1d
 
+{% raw %}
+
 	Article: Q110820
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1d
@@ -53,3 +55,5 @@ permalink: /kb/110/Q110820/
 	
 	=============================================================================
 	
+
+{% endraw %}

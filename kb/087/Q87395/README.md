@@ -6,6 +6,8 @@ permalink: /kb/087/Q87395/
 
 ## Q87395: PC DB: What the GROUP.GLB File Is Used For
 
+{% raw %}
+
 	Article: Q87395
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -44,3 +46,5 @@ permalink: /kb/087/Q87395/
 	
 	=============================================================================
 	
+
+{% endraw %}

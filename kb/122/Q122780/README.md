@@ -6,6 +6,8 @@ permalink: /kb/122/Q122780/
 
 ## Q122780: Mac OOF: Out of Office Server Update
 
+{% raw %}
+
 	Article: Q122780
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1d
@@ -151,3 +153,5 @@ permalink: /kb/122/Q122780/
 	
 	=============================================================================
 	
+
+{% endraw %}

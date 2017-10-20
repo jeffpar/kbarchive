@@ -6,6 +6,8 @@ permalink: /kb/064/Q64814/
 
 ## Q64814: Minimize and Maximize Buttons Appear Blacked Out
 
+{% raw %}
+
 	Article: Q64814
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/064/Q64814/
 	
 	=============================================================================
 	
+
+{% endraw %}

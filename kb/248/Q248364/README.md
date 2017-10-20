@@ -6,6 +6,8 @@ permalink: /kb/248/Q248364/
 
 ## Q248364: Updating Mime Types with ADSUTIL.VBS Results Corrupted Mime Type
 
+{% raw %}
+
 	Article: Q248364
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -92,3 +94,5 @@ permalink: /kb/248/Q248364/
 	
 	=============================================================================
 	
+
+{% endraw %}

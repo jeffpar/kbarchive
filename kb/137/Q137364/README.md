@@ -6,6 +6,8 @@ permalink: /kb/137/Q137364/
 
 ## Q137364: Removing Damaged Messages from MS Exchange Outbox
 
+{% raw %}
+
 	Article: Q137364
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -121,3 +123,5 @@ permalink: /kb/137/Q137364/
 	
 	=============================================================================
 	
+
+{% endraw %}

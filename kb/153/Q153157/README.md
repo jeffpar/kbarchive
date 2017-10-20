@@ -6,6 +6,8 @@ permalink: /kb/153/Q153157/
 
 ## Q153157: WNetGetUser Returns ERROR_NOT_CONNECTED
 
+{% raw %}
+
 	Article: Q153157
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -56,3 +58,5 @@ permalink: /kb/153/Q153157/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86073/
 
 ## Q86073: Reinstalling a Windows 3.0 Printer Driver in Windows 3.1
 
+{% raw %}
+
 	Article: Q86073
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/086/Q86073/
 	
 	=============================================================================
 	
+
+{% endraw %}

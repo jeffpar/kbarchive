@@ -6,6 +6,8 @@ permalink: /kb/153/Q153094/
 
 ## Q153094: Restoring Default Permissions to Windows NT System Files
 
+{% raw %}
+
 	Article: Q153094
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -169,3 +171,5 @@ permalink: /kb/153/Q153094/
 	
 	=============================================================================
 	
+
+{% endraw %}

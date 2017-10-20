@@ -6,6 +6,8 @@ permalink: /kb/257/Q257904/
 
 ## Q257904: Unable to Remotely Administer a MSCS Server After Applying SP4
 
+{% raw %}
+
 	Article: Q257904
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/257/Q257904/
 	
 	=============================================================================
 	
+
+{% endraw %}

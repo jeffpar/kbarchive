@@ -6,6 +6,8 @@ permalink: /kb/063/Q63340/
 
 ## Q63340: Mac Form: Using Same Graphic on Send and Read Screens
 
+{% raw %}
+
 	Article: Q63340
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -56,3 +58,5 @@ permalink: /kb/063/Q63340/
 	
 	=============================================================================
 	
+
+{% endraw %}

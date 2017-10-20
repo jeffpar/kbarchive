@@ -6,6 +6,8 @@ permalink: /kb/310/Q310701/
 
 ## Q310701: Midtown Madness: Game Quits Unexpectedly After Startup Movie
 
+{% raw %}
+
 	Article: Q310701
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -91,3 +93,5 @@ permalink: /kb/310/Q310701/
 	
 	=============================================================================
 	
+
+{% endraw %}

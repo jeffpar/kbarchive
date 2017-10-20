@@ -6,6 +6,8 @@ permalink: /kb/269/Q269332/
 
 ## Q269332: Pocket Streets Err Msg: Pocket Streets 2001 Does Not Support...
 
+{% raw %}
+
 	Article: Q269332
 	Product(s): Microsoft Automap
 	Version(s): 1.0,2.0,2.5,2.51
@@ -60,3 +62,5 @@ permalink: /kb/269/Q269332/
 	
 	=============================================================================
 	
+
+{% endraw %}

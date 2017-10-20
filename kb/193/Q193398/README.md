@@ -6,6 +6,8 @@ permalink: /kb/193/Q193398/
 
 ## Q193398: BUG: Table Designer Record Length Wrong if Field(s) Allow Nulls
 
+{% raw %}
+
 	Article: Q193398
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -80,3 +82,5 @@ permalink: /kb/193/Q193398/
 	
 	=============================================================================
 	
+
+{% endraw %}

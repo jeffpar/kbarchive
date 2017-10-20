@@ -6,6 +6,8 @@ permalink: /kb/148/Q148713/
 
 ## Q148713: PC WSPlus: How to View the Schedule of Resource Accounts
 
+{% raw %}
+
 	Article: Q148713
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -133,3 +135,5 @@ permalink: /kb/148/Q148713/
 	
 	=============================================================================
 	
+
+{% endraw %}

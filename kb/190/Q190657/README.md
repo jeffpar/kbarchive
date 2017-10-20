@@ -6,6 +6,8 @@ permalink: /kb/190/Q190657/
 
 ## Q190657: XADM: Access Violation Processing URL Larger Than 1,732 Bytes
 
+{% raw %}
+
 	Article: Q190657
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/190/Q190657/
 	
 	=============================================================================
 	
+
+{% endraw %}

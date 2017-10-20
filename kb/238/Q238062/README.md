@@ -6,6 +6,8 @@ permalink: /kb/238/Q238062/
 
 ## Q238062: BDC Promotion May Be Unsuccessful Using Server Manager
 
+{% raw %}
+
 	Article: Q238062
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -101,3 +103,5 @@ permalink: /kb/238/Q238062/
 	
 	=============================================================================
 	
+
+{% endraw %}

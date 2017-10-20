@@ -6,6 +6,8 @@ permalink: /kb/183/Q183858/
 
 ## Q183858: Ipconfig.exe Usage for MS-DOS 3.0 Network Client
 
+{% raw %}
+
 	Article: Q183858
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95;WinNT:3.0,4.0
@@ -74,3 +76,5 @@ permalink: /kb/183/Q183858/
 	
 	=============================================================================
 	
+
+{% endraw %}

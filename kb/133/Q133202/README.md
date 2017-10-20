@@ -6,6 +6,8 @@ permalink: /kb/133/Q133202/
 
 ## Q133202: Windows NT File System Security and WWW Browsing
 
+{% raw %}
+
 	Article: Q133202
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/133/Q133202/
 	
 	=============================================================================
 	
+
+{% endraw %}

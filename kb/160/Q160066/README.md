@@ -6,6 +6,8 @@ permalink: /kb/160/Q160066/
 
 ## Q160066: The Second Processor's Speed is Reported Incorrectly to WinNT
 
+{% raw %}
+
 	Article: Q160066
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/160/Q160066/
 	
 	=============================================================================
 	
+
+{% endraw %}

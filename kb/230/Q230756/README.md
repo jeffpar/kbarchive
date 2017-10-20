@@ -6,6 +6,8 @@ permalink: /kb/230/Q230756/
 
 ## Q230756: BUG: Windows CE Emulation Serial Communications Bugs
 
+{% raw %}
+
 	Article: Q230756
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/230/Q230756/
 	
 	=============================================================================
 	
+
+{% endraw %}

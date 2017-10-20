@@ -6,6 +6,8 @@ permalink: /kb/187/Q187523/
 
 ## Q187523: XADM: How to Remove Duplicate EventConfig Folders
 
+{% raw %}
+
 	Article: Q187523
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -80,3 +82,5 @@ permalink: /kb/187/Q187523/
 	
 	=============================================================================
 	
+
+{% endraw %}

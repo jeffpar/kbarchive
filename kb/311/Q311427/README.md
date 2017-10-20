@@ -6,6 +6,8 @@ permalink: /kb/311/Q311427/
 
 ## Q311427: MSN Explorer Background Appears White in Microsoft Windows XP
 
+{% raw %}
+
 	Article: Q311427
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -67,3 +69,5 @@ permalink: /kb/311/Q311427/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166714/
 
 ## Q166714: XCLN: Using AppleScript for Drag-and-Drop Support on Macintosh
 
+{% raw %}
+
 	Article: Q166714
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -114,3 +116,5 @@ permalink: /kb/166/Q166714/
 	
 	=============================================================================
 	
+
+{% endraw %}

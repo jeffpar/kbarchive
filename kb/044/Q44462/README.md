@@ -6,6 +6,8 @@ permalink: /kb/044/Q44462/
 
 ## Q44462: Using ILINK in the Development Process in C
 
+{% raw %}
+
 	Article: Q44462
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -66,3 +68,5 @@ permalink: /kb/044/Q44462/
 	(incremental compile) option, then incremental link is automatically
 	invoked. If you do not want an incremental compile you can still
 	request incremental link with the /Li compiler option.
+
+{% endraw %}

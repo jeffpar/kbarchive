@@ -6,6 +6,8 @@ permalink: /kb/134/Q134553/
 
 ## Q134553: Windows 95 Hangs During First Reboot After Setup
 
+{% raw %}
+
 	Article: Q134553
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/134/Q134553/
 	
 	=============================================================================
 	
+
+{% endraw %}

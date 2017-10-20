@@ -6,6 +6,8 @@ permalink: /kb/321/Q321615/
 
 ## Q321615: FIX: The SAK Function IsCmdFinished Returns Incorrect Value
 
+{% raw %}
+
 	Article: Q321615
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/321/Q321615/
 	
 	=============================================================================
 	
+
+{% endraw %}

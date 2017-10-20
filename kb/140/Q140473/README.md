@@ -6,6 +6,8 @@ permalink: /kb/140/Q140473/
 
 ## Q140473: Observed Versus Described Behavior of P-NODE Name Resolution
 
+{% raw %}
+
 	Article: Q140473
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.5,3.51; :2.2c,3.11,3.11a,3.11b
@@ -73,3 +75,5 @@ permalink: /kb/140/Q140473/
 	
 	=============================================================================
 	
+
+{% endraw %}

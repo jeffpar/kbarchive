@@ -6,6 +6,8 @@ permalink: /kb/154/Q154075/
 
 ## Q154075: Trimming LAN Manager Server Service to Tune Applications
 
+{% raw %}
+
 	Article: Q154075
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -130,3 +132,5 @@ permalink: /kb/154/Q154075/
 	
 	=============================================================================
 	
+
+{% endraw %}

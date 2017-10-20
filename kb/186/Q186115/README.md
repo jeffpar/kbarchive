@@ -6,6 +6,8 @@ permalink: /kb/186/Q186115/
 
 ## Q186115: WD97: Macro to Check for Multiple Instances of Word
 
+{% raw %}
+
 	Article: Q186115
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/186/Q186115/
 	
 	=============================================================================
 	
+
+{% endraw %}

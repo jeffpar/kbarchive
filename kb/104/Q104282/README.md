@@ -6,6 +6,8 @@ permalink: /kb/104/Q104282/
 
 ## Q104282: X400: Transports Supported by the X.400 Gateway
 
+{% raw %}
+
 	Article: Q104282
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -81,3 +83,5 @@ permalink: /kb/104/Q104282/
 	
 	=============================================================================
 	
+
+{% endraw %}

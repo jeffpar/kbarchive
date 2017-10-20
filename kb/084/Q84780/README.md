@@ -6,6 +6,8 @@ permalink: /kb/084/Q84780/
 
 ## Q84780: COMxProtocol Setting Not Explained in SYSINI.WRI File
 
+{% raw %}
+
 	Article: Q84780
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -79,3 +81,5 @@ permalink: /kb/084/Q84780/
 	
 	=============================================================================
 	
+
+{% endraw %}

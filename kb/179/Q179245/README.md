@@ -6,6 +6,8 @@ permalink: /kb/179/Q179245/
 
 ## Q179245: WD97: Format Painter Does Not Work with Inline Objects
 
+{% raw %}
+
 	Article: Q179245
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -119,3 +121,5 @@ permalink: /kb/179/Q179245/
 	
 	=============================================================================
 	
+
+{% endraw %}

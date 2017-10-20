@@ -6,6 +6,8 @@ permalink: /kb/086/Q86495/
 
 ## Q86495: Actix Graphics Engine Causes Erratic Logitech Mouse
 
+{% raw %}
+
 	Article: Q86495
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/086/Q86495/
 	
 	=============================================================================
 	
+
+{% endraw %}

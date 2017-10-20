@@ -6,6 +6,8 @@ permalink: /kb/246/Q246655/
 
 ## Q246655: Network Address and Network Port for AS/400 Connections
 
+{% raw %}
+
 	Article: Q246655
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3
@@ -120,3 +122,5 @@ permalink: /kb/246/Q246655/
 	
 	=============================================================================
 	
+
+{% endraw %}

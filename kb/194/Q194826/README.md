@@ -6,6 +6,8 @@ permalink: /kb/194/Q194826/
 
 ## Q194826: HOWTO: Designate a Visual SourceSafe Project as a Web Project
 
+{% raw %}
+
 	Article: Q194826
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/194/Q194826/
 	
 	=============================================================================
 	
+
+{% endraw %}

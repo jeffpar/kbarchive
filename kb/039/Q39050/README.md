@@ -6,6 +6,8 @@ permalink: /kb/039/Q39050/
 
 ## Q39050: Error R6013 Illegal Far Pointer Use
 
+{% raw %}
+
 	Article: Q39050
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -45,3 +47,5 @@ permalink: /kb/039/Q39050/
 	run-time error message R6013 has changed as follows:
 	
 	   R6013 illegal far pointer use
+
+{% endraw %}

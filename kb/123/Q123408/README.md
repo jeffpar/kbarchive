@@ -6,6 +6,8 @@ permalink: /kb/123/Q123408/
 
 ## Q123408: History of Microsoft MS-DOS CD-ROM Extensions (MSCDEX)
 
+{% raw %}
+
 	Article: Q123408
 	Product(s): Microsoft Disk Operating System
 	Version(s): 2.1,2.2,2.21,2.22,2.23
@@ -129,3 +131,5 @@ permalink: /kb/123/Q123408/
 	
 	=============================================================================
 	
+
+{% endraw %}

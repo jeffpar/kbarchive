@@ -6,6 +6,8 @@ permalink: /kb/122/Q122055/
 
 ## Q122055: Systems Management Server Tracing and Log Capabilities
 
+{% raw %}
+
 	Article: Q122055
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -94,3 +96,5 @@ permalink: /kb/122/Q122055/
 	
 	=============================================================================
 	
+
+{% endraw %}

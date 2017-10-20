@@ -6,6 +6,8 @@ permalink: /kb/087/Q87536/
 
 ## Q87536: PRB: Crash Double-Clicking File in Open or Save Common Dialog
 
+{% raw %}
+
 	Article: Q87536
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -59,3 +61,5 @@ permalink: /kb/087/Q87536/
 	
 	=============================================================================
 	
+
+{% endraw %}

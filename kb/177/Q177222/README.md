@@ -6,6 +6,8 @@ permalink: /kb/177/Q177222/
 
 ## Q177222: NetWare Printers or Volumes Unavailable in Windows 95
 
+{% raw %}
+
 	Article: Q177222
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0
@@ -52,3 +54,5 @@ permalink: /kb/177/Q177222/
 	
 	=============================================================================
 	
+
+{% endraw %}

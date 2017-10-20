@@ -6,6 +6,8 @@ permalink: /kb/314/Q314731/
 
 ## Q314731: Access Violation in SNMP Running GETNEXT Query Against RIP
 
+{% raw %}
+
 	Article: Q314731
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/314/Q314731/
 	
 	=============================================================================
 	
+
+{% endraw %}

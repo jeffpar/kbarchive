@@ -6,6 +6,8 @@ permalink: /kb/044/Q44009/
 
 ## Q44009: C2097 Attempt to Initialize Short Address with Long Address
 
+{% raw %}
+
 	Article: Q44009
 	Product(s): See article
 	Version(s): 1.01 1.00
@@ -63,3 +65,5 @@ permalink: /kb/044/Q44009/
 	selection menu[] = { { 0 },            /*  data  */
 	                     { exit }          /*  code  */
 	                   };
+
+{% endraw %}

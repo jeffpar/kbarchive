@@ -6,6 +6,8 @@ permalink: /kb/195/Q195695/
 
 ## Q195695: Access Violation Received in IntelliPoint Productivity Tips
 
+{% raw %}
+
 	Article: Q195695
 	Product(s): Microsoft Windows NT
 	Version(s): windows:1.0; WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/195/Q195695/
 	
 	=============================================================================
 	
+
+{% endraw %}

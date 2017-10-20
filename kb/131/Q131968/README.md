@@ -6,6 +6,8 @@ permalink: /kb/131/Q131968/
 
 ## Q131968: How RAS Supports X.25 Networks
 
+{% raw %}
+
 	Article: Q131968
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.11,3.5,3.51
@@ -93,3 +95,5 @@ permalink: /kb/131/Q131968/
 	
 	=============================================================================
 	
+
+{% endraw %}

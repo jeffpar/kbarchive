@@ -6,6 +6,8 @@ permalink: /kb/113/Q113925/
 
 ## Q113925: FIX: Visual Workbench Cannot Create Project
 
+{% raw %}
+
 	Article: Q113925
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/113/Q113925/
 	
 	=============================================================================
 	
+
+{% endraw %}

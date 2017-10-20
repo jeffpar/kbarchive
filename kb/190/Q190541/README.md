@@ -6,6 +6,8 @@ permalink: /kb/190/Q190541/
 
 ## Q190541: PRB: DATE() Returns a DateTime Type Value From OLE Server
 
+{% raw %}
+
 	Article: Q190541
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -63,3 +65,5 @@ permalink: /kb/190/Q190541/
 	
 	=============================================================================
 	
+
+{% endraw %}

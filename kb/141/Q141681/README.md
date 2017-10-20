@@ -6,6 +6,8 @@ permalink: /kb/141/Q141681/
 
 ## Q141681: FIX: Error if Listview Cleared Using the AfterLabeledit Event
 
+{% raw %}
+
 	Article: Q141681
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -96,3 +98,5 @@ permalink: /kb/141/Q141681/
 	
 	=============================================================================
 	
+
+{% endraw %}

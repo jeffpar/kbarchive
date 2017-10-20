@@ -6,6 +6,8 @@ permalink: /kb/102/Q102020/
 
 ## Q102020: How to Monitor Disk Performance with Performance Monitor
 
+{% raw %}
+
 	Article: Q102020
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5,3.51,4.0
@@ -92,3 +94,5 @@ permalink: /kb/102/Q102020/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130337/
 
 ## Q130337: Err Msg Printing from Adobe PageMaker: General Printer Failure
 
+{% raw %}
+
 	Article: Q130337
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -107,3 +109,5 @@ permalink: /kb/130/Q130337/
 	
 	=============================================================================
 	
+
+{% endraw %}

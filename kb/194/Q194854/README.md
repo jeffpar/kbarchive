@@ -6,6 +6,8 @@ permalink: /kb/194/Q194854/
 
 ## Q194854: X400: Message Containing ISO 6937 Body Part Is Not Delivered
 
+{% raw %}
+
 	Article: Q194854
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -76,3 +78,5 @@ permalink: /kb/194/Q194854/
 	
 	=============================================================================
 	
+
+{% endraw %}

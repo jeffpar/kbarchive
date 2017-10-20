@@ -6,6 +6,8 @@ permalink: /kb/300/Q300970/
 
 ## Q300970: Train Simulator: Joystick Does Not Work as Expected
 
+{% raw %}
+
 	Article: Q300970
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -41,3 +43,5 @@ permalink: /kb/300/Q300970/
 	
 	=============================================================================
 	
+
+{% endraw %}

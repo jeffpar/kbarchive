@@ -6,6 +6,8 @@ permalink: /kb/101/Q101321/
 
 ## Q101321: ADT: Cannot Select Any Object Except MS Access Menu
 
+{% raw %}
+
 	Article: Q101321
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.0,1.1,2.0,7.0
@@ -106,3 +108,5 @@ permalink: /kb/101/Q101321/
 	
 	=============================================================================
 	
+
+{% endraw %}

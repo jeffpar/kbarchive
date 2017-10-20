@@ -6,6 +6,8 @@ permalink: /kb/155/Q155682/
 
 ## Q155682: XADM: Info Store Won't transfer Some X.400 Messages to Gateway
 
+{% raw %}
+
 	Article: Q155682
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -93,3 +95,5 @@ permalink: /kb/155/Q155682/
 	
 	=============================================================================
 	
+
+{% endraw %}

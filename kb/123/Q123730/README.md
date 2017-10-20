@@ -6,6 +6,8 @@ permalink: /kb/123/Q123730/
 
 ## Q123730: BUG: R6000 After Many Calls to RunQQ If Linked with Defaults
 
+{% raw %}
+
 	Article: Q123730
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -121,3 +123,5 @@ permalink: /kb/123/Q123730/
 	
 	=============================================================================
 	
+
+{% endraw %}

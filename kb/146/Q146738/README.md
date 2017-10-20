@@ -6,6 +6,8 @@ permalink: /kb/146/Q146738/
 
 ## Q146738: XFOR: Forcing a Dirsync Cycle on the Exchange Server
 
+{% raw %}
+
 	Article: Q146738
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -102,3 +104,5 @@ permalink: /kb/146/Q146738/
 	
 	=============================================================================
 	
+
+{% endraw %}

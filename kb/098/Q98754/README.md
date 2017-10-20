@@ -6,6 +6,8 @@ permalink: /kb/098/Q98754/
 
 ## Q98754: How to Prevent Recursion Within ON KEY LABEL Routines
 
+{% raw %}
+
 	Article: Q98754
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 3.00 | 1.02 2.00 2.50
@@ -92,3 +94,5 @@ permalink: /kb/098/Q98754/
 	
 	=============================================================================
 	
+
+{% endraw %}

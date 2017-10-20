@@ -6,6 +6,8 @@ permalink: /kb/139/Q139211/
 
 ## Q139211: Win32 RECEIVE_AND_POST Uses an Event Handle, Not a Semaphore
 
+{% raw %}
+
 	Article: Q139211
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -46,3 +48,5 @@ permalink: /kb/139/Q139211/
 	
 	=============================================================================
 	
+
+{% endraw %}

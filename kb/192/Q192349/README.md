@@ -6,6 +6,8 @@ permalink: /kb/192/Q192349/
 
 ## Q192349: XADM: Messages NDR after Applying 5.5 SP or 5.0 Hotfix
 
+{% raw %}
+
 	Article: Q192349
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -110,3 +112,5 @@ permalink: /kb/192/Q192349/
 	
 	=============================================================================
 	
+
+{% endraw %}

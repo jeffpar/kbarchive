@@ -6,6 +6,8 @@ permalink: /kb/167/Q167960/
 
 ## Q167960: BUG: ESC/ENTER Keys Do Not Work When Editing CTreeCtrl Labels
 
+{% raw %}
+
 	Article: Q167960
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.0a,4.1,4.2,4.2b,5.0,6.0
@@ -184,3 +186,5 @@ permalink: /kb/167/Q167960/
 	
 	=============================================================================
 	
+
+{% endraw %}

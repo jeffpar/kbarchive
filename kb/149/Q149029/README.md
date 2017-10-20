@@ -6,6 +6,8 @@ permalink: /kb/149/Q149029/
 
 ## Q149029: XFOR: IMC Re-Maps Return-Receipts-To Header to Delivery Receipt
 
+{% raw %}
+
 	Article: Q149029
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -47,3 +49,5 @@ permalink: /kb/149/Q149029/
 	
 	=============================================================================
 	
+
+{% endraw %}

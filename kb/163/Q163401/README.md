@@ -6,6 +6,8 @@ permalink: /kb/163/Q163401/
 
 ## Q163401: How to Disable Network Redirector File Caching
 
+{% raw %}
+
 	Article: Q163401
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -146,3 +148,5 @@ permalink: /kb/163/Q163401/
 	
 	=============================================================================
 	
+
+{% endraw %}

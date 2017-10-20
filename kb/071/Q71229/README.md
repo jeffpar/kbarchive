@@ -6,6 +6,8 @@ permalink: /kb/071/Q71229/
 
 ## Q71229: PRB: Windows Regions Do Not Scale
 
+{% raw %}
+
 	Article: Q71229
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51
@@ -53,3 +55,5 @@ permalink: /kb/071/Q71229/
 	
 	=============================================================================
 	
+
+{% endraw %}

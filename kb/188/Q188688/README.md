@@ -6,6 +6,8 @@ permalink: /kb/188/Q188688/
 
 ## Q188688: XCLN: Inbox Assistant Missing After Uninstalling Netscape
 
+{% raw %}
+
 	Article: Q188688
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -101,3 +103,5 @@ permalink: /kb/188/Q188688/
 	
 	=============================================================================
 	
+
+{% endraw %}

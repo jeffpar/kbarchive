@@ -6,6 +6,8 @@ permalink: /kb/134/Q134580/
 
 ## Q134580: Cannot Install Fastback 6.0 with Install Program Wizard
 
+{% raw %}
+
 	Article: Q134580
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -64,3 +66,5 @@ permalink: /kb/134/Q134580/
 	
 	=============================================================================
 	
+
+{% endraw %}

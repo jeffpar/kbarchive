@@ -6,6 +6,8 @@ permalink: /kb/185/Q185719/
 
 ## Q185719: Removing Host Security Option Causes Trap in SNA Manager
 
+{% raw %}
+
 	Article: Q185719
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -55,3 +57,5 @@ permalink: /kb/185/Q185719/
 	
 	=============================================================================
 	
+
+{% endraw %}

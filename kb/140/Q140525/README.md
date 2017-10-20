@@ -6,6 +6,8 @@ permalink: /kb/140/Q140525/
 
 ## Q140525: HOWTO: Receive from the Serial Port by Using MScomm32.ocx
 
+{% raw %}
+
 	Article: Q140525
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -111,3 +113,5 @@ permalink: /kb/140/Q140525/
 	
 	=============================================================================
 	
+
+{% endraw %}

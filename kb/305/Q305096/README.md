@@ -6,6 +6,8 @@ permalink: /kb/305/Q305096/
 
 ## Q305096: SMS: User Unable to Browse Criteria Values Without Class Rights
 
+{% raw %}
+
 	Article: Q305096
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -227,3 +229,5 @@ permalink: /kb/305/Q305096/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/251/Q251097/
 
 ## Q251097: XIMS: Troubleshooting POP3/IMAP 13002 Errors w. SSL on Exchange
 
+{% raw %}
+
 	Article: Q251097
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -98,3 +100,5 @@ permalink: /kb/251/Q251097/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140973/
 
 ## Q140973: Inaccessible Floppy Disk Drive on Toshiba Portege 610CT
 
+{% raw %}
+
 	Article: Q140973
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -60,3 +62,5 @@ permalink: /kb/140/Q140973/
 	
 	=============================================================================
 	
+
+{% endraw %}

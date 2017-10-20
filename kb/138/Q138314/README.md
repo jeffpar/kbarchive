@@ -6,6 +6,8 @@ permalink: /kb/138/Q138314/
 
 ## Q138314: Multimedia: General MIDI Troubleshooting for Windows 95/98
 
+{% raw %}
+
 	Article: Q138314
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 95
@@ -387,3 +389,5 @@ permalink: /kb/138/Q138314/
 	
 	=============================================================================
 	
+
+{% endraw %}

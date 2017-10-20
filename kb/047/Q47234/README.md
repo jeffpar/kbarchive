@@ -6,6 +6,8 @@ permalink: /kb/047/Q47234/
 
 ## Q47234: BSEARCH Does Not Find the First Occurrence of Key in the Array
 
+{% raw %}
+
 	Article: Q47234
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -90,3 +92,5 @@ permalink: /kb/047/Q47234/
 	check, it finds Brad2 before Brad1. Instead of continuing to search
 	for the first occurrence of Brad (as is documented), it immediately
 	returns with a pointer to Brad2 (which is the proper action).
+
+{% endraw %}

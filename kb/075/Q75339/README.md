@@ -6,6 +6,8 @@ permalink: /kb/075/Q75339/
 
 ## Q75339: HOWTO: Steps to Send a Document to a Printer
 
+{% raw %}
+
 	Article: Q75339
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -106,3 +108,5 @@ permalink: /kb/075/Q75339/
 	
 	=============================================================================
 	
+
+{% endraw %}

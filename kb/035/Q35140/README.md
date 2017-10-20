@@ -6,6 +6,8 @@ permalink: /kb/035/Q35140/
 
 ## Q35140: Error C1015 &quot;Can't Open Include File&quot; with MEP
 
+{% raw %}
+
 	Article: Q35140
 	Product(s): See article
 	Version(s): 1.00
@@ -56,3 +58,5 @@ permalink: /kb/035/Q35140/
 	void main (void)
 	{
 	}
+
+{% endraw %}

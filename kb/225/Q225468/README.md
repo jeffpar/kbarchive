@@ -6,6 +6,8 @@ permalink: /kb/225/Q225468/
 
 ## Q225468: Encarta: Animations or InterActivities Do Not Function Correctly
 
+{% raw %}
+
 	Article: Q225468
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/225/Q225468/
 	
 	=============================================================================
 	
+
+{% endraw %}

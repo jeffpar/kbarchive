@@ -6,6 +6,8 @@ permalink: /kb/151/Q151248/
 
 ## Q151248: XCLN: URLs With Spaces are Truncated by Exchange Client
 
+{% raw %}
+
 	Article: Q151248
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -63,3 +65,5 @@ permalink: /kb/151/Q151248/
 	
 	=============================================================================
 	
+
+{% endraw %}

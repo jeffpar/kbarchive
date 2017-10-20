@@ -6,6 +6,8 @@ permalink: /kb/324/Q324201/
 
 ## Q324201: PRB: Object Browser Generates Incorrect Interface Code
 
+{% raw %}
+
 	Article: Q324201
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -269,3 +271,5 @@ permalink: /kb/324/Q324201/
 	
 	=============================================================================
 	
+
+{% endraw %}

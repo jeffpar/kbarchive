@@ -6,6 +6,8 @@ permalink: /kb/129/Q129766/
 
 ## Q129766: Err Msg: Cannot Send an Embedded Message in Editable Format
 
+{% raw %}
+
 	Article: Q129766
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -62,3 +64,5 @@ permalink: /kb/129/Q129766/
 	
 	=============================================================================
 	
+
+{% endraw %}

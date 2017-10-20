@@ -6,6 +6,8 @@ permalink: /kb/306/Q306886/
 
 ## Q306886: BUG: Split Causes DataGrid to Repaint Itself Continuously
 
+{% raw %}
+
 	Article: Q306886
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -143,3 +145,5 @@ permalink: /kb/306/Q306886/
 	
 	=============================================================================
 	
+
+{% endraw %}

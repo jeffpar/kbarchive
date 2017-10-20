@@ -6,6 +6,8 @@ permalink: /kb/216/Q216469/
 
 ## Q216469: Combat FS Err Msg: Invalid Page Fault in Module Simsui.dll
 
+{% raw %}
+
 	Article: Q216469
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -87,3 +89,5 @@ permalink: /kb/216/Q216469/
 	
 	=============================================================================
 	
+
+{% endraw %}

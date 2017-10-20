@@ -6,6 +6,8 @@ permalink: /kb/100/Q100085/
 
 ## Q100085: Using the LINK32 -DUMP Command
 
+{% raw %}
+
 	Article: Q100085
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -139,3 +141,5 @@ permalink: /kb/100/Q100085/
 	
 	=============================================================================
 	
+
+{% endraw %}

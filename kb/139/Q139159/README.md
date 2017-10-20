@@ -6,6 +6,8 @@ permalink: /kb/139/Q139159/
 
 ## Q139159: How to Use a Builder to Change a Text Box Name to a Field Name
 
+{% raw %}
+
 	Article: Q139159
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -100,3 +102,5 @@ permalink: /kb/139/Q139159/
 	
 	=============================================================================
 	
+
+{% endraw %}

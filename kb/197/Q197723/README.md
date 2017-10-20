@@ -6,6 +6,8 @@ permalink: /kb/197/Q197723/
 
 ## Q197723: XFOR: Understanding Message Flow for New GroupWise Connector
 
+{% raw %}
+
 	Article: Q197723
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -122,3 +124,5 @@ permalink: /kb/197/Q197723/
 	
 	=============================================================================
 	
+
+{% endraw %}

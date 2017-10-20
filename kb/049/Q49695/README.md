@@ -6,6 +6,8 @@ permalink: /kb/049/Q49695/
 
 ## Q49695: Options Saved When a Flight Mode Is Created
 
+{% raw %}
+
 	Article: Q49695
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/049/Q49695/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181713/
 
 ## Q181713: XCLN: Cannot Resolve Name When Sending To SMTP Address Using Bro
 
+{% raw %}
+
 	Article: Q181713
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -71,3 +73,5 @@ permalink: /kb/181/Q181713/
 	
 	=============================================================================
 	
+
+{% endraw %}

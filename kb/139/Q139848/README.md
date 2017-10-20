@@ -6,6 +6,8 @@ permalink: /kb/139/Q139848/
 
 ## Q139848: Problems Using Microsoft Fax with RPI Modems
 
+{% raw %}
+
 	Article: Q139848
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -107,3 +109,5 @@ permalink: /kb/139/Q139848/
 	
 	=============================================================================
 	
+
+{% endraw %}

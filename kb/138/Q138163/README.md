@@ -6,6 +6,8 @@ permalink: /kb/138/Q138163/
 
 ## Q138163: PRB: Left Justify Puts a Space in Format Clause
 
+{% raw %}
+
 	Article: Q138163
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -86,3 +88,5 @@ permalink: /kb/138/Q138163/
 	
 	=============================================================================
 	
+
+{% endraw %}

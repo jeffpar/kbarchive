@@ -6,6 +6,8 @@ permalink: /kb/176/Q176867/
 
 ## Q176867: WD97: Incorrect Tab Settings Using WordBasic.FormatTabs
 
+{% raw %}
+
 	Article: Q176867
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -146,3 +148,5 @@ permalink: /kb/176/Q176867/
 	
 	=============================================================================
 	
+
+{% endraw %}

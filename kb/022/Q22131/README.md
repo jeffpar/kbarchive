@@ -6,6 +6,8 @@ permalink: /kb/022/Q22131/
 
 ## Q22131: INFO: Using a Different Hardware Font Instead of the Default
 
+{% raw %}
+
 	Article: Q22131
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -72,3 +74,5 @@ permalink: /kb/022/Q22131/
 	
 	=============================================================================
 	
+
+{% endraw %}

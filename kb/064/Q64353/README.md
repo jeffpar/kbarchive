@@ -6,6 +6,8 @@ permalink: /kb/064/Q64353/
 
 ## Q64353: With &quot;deflang&quot; Switch, PWB Prompts for Setting Program List
 
+{% raw %}
+
 	Article: Q64353
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0; OS/2:1.0
@@ -85,3 +87,5 @@ permalink: /kb/064/Q64353/
 	
 	=============================================================================
 	
+
+{% endraw %}

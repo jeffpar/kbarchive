@@ -6,6 +6,8 @@ permalink: /kb/263/Q263419/
 
 ## Q263419: Software Inventory on Encrypted Vol Degrades Performance
 
+{% raw %}
+
 	Article: Q263419
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -71,3 +73,5 @@ permalink: /kb/263/Q263419/
 	
 	=============================================================================
 	
+
+{% endraw %}

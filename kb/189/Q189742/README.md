@@ -6,6 +6,8 @@ permalink: /kb/189/Q189742/
 
 ## Q189742: BUG: SendKeys &quot;{INS}&quot; Causes Error &quot;Invalid Procedure Call&quot;
 
+{% raw %}
+
 	Article: Q189742
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/189/Q189742/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165414/
 
 ## Q165414: Error Message: Internal MAPI Error
 
+{% raw %}
+
 	Article: Q165414
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -60,3 +62,5 @@ permalink: /kb/165/Q165414/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137627/
 
 ## Q137627: HOWTO: Change the Mouse Pointer to Any .CUR or .ANI File
 
+{% raw %}
+
 	Article: Q137627
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/137/Q137627/
 	
 	=============================================================================
 	
+
+{% endraw %}

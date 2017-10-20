@@ -6,6 +6,8 @@ permalink: /kb/158/Q158233/
 
 ## Q158233: STL Sample for Basic Math Functions
 
+{% raw %}
+
 	Article: Q158233
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -175,3 +177,5 @@ permalink: /kb/158/Q158233/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171475/
 
 ## Q171475: FIX: RichTextBox Cleared When BorderStyle Changes at Run-Time
 
+{% raw %}
+
 	Article: Q171475
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -82,3 +84,5 @@ permalink: /kb/171/Q171475/
 	
 	=============================================================================
 	
+
+{% endraw %}

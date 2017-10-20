@@ -6,6 +6,8 @@ permalink: /kb/221/Q221748/
 
 ## Q221748: FIX:FFC's - Genhtml.prg Fails With SET COVERAGE To
 
+{% raw %}
+
 	Article: Q221748
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -77,3 +79,5 @@ permalink: /kb/221/Q221748/
 	
 	=============================================================================
 	
+
+{% endraw %}

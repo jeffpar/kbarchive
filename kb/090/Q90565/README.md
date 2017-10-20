@@ -6,6 +6,8 @@ permalink: /kb/090/Q90565/
 
 ## Q90565: Changes Made by MS-DOS Setup to the SYSTEM.INI File
 
+{% raw %}
+
 	Article: Q90565
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -51,3 +53,5 @@ permalink: /kb/090/Q90565/
 	
 	=============================================================================
 	
+
+{% endraw %}

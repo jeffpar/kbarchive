@@ -6,6 +6,8 @@ permalink: /kb/069/Q69882/
 
 ## Q69882: Windows Help (HLP) File Format Is Not Available
 
+{% raw %}
+
 	Article: Q69882
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -41,3 +43,5 @@ permalink: /kb/069/Q69882/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/215/Q215123/
 
 ## Q215123: SMS: SMS_LOGON_SERVER_MANAGER Fails to Enumerate Shares
 
+{% raw %}
+
 	Article: Q215123
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -75,3 +77,5 @@ permalink: /kb/215/Q215123/
 	
 	=============================================================================
 	
+
+{% endraw %}

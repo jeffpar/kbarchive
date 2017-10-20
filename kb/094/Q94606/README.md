@@ -6,6 +6,8 @@ permalink: /kb/094/Q94606/
 
 ## Q94606: HOWTO: Set the CAPS LOCK, SCROLL LOCK, and NUM LOCK States
 
+{% raw %}
+
 	Article: Q94606
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -81,3 +83,5 @@ permalink: /kb/094/Q94606/
 	
 	=============================================================================
 	
+
+{% endraw %}

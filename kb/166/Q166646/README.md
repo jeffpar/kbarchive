@@ -6,6 +6,8 @@ permalink: /kb/166/Q166646/
 
 ## Q166646: WD97: Cannot Print Multiple Copies to HP LaserJet 5
 
+{% raw %}
+
 	Article: Q166646
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -76,3 +78,5 @@ permalink: /kb/166/Q166646/
 	
 	=============================================================================
 	
+
+{% endraw %}

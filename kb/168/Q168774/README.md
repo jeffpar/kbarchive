@@ -6,6 +6,8 @@ permalink: /kb/168/Q168774/
 
 ## Q168774: IBM PC/3270 for NT v4.1 TN3270 May Fail with XPROG750
 
+{% raw %}
+
 	Article: Q168774
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11,3.0,4.0
@@ -169,3 +171,5 @@ permalink: /kb/168/Q168774/
 	
 	=============================================================================
 	
+
+{% endraw %}

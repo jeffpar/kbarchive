@@ -6,6 +6,8 @@ permalink: /kb/155/Q155735/
 
 ## Q155735: OFF: Microsoft Office Shortcut Bar Ignores Startup Properties
 
+{% raw %}
+
 	Article: Q155735
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:7.0
@@ -53,3 +55,5 @@ permalink: /kb/155/Q155735/
 	
 	=============================================================================
 	
+
+{% endraw %}

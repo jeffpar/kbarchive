@@ -6,6 +6,8 @@ permalink: /kb/135/Q135743/
 
 ## Q135743: PPT7: No Clip Art Available to Import to ClipArt Gallery
 
+{% raw %}
+
 	Article: Q135743
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -69,3 +71,5 @@ permalink: /kb/135/Q135743/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/069/Q69816/
 
 ## Q69816: Flight Simulator: Brakes Stuck on with Joystick
 
+{% raw %}
+
 	Article: Q69816
 	Product(s): Microsoft Home Games
 	Version(s): 3.0,4.0,5.0,5.1
@@ -46,3 +48,5 @@ permalink: /kb/069/Q69816/
 	
 	=============================================================================
 	
+
+{% endraw %}

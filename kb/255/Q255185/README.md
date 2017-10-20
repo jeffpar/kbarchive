@@ -6,6 +6,8 @@ permalink: /kb/255/Q255185/
 
 ## Q255185: Cannot Access Internet E-Mail in Outlook 98 from Terminal Server
 
+{% raw %}
+
 	Article: Q255185
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/255/Q255185/
 	
 	=============================================================================
 	
+
+{% endraw %}

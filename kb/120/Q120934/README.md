@@ -6,6 +6,8 @@ permalink: /kb/120/Q120934/
 
 ## Q120934: MWBACKUP Can't Back Up More Than 1637 Files from One Dir
 
+{% raw %}
+
 	Article: Q120934
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -66,3 +68,5 @@ permalink: /kb/120/Q120934/
 	
 	=============================================================================
 	
+
+{% endraw %}

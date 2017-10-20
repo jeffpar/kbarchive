@@ -6,6 +6,8 @@ permalink: /kb/247/Q247677/
 
 ## Q247677: Error Message: 403.2 Forbidden: Read Access Forbidden
 
+{% raw %}
+
 	Article: Q247677
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -64,3 +66,5 @@ permalink: /kb/247/Q247677/
 	
 	=============================================================================
 	
+
+{% endraw %}

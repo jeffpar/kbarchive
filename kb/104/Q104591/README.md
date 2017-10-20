@@ -6,6 +6,8 @@ permalink: /kb/104/Q104591/
 
 ## Q104591: Executing REXX CMD Files with the LAN Manager AT Utility
 
+{% raw %}
+
 	Article: Q104591
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/104/Q104591/
 	
 	=============================================================================
 	
+
+{% endraw %}

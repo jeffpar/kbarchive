@@ -6,6 +6,8 @@ permalink: /kb/096/Q96859/
 
 ## Q96859: CD Audio Does Not Play Through Sound System Speakers
 
+{% raw %}
+
 	Article: Q96859
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/096/Q96859/
 	
 	=============================================================================
 	
+
+{% endraw %}

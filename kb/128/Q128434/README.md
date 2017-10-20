@@ -6,6 +6,8 @@ permalink: /kb/128/Q128434/
 
 ## Q128434: SMTP: Err Msg: Error SMTPGet 52 a File Open Error Has Occurred
 
+{% raw %}
+
 	Article: Q128434
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/128/Q128434/
 	
 	=============================================================================
 	
+
+{% endraw %}

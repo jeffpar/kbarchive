@@ -6,6 +6,8 @@ permalink: /kb/189/Q189925/
 
 ## Q189925: Golf 2.0: Update Available to Improve Swing Control
 
+{% raw %}
+
 	Article: Q189925
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -91,3 +93,5 @@ permalink: /kb/189/Q189925/
 	
 	=============================================================================
 	
+
+{% endraw %}

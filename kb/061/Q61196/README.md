@@ -6,6 +6,8 @@ permalink: /kb/061/Q61196/
 
 ## Q61196: C 6.00 README: /Gm No Longer Supported
 
+{% raw %}
+
 	Article: Q61196
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -22,3 +24,5 @@ permalink: /kb/061/Q61196/
 	The /Gm compiler option, as described in the "C Reference" and in
 	online help, is no longer supported by C 6.00. The /Gm option placed
 	near const items in the CONST segment.
+
+{% endraw %}

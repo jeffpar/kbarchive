@@ -6,6 +6,8 @@ permalink: /kb/069/Q69812/
 
 ## Q69812: ASD: How Flight Timing Gate Scoring Works
 
+{% raw %}
+
 	Article: Q69812
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/069/Q69812/
 	
 	=============================================================================
 	
+
+{% endraw %}

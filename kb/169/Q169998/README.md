@@ -6,6 +6,8 @@ permalink: /kb/169/Q169998/
 
 ## Q169998: XCON: ISOCOR MTA Does Not Accept BP15 Attachments
 
+{% raw %}
+
 	Article: Q169998
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/169/Q169998/
 	
 	=============================================================================
 	
+
+{% endraw %}

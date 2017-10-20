@@ -6,6 +6,8 @@ permalink: /kb/281/Q281332/
 
 ## Q281332: Interix Clients Heavily Use Samr Connections
 
+{% raw %}
+
 	Article: Q281332
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2.1,2.2.2,2.2.3,2.2.4
@@ -154,3 +156,5 @@ permalink: /kb/281/Q281332/
 	
 	=============================================================================
 	
+
+{% endraw %}

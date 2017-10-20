@@ -6,6 +6,8 @@ permalink: /kb/198/Q198072/
 
 ## Q198072: WD97: IPF Opening Word 97 File with Text Box, Square Wrap
 
+{% raw %}
+
 	Article: Q198072
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/198/Q198072/
 	
 	=============================================================================
 	
+
+{% endraw %}

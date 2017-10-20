@@ -6,6 +6,8 @@ permalink: /kb/219/Q219357/
 
 ## Q219357: 1500 MS Delay in Secondary WINS Query After Primary WINS Query
 
+{% raw %}
+
 	Article: Q219357
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -82,3 +84,5 @@ permalink: /kb/219/Q219357/
 	
 	=============================================================================
 	
+
+{% endraw %}

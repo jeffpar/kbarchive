@@ -6,6 +6,8 @@ permalink: /kb/181/Q181777/
 
 ## Q181777: Sockets Programs May Not Work After Suspend and Resume
 
+{% raw %}
+
 	Article: Q181777
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0,2.0,2.1,2.5
@@ -55,3 +57,5 @@ permalink: /kb/181/Q181777/
 	
 	=============================================================================
 	
+
+{% endraw %}

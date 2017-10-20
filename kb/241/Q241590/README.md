@@ -6,6 +6,8 @@ permalink: /kb/241/Q241590/
 
 ## Q241590: HOWTO: Use SHFileInfo to Get the Associated Icon for Files
 
+{% raw %}
+
 	Article: Q241590
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -222,3 +224,5 @@ permalink: /kb/241/Q241590/
 	
 	=============================================================================
 	
+
+{% endraw %}

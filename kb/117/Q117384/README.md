@@ -6,6 +6,8 @@ permalink: /kb/117/Q117384/
 
 ## Q117384: BUG: Unable to Hit Breakpoint on ELSE IF Statement
 
+{% raw %}
+
 	Article: Q117384
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/117/Q117384/
 	
 	=============================================================================
 	
+
+{% endraw %}

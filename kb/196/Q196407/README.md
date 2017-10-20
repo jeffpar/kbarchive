@@ -6,6 +6,8 @@ permalink: /kb/196/Q196407/
 
 ## Q196407: XADM: Unwanted Reminders Appear After Using Move Server Wizard
 
+{% raw %}
+
 	Article: Q196407
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -75,3 +77,5 @@ permalink: /kb/196/Q196407/
 	
 	=============================================================================
 	
+
+{% endraw %}

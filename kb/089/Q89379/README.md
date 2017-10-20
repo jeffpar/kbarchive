@@ -6,6 +6,8 @@ permalink: /kb/089/Q89379/
 
 ## Q89379: APPEND.EXE Causes Problems in All Versions of Windows
 
+{% raw %}
+
 	Article: Q89379
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -95,3 +97,5 @@ permalink: /kb/089/Q89379/
 	
 	=============================================================================
 	
+
+{% endraw %}

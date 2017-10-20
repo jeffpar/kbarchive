@@ -6,6 +6,8 @@ permalink: /kb/153/Q153694/
 
 ## Q153694: FIX: SQLNumResultCols Fails with Incorrect Syntax Near 'SET'
 
+{% raw %}
+
 	Article: Q153694
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.65
@@ -74,3 +76,5 @@ permalink: /kb/153/Q153694/
 	
 	=============================================================================
 	
+
+{% endraw %}

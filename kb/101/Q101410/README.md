@@ -6,6 +6,8 @@ permalink: /kb/101/Q101410/
 
 ## Q101410: Windows/MS-DOS for PS/2 Not Supported on IBM ValuePoint
 
+{% raw %}
+
 	Article: Q101410
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/101/Q101410/
 	
 	=============================================================================
 	
+
+{% endraw %}

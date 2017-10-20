@@ -6,6 +6,8 @@ permalink: /kb/082/Q82353/
 
 ## Q82353: BallPoint Mouse and Suspend/Resume
 
+{% raw %}
+
 	Article: Q82353
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.0,3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/082/Q82353/
 	
 	=============================================================================
 	
+
+{% endraw %}

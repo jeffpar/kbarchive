@@ -6,6 +6,8 @@ permalink: /kb/248/Q248283/
 
 ## Q248283: SMS: Query for IP Address and Subnet Returns Unexpected Results
 
+{% raw %}
+
 	Article: Q248283
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -71,3 +73,5 @@ permalink: /kb/248/Q248283/
 	
 	=============================================================================
 	
+
+{% endraw %}

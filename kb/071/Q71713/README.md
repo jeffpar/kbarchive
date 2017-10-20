@@ -6,6 +6,8 @@ permalink: /kb/071/Q71713/
 
 ## Q71713: Using MS-DOS Shell and Windows Together
 
+{% raw %}
+
 	Article: Q71713
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -41,3 +43,5 @@ permalink: /kb/071/Q71713/
 	
 	=============================================================================
 	
+
+{% endraw %}

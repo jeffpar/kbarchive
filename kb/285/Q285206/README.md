@@ -6,6 +6,8 @@ permalink: /kb/285/Q285206/
 
 ## Q285206: SMS: How to Use Smsls.bat Logon Script with an OU
 
+{% raw %}
+
 	Article: Q285206
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -156,3 +158,5 @@ permalink: /kb/285/Q285206/
 	
 	=============================================================================
 	
+
+{% endraw %}

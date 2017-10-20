@@ -6,6 +6,8 @@ permalink: /kb/155/Q155930/
 
 ## Q155930: FIX: Grid on Page2 Does Not Refresh After ColumnCount Change
 
+{% raw %}
+
 	Article: Q155930
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -135,3 +137,5 @@ permalink: /kb/155/Q155930/
 	
 	=============================================================================
 	
+
+{% endraw %}

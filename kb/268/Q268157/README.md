@@ -6,6 +6,8 @@ permalink: /kb/268/Q268157/
 
 ## Q268157: Error Message: &quot;19128-Location Under MA Is Wrong &#91;OU=xx,o=yy&#93;&quot;
 
+{% raw %}
+
 	Article: Q268157
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2
@@ -105,3 +107,5 @@ permalink: /kb/268/Q268157/
 	
 	=============================================================================
 	
+
+{% endraw %}

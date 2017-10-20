@@ -6,6 +6,8 @@ permalink: /kb/129/Q129977/
 
 ## Q129977: Recommended Naming Conventions for Visual FoxPro
 
+{% raw %}
+
 	Article: Q129977
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -163,3 +165,5 @@ permalink: /kb/129/Q129977/
 	
 	=============================================================================
 	
+
+{% endraw %}

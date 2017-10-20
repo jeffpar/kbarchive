@@ -6,6 +6,8 @@ permalink: /kb/197/Q197443/
 
 ## Q197443: WD97: Err Message: &quot;Specified Text Is Not a Valid AutoText Name&quot;
 
+{% raw %}
+
 	Article: Q197443
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/197/Q197443/
 	
 	=============================================================================
 	
+
+{% endraw %}

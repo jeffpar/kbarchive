@@ -6,6 +6,8 @@ permalink: /kb/278/Q278937/
 
 ## Q278937: APPC Print Job with AVM Commands May Print Extra Lines
 
+{% raw %}
+
 	Article: Q278937
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP4,4.0 SP2
@@ -75,3 +77,5 @@ permalink: /kb/278/Q278937/
 	
 	=============================================================================
 	
+
+{% endraw %}

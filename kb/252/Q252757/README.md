@@ -6,6 +6,8 @@ permalink: /kb/252/Q252757/
 
 ## Q252757: XCLN: Memory Leak in Loop Accessing CDO
 
+{% raw %}
+
 	Article: Q252757
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/252/Q252757/
 	
 	=============================================================================
 	
+
+{% endraw %}

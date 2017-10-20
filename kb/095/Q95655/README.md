@@ -6,6 +6,8 @@ permalink: /kb/095/Q95655/
 
 ## Q95655: Errors Connecting to Server During Over-the-Network Setup
 
+{% raw %}
+
 	Article: Q95655
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -134,3 +136,5 @@ permalink: /kb/095/Q95655/
 	
 	=============================================================================
 	
+
+{% endraw %}

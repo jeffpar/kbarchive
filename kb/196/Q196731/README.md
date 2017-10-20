@@ -6,6 +6,8 @@ permalink: /kb/196/Q196731/
 
 ## Q196731: Application That Requires Schedule Service Fails
 
+{% raw %}
+
 	Article: Q196731
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -117,3 +119,5 @@ permalink: /kb/196/Q196731/
 	
 	=============================================================================
 	
+
+{% endraw %}

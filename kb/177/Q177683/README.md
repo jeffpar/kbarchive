@@ -6,6 +6,8 @@ permalink: /kb/177/Q177683/
 
 ## Q177683: Print Browse List May Not Refresh Location Information
 
+{% raw %}
+
 	Article: Q177683
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -53,3 +55,5 @@ permalink: /kb/177/Q177683/
 	
 	=============================================================================
 	
+
+{% endraw %}

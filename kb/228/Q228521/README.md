@@ -6,6 +6,8 @@ permalink: /kb/228/Q228521/
 
 ## Q228521: Err Msg: HTTP Error 403, 403.2 Forbidden: Read Access Forbidden
 
+{% raw %}
+
 	Article: Q228521
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/228/Q228521/
 	
 	=============================================================================
 	
+
+{% endraw %}

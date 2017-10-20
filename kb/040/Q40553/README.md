@@ -6,6 +6,8 @@ permalink: /kb/040/Q40553/
 
 ## Q40553: Bad Results with Recursion of STATIC Procedure in QB.EXE
 
+{% raw %}
+
 	Article: Q40553
 	Product(s): See article
 	Version(s): 4.00 4.00B 4.50
@@ -53,3 +55,5 @@ permalink: /kb/040/Q40553/
 	.EXE program:
 	
 	1  1  1  1  1  1  1  1  1  1  10
+
+{% endraw %}

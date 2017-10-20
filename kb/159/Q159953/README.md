@@ -6,6 +6,8 @@ permalink: /kb/159/Q159953/
 
 ## Q159953: XADM: Error After Move Mailbox Operation When Client Logged On
 
+{% raw %}
+
 	Article: Q159953
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/159/Q159953/
 	
 	=============================================================================
 	
+
+{% endraw %}

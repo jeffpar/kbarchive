@@ -6,6 +6,8 @@ permalink: /kb/198/Q198610/
 
 ## Q198610: AoE: Err Msg &quot;Could Not Initialize Graphics&quot; on ViewSonic VPA150
 
+{% raw %}
+
 	Article: Q198610
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -74,3 +76,5 @@ permalink: /kb/198/Q198610/
 	
 	=============================================================================
 	
+
+{% endraw %}

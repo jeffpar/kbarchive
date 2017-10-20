@@ -6,6 +6,8 @@ permalink: /kb/263/Q263383/
 
 ## Q263383: Terminal Servers Run Programs with Mandatory &quot;Runs at Logoff&quot;
 
+{% raw %}
+
 	Article: Q263383
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -52,3 +54,5 @@ permalink: /kb/263/Q263383/
 	
 	=============================================================================
 	
+
+{% endraw %}

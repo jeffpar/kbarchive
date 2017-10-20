@@ -6,6 +6,8 @@ permalink: /kb/155/Q155640/
 
 ## Q155640: Cannot Find NetWare Server Using Partial Matching
 
+{% raw %}
+
 	Article: Q155640
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/155/Q155640/
 	
 	=============================================================================
 	
+
+{% endraw %}

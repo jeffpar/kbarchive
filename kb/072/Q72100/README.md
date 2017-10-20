@@ -6,6 +6,8 @@ permalink: /kb/072/Q72100/
 
 ## Q72100: WordPerfect 5.1 Retrieve Function Requires APPEND
 
+{% raw %}
+
 	Article: Q72100
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -57,3 +59,5 @@ permalink: /kb/072/Q72100/
 	
 	=============================================================================
 	
+
+{% endraw %}

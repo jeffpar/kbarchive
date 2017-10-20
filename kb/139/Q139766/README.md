@@ -6,6 +6,8 @@ permalink: /kb/139/Q139766/
 
 ## Q139766: Julia Child: Windows Minimize All Option Not Available
 
+{% raw %}
+
 	Article: Q139766
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/139/Q139766/
 	
 	=============================================================================
 	
+
+{% endraw %}

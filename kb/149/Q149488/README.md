@@ -6,6 +6,8 @@ permalink: /kb/149/Q149488/
 
 ## Q149488: FIX: Closing an MDI Form Results in a General Protection Fault
 
+{% raw %}
+
 	Article: Q149488
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -161,3 +163,5 @@ permalink: /kb/149/Q149488/
 	
 	=============================================================================
 	
+
+{% endraw %}

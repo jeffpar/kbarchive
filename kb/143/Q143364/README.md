@@ -6,6 +6,8 @@ permalink: /kb/143/Q143364/
 
 ## Q143364: 3D Movie Maker: Tools Available on CD-ROM for Troubleshooting
 
+{% raw %}
+
 	Article: Q143364
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -70,3 +72,5 @@ permalink: /kb/143/Q143364/
 	
 	=============================================================================
 	
+
+{% endraw %}

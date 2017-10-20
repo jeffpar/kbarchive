@@ -6,6 +6,8 @@ permalink: /kb/245/Q245143/
 
 ## Q245143: MapPoint: Dialog Box Without Text Appears on the Screen
 
+{% raw %}
+
 	Article: Q245143
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:; :
@@ -57,3 +59,5 @@ permalink: /kb/245/Q245143/
 	
 	=============================================================================
 	
+
+{% endraw %}

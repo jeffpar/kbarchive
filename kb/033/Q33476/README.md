@@ -6,6 +6,8 @@ permalink: /kb/033/Q33476/
 
 ## Q33476: Mouse and AutoCAD
 
+{% raw %}
+
 	Article: Q33476
 	Product(s): See article
 	Version(s): 1.x 2.x 3.x 4.x 5.x 6.x
@@ -20,3 +22,5 @@ permalink: /kb/033/Q33476/
 	
 	AutoCAD problems can be directed to Autodesk by calling (415)
 	332-2344.
+
+{% endraw %}

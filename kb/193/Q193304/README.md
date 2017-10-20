@@ -6,6 +6,8 @@ permalink: /kb/193/Q193304/
 
 ## Q193304: INFO: Status Bar Shows Currently Selected Object in Designers
 
+{% raw %}
+
 	Article: Q193304
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -78,3 +80,5 @@ permalink: /kb/193/Q193304/
 	
 	=============================================================================
 	
+
+{% endraw %}

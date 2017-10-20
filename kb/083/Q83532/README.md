@@ -6,6 +6,8 @@ permalink: /kb/083/Q83532/
 
 ## Q83532: Kurta Tablet Requires New Driver for Windows 3.1
 
+{% raw %}
+
 	Article: Q83532
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/083/Q83532/
 	
 	=============================================================================
 	
+
+{% endraw %}

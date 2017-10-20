@@ -6,6 +6,8 @@ permalink: /kb/170/Q170637/
 
 ## Q170637: XCLN: Error Message: Unable to Open Your Default Mail Folder
 
+{% raw %}
+
 	Article: Q170637
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.01,8.02,8.03,8.04
@@ -87,3 +89,5 @@ permalink: /kb/170/Q170637/
 	
 	=============================================================================
 	
+
+{% endraw %}

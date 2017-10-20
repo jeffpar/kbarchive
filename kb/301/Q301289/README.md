@@ -6,6 +6,8 @@ permalink: /kb/301/Q301289/
 
 ## Q301289: BUG: VSS 6.0 Appears to &quot;Hang&quot; When Establishing Working Folder
 
+{% raw %}
+
 	Article: Q301289
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -138,3 +140,5 @@ permalink: /kb/301/Q301289/
 	
 	=============================================================================
 	
+
+{% endraw %}

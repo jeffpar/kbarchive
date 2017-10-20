@@ -6,6 +6,8 @@ permalink: /kb/168/Q168507/
 
 ## Q168507: PPT7: Changes to Notes Master Not Reflected in Notes View
 
+{% raw %}
+
 	Article: Q168507
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -84,3 +86,5 @@ permalink: /kb/168/Q168507/
 	
 	=============================================================================
 	
+
+{% endraw %}

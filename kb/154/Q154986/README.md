@@ -6,6 +6,8 @@ permalink: /kb/154/Q154986/
 
 ## Q154986: How To Configure PowerChute for WinNT to Communicate with UPS
 
+{% raw %}
+
 	Article: Q154986
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -85,3 +87,5 @@ permalink: /kb/154/Q154986/
 	
 	=============================================================================
 	
+
+{% endraw %}

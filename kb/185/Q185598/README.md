@@ -6,6 +6,8 @@ permalink: /kb/185/Q185598/
 
 ## Q185598: XFOR: RTF Messages Not Displayed Correctly in Lotus Notes Client
 
+{% raw %}
+
 	Article: Q185598
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -102,3 +104,5 @@ permalink: /kb/185/Q185598/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124778/
 
 ## Q124778: PRB: Unable to Find Array Name Error When Compiling
 
+{% raw %}
+
 	Article: Q124778
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a; MS-DOS:2.6a; UNIX:2.6; WINDOWS:2.6a,3.0
@@ -72,3 +74,5 @@ permalink: /kb/124/Q124778/
 	
 	=============================================================================
 	
+
+{% endraw %}

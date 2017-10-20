@@ -6,6 +6,8 @@ permalink: /kb/095/Q95743/
 
 ## Q95743: Recovering Windows 3.1 After Installing WFWG
 
+{% raw %}
+
 	Article: Q95743
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -182,3 +184,5 @@ permalink: /kb/095/Q95743/
 	
 	=============================================================================
 	
+
+{% endraw %}

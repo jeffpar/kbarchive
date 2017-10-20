@@ -6,6 +6,8 @@ permalink: /kb/068/Q68802/
 
 ## Q68802: INFO: Obtaining Support for Adobe Type Manager (ATM)
 
+{% raw %}
+
 	Article: Q68802
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -41,3 +43,5 @@ permalink: /kb/068/Q68802/
 	
 	=============================================================================
 	
+
+{% endraw %}

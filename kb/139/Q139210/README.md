@@ -6,6 +6,8 @@ permalink: /kb/139/Q139210/
 
 ## Q139210: LUA App Fails with Secondary_rc = 0x87 (COMMAND_COUNT_ERROR)
 
+{% raw %}
+
 	Article: Q139210
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
@@ -72,3 +74,5 @@ permalink: /kb/139/Q139210/
 	
 	=============================================================================
 	
+
+{% endraw %}

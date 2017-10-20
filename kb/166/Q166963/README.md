@@ -6,6 +6,8 @@ permalink: /kb/166/Q166963/
 
 ## Q166963: Cannot Communicate with Computer Running NWLink IPX/SPX
 
+{% raw %}
+
 	Article: Q166963
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/166/Q166963/
 	
 	=============================================================================
 	
+
+{% endraw %}

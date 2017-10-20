@@ -6,6 +6,8 @@ permalink: /kb/042/Q42553/
 
 ## Q42553: &quot;Illegal Function Call&quot; Using VIEW, WINDOW, GET, or PUT
 
+{% raw %}
+
 	Article: Q42553
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -73,3 +75,5 @@ permalink: /kb/042/Q42553/
 	   current WINDOW statement, but it will if a WINDOW SCREEN is used.
 	   This WINDOW SCREEN statement alters the coordinates of the screen
 	   to create a right-hand coordinate system.
+
+{% endraw %}

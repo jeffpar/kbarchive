@@ -6,6 +6,8 @@ permalink: /kb/115/Q115388/
 
 ## Q115388: Ping and FTP Resolve IP Address with Leading Zero as Octal
 
+{% raw %}
+
 	Article: Q115388
 	Product(s): Microsoft Windows NT
 	Version(s): ; WINDOWS:2000; winnt:3.5,4.0
@@ -115,3 +117,5 @@ permalink: /kb/115/Q115388/
 	
 	=============================================================================
 	
+
+{% endraw %}

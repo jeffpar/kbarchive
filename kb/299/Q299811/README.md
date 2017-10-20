@@ -6,6 +6,8 @@ permalink: /kb/299/Q299811/
 
 ## Q299811: Train Simulator: Shortcuts Not Removed When You Cancel Reinstall
 
+{% raw %}
+
 	Article: Q299811
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/299/Q299811/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189604/
 
 ## Q189604: PRB: Error in Moved Event of Form Appears to Hang VFP
 
+{% raw %}
+
 	Article: Q189604
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -79,3 +81,5 @@ permalink: /kb/189/Q189604/
 	
 	=============================================================================
 	
+
+{% endraw %}

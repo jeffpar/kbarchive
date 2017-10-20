@@ -6,6 +6,8 @@ permalink: /kb/153/Q153306/
 
 ## Q153306: HOWTO: Speed up Alignment of Controls with Triple-Click
 
+{% raw %}
+
 	Article: Q153306
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/153/Q153306/
 	
 	=============================================================================
 	
+
+{% endraw %}

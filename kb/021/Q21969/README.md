@@ -6,6 +6,8 @@ permalink: /kb/021/Q21969/
 
 ## Q21969: SCREEN 1 COLOR Yellow Is Brown (Muddy) on EGA Versus CGA Card
 
+{% raw %}
+
 	Article: Q21969
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -59,3 +61,5 @@ permalink: /kb/021/Q21969/
 	Graphics statements such as LINE and CIRCLE can use color (attribute)
 	arguments 0, 1, 2, or 3 to allow simultaneous display of four colors
 	at once (including the background) in SCREEN 1 on CGA, EGA, or VGA.
+
+{% endraw %}

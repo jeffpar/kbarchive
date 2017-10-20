@@ -6,6 +6,8 @@ permalink: /kb/183/Q183737/
 
 ## Q183737: Index Server 2.0 Fails to Install from Add/Remove
 
+{% raw %}
+
 	Article: Q183737
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -86,3 +88,5 @@ permalink: /kb/183/Q183737/
 	
 	=============================================================================
 	
+
+{% endraw %}

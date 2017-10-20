@@ -6,6 +6,8 @@ permalink: /kb/108/Q108320/
 
 ## Q108320: Open(Station) Documented Incorrectly
 
+{% raw %}
+
 	Article: Q108320
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0
@@ -52,3 +54,5 @@ permalink: /kb/108/Q108320/
 	
 	=============================================================================
 	
+
+{% endraw %}

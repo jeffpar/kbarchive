@@ -6,6 +6,8 @@ permalink: /kb/247/Q247655/
 
 ## Q247655: FS2000 Err Msg: Flight Simulator Has Detected That...
 
+{% raw %}
+
 	Article: Q247655
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -106,3 +108,5 @@ permalink: /kb/247/Q247655/
 	
 	=============================================================================
 	
+
+{% endraw %}

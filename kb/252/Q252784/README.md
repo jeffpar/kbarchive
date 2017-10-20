@@ -6,6 +6,8 @@ permalink: /kb/252/Q252784/
 
 ## Q252784: Allegiance: Ship Turns Continually in Circles
 
+{% raw %}
+
 	Article: Q252784
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/252/Q252784/
 	
 	=============================================================================
 	
+
+{% endraw %}

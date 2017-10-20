@@ -6,6 +6,8 @@ permalink: /kb/088/Q88141/
 
 ## Q88141: Setup Toolkit .INF File Format and Disk Labels
 
+{% raw %}
+
 	Article: Q88141
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.0,3.1; WINDOWS:3.5
@@ -45,3 +47,5 @@ permalink: /kb/088/Q88141/
 	
 	=============================================================================
 	
+
+{% endraw %}

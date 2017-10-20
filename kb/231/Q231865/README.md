@@ -6,6 +6,8 @@ permalink: /kb/231/Q231865/
 
 ## Q231865: SNA Server Interoperability with Windows Load Balancing
 
+{% raw %}
+
 	Article: Q231865
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
@@ -71,3 +73,5 @@ permalink: /kb/231/Q231865/
 	
 	=============================================================================
 	
+
+{% endraw %}

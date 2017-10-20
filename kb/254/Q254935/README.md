@@ -6,6 +6,8 @@ permalink: /kb/254/Q254935/
 
 ## Q254935: PRB: Visual FoxPro Setup Wizard Does Not Include the Vbame.dll F
 
+{% raw %}
+
 	Article: Q254935
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -61,3 +63,5 @@ permalink: /kb/254/Q254935/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121853/
 
 ## Q121853: Downlevel Print Jobs Not Redirected Correctly
 
+{% raw %}
+
 	Article: Q121853
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -101,3 +103,5 @@ permalink: /kb/121/Q121853/
 	
 	=============================================================================
 	
+
+{% endraw %}

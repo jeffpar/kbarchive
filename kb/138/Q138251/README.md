@@ -6,6 +6,8 @@ permalink: /kb/138/Q138251/
 
 ## Q138251: PPT: Viewer Quits After the First Show in Playlist.
 
+{% raw %}
+
 	Article: Q138251
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -52,3 +54,5 @@ permalink: /kb/138/Q138251/
 	
 	=============================================================================
 	
+
+{% endraw %}

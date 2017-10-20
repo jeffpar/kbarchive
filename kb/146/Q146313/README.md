@@ -6,6 +6,8 @@ permalink: /kb/146/Q146313/
 
 ## Q146313: Only Last Expired Reminder Is Received on Recurring Appts.
 
+{% raw %}
+
 	Article: Q146313
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146313/
 	
 	=============================================================================
 	
+
+{% endraw %}

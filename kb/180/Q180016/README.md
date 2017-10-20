@@ -6,6 +6,8 @@ permalink: /kb/180/Q180016/
 
 ## Q180016: DNS Manager Lists DNS Servers After Reinstalling DNS Service
 
+{% raw %}
+
 	Article: Q180016
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/180/Q180016/
 	
 	=============================================================================
 	
+
+{% endraw %}

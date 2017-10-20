@@ -6,6 +6,8 @@ permalink: /kb/266/Q266075/
 
 ## Q266075: Modifying Files with Name &quot;Neu&quot; Does Not Display Content
 
+{% raw %}
+
 	Article: Q266075
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -79,3 +81,5 @@ permalink: /kb/266/Q266075/
 	
 	=============================================================================
 	
+
+{% endraw %}

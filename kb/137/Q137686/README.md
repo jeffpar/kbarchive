@@ -6,6 +6,8 @@ permalink: /kb/137/Q137686/
 
 ## Q137686: PPT: Superscript and Subscript Text Built Improperly
 
+{% raw %}
+
 	Article: Q137686
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,7.0
@@ -65,3 +67,5 @@ permalink: /kb/137/Q137686/
 	
 	=============================================================================
 	
+
+{% endraw %}

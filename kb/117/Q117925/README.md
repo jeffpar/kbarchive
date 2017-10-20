@@ -6,6 +6,8 @@ permalink: /kb/117/Q117925/
 
 ## Q117925: MAC Encarta: No Sound After Pausing and Restarting Animation
 
+{% raw %}
+
 	Article: Q117925
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -40,3 +42,5 @@ permalink: /kb/117/Q117925/
 	
 	=============================================================================
 	
+
+{% endraw %}

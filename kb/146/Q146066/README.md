@@ -6,6 +6,8 @@ permalink: /kb/146/Q146066/
 
 ## Q146066: Sch+ 1.0 User Unable to Read Meeting Details of Sch+ 7.0 User
 
+{% raw %}
+
 	Article: Q146066
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,7.0
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146066/
 	
 	=============================================================================
 	
+
+{% endraw %}

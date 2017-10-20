@@ -6,6 +6,8 @@ permalink: /kb/061/Q61512/
 
 ## Q61512: Mac Hyp: msmail Functions Cause Message Box to Appear
 
+{% raw %}
+
 	Article: Q61512
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -53,3 +55,5 @@ permalink: /kb/061/Q61512/
 	
 	=============================================================================
 	
+
+{% endraw %}

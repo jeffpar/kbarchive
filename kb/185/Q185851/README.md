@@ -6,6 +6,8 @@ permalink: /kb/185/Q185851/
 
 ## Q185851: Parts of Volume Control Are Cut Off at Some Resolutions
 
+{% raw %}
+
 	Article: Q185851
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -165,3 +167,5 @@ permalink: /kb/185/Q185851/
 	
 	=============================================================================
 	
+
+{% endraw %}

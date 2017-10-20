@@ -6,6 +6,8 @@ permalink: /kb/137/Q137643/
 
 ## Q137643: Diskcopy Cannot Copy a Compressed Floppy Disk
 
+{% raw %}
+
 	Article: Q137643
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -59,3 +61,5 @@ permalink: /kb/137/Q137643/
 	
 	=============================================================================
 	
+
+{% endraw %}

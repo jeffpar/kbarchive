@@ -6,6 +6,8 @@ permalink: /kb/254/Q254380/
 
 ## Q254380: XFOR: Exchange.Box Compaction w. Notes Maintenance Disabled
 
+{% raw %}
+
 	Article: Q254380
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/254/Q254380/
 	
 	=============================================================================
 	
+
+{% endraw %}

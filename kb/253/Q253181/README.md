@@ -6,6 +6,8 @@ permalink: /kb/253/Q253181/
 
 ## Q253181: Multivalued Attributes Pushed Incorrectly to Other LDAP Servers
 
+{% raw %}
+
 	Article: Q253181
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -103,3 +105,5 @@ permalink: /kb/253/Q253181/
 	
 	=============================================================================
 	
+
+{% endraw %}

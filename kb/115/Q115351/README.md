@@ -6,6 +6,8 @@ permalink: /kb/115/Q115351/
 
 ## Q115351: X400: CANCEL Does Not Save Remote MTA Screen Update Changes
 
+{% raw %}
+
 	Article: Q115351
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -74,3 +76,5 @@ permalink: /kb/115/Q115351/
 	
 	=============================================================================
 	
+
+{% endraw %}

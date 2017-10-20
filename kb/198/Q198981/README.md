@@ -6,6 +6,8 @@ permalink: /kb/198/Q198981/
 
 ## Q198981: XIMS: SMTP Messages Not Being Delivered to Certain Domains
 
+{% raw %}
+
 	Article: Q198981
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -75,3 +77,5 @@ permalink: /kb/198/Q198981/
 	
 	=============================================================================
 	
+
+{% endraw %}

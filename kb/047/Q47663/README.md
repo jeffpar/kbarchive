@@ -6,6 +6,8 @@ permalink: /kb/047/Q47663/
 
 ## Q47663: Variable Width, Precision Available with printf
 
+{% raw %}
+
 	Article: Q47663
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.00 5.10
@@ -39,3 +41,5 @@ permalink: /kb/047/Q47663/
 	   printf ("Printf format :%*.*f\n", w, p, value);
 	   printf ("Width =        0123456789012\n");
 	}
+
+{% endraw %}

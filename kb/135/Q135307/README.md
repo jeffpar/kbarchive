@@ -6,6 +6,8 @@ permalink: /kb/135/Q135307/
 
 ## Q135307: Guide to Visual FoxPro Documentation
 
+{% raw %}
+
 	Article: Q135307
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -230,3 +232,5 @@ permalink: /kb/135/Q135307/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256315/
 
 ## Q256315: XADM: Information Store Stops Writing to Message Tracking Log
 
+{% raw %}
+
 	Article: Q256315
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -95,3 +97,5 @@ permalink: /kb/256/Q256315/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234000/
 
 ## Q234000: Error 649 Dialing Server with Service Pack 4 or Later Installed
 
+{% raw %}
+
 	Article: Q234000
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5,4.5
@@ -59,3 +61,5 @@ permalink: /kb/234/Q234000/
 	
 	=============================================================================
 	
+
+{% endraw %}

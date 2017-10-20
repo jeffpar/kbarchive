@@ -6,6 +6,8 @@ permalink: /kb/126/Q126230/
 
 ## Q126230: PC Adm: Sort Order Incorrect in Address List w/ Extended Chars
 
+{% raw %}
+
 	Article: Q126230
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -48,3 +50,5 @@ permalink: /kb/126/Q126230/
 	
 	=============================================================================
 	
+
+{% endraw %}

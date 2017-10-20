@@ -6,6 +6,8 @@ permalink: /kb/105/Q105529/
 
 ## Q105529: Mozart: Help Window Retains Focus When You Click Away from It
 
+{% raw %}
+
 	Article: Q105529
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/105/Q105529/
 	
 	=============================================================================
 	
+
+{% endraw %}

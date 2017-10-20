@@ -6,6 +6,8 @@ permalink: /kb/180/Q180331/
 
 ## Q180331: Cannot Redirect with Long Folder Name in MS-DOS Prompt Session
 
+{% raw %}
+
 	Article: Q180331
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/180/Q180331/
 	
 	=============================================================================
 	
+
+{% endraw %}

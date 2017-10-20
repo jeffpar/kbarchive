@@ -6,6 +6,8 @@ permalink: /kb/152/Q152071/
 
 ## Q152071: HOWTO: Calling Hidden Default Method of an OLE Automation Collec
 
+{% raw %}
+
 	Article: Q152071
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/152/Q152071/
 	
 	=============================================================================
 	
+
+{% endraw %}

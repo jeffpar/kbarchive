@@ -6,6 +6,8 @@ permalink: /kb/166/Q166452/
 
 ## Q166452: WD97: Table Row Height Set to &quot;At Least&quot; After Vertical Merge
 
+{% raw %}
+
 	Article: Q166452
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/166/Q166452/
 	
 	=============================================================================
 	
+
+{% endraw %}

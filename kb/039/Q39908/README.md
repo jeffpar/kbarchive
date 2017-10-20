@@ -6,6 +6,8 @@ permalink: /kb/039/Q39908/
 
 ## Q39908: Time Functions Calculate for Daylight Savings Time
 
+{% raw %}
+
 	Article: Q39908
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -39,3 +41,5 @@ permalink: /kb/039/Q39908/
 	
 	=============================================================================
 	
+
+{% endraw %}

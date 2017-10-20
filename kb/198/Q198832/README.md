@@ -6,6 +6,8 @@ permalink: /kb/198/Q198832/
 
 ## Q198832: XFOR: Wrong Statement in Browse Log Error Message
 
+{% raw %}
+
 	Article: Q198832
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -52,3 +54,5 @@ permalink: /kb/198/Q198832/
 	
 	=============================================================================
 	
+
+{% endraw %}

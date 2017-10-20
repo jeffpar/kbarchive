@@ -6,6 +6,8 @@ permalink: /kb/248/Q248737/
 
 ## Q248737: Unattended Setup of NTOP May Fail on Multiprocessor Systems
 
+{% raw %}
+
 	Article: Q248737
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/248/Q248737/
 	
 	=============================================================================
 	
+
+{% endraw %}

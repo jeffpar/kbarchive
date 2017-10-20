@@ -6,6 +6,8 @@ permalink: /kb/134/Q134786/
 
 ## Q134786: PPT7: Color of Embossed Text Varies with Text Box Fill Style
 
+{% raw %}
+
 	Article: Q134786
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -71,3 +73,5 @@ permalink: /kb/134/Q134786/
 	
 	=============================================================================
 	
+
+{% endraw %}

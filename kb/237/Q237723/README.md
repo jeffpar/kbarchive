@@ -6,6 +6,8 @@ permalink: /kb/237/Q237723/
 
 ## Q237723: NFL Fever 2000: Poor Graphics Performance with ATI Rage IIc AGP
 
+{% raw %}
+
 	Article: Q237723
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/237/Q237723/
 	
 	=============================================================================
 	
+
+{% endraw %}

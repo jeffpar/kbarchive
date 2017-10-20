@@ -6,6 +6,8 @@ permalink: /kb/189/Q189423/
 
 ## Q189423: Memory Leak: Recordsets with OCCURS DEPENDING ON Clause
 
+{% raw %}
+
 	Article: Q189423
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/189/Q189423/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190006/
 
 ## Q190006: &quot;ODBC Drivers Error 80004005&quot; When Browsing ASP Pages
 
+{% raw %}
+
 	Article: Q190006
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -90,3 +92,5 @@ permalink: /kb/190/Q190006/
 	
 	=============================================================================
 	
+
+{% endraw %}

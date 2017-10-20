@@ -6,6 +6,8 @@ permalink: /kb/248/Q248026/
 
 ## Q248026: HTTP Error 410 - Permanently Not Available
 
+{% raw %}
+
 	Article: Q248026
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -54,3 +56,5 @@ permalink: /kb/248/Q248026/
 	
 	=============================================================================
 	
+
+{% endraw %}

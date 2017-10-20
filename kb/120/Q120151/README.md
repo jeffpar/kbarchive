@@ -6,6 +6,8 @@ permalink: /kb/120/Q120151/
 
 ## Q120151: Browsing a Wide Area Network with WINS
 
+{% raw %}
+
 	Article: Q120151
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.11 3.5 4.0
@@ -149,3 +151,5 @@ permalink: /kb/120/Q120151/
 	
 	=============================================================================
 	
+
+{% endraw %}

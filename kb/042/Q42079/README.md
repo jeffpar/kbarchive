@@ -6,6 +6,8 @@ permalink: /kb/042/Q42079/
 
 ## Q42079: Getting 43-line Mode for C and QuickC Graphics
 
+{% raw %}
+
 	Article: Q42079
 	Product(s): See article
 	Version(s): 5.10
@@ -72,3 +74,5 @@ permalink: /kb/042/Q42079/
 	Note: The "IBM ROM BIOS" quick-reference guide states that this
 	function should be used only AFTER a _setvideomode command. However,
 	this does not work effectively with the C graphics library.
+
+{% endraw %}

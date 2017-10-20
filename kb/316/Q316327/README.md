@@ -6,6 +6,8 @@ permalink: /kb/316/Q316327/
 
 ## Q316327: IIS: Errmsg: This Server Was Already Configured...
 
+{% raw %}
+
 	Article: Q316327
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -93,3 +95,5 @@ permalink: /kb/316/Q316327/
 	
 	=============================================================================
 	
+
+{% endraw %}

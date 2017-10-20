@@ -6,6 +6,8 @@ permalink: /kb/132/Q132592/
 
 ## Q132592: XTreeNet 3.0 Blocks Use of ALT and CTRL Keys
 
+{% raw %}
+
 	Article: Q132592
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/132/Q132592/
 	
 	=============================================================================
 	
+
+{% endraw %}

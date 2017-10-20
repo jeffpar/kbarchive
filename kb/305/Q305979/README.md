@@ -6,6 +6,8 @@ permalink: /kb/305/Q305979/
 
 ## Q305979: PRB: IIS 4.0 Hotfixes Do Not Appear When Running Hotfix.exe /L
 
+{% raw %}
+
 	Article: Q305979
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/305/Q305979/
 	
 	=============================================================================
 	
+
+{% endraw %}

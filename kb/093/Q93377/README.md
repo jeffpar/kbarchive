@@ -6,6 +6,8 @@ permalink: /kb/093/Q93377/
 
 ## Q93377: Changes Made to SYSTEM.INI by MS-DOS MemMaker
 
+{% raw %}
+
 	Article: Q93377
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/093/Q93377/
 	
 	=============================================================================
 	
+
+{% endraw %}

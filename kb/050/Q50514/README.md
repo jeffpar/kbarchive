@@ -6,6 +6,8 @@ permalink: /kb/050/Q50514/
 
 ## Q50514: Flip/Swap Setting Crucial to Debugging PM Apps with Children
 
+{% raw %}
+
 	Article: Q50514
 	Product(s): See article
 	Version(s): 2.30
@@ -119,3 +121,5 @@ permalink: /kb/050/Q50514/
 	For more information on this problem, use the following query:
 	
 	   CodeView 2.30 hangs debugging child processes
+
+{% endraw %}

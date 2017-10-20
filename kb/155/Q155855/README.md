@@ -6,6 +6,8 @@ permalink: /kb/155/Q155855/
 
 ## Q155855: PPT: Orange Text Prints Yellow on HP DeskJet 1200c
 
+{% raw %}
+
 	Article: Q155855
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,7.0
@@ -61,3 +63,5 @@ permalink: /kb/155/Q155855/
 	
 	=============================================================================
 	
+
+{% endraw %}

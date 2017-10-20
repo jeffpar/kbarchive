@@ -6,6 +6,8 @@ permalink: /kb/041/Q41212/
 
 ## Q41212: INFO: Must Use Prototype Before Intrinsic or Function Pragmas
 
+{% raw %}
+
 	Article: Q41212
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:6.0,6.00a,6.00ax,7.0; WINDOWS:1.0,1.5,1.51,1.52; WINDOWS NT:1.0,2.0,2.1,4.0,5.0
@@ -81,3 +83,5 @@ permalink: /kb/041/Q41212/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163521/
 
 ## Q163521: Event ID 5000 Starting The Shared Folders Gateway Service
 
+{% raw %}
+
 	Article: Q163521
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -64,3 +66,5 @@ permalink: /kb/163/Q163521/
 	
 	=============================================================================
 	
+
+{% endraw %}

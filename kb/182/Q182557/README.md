@@ -6,6 +6,8 @@ permalink: /kb/182/Q182557/
 
 ## Q182557: XADM: NDR Occurs When Sending To A Mailbox With Receive Limits
 
+{% raw %}
+
 	Article: Q182557
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/182/Q182557/
 	
 	=============================================================================
 	
+
+{% endraw %}

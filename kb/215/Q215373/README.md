@@ -6,6 +6,8 @@ permalink: /kb/215/Q215373/
 
 ## Q215373: BUG: Intrinsic Controls: Shortcut Keys Do Not Work as Expected
 
+{% raw %}
+
 	Article: Q215373
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,3.0
@@ -79,3 +81,5 @@ permalink: /kb/215/Q215373/
 	
 	=============================================================================
 	
+
+{% endraw %}

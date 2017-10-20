@@ -6,6 +6,8 @@ permalink: /kb/320/Q320317/
 
 ## Q320317: How to Connect to a Visual SourceSafe Database Over the Internet
 
+{% raw %}
+
 	Article: Q320317
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/320/Q320317/
 	
 	=============================================================================
 	
+
+{% endraw %}

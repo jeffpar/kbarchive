@@ -6,6 +6,8 @@ permalink: /kb/082/Q82840/
 
 ## Q82840: MathCAD Will Not Accept Some Characters from Character Map
 
+{% raw %}
+
 	Article: Q82840
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -41,3 +43,5 @@ permalink: /kb/082/Q82840/
 	
 	=============================================================================
 	
+
+{% endraw %}

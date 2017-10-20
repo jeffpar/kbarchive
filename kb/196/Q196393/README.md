@@ -6,6 +6,8 @@ permalink: /kb/196/Q196393/
 
 ## Q196393: XADM: Move Server Wizard Error &quot;Server Contains Public Folders&quot;
 
+{% raw %}
+
 	Article: Q196393
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -57,3 +59,5 @@ permalink: /kb/196/Q196393/
 	
 	=============================================================================
 	
+
+{% endraw %}

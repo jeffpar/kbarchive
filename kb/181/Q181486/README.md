@@ -6,6 +6,8 @@ permalink: /kb/181/Q181486/
 
 ## Q181486: PRB: How To Distribute the Remote Automation Connection Manager
 
+{% raw %}
+
 	Article: Q181486
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.2,4.2b
@@ -103,3 +105,5 @@ permalink: /kb/181/Q181486/
 	
 	=============================================================================
 	
+
+{% endraw %}

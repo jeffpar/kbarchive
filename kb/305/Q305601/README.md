@@ -6,6 +6,8 @@ permalink: /kb/305/Q305601/
 
 ## Q305601: MS01-060: FIX: CRT String Format Functions May Underwrite Buffer
 
+{% raw %}
+
 	Article: Q305601
 	Product(s): Microsoft C Compiler
 	Version(s): 2000,2000 SP1,2000 SP2,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6a,6.0
@@ -366,3 +368,5 @@ permalink: /kb/305/Q305601/
 	
 	=============================================================================
 	
+
+{% endraw %}

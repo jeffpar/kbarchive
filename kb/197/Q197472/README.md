@@ -6,6 +6,8 @@ permalink: /kb/197/Q197472/
 
 ## Q197472: WD97: Default Numbering in PAGE Field Doesn't Change Default
 
+{% raw %}
+
 	Article: Q197472
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/197/Q197472/
 	
 	=============================================================================
 	
+
+{% endraw %}

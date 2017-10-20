@@ -6,6 +6,8 @@ permalink: /kb/046/Q46383/
 
 ## Q46383: Spawned Processes Do Not Always Handle Signals Properly
 
+{% raw %}
+
 	Article: Q46383
 	Product(s): See article
 	Version(s): 4.x 5.00 5.10
@@ -37,3 +39,5 @@ permalink: /kb/046/Q46383/
 	certain signals, not a problem with the C compiler. Interrupting an
 	assembly language program that simply calls DOS interrupt 0x4B to
 	spawn "COMMAND /c TYPE TEST.TXT | MORE" gives the same results.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97469/
 
 ## Q97469: PC WRmt: Sharing the AT&amp;T Message File with Microsoft Mail
 
+{% raw %}
+
 	Article: Q97469
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -73,3 +75,5 @@ permalink: /kb/097/Q97469/
 	
 	=============================================================================
 	
+
+{% endraw %}

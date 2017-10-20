@@ -6,6 +6,8 @@ permalink: /kb/171/Q171317/
 
 ## Q171317: Upgrade WinNT to 4.0 May Hang with Trident 94XX AGI Video Card
 
+{% raw %}
+
 	Article: Q171317
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -95,3 +97,5 @@ permalink: /kb/171/Q171317/
 	
 	=============================================================================
 	
+
+{% endraw %}

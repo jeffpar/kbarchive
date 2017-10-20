@@ -6,6 +6,8 @@ permalink: /kb/132/Q132664/
 
 ## Q132664: Changing Association in File Types Dialog Box May Not Work
 
+{% raw %}
+
 	Article: Q132664
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/132/Q132664/
 	
 	=============================================================================
 	
+
+{% endraw %}

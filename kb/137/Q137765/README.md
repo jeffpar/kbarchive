@@ -6,6 +6,8 @@ permalink: /kb/137/Q137765/
 
 ## Q137765: Bookshelf 1995: Help Lists Incorrect Shortcut to Move Page
 
+{% raw %}
+
 	Article: Q137765
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -65,3 +67,5 @@ permalink: /kb/137/Q137765/
 	
 	=============================================================================
 	
+
+{% endraw %}

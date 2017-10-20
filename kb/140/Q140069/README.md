@@ -6,6 +6,8 @@ permalink: /kb/140/Q140069/
 
 ## Q140069: PC Rmt: Err Msg: This Does Not Appear to be Disk 2...
 
+{% raw %}
+
 	Article: Q140069
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -93,3 +95,5 @@ permalink: /kb/140/Q140069/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191417/
 
 ## Q191417: SMS: Dataloader Service Delete Group Action May Fail
 
+{% raw %}
+
 	Article: Q191417
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -50,3 +52,5 @@ permalink: /kb/191/Q191417/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130506/
 
 ## Q130506: HOWTO: Use AERROR() in Place of DBERROR() for ODBC Errors
 
+{% raw %}
+
 	Article: Q130506
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,3.0,5.0,6.0,7.0
@@ -98,3 +100,5 @@ permalink: /kb/130/Q130506/
 	
 	=============================================================================
 	
+
+{% endraw %}

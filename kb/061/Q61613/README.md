@@ -6,6 +6,8 @@ permalink: /kb/061/Q61613/
 
 ## Q61613: /Lp, /Lr, and /Lc Functions Are Documented Incorrectly
 
+{% raw %}
+
 	Article: Q61613
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -31,3 +33,5 @@ permalink: /kb/061/Q61613/
 	
 	Note that "x" is a letter indicating the memory model. The /Lx options
 	have no effect on the compiler portion of the CL program.
+
+{% endraw %}

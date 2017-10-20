@@ -6,6 +6,8 @@ permalink: /kb/105/Q105502/
 
 ## Q105502: CAS Modem Fails to Receive Faxes with WFWG 3.11
 
+{% raw %}
+
 	Article: Q105502
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -94,3 +96,5 @@ permalink: /kb/105/Q105502/
 	
 	=============================================================================
 	
+
+{% endraw %}

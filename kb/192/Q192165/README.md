@@ -6,6 +6,8 @@ permalink: /kb/192/Q192165/
 
 ## Q192165: Error: Terminal Server Has Ended Your Connection
 
+{% raw %}
+
 	Article: Q192165
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/192/Q192165/
 	
 	=============================================================================
 	
+
+{% endraw %}

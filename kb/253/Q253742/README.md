@@ -6,6 +6,8 @@ permalink: /kb/253/Q253742/
 
 ## Q253742: Access Violation in Ipconfig.exe with RAS Connection Using SLIP
 
+{% raw %}
+
 	Article: Q253742
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -91,3 +93,5 @@ permalink: /kb/253/Q253742/
 	
 	=============================================================================
 	
+
+{% endraw %}

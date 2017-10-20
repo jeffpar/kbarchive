@@ -6,6 +6,8 @@ permalink: /kb/243/Q243721/
 
 ## Q243721: Asheron's Call: How to Obtain Assistance with the Game
 
+{% raw %}
+
 	Article: Q243721
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -114,3 +116,5 @@ permalink: /kb/243/Q243721/
 	
 	=============================================================================
 	
+
+{% endraw %}

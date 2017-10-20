@@ -6,6 +6,8 @@ permalink: /kb/161/Q161939/
 
 ## Q161939: XFOR: Outbound Messages Not Delivered by IMC Until Queue Refresh
 
+{% raw %}
+
 	Article: Q161939
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/161/Q161939/
 	
 	=============================================================================
 	
+
+{% endraw %}

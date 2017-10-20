@@ -6,6 +6,8 @@ permalink: /kb/132/Q132558/
 
 ## Q132558: PC Win: GAL and External Address Lists Are Missing
 
+{% raw %}
+
 	Article: Q132558
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -65,3 +67,5 @@ permalink: /kb/132/Q132558/
 	
 	=============================================================================
 	
+
+{% endraw %}

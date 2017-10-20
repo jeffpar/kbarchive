@@ -6,6 +6,8 @@ permalink: /kb/177/Q177328/
 
 ## Q177328: XFOR: MTA Terminates Unexpectedly with Event ID 2051 and 9405
 
+{% raw %}
+
 	Article: Q177328
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -77,3 +79,5 @@ permalink: /kb/177/Q177328/
 	
 	=============================================================================
 	
+
+{% endraw %}

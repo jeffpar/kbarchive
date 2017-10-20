@@ -6,6 +6,8 @@ permalink: /kb/297/Q297210/
 
 ## Q297210: Using Challenge Response on a Web Site that Has Framesets
 
+{% raw %}
+
 	Article: Q297210
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/297/Q297210/
 	
 	=============================================================================
 	
+
+{% endraw %}

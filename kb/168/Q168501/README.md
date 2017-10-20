@@ -6,6 +6,8 @@ permalink: /kb/168/Q168501/
 
 ## Q168501: ASP Downloads Text Instead of Executing
 
+{% raw %}
+
 	Article: Q168501
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0
@@ -63,3 +65,5 @@ permalink: /kb/168/Q168501/
 	
 	=============================================================================
 	
+
+{% endraw %}

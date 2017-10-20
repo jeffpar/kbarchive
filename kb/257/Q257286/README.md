@@ -6,6 +6,8 @@ permalink: /kb/257/Q257286/
 
 ## Q257286: Changing Password Over RAS May Not Work
 
+{% raw %}
+
 	Article: Q257286
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/257/Q257286/
 	
 	=============================================================================
 	
+
+{% endraw %}

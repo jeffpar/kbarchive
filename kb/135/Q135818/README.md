@@ -6,6 +6,8 @@ permalink: /kb/135/Q135818/
 
 ## Q135818: How to List Available Drives from Visual FoxPro
 
+{% raw %}
+
 	Article: Q135818
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -116,3 +118,5 @@ permalink: /kb/135/Q135818/
 	
 	=============================================================================
 	
+
+{% endraw %}

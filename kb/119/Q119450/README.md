@@ -6,6 +6,8 @@ permalink: /kb/119/Q119450/
 
 ## Q119450: PC DirSync: Err Msg: Fatal 118 Transaction Limit Reached
 
+{% raw %}
+
 	Article: Q119450
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -64,3 +66,5 @@ permalink: /kb/119/Q119450/
 	
 	=============================================================================
 	
+
+{% endraw %}

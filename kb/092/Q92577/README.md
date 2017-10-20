@@ -6,6 +6,8 @@ permalink: /kb/092/Q92577/
 
 ## Q92577: WFWG: GP Fault in Video Driver When Using ClipBook Viewer
 
+{% raw %}
+
 	Article: Q92577
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/092/Q92577/
 	
 	=============================================================================
 	
+
+{% endraw %}

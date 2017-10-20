@@ -6,6 +6,8 @@ permalink: /kb/171/Q171256/
 
 ## Q171256: IBM DFT Link Service Properties Refers to DCA DFT Adapter
 
+{% raw %}
+
 	Article: Q171256
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -73,3 +75,5 @@ permalink: /kb/171/Q171256/
 	
 	=============================================================================
 	
+
+{% endraw %}

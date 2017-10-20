@@ -6,6 +6,8 @@ permalink: /kb/168/Q168734/
 
 ## Q168734: XADM: Error Synchronizing OST After Upgrading to Exchange
 
+{% raw %}
+
 	Article: Q168734
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -76,3 +78,5 @@ permalink: /kb/168/Q168734/
 	
 	=============================================================================
 	
+
+{% endraw %}

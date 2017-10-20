@@ -6,6 +6,8 @@ permalink: /kb/139/Q139199/
 
 ## Q139199: PRB: Mastering Visual FoxPro CD Gives Choppy Video Performance
 
+{% raw %}
+
 	Article: Q139199
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -64,3 +66,5 @@ permalink: /kb/139/Q139199/
 	
 	=============================================================================
 	
+
+{% endraw %}

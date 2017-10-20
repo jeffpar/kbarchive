@@ -6,6 +6,8 @@ permalink: /kb/189/Q189775/
 
 ## Q189775: BUG: Watch/Locals Windows Truncate Char. Variables at CHR(0)
 
+{% raw %}
+
 	Article: Q189775
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -60,3 +62,5 @@ permalink: /kb/189/Q189775/
 	
 	=============================================================================
 	
+
+{% endraw %}

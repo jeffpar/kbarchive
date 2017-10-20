@@ -6,6 +6,8 @@ permalink: /kb/135/Q135165/
 
 ## Q135165: Network Tool Cannot Copy Files on RPL Computers
 
+{% raw %}
+
 	Article: Q135165
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/135/Q135165/
 	
 	=============================================================================
 	
+
+{% endraw %}

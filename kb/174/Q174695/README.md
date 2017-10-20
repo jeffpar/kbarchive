@@ -6,6 +6,8 @@ permalink: /kb/174/Q174695/
 
 ## Q174695: XCON: How to Find the Version of MTA on Exchange Server
 
+{% raw %}
+
 	Article: Q174695
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/174/Q174695/
 	
 	=============================================================================
 	
+
+{% endraw %}

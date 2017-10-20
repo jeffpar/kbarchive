@@ -6,6 +6,8 @@ permalink: /kb/134/Q134365/
 
 ## Q134365: PPT: Cannot Use Slide Master to Change Case of Slide Text
 
+{% raw %}
+
 	Article: Q134365
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,4.0a,4.0c,7.0
@@ -75,3 +77,5 @@ permalink: /kb/134/Q134365/
 	
 	=============================================================================
 	
+
+{% endraw %}

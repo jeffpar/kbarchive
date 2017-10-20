@@ -6,6 +6,8 @@ permalink: /kb/193/Q193289/
 
 ## Q193289: Encarta 99 Err Msg: Enc99 Caused a Stack Fault in Module...
 
+{% raw %}
+
 	Article: Q193289
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/193/Q193289/
 	
 	=============================================================================
 	
+
+{% endraw %}

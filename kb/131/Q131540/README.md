@@ -6,6 +6,8 @@ permalink: /kb/131/Q131540/
 
 ## Q131540: How to Set the Maximum Design Area for a Form
 
+{% raw %}
+
 	Article: Q131540
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/131/Q131540/
 	
 	=============================================================================
 	
+
+{% endraw %}

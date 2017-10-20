@@ -6,6 +6,8 @@ permalink: /kb/189/Q189585/
 
 ## Q189585: FIX: Invisible at Run Time ActiveX Control, Visible at Run Time
 
+{% raw %}
+
 	Article: Q189585
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/189/Q189585/
 	
 	=============================================================================
 	
+
+{% endraw %}

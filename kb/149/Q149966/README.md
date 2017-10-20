@@ -6,6 +6,8 @@ permalink: /kb/149/Q149966/
 
 ## Q149966: BUG: istream::operator&gt;&gt;(long&amp;) Does Not Clear errno
 
+{% raw %}
+
 	Article: Q149966
 	Product(s): Microsoft C Compiler
 	Version(s): 1.52,2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -143,3 +145,5 @@ permalink: /kb/149/Q149966/
 	
 	=============================================================================
 	
+
+{% endraw %}

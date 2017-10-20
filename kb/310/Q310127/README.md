@@ -6,6 +6,8 @@ permalink: /kb/310/Q310127/
 
 ## Q310127: SMS: Operating System Appears as &quot;Windows 9x&quot; at Parent Site
 
+{% raw %}
+
 	Article: Q310127
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -208,3 +210,5 @@ permalink: /kb/310/Q310127/
 	
 	=============================================================================
 	
+
+{% endraw %}

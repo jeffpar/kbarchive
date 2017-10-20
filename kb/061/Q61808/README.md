@@ -6,6 +6,8 @@ permalink: /kb/061/Q61808/
 
 ## Q61808: FIX: Using &quot;!&quot; &amp; &quot;&#36;?&quot; Do Not Work as Expected w/ NMAKE 1.11
 
+{% raw %}
+
 	Article: Q61808
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.11; OS/2:1.11
@@ -84,3 +86,5 @@ permalink: /kb/061/Q61808/
 	
 	=============================================================================
 	
+
+{% endraw %}

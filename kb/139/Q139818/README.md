@@ -6,6 +6,8 @@ permalink: /kb/139/Q139818/
 
 ## Q139818: Event 24 Is Logged w/ Severity Levels Information and Warning
 
+{% raw %}
+
 	Article: Q139818
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -65,3 +67,5 @@ permalink: /kb/139/Q139818/
 	
 	=============================================================================
 	
+
+{% endraw %}

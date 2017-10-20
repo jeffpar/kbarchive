@@ -6,6 +6,8 @@ permalink: /kb/132/Q132738/
 
 ## Q132738: Err Msg with IBM Optical Disk: Drive Cannot Find The Sector...
 
+{% raw %}
+
 	Article: Q132738
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/132/Q132738/
 	
 	=============================================================================
 	
+
+{% endraw %}

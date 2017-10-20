@@ -6,6 +6,8 @@ permalink: /kb/103/Q103914/
 
 ## Q103914: Err Msg with Adaptec 1542c: Cannot Write to Drive C:
 
+{% raw %}
+
 	Article: Q103914
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/103/Q103914/
 	
 	=============================================================================
 	
+
+{% endraw %}

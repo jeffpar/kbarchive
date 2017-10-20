@@ -6,6 +6,8 @@ permalink: /kb/236/Q236316/
 
 ## Q236316: Performance Improvement for Redirector/Server Connections
 
+{% raw %}
+
 	Article: Q236316
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -115,3 +117,5 @@ permalink: /kb/236/Q236316/
 	
 	=============================================================================
 	
+
+{% endraw %}

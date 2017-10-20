@@ -6,6 +6,8 @@ permalink: /kb/243/Q243405/
 
 ## Q243405: Device Drivers Use FILE_DEVICE_SECURE_OPEN DeviceCharacteristics
 
+{% raw %}
+
 	Article: Q243405
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -163,3 +165,5 @@ permalink: /kb/243/Q243405/
 	
 	=============================================================================
 	
+
+{% endraw %}

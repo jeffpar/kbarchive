@@ -6,6 +6,8 @@ permalink: /kb/064/Q64880/
 
 ## Q64880: Using HIMEM.SYS with AT&amp;T 6300 and AT&amp;T 6300 Plus
 
+{% raw %}
+
 	Article: Q64880
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/064/Q64880/
 	
 	=============================================================================
 	
+
+{% endraw %}

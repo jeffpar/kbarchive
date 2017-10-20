@@ -6,6 +6,8 @@ permalink: /kb/090/Q90486/
 
 ## Q90486: SAMPLE: Annotating a Text File with Ink
 
+{% raw %}
+
 	Article: Q90486
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/090/Q90486/
 	
 	=============================================================================
 	
+
+{% endraw %}

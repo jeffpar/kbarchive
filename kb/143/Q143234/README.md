@@ -6,6 +6,8 @@ permalink: /kb/143/Q143234/
 
 ## Q143234: XCLN: Cannot View Bcc Information in Sent Items Folder
 
+{% raw %}
+
 	Article: Q143234
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -46,3 +48,5 @@ permalink: /kb/143/Q143234/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/071/Q71705/
 
 ## Q71705: Position of the DOS=HIGH Command in CONFIG.SYS
 
+{% raw %}
+
 	Article: Q71705
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -52,3 +54,5 @@ permalink: /kb/071/Q71705/
 	
 	=============================================================================
 	
+
+{% endraw %}

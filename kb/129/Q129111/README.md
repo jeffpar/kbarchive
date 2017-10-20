@@ -6,6 +6,8 @@ permalink: /kb/129/Q129111/
 
 ## Q129111: PCI Adapter Incorrectly Identified on Dual-bus Computers
 
+{% raw %}
+
 	Article: Q129111
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -55,3 +57,5 @@ permalink: /kb/129/Q129111/
 	
 	=============================================================================
 	
+
+{% endraw %}

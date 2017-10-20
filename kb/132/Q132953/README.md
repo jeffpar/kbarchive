@@ -6,6 +6,8 @@ permalink: /kb/132/Q132953/
 
 ## Q132953: PC Gen: Using the Clipboard Option in the MAILINT.EXE Utility
 
+{% raw %}
+
 	Article: Q132953
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/132/Q132953/
 	
 	=============================================================================
 	
+
+{% endraw %}

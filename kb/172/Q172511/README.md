@@ -6,6 +6,8 @@ permalink: /kb/172/Q172511/
 
 ## Q172511: Stop 0x0000000A w/ Services for Macintosh &amp; McAfee Anti-Virus
 
+{% raw %}
+
 	Article: Q172511
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -135,3 +137,5 @@ permalink: /kb/172/Q172511/
 	
 	=============================================================================
 	
+
+{% endraw %}

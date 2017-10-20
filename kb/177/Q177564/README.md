@@ -6,6 +6,8 @@ permalink: /kb/177/Q177564/
 
 ## Q177564: TN3270 Server Access Violation in SRSGetSpecificResource
 
+{% raw %}
+
 	Article: Q177564
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2
@@ -72,3 +74,5 @@ permalink: /kb/177/Q177564/
 	
 	=============================================================================
 	
+
+{% endraw %}

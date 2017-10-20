@@ -6,6 +6,8 @@ permalink: /kb/157/Q157528/
 
 ## Q157528: WD97: &quot;Outline Effect&quot; Text Garbled or in All Caps When Printed
 
+{% raw %}
+
 	Article: Q157528
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/157/Q157528/
 	
 	=============================================================================
 	
+
+{% endraw %}

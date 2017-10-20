@@ -6,6 +6,8 @@ permalink: /kb/085/Q85695/
 
 ## Q85695: PC Win: Two OLE Objects on One Line Print on Two Lines
 
+{% raw %}
+
 	Article: Q85695
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -50,3 +52,5 @@ permalink: /kb/085/Q85695/
 	
 	=============================================================================
 	
+
+{% endraw %}

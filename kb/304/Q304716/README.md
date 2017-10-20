@@ -6,6 +6,8 @@ permalink: /kb/304/Q304716/
 
 ## Q304716: FIX: AV in RepODBC.dll When You Try to Connect to Repository
 
+{% raw %}
+
 	Article: Q304716
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -101,3 +103,5 @@ permalink: /kb/304/Q304716/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192109/
 
 ## Q192109: Extended Characters May Be Unavailable in Run Dialog Box
 
+{% raw %}
+
 	Article: Q192109
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/192/Q192109/
 	
 	=============================================================================
 	
+
+{% endraw %}

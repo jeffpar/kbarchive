@@ -6,6 +6,8 @@ permalink: /kb/271/Q271964/
 
 ## Q271964: Slow Response in Administrator Console Browsing for Collections
 
+{% raw %}
+
 	Article: Q271964
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -89,3 +91,5 @@ permalink: /kb/271/Q271964/
 	
 	=============================================================================
 	
+
+{% endraw %}

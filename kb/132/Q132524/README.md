@@ -6,6 +6,8 @@ permalink: /kb/132/Q132524/
 
 ## Q132524: Popup Message Queue Can Only Receive 6 Messages
 
+{% raw %}
+
 	Article: Q132524
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:3.5,3.51,4.0
@@ -76,3 +78,5 @@ permalink: /kb/132/Q132524/
 	
 	=============================================================================
 	
+
+{% endraw %}

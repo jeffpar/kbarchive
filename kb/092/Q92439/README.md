@@ -6,6 +6,8 @@ permalink: /kb/092/Q92439/
 
 ## Q92439: PC DB: Preventing .KEY Files from Locking Up on Networks
 
+{% raw %}
+
 	Article: Q92439
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1x,3.0
@@ -64,3 +66,5 @@ permalink: /kb/092/Q92439/
 	
 	=============================================================================
 	
+
+{% endraw %}

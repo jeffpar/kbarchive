@@ -6,6 +6,8 @@ permalink: /kb/263/Q263367/
 
 ## Q263367: Component Status Summarizer Threshold of Zero Does Not Work
 
+{% raw %}
+
 	Article: Q263367
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -54,3 +56,5 @@ permalink: /kb/263/Q263367/
 	
 	=============================================================================
 	
+
+{% endraw %}

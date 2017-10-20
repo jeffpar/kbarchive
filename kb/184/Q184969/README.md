@@ -6,6 +6,8 @@ permalink: /kb/184/Q184969/
 
 ## Q184969: PRB: SET COMPATIBLE ON Causes Problems with Arrays
 
+{% raw %}
+
 	Article: Q184969
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0; WINDOWS:3.0,3.0b,5.0,5.0a
@@ -99,3 +101,5 @@ permalink: /kb/184/Q184969/
 	
 	=============================================================================
 	
+
+{% endraw %}

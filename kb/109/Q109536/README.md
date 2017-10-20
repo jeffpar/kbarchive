@@ -6,6 +6,8 @@ permalink: /kb/109/Q109536/
 
 ## Q109536: Err Msg Running MS-DOS-Based Apps: Cannot Start Application
 
+{% raw %}
+
 	Article: Q109536
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/109/Q109536/
 	
 	=============================================================================
 	
+
+{% endraw %}

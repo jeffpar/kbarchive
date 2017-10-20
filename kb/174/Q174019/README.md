@@ -6,6 +6,8 @@ permalink: /kb/174/Q174019/
 
 ## Q174019: Integrated Services Digital Network Adapters Supported by MSN
 
+{% raw %}
+
 	Article: Q174019
 	Product(s): The Microsoft Network
 	Version(s): 1.3,2.0,2.5,2.6,5.0,5.1,5.2,5.3
@@ -76,3 +78,5 @@ permalink: /kb/174/Q174019/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112304/
 
 ## Q112304: PC Win: MOVEUSER.EXE Err Msg: Export User Failed
 
+{% raw %}
+
 	Article: Q112304
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -108,3 +110,5 @@ permalink: /kb/112/Q112304/
 	
 	=============================================================================
 	
+
+{% endraw %}

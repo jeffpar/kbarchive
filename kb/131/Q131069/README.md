@@ -6,6 +6,8 @@ permalink: /kb/131/Q131069/
 
 ## Q131069: PC WRmt: Receiving mail fails, other processes are successful
 
+{% raw %}
+
 	Article: Q131069
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -54,3 +56,5 @@ permalink: /kb/131/Q131069/
 	
 	=============================================================================
 	
+
+{% endraw %}

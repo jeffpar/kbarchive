@@ -6,6 +6,8 @@ permalink: /kb/259/Q259447/
 
 ## Q259447: SMS 2.0 SP2 Has Limited MUI Support for Windows 2000 Client
 
+{% raw %}
+
 	Article: Q259447
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -123,3 +125,5 @@ permalink: /kb/259/Q259447/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246630/
 
 ## Q246630: INFO: &quot;COM+ Services Type Library&quot; Replaces MTS References in VB
 
+{% raw %}
+
 	Article: Q246630
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:6.0
@@ -58,3 +60,5 @@ permalink: /kb/246/Q246630/
 	
 	=============================================================================
 	
+
+{% endraw %}

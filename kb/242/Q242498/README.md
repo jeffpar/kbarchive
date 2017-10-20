@@ -6,6 +6,8 @@ permalink: /kb/242/Q242498/
 
 ## Q242498: SMS: Component Status Summarizer Has Performance Problems
 
+{% raw %}
+
 	Article: Q242498
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -100,3 +102,5 @@ permalink: /kb/242/Q242498/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/279/Q279351/
 
 ## Q279351: Connectivity: MSN Companion only uses dial-up modem
 
+{% raw %}
+
 	Article: Q279351
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -44,3 +46,5 @@ permalink: /kb/279/Q279351/
 	
 	=============================================================================
 	
+
+{% endraw %}

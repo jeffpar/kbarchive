@@ -6,6 +6,8 @@ permalink: /kb/165/Q165291/
 
 ## Q165291: WD97: WordBasic.MailMergeInsertFillin Fails to Prompt
 
+{% raw %}
+
 	Article: Q165291
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/165/Q165291/
 	
 	=============================================================================
 	
+
+{% endraw %}

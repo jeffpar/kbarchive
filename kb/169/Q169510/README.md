@@ -6,6 +6,8 @@ permalink: /kb/169/Q169510/
 
 ## Q169510: FP: How to Set Up a Multilingual Web in FrontPage
 
+{% raw %}
+
 	Article: Q169510
 	Product(s): Word Front Page
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/169/Q169510/
 	
 	=============================================================================
 	
+
+{% endraw %}

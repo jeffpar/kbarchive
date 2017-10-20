@@ -6,6 +6,8 @@ permalink: /kb/275/Q275870/
 
 ## Q275870: Erroneous Query by Win9x SNA Client Causes DNS Event Errors
 
+{% raw %}
+
 	Article: Q275870
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -87,3 +89,5 @@ permalink: /kb/275/Q275870/
 	
 	=============================================================================
 	
+
+{% endraw %}

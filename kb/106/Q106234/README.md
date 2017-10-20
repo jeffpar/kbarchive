@@ -6,6 +6,8 @@ permalink: /kb/106/Q106234/
 
 ## Q106234: Mail Does Not Remember Password
 
+{% raw %}
+
 	Article: Q106234
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -55,3 +57,5 @@ permalink: /kb/106/Q106234/
 	
 	=============================================================================
 	
+
+{% endraw %}

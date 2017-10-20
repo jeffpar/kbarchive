@@ -6,6 +6,8 @@ permalink: /kb/120/Q120956/
 
 ## Q120956: PPT: Presentation Using Template Ignores Default Setting
 
+{% raw %}
+
 	Article: Q120956
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 4.0,4.0a,4.0c,7.0
@@ -70,3 +72,5 @@ permalink: /kb/120/Q120956/
 	
 	=============================================================================
 	
+
+{% endraw %}

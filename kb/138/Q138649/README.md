@@ -6,6 +6,8 @@ permalink: /kb/138/Q138649/
 
 ## Q138649: How to Use OLE to Edit General Fields in Visual FoxPro
 
+{% raw %}
+
 	Article: Q138649
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/138/Q138649/
 	
 	=============================================================================
 	
+
+{% endraw %}

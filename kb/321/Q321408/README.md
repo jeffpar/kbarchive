@@ -6,6 +6,8 @@ permalink: /kb/321/Q321408/
 
 ## Q321408: Dungeon Siege: Error Msg: Unable to Access Required Directory
 
+{% raw %}
+
 	Article: Q321408
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -82,3 +84,5 @@ permalink: /kb/321/Q321408/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131432/
 
 ## Q131432: MAC Encarta 1995: Encarta and Memory Readme Contents
 
+{% raw %}
+
 	Article: Q131432
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -432,3 +434,5 @@ permalink: /kb/131/Q131432/
 	
 	=============================================================================
 	
+
+{% endraw %}

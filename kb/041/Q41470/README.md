@@ -6,6 +6,8 @@ permalink: /kb/041/Q41470/
 
 ## Q41470: QuickC 2.00 README.DOC: Error Help
 
+{% raw %}
+
 	Article: Q41470
 	Product(s): See article
 	Version(s): 2.00
@@ -20,3 +22,5 @@ permalink: /kb/041/Q41470/
 	Page 52  Error Help
 	
 	Delete the paragraph that begins with "Move the the Errors window..."
+
+{% endraw %}

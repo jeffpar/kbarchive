@@ -6,6 +6,8 @@ permalink: /kb/040/Q40756/
 
 ## Q40756: Bad Code for Expression Parameter of outp() with -Oi
 
+{% raw %}
+
 	Article: Q40756
 	Product(s): See article
 	Version(s): 5.10
@@ -67,3 +69,5 @@ permalink: /kb/040/Q40756/
 	
 	3. Use -Oi, but use the "#pragma function(outp outpw)" statement to
 	   have the non-intrinsic version of the function used.
+
+{% endraw %}

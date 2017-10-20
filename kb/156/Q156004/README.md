@@ -6,6 +6,8 @@ permalink: /kb/156/Q156004/
 
 ## Q156004: WD97: Some Paragraph Border Styles Are Not Transparent
 
+{% raw %}
+
 	Article: Q156004
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/156/Q156004/
 	
 	=============================================================================
 	
+
+{% endraw %}

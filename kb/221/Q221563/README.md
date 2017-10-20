@@ -6,6 +6,8 @@ permalink: /kb/221/Q221563/
 
 ## Q221563: How to Remove Windows Entertainment Pack Software Titles
 
+{% raw %}
+
 	Article: Q221563
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/221/Q221563/
 	
 	=============================================================================
 	
+
+{% endraw %}

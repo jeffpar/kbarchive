@@ -6,6 +6,8 @@ permalink: /kb/133/Q133721/
 
 ## Q133721: SNA Error 505: The Host Terminated the Connection Used...
 
+{% raw %}
+
 	Article: Q133721
 	Product(s): Microsoft SNA Server
 	Version(s): MS-DOS:3.0; WINDOWS:2.1,2.11 SP1;2.11 SP2,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0
@@ -86,3 +88,5 @@ permalink: /kb/133/Q133721/
 	
 	=============================================================================
 	
+
+{% endraw %}

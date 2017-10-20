@@ -6,6 +6,8 @@ permalink: /kb/147/Q147162/
 
 ## Q147162: SMS File AUDIT.RUL Updated
 
+{% raw %}
+
 	Article: Q147162
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.1,1.2
@@ -48,3 +50,5 @@ permalink: /kb/147/Q147162/
 	
 	=============================================================================
 	
+
+{% endraw %}

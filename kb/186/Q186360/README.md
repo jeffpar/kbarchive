@@ -6,6 +6,8 @@ permalink: /kb/186/Q186360/
 
 ## Q186360: PRB: Visual Merge Doesn't Happen When Expected
 
+{% raw %}
+
 	Article: Q186360
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/186/Q186360/
 	
 	=============================================================================
 	
+
+{% endraw %}

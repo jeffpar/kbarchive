@@ -6,6 +6,8 @@ permalink: /kb/165/Q165962/
 
 ## Q165962: WinNT Spooler Service Verifies Printer Drivers Are Correct
 
+{% raw %}
+
 	Article: Q165962
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/165/Q165962/
 	
 	=============================================================================
 	
+
+{% endraw %}

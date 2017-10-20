@@ -6,6 +6,8 @@ permalink: /kb/274/Q274845/
 
 ## Q274845: Crimson Skies: How to Manually Back Up Saved Games
 
+{% raw %}
+
 	Article: Q274845
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/274/Q274845/
 	
 	=============================================================================
 	
+
+{% endraw %}

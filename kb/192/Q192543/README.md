@@ -6,6 +6,8 @@ permalink: /kb/192/Q192543/
 
 ## Q192543: Err Msg: Error 629  When You Attempt to Connect to MSN
 
+{% raw %}
+
 	Article: Q192543
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.52,2.6
@@ -111,3 +113,5 @@ permalink: /kb/192/Q192543/
 	
 	=============================================================================
 	
+
+{% endraw %}

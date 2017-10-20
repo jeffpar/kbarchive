@@ -6,6 +6,8 @@ permalink: /kb/102/Q102120/
 
 ## Q102120: Mac Srv: Server-to-Server Messages
 
+{% raw %}
+
 	Article: Q102120
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -128,3 +130,5 @@ permalink: /kb/102/Q102120/
 	
 	=============================================================================
 	
+
+{% endraw %}

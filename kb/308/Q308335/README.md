@@ -6,6 +6,8 @@ permalink: /kb/308/Q308335/
 
 ## Q308335: Access Violation in IIS When Web Server Is Under a Heavy Load
 
+{% raw %}
+
 	Article: Q308335
 	Product(s): Internet Information Server
 	Version(s): 2000,2000 SP1,2000 SP2,5.0
@@ -72,3 +74,5 @@ permalink: /kb/308/Q308335/
 	
 	=============================================================================
 	
+
+{% endraw %}

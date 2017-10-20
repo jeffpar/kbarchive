@@ -6,6 +6,8 @@ permalink: /kb/038/Q38375/
 
 ## Q38375: Thirty-Two-Bit Register Not Visible under OS/2
 
+{% raw %}
+
 	Article: Q38375
 	Product(s): See article
 	Version(s): 2.20
@@ -21,3 +23,5 @@ permalink: /kb/038/Q38375/
 	is because of the unprotected and generally more flexible nature of
 	DOS. Using the full 32-bits of the 80386 under OS/2 is considered
 	hazard-prone and is not supported by CVP.
+
+{% endraw %}

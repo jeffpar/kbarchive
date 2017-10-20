@@ -6,6 +6,8 @@ permalink: /kb/170/Q170117/
 
 ## Q170117: HOW TO: Use GUID Fields in Access from Visual C++
 
+{% raw %}
+
 	Article: Q170117
 	Product(s): Microsoft C Compiler
 	Version(s): 2000,4.0,4.0a,4.1,4.2,4.2b,5.0,5.0sp1,6.0
@@ -94,7 +96,7 @@ permalink: /kb/170/Q170117/
 	Microsoft Access requires a similar textual format when using GUIDs in SQL
 	statements:
 	
-	  {guid {11223344-1122-1122-1122-AABBCCDDEEFF} }
+	  {guid {11223344-1122-1122-1122-AABBCCDDEEFF}}
 	
 	The following code will insert a GUID field into the MyGUIDTable table:
 	
@@ -103,11 +105,11 @@ permalink: /kb/170/Q170117/
 	  CDaoDatabase db;
 	  db.Open(_T("c:\\db1.mdb"));
 	  db.Execute(_T("INSERT INTO MyGUIDTable (MyGuidField) VALUES
-	     ({guid {11223344-1122-1122-1122-AABBCCDDEEFF} })"));
+	     ({guid {11223344-1122-1122-1122-AABBCCDDEEFF}})"));
 	
 	You can also use a GUID in the SET portion of an UPDATE SQL statement:
 	
-	  SET MyGuidField = {guid {11223344-1122-1122-1122-AABBCCDDEEFF} }
+	  SET MyGuidField = {guid {11223344-1122-1122-1122-AABBCCDDEEFF}}
 	
 	NOTE: You do not need quotes around the GUID field.
 	
@@ -153,10 +155,10 @@ permalink: /kb/170/Q170117/
 	  ::SQLSetConnectOption( db.m_hdbc, SQL_NOSCAN, SQL_NOSCAN_ON );
 	  // Run INSERT SQL statements to add two records.
 	  strSQL = "INSERT INTO Literal (LinkID, Description) VALUES "
-	           "({guid {11223344-1122-1122-1122-AABBCCDDEEFF} }, 'Guid 1')";
+	           "({guid {11223344-1122-1122-1122-AABBCCDDEEFF}}, 'Guid 1')";
 	  db.ExecuteSQL( strSQL );
 	  strSQL = "INSERT INTO Literal (LinkID, Description) VALUES "
-	           "({guid {11223344-1122-1122-1122-FFFFFFFFFFFF} }, 'Guid 2')";
+	           "({guid {11223344-1122-1122-1122-FFFFFFFFFFFF}}, 'Guid 2')";
 	  db.ExecuteSQL( strSQL );
 	  // Turn the driver scanning for escape clauses back on.
 	  ::SQLSetConnectOption( db.m_hdbc, SQL_NOSCAN, SQL_NOSCAN_OFF );
@@ -167,7 +169,7 @@ permalink: /kb/170/Q170117/
 	  ::SQLSetStmtOption( rs.m_hstmt, SQL_NOSCAN, SQL_NOSCAN_ON );
 	  // Open recordset using a literal GUID in a WHERE clause.
 	  strSQL = "SELECT * FROM Literal WHERE LinkID = "
-	           "{guid {11223344-1122-1122-1122-FFFFFFFFFFFF} }";
+	           "{guid {11223344-1122-1122-1122-FFFFFFFFFFFF}}";
 	  rs.Open( CRecordset::forwardOnly, strSQL, CRecordset::readOnly );
 	  // Confirm that you found the correct record.
 	  rs.GetFieldValue( "Description", strDescription );
@@ -187,7 +189,7 @@ permalink: /kb/170/Q170117/
 	  rs.Open(dbOpenTable,_T("MyGUIDTable"));
 	  // Create VT_BSTRT variant for GUID.
 	  COleVariant varGUIDValue(_T("{guid    {11223344-1122-1122-1122-
-	  AABBCCDDEEFF} }"), VT_BSTRT);
+	  AABBCCDDEEFF}}"), VT_BSTRT);
 	  // Add a record using CDaoRecordset method.
 	  rs.AddNew();
 	     rs.SetFieldValue(_T("MyGUIDField"),varGUIDValue);
@@ -220,11 +222,11 @@ permalink: /kb/170/Q170117/
 	  key, Found text)"));
 	  // Insert a few records using an insert into statement.
 	  db.Execute(_T("insert into MySeekTable (ID, Found) values ({guid
-	  {11111111-aabb-aabb-aabb-aabbccddeeff} },'Guid1')"));
+	  {11111111-aabb-aabb-aabb-aabbccddeeff}},'Guid1')"));
 	  db.Execute(_T("insert into MySeekTable (ID, Found) values ({guid
-	  {22222222-aabb-aabb-aabb-aabbccddeeff} },'Guid2')"));
+	  {22222222-aabb-aabb-aabb-aabbccddeeff}},'Guid2')"));
 	  db.Execute(_T("insert into MySeekTable (ID, Found) values ({guid
-	  {33333333-aabb-aabb-aabb-aabbccddeeff} },'Guid3')"));
+	  {33333333-aabb-aabb-aabb-aabbccddeeff}},'Guid3')"));
 	  // Open table-type recordset (must use table-type for Seek) and select
 	  // index for seek.
 	  CDaoRecordset rs(&db);
@@ -232,7 +234,7 @@ permalink: /kb/170/Q170117/
 	  rs.SetCurrentIndex(_T("PKEY"));
 	  // Construct the GUID you want to find and seek the GUID.
 	  COleVariant varGUIDValue(_T("{guid {22222222-aabb-aabb-aabb-
-	  aabbccddeeff} }"), VT_BSTRT);
+	  aabbccddeeff}}"), VT_BSTRT);
 	  if (rs.Seek(_T("="),&varGUIDValue)) {
 	     // GUID found. Retrieve and display value.
 	     CString strResult = V_BSTRT(&rs.GetFieldValue(_T("Found")));
@@ -251,7 +253,7 @@ permalink: /kb/170/Q170117/
 	create CRecordset or CDaoRecordset derived classes. The fields are displayed in
 	the Microsoft Access GUID format:
 	
-	  {guid {11223344-1122-1122-1122-AABBCCDDEEFF} }
+	  {guid {11223344-1122-1122-1122-AABBCCDDEEFF}}
 	
 	Creating "AutoNumber" GUID Fields Programmatically
 	--------------------------------------------------
@@ -305,3 +307,5 @@ permalink: /kb/170/Q170117/
 	
 	=============================================================================
 	
+
+{% endraw %}

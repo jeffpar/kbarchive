@@ -6,6 +6,8 @@ permalink: /kb/092/Q92876/
 
 ## Q92876: NET.EXE Pop-up Interface Hard to Read on Monochrome Monitors
 
+{% raw %}
+
 	Article: Q92876
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/092/Q92876/
 	
 	=============================================================================
 	
+
+{% endraw %}

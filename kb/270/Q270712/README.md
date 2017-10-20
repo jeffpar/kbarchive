@@ -6,6 +6,8 @@ permalink: /kb/270/Q270712/
 
 ## Q270712: XADM: Store.exe Process Stops Responding w/Large No. of Threads
 
+{% raw %}
+
 	Article: Q270712
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -93,3 +95,5 @@ permalink: /kb/270/Q270712/
 	
 	=============================================================================
 	
+
+{% endraw %}

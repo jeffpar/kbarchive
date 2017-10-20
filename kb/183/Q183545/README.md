@@ -6,6 +6,8 @@ permalink: /kb/183/Q183545/
 
 ## Q183545: XWEB: NTLM Authentication Fails Between Two Computers with OWA
 
+{% raw %}
+
 	Article: Q183545
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -55,3 +57,5 @@ permalink: /kb/183/Q183545/
 	
 	=============================================================================
 	
+
+{% endraw %}

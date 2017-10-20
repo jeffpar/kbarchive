@@ -6,6 +6,8 @@ permalink: /kb/083/Q83448/
 
 ## Q83448: Error Message &quot;Invalid TrueType Font Detected...&quot;
 
+{% raw %}
+
 	Article: Q83448
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/083/Q83448/
 	
 	=============================================================================
 	
+
+{% endraw %}

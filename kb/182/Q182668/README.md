@@ -6,6 +6,8 @@ permalink: /kb/182/Q182668/
 
 ## Q182668: BUG: Help File Inconsistent with Adv. Method Properties Window
 
+{% raw %}
+
 	Article: Q182668
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -69,3 +71,5 @@ permalink: /kb/182/Q182668/
 	
 	=============================================================================
 	
+
+{% endraw %}

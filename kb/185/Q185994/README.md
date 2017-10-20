@@ -6,6 +6,8 @@ permalink: /kb/185/Q185994/
 
 ## Q185994: GPS Err Msg: This Program Was Designed for a Previous Version...
 
+{% raw %}
+
 	Article: Q185994
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:5.0
@@ -61,3 +63,5 @@ permalink: /kb/185/Q185994/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99857/
 
 ## Q99857: SMTP: Err Msg: ERROR Write: (1) (null)
 
+{% raw %}
+
 	Article: Q99857
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -63,3 +65,5 @@ permalink: /kb/099/Q99857/
 	
 	=============================================================================
 	
+
+{% endraw %}

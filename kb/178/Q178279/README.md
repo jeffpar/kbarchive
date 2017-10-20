@@ -6,6 +6,8 @@ permalink: /kb/178/Q178279/
 
 ## Q178279: Service Pack Update Prompts for Windows NT Workstation CD
 
+{% raw %}
+
 	Article: Q178279
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -81,3 +83,5 @@ permalink: /kb/178/Q178279/
 	
 	=============================================================================
 	
+
+{% endraw %}

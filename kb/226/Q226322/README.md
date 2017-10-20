@@ -6,6 +6,8 @@ permalink: /kb/226/Q226322/
 
 ## Q226322: How to Use RRAS DOD w/Third-Party Unnumbered Connections
 
+{% raw %}
+
 	Article: Q226322
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/226/Q226322/
 	
 	=============================================================================
 	
+
+{% endraw %}

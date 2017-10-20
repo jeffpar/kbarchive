@@ -6,6 +6,8 @@ permalink: /kb/193/Q193538/
 
 ## Q193538: WD97: How to Remove Unused Standard Styles from a Document
 
+{% raw %}
+
 	Article: Q193538
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -110,7 +112,7 @@ permalink: /kb/193/Q193538/
 	    \sbasedon0\snext255 heading 3;}{\s253\li-360\sb120\sa120
 	    \b\f2\lang1033 \sbasedon0\snext0 heading 2;}{\s254\li-360\sb240\sa120
 	    \b\f2\fs28\lang1033 \sbasedon0\snext0 heading 1;}{\fs20\lang1033
-	    \snext0 Normal;} }
+	    \snext0 Normal;}}
 	
 	  To remove an unused style definition, delete the bracketed information for
 	  that style. For example, to remove the Footer style from the above sample,
@@ -171,3 +173,5 @@ permalink: /kb/193/Q193538/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172522/
 
 ## Q172522: PRB: Unattended Install Does Not Stop After Text Mode
 
+{% raw %}
+
 	Article: Q172522
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/172/Q172522/
 	
 	=============================================================================
 	
+
+{% endraw %}

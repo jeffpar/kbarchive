@@ -6,6 +6,8 @@ permalink: /kb/071/Q71447/
 
 ## Q71447: Swapfile Err Msg: Incompatible Driver in CONFIG.SYS
 
+{% raw %}
+
 	Article: Q71447
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/071/Q71447/
 	
 	=============================================================================
 	
+
+{% endraw %}

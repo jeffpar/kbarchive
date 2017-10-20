@@ -6,6 +6,8 @@ permalink: /kb/173/Q173442/
 
 ## Q173442: WD97: Imported WordPerfect Document Contains Gaps
 
+{% raw %}
+
 	Article: Q173442
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -148,3 +150,5 @@ permalink: /kb/173/Q173442/
 	
 	=============================================================================
 	
+
+{% endraw %}

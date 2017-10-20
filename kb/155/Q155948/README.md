@@ -6,6 +6,8 @@ permalink: /kb/155/Q155948/
 
 ## Q155948: WD97: Font Animation Lost After Saving to HTML Format
 
+{% raw %}
+
 	Article: Q155948
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/155/Q155948/
 	
 	=============================================================================
 	
+
+{% endraw %}

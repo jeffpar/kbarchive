@@ -6,6 +6,8 @@ permalink: /kb/194/Q194714/
 
 ## Q194714: Noise Signals Interpreted As Keystroke During Boot Display
 
+{% raw %}
+
 	Article: Q194714
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -64,3 +66,5 @@ permalink: /kb/194/Q194714/
 	
 	=============================================================================
 	
+
+{% endraw %}

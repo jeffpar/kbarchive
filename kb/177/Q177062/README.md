@@ -6,6 +6,8 @@ permalink: /kb/177/Q177062/
 
 ## Q177062: PRB: Update Conflict When Key Field Is Not Unique in Remote View
 
+{% raw %}
+
 	Article: Q177062
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -75,3 +77,5 @@ permalink: /kb/177/Q177062/
 	
 	=============================================================================
 	
+
+{% endraw %}

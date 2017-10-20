@@ -6,6 +6,8 @@ permalink: /kb/197/Q197137/
 
 ## Q197137: WD97: AutoFormat Does Not Replace Hyphens with En Dashes
 
+{% raw %}
+
 	Article: Q197137
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/197/Q197137/
 	
 	=============================================================================
 	
+
+{% endraw %}

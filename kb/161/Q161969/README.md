@@ -6,6 +6,8 @@ permalink: /kb/161/Q161969/
 
 ## Q161969: LPR Printing Device Reports an Error If Printer Not Available
 
+{% raw %}
+
 	Article: Q161969
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -103,3 +105,5 @@ permalink: /kb/161/Q161969/
 	
 	=============================================================================
 	
+
+{% endraw %}

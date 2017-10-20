@@ -6,6 +6,8 @@ permalink: /kb/104/Q104595/
 
 ## Q104595: TSR to Force Creation of Temporary Files in Current Directory
 
+{% raw %}
+
 	Article: Q104595
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/104/Q104595/
 	
 	=============================================================================
 	
+
+{% endraw %}

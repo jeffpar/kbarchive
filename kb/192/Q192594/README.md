@@ -6,6 +6,8 @@ permalink: /kb/192/Q192594/
 
 ## Q192594: XFOR: Message with Empty From: Field Stuck in MTS_OUT Queue
 
+{% raw %}
+
 	Article: Q192594
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -62,3 +64,5 @@ permalink: /kb/192/Q192594/
 	
 	=============================================================================
 	
+
+{% endraw %}

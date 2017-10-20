@@ -6,6 +6,8 @@ permalink: /kb/166/Q166622/
 
 ## Q166622: XADM: SA Crashes When Generating Offline Address Book
 
+{% raw %}
+
 	Article: Q166622
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -53,3 +55,5 @@ permalink: /kb/166/Q166622/
 	
 	=============================================================================
 	
+
+{% endraw %}

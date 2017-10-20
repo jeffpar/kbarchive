@@ -6,6 +6,8 @@ permalink: /kb/139/Q139178/
 
 ## Q139178: Installing Video and SCSI Drivers on Toshiba T2450CT
 
+{% raw %}
+
 	Article: Q139178
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -44,3 +46,5 @@ permalink: /kb/139/Q139178/
 	
 	=============================================================================
 	
+
+{% endraw %}

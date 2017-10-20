@@ -6,6 +6,8 @@ permalink: /kb/249/Q249668/
 
 ## Q249668: XADM: Microsoft Exchange Unavailable in Windows 2000 Backup
 
+{% raw %}
+
 	Article: Q249668
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; winnt:5.5
@@ -57,3 +59,5 @@ permalink: /kb/249/Q249668/
 	
 	=============================================================================
 	
+
+{% endraw %}

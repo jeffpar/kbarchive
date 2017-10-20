@@ -6,6 +6,8 @@ permalink: /kb/142/Q142641/
 
 ## Q142641: Internet Server Unavailable Because of Malicious SYN Attacks
 
+{% raw %}
+
 	Article: Q142641
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.51,4.0
@@ -382,3 +384,5 @@ permalink: /kb/142/Q142641/
 	
 	=============================================================================
 	
+
+{% endraw %}

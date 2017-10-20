@@ -6,6 +6,8 @@ permalink: /kb/263/Q263576/
 
 ## Q263576: Motocross Madness 2: Program Quits During CD-ROM Verification
 
+{% raw %}
+
 	Article: Q263576
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -53,3 +55,5 @@ permalink: /kb/263/Q263576/
 	
 	=============================================================================
 	
+
+{% endraw %}

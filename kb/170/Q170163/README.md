@@ -6,6 +6,8 @@ permalink: /kb/170/Q170163/
 
 ## Q170163: INFO: VB 6.0 Readme Part 2: Data Access/Databinding Issues
 
+{% raw %}
+
 	Article: Q170163
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -279,3 +281,5 @@ permalink: /kb/170/Q170163/
 	
 	=============================================================================
 	
+
+{% endraw %}

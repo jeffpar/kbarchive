@@ -6,6 +6,8 @@ permalink: /kb/084/Q84047/
 
 ## Q84047: Text of DEC Pathworks SETHOST.EXE Is Invisible
 
+{% raw %}
+
 	Article: Q84047
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/084/Q84047/
 	
 	=============================================================================
 	
+
+{% endraw %}

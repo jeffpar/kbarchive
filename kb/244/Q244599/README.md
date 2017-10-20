@@ -6,6 +6,8 @@ permalink: /kb/244/Q244599/
 
 ## Q244599: Fixes Required in TCSEC C2 Security Evaluation Configuration
 
+{% raw %}
+
 	Article: Q244599
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6a
@@ -202,3 +204,5 @@ permalink: /kb/244/Q244599/
 	
 	=============================================================================
 	
+
+{% endraw %}

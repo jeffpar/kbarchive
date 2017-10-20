@@ -6,6 +6,8 @@ permalink: /kb/169/Q169875/
 
 ## Q169875: WD97: Pressing BACKSPACE Doesn't Delete Section Break
 
+{% raw %}
+
 	Article: Q169875
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -56,3 +58,5 @@ permalink: /kb/169/Q169875/
 	
 	=============================================================================
 	
+
+{% endraw %}

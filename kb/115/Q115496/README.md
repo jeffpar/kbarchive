@@ -6,6 +6,8 @@ permalink: /kb/115/Q115496/
 
 ## Q115496: SMTP: Configuring the Mail Routing Host Without DNS
 
+{% raw %}
+
 	Article: Q115496
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/115/Q115496/
 	
 	=============================================================================
 	
+
+{% endraw %}

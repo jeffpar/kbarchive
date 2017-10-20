@@ -6,6 +6,8 @@ permalink: /kb/245/Q245016/
 
 ## Q245016: XCLN: Outlook 2000 Attachments Keep Created/Modified Date
 
+{% raw %}
+
 	Article: Q245016
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -63,3 +65,5 @@ permalink: /kb/245/Q245016/
 	
 	=============================================================================
 	
+
+{% endraw %}

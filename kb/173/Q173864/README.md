@@ -6,6 +6,8 @@ permalink: /kb/173/Q173864/
 
 ## Q173864: WD97: Batch Conversion Wizard Document Open After Dialog Closed
 
+{% raw %}
+
 	Article: Q173864
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -86,3 +88,5 @@ permalink: /kb/173/Q173864/
 	
 	=============================================================================
 	
+
+{% endraw %}

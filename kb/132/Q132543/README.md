@@ -6,6 +6,8 @@ permalink: /kb/132/Q132543/
 
 ## Q132543: Dogs: Changes Made to Windows 95 Registry and .INI Files
 
+{% raw %}
+
 	Article: Q132543
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.00
@@ -128,3 +130,5 @@ permalink: /kb/132/Q132543/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101538/
 
 ## Q101538: Musical Instruments: Landscape on Radius Color Pivot Display
 
+{% raw %}
+
 	Article: Q101538
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -42,3 +44,5 @@ permalink: /kb/101/Q101538/
 	
 	=============================================================================
 	
+
+{% endraw %}

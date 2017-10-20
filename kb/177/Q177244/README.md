@@ -6,6 +6,8 @@ permalink: /kb/177/Q177244/
 
 ## Q177244: HOWTO: AsyncDown Demonstrates Asynchronous Data Download
 
+{% raw %}
+
 	Article: Q177244
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,4.2b,5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/177/Q177244/
 	
 	=============================================================================
 	
+
+{% endraw %}

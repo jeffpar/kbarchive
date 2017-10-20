@@ -6,6 +6,8 @@ permalink: /kb/170/Q170005/
 
 ## Q170005: XCON: MTA Fails to Start with WinNT Event ID 137
 
+{% raw %}
+
 	Article: Q170005
 	Product(s): Microsoft Exchange
 	Version(s): WinNT: 5.5
@@ -39,3 +41,5 @@ permalink: /kb/170/Q170005/
 	
 	=============================================================================
 	
+
+{% endraw %}

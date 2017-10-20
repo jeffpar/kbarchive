@@ -6,6 +6,8 @@ permalink: /kb/164/Q164417/
 
 ## Q164417: Cannot Create MSN Address Book Entry
 
+{% raw %}
+
 	Article: Q164417
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -43,3 +45,5 @@ permalink: /kb/164/Q164417/
 	
 	=============================================================================
 	
+
+{% endraw %}

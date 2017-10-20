@@ -6,6 +6,8 @@ permalink: /kb/171/Q171390/
 
 ## Q171390: Cluster Service May Not Start if DC Is Unavailable
 
+{% raw %}
+
 	Article: Q171390
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/171/Q171390/
 	
 	=============================================================================
 	
+
+{% endraw %}

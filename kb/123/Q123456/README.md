@@ -6,6 +6,8 @@ permalink: /kb/123/Q123456/
 
 ## Q123456: BUG: MSCDEX May Not Detect Disk Change
 
+{% raw %}
+
 	Article: Q123456
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 2.0,2.1,2.2,2.21,2.22,2.23; WINDOWS:3.1
@@ -73,3 +75,5 @@ permalink: /kb/123/Q123456/
 	
 	=============================================================================
 	
+
+{% endraw %}

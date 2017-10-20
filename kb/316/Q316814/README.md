@@ -6,6 +6,8 @@ permalink: /kb/316/Q316814/
 
 ## Q316814: FIX: Mismatched Pushjmp Err Msg Using Beautify in IntelliSense
 
+{% raw %}
+
 	Article: Q316814
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -86,3 +88,5 @@ permalink: /kb/316/Q316814/
 	
 	=============================================================================
 	
+
+{% endraw %}

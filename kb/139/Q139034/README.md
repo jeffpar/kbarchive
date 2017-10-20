@@ -6,6 +6,8 @@ permalink: /kb/139/Q139034/
 
 ## Q139034: PC NTMMTA: DISPATCH.EXE Using Single Postoffice Instance
 
+{% raw %}
+
 	Article: Q139034
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -77,3 +79,5 @@ permalink: /kb/139/Q139034/
 	
 	=============================================================================
 	
+
+{% endraw %}

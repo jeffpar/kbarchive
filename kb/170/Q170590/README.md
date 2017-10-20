@@ -6,6 +6,8 @@ permalink: /kb/170/Q170590/
 
 ## Q170590: RIP Announcements Are Not Sent After Installing MPR
 
+{% raw %}
+
 	Article: Q170590
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -84,3 +86,5 @@ permalink: /kb/170/Q170590/
 	
 	=============================================================================
 	
+
+{% endraw %}

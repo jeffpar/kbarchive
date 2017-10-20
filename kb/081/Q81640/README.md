@@ -6,6 +6,8 @@ permalink: /kb/081/Q81640/
 
 ## Q81640: 256-Color Bitmap in Paintbrush Causes Wallpaper Change
 
+{% raw %}
+
 	Article: Q81640
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/081/Q81640/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142571/
 
 ## Q142571: IBM ThinkPad BIOS Version Requirements for Windows 95
 
+{% raw %}
+
 	Article: Q142571
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/142/Q142571/
 	
 	=============================================================================
 	
+
+{% endraw %}

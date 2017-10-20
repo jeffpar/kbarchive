@@ -6,6 +6,8 @@ permalink: /kb/241/Q241588/
 
 ## Q241588: Connect Command Unavailable in Terminal Services Sessions
 
+{% raw %}
+
 	Article: Q241588
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -59,3 +61,5 @@ permalink: /kb/241/Q241588/
 	
 	=============================================================================
 	
+
+{% endraw %}

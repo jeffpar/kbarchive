@@ -6,6 +6,8 @@ permalink: /kb/273/Q273627/
 
 ## Q273627: Midtown Madness 2: Large Patches of the Road Are Missing
 
+{% raw %}
+
 	Article: Q273627
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -48,3 +50,5 @@ permalink: /kb/273/Q273627/
 	
 	=============================================================================
 	
+
+{% endraw %}

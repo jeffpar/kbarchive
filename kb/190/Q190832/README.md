@@ -6,6 +6,8 @@ permalink: /kb/190/Q190832/
 
 ## Q190832: RSERVICE Unable to Configure Service to Use the LocalSystem
 
+{% raw %}
+
 	Article: Q190832
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -79,3 +81,5 @@ permalink: /kb/190/Q190832/
 	
 	=============================================================================
 	
+
+{% endraw %}

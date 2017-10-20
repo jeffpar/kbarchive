@@ -6,6 +6,8 @@ permalink: /kb/295/Q295658/
 
 ## Q295658: XADM: Directory Service Does Not Start with Event ID 1171
 
+{% raw %}
+
 	Article: Q295658
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP4
@@ -101,3 +103,5 @@ permalink: /kb/295/Q295658/
 	
 	=============================================================================
 	
+
+{% endraw %}

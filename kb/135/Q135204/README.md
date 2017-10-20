@@ -6,6 +6,8 @@ permalink: /kb/135/Q135204/
 
 ## Q135204: Cannot Restore Files from HP 1300T Rewritable Optical Disk
 
+{% raw %}
+
 	Article: Q135204
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -51,3 +53,5 @@ permalink: /kb/135/Q135204/
 	
 	=============================================================================
 	
+
+{% endraw %}

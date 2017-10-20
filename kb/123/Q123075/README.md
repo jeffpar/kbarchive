@@ -6,6 +6,8 @@ permalink: /kb/123/Q123075/
 
 ## Q123075: Artist: Animated Backgrounds Don't Play In Pigture Show
 
+{% raw %}
+
 	Article: Q123075
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0,1.1,1.1a
@@ -71,3 +73,5 @@ permalink: /kb/123/Q123075/
 	
 	=============================================================================
 	
+
+{% endraw %}

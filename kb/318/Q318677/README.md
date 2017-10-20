@@ -6,6 +6,8 @@ permalink: /kb/318/Q318677/
 
 ## Q318677: PRB: System Hangs When You Reach Maximum Child Windows in MDI
 
+{% raw %}
+
 	Article: Q318677
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0a,4.1,4.2,5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/318/Q318677/
 	
 	=============================================================================
 	
+
+{% endraw %}

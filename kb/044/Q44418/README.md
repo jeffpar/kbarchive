@@ -6,6 +6,8 @@ permalink: /kb/044/Q44418/
 
 ## Q44418: Switching Out of PM Application Hangs System under Codeview
 
+{% raw %}
+
 	Article: Q44418
 	Product(s): See article
 	Version(s): 2.20
@@ -31,3 +33,5 @@ permalink: /kb/044/Q44418/
 	you must first restart or end the program inside CodeView. This tells
 	CodeView to restore the Presentation Manager to its original
 	condition.
+
+{% endraw %}

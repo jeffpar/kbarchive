@@ -6,6 +6,8 @@ permalink: /kb/275/Q275647/
 
 ## Q275647: XCON: MTA Stops Unexpectedly in GwartCopyDoorwayList()
 
+{% raw %}
+
 	Article: Q275647
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -85,3 +87,5 @@ permalink: /kb/275/Q275647/
 	
 	=============================================================================
 	
+
+{% endraw %}

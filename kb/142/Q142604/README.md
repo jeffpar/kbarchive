@@ -6,6 +6,8 @@ permalink: /kb/142/Q142604/
 
 ## Q142604: SMS Removes Shareable Attribute on NetWare Files
 
+{% raw %}
+
 	Article: Q142604
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -50,3 +52,5 @@ permalink: /kb/142/Q142604/
 	
 	=============================================================================
 	
+
+{% endraw %}

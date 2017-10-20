@@ -6,6 +6,8 @@ permalink: /kb/196/Q196313/
 
 ## Q196313: XFOR: Calendar Connector Reports Error Event 5010
 
+{% raw %}
+
 	Article: Q196313
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/196/Q196313/
 	
 	=============================================================================
 	
+
+{% endraw %}

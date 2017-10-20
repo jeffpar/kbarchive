@@ -6,6 +6,8 @@ permalink: /kb/114/Q114231/
 
 ## Q114231: STOP 0x1E in SFMRV.SYS When Running Services for Macintosh
 
+{% raw %}
+
 	Article: Q114231
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -57,3 +59,5 @@ permalink: /kb/114/Q114231/
 	
 	=============================================================================
 	
+
+{% endraw %}

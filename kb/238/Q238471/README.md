@@ -6,6 +6,8 @@ permalink: /kb/238/Q238471/
 
 ## Q238471: XIMS: How to Force SMTP Messages Through the Information Store
 
+{% raw %}
+
 	Article: Q238471
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/238/Q238471/
 	
 	=============================================================================
 	
+
+{% endraw %}

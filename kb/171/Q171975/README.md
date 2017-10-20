@@ -6,6 +6,8 @@ permalink: /kb/171/Q171975/
 
 ## Q171975: Mac Bookshelf 98: Err Msg: Cannot Open Articles or Books File
 
+{% raw %}
+
 	Article: Q171975
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -73,3 +75,5 @@ permalink: /kb/171/Q171975/
 	
 	=============================================================================
 	
+
+{% endraw %}

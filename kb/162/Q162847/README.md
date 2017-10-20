@@ -6,6 +6,8 @@ permalink: /kb/162/Q162847/
 
 ## Q162847: Troubleshooting PPTP Connectivity Issues in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q162847
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -340,3 +342,5 @@ permalink: /kb/162/Q162847/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82747/
 
 ## Q82747: How Windows Prints to a Network
 
+{% raw %}
+
 	Article: Q82747
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -112,3 +114,5 @@ permalink: /kb/082/Q82747/
 	
 	=============================================================================
 	
+
+{% endraw %}

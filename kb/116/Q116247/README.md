@@ -6,6 +6,8 @@ permalink: /kb/116/Q116247/
 
 ## Q116247: Computers in Docking Stations May Not Provide APM Support
 
+{% raw %}
+
 	Article: Q116247
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/116/Q116247/
 	
 	=============================================================================
 	
+
+{% endraw %}

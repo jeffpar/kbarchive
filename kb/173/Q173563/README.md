@@ -6,6 +6,8 @@ permalink: /kb/173/Q173563/
 
 ## Q173563: Bookshelf 98: Arial and Symbol Fonts Required but Not Installed
 
+{% raw %}
+
 	Article: Q173563
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/173/Q173563/
 	
 	=============================================================================
 	
+
+{% endraw %}

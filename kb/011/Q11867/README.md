@@ -6,6 +6,8 @@ permalink: /kb/011/Q11867/
 
 ## Q11867: C_FILE_INFO in Environment of Child Process
 
+{% raw %}
+
 	Article: Q11867
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00
@@ -30,3 +32,5 @@ permalink: /kb/011/Q11867/
 	
 	This behavior is harmless. The leading ";" (or "_") prevents any
 	collision with user-entered environment variables.
+
+{% endraw %}

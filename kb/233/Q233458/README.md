@@ -6,6 +6,8 @@ permalink: /kb/233/Q233458/
 
 ## Q233458: MSBP: Back Button on Wizard Toolbar Does Not Function
 
+{% raw %}
+
 	Article: Q233458
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/233/Q233458/
 	
 	=============================================================================
 	
+
+{% endraw %}

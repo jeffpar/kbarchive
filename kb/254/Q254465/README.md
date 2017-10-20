@@ -6,6 +6,8 @@ permalink: /kb/254/Q254465/
 
 ## Q254465: PRB: Top-Level Form w/Intellimouse Causes Page Fault in Explorer
 
+{% raw %}
+
 	Article: Q254465
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -114,3 +116,5 @@ permalink: /kb/254/Q254465/
 	
 	=============================================================================
 	
+
+{% endraw %}

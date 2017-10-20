@@ -6,6 +6,8 @@ permalink: /kb/176/Q176208/
 
 ## Q176208: Some Routers May Cause &quot;Duplicate IP Address&quot; Error Message
 
+{% raw %}
+
 	Article: Q176208
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:3.5,3.51,4.0;Windows:95
@@ -73,3 +75,5 @@ permalink: /kb/176/Q176208/
 	
 	=============================================================================
 	
+
+{% endraw %}

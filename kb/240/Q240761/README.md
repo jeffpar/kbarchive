@@ -6,6 +6,8 @@ permalink: /kb/240/Q240761/
 
 ## Q240761: LUA Security Does Not Apply to TN3270 LUA LUs
 
+{% raw %}
+
 	Article: Q240761
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -49,3 +51,5 @@ permalink: /kb/240/Q240761/
 	
 	=============================================================================
 	
+
+{% endraw %}

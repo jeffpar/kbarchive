@@ -6,6 +6,8 @@ permalink: /kb/250/Q250549/
 
 ## Q250549: Sterling's Connect:Direct and SNA 4.0 Workstation
 
+{% raw %}
+
 	Article: Q250549
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1
@@ -101,3 +103,5 @@ permalink: /kb/250/Q250549/
 	
 	=============================================================================
 	
+
+{% endraw %}

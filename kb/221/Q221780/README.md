@@ -6,6 +6,8 @@ permalink: /kb/221/Q221780/
 
 ## Q221780: PRB: Printer Properties Show Incorrect Values
 
+{% raw %}
+
 	Article: Q221780
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -112,3 +114,5 @@ permalink: /kb/221/Q221780/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154951/
 
 ## Q154951: Blue Screen w/ S3 Video Driver Upgrade from 3.51 to SP3 or SP4
 
+{% raw %}
+
 	Article: Q154951
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -58,3 +60,5 @@ permalink: /kb/154/Q154951/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191211/
 
 ## Q191211: SMSINST: &quot;Could Not Open Install.log File&quot;
 
+{% raw %}
+
 	Article: Q191211
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -61,3 +63,5 @@ permalink: /kb/191/Q191211/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164184/
 
 ## Q164184: Associating Index Server File Types for Filtering
 
+{% raw %}
+
 	Article: Q164184
 	Product(s): Internet Information Server
 	Version(s): winnt:1.1; :
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164184/
 	
 	=============================================================================
 	
+
+{% endraw %}

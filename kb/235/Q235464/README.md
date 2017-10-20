@@ -6,6 +6,8 @@ permalink: /kb/235/Q235464/
 
 ## Q235464: XADM: Server Indicates Certificate Was Imported After You Cancel
 
+{% raw %}
+
 	Article: Q235464
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -88,3 +90,5 @@ permalink: /kb/235/Q235464/
 	
 	=============================================================================
 	
+
+{% endraw %}

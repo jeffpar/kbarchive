@@ -6,6 +6,8 @@ permalink: /kb/246/Q246860/
 
 ## Q246860: Server Configured for OSPF Does Not Select Optimum Path
 
+{% raw %}
+
 	Article: Q246860
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6
@@ -78,3 +80,5 @@ permalink: /kb/246/Q246860/
 	
 	=============================================================================
 	
+
+{% endraw %}

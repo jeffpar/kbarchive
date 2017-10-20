@@ -6,6 +6,8 @@ permalink: /kb/157/Q157283/
 
 ## Q157283: STL Sample for Non-predicate Version of max_element Function
 
+{% raw %}
+
 	Article: Q157283
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -146,3 +148,5 @@ permalink: /kb/157/Q157283/
 	
 	=============================================================================
 	
+
+{% endraw %}

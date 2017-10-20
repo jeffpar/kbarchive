@@ -6,6 +6,8 @@ permalink: /kb/110/Q110906/
 
 ## Q110906: PRB: SQL Invalid ORDER BY
 
+{% raw %}
+
 	Article: Q110906
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
@@ -64,3 +66,5 @@ permalink: /kb/110/Q110906/
 	
 	=============================================================================
 	
+
+{% endraw %}

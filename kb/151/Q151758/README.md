@@ -6,6 +6,8 @@ permalink: /kb/151/Q151758/
 
 ## Q151758: BUG: Num Lock Indicator Light Doesn't Light up in VFP Mac
 
+{% raw %}
+
 	Article: Q151758
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -66,3 +68,5 @@ permalink: /kb/151/Q151758/
 	
 	=============================================================================
 	
+
+{% endraw %}

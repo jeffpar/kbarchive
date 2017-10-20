@@ -6,6 +6,8 @@ permalink: /kb/149/Q149696/
 
 ## Q149696: FIX: Bad Code Generated for Inline Assembly Using Enumerators
 
+{% raw %}
+
 	Article: Q149696
 	Product(s): Microsoft C Compiler
 	Version(s): 4.1
@@ -94,3 +96,5 @@ permalink: /kb/149/Q149696/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158757/
 
 ## Q158757: FIX: TabPicture Property of SSTab Control Gives an OLE Error
 
+{% raw %}
+
 	Article: Q158757
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -93,3 +95,5 @@ permalink: /kb/158/Q158757/
 	
 	=============================================================================
 	
+
+{% endraw %}

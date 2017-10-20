@@ -6,6 +6,8 @@ permalink: /kb/162/Q162253/
 
 ## Q162253: FIX: Form Builder Form Causes Illegal Operation
 
+{% raw %}
+
 	Article: Q162253
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -106,3 +108,5 @@ permalink: /kb/162/Q162253/
 	
 	=============================================================================
 	
+
+{% endraw %}

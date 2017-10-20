@@ -6,6 +6,8 @@ permalink: /kb/095/Q95375/
 
 ## Q95375: DEFINE WINDOW STYLE 'O' Clause Does Not Work
 
+{% raw %}
+
 	Article: Q95375
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0,3.0b
@@ -37,3 +39,5 @@ permalink: /kb/095/Q95375/
 	
 	=============================================================================
 	
+
+{% endraw %}

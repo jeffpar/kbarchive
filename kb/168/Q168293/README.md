@@ -6,6 +6,8 @@ permalink: /kb/168/Q168293/
 
 ## Q168293: Zip Cartridges Formatted in LBA Mode are Unreadable
 
+{% raw %}
+
 	Article: Q168293
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -60,3 +62,5 @@ permalink: /kb/168/Q168293/
 	
 	=============================================================================
 	
+
+{% endraw %}

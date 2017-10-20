@@ -6,6 +6,8 @@ permalink: /kb/192/Q192862/
 
 ## Q192862: BUG: Incorrect Return of SubSelect in SELECT-SQL Statement
 
+{% raw %}
+
 	Article: Q192862
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -80,3 +82,5 @@ permalink: /kb/192/Q192862/
 	
 	=============================================================================
 	
+
+{% endraw %}

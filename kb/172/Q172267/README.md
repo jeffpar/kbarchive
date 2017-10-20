@@ -6,6 +6,8 @@ permalink: /kb/172/Q172267/
 
 ## Q172267: SAMPLE: RECEDIT.VBP Demonstrates File I/O in Visual Basic
 
+{% raw %}
+
 	Article: Q172267
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/172/Q172267/
 	
 	=============================================================================
 	
+
+{% endraw %}

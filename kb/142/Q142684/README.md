@@ -6,6 +6,8 @@ permalink: /kb/142/Q142684/
 
 ## Q142684: NetworkAddress Parameter Not Supported for a Modem
 
+{% raw %}
+
 	Article: Q142684
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142684/
 	
 	=============================================================================
 	
+
+{% endraw %}

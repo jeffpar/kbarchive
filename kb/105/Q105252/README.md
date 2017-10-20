@@ -6,6 +6,8 @@ permalink: /kb/105/Q105252/
 
 ## Q105252: MemMaker Does Not Preserve Indentation in Configuration Files
 
+{% raw %}
+
 	Article: Q105252
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -44,3 +46,5 @@ permalink: /kb/105/Q105252/
 	
 	=============================================================================
 	
+
+{% endraw %}

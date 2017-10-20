@@ -6,6 +6,8 @@ permalink: /kb/142/Q142304/
 
 ## Q142304: Problem with Windows NT DDK Ndis.h
 
+{% raw %}
+
 	Article: Q142304
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/142/Q142304/
 	
 	=============================================================================
 	
+
+{% endraw %}

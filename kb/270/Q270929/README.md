@@ -6,6 +6,8 @@ permalink: /kb/270/Q270929/
 
 ## Q270929: Encarta Africana: Commands on Suite Menu Are Unavailable
 
+{% raw %}
+
 	Article: Q270929
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/270/Q270929/
 	
 	=============================================================================
 	
+
+{% endraw %}

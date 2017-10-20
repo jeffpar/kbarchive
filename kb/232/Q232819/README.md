@@ -6,6 +6,8 @@ permalink: /kb/232/Q232819/
 
 ## Q232819: Err Msg: &quot;1782 Disk Controller Failure&quot; Compaq Deskpro
 
+{% raw %}
+
 	Article: Q232819
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -90,3 +92,5 @@ permalink: /kb/232/Q232819/
 	
 	=============================================================================
 	
+
+{% endraw %}

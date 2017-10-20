@@ -6,6 +6,8 @@ permalink: /kb/155/Q155274/
 
 ## Q155274: Encarta 96: Contents of the August 1996 Yearbook Update
 
+{% raw %}
+
 	Article: Q155274
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :1996 edition
@@ -137,3 +139,5 @@ permalink: /kb/155/Q155274/
 	
 	=============================================================================
 	
+
+{% endraw %}

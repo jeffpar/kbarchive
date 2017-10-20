@@ -6,6 +6,8 @@ permalink: /kb/104/Q104463/
 
 ## Q104463: 32-Bit FoxPro Won't Load After MS-DOS 6 Upgrade Installed
 
+{% raw %}
+
 	Article: Q104463
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a
@@ -56,3 +58,5 @@ permalink: /kb/104/Q104463/
 	
 	=============================================================================
 	
+
+{% endraw %}

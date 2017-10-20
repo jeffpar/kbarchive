@@ -6,6 +6,8 @@ permalink: /kb/131/Q131122/
 
 ## Q131122: INFO: Report Writer Enhancements in Visual FoxPro
 
+{% raw %}
+
 	Article: Q131122
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/131/Q131122/
 	
 	=============================================================================
 	
+
+{% endraw %}

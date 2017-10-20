@@ -6,6 +6,8 @@ permalink: /kb/040/Q40452/
 
 ## Q40452: FIX: A2006: Phase Error Using EQU in An IFNDEF Block
 
+{% raw %}
+
 	Article: Q40452
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.1
@@ -84,3 +86,5 @@ permalink: /kb/040/Q40452/
 	
 	=============================================================================
 	
+
+{% endraw %}

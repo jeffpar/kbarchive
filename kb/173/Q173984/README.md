@@ -6,6 +6,8 @@ permalink: /kb/173/Q173984/
 
 ## Q173984: Flight Simulator 98: What's New
 
+{% raw %}
+
 	Article: Q173984
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/173/Q173984/
 	
 	=============================================================================
 	
+
+{% endraw %}

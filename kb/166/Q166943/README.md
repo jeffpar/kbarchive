@@ -6,6 +6,8 @@ permalink: /kb/166/Q166943/
 
 ## Q166943: Golf: Unable to Select COM Port in Multiplayer Game
 
+{% raw %}
+
 	Article: Q166943
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0,3.0
@@ -114,3 +116,5 @@ permalink: /kb/166/Q166943/
 	
 	=============================================================================
 	
+
+{% endraw %}

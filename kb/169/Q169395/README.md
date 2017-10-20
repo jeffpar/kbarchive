@@ -6,6 +6,8 @@ permalink: /kb/169/Q169395/
 
 ## Q169395: PRB: Thread Safety for DAO/Jet
 
+{% raw %}
+
 	Article: Q169395
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/169/Q169395/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193419/
 
 ## Q193419: IIS Registry Setting ReplyWithHTTP1.1 May Cause Problems
 
+{% raw %}
+
 	Article: Q193419
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/193/Q193419/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264662/
 
 ## Q264662: Leftover SPL, SHD, and TMP Files Remain in the Spool Directory A
 
+{% raw %}
+
 	Article: Q264662
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/264/Q264662/
 	
 	=============================================================================
 	
+
+{% endraw %}

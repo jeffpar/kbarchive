@@ -6,6 +6,8 @@ permalink: /kb/191/Q191170/
 
 ## Q191170: PRB: Too Many Memory Variables Error Creating Array
 
+{% raw %}
+
 	Article: Q191170
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a,3.0b; MS- DOS:2.0,2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:2.
@@ -97,3 +99,5 @@ permalink: /kb/191/Q191170/
 	
 	=============================================================================
 	
+
+{% endraw %}

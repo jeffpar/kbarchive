@@ -6,6 +6,8 @@ permalink: /kb/147/Q147627/
 
 ## Q147627: Cannot Use Microsoft Voice After Clicking Advanced Settings
 
+{% raw %}
+
 	Article: Q147627
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/147/Q147627/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134595/
 
 ## Q134595: NET START WORKSTATION Command Loads Incorrect Redirector
 
+{% raw %}
+
 	Article: Q134595
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/134/Q134595/
 	
 	=============================================================================
 	
+
+{% endraw %}

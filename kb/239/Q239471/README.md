@@ -6,6 +6,8 @@ permalink: /kb/239/Q239471/
 
 ## Q239471: Jet 4.0 Text IISAM Allows User to Append Lines to System Files
 
+{% raw %}
+
 	Article: Q239471
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 4.0
@@ -137,3 +139,5 @@ permalink: /kb/239/Q239471/
 	
 	=============================================================================
 	
+
+{% endraw %}

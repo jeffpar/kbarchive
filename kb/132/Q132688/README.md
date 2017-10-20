@@ -6,6 +6,8 @@ permalink: /kb/132/Q132688/
 
 ## Q132688: PC MAPI: MAPIReadMail Retrieve Message Body as Blank
 
+{% raw %}
+
 	Article: Q132688
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a
@@ -48,3 +50,5 @@ permalink: /kb/132/Q132688/
 	
 	=============================================================================
 	
+
+{% endraw %}

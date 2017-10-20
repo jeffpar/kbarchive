@@ -6,6 +6,8 @@ permalink: /kb/077/Q77723/
 
 ## Q77723: Paintbrush Loses Copied Images in Windows 3.0
 
+{% raw %}
+
 	Article: Q77723
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -40,3 +42,5 @@ permalink: /kb/077/Q77723/
 	
 	=============================================================================
 	
+
+{% endraw %}

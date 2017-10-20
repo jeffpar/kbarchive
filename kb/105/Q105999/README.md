@@ -6,6 +6,8 @@ permalink: /kb/105/Q105999/
 
 ## Q105999: Err Msg: Nbf Could Not Find Adapter &#92;Device&#92;IbmTok01
 
+{% raw %}
+
 	Article: Q105999
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.51
@@ -78,3 +80,5 @@ permalink: /kb/105/Q105999/
 	
 	=============================================================================
 	
+
+{% endraw %}

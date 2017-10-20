@@ -6,6 +6,8 @@ permalink: /kb/221/Q221535/
 
 ## Q221535: C0000008 (INVALID_HANDLE) Occurs When Restarting ASP Application
 
+{% raw %}
+
 	Article: Q221535
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/221/Q221535/
 	
 	=============================================================================
 	
+
+{% endraw %}

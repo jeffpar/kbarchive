@@ -6,6 +6,8 @@ permalink: /kb/155/Q155083/
 
 ## Q155083: INFO: Benefits and Uses of Automation in Visual FoxPro Servers
 
+{% raw %}
+
 	Article: Q155083
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -136,3 +138,5 @@ permalink: /kb/155/Q155083/
 	
 	=============================================================================
 	
+
+{% endraw %}

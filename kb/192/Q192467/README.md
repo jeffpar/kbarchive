@@ -6,6 +6,8 @@ permalink: /kb/192/Q192467/
 
 ## Q192467: Windows NT Load Balancing Service Remote Control Commands Fail
 
+{% raw %}
+
 	Article: Q192467
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,4.0
@@ -81,3 +83,5 @@ permalink: /kb/192/Q192467/
 	
 	=============================================================================
 	
+
+{% endraw %}

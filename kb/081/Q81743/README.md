@@ -6,6 +6,8 @@ permalink: /kb/081/Q81743/
 
 ## Q81743: Norton Antivirus Drivers Hang SMARTDRV.EXE
 
+{% raw %}
+
 	Article: Q81743
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -94,3 +96,5 @@ permalink: /kb/081/Q81743/
 	
 	=============================================================================
 	
+
+{% endraw %}

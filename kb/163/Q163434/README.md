@@ -6,6 +6,8 @@ permalink: /kb/163/Q163434/
 
 ## Q163434: PPT: Sample VB Code to Get Selected Text
 
+{% raw %}
+
 	Article: Q163434
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -117,3 +119,5 @@ permalink: /kb/163/Q163434/
 	
 	=============================================================================
 	
+
+{% endraw %}

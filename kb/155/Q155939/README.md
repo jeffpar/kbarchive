@@ -6,6 +6,8 @@ permalink: /kb/155/Q155939/
 
 ## Q155939: HOWTO: Use Clireg32.exe for Remote Automation
 
+{% raw %}
+
 	Article: Q155939
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/155/Q155939/
 	
 	=============================================================================
 	
+
+{% endraw %}

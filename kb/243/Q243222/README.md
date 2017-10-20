@@ -6,6 +6,8 @@ permalink: /kb/243/Q243222/
 
 ## Q243222: Spooler Does Not Start Immediately After Being Stopped
 
+{% raw %}
+
 	Article: Q243222
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -105,3 +107,5 @@ permalink: /kb/243/Q243222/
 	
 	=============================================================================
 	
+
+{% endraw %}

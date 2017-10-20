@@ -6,6 +6,8 @@ permalink: /kb/186/Q186478/
 
 ## Q186478: Error Writing to LPT1:
 
+{% raw %}
+
 	Article: Q186478
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/186/Q186478/
 	
 	=============================================================================
 	
+
+{% endraw %}

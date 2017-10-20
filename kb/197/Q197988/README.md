@@ -6,6 +6,8 @@ permalink: /kb/197/Q197988/
 
 ## Q197988: HOWTO: Deploy an ActiveX Control with the PDW
 
+{% raw %}
+
 	Article: Q197988
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -205,3 +207,5 @@ permalink: /kb/197/Q197988/
 	
 	=============================================================================
 	
+
+{% endraw %}

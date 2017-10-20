@@ -6,6 +6,8 @@ permalink: /kb/157/Q157613/
 
 ## Q157613: WD97: Bullet Symbol Changes After Roundtrip Conversion
 
+{% raw %}
+
 	Article: Q157613
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -60,3 +62,5 @@ permalink: /kb/157/Q157613/
 	
 	=============================================================================
 	
+
+{% endraw %}

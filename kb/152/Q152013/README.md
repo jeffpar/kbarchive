@@ -6,6 +6,8 @@ permalink: /kb/152/Q152013/
 
 ## Q152013: Automating AFTP Commands Through a Script File
 
+{% raw %}
+
 	Article: Q152013
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11 SP1
@@ -84,3 +86,5 @@ permalink: /kb/152/Q152013/
 	
 	=============================================================================
 	
+
+{% endraw %}

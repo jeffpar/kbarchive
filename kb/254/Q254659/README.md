@@ -6,6 +6,8 @@ permalink: /kb/254/Q254659/
 
 ## Q254659: Starting Local COM Server Returns Error Code 0x80080005
 
+{% raw %}
+
 	Article: Q254659
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:98 Second Edition; :1.2
@@ -106,3 +108,5 @@ permalink: /kb/254/Q254659/
 	
 	=============================================================================
 	
+
+{% endraw %}

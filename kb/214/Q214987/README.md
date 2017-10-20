@@ -6,6 +6,8 @@ permalink: /kb/214/Q214987/
 
 ## Q214987: SMS: Chat Edit Window Cannot Display Euro Symbol
 
+{% raw %}
+
 	Article: Q214987
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -57,3 +59,5 @@ permalink: /kb/214/Q214987/
 	
 	=============================================================================
 	
+
+{% endraw %}

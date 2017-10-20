@@ -6,6 +6,8 @@ permalink: /kb/186/Q186573/
 
 ## Q186573: Terminal Server Administrators Must Install Printer Drivers
 
+{% raw %}
+
 	Article: Q186573
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -44,3 +46,5 @@ permalink: /kb/186/Q186573/
 	
 	=============================================================================
 	
+
+{% endraw %}

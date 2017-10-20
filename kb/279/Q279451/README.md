@@ -6,6 +6,8 @@ permalink: /kb/279/Q279451/
 
 ## Q279451: MSN Companion sends but cannot receive e-mail
 
+{% raw %}
+
 	Article: Q279451
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -68,3 +70,5 @@ permalink: /kb/279/Q279451/
 	
 	=============================================================================
 	
+
+{% endraw %}

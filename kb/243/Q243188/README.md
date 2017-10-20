@@ -6,6 +6,8 @@ permalink: /kb/243/Q243188/
 
 ## Q243188: Unable to Browse RAS Clients from the Local Area Network
 
+{% raw %}
+
 	Article: Q243188
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/243/Q243188/
 	
 	=============================================================================
 	
+
+{% endraw %}

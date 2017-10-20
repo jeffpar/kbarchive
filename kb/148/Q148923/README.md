@@ -6,6 +6,8 @@ permalink: /kb/148/Q148923/
 
 ## Q148923: Problems Printing Envelopes with Panasonic KXP-4400 Printer
 
+{% raw %}
+
 	Article: Q148923
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -53,3 +55,5 @@ permalink: /kb/148/Q148923/
 	
 	=============================================================================
 	
+
+{% endraw %}

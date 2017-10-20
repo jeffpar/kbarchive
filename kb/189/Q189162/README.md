@@ -6,6 +6,8 @@ permalink: /kb/189/Q189162/
 
 ## Q189162: WD97: Inserted Excel Worksheet Object Is Limited in Size
 
+{% raw %}
+
 	Article: Q189162
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/189/Q189162/
 	
 	=============================================================================
 	
+
+{% endraw %}

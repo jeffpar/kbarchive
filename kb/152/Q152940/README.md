@@ -6,6 +6,8 @@ permalink: /kb/152/Q152940/
 
 ## Q152940: XFOR: IMC Stops Sending Mail, Fails to Release TCP Connection
 
+{% raw %}
+
 	Article: Q152940
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -176,3 +178,5 @@ permalink: /kb/152/Q152940/
 	
 	=============================================================================
 	
+
+{% endraw %}

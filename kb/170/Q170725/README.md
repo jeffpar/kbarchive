@@ -6,6 +6,8 @@ permalink: /kb/170/Q170725/
 
 ## Q170725: WD97: Sample Macro That Uses a Loop to Find Text
 
+{% raw %}
+
 	Article: Q170725
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -113,3 +115,5 @@ permalink: /kb/170/Q170725/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122301/
 
 ## Q122301: FIX: Correct Icons Are Not Displayed After CD-ROM Setup
 
+{% raw %}
+
 	Article: Q122301
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -60,3 +62,5 @@ permalink: /kb/122/Q122301/
 	
 	=============================================================================
 	
+
+{% endraw %}

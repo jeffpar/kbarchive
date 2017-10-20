@@ -6,6 +6,8 @@ permalink: /kb/156/Q156139/
 
 ## Q156139: HOWTO: Use the SQL Server DateTime Parameter
 
+{% raw %}
+
 	Article: Q156139
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -61,3 +63,5 @@ permalink: /kb/156/Q156139/
 	
 	=============================================================================
 	
+
+{% endraw %}

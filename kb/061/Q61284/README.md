@@ -6,6 +6,8 @@ permalink: /kb/061/Q61284/
 
 ## Q61284: Mac Form: Making Info Show in Both the Send and Read Screen
 
+{% raw %}
+
 	Article: Q61284
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -46,3 +48,5 @@ permalink: /kb/061/Q61284/
 	
 	=============================================================================
 	
+
+{% endraw %}

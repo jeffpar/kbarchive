@@ -6,6 +6,8 @@ permalink: /kb/130/Q130909/
 
 ## Q130909: NTBACKUP Fails to Restore All Files in a Directory
 
+{% raw %}
+
 	Article: Q130909
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/130/Q130909/
 	
 	=============================================================================
 	
+
+{% endraw %}

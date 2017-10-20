@@ -6,6 +6,8 @@ permalink: /kb/183/Q183158/
 
 ## Q183158: CPS: Phonebook Admin Does Not Start on Chinese Windows NT
 
+{% raw %}
+
 	Article: Q183158
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0; :1.0
@@ -78,3 +80,5 @@ permalink: /kb/183/Q183158/
 	
 	=============================================================================
 	
+
+{% endraw %}

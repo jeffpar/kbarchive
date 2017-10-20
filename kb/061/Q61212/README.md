@@ -6,6 +6,8 @@ permalink: /kb/061/Q61212/
 
 ## Q61212: C 6.00 README: CL Environment Variable w/PWB May Cause Problem
 
+{% raw %}
+
 	Article: Q61212
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -23,3 +25,5 @@ permalink: /kb/061/Q61212/
 	C compiler. However, when building programs from within PWB, you
 	should disable the CL environment variable to avoid interaction with
 	PWB build settings.
+
+{% endraw %}

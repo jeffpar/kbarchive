@@ -6,6 +6,8 @@ permalink: /kb/192/Q192090/
 
 ## Q192090: BUG: UserControl Property Value Changes Lost When Building EXE
 
+{% raw %}
+
 	Article: Q192090
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -104,3 +106,5 @@ permalink: /kb/192/Q192090/
 	
 	=============================================================================
 	
+
+{% endraw %}

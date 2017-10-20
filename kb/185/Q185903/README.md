@@ -6,6 +6,8 @@ permalink: /kb/185/Q185903/
 
 ## Q185903: Kids Plus!: Documentation Error in Paint It! Help
 
+{% raw %}
+
 	Article: Q185903
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/185/Q185903/
 	
 	=============================================================================
 	
+
+{% endraw %}

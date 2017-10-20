@@ -6,6 +6,8 @@ permalink: /kb/051/Q51512/
 
 ## Q51512: OS/2 1.1 EXE May Fail under 1.2 Due to Small Thread Stack Size
 
+{% raw %}
+
 	Article: Q51512
 	Product(s): See article
 	Version(s): 5.10
@@ -36,3 +38,5 @@ permalink: /kb/051/Q51512/
 	allowed these SDK examples to run without problem. Regardless of the
 	actual difference needed, the best thing to do is to maintain the
 	minimum of at least a 2K thread stack to prevent problems in general.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/207/Q207525/
 
 ## Q207525: PRB: IIS4: ASP/ADO Do Not Work Across UNC Path
 
+{% raw %}
+
 	Article: Q207525
 	Product(s): Internet Information Server
 	Version(s): 1.5,2.0,2.01,2.1,2.1 SP1,2.1 SP2,4.0
@@ -164,3 +166,5 @@ permalink: /kb/207/Q207525/
 	
 	=============================================================================
 	
+
+{% endraw %}

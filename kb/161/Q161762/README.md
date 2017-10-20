@@ -6,6 +6,8 @@ permalink: /kb/161/Q161762/
 
 ## Q161762: PRB: NumberFormat Property of DBGrid Does Not Change Format
 
+{% raw %}
+
 	Article: Q161762
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -77,3 +79,5 @@ permalink: /kb/161/Q161762/
 	
 	=============================================================================
 	
+
+{% endraw %}

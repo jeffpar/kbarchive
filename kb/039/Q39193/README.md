@@ -6,6 +6,8 @@ permalink: /kb/039/Q39193/
 
 ## Q39193: Tandy 3000, EGA Card, RGB CM11 Monitor, incompatible w/ 4.50
 
+{% raw %}
+
 	Article: Q39193
 	Product(s): See article
 	Version(s): 4.00 4.50
@@ -25,3 +27,5 @@ permalink: /kb/039/Q39193/
 	Microsoft has confirmed this to be a problem in Version 4.50. We are
 	researching this problem and wil post new information as it becomes
 	available.
+
+{% endraw %}

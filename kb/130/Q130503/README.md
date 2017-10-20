@@ -6,6 +6,8 @@ permalink: /kb/130/Q130503/
 
 ## Q130503: PRB: Grid Width and Height Decimal Values Not Saved
 
+{% raw %}
+
 	Article: Q130503
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -91,3 +93,5 @@ permalink: /kb/130/Q130503/
 	
 	=============================================================================
 	
+
+{% endraw %}

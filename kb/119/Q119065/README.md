@@ -6,6 +6,8 @@ permalink: /kb/119/Q119065/
 
 ## Q119065: Stop Msg: 0001:9A03 When 16-bit App Calls TASKFINDHANDLE
 
+{% raw %}
+
 	Article: Q119065
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -54,3 +56,5 @@ permalink: /kb/119/Q119065/
 	
 	=============================================================================
 	
+
+{% endraw %}

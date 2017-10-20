@@ -6,6 +6,8 @@ permalink: /kb/028/Q28857/
 
 ## Q28857: Zero Passed or &quot;Type Mismatch&quot; in SUB; DEFtype Usage in QB.EXE
 
+{% raw %}
+
 	Article: Q28857
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -144,3 +146,5 @@ permalink: /kb/028/Q28857/
 	
 	All of the above behavior is consistent with QuickBASIC's design
 	logic.
+
+{% endraw %}

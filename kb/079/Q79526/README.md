@@ -6,6 +6,8 @@ permalink: /kb/079/Q79526/
 
 ## Q79526: Quicken 5.00 PIFs Require Modification
 
+{% raw %}
+
 	Article: Q79526
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/079/Q79526/
 	
 	=============================================================================
 	
+
+{% endraw %}

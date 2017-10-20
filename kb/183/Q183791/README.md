@@ -6,6 +6,8 @@ permalink: /kb/183/Q183791/
 
 ## Q183791: APPC/CPI-C Program Unexpectedly Hangs Through SNA Server 4.0
 
+{% raw %}
+
 	Article: Q183791
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -80,3 +82,5 @@ permalink: /kb/183/Q183791/
 	
 	=============================================================================
 	
+
+{% endraw %}

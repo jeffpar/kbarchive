@@ -6,6 +6,8 @@ permalink: /kb/264/Q264524/
 
 ## Q264524: SMS: DDR Backlog Because DDM Does Not Delete Read-Only DDRs
 
+{% raw %}
+
 	Article: Q264524
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -67,3 +69,5 @@ permalink: /kb/264/Q264524/
 	
 	=============================================================================
 	
+
+{% endraw %}

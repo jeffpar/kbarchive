@@ -6,6 +6,8 @@ permalink: /kb/249/Q249697/
 
 ## Q249697: Encarta 2000: How to Disable or Enable MindMaze
 
+{% raw %}
+
 	Article: Q249697
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:
@@ -95,3 +97,5 @@ permalink: /kb/249/Q249697/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145711/
 
 ## Q145711: Only First Two Events Will Display in Notes
 
+{% raw %}
+
 	Article: Q145711
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -45,3 +47,5 @@ permalink: /kb/145/Q145711/
 	
 	=============================================================================
 	
+
+{% endraw %}

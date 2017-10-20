@@ -6,6 +6,8 @@ permalink: /kb/107/Q107632/
 
 ## Q107632: Using Novell's ODINSUP and NETx with Windows
 
+{% raw %}
+
 	Article: Q107632
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.11
@@ -324,3 +326,5 @@ permalink: /kb/107/Q107632/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190029/
 
 ## Q190029: INFO: Print Out File Properties Using the FileSystemObject
 
+{% raw %}
+
 	Article: Q190029
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -196,3 +198,5 @@ permalink: /kb/190/Q190029/
 	
 	=============================================================================
 	
+
+{% endraw %}

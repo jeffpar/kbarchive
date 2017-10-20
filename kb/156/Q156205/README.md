@@ -6,6 +6,8 @@ permalink: /kb/156/Q156205/
 
 ## Q156205: SMS: Windows NT Inventory Agent Detects ATAPI Drives as SCSI
 
+{% raw %}
+
 	Article: Q156205
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -59,3 +61,5 @@ permalink: /kb/156/Q156205/
 	
 	=============================================================================
 	
+
+{% endraw %}

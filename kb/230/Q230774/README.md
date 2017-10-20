@@ -6,6 +6,8 @@ permalink: /kb/230/Q230774/
 
 ## Q230774: XADM: Changing Dedicated PF Server May Break AutoAccept Scripts
 
+{% raw %}
+
 	Article: Q230774
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -61,3 +63,5 @@ permalink: /kb/230/Q230774/
 	
 	=============================================================================
 	
+
+{% endraw %}

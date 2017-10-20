@@ -6,6 +6,8 @@ permalink: /kb/095/Q95414/
 
 ## Q95414: PRB: INVOKE Pushes SS to Convert NEAR PTR to FAR PTR
 
+{% raw %}
+
 	Article: Q95414
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -75,3 +77,5 @@ permalink: /kb/095/Q95414/
 	
 	=============================================================================
 	
+
+{% endraw %}

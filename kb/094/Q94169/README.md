@@ -6,6 +6,8 @@ permalink: /kb/094/Q94169/
 
 ## Q94169: IBM 4226 Printer Emulation for Windows
 
+{% raw %}
+
 	Article: Q94169
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/094/Q94169/
 	
 	=============================================================================
 	
+
+{% endraw %}

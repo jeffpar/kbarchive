@@ -6,6 +6,8 @@ permalink: /kb/149/Q149015/
 
 ## Q149015: Kernel Debugging: &quot;Parity Error: Bad Instruction Pointer&quot;
 
+{% raw %}
+
 	Article: Q149015
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -232,3 +234,5 @@ permalink: /kb/149/Q149015/
 	
 	=============================================================================
 	
+
+{% endraw %}

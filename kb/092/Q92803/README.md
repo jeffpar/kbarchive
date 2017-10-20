@@ -6,6 +6,8 @@ permalink: /kb/092/Q92803/
 
 ## Q92803: Writing CR/LF Combination Using CFile::Write() Function
 
+{% raw %}
+
 	Article: Q92803
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,4.1,7.0
@@ -74,3 +76,5 @@ permalink: /kb/092/Q92803/
 	
 	=============================================================================
 	
+
+{% endraw %}

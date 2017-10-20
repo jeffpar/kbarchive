@@ -6,6 +6,8 @@ permalink: /kb/124/Q124244/
 
 ## Q124244: Using Quotes with DEL may Delete Wrong Directory Files
 
+{% raw %}
+
 	Article: Q124244
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/124/Q124244/
 	
 	=============================================================================
 	
+
+{% endraw %}

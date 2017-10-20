@@ -6,6 +6,8 @@ permalink: /kb/243/Q243380/
 
 ## Q243380: XADM: Using Windows 2000 Backup Utility to Perform Online Backup
 
+{% raw %}
+
 	Article: Q243380
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; winnt:5.5
@@ -87,3 +89,5 @@ permalink: /kb/243/Q243380/
 	
 	=============================================================================
 	
+
+{% endraw %}

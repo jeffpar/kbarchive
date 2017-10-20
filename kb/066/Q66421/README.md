@@ -6,6 +6,8 @@ permalink: /kb/066/Q66421/
 
 ## Q66421: HP ThinkJet Fonts Split Characters Over Two Lines
 
+{% raw %}
+
 	Article: Q66421
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/066/Q66421/
 	
 	=============================================================================
 	
+
+{% endraw %}

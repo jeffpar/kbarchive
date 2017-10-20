@@ -6,6 +6,8 @@ permalink: /kb/134/Q134528/
 
 ## Q134528: Cannot Format Startup Disk During Setup
 
+{% raw %}
+
 	Article: Q134528
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/134/Q134528/
 	
 	=============================================================================
 	
+
+{% endraw %}

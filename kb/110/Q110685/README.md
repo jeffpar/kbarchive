@@ -6,6 +6,8 @@ permalink: /kb/110/Q110685/
 
 ## Q110685: Problems with HP Jet Direct Card and 16 Mbps Token Ring Net
 
+{% raw %}
+
 	Article: Q110685
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -68,3 +70,5 @@ permalink: /kb/110/Q110685/
 	
 	=============================================================================
 	
+
+{% endraw %}

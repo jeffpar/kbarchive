@@ -6,6 +6,8 @@ permalink: /kb/193/Q193814/
 
 ## Q193814: Performance Improvements for APPC/CPIC Applications
 
+{% raw %}
+
 	Article: Q193814
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -61,3 +63,5 @@ permalink: /kb/193/Q193814/
 	
 	=============================================================================
 	
+
+{% endraw %}

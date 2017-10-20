@@ -6,6 +6,8 @@ permalink: /kb/197/Q197721/
 
 ## Q197721: XCLN: NDR When Sending A Message to A Local Recipient
 
+{% raw %}
+
 	Article: Q197721
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.0,5.5
@@ -73,3 +75,5 @@ permalink: /kb/197/Q197721/
 	
 	=============================================================================
 	
+
+{% endraw %}

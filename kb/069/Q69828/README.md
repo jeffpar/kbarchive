@@ -6,6 +6,8 @@ permalink: /kb/069/Q69828/
 
 ## Q69828: How to Set the Size of the Drawing Area in Paintbrush
 
+{% raw %}
+
 	Article: Q69828
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/069/Q69828/
 	
 	=============================================================================
 	
+
+{% endraw %}

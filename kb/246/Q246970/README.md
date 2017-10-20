@@ -6,6 +6,8 @@ permalink: /kb/246/Q246970/
 
 ## Q246970: INFO: Customizing the Visual C++ IDE Programmatically
 
+{% raw %}
+
 	Article: Q246970
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -66,3 +68,5 @@ permalink: /kb/246/Q246970/
 	
 	=============================================================================
 	
+
+{% endraw %}

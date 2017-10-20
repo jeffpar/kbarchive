@@ -6,6 +6,8 @@ permalink: /kb/035/Q35151/
 
 ## Q35151: WYSE 1400 Keyboard Input Is Not Recognized by QuickBASIC
 
+{% raw %}
+
 	Article: Q35151
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -27,3 +29,5 @@ permalink: /kb/035/Q35151/
 	Microsoft has not confirmed or tested this information. Corrections to
 	this information can be reported to Microsoft Product Support
 	Services.
+
+{% endraw %}

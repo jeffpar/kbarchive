@@ -6,6 +6,8 @@ permalink: /kb/111/Q111962/
 
 ## Q111962: M2052 or M2010 Err Msg Appears After You Install WFWG 3.11
 
+{% raw %}
+
 	Article: Q111962
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -68,3 +70,5 @@ permalink: /kb/111/Q111962/
 	
 	=============================================================================
 	
+
+{% endraw %}

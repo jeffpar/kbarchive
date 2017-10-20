@@ -6,6 +6,8 @@ permalink: /kb/153/Q153034/
 
 ## Q153034: ACC95: Table Is Not Exported Using the Upsizing Tools
 
+{% raw %}
+
 	Article: Q153034
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 7.0
@@ -76,3 +78,5 @@ permalink: /kb/153/Q153034/
 	
 	=============================================================================
 	
+
+{% endraw %}

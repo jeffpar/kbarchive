@@ -6,6 +6,8 @@ permalink: /kb/122/Q122114/
 
 ## Q122114: MSB Human: Files Installed
 
+{% raw %}
+
 	Article: Q122114
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -184,3 +186,5 @@ permalink: /kb/122/Q122114/
 	
 	=============================================================================
 	
+
+{% endraw %}

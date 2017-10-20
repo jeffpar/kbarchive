@@ -6,6 +6,8 @@ permalink: /kb/177/Q177183/
 
 ## Q177183: Unable to Add Components from Corporate Evaluation CD-ROM
 
+{% raw %}
+
 	Article: Q177183
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -95,3 +97,5 @@ permalink: /kb/177/Q177183/
 	
 	=============================================================================
 	
+
+{% endraw %}

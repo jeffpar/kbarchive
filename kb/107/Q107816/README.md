@@ -6,6 +6,8 @@ permalink: /kb/107/Q107816/
 
 ## Q107816: WFWG 3.11 Setup Installs Older Logitech Mouse Driver
 
+{% raw %}
+
 	Article: Q107816
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -47,3 +49,5 @@ permalink: /kb/107/Q107816/
 	
 	=============================================================================
 	
+
+{% endraw %}

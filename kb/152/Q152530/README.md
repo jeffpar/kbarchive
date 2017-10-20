@@ -6,6 +6,8 @@ permalink: /kb/152/Q152530/
 
 ## Q152530: XCLN: SMAPI/MAPIFindNext Can't Find IPC Messages
 
+{% raw %}
+
 	Article: Q152530
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -69,3 +71,5 @@ permalink: /kb/152/Q152530/
 	
 	=============================================================================
 	
+
+{% endraw %}

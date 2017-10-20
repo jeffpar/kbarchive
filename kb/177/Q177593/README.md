@@ -6,6 +6,8 @@ permalink: /kb/177/Q177593/
 
 ## Q177593: PRB: Reuse of rdoQuery Object Causes &quot;40006&quot; Unexpected Error
 
+{% raw %}
+
 	Article: Q177593
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -104,3 +106,5 @@ permalink: /kb/177/Q177593/
 	
 	=============================================================================
 	
+
+{% endraw %}

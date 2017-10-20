@@ -6,6 +6,8 @@ permalink: /kb/111/Q111589/
 
 ## Q111589: BUG: Brush Misaligned in PaintRgn()
 
+{% raw %}
+
 	Article: Q111589
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -52,3 +54,5 @@ permalink: /kb/111/Q111589/
 	
 	=============================================================================
 	
+
+{% endraw %}

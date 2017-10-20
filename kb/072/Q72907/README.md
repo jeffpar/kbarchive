@@ -6,6 +6,8 @@ permalink: /kb/072/Q72907/
 
 ## Q72907: Manipulating Program Manager Groups Using DDE Interface
 
+{% raw %}
+
 	Article: Q72907
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -179,3 +181,5 @@ permalink: /kb/072/Q72907/
 	
 	=============================================================================
 	
+
+{% endraw %}

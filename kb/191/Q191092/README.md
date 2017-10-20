@@ -6,6 +6,8 @@ permalink: /kb/191/Q191092/
 
 ## Q191092: PRB: PDW Appends Script Information to Existing PDM File
 
+{% raw %}
+
 	Article: Q191092
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -73,3 +75,5 @@ permalink: /kb/191/Q191092/
 	
 	=============================================================================
 	
+
+{% endraw %}

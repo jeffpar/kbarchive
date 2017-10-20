@@ -6,6 +6,8 @@ permalink: /kb/138/Q138072/
 
 ## Q138072: INFO: Tips to Improve Performance While Using OLE Servers
 
+{% raw %}
+
 	Article: Q138072
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -95,3 +97,5 @@ permalink: /kb/138/Q138072/
 	
 	=============================================================================
 	
+
+{% endraw %}

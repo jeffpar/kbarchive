@@ -6,6 +6,8 @@ permalink: /kb/172/Q172703/
 
 ## Q172703: WD97: Letter Wizard Second Page Header Contains Date/Page Number
 
+{% raw %}
+
 	Article: Q172703
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/172/Q172703/
 	
 	=============================================================================
 	
+
+{% endraw %}

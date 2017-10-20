@@ -6,6 +6,8 @@ permalink: /kb/080/Q80783/
 
 ## Q80783: Determining the Version of MS-DOS from a Windows App
 
+{% raw %}
+
 	Article: Q80783
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -147,3 +149,5 @@ permalink: /kb/080/Q80783/
 	
 	=============================================================================
 	
+
+{% endraw %}

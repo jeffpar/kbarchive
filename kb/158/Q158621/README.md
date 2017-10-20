@@ -6,6 +6,8 @@ permalink: /kb/158/Q158621/
 
 ## Q158621: STL Sample for vector::(size, capacity, and so on) Functions
 
+{% raw %}
+
 	Article: Q158621
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -195,3 +197,5 @@ permalink: /kb/158/Q158621/
 	
 	=============================================================================
 	
+
+{% endraw %}

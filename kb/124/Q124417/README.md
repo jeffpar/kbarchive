@@ -6,6 +6,8 @@ permalink: /kb/124/Q124417/
 
 ## Q124417: Display Problems or Computer Hangs When You Play Video Clips
 
+{% raw %}
+
 	Article: Q124417
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1995 edition,3.11
@@ -101,3 +103,5 @@ permalink: /kb/124/Q124417/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/019/Q19972/
 
 ## Q19972: INFO: Jumping into the Middle of a For Loop Is Not Recommended
 
+{% raw %}
+
 	Article: Q19972
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -46,3 +48,5 @@ permalink: /kb/019/Q19972/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/267/Q267993/
 
 ## Q267993: Access Violation in Snatrc.dll When You Enable CPI-C API Traces
 
+{% raw %}
+
 	Article: Q267993
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -142,3 +144,5 @@ permalink: /kb/267/Q267993/
 	
 	=============================================================================
 	
+
+{% endraw %}

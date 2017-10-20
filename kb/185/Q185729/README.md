@@ -6,6 +6,8 @@ permalink: /kb/185/Q185729/
 
 ## Q185729: Computer Becomes Unresponsive During CGI Stress Test
 
+{% raw %}
+
 	Article: Q185729
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/185/Q185729/
 	
 	=============================================================================
 	
+
+{% endraw %}

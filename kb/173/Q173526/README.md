@@ -6,6 +6,8 @@ permalink: /kb/173/Q173526/
 
 ## Q173526: &quot;Serious Disk Error&quot; When Saving Word 6.0 Document on Windows NT
 
+{% raw %}
+
 	Article: Q173526
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/173/Q173526/
 	
 	=============================================================================
 	
+
+{% endraw %}

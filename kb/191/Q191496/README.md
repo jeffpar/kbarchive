@@ -6,6 +6,8 @@ permalink: /kb/191/Q191496/
 
 ## Q191496: BUG: VC5: Project Conversion from Version 4.x May Crash VS97
 
+{% raw %}
+
 	Article: Q191496
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0,5.0sp1,5.0sp2,5.0sp3
@@ -72,3 +74,5 @@ permalink: /kb/191/Q191496/
 	
 	=============================================================================
 	
+
+{% endraw %}

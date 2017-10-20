@@ -6,6 +6,8 @@ permalink: /kb/090/Q90330/
 
 ## Q90330: WFWG May Momentarily Stop the Computer with Workgroup Mail
 
+{% raw %}
+
 	Article: Q90330
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/090/Q90330/
 	
 	=============================================================================
 	
+
+{% endraw %}

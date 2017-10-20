@@ -6,6 +6,8 @@ permalink: /kb/181/Q181444/
 
 ## Q181444: HOWTO: Pass an Automation Object from VB to a Visual C/C++ DLL
 
+{% raw %}
+
 	Article: Q181444
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,5.0,6.0
@@ -152,3 +154,5 @@ permalink: /kb/181/Q181444/
 	
 	=============================================================================
 	
+
+{% endraw %}

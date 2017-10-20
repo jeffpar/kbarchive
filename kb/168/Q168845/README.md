@@ -6,6 +6,8 @@ permalink: /kb/168/Q168845/
 
 ## Q168845: Windows NT SMS Clients Produce NT Event 3031
 
+{% raw %}
+
 	Article: Q168845
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.2,3.51,4.0
@@ -70,3 +72,5 @@ permalink: /kb/168/Q168845/
 	
 	=============================================================================
 	
+
+{% endraw %}

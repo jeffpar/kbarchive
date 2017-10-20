@@ -6,6 +6,8 @@ permalink: /kb/143/Q143312/
 
 ## Q143312: Form with a Menu Is Not Sizable During Run Time
 
+{% raw %}
+
 	Article: Q143312
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -69,3 +71,5 @@ permalink: /kb/143/Q143312/
 	
 	=============================================================================
 	
+
+{% endraw %}

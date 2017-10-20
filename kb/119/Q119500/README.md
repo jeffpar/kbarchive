@@ -6,6 +6,8 @@ permalink: /kb/119/Q119500/
 
 ## Q119500: FIX: Link /OUT Does Not Rename Target
 
+{% raw %}
+
 	Article: Q119500
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/119/Q119500/
 	
 	=============================================================================
 	
+
+{% endraw %}

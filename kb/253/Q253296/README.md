@@ -6,6 +6,8 @@ permalink: /kb/253/Q253296/
 
 ## Q253296: How to Disable the &quot;Test&quot; Video Option Upon Reboot
 
+{% raw %}
+
 	Article: Q253296
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0; :4.0
@@ -76,3 +78,5 @@ permalink: /kb/253/Q253296/
 	
 	=============================================================================
 	
+
+{% endraw %}

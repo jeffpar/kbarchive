@@ -6,6 +6,8 @@ permalink: /kb/141/Q141445/
 
 ## Q141445: DLGDB32 CDialog Sharing a CRecordset Object
 
+{% raw %}
+
 	Article: Q141445
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -64,3 +66,5 @@ permalink: /kb/141/Q141445/
 	
 	=============================================================================
 	
+
+{% endraw %}

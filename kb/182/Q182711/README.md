@@ -6,6 +6,8 @@ permalink: /kb/182/Q182711/
 
 ## Q182711: IE 3.0x Fails to Start Batch File Served by IIS
 
+{% raw %}
+
 	Article: Q182711
 	Product(s): Internet Information Server
 	Version(s): WINNT:1.0,2.0,3.0
@@ -126,3 +128,5 @@ permalink: /kb/182/Q182711/
 	
 	=============================================================================
 	
+
+{% endraw %}

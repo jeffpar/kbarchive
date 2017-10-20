@@ -6,6 +6,8 @@ permalink: /kb/066/Q66357/
 
 ## Q66357: Using MS-DOS Applications on HP Vectra in Standard Mode
 
+{% raw %}
+
 	Article: Q66357
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -42,3 +44,5 @@ permalink: /kb/066/Q66357/
 	
 	=============================================================================
 	
+
+{% endraw %}

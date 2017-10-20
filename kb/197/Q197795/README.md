@@ -6,6 +6,8 @@ permalink: /kb/197/Q197795/
 
 ## Q197795: WD97: Go To &#92;Page Bookmark Selects Whole Document
 
+{% raw %}
+
 	Article: Q197795
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/197/Q197795/
 	
 	=============================================================================
 	
+
+{% endraw %}

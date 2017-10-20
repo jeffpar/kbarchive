@@ -6,6 +6,8 @@ permalink: /kb/052/Q52037/
 
 ## Q52037: File Not Found: line#.c While Viewing Errors
 
+{% raw %}
+
 	Article: Q52037
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -50,3 +52,5 @@ permalink: /kb/052/Q52037/
 	
 	3. Press SHIFT+F3 to view the next error. The pop-up error message
 	   should now be on your screen.
+
+{% endraw %}

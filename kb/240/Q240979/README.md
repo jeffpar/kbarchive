@@ -6,6 +6,8 @@ permalink: /kb/240/Q240979/
 
 ## Q240979: Unable to Create Folder on NTFS Partition
 
+{% raw %}
+
 	Article: Q240979
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -90,3 +92,5 @@ permalink: /kb/240/Q240979/
 	
 	=============================================================================
 	
+
+{% endraw %}

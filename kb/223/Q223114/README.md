@@ -6,6 +6,8 @@ permalink: /kb/223/Q223114/
 
 ## Q223114: FIX: Scale and Line Methods Work Differently on Printer Object
 
+{% raw %}
+
 	Article: Q223114
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -124,3 +126,5 @@ permalink: /kb/223/Q223114/
 	
 	=============================================================================
 	
+
+{% endraw %}

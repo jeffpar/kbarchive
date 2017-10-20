@@ -6,6 +6,8 @@ permalink: /kb/151/Q151987/
 
 ## Q151987: Event 3096 Promoting BDC to PDC with Different Service Packs
 
+{% raw %}
+
 	Article: Q151987
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -56,3 +58,5 @@ permalink: /kb/151/Q151987/
 	
 	=============================================================================
 	
+
+{% endraw %}

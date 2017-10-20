@@ -6,6 +6,8 @@ permalink: /kb/156/Q156674/
 
 ## Q156674: Magic School Bus: Black Screen Before Microsoft Logo with SB 16
 
+{% raw %}
+
 	Article: Q156674
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/156/Q156674/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141913/
 
 ## Q141913: PRB: Error 1915 - Collating Sequence &quot;&lt;Name&gt;&quot; is not found
 
+{% raw %}
+
 	Article: Q141913
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6,3.0b; WINDOWS:2.6,3.0,3.0b
@@ -145,3 +147,5 @@ permalink: /kb/141/Q141913/
 	
 	=============================================================================
 	
+
+{% endraw %}

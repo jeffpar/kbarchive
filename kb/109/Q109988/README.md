@@ -6,6 +6,8 @@ permalink: /kb/109/Q109988/
 
 ## Q109988: PROFS: Err Msg: Data Exception - LISTFILE: re-ipl
 
+{% raw %}
+
 	Article: Q109988
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4
@@ -58,3 +60,5 @@ permalink: /kb/109/Q109988/
 	
 	=============================================================================
 	
+
+{% endraw %}

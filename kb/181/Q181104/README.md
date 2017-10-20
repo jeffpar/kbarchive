@@ -6,6 +6,8 @@ permalink: /kb/181/Q181104/
 
 ## Q181104: WD97: Extend Mode (EXT) Is Unexpectedly Deactivated
 
+{% raw %}
+
 	Article: Q181104
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/181/Q181104/
 	
 	=============================================================================
 	
+
+{% endraw %}

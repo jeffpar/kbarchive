@@ -6,6 +6,8 @@ permalink: /kb/259/Q259906/
 
 ## Q259906: XADM: Event ID 5389 When KM Server Is Moved to a New Server
 
+{% raw %}
+
 	Article: Q259906
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -59,3 +61,5 @@ permalink: /kb/259/Q259906/
 	
 	=============================================================================
 	
+
+{% endraw %}

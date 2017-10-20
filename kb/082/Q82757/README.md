@@ -6,6 +6,8 @@ permalink: /kb/082/Q82757/
 
 ## Q82757: Upgrade to 3.1 May Cause Printer Information to Reset
 
+{% raw %}
+
 	Article: Q82757
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/082/Q82757/
 	
 	=============================================================================
 	
+
+{% endraw %}

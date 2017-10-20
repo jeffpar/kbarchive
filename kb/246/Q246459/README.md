@@ -6,6 +6,8 @@ permalink: /kb/246/Q246459/
 
 ## Q246459: Err Msg: Unable to Enumerate Web Sites because the Following...
 
+{% raw %}
+
 	Article: Q246459
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -98,3 +100,5 @@ permalink: /kb/246/Q246459/
 	
 	=============================================================================
 	
+
+{% endraw %}

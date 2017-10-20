@@ -6,6 +6,8 @@ permalink: /kb/171/Q171548/
 
 ## Q171548: FIX: Binary-Compatible Server Causes VB to Hang in IDE
 
+{% raw %}
+
 	Article: Q171548
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0; WINNT:97,97sp2
@@ -85,3 +87,5 @@ permalink: /kb/171/Q171548/
 	
 	=============================================================================
 	
+
+{% endraw %}

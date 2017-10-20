@@ -6,6 +6,8 @@ permalink: /kb/156/Q156166/
 
 ## Q156166: SMTP: Troubleshooting Error SMTPGET: 20 - Insufficient Memory
 
+{% raw %}
+
 	Article: Q156166
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -77,3 +79,5 @@ permalink: /kb/156/Q156166/
 	
 	=============================================================================
 	
+
+{% endraw %}

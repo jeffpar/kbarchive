@@ -6,6 +6,8 @@ permalink: /kb/171/Q171988/
 
 ## Q171988: HOWTO: Pass Parameters to a Word 97 Macro
 
+{% raw %}
+
 	Article: Q171988
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -110,3 +112,5 @@ permalink: /kb/171/Q171988/
 	
 	=============================================================================
 	
+
+{% endraw %}

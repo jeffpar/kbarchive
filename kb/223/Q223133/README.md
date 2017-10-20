@@ -6,6 +6,8 @@ permalink: /kb/223/Q223133/
 
 ## Q223133: FIX: Private Enum Statements Cause an Application Error
 
+{% raw %}
+
 	Article: Q223133
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -103,3 +105,5 @@ permalink: /kb/223/Q223133/
 	
 	=============================================================================
 	
+
+{% endraw %}

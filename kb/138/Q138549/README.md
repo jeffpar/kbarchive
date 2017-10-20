@@ -6,6 +6,8 @@ permalink: /kb/138/Q138549/
 
 ## Q138549: FTP Server Fails to Open New Daily Log
 
+{% raw %}
+
 	Article: Q138549
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -87,3 +89,5 @@ permalink: /kb/138/Q138549/
 	
 	=============================================================================
 	
+
+{% endraw %}

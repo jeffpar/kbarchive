@@ -6,6 +6,8 @@ permalink: /kb/268/Q268602/
 
 ## Q268602: Event ID 7024 Appears in Event Log on Terminal Server
 
+{% raw %}
+
 	Article: Q268602
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -84,3 +86,5 @@ permalink: /kb/268/Q268602/
 	
 	=============================================================================
 	
+
+{% endraw %}

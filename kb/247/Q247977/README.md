@@ -6,6 +6,8 @@ permalink: /kb/247/Q247977/
 
 ## Q247977: INFO: Updated FOXISAPI Available on the Web
 
+{% raw %}
+
 	Article: Q247977
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -55,3 +57,5 @@ permalink: /kb/247/Q247977/
 	
 	=============================================================================
 	
+
+{% endraw %}

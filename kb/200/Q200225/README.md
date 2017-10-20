@@ -6,6 +6,8 @@ permalink: /kb/200/Q200225/
 
 ## Q200225: XFOR: Requirements for the Exchange Server Connection Agent
 
+{% raw %}
+
 	Article: Q200225
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; winnt:4.0,5.0,5.5
@@ -97,3 +99,5 @@ permalink: /kb/200/Q200225/
 	
 	=============================================================================
 	
+
+{% endraw %}

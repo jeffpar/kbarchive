@@ -6,6 +6,8 @@ permalink: /kb/044/Q44926/
 
 ## Q44926: Linker Error Message L4004: Possible Fixup Overflow...
 
+{% raw %}
+
 	Article: Q44926
 	Product(s): See article
 	Version(s): 2.00
@@ -26,3 +28,5 @@ permalink: /kb/044/Q44926/
 	segment is greater than 64K, even when the distance between the
 	segment where the call/jump was actually made and the target segment
 	is less than 64K.
+
+{% endraw %}

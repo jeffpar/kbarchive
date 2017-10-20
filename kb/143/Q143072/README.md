@@ -6,6 +6,8 @@ permalink: /kb/143/Q143072/
 
 ## Q143072: HOWTO: Determine Default Libraries for an .OBJ Object File
 
+{% raw %}
+
 	Article: Q143072
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/143/Q143072/
 	
 	=============================================================================
 	
+
+{% endraw %}

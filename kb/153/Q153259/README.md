@@ -6,6 +6,8 @@ permalink: /kb/153/Q153259/
 
 ## Q153259: International Client Displays English Error Messages
 
+{% raw %}
+
 	Article: Q153259
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -49,3 +51,5 @@ permalink: /kb/153/Q153259/
 	
 	=============================================================================
 	
+
+{% endraw %}

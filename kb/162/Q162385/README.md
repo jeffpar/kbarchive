@@ -6,6 +6,8 @@ permalink: /kb/162/Q162385/
 
 ## Q162385: PPT: How to Use the EntryEffect Property
 
+{% raw %}
+
 	Article: Q162385
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -317,3 +319,5 @@ permalink: /kb/162/Q162385/
 	
 	=============================================================================
 	
+
+{% endraw %}

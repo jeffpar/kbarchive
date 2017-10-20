@@ -6,6 +6,8 @@ permalink: /kb/101/Q101755/
 
 ## Q101755: PC Win: Recovering PAB from Exported Folder
 
+{% raw %}
+
 	Article: Q101755
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b,3.2
@@ -72,3 +74,5 @@ permalink: /kb/101/Q101755/
 	
 	=============================================================================
 	
+
+{% endraw %}

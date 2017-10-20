@@ -6,6 +6,8 @@ permalink: /kb/187/Q187553/
 
 ## Q187553: BUG: Error 10 Attempting to ReDim or Erase an Array
 
+{% raw %}
+
 	Article: Q187553
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -118,3 +120,5 @@ permalink: /kb/187/Q187553/
 	
 	=============================================================================
 	
+
+{% endraw %}

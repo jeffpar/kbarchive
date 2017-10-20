@@ -6,6 +6,8 @@ permalink: /kb/309/Q309095/
 
 ## Q309095: MCSE Readiness Review Exam 70-229: Microsoft SQL Server 2000 Dat
 
+{% raw %}
+
 	Article: Q309095
 	Product(s): Microsoft Press
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/309/Q309095/
 	
 	=============================================================================
 	
+
+{% endraw %}

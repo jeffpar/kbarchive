@@ -6,6 +6,8 @@ permalink: /kb/274/Q274475/
 
 ## Q274475: Messenger No Longer Works After Upgrading to Windows 2000
 
+{% raw %}
+
 	Article: Q274475
 	Product(s): The Microsoft Network
 	Version(s): 2.2,2000,6.0
@@ -77,3 +79,5 @@ permalink: /kb/274/Q274475/
 	
 	=============================================================================
 	
+
+{% endraw %}

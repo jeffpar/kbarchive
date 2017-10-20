@@ -6,6 +6,8 @@ permalink: /kb/161/Q161623/
 
 ## Q161623: XCLN: Electronic Forms Support
 
+{% raw %}
+
 	Article: Q161623
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -76,3 +78,5 @@ permalink: /kb/161/Q161623/
 	
 	=============================================================================
 	
+
+{% endraw %}

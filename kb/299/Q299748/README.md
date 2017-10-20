@@ -6,6 +6,8 @@ permalink: /kb/299/Q299748/
 
 ## Q299748: Train Simulator: Contradictory Messages During Installation
 
+{% raw %}
+
 	Article: Q299748
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -78,3 +80,5 @@ permalink: /kb/299/Q299748/
 	
 	=============================================================================
 	
+
+{% endraw %}

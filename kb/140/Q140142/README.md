@@ -6,6 +6,8 @@ permalink: /kb/140/Q140142/
 
 ## Q140142: SMS: Next Data Record Button Not Grayed Out at End of List
 
+{% raw %}
+
 	Article: Q140142
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -42,3 +44,5 @@ permalink: /kb/140/Q140142/
 	
 	=============================================================================
 	
+
+{% endraw %}

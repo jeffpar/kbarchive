@@ -6,6 +6,8 @@ permalink: /kb/235/Q235489/
 
 ## Q235489: How to Use RIP over RRAS Demand-Dial and VPN Connections
 
+{% raw %}
+
 	Article: Q235489
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -167,3 +169,5 @@ permalink: /kb/235/Q235489/
 	
 	=============================================================================
 	
+
+{% endraw %}

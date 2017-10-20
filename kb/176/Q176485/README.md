@@ -6,6 +6,8 @@ permalink: /kb/176/Q176485/
 
 ## Q176485: Encarta: Cannot Run Setup on Shared Installation of Windows
 
+{% raw %}
+
 	Article: Q176485
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -65,3 +67,5 @@ permalink: /kb/176/Q176485/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236127/
 
 ## Q236127: Event ID 3: IISLOG Unable to Create File
 
+{% raw %}
+
 	Article: Q236127
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/236/Q236127/
 	
 	=============================================================================
 	
+
+{% endraw %}

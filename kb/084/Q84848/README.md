@@ -6,6 +6,8 @@ permalink: /kb/084/Q84848/
 
 ## Q84848: Typecase's Font Compression Feature May Cause GP Faults
 
+{% raw %}
+
 	Article: Q84848
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/084/Q84848/
 	
 	=============================================================================
 	
+
+{% endraw %}

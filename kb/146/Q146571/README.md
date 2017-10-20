@@ -6,6 +6,8 @@ permalink: /kb/146/Q146571/
 
 ## Q146571: XCLN: Microsoft Word May Not Post to Public Folder
 
+{% raw %}
+
 	Article: Q146571
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -56,3 +58,5 @@ permalink: /kb/146/Q146571/
 	
 	=============================================================================
 	
+
+{% endraw %}

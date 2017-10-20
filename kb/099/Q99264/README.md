@@ -6,6 +6,8 @@ permalink: /kb/099/Q99264/
 
 ## Q99264: Bookshelf: Extraneous Scrolling Region on 1024 x 768 Display
 
+{% raw %}
+
 	Article: Q99264
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 edition,2.0
@@ -60,3 +62,5 @@ permalink: /kb/099/Q99264/
 	
 	=============================================================================
 	
+
+{% endraw %}

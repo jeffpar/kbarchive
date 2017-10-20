@@ -6,6 +6,8 @@ permalink: /kb/218/Q218170/
 
 ## Q218170: APPC Application Receives AP_ALLOCATION_FAILURE_RETRY In Error.
 
+{% raw %}
+
 	Article: Q218170
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -109,3 +111,5 @@ permalink: /kb/218/Q218170/
 	
 	=============================================================================
 	
+
+{% endraw %}

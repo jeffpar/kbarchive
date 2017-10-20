@@ -6,6 +6,8 @@ permalink: /kb/316/Q316258/
 
 ## Q316258: Problems Connecting to SMS Provider Without Impersonation
 
+{% raw %}
+
 	Article: Q316258
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -232,3 +234,5 @@ permalink: /kb/316/Q316258/
 	
 	=============================================================================
 	
+
+{% endraw %}

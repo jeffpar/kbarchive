@@ -6,6 +6,8 @@ permalink: /kb/061/Q61185/
 
 ## Q61185: Instruction: The Loop Rear View Is Confusing
 
+{% raw %}
+
 	Article: Q61185
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/061/Q61185/
 	
 	=============================================================================
 	
+
+{% endraw %}

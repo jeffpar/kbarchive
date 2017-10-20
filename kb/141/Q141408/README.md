@@ -6,6 +6,8 @@ permalink: /kb/141/Q141408/
 
 ## Q141408: Mac Bookshelf 94: Pop-up Menu Does Not Find Atlas Articles
 
+{% raw %}
+
 	Article: Q141408
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -65,3 +67,5 @@ permalink: /kb/141/Q141408/
 	
 	=============================================================================
 	
+
+{% endraw %}

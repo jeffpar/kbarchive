@@ -6,6 +6,8 @@ permalink: /kb/199/Q199497/
 
 ## Q199497: XFOR: Microsoft Mail Connector Connecting to Untrusted Domain
 
+{% raw %}
+
 	Article: Q199497
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2a,3.5; winnt:4.0,5.0,5.5
@@ -75,3 +77,5 @@ permalink: /kb/199/Q199497/
 	
 	=============================================================================
 	
+
+{% endraw %}

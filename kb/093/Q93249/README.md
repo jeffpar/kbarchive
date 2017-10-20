@@ -6,6 +6,8 @@ permalink: /kb/093/Q93249/
 
 ## Q93249: SAMPLE: WinCPIC.exe CPI-C API for 16-bit and 32-Bit Windows
 
+{% raw %}
+
 	Article: Q93249
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -92,3 +94,5 @@ permalink: /kb/093/Q93249/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/261/Q261074/
 
 ## Q261074: Motocross Madness 2: Stops Responding When You Start a Race
 
+{% raw %}
+
 	Article: Q261074
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -89,3 +91,5 @@ permalink: /kb/261/Q261074/
 	
 	=============================================================================
 	
+
+{% endraw %}

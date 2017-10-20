@@ -6,6 +6,8 @@ permalink: /kb/161/Q161056/
 
 ## Q161056: HOWTO: Iterate Controls on a Form from a Property Page
 
+{% raw %}
+
 	Article: Q161056
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/161/Q161056/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104543/
 
 ## Q104543: MemMaker Truncates Lines Longer than 101 Characters
 
+{% raw %}
+
 	Article: Q104543
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -52,3 +54,5 @@ permalink: /kb/104/Q104543/
 	
 	=============================================================================
 	
+
+{% endraw %}

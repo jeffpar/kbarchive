@@ -6,6 +6,8 @@ permalink: /kb/195/Q195040/
 
 ## Q195040: XFOR: Internet News Service Sends Long &quot;newnews&quot; Command
 
+{% raw %}
+
 	Article: Q195040
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -95,3 +97,5 @@ permalink: /kb/195/Q195040/
 	
 	=============================================================================
 	
+
+{% endraw %}

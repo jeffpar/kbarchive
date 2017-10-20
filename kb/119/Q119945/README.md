@@ -6,6 +6,8 @@ permalink: /kb/119/Q119945/
 
 ## Q119945: Characters Overlapped Printing to Epson EPL-6000
 
+{% raw %}
+
 	Article: Q119945
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10
@@ -61,3 +63,5 @@ permalink: /kb/119/Q119945/
 	
 	=============================================================================
 	
+
+{% endraw %}

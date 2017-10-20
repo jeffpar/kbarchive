@@ -6,6 +6,8 @@ permalink: /kb/298/Q298753/
 
 ## Q298753: Microsoft Windows NT Server 4.0 Enterprise Technologies Training
 
+{% raw %}
+
 	Article: Q298753
 	Product(s): Microsoft Press
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/298/Q298753/
 	
 	=============================================================================
 	
+
+{% endraw %}

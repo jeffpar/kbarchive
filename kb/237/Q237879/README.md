@@ -6,6 +6,8 @@ permalink: /kb/237/Q237879/
 
 ## Q237879: Custom Forms Not Available for Selection with HP LaserJet 5Si MX
 
+{% raw %}
+
 	Article: Q237879
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/237/Q237879/
 	
 	=============================================================================
 	
+
+{% endraw %}

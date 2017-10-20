@@ -6,6 +6,8 @@ permalink: /kb/190/Q190930/
 
 ## Q190930: UDP Broadcast Forwarding by Cisco's IP Helper
 
+{% raw %}
+
 	Article: Q190930
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,3.1,3.5,3.51,4.0
@@ -100,3 +102,5 @@ permalink: /kb/190/Q190930/
 	
 	=============================================================================
 	
+
+{% endraw %}

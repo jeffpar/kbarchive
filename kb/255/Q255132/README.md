@@ -6,6 +6,8 @@ permalink: /kb/255/Q255132/
 
 ## Q255132: ACC2000: &quot;Stop 0x1e&quot; Creating Report with Access Report Wizard
 
+{% raw %}
+
 	Article: Q255132
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/255/Q255132/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/200/Q200292/
 
 ## Q200292: FIX: Interfaces Not Released by _com_ptr_t::CreateInstance()
 
+{% raw %}
+
 	Article: Q200292
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -95,3 +97,5 @@ permalink: /kb/200/Q200292/
 	
 	=============================================================================
 	
+
+{% endraw %}

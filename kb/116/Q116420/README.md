@@ -6,6 +6,8 @@ permalink: /kb/116/Q116420/
 
 ## Q116420: BUG: Running a Program in NMAKE Fails During Preprocessing
 
+{% raw %}
+
 	Article: Q116420
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.2,1.3,1.4
@@ -102,3 +104,5 @@ permalink: /kb/116/Q116420/
 	
 	=============================================================================
 	
+
+{% endraw %}

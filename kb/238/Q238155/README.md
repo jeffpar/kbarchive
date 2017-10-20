@@ -6,6 +6,8 @@ permalink: /kb/238/Q238155/
 
 ## Q238155: HOWTO: Create a New Database in Visual SourceSafe
 
+{% raw %}
+
 	Article: Q238155
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/238/Q238155/
 	
 	=============================================================================
 	
+
+{% endraw %}

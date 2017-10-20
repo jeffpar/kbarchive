@@ -6,6 +6,8 @@ permalink: /kb/087/Q87211/
 
 ## Q87211: PROFS: The Difference Between Direct and Indirect Gateways
 
+{% raw %}
+
 	Article: Q87211
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -49,3 +51,5 @@ permalink: /kb/087/Q87211/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197771/
 
 ## Q197771: Bookshelf 99: Right-Click Define Feature Starts Bookshelf Basics
 
+{% raw %}
+
 	Article: Q197771
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/197/Q197771/
 	
 	=============================================================================
 	
+
+{% endraw %}

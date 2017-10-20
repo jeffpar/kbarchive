@@ -6,6 +6,8 @@ permalink: /kb/260/Q260349/
 
 ## Q260349: INFO: What Does &quot;Terminate 0 1&quot; Mean in the Routing Process?
 
+{% raw %}
+
 	Article: Q260349
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -87,3 +89,5 @@ permalink: /kb/260/Q260349/
 	
 	=============================================================================
 	
+
+{% endraw %}

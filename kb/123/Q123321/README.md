@@ -6,6 +6,8 @@ permalink: /kb/123/Q123321/
 
 ## Q123321: PC Win: Old MMF File Not Deleted from Server
 
+{% raw %}
+
 	Article: Q123321
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/123/Q123321/
 	
 	=============================================================================
 	
+
+{% endraw %}

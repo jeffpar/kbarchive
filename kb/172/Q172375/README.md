@@ -6,6 +6,8 @@ permalink: /kb/172/Q172375/
 
 ## Q172375: HOWTO: Undo Updates for a Single Row with CancelBatch
 
+{% raw %}
+
 	Article: Q172375
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -123,3 +125,5 @@ permalink: /kb/172/Q172375/
 	
 	=============================================================================
 	
+
+{% endraw %}

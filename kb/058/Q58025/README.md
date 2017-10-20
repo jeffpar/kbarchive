@@ -6,6 +6,8 @@ permalink: /kb/058/Q58025/
 
 ## Q58025: DRAW Statement's Scale (S) Command Has Default Scale Factor 4
 
+{% raw %}
+
 	Article: Q58025
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -84,3 +86,5 @@ permalink: /kb/058/Q58025/
 	DRAW "S6R10"   '(6/4) * 10 = 15 pixels long.
 	DRAW "S7R10"   '(7/4) * 10 = 18 pixels long (rounded up).
 	DRAW "S8R10"   '(8/4) * 10 = 20 pixels long.
+
+{% endraw %}

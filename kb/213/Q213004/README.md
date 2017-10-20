@@ -6,6 +6,8 @@ permalink: /kb/213/Q213004/
 
 ## Q213004: SMS: Windows Networking Logon Client Installation and Discovery
 
+{% raw %}
+
 	Article: Q213004
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -138,3 +140,5 @@ permalink: /kb/213/Q213004/
 	
 	=============================================================================
 	
+
+{% endraw %}

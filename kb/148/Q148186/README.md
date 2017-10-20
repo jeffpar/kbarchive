@@ -6,6 +6,8 @@ permalink: /kb/148/Q148186/
 
 ## Q148186: DOCERR: RETURN Statement Not Supported in Main Program Unit
 
+{% raw %}
+
 	Article: Q148186
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/148/Q148186/
 	
 	=============================================================================
 	
+
+{% endraw %}

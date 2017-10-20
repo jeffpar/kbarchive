@@ -6,6 +6,8 @@ permalink: /kb/237/Q237867/
 
 ## Q237867: INF: SyncPoint Support Synchronization Failure CICS Cold Start
 
+{% raw %}
+
 	Article: Q237867
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0 SP1,4.0 SP1
@@ -105,3 +107,5 @@ permalink: /kb/237/Q237867/
 	
 	=============================================================================
 	
+
+{% endraw %}

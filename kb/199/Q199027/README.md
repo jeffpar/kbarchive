@@ -6,6 +6,8 @@ permalink: /kb/199/Q199027/
 
 ## Q199027: EVG99: Default Favorite Name Contains Unexpected Characters
 
+{% raw %}
+
 	Article: Q199027
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/199/Q199027/
 	
 	=============================================================================
 	
+
+{% endraw %}

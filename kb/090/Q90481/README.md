@@ -6,6 +6,8 @@ permalink: /kb/090/Q90481/
 
 ## Q90481: File Manager Err Msg: An Error Occurred Reading Drive x:
 
+{% raw %}
+
 	Article: Q90481
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -63,3 +65,5 @@ permalink: /kb/090/Q90481/
 	
 	=============================================================================
 	
+
+{% endraw %}

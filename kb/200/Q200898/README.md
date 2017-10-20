@@ -6,6 +6,8 @@ permalink: /kb/200/Q200898/
 
 ## Q200898: SMS: How to Use Systems Management Server Through a Firewall
 
+{% raw %}
+
 	Article: Q200898
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -123,3 +125,5 @@ permalink: /kb/200/Q200898/
 	
 	=============================================================================
 	
+
+{% endraw %}

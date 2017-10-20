@@ -6,6 +6,8 @@ permalink: /kb/107/Q107808/
 
 ## Q107808: Installing Novell NetWare 3.12 and 4.0x Support for Windows
 
+{% raw %}
+
 	Article: Q107808
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -169,3 +171,5 @@ permalink: /kb/107/Q107808/
 	
 	=============================================================================
 	
+
+{% endraw %}

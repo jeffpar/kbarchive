@@ -6,6 +6,8 @@ permalink: /kb/172/Q172813/
 
 ## Q172813: XADM:Troubleshooting High CPU Utilization By Store.exe
 
+{% raw %}
+
 	Article: Q172813
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -133,3 +135,5 @@ permalink: /kb/172/Q172813/
 	
 	=============================================================================
 	
+
+{% endraw %}

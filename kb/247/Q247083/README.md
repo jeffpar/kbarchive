@@ -6,6 +6,8 @@ permalink: /kb/247/Q247083/
 
 ## Q247083: XCLN: Location of Microsoft Importers for Lotus cc:Mail &amp; Notes
 
+{% raw %}
+
 	Article: Q247083
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP3
@@ -53,3 +55,5 @@ permalink: /kb/247/Q247083/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/079/Q79019/
 
 ## Q79019: Double-Clicking on Desktop Starts Multimedia Screen Saver
 
+{% raw %}
+
 	Article: Q79019
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/079/Q79019/
 	
 	=============================================================================
 	
+
+{% endraw %}

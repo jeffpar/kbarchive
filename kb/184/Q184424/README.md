@@ -6,6 +6,8 @@ permalink: /kb/184/Q184424/
 
 ## Q184424: IIS ResKit: Start Menu Shortcuts Return Error Message
 
+{% raw %}
+
 	Article: Q184424
 	Product(s): Microsoft Press
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/184/Q184424/
 	
 	=============================================================================
 	
+
+{% endraw %}

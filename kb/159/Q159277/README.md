@@ -6,6 +6,8 @@ permalink: /kb/159/Q159277/
 
 ## Q159277: TN3270:Trace Files Show Wrong Time Delay
 
+{% raw %}
+
 	Article: Q159277
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -71,3 +73,5 @@ permalink: /kb/159/Q159277/
 	
 	=============================================================================
 	
+
+{% endraw %}

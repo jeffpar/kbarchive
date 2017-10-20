@@ -6,6 +6,8 @@ permalink: /kb/063/Q63937/
 
 ## Q63937: VDS.exe Demonstrates DMA in Windows 3.0
 
+{% raw %}
+
 	Article: Q63937
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0
@@ -180,3 +182,5 @@ permalink: /kb/063/Q63937/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198673/
 
 ## Q198673: XADM: Single Instance Storage Ratio is Low
 
+{% raw %}
+
 	Article: Q198673
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -88,3 +90,5 @@ permalink: /kb/198/Q198673/
 	
 	=============================================================================
 	
+
+{% endraw %}

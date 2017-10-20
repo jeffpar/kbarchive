@@ -6,6 +6,8 @@ permalink: /kb/134/Q134748/
 
 ## Q134748: Using NDIS 2 PCMCIA Network Card Drivers in Windows 95
 
+{% raw %}
+
 	Article: Q134748
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/134/Q134748/
 	
 	=============================================================================
 	
+
+{% endraw %}

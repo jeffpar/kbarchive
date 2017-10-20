@@ -6,6 +6,8 @@ permalink: /kb/123/Q123678/
 
 ## Q123678: Changing Registry Does Not Prevent User from Changing Delay
 
+{% raw %}
+
 	Article: Q123678
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -47,3 +49,5 @@ permalink: /kb/123/Q123678/
 	
 	=============================================================================
 	
+
+{% endraw %}

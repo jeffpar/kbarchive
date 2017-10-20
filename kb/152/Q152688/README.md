@@ -6,6 +6,8 @@ permalink: /kb/152/Q152688/
 
 ## Q152688: HOWTO: Change the Name of a Microsoft Access Field w/MFC DAO
 
+{% raw %}
+
 	Article: Q152688
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2 4.2b 5.0 6.0
@@ -101,3 +103,5 @@ permalink: /kb/152/Q152688/
 	
 	=============================================================================
 	
+
+{% endraw %}

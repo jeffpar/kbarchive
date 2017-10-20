@@ -6,6 +6,8 @@ permalink: /kb/279/Q279536/
 
 ## Q279536: MSN Companion Compaq IA-2 err msg &quot;no boot device present, syste
 
+{% raw %}
+
 	Article: Q279536
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -63,3 +65,5 @@ permalink: /kb/279/Q279536/
 	
 	=============================================================================
 	
+
+{% endraw %}

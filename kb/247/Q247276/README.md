@@ -6,6 +6,8 @@ permalink: /kb/247/Q247276/
 
 ## Q247276: XFOR: Error Message: Extension MS Could Not Be Loaded
 
+{% raw %}
+
 	Article: Q247276
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -123,3 +125,5 @@ permalink: /kb/247/Q247276/
 	
 	=============================================================================
 	
+
+{% endraw %}

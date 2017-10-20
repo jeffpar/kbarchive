@@ -6,6 +6,8 @@ permalink: /kb/259/Q259579/
 
 ## Q259579: Cannot Search Words with Nonbreaking Hyphens
 
+{% raw %}
+
 	Article: Q259579
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0
@@ -93,3 +95,5 @@ permalink: /kb/259/Q259579/
 	
 	=============================================================================
 	
+
+{% endraw %}

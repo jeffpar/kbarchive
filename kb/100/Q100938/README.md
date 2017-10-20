@@ -6,6 +6,8 @@ permalink: /kb/100/Q100938/
 
 ## Q100938: Using Microsoft Anti-Virus to Scan Multiple Floppy Disks
 
+{% raw %}
+
 	Article: Q100938
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -46,3 +48,5 @@ permalink: /kb/100/Q100938/
 	
 	=============================================================================
 	
+
+{% endraw %}

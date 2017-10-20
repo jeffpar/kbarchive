@@ -6,6 +6,8 @@ permalink: /kb/174/Q174647/
 
 ## Q174647: The Microsoft Network 2.51 Readme.txt File
 
+{% raw %}
+
 	Article: Q174647
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.51
@@ -566,3 +568,5 @@ permalink: /kb/174/Q174647/
 	
 	=============================================================================
 	
+
+{% endraw %}

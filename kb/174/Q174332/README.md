@@ -6,6 +6,8 @@ permalink: /kb/174/Q174332/
 
 ## Q174332: How to Add Additional Cluster Administrators
 
+{% raw %}
+
 	Article: Q174332
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/174/Q174332/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/272/Q272863/
 
 ## Q272863: XADM: Information Store AV When Encoding Corrupted HTML Msg.
 
+{% raw %}
+
 	Article: Q272863
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -80,3 +82,5 @@ permalink: /kb/272/Q272863/
 	
 	=============================================================================
 	
+
+{% endraw %}

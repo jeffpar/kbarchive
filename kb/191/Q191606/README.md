@@ -6,6 +6,8 @@ permalink: /kb/191/Q191606/
 
 ## Q191606: Dell 3c905b Oemsetup.inf File Has Errors
 
+{% raw %}
+
 	Article: Q191606
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/191/Q191606/
 	
 	=============================================================================
 	
+
+{% endraw %}

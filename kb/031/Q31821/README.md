@@ -6,6 +6,8 @@ permalink: /kb/031/Q31821/
 
 ## Q31821: Structured Programming in Microsoft QuickBASIC - Modules
 
+{% raw %}
+
 	Article: Q31821
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -41,3 +43,5 @@ permalink: /kb/031/Q31821/
 	Subprograms, separate compilation, COMMON blocks, and program CHAINing
 	make Microsoft QuickBASIC a useful language for developing large
 	application systems.
+
+{% endraw %}

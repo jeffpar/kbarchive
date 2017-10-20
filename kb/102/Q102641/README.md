@@ -6,6 +6,8 @@ permalink: /kb/102/Q102641/
 
 ## Q102641: INFO: EM_SETSEL wParam Not Used in Single Line Edit Controls
 
+{% raw %}
+
 	Article: Q102641
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -38,3 +40,5 @@ permalink: /kb/102/Q102641/
 	
 	=============================================================================
 	
+
+{% endraw %}

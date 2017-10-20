@@ -6,6 +6,8 @@ permalink: /kb/179/Q179157/
 
 ## Q179157: Stop 0xA in Tcpip.sys When Source Routing Data Exceeds 18 Bytes
 
+{% raw %}
+
 	Article: Q179157
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/179/Q179157/
 	
 	=============================================================================
 	
+
+{% endraw %}

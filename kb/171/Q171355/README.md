@@ -6,6 +6,8 @@ permalink: /kb/171/Q171355/
 
 ## Q171355: International WinNT Unattended Installation Stops On Time Zone
 
+{% raw %}
+
 	Article: Q171355
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/171/Q171355/
 	
 	=============================================================================
 	
+
+{% endraw %}

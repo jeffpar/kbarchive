@@ -6,6 +6,8 @@ permalink: /kb/240/Q240307/
 
 ## Q240307: BUG: Unable to Change Preferred Help Collection on Windows 2000
 
+{% raw %}
+
 	Article: Q240307
 	Product(s): Microsoft Developer Network
 	Version(s): WINDOWS:6.0; winnt:
@@ -115,3 +117,5 @@ permalink: /kb/240/Q240307/
 	
 	=============================================================================
 	
+
+{% endraw %}

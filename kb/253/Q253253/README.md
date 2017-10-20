@@ -6,6 +6,8 @@ permalink: /kb/253/Q253253/
 
 ## Q253253: Proxy: WSP Clients Cannot Reach Remote Segments of the LAN
 
+{% raw %}
+
 	Article: Q253253
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,2.0,4.0
@@ -76,3 +78,5 @@ permalink: /kb/253/Q253253/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101009/
 
 ## Q101009: How to Perform a DDEPOKE from FoxPro to Word for Windows
 
+{% raw %}
+
 	Article: Q101009
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0
@@ -54,3 +56,5 @@ permalink: /kb/101/Q101009/
 	
 	=============================================================================
 	
+
+{% endraw %}

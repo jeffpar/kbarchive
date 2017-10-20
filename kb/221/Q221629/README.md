@@ -6,6 +6,8 @@ permalink: /kb/221/Q221629/
 
 ## Q221629: FIX: &quot;Unknown COM status code&quot; With ActiveX Conferencing Control
 
+{% raw %}
+
 	Article: Q221629
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -85,3 +87,5 @@ permalink: /kb/221/Q221629/
 	
 	=============================================================================
 	
+
+{% endraw %}

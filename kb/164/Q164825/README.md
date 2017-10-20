@@ -6,6 +6,8 @@ permalink: /kb/164/Q164825/
 
 ## Q164825: SMS: User Cannot Refuse Second Remote Control Session
 
+{% raw %}
+
 	Article: Q164825
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -49,3 +51,5 @@ permalink: /kb/164/Q164825/
 	
 	=============================================================================
 	
+
+{% endraw %}

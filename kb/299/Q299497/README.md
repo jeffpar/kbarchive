@@ -6,6 +6,8 @@ permalink: /kb/299/Q299497/
 
 ## Q299497: FIX: _VFP.DataToClip() Truncates DateTime Data
 
+{% raw %}
+
 	Article: Q299497
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -89,3 +91,5 @@ permalink: /kb/299/Q299497/
 	
 	=============================================================================
 	
+
+{% endraw %}

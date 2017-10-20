@@ -6,6 +6,8 @@ permalink: /kb/247/Q247769/
 
 ## Q247769: XADM: Error 1067 Occurs When Starting Directory Service After Re
 
+{% raw %}
+
 	Article: Q247769
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/247/Q247769/
 	
 	=============================================================================
 	
+
+{% endraw %}

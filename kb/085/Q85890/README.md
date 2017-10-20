@@ -6,6 +6,8 @@ permalink: /kb/085/Q85890/
 
 ## Q85890: SiteLock Incorrectly Assumes More People Accessing Program
 
+{% raw %}
+
 	Article: Q85890
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,95
@@ -65,3 +67,5 @@ permalink: /kb/085/Q85890/
 	
 	=============================================================================
 	
+
+{% endraw %}

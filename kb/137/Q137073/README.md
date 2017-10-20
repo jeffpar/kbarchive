@@ -6,6 +6,8 @@ permalink: /kb/137/Q137073/
 
 ## Q137073: PC WSPlus: Corrupt Schedule File May Prevent Access
 
+{% raw %}
+
 	Article: Q137073
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,7.0,95
@@ -143,3 +145,5 @@ permalink: /kb/137/Q137073/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256019/
 
 ## Q256019: Asheron's Call Err Msg: Cannot Initialize Data File Portal.dat..
 
+{% raw %}
+
 	Article: Q256019
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -118,3 +120,5 @@ permalink: /kb/256/Q256019/
 	
 	=============================================================================
 	
+
+{% endraw %}

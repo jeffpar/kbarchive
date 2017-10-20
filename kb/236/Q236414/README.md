@@ -6,6 +6,8 @@ permalink: /kb/236/Q236414/
 
 ## Q236414: Cannot Use Shares with LMCompatibilityLevel set to Only NTLM 2
 
+{% raw %}
+
 	Article: Q236414
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -105,3 +107,5 @@ permalink: /kb/236/Q236414/
 	
 	=============================================================================
 	
+
+{% endraw %}

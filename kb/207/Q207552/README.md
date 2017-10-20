@@ -6,6 +6,8 @@ permalink: /kb/207/Q207552/
 
 ## Q207552: Windows NT 4.0 Domain Controllers Across RAS or Slow Links
 
+{% raw %}
+
 	Article: Q207552
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -222,3 +224,5 @@ permalink: /kb/207/Q207552/
 	
 	=============================================================================
 	
+
+{% endraw %}

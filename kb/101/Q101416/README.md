@@ -6,6 +6,8 @@ permalink: /kb/101/Q101416/
 
 ## Q101416: .PIF File Format Unavailable
 
+{% raw %}
+
 	Article: Q101416
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -36,3 +38,5 @@ permalink: /kb/101/Q101416/
 	
 	=============================================================================
 	
+
+{% endraw %}

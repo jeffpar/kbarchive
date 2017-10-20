@@ -6,6 +6,8 @@ permalink: /kb/230/Q230714/
 
 ## Q230714: Y2K: Internet Explorer and Windows NT 4.0 Compliance Issues
 
+{% raw %}
+
 	Article: Q230714
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -99,3 +101,5 @@ permalink: /kb/230/Q230714/
 	
 	=============================================================================
 	
+
+{% endraw %}

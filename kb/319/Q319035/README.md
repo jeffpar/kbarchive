@@ -6,6 +6,8 @@ permalink: /kb/319/Q319035/
 
 ## Q319035: How To Import Contacts From Netscape Address Book to Outlook Exp
 
+{% raw %}
+
 	Article: Q319035
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/319/Q319035/
 	
 	=============================================================================
 	
+
+{% endraw %}

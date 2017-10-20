@@ -6,6 +6,8 @@ permalink: /kb/142/Q142164/
 
 ## Q142164: Admin UI Does Not Display Computers in Domains
 
+{% raw %}
+
 	Article: Q142164
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -45,3 +47,5 @@ permalink: /kb/142/Q142164/
 	
 	=============================================================================
 	
+
+{% endraw %}

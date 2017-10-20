@@ -6,6 +6,8 @@ permalink: /kb/162/Q162428/
 
 ## Q162428: MSB Dinosaurs: Err Msg: PCM Audio Codec is Not Installed
 
+{% raw %}
+
 	Article: Q162428
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -88,3 +90,5 @@ permalink: /kb/162/Q162428/
 	
 	=============================================================================
 	
+
+{% endraw %}

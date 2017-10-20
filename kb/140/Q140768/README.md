@@ -6,6 +6,8 @@ permalink: /kb/140/Q140768/
 
 ## Q140768: MSB: Game in Progress Is Not Saved
 
+{% raw %}
+
 	Article: Q140768
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0
@@ -139,3 +141,5 @@ permalink: /kb/140/Q140768/
 	
 	=============================================================================
 	
+
+{% endraw %}

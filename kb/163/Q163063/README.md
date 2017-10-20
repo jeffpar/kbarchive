@@ -6,6 +6,8 @@ permalink: /kb/163/Q163063/
 
 ## Q163063: ODE97: Files in Compressed Setup Must Have 3-Character Extension
 
+{% raw %}
+
 	Article: Q163063
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -114,3 +116,5 @@ permalink: /kb/163/Q163063/
 	
 	=============================================================================
 	
+
+{% endraw %}

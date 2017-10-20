@@ -6,6 +6,8 @@ permalink: /kb/149/Q149567/
 
 ## Q149567: How to Add Pinehurst Tips and Fly-Bys to Multimedia Golf 2.0
 
+{% raw %}
+
 	Article: Q149567
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -82,3 +84,5 @@ permalink: /kb/149/Q149567/
 	
 	=============================================================================
 	
+
+{% endraw %}

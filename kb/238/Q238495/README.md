@@ -6,6 +6,8 @@ permalink: /kb/238/Q238495/
 
 ## Q238495: STOP 0xC000021A in Winlogon.exe on a Terminal Server
 
+{% raw %}
+
 	Article: Q238495
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -58,3 +60,5 @@ permalink: /kb/238/Q238495/
 	
 	=============================================================================
 	
+
+{% endraw %}

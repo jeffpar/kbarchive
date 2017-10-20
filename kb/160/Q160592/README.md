@@ -6,6 +6,8 @@ permalink: /kb/160/Q160592/
 
 ## Q160592: WD97: Can't Print Multiple Files from Open Dialog Box
 
+{% raw %}
+
 	Article: Q160592
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -48,3 +50,5 @@ permalink: /kb/160/Q160592/
 	
 	=============================================================================
 	
+
+{% endraw %}

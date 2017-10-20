@@ -6,6 +6,8 @@ permalink: /kb/186/Q186217/
 
 ## Q186217: 3C509 Is Not Autodetected During Setup on ThinkPad 760EL &amp; XL
 
+{% raw %}
+
 	Article: Q186217
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/186/Q186217/
 	
 	=============================================================================
 	
+
+{% endraw %}

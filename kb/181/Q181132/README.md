@@ -6,6 +6,8 @@ permalink: /kb/181/Q181132/
 
 ## Q181132: Configuring Host Print Transform May Cause an Extra Form Feed
 
+{% raw %}
+
 	Article: Q181132
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -81,3 +83,5 @@ permalink: /kb/181/Q181132/
 	
 	=============================================================================
 	
+
+{% endraw %}

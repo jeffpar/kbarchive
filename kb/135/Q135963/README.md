@@ -6,6 +6,8 @@ permalink: /kb/135/Q135963/
 
 ## Q135963: Cannot Create DriveSpace 3-Compatible Startup Disk
 
+{% raw %}
+
 	Article: Q135963
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -77,3 +79,5 @@ permalink: /kb/135/Q135963/
 	
 	=============================================================================
 	
+
+{% endraw %}

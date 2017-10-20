@@ -6,6 +6,8 @@ permalink: /kb/287/Q287029/
 
 ## Q287029: Problems with Repeated LoadAccelerators() Calls
 
+{% raw %}
+
 	Article: Q287029
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -90,3 +92,5 @@ permalink: /kb/287/Q287029/
 	
 	=============================================================================
 	
+
+{% endraw %}

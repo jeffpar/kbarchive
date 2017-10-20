@@ -6,6 +6,8 @@ permalink: /kb/286/Q286358/
 
 ## Q286358: Periods at the Beginning of a Line Are Removed
 
+{% raw %}
+
 	Article: Q286358
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -89,3 +91,5 @@ permalink: /kb/286/Q286358/
 	
 	=============================================================================
 	
+
+{% endraw %}

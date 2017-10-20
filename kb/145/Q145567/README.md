@@ -6,6 +6,8 @@ permalink: /kb/145/Q145567/
 
 ## Q145567: BUG: TabStrip Control Incorrectly Displays TABs on Form_Load
 
+{% raw %}
+
 	Article: Q145567
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -101,3 +103,5 @@ permalink: /kb/145/Q145567/
 	
 	=============================================================================
 	
+
+{% endraw %}

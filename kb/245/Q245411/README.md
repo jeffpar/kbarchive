@@ -6,6 +6,8 @@ permalink: /kb/245/Q245411/
 
 ## Q245411: Err Msg: FS2000 Caused an Invalid Page Fault in Module Unknown
 
+{% raw %}
+
 	Article: Q245411
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -216,3 +218,5 @@ permalink: /kb/245/Q245411/
 	
 	=============================================================================
 	
+
+{% endraw %}

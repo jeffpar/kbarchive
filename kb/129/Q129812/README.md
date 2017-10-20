@@ -6,6 +6,8 @@ permalink: /kb/129/Q129812/
 
 ## Q129812: PCMCIA Cards Not Detected on Zenith NoteFLEX
 
+{% raw %}
+
 	Article: Q129812
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -72,3 +74,5 @@ permalink: /kb/129/Q129812/
 	
 	=============================================================================
 	
+
+{% endraw %}

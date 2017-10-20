@@ -6,6 +6,8 @@ permalink: /kb/068/Q68386/
 
 ## Q68386: A Workaround for the MGREP Problem in M/MEP Version 1.02
 
+{% raw %}
+
 	Article: Q68386
 	Product(s): See article
 	Version(s): 1.02   | 1.02
@@ -54,3 +56,5 @@ permalink: /kb/068/Q68386/
 	   breaking up the first macro.
 	
 	2. The macro assumes that all files on disk are up to date.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97534/
 
 ## Q97534: Unwanted String Begins Messages Redirected by XPAD
 
+{% raw %}
+
 	Article: Q97534
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/097/Q97534/
 	
 	=============================================================================
 	
+
+{% endraw %}

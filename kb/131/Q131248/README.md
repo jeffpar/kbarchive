@@ -6,6 +6,8 @@ permalink: /kb/131/Q131248/
 
 ## Q131248: In-Progress BBS Message Not Saved When Disconnect Occurs
 
+{% raw %}
+
 	Article: Q131248
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.05 1.2 1.3
@@ -42,3 +44,5 @@ permalink: /kb/131/Q131248/
 	
 	=============================================================================
 	
+
+{% endraw %}

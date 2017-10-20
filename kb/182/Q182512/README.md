@@ -6,6 +6,8 @@ permalink: /kb/182/Q182512/
 
 ## Q182512: XADM: Information Store Fails With Server Specific Error 4294966
 
+{% raw %}
+
 	Article: Q182512
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/182/Q182512/
 	
 	=============================================================================
 	
+
+{% endraw %}

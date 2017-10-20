@@ -6,6 +6,8 @@ permalink: /kb/246/Q246214/
 
 ## Q246214: XADM: Directory Logging 1349 GUID Changed Events When RPC Errors
 
+{% raw %}
+
 	Article: Q246214
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -87,3 +89,5 @@ permalink: /kb/246/Q246214/
 	
 	=============================================================================
 	
+
+{% endraw %}

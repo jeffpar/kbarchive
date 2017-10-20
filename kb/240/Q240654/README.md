@@ -6,6 +6,8 @@ permalink: /kb/240/Q240654/
 
 ## Q240654: HOW TO: Configure the IISADMPWD Pages for Different Ports
 
+{% raw %}
+
 	Article: Q240654
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -115,3 +117,5 @@ permalink: /kb/240/Q240654/
 	
 	=============================================================================
 	
+
+{% endraw %}

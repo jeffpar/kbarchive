@@ -6,6 +6,8 @@ permalink: /kb/130/Q130932/
 
 ## Q130932: Desktop Remains Active At Logoff
 
+{% raw %}
+
 	Article: Q130932
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -56,3 +58,5 @@ permalink: /kb/130/Q130932/
 	
 	=============================================================================
 	
+
+{% endraw %}

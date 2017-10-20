@@ -6,6 +6,8 @@ permalink: /kb/051/Q51326/
 
 ## Q51326: DOC: tmpfile() Creates a Temporary File in the Root Dir
 
+{% raw %}
+
 	Article: Q51326
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,5.0,6.0
@@ -55,3 +57,5 @@ permalink: /kb/051/Q51326/
 	
 	=============================================================================
 	
+
+{% endraw %}

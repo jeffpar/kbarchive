@@ -6,6 +6,8 @@ permalink: /kb/151/Q151776/
 
 ## Q151776: Err Msg: Unable to Find INF Source File during CPS Install
 
+{% raw %}
+
 	Article: Q151776
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/151/Q151776/
 	
 	=============================================================================
 	
+
+{% endraw %}

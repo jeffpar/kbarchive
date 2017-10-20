@@ -6,6 +6,8 @@ permalink: /kb/186/Q186420/
 
 ## Q186420: PRB: Status.dat File Is too Large
 
+{% raw %}
+
 	Article: Q186420
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0
@@ -60,3 +62,5 @@ permalink: /kb/186/Q186420/
 	
 	=============================================================================
 	
+
+{% endraw %}

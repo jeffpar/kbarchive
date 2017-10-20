@@ -6,6 +6,8 @@ permalink: /kb/034/Q34471/
 
 ## Q34471: MASM 5.10 MACRO.DOC: Directory Control
 
+{% raw %}
+
 	Article: Q34471
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -44,3 +46,5 @@ permalink: /kb/034/Q34471/
 	                segment     = Segment of path (DS if none given)
 	Return:         If carrry set, error code in AX
 	Registers used: AX, SI, and DL; DS if segment changes
+
+{% endraw %}

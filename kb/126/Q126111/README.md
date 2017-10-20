@@ -6,6 +6,8 @@ permalink: /kb/126/Q126111/
 
 ## Q126111: Baseball 1994: Boston Team Franchise Dates Not Consistent
 
+{% raw %}
+
 	Article: Q126111
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -70,3 +72,5 @@ permalink: /kb/126/Q126111/
 	
 	=============================================================================
 	
+
+{% endraw %}

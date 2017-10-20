@@ -6,6 +6,8 @@ permalink: /kb/130/Q130481/
 
 ## Q130481: CMD Technology PCI-0640x IDE Controller Requires New Driver
 
+{% raw %}
+
 	Article: Q130481
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -82,3 +84,5 @@ permalink: /kb/130/Q130481/
 	
 	=============================================================================
 	
+
+{% endraw %}

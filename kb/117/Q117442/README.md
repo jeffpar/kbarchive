@@ -6,6 +6,8 @@ permalink: /kb/117/Q117442/
 
 ## Q117442: System Sounds Unavailable in Control Panel
 
+{% raw %}
+
 	Article: Q117442
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/117/Q117442/
 	
 	=============================================================================
 	
+
+{% endraw %}

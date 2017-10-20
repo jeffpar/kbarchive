@@ -6,6 +6,8 @@ permalink: /kb/097/Q97818/
 
 ## Q97818: Memory Manager Hangs System with Net Card Memory Conflict
 
+{% raw %}
+
 	Article: Q97818
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/097/Q97818/
 	
 	=============================================================================
 	
+
+{% endraw %}

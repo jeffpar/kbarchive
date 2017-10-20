@@ -6,6 +6,8 @@ permalink: /kb/260/Q260863/
 
 ## Q260863: StarLancer: Heads-Up Display and Radar Screen Appear Blurred
 
+{% raw %}
+
 	Article: Q260863
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/260/Q260863/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68027/
 
 ## Q68027: QBX.EXE, PWB.EXE Help Files &quot;Not Found,&quot; Conflict Under OS/2
 
+{% raw %}
+
 	Article: Q68027
 	Product(s): See article
 	Version(s): 7.10
@@ -56,3 +58,5 @@ permalink: /kb/068/Q68027/
 	files. Make sure that the help files are not in the same directory as
 	either PWB.EXE or QBX.EXE. In this situation, the two programs will
 	not conflict with one another.
+
+{% endraw %}

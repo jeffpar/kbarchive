@@ -6,6 +6,8 @@ permalink: /kb/253/Q253932/
 
 ## Q253932: PRB: Incorrect Line of Code Displayed in Debugger
 
+{% raw %}
+
 	Article: Q253932
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -160,3 +162,5 @@ permalink: /kb/253/Q253932/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114243/
 
 ## Q114243: System Hang During Setup on IBM PS/ValuePoint P60/D Machine
 
+{% raw %}
+
 	Article: Q114243
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -86,3 +88,5 @@ permalink: /kb/114/Q114243/
 	
 	=============================================================================
 	
+
+{% endraw %}

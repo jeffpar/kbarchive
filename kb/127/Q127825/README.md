@@ -6,6 +6,8 @@ permalink: /kb/127/Q127825/
 
 ## Q127825: Event Viewer Filter Events On Time Values Change
 
+{% raw %}
+
 	Article: Q127825
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/127/Q127825/
 	
 	=============================================================================
 	
+
+{% endraw %}

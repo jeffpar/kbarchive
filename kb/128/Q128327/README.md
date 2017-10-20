@@ -6,6 +6,8 @@ permalink: /kb/128/Q128327/
 
 ## Q128327: How Windows 95 Manages Virtual Memory
 
+{% raw %}
+
 	Article: Q128327
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/128/Q128327/
 	
 	=============================================================================
 	
+
+{% endraw %}

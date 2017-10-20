@@ -6,6 +6,8 @@ permalink: /kb/035/Q35975/
 
 ## Q35975: Sluggish or Jerky Mouse Motion in PC DOS Version 4.00 Shell
 
+{% raw %}
+
 	Article: Q35975
 	Product(s): See article
 	Version(s): 4.00
@@ -19,3 +21,5 @@ permalink: /kb/035/Q35975/
 	To work around this problem, do not load the PC DOS Version 4.00 mouse
 	drivers /MOS:PC??DRV.COM (where ?? is PC or MS) and load the Microsoft
 	mouse driver MOUSE.COM before running the DOSSHELL.BAT file.
+
+{% endraw %}

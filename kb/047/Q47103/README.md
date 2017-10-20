@@ -6,6 +6,8 @@ permalink: /kb/047/Q47103/
 
 ## Q47103: DEF File Entry of EXECUTEONLY Causes Problems with CVP
 
+{% raw %}
+
 	Article: Q47103
 	Product(s): See article
 	Version(s): 2.20 2.30
@@ -31,3 +33,5 @@ permalink: /kb/047/Q47103/
 	opposed to the default EXECUTEREAD. When you choose EXECUTEONLY,
 	CodeView cannot read the code segment as it must to work correctly.
 	Removing the EXECUTEONLY attribute corrects the problem.
+
+{% endraw %}

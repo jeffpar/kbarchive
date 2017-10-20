@@ -6,6 +6,8 @@ permalink: /kb/246/Q246270/
 
 ## Q246270: XADM: Error Installing Service Pack 1 on Exchange 5.5 with OWA
 
+{% raw %}
+
 	Article: Q246270
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/246/Q246270/
 	
 	=============================================================================
 	
+
+{% endraw %}

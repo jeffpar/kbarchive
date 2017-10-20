@@ -6,6 +6,8 @@ permalink: /kb/215/Q215015/
 
 ## Q215015: SMS: &quot;SMS Admins&quot; Group Needs Launch Permissions to WinMgmt
 
+{% raw %}
+
 	Article: Q215015
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -140,3 +142,5 @@ permalink: /kb/215/Q215015/
 	
 	=============================================================================
 	
+
+{% endraw %}

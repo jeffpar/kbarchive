@@ -6,6 +6,8 @@ permalink: /kb/296/Q296912/
 
 ## Q296912: XCCC:  Error Message Occurs  When You Access Logon.asp
 
+{% raw %}
+
 	Article: Q296912
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -100,3 +102,5 @@ permalink: /kb/296/Q296912/
 	
 	=============================================================================
 	
+
+{% endraw %}

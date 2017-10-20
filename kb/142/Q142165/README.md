@@ -6,6 +6,8 @@ permalink: /kb/142/Q142165/
 
 ## Q142165: Unable To Save Powerpoint Files Using GSNW
 
+{% raw %}
+
 	Article: Q142165
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142165/
 	
 	=============================================================================
 	
+
+{% endraw %}

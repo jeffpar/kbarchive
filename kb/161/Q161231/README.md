@@ -6,6 +6,8 @@ permalink: /kb/161/Q161231/
 
 ## Q161231: Automap: Known Communication Settings for Some GPS Receivers
 
+{% raw %}
+
 	Article: Q161231
 	Product(s): Microsoft Automap
 	Version(s): 5.0
@@ -104,3 +106,5 @@ permalink: /kb/161/Q161231/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133108/
 
 ## Q133108: Advanced Port Replicator Support on Dell Latitude Computers
 
+{% raw %}
+
 	Article: Q133108
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -71,3 +73,5 @@ permalink: /kb/133/Q133108/
 	
 	=============================================================================
 	
+
+{% endraw %}

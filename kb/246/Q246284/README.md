@@ -6,6 +6,8 @@ permalink: /kb/246/Q246284/
 
 ## Q246284: XADM: Set Alternate Delivery Location with Admin.exe
 
+{% raw %}
+
 	Article: Q246284
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -51,3 +53,5 @@ permalink: /kb/246/Q246284/
 	
 	=============================================================================
 	
+
+{% endraw %}

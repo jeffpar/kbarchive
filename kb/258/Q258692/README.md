@@ -6,6 +6,8 @@ permalink: /kb/258/Q258692/
 
 ## Q258692: Microsoft Word 2000 Step by Step Courseware Expert Skills Studen
 
+{% raw %}
+
 	Article: Q258692
 	Product(s): Microsoft Press
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/258/Q258692/
 	
 	=============================================================================
 	
+
+{% endraw %}

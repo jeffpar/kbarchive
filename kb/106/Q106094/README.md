@@ -6,6 +6,8 @@ permalink: /kb/106/Q106094/
 
 ## Q106094: Err Msg: ScanDisk Encountered a Data Error While Reading (128)
 
+{% raw %}
+
 	Article: Q106094
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -46,3 +48,5 @@ permalink: /kb/106/Q106094/
 	
 	=============================================================================
 	
+
+{% endraw %}

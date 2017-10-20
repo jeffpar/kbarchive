@@ -6,6 +6,8 @@ permalink: /kb/195/Q195125/
 
 ## Q195125: Stopping MngAgent Service May Cause Trap in Mngcli.exe
 
+{% raw %}
+
 	Article: Q195125
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1
@@ -101,3 +103,5 @@ permalink: /kb/195/Q195125/
 	
 	=============================================================================
 	
+
+{% endraw %}

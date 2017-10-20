@@ -6,6 +6,8 @@ permalink: /kb/256/Q256179/
 
 ## Q256179: PRB: BackColor of Shape Bleeds Through on Top-Level Form w/ Grid
 
+{% raw %}
+
 	Article: Q256179
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -136,3 +138,5 @@ permalink: /kb/256/Q256179/
 	
 	=============================================================================
 	
+
+{% endraw %}

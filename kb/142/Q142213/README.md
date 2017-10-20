@@ -6,6 +6,8 @@ permalink: /kb/142/Q142213/
 
 ## Q142213: WD97: How to Create an Automated Form with Fill-in Fields
 
+{% raw %}
+
 	Article: Q142213
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -149,3 +151,5 @@ permalink: /kb/142/Q142213/
 	
 	=============================================================================
 	
+
+{% endraw %}

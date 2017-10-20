@@ -6,6 +6,8 @@ permalink: /kb/130/Q130009/
 
 ## Q130009: Mac Bookshelf 94: Only Prints in Upper-Left Corner
 
+{% raw %}
+
 	Article: Q130009
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -99,3 +101,5 @@ permalink: /kb/130/Q130009/
 	
 	=============================================================================
 	
+
+{% endraw %}

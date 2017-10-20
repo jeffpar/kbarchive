@@ -6,6 +6,8 @@ permalink: /kb/137/Q137450/
 
 ## Q137450: HOWTO: Set Up and Troubleshoot Macintosh Communications
 
+{% raw %}
+
 	Article: Q137450
 	Product(s): Microsoft C Compiler
 	Version(s): MAC:2.0;
@@ -358,3 +360,5 @@ permalink: /kb/137/Q137450/
 	
 	=============================================================================
 	
+
+{% endraw %}

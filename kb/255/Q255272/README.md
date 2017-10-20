@@ -6,6 +6,8 @@ permalink: /kb/255/Q255272/
 
 ## Q255272: BUG: CE: CommandBar Settings May Keep Key Events from Firing
 
+{% raw %}
+
 	Article: Q255272
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.11,3.0
@@ -93,3 +95,5 @@ permalink: /kb/255/Q255272/
 	
 	=============================================================================
 	
+
+{% endraw %}

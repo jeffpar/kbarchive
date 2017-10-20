@@ -6,6 +6,8 @@ permalink: /kb/064/Q64877/
 
 ## Q64877: &quot;File Not Found ...&quot; If BASIC RUNs a C 6.00 Overlaid Program
 
+{% raw %}
+
 	Article: Q64877
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -65,3 +67,5 @@ permalink: /kb/064/Q64877/
 	When A.EXE is run, the following message displays:
 	
 	   File not found in module A        at address 246B:0042
+
+{% endraw %}

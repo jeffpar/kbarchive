@@ -6,6 +6,8 @@ permalink: /kb/131/Q131150/
 
 ## Q131150: SMTP: Causes of Hangs on Mail Gateway to SMTP
 
+{% raw %}
+
 	Article: Q131150
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -101,3 +103,5 @@ permalink: /kb/131/Q131150/
 	
 	=============================================================================
 	
+
+{% endraw %}

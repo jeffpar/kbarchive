@@ -6,6 +6,8 @@ permalink: /kb/190/Q190148/
 
 ## Q190148: BUG: ATL Object Wizard Doesn't Add Entry to Connection Point Map
 
+{% raw %}
+
 	Article: Q190148
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/190/Q190148/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160606/
 
 ## Q160606: Performance Enhancements for SQL Server Under Windows NT
 
+{% raw %}
+
 	Article: Q160606
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -216,3 +218,5 @@ permalink: /kb/160/Q160606/
 	
 	=============================================================================
 	
+
+{% endraw %}

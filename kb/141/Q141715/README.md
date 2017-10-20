@@ -6,6 +6,8 @@ permalink: /kb/141/Q141715/
 
 ## Q141715: Event ID 5012 Occurs with 3C589 PCMCIA Network Card
 
+{% raw %}
+
 	Article: Q141715
 	Product(s): Microsoft Windows NT
 	Version(s): 3.X,4.0
@@ -109,3 +111,5 @@ permalink: /kb/141/Q141715/
 	
 	=============================================================================
 	
+
+{% endraw %}

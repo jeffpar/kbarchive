@@ -6,6 +6,8 @@ permalink: /kb/254/Q254825/
 
 ## Q254825: MSCS: Creating Multiple Virtual Servers with Same NetBIOS Name
 
+{% raw %}
+
 	Article: Q254825
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,1.1,4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -62,3 +64,5 @@ permalink: /kb/254/Q254825/
 	
 	=============================================================================
 	
+
+{% endraw %}

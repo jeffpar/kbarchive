@@ -6,6 +6,8 @@ permalink: /kb/147/Q147870/
 
 ## Q147870: 3D Movie Maker: Program Hangs When Playing MIDI
 
+{% raw %}
+
 	Article: Q147870
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/147/Q147870/
 	
 	=============================================================================
 	
+
+{% endraw %}

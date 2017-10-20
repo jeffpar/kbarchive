@@ -6,6 +6,8 @@ permalink: /kb/027/Q27299/
 
 ## Q27299: Passing BASIC Array of Variable-Length Strings to C
 
+{% raw %}
+
 	Article: Q27299
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -76,3 +78,5 @@ permalink: /kb/027/Q27299/
 	   7      10     HHHHHHHHH
 	   8      10     IIIIIIIII
 	   9      10     JJJJJJJJJ
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/317/Q317948/
 
 ## Q317948: IIS 5.1 Application Mappings OK Button Unavailable
 
+{% raw %}
+
 	Article: Q317948
 	Product(s): Internet Information Server
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/317/Q317948/
 	
 	=============================================================================
 	
+
+{% endraw %}

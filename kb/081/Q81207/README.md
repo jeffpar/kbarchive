@@ -6,6 +6,8 @@ permalink: /kb/081/Q81207/
 
 ## Q81207: WD97: Printing a Range of Pages in a Multiple-Section Document
 
+{% raw %}
+
 	Article: Q81207
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -87,3 +89,5 @@ permalink: /kb/081/Q81207/
 	
 	=============================================================================
 	
+
+{% endraw %}

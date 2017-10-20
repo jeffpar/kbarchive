@@ -6,6 +6,8 @@ permalink: /kb/080/Q80256/
 
 ## Q80256: PC Gen: Contents of Modem Script File HAYES12.MDM
 
+{% raw %}
+
 	Article: Q80256
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e
@@ -246,3 +248,5 @@ permalink: /kb/080/Q80256/
 	
 	=============================================================================
 	
+
+{% endraw %}

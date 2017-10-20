@@ -6,6 +6,8 @@ permalink: /kb/296/Q296904/
 
 ## Q296904: HOWTO: Install the PocketPC Emulator with JScript Support
 
+{% raw %}
+
 	Article: Q296904
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,3.0
@@ -125,3 +127,5 @@ permalink: /kb/296/Q296904/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193173/
 
 ## Q193173: PRB: Silent Setup of PDW Package Cannot Create New Folder
 
+{% raw %}
+
 	Article: Q193173
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -65,3 +67,5 @@ permalink: /kb/193/Q193173/
 	
 	=============================================================================
 	
+
+{% endraw %}

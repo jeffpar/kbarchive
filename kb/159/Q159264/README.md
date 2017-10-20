@@ -6,6 +6,8 @@ permalink: /kb/159/Q159264/
 
 ## Q159264: XGEN: Online Help Error in X.400 Schedule Property Page
 
+{% raw %}
+
 	Article: Q159264
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -44,3 +46,5 @@ permalink: /kb/159/Q159264/
 	
 	=============================================================================
 	
+
+{% endraw %}

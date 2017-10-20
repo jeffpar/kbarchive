@@ -6,6 +6,8 @@ permalink: /kb/201/Q201865/
 
 ## Q201865: CPU Usage at 100% After Installing MetaFrame 1.0
 
+{% raw %}
+
 	Article: Q201865
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -93,3 +95,5 @@ permalink: /kb/201/Q201865/
 	
 	=============================================================================
 	
+
+{% endraw %}

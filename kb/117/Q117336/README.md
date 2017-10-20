@@ -6,6 +6,8 @@ permalink: /kb/117/Q117336/
 
 ## Q117336: Extended Characters Display Incorrectly with Screen Fonts
 
+{% raw %}
+
 	Article: Q117336
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/117/Q117336/
 	
 	=============================================================================
 	
+
+{% endraw %}

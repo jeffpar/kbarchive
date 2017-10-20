@@ -6,6 +6,8 @@ permalink: /kb/161/Q161362/
 
 ## Q161362: Windows NT 4.0 Driver for SideWinder Now Available
 
+{% raw %}
+
 	Article: Q161362
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,4.0 SP2
@@ -67,3 +69,5 @@ permalink: /kb/161/Q161362/
 	
 	=============================================================================
 	
+
+{% endraw %}

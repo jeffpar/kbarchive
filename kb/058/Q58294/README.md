@@ -6,6 +6,8 @@ permalink: /kb/058/Q58294/
 
 ## Q58294: Windows Drops to MS-DOS When MSNet Server Disconnected
 
+{% raw %}
+
 	Article: Q58294
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/058/Q58294/
 	
 	=============================================================================
 	
+
+{% endraw %}

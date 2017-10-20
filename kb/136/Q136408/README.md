@@ -6,6 +6,8 @@ permalink: /kb/136/Q136408/
 
 ## Q136408: MSN: BBS May Hang Opening Several Messages Simultaneously
 
+{% raw %}
+
 	Article: Q136408
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -41,3 +43,5 @@ permalink: /kb/136/Q136408/
 	
 	=============================================================================
 	
+
+{% endraw %}

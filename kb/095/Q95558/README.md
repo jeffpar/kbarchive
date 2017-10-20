@@ -6,6 +6,8 @@ permalink: /kb/095/Q95558/
 
 ## Q95558: MemMaker Doesn't Remove All References to QEMM
 
+{% raw %}
+
 	Article: Q95558
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -51,3 +53,5 @@ permalink: /kb/095/Q95558/
 	
 	=============================================================================
 	
+
+{% endraw %}

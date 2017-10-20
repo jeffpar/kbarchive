@@ -6,6 +6,8 @@ permalink: /kb/148/Q148207/
 
 ## Q148207: PC Win: Err Msg: ...No Valid Message Recipients Supplied
 
+{% raw %}
+
 	Article: Q148207
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -62,3 +64,5 @@ permalink: /kb/148/Q148207/
 	
 	=============================================================================
 	
+
+{% endraw %}

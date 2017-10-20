@@ -6,6 +6,8 @@ permalink: /kb/138/Q138466/
 
 ## Q138466: Disk Space Reported Incorrectly When Dspace Tool Is Used
 
+{% raw %}
+
 	Article: Q138466
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/138/Q138466/
 	
 	=============================================================================
 	
+
+{% endraw %}

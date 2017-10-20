@@ -6,6 +6,8 @@ permalink: /kb/175/Q175354/
 
 ## Q175354: XCON: Repeated Event IDs, 4284 &amp; 4287, Indicate Network Problem
 
+{% raw %}
+
 	Article: Q175354
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/175/Q175354/
 	
 	=============================================================================
 	
+
+{% endraw %}

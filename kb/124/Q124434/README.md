@@ -6,6 +6,8 @@ permalink: /kb/124/Q124434/
 
 ## Q124434: MS-DOS Step-Up Kits for U.S. and International Versions
 
+{% raw %}
+
 	Article: Q124434
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -72,3 +74,5 @@ permalink: /kb/124/Q124434/
 	
 	=============================================================================
 	
+
+{% endraw %}

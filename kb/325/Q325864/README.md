@@ -6,6 +6,8 @@ permalink: /kb/325/Q325864/
 
 ## Q325864: HOW TO: Install and Use the IIS Lockdown Wizard
 
+{% raw %}
+
 	Article: Q325864
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -381,3 +383,5 @@ permalink: /kb/325/Q325864/
 	
 	=============================================================================
 	
+
+{% endraw %}

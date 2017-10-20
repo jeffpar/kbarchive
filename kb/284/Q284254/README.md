@@ -6,6 +6,8 @@ permalink: /kb/284/Q284254/
 
 ## Q284254: XCON: Address Space Not in GWART w/Multiple X.400 Connectors
 
+{% raw %}
+
 	Article: Q284254
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP4
@@ -116,3 +118,5 @@ permalink: /kb/284/Q284254/
 	
 	=============================================================================
 	
+
+{% endraw %}

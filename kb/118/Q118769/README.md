@@ -6,6 +6,8 @@ permalink: /kb/118/Q118769/
 
 ## Q118769: Norton Utilities NDOS Claims It Is Running Under Windows 3
 
+{% raw %}
+
 	Article: Q118769
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/118/Q118769/
 	
 	=============================================================================
 	
+
+{% endraw %}

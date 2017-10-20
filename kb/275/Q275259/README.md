@@ -6,6 +6,8 @@ permalink: /kb/275/Q275259/
 
 ## Q275259: SMS: Identifying Version of DCOM on a Windows 95/98/Me Computer
 
+{% raw %}
+
 	Article: Q275259
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -82,3 +84,5 @@ permalink: /kb/275/Q275259/
 	
 	=============================================================================
 	
+
+{% endraw %}

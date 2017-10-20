@@ -6,6 +6,8 @@ permalink: /kb/172/Q172635/
 
 ## Q172635: Event 567, RC =10048 When Restarting SNA Server
 
+{% raw %}
+
 	Article: Q172635
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,3.0 SP1
@@ -84,3 +86,5 @@ permalink: /kb/172/Q172635/
 	
 	=============================================================================
 	
+
+{% endraw %}

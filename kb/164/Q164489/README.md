@@ -6,6 +6,8 @@ permalink: /kb/164/Q164489/
 
 ## Q164489: XADM: MAPI Error While Generating Offline Address Book
 
+{% raw %}
+
 	Article: Q164489
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/164/Q164489/
 	
 	=============================================================================
 	
+
+{% endraw %}

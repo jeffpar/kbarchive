@@ -6,6 +6,8 @@ permalink: /kb/253/Q253216/
 
 ## Q253216: XADM: Online Backup Doesn't Detect Corruption on Multiprocessor
 
+{% raw %}
+
 	Article: Q253216
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -59,3 +61,5 @@ permalink: /kb/253/Q253216/
 	
 	=============================================================================
 	
+
+{% endraw %}

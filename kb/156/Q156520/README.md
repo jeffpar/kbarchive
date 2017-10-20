@@ -6,6 +6,8 @@ permalink: /kb/156/Q156520/
 
 ## Q156520: Logon Validation Fails Using Domain Name Server (DNS)
 
+{% raw %}
+
 	Article: Q156520
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/156/Q156520/
 	
 	=============================================================================
 	
+
+{% endraw %}

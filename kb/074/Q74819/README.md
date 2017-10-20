@@ -6,6 +6,8 @@ permalink: /kb/074/Q74819/
 
 ## Q74819: DESQview Version 2.33 or Earlier Conflicts with SETVER
 
+{% raw %}
+
 	Article: Q74819
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/074/Q74819/
 	
 	=============================================================================
 	
+
+{% endraw %}

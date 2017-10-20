@@ -6,6 +6,8 @@ permalink: /kb/216/Q216397/
 
 ## Q216397: XCLN: Can't Auto Forward Messages to SMTP Address with OOF
 
+{% raw %}
+
 	Article: Q216397
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,8.0,8.01,8.02,8.03
@@ -59,3 +61,5 @@ permalink: /kb/216/Q216397/
 	
 	=============================================================================
 	
+
+{% endraw %}

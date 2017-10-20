@@ -6,6 +6,8 @@ permalink: /kb/174/Q174935/
 
 ## Q174935: SMS: &quot;Error 5 Access Is Denied&quot; When Using Rservice.exe
 
+{% raw %}
+
 	Article: Q174935
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -84,3 +86,5 @@ permalink: /kb/174/Q174935/
 	
 	=============================================================================
 	
+
+{% endraw %}

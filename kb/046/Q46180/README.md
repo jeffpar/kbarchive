@@ -6,6 +6,8 @@ permalink: /kb/046/Q46180/
 
 ## Q46180: STATIC FUNCTION Fails to Retain Value Between Invocations
 
+{% raw %}
+
 	Article: Q46180
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -52,3 +54,5 @@ permalink: /kb/046/Q46180/
 	When this program is compiled with BC.EXE, it correctly prints the
 	values 5 and 5. From inside the QuickBASIC QB.EXE or QBX.EXE
 	environment, it incorrectly prints 5 and 0.
+
+{% endraw %}

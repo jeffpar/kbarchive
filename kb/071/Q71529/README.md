@@ -6,6 +6,8 @@ permalink: /kb/071/Q71529/
 
 ## Q71529: Reader and Writer with Copy Protect May Lock System
 
+{% raw %}
+
 	Article: Q71529
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -52,3 +54,5 @@ permalink: /kb/071/Q71529/
 	
 	=============================================================================
 	
+
+{% endraw %}

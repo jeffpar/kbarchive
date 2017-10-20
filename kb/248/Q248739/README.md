@@ -6,6 +6,8 @@ permalink: /kb/248/Q248739/
 
 ## Q248739: IIS Fails to Run on a Sysprep Cloned System
 
+{% raw %}
+
 	Article: Q248739
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/248/Q248739/
 	
 	=============================================================================
 	
+
+{% endraw %}

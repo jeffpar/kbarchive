@@ -6,6 +6,8 @@ permalink: /kb/167/Q167697/
 
 ## Q167697: FIX: ActiveX Control in IE Asserts in CTLINPLC.CPP, Line 328
 
+{% raw %}
+
 	Article: Q167697
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.0a,4.1,4.2,4.2b,5.0
@@ -106,3 +108,5 @@ permalink: /kb/167/Q167697/
 	
 	=============================================================================
 	
+
+{% endraw %}

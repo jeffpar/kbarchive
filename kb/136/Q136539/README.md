@@ -6,6 +6,8 @@ permalink: /kb/136/Q136539/
 
 ## Q136539: MSB: Program Runs Slowly on Macintosh (Virtual Memory)
 
+{% raw %}
+
 	Article: Q136539
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0
@@ -57,3 +59,5 @@ permalink: /kb/136/Q136539/
 	
 	=============================================================================
 	
+
+{% endraw %}

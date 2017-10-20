@@ -6,6 +6,8 @@ permalink: /kb/176/Q176258/
 
 ## Q176258: BUG: Refresh Method of Data Control Resets QueryTimeout
 
+{% raw %}
+
 	Article: Q176258
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -115,3 +117,5 @@ permalink: /kb/176/Q176258/
 	
 	=============================================================================
 	
+
+{% endraw %}

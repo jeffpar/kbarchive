@@ -6,6 +6,8 @@ permalink: /kb/136/Q136891/
 
 ## Q136891: Accessibility Options Shortcuts Disabled by Default
 
+{% raw %}
+
 	Article: Q136891
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -50,3 +52,5 @@ permalink: /kb/136/Q136891/
 	
 	=============================================================================
 	
+
+{% endraw %}

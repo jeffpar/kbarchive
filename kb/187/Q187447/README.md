@@ -6,6 +6,8 @@ permalink: /kb/187/Q187447/
 
 ## Q187447: Unlocking a Computer with an Admin Account Shuts Down Computer
 
+{% raw %}
+
 	Article: Q187447
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/187/Q187447/
 	
 	=============================================================================
 	
+
+{% endraw %}

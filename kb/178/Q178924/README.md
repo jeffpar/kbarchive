@@ -6,6 +6,8 @@ permalink: /kb/178/Q178924/
 
 ## Q178924: How to Upgrade an Evaluation Version of Cluster Server
 
+{% raw %}
+
 	Article: Q178924
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/178/Q178924/
 	
 	=============================================================================
 	
+
+{% endraw %}

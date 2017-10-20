@@ -6,6 +6,8 @@ permalink: /kb/171/Q171878/
 
 ## Q171878: FIX: Cursor Library Memory Leak in Multithreaded Environment
 
+{% raw %}
+
 	Article: Q171878
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5,3.0
@@ -56,3 +58,5 @@ permalink: /kb/171/Q171878/
 	
 	=============================================================================
 	
+
+{% endraw %}

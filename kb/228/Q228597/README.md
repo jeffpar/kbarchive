@@ -6,6 +6,8 @@ permalink: /kb/228/Q228597/
 
 ## Q228597: DHCP Server with Deactivated Scope Sends a DHCPNAK to Clients
 
+{% raw %}
+
 	Article: Q228597
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -106,3 +108,5 @@ permalink: /kb/228/Q228597/
 	
 	=============================================================================
 	
+
+{% endraw %}

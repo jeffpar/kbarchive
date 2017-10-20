@@ -6,6 +6,8 @@ permalink: /kb/158/Q158228/
 
 ## Q158228: Mac Encarta 97: Remove Option Removes Update/Notemark Files
 
+{% raw %}
+
 	Article: Q158228
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -48,3 +50,5 @@ permalink: /kb/158/Q158228/
 	
 	=============================================================================
 	
+
+{% endraw %}

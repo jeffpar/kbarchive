@@ -6,6 +6,8 @@ permalink: /kb/099/Q99382/
 
 ## Q99382: Using Access Pack with Unsupported Hardware
 
+{% raw %}
+
 	Article: Q99382
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -93,3 +95,5 @@ permalink: /kb/099/Q99382/
 	
 	=============================================================================
 	
+
+{% endraw %}

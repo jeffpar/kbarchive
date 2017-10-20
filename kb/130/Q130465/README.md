@@ -6,6 +6,8 @@ permalink: /kb/130/Q130465/
 
 ## Q130465: HOWTO: Connect to a Different Database Using ODBC
 
+{% raw %}
+
 	Article: Q130465
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/130/Q130465/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99637/
 
 ## Q99637: Mac Wkst: On Cue Modifies Enclosure Save Dialog Box
 
+{% raw %}
+
 	Article: Q99637
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1,3.1a,3.1c,3.1d
@@ -52,3 +54,5 @@ permalink: /kb/099/Q99637/
 	
 	=============================================================================
 	
+
+{% endraw %}

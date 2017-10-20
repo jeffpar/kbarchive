@@ -6,6 +6,8 @@ permalink: /kb/158/Q158859/
 
 ## Q158859: Cannot Create Extended ASCII Characters with MouseKeys Enabled
 
+{% raw %}
+
 	Article: Q158859
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -46,3 +48,5 @@ permalink: /kb/158/Q158859/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134285/
 
 ## Q134285: STOP Msg: 0x0000007B or &quot;0x4,0,0,0 Error&quot; during NT Setup
 
+{% raw %}
+
 	Article: Q134285
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -114,3 +116,5 @@ permalink: /kb/134/Q134285/
 	
 	=============================================================================
 	
+
+{% endraw %}

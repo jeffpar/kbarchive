@@ -6,6 +6,8 @@ permalink: /kb/200/Q200085/
 
 ## Q200085: SMS: Client Upgrade May Remove SyncSends Value in Sms.ini
 
+{% raw %}
+
 	Article: Q200085
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -46,3 +48,5 @@ permalink: /kb/200/Q200085/
 	
 	=============================================================================
 	
+
+{% endraw %}

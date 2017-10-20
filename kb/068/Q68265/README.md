@@ -6,6 +6,8 @@ permalink: /kb/068/Q68265/
 
 ## Q68265: Signed Is Converted to unsigned in Comparison with unsigned
 
+{% raw %}
+
 	Article: Q68265
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -59,3 +61,5 @@ permalink: /kb/068/Q68265/
 	2. Change the if statement to:
 	
 	      if ( (long) b < (long) a)
+
+{% endraw %}

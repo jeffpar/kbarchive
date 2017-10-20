@@ -6,6 +6,8 @@ permalink: /kb/158/Q158646/
 
 ## Q158646: SMS Trace and the SNMP Trap Receiver Log File
 
+{% raw %}
+
 	Article: Q158646
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -52,3 +54,5 @@ permalink: /kb/158/Q158646/
 	
 	=============================================================================
 	
+
+{% endraw %}

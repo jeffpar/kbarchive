@@ -6,6 +6,8 @@ permalink: /kb/246/Q246156/
 
 ## Q246156: XCLN: Macintosh Client Cannot Start Inbox Assistant
 
+{% raw %}
+
 	Article: Q246156
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0
@@ -57,3 +59,5 @@ permalink: /kb/246/Q246156/
 	
 	=============================================================================
 	
+
+{% endraw %}

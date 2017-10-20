@@ -6,6 +6,8 @@ permalink: /kb/195/Q195840/
 
 ## Q195840: FIX: RowColChange Event of DataGrid Does Not Fire with ADODC
 
+{% raw %}
+
 	Article: Q195840
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -92,3 +94,5 @@ permalink: /kb/195/Q195840/
 	
 	=============================================================================
 	
+
+{% endraw %}

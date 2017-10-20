@@ -6,6 +6,8 @@ permalink: /kb/231/Q231803/
 
 ## Q231803: XADM: CC Recipient Lost in P2 When BCC Used on cc:Mail Message
 
+{% raw %}
+
 	Article: Q231803
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -92,3 +94,5 @@ permalink: /kb/231/Q231803/
 	
 	=============================================================================
 	
+
+{% endraw %}

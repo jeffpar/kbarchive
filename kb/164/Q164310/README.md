@@ -6,6 +6,8 @@ permalink: /kb/164/Q164310/
 
 ## Q164310: XCLN: Exchange Server Available Application Program Interfaces
 
+{% raw %}
+
 	Article: Q164310
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -79,3 +81,5 @@ permalink: /kb/164/Q164310/
 	
 	=============================================================================
 	
+
+{% endraw %}

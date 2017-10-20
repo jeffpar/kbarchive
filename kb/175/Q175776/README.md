@@ -6,6 +6,8 @@ permalink: /kb/175/Q175776/
 
 ## Q175776: PRB: Problem with VisData Print Structure and Indexes
 
+{% raw %}
+
 	Article: Q175776
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -64,3 +66,5 @@ permalink: /kb/175/Q175776/
 	
 	=============================================================================
 	
+
+{% endraw %}

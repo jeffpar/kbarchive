@@ -6,6 +6,8 @@ permalink: /kb/105/Q105248/
 
 ## Q105248: Swap File Error When Installing Lotus Improv 2.0
 
+{% raw %}
+
 	Article: Q105248
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -76,3 +78,5 @@ permalink: /kb/105/Q105248/
 	
 	=============================================================================
 	
+
+{% endraw %}

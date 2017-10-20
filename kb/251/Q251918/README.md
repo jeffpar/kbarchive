@@ -6,6 +6,8 @@ permalink: /kb/251/Q251918/
 
 ## Q251918: XCLN: Outlook 2000 Supports Multiple Folders as Destination
 
+{% raw %}
+
 	Article: Q251918
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -80,3 +82,5 @@ permalink: /kb/251/Q251918/
 	
 	=============================================================================
 	
+
+{% endraw %}

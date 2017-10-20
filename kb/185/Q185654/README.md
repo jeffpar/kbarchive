@@ -6,6 +6,8 @@ permalink: /kb/185/Q185654/
 
 ## Q185654: HOWTO: Starting OLE Drag and Drop In Manual Mode
 
+{% raw %}
+
 	Article: Q185654
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -187,3 +189,5 @@ permalink: /kb/185/Q185654/
 	
 	=============================================================================
 	
+
+{% endraw %}

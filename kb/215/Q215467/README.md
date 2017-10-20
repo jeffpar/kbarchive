@@ -6,6 +6,8 @@ permalink: /kb/215/Q215467/
 
 ## Q215467: SMS: Delays When Starting SMS Service Manager w/ Multiple Sites
 
+{% raw %}
+
 	Article: Q215467
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/215/Q215467/
 	
 	=============================================================================
 	
+
+{% endraw %}

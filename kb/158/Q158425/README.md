@@ -6,6 +6,8 @@ permalink: /kb/158/Q158425/
 
 ## Q158425: CG3: Errors and Unable to View Clipart in Clip Gallery
 
+{% raw %}
+
 	Article: Q158425
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 3.0; WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/158/Q158425/
 	
 	=============================================================================
 	
+
+{% endraw %}

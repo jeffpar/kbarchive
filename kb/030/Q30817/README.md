@@ -6,6 +6,8 @@ permalink: /kb/030/Q30817/
 
 ## Q30817: MASM 5.10 OS2.DOC: OS/2 Call Summary - Session Management
 
+{% raw %}
+
 	Article: Q30817
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -34,3 +36,5 @@ permalink: /kb/030/Q30817/
 	   @DosStopSession - Terminates session previously started with
 	                     DosStartSession
 	   Parameters - TargetOption:W, SessID:W, Reserved:D
+
+{% endraw %}

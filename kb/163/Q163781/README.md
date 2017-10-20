@@ -6,6 +6,8 @@ permalink: /kb/163/Q163781/
 
 ## Q163781: PPT: Sample Code Displays Message Box With AutoShape Type Name
 
+{% raw %}
+
 	Article: Q163781
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -433,3 +435,5 @@ permalink: /kb/163/Q163781/
 	
 	=============================================================================
 	
+
+{% endraw %}

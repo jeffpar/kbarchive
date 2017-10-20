@@ -6,6 +6,8 @@ permalink: /kb/148/Q148318/
 
 ## Q148318: FIX: Using #define NOGDI Results in Compilation Syntax Errors
 
+{% raw %}
+
 	Article: Q148318
 	Product(s): Microsoft C Compiler
 	Version(s): 2.2,4.0,4.1,4.2
@@ -66,3 +68,5 @@ permalink: /kb/148/Q148318/
 	
 	=============================================================================
 	
+
+{% endraw %}

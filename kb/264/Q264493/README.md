@@ -6,6 +6,8 @@ permalink: /kb/264/Q264493/
 
 ## Q264493: Cannot Create Secondary Site from Source Files on Local Drive
 
+{% raw %}
+
 	Article: Q264493
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -105,3 +107,5 @@ permalink: /kb/264/Q264493/
 	
 	=============================================================================
 	
+
+{% endraw %}

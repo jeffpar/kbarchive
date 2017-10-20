@@ -6,6 +6,8 @@ permalink: /kb/198/Q198742/
 
 ## Q198742: XADM: After Running the MSW, Creating News Feeds Generates Error
 
+{% raw %}
+
 	Article: Q198742
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/198/Q198742/
 	
 	=============================================================================
 	
+
+{% endraw %}

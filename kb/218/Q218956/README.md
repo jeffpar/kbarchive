@@ -6,6 +6,8 @@ permalink: /kb/218/Q218956/
 
 ## Q218956: WD97: Overtype Mode Turned Off When You Quit Word
 
+{% raw %}
+
 	Article: Q218956
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/218/Q218956/
 	
 	=============================================================================
 	
+
+{% endraw %}

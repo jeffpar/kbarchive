@@ -6,6 +6,8 @@ permalink: /kb/120/Q120464/
 
 ## Q120464: Scenes 2.0: SPACEBAR plus ENTER Causes GP Fault
 
+{% raw %}
+
 	Article: Q120464
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -67,3 +69,5 @@ permalink: /kb/120/Q120464/
 	
 	=============================================================================
 	
+
+{% endraw %}

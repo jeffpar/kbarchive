@@ -6,6 +6,8 @@ permalink: /kb/139/Q139387/
 
 ## Q139387: FIX: Data Type Is Invalid for This Property Error Message
 
+{% raw %}
+
 	Article: Q139387
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -94,3 +96,5 @@ permalink: /kb/139/Q139387/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150223/
 
 ## Q150223: BUG: Help Button on Toolbar Customize Dialog Box Does Nothing
 
+{% raw %}
+
 	Article: Q150223
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/150/Q150223/
 	
 	=============================================================================
 	
+
+{% endraw %}

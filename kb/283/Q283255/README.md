@@ -6,6 +6,8 @@ permalink: /kb/283/Q283255/
 
 ## Q283255: XIMS: Event ID 3010  and 3011 Report the Wrong Destination Name
 
+{% raw %}
+
 	Article: Q283255
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -122,3 +124,5 @@ permalink: /kb/283/Q283255/
 	
 	=============================================================================
 	
+
+{% endraw %}

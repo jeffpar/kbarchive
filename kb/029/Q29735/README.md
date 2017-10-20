@@ -6,6 +6,8 @@ permalink: /kb/029/Q29735/
 
 ## Q29735: FIX: LES Instruction Assembles Incorrectly
 
+{% raw %}
+
 	Article: Q29735
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -86,3 +88,5 @@ permalink: /kb/029/Q29735/
 	
 	=============================================================================
 	
+
+{% endraw %}

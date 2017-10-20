@@ -6,6 +6,8 @@ permalink: /kb/089/Q89842/
 
 ## Q89842: System May Not Boot After Installing Intel Ether Express
 
+{% raw %}
+
 	Article: Q89842
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/089/Q89842/
 	
 	=============================================================================
 	
+
+{% endraw %}

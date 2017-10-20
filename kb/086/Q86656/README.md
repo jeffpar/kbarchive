@@ -6,6 +6,8 @@ permalink: /kb/086/Q86656/
 
 ## Q86656: TrueType Symbol Fonts Display in Italics
 
+{% raw %}
+
 	Article: Q86656
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/086/Q86656/
 	
 	=============================================================================
 	
+
+{% endraw %}

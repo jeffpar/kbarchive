@@ -6,6 +6,8 @@ permalink: /kb/145/Q145261/
 
 ## Q145261: WD97: Can't Print Multiple Copies from Word
 
+{% raw %}
+
 	Article: Q145261
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -235,3 +237,5 @@ permalink: /kb/145/Q145261/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85336/
 
 ## Q85336: FAX: Fax Access Component
 
+{% raw %}
+
 	Article: Q85336
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/085/Q85336/
 	
 	=============================================================================
 	
+
+{% endraw %}

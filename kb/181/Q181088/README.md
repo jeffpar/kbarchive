@@ -6,6 +6,8 @@ permalink: /kb/181/Q181088/
 
 ## Q181088: Windows 95 DFS Client Switches Drive Mappings to DFS Shares
 
+{% raw %}
+
 	Article: Q181088
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/181/Q181088/
 	
 	=============================================================================
 	
+
+{% endraw %}

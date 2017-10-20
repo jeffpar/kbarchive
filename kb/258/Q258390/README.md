@@ -6,6 +6,8 @@ permalink: /kb/258/Q258390/
 
 ## Q258390: Baseball 2001: Textures for the Players and Crowd Are Distorted
 
+{% raw %}
+
 	Article: Q258390
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/258/Q258390/
 	
 	=============================================================================
 	
+
+{% endraw %}

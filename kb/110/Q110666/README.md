@@ -6,6 +6,8 @@ permalink: /kb/110/Q110666/
 
 ## Q110666: Server Services Fail when Start Configuration Changed
 
+{% raw %}
+
 	Article: Q110666
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0
@@ -116,3 +118,5 @@ permalink: /kb/110/Q110666/
 	
 	=============================================================================
 	
+
+{% endraw %}

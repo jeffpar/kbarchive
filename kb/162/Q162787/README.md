@@ -6,6 +6,8 @@ permalink: /kb/162/Q162787/
 
 ## Q162787: Access Denied Error with User Manager or Server Manager
 
+{% raw %}
+
 	Article: Q162787
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -50,3 +52,5 @@ permalink: /kb/162/Q162787/
 	
 	=============================================================================
 	
+
+{% endraw %}

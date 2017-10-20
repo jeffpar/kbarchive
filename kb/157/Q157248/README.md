@@ -6,6 +6,8 @@ permalink: /kb/157/Q157248/
 
 ## Q157248: Contents of Soccer Readme.txt
 
+{% raw %}
+
 	Article: Q157248
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -980,3 +982,5 @@ permalink: /kb/157/Q157248/
 	
 	=============================================================================
 	
+
+{% endraw %}

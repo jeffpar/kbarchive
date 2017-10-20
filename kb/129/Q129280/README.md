@@ -6,6 +6,8 @@ permalink: /kb/129/Q129280/
 
 ## Q129280: HOWTO: Change the Color of the Active Cell in a Grid
 
+{% raw %}
+
 	Article: Q129280
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/129/Q129280/
 	
 	=============================================================================
 	
+
+{% endraw %}

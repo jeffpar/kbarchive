@@ -6,6 +6,8 @@ permalink: /kb/177/Q177718/
 
 ## Q177718: CC: A Bridge Too Far: Err Msg: &quot;Unable to Start the Program...&quot;
 
+{% raw %}
+
 	Article: Q177718
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -83,3 +85,5 @@ permalink: /kb/177/Q177718/
 	
 	=============================================================================
 	
+
+{% endraw %}

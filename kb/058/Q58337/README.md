@@ -6,6 +6,8 @@ permalink: /kb/058/Q58337/
 
 ## Q58337: Windows 3.0 WIN.INI &#91;intl&#93; Section
 
+{% raw %}
+
 	Article: Q58337
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -317,3 +319,5 @@ permalink: /kb/058/Q58337/
 	
 	=============================================================================
 	
+
+{% endraw %}

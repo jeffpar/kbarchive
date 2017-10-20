@@ -6,6 +6,8 @@ permalink: /kb/175/Q175777/
 
 ## Q175777: XWEB: Outlook Web Access Attachments are Received Empty
 
+{% raw %}
+
 	Article: Q175777
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -57,3 +59,5 @@ permalink: /kb/175/Q175777/
 	
 	=============================================================================
 	
+
+{% endraw %}

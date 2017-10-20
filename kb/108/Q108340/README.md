@@ -6,6 +6,8 @@ permalink: /kb/108/Q108340/
 
 ## Q108340: HOWTO: Determine Visual Basic 3.0 Trappable Errors
 
+{% raw %}
+
 	Article: Q108340
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -99,3 +101,5 @@ permalink: /kb/108/Q108340/
 	
 	=============================================================================
 	
+
+{% endraw %}

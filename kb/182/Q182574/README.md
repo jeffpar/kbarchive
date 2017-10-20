@@ -6,6 +6,8 @@ permalink: /kb/182/Q182574/
 
 ## Q182574: SNA Server Stops Forwarding FMH-5 Attach Messages
 
+{% raw %}
+
 	Article: Q182574
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -86,3 +88,5 @@ permalink: /kb/182/Q182574/
 	
 	=============================================================================
 	
+
+{% endraw %}

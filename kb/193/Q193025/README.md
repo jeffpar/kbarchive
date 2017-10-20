@@ -6,6 +6,8 @@ permalink: /kb/193/Q193025/
 
 ## Q193025: FIX: Cannot Dynamically Add a Non-Licensed MFC Control
 
+{% raw %}
+
 	Article: Q193025
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -152,3 +154,5 @@ permalink: /kb/193/Q193025/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176467/
 
 ## Q176467: XGEN: User32.dll Error When Trying to Start Exchange Component
 
+{% raw %}
+
 	Article: Q176467
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/176/Q176467/
 	
 	=============================================================================
 	
+
+{% endraw %}

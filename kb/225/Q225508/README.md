@@ -6,6 +6,8 @@ permalink: /kb/225/Q225508/
 
 ## Q225508: Support Folder for BackOffice Server 4.5 Is Located on CD-ROM 3
 
+{% raw %}
+
 	Article: Q225508
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -46,3 +48,5 @@ permalink: /kb/225/Q225508/
 	
 	=============================================================================
 	
+
+{% endraw %}

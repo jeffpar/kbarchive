@@ -6,6 +6,8 @@ permalink: /kb/173/Q173565/
 
 ## Q173565: SMS: Err: &quot;Cannot Establish a Security Context with the Client&quot;
 
+{% raw %}
+
 	Article: Q173565
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -116,3 +118,5 @@ permalink: /kb/173/Q173565/
 	
 	=============================================================================
 	
+
+{% endraw %}

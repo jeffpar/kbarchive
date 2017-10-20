@@ -6,6 +6,8 @@ permalink: /kb/119/Q119561/
 
 ## Q119561: PC Forms: Cross-Platform E-Forms Not Supported
 
+{% raw %}
+
 	Article: Q119561
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -55,3 +57,5 @@ permalink: /kb/119/Q119561/
 	
 	=============================================================================
 	
+
+{% endraw %}

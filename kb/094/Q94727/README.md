@@ -6,6 +6,8 @@ permalink: /kb/094/Q94727/
 
 ## Q94727: WinStar Graphics Card Incompatible with Windows VGA
 
+{% raw %}
+
 	Article: Q94727
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/094/Q94727/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110817/
 
 ## Q110817: Mac Srv: Server Detect Message Displays Asterisk for Zone Name
 
+{% raw %}
+
 	Article: Q110817
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1d
@@ -58,3 +60,5 @@ permalink: /kb/110/Q110817/
 	
 	=============================================================================
 	
+
+{% endraw %}

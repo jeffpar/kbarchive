@@ -6,6 +6,8 @@ permalink: /kb/103/Q103167/
 
 ## Q103167: SYSEDIT Err Msg: Cannot Open This File
 
+{% raw %}
+
 	Article: Q103167
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -84,3 +86,5 @@ permalink: /kb/103/Q103167/
 	
 	=============================================================================
 	
+
+{% endraw %}

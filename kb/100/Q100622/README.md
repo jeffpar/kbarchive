@@ -6,6 +6,8 @@ permalink: /kb/100/Q100622/
 
 ## Q100622: Err Msg: Sector Size Too Large with Corel Drivers
 
+{% raw %}
+
 	Article: Q100622
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0,6.0,6.2
@@ -55,3 +57,5 @@ permalink: /kb/100/Q100622/
 	
 	=============================================================================
 	
+
+{% endraw %}

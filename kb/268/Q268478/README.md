@@ -6,6 +6,8 @@ permalink: /kb/268/Q268478/
 
 ## Q268478: PRB: _CLIPTEXT Loses Line Feeds (ASCII 10)
 
+{% raw %}
+
 	Article: Q268478
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -118,3 +120,5 @@ permalink: /kb/268/Q268478/
 	
 	=============================================================================
 	
+
+{% endraw %}

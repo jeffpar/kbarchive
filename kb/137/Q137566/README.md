@@ -6,6 +6,8 @@ permalink: /kb/137/Q137566/
 
 ## Q137566: Macintosh Clients Not Printing in Color on PCL Color Printer
 
+{% raw %}
+
 	Article: Q137566
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -51,3 +53,5 @@ permalink: /kb/137/Q137566/
 	
 	=============================================================================
 	
+
+{% endraw %}

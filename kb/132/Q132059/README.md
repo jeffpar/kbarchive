@@ -6,6 +6,8 @@ permalink: /kb/132/Q132059/
 
 ## Q132059: PC Gen: Summary List of Mail for PC Networks 3.5 Bug Fixes
 
+{% raw %}
+
 	Article: Q132059
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -797,3 +799,5 @@ permalink: /kb/132/Q132059/
 	
 	=============================================================================
 	
+
+{% endraw %}

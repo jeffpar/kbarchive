@@ -6,6 +6,8 @@ permalink: /kb/312/Q312501/
 
 ## Q312501: HOW TO: Change the LDAP Port for Exchange Server 5.5
 
+{% raw %}
+
 	Article: Q312501
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -76,3 +78,5 @@ permalink: /kb/312/Q312501/
 	
 	=============================================================================
 	
+
+{% endraw %}

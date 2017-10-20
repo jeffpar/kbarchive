@@ -6,6 +6,8 @@ permalink: /kb/163/Q163786/
 
 ## Q163786: PRB: Setup Requires Long Filename Support
 
+{% raw %}
+
 	Article: Q163786
 	Product(s): Microsoft FoxPro
 	Version(s): 5.00a
@@ -74,3 +76,5 @@ permalink: /kb/163/Q163786/
 	
 	=============================================================================
 	
+
+{% endraw %}

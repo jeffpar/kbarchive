@@ -6,6 +6,8 @@ permalink: /kb/119/Q119930/
 
 ## Q119930: Space: Situation Description Is Editable When Opening
 
+{% raw %}
+
 	Article: Q119930
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -60,3 +62,5 @@ permalink: /kb/119/Q119930/
 	
 	=============================================================================
 	
+
+{% endraw %}

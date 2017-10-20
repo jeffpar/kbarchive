@@ -6,6 +6,8 @@ permalink: /kb/172/Q172302/
 
 ## Q172302: Domain Synchronization Fails With 5730 or 5731 and 5716
 
+{% raw %}
+
 	Article: Q172302
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -115,3 +117,5 @@ permalink: /kb/172/Q172302/
 	
 	=============================================================================
 	
+
+{% endraw %}

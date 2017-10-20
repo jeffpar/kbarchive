@@ -6,6 +6,8 @@ permalink: /kb/139/Q139145/
 
 ## Q139145: FIX: Text Shifts to the Left and Down Slightly in a Grid
 
+{% raw %}
+
 	Article: Q139145
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0
@@ -76,3 +78,5 @@ permalink: /kb/139/Q139145/
 	
 	=============================================================================
 	
+
+{% endraw %}

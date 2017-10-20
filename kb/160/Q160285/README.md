@@ -6,6 +6,8 @@ permalink: /kb/160/Q160285/
 
 ## Q160285: STOP 0x0000000a in Ntoskrnl.exe with InocuLAN Virus Software
 
+{% raw %}
+
 	Article: Q160285
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -56,3 +58,5 @@ permalink: /kb/160/Q160285/
 	
 	=============================================================================
 	
+
+{% endraw %}

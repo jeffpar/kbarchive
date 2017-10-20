@@ -6,6 +6,8 @@ permalink: /kb/274/Q274018/
 
 ## Q274018: Err Msg When Receive Load Balancing Is Enabled with Netmon
 
+{% raw %}
+
 	Article: Q274018
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -59,3 +61,5 @@ permalink: /kb/274/Q274018/
 	
 	=============================================================================
 	
+
+{% endraw %}

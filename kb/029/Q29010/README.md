@@ -6,6 +6,8 @@ permalink: /kb/029/Q29010/
 
 ## Q29010: How Arrays of Fixed- and Variable-Length Strings Use Up Memory
 
+{% raw %}
+
 	Article: Q29010
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -97,3 +99,5 @@ permalink: /kb/029/Q29010/
 	programs.
 	
 	Note that 1K is equal to 1024 bytes.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130946/
 
 ## Q130946: Troubleshooting Windows 95 Backup
 
+{% raw %}
+
 	Article: Q130946
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -205,3 +207,5 @@ permalink: /kb/130/Q130946/
 	
 	=============================================================================
 	
+
+{% endraw %}

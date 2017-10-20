@@ -6,6 +6,8 @@ permalink: /kb/193/Q193316/
 
 ## Q193316: XFOR: How to Create Addresses of Form &quot;user@&#91;IP Address&#93;&quot;
 
+{% raw %}
+
 	Article: Q193316
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -89,3 +91,5 @@ permalink: /kb/193/Q193316/
 	
 	=============================================================================
 	
+
+{% endraw %}

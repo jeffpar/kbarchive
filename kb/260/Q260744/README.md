@@ -6,6 +6,8 @@ permalink: /kb/260/Q260744/
 
 ## Q260744: HOWTO: Set ActiveX Control Design-Time Properties at Run Time
 
+{% raw %}
+
 	Article: Q260744
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -88,3 +90,5 @@ permalink: /kb/260/Q260744/
 	
 	=============================================================================
 	
+
+{% endraw %}

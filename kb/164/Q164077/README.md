@@ -6,6 +6,8 @@ permalink: /kb/164/Q164077/
 
 ## Q164077: How to Obtain SNA Version 2.11 U.S. Service Pack
 
+{% raw %}
+
 	Article: Q164077
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11,2.11 SP2
@@ -136,3 +138,5 @@ permalink: /kb/164/Q164077/
 	
 	=============================================================================
 	
+
+{% endraw %}

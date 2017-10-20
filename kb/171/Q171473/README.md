@@ -6,6 +6,8 @@ permalink: /kb/171/Q171473/
 
 ## Q171473: FIX: MCI32.OCX Does Not Save Recorded .WAV Files
 
+{% raw %}
+
 	Article: Q171473
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -93,3 +95,5 @@ permalink: /kb/171/Q171473/
 	
 	=============================================================================
 	
+
+{% endraw %}

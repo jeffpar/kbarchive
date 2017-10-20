@@ -6,6 +6,8 @@ permalink: /kb/104/Q104349/
 
 ## Q104349: PRB: SetupWizard .INF File Contains a Bad Description Line
 
+{% raw %}
+
 	Article: Q104349
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,2.6,3.0
@@ -64,3 +66,5 @@ permalink: /kb/104/Q104349/
 	
 	=============================================================================
 	
+
+{% endraw %}

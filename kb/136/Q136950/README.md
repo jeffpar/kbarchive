@@ -6,6 +6,8 @@ permalink: /kb/136/Q136950/
 
 ## Q136950: Delay in Running Programs If CSNW Cannot Find Preferred Server
 
+{% raw %}
+
 	Article: Q136950
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -58,3 +60,5 @@ permalink: /kb/136/Q136950/
 	
 	=============================================================================
 	
+
+{% endraw %}

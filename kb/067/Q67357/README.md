@@ -6,6 +6,8 @@ permalink: /kb/067/Q67357/
 
 ## Q67357: Void _saveregs Function Does Not Preserve AX Register
 
+{% raw %}
+
 	Article: Q67357
 	Product(s): See article
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/067/Q67357/
 	Microsoft has confirmed this to be a problem in C versions 6.00 and
 	6.00a and QuickC version 2.50 (buglist2.50). We are researching this
 	problem and will post new information here as it becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186624/
 
 ## Q186624: Terminal Server Client Shortcut Key Combinations
 
+{% raw %}
+
 	Article: Q186624
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,2000 SP2,4.0,4.0 SP6
@@ -76,3 +78,5 @@ permalink: /kb/186/Q186624/
 	
 	=============================================================================
 	
+
+{% endraw %}

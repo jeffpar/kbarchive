@@ -6,6 +6,8 @@ permalink: /kb/086/Q86317/
 
 ## Q86317: PC Win: Message Finder Icon Does Not Update
 
+{% raw %}
+
 	Article: Q86317
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -43,3 +45,5 @@ permalink: /kb/086/Q86317/
 	
 	=============================================================================
 	
+
+{% endraw %}

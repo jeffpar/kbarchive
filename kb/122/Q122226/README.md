@@ -6,6 +6,8 @@ permalink: /kb/122/Q122226/
 
 ## Q122226: HOWTO: Change the Method of Selecting Multiple Controls
 
+{% raw %}
+
 	Article: Q122226
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,5.0,6.0
@@ -76,3 +78,5 @@ permalink: /kb/122/Q122226/
 	
 	=============================================================================
 	
+
+{% endraw %}

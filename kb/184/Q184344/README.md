@@ -6,6 +6,8 @@ permalink: /kb/184/Q184344/
 
 ## Q184344: Reconcile on DHCP Scope Does Not Work Correctly for BOOTP Client
 
+{% raw %}
+
 	Article: Q184344
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -71,3 +73,5 @@ permalink: /kb/184/Q184344/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129764/
 
 ## Q129764: ProShare 1.8 Hangs Accessing Data on Remote Computer
 
+{% raw %}
+
 	Article: Q129764
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -69,3 +71,5 @@ permalink: /kb/129/Q129764/
 	
 	=============================================================================
 	
+
+{% endraw %}

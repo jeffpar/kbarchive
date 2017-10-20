@@ -6,6 +6,8 @@ permalink: /kb/136/Q136589/
 
 ## Q136589: How to Use Wzsetup.ini &amp; Defaults Created by the Setup Wizard
 
+{% raw %}
+
 	Article: Q136589
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/136/Q136589/
 	
 	=============================================================================
 	
+
+{% endraw %}

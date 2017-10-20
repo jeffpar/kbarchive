@@ -6,6 +6,8 @@ permalink: /kb/132/Q132903/
 
 ## Q132903: Err Msg Using NetBIOS over TCP/IP (NETBT.SYS): STOP 0x0000000A
 
+{% raw %}
+
 	Article: Q132903
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -54,3 +56,5 @@ permalink: /kb/132/Q132903/
 	
 	=============================================================================
 	
+
+{% endraw %}

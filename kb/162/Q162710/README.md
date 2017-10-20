@@ -6,6 +6,8 @@ permalink: /kb/162/Q162710/
 
 ## Q162710: WD97: Drawing Objects Incorrect (WD 97 File Opened in 6.x /7.x)
 
+{% raw %}
+
 	Article: Q162710
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -87,3 +89,5 @@ permalink: /kb/162/Q162710/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171746/
 
 ## Q171746: PRB: ListBox/ComboBox Picture Won't Display If Defined in Class
 
+{% raw %}
+
 	Article: Q171746
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -142,3 +144,5 @@ permalink: /kb/171/Q171746/
 	
 	=============================================================================
 	
+
+{% endraw %}

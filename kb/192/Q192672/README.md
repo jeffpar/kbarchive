@@ -6,6 +6,8 @@ permalink: /kb/192/Q192672/
 
 ## Q192672: SMS: Network Monitor: &quot;Bad Month Format&quot;
 
+{% raw %}
+
 	Article: Q192672
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -61,3 +63,5 @@ permalink: /kb/192/Q192672/
 	
 	=============================================================================
 	
+
+{% endraw %}

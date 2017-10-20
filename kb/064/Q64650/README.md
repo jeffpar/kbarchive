@@ -6,6 +6,8 @@ permalink: /kb/064/Q64650/
 
 ## Q64650: Bitstream Screen Fonts and 8514/A with Windows 3.0
 
+{% raw %}
+
 	Article: Q64650
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/064/Q64650/
 	
 	=============================================================================
 	
+
+{% endraw %}

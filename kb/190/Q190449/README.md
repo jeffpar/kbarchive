@@ -6,6 +6,8 @@ permalink: /kb/190/Q190449/
 
 ## Q190449: Corrupted SAM Hangs Windows NT Server
 
+{% raw %}
+
 	Article: Q190449
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/190/Q190449/
 	
 	=============================================================================
 	
+
+{% endraw %}

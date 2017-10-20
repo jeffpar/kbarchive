@@ -6,6 +6,8 @@ permalink: /kb/157/Q157624/
 
 ## Q157624: Error Recording Opening Template with WordBasic Macro
 
+{% raw %}
+
 	Article: Q157624
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/157/Q157624/
 	
 	=============================================================================
 	
+
+{% endraw %}

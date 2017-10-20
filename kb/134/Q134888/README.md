@@ -6,6 +6,8 @@ permalink: /kb/134/Q134888/
 
 ## Q134888: BUG: GDI Memory Not Released in Windows 95 After Memory Error
 
+{% raw %}
+
 	Article: Q134888
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
@@ -101,3 +103,5 @@ permalink: /kb/134/Q134888/
 	
 	=============================================================================
 	
+
+{% endraw %}

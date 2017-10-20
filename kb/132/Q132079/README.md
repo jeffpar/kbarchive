@@ -6,6 +6,8 @@ permalink: /kb/132/Q132079/
 
 ## Q132079: HOWTO: How to Access CMemFile Directly When Using It with CArchi
 
+{% raw %}
+
 	Article: Q132079
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1; :1.0,2.0,2.1,2.2,4.0,4.1
@@ -63,3 +65,5 @@ permalink: /kb/132/Q132079/
 	
 	=============================================================================
 	
+
+{% endraw %}

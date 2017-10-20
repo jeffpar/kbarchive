@@ -6,6 +6,8 @@ permalink: /kb/155/Q155380/
 
 ## Q155380: XCLN: Unable to Load Top Level Information
 
+{% raw %}
+
 	Article: Q155380
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -88,3 +90,5 @@ permalink: /kb/155/Q155380/
 	
 	=============================================================================
 	
+
+{% endraw %}

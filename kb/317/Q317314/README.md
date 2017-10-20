@@ -6,6 +6,8 @@ permalink: /kb/317/Q317314/
 
 ## Q317314: Midtown Madness 2: Game Is Excessively Slow to Start
 
+{% raw %}
+
 	Article: Q317314
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -82,3 +84,5 @@ permalink: /kb/317/Q317314/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216065/
 
 ## Q216065: XFOR: PROFS: LME-PROFS-DIAMEX Fails to Process the Incoming Mess
 
+{% raw %}
+
 	Article: Q216065
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -79,3 +81,5 @@ permalink: /kb/216/Q216065/
 	
 	=============================================================================
 	
+
+{% endraw %}

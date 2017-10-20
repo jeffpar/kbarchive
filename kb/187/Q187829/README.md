@@ -6,6 +6,8 @@ permalink: /kb/187/Q187829/
 
 ## Q187829: XCLN: ShivaRemote Connectivity with Windows 3.1x &amp; WinNT RAS
 
+{% raw %}
+
 	Article: Q187829
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,8.0
@@ -145,3 +147,5 @@ permalink: /kb/187/Q187829/
 	
 	=============================================================================
 	
+
+{% endraw %}

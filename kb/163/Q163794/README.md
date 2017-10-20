@@ -6,6 +6,8 @@ permalink: /kb/163/Q163794/
 
 ## Q163794: HOWTO: Save and Restore Grid Column Order and Widths
 
+{% raw %}
+
 	Article: Q163794
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -130,3 +132,5 @@ permalink: /kb/163/Q163794/
 	
 	=============================================================================
 	
+
+{% endraw %}

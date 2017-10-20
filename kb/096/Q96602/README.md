@@ -6,6 +6,8 @@ permalink: /kb/096/Q96602/
 
 ## Q96602: Video Problems with ATI Mach 32 Series Drivers
 
+{% raw %}
+
 	Article: Q96602
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.0a
@@ -83,3 +85,5 @@ permalink: /kb/096/Q96602/
 	
 	=============================================================================
 	
+
+{% endraw %}

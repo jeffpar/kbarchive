@@ -6,6 +6,8 @@ permalink: /kb/185/Q185670/
 
 ## Q185670: WD97: Error Message: This Equation Is the Maximum Size Allowed
 
+{% raw %}
+
 	Article: Q185670
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/185/Q185670/
 	
 	=============================================================================
 	
+
+{% endraw %}

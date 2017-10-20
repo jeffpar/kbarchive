@@ -6,6 +6,8 @@ permalink: /kb/156/Q156237/
 
 ## Q156237: PRB: Report Designer/Preview Needs VFP Desktop to Display
 
+{% raw %}
+
 	Article: Q156237
 	Product(s): Microsoft FoxPro
 	Version(s): 5.00
@@ -164,3 +166,5 @@ permalink: /kb/156/Q156237/
 	
 	=============================================================================
 	
+
+{% endraw %}

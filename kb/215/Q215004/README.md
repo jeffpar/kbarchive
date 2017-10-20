@@ -6,6 +6,8 @@ permalink: /kb/215/Q215004/
 
 ## Q215004: Hardware Inventory Fails When Windows Management Is Removed
 
+{% raw %}
+
 	Article: Q215004
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/215/Q215004/
 	
 	=============================================================================
 	
+
+{% endraw %}

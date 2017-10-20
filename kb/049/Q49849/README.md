@@ -6,6 +6,8 @@ permalink: /kb/049/Q49849/
 
 ## Q49849: Deleting Temporary Files Created by MS-DOS Shell
 
+{% raw %}
+
 	Article: Q49849
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.0,4.01,5.0
@@ -84,3 +86,5 @@ permalink: /kb/049/Q49849/
 	
 	=============================================================================
 	
+
+{% endraw %}

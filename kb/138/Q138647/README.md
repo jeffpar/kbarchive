@@ -6,6 +6,8 @@ permalink: /kb/138/Q138647/
 
 ## Q138647: How to Check for a Missing Table in a Database Container
 
+{% raw %}
+
 	Article: Q138647
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -71,3 +73,5 @@ permalink: /kb/138/Q138647/
 	
 	=============================================================================
 	
+
+{% endraw %}

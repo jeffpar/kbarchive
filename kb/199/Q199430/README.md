@@ -6,6 +6,8 @@ permalink: /kb/199/Q199430/
 
 ## Q199430: XFOR: Err Msg: Initialization of the Dynamic Link Library
 
+{% raw %}
+
 	Article: Q199430
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -97,3 +99,5 @@ permalink: /kb/199/Q199430/
 	
 	=============================================================================
 	
+
+{% endraw %}

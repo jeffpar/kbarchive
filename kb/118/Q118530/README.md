@@ -6,6 +6,8 @@ permalink: /kb/118/Q118530/
 
 ## Q118530: SMTP: When Gateway UUENCODEs Attachments
 
+{% raw %}
+
 	Article: Q118530
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -53,3 +55,5 @@ permalink: /kb/118/Q118530/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146504/
 
 ## Q146504: XADM: Installing Exchange Server Allows Selection of Group
 
+{% raw %}
+
 	Article: Q146504
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/146/Q146504/
 	
 	=============================================================================
 	
+
+{% endraw %}

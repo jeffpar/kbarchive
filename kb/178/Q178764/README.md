@@ -6,6 +6,8 @@ permalink: /kb/178/Q178764/
 
 ## Q178764: Automatically Adding Recipients to the Personal Address Book
 
+{% raw %}
+
 	Article: Q178764
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,8.00,8.01,8.02,8.03
@@ -54,3 +56,5 @@ permalink: /kb/178/Q178764/
 	
 	=============================================================================
 	
+
+{% endraw %}

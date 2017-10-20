@@ -6,6 +6,8 @@ permalink: /kb/135/Q135324/
 
 ## Q135324: PPT7: Running a Peer-to-Peer Presentation Conference
 
+{% raw %}
+
 	Article: Q135324
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -104,3 +106,5 @@ permalink: /kb/135/Q135324/
 	
 	=============================================================================
 	
+
+{% endraw %}

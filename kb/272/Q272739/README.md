@@ -6,6 +6,8 @@ permalink: /kb/272/Q272739/
 
 ## Q272739: BUG: C2876 with using Declaration on Private Base Class Member
 
+{% raw %}
+
 	Article: Q272739
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -75,3 +77,5 @@ permalink: /kb/272/Q272739/
 	
 	=============================================================================
 	
+
+{% endraw %}

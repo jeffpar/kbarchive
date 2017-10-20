@@ -6,6 +6,8 @@ permalink: /kb/134/Q134795/
 
 ## Q134795: Streets 4.0: &quot;No Place Near&quot; Message When Clicking Map Edge
 
+{% raw %}
+
 	Article: Q134795
 	Product(s): Microsoft Automap
 	Version(s): 4.00
@@ -53,3 +55,5 @@ permalink: /kb/134/Q134795/
 	
 	=============================================================================
 	
+
+{% endraw %}

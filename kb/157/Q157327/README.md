@@ -6,6 +6,8 @@ permalink: /kb/157/Q157327/
 
 ## Q157327: Windows NT May Hang Using SNA Server 2.11 SP1 w/Digi Sync SDLC
 
+{% raw %}
+
 	Article: Q157327
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -64,3 +66,5 @@ permalink: /kb/157/Q157327/
 	
 	=============================================================================
 	
+
+{% endraw %}

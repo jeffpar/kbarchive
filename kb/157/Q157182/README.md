@@ -6,6 +6,8 @@ permalink: /kb/157/Q157182/
 
 ## Q157182: FPNW Causes STOP 0x50 When Connection Is Closed Twice
 
+{% raw %}
+
 	Article: Q157182
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/157/Q157182/
 	
 	=============================================================================
 	
+
+{% endraw %}

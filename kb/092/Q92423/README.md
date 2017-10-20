@@ -6,6 +6,8 @@ permalink: /kb/092/Q92423/
 
 ## Q92423: Works for Windows Cannot Be Used to Author Help Files
 
+{% raw %}
+
 	Article: Q92423
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -43,3 +45,5 @@ permalink: /kb/092/Q92423/
 	
 	=============================================================================
 	
+
+{% endraw %}

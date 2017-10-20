@@ -6,6 +6,8 @@ permalink: /kb/197/Q197161/
 
 ## Q197161: SYSDIFF /INF Uses Decimal Format for REG_DWORD Values
 
+{% raw %}
+
 	Article: Q197161
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/197/Q197161/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112521/
 
 ## Q112521: Changing CD on SFM Causes Mac Client Error
 
+{% raw %}
+
 	Article: Q112521
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -50,3 +52,5 @@ permalink: /kb/112/Q112521/
 	
 	=============================================================================
 	
+
+{% endraw %}

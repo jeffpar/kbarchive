@@ -6,6 +6,8 @@ permalink: /kb/166/Q166532/
 
 ## Q166532: XFOR: Incorrect Codepage SJIS Used When JIS Set as Default
 
+{% raw %}
+
 	Article: Q166532
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -47,3 +49,5 @@ permalink: /kb/166/Q166532/
 	
 	=============================================================================
 	
+
+{% endraw %}

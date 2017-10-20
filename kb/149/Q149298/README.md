@@ -6,6 +6,8 @@ permalink: /kb/149/Q149298/
 
 ## Q149298: Not Reminded at Correct Time in Full Screen Command Prompt
 
+{% raw %}
+
 	Article: Q149298
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -42,3 +44,5 @@ permalink: /kb/149/Q149298/
 	
 	=============================================================================
 	
+
+{% endraw %}

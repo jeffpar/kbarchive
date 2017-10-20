@@ -6,6 +6,8 @@ permalink: /kb/261/Q261135/
 
 ## Q261135: XADM: Information Store Access Violation w. STAT Command
 
+{% raw %}
+
 	Article: Q261135
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -75,3 +77,5 @@ permalink: /kb/261/Q261135/
 	
 	=============================================================================
 	
+
+{% endraw %}

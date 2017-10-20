@@ -6,6 +6,8 @@ permalink: /kb/258/Q258536/
 
 ## Q258536: FIX: UPARROW Key Doesn't Work in Code Editor in Hebrew Windows
 
+{% raw %}
+
 	Article: Q258536
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -85,3 +87,5 @@ permalink: /kb/258/Q258536/
 	
 	=============================================================================
 	
+
+{% endraw %}

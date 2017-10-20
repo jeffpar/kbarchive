@@ -6,6 +6,8 @@ permalink: /kb/248/Q248032/
 
 ## Q248032: Err Msg: Forbidden: Site Access Denied 403.8
 
+{% raw %}
+
 	Article: Q248032
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -75,3 +77,5 @@ permalink: /kb/248/Q248032/
 	
 	=============================================================================
 	
+
+{% endraw %}

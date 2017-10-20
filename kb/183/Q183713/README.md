@@ -6,6 +6,8 @@ permalink: /kb/183/Q183713/
 
 ## Q183713: XADM: How To Use Filever.exe To Verify File Versions
 
+{% raw %}
+
 	Article: Q183713
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -75,3 +77,5 @@ permalink: /kb/183/Q183713/
 	
 	=============================================================================
 	
+
+{% endraw %}

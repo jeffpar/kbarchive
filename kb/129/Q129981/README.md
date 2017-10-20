@@ -6,6 +6,8 @@ permalink: /kb/129/Q129981/
 
 ## Q129981: FIX: Custom Form Property Set to () Causes Infinite Loop
 
+{% raw %}
+
 	Article: Q129981
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -85,3 +87,5 @@ permalink: /kb/129/Q129981/
 	
 	=============================================================================
 	
+
+{% endraw %}

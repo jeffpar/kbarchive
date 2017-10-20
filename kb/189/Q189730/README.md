@@ -6,6 +6,8 @@ permalink: /kb/189/Q189730/
 
 ## Q189730: XFOR: IMC Fails to Start After Upgrading to Windows NT 4.0
 
+{% raw %}
+
 	Article: Q189730
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -68,3 +70,5 @@ permalink: /kb/189/Q189730/
 	
 	=============================================================================
 	
+
+{% endraw %}

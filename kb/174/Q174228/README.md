@@ -6,6 +6,8 @@ permalink: /kb/174/Q174228/
 
 ## Q174228: STOP Cx0000009A After Trying to Regain Multiprocessor Support
 
+{% raw %}
+
 	Article: Q174228
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -76,3 +78,5 @@ permalink: /kb/174/Q174228/
 	
 	=============================================================================
 	
+
+{% endraw %}

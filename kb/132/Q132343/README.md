@@ -6,6 +6,8 @@ permalink: /kb/132/Q132343/
 
 ## Q132343: Err Msg on AST Manhattan: STOP: 0x0000000A
 
+{% raw %}
+
 	Article: Q132343
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/132/Q132343/
 	
 	=============================================================================
 	
+
+{% endraw %}

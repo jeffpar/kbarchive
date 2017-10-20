@@ -6,6 +6,8 @@ permalink: /kb/296/Q296831/
 
 ## Q296831: Programming Windows, Fifth Edition Comments and Corrections
 
+{% raw %}
+
 	Article: Q296831
 	Product(s): Microsoft Press
 	Version(s): 
@@ -104,3 +106,5 @@ permalink: /kb/296/Q296831/
 	
 	=============================================================================
 	
+
+{% endraw %}

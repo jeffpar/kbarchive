@@ -6,6 +6,8 @@ permalink: /kb/045/Q45423/
 
 ## Q45423: Example to Get and Set File Attributes in QuickBASIC
 
+{% raw %}
+
 	Article: Q45423
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -67,3 +69,5 @@ permalink: /kb/045/Q45423/
 	  IF status% AND 16 THEN PRINT "directory"
 	  IF status% AND SETARCHIVE THEN PRINT "archive"
 	END SUB
+
+{% endraw %}

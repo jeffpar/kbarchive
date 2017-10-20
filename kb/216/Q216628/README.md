@@ -6,6 +6,8 @@ permalink: /kb/216/Q216628/
 
 ## Q216628: WD97: Error Message: &quot;Word Cannot Open the Document&quot;
 
+{% raw %}
+
 	Article: Q216628
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -237,3 +239,5 @@ permalink: /kb/216/Q216628/
 	
 	=============================================================================
 	
+
+{% endraw %}

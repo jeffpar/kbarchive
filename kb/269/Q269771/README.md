@@ -6,6 +6,8 @@ permalink: /kb/269/Q269771/
 
 ## Q269771: XIMS: Configuring the Internet Mail Service to Send an ETRN
 
+{% raw %}
+
 	Article: Q269771
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -54,3 +56,5 @@ permalink: /kb/269/Q269771/
 	
 	=============================================================================
 	
+
+{% endraw %}

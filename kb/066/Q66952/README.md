@@ -6,6 +6,8 @@ permalink: /kb/066/Q66952/
 
 ## Q66952: Using CVW on an IBM PS/2 or Other 8514/a System
 
+{% raw %}
+
 	Article: Q66952
 	Product(s): Microsoft Programming Utilities
 	Version(s): 3.05,4.0,4.1
@@ -76,3 +78,5 @@ permalink: /kb/066/Q66952/
 	
 	=============================================================================
 	
+
+{% endraw %}

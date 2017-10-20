@@ -6,6 +6,8 @@ permalink: /kb/238/Q238959/
 
 ## Q238959: SMS: Access Violation in Winmgmt.exe
 
+{% raw %}
+
 	Article: Q238959
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,3.0
@@ -72,3 +74,5 @@ permalink: /kb/238/Q238959/
 	
 	=============================================================================
 	
+
+{% endraw %}

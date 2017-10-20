@@ -6,6 +6,8 @@ permalink: /kb/090/Q90324/
 
 ## Q90324: Workgroups Mail and Mail 3.0 Do Not Work with COMPAQ DOS 3.31
 
+{% raw %}
+
 	Article: Q90324
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/090/Q90324/
 	
 	=============================================================================
 	
+
+{% endraw %}

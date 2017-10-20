@@ -6,6 +6,8 @@ permalink: /kb/153/Q153330/
 
 ## Q153330: PGC Cannot Find Server with NetWare, WFWNET, LANMan Connections
 
+{% raw %}
+
 	Article: Q153330
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -57,3 +59,5 @@ permalink: /kb/153/Q153330/
 	
 	=============================================================================
 	
+
+{% endraw %}

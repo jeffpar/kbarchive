@@ -6,6 +6,8 @@ permalink: /kb/172/Q172393/
 
 ## Q172393: BUG: Can't Export Symbols Differing Only by Leading Underscores
 
+{% raw %}
+
 	Article: Q172393
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.0a,4.1,4.2,4.2b,5.0,6.0
@@ -225,3 +227,5 @@ permalink: /kb/172/Q172393/
 	
 	=============================================================================
 	
+
+{% endraw %}

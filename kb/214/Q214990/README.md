@@ -6,6 +6,8 @@ permalink: /kb/214/Q214990/
 
 ## Q214990: SMS: User Cannot Start Check32.exe and Check Out Licenses
 
+{% raw %}
+
 	Article: Q214990
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -65,3 +67,5 @@ permalink: /kb/214/Q214990/
 	
 	=============================================================================
 	
+
+{% endraw %}

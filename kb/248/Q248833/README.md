@@ -6,6 +6,8 @@ permalink: /kb/248/Q248833/
 
 ## Q248833: PRB: Data Control Only Displays Updated Data When Single-Step
 
+{% raw %}
+
 	Article: Q248833
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/248/Q248833/
 	
 	=============================================================================
 	
+
+{% endraw %}

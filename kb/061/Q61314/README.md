@@ -6,6 +6,8 @@ permalink: /kb/061/Q61314/
 
 ## Q61314: INFO: The Limit of Macro Expansion
 
+{% raw %}
+
 	Article: Q61314
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,2.0,2.1,5.1,6.0,6.0a,6.0ax
@@ -58,3 +60,5 @@ permalink: /kb/061/Q61314/
 	
 	=============================================================================
 	
+
+{% endraw %}

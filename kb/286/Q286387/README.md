@@ -6,6 +6,8 @@ permalink: /kb/286/Q286387/
 
 ## Q286387: SMS: Software Inventory Doesn't Update SMS Database
 
+{% raw %}
+
 	Article: Q286387
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP4
@@ -106,3 +108,5 @@ permalink: /kb/286/Q286387/
 	
 	=============================================================================
 	
+
+{% endraw %}

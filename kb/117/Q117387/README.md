@@ -6,6 +6,8 @@ permalink: /kb/117/Q117387/
 
 ## Q117387: PRB: CScrollView::FillOutsideRect() Fills Incorrectly
 
+{% raw %}
+
 	Article: Q117387
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -123,3 +125,5 @@ permalink: /kb/117/Q117387/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134640/
 
 ## Q134640: How to Force Uppercase Input by Using the Form Designer
 
+{% raw %}
+
 	Article: Q134640
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -43,3 +45,5 @@ permalink: /kb/134/Q134640/
 	
 	=============================================================================
 	
+
+{% endraw %}

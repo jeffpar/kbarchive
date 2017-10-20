@@ -6,6 +6,8 @@ permalink: /kb/111/Q111063/
 
 ## Q111063: Install Add-On Runs Setup for Other Programs
 
+{% raw %}
+
 	Article: Q111063
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -45,3 +47,5 @@ permalink: /kb/111/Q111063/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262976/
 
 ## Q262976: PRB: Err Msg &quot;Missing or Not Registered VB6tmpl.tlb&quot; in VB6
 
+{% raw %}
+
 	Article: Q262976
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -78,3 +80,5 @@ permalink: /kb/262/Q262976/
 	
 	=============================================================================
 	
+
+{% endraw %}

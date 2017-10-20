@@ -6,6 +6,8 @@ permalink: /kb/137/Q137687/
 
 ## Q137687: PPT7: Media Player Box Displays During Slide Show While Playing
 
+{% raw %}
+
 	Article: Q137687
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -80,3 +82,5 @@ permalink: /kb/137/Q137687/
 	
 	=============================================================================
 	
+
+{% endraw %}

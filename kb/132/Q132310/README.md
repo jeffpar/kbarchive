@@ -6,6 +6,8 @@ permalink: /kb/132/Q132310/
 
 ## Q132310: Cannot Detect New Hardware with Windows 3.1 Drivers Installed
 
+{% raw %}
+
 	Article: Q132310
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/132/Q132310/
 	
 	=============================================================================
 	
+
+{% endraw %}

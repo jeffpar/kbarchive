@@ -6,6 +6,8 @@ permalink: /kb/160/Q160268/
 
 ## Q160268: Missing TN3270E Header on Data to Client
 
+{% raw %}
+
 	Article: Q160268
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -78,3 +80,5 @@ permalink: /kb/160/Q160268/
 	
 	=============================================================================
 	
+
+{% endraw %}

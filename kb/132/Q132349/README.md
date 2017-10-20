@@ -6,6 +6,8 @@ permalink: /kb/132/Q132349/
 
 ## Q132349: STOP Message 0xFACEFEED on Alpha Computers
 
+{% raw %}
+
 	Article: Q132349
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/132/Q132349/
 	
 	=============================================================================
 	
+
+{% endraw %}

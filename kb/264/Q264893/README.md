@@ -6,6 +6,8 @@ permalink: /kb/264/Q264893/
 
 ## Q264893: Installer Overwrites Tmp File Using &quot;Insert Line into Text File&quot;
 
+{% raw %}
+
 	Article: Q264893
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -58,3 +60,5 @@ permalink: /kb/264/Q264893/
 	
 	=============================================================================
 	
+
+{% endraw %}

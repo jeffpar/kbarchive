@@ -6,6 +6,8 @@ permalink: /kb/132/Q132464/
 
 ## Q132464: X400: Err Msg: Error 12 (Restarting MTA):...
 
+{% raw %}
+
 	Article: Q132464
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.2
@@ -92,3 +94,5 @@ permalink: /kb/132/Q132464/
 	
 	=============================================================================
 	
+
+{% endraw %}

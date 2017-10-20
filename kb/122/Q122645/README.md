@@ -6,6 +6,8 @@ permalink: /kb/122/Q122645/
 
 ## Q122645: Copy Request on Clients Fail with GSNW in Windows NT Server
 
+{% raw %}
+
 	Article: Q122645
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -55,3 +57,5 @@ permalink: /kb/122/Q122645/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156087/
 
 ## Q156087: DOCERR: TABLEUPDATE() Improperly Documented in VFP 5.0 Help
 
+{% raw %}
+
 	Article: Q156087
 	Product(s): Microsoft FoxPro
 	Version(s): 5.00
@@ -66,3 +68,5 @@ permalink: /kb/156/Q156087/
 	
 	=============================================================================
 	
+
+{% endraw %}

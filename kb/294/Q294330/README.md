@@ -6,6 +6,8 @@ permalink: /kb/294/Q294330/
 
 ## Q294330: XADM: &quot;Exchange Computer Is Unavailable&quot; Msg in Server Monitor
 
+{% raw %}
+
 	Article: Q294330
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -68,3 +70,5 @@ permalink: /kb/294/Q294330/
 	
 	=============================================================================
 	
+
+{% endraw %}

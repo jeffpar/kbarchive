@@ -6,6 +6,8 @@ permalink: /kb/136/Q136952/
 
 ## Q136952: Windows NT 3.51 FTP Server Displays Incorrect Version Number
 
+{% raw %}
+
 	Article: Q136952
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/136/Q136952/
 	
 	=============================================================================
 	
+
+{% endraw %}

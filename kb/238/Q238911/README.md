@@ -6,6 +6,8 @@ permalink: /kb/238/Q238911/
 
 ## Q238911: XADM: Delegate Stops Receiving Meeting Requests
 
+{% raw %}
+
 	Article: Q238911
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -109,3 +111,5 @@ permalink: /kb/238/Q238911/
 	
 	=============================================================================
 	
+
+{% endraw %}

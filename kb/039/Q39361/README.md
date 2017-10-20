@@ -6,6 +6,8 @@ permalink: /kb/039/Q39361/
 
 ## Q39361: Sample Program; BASIC Invoking C Function That Returns String
 
+{% raw %}
+
 	Article: Q39361
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -59,3 +61,5 @@ permalink: /kb/039/Q39361/
 	      str_des.sd_len = strlen(cstr);
 	      return (str_des);
 	   }
+
+{% endraw %}

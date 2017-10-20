@@ -6,6 +6,8 @@ permalink: /kb/198/Q198737/
 
 ## Q198737: SMS: Changes Irreversible When Logging Components to One File
 
+{% raw %}
+
 	Article: Q198737
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/198/Q198737/
 	
 	=============================================================================
 	
+
+{% endraw %}

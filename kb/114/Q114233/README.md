@@ -6,6 +6,8 @@ permalink: /kb/114/Q114233/
 
 ## Q114233: Flight Simulator 5.0a README.DOC Contents
 
+{% raw %}
+
 	Article: Q114233
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0a
@@ -224,3 +226,5 @@ permalink: /kb/114/Q114233/
 	
 	=============================================================================
 	
+
+{% endraw %}

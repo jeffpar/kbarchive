@@ -6,6 +6,8 @@ permalink: /kb/134/Q134452/
 
 ## Q134452: Setup Does Not Detect Standard IDE Drive On IBM 9353
 
+{% raw %}
+
 	Article: Q134452
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/134/Q134452/
 	
 	=============================================================================
 	
+
+{% endraw %}

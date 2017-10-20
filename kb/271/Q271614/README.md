@@ -6,6 +6,8 @@ permalink: /kb/271/Q271614/
 
 ## Q271614: XCON: GroupWise Free and Busy Inf. Doesn't Reflect All Appts
 
+{% raw %}
+
 	Article: Q271614
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/271/Q271614/
 	
 	=============================================================================
 	
+
+{% endraw %}

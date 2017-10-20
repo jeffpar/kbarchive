@@ -6,6 +6,8 @@ permalink: /kb/126/Q126660/
 
 ## Q126660: PC Win: Images Pasted into a Mail Message Are Blank
 
+{% raw %}
+
 	Article: Q126660
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2,3.2a
@@ -56,3 +58,5 @@ permalink: /kb/126/Q126660/
 	
 	=============================================================================
 	
+
+{% endraw %}

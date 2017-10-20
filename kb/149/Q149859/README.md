@@ -6,6 +6,8 @@ permalink: /kb/149/Q149859/
 
 ## Q149859: No Mapping For Invalid Characters In Computer Name
 
+{% raw %}
+
 	Article: Q149859
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,6.0
@@ -65,3 +67,5 @@ permalink: /kb/149/Q149859/
 	
 	=============================================================================
 	
+
+{% endraw %}

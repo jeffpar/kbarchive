@@ -6,6 +6,8 @@ permalink: /kb/128/Q128395/
 
 ## Q128395: General Protection Faults with the IBM Thinkpad 755CD
 
+{% raw %}
+
 	Article: Q128395
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,3.1,3.11,4.2; :1.0,1994 edition,1995 edition
@@ -64,3 +66,5 @@ permalink: /kb/128/Q128395/
 	
 	=============================================================================
 	
+
+{% endraw %}

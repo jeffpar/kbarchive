@@ -6,6 +6,8 @@ permalink: /kb/102/Q102585/
 
 ## Q102585: How to Play Waveform (.WAV) Files in FoxPro for Windows
 
+{% raw %}
+
 	Article: Q102585
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 3.00
@@ -97,3 +99,5 @@ permalink: /kb/102/Q102585/
 	
 	=============================================================================
 	
+
+{% endraw %}

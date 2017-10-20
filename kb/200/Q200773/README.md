@@ -6,6 +6,8 @@ permalink: /kb/200/Q200773/
 
 ## Q200773: SMS: No MIB File for SMS Event to Trap Translator
 
+{% raw %}
+
 	Article: Q200773
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -74,3 +76,5 @@ permalink: /kb/200/Q200773/
 	
 	=============================================================================
 	
+
+{% endraw %}

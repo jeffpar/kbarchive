@@ -6,6 +6,8 @@ permalink: /kb/074/Q74046/
 
 ## Q74046: Setver /? &#91;Drive:Path&#93; Refers to SETVER, Not Executable
 
+{% raw %}
+
 	Article: Q74046
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -71,3 +73,5 @@ permalink: /kb/074/Q74046/
 	
 	=============================================================================
 	
+
+{% endraw %}

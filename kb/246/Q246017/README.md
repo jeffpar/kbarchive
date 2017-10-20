@@ -6,6 +6,8 @@ permalink: /kb/246/Q246017/
 
 ## Q246017: SNA Print Session Remains Pending When Stopped and Restarted
 
+{% raw %}
+
 	Article: Q246017
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP3
@@ -97,3 +99,5 @@ permalink: /kb/246/Q246017/
 	
 	=============================================================================
 	
+
+{% endraw %}

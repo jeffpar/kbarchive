@@ -6,6 +6,8 @@ permalink: /kb/094/Q94640/
 
 ## Q94640: NetDDE Passwords Must Be Uppercase when Using NDDEShareAdd
 
+{% raw %}
+
 	Article: Q94640
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/094/Q94640/
 	
 	=============================================================================
 	
+
+{% endraw %}

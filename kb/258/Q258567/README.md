@@ -6,6 +6,8 @@ permalink: /kb/258/Q258567/
 
 ## Q258567: Baseball 2001: Problems When You Change Windows Settings
 
+{% raw %}
+
 	Article: Q258567
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -39,3 +41,5 @@ permalink: /kb/258/Q258567/
 	
 	=============================================================================
 	
+
+{% endraw %}

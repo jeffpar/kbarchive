@@ -6,6 +6,8 @@ permalink: /kb/300/Q300256/
 
 ## Q300256: PRB: 3270 Display Through Terminal Server Shows Only Dots
 
+{% raw %}
+
 	Article: Q300256
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,4.0
@@ -66,3 +68,5 @@ permalink: /kb/300/Q300256/
 	
 	=============================================================================
 	
+
+{% endraw %}

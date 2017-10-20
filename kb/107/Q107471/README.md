@@ -6,6 +6,8 @@ permalink: /kb/107/Q107471/
 
 ## Q107471: WFWG 3.11 Err Msg: Segment Load Failure
 
+{% raw %}
+
 	Article: Q107471
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -84,3 +86,5 @@ permalink: /kb/107/Q107471/
 	
 	=============================================================================
 	
+
+{% endraw %}

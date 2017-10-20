@@ -6,6 +6,8 @@ permalink: /kb/313/Q313559/
 
 ## Q313559: HOW TO: Install and Use the Web Application Stress (WAS) Tool
 
+{% raw %}
+
 	Article: Q313559
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -464,3 +466,5 @@ permalink: /kb/313/Q313559/
 	
 	=============================================================================
 	
+
+{% endraw %}

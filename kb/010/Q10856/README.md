@@ -6,6 +6,8 @@ permalink: /kb/010/Q10856/
 
 ## Q10856: HOWTO: Change the Name of a Second Instance of an Application
 
+{% raw %}
+
 	Article: Q10856
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -47,3 +49,5 @@ permalink: /kb/010/Q10856/
 	
 	=============================================================================
 	
+
+{% endraw %}

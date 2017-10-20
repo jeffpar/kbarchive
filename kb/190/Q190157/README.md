@@ -6,6 +6,8 @@ permalink: /kb/190/Q190157/
 
 ## Q190157: Support for Windows NT 4.0 Option Pack on Terminal Server
 
+{% raw %}
+
 	Article: Q190157
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:2.0,3.0,4.0
@@ -47,3 +49,5 @@ permalink: /kb/190/Q190157/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/318/Q318082/
 
 ## Q318082: PRB: Prompt to Check Out Large XSD File When You View the XML
 
+{% raw %}
+
 	Article: Q318082
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/318/Q318082/
 	
 	=============================================================================
 	
+
+{% endraw %}

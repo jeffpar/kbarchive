@@ -6,6 +6,8 @@ permalink: /kb/311/Q311788/
 
 ## Q311788: Programming Microsoft SQL Server 2000 With XML Comments And Corr
 
+{% raw %}
+
 	Article: Q311788
 	Product(s): Microsoft Press
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/311/Q311788/
 	
 	=============================================================================
 	
+
+{% endraw %}

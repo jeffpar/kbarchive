@@ -6,6 +6,8 @@ permalink: /kb/142/Q142077/
 
 ## Q142077: Mac Cinemania: How To Choose Movie Reviewers
 
+{% raw %}
+
 	Article: Q142077
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995, 1996, 1997 editions
@@ -74,3 +76,5 @@ permalink: /kb/142/Q142077/
 	
 	=============================================================================
 	
+
+{% endraw %}

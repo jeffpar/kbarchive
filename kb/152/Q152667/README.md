@@ -6,6 +6,8 @@ permalink: /kb/152/Q152667/
 
 ## Q152667: NTFS Uses CPU 100% While Allocating File Space
 
+{% raw %}
+
 	Article: Q152667
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -65,3 +67,5 @@ permalink: /kb/152/Q152667/
 	
 	=============================================================================
 	
+
+{% endraw %}

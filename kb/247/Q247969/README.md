@@ -6,6 +6,8 @@ permalink: /kb/247/Q247969/
 
 ## Q247969: Windows 95 OSR2.x Support for External USB Hubs
 
+{% raw %}
+
 	Article: Q247969
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.1,2.5
@@ -65,3 +67,5 @@ permalink: /kb/247/Q247969/
 	
 	=============================================================================
 	
+
+{% endraw %}

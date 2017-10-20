@@ -6,6 +6,8 @@ permalink: /kb/253/Q253672/
 
 ## Q253672: Expected System and Group Policy Behavior in Windows 2000 Client
 
+{% raw %}
+
 	Article: Q253672
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000
@@ -97,3 +99,5 @@ permalink: /kb/253/Q253672/
 	
 	=============================================================================
 	
+
+{% endraw %}

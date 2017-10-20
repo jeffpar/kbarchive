@@ -6,6 +6,8 @@ permalink: /kb/279/Q279182/
 
 ## Q279182: FIX: Replace Write Ignored When Make Writable Is Enabled
 
+{% raw %}
+
 	Article: Q279182
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -70,3 +72,5 @@ permalink: /kb/279/Q279182/
 	
 	=============================================================================
 	
+
+{% endraw %}

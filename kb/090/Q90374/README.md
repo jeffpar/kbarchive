@@ -6,6 +6,8 @@ permalink: /kb/090/Q90374/
 
 ## Q90374: DBWIN Won't Work with Text on First Line of Mono Display
 
+{% raw %}
+
 	Article: Q90374
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -90,3 +92,5 @@ permalink: /kb/090/Q90374/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102695/
 
 ## Q102695: FIX: F2559, DX1020 From Illegal Array Bound, -4Yb, and -4Ys
 
+{% raw %}
+
 	Article: Q102695
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -98,3 +100,5 @@ permalink: /kb/102/Q102695/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/109/Q109692/
 
 ## Q109692: Adaptec 2742 and HP Jetstor 2000 Require Special Terminator
 
+{% raw %}
+
 	Article: Q109692
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -59,3 +61,5 @@ permalink: /kb/109/Q109692/
 	
 	=============================================================================
 	
+
+{% endraw %}

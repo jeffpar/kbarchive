@@ -6,6 +6,8 @@ permalink: /kb/173/Q173991/
 
 ## Q173991: BUG: Error Disassociating Resultset from rdoConnection
 
+{% raw %}
+
 	Article: Q173991
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -120,3 +122,5 @@ permalink: /kb/173/Q173991/
 	
 	=============================================================================
 	
+
+{% endraw %}

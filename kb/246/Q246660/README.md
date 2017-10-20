@@ -6,6 +6,8 @@ permalink: /kb/246/Q246660/
 
 ## Q246660: PRB: Certain Commands &amp; Functions Removed from Visual FoxPro ODB
 
+{% raw %}
+
 	Article: Q246660
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -81,3 +83,5 @@ permalink: /kb/246/Q246660/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148386/
 
 ## Q148386: Problems Formatting Text in WordPad
 
+{% raw %}
+
 	Article: Q148386
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/148/Q148386/
 	
 	=============================================================================
 	
+
+{% endraw %}

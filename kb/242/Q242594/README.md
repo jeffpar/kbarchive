@@ -6,6 +6,8 @@ permalink: /kb/242/Q242594/
 
 ## Q242594: Multiple-Processor Server Hangs on Connection Request
 
+{% raw %}
+
 	Article: Q242594
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/242/Q242594/
 	
 	=============================================================================
 	
+
+{% endraw %}

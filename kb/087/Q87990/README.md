@@ -6,6 +6,8 @@ permalink: /kb/087/Q87990/
 
 ## Q87990: PC WSPlus: No Error Message When Printers Removed
 
+{% raw %}
+
 	Article: Q87990
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -44,3 +46,5 @@ permalink: /kb/087/Q87990/
 	
 	=============================================================================
 	
+
+{% endraw %}

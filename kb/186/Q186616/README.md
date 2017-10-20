@@ -6,6 +6,8 @@ permalink: /kb/186/Q186616/
 
 ## Q186616: Terminal Server Client Error 13D at Logon
 
+{% raw %}
+
 	Article: Q186616
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/186/Q186616/
 	
 	=============================================================================
 	
+
+{% endraw %}

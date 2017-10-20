@@ -6,6 +6,8 @@ permalink: /kb/150/Q150444/
 
 ## Q150444: Windows 95 Service Pack 1 CD-ROM Directory Listing (2 of 5)
 
+{% raw %}
+
 	Article: Q150444
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -305,3 +307,5 @@ permalink: /kb/150/Q150444/
 	
 	=============================================================================
 	
+
+{% endraw %}

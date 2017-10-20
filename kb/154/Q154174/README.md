@@ -6,6 +6,8 @@ permalink: /kb/154/Q154174/
 
 ## Q154174: Invalid ICMP Datagram Fragments Hang Windows NT, Windows 95
 
+{% raw %}
+
 	Article: Q154174
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.51,4.0
@@ -147,3 +149,5 @@ permalink: /kb/154/Q154174/
 	
 	=============================================================================
 	
+
+{% endraw %}

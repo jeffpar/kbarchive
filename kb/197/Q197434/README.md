@@ -6,6 +6,8 @@ permalink: /kb/197/Q197434/
 
 ## Q197434: WD97: Cannot Mark Citation That Does Not Include Short Citation
 
+{% raw %}
+
 	Article: Q197434
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/197/Q197434/
 	
 	=============================================================================
 	
+
+{% endraw %}

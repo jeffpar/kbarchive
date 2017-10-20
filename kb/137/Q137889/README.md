@@ -6,6 +6,8 @@ permalink: /kb/137/Q137889/
 
 ## Q137889: Closing Quick Windows Viewer From Task List Closes SMS.EXE
 
+{% raw %}
+
 	Article: Q137889
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -43,3 +45,5 @@ permalink: /kb/137/Q137889/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/265/Q265880/
 
 ## Q265880: FIX: Error Message: Summary Band is Too Large to Fit on Page
 
+{% raw %}
+
 	Article: Q265880
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -118,3 +120,5 @@ permalink: /kb/265/Q265880/
 	
 	=============================================================================
 	
+
+{% endraw %}

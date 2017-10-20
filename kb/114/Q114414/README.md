@@ -6,6 +6,8 @@ permalink: /kb/114/Q114414/
 
 ## Q114414: Writer: ErrMsg: Invalid Print Data. Aborting Print Job
 
+{% raw %}
+
 	Article: Q114414
 	Product(s): Microsoft Home Kids Products
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/114/Q114414/
 	
 	=============================================================================
 	
+
+{% endraw %}

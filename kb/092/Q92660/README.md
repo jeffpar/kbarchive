@@ -6,6 +6,8 @@ permalink: /kb/092/Q92660/
 
 ## Q92660: Using Windows 3.1 with Quarterdeck QEMM386
 
+{% raw %}
+
 	Article: Q92660
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -141,3 +143,5 @@ permalink: /kb/092/Q92660/
 	
 	=============================================================================
 	
+
+{% endraw %}

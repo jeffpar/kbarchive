@@ -6,6 +6,8 @@ permalink: /kb/118/Q118344/
 
 ## Q118344: Setup Incorrectly Detects Multiple Floppy Drive Controllers
 
+{% raw %}
+
 	Article: Q118344
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/118/Q118344/
 	
 	=============================================================================
 	
+
+{% endraw %}

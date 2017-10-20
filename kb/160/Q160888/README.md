@@ -6,6 +6,8 @@ permalink: /kb/160/Q160888/
 
 ## Q160888: PRB: VSS Explorer Error: &quot;This Is an Integration Only Project&quot;
 
+{% raw %}
+
 	Article: Q160888
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,97
@@ -84,3 +86,5 @@ permalink: /kb/160/Q160888/
 	
 	=============================================================================
 	
+
+{% endraw %}

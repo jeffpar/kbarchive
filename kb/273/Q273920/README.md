@@ -6,6 +6,8 @@ permalink: /kb/273/Q273920/
 
 ## Q273920: Crimson Skies: Heads-Up Text Gauges Do Not Appear on the Screen
 
+{% raw %}
+
 	Article: Q273920
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/273/Q273920/
 	
 	=============================================================================
 	
+
+{% endraw %}

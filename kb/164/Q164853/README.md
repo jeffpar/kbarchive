@@ -6,6 +6,8 @@ permalink: /kb/164/Q164853/
 
 ## Q164853: XADM: Incorrect Spanish on Microsoft Exchange Server
 
+{% raw %}
+
 	Article: Q164853
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/164/Q164853/
 	
 	=============================================================================
 	
+
+{% endraw %}

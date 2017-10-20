@@ -6,6 +6,8 @@ permalink: /kb/172/Q172756/
 
 ## Q172756: DocErr: In Readme.txt in &#92;Perl Folder of NT 4.0 ResKit
 
+{% raw %}
+
 	Article: Q172756
 	Product(s): Microsoft Press
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/172/Q172756/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172983/
 
 ## Q172983: Explanation of the Three-Way Handshake via TCP/IP
 
+{% raw %}
+
 	Article: Q172983
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51,4.0; :3.11
@@ -399,3 +401,5 @@ permalink: /kb/172/Q172983/
 	
 	=============================================================================
 	
+
+{% endraw %}

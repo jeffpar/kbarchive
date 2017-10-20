@@ -6,6 +6,8 @@ permalink: /kb/066/Q66230/
 
 ## Q66230: Running Out of Memory in CodeView with /X
 
+{% raw %}
+
 	Article: Q66230
 	Product(s): See article
 	Version(s): 3.00 3.10 3.11
@@ -31,3 +33,5 @@ permalink: /kb/066/Q66230/
 	   CVPACK will compress the debug information in the file by removing
 	   duplicate references. Use the /P option to achieve maximum
 	   compression.
+
+{% endraw %}

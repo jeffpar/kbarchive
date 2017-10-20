@@ -6,6 +6,8 @@ permalink: /kb/178/Q178721/
 
 ## Q178721: Exchange Client Cannot Resolve Hidden Recipient
 
+{% raw %}
+
 	Article: Q178721
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,8.0,8.00,8.01,8.02,8.03
@@ -67,3 +69,5 @@ permalink: /kb/178/Q178721/
 	
 	=============================================================================
 	
+
+{% endraw %}

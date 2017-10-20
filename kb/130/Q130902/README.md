@@ -6,6 +6,8 @@ permalink: /kb/130/Q130902/
 
 ## Q130902: OEM CD-ROMs Do Not Contain WFW Client or UPDATE Directories
 
+{% raw %}
+
 	Article: Q130902
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/130/Q130902/
 	
 	=============================================================================
 	
+
+{% endraw %}

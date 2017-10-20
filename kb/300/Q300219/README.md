@@ -6,6 +6,8 @@ permalink: /kb/300/Q300219/
 
 ## Q300219: SChannel Error 80090305 When Installing Key Certificate
 
+{% raw %}
+
 	Article: Q300219
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/300/Q300219/
 	
 	=============================================================================
 	
+
+{% endraw %}

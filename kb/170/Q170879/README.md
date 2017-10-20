@@ -6,6 +6,8 @@ permalink: /kb/170/Q170879/
 
 ## Q170879: XADM: How to Use Multiple Offline Address Books in Exchange 5.0
 
+{% raw %}
+
 	Article: Q170879
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -68,3 +70,5 @@ permalink: /kb/170/Q170879/
 	
 	=============================================================================
 	
+
+{% endraw %}

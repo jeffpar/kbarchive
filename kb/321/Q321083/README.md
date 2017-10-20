@@ -6,6 +6,8 @@ permalink: /kb/321/Q321083/
 
 ## Q321083: Dungeon Siege: Err Msg: Decoding Error - Compressed Data
 
+{% raw %}
+
 	Article: Q321083
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -237,3 +239,5 @@ permalink: /kb/321/Q321083/
 	
 	=============================================================================
 	
+
+{% endraw %}

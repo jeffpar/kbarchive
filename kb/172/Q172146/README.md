@@ -6,6 +6,8 @@ permalink: /kb/172/Q172146/
 
 ## Q172146: Character Strings For 3270 Logon Scripting Aren't Localized
 
+{% raw %}
+
 	Article: Q172146
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -58,3 +60,5 @@ permalink: /kb/172/Q172146/
 	
 	=============================================================================
 	
+
+{% endraw %}

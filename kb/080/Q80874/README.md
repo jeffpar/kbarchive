@@ -6,6 +6,8 @@ permalink: /kb/080/Q80874/
 
 ## Q80874: EMM386 May Not Provide LIM 3.2 Support
 
+{% raw %}
+
 	Article: Q80874
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -75,3 +77,5 @@ permalink: /kb/080/Q80874/
 	
 	=============================================================================
 	
+
+{% endraw %}

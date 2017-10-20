@@ -6,6 +6,8 @@ permalink: /kb/067/Q67015/
 
 ## Q67015: Fontware Installation Kit Typeface Information Missing
 
+{% raw %}
+
 	Article: Q67015
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -61,3 +63,5 @@ permalink: /kb/067/Q67015/
 	
 	=============================================================================
 	
+
+{% endraw %}

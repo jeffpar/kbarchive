@@ -6,6 +6,8 @@ permalink: /kb/066/Q66829/
 
 ## Q66829: ASD: Cannot Change NAV1 from OBS to BRG
 
+{% raw %}
+
 	Article: Q66829
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/066/Q66829/
 	
 	=============================================================================
 	
+
+{% endraw %}

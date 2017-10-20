@@ -6,6 +6,8 @@ permalink: /kb/234/Q234367/
 
 ## Q234367: XADM: Cannot Perform LDAP Search on Windows NT 4.0 SP3
 
+{% raw %}
+
 	Article: Q234367
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0 SP3,5.5
@@ -52,3 +54,5 @@ permalink: /kb/234/Q234367/
 	
 	=============================================================================
 	
+
+{% endraw %}

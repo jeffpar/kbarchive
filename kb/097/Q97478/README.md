@@ -6,6 +6,8 @@ permalink: /kb/097/Q97478/
 
 ## Q97478: Font Assistant Does Not Print Sample Page with HP LaserJet 4
 
+{% raw %}
+
 	Article: Q97478
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :
@@ -72,3 +74,5 @@ permalink: /kb/097/Q97478/
 	
 	=============================================================================
 	
+
+{% endraw %}

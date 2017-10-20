@@ -6,6 +6,8 @@ permalink: /kb/157/Q157265/
 
 ## Q157265: Msbatch.inf Parameters: Disable Password Caching
 
+{% raw %}
+
 	Article: Q157265
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/157/Q157265/
 	
 	=============================================================================
 	
+
+{% endraw %}

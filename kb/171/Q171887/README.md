@@ -6,6 +6,8 @@ permalink: /kb/171/Q171887/
 
 ## Q171887: LUA Stop Command Available When Connection Is Inactive
 
+{% raw %}
+
 	Article: Q171887
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -48,3 +50,5 @@ permalink: /kb/171/Q171887/
 	
 	=============================================================================
 	
+
+{% endraw %}

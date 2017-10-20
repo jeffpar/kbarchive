@@ -6,6 +6,8 @@ permalink: /kb/089/Q89870/
 
 ## Q89870: Proofing Sound Quality May Vary with Speed in Proof Reader
 
+{% raw %}
+
 	Article: Q89870
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/089/Q89870/
 	
 	=============================================================================
 	
+
+{% endraw %}

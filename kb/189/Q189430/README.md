@@ -6,6 +6,8 @@ permalink: /kb/189/Q189430/
 
 ## Q189430: Domain Name Shows up Twice in Browse List
 
+{% raw %}
+
 	Article: Q189430
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -42,3 +44,5 @@ permalink: /kb/189/Q189430/
 	
 	=============================================================================
 	
+
+{% endraw %}

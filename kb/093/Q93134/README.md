@@ -6,6 +6,8 @@ permalink: /kb/093/Q93134/
 
 ## Q93134: PC Win: Mail Message File (MMF) Compression
 
+{% raw %}
+
 	Article: Q93134
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -82,3 +84,5 @@ permalink: /kb/093/Q93134/
 	
 	=============================================================================
 	
+
+{% endraw %}

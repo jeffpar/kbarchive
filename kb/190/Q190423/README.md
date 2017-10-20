@@ -6,6 +6,8 @@ permalink: /kb/190/Q190423/
 
 ## Q190423: XFOR: MS Mail Migration Does Not Migrate New Messages
 
+{% raw %}
+
 	Article: Q190423
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.5; winnt:4.0,5.0,5.5
@@ -94,3 +96,5 @@ permalink: /kb/190/Q190423/
 	
 	=============================================================================
 	
+
+{% endraw %}

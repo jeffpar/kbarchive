@@ -6,6 +6,8 @@ permalink: /kb/149/Q149905/
 
 ## Q149905: XFOR: Copying DXA Messages to a Mailbox
 
+{% raw %}
+
 	Article: Q149905
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/149/Q149905/
 	
 	=============================================================================
 	
+
+{% endraw %}

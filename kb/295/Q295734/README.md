@@ -6,6 +6,8 @@ permalink: /kb/295/Q295734/
 
 ## Q295734: XCON: NDR When  SMTP Messages Are Relayed to a Domino Server
 
+{% raw %}
+
 	Article: Q295734
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -82,3 +84,5 @@ permalink: /kb/295/Q295734/
 	
 	=============================================================================
 	
+
+{% endraw %}

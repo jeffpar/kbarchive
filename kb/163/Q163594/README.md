@@ -6,6 +6,8 @@ permalink: /kb/163/Q163594/
 
 ## Q163594: SLI_OPEN Fails w/ LUA_CANCELLED After SLI_CLOSE Completes
 
+{% raw %}
+
 	Article: Q163594
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
@@ -71,3 +73,5 @@ permalink: /kb/163/Q163594/
 	
 	=============================================================================
 	
+
+{% endraw %}

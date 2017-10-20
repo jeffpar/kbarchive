@@ -6,6 +6,8 @@ permalink: /kb/251/Q251362/
 
 ## Q251362: FIX: Suspend and Resume Thread Hangs Visual C++ Debugger
 
+{% raw %}
+
 	Article: Q251362
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -154,3 +156,5 @@ permalink: /kb/251/Q251362/
 	
 	=============================================================================
 	
+
+{% endraw %}

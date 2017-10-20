@@ -6,6 +6,8 @@ permalink: /kb/164/Q164173/
 
 ## Q164173: PRB: No Information Returned for SQLSTATE IM006 from Driver
 
+{% raw %}
+
 	Article: Q164173
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/164/Q164173/
 	
 	=============================================================================
 	
+
+{% endraw %}

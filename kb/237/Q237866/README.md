@@ -6,6 +6,8 @@ permalink: /kb/237/Q237866/
 
 ## Q237866: XADM: Event ID 5004 Generating Offline Address Book
 
+{% raw %}
+
 	Article: Q237866
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -57,3 +59,5 @@ permalink: /kb/237/Q237866/
 	
 	=============================================================================
 	
+
+{% endraw %}

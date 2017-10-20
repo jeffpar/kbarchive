@@ -6,6 +6,8 @@ permalink: /kb/166/Q166842/
 
 ## Q166842: CSNW &amp; GSNW Won't Display NetWare Servers via a SAP Seed Server
 
+{% raw %}
+
 	Article: Q166842
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -164,3 +166,5 @@ permalink: /kb/166/Q166842/
 	
 	=============================================================================
 	
+
+{% endraw %}

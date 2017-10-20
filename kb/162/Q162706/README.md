@@ -6,6 +6,8 @@ permalink: /kb/162/Q162706/
 
 ## Q162706: PPT: Sample Code to Determine the Number of Open Presentations
 
+{% raw %}
+
 	Article: Q162706
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -121,3 +123,5 @@ permalink: /kb/162/Q162706/
 	
 	=============================================================================
 	
+
+{% endraw %}

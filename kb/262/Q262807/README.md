@@ -6,6 +6,8 @@ permalink: /kb/262/Q262807/
 
 ## Q262807: How to Use the SNA Server Linkcfg.exe on Windows 2000
 
+{% raw %}
+
 	Article: Q262807
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2000,4.0 SP3; :
@@ -121,3 +123,5 @@ permalink: /kb/262/Q262807/
 	
 	=============================================================================
 	
+
+{% endraw %}

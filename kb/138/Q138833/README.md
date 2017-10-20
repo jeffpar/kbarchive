@@ -6,6 +6,8 @@ permalink: /kb/138/Q138833/
 
 ## Q138833: SNA Admin Loads Faster with Improvements in SNACFG.DLL
 
+{% raw %}
+
 	Article: Q138833
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -57,3 +59,5 @@ permalink: /kb/138/Q138833/
 	
 	=============================================================================
 	
+
+{% endraw %}

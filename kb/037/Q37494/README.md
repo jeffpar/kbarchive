@@ -6,6 +6,8 @@ permalink: /kb/037/Q37494/
 
 ## Q37494: Differences in MAKE Files among QuickC 1.00, 1.01, and 2.00
 
+{% raw %}
+
 	Article: Q37494
 	Product(s): See article
 	Version(s): 2.00
@@ -57,3 +59,5 @@ permalink: /kb/037/Q37494/
 	This information can be found in the "Microsoft QuickC 2.00 Toolkit"
 	manual in Sections 7.5 and 7.6. A complete description of NMAKE's
 	capabilities and functionality can be found in Chapter 7.
+
+{% endraw %}

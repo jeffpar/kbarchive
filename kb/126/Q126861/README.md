@@ -6,6 +6,8 @@ permalink: /kb/126/Q126861/
 
 ## Q126861: Mail Err Msg: The Network Path You Entered Could Not Be Found
 
+{% raw %}
+
 	Article: Q126861
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/126/Q126861/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/251/Q251007/
 
 ## Q251007: Some Cluster Disks Are Not Available After Installing SP6
 
+{% raw %}
+
 	Article: Q251007
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -64,3 +66,5 @@ permalink: /kb/251/Q251007/
 	
 	=============================================================================
 	
+
+{% endraw %}

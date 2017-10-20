@@ -6,6 +6,8 @@ permalink: /kb/076/Q76885/
 
 ## Q76885: Graphics: The Edit Copy Command Is Dimmed in Bookshelf
 
+{% raw %}
+
 	Article: Q76885
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition,1992 edition,1993 edition
@@ -46,3 +48,5 @@ permalink: /kb/076/Q76885/
 	
 	=============================================================================
 	
+
+{% endraw %}

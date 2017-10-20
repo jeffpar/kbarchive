@@ -6,6 +6,8 @@ permalink: /kb/250/Q250564/
 
 ## Q250564: SMS: Online License Metering Won't Work in Multi-Domain Scenario
 
+{% raw %}
+
 	Article: Q250564
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -75,3 +77,5 @@ permalink: /kb/250/Q250564/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193540/
 
 ## Q193540: HOWTO: Read and Display UNICODE String on Visual Basic Form
 
+{% raw %}
+
 	Article: Q193540
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -137,3 +139,5 @@ permalink: /kb/193/Q193540/
 	
 	=============================================================================
 	
+
+{% endraw %}

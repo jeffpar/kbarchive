@@ -6,6 +6,8 @@ permalink: /kb/140/Q140523/
 
 ## Q140523: How to Update the Phone Number List for MSN and the Internet
 
+{% raw %}
+
 	Article: Q140523
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5,95
@@ -92,3 +94,5 @@ permalink: /kb/140/Q140523/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140590/
 
 ## Q140590: FIX: Error in COleDispatchException Constructor
 
+{% raw %}
+
 	Article: Q140590
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.5,1.51,1.52,4.0; winnt:2.0,2.1,2.2,4.0
@@ -93,3 +95,5 @@ permalink: /kb/140/Q140590/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/088/Q88296/
 
 ## Q88296: LANtastic Server Causes Communications Slow Down
 
+{% raw %}
+
 	Article: Q88296
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/088/Q88296/
 	
 	=============================================================================
 	
+
+{% endraw %}

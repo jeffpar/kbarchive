@@ -6,6 +6,8 @@ permalink: /kb/098/Q98610/
 
 ## Q98610: PC WSPlus: Err Msg: SCHDIST.EXE -br00:01:00 Terminated...
 
+{% raw %}
+
 	Article: Q98610
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -53,3 +55,5 @@ permalink: /kb/098/Q98610/
 	
 	=============================================================================
 	
+
+{% endraw %}

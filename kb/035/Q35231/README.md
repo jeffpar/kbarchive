@@ -6,6 +6,8 @@ permalink: /kb/035/Q35231/
 
 ## Q35231: /S1 or /S2 Yields Same Result as /S0
 
+{% raw %}
+
 	Article: Q35231
 	Product(s): See article
 	Version(s): 6.x 1.00
@@ -17,3 +19,5 @@ permalink: /kb/035/Q35231/
 	you may not recognize any mouse cursor change for mouse movement. A
 	sensitivity value of 3 seems to be the minimum sensitivity that the
 	mouse driver moves the cursor.
+
+{% endraw %}

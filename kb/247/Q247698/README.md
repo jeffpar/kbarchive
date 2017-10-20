@@ -6,6 +6,8 @@ permalink: /kb/247/Q247698/
 
 ## Q247698: Fighter Ace II: Blue Bands Are Displayed Across the Horizon
 
+{% raw %}
+
 	Article: Q247698
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/247/Q247698/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85046/
 
 ## Q85046: FFAPI: Components of the Application FFAPI
 
+{% raw %}
+
 	Article: Q85046
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/085/Q85046/
 	
 	=============================================================================
 	
+
+{% endraw %}

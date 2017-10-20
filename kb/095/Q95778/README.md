@@ -6,6 +6,8 @@ permalink: /kb/095/Q95778/
 
 ## Q95778: VidCap: Not Capturing Full Frames with Video Blaster
 
+{% raw %}
+
 	Article: Q95778
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/095/Q95778/
 	
 	=============================================================================
 	
+
+{% endraw %}

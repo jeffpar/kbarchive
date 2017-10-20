@@ -6,6 +6,8 @@ permalink: /kb/177/Q177425/
 
 ## Q177425: INFO: Replacing #import's Exception Raising Mechanism for ADO
 
+{% raw %}
+
 	Article: Q177425
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -105,3 +107,5 @@ permalink: /kb/177/Q177425/
 	
 	=============================================================================
 	
+
+{% endraw %}

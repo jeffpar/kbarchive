@@ -6,6 +6,8 @@ permalink: /kb/163/Q163214/
 
 ## Q163214: RAS Script with Set IPADDR May Fail with 3Com Defender Add-on
 
+{% raw %}
+
 	Article: Q163214
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/163/Q163214/
 	
 	=============================================================================
 	
+
+{% endraw %}

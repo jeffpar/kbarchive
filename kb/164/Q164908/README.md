@@ -6,6 +6,8 @@ permalink: /kb/164/Q164908/
 
 ## Q164908: Removing Host Security Causes Error &quot;Snarpc.dll Not Found&quot;
 
+{% raw %}
+
 	Article: Q164908
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/164/Q164908/
 	
 	=============================================================================
 	
+
+{% endraw %}

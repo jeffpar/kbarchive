@@ -6,6 +6,8 @@ permalink: /kb/145/Q145728/
 
 ## Q145728: HOWTO: Create a Listbox with Clickable Checkboxes
 
+{% raw %}
+
 	Article: Q145728
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -132,3 +134,5 @@ permalink: /kb/145/Q145728/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/092/Q92524/
 
 ## Q92524: PRB: Setup Toolkit's SETUP.EXE Does Not Launch Windows
 
+{% raw %}
+
 	Article: Q92524
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/092/Q92524/
 	
 	=============================================================================
 	
+
+{% endraw %}

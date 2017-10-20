@@ -6,6 +6,8 @@ permalink: /kb/130/Q130797/
 
 ## Q130797: Cannot Specify Different Default Logon Name for Second Client
 
+{% raw %}
+
 	Article: Q130797
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/130/Q130797/
 	
 	=============================================================================
 	
+
+{% endraw %}

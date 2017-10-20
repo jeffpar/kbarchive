@@ -6,6 +6,8 @@ permalink: /kb/070/Q70888/
 
 ## Q70888: Can't Use Some Attributes on Redirected Drive
 
+{% raw %}
+
 	Article: Q70888
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/070/Q70888/
 	
 	=============================================================================
 	
+
+{% endraw %}

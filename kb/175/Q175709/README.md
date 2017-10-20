@@ -6,6 +6,8 @@ permalink: /kb/175/Q175709/
 
 ## Q175709: Internet Explorer and Outlook Express Do Not Connect to Internet
 
+{% raw %}
+
 	Article: Q175709
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,4.0,95
@@ -77,3 +79,5 @@ permalink: /kb/175/Q175709/
 	
 	=============================================================================
 	
+
+{% endraw %}

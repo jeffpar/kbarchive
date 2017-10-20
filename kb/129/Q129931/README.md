@@ -6,6 +6,8 @@ permalink: /kb/129/Q129931/
 
 ## Q129931: Using For Each to Loop Through Arrays Is Not Recommended
 
+{% raw %}
+
 	Article: Q129931
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -203,3 +205,5 @@ permalink: /kb/129/Q129931/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137574/
 
 ## Q137574: Error Message Installing Corel Draw 6.0
 
+{% raw %}
+
 	Article: Q137574
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -79,3 +81,5 @@ permalink: /kb/137/Q137574/
 	
 	=============================================================================
 	
+
+{% endraw %}

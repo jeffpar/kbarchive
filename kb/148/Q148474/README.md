@@ -6,6 +6,8 @@ permalink: /kb/148/Q148474/
 
 ## Q148474: Ole_samp.exe to Microsoft Excel, Word, &amp; PowerPoint
 
+{% raw %}
+
 	Article: Q148474
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0
@@ -63,3 +65,5 @@ permalink: /kb/148/Q148474/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/298/Q298853/
 
 ## Q298853: Using MSN Explorer After DSL Installation
 
+{% raw %}
+
 	Article: Q298853
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -76,3 +78,5 @@ permalink: /kb/298/Q298853/
 	
 	=============================================================================
 	
+
+{% endraw %}

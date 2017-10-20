@@ -6,6 +6,8 @@ permalink: /kb/157/Q157862/
 
 ## Q157862: FIX: Memo Field Display Problems in the Debugger Watch Window
 
+{% raw %}
+
 	Article: Q157862
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -69,3 +71,5 @@ permalink: /kb/157/Q157862/
 	
 	=============================================================================
 	
+
+{% endraw %}

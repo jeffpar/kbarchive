@@ -6,6 +6,8 @@ permalink: /kb/178/Q178254/
 
 ## Q178254: SNA Server Access Violation in Function S1practs
 
+{% raw %}
+
 	Article: Q178254
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -126,3 +128,5 @@ permalink: /kb/178/Q178254/
 	
 	=============================================================================
 	
+
+{% endraw %}

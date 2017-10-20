@@ -6,6 +6,8 @@ permalink: /kb/114/Q114608/
 
 ## Q114608: PRB: Setup Toolkit Cancel Button Not Working On Disk Changes
 
+{% raw %}
+
 	Article: Q114608
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -52,3 +54,5 @@ permalink: /kb/114/Q114608/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131133/
 
 ## Q131133: How to Create and Access Protected Properties
 
+{% raw %}
+
 	Article: Q131133
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -85,3 +87,5 @@ permalink: /kb/131/Q131133/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151906/
 
 ## Q151906: FPNW: Home Directory Root Path Does Not Change
 
+{% raw %}
+
 	Article: Q151906
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -42,3 +44,5 @@ permalink: /kb/151/Q151906/
 	
 	=============================================================================
 	
+
+{% endraw %}

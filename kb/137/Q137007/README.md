@@ -6,6 +6,8 @@ permalink: /kb/137/Q137007/
 
 ## Q137007: Cannot Delete Default Folders in Microsoft Exchange
 
+{% raw %}
+
 	Article: Q137007
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/137/Q137007/
 	
 	=============================================================================
 	
+
+{% endraw %}

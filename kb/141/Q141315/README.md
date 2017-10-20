@@ -6,6 +6,8 @@ permalink: /kb/141/Q141315/
 
 ## Q141315: FIX: Changing Subclassed Form's Desktop Property Has No Effect
 
+{% raw %}
+
 	Article: Q141315
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -98,3 +100,5 @@ permalink: /kb/141/Q141315/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187912/
 
 ## Q187912: HOWTO: Pass a String Between Visual Basic and Your C DLL
 
+{% raw %}
+
 	Article: Q187912
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0; winnt:5.0
@@ -230,3 +232,5 @@ permalink: /kb/187/Q187912/
 	
 	=============================================================================
 	
+
+{% endraw %}

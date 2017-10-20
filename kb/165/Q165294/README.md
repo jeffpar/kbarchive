@@ -6,6 +6,8 @@ permalink: /kb/165/Q165294/
 
 ## Q165294: How Can I Change My Member Information?
 
+{% raw %}
+
 	Article: Q165294
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/165/Q165294/
 	
 	=============================================================================
 	
+
+{% endraw %}

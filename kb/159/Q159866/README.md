@@ -6,6 +6,8 @@ permalink: /kb/159/Q159866/
 
 ## Q159866: WD97: How to Set Table Width to Percentage of Browser Window
 
+{% raw %}
+
 	Article: Q159866
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -106,3 +108,5 @@ permalink: /kb/159/Q159866/
 	
 	=============================================================================
 	
+
+{% endraw %}

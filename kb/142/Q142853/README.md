@@ -6,6 +6,8 @@ permalink: /kb/142/Q142853/
 
 ## Q142853: Virtual Directories Not Visible on FTP Clients
 
+{% raw %}
+
 	Article: Q142853
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0,4.0,5.0
@@ -93,3 +95,5 @@ permalink: /kb/142/Q142853/
 	
 	=============================================================================
 	
+
+{% endraw %}

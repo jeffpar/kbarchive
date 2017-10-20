@@ -6,6 +6,8 @@ permalink: /kb/071/Q71855/
 
 ## Q71855: Windows 3.0 Resource Kit Disk Directories (5.25 Inch)
 
+{% raw %}
+
 	Article: Q71855
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -102,3 +104,5 @@ permalink: /kb/071/Q71855/
 	
 	=============================================================================
 	
+
+{% endraw %}

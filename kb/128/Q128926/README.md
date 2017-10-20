@@ -6,6 +6,8 @@ permalink: /kb/128/Q128926/
 
 ## Q128926: Remote Control Fails on Windows 95 with 32-bit IPX Stack
 
+{% raw %}
+
 	Article: Q128926
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:95; winnt:1.1,1.2
@@ -49,3 +51,5 @@ permalink: /kb/128/Q128926/
 	
 	=============================================================================
 	
+
+{% endraw %}

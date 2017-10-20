@@ -6,6 +6,8 @@ permalink: /kb/226/Q226827/
 
 ## Q226827: SMS: Offline Software Metering Server May Affect Client Behavior
 
+{% raw %}
+
 	Article: Q226827
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -59,3 +61,5 @@ permalink: /kb/226/Q226827/
 	
 	=============================================================================
 	
+
+{% endraw %}

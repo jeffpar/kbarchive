@@ -6,6 +6,8 @@ permalink: /kb/138/Q138070/
 
 ## Q138070: Protocol for Remote OLE Automation Depends on First Client
 
+{% raw %}
+
 	Article: Q138070
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/138/Q138070/
 	
 	=============================================================================
 	
+
+{% endraw %}

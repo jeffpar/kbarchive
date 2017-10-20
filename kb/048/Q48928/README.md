@@ -6,6 +6,8 @@ permalink: /kb/048/Q48928/
 
 ## Q48928: Cast of Float to Long Truncates Value to 1 Less Than Expected
 
+{% raw %}
+
 	Article: Q48928
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -57,3 +59,5 @@ permalink: /kb/048/Q48928/
 	        i = atof(r) * 100;
 	        printf ("%ld\n", (long)(i + 0.5));
 	}
+
+{% endraw %}

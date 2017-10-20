@@ -6,6 +6,8 @@ permalink: /kb/223/Q223077/
 
 ## Q223077: FIX: VB 6.0 Adding Split to a DataGrid May Cause Error
 
+{% raw %}
+
 	Article: Q223077
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -167,3 +169,5 @@ permalink: /kb/223/Q223077/
 	
 	=============================================================================
 	
+
+{% endraw %}

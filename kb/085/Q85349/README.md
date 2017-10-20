@@ -6,6 +6,8 @@ permalink: /kb/085/Q85349/
 
 ## Q85349: FAX: Changes Made to the Mail Database During Installation
 
+{% raw %}
+
 	Article: Q85349
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/085/Q85349/
 	
 	=============================================================================
 	
+
+{% endraw %}

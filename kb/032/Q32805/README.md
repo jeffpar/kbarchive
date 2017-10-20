@@ -6,6 +6,8 @@ permalink: /kb/032/Q32805/
 
 ## Q32805: Reference to Section 2.11 Should Be 2.12 in User's Guide
 
+{% raw %}
+
 	Article: Q32805
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -20,3 +22,5 @@ permalink: /kb/032/Q32805/
 	   "For more information on library routines and memory models, see
 	Section 2.12, `Using Huge Arrays with Library Functions,' in the
 	Microsoft C Run-Time Library Reference."
+
+{% endraw %}

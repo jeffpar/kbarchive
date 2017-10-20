@@ -6,6 +6,8 @@ permalink: /kb/189/Q189599/
 
 ## Q189599: HOWTO: Make Outlook Empty Mail from the Outbox w/OLE Automation
 
+{% raw %}
+
 	Article: Q189599
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -74,3 +76,5 @@ permalink: /kb/189/Q189599/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137005/
 
 ## Q137005: Unable to PING Router On Remote Network From RAS Client
 
+{% raw %}
+
 	Article: Q137005
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): Win2000:95; winnt:3.5,3.51,4.0
@@ -75,3 +77,5 @@ permalink: /kb/137/Q137005/
 	
 	=============================================================================
 	
+
+{% endraw %}

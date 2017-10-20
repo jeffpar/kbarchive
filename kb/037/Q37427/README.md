@@ -6,6 +6,8 @@ permalink: /kb/037/Q37427/
 
 ## Q37427: Sample Program That Makes OS/2 Function Call DosSelectDisk
 
+{% raw %}
+
 	Article: Q37427
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -34,3 +36,5 @@ permalink: /kb/037/Q37427/
 	    while inkey$="" : wend
 	END IF
 	END
+
+{% endraw %}

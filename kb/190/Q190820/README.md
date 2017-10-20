@@ -6,6 +6,8 @@ permalink: /kb/190/Q190820/
 
 ## Q190820: BUG: SYS(2014) Allows Wrong Data Type for Second Parameter
 
+{% raw %}
+
 	Article: Q190820
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -65,3 +67,5 @@ permalink: /kb/190/Q190820/
 	
 	=============================================================================
 	
+
+{% endraw %}

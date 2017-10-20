@@ -6,6 +6,8 @@ permalink: /kb/148/Q148718/
 
 ## Q148718: PC DirSync: Err Msg: NSDA-&lt;process&gt; Missed its Run Window
 
+{% raw %}
+
 	Article: Q148718
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -80,3 +82,5 @@ permalink: /kb/148/Q148718/
 	
 	=============================================================================
 	
+
+{% endraw %}

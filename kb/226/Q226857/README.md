@@ -6,6 +6,8 @@ permalink: /kb/226/Q226857/
 
 ## Q226857: SMS: Intersite License Balancing Still Runs After Being Disabled
 
+{% raw %}
+
 	Article: Q226857
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -55,3 +57,5 @@ permalink: /kb/226/Q226857/
 	
 	=============================================================================
 	
+
+{% endraw %}

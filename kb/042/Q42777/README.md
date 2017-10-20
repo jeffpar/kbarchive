@@ -6,6 +6,8 @@ permalink: /kb/042/Q42777/
 
 ## Q42777: mkdir() Followed by chdir() Causes QuickC Debugging Problem
 
+{% raw %}
+
 	Article: Q42777
 	Product(s): See article
 	Version(s): 2.00
@@ -43,3 +45,5 @@ permalink: /kb/042/Q42777/
 	Microsoft has confirmed this to be a problem in Version 2.00. We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/038/Q38367/
 
 ## Q38367: Elevation of Boeing Field (North and South End)
 
+{% raw %}
+
 	Article: Q38367
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/038/Q38367/
 	
 	=============================================================================
 	
+
+{% endraw %}

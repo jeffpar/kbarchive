@@ -6,6 +6,8 @@ permalink: /kb/217/Q217768/
 
 ## Q217768: XADM: Storage Warnings Incomplete for Swedish Clients
 
+{% raw %}
+
 	Article: Q217768
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2
@@ -78,3 +80,5 @@ permalink: /kb/217/Q217768/
 	
 	=============================================================================
 	
+
+{% endraw %}

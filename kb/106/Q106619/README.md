@@ -6,6 +6,8 @@ permalink: /kb/106/Q106619/
 
 ## Q106619: Multimedia Works Cannot Run Help While Encarta Help Runs
 
+{% raw %}
+
 	Article: Q106619
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition; WINDOWS:3.0, multimedia edition
@@ -56,3 +58,5 @@ permalink: /kb/106/Q106619/
 	
 	=============================================================================
 	
+
+{% endraw %}

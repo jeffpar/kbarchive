@@ -6,6 +6,8 @@ permalink: /kb/031/Q31149/
 
 ## Q31149: Mouse-Cursor State and EGA Memory
 
+{% raw %}
+
 	Article: Q31149
 	Product(s): See article
 	Version(s): 6.x
@@ -26,3 +28,5 @@ permalink: /kb/031/Q31149/
 	the mouse cursor. Instead, use an alternative method of monitoring the
 	mouse's screen location (e.g. XOR some graphical object to the
 	screen).
+
+{% endraw %}

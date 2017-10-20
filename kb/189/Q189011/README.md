@@ -6,6 +6,8 @@ permalink: /kb/189/Q189011/
 
 ## Q189011: Using Performance Monitor Remotely Causes Access Violation
 
+{% raw %}
+
 	Article: Q189011
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/189/Q189011/
 	
 	=============================================================================
 	
+
+{% endraw %}

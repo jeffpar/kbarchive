@@ -6,6 +6,8 @@ permalink: /kb/153/Q153375/
 
 ## Q153375: Failure to Modify User Accounts
 
+{% raw %}
+
 	Article: Q153375
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.50 3.51
@@ -75,3 +77,5 @@ permalink: /kb/153/Q153375/
 	
 	=============================================================================
 	
+
+{% endraw %}

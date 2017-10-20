@@ -6,6 +6,8 @@ permalink: /kb/155/Q155007/
 
 ## Q155007: Active LUA LUs Counted as 3270 LUs in SNA Server
 
+{% raw %}
+
 	Article: Q155007
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -48,3 +50,5 @@ permalink: /kb/155/Q155007/
 	
 	=============================================================================
 	
+
+{% endraw %}

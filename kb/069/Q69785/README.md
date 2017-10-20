@@ -6,6 +6,8 @@ permalink: /kb/069/Q69785/
 
 ## Q69785: Flight Simulator: Land Appears Blue at San Diego Airport
 
+{% raw %}
+
 	Article: Q69785
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/069/Q69785/
 	
 	=============================================================================
 	
+
+{% endraw %}

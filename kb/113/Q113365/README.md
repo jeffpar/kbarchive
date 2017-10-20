@@ -6,6 +6,8 @@ permalink: /kb/113/Q113365/
 
 ## Q113365: Writer/Artist: PowerBook 180C Crashes with Sounds On
 
+{% raw %}
+
 	Article: Q113365
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -67,3 +69,5 @@ permalink: /kb/113/Q113365/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155492/
 
 ## Q155492: XADM: Optimizer Stops if Free Disk Space Is Low
 
+{% raw %}
+
 	Article: Q155492
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/155/Q155492/
 	
 	=============================================================================
 	
+
+{% endraw %}

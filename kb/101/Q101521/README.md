@@ -6,6 +6,8 @@ permalink: /kb/101/Q101521/
 
 ## Q101521: INF: When and How an ODBC Driver DLL Gets Unloaded
 
+{% raw %}
+
 	Article: Q101521
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/101/Q101521/
 	
 	=============================================================================
 	
+
+{% endraw %}

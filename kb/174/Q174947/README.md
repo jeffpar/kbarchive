@@ -6,6 +6,8 @@ permalink: /kb/174/Q174947/
 
 ## Q174947: Docking And Power-Management Problems With Universal Serial Bus
 
+{% raw %}
+
 	Article: Q174947
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.1
@@ -59,3 +61,5 @@ permalink: /kb/174/Q174947/
 	
 	=============================================================================
 	
+
+{% endraw %}

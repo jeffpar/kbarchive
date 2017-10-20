@@ -6,6 +6,8 @@ permalink: /kb/137/Q137953/
 
 ## Q137953: DOCERR: Visual FoxPro Help File Gives Wrong Index Key Limit
 
+{% raw %}
+
 	Article: Q137953
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -42,3 +44,5 @@ permalink: /kb/137/Q137953/
 	
 	=============================================================================
 	
+
+{% endraw %}

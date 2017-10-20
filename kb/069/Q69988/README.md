@@ -6,6 +6,8 @@ permalink: /kb/069/Q69988/
 
 ## Q69988: Percent Character Not Allowed in Identifiers in MASM 6.0
 
+{% raw %}
+
 	Article: Q69988
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -55,3 +57,5 @@ permalink: /kb/069/Q69988/
 	
 	=============================================================================
 	
+
+{% endraw %}

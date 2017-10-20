@@ -6,6 +6,8 @@ permalink: /kb/070/Q70784/
 
 ## Q70784: INFO: Data May Be Lost During fflush() If Write Is Unsuccessful
 
+{% raw %}
+
 	Article: Q70784
 	Product(s): Microsoft C Compiler
 	Version(s): MS- DOS:5.1,6.0,6.00a,6.00ax,7.0;WIN3X:1.0,1.5;WINNT:1.0,2.0,2.1,4.0,5.0;
@@ -86,3 +88,5 @@ permalink: /kb/070/Q70784/
 	
 	=============================================================================
 	
+
+{% endraw %}

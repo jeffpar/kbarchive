@@ -6,6 +6,8 @@ permalink: /kb/195/Q195283/
 
 ## Q195283: Programming Active Server Pages Comments and Corrections
 
+{% raw %}
+
 	Article: Q195283
 	Product(s): Microsoft Press
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/195/Q195283/
 	
 	=============================================================================
 	
+
+{% endraw %}

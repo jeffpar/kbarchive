@@ -6,6 +6,8 @@ permalink: /kb/099/Q99378/
 
 ## Q99378: How LAN Manager System Group Limit Numbers Are Set
 
+{% raw %}
+
 	Article: Q99378
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/099/Q99378/
 	
 	=============================================================================
 	
+
+{% endraw %}

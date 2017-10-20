@@ -6,6 +6,8 @@ permalink: /kb/320/Q320128/
 
 ## Q320128: FIX: The XMLToCursor() Function Causes a Fatal Exception
 
+{% raw %}
+
 	Article: Q320128
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -95,3 +97,5 @@ permalink: /kb/320/Q320128/
 	
 	=============================================================================
 	
+
+{% endraw %}

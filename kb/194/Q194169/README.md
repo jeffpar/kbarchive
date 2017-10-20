@@ -6,6 +6,8 @@ permalink: /kb/194/Q194169/
 
 ## Q194169: SNMP Process Object Returns the Incorrect Value
 
+{% raw %}
+
 	Article: Q194169
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -128,3 +130,5 @@ permalink: /kb/194/Q194169/
 	
 	=============================================================================
 	
+
+{% endraw %}

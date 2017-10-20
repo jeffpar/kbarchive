@@ -6,6 +6,8 @@ permalink: /kb/069/Q69690/
 
 ## Q69690: Terminal Automatically Loads TERMINAL.TRM
 
+{% raw %}
+
 	Article: Q69690
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/069/Q69690/
 	
 	=============================================================================
 	
+
+{% endraw %}

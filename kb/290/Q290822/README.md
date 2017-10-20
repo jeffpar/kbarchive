@@ -6,6 +6,8 @@ permalink: /kb/290/Q290822/
 
 ## Q290822: Continuous RPC Error When an Out-of-Process MTX Ends
 
+{% raw %}
+
 	Article: Q290822
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -99,3 +101,5 @@ permalink: /kb/290/Q290822/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140346/
 
 ## Q140346: Possible Reasons for OLE Control Registration Failure
 
+{% raw %}
+
 	Article: Q140346
 	Product(s): Microsoft C Compiler
 	Version(s): 1.51 1.52 | 2.00 2.10 2.20 4.00
@@ -169,3 +171,5 @@ permalink: /kb/140/Q140346/
 	
 	=============================================================================
 	
+
+{% endraw %}

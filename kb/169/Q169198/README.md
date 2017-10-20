@@ -6,6 +6,8 @@ permalink: /kb/169/Q169198/
 
 ## Q169198: XADM: Tips for Managing Public Folders
 
+{% raw %}
+
 	Article: Q169198
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/169/Q169198/
 	
 	=============================================================================
 	
+
+{% endraw %}

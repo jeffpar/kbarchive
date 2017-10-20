@@ -6,6 +6,8 @@ permalink: /kb/115/Q115162/
 
 ## Q115162: PC WFW: Microsoft At Work PC Fax with Mail 3.2 Windows Client
 
+{% raw %}
+
 	Article: Q115162
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -39,3 +41,5 @@ permalink: /kb/115/Q115162/
 	
 	=============================================================================
 	
+
+{% endraw %}

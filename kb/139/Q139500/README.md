@@ -6,6 +6,8 @@ permalink: /kb/139/Q139500/
 
 ## Q139500: TN3270: Message Close Delay Option
 
+{% raw %}
+
 	Article: Q139500
 	Product(s): Microsoft Windows NT
 	Version(s): 2.11 3.0
@@ -77,3 +79,5 @@ permalink: /kb/139/Q139500/
 	
 	=============================================================================
 	
+
+{% endraw %}

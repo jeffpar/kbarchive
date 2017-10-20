@@ -6,6 +6,8 @@ permalink: /kb/192/Q192071/
 
 ## Q192071: PRB: OLE EXE Called By FoxISAPI On PWServer Leaves INI Files
 
+{% raw %}
+
 	Article: Q192071
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -83,3 +85,5 @@ permalink: /kb/192/Q192071/
 	
 	=============================================================================
 	
+
+{% endraw %}

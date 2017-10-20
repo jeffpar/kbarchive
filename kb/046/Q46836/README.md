@@ -6,6 +6,8 @@ permalink: /kb/046/Q46836/
 
 ## Q46836: Q &amp; A on MS Recommendation of Glockenspiel C++ and CommonView
 
+{% raw %}
+
 	Article: Q46836
 	Product(s): See article
 	Version(s): 5.10
@@ -55,3 +57,5 @@ permalink: /kb/046/Q46836/
 	A. Microsoft uses a variety of languages in-house including Microsoft C
 	and MASM. Beyond that, it is not possible to comment on which products
 	use what languages.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140503/
 
 ## Q140503: DOC: Port I/O Functions Not Included in DLL Version of CRT
 
+{% raw %}
+
 	Article: Q140503
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0;
@@ -47,3 +49,5 @@ permalink: /kb/140/Q140503/
 	
 	=============================================================================
 	
+
+{% endraw %}

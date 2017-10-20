@@ -6,6 +6,8 @@ permalink: /kb/140/Q140440/
 
 ## Q140440: FIX: Global Overloaded Delete Operator Causes LNK2005
 
+{% raw %}
+
 	Article: Q140440
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/140/Q140440/
 	
 	=============================================================================
 	
+
+{% endraw %}

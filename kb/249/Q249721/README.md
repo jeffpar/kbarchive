@@ -6,6 +6,8 @@ permalink: /kb/249/Q249721/
 
 ## Q249721: Error Message: Data Area Passed to a System Call Is Too Small.
 
+{% raw %}
+
 	Article: Q249721
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/249/Q249721/
 	
 	=============================================================================
 	
+
+{% endraw %}

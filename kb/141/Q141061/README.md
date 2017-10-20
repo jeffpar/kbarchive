@@ -6,6 +6,8 @@ permalink: /kb/141/Q141061/
 
 ## Q141061: PC MAPI: How to Determine if Simple MAPI Is Available
 
+{% raw %}
+
 	Article: Q141061
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -61,3 +63,5 @@ permalink: /kb/141/Q141061/
 	
 	=============================================================================
 	
+
+{% endraw %}

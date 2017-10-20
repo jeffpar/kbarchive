@@ -6,6 +6,8 @@ permalink: /kb/241/Q241074/
 
 ## Q241074: 16-Bit Programs Cannot View Long File Names on NetWare Servers
 
+{% raw %}
+
 	Article: Q241074
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/241/Q241074/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170771/
 
 ## Q170771: Cluster May Fail If IP Address Used from DHCP Server
 
+{% raw %}
+
 	Article: Q170771
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -54,3 +56,5 @@ permalink: /kb/170/Q170771/
 	
 	=============================================================================
 	
+
+{% endraw %}

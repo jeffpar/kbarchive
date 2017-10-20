@@ -6,6 +6,8 @@ permalink: /kb/241/Q241150/
 
 ## Q241150: TPU: Err Msg: Unable to Register All Files That Were Installed
 
+{% raw %}
+
 	Article: Q241150
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -82,3 +84,5 @@ permalink: /kb/241/Q241150/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97649/
 
 ## Q97649: Level Passwords for Chip's Challenge (WEP)
 
+{% raw %}
+
 	Article: Q97649
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -190,3 +192,5 @@ permalink: /kb/097/Q97649/
 	
 	=============================================================================
 	
+
+{% endraw %}

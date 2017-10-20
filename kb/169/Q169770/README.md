@@ -6,6 +6,8 @@ permalink: /kb/169/Q169770/
 
 ## Q169770: XADM: How To Move Tracking Logs and Directory
 
+{% raw %}
+
 	Article: Q169770
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -79,3 +81,5 @@ permalink: /kb/169/Q169770/
 	
 	=============================================================================
 	
+
+{% endraw %}

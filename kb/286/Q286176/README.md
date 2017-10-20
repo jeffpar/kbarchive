@@ -6,6 +6,8 @@ permalink: /kb/286/Q286176/
 
 ## Q286176: XFOR: Unable to Complete Free and Busy Queries After SP4 Upgrade
 
+{% raw %}
+
 	Article: Q286176
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP3
@@ -69,3 +71,5 @@ permalink: /kb/286/Q286176/
 	
 	=============================================================================
 	
+
+{% endraw %}

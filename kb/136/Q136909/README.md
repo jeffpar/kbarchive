@@ -6,6 +6,8 @@ permalink: /kb/136/Q136909/
 
 ## Q136909: World of Flight 1.0: OPTHELP.TXT Contents
 
+{% raw %}
+
 	Article: Q136909
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -306,3 +308,5 @@ permalink: /kb/136/Q136909/
 	
 	=============================================================================
 	
+
+{% endraw %}

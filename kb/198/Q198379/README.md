@@ -6,6 +6,8 @@ permalink: /kb/198/Q198379/
 
 ## Q198379: BUG: Decimal Points Truncated Using RDO Client Batch Cursors
 
+{% raw %}
+
 	Article: Q198379
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -242,3 +244,5 @@ permalink: /kb/198/Q198379/
 	
 	=============================================================================
 	
+
+{% endraw %}

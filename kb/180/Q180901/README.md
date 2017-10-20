@@ -6,6 +6,8 @@ permalink: /kb/180/Q180901/
 
 ## Q180901: HOWTO: Create Categorized Table in Word 97 w/ OLE Automation
 
+{% raw %}
+
 	Article: Q180901
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0,Service Release 1 (SR-1)
@@ -302,3 +304,5 @@ permalink: /kb/180/Q180901/
 	
 	=============================================================================
 	
+
+{% endraw %}

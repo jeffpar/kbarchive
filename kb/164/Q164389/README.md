@@ -6,6 +6,8 @@ permalink: /kb/164/Q164389/
 
 ## Q164389: FIX: ODBC Files Get Copied to Distribution Disks in VFP 3.0
 
+{% raw %}
+
 	Article: Q164389
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b
@@ -126,3 +128,5 @@ permalink: /kb/164/Q164389/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141519/
 
 ## Q141519: Unattended and Computer Profile Setup Fails to Install OEM NIC
 
+{% raw %}
+
 	Article: Q141519
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -257,3 +259,5 @@ permalink: /kb/141/Q141519/
 	
 	=============================================================================
 	
+
+{% endraw %}

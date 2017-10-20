@@ -6,6 +6,8 @@ permalink: /kb/189/Q189008/
 
 ## Q189008: SBS Unable to Get Name Resolution with DNS
 
+{% raw %}
+
 	Article: Q189008
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -73,3 +75,5 @@ permalink: /kb/189/Q189008/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/091/Q91694/
 
 ## Q91694: WFWG Err Msg: Protocol Manager Reported an Incomplete Binding
 
+{% raw %}
+
 	Article: Q91694
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -122,3 +124,5 @@ permalink: /kb/091/Q91694/
 	
 	=============================================================================
 	
+
+{% endraw %}

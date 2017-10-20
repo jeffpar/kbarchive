@@ -6,6 +6,8 @@ permalink: /kb/097/Q97443/
 
 ## Q97443: Error Message &quot;Fdisk Unsuccessful&quot; Means .BID Is Missing
 
+{% raw %}
+
 	Article: Q97443
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/097/Q97443/
 	
 	=============================================================================
 	
+
+{% endraw %}

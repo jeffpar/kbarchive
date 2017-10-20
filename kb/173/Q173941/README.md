@@ -6,6 +6,8 @@ permalink: /kb/173/Q173941/
 
 ## Q173941: Windows NT DNR Does Not Cache Short Names
 
+{% raw %}
+
 	Article: Q173941
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -110,3 +112,5 @@ permalink: /kb/173/Q173941/
 	
 	=============================================================================
 	
+
+{% endraw %}

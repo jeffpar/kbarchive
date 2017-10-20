@@ -6,6 +6,8 @@ permalink: /kb/131/Q131670/
 
 ## Q131670: PC Adm: Err Msg: ADMIN Is Already Running on this Post Office
 
+{% raw %}
+
 	Article: Q131670
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0a,3.2,3.2a
@@ -118,3 +120,5 @@ permalink: /kb/131/Q131670/
 	
 	=============================================================================
 	
+
+{% endraw %}

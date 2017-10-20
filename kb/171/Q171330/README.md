@@ -6,6 +6,8 @@ permalink: /kb/171/Q171330/
 
 ## Q171330: Explanation of Rtripinf.bat and Ipxinf.bat
 
+{% raw %}
+
 	Article: Q171330
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -93,3 +95,5 @@ permalink: /kb/171/Q171330/
 	
 	=============================================================================
 	
+
+{% endraw %}

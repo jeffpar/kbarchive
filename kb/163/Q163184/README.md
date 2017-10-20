@@ -6,6 +6,8 @@ permalink: /kb/163/Q163184/
 
 ## Q163184: ODE97: Setup Wizard Warning When Including ActiveX Controls
 
+{% raw %}
+
 	Article: Q163184
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:
@@ -124,3 +126,5 @@ permalink: /kb/163/Q163184/
 	
 	=============================================================================
 	
+
+{% endraw %}

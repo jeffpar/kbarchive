@@ -6,6 +6,8 @@ permalink: /kb/279/Q279294/
 
 ## Q279294: Combat Flight Simulator 2: How to Start Your Aircraft Engine
 
+{% raw %}
+
 	Article: Q279294
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -105,3 +107,5 @@ permalink: /kb/279/Q279294/
 	
 	=============================================================================
 	
+
+{% endraw %}

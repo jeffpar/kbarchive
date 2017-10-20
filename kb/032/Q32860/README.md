@@ -6,6 +6,8 @@ permalink: /kb/032/Q32860/
 
 ## Q32860: Using /LA and .FARDATA? Generates Incorrect Listing File
 
+{% raw %}
+
 	Article: Q32860
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -40,3 +42,5 @@ permalink: /kb/032/Q32860/
 	
 	    first "@CurSeg ends" statement should be place before the _DATA
 	segment is declared.
+
+{% endraw %}

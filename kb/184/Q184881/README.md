@@ -6,6 +6,8 @@ permalink: /kb/184/Q184881/
 
 ## Q184881: Reverse Lookups with BIND Earlier Than 4.8.3 Fail
 
+{% raw %}
+
 	Article: Q184881
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/184/Q184881/
 	
 	=============================================================================
 	
+
+{% endraw %}

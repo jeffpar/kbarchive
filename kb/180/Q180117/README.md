@@ -6,6 +6,8 @@ permalink: /kb/180/Q180117/
 
 ## Q180117: XADM: Recovering Deleted Items from a Public Folder
 
+{% raw %}
+
 	Article: Q180117
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -70,3 +72,5 @@ permalink: /kb/180/Q180117/
 	
 	=============================================================================
 	
+
+{% endraw %}

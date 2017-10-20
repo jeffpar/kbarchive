@@ -6,6 +6,8 @@ permalink: /kb/199/Q199093/
 
 ## Q199093: XIMS: Performing WHOIS on Invisible User Returns No Information
 
+{% raw %}
+
 	Article: Q199093
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -43,3 +45,5 @@ permalink: /kb/199/Q199093/
 	
 	=============================================================================
 	
+
+{% endraw %}

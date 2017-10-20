@@ -6,6 +6,8 @@ permalink: /kb/166/Q166818/
 
 ## Q166818: PPT: Unable to Change the ActivePrinter Property With VBA
 
+{% raw %}
+
 	Article: Q166818
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -51,3 +53,5 @@ permalink: /kb/166/Q166818/
 	
 	=============================================================================
 	
+
+{% endraw %}

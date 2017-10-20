@@ -6,6 +6,8 @@ permalink: /kb/271/Q271403/
 
 ## Q271403: WD97: Word Document Opens Read-Only on FTP Server
 
+{% raw %}
+
 	Article: Q271403
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/271/Q271403/
 	
 	=============================================================================
 	
+
+{% endraw %}

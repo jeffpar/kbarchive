@@ -6,6 +6,8 @@ permalink: /kb/273/Q273561/
 
 ## Q273561: XCLN: How To Use IMAP4 to Migrate E-Mail
 
+{% raw %}
+
 	Article: Q273561
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -75,3 +77,5 @@ permalink: /kb/273/Q273561/
 	
 	=============================================================================
 	
+
+{% endraw %}

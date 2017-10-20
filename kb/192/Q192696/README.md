@@ -6,6 +6,8 @@ permalink: /kb/192/Q192696/
 
 ## Q192696: Grace Logins Are Not Reset on FPNW
 
+{% raw %}
+
 	Article: Q192696
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/192/Q192696/
 	
 	=============================================================================
 	
+
+{% endraw %}

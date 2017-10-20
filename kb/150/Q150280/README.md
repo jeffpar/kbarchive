@@ -6,6 +6,8 @@ permalink: /kb/150/Q150280/
 
 ## Q150280: Adding the Telephony Icon to Control Panel
 
+{% raw %}
+
 	Article: Q150280
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/150/Q150280/
 	
 	=============================================================================
 	
+
+{% endraw %}

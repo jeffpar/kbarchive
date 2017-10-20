@@ -6,6 +6,8 @@ permalink: /kb/156/Q156643/
 
 ## Q156643: PRB: Company Name Does Not Appear in Version Dialog
 
+{% raw %}
+
 	Article: Q156643
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -67,3 +69,5 @@ permalink: /kb/156/Q156643/
 	
 	=============================================================================
 	
+
+{% endraw %}

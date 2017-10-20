@@ -6,6 +6,8 @@ permalink: /kb/261/Q261267/
 
 ## Q261267: PRB: FoxPro Tables Accessed Through ODBC Are Not Updated
 
+{% raw %}
+
 	Article: Q261267
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,4.0,5.0,5.0a,6.0
@@ -120,3 +122,5 @@ permalink: /kb/261/Q261267/
 	
 	=============================================================================
 	
+
+{% endraw %}

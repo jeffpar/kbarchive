@@ -6,6 +6,8 @@ permalink: /kb/296/Q296879/
 
 ## Q296879: XFOR: Sent Messages Appear in the IMS Queue and Event ID 3038
 
+{% raw %}
+
 	Article: Q296879
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -95,3 +97,5 @@ permalink: /kb/296/Q296879/
 	
 	=============================================================================
 	
+
+{% endraw %}

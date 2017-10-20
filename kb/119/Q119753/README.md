@@ -6,6 +6,8 @@ permalink: /kb/119/Q119753/
 
 ## Q119753: ADT2: ADT Repair/Compact Documentation Error
 
+{% raw %}
+
 	Article: Q119753
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -58,3 +60,5 @@ permalink: /kb/119/Q119753/
 	
 	=============================================================================
 	
+
+{% endraw %}

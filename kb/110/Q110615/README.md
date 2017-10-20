@@ -6,6 +6,8 @@ permalink: /kb/110/Q110615/
 
 ## Q110615: PROFS: Bottleneck in MS-CSM Causes Multiple Requests
 
+{% raw %}
+
 	Article: Q110615
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4
@@ -59,3 +61,5 @@ permalink: /kb/110/Q110615/
 	
 	=============================================================================
 	
+
+{% endraw %}

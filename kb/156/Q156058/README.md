@@ -6,6 +6,8 @@ permalink: /kb/156/Q156058/
 
 ## Q156058: PRB: Limited Number of Pages Allowed in a PageFrame Control
 
+{% raw %}
+
 	Article: Q156058
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -48,3 +50,5 @@ permalink: /kb/156/Q156058/
 	
 	=============================================================================
 	
+
+{% endraw %}

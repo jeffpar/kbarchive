@@ -6,6 +6,8 @@ permalink: /kb/101/Q101077/
 
 ## Q101077: ADT: Windows Setup Ignores ADK, ADT Applications
 
+{% raw %}
+
 	Article: Q101077
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.1,2.0
@@ -79,3 +81,5 @@ permalink: /kb/101/Q101077/
 	
 	=============================================================================
 	
+
+{% endraw %}

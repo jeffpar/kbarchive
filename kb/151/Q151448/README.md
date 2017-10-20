@@ -6,6 +6,8 @@ permalink: /kb/151/Q151448/
 
 ## Q151448: Trap 0x50 and Trap 0xA Under Heavy Stress
 
+{% raw %}
+
 	Article: Q151448
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -60,3 +62,5 @@ permalink: /kb/151/Q151448/
 	
 	=============================================================================
 	
+
+{% endraw %}

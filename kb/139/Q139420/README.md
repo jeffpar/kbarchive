@@ -6,6 +6,8 @@ permalink: /kb/139/Q139420/
 
 ## Q139420: HP DesignJet 600 Not Recognized by JetDirect Card
 
+{% raw %}
+
 	Article: Q139420
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -79,3 +81,5 @@ permalink: /kb/139/Q139420/
 	
 	=============================================================================
 	
+
+{% endraw %}

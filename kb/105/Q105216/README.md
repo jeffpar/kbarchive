@@ -6,6 +6,8 @@ permalink: /kb/105/Q105216/
 
 ## Q105216: Windows Err Msg: The Program Group File Has Been Modified
 
+{% raw %}
+
 	Article: Q105216
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -80,3 +82,5 @@ permalink: /kb/105/Q105216/
 	
 	=============================================================================
 	
+
+{% endraw %}

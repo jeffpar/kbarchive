@@ -6,6 +6,8 @@ permalink: /kb/092/Q92573/
 
 ## Q92573: Most Recently Used (MRU) Lists of Previous Connections in WFWG
 
+{% raw %}
+
 	Article: Q92573
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -96,3 +98,5 @@ permalink: /kb/092/Q92573/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245273/
 
 ## Q245273: XWEB: Error Message: There Are No More Endpoints Available...
 
+{% raw %}
+
 	Article: Q245273
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -100,3 +102,5 @@ permalink: /kb/245/Q245273/
 	
 	=============================================================================
 	
+
+{% endraw %}

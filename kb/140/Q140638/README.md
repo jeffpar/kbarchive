@@ -6,6 +6,8 @@ permalink: /kb/140/Q140638/
 
 ## Q140638: PRB: FLL Created Without LCK API Functions Is Invalid
 
+{% raw %}
+
 	Article: Q140638
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -86,3 +88,5 @@ permalink: /kb/140/Q140638/
 	
 	=============================================================================
 	
+
+{% endraw %}

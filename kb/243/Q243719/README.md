@@ -6,6 +6,8 @@ permalink: /kb/243/Q243719/
 
 ## Q243719: SNA Traces Are Only Deleted from %SnaRoot%&#92;Traces
 
+{% raw %}
+
 	Article: Q243719
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
@@ -75,3 +77,5 @@ permalink: /kb/243/Q243719/
 	
 	=============================================================================
 	
+
+{% endraw %}

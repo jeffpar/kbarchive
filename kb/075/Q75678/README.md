@@ -6,6 +6,8 @@ permalink: /kb/075/Q75678/
 
 ## Q75678: Alphabetic Listing of MS-DOS 5 Upgrade Files with Disks
 
+{% raw %}
+
 	Article: Q75678
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -164,3 +166,5 @@ permalink: /kb/075/Q75678/
 	
 	=============================================================================
 	
+
+{% endraw %}

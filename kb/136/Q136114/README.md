@@ -6,6 +6,8 @@ permalink: /kb/136/Q136114/
 
 ## Q136114: Objects in ROT Not Released When Process Terminates Abnormally
 
+{% raw %}
+
 	Article: Q136114
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/136/Q136114/
 	
 	=============================================================================
 	
+
+{% endraw %}

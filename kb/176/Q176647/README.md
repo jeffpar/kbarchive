@@ -6,6 +6,8 @@ permalink: /kb/176/Q176647/
 
 ## Q176647: XADM: Latency Reading Alternate Recipient Information
 
+{% raw %}
+
 	Article: Q176647
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -41,3 +43,5 @@ permalink: /kb/176/Q176647/
 	
 	=============================================================================
 	
+
+{% endraw %}

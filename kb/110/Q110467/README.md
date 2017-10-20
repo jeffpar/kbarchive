@@ -6,6 +6,8 @@ permalink: /kb/110/Q110467/
 
 ## Q110467: PC Win: Description of 3.2 Setup Process
 
+{% raw %}
+
 	Article: Q110467
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -164,3 +166,5 @@ permalink: /kb/110/Q110467/
 	
 	=============================================================================
 	
+
+{% endraw %}

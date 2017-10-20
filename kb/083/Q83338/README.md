@@ -6,6 +6,8 @@ permalink: /kb/083/Q83338/
 
 ## Q83338: Downloading TrueType Fonts &amp; LaserJets Before the Series IIs
 
+{% raw %}
+
 	Article: Q83338
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/083/Q83338/
 	
 	=============================================================================
 	
+
+{% endraw %}

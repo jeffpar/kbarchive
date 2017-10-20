@@ -6,6 +6,8 @@ permalink: /kb/147/Q147828/
 
 ## Q147828: Dell OptiPlex XMT BIOS Upgrade Changes Video Refresh Modes
 
+{% raw %}
+
 	Article: Q147828
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -53,3 +55,5 @@ permalink: /kb/147/Q147828/
 	
 	=============================================================================
 	
+
+{% endraw %}

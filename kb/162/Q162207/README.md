@@ -6,6 +6,8 @@ permalink: /kb/162/Q162207/
 
 ## Q162207: WD97: &quot;Replace With&quot; Format Incorrect with Recorded Macro
 
+{% raw %}
+
 	Article: Q162207
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -171,3 +173,5 @@ permalink: /kb/162/Q162207/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148608/
 
 ## Q148608: BUG: Derived-Type with Pointer Expands Incorrectly in Debugger
 
+{% raw %}
+
 	Article: Q148608
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -98,3 +100,5 @@ permalink: /kb/148/Q148608/
 	
 	=============================================================================
 	
+
+{% endraw %}

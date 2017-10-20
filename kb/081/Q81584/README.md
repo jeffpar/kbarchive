@@ -6,6 +6,8 @@ permalink: /kb/081/Q81584/
 
 ## Q81584: Novell Broadcast Message Locks Keyboard in DOS Virtual Machine
 
+{% raw %}
+
 	Article: Q81584
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -68,3 +70,5 @@ permalink: /kb/081/Q81584/
 	
 	=============================================================================
 	
+
+{% endraw %}

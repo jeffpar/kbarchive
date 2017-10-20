@@ -6,6 +6,8 @@ permalink: /kb/233/Q233229/
 
 ## Q233229: XCLN: Mess. Times One Hour Off If Changing Standard to Daylight
 
+{% raw %}
+
 	Article: Q233229
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -64,3 +66,5 @@ permalink: /kb/233/Q233229/
 	
 	=============================================================================
 	
+
+{% endraw %}

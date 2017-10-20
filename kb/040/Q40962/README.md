@@ -6,6 +6,8 @@ permalink: /kb/040/Q40962/
 
 ## Q40962: DllInst.exe-Multiple Application Instance Data in a DLL
 
+{% raw %}
+
 	Article: Q40962
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -119,3 +121,5 @@ permalink: /kb/040/Q40962/
 	
 	=============================================================================
 	
+
+{% endraw %}

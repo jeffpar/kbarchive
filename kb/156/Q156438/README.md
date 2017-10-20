@@ -6,6 +6,8 @@ permalink: /kb/156/Q156438/
 
 ## Q156438: Internet Mail or News Reader Software Hangs or Times Out
 
+{% raw %}
+
 	Article: Q156438
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -93,3 +95,5 @@ permalink: /kb/156/Q156438/
 	
 	=============================================================================
 	
+
+{% endraw %}

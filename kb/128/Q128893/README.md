@@ -6,6 +6,8 @@ permalink: /kb/128/Q128893/
 
 ## Q128893: PRB: Editing Embedded OLE Object in Place Does Not Save Change
 
+{% raw %}
+
 	Article: Q128893
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -81,3 +83,5 @@ permalink: /kb/128/Q128893/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259430/
 
 ## Q259430: MS RADIUS Logging Format Changes After Applying the IAS SP6a Fix
 
+{% raw %}
+
 	Article: Q259430
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -100,3 +102,5 @@ permalink: /kb/259/Q259430/
 	
 	=============================================================================
 	
+
+{% endraw %}

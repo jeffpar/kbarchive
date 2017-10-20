@@ -6,6 +6,8 @@ permalink: /kb/183/Q183236/
 
 ## Q183236: SMS: Can't Delete Systems Jobs That Are in a Pending State
 
+{% raw %}
+
 	Article: Q183236
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -67,3 +69,5 @@ permalink: /kb/183/Q183236/
 	
 	=============================================================================
 	
+
+{% endraw %}

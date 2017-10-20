@@ -6,6 +6,8 @@ permalink: /kb/097/Q97188/
 
 ## Q97188: DRAGBMP Demonstrates Dragging Bitmaps on the Screen
 
+{% raw %}
+
 	Article: Q97188
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -124,3 +126,5 @@ permalink: /kb/097/Q97188/
 	
 	=============================================================================
 	
+
+{% endraw %}

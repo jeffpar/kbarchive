@@ -6,6 +6,8 @@ permalink: /kb/164/Q164355/
 
 ## Q164355: PRB: Programmatically Adding Stored Procedure May Cause Error
 
+{% raw %}
+
 	Article: Q164355
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/164/Q164355/
 	
 	=============================================================================
 	
+
+{% endraw %}

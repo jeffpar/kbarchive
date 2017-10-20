@@ -6,6 +6,8 @@ permalink: /kb/084/Q84748/
 
 ## Q84748: PRB: LIB with /NOI Preserves Case for Object Module Names
 
+{% raw %}
+
 	Article: Q84748
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.1,3.11,3.17,3.18,3.2,3.20.010,3.31,3.4; OS/2:3.1,3.11,3.17,3.18
@@ -125,3 +127,5 @@ permalink: /kb/084/Q84748/
 	
 	=============================================================================
 	
+
+{% endraw %}

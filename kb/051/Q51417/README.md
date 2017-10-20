@@ -6,6 +6,8 @@ permalink: /kb/051/Q51417/
 
 ## Q51417: CURRENCY Data Type Not Available in Alternate Math (BC /FPa)
 
+{% raw %}
+
 	Article: Q51417
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -36,3 +38,5 @@ permalink: /kb/051/Q51417/
 	You can declare a variable with the CURRENCY data type by appending
 	the variable name with the suffix @ (the "at" sign), or you can use
 	the DIM statement with the AS CURRENCY clause (DIM x AS CURRENCY).
+
+{% endraw %}

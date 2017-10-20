@@ -6,6 +6,8 @@ permalink: /kb/098/Q98562/
 
 ## Q98562: Multimedia Err Msg: Unexpected Error &#91;MCI602&#93;.
 
+{% raw %}
+
 	Article: Q98562
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -118,3 +120,5 @@ permalink: /kb/098/Q98562/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271552/
 
 ## Q271552: Stop 0x0a in zzzDesktopThread() When Computer Shuts Down
 
+{% raw %}
+
 	Article: Q271552
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -95,3 +97,5 @@ permalink: /kb/271/Q271552/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/034/Q34859/
 
 ## Q34859: C4047 Occurs when Function Prototype Is Omitted or Misnamed
 
+{% raw %}
+
 	Article: Q34859
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -36,3 +38,5 @@ permalink: /kb/034/Q34859/
 	More information on function prototyping can be found beginning on
 	Page 169 in Chapter 7 of the "Microsoft C Optimizing Compiler Language
 	Reference" manual.
+
+{% endraw %}

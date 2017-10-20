@@ -6,6 +6,8 @@ permalink: /kb/175/Q175649/
 
 ## Q175649: Adding New SCSI Controller to DEC Alpha May Prevent Startup
 
+{% raw %}
+
 	Article: Q175649
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/175/Q175649/
 	
 	=============================================================================
 	
+
+{% endraw %}

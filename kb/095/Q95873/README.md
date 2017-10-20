@@ -6,6 +6,8 @@ permalink: /kb/095/Q95873/
 
 ## Q95873: GP Fault in PROGMAN.EXE with More Than 40 Program Groups
 
+{% raw %}
+
 	Article: Q95873
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -80,3 +82,5 @@ permalink: /kb/095/Q95873/
 	
 	=============================================================================
 	
+
+{% endraw %}

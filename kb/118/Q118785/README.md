@@ -6,6 +6,8 @@ permalink: /kb/118/Q118785/
 
 ## Q118785: FFAPI: Tokens Required in a FFAPI File
 
+{% raw %}
+
 	Article: Q118785
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1,3.0
@@ -86,3 +88,5 @@ permalink: /kb/118/Q118785/
 	
 	=============================================================================
 	
+
+{% endraw %}

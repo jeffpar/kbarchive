@@ -6,6 +6,8 @@ permalink: /kb/191/Q191673/
 
 ## Q191673: DOC: Calling Genhtml.prg Gives &quot;Alias Not Found&quot; Error
 
+{% raw %}
+
 	Article: Q191673
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -47,3 +49,5 @@ permalink: /kb/191/Q191673/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190501/
 
 ## Q190501: FIX: Resizing CToolbar with Dropdown Arrow Buttons Freezes Apps
 
+{% raw %}
+
 	Article: Q190501
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -185,3 +187,5 @@ permalink: /kb/190/Q190501/
 	
 	=============================================================================
 	
+
+{% endraw %}

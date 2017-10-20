@@ -6,6 +6,8 @@ permalink: /kb/162/Q162292/
 
 ## Q162292: WD97: Menu Item Moved When Template Converted to Word 97
 
+{% raw %}
+
 	Article: Q162292
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/162/Q162292/
 	
 	=============================================================================
 	
+
+{% endraw %}

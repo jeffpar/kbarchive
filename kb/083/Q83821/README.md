@@ -6,6 +6,8 @@ permalink: /kb/083/Q83821/
 
 ## Q83821: Bookshelf: Windows 3.1 Setup Renames MIDIMAP .CFG
 
+{% raw %}
+
 	Article: Q83821
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/083/Q83821/
 	
 	=============================================================================
 	
+
+{% endraw %}

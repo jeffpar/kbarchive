@@ -6,6 +6,8 @@ permalink: /kb/158/Q158096/
 
 ## Q158096: GEX: Running GEX on NexGen Chips and Processors
 
+{% raw %}
+
 	Article: Q158096
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/158/Q158096/
 	
 	=============================================================================
 	
+
+{% endraw %}

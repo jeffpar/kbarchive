@@ -6,6 +6,8 @@ permalink: /kb/021/Q21839/
 
 ## Q21839: Support for IBM EGA and Hercules Graphics Cards
 
+{% raw %}
+
 	Article: Q21839
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -70,3 +72,5 @@ permalink: /kb/021/Q21839/
 	The use of Hercules cards is also documented in the README.DOC file on
 	the QuickBASIC Version 4.00, 4.00b, and 4.50 release disk, which
 	supplements the Microsoft QuickBASIC Compiler documentation.
+
+{% endraw %}

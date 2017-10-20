@@ -6,6 +6,8 @@ permalink: /kb/185/Q185083/
 
 ## Q185083: PRB: Combo Box Displays Incorrectly w/ Large DisplayCount
 
+{% raw %}
+
 	Article: Q185083
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -82,3 +84,5 @@ permalink: /kb/185/Q185083/
 	
 	=============================================================================
 	
+
+{% endraw %}

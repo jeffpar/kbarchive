@@ -6,6 +6,8 @@ permalink: /kb/149/Q149134/
 
 ## Q149134: BUG: EN and ES Edit Descriptors Cause Incorrect Output
 
+{% raw %}
+
 	Article: Q149134
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/149/Q149134/
 	
 	=============================================================================
 	
+
+{% endraw %}

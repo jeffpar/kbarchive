@@ -6,6 +6,8 @@ permalink: /kb/183/Q183335/
 
 ## Q183335: Calling Card and Area Code Not Dialed Using Both TAPI Options
 
+{% raw %}
+
 	Article: Q183335
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/183/Q183335/
 	
 	=============================================================================
 	
+
+{% endraw %}

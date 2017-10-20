@@ -6,6 +6,8 @@ permalink: /kb/074/Q74495/
 
 ## Q74495: Norton NDOS and DOSKEY
 
+{% raw %}
+
 	Article: Q74495
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -59,3 +61,5 @@ permalink: /kb/074/Q74495/
 	
 	=============================================================================
 	
+
+{% endraw %}

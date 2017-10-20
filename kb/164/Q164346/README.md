@@ -6,6 +6,8 @@ permalink: /kb/164/Q164346/
 
 ## Q164346: XCLN: Newprof.Exe Requires a Value for HomeServer
 
+{% raw %}
+
 	Article: Q164346
 	Product(s): Microsoft Exchange
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/164/Q164346/
 	
 	=============================================================================
 	
+
+{% endraw %}

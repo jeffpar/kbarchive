@@ -6,6 +6,8 @@ permalink: /kb/154/Q154485/
 
 ## Q154485: Disabling Keep Alive Connections in IIS 1.0
 
+{% raw %}
+
 	Article: Q154485
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -115,3 +117,5 @@ permalink: /kb/154/Q154485/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238186/
 
 ## Q238186: Simultaneous Terminal Server Client Logons May Not Connect
 
+{% raw %}
+
 	Article: Q238186
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -78,3 +80,5 @@ permalink: /kb/238/Q238186/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/093/Q93330/
 
 ## Q93330: PRB: Problems with Using a Graphic Image in an .FRX File
 
+{% raw %}
+
 	Article: Q93330
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -61,3 +63,5 @@ permalink: /kb/093/Q93330/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/210/Q210842/
 
 ## Q210842: Err Msg: HTTP/1.1 New Application Failed
 
+{% raw %}
+
 	Article: Q210842
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/210/Q210842/
 	
 	=============================================================================
 	
+
+{% endraw %}

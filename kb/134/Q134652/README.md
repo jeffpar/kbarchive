@@ -6,6 +6,8 @@ permalink: /kb/134/Q134652/
 
 ## Q134652: GP Fault Or System Hang Using Windows NT Server Tools
 
+{% raw %}
+
 	Article: Q134652
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.1; winnt:3.0; :2.2c
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134652/
 	
 	=============================================================================
 	
+
+{% endraw %}

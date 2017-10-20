@@ -6,6 +6,8 @@ permalink: /kb/196/Q196091/
 
 ## Q196091: How to Configure SBS Clients to Use Dial-Up Networking
 
+{% raw %}
+
 	Article: Q196091
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): Windows:95,98; WinNT:4.0,4.0a
@@ -101,3 +103,5 @@ permalink: /kb/196/Q196091/
 	
 	=============================================================================
 	
+
+{% endraw %}

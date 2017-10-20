@@ -6,6 +6,8 @@ permalink: /kb/167/Q167949/
 
 ## Q167949: FIX: OnWindowMessage Returns BOOL for HRESULT
 
+{% raw %}
+
 	Article: Q167949
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0
@@ -78,3 +80,5 @@ permalink: /kb/167/Q167949/
 	
 	=============================================================================
 	
+
+{% endraw %}

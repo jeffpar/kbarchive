@@ -6,6 +6,8 @@ permalink: /kb/180/Q180119/
 
 ## Q180119: Err: CreateIISPackage or DeleteIISpackage 0x800706be RPC Failed
 
+{% raw %}
+
 	Article: Q180119
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/180/Q180119/
 	
 	=============================================================================
 	
+
+{% endraw %}

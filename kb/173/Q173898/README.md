@@ -6,6 +6,8 @@ permalink: /kb/173/Q173898/
 
 ## Q173898: XWEB: Message Sent w/ Incorrect Priority When You Press ENTER
 
+{% raw %}
+
 	Article: Q173898
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -45,3 +47,5 @@ permalink: /kb/173/Q173898/
 	
 	=============================================================================
 	
+
+{% endraw %}

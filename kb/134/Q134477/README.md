@@ -6,6 +6,8 @@ permalink: /kb/134/Q134477/
 
 ## Q134477: Lion King 1.0: ESS AudioDrive Hardware Not Responding
 
+{% raw %}
+
 	Article: Q134477
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/134/Q134477/
 	
 	=============================================================================
 	
+
+{% endraw %}

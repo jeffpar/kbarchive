@@ -6,6 +6,8 @@ permalink: /kb/238/Q238758/
 
 ## Q238758: FP98: FrontPage 98b Binary Patch Can Be Applied to all Versions
 
+{% raw %}
+
 	Article: Q238758
 	Product(s): Word Front Page
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/238/Q238758/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129588/
 
 ## Q129588: MAC Asimov: Can't Launch with Apple's At Ease
 
+{% raw %}
+
 	Article: Q129588
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/129/Q129588/
 	
 	=============================================================================
 	
+
+{% endraw %}

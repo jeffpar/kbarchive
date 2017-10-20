@@ -6,6 +6,8 @@ permalink: /kb/153/Q153850/
 
 ## Q153850: BUG: Access Driver DBQ=, DefaultDir= Incorrect with Large mdb
 
+{% raw %}
+
 	Article: Q153850
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.4
@@ -67,3 +69,5 @@ permalink: /kb/153/Q153850/
 	
 	=============================================================================
 	
+
+{% endraw %}

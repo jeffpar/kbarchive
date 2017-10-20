@@ -6,6 +6,8 @@ permalink: /kb/174/Q174869/
 
 ## Q174869: WINS Client Sends Refresh Requests to Secondary WINS Server
 
+{% raw %}
+
 	Article: Q174869
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -89,3 +91,5 @@ permalink: /kb/174/Q174869/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/062/Q62055/
 
 ## Q62055: QBX ISAM Capitalizes the Field Names of a Table in an .EXE
 
+{% raw %}
+
 	Article: Q62055
 	Product(s): See article
 	Version(s): 7.00
@@ -55,3 +57,5 @@ permalink: /kb/062/Q62055/
 	    CREATEINDEX 1, "Idx", 1, "Field1", "Field2", "Field3"
 	    CLOSE
 	    END
+
+{% endraw %}

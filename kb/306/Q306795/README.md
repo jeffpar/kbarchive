@@ -6,6 +6,8 @@ permalink: /kb/306/Q306795/
 
 ## Q306795: Services for UNIX Management Console May Hang
 
+{% raw %}
+
 	Article: Q306795
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -101,3 +103,5 @@ permalink: /kb/306/Q306795/
 	
 	=============================================================================
 	
+
+{% endraw %}

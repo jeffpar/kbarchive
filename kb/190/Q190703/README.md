@@ -6,6 +6,8 @@ permalink: /kb/190/Q190703/
 
 ## Q190703: XADM: Local Objects Will Backsync From Other Sites
 
+{% raw %}
+
 	Article: Q190703
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/190/Q190703/
 	
 	=============================================================================
 	
+
+{% endraw %}

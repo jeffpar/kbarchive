@@ -6,6 +6,8 @@ permalink: /kb/176/Q176961/
 
 ## Q176961: SMS: Wuser32 Fails to Initiate Administrator Quick Viewer
 
+{% raw %}
+
 	Article: Q176961
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -61,3 +63,5 @@ permalink: /kb/176/Q176961/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186557/
 
 ## Q186557: Terminal Server Commands: SHUTDOWN
 
+{% raw %}
+
 	Article: Q186557
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -99,3 +101,5 @@ permalink: /kb/186/Q186557/
 	
 	=============================================================================
 	
+
+{% endraw %}

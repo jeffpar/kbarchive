@@ -6,6 +6,8 @@ permalink: /kb/187/Q187936/
 
 ## Q187936: Application May Hang Calling LogonUser() API
 
+{% raw %}
+
 	Article: Q187936
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.0; WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/187/Q187936/
 	
 	=============================================================================
 	
+
+{% endraw %}

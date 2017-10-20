@@ -6,6 +6,8 @@ permalink: /kb/185/Q185730/
 
 ## Q185730: HOWTO: Prevent Multiple Instances of a 32-bit VB Application
 
+{% raw %}
+
 	Article: Q185730
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -146,3 +148,5 @@ permalink: /kb/185/Q185730/
 	
 	=============================================================================
 	
+
+{% endraw %}

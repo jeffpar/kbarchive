@@ -6,6 +6,8 @@ permalink: /kb/236/Q236007/
 
 ## Q236007: DC Demotion Causes Out-of-Process Applications to Fail
 
+{% raw %}
+
 	Article: Q236007
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -66,3 +68,5 @@ permalink: /kb/236/Q236007/
 	
 	=============================================================================
 	
+
+{% endraw %}

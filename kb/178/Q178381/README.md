@@ -6,6 +6,8 @@ permalink: /kb/178/Q178381/
 
 ## Q178381: SNMP Leaks Memory If the OID Cannot Be Decoded
 
+{% raw %}
+
 	Article: Q178381
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/178/Q178381/
 	
 	=============================================================================
 	
+
+{% endraw %}

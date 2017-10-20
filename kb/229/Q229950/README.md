@@ -6,6 +6,8 @@ permalink: /kb/229/Q229950/
 
 ## Q229950: SMS: Provider Deletes When Computer Name Starts w/Number
 
+{% raw %}
+
 	Article: Q229950
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -62,3 +64,5 @@ permalink: /kb/229/Q229950/
 	
 	=============================================================================
 	
+
+{% endraw %}

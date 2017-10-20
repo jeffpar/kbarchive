@@ -6,6 +6,8 @@ permalink: /kb/269/Q269219/
 
 ## Q269219: TAMA Cannot Create Objects Directly Under Active Directory MA
 
+{% raw %}
+
 	Article: Q269219
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2
@@ -74,3 +76,5 @@ permalink: /kb/269/Q269219/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190079/
 
 ## Q190079: BUG: Procedure Declaration Does Not Match Description of Event
 
+{% raw %}
+
 	Article: Q190079
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -103,3 +105,5 @@ permalink: /kb/190/Q190079/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147049/
 
 ## Q147049: XCLN: Err Msg: The Print Operation Could not be Completed
 
+{% raw %}
+
 	Article: Q147049
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -74,3 +76,5 @@ permalink: /kb/147/Q147049/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232268/
 
 ## Q232268: BUG: Validate Event Is not Fired When Placing a FlexGrid Control
 
+{% raw %}
+
 	Article: Q232268
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -117,3 +119,5 @@ permalink: /kb/232/Q232268/
 	
 	=============================================================================
 	
+
+{% endraw %}

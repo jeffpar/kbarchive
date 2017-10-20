@@ -6,6 +6,8 @@ permalink: /kb/041/Q41445/
 
 ## Q41445: QuickC 2.00 README.DOC: The DOS Shell Command
 
+{% raw %}
+
 	Article: Q41445
 	Product(s): See article
 	Version(s): 2.00
@@ -25,3 +27,5 @@ permalink: /kb/041/Q41445/
 	cause you to run out of memory when you try to compile a program. Even
 	if you don't run out of memory, compiling will slow considerably as
 	portions of QuickC are swapped in and out of memory.
+
+{% endraw %}

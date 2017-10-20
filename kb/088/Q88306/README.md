@@ -6,6 +6,8 @@ permalink: /kb/088/Q88306/
 
 ## Q88306: File Manager Err Msg: System Error, Divide by Zero...
 
+{% raw %}
+
 	Article: Q88306
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/088/Q88306/
 	
 	=============================================================================
 	
+
+{% endraw %}

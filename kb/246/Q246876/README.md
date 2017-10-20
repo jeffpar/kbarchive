@@ -6,6 +6,8 @@ permalink: /kb/246/Q246876/
 
 ## Q246876: INFO: Visual SourceSafe 6.0 Installation as Stand Alone Product
 
+{% raw %}
+
 	Article: Q246876
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -114,3 +116,5 @@ permalink: /kb/246/Q246876/
 	
 	=============================================================================
 	
+
+{% endraw %}

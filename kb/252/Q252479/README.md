@@ -6,6 +6,8 @@ permalink: /kb/252/Q252479/
 
 ## Q252479: MapPoint/Streets &amp; Trips 2001: How to View a High Contrast Map
 
+{% raw %}
+
 	Article: Q252479
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/252/Q252479/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/290/Q290087/
 
 ## Q290087: HOWTO: Administer SMTP and NNTP Services from Remote Workstation
 
+{% raw %}
+
 	Article: Q290087
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/290/Q290087/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171625/
 
 ## Q171625: Command-line Installation of SNA Server 3.0  and 4.0 Link Servic
 
+{% raw %}
+
 	Article: Q171625
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,4.0
@@ -93,3 +95,5 @@ permalink: /kb/171/Q171625/
 	
 	=============================================================================
 	
+
+{% endraw %}

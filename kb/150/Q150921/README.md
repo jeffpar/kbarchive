@@ -6,6 +6,8 @@ permalink: /kb/150/Q150921/
 
 ## Q150921: Mastering Exchange Development: Contents of README.WRI
 
+{% raw %}
+
 	Article: Q150921
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -386,3 +388,5 @@ permalink: /kb/150/Q150921/
 	
 	=============================================================================
 	
+
+{% endraw %}

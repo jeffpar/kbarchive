@@ -6,6 +6,8 @@ permalink: /kb/179/Q179294/
 
 ## Q179294: FIX: Record In Use Message Editing in Browse and Using Find
 
+{% raw %}
+
 	Article: Q179294
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
@@ -118,3 +120,5 @@ permalink: /kb/179/Q179294/
 	
 	=============================================================================
 	
+
+{% endraw %}

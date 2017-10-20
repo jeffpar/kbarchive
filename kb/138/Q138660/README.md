@@ -6,6 +6,8 @@ permalink: /kb/138/Q138660/
 
 ## Q138660: PRB: No Event Fires as Focus Moves Out of a System Window
 
+{% raw %}
+
 	Article: Q138660
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -44,3 +46,5 @@ permalink: /kb/138/Q138660/
 	
 	=============================================================================
 	
+
+{% endraw %}

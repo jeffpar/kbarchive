@@ -6,6 +6,8 @@ permalink: /kb/260/Q260196/
 
 ## Q260196: XCON: Cannot Delete X.400 Connector
 
+{% raw %}
+
 	Article: Q260196
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -53,3 +55,5 @@ permalink: /kb/260/Q260196/
 	
 	=============================================================================
 	
+
+{% endraw %}

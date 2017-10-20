@@ -6,6 +6,8 @@ permalink: /kb/035/Q35250/
 
 ## Q35250: MSETUP Installs on Drive Specified
 
+{% raw %}
+
 	Article: Q35250
 	Product(s): See article
 	Version(s): 6.x 1.00
@@ -22,3 +24,5 @@ permalink: /kb/035/Q35250/
 	
 	D:\mouse1\mouse
 	D:\mouse1\cpanel
+
+{% endraw %}

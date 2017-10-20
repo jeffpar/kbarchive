@@ -6,6 +6,8 @@ permalink: /kb/149/Q149421/
 
 ## Q149421: Using Detailed Logging to Debug SNMP Issues
 
+{% raw %}
+
 	Article: Q149421
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -188,3 +190,5 @@ permalink: /kb/149/Q149421/
 	
 	=============================================================================
 	
+
+{% endraw %}

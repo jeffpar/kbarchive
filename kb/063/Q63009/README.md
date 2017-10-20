@@ -6,6 +6,8 @@ permalink: /kb/063/Q63009/
 
 ## Q63009: &quot;Unknown Symbol&quot; Setting Breakpoint on Label in CodeView 3.00
 
+{% raw %}
+
 	Article: Q63009
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -49,3 +51,5 @@ permalink: /kb/063/Q63009/
 	
 	4. Position the cursor on the line you want to break on and then press
 	   the F9 key.
+
+{% endraw %}

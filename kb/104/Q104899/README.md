@@ -6,6 +6,8 @@ permalink: /kb/104/Q104899/
 
 ## Q104899: FIX: String Comparison Stops at Char(0) (NUL)
 
+{% raw %}
+
 	Article: Q104899
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -84,3 +86,5 @@ permalink: /kb/104/Q104899/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123220/
 
 ## Q123220: Fatal Error on Drive 1 with the Exabyte EXB-8505
 
+{% raw %}
+
 	Article: Q123220
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/123/Q123220/
 	
 	=============================================================================
 	
+
+{% endraw %}

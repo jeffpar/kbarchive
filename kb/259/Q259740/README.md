@@ -6,6 +6,8 @@ permalink: /kb/259/Q259740/
 
 ## Q259740: SMS: Remote Control Prompts for User's Credentials
 
+{% raw %}
+
 	Article: Q259740
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -64,3 +66,5 @@ permalink: /kb/259/Q259740/
 	
 	=============================================================================
 	
+
+{% endraw %}

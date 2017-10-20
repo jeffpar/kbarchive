@@ -6,6 +6,8 @@ permalink: /kb/128/Q128737/
 
 ## Q128737: How to Declare Arrays on Forms Without Making Them Public
 
+{% raw %}
+
 	Article: Q128737
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/128/Q128737/
 	
 	=============================================================================
 	
+
+{% endraw %}

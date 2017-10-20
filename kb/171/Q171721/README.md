@@ -6,6 +6,8 @@ permalink: /kb/171/Q171721/
 
 ## Q171721: FP: Reset Button on Search Results Page Does Not Clear Form
 
+{% raw %}
+
 	Article: Q171721
 	Product(s): Word Front Page
 	Version(s): windows:97, macintosh:1.0
@@ -63,3 +65,5 @@ permalink: /kb/171/Q171721/
 	
 	=============================================================================
 	
+
+{% endraw %}

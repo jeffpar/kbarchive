@@ -6,6 +6,8 @@ permalink: /kb/104/Q104586/
 
 ## Q104586: PC DB: Quick Check for Enhanced Security
 
+{% raw %}
+
 	Article: Q104586
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.0b,3.2
@@ -50,3 +52,5 @@ permalink: /kb/104/Q104586/
 	
 	=============================================================================
 	
+
+{% endraw %}

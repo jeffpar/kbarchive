@@ -6,6 +6,8 @@ permalink: /kb/119/Q119111/
 
 ## Q119111: PC DirSync: Dir-Sync Processes Launched at Wrong Time
 
+{% raw %}
+
 	Article: Q119111
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.5
@@ -122,3 +124,5 @@ permalink: /kb/119/Q119111/
 	
 	=============================================================================
 	
+
+{% endraw %}

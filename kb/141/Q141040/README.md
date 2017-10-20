@@ -6,6 +6,8 @@ permalink: /kb/141/Q141040/
 
 ## Q141040: BUG: Step Out in Debugger Ignores Try/Catch Scope
 
+{% raw %}
+
 	Article: Q141040
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -58,3 +60,5 @@ permalink: /kb/141/Q141040/
 	
 	=============================================================================
 	
+
+{% endraw %}

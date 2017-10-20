@@ -6,6 +6,8 @@ permalink: /kb/182/Q182064/
 
 ## Q182064: APPC Program May Stop or Fail with SNA Server 4.0 on DEC Alpha
 
+{% raw %}
+
 	Article: Q182064
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -58,3 +60,5 @@ permalink: /kb/182/Q182064/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119285/
 
 ## Q119285: APPICON.PCT Does Not Exist
 
+{% raw %}
+
 	Article: Q119285
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5b,2.5c
@@ -34,3 +36,5 @@ permalink: /kb/119/Q119285/
 	
 	=============================================================================
 	
+
+{% endraw %}

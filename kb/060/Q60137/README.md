@@ -6,6 +6,8 @@ permalink: /kb/060/Q60137/
 
 ## Q60137: WIDTH Syntax Correction; WIDTH Parameter Is Required
 
+{% raw %}
+
 	Article: Q60137
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -54,3 +56,5 @@ permalink: /kb/060/Q60137/
 	                     between two or more items. You must use one of
 	                     the items in the statement unless the braces
 	                     are enclosed in square brackets.
+
+{% endraw %}

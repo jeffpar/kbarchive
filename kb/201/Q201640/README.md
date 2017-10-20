@@ -6,6 +6,8 @@ permalink: /kb/201/Q201640/
 
 ## Q201640: SMS: Windows 9x NetWare Clients Not Running SMS Logon Script
 
+{% raw %}
+
 	Article: Q201640
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -73,3 +75,5 @@ permalink: /kb/201/Q201640/
 	
 	=============================================================================
 	
+
+{% endraw %}

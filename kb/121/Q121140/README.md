@@ -6,6 +6,8 @@ permalink: /kb/121/Q121140/
 
 ## Q121140: Space: Some Scenery Objects Are Identical
 
+{% raw %}
+
 	Article: Q121140
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -43,3 +45,5 @@ permalink: /kb/121/Q121140/
 	
 	=============================================================================
 	
+
+{% endraw %}

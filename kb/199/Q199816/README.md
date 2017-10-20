@@ -6,6 +6,8 @@ permalink: /kb/199/Q199816/
 
 ## Q199816: SMS: Manually Stopped Threads of the SMSEXEC Service Autostart
 
+{% raw %}
+
 	Article: Q199816
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -46,3 +48,5 @@ permalink: /kb/199/Q199816/
 	
 	=============================================================================
 	
+
+{% endraw %}

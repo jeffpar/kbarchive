@@ -6,6 +6,8 @@ permalink: /kb/153/Q153271/
 
 ## Q153271: XCLN: How to Disable Autoprocessing of S+ Meeting Responses
 
+{% raw %}
+
 	Article: Q153271
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -81,3 +83,5 @@ permalink: /kb/153/Q153271/
 	
 	=============================================================================
 	
+
+{% endraw %}

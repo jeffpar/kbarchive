@@ -6,6 +6,8 @@ permalink: /kb/233/Q233437/
 
 ## Q233437: MSBP: Unable to Scroll Through Index with IntelliMouse Wheel
 
+{% raw %}
+
 	Article: Q233437
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/233/Q233437/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154939/
 
 ## Q154939: CreateQueueJobAndFile Fails w/ Queues Other Than Print Queue
 
+{% raw %}
+
 	Article: Q154939
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -50,3 +52,5 @@ permalink: /kb/154/Q154939/
 	
 	=============================================================================
 	
+
+{% endraw %}

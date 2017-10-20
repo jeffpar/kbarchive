@@ -6,6 +6,8 @@ permalink: /kb/247/Q247203/
 
 ## Q247203: BUG: Try/Catch Block Fails when Global Optimizations Enabled
 
+{% raw %}
+
 	Article: Q247203
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -114,3 +116,5 @@ permalink: /kb/247/Q247203/
 	
 	=============================================================================
 	
+
+{% endraw %}

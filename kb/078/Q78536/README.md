@@ -6,6 +6,8 @@ permalink: /kb/078/Q78536/
 
 ## Q78536: Shadow RAM Technical Information
 
+{% raw %}
+
 	Article: Q78536
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -96,3 +98,5 @@ permalink: /kb/078/Q78536/
 	
 	=============================================================================
 	
+
+{% endraw %}

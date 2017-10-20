@@ -6,6 +6,8 @@ permalink: /kb/072/Q72926/
 
 ## Q72926: Upper Memory Managers for 8086, 8088, or 80286 Computers
 
+{% raw %}
+
 	Article: Q72926
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -79,3 +81,5 @@ permalink: /kb/072/Q72926/
 	
 	=============================================================================
 	
+
+{% endraw %}

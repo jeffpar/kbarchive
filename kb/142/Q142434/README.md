@@ -6,6 +6,8 @@ permalink: /kb/142/Q142434/
 
 ## Q142434: BUG: Jetpack Overwrites Existing TEMP.MDB File
 
+{% raw %}
+
 	Article: Q142434
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -65,3 +67,5 @@ permalink: /kb/142/Q142434/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/214/Q214617/
 
 ## Q214617: Changing the Page Orientation to Landscape
 
+{% raw %}
+
 	Article: Q214617
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -114,3 +116,5 @@ permalink: /kb/214/Q214617/
 	
 	=============================================================================
 	
+
+{% endraw %}

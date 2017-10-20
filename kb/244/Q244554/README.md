@@ -6,6 +6,8 @@ permalink: /kb/244/Q244554/
 
 ## Q244554: FIX: Oracle ODBC Driver Appends Trailing Zero to Numeric Columns
 
+{% raw %}
+
 	Article: Q244554
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1,2.5,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202,Build 2.57
@@ -265,3 +267,5 @@ permalink: /kb/244/Q244554/
 	
 	=============================================================================
 	
+
+{% endraw %}

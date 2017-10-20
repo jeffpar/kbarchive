@@ -6,6 +6,8 @@ permalink: /kb/268/Q268494/
 
 ## Q268494: XFOR: Messages Stuck in Outbound Waiting Delivery Queue in IMS
 
+{% raw %}
+
 	Article: Q268494
 	Product(s): Microsoft Exchange
 	Version(s): 5.0 SP1
@@ -90,3 +92,5 @@ permalink: /kb/268/Q268494/
 	
 	=============================================================================
 	
+
+{% endraw %}

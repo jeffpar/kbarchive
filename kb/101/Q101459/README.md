@@ -6,6 +6,8 @@ permalink: /kb/101/Q101459/
 
 ## Q101459: SMTP: GW0645: Configuring the SMTP Gateway &amp; DNS
 
+{% raw %}
+
 	Article: Q101459
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -243,3 +245,5 @@ permalink: /kb/101/Q101459/
 	
 	=============================================================================
 	
+
+{% endraw %}

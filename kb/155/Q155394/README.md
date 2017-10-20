@@ -6,6 +6,8 @@ permalink: /kb/155/Q155394/
 
 ## Q155394: PRB: Double Quotes in DIR Path in INI File Can Result in Crash
 
+{% raw %}
+
 	Article: Q155394
 	Product(s): Microsoft SourceSafe
 	Version(s): MACINTOSH:4.0a,5.0
@@ -86,3 +88,5 @@ permalink: /kb/155/Q155394/
 	
 	=============================================================================
 	
+
+{% endraw %}

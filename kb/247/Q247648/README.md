@@ -6,6 +6,8 @@ permalink: /kb/247/Q247648/
 
 ## Q247648: FS 2000: Sounds in the Program Are Cut Off or Break Up
 
+{% raw %}
+
 	Article: Q247648
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/247/Q247648/
 	
 	=============================================================================
 	
+
+{% endraw %}

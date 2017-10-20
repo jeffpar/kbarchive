@@ -6,6 +6,8 @@ permalink: /kb/310/Q310647/
 
 ## Q310647: BUG: VB 6.0 T-SQL Debugger Fails with SQL 2000 Named Instance
 
+{% raw %}
+
 	Article: Q310647
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -143,3 +145,5 @@ permalink: /kb/310/Q310647/
 	
 	=============================================================================
 	
+
+{% endraw %}

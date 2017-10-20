@@ -6,6 +6,8 @@ permalink: /kb/192/Q192533/
 
 ## Q192533: XCLN: MAPI Spooler Sends NDRs During Folder Synchronization
 
+{% raw %}
+
 	Article: Q192533
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; winnt:4.0,5.0,5.5; :8.0,8.01,8.02,8.03
@@ -85,3 +87,5 @@ permalink: /kb/192/Q192533/
 	
 	=============================================================================
 	
+
+{% endraw %}

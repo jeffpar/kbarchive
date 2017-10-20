@@ -6,6 +6,8 @@ permalink: /kb/246/Q246567/
 
 ## Q246567: XADM: LDAP Searches on Home-MDB Not Returned Properly
 
+{% raw %}
+
 	Article: Q246567
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -136,3 +138,5 @@ permalink: /kb/246/Q246567/
 	
 	=============================================================================
 	
+
+{% endraw %}

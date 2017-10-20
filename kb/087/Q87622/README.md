@@ -6,6 +6,8 @@ permalink: /kb/087/Q87622/
 
 ## Q87622: PC WSPlus: Running Schedule+ for Windows 1.0 from the Network
 
+{% raw %}
+
 	Article: Q87622
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 1.0
@@ -209,3 +211,5 @@ permalink: /kb/087/Q87622/
 	
 	=============================================================================
 	
+
+{% endraw %}

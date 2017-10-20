@@ -6,6 +6,8 @@ permalink: /kb/174/Q174318/
 
 ## Q174318: WD97: Wrong Characters Viewing Multilingual Web Page as UTF-8
 
+{% raw %}
+
 	Article: Q174318
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/174/Q174318/
 	
 	=============================================================================
 	
+
+{% endraw %}

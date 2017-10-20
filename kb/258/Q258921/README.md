@@ -6,6 +6,8 @@ permalink: /kb/258/Q258921/
 
 ## Q258921: XADM: ILS Servername and ILS Username Attributes in Exchange
 
+{% raw %}
+
 	Article: Q258921
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -50,3 +52,5 @@ permalink: /kb/258/Q258921/
 	
 	=============================================================================
 	
+
+{% endraw %}

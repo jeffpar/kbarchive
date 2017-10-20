@@ -6,6 +6,8 @@ permalink: /kb/037/Q37896/
 
 ## Q37896: QB 4.50 Help &quot;RND(n) Function Details&quot; Correction for n = 0
 
+{% raw %}
+
 	Article: Q37896
 	Product(s): See article
 	Version(s): 4.50
@@ -34,3 +36,5 @@ permalink: /kb/037/Q37896/
 	This documentation error also occurs in the Microsoft Advisor online
 	Help system in QBX.EXE, which comes with Microsoft BASIC PDS Version
 	7.00.
+
+{% endraw %}

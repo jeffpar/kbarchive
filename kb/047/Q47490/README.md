@@ -6,6 +6,8 @@ permalink: /kb/047/Q47490/
 
 ## Q47490: Displaying Inverse Video Text in Hercules SCREEN 3
 
+{% raw %}
+
 	Article: Q47490
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -144,3 +146,5 @@ permalink: /kb/047/Q47490/
 	LOCATE 4
 	CALL InversePrint("CALL statement used")
 	WHILE INKEY$ = "": WEND
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126819/
 
 ## Q126819: MSD 2.11 Does Not Print the Report You Selected
 
+{% raw %}
+
 	Article: Q126819
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -59,3 +61,5 @@ permalink: /kb/126/Q126819/
 	
 	=============================================================================
 	
+
+{% endraw %}

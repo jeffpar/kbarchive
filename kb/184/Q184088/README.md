@@ -6,6 +6,8 @@ permalink: /kb/184/Q184088/
 
 ## Q184088: FIX: LNK4056 Warning Generated with Comma in #pragma Comment
 
+{% raw %}
+
 	Article: Q184088
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.0a,4.1,4.2,5.0
@@ -90,3 +92,5 @@ permalink: /kb/184/Q184088/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194499/
 
 ## Q194499: WD97:How Word Converts WordPerfect 5.x/6.x Hard and Soft Returns
 
+{% raw %}
+
 	Article: Q194499
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/194/Q194499/
 	
 	=============================================================================
 	
+
+{% endraw %}

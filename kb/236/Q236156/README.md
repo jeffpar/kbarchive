@@ -6,6 +6,8 @@ permalink: /kb/236/Q236156/
 
 ## Q236156: XADM: Permissions for Viewing Client Permissions on PF
 
+{% raw %}
+
 	Article: Q236156
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/236/Q236156/
 	
 	=============================================================================
 	
+
+{% endraw %}

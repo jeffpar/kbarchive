@@ -6,6 +6,8 @@ permalink: /kb/150/Q150000/
 
 ## Q150000: FIX: Minimal Rebuild Fails on Access Specifier Change for Enum
 
+{% raw %}
+
 	Article: Q150000
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -71,8 +73,8 @@ permalink: /kb/150/Q150000/
 	     CAboutDlg::CAboutDlg() : CDialog(CAboutDlg::IDD)
 	     {
 	   
-	         //{ {AFX_DATA_INIT(CAboutDlg)
-	         //} }AFX_DATA_INIT
+	         //{{AFX_DATA_INIT(CAboutDlg)
+	         //}}AFX_DATA_INIT
 	         int i= CMy3209App::UE1;             //Add these 2 lines
 	         CMy3209App::e1 e = CMy3209App::E2;  //to Test.cpp
 	     }
@@ -108,3 +110,5 @@ permalink: /kb/150/Q150000/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66495/
 
 ## Q66495: Using /F Switch with No Argument May Disable Debug Switch
 
+{% raw %}
+
 	Article: Q66495
 	Product(s): See article
 	Version(s): 2.50
@@ -37,3 +39,5 @@ permalink: /kb/066/Q66495/
 	Microsoft has confirmed this to be a problem with QuickC version 2.50.
 	We are researching this problem and and will post new information here
 	as it is available.
+
+{% endraw %}

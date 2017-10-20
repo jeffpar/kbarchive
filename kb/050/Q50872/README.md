@@ -6,6 +6,8 @@ permalink: /kb/050/Q50872/
 
 ## Q50872: System Date and Time Defaults Back to Normal Flight Time
 
+{% raw %}
+
 	Article: Q50872
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/050/Q50872/
 	
 	=============================================================================
 	
+
+{% endraw %}

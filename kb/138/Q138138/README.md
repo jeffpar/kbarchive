@@ -6,6 +6,8 @@ permalink: /kb/138/Q138138/
 
 ## Q138138: INFO: Late, ID, Early Binding Types Possible in VB for Apps
 
+{% raw %}
+
 	Article: Q138138
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -141,3 +143,5 @@ permalink: /kb/138/Q138138/
 	
 	=============================================================================
 	
+
+{% endraw %}

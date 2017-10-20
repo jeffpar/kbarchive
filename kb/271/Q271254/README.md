@@ -6,6 +6,8 @@ permalink: /kb/271/Q271254/
 
 ## Q271254: Microsoft Reader: How to Listen to an Audiobook
 
+{% raw %}
+
 	Article: Q271254
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -64,3 +66,5 @@ permalink: /kb/271/Q271254/
 	
 	=============================================================================
 	
+
+{% endraw %}

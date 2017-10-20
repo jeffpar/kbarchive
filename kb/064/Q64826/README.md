@@ -6,6 +6,8 @@ permalink: /kb/064/Q64826/
 
 ## Q64826: DeskJet Does Not Print Extended Character Set in Courier
 
+{% raw %}
+
 	Article: Q64826
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/064/Q64826/
 	
 	=============================================================================
 	
+
+{% endraw %}

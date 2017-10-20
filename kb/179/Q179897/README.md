@@ -6,6 +6,8 @@ permalink: /kb/179/Q179897/
 
 ## Q179897: Memory Management Problems on Computers with Pentium Processors
 
+{% raw %}
+
 	Article: Q179897
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -64,3 +66,5 @@ permalink: /kb/179/Q179897/
 	
 	=============================================================================
 	
+
+{% endraw %}

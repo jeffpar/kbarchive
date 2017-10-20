@@ -6,6 +6,8 @@ permalink: /kb/180/Q180772/
 
 ## Q180772: PRB: Form Is Movable When Maximized
 
+{% raw %}
+
 	Article: Q180772
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -51,3 +53,5 @@ permalink: /kb/180/Q180772/
 	
 	=============================================================================
 	
+
+{% endraw %}

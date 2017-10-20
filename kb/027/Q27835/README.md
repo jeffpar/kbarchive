@@ -6,6 +6,8 @@ permalink: /kb/027/Q27835/
 
 ## Q27835: FIX: Operator &quot;.&quot; and the Operator &quot;&#42;&quot;
 
+{% raw %}
+
 	Article: Q27835
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -104,3 +106,5 @@ permalink: /kb/027/Q27835/
 	
 	=============================================================================
 	
+
+{% endraw %}

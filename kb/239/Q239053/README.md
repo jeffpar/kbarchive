@@ -6,6 +6,8 @@ permalink: /kb/239/Q239053/
 
 ## Q239053: How to Enable Directory Browsing on Virtual Directories
 
+{% raw %}
+
 	Article: Q239053
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -70,3 +72,5 @@ permalink: /kb/239/Q239053/
 	
 	=============================================================================
 	
+
+{% endraw %}

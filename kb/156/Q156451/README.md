@@ -6,6 +6,8 @@ permalink: /kb/156/Q156451/
 
 ## Q156451: FIX: DDCONV Causes GP Fault During Database Conversion
 
+{% raw %}
+
 	Article: Q156451
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -178,3 +180,5 @@ permalink: /kb/156/Q156451/
 	
 	=============================================================================
 	
+
+{% endraw %}

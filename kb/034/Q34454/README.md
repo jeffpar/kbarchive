@@ -6,6 +6,8 @@ permalink: /kb/034/Q34454/
 
 ## Q34454: MASM 5.10 MACRO.DOC: Process Control
 
+{% raw %}
+
 	Article: Q34454
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -69,3 +71,5 @@ permalink: /kb/034/Q34454/
 	                              allocate for resident program
 	Return:         None
 	Registers used: AX and DX
+
+{% endraw %}

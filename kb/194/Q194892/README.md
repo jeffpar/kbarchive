@@ -6,6 +6,8 @@ permalink: /kb/194/Q194892/
 
 ## Q194892: Load-Balanced Application Does Not Work Properly Using WLBS
 
+{% raw %}
+
 	Article: Q194892
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/194/Q194892/
 	
 	=============================================================================
 	
+
+{% endraw %}

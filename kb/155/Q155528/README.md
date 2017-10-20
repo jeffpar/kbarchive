@@ -6,6 +6,8 @@ permalink: /kb/155/Q155528/
 
 ## Q155528: HOWTO: Set Up an Offline View in Visual FoxPro 5.0
 
+{% raw %}
+
 	Article: Q155528
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/155/Q155528/
 	
 	=============================================================================
 	
+
+{% endraw %}

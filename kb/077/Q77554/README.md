@@ -6,6 +6,8 @@ permalink: /kb/077/Q77554/
 
 ## Q77554: Text Copied from DOS Application Appends Carriage Return
 
+{% raw %}
+
 	Article: Q77554
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/077/Q77554/
 	
 	=============================================================================
 	
+
+{% endraw %}

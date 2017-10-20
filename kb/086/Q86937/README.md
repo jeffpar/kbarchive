@@ -6,6 +6,8 @@ permalink: /kb/086/Q86937/
 
 ## Q86937: 3COM: How to Configure the Gateway Using the GATEWAY.INI File
 
+{% raw %}
+
 	Article: Q86937
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -38,3 +40,5 @@ permalink: /kb/086/Q86937/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147712/
 
 ## Q147712: Application Exception When AppleTalk Clients Try Connecting
 
+{% raw %}
+
 	Article: Q147712
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -77,3 +79,5 @@ permalink: /kb/147/Q147712/
 	
 	=============================================================================
 	
+
+{% endraw %}

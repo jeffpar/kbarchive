@@ -6,6 +6,8 @@ permalink: /kb/181/Q181131/
 
 ## Q181131: PRB: ComboBox Text Property Does Not Update Properly
 
+{% raw %}
+
 	Article: Q181131
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -83,3 +85,5 @@ permalink: /kb/181/Q181131/
 	
 	=============================================================================
 	
+
+{% endraw %}

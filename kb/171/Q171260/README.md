@@ -6,6 +6,8 @@ permalink: /kb/171/Q171260/
 
 ## Q171260: XFOR: Internal Windows NT Error When Starting DirSync Service
 
+{% raw %}
+
 	Article: Q171260
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/171/Q171260/
 	
 	=============================================================================
 	
+
+{% endraw %}

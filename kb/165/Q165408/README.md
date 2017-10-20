@@ -6,6 +6,8 @@ permalink: /kb/165/Q165408/
 
 ## Q165408: HOWTO: Append Menu to an Existing Top-Level Form Menu
 
+{% raw %}
+
 	Article: Q165408
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -86,3 +88,5 @@ permalink: /kb/165/Q165408/
 	
 	=============================================================================
 	
+
+{% endraw %}

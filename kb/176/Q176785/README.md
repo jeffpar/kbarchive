@@ -6,6 +6,8 @@ permalink: /kb/176/Q176785/
 
 ## Q176785: PRB: SET MARK TO Does Not Work with &quot;#&quot; and &quot;A&quot;
 
+{% raw %}
+
 	Article: Q176785
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -68,3 +70,5 @@ permalink: /kb/176/Q176785/
 	
 	=============================================================================
 	
+
+{% endraw %}

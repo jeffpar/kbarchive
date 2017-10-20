@@ -6,6 +6,8 @@ permalink: /kb/141/Q141321/
 
 ## Q141321: Dangerous Creatures: Pop-ups Stop and Reset Movies
 
+{% raw %}
+
 	Article: Q141321
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -73,3 +75,5 @@ permalink: /kb/141/Q141321/
 	
 	=============================================================================
 	
+
+{% endraw %}

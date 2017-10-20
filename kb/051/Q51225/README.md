@@ -6,6 +6,8 @@ permalink: /kb/051/Q51225/
 
 ## Q51225: How to Define, Display Graphics Mouse Cursor in FORTRAN 5.00
 
+{% raw %}
+
 	Article: Q51225
 	Product(s): See article
 	Version(s): 1.00
@@ -62,3 +64,5 @@ permalink: /kb/051/Q51225/
 	      call  mousel(m1,m2,m3,m4)        !hide cursor
 	      dummy = setvideomode($defaultmode) !set video mode
 	      end
+
+{% endraw %}

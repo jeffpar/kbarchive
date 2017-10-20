@@ -6,6 +6,8 @@ permalink: /kb/184/Q184490/
 
 ## Q184490: Err Msg: Microsoft VBScript Runtime Error &#91;Line: 29&#93;...
 
+{% raw %}
+
 	Article: Q184490
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -66,3 +68,5 @@ permalink: /kb/184/Q184490/
 	
 	=============================================================================
 	
+
+{% endraw %}

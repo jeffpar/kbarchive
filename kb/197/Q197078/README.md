@@ -6,6 +6,8 @@ permalink: /kb/197/Q197078/
 
 ## Q197078: Tutor: Colors Are Incorrect and Objects Appear Fuzzy or Blurred
 
+{% raw %}
+
 	Article: Q197078
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -112,3 +114,5 @@ permalink: /kb/197/Q197078/
 	
 	=============================================================================
 	
+
+{% endraw %}

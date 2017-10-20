@@ -6,6 +6,8 @@ permalink: /kb/098/Q98421/
 
 ## Q98421: Renaming a Bid for a Boot Drive
 
+{% raw %}
+
 	Article: Q98421
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/098/Q98421/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263950/
 
 ## Q263950: Slovenian Volume Control Causes Invalid Page Fault
 
+{% raw %}
+
 	Article: Q263950
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -104,3 +106,5 @@ permalink: /kb/263/Q263950/
 	
 	=============================================================================
 	
+
+{% endraw %}

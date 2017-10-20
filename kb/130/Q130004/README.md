@@ -6,6 +6,8 @@ permalink: /kb/130/Q130004/
 
 ## Q130004: Cannot Change Icon at Run Time in Visual Basic 3.0
 
+{% raw %}
+
 	Article: Q130004
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -49,3 +51,5 @@ permalink: /kb/130/Q130004/
 	
 	=============================================================================
 	
+
+{% endraw %}

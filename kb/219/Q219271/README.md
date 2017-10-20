@@ -6,6 +6,8 @@ permalink: /kb/219/Q219271/
 
 ## Q219271: How to Add the Immediate-If Function to an ASP Page
 
+{% raw %}
+
 	Article: Q219271
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0,4.0,5.0
@@ -108,3 +110,5 @@ permalink: /kb/219/Q219271/
 	
 	=============================================================================
 	
+
+{% endraw %}

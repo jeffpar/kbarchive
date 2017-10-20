@@ -6,6 +6,8 @@ permalink: /kb/314/Q314651/
 
 ## Q314651: FIX: &quot;File Is Not Open&quot; Err Msg May Cause Infinite Loop
 
+{% raw %}
+
 	Article: Q314651
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -99,3 +101,5 @@ permalink: /kb/314/Q314651/
 	
 	=============================================================================
 	
+
+{% endraw %}

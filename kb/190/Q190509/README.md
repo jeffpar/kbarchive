@@ -6,6 +6,8 @@ permalink: /kb/190/Q190509/
 
 ## Q190509: PRB: VC++ Does Not Convert Help Project File Paths
 
+{% raw %}
+
 	Article: Q190509
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -134,3 +136,5 @@ permalink: /kb/190/Q190509/
 	
 	=============================================================================
 	
+
+{% endraw %}

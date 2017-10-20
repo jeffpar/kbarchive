@@ -6,6 +6,8 @@ permalink: /kb/141/Q141723/
 
 ## Q141723: FIX: Status Bar Message Does Not Refresh Properly
 
+{% raw %}
+
 	Article: Q141723
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -90,3 +92,5 @@ permalink: /kb/141/Q141723/
 	
 	=============================================================================
 	
+
+{% endraw %}

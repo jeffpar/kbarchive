@@ -6,6 +6,8 @@ permalink: /kb/151/Q151723/
 
 ## Q151723: How to Re-create Default Icons Deleted from Desktop
 
+{% raw %}
+
 	Article: Q151723
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/151/Q151723/
 	
 	=============================================================================
 	
+
+{% endraw %}

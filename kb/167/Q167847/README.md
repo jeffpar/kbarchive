@@ -6,6 +6,8 @@ permalink: /kb/167/Q167847/
 
 ## Q167847: ACC97: IPF Executing VSS Add and Create Commands at Same Time
 
+{% raw %}
+
 	Article: Q167847
 	Product(s): Microsoft SourceSafe
 	Version(s): 97
@@ -132,3 +134,5 @@ permalink: /kb/167/Q167847/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167881/
 
 ## Q167881: WD97: IPF Clicking Next Section in Binder Print Preview
 
+{% raw %}
+
 	Article: Q167881
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -60,3 +62,5 @@ permalink: /kb/167/Q167881/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140882/
 
 ## Q140882: HOWTO: Disable the ENTER Key BEEP in a VB Text Box
 
+{% raw %}
+
 	Article: Q140882
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -65,3 +67,5 @@ permalink: /kb/140/Q140882/
 	
 	=============================================================================
 	
+
+{% endraw %}

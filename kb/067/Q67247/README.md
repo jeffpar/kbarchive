@@ -6,6 +6,8 @@ permalink: /kb/067/Q67247/
 
 ## Q67247: MuScroll.exe - Custom Control Code
 
+{% raw %}
+
 	Article: Q67247
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -81,3 +83,5 @@ permalink: /kb/067/Q67247/
 	
 	=============================================================================
 	
+
+{% endraw %}

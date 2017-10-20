@@ -6,6 +6,8 @@ permalink: /kb/139/Q139001/
 
 ## Q139001: PRB: Visual C++ Integration Does Not Recognize .CLW Files
 
+{% raw %}
+
 	Article: Q139001
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/139/Q139001/
 	
 	=============================================================================
 	
+
+{% endraw %}

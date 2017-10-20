@@ -6,6 +6,8 @@ permalink: /kb/068/Q68821/
 
 ## Q68821: Documentation Errors on Page 315 of APT Manual
 
+{% raw %}
+
 	Article: Q68821
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -36,3 +38,5 @@ permalink: /kb/068/Q68821/
 	   block_hed->n = 1;
 	   block_hed->x = 10.0;
 	   block_hed->y = 20.0;
+
+{% endraw %}

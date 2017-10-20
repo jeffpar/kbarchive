@@ -6,6 +6,8 @@ permalink: /kb/145/Q145874/
 
 ## Q145874: XCLN: Schedule+ Free/Busy Connector Mailbox Is in Address Book
 
+{% raw %}
+
 	Article: Q145874
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -43,3 +45,5 @@ permalink: /kb/145/Q145874/
 	
 	=============================================================================
 	
+
+{% endraw %}

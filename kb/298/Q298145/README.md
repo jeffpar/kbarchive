@@ -6,6 +6,8 @@ permalink: /kb/298/Q298145/
 
 ## Q298145: FIX: REPAIR_DB Option Removes Encryption from Access 2000 DB
 
+{% raw %}
+
 	Article: Q298145
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1 SP2,2.5,2.5 SP1,2.5 SP2,4.0
@@ -162,3 +164,5 @@ permalink: /kb/298/Q298145/
 	
 	=============================================================================
 	
+
+{% endraw %}

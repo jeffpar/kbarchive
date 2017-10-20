@@ -6,6 +6,8 @@ permalink: /kb/171/Q171100/
 
 ## Q171100: PRB: PR_NDR_XXX Properties Not Removed from Recipients
 
+{% raw %}
+
 	Article: Q171100
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/171/Q171100/
 	
 	=============================================================================
 	
+
+{% endraw %}

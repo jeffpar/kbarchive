@@ -6,6 +6,8 @@ permalink: /kb/193/Q193123/
 
 ## Q193123: XADM: Unable to Reply to Messages After Hotfix Is Applied
 
+{% raw %}
+
 	Article: Q193123
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -75,3 +77,5 @@ permalink: /kb/193/Q193123/
 	
 	=============================================================================
 	
+
+{% endraw %}

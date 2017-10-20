@@ -6,6 +6,8 @@ permalink: /kb/160/Q160075/
 
 ## Q160075: FIX: Problems Debugging in Case-sensitive Database
 
+{% raw %}
+
 	Article: Q160075
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2
@@ -73,3 +75,5 @@ permalink: /kb/160/Q160075/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/044/Q44078/
 
 ## Q44078: Allocation of Variables within Blocks in C
 
+{% raw %}
+
 	Article: Q44078
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -65,3 +67,5 @@ permalink: /kb/044/Q44078/
 	
 	Note: The 80-character buffer is removed from the stack upon exit from
 	the block, and not upon exit from the function.
+
+{% endraw %}

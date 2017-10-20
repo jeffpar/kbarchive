@@ -6,6 +6,8 @@ permalink: /kb/163/Q163427/
 
 ## Q163427: Magic School Bus: Installing to a Removable Drive
 
+{% raw %}
+
 	Article: Q163427
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/163/Q163427/
 	
 	=============================================================================
 	
+
+{% endraw %}

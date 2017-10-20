@@ -6,6 +6,8 @@ permalink: /kb/222/Q222163/
 
 ## Q222163: XCLN: DR: &quot;Your message was deleted without being read&quot;
 
+{% raw %}
+
 	Article: Q222163
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:95,98
@@ -101,3 +103,5 @@ permalink: /kb/222/Q222163/
 	
 	=============================================================================
 	
+
+{% endraw %}

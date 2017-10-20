@@ -6,6 +6,8 @@ permalink: /kb/222/Q222940/
 
 ## Q222940: SNA 5250 Print Service (PPV5250) May Log Event 4097 In Error
 
+{% raw %}
+
 	Article: Q222940
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1,4.0SP2
@@ -70,3 +72,5 @@ permalink: /kb/222/Q222940/
 	
 	=============================================================================
 	
+
+{% endraw %}

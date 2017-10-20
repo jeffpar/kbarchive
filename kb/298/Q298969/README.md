@@ -6,6 +6,8 @@ permalink: /kb/298/Q298969/
 
 ## Q298969: Web Site Operator Capabilities and Limitations
 
+{% raw %}
+
 	Article: Q298969
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -88,3 +90,5 @@ permalink: /kb/298/Q298969/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/281/Q281145/
 
 ## Q281145: CSNW/GSNW Issues Repeated Name Queries to NetWare Servers
 
+{% raw %}
+
 	Article: Q281145
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/281/Q281145/
 	
 	=============================================================================
 	
+
+{% endraw %}

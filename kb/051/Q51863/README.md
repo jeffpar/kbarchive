@@ -6,6 +6,8 @@ permalink: /kb/051/Q51863/
 
 ## Q51863: Failure to Flag ELSEIF THEN &lt;Statement&gt; as Syntax Error
 
+{% raw %}
+
 	Article: Q51863
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -61,3 +63,5 @@ permalink: /kb/051/Q51863/
 	      PRINT "Hello"
 	      PRINT "Hello2"
 	   END IF
+
+{% endraw %}

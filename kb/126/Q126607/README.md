@@ -6,6 +6,8 @@ permalink: /kb/126/Q126607/
 
 ## Q126607: PRB: Cannot Load MFCCLSWZ.DLL with ODBC SDK Version 2.1
 
+{% raw %}
+
 	Article: Q126607
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.1
@@ -54,3 +56,5 @@ permalink: /kb/126/Q126607/
 	
 	=============================================================================
 	
+
+{% endraw %}

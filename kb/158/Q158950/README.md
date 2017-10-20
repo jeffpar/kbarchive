@@ -6,6 +6,8 @@ permalink: /kb/158/Q158950/
 
 ## Q158950: Auto Detection of Identical Network Adapters Finds Only One
 
+{% raw %}
+
 	Article: Q158950
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -58,3 +60,5 @@ permalink: /kb/158/Q158950/
 	
 	=============================================================================
 	
+
+{% endraw %}

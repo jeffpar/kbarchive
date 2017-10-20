@@ -6,6 +6,8 @@ permalink: /kb/152/Q152695/
 
 ## Q152695: HOWTO: Catch and Decipher DAO SDK-Based Exceptions
 
+{% raw %}
+
 	Article: Q152695
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2 4.2b 5.0 6.0
@@ -223,3 +225,5 @@ permalink: /kb/152/Q152695/
 	
 	=============================================================================
 	
+
+{% endraw %}

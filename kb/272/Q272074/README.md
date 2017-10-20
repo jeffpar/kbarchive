@@ -6,6 +6,8 @@ permalink: /kb/272/Q272074/
 
 ## Q272074: FIX: T-SQL Debugger Parses SQL Server 2000 Return Value Wrong
 
+{% raw %}
+
 	Article: Q272074
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP3,6.0 SP4
@@ -144,3 +146,5 @@ permalink: /kb/272/Q272074/
 	
 	=============================================================================
 	
+
+{% endraw %}

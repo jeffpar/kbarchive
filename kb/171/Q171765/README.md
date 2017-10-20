@@ -6,6 +6,8 @@ permalink: /kb/171/Q171765/
 
 ## Q171765: SMS: Win95 Clients Are Put in the Wrong SMS Site with Smsls.ini
 
+{% raw %}
+
 	Article: Q171765
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -61,3 +63,5 @@ permalink: /kb/171/Q171765/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168748/
 
 ## Q168748: Java Applets Cause IE 3.02 to Stop Responding w/ SP3
 
+{% raw %}
+
 	Article: Q168748
 	Product(s): Microsoft Windows NT
 	Version(s): 3.02,4.0
@@ -111,3 +113,5 @@ permalink: /kb/168/Q168748/
 	
 	=============================================================================
 	
+
+{% endraw %}

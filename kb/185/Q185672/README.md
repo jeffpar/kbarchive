@@ -6,6 +6,8 @@ permalink: /kb/185/Q185672/
 
 ## Q185672: HOWTO: How to Initialize Child Controls in a Derived CDialogBar
 
+{% raw %}
+
 	Article: Q185672
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -93,9 +95,9 @@ permalink: /kb/185/Q185672/
 	        protected:
 	
 	           // Generated message map functions
-	           //{ {AFX_MSG(CMyDlgBar)
+	           //{{AFX_MSG(CMyDlgBar)
 	           virtual BOOL OnInitDialog();                // <-Remove this line.
-	           //} }AFX_MSG
+	           //}}AFX_MSG
 	
 	           afx_msg LONG OnInitDialog ( UINT, LONG );   // <-Add this line.
 	           DECLARE_MESSAGE_MAP()
@@ -108,9 +110,9 @@ permalink: /kb/185/Q185672/
 	
 	        BEGIN_MESSAGE_MAP(CMyDlgBar, CDialogBar)
 	
-	           //{ {AFX_MSG_MAP(CMyDlgBar)
+	           //{{AFX_MSG_MAP(CMyDlgBar)
 	           ...
-	           //} }AFX_MSG_MAP
+	           //}}AFX_MSG_MAP
 	           ON_MESSAGE(WM_INITDIALOG, OnInitDialog )    // <-- Add this line.
 	        END_MESSAGE_MAP()
 	
@@ -211,3 +213,5 @@ permalink: /kb/185/Q185672/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239429/
 
 ## Q239429: How to Obtain 128-Bit Encryption for Windows NT Service Packs
 
+{% raw %}
+
 	Article: Q239429
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,95
@@ -80,3 +82,5 @@ permalink: /kb/239/Q239429/
 	
 	=============================================================================
 	
+
+{% endraw %}

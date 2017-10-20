@@ -6,6 +6,8 @@ permalink: /kb/035/Q35290/
 
 ## Q35290: MDA Blinking Normal Underlined Text Example
 
+{% raw %}
+
 	Article: Q35290
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -36,3 +38,5 @@ permalink: /kb/035/Q35290/
 	 _settextcolor(oldcolor);
 	 _setbkcolor(oldbkcolor);
 	}
+
+{% endraw %}

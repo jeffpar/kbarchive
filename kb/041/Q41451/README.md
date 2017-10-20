@@ -6,6 +6,8 @@ permalink: /kb/041/Q41451/
 
 ## Q41451: PRB: Windows FatalExit 0x0280 Error Caused by FAR WinMain
 
+{% raw %}
+
 	Article: Q41451
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -47,3 +49,5 @@ permalink: /kb/041/Q41451/
 	
 	=============================================================================
 	
+
+{% endraw %}

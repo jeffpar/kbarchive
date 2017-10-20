@@ -6,6 +6,8 @@ permalink: /kb/151/Q151581/
 
 ## Q151581: Cannot Upgrade Windows 95 to Windows NT Workstation 4.0
 
+{% raw %}
+
 	Article: Q151581
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 95
@@ -99,3 +101,5 @@ permalink: /kb/151/Q151581/
 	
 	=============================================================================
 	
+
+{% endraw %}

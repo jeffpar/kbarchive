@@ -6,6 +6,8 @@ permalink: /kb/095/Q95991/
 
 ## Q95991: Printing PostScript Takes Longer in Windows 3.1 and WFWG
 
+{% raw %}
+
 	Article: Q95991
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/095/Q95991/
 	
 	=============================================================================
 	
+
+{% endraw %}

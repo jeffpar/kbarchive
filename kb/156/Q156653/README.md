@@ -6,6 +6,8 @@ permalink: /kb/156/Q156653/
 
 ## Q156653: Disabling the Installation of IE 2.0 During Setup
 
+{% raw %}
+
 	Article: Q156653
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/156/Q156653/
 	
 	=============================================================================
 	
+
+{% endraw %}

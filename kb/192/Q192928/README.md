@@ -6,6 +6,8 @@ permalink: /kb/192/Q192928/
 
 ## Q192928: MCM: Motorcycle Does Not Move When You Attempt to Accelerate
 
+{% raw %}
+
 	Article: Q192928
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/192/Q192928/
 	
 	=============================================================================
 	
+
+{% endraw %}

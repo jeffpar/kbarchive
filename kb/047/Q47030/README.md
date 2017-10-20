@@ -6,6 +6,8 @@ permalink: /kb/047/Q47030/
 
 ## Q47030: .COM File Example Produces Warning
 
+{% raw %}
+
 	Article: Q47030
 	Product(s): See article
 	Version(s): 2.01
@@ -25,3 +27,5 @@ permalink: /kb/047/Q47030/
 	statement in the example shown in the "QuickAssembler Programmer's
 	Guide." The warning issued is a nonfatal warning. The program should
 	function correctly.
+
+{% endraw %}

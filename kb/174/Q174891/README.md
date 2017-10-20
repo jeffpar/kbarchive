@@ -6,6 +6,8 @@ permalink: /kb/174/Q174891/
 
 ## Q174891: FIX: CComQIPtr operator= Causes an Access Violation
 
+{% raw %}
+
 	Article: Q174891
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0,2.1
@@ -72,3 +74,5 @@ permalink: /kb/174/Q174891/
 	
 	=============================================================================
 	
+
+{% endraw %}

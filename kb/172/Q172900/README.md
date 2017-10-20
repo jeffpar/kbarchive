@@ -6,6 +6,8 @@ permalink: /kb/172/Q172900/
 
 ## Q172900: XCLN: Macintosh Client Hangs After Message Color is Changed
 
+{% raw %}
+
 	Article: Q172900
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -53,3 +55,5 @@ permalink: /kb/172/Q172900/
 	
 	=============================================================================
 	
+
+{% endraw %}

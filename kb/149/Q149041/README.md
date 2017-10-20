@@ -6,6 +6,8 @@ permalink: /kb/149/Q149041/
 
 ## Q149041: PRB: Error 419 Occurs if RecordSet is Assigned to Data Control
 
+{% raw %}
+
 	Article: Q149041
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/149/Q149041/
 	
 	=============================================================================
 	
+
+{% endraw %}

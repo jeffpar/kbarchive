@@ -6,6 +6,8 @@ permalink: /kb/221/Q221497/
 
 ## Q221497: RRAS: RIP Routing Stops When System Time Is Changed
 
+{% raw %}
+
 	Article: Q221497
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/221/Q221497/
 	
 	=============================================================================
 	
+
+{% endraw %}

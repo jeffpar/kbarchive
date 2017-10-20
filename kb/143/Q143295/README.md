@@ -6,6 +6,8 @@ permalink: /kb/143/Q143295/
 
 ## Q143295: PRB: Incorrect Error Message with CursorSetProp()
 
+{% raw %}
+
 	Article: Q143295
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -57,3 +59,5 @@ permalink: /kb/143/Q143295/
 	
 	=============================================================================
 	
+
+{% endraw %}

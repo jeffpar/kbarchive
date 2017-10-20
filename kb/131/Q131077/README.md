@@ -6,6 +6,8 @@ permalink: /kb/131/Q131077/
 
 ## Q131077: Mac Form: Unable to Create New Stack Using Forms Designer
 
+{% raw %}
+
 	Article: Q131077
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1x
@@ -48,3 +50,5 @@ permalink: /kb/131/Q131077/
 	
 	=============================================================================
 	
+
+{% endraw %}

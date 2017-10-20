@@ -6,6 +6,8 @@ permalink: /kb/155/Q155803/
 
 ## Q155803: DOC: Cross-Tab Query Help Example is Incorrect
 
+{% raw %}
+
 	Article: Q155803
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -74,3 +76,5 @@ permalink: /kb/155/Q155803/
 	
 	=============================================================================
 	
+
+{% endraw %}

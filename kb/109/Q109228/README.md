@@ -6,6 +6,8 @@ permalink: /kb/109/Q109228/
 
 ## Q109228: SQL Server and Windows NT Thread Scheduling
 
+{% raw %}
+
 	Article: Q109228
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -251,3 +253,5 @@ permalink: /kb/109/Q109228/
 	
 	=============================================================================
 	
+
+{% endraw %}

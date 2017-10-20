@@ -6,6 +6,8 @@ permalink: /kb/165/Q165804/
 
 ## Q165804: INFO: Comparing RDS Technology to RDO and DAO
 
+{% raw %}
+
 	Article: Q165804
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.5,2.0,2.1 SP2; winnt:3.0,4.0
@@ -103,3 +105,5 @@ permalink: /kb/165/Q165804/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242994/
 
 ## Q242994: PRB:ATL IOleInPlaceSite::OnPosRectChange Doesn't Resize Control
 
+{% raw %}
+
 	Article: Q242994
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -200,3 +202,5 @@ permalink: /kb/242/Q242994/
 	
 	=============================================================================
 	
+
+{% endraw %}

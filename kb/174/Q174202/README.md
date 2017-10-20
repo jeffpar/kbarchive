@@ -6,6 +6,8 @@ permalink: /kb/174/Q174202/
 
 ## Q174202: Configuring SPX Watchdog Timers in Windows 95
 
+{% raw %}
+
 	Article: Q174202
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0
@@ -88,3 +90,5 @@ permalink: /kb/174/Q174202/
 	
 	=============================================================================
 	
+
+{% endraw %}

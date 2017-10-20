@@ -6,6 +6,8 @@ permalink: /kb/157/Q157156/
 
 ## Q157156: STL Sample for the Predicate Versions of the heap Functions
 
+{% raw %}
+
 	Article: Q157156
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -226,3 +228,5 @@ permalink: /kb/157/Q157156/
 	
 	=============================================================================
 	
+
+{% endraw %}

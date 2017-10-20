@@ -6,6 +6,8 @@ permalink: /kb/314/Q314735/
 
 ## Q314735: FIX: Garbled Field Name Returned with VFPOLEDB Provider on Win95
 
+{% raw %}
+
 	Article: Q314735
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -121,3 +123,5 @@ permalink: /kb/314/Q314735/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170332/
 
 ## Q170332: Windows NT Workstation Banner on Start Menu Is Truncated
 
+{% raw %}
+
 	Article: Q170332
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/170/Q170332/
 	
 	=============================================================================
 	
+
+{% endraw %}

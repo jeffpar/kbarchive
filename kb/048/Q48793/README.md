@@ -6,6 +6,8 @@ permalink: /kb/048/Q48793/
 
 ## Q48793: exec() and spawn() with P_OVERLAY Ignore Max Allocation
 
+{% raw %}
+
 	Article: Q48793
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -80,3 +82,5 @@ permalink: /kb/048/Q48793/
 	
 	=============================================================================
 	
+
+{% endraw %}

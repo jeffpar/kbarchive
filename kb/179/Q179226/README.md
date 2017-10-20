@@ -6,6 +6,8 @@ permalink: /kb/179/Q179226/
 
 ## Q179226: PRB: RDO: CommitTrans/RollBackTrans Closes Cursor Causing Error
 
+{% raw %}
+
 	Article: Q179226
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -166,3 +168,5 @@ permalink: /kb/179/Q179226/
 	
 	=============================================================================
 	
+
+{% endraw %}

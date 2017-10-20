@@ -6,6 +6,8 @@ permalink: /kb/130/Q130302/
 
 ## Q130302: PRB: OLE Word 6 Object Does Not Close Itself in Windows NT
 
+{% raw %}
+
 	Article: Q130302
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -138,3 +140,5 @@ permalink: /kb/130/Q130302/
 	
 	=============================================================================
 	
+
+{% endraw %}

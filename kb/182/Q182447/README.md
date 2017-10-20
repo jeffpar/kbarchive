@@ -6,6 +6,8 @@ permalink: /kb/182/Q182447/
 
 ## Q182447: Encarta 98 Research Organizer: How to Determine Language Version
 
+{% raw %}
+
 	Article: Q182447
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/182/Q182447/
 	
 	=============================================================================
 	
+
+{% endraw %}

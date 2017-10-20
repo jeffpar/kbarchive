@@ -6,6 +6,8 @@ permalink: /kb/192/Q192136/
 
 ## Q192136: PRB: PDW Does Not Include MSAddndr.DLL for Add-in Projects
 
+{% raw %}
+
 	Article: Q192136
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0; :
@@ -90,3 +92,5 @@ permalink: /kb/192/Q192136/
 	
 	=============================================================================
 	
+
+{% endraw %}

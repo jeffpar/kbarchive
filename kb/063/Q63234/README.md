@@ -6,6 +6,8 @@ permalink: /kb/063/Q63234/
 
 ## Q63234: PWB BACKUP.BAK Does Not Create Backup of Source File Correctly
 
+{% raw %}
+
 	Article: Q63234
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -27,3 +29,5 @@ permalink: /kb/063/Q63234/
 	Microsoft has confirmed this to be a problem in version 1.00 of the
 	Programmer's Workbench and will post new information here as it
 	becomes available.
+
+{% endraw %}

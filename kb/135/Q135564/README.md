@@ -6,6 +6,8 @@ permalink: /kb/135/Q135564/
 
 ## Q135564: PRB: ACTIVATE WINDOW Command Not Working for Toolbars
 
+{% raw %}
+
 	Article: Q135564
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,5.0,6.0
@@ -68,3 +70,5 @@ permalink: /kb/135/Q135564/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/073/Q73723/
 
 ## Q73723: HDBKUP&#92;HDRSTORE Definition and Usage
 
+{% raw %}
+
 	Article: Q73723
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -62,3 +64,5 @@ permalink: /kb/073/Q73723/
 	
 	=============================================================================
 	
+
+{% endraw %}

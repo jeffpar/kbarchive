@@ -6,6 +6,8 @@ permalink: /kb/308/Q308944/
 
 ## Q308944: Spelling Checker Issues In MSN Explorer--Run Detect and Repair U
 
+{% raw %}
+
 	Article: Q308944
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/308/Q308944/
 	
 	=============================================================================
 	
+
+{% endraw %}

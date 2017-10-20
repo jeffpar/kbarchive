@@ -6,6 +6,8 @@ permalink: /kb/132/Q132645/
 
 ## Q132645: Setting Up a Printer with Banyan VINES (Real Mode)
 
+{% raw %}
+
 	Article: Q132645
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -56,3 +58,5 @@ permalink: /kb/132/Q132645/
 	
 	=============================================================================
 	
+
+{% endraw %}

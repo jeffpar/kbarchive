@@ -6,6 +6,8 @@ permalink: /kb/110/Q110597/
 
 ## Q110597: Scenes 1.0: Does Not Restore MSSCENES.BMP as Wallpaper
 
+{% raw %}
+
 	Article: Q110597
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/110/Q110597/
 	
 	=============================================================================
 	
+
+{% endraw %}

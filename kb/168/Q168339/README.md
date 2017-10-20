@@ -6,6 +6,8 @@ permalink: /kb/168/Q168339/
 
 ## Q168339: WD97: Invalid Page Fault Promoting/Demoting Heading
 
+{% raw %}
+
 	Article: Q168339
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/168/Q168339/
 	
 	=============================================================================
 	
+
+{% endraw %}

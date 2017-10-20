@@ -6,6 +6,8 @@ permalink: /kb/127/Q127779/
 
 ## Q127779: FIX: Can't Set BreakPoint w/ Country Set to Non-English Locale
 
+{% raw %}
+
 	Article: Q127779
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -74,3 +76,5 @@ permalink: /kb/127/Q127779/
 	
 	=============================================================================
 	
+
+{% endraw %}

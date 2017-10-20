@@ -6,6 +6,8 @@ permalink: /kb/098/Q98255/
 
 ## Q98255: PC WFW: 3.0 Modem Scripts Disk &#91;3.5, 720K&#93;
 
+{% raw %}
+
 	Article: Q98255
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -137,3 +139,5 @@ permalink: /kb/098/Q98255/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/092/Q92428/
 
 ## Q92428: WFWG: MSDLC.EXE Needed for Attachmate's Extra! for Windows
 
+{% raw %}
+
 	Article: Q92428
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/092/Q92428/
 	
 	=============================================================================
 	
+
+{% endraw %}

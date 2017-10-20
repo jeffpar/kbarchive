@@ -6,6 +6,8 @@ permalink: /kb/219/Q219315/
 
 ## Q219315: WINS Service Will Not Start with Inconsistent Database
 
+{% raw %}
+
 	Article: Q219315
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -86,3 +88,5 @@ permalink: /kb/219/Q219315/
 	
 	=============================================================================
 	
+
+{% endraw %}

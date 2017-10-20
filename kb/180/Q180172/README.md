@@ -6,6 +6,8 @@ permalink: /kb/180/Q180172/
 
 ## Q180172: PRB: &quot;Login has failed&quot; Error Using the MAPISession Control
 
+{% raw %}
+
 	Article: Q180172
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/180/Q180172/
 	
 	=============================================================================
 	
+
+{% endraw %}

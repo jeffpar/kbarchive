@@ -6,6 +6,8 @@ permalink: /kb/172/Q172531/
 
 ## Q172531: BUG: IDBSchemaRowset Reports DBTYPE_NUMERIC for MONEY Datatype
 
+{% raw %}
+
 	Article: Q172531
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.1
@@ -54,3 +56,5 @@ permalink: /kb/172/Q172531/
 	
 	=============================================================================
 	
+
+{% endraw %}

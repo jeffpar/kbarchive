@@ -6,6 +6,8 @@ permalink: /kb/012/Q12027/
 
 ## Q12027: &quot;Bad File Name&quot;; OPEN &quot;COM1:&quot;; 8 Data Bits Must Have No Parity
 
+{% raw %}
+
 	Article: Q12027
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -52,3 +54,5 @@ permalink: /kb/012/Q12027/
 	The combination of the bits should add up to 10 bits. When you try to
 	set 1 start + 8 data + 1 parity + 1 stop, that adds up to an 11-bit
 	data frame, which BASIC is not designed for.
+
+{% endraw %}

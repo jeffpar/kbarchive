@@ -6,6 +6,8 @@ permalink: /kb/180/Q180907/
 
 ## Q180907: XFOR: Unable to Send Bitmap in Body of Message
 
+{% raw %}
+
 	Article: Q180907
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -93,3 +95,5 @@ permalink: /kb/180/Q180907/
 	
 	=============================================================================
 	
+
+{% endraw %}

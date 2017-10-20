@@ -6,6 +6,8 @@ permalink: /kb/175/Q175475/
 
 ## Q175475: XFOR: Information Store May Incorrectly Stamp Time Zone Info
 
+{% raw %}
+
 	Article: Q175475
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -62,3 +64,5 @@ permalink: /kb/175/Q175475/
 	
 	=============================================================================
 	
+
+{% endraw %}

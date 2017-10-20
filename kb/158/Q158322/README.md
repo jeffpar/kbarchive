@@ -6,6 +6,8 @@ permalink: /kb/158/Q158322/
 
 ## Q158322: Prompted for NDS Tree When Changing Password
 
+{% raw %}
+
 	Article: Q158322
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/158/Q158322/
 	
 	=============================================================================
 	
+
+{% endraw %}

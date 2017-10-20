@@ -6,6 +6,8 @@ permalink: /kb/167/Q167324/
 
 ## Q167324: FIX: Custom Build Rule Not Saved for File Excluded from Build
 
+{% raw %}
+
 	Article: Q167324
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -62,3 +64,5 @@ permalink: /kb/167/Q167324/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151230/
 
 ## Q151230: XCLN: OLE App Required to Send Attachments Using OLE
 
+{% raw %}
+
 	Article: Q151230
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -46,3 +48,5 @@ permalink: /kb/151/Q151230/
 	
 	=============================================================================
 	
+
+{% endraw %}

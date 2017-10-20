@@ -6,6 +6,8 @@ permalink: /kb/293/Q293088/
 
 ## Q293088: XADM: How to Use Regedt32 to Determine Organization and Site
 
+{% raw %}
+
 	Article: Q293088
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -70,3 +72,5 @@ permalink: /kb/293/Q293088/
 	
 	=============================================================================
 	
+
+{% endraw %}

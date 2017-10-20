@@ -6,6 +6,8 @@ permalink: /kb/140/Q140244/
 
 ## Q140244: How to Dock/Undock Project Manager or Toolbar Programmatically
 
+{% raw %}
+
 	Article: Q140244
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/140/Q140244/
 	
 	=============================================================================
 	
+
+{% endraw %}

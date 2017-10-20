@@ -6,6 +6,8 @@ permalink: /kb/124/Q124171/
 
 ## Q124171: NETADMIN Causes GP Faults When Accessing File Permissions
 
+{% raw %}
+
 	Article: Q124171
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/124/Q124171/
 	
 	=============================================================================
 	
+
+{% endraw %}

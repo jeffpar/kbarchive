@@ -6,6 +6,8 @@ permalink: /kb/161/Q161151/
 
 ## Q161151: HOWTO: Get Windows Status Information via API Calls
 
+{% raw %}
+
 	Article: Q161151
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -189,3 +191,5 @@ permalink: /kb/161/Q161151/
 	
 	=============================================================================
 	
+
+{% endraw %}

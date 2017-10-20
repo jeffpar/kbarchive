@@ -6,6 +6,8 @@ permalink: /kb/243/Q243351/
 
 ## Q243351: BUG: /Za Compiler Option Causes C2248 Compiler Error
 
+{% raw %}
+
 	Article: Q243351
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -124,3 +126,5 @@ permalink: /kb/243/Q243351/
 	
 	=============================================================================
 	
+
+{% endraw %}

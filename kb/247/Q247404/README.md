@@ -6,6 +6,8 @@ permalink: /kb/247/Q247404/
 
 ## Q247404: How to Modify the Cache-Control HTTP Header When You Use IIS
 
+{% raw %}
+
 	Article: Q247404
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -137,3 +139,5 @@ permalink: /kb/247/Q247404/
 	
 	=============================================================================
 	
+
+{% endraw %}

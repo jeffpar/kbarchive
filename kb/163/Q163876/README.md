@@ -6,6 +6,8 @@ permalink: /kb/163/Q163876/
 
 ## Q163876: CSNW Clients Cannot Delete Print Jobs on NetWare Print Queue
 
+{% raw %}
+
 	Article: Q163876
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/163/Q163876/
 	
 	=============================================================================
 	
+
+{% endraw %}

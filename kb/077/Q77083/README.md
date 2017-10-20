@@ -6,6 +6,8 @@ permalink: /kb/077/Q77083/
 
 ## Q77083: Optimizing Your Use of Upper Memory Blocks
 
+{% raw %}
+
 	Article: Q77083
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0
@@ -398,3 +400,5 @@ permalink: /kb/077/Q77083/
 	
 	=============================================================================
 	
+
+{% endraw %}

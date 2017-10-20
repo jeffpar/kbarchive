@@ -6,6 +6,8 @@ permalink: /kb/041/Q41536/
 
 ## Q41536: PRINT TAB Can Change Value of Parameter in Subprogram
 
+{% raw %}
+
 	Article: Q41536
 	Product(s): See article
 	Version(s): 4.50
@@ -58,3 +60,5 @@ permalink: /kb/041/Q41536/
 	  LOCATE row%, 1: PRINT "Sub row%= "; row%;
 	  PRINT TAB(38); "row now = "; x%      ' x% prints ok.
 	END SUB
+
+{% endraw %}

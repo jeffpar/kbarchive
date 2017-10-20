@@ -6,6 +6,8 @@ permalink: /kb/129/Q129202/
 
 ## Q129202: PC Ext: Explanation of Opportunistic Locking on Windows NT
 
+{% raw %}
+
 	Article: Q129202
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.0,3.2,3.2a,3.5,3.51,4.0
@@ -140,3 +142,5 @@ permalink: /kb/129/Q129202/
 	
 	=============================================================================
 	
+
+{% endraw %}

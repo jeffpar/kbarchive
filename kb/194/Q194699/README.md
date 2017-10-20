@@ -6,6 +6,8 @@ permalink: /kb/194/Q194699/
 
 ## Q194699: Extended Log File Format Always in GMT
 
+{% raw %}
+
 	Article: Q194699
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -75,3 +77,5 @@ permalink: /kb/194/Q194699/
 	
 	=============================================================================
 	
+
+{% endraw %}

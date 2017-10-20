@@ -6,6 +6,8 @@ permalink: /kb/098/Q98833/
 
 ## Q98833: Interpreting LAN Manager's Audit Log
 
+{% raw %}
+
 	Article: Q98833
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -172,3 +174,5 @@ permalink: /kb/098/Q98833/
 	
 	=============================================================================
 	
+
+{% endraw %}

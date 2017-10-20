@@ -6,6 +6,8 @@ permalink: /kb/132/Q132523/
 
 ## Q132523: SAP Agent and NWLNKRIP Services Fail to Start
 
+{% raw %}
+
 	Article: Q132523
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -87,3 +89,5 @@ permalink: /kb/132/Q132523/
 	
 	=============================================================================
 	
+
+{% endraw %}

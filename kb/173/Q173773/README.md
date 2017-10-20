@@ -6,6 +6,8 @@ permalink: /kb/173/Q173773/
 
 ## Q173773: HOWTO: Move a Form that Has No Title Bar (32-Bit)
 
+{% raw %}
+
 	Article: Q173773
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -126,3 +128,5 @@ permalink: /kb/173/Q173773/
 	
 	=============================================================================
 	
+
+{% endraw %}

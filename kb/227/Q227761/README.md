@@ -6,6 +6,8 @@ permalink: /kb/227/Q227761/
 
 ## Q227761: Unable to Install Service Pack 4 from Distributed File System
 
+{% raw %}
+
 	Article: Q227761
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -65,3 +67,5 @@ permalink: /kb/227/Q227761/
 	
 	=============================================================================
 	
+
+{% endraw %}

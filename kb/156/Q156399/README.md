@@ -6,6 +6,8 @@ permalink: /kb/156/Q156399/
 
 ## Q156399: XADM: JET Asserts on Heavily Used Multivalued Columns in the DS
 
+{% raw %}
+
 	Article: Q156399
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/156/Q156399/
 	
 	=============================================================================
 	
+
+{% endraw %}

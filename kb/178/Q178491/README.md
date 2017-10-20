@@ -6,6 +6,8 @@ permalink: /kb/178/Q178491/
 
 ## Q178491: HOWTO: Change the TreeView Control Background Color
 
+{% raw %}
+
 	Article: Q178491
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -171,3 +173,5 @@ permalink: /kb/178/Q178491/
 	
 	=============================================================================
 	
+
+{% endraw %}

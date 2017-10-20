@@ -6,6 +6,8 @@ permalink: /kb/176/Q176374/
 
 ## Q176374: FP: Broken Hyperlink after Creating Corporate Presence Web
 
+{% raw %}
+
 	Article: Q176374
 	Product(s): Word Front Page
 	Version(s): WINDOWS:1.1,97
@@ -93,3 +95,5 @@ permalink: /kb/176/Q176374/
 	
 	=============================================================================
 	
+
+{% endraw %}

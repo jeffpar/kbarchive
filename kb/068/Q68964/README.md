@@ -6,6 +6,8 @@ permalink: /kb/068/Q68964/
 
 ## Q68964: Control Panel Can List Same Printer Twice
 
+{% raw %}
+
 	Article: Q68964
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -97,3 +99,5 @@ permalink: /kb/068/Q68964/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247249/
 
 ## Q247249: Error Message: HTTP/1.1 Error 400 - Bad Request
 
+{% raw %}
+
 	Article: Q247249
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -62,3 +64,5 @@ permalink: /kb/247/Q247249/
 	
 	=============================================================================
 	
+
+{% endraw %}

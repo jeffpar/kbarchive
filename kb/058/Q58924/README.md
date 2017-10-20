@@ -6,6 +6,8 @@ permalink: /kb/058/Q58924/
 
 ## Q58924: RUN Inside ON ERROR Handler Causes &quot;Press Any Key&quot; in EXE
 
+{% raw %}
+
 	Article: Q58924
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -49,3 +51,5 @@ permalink: /kb/058/Q58924/
 	   'RUN                             'Workaround #2
 	   'RESUME 110                      'Workaround #3
 	   110 RUN "a"
+
+{% endraw %}

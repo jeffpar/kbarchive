@@ -6,6 +6,8 @@ permalink: /kb/139/Q139497/
 
 ## Q139497: Bitmaps and Objects Removed from Messages in No-Attachment BBS
 
+{% raw %}
+
 	Article: Q139497
 	Product(s): The Microsoft Network
 	Version(s): 1.0,1.05,1.2,1.3
@@ -35,3 +37,5 @@ permalink: /kb/139/Q139497/
 	
 	=============================================================================
 	
+
+{% endraw %}

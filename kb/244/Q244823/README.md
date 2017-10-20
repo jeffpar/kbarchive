@@ -6,6 +6,8 @@ permalink: /kb/244/Q244823/
 
 ## Q244823: BUG: Numeric Hostnames Use Winsock Control Resolve Improperly
 
+{% raw %}
+
 	Article: Q244823
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/244/Q244823/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82241/
 
 ## Q82241: README.WRI Section 11.4 No Longer Valid (Everex, EMM386.EXE)
 
+{% raw %}
+
 	Article: Q82241
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.1
@@ -41,3 +43,5 @@ permalink: /kb/082/Q82241/
 	
 	=============================================================================
 	
+
+{% endraw %}

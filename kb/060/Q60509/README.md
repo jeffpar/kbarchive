@@ -6,6 +6,8 @@ permalink: /kb/060/Q60509/
 
 ## Q60509: Number of Named Pipes Used Between MS-DOS Client and Server
 
+{% raw %}
+
 	Article: Q60509
 	Product(s): Microsoft LAN Manager
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/060/Q60509/
 	
 	=============================================================================
 	
+
+{% endraw %}

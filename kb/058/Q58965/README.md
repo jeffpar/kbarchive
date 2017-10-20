@@ -6,6 +6,8 @@ permalink: /kb/058/Q58965/
 
 ## Q58965: DEF SEG from POKE Help Shows DEF FN Help in 4.50 Online Help
 
+{% raw %}
+
 	Article: Q58965
 	Product(s): See article
 	Version(s): 4.50
@@ -23,3 +25,5 @@ permalink: /kb/058/Q58965/
 	system in the QuickBASIC Extended (QBX.EXE) environment that comes
 	with Microsoft BASIC Professional Development System (PDS) Version
 	7.00 for MS-DOS.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259423/
 
 ## Q259423: XADM: Removing Folder Instance Results in Error c1040af3
 
+{% raw %}
+
 	Article: Q259423
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/259/Q259423/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159597/
 
 ## Q159597: Windows Messaging Setup Wizard Error: &quot;Path ... Is Not Valid&quot;
 
+{% raw %}
+
 	Article: Q159597
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/159/Q159597/
 	
 	=============================================================================
 	
+
+{% endraw %}

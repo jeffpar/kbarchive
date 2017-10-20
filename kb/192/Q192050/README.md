@@ -6,6 +6,8 @@ permalink: /kb/192/Q192050/
 
 ## Q192050: BUG: Resource Leak with 256 Color Bitmap/UseZOrder PaletteMode
 
+{% raw %}
+
 	Article: Q192050
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -101,3 +103,5 @@ permalink: /kb/192/Q192050/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/073/Q73677/
 
 ## Q73677: Allocation Limit on WINMEM32 Global32Alloc() Function
 
+{% raw %}
+
 	Article: Q73677
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -41,3 +43,5 @@ permalink: /kb/073/Q73677/
 	
 	=============================================================================
 	
+
+{% endraw %}

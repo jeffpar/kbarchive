@@ -6,6 +6,8 @@ permalink: /kb/149/Q149261/
 
 ## Q149261: Can't Use Security Properties via Win95 Server Admin Tools
 
+{% raw %}
+
 	Article: Q149261
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -51,3 +53,5 @@ permalink: /kb/149/Q149261/
 	
 	=============================================================================
 	
+
+{% endraw %}

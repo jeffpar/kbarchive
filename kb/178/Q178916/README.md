@@ -6,6 +6,8 @@ permalink: /kb/178/Q178916/
 
 ## Q178916: XCLN: PDF Freedoc Does Not Display Summary Info in Custom View
 
+{% raw %}
+
 	Article: Q178916
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -60,3 +62,5 @@ permalink: /kb/178/Q178916/
 	
 	=============================================================================
 	
+
+{% endraw %}

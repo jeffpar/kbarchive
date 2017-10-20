@@ -6,6 +6,8 @@ permalink: /kb/156/Q156037/
 
 ## Q156037: HOWTO: Determine the Requirements for ActiveX Controls in VFP
 
+{% raw %}
+
 	Article: Q156037
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/156/Q156037/
 	
 	=============================================================================
 	
+
+{% endraw %}

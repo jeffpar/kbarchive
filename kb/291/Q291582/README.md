@@ -6,6 +6,8 @@ permalink: /kb/291/Q291582/
 
 ## Q291582: Games Err Msg: Version Testing Date has Expired
 
+{% raw %}
+
 	Article: Q291582
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/291/Q291582/
 	
 	=============================================================================
 	
+
+{% endraw %}

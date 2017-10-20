@@ -6,6 +6,8 @@ permalink: /kb/238/Q238242/
 
 ## Q238242: BUG: OLE Automation Returns &quot;Element not found&quot; Error
 
+{% raw %}
+
 	Article: Q238242
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -88,3 +90,5 @@ permalink: /kb/238/Q238242/
 	
 	=============================================================================
 	
+
+{% endraw %}

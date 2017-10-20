@@ -6,6 +6,8 @@ permalink: /kb/141/Q141791/
 
 ## Q141791: Invalid Accounts Created with ADDUSERS.EXE
 
+{% raw %}
+
 	Article: Q141791
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -92,3 +94,5 @@ permalink: /kb/141/Q141791/
 	
 	=============================================================================
 	
+
+{% endraw %}

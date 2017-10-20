@@ -6,6 +6,8 @@ permalink: /kb/193/Q193542/
 
 ## Q193542: INFO: Visual Basic 6.0 Product Documentation Print Version
 
+{% raw %}
+
 	Article: Q193542
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -60,3 +62,5 @@ permalink: /kb/193/Q193542/
 	
 	=============================================================================
 	
+
+{% endraw %}

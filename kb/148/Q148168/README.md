@@ -6,6 +6,8 @@ permalink: /kb/148/Q148168/
 
 ## Q148168: XCLN: Err Msg: Sorry, a System Error Occurred... Error Type 11
 
+{% raw %}
+
 	Article: Q148168
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -64,3 +66,5 @@ permalink: /kb/148/Q148168/
 	
 	=============================================================================
 	
+
+{% endraw %}

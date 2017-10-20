@@ -6,6 +6,8 @@ permalink: /kb/103/Q103704/
 
 ## Q103704: How to Change a Windows NT Computer Name in an NT AS Domain
 
+{% raw %}
+
 	Article: Q103704
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -115,3 +117,5 @@ permalink: /kb/103/Q103704/
 	
 	=============================================================================
 	
+
+{% endraw %}

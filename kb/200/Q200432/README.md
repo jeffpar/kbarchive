@@ -6,6 +6,8 @@ permalink: /kb/200/Q200432/
 
 ## Q200432: XFOR: Notes Sent Time Migrates Improperly, Shifts Backward
 
+{% raw %}
+
 	Article: Q200432
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -59,3 +61,5 @@ permalink: /kb/200/Q200432/
 	
 	=============================================================================
 	
+
+{% endraw %}

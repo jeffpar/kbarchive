@@ -6,6 +6,8 @@ permalink: /kb/186/Q186739/
 
 ## Q186739: XFOR: Events 4018 &amp; 4116 Starting the Internet Mail Service
 
+{% raw %}
+
 	Article: Q186739
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -80,3 +82,5 @@ permalink: /kb/186/Q186739/
 	
 	=============================================================================
 	
+
+{% endraw %}

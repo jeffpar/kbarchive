@@ -6,6 +6,8 @@ permalink: /kb/062/Q62128/
 
 ## Q62128: Windowed MS-DOS NIF Safety Tip
 
+{% raw %}
+
 	Article: Q62128
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/062/Q62128/
 	
 	=============================================================================
 	
+
+{% endraw %}

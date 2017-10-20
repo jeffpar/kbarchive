@@ -6,6 +6,8 @@ permalink: /kb/110/Q110899/
 
 ## Q110899: Mac Gen: Summary List of Mail 3.1d Bugs
 
+{% raw %}
+
 	Article: Q110899
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1d
@@ -169,3 +171,5 @@ permalink: /kb/110/Q110899/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169140/
 
 ## Q169140: Using DHCP to Assign IP Addresses to Secondary Networks
 
+{% raw %}
+
 	Article: Q169140
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/169/Q169140/
 	
 	=============================================================================
 	
+
+{% endraw %}

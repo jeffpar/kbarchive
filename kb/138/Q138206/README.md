@@ -6,6 +6,8 @@ permalink: /kb/138/Q138206/
 
 ## Q138206: Why &quot;A&quot;=&quot;&quot; Is Not the Same as &quot;&quot;=&quot;A&quot;
 
+{% raw %}
+
 	Article: Q138206
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -113,3 +115,5 @@ permalink: /kb/138/Q138206/
 	
 	=============================================================================
 	
+
+{% endraw %}

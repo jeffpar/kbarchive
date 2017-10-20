@@ -6,6 +6,8 @@ permalink: /kb/152/Q152408/
 
 ## Q152408: Overview of Magic School Bus Explores in the Age of Dinosaurs
 
+{% raw %}
+
 	Article: Q152408
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/152/Q152408/
 	
 	=============================================================================
 	
+
+{% endraw %}

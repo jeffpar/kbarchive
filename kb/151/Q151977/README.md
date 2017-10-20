@@ -6,6 +6,8 @@ permalink: /kb/151/Q151977/
 
 ## Q151977: FPNW Not Responding Correctly to Record Locking and Logging
 
+{% raw %}
+
 	Article: Q151977
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -48,3 +50,5 @@ permalink: /kb/151/Q151977/
 	
 	=============================================================================
 	
+
+{% endraw %}

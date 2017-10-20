@@ -6,6 +6,8 @@ permalink: /kb/168/Q168495/
 
 ## Q168495: PPT: Sample Code to Reset the Builds on a Slide
 
+{% raw %}
+
 	Article: Q168495
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -111,3 +113,5 @@ permalink: /kb/168/Q168495/
 	
 	=============================================================================
 	
+
+{% endraw %}

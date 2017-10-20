@@ -6,6 +6,8 @@ permalink: /kb/162/Q162705/
 
 ## Q162705: Incorrect Colors Printed on HP Laserjet Color 5
 
+{% raw %}
+
 	Article: Q162705
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/162/Q162705/
 	
 	=============================================================================
 	
+
+{% endraw %}

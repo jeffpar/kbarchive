@@ -6,6 +6,8 @@ permalink: /kb/150/Q150155/
 
 ## Q150155: SMS Administrator UI GPF on Importing Ferret.pdf
 
+{% raw %}
+
 	Article: Q150155
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -46,3 +48,5 @@ permalink: /kb/150/Q150155/
 	
 	=============================================================================
 	
+
+{% endraw %}

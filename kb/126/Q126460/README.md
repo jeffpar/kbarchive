@@ -6,6 +6,8 @@ permalink: /kb/126/Q126460/
 
 ## Q126460: Cannot Connect to NRN Server with Dial-Up Networking
 
+{% raw %}
+
 	Article: Q126460
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/126/Q126460/
 	
 	=============================================================================
 	
+
+{% endraw %}

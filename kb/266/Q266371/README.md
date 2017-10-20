@@ -6,6 +6,8 @@ permalink: /kb/266/Q266371/
 
 ## Q266371: XADM: Exchange Server 5.5 User Receives Duplicate E-Mail Message
 
+{% raw %}
+
 	Article: Q266371
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -75,3 +77,5 @@ permalink: /kb/266/Q266371/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107653/
 
 ## Q107653: Writer: Some Borders Print Incorrectly
 
+{% raw %}
+
 	Article: Q107653
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a,2.0
@@ -77,3 +79,5 @@ permalink: /kb/107/Q107653/
 	
 	=============================================================================
 	
+
+{% endraw %}

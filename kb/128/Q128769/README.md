@@ -6,6 +6,8 @@ permalink: /kb/128/Q128769/
 
 ## Q128769: How to Create a Screen Programatically
 
+{% raw %}
+
 	Article: Q128769
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -86,3 +88,5 @@ permalink: /kb/128/Q128769/
 	
 	=============================================================================
 	
+
+{% endraw %}

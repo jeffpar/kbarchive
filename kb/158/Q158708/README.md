@@ -6,6 +6,8 @@ permalink: /kb/158/Q158708/
 
 ## Q158708: XCLN: Newprof Fails to Create a Profile
 
+{% raw %}
+
 	Article: Q158708
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -72,3 +74,5 @@ permalink: /kb/158/Q158708/
 	
 	=============================================================================
 	
+
+{% endraw %}

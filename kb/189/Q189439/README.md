@@ -6,6 +6,8 @@ permalink: /kb/189/Q189439/
 
 ## Q189439: WD97: Word Fails to Open &quot;Cannot Open the Existing &lt;Square&gt;&quot;
 
+{% raw %}
+
 	Article: Q189439
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -97,3 +99,5 @@ permalink: /kb/189/Q189439/
 	
 	=============================================================================
 	
+
+{% endraw %}

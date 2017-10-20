@@ -6,6 +6,8 @@ permalink: /kb/235/Q235281/
 
 ## Q235281: FIX: Negative 0 (zero) Causes ODBC SQL Server Driver Error
 
+{% raw %}
+
 	Article: Q235281
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.7; winnt:7.0
@@ -71,3 +73,5 @@ permalink: /kb/235/Q235281/
 	
 	=============================================================================
 	
+
+{% endraw %}

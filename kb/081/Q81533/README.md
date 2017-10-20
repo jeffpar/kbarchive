@@ -6,6 +6,8 @@ permalink: /kb/081/Q81533/
 
 ## Q81533: PC Win: Deep Nested Folders Not Displayed in Dialog Box
 
+{% raw %}
+
 	Article: Q81533
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/081/Q81533/
 	
 	=============================================================================
 	
+
+{% endraw %}

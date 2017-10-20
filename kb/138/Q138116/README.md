@@ -6,6 +6,8 @@ permalink: /kb/138/Q138116/
 
 ## Q138116: NTBACKUP Cannot Catalog and Restore Compressed Data from Tape
 
+{% raw %}
+
 	Article: Q138116
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/138/Q138116/
 	
 	=============================================================================
 	
+
+{% endraw %}

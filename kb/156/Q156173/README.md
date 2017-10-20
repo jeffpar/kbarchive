@@ -6,6 +6,8 @@ permalink: /kb/156/Q156173/
 
 ## Q156173: HOWTO: Use the New Class Browser in Visual FoxPro
 
+{% raw %}
+
 	Article: Q156173
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -100,3 +102,5 @@ permalink: /kb/156/Q156173/
 	
 	=============================================================================
 	
+
+{% endraw %}

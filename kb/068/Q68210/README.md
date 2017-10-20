@@ -6,6 +6,8 @@ permalink: /kb/068/Q68210/
 
 ## Q68210: Using Coda's Finale' Music Software with Windows 3.0
 
+{% raw %}
+
 	Article: Q68210
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/068/Q68210/
 	
 	=============================================================================
 	
+
+{% endraw %}

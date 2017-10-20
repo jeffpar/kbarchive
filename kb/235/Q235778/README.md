@@ -6,6 +6,8 @@ permalink: /kb/235/Q235778/
 
 ## Q235778: SMS: CCM Fails to Install SMS Client on WinNT Version 3.51
 
+{% raw %}
+
 	Article: Q235778
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -68,3 +70,5 @@ permalink: /kb/235/Q235778/
 	
 	=============================================================================
 	
+
+{% endraw %}

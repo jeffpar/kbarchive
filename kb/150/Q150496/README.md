@@ -6,6 +6,8 @@ permalink: /kb/150/Q150496/
 
 ## Q150496: CLI_DOS /R Does Not Remove Extra Space in LOAD Line of WIN.ini
 
+{% raw %}
+
 	Article: Q150496
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -62,3 +64,5 @@ permalink: /kb/150/Q150496/
 	
 	=============================================================================
 	
+
+{% endraw %}

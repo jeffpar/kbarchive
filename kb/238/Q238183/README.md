@@ -6,6 +6,8 @@ permalink: /kb/238/Q238183/
 
 ## Q238183: XADM: Default IMAP4 Line-Wrap Set to 72 Characters
 
+{% raw %}
+
 	Article: Q238183
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -102,3 +104,5 @@ permalink: /kb/238/Q238183/
 	
 	=============================================================================
 	
+
+{% endraw %}

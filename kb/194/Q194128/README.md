@@ -6,6 +6,8 @@ permalink: /kb/194/Q194128/
 
 ## Q194128: XFOR: Exchange 5.5 SP1 Upgrade Fails on Cluster Server
 
+{% raw %}
+
 	Article: Q194128
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -69,3 +71,5 @@ permalink: /kb/194/Q194128/
 	
 	=============================================================================
 	
+
+{% endraw %}

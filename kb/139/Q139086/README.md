@@ -6,6 +6,8 @@ permalink: /kb/139/Q139086/
 
 ## Q139086: How to Update Files in Use by Windows
 
+{% raw %}
+
 	Article: Q139086
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -76,3 +78,5 @@ permalink: /kb/139/Q139086/
 	
 	=============================================================================
 	
+
+{% endraw %}

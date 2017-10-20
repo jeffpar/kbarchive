@@ -6,6 +6,8 @@ permalink: /kb/061/Q61421/
 
 ## Q61421: Determining a Computer's BIOS Manufacturer, Version, and Date
 
+{% raw %}
+
 	Article: Q61421
 	Product(s): Microsoft Disk Operating System
 	Version(s): 
@@ -159,3 +161,5 @@ permalink: /kb/061/Q61421/
 	
 	=============================================================================
 	
+
+{% endraw %}

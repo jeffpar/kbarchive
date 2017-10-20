@@ -6,6 +6,8 @@ permalink: /kb/325/Q325976/
 
 ## Q325976: Flight Simulator: Reverse Thrusters Do Not Work Correctly
 
+{% raw %}
+
 	Article: Q325976
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/325/Q325976/
 	
 	=============================================================================
 	
+
+{% endraw %}

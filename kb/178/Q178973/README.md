@@ -6,6 +6,8 @@ permalink: /kb/178/Q178973/
 
 ## Q178973: WD97: Inserted Wave Sound Icon in Text Box Resized, Causes Error
 
+{% raw %}
+
 	Article: Q178973
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/178/Q178973/
 	
 	=============================================================================
 	
+
+{% endraw %}

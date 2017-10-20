@@ -6,6 +6,8 @@ permalink: /kb/256/Q256869/
 
 ## Q256869: SMS: Network Printers for Windows NT Clients Are Not Reported
 
+{% raw %}
+
 	Article: Q256869
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -63,3 +65,5 @@ permalink: /kb/256/Q256869/
 	
 	=============================================================================
 	
+
+{% endraw %}

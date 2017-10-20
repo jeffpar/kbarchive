@@ -6,6 +6,8 @@ permalink: /kb/248/Q248037/
 
 ## Q248037: Error Message: HTTP Error 500-13 - Server Too Busy
 
+{% raw %}
+
 	Article: Q248037
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -94,3 +96,5 @@ permalink: /kb/248/Q248037/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188979/
 
 ## Q188979: XADM: NDR When Sending to Recipient From Offline Address Book
 
+{% raw %}
+
 	Article: Q188979
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -63,3 +65,5 @@ permalink: /kb/188/Q188979/
 	
 	=============================================================================
 	
+
+{% endraw %}

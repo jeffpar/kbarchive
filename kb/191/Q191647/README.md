@@ -6,6 +6,8 @@ permalink: /kb/191/Q191647/
 
 ## Q191647: Motocross Madness: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q191647
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/191/Q191647/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130188/
 
 ## Q130188: XCLN: Message Forwarded from Outbox Is Not Sent
 
+{% raw %}
+
 	Article: Q130188
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -49,3 +51,5 @@ permalink: /kb/130/Q130188/
 	
 	=============================================================================
 	
+
+{% endraw %}

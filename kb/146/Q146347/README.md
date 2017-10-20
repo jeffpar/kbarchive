@@ -6,6 +6,8 @@ permalink: /kb/146/Q146347/
 
 ## Q146347: XCLN: Digitally Signed Msgs. Marked as Read When Open Fail
 
+{% raw %}
+
 	Article: Q146347
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -41,3 +43,5 @@ permalink: /kb/146/Q146347/
 	
 	=============================================================================
 	
+
+{% endraw %}

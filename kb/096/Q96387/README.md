@@ -6,6 +6,8 @@ permalink: /kb/096/Q96387/
 
 ## Q96387: Virus-Protection Program Reports CONFIG.SYS Is Infected
 
+{% raw %}
+
 	Article: Q96387
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -41,3 +43,5 @@ permalink: /kb/096/Q96387/
 	
 	=============================================================================
 	
+
+{% endraw %}

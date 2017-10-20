@@ -6,6 +6,8 @@ permalink: /kb/087/Q87200/
 
 ## Q87200: PROFS: When Is Gateway Component Successfully Installed?
 
+{% raw %}
+
 	Article: Q87200
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -48,3 +50,5 @@ permalink: /kb/087/Q87200/
 	
 	=============================================================================
 	
+
+{% endraw %}

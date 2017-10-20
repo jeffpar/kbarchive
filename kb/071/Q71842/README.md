@@ -6,6 +6,8 @@ permalink: /kb/071/Q71842/
 
 ## Q71842: File Icons in File Manager Do Not Match File Type
 
+{% raw %}
+
 	Article: Q71842
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/071/Q71842/
 	
 	=============================================================================
 	
+
+{% endraw %}

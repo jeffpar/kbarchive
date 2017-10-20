@@ -6,6 +6,8 @@ permalink: /kb/154/Q154775/
 
 ## Q154775: &quot;Memory Full&quot; Error Opening Large Lotus 1-2-3 for MS-DOS File
 
+{% raw %}
+
 	Article: Q154775
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -50,3 +52,5 @@ permalink: /kb/154/Q154775/
 	
 	=============================================================================
 	
+
+{% endraw %}

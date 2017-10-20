@@ -6,6 +6,8 @@ permalink: /kb/090/Q90569/
 
 ## Q90569: Toshiba Laptops Should Be Configured as MS-DOS System
 
+{% raw %}
+
 	Article: Q90569
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/090/Q90569/
 	
 	=============================================================================
 	
+
+{% endraw %}

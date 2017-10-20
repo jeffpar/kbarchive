@@ -6,6 +6,8 @@ permalink: /kb/155/Q155719/
 
 ## Q155719: Windows NT 3.51 File Manager Does Not Work in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q155719
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/155/Q155719/
 	
 	=============================================================================
 	
+
+{% endraw %}

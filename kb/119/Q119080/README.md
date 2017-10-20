@@ -6,6 +6,8 @@ permalink: /kb/119/Q119080/
 
 ## Q119080: WinPopUp Msg: There Has Been a Failure of the Network
 
+{% raw %}
+
 	Article: Q119080
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11
@@ -82,3 +84,5 @@ permalink: /kb/119/Q119080/
 	
 	=============================================================================
 	
+
+{% endraw %}

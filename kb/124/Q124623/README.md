@@ -6,6 +6,8 @@ permalink: /kb/124/Q124623/
 
 ## Q124623: Audio Video Interleave .AVI File Playback Is Rolling or Jumpy
 
+{% raw %}
+
 	Article: Q124623
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995
@@ -102,3 +104,5 @@ permalink: /kb/124/Q124623/
 	
 	=============================================================================
 	
+
+{% endraw %}

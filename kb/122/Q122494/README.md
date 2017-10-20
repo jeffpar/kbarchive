@@ -6,6 +6,8 @@ permalink: /kb/122/Q122494/
 
 ## Q122494: Network Storm Caused By Basic Redirector
 
+{% raw %}
+
 	Article: Q122494
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/122/Q122494/
 	
 	=============================================================================
 	
+
+{% endraw %}

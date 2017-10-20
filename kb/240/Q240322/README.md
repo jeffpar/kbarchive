@@ -6,6 +6,8 @@ permalink: /kb/240/Q240322/
 
 ## Q240322: Err Msg: Kallisti Caused an Invalid Page Fault in Kallisti.exe
 
+{% raw %}
+
 	Article: Q240322
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:
@@ -155,3 +157,5 @@ permalink: /kb/240/Q240322/
 	
 	=============================================================================
 	
+
+{% endraw %}

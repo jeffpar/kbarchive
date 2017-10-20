@@ -6,6 +6,8 @@ permalink: /kb/128/Q128976/
 
 ## Q128976: MultiTech MT2834 Modem Incorrectly Reports Hardware Error
 
+{% raw %}
+
 	Article: Q128976
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -64,3 +66,5 @@ permalink: /kb/128/Q128976/
 	
 	=============================================================================
 	
+
+{% endraw %}

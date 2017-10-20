@@ -6,6 +6,8 @@ permalink: /kb/165/Q165546/
 
 ## Q165546: Host Security Reports Event 54 but Does Not Include Description
 
+{% raw %}
+
 	Article: Q165546
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/165/Q165546/
 	
 	=============================================================================
 	
+
+{% endraw %}

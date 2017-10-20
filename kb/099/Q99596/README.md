@@ -6,6 +6,8 @@ permalink: /kb/099/Q99596/
 
 ## Q99596: ERR: &quot;File Access Denied&quot; Error Message
 
+{% raw %}
+
 	Article: Q99596
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -50,3 +52,5 @@ permalink: /kb/099/Q99596/
 	
 	=============================================================================
 	
+
+{% endraw %}

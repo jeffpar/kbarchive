@@ -6,6 +6,8 @@ permalink: /kb/267/Q267925/
 
 ## Q267925: PRB: Opening Binary File for Input Returns Only One Character
 
+{% raw %}
+
 	Article: Q267925
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -104,3 +106,5 @@ permalink: /kb/267/Q267925/
 	
 	=============================================================================
 	
+
+{% endraw %}

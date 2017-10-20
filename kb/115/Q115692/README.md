@@ -6,6 +6,8 @@ permalink: /kb/115/Q115692/
 
 ## Q115692: BUG: No Video Refresh When .PIF Runs When Logged Off
 
+{% raw %}
+
 	Article: Q115692
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.1
@@ -53,3 +55,5 @@ permalink: /kb/115/Q115692/
 	
 	=============================================================================
 	
+
+{% endraw %}

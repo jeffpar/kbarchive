@@ -6,6 +6,8 @@ permalink: /kb/177/Q177056/
 
 ## Q177056: PRB: Return Parameter Variable Name for SQL Server Causes Error
 
+{% raw %}
+
 	Article: Q177056
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.6,5.0,5.0a,6.0
@@ -129,3 +131,5 @@ permalink: /kb/177/Q177056/
 	
 	=============================================================================
 	
+
+{% endraw %}

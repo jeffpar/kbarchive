@@ -6,6 +6,8 @@ permalink: /kb/141/Q141517/
 
 ## Q141517: Obtaining Better Output with the Epson Stylus Driver
 
+{% raw %}
+
 	Article: Q141517
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -82,3 +84,5 @@ permalink: /kb/141/Q141517/
 	
 	=============================================================================
 	
+
+{% endraw %}

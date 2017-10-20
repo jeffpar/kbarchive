@@ -6,6 +6,8 @@ permalink: /kb/082/Q82431/
 
 ## Q82431: GP Fault in Charisma After Insufficient Memory
 
+{% raw %}
+
 	Article: Q82431
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/082/Q82431/
 	
 	=============================================================================
 	
+
+{% endraw %}

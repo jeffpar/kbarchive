@@ -6,6 +6,8 @@ permalink: /kb/153/Q153928/
 
 ## Q153928: HOWTO: Put a ComboBox into a Toolbar
 
+{% raw %}
+
 	Article: Q153928
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/153/Q153928/
 	
 	=============================================================================
 	
+
+{% endraw %}

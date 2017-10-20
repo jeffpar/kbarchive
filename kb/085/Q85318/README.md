@@ -6,6 +6,8 @@ permalink: /kb/085/Q85318/
 
 ## Q85318: Can't Change Paper Orientation with Bitstream FaceLift 2.0
 
+{% raw %}
+
 	Article: Q85318
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/085/Q85318/
 	
 	=============================================================================
 	
+
+{% endraw %}

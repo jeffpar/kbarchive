@@ -6,6 +6,8 @@ permalink: /kb/031/Q31918/
 
 ## Q31918: Problems with CodeView and Logitech Mouse with Older Drivers
 
+{% raw %}
+
 	Article: Q31918
 	Product(s): See article
 	Version(s): 2.00 2.10 2.20
@@ -34,3 +36,5 @@ permalink: /kb/031/Q31918/
 	required for use with CodeView. In addition, you must use Microsoft's
 	mouse driver Version 6.00 or later, or a driver that exactly emulates
 	these Microsoft drivers.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/201/Q201702/
 
 ## Q201702: SMS: Win16 Bindery Client Receives Error During Logon Script
 
+{% raw %}
+
 	Article: Q201702
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -58,3 +60,5 @@ permalink: /kb/201/Q201702/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/078/Q78896/
 
 ## Q78896: SysEdit Does Not Save Read-Only Configuration Files
 
+{% raw %}
+
 	Article: Q78896
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/078/Q78896/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145703/
 
 ## Q145703: Windows Socket Error Running Program Using IPX/SPX
 
+{% raw %}
+
 	Article: Q145703
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -84,3 +86,5 @@ permalink: /kb/145/Q145703/
 	
 	=============================================================================
 	
+
+{% endraw %}

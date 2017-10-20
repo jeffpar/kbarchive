@@ -6,6 +6,8 @@ permalink: /kb/238/Q238154/
 
 ## Q238154: Midtown Madness: Cannot Use Pointing Device to Configure Options
 
+{% raw %}
+
 	Article: Q238154
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/238/Q238154/
 	
 	=============================================================================
 	
+
+{% endraw %}

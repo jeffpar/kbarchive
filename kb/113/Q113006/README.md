@@ -6,6 +6,8 @@ permalink: /kb/113/Q113006/
 
 ## Q113006: BUG: &quot;Code Page Not Found&quot; Caused by SET CPCOMPILE to 0
 
+{% raw %}
+
 	Article: Q113006
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0,5.0,5.0
@@ -101,3 +103,5 @@ permalink: /kb/113/Q113006/
 	
 	=============================================================================
 	
+
+{% endraw %}

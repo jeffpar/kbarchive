@@ -6,6 +6,8 @@ permalink: /kb/243/Q243159/
 
 ## Q243159: SMS: Long Path Causes &quot;Access Violation&quot; in Invwin32.exe
 
+{% raw %}
+
 	Article: Q243159
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -112,3 +114,5 @@ permalink: /kb/243/Q243159/
 	
 	=============================================================================
 	
+
+{% endraw %}

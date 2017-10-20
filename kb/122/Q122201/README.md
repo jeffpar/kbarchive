@@ -6,6 +6,8 @@ permalink: /kb/122/Q122201/
 
 ## Q122201: Foreign NAD Items Remain After Child Detaches
 
+{% raw %}
+
 	Article: Q122201
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -69,3 +71,5 @@ permalink: /kb/122/Q122201/
 	
 	=============================================================================
 	
+
+{% endraw %}

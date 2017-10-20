@@ -6,6 +6,8 @@ permalink: /kb/116/Q116251/
 
 ## Q116251: PC2X 8-Bit Bernoulli Controller May Cause System to Hang
 
+{% raw %}
+
 	Article: Q116251
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/116/Q116251/
 	
 	=============================================================================
 	
+
+{% endraw %}

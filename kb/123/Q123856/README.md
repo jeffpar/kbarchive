@@ -6,6 +6,8 @@ permalink: /kb/123/Q123856/
 
 ## Q123856: PC DirSync: How to Distribute Gateway Addresses with Dir-Sync
 
+{% raw %}
+
 	Article: Q123856
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a,3.5
@@ -133,3 +135,5 @@ permalink: /kb/123/Q123856/
 	
 	=============================================================================
 	
+
+{% endraw %}

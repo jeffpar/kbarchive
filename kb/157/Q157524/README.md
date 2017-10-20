@@ -6,6 +6,8 @@ permalink: /kb/157/Q157524/
 
 ## Q157524: PRB: Intellidrop Causes Multiple Logins with Remote View
 
+{% raw %}
+
 	Article: Q157524
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/157/Q157524/
 	
 	=============================================================================
 	
+
+{% endraw %}

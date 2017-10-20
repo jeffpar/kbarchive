@@ -6,6 +6,8 @@ permalink: /kb/245/Q245172/
 
 ## Q245172: Err Msg: Could Not Find Domain Controller for This Domain
 
+{% raw %}
+
 	Article: Q245172
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -116,3 +118,5 @@ permalink: /kb/245/Q245172/
 	
 	=============================================================================
 	
+
+{% endraw %}

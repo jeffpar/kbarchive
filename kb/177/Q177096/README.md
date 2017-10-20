@@ -6,6 +6,8 @@ permalink: /kb/177/Q177096/
 
 ## Q177096: BUG: Focus Disappears After Minimizing VB Form with UserControl
 
+{% raw %}
+
 	Article: Q177096
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -68,3 +70,5 @@ permalink: /kb/177/Q177096/
 	
 	=============================================================================
 	
+
+{% endraw %}

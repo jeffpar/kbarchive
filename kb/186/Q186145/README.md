@@ -6,6 +6,8 @@ permalink: /kb/186/Q186145/
 
 ## Q186145: Server Performance Degraded by CPQDBG
 
+{% raw %}
+
 	Article: Q186145
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -90,3 +92,5 @@ permalink: /kb/186/Q186145/
 	
 	=============================================================================
 	
+
+{% endraw %}

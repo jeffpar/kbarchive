@@ -6,6 +6,8 @@ permalink: /kb/257/Q257364/
 
 ## Q257364: SMS: French Security: Wuser32.exe Has Everyone Full Control
 
+{% raw %}
+
 	Article: Q257364
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -146,3 +148,5 @@ permalink: /kb/257/Q257364/
 	
 	=============================================================================
 	
+
+{% endraw %}

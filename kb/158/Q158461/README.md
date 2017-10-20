@@ -6,6 +6,8 @@ permalink: /kb/158/Q158461/
 
 ## Q158461: Default LPD Printer Name of NetQue/NetJet Card
 
+{% raw %}
+
 	Article: Q158461
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -68,3 +70,5 @@ permalink: /kb/158/Q158461/
 	
 	=============================================================================
 	
+
+{% endraw %}

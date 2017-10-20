@@ -6,6 +6,8 @@ permalink: /kb/269/Q269812/
 
 ## Q269812: Magic School Bus: Computer Hangs When You Install Program
 
+{% raw %}
+
 	Article: Q269812
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -127,3 +129,5 @@ permalink: /kb/269/Q269812/
 	
 	=============================================================================
 	
+
+{% endraw %}

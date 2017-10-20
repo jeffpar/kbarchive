@@ -6,6 +6,8 @@ permalink: /kb/139/Q139437/
 
 ## Q139437: Windows 95 Emergency Recovery Utility
 
+{% raw %}
+
 	Article: Q139437
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -107,3 +109,5 @@ permalink: /kb/139/Q139437/
 	
 	=============================================================================
 	
+
+{% endraw %}

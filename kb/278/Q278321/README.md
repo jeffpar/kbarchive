@@ -6,6 +6,8 @@ permalink: /kb/278/Q278321/
 
 ## Q278321: HOWTO: Force a Particular Internet Encoding by Using MAPI
 
+{% raw %}
+
 	Article: Q278321
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -167,3 +169,5 @@ permalink: /kb/278/Q278321/
 	
 	=============================================================================
 	
+
+{% endraw %}

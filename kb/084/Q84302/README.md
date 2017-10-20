@@ -6,6 +6,8 @@ permalink: /kb/084/Q84302/
 
 ## Q84302: Unable to Get into 386 Enhanced Mode with SCSIDISK.SYS
 
+{% raw %}
+
 	Article: Q84302
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -81,3 +83,5 @@ permalink: /kb/084/Q84302/
 	
 	=============================================================================
 	
+
+{% endraw %}

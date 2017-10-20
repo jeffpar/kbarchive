@@ -6,6 +6,8 @@ permalink: /kb/191/Q191983/
 
 ## Q191983: XADM: Cannot Stop Information Store from Command Line
 
+{% raw %}
+
 	Article: Q191983
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -51,3 +53,5 @@ permalink: /kb/191/Q191983/
 	
 	=============================================================================
 	
+
+{% endraw %}

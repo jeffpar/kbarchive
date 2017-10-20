@@ -6,6 +6,8 @@ permalink: /kb/176/Q176547/
 
 ## Q176547: Vb5sp2ds.exe Contains Visual Basic SP2 Debugging Symbols
 
+{% raw %}
+
 	Article: Q176547
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97sp2
@@ -82,3 +84,5 @@ permalink: /kb/176/Q176547/
 	
 	=============================================================================
 	
+
+{% endraw %}

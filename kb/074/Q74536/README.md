@@ -6,6 +6,8 @@ permalink: /kb/074/Q74536/
 
 ## Q74536: RBase 3.1, Windows Enhanced Mode, and EMM386 NOEMS
 
+{% raw %}
+
 	Article: Q74536
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/074/Q74536/
 	
 	=============================================================================
 	
+
+{% endraw %}

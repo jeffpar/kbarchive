@@ -6,6 +6,8 @@ permalink: /kb/121/Q121519/
 
 ## Q121519: DEC Mylex SWXCR Raid Controller Software Causes STOP 0x0A
 
+{% raw %}
+
 	Article: Q121519
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/121/Q121519/
 	
 	=============================================================================
 	
+
+{% endraw %}

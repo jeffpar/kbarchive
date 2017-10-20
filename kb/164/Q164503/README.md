@@ -6,6 +6,8 @@ permalink: /kb/164/Q164503/
 
 ## Q164503: WD97: How to Order the Resource and Developer's Kits
 
+{% raw %}
+
 	Article: Q164503
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -236,3 +238,5 @@ permalink: /kb/164/Q164503/
 	
 	=============================================================================
 	
+
+{% endraw %}

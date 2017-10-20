@@ -6,6 +6,8 @@ permalink: /kb/027/Q27292/
 
 ## Q27292: Passing BASIC Fixed-Length String to C by Near Reference
 
+{% raw %}
+
 	Article: Q27292
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -77,3 +79,5 @@ permalink: /kb/027/Q27292/
 	  12          115            s
 	  13          116            t
 	  14            0
+
+{% endraw %}

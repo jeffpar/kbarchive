@@ -6,6 +6,8 @@ permalink: /kb/270/Q270889/
 
 ## Q270889: XCON: How to Manually Create Site Connectors
 
+{% raw %}
+
 	Article: Q270889
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -94,3 +96,5 @@ permalink: /kb/270/Q270889/
 	
 	=============================================================================
 	
+
+{% endraw %}

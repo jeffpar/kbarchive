@@ -6,6 +6,8 @@ permalink: /kb/119/Q119501/
 
 ## Q119501: PRB: Error CXX0017 or CXX0034 for typedef
 
+{% raw %}
+
 	Article: Q119501
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,2.1,4.0,5.0
@@ -77,3 +79,5 @@ permalink: /kb/119/Q119501/
 	
 	=============================================================================
 	
+
+{% endraw %}

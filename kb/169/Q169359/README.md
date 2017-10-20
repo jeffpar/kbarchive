@@ -6,6 +6,8 @@ permalink: /kb/169/Q169359/
 
 ## Q169359: PPT7: Error Editing PowerPoint 4.0 Object in Word 6.0 Document
 
+{% raw %}
+
 	Article: Q169359
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -58,3 +60,5 @@ permalink: /kb/169/Q169359/
 	
 	=============================================================================
 	
+
+{% endraw %}

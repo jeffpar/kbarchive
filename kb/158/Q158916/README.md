@@ -6,6 +6,8 @@ permalink: /kb/158/Q158916/
 
 ## Q158916: TI TravelMate TM4000M Notebook Computer May Hang
 
+{% raw %}
+
 	Article: Q158916
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -58,3 +60,5 @@ permalink: /kb/158/Q158916/
 	
 	=============================================================================
 	
+
+{% endraw %}

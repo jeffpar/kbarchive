@@ -6,6 +6,8 @@ permalink: /kb/076/Q76820/
 
 ## Q76820: Programs Don't Load into Upper Memory Area
 
+{% raw %}
+
 	Article: Q76820
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -289,3 +291,5 @@ permalink: /kb/076/Q76820/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107766/
 
 ## Q107766: MAC Musical Instruments: README Contents
 
+{% raw %}
+
 	Article: Q107766
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -227,3 +229,5 @@ permalink: /kb/107/Q107766/
 	
 	=============================================================================
 	
+
+{% endraw %}

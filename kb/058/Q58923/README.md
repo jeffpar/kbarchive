@@ -6,6 +6,8 @@ permalink: /kb/058/Q58923/
 
 ## Q58923: CONFIG.SYS IOPL=YES to Run CodeView CVP.EXE in Protected Mode
 
+{% raw %}
+
 	Article: Q58923
 	Product(s): See article
 	Version(s): 7.00
@@ -22,3 +24,5 @@ permalink: /kb/058/Q58923/
 	This information applies to the Microsoft CodeView debugger (CVP.EXE)
 	shipped with Microsoft BASIC Professional Development System (PDS)
 	Version 7.00 for MS-DOS and MS OS/2.
+
+{% endraw %}

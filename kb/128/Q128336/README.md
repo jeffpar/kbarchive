@@ -6,6 +6,8 @@ permalink: /kb/128/Q128336/
 
 ## Q128336: MS-DOS 5.0 UNFORMAT.COM Err Msg: Wrong DOS Version
 
+{% raw %}
+
 	Article: Q128336
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/128/Q128336/
 	
 	=============================================================================
 	
+
+{% endraw %}

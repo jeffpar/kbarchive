@@ -6,6 +6,8 @@ permalink: /kb/100/Q100315/
 
 ## Q100315: Steps Performed by the Emergency Repair Disk
 
+{% raw %}
+
 	Article: Q100315
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -49,3 +51,5 @@ permalink: /kb/100/Q100315/
 	
 	=============================================================================
 	
+
+{% endraw %}

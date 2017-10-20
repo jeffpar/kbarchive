@@ -6,6 +6,8 @@ permalink: /kb/137/Q137847/
 
 ## Q137847: Number of Shortcuts on the Start Menu Limited
 
+{% raw %}
+
 	Article: Q137847
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -51,3 +53,5 @@ permalink: /kb/137/Q137847/
 	
 	=============================================================================
 	
+
+{% endraw %}

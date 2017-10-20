@@ -6,6 +6,8 @@ permalink: /kb/107/Q107695/
 
 ## Q107695: PRB: Updating Multiple Device= Lines in SYSTEM.INI
 
+{% raw %}
+
 	Article: Q107695
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -84,3 +86,5 @@ permalink: /kb/107/Q107695/
 	
 	=============================================================================
 	
+
+{% endraw %}

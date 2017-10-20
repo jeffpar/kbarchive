@@ -6,6 +6,8 @@ permalink: /kb/277/Q277729/
 
 ## Q277729: SMS: Multiple Mmc.exe Tasks on a Windows 2000-Based SMS Site Ser
 
+{% raw %}
+
 	Article: Q277729
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -136,3 +138,5 @@ permalink: /kb/277/Q277729/
 	
 	=============================================================================
 	
+
+{% endraw %}

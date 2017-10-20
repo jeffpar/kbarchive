@@ -6,6 +6,8 @@ permalink: /kb/130/Q130683/
 
 ## Q130683: How to Create a General Purpose Reusable Navigation Toolbar
 
+{% raw %}
+
 	Article: Q130683
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -108,3 +110,5 @@ permalink: /kb/130/Q130683/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168381/
 
 ## Q168381: BUG: Exported Make Files with Browse Info Are Rebuilt Twice
 
+{% raw %}
+
 	Article: Q168381
 	Product(s): Microsoft Programming Utilities
 	Version(s): 5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/168/Q168381/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61309/
 
 ## Q61309: Steps Needed to Make Source Browser Usable
 
+{% raw %}
+
 	Article: Q61309
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -70,3 +72,5 @@ permalink: /kb/061/Q61309/
 	
 	=============================================================================
 	
+
+{% endraw %}

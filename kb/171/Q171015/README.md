@@ -6,6 +6,8 @@ permalink: /kb/171/Q171015/
 
 ## Q171015: How to Install and Configure Windows NT 4.0 Dial-Up Networking
 
+{% raw %}
+
 	Article: Q171015
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.0
@@ -125,3 +127,5 @@ permalink: /kb/171/Q171015/
 	
 	=============================================================================
 	
+
+{% endraw %}

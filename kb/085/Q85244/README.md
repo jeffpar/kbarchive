@@ -6,6 +6,8 @@ permalink: /kb/085/Q85244/
 
 ## Q85244: Windows 3.1 Setup: Pressing ESC Causes File to Be Skipped
 
+{% raw %}
+
 	Article: Q85244
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/085/Q85244/
 	
 	=============================================================================
 	
+
+{% endraw %}

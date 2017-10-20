@@ -6,6 +6,8 @@ permalink: /kb/216/Q216169/
 
 ## Q216169: How to Change the Default Event Viewer Log File Location
 
+{% raw %}
+
 	Article: Q216169
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0,4.0a,4.5
@@ -95,3 +97,5 @@ permalink: /kb/216/Q216169/
 	
 	=============================================================================
 	
+
+{% endraw %}

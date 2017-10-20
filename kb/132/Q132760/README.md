@@ -6,6 +6,8 @@ permalink: /kb/132/Q132760/
 
 ## Q132760: Skewing Filled Rectangle in Paint Causes Confusing Image
 
+{% raw %}
+
 	Article: Q132760
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/132/Q132760/
 	
 	=============================================================================
 	
+
+{% endraw %}

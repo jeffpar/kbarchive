@@ -6,6 +6,8 @@ permalink: /kb/249/Q249197/
 
 ## Q249197: Internet Explorer Does Not Allow Use of Single SGC Certificate
 
+{% raw %}
+
 	Article: Q249197
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -102,3 +104,5 @@ permalink: /kb/249/Q249197/
 	
 	=============================================================================
 	
+
+{% endraw %}

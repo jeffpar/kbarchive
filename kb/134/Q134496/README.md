@@ -6,6 +6,8 @@ permalink: /kb/134/Q134496/
 
 ## Q134496: Error Message: SDMErr(80000003): Registry Access Failed
 
+{% raw %}
+
 	Article: Q134496
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/134/Q134496/
 	
 	=============================================================================
 	
+
+{% endraw %}

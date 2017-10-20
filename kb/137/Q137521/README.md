@@ -6,6 +6,8 @@ permalink: /kb/137/Q137521/
 
 ## Q137521: BUG: Class Browser: Error When Typing a Subclass in Type Combo
 
+{% raw %}
+
 	Article: Q137521
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -60,3 +62,5 @@ permalink: /kb/137/Q137521/
 	
 	=============================================================================
 	
+
+{% endraw %}

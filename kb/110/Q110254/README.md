@@ -6,6 +6,8 @@ permalink: /kb/110/Q110254/
 
 ## Q110254: INFO: How to Restart Windows from Within FoxPro
 
+{% raw %}
+
 	Article: Q110254
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,3.0
@@ -81,3 +83,5 @@ permalink: /kb/110/Q110254/
 	
 	=============================================================================
 	
+
+{% endraw %}

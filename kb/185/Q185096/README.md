@@ -6,6 +6,8 @@ permalink: /kb/185/Q185096/
 
 ## Q185096: Zone: How to Configure Your ZoneFriends Privacy Settings
 
+{% raw %}
+
 	Article: Q185096
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/185/Q185096/
 	
 	=============================================================================
 	
+
+{% endraw %}

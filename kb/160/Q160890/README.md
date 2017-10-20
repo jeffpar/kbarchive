@@ -6,6 +6,8 @@ permalink: /kb/160/Q160890/
 
 ## Q160890: Errors in HyperTerminal with No Service Provider Installed
 
+{% raw %}
+
 	Article: Q160890
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -83,3 +85,5 @@ permalink: /kb/160/Q160890/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/233/Q233463/
 
 ## Q233463: MSBP: Unexpected Behavior When You Press and Hold Down CTRL+C
 
+{% raw %}
+
 	Article: Q233463
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -73,3 +75,5 @@ permalink: /kb/233/Q233463/
 	
 	=============================================================================
 	
+
+{% endraw %}

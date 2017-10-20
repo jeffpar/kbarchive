@@ -6,6 +6,8 @@ permalink: /kb/126/Q126440/
 
 ## Q126440: Default Location of FoxPro for Macintosh Temporary Files
 
+{% raw %}
+
 	Article: Q126440
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -51,3 +53,5 @@ permalink: /kb/126/Q126440/
 	
 	=============================================================================
 	
+
+{% endraw %}

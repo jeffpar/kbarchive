@@ -6,6 +6,8 @@ permalink: /kb/189/Q189708/
 
 ## Q189708: BUG: Calculator Gives Numeric Overflow on Some Calculation
 
+{% raw %}
+
 	Article: Q189708
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -66,3 +68,5 @@ permalink: /kb/189/Q189708/
 	
 	=============================================================================
 	
+
+{% endraw %}

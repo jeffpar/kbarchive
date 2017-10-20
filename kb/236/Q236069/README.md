@@ -6,6 +6,8 @@ permalink: /kb/236/Q236069/
 
 ## Q236069: PRB:View Field Properties Window Defaults to First Field of View
 
+{% raw %}
+
 	Article: Q236069
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -74,3 +76,5 @@ permalink: /kb/236/Q236069/
 	
 	=============================================================================
 	
+
+{% endraw %}

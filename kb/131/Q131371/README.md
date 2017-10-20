@@ -6,6 +6,8 @@ permalink: /kb/131/Q131371/
 
 ## Q131371: Determining System Version from a Windows-Based Application
 
+{% raw %}
+
 	Article: Q131371
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -132,3 +134,5 @@ permalink: /kb/131/Q131371/
 	
 	=============================================================================
 	
+
+{% endraw %}

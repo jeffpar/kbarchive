@@ -6,6 +6,8 @@ permalink: /kb/156/Q156909/
 
 ## Q156909: FP: OLE Errors When Working with FrontPage
 
+{% raw %}
+
 	Article: Q156909
 	Product(s): Word Front Page
 	Version(s): ; WINDOWS:1.0,1.0a,1.1
@@ -162,3 +164,5 @@ permalink: /kb/156/Q156909/
 	
 	=============================================================================
 	
+
+{% endraw %}

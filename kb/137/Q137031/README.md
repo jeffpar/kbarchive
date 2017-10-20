@@ -6,6 +6,8 @@ permalink: /kb/137/Q137031/
 
 ## Q137031: PRB: OLE Servers Don't Unload When Last Object Set to Nothing
 
+{% raw %}
+
 	Article: Q137031
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -136,3 +138,5 @@ permalink: /kb/137/Q137031/
 	
 	=============================================================================
 	
+
+{% endraw %}

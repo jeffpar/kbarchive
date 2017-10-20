@@ -6,6 +6,8 @@ permalink: /kb/304/Q304381/
 
 ## Q304381: SMS: SMS Executive Service Hangs During Startup
 
+{% raw %}
+
 	Article: Q304381
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -67,3 +69,5 @@ permalink: /kb/304/Q304381/
 	
 	=============================================================================
 	
+
+{% endraw %}

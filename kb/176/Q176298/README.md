@@ -6,6 +6,8 @@ permalink: /kb/176/Q176298/
 
 ## Q176298: Age Of Empires: Location of Product Identification Number (PID)
 
+{% raw %}
+
 	Article: Q176298
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/176/Q176298/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196020/
 
 ## Q196020: WD97: How to Rebuild User Preference and Options Settings
 
+{% raw %}
+
 	Article: Q196020
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -110,3 +112,5 @@ permalink: /kb/196/Q196020/
 	
 	=============================================================================
 	
+
+{% endraw %}

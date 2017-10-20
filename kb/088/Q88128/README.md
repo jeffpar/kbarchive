@@ -6,6 +6,8 @@ permalink: /kb/088/Q88128/
 
 ## Q88128: BUG: Minimized Windows Help Yields Incorrect Icon
 
+{% raw %}
+
 	Article: Q88128
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/088/Q88128/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85359/
 
 ## Q85359: FAX: What the Microsoft Mail Gateway to Fax Does
 
+{% raw %}
+
 	Article: Q85359
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/085/Q85359/
 	
 	=============================================================================
 	
+
+{% endraw %}

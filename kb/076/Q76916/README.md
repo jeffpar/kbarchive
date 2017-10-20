@@ -6,6 +6,8 @@ permalink: /kb/076/Q76916/
 
 ## Q76916: Size of Expanded Memory Pool Adjusted
 
+{% raw %}
+
 	Article: Q76916
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -77,3 +79,5 @@ permalink: /kb/076/Q76916/
 	
 	=============================================================================
 	
+
+{% endraw %}

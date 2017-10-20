@@ -6,6 +6,8 @@ permalink: /kb/221/Q221931/
 
 ## Q221931: HOWTO: Return Record's Autonumber Value Inserted into Access DB
 
+{% raw %}
+
 	Article: Q221931
 	Product(s): Internet Information Server
 	Version(s): 1.5,2.0,3.0,4.0,5.0,7.0
@@ -137,3 +139,5 @@ permalink: /kb/221/Q221931/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192583/
 
 ## Q192583: XADM: IMS Incorrectly Archives Message If ResolveP2 Is On
 
+{% raw %}
+
 	Article: Q192583
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1
@@ -105,3 +107,5 @@ permalink: /kb/192/Q192583/
 	
 	=============================================================================
 	
+
+{% endraw %}

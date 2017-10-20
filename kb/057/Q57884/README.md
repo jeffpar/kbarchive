@@ -6,6 +6,8 @@ permalink: /kb/057/Q57884/
 
 ## Q57884: Listbox Initialized Incorrectly in BASIC 7.00 UI Toolbox
 
+{% raw %}
+
 	Article: Q57884
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -44,3 +46,5 @@ permalink: /kb/057/Q57884/
 	Knowledge Base on the following words:
 	
 	   User and Interface and Toolbox and buglist7.00
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222677/
 
 ## Q222677: SMS: SMS 2.0 from Feb. Select Kit Prompts for Product ID Number
 
+{% raw %}
+
 	Article: Q222677
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -45,3 +47,5 @@ permalink: /kb/222/Q222677/
 	
 	=============================================================================
 	
+
+{% endraw %}

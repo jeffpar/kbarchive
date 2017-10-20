@@ -6,6 +6,8 @@ permalink: /kb/227/Q227010/
 
 ## Q227010: SMS: Site Comp Mgr Fails to Install/Uninstall a Component; Sitec
 
+{% raw %}
+
 	Article: Q227010
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -69,3 +71,5 @@ permalink: /kb/227/Q227010/
 	
 	=============================================================================
 	
+
+{% endraw %}

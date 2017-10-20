@@ -6,6 +6,8 @@ permalink: /kb/185/Q185347/
 
 ## Q185347: SMS: PCM Error: Unable to Connect to &#92;&#92;Server&#92;Share(s)
 
+{% raw %}
+
 	Article: Q185347
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -63,3 +65,5 @@ permalink: /kb/185/Q185347/
 	
 	=============================================================================
 	
+
+{% endraw %}

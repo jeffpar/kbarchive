@@ -6,6 +6,8 @@ permalink: /kb/180/Q180730/
 
 ## Q180730: XCON: Erroneous Deletion of SMTP &amp; SNADS Routes During Routing
 
+{% raw %}
+
 	Article: Q180730
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5,5
@@ -80,3 +82,5 @@ permalink: /kb/180/Q180730/
 	
 	=============================================================================
 	
+
+{% endraw %}

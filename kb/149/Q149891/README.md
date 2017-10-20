@@ -6,6 +6,8 @@ permalink: /kb/149/Q149891/
 
 ## Q149891: Programmatic System Shutdown Fails
 
+{% raw %}
+
 	Article: Q149891
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -63,3 +65,5 @@ permalink: /kb/149/Q149891/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/319/Q319660/
 
 ## Q319660: COleVariant Constructor Doesn't Correctly Initialize Its Members
 
+{% raw %}
+
 	Article: Q319660
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/319/Q319660/
 	
 	=============================================================================
 	
+
+{% endraw %}

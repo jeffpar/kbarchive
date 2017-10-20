@@ -6,6 +6,8 @@ permalink: /kb/189/Q189302/
 
 ## Q189302: BUG: RequestTimeout = 0 Does Not Work Within ITC
 
+{% raw %}
+
 	Article: Q189302
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -61,3 +63,5 @@ permalink: /kb/189/Q189302/
 	
 	=============================================================================
 	
+
+{% endraw %}

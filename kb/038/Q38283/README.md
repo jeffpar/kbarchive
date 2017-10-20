@@ -6,6 +6,8 @@ permalink: /kb/038/Q38283/
 
 ## Q38283: Example Incorrect on Page 373 of C Run-Time Library Reference
 
+{% raw %}
+
 	Article: Q38283
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -27,3 +29,5 @@ permalink: /kb/038/Q38283/
 	The backslash character \ in a C string is interpreted as part of an
 	escape code. To actually represent the backslash character for a
 	file's path, use two consecutive backslashes.
+
+{% endraw %}

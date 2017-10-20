@@ -6,6 +6,8 @@ permalink: /kb/262/Q262925/
 
 ## Q262925: Err Msg: &lt;Game&gt; Does Not Support the Connected Device Type...
 
+{% raw %}
+
 	Article: Q262925
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -93,3 +95,5 @@ permalink: /kb/262/Q262925/
 	
 	=============================================================================
 	
+
+{% endraw %}

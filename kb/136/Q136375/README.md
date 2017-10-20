@@ -6,6 +6,8 @@ permalink: /kb/136/Q136375/
 
 ## Q136375: NTFS directory corruption with more than 100,000 files
 
+{% raw %}
+
 	Article: Q136375
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -57,3 +59,5 @@ permalink: /kb/136/Q136375/
 	
 	=============================================================================
 	
+
+{% endraw %}

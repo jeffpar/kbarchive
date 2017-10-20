@@ -6,6 +6,8 @@ permalink: /kb/114/Q114630/
 
 ## Q114630: PRB: ODBC SQL Server Driver and Access Violation on SQL Server
 
+{% raw %}
+
 	Article: Q114630
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -86,3 +88,5 @@ permalink: /kb/114/Q114630/
 	
 	=============================================================================
 	
+
+{% endraw %}

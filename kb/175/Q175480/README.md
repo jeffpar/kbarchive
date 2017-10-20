@@ -6,6 +6,8 @@ permalink: /kb/175/Q175480/
 
 ## Q175480: XADM: ERR: Unable to Generate an E-mail Address for Type ccMail
 
+{% raw %}
+
 	Article: Q175480
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -88,3 +90,5 @@ permalink: /kb/175/Q175480/
 	
 	=============================================================================
 	
+
+{% endraw %}

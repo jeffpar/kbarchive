@@ -6,6 +6,8 @@ permalink: /kb/158/Q158649/
 
 ## Q158649: InetServer_Event.log File Not Displayed Properly in Notepad
 
+{% raw %}
+
 	Article: Q158649
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.0,1.0a
@@ -61,3 +63,5 @@ permalink: /kb/158/Q158649/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95457/
 
 ## Q95457: PPT: Aligning Bullets with Higher Level Text Margin
 
+{% raw %}
+
 	Article: Q95457
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,7.0
@@ -70,3 +72,5 @@ permalink: /kb/095/Q95457/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195613/
 
 ## Q195613: HOWTO: Create a Simple Context-Sensitive HTML Help File
 
+{% raw %}
+
 	Article: Q195613
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -104,3 +106,5 @@ permalink: /kb/195/Q195613/
 	
 	=============================================================================
 	
+
+{% endraw %}

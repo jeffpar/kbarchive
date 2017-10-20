@@ -6,6 +6,8 @@ permalink: /kb/239/Q239534/
 
 ## Q239534: SMS: Data Loader Cannot Process MIF Date Above Year 2030
 
+{% raw %}
+
 	Article: Q239534
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -105,3 +107,5 @@ permalink: /kb/239/Q239534/
 	
 	=============================================================================
 	
+
+{% endraw %}

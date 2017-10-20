@@ -6,6 +6,8 @@ permalink: /kb/092/Q92582/
 
 ## Q92582: HP DeskJet 550C Black Output Appears Green
 
+{% raw %}
+
 	Article: Q92582
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/092/Q92582/
 	
 	=============================================================================
 	
+
+{% endraw %}

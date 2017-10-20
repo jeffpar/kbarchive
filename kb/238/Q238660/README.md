@@ -6,6 +6,8 @@ permalink: /kb/238/Q238660/
 
 ## Q238660: Err Msg: No Documents Matched the Query
 
+{% raw %}
+
 	Article: Q238660
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -150,3 +152,5 @@ permalink: /kb/238/Q238660/
 	
 	=============================================================================
 	
+
+{% endraw %}

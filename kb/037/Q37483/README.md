@@ -6,6 +6,8 @@ permalink: /kb/037/Q37483/
 
 ## Q37483: CHAIN &quot;RETURN Without GOSUB&quot; When Using ON ERROR GOTO &amp; No /O
 
+{% raw %}
+
 	Article: Q37483
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -52,3 +54,5 @@ permalink: /kb/037/Q37483/
 	handle:
 	      A$ = INKEY$: IF A$ = "" THEN GOTO handler
 	      RETURN
+
+{% endraw %}

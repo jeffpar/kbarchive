@@ -6,6 +6,8 @@ permalink: /kb/264/Q264725/
 
 ## Q264725: SMS: Systems Management Server Online Support
 
+{% raw %}
+
 	Article: Q264725
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -59,3 +61,5 @@ permalink: /kb/264/Q264725/
 	
 	=============================================================================
 	
+
+{% endraw %}

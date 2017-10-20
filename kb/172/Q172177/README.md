@@ -6,6 +6,8 @@ permalink: /kb/172/Q172177/
 
 ## Q172177: PRB: Alpha Platform Not Available When Adding Configurations
 
+{% raw %}
+
 	Article: Q172177
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/172/Q172177/
 	
 	=============================================================================
 	
+
+{% endraw %}

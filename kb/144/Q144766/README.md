@@ -6,6 +6,8 @@ permalink: /kb/144/Q144766/
 
 ## Q144766: WD97: Table Not Aligned in Text Column
 
+{% raw %}
+
 	Article: Q144766
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -71,3 +73,5 @@ permalink: /kb/144/Q144766/
 	
 	=============================================================================
 	
+
+{% endraw %}

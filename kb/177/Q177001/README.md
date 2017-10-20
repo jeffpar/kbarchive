@@ -6,6 +6,8 @@ permalink: /kb/177/Q177001/
 
 ## Q177001: Cannot Reset Password When You Connect Through Third-Party ISP
 
+{% raw %}
+
 	Article: Q177001
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,5.0
@@ -65,3 +67,5 @@ permalink: /kb/177/Q177001/
 	
 	=============================================================================
 	
+
+{% endraw %}

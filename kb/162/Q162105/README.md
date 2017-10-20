@@ -6,6 +6,8 @@ permalink: /kb/162/Q162105/
 
 ## Q162105: Cannot Run System Tools or MS Plus! Setup with Web.Max Demo
 
+{% raw %}
+
 	Article: Q162105
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -84,3 +86,5 @@ permalink: /kb/162/Q162105/
 	
 	=============================================================================
 	
+
+{% endraw %}

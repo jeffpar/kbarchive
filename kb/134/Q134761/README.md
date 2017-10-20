@@ -6,6 +6,8 @@ permalink: /kb/134/Q134761/
 
 ## Q134761: Thomas Conrad Token Ring cards TC-4045 and TC 4145 Setup Problem
 
+{% raw %}
+
 	Article: Q134761
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -68,3 +70,5 @@ permalink: /kb/134/Q134761/
 	
 	=============================================================================
 	
+
+{% endraw %}

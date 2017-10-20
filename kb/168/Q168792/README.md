@@ -6,6 +6,8 @@ permalink: /kb/168/Q168792/
 
 ## Q168792: FIX: Statusbar Time Panel May Not Update Properly
 
+{% raw %}
+
 	Article: Q168792
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -102,3 +104,5 @@ permalink: /kb/168/Q168792/
 	
 	=============================================================================
 	
+
+{% endraw %}

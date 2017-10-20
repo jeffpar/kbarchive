@@ -6,6 +6,8 @@ permalink: /kb/114/Q114679/
 
 ## Q114679: ADT2: Three Methods to Test Visual Basic Compatibility Layer
 
+{% raw %}
+
 	Article: Q114679
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -119,3 +121,5 @@ permalink: /kb/114/Q114679/
 	
 	=============================================================================
 	
+
+{% endraw %}

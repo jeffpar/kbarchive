@@ -6,6 +6,8 @@ permalink: /kb/315/Q315586/
 
 ## Q315586: HOW TO: Access Registry on Remote Computer Using VB6 &amp; WIN API
 
+{% raw %}
+
 	Article: Q315586
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -217,3 +219,5 @@ permalink: /kb/315/Q315586/
 	
 	=============================================================================
 	
+
+{% endraw %}

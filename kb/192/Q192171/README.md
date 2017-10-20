@@ -6,6 +6,8 @@ permalink: /kb/192/Q192171/
 
 ## Q192171: BUG: OLEDragDrop Fails on Contained Windowless Controls
 
+{% raw %}
+
 	Article: Q192171
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -109,3 +111,5 @@ permalink: /kb/192/Q192171/
 	
 	=============================================================================
 	
+
+{% endraw %}

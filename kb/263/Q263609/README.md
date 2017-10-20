@@ -6,6 +6,8 @@ permalink: /kb/263/Q263609/
 
 ## Q263609: BUG: Bad Code for Unsigned and Signed Comparisons with /Og
 
+{% raw %}
+
 	Article: Q263609
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -74,3 +76,5 @@ permalink: /kb/263/Q263609/
 	
 	=============================================================================
 	
+
+{% endraw %}

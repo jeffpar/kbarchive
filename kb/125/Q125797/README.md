@@ -6,6 +6,8 @@ permalink: /kb/125/Q125797/
 
 ## Q125797: Dell Computer Hangs with ATI Mach 64 ISA Display Adapter
 
+{% raw %}
+
 	Article: Q125797
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/125/Q125797/
 	
 	=============================================================================
 	
+
+{% endraw %}

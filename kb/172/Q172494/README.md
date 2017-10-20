@@ -6,6 +6,8 @@ permalink: /kb/172/Q172494/
 
 ## Q172494: Err Msg: Connection Manager Needs More Files to Install.
 
+{% raw %}
+
 	Article: Q172494
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5 (OEM Release)
@@ -61,3 +63,5 @@ permalink: /kb/172/Q172494/
 	
 	=============================================================================
 	
+
+{% endraw %}

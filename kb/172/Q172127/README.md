@@ -6,6 +6,8 @@ permalink: /kb/172/Q172127/
 
 ## Q172127: File Access Error Using Mcafee Netshield and Word 6.0 or Later
 
+{% raw %}
+
 	Article: Q172127
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -70,3 +72,5 @@ permalink: /kb/172/Q172127/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/266/Q266258/
 
 ## Q266258: Computer Stops Responding During First Restart After You Apply S
 
+{% raw %}
+
 	Article: Q266258
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/266/Q266258/
 	
 	=============================================================================
 	
+
+{% endraw %}

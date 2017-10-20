@@ -6,6 +6,8 @@ permalink: /kb/189/Q189625/
 
 ## Q189625: PRB: Error 168 When Installing or Running Visual Basic
 
+{% raw %}
+
 	Article: Q189625
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -277,3 +279,5 @@ permalink: /kb/189/Q189625/
 	
 	=============================================================================
 	
+
+{% endraw %}

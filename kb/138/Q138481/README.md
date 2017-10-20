@@ -6,6 +6,8 @@ permalink: /kb/138/Q138481/
 
 ## Q138481: Win95 LUA/RUI Application Hangs with Named Pipes
 
+{% raw %}
+
 	Article: Q138481
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -74,3 +76,5 @@ permalink: /kb/138/Q138481/
 	
 	=============================================================================
 	
+
+{% endraw %}

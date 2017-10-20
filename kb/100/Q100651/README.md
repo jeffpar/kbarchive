@@ -6,6 +6,8 @@ permalink: /kb/100/Q100651/
 
 ## Q100651: Using TCP/IP Extensions to Integrate Subnet Domains
 
+{% raw %}
+
 	Article: Q100651
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/100/Q100651/
 	
 	=============================================================================
 	
+
+{% endraw %}

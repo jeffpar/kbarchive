@@ -6,6 +6,8 @@ permalink: /kb/130/Q130404/
 
 ## Q130404: BUG: CREATE CURSOR Does Not Accept UNIQUE as a Field Name
 
+{% raw %}
+
 	Article: Q130404
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -72,3 +74,5 @@ permalink: /kb/130/Q130404/
 	
 	=============================================================================
 	
+
+{% endraw %}

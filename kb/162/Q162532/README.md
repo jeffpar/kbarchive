@@ -6,6 +6,8 @@ permalink: /kb/162/Q162532/
 
 ## Q162532: WD97: Numbering Continues in Pasted/Linked Table
 
+{% raw %}
+
 	Article: Q162532
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/162/Q162532/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/314/Q314284/
 
 ## Q314284: Windows NT May Drop Fragmented IP Packets During RAS
 
+{% raw %}
+
 	Article: Q314284
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/314/Q314284/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249716/
 
 ## Q249716: HOWTO: Use NetRemoteTOD to Obtain Date/Time Info from a Server
 
+{% raw %}
+
 	Article: Q249716
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -168,3 +170,5 @@ permalink: /kb/249/Q249716/
 	
 	=============================================================================
 	
+
+{% endraw %}

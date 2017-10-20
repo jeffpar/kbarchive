@@ -6,6 +6,8 @@ permalink: /kb/074/Q74453/
 
 ## Q74453: Load NEC CD-ROM Driver 2.1 and Earlier Before HIMEM.SYS
 
+{% raw %}
+
 	Article: Q74453
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.22,6.x; WINDOWS:3.0,3.0a,3.1,3.11
@@ -41,3 +43,5 @@ permalink: /kb/074/Q74453/
 	
 	=============================================================================
 	
+
+{% endraw %}

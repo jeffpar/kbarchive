@@ -6,6 +6,8 @@ permalink: /kb/173/Q173472/
 
 ## Q173472: Expedia Trip Planner 98: Contents of the Readme.wri File
 
+{% raw %}
+
 	Article: Q173472
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -872,3 +874,5 @@ permalink: /kb/173/Q173472/
 	
 	=============================================================================
 	
+
+{% endraw %}

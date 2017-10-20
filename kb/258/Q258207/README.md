@@ -6,6 +6,8 @@ permalink: /kb/258/Q258207/
 
 ## Q258207: BUG: Err Msg in Locals and Watch Window in Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q258207
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -144,3 +146,5 @@ permalink: /kb/258/Q258207/
 	
 	=============================================================================
 	
+
+{% endraw %}

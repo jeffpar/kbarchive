@@ -6,6 +6,8 @@ permalink: /kb/238/Q238294/
 
 ## Q238294: Server Comment Set with SNMP Is Not Retained After Restart
 
+{% raw %}
+
 	Article: Q238294
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -96,3 +98,5 @@ permalink: /kb/238/Q238294/
 	
 	=============================================================================
 	
+
+{% endraw %}

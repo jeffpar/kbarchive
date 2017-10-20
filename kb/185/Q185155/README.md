@@ -6,6 +6,8 @@ permalink: /kb/185/Q185155/
 
 ## Q185155: XCON: Extracting Connector Information From The Directory
 
+{% raw %}
+
 	Article: Q185155
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -96,3 +98,5 @@ permalink: /kb/185/Q185155/
 	
 	=============================================================================
 	
+
+{% endraw %}

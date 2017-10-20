@@ -6,6 +6,8 @@ permalink: /kb/065/Q65312/
 
 ## Q65312: Label/Function Search Command Fails Under Codeview 3.00/3.10
 
+{% raw %}
+
 	Article: Q65312
 	Product(s): See article
 	Version(s): 3.00 3.10 | 3.00 3.10
@@ -29,3 +31,5 @@ permalink: /kb/065/Q65312/
 	Microsoft has confirmed this to be a problem with CodeView Versions
 	3.00 and 3.10. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

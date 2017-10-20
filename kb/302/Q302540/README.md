@@ -6,6 +6,8 @@ permalink: /kb/302/Q302540/
 
 ## Q302540: Initial Broadband Setup
 
+{% raw %}
+
 	Article: Q302540
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -55,3 +57,5 @@ permalink: /kb/302/Q302540/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223139/
 
 ## Q223139: HOWTO: Add Support for Hosting VBScript to an ATL Application
 
+{% raw %}
+
 	Article: Q223139
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,5.0,6.0
@@ -319,3 +321,5 @@ permalink: /kb/223/Q223139/
 	
 	=============================================================================
 	
+
+{% endraw %}

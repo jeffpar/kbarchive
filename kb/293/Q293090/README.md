@@ -6,6 +6,8 @@ permalink: /kb/293/Q293090/
 
 ## Q293090: MS Reader: Install Shield Error During Installation
 
+{% raw %}
+
 	Article: Q293090
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -163,3 +165,5 @@ permalink: /kb/293/Q293090/
 	
 	=============================================================================
 	
+
+{% endraw %}

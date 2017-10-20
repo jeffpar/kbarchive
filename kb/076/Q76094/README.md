@@ -6,6 +6,8 @@ permalink: /kb/076/Q76094/
 
 ## Q76094: CONN: Methods to Toggle the Quit Dialog Box in MSGATE.EXE
 
+{% raw %}
+
 	Article: Q76094
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0
@@ -46,3 +48,5 @@ permalink: /kb/076/Q76094/
 	
 	=============================================================================
 	
+
+{% endraw %}

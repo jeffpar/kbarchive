@@ -6,6 +6,8 @@ permalink: /kb/131/Q131808/
 
 ## Q131808: No Messages Appear in Active Chat Session
 
+{% raw %}
+
 	Article: Q131808
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.05 1.2 1.3
@@ -56,3 +58,5 @@ permalink: /kb/131/Q131808/
 	
 	=============================================================================
 	
+
+{% endraw %}

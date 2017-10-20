@@ -6,6 +6,8 @@ permalink: /kb/110/Q110493/
 
 ## Q110493: Schubert: README.TXT Content
 
+{% raw %}
+
 	Article: Q110493
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -254,3 +256,5 @@ permalink: /kb/110/Q110493/
 	
 	=============================================================================
 	
+
+{% endraw %}

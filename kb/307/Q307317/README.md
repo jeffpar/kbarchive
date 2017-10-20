@@ -6,6 +6,8 @@ permalink: /kb/307/Q307317/
 
 ## Q307317: System ACLs Cannot Be Read on Clients in an MSMQ MQIS Domain
 
+{% raw %}
+
 	Article: Q307317
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4,4.0 SP5,4.0 SP6a
@@ -81,3 +83,5 @@ permalink: /kb/307/Q307317/
 	
 	=============================================================================
 	
+
+{% endraw %}

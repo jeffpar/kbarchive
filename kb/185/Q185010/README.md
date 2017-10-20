@@ -6,6 +6,8 @@ permalink: /kb/185/Q185010/
 
 ## Q185010: XADM: How to Rehome Public Folders
 
+{% raw %}
+
 	Article: Q185010
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -130,3 +132,5 @@ permalink: /kb/185/Q185010/
 	
 	=============================================================================
 	
+
+{% endraw %}

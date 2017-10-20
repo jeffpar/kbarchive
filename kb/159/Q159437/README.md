@@ -6,6 +6,8 @@ permalink: /kb/159/Q159437/
 
 ## Q159437: FP: Drop-Down Populated by IDC Query Shows Code Not Data
 
+{% raw %}
+
 	Article: Q159437
 	Product(s): Word Front Page
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/159/Q159437/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198294/
 
 ## Q198294: WD97: Tabs in Tables Lost When Saving As Text with Layout
 
+{% raw %}
+
 	Article: Q198294
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/198/Q198294/
 	
 	=============================================================================
 	
+
+{% endraw %}

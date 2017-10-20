@@ -6,6 +6,8 @@ permalink: /kb/256/Q256173/
 
 ## Q256173: Possible Hang When Multiple Users Access Data on Same Dfs Share
 
+{% raw %}
+
 	Article: Q256173
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -49,3 +51,5 @@ permalink: /kb/256/Q256173/
 	
 	=============================================================================
 	
+
+{% endraw %}

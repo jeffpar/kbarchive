@@ -6,6 +6,8 @@ permalink: /kb/099/Q99099/
 
 ## Q99099: Procedure for Upgrading LMSFM on a Headless 3Server
 
+{% raw %}
+
 	Article: Q99099
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/099/Q99099/
 	
 	=============================================================================
 	
+
+{% endraw %}

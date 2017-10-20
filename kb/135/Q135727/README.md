@@ -6,6 +6,8 @@ permalink: /kb/135/Q135727/
 
 ## Q135727: BUG: VCMAC: Remote Debugger Hangs at Breakpoint
 
+{% raw %}
+
 	Article: Q135727
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -63,3 +65,5 @@ permalink: /kb/135/Q135727/
 	
 	=============================================================================
 	
+
+{% endraw %}

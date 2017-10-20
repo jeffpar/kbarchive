@@ -6,6 +6,8 @@ permalink: /kb/189/Q189494/
 
 ## Q189494: XCON: MTA 9277 RPC Cancel Call for Thread
 
+{% raw %}
+
 	Article: Q189494
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0, 5.0, 5.5
@@ -69,3 +71,5 @@ permalink: /kb/189/Q189494/
 	
 	=============================================================================
 	
+
+{% endraw %}

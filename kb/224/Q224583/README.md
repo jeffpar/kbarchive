@@ -6,6 +6,8 @@ permalink: /kb/224/Q224583/
 
 ## Q224583: Unable to Submit Expense Web Form from Client Computer
 
+{% raw %}
+
 	Article: Q224583
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -58,3 +60,5 @@ permalink: /kb/224/Q224583/
 	
 	=============================================================================
 	
+
+{% endraw %}

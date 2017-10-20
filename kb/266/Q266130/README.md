@@ -6,6 +6,8 @@ permalink: /kb/266/Q266130/
 
 ## Q266130: SMS: Component Versions in Microsoft Systems Management Server 2
 
+{% raw %}
+
 	Article: Q266130
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -175,3 +177,5 @@ permalink: /kb/266/Q266130/
 	
 	=============================================================================
 	
+
+{% endraw %}

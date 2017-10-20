@@ -6,6 +6,8 @@ permalink: /kb/140/Q140650/
 
 ## Q140650: PPT: PowerPoint Overrides Default Graph Color Scheme
 
+{% raw %}
+
 	Article: Q140650
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:3.0,3.0b,4.0; WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -68,3 +70,5 @@ permalink: /kb/140/Q140650/
 	
 	=============================================================================
 	
+
+{% endraw %}

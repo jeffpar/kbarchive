@@ -6,6 +6,8 @@ permalink: /kb/150/Q150188/
 
 ## Q150188: FIX: Masked Edit Control Replaces Input if PromptChar Changed
 
+{% raw %}
+
 	Article: Q150188
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/150/Q150188/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188778/
 
 ## Q188778: XADM: Replying To or Forwarding Resent Message Causes NDR
 
+{% raw %}
+
 	Article: Q188778
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -67,3 +69,5 @@ permalink: /kb/188/Q188778/
 	
 	=============================================================================
 	
+
+{% endraw %}

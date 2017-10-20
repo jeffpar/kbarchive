@@ -6,6 +6,8 @@ permalink: /kb/153/Q153959/
 
 ## Q153959: XCLN: Attendees Can't View Other Attendees of Meetings
 
+{% raw %}
+
 	Article: Q153959
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -42,3 +44,5 @@ permalink: /kb/153/Q153959/
 	
 	=============================================================================
 	
+
+{% endraw %}

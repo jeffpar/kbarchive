@@ -6,6 +6,8 @@ permalink: /kb/136/Q136621/
 
 ## Q136621: Description of Full, Incremental, and Differential Backups
 
+{% raw %}
+
 	Article: Q136621
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -192,3 +194,5 @@ permalink: /kb/136/Q136621/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/039/Q39260/
 
 ## Q39260: &quot;Symbol Defined More Than Once&quot;; Linking BASIC and FORTRAN
 
+{% raw %}
+
 	Article: Q39260
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -102,3 +104,5 @@ permalink: /kb/039/Q39260/
 	        q = sqrt(r * r + s * s + t * t)
 	        return
 	        end
+
+{% endraw %}

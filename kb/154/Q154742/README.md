@@ -6,6 +6,8 @@ permalink: /kb/154/Q154742/
 
 ## Q154742: Codewiz.exe the Xbase Code Import Wizard for VFP
 
+{% raw %}
+
 	Article: Q154742
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0
@@ -70,3 +72,5 @@ permalink: /kb/154/Q154742/
 	
 	=============================================================================
 	
+
+{% endraw %}

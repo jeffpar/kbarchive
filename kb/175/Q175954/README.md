@@ -6,6 +6,8 @@ permalink: /kb/175/Q175954/
 
 ## Q175954: XADM: Restoring a Deleted Proxy Address Type
 
+{% raw %}
+
 	Article: Q175954
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -49,3 +51,5 @@ permalink: /kb/175/Q175954/
 	
 	=============================================================================
 	
+
+{% endraw %}

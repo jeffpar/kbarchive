@@ -6,6 +6,8 @@ permalink: /kb/191/Q191312/
 
 ## Q191312: Conflicts Visible in Device Manager But Devices Work Correctly
 
+{% raw %}
+
 	Article: Q191312
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -48,3 +50,5 @@ permalink: /kb/191/Q191312/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174711/
 
 ## Q174711: XCLN: Item Retention Only Available in 32-bit Outlook 8.03
 
+{% raw %}
+
 	Article: Q174711
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0; WINDOWS:5.5; :8.03
@@ -56,3 +58,5 @@ permalink: /kb/174/Q174711/
 	
 	=============================================================================
 	
+
+{% endraw %}

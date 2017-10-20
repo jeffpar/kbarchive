@@ -6,6 +6,8 @@ permalink: /kb/168/Q168654/
 
 ## Q168654: How to Obtain SNA Version 3.0 U.S. Service Pack 2
 
+{% raw %}
+
 	Article: Q168654
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP2
@@ -160,3 +162,5 @@ permalink: /kb/168/Q168654/
 	
 	=============================================================================
 	
+
+{% endraw %}

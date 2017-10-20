@@ -6,6 +6,8 @@ permalink: /kb/123/Q123342/
 
 ## Q123342: PPT: 3-D Pie Chart Is Displayed and Printed with Poor Quality
 
+{% raw %}
+
 	Article: Q123342
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,5.0,7.0; Win95:7.0
@@ -106,3 +108,5 @@ permalink: /kb/123/Q123342/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/071/Q71211/
 
 ## Q71211: Windowed MS-DOS Apps Revert to Full Screen in Windows
 
+{% raw %}
+
 	Article: Q71211
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -100,3 +102,5 @@ permalink: /kb/071/Q71211/
 	
 	=============================================================================
 	
+
+{% endraw %}

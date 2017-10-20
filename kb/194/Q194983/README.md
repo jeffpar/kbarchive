@@ -6,6 +6,8 @@ permalink: /kb/194/Q194983/
 
 ## Q194983: PRB: Round Function Different in VBA 6 and Excel Spreadsheet
 
+{% raw %}
+
 	Article: Q194983
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0,97
@@ -91,3 +93,5 @@ permalink: /kb/194/Q194983/
 	
 	=============================================================================
 	
+
+{% endraw %}

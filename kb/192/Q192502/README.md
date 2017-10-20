@@ -6,6 +6,8 @@ permalink: /kb/192/Q192502/
 
 ## Q192502: CD Key Incorrect for Visual Basic Deluxe Learning Edition
 
+{% raw %}
+
 	Article: Q192502
 	Product(s): Microsoft Press
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/192/Q192502/
 	
 	=============================================================================
 	
+
+{% endraw %}

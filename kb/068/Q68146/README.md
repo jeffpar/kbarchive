@@ -6,6 +6,8 @@ permalink: /kb/068/Q68146/
 
 ## Q68146: QuickC Displays &quot;Incompatible Operands&quot; When Watching Arrays
 
+{% raw %}
+
 	Article: Q68146
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -48,3 +50,5 @@ permalink: /kb/068/Q68146/
 	
 	Microsoft has confirmed this to be a problem in QuickC versions 2.00
 	and 2.01. The problem does not occur in versions 2.50 and 2.51.
+
+{% endraw %}

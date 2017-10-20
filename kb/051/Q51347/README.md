@@ -6,6 +6,8 @@ permalink: /kb/051/Q51347/
 
 ## Q51347: Mac SDK: Software Development Kits Descriptions
 
+{% raw %}
+
 	Article: Q51347
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -77,3 +79,5 @@ permalink: /kb/051/Q51347/
 	
 	=============================================================================
 	
+
+{% endraw %}

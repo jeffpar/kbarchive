@@ -6,6 +6,8 @@ permalink: /kb/129/Q129865/
 
 ## Q129865: Limitations of the AINSTANCE Function
 
+{% raw %}
+
 	Article: Q129865
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -155,3 +157,5 @@ permalink: /kb/129/Q129865/
 	
 	=============================================================================
 	
+
+{% endraw %}

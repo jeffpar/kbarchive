@@ -6,6 +6,8 @@ permalink: /kb/298/Q298000/
 
 ## Q298000: XADM: Reports Don't Return Content, Have Content Type of MDBEF
 
+{% raw %}
+
 	Article: Q298000
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -141,3 +143,5 @@ permalink: /kb/298/Q298000/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/295/Q295969/
 
 ## Q295969: XADM: The Information Store Service Is Caught in Deadlock
 
+{% raw %}
+
 	Article: Q295969
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP4
@@ -113,3 +115,5 @@ permalink: /kb/295/Q295969/
 	
 	=============================================================================
 	
+
+{% endraw %}

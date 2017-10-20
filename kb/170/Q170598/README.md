@@ -6,6 +6,8 @@ permalink: /kb/170/Q170598/
 
 ## Q170598: Start Menu Items Missing on ZAK Appstation Client
 
+{% raw %}
+
 	Article: Q170598
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0
@@ -90,3 +92,5 @@ permalink: /kb/170/Q170598/
 	
 	=============================================================================
 	
+
+{% endraw %}

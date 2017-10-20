@@ -6,6 +6,8 @@ permalink: /kb/255/Q255766/
 
 ## Q255766: XADM: MSExchangeMTA Stops Unexpectedly with &quot;Access Violation&quot;
 
+{% raw %}
+
 	Article: Q255766
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -100,3 +102,5 @@ permalink: /kb/255/Q255766/
 	
 	=============================================================================
 	
+
+{% endraw %}

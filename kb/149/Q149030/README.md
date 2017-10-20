@@ -6,6 +6,8 @@ permalink: /kb/149/Q149030/
 
 ## Q149030: Event Error 132 When Processing RAW File
 
+{% raw %}
+
 	Article: Q149030
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -58,3 +60,5 @@ permalink: /kb/149/Q149030/
 	
 	=============================================================================
 	
+
+{% endraw %}

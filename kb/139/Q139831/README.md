@@ -6,6 +6,8 @@ permalink: /kb/139/Q139831/
 
 ## Q139831: Oceans: Scenes Pictures Appear with Oceans Screensaver
 
+{% raw %}
+
 	Article: Q139831
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -77,3 +79,5 @@ permalink: /kb/139/Q139831/
 	
 	=============================================================================
 	
+
+{% endraw %}

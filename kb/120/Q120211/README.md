@@ -6,6 +6,8 @@ permalink: /kb/120/Q120211/
 
 ## Q120211: Cannot Specify Save Directory for Flight Plans
 
+{% raw %}
+
 	Article: Q120211
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -42,3 +44,5 @@ permalink: /kb/120/Q120211/
 	
 	=============================================================================
 	
+
+{% endraw %}

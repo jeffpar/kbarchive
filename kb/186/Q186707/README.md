@@ -6,6 +6,8 @@ permalink: /kb/186/Q186707/
 
 ## Q186707: XWEB: Cannot Open a Contact or Calendar Public Folder in OWA
 
+{% raw %}
+
 	Article: Q186707
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5; winnt:5.5 SP2,5.5 SP3
@@ -46,3 +48,5 @@ permalink: /kb/186/Q186707/
 	
 	=============================================================================
 	
+
+{% endraw %}

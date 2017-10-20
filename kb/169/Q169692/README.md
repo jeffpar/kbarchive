@@ -6,6 +6,8 @@ permalink: /kb/169/Q169692/
 
 ## Q169692: XADM: Exchange PAB Allows Invalid X.400 Characters In DDA Fields
 
+{% raw %}
+
 	Article: Q169692
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/169/Q169692/
 	
 	=============================================================================
 	
+
+{% endraw %}

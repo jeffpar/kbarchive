@@ -6,6 +6,8 @@ permalink: /kb/121/Q121658/
 
 ## Q121658: SMS Remote Control Fails if Not Enough LANAs are Available
 
+{% raw %}
+
 	Article: Q121658
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -73,3 +75,5 @@ permalink: /kb/121/Q121658/
 	
 	=============================================================================
 	
+
+{% endraw %}

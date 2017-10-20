@@ -6,6 +6,8 @@ permalink: /kb/038/Q38390/
 
 ## Q38390: Mac DOS: Notifier Should Not Be Started from a MS-DOS Shell
 
+{% raw %}
+
 	Article: Q38390
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:1.37,2.0,3.0
@@ -44,3 +46,5 @@ permalink: /kb/038/Q38390/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/092/Q92785/
 
 ## Q92785: Err Msg: &quot;Incorrect DOS Version&quot; Caused by Mismatched Files
 
+{% raw %}
+
 	Article: Q92785
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -50,3 +52,5 @@ permalink: /kb/092/Q92785/
 	
 	=============================================================================
 	
+
+{% endraw %}

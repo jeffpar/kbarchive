@@ -6,6 +6,8 @@ permalink: /kb/162/Q162820/
 
 ## Q162820: PRB: SourceSafe/MS Access Does Not Allow Project Sharing
 
+{% raw %}
+
 	Article: Q162820
 	Product(s): Microsoft SourceSafe
 	Version(s): 97
@@ -88,3 +90,5 @@ permalink: /kb/162/Q162820/
 	
 	=============================================================================
 	
+
+{% endraw %}

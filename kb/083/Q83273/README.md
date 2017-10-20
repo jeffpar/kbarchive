@@ -6,6 +6,8 @@ permalink: /kb/083/Q83273/
 
 ## Q83273: Err Msg: &quot;Specified COMMAND Directory Bad&quot;
 
+{% raw %}
+
 	Article: Q83273
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -107,3 +109,5 @@ permalink: /kb/083/Q83273/
 	
 	=============================================================================
 	
+
+{% endraw %}

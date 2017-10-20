@@ -6,6 +6,8 @@ permalink: /kb/043/Q43211/
 
 ## Q43211: &quot;Make EXE&quot; within QB.EXE 4.00 Editor Can Hang OS/2 Real Mode
 
+{% raw %}
+
 	Article: Q43211
 	Product(s): See article
 	Version(s): 4.00
@@ -28,3 +30,5 @@ permalink: /kb/043/Q43211/
 	BC.EXE compiler which comes with QuickBASIC 4.00 was not developed or
 	tested for OS/2 compatibility. Only BC.EXE from the BASIC compiler
 	6.00 and 6.00b and BASIC PDS 7.00 was developed and tested for OS/2.
+
+{% endraw %}

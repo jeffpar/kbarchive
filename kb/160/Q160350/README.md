@@ -6,6 +6,8 @@ permalink: /kb/160/Q160350/
 
 ## Q160350: Index Server Returns HTTP 500 Error
 
+{% raw %}
+
 	Article: Q160350
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -83,3 +85,5 @@ permalink: /kb/160/Q160350/
 	
 	=============================================================================
 	
+
+{% endraw %}

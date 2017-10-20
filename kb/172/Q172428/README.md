@@ -6,6 +6,8 @@ permalink: /kb/172/Q172428/
 
 ## Q172428: SNA Server 3.0 Snadmod.dll Returns SEC_LOGON_FAILED_BADLY
 
+{% raw %}
+
 	Article: Q172428
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1; WINDOWS:3.0,3.0 SP1
@@ -64,3 +66,5 @@ permalink: /kb/172/Q172428/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/065/Q65480/
 
 ## Q65480: BASIC PDS 7.00 and 7.10 Cannot Use IOCTL and Far Strings
 
+{% raw %}
+
 	Article: Q65480
 	Product(s): See article
 	Version(s): m7.00 7.10
@@ -35,3 +37,5 @@ permalink: /kb/065/Q65480/
 	Note that the IOCTL$ function and IOCTL statement cannot be used under
 	MS OS/2. You can, however, make equivalent OS/2 API function calls to
 	interact with OS/2 character device drivers.
+
+{% endraw %}

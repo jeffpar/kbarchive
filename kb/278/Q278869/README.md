@@ -6,6 +6,8 @@ permalink: /kb/278/Q278869/
 
 ## Q278869: MSN Companion does not dial during set-up
 
+{% raw %}
+
 	Article: Q278869
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/278/Q278869/
 	
 	=============================================================================
 	
+
+{% endraw %}

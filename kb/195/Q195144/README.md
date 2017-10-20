@@ -6,6 +6,8 @@ permalink: /kb/195/Q195144/
 
 ## Q195144: Copying Files with Mix of LFN and SFN May Lead to Data Loss
 
+{% raw %}
+
 	Article: Q195144
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -231,3 +233,5 @@ permalink: /kb/195/Q195144/
 	
 	=============================================================================
 	
+
+{% endraw %}

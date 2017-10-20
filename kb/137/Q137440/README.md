@@ -6,6 +6,8 @@ permalink: /kb/137/Q137440/
 
 ## Q137440: PRB: Class Browser: Removing a Parent Class Causes Error
 
+{% raw %}
+
 	Article: Q137440
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/137/Q137440/
 	
 	=============================================================================
 	
+
+{% endraw %}

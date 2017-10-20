@@ -6,6 +6,8 @@ permalink: /kb/135/Q135548/
 
 ## Q135548: PIF Editor Reserve Shortcut Keys Settings May Be Ineffective
 
+{% raw %}
+
 	Article: Q135548
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/135/Q135548/
 	
 	=============================================================================
 	
+
+{% endraw %}

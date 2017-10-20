@@ -6,6 +6,8 @@ permalink: /kb/119/Q119373/
 
 ## Q119373: Using a Numeric Hostname with TCP/IP-32
 
+{% raw %}
+
 	Article: Q119373
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 1.00
@@ -55,3 +57,5 @@ permalink: /kb/119/Q119373/
 	
 	=============================================================================
 	
+
+{% endraw %}

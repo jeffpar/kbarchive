@@ -6,6 +6,8 @@ permalink: /kb/177/Q177665/
 
 ## Q177665: Path Too Long Error Message When Exceeding MAX_PATH
 
+{% raw %}
+
 	Article: Q177665
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -92,3 +94,5 @@ permalink: /kb/177/Q177665/
 	
 	=============================================================================
 	
+
+{% endraw %}

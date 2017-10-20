@@ -6,6 +6,8 @@ permalink: /kb/096/Q96386/
 
 ## Q96386: Cannot Lower Estimated Compression Ratio with DoubleSpace
 
+{% raw %}
+
 	Article: Q96386
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -120,3 +122,5 @@ permalink: /kb/096/Q96386/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196515/
 
 ## Q196515: WD97: Unusual or Unexpected Line Spacing Between Paragraphs
 
+{% raw %}
+
 	Article: Q196515
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -80,3 +82,5 @@ permalink: /kb/196/Q196515/
 	
 	=============================================================================
 	
+
+{% endraw %}

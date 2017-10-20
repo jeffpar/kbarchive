@@ -6,6 +6,8 @@ permalink: /kb/163/Q163124/
 
 ## Q163124: Kids Plus!: Paint It! Creates/Saves To My Documents Folder
 
+{% raw %}
+
 	Article: Q163124
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -46,3 +48,5 @@ permalink: /kb/163/Q163124/
 	
 	=============================================================================
 	
+
+{% endraw %}

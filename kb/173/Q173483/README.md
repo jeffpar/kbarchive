@@ -6,6 +6,8 @@ permalink: /kb/173/Q173483/
 
 ## Q173483: HOWTO: Create Custom AppWizards that Generate Non-MFC Projects
 
+{% raw %}
+
 	Article: Q173483
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -194,3 +196,5 @@ permalink: /kb/173/Q173483/
 	
 	=============================================================================
 	
+
+{% endraw %}

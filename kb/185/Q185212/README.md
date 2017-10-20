@@ -6,6 +6,8 @@ permalink: /kb/185/Q185212/
 
 ## Q185212: Cluster Server Does Not Support More than 900 Shares
 
+{% raw %}
+
 	Article: Q185212
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -93,3 +95,5 @@ permalink: /kb/185/Q185212/
 	
 	=============================================================================
 	
+
+{% endraw %}

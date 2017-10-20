@@ -6,6 +6,8 @@ permalink: /kb/064/Q64268/
 
 ## Q64268: Description of Options for Using NETWARE.INI
 
+{% raw %}
+
 	Article: Q64268
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -76,3 +78,5 @@ permalink: /kb/064/Q64268/
 	
 	=============================================================================
 	
+
+{% endraw %}

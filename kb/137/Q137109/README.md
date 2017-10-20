@@ -6,6 +6,8 @@ permalink: /kb/137/Q137109/
 
 ## Q137109: Algorithm Used to Accept Requests from SNA Devices
 
+{% raw %}
+
 	Article: Q137109
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -104,3 +106,5 @@ permalink: /kb/137/Q137109/
 	
 	=============================================================================
 	
+
+{% endraw %}

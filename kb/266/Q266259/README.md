@@ -6,6 +6,8 @@ permalink: /kb/266/Q266259/
 
 ## Q266259: XGEN: Messages Properties Do Not Save Correctly
 
+{% raw %}
+
 	Article: Q266259
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -75,3 +77,5 @@ permalink: /kb/266/Q266259/
 	
 	=============================================================================
 	
+
+{% endraw %}

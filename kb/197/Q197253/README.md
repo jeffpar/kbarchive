@@ -6,6 +6,8 @@ permalink: /kb/197/Q197253/
 
 ## Q197253: LPD Job May Cause TCPSVCS to Hang
 
+{% raw %}
+
 	Article: Q197253
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -96,3 +98,5 @@ permalink: /kb/197/Q197253/
 	
 	=============================================================================
 	
+
+{% endraw %}

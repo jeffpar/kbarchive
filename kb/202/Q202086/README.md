@@ -1,10 +1,12 @@
 ---
 layout: page
-title: "Q202086: SMS: Purchase Date in New Product Shows a &quot;&lt;7F&gt;&quot; instead of a &quot;2&quot;"
+title: "Q202086: SMS: Purchase Date in New Product Shows a &quot;&quot; instead of a &quot;2&quot;"
 permalink: /kb/202/Q202086/
 ---
 
-## Q202086: SMS: Purchase Date in New Product Shows a &quot;&lt;7F&gt;&quot; instead of a &quot;2&quot;
+## Q202086: SMS: Purchase Date in New Product Shows a &quot;&quot; instead of a &quot;2&quot;
+
+{% raw %}
 
 	Article: Q202086
 	Product(s): Microsoft Systems Management Server
@@ -61,3 +63,5 @@ permalink: /kb/202/Q202086/
 	
 	=============================================================================
 	
+
+{% endraw %}

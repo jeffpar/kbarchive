@@ -6,6 +6,8 @@ permalink: /kb/241/Q241879/
 
 ## Q241879: Encarta: &quot;Go To Article&quot; Command Links to Incorrect Article
 
+{% raw %}
+
 	Article: Q241879
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -52,3 +54,5 @@ permalink: /kb/241/Q241879/
 	
 	=============================================================================
 	
+
+{% endraw %}

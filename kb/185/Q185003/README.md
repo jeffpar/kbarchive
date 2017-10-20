@@ -6,6 +6,8 @@ permalink: /kb/185/Q185003/
 
 ## Q185003: XADM: Directory Replication Connector Schedule Changes With Dayl
 
+{% raw %}
+
 	Article: Q185003
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -43,3 +45,5 @@ permalink: /kb/185/Q185003/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/280/Q280700/
 
 ## Q280700: RPC Server Process Access Violation Due to Use of NULL Pointer
 
+{% raw %}
+
 	Article: Q280700
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -102,3 +104,5 @@ permalink: /kb/280/Q280700/
 	
 	=============================================================================
 	
+
+{% endraw %}

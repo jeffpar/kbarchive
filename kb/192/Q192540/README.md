@@ -6,6 +6,8 @@ permalink: /kb/192/Q192540/
 
 ## Q192540: XFOR: How to Clean MTS-IN/OUT Using Gwclient and Profinst
 
+{% raw %}
+
 	Article: Q192540
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -77,3 +79,5 @@ permalink: /kb/192/Q192540/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119795/
 
 ## Q119795: PC Rmt WRmt: Address List Doesn't Update with Custom Views
 
+{% raw %}
+
 	Article: Q119795
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2; WINDOWS:3.2
@@ -62,3 +64,5 @@ permalink: /kb/119/Q119795/
 	
 	=============================================================================
 	
+
+{% endraw %}

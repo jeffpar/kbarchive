@@ -6,6 +6,8 @@ permalink: /kb/135/Q135817/
 
 ## Q135817: BUG: Mouse Down Triggered on a Minimized Window
 
+{% raw %}
+
 	Article: Q135817
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0a,6.0
@@ -84,3 +86,5 @@ permalink: /kb/135/Q135817/
 	
 	=============================================================================
 	
+
+{% endraw %}

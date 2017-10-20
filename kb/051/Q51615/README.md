@@ -6,6 +6,8 @@ permalink: /kb/051/Q51615/
 
 ## Q51615: C4056: Overflow in Constant Arithmetic
 
+{% raw %}
+
 	Article: Q51615
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -37,3 +39,5 @@ permalink: /kb/051/Q51615/
 	   {
 	       dummy = 65535u - (dummy - 1);
 	   }
+
+{% endraw %}

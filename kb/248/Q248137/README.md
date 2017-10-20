@@ -6,6 +6,8 @@ permalink: /kb/248/Q248137/
 
 ## Q248137: BUG: COleCurrency::operator/() Not Backward Compatible
 
+{% raw %}
+
 	Article: Q248137
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -330,3 +332,5 @@ permalink: /kb/248/Q248137/
 	
 	=============================================================================
 	
+
+{% endraw %}

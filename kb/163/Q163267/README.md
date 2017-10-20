@@ -6,6 +6,8 @@ permalink: /kb/163/Q163267/
 
 ## Q163267: Delay While Establishing SPX II Connection
 
+{% raw %}
+
 	Article: Q163267
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -99,3 +101,5 @@ permalink: /kb/163/Q163267/
 	
 	=============================================================================
 	
+
+{% endraw %}

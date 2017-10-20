@@ -6,6 +6,8 @@ permalink: /kb/146/Q146247/
 
 ## Q146247: WD97: Background Proof Doesn't Function in Unprotected Section
 
+{% raw %}
+
 	Article: Q146247
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -110,3 +112,5 @@ permalink: /kb/146/Q146247/
 	
 	=============================================================================
 	
+
+{% endraw %}

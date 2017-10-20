@@ -6,6 +6,8 @@ permalink: /kb/067/Q67830/
 
 ## Q67830: Using a Mach III Joystick with Flight Simulator
 
+{% raw %}
+
 	Article: Q67830
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/067/Q67830/
 	
 	=============================================================================
 	
+
+{% endraw %}

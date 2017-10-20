@@ -6,6 +6,8 @@ permalink: /kb/231/Q231502/
 
 ## Q231502: MP2000: Cannot Start Under Windows NT 4.0 on Dual Boot Computer
 
+{% raw %}
+
 	Article: Q231502
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/231/Q231502/
 	
 	=============================================================================
 	
+
+{% endraw %}

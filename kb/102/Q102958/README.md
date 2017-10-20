@@ -6,6 +6,8 @@ permalink: /kb/102/Q102958/
 
 ## Q102958: PRB: Passing Modified Environments to Child Processes
 
+{% raw %}
+
 	Article: Q102958
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -112,3 +114,5 @@ permalink: /kb/102/Q102958/
 	
 	=============================================================================
 	
+
+{% endraw %}

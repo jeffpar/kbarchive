@@ -6,6 +6,8 @@ permalink: /kb/100/Q100018/
 
 ## Q100018: PRB: RQBE Drops Field Name in Output After Saving
 
+{% raw %}
+
 	Article: Q100018
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5; WINDOWS:2.5,3.0
@@ -87,3 +89,5 @@ permalink: /kb/100/Q100018/
 	
 	=============================================================================
 	
+
+{% endraw %}

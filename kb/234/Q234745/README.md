@@ -6,6 +6,8 @@ permalink: /kb/234/Q234745/
 
 ## Q234745: XFOR: Corrupted Message Stops Inbound Traffic, Monopolizes CPU
 
+{% raw %}
+
 	Article: Q234745
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -82,3 +84,5 @@ permalink: /kb/234/Q234745/
 	
 	=============================================================================
 	
+
+{% endraw %}

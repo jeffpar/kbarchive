@@ -6,6 +6,8 @@ permalink: /kb/134/Q134970/
 
 ## Q134970: Login Scripts are Not Modified on NetWare Servers
 
+{% raw %}
+
 	Article: Q134970
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -44,3 +46,5 @@ permalink: /kb/134/Q134970/
 	
 	=============================================================================
 	
+
+{% endraw %}

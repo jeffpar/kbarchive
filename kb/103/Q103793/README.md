@@ -6,6 +6,8 @@ permalink: /kb/103/Q103793/
 
 ## Q103793: PC Forms: Err Msg: The Application Could Not Be Executed...
 
+{% raw %}
+
 	Article: Q103793
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -60,3 +62,5 @@ permalink: /kb/103/Q103793/
 	
 	=============================================================================
 	
+
+{% endraw %}

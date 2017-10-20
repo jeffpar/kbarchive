@@ -6,6 +6,8 @@ permalink: /kb/131/Q131885/
 
 ## Q131885: AMI BIOS Upgrade Needed for Adaptec 2940 PCI SCSI Controller
 
+{% raw %}
+
 	Article: Q131885
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/131/Q131885/
 	
 	=============================================================================
 	
+
+{% endraw %}

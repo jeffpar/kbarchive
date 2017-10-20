@@ -6,6 +6,8 @@ permalink: /kb/200/Q200897/
 
 ## Q200897: SMS: SMS 2.0 and Y2K Product Compliance Utility
 
+{% raw %}
+
 	Article: Q200897
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -72,3 +74,5 @@ permalink: /kb/200/Q200897/
 	
 	=============================================================================
 	
+
+{% endraw %}

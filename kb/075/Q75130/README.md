@@ -6,6 +6,8 @@ permalink: /kb/075/Q75130/
 
 ## Q75130: MS-DOS Shell Colors May Blink on CGA Display
 
+{% raw %}
+
 	Article: Q75130
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -61,3 +63,5 @@ permalink: /kb/075/Q75130/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130687/
 
 ## Q130687: Primary Group of Macintosh Folder Differs from User's
 
+{% raw %}
+
 	Article: Q130687
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -53,3 +55,5 @@ permalink: /kb/130/Q130687/
 	
 	=============================================================================
 	
+
+{% endraw %}

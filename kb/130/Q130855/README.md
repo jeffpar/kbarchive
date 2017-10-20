@@ -6,6 +6,8 @@ permalink: /kb/130/Q130855/
 
 ## Q130855: SNA Server Admin Backup Option Requires a File Extension
 
+{% raw %}
+
 	Article: Q130855
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -59,3 +61,5 @@ permalink: /kb/130/Q130855/
 	
 	=============================================================================
 	
+
+{% endraw %}

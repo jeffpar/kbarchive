@@ -6,6 +6,8 @@ permalink: /kb/198/Q198130/
 
 ## Q198130: PRB: FLL Causes Error After Recompilation
 
+{% raw %}
+
 	Article: Q198130
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0; WINNT:6.0
@@ -105,3 +107,5 @@ permalink: /kb/198/Q198130/
 	
 	=============================================================================
 	
+
+{% endraw %}

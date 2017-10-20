@@ -6,6 +6,8 @@ permalink: /kb/095/Q95419/
 
 ## Q95419: VFW: Information About TRUEVISION Bravado 16 Capture Board
 
+{% raw %}
+
 	Article: Q95419
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -144,3 +146,5 @@ permalink: /kb/095/Q95419/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234360/
 
 ## Q234360: Software Inventory Is Transferred from a Secondary Site
 
+{% raw %}
+
 	Article: Q234360
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -100,3 +102,5 @@ permalink: /kb/234/Q234360/
 	
 	=============================================================================
 	
+
+{% endraw %}

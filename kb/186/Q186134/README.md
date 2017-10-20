@@ -6,6 +6,8 @@ permalink: /kb/186/Q186134/
 
 ## Q186134: XCLN: Authentication Credentials Error 554 in Outlook/OE
 
+{% raw %}
+
 	Article: Q186134
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5,5.01,5.5
@@ -121,3 +123,5 @@ permalink: /kb/186/Q186134/
 	
 	=============================================================================
 	
+
+{% endraw %}

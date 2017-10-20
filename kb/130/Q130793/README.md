@@ -6,6 +6,8 @@ permalink: /kb/130/Q130793/
 
 ## Q130793: Remote Control Causes The SMS Administrator to GP Fault
 
+{% raw %}
+
 	Article: Q130793
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:95; winnt:1.1
@@ -49,3 +51,5 @@ permalink: /kb/130/Q130793/
 	
 	=============================================================================
 	
+
+{% endraw %}

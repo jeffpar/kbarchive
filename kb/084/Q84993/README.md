@@ -6,6 +6,8 @@ permalink: /kb/084/Q84993/
 
 ## Q84993: How to Enable the MIDI Sequencer Warning
 
+{% raw %}
+
 	Article: Q84993
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/084/Q84993/
 	
 	=============================================================================
 	
+
+{% endraw %}

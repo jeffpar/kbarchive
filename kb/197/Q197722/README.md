@@ -6,6 +6,8 @@ permalink: /kb/197/Q197722/
 
 ## Q197722: XCLN: Outlook Additional Appointments Icon Doesn't Work
 
+{% raw %}
+
 	Article: Q197722
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
@@ -81,3 +83,5 @@ permalink: /kb/197/Q197722/
 	
 	=============================================================================
 	
+
+{% endraw %}

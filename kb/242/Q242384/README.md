@@ -6,6 +6,8 @@ permalink: /kb/242/Q242384/
 
 ## Q242384: XFOR: DBCS Message From Lotus Notes Is Not Displayed Properly
 
+{% raw %}
+
 	Article: Q242384
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -66,3 +68,5 @@ permalink: /kb/242/Q242384/
 	
 	=============================================================================
 	
+
+{% endraw %}

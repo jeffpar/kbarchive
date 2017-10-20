@@ -6,6 +6,8 @@ permalink: /kb/099/Q99672/
 
 ## Q99672: INFO: Complete Enumeration of System Fonts
 
+{% raw %}
+
 	Article: Q99672
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -98,3 +100,5 @@ permalink: /kb/099/Q99672/
 	
 	=============================================================================
 	
+
+{% endraw %}

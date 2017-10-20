@@ -6,6 +6,8 @@ permalink: /kb/148/Q148353/
 
 ## Q148353: Access Denied Using CHGPASS with DSMN
 
+{% raw %}
+
 	Article: Q148353
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -58,3 +60,5 @@ permalink: /kb/148/Q148353/
 	
 	=============================================================================
 	
+
+{% endraw %}

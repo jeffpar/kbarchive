@@ -6,6 +6,8 @@ permalink: /kb/161/Q161246/
 
 ## Q161246: PPT: Sample Code to Get Input From an Office Assistant Balloon
 
+{% raw %}
+
 	Article: Q161246
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -184,3 +186,5 @@ permalink: /kb/161/Q161246/
 	
 	=============================================================================
 	
+
+{% endraw %}

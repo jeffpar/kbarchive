@@ -6,6 +6,8 @@ permalink: /kb/181/Q181579/
 
 ## Q181579: XCON: Private Messages Not Always Delivered
 
+{% raw %}
+
 	Article: Q181579
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/181/Q181579/
 	
 	=============================================================================
 	
+
+{% endraw %}

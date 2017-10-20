@@ -6,6 +6,8 @@ permalink: /kb/065/Q65886/
 
 ## Q65886: TAB() Function Is Affected by Nonprinting Control Characters
 
+{% raw %}
+
 	Article: Q65886
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -74,3 +76,5 @@ permalink: /kb/065/Q65886/
 	
 	   10 LPRINT CHR$(27) + CHR$(52)    'SET EPSON PRINTER IN ITALIC MODE
 	   20 LPRINT SPACE$(10); "HELLO"    'SPACE OVER 10 PLACES AND PRINT HELLO
+
+{% endraw %}

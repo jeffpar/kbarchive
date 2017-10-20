@@ -6,6 +6,8 @@ permalink: /kb/162/Q162159/
 
 ## Q162159: SAMPLE:TREESCRL Scrolls in a Tree Control During Drag-and-Drop
 
+{% raw %}
+
 	Article: Q162159
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2
@@ -90,3 +92,5 @@ permalink: /kb/162/Q162159/
 	
 	=============================================================================
 	
+
+{% endraw %}

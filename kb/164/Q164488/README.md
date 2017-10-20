@@ -6,6 +6,8 @@ permalink: /kb/164/Q164488/
 
 ## Q164488: HOWTO: Registry Settings for the Microsoft DNS Server
 
+{% raw %}
+
 	Article: Q164488
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -286,3 +288,5 @@ permalink: /kb/164/Q164488/
 	
 	=============================================================================
 	
+
+{% endraw %}

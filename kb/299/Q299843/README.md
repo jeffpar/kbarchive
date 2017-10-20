@@ -6,6 +6,8 @@ permalink: /kb/299/Q299843/
 
 ## Q299843: FIX: Using the Send Menu Changes the Current Folder
 
+{% raw %}
+
 	Article: Q299843
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -67,3 +69,5 @@ permalink: /kb/299/Q299843/
 	
 	=============================================================================
 	
+
+{% endraw %}

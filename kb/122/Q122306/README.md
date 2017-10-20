@@ -6,6 +6,8 @@ permalink: /kb/122/Q122306/
 
 ## Q122306: PRB: Error C4226 and Defining WIN32
 
+{% raw %}
+
 	Article: Q122306
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -94,3 +96,5 @@ permalink: /kb/122/Q122306/
 	
 	=============================================================================
 	
+
+{% endraw %}

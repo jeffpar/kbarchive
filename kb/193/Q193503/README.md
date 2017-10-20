@@ -6,6 +6,8 @@ permalink: /kb/193/Q193503/
 
 ## Q193503: PRB: TABLEUPDATE() Returns .T. When View's SendUpdates is False
 
+{% raw %}
+
 	Article: Q193503
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -83,3 +85,5 @@ permalink: /kb/193/Q193503/
 	
 	=============================================================================
 	
+
+{% endraw %}

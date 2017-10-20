@@ -6,6 +6,8 @@ permalink: /kb/263/Q263242/
 
 ## Q263242: Encarta 2000 Error Message: Windows Cannot Find Program.exe
 
+{% raw %}
+
 	Article: Q263242
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -76,3 +78,5 @@ permalink: /kb/263/Q263242/
 	
 	=============================================================================
 	
+
+{% endraw %}

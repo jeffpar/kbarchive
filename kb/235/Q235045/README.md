@@ -6,6 +6,8 @@ permalink: /kb/235/Q235045/
 
 ## Q235045: Quick Course in Microsoft Word 2000 Comments and Corrections
 
+{% raw %}
+
 	Article: Q235045
 	Product(s): Microsoft Press
 	Version(s): 
@@ -114,3 +116,5 @@ permalink: /kb/235/Q235045/
 	
 	=============================================================================
 	
+
+{% endraw %}

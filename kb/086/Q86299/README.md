@@ -6,6 +6,8 @@ permalink: /kb/086/Q86299/
 
 ## Q86299: Microsoft Windows &amp; MS-DOS 5 Upgrade
 
+{% raw %}
+
 	Article: Q86299
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0
@@ -674,3 +676,5 @@ permalink: /kb/086/Q86299/
 	
 	=============================================================================
 	
+
+{% endraw %}

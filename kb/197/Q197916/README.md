@@ -6,6 +6,8 @@ permalink: /kb/197/Q197916/
 
 ## Q197916: HOWTO: Use GUIDs with Access,SQL 6.5 and SQL 7
 
+{% raw %}
+
 	Article: Q197916
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.5,2.0,2.1 SP2,2.5,2.6,5.0,6.0
@@ -348,3 +350,5 @@ permalink: /kb/197/Q197916/
 	
 	=============================================================================
 	
+
+{% endraw %}

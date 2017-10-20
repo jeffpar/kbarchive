@@ -6,6 +6,8 @@ permalink: /kb/099/Q99856/
 
 ## Q99856: SMTP: Err Msg: 552 Error in Local Delivery
 
+{% raw %}
+
 	Article: Q99856
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -67,3 +69,5 @@ permalink: /kb/099/Q99856/
 	
 	=============================================================================
 	
+
+{% endraw %}

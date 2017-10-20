@@ -6,6 +6,8 @@ permalink: /kb/168/Q168080/
 
 ## Q168080: PRB: Debugger Displays Incorrect Information for Variable
 
+{% raw %}
+
 	Article: Q168080
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -91,3 +93,5 @@ permalink: /kb/168/Q168080/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67085/
 
 ## Q67085: DOCERR: NOF Is Default for LINK
 
+{% raw %}
+
 	Article: Q67085
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.1; OS/2:5.1
@@ -46,3 +48,5 @@ permalink: /kb/067/Q67085/
 	
 	=============================================================================
 	
+
+{% endraw %}

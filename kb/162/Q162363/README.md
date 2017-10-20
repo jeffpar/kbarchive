@@ -6,6 +6,8 @@ permalink: /kb/162/Q162363/
 
 ## Q162363: Understanding and Troubleshooting the Stop 0x0000009C Screen
 
+{% raw %}
+
 	Article: Q162363
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -70,3 +72,5 @@ permalink: /kb/162/Q162363/
 	
 	=============================================================================
 	
+
+{% endraw %}

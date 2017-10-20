@@ -6,6 +6,8 @@ permalink: /kb/125/Q125322/
 
 ## Q125322: Slow Data Throughput Using CSNW or GSNW
 
+{% raw %}
+
 	Article: Q125322
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -53,3 +55,5 @@ permalink: /kb/125/Q125322/
 	
 	=============================================================================
 	
+
+{% endraw %}

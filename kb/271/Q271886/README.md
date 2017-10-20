@@ -6,6 +6,8 @@ permalink: /kb/271/Q271886/
 
 ## Q271886: XADM: How to Use Mbconn  to Generate Active Directory Accounts
 
+{% raw %}
+
 	Article: Q271886
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -124,3 +126,5 @@ permalink: /kb/271/Q271886/
 	
 	=============================================================================
 	
+
+{% endraw %}

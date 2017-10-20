@@ -6,6 +6,8 @@ permalink: /kb/135/Q135813/
 
 ## Q135813: DriveSpace 3 Cannot Compress Drive with 22 Local Drives
 
+{% raw %}
+
 	Article: Q135813
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/135/Q135813/
 	
 	=============================================================================
 	
+
+{% endraw %}

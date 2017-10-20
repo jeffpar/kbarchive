@@ -6,6 +6,8 @@ permalink: /kb/274/Q274395/
 
 ## Q274395: XWEB: Warn: &quot;This Page Contains Both Secure and Nonsecure Items&quot;
 
+{% raw %}
+
 	Article: Q274395
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP3
@@ -77,3 +79,5 @@ permalink: /kb/274/Q274395/
 	
 	=============================================================================
 	
+
+{% endraw %}

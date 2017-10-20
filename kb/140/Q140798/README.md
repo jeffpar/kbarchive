@@ -6,6 +6,8 @@ permalink: /kb/140/Q140798/
 
 ## Q140798: Julia Child: More Popup Window Closes Help
 
+{% raw %}
+
 	Article: Q140798
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/140/Q140798/
 	
 	=============================================================================
 	
+
+{% endraw %}

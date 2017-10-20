@@ -6,6 +6,8 @@ permalink: /kb/150/Q150284/
 
 ## Q150284: File HAL486C.DLL Could Not Be Loaded
 
+{% raw %}
+
 	Article: Q150284
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -81,3 +83,5 @@ permalink: /kb/150/Q150284/
 	
 	=============================================================================
 	
+
+{% endraw %}

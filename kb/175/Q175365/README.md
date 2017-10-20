@@ -6,6 +6,8 @@ permalink: /kb/175/Q175365/
 
 ## Q175365: Frequently Asked Questions About Internet E-mail Using MSN
 
+{% raw %}
+
 	Article: Q175365
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,2.0,2.5 (OEM Release),95
@@ -107,3 +109,5 @@ permalink: /kb/175/Q175365/
 	
 	=============================================================================
 	
+
+{% endraw %}

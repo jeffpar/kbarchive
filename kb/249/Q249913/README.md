@@ -6,6 +6,8 @@ permalink: /kb/249/Q249913/
 
 ## Q249913: Asheron's Call: How Character Information Is Stored
 
+{% raw %}
+
 	Article: Q249913
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -68,3 +70,5 @@ permalink: /kb/249/Q249913/
 	
 	=============================================================================
 	
+
+{% endraw %}

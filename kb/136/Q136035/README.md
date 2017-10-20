@@ -6,6 +6,8 @@ permalink: /kb/136/Q136035/
 
 ## Q136035: How to Reinitialize Registry Entries For Mail and Schedule+
 
+{% raw %}
+
 	Article: Q136035
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -79,3 +81,5 @@ permalink: /kb/136/Q136035/
 	
 	=============================================================================
 	
+
+{% endraw %}

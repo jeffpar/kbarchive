@@ -6,6 +6,8 @@ permalink: /kb/138/Q138083/
 
 ## Q138083: Implementing the %SERVERNAME% Environment Variable In Profiles
 
+{% raw %}
+
 	Article: Q138083
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -116,3 +118,5 @@ permalink: /kb/138/Q138083/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98863/
 
 ## Q98863: DOC: SB_ENDSCROLL Code Missing from OnHScroll() Documentation
 
+{% raw %}
+
 	Article: Q98863
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -50,3 +52,5 @@ permalink: /kb/098/Q98863/
 	
 	=============================================================================
 	
+
+{% endraw %}

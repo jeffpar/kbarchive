@@ -6,6 +6,8 @@ permalink: /kb/084/Q84285/
 
 ## Q84285: Linotronic User Defined Paper Size Buttons Reversed
 
+{% raw %}
+
 	Article: Q84285
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -56,3 +58,5 @@ permalink: /kb/084/Q84285/
 	
 	=============================================================================
 	
+
+{% endraw %}

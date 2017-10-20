@@ -6,6 +6,8 @@ permalink: /kb/090/Q90994/
 
 ## Q90994: File Manager Displays Actual Total Disk Space
 
+{% raw %}
+
 	Article: Q90994
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; winnt:3.1
@@ -64,3 +66,5 @@ permalink: /kb/090/Q90994/
 	
 	=============================================================================
 	
+
+{% endraw %}

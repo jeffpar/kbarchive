@@ -6,6 +6,8 @@ permalink: /kb/150/Q150907/
 
 ## Q150907: Err Msg: An Error Occurred During the Connection
 
+{% raw %}
+
 	Article: Q150907
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -57,3 +59,5 @@ permalink: /kb/150/Q150907/
 	
 	=============================================================================
 	
+
+{% endraw %}

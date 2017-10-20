@@ -6,6 +6,8 @@ permalink: /kb/108/Q108774/
 
 ## Q108774: Some Characters Not Available with Bitstream
 
+{% raw %}
+
 	Article: Q108774
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11,6.0
@@ -56,3 +58,5 @@ permalink: /kb/108/Q108774/
 	
 	=============================================================================
 	
+
+{% endraw %}

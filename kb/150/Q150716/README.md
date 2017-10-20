@@ -6,6 +6,8 @@ permalink: /kb/150/Q150716/
 
 ## Q150716: HOWTO: DAO: Attach to and Create QueryDefs on ODBC Tables
 
+{% raw %}
+
 	Article: Q150716
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:2.5,4.0
@@ -159,3 +161,5 @@ permalink: /kb/150/Q150716/
 	
 	=============================================================================
 	
+
+{% endraw %}

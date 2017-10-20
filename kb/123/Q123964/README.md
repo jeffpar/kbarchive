@@ -6,6 +6,8 @@ permalink: /kb/123/Q123964/
 
 ## Q123964: Server Service Hangs When Using GSNW
 
+{% raw %}
+
 	Article: Q123964
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -58,3 +60,5 @@ permalink: /kb/123/Q123964/
 	
 	=============================================================================
 	
+
+{% endraw %}

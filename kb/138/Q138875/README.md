@@ -6,6 +6,8 @@ permalink: /kb/138/Q138875/
 
 ## Q138875: DOC: READ EVENTS Command Not Documented in the Language Ref
 
+{% raw %}
+
 	Article: Q138875
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/138/Q138875/
 	
 	=============================================================================
 	
+
+{% endraw %}

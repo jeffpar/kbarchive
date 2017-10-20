@@ -6,6 +6,8 @@ permalink: /kb/041/Q41196/
 
 ## Q41196: QCL 1.01 Can Bring Up QuickC 2.00 Integrated Environment
 
+{% raw %}
+
 	Article: Q41196
 	Product(s): See article
 	Version(s): 2.00   | 2.00
@@ -54,3 +56,5 @@ permalink: /kb/041/Q41196/
 	improper environment. The solution is to correct the path environment
 	variable and/or remove all remnants of previous versions of the QuickC
 	package.
+
+{% endraw %}

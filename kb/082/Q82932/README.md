@@ -6,6 +6,8 @@ permalink: /kb/082/Q82932/
 
 ## Q82932: PRB: Device and TrueType Fonts Rotate Inconsistently
 
+{% raw %}
+
 	Article: Q82932
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1,3.5,3.51
@@ -55,3 +57,5 @@ permalink: /kb/082/Q82932/
 	
 	=============================================================================
 	
+
+{% endraw %}

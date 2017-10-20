@@ -6,6 +6,8 @@ permalink: /kb/076/Q76772/
 
 ## Q76772: README.TXT: Giving Maximum Priority to an Application
 
+{% raw %}
+
 	Article: Q76772
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/076/Q76772/
 	
 	=============================================================================
 	
+
+{% endraw %}

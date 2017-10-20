@@ -6,6 +6,8 @@ permalink: /kb/068/Q68072/
 
 ## Q68072: .MODEL Directive Language Parameter Doesn't Preserve Case
 
+{% raw %}
+
 	Article: Q68072
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -56,3 +58,5 @@ permalink: /kb/068/Q68072/
 	
 	=============================================================================
 	
+
+{% endraw %}

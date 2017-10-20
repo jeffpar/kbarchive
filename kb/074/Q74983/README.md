@@ -6,6 +6,8 @@ permalink: /kb/074/Q74983/
 
 ## Q74983: Configuring Extended Memory on Zenith Supersport 386sx
 
+{% raw %}
+
 	Article: Q74983
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -39,3 +41,5 @@ permalink: /kb/074/Q74983/
 	
 	=============================================================================
 	
+
+{% endraw %}

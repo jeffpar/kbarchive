@@ -6,6 +6,8 @@ permalink: /kb/075/Q75077/
 
 ## Q75077: EGA.SYS from MS-DOS 5 Upgrade Corrupts Paintbrush
 
+{% raw %}
+
 	Article: Q75077
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0; :1.0,2.0,4.0
@@ -48,3 +50,5 @@ permalink: /kb/075/Q75077/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160744/
 
 ## Q160744: Encarta 97: Summary of Features When Using Windows 3.x
 
+{% raw %}
+
 	Article: Q160744
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/160/Q160744/
 	
 	=============================================================================
 	
+
+{% endraw %}

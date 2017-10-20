@@ -6,6 +6,8 @@ permalink: /kb/242/Q242941/
 
 ## Q242941: Plug and Play Serial Devices Removed During Printer Installation
 
+{% raw %}
+
 	Article: Q242941
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/242/Q242941/
 	
 	=============================================================================
 	
+
+{% endraw %}

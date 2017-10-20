@@ -6,6 +6,8 @@ permalink: /kb/038/Q38309/
 
 ## Q38309: Selecting Large Text Blocks with Microsoft Editor
 
+{% raw %}
+
 	Article: Q38309
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -54,3 +56,5 @@ permalink: /kb/038/Q38309/
 	the cursor MUST be in the same column when you press ALT+U as it was
 	when you pressed ALT+T. If you put it in a different column, you will
 	be selecting a box argument rather than a line argument.
+
+{% endraw %}

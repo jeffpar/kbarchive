@@ -6,6 +6,8 @@ permalink: /kb/074/Q74620/
 
 ## Q74620: Problems Printing to FILE:=
 
+{% raw %}
+
 	Article: Q74620
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -61,3 +63,5 @@ permalink: /kb/074/Q74620/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95878/
 
 ## Q95878: WFWG: Screen Fonts May Display Incorrectly with Chat
 
+{% raw %}
+
 	Article: Q95878
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/095/Q95878/
 	
 	=============================================================================
 	
+
+{% endraw %}

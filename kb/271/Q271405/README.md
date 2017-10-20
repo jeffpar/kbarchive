@@ -6,6 +6,8 @@ permalink: /kb/271/Q271405/
 
 ## Q271405: PRB: Batch Files Do Not Run as Post Executables in Setup
 
+{% raw %}
+
 	Article: Q271405
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -92,3 +94,5 @@ permalink: /kb/271/Q271405/
 	
 	=============================================================================
 	
+
+{% endraw %}

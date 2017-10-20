@@ -6,6 +6,8 @@ permalink: /kb/049/Q49387/
 
 ## Q49387: Example of Passing Array of Singles from BASIC to MASM
 
+{% raw %}
+
 	Article: Q49387
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -89,3 +91,5 @@ permalink: /kb/049/Q49387/
 	
 	   Calling assembly routine to fill array elements...
 	   Values in array:  -1 -2 -3 -4 -5 -6 -7 -8 -9 -10
+
+{% endraw %}

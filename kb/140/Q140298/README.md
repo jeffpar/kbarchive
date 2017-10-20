@@ -6,6 +6,8 @@ permalink: /kb/140/Q140298/
 
 ## Q140298: How to Print All Detail Records in Field Order
 
+{% raw %}
+
 	Article: Q140298
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -121,3 +123,5 @@ permalink: /kb/140/Q140298/
 	
 	=============================================================================
 	
+
+{% endraw %}

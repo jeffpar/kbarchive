@@ -6,6 +6,8 @@ permalink: /kb/120/Q120016/
 
 ## Q120016: TCP/IP-32: ARP -S Switch Fails on First Entry Added to ARP Cache
 
+{% raw %}
+
 	Article: Q120016
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11
@@ -74,3 +76,5 @@ permalink: /kb/120/Q120016/
 	
 	=============================================================================
 	
+
+{% endraw %}

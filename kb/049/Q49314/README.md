@@ -6,6 +6,8 @@ permalink: /kb/049/Q49314/
 
 ## Q49314: Library Compatibility between BASIC and C
 
+{% raw %}
+
 	Article: Q49314
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -31,3 +33,5 @@ permalink: /kb/049/Q49314/
 	Parameters between BASIC and C", which also contains information on
 	Basic and C mixed-language programming. You can obtain this
 	application note by calling (206) 454-2030.
+
+{% endraw %}

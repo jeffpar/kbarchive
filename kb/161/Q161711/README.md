@@ -6,6 +6,8 @@ permalink: /kb/161/Q161711/
 
 ## Q161711: XCON: Messages NDR Rather Than Being Queued for Later Delivery
 
+{% raw %}
+
 	Article: Q161711
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/161/Q161711/
 	
 	=============================================================================
 	
+
+{% endraw %}

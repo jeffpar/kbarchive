@@ -6,6 +6,8 @@ permalink: /kb/186/Q186961/
 
 ## Q186961: WD97: Hyperlink to Bookmark Fails in Word Document Using Browser
 
+{% raw %}
+
 	Article: Q186961
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/186/Q186961/
 	
 	=============================================================================
 	
+
+{% endraw %}

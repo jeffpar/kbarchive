@@ -6,6 +6,8 @@ permalink: /kb/184/Q184701/
 
 ## Q184701: Distributed Password Authentication Checkbox Is Unavailable
 
+{% raw %}
+
 	Article: Q184701
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/184/Q184701/
 	
 	=============================================================================
 	
+
+{% endraw %}

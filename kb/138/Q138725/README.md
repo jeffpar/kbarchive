@@ -6,6 +6,8 @@ permalink: /kb/138/Q138725/
 
 ## Q138725: PC WSPlus: Definition of &#42;.POF Files (Access Control List)
 
+{% raw %}
+
 	Article: Q138725
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -114,3 +116,5 @@ permalink: /kb/138/Q138725/
 	
 	=============================================================================
 	
+
+{% endraw %}

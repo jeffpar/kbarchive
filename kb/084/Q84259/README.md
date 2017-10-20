@@ -6,6 +6,8 @@ permalink: /kb/084/Q84259/
 
 ## Q84259: Contents of IPX.WRI included with the WRK
 
+{% raw %}
+
 	Article: Q84259
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -190,3 +192,5 @@ permalink: /kb/084/Q84259/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100020/
 
 ## Q100020: WFWG Err Msg: An Error Occurred While Reconnecting...&#91;SYS0000&#93;
 
+{% raw %}
+
 	Article: Q100020
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -90,3 +92,5 @@ permalink: /kb/100/Q100020/
 	
 	=============================================================================
 	
+
+{% endraw %}

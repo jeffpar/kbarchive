@@ -6,6 +6,8 @@ permalink: /kb/082/Q82328/
 
 ## Q82328: Copying Files with Artisoft Alone and SMARTDrive 4.0
 
+{% raw %}
+
 	Article: Q82328
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/082/Q82328/
 	
 	=============================================================================
 	
+
+{% endraw %}

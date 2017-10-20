@@ -6,6 +6,8 @@ permalink: /kb/172/Q172496/
 
 ## Q172496: Windows 95 Client Config Utility Incorrectly Updates Check Box
 
+{% raw %}
+
 	Article: Q172496
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -79,3 +81,5 @@ permalink: /kb/172/Q172496/
 	
 	=============================================================================
 	
+
+{% endraw %}

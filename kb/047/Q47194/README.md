@@ -6,6 +6,8 @@ permalink: /kb/047/Q47194/
 
 ## Q47194: QuickC Does Not Support Alternate Math Library
 
+{% raw %}
+
 	Article: Q47194
 	Product(s): See article
 	Version(s): 1.01 2.00
@@ -17,3 +19,5 @@ permalink: /kb/047/Q47194/
 	support an alternate math package for floating point operations.
 	However, both the emulator and coprocessor math packages are
 	supported.
+
+{% endraw %}

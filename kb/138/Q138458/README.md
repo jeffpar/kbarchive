@@ -6,6 +6,8 @@ permalink: /kb/138/Q138458/
 
 ## Q138458: US &amp; Canadian FoxPro User Groups &amp; Authorized MS Trainers
 
+{% raw %}
+
 	Article: Q138458
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/138/Q138458/
 	
 	=============================================================================
 	
+
+{% endraw %}

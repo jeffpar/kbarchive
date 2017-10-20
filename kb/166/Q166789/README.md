@@ -6,6 +6,8 @@ permalink: /kb/166/Q166789/
 
 ## Q166789: WD97: Title of HTML Document Begins with a Question Mark
 
+{% raw %}
+
 	Article: Q166789
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/166/Q166789/
 	
 	=============================================================================
 	
+
+{% endraw %}

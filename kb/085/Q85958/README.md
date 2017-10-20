@@ -6,6 +6,8 @@ permalink: /kb/085/Q85958/
 
 ## Q85958: PPT: Embossing Diagonal Lines and Angles
 
+{% raw %}
+
 	Article: Q85958
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -77,3 +79,5 @@ permalink: /kb/085/Q85958/
 	
 	=============================================================================
 	
+
+{% endraw %}

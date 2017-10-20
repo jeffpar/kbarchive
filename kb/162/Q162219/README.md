@@ -6,6 +6,8 @@ permalink: /kb/162/Q162219/
 
 ## Q162219: RasSetEntryProperties API Resets Selected Modem
 
+{% raw %}
+
 	Article: Q162219
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -53,3 +55,5 @@ permalink: /kb/162/Q162219/
 	
 	=============================================================================
 	
+
+{% endraw %}

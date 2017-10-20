@@ -6,6 +6,8 @@ permalink: /kb/181/Q181166/
 
 ## Q181166: XFOR: Missing Attachments When Sending to Notes Users
 
+{% raw %}
+
 	Article: Q181166
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -71,3 +73,5 @@ permalink: /kb/181/Q181166/
 	
 	=============================================================================
 	
+
+{% endraw %}

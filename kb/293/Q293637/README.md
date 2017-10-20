@@ -6,6 +6,8 @@ permalink: /kb/293/Q293637/
 
 ## Q293637: Event ID 8 When Clients Try to Access IIS FTP Site
 
+{% raw %}
+
 	Article: Q293637
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -116,3 +118,5 @@ permalink: /kb/293/Q293637/
 	
 	=============================================================================
 	
+
+{% endraw %}

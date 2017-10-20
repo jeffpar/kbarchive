@@ -6,6 +6,8 @@ permalink: /kb/150/Q150493/
 
 ## Q150493: How To Join a Domain From the Command Line
 
+{% raw %}
+
 	Article: Q150493
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/150/Q150493/
 	
 	=============================================================================
 	
+
+{% endraw %}

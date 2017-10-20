@@ -6,6 +6,8 @@ permalink: /kb/130/Q130544/
 
 ## Q130544: How to Place Values Containing Commas in a Combo Box
 
+{% raw %}
+
 	Article: Q130544
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/130/Q130544/
 	
 	=============================================================================
 	
+
+{% endraw %}

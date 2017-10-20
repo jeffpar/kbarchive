@@ -6,6 +6,8 @@ permalink: /kb/119/Q119900/
 
 ## Q119900: INFO: Understanding the RETURN Command
 
+{% raw %}
+
 	Article: Q119900
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x; MS-DOS:2.0,2.5x,2.6,2.6a; UNIX:2.6; WINDOWS:2.5x,2.6,2.6a,3.0,5.0,6.0
@@ -95,3 +97,5 @@ permalink: /kb/119/Q119900/
 	
 	=============================================================================
 	
+
+{% endraw %}

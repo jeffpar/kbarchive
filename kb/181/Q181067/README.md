@@ -6,6 +6,8 @@ permalink: /kb/181/Q181067/
 
 ## Q181067: WD97: Run-Time Error 5584 &quot;Too Many DDE Channels Are Open...&quot;
 
+{% raw %}
+
 	Article: Q181067
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -117,3 +119,5 @@ permalink: /kb/181/Q181067/
 	
 	=============================================================================
 	
+
+{% endraw %}

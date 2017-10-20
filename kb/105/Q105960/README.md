@@ -6,6 +6,8 @@ permalink: /kb/105/Q105960/
 
 ## Q105960: PC DOS: Err Msg: Notice 64 Failure to Modify Folder Rights
 
+{% raw %}
+
 	Article: Q105960
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -64,3 +66,5 @@ permalink: /kb/105/Q105960/
 	
 	=============================================================================
 	
+
+{% endraw %}

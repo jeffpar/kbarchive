@@ -6,6 +6,8 @@ permalink: /kb/231/Q231409/
 
 ## Q231409: SMS: How to Enable the Software Metering Spy Window
 
+{% raw %}
+
 	Article: Q231409
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -68,3 +70,5 @@ permalink: /kb/231/Q231409/
 	
 	=============================================================================
 	
+
+{% endraw %}

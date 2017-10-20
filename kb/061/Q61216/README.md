@@ -6,6 +6,8 @@ permalink: /kb/061/Q61216/
 
 ## Q61216: C 6.00 README: PWB: Keep System Files Out of Build
 
+{% raw %}
+
 	Article: Q61216
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -23,3 +25,5 @@ permalink: /kb/061/Q61216/
 	names surrounded by angle brackets) out of your list of build
 	dependencies, see online help for a description of the Build switch's
 	system/no system option.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/253/Q253029/
 
 ## Q253029: XFOR: Connector for Lotus Notes Supports Embedded Attachments
 
+{% raw %}
+
 	Article: Q253029
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -66,3 +68,5 @@ permalink: /kb/253/Q253029/
 	
 	=============================================================================
 	
+
+{% endraw %}

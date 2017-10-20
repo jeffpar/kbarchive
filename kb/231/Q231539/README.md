@@ -6,6 +6,8 @@ permalink: /kb/231/Q231539/
 
 ## Q231539: MapPoint: You Are Prompted to Install Internet Explorer
 
+{% raw %}
+
 	Article: Q231539
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:; :
@@ -55,3 +57,5 @@ permalink: /kb/231/Q231539/
 	
 	=============================================================================
 	
+
+{% endraw %}

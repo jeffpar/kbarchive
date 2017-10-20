@@ -6,6 +6,8 @@ permalink: /kb/134/Q134428/
 
 ## Q134428: Remote Control Agent Icon Always Remains on Top
 
+{% raw %}
+
 	Article: Q134428
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -48,3 +50,5 @@ permalink: /kb/134/Q134428/
 	
 	=============================================================================
 	
+
+{% endraw %}

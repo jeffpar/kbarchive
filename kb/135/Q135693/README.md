@@ -6,6 +6,8 @@ permalink: /kb/135/Q135693/
 
 ## Q135693: Andrew ISA II Adapter 1 TR Does Not Function Properly
 
+{% raw %}
+
 	Article: Q135693
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -54,3 +56,5 @@ permalink: /kb/135/Q135693/
 	
 	=============================================================================
 	
+
+{% endraw %}

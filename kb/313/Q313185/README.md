@@ -6,6 +6,8 @@ permalink: /kb/313/Q313185/
 
 ## Q313185: INFO: SQL Server Driver for JDBC Does Not Support HTTP Tunneling
 
+{% raw %}
+
 	Article: Q313185
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/313/Q313185/
 	
 	=============================================================================
 	
+
+{% endraw %}

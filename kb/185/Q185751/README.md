@@ -6,6 +6,8 @@ permalink: /kb/185/Q185751/
 
 ## Q185751: Err: The System Has Not Enabled IO Address Mapping...
 
+{% raw %}
+
 	Article: Q185751
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/185/Q185751/
 	
 	=============================================================================
 	
+
+{% endraw %}

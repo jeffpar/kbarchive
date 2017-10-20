@@ -6,6 +6,8 @@ permalink: /kb/157/Q157947/
 
 ## Q157947: HOWTO: Create a Report Based on a Query
 
+{% raw %}
+
 	Article: Q157947
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/157/Q157947/
 	
 	=============================================================================
 	
+
+{% endraw %}

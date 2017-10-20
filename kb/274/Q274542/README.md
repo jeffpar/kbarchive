@@ -6,6 +6,8 @@ permalink: /kb/274/Q274542/
 
 ## Q274542: Visual Basic 6.0 Reference Library Comments And Corrections
 
+{% raw %}
+
 	Article: Q274542
 	Product(s): Microsoft Press
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/274/Q274542/
 	
 	=============================================================================
 	
+
+{% endraw %}

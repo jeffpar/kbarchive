@@ -6,6 +6,8 @@ permalink: /kb/237/Q237525/
 
 ## Q237525: Reference Suite 2000: Some Features Unavailable on Dual Boot
 
+{% raw %}
+
 	Article: Q237525
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -108,3 +110,5 @@ permalink: /kb/237/Q237525/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/273/Q273595/
 
 ## Q273595: ELL: Setup Hangs While Installing Speech Recognition Software
 
+{% raw %}
+
 	Article: Q273595
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/273/Q273595/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97933/
 
 ## Q97933: PC WRmt: Extra Dialog and Error Messages
 
+{% raw %}
+
 	Article: Q97933
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -54,3 +56,5 @@ permalink: /kb/097/Q97933/
 	
 	=============================================================================
 	
+
+{% endraw %}

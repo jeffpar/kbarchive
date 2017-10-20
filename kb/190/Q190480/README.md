@@ -6,6 +6,8 @@ permalink: /kb/190/Q190480/
 
 ## Q190480: PRB: SET(&quot;Century&quot;,1) Not Reporting Correct Century
 
+{% raw %}
+
 	Article: Q190480
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -128,3 +130,5 @@ permalink: /kb/190/Q190480/
 	
 	=============================================================================
 	
+
+{% endraw %}

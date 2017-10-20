@@ -6,6 +6,8 @@ permalink: /kb/286/Q286032/
 
 ## Q286032: WD97: Swedish Word Stops Responding Opening Versioned Documents
 
+{% raw %}
+
 	Article: Q286032
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/286/Q286032/
 	
 	=============================================================================
 	
+
+{% endraw %}

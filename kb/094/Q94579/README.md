@@ -6,6 +6,8 @@ permalink: /kb/094/Q94579/
 
 ## Q94579: INFO: Creating a Function Pointer to a C++ Member Function
 
+{% raw %}
+
 	Article: Q94579
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,2.0,2.1,4.0,5.0
@@ -169,3 +171,5 @@ permalink: /kb/094/Q94579/
 	
 	=============================================================================
 	
+
+{% endraw %}

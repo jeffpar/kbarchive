@@ -6,6 +6,8 @@ permalink: /kb/162/Q162827/
 
 ## Q162827: WD97: Problems Printing Document with Many Drawing Objects
 
+{% raw %}
+
 	Article: Q162827
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -48,3 +50,5 @@ permalink: /kb/162/Q162827/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94032/
 
 ## Q94032: &quot;Cannot Write to Device Aux&quot; Error When Using Norton's Sleeper
 
+{% raw %}
+
 	Article: Q94032
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/094/Q94032/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169890/
 
 ## Q169890: Enable PPTP Filtering Option No Longer Works
 
+{% raw %}
+
 	Article: Q169890
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -183,3 +185,5 @@ permalink: /kb/169/Q169890/
 	
 	=============================================================================
 	
+
+{% endraw %}

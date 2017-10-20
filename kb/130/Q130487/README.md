@@ -6,6 +6,8 @@ permalink: /kb/130/Q130487/
 
 ## Q130487: Event 560 When Opening a Read-Only File for Read Access
 
+{% raw %}
+
 	Article: Q130487
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.5
@@ -47,3 +49,5 @@ permalink: /kb/130/Q130487/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151214/
 
 ## Q151214: XADM: Send &amp; Receive logs in MDBDATA directory
 
+{% raw %}
+
 	Article: Q151214
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/151/Q151214/
 	
 	=============================================================================
 	
+
+{% endraw %}

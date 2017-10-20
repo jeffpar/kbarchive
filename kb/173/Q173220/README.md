@@ -6,6 +6,8 @@ permalink: /kb/173/Q173220/
 
 ## Q173220: WD97: How to Scroll Smoothly When Dragging Vertical Scroll Bar
 
+{% raw %}
+
 	Article: Q173220
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/173/Q173220/
 	
 	=============================================================================
 	
+
+{% endraw %}

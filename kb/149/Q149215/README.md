@@ -6,6 +6,8 @@ permalink: /kb/149/Q149215/
 
 ## Q149215: VB 4.0 Apps Can Only Be Scheduled Using System Account
 
+{% raw %}
+
 	Article: Q149215
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -93,3 +95,5 @@ permalink: /kb/149/Q149215/
 	
 	=============================================================================
 	
+
+{% endraw %}

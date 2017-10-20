@@ -6,6 +6,8 @@ permalink: /kb/086/Q86022/
 
 ## Q86022: Windows Err Msg: You Cannot Run This Application in a Window
 
+{% raw %}
+
 	Article: Q86022
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/086/Q86022/
 	
 	=============================================================================
 	
+
+{% endraw %}

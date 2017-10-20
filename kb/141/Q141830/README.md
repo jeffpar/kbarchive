@@ -6,6 +6,8 @@ permalink: /kb/141/Q141830/
 
 ## Q141830: NT Backup Cannot Back Up Microsoft Exchange Server
 
+{% raw %}
+
 	Article: Q141830
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -80,3 +82,5 @@ permalink: /kb/141/Q141830/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/230/Q230742/
 
 ## Q230742: PRB: Text Missing when ActiveX Control Is Based on Rich Edit 2.0
 
+{% raw %}
+
 	Article: Q230742
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -79,3 +81,5 @@ permalink: /kb/230/Q230742/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/297/Q297029/
 
 ## Q297029: Games: Black Screen Displayed or Msg: &quot;mmsystem006...&quot;
 
+{% raw %}
+
 	Article: Q297029
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -144,3 +146,5 @@ permalink: /kb/297/Q297029/
 	
 	=============================================================================
 	
+
+{% endraw %}

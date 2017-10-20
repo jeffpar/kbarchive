@@ -6,6 +6,8 @@ permalink: /kb/242/Q242582/
 
 ## Q242582: Microsoft Excel 97/Visual Basic Step by Step Comments and Correc
 
+{% raw %}
+
 	Article: Q242582
 	Product(s): Microsoft Press
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/242/Q242582/
 	
 	=============================================================================
 	
+
+{% endraw %}

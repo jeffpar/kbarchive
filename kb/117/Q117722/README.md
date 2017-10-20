@@ -6,6 +6,8 @@ permalink: /kb/117/Q117722/
 
 ## Q117722: FoxPro for Macintosh Language Tips and Tricks
 
+{% raw %}
+
 	Article: Q117722
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -205,3 +207,5 @@ permalink: /kb/117/Q117722/
 	
 	=============================================================================
 	
+
+{% endraw %}

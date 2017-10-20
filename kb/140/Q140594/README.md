@@ -6,6 +6,8 @@ permalink: /kb/140/Q140594/
 
 ## Q140594: PRB: Local SSADMIN Writes to Local (Not Server) Srcsafe.ini
 
+{% raw %}
+
 	Article: Q140594
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/140/Q140594/
 	
 	=============================================================================
 	
+
+{% endraw %}

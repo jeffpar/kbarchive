@@ -6,6 +6,8 @@ permalink: /kb/311/Q311055/
 
 ## Q311055: Programs That Call DsGetDcName() on the SRP May Not Work
 
+{% raw %}
+
 	Article: Q311055
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -104,3 +106,5 @@ permalink: /kb/311/Q311055/
 	
 	=============================================================================
 	
+
+{% endraw %}

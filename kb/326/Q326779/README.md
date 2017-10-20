@@ -6,6 +6,8 @@ permalink: /kb/326/Q326779/
 
 ## Q326779: Supported IIS Configurations for Use with Sysprep
 
+{% raw %}
+
 	Article: Q326779
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -71,3 +73,5 @@ permalink: /kb/326/Q326779/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149680/
 
 ## Q149680: Infrared Devices Not Listed in Add New Hardware Tool
 
+{% raw %}
+
 	Article: Q149680
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -63,3 +65,5 @@ permalink: /kb/149/Q149680/
 	
 	=============================================================================
 	
+
+{% endraw %}

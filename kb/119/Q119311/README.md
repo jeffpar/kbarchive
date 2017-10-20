@@ -6,6 +6,8 @@ permalink: /kb/119/Q119311/
 
 ## Q119311: CA-dBFast Installation Fails to Create Group Folder
 
+{% raw %}
+
 	Article: Q119311
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -69,3 +71,5 @@ permalink: /kb/119/Q119311/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137313/
 
 ## Q137313: Err Msg: Microsoft Backup Could Not Create an Image List...
 
+{% raw %}
+
 	Article: Q137313
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/137/Q137313/
 	
 	=============================================================================
 	
+
+{% endraw %}

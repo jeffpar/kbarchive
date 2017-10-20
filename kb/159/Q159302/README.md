@@ -6,6 +6,8 @@ permalink: /kb/159/Q159302/
 
 ## Q159302: XCLN: Exchange Server Push Notifications Generate ICMP Messages
 
+{% raw %}
+
 	Article: Q159302
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -71,3 +73,5 @@ permalink: /kb/159/Q159302/
 	
 	=============================================================================
 	
+
+{% endraw %}

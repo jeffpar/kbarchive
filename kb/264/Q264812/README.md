@@ -6,6 +6,8 @@ permalink: /kb/264/Q264812/
 
 ## Q264812: Client Add Pack Does Not Recognize Small Business Server
 
+{% raw %}
+
 	Article: Q264812
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0a
@@ -55,3 +57,5 @@ permalink: /kb/264/Q264812/
 	
 	=============================================================================
 	
+
+{% endraw %}

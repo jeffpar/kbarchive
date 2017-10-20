@@ -6,6 +6,8 @@ permalink: /kb/140/Q140184/
 
 ## Q140184: XFOR: How to Get the IMC to Use an Internet Provider
 
+{% raw %}
+
 	Article: Q140184
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/140/Q140184/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148624/
 
 ## Q148624: BUG: No Error w/Public NAMELIST Variables with PRIVATE Members
 
+{% raw %}
+
 	Article: Q148624
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/148/Q148624/
 	
 	=============================================================================
 	
+
+{% endraw %}

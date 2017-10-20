@@ -6,6 +6,8 @@ permalink: /kb/064/Q64933/
 
 ## Q64933: How to Emulate INKEY&#36; Function by CALLing MS-DOS INTERRUPT
 
+{% raw %}
+
 	Article: Q64933
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -103,3 +105,5 @@ permalink: /kb/064/Q64933/
 	   END IF
 	   NewInkey$ = KeyCode$
 	END FUNCTION
+
+{% endraw %}

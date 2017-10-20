@@ -6,6 +6,8 @@ permalink: /kb/103/Q103560/
 
 ## Q103560: DISKCOPY Err Msg: Invalid Drive Specification...Non-Removable
 
+{% raw %}
+
 	Article: Q103560
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -58,3 +60,5 @@ permalink: /kb/103/Q103560/
 	
 	=============================================================================
 	
+
+{% endraw %}

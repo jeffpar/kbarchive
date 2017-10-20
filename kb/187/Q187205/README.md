@@ -6,6 +6,8 @@ permalink: /kb/187/Q187205/
 
 ## Q187205: Unable to Restrict the Number of Connections from a Single User
 
+{% raw %}
+
 	Article: Q187205
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -47,3 +49,5 @@ permalink: /kb/187/Q187205/
 	
 	=============================================================================
 	
+
+{% endraw %}

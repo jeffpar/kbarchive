@@ -6,6 +6,8 @@ permalink: /kb/250/Q250527/
 
 ## Q250527: Pandora's Box Error Message: Unable to Create DirectDraw Surface
 
+{% raw %}
+
 	Article: Q250527
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -162,3 +164,5 @@ permalink: /kb/250/Q250527/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240981/
 
 ## Q240981: Games: Cannot Play When Configured to Use Multiple Monitors
 
+{% raw %}
+
 	Article: Q240981
 	Product(s): Microsoft Home Games
 	Version(s): ; WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/240/Q240981/
 	
 	=============================================================================
 	
+
+{% endraw %}

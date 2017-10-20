@@ -6,6 +6,8 @@ permalink: /kb/165/Q165218/
 
 ## Q165218: PPT: Sample VB Code to Delete a Custom Slide Show
 
+{% raw %}
+
 	Article: Q165218
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -124,3 +126,5 @@ permalink: /kb/165/Q165218/
 	
 	=============================================================================
 	
+
+{% endraw %}

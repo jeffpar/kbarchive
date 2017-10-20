@@ -6,6 +6,8 @@ permalink: /kb/186/Q186448/
 
 ## Q186448: FP: Image Disappears Changing Alignment of Formatted Style Text
 
+{% raw %}
+
 	Article: Q186448
 	Product(s): Word Front Page
 	Version(s): 1.0
@@ -78,3 +80,5 @@ permalink: /kb/186/Q186448/
 	
 	=============================================================================
 	
+
+{% endraw %}

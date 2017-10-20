@@ -6,6 +6,8 @@ permalink: /kb/154/Q154968/
 
 ## Q154968: HOWTO: Customize the Differences Window
 
+{% raw %}
+
 	Article: Q154968
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -48,3 +50,5 @@ permalink: /kb/154/Q154968/
 	
 	=============================================================================
 	
+
+{% endraw %}

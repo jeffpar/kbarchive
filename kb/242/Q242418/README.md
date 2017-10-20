@@ -6,6 +6,8 @@ permalink: /kb/242/Q242418/
 
 ## Q242418: INFO: Using the Visual Studio Installer with Visual FoxPro
 
+{% raw %}
+
 	Article: Q242418
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -74,3 +76,5 @@ permalink: /kb/242/Q242418/
 	
 	=============================================================================
 	
+
+{% endraw %}

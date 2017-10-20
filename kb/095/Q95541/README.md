@@ -6,6 +6,8 @@ permalink: /kb/095/Q95541/
 
 ## Q95541: Err Msg: &quot;Cannot Find STRAKCP.DLL&quot; using Z-Nix SuperMouse
 
+{% raw %}
+
 	Article: Q95541
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/095/Q95541/
 	
 	=============================================================================
 	
+
+{% endraw %}

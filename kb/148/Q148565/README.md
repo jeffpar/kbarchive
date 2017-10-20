@@ -6,6 +6,8 @@ permalink: /kb/148/Q148565/
 
 ## Q148565: XFOR: IMC Fails to Start with 2140, Event IDs 4014 4032 4057
 
+{% raw %}
+
 	Article: Q148565
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -43,3 +45,5 @@ permalink: /kb/148/Q148565/
 	
 	=============================================================================
 	
+
+{% endraw %}

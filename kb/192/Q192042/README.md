@@ -6,6 +6,8 @@ permalink: /kb/192/Q192042/
 
 ## Q192042: Diskeeper 2.0 Will Not Establish Connections to Other Servers
 
+{% raw %}
+
 	Article: Q192042
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/192/Q192042/
 	
 	=============================================================================
 	
+
+{% endraw %}

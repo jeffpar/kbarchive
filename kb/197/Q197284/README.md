@@ -6,6 +6,8 @@ permalink: /kb/197/Q197284/
 
 ## Q197284: DirectX 6.1: Text in DirectPlay Dialog Boxes Changes to English
 
+{% raw %}
+
 	Article: Q197284
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/197/Q197284/
 	
 	=============================================================================
 	
+
+{% endraw %}

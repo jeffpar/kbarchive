@@ -6,6 +6,8 @@ permalink: /kb/038/Q38730/
 
 ## Q38730: Changing Default int to 32 Bits
 
+{% raw %}
+
 	Article: Q38730
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 | 5.10
@@ -45,3 +47,5 @@ permalink: /kb/038/Q38730/
 	A far better strategy is to change only the variables that need to be
 	long to long. This way, you will avoid a lot of unintended side
 	effects and you will not do more 32-bit arithmetic than is necessary.
+
+{% endraw %}

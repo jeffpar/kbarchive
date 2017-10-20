@@ -6,6 +6,8 @@ permalink: /kb/192/Q192774/
 
 ## Q192774: Stop 0x0000000A in Tcpip.sys Processing an ICMP Packet
 
+{% raw %}
+
 	Article: Q192774
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/192/Q192774/
 	
 	=============================================================================
 	
+
+{% endraw %}

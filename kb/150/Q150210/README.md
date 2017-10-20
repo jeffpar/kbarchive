@@ -6,6 +6,8 @@ permalink: /kb/150/Q150210/
 
 ## Q150210: FIX: DBCombo Control Does Not Allow Selection on Modal Form
 
+{% raw %}
+
 	Article: Q150210
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/150/Q150210/
 	
 	=============================================================================
 	
+
+{% endraw %}

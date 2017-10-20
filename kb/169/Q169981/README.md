@@ -6,6 +6,8 @@ permalink: /kb/169/Q169981/
 
 ## Q169981: WD97: Addin Field Data Lost in Word 6.0/7.0 Conversion
 
+{% raw %}
+
 	Article: Q169981
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -246,3 +248,5 @@ permalink: /kb/169/Q169981/
 	
 	=============================================================================
 	
+
+{% endraw %}

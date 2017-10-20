@@ -6,6 +6,8 @@ permalink: /kb/262/Q262315/
 
 ## Q262315: INFO: ILOVEYOU Virus Attacks FoxPro SCT Files
 
+{% raw %}
+
 	Article: Q262315
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -67,3 +69,5 @@ permalink: /kb/262/Q262315/
 	
 	=============================================================================
 	
+
+{% endraw %}

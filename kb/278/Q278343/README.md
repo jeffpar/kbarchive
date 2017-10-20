@@ -6,6 +6,8 @@ permalink: /kb/278/Q278343/
 
 ## Q278343: XFOR: Can't Log On to Calendar Connector Service (Error 1069)
 
+{% raw %}
+
 	Article: Q278343
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -75,3 +77,5 @@ permalink: /kb/278/Q278343/
 	
 	=============================================================================
 	
+
+{% endraw %}

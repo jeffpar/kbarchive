@@ -6,6 +6,8 @@ permalink: /kb/165/Q165017/
 
 ## Q165017: Description of Event ID 9302
 
+{% raw %}
+
 	Article: Q165017
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -84,3 +86,5 @@ permalink: /kb/165/Q165017/
 	
 	=============================================================================
 	
+
+{% endraw %}

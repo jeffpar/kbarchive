@@ -6,6 +6,8 @@ permalink: /kb/193/Q193395/
 
 ## Q193395: XFOR: Access Violation Occurs When Stopping Dirsync Service
 
+{% raw %}
+
 	Article: Q193395
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -78,3 +80,5 @@ permalink: /kb/193/Q193395/
 	
 	=============================================================================
 	
+
+{% endraw %}

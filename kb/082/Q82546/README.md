@@ -6,6 +6,8 @@ permalink: /kb/082/Q82546/
 
 ## Q82546: ABC Flowcharter 1.2 Doesn't Display All TrueType Font Sizes
 
+{% raw %}
+
 	Article: Q82546
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/082/Q82546/
 	
 	=============================================================================
 	
+
+{% endraw %}

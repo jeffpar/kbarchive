@@ -6,6 +6,8 @@ permalink: /kb/233/Q233387/
 
 ## Q233387: RAS Clients Cannot Access LAN When IP Forwarding is Disabled
 
+{% raw %}
+
 	Article: Q233387
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/233/Q233387/
 	
 	=============================================================================
 	
+
+{% endraw %}

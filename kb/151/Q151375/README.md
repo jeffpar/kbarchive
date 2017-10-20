@@ -6,6 +6,8 @@ permalink: /kb/151/Q151375/
 
 ## Q151375: RAWIZ (Microsoft Remote Automation Diagnostic Wizard)
 
+{% raw %}
+
 	Article: Q151375
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -55,3 +57,5 @@ permalink: /kb/151/Q151375/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235837/
 
 ## Q235837: SMS: LAN_SENDER Doesn't Fail Job When No Instruction File Exists
 
+{% raw %}
+
 	Article: Q235837
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP4
@@ -83,3 +85,5 @@ permalink: /kb/235/Q235837/
 	
 	=============================================================================
 	
+
+{% endraw %}

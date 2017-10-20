@@ -6,6 +6,8 @@ permalink: /kb/158/Q158295/
 
 ## Q158295: XCLN: Remote Mail: The Mail Headers Could Not Be Displayed
 
+{% raw %}
+
 	Article: Q158295
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -78,3 +80,5 @@ permalink: /kb/158/Q158295/
 	
 	=============================================================================
 	
+
+{% endraw %}

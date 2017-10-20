@@ -6,6 +6,8 @@ permalink: /kb/268/Q268770/
 
 ## Q268770: PRB: LoadPicture and SavePicture Entry Points Are Not Found
 
+{% raw %}
+
 	Article: Q268770
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/268/Q268770/
 	
 	=============================================================================
 	
+
+{% endraw %}

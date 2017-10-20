@@ -6,6 +6,8 @@ permalink: /kb/242/Q242528/
 
 ## Q242528: Time-Out to Unreachable Computers Is Excessive
 
+{% raw %}
+
 	Article: Q242528
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -143,3 +145,5 @@ permalink: /kb/242/Q242528/
 	
 	=============================================================================
 	
+
+{% endraw %}

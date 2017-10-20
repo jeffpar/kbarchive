@@ -6,6 +6,8 @@ permalink: /kb/173/Q173586/
 
 ## Q173586: How to Reset Your MSN Password
 
+{% raw %}
+
 	Article: Q173586
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6
@@ -74,3 +76,5 @@ permalink: /kb/173/Q173586/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236330/
 
 ## Q236330: Event Not Reset in ScsiClassGetInquiryData in SCSI Class Driver
 
+{% raw %}
+
 	Article: Q236330
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -96,3 +98,5 @@ permalink: /kb/236/Q236330/
 	
 	=============================================================================
 	
+
+{% endraw %}

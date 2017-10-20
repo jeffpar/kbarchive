@@ -6,6 +6,8 @@ permalink: /kb/140/Q140250/
 
 ## Q140250: Wine Guide 1.0a: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q140250
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0a
@@ -268,3 +270,5 @@ permalink: /kb/140/Q140250/
 	
 	=============================================================================
 	
+
+{% endraw %}

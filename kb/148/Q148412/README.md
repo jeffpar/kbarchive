@@ -6,6 +6,8 @@ permalink: /kb/148/Q148412/
 
 ## Q148412: Use of the &quot;Seconds&quot; Field for BOOTP Relay Agents
 
+{% raw %}
+
 	Article: Q148412
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.5,3.51,4.0
@@ -58,3 +60,5 @@ permalink: /kb/148/Q148412/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/042/Q42448/
 
 ## Q42448: Unwanted R6013: Illegal Far Pointer Use
 
+{% raw %}
+
 	Article: Q42448
 	Product(s): See article
 	Version(s): 2.00
@@ -32,3 +34,5 @@ permalink: /kb/042/Q42448/
 	run-time error. This information is documented in the "Microsoft
 	QuickC Tool Kit Version 2.0" manual, Section 4.3.34 /Zr (Check
 	Pointers), Page 104-105.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/306/Q306026/
 
 ## Q306026: Lsass.exe Uses Excessive CPU Time After SFU User Password Change
 
+{% raw %}
+
 	Article: Q306026
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -84,3 +86,5 @@ permalink: /kb/306/Q306026/
 	
 	=============================================================================
 	
+
+{% endraw %}

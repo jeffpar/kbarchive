@@ -6,6 +6,8 @@ permalink: /kb/058/Q58314/
 
 ## Q58314: Older MS-DOS Mouse Drivers Incompatible with Windows
 
+{% raw %}
+
 	Article: Q58314
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -41,3 +43,5 @@ permalink: /kb/058/Q58314/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242472/
 
 ## Q242472: Access Violation in Perfmon If Long Extensible Counter DLL Path
 
+{% raw %}
+
 	Article: Q242472
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -84,3 +86,5 @@ permalink: /kb/242/Q242472/
 	
 	=============================================================================
 	
+
+{% endraw %}

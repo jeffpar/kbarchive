@@ -6,6 +6,8 @@ permalink: /kb/085/Q85937/
 
 ## Q85937: Windows: Can't Use Two Roland MPU401 Sound Cards at Same Time
 
+{% raw %}
+
 	Article: Q85937
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -38,3 +40,5 @@ permalink: /kb/085/Q85937/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245243/
 
 ## Q245243: HOW TO: Configure ODBC Logging in IIS
 
+{% raw %}
+
 	Article: Q245243
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -264,3 +266,5 @@ permalink: /kb/245/Q245243/
 	
 	=============================================================================
 	
+
+{% endraw %}

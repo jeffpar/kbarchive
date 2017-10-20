@@ -6,6 +6,8 @@ permalink: /kb/218/Q218750/
 
 ## Q218750: HOWTO: Simulate a Modal Form in Visual Basic CE 6.0
 
+{% raw %}
+
 	Article: Q218750
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -133,3 +135,5 @@ permalink: /kb/218/Q218750/
 	
 	=============================================================================
 	
+
+{% endraw %}

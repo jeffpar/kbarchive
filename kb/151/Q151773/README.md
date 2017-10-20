@@ -6,6 +6,8 @@ permalink: /kb/151/Q151773/
 
 ## Q151773: Flight Simulator: ATI MACH 64 SVGA Option May Not Work
 
+{% raw %}
+
 	Article: Q151773
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1
@@ -116,3 +118,5 @@ permalink: /kb/151/Q151773/
 	
 	=============================================================================
 	
+
+{% endraw %}

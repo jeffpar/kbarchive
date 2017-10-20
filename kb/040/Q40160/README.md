@@ -6,6 +6,8 @@ permalink: /kb/040/Q40160/
 
 ## Q40160: PRB: C2001: Newline in Constant for a String on Multiple Lines
 
+{% raw %}
+
 	Article: Q40160
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/040/Q40160/
 	
 	=============================================================================
 	
+
+{% endraw %}

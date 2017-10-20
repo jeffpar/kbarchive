@@ -6,6 +6,8 @@ permalink: /kb/234/Q234976/
 
 ## Q234976: PRB: Error C0042116: Access Denied Using PDW
 
+{% raw %}
+
 	Article: Q234976
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/234/Q234976/
 	
 	=============================================================================
 	
+
+{% endraw %}

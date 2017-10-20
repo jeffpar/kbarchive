@@ -6,6 +6,8 @@ permalink: /kb/124/Q124293/
 
 ## Q124293: HP JetDirect Firmware Versions and Windows NT Protocol Support
 
+{% raw %}
+
 	Article: Q124293
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -79,3 +81,5 @@ permalink: /kb/124/Q124293/
 	
 	=============================================================================
 	
+
+{% endraw %}

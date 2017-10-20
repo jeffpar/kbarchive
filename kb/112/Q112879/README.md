@@ -6,6 +6,8 @@ permalink: /kb/112/Q112879/
 
 ## Q112879: FFAPI: Address List Contains Local Postoffice Addresses
 
+{% raw %}
+
 	Article: Q112879
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -125,3 +127,5 @@ permalink: /kb/112/Q112879/
 	
 	=============================================================================
 	
+
+{% endraw %}

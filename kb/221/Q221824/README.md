@@ -6,6 +6,8 @@ permalink: /kb/221/Q221824/
 
 ## Q221824: FS98/2000: Sounds Are Played Through Only One Speaker
 
+{% raw %}
+
 	Article: Q221824
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -91,3 +93,5 @@ permalink: /kb/221/Q221824/
 	
 	=============================================================================
 	
+
+{% endraw %}

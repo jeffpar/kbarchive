@@ -6,6 +6,8 @@ permalink: /kb/155/Q155288/
 
 ## Q155288: Slidedmp.exe Will Not Run By Itself
 
+{% raw %}
+
 	Article: Q155288
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; :
@@ -58,3 +60,5 @@ permalink: /kb/155/Q155288/
 	
 	=============================================================================
 	
+
+{% endraw %}

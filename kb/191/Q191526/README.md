@@ -6,6 +6,8 @@ permalink: /kb/191/Q191526/
 
 ## Q191526: PRB: READ MENU In DO..WHILE Loop Causes VFP Screen to Jump
 
+{% raw %}
+
 	Article: Q191526
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -92,3 +94,5 @@ permalink: /kb/191/Q191526/
 	
 	=============================================================================
 	
+
+{% endraw %}

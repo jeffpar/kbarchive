@@ -6,6 +6,8 @@ permalink: /kb/079/Q79890/
 
 ## Q79890: Printing to Auxiliary Ports from MS-DOS Editor and QBasic
 
+{% raw %}
+
 	Article: Q79890
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -61,3 +63,5 @@ permalink: /kb/079/Q79890/
 	
 	=============================================================================
 	
+
+{% endraw %}

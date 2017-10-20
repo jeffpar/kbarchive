@@ -6,6 +6,8 @@ permalink: /kb/179/Q179262/
 
 ## Q179262: FP: JavaScript Moves from &lt;Head&gt; to &lt;Body&gt; Element
 
+{% raw %}
+
 	Article: Q179262
 	Product(s): Word Front Page
 	Version(s): WINDOWS:1.1,97
@@ -68,3 +70,5 @@ permalink: /kb/179/Q179262/
 	
 	=============================================================================
 	
+
+{% endraw %}

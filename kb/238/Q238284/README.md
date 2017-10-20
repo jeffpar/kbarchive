@@ -6,6 +6,8 @@ permalink: /kb/238/Q238284/
 
 ## Q238284: HOWTO: Display Err Msgs from Server When Using Remote Scripting
 
+{% raw %}
+
 	Article: Q238284
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -130,3 +132,5 @@ permalink: /kb/238/Q238284/
 	
 	=============================================================================
 	
+
+{% endraw %}

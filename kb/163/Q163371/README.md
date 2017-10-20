@@ -6,6 +6,8 @@ permalink: /kb/163/Q163371/
 
 ## Q163371: Rdisk Initialization Failed During Unattended Installation
 
+{% raw %}
+
 	Article: Q163371
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/163/Q163371/
 	
 	=============================================================================
 	
+
+{% endraw %}

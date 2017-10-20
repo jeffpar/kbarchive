@@ -6,6 +6,8 @@ permalink: /kb/087/Q87340/
 
 ## Q87340: PRB: Chinese Windows Setup Prompts for Printer Driver Disk
 
+{% raw %}
+
 	Article: Q87340
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/087/Q87340/
 	
 	=============================================================================
 	
+
+{% endraw %}

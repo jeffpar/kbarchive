@@ -6,6 +6,8 @@ permalink: /kb/077/Q77196/
 
 ## Q77196: When Windows 3.0 Setup Installs HIMEM.SYS
 
+{% raw %}
+
 	Article: Q77196
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/077/Q77196/
 	
 	=============================================================================
 	
+
+{% endraw %}

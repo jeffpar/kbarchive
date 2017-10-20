@@ -6,6 +6,8 @@ permalink: /kb/134/Q134562/
 
 ## Q134562: HyperTerminal: File Transfers Using Kermit Fails
 
+{% raw %}
+
 	Article: Q134562
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -48,3 +50,5 @@ permalink: /kb/134/Q134562/
 	
 	=============================================================================
 	
+
+{% endraw %}

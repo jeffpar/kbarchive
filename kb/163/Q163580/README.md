@@ -6,6 +6,8 @@ permalink: /kb/163/Q163580/
 
 ## Q163580: WD97: Error Creating Pre-Existing Custom Document Property
 
+{% raw %}
+
 	Article: Q163580
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -155,3 +157,5 @@ permalink: /kb/163/Q163580/
 	
 	=============================================================================
 	
+
+{% endraw %}

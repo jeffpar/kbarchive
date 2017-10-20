@@ -6,6 +6,8 @@ permalink: /kb/173/Q173972/
 
 ## Q173972: Return of Arcade: Joystick is not Responding
 
+{% raw %}
+
 	Article: Q173972
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -72,3 +74,5 @@ permalink: /kb/173/Q173972/
 	
 	=============================================================================
 	
+
+{% endraw %}

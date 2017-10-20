@@ -6,6 +6,8 @@ permalink: /kb/226/Q226914/
 
 ## Q226914: SMS: Status Message Query Fails Due to Insufficient Tempdb Space
 
+{% raw %}
+
 	Article: Q226914
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/226/Q226914/
 	
 	=============================================================================
 	
+
+{% endraw %}

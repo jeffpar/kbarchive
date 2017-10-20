@@ -6,6 +6,8 @@ permalink: /kb/177/Q177690/
 
 ## Q177690: Microsoft Word 97/Visual Basic Step by Step
 
+{% raw %}
+
 	Article: Q177690
 	Product(s): Microsoft Press
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/177/Q177690/
 	
 	=============================================================================
 	
+
+{% endraw %}

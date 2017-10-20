@@ -6,6 +6,8 @@ permalink: /kb/186/Q186196/
 
 ## Q186196: PRB: Jet ODBC Driver Error 40002: Operation Invalid at This Time
 
+{% raw %}
+
 	Article: Q186196
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/186/Q186196/
 	
 	=============================================================================
 	
+
+{% endraw %}

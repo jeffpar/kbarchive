@@ -6,6 +6,8 @@ permalink: /kb/194/Q194554/
 
 ## Q194554: WD97: Error Running WinFax Macros in SR-2
 
+{% raw %}
+
 	Article: Q194554
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 2
@@ -117,3 +119,5 @@ permalink: /kb/194/Q194554/
 	
 	=============================================================================
 	
+
+{% endraw %}

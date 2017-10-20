@@ -6,6 +6,8 @@ permalink: /kb/146/Q146104/
 
 ## Q146104: XFOR: How to Display Per Postoffice Users in the Address Book
 
+{% raw %}
+
 	Article: Q146104
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -82,3 +84,5 @@ permalink: /kb/146/Q146104/
 	
 	=============================================================================
 	
+
+{% endraw %}

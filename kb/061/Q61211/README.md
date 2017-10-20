@@ -6,6 +6,8 @@ permalink: /kb/061/Q61211/
 
 ## Q61211: C 6.00 README: PWB Run Command Line Cannot Contain &#36; or ^
 
+{% raw %}
+
 	Article: Q61211
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -23,3 +25,5 @@ permalink: /kb/061/Q61211/
 	characters that have special meaning for NMAKE. In particular, you
 	should not use the caret (^) or the dollar sign ($) in command lines
 	that are passed to your application by PWB.
+
+{% endraw %}

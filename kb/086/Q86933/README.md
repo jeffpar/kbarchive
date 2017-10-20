@@ -6,6 +6,8 @@ permalink: /kb/086/Q86933/
 
 ## Q86933: 3COM: Changes Made to the Mail Database During Installation
 
+{% raw %}
+
 	Article: Q86933
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -51,3 +53,5 @@ permalink: /kb/086/Q86933/
 	
 	=============================================================================
 	
+
+{% endraw %}

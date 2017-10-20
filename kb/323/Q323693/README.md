@@ -6,6 +6,8 @@ permalink: /kb/323/Q323693/
 
 ## Q323693: PRB: Err Msg When You Add File with Long Name to VSS Database
 
+{% raw %}
+
 	Article: Q323693
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/323/Q323693/
 	
 	=============================================================================
 	
+
+{% endraw %}

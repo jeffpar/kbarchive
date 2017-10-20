@@ -6,6 +6,8 @@ permalink: /kb/249/Q249680/
 
 ## Q249680: XADM: Deleted Item Retention and Message Delete Process
 
+{% raw %}
+
 	Article: Q249680
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -156,3 +158,5 @@ permalink: /kb/249/Q249680/
 	
 	=============================================================================
 	
+
+{% endraw %}

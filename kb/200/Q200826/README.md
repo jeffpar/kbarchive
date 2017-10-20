@@ -6,6 +6,8 @@ permalink: /kb/200/Q200826/
 
 ## Q200826: SMS: How to Temporarily Stop the Advertisement of Software
 
+{% raw %}
+
 	Article: Q200826
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -67,3 +69,5 @@ permalink: /kb/200/Q200826/
 	
 	=============================================================================
 	
+
+{% endraw %}

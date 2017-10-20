@@ -6,6 +6,8 @@ permalink: /kb/174/Q174467/
 
 ## Q174467: Two Separate Threads In WinSLI Critical Section Can Cause Hang
 
+{% raw %}
+
 	Article: Q174467
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -57,3 +59,5 @@ permalink: /kb/174/Q174467/
 	
 	=============================================================================
 	
+
+{% endraw %}

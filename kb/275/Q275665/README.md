@@ -6,6 +6,8 @@ permalink: /kb/275/Q275665/
 
 ## Q275665: Flight Simulator: Cannot Use Numeric Keypad to Control Aircraft
 
+{% raw %}
+
 	Article: Q275665
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/275/Q275665/
 	
 	=============================================================================
 	
+
+{% endraw %}

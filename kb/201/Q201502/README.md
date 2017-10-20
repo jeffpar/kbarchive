@@ -6,6 +6,8 @@ permalink: /kb/201/Q201502/
 
 ## Q201502: PRB: Duplicate Control Boxes in MDIForm When Using Status Bar
 
+{% raw %}
+
 	Article: Q201502
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -173,3 +175,5 @@ permalink: /kb/201/Q201502/
 	
 	=============================================================================
 	
+
+{% endraw %}

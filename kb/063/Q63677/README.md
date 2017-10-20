@@ -6,6 +6,8 @@ permalink: /kb/063/Q63677/
 
 ## Q63677: EMM386.SYS Page Frame Uses &quot;p3&quot; Parameter, Not &quot;p4&quot;
 
+{% raw %}
+
 	Article: Q63677
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -61,3 +63,5 @@ permalink: /kb/063/Q63677/
 	
 	=============================================================================
 	
+
+{% endraw %}

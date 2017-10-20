@@ -6,6 +6,8 @@ permalink: /kb/035/Q35432/
 
 ## Q35432: &quot;Divide by Zero&quot; PRINT USING Double-Precision Format Overflow
 
+{% raw %}
+
 	Article: Q35432
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -54,3 +56,5 @@ permalink: /kb/035/Q35432/
 	  PRINT "***************************************", ERR
 	  'When i is between 99 and 154, you get ERR 11, "Division by zero".
 	  RESUME NEXT
+
+{% endraw %}

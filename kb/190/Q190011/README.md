@@ -6,6 +6,8 @@ permalink: /kb/190/Q190011/
 
 ## Q190011: Perl Script Mappings Converted to Uppercase During Upgrade
 
+{% raw %}
+
 	Article: Q190011
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -80,3 +82,5 @@ permalink: /kb/190/Q190011/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50559/
 
 ## Q50559: Software Documentation Available for Blind Customers
 
+{% raw %}
+
 	Article: Q50559
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/050/Q50559/
 	
 	=============================================================================
 	
+
+{% endraw %}

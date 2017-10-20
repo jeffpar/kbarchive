@@ -6,6 +6,8 @@ permalink: /kb/068/Q68932/
 
 ## Q68932: False Cursor Trail in SimEarth with Mouse Driver 7.00
 
+{% raw %}
+
 	Article: Q68932
 	Product(s): See article
 	Version(s): 1.00
@@ -28,3 +30,5 @@ permalink: /kb/068/Q68932/
 	manufactured by a vendor independent of Microsoft; we make no
 	warranty, implied or otherwise, regarding the product's performance or
 	reliability.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159774/
 
 ## Q159774: DOCERR: Adding Visual C++ Projects to Source Control
 
+{% raw %}
+
 	Article: Q159774
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/159/Q159774/
 	
 	=============================================================================
 	
+
+{% endraw %}

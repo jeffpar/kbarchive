@@ -6,6 +6,8 @@ permalink: /kb/314/Q314259/
 
 ## Q314259: XADM: MAPI Client Hangs Deleting Multiple Messages
 
+{% raw %}
+
 	Article: Q314259
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -64,3 +66,5 @@ permalink: /kb/314/Q314259/
 	
 	=============================================================================
 	
+
+{% endraw %}

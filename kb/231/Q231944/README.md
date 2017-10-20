@@ -6,6 +6,8 @@ permalink: /kb/231/Q231944/
 
 ## Q231944: NumLock Key State Is Not Saved When You Log Off
 
+{% raw %}
+
 	Article: Q231944
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/231/Q231944/
 	
 	=============================================================================
 	
+
+{% endraw %}

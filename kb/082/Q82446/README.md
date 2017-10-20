@@ -6,6 +6,8 @@ permalink: /kb/082/Q82446/
 
 ## Q82446: SMARTDRV.EXE 4.0 Conflicts with PLUSDRV.SYS
 
+{% raw %}
+
 	Article: Q82446
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/082/Q82446/
 	
 	=============================================================================
 	
+
+{% endraw %}

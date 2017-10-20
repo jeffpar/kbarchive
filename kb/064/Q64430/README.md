@@ -6,6 +6,8 @@ permalink: /kb/064/Q64430/
 
 ## Q64430: Abrupt Branch to ON Event GOSUB Handler from Separate Handler
 
+{% raw %}
+
 	Article: Q64430
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -135,3 +137,5 @@ permalink: /kb/064/Q64430/
 	
 	4. Page 357 of "Microsoft QuickBASIC Compiler" manual for versions
 	   2.00, 2.01, and 3.00
+
+{% endraw %}

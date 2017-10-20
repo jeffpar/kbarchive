@@ -6,6 +6,8 @@ permalink: /kb/118/Q118399/
 
 ## Q118399: UNC-Format Path Affects the DIR Command
 
+{% raw %}
+
 	Article: Q118399
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -106,3 +108,5 @@ permalink: /kb/118/Q118399/
 	
 	=============================================================================
 	
+
+{% endraw %}

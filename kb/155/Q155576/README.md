@@ -6,6 +6,8 @@ permalink: /kb/155/Q155576/
 
 ## Q155576: WinCim 2.01 Sounds Do Not Play After Rebooting
 
+{% raw %}
+
 	Article: Q155576
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/155/Q155576/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119487/
 
 ## Q119487: BUG: Time Value Converted to Datetime Using Access ODBC Driver
 
+{% raw %}
+
 	Article: Q119487
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -115,3 +117,5 @@ permalink: /kb/119/Q119487/
 	
 	=============================================================================
 	
+
+{% endraw %}

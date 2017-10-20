@@ -6,6 +6,8 @@ permalink: /kb/077/Q77874/
 
 ## Q77874: TOPS Network Versions 2.x Not Compatible with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q77874
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -49,3 +51,5 @@ permalink: /kb/077/Q77874/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/201/Q201753/
 
 ## Q201753: SMS: Software Inventory Corruption in SQL Database
 
+{% raw %}
+
 	Article: Q201753
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -62,3 +64,5 @@ permalink: /kb/201/Q201753/
 	
 	=============================================================================
 	
+
+{% endraw %}

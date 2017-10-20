@@ -6,6 +6,8 @@ permalink: /kb/244/Q244535/
 
 ## Q244535: HOW TO: Move a FrontPage Extended Web Site to Different Location
 
+{% raw %}
+
 	Article: Q244535
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -105,3 +107,5 @@ permalink: /kb/244/Q244535/
 	
 	=============================================================================
 	
+
+{% endraw %}

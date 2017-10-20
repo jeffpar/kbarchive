@@ -6,6 +6,8 @@ permalink: /kb/237/Q237267/
 
 ## Q237267: Encarta 2000: Cannot Start Program After Upgrade to Windows 2000
 
+{% raw %}
+
 	Article: Q237267
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:
@@ -75,3 +77,5 @@ permalink: /kb/237/Q237267/
 	
 	=============================================================================
 	
+
+{% endraw %}

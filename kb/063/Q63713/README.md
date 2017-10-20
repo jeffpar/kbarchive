@@ -6,6 +6,8 @@ permalink: /kb/063/Q63713/
 
 ## Q63713: Largest Document Size MS-DOS Editor Can Edit
 
+{% raw %}
+
 	Article: Q63713
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -49,3 +51,5 @@ permalink: /kb/063/Q63713/
 	
 	=============================================================================
 	
+
+{% endraw %}

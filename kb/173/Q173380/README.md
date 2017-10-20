@@ -6,6 +6,8 @@ permalink: /kb/173/Q173380/
 
 ## Q173380: XWEB: Pressing Enter when Focus is on Header Field will Send Msg
 
+{% raw %}
+
 	Article: Q173380
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -48,3 +50,5 @@ permalink: /kb/173/Q173380/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146333/
 
 ## Q146333: How to Remove Network Adapters from the Registry
 
+{% raw %}
+
 	Article: Q146333
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -65,3 +67,5 @@ permalink: /kb/146/Q146333/
 	
 	=============================================================================
 	
+
+{% endraw %}

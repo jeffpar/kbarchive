@@ -6,6 +6,8 @@ permalink: /kb/164/Q164267/
 
 ## Q164267: NTFS May Cause Windows NT to Fail During a Rename
 
+{% raw %}
+
 	Article: Q164267
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -58,3 +60,5 @@ permalink: /kb/164/Q164267/
 	
 	=============================================================================
 	
+
+{% endraw %}

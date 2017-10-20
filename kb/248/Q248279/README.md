@@ -6,6 +6,8 @@ permalink: /kb/248/Q248279/
 
 ## Q248279: Poor Performance Observed on WLBS Hosts
 
+{% raw %}
+
 	Article: Q248279
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,4.0
@@ -94,3 +96,5 @@ permalink: /kb/248/Q248279/
 	
 	=============================================================================
 	
+
+{% endraw %}

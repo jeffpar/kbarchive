@@ -6,6 +6,8 @@ permalink: /kb/149/Q149981/
 
 ## Q149981: Baseball Daily No Longer Offered
 
+{% raw %}
+
 	Article: Q149981
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition; WINDOWS:
@@ -46,3 +48,5 @@ permalink: /kb/149/Q149981/
 	
 	=============================================================================
 	
+
+{% endraw %}

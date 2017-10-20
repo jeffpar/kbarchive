@@ -6,6 +6,8 @@ permalink: /kb/135/Q135516/
 
 ## Q135516: DOC: DBSETPROP Example Contains Extra Zero
 
+{% raw %}
+
 	Article: Q135516
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/135/Q135516/
 	
 	=============================================================================
 	
+
+{% endraw %}

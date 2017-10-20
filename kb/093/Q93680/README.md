@@ -6,6 +6,8 @@ permalink: /kb/093/Q93680/
 
 ## Q93680: How, When, and Why to Use MONOUMB and MONOUMB2.386
 
+{% raw %}
+
 	Article: Q93680
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21; WINDOWS:3.1
@@ -88,3 +90,5 @@ permalink: /kb/093/Q93680/
 	
 	=============================================================================
 	
+
+{% endraw %}

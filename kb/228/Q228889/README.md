@@ -6,6 +6,8 @@ permalink: /kb/228/Q228889/
 
 ## Q228889: Err Msg: &quot;NFS Login Failed&quot; When Connecting to NFS Share
 
+{% raw %}
+
 	Article: Q228889
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/228/Q228889/
 	
 	=============================================================================
 	
+
+{% endraw %}

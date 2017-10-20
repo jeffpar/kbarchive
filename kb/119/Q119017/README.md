@@ -6,6 +6,8 @@ permalink: /kb/119/Q119017/
 
 ## Q119017: PC DirSync: Err Msg: Possible Database Corruption Detected...
 
+{% raw %}
+
 	Article: Q119017
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -80,3 +82,5 @@ permalink: /kb/119/Q119017/
 	
 	=============================================================================
 	
+
+{% endraw %}

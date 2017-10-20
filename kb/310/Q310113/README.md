@@ -6,6 +6,8 @@ permalink: /kb/310/Q310113/
 
 ## Q310113: Ldap Query Following a Simple Bind May Not Work
 
+{% raw %}
+
 	Article: Q310113
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,2000 SP2
@@ -130,3 +132,5 @@ permalink: /kb/310/Q310113/
 	
 	=============================================================================
 	
+
+{% endraw %}

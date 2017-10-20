@@ -6,6 +6,8 @@ permalink: /kb/047/Q47002/
 
 ## Q47002: How to Change the Size of a Presentation Graphics Chart
 
+{% raw %}
+
 	Article: Q47002
 	Product(s): See article
 	Version(s): 2.00
@@ -121,3 +123,5 @@ permalink: /kb/047/Q47002/
 	
 	         return(0);
 	         }
+
+{% endraw %}

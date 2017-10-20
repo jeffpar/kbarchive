@@ -6,6 +6,8 @@ permalink: /kb/193/Q193694/
 
 ## Q193694: Index Server Cannot Filter Older Office Documents
 
+{% raw %}
+
 	Article: Q193694
 	Product(s): Internet Information Server
 	Version(s): winnt:1.1,2.0
@@ -57,3 +59,5 @@ permalink: /kb/193/Q193694/
 	
 	=============================================================================
 	
+
+{% endraw %}

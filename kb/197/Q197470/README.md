@@ -6,6 +6,8 @@ permalink: /kb/197/Q197470/
 
 ## Q197470: WD97: Fonts Not Displayed with True WYSIWYG
 
+{% raw %}
+
 	Article: Q197470
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -49,3 +51,5 @@ permalink: /kb/197/Q197470/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/060/Q60845/
 
 ## Q60845: Source Level Routing and OpenAdapter Issues
 
+{% raw %}
+
 	Article: Q60845
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/060/Q60845/
 	
 	=============================================================================
 	
+
+{% endraw %}

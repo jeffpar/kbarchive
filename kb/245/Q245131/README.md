@@ -6,6 +6,8 @@ permalink: /kb/245/Q245131/
 
 ## Q245131: GSNW Shares Appear to Be Deleted After You Restart Windows NT.
 
+{% raw %}
+
 	Article: Q245131
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/245/Q245131/
 	
 	=============================================================================
 	
+
+{% endraw %}

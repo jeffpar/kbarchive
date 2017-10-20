@@ -6,6 +6,8 @@ permalink: /kb/067/Q67482/
 
 ## Q67482: Link Not Performed During Build or Make
 
+{% raw %}
+
 	Article: Q67482
 	Product(s): See article
 	Version(s): 1.00
@@ -30,3 +32,5 @@ permalink: /kb/067/Q67482/
 	Microsoft has confirmed this to be a problem in PWB.COM version 1.00
 	and NMK.COM version 1.00. This problem was corrected in PWB.COM
 	version 1.10 and NMK.COM version 1.11.
+
+{% endraw %}

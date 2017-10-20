@@ -6,6 +6,8 @@ permalink: /kb/107/Q107491/
 
 ## Q107491: Encarta: Cannot Use WordPerfect or AmiPro as Word Processors
 
+{% raw %}
+
 	Article: Q107491
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1993 edition,1994 edition
@@ -74,3 +76,5 @@ permalink: /kb/107/Q107491/
 	
 	=============================================================================
 	
+
+{% endraw %}

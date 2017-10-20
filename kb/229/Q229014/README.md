@@ -6,6 +6,8 @@ permalink: /kb/229/Q229014/
 
 ## Q229014: &quot;Connected Users&quot; Values When Using Anonymous Access on FTP Site
 
+{% raw %}
+
 	Article: Q229014
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/229/Q229014/
 	
 	=============================================================================
 	
+
+{% endraw %}

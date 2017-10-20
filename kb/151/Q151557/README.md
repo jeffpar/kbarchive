@@ -6,6 +6,8 @@ permalink: /kb/151/Q151557/
 
 ## Q151557: FP: FrontPage Doesn't Support FTP, Gopher, Telnet, WAIS Protocol
 
+{% raw %}
+
 	Article: Q151557
 	Product(s): Word Front Page
 	Version(s): WINDOWS:1.1
@@ -63,3 +65,5 @@ permalink: /kb/151/Q151557/
 	
 	=============================================================================
 	
+
+{% endraw %}

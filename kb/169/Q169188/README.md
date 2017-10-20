@@ -6,6 +6,8 @@ permalink: /kb/169/Q169188/
 
 ## Q169188: Mac Cinemania 97: How to Manually Install Program
 
+{% raw %}
+
 	Article: Q169188
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -154,3 +156,5 @@ permalink: /kb/169/Q169188/
 	
 	=============================================================================
 	
+
+{% endraw %}

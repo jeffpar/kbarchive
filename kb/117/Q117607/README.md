@@ -6,6 +6,8 @@ permalink: /kb/117/Q117607/
 
 ## Q117607: FIX: Common Dialog Classes Don't Update DDX Member Variables
 
+{% raw %}
+
 	Article: Q117607
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0
@@ -55,3 +57,5 @@ permalink: /kb/117/Q117607/
 	
 	=============================================================================
 	
+
+{% endraw %}

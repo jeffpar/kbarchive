@@ -6,6 +6,8 @@ permalink: /kb/303/Q303211/
 
 ## Q303211: Err Msg: &quot;&#91;Object Error&#93; No such partner or key version found&quot;
 
+{% raw %}
+
 	Article: Q303211
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4,1.99
@@ -80,3 +82,5 @@ permalink: /kb/303/Q303211/
 	
 	=============================================================================
 	
+
+{% endraw %}

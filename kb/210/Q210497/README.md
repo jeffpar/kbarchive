@@ -6,6 +6,8 @@ permalink: /kb/210/Q210497/
 
 ## Q210497: Golf 99: Incorrect Distance Stated in Flyby Commentary Script
 
+{% raw %}
+
 	Article: Q210497
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/210/Q210497/
 	
 	=============================================================================
 	
+
+{% endraw %}

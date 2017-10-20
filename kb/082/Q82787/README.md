@@ -6,6 +6,8 @@ permalink: /kb/082/Q82787/
 
 ## Q82787: Meaning of LocalTSRs= in SYSTEM.INI
 
+{% raw %}
+
 	Article: Q82787
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/082/Q82787/
 	
 	=============================================================================
 	
+
+{% endraw %}

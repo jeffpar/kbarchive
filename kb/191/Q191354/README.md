@@ -6,6 +6,8 @@ permalink: /kb/191/Q191354/
 
 ## Q191354: SMS: Remote Control May Fail with a Fire 1000GL Video Card
 
+{% raw %}
+
 	Article: Q191354
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -60,3 +62,5 @@ permalink: /kb/191/Q191354/
 	
 	=============================================================================
 	
+
+{% endraw %}

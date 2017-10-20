@@ -6,6 +6,8 @@ permalink: /kb/162/Q162932/
 
 ## Q162932: PRB: VSS Integration Dialog Box Does Not Respond to Keyboard
 
+{% raw %}
+
 	Article: Q162932
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/162/Q162932/
 	
 	=============================================================================
 	
+
+{% endraw %}

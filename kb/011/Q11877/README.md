@@ -6,6 +6,8 @@ permalink: /kb/011/Q11877/
 
 ## Q11877: Debugging Routines That Are in Libraries
 
+{% raw %}
+
 	Article: Q11877
 	Product(s): See article
 	Version(s): 1.00 1.10 2.00 2.10 2.20 2.30 | 2.20 2.30
@@ -40,3 +42,5 @@ permalink: /kb/011/Q11877/
 	Another solution is to use Library Manager Version 3.07 (which came
 	with MASM 5.00) or later; this solves the problem by not stripping the
 	file's extension as it is put into a library.
+
+{% endraw %}

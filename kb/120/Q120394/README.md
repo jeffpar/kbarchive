@@ -6,6 +6,8 @@ permalink: /kb/120/Q120394/
 
 ## Q120394: BUG: PS for DOS GPFs When Using an NT Makefile
 
+{% raw %}
+
 	Article: Q120394
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -65,3 +67,5 @@ permalink: /kb/120/Q120394/
 	
 	=============================================================================
 	
+
+{% endraw %}

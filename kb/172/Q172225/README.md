@@ -6,6 +6,8 @@ permalink: /kb/172/Q172225/
 
 ## Q172225: SMS: Delete Special Still Available with View-Only Access
 
+{% raw %}
+
 	Article: Q172225
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -56,3 +58,5 @@ permalink: /kb/172/Q172225/
 	
 	=============================================================================
 	
+
+{% endraw %}

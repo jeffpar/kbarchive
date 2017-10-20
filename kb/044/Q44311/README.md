@@ -6,6 +6,8 @@ permalink: /kb/044/Q44311/
 
 ## Q44311: Importing Pictures from Other Programs into BASIC
 
+{% raw %}
+
 	Article: Q44311
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -40,3 +42,5 @@ permalink: /kb/044/Q44311/
 	Note: There are several graphics programs available on CompuServe and
 	GE GEnie (General Electric Network for Information Exchange) that are
 	suitable for this use.
+
+{% endraw %}

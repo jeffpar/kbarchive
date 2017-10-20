@@ -6,6 +6,8 @@ permalink: /kb/243/Q243604/
 
 ## Q243604: XGEN: File Versions for Exchange 5.5, 5.5 SP1,5.5 SP2, &amp; 5.5 SP3
 
+{% raw %}
+
 	Article: Q243604
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -483,3 +485,5 @@ permalink: /kb/243/Q243604/
 	
 	=============================================================================
 	
+
+{% endraw %}

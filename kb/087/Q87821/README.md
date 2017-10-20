@@ -6,6 +6,8 @@ permalink: /kb/087/Q87821/
 
 ## Q87821: Using Gestures in Windows for Pen Computing
 
+{% raw %}
+
 	Article: Q87821
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0,1.0a
@@ -65,3 +67,5 @@ permalink: /kb/087/Q87821/
 	
 	=============================================================================
 	
+
+{% endraw %}

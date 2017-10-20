@@ -6,6 +6,8 @@ permalink: /kb/167/Q167675/
 
 ## Q167675: BUG: Certain Non-US Characters Do Not Display Properly in VFP
 
+{% raw %}
+
 	Article: Q167675
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -94,3 +96,5 @@ permalink: /kb/167/Q167675/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139543/
 
 ## Q139543: Infrared Data Association Relnotes.doc File (Part 2 of 2)
 
+{% raw %}
+
 	Article: Q139543
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -487,3 +489,5 @@ permalink: /kb/139/Q139543/
 	
 	=============================================================================
 	
+
+{% endraw %}

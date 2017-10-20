@@ -6,6 +6,8 @@ permalink: /kb/130/Q130463/
 
 ## Q130463: HOWTO: How to Import Microsoft Access Data
 
+{% raw %}
+
 	Article: Q130463
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,6.0
@@ -55,3 +57,5 @@ permalink: /kb/130/Q130463/
 	
 	=============================================================================
 	
+
+{% endraw %}

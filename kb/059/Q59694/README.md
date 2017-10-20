@@ -6,6 +6,8 @@ permalink: /kb/059/Q59694/
 
 ## Q59694: Okidata 24-Pin Driver Lacks Accelerators
 
+{% raw %}
+
 	Article: Q59694
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -45,3 +47,5 @@ permalink: /kb/059/Q59694/
 	
 	=============================================================================
 	
+
+{% endraw %}

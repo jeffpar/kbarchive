@@ -6,6 +6,8 @@ permalink: /kb/162/Q162117/
 
 ## Q162117: Identical Documents May Print Differently from Win 95 Clients
 
+{% raw %}
+
 	Article: Q162117
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/162/Q162117/
 	
 	=============================================================================
 	
+
+{% endraw %}

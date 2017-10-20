@@ -6,6 +6,8 @@ permalink: /kb/081/Q81361/
 
 ## Q81361: MS-DOS Err Msg: Not Resetting System&#124;Hidden File
 
+{% raw %}
+
 	Article: Q81361
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22; WINDOWS:95
@@ -80,3 +82,5 @@ permalink: /kb/081/Q81361/
 	
 	=============================================================================
 	
+
+{% endraw %}

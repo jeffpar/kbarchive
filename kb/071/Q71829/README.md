@@ -6,6 +6,8 @@ permalink: /kb/071/Q71829/
 
 ## Q71829: WD97: Using MergeRec to Number Mail Merge Records
 
+{% raw %}
+
 	Article: Q71829
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/071/Q71829/
 	
 	=============================================================================
 	
+
+{% endraw %}

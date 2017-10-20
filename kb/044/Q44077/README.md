@@ -6,6 +6,8 @@ permalink: /kb/044/Q44077/
 
 ## Q44077: Internal Compiler Error: grammar.c:1.29, Line 108
 
+{% raw %}
+
 	Article: Q44077
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -54,3 +56,5 @@ permalink: /kb/044/Q44077/
 	     short x,y;
 	     int fudge_factor;
 	};
+
+{% endraw %}

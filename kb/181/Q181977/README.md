@@ -6,6 +6,8 @@ permalink: /kb/181/Q181977/
 
 ## Q181977: Application Exception in Snanmvt.exe
 
+{% raw %}
+
 	Article: Q181977
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -135,3 +137,5 @@ permalink: /kb/181/Q181977/
 	
 	=============================================================================
 	
+
+{% endraw %}

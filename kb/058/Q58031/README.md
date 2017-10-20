@@ -6,6 +6,8 @@ permalink: /kb/058/Q58031/
 
 ## Q58031: Flt Sim: ATIS and CT Transmissions Scroll After Pausing
 
+{% raw %}
+
 	Article: Q58031
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -27,3 +29,5 @@ permalink: /kb/058/Q58031/
 	
 	=============================================================================
 	
+
+{% endraw %}

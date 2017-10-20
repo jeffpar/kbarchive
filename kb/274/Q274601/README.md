@@ -6,6 +6,8 @@ permalink: /kb/274/Q274601/
 
 ## Q274601: XADM: Mailbox Manager Does Not Detect Hidden Mailboxes
 
+{% raw %}
+
 	Article: Q274601
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -57,3 +59,5 @@ permalink: /kb/274/Q274601/
 	
 	=============================================================================
 	
+
+{% endraw %}

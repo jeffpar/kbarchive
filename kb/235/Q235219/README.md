@@ -6,6 +6,8 @@ permalink: /kb/235/Q235219/
 
 ## Q235219: XADM: Too Many Consecutive CRLFs Truncate Message
 
+{% raw %}
+
 	Article: Q235219
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -93,3 +95,5 @@ permalink: /kb/235/Q235219/
 	
 	=============================================================================
 	
+
+{% endraw %}

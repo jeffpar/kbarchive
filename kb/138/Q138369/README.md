@@ -6,6 +6,8 @@ permalink: /kb/138/Q138369/
 
 ## Q138369: Start Menu Shortcut Removed When DriveSpace 3 Is Removed
 
+{% raw %}
+
 	Article: Q138369
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -64,3 +66,5 @@ permalink: /kb/138/Q138369/
 	
 	=============================================================================
 	
+
+{% endraw %}

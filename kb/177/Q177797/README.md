@@ -6,6 +6,8 @@ permalink: /kb/177/Q177797/
 
 ## Q177797: WD97: Word 6.0/95 Not in &quot;Save As Type&quot; in Save As Dialog Box
 
+{% raw %}
+
 	Article: Q177797
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -280,3 +282,5 @@ permalink: /kb/177/Q177797/
 	
 	=============================================================================
 	
+
+{% endraw %}

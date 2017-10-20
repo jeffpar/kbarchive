@@ -6,6 +6,8 @@ permalink: /kb/110/Q110124/
 
 ## Q110124: How to Use Alternate CONFIG.FPM Files with FoxPro for Mac
 
+{% raw %}
+
 	Article: Q110124
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -58,3 +60,5 @@ permalink: /kb/110/Q110124/
 	
 	=============================================================================
 	
+
+{% endraw %}

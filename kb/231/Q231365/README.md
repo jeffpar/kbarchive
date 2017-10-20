@@ -6,6 +6,8 @@ permalink: /kb/231/Q231365/
 
 ## Q231365: Microsoft BackOffice 4.5 Resource Kit Setup.exe Fails With SP5
 
+{% raw %}
+
 	Article: Q231365
 	Product(s): Microsoft Press
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/231/Q231365/
 	
 	=============================================================================
 	
+
+{% endraw %}

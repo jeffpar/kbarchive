@@ -6,6 +6,8 @@ permalink: /kb/039/Q39973/
 
 ## Q39973: Accessing I/O Ports under OS/2 Protected Mode
 
+{% raw %}
+
 	Article: Q39973
 	Product(s): See article
 	Version(s): 5.10
@@ -43,3 +45,5 @@ permalink: /kb/039/Q39973/
 	Note: Segments that have IOPL cannot make system calls. If you do,
 	you will generate a GP fault, a general protection violation. This
 	behavior is discussed on Page 239 of Letwin's "Inside OS/2."
+
+{% endraw %}

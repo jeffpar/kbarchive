@@ -6,6 +6,8 @@ permalink: /kb/240/Q240628/
 
 ## Q240628: SMS: Install May Not Assign Client to a Site
 
+{% raw %}
+
 	Article: Q240628
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -65,3 +67,5 @@ permalink: /kb/240/Q240628/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98753/
 
 ## Q98753: ERR: &quot;Feature Not Available&quot;; MODIFY/CREATE QUERY in .EXE File
 
+{% raw %}
+
 	Article: Q98753
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -74,3 +76,5 @@ permalink: /kb/098/Q98753/
 	
 	=============================================================================
 	
+
+{% endraw %}

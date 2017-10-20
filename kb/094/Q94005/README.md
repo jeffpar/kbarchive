@@ -6,6 +6,8 @@ permalink: /kb/094/Q94005/
 
 ## Q94005: Notepad Does Not Save Margin Settings
 
+{% raw %}
+
 	Article: Q94005
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11,95
@@ -38,3 +40,5 @@ permalink: /kb/094/Q94005/
 	
 	=============================================================================
 	
+
+{% endraw %}

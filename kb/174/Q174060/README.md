@@ -6,6 +6,8 @@ permalink: /kb/174/Q174060/
 
 ## Q174060: XADM: Storage Limits Cannot be Propagated to Subfolders
 
+{% raw %}
+
 	Article: Q174060
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -52,3 +54,5 @@ permalink: /kb/174/Q174060/
 	
 	=============================================================================
 	
+
+{% endraw %}

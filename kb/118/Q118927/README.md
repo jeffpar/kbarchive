@@ -6,6 +6,8 @@ permalink: /kb/118/Q118927/
 
 ## Q118927: PC Adm: Setting Passwords Using the Administrator Program
 
+{% raw %}
+
 	Article: Q118927
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -124,3 +126,5 @@ permalink: /kb/118/Q118927/
 	
 	=============================================================================
 	
+
+{% endraw %}

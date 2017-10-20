@@ -6,6 +6,8 @@ permalink: /kb/299/Q299695/
 
 ## Q299695: FIX: Err Msg: &quot;Ambiguous date/datetime constant&quot; with View
 
+{% raw %}
+
 	Article: Q299695
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -114,3 +116,5 @@ permalink: /kb/299/Q299695/
 	
 	=============================================================================
 	
+
+{% endraw %}

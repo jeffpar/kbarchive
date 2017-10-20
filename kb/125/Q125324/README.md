@@ -6,6 +6,8 @@ permalink: /kb/125/Q125324/
 
 ## Q125324: INF: Semantics of SELECT DISTINCT with ORDER BY
 
+{% raw %}
+
 	Article: Q125324
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -85,3 +87,5 @@ permalink: /kb/125/Q125324/
 	
 	=============================================================================
 	
+
+{% endraw %}

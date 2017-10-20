@@ -6,6 +6,8 @@ permalink: /kb/234/Q234600/
 
 ## Q234600: Publisher 2000 At a Glance Comments and Corrections
 
+{% raw %}
+
 	Article: Q234600
 	Product(s): Microsoft Press
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/234/Q234600/
 	
 	=============================================================================
 	
+
+{% endraw %}

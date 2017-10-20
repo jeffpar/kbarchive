@@ -6,6 +6,8 @@ permalink: /kb/192/Q192939/
 
 ## Q192939: XFOR: Event 4123; Message Not Delivered
 
+{% raw %}
+
 	Article: Q192939
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -84,3 +86,5 @@ permalink: /kb/192/Q192939/
 	
 	=============================================================================
 	
+
+{% endraw %}

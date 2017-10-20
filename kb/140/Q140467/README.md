@@ -6,6 +6,8 @@ permalink: /kb/140/Q140467/
 
 ## Q140467: How to Set Up Printers on FPNW to Service PSERVER.EXE
 
+{% raw %}
+
 	Article: Q140467
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -96,3 +98,5 @@ permalink: /kb/140/Q140467/
 	
 	=============================================================================
 	
+
+{% endraw %}

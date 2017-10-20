@@ -6,6 +6,8 @@ permalink: /kb/199/Q199248/
 
 ## Q199248: SMS: Limited Support for Dual Boot Clients
 
+{% raw %}
+
 	Article: Q199248
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/199/Q199248/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170472/
 
 ## Q170472: XADM: Access Denied Error When Starting Exchange Administrator
 
+{% raw %}
+
 	Article: Q170472
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -83,3 +85,5 @@ permalink: /kb/170/Q170472/
 	
 	=============================================================================
 	
+
+{% endraw %}

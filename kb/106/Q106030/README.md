@@ -6,6 +6,8 @@ permalink: /kb/106/Q106030/
 
 ## Q106030: How to Print Multiple Copies of the Same Label
 
+{% raw %}
+
 	Article: Q106030
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -106,3 +108,5 @@ permalink: /kb/106/Q106030/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246891/
 
 ## Q246891: BUG: Build Errors on Non-Void Return Types for Friend Function
 
+{% raw %}
+
 	Article: Q246891
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0
@@ -130,3 +132,5 @@ permalink: /kb/246/Q246891/
 	
 	=============================================================================
 	
+
+{% endraw %}

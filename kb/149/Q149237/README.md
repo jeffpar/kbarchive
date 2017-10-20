@@ -6,6 +6,8 @@ permalink: /kb/149/Q149237/
 
 ## Q149237: BUG: 4 Class Wizard Problems w/ International System Settings
 
+{% raw %}
+
 	Article: Q149237
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0
@@ -205,3 +207,5 @@ permalink: /kb/149/Q149237/
 	
 	=============================================================================
 	
+
+{% endraw %}

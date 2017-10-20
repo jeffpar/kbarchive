@@ -6,6 +6,8 @@ permalink: /kb/133/Q133169/
 
 ## Q133169: Encarta: Copying .Wav Sound Files from Encarta
 
+{% raw %}
+
 	Article: Q133169
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition,1995 edition; WINDOWS:
@@ -94,3 +96,5 @@ permalink: /kb/133/Q133169/
 	
 	=============================================================================
 	
+
+{% endraw %}

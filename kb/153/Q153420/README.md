@@ -6,6 +6,8 @@ permalink: /kb/153/Q153420/
 
 ## Q153420: MSN Does Not Dial Manually Entered Access Number
 
+{% raw %}
+
 	Article: Q153420
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -68,3 +70,5 @@ permalink: /kb/153/Q153420/
 	
 	=============================================================================
 	
+
+{% endraw %}

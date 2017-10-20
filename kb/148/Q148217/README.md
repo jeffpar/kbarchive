@@ -6,6 +6,8 @@ permalink: /kb/148/Q148217/
 
 ## Q148217: Mastering VB Err Msg: Run Time Error 438
 
+{% raw %}
+
 	Article: Q148217
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/148/Q148217/
 	
 	=============================================================================
 	
+
+{% endraw %}

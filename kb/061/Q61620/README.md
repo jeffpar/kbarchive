@@ -6,6 +6,8 @@ permalink: /kb/061/Q61620/
 
 ## Q61620: Internal Compiler Error '@(#)regMD.c:1.100' Line 3837
 
+{% raw %}
+
 	Article: Q61620
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -57,3 +59,5 @@ permalink: /kb/061/Q61620/
 	Microsoft has confirmed this to be a problem with C version 6.00. We
 	are researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

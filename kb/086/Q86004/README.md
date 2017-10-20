@@ -6,6 +6,8 @@ permalink: /kb/086/Q86004/
 
 ## Q86004: PC Win: Setup Does Not Remove 2.1 Windows Client
 
+{% raw %}
+
 	Article: Q86004
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/086/Q86004/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244610/
 
 ## Q244610: Err Msg: The Protected Storage Service Terminated with...
 
+{% raw %}
+
 	Article: Q244610
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -132,3 +134,5 @@ permalink: /kb/244/Q244610/
 	
 	=============================================================================
 	
+
+{% endraw %}

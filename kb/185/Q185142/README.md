@@ -6,6 +6,8 @@ permalink: /kb/185/Q185142/
 
 ## Q185142: NetWare API Log Logical Record May Incorrectly Succeed
 
+{% raw %}
+
 	Article: Q185142
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/185/Q185142/
 	
 	=============================================================================
 	
+
+{% endraw %}

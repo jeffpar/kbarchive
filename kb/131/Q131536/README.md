@@ -6,6 +6,8 @@ permalink: /kb/131/Q131536/
 
 ## Q131536: Mac Encarta 95: Encarta Fails to Start and Stopwatch Appears
 
+{% raw %}
+
 	Article: Q131536
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -80,3 +82,5 @@ permalink: /kb/131/Q131536/
 	
 	=============================================================================
 	
+
+{% endraw %}

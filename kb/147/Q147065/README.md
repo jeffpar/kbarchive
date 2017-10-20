@@ -6,6 +6,8 @@ permalink: /kb/147/Q147065/
 
 ## Q147065: XCLN: Not Open Attachment w/ Incorrect Extension
 
+{% raw %}
+
 	Article: Q147065
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/147/Q147065/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/327/Q327041/
 
 ## Q327041: Customer Cannot Access Hotmail's POP Mail Retrieval Feature
 
+{% raw %}
+
 	Article: Q327041
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/327/Q327041/
 	
 	=============================================================================
 	
+
+{% endraw %}

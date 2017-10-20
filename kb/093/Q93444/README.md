@@ -6,6 +6,8 @@ permalink: /kb/093/Q93444/
 
 ## Q93444: Tuning TCP/IP for Performance
 
+{% raw %}
+
 	Article: Q93444
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -143,3 +145,5 @@ permalink: /kb/093/Q93444/
 	
 	=============================================================================
 	
+
+{% endraw %}

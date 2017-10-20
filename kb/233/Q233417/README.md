@@ -6,6 +6,8 @@ permalink: /kb/233/Q233417/
 
 ## Q233417: Microsoft PowerPoint 2000 Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q233417
 	Product(s): Microsoft Press
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/233/Q233417/
 	
 	=============================================================================
 	
+
+{% endraw %}

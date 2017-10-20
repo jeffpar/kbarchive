@@ -6,6 +6,8 @@ permalink: /kb/283/Q283187/
 
 ## Q283187: RASEnumConnection() Function Doesn't List Multiple RAS Connects
 
+{% raw %}
+
 	Article: Q283187
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -101,3 +103,5 @@ permalink: /kb/283/Q283187/
 	
 	=============================================================================
 	
+
+{% endraw %}

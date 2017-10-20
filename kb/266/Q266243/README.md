@@ -6,6 +6,8 @@ permalink: /kb/266/Q266243/
 
 ## Q266243: HOWTO: Add CPU Support for Existing eVC Projects
 
+{% raw %}
+
 	Article: Q266243
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -105,3 +107,5 @@ permalink: /kb/266/Q266243/
 	
 	=============================================================================
 	
+
+{% endraw %}

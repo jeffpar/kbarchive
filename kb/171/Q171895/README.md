@@ -6,6 +6,8 @@ permalink: /kb/171/Q171895/
 
 ## Q171895: Mac Encarta 97: Orbit Interactivity Stops Right After Starting
 
+{% raw %}
+
 	Article: Q171895
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -47,3 +49,5 @@ permalink: /kb/171/Q171895/
 	
 	=============================================================================
 	
+
+{% endraw %}

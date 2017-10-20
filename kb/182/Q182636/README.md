@@ -6,6 +6,8 @@ permalink: /kb/182/Q182636/
 
 ## Q182636: COMTI Reserved Words Erroneously Allowed for Method Name
 
+{% raw %}
+
 	Article: Q182636
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -82,3 +84,5 @@ permalink: /kb/182/Q182636/
 	
 	=============================================================================
 	
+
+{% endraw %}

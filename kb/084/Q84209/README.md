@@ -6,6 +6,8 @@ permalink: /kb/084/Q84209/
 
 ## Q84209: Microsolution's Compaticard and SMARTDRV.EXE
 
+{% raw %}
+
 	Article: Q84209
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/084/Q84209/
 	
 	=============================================================================
 	
+
+{% endraw %}

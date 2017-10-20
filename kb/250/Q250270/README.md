@@ -6,6 +6,8 @@ permalink: /kb/250/Q250270/
 
 ## Q250270: Windows NT Unavailable on PartitionMagic Dual Boot After Upgrade
 
+{% raw %}
+
 	Article: Q250270
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/250/Q250270/
 	
 	=============================================================================
 	
+
+{% endraw %}

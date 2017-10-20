@@ -6,6 +6,8 @@ permalink: /kb/133/Q133365/
 
 ## Q133365: Windows 95/98: Troubleshooting Problems with Compressed Audio
 
+{% raw %}
+
 	Article: Q133365
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,2.0
@@ -345,3 +347,5 @@ permalink: /kb/133/Q133365/
 	
 	=============================================================================
 	
+
+{% endraw %}

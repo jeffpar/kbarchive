@@ -6,6 +6,8 @@ permalink: /kb/191/Q191584/
 
 ## Q191584: HOWTO: Determine When a 32-bit Process has Completed
 
+{% raw %}
+
 	Article: Q191584
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -202,3 +204,5 @@ permalink: /kb/191/Q191584/
 	
 	=============================================================================
 	
+
+{% endraw %}

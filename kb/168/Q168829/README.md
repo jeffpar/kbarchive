@@ -6,6 +6,8 @@ permalink: /kb/168/Q168829/
 
 ## Q168829: HOWTO: Get a Hierarchical List of Window Names and Classes
 
+{% raw %}
+
 	Article: Q168829
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -141,3 +143,5 @@ permalink: /kb/168/Q168829/
 	
 	=============================================================================
 	
+
+{% endraw %}

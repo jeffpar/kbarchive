@@ -6,6 +6,8 @@ permalink: /kb/247/Q247076/
 
 ## Q247076: XCLN: Cannot Delete or Hide the Default Internet Newsgroups PF
 
+{% raw %}
+
 	Article: Q247076
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -78,3 +80,5 @@ permalink: /kb/247/Q247076/
 	
 	=============================================================================
 	
+
+{% endraw %}

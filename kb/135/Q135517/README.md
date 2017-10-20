@@ -6,6 +6,8 @@ permalink: /kb/135/Q135517/
 
 ## Q135517: How to Attach a Menu to a Form
 
+{% raw %}
+
 	Article: Q135517
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/135/Q135517/
 	
 	=============================================================================
 	
+
+{% endraw %}

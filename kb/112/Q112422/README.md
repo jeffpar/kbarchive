@@ -6,6 +6,8 @@ permalink: /kb/112/Q112422/
 
 ## Q112422: PPT: Not All .AVI Files Play Under Windows NT
 
+{% raw %}
+
 	Article: Q112422
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.0,1.1,4.0,4.0a,4.0c,7.0
@@ -127,3 +129,5 @@ permalink: /kb/112/Q112422/
 	
 	=============================================================================
 	
+
+{% endraw %}

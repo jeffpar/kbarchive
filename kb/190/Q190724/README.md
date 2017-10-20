@@ -6,6 +6,8 @@ permalink: /kb/190/Q190724/
 
 ## Q190724: Err Msg: SPOOL32 Caused a Divide Error in Module GDI.EXE...
 
+{% raw %}
+
 	Article: Q190724
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -72,3 +74,5 @@ permalink: /kb/190/Q190724/
 	
 	=============================================================================
 	
+
+{% endraw %}

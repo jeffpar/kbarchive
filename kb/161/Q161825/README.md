@@ -6,6 +6,8 @@ permalink: /kb/161/Q161825/
 
 ## Q161825: How Visual Basic 4.0 Calls C and Fortran DLLs
 
+{% raw %}
+
 	Article: Q161825
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0; winnt:2.0,2.1,2.2,4.0,4.1,4.2,6.0; :
@@ -176,3 +178,5 @@ permalink: /kb/161/Q161825/
 	
 	=============================================================================
 	
+
+{% endraw %}

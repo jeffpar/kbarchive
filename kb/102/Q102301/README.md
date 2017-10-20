@@ -6,6 +6,8 @@ permalink: /kb/102/Q102301/
 
 ## Q102301: X400: Err: TMP Variable Not Set Gives WARNING 7 Error
 
+{% raw %}
+
 	Article: Q102301
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -70,3 +72,5 @@ permalink: /kb/102/Q102301/
 	
 	=============================================================================
 	
+
+{% endraw %}

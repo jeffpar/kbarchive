@@ -6,6 +6,8 @@ permalink: /kb/158/Q158701/
 
 ## Q158701: PRB: Error When Renaming a File That Is Checked Out
 
+{% raw %}
+
 	Article: Q158701
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -100,3 +102,5 @@ permalink: /kb/158/Q158701/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100429/
 
 ## Q100429: How to Specify an External Editor for Text Files
 
+{% raw %}
+
 	Article: Q100429
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.5x,2.6,2.6a; WINDOWS:2.5x,2.6,2.6a
@@ -63,3 +65,5 @@ permalink: /kb/100/Q100429/
 	
 	=============================================================================
 	
+
+{% endraw %}

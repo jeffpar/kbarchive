@@ -6,6 +6,8 @@ permalink: /kb/139/Q139700/
 
 ## Q139700: X400: Abbreviations for Recommendation X.410
 
+{% raw %}
+
 	Article: Q139700
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.2
@@ -71,3 +73,5 @@ permalink: /kb/139/Q139700/
 	
 	=============================================================================
 	
+
+{% endraw %}

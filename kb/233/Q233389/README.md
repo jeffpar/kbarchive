@@ -6,6 +6,8 @@ permalink: /kb/233/Q233389/
 
 ## Q233389: SMS: Cannot Communicate with NetWare 5 Servers
 
+{% raw %}
+
 	Article: Q233389
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -77,3 +79,5 @@ permalink: /kb/233/Q233389/
 	
 	=============================================================================
 	
+
+{% endraw %}

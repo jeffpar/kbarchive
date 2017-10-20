@@ -6,6 +6,8 @@ permalink: /kb/132/Q132547/
 
 ## Q132547: PC NTMMTA: Using DrivesWAN When Running as a Service
 
+{% raw %}
+
 	Article: Q132547
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -66,3 +68,5 @@ permalink: /kb/132/Q132547/
 	
 	=============================================================================
 	
+
+{% endraw %}

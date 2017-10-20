@@ -6,6 +6,8 @@ permalink: /kb/152/Q152291/
 
 ## Q152291: Removing Windows NT with Winntp.exe/D: Option
 
+{% raw %}
+
 	Article: Q152291
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -136,3 +138,5 @@ permalink: /kb/152/Q152291/
 	
 	=============================================================================
 	
+
+{% endraw %}

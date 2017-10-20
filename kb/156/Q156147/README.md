@@ -6,6 +6,8 @@ permalink: /kb/156/Q156147/
 
 ## Q156147: Full Court Press: Troubleshooting Display Problems
 
+{% raw %}
+
 	Article: Q156147
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -235,3 +237,5 @@ permalink: /kb/156/Q156147/
 	
 	=============================================================================
 	
+
+{% endraw %}

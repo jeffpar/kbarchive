@@ -6,6 +6,8 @@ permalink: /kb/242/Q242106/
 
 ## Q242106: XIMS: Chat Transcription Logs Created in Incorrect Location
 
+{% raw %}
+
 	Article: Q242106
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/242/Q242106/
 	
 	=============================================================================
 	
+
+{% endraw %}

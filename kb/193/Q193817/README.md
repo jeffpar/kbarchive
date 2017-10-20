@@ -6,6 +6,8 @@ permalink: /kb/193/Q193817/
 
 ## Q193817: SNA Server Event ID 11 Missing Description Information
 
+{% raw %}
+
 	Article: Q193817
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0,4.0SP1
@@ -78,3 +80,5 @@ permalink: /kb/193/Q193817/
 	
 	=============================================================================
 	
+
+{% endraw %}

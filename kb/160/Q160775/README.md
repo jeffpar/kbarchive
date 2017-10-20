@@ -6,6 +6,8 @@ permalink: /kb/160/Q160775/
 
 ## Q160775: SMS: Job Status Not Updated for NetWare Clients
 
+{% raw %}
+
 	Article: Q160775
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -58,3 +60,5 @@ permalink: /kb/160/Q160775/
 	
 	=============================================================================
 	
+
+{% endraw %}

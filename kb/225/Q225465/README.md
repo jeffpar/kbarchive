@@ -6,6 +6,8 @@ permalink: /kb/225/Q225465/
 
 ## Q225465: Add User Wizard Populated with Company Data
 
+{% raw %}
+
 	Article: Q225465
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -85,3 +87,5 @@ permalink: /kb/225/Q225465/
 	
 	=============================================================================
 	
+
+{% endraw %}

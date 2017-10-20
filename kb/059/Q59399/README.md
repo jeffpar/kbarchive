@@ -6,6 +6,8 @@ permalink: /kb/059/Q59399/
 
 ## Q59399: BASIC 7.0 UEVENT Example Causes Subsequent Programs to Hang
 
+{% raw %}
+
 	Article: Q59399
 	Product(s): See article
 	Version(s): m7.00 7.10
@@ -69,3 +71,5 @@ permalink: /kb/059/Q59399/
 	
 	5. The computer may hang instantly or may hang after attempting to run
 	   another program, such as QBX.EXE.
+
+{% endraw %}

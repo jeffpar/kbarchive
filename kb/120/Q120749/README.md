@@ -6,6 +6,8 @@ permalink: /kb/120/Q120749/
 
 ## Q120749: Mitsumi CD-ROM Disrupts Video/Audio Playback
 
+{% raw %}
+
 	Article: Q120749
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/120/Q120749/
 	
 	=============================================================================
 	
+
+{% endraw %}

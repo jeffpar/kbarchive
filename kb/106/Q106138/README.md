@@ -6,6 +6,8 @@ permalink: /kb/106/Q106138/
 
 ## Q106138: Flight Simulator: Digitized Sounds Play Badly or Not at All
 
+{% raw %}
+
 	Article: Q106138
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -78,3 +80,5 @@ permalink: /kb/106/Q106138/
 	
 	=============================================================================
 	
+
+{% endraw %}

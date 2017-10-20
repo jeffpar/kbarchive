@@ -6,6 +6,8 @@ permalink: /kb/224/Q224592/
 
 ## Q224592: XADM: Naming Exchange Servers to Optimize KCC Performance
 
+{% raw %}
+
 	Article: Q224592
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -83,3 +85,5 @@ permalink: /kb/224/Q224592/
 	
 	=============================================================================
 	
+
+{% endraw %}

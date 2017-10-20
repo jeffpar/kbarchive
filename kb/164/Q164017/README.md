@@ -6,6 +6,8 @@ permalink: /kb/164/Q164017/
 
 ## Q164017: Explanation of a DNS Zone Transfer
 
+{% raw %}
+
 	Article: Q164017
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -292,3 +294,5 @@ permalink: /kb/164/Q164017/
 	
 	=============================================================================
 	
+
+{% endraw %}

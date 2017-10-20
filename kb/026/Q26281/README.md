@@ -6,6 +6,8 @@ permalink: /kb/026/Q26281/
 
 ## Q26281: Redirection Disables REM in Batch Files
 
+{% raw %}
+
 	Article: Q26281
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -43,3 +45,5 @@ permalink: /kb/026/Q26281/
 	
 	=============================================================================
 	
+
+{% endraw %}

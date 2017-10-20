@@ -6,6 +6,8 @@ permalink: /kb/294/Q294305/
 
 ## Q294305: IIS Returns HTTP 403.13 Err Msg Although Certificate Not Revoked
 
+{% raw %}
+
 	Article: Q294305
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -138,3 +140,5 @@ permalink: /kb/294/Q294305/
 	
 	=============================================================================
 	
+
+{% endraw %}

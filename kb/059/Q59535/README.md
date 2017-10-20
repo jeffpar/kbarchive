@@ -6,6 +6,8 @@ permalink: /kb/059/Q59535/
 
 ## Q59535: Why the /HIGH Switch Is Not Used with High-Level Languages
 
+{% raw %}
+
 	Article: Q59535
 	Product(s): See article
 	Version(s): 3.65
@@ -54,3 +56,5 @@ permalink: /kb/059/Q59535/
 	
 	You can also read the section "Using the /HIGH and /DSALLOCATE
 	Switches" on Page 719 ff in the "MS-DOS Encyclopedia."
+
+{% endraw %}

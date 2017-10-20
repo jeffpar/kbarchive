@@ -6,6 +6,8 @@ permalink: /kb/049/Q49709/
 
 ## Q49709: VAL Function Concatenates Digits That Have Embedded Spaces
 
+{% raw %}
+
 	Article: Q49709
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -90,3 +92,5 @@ permalink: /kb/049/Q49709/
 	Programming note: The above example uses the DO...LOOP statement,
 	which requires QuickBASIC 3.00 or later. For other products, use a
 	different looping structure.
+
+{% endraw %}

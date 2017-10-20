@@ -6,6 +6,8 @@ permalink: /kb/175/Q175123/
 
 ## Q175123: XCLN: Non-Creator of Public Folder Cannot Remove Self as Owner
 
+{% raw %}
+
 	Article: Q175123
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -41,3 +43,5 @@ permalink: /kb/175/Q175123/
 	
 	=============================================================================
 	
+
+{% endraw %}

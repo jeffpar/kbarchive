@@ -6,6 +6,8 @@ permalink: /kb/199/Q199036/
 
 ## Q199036: Error When Deleting External Post Office - Notice 1
 
+{% raw %}
+
 	Article: Q199036
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -63,3 +65,5 @@ permalink: /kb/199/Q199036/
 	
 	=============================================================================
 	
+
+{% endraw %}

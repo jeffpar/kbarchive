@@ -6,6 +6,8 @@ permalink: /kb/147/Q147452/
 
 ## Q147452: Macintosh Volumes Not Accessible After Reinstalling SFM
 
+{% raw %}
+
 	Article: Q147452
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -71,3 +73,5 @@ permalink: /kb/147/Q147452/
 	
 	=============================================================================
 	
+
+{% endraw %}

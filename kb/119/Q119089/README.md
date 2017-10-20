@@ -6,6 +6,8 @@ permalink: /kb/119/Q119089/
 
 ## Q119089: PC Win: How the Inbox Received Time Stamp Is Set
 
+{% raw %}
+
 	Article: Q119089
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0,3.0b,3.2
@@ -89,3 +91,5 @@ permalink: /kb/119/Q119089/
 	
 	=============================================================================
 	
+
+{% endraw %}

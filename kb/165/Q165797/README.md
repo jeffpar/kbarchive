@@ -6,6 +6,8 @@ permalink: /kb/165/Q165797/
 
 ## Q165797: SMS: Remote Control Disables Windows NT Screen Saver
 
+{% raw %}
+
 	Article: Q165797
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,3.5,3.51
@@ -60,3 +62,5 @@ permalink: /kb/165/Q165797/
 	
 	=============================================================================
 	
+
+{% endraw %}

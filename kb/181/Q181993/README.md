@@ -6,6 +6,8 @@ permalink: /kb/181/Q181993/
 
 ## Q181993: WD97: How to Show Access Check Boxes During a Mail Merge
 
+{% raw %}
+
 	Article: Q181993
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/181/Q181993/
 	
 	=============================================================================
 	
+
+{% endraw %}

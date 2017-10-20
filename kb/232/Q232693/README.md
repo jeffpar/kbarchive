@@ -6,6 +6,8 @@ permalink: /kb/232/Q232693/
 
 ## Q232693: XADM: Clients May Hang After You Remove a Public Folder Server
 
+{% raw %}
+
 	Article: Q232693
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,98; winnt:5.0,5.5
@@ -102,3 +104,5 @@ permalink: /kb/232/Q232693/
 	
 	=============================================================================
 	
+
+{% endraw %}

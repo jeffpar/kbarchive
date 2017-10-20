@@ -6,6 +6,8 @@ permalink: /kb/163/Q163135/
 
 ## Q163135: WD97: Word Hangs When Printing Open Document from Open Dialog
 
+{% raw %}
+
 	Article: Q163135
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/163/Q163135/
 	
 	=============================================================================
 	
+
+{% endraw %}

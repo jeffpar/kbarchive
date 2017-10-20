@@ -6,6 +6,8 @@ permalink: /kb/133/Q133437/
 
 ## Q133437: Sign-Up Uses The Microsoft Network Phone Numbers
 
+{% raw %}
+
 	Article: Q133437
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0
@@ -40,3 +42,5 @@ permalink: /kb/133/Q133437/
 	
 	=============================================================================
 	
+
+{% endraw %}

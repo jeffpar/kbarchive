@@ -6,6 +6,8 @@ permalink: /kb/172/Q172106/
 
 ## Q172106: &quot;Error 604&quot; When Attempting to Connect to MSN
 
+{% raw %}
+
 	Article: Q172106
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -68,3 +70,5 @@ permalink: /kb/172/Q172106/
 	
 	=============================================================================
 	
+
+{% endraw %}

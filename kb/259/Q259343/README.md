@@ -6,6 +6,8 @@ permalink: /kb/259/Q259343/
 
 ## Q259343: XADM: Events 2028 and 290 from Messages Sent by a Public Folder
 
+{% raw %}
+
 	Article: Q259343
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -99,3 +101,5 @@ permalink: /kb/259/Q259343/
 	
 	=============================================================================
 	
+
+{% endraw %}

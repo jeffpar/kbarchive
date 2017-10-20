@@ -6,6 +6,8 @@ permalink: /kb/071/Q71669/
 
 ## Q71669: HOWTO: Preventing an MDI Child Window from Changing Size
 
+{% raw %}
+
 	Article: Q71669
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -124,3 +126,5 @@ permalink: /kb/071/Q71669/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/226/Q226869/
 
 ## Q226869: SMS: Cannot License Programs That Specify ANY for Language/Time
 
+{% raw %}
+
 	Article: Q226869
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -67,3 +69,5 @@ permalink: /kb/226/Q226869/
 	
 	=============================================================================
 	
+
+{% endraw %}

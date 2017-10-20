@@ -6,6 +6,8 @@ permalink: /kb/183/Q183705/
 
 ## Q183705: RPC Mishandles Changes in the Number of IP Addresses
 
+{% raw %}
+
 	Article: Q183705
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/183/Q183705/
 	
 	=============================================================================
 	
+
+{% endraw %}

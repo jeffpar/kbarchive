@@ -6,6 +6,8 @@ permalink: /kb/102/Q102456/
 
 ## Q102456: How to Activate Buttons While a Browse Window Is Open
 
+{% raw %}
+
 	Article: Q102456
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -68,3 +70,5 @@ permalink: /kb/102/Q102456/
 	
 	=============================================================================
 	
+
+{% endraw %}

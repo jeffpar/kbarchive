@@ -6,6 +6,8 @@ permalink: /kb/235/Q235174/
 
 ## Q235174: SMS: Remote Control Connection Issues w/ Win2K and IP Security
 
+{% raw %}
+
 	Article: Q235174
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -65,3 +67,5 @@ permalink: /kb/235/Q235174/
 	
 	=============================================================================
 	
+
+{% endraw %}

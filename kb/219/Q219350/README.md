@@ -6,6 +6,8 @@ permalink: /kb/219/Q219350/
 
 ## Q219350: Cannot Dual Boot After SP5 Is Installed on Alpha Computer
 
+{% raw %}
+
 	Article: Q219350
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/219/Q219350/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132909/
 
 ## Q132909: HOWTO: Customize the Common Print Dialog Box
 
+{% raw %}
+
 	Article: Q132909
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -132,9 +134,9 @@ permalink: /kb/132/Q132909/
 	          CWnd* pParentWnd /* = NULL */)
 	          : CPrintDialog(bPrintSetupOnly, dwFlags, pParentWnd)
 	        {
-	          //{ {AFX_DATA_INIT(CMyPrintDialog)
+	          //{{AFX_DATA_INIT(CMyPrintDialog)
 	          // NOTE: the ClassWizard will add member initialization here.
-	          //} }AFX_DATA_INIT
+	          //}}AFX_DATA_INIT
 	        }
 	   
 	
@@ -201,3 +203,5 @@ permalink: /kb/132/Q132909/
 	
 	=============================================================================
 	
+
+{% endraw %}

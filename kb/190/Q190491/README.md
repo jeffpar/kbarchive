@@ -6,6 +6,8 @@ permalink: /kb/190/Q190491/
 
 ## Q190491: PRB: Access/Assign Not Called by DIMENSION, ADEL or AINS
 
+{% raw %}
+
 	Article: Q190491
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -149,3 +151,5 @@ permalink: /kb/190/Q190491/
 	
 	=============================================================================
 	
+
+{% endraw %}

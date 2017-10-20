@@ -6,6 +6,8 @@ permalink: /kb/140/Q140311/
 
 ## Q140311: BUG: Setting Value Property of Toolbar to Zero Clears Button
 
+{% raw %}
+
 	Article: Q140311
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/140/Q140311/
 	
 	=============================================================================
 	
+
+{% endraw %}

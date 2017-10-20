@@ -6,6 +6,8 @@ permalink: /kb/148/Q148664/
 
 ## Q148664: XCLN: Description of the Profile Descriptor File
 
+{% raw %}
+
 	Article: Q148664
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -184,3 +186,5 @@ permalink: /kb/148/Q148664/
 	
 	=============================================================================
 	
+
+{% endraw %}

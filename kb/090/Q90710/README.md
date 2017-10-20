@@ -6,6 +6,8 @@ permalink: /kb/090/Q90710/
 
 ## Q90710: GP Fault in WINHELP.EXE After Starting Microsoft Mail
 
+{% raw %}
+
 	Article: Q90710
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/090/Q90710/
 	
 	=============================================================================
 	
+
+{% endraw %}

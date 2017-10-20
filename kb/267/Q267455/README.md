@@ -6,6 +6,8 @@ permalink: /kb/267/Q267455/
 
 ## Q267455: PRB: Problems Encountered Using Oracle Aggregate Functions
 
+{% raw %}
+
 	Article: Q267455
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.0,2.1,2.1 SP2,2.5,2.6,2.7,Build 2.573.4403,Build 2.573.6526,Build 2.573.7713.2
@@ -151,3 +153,5 @@ permalink: /kb/267/Q267455/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/324/Q324847/
 
 ## Q324847: &quot;Member Not Found&quot; Err Msg Signing In to Office Step by Step
 
+{% raw %}
+
 	Article: Q324847
 	Product(s): Microsoft Press
 	Version(s): 3.0
@@ -85,3 +87,5 @@ permalink: /kb/324/Q324847/
 	
 	=============================================================================
 	
+
+{% endraw %}

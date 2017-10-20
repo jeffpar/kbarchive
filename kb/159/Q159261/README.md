@@ -6,6 +6,8 @@ permalink: /kb/159/Q159261/
 
 ## Q159261: WD97: Use Textbox Form Control to WorkAround 255 Character Limit
 
+{% raw %}
+
 	Article: Q159261
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -181,3 +183,5 @@ permalink: /kb/159/Q159261/
 	
 	=============================================================================
 	
+
+{% endraw %}

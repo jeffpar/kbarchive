@@ -6,6 +6,8 @@ permalink: /kb/084/Q84419/
 
 ## Q84419: Multiple PIFs for Same MS-DOS Applications in Windows
 
+{% raw %}
+
 	Article: Q84419
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -95,3 +97,5 @@ permalink: /kb/084/Q84419/
 	
 	=============================================================================
 	
+
+{% endraw %}

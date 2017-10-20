@@ -6,6 +6,8 @@ permalink: /kb/064/Q64661/
 
 ## Q64661: Write Randomly Selects Keys or Windows Hangs on Sperry 286
 
+{% raw %}
+
 	Article: Q64661
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -64,3 +66,5 @@ permalink: /kb/064/Q64661/
 	
 	=============================================================================
 	
+
+{% endraw %}

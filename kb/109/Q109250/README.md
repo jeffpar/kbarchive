@@ -6,6 +6,8 @@ permalink: /kb/109/Q109250/
 
 ## Q109250: Supplemental Disk GRAFTABL.COM ErrMsg: Incorrect DOS Version
 
+{% raw %}
+
 	Article: Q109250
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -50,3 +52,5 @@ permalink: /kb/109/Q109250/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186123/
 
 ## Q186123: BUG: The Coolbar ActiveX Control Does Not Work in VFP
 
+{% raw %}
+
 	Article: Q186123
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -99,3 +101,5 @@ permalink: /kb/186/Q186123/
 	
 	=============================================================================
 	
+
+{% endraw %}

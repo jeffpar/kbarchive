@@ -6,6 +6,8 @@ permalink: /kb/237/Q237512/
 
 ## Q237512: Encarta: Unexpected Behavior When You Double-Click a Shortcut
 
+{% raw %}
+
 	Article: Q237512
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -121,3 +123,5 @@ permalink: /kb/237/Q237512/
 	
 	=============================================================================
 	
+
+{% endraw %}

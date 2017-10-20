@@ -6,6 +6,8 @@ permalink: /kb/183/Q183002/
 
 ## Q183002: WD97: Third Automatic Bullet or Number Is Left-Aligned
 
+{% raw %}
+
 	Article: Q183002
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:7.0a
@@ -79,3 +81,5 @@ permalink: /kb/183/Q183002/
 	
 	=============================================================================
 	
+
+{% endraw %}

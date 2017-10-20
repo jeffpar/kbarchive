@@ -6,6 +6,8 @@ permalink: /kb/049/Q49739/
 
 ## Q49739: How ASSIGN Determines True Name of Disk Drive
 
+{% raw %}
+
 	Article: Q49739
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -53,3 +55,5 @@ permalink: /kb/049/Q49739/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118609/
 
 ## Q118609: HOWTO: Create an .MDB File for Microsoft Access Databases
 
+{% raw %}
+
 	Article: Q118609
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1
@@ -141,3 +143,5 @@ permalink: /kb/118/Q118609/
 	
 	=============================================================================
 	
+
+{% endraw %}

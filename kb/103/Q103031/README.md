@@ -6,6 +6,8 @@ permalink: /kb/103/Q103031/
 
 ## Q103031: PRB: &quot;SQL Expression Too Complex&quot; with Long IN Clause
 
+{% raw %}
+
 	Article: Q103031
 	Product(s): Microsoft FoxPro
 	Version(s): 2.0,2.5,2.5a,3.0,3.0b,5.0,5.0a,6.0
@@ -98,3 +100,5 @@ permalink: /kb/103/Q103031/
 	
 	=============================================================================
 	
+
+{% endraw %}

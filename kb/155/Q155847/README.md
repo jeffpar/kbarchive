@@ -6,6 +6,8 @@ permalink: /kb/155/Q155847/
 
 ## Q155847: HOWTO: Activate a System Menu Item in Visual FoxPro 5.0
 
+{% raw %}
+
 	Article: Q155847
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -63,3 +65,5 @@ permalink: /kb/155/Q155847/
 	
 	=============================================================================
 	
+
+{% endraw %}

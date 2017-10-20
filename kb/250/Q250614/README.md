@@ -6,6 +6,8 @@ permalink: /kb/250/Q250614/
 
 ## Q250614: HOWTO: Sort Items in a CListCtrl in Report View
 
+{% raw %}
+
 	Article: Q250614
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -214,3 +216,5 @@ permalink: /kb/250/Q250614/
 	
 	=============================================================================
 	
+
+{% endraw %}

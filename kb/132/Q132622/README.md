@@ -6,6 +6,8 @@ permalink: /kb/132/Q132622/
 
 ## Q132622: Cannot Print with Avery LabelPro
 
+{% raw %}
+
 	Article: Q132622
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/132/Q132622/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111284/
 
 ## Q111284: Service Pack 2 Backup Program Doesn't Back Up Registry Hives
 
+{% raw %}
+
 	Article: Q111284
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -52,3 +54,5 @@ permalink: /kb/111/Q111284/
 	
 	=============================================================================
 	
+
+{% endraw %}

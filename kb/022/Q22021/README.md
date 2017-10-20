@@ -6,6 +6,8 @@ permalink: /kb/022/Q22021/
 
 ## Q22021: OPEN LEN=reclen Effect on Sequential File Buffering and Speed
 
+{% raw %}
+
 	Article: Q22021
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -61,3 +63,5 @@ permalink: /kb/022/Q22021/
 	   NEXT Index%
 	   CLOSE #1
 	   END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139009/
 
 ## Q139009: Mastering Visual FoxPro Demo Videos Play Incorrectly
 
+{% raw %}
+
 	Article: Q139009
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -49,3 +51,5 @@ permalink: /kb/139/Q139009/
 	
 	=============================================================================
 	
+
+{% endraw %}

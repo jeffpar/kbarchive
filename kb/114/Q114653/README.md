@@ -6,6 +6,8 @@ permalink: /kb/114/Q114653/
 
 ## Q114653: Err Msg: Failure: PROTOCOL.INI Does Not Have a DRIVERNAME=
 
+{% raw %}
+
 	Article: Q114653
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -96,3 +98,5 @@ permalink: /kb/114/Q114653/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237922/
 
 ## Q237922: BUG: User Defined Type Causes &quot;Class Not Registered&quot; Error Msg
 
+{% raw %}
+
 	Article: Q237922
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -146,3 +148,5 @@ permalink: /kb/237/Q237922/
 	
 	=============================================================================
 	
+
+{% endraw %}

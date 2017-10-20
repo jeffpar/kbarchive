@@ -6,6 +6,8 @@ permalink: /kb/185/Q185018/
 
 ## Q185018: XADM: How To Export Public Folder Directory Data To A CSV File
 
+{% raw %}
+
 	Article: Q185018
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -99,3 +101,5 @@ permalink: /kb/185/Q185018/
 	
 	=============================================================================
 	
+
+{% endraw %}

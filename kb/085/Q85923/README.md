@@ -6,6 +6,8 @@ permalink: /kb/085/Q85923/
 
 ## Q85923: Lotus Freelance Graphics and HP Printers Under Windows 3.1
 
+{% raw %}
+
 	Article: Q85923
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -53,3 +55,5 @@ permalink: /kb/085/Q85923/
 	
 	=============================================================================
 	
+
+{% endraw %}

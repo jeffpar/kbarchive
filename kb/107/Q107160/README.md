@@ -6,6 +6,8 @@ permalink: /kb/107/Q107160/
 
 ## Q107160: Using MemMaker to Replace Qemm Version 7.02 and DOS-Up
 
+{% raw %}
+
 	Article: Q107160
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -46,3 +48,5 @@ permalink: /kb/107/Q107160/
 	
 	=============================================================================
 	
+
+{% endraw %}

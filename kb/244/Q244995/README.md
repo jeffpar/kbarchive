@@ -6,6 +6,8 @@ permalink: /kb/244/Q244995/
 
 ## Q244995: Base System Object Restrictions Are Not Enabled by Default
 
+{% raw %}
+
 	Article: Q244995
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/244/Q244995/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244157/
 
 ## Q244157: Preferred Server Selection Does Not Work as Expected with NDS
 
+{% raw %}
+
 	Article: Q244157
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1
@@ -84,3 +86,5 @@ permalink: /kb/244/Q244157/
 	
 	=============================================================================
 	
+
+{% endraw %}

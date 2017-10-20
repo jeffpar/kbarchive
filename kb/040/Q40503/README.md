@@ -6,6 +6,8 @@ permalink: /kb/040/Q40503/
 
 ## Q40503: Explanation of Linkers Shipped with QuickC Version 2.00
 
+{% raw %}
+
 	Article: Q40503
 	Product(s): See article
 	Version(s): 2.00
@@ -72,3 +74,5 @@ permalink: /kb/040/Q40503/
 	found in your path before DOS reached the \QC2\BIN directory. Changing
 	your path so that \QC2\BIN is the first directory in your path is the
 	easiest and quickest way to correct this problem.
+
+{% endraw %}

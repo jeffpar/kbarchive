@@ -6,6 +6,8 @@ permalink: /kb/201/Q201603/
 
 ## Q201603: SMS: Systems Management Server 2.0 Site Recovery
 
+{% raw %}
+
 	Article: Q201603
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -104,3 +106,5 @@ permalink: /kb/201/Q201603/
 	
 	=============================================================================
 	
+
+{% endraw %}

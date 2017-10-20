@@ -6,6 +6,8 @@ permalink: /kb/156/Q156146/
 
 ## Q156146: Full Court Press: Sound Problems
 
+{% raw %}
+
 	Article: Q156146
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -96,3 +98,5 @@ permalink: /kb/156/Q156146/
 	
 	=============================================================================
 	
+
+{% endraw %}

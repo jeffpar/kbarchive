@@ -6,6 +6,8 @@ permalink: /kb/189/Q189252/
 
 ## Q189252: Close Combat 1.0: Contents of the Network.doc File
 
+{% raw %}
+
 	Article: Q189252
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -483,3 +485,5 @@ permalink: /kb/189/Q189252/
 	
 	=============================================================================
 	
+
+{% endraw %}

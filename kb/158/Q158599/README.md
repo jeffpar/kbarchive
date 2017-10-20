@@ -6,6 +6,8 @@ permalink: /kb/158/Q158599/
 
 ## Q158599: Mac Encarta 97: Readme.txt: Getting Connected
 
+{% raw %}
+
 	Article: Q158599
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -174,3 +176,5 @@ permalink: /kb/158/Q158599/
 	
 	=============================================================================
 	
+
+{% endraw %}

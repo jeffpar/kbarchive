@@ -6,6 +6,8 @@ permalink: /kb/135/Q135905/
 
 ## Q135905: How to Retrieve Records That Were Previously Zapped
 
+{% raw %}
+
 	Article: Q135905
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a,2.5b,2.6,2.6a; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0
@@ -106,3 +108,5 @@ permalink: /kb/135/Q135905/
 	
 	=============================================================================
 	
+
+{% endraw %}

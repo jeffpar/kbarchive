@@ -6,6 +6,8 @@ permalink: /kb/130/Q130081/
 
 ## Q130081: KeyPress Event in Check Box Allows Y or N
 
+{% raw %}
+
 	Article: Q130081
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/130/Q130081/
 	
 	=============================================================================
 	
+
+{% endraw %}

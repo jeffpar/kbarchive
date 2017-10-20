@@ -6,6 +6,8 @@ permalink: /kb/085/Q85682/
 
 ## Q85682: WRK Incorrectly Documents TTIfCollisions=
 
+{% raw %}
+
 	Article: Q85682
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -51,3 +53,5 @@ permalink: /kb/085/Q85682/
 	
 	=============================================================================
 	
+
+{% endraw %}

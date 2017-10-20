@@ -6,6 +6,8 @@ permalink: /kb/097/Q97937/
 
 ## Q97937: Err Msg: &quot;Invalid Drive Specification&quot; with Novell Network
 
+{% raw %}
+
 	Article: Q97937
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.22
@@ -58,3 +60,5 @@ permalink: /kb/097/Q97937/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/266/Q266747/
 
 ## Q266747: PRB: Toolbox or Menu Items Are Missing in the Visual Basic IDE
 
+{% raw %}
+
 	Article: Q266747
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -57,3 +59,5 @@ permalink: /kb/266/Q266747/
 	
 	=============================================================================
 	
+
+{% endraw %}

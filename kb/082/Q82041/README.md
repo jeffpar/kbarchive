@@ -6,6 +6,8 @@ permalink: /kb/082/Q82041/
 
 ## Q82041: Windows Err Msg: Unexpected DOS Error #11
 
+{% raw %}
+
 	Article: Q82041
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/082/Q82041/
 	
 	=============================================================================
 	
+
+{% endraw %}

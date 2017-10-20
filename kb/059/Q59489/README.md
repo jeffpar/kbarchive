@@ -6,6 +6,8 @@ permalink: /kb/059/Q59489/
 
 ## Q59489: L2022, L2029 on PM Functions Not Prototyped As EXPENTRY
 
+{% raw %}
+
 	Article: Q59489
 	Product(s): See article
 	Version(s): 5.10
@@ -50,3 +52,5 @@ permalink: /kb/059/Q59489/
 	
 	the linker cannot resolve definitions for the function because it does
 	not see ClientWndProc and CLIENTWNDPROC as being equal.
+
+{% endraw %}

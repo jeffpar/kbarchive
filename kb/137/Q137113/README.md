@@ -6,6 +6,8 @@ permalink: /kb/137/Q137113/
 
 ## Q137113: Disk Defragmenter Restarts Continually with Find Fast
 
+{% raw %}
+
 	Article: Q137113
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/137/Q137113/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98267/
 
 ## Q98267: ProofReader Fails with Extended Workbook Filenames
 
+{% raw %}
+
 	Article: Q98267
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/098/Q98267/
 	
 	=============================================================================
 	
+
+{% endraw %}

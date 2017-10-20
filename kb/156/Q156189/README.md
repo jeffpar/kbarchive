@@ -6,6 +6,8 @@ permalink: /kb/156/Q156189/
 
 ## Q156189: SMS: Shared Installation of Microsoft Exchange on Windows NT
 
+{% raw %}
+
 	Article: Q156189
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -108,3 +110,5 @@ permalink: /kb/156/Q156189/
 	
 	=============================================================================
 	
+
+{% endraw %}

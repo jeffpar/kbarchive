@@ -6,6 +6,8 @@ permalink: /kb/065/Q65928/
 
 ## Q65928: FIX: COMM.DRV Locks Up with Full Duplex Communications
 
+{% raw %}
+
 	Article: Q65928
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0
@@ -71,3 +73,5 @@ permalink: /kb/065/Q65928/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86157/
 
 ## Q86157: PROFS: How to Stop the Gateway If It Is &quot;Looping&quot;
 
+{% raw %}
+
 	Article: Q86157
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -47,3 +49,5 @@ permalink: /kb/086/Q86157/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159940/
 
 ## Q159940: WD97: General Information About Hyperlinks in Word
 
+{% raw %}
+
 	Article: Q159940
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -207,3 +209,5 @@ permalink: /kb/159/Q159940/
 	
 	=============================================================================
 	
+
+{% endraw %}

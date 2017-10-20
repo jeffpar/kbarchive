@@ -6,6 +6,8 @@ permalink: /kb/138/Q138086/
 
 ## Q138086: Windows NT 3.51: Reverse Name Resolution for WINS Clients
 
+{% raw %}
+
 	Article: Q138086
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -56,3 +58,5 @@ permalink: /kb/138/Q138086/
 	
 	=============================================================================
 	
+
+{% endraw %}

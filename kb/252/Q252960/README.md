@@ -6,6 +6,8 @@ permalink: /kb/252/Q252960/
 
 ## Q252960: Asheron's Call: How to Retrieve Items After Your Character Dies
 
+{% raw %}
+
 	Article: Q252960
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -74,3 +76,5 @@ permalink: /kb/252/Q252960/
 	
 	=============================================================================
 	
+
+{% endraw %}

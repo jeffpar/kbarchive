@@ -6,6 +6,8 @@ permalink: /kb/146/Q146375/
 
 ## Q146375: XCLN: Printing Weekly 5-day Prints from Monday through Friday
 
+{% raw %}
+
 	Article: Q146375
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0a
@@ -46,3 +48,5 @@ permalink: /kb/146/Q146375/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221621/
 
 ## Q221621: FIX: C0000005 Fatal Error In Editor Selecting Text Then Up Arrow
 
+{% raw %}
+
 	Article: Q221621
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -73,3 +75,5 @@ permalink: /kb/221/Q221621/
 	
 	=============================================================================
 	
+
+{% endraw %}

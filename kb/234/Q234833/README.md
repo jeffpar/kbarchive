@@ -6,6 +6,8 @@ permalink: /kb/234/Q234833/
 
 ## Q234833: MOD2000: UNDONE in Title After Showing Differences in VSS Add-in
 
+{% raw %}
+
 	Article: Q234833
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/234/Q234833/
 	
 	=============================================================================
 	
+
+{% endraw %}

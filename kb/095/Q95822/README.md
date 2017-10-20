@@ -6,6 +6,8 @@ permalink: /kb/095/Q95822/
 
 ## Q95822: Bookshelf: Copied Pronunciations Incorrect
 
+{% raw %}
+
 	Article: Q95822
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition,1992 edition,1993 edition
@@ -69,3 +71,5 @@ permalink: /kb/095/Q95822/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127053/
 
 ## Q127053: Two Keyboard Components Appear in Control Panel
 
+{% raw %}
+
 	Article: Q127053
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,3.5
@@ -62,3 +64,5 @@ permalink: /kb/127/Q127053/
 	
 	=============================================================================
 	
+
+{% endraw %}

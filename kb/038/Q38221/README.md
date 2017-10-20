@@ -6,6 +6,8 @@ permalink: /kb/038/Q38221/
 
 ## Q38221: /Au Switch Loads DS for Each Function, Not Module
 
+{% raw %}
+
 	Article: Q38221
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.00 5.10
@@ -24,3 +26,5 @@ permalink: /kb/038/Q38221/
 	
 	This message is correctly noted on Page 154 of the "Microsoft C 5.1
 	Optimizing Compiler User's Guide."
+
+{% endraw %}

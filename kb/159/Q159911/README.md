@@ -6,6 +6,8 @@ permalink: /kb/159/Q159911/
 
 ## Q159911: Firmware Requirements for LexMark MarkVision Monitor
 
+{% raw %}
+
 	Article: Q159911
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/159/Q159911/
 	
 	=============================================================================
 	
+
+{% endraw %}

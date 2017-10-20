@@ -6,6 +6,8 @@ permalink: /kb/143/Q143399/
 
 ## Q143399: PRB: AccessPC with Speed Copy Causes DBC and Project Problems
 
+{% raw %}
+
 	Article: Q143399
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -96,3 +98,5 @@ permalink: /kb/143/Q143399/
 	
 	=============================================================================
 	
+
+{% endraw %}

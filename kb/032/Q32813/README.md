@@ -6,6 +6,8 @@ permalink: /kb/032/Q32813/
 
 ## Q32813: The fopen Function Fails to Open Printer in Bound Application
 
+{% raw %}
+
 	Article: Q32813
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -60,3 +62,5 @@ permalink: /kb/032/Q32813/
 	            fprintf(stream,"Hello\n");
 	        }
 	    }
+
+{% endraw %}

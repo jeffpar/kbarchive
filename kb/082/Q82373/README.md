@@ -6,6 +6,8 @@ permalink: /kb/082/Q82373/
 
 ## Q82373: Permanent Swap Files and the Disk Partition Table
 
+{% raw %}
+
 	Article: Q82373
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -116,3 +118,5 @@ permalink: /kb/082/Q82373/
 	
 	=============================================================================
 	
+
+{% endraw %}

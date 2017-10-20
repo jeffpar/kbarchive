@@ -6,6 +6,8 @@ permalink: /kb/282/Q282060/
 
 ## Q282060: Resources for Securing Internet Information Services
 
+{% raw %}
+
 	Article: Q282060
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -111,3 +113,5 @@ permalink: /kb/282/Q282060/
 	
 	=============================================================================
 	
+
+{% endraw %}

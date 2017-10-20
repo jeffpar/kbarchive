@@ -6,6 +6,8 @@ permalink: /kb/295/Q295606/
 
 ## Q295606: FP: How to Insert Script Code in a Shared Border of a Web
 
+{% raw %}
+
 	Article: Q295606
 	Product(s): Word Front Page
 	Version(s): 
@@ -138,3 +140,5 @@ permalink: /kb/295/Q295606/
 	
 	=============================================================================
 	
+
+{% endraw %}

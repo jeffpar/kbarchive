@@ -6,6 +6,8 @@ permalink: /kb/293/Q293094/
 
 ## Q293094: Negative Numbers In MSN Explorer E-mail Folders
 
+{% raw %}
+
 	Article: Q293094
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -125,3 +127,5 @@ permalink: /kb/293/Q293094/
 	
 	=============================================================================
 	
+
+{% endraw %}

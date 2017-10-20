@@ -6,6 +6,8 @@ permalink: /kb/185/Q185737/
 
 ## Q185737: TN3270 Server May Cause Dr. Watson Error to Occur
 
+{% raw %}
+
 	Article: Q185737
 	Product(s): Microsoft SNA Server
 	Version(s): *DO_NOT_USE* 3.0 (all SP),3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -137,3 +139,5 @@ permalink: /kb/185/Q185737/
 	
 	=============================================================================
 	
+
+{% endraw %}

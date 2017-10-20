@@ -6,6 +6,8 @@ permalink: /kb/218/Q218612/
 
 ## Q218612: FIX: Remote Debugging on Alpha Does Not Work
 
+{% raw %}
+
 	Article: Q218612
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -74,3 +76,5 @@ permalink: /kb/218/Q218612/
 	
 	=============================================================================
 	
+
+{% endraw %}

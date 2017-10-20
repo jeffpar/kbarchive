@@ -6,6 +6,8 @@ permalink: /kb/203/Q203915/
 
 ## Q203915: &quot;Send To&quot; Command Missing When You Right-Click a File or Folder
 
+{% raw %}
+
 	Article: Q203915
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/203/Q203915/
 	
 	=============================================================================
 	
+
+{% endraw %}

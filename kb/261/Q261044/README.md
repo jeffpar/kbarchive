@@ -6,6 +6,8 @@ permalink: /kb/261/Q261044/
 
 ## Q261044: Motocross Madness 2: Textures in Game Appear Blocky or Jagged
 
+{% raw %}
+
 	Article: Q261044
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -71,3 +73,5 @@ permalink: /kb/261/Q261044/
 	
 	=============================================================================
 	
+
+{% endraw %}

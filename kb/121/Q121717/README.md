@@ -6,6 +6,8 @@ permalink: /kb/121/Q121717/
 
 ## Q121717: PC DB: Err Msg: The Folder Conversion Process Was Halted...
 
+{% raw %}
+
 	Article: Q121717
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -68,3 +70,5 @@ permalink: /kb/121/Q121717/
 	
 	=============================================================================
 	
+
+{% endraw %}

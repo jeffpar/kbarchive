@@ -6,6 +6,8 @@ permalink: /kb/301/Q301692/
 
 ## Q301692: SMS: Processor Speed May Be Incorrectly Reported as 1 GHz
 
+{% raw %}
+
 	Article: Q301692
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -130,3 +132,5 @@ permalink: /kb/301/Q301692/
 	
 	=============================================================================
 	
+
+{% endraw %}

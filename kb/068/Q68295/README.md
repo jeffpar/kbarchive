@@ -6,6 +6,8 @@ permalink: /kb/068/Q68295/
 
 ## Q68295: QuickC 2.50 Environment Does Not Run on a Tandy 2000
 
+{% raw %}
+
 	Article: Q68295
 	Product(s): See article
 	Version(s): 2.51
@@ -23,3 +25,5 @@ permalink: /kb/068/Q68295/
 	   RGB monitor
 	   B/W graphics kit
 	   Color graphics kit
+
+{% endraw %}

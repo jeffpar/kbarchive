@@ -6,6 +6,8 @@ permalink: /kb/123/Q123798/
 
 ## Q123798: ADT2: Setup Wizard OLE Default Dependent on MSARN200 Choice
 
+{% raw %}
+
 	Article: Q123798
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -68,3 +70,5 @@ permalink: /kb/123/Q123798/
 	
 	=============================================================================
 	
+
+{% endraw %}

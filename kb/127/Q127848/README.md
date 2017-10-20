@@ -6,6 +6,8 @@ permalink: /kb/127/Q127848/
 
 ## Q127848: PRB: RELEASE Command Does Not Release a Form
 
+{% raw %}
+
 	Article: Q127848
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -102,3 +104,5 @@ permalink: /kb/127/Q127848/
 	
 	=============================================================================
 	
+
+{% endraw %}

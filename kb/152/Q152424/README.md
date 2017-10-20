@@ -6,6 +6,8 @@ permalink: /kb/152/Q152424/
 
 ## Q152424: XFOR: Exchange Requestor Drops Users After Dirsync
 
+{% raw %}
+
 	Article: Q152424
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/152/Q152424/
 	
 	=============================================================================
 	
+
+{% endraw %}

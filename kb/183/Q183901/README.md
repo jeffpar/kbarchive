@@ -6,6 +6,8 @@ permalink: /kb/183/Q183901/
 
 ## Q183901: Microsoft DNS Server Depends on the WINS Client Binding
 
+{% raw %}
+
 	Article: Q183901
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -127,3 +129,5 @@ permalink: /kb/183/Q183901/
 	
 	=============================================================================
 	
+
+{% endraw %}

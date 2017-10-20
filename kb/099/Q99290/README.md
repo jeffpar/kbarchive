@@ -6,6 +6,8 @@ permalink: /kb/099/Q99290/
 
 ## Q99290: Adaptec/MS-DOS Support for Drives Greater than 1 GB
 
+{% raw %}
+
 	Article: Q99290
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/099/Q99290/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178144/
 
 ## Q178144: Encarta: Pasting Text into Empty Word Document Resets Paper Size
 
+{% raw %}
+
 	Article: Q178144
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/178/Q178144/
 	
 	=============================================================================
 	
+
+{% endraw %}

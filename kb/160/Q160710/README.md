@@ -6,6 +6,8 @@ permalink: /kb/160/Q160710/
 
 ## Q160710: Configuring Dependent LU 6.2 over DFT
 
+{% raw %}
+
 	Article: Q160710
 	Product(s): Microsoft SNA Server
 	Version(s): winnt:2.0,2.1,2.11,3.0,4.0
@@ -84,3 +86,5 @@ permalink: /kb/160/Q160710/
 	
 	=============================================================================
 	
+
+{% endraw %}

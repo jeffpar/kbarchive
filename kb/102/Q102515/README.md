@@ -6,6 +6,8 @@ permalink: /kb/102/Q102515/
 
 ## Q102515: Can't Remove Network Components and Reinstall Advanced Server
 
+{% raw %}
+
 	Article: Q102515
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -56,3 +58,5 @@ permalink: /kb/102/Q102515/
 	
 	=============================================================================
 	
+
+{% endraw %}

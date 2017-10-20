@@ -6,6 +6,8 @@ permalink: /kb/310/Q310179/
 
 ## Q310179: INFO: How to File a Bug Report for Visual FoxPro
 
+{% raw %}
+
 	Article: Q310179
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -183,3 +185,5 @@ permalink: /kb/310/Q310179/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66985/
 
 ## Q66985: Negative Score in Tetris Near 32,000
 
+{% raw %}
+
 	Article: Q66985
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/066/Q66985/
 	
 	=============================================================================
 	
+
+{% endraw %}

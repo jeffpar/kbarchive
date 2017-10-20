@@ -6,6 +6,8 @@ permalink: /kb/152/Q152456/
 
 ## Q152456: Automating SMC Adapter Setup
 
+{% raw %}
+
 	Article: Q152456
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -226,3 +228,5 @@ permalink: /kb/152/Q152456/
 	
 	=============================================================================
 	
+
+{% endraw %}

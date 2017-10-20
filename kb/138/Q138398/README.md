@@ -6,6 +6,8 @@ permalink: /kb/138/Q138398/
 
 ## Q138398: PRB: RELEASE May Not Remove OLE Objects from Memory
 
+{% raw %}
+
 	Article: Q138398
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,5.0a,6.0
@@ -99,3 +101,5 @@ permalink: /kb/138/Q138398/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/276/Q276287/
 
 ## Q276287: PRB: SET FORMAT File Scrolls to End of Table in Visual FoxPro
 
+{% raw %}
+
 	Article: Q276287
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -205,3 +207,5 @@ permalink: /kb/276/Q276287/
 	
 	=============================================================================
 	
+
+{% endraw %}

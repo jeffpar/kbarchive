@@ -6,6 +6,8 @@ permalink: /kb/215/Q215080/
 
 ## Q215080: SMS: Setup Packages Requiring Mapped Drives May Not Work
 
+{% raw %}
+
 	Article: Q215080
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -79,3 +81,5 @@ permalink: /kb/215/Q215080/
 	
 	=============================================================================
 	
+
+{% endraw %}

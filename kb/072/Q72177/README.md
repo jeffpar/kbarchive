@@ -6,6 +6,8 @@ permalink: /kb/072/Q72177/
 
 ## Q72177: IdleWild Does Not Work with MS-DOS Applications
 
+{% raw %}
+
 	Article: Q72177
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/072/Q72177/
 	
 	=============================================================================
 	
+
+{% endraw %}

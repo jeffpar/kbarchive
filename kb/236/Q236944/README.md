@@ -6,6 +6,8 @@ permalink: /kb/236/Q236944/
 
 ## Q236944: Write Protect Error Occurs After Program Is Run from Floppy Disk
 
+{% raw %}
+
 	Article: Q236944
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/236/Q236944/
 	
 	=============================================================================
 	
+
+{% endraw %}

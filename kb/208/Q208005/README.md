@@ -6,6 +6,8 @@ permalink: /kb/208/Q208005/
 
 ## Q208005: FIX: Page Table Initialization Missing in x86 OAL
 
+{% raw %}
+
 	Article: Q208005
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:
@@ -72,3 +74,5 @@ permalink: /kb/208/Q208005/
 	
 	=============================================================================
 	
+
+{% endraw %}

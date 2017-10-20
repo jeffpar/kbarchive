@@ -6,6 +6,8 @@ permalink: /kb/202/Q202112/
 
 ## Q202112: CHAT: Cannot Change Default Location for Channel Transcription
 
+{% raw %}
+
 	Article: Q202112
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -50,3 +52,5 @@ permalink: /kb/202/Q202112/
 	
 	=============================================================================
 	
+
+{% endraw %}

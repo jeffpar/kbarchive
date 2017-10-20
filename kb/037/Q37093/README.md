@@ -6,6 +6,8 @@ permalink: /kb/037/Q37093/
 
 ## Q37093: Toggling DTR Handshaking Line (Pin 20) with OUT Statement
 
+{% raw %}
+
 	Article: Q37093
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.OO 4.00b 4.50
@@ -60,3 +62,5 @@ permalink: /kb/037/Q37093/
 	       OUT &H3FC, INP(&H3FC) AND &HFE  ' Clears low bit to turn off DTR.
 	    END IF
 	LOOP
+
+{% endraw %}

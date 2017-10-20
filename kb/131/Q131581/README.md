@@ -6,6 +6,8 @@ permalink: /kb/131/Q131581/
 
 ## Q131581: Aborted File Transfer Deletes File on Remote Computer
 
+{% raw %}
+
 	Article: Q131581
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/131/Q131581/
 	
 	=============================================================================
 	
+
+{% endraw %}

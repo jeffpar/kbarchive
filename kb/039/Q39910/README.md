@@ -6,6 +6,8 @@ permalink: /kb/039/Q39910/
 
 ## Q39910: PRB: Initializing Non-Primary Union Element Produces Errors
 
+{% raw %}
+
 	Article: Q39910
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
@@ -135,3 +137,5 @@ permalink: /kb/039/Q39910/
 	
 	=============================================================================
 	
+
+{% endraw %}

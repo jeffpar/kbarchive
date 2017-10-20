@@ -6,6 +6,8 @@ permalink: /kb/243/Q243647/
 
 ## Q243647: &quot;Error Communicating with Component&quot; Querying for Service Status
 
+{% raw %}
+
 	Article: Q243647
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -63,3 +65,5 @@ permalink: /kb/243/Q243647/
 	
 	=============================================================================
 	
+
+{% endraw %}

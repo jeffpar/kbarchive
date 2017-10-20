@@ -6,6 +6,8 @@ permalink: /kb/259/Q259962/
 
 ## Q259962: Visual FoxPro 6.0 Sample: How to Create a Menu Object
 
+{% raw %}
+
 	Article: Q259962
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -114,3 +116,5 @@ permalink: /kb/259/Q259962/
 	
 	=============================================================================
 	
+
+{% endraw %}

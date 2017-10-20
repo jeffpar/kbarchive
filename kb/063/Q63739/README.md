@@ -6,6 +6,8 @@ permalink: /kb/063/Q63739/
 
 ## Q63739: Setting Up a Dvorak Keyboard for Windows Version 3.0
 
+{% raw %}
+
 	Article: Q63739
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -42,3 +44,5 @@ permalink: /kb/063/Q63739/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163431/
 
 ## Q163431: 16-Bit Application Stops Responding When Run on WinNT 4.0
 
+{% raw %}
+
 	Article: Q163431
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/163/Q163431/
 	
 	=============================================================================
 	
+
+{% endraw %}

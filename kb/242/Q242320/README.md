@@ -6,6 +6,8 @@ permalink: /kb/242/Q242320/
 
 ## Q242320: XFOR: Event ID 4122 from Exchange Server Internet Mail Service
 
+{% raw %}
+
 	Article: Q242320
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -70,3 +72,5 @@ permalink: /kb/242/Q242320/
 	
 	=============================================================================
 	
+
+{% endraw %}

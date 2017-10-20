@@ -6,6 +6,8 @@ permalink: /kb/166/Q166865/
 
 ## Q166865: WD97: &quot;Invalid Document ID&quot; Opening/Saving Document
 
+{% raw %}
+
 	Article: Q166865
 	Product(s): Word 97 for Windows
 	Version(s): 4.0
@@ -96,3 +98,5 @@ permalink: /kb/166/Q166865/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148821/
 
 ## Q148821: Possible Data Loss with LBA and INT13 Extensions
 
+{% raw %}
+
 	Article: Q148821
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -170,3 +172,5 @@ permalink: /kb/148/Q148821/
 	
 	=============================================================================
 	
+
+{% endraw %}

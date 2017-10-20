@@ -6,6 +6,8 @@ permalink: /kb/172/Q172082/
 
 ## Q172082: HOWTO: Handle RDO 2.0 Asynchronous Processing WithEvents
 
+{% raw %}
+
 	Article: Q172082
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -126,3 +128,5 @@ permalink: /kb/172/Q172082/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177334/
 
 ## Q177334: How to Select the Default Web Browser for MSN
 
+{% raw %}
+
 	Article: Q177334
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,4.0
@@ -51,3 +53,5 @@ permalink: /kb/177/Q177334/
 	
 	=============================================================================
 	
+
+{% endraw %}

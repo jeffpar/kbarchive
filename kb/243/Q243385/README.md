@@ -6,6 +6,8 @@ permalink: /kb/243/Q243385/
 
 ## Q243385: Enabling Network Abstraction Layer Logging and Setting Logging
 
+{% raw %}
+
 	Article: Q243385
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -88,3 +90,5 @@ permalink: /kb/243/Q243385/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174071/
 
 ## Q174071: WD97: Strange Behavior with Equation Toolbar in Arrange All Vie
 
+{% raw %}
+
 	Article: Q174071
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -126,3 +128,5 @@ permalink: /kb/174/Q174071/
 	
 	=============================================================================
 	
+
+{% endraw %}

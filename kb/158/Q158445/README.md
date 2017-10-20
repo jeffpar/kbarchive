@@ -6,6 +6,8 @@ permalink: /kb/158/Q158445/
 
 ## Q158445: SMS: Remote Control Agent Unable to Get Workstation Name
 
+{% raw %}
+
 	Article: Q158445
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -45,3 +47,5 @@ permalink: /kb/158/Q158445/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148305/
 
 ## Q148305: PRB: AfxFindResourceHandle Fails w/ Icons, Cursors, &amp; Strings
 
+{% raw %}
+
 	Article: Q148305
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0
@@ -107,3 +109,5 @@ permalink: /kb/148/Q148305/
 	
 	=============================================================================
 	
+
+{% endraw %}

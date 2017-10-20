@@ -6,6 +6,8 @@ permalink: /kb/187/Q187327/
 
 ## Q187327: Full Synchronization Fails When Using Long Service Names
 
+{% raw %}
+
 	Article: Q187327
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -67,3 +69,5 @@ permalink: /kb/187/Q187327/
 	
 	=============================================================================
 	
+
+{% endraw %}

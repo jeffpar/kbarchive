@@ -6,6 +6,8 @@ permalink: /kb/161/Q161308/
 
 ## Q161308: HOWTO: Modify Properties of an Object Passed ByVal
 
+{% raw %}
+
 	Article: Q161308
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -241,3 +243,5 @@ permalink: /kb/161/Q161308/
 	
 	=============================================================================
 	
+
+{% endraw %}

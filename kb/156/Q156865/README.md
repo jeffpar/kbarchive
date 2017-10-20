@@ -6,6 +6,8 @@ permalink: /kb/156/Q156865/
 
 ## Q156865: PRB: Programmatically Converting 3.0 Project in 5.0 Fails
 
+{% raw %}
+
 	Article: Q156865
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/156/Q156865/
 	
 	=============================================================================
 	
+
+{% endraw %}

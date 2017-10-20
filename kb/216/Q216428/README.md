@@ -6,6 +6,8 @@ permalink: /kb/216/Q216428/
 
 ## Q216428: Configuring Microsoft ODBC Driver for DB2
 
+{% raw %}
+
 	Article: Q216428
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -249,3 +251,5 @@ permalink: /kb/216/Q216428/
 	
 	=============================================================================
 	
+
+{% endraw %}

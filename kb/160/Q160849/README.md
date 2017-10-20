@@ -6,6 +6,8 @@ permalink: /kb/160/Q160849/
 
 ## Q160849: INFO: How the SNA Server Client Chooses a &quot;Sponsor&quot; SNA Server
 
+{% raw %}
+
 	Article: Q160849
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11,3.0,4.0
@@ -197,3 +199,5 @@ permalink: /kb/160/Q160849/
 	
 	=============================================================================
 	
+
+{% endraw %}

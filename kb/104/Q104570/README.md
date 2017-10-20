@@ -6,6 +6,8 @@ permalink: /kb/104/Q104570/
 
 ## Q104570: Reading and Writing Icons from ExtractIcon
 
+{% raw %}
+
 	Article: Q104570
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -174,3 +176,5 @@ permalink: /kb/104/Q104570/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74588/
 
 ## Q74588: DOSSHELL.VID File Needed for Graphics Mode
 
+{% raw %}
+
 	Article: Q74588
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -73,3 +75,5 @@ permalink: /kb/074/Q74588/
 	
 	=============================================================================
 	
+
+{% endraw %}

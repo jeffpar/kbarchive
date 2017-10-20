@@ -6,6 +6,8 @@ permalink: /kb/181/Q181021/
 
 ## Q181021: RRAS ErrMsg: Setup Failed to Copy Oemnsvra.inf to Your...
 
+{% raw %}
+
 	Article: Q181021
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/181/Q181021/
 	
 	=============================================================================
 	
+
+{% endraw %}

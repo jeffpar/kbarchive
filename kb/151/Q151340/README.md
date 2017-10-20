@@ -6,6 +6,8 @@ permalink: /kb/151/Q151340/
 
 ## Q151340: Cannot Use &quot;@msn.com&quot; in Personal Address Book
 
+{% raw %}
+
 	Article: Q151340
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -47,3 +49,5 @@ permalink: /kb/151/Q151340/
 	
 	=============================================================================
 	
+
+{% endraw %}

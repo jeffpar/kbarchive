@@ -6,6 +6,8 @@ permalink: /kb/106/Q106664/
 
 ## Q106664: Multimedia: GetPixel() Error Message
 
+{% raw %}
+
 	Article: Q106664
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.0a; :1.0,1992 edition,1993 edition,1994 edition,1995 edition,1997 edition
@@ -85,3 +87,5 @@ permalink: /kb/106/Q106664/
 	
 	=============================================================================
 	
+
+{% endraw %}

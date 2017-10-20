@@ -6,6 +6,8 @@ permalink: /kb/104/Q104850/
 
 ## Q104850: Flight Simulator for Mac: Quits with Type 4 Error
 
+{% raw %}
+
 	Article: Q104850
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:4.0,4.0a
@@ -69,3 +71,5 @@ permalink: /kb/104/Q104850/
 	
 	=============================================================================
 	
+
+{% endraw %}

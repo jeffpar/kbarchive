@@ -6,6 +6,8 @@ permalink: /kb/084/Q84753/
 
 ## Q84753: Manually Installing the CGA Display Driver
 
+{% raw %}
+
 	Article: Q84753
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -87,3 +89,5 @@ permalink: /kb/084/Q84753/
 	
 	=============================================================================
 	
+
+{% endraw %}

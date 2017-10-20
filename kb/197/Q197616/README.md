@@ -6,6 +6,8 @@ permalink: /kb/197/Q197616/
 
 ## Q197616: Running Windows 98 Corrections and Comments
 
+{% raw %}
+
 	Article: Q197616
 	Product(s): Microsoft Press
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/197/Q197616/
 	
 	=============================================================================
 	
+
+{% endraw %}

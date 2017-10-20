@@ -6,6 +6,8 @@ permalink: /kb/321/Q321141/
 
 ## Q321141: HOW TO: Disable or Remove Unnecessary IIS Services
 
+{% raw %}
+
 	Article: Q321141
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -147,3 +149,5 @@ permalink: /kb/321/Q321141/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126396/
 
 ## Q126396: SNA Server 3270 LU is Available, But No Sign On Screen Appears
 
+{% raw %}
+
 	Article: Q126396
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -74,3 +76,5 @@ permalink: /kb/126/Q126396/
 	
 	=============================================================================
 	
+
+{% endraw %}

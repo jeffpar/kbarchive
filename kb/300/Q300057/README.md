@@ -6,6 +6,8 @@ permalink: /kb/300/Q300057/
 
 ## Q300057: The Sample Passport Web Site Pages Are Not Working Correctly
 
+{% raw %}
+
 	Article: Q300057
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -56,3 +58,5 @@ permalink: /kb/300/Q300057/
 	
 	=============================================================================
 	
+
+{% endraw %}

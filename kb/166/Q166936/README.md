@@ -6,6 +6,8 @@ permalink: /kb/166/Q166936/
 
 ## Q166936: PRB: Letters A through J and M Invalid Object Variable Names
 
+{% raw %}
+
 	Article: Q166936
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -81,3 +83,5 @@ permalink: /kb/166/Q166936/
 	
 	=============================================================================
 	
+
+{% endraw %}

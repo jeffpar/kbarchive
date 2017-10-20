@@ -6,6 +6,8 @@ permalink: /kb/257/Q257958/
 
 ## Q257958: MCSE Training Kit, Microsoft Windows 2000 Professional Comments
 
+{% raw %}
+
 	Article: Q257958
 	Product(s): Microsoft Press
 	Version(s): 
@@ -768,3 +770,5 @@ permalink: /kb/257/Q257958/
 	
 	=============================================================================
 	
+
+{% endraw %}

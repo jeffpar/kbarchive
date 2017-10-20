@@ -6,6 +6,8 @@ permalink: /kb/171/Q171815/
 
 ## Q171815: FIX: Printer.TextWidth Returning Inconsistent Results in IDE
 
+{% raw %}
+
 	Article: Q171815
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -119,3 +121,5 @@ permalink: /kb/171/Q171815/
 	
 	=============================================================================
 	
+
+{% endraw %}

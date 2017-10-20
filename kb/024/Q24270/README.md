@@ -6,6 +6,8 @@ permalink: /kb/024/Q24270/
 
 ## Q24270: Tracking Down a Null Pointer Assignment Error
 
+{% raw %}
+
 	Article: Q24270
 	Product(s): See article
 	Version(s): 1.00 1.10 2.00 2.10 2.20 2.30 | 2.20 2.30
@@ -49,3 +51,5 @@ permalink: /kb/024/Q24270/
 	When any value in the specified range changes, CodeView will stop the
 	execution of your program. The previously executed line was probably
 	the line that caused the R6001 error.
+
+{% endraw %}

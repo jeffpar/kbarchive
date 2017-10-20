@@ -6,6 +6,8 @@ permalink: /kb/220/Q220965/
 
 ## Q220965: XWEB: OWA NT Challenge Response Not Working as Expected
 
+{% raw %}
+
 	Article: Q220965
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -64,3 +66,5 @@ permalink: /kb/220/Q220965/
 	
 	=============================================================================
 	
+
+{% endraw %}

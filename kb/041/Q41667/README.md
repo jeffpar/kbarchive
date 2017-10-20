@@ -6,6 +6,8 @@ permalink: /kb/041/Q41667/
 
 ## Q41667: QuickC 2.00 README.DOC: Error Message C2177
 
+{% raw %}
+
 	Article: Q41667
 	Product(s): See article
 	Version(s): 2.00
@@ -32,3 +34,5 @@ permalink: /kb/041/Q41667/
 	
 	   unsigned long debt = 2000000000 + 1000000000;
 	   unsigned long debt = 0xB2D05E00;
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231885/
 
 ## Q231885: Midtown Madness: Display Adapters Redetected When You Start Game
 
+{% raw %}
+
 	Article: Q231885
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -105,3 +107,5 @@ permalink: /kb/231/Q231885/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199385/
 
 ## Q199385: PRB: Active OLE Control Prevents Logging Off or Shutting Down
 
+{% raw %}
+
 	Article: Q199385
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/199/Q199385/
 	
 	=============================================================================
 	
+
+{% endraw %}

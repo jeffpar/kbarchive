@@ -6,6 +6,8 @@ permalink: /kb/196/Q196396/
 
 ## Q196396: XADM: How to Import International Characters to Exchange Server
 
+{% raw %}
+
 	Article: Q196396
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/196/Q196396/
 	
 	=============================================================================
 	
+
+{% endraw %}

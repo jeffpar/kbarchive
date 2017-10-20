@@ -6,6 +6,8 @@ permalink: /kb/068/Q68625/
 
 ## Q68625: Increasing the Automatic Repeat Rate of the Keyboard
 
+{% raw %}
+
 	Article: Q68625
 	Product(s): See article
 	Version(s): 2.50 2.51
@@ -41,3 +43,5 @@ permalink: /kb/068/Q68625/
 	  r.h.bl= 0;
 	  int86 (0x16, &r);
 	  }
+
+{% endraw %}

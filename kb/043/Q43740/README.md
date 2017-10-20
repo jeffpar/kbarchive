@@ -6,6 +6,8 @@ permalink: /kb/043/Q43740/
 
 ## Q43740: Default Palette for Presentation Graphics in QuickC 2.00
 
+{% raw %}
+
 	Article: Q43740
 	Product(s): See article
 	Version(s): 2.00
@@ -30,3 +32,5 @@ permalink: /kb/043/Q43740/
 	   5         Red               13       Light Red
 	   6         Magenta           14       Light Magenta
 	   7         Brown             15       Yellow
+
+{% endraw %}

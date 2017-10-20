@@ -6,6 +6,8 @@ permalink: /kb/067/Q67439/
 
 ## Q67439: DOCERR: MASM 5.1 Instructions Operand Size Documented Wrong
 
+{% raw %}
+
 	Article: Q67439
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -44,3 +46,5 @@ permalink: /kb/067/Q67439/
 	
 	=============================================================================
 	
+
+{% endraw %}

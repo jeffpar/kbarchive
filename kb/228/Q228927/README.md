@@ -6,6 +6,8 @@ permalink: /kb/228/Q228927/
 
 ## Q228927: FIX: Integration Slow Update w/Source Code Control Status
 
+{% raw %}
+
 	Article: Q228927
 	Product(s): Microsoft SourceSafe
 	Version(s): 1.1,4.0,4.1,4.2,5.0,6.0,97
@@ -132,3 +134,5 @@ permalink: /kb/228/Q228927/
 	
 	=============================================================================
 	
+
+{% endraw %}

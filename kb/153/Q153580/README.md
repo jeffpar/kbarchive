@@ -6,6 +6,8 @@ permalink: /kb/153/Q153580/
 
 ## Q153580: How to Get the Type of Another OLE Control from a Custom OCX
 
+{% raw %}
+
 	Article: Q153580
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/153/Q153580/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153838/
 
 ## Q153838: FILE: Name Expansion Utility/&quot;Hitchhiker's Guide to VB and SQL&quot;
 
+{% raw %}
+
 	Article: Q153838
 	Product(s): Microsoft Press
 	Version(s): 4.0,6.0
@@ -819,3 +821,5 @@ permalink: /kb/153/Q153838/
 	
 	=============================================================================
 	
+
+{% endraw %}

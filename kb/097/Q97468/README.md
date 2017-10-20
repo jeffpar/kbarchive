@@ -6,6 +6,8 @@ permalink: /kb/097/Q97468/
 
 ## Q97468: PC WRmt: Mail Does Not Display Friendly Names from Headers
 
+{% raw %}
+
 	Article: Q97468
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -69,3 +71,5 @@ permalink: /kb/097/Q97468/
 	
 	=============================================================================
 	
+
+{% endraw %}

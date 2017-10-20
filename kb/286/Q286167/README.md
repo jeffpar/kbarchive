@@ -6,6 +6,8 @@ permalink: /kb/286/Q286167/
 
 ## Q286167: Games: Video Problems with Evans &amp;amp; Sutherland Video Cards
 
+{% raw %}
+
 	Article: Q286167
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -90,3 +92,5 @@ permalink: /kb/286/Q286167/
 	
 	=============================================================================
 	
+
+{% endraw %}

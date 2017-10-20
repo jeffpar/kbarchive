@@ -6,6 +6,8 @@ permalink: /kb/142/Q142190/
 
 ## Q142190: How to Create Mover List Boxes in Visual FoxPro
 
+{% raw %}
+
 	Article: Q142190
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -103,3 +105,5 @@ permalink: /kb/142/Q142190/
 	
 	=============================================================================
 	
+
+{% endraw %}

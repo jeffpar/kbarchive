@@ -6,6 +6,8 @@ permalink: /kb/128/Q128166/
 
 ## Q128166: Services for Macintosh Not Available on Compaq Computers
 
+{% raw %}
+
 	Article: Q128166
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -130,3 +132,5 @@ permalink: /kb/128/Q128166/
 	
 	=============================================================================
 	
+
+{% endraw %}

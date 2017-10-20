@@ -6,6 +6,8 @@ permalink: /kb/196/Q196747/
 
 ## Q196747: Org Chart Fails to Open When Called from Office Application
 
+{% raw %}
+
 	Article: Q196747
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:97; winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/196/Q196747/
 	
 	=============================================================================
 	
+
+{% endraw %}

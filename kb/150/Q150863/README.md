@@ -6,6 +6,8 @@ permalink: /kb/150/Q150863/
 
 ## Q150863: XADM: Mail Box Cleanup Agent has no Permissions
 
+{% raw %}
+
 	Article: Q150863
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:Part 2
@@ -46,3 +48,5 @@ permalink: /kb/150/Q150863/
 	
 	=============================================================================
 	
+
+{% endraw %}

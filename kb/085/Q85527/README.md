@@ -6,6 +6,8 @@ permalink: /kb/085/Q85527/
 
 ## Q85527: Adobe Type Manager Overwrites HP DeskJet Soft Fonts
 
+{% raw %}
+
 	Article: Q85527
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/085/Q85527/
 	
 	=============================================================================
 	
+
+{% endraw %}

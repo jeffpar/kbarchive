@@ -6,6 +6,8 @@ permalink: /kb/169/Q169136/
 
 ## Q169136: Multilink ISDN in WinNT 4.0 May Fail When Connect 2nd Channel
 
+{% raw %}
+
 	Article: Q169136
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/169/Q169136/
 	
 	=============================================================================
 	
+
+{% endraw %}

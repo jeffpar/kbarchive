@@ -6,6 +6,8 @@ permalink: /kb/190/Q190256/
 
 ## Q190256: HOWTO: Show Table Borders for All Cells in DHTML Page Designer
 
+{% raw %}
+
 	Article: Q190256
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -53,3 +55,5 @@ permalink: /kb/190/Q190256/
 	
 	=============================================================================
 	
+
+{% endraw %}

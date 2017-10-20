@@ -6,6 +6,8 @@ permalink: /kb/099/Q99718/
 
 ## Q99718: SMTP: Determining Total Time-Out Period with -Q and -W
 
+{% raw %}
+
 	Article: Q99718
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/099/Q99718/
 	
 	=============================================================================
 	
+
+{% endraw %}

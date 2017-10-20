@@ -6,6 +6,8 @@ permalink: /kb/171/Q171111/
 
 ## Q171111: Audio Options Disabled with Gravis Sound Card
 
+{% raw %}
+
 	Article: Q171111
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -55,3 +57,5 @@ permalink: /kb/171/Q171111/
 	
 	=============================================================================
 	
+
+{% endraw %}

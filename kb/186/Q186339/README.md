@@ -6,6 +6,8 @@ permalink: /kb/186/Q186339/
 
 ## Q186339: Adobe ATM 4.0 OpenType Fonts Not Showing up in Font Menu
 
+{% raw %}
+
 	Article: Q186339
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/186/Q186339/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173643/
 
 ## Q173643: XWEB: Outlook Web Access Displays Time in 24-Hour Format
 
+{% raw %}
+
 	Article: Q173643
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -46,3 +48,5 @@ permalink: /kb/173/Q173643/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/073/Q73743/
 
 ## Q73743: Use of the &#91;Savestate&#93; Section of the DOSSHELL.INI File
 
+{% raw %}
+
 	Article: Q73743
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -102,3 +104,5 @@ permalink: /kb/073/Q73743/
 	
 	=============================================================================
 	
+
+{% endraw %}

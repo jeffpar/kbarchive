@@ -6,6 +6,8 @@ permalink: /kb/132/Q132994/
 
 ## Q132994: Games (A-H) Requiring or Performing Better in MS-DOS Mode
 
+{% raw %}
+
 	Article: Q132994
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -508,3 +510,5 @@ permalink: /kb/132/Q132994/
 	
 	=============================================================================
 	
+
+{% endraw %}

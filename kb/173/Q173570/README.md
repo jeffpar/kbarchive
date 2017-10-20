@@ -6,6 +6,8 @@ permalink: /kb/173/Q173570/
 
 ## Q173570: Troubleshooting: How to Change to 640 x 480 x 256 Colors
 
+{% raw %}
+
 	Article: Q173570
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a
@@ -80,3 +82,5 @@ permalink: /kb/173/Q173570/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61679/
 
 ## Q61679: EMS Corrupt in QBX When 386MAX Loaded with the Noframe Option
 
+{% raw %}
+
 	Article: Q61679
 	Product(s): See article
 	Version(s): 7.00
@@ -20,3 +22,5 @@ permalink: /kb/061/Q61679/
 	
 	This information applies to Microsoft BASIC Professional Development
 	System (PDS) version 7.00.
+
+{% endraw %}

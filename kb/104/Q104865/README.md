@@ -6,6 +6,8 @@ permalink: /kb/104/Q104865/
 
 ## Q104865: PRB: &quot;Report File Invalid&quot; or &quot;Memo File Missing/Invalid&quot;
 
+{% raw %}
+
 	Article: Q104865
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -56,3 +58,5 @@ permalink: /kb/104/Q104865/
 	
 	=============================================================================
 	
+
+{% endraw %}

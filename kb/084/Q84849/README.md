@@ -6,6 +6,8 @@ permalink: /kb/084/Q84849/
 
 ## Q84849: No TrueType Identifiers in Programs Created Before Windows 3.1
 
+{% raw %}
+
 	Article: Q84849
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/084/Q84849/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/059/Q59371/
 
 ## Q59371: &quot;Name Not Found&quot; Error Sending Messages to Busy DOS WS
 
+{% raw %}
+
 	Article: Q59371
 	Product(s): Microsoft LAN Manager
 	Version(s): 2.0,2.1
@@ -51,3 +53,5 @@ permalink: /kb/059/Q59371/
 	
 	=============================================================================
 	
+
+{% endraw %}

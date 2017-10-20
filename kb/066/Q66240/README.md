@@ -6,6 +6,8 @@ permalink: /kb/066/Q66240/
 
 ## Q66240: INFO: Aligning Columns in a Windows 3.x List Box
 
+{% raw %}
+
 	Article: Q66240
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -95,3 +97,5 @@ permalink: /kb/066/Q66240/
 	
 	=============================================================================
 	
+
+{% endraw %}

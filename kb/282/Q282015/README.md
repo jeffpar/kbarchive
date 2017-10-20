@@ -6,6 +6,8 @@ permalink: /kb/282/Q282015/
 
 ## Q282015: &quot;Protected Storage&quot; Error Message with Roaming Profiles
 
+{% raw %}
+
 	Article: Q282015
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -138,3 +140,5 @@ permalink: /kb/282/Q282015/
 	
 	=============================================================================
 	
+
+{% endraw %}

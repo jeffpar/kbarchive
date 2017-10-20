@@ -6,6 +6,8 @@ permalink: /kb/148/Q148365/
 
 ## Q148365: PC Forms: Characters Following a Tab Are Not Retrieved
 
+{% raw %}
+
 	Article: Q148365
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/148/Q148365/
 	
 	=============================================================================
 	
+
+{% endraw %}

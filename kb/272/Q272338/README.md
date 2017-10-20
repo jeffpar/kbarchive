@@ -6,6 +6,8 @@ permalink: /kb/272/Q272338/
 
 ## Q272338: HOWTO: Use VFP and ADO Stream Object to Retrieve Binary Data
 
+{% raw %}
+
 	Article: Q272338
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,6.0; winnt:7.0
@@ -113,3 +115,5 @@ permalink: /kb/272/Q272338/
 	
 	=============================================================================
 	
+
+{% endraw %}

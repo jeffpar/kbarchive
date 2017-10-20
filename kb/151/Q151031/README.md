@@ -6,6 +6,8 @@ permalink: /kb/151/Q151031/
 
 ## Q151031: FIX: SetMinHeight Does Not Work Correctly with CStatusBar
 
+{% raw %}
+
 	Article: Q151031
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -86,9 +88,9 @@ permalink: /kb/151/Q151031/
 	
 	          // Generated message map functions
 	     protected:
-	          //{ {AFX_MSG(CMyStatusBar)
+	          //{{AFX_MSG(CMyStatusBar)
 	          //NOTE-the ClassWizard will add and remove member functions here.
-	          //} }AFX_MSG
+	          //}}AFX_MSG
 	
 	     #if _MFC_VER == 0x0400 || _MFC_VER == 0x0410 || _MFC_VER == 0x420 ||\ 
 	     _MFC_VER == 0x421
@@ -119,9 +121,9 @@ permalink: /kb/151/Q151031/
 	     // CMyStatusBar
 	
 	     BEGIN_MESSAGE_MAP(CMyStatusBar, CStatusBar)
-	          //{ {AFX_MSG_MAP(CMyStatusBar)
+	          //{{AFX_MSG_MAP(CMyStatusBar)
 	          //NOTE-the ClassWizard will add and remove mapping macros here.
-	          //} }AFX_MSG_MAP
+	          //}}AFX_MSG_MAP
 	
 	     #if _MFC_VER == 0x0400 || _MFC_VER == 0x0410 || _MFC_VER == 0x420 ||\ 
 	     _MFC_VER == 0x421
@@ -162,3 +164,5 @@ permalink: /kb/151/Q151031/
 	
 	=============================================================================
 	
+
+{% endraw %}

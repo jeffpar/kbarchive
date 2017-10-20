@@ -6,6 +6,8 @@ permalink: /kb/189/Q189303/
 
 ## Q189303: SMS: Service Pack Upgrade Button Unavailable When Running Setup
 
+{% raw %}
+
 	Article: Q189303
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -56,3 +58,5 @@ permalink: /kb/189/Q189303/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172141/
 
 ## Q172141: Logging File Methods with IIS
 
+{% raw %}
+
 	Article: Q172141
 	Product(s): Internet Information Server
 	Version(s): WinNT:3.0
@@ -64,3 +66,5 @@ permalink: /kb/172/Q172141/
 	
 	=============================================================================
 	
+
+{% endraw %}

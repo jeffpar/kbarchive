@@ -6,6 +6,8 @@ permalink: /kb/285/Q285327/
 
 ## Q285327: Games: W95.Hybris Virus Alert
 
+{% raw %}
+
 	Article: Q285327
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -228,3 +230,5 @@ permalink: /kb/285/Q285327/
 	
 	=============================================================================
 	
+
+{% endraw %}

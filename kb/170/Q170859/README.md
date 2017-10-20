@@ -6,6 +6,8 @@ permalink: /kb/170/Q170859/
 
 ## Q170859: Require Secure SSL Channel Option is Not Available
 
+{% raw %}
+
 	Article: Q170859
 	Product(s): Internet Information Server
 	Version(s): WinNT:2.0,3.0
@@ -76,3 +78,5 @@ permalink: /kb/170/Q170859/
 	
 	=============================================================================
 	
+
+{% endraw %}

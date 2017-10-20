@@ -6,6 +6,8 @@ permalink: /kb/201/Q201771/
 
 ## Q201771: How To Set Up an FTP Site So That Users Log Onto Their Folders
 
+{% raw %}
+
 	Article: Q201771
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -77,3 +79,5 @@ permalink: /kb/201/Q201771/
 	
 	=============================================================================
 	
+
+{% endraw %}

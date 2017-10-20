@@ -6,6 +6,8 @@ permalink: /kb/250/Q250335/
 
 ## Q250335: FILE: VCSPInfo.exe Provides Visual C++ Service Pack Information
 
+{% raw %}
+
 	Article: Q250335
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -81,3 +83,5 @@ permalink: /kb/250/Q250335/
 	
 	=============================================================================
 	
+
+{% endraw %}

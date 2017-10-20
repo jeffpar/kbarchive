@@ -6,6 +6,8 @@ permalink: /kb/245/Q245837/
 
 ## Q245837: XFOR: Incomplete Dirsync from Lotus Notes to Exchange Server
 
+{% raw %}
+
 	Article: Q245837
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -77,3 +79,5 @@ permalink: /kb/245/Q245837/
 	
 	=============================================================================
 	
+
+{% endraw %}

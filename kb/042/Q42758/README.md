@@ -6,6 +6,8 @@ permalink: /kb/042/Q42758/
 
 ## Q42758: Savecur and Restcur Save Relative Position in File, on Screen
 
+{% raw %}
+
 	Article: Q42758
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -57,3 +59,5 @@ permalink: /kb/042/Q42758/
 	ReposUp:Ctrl+Down
 	
 	The word "tag" is an arbitrary tagname for the Mark function.
+
+{% endraw %}

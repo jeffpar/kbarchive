@@ -6,6 +6,8 @@ permalink: /kb/176/Q176396/
 
 ## Q176396: XCON: Long Lines of Text Cause Content Conversion Error
 
+{% raw %}
+
 	Article: Q176396
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -77,3 +79,5 @@ permalink: /kb/176/Q176396/
 	
 	=============================================================================
 	
+
+{% endraw %}

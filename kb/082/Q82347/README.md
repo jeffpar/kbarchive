@@ -6,6 +6,8 @@ permalink: /kb/082/Q82347/
 
 ## Q82347: GP Fault in Ami Pro when Viewing Facing Page Is Selected
 
+{% raw %}
+
 	Article: Q82347
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/082/Q82347/
 	
 	=============================================================================
 	
+
+{% endraw %}

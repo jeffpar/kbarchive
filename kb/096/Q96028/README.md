@@ -6,6 +6,8 @@ permalink: /kb/096/Q96028/
 
 ## Q96028: Using /S Switch with LOADHIGH
 
+{% raw %}
+
 	Article: Q96028
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -74,3 +76,5 @@ permalink: /kb/096/Q96028/
 	
 	=============================================================================
 	
+
+{% endraw %}

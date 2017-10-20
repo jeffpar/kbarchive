@@ -6,6 +6,8 @@ permalink: /kb/171/Q171526/
 
 ## Q171526: FIX: Setting Enabled=False for TreeView Causes Paint Problems
 
+{% raw %}
+
 	Article: Q171526
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -101,3 +103,5 @@ permalink: /kb/171/Q171526/
 	
 	=============================================================================
 	
+
+{% endraw %}

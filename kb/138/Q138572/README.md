@@ -6,6 +6,8 @@ permalink: /kb/138/Q138572/
 
 ## Q138572: SMS Administrator GPFaults Accessing Machine Properties Info
 
+{% raw %}
+
 	Article: Q138572
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -48,3 +50,5 @@ permalink: /kb/138/Q138572/
 	
 	=============================================================================
 	
+
+{% endraw %}

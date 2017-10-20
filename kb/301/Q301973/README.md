@@ -6,6 +6,8 @@ permalink: /kb/301/Q301973/
 
 ## Q301973: Encarta World Atlas 2001: &quot;Msworld6 Caused IPF&quot; Err Msg
 
+{% raw %}
+
 	Article: Q301973
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/301/Q301973/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163146/
 
 ## Q163146: PPT: Run-Time Error Using the AddPicture Method
 
+{% raw %}
+
 	Article: Q163146
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/163/Q163146/
 	
 	=============================================================================
 	
+
+{% endraw %}

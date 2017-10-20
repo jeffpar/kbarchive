@@ -6,6 +6,8 @@ permalink: /kb/261/Q261998/
 
 ## Q261998: Allegiance: Actions You Assign to Game Controller Do Not Occur
 
+{% raw %}
+
 	Article: Q261998
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/261/Q261998/
 	
 	=============================================================================
 	
+
+{% endraw %}

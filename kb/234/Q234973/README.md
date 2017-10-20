@@ -6,6 +6,8 @@ permalink: /kb/234/Q234973/
 
 ## Q234973: PRB: Error 80042114 Web Server Doesn't Support Selected Provider
 
+{% raw %}
+
 	Article: Q234973
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -91,3 +93,5 @@ permalink: /kb/234/Q234973/
 	
 	=============================================================================
 	
+
+{% endraw %}

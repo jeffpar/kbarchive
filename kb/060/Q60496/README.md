@@ -6,6 +6,8 @@ permalink: /kb/060/Q60496/
 
 ## Q60496: FORTRAN 5.00 and C 6.00 Mixed-Language Considerations
 
+{% raw %}
+
 	Article: Q60496
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -38,3 +40,5 @@ permalink: /kb/060/Q60496/
 	
 	This information is also documented in "Advanced Programming
 	Techniques," Chapter 12.3.2, Page 285.
+
+{% endraw %}

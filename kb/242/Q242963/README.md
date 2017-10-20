@@ -6,6 +6,8 @@ permalink: /kb/242/Q242963/
 
 ## Q242963: SMS: Slow Enumeration of Existing Collections
 
+{% raw %}
+
 	Article: Q242963
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -100,3 +102,5 @@ permalink: /kb/242/Q242963/
 	
 	=============================================================================
 	
+
+{% endraw %}

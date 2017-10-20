@@ -6,6 +6,8 @@ permalink: /kb/257/Q257523/
 
 ## Q257523: BUG: Resource Leak When Displaying WMF Files in PictureBox
 
+{% raw %}
+
 	Article: Q257523
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -119,3 +121,5 @@ permalink: /kb/257/Q257523/
 	
 	=============================================================================
 	
+
+{% endraw %}

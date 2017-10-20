@@ -6,6 +6,8 @@ permalink: /kb/172/Q172902/
 
 ## Q172902: XWEB: Exchange Web Client Cannot Open Attached Mail Messages
 
+{% raw %}
+
 	Article: Q172902
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5; winnt:5.5,5.5 SP2,5.5 SP3
@@ -66,3 +68,5 @@ permalink: /kb/172/Q172902/
 	
 	=============================================================================
 	
+
+{% endraw %}

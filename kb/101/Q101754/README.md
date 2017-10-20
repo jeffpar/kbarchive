@@ -6,6 +6,8 @@ permalink: /kb/101/Q101754/
 
 ## Q101754: PC Win: MOVEUSER.EXE May Lose Password If Imported from .MMU
 
+{% raw %}
+
 	Article: Q101754
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -67,3 +69,5 @@ permalink: /kb/101/Q101754/
 	
 	=============================================================================
 	
+
+{% endraw %}

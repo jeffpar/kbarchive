@@ -6,6 +6,8 @@ permalink: /kb/279/Q279210/
 
 ## Q279210: CFS/CFS 2: Troubleshooting Joystick Problems (Part 2)
 
+{% raw %}
+
 	Article: Q279210
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -400,3 +402,5 @@ permalink: /kb/279/Q279210/
 	
 	=============================================================================
 	
+
+{% endraw %}

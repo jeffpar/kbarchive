@@ -6,6 +6,8 @@ permalink: /kb/118/Q118395/
 
 ## Q118395: BUG: Watch Expression Evaluation Gives Unexpected Value
 
+{% raw %}
+
 	Article: Q118395
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -109,3 +111,5 @@ permalink: /kb/118/Q118395/
 	
 	=============================================================================
 	
+
+{% endraw %}

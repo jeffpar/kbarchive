@@ -6,6 +6,8 @@ permalink: /kb/102/Q102807/
 
 ## Q102807: Removing a User from a Windows for Workgroups Machine
 
+{% raw %}
+
 	Article: Q102807
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -56,3 +58,5 @@ permalink: /kb/102/Q102807/
 	
 	=============================================================================
 	
+
+{% endraw %}

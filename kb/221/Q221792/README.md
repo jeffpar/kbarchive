@@ -6,6 +6,8 @@ permalink: /kb/221/Q221792/
 
 ## Q221792: PRB: &quot;Library Not Registered&quot; Error Calling Method in ATL Server
 
+{% raw %}
+
 	Article: Q221792
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -106,3 +108,5 @@ permalink: /kb/221/Q221792/
 	
 	=============================================================================
 	
+
+{% endraw %}

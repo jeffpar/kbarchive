@@ -6,6 +6,8 @@ permalink: /kb/146/Q146183/
 
 ## Q146183: XADM: Optimizer Deletes Edb&#42;.log Files When Given Invalid Path
 
+{% raw %}
+
 	Article: Q146183
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 SP2
@@ -66,3 +68,5 @@ permalink: /kb/146/Q146183/
 	
 	=============================================================================
 	
+
+{% endraw %}

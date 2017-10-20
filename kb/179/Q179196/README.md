@@ -6,6 +6,8 @@ permalink: /kb/179/Q179196/
 
 ## Q179196: PRB: &quot;Insert the CD Labeled Microsoft VFP Setup CD-Rom&quot; Error
 
+{% raw %}
+
 	Article: Q179196
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -86,3 +88,5 @@ permalink: /kb/179/Q179196/
 	
 	=============================================================================
 	
+
+{% endraw %}

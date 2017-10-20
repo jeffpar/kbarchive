@@ -6,6 +6,8 @@ permalink: /kb/155/Q155675/
 
 ## Q155675: IPX Headers Not Returned to WinSock Program
 
+{% raw %}
+
 	Article: Q155675
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/155/Q155675/
 	
 	=============================================================================
 	
+
+{% endraw %}

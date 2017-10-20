@@ -6,6 +6,8 @@ permalink: /kb/161/Q161237/
 
 ## Q161237: PRB: Apply Button on Custom OCX Property Page Always Disabled
 
+{% raw %}
+
 	Article: Q161237
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/161/Q161237/
 	
 	=============================================================================
 	
+
+{% endraw %}

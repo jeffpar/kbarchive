@@ -6,6 +6,8 @@ permalink: /kb/111/Q111290/
 
 ## Q111290: PRB: Pink System Highlight Causes FoxPro for Mac to Turn Pink
 
+{% raw %}
+
 	Article: Q111290
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -58,3 +60,5 @@ permalink: /kb/111/Q111290/
 	
 	=============================================================================
 	
+
+{% endraw %}

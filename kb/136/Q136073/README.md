@@ -6,6 +6,8 @@ permalink: /kb/136/Q136073/
 
 ## Q136073: Logon Scripts for Multiple Clients
 
+{% raw %}
+
 	Article: Q136073
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11,95; winnt:3.51
@@ -70,3 +72,5 @@ permalink: /kb/136/Q136073/
 	
 	=============================================================================
 	
+
+{% endraw %}

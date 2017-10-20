@@ -6,6 +6,8 @@ permalink: /kb/191/Q191205/
 
 ## Q191205: BUG: Run-Time Error 458 When Late-Binding Rich TextBox Control
 
+{% raw %}
+
 	Article: Q191205
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/191/Q191205/
 	
 	=============================================================================
 	
+
+{% endraw %}

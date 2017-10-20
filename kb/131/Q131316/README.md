@@ -6,6 +6,8 @@ permalink: /kb/131/Q131316/
 
 ## Q131316: ErrMsg:&quot;Cannot Find VBRUN300.DLL&quot; on Installing Moving Wizard
 
+{% raw %}
+
 	Article: Q131316
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/131/Q131316/
 	
 	=============================================================================
 	
+
+{% endraw %}

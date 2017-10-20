@@ -6,6 +6,8 @@ permalink: /kb/141/Q141254/
 
 ## Q141254: Encarta 1995: Manual Installation for Windows 95 and NT
 
+{% raw %}
+
 	Article: Q141254
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 3.51
@@ -308,3 +310,5 @@ permalink: /kb/141/Q141254/
 	
 	=============================================================================
 	
+
+{% endraw %}

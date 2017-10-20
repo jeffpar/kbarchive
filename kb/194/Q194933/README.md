@@ -6,6 +6,8 @@ permalink: /kb/194/Q194933/
 
 ## Q194933: Problems Displaying Underscored Greek Characters in 3270 Applet
 
+{% raw %}
+
 	Article: Q194933
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -83,3 +85,5 @@ permalink: /kb/194/Q194933/
 	
 	=============================================================================
 	
+
+{% endraw %}

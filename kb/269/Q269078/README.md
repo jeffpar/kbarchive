@@ -6,6 +6,8 @@ permalink: /kb/269/Q269078/
 
 ## Q269078: Domain Names Are Not Displayed in the Accounting Log
 
+{% raw %}
+
 	Article: Q269078
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6,4.0 SP6a
@@ -100,3 +102,5 @@ permalink: /kb/269/Q269078/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153000/
 
 ## Q153000: All Drives in My Computer Are Hidden
 
+{% raw %}
+
 	Article: Q153000
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -91,3 +93,5 @@ permalink: /kb/153/Q153000/
 	
 	=============================================================================
 	
+
+{% endraw %}

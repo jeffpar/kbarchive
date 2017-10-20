@@ -6,6 +6,8 @@ permalink: /kb/190/Q190223/
 
 ## Q190223: PRB: StdFont Rescales When Shared with Printer Object
 
+{% raw %}
+
 	Article: Q190223
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/190/Q190223/
 	
 	=============================================================================
 	
+
+{% endraw %}

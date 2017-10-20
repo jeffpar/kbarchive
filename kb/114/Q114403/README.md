@@ -6,6 +6,8 @@ permalink: /kb/114/Q114403/
 
 ## Q114403: MHS: First Contact Form for MHS Gateway
 
+{% raw %}
+
 	Article: Q114403
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -104,3 +106,5 @@ permalink: /kb/114/Q114403/
 	
 	=============================================================================
 	
+
+{% endraw %}

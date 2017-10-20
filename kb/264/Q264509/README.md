@@ -6,6 +6,8 @@ permalink: /kb/264/Q264509/
 
 ## Q264509: Management Agent Does Not Update Object Attribute in Metaverse
 
+{% raw %}
+
 	Article: Q264509
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -93,3 +95,5 @@ permalink: /kb/264/Q264509/
 	
 	=============================================================================
 	
+
+{% endraw %}

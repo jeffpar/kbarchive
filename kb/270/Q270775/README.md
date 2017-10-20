@@ -6,6 +6,8 @@ permalink: /kb/270/Q270775/
 
 ## Q270775: Encarta 2001: Screen Flashes When You Play Video Clip
 
+{% raw %}
+
 	Article: Q270775
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/270/Q270775/
 	
 	=============================================================================
 	
+
+{% endraw %}

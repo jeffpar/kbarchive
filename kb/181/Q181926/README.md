@@ -6,6 +6,8 @@ permalink: /kb/181/Q181926/
 
 ## Q181926: HOWTO: Automate Mail Merge to Word97 SR-1 Using OLE and ODBC
 
+{% raw %}
+
 	Article: Q181926
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2000,3.0,3.0b,5.0,5.0a,6.0
@@ -287,3 +289,5 @@ permalink: /kb/181/Q181926/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/318/Q318885/
 
 ## Q318885: BUG: Cannot Check In Files After You Change Web Access Method
 
+{% raw %}
+
 	Article: Q318885
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -118,3 +120,5 @@ permalink: /kb/318/Q318885/
 	
 	=============================================================================
 	
+
+{% endraw %}

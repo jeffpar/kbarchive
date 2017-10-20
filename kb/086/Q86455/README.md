@@ -6,6 +6,8 @@ permalink: /kb/086/Q86455/
 
 ## Q86455: WINFILE.INI with Hidden or System Attibute Causes GP Fault
 
+{% raw %}
+
 	Article: Q86455
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/086/Q86455/
 	
 	=============================================================================
 	
+
+{% endraw %}

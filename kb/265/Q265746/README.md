@@ -6,6 +6,8 @@ permalink: /kb/265/Q265746/
 
 ## Q265746: PRB: eVB: Scrollbars Appear Incorrectly in Run Mode
 
+{% raw %}
+
 	Article: Q265746
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -73,3 +75,5 @@ permalink: /kb/265/Q265746/
 	
 	=============================================================================
 	
+
+{% endraw %}

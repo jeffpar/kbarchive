@@ -6,6 +6,8 @@ permalink: /kb/186/Q186595/
 
 ## Q186595: How to Increase Security on Recycle Bin Properties
 
+{% raw %}
+
 	Article: Q186595
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -81,3 +83,5 @@ permalink: /kb/186/Q186595/
 	
 	=============================================================================
 	
+
+{% endraw %}

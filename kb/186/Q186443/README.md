@@ -6,6 +6,8 @@ permalink: /kb/186/Q186443/
 
 ## Q186443: XWEB: Large Out of Office Message Causes Client to Stop Respondi
 
+{% raw %}
+
 	Article: Q186443
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -53,3 +55,5 @@ permalink: /kb/186/Q186443/
 	
 	=============================================================================
 	
+
+{% endraw %}

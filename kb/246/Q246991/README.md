@@ -6,6 +6,8 @@ permalink: /kb/246/Q246991/
 
 ## Q246991: Event 4097 Occurs When an Invalid Printer Type Is Entered in HPT
 
+{% raw %}
+
 	Article: Q246991
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 U.S. SP1
@@ -88,3 +90,5 @@ permalink: /kb/246/Q246991/
 	
 	=============================================================================
 	
+
+{% endraw %}

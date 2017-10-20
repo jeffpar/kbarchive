@@ -6,6 +6,8 @@ permalink: /kb/187/Q187496/
 
 ## Q187496: Unix Browsers Cannot Use the HTMLA Backup Configuration Option
 
+{% raw %}
+
 	Article: Q187496
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -43,3 +45,5 @@ permalink: /kb/187/Q187496/
 	
 	=============================================================================
 	
+
+{% endraw %}

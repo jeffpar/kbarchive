@@ -6,6 +6,8 @@ permalink: /kb/127/Q127931/
 
 ## Q127931: Macintosh System 7.5 File Find Returns Error -5000
 
+{% raw %}
+
 	Article: Q127931
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -58,3 +60,5 @@ permalink: /kb/127/Q127931/
 	
 	=============================================================================
 	
+
+{% endraw %}

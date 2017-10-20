@@ -6,6 +6,8 @@ permalink: /kb/130/Q130184/
 
 ## Q130184: Changing From Auto to Manual Logon Scripts In SMS
 
+{% raw %}
+
 	Article: Q130184
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -94,3 +96,5 @@ permalink: /kb/130/Q130184/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/226/Q226480/
 
 ## Q226480: Terminal Server Profile Path Changes to Windows NT Profile
 
+{% raw %}
+
 	Article: Q226480
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/226/Q226480/
 	
 	=============================================================================
 	
+
+{% endraw %}

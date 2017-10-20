@@ -6,6 +6,8 @@ permalink: /kb/097/Q97361/
 
 ## Q97361: Adding 3D Controls Using CTL3D.DLL
 
+{% raw %}
+
 	Article: Q97361
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -55,3 +57,5 @@ permalink: /kb/097/Q97361/
 	
 	=============================================================================
 	
+
+{% endraw %}

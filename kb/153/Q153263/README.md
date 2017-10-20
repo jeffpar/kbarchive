@@ -6,6 +6,8 @@ permalink: /kb/153/Q153263/
 
 ## Q153263: Close Combat Trial Version: System Requirements for Macintosh
 
+{% raw %}
+
 	Article: Q153263
 	Product(s): Microsoft Home Games
 	Version(s): Trial Version
@@ -60,3 +62,5 @@ permalink: /kb/153/Q153263/
 	
 	=============================================================================
 	
+
+{% endraw %}

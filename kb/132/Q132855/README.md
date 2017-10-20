@@ -6,6 +6,8 @@ permalink: /kb/132/Q132855/
 
 ## Q132855: Mac Wkst: Err Msg: A Field Was Not Large Enough...
 
+{% raw %}
+
 	Article: Q132855
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/132/Q132855/
 	
 	=============================================================================
 	
+
+{% endraw %}

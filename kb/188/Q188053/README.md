@@ -6,6 +6,8 @@ permalink: /kb/188/Q188053/
 
 ## Q188053: SMS: How to Use Writeqdf.exe from the BackOffice Resource Kit 1
 
+{% raw %}
+
 	Article: Q188053
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -77,3 +79,5 @@ permalink: /kb/188/Q188053/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82352/
 
 ## Q82352: WindowBase 1.0 Screen Does Not Update Properly
 
+{% raw %}
+
 	Article: Q82352
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/082/Q82352/
 	
 	=============================================================================
 	
+
+{% endraw %}

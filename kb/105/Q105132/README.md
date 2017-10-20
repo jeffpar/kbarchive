@@ -6,6 +6,8 @@ permalink: /kb/105/Q105132/
 
 ## Q105132: Do Not Uninstall After Changing Your Partitioning
 
+{% raw %}
+
 	Article: Q105132
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -39,3 +41,5 @@ permalink: /kb/105/Q105132/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105610/
 
 ## Q105610: README.NOW: MS-DOS 6.2 Step-Up (Disk Version) README.NOW File
 
+{% raw %}
+
 	Article: Q105610
 	Product(s): Microsoft Disk Operating System
 	Version(s): 6.2
@@ -319,3 +321,5 @@ permalink: /kb/105/Q105610/
 	
 	=============================================================================
 	
+
+{% endraw %}

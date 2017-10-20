@@ -6,6 +6,8 @@ permalink: /kb/129/Q129870/
 
 ## Q129870: PC Win: Opening Attachments Without an Extension
 
+{% raw %}
+
 	Article: Q129870
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -53,3 +55,5 @@ permalink: /kb/129/Q129870/
 	
 	=============================================================================
 	
+
+{% endraw %}

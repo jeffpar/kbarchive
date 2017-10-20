@@ -6,6 +6,8 @@ permalink: /kb/197/Q197212/
 
 ## Q197212: WD97: Envelope Address Positions Don't Stay Between Documents
 
+{% raw %}
+
 	Article: Q197212
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -88,3 +90,5 @@ permalink: /kb/197/Q197212/
 	
 	=============================================================================
 	
+
+{% endraw %}

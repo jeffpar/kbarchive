@@ -6,6 +6,8 @@ permalink: /kb/121/Q121684/
 
 ## Q121684: PRB: Boxes in MS-DOS Reports Print Incorrectly on Macintosh
 
+{% raw %}
+
 	Article: Q121684
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a,3.0b
@@ -59,3 +61,5 @@ permalink: /kb/121/Q121684/
 	
 	=============================================================================
 	
+
+{% endraw %}

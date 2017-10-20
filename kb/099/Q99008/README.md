@@ -6,6 +6,8 @@ permalink: /kb/099/Q99008/
 
 ## Q99008: MS-DOS 6 MEM Command Reports 384K for Adapter RAM/ROM
 
+{% raw %}
+
 	Article: Q99008
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -82,3 +84,5 @@ permalink: /kb/099/Q99008/
 	
 	=============================================================================
 	
+
+{% endraw %}

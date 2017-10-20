@@ -6,6 +6,8 @@ permalink: /kb/297/Q297677/
 
 ## Q297677: PRB: VB 5.0 Installation on Windows 2000 Ignores Start Menu
 
+{% raw %}
+
 	Article: Q297677
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,97
@@ -132,3 +134,5 @@ permalink: /kb/297/Q297677/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131309/
 
 ## Q131309: PRB: CONFIG.FPW w/ Multiple COMMAND= Lines Runs Only Last One
 
+{% raw %}
+
 	Article: Q131309
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/131/Q131309/
 	
 	=============================================================================
 	
+
+{% endraw %}

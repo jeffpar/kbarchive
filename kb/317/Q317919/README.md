@@ -6,6 +6,8 @@ permalink: /kb/317/Q317919/
 
 ## Q317919: Event ID 2009 May Be Logged on Windows NT 4.0-Based Print Server
 
+{% raw %}
+
 	Article: Q317919
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -95,3 +97,5 @@ permalink: /kb/317/Q317919/
 	
 	=============================================================================
 	
+
+{% endraw %}

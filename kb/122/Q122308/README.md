@@ -6,6 +6,8 @@ permalink: /kb/122/Q122308/
 
 ## Q122308: BUG: Some RC Warnings and Errors Go to stderr, Not stdout
 
+{% raw %}
+
 	Article: Q122308
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -49,3 +51,5 @@ permalink: /kb/122/Q122308/
 	
 	=============================================================================
 	
+
+{% endraw %}

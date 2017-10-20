@@ -6,6 +6,8 @@ permalink: /kb/158/Q158548/
 
 ## Q158548: Sysdiff Changes Dates on Files It Applies to Windows NT
 
+{% raw %}
+
 	Article: Q158548
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/158/Q158548/
 	
 	=============================================================================
 	
+
+{% endraw %}

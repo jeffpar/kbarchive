@@ -6,6 +6,8 @@ permalink: /kb/275/Q275537/
 
 ## Q275537: Certificate Object GetMapping Call Fails
 
+{% raw %}
+
 	Article: Q275537
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -105,3 +107,5 @@ permalink: /kb/275/Q275537/
 	
 	=============================================================================
 	
+
+{% endraw %}

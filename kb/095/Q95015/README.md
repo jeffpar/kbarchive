@@ -6,6 +6,8 @@ permalink: /kb/095/Q95015/
 
 ## Q95015: PROFS: Err Msg: Error Downloading the File...
 
+{% raw %}
+
 	Article: Q95015
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1b
@@ -52,3 +54,5 @@ permalink: /kb/095/Q95015/
 	
 	=============================================================================
 	
+
+{% endraw %}

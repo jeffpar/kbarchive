@@ -6,6 +6,8 @@ permalink: /kb/253/Q253229/
 
 ## Q253229: Full NTFS Volumes Can Be Marked &quot;Dirty&quot; Even If They Are Clean
 
+{% raw %}
+
 	Article: Q253229
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/253/Q253229/
 	
 	=============================================================================
 	
+
+{% endraw %}

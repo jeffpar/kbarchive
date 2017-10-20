@@ -6,6 +6,8 @@ permalink: /kb/196/Q196758/
 
 ## Q196758: WD97: Numbers Containing Hyphens Are Sorted Incorrectly
 
+{% raw %}
+
 	Article: Q196758
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -124,3 +126,5 @@ permalink: /kb/196/Q196758/
 	
 	=============================================================================
 	
+
+{% endraw %}

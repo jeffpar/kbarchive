@@ -6,6 +6,8 @@ permalink: /kb/175/Q175915/
 
 ## Q175915: Direct Cable Connection Cannot Connect to Windows 95 Computer
 
+{% raw %}
+
 	Article: Q175915
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -105,3 +107,5 @@ permalink: /kb/175/Q175915/
 	
 	=============================================================================
 	
+
+{% endraw %}

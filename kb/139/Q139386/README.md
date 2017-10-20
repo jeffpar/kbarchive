@@ -6,6 +6,8 @@ permalink: /kb/139/Q139386/
 
 ## Q139386: Features not Available in a Distributed Application
 
+{% raw %}
+
 	Article: Q139386
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -59,3 +61,5 @@ permalink: /kb/139/Q139386/
 	
 	=============================================================================
 	
+
+{% endraw %}

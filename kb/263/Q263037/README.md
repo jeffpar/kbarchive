@@ -6,6 +6,8 @@ permalink: /kb/263/Q263037/
 
 ## Q263037: DirectPlay: How to Remove and Reinstall DirectPlay 6.x or Later
 
+{% raw %}
+
 	Article: Q263037
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -154,3 +156,5 @@ permalink: /kb/263/Q263037/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193596/
 
 ## Q193596: RASMAN Registry Values Cannot Be Set Higher Than 0xFF
 
+{% raw %}
+
 	Article: Q193596
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -80,3 +82,5 @@ permalink: /kb/193/Q193596/
 	
 	=============================================================================
 	
+
+{% endraw %}

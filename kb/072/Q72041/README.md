@@ -6,6 +6,8 @@ permalink: /kb/072/Q72041/
 
 ## Q72041: HOWTO: Using Device-Independent Bitmaps and Palettes
 
+{% raw %}
+
 	Article: Q72041
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -71,3 +73,5 @@ permalink: /kb/072/Q72041/
 	
 	=============================================================================
 	
+
+{% endraw %}

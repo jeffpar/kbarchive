@@ -6,6 +6,8 @@ permalink: /kb/154/Q154065/
 
 ## Q154065: Cannot Boot to Duplexed Drive Using Compaq Fast Wide SCSI-2
 
+{% raw %}
+
 	Article: Q154065
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/154/Q154065/
 	
 	=============================================================================
 	
+
+{% endraw %}

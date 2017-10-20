@@ -6,6 +6,8 @@ permalink: /kb/060/Q60392/
 
 ## Q60392: FIX: &#91;PWB&#93; Tag Missing in PWB 1.0 Sample Init File, TOOLS.PRE
 
+{% raw %}
+
 	Article: Q60392
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0; OS/2:1.0
@@ -69,3 +71,5 @@ permalink: /kb/060/Q60392/
 	
 	=============================================================================
 	
+
+{% endraw %}

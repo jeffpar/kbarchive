@@ -6,6 +6,8 @@ permalink: /kb/191/Q191175/
 
 ## Q191175: HOWTO: Store Multiple Dates from the MonthView Control
 
+{% raw %}
+
 	Article: Q191175
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -83,3 +85,5 @@ permalink: /kb/191/Q191175/
 	
 	=============================================================================
 	
+
+{% endraw %}

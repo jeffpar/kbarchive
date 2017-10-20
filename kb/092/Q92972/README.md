@@ -6,6 +6,8 @@ permalink: /kb/092/Q92972/
 
 ## Q92972: Graphics Print Slowly to PostScript Printer on LPT Port
 
+{% raw %}
+
 	Article: Q92972
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/092/Q92972/
 	
 	=============================================================================
 	
+
+{% endraw %}

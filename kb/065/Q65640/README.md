@@ -6,6 +6,8 @@ permalink: /kb/065/Q65640/
 
 ## Q65640: ERROR ERR May Cause &quot;Illegal Function Call&quot; in QBX.EXE 7.00
 
+{% raw %}
+
 	Article: Q65640
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -74,3 +76,5 @@ permalink: /kb/065/Q65640/
 	            ERROR ERR           'Forces the error again.
 	            RESUME NEXT
 	   END SUB
+
+{% endraw %}

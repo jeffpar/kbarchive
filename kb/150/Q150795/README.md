@@ -6,6 +6,8 @@ permalink: /kb/150/Q150795/
 
 ## Q150795: SNA Server Exception 0xC0000194 (Possible Deadlock)
 
+{% raw %}
+
 	Article: Q150795
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -88,3 +90,5 @@ permalink: /kb/150/Q150795/
 	
 	=============================================================================
 	
+
+{% endraw %}

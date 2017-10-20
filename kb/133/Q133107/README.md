@@ -6,6 +6,8 @@ permalink: /kb/133/Q133107/
 
 ## Q133107: FIX: C1001 Error If More Than 127 Function Parameters
 
+{% raw %}
+
 	Article: Q133107
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1
@@ -97,3 +99,5 @@ permalink: /kb/133/Q133107/
 	
 	=============================================================================
 	
+
+{% endraw %}

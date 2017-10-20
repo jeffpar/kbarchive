@@ -6,6 +6,8 @@ permalink: /kb/058/Q58043/
 
 ## Q58043: PLAY &quot;Illegal Function Call&quot; for &quot;B+&quot;,&quot;C-&quot;,&quot;E+&quot;, and &quot;F-&quot;
 
+{% raw %}
+
 	Article: Q58043
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/058/Q58043/
 	
 	Additional reference words: buglist1.00 buglist1.01 buglist1.02
 	buglist2.00 buglist2.01 buglist3.00 SR# S900117-43
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247724/
 
 ## Q247724: Fighter Ace: Matrox Millennium G-400 Video Adapter Not Available
 
+{% raw %}
+
 	Article: Q247724
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/247/Q247724/
 	
 	=============================================================================
 	
+
+{% endraw %}

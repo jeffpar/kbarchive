@@ -6,6 +6,8 @@ permalink: /kb/279/Q279523/
 
 ## Q279523: MSN Companion e-mail trash folder does not empty nightly
 
+{% raw %}
+
 	Article: Q279523
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -40,3 +42,5 @@ permalink: /kb/279/Q279523/
 	
 	=============================================================================
 	
+
+{% endraw %}

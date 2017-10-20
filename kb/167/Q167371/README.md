@@ -6,6 +6,8 @@ permalink: /kb/167/Q167371/
 
 ## Q167371: WD97: Changing Orientation After Changing Columns Causes Error
 
+{% raw %}
+
 	Article: Q167371
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/167/Q167371/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101785/
 
 ## Q101785: Valid TCP/IP Host Names (as Specified by RFC 952)
 
+{% raw %}
+
 	Article: Q101785
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.1,3.5,3.51,4.0
@@ -46,3 +48,5 @@ permalink: /kb/101/Q101785/
 	
 	=============================================================================
 	
+
+{% endraw %}

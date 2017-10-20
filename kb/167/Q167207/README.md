@@ -6,6 +6,8 @@ permalink: /kb/167/Q167207/
 
 ## Q167207: XADM: Incorrect Status for Storage Limits in Mailbox Resources
 
+{% raw %}
+
 	Article: Q167207
 	Product(s): Microsoft Exchange
 	Version(s): WinNT: 4.0, 5.0
@@ -81,3 +83,5 @@ permalink: /kb/167/Q167207/
 	
 	=============================================================================
 	
+
+{% endraw %}

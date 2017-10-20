@@ -6,6 +6,8 @@ permalink: /kb/086/Q86844/
 
 ## Q86844: PC WSPlus: Calendar File Must Be Available for Reminders
 
+{% raw %}
+
 	Article: Q86844
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/086/Q86844/
 	
 	=============================================================================
 	
+
+{% endraw %}

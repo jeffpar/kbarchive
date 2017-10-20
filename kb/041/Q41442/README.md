@@ -6,6 +6,8 @@ permalink: /kb/041/Q41442/
 
 ## Q41442: QuickC 2.00 README.DOC: Command-Line Options
 
+{% raw %}
+
 	Article: Q41442
 	Product(s): See article
 	Version(s): 2.00
@@ -27,3 +29,5 @@ permalink: /kb/041/Q41442/
 	For example, early versions of the Logitech(TM) mouse driver do not
 	support 43- or 50-line mode. Later versions support 43-line mode, but
 	not 50.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/046/Q46369/
 
 ## Q46369: InPort/Bus Mouse Comparison and Overview
 
+{% raw %}
+
 	Article: Q46369
 	Product(s): See article
 	Version(s): 1.00
@@ -70,3 +72,5 @@ permalink: /kb/046/Q46369/
 	
 	The InPort Mouse can also connect to an RS-232 serial port, or the
 	IBM PS/2 mouse port through an external adapter box.
+
+{% endraw %}

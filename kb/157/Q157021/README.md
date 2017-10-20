@@ -6,6 +6,8 @@ permalink: /kb/157/Q157021/
 
 ## Q157021: How Can I Access the Internet Through German T-Online
 
+{% raw %}
+
 	Article: Q157021
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -271,3 +273,5 @@ permalink: /kb/157/Q157021/
 	
 	=============================================================================
 	
+
+{% endraw %}

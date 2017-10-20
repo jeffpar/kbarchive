@@ -6,6 +6,8 @@ permalink: /kb/130/Q130680/
 
 ## Q130680: Service, Protocol, and Adapter Lists Can Appear Blank in NCPA
 
+{% raw %}
+
 	Article: Q130680
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -73,3 +75,5 @@ permalink: /kb/130/Q130680/
 	
 	=============================================================================
 	
+
+{% endraw %}

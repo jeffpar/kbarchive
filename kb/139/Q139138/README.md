@@ -6,6 +6,8 @@ permalink: /kb/139/Q139138/
 
 ## Q139138: Cannot Search Using Kanji and Other DBCS Languages
 
+{% raw %}
+
 	Article: Q139138
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -56,3 +58,5 @@ permalink: /kb/139/Q139138/
 	
 	=============================================================================
 	
+
+{% endraw %}

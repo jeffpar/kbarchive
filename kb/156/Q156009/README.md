@@ -6,6 +6,8 @@ permalink: /kb/156/Q156009/
 
 ## Q156009: PRB: Century Not Picked Up from Date andTime Control Panel
 
+{% raw %}
+
 	Article: Q156009
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0b
@@ -70,3 +72,5 @@ permalink: /kb/156/Q156009/
 	
 	=============================================================================
 	
+
+{% endraw %}

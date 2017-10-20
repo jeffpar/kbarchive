@@ -6,6 +6,8 @@ permalink: /kb/121/Q121151/
 
 ## Q121151: Incorrect Err Msg in DriveSpace Uncompress Help
 
+{% raw %}
+
 	Article: Q121151
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -71,3 +73,5 @@ permalink: /kb/121/Q121151/
 	
 	=============================================================================
 	
+
+{% endraw %}

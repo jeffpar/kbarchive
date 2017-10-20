@@ -6,6 +6,8 @@ permalink: /kb/155/Q155222/
 
 ## Q155222: How to Determine the ARC Path
 
+{% raw %}
+
 	Article: Q155222
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/155/Q155222/
 	
 	=============================================================================
 	
+
+{% endraw %}

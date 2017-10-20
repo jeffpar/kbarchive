@@ -6,6 +6,8 @@ permalink: /kb/086/Q86959/
 
 ## Q86959: X400: X.400 Gateway Compliant Profile
 
+{% raw %}
+
 	Article: Q86959
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -36,3 +38,5 @@ permalink: /kb/086/Q86959/
 	
 	=============================================================================
 	
+
+{% endraw %}

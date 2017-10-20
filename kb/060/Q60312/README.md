@@ -6,6 +6,8 @@ permalink: /kb/060/Q60312/
 
 ## Q60312: Drawing 45-Degree Lines in Paintbrush
 
+{% raw %}
+
 	Article: Q60312
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/060/Q60312/
 	
 	=============================================================================
 	
+
+{% endraw %}

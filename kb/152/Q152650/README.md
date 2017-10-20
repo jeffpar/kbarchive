@@ -6,6 +6,8 @@ permalink: /kb/152/Q152650/
 
 ## Q152650: Win95 Changes to Full Screen During Inventory Process
 
+{% raw %}
+
 	Article: Q152650
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -52,3 +54,5 @@ permalink: /kb/152/Q152650/
 	
 	=============================================================================
 	
+
+{% endraw %}

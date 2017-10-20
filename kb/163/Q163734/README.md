@@ -6,6 +6,8 @@ permalink: /kb/163/Q163734/
 
 ## Q163734: WD97: Word Solution Migration Information on the Web
 
+{% raw %}
+
 	Article: Q163734
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -146,3 +148,5 @@ permalink: /kb/163/Q163734/
 	
 	=============================================================================
 	
+
+{% endraw %}

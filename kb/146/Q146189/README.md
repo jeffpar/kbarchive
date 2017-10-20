@@ -6,6 +6,8 @@ permalink: /kb/146/Q146189/
 
 ## Q146189: Character Set for the Timex DataLink Watch
 
+{% raw %}
+
 	Article: Q146189
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:3.x,7.0,95
@@ -64,3 +66,5 @@ permalink: /kb/146/Q146189/
 	
 	=============================================================================
 	
+
+{% endraw %}

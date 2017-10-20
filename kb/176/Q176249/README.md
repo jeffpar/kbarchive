@@ -6,6 +6,8 @@ permalink: /kb/176/Q176249/
 
 ## Q176249: Encarta: Sounds Distorted or Do Not Play Under Windows NT 4.0
 
+{% raw %}
+
 	Article: Q176249
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/176/Q176249/
 	
 	=============================================================================
 	
+
+{% endraw %}

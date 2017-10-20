@@ -6,6 +6,8 @@ permalink: /kb/279/Q279324/
 
 ## Q279324: XFOR: How to Prevent  Domains from Receiving an SMTP Message
 
+{% raw %}
+
 	Article: Q279324
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -75,3 +77,5 @@ permalink: /kb/279/Q279324/
 	
 	=============================================================================
 	
+
+{% endraw %}

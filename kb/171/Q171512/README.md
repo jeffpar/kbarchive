@@ -6,6 +6,8 @@ permalink: /kb/171/Q171512/
 
 ## Q171512: FIX: UserControls on Property Pages Do Not Trigger Focus Events
 
+{% raw %}
+
 	Article: Q171512
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -122,3 +124,5 @@ permalink: /kb/171/Q171512/
 	
 	=============================================================================
 	
+
+{% endraw %}

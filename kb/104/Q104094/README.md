@@ -6,6 +6,8 @@ permalink: /kb/104/Q104094/
 
 ## Q104094: INFO: Console Applications Can Call the Windows 32-Bit API
 
+{% raw %}
+
 	Article: Q104094
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,2.1,4.0,5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/104/Q104094/
 	
 	=============================================================================
 	
+
+{% endraw %}

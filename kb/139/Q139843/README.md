@@ -6,6 +6,8 @@ permalink: /kb/139/Q139843/
 
 ## Q139843: Recovering from Stop 21A Caused by Disk Mirror Sets
 
+{% raw %}
+
 	Article: Q139843
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -136,3 +138,5 @@ permalink: /kb/139/Q139843/
 	
 	=============================================================================
 	
+
+{% endraw %}

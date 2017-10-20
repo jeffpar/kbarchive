@@ -6,6 +6,8 @@ permalink: /kb/159/Q159185/
 
 ## Q159185: Exchange X.400 MTA over TP4 Sends Only 2 Queued Messages, Stops
 
+{% raw %}
+
 	Article: Q159185
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -96,3 +98,5 @@ permalink: /kb/159/Q159185/
 	
 	=============================================================================
 	
+
+{% endraw %}

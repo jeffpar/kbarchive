@@ -6,6 +6,8 @@ permalink: /kb/049/Q49872/
 
 ## Q49872: Fread() Can Read More Than 64K at a Time
 
+{% raw %}
+
 	Article: Q49872
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -40,3 +42,5 @@ permalink: /kb/049/Q49872/
 	       is 4 bytes in this case. Therefore, the total bytes read
 	       is 4 times 51200 or 204,800 bytes. */
 	}
+
+{% endraw %}

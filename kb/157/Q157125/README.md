@@ -6,6 +6,8 @@ permalink: /kb/157/Q157125/
 
 ## Q157125: FIX: Setup Does Not Copy Visigenic's VSDRVM32.DLL File
 
+{% raw %}
+
 	Article: Q157125
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -56,3 +58,5 @@ permalink: /kb/157/Q157125/
 	
 	=============================================================================
 	
+
+{% endraw %}

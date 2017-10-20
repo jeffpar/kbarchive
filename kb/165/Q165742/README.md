@@ -6,6 +6,8 @@ permalink: /kb/165/Q165742/
 
 ## Q165742: Addusers Errors &amp; Bad File Output When Using Incorrect Version
 
+{% raw %}
+
 	Article: Q165742
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -101,3 +103,5 @@ permalink: /kb/165/Q165742/
 	
 	=============================================================================
 	
+
+{% endraw %}

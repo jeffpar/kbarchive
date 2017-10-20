@@ -6,6 +6,8 @@ permalink: /kb/192/Q192254/
 
 ## Q192254: BUG: SetWindowPos API Does Not Set Topmost Window in VB
 
+{% raw %}
+
 	Article: Q192254
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -142,3 +144,5 @@ permalink: /kb/192/Q192254/
 	
 	=============================================================================
 	
+
+{% endraw %}

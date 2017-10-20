@@ -6,6 +6,8 @@ permalink: /kb/156/Q156566/
 
 ## Q156566: XCLN: Comparing MMF and PST File Sizes
 
+{% raw %}
+
 	Article: Q156566
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -73,3 +75,5 @@ permalink: /kb/156/Q156566/
 	
 	=============================================================================
 	
+
+{% endraw %}

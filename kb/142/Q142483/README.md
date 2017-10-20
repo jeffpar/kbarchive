@@ -6,6 +6,8 @@ permalink: /kb/142/Q142483/
 
 ## Q142483: Encarta 96 Updates: Unexpected Error When Integrating File
 
+{% raw %}
+
 	Article: Q142483
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -67,3 +69,5 @@ permalink: /kb/142/Q142483/
 	
 	=============================================================================
 	
+
+{% endraw %}

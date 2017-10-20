@@ -6,6 +6,8 @@ permalink: /kb/260/Q260739/
 
 ## Q260739: SerialKeys Advanced Usage and Troubleshooting
 
+{% raw %}
+
 	Article: Q260739
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2000,4.0,95
@@ -236,3 +238,5 @@ permalink: /kb/260/Q260739/
 	
 	=============================================================================
 	
+
+{% endraw %}

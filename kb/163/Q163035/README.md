@@ -6,6 +6,8 @@ permalink: /kb/163/Q163035/
 
 ## Q163035: FIX: Printer Fonts Won't Stay Selected in VFP Report Designer
 
+{% raw %}
+
 	Article: Q163035
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -69,3 +71,5 @@ permalink: /kb/163/Q163035/
 	
 	=============================================================================
 	
+
+{% endraw %}

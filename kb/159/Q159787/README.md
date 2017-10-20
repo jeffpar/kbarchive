@@ -6,6 +6,8 @@ permalink: /kb/159/Q159787/
 
 ## Q159787: System May Hang with Diamond Stealth 3D Video Adapter
 
+{% raw %}
+
 	Article: Q159787
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/159/Q159787/
 	
 	=============================================================================
 	
+
+{% endraw %}

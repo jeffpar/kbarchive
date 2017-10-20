@@ -6,6 +6,8 @@ permalink: /kb/218/Q218999/
 
 ## Q218999: WD97: Cannot Select an Object Hidden Behind Another Object
 
+{% raw %}
+
 	Article: Q218999
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/218/Q218999/
 	
 	=============================================================================
 	
+
+{% endraw %}

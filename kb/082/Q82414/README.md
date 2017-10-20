@@ -6,6 +6,8 @@ permalink: /kb/082/Q82414/
 
 ## Q82414: CA Compete Dialog Text Is Not Correctly Truncated
 
+{% raw %}
+
 	Article: Q82414
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/082/Q82414/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/286/Q286650/
 
 ## Q286650: XFOR: Notes E-mail Addrs. Randomly Ass. to Public Folders &amp; DLs
 
+{% raw %}
+
 	Article: Q286650
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -91,3 +93,5 @@ permalink: /kb/286/Q286650/
 	
 	=============================================================================
 	
+
+{% endraw %}

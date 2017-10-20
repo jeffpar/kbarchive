@@ -6,6 +6,8 @@ permalink: /kb/125/Q125203/
 
 ## Q125203: Mac Encarta 94: No Text in Article When Using Find
 
+{% raw %}
+
 	Article: Q125203
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -49,3 +51,5 @@ permalink: /kb/125/Q125203/
 	
 	=============================================================================
 	
+
+{% endraw %}

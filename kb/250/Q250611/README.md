@@ -6,6 +6,8 @@ permalink: /kb/250/Q250611/
 
 ## Q250611: Rexx.exe Date Function Returns Wrong Year After 2000
 
+{% raw %}
+
 	Article: Q250611
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/250/Q250611/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184457/
 
 ## Q184457: XFOR: Cannot Reply to RTF Message Addressed to MS Mail Recipient
 
+{% raw %}
+
 	Article: Q184457
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -94,3 +96,5 @@ permalink: /kb/184/Q184457/
 	
 	=============================================================================
 	
+
+{% endraw %}

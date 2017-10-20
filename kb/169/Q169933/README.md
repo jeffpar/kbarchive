@@ -6,6 +6,8 @@ permalink: /kb/169/Q169933/
 
 ## Q169933: WD97: Word 97 for Windows 3.5&quot; Disk Contents (Disks 13-18)
 
+{% raw %}
+
 	Article: Q169933
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -296,3 +298,5 @@ permalink: /kb/169/Q169933/
 	
 	=============================================================================
 	
+
+{% endraw %}

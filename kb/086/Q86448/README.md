@@ -6,6 +6,8 @@ permalink: /kb/086/Q86448/
 
 ## Q86448: WRK Graphics Viewer and 256-Color Bitmaps (BMPs)
 
+{% raw %}
+
 	Article: Q86448
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/086/Q86448/
 	
 	=============================================================================
 	
+
+{% endraw %}

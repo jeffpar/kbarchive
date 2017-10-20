@@ -6,6 +6,8 @@ permalink: /kb/200/Q200233/
 
 ## Q200233: XFOR: Modifying Proxy Address Generators for Notes, SNADS, and P
 
+{% raw %}
+
 	Article: Q200233
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -106,3 +108,5 @@ permalink: /kb/200/Q200233/
 	
 	=============================================================================
 	
+
+{% endraw %}

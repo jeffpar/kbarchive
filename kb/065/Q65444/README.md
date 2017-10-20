@@ -6,6 +6,8 @@ permalink: /kb/065/Q65444/
 
 ## Q65444: Using Invalid Shell in SYSTEM.INI File Causes UAE
 
+{% raw %}
+
 	Article: Q65444
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/065/Q65444/
 	
 	=============================================================================
 	
+
+{% endraw %}

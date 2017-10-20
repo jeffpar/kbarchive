@@ -6,6 +6,8 @@ permalink: /kb/086/Q86548/
 
 ## Q86548: MHS: Software &amp; Hardware Required for Downstream Postoffice
 
+{% raw %}
+
 	Article: Q86548
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -36,3 +38,5 @@ permalink: /kb/086/Q86548/
 	
 	=============================================================================
 	
+
+{% endraw %}

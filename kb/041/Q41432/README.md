@@ -6,6 +6,8 @@ permalink: /kb/041/Q41432/
 
 ## Q41432: QuickC 2.00 README.DOC: Creating Your Own Key File
 
+{% raw %}
+
 	Article: Q41432
 	Product(s): See article
 	Version(s): 2.00
@@ -21,3 +23,5 @@ permalink: /kb/041/Q41432/
 	
 	If you customize the QuickC editor by creating a key file, you are not
 	allowed to assign functions to CTRL+@ or CTRL+\.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127080/
 
 ## Q127080: PC Win DOS: How to Remove Personal Address List (PAL)
 
+{% raw %}
+
 	Article: Q127080
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -55,3 +57,5 @@ permalink: /kb/127/Q127080/
 	
 	=============================================================================
 	
+
+{% endraw %}

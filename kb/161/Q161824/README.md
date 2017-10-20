@@ -6,6 +6,8 @@ permalink: /kb/161/Q161824/
 
 ## Q161824: WD97: Can't Make First Letter of Sentence a Capital Letter
 
+{% raw %}
+
 	Article: Q161824
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/161/Q161824/
 	
 	=============================================================================
 	
+
+{% endraw %}

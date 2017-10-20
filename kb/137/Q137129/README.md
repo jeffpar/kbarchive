@@ -6,6 +6,8 @@ permalink: /kb/137/Q137129/
 
 ## Q137129: Automap: Gas Calculations are Incorrect
 
+{% raw %}
+
 	Article: Q137129
 	Product(s): Microsoft Automap
 	Version(s): 3.00 3.02
@@ -44,3 +46,5 @@ permalink: /kb/137/Q137129/
 	
 	=============================================================================
 	
+
+{% endraw %}

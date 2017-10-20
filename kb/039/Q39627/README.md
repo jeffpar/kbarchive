@@ -6,6 +6,8 @@ permalink: /kb/039/Q39627/
 
 ## Q39627: MS-DOS: Batch File Labels Are Not Case Sensitive
 
+{% raw %}
+
 	Article: Q39627
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -75,3 +77,5 @@ permalink: /kb/039/Q39627/
 	
 	=============================================================================
 	
+
+{% endraw %}

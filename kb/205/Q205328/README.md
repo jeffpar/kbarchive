@@ -6,6 +6,8 @@ permalink: /kb/205/Q205328/
 
 ## Q205328: Err Msg: Cannot Detect OS Type
 
+{% raw %}
+
 	Article: Q205328
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -44,3 +46,5 @@ permalink: /kb/205/Q205328/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99326/
 
 ## Q99326: Mouse Settings Are Lost When Quitting Windows
 
+{% raw %}
+
 	Article: Q99326
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/099/Q99326/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129121/
 
 ## Q129121: Compaq ProsigniaVS May Fail to Obtain SFM Routing Information
 
+{% raw %}
+
 	Article: Q129121
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/129/Q129121/
 	
 	=============================================================================
 	
+
+{% endraw %}

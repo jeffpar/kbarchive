@@ -6,6 +6,8 @@ permalink: /kb/166/Q166522/
 
 ## Q166522: XFOR: From Field Changed When Message Sent to INS
 
+{% raw %}
+
 	Article: Q166522
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0; Win95:5.0; winnt:5.0
@@ -58,3 +60,5 @@ permalink: /kb/166/Q166522/
 	
 	=============================================================================
 	
+
+{% endraw %}

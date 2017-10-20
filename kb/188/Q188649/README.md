@@ -6,6 +6,8 @@ permalink: /kb/188/Q188649/
 
 ## Q188649: XADM: Error 291 with Exchange Bulk Import
 
+{% raw %}
+
 	Article: Q188649
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -139,3 +141,5 @@ permalink: /kb/188/Q188649/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117561/
 
 ## Q117561: CONN: Two or More Attachments Not Transferred via PC Mail
 
+{% raw %}
+
 	Article: Q117561
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -100,3 +102,5 @@ permalink: /kb/117/Q117561/
 	
 	=============================================================================
 	
+
+{% endraw %}

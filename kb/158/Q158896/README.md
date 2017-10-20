@@ -6,6 +6,8 @@ permalink: /kb/158/Q158896/
 
 ## Q158896: PPT: How to Add a Macro to a Toolbar
 
+{% raw %}
+
 	Article: Q158896
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/158/Q158896/
 	
 	=============================================================================
 	
+
+{% endraw %}

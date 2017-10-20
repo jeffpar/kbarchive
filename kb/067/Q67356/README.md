@@ -6,6 +6,8 @@ permalink: /kb/067/Q67356/
 
 ## Q67356: C4127 Warning Message May Be Generated with Loop Optimization
 
+{% raw %}
+
 	Article: Q67356
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -63,3 +65,5 @@ permalink: /kb/067/Q67356/
 	Since the warning message itself is not very descriptive for what is
 	actually occurring, a new message is being considered for future
 	versions of the compiler.
+
+{% endraw %}

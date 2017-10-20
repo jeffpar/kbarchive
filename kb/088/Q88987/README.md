@@ -6,6 +6,8 @@ permalink: /kb/088/Q88987/
 
 ## Q88987: How to Calculate the Approximate Size of a .DBF File
 
+{% raw %}
+
 	Article: Q88987
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:1.0,1.01,1.02,2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -49,3 +51,5 @@ permalink: /kb/088/Q88987/
 	
 	=============================================================================
 	
+
+{% endraw %}

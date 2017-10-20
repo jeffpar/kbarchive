@@ -6,6 +6,8 @@ permalink: /kb/094/Q94183/
 
 ## Q94183: PC WSPlus: Schedule Distribution Command-Line Parameters
 
+{% raw %}
+
 	Article: Q94183
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -57,3 +59,5 @@ permalink: /kb/094/Q94183/
 	
 	=============================================================================
 	
+
+{% endraw %}

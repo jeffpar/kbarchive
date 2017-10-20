@@ -6,6 +6,8 @@ permalink: /kb/134/Q134318/
 
 ## Q134318: Oceans: Opthelp.txt Contents
 
+{% raw %}
+
 	Article: Q134318
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -315,3 +317,5 @@ permalink: /kb/134/Q134318/
 	
 	=============================================================================
 	
+
+{% endraw %}

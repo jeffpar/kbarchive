@@ -6,6 +6,8 @@ permalink: /kb/184/Q184372/
 
 ## Q184372: Setup Unable to Install Internet Authentication Services (IAS)
 
+{% raw %}
+
 	Article: Q184372
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/184/Q184372/
 	
 	=============================================================================
 	
+
+{% endraw %}

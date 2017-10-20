@@ -6,6 +6,8 @@ permalink: /kb/035/Q35974/
 
 ## Q35974: Sensitivity May Reset if a /R Switch Passed to the Driver
 
+{% raw %}
+
 	Article: Q35974
 	Product(s): See article
 	Version(s): 6.24
@@ -20,3 +22,5 @@ permalink: /kb/035/Q35974/
 	Microsoft has confirmed this to be a problem in Version 6.24. We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

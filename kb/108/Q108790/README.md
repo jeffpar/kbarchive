@@ -6,6 +6,8 @@ permalink: /kb/108/Q108790/
 
 ## Q108790: Intel Indeo Technology Update -- V3.11.041
 
+{% raw %}
+
 	Article: Q108790
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.0,1.1
@@ -185,3 +187,5 @@ permalink: /kb/108/Q108790/
 	
 	=============================================================================
 	
+
+{% endraw %}

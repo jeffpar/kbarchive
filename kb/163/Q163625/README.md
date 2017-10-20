@@ -6,6 +6,8 @@ permalink: /kb/163/Q163625/
 
 ## Q163625: XFOR: How to Completely Remove a Requestor
 
+{% raw %}
+
 	Article: Q163625
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -75,3 +77,5 @@ permalink: /kb/163/Q163625/
 	
 	=============================================================================
 	
+
+{% endraw %}

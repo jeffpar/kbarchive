@@ -6,6 +6,8 @@ permalink: /kb/150/Q150431/
 
 ## Q150431: PRB: Using Enhanced Metafiles in COleServerItem
 
+{% raw %}
+
 	Article: Q150431
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -82,3 +84,5 @@ permalink: /kb/150/Q150431/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156138/
 
 ## Q156138: INFO: Limitations of DAO, DAO SDK in NT Service or with Threads
 
+{% raw %}
+
 	Article: Q156138
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -214,3 +216,5 @@ permalink: /kb/156/Q156138/
 	
 	=============================================================================
 	
+
+{% endraw %}

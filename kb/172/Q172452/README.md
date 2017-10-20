@@ -6,6 +6,8 @@ permalink: /kb/172/Q172452/
 
 ## Q172452: Windows NT Stops Responding or Delays During Shutdown Process
 
+{% raw %}
+
 	Article: Q172452
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -49,3 +51,5 @@ permalink: /kb/172/Q172452/
 	
 	=============================================================================
 	
+
+{% endraw %}

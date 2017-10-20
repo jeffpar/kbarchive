@@ -6,6 +6,8 @@ permalink: /kb/289/Q289747/
 
 ## Q289747: Installing SFU 2.0 NIS in a Peer Domain Generates Error 26065
 
+{% raw %}
+
 	Article: Q289747
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -124,3 +126,5 @@ permalink: /kb/289/Q289747/
 	
 	=============================================================================
 	
+
+{% endraw %}

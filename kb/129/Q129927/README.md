@@ -6,6 +6,8 @@ permalink: /kb/129/Q129927/
 
 ## Q129927: HOWTO: Determine If a Table or Query Exists
 
+{% raw %}
+
 	Article: Q129927
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/129/Q129927/
 	
 	=============================================================================
 	
+
+{% endraw %}

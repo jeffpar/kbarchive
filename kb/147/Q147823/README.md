@@ -6,6 +6,8 @@ permalink: /kb/147/Q147823/
 
 ## Q147823: Automated Procedure for Updating WFW Clients
 
+{% raw %}
+
 	Article: Q147823
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -49,3 +51,5 @@ permalink: /kb/147/Q147823/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/032/Q32167/
 
 ## Q32167: SuperCls.exe Demonstrates Superclassing
 
+{% raw %}
+
 	Article: Q32167
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -98,3 +100,5 @@ permalink: /kb/032/Q32167/
 	
 	=============================================================================
 	
+
+{% endraw %}

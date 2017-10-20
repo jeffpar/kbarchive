@@ -6,6 +6,8 @@ permalink: /kb/221/Q221623/
 
 ## Q221623: INFO: Coverage Profiler Marks Unexecuted Lines in &quot;IF...ENDIF&quot;
 
+{% raw %}
+
 	Article: Q221623
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -37,3 +39,5 @@ permalink: /kb/221/Q221623/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58276/
 
 ## Q58276: 8514-VGA: Switch to MS-DOS Prompt Gives White Screen
 
+{% raw %}
+
 	Article: Q58276
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/058/Q58276/
 	
 	=============================================================================
 	
+
+{% endraw %}

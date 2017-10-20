@@ -6,6 +6,8 @@ permalink: /kb/057/Q57644/
 
 ## Q57644: BC 6.00/6.00b ERROUT.EXE Utility, &quot;Command Failed&quot; Error
 
+{% raw %}
+
 	Article: Q57644
 	Product(s): See article
 	Version(s): 6.00 6.00b
@@ -56,3 +58,5 @@ permalink: /kb/057/Q57644/
 	
 	No form of ERROUT works except when doscommandline is the name of an
 	.EXE or .COM file.
+
+{% endraw %}

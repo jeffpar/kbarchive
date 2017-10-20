@@ -6,6 +6,8 @@ permalink: /kb/193/Q193221/
 
 ## Q193221: XADM: Per-Entity MTA Counters Not Working After Upgrade
 
+{% raw %}
+
 	Article: Q193221
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5,5.5 SP1
@@ -95,3 +97,5 @@ permalink: /kb/193/Q193221/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159519/
 
 ## Q159519: World Atlas 97: Unable to Annotate Pushpin with Long Note
 
+{% raw %}
+
 	Article: Q159519
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/159/Q159519/
 	
 	=============================================================================
 	
+
+{% endraw %}

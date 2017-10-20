@@ -6,6 +6,8 @@ permalink: /kb/081/Q81346/
 
 ## Q81346: Mac Fax: Fax Gateway Cover Pages and Mail Server Application
 
+{% raw %}
+
 	Article: Q81346
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.0a,3.0b,3.1,3.1a,3.1c,3.1d
@@ -53,3 +55,5 @@ permalink: /kb/081/Q81346/
 	
 	=============================================================================
 	
+
+{% endraw %}

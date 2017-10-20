@@ -6,6 +6,8 @@ permalink: /kb/157/Q157187/
 
 ## Q157187: FIX: SQL Query Returns Different Result Set with Korean Window
 
+{% raw %}
+
 	Article: Q157187
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -93,3 +95,5 @@ permalink: /kb/157/Q157187/
 	
 	=============================================================================
 	
+
+{% endraw %}

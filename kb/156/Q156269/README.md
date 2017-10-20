@@ -6,6 +6,8 @@ permalink: /kb/156/Q156269/
 
 ## Q156269: PRB: Quote Marks Cause Error Messages in Setup Wizard
 
+{% raw %}
+
 	Article: Q156269
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00b 5.00
@@ -112,3 +114,5 @@ permalink: /kb/156/Q156269/
 	
 	=============================================================================
 	
+
+{% endraw %}

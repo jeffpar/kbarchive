@@ -6,6 +6,8 @@ permalink: /kb/028/Q28492/
 
 ## Q28492: Using PS/2 Serial Mice with Laptop Computers
 
+{% raw %}
+
 	Article: Q28492
 	Product(s): See article
 	Version(s): 1.0
@@ -23,3 +25,5 @@ permalink: /kb/028/Q28492/
 	   The current mice with the UMA adapters (cigar-shaped adapters) with
 	the Version 6.14 mouse driver have been tested informally and seem to
 	work properly with the Zenith laptops.
+
+{% endraw %}

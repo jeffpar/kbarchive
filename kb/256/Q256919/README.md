@@ -6,6 +6,8 @@ permalink: /kb/256/Q256919/
 
 ## Q256919: DLS Connection Fails with Event ID: 705
 
+{% raw %}
+
 	Article: Q256919
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 (all SP),3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -101,3 +103,5 @@ permalink: /kb/256/Q256919/
 	
 	=============================================================================
 	
+
+{% endraw %}

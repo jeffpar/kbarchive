@@ -6,6 +6,8 @@ permalink: /kb/164/Q164763/
 
 ## Q164763: CSNW Fails to Connect to Preferred Server
 
+{% raw %}
+
 	Article: Q164763
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:3.51,4.0
@@ -142,3 +144,5 @@ permalink: /kb/164/Q164763/
 	
 	=============================================================================
 	
+
+{% endraw %}

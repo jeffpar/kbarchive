@@ -6,6 +6,8 @@ permalink: /kb/306/Q306974/
 
 ## Q306974: Software-Metering Agent Heap Operation Fault
 
+{% raw %}
+
 	Article: Q306974
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -61,3 +63,5 @@ permalink: /kb/306/Q306974/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221655/
 
 ## Q221655: FIX: FFCs - Set Filter Dialog Does Not Show Current Filters
 
+{% raw %}
+
 	Article: Q221655
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -92,3 +94,5 @@ permalink: /kb/221/Q221655/
 	
 	=============================================================================
 	
+
+{% endraw %}

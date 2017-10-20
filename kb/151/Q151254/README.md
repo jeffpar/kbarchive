@@ -6,6 +6,8 @@ permalink: /kb/151/Q151254/
 
 ## Q151254: Duplicate Printer Names on Macintosh Clients
 
+{% raw %}
+
 	Article: Q151254
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -83,3 +85,5 @@ permalink: /kb/151/Q151254/
 	
 	=============================================================================
 	
+
+{% endraw %}

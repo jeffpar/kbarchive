@@ -6,6 +6,8 @@ permalink: /kb/103/Q103424/
 
 ## Q103424: X400: Err Msg: Address Mapping Contains the Character X...
 
+{% raw %}
+
 	Article: Q103424
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -71,3 +73,5 @@ permalink: /kb/103/Q103424/
 	
 	=============================================================================
 	
+
+{% endraw %}

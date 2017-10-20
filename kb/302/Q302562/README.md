@@ -6,6 +6,8 @@ permalink: /kb/302/Q302562/
 
 ## Q302562: Microsoft Natural USB Keyboard And The Compaq IA-1
 
+{% raw %}
+
 	Article: Q302562
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -50,3 +52,5 @@ permalink: /kb/302/Q302562/
 	
 	=============================================================================
 	
+
+{% endraw %}

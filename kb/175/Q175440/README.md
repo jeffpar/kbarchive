@@ -6,6 +6,8 @@ permalink: /kb/175/Q175440/
 
 ## Q175440: XFOR: Protocol Authentication on Exchange Server
 
+{% raw %}
+
 	Article: Q175440
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0, 5.5
@@ -256,3 +258,5 @@ permalink: /kb/175/Q175440/
 	
 	=============================================================================
 	
+
+{% endraw %}

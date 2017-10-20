@@ -6,6 +6,8 @@ permalink: /kb/181/Q181700/
 
 ## Q181700: XCLN: EFD Error: Insufficient Memory To Run This Application
 
+{% raw %}
+
 	Article: Q181700
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -57,3 +59,5 @@ permalink: /kb/181/Q181700/
 	
 	=============================================================================
 	
+
+{% endraw %}

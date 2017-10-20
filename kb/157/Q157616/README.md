@@ -6,6 +6,8 @@ permalink: /kb/157/Q157616/
 
 ## Q157616: WD97: Error Using Documents.Open to Open Non-Word File
 
+{% raw %}
+
 	Article: Q157616
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/157/Q157616/
 	
 	=============================================================================
 	
+
+{% endraw %}

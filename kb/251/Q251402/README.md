@@ -6,6 +6,8 @@ permalink: /kb/251/Q251402/
 
 ## Q251402: PRB: Windows Hook Stops Responding in a 16-Bit Application
 
+{% raw %}
+
 	Article: Q251402
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:4.0,95
@@ -93,3 +95,5 @@ permalink: /kb/251/Q251402/
 	
 	=============================================================================
 	
+
+{% endraw %}

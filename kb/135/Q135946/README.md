@@ -6,6 +6,8 @@ permalink: /kb/135/Q135946/
 
 ## Q135946: BITFAT Blue Screen Error with Compressed Floppy Disk
 
+{% raw %}
+
 	Article: Q135946
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/135/Q135946/
 	
 	=============================================================================
 	
+
+{% endraw %}

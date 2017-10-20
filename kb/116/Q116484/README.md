@@ -6,6 +6,8 @@ permalink: /kb/116/Q116484/
 
 ## Q116484: PC WSPlus: AM/PM Missing in Day Start/End Times
 
+{% raw %}
+
 	Article: Q116484
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -69,3 +71,5 @@ permalink: /kb/116/Q116484/
 	
 	=============================================================================
 	
+
+{% endraw %}

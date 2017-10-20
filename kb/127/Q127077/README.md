@@ -6,6 +6,8 @@ permalink: /kb/127/Q127077/
 
 ## Q127077: PC Win: Code Page Translation Incorrect for Custom Templates
 
+{% raw %}
+
 	Article: Q127077
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -65,3 +67,5 @@ permalink: /kb/127/Q127077/
 	
 	=============================================================================
 	
+
+{% endraw %}

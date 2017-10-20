@@ -6,6 +6,8 @@ permalink: /kb/143/Q143268/
 
 ## Q143268: 3D Movie Maker: Legal Issues of Making and Sharing Movies
 
+{% raw %}
+
 	Article: Q143268
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/143/Q143268/
 	
 	=============================================================================
 	
+
+{% endraw %}

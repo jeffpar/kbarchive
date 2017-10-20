@@ -6,6 +6,8 @@ permalink: /kb/152/Q152437/
 
 ## Q152437: XCLN: Err Msg: Unexpected Error Has Occurred MAPI 1.0
 
+{% raw %}
+
 	Article: Q152437
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -56,3 +58,5 @@ permalink: /kb/152/Q152437/
 	
 	=============================================================================
 	
+
+{% endraw %}

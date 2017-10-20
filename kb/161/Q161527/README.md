@@ -6,6 +6,8 @@ permalink: /kb/161/Q161527/
 
 ## Q161527: Encarta 97 World Atlas: How To Turn Off Opening Video
 
+{% raw %}
+
 	Article: Q161527
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/161/Q161527/
 	
 	=============================================================================
 	
+
+{% endraw %}

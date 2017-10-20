@@ -6,6 +6,8 @@ permalink: /kb/166/Q166590/
 
 ## Q166590: XCLN: Searching for Manager Produces MAPI Error
 
+{% raw %}
+
 	Article: Q166590
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -59,3 +61,5 @@ permalink: /kb/166/Q166590/
 	
 	=============================================================================
 	
+
+{% endraw %}

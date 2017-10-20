@@ -6,6 +6,8 @@ permalink: /kb/169/Q169556/
 
 ## Q169556: Stopping A Domain User From Creating Local Groups On A Domain
 
+{% raw %}
+
 	Article: Q169556
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -79,3 +81,5 @@ permalink: /kb/169/Q169556/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167954/
 
 ## Q167954: FCP: ErrMsg: This Program Has Performed An Illegal Operation...
 
+{% raw %}
+
 	Article: Q167954
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/167/Q167954/
 	
 	=============================================================================
 	
+
+{% endraw %}

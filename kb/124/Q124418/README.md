@@ -6,6 +6,8 @@ permalink: /kb/124/Q124418/
 
 ## Q124418: Cannot Set Up CD Sampler Because It Is Already Running
 
+{% raw %}
+
 	Article: Q124418
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): Fall 1994 edition
@@ -49,3 +51,5 @@ permalink: /kb/124/Q124418/
 	
 	=============================================================================
 	
+
+{% endraw %}

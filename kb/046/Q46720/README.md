@@ -6,6 +6,8 @@ permalink: /kb/046/Q46720/
 
 ## Q46720: VARPTR(#filenumber) Not Supported in QB 4.x or BC 6.00, 7.00
 
+{% raw %}
+
 	Article: Q46720
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -35,3 +37,5 @@ permalink: /kb/046/Q46720/
 	eliminated. You can now use the FILEATTR function, which returns the
 	BASIC access mode and the DOS file handle, which may be useful for DOS
 	file interrupts.
+
+{% endraw %}

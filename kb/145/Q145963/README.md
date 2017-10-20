@@ -6,6 +6,8 @@ permalink: /kb/145/Q145963/
 
 ## Q145963: XCLN: Text May Be Invisible
 
+{% raw %}
+
 	Article: Q145963
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -45,3 +47,5 @@ permalink: /kb/145/Q145963/
 	
 	=============================================================================
 	
+
+{% endraw %}

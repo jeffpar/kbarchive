@@ -6,6 +6,8 @@ permalink: /kb/125/Q125239/
 
 ## Q125239: Ancient Lands/Dinosaurs: AVI Video Doesn't Play When Clicked
 
+{% raw %}
+
 	Article: Q125239
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/125/Q125239/
 	
 	=============================================================================
 	
+
+{% endraw %}

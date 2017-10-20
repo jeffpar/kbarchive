@@ -6,6 +6,8 @@ permalink: /kb/198/Q198926/
 
 ## Q198926: PRB: Visual C++ Not Tested for Windows NT Checked Build
 
+{% raw %}
+
 	Article: Q198926
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2000,4.0,5.0,6.0
@@ -51,3 +53,5 @@ permalink: /kb/198/Q198926/
 	
 	=============================================================================
 	
+
+{% endraw %}

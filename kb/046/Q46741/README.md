@@ -6,6 +6,8 @@ permalink: /kb/046/Q46741/
 
 ## Q46741: Possible Cause for Slow Stream I/O
 
+{% raw %}
+
 	Article: Q46741
 	Product(s): See article
 	Version(s): 5.10
@@ -41,3 +43,5 @@ permalink: /kb/046/Q46741/
 	amount of allocation on the heap. Or, change memory models to compact
 	or large (if you are in small or medium). If you change memory models,
 	you may need to use the /Gt switch to push static data out of DGROUP.
+
+{% endraw %}

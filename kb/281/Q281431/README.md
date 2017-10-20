@@ -6,6 +6,8 @@ permalink: /kb/281/Q281431/
 
 ## Q281431: XADM: Logon Failure Event ID 677
 
+{% raw %}
+
 	Article: Q281431
 	Product(s): Microsoft Exchange
 	Version(s): 2000,5.5
@@ -93,3 +95,5 @@ permalink: /kb/281/Q281431/
 	
 	=============================================================================
 	
+
+{% endraw %}

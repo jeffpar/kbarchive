@@ -6,6 +6,8 @@ permalink: /kb/257/Q257698/
 
 ## Q257698: XFOR: Migration Wizard Crashes Migrating Calendar Data fr. Notes
 
+{% raw %}
+
 	Article: Q257698
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/257/Q257698/
 	
 	=============================================================================
 	
+
+{% endraw %}

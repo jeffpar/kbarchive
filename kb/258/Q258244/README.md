@@ -6,6 +6,8 @@ permalink: /kb/258/Q258244/
 
 ## Q258244: Allegiance: Quits Unexpectedly During Startup
 
+{% raw %}
+
 	Article: Q258244
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -75,3 +77,5 @@ permalink: /kb/258/Q258244/
 	
 	=============================================================================
 	
+
+{% endraw %}

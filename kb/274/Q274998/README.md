@@ -6,6 +6,8 @@ permalink: /kb/274/Q274998/
 
 ## Q274998: XADM:  How to Change an E-mail  Alias in the SMTP Address
 
+{% raw %}
+
 	Article: Q274998
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -59,3 +61,5 @@ permalink: /kb/274/Q274998/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194816/
 
 ## Q194816: Combat Flight Simulator: Description of the Auto-Rudder Feature
 
+{% raw %}
+
 	Article: Q194816
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/194/Q194816/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/109/Q109600/
 
 ## Q109600: PRB: Migration Application Incorrectly Flags @...SAY as Error
 
+{% raw %}
+
 	Article: Q109600
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b
@@ -69,3 +71,5 @@ permalink: /kb/109/Q109600/
 	
 	=============================================================================
 	
+
+{% endraw %}

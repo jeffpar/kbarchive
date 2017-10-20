@@ -6,6 +6,8 @@ permalink: /kb/154/Q154400/
 
 ## Q154400: PRB: Cannot Map File to the Project &quot;&#36;&quot; Message in Dev Studio
 
+{% raw %}
+
 	Article: Q154400
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0
@@ -71,3 +73,5 @@ permalink: /kb/154/Q154400/
 	
 	=============================================================================
 	
+
+{% endraw %}

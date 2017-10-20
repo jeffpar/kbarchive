@@ -6,6 +6,8 @@ permalink: /kb/120/Q120380/
 
 ## Q120380: Missing Information in Security Event Detail Description
 
+{% raw %}
+
 	Article: Q120380
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/120/Q120380/
 	
 	=============================================================================
 	
+
+{% endraw %}

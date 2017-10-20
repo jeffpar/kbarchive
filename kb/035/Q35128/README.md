@@ -6,6 +6,8 @@ permalink: /kb/035/Q35128/
 
 ## Q35128: PRB: Line Parsing Order: Looks Up Second Token First
 
+{% raw %}
+
 	Article: Q35128
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a,6.0,6.0a,6.0b
@@ -79,3 +81,5 @@ permalink: /kb/035/Q35128/
 	
 	=============================================================================
 	
+
+{% endraw %}

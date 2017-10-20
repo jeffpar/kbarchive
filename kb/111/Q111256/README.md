@@ -6,6 +6,8 @@ permalink: /kb/111/Q111256/
 
 ## Q111256: PRB: ODBC Icon Does Not Appear in Windows Control Panel
 
+{% raw %}
+
 	Article: Q111256
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,2.6
@@ -50,3 +52,5 @@ permalink: /kb/111/Q111256/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/276/Q276260/
 
 ## Q276260: User Record Is Not Updated If Remote LU Alias Is Removed
 
+{% raw %}
+
 	Article: Q276260
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -65,3 +67,5 @@ permalink: /kb/276/Q276260/
 	
 	=============================================================================
 	
+
+{% endraw %}

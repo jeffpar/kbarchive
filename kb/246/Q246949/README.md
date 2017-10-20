@@ -6,6 +6,8 @@ permalink: /kb/246/Q246949/
 
 ## Q246949: Offer Summarizer Reports SQL Error 105 with Corrupted .svf Files
 
+{% raw %}
+
 	Article: Q246949
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -198,3 +200,5 @@ permalink: /kb/246/Q246949/
 	
 	=============================================================================
 	
+
+{% endraw %}

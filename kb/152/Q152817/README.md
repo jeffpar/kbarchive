@@ -6,6 +6,8 @@ permalink: /kb/152/Q152817/
 
 ## Q152817: FP98: Server Error Listing Users or Groups in Trusted Domains
 
+{% raw %}
+
 	Article: Q152817
 	Product(s): Word Front Page
 	Version(s): 1.0,6.0
@@ -72,3 +74,5 @@ permalink: /kb/152/Q152817/
 	
 	=============================================================================
 	
+
+{% endraw %}

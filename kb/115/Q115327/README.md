@@ -6,6 +6,8 @@ permalink: /kb/115/Q115327/
 
 ## Q115327: FIX: SETUP.EXE Cannot Start via a UNC Connection
 
+{% raw %}
+
 	Article: Q115327
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1
@@ -54,3 +56,5 @@ permalink: /kb/115/Q115327/
 	
 	=============================================================================
 	
+
+{% endraw %}

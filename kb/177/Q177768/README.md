@@ -6,6 +6,8 @@ permalink: /kb/177/Q177768/
 
 ## Q177768: XADM: How to Hide the Schedule+ Free/Busy Connector
 
+{% raw %}
+
 	Article: Q177768
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/177/Q177768/
 	
 	=============================================================================
 	
+
+{% endraw %}

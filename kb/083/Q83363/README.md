@@ -6,6 +6,8 @@ permalink: /kb/083/Q83363/
 
 ## Q83363: Unlocking Large-Model Extra Data Segments
 
+{% raw %}
+
 	Article: Q83363
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -79,3 +81,5 @@ permalink: /kb/083/Q83363/
 	
 	=============================================================================
 	
+
+{% endraw %}

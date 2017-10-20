@@ -6,6 +6,8 @@ permalink: /kb/138/Q138940/
 
 ## Q138940: Windows 95 Hangs with Ibmtok.dos Network Adapter Driver
 
+{% raw %}
+
 	Article: Q138940
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -76,3 +78,5 @@ permalink: /kb/138/Q138940/
 	
 	=============================================================================
 	
+
+{% endraw %}

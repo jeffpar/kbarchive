@@ -6,6 +6,8 @@ permalink: /kb/231/Q231532/
 
 ## Q231532: MapPoint: Unable to Install on a NetWare Server
 
+{% raw %}
+
 	Article: Q231532
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:; :
@@ -77,3 +79,5 @@ permalink: /kb/231/Q231532/
 	
 	=============================================================================
 	
+
+{% endraw %}

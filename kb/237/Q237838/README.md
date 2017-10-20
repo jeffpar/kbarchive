@@ -6,6 +6,8 @@ permalink: /kb/237/Q237838/
 
 ## Q237838: XADM: Exchange Corrupts JPN cc:Mail Subject on Way to Internet
 
+{% raw %}
+
 	Article: Q237838
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2
@@ -71,3 +73,5 @@ permalink: /kb/237/Q237838/
 	
 	=============================================================================
 	
+
+{% endraw %}

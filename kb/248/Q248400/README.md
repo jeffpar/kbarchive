@@ -6,6 +6,8 @@ permalink: /kb/248/Q248400/
 
 ## Q248400: BUG: Reregistered ATL Window Class May Cause Access Violation
 
+{% raw %}
+
 	Article: Q248400
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0,2.1,3.0,5.0,6.0; winnt:4.0
@@ -179,3 +181,5 @@ permalink: /kb/248/Q248400/
 	
 	=============================================================================
 	
+
+{% endraw %}

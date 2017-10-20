@@ -6,6 +6,8 @@ permalink: /kb/138/Q138436/
 
 ## Q138436: PRB: BorderColor Property Doesn't Change Color of Border
 
+{% raw %}
+
 	Article: Q138436
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -161,3 +163,5 @@ permalink: /kb/138/Q138436/
 	
 	=============================================================================
 	
+
+{% endraw %}

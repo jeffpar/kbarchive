@@ -6,6 +6,8 @@ permalink: /kb/146/Q146617/
 
 ## Q146617: FIX: SetWindowText(NULL) Doesn't Clear .OCX Edit Control
 
+{% raw %}
+
 	Article: Q146617
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -99,3 +101,5 @@ permalink: /kb/146/Q146617/
 	
 	=============================================================================
 	
+
+{% endraw %}

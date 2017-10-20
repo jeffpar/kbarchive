@@ -6,6 +6,8 @@ permalink: /kb/247/Q247494/
 
 ## Q247494: BUG: Transform() Results Formatted Incorrectly
 
+{% raw %}
+
 	Article: Q247494
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -97,3 +99,5 @@ permalink: /kb/247/Q247494/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/032/Q32101/
 
 ## Q32101: No Error QB.EXE If DYNAMIC Array Wrongly DIMmed Before COMMON
 
+{% raw %}
+
 	Article: Q32101
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -55,3 +57,5 @@ permalink: /kb/032/Q32101/
 	DIM x%(2048)
 	COMMON SHARED /xxx/ x%()
 	END
+
+{% endraw %}

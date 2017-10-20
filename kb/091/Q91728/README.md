@@ -6,6 +6,8 @@ permalink: /kb/091/Q91728/
 
 ## Q91728: MS-DOS 6 DoubleSpace Files and Functions
 
+{% raw %}
+
 	Article: Q91728
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -152,3 +154,5 @@ permalink: /kb/091/Q91728/
 	
 	=============================================================================
 	
+
+{% endraw %}

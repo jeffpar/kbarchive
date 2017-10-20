@@ -6,6 +6,8 @@ permalink: /kb/073/Q73728/
 
 ## Q73728: Switches Available with the MS-DOS 5 Upgrade Setup Program
 
+{% raw %}
+
 	Article: Q73728
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -83,3 +85,5 @@ permalink: /kb/073/Q73728/
 	
 	=============================================================================
 	
+
+{% endraw %}

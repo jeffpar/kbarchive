@@ -6,6 +6,8 @@ permalink: /kb/065/Q65328/
 
 ## Q65328: C1001: Internal Compiler Error: '@(#)regMD.c:1.100', Line 3837
 
+{% raw %}
+
 	Article: Q65328
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -54,3 +56,5 @@ permalink: /kb/065/Q65328/
 	Microsoft has confirmed this to be a problem with C version 6.00. We
 	are researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

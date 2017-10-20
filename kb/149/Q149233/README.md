@@ -6,6 +6,8 @@ permalink: /kb/149/Q149233/
 
 ## Q149233: FIX: Palette Does Not Change with Picture on MDI Child
 
+{% raw %}
+
 	Article: Q149233
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -118,3 +120,5 @@ permalink: /kb/149/Q149233/
 	
 	=============================================================================
 	
+
+{% endraw %}

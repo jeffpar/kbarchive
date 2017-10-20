@@ -6,6 +6,8 @@ permalink: /kb/183/Q183205/
 
 ## Q183205: XADM: Cannot View Connector Properties If Permissions Incorrect
 
+{% raw %}
+
 	Article: Q183205
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -68,3 +70,5 @@ permalink: /kb/183/Q183205/
 	
 	=============================================================================
 	
+
+{% endraw %}

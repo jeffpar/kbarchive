@@ -6,6 +6,8 @@ permalink: /kb/245/Q245070/
 
 ## Q245070: Primary Domain Controller Cannot Validate Account.
 
+{% raw %}
+
 	Article: Q245070
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/245/Q245070/
 	
 	=============================================================================
 	
+
+{% endraw %}

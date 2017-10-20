@@ -6,6 +6,8 @@ permalink: /kb/062/Q62645/
 
 ## Q62645: Windows 3.0 Enhanced Mode Hangs on a Toshiba 5200
 
+{% raw %}
+
 	Article: Q62645
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/062/Q62645/
 	
 	=============================================================================
 	
+
+{% endraw %}

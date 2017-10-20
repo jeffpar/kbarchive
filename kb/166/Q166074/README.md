@@ -6,6 +6,8 @@ permalink: /kb/166/Q166074/
 
 ## Q166074: SEMFPERF.H is Missing from SNA Server SDK
 
+{% raw %}
+
 	Article: Q166074
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/166/Q166074/
 	
 	=============================================================================
 	
+
+{% endraw %}

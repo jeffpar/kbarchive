@@ -6,6 +6,8 @@ permalink: /kb/313/Q313413/
 
 ## Q313413: How to Configure MSN News in Outlook Express
 
+{% raw %}
+
 	Article: Q313413
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/313/Q313413/
 	
 	=============================================================================
 	
+
+{% endraw %}

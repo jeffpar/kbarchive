@@ -6,6 +6,8 @@ permalink: /kb/238/Q238173/
 
 ## Q238173: Quorum Checkpoint File May Be Corrupted at Shutdown
 
+{% raw %}
+
 	Article: Q238173
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -107,3 +109,5 @@ permalink: /kb/238/Q238173/
 	
 	=============================================================================
 	
+
+{% endraw %}

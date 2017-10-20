@@ -6,6 +6,8 @@ permalink: /kb/164/Q164452/
 
 ## Q164452: Err Msg: Network Device Type Is Incorrect
 
+{% raw %}
+
 	Article: Q164452
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164452/
 	
 	=============================================================================
 	
+
+{% endraw %}

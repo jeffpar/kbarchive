@@ -6,6 +6,8 @@ permalink: /kb/132/Q132499/
 
 ## Q132499: Error: AIC78xx - Event ID 11
 
+{% raw %}
+
 	Article: Q132499
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/132/Q132499/
 	
 	=============================================================================
 	
+
+{% endraw %}

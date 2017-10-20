@@ -6,6 +6,8 @@ permalink: /kb/214/Q214553/
 
 ## Q214553: Close Combat III: Game Screen Is Too Large to Fit on Monitor
 
+{% raw %}
+
 	Article: Q214553
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/214/Q214553/
 	
 	=============================================================================
 	
+
+{% endraw %}

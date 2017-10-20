@@ -6,6 +6,8 @@ permalink: /kb/170/Q170659/
 
 ## Q170659: Can't Open Multiple TN3270 Sessions
 
+{% raw %}
+
 	Article: Q170659
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -63,3 +65,5 @@ permalink: /kb/170/Q170659/
 	
 	=============================================================================
 	
+
+{% endraw %}

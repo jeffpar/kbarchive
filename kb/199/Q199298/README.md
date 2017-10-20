@@ -6,6 +6,8 @@ permalink: /kb/199/Q199298/
 
 ## Q199298: XCLN: Appointments Marked Private Can Be Viewed by Delegate
 
+{% raw %}
+
 	Article: Q199298
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:97
@@ -51,3 +53,5 @@ permalink: /kb/199/Q199298/
 	
 	=============================================================================
 	
+
+{% endraw %}

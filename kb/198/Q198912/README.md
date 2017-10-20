@@ -6,6 +6,8 @@ permalink: /kb/198/Q198912/
 
 ## Q198912: Bookshelf 99 &amp; 2000: How to Run the Program Without the CD-ROM
 
+{% raw %}
+
 	Article: Q198912
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -145,3 +147,5 @@ permalink: /kb/198/Q198912/
 	
 	=============================================================================
 	
+
+{% endraw %}

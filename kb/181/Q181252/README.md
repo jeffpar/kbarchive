@@ -6,6 +6,8 @@ permalink: /kb/181/Q181252/
 
 ## Q181252: WD97: How to Rotate a Clip Art Picture or Windows Metafile
 
+{% raw %}
+
 	Article: Q181252
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/181/Q181252/
 	
 	=============================================================================
 	
+
+{% endraw %}

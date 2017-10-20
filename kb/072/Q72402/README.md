@@ -6,6 +6,8 @@ permalink: /kb/072/Q72402/
 
 ## Q72402: Copying Files from or to the Same Drive with File Manager
 
+{% raw %}
+
 	Article: Q72402
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/072/Q72402/
 	
 	=============================================================================
 	
+
+{% endraw %}

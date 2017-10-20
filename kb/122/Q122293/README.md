@@ -6,6 +6,8 @@ permalink: /kb/122/Q122293/
 
 ## Q122293: LMHOSTS Lookup Can Cause Intermittent System Pauses
 
+{% raw %}
+
 	Article: Q122293
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/122/Q122293/
 	
 	=============================================================================
 	
+
+{% endraw %}

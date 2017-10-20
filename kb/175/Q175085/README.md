@@ -6,6 +6,8 @@ permalink: /kb/175/Q175085/
 
 ## Q175085: Programs That Use RPC Cannot Connect to the RPC Server
 
+{% raw %}
+
 	Article: Q175085
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/175/Q175085/
 	
 	=============================================================================
 	
+
+{% endraw %}

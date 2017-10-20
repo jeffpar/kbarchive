@@ -6,6 +6,8 @@ permalink: /kb/176/Q176180/
 
 ## Q176180: XADM: Deferred Delivery Settings Not Effective
 
+{% raw %}
+
 	Article: Q176180
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -59,3 +61,5 @@ permalink: /kb/176/Q176180/
 	
 	=============================================================================
 	
+
+{% endraw %}

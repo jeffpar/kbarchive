@@ -6,6 +6,8 @@ permalink: /kb/174/Q174456/
 
 ## Q174456: LFN MS-DOS Shortcuts Do Not Run When 8.3 Names Are Disabled
 
+{% raw %}
+
 	Article: Q174456
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/174/Q174456/
 	
 	=============================================================================
 	
+
+{% endraw %}

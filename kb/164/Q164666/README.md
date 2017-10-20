@@ -6,6 +6,8 @@ permalink: /kb/164/Q164666/
 
 ## Q164666: Err Msg: While Initializing Device IOS...
 
+{% raw %}
+
 	Article: Q164666
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -72,3 +74,5 @@ permalink: /kb/164/Q164666/
 	
 	=============================================================================
 	
+
+{% endraw %}

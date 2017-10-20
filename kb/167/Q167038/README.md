@@ -6,6 +6,8 @@ permalink: /kb/167/Q167038/
 
 ## Q167038: RAS Clients Run Winsock and RPC Applications Slowly
 
+{% raw %}
+
 	Article: Q167038
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -133,3 +135,5 @@ permalink: /kb/167/Q167038/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164965/
 
 ## Q164965: Missing Data from Print Output with SNA Server 3.0 Print Server
 
+{% raw %}
+
 	Article: Q164965
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/164/Q164965/
 	
 	=============================================================================
 	
+
+{% endraw %}

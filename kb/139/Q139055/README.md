@@ -6,6 +6,8 @@ permalink: /kb/139/Q139055/
 
 ## Q139055: Problem Changing Computer Name Without Changing DNS Name
 
+{% raw %}
+
 	Article: Q139055
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -81,3 +83,5 @@ permalink: /kb/139/Q139055/
 	
 	=============================================================================
 	
+
+{% endraw %}

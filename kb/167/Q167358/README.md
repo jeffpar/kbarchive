@@ -6,6 +6,8 @@ permalink: /kb/167/Q167358/
 
 ## Q167358: FIX: Remote Windows 95 Machine Crashes on Stop Debugging
 
+{% raw %}
+
 	Article: Q167358
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -85,3 +87,5 @@ permalink: /kb/167/Q167358/
 	
 	=============================================================================
 	
+
+{% endraw %}

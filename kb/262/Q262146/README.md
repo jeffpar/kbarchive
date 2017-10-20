@@ -6,6 +6,8 @@ permalink: /kb/262/Q262146/
 
 ## Q262146: XCON: Messages to Custom Recipients Are Undeliverable with SP1
 
+{% raw %}
+
 	Article: Q262146
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1
@@ -107,3 +109,5 @@ permalink: /kb/262/Q262146/
 	
 	=============================================================================
 	
+
+{% endraw %}

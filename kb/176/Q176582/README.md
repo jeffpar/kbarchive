@@ -6,6 +6,8 @@ permalink: /kb/176/Q176582/
 
 ## Q176582: WD97: Recording AutoMark Index Causes Word to Stop Responding
 
+{% raw %}
+
 	Article: Q176582
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -112,3 +114,5 @@ permalink: /kb/176/Q176582/
 	
 	=============================================================================
 	
+
+{% endraw %}

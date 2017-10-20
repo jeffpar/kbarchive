@@ -6,6 +6,8 @@ permalink: /kb/247/Q247788/
 
 ## Q247788: XADM: Internet Mail Service and Info. Store Hang w. Antivirus
 
+{% raw %}
+
 	Article: Q247788
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -79,3 +81,5 @@ permalink: /kb/247/Q247788/
 	
 	=============================================================================
 	
+
+{% endraw %}

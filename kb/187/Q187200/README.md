@@ -6,6 +6,8 @@ permalink: /kb/187/Q187200/
 
 ## Q187200: Reduced RNS Order Heap Size Could Increase Scalability
 
+{% raw %}
+
 	Article: Q187200
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -47,3 +49,5 @@ permalink: /kb/187/Q187200/
 	
 	=============================================================================
 	
+
+{% endraw %}

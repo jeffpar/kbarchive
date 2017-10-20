@@ -6,6 +6,8 @@ permalink: /kb/196/Q196196/
 
 ## Q196196: FIX: Analyze Creates New GUID When Repairing the UM.dat
 
+{% raw %}
+
 	Article: Q196196
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0
@@ -82,3 +84,5 @@ permalink: /kb/196/Q196196/
 	
 	=============================================================================
 	
+
+{% endraw %}

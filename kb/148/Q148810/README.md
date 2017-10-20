@@ -6,6 +6,8 @@ permalink: /kb/148/Q148810/
 
 ## Q148810: Scenes 2.0: No Orca or Green Sea Turtle Picture
 
+{% raw %}
+
 	Article: Q148810
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -49,3 +51,5 @@ permalink: /kb/148/Q148810/
 	
 	=============================================================================
 	
+
+{% endraw %}

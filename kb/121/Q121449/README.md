@@ -6,6 +6,8 @@ permalink: /kb/121/Q121449/
 
 ## Q121449: BUG: SQL Server: Certain Outer Joins Can Cause SQL_ERROR
 
+{% raw %}
+
 	Article: Q121449
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -60,3 +62,5 @@ permalink: /kb/121/Q121449/
 	
 	=============================================================================
 	
+
+{% endraw %}

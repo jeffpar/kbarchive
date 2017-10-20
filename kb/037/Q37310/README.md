@@ -6,6 +6,8 @@ permalink: /kb/037/Q37310/
 
 ## Q37310: LPRINT Forced to Screen Using OPEN in FUNCTION Procedure
 
+{% raw %}
+
 	Article: Q37310
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -74,3 +76,5 @@ permalink: /kb/037/Q37310/
 	      code$="abcd"
 	      CLOSE #1
 	   END FUNCTION
+
+{% endraw %}

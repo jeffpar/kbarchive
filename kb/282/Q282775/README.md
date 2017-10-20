@@ -6,6 +6,8 @@ permalink: /kb/282/Q282775/
 
 ## Q282775: &quot;Error Writing Encrypted Data&quot; Error During IIS 5.0 Installation
 
+{% raw %}
+
 	Article: Q282775
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -91,3 +93,5 @@ permalink: /kb/282/Q282775/
 	
 	=============================================================================
 	
+
+{% endraw %}

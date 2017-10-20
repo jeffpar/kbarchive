@@ -6,6 +6,8 @@ permalink: /kb/142/Q142301/
 
 ## Q142301: IPX Routing With MPR Requires Manual Frame Type
 
+{% raw %}
+
 	Article: Q142301
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -51,3 +53,5 @@ permalink: /kb/142/Q142301/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258998/
 
 ## Q258998: PRB: DateTime Subtraction May Not Produce an Exact Integer
 
+{% raw %}
+
 	Article: Q258998
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -63,3 +65,5 @@ permalink: /kb/258/Q258998/
 	
 	=============================================================================
 	
+
+{% endraw %}

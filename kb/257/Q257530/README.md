@@ -6,6 +6,8 @@ permalink: /kb/257/Q257530/
 
 ## Q257530: FIX: Images Replicated When Customizing a Toolbar
 
+{% raw %}
+
 	Article: Q257530
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -94,3 +96,5 @@ permalink: /kb/257/Q257530/
 	
 	=============================================================================
 	
+
+{% endraw %}

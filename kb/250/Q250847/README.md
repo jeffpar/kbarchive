@@ -6,6 +6,8 @@ permalink: /kb/250/Q250847/
 
 ## Q250847: BUG: ATL C4305 Error when VARIANT Used as a Parameter to Event
 
+{% raw %}
+
 	Article: Q250847
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -113,3 +115,5 @@ permalink: /kb/250/Q250847/
 	
 	=============================================================================
 	
+
+{% endraw %}

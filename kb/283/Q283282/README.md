@@ -6,6 +6,8 @@ permalink: /kb/283/Q283282/
 
 ## Q283282: SMS: Hardware Inventory Reports Wrong Disk Size in Windows 95/98
 
+{% raw %}
+
 	Article: Q283282
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -66,3 +68,5 @@ permalink: /kb/283/Q283282/
 	
 	=============================================================================
 	
+
+{% endraw %}

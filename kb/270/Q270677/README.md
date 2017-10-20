@@ -6,6 +6,8 @@ permalink: /kb/270/Q270677/
 
 ## Q270677: XADM: Event Service Does Not Start and Error 0x80040154 Appears
 
+{% raw %}
+
 	Article: Q270677
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -97,3 +99,5 @@ permalink: /kb/270/Q270677/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99724/
 
 ## Q99724: Mac Wkst: Err Msg: Sorry, the Requested Window Could Not Be...
 
+{% raw %}
+
 	Article: Q99724
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1,3.1a
@@ -52,3 +54,5 @@ permalink: /kb/099/Q99724/
 	
 	=============================================================================
 	
+
+{% endraw %}

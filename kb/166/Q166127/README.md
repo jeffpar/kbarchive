@@ -6,6 +6,8 @@ permalink: /kb/166/Q166127/
 
 ## Q166127: INFO: Visual FoxPro/Mac and Mac ODBC Drivers from InterSolv
 
+{% raw %}
+
 	Article: Q166127
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -66,3 +68,5 @@ permalink: /kb/166/Q166127/
 	
 	=============================================================================
 	
+
+{% endraw %}

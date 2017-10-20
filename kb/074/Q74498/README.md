@@ -6,6 +6,8 @@ permalink: /kb/074/Q74498/
 
 ## Q74498: Willow VGA-TV NTSC Mode Does Not Display Setup
 
+{% raw %}
+
 	Article: Q74498
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -53,3 +55,5 @@ permalink: /kb/074/Q74498/
 	
 	=============================================================================
 	
+
+{% endraw %}

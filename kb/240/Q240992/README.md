@@ -6,6 +6,8 @@ permalink: /kb/240/Q240992/
 
 ## Q240992: Err Msg: An Application Error Has Occurred and an Application...
 
+{% raw %}
+
 	Article: Q240992
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/240/Q240992/
 	
 	=============================================================================
 	
+
+{% endraw %}

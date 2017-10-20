@@ -6,6 +6,8 @@ permalink: /kb/165/Q165847/
 
 ## Q165847: Server/Domain Name Truncated in &quot;Open Subdomain&quot; Dialog Box
 
+{% raw %}
+
 	Article: Q165847
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/165/Q165847/
 	
 	=============================================================================
 	
+
+{% endraw %}

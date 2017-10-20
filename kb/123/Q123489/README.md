@@ -6,6 +6,8 @@ permalink: /kb/123/Q123489/
 
 ## Q123489: Incorrect Keystrokes Reported in Character Map
 
+{% raw %}
+
 	Article: Q123489
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/123/Q123489/
 	
 	=============================================================================
 	
+
+{% endraw %}

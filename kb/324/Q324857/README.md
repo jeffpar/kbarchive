@@ -6,6 +6,8 @@ permalink: /kb/324/Q324857/
 
 ## Q324857: MSN 5.6 Installation Guide
 
+{% raw %}
+
 	Article: Q324857
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/324/Q324857/
 	
 	=============================================================================
 	
+
+{% endraw %}

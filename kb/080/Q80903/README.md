@@ -6,6 +6,8 @@ permalink: /kb/080/Q80903/
 
 ## Q80903: Compatibility Test For Windows 3.1 Checklist
 
+{% raw %}
+
 	Article: Q80903
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -470,3 +472,5 @@ permalink: /kb/080/Q80903/
 	
 	=============================================================================
 	
+
+{% endraw %}

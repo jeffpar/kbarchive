@@ -6,6 +6,8 @@ permalink: /kb/170/Q170248/
 
 ## Q170248: ODE97: Some Properties of ActiveX Controls Not Supported
 
+{% raw %}
+
 	Article: Q170248
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 97
@@ -69,3 +71,5 @@ permalink: /kb/170/Q170248/
 	
 	=============================================================================
 	
+
+{% endraw %}

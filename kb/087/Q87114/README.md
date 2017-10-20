@@ -6,6 +6,8 @@ permalink: /kb/087/Q87114/
 
 ## Q87114: Packing List: Windows 3.1 SDK Part 1 (3.5-Inch Disks)
 
+{% raw %}
+
 	Article: Q87114
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -209,3 +211,5 @@ permalink: /kb/087/Q87114/
 	
 	=============================================================================
 	
+
+{% endraw %}

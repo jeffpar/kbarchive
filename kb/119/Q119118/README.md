@@ -6,6 +6,8 @@ permalink: /kb/119/Q119118/
 
 ## Q119118: Windows 95 Fails to Install on an 80386 Computer
 
+{% raw %}
+
 	Article: Q119118
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/119/Q119118/
 	
 	=============================================================================
 	
+
+{% endraw %}

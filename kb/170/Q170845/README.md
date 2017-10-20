@@ -6,6 +6,8 @@ permalink: /kb/170/Q170845/
 
 ## Q170845: SerialKey Accessibility Option Does Not Work in OSR2
 
+{% raw %}
+
 	Article: Q170845
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -66,3 +68,5 @@ permalink: /kb/170/Q170845/
 	
 	=============================================================================
 	
+
+{% endraw %}

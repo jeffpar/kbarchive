@@ -6,6 +6,8 @@ permalink: /kb/146/Q146747/
 
 ## Q146747: XCLN: Subject Not Changed When Forwarding Message
 
+{% raw %}
+
 	Article: Q146747
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -58,3 +60,5 @@ permalink: /kb/146/Q146747/
 	
 	=============================================================================
 	
+
+{% endraw %}

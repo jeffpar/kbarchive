@@ -6,6 +6,8 @@ permalink: /kb/256/Q256094/
 
 ## Q256094: Explorer.exe May Generate an &quot;Access Violation&quot; Error Message
 
+{% raw %}
+
 	Article: Q256094
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/256/Q256094/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/078/Q78670/
 
 ## Q78670: Startup Directory Option Ignored in MS-DOS Shell
 
+{% raw %}
+
 	Article: Q78670
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -70,3 +72,5 @@ permalink: /kb/078/Q78670/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40162/
 
 ## Q40162: Serial Mouse May Hang on ATT 6300
 
+{% raw %}
+
 	Article: Q40162
 	Product(s): See article
 	Version(s): 1.00
@@ -20,3 +22,5 @@ permalink: /kb/040/Q40162/
 	attached to by using the /C1 or /C2 command-line switches. You can do
 	this either in a manual start up or by including the information in
 	the AUTOEXEC.BAT or CONFIG.SYS files.
+
+{% endraw %}

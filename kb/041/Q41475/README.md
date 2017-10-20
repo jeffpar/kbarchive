@@ -6,6 +6,8 @@ permalink: /kb/041/Q41475/
 
 ## Q41475: Using Brief Emulation and Tags in TOOLS.INI
 
+{% raw %}
+
 	Article: Q41475
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -51,3 +53,5 @@ permalink: /kb/041/Q41475/
 	   createhorizwindow  will change from F3 to undefined
 	   createvertwin      will change from F4 to undefined
 	   deletewindow       will change from F5 to undefined
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67387/
 
 ## Q67387: ASD: Piper Archer Gear Won't Retract
 
+{% raw %}
+
 	Article: Q67387
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -26,3 +28,5 @@ permalink: /kb/067/Q67387/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198039/
 
 ## Q198039: WD97: Understanding the Template Path and Normal.dot
 
+{% raw %}
+
 	Article: Q198039
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -100,3 +102,5 @@ permalink: /kb/198/Q198039/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/034/Q34374/
 
 ## Q34374: LINK /CO /DO in OS/2 Gives Protection Violation
 
+{% raw %}
+
 	Article: Q34374
 	Product(s): See article
 	Version(s): 5.01.21 | 5.01.21
@@ -28,3 +30,5 @@ permalink: /kb/034/Q34374/
 	Microsoft has confirmed this to be a problem in Version 5.01.21. We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

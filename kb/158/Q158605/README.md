@@ -6,6 +6,8 @@ permalink: /kb/158/Q158605/
 
 ## Q158605: FIX: Driver Not Capable Error: SQL_COPT_SS_CONNECTION_DEAD
 
+{% raw %}
+
 	Article: Q158605
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.65
@@ -56,3 +58,5 @@ permalink: /kb/158/Q158605/
 	
 	=============================================================================
 	
+
+{% endraw %}

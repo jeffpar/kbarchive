@@ -6,6 +6,8 @@ permalink: /kb/059/Q59380/
 
 ## Q59380: How to Do a Print Screen within a Program
 
+{% raw %}
+
 	Article: Q59380
 	Product(s): See article
 	Version(s): 5.10
@@ -60,3 +62,5 @@ permalink: /kb/059/Q59380/
 	          break;
 	     }
 	  }
+
+{% endraw %}

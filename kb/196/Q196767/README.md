@@ -6,6 +6,8 @@ permalink: /kb/196/Q196767/
 
 ## Q196767: WD97: Formulas Incorrectly Calculate Times
 
+{% raw %}
+
 	Article: Q196767
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/196/Q196767/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142634/
 
 ## Q142634: Multiple Processes Are Able to Open the Same Winsock Port
 
+{% raw %}
+
 	Article: Q142634
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,3.51,4.0,4.0
@@ -71,3 +73,5 @@ permalink: /kb/142/Q142634/
 	
 	=============================================================================
 	
+
+{% endraw %}

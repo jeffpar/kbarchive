@@ -6,6 +6,8 @@ permalink: /kb/040/Q40113/
 
 ## Q40113: Incorrect Code Generation with /J
 
+{% raw %}
+
 	Article: Q40113
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -56,3 +58,5 @@ permalink: /kb/040/Q40113/
 	;|*** result = result - 'a' + 1  ;
 	        sub     WORD PTR [bp-4],96      ;result
 	        sbb     WORD PTR [bp-2],0
+
+{% endraw %}

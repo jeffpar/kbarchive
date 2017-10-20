@@ -6,6 +6,8 @@ permalink: /kb/113/Q113811/
 
 ## Q113811: PRB: TAB Key Does Not Trigger List Box's VALID Clause
 
+{% raw %}
+
 	Article: Q113811
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -57,3 +59,5 @@ permalink: /kb/113/Q113811/
 	
 	=============================================================================
 	
+
+{% endraw %}

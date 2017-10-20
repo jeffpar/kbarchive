@@ -6,6 +6,8 @@ permalink: /kb/175/Q175582/
 
 ## Q175582: XWEB: Changing View in OWA Does Not Update Immediately
 
+{% raw %}
+
 	Article: Q175582
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -43,3 +45,5 @@ permalink: /kb/175/Q175582/
 	
 	=============================================================================
 	
+
+{% endraw %}

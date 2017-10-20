@@ -6,6 +6,8 @@ permalink: /kb/313/Q313684/
 
 ## Q313684: GET_TP_PROPERTIES Fails with INVALID_VERB Response Code
 
+{% raw %}
+
 	Article: Q313684
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -156,3 +158,5 @@ permalink: /kb/313/Q313684/
 	
 	=============================================================================
 	
+
+{% endraw %}

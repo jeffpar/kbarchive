@@ -6,6 +6,8 @@ permalink: /kb/153/Q153246/
 
 ## Q153246: Sms.exe Fails to Start When Attaching Sites
 
+{% raw %}
+
 	Article: Q153246
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2
@@ -105,3 +107,5 @@ permalink: /kb/153/Q153246/
 	
 	=============================================================================
 	
+
+{% endraw %}

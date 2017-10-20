@@ -6,6 +6,8 @@ permalink: /kb/170/Q170961/
 
 ## Q170961: HOWTO: Change an Access Database Password
 
+{% raw %}
+
 	Article: Q170961
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0 5.0 7.0 97
@@ -107,3 +109,5 @@ permalink: /kb/170/Q170961/
 	
 	=============================================================================
 	
+
+{% endraw %}

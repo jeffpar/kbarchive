@@ -6,6 +6,8 @@ permalink: /kb/145/Q145864/
 
 ## Q145864: PRB: Returning FALSE from OnSetActive Doesn't Set Correct Tab
 
+{% raw %}
+
 	Article: Q145864
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -73,3 +75,5 @@ permalink: /kb/145/Q145864/
 	
 	=============================================================================
 	
+
+{% endraw %}

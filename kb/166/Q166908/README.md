@@ -6,6 +6,8 @@ permalink: /kb/166/Q166908/
 
 ## Q166908: FIX: ScaleMode for Printer Object Can't Create Custom Scale
 
+{% raw %}
+
 	Article: Q166908
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -150,3 +152,5 @@ permalink: /kb/166/Q166908/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/034/Q34470/
 
 ## Q34470: MASM 5.10 MACRO.DOC: File Control
 
+{% raw %}
+
 	Article: Q34470
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -145,3 +147,5 @@ permalink: /kb/034/Q34470/
 	                              before macro call
 	Return:         If carrry clear, file pointer position in DX:AX
 	Registers used: AX, BX, CX, and DX
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192542/
 
 ## Q192542: XFOR: Notes Connector Crashes Processing Voice Mail Attachment
 
+{% raw %}
+
 	Article: Q192542
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -97,3 +99,5 @@ permalink: /kb/192/Q192542/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180392/
 
 ## Q180392: Uninstall Button Is Not Displayed On Windows NT 3.51
 
+{% raw %}
+
 	Article: Q180392
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -53,3 +55,5 @@ permalink: /kb/180/Q180392/
 	
 	=============================================================================
 	
+
+{% endraw %}

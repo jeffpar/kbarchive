@@ -6,6 +6,8 @@ permalink: /kb/267/Q267559/
 
 ## Q267559: GET on HTR File Causes &quot;Denial of Service&quot; or Directory Browsing
 
+{% raw %}
+
 	Article: Q267559
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -249,3 +251,5 @@ permalink: /kb/267/Q267559/
 	
 	=============================================================================
 	
+
+{% endraw %}

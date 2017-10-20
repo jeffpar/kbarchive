@@ -6,6 +6,8 @@ permalink: /kb/175/Q175600/
 
 ## Q175600: HOWTO: Give Your ActiveX Component a Friendly Name
 
+{% raw %}
+
 	Article: Q175600
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/175/Q175600/
 	
 	=============================================================================
 	
+
+{% endraw %}

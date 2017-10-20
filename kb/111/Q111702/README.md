@@ -6,6 +6,8 @@ permalink: /kb/111/Q111702/
 
 ## Q111702: PC WRmt: Mail Remote MAILDRV.EXE 3.2.0.4002 Update
 
+{% raw %}
+
 	Article: Q111702
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -99,3 +101,5 @@ permalink: /kb/111/Q111702/
 	
 	=============================================================================
 	
+
+{% endraw %}

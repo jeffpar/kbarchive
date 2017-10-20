@@ -6,6 +6,8 @@ permalink: /kb/259/Q259646/
 
 ## Q259646: VFP 6.0 Sample: Shows How To Use the DateTimePicker Control
 
+{% raw %}
+
 	Article: Q259646
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -158,3 +160,5 @@ permalink: /kb/259/Q259646/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196755/
 
 ## Q196755: HOWTO: Determine the Location of a Crash
 
+{% raw %}
+
 	Article: Q196755
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0,4.2,5.0,6.0
@@ -170,3 +172,5 @@ permalink: /kb/196/Q196755/
 	
 	=============================================================================
 	
+
+{% endraw %}

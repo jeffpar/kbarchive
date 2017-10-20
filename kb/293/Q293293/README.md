@@ -6,6 +6,8 @@ permalink: /kb/293/Q293293/
 
 ## Q293293: PRB: Cannot Update SCC Status From ProjectHook.Init()
 
+{% raw %}
+
 	Article: Q293293
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -108,3 +110,5 @@ permalink: /kb/293/Q293293/
 	
 	=============================================================================
 	
+
+{% endraw %}

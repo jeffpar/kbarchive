@@ -6,6 +6,8 @@ permalink: /kb/158/Q158901/
 
 ## Q158901: XADM: MDB Event 2079: Unable to Submit, Send, or Transfer Msgs
 
+{% raw %}
+
 	Article: Q158901
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/158/Q158901/
 	
 	=============================================================================
 	
+
+{% endraw %}

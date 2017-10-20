@@ -6,6 +6,8 @@ permalink: /kb/087/Q87746/
 
 ## Q87746: WordPerfect Loads Slowly After Installing CorelDRAW 3.0
 
+{% raw %}
+
 	Article: Q87746
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -87,3 +89,5 @@ permalink: /kb/087/Q87746/
 	
 	=============================================================================
 	
+
+{% endraw %}

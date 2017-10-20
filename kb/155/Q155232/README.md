@@ -6,6 +6,8 @@ permalink: /kb/155/Q155232/
 
 ## Q155232: BUG: Access Driver Ignores Pagetimeout in Datasources
 
+{% raw %}
+
 	Article: Q155232
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.40
@@ -122,3 +124,5 @@ permalink: /kb/155/Q155232/
 	
 	=============================================================================
 	
+
+{% endraw %}

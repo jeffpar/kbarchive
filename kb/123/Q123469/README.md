@@ -6,6 +6,8 @@ permalink: /kb/123/Q123469/
 
 ## Q123469: PRB: How to Handle the &quot;invalid serial number&quot; Error
 
+{% raw %}
+
 	Article: Q123469
 	Product(s): Microsoft SourceSafe
 	Version(s): 2.0x,3.01,3.02
@@ -56,3 +58,5 @@ permalink: /kb/123/Q123469/
 	
 	=============================================================================
 	
+
+{% endraw %}

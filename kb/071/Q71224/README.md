@@ -6,6 +6,8 @@ permalink: /kb/071/Q71224/
 
 ## Q71224: SetKBD.exe Dynamically Loads Keyboard DLL
 
+{% raw %}
+
 	Article: Q71224
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0
@@ -70,3 +72,5 @@ permalink: /kb/071/Q71224/
 	
 	=============================================================================
 	
+
+{% endraw %}

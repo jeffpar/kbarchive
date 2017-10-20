@@ -6,6 +6,8 @@ permalink: /kb/314/Q314527/
 
 ## Q314527: Microsoft Office XP Step By Step Comments And Corrections
 
+{% raw %}
+
 	Article: Q314527
 	Product(s): Microsoft Press
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/314/Q314527/
 	
 	=============================================================================
 	
+
+{% endraw %}

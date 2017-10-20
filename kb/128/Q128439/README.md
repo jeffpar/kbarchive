@@ -6,6 +6,8 @@ permalink: /kb/128/Q128439/
 
 ## Q128439: MHS: Err Msg: Cannot Open NETDIR.TAB
 
+{% raw %}
+
 	Article: Q128439
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/128/Q128439/
 	
 	=============================================================================
 	
+
+{% endraw %}

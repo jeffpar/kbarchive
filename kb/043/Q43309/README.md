@@ -6,6 +6,8 @@ permalink: /kb/043/Q43309/
 
 ## Q43309: PRINT USING Incorrect Results, Hang for Double Precision
 
+{% raw %}
+
 	Article: Q43309
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -51,3 +53,5 @@ permalink: /kb/043/Q43309/
 	  PRINT USING "##.#######"; j
 	  NEXT
 	END
+
+{% endraw %}

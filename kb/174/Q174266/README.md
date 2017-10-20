@@ -6,6 +6,8 @@ permalink: /kb/174/Q174266/
 
 ## Q174266: &quot;Print Screen&quot; from MS-DOS Application May Print Twice
 
+{% raw %}
+
 	Article: Q174266
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/174/Q174266/
 	
 	=============================================================================
 	
+
+{% endraw %}

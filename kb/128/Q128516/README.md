@@ -6,6 +6,8 @@ permalink: /kb/128/Q128516/
 
 ## Q128516: Okidata OL-410ex Printout Incorrect at 600 dpi
 
+{% raw %}
+
 	Article: Q128516
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/128/Q128516/
 	
 	=============================================================================
 	
+
+{% endraw %}

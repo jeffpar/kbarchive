@@ -6,6 +6,8 @@ permalink: /kb/195/Q195841/
 
 ## Q195841: Event Viewer Error 9503: NWLinkIpx Illegal Parameters
 
+{% raw %}
+
 	Article: Q195841
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0,4.0a,4.5
@@ -88,3 +90,5 @@ permalink: /kb/195/Q195841/
 	
 	=============================================================================
 	
+
+{% endraw %}

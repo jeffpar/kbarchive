@@ -6,6 +6,8 @@ permalink: /kb/164/Q164332/
 
 ## Q164332: WD97: Can't Use Spelling Checker If Text Uses Certain Fonts
 
+{% raw %}
+
 	Article: Q164332
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:7.0,97
@@ -110,3 +112,5 @@ permalink: /kb/164/Q164332/
 	
 	=============================================================================
 	
+
+{% endraw %}

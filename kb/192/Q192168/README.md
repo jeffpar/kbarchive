@@ -6,6 +6,8 @@ permalink: /kb/192/Q192168/
 
 ## Q192168: XADM: Exchange Server Binaries Cannot Be Moved
 
+{% raw %}
+
 	Article: Q192168
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -75,3 +77,5 @@ permalink: /kb/192/Q192168/
 	
 	=============================================================================
 	
+
+{% endraw %}

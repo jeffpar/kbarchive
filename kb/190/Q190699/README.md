@@ -6,6 +6,8 @@ permalink: /kb/190/Q190699/
 
 ## Q190699: XADM: Microsoft Exchange Key Management Server Event ID 5057
 
+{% raw %}
+
 	Article: Q190699
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -48,3 +50,5 @@ permalink: /kb/190/Q190699/
 	
 	=============================================================================
 	
+
+{% endraw %}

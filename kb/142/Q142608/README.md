@@ -6,6 +6,8 @@ permalink: /kb/142/Q142608/
 
 ## Q142608: Windows for Workgroups Fails to Print to Apple IIG through NTS
 
+{% raw %}
+
 	Article: Q142608
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.51
@@ -61,3 +63,5 @@ permalink: /kb/142/Q142608/
 	
 	=============================================================================
 	
+
+{% endraw %}

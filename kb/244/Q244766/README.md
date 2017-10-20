@@ -6,6 +6,8 @@ permalink: /kb/244/Q244766/
 
 ## Q244766: MS Access 2000/VBA Fundamentals Comments and Corrections
 
+{% raw %}
+
 	Article: Q244766
 	Product(s): Microsoft Press
 	Version(s): 
@@ -128,3 +130,5 @@ permalink: /kb/244/Q244766/
 	
 	=============================================================================
 	
+
+{% endraw %}

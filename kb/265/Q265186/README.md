@@ -6,6 +6,8 @@ permalink: /kb/265/Q265186/
 
 ## Q265186: XCON: MTA Fanout Slows on Multiprocessor Servers
 
+{% raw %}
+
 	Article: Q265186
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -177,3 +179,5 @@ permalink: /kb/265/Q265186/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247763/
 
 ## Q247763: Cluster Administrator May Hang Creating New IIS Server Instance
 
+{% raw %}
+
 	Article: Q247763
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -99,3 +101,5 @@ permalink: /kb/247/Q247763/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/030/Q30829/
 
 ## Q30829: Setting TMPSAV in TOOLS.INI file; M.TMP Cannot Be Suppressed
 
+{% raw %}
+
 	Article: Q30829
 	Product(s): See article
 	Version(s): 1.00
@@ -30,3 +32,5 @@ permalink: /kb/030/Q30829/
 	files to be saved. All other numeric values refer to the number of
 	files that will be saved. The /t option specifies that any files
 	edited are temporary; they are not saved in the M.TMP file.
+
+{% endraw %}

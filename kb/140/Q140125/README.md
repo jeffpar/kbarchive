@@ -6,6 +6,8 @@ permalink: /kb/140/Q140125/
 
 ## Q140125: Microsoft Plus! Batch-Mode Setup Is Not Supported
 
+{% raw %}
+
 	Article: Q140125
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -41,3 +43,5 @@ permalink: /kb/140/Q140125/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153501/
 
 ## Q153501: PRB: &quot;Error reading from file&quot; When Logging into SourceSafe
 
+{% raw %}
+
 	Article: Q153501
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.1,4.0,5.0,6.0
@@ -63,3 +65,5 @@ permalink: /kb/153/Q153501/
 	
 	=============================================================================
 	
+
+{% endraw %}

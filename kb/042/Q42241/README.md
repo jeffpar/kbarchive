@@ -6,6 +6,8 @@ permalink: /kb/042/Q42241/
 
 ## Q42241: Minimum Requirements for Writing a M Extension
 
+{% raw %}
+
 	Article: Q42241
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -40,3 +42,5 @@ permalink: /kb/042/Q42241/
 	
 	You need a minimum 150K of available memory for the editor to load a C
 	extension at run time in addition to the size of the extension itself.
+
+{% endraw %}

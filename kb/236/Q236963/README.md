@@ -6,6 +6,8 @@ permalink: /kb/236/Q236963/
 
 ## Q236963: Creating Hardware Profiles for Windows 95/98 and Windows NT 4.0
 
+{% raw %}
+
 	Article: Q236963
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0
@@ -156,3 +158,5 @@ permalink: /kb/236/Q236963/
 	
 	=============================================================================
 	
+
+{% endraw %}

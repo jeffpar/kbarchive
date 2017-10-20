@@ -6,6 +6,8 @@ permalink: /kb/195/Q195319/
 
 ## Q195319: Inherit User Config Option Does Not Work for Modem Callback
 
+{% raw %}
+
 	Article: Q195319
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/195/Q195319/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/026/Q26707/
 
 ## Q26707: LOOP Can Use ECX in 16-bit Segment, CX in 32-bit Segment
 
+{% raw %}
+
 	Article: Q26707
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1
@@ -36,3 +38,5 @@ permalink: /kb/026/Q26707/
 	
 	=============================================================================
 	
+
+{% endraw %}

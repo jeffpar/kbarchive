@@ -6,6 +6,8 @@ permalink: /kb/104/Q104818/
 
 ## Q104818: PC Forms: Message Class Not Preserved When Forwarding
 
+{% raw %}
+
 	Article: Q104818
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -61,3 +63,5 @@ permalink: /kb/104/Q104818/
 	
 	=============================================================================
 	
+
+{% endraw %}

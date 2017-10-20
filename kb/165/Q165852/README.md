@@ -6,6 +6,8 @@ permalink: /kb/165/Q165852/
 
 ## Q165852: Windows 3.x App Can't Find SNA Server When Started Second Time
 
+{% raw %}
+
 	Article: Q165852
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/165/Q165852/
 	
 	=============================================================================
 	
+
+{% endraw %}

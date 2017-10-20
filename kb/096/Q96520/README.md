@@ -6,6 +6,8 @@ permalink: /kb/096/Q96520/
 
 ## Q96520: Windows Hangs at Logo Screen with FTP Network and DoubleSpace
 
+{% raw %}
+
 	Article: Q96520
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -57,3 +59,5 @@ permalink: /kb/096/Q96520/
 	
 	=============================================================================
 	
+
+{% endraw %}

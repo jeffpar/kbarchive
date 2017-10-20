@@ -6,6 +6,8 @@ permalink: /kb/289/Q289106/
 
 ## Q289106: DirectX 8: Cannot Install on a Computer That Uses a Cyrix 686
 
+{% raw %}
+
 	Article: Q289106
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/289/Q289106/
 	
 	=============================================================================
 	
+
+{% endraw %}

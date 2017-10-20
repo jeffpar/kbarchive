@@ -6,6 +6,8 @@ permalink: /kb/105/Q105247/
 
 ## Q105247: Err Msg: There are no Print Processors... Creating a Printer
 
+{% raw %}
+
 	Article: Q105247
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -91,3 +93,5 @@ permalink: /kb/105/Q105247/
 	
 	=============================================================================
 	
+
+{% endraw %}

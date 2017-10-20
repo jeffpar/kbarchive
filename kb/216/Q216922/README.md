@@ -6,6 +6,8 @@ permalink: /kb/216/Q216922/
 
 ## Q216922: Certificate Server Does Not Create Backups of Installed Keys
 
+{% raw %}
+
 	Article: Q216922
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,4.0
@@ -66,3 +68,5 @@ permalink: /kb/216/Q216922/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/200/Q200591/
 
 ## Q200591: PRB: 8570 Report Sections Do Not Match DataSource
 
+{% raw %}
+
 	Article: Q200591
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1,2.5,2.6,6.0
@@ -124,3 +126,5 @@ permalink: /kb/200/Q200591/
 	
 	=============================================================================
 	
+
+{% endraw %}

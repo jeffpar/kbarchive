@@ -6,6 +6,8 @@ permalink: /kb/093/Q93907/
 
 ## Q93907: Err Msg: Illegal Function Call (with WinPrint)
 
+{% raw %}
+
 	Article: Q93907
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): 3.1,3.11
@@ -79,3 +81,5 @@ permalink: /kb/093/Q93907/
 	
 	=============================================================================
 	
+
+{% endraw %}

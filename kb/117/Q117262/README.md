@@ -6,6 +6,8 @@ permalink: /kb/117/Q117262/
 
 ## Q117262: Project 4.0 Files for ODK Encore Example Available
 
+{% raw %}
+
 	Article: Q117262
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 3.0
@@ -71,3 +73,5 @@ permalink: /kb/117/Q117262/
 	
 	=============================================================================
 	
+
+{% endraw %}

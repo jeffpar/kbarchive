@@ -6,6 +6,8 @@ permalink: /kb/231/Q231778/
 
 ## Q231778: Migrated NetWare Users Do Not Appear in User Manager
 
+{% raw %}
+
 	Article: Q231778
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/231/Q231778/
 	
 	=============================================================================
 	
+
+{% endraw %}

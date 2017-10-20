@@ -6,6 +6,8 @@ permalink: /kb/158/Q158232/
 
 ## Q158232: STL Sample for the unary_functi
 
+{% raw %}
+
 	Article: Q158232
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -140,3 +142,5 @@ permalink: /kb/158/Q158232/
 	
 	=============================================================================
 	
+
+{% endraw %}

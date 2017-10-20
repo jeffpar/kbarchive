@@ -6,6 +6,8 @@ permalink: /kb/163/Q163071/
 
 ## Q163071: SNA Server Access Violation May Occur If Link Fails to Start
 
+{% raw %}
+
 	Article: Q163071
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -127,3 +129,5 @@ permalink: /kb/163/Q163071/
 	
 	=============================================================================
 	
+
+{% endraw %}

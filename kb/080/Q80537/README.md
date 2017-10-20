@@ -6,6 +6,8 @@ permalink: /kb/080/Q80537/
 
 ## Q80537: PC Kwik Cache Causes Error in Formatting DD Disk in HD Drive
 
+{% raw %}
+
 	Article: Q80537
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.209
@@ -66,3 +68,5 @@ permalink: /kb/080/Q80537/
 	
 	=============================================================================
 	
+
+{% endraw %}

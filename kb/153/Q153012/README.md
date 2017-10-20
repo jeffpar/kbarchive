@@ -6,6 +6,8 @@ permalink: /kb/153/Q153012/
 
 ## Q153012: XCLN: Wordmail Will Not Resolve Aliases With CTRL+K
 
+{% raw %}
+
 	Article: Q153012
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -44,3 +46,5 @@ permalink: /kb/153/Q153012/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/079/Q79534/
 
 ## Q79534: Windows 3.0 NEC P9 XL Printer Driver Does Not Support Color
 
+{% raw %}
+
 	Article: Q79534
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -47,3 +49,5 @@ permalink: /kb/079/Q79534/
 	
 	=============================================================================
 	
+
+{% endraw %}

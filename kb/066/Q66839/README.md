@@ -6,6 +6,8 @@ permalink: /kb/066/Q66839/
 
 ## Q66839: Flight Simulator: Plane Does Not Crash into Scenery Object
 
+{% raw %}
+
 	Article: Q66839
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/066/Q66839/
 	
 	=============================================================================
 	
+
+{% endraw %}

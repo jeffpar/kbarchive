@@ -6,6 +6,8 @@ permalink: /kb/088/Q88547/
 
 ## Q88547: Seeing White Spots with Tandy 4825SX and 4850EP
 
+{% raw %}
+
 	Article: Q88547
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/088/Q88547/
 	
 	=============================================================================
 	
+
+{% endraw %}

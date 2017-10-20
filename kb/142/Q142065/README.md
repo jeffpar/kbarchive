@@ -6,6 +6,8 @@ permalink: /kb/142/Q142065/
 
 ## Q142065: Connecting Windows NT to Windows 95 with a Null-Modem Cable
 
+{% raw %}
+
 	Article: Q142065
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.5 3.51 4.0 95
@@ -95,3 +97,5 @@ permalink: /kb/142/Q142065/
 	
 	=============================================================================
 	
+
+{% endraw %}

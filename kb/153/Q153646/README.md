@@ -6,6 +6,8 @@ permalink: /kb/153/Q153646/
 
 ## Q153646: Closing or Canceling a Running Query May Hang the SMS Admin
 
+{% raw %}
+
 	Article: Q153646
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -49,3 +51,5 @@ permalink: /kb/153/Q153646/
 	
 	=============================================================================
 	
+
+{% endraw %}

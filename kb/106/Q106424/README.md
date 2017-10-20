@@ -6,6 +6,8 @@ permalink: /kb/106/Q106424/
 
 ## Q106424: Turtle Beach Sound Card: No Sound After Running MemMaker
 
+{% raw %}
+
 	Article: Q106424
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -58,3 +60,5 @@ permalink: /kb/106/Q106424/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149591/
 
 ## Q149591: PPT7: PowerPoint 7.0a Stops Responding When Switching Views
 
+{% raw %}
+
 	Article: Q149591
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0a; Win95:7.0a
@@ -69,3 +71,5 @@ permalink: /kb/149/Q149591/
 	
 	=============================================================================
 	
+
+{% endraw %}

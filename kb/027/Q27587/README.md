@@ -6,6 +6,8 @@ permalink: /kb/027/Q27587/
 
 ## Q27587: Two Causes of Interrupt 0 in MASM Program
 
+{% raw %}
+
 	Article: Q27587
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -47,3 +49,5 @@ permalink: /kb/027/Q27587/
 	
 	=============================================================================
 	
+
+{% endraw %}

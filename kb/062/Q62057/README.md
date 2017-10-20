@@ -6,6 +6,8 @@ permalink: /kb/062/Q62057/
 
 ## Q62057: BASIC Random Files Compatible with C Random (Binary) Files
 
+{% raw %}
+
 	Article: Q62057
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -145,3 +147,5 @@ permalink: /kb/062/Q62057/
 	   printf("%d\n",   rec1->int1);
 	   printf("%ld\n\n",rec1->long1);
 	}
+
+{% endraw %}

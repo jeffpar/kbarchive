@@ -6,6 +6,8 @@ permalink: /kb/139/Q139110/
 
 ## Q139110: DOC: Code on Pages 75-76 of Developer's Guide Causes Error
 
+{% raw %}
+
 	Article: Q139110
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -79,3 +81,5 @@ permalink: /kb/139/Q139110/
 	
 	=============================================================================
 	
+
+{% endraw %}

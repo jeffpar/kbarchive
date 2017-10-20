@@ -6,6 +6,8 @@ permalink: /kb/170/Q170425/
 
 ## Q170425: SNA 3.0 NT Client Setup Sets LanmanServer Dependency in Error
 
+{% raw %}
+
 	Article: Q170425
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -92,3 +94,5 @@ permalink: /kb/170/Q170425/
 	
 	=============================================================================
 	
+
+{% endraw %}

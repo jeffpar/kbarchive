@@ -6,6 +6,8 @@ permalink: /kb/162/Q162777/
 
 ## Q162777: Printing to an LPD Service Running On SunOS 4.1.x System
 
+{% raw %}
+
 	Article: Q162777
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -84,3 +86,5 @@ permalink: /kb/162/Q162777/
 	
 	=============================================================================
 	
+
+{% endraw %}

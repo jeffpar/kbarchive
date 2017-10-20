@@ -6,6 +6,8 @@ permalink: /kb/127/Q127079/
 
 ## Q127079: PC Mac DB: Purpose and Location of LOWRCASE.GLB
 
+{% raw %}
+
 	Article: Q127079
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): (all),3.2
@@ -59,3 +61,5 @@ permalink: /kb/127/Q127079/
 	
 	=============================================================================
 	
+
+{% endraw %}

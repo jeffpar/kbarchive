@@ -6,6 +6,8 @@ permalink: /kb/163/Q163538/
 
 ## Q163538: NTBackup Does Not Properly Eject Tapes on DLT Tape Devices
 
+{% raw %}
+
 	Article: Q163538
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/163/Q163538/
 	
 	=============================================================================
 	
+
+{% endraw %}

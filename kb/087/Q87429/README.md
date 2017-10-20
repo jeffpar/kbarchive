@@ -6,6 +6,8 @@ permalink: /kb/087/Q87429/
 
 ## Q87429: PROFS: How to Delete a Gateway
 
+{% raw %}
+
 	Article: Q87429
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -48,3 +50,5 @@ permalink: /kb/087/Q87429/
 	
 	=============================================================================
 	
+
+{% endraw %}

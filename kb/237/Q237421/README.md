@@ -6,6 +6,8 @@ permalink: /kb/237/Q237421/
 
 ## Q237421: XCON: Euro Sent Through X.400 Connector Displayed Incorrectly
 
+{% raw %}
+
 	Article: Q237421
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -102,3 +104,5 @@ permalink: /kb/237/Q237421/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/267/Q267950/
 
 ## Q267950: XADM: Storage Limit Warning Messages Not in the Client Language
 
+{% raw %}
+
 	Article: Q267950
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -84,3 +86,5 @@ permalink: /kb/267/Q267950/
 	
 	=============================================================================
 	
+
+{% endraw %}

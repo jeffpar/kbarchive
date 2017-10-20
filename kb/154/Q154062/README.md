@@ -6,6 +6,8 @@ permalink: /kb/154/Q154062/
 
 ## Q154062: How to Set Up a Windows NT PPTP Client
 
+{% raw %}
+
 	Article: Q154062
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/154/Q154062/
 	
 	=============================================================================
 	
+
+{% endraw %}

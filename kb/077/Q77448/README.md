@@ -6,6 +6,8 @@ permalink: /kb/077/Q77448/
 
 ## Q77448: Generic CADD Does Not Run from MS-DOS 5.0 Shell
 
+{% raw %}
+
 	Article: Q77448
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -58,3 +60,5 @@ permalink: /kb/077/Q77448/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/269/Q269618/
 
 ## Q269618: BUG: GPF May Occur When ComboBox Control Set on Band of CoolBar
 
+{% raw %}
+
 	Article: Q269618
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -138,3 +140,5 @@ permalink: /kb/269/Q269618/
 	
 	=============================================================================
 	
+
+{% endraw %}

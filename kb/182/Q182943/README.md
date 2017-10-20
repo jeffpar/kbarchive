@@ -6,6 +6,8 @@ permalink: /kb/182/Q182943/
 
 ## Q182943: BUG: &quot;Key&quot; Argument of SaveToolBar &amp; RestoreToolBar Doesn't Work
 
+{% raw %}
+
 	Article: Q182943
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -99,3 +101,5 @@ permalink: /kb/182/Q182943/
 	
 	=============================================================================
 	
+
+{% endraw %}

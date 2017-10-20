@@ -6,6 +6,8 @@ permalink: /kb/313/Q313945/
 
 ## Q313945: Encarta 2001: IPF Err Msg When Program Reads CD-ROM
 
+{% raw %}
+
 	Article: Q313945
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/313/Q313945/
 	
 	=============================================================================
 	
+
+{% endraw %}

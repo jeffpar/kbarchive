@@ -6,6 +6,8 @@ permalink: /kb/150/Q150660/
 
 ## Q150660: Mac Bookshelf Does Not Install to Less than System 7.0
 
+{% raw %}
+
 	Article: Q150660
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996-1997
@@ -66,3 +68,5 @@ permalink: /kb/150/Q150660/
 	
 	=============================================================================
 	
+
+{% endraw %}

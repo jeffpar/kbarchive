@@ -6,6 +6,8 @@ permalink: /kb/169/Q169183/
 
 ## Q169183: XCLN: Unable to Get Published Folder List
 
+{% raw %}
+
 	Article: Q169183
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -87,3 +89,5 @@ permalink: /kb/169/Q169183/
 	
 	=============================================================================
 	
+
+{% endraw %}

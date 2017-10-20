@@ -6,6 +6,8 @@ permalink: /kb/228/Q228522/
 
 ## Q228522: Baseball 2000: How to Improve Graphics Performance
 
+{% raw %}
+
 	Article: Q228522
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -113,3 +115,5 @@ permalink: /kb/228/Q228522/
 	
 	=============================================================================
 	
+
+{% endraw %}

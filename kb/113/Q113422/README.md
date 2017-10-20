@@ -6,6 +6,8 @@ permalink: /kb/113/Q113422/
 
 ## Q113422: BUG: Incorrect Formatting of Macro Comment Listings
 
+{% raw %}
+
 	Article: Q113422
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -74,3 +76,5 @@ permalink: /kb/113/Q113422/
 	
 	=============================================================================
 	
+
+{% endraw %}

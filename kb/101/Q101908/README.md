@@ -6,6 +6,8 @@ permalink: /kb/101/Q101908/
 
 ## Q101908: Comprehensive List of WRK Version 3.1 Doc Errors, Part 2
 
+{% raw %}
+
 	Article: Q101908
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -577,3 +579,5 @@ permalink: /kb/101/Q101908/
 	
 	=============================================================================
 	
+
+{% endraw %}

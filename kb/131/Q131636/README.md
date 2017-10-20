@@ -6,6 +6,8 @@ permalink: /kb/131/Q131636/
 
 ## Q131636: PC WSPlus: Last Update Received/Sent Is Never
 
+{% raw %}
+
 	Article: Q131636
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -52,3 +54,5 @@ permalink: /kb/131/Q131636/
 	
 	=============================================================================
 	
+
+{% endraw %}

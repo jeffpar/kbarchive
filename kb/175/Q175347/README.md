@@ -6,6 +6,8 @@ permalink: /kb/175/Q175347/
 
 ## Q175347: Age Of Empires: Command Line Parameters
 
+{% raw %}
+
 	Article: Q175347
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -135,3 +137,5 @@ permalink: /kb/175/Q175347/
 	
 	=============================================================================
 	
+
+{% endraw %}

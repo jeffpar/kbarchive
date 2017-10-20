@@ -6,6 +6,8 @@ permalink: /kb/233/Q233976/
 
 ## Q233976: Cannot Retrieve UserName Property in Windows Script Host
 
+{% raw %}
+
 	Article: Q233976
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/233/Q233976/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/048/Q48652/
 
 ## Q48652: Mac Srv: Finding Server Serial Number of Server Installer Disk
 
+{% raw %}
+
 	Article: Q48652
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -54,3 +56,5 @@ permalink: /kb/048/Q48652/
 	
 	=============================================================================
 	
+
+{% endraw %}

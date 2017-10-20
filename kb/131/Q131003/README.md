@@ -6,6 +6,8 @@ permalink: /kb/131/Q131003/
 
 ## Q131003: PRB: Setting DECIMALS to 15 or More Produces Incorrect Result
 
+{% raw %}
+
 	Article: Q131003
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6a,3.0
@@ -70,3 +72,5 @@ permalink: /kb/131/Q131003/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/038/Q38667/
 
 ## Q38667: Mac DOS: Using Microsoft Mail with Windows/286
 
+{% raw %}
+
 	Article: Q38667
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.37,2.0,3.0
@@ -62,3 +64,5 @@ permalink: /kb/038/Q38667/
 	
 	=============================================================================
 	
+
+{% endraw %}

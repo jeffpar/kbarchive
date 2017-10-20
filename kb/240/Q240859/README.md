@@ -6,6 +6,8 @@ permalink: /kb/240/Q240859/
 
 ## Q240859: XADM: Admin.exe Stops Responding when Connected over Internet
 
+{% raw %}
+
 	Article: Q240859
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/240/Q240859/
 	
 	=============================================================================
 	
+
+{% endraw %}

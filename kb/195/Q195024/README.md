@@ -6,6 +6,8 @@ permalink: /kb/195/Q195024/
 
 ## Q195024: INFO: Visual SourceSafe Creates a VSSVer.scc File
 
+{% raw %}
+
 	Article: Q195024
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -56,3 +58,5 @@ permalink: /kb/195/Q195024/
 	
 	=============================================================================
 	
+
+{% endraw %}

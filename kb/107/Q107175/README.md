@@ -6,6 +6,8 @@ permalink: /kb/107/Q107175/
 
 ## Q107175: Flight Simulator Err Msg: Com Frequencies Are from 118.0000...
 
+{% raw %}
+
 	Article: Q107175
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -56,3 +58,5 @@ permalink: /kb/107/Q107175/
 	
 	=============================================================================
 	
+
+{% endraw %}

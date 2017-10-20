@@ -6,6 +6,8 @@ permalink: /kb/178/Q178531/
 
 ## Q178531: XADM: Generating the Calls.out File
 
+{% raw %}
+
 	Article: Q178531
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -83,3 +85,5 @@ permalink: /kb/178/Q178531/
 	
 	=============================================================================
 	
+
+{% endraw %}

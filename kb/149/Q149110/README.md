@@ -6,6 +6,8 @@ permalink: /kb/149/Q149110/
 
 ## Q149110: Cannot Start Windows 95 After Using the SYS Command
 
+{% raw %}
+
 	Article: Q149110
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -135,3 +137,5 @@ permalink: /kb/149/Q149110/
 	
 	=============================================================================
 	
+
+{% endraw %}

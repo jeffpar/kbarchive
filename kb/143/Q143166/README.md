@@ -6,6 +6,8 @@ permalink: /kb/143/Q143166/
 
 ## Q143166: Windows NT 3.51 SP4 Allows Extended Characters in 8.3 File Names
 
+{% raw %}
+
 	Article: Q143166
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -77,3 +79,5 @@ permalink: /kb/143/Q143166/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131902/
 
 ## Q131902: Printer Browse Thread May Cause Extensive Network Traffic
 
+{% raw %}
+
 	Article: Q131902
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -73,3 +75,5 @@ permalink: /kb/131/Q131902/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173557/
 
 ## Q173557: XADM: No Messages Generated when 2 Clients Modify the Same Rule
 
+{% raw %}
+
 	Article: Q173557
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -44,3 +46,5 @@ permalink: /kb/173/Q173557/
 	
 	=============================================================================
 	
+
+{% endraw %}

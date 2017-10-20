@@ -6,6 +6,8 @@ permalink: /kb/176/Q176575/
 
 ## Q176575: How to Log On to a Windows NT Domain Using a PPTP Connection
 
+{% raw %}
+
 	Article: Q176575
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -178,3 +180,5 @@ permalink: /kb/176/Q176575/
 	
 	=============================================================================
 	
+
+{% endraw %}

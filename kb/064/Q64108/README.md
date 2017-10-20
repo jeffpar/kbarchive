@@ -6,6 +6,8 @@ permalink: /kb/064/Q64108/
 
 ## Q64108: GET from COM1 or COM2 Fails to Get Correct Data -- Use INPUT&#36;
 
+{% raw %}
+
 	Article: Q64108
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -45,3 +47,5 @@ permalink: /kb/064/Q64108/
 	In QuickBASIC 4.50, both the GET and INPUT$ statements return the
 	correct values, but in BASIC PDS 7.00 and 7.10, only INPUT$ returns
 	the correct data while GET returns meaningless data.
+
+{% endraw %}

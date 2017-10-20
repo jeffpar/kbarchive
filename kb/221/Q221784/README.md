@@ -6,6 +6,8 @@ permalink: /kb/221/Q221784/
 
 ## Q221784: Screen Saver Grace Period Bypasses Password Protection
 
+{% raw %}
+
 	Article: Q221784
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -80,3 +82,5 @@ permalink: /kb/221/Q221784/
 	
 	=============================================================================
 	
+
+{% endraw %}

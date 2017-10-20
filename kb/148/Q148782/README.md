@@ -6,6 +6,8 @@ permalink: /kb/148/Q148782/
 
 ## Q148782: Err Msg: &quot;Modem Is Busy or Cannot Be Found&quot; Using Aptiva Guide
 
+{% raw %}
+
 	Article: Q148782
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5,2.51,2.52,2.6
@@ -58,3 +60,5 @@ permalink: /kb/148/Q148782/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134605/
 
 ## Q134605: Doom 2 Loses IRQ Setting When Closed with CTRL+ALT+DELETE
 
+{% raw %}
+
 	Article: Q134605
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/134/Q134605/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129819/
 
 ## Q129819: GPS: Car Bounces or Drifts on Map
 
+{% raw %}
+
 	Article: Q129819
 	Product(s): Microsoft Automap
 	Version(s): 1.0,1.01,3.0,3.02,3.04,3.05,4.0,5.0
@@ -81,3 +83,5 @@ permalink: /kb/129/Q129819/
 	
 	=============================================================================
 	
+
+{% endraw %}

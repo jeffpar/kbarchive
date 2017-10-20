@@ -6,6 +6,8 @@ permalink: /kb/150/Q150411/
 
 ## Q150411: Macintosh Bookshelf 1996-97: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q150411
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -179,3 +181,5 @@ permalink: /kb/150/Q150411/
 	
 	=============================================================================
 	
+
+{% endraw %}

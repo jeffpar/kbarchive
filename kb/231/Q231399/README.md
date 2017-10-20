@@ -6,6 +6,8 @@ permalink: /kb/231/Q231399/
 
 ## Q231399: SMS:SMSCliToknAcct&amp; and/or SMSCliSvcAcct Accounts Locked Out
 
+{% raw %}
+
 	Article: Q231399
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -151,3 +153,5 @@ permalink: /kb/231/Q231399/
 	
 	=============================================================================
 	
+
+{% endraw %}

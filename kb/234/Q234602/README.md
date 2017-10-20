@@ -6,6 +6,8 @@ permalink: /kb/234/Q234602/
 
 ## Q234602: FIX: /Og Generates Bad Code for a Compare/Branch
 
+{% raw %}
+
 	Article: Q234602
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -255,3 +257,5 @@ permalink: /kb/234/Q234602/
 	
 	=============================================================================
 	
+
+{% endraw %}

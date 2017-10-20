@@ -6,6 +6,8 @@ permalink: /kb/192/Q192440/
 
 ## Q192440: XADM: Backup Stops Because of Communications Error
 
+{% raw %}
+
 	Article: Q192440
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -102,3 +104,5 @@ permalink: /kb/192/Q192440/
 	
 	=============================================================================
 	
+
+{% endraw %}

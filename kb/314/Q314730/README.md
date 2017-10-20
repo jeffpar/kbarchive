@@ -6,6 +6,8 @@ permalink: /kb/314/Q314730/
 
 ## Q314730: Access Violation in SNMP Running GETNEXT Queries Against OSPF
 
+{% raw %}
+
 	Article: Q314730
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -93,3 +95,5 @@ permalink: /kb/314/Q314730/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192518/
 
 ## Q192518: PRB: SQL OLE DB Provider Fails When Selected in OLE DB Wizard
 
+{% raw %}
+
 	Article: Q192518
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -80,3 +82,5 @@ permalink: /kb/192/Q192518/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244378/
 
 ## Q244378: System Cleanup After a Parallel Installation of Windows NT 4.0
 
+{% raw %}
+
 	Article: Q244378
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -110,3 +112,5 @@ permalink: /kb/244/Q244378/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232968/
 
 ## Q232968: How to Automate Terminal Server Client Configuration
 
+{% raw %}
+
 	Article: Q232968
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -103,3 +105,5 @@ permalink: /kb/232/Q232968/
 	
 	=============================================================================
 	
+
+{% endraw %}

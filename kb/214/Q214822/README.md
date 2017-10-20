@@ -6,6 +6,8 @@ permalink: /kb/214/Q214822/
 
 ## Q214822: XFOR: Lotus cc:Mail Source Extractor Fails with Event 8030, 8124
 
+{% raw %}
+
 	Article: Q214822
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -114,3 +116,5 @@ permalink: /kb/214/Q214822/
 	
 	=============================================================================
 	
+
+{% endraw %}

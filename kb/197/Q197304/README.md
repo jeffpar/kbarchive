@@ -6,6 +6,8 @@ permalink: /kb/197/Q197304/
 
 ## Q197304: Combat Flight Simulator: Cannot Enable Auto Rudder Feature
 
+{% raw %}
+
 	Article: Q197304
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -101,3 +103,5 @@ permalink: /kb/197/Q197304/
 	
 	=============================================================================
 	
+
+{% endraw %}

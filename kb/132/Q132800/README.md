@@ -6,6 +6,8 @@ permalink: /kb/132/Q132800/
 
 ## Q132800: Rebel Assault 1.4 Reports Protected Mode Already in Use
 
+{% raw %}
+
 	Article: Q132800
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/132/Q132800/
 	
 	=============================================================================
 	
+
+{% endraw %}

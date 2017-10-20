@@ -6,6 +6,8 @@ permalink: /kb/143/Q143408/
 
 ## Q143408: FIX: Assertion Failure After Using CDaoWorkspace::Create()
 
+{% raw %}
+
 	Article: Q143408
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1; :
@@ -79,3 +81,5 @@ permalink: /kb/143/Q143408/
 	
 	=============================================================================
 	
+
+{% endraw %}

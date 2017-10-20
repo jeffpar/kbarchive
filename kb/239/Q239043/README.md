@@ -6,6 +6,8 @@ permalink: /kb/239/Q239043/
 
 ## Q239043: IIS: &quot;Unable to Enumerate Files and Directories&quot;
 
+{% raw %}
+
 	Article: Q239043
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -72,3 +74,5 @@ permalink: /kb/239/Q239043/
 	
 	=============================================================================
 	
+
+{% endraw %}

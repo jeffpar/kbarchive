@@ -6,6 +6,8 @@ permalink: /kb/258/Q258006/
 
 ## Q258006: XADM: Free/Busy Resource Info Disappears when Auto-Accept Runs
 
+{% raw %}
+
 	Article: Q258006
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -65,3 +67,5 @@ permalink: /kb/258/Q258006/
 	
 	=============================================================================
 	
+
+{% endraw %}

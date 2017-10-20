@@ -6,6 +6,8 @@ permalink: /kb/150/Q150918/
 
 ## Q150918: FPNW Event ID 2630 Unable to Access PDC for Write
 
+{% raw %}
+
 	Article: Q150918
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -71,3 +73,5 @@ permalink: /kb/150/Q150918/
 	
 	=============================================================================
 	
+
+{% endraw %}

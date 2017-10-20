@@ -6,6 +6,8 @@ permalink: /kb/177/Q177309/
 
 ## Q177309: XADM: Setup Cannot Initialize the Key Management Database
 
+{% raw %}
+
 	Article: Q177309
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -55,3 +57,5 @@ permalink: /kb/177/Q177309/
 	
 	=============================================================================
 	
+
+{% endraw %}

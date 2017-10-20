@@ -6,6 +6,8 @@ permalink: /kb/293/Q293288/
 
 ## Q293288: XFOR: Malformed SMTP Messages in the Internet Mail Service
 
+{% raw %}
+
 	Article: Q293288
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -141,3 +143,5 @@ permalink: /kb/293/Q293288/
 	
 	=============================================================================
 	
+
+{% endraw %}

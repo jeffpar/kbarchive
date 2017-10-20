@@ -6,6 +6,8 @@ permalink: /kb/253/Q253613/
 
 ## Q253613: DOC: Test Article for Keywords
 
+{% raw %}
+
 	Article: Q253613
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -57,3 +59,5 @@ permalink: /kb/253/Q253613/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122051/
 
 ## Q122051: How Windows 95 Performs a Safe-Mode Start
 
+{% raw %}
+
 	Article: Q122051
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -117,3 +119,5 @@ permalink: /kb/122/Q122051/
 	
 	=============================================================================
 	
+
+{% endraw %}

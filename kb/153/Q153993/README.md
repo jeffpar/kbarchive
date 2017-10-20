@@ -6,6 +6,8 @@ permalink: /kb/153/Q153993/
 
 ## Q153993: Windows NT May Cache Data Even if Write-through Flag is Set
 
+{% raw %}
+
 	Article: Q153993
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -55,3 +57,5 @@ permalink: /kb/153/Q153993/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196977/
 
 ## Q196977: Virtual Globe 99: Menu Bar Items Are Truncated or Overlap
 
+{% raw %}
+
 	Article: Q196977
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/196/Q196977/
 	
 	=============================================================================
 	
+
+{% endraw %}

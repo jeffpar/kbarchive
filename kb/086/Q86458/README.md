@@ -6,6 +6,8 @@ permalink: /kb/086/Q86458/
 
 ## Q86458: Central Point Anti-Virus Becomes the Active Application
 
+{% raw %}
+
 	Article: Q86458
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -37,3 +39,5 @@ permalink: /kb/086/Q86458/
 	
 	=============================================================================
 	
+
+{% endraw %}

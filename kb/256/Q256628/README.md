@@ -6,6 +6,8 @@ permalink: /kb/256/Q256628/
 
 ## Q256628: How to Install Clustering on a SCSI IBM Server
 
+{% raw %}
+
 	Article: Q256628
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -207,3 +209,5 @@ permalink: /kb/256/Q256628/
 	
 	=============================================================================
 	
+
+{% endraw %}

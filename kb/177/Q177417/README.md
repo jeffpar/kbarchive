@@ -6,6 +6,8 @@ permalink: /kb/177/Q177417/
 
 ## Q177417: XFOR: Could Not Delete an MS Mail Postoffice Connection
 
+{% raw %}
+
 	Article: Q177417
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/177/Q177417/
 	
 	=============================================================================
 	
+
+{% endraw %}

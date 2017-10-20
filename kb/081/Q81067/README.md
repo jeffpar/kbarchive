@@ -6,6 +6,8 @@ permalink: /kb/081/Q81067/
 
 ## Q81067: Features of LOG and Time/Date Command in Notepad
 
+{% raw %}
+
 	Article: Q81067
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/081/Q81067/
 	
 	=============================================================================
 	
+
+{% endraw %}

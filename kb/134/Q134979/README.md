@@ -6,6 +6,8 @@ permalink: /kb/134/Q134979/
 
 ## Q134979: PRB: Last Line in a Method Doesn't Update Variables in Debug
 
+{% raw %}
+
 	Article: Q134979
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/134/Q134979/
 	
 	=============================================================================
 	
+
+{% endraw %}

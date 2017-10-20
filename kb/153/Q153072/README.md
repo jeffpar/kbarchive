@@ -6,6 +6,8 @@ permalink: /kb/153/Q153072/
 
 ## Q153072: Leases Retained in DHCP Database For One Day After Expiration
 
+{% raw %}
+
 	Article: Q153072
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -45,3 +47,5 @@ permalink: /kb/153/Q153072/
 	
 	=============================================================================
 	
+
+{% endraw %}

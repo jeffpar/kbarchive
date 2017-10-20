@@ -6,6 +6,8 @@ permalink: /kb/152/Q152232/
 
 ## Q152232: Backup Database Option Grayed When Selecting Remote WINS Server
 
+{% raw %}
+
 	Article: Q152232
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -48,3 +50,5 @@ permalink: /kb/152/Q152232/
 	
 	=============================================================================
 	
+
+{% endraw %}

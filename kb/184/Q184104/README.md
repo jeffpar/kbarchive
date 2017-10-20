@@ -6,6 +6,8 @@ permalink: /kb/184/Q184104/
 
 ## Q184104: XCON: RTF Lost After Certain Number of Replies
 
+{% raw %}
+
 	Article: Q184104
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -66,3 +68,5 @@ permalink: /kb/184/Q184104/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/227/Q227225/
 
 ## Q227225: WD97: TOC Shows Backslash Instead of Quotation Marks
 
+{% raw %}
+
 	Article: Q227225
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/227/Q227225/
 	
 	=============================================================================
 	
+
+{% endraw %}

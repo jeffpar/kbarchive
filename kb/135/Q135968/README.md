@@ -6,6 +6,8 @@ permalink: /kb/135/Q135968/
 
 ## Q135968: Changing the Destination Folder During MS Plus! Setup
 
+{% raw %}
+
 	Article: Q135968
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/135/Q135968/
 	
 	=============================================================================
 	
+
+{% endraw %}

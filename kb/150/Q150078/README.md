@@ -6,6 +6,8 @@ permalink: /kb/150/Q150078/
 
 ## Q150078: MIFWIN Does Not Open Form Specified
 
+{% raw %}
+
 	Article: Q150078
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -58,3 +60,5 @@ permalink: /kb/150/Q150078/
 	
 	=============================================================================
 	
+
+{% endraw %}

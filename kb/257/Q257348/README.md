@@ -6,6 +6,8 @@ permalink: /kb/257/Q257348/
 
 ## Q257348: XCON: 2026 and 3016 Warnings During Periods of High Server Use
 
+{% raw %}
+
 	Article: Q257348
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -95,3 +97,5 @@ permalink: /kb/257/Q257348/
 	
 	=============================================================================
 	
+
+{% endraw %}

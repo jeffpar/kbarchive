@@ -6,6 +6,8 @@ permalink: /kb/172/Q172345/
 
 ## Q172345: WD97: Inserted Word Document Object Loses Header/Footer
 
+{% raw %}
+
 	Article: Q172345
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -127,3 +129,5 @@ permalink: /kb/172/Q172345/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/079/Q79533/
 
 ## Q79533: Upgrading MS-DOS 5.0 Over Stacker with STACDOS5.BAT
 
+{% raw %}
+
 	Article: Q79533
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -63,3 +65,5 @@ permalink: /kb/079/Q79533/
 	
 	=============================================================================
 	
+
+{% endraw %}

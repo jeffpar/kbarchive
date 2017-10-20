@@ -6,6 +6,8 @@ permalink: /kb/235/Q235602/
 
 ## Q235602: Client Computers Report Problems Connecting to Server
 
+{% raw %}
+
 	Article: Q235602
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -191,3 +193,5 @@ permalink: /kb/235/Q235602/
 	
 	=============================================================================
 	
+
+{% endraw %}

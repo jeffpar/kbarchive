@@ -6,6 +6,8 @@ permalink: /kb/268/Q268343/
 
 ## Q268343: Umdhtools.exe: How to Use Umdh.exe to Find Memory Leaks
 
+{% raw %}
+
 	Article: Q268343
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -556,3 +558,5 @@ permalink: /kb/268/Q268343/
 	
 	=============================================================================
 	
+
+{% endraw %}

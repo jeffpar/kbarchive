@@ -6,6 +6,8 @@ permalink: /kb/104/Q104192/
 
 ## Q104192: MS-DOS 6.0 File List With Expanded File Names/Sizes
 
+{% raw %}
+
 	Article: Q104192
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -218,3 +220,5 @@ permalink: /kb/104/Q104192/
 	
 	=============================================================================
 	
+
+{% endraw %}

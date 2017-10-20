@@ -6,6 +6,8 @@ permalink: /kb/298/Q298940/
 
 ## Q298940: Err Msg: Won't Route Until the Admin Installs Handler
 
+{% raw %}
+
 	Article: Q298940
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -65,3 +67,5 @@ permalink: /kb/298/Q298940/
 	
 	=============================================================================
 	
+
+{% endraw %}

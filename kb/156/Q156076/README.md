@@ -6,6 +6,8 @@ permalink: /kb/156/Q156076/
 
 ## Q156076: BUG: WWWQuote Sample Generates Error Message
 
+{% raw %}
+
 	Article: Q156076
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -85,3 +87,5 @@ permalink: /kb/156/Q156076/
 	
 	=============================================================================
 	
+
+{% endraw %}

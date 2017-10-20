@@ -6,6 +6,8 @@ permalink: /kb/150/Q150025/
 
 ## Q150025: Encarta: MPEG Video Errors and Problems
 
+{% raw %}
+
 	Article: Q150025
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/150/Q150025/
 	
 	=============================================================================
 	
+
+{% endraw %}

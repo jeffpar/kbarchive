@@ -6,6 +6,8 @@ permalink: /kb/255/Q255255/
 
 ## Q255255: XFOR: Error with Calendar Connector for Lotus Notes on AS&#92;400
 
+{% raw %}
+
 	Article: Q255255
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -85,3 +87,5 @@ permalink: /kb/255/Q255255/
 	
 	=============================================================================
 	
+
+{% endraw %}

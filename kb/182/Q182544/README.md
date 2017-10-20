@@ -6,6 +6,8 @@ permalink: /kb/182/Q182544/
 
 ## Q182544: Memory Leaks, Database Corruption, Event Logging
 
+{% raw %}
+
 	Article: Q182544
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -137,3 +139,5 @@ permalink: /kb/182/Q182544/
 	
 	=============================================================================
 	
+
+{% endraw %}

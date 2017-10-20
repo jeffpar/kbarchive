@@ -6,6 +6,8 @@ permalink: /kb/129/Q129130/
 
 ## Q129130: Services for Macintosh and Preexisting Novell Appletalk Zones
 
+{% raw %}
+
 	Article: Q129130
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -43,3 +45,5 @@ permalink: /kb/129/Q129130/
 	
 	=============================================================================
 	
+
+{% endraw %}

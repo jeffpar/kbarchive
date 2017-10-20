@@ -6,6 +6,8 @@ permalink: /kb/225/Q225068/
 
 ## Q225068: AOE: How to Place Natural Resources Using Scenario Builder
 
+{% raw %}
+
 	Article: Q225068
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -60,3 +62,5 @@ permalink: /kb/225/Q225068/
 	
 	=============================================================================
 	
+
+{% endraw %}

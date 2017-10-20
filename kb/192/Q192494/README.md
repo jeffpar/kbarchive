@@ -6,6 +6,8 @@ permalink: /kb/192/Q192494/
 
 ## Q192494: SMS: Netspeed.dat File Is Compressible
 
+{% raw %}
+
 	Article: Q192494
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -109,3 +111,5 @@ permalink: /kb/192/Q192494/
 	
 	=============================================================================
 	
+
+{% endraw %}

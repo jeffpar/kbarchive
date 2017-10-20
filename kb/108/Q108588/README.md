@@ -6,6 +6,8 @@ permalink: /kb/108/Q108588/
 
 ## Q108588: FIX: ID_APP_EXIT Used for a Button Will Exit App Studio
 
+{% raw %}
+
 	Article: Q108588
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/108/Q108588/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172273/
 
 ## Q172273: HOWTO:Constants in OpenProcess API dsDesiredAccess Parameter
 
+{% raw %}
+
 	Article: Q172273
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0, 5.0
@@ -101,3 +103,5 @@ permalink: /kb/172/Q172273/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177917/
 
 ## Q177917: Initializing a DLL Using DLLMain Optional Entry Point
 
+{% raw %}
+
 	Article: Q177917
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/177/Q177917/
 	
 	=============================================================================
 	
+
+{% endraw %}

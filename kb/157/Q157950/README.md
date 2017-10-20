@@ -6,6 +6,8 @@ permalink: /kb/157/Q157950/
 
 ## Q157950: INFO: STL Sample for Trigonometry (sin, cos, tan, etc.) Function
 
+{% raw %}
+
 	Article: Q157950
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -337,3 +339,5 @@ permalink: /kb/157/Q157950/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159108/
 
 ## Q159108: SMP Full Duplex Adapter Configuration May Cause a Blue Screen
 
+{% raw %}
+
 	Article: Q159108
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/159/Q159108/
 	
 	=============================================================================
 	
+
+{% endraw %}

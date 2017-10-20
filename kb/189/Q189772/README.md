@@ -6,6 +6,8 @@ permalink: /kb/189/Q189772/
 
 ## Q189772: FIX: GETPEM() Function Does Not Return the Correct ParentClass
 
+{% raw %}
+
 	Article: Q189772
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -89,3 +91,5 @@ permalink: /kb/189/Q189772/
 	
 	=============================================================================
 	
+
+{% endraw %}

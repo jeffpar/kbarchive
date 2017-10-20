@@ -6,6 +6,8 @@ permalink: /kb/031/Q31491/
 
 ## Q31491: Parentheses Matching in Microsoft Editor; Arg Meta PBal
 
+{% raw %}
+
 	Article: Q31491
 	Product(s): See article
 	Version(s): 1.00
@@ -33,3 +35,5 @@ permalink: /kb/031/Q31491/
 	
 	3. Arg Meta Pbal: Performs similarly to Arg Pbal except that the
 	   file is not updated.
+
+{% endraw %}

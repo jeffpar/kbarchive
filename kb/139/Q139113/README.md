@@ -6,6 +6,8 @@ permalink: /kb/139/Q139113/
 
 ## Q139113: SNA Server Event 38, Qualifier 0004 and 0005 Not Documented
 
+{% raw %}
+
 	Article: Q139113
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -129,3 +131,5 @@ permalink: /kb/139/Q139113/
 	
 	=============================================================================
 	
+
+{% endraw %}

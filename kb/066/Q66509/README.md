@@ -6,6 +6,8 @@ permalink: /kb/066/Q66509/
 
 ## Q66509: Mac DOS: Using AppleTalk and Novell Cards on Same Workstation
 
+{% raw %}
+
 	Article: Q66509
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.37,2.0,3.0
@@ -64,3 +66,5 @@ permalink: /kb/066/Q66509/
 	
 	=============================================================================
 	
+
+{% endraw %}

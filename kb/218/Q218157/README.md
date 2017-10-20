@@ -6,6 +6,8 @@ permalink: /kb/218/Q218157/
 
 ## Q218157: Drwtsn32.exe May Fail to Handle an Abnormal Termination Event
 
+{% raw %}
+
 	Article: Q218157
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/218/Q218157/
 	
 	=============================================================================
 	
+
+{% endraw %}

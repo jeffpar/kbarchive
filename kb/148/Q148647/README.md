@@ -6,6 +6,8 @@ permalink: /kb/148/Q148647/
 
 ## Q148647: Adding Unlisted Network Card Vendor ID to Network Monitor
 
+{% raw %}
+
 	Article: Q148647
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -60,3 +62,5 @@ permalink: /kb/148/Q148647/
 	
 	=============================================================================
 	
+
+{% endraw %}

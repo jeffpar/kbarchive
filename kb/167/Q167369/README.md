@@ -6,6 +6,8 @@ permalink: /kb/167/Q167369/
 
 ## Q167369: WD97: Cannot Print After Canceling Using HPDJ820CXi Driver
 
+{% raw %}
+
 	Article: Q167369
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -111,3 +113,5 @@ permalink: /kb/167/Q167369/
 	
 	=============================================================================
 	
+
+{% endraw %}

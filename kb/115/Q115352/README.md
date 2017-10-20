@@ -6,6 +6,8 @@ permalink: /kb/115/Q115352/
 
 ## Q115352: X400: Invalid Routing Entry Syntax Causes PANIC Error, Exit
 
+{% raw %}
+
 	Article: Q115352
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -64,3 +66,5 @@ permalink: /kb/115/Q115352/
 	
 	=============================================================================
 	
+
+{% endraw %}

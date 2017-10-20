@@ -6,6 +6,8 @@ permalink: /kb/197/Q197861/
 
 ## Q197861: ADOCtl.Exe Demonstrates Active Documents, RDS and ADO
 
+{% raw %}
+
 	Article: Q197861
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.1 SP2,2.5,2.6,6.0
@@ -178,3 +180,5 @@ permalink: /kb/197/Q197861/
 	
 	=============================================================================
 	
+
+{% endraw %}

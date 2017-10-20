@@ -6,6 +6,8 @@ permalink: /kb/191/Q191755/
 
 ## Q191755: MCM: Program Is Minimized When You Click Options or Multiplayer
 
+{% raw %}
+
 	Article: Q191755
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/191/Q191755/
 	
 	=============================================================================
 	
+
+{% endraw %}

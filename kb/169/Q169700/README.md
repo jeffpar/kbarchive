@@ -6,6 +6,8 @@ permalink: /kb/169/Q169700/
 
 ## Q169700: XADM: Exception Error Receiving Message from PROFS/OV Connector
 
+{% raw %}
+
 	Article: Q169700
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -55,3 +57,5 @@ permalink: /kb/169/Q169700/
 	
 	=============================================================================
 	
+
+{% endraw %}

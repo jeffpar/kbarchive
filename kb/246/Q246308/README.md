@@ -6,6 +6,8 @@ permalink: /kb/246/Q246308/
 
 ## Q246308: Win32 Back Ups on Interix
 
+{% raw %}
+
 	Article: Q246308
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2.1,2.2.2,2.2.3,2.2.4
@@ -48,3 +50,5 @@ permalink: /kb/246/Q246308/
 	
 	=============================================================================
 	
+
+{% endraw %}

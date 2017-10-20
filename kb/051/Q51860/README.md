@@ -6,6 +6,8 @@ permalink: /kb/051/Q51860/
 
 ## Q51860: How to Print VGA SCREEN 13 Image to Epson Printer
 
+{% raw %}
+
 	Article: Q51860
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -191,3 +193,5 @@ permalink: /kb/051/Q51860/
 	     PUT #1, , line$      ' Send formfeed (page eject)
 	     CLOSE 1              ' All done
 	   END SUB
+
+{% endraw %}

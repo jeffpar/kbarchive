@@ -6,6 +6,8 @@ permalink: /kb/021/Q21790/
 
 ## Q21790: Compatibility with AT&amp;T PC 6300: No SCREEN 100 or SCREEN B
 
+{% raw %}
+
 	Article: Q21790
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -49,3 +51,5 @@ permalink: /kb/021/Q21790/
 	"COM2:") produce errors such as "Device not available" in QuickBASIC
 	Versions 1.00, 1.01, and 1.02. QuickBASIC Versions 2.x and later have
 	had few reports of problems with communications on the AT&T PC 6300.
+
+{% endraw %}

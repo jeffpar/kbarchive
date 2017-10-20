@@ -6,6 +6,8 @@ permalink: /kb/123/Q123357/
 
 ## Q123357: PRO0008E Invalid Decimal Digit in PROTOCOL.INI File
 
+{% raw %}
+
 	Article: Q123357
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0,3.11
@@ -36,3 +38,5 @@ permalink: /kb/123/Q123357/
 	
 	=============================================================================
 	
+
+{% endraw %}

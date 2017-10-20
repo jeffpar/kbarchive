@@ -6,6 +6,8 @@ permalink: /kb/120/Q120066/
 
 ## Q120066: BUG: ML Uses DGROUP in Flat Model and Generates A2006
 
+{% raw %}
+
 	Article: Q120066
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.11
@@ -63,3 +65,5 @@ permalink: /kb/120/Q120066/
 	
 	=============================================================================
 	
+
+{% endraw %}

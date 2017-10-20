@@ -6,6 +6,8 @@ permalink: /kb/134/Q134429/
 
 ## Q134429: Cannot Print to WGAO for MS-DOS-Based Computer
 
+{% raw %}
+
 	Article: Q134429
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/134/Q134429/
 	
 	=============================================================================
 	
+
+{% endraw %}

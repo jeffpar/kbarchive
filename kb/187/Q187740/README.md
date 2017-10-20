@@ -6,6 +6,8 @@ permalink: /kb/187/Q187740/
 
 ## Q187740: PRB: UserControl Resize Event Fails with MoveWindow API
 
+{% raw %}
+
 	Article: Q187740
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/187/Q187740/
 	
 	=============================================================================
 	
+
+{% endraw %}

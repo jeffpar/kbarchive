@@ -6,6 +6,8 @@ permalink: /kb/171/Q171120/
 
 ## Q171120: Useful Links to HCL Storage Device Configuration Information
 
+{% raw %}
+
 	Article: Q171120
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -71,3 +73,5 @@ permalink: /kb/171/Q171120/
 	
 	=============================================================================
 	
+
+{% endraw %}

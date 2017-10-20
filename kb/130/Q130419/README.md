@@ -6,6 +6,8 @@ permalink: /kb/130/Q130419/
 
 ## Q130419: Service for Macintosh Print Monitor Does Not Recognize Printers
 
+{% raw %}
+
 	Article: Q130419
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -43,3 +45,5 @@ permalink: /kb/130/Q130419/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/065/Q65901/
 
 ## Q65901: Cannot Delete Empty Subdirectory on Novell Server
 
+{% raw %}
+
 	Article: Q65901
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/065/Q65901/
 	
 	=============================================================================
 	
+
+{% endraw %}

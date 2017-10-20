@@ -6,6 +6,8 @@ permalink: /kb/194/Q194678/
 
 ## Q194678: HOWTO: SQL Server Identity, OLE DB Templates and OLE DB for ODBC
 
+{% raw %}
+
 	Article: Q194678
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.5; winnt:6.0
@@ -90,3 +92,5 @@ permalink: /kb/194/Q194678/
 	
 	=============================================================================
 	
+
+{% endraw %}

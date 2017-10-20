@@ -6,6 +6,8 @@ permalink: /kb/292/Q292548/
 
 ## Q292548: Terminal Services-Specific Programs Stop Responding
 
+{% raw %}
+
 	Article: Q292548
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,2000 SP2
@@ -105,3 +107,5 @@ permalink: /kb/292/Q292548/
 	
 	=============================================================================
 	
+
+{% endraw %}

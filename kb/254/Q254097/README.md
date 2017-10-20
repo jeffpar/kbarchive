@@ -6,6 +6,8 @@ permalink: /kb/254/Q254097/
 
 ## Q254097: XCLN: Resetting Toolbox to Default Controls and Layout
 
+{% raw %}
+
 	Article: Q254097
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; :
@@ -126,3 +128,5 @@ permalink: /kb/254/Q254097/
 	
 	=============================================================================
 	
+
+{% endraw %}

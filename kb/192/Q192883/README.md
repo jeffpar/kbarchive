@@ -6,6 +6,8 @@ permalink: /kb/192/Q192883/
 
 ## Q192883: HOWTO: Modify the VC++ COMPLEXDB Sample to Work on a Web Page
 
+{% raw %}
+
 	Article: Q192883
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -161,3 +163,5 @@ permalink: /kb/192/Q192883/
 	
 	=============================================================================
 	
+
+{% endraw %}

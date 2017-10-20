@@ -6,6 +6,8 @@ permalink: /kb/251/Q251219/
 
 ## Q251219: IIS Reserves the &quot;.map&quot; File Extension for Image Maps
 
+{% raw %}
+
 	Article: Q251219
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -75,3 +77,5 @@ permalink: /kb/251/Q251219/
 	
 	=============================================================================
 	
+
+{% endraw %}

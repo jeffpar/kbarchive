@@ -6,6 +6,8 @@ permalink: /kb/075/Q75838/
 
 ## Q75838: Setup Changes Mouse Type and Port in SYSTEM.INI
 
+{% raw %}
+
 	Article: Q75838
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -57,3 +59,5 @@ permalink: /kb/075/Q75838/
 	
 	=============================================================================
 	
+
+{% endraw %}

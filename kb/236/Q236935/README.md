@@ -6,6 +6,8 @@ permalink: /kb/236/Q236935/
 
 ## Q236935: PRB: C1001 Internal Compiler Error After Installing VC++ SP3
 
+{% raw %}
+
 	Article: Q236935
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -95,3 +97,5 @@ permalink: /kb/236/Q236935/
 	
 	=============================================================================
 	
+
+{% endraw %}

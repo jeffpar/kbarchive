@@ -6,6 +6,8 @@ permalink: /kb/151/Q151384/
 
 ## Q151384: Fury3: Double-clicking Fury3 Twice Can Launch Two Instances
 
+{% raw %}
+
 	Article: Q151384
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/151/Q151384/
 	
 	=============================================================================
 	
+
+{% endraw %}

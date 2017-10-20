@@ -6,6 +6,8 @@ permalink: /kb/060/Q60607/
 
 ## Q60607: On New Build with No Changes, QC Environment Changes Size
 
+{% raw %}
+
 	Article: Q60607
 	Product(s): See article
 	Version(s): 2.00
@@ -29,3 +31,5 @@ permalink: /kb/060/Q60607/
 	the original value. It never seems to grow past the original amount.
 	Microsoft is researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

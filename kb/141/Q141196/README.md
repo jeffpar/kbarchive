@@ -6,6 +6,8 @@ permalink: /kb/141/Q141196/
 
 ## Q141196: Encarta 1995: Unable to Open Files from Media Gallery
 
+{% raw %}
+
 	Article: Q141196
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1995 edition
@@ -58,3 +60,5 @@ permalink: /kb/141/Q141196/
 	
 	=============================================================================
 	
+
+{% endraw %}

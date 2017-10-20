@@ -6,6 +6,8 @@ permalink: /kb/142/Q142221/
 
 ## Q142221: Mac Encarta: Error Msg Starting Word Processor
 
+{% raw %}
+
 	Article: Q142221
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/142/Q142221/
 	
 	=============================================================================
 	
+
+{% endraw %}

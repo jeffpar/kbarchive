@@ -6,6 +6,8 @@ permalink: /kb/155/Q155651/
 
 ## Q155651: Monster Truck Madness: Stuck in Arizona Rally Trap
 
+{% raw %}
+
 	Article: Q155651
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/155/Q155651/
 	
 	=============================================================================
 	
+
+{% endraw %}

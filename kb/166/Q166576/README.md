@@ -6,6 +6,8 @@ permalink: /kb/166/Q166576/
 
 ## Q166576: XFOR: GPF in Store.exe When Doing Fixed Width Font Conversion
 
+{% raw %}
+
 	Article: Q166576
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -48,3 +50,5 @@ permalink: /kb/166/Q166576/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58022/
 
 ## Q58022: QB.EXE Variable Is Wrongly Global If Name Same as COMMON Array
 
+{% raw %}
+
 	Article: Q58022
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -51,3 +53,5 @@ permalink: /kb/058/Q58022/
 	    PRINT "Test2 =  "; test2
 	    test = test2
 	END FUNCTION
+
+{% endraw %}

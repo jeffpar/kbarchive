@@ -6,6 +6,8 @@ permalink: /kb/131/Q131747/
 
 ## Q131747: Windows Sound System 2.0 Modified for WaveJammer Sound Card
 
+{% raw %}
+
 	Article: Q131747
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.00
@@ -48,3 +50,5 @@ permalink: /kb/131/Q131747/
 	
 	=============================================================================
 	
+
+{% endraw %}

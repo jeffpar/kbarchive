@@ -6,6 +6,8 @@ permalink: /kb/184/Q184959/
 
 ## Q184959: Golf 98/99: Setup Does Not Finish if You Use PC Tools Desktop
 
+{% raw %}
+
 	Article: Q184959
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/184/Q184959/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95021/
 
 ## Q95021: INFO: Connecting to Sybase SQL Server from ODBC Applications
 
+{% raw %}
+
 	Article: Q95021
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0,2.0,2.1,2.5,3.0,3.5,3.51; winnt:4.2x,6.0,6.5,7.0; :
@@ -308,3 +310,5 @@ permalink: /kb/095/Q95021/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/211/Q211226/
 
 ## Q211226: Error Message: This Game Only Works with Windows 95
 
+{% raw %}
+
 	Article: Q211226
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -43,3 +45,5 @@ permalink: /kb/211/Q211226/
 	
 	=============================================================================
 	
+
+{% endraw %}

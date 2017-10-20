@@ -6,6 +6,8 @@ permalink: /kb/130/Q130005/
 
 ## Q130005: HOWTO: Use a Custom Class to Encrypt Passwords
 
+{% raw %}
+
 	Article: Q130005
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -166,3 +168,5 @@ permalink: /kb/130/Q130005/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/044/Q44795/
 
 ## Q44795: CLEAR Causes &quot;Illegal Function Call&quot; after RETURN &lt;linelabel&gt;
 
+{% raw %}
+
 	Article: Q44795
 	Product(s): See article
 	Version(s): 4.50
@@ -63,3 +65,5 @@ permalink: /kb/044/Q44795/
 	   SUB test
 	   DO : LOOP          'Wait for F1 to be pressed
 	   END SUB
+
+{% endraw %}

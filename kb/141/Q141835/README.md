@@ -6,6 +6,8 @@ permalink: /kb/141/Q141835/
 
 ## Q141835: FIX: Visual FoxPro Doesn't Save File as Expected
 
+{% raw %}
+
 	Article: Q141835
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/141/Q141835/
 	
 	=============================================================================
 	
+
+{% endraw %}

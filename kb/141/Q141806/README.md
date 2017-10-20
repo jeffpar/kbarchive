@@ -6,6 +6,8 @@ permalink: /kb/141/Q141806/
 
 ## Q141806: FIX: Errors Previewing Customer Listing Report in Tastraders
 
+{% raw %}
+
 	Article: Q141806
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -75,3 +77,5 @@ permalink: /kb/141/Q141806/
 	
 	=============================================================================
 	
+
+{% endraw %}

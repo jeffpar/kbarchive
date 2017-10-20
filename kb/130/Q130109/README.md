@@ -6,6 +6,8 @@ permalink: /kb/130/Q130109/
 
 ## Q130109: Restart Causes Windows 95 to Hang with Micron Motherboard
 
+{% raw %}
+
 	Article: Q130109
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/130/Q130109/
 	
 	=============================================================================
 	
+
+{% endraw %}

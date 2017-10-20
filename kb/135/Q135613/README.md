@@ -6,6 +6,8 @@ permalink: /kb/135/Q135613/
 
 ## Q135613: FIX: Exiting Wizard-Generated Form Causes Several Errors
 
+{% raw %}
+
 	Article: Q135613
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -92,3 +94,5 @@ permalink: /kb/135/Q135613/
 	
 	=============================================================================
 	
+
+{% endraw %}

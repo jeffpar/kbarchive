@@ -6,6 +6,8 @@ permalink: /kb/255/Q255801/
 
 ## Q255801: How to Determine if HTTP Compression Is in Use
 
+{% raw %}
+
 	Article: Q255801
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -74,3 +76,5 @@ permalink: /kb/255/Q255801/
 	
 	=============================================================================
 	
+
+{% endraw %}

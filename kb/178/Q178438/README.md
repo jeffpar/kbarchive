@@ -6,6 +6,8 @@ permalink: /kb/178/Q178438/
 
 ## Q178438: Microsoft FrontPage 98 Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q178438
 	Product(s): Microsoft Press
 	Version(s): 
@@ -254,3 +256,5 @@ permalink: /kb/178/Q178438/
 	
 	=============================================================================
 	
+
+{% endraw %}

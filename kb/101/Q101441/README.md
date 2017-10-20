@@ -6,6 +6,8 @@ permalink: /kb/101/Q101441/
 
 ## Q101441: PRB: Importing MS Excel Spreadsheet Gives Field Names A, B, C
 
+{% raw %}
+
 	Article: Q101441
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -72,3 +74,5 @@ permalink: /kb/101/Q101441/
 	
 	=============================================================================
 	
+
+{% endraw %}

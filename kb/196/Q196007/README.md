@@ -6,6 +6,8 @@ permalink: /kb/196/Q196007/
 
 ## Q196007: WD97: TOC or Index Starts with No Number for Heading 1 Style
 
+{% raw %}
+
 	Article: Q196007
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/196/Q196007/
 	
 	=============================================================================
 	
+
+{% endraw %}

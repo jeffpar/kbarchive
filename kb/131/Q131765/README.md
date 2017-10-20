@@ -6,6 +6,8 @@ permalink: /kb/131/Q131765/
 
 ## Q131765: Clear Image Command Unavailable in Paint
 
+{% raw %}
+
 	Article: Q131765
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -45,3 +47,5 @@ permalink: /kb/131/Q131765/
 	
 	=============================================================================
 	
+
+{% endraw %}

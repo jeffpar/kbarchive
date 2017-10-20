@@ -6,6 +6,8 @@ permalink: /kb/190/Q190297/
 
 ## Q190297: XFOR: Connector for cc:Mail Doesn't Support Long File Names
 
+{% raw %}
+
 	Article: Q190297
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -52,3 +54,5 @@ permalink: /kb/190/Q190297/
 	
 	=============================================================================
 	
+
+{% endraw %}

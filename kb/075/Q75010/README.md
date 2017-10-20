@@ -6,6 +6,8 @@ permalink: /kb/075/Q75010/
 
 ## Q75010: Rich Text Format Subset Supported by Windows Help
 
+{% raw %}
+
 	Article: Q75010
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -153,3 +155,5 @@ permalink: /kb/075/Q75010/
 	
 	=============================================================================
 	
+
+{% endraw %}

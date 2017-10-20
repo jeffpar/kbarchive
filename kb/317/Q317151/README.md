@@ -6,6 +6,8 @@ permalink: /kb/317/Q317151/
 
 ## Q317151: Non-Paged Pool Memory Leak with Emulex Fibre SCSI Driver
 
+{% raw %}
+
 	Article: Q317151
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -116,3 +118,5 @@ permalink: /kb/317/Q317151/
 	
 	=============================================================================
 	
+
+{% endraw %}

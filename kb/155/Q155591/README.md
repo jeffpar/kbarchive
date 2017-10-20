@@ -6,6 +6,8 @@ permalink: /kb/155/Q155591/
 
 ## Q155591: BUG: Cannot Set Access Memo Field to NULL with Snapshots
 
+{% raw %}
+
 	Article: Q155591
 	Product(s): Microsoft C Compiler
 	Version(s): 1.50 1.51 1.52c
@@ -74,9 +76,9 @@ permalink: /kb/155/Q155591/
 	              }
 	          }
 	
-	          //{ {AFX_DATA_MAP(CMyView)
+	          //{{AFX_DATA_MAP(CMyView)
 	          ...
-	          //} }AFX_DATA_MAP
+	          //}}AFX_DATA_MAP
 	
 	          // Dialog --> Data Members
 	          if (pDX->m_bSaveAndValidate != 0)
@@ -97,3 +99,5 @@ permalink: /kb/155/Q155591/
 	
 	=============================================================================
 	
+
+{% endraw %}

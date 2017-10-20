@@ -6,6 +6,8 @@ permalink: /kb/169/Q169476/
 
 ## Q169476: SMS: Using RSERVICE Returns Error 203
 
+{% raw %}
+
 	Article: Q169476
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -59,3 +61,5 @@ permalink: /kb/169/Q169476/
 	
 	=============================================================================
 	
+
+{% endraw %}

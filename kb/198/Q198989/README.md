@@ -6,6 +6,8 @@ permalink: /kb/198/Q198989/
 
 ## Q198989: FIX: ATL Local Server Wizard-Generated Code Doesn't Call Term
 
+{% raw %}
+
 	Article: Q198989
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/198/Q198989/
 	
 	=============================================================================
 	
+
+{% endraw %}

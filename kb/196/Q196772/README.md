@@ -6,6 +6,8 @@ permalink: /kb/196/Q196772/
 
 ## Q196772: XADM: LDAP Clients Receive Extended Characters Instead of IA5
 
+{% raw %}
+
 	Article: Q196772
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -82,3 +84,5 @@ permalink: /kb/196/Q196772/
 	
 	=============================================================================
 	
+
+{% endraw %}

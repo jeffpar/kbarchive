@@ -6,6 +6,8 @@ permalink: /kb/162/Q162391/
 
 ## Q162391: WD97: Activewindow.Panes.Count Returns 1
 
+{% raw %}
+
 	Article: Q162391
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/162/Q162391/
 	
 	=============================================================================
 	
+
+{% endraw %}

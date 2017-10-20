@@ -6,6 +6,8 @@ permalink: /kb/254/Q254228/
 
 ## Q254228: Remote Control of Clients Does Not Work with Winsock2 with IP
 
+{% raw %}
+
 	Article: Q254228
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -178,3 +180,5 @@ permalink: /kb/254/Q254228/
 	
 	=============================================================================
 	
+
+{% endraw %}

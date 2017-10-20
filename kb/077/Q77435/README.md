@@ -6,6 +6,8 @@ permalink: /kb/077/Q77435/
 
 ## Q77435: Setup May Report Incorrect Swap File Size and Location
 
+{% raw %}
+
 	Article: Q77435
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/077/Q77435/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196980/
 
 ## Q196980: WD97: MS LineDraw and Wingdings Not Converted to WordPerfect 5.x
 
+{% raw %}
+
 	Article: Q196980
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -71,3 +73,5 @@ permalink: /kb/196/Q196980/
 	
 	=============================================================================
 	
+
+{% endraw %}

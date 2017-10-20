@@ -6,6 +6,8 @@ permalink: /kb/152/Q152231/
 
 ## Q152231: XFOR: How to Reset Exchange Server Dirsync Numbers
 
+{% raw %}
+
 	Article: Q152231
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -127,3 +129,5 @@ permalink: /kb/152/Q152231/
 	
 	=============================================================================
 	
+
+{% endraw %}

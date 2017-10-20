@@ -6,6 +6,8 @@ permalink: /kb/135/Q135063/
 
 ## Q135063: XCON: Changing MTA Conformance on X.400 Connectors Fails
 
+{% raw %}
+
 	Article: Q135063
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -56,3 +58,5 @@ permalink: /kb/135/Q135063/
 	
 	=============================================================================
 	
+
+{% endraw %}

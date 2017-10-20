@@ -6,6 +6,8 @@ permalink: /kb/164/Q164251/
 
 ## Q164251: FIX: Blank Field Type Causes Error in Table Wizard
 
+{% raw %}
+
 	Article: Q164251
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b
@@ -68,3 +70,5 @@ permalink: /kb/164/Q164251/
 	
 	=============================================================================
 	
+
+{% endraw %}

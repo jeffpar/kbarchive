@@ -6,6 +6,8 @@ permalink: /kb/169/Q169787/
 
 ## Q169787: WD97: Some Colors Missing from DIB Images w/ HP LaserJet Driver
 
+{% raw %}
+
 	Article: Q169787
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97; :
@@ -75,3 +77,5 @@ permalink: /kb/169/Q169787/
 	
 	=============================================================================
 	
+
+{% endraw %}

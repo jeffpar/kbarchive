@@ -6,6 +6,8 @@ permalink: /kb/128/Q128486/
 
 ## Q128486: BUG: Btrieve: Drop Table Does Not Remove Entry in SQLTables
 
+{% raw %}
+
 	Article: Q128486
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -72,3 +74,5 @@ permalink: /kb/128/Q128486/
 	
 	=============================================================================
 	
+
+{% endraw %}

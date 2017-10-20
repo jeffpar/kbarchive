@@ -6,6 +6,8 @@ permalink: /kb/091/Q91071/
 
 ## Q91071: PC WFW: Users Don't Appear in the GAL After Upgrade
 
+{% raw %}
+
 	Article: Q91071
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/091/Q91071/
 	
 	=============================================================================
 	
+
+{% endraw %}

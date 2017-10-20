@@ -6,6 +6,8 @@ permalink: /kb/197/Q197117/
 
 ## Q197117: INFO: Troubleshooting Application Wizard Error Messages
 
+{% raw %}
+
 	Article: Q197117
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/197/Q197117/
 	
 	=============================================================================
 	
+
+{% endraw %}

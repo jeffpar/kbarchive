@@ -6,6 +6,8 @@ permalink: /kb/166/Q166957/
 
 ## Q166957: WD97: Problems with Mail Merge Main Documents Saved as RTF
 
+{% raw %}
+
 	Article: Q166957
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -172,3 +174,5 @@ permalink: /kb/166/Q166957/
 	
 	=============================================================================
 	
+
+{% endraw %}

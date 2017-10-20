@@ -6,6 +6,8 @@ permalink: /kb/300/Q300103/
 
 ## Q300103: Testing Sign-in and Sign-out Process When Site Is in Test Mode
 
+{% raw %}
+
 	Article: Q300103
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -46,3 +48,5 @@ permalink: /kb/300/Q300103/
 	
 	=============================================================================
 	
+
+{% endraw %}

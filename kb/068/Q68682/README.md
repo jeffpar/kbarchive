@@ -6,6 +6,8 @@ permalink: /kb/068/Q68682/
 
 ## Q68682: Flt Sim: ENTER (Right Rudder) Not Working on Tandy 1000SL
 
+{% raw %}
+
 	Article: Q68682
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/068/Q68682/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159292/
 
 ## Q159292: XADM: &quot;&#36;&quot; in DDA Value Migrated Incorrectly in X.400 PAB Entry
 
+{% raw %}
+
 	Article: Q159292
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -128,3 +130,5 @@ permalink: /kb/159/Q159292/
 	
 	=============================================================================
 	
+
+{% endraw %}

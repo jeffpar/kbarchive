@@ -6,6 +6,8 @@ permalink: /kb/153/Q153478/
 
 ## Q153478: Unexpected Errors 0x89ff and 0x88ff with FPNW
 
+{% raw %}
+
 	Article: Q153478
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -60,3 +62,5 @@ permalink: /kb/153/Q153478/
 	
 	=============================================================================
 	
+
+{% endraw %}

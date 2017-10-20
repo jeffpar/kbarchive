@@ -6,6 +6,8 @@ permalink: /kb/066/Q66185/
 
 ## Q66185: Flight Simulator: Airport in the Sky in Tower and Track View
 
+{% raw %}
+
 	Article: Q66185
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/066/Q66185/
 	
 	=============================================================================
 	
+
+{% endraw %}

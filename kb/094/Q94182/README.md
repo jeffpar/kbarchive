@@ -6,6 +6,8 @@ permalink: /kb/094/Q94182/
 
 ## Q94182: PC WSPlus: Information Stored in Schedule File Exceeds Limit Set
 
+{% raw %}
+
 	Article: Q94182
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -50,3 +52,5 @@ permalink: /kb/094/Q94182/
 	
 	=============================================================================
 	
+
+{% endraw %}

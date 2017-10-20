@@ -6,6 +6,8 @@ permalink: /kb/171/Q171266/
 
 ## Q171266: PRB: Report to File Command Launches WinFax Application
 
+{% raw %}
+
 	Article: Q171266
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -63,3 +65,5 @@ permalink: /kb/171/Q171266/
 	
 	=============================================================================
 	
+
+{% endraw %}

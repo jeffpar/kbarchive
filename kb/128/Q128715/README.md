@@ -6,6 +6,8 @@ permalink: /kb/128/Q128715/
 
 ## Q128715: 3Com 3C619B Fails Using Default Settings
 
+{% raw %}
+
 	Article: Q128715
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -101,3 +103,5 @@ permalink: /kb/128/Q128715/
 	
 	=============================================================================
 	
+
+{% endraw %}

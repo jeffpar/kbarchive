@@ -6,6 +6,8 @@ permalink: /kb/040/Q40768/
 
 ## Q40768: Mac Srv: AppleShare, Print Server, &amp; Mail Server Coexistence
 
+{% raw %}
+
 	Article: Q40768
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -38,3 +40,5 @@ permalink: /kb/040/Q40768/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164567/
 
 ## Q164567: SMS: Installation of Keyboard Driver Does Not Prompt for Restart
 
+{% raw %}
+
 	Article: Q164567
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP1,2.0
@@ -59,3 +61,5 @@ permalink: /kb/164/Q164567/
 	
 	=============================================================================
 	
+
+{% endraw %}

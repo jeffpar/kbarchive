@@ -6,6 +6,8 @@ permalink: /kb/154/Q154284/
 
 ## Q154284: SMS: RAWCHECK for SMS 1.2 Does Not Check SMS 1.2 &#42;.RAW Files
 
+{% raw %}
+
 	Article: Q154284
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -64,3 +66,5 @@ permalink: /kb/154/Q154284/
 	
 	=============================================================================
 	
+
+{% endraw %}

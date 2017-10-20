@@ -6,6 +6,8 @@ permalink: /kb/165/Q165078/
 
 ## Q165078: WD97: Some Open Shortcuts Changed
 
+{% raw %}
+
 	Article: Q165078
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/165/Q165078/
 	
 	=============================================================================
 	
+
+{% endraw %}

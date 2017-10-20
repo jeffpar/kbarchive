@@ -6,6 +6,8 @@ permalink: /kb/260/Q260894/
 
 ## Q260894: Windows 2000 Driver Development Kit Comments and Corrections
 
+{% raw %}
+
 	Article: Q260894
 	Product(s): Microsoft Press
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/260/Q260894/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192190/
 
 ## Q192190: MS-DOS Window Does Not Allow Full-Screen Option
 
+{% raw %}
+
 	Article: Q192190
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/192/Q192190/
 	
 	=============================================================================
 	
+
+{% endraw %}

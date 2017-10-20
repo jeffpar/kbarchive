@@ -6,6 +6,8 @@ permalink: /kb/155/Q155002/
 
 ## Q155002: Description of DirectX 2.0
 
+{% raw %}
+
 	Article: Q155002
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -108,3 +110,5 @@ permalink: /kb/155/Q155002/
 	
 	=============================================================================
 	
+
+{% endraw %}

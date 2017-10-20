@@ -6,6 +6,8 @@ permalink: /kb/124/Q124543/
 
 ## Q124543: Resource Conflict in Event Viewer with Diamond Viper Video Card
 
+{% raw %}
+
 	Article: Q124543
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/124/Q124543/
 	
 	=============================================================================
 	
+
+{% endraw %}

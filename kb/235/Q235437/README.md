@@ -6,6 +6,8 @@ permalink: /kb/235/Q235437/
 
 ## Q235437: How to Change Process Throttling Options for IIS 5.0
 
+{% raw %}
+
 	Article: Q235437
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -109,3 +111,5 @@ permalink: /kb/235/Q235437/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236335/
 
 ## Q236335: XFOR: To Field Empty if User Sends Mail w/AT Command from OV/VM
 
+{% raw %}
+
 	Article: Q236335
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -88,3 +90,5 @@ permalink: /kb/236/Q236335/
 	
 	=============================================================================
 	
+
+{% endraw %}

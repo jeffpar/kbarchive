@@ -6,6 +6,8 @@ permalink: /kb/035/Q35938/
 
 ## Q35938: Equal-Sign Characters as Arguments in Batch Files
 
+{% raw %}
+
 	Article: Q35938
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/035/Q35938/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/297/Q297060/
 
 ## Q297060: HOWTO: Load a User Profile into the Registry with Visual Basic
 
+{% raw %}
+
 	Article: Q297060
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -210,3 +212,5 @@ permalink: /kb/297/Q297060/
 	
 	=============================================================================
 	
+
+{% endraw %}

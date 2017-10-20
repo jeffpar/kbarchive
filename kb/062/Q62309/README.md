@@ -6,6 +6,8 @@ permalink: /kb/062/Q62309/
 
 ## Q62309: Internal Compiler Error '@(#)regMD.c:1.100', Line 3074
 
+{% raw %}
+
 	Article: Q62309
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -38,3 +40,5 @@ permalink: /kb/062/Q62309/
 	Microsoft has confirmed this to be a problem in C version 6.00. We are
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

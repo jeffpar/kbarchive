@@ -6,6 +6,8 @@ permalink: /kb/041/Q41004/
 
 ## Q41004: &quot;UNRESOLVED EXTERNAL&quot;; Can't Call External from Quick Library
 
+{% raw %}
+
 	Article: Q41004
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -95,3 +97,5 @@ permalink: /kb/041/Q41004/
 	             ' but works fine if you link the .OBJ file into a .EXE.
 	PRINT "End of temp5 subprogram"
 	END SUB
+
+{% endraw %}

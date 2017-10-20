@@ -6,6 +6,8 @@ permalink: /kb/233/Q233345/
 
 ## Q233345: XFOR: Notes Connector Event ID 1: DXANOTES Failed to Initialize
 
+{% raw %}
+
 	Article: Q233345
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -68,3 +70,5 @@ permalink: /kb/233/Q233345/
 	
 	=============================================================================
 	
+
+{% endraw %}

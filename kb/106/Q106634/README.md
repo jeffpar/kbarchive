@@ -6,6 +6,8 @@ permalink: /kb/106/Q106634/
 
 ## Q106634: FIX: Incorrect Path Causes Setup Error
 
+{% raw %}
+
 	Article: Q106634
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -80,3 +82,5 @@ permalink: /kb/106/Q106634/
 	
 	=============================================================================
 	
+
+{% endraw %}

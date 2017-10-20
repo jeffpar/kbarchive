@@ -6,6 +6,8 @@ permalink: /kb/229/Q229064/
 
 ## Q229064: Load Balanced Service May Not Work Properly
 
+{% raw %}
+
 	Article: Q229064
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,2000,4.0
@@ -74,3 +76,5 @@ permalink: /kb/229/Q229064/
 	
 	=============================================================================
 	
+
+{% endraw %}

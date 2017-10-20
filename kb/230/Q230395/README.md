@@ -6,6 +6,8 @@ permalink: /kb/230/Q230395/
 
 ## Q230395: XADM: How to Display Multiple Users from the Address Book
 
+{% raw %}
+
 	Article: Q230395
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/230/Q230395/
 	
 	=============================================================================
 	
+
+{% endraw %}

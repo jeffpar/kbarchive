@@ -6,6 +6,8 @@ permalink: /kb/255/Q255284/
 
 ## Q255284: SMS: PCM Incorrectly Runs Newly Available Expired Jobs
 
+{% raw %}
+
 	Article: Q255284
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2 SP4
@@ -154,3 +156,5 @@ permalink: /kb/255/Q255284/
 	
 	=============================================================================
 	
+
+{% endraw %}

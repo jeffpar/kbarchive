@@ -6,6 +6,8 @@ permalink: /kb/241/Q241592/
 
 ## Q241592: BUG: Compiling with the In-Line Function Expansion Optimizations
 
+{% raw %}
+
 	Article: Q241592
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0; winnt:6.0
@@ -92,3 +94,5 @@ permalink: /kb/241/Q241592/
 	
 	=============================================================================
 	
+
+{% endraw %}

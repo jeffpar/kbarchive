@@ -6,6 +6,8 @@ permalink: /kb/086/Q86983/
 
 ## Q86983: X400: Differences Between, Advantages of Field &amp; Type
 
+{% raw %}
+
 	Article: Q86983
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/086/Q86983/
 	
 	=============================================================================
 	
+
+{% endraw %}

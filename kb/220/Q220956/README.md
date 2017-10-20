@@ -6,6 +6,8 @@ permalink: /kb/220/Q220956/
 
 ## Q220956: Err Msg: Cannot Find 'C:&#92;Program' or One of Its Components
 
+{% raw %}
+
 	Article: Q220956
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -133,3 +135,5 @@ permalink: /kb/220/Q220956/
 	
 	=============================================================================
 	
+
+{% endraw %}

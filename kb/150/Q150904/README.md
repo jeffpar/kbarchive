@@ -6,6 +6,8 @@ permalink: /kb/150/Q150904/
 
 ## Q150904: DDE Link Stops Updating After Closing Another Link
 
+{% raw %}
+
 	Article: Q150904
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -52,3 +54,5 @@ permalink: /kb/150/Q150904/
 	
 	=============================================================================
 	
+
+{% endraw %}

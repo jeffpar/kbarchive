@@ -6,6 +6,8 @@ permalink: /kb/306/Q306836/
 
 ## Q306836: FP: Obsolete FrontPage Versions
 
+{% raw %}
+
 	Article: Q306836
 	Product(s): Word Front Page
 	Version(s): 1.0,1.1
@@ -74,3 +76,5 @@ permalink: /kb/306/Q306836/
 	
 	=============================================================================
 	
+
+{% endraw %}

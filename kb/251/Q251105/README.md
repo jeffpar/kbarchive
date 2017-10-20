@@ -6,6 +6,8 @@ permalink: /kb/251/Q251105/
 
 ## Q251105: PRB: Err Msg: Can Not Run Unicode Version of Atl.dll on Win 95
 
+{% raw %}
+
 	Article: Q251105
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 sp1, sp2, sp3
@@ -94,3 +96,5 @@ permalink: /kb/251/Q251105/
 	
 	=============================================================================
 	
+
+{% endraw %}

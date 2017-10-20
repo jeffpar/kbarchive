@@ -6,6 +6,8 @@ permalink: /kb/176/Q176459/
 
 ## Q176459: XADM: DirRep Bridgehead Errors Modifying Site Naming Contexts
 
+{% raw %}
+
 	Article: Q176459
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -124,3 +126,5 @@ permalink: /kb/176/Q176459/
 	
 	=============================================================================
 	
+
+{% endraw %}

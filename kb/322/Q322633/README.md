@@ -6,6 +6,8 @@ permalink: /kb/322/Q322633/
 
 ## Q322633: Microsoft Excel 2000 Step by Step Courseware Expert Skills Stude
 
+{% raw %}
+
 	Article: Q322633
 	Product(s): Microsoft Press
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/322/Q322633/
 	
 	=============================================================================
 	
+
+{% endraw %}

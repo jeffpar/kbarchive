@@ -6,6 +6,8 @@ permalink: /kb/252/Q252438/
 
 ## Q252438: HOWTO: Modify Visual Data Manager to Work with Access 2000
 
+{% raw %}
+
 	Article: Q252438
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1,2.1 SP2,2.5,2.6,5.0,6.0
@@ -154,3 +156,5 @@ permalink: /kb/252/Q252438/
 	
 	=============================================================================
 	
+
+{% endraw %}

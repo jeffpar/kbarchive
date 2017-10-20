@@ -6,6 +6,8 @@ permalink: /kb/235/Q235691/
 
 ## Q235691: FIX: The MSMQ - MQSeries Bridge Will Discard the EPSend Message
 
+{% raw %}
+
 	Article: Q235691
 	Product(s): Microsoft SNA Server
 	Version(s): ; WINDOWS:4.0 SP2
@@ -59,3 +61,5 @@ permalink: /kb/235/Q235691/
 	
 	=============================================================================
 	
+
+{% endraw %}

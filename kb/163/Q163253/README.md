@@ -6,6 +6,8 @@ permalink: /kb/163/Q163253/
 
 ## Q163253: BUG: &quot;Out of Memory&quot; Error When Saving to an Existing File
 
+{% raw %}
+
 	Article: Q163253
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -181,3 +183,5 @@ permalink: /kb/163/Q163253/
 	
 	=============================================================================
 	
+
+{% endraw %}

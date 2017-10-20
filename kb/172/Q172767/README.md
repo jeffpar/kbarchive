@@ -6,6 +6,8 @@ permalink: /kb/172/Q172767/
 
 ## Q172767: Migration Tool for NetWare Cannot Find Domain Controller
 
+{% raw %}
+
 	Article: Q172767
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -76,3 +78,5 @@ permalink: /kb/172/Q172767/
 	
 	=============================================================================
 	
+
+{% endraw %}

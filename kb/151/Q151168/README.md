@@ -6,6 +6,8 @@ permalink: /kb/151/Q151168/
 
 ## Q151168: FIX: Abstract Class Instantiated as a Temporary Object
 
+{% raw %}
+
 	Article: Q151168
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -103,3 +105,5 @@ permalink: /kb/151/Q151168/
 	
 	=============================================================================
 	
+
+{% endraw %}

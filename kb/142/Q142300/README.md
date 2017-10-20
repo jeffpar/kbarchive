@@ -6,6 +6,8 @@ permalink: /kb/142/Q142300/
 
 ## Q142300: Creative Labs Sound Blaster Plug and Play Does Not Work
 
+{% raw %}
+
 	Article: Q142300
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -61,3 +63,5 @@ permalink: /kb/142/Q142300/
 	
 	=============================================================================
 	
+
+{% endraw %}

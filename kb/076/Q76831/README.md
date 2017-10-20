@@ -6,6 +6,8 @@ permalink: /kb/076/Q76831/
 
 ## Q76831: SMARTDRV.SYS Reports &quot;Bad or Missing Command Interpreter&quot;
 
+{% raw %}
+
 	Article: Q76831
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -70,3 +72,5 @@ permalink: /kb/076/Q76831/
 	
 	=============================================================================
 	
+
+{% endraw %}

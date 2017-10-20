@@ -6,6 +6,8 @@ permalink: /kb/098/Q98514/
 
 ## Q98514: MS-DOS Reports Zero Bytes Free on a Network Drive
 
+{% raw %}
+
 	Article: Q98514
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -44,3 +46,5 @@ permalink: /kb/098/Q98514/
 	
 	=============================================================================
 	
+
+{% endraw %}

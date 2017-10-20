@@ -6,6 +6,8 @@ permalink: /kb/128/Q128400/
 
 ## Q128400: Windows 95 Setup Switches
 
+{% raw %}
+
 	Article: Q128400
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -308,3 +310,5 @@ permalink: /kb/128/Q128400/
 	
 	=============================================================================
 	
+
+{% endraw %}

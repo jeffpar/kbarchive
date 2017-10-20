@@ -6,6 +6,8 @@ permalink: /kb/185/Q185260/
 
 ## Q185260: User Accounts May Get Locked out After Entering Wrong Password
 
+{% raw %}
+
 	Article: Q185260
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/185/Q185260/
 	
 	=============================================================================
 	
+
+{% endraw %}

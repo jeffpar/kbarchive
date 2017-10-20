@@ -6,6 +6,8 @@ permalink: /kb/132/Q132441/
 
 ## Q132441: INFO: Multithread Process and Visual FoxPro
 
+{% raw %}
+
 	Article: Q132441
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/132/Q132441/
 	
 	=============================================================================
 	
+
+{% endraw %}

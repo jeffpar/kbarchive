@@ -6,6 +6,8 @@ permalink: /kb/123/Q123763/
 
 ## Q123763: Share Names Displayed as DELETED in GSNW
 
+{% raw %}
+
 	Article: Q123763
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -90,3 +92,5 @@ permalink: /kb/123/Q123763/
 	
 	=============================================================================
 	
+
+{% endraw %}

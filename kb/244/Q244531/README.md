@@ -6,6 +6,8 @@ permalink: /kb/244/Q244531/
 
 ## Q244531: FIX:SQL DSN Revert from Standard Security to Integrated Security
 
+{% raw %}
+
 	Article: Q244531
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.7
@@ -75,3 +77,5 @@ permalink: /kb/244/Q244531/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168856/
 
 ## Q168856: WD97: Background Texture Tab Doesn't Display Correct Path
 
+{% raw %}
+
 	Article: Q168856
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/168/Q168856/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171470/
 
 ## Q171470: FIX: Resize Event Not Fired When UserControl Copied &amp; Pasted
 
+{% raw %}
+
 	Article: Q171470
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -90,3 +92,5 @@ permalink: /kb/171/Q171470/
 	
 	=============================================================================
 	
+
+{% endraw %}

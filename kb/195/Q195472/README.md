@@ -6,6 +6,8 @@ permalink: /kb/195/Q195472/
 
 ## Q195472: HOWTO: Highlight a Specific Row in the DataGrid Control 6.0
 
+{% raw %}
+
 	Article: Q195472
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -122,3 +124,5 @@ permalink: /kb/195/Q195472/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/272/Q272070/
 
 ## Q272070: SMS: Logon Server Manager Cannot Modify VB Scripts for Logon
 
+{% raw %}
+
 	Article: Q272070
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -59,3 +61,5 @@ permalink: /kb/272/Q272070/
 	
 	=============================================================================
 	
+
+{% endraw %}

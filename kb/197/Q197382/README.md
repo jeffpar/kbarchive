@@ -6,6 +6,8 @@ permalink: /kb/197/Q197382/
 
 ## Q197382: HOWTO: Keep Cluster Administrator from Reconnecting to a Cluster
 
+{% raw %}
+
 	Article: Q197382
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/197/Q197382/
 	
 	=============================================================================
 	
+
+{% endraw %}

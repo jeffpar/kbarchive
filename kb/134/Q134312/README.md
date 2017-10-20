@@ -6,6 +6,8 @@ permalink: /kb/134/Q134312/
 
 ## Q134312: PRB: TabIndex Setting Does Not Activate Selected Form First
 
+{% raw %}
+
 	Article: Q134312
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -108,3 +110,5 @@ permalink: /kb/134/Q134312/
 	
 	=============================================================================
 	
+
+{% endraw %}

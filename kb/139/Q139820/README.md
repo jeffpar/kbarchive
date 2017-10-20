@@ -6,6 +6,8 @@ permalink: /kb/139/Q139820/
 
 ## Q139820: Moving or Removing Disks &amp; Fault Tolerant Drive Configurations
 
+{% raw %}
+
 	Article: Q139820
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -131,3 +133,5 @@ permalink: /kb/139/Q139820/
 	
 	=============================================================================
 	
+
+{% endraw %}

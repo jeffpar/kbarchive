@@ -6,6 +6,8 @@ permalink: /kb/161/Q161914/
 
 ## Q161914: ERROR MESSAGE: Load Needed DLLs for HAL
 
+{% raw %}
+
 	Article: Q161914
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -89,3 +91,5 @@ permalink: /kb/161/Q161914/
 	
 	=============================================================================
 	
+
+{% endraw %}

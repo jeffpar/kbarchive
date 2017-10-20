@@ -6,6 +6,8 @@ permalink: /kb/178/Q178311/
 
 ## Q178311: XADM: Error Running ISINTEG on a Cluster Server
 
+{% raw %}
+
 	Article: Q178311
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -55,3 +57,5 @@ permalink: /kb/178/Q178311/
 	
 	=============================================================================
 	
+
+{% endraw %}

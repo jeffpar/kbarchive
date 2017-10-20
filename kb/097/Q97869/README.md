@@ -6,6 +6,8 @@ permalink: /kb/097/Q97869/
 
 ## Q97869: Cannot Delete Stuck Print Jobs when Using HPREDIR
 
+{% raw %}
+
 	Article: Q97869
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/097/Q97869/
 	
 	=============================================================================
 	
+
+{% endraw %}

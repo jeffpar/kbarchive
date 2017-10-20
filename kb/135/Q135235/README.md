@@ -6,6 +6,8 @@ permalink: /kb/135/Q135235/
 
 ## Q135235: SNA Admin Error Message Changing Domains When Using TCP/IP
 
+{% raw %}
+
 	Article: Q135235
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -63,3 +65,5 @@ permalink: /kb/135/Q135235/
 	
 	=============================================================================
 	
+
+{% endraw %}

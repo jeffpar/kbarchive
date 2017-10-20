@@ -6,6 +6,8 @@ permalink: /kb/107/Q107754/
 
 ## Q107754: FFAPI: Default Template Used with IMPORT.EXE and FFAPI
 
+{% raw %}
+
 	Article: Q107754
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0,3.0b,3.2; WINDOWS:3.0,3.0b,3.2
@@ -49,3 +51,5 @@ permalink: /kb/107/Q107754/
 	
 	=============================================================================
 	
+
+{% endraw %}

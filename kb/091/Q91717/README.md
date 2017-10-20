@@ -6,6 +6,8 @@ permalink: /kb/091/Q91717/
 
 ## Q91717: PPT: Text Shadow Color Not Affected by Color Scheme
 
+{% raw %}
+
 	Article: Q91717
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -88,3 +90,5 @@ permalink: /kb/091/Q91717/
 	
 	=============================================================================
 	
+
+{% endraw %}

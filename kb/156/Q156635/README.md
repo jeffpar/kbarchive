@@ -6,6 +6,8 @@ permalink: /kb/156/Q156635/
 
 ## Q156635: Writer 2: Scrollbar Navigation Is Jumpy in Large Documents
 
+{% raw %}
+
 	Article: Q156635
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -44,3 +46,5 @@ permalink: /kb/156/Q156635/
 	
 	=============================================================================
 	
+
+{% endraw %}

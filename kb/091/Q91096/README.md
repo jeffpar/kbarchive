@@ -6,6 +6,8 @@ permalink: /kb/091/Q91096/
 
 ## Q91096: Font Corruption in Ventura Publisher 4.0
 
+{% raw %}
+
 	Article: Q91096
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/091/Q91096/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/323/Q323927/
 
 ## Q323927: Dungeon Siege: How to Resurrect a Dead Character
 
+{% raw %}
+
 	Article: Q323927
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/323/Q323927/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235497/
 
 ## Q235497: XFOR: False GroupWise CR Created Manually Causes Errors in GW
 
+{% raw %}
+
 	Article: Q235497
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -99,3 +101,5 @@ permalink: /kb/235/Q235497/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/080/Q80662/
 
 ## Q80662: Mac Wkst: Hayes Smartmodem 9600 Modification for MSMail Dial-In
 
+{% raw %}
+
 	Article: Q80662
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.0a,3.0b,3.1
@@ -64,3 +66,5 @@ permalink: /kb/080/Q80662/
 	
 	=============================================================================
 	
+
+{% endraw %}

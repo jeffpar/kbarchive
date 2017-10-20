@@ -6,6 +6,8 @@ permalink: /kb/308/Q308168/
 
 ## Q308168: DOC: IIS 5.1 Doc Incorrectly References HTTP Compression
 
+{% raw %}
+
 	Article: Q308168
 	Product(s): Internet Information Server
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/308/Q308168/
 	
 	=============================================================================
 	
+
+{% endraw %}

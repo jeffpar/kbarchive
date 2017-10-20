@@ -6,6 +6,8 @@ permalink: /kb/050/Q50505/
 
 ## Q50505: IBM SAA Extensions Available in Microsoft FORTRAN 5.1
 
+{% raw %}
+
 	Article: Q50505
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.0,5.1
@@ -68,3 +70,5 @@ permalink: /kb/050/Q50505/
 	
 	=============================================================================
 	
+
+{% endraw %}

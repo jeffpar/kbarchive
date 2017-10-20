@@ -6,6 +6,8 @@ permalink: /kb/174/Q174249/
 
 ## Q174249: Flight Simulator 95: No Multiplayer Mode
 
+{% raw %}
+
 	Article: Q174249
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -40,3 +42,5 @@ permalink: /kb/174/Q174249/
 	
 	=============================================================================
 	
+
+{% endraw %}

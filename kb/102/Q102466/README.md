@@ -6,6 +6,8 @@ permalink: /kb/102/Q102466/
 
 ## Q102466: How to Update a Character Field from a Popup
 
+{% raw %}
+
 	Article: Q102466
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -96,3 +98,5 @@ permalink: /kb/102/Q102466/
 	
 	=============================================================================
 	
+
+{% endraw %}

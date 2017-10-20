@@ -6,6 +6,8 @@ permalink: /kb/161/Q161560/
 
 ## Q161560: Microsoft Excel 4.0 Documents Are Not Properly Filtered
 
+{% raw %}
+
 	Article: Q161560
 	Product(s): Internet Information Server
 	Version(s): winnt:1.1; :
@@ -43,3 +45,5 @@ permalink: /kb/161/Q161560/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152928/
 
 ## Q152928: XFOR: MTA does not Generate Requested Delivery Report
 
+{% raw %}
+
 	Article: Q152928
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -141,3 +143,5 @@ permalink: /kb/152/Q152928/
 	
 	=============================================================================
 	
+
+{% endraw %}

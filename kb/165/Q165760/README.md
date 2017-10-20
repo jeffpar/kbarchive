@@ -6,6 +6,8 @@ permalink: /kb/165/Q165760/
 
 ## Q165760: XCLN: How to Set Up Exchange Client for SQL Mail
 
+{% raw %}
+
 	Article: Q165760
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:4.0,5.0
@@ -72,3 +74,5 @@ permalink: /kb/165/Q165760/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175950/
 
 ## Q175950: HOWTO: Change the Name of a Visual SourceSafe Database
 
+{% raw %}
+
 	Article: Q175950
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/175/Q175950/
 	
 	=============================================================================
 	
+
+{% endraw %}

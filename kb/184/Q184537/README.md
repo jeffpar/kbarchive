@@ -6,6 +6,8 @@ permalink: /kb/184/Q184537/
 
 ## Q184537: Very Large Files Cause Performance Problems
 
+{% raw %}
+
 	Article: Q184537
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/184/Q184537/
 	
 	=============================================================================
 	
+
+{% endraw %}

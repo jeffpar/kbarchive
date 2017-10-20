@@ -6,6 +6,8 @@ permalink: /kb/162/Q162383/
 
 ## Q162383: Site Configuration Manager Stops When Enumerating User Groups
 
+{% raw %}
+
 	Article: Q162383
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -65,3 +67,5 @@ permalink: /kb/162/Q162383/
 	
 	=============================================================================
 	
+
+{% endraw %}

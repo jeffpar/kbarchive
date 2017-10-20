@@ -6,6 +6,8 @@ permalink: /kb/302/Q302166/
 
 ## Q302166: Error Message When an Account Operator Creates a Home Path
 
+{% raw %}
+
 	Article: Q302166
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP5,4.0 SP6
@@ -80,3 +82,5 @@ permalink: /kb/302/Q302166/
 	
 	=============================================================================
 	
+
+{% endraw %}

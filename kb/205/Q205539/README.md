@@ -6,6 +6,8 @@ permalink: /kb/205/Q205539/
 
 ## Q205539: WD97: Recorded Macro Doesn't Insert Frame Contained in AutoText
 
+{% raw %}
+
 	Article: Q205539
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -128,3 +130,5 @@ permalink: /kb/205/Q205539/
 	
 	=============================================================================
 	
+
+{% endraw %}

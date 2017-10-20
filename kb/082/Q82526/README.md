@@ -6,6 +6,8 @@ permalink: /kb/082/Q82526/
 
 ## Q82526: Auto &quot;Top Of Form&quot; Not Supported on Okidata Printers
 
+{% raw %}
+
 	Article: Q82526
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/082/Q82526/
 	
 	=============================================================================
 	
+
+{% endraw %}

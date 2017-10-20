@@ -6,6 +6,8 @@ permalink: /kb/090/Q90001/
 
 ## Q90001: Voice Pilot Does Not Support MS-DOS Applications
 
+{% raw %}
+
 	Article: Q90001
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/090/Q90001/
 	
 	=============================================================================
 	
+
+{% endraw %}

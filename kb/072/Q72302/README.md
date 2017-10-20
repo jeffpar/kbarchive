@@ -6,6 +6,8 @@ permalink: /kb/072/Q72302/
 
 ## Q72302: Specifying A20 Handlers with HIMEM.SYS /M in MS-DOS
 
+{% raw %}
+
 	Article: Q72302
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21
@@ -89,3 +91,5 @@ permalink: /kb/072/Q72302/
 	
 	=============================================================================
 	
+
+{% endraw %}

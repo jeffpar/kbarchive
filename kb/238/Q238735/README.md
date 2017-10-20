@@ -6,6 +6,8 @@ permalink: /kb/238/Q238735/
 
 ## Q238735: STOP 0x7F When Using Filter Drivers
 
+{% raw %}
+
 	Article: Q238735
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -68,3 +70,5 @@ permalink: /kb/238/Q238735/
 	
 	=============================================================================
 	
+
+{% endraw %}

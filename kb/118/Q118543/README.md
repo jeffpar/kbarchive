@@ -6,6 +6,8 @@ permalink: /kb/118/Q118543/
 
 ## Q118543: Dangerous Creatures: Hot Spots No Longer Hot When You Return
 
+{% raw %}
+
 	Article: Q118543
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/118/Q118543/
 	
 	=============================================================================
 	
+
+{% endraw %}

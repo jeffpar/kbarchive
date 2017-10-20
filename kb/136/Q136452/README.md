@@ -6,6 +6,8 @@ permalink: /kb/136/Q136452/
 
 ## Q136452: Context-Sensitive Help Appears Only Briefly After Pressing F1
 
+{% raw %}
+
 	Article: Q136452
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -49,3 +51,5 @@ permalink: /kb/136/Q136452/
 	
 	=============================================================================
 	
+
+{% endraw %}

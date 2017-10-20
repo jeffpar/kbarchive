@@ -6,6 +6,8 @@ permalink: /kb/191/Q191850/
 
 ## Q191850: Convert Reports Cannot Create Elementary File System Structures
 
+{% raw %}
+
 	Article: Q191850
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -231,3 +233,5 @@ permalink: /kb/191/Q191850/
 	
 	=============================================================================
 	
+
+{% endraw %}

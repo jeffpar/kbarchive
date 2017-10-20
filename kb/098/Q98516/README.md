@@ -6,6 +6,8 @@ permalink: /kb/098/Q98516/
 
 ## Q98516: MS-DOS 6 Upgrade Directory Listing for 3.5-Inch (720K) Disks
 
+{% raw %}
+
 	Article: Q98516
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -235,3 +237,5 @@ permalink: /kb/098/Q98516/
 	
 	=============================================================================
 	
+
+{% endraw %}

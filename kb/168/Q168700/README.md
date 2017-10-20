@@ -6,6 +6,8 @@ permalink: /kb/168/Q168700/
 
 ## Q168700: Error Message Uninstalling Service Pack 3
 
+{% raw %}
+
 	Article: Q168700
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -110,3 +112,5 @@ permalink: /kb/168/Q168700/
 	
 	=============================================================================
 	
+
+{% endraw %}

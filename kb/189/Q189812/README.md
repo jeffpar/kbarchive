@@ -6,6 +6,8 @@ permalink: /kb/189/Q189812/
 
 ## Q189812: BUG: Unloading a Modal Form's Parent Form Causes VB To Hang
 
+{% raw %}
+
 	Article: Q189812
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/189/Q189812/
 	
 	=============================================================================
 	
+
+{% endraw %}

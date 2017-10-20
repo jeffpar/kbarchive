@@ -6,6 +6,8 @@ permalink: /kb/262/Q262225/
 
 ## Q262225: XADM: Unable to Limit Logons When You Use the Exmerge Utility
 
+{% raw %}
+
 	Article: Q262225
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/262/Q262225/
 	
 	=============================================================================
 	
+
+{% endraw %}

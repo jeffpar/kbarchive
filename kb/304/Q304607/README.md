@@ -6,6 +6,8 @@ permalink: /kb/304/Q304607/
 
 ## Q304607: PRB: Visual Basic Doesn't Load .ocx When Starting Visual Basic
 
+{% raw %}
+
 	Article: Q304607
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -76,3 +78,5 @@ permalink: /kb/304/Q304607/
 	
 	=============================================================================
 	
+
+{% endraw %}

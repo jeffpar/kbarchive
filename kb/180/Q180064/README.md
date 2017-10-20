@@ -6,6 +6,8 @@ permalink: /kb/180/Q180064/
 
 ## Q180064: Physical Drive Access Unavailable When Using DskProbe
 
+{% raw %}
+
 	Article: Q180064
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -81,3 +83,5 @@ permalink: /kb/180/Q180064/
 	
 	=============================================================================
 	
+
+{% endraw %}

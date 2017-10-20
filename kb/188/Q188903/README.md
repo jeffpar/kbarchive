@@ -6,6 +6,8 @@ permalink: /kb/188/Q188903/
 
 ## Q188903: Event Viewer Does Not Show IUSR_machinename Account Logon
 
+{% raw %}
+
 	Article: Q188903
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/188/Q188903/
 	
 	=============================================================================
 	
+
+{% endraw %}

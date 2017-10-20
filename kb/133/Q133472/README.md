@@ -6,6 +6,8 @@ permalink: /kb/133/Q133472/
 
 ## Q133472: Screen Saver Locks Out Account After You Enter Invalid Password
 
+{% raw %}
+
 	Article: Q133472
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -59,3 +61,5 @@ permalink: /kb/133/Q133472/
 	
 	=============================================================================
 	
+
+{% endraw %}

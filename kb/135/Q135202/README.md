@@ -6,6 +6,8 @@ permalink: /kb/135/Q135202/
 
 ## Q135202: Backup Cannot Access Tape Drive in Safe Mode
 
+{% raw %}
+
 	Article: Q135202
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/135/Q135202/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168934/
 
 ## Q168934: FIX: Multiple Errors Compiling Std C++ Library Headers with /Za
 
+{% raw %}
+
 	Article: Q168934
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/168/Q168934/
 	
 	=============================================================================
 	
+
+{% endraw %}

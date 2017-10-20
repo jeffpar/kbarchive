@@ -6,6 +6,8 @@ permalink: /kb/193/Q193177/
 
 ## Q193177: WD97: AutoNum Field Not Updated Correctly Inside Table Cell
 
+{% raw %}
+
 	Article: Q193177
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -50,3 +52,5 @@ permalink: /kb/193/Q193177/
 	
 	=============================================================================
 	
+
+{% endraw %}

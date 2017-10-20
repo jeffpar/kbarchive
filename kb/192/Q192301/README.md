@@ -6,6 +6,8 @@ permalink: /kb/192/Q192301/
 
 ## Q192301: HOWTO: Use GENHTML to Create HTML from a Visual FoxPro Screen
 
+{% raw %}
+
 	Article: Q192301
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -279,3 +281,5 @@ permalink: /kb/192/Q192301/
 	
 	=============================================================================
 	
+
+{% endraw %}

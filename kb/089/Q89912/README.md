@@ -6,6 +6,8 @@ permalink: /kb/089/Q89912/
 
 ## Q89912: File Drag May Not Work with Quick Recorder
 
+{% raw %}
+
 	Article: Q89912
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/089/Q89912/
 	
 	=============================================================================
 	
+
+{% endraw %}

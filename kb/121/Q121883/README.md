@@ -6,6 +6,8 @@ permalink: /kb/121/Q121883/
 
 ## Q121883: Golf: Rotate View on Recorded Player May Cause Hang
 
+{% raw %}
+
 	Article: Q121883
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -88,3 +90,5 @@ permalink: /kb/121/Q121883/
 	
 	=============================================================================
 	
+
+{% endraw %}

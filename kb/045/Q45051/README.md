@@ -6,6 +6,8 @@ permalink: /kb/045/Q45051/
 
 ## Q45051: Set Paths Menu in QB 4.50 Finds &#36;INCLUDE and Library Files
 
+{% raw %}
+
 	Article: Q45051
 	Product(s): See article
 	Version(s): 4.50
@@ -50,3 +52,5 @@ permalink: /kb/045/Q45051/
 	The Set Paths menu item is an additional method for finding $INCLUDE
 	files when compiling in the QB.EXE Version 4.50 environment and in the
 	QBX.EXE Version 7.00 environment.
+
+{% endraw %}

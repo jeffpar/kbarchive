@@ -6,6 +6,8 @@ permalink: /kb/139/Q139588/
 
 ## Q139588: SMS Views Created By SMSVIEW Have Incorrect Results
 
+{% raw %}
+
 	Article: Q139588
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -56,3 +58,5 @@ permalink: /kb/139/Q139588/
 	
 	=============================================================================
 	
+
+{% endraw %}

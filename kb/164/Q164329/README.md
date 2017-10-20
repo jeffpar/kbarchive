@@ -6,6 +6,8 @@ permalink: /kb/164/Q164329/
 
 ## Q164329: SMS: System Fails to Restart After Applying Windows NT 4.0 SP2
 
+{% raw %}
+
 	Article: Q164329
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -63,3 +65,5 @@ permalink: /kb/164/Q164329/
 	
 	=============================================================================
 	
+
+{% endraw %}

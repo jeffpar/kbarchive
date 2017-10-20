@@ -6,6 +6,8 @@ permalink: /kb/186/Q186886/
 
 ## Q186886: XWEB: OWA Meeting Response Does Not Tally Correctly
 
+{% raw %}
+
 	Article: Q186886
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -49,3 +51,5 @@ permalink: /kb/186/Q186886/
 	
 	=============================================================================
 	
+
+{% endraw %}

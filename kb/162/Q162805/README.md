@@ -6,6 +6,8 @@ permalink: /kb/162/Q162805/
 
 ## Q162805: Golf 3.0: Unable to Control the Swing of a Computer Player
 
+{% raw %}
+
 	Article: Q162805
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/162/Q162805/
 	
 	=============================================================================
 	
+
+{% endraw %}

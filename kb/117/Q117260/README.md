@@ -6,6 +6,8 @@ permalink: /kb/117/Q117260/
 
 ## Q117260: PC Adm: Err Msg: Alias Does Not Exist...
 
+{% raw %}
+
 	Article: Q117260
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -81,3 +83,5 @@ permalink: /kb/117/Q117260/
 	
 	=============================================================================
 	
+
+{% endraw %}

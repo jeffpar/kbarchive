@@ -6,6 +6,8 @@ permalink: /kb/196/Q196853/
 
 ## Q196853: XADM: Mac Attachments Have Two Sets of Double Quotes Around Name
 
+{% raw %}
+
 	Article: Q196853
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2
@@ -76,3 +78,5 @@ permalink: /kb/196/Q196853/
 	
 	=============================================================================
 	
+
+{% endraw %}

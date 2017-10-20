@@ -6,6 +6,8 @@ permalink: /kb/130/Q130735/
 
 ## Q130735: Quick Windows Viewer Displays Blue Backgrounds For Text/Icons
 
+{% raw %}
+
 	Article: Q130735
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -45,3 +47,5 @@ permalink: /kb/130/Q130735/
 	
 	=============================================================================
 	
+
+{% endraw %}

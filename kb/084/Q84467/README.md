@@ -6,6 +6,8 @@ permalink: /kb/084/Q84467/
 
 ## Q84467: Err Msg: Badly Formed Setup Script Command Installing WRK
 
+{% raw %}
+
 	Article: Q84467
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/084/Q84467/
 	
 	=============================================================================
 	
+
+{% endraw %}

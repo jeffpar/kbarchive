@@ -6,6 +6,8 @@ permalink: /kb/150/Q150589/
 
 ## Q150589: Windows 95 Logon Script Is Not Processed
 
+{% raw %}
+
 	Article: Q150589
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/150/Q150589/
 	
 	=============================================================================
 	
+
+{% endraw %}

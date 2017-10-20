@@ -6,6 +6,8 @@ permalink: /kb/142/Q142314/
 
 ## Q142314: DOC: SET PRINT TO Command Help File Information Incorrect
 
+{% raw %}
+
 	Article: Q142314
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -57,3 +59,5 @@ permalink: /kb/142/Q142314/
 	
 	=============================================================================
 	
+
+{% endraw %}

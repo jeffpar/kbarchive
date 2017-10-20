@@ -6,6 +6,8 @@ permalink: /kb/186/Q186601/
 
 ## Q186601: Terminal Server Start/Run Does Not Remember Last Command
 
+{% raw %}
+
 	Article: Q186601
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -46,3 +48,5 @@ permalink: /kb/186/Q186601/
 	
 	=============================================================================
 	
+
+{% endraw %}

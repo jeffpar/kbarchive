@@ -6,6 +6,8 @@ permalink: /kb/143/Q143205/
 
 ## Q143205: How to Use the GETPEM() Function
 
+{% raw %}
+
 	Article: Q143205
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b
@@ -139,3 +141,5 @@ permalink: /kb/143/Q143205/
 	
 	=============================================================================
 	
+
+{% endraw %}

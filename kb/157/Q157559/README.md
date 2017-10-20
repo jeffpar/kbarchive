@@ -6,6 +6,8 @@ permalink: /kb/157/Q157559/
 
 ## Q157559: WD97: Master Document Toolbar Buttons Grayed in Master Document
 
+{% raw %}
+
 	Article: Q157559
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -97,3 +99,5 @@ permalink: /kb/157/Q157559/
 	
 	=============================================================================
 	
+
+{% endraw %}

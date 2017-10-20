@@ -6,6 +6,8 @@ permalink: /kb/153/Q153231/
 
 ## Q153231: Packagelocations Table Not Updated
 
+{% raw %}
+
 	Article: Q153231
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -55,3 +57,5 @@ permalink: /kb/153/Q153231/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157985/
 
 ## Q157985: INFO: Anyone Can Run SSARC.EXE if There Is No Admin Password
 
+{% raw %}
+
 	Article: Q157985
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/157/Q157985/
 	
 	=============================================================================
 	
+
+{% endraw %}

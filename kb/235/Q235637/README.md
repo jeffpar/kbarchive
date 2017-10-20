@@ -6,6 +6,8 @@ permalink: /kb/235/Q235637/
 
 ## Q235637: SMS: Remote Control Agent Is Uninstalled on Windows NT Clients
 
+{% raw %}
+
 	Article: Q235637
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -97,3 +99,5 @@ permalink: /kb/235/Q235637/
 	
 	=============================================================================
 	
+
+{% endraw %}

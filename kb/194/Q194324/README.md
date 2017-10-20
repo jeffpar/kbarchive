@@ -6,6 +6,8 @@ permalink: /kb/194/Q194324/
 
 ## Q194324: Data not Compressed from SNA Server to Host
 
+{% raw %}
+
 	Article: Q194324
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -149,3 +151,5 @@ permalink: /kb/194/Q194324/
 	
 	=============================================================================
 	
+
+{% endraw %}

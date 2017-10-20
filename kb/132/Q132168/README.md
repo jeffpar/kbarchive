@@ -6,6 +6,8 @@ permalink: /kb/132/Q132168/
 
 ## Q132168: Applications Run From the AT Schedule Service Cannot Print
 
+{% raw %}
+
 	Article: Q132168
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -77,3 +79,5 @@ permalink: /kb/132/Q132168/
 	
 	=============================================================================
 	
+
+{% endraw %}

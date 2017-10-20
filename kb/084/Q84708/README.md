@@ -6,6 +6,8 @@ permalink: /kb/084/Q84708/
 
 ## Q84708: Icon Background Colors in File Manager Don't Update
 
+{% raw %}
+
 	Article: Q84708
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/084/Q84708/
 	
 	=============================================================================
 	
+
+{% endraw %}

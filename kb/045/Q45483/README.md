@@ -6,6 +6,8 @@ permalink: /kb/045/Q45483/
 
 ## Q45483: Incorrect Number of Parameters to Quick Library Can Hang QB
 
+{% raw %}
+
 	Article: Q45483
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -79,3 +81,5 @@ permalink: /kb/045/Q45483/
 	FUNCTION calculatesomething%(t AS INTEGER)
 	    calculatesomething% = t + t * t
 	END FUNCTION
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/279/Q279320/
 
 ## Q279320: XFOR: Msgs in Internet Mail Service Pickup Moved to Bad Mail
 
+{% raw %}
+
 	Article: Q279320
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -99,3 +101,5 @@ permalink: /kb/279/Q279320/
 	
 	=============================================================================
 	
+
+{% endraw %}

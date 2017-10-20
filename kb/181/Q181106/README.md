@@ -6,6 +6,8 @@ permalink: /kb/181/Q181106/
 
 ## Q181106: WD97: FileFind Command Does Not Open Advanced Find Dialog Box
 
+{% raw %}
+
 	Article: Q181106
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -88,3 +90,5 @@ permalink: /kb/181/Q181106/
 	
 	=============================================================================
 	
+
+{% endraw %}

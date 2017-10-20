@@ -6,6 +6,8 @@ permalink: /kb/273/Q273797/
 
 ## Q273797: XADM:  UDP Packets Are Sent Where Link Monitor Runs
 
+{% raw %}
+
 	Article: Q273797
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -61,3 +63,5 @@ permalink: /kb/273/Q273797/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122236/
 
 ## Q122236: PRB: Add() Member Function Consuming Large Amount of Memory
 
+{% raw %}
+
 	Article: Q122236
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,4.0
@@ -84,3 +86,5 @@ permalink: /kb/122/Q122236/
 	
 	=============================================================================
 	
+
+{% endraw %}

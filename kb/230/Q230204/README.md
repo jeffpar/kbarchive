@@ -6,6 +6,8 @@ permalink: /kb/230/Q230204/
 
 ## Q230204: SNA Server Fails Due to Access Violation in SNADMOD!RpcRouteProc
 
+{% raw %}
+
 	Article: Q230204
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -139,3 +141,5 @@ permalink: /kb/230/Q230204/
 	
 	=============================================================================
 	
+
+{% endraw %}

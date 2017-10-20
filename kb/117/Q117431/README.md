@@ -6,6 +6,8 @@ permalink: /kb/117/Q117431/
 
 ## Q117431: Windows 95 Does Not Boot After Running MicroHelp UnInstaller
 
+{% raw %}
+
 	Article: Q117431
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/117/Q117431/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229792/
 
 ## Q229792: INFO: Maximum Number of Array Elements in Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q229792
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -52,3 +54,5 @@ permalink: /kb/229/Q229792/
 	
 	=============================================================================
 	
+
+{% endraw %}

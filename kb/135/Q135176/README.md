@@ -6,6 +6,8 @@ permalink: /kb/135/Q135176/
 
 ## Q135176: MS-DOS-Based Program Does Not Detect VESA Graphics
 
+{% raw %}
+
 	Article: Q135176
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/135/Q135176/
 	
 	=============================================================================
 	
+
+{% endraw %}

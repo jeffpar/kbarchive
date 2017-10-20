@@ -6,6 +6,8 @@ permalink: /kb/175/Q175061/
 
 ## Q175061: OS/2 Clients Hang Connecting to Windows 95 NWServer
 
+{% raw %}
+
 	Article: Q175061
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/175/Q175061/
 	
 	=============================================================================
 	
+
+{% endraw %}

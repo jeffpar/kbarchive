@@ -6,6 +6,8 @@ permalink: /kb/183/Q183199/
 
 ## Q183199: DHCP Server Does Not Provide Options to Remote Boot Clients
 
+{% raw %}
+
 	Article: Q183199
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -79,3 +81,5 @@ permalink: /kb/183/Q183199/
 	
 	=============================================================================
 	
+
+{% endraw %}

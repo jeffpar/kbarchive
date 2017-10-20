@@ -6,6 +6,8 @@ permalink: /kb/247/Q247744/
 
 ## Q247744: Fighter Ace II: Polygon-Shaped Outlines Visible on Flap Textures
 
+{% raw %}
+
 	Article: Q247744
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/247/Q247744/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175988/
 
 ## Q175988: XFOR: Not All IMAP Clients Are Built Alike
 
+{% raw %}
+
 	Article: Q175988
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -66,3 +68,5 @@ permalink: /kb/175/Q175988/
 	
 	=============================================================================
 	
+
+{% endraw %}

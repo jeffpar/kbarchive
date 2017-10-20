@@ -6,6 +6,8 @@ permalink: /kb/185/Q185232/
 
 ## Q185232: WD97: Error Message Using WordMail: &quot;This method or property is
 
+{% raw %}
+
 	Article: Q185232
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -218,3 +220,5 @@ permalink: /kb/185/Q185232/
 	
 	=============================================================================
 	
+
+{% endraw %}

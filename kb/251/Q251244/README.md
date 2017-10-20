@@ -6,6 +6,8 @@ permalink: /kb/251/Q251244/
 
 ## Q251244: WD97: Cannot Change Outlook Contacts Folder for Labels/Envelopes
 
+{% raw %}
+
 	Article: Q251244
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -156,3 +158,5 @@ permalink: /kb/251/Q251244/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247484/
 
 ## Q247484: SMS: Advertisement with Future Date May Run Immediately
 
+{% raw %}
+
 	Article: Q247484
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -68,3 +70,5 @@ permalink: /kb/247/Q247484/
 	
 	=============================================================================
 	
+
+{% endraw %}

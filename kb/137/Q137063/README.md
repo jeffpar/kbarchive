@@ -6,6 +6,8 @@ permalink: /kb/137/Q137063/
 
 ## Q137063: World of Flight 1.0: Trouble.txt Contents
 
+{% raw %}
+
 	Article: Q137063
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -324,3 +326,5 @@ permalink: /kb/137/Q137063/
 	
 	=============================================================================
 	
+
+{% endraw %}

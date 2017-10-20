@@ -6,6 +6,8 @@ permalink: /kb/160/Q160546/
 
 ## Q160546: Error Message: &quot;No User Profiles Were Found&quot;
 
+{% raw %}
+
 	Article: Q160546
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.5 3.51 4.0
@@ -63,3 +65,5 @@ permalink: /kb/160/Q160546/
 	
 	=============================================================================
 	
+
+{% endraw %}

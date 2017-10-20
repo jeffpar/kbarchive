@@ -6,6 +6,8 @@ permalink: /kb/175/Q175913/
 
 ## Q175913: DHCP Clients Obtain IP Address from Old DHCP Scope Range
 
+{% raw %}
+
 	Article: Q175913
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:3.5,3.51,4.0;Windows:3.11,95
@@ -87,3 +89,5 @@ permalink: /kb/175/Q175913/
 	
 	=============================================================================
 	
+
+{% endraw %}

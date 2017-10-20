@@ -6,6 +6,8 @@ permalink: /kb/065/Q65200/
 
 ## Q65200: _polygon() with _GFILLINTERIOR Does Not Work When Clipped
 
+{% raw %}
+
 	Article: Q65200
 	Product(s): See article
 	Version(s): 6.00
@@ -19,7 +21,7 @@ permalink: /kb/065/Q65200/
 	
 	#include <graph.h>
 	
-	struct xycoord pts[4] = { {0,0}, {55,55}, {83,25}, {0,0} };
+	struct xycoord pts[4] = {{0,0}, {55,55}, {83,25}, {0,0}};
 	
 	void main(void)
 	{
@@ -54,3 +56,5 @@ permalink: /kb/065/Q65200/
 	Microsoft has confirmed this to be a problem with C version 6.00. We
 	are researching this problem and will post new information here when
 	it becomes available.
+
+{% endraw %}

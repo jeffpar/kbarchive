@@ -6,6 +6,8 @@ permalink: /kb/066/Q66733/
 
 ## Q66733: Windows Err Msg: Setup Cannot Modify Your SYSTEM.INI...
 
+{% raw %}
+
 	Article: Q66733
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a
@@ -87,3 +89,5 @@ permalink: /kb/066/Q66733/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/318/Q318126/
 
 ## Q318126: &quot;Installer&quot; Err Msg Installing Host Integration Server Client
 
+{% raw %}
+
 	Article: Q318126
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -127,3 +129,5 @@ permalink: /kb/318/Q318126/
 	
 	=============================================================================
 	
+
+{% endraw %}

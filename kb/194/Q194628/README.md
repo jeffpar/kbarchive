@@ -6,6 +6,8 @@ permalink: /kb/194/Q194628/
 
 ## Q194628: PRB: Learning Edition Does Not Ship With the Data Form Wizard
 
+{% raw %}
+
 	Article: Q194628
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -65,3 +67,5 @@ permalink: /kb/194/Q194628/
 	
 	=============================================================================
 	
+
+{% endraw %}

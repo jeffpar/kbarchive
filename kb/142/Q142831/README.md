@@ -6,6 +6,8 @@ permalink: /kb/142/Q142831/
 
 ## Q142831: PRB: DBList Shrinks When Toggling Appearance Property
 
+{% raw %}
+
 	Article: Q142831
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -79,3 +81,5 @@ permalink: /kb/142/Q142831/
 	
 	=============================================================================
 	
+
+{% endraw %}

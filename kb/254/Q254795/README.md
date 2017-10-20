@@ -6,6 +6,8 @@ permalink: /kb/254/Q254795/
 
 ## Q254795: XADM: CDOSYS Stops While Sending or Posting by Using Port
 
+{% raw %}
+
 	Article: Q254795
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/254/Q254795/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/295/Q295771/
 
 ## Q295771: SMS: &quot;Restricted Group&quot; Policy Prevents SMS Client Installation
 
+{% raw %}
+
 	Article: Q295771
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -81,3 +83,5 @@ permalink: /kb/295/Q295771/
 	
 	=============================================================================
 	
+
+{% endraw %}

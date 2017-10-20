@@ -6,6 +6,8 @@ permalink: /kb/160/Q160034/
 
 ## Q160034: Modem Disconnected Before PC Card Modem Detects Dial Tone
 
+{% raw %}
+
 	Article: Q160034
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -53,3 +55,5 @@ permalink: /kb/160/Q160034/
 	
 	=============================================================================
 	
+
+{% endraw %}

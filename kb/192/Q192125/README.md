@@ -6,6 +6,8 @@ permalink: /kb/192/Q192125/
 
 ## Q192125: XCON: Messages Set for Delayed Delivery Sent at Wrong Time
 
+{% raw %}
+
 	Article: Q192125
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5,8.0,8.01,8.02,8.03,8.5
@@ -99,3 +101,5 @@ permalink: /kb/192/Q192125/
 	
 	=============================================================================
 	
+
+{% endraw %}

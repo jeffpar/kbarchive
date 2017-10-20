@@ -6,6 +6,8 @@ permalink: /kb/189/Q189073/
 
 ## Q189073: BUG: Step 2 of the MFC AppWizard Does Not Set Macro Values
 
+{% raw %}
+
 	Article: Q189073
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -134,3 +136,5 @@ permalink: /kb/189/Q189073/
 	
 	=============================================================================
 	
+
+{% endraw %}

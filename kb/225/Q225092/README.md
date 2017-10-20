@@ -6,6 +6,8 @@ permalink: /kb/225/Q225092/
 
 ## Q225092: Evicting a Node in a Cluster Can Cause Problems in SQL
 
+{% raw %}
+
 	Article: Q225092
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,4.0,6.5,7.0
@@ -68,3 +70,5 @@ permalink: /kb/225/Q225092/
 	
 	=============================================================================
 	
+
+{% endraw %}

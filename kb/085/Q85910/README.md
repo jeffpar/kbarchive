@@ -6,6 +6,8 @@ permalink: /kb/085/Q85910/
 
 ## Q85910: IBM LSP Drivers Err Msg: Invalid Shared RAM Address
 
+{% raw %}
+
 	Article: Q85910
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -75,3 +77,5 @@ permalink: /kb/085/Q85910/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99389/
 
 ## Q99389: FIX: RW2002 Error From Long Resource Identifier
 
+{% raw %}
+
 	Article: Q99389
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/099/Q99389/
 	
 	=============================================================================
 	
+
+{% endraw %}

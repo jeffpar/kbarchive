@@ -6,6 +6,8 @@ permalink: /kb/100/Q100724/
 
 ## Q100724: DEVICE? and DEVICEHIGH? Statements Not Functioning
 
+{% raw %}
+
 	Article: Q100724
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -42,3 +44,5 @@ permalink: /kb/100/Q100724/
 	
 	=============================================================================
 	
+
+{% endraw %}

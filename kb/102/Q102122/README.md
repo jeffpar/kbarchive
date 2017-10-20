@@ -6,6 +6,8 @@ permalink: /kb/102/Q102122/
 
 ## Q102122: Mac SMI: MAPI For AppleTalk Networks Error Codes
 
+{% raw %}
+
 	Article: Q102122
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -84,3 +86,5 @@ permalink: /kb/102/Q102122/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134243/
 
 ## Q134243: PRB: Disabled ComboBox Item Disappears
 
+{% raw %}
+
 	Article: Q134243
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -82,3 +84,5 @@ permalink: /kb/134/Q134243/
 	
 	=============================================================================
 	
+
+{% endraw %}

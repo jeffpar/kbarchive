@@ -6,6 +6,8 @@ permalink: /kb/168/Q168655/
 
 ## Q168655: List of Bugs Fixed in SNA Server 3.0 Service Pack 2
 
+{% raw %}
+
 	Article: Q168655
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2
@@ -215,3 +217,5 @@ permalink: /kb/168/Q168655/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117818/
 
 ## Q117818: Mac Cinemania 94: Crash When Using PopChar
 
+{% raw %}
+
 	Article: Q117818
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -52,3 +54,5 @@ permalink: /kb/117/Q117818/
 	
 	=============================================================================
 	
+
+{% endraw %}

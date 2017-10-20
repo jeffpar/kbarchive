@@ -6,6 +6,8 @@ permalink: /kb/119/Q119066/
 
 ## Q119066: BOOTLOG.TXT Failure Codes
 
+{% raw %}
+
 	Article: Q119066
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -88,3 +90,5 @@ permalink: /kb/119/Q119066/
 	
 	=============================================================================
 	
+
+{% endraw %}

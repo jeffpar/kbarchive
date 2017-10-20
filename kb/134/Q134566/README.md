@@ -6,6 +6,8 @@ permalink: /kb/134/Q134566/
 
 ## Q134566: Adobe Photoshop Version 2.5 Does Not Run in Windows 95
 
+{% raw %}
+
 	Article: Q134566
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/134/Q134566/
 	
 	=============================================================================
 	
+
+{% endraw %}

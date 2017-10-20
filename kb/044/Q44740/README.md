@@ -6,6 +6,8 @@ permalink: /kb/044/Q44740/
 
 ## Q44740: INFO: General Information About Windows WM_TIMER Messages
 
+{% raw %}
+
 	Article: Q44740
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -77,3 +79,5 @@ permalink: /kb/044/Q44740/
 	
 	=============================================================================
 	
+
+{% endraw %}

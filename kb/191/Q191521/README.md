@@ -6,6 +6,8 @@ permalink: /kb/191/Q191521/
 
 ## Q191521: FIX: DROP TABLE Case Sensitive if Table in Persistent Relation
 
+{% raw %}
+
 	Article: Q191521
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -86,3 +88,5 @@ permalink: /kb/191/Q191521/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/298/Q298144/
 
 ## Q298144: HOWTO: Associate a Graphic with a Menu Item
 
+{% raw %}
+
 	Article: Q298144
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -153,3 +155,5 @@ permalink: /kb/298/Q298144/
 	
 	=============================================================================
 	
+
+{% endraw %}

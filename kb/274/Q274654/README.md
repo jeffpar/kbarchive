@@ -6,6 +6,8 @@ permalink: /kb/274/Q274654/
 
 ## Q274654: CFS2: Aircraft Textures Appear Black in Spot Plane View
 
+{% raw %}
+
 	Article: Q274654
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -79,3 +81,5 @@ permalink: /kb/274/Q274654/
 	
 	=============================================================================
 	
+
+{% endraw %}

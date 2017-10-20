@@ -6,6 +6,8 @@ permalink: /kb/214/Q214970/
 
 ## Q214970: WMI Error Message: Installation Aborted! Internal Error
 
+{% raw %}
+
 	Article: Q214970
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -75,3 +77,5 @@ permalink: /kb/214/Q214970/
 	
 	=============================================================================
 	
+
+{% endraw %}

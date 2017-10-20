@@ -6,6 +6,8 @@ permalink: /kb/114/Q114031/
 
 ## Q114031: PC Ext: External 3.2.5 Doesn't Accept SendHomeOnly Parameter
 
+{% raw %}
+
 	Article: Q114031
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -96,3 +98,5 @@ permalink: /kb/114/Q114031/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40139/
 
 ## Q40139: NORTON Programming Guide for BASICS (TSR) Fails with QB 4.50
 
+{% raw %}
+
 	Article: Q40139
 	Product(s): See article
 	Version(s): 4.50
@@ -21,3 +23,5 @@ permalink: /kb/040/Q40139/
 	Microsoft has not officially tested this product with QuickBASIC and
 	makes no guarantees of compatibility. As always, you should be careful
 	using any memory-resident (TSR) program with QuickBASIC.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129649/
 
 ## Q129649: PRB: GetActiveView Returns NULL for an MDI Frame Window
 
+{% raw %}
+
 	Article: Q129649
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -106,3 +108,5 @@ permalink: /kb/129/Q129649/
 	
 	=============================================================================
 	
+
+{% endraw %}

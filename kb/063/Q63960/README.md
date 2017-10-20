@@ -6,6 +6,8 @@ permalink: /kb/063/Q63960/
 
 ## Q63960: Enabling the Windows 3.0 PostScript Error Handler
 
+{% raw %}
+
 	Article: Q63960
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -60,3 +62,5 @@ permalink: /kb/063/Q63960/
 	
 	=============================================================================
 	
+
+{% endraw %}

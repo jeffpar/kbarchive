@@ -6,6 +6,8 @@ permalink: /kb/246/Q246203/
 
 ## Q246203: XWEB: Configuring OWA Outside the Default Web Site
 
+{% raw %}
+
 	Article: Q246203
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -112,3 +114,5 @@ permalink: /kb/246/Q246203/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171556/
 
 ## Q171556: FIX: VB5 IDE Causes Exception Violation During Unload of Form
 
+{% raw %}
+
 	Article: Q171556
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -64,3 +66,5 @@ permalink: /kb/171/Q171556/
 	
 	=============================================================================
 	
+
+{% endraw %}

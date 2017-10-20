@@ -6,6 +6,8 @@ permalink: /kb/119/Q119641/
 
 ## Q119641: Mac GW: Solution for Possible Multiple MS Mail GW
 
+{% raw %}
+
 	Article: Q119641
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -67,3 +69,5 @@ permalink: /kb/119/Q119641/
 	
 	=============================================================================
 	
+
+{% endraw %}

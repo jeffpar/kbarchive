@@ -6,6 +6,8 @@ permalink: /kb/197/Q197827/
 
 ## Q197827: WD97: SET Fields Within IF Field Evaluate Incorrectly
 
+{% raw %}
+
 	Article: Q197827
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -30,7 +32,7 @@ permalink: /kb/197/Q197827/
 	For example, these statements
 	
 	        {ask gender "What is the person's gender?"}
-	   -->  {if gender = f {set pronoun she}{set pronoun he} }
+	   -->  {if gender = f {set pronoun she}{set pronoun he}}
 	        {ref pronoun}
 	
 	always show the bookmark "pronoun" as "he". This is because Word evaluates fields
@@ -47,7 +49,7 @@ permalink: /kb/197/Q197827/
 	SET field, as in the following example:
 	
 	        {ask gender "What is the person's gender?"}
-	   -->  {set pronoun {if gender = f "she" "he"} }
+	   -->  {set pronoun {if gender = f "she" "he"}}
 	        {ref pronoun}
 	
 	Additional query words: winword2 define assign wrong value incorrect
@@ -60,3 +62,5 @@ permalink: /kb/197/Q197827/
 	
 	=============================================================================
 	
+
+{% endraw %}

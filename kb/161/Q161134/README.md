@@ -6,6 +6,8 @@ permalink: /kb/161/Q161134/
 
 ## Q161134: PPT: Sample Code to Control Word from a PowerPoint Macro
 
+{% raw %}
+
 	Article: Q161134
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -137,3 +139,5 @@ permalink: /kb/161/Q161134/
 	
 	=============================================================================
 	
+
+{% endraw %}

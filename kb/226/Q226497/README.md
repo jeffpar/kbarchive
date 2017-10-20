@@ -6,6 +6,8 @@ permalink: /kb/226/Q226497/
 
 ## Q226497: Static Mappings Not Replaced if Migrate ON/OFF Enabled
 
+{% raw %}
+
 	Article: Q226497
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/226/Q226497/
 	
 	=============================================================================
 	
+
+{% endraw %}

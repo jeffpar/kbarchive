@@ -6,6 +6,8 @@ permalink: /kb/158/Q158908/
 
 ## Q158908: XCLN: Options Not Available in Forms Designer
 
+{% raw %}
+
 	Article: Q158908
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -58,3 +60,5 @@ permalink: /kb/158/Q158908/
 	
 	=============================================================================
 	
+
+{% endraw %}

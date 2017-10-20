@@ -6,6 +6,8 @@ permalink: /kb/167/Q167012/
 
 ## Q167012: INFO: Setting Control Panel Tools to Start After Unattended Setu
 
+{% raw %}
+
 	Article: Q167012
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -125,3 +127,5 @@ permalink: /kb/167/Q167012/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150170/
 
 ## Q150170: Telecommander Audio Driver Fails When You Open MS-DOS Prompt
 
+{% raw %}
+
 	Article: Q150170
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/150/Q150170/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160827/
 
 ## Q160827: ErrMsg: Failed to Purged the NBT Remote Cache Table
 
+{% raw %}
+
 	Article: Q160827
 	Product(s): Microsoft Windows NT
 	Version(s): Win95
@@ -58,3 +60,5 @@ permalink: /kb/160/Q160827/
 	
 	=============================================================================
 	
+
+{% endraw %}

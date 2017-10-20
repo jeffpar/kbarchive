@@ -6,6 +6,8 @@ permalink: /kb/213/Q213249/
 
 ## Q213249: SMS Remote Control Service Is Not Installed After Upgrading
 
+{% raw %}
+
 	Article: Q213249
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -84,3 +86,5 @@ permalink: /kb/213/Q213249/
 	
 	=============================================================================
 	
+
+{% endraw %}

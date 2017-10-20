@@ -6,6 +6,8 @@ permalink: /kb/171/Q171039/
 
 ## Q171039: SMS: File Transfer Window Freezes
 
+{% raw %}
+
 	Article: Q171039
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -59,3 +61,5 @@ permalink: /kb/171/Q171039/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122676/
 
 ## Q122676: INFO: Multiple Threads and MFC _USRDLLs
 
+{% raw %}
+
 	Article: Q122676
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,4.0,4.1
@@ -79,3 +81,5 @@ permalink: /kb/122/Q122676/
 	
 	=============================================================================
 	
+
+{% endraw %}

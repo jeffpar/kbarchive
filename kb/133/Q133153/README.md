@@ -6,6 +6,8 @@ permalink: /kb/133/Q133153/
 
 ## Q133153: Microsoft Backup for Windows 95 Questions and Answers
 
+{% raw %}
+
 	Article: Q133153
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -128,3 +130,5 @@ permalink: /kb/133/Q133153/
 	
 	=============================================================================
 	
+
+{% endraw %}

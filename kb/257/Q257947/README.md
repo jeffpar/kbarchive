@@ -6,6 +6,8 @@ permalink: /kb/257/Q257947/
 
 ## Q257947: PRB: Runtime Error 7 : Out of Memory Error Message
 
+{% raw %}
+
 	Article: Q257947
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP3,6.0 SP4
@@ -120,3 +122,5 @@ permalink: /kb/257/Q257947/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176695/
 
 ## Q176695: PRB: ExitWindowsEx API Does Not Reboot Windows NT
 
+{% raw %}
+
 	Article: Q176695
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -153,3 +155,5 @@ permalink: /kb/176/Q176695/
 	
 	=============================================================================
 	
+
+{% endraw %}

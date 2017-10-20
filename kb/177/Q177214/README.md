@@ -6,6 +6,8 @@ permalink: /kb/177/Q177214/
 
 ## Q177214: PRB: Setup Wizard Does Not Use Updated Run Time Files
 
+{% raw %}
+
 	Article: Q177214
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,97sp2
@@ -104,3 +106,5 @@ permalink: /kb/177/Q177214/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197230/
 
 ## Q197230: HOWTO: Deploy Visual SourceSafe Across a Proxy Server
 
+{% raw %}
+
 	Article: Q197230
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/197/Q197230/
 	
 	=============================================================================
 	
+
+{% endraw %}

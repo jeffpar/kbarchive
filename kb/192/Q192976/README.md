@@ -6,6 +6,8 @@ permalink: /kb/192/Q192976/
 
 ## Q192976: PRB: VFP 6.0 Application Requires FoxFont In Fonts Directory
 
+{% raw %}
+
 	Article: Q192976
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -183,3 +185,5 @@ permalink: /kb/192/Q192976/
 	
 	=============================================================================
 	
+
+{% endraw %}

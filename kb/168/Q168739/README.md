@@ -6,6 +6,8 @@ permalink: /kb/168/Q168739/
 
 ## Q168739: XADM: Error 2182 Attempting to Start Information Store
 
+{% raw %}
+
 	Article: Q168739
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0 5.5
@@ -82,3 +84,5 @@ permalink: /kb/168/Q168739/
 	
 	=============================================================================
 	
+
+{% endraw %}

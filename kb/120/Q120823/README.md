@@ -6,6 +6,8 @@ permalink: /kb/120/Q120823/
 
 ## Q120823: Remove Folders Policy Confusing
 
+{% raw %}
+
 	Article: Q120823
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/120/Q120823/
 	
 	=============================================================================
 	
+
+{% endraw %}

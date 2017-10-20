@@ -6,6 +6,8 @@ permalink: /kb/195/Q195123/
 
 ## Q195123: AV in DNS Server When Enumerating a Zone w/ WK Resource Records
 
+{% raw %}
+
 	Article: Q195123
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/195/Q195123/
 	
 	=============================================================================
 	
+
+{% endraw %}

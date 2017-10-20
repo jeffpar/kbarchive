@@ -6,6 +6,8 @@ permalink: /kb/244/Q244770/
 
 ## Q244770: XADM: StorStat Error Message: Cannot Parse a Result Message
 
+{% raw %}
+
 	Article: Q244770
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,8.0,8.01,8.02,8.03,8.04,8.5; winnt:5.5
@@ -80,3 +82,5 @@ permalink: /kb/244/Q244770/
 	
 	=============================================================================
 	
+
+{% endraw %}

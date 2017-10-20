@@ -6,6 +6,8 @@ permalink: /kb/061/Q61227/
 
 ## Q61227: C 6.00 README: NMAKE: Avoiding Out-of-Memory Condition w/DOS
 
+{% raw %}
+
 	Article: Q61227
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -22,3 +24,5 @@ permalink: /kb/061/Q61227/
 	  makefiles under DOS, you can use the alternate program NMK.COM. For
 	  further information about NMK, type NMK /HELP at the operating
 	  system prompt.
+
+{% endraw %}

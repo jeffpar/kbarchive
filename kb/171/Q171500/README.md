@@ -6,6 +6,8 @@ permalink: /kb/171/Q171500/
 
 ## Q171500: FIX: ATL Controls Without IPropertyNotifySink Cause IPF in VB5
 
+{% raw %}
+
 	Article: Q171500
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -65,3 +67,5 @@ permalink: /kb/171/Q171500/
 	
 	=============================================================================
 	
+
+{% endraw %}

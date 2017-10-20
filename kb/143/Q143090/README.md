@@ -6,6 +6,8 @@ permalink: /kb/143/Q143090/
 
 ## Q143090: FP: Overview of WebBot Components
 
+{% raw %}
+
 	Article: Q143090
 	Product(s): Word Front Page
 	Version(s): ; MACINTOSH:1.0; WINDOWS:1.0,1.1
@@ -186,3 +188,5 @@ permalink: /kb/143/Q143090/
 	
 	=============================================================================
 	
+
+{% endraw %}

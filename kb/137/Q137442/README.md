@@ -6,6 +6,8 @@ permalink: /kb/137/Q137442/
 
 ## Q137442: Why the Check Box Object Has No ReadOnly Property
 
+{% raw %}
+
 	Article: Q137442
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/137/Q137442/
 	
 	=============================================================================
 	
+
+{% endraw %}

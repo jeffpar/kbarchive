@@ -6,6 +6,8 @@ permalink: /kb/121/Q121949/
 
 ## Q121949: INFO: MFC OLE Classes Do Not Support &quot;Embed in self&quot;
 
+{% raw %}
+
 	Article: Q121949
 	Product(s): Microsoft C Compiler
 	Version(s): 1.51,2.0,4.0,4.1,5.0,6.0
@@ -63,3 +65,5 @@ permalink: /kb/121/Q121949/
 	
 	=============================================================================
 	
+
+{% endraw %}

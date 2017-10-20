@@ -6,6 +6,8 @@ permalink: /kb/139/Q139533/
 
 ## Q139533: Multimedia: Program Will Not Launch After New Updates
 
+{% raw %}
+
 	Article: Q139533
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -69,3 +71,5 @@ permalink: /kb/139/Q139533/
 	
 	=============================================================================
 	
+
+{% endraw %}

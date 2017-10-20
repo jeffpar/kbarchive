@@ -6,6 +6,8 @@ permalink: /kb/259/Q259264/
 
 ## Q259264: Unsuccessful Logons and Problems Gaining Access to NDS Resources
 
+{% raw %}
+
 	Article: Q259264
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -119,3 +121,5 @@ permalink: /kb/259/Q259264/
 	
 	=============================================================================
 	
+
+{% endraw %}

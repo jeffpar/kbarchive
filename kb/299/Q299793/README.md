@@ -6,6 +6,8 @@ permalink: /kb/299/Q299793/
 
 ## Q299793: FIX: More than 255 Chars in Coverage Dialog Causes Crash
 
+{% raw %}
+
 	Article: Q299793
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -69,3 +71,5 @@ permalink: /kb/299/Q299793/
 	
 	=============================================================================
 	
+
+{% endraw %}

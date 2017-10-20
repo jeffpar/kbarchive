@@ -6,6 +6,8 @@ permalink: /kb/151/Q151857/
 
 ## Q151857: BUG: Mastering Exchange: Chapter 5 Introduction Audio Cut Off
 
+{% raw %}
+
 	Article: Q151857
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/151/Q151857/
 	
 	=============================================================================
 	
+
+{% endraw %}

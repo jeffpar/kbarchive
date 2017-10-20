@@ -6,6 +6,8 @@ permalink: /kb/035/Q35235/
 
 ## Q35235: Creating Windows in M and MEP
 
+{% raw %}
+
 	Article: Q35235
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -43,3 +45,5 @@ permalink: /kb/035/Q35235/
 	
 	Note: Each window must have a minimum of five lines and 10 columns to be
 	created.
+
+{% endraw %}

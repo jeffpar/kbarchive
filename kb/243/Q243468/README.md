@@ -6,6 +6,8 @@ permalink: /kb/243/Q243468/
 
 ## Q243468: Default Gateway Changes Unexpectedly on Token Ring Network
 
+{% raw %}
+
 	Article: Q243468
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/243/Q243468/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221554/
 
 ## Q221554: Polish Windows NT Displays Microsoft Sans Serif Font Incorrectly
 
+{% raw %}
+
 	Article: Q221554
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0a,6.0
@@ -57,3 +59,5 @@ permalink: /kb/221/Q221554/
 	
 	=============================================================================
 	
+
+{% endraw %}

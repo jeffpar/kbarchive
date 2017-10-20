@@ -6,6 +6,8 @@ permalink: /kb/164/Q164838/
 
 ## Q164838: XCON: MTA Looping Between HP MTA and Exchange MTA
 
+{% raw %}
+
 	Article: Q164838
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/164/Q164838/
 	
 	=============================================================================
 	
+
+{% endraw %}

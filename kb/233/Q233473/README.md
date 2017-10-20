@@ -6,6 +6,8 @@ permalink: /kb/233/Q233473/
 
 ## Q233473: Business Planner: Files Unexpectedly Appear on Your Desktop
 
+{% raw %}
+
 	Article: Q233473
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -170,3 +172,5 @@ permalink: /kb/233/Q233473/
 	
 	=============================================================================
 	
+
+{% endraw %}

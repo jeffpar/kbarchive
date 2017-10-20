@@ -6,6 +6,8 @@ permalink: /kb/117/Q117806/
 
 ## Q117806: DoubleSpace Conversion Kit: Description &amp; How to Obtain
 
+{% raw %}
+
 	Article: Q117806
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -131,3 +133,5 @@ permalink: /kb/117/Q117806/
 	
 	=============================================================================
 	
+
+{% endraw %}

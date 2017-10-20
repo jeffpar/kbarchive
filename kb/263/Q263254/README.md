@@ -6,6 +6,8 @@ permalink: /kb/263/Q263254/
 
 ## Q263254: BUG: GraphByRecord FFC Missing Class
 
+{% raw %}
+
 	Article: Q263254
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -73,3 +75,5 @@ permalink: /kb/263/Q263254/
 	
 	=============================================================================
 	
+
+{% endraw %}

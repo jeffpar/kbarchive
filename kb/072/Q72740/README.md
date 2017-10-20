@@ -6,6 +6,8 @@ permalink: /kb/072/Q72740/
 
 ## Q72740: Bypassing the 'Welcome to MS-DOS QBasic' Window
 
+{% raw %}
+
 	Article: Q72740
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -62,3 +64,5 @@ permalink: /kb/072/Q72740/
 	
 	=============================================================================
 	
+
+{% endraw %}

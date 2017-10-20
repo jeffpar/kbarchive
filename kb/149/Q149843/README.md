@@ -6,6 +6,8 @@ permalink: /kb/149/Q149843/
 
 ## Q149843: FP: Personal Web Server Cannot Bind to Port 80
 
+{% raw %}
+
 	Article: Q149843
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97
@@ -96,3 +98,5 @@ permalink: /kb/149/Q149843/
 	
 	=============================================================================
 	
+
+{% endraw %}

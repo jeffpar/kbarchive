@@ -6,6 +6,8 @@ permalink: /kb/162/Q162770/
 
 ## Q162770: Access Violation in Spooler When Using Notepad
 
+{% raw %}
+
 	Article: Q162770
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -66,3 +68,5 @@ permalink: /kb/162/Q162770/
 	
 	=============================================================================
 	
+
+{% endraw %}

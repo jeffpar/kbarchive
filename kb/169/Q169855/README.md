@@ -6,6 +6,8 @@ permalink: /kb/169/Q169855/
 
 ## Q169855: Print Service Doesn't Process Carriage Return Properly
 
+{% raw %}
+
 	Article: Q169855
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -69,3 +71,5 @@ permalink: /kb/169/Q169855/
 	
 	=============================================================================
 	
+
+{% endraw %}

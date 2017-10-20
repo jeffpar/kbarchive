@@ -6,6 +6,8 @@ permalink: /kb/139/Q139674/
 
 ## Q139674: Enhanced Error Description for Message 631
 
+{% raw %}
+
 	Article: Q139674
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -95,3 +97,5 @@ permalink: /kb/139/Q139674/
 	
 	=============================================================================
 	
+
+{% endraw %}

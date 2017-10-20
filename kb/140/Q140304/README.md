@@ -6,6 +6,8 @@ permalink: /kb/140/Q140304/
 
 ## Q140304: How to Remove Objects from a Container at Run Time
 
+{% raw %}
+
 	Article: Q140304
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -91,3 +93,5 @@ permalink: /kb/140/Q140304/
 	
 	=============================================================================
 	
+
+{% endraw %}

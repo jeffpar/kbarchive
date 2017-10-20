@@ -6,6 +6,8 @@ permalink: /kb/194/Q194395/
 
 ## Q194395: Windows NT Option Pack Installation Fails on Terminal Server 4.0
 
+{% raw %}
+
 	Article: Q194395
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/194/Q194395/
 	
 	=============================================================================
 	
+
+{% endraw %}

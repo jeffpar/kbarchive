@@ -6,6 +6,8 @@ permalink: /kb/299/Q299799/
 
 ## Q299799: FIX: Using Class w/ Same Name as a Base Class Causes Error
 
+{% raw %}
+
 	Article: Q299799
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -76,3 +78,5 @@ permalink: /kb/299/Q299799/
 	
 	=============================================================================
 	
+
+{% endraw %}

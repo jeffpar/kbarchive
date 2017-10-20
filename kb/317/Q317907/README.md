@@ -6,6 +6,8 @@ permalink: /kb/317/Q317907/
 
 ## Q317907: Games and Hardware: How to Get Information for Rebates
 
+{% raw %}
+
 	Article: Q317907
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -106,3 +108,5 @@ permalink: /kb/317/Q317907/
 	
 	=============================================================================
 	
+
+{% endraw %}

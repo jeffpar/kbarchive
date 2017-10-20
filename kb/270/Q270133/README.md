@@ -6,6 +6,8 @@ permalink: /kb/270/Q270133/
 
 ## Q270133: XADM: Exchange Notes Connector Loses Notes Address
 
+{% raw %}
+
 	Article: Q270133
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -83,3 +85,5 @@ permalink: /kb/270/Q270133/
 	
 	=============================================================================
 	
+
+{% endraw %}

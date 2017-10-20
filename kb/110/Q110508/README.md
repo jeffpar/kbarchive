@@ -6,6 +6,8 @@ permalink: /kb/110/Q110508/
 
 ## Q110508: HOWTO: Create Tables with Foundation Database Classes
 
+{% raw %}
+
 	Article: Q110508
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5 1.51 1.52 2.0 2.1
@@ -103,3 +105,5 @@ permalink: /kb/110/Q110508/
 	
 	=============================================================================
 	
+
+{% endraw %}

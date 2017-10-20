@@ -6,6 +6,8 @@ permalink: /kb/045/Q45349/
 
 ## Q45349: A Problem with Division Always Returning 1
 
+{% raw %}
+
 	Article: Q45349
 	Product(s): See article
 	Version(s): 2.00
@@ -57,3 +59,5 @@ permalink: /kb/045/Q45349/
 	Microsoft has confirmed this to be a problem with QuickC Version 2.00.
 	We are researching this problem and will post new information as it
 	becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242092/
 
 ## Q242092: How to Use System Policies to Hide Drives
 
+{% raw %}
+
 	Article: Q242092
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -111,3 +113,5 @@ permalink: /kb/242/Q242092/
 	
 	=============================================================================
 	
+
+{% endraw %}

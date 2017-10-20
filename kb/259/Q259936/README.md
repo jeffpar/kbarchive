@@ -6,6 +6,8 @@ permalink: /kb/259/Q259936/
 
 ## Q259936: MMC Cannot Administer IIS 4.0 Through Terminal Server Client
 
+{% raw %}
+
 	Article: Q259936
 	Product(s): Internet Information Server
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/259/Q259936/
 	
 	=============================================================================
 	
+
+{% endraw %}

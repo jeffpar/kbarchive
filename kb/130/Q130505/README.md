@@ -6,6 +6,8 @@ permalink: /kb/130/Q130505/
 
 ## Q130505: INFO: Programming in Reports w/ Band Expressions on Entry/Exit
 
+{% raw %}
+
 	Article: Q130505
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/130/Q130505/
 	
 	=============================================================================
 	
+
+{% endraw %}

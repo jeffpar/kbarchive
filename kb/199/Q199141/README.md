@@ -6,6 +6,8 @@ permalink: /kb/199/Q199141/
 
 ## Q199141: XCON: Creating Connector Disks from Select CD Subscription
 
+{% raw %}
+
 	Article: Q199141
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/199/Q199141/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191336/
 
 ## Q191336: SMS: How to Create a Custom Remote Control Group in SMS
 
+{% raw %}
+
 	Article: Q191336
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -145,3 +147,5 @@ permalink: /kb/191/Q191336/
 	
 	=============================================================================
 	
+
+{% endraw %}

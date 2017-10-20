@@ -6,6 +6,8 @@ permalink: /kb/305/Q305203/
 
 ## Q305203: XCON: Reply to SMTP Messages Routed Across X.400 Connector Fails
 
+{% raw %}
+
 	Article: Q305203
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -73,3 +75,5 @@ permalink: /kb/305/Q305203/
 	
 	=============================================================================
 	
+
+{% endraw %}

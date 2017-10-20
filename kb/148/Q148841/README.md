@@ -6,6 +6,8 @@ permalink: /kb/148/Q148841/
 
 ## Q148841: Encarta 1996: Update File Download Hangs or Crashes Encarta
 
+{% raw %}
+
 	Article: Q148841
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -100,3 +102,5 @@ permalink: /kb/148/Q148841/
 	
 	=============================================================================
 	
+
+{% endraw %}

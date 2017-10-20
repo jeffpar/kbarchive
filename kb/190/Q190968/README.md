@@ -6,6 +6,8 @@ permalink: /kb/190/Q190968/
 
 ## Q190968: BUG: IntelliSense Limitations with C++ Classes
 
+{% raw %}
+
 	Article: Q190968
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -182,3 +184,5 @@ permalink: /kb/190/Q190968/
 	
 	=============================================================================
 	
+
+{% endraw %}

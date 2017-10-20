@@ -6,6 +6,8 @@ permalink: /kb/072/Q72258/
 
 ## Q72258: Windows Resource Kit (WRK) Does Not Build Group or Icons
 
+{% raw %}
+
 	Article: Q72258
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/072/Q72258/
 	
 	=============================================================================
 	
+
+{% endraw %}

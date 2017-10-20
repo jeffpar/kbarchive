@@ -6,6 +6,8 @@ permalink: /kb/067/Q67107/
 
 ## Q67107: Far FIELD Variable Assigned to Itself Doesn't UnFIELD in PDS
 
+{% raw %}
+
 	Article: Q67107
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -94,3 +96,5 @@ permalink: /kb/067/Q67107/
 	   test 2345 6789
 	
 	The variable is only unFIELDed when it is changed.
+
+{% endraw %}

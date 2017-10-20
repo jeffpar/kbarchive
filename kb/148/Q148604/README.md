@@ -6,6 +6,8 @@ permalink: /kb/148/Q148604/
 
 ## Q148604: BUG: F1001 Error If Undeclared Namelist Variable in Subroutine
 
+{% raw %}
+
 	Article: Q148604
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/148/Q148604/
 	
 	=============================================================================
 	
+
+{% endraw %}

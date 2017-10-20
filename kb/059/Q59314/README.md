@@ -6,6 +6,8 @@ permalink: /kb/059/Q59314/
 
 ## Q59314: Mouse Driver Conflicts with Novell Network Software
 
+{% raw %}
+
 	Article: Q59314
 	Product(s): See article
 	Version(s): 7.00
@@ -21,3 +23,5 @@ permalink: /kb/059/Q59314/
 	
 	Microsoft is researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

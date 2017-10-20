@@ -6,6 +6,8 @@ permalink: /kb/170/Q170250/
 
 ## Q170250: Msmask32.ocx Control Displays Text Right Aligned
 
+{% raw %}
+
 	Article: Q170250
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/170/Q170250/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159980/
 
 ## Q159980: Remote Link Doesn't Reconnect After Event 23 Outage 0x000A
 
+{% raw %}
+
 	Article: Q159980
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -98,3 +100,5 @@ permalink: /kb/159/Q159980/
 	
 	=============================================================================
 	
+
+{% endraw %}

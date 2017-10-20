@@ -6,6 +6,8 @@ permalink: /kb/166/Q166433/
 
 ## Q166433: Character Map Displays Incorrect Information in Taiwan Locale
 
+{% raw %}
+
 	Article: Q166433
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -44,3 +46,5 @@ permalink: /kb/166/Q166433/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239852/
 
 ## Q239852: NFL Fever 2000: Graphics Are Blurry or Distorted
 
+{% raw %}
+
 	Article: Q239852
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/239/Q239852/
 	
 	=============================================================================
 	
+
+{% endraw %}

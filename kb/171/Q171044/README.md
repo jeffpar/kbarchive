@@ -6,6 +6,8 @@ permalink: /kb/171/Q171044/
 
 ## Q171044: WD97: How to Determine the Number of Days Between Two Dates
 
+{% raw %}
+
 	Article: Q171044
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -112,3 +114,5 @@ permalink: /kb/171/Q171044/
 	
 	=============================================================================
 	
+
+{% endraw %}

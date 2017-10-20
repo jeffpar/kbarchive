@@ -6,6 +6,8 @@ permalink: /kb/269/Q269177/
 
 ## Q269177: SMS: Calls to GetKeyboardType() May Not Work
 
+{% raw %}
+
 	Article: Q269177
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -98,3 +100,5 @@ permalink: /kb/269/Q269177/
 	
 	=============================================================================
 	
+
+{% endraw %}

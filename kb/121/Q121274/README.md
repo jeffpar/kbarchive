@@ -6,6 +6,8 @@ permalink: /kb/121/Q121274/
 
 ## Q121274: Files Used for Remote Access Services (RAS)
 
+{% raw %}
+
 	Article: Q121274
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -102,3 +104,5 @@ permalink: /kb/121/Q121274/
 	
 	=============================================================================
 	
+
+{% endraw %}

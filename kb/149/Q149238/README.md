@@ -6,6 +6,8 @@ permalink: /kb/149/Q149238/
 
 ## Q149238: XADM: Information Store Fails To Start With 1011 Error
 
+{% raw %}
+
 	Article: Q149238
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -97,3 +99,5 @@ permalink: /kb/149/Q149238/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181891/
 
 ## Q181891: BUG: OLE Drag Disabled When ListBox Has Multiple Columns
 
+{% raw %}
+
 	Article: Q181891
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -118,3 +120,5 @@ permalink: /kb/181/Q181891/
 	
 	=============================================================================
 	
+
+{% endraw %}

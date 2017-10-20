@@ -6,6 +6,8 @@ permalink: /kb/136/Q136697/
 
 ## Q136697: How to Set Page Breaks in Visual FoxPro Reports
 
+{% raw %}
+
 	Article: Q136697
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/136/Q136697/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149757/
 
 ## Q149757: Err Msg: The NetWare Compatible Shell Is Not Available
 
+{% raw %}
+
 	Article: Q149757
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -84,3 +86,5 @@ permalink: /kb/149/Q149757/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/047/Q47027/
 
 ## Q47027: C2065: '_asm': Undefined
 
+{% raw %}
+
 	Article: Q47027
 	Product(s): See article
 	Version(s): 2.00
@@ -47,3 +49,5 @@ permalink: /kb/047/Q47027/
 	{
 	  _asm {  mov ax, 5  }
 	}
+
+{% endraw %}

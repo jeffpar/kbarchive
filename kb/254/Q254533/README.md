@@ -6,6 +6,8 @@ permalink: /kb/254/Q254533/
 
 ## Q254533: XADM: Incoming Internet Message Shows Corrupted Display Name
 
+{% raw %}
+
 	Article: Q254533
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -95,3 +97,5 @@ permalink: /kb/254/Q254533/
 	
 	=============================================================================
 	
+
+{% endraw %}

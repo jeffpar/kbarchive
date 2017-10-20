@@ -6,6 +6,8 @@ permalink: /kb/226/Q226812/
 
 ## Q226812: SMS: Error Message: Cannot Install SMS Site Manager
 
+{% raw %}
+
 	Article: Q226812
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -65,3 +67,5 @@ permalink: /kb/226/Q226812/
 	
 	=============================================================================
 	
+
+{% endraw %}

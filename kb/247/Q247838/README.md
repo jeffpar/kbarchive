@@ -6,6 +6,8 @@ permalink: /kb/247/Q247838/
 
 ## Q247838: SMS: Clients Not Installed When Site Server in Resource Domain
 
+{% raw %}
+
 	Article: Q247838
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -64,3 +66,5 @@ permalink: /kb/247/Q247838/
 	
 	=============================================================================
 	
+
+{% endraw %}

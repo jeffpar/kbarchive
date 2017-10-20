@@ -6,6 +6,8 @@ permalink: /kb/034/Q34405/
 
 ## Q34405: Coprocessor Is Slower in QuickBASIC 4.00b, 4.50 than in 4.00
 
+{% raw %}
+
 	Article: Q34405
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00 4.50
@@ -60,3 +62,5 @@ permalink: /kb/034/Q34405/
 	        z = 10.3 ^ 2.3
 	NEXT k%
 	PRINT "elapsed time="; TIMER - start
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43170/
 
 ## Q43170: CV: K Command in Secondary Module Sets Breakpoints in Main
 
+{% raw %}
+
 	Article: Q43170
 	Product(s): See article
 	Version(s): 2.20   | 2.20
@@ -37,3 +39,5 @@ permalink: /kb/043/Q43170/
 	
 	Microsoft is researching this problem and will post new information as
 	it becomes available.
+
+{% endraw %}

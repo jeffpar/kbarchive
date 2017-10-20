@@ -6,6 +6,8 @@ permalink: /kb/138/Q138863/
 
 ## Q138863: SNA Server Setup Always Adds COMNETMN to Registry in Error
 
+{% raw %}
+
 	Article: Q138863
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -70,3 +72,5 @@ permalink: /kb/138/Q138863/
 	
 	=============================================================================
 	
+
+{% endraw %}

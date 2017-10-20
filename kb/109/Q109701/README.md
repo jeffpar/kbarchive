@@ -6,6 +6,8 @@ permalink: /kb/109/Q109701/
 
 ## Q109701: CONN: MACGATE.EXE Supports -MD Command-Line Option
 
+{% raw %}
+
 	Article: Q109701
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -51,3 +53,5 @@ permalink: /kb/109/Q109701/
 	
 	=============================================================================
 	
+
+{% endraw %}

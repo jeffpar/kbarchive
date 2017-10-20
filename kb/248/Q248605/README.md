@@ -6,6 +6,8 @@ permalink: /kb/248/Q248605/
 
 ## Q248605: Cluster IP Address Resource Fails with Many IP Address Resources
 
+{% raw %}
+
 	Article: Q248605
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,4.0
@@ -62,3 +64,5 @@ permalink: /kb/248/Q248605/
 	
 	=============================================================================
 	
+
+{% endraw %}

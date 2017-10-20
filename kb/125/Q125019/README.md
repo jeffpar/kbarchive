@@ -6,6 +6,8 @@ permalink: /kb/125/Q125019/
 
 ## Q125019: Long Filename Creates an MS-DOS Volume Label
 
+{% raw %}
+
 	Article: Q125019
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:3.5,3.51,4.0;MSDOS:5.0,6.0
@@ -136,3 +138,5 @@ permalink: /kb/125/Q125019/
 	
 	=============================================================================
 	
+
+{% endraw %}

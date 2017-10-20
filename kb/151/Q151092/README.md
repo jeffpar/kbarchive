@@ -6,6 +6,8 @@ permalink: /kb/151/Q151092/
 
 ## Q151092: PRB: Mismatched Pushjmp/Popjmp Call Message from Modify Form
 
+{% raw %}
+
 	Article: Q151092
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0b
@@ -144,3 +146,5 @@ permalink: /kb/151/Q151092/
 	
 	=============================================================================
 	
+
+{% endraw %}

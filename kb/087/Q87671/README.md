@@ -6,6 +6,8 @@ permalink: /kb/087/Q87671/
 
 ## Q87671: FoxBASE+ Error Messages: N - Z
 
+{% raw %}
+
 	Article: Q87671
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.17
@@ -206,3 +208,5 @@ permalink: /kb/087/Q87671/
 	
 	=============================================================================
 	
+
+{% endraw %}

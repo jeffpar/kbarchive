@@ -6,6 +6,8 @@ permalink: /kb/139/Q139363/
 
 ## Q139363: FIX: Setup Wizard Creates Disk Images That Are Too Big
 
+{% raw %}
+
 	Article: Q139363
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -59,3 +61,5 @@ permalink: /kb/139/Q139363/
 	
 	=============================================================================
 	
+
+{% endraw %}

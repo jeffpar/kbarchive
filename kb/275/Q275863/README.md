@@ -6,6 +6,8 @@ permalink: /kb/275/Q275863/
 
 ## Q275863: PRB: View Designer Sets Decimal Places to 3 for Double Data Type
 
+{% raw %}
+
 	Article: Q275863
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -81,3 +83,5 @@ permalink: /kb/275/Q275863/
 	
 	=============================================================================
 	
+
+{% endraw %}

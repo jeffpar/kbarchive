@@ -6,6 +6,8 @@ permalink: /kb/240/Q240960/
 
 ## Q240960: Pandora's Box: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q240960
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/240/Q240960/
 	
 	=============================================================================
 	
+
+{% endraw %}

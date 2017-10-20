@@ -6,6 +6,8 @@ permalink: /kb/091/Q91664/
 
 ## Q91664: MS-DOS Backup Err Msg: Unable to Open Component File
 
+{% raw %}
+
 	Article: Q91664
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -72,3 +74,5 @@ permalink: /kb/091/Q91664/
 	
 	=============================================================================
 	
+
+{% endraw %}

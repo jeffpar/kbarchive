@@ -6,6 +6,8 @@ permalink: /kb/111/Q111927/
 
 ## Q111927: WFWG 3.11 System Hangs with Shiva SREMOTE.DOS
 
+{% raw %}
+
 	Article: Q111927
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -67,3 +69,5 @@ permalink: /kb/111/Q111927/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172768/
 
 ## Q172768: MSN and Internet Desktop Icons Do Not Respond
 
+{% raw %}
+
 	Article: Q172768
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -68,3 +70,5 @@ permalink: /kb/172/Q172768/
 	
 	=============================================================================
 	
+
+{% endraw %}

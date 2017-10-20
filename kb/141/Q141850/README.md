@@ -6,6 +6,8 @@ permalink: /kb/141/Q141850/
 
 ## Q141850: MSIC: Routing Options for (800) 426-9400
 
+{% raw %}
+
 	Article: Q141850
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/141/Q141850/
 	
 	=============================================================================
 	
+
+{% endraw %}

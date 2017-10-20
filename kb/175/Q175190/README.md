@@ -6,6 +6,8 @@ permalink: /kb/175/Q175190/
 
 ## Q175190: HOWTO: Add ATL Support to an MFC EXE
 
+{% raw %}
+
 	Article: Q175190
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0,2.1
@@ -206,3 +208,5 @@ permalink: /kb/175/Q175190/
 	
 	=============================================================================
 	
+
+{% endraw %}

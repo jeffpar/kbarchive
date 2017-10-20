@@ -6,6 +6,8 @@ permalink: /kb/150/Q150726/
 
 ## Q150726: INFO: Files Installed with All Editions of Visual Basic 4.0
 
+{% raw %}
+
 	Article: Q150726
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -1033,3 +1035,5 @@ permalink: /kb/150/Q150726/
 	
 	=============================================================================
 	
+
+{% endraw %}

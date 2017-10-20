@@ -6,6 +6,8 @@ permalink: /kb/192/Q192177/
 
 ## Q192177: XADM: Missing Entry Points in Gapi32.dll
 
+{% raw %}
+
 	Article: Q192177
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1
@@ -85,3 +87,5 @@ permalink: /kb/192/Q192177/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190288/
 
 ## Q190288: SecHole Lets Non-administrative Users Gain Debug Level Access
 
+{% raw %}
+
 	Article: Q190288
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -174,3 +176,5 @@ permalink: /kb/190/Q190288/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137808/
 
 ## Q137808: FIX: Empty Error Log File Created with the Converter
 
+{% raw %}
+
 	Article: Q137808
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -82,3 +84,5 @@ permalink: /kb/137/Q137808/
 	
 	=============================================================================
 	
+
+{% endraw %}

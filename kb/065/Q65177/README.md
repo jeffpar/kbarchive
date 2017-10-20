@@ -6,6 +6,8 @@ permalink: /kb/065/Q65177/
 
 ## Q65177: &quot;Out of Stack Space&quot; Using RETURN &lt;linenumber&gt; for SUB Event
 
+{% raw %}
+
 	Article: Q65177
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -109,3 +111,5 @@ permalink: /kb/065/Q65177/
 	event-handling with the RETURN <linenumber> statement leaves
 	unrecoverable information on the stack, which eventually leads to the
 	error message "Out of Stack Space" after many trapped events.
+
+{% endraw %}

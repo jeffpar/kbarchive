@@ -6,6 +6,8 @@ permalink: /kb/216/Q216889/
 
 ## Q216889: FIX: DCOM95 1.2 or DCOM98 Causes Data Corruption in RPC Calls
 
+{% raw %}
+
 	Article: Q216889
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -132,3 +134,5 @@ permalink: /kb/216/Q216889/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182069/
 
 ## Q182069: BUG: Compile Error on Print Statement in a With..End Block
 
+{% raw %}
+
 	Article: Q182069
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -98,3 +100,5 @@ permalink: /kb/182/Q182069/
 	
 	=============================================================================
 	
+
+{% endraw %}

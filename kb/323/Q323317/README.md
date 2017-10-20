@@ -6,6 +6,8 @@ permalink: /kb/323/Q323317/
 
 ## Q323317: HOW TO: Create an IIS Baseline by Using the Web Service Object
 
+{% raw %}
+
 	Article: Q323317
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -230,3 +232,5 @@ permalink: /kb/323/Q323317/
 	
 	=============================================================================
 	
+
+{% endraw %}

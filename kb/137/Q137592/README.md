@@ -6,6 +6,8 @@ permalink: /kb/137/Q137592/
 
 ## Q137592: Mouse and Keyboard Stop Functioning with Asus Motherboard
 
+{% raw %}
+
 	Article: Q137592
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/137/Q137592/
 	
 	=============================================================================
 	
+
+{% endraw %}

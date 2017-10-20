@@ -6,6 +6,8 @@ permalink: /kb/174/Q174653/
 
 ## Q174653: How to Call CoGetClassObjectFromURL() in an MFC App
 
+{% raw %}
+
 	Article: Q174653
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.01,5.0,6.0
@@ -108,3 +110,5 @@ permalink: /kb/174/Q174653/
 	
 	=============================================================================
 	
+
+{% endraw %}

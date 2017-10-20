@@ -6,6 +6,8 @@ permalink: /kb/042/Q42593/
 
 ## Q42593: Problem Using the Edit Keys on Zenith 184 Supersport Laptop
 
+{% raw %}
+
 	Article: Q42593
 	Product(s): See article
 	Version(s): 4.50
@@ -25,3 +27,5 @@ permalink: /kb/042/Q42593/
 	key.
 	
 	Microsoft has not confirmed this information.
+
+{% endraw %}

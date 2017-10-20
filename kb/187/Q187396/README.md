@@ -6,6 +6,8 @@ permalink: /kb/187/Q187396/
 
 ## Q187396: Monster Truck Madness 2: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q187396
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -88,3 +90,5 @@ permalink: /kb/187/Q187396/
 	
 	=============================================================================
 	
+
+{% endraw %}

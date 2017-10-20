@@ -6,6 +6,8 @@ permalink: /kb/110/Q110816/
 
 ## Q110816: Mac Wkst: Address Window Too Large for Color Classic
 
+{% raw %}
+
 	Article: Q110816
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1d
@@ -52,3 +54,5 @@ permalink: /kb/110/Q110816/
 	
 	=============================================================================
 	
+
+{% endraw %}

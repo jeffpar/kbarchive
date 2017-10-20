@@ -6,6 +6,8 @@ permalink: /kb/094/Q94475/
 
 ## Q94475: Error When Playing Sample .AVI Files on CD-ROM
 
+{% raw %}
+
 	Article: Q94475
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/094/Q94475/
 	
 	=============================================================================
 	
+
+{% endraw %}

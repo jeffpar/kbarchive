@@ -6,6 +6,8 @@ permalink: /kb/320/Q320013/
 
 ## Q320013: Encarta Online Deluxe: &quot;Does Not Recognize Passport&quot; Err Msg
 
+{% raw %}
+
 	Article: Q320013
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -123,3 +125,5 @@ permalink: /kb/320/Q320013/
 	
 	=============================================================================
 	
+
+{% endraw %}

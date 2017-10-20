@@ -6,6 +6,8 @@ permalink: /kb/142/Q142711/
 
 ## Q142711: Windows NT Hangs on Alpha with &gt; 1 GB System Memory
 
+{% raw %}
+
 	Article: Q142711
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -53,3 +55,5 @@ permalink: /kb/142/Q142711/
 	
 	=============================================================================
 	
+
+{% endraw %}

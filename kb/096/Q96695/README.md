@@ -6,6 +6,8 @@ permalink: /kb/096/Q96695/
 
 ## Q96695: Install Programs May Not Update Drivers with Multi-Config
 
+{% raw %}
+
 	Article: Q96695
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -49,3 +51,5 @@ permalink: /kb/096/Q96695/
 	
 	=============================================================================
 	
+
+{% endraw %}

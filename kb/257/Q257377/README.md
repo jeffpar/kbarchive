@@ -6,6 +6,8 @@ permalink: /kb/257/Q257377/
 
 ## Q257377: Allegiance: Purple Veins Appear on Objects at High Resolutions
 
+{% raw %}
+
 	Article: Q257377
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -88,3 +90,5 @@ permalink: /kb/257/Q257377/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194364/
 
 ## Q194364: Timezone.exe Application Not Included with Resource Kit
 
+{% raw %}
+
 	Article: Q194364
 	Product(s): Microsoft Windows NT
 	Version(s): Windows:95;WinNT:3.51,4.0
@@ -55,3 +57,5 @@ permalink: /kb/194/Q194364/
 	
 	=============================================================================
 	
+
+{% endraw %}

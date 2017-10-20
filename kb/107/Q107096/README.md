@@ -6,6 +6,8 @@ permalink: /kb/107/Q107096/
 
 ## Q107096: PROFS: File Format for Semi-Auto Address List Request Token
 
+{% raw %}
+
 	Article: Q107096
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.1,3.2,3.3,3.4
@@ -58,3 +60,5 @@ permalink: /kb/107/Q107096/
 	
 	=============================================================================
 	
+
+{% endraw %}

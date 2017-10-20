@@ -6,6 +6,8 @@ permalink: /kb/308/Q308606/
 
 ## Q308606: FIX: VFP 7.0 Hangs If Immersion Desktop Software Is Running
 
+{% raw %}
+
 	Article: Q308606
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -93,3 +95,5 @@ permalink: /kb/308/Q308606/
 	
 	=============================================================================
 	
+
+{% endraw %}

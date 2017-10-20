@@ -6,6 +6,8 @@ permalink: /kb/228/Q228532/
 
 ## Q228532: SMS: French Conv20.exe Fails to Convert 1.2 Databases Char Set
 
+{% raw %}
+
 	Article: Q228532
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -65,3 +67,5 @@ permalink: /kb/228/Q228532/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99237/
 
 ## Q99237: QuicKeys Intercepts Keystrokes Before Applications with Focus
 
+{% raw %}
+
 	Article: Q99237
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 edition,2.0
@@ -68,3 +70,5 @@ permalink: /kb/099/Q99237/
 	
 	=============================================================================
 	
+
+{% endraw %}

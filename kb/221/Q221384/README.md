@@ -6,6 +6,8 @@ permalink: /kb/221/Q221384/
 
 ## Q221384: XFOR: Pickup Directory Files w/Single Period Aren't Padded Right
 
+{% raw %}
+
 	Article: Q221384
 	Product(s): Microsoft Exchange
 	Version(s): winnt:2.0,4.0,5.5
@@ -124,3 +126,5 @@ permalink: /kb/221/Q221384/
 	
 	=============================================================================
 	
+
+{% endraw %}

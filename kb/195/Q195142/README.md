@@ -6,6 +6,8 @@ permalink: /kb/195/Q195142/
 
 ## Q195142: WD97: Revision Colors May Change Unexpectedly
 
+{% raw %}
+
 	Article: Q195142
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/195/Q195142/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120032/
 
 ## Q120032: ProofReader Does Not &quot;Say&quot; Unknown Words or Spaces in Cells
 
+{% raw %}
+
 	Article: Q120032
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.00
@@ -43,3 +45,5 @@ permalink: /kb/120/Q120032/
 	
 	=============================================================================
 	
+
+{% endraw %}

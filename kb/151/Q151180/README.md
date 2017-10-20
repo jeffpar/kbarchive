@@ -6,6 +6,8 @@ permalink: /kb/151/Q151180/
 
 ## Q151180: Configuring the BOOT.INI TIMEOUT value with CPS or UNATTEND
 
+{% raw %}
+
 	Article: Q151180
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -108,3 +110,5 @@ permalink: /kb/151/Q151180/
 	
 	=============================================================================
 	
+
+{% endraw %}

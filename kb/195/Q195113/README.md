@@ -6,6 +6,8 @@ permalink: /kb/195/Q195113/
 
 ## Q195113: XCLN: Problem Opening Attachments with Netscape Navigator
 
+{% raw %}
+
 	Article: Q195113
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2
@@ -91,3 +93,5 @@ permalink: /kb/195/Q195113/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/039/Q39485/
 
 ## Q39485: MS-DOS: Maximum Usage of FASTOPEN in Expanded Memory
 
+{% raw %}
+
 	Article: Q39485
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.0,4.01,5.x,6.0,6.2,6.21,6.22
@@ -55,3 +57,5 @@ permalink: /kb/039/Q39485/
 	
 	=============================================================================
 	
+
+{% endraw %}

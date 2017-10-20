@@ -6,6 +6,8 @@ permalink: /kb/232/Q232606/
 
 ## Q232606: XADM: Changing the Port Used by the Directory for LDAP over SSL
 
+{% raw %}
+
 	Article: Q232606
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -120,3 +122,5 @@ permalink: /kb/232/Q232606/
 	
 	=============================================================================
 	
+
+{% endraw %}

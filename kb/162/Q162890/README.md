@@ -6,6 +6,8 @@ permalink: /kb/162/Q162890/
 
 ## Q162890: Unable to Copy Audio from Encarta 97
 
+{% raw %}
+
 	Article: Q162890
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition; WINDOWS:
@@ -42,3 +44,5 @@ permalink: /kb/162/Q162890/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190993/
 
 ## Q190993: XADM: Events Service Fails to Start with MAPI 0x80040107
 
+{% raw %}
+
 	Article: Q190993
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -97,3 +99,5 @@ permalink: /kb/190/Q190993/
 	
 	=============================================================================
 	
+
+{% endraw %}

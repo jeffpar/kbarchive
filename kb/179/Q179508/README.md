@@ -6,6 +6,8 @@ permalink: /kb/179/Q179508/
 
 ## Q179508: Encarta 98: Incorrect Items in Media Gallery Time Filter
 
+{% raw %}
+
 	Article: Q179508
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -46,3 +48,5 @@ permalink: /kb/179/Q179508/
 	
 	=============================================================================
 	
+
+{% endraw %}

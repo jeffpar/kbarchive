@@ -6,6 +6,8 @@ permalink: /kb/102/Q102651/
 
 ## Q102651: Required Settings for Adaptec 1510 SCSI Host Adapter
 
+{% raw %}
+
 	Article: Q102651
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -60,3 +62,5 @@ permalink: /kb/102/Q102651/
 	
 	=============================================================================
 	
+
+{% endraw %}

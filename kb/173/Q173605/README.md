@@ -6,6 +6,8 @@ permalink: /kb/173/Q173605/
 
 ## Q173605: Multimedia Err Msg: Unable to Read Drive CD-ROM
 
+{% raw %}
+
 	Article: Q173605
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,2.0,3.0
@@ -92,3 +94,5 @@ permalink: /kb/173/Q173605/
 	
 	=============================================================================
 	
+
+{% endraw %}

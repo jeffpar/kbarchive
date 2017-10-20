@@ -6,6 +6,8 @@ permalink: /kb/156/Q156743/
 
 ## Q156743: INFO: STL Sample for the replace_if Function
 
+{% raw %}
+
 	Article: Q156743
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -166,3 +168,5 @@ permalink: /kb/156/Q156743/
 	
 	=============================================================================
 	
+
+{% endraw %}

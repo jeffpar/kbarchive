@@ -6,6 +6,8 @@ permalink: /kb/246/Q246651/
 
 ## Q246651: SMS: Package Resent Continuously If Distribution Set to None
 
+{% raw %}
+
 	Article: Q246651
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -60,3 +62,5 @@ permalink: /kb/246/Q246651/
 	
 	=============================================================================
 	
+
+{% endraw %}

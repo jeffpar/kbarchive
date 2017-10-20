@@ -6,6 +6,8 @@ permalink: /kb/152/Q152983/
 
 ## Q152983: XCLN: Win95 Client Can't Send Fax When Offline Using .OST
 
+{% raw %}
+
 	Article: Q152983
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -58,3 +60,5 @@ permalink: /kb/152/Q152983/
 	
 	=============================================================================
 	
+
+{% endraw %}

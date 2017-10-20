@@ -6,6 +6,8 @@ permalink: /kb/131/Q131031/
 
 ## Q131031: READ NOLOCK Behavior in Visual FoxPro
 
+{% raw %}
+
 	Article: Q131031
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/131/Q131031/
 	
 	=============================================================================
 	
+
+{% endraw %}

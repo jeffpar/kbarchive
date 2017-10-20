@@ -6,6 +6,8 @@ permalink: /kb/178/Q178154/
 
 ## Q178154: XWEB: Err Msg: Unable to Render This view424Object Required
 
+{% raw %}
+
 	Article: Q178154
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -68,3 +70,5 @@ permalink: /kb/178/Q178154/
 	
 	=============================================================================
 	
+
+{% endraw %}

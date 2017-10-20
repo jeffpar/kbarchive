@@ -6,6 +6,8 @@ permalink: /kb/238/Q238784/
 
 ## Q238784: XFOR: Not All Messages Migrated from a cc:Mail DB8 Post Office
 
+{% raw %}
+
 	Article: Q238784
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/238/Q238784/
 	
 	=============================================================================
 	
+
+{% endraw %}

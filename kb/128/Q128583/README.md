@@ -6,6 +6,8 @@ permalink: /kb/128/Q128583/
 
 ## Q128583: MS ACCESS 2 FOR WIN SBS: 2ED Corrections and Comments
 
+{% raw %}
+
 	Article: Q128583
 	Product(s): Microsoft Press
 	Version(s): 
@@ -282,3 +284,5 @@ permalink: /kb/128/Q128583/
 	
 	=============================================================================
 	
+
+{% endraw %}

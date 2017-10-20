@@ -6,6 +6,8 @@ permalink: /kb/180/Q180818/
 
 ## Q180818: BUG: Code Outside of Procedures Executes on Application Startup
 
+{% raw %}
+
 	Article: Q180818
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -88,3 +90,5 @@ permalink: /kb/180/Q180818/
 	
 	=============================================================================
 	
+
+{% endraw %}

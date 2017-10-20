@@ -6,6 +6,8 @@ permalink: /kb/143/Q143353/
 
 ## Q143353: Old Shortcuts May Not Work with MSN 1.2
 
+{% raw %}
+
 	Article: Q143353
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,2.5
@@ -45,3 +47,5 @@ permalink: /kb/143/Q143353/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216488/
 
 ## Q216488: XFOR: Notes Migration Takes a Long Time on Notes 3.x Server
 
+{% raw %}
+
 	Article: Q216488
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -46,3 +48,5 @@ permalink: /kb/216/Q216488/
 	
 	=============================================================================
 	
+
+{% endraw %}

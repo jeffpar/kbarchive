@@ -6,6 +6,8 @@ permalink: /kb/086/Q86154/
 
 ## Q86154: PROFS: Maximum Message Size That Can Be Processed
 
+{% raw %}
+
 	Article: Q86154
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -53,3 +55,5 @@ permalink: /kb/086/Q86154/
 	
 	=============================================================================
 	
+
+{% endraw %}

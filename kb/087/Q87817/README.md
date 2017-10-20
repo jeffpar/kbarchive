@@ -6,6 +6,8 @@ permalink: /kb/087/Q87817/
 
 ## Q87817: INFO: TrueType Font Converters and Editors
 
+{% raw %}
+
 	Article: Q87817
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -194,3 +196,5 @@ permalink: /kb/087/Q87817/
 	
 	=============================================================================
 	
+
+{% endraw %}

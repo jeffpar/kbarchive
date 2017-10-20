@@ -6,6 +6,8 @@ permalink: /kb/141/Q141035/
 
 ## Q141035: Magic School Bus: Err Msg: CD Audio in Use by Another App
 
+{% raw %}
+
 	Article: Q141035
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -135,3 +137,5 @@ permalink: /kb/141/Q141035/
 	
 	=============================================================================
 	
+
+{% endraw %}

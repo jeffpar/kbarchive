@@ -6,6 +6,8 @@ permalink: /kb/157/Q157514/
 
 ## Q157514: Keyboard Does Not Work in Windows NT After Using Windows 95
 
+{% raw %}
+
 	Article: Q157514
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/157/Q157514/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147810/
 
 ## Q147810: HOWTO: Use Windows BitBlt Function in Visual Basic Application
 
+{% raw %}
+
 	Article: Q147810
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -199,3 +201,5 @@ permalink: /kb/147/Q147810/
 	
 	=============================================================================
 	
+
+{% endraw %}

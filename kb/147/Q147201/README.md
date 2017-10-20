@@ -6,6 +6,8 @@ permalink: /kb/147/Q147201/
 
 ## Q147201: PRB: Header Files Ignored by Recompile All &amp; Build Process
 
+{% raw %}
+
 	Article: Q147201
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -101,3 +103,5 @@ permalink: /kb/147/Q147201/
 	
 	=============================================================================
 	
+
+{% endraw %}

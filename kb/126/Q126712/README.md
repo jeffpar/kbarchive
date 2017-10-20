@@ -6,6 +6,8 @@ permalink: /kb/126/Q126712/
 
 ## Q126712: Network Connections Valid Briefly with 3C507 NIC
 
+{% raw %}
+
 	Article: Q126712
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/126/Q126712/
 	
 	=============================================================================
 	
+
+{% endraw %}

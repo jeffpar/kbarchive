@@ -6,6 +6,8 @@ permalink: /kb/137/Q137565/
 
 ## Q137565: System Error 53 When Connecting to a FQDN
 
+{% raw %}
+
 	Article: Q137565
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -127,3 +129,5 @@ permalink: /kb/137/Q137565/
 	
 	=============================================================================
 	
+
+{% endraw %}

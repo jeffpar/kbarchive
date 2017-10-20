@@ -6,6 +6,8 @@ permalink: /kb/228/Q228752/
 
 ## Q228752: Service Could Not be Started Because It Is Not Correct
 
+{% raw %}
+
 	Article: Q228752
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/228/Q228752/
 	
 	=============================================================================
 	
+
+{% endraw %}

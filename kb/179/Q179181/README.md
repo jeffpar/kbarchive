@@ -6,6 +6,8 @@ permalink: /kb/179/Q179181/
 
 ## Q179181: FP: Page Margins Not Visible in Browser
 
+{% raw %}
+
 	Article: Q179181
 	Product(s): Word Front Page
 	Version(s): WINDOWS:1.1,97
@@ -90,3 +92,5 @@ permalink: /kb/179/Q179181/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129203/
 
 ## Q129203: AMD SCSI is Detected when SCSI is Disabled in CMOS
 
+{% raw %}
+
 	Article: Q129203
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/129/Q129203/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155715/
 
 ## Q155715: XADM: How to Resolve an Address Based on First Name
 
+{% raw %}
+
 	Article: Q155715
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/155/Q155715/
 	
 	=============================================================================
 	
+
+{% endraw %}

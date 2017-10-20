@@ -6,6 +6,8 @@ permalink: /kb/156/Q156896/
 
 ## Q156896: XCON: Cannot Send to DL if Sender Does not have X.400 Address
 
+{% raw %}
+
 	Article: Q156896
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -53,3 +55,5 @@ permalink: /kb/156/Q156896/
 	
 	=============================================================================
 	
+
+{% endraw %}

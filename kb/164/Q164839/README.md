@@ -6,6 +6,8 @@ permalink: /kb/164/Q164839/
 
 ## Q164839: XCLN: Application Err When MSMail Client Gets the Return Receipt
 
+{% raw %}
+
 	Article: Q164839
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/164/Q164839/
 	
 	=============================================================================
 	
+
+{% endraw %}

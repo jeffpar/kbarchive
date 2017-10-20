@@ -6,6 +6,8 @@ permalink: /kb/059/Q59884/
 
 ## Q59884: Determining If Your TSR Has Already Been Installed
 
+{% raw %}
+
 	Article: Q59884
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10
@@ -88,3 +90,5 @@ permalink: /kb/059/Q59884/
 	     else
 	          _chain_intr(original_int2fh);
 	}
+
+{% endraw %}

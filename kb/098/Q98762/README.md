@@ -6,6 +6,8 @@ permalink: /kb/098/Q98762/
 
 ## Q98762: Use the Load= Line to Load VSafe Manager (MWAVTSR.EXE)
 
+{% raw %}
+
 	Article: Q98762
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -42,3 +44,5 @@ permalink: /kb/098/Q98762/
 	
 	=============================================================================
 	
+
+{% endraw %}

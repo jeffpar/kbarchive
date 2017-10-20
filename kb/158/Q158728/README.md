@@ -6,6 +6,8 @@ permalink: /kb/158/Q158728/
 
 ## Q158728: Gopher Types Not Implemented w/ Internet Information Server 2.0
 
+{% raw %}
+
 	Article: Q158728
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -57,3 +59,5 @@ permalink: /kb/158/Q158728/
 	
 	=============================================================================
 	
+
+{% endraw %}

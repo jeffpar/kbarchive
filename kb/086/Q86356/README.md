@@ -6,6 +6,8 @@ permalink: /kb/086/Q86356/
 
 ## Q86356: README.TXT: Microsoft Windows &amp; MS-DOS 5 Upgrade
 
+{% raw %}
+
 	Article: Q86356
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -1212,3 +1214,5 @@ permalink: /kb/086/Q86356/
 	
 	=============================================================================
 	
+
+{% endraw %}

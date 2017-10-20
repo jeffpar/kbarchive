@@ -6,6 +6,8 @@ permalink: /kb/187/Q187253/
 
 ## Q187253: FP: Broken Image Icon Appears Pasting from Internet Explorer
 
+{% raw %}
+
 	Article: Q187253
 	Product(s): Word Front Page
 	Version(s): 1.0,4.0,4.01
@@ -62,3 +64,5 @@ permalink: /kb/187/Q187253/
 	
 	=============================================================================
 	
+
+{% endraw %}

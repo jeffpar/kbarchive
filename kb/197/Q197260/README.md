@@ -6,6 +6,8 @@ permalink: /kb/197/Q197260/
 
 ## Q197260: Encarta 99: Natural Language Search Disk Space Requirements
 
+{% raw %}
+
 	Article: Q197260
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -46,3 +48,5 @@ permalink: /kb/197/Q197260/
 	
 	=============================================================================
 	
+
+{% endraw %}

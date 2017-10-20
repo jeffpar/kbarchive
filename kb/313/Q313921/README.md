@@ -6,6 +6,8 @@ permalink: /kb/313/Q313921/
 
 ## Q313921: FIX: Spanish Vers. of VFP 7.0 Doesn't Put Product ID in Registry
 
+{% raw %}
+
 	Article: Q313921
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -74,3 +76,5 @@ permalink: /kb/313/Q313921/
 	
 	=============================================================================
 	
+
+{% endraw %}

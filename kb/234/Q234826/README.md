@@ -6,6 +6,8 @@ permalink: /kb/234/Q234826/
 
 ## Q234826: MOD2000: Source Code Control Check Out Status Tab Is Blank
 
+{% raw %}
+
 	Article: Q234826
 	Product(s): Microsoft SourceSafe
 	Version(s): 2000
@@ -73,3 +75,5 @@ permalink: /kb/234/Q234826/
 	
 	=============================================================================
 	
+
+{% endraw %}

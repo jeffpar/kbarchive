@@ -6,6 +6,8 @@ permalink: /kb/130/Q130351/
 
 ## Q130351: PRB: Movable Property in Effect at Design Time
 
+{% raw %}
+
 	Article: Q130351
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/130/Q130351/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137242/
 
 ## Q137242: After Dark 3.0 May GP Fault in Windows NT
 
+{% raw %}
+
 	Article: Q137242
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -43,3 +45,5 @@ permalink: /kb/137/Q137242/
 	
 	=============================================================================
 	
+
+{% endraw %}

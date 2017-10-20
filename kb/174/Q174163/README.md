@@ -6,6 +6,8 @@ permalink: /kb/174/Q174163/
 
 ## Q174163: XADM: Cannot Edit Messages After Exceeding Storage Limit
 
+{% raw %}
+
 	Article: Q174163
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -53,3 +55,5 @@ permalink: /kb/174/Q174163/
 	
 	=============================================================================
 	
+
+{% endraw %}

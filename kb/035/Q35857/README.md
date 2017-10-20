@@ -6,6 +6,8 @@ permalink: /kb/035/Q35857/
 
 ## Q35857: PRB: Some Windows GDI Functions Fail on Banding Printers
 
+{% raw %}
+
 	Article: Q35857
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -65,3 +67,5 @@ permalink: /kb/035/Q35857/
 	
 	=============================================================================
 	
+
+{% endraw %}

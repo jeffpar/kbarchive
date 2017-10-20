@@ -6,6 +6,8 @@ permalink: /kb/288/Q288121/
 
 ## Q288121: BUG: Posting Acceptor Causes ASP Session to Be Lost
 
+{% raw %}
+
 	Article: Q288121
 	Product(s): Internet Information Server
 	Version(s): 
@@ -205,3 +207,5 @@ permalink: /kb/288/Q288121/
 	
 	=============================================================================
 	
+
+{% endraw %}

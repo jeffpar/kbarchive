@@ -6,6 +6,8 @@ permalink: /kb/196/Q196759/
 
 ## Q196759: WD97: All Workstations Not Using Same Preferences/Options
 
+{% raw %}
+
 	Article: Q196759
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -143,3 +145,5 @@ permalink: /kb/196/Q196759/
 	
 	=============================================================================
 	
+
+{% endraw %}

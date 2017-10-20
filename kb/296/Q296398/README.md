@@ -6,6 +6,8 @@ permalink: /kb/296/Q296398/
 
 ## Q296398: SMS: Spoolsv.exe Consumes Memory During Inventory
 
+{% raw %}
+
 	Article: Q296398
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -143,3 +145,5 @@ permalink: /kb/296/Q296398/
 	
 	=============================================================================
 	
+
+{% endraw %}

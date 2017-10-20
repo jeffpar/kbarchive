@@ -6,6 +6,8 @@ permalink: /kb/140/Q140819/
 
 ## Q140819: Systems Management Server is Unable to Get Global Groups
 
+{% raw %}
+
 	Article: Q140819
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.10
@@ -66,3 +68,5 @@ permalink: /kb/140/Q140819/
 	
 	=============================================================================
 	
+
+{% endraw %}

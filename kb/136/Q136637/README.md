@@ -6,6 +6,8 @@ permalink: /kb/136/Q136637/
 
 ## Q136637: Default Printer Form Lost Connecting 3.51 Client to 3.5 Server
 
+{% raw %}
+
 	Article: Q136637
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -75,3 +77,5 @@ permalink: /kb/136/Q136637/
 	
 	=============================================================================
 	
+
+{% endraw %}

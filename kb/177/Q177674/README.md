@@ -6,6 +6,8 @@ permalink: /kb/177/Q177674/
 
 ## Q177674: HOWTO: Toggle the NUM LOCK, CAPS LOCK, and SCROLL LOCK Keys
 
+{% raw %}
+
 	Article: Q177674
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -177,3 +179,5 @@ permalink: /kb/177/Q177674/
 	
 	=============================================================================
 	
+
+{% endraw %}

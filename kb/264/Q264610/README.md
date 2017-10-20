@@ -6,6 +6,8 @@ permalink: /kb/264/Q264610/
 
 ## Q264610: PRB: CDO Text Property Does Not Accept CR or LF
 
+{% raw %}
+
 	Article: Q264610
 	Product(s): Microsoft Exchange
 	Version(s): 1.2,1.21,5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4,6.0
@@ -108,3 +110,5 @@ permalink: /kb/264/Q264610/
 	
 	=============================================================================
 	
+
+{% endraw %}

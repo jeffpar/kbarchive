@@ -6,6 +6,8 @@ permalink: /kb/166/Q166073/
 
 ## Q166073: Adding Connections/Link Services Causes Event 5167 and 5166
 
+{% raw %}
+
 	Article: Q166073
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/166/Q166073/
 	
 	=============================================================================
 	
+
+{% endraw %}

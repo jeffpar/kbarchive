@@ -6,6 +6,8 @@ permalink: /kb/158/Q158732/
 
 ## Q158732: Perl Script is Downloaded When Using Netscape 3.0
 
+{% raw %}
+
 	Article: Q158732
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0
@@ -53,3 +55,5 @@ permalink: /kb/158/Q158732/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102017/
 
 ## Q102017: PC DirSync: Running REBUILD.EXE Enables the GAL
 
+{% raw %}
+
 	Article: Q102017
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2,3.5
@@ -54,3 +56,5 @@ permalink: /kb/102/Q102017/
 	
 	=============================================================================
 	
+
+{% endraw %}

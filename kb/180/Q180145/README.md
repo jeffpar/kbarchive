@@ -6,6 +6,8 @@ permalink: /kb/180/Q180145/
 
 ## Q180145: WD97: &quot;Not Enough Memory&quot; Error When Printing from Photo Editor
 
+{% raw %}
+
 	Article: Q180145
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -90,3 +92,5 @@ permalink: /kb/180/Q180145/
 	
 	=============================================================================
 	
+
+{% endraw %}

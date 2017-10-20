@@ -6,6 +6,8 @@ permalink: /kb/038/Q38327/
 
 ## Q38327: _Fheapwalk Does Not Check the Near Heap
 
+{% raw %}
+
 	Article: Q38327
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -31,3 +33,5 @@ permalink: /kb/038/Q38327/
 	For this reason, you should not assume that _fheapwalk will provide
 	information about all your pointers, or you should use both _fheapwalk
 	and _nheapwalk to check both the near heap and the far heap.
+
+{% endraw %}

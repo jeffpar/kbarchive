@@ -6,6 +6,8 @@ permalink: /kb/173/Q173456/
 
 ## Q173456: WD97: Error with Dutch, French, German, or Spanish Grammar Check
 
+{% raw %}
+
 	Article: Q173456
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -88,3 +90,5 @@ permalink: /kb/173/Q173456/
 	
 	=============================================================================
 	
+
+{% endraw %}

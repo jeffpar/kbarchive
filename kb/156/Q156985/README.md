@@ -6,6 +6,8 @@ permalink: /kb/156/Q156985/
 
 ## Q156985: CG3: Error When Using Clip Gallery to Insert a Sound
 
+{% raw %}
+
 	Article: Q156985
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,97; :97
@@ -113,3 +115,5 @@ permalink: /kb/156/Q156985/
 	
 	=============================================================================
 	
+
+{% endraw %}

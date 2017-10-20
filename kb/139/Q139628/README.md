@@ -6,6 +6,8 @@ permalink: /kb/139/Q139628/
 
 ## Q139628: Running Batch File Through PIF Returns Different Results
 
+{% raw %}
+
 	Article: Q139628
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -53,3 +55,5 @@ permalink: /kb/139/Q139628/
 	
 	=============================================================================
 	
+
+{% endraw %}

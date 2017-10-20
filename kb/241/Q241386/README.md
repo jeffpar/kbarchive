@@ -6,6 +6,8 @@ permalink: /kb/241/Q241386/
 
 ## Q241386: &quot;Can Not Find Snmpapi.dll&quot; Adding Counter to Performance Monitor
 
+{% raw %}
+
 	Article: Q241386
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/241/Q241386/
 	
 	=============================================================================
 	
+
+{% endraw %}

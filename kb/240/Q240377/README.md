@@ -6,6 +6,8 @@ permalink: /kb/240/Q240377/
 
 ## Q240377: HOWTO: Ensure Jet 3.5 Is Installed Correctly (Part I)
 
+{% raw %}
+
 	Article: Q240377
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.5,2.1 SP2,2.5,5.0,6.0
@@ -343,3 +345,5 @@ permalink: /kb/240/Q240377/
 	
 	=============================================================================
 	
+
+{% endraw %}

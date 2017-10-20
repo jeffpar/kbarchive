@@ -6,6 +6,8 @@ permalink: /kb/195/Q195769/
 
 ## Q195769: Events 38 and 92 Logged When Closing 5250 Applet Session
 
+{% raw %}
+
 	Article: Q195769
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP2,3.0 SP3,4.0
@@ -118,3 +120,5 @@ permalink: /kb/195/Q195769/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86924/
 
 ## Q86924: DOCERR: HELPWININFO Data Structure Documented Incorrectly
 
+{% raw %}
+
 	Article: Q86924
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -82,3 +84,5 @@ permalink: /kb/086/Q86924/
 	
 	=============================================================================
 	
+
+{% endraw %}

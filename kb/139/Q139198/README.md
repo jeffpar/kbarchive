@@ -6,6 +6,8 @@ permalink: /kb/139/Q139198/
 
 ## Q139198: How to Run the Tour Outside of Mastering Visual FoxPro Program
 
+{% raw %}
+
 	Article: Q139198
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -42,3 +44,5 @@ permalink: /kb/139/Q139198/
 	
 	=============================================================================
 	
+
+{% endraw %}

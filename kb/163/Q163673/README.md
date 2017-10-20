@@ -6,6 +6,8 @@ permalink: /kb/163/Q163673/
 
 ## Q163673: &quot;Exception 0E&quot; Using MSNDS Over Dial-Up Connection
 
+{% raw %}
+
 	Article: Q163673
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -69,3 +71,5 @@ permalink: /kb/163/Q163673/
 	
 	=============================================================================
 	
+
+{% endraw %}

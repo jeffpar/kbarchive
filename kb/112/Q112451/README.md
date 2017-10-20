@@ -6,6 +6,8 @@ permalink: /kb/112/Q112451/
 
 ## Q112451: WD97: Gray Drawing Layer Lines Printed in Black on HP LaserJet
 
+{% raw %}
+
 	Article: Q112451
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/112/Q112451/
 	
 	=============================================================================
 	
+
+{% endraw %}

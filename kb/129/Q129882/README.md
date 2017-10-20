@@ -6,6 +6,8 @@ permalink: /kb/129/Q129882/
 
 ## Q129882: How to Optimize SQL Queries in Visual Basic 3.0 and 4.0
 
+{% raw %}
+
 	Article: Q129882
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0,4.0
@@ -146,3 +148,5 @@ permalink: /kb/129/Q129882/
 	
 	=============================================================================
 	
+
+{% endraw %}

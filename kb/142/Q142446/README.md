@@ -6,6 +6,8 @@ permalink: /kb/142/Q142446/
 
 ## Q142446: PRB: Stacked Tabs Aren't Displayed Correctly After AddPage()
 
+{% raw %}
+
 	Article: Q142446
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -65,3 +67,5 @@ permalink: /kb/142/Q142446/
 	
 	=============================================================================
 	
+
+{% endraw %}

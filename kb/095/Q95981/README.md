@@ -6,6 +6,8 @@ permalink: /kb/095/Q95981/
 
 ## Q95981: BUG: ProgMan DDE Reload() Command Does Not Work Properly
 
+{% raw %}
+
 	Article: Q95981
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -65,3 +67,5 @@ permalink: /kb/095/Q95981/
 	
 	=============================================================================
 	
+
+{% endraw %}

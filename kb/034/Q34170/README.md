@@ -6,6 +6,8 @@ permalink: /kb/034/Q34170/
 
 ## Q34170: C4040 Occurs on Declaration of Huge Array
 
+{% raw %}
+
 	Article: Q34170
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 | 5.10
@@ -21,3 +23,5 @@ permalink: /kb/034/Q34170/
 	   To ensure that your arrays are allocated as huge or far arrays,
 	declare them at the global level or declare them with the static
 	storage class.
+
+{% endraw %}

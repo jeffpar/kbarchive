@@ -6,6 +6,8 @@ permalink: /kb/192/Q192764/
 
 ## Q192764: HOWTO: Provide Inverse AT() Functionality
 
+{% raw %}
+
 	Article: Q192764
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b; MS-DOS:2.0,2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:2.6a,3.0,3.0b
@@ -108,3 +110,5 @@ permalink: /kb/192/Q192764/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68696/
 
 ## Q68696: &quot;?CANNOT DISPLAY&quot; After Column 135 in Command Window
 
+{% raw %}
+
 	Article: Q68696
 	Product(s): See article
 	Version(s): 3.00 3.11 | 3.00 3.11 3.50
@@ -88,3 +90,5 @@ permalink: /kb/068/Q68696/
 	{
 	    struct x y;
 	}
+
+{% endraw %}

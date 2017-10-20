@@ -6,6 +6,8 @@ permalink: /kb/128/Q128143/
 
 ## Q128143: Bad .RAW File Hangs Inventory Processor
 
+{% raw %}
+
 	Article: Q128143
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -58,3 +60,5 @@ permalink: /kb/128/Q128143/
 	
 	=============================================================================
 	
+
+{% endraw %}

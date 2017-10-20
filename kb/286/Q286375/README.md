@@ -6,6 +6,8 @@ permalink: /kb/286/Q286375/
 
 ## Q286375: XFOR: Slow Banner Response from Internet Mail Service with NDR
 
+{% raw %}
+
 	Article: Q286375
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -88,3 +90,5 @@ permalink: /kb/286/Q286375/
 	
 	=============================================================================
 	
+
+{% endraw %}

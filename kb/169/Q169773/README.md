@@ -6,6 +6,8 @@ permalink: /kb/169/Q169773/
 
 ## Q169773: PRB: Setup Wizard Displays &quot;Invalid command-line parameters&quot;
 
+{% raw %}
+
 	Article: Q169773
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -70,3 +72,5 @@ permalink: /kb/169/Q169773/
 	
 	=============================================================================
 	
+
+{% endraw %}

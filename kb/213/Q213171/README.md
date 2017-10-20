@@ -6,6 +6,8 @@ permalink: /kb/213/Q213171/
 
 ## Q213171: SMS: Unable to Schedule Software Metering Table Maintenance
 
+{% raw %}
+
 	Article: Q213171
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -112,3 +114,5 @@ permalink: /kb/213/Q213171/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/045/Q45187/
 
 ## Q45187: Documented Search Order for Include Files
 
+{% raw %}
+
 	Article: Q45187
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -39,3 +41,5 @@ permalink: /kb/045/Q45187/
 	becomes important. With nested include files, the current working
 	directory can be very different from the parent directory. The parent
 	directory is always the one that is searched.
+
+{% endraw %}

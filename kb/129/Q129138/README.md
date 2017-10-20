@@ -6,6 +6,8 @@ permalink: /kb/129/Q129138/
 
 ## Q129138: XCLN: Making Fields Required and Locked or Hidden
 
+{% raw %}
+
 	Article: Q129138
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -49,3 +51,5 @@ permalink: /kb/129/Q129138/
 	
 	=============================================================================
 	
+
+{% endraw %}

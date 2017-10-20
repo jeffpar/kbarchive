@@ -6,6 +6,8 @@ permalink: /kb/243/Q243626/
 
 ## Q243626: XADM: DRs Not Properly Routed to MTA, Causing 2006 Events
 
+{% raw %}
+
 	Article: Q243626
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -86,3 +88,5 @@ permalink: /kb/243/Q243626/
 	
 	=============================================================================
 	
+
+{% endraw %}

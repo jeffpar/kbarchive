@@ -6,6 +6,8 @@ permalink: /kb/174/Q174852/
 
 ## Q174852: CC: A Bridge Too Far: Minimum System Requirements for Macintosh
 
+{% raw %}
+
 	Article: Q174852
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -45,3 +47,5 @@ permalink: /kb/174/Q174852/
 	
 	=============================================================================
 	
+
+{% endraw %}

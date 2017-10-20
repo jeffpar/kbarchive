@@ -6,6 +6,8 @@ permalink: /kb/063/Q63354/
 
 ## Q63354: Logitech DOS Mouse Driver 4.1 Required with Windows 3.0
 
+{% raw %}
+
 	Article: Q63354
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -69,3 +71,5 @@ permalink: /kb/063/Q63354/
 	
 	=============================================================================
 	
+
+{% endraw %}

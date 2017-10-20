@@ -6,6 +6,8 @@ permalink: /kb/218/Q218961/
 
 ## Q218961: Connectivity Issues for Terminal Server Clients on UNIX Systems
 
+{% raw %}
+
 	Article: Q218961
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/218/Q218961/
 	
 	=============================================================================
 	
+
+{% endraw %}

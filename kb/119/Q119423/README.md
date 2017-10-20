@@ -6,6 +6,8 @@ permalink: /kb/119/Q119423/
 
 ## Q119423: FPD: Previous File Name Not Cleared When Printing to File
 
+{% raw %}
+
 	Article: Q119423
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0a
@@ -57,3 +59,5 @@ permalink: /kb/119/Q119423/
 	
 	=============================================================================
 	
+
+{% endraw %}

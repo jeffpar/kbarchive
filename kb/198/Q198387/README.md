@@ -6,6 +6,8 @@ permalink: /kb/198/Q198387/
 
 ## Q198387: Chips &amp; Technologies Video Driver Causes Error in Control Panel
 
+{% raw %}
+
 	Article: Q198387
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -101,3 +103,5 @@ permalink: /kb/198/Q198387/
 	
 	=============================================================================
 	
+
+{% endraw %}

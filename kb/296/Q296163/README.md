@@ -6,6 +6,8 @@ permalink: /kb/296/Q296163/
 
 ## Q296163: DB2 OleDB Provider Fails To Return Data On OLAP DrillThrough
 
+{% raw %}
+
 	Article: Q296163
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/296/Q296163/
 	
 	=============================================================================
 	
+
+{% endraw %}

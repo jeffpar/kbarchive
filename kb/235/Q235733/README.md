@@ -6,6 +6,8 @@ permalink: /kb/235/Q235733/
 
 ## Q235733: SMS: DOS and Windows 3.1 Clients Fail Site Assignment
 
+{% raw %}
+
 	Article: Q235733
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -50,3 +52,5 @@ permalink: /kb/235/Q235733/
 	
 	=============================================================================
 	
+
+{% endraw %}

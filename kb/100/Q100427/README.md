@@ -6,6 +6,8 @@ permalink: /kb/100/Q100427/
 
 ## Q100427: BUG: R6003 Error Possible From TOOLS.INI Filetab, SHIFT+F4
 
+{% raw %}
+
 	Article: Q100427
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.0,2.1.49
@@ -56,3 +58,5 @@ permalink: /kb/100/Q100427/
 	
 	=============================================================================
 	
+
+{% endraw %}

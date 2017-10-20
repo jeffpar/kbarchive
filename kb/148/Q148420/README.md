@@ -6,6 +6,8 @@ permalink: /kb/148/Q148420/
 
 ## Q148420: XCLN: Can't Change Password on Novell Client
 
+{% raw %}
+
 	Article: Q148420
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,8.0; :
@@ -119,3 +121,5 @@ permalink: /kb/148/Q148420/
 	
 	=============================================================================
 	
+
+{% endraw %}

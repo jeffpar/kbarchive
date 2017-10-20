@@ -6,6 +6,8 @@ permalink: /kb/150/Q150618/
 
 ## Q150618: Pregnancy: Program Window Does Not Reopen To Previous Size
 
+{% raw %}
+
 	Article: Q150618
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -40,3 +42,5 @@ permalink: /kb/150/Q150618/
 	
 	=============================================================================
 	
+
+{% endraw %}

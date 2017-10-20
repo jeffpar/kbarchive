@@ -6,6 +6,8 @@ permalink: /kb/281/Q281312/
 
 ## Q281312: NetUserGetGroups Gives a 1722 Error With Multiple Providers
 
+{% raw %}
+
 	Article: Q281312
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6,4.0 SP6a
@@ -93,3 +95,5 @@ permalink: /kb/281/Q281312/
 	
 	=============================================================================
 	
+
+{% endraw %}

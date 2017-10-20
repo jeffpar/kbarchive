@@ -6,6 +6,8 @@ permalink: /kb/174/Q174465/
 
 ## Q174465: Bad SAP Packet Causes Stop 0x0000000A in Afd.sys
 
+{% raw %}
+
 	Article: Q174465
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -87,3 +89,5 @@ permalink: /kb/174/Q174465/
 	
 	=============================================================================
 	
+
+{% endraw %}

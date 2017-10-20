@@ -6,6 +6,8 @@ permalink: /kb/227/Q227989/
 
 ## Q227989: STOP 0x0000000A Error Message Caused by Fcascsi.sys Driver
 
+{% raw %}
+
 	Article: Q227989
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/227/Q227989/
 	
 	=============================================================================
 	
+
+{% endraw %}

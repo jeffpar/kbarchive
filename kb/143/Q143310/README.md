@@ -6,6 +6,8 @@ permalink: /kb/143/Q143310/
 
 ## Q143310: Ancient Lands for the Macintosh System Requirements
 
+{% raw %}
+
 	Article: Q143310
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -52,3 +54,5 @@ permalink: /kb/143/Q143310/
 	
 	=============================================================================
 	
+
+{% endraw %}

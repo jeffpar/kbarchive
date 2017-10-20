@@ -6,6 +6,8 @@ permalink: /kb/276/Q276022/
 
 ## Q276022: Windows 95 and Window 98 Client Fails to Use Multiple Firewall E
 
+{% raw %}
+
 	Article: Q276022
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11 (all versions),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -74,3 +76,5 @@ permalink: /kb/276/Q276022/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171458/
 
 ## Q171458: Windows NT May Fail On Request to Open Large Files
 
+{% raw %}
+
 	Article: Q171458
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -123,3 +125,5 @@ permalink: /kb/171/Q171458/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/218/Q218934/
 
 ## Q218934: Multiple Bugs in Security Configuration Manager MMC Snap-In
 
+{% raw %}
+
 	Article: Q218934
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -91,3 +93,5 @@ permalink: /kb/218/Q218934/
 	
 	=============================================================================
 	
+
+{% endraw %}

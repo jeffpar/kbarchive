@@ -6,6 +6,8 @@ permalink: /kb/132/Q132178/
 
 ## Q132178: PRB: DO FORM Does Not Display a Form
 
+{% raw %}
+
 	Article: Q132178
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -98,3 +100,5 @@ permalink: /kb/132/Q132178/
 	
 	=============================================================================
 	
+
+{% endraw %}

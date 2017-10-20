@@ -6,6 +6,8 @@ permalink: /kb/217/Q217192/
 
 ## Q217192: PRB: ODBCDirect Cursor Not Valid After Transaction Commits
 
+{% raw %}
+
 	Article: Q217192
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -154,3 +156,5 @@ permalink: /kb/217/Q217192/
 	
 	=============================================================================
 	
+
+{% endraw %}

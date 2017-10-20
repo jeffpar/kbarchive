@@ -6,6 +6,8 @@ permalink: /kb/098/Q98293/
 
 ## Q98293: Err Msg: This Version of the Help File Not Supported
 
+{% raw %}
+
 	Article: Q98293
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -50,3 +52,5 @@ permalink: /kb/098/Q98293/
 	
 	=============================================================================
 	
+
+{% endraw %}

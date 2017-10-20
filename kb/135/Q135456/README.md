@@ -6,6 +6,8 @@ permalink: /kb/135/Q135456/
 
 ## Q135456: DOCERR: How to Set Column Index Correctly for AddColumn Method
 
+{% raw %}
+
 	Article: Q135456
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -101,3 +103,5 @@ permalink: /kb/135/Q135456/
 	
 	=============================================================================
 	
+
+{% endraw %}

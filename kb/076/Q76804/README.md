@@ -6,6 +6,8 @@ permalink: /kb/076/Q76804/
 
 ## Q76804: MS-DOS Application Unable to Use Audio in 386 Enhanced Mode
 
+{% raw %}
+
 	Article: Q76804
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/076/Q76804/
 	
 	=============================================================================
 	
+
+{% endraw %}

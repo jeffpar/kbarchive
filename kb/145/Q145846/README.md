@@ -6,6 +6,8 @@ permalink: /kb/145/Q145846/
 
 ## Q145846: FIX: SQLSetProp() Without Expression Does Not Restore Defaults
 
+{% raw %}
+
 	Article: Q145846
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -79,3 +81,5 @@ permalink: /kb/145/Q145846/
 	
 	=============================================================================
 	
+
+{% endraw %}

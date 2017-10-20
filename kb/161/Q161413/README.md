@@ -6,6 +6,8 @@ permalink: /kb/161/Q161413/
 
 ## Q161413: FP97: How to Install the FrontPage Personal Web Server
 
+{% raw %}
+
 	Article: Q161413
 	Product(s): Word Front Page
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/161/Q161413/
 	
 	=============================================================================
 	
+
+{% endraw %}

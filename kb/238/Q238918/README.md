@@ -6,6 +6,8 @@ permalink: /kb/238/Q238918/
 
 ## Q238918: Availability of Microsoft Office Document Open Confirmation Tool
 
+{% raw %}
+
 	Article: Q238918
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.0,3.01,3.02,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5
@@ -164,3 +166,5 @@ permalink: /kb/238/Q238918/
 	
 	=============================================================================
 	
+
+{% endraw %}

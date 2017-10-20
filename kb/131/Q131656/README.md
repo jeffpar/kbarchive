@@ -6,6 +6,8 @@ permalink: /kb/131/Q131656/
 
 ## Q131656: MAC ANCIENT LANDS: Installs QuickTime Musical Instruments
 
+{% raw %}
+
 	Article: Q131656
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -40,3 +42,5 @@ permalink: /kb/131/Q131656/
 	
 	=============================================================================
 	
+
+{% endraw %}

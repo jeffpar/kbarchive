@@ -6,6 +6,8 @@ permalink: /kb/222/Q222570/
 
 ## Q222570: XFOR: Access Rights Required for Notes Connector
 
+{% raw %}
+
 	Article: Q222570
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/222/Q222570/
 	
 	=============================================================================
 	
+
+{% endraw %}

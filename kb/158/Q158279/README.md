@@ -6,6 +6,8 @@ permalink: /kb/158/Q158279/
 
 ## Q158279: XCON: Dynamic RAS Connector Cannot Deliver Mail
 
+{% raw %}
+
 	Article: Q158279
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/158/Q158279/
 	
 	=============================================================================
 	
+
+{% endraw %}

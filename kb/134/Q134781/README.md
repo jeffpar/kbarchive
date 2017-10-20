@@ -6,6 +6,8 @@ permalink: /kb/134/Q134781/
 
 ## Q134781: PPT7: Duplicate Clip Art in ClipArt Gallery
 
+{% raw %}
+
 	Article: Q134781
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134781/
 	
 	=============================================================================
 	
+
+{% endraw %}

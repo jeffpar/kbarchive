@@ -6,6 +6,8 @@ permalink: /kb/149/Q149514/
 
 ## Q149514: BUG: Developer Studio Hangs with !MS&#36;FIXEDFORMLINESIZE: 132
 
+{% raw %}
+
 	Article: Q149514
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/149/Q149514/
 	
 	=============================================================================
 	
+
+{% endraw %}

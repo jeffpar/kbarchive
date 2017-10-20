@@ -6,6 +6,8 @@ permalink: /kb/097/Q97071/
 
 ## Q97071: PC WRmt: Keyboard Problems in Select Headers Dialog Box
 
+{% raw %}
+
 	Article: Q97071
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -56,3 +58,5 @@ permalink: /kb/097/Q97071/
 	
 	=============================================================================
 	
+
+{% endraw %}

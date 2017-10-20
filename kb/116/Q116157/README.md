@@ -6,6 +6,8 @@ permalink: /kb/116/Q116157/
 
 ## Q116157: TRXNET.COM ODI Driver Needs Update with SMC ArcNet PC130
 
+{% raw %}
+
 	Article: Q116157
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -64,3 +66,5 @@ permalink: /kb/116/Q116157/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66781/
 
 ## Q66781: Header Files Do Not Contain Prototypes for C_INIT and C_TERM
 
+{% raw %}
+
 	Article: Q66781
 	Product(s): See article
 	Version(s): 5.10 6.00 6.00a
@@ -35,3 +37,5 @@ permalink: /kb/066/Q66781/
 	
 	Note that _far and _pascal must be specified without the underscore if
 	you are using C version 5.10.
+
+{% endraw %}

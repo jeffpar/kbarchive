@@ -6,6 +6,8 @@ permalink: /kb/315/Q315609/
 
 ## Q315609: Train Simulator: Error Message: Failed to Load Car-Spawner
 
+{% raw %}
+
 	Article: Q315609
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -236,3 +238,5 @@ permalink: /kb/315/Q315609/
 	
 	=============================================================================
 	
+
+{% endraw %}

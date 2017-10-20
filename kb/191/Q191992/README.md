@@ -6,6 +6,8 @@ permalink: /kb/191/Q191992/
 
 ## Q191992: NdrConvert Causes Access Violation in RPC Client on WinNT 4.0
 
+{% raw %}
+
 	Article: Q191992
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/191/Q191992/
 	
 	=============================================================================
 	
+
+{% endraw %}

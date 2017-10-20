@@ -6,6 +6,8 @@ permalink: /kb/084/Q84300/
 
 ## Q84300: How to Use the STACKS= Setting in the CONFIG.SYS File
 
+{% raw %}
+
 	Article: Q84300
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -161,3 +163,5 @@ permalink: /kb/084/Q84300/
 	
 	=============================================================================
 	
+
+{% endraw %}

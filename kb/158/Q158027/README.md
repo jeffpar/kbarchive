@@ -6,6 +6,8 @@ permalink: /kb/158/Q158027/
 
 ## Q158027: Contents of Hellbender Enhancement Codes
 
+{% raw %}
+
 	Article: Q158027
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -81,3 +83,5 @@ permalink: /kb/158/Q158027/
 	
 	=============================================================================
 	
+
+{% endraw %}

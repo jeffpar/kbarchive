@@ -6,6 +6,8 @@ permalink: /kb/069/Q69302/
 
 ## Q69302: Changing Display Contrast on Toshiba Laptops Using XCHAD.EXE
 
+{% raw %}
+
 	Article: Q69302
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/069/Q69302/
 	
 	=============================================================================
 	
+
+{% endraw %}

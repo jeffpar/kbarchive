@@ -6,6 +6,8 @@ permalink: /kb/112/Q112293/
 
 ## Q112293: Installing WINUP9.EXE Files During WFWG 3.11 Installation
 
+{% raw %}
+
 	Article: Q112293
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -74,3 +76,5 @@ permalink: /kb/112/Q112293/
 	
 	=============================================================================
 	
+
+{% endraw %}

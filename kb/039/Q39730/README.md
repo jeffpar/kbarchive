@@ -6,6 +6,8 @@ permalink: /kb/039/Q39730/
 
 ## Q39730: Version History of Microsoft QuickBASIC for MS-DOS
 
+{% raw %}
+
 	Article: Q39730
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -113,3 +115,5 @@ permalink: /kb/039/Q39730/
 	      system also contains examples that can be cut and pasted
 	      directly into programs. 4.50 provides corrections for some
 	      problems discovered in Version 4.00b.
+
+{% endraw %}

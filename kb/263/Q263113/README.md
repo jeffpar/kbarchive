@@ -6,6 +6,8 @@ permalink: /kb/263/Q263113/
 
 ## Q263113: XADM: Gear Icon for Mailboxes on a DL After Import from CSV
 
+{% raw %}
+
 	Article: Q263113
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/263/Q263113/
 	
 	=============================================================================
 	
+
+{% endraw %}

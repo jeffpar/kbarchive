@@ -6,6 +6,8 @@ permalink: /kb/123/Q123769/
 
 ## Q123769: PRB: RC1120 Error When Building in Low Memory Conditions
 
+{% raw %}
+
 	Article: Q123769
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/123/Q123769/
 	
 	=============================================================================
 	
+
+{% endraw %}

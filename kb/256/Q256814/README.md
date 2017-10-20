@@ -6,6 +6,8 @@ permalink: /kb/256/Q256814/
 
 ## Q256814: MapPoint 2001: Unable to Paste Excel Data into MapPoint
 
+{% raw %}
+
 	Article: Q256814
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/256/Q256814/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192458/
 
 ## Q192458: Laptop PCMCIA Controller Not Recognized Under Windows NT
 
+{% raw %}
+
 	Article: Q192458
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/192/Q192458/
 	
 	=============================================================================
 	
+
+{% endraw %}

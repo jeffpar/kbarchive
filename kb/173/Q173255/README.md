@@ -6,6 +6,8 @@ permalink: /kb/173/Q173255/
 
 ## Q173255: VB5 Step By Step: Page 141 Code Returns Error
 
+{% raw %}
+
 	Article: Q173255
 	Product(s): Microsoft Press
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/173/Q173255/
 	
 	=============================================================================
 	
+
+{% endraw %}

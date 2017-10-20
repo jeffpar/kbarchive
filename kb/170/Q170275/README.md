@@ -6,6 +6,8 @@ permalink: /kb/170/Q170275/
 
 ## Q170275: Windows NT Setup Hangs on Disk 3 with BusLogic SCSI Adapters
 
+{% raw %}
+
 	Article: Q170275
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/170/Q170275/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58564/
 
 ## Q58564: 4.50 Must Reset PALETTE After WIDTH 80,60 in SCREEN 12
 
+{% raw %}
+
 	Article: Q58564
 	Product(s): See article
 	Version(s): 4.50
@@ -49,3 +51,5 @@ permalink: /kb/058/Q58564/
 	        PALETTE x, 63   ' Should change all boxes to same color.
 	     NEXT x
 	     END
+
+{% endraw %}

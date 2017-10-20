@@ -6,6 +6,8 @@ permalink: /kb/099/Q99303/
 
 ## Q99303: Mac Form: Adding Unavailable Choices to Custom Forms
 
+{% raw %}
+
 	Article: Q99303
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1,3.1a
@@ -100,3 +102,5 @@ permalink: /kb/099/Q99303/
 	
 	=============================================================================
 	
+
+{% endraw %}

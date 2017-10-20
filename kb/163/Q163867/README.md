@@ -6,6 +6,8 @@ permalink: /kb/163/Q163867/
 
 ## Q163867: XCLN: Responses to Meeting Requests not Saved in Sent Items
 
+{% raw %}
+
 	Article: Q163867
 	Product(s): Microsoft Exchange
 	Version(s): 7.0 7.5
@@ -51,3 +53,5 @@ permalink: /kb/163/Q163867/
 	
 	=============================================================================
 	
+
+{% endraw %}

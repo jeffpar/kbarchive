@@ -6,6 +6,8 @@ permalink: /kb/308/Q308657/
 
 ## Q308657: MCSE Training Kit Designing Highly Available Web Solutions with
 
+{% raw %}
+
 	Article: Q308657
 	Product(s): Microsoft Press
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/308/Q308657/
 	
 	=============================================================================
 	
+
+{% endraw %}

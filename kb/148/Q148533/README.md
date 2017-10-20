@@ -6,6 +6,8 @@ permalink: /kb/148/Q148533/
 
 ## Q148533: PRB: No ANSI Notifications from Control Created in OnCreate
 
+{% raw %}
+
 	Article: Q148533
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1,2.2,4.0,4.1
@@ -62,9 +64,9 @@ permalink: /kb/148/Q148533/
 	  macro for the message as follows:
 	
 	        BEGIN_MESSAGE_MAP(CMyDialog, CDialog)
-	            //{ {AFX_MSG_MAP(CMyDialog)
+	            //{{AFX_MSG_MAP(CMyDialog)
 	            ... message map entries created by classwizard
-	            //} }AFX_MSG_MAP
+	            //}}AFX_MSG_MAP
 	            ... other manually created message map entries
 	            ON_MESSAGE(WM_NOTIFYFORMAT, OnNotifyFormat) // ADD THIS LINE
 	        END_MESSAGE_MAP()
@@ -109,3 +111,5 @@ permalink: /kb/148/Q148533/
 	
 	=============================================================================
 	
+
+{% endraw %}

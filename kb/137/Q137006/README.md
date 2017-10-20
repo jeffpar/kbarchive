@@ -6,6 +6,8 @@ permalink: /kb/137/Q137006/
 
 ## Q137006: No Hard Disk Light on Compaq DeskPro When Using Windows 95
 
+{% raw %}
+
 	Article: Q137006
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/137/Q137006/
 	
 	=============================================================================
 	
+
+{% endraw %}

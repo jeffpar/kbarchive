@@ -6,6 +6,8 @@ permalink: /kb/248/Q248478/
 
 ## Q248478: Fighter Ace II: How to Enable or Disable 3D Acceleration
 
+{% raw %}
+
 	Article: Q248478
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/248/Q248478/
 	
 	=============================================================================
 	
+
+{% endraw %}

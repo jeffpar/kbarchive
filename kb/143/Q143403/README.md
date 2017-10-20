@@ -6,6 +6,8 @@ permalink: /kb/143/Q143403/
 
 ## Q143403: PRB: Problems Editing Long Declares in the Conditional Compile
 
+{% raw %}
+
 	Article: Q143403
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -118,3 +120,5 @@ permalink: /kb/143/Q143403/
 	
 	=============================================================================
 	
+
+{% endraw %}

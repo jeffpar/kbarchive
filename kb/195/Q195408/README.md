@@ -6,6 +6,8 @@ permalink: /kb/195/Q195408/
 
 ## Q195408: PRB: Specifying View KeyField Sets Other Fields Updateable
 
+{% raw %}
+
 	Article: Q195408
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -92,3 +94,5 @@ permalink: /kb/195/Q195408/
 	
 	=============================================================================
 	
+
+{% endraw %}

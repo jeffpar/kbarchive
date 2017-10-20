@@ -6,6 +6,8 @@ permalink: /kb/183/Q183875/
 
 ## Q183875: DHCP Server Leases Excluded Addresses if the Scope Is Expanded
 
+{% raw %}
+
 	Article: Q183875
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/183/Q183875/
 	
 	=============================================================================
 	
+
+{% endraw %}

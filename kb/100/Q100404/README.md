@@ -6,6 +6,8 @@ permalink: /kb/100/Q100404/
 
 ## Q100404: How to Upgrade a Micro House DrivePro or EZ-Drive System
 
+{% raw %}
+
 	Article: Q100404
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -38,3 +40,5 @@ permalink: /kb/100/Q100404/
 	
 	=============================================================================
 	
+
+{% endraw %}

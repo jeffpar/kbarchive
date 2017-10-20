@@ -6,6 +6,8 @@ permalink: /kb/155/Q155578/
 
 ## Q155578: Computer May Not Boot with CD-ROM Installed
 
+{% raw %}
+
 	Article: Q155578
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/155/Q155578/
 	
 	=============================================================================
 	
+
+{% endraw %}

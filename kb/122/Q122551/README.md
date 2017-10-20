@@ -6,6 +6,8 @@ permalink: /kb/122/Q122551/
 
 ## Q122551: Files Copied by PC-Based Clients Not Viewable by Mac Clients
 
+{% raw %}
+
 	Article: Q122551
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -58,3 +60,5 @@ permalink: /kb/122/Q122551/
 	
 	=============================================================================
 	
+
+{% endraw %}

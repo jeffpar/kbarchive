@@ -6,6 +6,8 @@ permalink: /kb/163/Q163327/
 
 ## Q163327: How to Use the Rregchg.exe Tool
 
+{% raw %}
+
 	Article: Q163327
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/163/Q163327/
 	
 	=============================================================================
 	
+
+{% endraw %}

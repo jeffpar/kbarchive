@@ -6,6 +6,8 @@ permalink: /kb/104/Q104722/
 
 ## Q104722: ARCHIVE=TRUE Maintains Files with Archive Attribute Only
 
+{% raw %}
+
 	Article: Q104722
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/104/Q104722/
 	
 	=============================================================================
 	
+
+{% endraw %}

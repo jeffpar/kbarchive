@@ -6,6 +6,8 @@ permalink: /kb/262/Q262168/
 
 ## Q262168: How to Disable 8BITMIME in Windows 2000 SMTP Service
 
+{% raw %}
+
 	Article: Q262168
 	Product(s): Internet Information Server
 	Version(s): 2000,5.0
@@ -144,3 +146,5 @@ permalink: /kb/262/Q262168/
 	
 	=============================================================================
 	
+
+{% endraw %}

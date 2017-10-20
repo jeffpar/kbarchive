@@ -6,6 +6,8 @@ permalink: /kb/184/Q184316/
 
 ## Q184316: Unable to Return Custom HTML Properties in Result Set
 
+{% raw %}
+
 	Article: Q184316
 	Product(s): Internet Information Server
 	Version(s): WINNT:1.0,1.1
@@ -52,3 +54,5 @@ permalink: /kb/184/Q184316/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264584/
 
 ## Q264584: How to Change Registry Values or Permissions from a Command Line
 
+{% raw %}
+
 	Article: Q264584
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/264/Q264584/
 	
 	=============================================================================
 	
+
+{% endraw %}

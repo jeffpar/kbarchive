@@ -6,6 +6,8 @@ permalink: /kb/247/Q247247/
 
 ## Q247247: Troubleshooting Steps for DOD Over RRAS with Proxy Server
 
+{% raw %}
+
 	Article: Q247247
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -258,3 +260,5 @@ permalink: /kb/247/Q247247/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184351/
 
 ## Q184351: FP: Cell Background Color Doesn't Appear w/ Transparent Image
 
+{% raw %}
+
 	Article: Q184351
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:97
@@ -52,3 +54,5 @@ permalink: /kb/184/Q184351/
 	
 	=============================================================================
 	
+
+{% endraw %}

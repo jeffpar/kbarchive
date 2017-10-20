@@ -6,6 +6,8 @@ permalink: /kb/081/Q81807/
 
 ## Q81807: Windows: Cursor Is Lost in MS-DOS when in 43-Line Mode
 
+{% raw %}
+
 	Article: Q81807
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/081/Q81807/
 	
 	=============================================================================
 	
+
+{% endraw %}

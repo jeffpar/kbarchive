@@ -6,6 +6,8 @@ permalink: /kb/225/Q225544/
 
 ## Q225544: FTP Messages Cannot Contain the Plus Symbol (+) Using HTMLA
 
+{% raw %}
+
 	Article: Q225544
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -47,3 +49,5 @@ permalink: /kb/225/Q225544/
 	
 	=============================================================================
 	
+
+{% endraw %}

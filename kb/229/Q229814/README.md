@@ -6,6 +6,8 @@ permalink: /kb/229/Q229814/
 
 ## Q229814: Configuring IIS to Handle Heavy Usage
 
+{% raw %}
+
 	Article: Q229814
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -95,3 +97,5 @@ permalink: /kb/229/Q229814/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84943/
 
 ## Q84943: Using HIMEM.EXE with Win 3.0 on COMPAQs with More Than 16 MB
 
+{% raw %}
+
 	Article: Q84943
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -86,3 +88,5 @@ permalink: /kb/084/Q84943/
 	
 	=============================================================================
 	
+
+{% endraw %}

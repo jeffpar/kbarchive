@@ -6,6 +6,8 @@ permalink: /kb/240/Q240640/
 
 ## Q240640: World Atlas: Cannot Paste Over Six Lines of Text in Pushpin Note
 
+{% raw %}
+
 	Article: Q240640
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/240/Q240640/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98737/
 
 ## Q98737: Cannot Run MS-DOS Compatibility Box
 
+{% raw %}
+
 	Article: Q98737
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/098/Q98737/
 	
 	=============================================================================
 	
+
+{% endraw %}

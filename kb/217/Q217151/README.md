@@ -6,6 +6,8 @@ permalink: /kb/217/Q217151/
 
 ## Q217151: Catalog Corruption Occurs after Indexing Is Complete
 
+{% raw %}
+
 	Article: Q217151
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -69,3 +71,5 @@ permalink: /kb/217/Q217151/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162525/
 
 ## Q162525: BUILDING MS EXCHANGE APPLICATIONS Corrections and Comments
 
+{% raw %}
+
 	Article: Q162525
 	Product(s): Microsoft Press
 	Version(s): ; winnt:3.51,4.0
@@ -267,3 +269,5 @@ permalink: /kb/162/Q162525/
 	
 	=============================================================================
 	
+
+{% endraw %}

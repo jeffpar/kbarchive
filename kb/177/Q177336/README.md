@@ -6,6 +6,8 @@ permalink: /kb/177/Q177336/
 
 ## Q177336: PRB: READ EVENTS in Form's Init Causes the Form Not to Display
 
+{% raw %}
+
 	Article: Q177336
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -96,3 +98,5 @@ permalink: /kb/177/Q177336/
 	
 	=============================================================================
 	
+
+{% endraw %}

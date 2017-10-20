@@ -6,6 +6,8 @@ permalink: /kb/233/Q233500/
 
 ## Q233500: Service Pack 5 No Longer Keeps a Separate PS1 Folder for IBM
 
+{% raw %}
+
 	Article: Q233500
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/233/Q233500/
 	
 	=============================================================================
 	
+
+{% endraw %}

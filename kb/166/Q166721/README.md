@@ -6,6 +6,8 @@ permalink: /kb/166/Q166721/
 
 ## Q166721: FIX: Compiler Error C2784 o
 
+{% raw %}
+
 	Article: Q166721
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -127,3 +129,5 @@ permalink: /kb/166/Q166721/
 	
 	=============================================================================
 	
+
+{% endraw %}

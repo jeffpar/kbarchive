@@ -6,6 +6,8 @@ permalink: /kb/155/Q155303/
 
 ## Q155303: HOWTO: Create Shortcuts (Shell Links) within Windows
 
+{% raw %}
+
 	Article: Q155303
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -120,3 +122,5 @@ permalink: /kb/155/Q155303/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/230/Q230338/
 
 ## Q230338: Inbox and Internet Explorer Icons Disabled with Appsec.exe
 
+{% raw %}
+
 	Article: Q230338
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/230/Q230338/
 	
 	=============================================================================
 	
+
+{% endraw %}

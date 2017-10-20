@@ -6,6 +6,8 @@ permalink: /kb/222/Q222641/
 
 ## Q222641: XCON: Content Conversion Error Sending Contact as an Attachment
 
+{% raw %}
+
 	Article: Q222641
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -115,3 +117,5 @@ permalink: /kb/222/Q222641/
 	
 	=============================================================================
 	
+
+{% endraw %}

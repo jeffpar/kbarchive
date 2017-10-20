@@ -6,6 +6,8 @@ permalink: /kb/089/Q89152/
 
 ## Q89152: Installing Bookshelf Only from the Word and Bookshelf Bundle
 
+{% raw %}
+
 	Article: Q89152
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 edition
@@ -45,3 +47,5 @@ permalink: /kb/089/Q89152/
 	
 	=============================================================================
 	
+
+{% endraw %}

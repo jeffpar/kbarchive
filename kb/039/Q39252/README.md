@@ -6,6 +6,8 @@ permalink: /kb/039/Q39252/
 
 ## Q39252: ON KEY Trapping CTRL, SHIFT, CAPS LOCK, NUM LOCK Combinations
 
+{% raw %}
+
 	Article: Q39252
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -84,3 +86,5 @@ permalink: /kb/039/Q39252/
 	   break:
 	    PRINT "break"
 	   RETURN
+
+{% endraw %}

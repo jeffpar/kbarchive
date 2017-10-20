@@ -6,6 +6,8 @@ permalink: /kb/050/Q50411/
 
 ## Q50411: Graphics Mode: Getting More Than One Background Color
 
+{% raw %}
+
 	Article: Q50411
 	Product(s): See article
 	Version(s): 5.10
@@ -160,3 +162,5 @@ permalink: /kb/050/Q50411/
 	        _unregisterfonts();           /* free up memory used by fonts*/
 	        exit( !_setvideomode( _DEFAULTMODE ) );
 	}
+
+{% endraw %}

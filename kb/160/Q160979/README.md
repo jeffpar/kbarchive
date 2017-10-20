@@ -6,6 +6,8 @@ permalink: /kb/160/Q160979/
 
 ## Q160979: TN3270 Server Does Not Handle Models 3, 4, and 5 Correctly
 
+{% raw %}
+
 	Article: Q160979
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -67,3 +69,5 @@ permalink: /kb/160/Q160979/
 	
 	=============================================================================
 	
+
+{% endraw %}

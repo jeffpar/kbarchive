@@ -6,6 +6,8 @@ permalink: /kb/090/Q90225/
 
 ## Q90225: No Network Detection During Setup
 
+{% raw %}
+
 	Article: Q90225
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1; :1.0
@@ -37,3 +39,5 @@ permalink: /kb/090/Q90225/
 	
 	=============================================================================
 	
+
+{% endraw %}

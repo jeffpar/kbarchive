@@ -6,6 +6,8 @@ permalink: /kb/095/Q95716/
 
 ## Q95716: Error Message &quot;Cannot Create Program Workspace&quot;
 
+{% raw %}
+
 	Article: Q95716
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a | 2.50 2.50a 3.00
@@ -64,3 +66,5 @@ permalink: /kb/095/Q95716/
 	
 	=============================================================================
 	
+
+{% endraw %}

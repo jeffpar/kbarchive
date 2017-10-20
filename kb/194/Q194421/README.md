@@ -6,6 +6,8 @@ permalink: /kb/194/Q194421/
 
 ## Q194421: ASP Registry Key QueueWaitTimeOutInSeconds Not Working
 
+{% raw %}
+
 	Article: Q194421
 	Product(s): Internet Information Server
 	Version(s): WINNT:3.0
@@ -70,3 +72,5 @@ permalink: /kb/194/Q194421/
 	
 	=============================================================================
 	
+
+{% endraw %}

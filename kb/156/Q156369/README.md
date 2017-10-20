@@ -6,6 +6,8 @@ permalink: /kb/156/Q156369/
 
 ## Q156369: XCON: MTA Doesn't Accept IA5 in General Text Body Part
 
+{% raw %}
+
 	Article: Q156369
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/156/Q156369/
 	
 	=============================================================================
 	
+
+{% endraw %}

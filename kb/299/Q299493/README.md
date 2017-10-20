@@ -6,6 +6,8 @@ permalink: /kb/299/Q299493/
 
 ## Q299493: Passport Manager Object Misconfigured
 
+{% raw %}
+
 	Article: Q299493
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -68,3 +70,5 @@ permalink: /kb/299/Q299493/
 	
 	=============================================================================
 	
+
+{% endraw %}

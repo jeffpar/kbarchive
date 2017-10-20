@@ -6,6 +6,8 @@ permalink: /kb/088/Q88198/
 
 ## Q88198: DOC: Common Dialog Boxes DLL Documentation Errors
 
+{% raw %}
+
 	Article: Q88198
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -228,3 +230,5 @@ permalink: /kb/088/Q88198/
 	
 	=============================================================================
 	
+
+{% endraw %}

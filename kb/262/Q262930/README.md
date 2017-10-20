@@ -6,6 +6,8 @@ permalink: /kb/262/Q262930/
 
 ## Q262930: Allegiance: Sounds Associated with Menus Are Played Repeatedly
 
+{% raw %}
+
 	Article: Q262930
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -102,3 +104,5 @@ permalink: /kb/262/Q262930/
 	
 	=============================================================================
 	
+
+{% endraw %}

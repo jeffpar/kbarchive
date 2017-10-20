@@ -6,6 +6,8 @@ permalink: /kb/167/Q167906/
 
 ## Q167906: PRB: Access 7.0 Database Corrupt After Calling RepairDatabase
 
+{% raw %}
+
 	Article: Q167906
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -100,3 +102,5 @@ permalink: /kb/167/Q167906/
 	
 	=============================================================================
 	
+
+{% endraw %}

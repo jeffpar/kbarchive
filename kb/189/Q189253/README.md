@@ -6,6 +6,8 @@ permalink: /kb/189/Q189253/
 
 ## Q189253: Readme Files For Sample Scripts Incorrect On 5.5 Compact Disc
 
+{% raw %}
+
 	Article: Q189253
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -74,3 +76,5 @@ permalink: /kb/189/Q189253/
 	
 	=============================================================================
 	
+
+{% endraw %}

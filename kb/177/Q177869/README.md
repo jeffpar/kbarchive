@@ -6,6 +6,8 @@ permalink: /kb/177/Q177869/
 
 ## Q177869: XFOR: Messages with X.400 Address in From Field Not Delivered
 
+{% raw %}
+
 	Article: Q177869
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -92,3 +94,5 @@ permalink: /kb/177/Q177869/
 	
 	=============================================================================
 	
+
+{% endraw %}

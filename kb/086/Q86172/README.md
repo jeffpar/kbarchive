@@ -6,6 +6,8 @@ permalink: /kb/086/Q86172/
 
 ## Q86172: Hercules VGA May Cause Yellow Screen in Windows
 
+{% raw %}
+
 	Article: Q86172
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/086/Q86172/
 	
 	=============================================================================
 	
+
+{% endraw %}

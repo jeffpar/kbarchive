@@ -6,6 +6,8 @@ permalink: /kb/087/Q87959/
 
 ## Q87959: CLIENT.WRI from WinLogin 1.0
 
+{% raw %}
+
 	Article: Q87959
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -174,3 +176,5 @@ permalink: /kb/087/Q87959/
 	
 	=============================================================================
 	
+
+{% endraw %}

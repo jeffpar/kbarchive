@@ -6,6 +6,8 @@ permalink: /kb/258/Q258662/
 
 ## Q258662: Availability of FAT32 Support in Windows 95
 
+{% raw %}
+
 	Article: Q258662
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -123,3 +125,5 @@ permalink: /kb/258/Q258662/
 	
 	=============================================================================
 	
+
+{% endraw %}

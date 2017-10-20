@@ -6,6 +6,8 @@ permalink: /kb/260/Q260581/
 
 ## Q260581: BUG: Installing App via PDW Generates Err Msg Creating Icons
 
+{% raw %}
+
 	Article: Q260581
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -116,3 +118,5 @@ permalink: /kb/260/Q260581/
 	
 	=============================================================================
 	
+
+{% endraw %}

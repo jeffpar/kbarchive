@@ -6,6 +6,8 @@ permalink: /kb/187/Q187629/
 
 ## Q187629: Terminal Server Licensing
 
+{% raw %}
+
 	Article: Q187629
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -145,3 +147,5 @@ permalink: /kb/187/Q187629/
 	
 	=============================================================================
 	
+
+{% endraw %}

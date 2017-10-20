@@ -6,6 +6,8 @@ permalink: /kb/279/Q279362/
 
 ## Q279362: MechWarrior 4: Vengeance: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q279362
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/279/Q279362/
 	
 	=============================================================================
 	
+
+{% endraw %}

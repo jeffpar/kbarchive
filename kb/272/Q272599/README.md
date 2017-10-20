@@ -6,6 +6,8 @@ permalink: /kb/272/Q272599/
 
 ## Q272599: MapPoint 2000 Err Msg: Unable to Register or Unregister the File
 
+{% raw %}
+
 	Article: Q272599
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/272/Q272599/
 	
 	=============================================================================
 	
+
+{% endraw %}

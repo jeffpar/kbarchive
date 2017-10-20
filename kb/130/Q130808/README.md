@@ -6,6 +6,8 @@ permalink: /kb/130/Q130808/
 
 ## Q130808: Help Building Fortran PowerStation 32 App that Targets Win32s
 
+{% raw %}
+
 	Article: Q130808
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -90,3 +92,5 @@ permalink: /kb/130/Q130808/
 	
 	=============================================================================
 	
+
+{% endraw %}

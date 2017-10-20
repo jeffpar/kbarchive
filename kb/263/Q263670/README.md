@@ -6,6 +6,8 @@ permalink: /kb/263/Q263670/
 
 ## Q263670: WD97: Index Entries Appear in Reverse Order
 
+{% raw %}
+
 	Article: Q263670
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/263/Q263670/
 	
 	=============================================================================
 	
+
+{% endraw %}

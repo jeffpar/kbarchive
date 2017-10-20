@@ -6,6 +6,8 @@ permalink: /kb/111/Q111580/
 
 ## Q111580: BUG: Some ROP Codes Cause Inconsistent Polygon() Line Segments
 
+{% raw %}
+
 	Article: Q111580
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -86,3 +88,5 @@ permalink: /kb/111/Q111580/
 	
 	=============================================================================
 	
+
+{% endraw %}

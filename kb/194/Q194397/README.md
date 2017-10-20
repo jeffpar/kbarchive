@@ -6,6 +6,8 @@ permalink: /kb/194/Q194397/
 
 ## Q194397: Err Msg: Application Object Error 'ASP 0197 : 80004005'.
 
+{% raw %}
+
 	Article: Q194397
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/194/Q194397/
 	
 	=============================================================================
 	
+
+{% endraw %}

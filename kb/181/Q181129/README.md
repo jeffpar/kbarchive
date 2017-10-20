@@ -6,6 +6,8 @@ permalink: /kb/181/Q181129/
 
 ## Q181129: Err Msg: The Host Pop3.email.msn.com Could Not Be Found...
 
+{% raw %}
+
 	Article: Q181129
 	Product(s): The Microsoft Network
 	Version(s): 2.51,2.6,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5,5.0,5.1,5.2
@@ -228,3 +230,5 @@ permalink: /kb/181/Q181129/
 	
 	=============================================================================
 	
+
+{% endraw %}

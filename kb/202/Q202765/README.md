@@ -6,6 +6,8 @@ permalink: /kb/202/Q202765/
 
 ## Q202765: XIMS: Using IMS Mail: &quot;503 Sender Already Specied&quot;
 
+{% raw %}
+
 	Article: Q202765
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/202/Q202765/
 	
 	=============================================================================
 	
+
+{% endraw %}

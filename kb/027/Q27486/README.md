@@ -6,6 +6,8 @@ permalink: /kb/027/Q27486/
 
 ## Q27486: CALLing C I/O Routines Does Not Affect QB Cursor Position
 
+{% raw %}
+
 	Article: Q27486
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/027/Q27486/
 	   {
 	   printf ("The first part of this line gets erased.\n");
 	   }
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163425/
 
 ## Q163425: WD97: Macro Programming Resources
 
+{% raw %}
+
 	Article: Q163425
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -224,3 +226,5 @@ permalink: /kb/163/Q163425/
 	
 	=============================================================================
 	
+
+{% endraw %}

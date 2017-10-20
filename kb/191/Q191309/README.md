@@ -6,6 +6,8 @@ permalink: /kb/191/Q191309/
 
 ## Q191309: ALT+Numeric Keypad Problem When CHCP Command is Used
 
+{% raw %}
+
 	Article: Q191309
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -95,3 +97,5 @@ permalink: /kb/191/Q191309/
 	
 	=============================================================================
 	
+
+{% endraw %}

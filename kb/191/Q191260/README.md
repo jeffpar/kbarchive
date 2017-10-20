@@ -6,6 +6,8 @@ permalink: /kb/191/Q191260/
 
 ## Q191260: Dr. Watson Error When Adding New Printer on Spanish Windows NT
 
+{% raw %}
+
 	Article: Q191260
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/191/Q191260/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157876/
 
 ## Q157876: FIX: SetFieldNull() Asserts in DBCORE.CPP Line 4055 or 4062
 
+{% raw %}
+
 	Article: Q157876
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -130,3 +132,5 @@ permalink: /kb/157/Q157876/
 	
 	=============================================================================
 	
+
+{% endraw %}

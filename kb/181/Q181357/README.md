@@ -6,6 +6,8 @@ permalink: /kb/181/Q181357/
 
 ## Q181357: PRB: Editing the Windows NT 4.0 Unattended Setup Script To Inser
 
+{% raw %}
+
 	Article: Q181357
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -93,3 +95,5 @@ permalink: /kb/181/Q181357/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155845/
 
 ## Q155845: Mouse Distorts Display on MIPS NEC RISCstation 2200 with TGA
 
+{% raw %}
+
 	Article: Q155845
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/155/Q155845/
 	
 	=============================================================================
 	
+
+{% endraw %}

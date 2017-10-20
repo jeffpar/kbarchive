@@ -6,6 +6,8 @@ permalink: /kb/183/Q183266/
 
 ## Q183266: XADM: HowTo Restore Offline Backup of Dir Svc and Info Store
 
+{% raw %}
+
 	Article: Q183266
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -109,3 +111,5 @@ permalink: /kb/183/Q183266/
 	
 	=============================================================================
 	
+
+{% endraw %}

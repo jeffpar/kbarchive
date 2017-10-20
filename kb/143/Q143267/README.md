@@ -6,6 +6,8 @@ permalink: /kb/143/Q143267/
 
 ## Q143267: Scenes 2.0: List of Known Content Errors
 
+{% raw %}
+
 	Article: Q143267
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -51,3 +53,5 @@ permalink: /kb/143/Q143267/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263526/
 
 ## Q263526: XADM: Appointments Sent in Different Time Zones Not Processed
 
+{% raw %}
+
 	Article: Q263526
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/263/Q263526/
 	
 	=============================================================================
 	
+
+{% endraw %}

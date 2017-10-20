@@ -6,6 +6,8 @@ permalink: /kb/192/Q192116/
 
 ## Q192116: HOWTO: Configure Posting Acceptor to Work with the PDW
 
+{% raw %}
+
 	Article: Q192116
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -383,3 +385,5 @@ permalink: /kb/192/Q192116/
 	
 	=============================================================================
 	
+
+{% endraw %}

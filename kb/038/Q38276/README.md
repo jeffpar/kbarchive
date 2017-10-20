@@ -6,6 +6,8 @@ permalink: /kb/038/Q38276/
 
 ## Q38276: &quot;Out Of Memory&quot; During CHAIN Using Large COMMON Block
 
+{% raw %}
+
 	Article: Q38276
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -41,3 +43,5 @@ permalink: /kb/038/Q38276/
 	COMMON a#(), b#(), c#()
 	PRINT FRE(-1)
 	PRINT "Chain complete"
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/301/Q301363/
 
 ## Q301363: Registry Changes in Host Integration Server 2000 End User Client
 
+{% raw %}
+
 	Article: Q301363
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/301/Q301363/
 	
 	=============================================================================
 	
+
+{% endraw %}

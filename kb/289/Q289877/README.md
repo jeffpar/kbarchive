@@ -6,6 +6,8 @@ permalink: /kb/289/Q289877/
 
 ## Q289877: Create a Query in SMS Server That Returns All Computers
 
+{% raw %}
+
 	Article: Q289877
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -135,3 +137,5 @@ permalink: /kb/289/Q289877/
 	
 	=============================================================================
 	
+
+{% endraw %}

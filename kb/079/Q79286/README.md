@@ -6,6 +6,8 @@ permalink: /kb/079/Q79286/
 
 ## Q79286: FIX: Nested NOT Operators Yield Incorrect Value
 
+{% raw %}
+
 	Article: Q79286
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -74,3 +76,5 @@ permalink: /kb/079/Q79286/
 	
 	=============================================================================
 	
+
+{% endraw %}

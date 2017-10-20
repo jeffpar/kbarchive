@@ -6,6 +6,8 @@ permalink: /kb/192/Q192526/
 
 ## Q192526: XFOR: Macintosh Mail Source Extractor Makes Corrupt PSTs
 
+{% raw %}
+
 	Article: Q192526
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/192/Q192526/
 	
 	=============================================================================
 	
+
+{% endraw %}

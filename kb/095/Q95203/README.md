@@ -6,6 +6,8 @@ permalink: /kb/095/Q95203/
 
 ## Q95203: Err Msg: SmartMon Unable to Save the New Cache Settings
 
+{% raw %}
+
 	Article: Q95203
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -60,3 +62,5 @@ permalink: /kb/095/Q95203/
 	
 	=============================================================================
 	
+
+{% endraw %}

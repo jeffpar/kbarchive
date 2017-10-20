@@ -6,6 +6,8 @@ permalink: /kb/103/Q103156/
 
 ## Q103156: Install Hangs on Gateway 2000 486/66V and IDE Disks
 
+{% raw %}
+
 	Article: Q103156
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -63,3 +65,5 @@ permalink: /kb/103/Q103156/
 	
 	=============================================================================
 	
+
+{% endraw %}

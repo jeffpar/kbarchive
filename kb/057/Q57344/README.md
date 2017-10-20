@@ -6,6 +6,8 @@ permalink: /kb/057/Q57344/
 
 ## Q57344: &quot;Subscript out of Range in Quick Library Module: WINDOW&quot; Error
 
+{% raw %}
+
 	Article: Q57344
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -39,3 +41,5 @@ permalink: /kb/057/Q57344/
 	
 	This information applies to Microsoft BASIC Professional Development
 	System (PDS) versions 7.00 and 7.10 for MS-DOS.
+
+{% endraw %}

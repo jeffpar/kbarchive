@@ -6,6 +6,8 @@ permalink: /kb/066/Q66416/
 
 ## Q66416: Olivetti DOS 4.01 Revision 1.06 or Later Needed to Run Windows
 
+{% raw %}
+
 	Article: Q66416
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -48,3 +50,5 @@ permalink: /kb/066/Q66416/
 	
 	=============================================================================
 	
+
+{% endraw %}

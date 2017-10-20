@@ -6,6 +6,8 @@ permalink: /kb/092/Q92716/
 
 ## Q92716: WFWG 3.10: 3Com EtherLink Supported Only with Sharing Disabled
 
+{% raw %}
+
 	Article: Q92716
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1; :1.0
@@ -93,3 +95,5 @@ permalink: /kb/092/Q92716/
 	
 	=============================================================================
 	
+
+{% endraw %}

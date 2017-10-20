@@ -6,6 +6,8 @@ permalink: /kb/082/Q82566/
 
 ## Q82566: Norton Desktop's Batch Builder Help Error
 
+{% raw %}
+
 	Article: Q82566
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/082/Q82566/
 	
 	=============================================================================
 	
+
+{% endraw %}

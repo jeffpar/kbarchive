@@ -6,6 +6,8 @@ permalink: /kb/160/Q160157/
 
 ## Q160157: Unstable After Activating Red Carded Player
 
+{% raw %}
+
 	Article: Q160157
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/160/Q160157/
 	
 	=============================================================================
 	
+
+{% endraw %}

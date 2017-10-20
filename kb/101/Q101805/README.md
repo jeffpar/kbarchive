@@ -6,6 +6,8 @@ permalink: /kb/101/Q101805/
 
 ## Q101805: Using .DBF-Style Help in FoxPro for Windows
 
+{% raw %}
+
 	Article: Q101805
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0
@@ -60,3 +62,5 @@ permalink: /kb/101/Q101805/
 	
 	=============================================================================
 	
+
+{% endraw %}

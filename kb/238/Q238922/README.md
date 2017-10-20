@@ -6,6 +6,8 @@ permalink: /kb/238/Q238922/
 
 ## Q238922: Encarta 2000: Detailed Description of Registry Key Functions
 
+{% raw %}
+
 	Article: Q238922
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:
@@ -124,3 +126,5 @@ permalink: /kb/238/Q238922/
 	
 	=============================================================================
 	
+
+{% endraw %}

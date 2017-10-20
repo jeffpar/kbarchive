@@ -6,6 +6,8 @@ permalink: /kb/141/Q141379/
 
 ## Q141379: Using SCSI CD-ROM Recorders with Windows NT
 
+{% raw %}
+
 	Article: Q141379
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -61,3 +63,5 @@ permalink: /kb/141/Q141379/
 	
 	=============================================================================
 	
+
+{% endraw %}

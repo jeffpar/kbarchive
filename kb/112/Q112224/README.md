@@ -6,6 +6,8 @@ permalink: /kb/112/Q112224/
 
 ## Q112224: File Available that Lists Flight Simulator 5.0a Changes
 
+{% raw %}
+
 	Article: Q112224
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -49,3 +51,5 @@ permalink: /kb/112/Q112224/
 	
 	=============================================================================
 	
+
+{% endraw %}

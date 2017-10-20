@@ -6,6 +6,8 @@ permalink: /kb/266/Q266253/
 
 ## Q266253: How to Enter Phone Numbers in Phone Dialer Correctly
 
+{% raw %}
+
 	Article: Q266253
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,4.0
@@ -71,3 +73,5 @@ permalink: /kb/266/Q266253/
 	
 	=============================================================================
 	
+
+{% endraw %}

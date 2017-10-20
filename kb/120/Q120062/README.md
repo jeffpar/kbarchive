@@ -6,6 +6,8 @@ permalink: /kb/120/Q120062/
 
 ## Q120062: Corel Draw 5.0 Running in Second VDM Loses Data
 
+{% raw %}
+
 	Article: Q120062
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/120/Q120062/
 	
 	=============================================================================
 	
+
+{% endraw %}

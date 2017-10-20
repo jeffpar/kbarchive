@@ -6,6 +6,8 @@ permalink: /kb/109/Q109437/
 
 ## Q109437: Moving Workgroup Postoffice and Changing Postoffice Manager
 
+{% raw %}
+
 	Article: Q109437
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51
@@ -138,3 +140,5 @@ permalink: /kb/109/Q109437/
 	
 	=============================================================================
 	
+
+{% endraw %}

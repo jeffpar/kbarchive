@@ -6,6 +6,8 @@ permalink: /kb/249/Q249828/
 
 ## Q249828: Unable to Log on to Domain After Applying SP4 or Later
 
+{% raw %}
+
 	Article: Q249828
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -82,3 +84,5 @@ permalink: /kb/249/Q249828/
 	
 	=============================================================================
 	
+
+{% endraw %}

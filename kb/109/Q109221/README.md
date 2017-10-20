@@ -6,6 +6,8 @@ permalink: /kb/109/Q109221/
 
 ## Q109221: Writer/Artist: Setup Does Not Run in Windows 3.1 Standard Mode
 
+{% raw %}
+
 	Article: Q109221
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -65,3 +67,5 @@ permalink: /kb/109/Q109221/
 	
 	=============================================================================
 	
+
+{% endraw %}

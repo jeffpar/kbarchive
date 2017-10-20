@@ -6,6 +6,8 @@ permalink: /kb/141/Q141493/
 
 ## Q141493: DOC: &quot;How to Use Debug Heap from C++&quot; Documented Incorrectly
 
+{% raw %}
+
 	Article: Q141493
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0,4.1,4.2,5.0;
@@ -120,3 +122,5 @@ permalink: /kb/141/Q141493/
 	
 	=============================================================================
 	
+
+{% endraw %}

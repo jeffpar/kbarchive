@@ -6,6 +6,8 @@ permalink: /kb/029/Q29559/
 
 ## Q29559: Predefined File Handles in OS/2 Are Stdin, Stdout, and Stderr
 
+{% raw %}
+
 	Article: Q29559
 	Product(s): See article
 	Version(s): 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -29,3 +31,5 @@ permalink: /kb/029/Q29559/
 	
 	No compiler errors, linker errors, or warnings are generated in these
 	cases.
+
+{% endraw %}

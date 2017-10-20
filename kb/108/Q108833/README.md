@@ -6,6 +6,8 @@ permalink: /kb/108/Q108833/
 
 ## Q108833: PC Adm: Err Msg: Notice 170 The Folder Index Below...
 
+{% raw %}
+
 	Article: Q108833
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2
@@ -52,3 +54,5 @@ permalink: /kb/108/Q108833/
 	
 	=============================================================================
 	
+
+{% endraw %}

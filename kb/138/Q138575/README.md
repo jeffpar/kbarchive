@@ -6,6 +6,8 @@ permalink: /kb/138/Q138575/
 
 ## Q138575: Communication Fails Through Ethernet Segment Between FDDI Rings
 
+{% raw %}
+
 	Article: Q138575
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,4.0
@@ -98,3 +100,5 @@ permalink: /kb/138/Q138575/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170299/
 
 ## Q170299: Mastering: No Access to Favorites List in Internet Explorer
 
+{% raw %}
+
 	Article: Q170299
 	Product(s): Microsoft Mastering Series
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/170/Q170299/
 	
 	=============================================================================
 	
+
+{% endraw %}

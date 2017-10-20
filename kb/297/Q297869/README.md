@@ -6,6 +6,8 @@ permalink: /kb/297/Q297869/
 
 ## Q297869: Issues After You Modify Kerberos MaxTokenSize Registry Value
 
+{% raw %}
+
 	Article: Q297869
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -85,3 +87,5 @@ permalink: /kb/297/Q297869/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162158/
 
 ## Q162158: NET ACCOUNTS Command Errors
 
+{% raw %}
+
 	Article: Q162158
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -102,3 +104,5 @@ permalink: /kb/162/Q162158/
 	
 	=============================================================================
 	
+
+{% endraw %}

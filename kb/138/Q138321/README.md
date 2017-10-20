@@ -6,6 +6,8 @@ permalink: /kb/138/Q138321/
 
 ## Q138321: Err Msg at Logon: Unable To Log You On Because Your Profile...
 
+{% raw %}
+
 	Article: Q138321
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -56,3 +58,5 @@ permalink: /kb/138/Q138321/
 	
 	=============================================================================
 	
+
+{% endraw %}

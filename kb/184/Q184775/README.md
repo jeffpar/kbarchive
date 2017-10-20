@@ -6,6 +6,8 @@ permalink: /kb/184/Q184775/
 
 ## Q184775: FIX: Oracle ODBC Driver Creates Temporary Files on Root Drive
 
+{% raw %}
+
 	Article: Q184775
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.0,1.5,Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03
@@ -91,3 +93,5 @@ permalink: /kb/184/Q184775/
 	
 	=============================================================================
 	
+
+{% endraw %}

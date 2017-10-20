@@ -6,6 +6,8 @@ permalink: /kb/169/Q169278/
 
 ## Q169278: ACC97: MS Access Hangs Adding DB to VSS While in Break Mode
 
+{% raw %}
+
 	Article: Q169278
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,97
@@ -94,3 +96,5 @@ permalink: /kb/169/Q169278/
 	
 	=============================================================================
 	
+
+{% endraw %}

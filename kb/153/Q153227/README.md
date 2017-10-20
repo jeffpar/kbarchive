@@ -6,6 +6,8 @@ permalink: /kb/153/Q153227/
 
 ## Q153227: SMS: PCM Requires Restart After Running a Package
 
+{% raw %}
+
 	Article: Q153227
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -70,3 +72,5 @@ permalink: /kb/153/Q153227/
 	
 	=============================================================================
 	
+
+{% endraw %}

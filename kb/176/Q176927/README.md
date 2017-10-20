@@ -6,6 +6,8 @@ permalink: /kb/176/Q176927/
 
 ## Q176927: FP98: Newest to Oldest Order Doesn't Work in Discussion Web
 
+{% raw %}
+
 	Article: Q176927
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:
@@ -91,3 +93,5 @@ permalink: /kb/176/Q176927/
 	
 	=============================================================================
 	
+
+{% endraw %}

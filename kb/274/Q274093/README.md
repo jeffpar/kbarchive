@@ -6,6 +6,8 @@ permalink: /kb/274/Q274093/
 
 ## Q274093: Microsoft Reader: Progress Bar Does Not Move During Activation
 
+{% raw %}
+
 	Article: Q274093
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -59,3 +61,5 @@ permalink: /kb/274/Q274093/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149384/
 
 ## Q149384: Error Message: Cannot Open the Online Statement
 
+{% raw %}
+
 	Article: Q149384
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.05 1.20 1.30
@@ -63,3 +65,5 @@ permalink: /kb/149/Q149384/
 	
 	=============================================================================
 	
+
+{% endraw %}

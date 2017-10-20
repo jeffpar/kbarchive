@@ -6,6 +6,8 @@ permalink: /kb/260/Q260824/
 
 ## Q260824: Changing CAPs or Client Connection Accounts May Orphan Clients
 
+{% raw %}
+
 	Article: Q260824
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -84,3 +86,5 @@ permalink: /kb/260/Q260824/
 	
 	=============================================================================
 	
+
+{% endraw %}

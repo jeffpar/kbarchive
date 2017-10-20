@@ -6,6 +6,8 @@ permalink: /kb/133/Q133339/
 
 ## Q133339: Automating Client Services for NetWare (CSNW) Installation
 
+{% raw %}
+
 	Article: Q133339
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -155,3 +157,5 @@ permalink: /kb/133/Q133339/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/214/Q214565/
 
 ## Q214565: XFOR: MS Mail Connector Is Throwing Away Read Receipts from Mac
 
+{% raw %}
+
 	Article: Q214565
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -77,3 +79,5 @@ permalink: /kb/214/Q214565/
 	
 	=============================================================================
 	
+
+{% endraw %}

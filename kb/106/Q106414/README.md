@@ -6,6 +6,8 @@ permalink: /kb/106/Q106414/
 
 ## Q106414: Err Msg After Upgrading from 3.3 to 6.2: Incorrect DOS Version
 
+{% raw %}
+
 	Article: Q106414
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -66,3 +68,5 @@ permalink: /kb/106/Q106414/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84978/
 
 ## Q84978: LBChange.exe Simulates Changing List Box Style
 
+{% raw %}
+
 	Article: Q84978
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -78,3 +80,5 @@ permalink: /kb/084/Q84978/
 	
 	=============================================================================
 	
+
+{% endraw %}

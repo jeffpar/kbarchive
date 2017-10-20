@@ -6,6 +6,8 @@ permalink: /kb/262/Q262466/
 
 ## Q262466: Windows 95 RAS Clients Cannot Connect to Windows NT Server
 
+{% raw %}
+
 	Article: Q262466
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4
@@ -104,3 +106,5 @@ permalink: /kb/262/Q262466/
 	
 	=============================================================================
 	
+
+{% endraw %}

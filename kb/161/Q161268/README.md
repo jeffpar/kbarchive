@@ -6,6 +6,8 @@ permalink: /kb/161/Q161268/
 
 ## Q161268: Encarta 97 Err Msg: Enc97 Failed to Load Encres97.dll
 
+{% raw %}
+
 	Article: Q161268
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/161/Q161268/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/200/Q200587/
 
 ## Q200587: XADM: Cannot Restrict Mailbox Administration by Server
 
+{% raw %}
+
 	Article: Q200587
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -114,3 +116,5 @@ permalink: /kb/200/Q200587/
 	
 	=============================================================================
 	
+
+{% endraw %}

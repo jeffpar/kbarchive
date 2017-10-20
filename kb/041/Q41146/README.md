@@ -6,6 +6,8 @@ permalink: /kb/041/Q41146/
 
 ## Q41146: QB 4.50 SHELL Forces Linefeed If Cursor Is on Line 25
 
+{% raw %}
+
 	Article: Q41146
 	Product(s): See article
 	Version(s): 4.50
@@ -54,3 +56,5 @@ permalink: /kb/041/Q41146/
 	LOCATE 23, 1
 	SHELL "DIR c:\ > TEST.TXT"
 	LOCATE ypos%, xpos%  'returns cursor to line 25 in remembered column.
+
+{% endraw %}

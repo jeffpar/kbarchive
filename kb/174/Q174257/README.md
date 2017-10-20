@@ -6,6 +6,8 @@ permalink: /kb/174/Q174257/
 
 ## Q174257: XCON: Eicon Default Setting Only Allows Four MTA Associations
 
+{% raw %}
+
 	Article: Q174257
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -115,3 +117,5 @@ permalink: /kb/174/Q174257/
 	
 	=============================================================================
 	
+
+{% endraw %}

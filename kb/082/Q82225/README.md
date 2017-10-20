@@ -6,6 +6,8 @@ permalink: /kb/082/Q82225/
 
 ## Q82225: Removing Windows Files to Increase Disk Space
 
+{% raw %}
+
 	Article: Q82225
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -164,3 +166,5 @@ permalink: /kb/082/Q82225/
 	
 	=============================================================================
 	
+
+{% endraw %}

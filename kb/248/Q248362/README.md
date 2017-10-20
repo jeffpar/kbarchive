@@ -6,6 +6,8 @@ permalink: /kb/248/Q248362/
 
 ## Q248362: SMS: Windows 95/98 Client Hangs During Hardware Inventory
 
+{% raw %}
+
 	Article: Q248362
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -140,3 +142,5 @@ permalink: /kb/248/Q248362/
 	
 	=============================================================================
 	
+
+{% endraw %}

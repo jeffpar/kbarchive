@@ -6,6 +6,8 @@ permalink: /kb/066/Q66144/
 
 ## Q66144: Setup Directory Greater than Eight Characters in Games
 
+{% raw %}
+
 	Article: Q66144
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -35,3 +37,5 @@ permalink: /kb/066/Q66144/
 	
 	=============================================================================
 	
+
+{% endraw %}

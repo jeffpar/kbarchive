@@ -6,6 +6,8 @@ permalink: /kb/255/Q255944/
 
 ## Q255944: Allegiance: Censored Words Are Displayed When You Chat
 
+{% raw %}
+
 	Article: Q255944
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -42,3 +44,5 @@ permalink: /kb/255/Q255944/
 	
 	=============================================================================
 	
+
+{% endraw %}

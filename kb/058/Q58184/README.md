@@ -6,6 +6,8 @@ permalink: /kb/058/Q58184/
 
 ## Q58184: Mac Srv: How Serial Numbers Work in Microsoft Mail
 
+{% raw %}
+
 	Article: Q58184
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -44,3 +46,5 @@ permalink: /kb/058/Q58184/
 	
 	=============================================================================
 	
+
+{% endraw %}

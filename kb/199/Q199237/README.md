@@ -6,6 +6,8 @@ permalink: /kb/199/Q199237/
 
 ## Q199237: SMS: SMS 1.2 Clients Visiting SMS 2.0 Sites
 
+{% raw %}
+
 	Article: Q199237
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -73,3 +75,5 @@ permalink: /kb/199/Q199237/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147232/
 
 ## Q147232: Route Change Command Does Not Indicate Error
 
+{% raw %}
+
 	Article: Q147232
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -74,3 +76,5 @@ permalink: /kb/147/Q147232/
 	
 	=============================================================================
 	
+
+{% endraw %}

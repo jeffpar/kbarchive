@@ -6,6 +6,8 @@ permalink: /kb/241/Q241004/
 
 ## Q241004: Network Programming for MS Windows Comments and Corrections
 
+{% raw %}
+
 	Article: Q241004
 	Product(s): Microsoft Press
 	Version(s): 
@@ -128,3 +130,5 @@ permalink: /kb/241/Q241004/
 	
 	=============================================================================
 	
+
+{% endraw %}

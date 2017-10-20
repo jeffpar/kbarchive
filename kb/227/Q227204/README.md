@@ -6,6 +6,8 @@ permalink: /kb/227/Q227204/
 
 ## Q227204: Baseball 2000: Graphics Are Distorted When You Switch to Game
 
+{% raw %}
+
 	Article: Q227204
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/227/Q227204/
 	
 	=============================================================================
 	
+
+{% endraw %}

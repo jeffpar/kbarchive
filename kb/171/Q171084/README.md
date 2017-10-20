@@ -6,6 +6,8 @@ permalink: /kb/171/Q171084/
 
 ## Q171084: How to Install a Certificate
 
+{% raw %}
+
 	Article: Q171084
 	Product(s): Internet Information Server
 	Version(s): WinNT:2.0,3.0
@@ -121,3 +123,5 @@ permalink: /kb/171/Q171084/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77457/
 
 ## Q77457: Accepting Keyboard Input in Batch Files
 
+{% raw %}
+
 	Article: Q77457
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -116,3 +118,5 @@ permalink: /kb/077/Q77457/
 	
 	=============================================================================
 	
+
+{% endraw %}

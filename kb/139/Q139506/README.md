@@ -6,6 +6,8 @@ permalink: /kb/139/Q139506/
 
 ## Q139506: Connections to Share-Level Server May Fail
 
+{% raw %}
+
 	Article: Q139506
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/139/Q139506/
 	
 	=============================================================================
 	
+
+{% endraw %}

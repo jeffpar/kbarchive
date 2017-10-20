@@ -6,6 +6,8 @@ permalink: /kb/107/Q107427/
 
 ## Q107427: BUG: getch() Returns Incorrect Extended Key Codes
 
+{% raw %}
+
 	Article: Q107427
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/107/Q107427/
 	
 	=============================================================================
 	
+
+{% endraw %}

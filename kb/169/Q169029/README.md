@@ -6,6 +6,8 @@ permalink: /kb/169/Q169029/
 
 ## Q169029: FIX: Cannot Change Logical Field in Browse in DBCS VFP
 
+{% raw %}
+
 	Article: Q169029
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -76,3 +78,5 @@ permalink: /kb/169/Q169029/
 	
 	=============================================================================
 	
+
+{% endraw %}

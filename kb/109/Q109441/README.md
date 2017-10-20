@@ -6,6 +6,8 @@ permalink: /kb/109/Q109441/
 
 ## Q109441: Windows NT Resource Kit Includes Incorrect Definition of LSN
 
+{% raw %}
+
 	Article: Q109441
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -41,3 +43,5 @@ permalink: /kb/109/Q109441/
 	
 	=============================================================================
 	
+
+{% endraw %}

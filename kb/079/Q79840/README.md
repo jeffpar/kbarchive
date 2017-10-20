@@ -6,6 +6,8 @@ permalink: /kb/079/Q79840/
 
 ## Q79840: Remote Drives Overwrite Local Drives
 
+{% raw %}
+
 	Article: Q79840
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/079/Q79840/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85944/
 
 ## Q85944: SETUP.INF: Specifying Directory in &#91;RenFiles&#93;,&#91;DelFiles&#93;
 
+{% raw %}
+
 	Article: Q85944
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -69,3 +71,5 @@ permalink: /kb/085/Q85944/
 	
 	=============================================================================
 	
+
+{% endraw %}

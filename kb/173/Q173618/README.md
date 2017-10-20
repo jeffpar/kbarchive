@@ -6,6 +6,8 @@ permalink: /kb/173/Q173618/
 
 ## Q173618: Windows 95 Client Trap in SnaBase Using IPX on Windows NT
 
+{% raw %}
+
 	Article: Q173618
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -98,3 +100,5 @@ permalink: /kb/173/Q173618/
 	
 	=============================================================================
 	
+
+{% endraw %}

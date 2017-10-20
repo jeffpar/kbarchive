@@ -6,6 +6,8 @@ permalink: /kb/101/Q101051/
 
 ## Q101051: PRB: Bottom of Report Truncated in FoxBase+/Mac
 
+{% raw %}
+
 	Article: Q101051
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -66,3 +68,5 @@ permalink: /kb/101/Q101051/
 	
 	=============================================================================
 	
+
+{% endraw %}

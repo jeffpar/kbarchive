@@ -6,6 +6,8 @@ permalink: /kb/269/Q269807/
 
 ## Q269807: MSB: Computer Hangs When You Eject The Magic School Bus CD-ROM
 
+{% raw %}
+
 	Article: Q269807
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/269/Q269807/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130548/
 
 ## Q130548: Tentative Appointment Doesn't Show in Date Navigator
 
+{% raw %}
+
 	Article: Q130548
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -42,3 +44,5 @@ permalink: /kb/130/Q130548/
 	
 	=============================================================================
 	
+
+{% endraw %}

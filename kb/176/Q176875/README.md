@@ -6,6 +6,8 @@ permalink: /kb/176/Q176875/
 
 ## Q176875: INFO: The Primary Functions of Ssarc.exe and Ssrestor.exe
 
+{% raw %}
+
 	Article: Q176875
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -112,3 +114,5 @@ permalink: /kb/176/Q176875/
 	
 	=============================================================================
 	
+
+{% endraw %}

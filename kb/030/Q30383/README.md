@@ -6,6 +6,8 @@ permalink: /kb/030/Q30383/
 
 ## Q30383: FIX: SUBSTR Will Not Work if Target Is the Same as Source
 
+{% raw %}
+
 	Article: Q30383
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -50,3 +52,5 @@ permalink: /kb/030/Q30383/
 	
 	=============================================================================
 	
+
+{% endraw %}

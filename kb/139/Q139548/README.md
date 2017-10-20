@@ -6,6 +6,8 @@ permalink: /kb/139/Q139548/
 
 ## Q139548: How to Use the GetDiskFreeSpace API Call
 
+{% raw %}
+
 	Article: Q139548
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -140,3 +142,5 @@ permalink: /kb/139/Q139548/
 	
 	=============================================================================
 	
+
+{% endraw %}

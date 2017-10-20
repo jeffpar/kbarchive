@@ -6,6 +6,8 @@ permalink: /kb/183/Q183054/
 
 ## Q183054: Taking Ownership Remotely May Set Owner Incorrectly
 
+{% raw %}
+
 	Article: Q183054
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -95,3 +97,5 @@ permalink: /kb/183/Q183054/
 	
 	=============================================================================
 	
+
+{% endraw %}

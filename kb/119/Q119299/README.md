@@ -6,6 +6,8 @@ permalink: /kb/119/Q119299/
 
 ## Q119299: Err Msg: Event ID 11: The Driver Detected a Controller Error..
 
+{% raw %}
+
 	Article: Q119299
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/119/Q119299/
 	
 	=============================================================================
 	
+
+{% endraw %}

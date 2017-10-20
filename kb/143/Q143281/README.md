@@ -6,6 +6,8 @@ permalink: /kb/143/Q143281/
 
 ## Q143281: Built-In Anti-Virus Support in Windows 95
 
+{% raw %}
+
 	Article: Q143281
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -120,3 +122,5 @@ permalink: /kb/143/Q143281/
 	
 	=============================================================================
 	
+
+{% endraw %}

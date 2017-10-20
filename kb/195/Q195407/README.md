@@ -6,6 +6,8 @@ permalink: /kb/195/Q195407/
 
 ## Q195407: INFO: FoxTools Functions That Have Been Incorporated Into VFP 6
 
+{% raw %}
+
 	Article: Q195407
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -133,3 +135,5 @@ permalink: /kb/195/Q195407/
 	
 	=============================================================================
 	
+
+{% endraw %}

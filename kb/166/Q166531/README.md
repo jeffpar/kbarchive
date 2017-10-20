@@ -6,6 +6,8 @@ permalink: /kb/166/Q166531/
 
 ## Q166531: XCLN: Mac Attachments Are Unrecognizable After Crossing IMC
 
+{% raw %}
+
 	Article: Q166531
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -57,3 +59,5 @@ permalink: /kb/166/Q166531/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158043/
 
 ## Q158043: XCLN: Err Msg: There was a Problem Deleting the Form
 
+{% raw %}
+
 	Article: Q158043
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -51,3 +53,5 @@ permalink: /kb/158/Q158043/
 	
 	=============================================================================
 	
+
+{% endraw %}

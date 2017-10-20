@@ -6,6 +6,8 @@ permalink: /kb/168/Q168414/
 
 ## Q168414: BUG: Binary Compatibility Leaves Source File in Open State
 
+{% raw %}
+
 	Article: Q168414
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -121,3 +123,5 @@ permalink: /kb/168/Q168414/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147654/
 
 ## Q147654: HOWTO: Get or Create a Unique Audio CD Volume Label
 
+{% raw %}
+
 	Article: Q147654
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/147/Q147654/
 	
 	=============================================================================
 	
+
+{% endraw %}

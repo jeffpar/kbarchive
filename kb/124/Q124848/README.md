@@ -6,6 +6,8 @@ permalink: /kb/124/Q124848/
 
 ## Q124848: Adding an NDIS 3.1 Protocol Does Not Add Frame Type to NET.CFG
 
+{% raw %}
+
 	Article: Q124848
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/124/Q124848/
 	
 	=============================================================================
 	
+
+{% endraw %}

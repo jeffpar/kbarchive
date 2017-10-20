@@ -6,6 +6,8 @@ permalink: /kb/117/Q117531/
 
 ## Q117531: SFM w/ Olicom Token Ring 16/4 and Intel TokenExpress 16/4
 
+{% raw %}
+
 	Article: Q117531
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -67,3 +69,5 @@ permalink: /kb/117/Q117531/
 	
 	=============================================================================
 	
+
+{% endraw %}

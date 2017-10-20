@@ -6,6 +6,8 @@ permalink: /kb/254/Q254422/
 
 ## Q254422: MapPoint 2001: Zero Population Is Displayed for Certain Counties
 
+{% raw %}
+
 	Article: Q254422
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/254/Q254422/
 	
 	=============================================================================
 	
+
+{% endraw %}

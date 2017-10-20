@@ -6,6 +6,8 @@ permalink: /kb/039/Q39998/
 
 ## Q39998: Search and Replace Macro for M Editor
 
+{% raw %}
+
 	Article: Q39998
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -43,3 +45,5 @@ permalink: /kb/039/Q39998/
 	   MyReplace:F12
 	
 	To execute the myreplace macro, press the F12 key.
+
+{% endraw %}

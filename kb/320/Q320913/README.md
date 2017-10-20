@@ -6,6 +6,8 @@ permalink: /kb/320/Q320913/
 
 ## Q320913: Problems Upgrading a User-Mode Print Driver in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q320913
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -81,3 +83,5 @@ permalink: /kb/320/Q320913/
 	
 	=============================================================================
 	
+
+{% endraw %}

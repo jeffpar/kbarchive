@@ -6,6 +6,8 @@ permalink: /kb/148/Q148642/
 
 ## Q148642: How to Perform In-Place Activation on an OLE Control
 
+{% raw %}
+
 	Article: Q148642
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -74,3 +76,5 @@ permalink: /kb/148/Q148642/
 	
 	=============================================================================
 	
+
+{% endraw %}

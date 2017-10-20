@@ -6,6 +6,8 @@ permalink: /kb/156/Q156755/
 
 ## Q156755: Unable to Use Standard Program I/O in PERL Script
 
+{% raw %}
+
 	Article: Q156755
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -78,3 +80,5 @@ permalink: /kb/156/Q156755/
 	
 	=============================================================================
 	
+
+{% endraw %}

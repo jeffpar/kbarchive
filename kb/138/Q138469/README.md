@@ -6,6 +6,8 @@ permalink: /kb/138/Q138469/
 
 ## Q138469: SNA Server Support for ACTPU (ERP) and ACTLU (ERP)
 
+{% raw %}
+
 	Article: Q138469
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -124,3 +126,5 @@ permalink: /kb/138/Q138469/
 	
 	=============================================================================
 	
+
+{% endraw %}

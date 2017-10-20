@@ -6,6 +6,8 @@ permalink: /kb/026/Q26007/
 
 ## Q26007: IEEE Math Rounding Differs in Compiled .EXE and QB.EXE Editor
 
+{% raw %}
+
 	Article: Q26007
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -104,3 +106,5 @@ permalink: /kb/026/Q26007/
 	e = 2 * e
 	PRINT e
 	END
+
+{% endraw %}

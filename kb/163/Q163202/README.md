@@ -6,6 +6,8 @@ permalink: /kb/163/Q163202/
 
 ## Q163202: Limit of the Number of Simultaneously Open Root Storage Files
 
+{% raw %}
+
 	Article: Q163202
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/163/Q163202/
 	
 	=============================================================================
 	
+
+{% endraw %}

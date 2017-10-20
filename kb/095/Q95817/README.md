@@ -6,6 +6,8 @@ permalink: /kb/095/Q95817/
 
 ## Q95817: PPT: Scaling Lines and Arrowheads
 
+{% raw %}
+
 	Article: Q95817
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,7.0
@@ -62,3 +64,5 @@ permalink: /kb/095/Q95817/
 	
 	=============================================================================
 	
+
+{% endraw %}

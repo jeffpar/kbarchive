@@ -6,6 +6,8 @@ permalink: /kb/274/Q274627/
 
 ## Q274627: CFS2 Err Msg: The Pilot Name Contains Illegal Characters...
 
+{% raw %}
+
 	Article: Q274627
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/274/Q274627/
 	
 	=============================================================================
 	
+
+{% endraw %}

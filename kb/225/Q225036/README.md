@@ -6,6 +6,8 @@ permalink: /kb/225/Q225036/
 
 ## Q225036: Folder Permissions May Not Migrate During Migration From NetWare
 
+{% raw %}
+
 	Article: Q225036
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -83,3 +85,5 @@ permalink: /kb/225/Q225036/
 	
 	=============================================================================
 	
+
+{% endraw %}

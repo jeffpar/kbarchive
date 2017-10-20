@@ -6,6 +6,8 @@ permalink: /kb/130/Q130489/
 
 ## Q130489: XCLN: Err Msg: Recipient Options Could Not Be Set...
 
+{% raw %}
+
 	Article: Q130489
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -50,3 +52,5 @@ permalink: /kb/130/Q130489/
 	
 	=============================================================================
 	
+
+{% endraw %}

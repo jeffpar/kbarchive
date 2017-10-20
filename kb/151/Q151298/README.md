@@ -6,6 +6,8 @@ permalink: /kb/151/Q151298/
 
 ## Q151298: Application Trap when Pass an Invalid Conversation ID to CPI-C
 
+{% raw %}
+
 	Article: Q151298
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -53,3 +55,5 @@ permalink: /kb/151/Q151298/
 	
 	=============================================================================
 	
+
+{% endraw %}

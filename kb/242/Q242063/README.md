@@ -6,6 +6,8 @@ permalink: /kb/242/Q242063/
 
 ## Q242063: XADM: Recovery May Incorrectly Increment the Checkpoint File
 
+{% raw %}
+
 	Article: Q242063
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -89,3 +91,5 @@ permalink: /kb/242/Q242063/
 	
 	=============================================================================
 	
+
+{% endraw %}

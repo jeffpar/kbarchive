@@ -6,6 +6,8 @@ permalink: /kb/155/Q155946/
 
 ## Q155946: WD97: Footer Truncated or Missing from Legal Pleading
 
+{% raw %}
+
 	Article: Q155946
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/155/Q155946/
 	
 	=============================================================================
 	
+
+{% endraw %}

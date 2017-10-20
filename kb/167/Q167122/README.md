@@ -6,6 +6,8 @@ permalink: /kb/167/Q167122/
 
 ## Q167122: FIX: FindItem Method of ListView Incorrectly Returns an Error
 
+{% raw %}
+
 	Article: Q167122
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -101,3 +103,5 @@ permalink: /kb/167/Q167122/
 	
 	=============================================================================
 	
+
+{% endraw %}

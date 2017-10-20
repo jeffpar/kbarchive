@@ -6,6 +6,8 @@ permalink: /kb/099/Q99097/
 
 ## Q99097: HOWTO: Customize Common Dialog Box Parameter Blocks
 
+{% raw %}
+
 	Article: Q99097
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2,5.0,7.0
@@ -120,3 +122,5 @@ permalink: /kb/099/Q99097/
 	
 	=============================================================================
 	
+
+{% endraw %}

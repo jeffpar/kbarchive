@@ -6,6 +6,8 @@ permalink: /kb/110/Q110663/
 
 ## Q110663: INFO: Getting/Setting the Default Printer from Windows
 
+{% raw %}
+
 	Article: Q110663
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -129,3 +131,5 @@ permalink: /kb/110/Q110663/
 	
 	=============================================================================
 	
+
+{% endraw %}

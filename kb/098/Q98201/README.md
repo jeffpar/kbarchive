@@ -6,6 +6,8 @@ permalink: /kb/098/Q98201/
 
 ## Q98201: HOWTO: Change Dialog Box Background Color in MFC 2.0 or Later
 
+{% raw %}
+
 	Article: Q98201
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,2.2,4.0
@@ -70,3 +72,5 @@ permalink: /kb/098/Q98201/
 	
 	=============================================================================
 	
+
+{% endraw %}

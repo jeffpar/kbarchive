@@ -6,6 +6,8 @@ permalink: /kb/161/Q161355/
 
 ## Q161355: TP_START Stops Responding If SnaBase Fails on Win95 Client
 
+{% raw %}
+
 	Article: Q161355
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -70,3 +72,5 @@ permalink: /kb/161/Q161355/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129020/
 
 ## Q129020: Microsoft 500 Nations OPTHELP.TXT
 
+{% raw %}
+
 	Article: Q129020
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -136,3 +138,5 @@ permalink: /kb/129/Q129020/
 	
 	=============================================================================
 	
+
+{% endraw %}

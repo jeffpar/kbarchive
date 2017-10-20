@@ -6,6 +6,8 @@ permalink: /kb/187/Q187226/
 
 ## Q187226: XCON: MTA Generates Application Exception in Function otpugobj
 
+{% raw %}
+
 	Article: Q187226
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -72,3 +74,5 @@ permalink: /kb/187/Q187226/
 	
 	=============================================================================
 	
+
+{% endraw %}

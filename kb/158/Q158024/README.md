@@ -6,6 +6,8 @@ permalink: /kb/158/Q158024/
 
 ## Q158024: GEX Error Message: &quot;Invalid Dynamic Link Call to a .dll File&quot;
 
+{% raw %}
+
 	Article: Q158024
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/158/Q158024/
 	
 	=============================================================================
 	
+
+{% endraw %}

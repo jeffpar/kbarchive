@@ -6,6 +6,8 @@ permalink: /kb/185/Q185951/
 
 ## Q185951: Security Fix Prevents Account Operators from Managing Accounts
 
+{% raw %}
+
 	Article: Q185951
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -91,3 +93,5 @@ permalink: /kb/185/Q185951/
 	
 	=============================================================================
 	
+
+{% endraw %}

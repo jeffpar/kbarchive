@@ -6,6 +6,8 @@ permalink: /kb/250/Q250413/
 
 ## Q250413: XADM: Folder Replication Status Is Blank for Some Folders
 
+{% raw %}
+
 	Article: Q250413
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/250/Q250413/
 	
 	=============================================================================
 	
+
+{% endraw %}

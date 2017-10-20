@@ -6,6 +6,8 @@ permalink: /kb/175/Q175893/
 
 ## Q175893: LexMark Monitor Hangs Spoolss and Creates 100 Percent CPU Usage
 
+{% raw %}
+
 	Article: Q175893
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/175/Q175893/
 	
 	=============================================================================
 	
+
+{% endraw %}

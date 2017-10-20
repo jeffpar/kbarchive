@@ -6,6 +6,8 @@ permalink: /kb/261/Q261091/
 
 ## Q261091: XADM: &quot;The Directory Is Busy. Wait a Few Minutes and Try Again&quot;
 
+{% raw %}
+
 	Article: Q261091
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/261/Q261091/
 	
 	=============================================================================
 	
+
+{% endraw %}

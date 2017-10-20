@@ -6,6 +6,8 @@ permalink: /kb/195/Q195115/
 
 ## Q195115: WD97: Label Mail Merge Displays Extra Row of Labels
 
+{% raw %}
+
 	Article: Q195115
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -97,3 +99,5 @@ permalink: /kb/195/Q195115/
 	
 	=============================================================================
 	
+
+{% endraw %}

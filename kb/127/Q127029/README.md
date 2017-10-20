@@ -6,6 +6,8 @@ permalink: /kb/127/Q127029/
 
 ## Q127029: PRB: Type Mismatch with Default Prop of VB4 Data Access Object
 
+{% raw %}
+
 	Article: Q127029
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/127/Q127029/
 	
 	=============================================================================
 	
+
+{% endraw %}

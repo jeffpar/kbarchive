@@ -6,6 +6,8 @@ permalink: /kb/044/Q44001/
 
 ## Q44001: SETUP /L Does Not Create SETARGV.OBJ in C
 
+{% raw %}
+
 	Article: Q44001
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -35,3 +37,5 @@ permalink: /kb/044/Q44001/
 	have chosen C 4.00 compatibility, you must find SETARGV.OBJ on the
 	disk labeled "Floating-Point Libraries" and you must copy/rename that
 	file to suit the memory model(s) you have built.
+
+{% endraw %}

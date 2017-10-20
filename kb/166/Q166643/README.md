@@ -6,6 +6,8 @@ permalink: /kb/166/Q166643/
 
 ## Q166643: XFOR: Inbody addressing
 
+{% raw %}
+
 	Article: Q166643
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -98,3 +100,5 @@ permalink: /kb/166/Q166643/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194837/
 
 ## Q194837: HOW TO: Distribute a Visual Basic Windows CE Application
 
+{% raw %}
+
 	Article: Q194837
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -236,3 +238,5 @@ permalink: /kb/194/Q194837/
 	
 	=============================================================================
 	
+
+{% endraw %}

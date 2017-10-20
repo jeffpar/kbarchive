@@ -6,6 +6,8 @@ permalink: /kb/133/Q133104/
 
 ## Q133104: FORTRAN PowerStation 32 MIXLANG.TXT
 
+{% raw %}
+
 	Article: Q133104
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -286,3 +288,5 @@ permalink: /kb/133/Q133104/
 	
 	=============================================================================
 	
+
+{% endraw %}

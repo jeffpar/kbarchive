@@ -6,6 +6,8 @@ permalink: /kb/173/Q173455/
 
 ## Q173455: XWEB: OWA Returns Exchange Server Down Error Message
 
+{% raw %}
+
 	Article: Q173455
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -51,3 +53,5 @@ permalink: /kb/173/Q173455/
 	
 	=============================================================================
 	
+
+{% endraw %}

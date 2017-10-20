@@ -6,6 +6,8 @@ permalink: /kb/309/Q309707/
 
 ## Q309707: Bicycle Games: Known Game-Play Issues
 
+{% raw %}
+
 	Article: Q309707
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/309/Q309707/
 	
 	=============================================================================
 	
+
+{% endraw %}

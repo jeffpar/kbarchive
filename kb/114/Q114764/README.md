@@ -6,6 +6,8 @@ permalink: /kb/114/Q114764/
 
 ## Q114764: Video Err Msg: &quot;Specified File Cannot Be Played...&quot;
 
+{% raw %}
+
 	Article: Q114764
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/114/Q114764/
 	
 	=============================================================================
 	
+
+{% endraw %}

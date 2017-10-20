@@ -6,6 +6,8 @@ permalink: /kb/112/Q112894/
 
 ## Q112894: PC Adm: Err Msg: Notice 22 Error Creating Mailbox
 
+{% raw %}
+
 	Article: Q112894
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1x,3.0,3.0a,3.2
@@ -81,3 +83,5 @@ permalink: /kb/112/Q112894/
 	
 	=============================================================================
 	
+
+{% endraw %}

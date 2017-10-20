@@ -6,6 +6,8 @@ permalink: /kb/050/Q50335/
 
 ## Q50335: DLLs Built with C 5.10's LLIBCDLL.LIB Limited to 20 Files
 
+{% raw %}
+
 	Article: Q50335
 	Product(s): See article
 	Version(s): 5.10
@@ -38,3 +40,5 @@ permalink: /kb/050/Q50335/
 	
 	The number of files for the special C libraries should be substantially
 	increased in the next version of C.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82362/
 
 ## Q82362: Large TrueType Fonts Print with Fine Lines on LaserJet II
 
+{% raw %}
+
 	Article: Q82362
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/082/Q82362/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135331/
 
 ## Q135331: PRB: ALTER COLUMN Clause Applies Only to First SET After It
 
+{% raw %}
+
 	Article: Q135331
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -94,3 +96,5 @@ permalink: /kb/135/Q135331/
 	
 	=============================================================================
 	
+
+{% endraw %}

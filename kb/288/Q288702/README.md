@@ -6,6 +6,8 @@ permalink: /kb/288/Q288702/
 
 ## Q288702: SNA Manager Disappears When Using the LU Creation Wizard
 
+{% raw %}
+
 	Article: Q288702
 	Product(s): Microsoft SNA Server
 	Version(s): 2000,2000 SP1
@@ -66,3 +68,5 @@ permalink: /kb/288/Q288702/
 	
 	=============================================================================
 	
+
+{% endraw %}

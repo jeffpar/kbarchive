@@ -6,6 +6,8 @@ permalink: /kb/154/Q154820/
 
 ## Q154820: FIX: Common Dialog May Not Display the Current Font
 
+{% raw %}
+
 	Article: Q154820
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/154/Q154820/
 	
 	=============================================================================
 	
+
+{% endraw %}

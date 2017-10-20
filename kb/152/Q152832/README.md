@@ -6,6 +6,8 @@ permalink: /kb/152/Q152832/
 
 ## Q152832: How to Set Up USR Sportster 128K Modem for Dual-Channel ISDN
 
+{% raw %}
+
 	Article: Q152832
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5,2.6
@@ -46,3 +48,5 @@ permalink: /kb/152/Q152832/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167674/
 
 ## Q167674: BUG: DEFINE WINDOW Command Loses Single Border in VFP 5.0
 
+{% raw %}
+
 	Article: Q167674
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -82,3 +84,5 @@ permalink: /kb/167/Q167674/
 	
 	=============================================================================
 	
+
+{% endraw %}

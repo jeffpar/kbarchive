@@ -6,6 +6,8 @@ permalink: /kb/124/Q124415/
 
 ## Q124415: Cinemania 1995: Manual Setup Err Msg: &quot;Path Not Found&quot;
 
+{% raw %}
+
 	Article: Q124415
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -62,3 +64,5 @@ permalink: /kb/124/Q124415/
 	
 	=============================================================================
 	
+
+{% endraw %}

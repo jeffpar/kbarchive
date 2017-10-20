@@ -6,6 +6,8 @@ permalink: /kb/257/Q257772/
 
 ## Q257772: FIX: Updates to Textbox Bound to MSRDC Fail, rdUseClientBatch
 
+{% raw %}
+
 	Article: Q257772
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -113,3 +115,5 @@ permalink: /kb/257/Q257772/
 	
 	=============================================================================
 	
+
+{% endraw %}

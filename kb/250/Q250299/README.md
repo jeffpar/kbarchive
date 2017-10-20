@@ -6,6 +6,8 @@ permalink: /kb/250/Q250299/
 
 ## Q250299: Age of Empires II: Game Quits After You Start a New Game
 
+{% raw %}
+
 	Article: Q250299
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -56,3 +58,5 @@ permalink: /kb/250/Q250299/
 	
 	=============================================================================
 	
+
+{% endraw %}

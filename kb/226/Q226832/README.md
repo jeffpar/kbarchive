@@ -6,6 +6,8 @@ permalink: /kb/226/Q226832/
 
 ## Q226832: SMS: Software Licensing Offline Uploads Cease w/Synchronization
 
+{% raw %}
+
 	Article: Q226832
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -84,3 +86,5 @@ permalink: /kb/226/Q226832/
 	
 	=============================================================================
 	
+
+{% endraw %}

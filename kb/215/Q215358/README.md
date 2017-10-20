@@ -6,6 +6,8 @@ permalink: /kb/215/Q215358/
 
 ## Q215358: GetWindowsDirectory May Return Incorrect Data
 
+{% raw %}
+
 	Article: Q215358
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/215/Q215358/
 	
 	=============================================================================
 	
+
+{% endraw %}

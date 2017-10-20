@@ -6,6 +6,8 @@ permalink: /kb/252/Q252712/
 
 ## Q252712: XCLN: &quot;The Page Cannot Be Displayed&quot; Adding an Attachment in OWA
 
+{% raw %}
+
 	Article: Q252712
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -68,3 +70,5 @@ permalink: /kb/252/Q252712/
 	
 	=============================================================================
 	
+
+{% endraw %}

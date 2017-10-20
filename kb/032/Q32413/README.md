@@ -6,6 +6,8 @@ permalink: /kb/032/Q32413/
 
 ## Q32413: Loading More Than Seven QuickLoad Files/&#36;INCLUDE in Editor
 
+{% raw %}
+
 	Article: Q32413
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -76,3 +78,5 @@ permalink: /kb/032/Q32413/
 	' saved in QuickLoad format to show the problem. In this case, all the
 	' files were loaded into the editor and a SAVE ALL was used to make
 	' the .MAK file (G.MAK).
+
+{% endraw %}

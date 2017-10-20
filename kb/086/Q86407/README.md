@@ -6,6 +6,8 @@ permalink: /kb/086/Q86407/
 
 ## Q86407: PRB: Windows Write Does Not Load under Pen Windows
 
+{% raw %}
+
 	Article: Q86407
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -68,3 +70,5 @@ permalink: /kb/086/Q86407/
 	
 	=============================================================================
 	
+
+{% endraw %}

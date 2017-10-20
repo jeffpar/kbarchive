@@ -6,6 +6,8 @@ permalink: /kb/098/Q98405/
 
 ## Q98405: MemMaker Damages Related Files with Incorrect Path
 
+{% raw %}
+
 	Article: Q98405
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -86,3 +88,5 @@ permalink: /kb/098/Q98405/
 	
 	=============================================================================
 	
+
+{% endraw %}

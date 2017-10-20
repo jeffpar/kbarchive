@@ -6,6 +6,8 @@ permalink: /kb/157/Q157173/
 
 ## Q157173: Ntbackup.exe Generates Error Using 4-Character Description
 
+{% raw %}
+
 	Article: Q157173
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/157/Q157173/
 	
 	=============================================================================
 	
+
+{% endraw %}

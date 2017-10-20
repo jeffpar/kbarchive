@@ -6,6 +6,8 @@ permalink: /kb/138/Q138978/
 
 ## Q138978: PRB: Structure Contains Underscore When Running Crosstab
 
+{% raw %}
+
 	Article: Q138978
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -91,3 +93,5 @@ permalink: /kb/138/Q138978/
 	
 	=============================================================================
 	
+
+{% endraw %}

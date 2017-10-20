@@ -6,6 +6,8 @@ permalink: /kb/134/Q134880/
 
 ## Q134880: How to Determine the Database to Which a Table Belongs
 
+{% raw %}
+
 	Article: Q134880
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/134/Q134880/
 	
 	=============================================================================
 	
+
+{% endraw %}

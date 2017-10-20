@@ -6,6 +6,8 @@ permalink: /kb/168/Q168063/
 
 ## Q168063: WD97: LineDraw and Extended Characters Mapped Incorrectly
 
+{% raw %}
+
 	Article: Q168063
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -184,3 +186,5 @@ permalink: /kb/168/Q168063/
 	
 	=============================================================================
 	
+
+{% endraw %}

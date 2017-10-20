@@ -6,6 +6,8 @@ permalink: /kb/151/Q151199/
 
 ## Q151199: TN3270E Admin Shows LU Names Incorrectly in Edit Configuration
 
+{% raw %}
+
 	Article: Q151199
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -73,3 +75,5 @@ permalink: /kb/151/Q151199/
 	
 	=============================================================================
 	
+
+{% endraw %}

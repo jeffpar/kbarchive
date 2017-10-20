@@ -6,6 +6,8 @@ permalink: /kb/157/Q157214/
 
 ## Q157214: XCON: Deleting a &quot;Bad&quot; Message from the MTA Queue
 
+{% raw %}
+
 	Article: Q157214
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -98,3 +100,5 @@ permalink: /kb/157/Q157214/
 	
 	=============================================================================
 	
+
+{% endraw %}

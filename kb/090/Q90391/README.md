@@ -6,6 +6,8 @@ permalink: /kb/090/Q90391/
 
 ## Q90391: Cannot Redirect LPT4 or Greater with Basic Redirector, Novell
 
+{% raw %}
+
 	Article: Q90391
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -56,3 +58,5 @@ permalink: /kb/090/Q90391/
 	
 	=============================================================================
 	
+
+{% endraw %}

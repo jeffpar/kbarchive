@@ -6,6 +6,8 @@ permalink: /kb/152/Q152309/
 
 ## Q152309: WinNT 3.51 w/ CPU Maxed Prints Very Slowly to Banding Printers
 
+{% raw %}
+
 	Article: Q152309
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -58,3 +60,5 @@ permalink: /kb/152/Q152309/
 	
 	=============================================================================
 	
+
+{% endraw %}

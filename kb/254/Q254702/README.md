@@ -6,6 +6,8 @@ permalink: /kb/254/Q254702/
 
 ## Q254702: Windows 95/98 Clients Display Workgroup Name Not Domain Name
 
+{% raw %}
+
 	Article: Q254702
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:; Win2000:95; winnt:2.0,2.0 SP1,2.0 SP2
@@ -108,3 +110,5 @@ permalink: /kb/254/Q254702/
 	
 	=============================================================================
 	
+
+{% endraw %}

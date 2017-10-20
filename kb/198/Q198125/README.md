@@ -6,6 +6,8 @@ permalink: /kb/198/Q198125/
 
 ## Q198125: WD97: Hyperlink Is Lost When Link Dragged from Word to Excel
 
+{% raw %}
+
 	Article: Q198125
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/198/Q198125/
 	
 	=============================================================================
 	
+
+{% endraw %}

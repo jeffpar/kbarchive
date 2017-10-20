@@ -6,6 +6,8 @@ permalink: /kb/143/Q143145/
 
 ## Q143145: IIS FTP Annotation Files Display One Line
 
+{% raw %}
+
 	Article: Q143145
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -69,3 +71,5 @@ permalink: /kb/143/Q143145/
 	
 	=============================================================================
 	
+
+{% endraw %}

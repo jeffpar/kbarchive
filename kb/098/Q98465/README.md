@@ -6,6 +6,8 @@ permalink: /kb/098/Q98465/
 
 ## Q98465: Word Prompts For Bookshelf CD When Starting
 
+{% raw %}
+
 	Article: Q98465
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,2.0a,2.0b,2.0c,6.0
@@ -101,3 +103,5 @@ permalink: /kb/098/Q98465/
 	
 	=============================================================================
 	
+
+{% endraw %}

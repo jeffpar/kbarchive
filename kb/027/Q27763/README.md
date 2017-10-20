@@ -6,6 +6,8 @@ permalink: /kb/027/Q27763/
 
 ## Q27763: CODEVIEW.DOC Incorrectly States /E Uses Extended Memory
 
+{% raw %}
+
 	Article: Q27763
 	Product(s): See article
 	Version(s): 2.20
@@ -19,3 +21,5 @@ permalink: /kb/027/Q27763/
 	
 	This is a documentation error in the CODEVIEW.DOC file. CodeView uses
 	expanded, not extended memory.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/210/Q210457/
 
 ## Q210457: ASP 0115 or Inetinfo Application Error Occurs on ASP File
 
+{% raw %}
+
 	Article: Q210457
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -127,3 +129,5 @@ permalink: /kb/210/Q210457/
 	
 	=============================================================================
 	
+
+{% endraw %}

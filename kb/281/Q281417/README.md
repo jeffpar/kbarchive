@@ -6,6 +6,8 @@ permalink: /kb/281/Q281417/
 
 ## Q281417: HOWTO:Log On to Terminal Server Session Programmatically from VB
 
+{% raw %}
+
 	Article: Q281417
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,6.0
@@ -135,3 +137,5 @@ permalink: /kb/281/Q281417/
 	
 	=============================================================================
 	
+
+{% endraw %}

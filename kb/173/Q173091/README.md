@@ -6,6 +6,8 @@ permalink: /kb/173/Q173091/
 
 ## Q173091: HOWTO: Programmatically Register and Unregister .OCX Files
 
+{% raw %}
+
 	Article: Q173091
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -128,3 +130,5 @@ permalink: /kb/173/Q173091/
 	
 	=============================================================================
 	
+
+{% endraw %}

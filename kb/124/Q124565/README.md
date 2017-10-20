@@ -6,6 +6,8 @@ permalink: /kb/124/Q124565/
 
 ## Q124565: TCP/IP-32 Leaves Names in the NetBIOS Name Table
 
+{% raw %}
+
 	Article: Q124565
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -66,3 +68,5 @@ permalink: /kb/124/Q124565/
 	
 	=============================================================================
 	
+
+{% endraw %}

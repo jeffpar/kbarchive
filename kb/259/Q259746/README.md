@@ -6,6 +6,8 @@ permalink: /kb/259/Q259746/
 
 ## Q259746: FIX: C1001 Compiler Error When Virtual Function Used Parameter
 
+{% raw %}
+
 	Article: Q259746
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -117,3 +119,5 @@ permalink: /kb/259/Q259746/
 	
 	=============================================================================
 	
+
+{% endraw %}

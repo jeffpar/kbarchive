@@ -6,6 +6,8 @@ permalink: /kb/041/Q41479/
 
 ## Q41479: QuickC 2.00 README.DOC: About Directories
 
+{% raw %}
+
 	Article: Q41479
 	Product(s): See article
 	Version(s): 2.00
@@ -38,3 +40,5 @@ permalink: /kb/041/Q41479/
 	place, choose RUN DOS Command from the Utility menu and type CHDIR
 	AARDVARK. The "change directory" command redirects the object and
 	executable files to the other directory.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107170/
 
 ## Q107170: Viewer's .BMK and .ANN Files
 
+{% raw %}
+
 	Article: Q107170
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0
@@ -59,3 +61,5 @@ permalink: /kb/107/Q107170/
 	
 	=============================================================================
 	
+
+{% endraw %}

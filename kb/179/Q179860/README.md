@@ -6,6 +6,8 @@ permalink: /kb/179/Q179860/
 
 ## Q179860: APPC Session Viewer Incorrectly Reads Some Registry Entries
 
+{% raw %}
+
 	Article: Q179860
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -65,3 +67,5 @@ permalink: /kb/179/Q179860/
 	
 	=============================================================================
 	
+
+{% endraw %}

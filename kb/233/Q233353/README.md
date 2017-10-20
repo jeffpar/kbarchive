@@ -6,6 +6,8 @@ permalink: /kb/233/Q233353/
 
 ## Q233353: XFOR: OLE Attachment Replaced with &lt;&lt;.&gt;&gt;
 
+{% raw %}
+
 	Article: Q233353
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -80,3 +82,5 @@ permalink: /kb/233/Q233353/
 	
 	=============================================================================
 	
+
+{% endraw %}

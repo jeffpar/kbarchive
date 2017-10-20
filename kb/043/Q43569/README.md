@@ -6,6 +6,8 @@ permalink: /kb/043/Q43569/
 
 ## Q43569: Program That Prints a Hex Dump of a File to LPT1
 
+{% raw %}
+
 	Article: Q43569
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -106,3 +108,5 @@ permalink: /kb/043/Q43569/
 	     byte% = 32
 	  END SELECT
 	END SUB
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/115/Q115551/
 
 ## Q115551: X400: Manually Adding TP4/CLNP Peer Address to Node
 
+{% raw %}
+
 	Article: Q115551
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -48,3 +50,5 @@ permalink: /kb/115/Q115551/
 	
 	=============================================================================
 	
+
+{% endraw %}

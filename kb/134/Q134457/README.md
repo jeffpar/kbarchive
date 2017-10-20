@@ -6,6 +6,8 @@ permalink: /kb/134/Q134457/
 
 ## Q134457: PPT7: Files Saved in Outline View Open in Slide View
 
+{% raw %}
+
 	Article: Q134457
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -48,3 +50,5 @@ permalink: /kb/134/Q134457/
 	
 	=============================================================================
 	
+
+{% endraw %}

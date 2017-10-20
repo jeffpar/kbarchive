@@ -6,6 +6,8 @@ permalink: /kb/183/Q183557/
 
 ## Q183557: MVS Invalid Conversion of String Data
 
+{% raw %}
+
 	Article: Q183557
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -73,3 +75,5 @@ permalink: /kb/183/Q183557/
 	
 	=============================================================================
 	
+
+{% endraw %}

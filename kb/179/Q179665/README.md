@@ -6,6 +6,8 @@ permalink: /kb/179/Q179665/
 
 ## Q179665: XADM: Message Receipts Generated Even with Option Cleared
 
+{% raw %}
+
 	Article: Q179665
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -70,3 +72,5 @@ permalink: /kb/179/Q179665/
 	
 	=============================================================================
 	
+
+{% endraw %}

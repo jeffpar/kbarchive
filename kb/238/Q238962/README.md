@@ -6,6 +6,8 @@ permalink: /kb/238/Q238962/
 
 ## Q238962: Configuring SFU to Run on Proxy Server 2.0 and Proxy Clients
 
+{% raw %}
+
 	Article: Q238962
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -249,3 +251,5 @@ permalink: /kb/238/Q238962/
 	
 	=============================================================================
 	
+
+{% endraw %}

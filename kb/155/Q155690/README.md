@@ -6,6 +6,8 @@ permalink: /kb/155/Q155690/
 
 ## Q155690: Regaut.exe Registers an Automation Object as Active
 
+{% raw %}
+
 	Article: Q155690
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -175,3 +177,5 @@ permalink: /kb/155/Q155690/
 	
 	=============================================================================
 	
+
+{% endraw %}

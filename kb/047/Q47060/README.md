@@ -6,6 +6,8 @@ permalink: /kb/047/Q47060/
 
 ## Q47060: CodeView Can't Watch Array Passed to BASIC SUBprogram
 
+{% raw %}
+
 	Article: Q47060
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -67,3 +69,5 @@ permalink: /kb/047/Q47060/
 	message appears.
 	
 	Additional article reference words: S_CodeView
+
+{% endraw %}

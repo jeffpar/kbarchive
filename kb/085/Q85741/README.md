@@ -6,6 +6,8 @@ permalink: /kb/085/Q85741/
 
 ## Q85741: Set Default Directory Starting Applications from Command Line
 
+{% raw %}
+
 	Article: Q85741
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -75,3 +77,5 @@ permalink: /kb/085/Q85741/
 	
 	=============================================================================
 	
+
+{% endraw %}

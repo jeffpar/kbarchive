@@ -6,6 +6,8 @@ permalink: /kb/098/Q98859/
 
 ## Q98859: Minimum System Required to Run MASM 6.1
 
+{% raw %}
+
 	Article: Q98859
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.1
@@ -67,3 +69,5 @@ permalink: /kb/098/Q98859/
 	
 	=============================================================================
 	
+
+{% endraw %}

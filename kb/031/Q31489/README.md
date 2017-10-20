@@ -6,6 +6,8 @@ permalink: /kb/031/Q31489/
 
 ## Q31489: Tabs Expanded to Eight Spaces; Filetab Switch Changes Spacing
 
+{% raw %}
+
 	Article: Q31489
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -39,3 +41,5 @@ permalink: /kb/031/Q31489/
 	
 	Tabstops control the number of spaces between each logical tabstop
 	for the editor. The default is four (4).
+
+{% endraw %}

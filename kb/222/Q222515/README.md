@@ -6,6 +6,8 @@ permalink: /kb/222/Q222515/
 
 ## Q222515: GetFreeSpace API Returns Zero on Computer w/ more than 2 GB RAM
 
+{% raw %}
+
 	Article: Q222515
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -94,3 +96,5 @@ permalink: /kb/222/Q222515/
 	
 	=============================================================================
 	
+
+{% endraw %}

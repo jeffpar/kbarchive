@@ -6,6 +6,8 @@ permalink: /kb/132/Q132787/
 
 ## Q132787: Eagle NE200T PCMCIA NE200.COM ODI Driver Does Not Work
 
+{% raw %}
+
 	Article: Q132787
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/132/Q132787/
 	
 	=============================================================================
 	
+
+{% endraw %}

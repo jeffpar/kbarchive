@@ -6,6 +6,8 @@ permalink: /kb/214/Q214642/
 
 ## Q214642: XADM: Savechanges() Fails with MAPI_E_NOT_FOUND Error When Savin
 
+{% raw %}
+
 	Article: Q214642
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -61,3 +63,5 @@ permalink: /kb/214/Q214642/
 	
 	=============================================================================
 	
+
+{% endraw %}

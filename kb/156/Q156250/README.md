@@ -6,6 +6,8 @@ permalink: /kb/156/Q156250/
 
 ## Q156250: SMS: Job Status Remains Active When Sent to Entire Site
 
+{% raw %}
+
 	Article: Q156250
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -58,3 +60,5 @@ permalink: /kb/156/Q156250/
 	
 	=============================================================================
 	
+
+{% endraw %}

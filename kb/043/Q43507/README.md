@@ -6,6 +6,8 @@ permalink: /kb/043/Q43507/
 
 ## Q43507: QuickC: Small and Medium Model Optimization Error
 
+{% raw %}
+
 	Article: Q43507
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00
@@ -68,3 +70,5 @@ permalink: /kb/043/Q43507/
 	Microsoft has confirmed this to be a problem in Versions 1.00, 1.01,
 	and 2.00. We are researching this problem and will post new
 	information as it becomes available.
+
+{% endraw %}

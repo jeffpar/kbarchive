@@ -6,6 +6,8 @@ permalink: /kb/172/Q172784/
 
 ## Q172784: Error Message: Potential Safety Violation Avoided
 
+{% raw %}
+
 	Article: Q172784
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -66,3 +68,5 @@ permalink: /kb/172/Q172784/
 	
 	=============================================================================
 	
+
+{% endraw %}

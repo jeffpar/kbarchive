@@ -6,6 +6,8 @@ permalink: /kb/154/Q154882/
 
 ## Q154882: Cannot Access Network with Intel EtherExpress Pro Adapter
 
+{% raw %}
+
 	Article: Q154882
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/154/Q154882/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118510/
 
 ## Q118510: PC Adm: Microsoft Mail MOVEUSER.EXE Version 3.2.8 Update
 
+{% raw %}
+
 	Article: Q118510
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -78,3 +80,5 @@ permalink: /kb/118/Q118510/
 	
 	=============================================================================
 	
+
+{% endraw %}

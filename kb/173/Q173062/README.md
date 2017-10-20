@@ -6,6 +6,8 @@ permalink: /kb/173/Q173062/
 
 ## Q173062: Permissions Not Copied in Scopy.exe
 
+{% raw %}
+
 	Article: Q173062
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -98,3 +100,5 @@ permalink: /kb/173/Q173062/
 	
 	=============================================================================
 	
+
+{% endraw %}

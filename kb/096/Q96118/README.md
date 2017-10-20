@@ -6,6 +6,8 @@ permalink: /kb/096/Q96118/
 
 ## Q96118: Font Assistant Err Msg: TrueType Is Not Enabled
 
+{% raw %}
+
 	Article: Q96118
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/096/Q96118/
 	
 	=============================================================================
 	
+
+{% endraw %}

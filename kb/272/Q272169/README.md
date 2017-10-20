@@ -6,6 +6,8 @@ permalink: /kb/272/Q272169/
 
 ## Q272169: Microsoft Reader: Cannot Read Text with ATI Rage Turbo Installed
 
+{% raw %}
+
 	Article: Q272169
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -107,3 +109,5 @@ permalink: /kb/272/Q272169/
 	
 	=============================================================================
 	
+
+{% endraw %}

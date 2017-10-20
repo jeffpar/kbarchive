@@ -6,6 +6,8 @@ permalink: /kb/125/Q125932/
 
 ## Q125932: Windows NT Help Shows Incorrect Permission Switch for CACLS
 
+{% raw %}
+
 	Article: Q125932
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/125/Q125932/
 	
 	=============================================================================
 	
+
+{% endraw %}

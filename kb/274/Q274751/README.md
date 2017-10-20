@@ -6,6 +6,8 @@ permalink: /kb/274/Q274751/
 
 ## Q274751: SMS: NetWare Clients May Lose Mapped Drives After Connection Att
 
+{% raw %}
+
 	Article: Q274751
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -75,3 +77,5 @@ permalink: /kb/274/Q274751/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164989/
 
 ## Q164989: XADM: Error -1003 When You Run EDBUTIL
 
+{% raw %}
+
 	Article: Q164989
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -45,3 +47,5 @@ permalink: /kb/164/Q164989/
 	
 	=============================================================================
 	
+
+{% endraw %}

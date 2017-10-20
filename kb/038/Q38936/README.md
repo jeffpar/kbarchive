@@ -6,6 +6,8 @@ permalink: /kb/038/Q38936/
 
 ## Q38936: DOCERR: &#91;bx&#93;.month Example Incorrect in MASM Programmer's Guide
 
+{% raw %}
+
 	Article: Q38936
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1
@@ -52,3 +54,5 @@ permalink: /kb/038/Q38936/
 	
 	=============================================================================
 	
+
+{% endraw %}

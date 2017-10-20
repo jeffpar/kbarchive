@@ -6,6 +6,8 @@ permalink: /kb/177/Q177784/
 
 ## Q177784: General Protection Fault Running Add New Hardware Wizard
 
+{% raw %}
+
 	Article: Q177784
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/177/Q177784/
 	
 	=============================================================================
 	
+
+{% endraw %}

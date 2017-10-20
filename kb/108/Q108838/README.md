@@ -6,6 +6,8 @@ permalink: /kb/108/Q108838/
 
 ## Q108838: PC Gen: PODIAG.INI Entries in &#91;Directory Synchronization&#93;
 
+{% raw %}
+
 	Article: Q108838
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -113,3 +115,5 @@ permalink: /kb/108/Q108838/
 	
 	=============================================================================
 	
+
+{% endraw %}

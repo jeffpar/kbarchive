@@ -6,6 +6,8 @@ permalink: /kb/173/Q173118/
 
 ## Q173118: Incorrect Dialog Displayed When Password On Preferred Server
 
+{% raw %}
+
 	Article: Q173118
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -71,3 +73,5 @@ permalink: /kb/173/Q173118/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163518/
 
 ## Q163518: License Restrictions for ODBC/DRDA Driver
 
+{% raw %}
+
 	Article: Q163518
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP2,3.0
@@ -61,3 +63,5 @@ permalink: /kb/163/Q163518/
 	
 	=============================================================================
 	
+
+{% endraw %}

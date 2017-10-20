@@ -6,6 +6,8 @@ permalink: /kb/080/Q80018/
 
 ## Q80018: Mac Form: Body Field of Message Must Be Set to Print
 
+{% raw %}
+
 	Article: Q80018
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/080/Q80018/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50637/
 
 ## Q50637: PRINT # to &quot;CONS:&quot; and PRINT Can Use &gt; for DOS Redirection
 
+{% raw %}
+
 	Article: Q50637
 	Product(s): See article
 	Version(s): 4.50 4.00 4.00b
@@ -90,3 +92,5 @@ permalink: /kb/050/Q50637/
 	And the screen will contain the following:
 	
 	   This is a print to scrn:
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/294/Q294351/
 
 ## Q294351: Cannot Transfer GroupWise Mail Messages from Novell Server
 
+{% raw %}
+
 	Article: Q294351
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -121,3 +123,5 @@ permalink: /kb/294/Q294351/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89478/
 
 ## Q89478: Upgrade to Windows for Workgroups Changes Printer Setting
 
+{% raw %}
+
 	Article: Q89478
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/089/Q89478/
 	
 	=============================================================================
 	
+
+{% endraw %}

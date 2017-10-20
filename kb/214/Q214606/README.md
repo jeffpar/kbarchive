@@ -6,6 +6,8 @@ permalink: /kb/214/Q214606/
 
 ## Q214606: Dr. Watson Does Not Return Proper Exit Code for an Application
 
+{% raw %}
+
 	Article: Q214606
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/214/Q214606/
 	
 	=============================================================================
 	
+
+{% endraw %}

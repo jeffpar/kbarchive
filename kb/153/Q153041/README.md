@@ -6,6 +6,8 @@ permalink: /kb/153/Q153041/
 
 ## Q153041: FP: HTTP Error 404, Invalid Proxy Server Error When Opening Web
 
+{% raw %}
+
 	Article: Q153041
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97
@@ -80,3 +82,5 @@ permalink: /kb/153/Q153041/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101020/
 
 ## Q101020: How to Parse One Field Into Two or Three Separate Fields
 
+{% raw %}
+
 	Article: Q101020
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 3.00 | 1.02 2.00 2.5x
@@ -130,3 +132,5 @@ permalink: /kb/101/Q101020/
 	
 	=============================================================================
 	
+
+{% endraw %}

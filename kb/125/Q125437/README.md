@@ -6,6 +6,8 @@ permalink: /kb/125/Q125437/
 
 ## Q125437: TCP/IP-32 Winsock calls return WSAEINPROGRESS
 
+{% raw %}
+
 	Article: Q125437
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): ; WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/125/Q125437/
 	
 	=============================================================================
 	
+
+{% endraw %}

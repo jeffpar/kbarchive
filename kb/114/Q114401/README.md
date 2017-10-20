@@ -6,6 +6,8 @@ permalink: /kb/114/Q114401/
 
 ## Q114401: FFAPI: First Contact Form for FFAPI Gateway
 
+{% raw %}
+
 	Article: Q114401
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1,3.0
@@ -93,3 +95,5 @@ permalink: /kb/114/Q114401/
 	
 	=============================================================================
 	
+
+{% endraw %}

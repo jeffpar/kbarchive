@@ -6,6 +6,8 @@ permalink: /kb/260/Q260860/
 
 ## Q260860: StarLancer: Computer Hangs When You Click Startup Screen Command
 
+{% raw %}
+
 	Article: Q260860
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -83,3 +85,5 @@ permalink: /kb/260/Q260860/
 	
 	=============================================================================
 	
+
+{% endraw %}

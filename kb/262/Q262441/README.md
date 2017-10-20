@@ -6,6 +6,8 @@ permalink: /kb/262/Q262441/
 
 ## Q262441: PRB: Run-Tme Error Message '400' : Form already displayed....&quot;
 
+{% raw %}
+
 	Article: Q262441
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -103,3 +105,5 @@ permalink: /kb/262/Q262441/
 	
 	=============================================================================
 	
+
+{% endraw %}

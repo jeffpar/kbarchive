@@ -6,6 +6,8 @@ permalink: /kb/173/Q173619/
 
 ## Q173619: PRB: Winsock Control Generates Error 10048 - Address in Use
 
+{% raw %}
+
 	Article: Q173619
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -125,3 +127,5 @@ permalink: /kb/173/Q173619/
 	
 	=============================================================================
 	
+
+{% endraw %}

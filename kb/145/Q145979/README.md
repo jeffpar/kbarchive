@@ -6,6 +6,8 @@ permalink: /kb/145/Q145979/
 
 ## Q145979: XCLN: Unable to Open Attachments Without File Extensions
 
+{% raw %}
+
 	Article: Q145979
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -64,3 +66,5 @@ permalink: /kb/145/Q145979/
 	
 	=============================================================================
 	
+
+{% endraw %}

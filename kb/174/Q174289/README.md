@@ -6,6 +6,8 @@ permalink: /kb/174/Q174289/
 
 ## Q174289: FIX: Memory Leak Occurs After Form is Unloaded
 
+{% raw %}
+
 	Article: Q174289
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0 5.0
@@ -116,3 +118,5 @@ permalink: /kb/174/Q174289/
 	
 	=============================================================================
 	
+
+{% endraw %}

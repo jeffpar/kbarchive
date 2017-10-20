@@ -6,6 +6,8 @@ permalink: /kb/039/Q39378/
 
 ## Q39378: &quot;Formal Parameter Specification Illegal&quot; for DECLARE Variable
 
+{% raw %}
+
 	Article: Q39378
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -74,3 +76,5 @@ permalink: /kb/039/Q39378/
 	
 	    0 Warning Error(s)
 	    1 Severe  Error(s)
+
+{% endraw %}

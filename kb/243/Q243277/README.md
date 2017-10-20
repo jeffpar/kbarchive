@@ -6,6 +6,8 @@ permalink: /kb/243/Q243277/
 
 ## Q243277: How to Install the Year 2000 Update Without Internet Explorer
 
+{% raw %}
+
 	Article: Q243277
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -92,3 +94,5 @@ permalink: /kb/243/Q243277/
 	
 	=============================================================================
 	
+
+{% endraw %}

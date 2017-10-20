@@ -6,6 +6,8 @@ permalink: /kb/201/Q201658/
 
 ## Q201658: SMS: No Status Messages If Secondary Site Is Not Installed
 
+{% raw %}
+
 	Article: Q201658
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -71,3 +73,5 @@ permalink: /kb/201/Q201658/
 	
 	=============================================================================
 	
+
+{% endraw %}

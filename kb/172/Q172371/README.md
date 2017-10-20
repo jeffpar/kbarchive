@@ -6,6 +6,8 @@ permalink: /kb/172/Q172371/
 
 ## Q172371: SMS: Network Monitor Error: Internal Token Ring Error
 
+{% raw %}
+
 	Article: Q172371
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -51,3 +53,5 @@ permalink: /kb/172/Q172371/
 	
 	=============================================================================
 	
+
+{% endraw %}

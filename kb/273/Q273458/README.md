@@ -6,6 +6,8 @@ permalink: /kb/273/Q273458/
 
 ## Q273458: BUG: Cannot Find Installable ISAM ErrMsg After Localized VS SP4
 
+{% raw %}
+
 	Article: Q273458
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP4
@@ -78,3 +80,5 @@ permalink: /kb/273/Q273458/
 	
 	=============================================================================
 	
+
+{% endraw %}

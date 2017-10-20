@@ -6,6 +6,8 @@ permalink: /kb/077/Q77875/
 
 ## Q77875: Blank Window Title in PIF Editor Defaults to PIF Name
 
+{% raw %}
+
 	Article: Q77875
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/077/Q77875/
 	
 	=============================================================================
 	
+
+{% endraw %}

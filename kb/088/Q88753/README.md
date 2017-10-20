@@ -6,6 +6,8 @@ permalink: /kb/088/Q88753/
 
 ## Q88753: Windows Err Msg: Unable to Install TrueType Fonts
 
+{% raw %}
+
 	Article: Q88753
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -81,3 +83,5 @@ permalink: /kb/088/Q88753/
 	
 	=============================================================================
 	
+
+{% endraw %}

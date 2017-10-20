@@ -6,6 +6,8 @@ permalink: /kb/109/Q109497/
 
 ## Q109497: Copies of CONFIG.SYS or AUTOEXEC.BAT Files on Compressed Drive
 
+{% raw %}
+
 	Article: Q109497
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -131,3 +133,5 @@ permalink: /kb/109/Q109497/
 	
 	=============================================================================
 	
+
+{% endraw %}

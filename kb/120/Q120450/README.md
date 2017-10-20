@@ -6,6 +6,8 @@ permalink: /kb/120/Q120450/
 
 ## Q120450: Missing Characters Using TCP/IP-32 Telnet
 
+{% raw %}
+
 	Article: Q120450
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11
@@ -55,3 +57,5 @@ permalink: /kb/120/Q120450/
 	
 	=============================================================================
 	
+
+{% endraw %}

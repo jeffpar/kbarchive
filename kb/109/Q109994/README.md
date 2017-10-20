@@ -6,6 +6,8 @@ permalink: /kb/109/Q109994/
 
 ## Q109994: Sound System: Microphone Doesn't Work with Microphone Input
 
+{% raw %}
+
 	Article: Q109994
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/109/Q109994/
 	
 	=============================================================================
 	
+
+{% endraw %}

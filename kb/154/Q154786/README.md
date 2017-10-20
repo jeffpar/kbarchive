@@ -6,6 +6,8 @@ permalink: /kb/154/Q154786/
 
 ## Q154786: Cannot Launch New Campaign with ATI Mach8 Display Driver
 
+{% raw %}
+
 	Article: Q154786
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/154/Q154786/
 	
 	=============================================================================
 	
+
+{% endraw %}

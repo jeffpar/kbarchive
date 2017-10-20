@@ -6,6 +6,8 @@ permalink: /kb/235/Q235601/
 
 ## Q235601: FIX: Putenv() Function Causes Memory Leak
 
+{% raw %}
+
 	Article: Q235601
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/235/Q235601/
 	
 	=============================================================================
 	
+
+{% endraw %}

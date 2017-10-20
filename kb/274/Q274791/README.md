@@ -6,6 +6,8 @@ permalink: /kb/274/Q274791/
 
 ## Q274791: PRB: ON KEY LABEL ALT+F6 Doesn't Work In Windows 95, 98, or Me
 
+{% raw %}
+
 	Article: Q274791
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,95,98,98 Second Edition
@@ -76,3 +78,5 @@ permalink: /kb/274/Q274791/
 	
 	=============================================================================
 	
+
+{% endraw %}

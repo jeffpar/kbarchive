@@ -6,6 +6,8 @@ permalink: /kb/091/Q91182/
 
 ## Q91182: Differences Between Windows 3.1 Setup and WFWG Setup
 
+{% raw %}
+
 	Article: Q91182
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -245,3 +247,5 @@ permalink: /kb/091/Q91182/
 	
 	=============================================================================
 	
+
+{% endraw %}

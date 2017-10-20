@@ -6,6 +6,8 @@ permalink: /kb/096/Q96605/
 
 ## Q96605: FFAPI: Err Msg: 80 - Bad Gateway Service Type on Create
 
+{% raw %}
+
 	Article: Q96605
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -77,3 +79,5 @@ permalink: /kb/096/Q96605/
 	
 	=============================================================================
 	
+
+{% endraw %}

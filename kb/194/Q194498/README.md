@@ -6,6 +6,8 @@ permalink: /kb/194/Q194498/
 
 ## Q194498: WD97: Error Message: File Is Not a Macintosh Word File
 
+{% raw %}
+
 	Article: Q194498
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/194/Q194498/
 	
 	=============================================================================
 	
+
+{% endraw %}

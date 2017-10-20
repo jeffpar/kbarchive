@@ -6,6 +6,8 @@ permalink: /kb/080/Q80861/
 
 ## Q80861: Tandy Ethernet Adapters from Western Digital
 
+{% raw %}
+
 	Article: Q80861
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/080/Q80861/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120751/
 
 ## Q120751: CopyDoubler's Fast Replace Fails on SFM Volumes with Error -48
 
+{% raw %}
+
 	Article: Q120751
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -74,3 +76,5 @@ permalink: /kb/120/Q120751/
 	
 	=============================================================================
 	
+
+{% endraw %}

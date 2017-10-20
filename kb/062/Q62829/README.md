@@ -6,6 +6,8 @@ permalink: /kb/062/Q62829/
 
 ## Q62829: BOOKLOOK &quot;...Forgot ISAM TSR&quot; Despite PROISAM.EXE Being Loaded
 
+{% raw %}
+
 	Article: Q62829
 	Product(s): See article
 	Version(s): 7.00
@@ -35,3 +37,5 @@ permalink: /kb/062/Q62829/
 	allow you to create files, tables, or indexes. To do this, you must
 	use PROISAMD.EXE. This explains why loading PROISAMD instead of
 	PROISAM corrects the error with BOOKLOOK.
+
+{% endraw %}

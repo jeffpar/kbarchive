@@ -6,6 +6,8 @@ permalink: /kb/104/Q104422/
 
 ## Q104422: PC Win: Mail Doesn't Recognize Word for Macintosh Attachment
 
+{% raw %}
+
 	Article: Q104422
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MACINTOSH:4.0,5.0,5.1,6.0,6.0.1; WINDOWS:3.0,3.0b,3.2
@@ -76,3 +78,5 @@ permalink: /kb/104/Q104422/
 	
 	=============================================================================
 	
+
+{% endraw %}

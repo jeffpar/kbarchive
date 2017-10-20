@@ -6,6 +6,8 @@ permalink: /kb/151/Q151120/
 
 ## Q151120: NT: Only First User or Administrator Can Run Program
 
+{% raw %}
+
 	Article: Q151120
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/151/Q151120/
 	
 	=============================================================================
 	
+
+{% endraw %}

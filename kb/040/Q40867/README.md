@@ -6,6 +6,8 @@ permalink: /kb/040/Q40867/
 
 ## Q40867: BC 6.00 Example of OS/2 API Calls DosError, DosErrClass
 
+{% raw %}
+
 	Article: Q40867
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -125,3 +127,5 @@ permalink: /kb/040/Q40867/
 	         PRINT "Unknown Location Error"
 	END SELECT
 	END SUB
+
+{% endraw %}

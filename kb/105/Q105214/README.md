@@ -6,6 +6,8 @@ permalink: /kb/105/Q105214/
 
 ## Q105214: Windows NT 3.1 to HP LM/X 1.4 Long Filename Problems
 
+{% raw %}
+
 	Article: Q105214
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/105/Q105214/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/113/Q113229/
 
 ## Q113229: Windows 3.1 Disk 4 Directory Listing (3.5 Inch 1.44 MB)
 
+{% raw %}
+
 	Article: Q113229
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -105,3 +107,5 @@ permalink: /kb/113/Q113229/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/253/Q253797/
 
 ## Q253797: XCLN: Outlook 97, Outlook 98 May Allow Overlapping Appointments
 
+{% raw %}
+
 	Article: Q253797
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:97
@@ -132,3 +134,5 @@ permalink: /kb/253/Q253797/
 	
 	=============================================================================
 	
+
+{% endraw %}

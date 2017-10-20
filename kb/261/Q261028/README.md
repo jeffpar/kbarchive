@@ -6,6 +6,8 @@ permalink: /kb/261/Q261028/
 
 ## Q261028: MCM2: Game Hangs When the Introductory Video Clip Is Played
 
+{% raw %}
+
 	Article: Q261028
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -71,3 +73,5 @@ permalink: /kb/261/Q261028/
 	
 	=============================================================================
 	
+
+{% endraw %}

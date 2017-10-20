@@ -6,6 +6,8 @@ permalink: /kb/146/Q146155/
 
 ## Q146155: XADM: Outstanding Delivery Receipts not Sent to New Location
 
+{% raw %}
+
 	Article: Q146155
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -49,3 +51,5 @@ permalink: /kb/146/Q146155/
 	
 	=============================================================================
 	
+
+{% endraw %}

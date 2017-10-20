@@ -6,6 +6,8 @@ permalink: /kb/190/Q190737/
 
 ## Q190737: XADM: Message Size Limits Do Not Affect Public Folder Replicatio
 
+{% raw %}
+
 	Article: Q190737
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -44,3 +46,5 @@ permalink: /kb/190/Q190737/
 	
 	=============================================================================
 	
+
+{% endraw %}

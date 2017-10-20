@@ -6,6 +6,8 @@ permalink: /kb/151/Q151402/
 
 ## Q151402: Specifying Different Domain In User Manager Icon
 
+{% raw %}
+
 	Article: Q151402
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -106,3 +108,5 @@ permalink: /kb/151/Q151402/
 	
 	=============================================================================
 	
+
+{% endraw %}

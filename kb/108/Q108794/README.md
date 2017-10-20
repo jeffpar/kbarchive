@@ -6,6 +6,8 @@ permalink: /kb/108/Q108794/
 
 ## Q108794: Video for Windows 1.1 Setup Disk (3.5 Inch, 1.44 MB)
 
+{% raw %}
+
 	Article: Q108794
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.1
@@ -81,3 +83,5 @@ permalink: /kb/108/Q108794/
 	
 	=============================================================================
 	
+
+{% endraw %}

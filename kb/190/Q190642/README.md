@@ -6,6 +6,8 @@ permalink: /kb/190/Q190642/
 
 ## Q190642: PRB: ADODC Error on Reposition When EOFAction Is adDoAddNew
 
+{% raw %}
+
 	Article: Q190642
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -164,3 +166,5 @@ permalink: /kb/190/Q190642/
 	
 	=============================================================================
 	
+
+{% endraw %}

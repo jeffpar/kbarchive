@@ -6,6 +6,8 @@ permalink: /kb/167/Q167748/
 
 ## Q167748: PRB: Variable Scope in for-statement Extends Beyond Loop
 
+{% raw %}
+
 	Article: Q167748
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/167/Q167748/
 	
 	=============================================================================
 	
+
+{% endraw %}

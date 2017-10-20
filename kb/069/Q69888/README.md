@@ -6,6 +6,8 @@ permalink: /kb/069/Q69888/
 
 ## Q69888: INFO: Fatal Exit Code 0x0506 Definition
 
+{% raw %}
+
 	Article: Q69888
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -51,3 +53,5 @@ permalink: /kb/069/Q69888/
 	
 	=============================================================================
 	
+
+{% endraw %}

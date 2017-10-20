@@ -6,6 +6,8 @@ permalink: /kb/170/Q170533/
 
 ## Q170533: XADM: Exchange 5.0 SP1 No Setup.exe in &#92;Support Directory
 
+{% raw %}
+
 	Article: Q170533
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -44,3 +46,5 @@ permalink: /kb/170/Q170533/
 	
 	=============================================================================
 	
+
+{% endraw %}

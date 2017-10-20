@@ -6,6 +6,8 @@ permalink: /kb/074/Q74654/
 
 ## Q74654: Undocumented Keystroke CTRL+SPACEBAR in MS-DOS Shell
 
+{% raw %}
+
 	Article: Q74654
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -50,3 +52,5 @@ permalink: /kb/074/Q74654/
 	
 	=============================================================================
 	
+
+{% endraw %}

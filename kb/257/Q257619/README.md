@@ -6,6 +6,8 @@ permalink: /kb/257/Q257619/
 
 ## Q257619: Access Violation When Path/File Name Is More Than 260 Characters
 
+{% raw %}
+
 	Article: Q257619
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -111,3 +113,5 @@ permalink: /kb/257/Q257619/
 	
 	=============================================================================
 	
+
+{% endraw %}

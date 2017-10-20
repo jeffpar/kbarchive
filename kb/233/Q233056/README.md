@@ -6,6 +6,8 @@ permalink: /kb/233/Q233056/
 
 ## Q233056: How to Replace a Site Connector with an X.400 Connector
 
+{% raw %}
+
 	Article: Q233056
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -123,3 +125,5 @@ permalink: /kb/233/Q233056/
 	
 	=============================================================================
 	
+
+{% endraw %}

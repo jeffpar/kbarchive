@@ -6,6 +6,8 @@ permalink: /kb/132/Q132476/
 
 ## Q132476: Visual Basic Applications Cannot Print When Run from Scheduler
 
+{% raw %}
+
 	Article: Q132476
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -60,3 +62,5 @@ permalink: /kb/132/Q132476/
 	
 	=============================================================================
 	
+
+{% endraw %}

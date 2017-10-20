@@ -6,6 +6,8 @@ permalink: /kb/198/Q198548/
 
 ## Q198548: XWEB: OWA Causes an Access Violation in MAPI
 
+{% raw %}
+
 	Article: Q198548
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -121,3 +123,5 @@ permalink: /kb/198/Q198548/
 	
 	=============================================================================
 	
+
+{% endraw %}

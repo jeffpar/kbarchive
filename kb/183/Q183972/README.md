@@ -6,6 +6,8 @@ permalink: /kb/183/Q183972/
 
 ## Q183972: ODE/ADT: Error Running Setup.exe to Install Run-Time Application
 
+{% raw %}
+
 	Article: Q183972
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0,7.0
@@ -90,3 +92,5 @@ permalink: /kb/183/Q183972/
 	
 	=============================================================================
 	
+
+{% endraw %}

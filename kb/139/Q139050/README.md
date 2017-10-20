@@ -6,6 +6,8 @@ permalink: /kb/139/Q139050/
 
 ## Q139050: PRB: &quot;Setup not intended for this version of Windows&quot; Error
 
+{% raw %}
+
 	Article: Q139050
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -81,3 +83,5 @@ permalink: /kb/139/Q139050/
 	
 	=============================================================================
 	
+
+{% endraw %}

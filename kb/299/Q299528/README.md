@@ -6,6 +6,8 @@ permalink: /kb/299/Q299528/
 
 ## Q299528: FIX: Focus Moves From Textbox In Grid Despite RETURN 0
 
+{% raw %}
+
 	Article: Q299528
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -132,3 +134,5 @@ permalink: /kb/299/Q299528/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222618/
 
 ## Q222618: Using ASP and User Names with Posting Acceptor
 
+{% raw %}
+
 	Article: Q222618
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -174,3 +176,5 @@ permalink: /kb/222/Q222618/
 	
 	=============================================================================
 	
+
+{% endraw %}

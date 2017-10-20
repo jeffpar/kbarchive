@@ -6,6 +6,8 @@ permalink: /kb/131/Q131537/
 
 ## Q131537: Mac Encarta 1995: Monitor Colors Appear Faded
 
+{% raw %}
+
 	Article: Q131537
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; MACINTOSH:
@@ -66,3 +68,5 @@ permalink: /kb/131/Q131537/
 	
 	=============================================================================
 	
+
+{% endraw %}

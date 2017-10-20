@@ -6,6 +6,8 @@ permalink: /kb/024/Q24164/
 
 ## Q24164: Applications That Do Not Use the Mouse
 
+{% raw %}
+
 	Article: Q24164
 	Product(s): See article
 	Version(s): 4.x 5.x 6.00
@@ -18,3 +20,5 @@ permalink: /kb/024/Q24164/
 	guide includes the necessary software and documentation to provide
 	keyboard emulation using mouse menus. Mouse menus will run in text
 	mode with most programs that do not grab the keyboard interrupts.
+
+{% endraw %}

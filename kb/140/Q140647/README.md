@@ -6,6 +6,8 @@ permalink: /kb/140/Q140647/
 
 ## Q140647: Microsoft File Transfer Readme.txt File
 
+{% raw %}
+
 	Article: Q140647
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -152,3 +154,5 @@ permalink: /kb/140/Q140647/
 	
 	=============================================================================
 	
+
+{% endraw %}

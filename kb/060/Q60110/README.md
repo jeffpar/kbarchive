@@ -6,6 +6,8 @@ permalink: /kb/060/Q60110/
 
 ## Q60110: Mac Form: Naming Fields in the Form Designer
 
+{% raw %}
+
 	Article: Q60110
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -59,3 +61,5 @@ permalink: /kb/060/Q60110/
 	
 	=============================================================================
 	
+
+{% endraw %}

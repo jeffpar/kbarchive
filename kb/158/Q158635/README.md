@@ -6,6 +6,8 @@ permalink: /kb/158/Q158635/
 
 ## Q158635: Netware Enabled User Unable to Logon to FPNW Server
 
+{% raw %}
+
 	Article: Q158635
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -71,3 +73,5 @@ permalink: /kb/158/Q158635/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196034/
 
 ## Q196034: HOWTO: Use ADOFILTR.DLL to Transfer Database Tables
 
+{% raw %}
+
 	Article: Q196034
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -169,3 +171,5 @@ permalink: /kb/196/Q196034/
 	
 	=============================================================================
 	
+
+{% endraw %}

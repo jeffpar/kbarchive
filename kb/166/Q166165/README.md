@@ -6,6 +6,8 @@ permalink: /kb/166/Q166165/
 
 ## Q166165: XFOR: ISOCOR MTA May Drop Messages Sent from Exchange Server
 
+{% raw %}
+
 	Article: Q166165
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -72,3 +74,5 @@ permalink: /kb/166/Q166165/
 	
 	=============================================================================
 	
+
+{% endraw %}

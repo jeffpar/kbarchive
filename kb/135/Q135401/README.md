@@ -6,6 +6,8 @@ permalink: /kb/135/Q135401/
 
 ## Q135401: INF: How to Upgrade ODBC SDK version 2.10a to 2.10b
 
+{% raw %}
+
 	Article: Q135401
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.10b
@@ -107,3 +109,5 @@ permalink: /kb/135/Q135401/
 	
 	=============================================================================
 	
+
+{% endraw %}

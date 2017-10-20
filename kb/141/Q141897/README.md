@@ -6,6 +6,8 @@ permalink: /kb/141/Q141897/
 
 ## Q141897: How to Add Columns to the DBGrid Control at Design Time
 
+{% raw %}
+
 	Article: Q141897
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -76,3 +78,5 @@ permalink: /kb/141/Q141897/
 	
 	=============================================================================
 	
+
+{% endraw %}

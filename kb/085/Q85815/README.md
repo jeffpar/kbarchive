@@ -6,6 +6,8 @@ permalink: /kb/085/Q85815/
 
 ## Q85815: Recovering Lost Windows from Windows Resource Kit's TopDesk
 
+{% raw %}
+
 	Article: Q85815
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -73,3 +75,5 @@ permalink: /kb/085/Q85815/
 	
 	=============================================================================
 	
+
+{% endraw %}

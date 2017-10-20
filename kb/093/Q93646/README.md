@@ -6,6 +6,8 @@ permalink: /kb/093/Q93646/
 
 ## Q93646: HP Laserjet 4 Driver May Cause GP Fault in Windows 3.1
 
+{% raw %}
+
 	Article: Q93646
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/093/Q93646/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/304/Q304189/
 
 ## Q304189: Error Entering Negative Number for ASP Files Cached in Memory
 
+{% raw %}
+
 	Article: Q304189
 	Product(s): Internet Information Server
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/304/Q304189/
 	
 	=============================================================================
 	
+
+{% endraw %}

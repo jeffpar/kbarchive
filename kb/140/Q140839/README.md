@@ -6,6 +6,8 @@ permalink: /kb/140/Q140839/
 
 ## Q140839: Disk and Setup Problems with Win16 to Win32 Thunking DLL Files
 
+{% raw %}
+
 	Article: Q140839
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -84,3 +86,5 @@ permalink: /kb/140/Q140839/
 	
 	=============================================================================
 	
+
+{% endraw %}

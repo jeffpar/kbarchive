@@ -6,6 +6,8 @@ permalink: /kb/104/Q104777/
 
 ## Q104777: FIX: No F6099 with /4I2 and /4Yb on Integer Overflow
 
+{% raw %}
+
 	Article: Q104777
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0,4.01,4.1,5.0,5.1
@@ -85,3 +87,5 @@ permalink: /kb/104/Q104777/
 	
 	=============================================================================
 	
+
+{% endraw %}

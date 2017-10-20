@@ -6,6 +6,8 @@ permalink: /kb/157/Q157531/
 
 ## Q157531: WD97: Table of Figures (TOF) Missing Captions from Text Boxes
 
+{% raw %}
+
 	Article: Q157531
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -126,3 +128,5 @@ permalink: /kb/157/Q157531/
 	
 	=============================================================================
 	
+
+{% endraw %}

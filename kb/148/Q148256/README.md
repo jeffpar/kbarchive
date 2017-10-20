@@ -6,6 +6,8 @@ permalink: /kb/148/Q148256/
 
 ## Q148256: Musical Instruments: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148256
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/148/Q148256/
 	
 	=============================================================================
 	
+
+{% endraw %}

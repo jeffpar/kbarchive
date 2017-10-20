@@ -6,6 +6,8 @@ permalink: /kb/257/Q257631/
 
 ## Q257631: FIX: Event Monitoring Stops When Expression Service Is Started
 
+{% raw %}
+
 	Article: Q257631
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -52,3 +54,5 @@ permalink: /kb/257/Q257631/
 	
 	=============================================================================
 	
+
+{% endraw %}

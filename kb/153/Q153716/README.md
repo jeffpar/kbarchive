@@ -6,6 +6,8 @@ permalink: /kb/153/Q153716/
 
 ## Q153716: Permissions Required to Perform RAS Administration
 
+{% raw %}
+
 	Article: Q153716
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -60,3 +62,5 @@ permalink: /kb/153/Q153716/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105926/
 
 ## Q105926: MSD Version 2.1 Does Not Detect Gateway2000 ColorBook
 
+{% raw %}
+
 	Article: Q105926
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -32,3 +34,5 @@ permalink: /kb/105/Q105926/
 	
 	=============================================================================
 	
+
+{% endraw %}

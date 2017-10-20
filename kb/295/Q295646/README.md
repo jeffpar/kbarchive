@@ -6,6 +6,8 @@ permalink: /kb/295/Q295646/
 
 ## Q295646: HOWTO: Transfer Data from ADO Data Source to Excel with ADO
 
+{% raw %}
+
 	Article: Q295646
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1,2.5,2.6,2000,5.0,6.0
@@ -158,3 +160,5 @@ permalink: /kb/295/Q295646/
 	
 	=============================================================================
 	
+
+{% endraw %}

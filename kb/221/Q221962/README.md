@@ -6,6 +6,8 @@ permalink: /kb/221/Q221962/
 
 ## Q221962: Err Msg: Win98setup Executed an Illegal Instruction in Module...
 
+{% raw %}
+
 	Article: Q221962
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -61,3 +63,5 @@ permalink: /kb/221/Q221962/
 	
 	=============================================================================
 	
+
+{% endraw %}

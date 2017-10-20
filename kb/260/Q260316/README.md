@@ -6,6 +6,8 @@ permalink: /kb/260/Q260316/
 
 ## Q260316: XADM: Unable to Expand Public Folder Hierarchy
 
+{% raw %}
+
 	Article: Q260316
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -70,3 +72,5 @@ permalink: /kb/260/Q260316/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168087/
 
 ## Q168087: NTMMTA Locks Serial Port When Run as Service on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q168087
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -44,3 +46,5 @@ permalink: /kb/168/Q168087/
 	
 	=============================================================================
 	
+
+{% endraw %}

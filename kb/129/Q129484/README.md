@@ -6,6 +6,8 @@ permalink: /kb/129/Q129484/
 
 ## Q129484: Renaming User Account Does Not Keep Permissions in LAN Manager
 
+{% raw %}
+
 	Article: Q129484
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/129/Q129484/
 	
 	=============================================================================
 	
+
+{% endraw %}

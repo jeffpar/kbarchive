@@ -6,6 +6,8 @@ permalink: /kb/305/Q305710/
 
 ## Q305710: Windows 95 Setup.txt File
 
+{% raw %}
+
 	Article: Q305710
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -885,3 +887,5 @@ permalink: /kb/305/Q305710/
 	
 	=============================================================================
 	
+
+{% endraw %}

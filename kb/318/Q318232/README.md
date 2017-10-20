@@ -6,6 +6,8 @@ permalink: /kb/318/Q318232/
 
 ## Q318232: SMS: The &quot;BROWSTAT.EXE STATUS&quot; Command Does Not Return a List
 
+{% raw %}
+
 	Article: Q318232
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -171,3 +173,5 @@ permalink: /kb/318/Q318232/
 	
 	=============================================================================
 	
+
+{% endraw %}

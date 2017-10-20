@@ -6,6 +6,8 @@ permalink: /kb/295/Q295063/
 
 ## Q295063: CodePage Set to UTF-8 Generates Output w/ Mismatched Characters
 
+{% raw %}
+
 	Article: Q295063
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0,4.0,5.0
@@ -54,3 +56,5 @@ permalink: /kb/295/Q295063/
 	
 	=============================================================================
 	
+
+{% endraw %}

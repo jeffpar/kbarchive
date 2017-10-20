@@ -6,6 +6,8 @@ permalink: /kb/303/Q303113/
 
 ## Q303113: Asheron's Call: No Sound in Game, Sound in Windows Works
 
+{% raw %}
+
 	Article: Q303113
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -114,3 +116,5 @@ permalink: /kb/303/Q303113/
 	
 	=============================================================================
 	
+
+{% endraw %}

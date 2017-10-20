@@ -6,6 +6,8 @@ permalink: /kb/116/Q116375/
 
 ## Q116375: FAX: WIN.INI File Entries Added During Installation
 
+{% raw %}
+
 	Article: Q116375
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.0a; WINDOWS:3.0,3.0b,3.2
@@ -51,3 +53,5 @@ permalink: /kb/116/Q116375/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193680/
 
 ## Q193680: DOCERR: AGETFILEVERSION() Function Incorrectly Documented
 
+{% raw %}
+
 	Article: Q193680
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -55,3 +57,5 @@ permalink: /kb/193/Q193680/
 	
 	=============================================================================
 	
+
+{% endraw %}

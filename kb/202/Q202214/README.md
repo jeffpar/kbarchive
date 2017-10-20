@@ -6,6 +6,8 @@ permalink: /kb/202/Q202214/
 
 ## Q202214: Err Msg: &quot;HAL: No MPS Table Found&quot; During Restart
 
+{% raw %}
+
 	Article: Q202214
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0,4.0a
@@ -180,3 +182,5 @@ permalink: /kb/202/Q202214/
 	
 	=============================================================================
 	
+
+{% endraw %}

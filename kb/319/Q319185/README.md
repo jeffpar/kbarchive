@@ -6,6 +6,8 @@ permalink: /kb/319/Q319185/
 
 ## Q319185: FIX: SAK System Will Blue Screen If Driver Verifier Is Turned on
 
+{% raw %}
+
 	Article: Q319185
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/319/Q319185/
 	
 	=============================================================================
 	
+
+{% endraw %}

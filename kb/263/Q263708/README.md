@@ -6,6 +6,8 @@ permalink: /kb/263/Q263708/
 
 ## Q263708: SMS: Event ID 7016 with Remotely Possible or ControlIT Software
 
+{% raw %}
+
 	Article: Q263708
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -67,3 +69,5 @@ permalink: /kb/263/Q263708/
 	
 	=============================================================================
 	
+
+{% endraw %}

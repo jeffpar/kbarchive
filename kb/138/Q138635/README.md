@@ -6,6 +6,8 @@ permalink: /kb/138/Q138635/
 
 ## Q138635: Backup to Floppy Disk Does Not Use All Available Disk Space
 
+{% raw %}
+
 	Article: Q138635
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -76,3 +78,5 @@ permalink: /kb/138/Q138635/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/073/Q73716/
 
 ## Q73716: BACKUP Deletes Files from Root of Destination Disk
 
+{% raw %}
+
 	Article: Q73716
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -43,3 +45,5 @@ permalink: /kb/073/Q73716/
 	
 	=============================================================================
 	
+
+{% endraw %}

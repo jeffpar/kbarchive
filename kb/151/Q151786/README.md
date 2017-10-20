@@ -6,6 +6,8 @@ permalink: /kb/151/Q151786/
 
 ## Q151786: XFOR: Schedule+ Meeting Requests Drop the When Field
 
+{% raw %}
+
 	Article: Q151786
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -56,3 +58,5 @@ permalink: /kb/151/Q151786/
 	
 	=============================================================================
 	
+
+{% endraw %}

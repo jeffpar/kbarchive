@@ -6,6 +6,8 @@ permalink: /kb/148/Q148679/
 
 ## Q148679: SNA Server Rejects BIND From AS/400 When Remote End = Host
 
+{% raw %}
+
 	Article: Q148679
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1
@@ -94,3 +96,5 @@ permalink: /kb/148/Q148679/
 	
 	=============================================================================
 	
+
+{% endraw %}

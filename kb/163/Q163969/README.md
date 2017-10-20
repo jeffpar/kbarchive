@@ -6,6 +6,8 @@ permalink: /kb/163/Q163969/
 
 ## Q163969: Event 552: DNS Was Unable to Serve a Client Request
 
+{% raw %}
+
 	Article: Q163969
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/163/Q163969/
 	
 	=============================================================================
 	
+
+{% endraw %}

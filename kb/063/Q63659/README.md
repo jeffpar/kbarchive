@@ -6,6 +6,8 @@ permalink: /kb/063/Q63659/
 
 ## Q63659: Error L2029 &quot;Unresolved External&quot; Due to Wrong LIB.EXE Syntax
 
+{% raw %}
+
 	Article: Q63659
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -31,3 +33,5 @@ permalink: /kb/063/Q63659/
 	6.00b for MS-DOS and MS OS/2, and Microsoft BASIC Professional
 	Development System (PDS) versions 7.00 and 7.10 for MS-DOS and MS
 	OS/2.
+
+{% endraw %}

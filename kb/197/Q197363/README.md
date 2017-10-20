@@ -6,6 +6,8 @@ permalink: /kb/197/Q197363/
 
 ## Q197363: XFOR: Messages Containing .PCX Attachments May Crash CCMC
 
+{% raw %}
+
 	Article: Q197363
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -78,3 +80,5 @@ permalink: /kb/197/Q197363/
 	
 	=============================================================================
 	
+
+{% endraw %}

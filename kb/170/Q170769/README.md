@@ -6,6 +6,8 @@ permalink: /kb/170/Q170769/
 
 ## Q170769: PRB: &quot;ODBC Resource DLL Is a Different Version Than ...&quot; Error
 
+{% raw %}
+
 	Article: Q170769
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.5,2.0,2.1,2.5,2.6,2.7,3.0,3.5
@@ -96,3 +98,5 @@ permalink: /kb/170/Q170769/
 	
 	=============================================================================
 	
+
+{% endraw %}

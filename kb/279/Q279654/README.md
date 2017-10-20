@@ -6,6 +6,8 @@ permalink: /kb/279/Q279654/
 
 ## Q279654: Metal Gear Solid: Character Name Missing from User's Guide
 
+{% raw %}
+
 	Article: Q279654
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/279/Q279654/
 	
 	=============================================================================
 	
+
+{% endraw %}

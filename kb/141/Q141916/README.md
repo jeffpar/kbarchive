@@ -6,6 +6,8 @@ permalink: /kb/141/Q141916/
 
 ## Q141916: Command Button Properties Differ Between Versions
 
+{% raw %}
+
 	Article: Q141916
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -62,3 +64,5 @@ permalink: /kb/141/Q141916/
 	
 	=============================================================================
 	
+
+{% endraw %}

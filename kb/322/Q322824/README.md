@@ -6,6 +6,8 @@ permalink: /kb/322/Q322824/
 
 ## Q322824: XADM: Directory Replication Fails with Event ID 1102
 
+{% raw %}
+
 	Article: Q322824
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -107,3 +109,5 @@ permalink: /kb/322/Q322824/
 	
 	=============================================================================
 	
+
+{% endraw %}

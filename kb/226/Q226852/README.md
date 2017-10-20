@@ -6,6 +6,8 @@ permalink: /kb/226/Q226852/
 
 ## Q226852: SMS: Parent Site Collections Locked at Detached Child Site
 
+{% raw %}
+
 	Article: Q226852
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -57,3 +59,5 @@ permalink: /kb/226/Q226852/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193926/
 
 ## Q193926: XFOR: TURFDIR Must Be Manually Created for Message Filtering
 
+{% raw %}
+
 	Article: Q193926
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -92,3 +94,5 @@ permalink: /kb/193/Q193926/
 	
 	=============================================================================
 	
+
+{% endraw %}

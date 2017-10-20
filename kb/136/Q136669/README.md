@@ -6,6 +6,8 @@ permalink: /kb/136/Q136669/
 
 ## Q136669: BUG: Grid Activation Causes Form to Move If Form Title Hidden
 
+{% raw %}
+
 	Article: Q136669
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -82,3 +84,5 @@ permalink: /kb/136/Q136669/
 	
 	=============================================================================
 	
+
+{% endraw %}

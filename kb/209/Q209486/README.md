@@ -6,6 +6,8 @@ permalink: /kb/209/Q209486/
 
 ## Q209486: PC DB: Changing the Serial Number on an MS Mail Postoffice
 
+{% raw %}
+
 	Article: Q209486
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a,3.5
@@ -98,3 +100,5 @@ permalink: /kb/209/Q209486/
 	
 	=============================================================================
 	
+
+{% endraw %}

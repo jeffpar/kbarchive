@@ -6,6 +6,8 @@ permalink: /kb/093/Q93166/
 
 ## Q93166: Secure PC May Prevent HIMEM.SYS from Loading
 
+{% raw %}
+
 	Article: Q93166
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -51,3 +53,5 @@ permalink: /kb/093/Q93166/
 	
 	=============================================================================
 	
+
+{% endraw %}

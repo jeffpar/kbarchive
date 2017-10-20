@@ -6,6 +6,8 @@ permalink: /kb/191/Q191558/
 
 ## Q191558: XADM: POP3 Secure Password Authentication
 
+{% raw %}
+
 	Article: Q191558
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/191/Q191558/
 	
 	=============================================================================
 	
+
+{% endraw %}

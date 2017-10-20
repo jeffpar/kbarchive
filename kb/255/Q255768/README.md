@@ -6,6 +6,8 @@ permalink: /kb/255/Q255768/
 
 ## Q255768: XADM: Mbclean Report Messages Are Composed in German
 
+{% raw %}
+
 	Article: Q255768
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/255/Q255768/
 	
 	=============================================================================
 	
+
+{% endraw %}

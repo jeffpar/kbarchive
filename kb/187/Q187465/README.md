@@ -6,6 +6,8 @@ permalink: /kb/187/Q187465/
 
 ## Q187465: Error 0x906 SL_ERR_SECCTXTINITFAILED
 
+{% raw %}
+
 	Article: Q187465
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/187/Q187465/
 	
 	=============================================================================
 	
+
+{% endraw %}

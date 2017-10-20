@@ -6,6 +6,8 @@ permalink: /kb/081/Q81976/
 
 ## Q81976: TrueType Font Pack for Windows v. 1.0 Disks (3.5-Inch 720K)
 
+{% raw %}
+
 	Article: Q81976
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -138,3 +140,5 @@ permalink: /kb/081/Q81976/
 	
 	=============================================================================
 	
+
+{% endraw %}

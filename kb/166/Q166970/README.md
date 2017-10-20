@@ -6,6 +6,8 @@ permalink: /kb/166/Q166970/
 
 ## Q166970: WD97: &quot;...Invalid Page Fault in Excel32.cnv&quot; When Opening a File
 
+{% raw %}
+
 	Article: Q166970
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/166/Q166970/
 	
 	=============================================================================
 	
+
+{% endraw %}

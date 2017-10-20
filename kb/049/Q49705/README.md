@@ -6,6 +6,8 @@ permalink: /kb/049/Q49705/
 
 ## Q49705: Labeling Variables with Multiple Names in MASM 5.00, 5.10
 
+{% raw %}
+
 	Article: Q49705
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.00 5.10
@@ -32,3 +34,5 @@ permalink: /kb/049/Q49705/
 	wizard  DW ?
 	
 	In this case, rainbow and wizard point to the same word in memory.
+
+{% endraw %}

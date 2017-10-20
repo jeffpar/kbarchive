@@ -6,6 +6,8 @@ permalink: /kb/099/Q99465/
 
 ## Q99465: Mac RSC: MM0741: Configuring the Remote Server Connection
 
+{% raw %}
+
 	Article: Q99465
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.1
@@ -515,3 +517,5 @@ permalink: /kb/099/Q99465/
 	
 	=============================================================================
 	
+
+{% endraw %}

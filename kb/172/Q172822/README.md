@@ -6,6 +6,8 @@ permalink: /kb/172/Q172822/
 
 ## Q172822: Correct Modem Is Not Used To Connect to MSN
 
+{% raw %}
+
 	Article: Q172822
 	Product(s): The Microsoft Network
 	Version(s): 2.6,5.0,5.1,5.2
@@ -51,3 +53,5 @@ permalink: /kb/172/Q172822/
 	
 	=============================================================================
 	
+
+{% endraw %}

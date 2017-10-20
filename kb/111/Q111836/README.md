@@ -6,6 +6,8 @@ permalink: /kb/111/Q111836/
 
 ## Q111836: WD97: Printing Envelopes from Word on the HP DeskJet 500C
 
+{% raw %}
+
 	Article: Q111836
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -119,3 +121,5 @@ permalink: /kb/111/Q111836/
 	
 	=============================================================================
 	
+
+{% endraw %}

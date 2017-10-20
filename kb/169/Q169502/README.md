@@ -6,6 +6,8 @@ permalink: /kb/169/Q169502/
 
 ## Q169502: BUG: All Characters Following CHR(0) are Ignored with MSComm
 
+{% raw %}
+
 	Article: Q169502
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -289,3 +291,5 @@ permalink: /kb/169/Q169502/
 	
 	=============================================================================
 	
+
+{% endraw %}

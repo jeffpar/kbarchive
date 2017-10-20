@@ -6,6 +6,8 @@ permalink: /kb/143/Q143193/
 
 ## Q143193: Internet Explorer Name Resolution
 
+{% raw %}
+
 	Article: Q143193
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/143/Q143193/
 	
 	=============================================================================
 	
+
+{% endraw %}

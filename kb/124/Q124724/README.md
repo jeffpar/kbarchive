@@ -6,6 +6,8 @@ permalink: /kb/124/Q124724/
 
 ## Q124724: Encarta 1994: Distorted Images Printed to HP LaserJet 4M/4ML
 
+{% raw %}
+
 	Article: Q124724
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition
@@ -60,3 +62,5 @@ permalink: /kb/124/Q124724/
 	
 	=============================================================================
 	
+
+{% endraw %}

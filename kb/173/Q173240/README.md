@@ -6,6 +6,8 @@ permalink: /kb/173/Q173240/
 
 ## Q173240: Multihomed Agent Sends SNMP Trap with Incorrect IP Source
 
+{% raw %}
+
 	Article: Q173240
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/173/Q173240/
 	
 	=============================================================================
 	
+
+{% endraw %}

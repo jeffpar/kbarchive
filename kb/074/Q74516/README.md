@@ -6,6 +6,8 @@ permalink: /kb/074/Q74516/
 
 ## Q74516: Binding a TSR to a VxD
 
+{% raw %}
+
 	Article: Q74516
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -109,3 +111,5 @@ permalink: /kb/074/Q74516/
 	
 	=============================================================================
 	
+
+{% endraw %}

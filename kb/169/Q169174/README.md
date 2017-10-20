@@ -6,6 +6,8 @@ permalink: /kb/169/Q169174/
 
 ## Q169174: XFOR: IMS Halts If RFC821 Address Over 1KB in Size Is Received
 
+{% raw %}
+
 	Article: Q169174
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -53,3 +55,5 @@ permalink: /kb/169/Q169174/
 	
 	=============================================================================
 	
+
+{% endraw %}

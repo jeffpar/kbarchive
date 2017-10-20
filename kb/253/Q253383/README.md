@@ -6,6 +6,8 @@ permalink: /kb/253/Q253383/
 
 ## Q253383: XCLN: Outlook Err Msg: There Was an Error When Printing Started
 
+{% raw %}
+
 	Article: Q253383
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,98
@@ -70,3 +72,5 @@ permalink: /kb/253/Q253383/
 	
 	=============================================================================
 	
+
+{% endraw %}

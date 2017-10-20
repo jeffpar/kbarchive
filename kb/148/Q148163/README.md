@@ -6,6 +6,8 @@ permalink: /kb/148/Q148163/
 
 ## Q148163: INFO: SLI Interface Enhancement for Receiving Large Chains
 
+{% raw %}
+
 	Article: Q148163
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -73,3 +75,5 @@ permalink: /kb/148/Q148163/
 	
 	=============================================================================
 	
+
+{% endraw %}

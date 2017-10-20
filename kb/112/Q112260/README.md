@@ -6,6 +6,8 @@ permalink: /kb/112/Q112260/
 
 ## Q112260: PC WRmt: Several Minutes to Time Out Without Modem Attached
 
+{% raw %}
+
 	Article: Q112260
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -44,3 +46,5 @@ permalink: /kb/112/Q112260/
 	
 	=============================================================================
 	
+
+{% endraw %}

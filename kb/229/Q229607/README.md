@@ -6,6 +6,8 @@ permalink: /kb/229/Q229607/
 
 ## Q229607: File Corruption on an NTFS Volume with More Than 4 Million Files
 
+{% raw %}
+
 	Article: Q229607
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -110,3 +112,5 @@ permalink: /kb/229/Q229607/
 	
 	=============================================================================
 	
+
+{% endraw %}

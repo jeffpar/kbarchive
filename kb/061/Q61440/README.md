@@ -6,6 +6,8 @@ permalink: /kb/061/Q61440/
 
 ## Q61440: DIMension in a FOR-NEXT Loop Is Possible
 
+{% raw %}
+
 	Article: Q61440
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/061/Q61440/
 	FOR j% = 1 TO 20
 	   PRINT a%(j%)
 	NEXT j%
+
+{% endraw %}

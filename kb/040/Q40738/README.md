@@ -6,6 +6,8 @@ permalink: /kb/040/Q40738/
 
 ## Q40738: C memcpy and Large Model
 
+{% raw %}
+
 	Article: Q40738
 	Product(s): See article
 	Version(s): 5.10
@@ -42,3 +44,5 @@ permalink: /kb/040/Q40738/
 	the function or intrinsic pragmas. An easy way to do this is to
 	include the appropriate .H file: in this case, either STRING.H or
 	MEMORY.H will do. This will work with or without intrinsics.
+
+{% endraw %}

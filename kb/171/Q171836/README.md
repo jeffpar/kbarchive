@@ -6,6 +6,8 @@ permalink: /kb/171/Q171836/
 
 ## Q171836: FIX: Crash When Viewing API Properties in Object Browser
 
+{% raw %}
+
 	Article: Q171836
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -80,3 +82,5 @@ permalink: /kb/171/Q171836/
 	
 	=============================================================================
 	
+
+{% endraw %}

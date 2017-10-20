@@ -6,6 +6,8 @@ permalink: /kb/111/Q111737/
 
 ## Q111737: Recovering Windows 3.1 After Installing WFWG 3.11
 
+{% raw %}
+
 	Article: Q111737
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -168,3 +170,5 @@ permalink: /kb/111/Q111737/
 	
 	=============================================================================
 	
+
+{% endraw %}

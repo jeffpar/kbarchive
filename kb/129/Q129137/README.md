@@ -6,6 +6,8 @@ permalink: /kb/129/Q129137/
 
 ## Q129137: XCLN: Font Size Doesn't Change When Using the Toolbar
 
+{% raw %}
+
 	Article: Q129137
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -49,3 +51,5 @@ permalink: /kb/129/Q129137/
 	
 	=============================================================================
 	
+
+{% endraw %}

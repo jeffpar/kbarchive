@@ -6,6 +6,8 @@ permalink: /kb/125/Q125576/
 
 ## Q125576: PRB: Scrolling Message &quot;Record not available ... Please Wait&quot;
 
+{% raw %}
+
 	Article: Q125576
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6a,3.0
@@ -162,3 +164,5 @@ permalink: /kb/125/Q125576/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138226/
 
 ## Q138226: Windows NT 3.51 RAS Server Ignores Newly Added Serial Ports
 
+{% raw %}
+
 	Article: Q138226
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -67,3 +69,5 @@ permalink: /kb/138/Q138226/
 	
 	=============================================================================
 	
+
+{% endraw %}

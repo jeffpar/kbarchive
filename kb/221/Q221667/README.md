@@ -6,6 +6,8 @@ permalink: /kb/221/Q221667/
 
 ## Q221667: FIX: Component Gallery Classes Not Automatically Added to Proj
 
+{% raw %}
+
 	Article: Q221667
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -84,3 +86,5 @@ permalink: /kb/221/Q221667/
 	
 	=============================================================================
 	
+
+{% endraw %}

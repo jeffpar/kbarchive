@@ -6,6 +6,8 @@ permalink: /kb/203/Q203980/
 
 ## Q203980: PRB: Error 282 Connecting to VB5 or VB6 DDE Server
 
+{% raw %}
+
 	Article: Q203980
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -58,3 +60,5 @@ permalink: /kb/203/Q203980/
 	
 	=============================================================================
 	
+
+{% endraw %}

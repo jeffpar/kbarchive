@@ -6,6 +6,8 @@ permalink: /kb/125/Q125856/
 
 ## Q125856: How to Join a Domain from a Windows NT Workstation Using RAS
 
+{% raw %}
+
 	Article: Q125856
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -142,3 +144,5 @@ permalink: /kb/125/Q125856/
 	
 	=============================================================================
 	
+
+{% endraw %}

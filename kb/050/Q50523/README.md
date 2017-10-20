@@ -6,6 +6,8 @@ permalink: /kb/050/Q50523/
 
 ## Q50523: Floating-Point Initialization Occurs at Link Time
 
+{% raw %}
+
 	Article: Q50523
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -26,3 +28,5 @@ permalink: /kb/050/Q50523/
 	
 	This process causes the floating-point support to be linked only if
 	floating point is used.
+
+{% endraw %}

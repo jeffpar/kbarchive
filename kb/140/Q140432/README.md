@@ -6,6 +6,8 @@ permalink: /kb/140/Q140432/
 
 ## Q140432: Problems Sending Fax from MAPI-Aware Programs
 
+{% raw %}
+
 	Article: Q140432
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -176,3 +178,5 @@ permalink: /kb/140/Q140432/
 	
 	=============================================================================
 	
+
+{% endraw %}

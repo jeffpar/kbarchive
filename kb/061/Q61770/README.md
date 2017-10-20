@@ -6,6 +6,8 @@ permalink: /kb/061/Q61770/
 
 ## Q61770: Hewlett-Packard Great Start Font Cartridge Description
 
+{% raw %}
+
 	Article: Q61770
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/061/Q61770/
 	
 	=============================================================================
 	
+
+{% endraw %}

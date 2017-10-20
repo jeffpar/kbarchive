@@ -6,6 +6,8 @@ permalink: /kb/235/Q235567/
 
 ## Q235567: QUERY USER Command Does Not Query Information from Remote Server
 
+{% raw %}
+
 	Article: Q235567
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -104,3 +106,5 @@ permalink: /kb/235/Q235567/
 	
 	=============================================================================
 	
+
+{% endraw %}

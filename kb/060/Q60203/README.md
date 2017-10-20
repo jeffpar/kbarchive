@@ -6,6 +6,8 @@ permalink: /kb/060/Q60203/
 
 ## Q60203: PRN Is Always Associated with LPT1
 
+{% raw %}
+
 	Article: Q60203
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -47,3 +49,5 @@ permalink: /kb/060/Q60203/
 	
 	=============================================================================
 	
+
+{% endraw %}

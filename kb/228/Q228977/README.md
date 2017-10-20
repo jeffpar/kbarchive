@@ -6,6 +6,8 @@ permalink: /kb/228/Q228977/
 
 ## Q228977: Midtown Madness: Game Quits Unexpectedly When You Honk the Horn
 
+{% raw %}
+
 	Article: Q228977
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/228/Q228977/
 	
 	=============================================================================
 	
+
+{% endraw %}

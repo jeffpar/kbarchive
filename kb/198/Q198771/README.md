@@ -6,6 +6,8 @@ permalink: /kb/198/Q198771/
 
 ## Q198771: How to Lock Down Windows NT and Internet Explorer 4.01 Desktop
 
+{% raw %}
+
 	Article: Q198771
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.01,4.01 Service Pack 1
@@ -143,3 +145,5 @@ permalink: /kb/198/Q198771/
 	
 	=============================================================================
 	
+
+{% endraw %}

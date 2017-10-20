@@ -6,6 +6,8 @@ permalink: /kb/168/Q168476/
 
 ## Q168476: How to Create Mandatory Profiles with Windows NT 4.0
 
+{% raw %}
+
 	Article: Q168476
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -114,3 +116,5 @@ permalink: /kb/168/Q168476/
 	
 	=============================================================================
 	
+
+{% endraw %}

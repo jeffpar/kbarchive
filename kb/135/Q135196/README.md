@@ -6,6 +6,8 @@ permalink: /kb/135/Q135196/
 
 ## Q135196: Extended Characters Displayed Incorrectly in Login Script
 
+{% raw %}
+
 	Article: Q135196
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/135/Q135196/
 	
 	=============================================================================
 	
+
+{% endraw %}

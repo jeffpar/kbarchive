@@ -6,6 +6,8 @@ permalink: /kb/258/Q258742/
 
 ## Q258742: Intermittent &quot;Access Denied&quot; Error Messages While Printing
 
+{% raw %}
+
 	Article: Q258742
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/258/Q258742/
 	
 	=============================================================================
 	
+
+{% endraw %}

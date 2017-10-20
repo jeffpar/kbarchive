@@ -6,6 +6,8 @@ permalink: /kb/177/Q177313/
 
 ## Q177313: Installing Multiple 3COM 3C509B PCMCIA Network Interface Cards
 
+{% raw %}
+
 	Article: Q177313
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -96,3 +98,5 @@ permalink: /kb/177/Q177313/
 	
 	=============================================================================
 	
+
+{% endraw %}

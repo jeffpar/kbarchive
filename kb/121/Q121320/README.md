@@ -6,6 +6,8 @@ permalink: /kb/121/Q121320/
 
 ## Q121320: MS-DOS 6.22 StepUp Appears to Have Duplicate Files
 
+{% raw %}
+
 	Article: Q121320
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -53,3 +55,5 @@ permalink: /kb/121/Q121320/
 	
 	=============================================================================
 	
+
+{% endraw %}

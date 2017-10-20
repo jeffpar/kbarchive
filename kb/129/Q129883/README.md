@@ -6,6 +6,8 @@ permalink: /kb/129/Q129883/
 
 ## Q129883: PRB: Dynaset, Snapshot, and Table Objects No Longer Available
 
+{% raw %}
+
 	Article: Q129883
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -140,3 +142,5 @@ permalink: /kb/129/Q129883/
 	
 	=============================================================================
 	
+
+{% endraw %}

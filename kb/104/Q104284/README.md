@@ -6,6 +6,8 @@ permalink: /kb/104/Q104284/
 
 ## Q104284: Dinosaurs: Title Bar Does Not Redraw Correctly After Overlap
 
+{% raw %}
+
 	Article: Q104284
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,3.x
@@ -52,3 +54,5 @@ permalink: /kb/104/Q104284/
 	
 	=============================================================================
 	
+
+{% endraw %}

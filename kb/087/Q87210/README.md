@@ -6,6 +6,8 @@ permalink: /kb/087/Q87210/
 
 ## Q87210: PROFS: Effects of DirSync on Gateway Address Lists
 
+{% raw %}
+
 	Article: Q87210
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -42,3 +44,5 @@ permalink: /kb/087/Q87210/
 	
 	=============================================================================
 	
+
+{% endraw %}

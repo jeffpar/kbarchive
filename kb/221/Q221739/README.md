@@ -6,6 +6,8 @@ permalink: /kb/221/Q221739/
 
 ## Q221739: FIX:  Error Using Object Property &gt; 255 Characters As Parameter
 
+{% raw %}
+
 	Article: Q221739
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -104,3 +106,5 @@ permalink: /kb/221/Q221739/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99537/
 
 ## Q99537: PRB: Cannot Change Properties of FOXPROW.EXE File
 
+{% raw %}
+
 	Article: Q99537
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,3.0
@@ -67,3 +69,5 @@ permalink: /kb/099/Q99537/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107885/
 
 ## Q107885: RAS Can't Connect to Windows NT 3.1 RAS via AT&amp;T BNS 1000
 
+{% raw %}
+
 	Article: Q107885
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.1a
@@ -107,3 +109,5 @@ permalink: /kb/107/Q107885/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/039/Q39321/
 
 ## Q39321: Okidata 182 Printer Under Windows
 
+{% raw %}
+
 	Article: Q39321
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/039/Q39321/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126783/
 
 ## Q126783: Dinosaurs: Screen Saver Not Available on Macintosh Version
 
+{% raw %}
+
 	Article: Q126783
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -46,3 +48,5 @@ permalink: /kb/126/Q126783/
 	
 	=============================================================================
 	
+
+{% endraw %}

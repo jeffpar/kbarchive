@@ -6,6 +6,8 @@ permalink: /kb/135/Q135606/
 
 ## Q135606: FINDSTR Causes STOP Error 21a
 
+{% raw %}
+
 	Article: Q135606
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/135/Q135606/
 	
 	=============================================================================
 	
+
+{% endraw %}

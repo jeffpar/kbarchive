@@ -6,6 +6,8 @@ permalink: /kb/118/Q118822/
 
 ## Q118822: Novell NetWare Utilities That Do Not Work with Windows 95
 
+{% raw %}
+
 	Article: Q118822
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -65,3 +67,5 @@ permalink: /kb/118/Q118822/
 	
 	=============================================================================
 	
+
+{% endraw %}

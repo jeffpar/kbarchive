@@ -6,6 +6,8 @@ permalink: /kb/319/Q319306/
 
 ## Q319306: FP: Web Site Message Says the Mail Server Is Unavailable
 
+{% raw %}
+
 	Article: Q319306
 	Product(s): Word Front Page
 	Version(s): 
@@ -218,3 +220,5 @@ permalink: /kb/319/Q319306/
 	
 	=============================================================================
 	
+
+{% endraw %}

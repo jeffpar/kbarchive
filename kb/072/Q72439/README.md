@@ -6,6 +6,8 @@ permalink: /kb/072/Q72439/
 
 ## Q72439: Automatically Running Recorder Macros, Command Line Parameters
 
+{% raw %}
+
 	Article: Q72439
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -148,3 +150,5 @@ permalink: /kb/072/Q72439/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/217/Q217130/
 
 ## Q217130: Err Msg: &quot;STOP 0x0000000a&quot; on Multiprocessor Computer
 
+{% raw %}
+
 	Article: Q217130
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/217/Q217130/
 	
 	=============================================================================
 	
+
+{% endraw %}

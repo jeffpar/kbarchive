@@ -6,6 +6,8 @@ permalink: /kb/130/Q130864/
 
 ## Q130864: PRB: Form with One-to-Many View Does Not Update Parent Records
 
+{% raw %}
+
 	Article: Q130864
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 5.00 |3.00b
@@ -145,3 +147,5 @@ permalink: /kb/130/Q130864/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/042/Q42061/
 
 ## Q42061: DumpDesc.exe Shows How to Read .exe File Headers
 
+{% raw %}
+
 	Article: Q42061
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -55,3 +57,5 @@ permalink: /kb/042/Q42061/
 	
 	=============================================================================
 	
+
+{% endraw %}

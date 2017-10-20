@@ -6,6 +6,8 @@ permalink: /kb/139/Q139358/
 
 ## Q139358: INFO: Readme.wri: Section 1, Software Installation Information
 
+{% raw %}
+
 	Article: Q139358
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0
@@ -240,3 +242,5 @@ permalink: /kb/139/Q139358/
 	
 	=============================================================================
 	
+
+{% endraw %}

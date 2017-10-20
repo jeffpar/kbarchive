@@ -6,6 +6,8 @@ permalink: /kb/245/Q245448/
 
 ## Q245448: WNet Calls Require Fully Qualified User Name
 
+{% raw %}
+
 	Article: Q245448
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -67,3 +69,5 @@ permalink: /kb/245/Q245448/
 	
 	=============================================================================
 	
+
+{% endraw %}

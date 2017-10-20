@@ -6,6 +6,8 @@ permalink: /kb/142/Q142257/
 
 ## Q142257: XCON: MTA Database XFER-IN Thread Error
 
+{% raw %}
+
 	Article: Q142257
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/142/Q142257/
 	
 	=============================================================================
 	
+
+{% endraw %}

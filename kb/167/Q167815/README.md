@@ -6,6 +6,8 @@ permalink: /kb/167/Q167815/
 
 ## Q167815: Mapping Operation Attempted on Non-NetWare Drive
 
+{% raw %}
+
 	Article: Q167815
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/167/Q167815/
 	
 	=============================================================================
 	
+
+{% endraw %}

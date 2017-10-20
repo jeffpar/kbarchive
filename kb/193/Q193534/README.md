@@ -6,6 +6,8 @@ permalink: /kb/193/Q193534/
 
 ## Q193534: Medium Protocol Level Logs Same Data as Maximum
 
+{% raw %}
+
 	Article: Q193534
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -69,3 +71,5 @@ permalink: /kb/193/Q193534/
 	
 	=============================================================================
 	
+
+{% endraw %}

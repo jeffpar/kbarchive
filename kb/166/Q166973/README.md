@@ -6,6 +6,8 @@ permalink: /kb/166/Q166973/
 
 ## Q166973: WD97: Example Macro to Select or Go to a Table Cell
 
+{% raw %}
+
 	Article: Q166973
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/166/Q166973/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/321/Q321320/
 
 ## Q321320: SMSINST: Installer v2.0.148.00 repackage changes registry entry
 
+{% raw %}
+
 	Article: Q321320
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -70,3 +72,5 @@ permalink: /kb/321/Q321320/
 	
 	=============================================================================
 	
+
+{% endraw %}

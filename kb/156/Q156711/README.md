@@ -6,6 +6,8 @@ permalink: /kb/156/Q156711/
 
 ## Q156711: XCLN: Exchange Win95 Client with DNS Polls for New Mail
 
+{% raw %}
+
 	Article: Q156711
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -103,3 +105,5 @@ permalink: /kb/156/Q156711/
 	
 	=============================================================================
 	
+
+{% endraw %}

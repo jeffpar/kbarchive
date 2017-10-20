@@ -6,6 +6,8 @@ permalink: /kb/129/Q129831/
 
 ## Q129831: Network Client 3.0 Setup with TCP/IP Looks for OEM Driver Disk
 
+{% raw %}
+
 	Article: Q129831
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.50 3.00
@@ -56,3 +58,5 @@ permalink: /kb/129/Q129831/
 	
 	=============================================================================
 	
+
+{% endraw %}

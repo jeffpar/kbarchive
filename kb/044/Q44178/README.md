@@ -6,6 +6,8 @@ permalink: /kb/044/Q44178/
 
 ## Q44178: File Buffers Are Not Allocated until First Accessed
 
+{% raw %}
+
 	Article: Q44178
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -62,3 +64,5 @@ permalink: /kb/044/Q44178/
 	{
 	  printf("\nHeap bytes free: %u \n", _memavl()  );
 	}
+
+{% endraw %}

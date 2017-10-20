@@ -6,6 +6,8 @@ permalink: /kb/061/Q61406/
 
 ## Q61406: NOFLTIN.OBJ: Hex Numbers Not Allowed with INPUT, READ, or VAL
 
+{% raw %}
+
 	Article: Q61406
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -38,3 +40,5 @@ permalink: /kb/061/Q61406/
 	   INPUT - returns a "Redo from start"
 	   READ  - returns "Syntax error in module <module name>"
 	   VAL   - returns a value of 0
+
+{% endraw %}

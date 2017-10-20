@@ -6,6 +6,8 @@ permalink: /kb/234/Q234388/
 
 ## Q234388: XFOR: Novell Gateway Doesn't Deliver Msg. w/Zero-Byte Attachment
 
+{% raw %}
+
 	Article: Q234388
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/234/Q234388/
 	
 	=============================================================================
 	
+
+{% endraw %}

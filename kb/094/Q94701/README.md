@@ -6,6 +6,8 @@ permalink: /kb/094/Q94701/
 
 ## Q94701: Understanding Pen Driver Functionality Under Windows
 
+{% raw %}
+
 	Article: Q94701
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -1017,3 +1019,5 @@ permalink: /kb/094/Q94701/
 	
 	=============================================================================
 	
+
+{% endraw %}

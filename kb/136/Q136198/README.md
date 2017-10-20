@@ -6,6 +6,8 @@ permalink: /kb/136/Q136198/
 
 ## Q136198: Problems Connecting NT to UNIX Based Portable NetWare Server
 
+{% raw %}
+
 	Article: Q136198
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -40,3 +42,5 @@ permalink: /kb/136/Q136198/
 	
 	=============================================================================
 	
+
+{% endraw %}

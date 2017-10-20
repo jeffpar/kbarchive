@@ -6,6 +6,8 @@ permalink: /kb/082/Q82453/
 
 ## Q82453: Time-Outs Occur When Printing Complex Jobs with PostScript
 
+{% raw %}
+
 	Article: Q82453
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/082/Q82453/
 	
 	=============================================================================
 	
+
+{% endraw %}

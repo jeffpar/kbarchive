@@ -6,6 +6,8 @@ permalink: /kb/180/Q180557/
 
 ## Q180557: DHCP Clients Unable to Obtain IP Lease from DHCP Server
 
+{% raw %}
+
 	Article: Q180557
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/180/Q180557/
 	
 	=============================================================================
 	
+
+{% endraw %}

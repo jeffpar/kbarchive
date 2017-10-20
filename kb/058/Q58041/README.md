@@ -6,6 +6,8 @@ permalink: /kb/058/Q58041/
 
 ## Q58041: INTERRUPTs Using Strings Need SSEG for Segment in QBX &amp; BC /Fs
 
+{% raw %}
+
 	Article: Q58041
 	Product(s): See article
 	Version(s): 7.00
@@ -44,3 +46,5 @@ permalink: /kb/058/Q58041/
 	In addition to INTERRUPTs, the change to far strings could also have
 	the same effect on mixed-language programming with Microsoft C and
 	Microsoft Macro Assembler (MASM).
+
+{% endraw %}

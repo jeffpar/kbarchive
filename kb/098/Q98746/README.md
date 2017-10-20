@@ -6,6 +6,8 @@ permalink: /kb/098/Q98746/
 
 ## Q98746: PRB: SET DEVICE TO PRINTER PROMPT Does Not Open Dialog Box
 
+{% raw %}
+
 	Article: Q98746
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x,2.6x,3.0,6.0,7.0
@@ -93,3 +95,5 @@ permalink: /kb/098/Q98746/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/252/Q252307/
 
 ## Q252307: Games: How to Troubleshoot CD Audio Playback
 
+{% raw %}
+
 	Article: Q252307
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -208,3 +210,5 @@ permalink: /kb/252/Q252307/
 	
 	=============================================================================
 	
+
+{% endraw %}

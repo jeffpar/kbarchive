@@ -6,6 +6,8 @@ permalink: /kb/196/Q196523/
 
 ## Q196523: WD97: Text from Drop-Down Form Field Disappears When Converted
 
+{% raw %}
+
 	Article: Q196523
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -47,3 +49,5 @@ permalink: /kb/196/Q196523/
 	
 	=============================================================================
 	
+
+{% endraw %}

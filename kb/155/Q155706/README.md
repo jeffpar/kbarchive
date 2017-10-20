@@ -6,6 +6,8 @@ permalink: /kb/155/Q155706/
 
 ## Q155706: How to Use the IIS HTTP Environment Variable
 
+{% raw %}
+
 	Article: Q155706
 	Product(s): Internet Information Server
 	Version(s): 1.0 2.0
@@ -120,3 +122,5 @@ permalink: /kb/155/Q155706/
 	
 	=============================================================================
 	
+
+{% endraw %}

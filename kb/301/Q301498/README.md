@@ -6,6 +6,8 @@ permalink: /kb/301/Q301498/
 
 ## Q301498: E-mail: Inbox Protector
 
+{% raw %}
+
 	Article: Q301498
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -77,3 +79,5 @@ permalink: /kb/301/Q301498/
 	
 	=============================================================================
 	
+
+{% endraw %}

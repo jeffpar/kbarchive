@@ -6,6 +6,8 @@ permalink: /kb/164/Q164616/
 
 ## Q164616: WD97: Cannot Resolve Hyperlink That Contains Punctuation
 
+{% raw %}
+
 	Article: Q164616
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/164/Q164616/
 	
 	=============================================================================
 	
+
+{% endraw %}

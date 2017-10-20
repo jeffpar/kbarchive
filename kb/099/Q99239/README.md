@@ -6,6 +6,8 @@ permalink: /kb/099/Q99239/
 
 ## Q99239: FIX: MASM Generates Incorrect Code for Indirect Addressing
 
+{% raw %}
+
 	Article: Q99239
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.1a
@@ -103,3 +105,5 @@ permalink: /kb/099/Q99239/
 	
 	=============================================================================
 	
+
+{% endraw %}

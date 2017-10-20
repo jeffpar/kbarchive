@@ -6,6 +6,8 @@ permalink: /kb/072/Q72241/
 
 ## Q72241: HP IIID PostScript Driver Available from HP
 
+{% raw %}
+
 	Article: Q72241
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/072/Q72241/
 	
 	=============================================================================
 	
+
+{% endraw %}

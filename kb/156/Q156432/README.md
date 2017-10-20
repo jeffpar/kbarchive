@@ -6,6 +6,8 @@ permalink: /kb/156/Q156432/
 
 ## Q156432: Windows NT 4.0 Policy Restriction Error at Logon
 
+{% raw %}
+
 	Article: Q156432
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/156/Q156432/
 	
 	=============================================================================
 	
+
+{% endraw %}

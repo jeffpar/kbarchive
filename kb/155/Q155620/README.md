@@ -6,6 +6,8 @@ permalink: /kb/155/Q155620/
 
 ## Q155620: ATAPI Devices Listed in SCSI Adapters Tool
 
+{% raw %}
+
 	Article: Q155620
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -42,3 +44,5 @@ permalink: /kb/155/Q155620/
 	
 	=============================================================================
 	
+
+{% endraw %}

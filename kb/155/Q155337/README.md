@@ -6,6 +6,8 @@ permalink: /kb/155/Q155337/
 
 ## Q155337: No 2-Up Printing Option in PostScript Printer Driver
 
+{% raw %}
+
 	Article: Q155337
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155337/
 	
 	=============================================================================
 	
+
+{% endraw %}

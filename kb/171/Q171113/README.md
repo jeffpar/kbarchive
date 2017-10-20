@@ -6,6 +6,8 @@ permalink: /kb/171/Q171113/
 
 ## Q171113: XCON: Event ID 55 Incorrect Link Option
 
+{% raw %}
+
 	Article: Q171113
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/171/Q171113/
 	
 	=============================================================================
 	
+
+{% endraw %}

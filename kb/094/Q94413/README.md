@@ -6,6 +6,8 @@ permalink: /kb/094/Q94413/
 
 ## Q94413: Setup Checks for 6 Free Entries in the Root Directory
 
+{% raw %}
+
 	Article: Q94413
 	Product(s): Microsoft Disk Operating System
 	Version(s): 2000,5.x,6.0,6.2,6.21,6.22
@@ -85,3 +87,5 @@ permalink: /kb/094/Q94413/
 	
 	=============================================================================
 	
+
+{% endraw %}

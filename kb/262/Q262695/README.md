@@ -6,6 +6,8 @@ permalink: /kb/262/Q262695/
 
 ## Q262695: XADM: Move Mailbox Stops After Encountering a Corrupted Mailbox
 
+{% raw %}
+
 	Article: Q262695
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -66,3 +68,5 @@ permalink: /kb/262/Q262695/
 	
 	=============================================================================
 	
+
+{% endraw %}

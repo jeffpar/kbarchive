@@ -6,6 +6,8 @@ permalink: /kb/140/Q140556/
 
 ## Q140556: Securing SNA Server to Not Require Everyone:Read Access
 
+{% raw %}
+
 	Article: Q140556
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11
@@ -141,3 +143,5 @@ permalink: /kb/140/Q140556/
 	
 	=============================================================================
 	
+
+{% endraw %}

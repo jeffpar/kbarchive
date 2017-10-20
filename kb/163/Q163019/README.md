@@ -6,6 +6,8 @@ permalink: /kb/163/Q163019/
 
 ## Q163019: RUI Library Terminates RUI Session When PIU Has Not Been Sent
 
+{% raw %}
+
 	Article: Q163019
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1,3.0
@@ -76,3 +78,5 @@ permalink: /kb/163/Q163019/
 	
 	=============================================================================
 	
+
+{% endraw %}

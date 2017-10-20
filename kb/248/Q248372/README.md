@@ -6,6 +6,8 @@ permalink: /kb/248/Q248372/
 
 ## Q248372: Incorrect User Name When Using Office 97 Applications
 
+{% raw %}
+
 	Article: Q248372
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/248/Q248372/
 	
 	=============================================================================
 	
+
+{% endraw %}

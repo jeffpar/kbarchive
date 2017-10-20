@@ -6,6 +6,8 @@ permalink: /kb/184/Q184281/
 
 ## Q184281: BUG: Constants Used in Function Call Breaks Binary Compatibility
 
+{% raw %}
+
 	Article: Q184281
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -103,3 +105,5 @@ permalink: /kb/184/Q184281/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172634/
 
 ## Q172634: SNA Server Access Violation in Function Sapascp()
 
+{% raw %}
+
 	Article: Q172634
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11 SP1,3.0,3.0 SP1
@@ -169,3 +171,5 @@ permalink: /kb/172/Q172634/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/266/Q266044/
 
 ## Q266044: XADM: Optimization for Directory &amp; Public Folder Replication WP
 
+{% raw %}
+
 	Article: Q266044
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -49,3 +51,5 @@ permalink: /kb/266/Q266044/
 	
 	=============================================================================
 	
+
+{% endraw %}

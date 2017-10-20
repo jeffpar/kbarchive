@@ -6,6 +6,8 @@ permalink: /kb/043/Q43703/
 
 ## Q43703: INFO: Casting a Pointer to Type Equivalent to Multidimensional
 
+{% raw %}
+
 	Article: Q43703
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/043/Q43703/
 	
 	=============================================================================
 	
+
+{% endraw %}

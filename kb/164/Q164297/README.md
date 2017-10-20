@@ -6,6 +6,8 @@ permalink: /kb/164/Q164297/
 
 ## Q164297: Event 26 Installing IntelliPoint 2.0 in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q164297
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/164/Q164297/
 	
 	=============================================================================
 	
+
+{% endraw %}

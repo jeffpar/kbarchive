@@ -6,6 +6,8 @@ permalink: /kb/187/Q187865/
 
 ## Q187865: XFOR: Problems Running Multiple LinkAge Connectors
 
+{% raw %}
+
 	Article: Q187865
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -74,3 +76,5 @@ permalink: /kb/187/Q187865/
 	
 	=============================================================================
 	
+
+{% endraw %}

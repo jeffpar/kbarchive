@@ -6,6 +6,8 @@ permalink: /kb/194/Q194394/
 
 ## Q194394: FTP Service Does Not Log All FTP Verbs
 
+{% raw %}
+
 	Article: Q194394
 	Product(s): Internet Information Server
 	Version(s): WINNT:1.0,2.0,3.0,4.0
@@ -48,3 +50,5 @@ permalink: /kb/194/Q194394/
 	
 	=============================================================================
 	
+
+{% endraw %}

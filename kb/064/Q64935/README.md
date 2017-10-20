@@ -6,6 +6,8 @@ permalink: /kb/064/Q64935/
 
 ## Q64935: Windows 3.0 Support of 16550 and 16550A UART
 
+{% raw %}
+
 	Article: Q64935
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -40,3 +42,5 @@ permalink: /kb/064/Q64935/
 	
 	=============================================================================
 	
+
+{% endraw %}

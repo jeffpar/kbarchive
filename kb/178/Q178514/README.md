@@ -6,6 +6,8 @@ permalink: /kb/178/Q178514/
 
 ## Q178514: &quot;No Line Formatting&quot; Option isn't Explained in SNA Server Help
 
+{% raw %}
+
 	Article: Q178514
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2,3.0 SP3
@@ -68,3 +70,5 @@ permalink: /kb/178/Q178514/
 	
 	=============================================================================
 	
+
+{% endraw %}

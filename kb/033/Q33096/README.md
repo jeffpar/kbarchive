@@ -6,6 +6,8 @@ permalink: /kb/033/Q33096/
 
 ## Q33096: INFO: Drawing Outside a Window's Client Area
 
+{% raw %}
+
 	Article: Q33096
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51
@@ -64,3 +66,5 @@ permalink: /kb/033/Q33096/
 	
 	=============================================================================
 	
+
+{% endraw %}

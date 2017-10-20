@@ -6,6 +6,8 @@ permalink: /kb/051/Q51163/
 
 ## Q51163: Tandy 1000 Beeps When Flight Simulator 4.00 Is Started
 
+{% raw %}
+
 	Article: Q51163
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/051/Q51163/
 	
 	=============================================================================
 	
+
+{% endraw %}

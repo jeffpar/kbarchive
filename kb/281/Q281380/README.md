@@ -6,6 +6,8 @@ permalink: /kb/281/Q281380/
 
 ## Q281380: HOWTO: Print Multiple .tif Files from Visual FoxPro
 
+{% raw %}
+
 	Article: Q281380
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -124,3 +126,5 @@ permalink: /kb/281/Q281380/
 	
 	=============================================================================
 	
+
+{% endraw %}

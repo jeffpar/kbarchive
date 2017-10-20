@@ -6,6 +6,8 @@ permalink: /kb/153/Q153234/
 
 ## Q153234: HOWTO: Call System-Stored Procedures on SQL Server from RDO
 
+{% raw %}
+
 	Article: Q153234
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/153/Q153234/
 	
 	=============================================================================
 	
+
+{% endraw %}

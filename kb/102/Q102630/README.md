@@ -6,6 +6,8 @@ permalink: /kb/102/Q102630/
 
 ## Q102630: LAN Manager Heuristics and Windows NT Registry Entries
 
+{% raw %}
+
 	Article: Q102630
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,4.0
@@ -195,3 +197,5 @@ permalink: /kb/102/Q102630/
 	
 	=============================================================================
 	
+
+{% endraw %}

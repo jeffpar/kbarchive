@@ -6,6 +6,8 @@ permalink: /kb/153/Q153101/
 
 ## Q153101: EnumPrinters Fails When Enumerating Connected Printers
 
+{% raw %}
+
 	Article: Q153101
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/153/Q153101/
 	
 	=============================================================================
 	
+
+{% endraw %}

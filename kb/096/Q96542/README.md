@@ -6,6 +6,8 @@ permalink: /kb/096/Q96542/
 
 ## Q96542: BUG: PostScript Handles lfItalic Field Incorrectly
 
+{% raw %}
+
 	Article: Q96542
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -74,3 +76,5 @@ permalink: /kb/096/Q96542/
 	
 	=============================================================================
 	
+
+{% endraw %}

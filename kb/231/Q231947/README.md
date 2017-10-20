@@ -6,6 +6,8 @@ permalink: /kb/231/Q231947/
 
 ## Q231947: How to Modify Network Monitor Capture Buffer Settings
 
+{% raw %}
+
 	Article: Q231947
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:3.11,95,98,98 Second Edition; winnt:3.1,3.5,3.51,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.
@@ -95,3 +97,5 @@ permalink: /kb/231/Q231947/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/266/Q266298/
 
 ## Q266298: BUG: IWindows::Next and IDocuments::Next Leak Memory
 
+{% raw %}
+
 	Article: Q266298
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/266/Q266298/
 	
 	=============================================================================
 	
+
+{% endraw %}

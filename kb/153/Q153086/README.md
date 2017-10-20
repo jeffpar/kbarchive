@@ -6,6 +6,8 @@ permalink: /kb/153/Q153086/
 
 ## Q153086: XCLN: Custom Dictionary Is Not Used for Suggestions
 
+{% raw %}
+
 	Article: Q153086
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -58,3 +60,5 @@ permalink: /kb/153/Q153086/
 	
 	=============================================================================
 	
+
+{% endraw %}

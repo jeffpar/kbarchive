@@ -6,6 +6,8 @@ permalink: /kb/040/Q40196/
 
 ## Q40196: &quot;&#42;&#92;&quot; Viewed as Continuation Character in Comment
 
+{% raw %}
+
 	Article: Q40196
 	Product(s): See article
 	Version(s): 2.00
@@ -47,3 +49,5 @@ permalink: /kb/040/Q40196/
 	The parsing of the string literal for this printf() will view the
 	backslash, "\", as a continuation marker just as the compiler will
 	view the backslash in "*\" as a continuation marker.
+
+{% endraw %}

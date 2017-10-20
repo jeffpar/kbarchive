@@ -6,6 +6,8 @@ permalink: /kb/228/Q228495/
 
 ## Q228495: After Upgrade to SNA Server 4.0 SP2, COMTI Application Fails
 
+{% raw %}
+
 	Article: Q228495
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0SP2
@@ -123,3 +125,5 @@ permalink: /kb/228/Q228495/
 	
 	=============================================================================
 	
+
+{% endraw %}

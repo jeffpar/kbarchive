@@ -6,6 +6,8 @@ permalink: /kb/085/Q85852/
 
 ## Q85852: Resizing Calendar May Not Repaint Up/Down Scroll Bar
 
+{% raw %}
+
 	Article: Q85852
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -42,3 +44,5 @@ permalink: /kb/085/Q85852/
 	
 	=============================================================================
 	
+
+{% endraw %}

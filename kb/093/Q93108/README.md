@@ -6,6 +6,8 @@ permalink: /kb/093/Q93108/
 
 ## Q93108: Windows 3.0a Disk Directories (5.25 Inch 360K)
 
+{% raw %}
+
 	Article: Q93108
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0a
@@ -459,3 +461,5 @@ permalink: /kb/093/Q93108/
 	
 	=============================================================================
 	
+
+{% endraw %}

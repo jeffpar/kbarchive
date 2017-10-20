@@ -6,6 +6,8 @@ permalink: /kb/183/Q183769/
 
 ## Q183769: Search Against Index Server May Contain Deleted Documents
 
+{% raw %}
+
 	Article: Q183769
 	Product(s): Internet Information Server
 	Version(s): WINNT:1.0,1.1,2.0
@@ -91,3 +93,5 @@ permalink: /kb/183/Q183769/
 	
 	=============================================================================
 	
+
+{% endraw %}

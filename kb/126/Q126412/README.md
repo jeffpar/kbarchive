@@ -6,6 +6,8 @@ permalink: /kb/126/Q126412/
 
 ## Q126412: Using the Microcom DeskPorte 28.8 Modem in Windows 95
 
+{% raw %}
+
 	Article: Q126412
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -111,3 +113,5 @@ permalink: /kb/126/Q126412/
 	
 	=============================================================================
 	
+
+{% endraw %}

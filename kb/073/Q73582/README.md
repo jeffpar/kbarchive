@@ -6,6 +6,8 @@ permalink: /kb/073/Q73582/
 
 ## Q73582: Sysgen External Drives and MS-DOS 5.0 Upgrade
 
+{% raw %}
+
 	Article: Q73582
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -48,3 +50,5 @@ permalink: /kb/073/Q73582/
 	
 	=============================================================================
 	
+
+{% endraw %}

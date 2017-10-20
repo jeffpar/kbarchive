@@ -6,6 +6,8 @@ permalink: /kb/123/Q123764/
 
 ## Q123764: Display Unreadable with an IBM 8514/A Video Adapter
 
+{% raw %}
+
 	Article: Q123764
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -54,3 +56,5 @@ permalink: /kb/123/Q123764/
 	
 	=============================================================================
 	
+
+{% endraw %}

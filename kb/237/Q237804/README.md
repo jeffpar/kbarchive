@@ -6,6 +6,8 @@ permalink: /kb/237/Q237804/
 
 ## Q237804: BUG: Deploying Shadow Files to a Live Web Site Fails
 
+{% raw %}
+
 	Article: Q237804
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0; winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/237/Q237804/
 	
 	=============================================================================
 	
+
+{% endraw %}

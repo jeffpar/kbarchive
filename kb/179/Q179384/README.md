@@ -6,6 +6,8 @@ permalink: /kb/179/Q179384/
 
 ## Q179384: PRB: Installing Applications from an HPFS Formatted Drive
 
+{% raw %}
+
 	Article: Q179384
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,97,97sp1,97sp2
@@ -80,3 +82,5 @@ permalink: /kb/179/Q179384/
 	
 	=============================================================================
 	
+
+{% endraw %}

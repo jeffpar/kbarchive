@@ -6,6 +6,8 @@ permalink: /kb/077/Q77111/
 
 ## Q77111: Running AutoResume with Toshiba T2000SX/T3100SX
 
+{% raw %}
+
 	Article: Q77111
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -67,3 +69,5 @@ permalink: /kb/077/Q77111/
 	
 	=============================================================================
 	
+
+{% endraw %}

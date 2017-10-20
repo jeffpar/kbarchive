@@ -6,6 +6,8 @@ permalink: /kb/102/Q102718/
 
 ## Q102718: MS-DOS Err Msg: ERROR D601US - System Failed
 
+{% raw %}
+
 	Article: Q102718
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -49,3 +51,5 @@ permalink: /kb/102/Q102718/
 	
 	=============================================================================
 	
+
+{% endraw %}

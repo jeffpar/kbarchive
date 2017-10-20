@@ -6,6 +6,8 @@ permalink: /kb/160/Q160714/
 
 ## Q160714: HOWTO: Do BIND Checking in an SLI_OPEN().
 
+{% raw %}
+
 	Article: Q160714
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -142,3 +144,5 @@ permalink: /kb/160/Q160714/
 	
 	=============================================================================
 	
+
+{% endraw %}

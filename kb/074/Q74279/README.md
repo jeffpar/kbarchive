@@ -6,6 +6,8 @@ permalink: /kb/074/Q74279/
 
 ## Q74279: No Support for 2.88 Megabyte Disks During Setup
 
+{% raw %}
+
 	Article: Q74279
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/074/Q74279/
 	
 	=============================================================================
 	
+
+{% endraw %}

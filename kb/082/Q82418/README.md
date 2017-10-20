@@ -6,6 +6,8 @@ permalink: /kb/082/Q82418/
 
 ## Q82418: 32-Bit Disk Access and Portable Computers
 
+{% raw %}
+
 	Article: Q82418
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/082/Q82418/
 	
 	=============================================================================
 	
+
+{% endraw %}

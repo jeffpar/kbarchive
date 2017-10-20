@@ -6,6 +6,8 @@ permalink: /kb/283/Q283845/
 
 ## Q283845: PRB: RDO Rowcount Returns Zero For Large SQL Server Recordsets
 
+{% raw %}
+
 	Article: Q283845
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0,6.0 SP3,6.0 SP4,7.0,7.0 Service Pack 1,7.0 Service Pack 2
@@ -130,3 +132,5 @@ permalink: /kb/283/Q283845/
 	
 	=============================================================================
 	
+
+{% endraw %}

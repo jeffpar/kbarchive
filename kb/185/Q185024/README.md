@@ -6,6 +6,8 @@ permalink: /kb/185/Q185024/
 
 ## Q185024: XCON: MTA NDRs with Loop Detection After Upgrading Bridgehead
 
+{% raw %}
+
 	Article: Q185024
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0 SP2,5.5
@@ -88,3 +90,5 @@ permalink: /kb/185/Q185024/
 	
 	=============================================================================
 	
+
+{% endraw %}

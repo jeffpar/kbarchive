@@ -6,6 +6,8 @@ permalink: /kb/126/Q126571/
 
 ## Q126571: HOWTO: Obtain the Program Name in a Windows-Based Application
 
+{% raw %}
+
 	Article: Q126571
 	Product(s): Microsoft C Compiler
 	Version(s): WIN3X:1.0,1.5,1.51,1.52;WINNT:1.0,2.0,2.1,4.0,5.0;
@@ -75,3 +77,5 @@ permalink: /kb/126/Q126571/
 	
 	=============================================================================
 	
+
+{% endraw %}

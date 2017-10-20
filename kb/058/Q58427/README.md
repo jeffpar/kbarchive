@@ -6,6 +6,8 @@ permalink: /kb/058/Q58427/
 
 ## Q58427: PRB: Changing STDIN Translation Mode from Text to Binary
 
+{% raw %}
+
 	Article: Q58427
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -99,3 +101,5 @@ permalink: /kb/058/Q58427/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/233/Q233245/
 
 ## Q233245: Streets and Trips 2000: Cannot Use GPS Device with Program
 
+{% raw %}
+
 	Article: Q233245
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -40,3 +42,5 @@ permalink: /kb/233/Q233245/
 	
 	=============================================================================
 	
+
+{% endraw %}

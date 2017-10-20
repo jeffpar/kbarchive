@@ -6,6 +6,8 @@ permalink: /kb/167/Q167055/
 
 ## Q167055: FTP Service Does Not Detect Port Change
 
+{% raw %}
+
 	Article: Q167055
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -63,3 +65,5 @@ permalink: /kb/167/Q167055/
 	
 	=============================================================================
 	
+
+{% endraw %}

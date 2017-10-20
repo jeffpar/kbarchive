@@ -6,6 +6,8 @@ permalink: /kb/175/Q175182/
 
 ## Q175182: Streets 98: Program Hangs When Importing Large Text Files
 
+{% raw %}
+
 	Article: Q175182
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/175/Q175182/
 	
 	=============================================================================
 	
+
+{% endraw %}

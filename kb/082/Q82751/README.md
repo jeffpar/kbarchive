@@ -6,6 +6,8 @@ permalink: /kb/082/Q82751/
 
 ## Q82751: Maximum Number of TrueType Fonts Installed
 
+{% raw %}
+
 	Article: Q82751
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/082/Q82751/
 	
 	=============================================================================
 	
+
+{% endraw %}

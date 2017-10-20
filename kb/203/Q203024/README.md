@@ -6,6 +6,8 @@ permalink: /kb/203/Q203024/
 
 ## Q203024: SMS: Unable to Open a Collected File with Associated Program
 
+{% raw %}
+
 	Article: Q203024
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -54,3 +56,5 @@ permalink: /kb/203/Q203024/
 	
 	=============================================================================
 	
+
+{% endraw %}

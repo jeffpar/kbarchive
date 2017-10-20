@@ -6,6 +6,8 @@ permalink: /kb/138/Q138562/
 
 ## Q138562: INFO: Win32s Information in the Microsoft Knowledge Base
 
+{% raw %}
+
 	Article: Q138562
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/138/Q138562/
 	
 	=============================================================================
 	
+
+{% endraw %}

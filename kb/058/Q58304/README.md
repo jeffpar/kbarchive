@@ -6,6 +6,8 @@ permalink: /kb/058/Q58304/
 
 ## Q58304: Varityper 11 x 17 Paper Not Supported
 
+{% raw %}
+
 	Article: Q58304
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1
@@ -38,3 +40,5 @@ permalink: /kb/058/Q58304/
 	
 	=============================================================================
 	
+
+{% endraw %}

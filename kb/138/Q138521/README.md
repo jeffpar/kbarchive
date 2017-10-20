@@ -6,6 +6,8 @@ permalink: /kb/138/Q138521/
 
 ## Q138521: INFO: Program Compiles in Background w/Compile On Demand Set
 
+{% raw %}
+
 	Article: Q138521
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -51,3 +53,5 @@ permalink: /kb/138/Q138521/
 	
 	=============================================================================
 	
+
+{% endraw %}

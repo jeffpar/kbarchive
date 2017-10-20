@@ -6,6 +6,8 @@ permalink: /kb/185/Q185221/
 
 ## Q185221: XFOR: How To Specify The Font Type Used For SMTP Inbound Mails
 
+{% raw %}
+
 	Article: Q185221
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -77,3 +79,5 @@ permalink: /kb/185/Q185221/
 	
 	=============================================================================
 	
+
+{% endraw %}

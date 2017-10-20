@@ -6,6 +6,8 @@ permalink: /kb/057/Q57846/
 
 ## Q57846: Mac AL GW: Configuring the AppleLink Gateway
 
+{% raw %}
+
 	Article: Q57846
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -85,3 +87,5 @@ permalink: /kb/057/Q57846/
 	
 	=============================================================================
 	
+
+{% endraw %}

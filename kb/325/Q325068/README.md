@@ -6,6 +6,8 @@ permalink: /kb/325/Q325068/
 
 ## Q325068: FIX: ODBC Driver for DB2 May Cause Jet Error
 
+{% raw %}
+
 	Article: Q325068
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/325/Q325068/
 	
 	=============================================================================
 	
+
+{% endraw %}

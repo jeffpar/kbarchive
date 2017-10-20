@@ -6,6 +6,8 @@ permalink: /kb/173/Q173227/
 
 ## Q173227: How to Cancel Your MSN Account
 
+{% raw %}
+
 	Article: Q173227
 	Product(s): The Microsoft Network
 	Version(s): 2.0,2.5,2.5 (OEM Release),2.51,2.52,2.6,5.0,5.1,5.2,5.3,5.4,6.0,6.1
@@ -205,3 +207,5 @@ permalink: /kb/173/Q173227/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136945/
 
 ## Q136945: Location of Foxtools.fll Information
 
+{% raw %}
+
 	Article: Q136945
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -39,3 +41,5 @@ permalink: /kb/136/Q136945/
 	
 	=============================================================================
 	
+
+{% endraw %}

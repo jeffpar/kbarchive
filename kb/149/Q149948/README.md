@@ -6,6 +6,8 @@ permalink: /kb/149/Q149948/
 
 ## Q149948: Changing Properties for Many Users Resets Logon Password Flag
 
+{% raw %}
+
 	Article: Q149948
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -55,3 +57,5 @@ permalink: /kb/149/Q149948/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154686/
 
 ## Q154686: XADM: Options in Admin or User Manager May Be Overwritten
 
+{% raw %}
+
 	Article: Q154686
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/154/Q154686/
 	
 	=============================================================================
 	
+
+{% endraw %}

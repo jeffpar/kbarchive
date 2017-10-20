@@ -6,6 +6,8 @@ permalink: /kb/110/Q110478/
 
 ## Q110478: Auto-Start .AVI on Viewer Start Up
 
+{% raw %}
+
 	Article: Q110478
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -217,3 +219,5 @@ permalink: /kb/110/Q110478/
 	
 	=============================================================================
 	
+
+{% endraw %}

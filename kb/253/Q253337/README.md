@@ -6,6 +6,8 @@ permalink: /kb/253/Q253337/
 
 ## Q253337: Allegiance: How to Update the Microsoft Allegiance Software
 
+{% raw %}
+
 	Article: Q253337
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/253/Q253337/
 	
 	=============================================================================
 	
+
+{% endraw %}

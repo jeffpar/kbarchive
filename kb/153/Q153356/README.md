@@ -6,6 +6,8 @@ permalink: /kb/153/Q153356/
 
 ## Q153356: Encarta 1996: Error When Starting Yearbook Builder
 
+{% raw %}
+
 	Article: Q153356
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -159,3 +161,5 @@ permalink: /kb/153/Q153356/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123077/
 
 ## Q123077: PING Causes Reboot If Executed Outside Windows for Workgroups
 
+{% raw %}
+
 	Article: Q123077
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/123/Q123077/
 	
 	=============================================================================
 	
+
+{% endraw %}

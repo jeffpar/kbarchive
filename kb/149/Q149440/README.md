@@ -6,6 +6,8 @@ permalink: /kb/149/Q149440/
 
 ## Q149440: Err Msg: &quot;Invalid Parameter&quot; or &quot;Incorrect Parameter&quot;
 
+{% raw %}
+
 	Article: Q149440
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11,95; winnt:3.5,3.51,4.0
@@ -52,3 +54,5 @@ permalink: /kb/149/Q149440/
 	
 	=============================================================================
 	
+
+{% endraw %}

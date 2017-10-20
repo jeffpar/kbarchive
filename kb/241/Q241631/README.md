@@ -6,6 +6,8 @@ permalink: /kb/241/Q241631/
 
 ## Q241631: Cluster Node with Heavy Disk Stress Does Not Shut Down Properly
 
+{% raw %}
+
 	Article: Q241631
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -95,3 +97,5 @@ permalink: /kb/241/Q241631/
 	
 	=============================================================================
 	
+
+{% endraw %}

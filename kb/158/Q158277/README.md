@@ -6,6 +6,8 @@ permalink: /kb/158/Q158277/
 
 ## Q158277: How to Configure DOS for Remoteboot In Windows NT 4.0
 
+{% raw %}
+
 	Article: Q158277
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -179,3 +181,5 @@ permalink: /kb/158/Q158277/
 	
 	=============================================================================
 	
+
+{% endraw %}

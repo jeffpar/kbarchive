@@ -6,6 +6,8 @@ permalink: /kb/159/Q159434/
 
 ## Q159434: FP97: Graphics File Overwritten in FrontPage Editor
 
+{% raw %}
+
 	Article: Q159434
 	Product(s): Word Front Page
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/159/Q159434/
 	
 	=============================================================================
 	
+
+{% endraw %}

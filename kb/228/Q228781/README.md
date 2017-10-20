@@ -6,6 +6,8 @@ permalink: /kb/228/Q228781/
 
 ## Q228781: SMS:SmsrunStartupDelay Fails If Sms.ini Is Not in Root Directory
 
+{% raw %}
+
 	Article: Q228781
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -65,3 +67,5 @@ permalink: /kb/228/Q228781/
 	
 	=============================================================================
 	
+
+{% endraw %}

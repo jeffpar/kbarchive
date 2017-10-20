@@ -6,6 +6,8 @@ permalink: /kb/094/Q94012/
 
 ## Q94012: Visual Basic MCI Control TimeFormat Property Information
 
+{% raw %}
+
 	Article: Q94012
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0
@@ -116,3 +118,5 @@ permalink: /kb/094/Q94012/
 	
 	=============================================================================
 	
+
+{% endraw %}

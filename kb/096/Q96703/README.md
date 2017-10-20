@@ -6,6 +6,8 @@ permalink: /kb/096/Q96703/
 
 ## Q96703: Defining Custom Events for SoundBits
 
+{% raw %}
+
 	Article: Q96703
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/096/Q96703/
 	
 	=============================================================================
 	
+
+{% endraw %}

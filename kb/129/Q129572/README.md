@@ -6,6 +6,8 @@ permalink: /kb/129/Q129572/
 
 ## Q129572: How to Find Out Which FoxPro Version Created an .SCX File
 
+{% raw %}
+
 	Article: Q129572
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a; MS-DOS:2.0,2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:2.5,2.5a
@@ -64,3 +66,5 @@ permalink: /kb/129/Q129572/
 	
 	=============================================================================
 	
+
+{% endraw %}

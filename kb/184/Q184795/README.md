@@ -6,6 +6,8 @@ permalink: /kb/184/Q184795/
 
 ## Q184795: Close Combat Error Message: Nternal Error #4 Reported
 
+{% raw %}
+
 	Article: Q184795
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -72,3 +74,5 @@ permalink: /kb/184/Q184795/
 	
 	=============================================================================
 	
+
+{% endraw %}

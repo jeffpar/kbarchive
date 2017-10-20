@@ -6,6 +6,8 @@ permalink: /kb/155/Q155246/
 
 ## Q155246: Shared Resources Unavailable When Organic Screen Saver Active
 
+{% raw %}
+
 	Article: Q155246
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -72,3 +74,5 @@ permalink: /kb/155/Q155246/
 	
 	=============================================================================
 	
+
+{% endraw %}

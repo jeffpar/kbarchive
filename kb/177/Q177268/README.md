@@ -6,6 +6,8 @@ permalink: /kb/177/Q177268/
 
 ## Q177268: XADM: Information Store Stops When Decoding Inbound TNEF Propert
 
+{% raw %}
+
 	Article: Q177268
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -161,3 +163,5 @@ permalink: /kb/177/Q177268/
 	
 	=============================================================================
 	
+
+{% endraw %}

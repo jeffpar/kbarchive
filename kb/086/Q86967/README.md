@@ -6,6 +6,8 @@ permalink: /kb/086/Q86967/
 
 ## Q86967: X400: Setting Up a Redirector MTA
 
+{% raw %}
+
 	Article: Q86967
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/086/Q86967/
 	
 	=============================================================================
 	
+
+{% endraw %}

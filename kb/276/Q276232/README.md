@@ -6,6 +6,8 @@ permalink: /kb/276/Q276232/
 
 ## Q276232: SNARAS Connections Fail with Events 101 and 201
 
+{% raw %}
+
 	Article: Q276232
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -73,3 +75,5 @@ permalink: /kb/276/Q276232/
 	
 	=============================================================================
 	
+
+{% endraw %}

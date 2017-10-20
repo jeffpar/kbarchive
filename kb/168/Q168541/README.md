@@ -6,6 +6,8 @@ permalink: /kb/168/Q168541/
 
 ## Q168541: SMS: PCM Should Close After Job Completes
 
+{% raw %}
+
 	Article: Q168541
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -58,3 +60,5 @@ permalink: /kb/168/Q168541/
 	
 	=============================================================================
 	
+
+{% endraw %}

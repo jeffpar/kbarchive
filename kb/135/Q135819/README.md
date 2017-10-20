@@ -6,6 +6,8 @@ permalink: /kb/135/Q135819/
 
 ## Q135819: Error Printing to NetWare Printer w/Extended Character in Name
 
+{% raw %}
+
 	Article: Q135819
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -68,3 +70,5 @@ permalink: /kb/135/Q135819/
 	
 	=============================================================================
 	
+
+{% endraw %}

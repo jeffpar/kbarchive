@@ -6,6 +6,8 @@ permalink: /kb/142/Q142889/
 
 ## Q142889: INFO: Standards Supported by Visual C++ &amp; Microsoft Products
 
+{% raw %}
+
 	Article: Q142889
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -44,3 +46,5 @@ permalink: /kb/142/Q142889/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175874/
 
 ## Q175874: Flight Simulator 95: How To Check Product ID (PID)
 
+{% raw %}
+
 	Article: Q175874
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/175/Q175874/
 	
 	=============================================================================
 	
+
+{% endraw %}

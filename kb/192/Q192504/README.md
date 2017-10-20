@@ -6,6 +6,8 @@ permalink: /kb/192/Q192504/
 
 ## Q192504: Microsoft Windows 98 Training Comments and Corrections
 
+{% raw %}
+
 	Article: Q192504
 	Product(s): Microsoft Press
 	Version(s): 
@@ -272,3 +274,5 @@ permalink: /kb/192/Q192504/
 	
 	=============================================================================
 	
+
+{% endraw %}

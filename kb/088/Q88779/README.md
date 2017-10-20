@@ -6,6 +6,8 @@ permalink: /kb/088/Q88779/
 
 ## Q88779: SMTP: Examples of Typical SMTP Addresses
 
+{% raw %}
+
 	Article: Q88779
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/088/Q88779/
 	
 	=============================================================================
 	
+
+{% endraw %}

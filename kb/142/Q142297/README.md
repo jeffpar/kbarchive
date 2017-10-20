@@ -6,6 +6,8 @@ permalink: /kb/142/Q142297/
 
 ## Q142297: NetWare Printer Offline Using Microsoft Service for NDS
 
+{% raw %}
+
 	Article: Q142297
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -85,3 +87,5 @@ permalink: /kb/142/Q142297/
 	
 	=============================================================================
 	
+
+{% endraw %}

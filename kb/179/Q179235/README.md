@@ -6,6 +6,8 @@ permalink: /kb/179/Q179235/
 
 ## Q179235: DOC: SQL Debugging with VC++ 5.0 Requires a Non-System Account
 
+{% raw %}
+
 	Article: Q179235
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:5.0,5.0sp1,5.0sp2,5.0sp3
@@ -54,3 +56,5 @@ permalink: /kb/179/Q179235/
 	
 	=============================================================================
 	
+
+{% endraw %}

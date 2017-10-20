@@ -6,6 +6,8 @@ permalink: /kb/136/Q136916/
 
 ## Q136916: FIX: Saving Report May Not Allow User to Reselect Object
 
+{% raw %}
+
 	Article: Q136916
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -92,3 +94,5 @@ permalink: /kb/136/Q136916/
 	
 	=============================================================================
 	
+
+{% endraw %}

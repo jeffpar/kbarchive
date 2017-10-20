@@ -6,6 +6,8 @@ permalink: /kb/038/Q38026/
 
 ## Q38026: Minimum Range Values in the Include File limits.h
 
+{% raw %}
+
 	Article: Q38026
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -38,3 +40,5 @@ permalink: /kb/038/Q38026/
 	The return value from the ABS() function is undefined if you try
 	to store the result in a storage class that cannot represent the
 	value.
+
+{% endraw %}

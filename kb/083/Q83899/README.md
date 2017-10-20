@@ -6,6 +6,8 @@ permalink: /kb/083/Q83899/
 
 ## Q83899: SYSADMIN.WRI Information Was Incorporated into the WRK
 
+{% raw %}
+
 	Article: Q83899
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/083/Q83899/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/266/Q266250/
 
 ## Q266250: XFOR: Internet Mail Service on Cluster Uses Node IP Address
 
+{% raw %}
+
 	Article: Q266250
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -64,3 +66,5 @@ permalink: /kb/266/Q266250/
 	
 	=============================================================================
 	
+
+{% endraw %}

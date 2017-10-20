@@ -6,6 +6,8 @@ permalink: /kb/143/Q143039/
 
 ## Q143039: Calling Visual Basic 4.0 OLE Server from Microsoft Access 2.0
 
+{% raw %}
+
 	Article: Q143039
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -107,3 +109,5 @@ permalink: /kb/143/Q143039/
 	
 	=============================================================================
 	
+
+{% endraw %}

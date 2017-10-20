@@ -6,6 +6,8 @@ permalink: /kb/183/Q183263/
 
 ## Q183263: XADM: PAB-GAL Synchronization Tool
 
+{% raw %}
+
 	Article: Q183263
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/183/Q183263/
 	
 	=============================================================================
 	
+
+{% endraw %}

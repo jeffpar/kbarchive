@@ -6,6 +6,8 @@ permalink: /kb/137/Q137581/
 
 ## Q137581: Problems with Multiple Sessions over TCP/IP using NetSoft Elite
 
+{% raw %}
+
 	Article: Q137581
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -105,3 +107,5 @@ permalink: /kb/137/Q137581/
 	
 	=============================================================================
 	
+
+{% endraw %}

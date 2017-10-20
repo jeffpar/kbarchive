@@ -6,6 +6,8 @@ permalink: /kb/047/Q47989/
 
 ## Q47989: PRB: Resident Software May Cause &quot;Internal Debugger Error&quot;
 
+{% raw %}
+
 	Article: Q47989
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.2,3.0,3.11,3.14,4.0,4.01,4.05,4.1,5.6
@@ -71,3 +73,5 @@ permalink: /kb/047/Q47989/
 	
 	=============================================================================
 	
+
+{% endraw %}

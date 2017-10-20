@@ -6,6 +6,8 @@ permalink: /kb/183/Q183695/
 
 ## Q183695: BUG: Error Occurs When Placing an MFC-Based Control on a Form
 
+{% raw %}
+
 	Article: Q183695
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/183/Q183695/
 	
 	=============================================================================
 	
+
+{% endraw %}

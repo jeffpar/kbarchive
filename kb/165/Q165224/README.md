@@ -6,6 +6,8 @@ permalink: /kb/165/Q165224/
 
 ## Q165224: Cannot Run MS-DOS Application from Shortcut
 
+{% raw %}
+
 	Article: Q165224
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/165/Q165224/
 	
 	=============================================================================
 	
+
+{% endraw %}

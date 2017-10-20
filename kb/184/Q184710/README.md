@@ -6,6 +6,8 @@ permalink: /kb/184/Q184710/
 
 ## Q184710: XADM: Exchange Admin Program Will Not Run On Windows 95/98
 
+{% raw %}
+
 	Article: Q184710
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -41,3 +43,5 @@ permalink: /kb/184/Q184710/
 	
 	=============================================================================
 	
+
+{% endraw %}

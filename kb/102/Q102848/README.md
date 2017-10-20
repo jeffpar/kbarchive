@@ -6,6 +6,8 @@ permalink: /kb/102/Q102848/
 
 ## Q102848: SYS0234 Error &quot;MoreData is Available&quot; with NetUserEnum()
 
+{% raw %}
+
 	Article: Q102848
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/102/Q102848/
 	
 	=============================================================================
 	
+
+{% endraw %}

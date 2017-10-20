@@ -6,6 +6,8 @@ permalink: /kb/184/Q184234/
 
 ## Q184234: PRB: printf() and _fcvt() Might Produce Incorrect Rounding
 
+{% raw %}
+
 	Article: Q184234
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -136,3 +138,5 @@ permalink: /kb/184/Q184234/
 	
 	=============================================================================
 	
+
+{% endraw %}

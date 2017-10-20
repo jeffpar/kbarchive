@@ -6,6 +6,8 @@ permalink: /kb/146/Q146922/
 
 ## Q146922: WD97: Selecting Multiple File Names Gives Run-time Error 5174
 
+{% raw %}
+
 	Article: Q146922
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/146/Q146922/
 	
 	=============================================================================
 	
+
+{% endraw %}

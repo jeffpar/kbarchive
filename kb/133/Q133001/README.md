@@ -6,6 +6,8 @@ permalink: /kb/133/Q133001/
 
 ## Q133001: PRB: SQL SELECT Statement UDF Executes Twice On First Record
 
+{% raw %}
+
 	Article: Q133001
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a; MS-DOS:2.6a; WINDOWS:2.6a,3.0
@@ -172,3 +174,5 @@ permalink: /kb/133/Q133001/
 	
 	=============================================================================
 	
+
+{% endraw %}

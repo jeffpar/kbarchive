@@ -6,6 +6,8 @@ permalink: /kb/307/Q307579/
 
 ## Q307579: CFS2: Err Msg: CFS2 Has Caused an IPF in Module CFS2.exe
 
+{% raw %}
+
 	Article: Q307579
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -105,3 +107,5 @@ permalink: /kb/307/Q307579/
 	
 	=============================================================================
 	
+
+{% endraw %}

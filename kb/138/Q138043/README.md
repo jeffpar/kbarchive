@@ -6,6 +6,8 @@ permalink: /kb/138/Q138043/
 
 ## Q138043: PRB: Error Instantiating Object
 
+{% raw %}
+
 	Article: Q138043
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -81,3 +83,5 @@ permalink: /kb/138/Q138043/
 	
 	=============================================================================
 	
+
+{% endraw %}

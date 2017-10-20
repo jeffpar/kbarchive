@@ -6,6 +6,8 @@ permalink: /kb/151/Q151417/
 
 ## Q151417: XCON: Latin-1 X.400 Bodypart Encoding Causes NDR
 
+{% raw %}
+
 	Article: Q151417
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -145,3 +147,5 @@ permalink: /kb/151/Q151417/
 	
 	=============================================================================
 	
+
+{% endraw %}

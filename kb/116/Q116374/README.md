@@ -6,6 +6,8 @@ permalink: /kb/116/Q116374/
 
 ## Q116374: FIX: &gt;251 Character Lines in Workbench Cause Random Behavior
 
+{% raw %}
+
 	Article: Q116374
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/116/Q116374/
 	
 	=============================================================================
 	
+
+{% endraw %}

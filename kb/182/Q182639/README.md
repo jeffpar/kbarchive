@@ -6,6 +6,8 @@ permalink: /kb/182/Q182639/
 
 ## Q182639: Host Security Domain Listed When Installed on NT Workstation
 
+{% raw %}
+
 	Article: Q182639
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -63,3 +65,5 @@ permalink: /kb/182/Q182639/
 	
 	=============================================================================
 	
+
+{% endraw %}

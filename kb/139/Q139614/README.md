@@ -6,6 +6,8 @@ permalink: /kb/139/Q139614/
 
 ## Q139614: Microsoft Project Hangs Under Windows NT 3.51
 
+{% raw %}
+
 	Article: Q139614
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -52,3 +54,5 @@ permalink: /kb/139/Q139614/
 	
 	=============================================================================
 	
+
+{% endraw %}

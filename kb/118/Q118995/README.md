@@ -6,6 +6,8 @@ permalink: /kb/118/Q118995/
 
 ## Q118995: Baseball Err Msg: File &quot;MV.M11&quot; Bad or Missing
 
+{% raw %}
+
 	Article: Q118995
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -60,3 +62,5 @@ permalink: /kb/118/Q118995/
 	
 	=============================================================================
 	
+
+{% endraw %}

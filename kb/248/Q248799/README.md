@@ -6,6 +6,8 @@ permalink: /kb/248/Q248799/
 
 ## Q248799: HOWTO: Insert NULL Data with ODBC API Functions
 
+{% raw %}
+
 	Article: Q248799
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.5,3.51,3.7,6.5,7.0
@@ -187,3 +189,5 @@ permalink: /kb/248/Q248799/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/291/Q291675/
 
 ## Q291675: SMS: Advertisements Incorrectly Go to All Computers
 
+{% raw %}
+
 	Article: Q291675
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -51,3 +53,5 @@ permalink: /kb/291/Q291675/
 	
 	=============================================================================
 	
+
+{% endraw %}

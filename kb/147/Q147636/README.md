@@ -6,6 +6,8 @@ permalink: /kb/147/Q147636/
 
 ## Q147636: SMS Remote Control Does Not Pass Through Some Keys
 
+{% raw %}
+
 	Article: Q147636
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -48,3 +50,5 @@ permalink: /kb/147/Q147636/
 	
 	=============================================================================
 	
+
+{% endraw %}

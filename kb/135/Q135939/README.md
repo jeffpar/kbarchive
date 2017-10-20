@@ -6,6 +6,8 @@ permalink: /kb/135/Q135939/
 
 ## Q135939: DriveSpace Does Not Mount Two CVFs with the Same Extension
 
+{% raw %}
+
 	Article: Q135939
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -84,3 +86,5 @@ permalink: /kb/135/Q135939/
 	
 	=============================================================================
 	
+
+{% endraw %}

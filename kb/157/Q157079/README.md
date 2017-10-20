@@ -6,6 +6,8 @@ permalink: /kb/157/Q157079/
 
 ## Q157079: XCLN: How to Move the Location of an OST File
 
+{% raw %}
+
 	Article: Q157079
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -81,3 +83,5 @@ permalink: /kb/157/Q157079/
 	
 	=============================================================================
 	
+
+{% endraw %}

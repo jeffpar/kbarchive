@@ -6,6 +6,8 @@ permalink: /kb/299/Q299733/
 
 ## Q299733: Train Simulator: Question Mark Help Buttons Don't Work
 
+{% raw %}
+
 	Article: Q299733
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -40,3 +42,5 @@ permalink: /kb/299/Q299733/
 	
 	=============================================================================
 	
+
+{% endraw %}

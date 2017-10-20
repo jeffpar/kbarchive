@@ -6,6 +6,8 @@ permalink: /kb/038/Q38015/
 
 ## Q38015: MASM m.exe Is Different than FORTRAN m.exe when Using DOS Comp
 
+{% raw %}
+
 	Article: Q38015
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -29,3 +31,5 @@ permalink: /kb/038/Q38015/
 	(hex37) when it should be Jan. 29, 1988 (hex 38). Other than this
 	character in the date, they are identical, so you can use either one
 	for mixed-language programming.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/309/Q309810/
 
 ## Q309810: MS Reader: Err Msg When Highlighting Text, Moving Mouse Over It
 
+{% raw %}
+
 	Article: Q309810
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/309/Q309810/
 	
 	=============================================================================
 	
+
+{% endraw %}

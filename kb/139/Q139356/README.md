@@ -6,6 +6,8 @@ permalink: /kb/139/Q139356/
 
 ## Q139356: TN3270 Server Service Fails to Start Automatically
 
+{% raw %}
+
 	Article: Q139356
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -83,3 +85,5 @@ permalink: /kb/139/Q139356/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155437/
 
 ## Q155437: PRB: &quot;Invalid DOS Path&quot; Error Message
 
+{% raw %}
+
 	Article: Q155437
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.00 5.00
@@ -87,3 +89,5 @@ permalink: /kb/155/Q155437/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160149/
 
 ## Q160149: FreeHand 4.0 Does not Print Properly with EMF Spooling
 
+{% raw %}
+
 	Article: Q160149
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/160/Q160149/
 	
 	=============================================================================
 	
+
+{% endraw %}

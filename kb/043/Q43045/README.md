@@ -6,6 +6,8 @@ permalink: /kb/043/Q43045/
 
 ## Q43045: CL Environment Variable in QuickC Err Msg: Object Not Found
 
+{% raw %}
+
 	Article: Q43045
 	Product(s): See article
 	Version(s): 2.00
@@ -40,3 +42,5 @@ permalink: /kb/043/Q43045/
 	
 	This can be very useful for programming inside the QuickC environment
 	as well as outside of it.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137796/
 
 ## Q137796: Custom Toolbar Buttons are Not Displaying if Toolbar is Full
 
+{% raw %}
+
 	Article: Q137796
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -54,3 +56,5 @@ permalink: /kb/137/Q137796/
 	
 	=============================================================================
 	
+
+{% endraw %}

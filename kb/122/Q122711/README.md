@@ -6,6 +6,8 @@ permalink: /kb/122/Q122711/
 
 ## Q122711: MFC Version 3.1 White Paper
 
+{% raw %}
+
 	Article: Q122711
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1
@@ -86,3 +88,5 @@ permalink: /kb/122/Q122711/
 	
 	=============================================================================
 	
+
+{% endraw %}

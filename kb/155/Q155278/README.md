@@ -6,6 +6,8 @@ permalink: /kb/155/Q155278/
 
 ## Q155278: How to Set the RAS Callback Delay in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q155278
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/155/Q155278/
 	
 	=============================================================================
 	
+
+{% endraw %}

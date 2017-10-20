@@ -6,6 +6,8 @@ permalink: /kb/273/Q273739/
 
 ## Q273739: Midtown Madness 2: How to Improve Game Performance
 
+{% raw %}
+
 	Article: Q273739
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -219,3 +221,5 @@ permalink: /kb/273/Q273739/
 	
 	=============================================================================
 	
+
+{% endraw %}

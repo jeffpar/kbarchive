@@ -6,6 +6,8 @@ permalink: /kb/266/Q266767/
 
 ## Q266767: HOWTO: Set Which Printer Is the System Default Printer
 
+{% raw %}
+
 	Article: Q266767
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -434,3 +436,5 @@ permalink: /kb/266/Q266767/
 	
 	=============================================================================
 	
+
+{% endraw %}

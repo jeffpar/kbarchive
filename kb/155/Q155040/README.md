@@ -6,6 +6,8 @@ permalink: /kb/155/Q155040/
 
 ## Q155040: Debugging WINS Event ID 4288
 
+{% raw %}
+
 	Article: Q155040
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -91,3 +93,5 @@ permalink: /kb/155/Q155040/
 	
 	=============================================================================
 	
+
+{% endraw %}

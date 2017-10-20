@@ -6,6 +6,8 @@ permalink: /kb/233/Q233508/
 
 ## Q233508: HOWTO: Determine Compatibility Level of a SQL Server 7 Database
 
+{% raw %}
+
 	Article: Q233508
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -113,3 +115,5 @@ permalink: /kb/233/Q233508/
 	
 	=============================================================================
 	
+
+{% endraw %}

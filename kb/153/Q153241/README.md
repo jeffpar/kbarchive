@@ -6,6 +6,8 @@ permalink: /kb/153/Q153241/
 
 ## Q153241: Office95 Professional Falsely Reported in Inventory
 
+{% raw %}
+
 	Article: Q153241
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -56,3 +58,5 @@ permalink: /kb/153/Q153241/
 	
 	=============================================================================
 	
+
+{% endraw %}

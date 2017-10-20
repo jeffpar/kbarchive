@@ -6,6 +6,8 @@ permalink: /kb/131/Q131450/
 
 ## Q131450: INFO: Description of Files in the &#92;SS&#92;DATA Directory
 
+{% raw %}
+
 	Article: Q131450
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.04,3.1,4.0,5.0
@@ -59,3 +61,5 @@ permalink: /kb/131/Q131450/
 	
 	=============================================================================
 	
+
+{% endraw %}

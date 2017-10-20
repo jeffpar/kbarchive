@@ -6,6 +6,8 @@ permalink: /kb/170/Q170390/
 
 ## Q170390: Changing Security Options on MIPS System Results in 4116 Error
 
+{% raw %}
+
 	Article: Q170390
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 (all versions)
@@ -103,3 +105,5 @@ permalink: /kb/170/Q170390/
 	
 	=============================================================================
 	
+
+{% endraw %}

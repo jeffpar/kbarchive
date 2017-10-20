@@ -6,6 +6,8 @@ permalink: /kb/247/Q247323/
 
 ## Q247323: BUG: BN_DOUBLECLICKED Message Handler Not Hit in MFC Dialog Box
 
+{% raw %}
+
 	Article: Q247323
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0
@@ -107,3 +109,5 @@ permalink: /kb/247/Q247323/
 	
 	=============================================================================
 	
+
+{% endraw %}

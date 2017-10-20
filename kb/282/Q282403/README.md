@@ -6,6 +6,8 @@ permalink: /kb/282/Q282403/
 
 ## Q282403: SMS: Resources in Collections Appear Duplicated
 
+{% raw %}
+
 	Article: Q282403
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -60,3 +62,5 @@ permalink: /kb/282/Q282403/
 	
 	=============================================================================
 	
+
+{% endraw %}

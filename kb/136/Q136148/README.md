@@ -6,6 +6,8 @@ permalink: /kb/136/Q136148/
 
 ## Q136148: MONITOR.EXE &amp; DATALOG.EXE Alerts Have Invalid System Log Data
 
+{% raw %}
+
 	Article: Q136148
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/136/Q136148/
 	
 	=============================================================================
 	
+
+{% endraw %}

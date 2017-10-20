@@ -6,6 +6,8 @@ permalink: /kb/146/Q146293/
 
 ## Q146293: XADM: Auto-naming Feature Doesn't Work with Directory Import
 
+{% raw %}
+
 	Article: Q146293
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/146/Q146293/
 	
 	=============================================================================
 	
+
+{% endraw %}

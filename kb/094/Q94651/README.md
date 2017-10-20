@@ -6,6 +6,8 @@ permalink: /kb/094/Q94651/
 
 ## Q94651: Scratchy Sound, Erratic Sound, or Sound Stops
 
+{% raw %}
+
 	Article: Q94651
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.0a,1.1,1.1a,1.1b,2.0; :1.0,1993 edition,1994 edition,1994-1995 edition,19
@@ -145,3 +147,5 @@ permalink: /kb/094/Q94651/
 	
 	=============================================================================
 	
+
+{% endraw %}

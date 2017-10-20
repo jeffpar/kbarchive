@@ -6,6 +6,8 @@ permalink: /kb/098/Q98013/
 
 ## Q98013: PC WRmt: Unsendable Messages Counted Incorrectly
 
+{% raw %}
+
 	Article: Q98013
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -44,3 +46,5 @@ permalink: /kb/098/Q98013/
 	
 	=============================================================================
 	
+
+{% endraw %}

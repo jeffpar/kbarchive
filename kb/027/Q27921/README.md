@@ -6,6 +6,8 @@ permalink: /kb/027/Q27921/
 
 ## Q27921: BASIC 6.00 &amp; 7.00 Can't Make Family API (Bound) Applications
 
+{% raw %}
+
 	Article: Q27921
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -25,3 +27,5 @@ permalink: /kb/027/Q27921/
 	To have the functionality of BASIC, the BASIC run-time module contains
 	routines that are outside OS/2's Family API (Applications Programming
 	Interface).
+
+{% endraw %}

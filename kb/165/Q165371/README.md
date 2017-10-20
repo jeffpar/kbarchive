@@ -6,6 +6,8 @@ permalink: /kb/165/Q165371/
 
 ## Q165371: XADM: Error Creating NT Account in Exchange Administrator
 
+{% raw %}
+
 	Article: Q165371
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -53,3 +55,5 @@ permalink: /kb/165/Q165371/
 	
 	=============================================================================
 	
+
+{% endraw %}

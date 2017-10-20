@@ -6,6 +6,8 @@ permalink: /kb/180/Q180529/
 
 ## Q180529: BUG: Menu Shortcut Keys Do Not Always Work
 
+{% raw %}
+
 	Article: Q180529
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/180/Q180529/
 	
 	=============================================================================
 	
+
+{% endraw %}

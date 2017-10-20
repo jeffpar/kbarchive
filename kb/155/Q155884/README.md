@@ -6,6 +6,8 @@ permalink: /kb/155/Q155884/
 
 ## Q155884: SNA Server 2.x IP Communication Fails w/15 Char Domain Names
 
+{% raw %}
+
 	Article: Q155884
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1
@@ -81,3 +83,5 @@ permalink: /kb/155/Q155884/
 	
 	=============================================================================
 	
+
+{% endraw %}

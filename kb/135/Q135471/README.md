@@ -6,6 +6,8 @@ permalink: /kb/135/Q135471/
 
 ## Q135471: Cannot Reconnect to OS/2 Name Space Resources on NetWare Server
 
+{% raw %}
+
 	Article: Q135471
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -66,3 +68,5 @@ permalink: /kb/135/Q135471/
 	
 	=============================================================================
 	
+
+{% endraw %}

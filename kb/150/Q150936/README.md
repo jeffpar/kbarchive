@@ -6,6 +6,8 @@ permalink: /kb/150/Q150936/
 
 ## Q150936: FIX: VC4 Debugger Fails to Stop on Breakpoints w/ Long Names
 
+{% raw %}
+
 	Article: Q150936
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS NT:4.0,4.1;
@@ -77,3 +79,5 @@ permalink: /kb/150/Q150936/
 	
 	=============================================================================
 	
+
+{% endraw %}

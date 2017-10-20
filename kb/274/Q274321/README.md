@@ -6,6 +6,8 @@ permalink: /kb/274/Q274321/
 
 ## Q274321: XADM: Key Management Server Does Not Start with Event ID 5389
 
+{% raw %}
+
 	Article: Q274321
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -106,3 +108,5 @@ permalink: /kb/274/Q274321/
 	
 	=============================================================================
 	
+
+{% endraw %}

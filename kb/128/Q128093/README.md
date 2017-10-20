@@ -6,6 +6,8 @@ permalink: /kb/128/Q128093/
 
 ## Q128093: SMS Client Setup Does Not Install Windows 95 Apps at Start Up
 
+{% raw %}
+
 	Article: Q128093
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -42,3 +44,5 @@ permalink: /kb/128/Q128093/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/036/Q36902/
 
 ## Q36902: LOCATE Draws Cursor Differently on Monochrome Versus Color
 
+{% raw %}
+
 	Article: Q36902
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -40,3 +42,5 @@ permalink: /kb/036/Q36902/
 	PRINT "Bottom line cursor including ps/2 model 25 or 30"
 	LOCATE 10, 15, 1, b, b
 	WHILE INKEY$ = "" :WEND
+
+{% endraw %}

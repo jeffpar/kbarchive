@@ -6,6 +6,8 @@ permalink: /kb/196/Q196017/
 
 ## Q196017: XWEB: Opening Attachments with Media Player Gives Error
 
+{% raw %}
+
 	Article: Q196017
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.02,4.0,4.01,4.01 Service Pack 1,5.5
@@ -71,3 +73,5 @@ permalink: /kb/196/Q196017/
 	
 	=============================================================================
 	
+
+{% endraw %}

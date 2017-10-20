@@ -6,6 +6,8 @@ permalink: /kb/169/Q169109/
 
 ## Q169109: PRB: Parse Maps Do Not Handle Multi-select List Boxes
 
+{% raw %}
+
 	Article: Q169109
 	Product(s): Microsoft C Compiler
 	Version(s): 4.1,4.2,5.0
@@ -266,3 +268,5 @@ permalink: /kb/169/Q169109/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242132/
 
 ## Q242132: How to: Implement system policies on Windows 95 Clients.
 
+{% raw %}
+
 	Article: Q242132
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0; :95
@@ -85,3 +87,5 @@ permalink: /kb/242/Q242132/
 	
 	=============================================================================
 	
+
+{% endraw %}

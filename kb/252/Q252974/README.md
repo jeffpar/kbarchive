@@ -6,6 +6,8 @@ permalink: /kb/252/Q252974/
 
 ## Q252974: Error Message: System Process - Lost Delayed-Write Data
 
+{% raw %}
+
 	Article: Q252974
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,4.0
@@ -115,3 +117,5 @@ permalink: /kb/252/Q252974/
 	
 	=============================================================================
 	
+
+{% endraw %}

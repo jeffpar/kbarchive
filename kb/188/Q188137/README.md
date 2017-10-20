@@ -6,6 +6,8 @@ permalink: /kb/188/Q188137/
 
 ## Q188137: Tutor: Computer Hangs When Playing Game in Preschool Workshop
 
+{% raw %}
+
 	Article: Q188137
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -72,3 +74,5 @@ permalink: /kb/188/Q188137/
 	
 	=============================================================================
 	
+
+{% endraw %}

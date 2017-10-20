@@ -6,6 +6,8 @@ permalink: /kb/305/Q305247/
 
 ## Q305247: FIX: Error Setting Property Named &quot;Value&quot; to Null in Class
 
+{% raw %}
+
 	Article: Q305247
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -67,3 +69,5 @@ permalink: /kb/305/Q305247/
 	
 	=============================================================================
 	
+
+{% endraw %}

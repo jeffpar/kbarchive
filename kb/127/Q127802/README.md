@@ -6,6 +6,8 @@ permalink: /kb/127/Q127802/
 
 ## Q127802: PRB: Debugger Loses Source/Disassembly File Mapping
 
+{% raw %}
+
 	Article: Q127802
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,5.0
@@ -84,3 +86,5 @@ permalink: /kb/127/Q127802/
 	
 	=============================================================================
 	
+
+{% endraw %}

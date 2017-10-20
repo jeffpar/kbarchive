@@ -6,6 +6,8 @@ permalink: /kb/075/Q75959/
 
 ## Q75959: Mac Hyp: Updating from 2.0 to 3.0
 
+{% raw %}
+
 	Article: Q75959
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,2.0a,2.0b,3.0,3.0a
@@ -60,3 +62,5 @@ permalink: /kb/075/Q75959/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164901/
 
 ## Q164901: SMS: Inventory DLL Fails to Update After Upgrade from SMS 1.1
 
+{% raw %}
+
 	Article: Q164901
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -55,3 +57,5 @@ permalink: /kb/164/Q164901/
 	
 	=============================================================================
 	
+
+{% endraw %}

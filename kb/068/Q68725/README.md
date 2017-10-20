@@ -6,6 +6,8 @@ permalink: /kb/068/Q68725/
 
 ## Q68725: Hard Drives That Require VirtualHDIrq=off Switch in SYSTEM.INI
 
+{% raw %}
+
 	Article: Q68725
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -71,3 +73,5 @@ permalink: /kb/068/Q68725/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180762/
 
 ## Q180762: BUG: SetFocus Changes CommandButton Value to True
 
+{% raw %}
+
 	Article: Q180762
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -88,3 +90,5 @@ permalink: /kb/180/Q180762/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/287/Q287148/
 
 ## Q287148: Age of Empires: Scenario Editor Only Places Default Units on Map
 
+{% raw %}
+
 	Article: Q287148
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -54,3 +56,5 @@ permalink: /kb/287/Q287148/
 	
 	=============================================================================
 	
+
+{% endraw %}

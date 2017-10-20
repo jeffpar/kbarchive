@@ -6,6 +6,8 @@ permalink: /kb/258/Q258705/
 
 ## Q258705: XADM: Site Addressing Generates Wrong SMTP Addr. for &quot;%g.%s.%m&quot;
 
+{% raw %}
+
 	Article: Q258705
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -65,3 +67,5 @@ permalink: /kb/258/Q258705/
 	
 	=============================================================================
 	
+
+{% endraw %}

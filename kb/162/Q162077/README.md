@@ -6,6 +6,8 @@ permalink: /kb/162/Q162077/
 
 ## Q162077: Stop: 0x0000000A when Selecting NDS Map Objects
 
+{% raw %}
+
 	Article: Q162077
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/162/Q162077/
 	
 	=============================================================================
 	
+
+{% endraw %}

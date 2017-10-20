@@ -6,6 +6,8 @@ permalink: /kb/134/Q134569/
 
 ## Q134569: Orchid Vidiola Premium Card Detected as Vidiola Standard
 
+{% raw %}
+
 	Article: Q134569
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -69,3 +71,5 @@ permalink: /kb/134/Q134569/
 	
 	=============================================================================
 	
+
+{% endraw %}

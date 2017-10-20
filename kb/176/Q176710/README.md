@@ -6,6 +6,8 @@ permalink: /kb/176/Q176710/
 
 ## Q176710: XFOR: Japanese Characters in Subject Line Are Corrupted
 
+{% raw %}
+
 	Article: Q176710
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -59,3 +61,5 @@ permalink: /kb/176/Q176710/
 	
 	=============================================================================
 	
+
+{% endraw %}

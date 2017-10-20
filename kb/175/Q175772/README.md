@@ -6,6 +6,8 @@ permalink: /kb/175/Q175772/
 
 ## Q175772: XCLN: Exchange Client Unable to Start After Uninstalling Outlook
 
+{% raw %}
+
 	Article: Q175772
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0; :8.01,8.02,8.03
@@ -63,3 +65,5 @@ permalink: /kb/175/Q175772/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171837/
 
 ## Q171837: FIX: Run-time Error 6 &quot;Overflow When Compiled to Native Code&quot;
 
+{% raw %}
+
 	Article: Q171837
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -112,3 +114,5 @@ permalink: /kb/171/Q171837/
 	
 	=============================================================================
 	
+
+{% endraw %}

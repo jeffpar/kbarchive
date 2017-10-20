@@ -6,6 +6,8 @@ permalink: /kb/238/Q238667/
 
 ## Q238667: Long Computer Names Truncated in Server Manager
 
+{% raw %}
+
 	Article: Q238667
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/238/Q238667/
 	
 	=============================================================================
 	
+
+{% endraw %}

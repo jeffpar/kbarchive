@@ -6,6 +6,8 @@ permalink: /kb/064/Q64334/
 
 ## Q64334: Flight Simulator: Gates Learjet Documentation Error
 
+{% raw %}
+
 	Article: Q64334
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/064/Q64334/
 	
 	=============================================================================
 	
+
+{% endraw %}

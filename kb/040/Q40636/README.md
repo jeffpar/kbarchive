@@ -6,6 +6,8 @@ permalink: /kb/040/Q40636/
 
 ## Q40636: Why QuickBASIC Might Hang; Hardware or Software Conflicts
 
+{% raw %}
+
 	Article: Q40636
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -91,3 +93,5 @@ permalink: /kb/040/Q40636/
 	   /h (high-resolution) option. For more information, query on the
 	   words "compatibilities and QuickBASIC" in the Microsoft Knowledge
 	   Base.
+
+{% endraw %}

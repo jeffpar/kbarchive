@@ -6,6 +6,8 @@ permalink: /kb/245/Q245072/
 
 ## Q245072: Err Msg: The Referenced Account Is Locked Out and May Not Be...
 
+{% raw %}
+
 	Article: Q245072
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/245/Q245072/
 	
 	=============================================================================
 	
+
+{% endraw %}

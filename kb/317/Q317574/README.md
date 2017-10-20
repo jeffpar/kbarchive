@@ -6,6 +6,8 @@ permalink: /kb/317/Q317574/
 
 ## Q317574: PRB: &quot;Unspecified Error&quot; After Renaming a .NET Subproject in VSS
 
+{% raw %}
+
 	Article: Q317574
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -145,3 +147,5 @@ permalink: /kb/317/Q317574/
 	
 	=============================================================================
 	
+
+{% endraw %}

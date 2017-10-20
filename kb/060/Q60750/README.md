@@ -6,6 +6,8 @@ permalink: /kb/060/Q60750/
 
 ## Q60750: C Compiler and Linker Send Errors to Stdout Not Stderr
 
+{% raw %}
+
 	Article: Q60750
 	Product(s): See article
 	Version(s): 5.10
@@ -37,3 +39,5 @@ permalink: /kb/060/Q60750/
 	Note: The ERROUT utility is designed for use only with executable
 	programs and batch files. Attempting to use it on DOS commands, such
 	as DIR, usually only results in the failure of the command.
+
+{% endraw %}

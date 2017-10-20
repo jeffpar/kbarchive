@@ -6,6 +6,8 @@ permalink: /kb/115/Q115484/
 
 ## Q115484: Share-level Security Connection Behavior in Windows NT 3.5
 
+{% raw %}
+
 	Article: Q115484
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -84,3 +86,5 @@ permalink: /kb/115/Q115484/
 	
 	=============================================================================
 	
+
+{% endraw %}

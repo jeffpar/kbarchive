@@ -6,6 +6,8 @@ permalink: /kb/157/Q157086/
 
 ## Q157086: WD97: Limitations of Converting from Word Format to HTML
 
+{% raw %}
+
 	Article: Q157086
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -211,3 +213,5 @@ permalink: /kb/157/Q157086/
 	
 	=============================================================================
 	
+
+{% endraw %}

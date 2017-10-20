@@ -6,6 +6,8 @@ permalink: /kb/045/Q45055/
 
 ## Q45055: Bad Random GET Record Order with TYPE's Element as Next Record
 
+{% raw %}
+
 	Article: Q45055
 	Product(s): See article
 	Version(s): 4.00 4.00B 4.50
@@ -67,3 +69,5 @@ permalink: /kb/045/Q45055/
 	   DIM ARec as atype
 	   temp%=ARec.NextRec
 	   GET #1, temp%, ARec
+
+{% endraw %}

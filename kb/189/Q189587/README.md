@@ -6,6 +6,8 @@ permalink: /kb/189/Q189587/
 
 ## Q189587: XFOR: How the Internet Mail Service Handles Low Disk Space
 
+{% raw %}
+
 	Article: Q189587
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -113,3 +115,5 @@ permalink: /kb/189/Q189587/
 	
 	=============================================================================
 	
+
+{% endraw %}

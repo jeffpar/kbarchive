@@ -6,6 +6,8 @@ permalink: /kb/262/Q262374/
 
 ## Q262374: XADM: 2140 and 1002 with Error -1811 Error Starting Exchange
 
+{% raw %}
+
 	Article: Q262374
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -87,3 +89,5 @@ permalink: /kb/262/Q262374/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274051/
 
 ## Q274051: INFO: Anti-Virus Software May Impact VSS Performance
 
+{% raw %}
+
 	Article: Q274051
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,4.0a,5.0,6.0
@@ -58,3 +60,5 @@ permalink: /kb/274/Q274051/
 	
 	=============================================================================
 	
+
+{% endraw %}

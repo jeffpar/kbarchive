@@ -6,6 +6,8 @@ permalink: /kb/179/Q179690/
 
 ## Q179690: FIX: Launching COM Server with Long File Name Returns 0x80080005
 
+{% raw %}
+
 	Article: Q179690
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.1; winnt:4.0
@@ -293,3 +295,5 @@ permalink: /kb/179/Q179690/
 	
 	=============================================================================
 	
+
+{% endraw %}

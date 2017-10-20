@@ -6,6 +6,8 @@ permalink: /kb/164/Q164060/
 
 ## Q164060: XFOR: Internet Mail Service Does Not Advertise ESMTP on Connect
 
+{% raw %}
+
 	Article: Q164060
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -63,3 +65,5 @@ permalink: /kb/164/Q164060/
 	
 	=============================================================================
 	
+
+{% endraw %}

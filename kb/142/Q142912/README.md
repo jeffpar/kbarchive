@@ -6,6 +6,8 @@ permalink: /kb/142/Q142912/
 
 ## Q142912: IBM Token Ring 16/4 Network Adapter II Switch Settings
 
+{% raw %}
+
 	Article: Q142912
 	Product(s): Microsoft Windows NT
 	Version(s): kb3rdparty kbhw
@@ -105,3 +107,5 @@ permalink: /kb/142/Q142912/
 	
 	=============================================================================
 	
+
+{% endraw %}

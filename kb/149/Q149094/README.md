@@ -6,6 +6,8 @@ permalink: /kb/149/Q149094/
 
 ## Q149094: HOWTO: Determine the Contents of a Cell in a DBGrid Control
 
+{% raw %}
+
 	Article: Q149094
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/149/Q149094/
 	
 	=============================================================================
 	
+
+{% endraw %}

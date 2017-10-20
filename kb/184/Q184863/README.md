@@ -6,6 +6,8 @@ permalink: /kb/184/Q184863/
 
 ## Q184863: FP: Text in FrontPage Editor Looks Different in Browser
 
+{% raw %}
+
 	Article: Q184863
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:97
@@ -117,3 +119,5 @@ permalink: /kb/184/Q184863/
 	
 	=============================================================================
 	
+
+{% endraw %}

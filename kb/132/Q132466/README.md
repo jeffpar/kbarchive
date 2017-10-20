@@ -6,6 +6,8 @@ permalink: /kb/132/Q132466/
 
 ## Q132466: Problems Printing From DCA IRMA Workstation for NT 1.1
 
+{% raw %}
+
 	Article: Q132466
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/132/Q132466/
 	
 	=============================================================================
 	
+
+{% endraw %}

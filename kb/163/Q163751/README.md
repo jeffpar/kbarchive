@@ -6,6 +6,8 @@ permalink: /kb/163/Q163751/
 
 ## Q163751: XCLN: &quot;Don't Know&quot; Send Option Uses Exchange Server Default
 
+{% raw %}
+
 	Article: Q163751
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/163/Q163751/
 	
 	=============================================================================
 	
+
+{% endraw %}

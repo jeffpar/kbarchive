@@ -6,6 +6,8 @@ permalink: /kb/128/Q128718/
 
 ## Q128718: PRB: Invalid Path or File Name Error on Novell Netware
 
+{% raw %}
+
 	Article: Q128718
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/128/Q128718/
 	
 	=============================================================================
 	
+
+{% endraw %}

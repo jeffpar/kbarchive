@@ -6,6 +6,8 @@ permalink: /kb/095/Q95417/
 
 ## Q95417: VidCap: Preview Is Black and White with Video Blaster
 
+{% raw %}
+
 	Article: Q95417
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/095/Q95417/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158270/
 
 ## Q158270: SNA 2.11 SP1 Win 3.x Client Logon Fails if NT Password Expired
 
+{% raw %}
+
 	Article: Q158270
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -82,3 +84,5 @@ permalink: /kb/158/Q158270/
 	
 	=============================================================================
 	
+
+{% endraw %}

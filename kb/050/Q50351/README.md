@@ -6,6 +6,8 @@ permalink: /kb/050/Q50351/
 
 ## Q50351: DOC: mktemp() Creates a Maximum of 27 Unique Filenames
 
+{% raw %}
+
 	Article: Q50351
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -51,3 +53,5 @@ permalink: /kb/050/Q50351/
 	
 	=============================================================================
 	
+
+{% endraw %}

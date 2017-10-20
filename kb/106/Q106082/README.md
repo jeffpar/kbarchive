@@ -6,6 +6,8 @@ permalink: /kb/106/Q106082/
 
 ## Q106082: WFWG Setup May Not Detect Existing 32-Bit Disk Access Drivers
 
+{% raw %}
+
 	Article: Q106082
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -61,3 +63,5 @@ permalink: /kb/106/Q106082/
 	
 	=============================================================================
 	
+
+{% endraw %}

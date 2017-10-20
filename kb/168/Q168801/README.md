@@ -6,6 +6,8 @@ permalink: /kb/168/Q168801/
 
 ## Q168801: How to Enable Cluster Logging in Microsoft Cluster Server
 
+{% raw %}
+
 	Article: Q168801
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -107,3 +109,5 @@ permalink: /kb/168/Q168801/
 	
 	=============================================================================
 	
+
+{% endraw %}

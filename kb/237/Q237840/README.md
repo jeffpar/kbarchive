@@ -6,6 +6,8 @@ permalink: /kb/237/Q237840/
 
 ## Q237840: Soon.exe Schedules Tasks for Next Day Instead of Current Day
 
+{% raw %}
+
 	Article: Q237840
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:5; winnt:4.0 SP4,4.0 SP5
@@ -84,3 +86,5 @@ permalink: /kb/237/Q237840/
 	
 	=============================================================================
 	
+
+{% endraw %}

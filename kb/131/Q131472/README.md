@@ -6,6 +6,8 @@ permalink: /kb/131/Q131472/
 
 ## Q131472: Mac PC Mail Client Err Msg: &quot;Unable to send mail to...&quot;
 
+{% raw %}
+
 	Article: Q131472
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0,3.5,3.51
@@ -67,3 +69,5 @@ permalink: /kb/131/Q131472/
 	
 	=============================================================================
 	
+
+{% endraw %}

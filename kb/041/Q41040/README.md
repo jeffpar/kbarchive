@@ -6,6 +6,8 @@ permalink: /kb/041/Q41040/
 
 ## Q41040: QuickBASIC WIDTH Command Resets Default Values for PALETTE
 
+{% raw %}
+
 	Article: Q41040
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -37,3 +39,5 @@ permalink: /kb/041/Q41040/
 	   PAINT (100, 100), k, 5
 	   LOCATE 20, 1: PRINT i, k; : INPUT a$
 	NEXT
+
+{% endraw %}

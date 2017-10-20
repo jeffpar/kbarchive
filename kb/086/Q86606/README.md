@@ -6,6 +6,8 @@ permalink: /kb/086/Q86606/
 
 ## Q86606: PC WSPlus: Projects Sorted Alphabetically Only
 
+{% raw %}
+
 	Article: Q86606
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -41,3 +43,5 @@ permalink: /kb/086/Q86606/
 	
 	=============================================================================
 	
+
+{% endraw %}

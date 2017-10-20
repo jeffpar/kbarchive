@@ -6,6 +6,8 @@ permalink: /kb/230/Q230910/
 
 ## Q230910: Choosing Backup Help Topic Displays Untitled Options
 
+{% raw %}
+
 	Article: Q230910
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5
@@ -47,3 +49,5 @@ permalink: /kb/230/Q230910/
 	
 	=============================================================================
 	
+
+{% endraw %}

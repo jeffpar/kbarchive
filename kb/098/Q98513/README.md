@@ -6,6 +6,8 @@ permalink: /kb/098/Q98513/
 
 ## Q98513: EMM386 Err Msg: Insufficient Memory for UMBs or Virtual HMA
 
+{% raw %}
+
 	Article: Q98513
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -47,3 +49,5 @@ permalink: /kb/098/Q98513/
 	
 	=============================================================================
 	
+
+{% endraw %}

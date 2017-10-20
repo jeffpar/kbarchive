@@ -6,6 +6,8 @@ permalink: /kb/132/Q132176/
 
 ## Q132176: PRB: Problems Printing with Samsung 2412 Printer
 
+{% raw %}
+
 	Article: Q132176
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/132/Q132176/
 	
 	=============================================================================
 	
+
+{% endraw %}

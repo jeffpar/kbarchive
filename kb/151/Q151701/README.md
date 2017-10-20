@@ -6,6 +6,8 @@ permalink: /kb/151/Q151701/
 
 ## Q151701: XADM: How to Manually Add Code Pages for Mixed Languages
 
+{% raw %}
+
 	Article: Q151701
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -172,3 +174,5 @@ permalink: /kb/151/Q151701/
 	
 	=============================================================================
 	
+
+{% endraw %}

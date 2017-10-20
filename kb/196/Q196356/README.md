@@ -6,6 +6,8 @@ permalink: /kb/196/Q196356/
 
 ## Q196356: Visual J++ Deluxe Learning Edition Comments and Corrections
 
+{% raw %}
+
 	Article: Q196356
 	Product(s): Microsoft Press
 	Version(s): 
@@ -144,3 +146,5 @@ permalink: /kb/196/Q196356/
 	
 	=============================================================================
 	
+
+{% endraw %}

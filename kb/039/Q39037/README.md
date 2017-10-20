@@ -6,6 +6,8 @@ permalink: /kb/039/Q39037/
 
 ## Q39037: Error U1005 Syntax Error: Colon Missing
 
+{% raw %}
+
 	Article: Q39037
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -40,3 +42,5 @@ permalink: /kb/039/Q39037/
 	
 	This problem can also be caused by using a NMAKE compatible make file
 	with MAKE.
+
+{% endraw %}

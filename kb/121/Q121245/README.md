@@ -6,6 +6,8 @@ permalink: /kb/121/Q121245/
 
 ## Q121245: Adobe Type Manager Type 1 Fonts Not Displayed in Font Manager
 
+{% raw %}
+
 	Article: Q121245
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -55,3 +57,5 @@ permalink: /kb/121/Q121245/
 	
 	=============================================================================
 	
+
+{% endraw %}

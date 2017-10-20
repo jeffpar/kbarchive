@@ -6,6 +6,8 @@ permalink: /kb/085/Q85425/
 
 ## Q85425: SETUP.TXT: Microsoft Windows &amp; MS-DOS 5 for IBM PS/2
 
+{% raw %}
+
 	Article: Q85425
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -1138,3 +1140,5 @@ permalink: /kb/085/Q85425/
 	
 	=============================================================================
 	
+
+{% endraw %}

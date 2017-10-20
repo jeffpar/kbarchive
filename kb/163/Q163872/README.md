@@ -6,6 +6,8 @@ permalink: /kb/163/Q163872/
 
 ## Q163872: PRB: Sysdiff Cannot Delete Files
 
+{% raw %}
+
 	Article: Q163872
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/163/Q163872/
 	
 	=============================================================================
 	
+
+{% endraw %}

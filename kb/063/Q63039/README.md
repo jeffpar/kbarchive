@@ -6,6 +6,8 @@ permalink: /kb/063/Q63039/
 
 ## Q63039: Passing a Constant from C to Assembly with a Header File
 
+{% raw %}
+
 	Article: Q63039
 	Product(s): See article
 	Version(s): 5.10 5.10a
@@ -104,3 +106,5 @@ permalink: /kb/063/Q63039/
 	
 	update: $(all)
 	    link /co /M  $(all),,1,/nod llibcer;
+
+{% endraw %}

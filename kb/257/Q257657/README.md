@@ -6,6 +6,8 @@ permalink: /kb/257/Q257657/
 
 ## Q257657: FIX: Update Fails for Text Column w/CursorDriver at rdUseODBC
 
+{% raw %}
+
 	Article: Q257657
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0; winnt:7.0
@@ -117,3 +119,5 @@ permalink: /kb/257/Q257657/
 	
 	=============================================================================
 	
+
+{% endraw %}

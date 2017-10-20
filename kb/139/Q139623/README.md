@@ -6,6 +6,8 @@ permalink: /kb/139/Q139623/
 
 ## Q139623: System Hangs When You Quit Windows with Heavy Network Traffic
 
+{% raw %}
+
 	Article: Q139623
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/139/Q139623/
 	
 	=============================================================================
 	
+
+{% endraw %}

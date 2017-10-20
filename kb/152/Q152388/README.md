@@ -6,6 +6,8 @@ permalink: /kb/152/Q152388/
 
 ## Q152388: FP: Task Added in To Do List Dialog Box Not Linked to Page
 
+{% raw %}
+
 	Article: Q152388
 	Product(s): Word Front Page
 	Version(s): WINDOWS:1.1
@@ -57,3 +59,5 @@ permalink: /kb/152/Q152388/
 	
 	=============================================================================
 	
+
+{% endraw %}

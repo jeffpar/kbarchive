@@ -6,6 +6,8 @@ permalink: /kb/221/Q221692/
 
 ## Q221692: FIX:Project Object Modify Method Fails if Path Contains Spaces
 
+{% raw %}
+
 	Article: Q221692
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -73,3 +75,5 @@ permalink: /kb/221/Q221692/
 	
 	=============================================================================
 	
+
+{% endraw %}

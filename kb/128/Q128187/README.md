@@ -6,6 +6,8 @@ permalink: /kb/128/Q128187/
 
 ## Q128187: Err Msg: Error 171 Could Not Access Schedule Information
 
+{% raw %}
+
 	Article: Q128187
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -50,3 +52,5 @@ permalink: /kb/128/Q128187/
 	
 	=============================================================================
 	
+
+{% endraw %}

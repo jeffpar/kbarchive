@@ -6,6 +6,8 @@ permalink: /kb/200/Q200713/
 
 ## Q200713: SMS: Smsiddup.exe Fails with Case-Sensitive SQL Server Code Page
 
+{% raw %}
+
 	Article: Q200713
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -104,3 +106,5 @@ permalink: /kb/200/Q200713/
 	
 	=============================================================================
 	
+
+{% endraw %}

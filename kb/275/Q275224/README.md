@@ -6,6 +6,8 @@ permalink: /kb/275/Q275224/
 
 ## Q275224: Encarta Language Learning Online: Binary Text File Is Displayed
 
+{% raw %}
+
 	Article: Q275224
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/275/Q275224/
 	
 	=============================================================================
 	
+
+{% endraw %}

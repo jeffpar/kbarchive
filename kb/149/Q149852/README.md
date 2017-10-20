@@ -6,6 +6,8 @@ permalink: /kb/149/Q149852/
 
 ## Q149852: XCLN: Newprof Can Tell New Profiles to Deliver Mail to PST
 
+{% raw %}
+
 	Article: Q149852
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -132,3 +134,5 @@ permalink: /kb/149/Q149852/
 	
 	=============================================================================
 	
+
+{% endraw %}

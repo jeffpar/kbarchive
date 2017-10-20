@@ -6,6 +6,8 @@ permalink: /kb/082/Q82850/
 
 ## Q82850: ToolBook Version 1.5 May Cause a GP Fault Under Windows 3.1
 
+{% raw %}
+
 	Article: Q82850
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -41,3 +43,5 @@ permalink: /kb/082/Q82850/
 	
 	=============================================================================
 	
+
+{% endraw %}

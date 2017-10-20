@@ -6,6 +6,8 @@ permalink: /kb/159/Q159719/
 
 ## Q159719: WD97: Error Merging with Outlook CSV, TSV File
 
+{% raw %}
+
 	Article: Q159719
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -109,3 +111,5 @@ permalink: /kb/159/Q159719/
 	
 	=============================================================================
 	
+
+{% endraw %}

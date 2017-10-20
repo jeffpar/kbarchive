@@ -6,6 +6,8 @@ permalink: /kb/153/Q153641/
 
 ## Q153641: Program Group Control (PGC) Randomly Chooses a Logon Server
 
+{% raw %}
+
 	Article: Q153641
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -43,3 +45,5 @@ permalink: /kb/153/Q153641/
 	
 	=============================================================================
 	
+
+{% endraw %}

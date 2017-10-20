@@ -6,6 +6,8 @@ permalink: /kb/127/Q127947/
 
 ## Q127947: Application Error with Logging Enabled in FTP Server Service
 
+{% raw %}
+
 	Article: Q127947
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -100,3 +102,5 @@ permalink: /kb/127/Q127947/
 	
 	=============================================================================
 	
+
+{% endraw %}

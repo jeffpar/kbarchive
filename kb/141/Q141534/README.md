@@ -6,6 +6,8 @@ permalink: /kb/141/Q141534/
 
 ## Q141534: Unconf.:Haunted :Call to Undefined Dynalink/QuickTime
 
+{% raw %}
+
 	Article: Q141534
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -168,3 +170,5 @@ permalink: /kb/141/Q141534/
 	
 	=============================================================================
 	
+
+{% endraw %}

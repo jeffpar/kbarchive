@@ -6,6 +6,8 @@ permalink: /kb/139/Q139948/
 
 ## Q139948: DNS Settings in Dial-Up Networking Connectoid Are Not Used
 
+{% raw %}
+
 	Article: Q139948
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/139/Q139948/
 	
 	=============================================================================
 	
+
+{% endraw %}

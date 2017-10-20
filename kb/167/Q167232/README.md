@@ -6,6 +6,8 @@ permalink: /kb/167/Q167232/
 
 ## Q167232: STOP:0x0000000A While Using HP NetServer Assistant 2.5
 
+{% raw %}
+
 	Article: Q167232
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/167/Q167232/
 	
 	=============================================================================
 	
+
+{% endraw %}

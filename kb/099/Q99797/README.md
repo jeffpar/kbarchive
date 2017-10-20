@@ -6,6 +6,8 @@ permalink: /kb/099/Q99797/
 
 ## Q99797: Simple Training Techniques for a Recognizer
 
+{% raw %}
+
 	Article: Q99797
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -104,3 +106,5 @@ permalink: /kb/099/Q99797/
 	
 	=============================================================================
 	
+
+{% endraw %}

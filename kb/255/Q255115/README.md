@@ -6,6 +6,8 @@ permalink: /kb/255/Q255115/
 
 ## Q255115: BUG: Printer.ForeColor Property Does Not Work Correctly
 
+{% raw %}
+
 	Article: Q255115
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -137,3 +139,5 @@ permalink: /kb/255/Q255115/
 	
 	=============================================================================
 	
+
+{% endraw %}

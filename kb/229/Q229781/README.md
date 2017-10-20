@@ -6,6 +6,8 @@ permalink: /kb/229/Q229781/
 
 ## Q229781: Prompted for Authentication When No NTFS Restrictions Apply
 
+{% raw %}
+
 	Article: Q229781
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,4.0
@@ -58,3 +60,5 @@ permalink: /kb/229/Q229781/
 	
 	=============================================================================
 	
+
+{% endraw %}

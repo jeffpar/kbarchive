@@ -6,6 +6,8 @@ permalink: /kb/171/Q171413/
 
 ## Q171413: Changing and Saving Config File Results in Memory Leak
 
+{% raw %}
+
 	Article: Q171413
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -54,3 +56,5 @@ permalink: /kb/171/Q171413/
 	
 	=============================================================================
 	
+
+{% endraw %}

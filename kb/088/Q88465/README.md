@@ -6,6 +6,8 @@ permalink: /kb/088/Q88465/
 
 ## Q88465: Golf: Rattle Sound Not Heard When Ball Enters Hole
 
+{% raw %}
+
 	Article: Q88465
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -35,3 +37,5 @@ permalink: /kb/088/Q88465/
 	
 	=============================================================================
 	
+
+{% endraw %}

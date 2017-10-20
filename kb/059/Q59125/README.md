@@ -6,6 +6,8 @@ permalink: /kb/059/Q59125/
 
 ## Q59125: Mac GW: AppleLink Comm Will Not Start Up, Missing &quot;MS Mail GW&quot;
 
+{% raw %}
+
 	Article: Q59125
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -68,3 +70,5 @@ permalink: /kb/059/Q59125/
 	
 	=============================================================================
 	
+
+{% endraw %}

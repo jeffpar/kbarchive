@@ -6,6 +6,8 @@ permalink: /kb/100/Q100498/
 
 ## Q100498: PC Win: Duplicate PAB Entries--Part 2
 
+{% raw %}
+
 	Article: Q100498
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -89,3 +91,5 @@ permalink: /kb/100/Q100498/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244584/
 
 ## Q244584: HOWTO: Enumerate Cluster Resources by Resource Type in Visual C+
 
+{% raw %}
+
 	Article: Q244584
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -179,3 +181,5 @@ permalink: /kb/244/Q244584/
 	
 	=============================================================================
 	
+
+{% endraw %}

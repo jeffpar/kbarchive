@@ -6,6 +6,8 @@ permalink: /kb/150/Q150432/
 
 ## Q150432: How an MFC Application Can Use the Visual FoxPro ODBC Driver
 
+{% raw %}
+
 	Article: Q150432
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:1.0
@@ -107,3 +109,5 @@ permalink: /kb/150/Q150432/
 	
 	=============================================================================
 	
+
+{% endraw %}

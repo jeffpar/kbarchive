@@ -6,6 +6,8 @@ permalink: /kb/147/Q147443/
 
 ## Q147443: FP: Errors w/ Ismaps, Searches After Moving Content to Server
 
+{% raw %}
+
 	Article: Q147443
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97
@@ -59,3 +61,5 @@ permalink: /kb/147/Q147443/
 	
 	=============================================================================
 	
+
+{% endraw %}

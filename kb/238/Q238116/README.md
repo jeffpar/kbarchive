@@ -6,6 +6,8 @@ permalink: /kb/238/Q238116/
 
 ## Q238116: PRB: Accessing Temporary SQL Server Table Result: DB_E_NOTABLE
 
+{% raw %}
+
 	Article: Q238116
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.5,2.0,2.1,2.5,2.6,3.0,3.5,3.6,3.7
@@ -177,3 +179,5 @@ permalink: /kb/238/Q238116/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168795/
 
 ## Q168795: HOWTO: Hook Into a Window's Messages Using AddressOf
 
+{% raw %}
+
 	Article: Q168795
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -201,3 +203,5 @@ permalink: /kb/168/Q168795/
 	
 	=============================================================================
 	
+
+{% endraw %}

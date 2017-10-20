@@ -6,6 +6,8 @@ permalink: /kb/132/Q132705/
 
 ## Q132705: PRB: Errors When You Edit Bitmaps with More Than 16 or 256 Color
 
+{% raw %}
+
 	Article: Q132705
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
@@ -138,3 +140,5 @@ permalink: /kb/132/Q132705/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172997/
 
 ## Q172997: Error Message: Could Not Connect to the Proxy Server
 
+{% raw %}
+
 	Article: Q172997
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -64,3 +66,5 @@ permalink: /kb/172/Q172997/
 	
 	=============================================================================
 	
+
+{% endraw %}

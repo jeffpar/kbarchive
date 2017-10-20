@@ -6,6 +6,8 @@ permalink: /kb/028/Q28493/
 
 ## Q28493: Restricted Mouse Cursor Movement in Pro Design II
 
+{% raw %}
+
 	Article: Q28493
 	Product(s): See article
 	Version(s): 1.0
@@ -24,3 +26,5 @@ permalink: /kb/028/Q28493/
 	Design II, at (918) 825-4844. An update may resolve the problem.
 	   Microsoft is researching this problem and will post new information
 	as it becomes available.
+
+{% endraw %}

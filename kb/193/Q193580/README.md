@@ -6,6 +6,8 @@ permalink: /kb/193/Q193580/
 
 ## Q193580: PRB: Checking Out Structure.cnf in VSS Causes FrontPage Error
 
+{% raw %}
+
 	Article: Q193580
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/193/Q193580/
 	
 	=============================================================================
 	
+
+{% endraw %}

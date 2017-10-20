@@ -6,6 +6,8 @@ permalink: /kb/168/Q168710/
 
 ## Q168710: XADM: How to Restore a 4.0 Information Store to a 5.0 Server
 
+{% raw %}
+
 	Article: Q168710
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/168/Q168710/
 	
 	=============================================================================
 	
+
+{% endraw %}

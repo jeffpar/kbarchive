@@ -6,6 +6,8 @@ permalink: /kb/181/Q181100/
 
 ## Q181100: Print Server Incorrectly Handles DBCS Codes in SCS Datastream
 
+{% raw %}
+
 	Article: Q181100
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -56,3 +58,5 @@ permalink: /kb/181/Q181100/
 	
 	=============================================================================
 	
+
+{% endraw %}

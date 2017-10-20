@@ -6,6 +6,8 @@ permalink: /kb/148/Q148493/
 
 ## Q148493: XCLN: How to Change Location of Offline Address Book Files
 
+{% raw %}
+
 	Article: Q148493
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -111,3 +113,5 @@ permalink: /kb/148/Q148493/
 	
 	=============================================================================
 	
+
+{% endraw %}

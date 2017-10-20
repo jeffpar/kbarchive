@@ -6,6 +6,8 @@ permalink: /kb/174/Q174689/
 
 ## Q174689: HOWTO: Set a Primary Key to Updateable in a View
 
+{% raw %}
+
 	Article: Q174689
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:2.5,5.0,5.0a,6.0
@@ -130,3 +132,5 @@ permalink: /kb/174/Q174689/
 	
 	=============================================================================
 	
+
+{% endraw %}

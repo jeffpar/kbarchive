@@ -6,6 +6,8 @@ permalink: /kb/164/Q164993/
 
 ## Q164993: WD97: IncludePicture Inserts Blank Placeholder
 
+{% raw %}
+
 	Article: Q164993
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/164/Q164993/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/030/Q30364/
 
 ## Q30364: _remappalette() Does Not Work on Hercules or Olivetti Cards
 
+{% raw %}
+
 	Article: Q30364
 	Product(s): See article
 	Version(s): 5.10 6.00 6.00a
@@ -29,3 +31,5 @@ permalink: /kb/030/Q30364/
 	a note explaining that either of these functions will generate an
 	error if they are called on a system with an Olivetti and Hercules
 	display adapter.
+
+{% endraw %}

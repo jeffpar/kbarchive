@@ -6,6 +6,8 @@ permalink: /kb/228/Q228527/
 
 ## Q228527: BBall 2000: Cannot Control Actions with Two-Button Game Device
 
+{% raw %}
+
 	Article: Q228527
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/228/Q228527/
 	
 	=============================================================================
 	
+
+{% endraw %}

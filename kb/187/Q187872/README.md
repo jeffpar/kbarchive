@@ -6,6 +6,8 @@ permalink: /kb/187/Q187872/
 
 ## Q187872: HOWTO: Determine Jet Memory Usage with DAO MaxBufferSize
 
+{% raw %}
+
 	Article: Q187872
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -123,3 +125,5 @@ permalink: /kb/187/Q187872/
 	
 	=============================================================================
 	
+
+{% endraw %}

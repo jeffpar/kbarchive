@@ -6,6 +6,8 @@ permalink: /kb/031/Q31000/
 
 ## Q31000: MASM 5.10 RUNME.EXE Does Not Set Up for a Two-Floppy System
 
+{% raw %}
+
 	Article: Q31000
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -19,3 +21,5 @@ permalink: /kb/031/Q31000/
 	   The programmer's guide, Page 9, describes a disk configuration that
 	is suggested for a two-floppy system. Copy the files by hand to
 	working disks.
+
+{% endraw %}

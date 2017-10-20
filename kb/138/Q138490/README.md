@@ -6,6 +6,8 @@ permalink: /kb/138/Q138490/
 
 ## Q138490: PPT7: Shadow Missing from Text Printed on Black and White Printe
 
+{% raw %}
+
 	Article: Q138490
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -67,3 +69,5 @@ permalink: /kb/138/Q138490/
 	
 	=============================================================================
 	
+
+{% endraw %}

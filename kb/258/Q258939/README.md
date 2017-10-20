@@ -6,6 +6,8 @@ permalink: /kb/258/Q258939/
 
 ## Q258939: Recommendations for Connecting to Databases Through IIS
 
+{% raw %}
+
 	Article: Q258939
 	Product(s): Internet Information Server
 	Version(s): 1.5,2.0,2.01,2.1,2.1 SP1,2.1 SP2,2.5,3.0,4.0,5.0
@@ -193,3 +195,5 @@ permalink: /kb/258/Q258939/
 	
 	=============================================================================
 	
+
+{% endraw %}

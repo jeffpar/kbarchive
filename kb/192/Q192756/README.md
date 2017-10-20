@@ -6,6 +6,8 @@ permalink: /kb/192/Q192756/
 
 ## Q192756: Modem Does Not Disconnect When Connection Is Inactive
 
+{% raw %}
+
 	Article: Q192756
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -107,3 +109,5 @@ permalink: /kb/192/Q192756/
 	
 	=============================================================================
 	
+
+{% endraw %}

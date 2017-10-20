@@ -6,6 +6,8 @@ permalink: /kb/164/Q164746/
 
 ## Q164746: SMC 9332 EtherPower 10/100 Driver Does Not Load
 
+{% raw %}
+
 	Article: Q164746
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/164/Q164746/
 	
 	=============================================================================
 	
+
+{% endraw %}

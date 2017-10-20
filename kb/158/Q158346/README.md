@@ -6,6 +6,8 @@ permalink: /kb/158/Q158346/
 
 ## Q158346: XCLN: Err Msg: The Spelling Operation Could not be Completed
 
+{% raw %}
+
 	Article: Q158346
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -104,3 +106,5 @@ permalink: /kb/158/Q158346/
 	
 	=============================================================================
 	
+
+{% endraw %}

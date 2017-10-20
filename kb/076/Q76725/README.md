@@ -6,6 +6,8 @@ permalink: /kb/076/Q76725/
 
 ## Q76725: FIX: INVOKE May Cause Incorrect Line Information
 
+{% raw %}
+
 	Article: Q76725
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -94,3 +96,5 @@ permalink: /kb/076/Q76725/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174777/
 
 ## Q174777: Searching for One Character Words in Index Server
 
+{% raw %}
+
 	Article: Q174777
 	Product(s): Internet Information Server
 	Version(s): 1.1
@@ -70,3 +72,5 @@ permalink: /kb/174/Q174777/
 	
 	=============================================================================
 	
+
+{% endraw %}

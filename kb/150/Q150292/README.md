@@ -6,6 +6,8 @@ permalink: /kb/150/Q150292/
 
 ## Q150292: FIX: Access Violation When Copying Src File Between Projects
 
+{% raw %}
+
 	Article: Q150292
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -59,3 +61,5 @@ permalink: /kb/150/Q150292/
 	
 	=============================================================================
 	
+
+{% endraw %}

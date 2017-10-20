@@ -6,6 +6,8 @@ permalink: /kb/186/Q186207/
 
 ## Q186207: Animation Played Inside MSN Sign-In Screen Is Cut Off
 
+{% raw %}
+
 	Article: Q186207
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.52
@@ -49,3 +51,5 @@ permalink: /kb/186/Q186207/
 	
 	=============================================================================
 	
+
+{% endraw %}

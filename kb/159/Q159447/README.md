@@ -6,6 +6,8 @@ permalink: /kb/159/Q159447/
 
 ## Q159447: Applications Testing for Directory Existence Fail
 
+{% raw %}
+
 	Article: Q159447
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/159/Q159447/
 	
 	=============================================================================
 	
+
+{% endraw %}

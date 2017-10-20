@@ -6,6 +6,8 @@ permalink: /kb/133/Q133745/
 
 ## Q133745: Automap Streets: How to Find Street Addresses
 
+{% raw %}
+
 	Article: Q133745
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:4.0
@@ -63,3 +65,5 @@ permalink: /kb/133/Q133745/
 	
 	=============================================================================
 	
+
+{% endraw %}

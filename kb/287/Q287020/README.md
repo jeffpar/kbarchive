@@ -6,6 +6,8 @@ permalink: /kb/287/Q287020/
 
 ## Q287020: Clear Screen Saver Does Not Work On Multi-Monitor Workstations
 
+{% raw %}
+
 	Article: Q287020
 	Product(s): Microsoft Press
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/287/Q287020/
 	
 	=============================================================================
 	
+
+{% endraw %}

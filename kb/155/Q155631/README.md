@@ -6,6 +6,8 @@ permalink: /kb/155/Q155631/
 
 ## Q155631: PRB: Message &quot;Error Writing to File&quot; When Checking In File
 
+{% raw %}
+
 	Article: Q155631
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/155/Q155631/
 	
 	=============================================================================
 	
+
+{% endraw %}

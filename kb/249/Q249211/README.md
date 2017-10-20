@@ -6,6 +6,8 @@ permalink: /kb/249/Q249211/
 
 ## Q249211: FS2000: Scenery Colors Distorted When Using an ATI Video Adapter
 
+{% raw %}
+
 	Article: Q249211
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -83,3 +85,5 @@ permalink: /kb/249/Q249211/
 	
 	=============================================================================
 	
+
+{% endraw %}

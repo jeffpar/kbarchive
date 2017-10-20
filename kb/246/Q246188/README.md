@@ -6,6 +6,8 @@ permalink: /kb/246/Q246188/
 
 ## Q246188: Err Msg: This Feature Is Not Available in This Version of...
 
+{% raw %}
+
 	Article: Q246188
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6
@@ -96,3 +98,5 @@ permalink: /kb/246/Q246188/
 	
 	=============================================================================
 	
+
+{% endraw %}

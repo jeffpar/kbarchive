@@ -6,6 +6,8 @@ permalink: /kb/140/Q140457/
 
 ## Q140457: Writer/Artist: How to Remove Users
 
+{% raw %}
+
 	Article: Q140457
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1; WINDOWS:1.0,1.1
@@ -83,3 +85,5 @@ permalink: /kb/140/Q140457/
 	
 	=============================================================================
 	
+
+{% endraw %}

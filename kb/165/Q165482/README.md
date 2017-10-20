@@ -6,6 +6,8 @@ permalink: /kb/165/Q165482/
 
 ## Q165482: XFOR: Connector for cc:Mail Fails With Some Non-US Time Zones
 
+{% raw %}
+
 	Article: Q165482
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/165/Q165482/
 	
 	=============================================================================
 	
+
+{% endraw %}

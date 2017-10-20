@@ -6,6 +6,8 @@ permalink: /kb/230/Q230369/
 
 ## Q230369: WD97: DocErr: Help Text About TOC Field &#92;p Switch Is Incorrect
 
+{% raw %}
+
 	Article: Q230369
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/230/Q230369/
 	
 	=============================================================================
 	
+
+{% endraw %}

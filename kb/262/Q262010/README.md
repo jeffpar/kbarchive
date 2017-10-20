@@ -6,6 +6,8 @@ permalink: /kb/262/Q262010/
 
 ## Q262010: Allegiance: Description of the Donation System
 
+{% raw %}
+
 	Article: Q262010
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -60,3 +62,5 @@ permalink: /kb/262/Q262010/
 	
 	=============================================================================
 	
+
+{% endraw %}

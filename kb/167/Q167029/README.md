@@ -6,6 +6,8 @@ permalink: /kb/167/Q167029/
 
 ## Q167029: Resource and Master Domain DCs Do Not Load-Balance Validation
 
+{% raw %}
+
 	Article: Q167029
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -134,3 +136,5 @@ permalink: /kb/167/Q167029/
 	
 	=============================================================================
 	
+
+{% endraw %}

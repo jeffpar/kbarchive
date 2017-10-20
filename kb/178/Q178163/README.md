@@ -6,6 +6,8 @@ permalink: /kb/178/Q178163/
 
 ## Q178163: XADM: Colon in Site Name Breaks Intersite Directory Replication
 
+{% raw %}
+
 	Article: Q178163
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -65,3 +67,5 @@ permalink: /kb/178/Q178163/
 	
 	=============================================================================
 	
+
+{% endraw %}

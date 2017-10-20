@@ -6,6 +6,8 @@ permalink: /kb/245/Q245163/
 
 ## Q245163: &quot;Stop 0x0000000A&quot; Error After Installing Services for Macintosh
 
+{% raw %}
+
 	Article: Q245163
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP6
@@ -81,3 +83,5 @@ permalink: /kb/245/Q245163/
 	
 	=============================================================================
 	
+
+{% endraw %}

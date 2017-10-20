@@ -6,6 +6,8 @@ permalink: /kb/305/Q305173/
 
 ## Q305173: PC Freezes When Prompted To Restart During MSN Broadband DSL New
 
+{% raw %}
+
 	Article: Q305173
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -62,3 +64,5 @@ permalink: /kb/305/Q305173/
 	
 	=============================================================================
 	
+
+{% endraw %}

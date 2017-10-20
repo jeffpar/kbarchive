@@ -6,6 +6,8 @@ permalink: /kb/072/Q72758/
 
 ## Q72758: EMM386.EXE with IBM PCS 3270 Causes Lockup
 
+{% raw %}
+
 	Article: Q72758
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -43,3 +45,5 @@ permalink: /kb/072/Q72758/
 	
 	=============================================================================
 	
+
+{% endraw %}

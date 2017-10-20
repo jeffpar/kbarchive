@@ -6,6 +6,8 @@ permalink: /kb/224/Q224697/
 
 ## Q224697: WD97: Word Mail Merge Starts Second Instance of Access
 
+{% raw %}
+
 	Article: Q224697
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/224/Q224697/
 	
 	=============================================================================
 	
+
+{% endraw %}

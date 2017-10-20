@@ -6,6 +6,8 @@ permalink: /kb/191/Q191389/
 
 ## Q191389: XCLN: How to Customize or Disable the Offer and Welcome Messages
 
+{% raw %}
+
 	Article: Q191389
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:
@@ -67,3 +69,5 @@ permalink: /kb/191/Q191389/
 	
 	=============================================================================
 	
+
+{% endraw %}

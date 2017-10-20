@@ -6,6 +6,8 @@ permalink: /kb/248/Q248292/
 
 ## Q248292: XCLN: Forwarded or Replied Banner on a Message May Be Incorrect
 
+{% raw %}
+
 	Article: Q248292
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/248/Q248292/
 	
 	=============================================================================
 	
+
+{% endraw %}

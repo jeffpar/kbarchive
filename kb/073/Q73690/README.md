@@ -6,6 +6,8 @@ permalink: /kb/073/Q73690/
 
 ## Q73690: Invoking NMAKE with /A Still Evaluates First Target Only
 
+{% raw %}
+
 	Article: Q73690
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.01,1.11,1.12,1.13,1.2,1.3,1.4; NT:1.4,1.5; OS/2:1.01,1.11,1.12,1.13,1.21
@@ -67,3 +69,5 @@ permalink: /kb/073/Q73690/
 	
 	=============================================================================
 	
+
+{% endraw %}

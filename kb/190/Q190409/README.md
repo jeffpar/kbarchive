@@ -6,6 +6,8 @@ permalink: /kb/190/Q190409/
 
 ## Q190409: BUG: Font Changes After Open Stored Procedure in Data View
 
+{% raw %}
+
 	Article: Q190409
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -73,3 +75,5 @@ permalink: /kb/190/Q190409/
 	
 	=============================================================================
 	
+
+{% endraw %}

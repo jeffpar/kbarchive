@@ -6,6 +6,8 @@ permalink: /kb/239/Q239631/
 
 ## Q239631: EWA: Web Page Is Not Opened When You Click Web Link
 
+{% raw %}
+
 	Article: Q239631
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -70,3 +72,5 @@ permalink: /kb/239/Q239631/
 	
 	=============================================================================
 	
+
+{% endraw %}

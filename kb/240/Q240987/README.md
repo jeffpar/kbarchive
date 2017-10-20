@@ -6,6 +6,8 @@ permalink: /kb/240/Q240987/
 
 ## Q240987: Pandora's Box: Color Is Distorted When You Start or Quit Game
 
+{% raw %}
+
 	Article: Q240987
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -76,3 +78,5 @@ permalink: /kb/240/Q240987/
 	
 	=============================================================================
 	
+
+{% endraw %}

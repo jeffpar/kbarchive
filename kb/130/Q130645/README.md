@@ -6,6 +6,8 @@ permalink: /kb/130/Q130645/
 
 ## Q130645: How to Use DAO to Assign or View Permissions
 
+{% raw %}
+
 	Article: Q130645
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -136,3 +138,5 @@ permalink: /kb/130/Q130645/
 	
 	=============================================================================
 	
+
+{% endraw %}

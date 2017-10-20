@@ -6,6 +6,8 @@ permalink: /kb/136/Q136529/
 
 ## Q136529: BUG: MDI Child Form Is Drawn Without Title in Certain Cases
 
+{% raw %}
+
 	Article: Q136529
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0,4.0
@@ -96,3 +98,5 @@ permalink: /kb/136/Q136529/
 	
 	=============================================================================
 	
+
+{% endraw %}

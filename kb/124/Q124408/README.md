@@ -6,6 +6,8 @@ permalink: /kb/124/Q124408/
 
 ## Q124408: Using The Microsoft Network Explorer
 
+{% raw %}
+
 	Article: Q124408
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -54,3 +56,5 @@ permalink: /kb/124/Q124408/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189418/
 
 ## Q189418: INFO: Difference Between INDEXSEEK and KEYMATCH Functions
 
+{% raw %}
+
 	Article: Q189418
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -200,3 +202,5 @@ permalink: /kb/189/Q189418/
 	
 	=============================================================================
 	
+
+{% endraw %}

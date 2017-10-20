@@ -6,6 +6,8 @@ permalink: /kb/131/Q131190/
 
 ## Q131190: No Notification of Replies to Bulletin Board Messages
 
+{% raw %}
+
 	Article: Q131190
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2 1.3
@@ -47,3 +49,5 @@ permalink: /kb/131/Q131190/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134598/
 
 ## Q134598: Corel Draw 3.0 TrueType Fonts Printed Incorrectly
 
+{% raw %}
+
 	Article: Q134598
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/134/Q134598/
 	
 	=============================================================================
 	
+
+{% endraw %}

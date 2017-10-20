@@ -6,6 +6,8 @@ permalink: /kb/034/Q34273/
 
 ## Q34273: QB.EXE Visibility, IBM PS/2 Model 50,60,80, Monochrome Monitor
 
+{% raw %}
+
 	Article: Q34273
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -53,3 +55,5 @@ permalink: /kb/034/Q34273/
 	program would not terminate when CTRL+BREAK was pressed and instead
 	hung the computer. Executing a MODE BW80 command under DOS before
 	running QB.EXE or QBX.EXE solved this problem.
+
+{% endraw %}

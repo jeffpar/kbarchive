@@ -6,6 +6,8 @@ permalink: /kb/238/Q238131/
 
 ## Q238131: How to Disable Socket Pooling
 
+{% raw %}
+
 	Article: Q238131
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -73,3 +75,5 @@ permalink: /kb/238/Q238131/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243190/
 
 ## Q243190: XFOR: Notes Dirsync Error Message: Event IDs 94086 and 94096
 
+{% raw %}
+
 	Article: Q243190
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/243/Q243190/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85243/
 
 ## Q85243: Cardfile Err Msg: Sharing Violation on Drive x...
 
+{% raw %}
+
 	Article: Q85243
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/085/Q85243/
 	
 	=============================================================================
 	
+
+{% endraw %}

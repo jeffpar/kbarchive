@@ -6,6 +6,8 @@ permalink: /kb/105/Q105178/
 
 ## Q105178: PC Adm: Using Import to Modify Home Postoffice Name
 
+{% raw %}
+
 	Article: Q105178
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -54,3 +56,5 @@ permalink: /kb/105/Q105178/
 	
 	=============================================================================
 	
+
+{% endraw %}

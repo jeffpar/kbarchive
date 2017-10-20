@@ -6,6 +6,8 @@ permalink: /kb/185/Q185188/
 
 ## Q185188: PRB: Cannot Use Visual FoxPro Table in Word 97 Mail Merge
 
+{% raw %}
+
 	Article: Q185188
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0b,5.0,5.0a,6.0,97
@@ -138,3 +140,5 @@ permalink: /kb/185/Q185188/
 	
 	=============================================================================
 	
+
+{% endraw %}

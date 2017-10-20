@@ -6,6 +6,8 @@ permalink: /kb/181/Q181296/
 
 ## Q181296: WD97: Macro to Dock Toolbars That Are Beyond Screen Borders
 
+{% raw %}
+
 	Article: Q181296
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -109,3 +111,5 @@ permalink: /kb/181/Q181296/
 	
 	=============================================================================
 	
+
+{% endraw %}

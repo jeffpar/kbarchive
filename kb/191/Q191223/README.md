@@ -6,6 +6,8 @@ permalink: /kb/191/Q191223/
 
 ## Q191223: INFO: Files Required to View HTML Help
 
+{% raw %}
+
 	Article: Q191223
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:1.3,6.0
@@ -55,3 +57,5 @@ permalink: /kb/191/Q191223/
 	
 	=============================================================================
 	
+
+{% endraw %}

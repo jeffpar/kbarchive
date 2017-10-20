@@ -6,6 +6,8 @@ permalink: /kb/192/Q192298/
 
 ## Q192298: Third Party GINAs May Fail with Service Pack 4 Causing STOP 0x21
 
+{% raw %}
+
 	Article: Q192298
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -126,3 +128,5 @@ permalink: /kb/192/Q192298/
 	
 	=============================================================================
 	
+
+{% endraw %}

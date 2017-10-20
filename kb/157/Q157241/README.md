@@ -6,6 +6,8 @@ permalink: /kb/157/Q157241/
 
 ## Q157241: Reboot Prompt After Installing Compaq Business Audio Driver
 
+{% raw %}
+
 	Article: Q157241
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -42,3 +44,5 @@ permalink: /kb/157/Q157241/
 	
 	=============================================================================
 	
+
+{% endraw %}

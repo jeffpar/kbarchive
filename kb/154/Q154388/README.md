@@ -6,6 +6,8 @@ permalink: /kb/154/Q154388/
 
 ## Q154388: Encarta 1996: How to Reinstall Without Losing Yearbook Updates
 
+{% raw %}
+
 	Article: Q154388
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -83,3 +85,5 @@ permalink: /kb/154/Q154388/
 	
 	=============================================================================
 	
+
+{% endraw %}

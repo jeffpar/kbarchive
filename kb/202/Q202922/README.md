@@ -6,6 +6,8 @@ permalink: /kb/202/Q202922/
 
 ## Q202922: Dr. Watson When Running Rdisk.exe
 
+{% raw %}
+
 	Article: Q202922
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/202/Q202922/
 	
 	=============================================================================
 	
+
+{% endraw %}

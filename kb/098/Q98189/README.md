@@ -6,6 +6,8 @@ permalink: /kb/098/Q98189/
 
 ## Q98189: Compaq 32 Bit EISA NIC (Netflex)
 
+{% raw %}
+
 	Article: Q98189
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/098/Q98189/
 	
 	=============================================================================
 	
+
+{% endraw %}

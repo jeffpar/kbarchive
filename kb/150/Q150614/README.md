@@ -6,6 +6,8 @@ permalink: /kb/150/Q150614/
 
 ## Q150614: HOWTO: Install VB 4.0 on a Win32 System Without Running Setup
 
+{% raw %}
+
 	Article: Q150614
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -239,3 +241,5 @@ permalink: /kb/150/Q150614/
 	
 	=============================================================================
 	
+
+{% endraw %}

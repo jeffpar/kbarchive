@@ -6,6 +6,8 @@ permalink: /kb/043/Q43369/
 
 ## Q43369: PRB: RCPP.EXE Error: Compiler Limit: Macro Expansion Too Big
 
+{% raw %}
+
 	Article: Q43369
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -80,3 +82,5 @@ permalink: /kb/043/Q43369/
 	
 	=============================================================================
 	
+
+{% endraw %}

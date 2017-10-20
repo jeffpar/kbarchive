@@ -6,6 +6,8 @@ permalink: /kb/126/Q126567/
 
 ## Q126567: MindMaze Causes EMM Exception Error #06 on the Compaq Presario
 
+{% raw %}
+
 	Article: Q126567
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition
@@ -101,3 +103,5 @@ permalink: /kb/126/Q126567/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/314/Q314759/
 
 ## Q314759: Microsoft ADO.NET Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q314759
 	Product(s): Microsoft Press
 	Version(s): 
@@ -124,3 +126,5 @@ permalink: /kb/314/Q314759/
 	
 	=============================================================================
 	
+
+{% endraw %}

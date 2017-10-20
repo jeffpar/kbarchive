@@ -6,6 +6,8 @@ permalink: /kb/146/Q146732/
 
 ## Q146732: XCLN: Message Header Information Misaligned
 
+{% raw %}
+
 	Article: Q146732
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -67,3 +69,5 @@ permalink: /kb/146/Q146732/
 	
 	=============================================================================
 	
+
+{% endraw %}

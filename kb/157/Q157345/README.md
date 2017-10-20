@@ -6,6 +6,8 @@ permalink: /kb/157/Q157345/
 
 ## Q157345: No Color Output with HP PaintJet XL300
 
+{% raw %}
+
 	Article: Q157345
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/157/Q157345/
 	
 	=============================================================================
 	
+
+{% endraw %}

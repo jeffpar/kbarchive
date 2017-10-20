@@ -6,6 +6,8 @@ permalink: /kb/266/Q266213/
 
 ## Q266213: Event id:7 service failed to start
 
+{% raw %}
+
 	Article: Q266213
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/266/Q266213/
 	
 	=============================================================================
 	
+
+{% endraw %}

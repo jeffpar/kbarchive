@@ -6,6 +6,8 @@ permalink: /kb/135/Q135398/
 
 ## Q135398: HOWTO: Write to the Windows Registry Using API Calls
 
+{% raw %}
+
 	Article: Q135398
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -145,3 +147,5 @@ permalink: /kb/135/Q135398/
 	
 	=============================================================================
 	
+
+{% endraw %}

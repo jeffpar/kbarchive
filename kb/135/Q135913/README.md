@@ -6,6 +6,8 @@ permalink: /kb/135/Q135913/
 
 ## Q135913: FIX: Bad POINT Structure in MSG Returned by GetCurrentMessage
 
+{% raw %}
+
 	Article: Q135913
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -72,3 +74,5 @@ permalink: /kb/135/Q135913/
 	
 	=============================================================================
 	
+
+{% endraw %}

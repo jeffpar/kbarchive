@@ -6,6 +6,8 @@ permalink: /kb/137/Q137623/
 
 ## Q137623: PRB: Align Property Setting Causes Toolbar to Fill the Form
 
+{% raw %}
+
 	Article: Q137623
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/137/Q137623/
 	
 	=============================================================================
 	
+
+{% endraw %}

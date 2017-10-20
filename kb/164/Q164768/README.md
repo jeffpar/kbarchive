@@ -6,6 +6,8 @@ permalink: /kb/164/Q164768/
 
 ## Q164768: XADM: DL Delivery Restriction Fails Without Name Resolution
 
+{% raw %}
+
 	Article: Q164768
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -48,3 +50,5 @@ permalink: /kb/164/Q164768/
 	
 	=============================================================================
 	
+
+{% endraw %}

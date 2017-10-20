@@ -6,6 +6,8 @@ permalink: /kb/190/Q190255/
 
 ## Q190255: BUG: DHTML Page Designer Does Not Insert the &lt;HTML&gt; Tag
 
+{% raw %}
+
 	Article: Q190255
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -119,3 +121,5 @@ permalink: /kb/190/Q190255/
 	
 	=============================================================================
 	
+
+{% endraw %}

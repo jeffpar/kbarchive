@@ -6,6 +6,8 @@ permalink: /kb/154/Q154908/
 
 ## Q154908: Mastering Access: Error When Viewing Video or Graphic Files
 
+{% raw %}
+
 	Article: Q154908
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0,1.0a; WINDOWS:95
@@ -99,3 +101,5 @@ permalink: /kb/154/Q154908/
 	
 	=============================================================================
 	
+
+{% endraw %}

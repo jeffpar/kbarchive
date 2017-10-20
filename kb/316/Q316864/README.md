@@ -6,6 +6,8 @@ permalink: /kb/316/Q316864/
 
 ## Q316864: Problems with Adobe Acrobat 5.0 After You Install URLScan
 
+{% raw %}
+
 	Article: Q316864
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -91,3 +93,5 @@ permalink: /kb/316/Q316864/
 	
 	=============================================================================
 	
+
+{% endraw %}

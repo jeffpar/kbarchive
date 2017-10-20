@@ -6,6 +6,8 @@ permalink: /kb/058/Q58277/
 
 ## Q58277: EGA Support Under Windows 3.0 and 3.1
 
+{% raw %}
+
 	Article: Q58277
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/058/Q58277/
 	
 	=============================================================================
 	
+
+{% endraw %}

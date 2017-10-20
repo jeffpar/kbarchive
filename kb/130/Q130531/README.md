@@ -6,6 +6,8 @@ permalink: /kb/130/Q130531/
 
 ## Q130531: HOWTO: Prevent Two Instances of a Form from Running
 
+{% raw %}
+
 	Article: Q130531
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/130/Q130531/
 	
 	=============================================================================
 	
+
+{% endraw %}

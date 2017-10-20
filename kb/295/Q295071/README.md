@@ -6,6 +6,8 @@ permalink: /kb/295/Q295071/
 
 ## Q295071: XFOR: How to Restore and Back Up Correlation Tables for SNADS
 
+{% raw %}
+
 	Article: Q295071
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -60,3 +62,5 @@ permalink: /kb/295/Q295071/
 	
 	=============================================================================
 	
+
+{% endraw %}

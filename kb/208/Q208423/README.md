@@ -6,6 +6,8 @@ permalink: /kb/208/Q208423/
 
 ## Q208423: FP: WMF Files Display Larger Than Expected
 
+{% raw %}
+
 	Article: Q208423
 	Product(s): Word Front Page
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/208/Q208423/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118560/
 
 ## Q118560: How to Indicate Record Continues on Next Page of Report
 
+{% raw %}
+
 	Article: Q118560
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 2.50b 2.60 2.60a 3.00
@@ -89,3 +91,5 @@ permalink: /kb/118/Q118560/
 	
 	=============================================================================
 	
+
+{% endraw %}

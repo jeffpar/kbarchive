@@ -6,6 +6,8 @@ permalink: /kb/100/Q100013/
 
 ## Q100013: Defrag Reports Unmovable Block Without Any Hidden/System Files
 
+{% raw %}
+
 	Article: Q100013
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/100/Q100013/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168332/
 
 ## Q168332: XADM: Unable To Create or Modify a Windows NT Account
 
+{% raw %}
+
 	Article: Q168332
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS4.0,5.0
@@ -44,3 +46,5 @@ permalink: /kb/168/Q168332/
 	
 	=============================================================================
 	
+
+{% endraw %}

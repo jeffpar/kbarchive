@@ -6,6 +6,8 @@ permalink: /kb/246/Q246405/
 
 ## Q246405: How to Close the MSN Quick View Icon
 
+{% raw %}
+
 	Article: Q246405
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.6,5.0
@@ -41,3 +43,5 @@ permalink: /kb/246/Q246405/
 	
 	=============================================================================
 	
+
+{% endraw %}

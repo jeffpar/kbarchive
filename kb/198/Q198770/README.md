@@ -6,6 +6,8 @@ permalink: /kb/198/Q198770/
 
 ## Q198770: SMS: Floppy Drive Spins During Hardware Inventory Scans
 
+{% raw %}
+
 	Article: Q198770
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -139,3 +141,5 @@ permalink: /kb/198/Q198770/
 	
 	=============================================================================
 	
+
+{% endraw %}

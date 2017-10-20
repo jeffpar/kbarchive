@@ -6,6 +6,8 @@ permalink: /kb/124/Q124858/
 
 ## Q124858: Windows NT Program Manager Group and Program Item Limits
 
+{% raw %}
+
 	Article: Q124858
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/124/Q124858/
 	
 	=============================================================================
 	
+
+{% endraw %}

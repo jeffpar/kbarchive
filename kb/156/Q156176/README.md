@@ -6,6 +6,8 @@ permalink: /kb/156/Q156176/
 
 ## Q156176: BUG: BorderWidth=0 Does Not Eliminate Border for Shape Control
 
+{% raw %}
+
 	Article: Q156176
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -65,3 +67,5 @@ permalink: /kb/156/Q156176/
 	
 	=============================================================================
 	
+
+{% endraw %}

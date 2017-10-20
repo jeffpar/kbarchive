@@ -6,6 +6,8 @@ permalink: /kb/264/Q264787/
 
 ## Q264787: WD97: Blank Line Is Not Suppressed in a Conditional Mail Merge
 
+{% raw %}
+
 	Article: Q264787
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -207,3 +209,5 @@ permalink: /kb/264/Q264787/
 	
 	=============================================================================
 	
+
+{% endraw %}

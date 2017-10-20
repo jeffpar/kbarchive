@@ -6,6 +6,8 @@ permalink: /kb/186/Q186514/
 
 ## Q186514: Terminal Server Does Not Support Sentinel Devices
 
+{% raw %}
+
 	Article: Q186514
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -42,3 +44,5 @@ permalink: /kb/186/Q186514/
 	
 	=============================================================================
 	
+
+{% endraw %}

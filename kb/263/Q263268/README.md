@@ -6,6 +6,8 @@ permalink: /kb/263/Q263268/
 
 ## Q263268: XADM: Wrong Account Name Prevents New Server from Joining Site
 
+{% raw %}
+
 	Article: Q263268
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -78,3 +80,5 @@ permalink: /kb/263/Q263268/
 	
 	=============================================================================
 	
+
+{% endraw %}

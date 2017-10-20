@@ -6,6 +6,8 @@ permalink: /kb/133/Q133076/
 
 ## Q133076: Duplicate Entries in Fax Cover Page List
 
+{% raw %}
+
 	Article: Q133076
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -61,3 +63,5 @@ permalink: /kb/133/Q133076/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155236/
 
 ## Q155236: Ntbackup Error: No Uncataloged Sets Were Found on Tape
 
+{% raw %}
+
 	Article: Q155236
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -65,3 +67,5 @@ permalink: /kb/155/Q155236/
 	
 	=============================================================================
 	
+
+{% endraw %}

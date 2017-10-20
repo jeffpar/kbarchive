@@ -6,6 +6,8 @@ permalink: /kb/196/Q196914/
 
 ## Q196914: WD97: Some Fonts Not Listed in Find/Replace Font Dialog
 
+{% raw %}
+
 	Article: Q196914
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/196/Q196914/
 	
 	=============================================================================
 	
+
+{% endraw %}

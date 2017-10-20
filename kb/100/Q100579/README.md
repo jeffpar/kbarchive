@@ -6,6 +6,8 @@ permalink: /kb/100/Q100579/
 
 ## Q100579: Claiming Critical Sections on Timer Ticks
 
+{% raw %}
+
 	Article: Q100579
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -82,3 +84,5 @@ permalink: /kb/100/Q100579/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106041/
 
 ## Q106041: WFWG Chat Err Msg: No Connection to &lt;Computername&gt;
 
+{% raw %}
+
 	Article: Q106041
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/106/Q106041/
 	
 	=============================================================================
 	
+
+{% endraw %}

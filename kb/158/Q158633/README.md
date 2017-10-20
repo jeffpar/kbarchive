@@ -6,6 +6,8 @@ permalink: /kb/158/Q158633/
 
 ## Q158633: XFOR: MTA Admin View of Queues Explained
 
+{% raw %}
+
 	Article: Q158633
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/158/Q158633/
 	
 	=============================================================================
 	
+
+{% endraw %}

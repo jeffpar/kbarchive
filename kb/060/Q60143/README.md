@@ -6,6 +6,8 @@ permalink: /kb/060/Q60143/
 
 ## Q60143: /FPa, /Lp, and Near Strings Disabled with Quick Library
 
+{% raw %}
+
 	Article: Q60143
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -30,3 +32,5 @@ permalink: /kb/060/Q60143/
 	OS/2 protected mode, and Near Strings, these compiler options cannot
 	be selected from the Make EXE File menu option when a Quick library is
 	loaded.
+
+{% endraw %}

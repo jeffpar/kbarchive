@@ -6,6 +6,8 @@ permalink: /kb/174/Q174045/
 
 ## Q174045: Installing and Using the CleanSweep Tool
 
+{% raw %}
+
 	Article: Q174045
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,8.0,8.01,8.02,8.03
@@ -206,3 +208,5 @@ permalink: /kb/174/Q174045/
 	
 	=============================================================================
 	
+
+{% endraw %}

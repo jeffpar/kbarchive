@@ -6,6 +6,8 @@ permalink: /kb/275/Q275271/
 
 ## Q275271: XADM: Error Message: Extension 'SMTP' Could Not Be Loaded
 
+{% raw %}
+
 	Article: Q275271
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -86,3 +88,5 @@ permalink: /kb/275/Q275271/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84424/
 
 ## Q84424: Lucida Calligraphy Numbers Do Not Touch the Baseline
 
+{% raw %}
+
 	Article: Q84424
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -36,3 +38,5 @@ permalink: /kb/084/Q84424/
 	
 	=============================================================================
 	
+
+{% endraw %}

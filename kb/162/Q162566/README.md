@@ -6,6 +6,8 @@ permalink: /kb/162/Q162566/
 
 ## Q162566: FPNW Causes Incomplete Display When Executed from Windows 95
 
+{% raw %}
+
 	Article: Q162566
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -67,3 +69,5 @@ permalink: /kb/162/Q162566/
 	
 	=============================================================================
 	
+
+{% endraw %}

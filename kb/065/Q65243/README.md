@@ -6,6 +6,8 @@ permalink: /kb/065/Q65243/
 
 ## Q65243: _memavl() Returns 0 If Not Bound with APILMR.OBJ
 
+{% raw %}
+
 	Article: Q65243
 	Product(s): See article
 	Version(s): 6.00
@@ -45,3 +47,5 @@ permalink: /kb/065/Q65243/
 	
 	For more information on the APILMR.OBJ file, query in QuickHelp on
 	BIND, then click the button for APILMR.OBJ.
+
+{% endraw %}

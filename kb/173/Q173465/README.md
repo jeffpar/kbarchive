@@ -6,6 +6,8 @@ permalink: /kb/173/Q173465/
 
 ## Q173465: Encarta Virtual Globe, Trial Edition: Testing CD-ROM File Access
 
+{% raw %}
+
 	Article: Q173465
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -115,3 +117,5 @@ permalink: /kb/173/Q173465/
 	
 	=============================================================================
 	
+
+{% endraw %}

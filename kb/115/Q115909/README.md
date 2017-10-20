@@ -6,6 +6,8 @@ permalink: /kb/115/Q115909/
 
 ## Q115909: PRB: File Open Dialog Doesn't Display Table Copied by Finder
 
+{% raw %}
+
 	Article: Q115909
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -107,3 +109,5 @@ permalink: /kb/115/Q115909/
 	
 	=============================================================================
 	
+
+{% endraw %}

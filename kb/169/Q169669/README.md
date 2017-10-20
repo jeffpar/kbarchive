@@ -6,6 +6,8 @@ permalink: /kb/169/Q169669/
 
 ## Q169669: XADM: Admin Can't Delete/Return Msgs to MS Mail Postoffice
 
+{% raw %}
+
 	Article: Q169669
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -102,3 +104,5 @@ permalink: /kb/169/Q169669/
 	
 	=============================================================================
 	
+
+{% endraw %}

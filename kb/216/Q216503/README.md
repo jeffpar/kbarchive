@@ -6,6 +6,8 @@ permalink: /kb/216/Q216503/
 
 ## Q216503: PRB: Problems Showing an ATL Dialog as Modeless in ATL .exe
 
+{% raw %}
+
 	Article: Q216503
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,3.0,5.0,6.0
@@ -142,3 +144,5 @@ permalink: /kb/216/Q216503/
 	
 	=============================================================================
 	
+
+{% endraw %}

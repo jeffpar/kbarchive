@@ -6,6 +6,8 @@ permalink: /kb/184/Q184410/
 
 ## Q184410: How to Use Msinfo32.exe to Optimize CD-ROM Cache Settings
 
+{% raw %}
+
 	Article: Q184410
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,2.0,5.0
@@ -212,3 +214,5 @@ permalink: /kb/184/Q184410/
 	
 	=============================================================================
 	
+
+{% endraw %}

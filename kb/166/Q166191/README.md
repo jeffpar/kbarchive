@@ -6,6 +6,8 @@ permalink: /kb/166/Q166191/
 
 ## Q166191: Protect It! Everything Restricted if You Use McAfee WebScan
 
+{% raw %}
+
 	Article: Q166191
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.00
@@ -66,3 +68,5 @@ permalink: /kb/166/Q166191/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/287/Q287717/
 
 ## Q287717: SMS: Secondary Site Installation Stops Responding
 
+{% raw %}
+
 	Article: Q287717
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -116,3 +118,5 @@ permalink: /kb/287/Q287717/
 	
 	=============================================================================
 	
+
+{% endraw %}

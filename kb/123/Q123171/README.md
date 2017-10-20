@@ -6,6 +6,8 @@ permalink: /kb/123/Q123171/
 
 ## Q123171: WINS Event Log IDs 4145 - 4290 (Error Conditions) for 3.5
 
+{% raw %}
+
 	Article: Q123171
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -505,3 +507,5 @@ permalink: /kb/123/Q123171/
 	
 	=============================================================================
 	
+
+{% endraw %}

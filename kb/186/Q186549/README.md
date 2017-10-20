@@ -6,6 +6,8 @@ permalink: /kb/186/Q186549/
 
 ## Q186549: Terminal Server Error Messages: 200 to 999
 
+{% raw %}
+
 	Article: Q186549
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -240,3 +242,5 @@ permalink: /kb/186/Q186549/
 	
 	=============================================================================
 	
+
+{% endraw %}

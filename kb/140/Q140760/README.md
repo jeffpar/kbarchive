@@ -6,6 +6,8 @@ permalink: /kb/140/Q140760/
 
 ## Q140760: PRB: Invalid Key Length Error When Indexing a Cursor File
 
+{% raw %}
+
 	Article: Q140760
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -73,3 +75,5 @@ permalink: /kb/140/Q140760/
 	
 	=============================================================================
 	
+
+{% endraw %}

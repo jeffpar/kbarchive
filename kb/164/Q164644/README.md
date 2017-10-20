@@ -6,6 +6,8 @@ permalink: /kb/164/Q164644/
 
 ## Q164644: Clear Text Passwords Could Be Left in SNAP Buffers
 
+{% raw %}
+
 	Article: Q164644
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -65,3 +67,5 @@ permalink: /kb/164/Q164644/
 	
 	=============================================================================
 	
+
+{% endraw %}

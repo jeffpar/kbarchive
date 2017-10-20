@@ -6,6 +6,8 @@ permalink: /kb/177/Q177557/
 
 ## Q177557: XFOR: Recipients Ignored on Mail Sent to Two or More CMS Nodes
 
+{% raw %}
+
 	Article: Q177557
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0 5.5
@@ -66,3 +68,5 @@ permalink: /kb/177/Q177557/
 	
 	=============================================================================
 	
+
+{% endraw %}

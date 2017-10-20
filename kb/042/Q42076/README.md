@@ -6,6 +6,8 @@ permalink: /kb/042/Q42076/
 
 ## Q42076: Errors C1059, C1060, D2027 Can Be Caused by Not Enough Memory
 
+{% raw %}
+
 	Article: Q42076
 	Product(s): See article
 	Version(s): 2.00
@@ -30,3 +32,5 @@ permalink: /kb/042/Q42076/
 	
 	Note: If there is only a small amount of RAM available (less than 40K)
 	QCL may hang.
+
+{% endraw %}

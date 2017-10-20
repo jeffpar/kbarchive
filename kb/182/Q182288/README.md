@@ -6,6 +6,8 @@ permalink: /kb/182/Q182288/
 
 ## Q182288: RPC May Cause System to Stop Responding during Shutdown
 
+{% raw %}
+
 	Article: Q182288
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/182/Q182288/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111356/
 
 ## Q111356: Flight Simulator Instrument Time Isn't Added into Flight Total
 
+{% raw %}
+
 	Article: Q111356
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -46,3 +48,5 @@ permalink: /kb/111/Q111356/
 	
 	=============================================================================
 	
+
+{% endraw %}

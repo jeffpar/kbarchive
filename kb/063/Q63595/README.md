@@ -6,6 +6,8 @@ permalink: /kb/063/Q63595/
 
 ## Q63595: Windows 3.0: Installing Video Seven's High-Resolution Drivers
 
+{% raw %}
+
 	Article: Q63595
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -94,3 +96,5 @@ permalink: /kb/063/Q63595/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194313/
 
 ## Q194313: XCLN: Outlook for Windows 3.x Remove All Does Not Delete Recall
 
+{% raw %}
+
 	Article: Q194313
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:8.0
@@ -46,3 +48,5 @@ permalink: /kb/194/Q194313/
 	
 	=============================================================================
 	
+
+{% endraw %}

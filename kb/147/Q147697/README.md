@@ -6,6 +6,8 @@ permalink: /kb/147/Q147697/
 
 ## Q147697: Turning Off Auditing of Security Policy Changes Not Audited
 
+{% raw %}
+
 	Article: Q147697
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -56,3 +58,5 @@ permalink: /kb/147/Q147697/
 	
 	=============================================================================
 	
+
+{% endraw %}

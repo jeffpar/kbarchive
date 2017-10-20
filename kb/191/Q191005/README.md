@@ -6,6 +6,8 @@ permalink: /kb/191/Q191005/
 
 ## Q191005: BUG: EXE Created Without File Extension on Windows 98
 
+{% raw %}
+
 	Article: Q191005
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -86,3 +88,5 @@ permalink: /kb/191/Q191005/
 	
 	=============================================================================
 	
+
+{% endraw %}

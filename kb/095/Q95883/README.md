@@ -6,6 +6,8 @@ permalink: /kb/095/Q95883/
 
 ## Q95883: DEC Network Interface Card Naming Conventions
 
+{% raw %}
+
 	Article: Q95883
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -89,3 +91,5 @@ permalink: /kb/095/Q95883/
 	
 	=============================================================================
 	
+
+{% endraw %}

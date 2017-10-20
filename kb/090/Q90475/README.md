@@ -6,6 +6,8 @@ permalink: /kb/090/Q90475/
 
 ## Q90475: Using PING.EXE with Windows for Workgroups
 
+{% raw %}
+
 	Article: Q90475
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/090/Q90475/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195128/
 
 ## Q195128: WD97: Converting WordStar 7.0 Files to Word for Windows Format
 
+{% raw %}
+
 	Article: Q195128
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -123,3 +125,5 @@ permalink: /kb/195/Q195128/
 	
 	=============================================================================
 	
+
+{% endraw %}

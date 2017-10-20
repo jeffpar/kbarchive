@@ -6,6 +6,8 @@ permalink: /kb/182/Q182294/
 
 ## Q182294: XADM: Synchronization Fails Attempting to Modify Deleted Message
 
+{% raw %}
+
 	Article: Q182294
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -80,3 +82,5 @@ permalink: /kb/182/Q182294/
 	
 	=============================================================================
 	
+
+{% endraw %}

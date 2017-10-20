@@ -6,6 +6,8 @@ permalink: /kb/242/Q242010/
 
 ## Q242010: FIX: The Data Form Wizard May Not Open an Access 2000 Database
 
+{% raw %}
+
 	Article: Q242010
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2000,6.0
@@ -86,3 +88,5 @@ permalink: /kb/242/Q242010/
 	
 	=============================================================================
 	
+
+{% endraw %}

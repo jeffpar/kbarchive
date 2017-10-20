@@ -6,6 +6,8 @@ permalink: /kb/132/Q132649/
 
 ## Q132649: Compaq Contura Aero APM Does Not Shut Down During Inactivity
 
+{% raw %}
+
 	Article: Q132649
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -51,3 +53,5 @@ permalink: /kb/132/Q132649/
 	
 	=============================================================================
 	
+
+{% endraw %}

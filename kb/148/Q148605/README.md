@@ -6,6 +6,8 @@ permalink: /kb/148/Q148605/
 
 ## Q148605: BUG: Compiler Syntax Error If Edit Descriptors Contain Spaces
 
+{% raw %}
+
 	Article: Q148605
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -89,3 +91,5 @@ permalink: /kb/148/Q148605/
 	
 	=============================================================================
 	
+
+{% endraw %}

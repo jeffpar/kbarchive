@@ -6,6 +6,8 @@ permalink: /kb/275/Q275004/
 
 ## Q275004: HOWTO: Transfer a Bitmap to a PocketPC Using the Winsock Control
 
+{% raw %}
+
 	Article: Q275004
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -514,3 +516,5 @@ permalink: /kb/275/Q275004/
 	
 	=============================================================================
 	
+
+{% endraw %}

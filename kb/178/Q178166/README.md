@@ -6,6 +6,8 @@ permalink: /kb/178/Q178166/
 
 ## Q178166: FIX: GeoFacts Sample Causes Type Mismatch Error with Excel 97
 
+{% raw %}
+
 	Article: Q178166
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0; :
@@ -100,3 +102,5 @@ permalink: /kb/178/Q178166/
 	
 	=============================================================================
 	
+
+{% endraw %}

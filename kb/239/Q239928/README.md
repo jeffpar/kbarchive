@@ -6,6 +6,8 @@ permalink: /kb/239/Q239928/
 
 ## Q239928: Where Do You Find COMTI Error Messages?
 
+{% raw %}
+
 	Article: Q239928
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0 SP1,4.0 SP1,4.0 SP2
@@ -39,3 +41,5 @@ permalink: /kb/239/Q239928/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/044/Q44109/
 
 ## Q44109: How to Continue Long FIELD Statements; 255-Character Limit
 
+{% raw %}
+
 	Article: Q44109
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -150,3 +152,5 @@ permalink: /kb/044/Q44109/
 	7.00 or 7.10. For example, you can edit with the Microsoft Editor or
 	Microsoft Word, and then compile the source code using BC.EXE from the
 	DOS prompt (or from within the Microsoft Editor, M.EXE).
+
+{% endraw %}

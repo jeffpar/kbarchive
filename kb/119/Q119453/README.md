@@ -6,6 +6,8 @@ permalink: /kb/119/Q119453/
 
 ## Q119453: PRB: GDI Heap Fills Up While Playing a Metafile
 
+{% raw %}
+
 	Article: Q119453
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -72,3 +74,5 @@ permalink: /kb/119/Q119453/
 	
 	=============================================================================
 	
+
+{% endraw %}

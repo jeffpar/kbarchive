@@ -6,6 +6,8 @@ permalink: /kb/098/Q98914/
 
 ## Q98914: PROFS: 3.0 Gateway Access Disk &#91;3.5, 720K&#93;
 
+{% raw %}
+
 	Article: Q98914
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -50,3 +52,5 @@ permalink: /kb/098/Q98914/
 	
 	=============================================================================
 	
+
+{% endraw %}

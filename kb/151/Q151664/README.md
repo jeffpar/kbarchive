@@ -6,6 +6,8 @@ permalink: /kb/151/Q151664/
 
 ## Q151664: Description of &quot;Get ISDN for Microsoft Windows&quot;
 
+{% raw %}
+
 	Article: Q151664
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/151/Q151664/
 	
 	=============================================================================
 	
+
+{% endraw %}

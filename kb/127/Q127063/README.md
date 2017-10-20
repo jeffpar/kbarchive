@@ -6,6 +6,8 @@ permalink: /kb/127/Q127063/
 
 ## Q127063: ADVANCED WINDOWS NT: Corrections and Comments
 
+{% raw %}
+
 	Article: Q127063
 	Product(s): Microsoft Press
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/127/Q127063/
 	
 	=============================================================================
 	
+
+{% endraw %}

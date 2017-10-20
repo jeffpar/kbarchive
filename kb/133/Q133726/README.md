@@ -6,6 +6,8 @@ permalink: /kb/133/Q133726/
 
 ## Q133726: EISA Bus Computer Detects Display Adapter Incorrectly
 
+{% raw %}
+
 	Article: Q133726
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/133/Q133726/
 	
 	=============================================================================
 	
+
+{% endraw %}

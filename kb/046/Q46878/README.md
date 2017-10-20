@@ -6,6 +6,8 @@ permalink: /kb/046/Q46878/
 
 ## Q46878: Loading File with DOS Device Name (CON) Can Hang QuickBASIC
 
+{% raw %}
+
 	Article: Q46878
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -41,3 +43,5 @@ permalink: /kb/046/Q46878/
 	device names. Using the DOS device name CON causes QuickBASIC to hang.
 	To avoid this, do not use the DOS device names as base names for your
 	files.
+
+{% endraw %}

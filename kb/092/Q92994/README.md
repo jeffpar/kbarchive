@@ -6,6 +6,8 @@ permalink: /kb/092/Q92994/
 
 ## Q92994: Supported NICs and NDIS Drivers Included with WFWG
 
+{% raw %}
+
 	Article: Q92994
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -156,3 +158,5 @@ permalink: /kb/092/Q92994/
 	
 	=============================================================================
 	
+
+{% endraw %}

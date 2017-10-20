@@ -6,6 +6,8 @@ permalink: /kb/258/Q258218/
 
 ## Q258218: Error Message &quot;Pathname Not Normalized&quot; When Installing Interix
 
+{% raw %}
+
 	Article: Q258218
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2.1,2.2.2,2.2.3,2.2.4,2.2.4.03,2.2.4.08,2.2.5
@@ -72,3 +74,5 @@ permalink: /kb/258/Q258218/
 	
 	=============================================================================
 	
+
+{% endraw %}

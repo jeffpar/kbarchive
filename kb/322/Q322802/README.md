@@ -6,6 +6,8 @@ permalink: /kb/322/Q322802/
 
 ## Q322802: SMS: Extended Hardware Inventory Classes Are Not Replicated
 
+{% raw %}
+
 	Article: Q322802
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -79,3 +81,5 @@ permalink: /kb/322/Q322802/
 	
 	=============================================================================
 	
+
+{% endraw %}

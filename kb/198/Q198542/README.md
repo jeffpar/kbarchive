@@ -6,6 +6,8 @@ permalink: /kb/198/Q198542/
 
 ## Q198542: XCLN: Unable to Add Components to Outlook 98 Installation
 
+{% raw %}
+
 	Article: Q198542
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -55,3 +57,5 @@ permalink: /kb/198/Q198542/
 	
 	=============================================================================
 	
+
+{% endraw %}

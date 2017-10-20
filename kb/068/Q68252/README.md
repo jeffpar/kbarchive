@@ -6,6 +6,8 @@ permalink: /kb/068/Q68252/
 
 ## Q68252: ASD: Converting Latitude/Longitude to FS Coordinates
 
+{% raw %}
+
 	Article: Q68252
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/068/Q68252/
 	
 	=============================================================================
 	
+
+{% endraw %}

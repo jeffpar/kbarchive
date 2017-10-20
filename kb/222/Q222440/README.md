@@ -6,6 +6,8 @@ permalink: /kb/222/Q222440/
 
 ## Q222440: XCLN: Err. Mssg.: The Information Store Could Not Be Opened
 
+{% raw %}
+
 	Article: Q222440
 	Product(s): Microsoft Exchange
 	Version(s): 2000,95,98
@@ -88,3 +90,5 @@ permalink: /kb/222/Q222440/
 	
 	=============================================================================
 	
+
+{% endraw %}

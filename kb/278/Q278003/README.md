@@ -6,6 +6,8 @@ permalink: /kb/278/Q278003/
 
 ## Q278003: CFS2: Slow Frame Rate and Poor Graphics Performance
 
+{% raw %}
+
 	Article: Q278003
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -64,3 +66,5 @@ permalink: /kb/278/Q278003/
 	
 	=============================================================================
 	
+
+{% endraw %}

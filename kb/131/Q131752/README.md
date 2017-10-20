@@ -6,6 +6,8 @@ permalink: /kb/131/Q131752/
 
 ## Q131752: PRB: Form Variable Unknown After Running Form Inside App
 
+{% raw %}
+
 	Article: Q131752
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -95,3 +97,5 @@ permalink: /kb/131/Q131752/
 	
 	=============================================================================
 	
+
+{% endraw %}

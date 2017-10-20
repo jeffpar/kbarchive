@@ -6,6 +6,8 @@ permalink: /kb/133/Q133236/
 
 ## Q133236: HOWTO: Configure Books Online to Search Multiple Books
 
+{% raw %}
+
 	Article: Q133236
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:2.0,2.1,2.2;
@@ -125,3 +127,5 @@ permalink: /kb/133/Q133236/
 	
 	=============================================================================
 	
+
+{% endraw %}

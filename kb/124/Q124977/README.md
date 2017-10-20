@@ -6,6 +6,8 @@ permalink: /kb/124/Q124977/
 
 ## Q124977: Protocol Services Change Connecting Over RAS
 
+{% raw %}
+
 	Article: Q124977
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -39,3 +41,5 @@ permalink: /kb/124/Q124977/
 	
 	=============================================================================
 	
+
+{% endraw %}

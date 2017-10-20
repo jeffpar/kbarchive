@@ -6,6 +6,8 @@ permalink: /kb/135/Q135224/
 
 ## Q135224: Error Message: Rundll32.exe Has Performed an Illegal Operation
 
+{% raw %}
+
 	Article: Q135224
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/135/Q135224/
 	
 	=============================================================================
 	
+
+{% endraw %}

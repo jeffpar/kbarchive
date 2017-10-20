@@ -6,6 +6,8 @@ permalink: /kb/127/Q127104/
 
 ## Q127104: HOWTO: Set Up Multiple SourceSafe Databases
 
+{% raw %}
+
 	Article: Q127104
 	Product(s): Microsoft SourceSafe
 	Version(s): Win3.x:3.1,4.0,5.00; Winnt:3.1,4.0,5.0; Mac:3.1; Unix:3.1; MS-DOS:3.1,4.0,5.0;
@@ -104,3 +106,5 @@ permalink: /kb/127/Q127104/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/047/Q47236/
 
 ## Q47236: Documentation Error for &quot;Mark&quot; Functions in M User's Guide
 
+{% raw %}
+
 	Article: Q47236
 	Product(s): See article
 	Version(s): 1.02   | 1.02
@@ -36,3 +38,5 @@ permalink: /kb/047/Q47236/
 	   Arg Arg textarg Meta Mark     Deletes a marker definition.
 	
 	On Page 39, the reference to Arg Arg textarg Mark is correct.
+
+{% endraw %}

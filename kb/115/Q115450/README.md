@@ -6,6 +6,8 @@ permalink: /kb/115/Q115450/
 
 ## Q115450: X400: Invalid MAPTBL.OUT Characters Cause Warning on Access
 
+{% raw %}
+
 	Article: Q115450
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -47,3 +49,5 @@ permalink: /kb/115/Q115450/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/286/Q286182/
 
 ## Q286182: HOWTO: Use Visual Basic to Convert a Raw SID into a String SID
 
+{% raw %}
+
 	Article: Q286182
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -511,3 +513,5 @@ permalink: /kb/286/Q286182/
 	
 	=============================================================================
 	
+
+{% endraw %}

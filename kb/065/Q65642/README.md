@@ -6,6 +6,8 @@ permalink: /kb/065/Q65642/
 
 ## Q65642: getcwd() and _getdcwd Return Backslash for Root Requests
 
+{% raw %}
+
 	Article: Q65642
 	Product(s): See article
 	Version(s): 5.x 6.00 | 5.x 6.00
@@ -57,3 +59,5 @@ permalink: /kb/065/Q65642/
 	Microsoft has confirmed this to be a problem in C version 6.00. We are
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

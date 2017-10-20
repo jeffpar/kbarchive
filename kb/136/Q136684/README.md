@@ -6,6 +6,8 @@ permalink: /kb/136/Q136684/
 
 ## Q136684: FURY3: 32Bit Version Of Acmsetup.hlp Contains No Information
 
+{% raw %}
+
 	Article: Q136684
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/136/Q136684/
 	
 	=============================================================================
 	
+
+{% endraw %}

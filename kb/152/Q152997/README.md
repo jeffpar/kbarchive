@@ -6,6 +6,8 @@ permalink: /kb/152/Q152997/
 
 ## Q152997: Using the Micro Solutions Backpack CD-ROM Drive w/ Windows NT
 
+{% raw %}
+
 	Article: Q152997
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -88,3 +90,5 @@ permalink: /kb/152/Q152997/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/315/Q315064/
 
 ## Q315064: FIX: Fatal Exception Error with ResetToDefault on Empty Method
 
+{% raw %}
+
 	Article: Q315064
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -93,3 +95,5 @@ permalink: /kb/315/Q315064/
 	
 	=============================================================================
 	
+
+{% endraw %}

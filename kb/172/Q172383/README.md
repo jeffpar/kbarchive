@@ -6,6 +6,8 @@ permalink: /kb/172/Q172383/
 
 ## Q172383: WD97: Matching AddressLayout Fields to Outlook Contact Fields
 
+{% raw %}
+
 	Article: Q172383
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/172/Q172383/
 	
 	=============================================================================
 	
+
+{% endraw %}

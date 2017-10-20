@@ -6,6 +6,8 @@ permalink: /kb/159/Q159053/
 
 ## Q159053: NTFS Stream Limitation in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q159053
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/159/Q159053/
 	
 	=============================================================================
 	
+
+{% endraw %}

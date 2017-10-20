@@ -6,6 +6,8 @@ permalink: /kb/149/Q149265/
 
 ## Q149265: BUG: SSCommand Button Loses Focus Rectangle
 
+{% raw %}
+
 	Article: Q149265
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -83,3 +85,5 @@ permalink: /kb/149/Q149265/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133018/
 
 ## Q133018: INFO: Visual SourceSafe Setup Registration Settings
 
+{% raw %}
+
 	Article: Q133018
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0
@@ -116,3 +118,5 @@ permalink: /kb/133/Q133018/
 	
 	=============================================================================
 	
+
+{% endraw %}

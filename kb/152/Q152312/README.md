@@ -6,6 +6,8 @@ permalink: /kb/152/Q152312/
 
 ## Q152312: Windows NT 3.5x Resource Kit Documentation Errors
 
+{% raw %}
+
 	Article: Q152312
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51
@@ -231,3 +233,5 @@ permalink: /kb/152/Q152312/
 	
 	=============================================================================
 	
+
+{% endraw %}

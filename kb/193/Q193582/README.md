@@ -6,6 +6,8 @@ permalink: /kb/193/Q193582/
 
 ## Q193582: PRB: Project Base Class Is Added to Visual SourceSafe
 
+{% raw %}
+
 	Article: Q193582
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -121,3 +123,5 @@ permalink: /kb/193/Q193582/
 	
 	=============================================================================
 	
+
+{% endraw %}

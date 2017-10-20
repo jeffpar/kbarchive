@@ -6,6 +6,8 @@ permalink: /kb/214/Q214637/
 
 ## Q214637: XFOR: Multiple MSExchangeCalCon Profiles Found
 
+{% raw %}
+
 	Article: Q214637
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/214/Q214637/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132715/
 
 ## Q132715: HOWTO: How to Enable the Help Button on a Modal Property Sheet
 
+{% raw %}
+
 	Article: Q132715
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0
@@ -86,3 +88,5 @@ permalink: /kb/132/Q132715/
 	
 	=============================================================================
 	
+
+{% endraw %}

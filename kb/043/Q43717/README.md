@@ -6,6 +6,8 @@ permalink: /kb/043/Q43717/
 
 ## Q43717: Flight Sim Err Msg: FOREIGN.FS3 File Not Found
 
+{% raw %}
+
 	Article: Q43717
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/043/Q43717/
 	
 	=============================================================================
 	
+
+{% endraw %}

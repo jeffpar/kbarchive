@@ -6,6 +6,8 @@ permalink: /kb/235/Q235611/
 
 ## Q235611: IIS 3.0 May Stop Responding to Client Requests
 
+{% raw %}
+
 	Article: Q235611
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0
@@ -87,3 +89,5 @@ permalink: /kb/235/Q235611/
 	
 	=============================================================================
 	
+
+{% endraw %}

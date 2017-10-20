@@ -6,6 +6,8 @@ permalink: /kb/104/Q104519/
 
 ## Q104519: PC OS2: Err Msg: The Server Path in the MSMAIL.INI Is Missing
 
+{% raw %}
+
 	Article: Q104519
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -61,3 +63,5 @@ permalink: /kb/104/Q104519/
 	
 	=============================================================================
 	
+
+{% endraw %}

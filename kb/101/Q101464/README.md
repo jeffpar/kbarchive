@@ -6,6 +6,8 @@ permalink: /kb/101/Q101464/
 
 ## Q101464: Bookshelf 1991 Err Msg: Close Font Progress
 
+{% raw %}
+
 	Article: Q101464
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition,3.1
@@ -105,3 +107,5 @@ permalink: /kb/101/Q101464/
 	
 	=============================================================================
 	
+
+{% endraw %}

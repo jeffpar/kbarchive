@@ -6,6 +6,8 @@ permalink: /kb/168/Q168188/
 
 ## Q168188: XADM: Possible Loss of Mail with Move Mailbox
 
+{% raw %}
+
 	Article: Q168188
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -99,3 +101,5 @@ permalink: /kb/168/Q168188/
 	
 	=============================================================================
 	
+
+{% endraw %}

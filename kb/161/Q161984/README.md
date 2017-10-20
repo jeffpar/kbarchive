@@ -6,6 +6,8 @@ permalink: /kb/161/Q161984/
 
 ## Q161984: WD97: &quot;Save Word Files As&quot; Help Topic Incorrect
 
+{% raw %}
+
 	Article: Q161984
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/161/Q161984/
 	
 	=============================================================================
 	
+
+{% endraw %}

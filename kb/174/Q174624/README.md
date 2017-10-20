@@ -6,6 +6,8 @@ permalink: /kb/174/Q174624/
 
 ## Q174624: Improper Display Name for OEM Driver after Unattend Setup.
 
+{% raw %}
+
 	Article: Q174624
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -112,3 +114,5 @@ permalink: /kb/174/Q174624/
 	
 	=============================================================================
 	
+
+{% endraw %}

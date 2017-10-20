@@ -6,6 +6,8 @@ permalink: /kb/116/Q116074/
 
 ## Q116074: Baseball: Trivia Game Settings Are Not Retained After Exiting
 
+{% raw %}
+
 	Article: Q116074
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -76,3 +78,5 @@ permalink: /kb/116/Q116074/
 	
 	=============================================================================
 	
+
+{% endraw %}

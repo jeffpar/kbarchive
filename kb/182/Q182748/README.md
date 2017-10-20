@@ -6,6 +6,8 @@ permalink: /kb/182/Q182748/
 
 ## Q182748: WD97: Sample Macro to Place a Border on a Single Cell in a Table
 
+{% raw %}
+
 	Article: Q182748
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -109,3 +111,5 @@ permalink: /kb/182/Q182748/
 	
 	=============================================================================
 	
+
+{% endraw %}

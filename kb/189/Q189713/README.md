@@ -6,6 +6,8 @@ permalink: /kb/189/Q189713/
 
 ## Q189713: WD97: Visio Unexpected Quits Clicking Open on View Menu
 
+{% raw %}
+
 	Article: Q189713
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/189/Q189713/
 	
 	=============================================================================
 	
+
+{% endraw %}

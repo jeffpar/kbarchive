@@ -6,6 +6,8 @@ permalink: /kb/124/Q124947/
 
 ## Q124947: INFO: Retrieving Palette Information from a Bitmap Resource
 
+{% raw %}
+
 	Article: Q124947
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:1.2,1.25a,1.3,3.1,95; winnt:3.5,3.51
@@ -268,3 +270,5 @@ permalink: /kb/124/Q124947/
 	
 	=============================================================================
 	
+
+{% endraw %}

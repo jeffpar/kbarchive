@@ -6,6 +6,8 @@ permalink: /kb/193/Q193415/
 
 ## Q193415: PRB: Setting Decimals to 10 or More Creates Incorrect Result
 
+{% raw %}
+
 	Article: Q193415
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -161,3 +163,5 @@ permalink: /kb/193/Q193415/
 	
 	=============================================================================
 	
+
+{% endraw %}

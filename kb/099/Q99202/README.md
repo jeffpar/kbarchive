@@ -6,6 +6,8 @@ permalink: /kb/099/Q99202/
 
 ## Q99202: PC WRmt: Messages Waiting in Outbox Not Sent
 
+{% raw %}
+
 	Article: Q99202
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -55,3 +57,5 @@ permalink: /kb/099/Q99202/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125606/
 
 ## Q125606: INFO: Password .DLL File That Can Be Called Anywhere in FoxPro
 
+{% raw %}
+
 	Article: Q125606
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -141,7 +143,7 @@ permalink: /kb/125/Q125606/
 	     break; }
 	     case IDCANCEL :
 	     {  EndDialog(hDlg, 0);
-	     break;} }} }
+	     break;}}}}
 	     return FALSE;}
 	
 	2. Create a new text file, type the following code into it, and save it as
@@ -194,3 +196,5 @@ permalink: /kb/125/Q125606/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/059/Q59608/
 
 ## Q59608: A2071 and A2006 with Assembly Code from a C Program
 
+{% raw %}
+
 	Article: Q59608
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -98,3 +100,5 @@ permalink: /kb/059/Q59608/
 	will result if the two-pass option is turned on. With only one pass,
 	the phase error is not generated. Either way, the same correction
 	applies in both cases.
+
+{% endraw %}

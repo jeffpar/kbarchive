@@ -6,6 +6,8 @@ permalink: /kb/194/Q194872/
 
 ## Q194872: XGEN: How EBCDIC to ASCII Translation Takes Place
 
+{% raw %}
+
 	Article: Q194872
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/194/Q194872/
 	
 	=============================================================================
 	
+
+{% endraw %}

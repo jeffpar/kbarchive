@@ -6,6 +6,8 @@ permalink: /kb/164/Q164596/
 
 ## Q164596: Event ID 3216 System Error 67
 
+{% raw %}
+
 	Article: Q164596
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/164/Q164596/
 	
 	=============================================================================
 	
+
+{% endraw %}

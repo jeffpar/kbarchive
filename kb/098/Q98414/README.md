@@ -6,6 +6,8 @@ permalink: /kb/098/Q98414/
 
 ## Q98414: Using IBM M-Audio Sound Card to Play MIDI Sounds
 
+{% raw %}
+
 	Article: Q98414
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,3.11
@@ -59,3 +61,5 @@ permalink: /kb/098/Q98414/
 	
 	=============================================================================
 	
+
+{% endraw %}

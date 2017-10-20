@@ -6,6 +6,8 @@ permalink: /kb/164/Q164294/
 
 ## Q164294: FP: How to Change ServerName for FrontPage Personal Web Server
 
+{% raw %}
+
 	Article: Q164294
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.0a,1.1,97
@@ -113,3 +115,5 @@ permalink: /kb/164/Q164294/
 	
 	=============================================================================
 	
+
+{% endraw %}

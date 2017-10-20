@@ -6,6 +6,8 @@ permalink: /kb/156/Q156342/
 
 ## Q156342: PRB: DO &lt;Program Name&gt; Runs Cached Version of Program
 
+{% raw %}
+
 	Article: Q156342
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -123,3 +125,5 @@ permalink: /kb/156/Q156342/
 	
 	=============================================================================
 	
+
+{% endraw %}

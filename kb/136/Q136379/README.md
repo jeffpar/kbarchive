@@ -6,6 +6,8 @@ permalink: /kb/136/Q136379/
 
 ## Q136379: FFAPI: Err Msg: &#91;021&#93; Message Was Not Delivered Due to...
 
+{% raw %}
+
 	Article: Q136379
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -100,3 +102,5 @@ permalink: /kb/136/Q136379/
 	
 	=============================================================================
 	
+
+{% endraw %}

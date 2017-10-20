@@ -6,6 +6,8 @@ permalink: /kb/294/Q294700/
 
 ## Q294700: XCCC: Error Message: OWA Failed to Install Properly
 
+{% raw %}
+
 	Article: Q294700
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/294/Q294700/
 	
 	=============================================================================
 	
+
+{% endraw %}

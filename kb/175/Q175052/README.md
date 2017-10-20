@@ -6,6 +6,8 @@ permalink: /kb/175/Q175052/
 
 ## Q175052: HOWTO: Send a Message in Visual FoxPro Using Active Messaging
 
+{% raw %}
+
 	Article: Q175052
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -126,3 +128,5 @@ permalink: /kb/175/Q175052/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167042/
 
 ## Q167042: Legal Notice Dialog Box Interferes with Remote Shutdowns
 
+{% raw %}
+
 	Article: Q167042
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -55,3 +57,5 @@ permalink: /kb/167/Q167042/
 	
 	=============================================================================
 	
+
+{% endraw %}

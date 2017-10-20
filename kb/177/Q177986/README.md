@@ -6,6 +6,8 @@ permalink: /kb/177/Q177986/
 
 ## Q177986: FS98: Auto-Coordination Not Available for Bell 206B JetRanger
 
+{% raw %}
+
 	Article: Q177986
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -43,3 +45,5 @@ permalink: /kb/177/Q177986/
 	
 	=============================================================================
 	
+
+{% endraw %}

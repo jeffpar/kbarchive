@@ -6,6 +6,8 @@ permalink: /kb/071/Q71408/
 
 ## Q71408: Mac Hyp: Setting Automatic Self-Copy on a Message
 
+{% raw %}
+
 	Article: Q71408
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0
@@ -49,3 +51,5 @@ permalink: /kb/071/Q71408/
 	
 	=============================================================================
 	
+
+{% endraw %}

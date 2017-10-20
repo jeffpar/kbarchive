@@ -6,6 +6,8 @@ permalink: /kb/190/Q190886/
 
 ## Q190886: HOWTO: Manage State Between DHTML Page Designer Pages
 
+{% raw %}
+
 	Article: Q190886
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -114,3 +116,5 @@ permalink: /kb/190/Q190886/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156792/
 
 ## Q156792: &quot;Visual FoxPro 3 Step by Step&quot; Lesson 9 notes &amp; corrections
 
+{% raw %}
+
 	Article: Q156792
 	Product(s): Microsoft Press
 	Version(s): 
@@ -146,3 +148,5 @@ permalink: /kb/156/Q156792/
 	
 	=============================================================================
 	
+
+{% endraw %}

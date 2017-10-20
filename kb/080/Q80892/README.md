@@ -6,6 +6,8 @@ permalink: /kb/080/Q80892/
 
 ## Q80892: Mac MSPlus: Filenames Longer Than 32 Characters Truncated
 
+{% raw %}
+
 	Article: Q80892
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -39,3 +41,5 @@ permalink: /kb/080/Q80892/
 	
 	=============================================================================
 	
+
+{% endraw %}

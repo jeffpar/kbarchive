@@ -6,6 +6,8 @@ permalink: /kb/151/Q151514/
 
 ## Q151514: CD-ROM Programs Vibrate in 6x or Faster CD-ROM Drive
 
+{% raw %}
+
 	Article: Q151514
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a,1.1b,1.1c,2.0
@@ -70,3 +72,5 @@ permalink: /kb/151/Q151514/
 	
 	=============================================================================
 	
+
+{% endraw %}

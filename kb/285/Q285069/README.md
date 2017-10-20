@@ -6,6 +6,8 @@ permalink: /kb/285/Q285069/
 
 ## Q285069: How Do I Fix Blank Certificate List Displayed on IIS5 Web Site?
 
+{% raw %}
+
 	Article: Q285069
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -129,3 +131,5 @@ permalink: /kb/285/Q285069/
 	
 	=============================================================================
 	
+
+{% endraw %}

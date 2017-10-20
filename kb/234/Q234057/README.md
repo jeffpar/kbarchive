@@ -6,6 +6,8 @@ permalink: /kb/234/Q234057/
 
 ## Q234057: XFOR: Command-Line Migration to Exchange Server Causes Error
 
+{% raw %}
+
 	Article: Q234057
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/234/Q234057/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121656/
 
 ## Q121656: Third-Party Companion Products for Systems Management Server
 
+{% raw %}
+
 	Article: Q121656
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -65,3 +67,5 @@ permalink: /kb/121/Q121656/
 	
 	=============================================================================
 	
+
+{% endraw %}

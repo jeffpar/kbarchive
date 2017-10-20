@@ -6,6 +6,8 @@ permalink: /kb/095/Q95297/
 
 ## Q95297: Orchid Fahrenheit Drivers Cause GP Faults
 
+{% raw %}
+
 	Article: Q95297
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/095/Q95297/
 	
 	=============================================================================
 	
+
+{% endraw %}

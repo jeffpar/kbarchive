@@ -6,6 +6,8 @@ permalink: /kb/173/Q173784/
 
 ## Q173784: WD97: Changing the Bullet Type in HTML Creates a Second Bullet
 
+{% raw %}
+
 	Article: Q173784
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/173/Q173784/
 	
 	=============================================================================
 	
+
+{% endraw %}

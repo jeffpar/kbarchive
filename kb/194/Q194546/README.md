@@ -6,6 +6,8 @@ permalink: /kb/194/Q194546/
 
 ## Q194546: X400: Incorrect Time on Message Sent through Gateway to X.400
 
+{% raw %}
+
 	Article: Q194546
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -140,3 +142,5 @@ permalink: /kb/194/Q194546/
 	
 	=============================================================================
 	
+
+{% endraw %}

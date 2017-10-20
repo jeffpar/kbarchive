@@ -6,6 +6,8 @@ permalink: /kb/138/Q138573/
 
 ## Q138573: Moving Large Number of Files With Wildcard (&#42;) File Names Fails
 
+{% raw %}
+
 	Article: Q138573
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/138/Q138573/
 	
 	=============================================================================
 	
+
+{% endraw %}

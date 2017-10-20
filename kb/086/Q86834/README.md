@@ -6,6 +6,8 @@ permalink: /kb/086/Q86834/
 
 ## Q86834: DOC: TEXTMETRIC tmPitchAndFamily Member Incorrect
 
+{% raw %}
+
 	Article: Q86834
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -48,3 +50,5 @@ permalink: /kb/086/Q86834/
 	
 	=============================================================================
 	
+
+{% endraw %}

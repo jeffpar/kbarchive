@@ -6,6 +6,8 @@ permalink: /kb/195/Q195814/
 
 ## Q195814: Golf 1999 Edition: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q195814
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -72,3 +74,5 @@ permalink: /kb/195/Q195814/
 	
 	=============================================================================
 	
+
+{% endraw %}

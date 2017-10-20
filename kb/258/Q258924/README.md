@@ -6,6 +6,8 @@ permalink: /kb/258/Q258924/
 
 ## Q258924: Performance Problems Can Occur When a Child Site Reconnects
 
+{% raw %}
+
 	Article: Q258924
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -78,3 +80,5 @@ permalink: /kb/258/Q258924/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/304/Q304623/
 
 ## Q304623: How to Move a Qwest.net Web Site To An MSN Communites Web Site
 
+{% raw %}
+
 	Article: Q304623
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -247,3 +249,5 @@ permalink: /kb/304/Q304623/
 	
 	=============================================================================
 	
+
+{% endraw %}

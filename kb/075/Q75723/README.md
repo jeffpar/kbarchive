@@ -6,6 +6,8 @@ permalink: /kb/075/Q75723/
 
 ## Q75723: AT&amp;T 6300 Needs Driver for Date/Time Stamping
 
+{% raw %}
+
 	Article: Q75723
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -64,3 +66,5 @@ permalink: /kb/075/Q75723/
 	
 	=============================================================================
 	
+
+{% endraw %}

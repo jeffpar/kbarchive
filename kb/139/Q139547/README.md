@@ -6,6 +6,8 @@ permalink: /kb/139/Q139547/
 
 ## Q139547: How to Use the GetVolumeInformation API Call
 
+{% raw %}
+
 	Article: Q139547
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -223,3 +225,5 @@ permalink: /kb/139/Q139547/
 	
 	=============================================================================
 	
+
+{% endraw %}

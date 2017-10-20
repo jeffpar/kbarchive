@@ -6,6 +6,8 @@ permalink: /kb/226/Q226202/
 
 ## Q226202: XCON: No Delivery Receipts When IMS Is in Mailbox Disabled State
 
+{% raw %}
+
 	Article: Q226202
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -96,3 +98,5 @@ permalink: /kb/226/Q226202/
 	
 	=============================================================================
 	
+
+{% endraw %}

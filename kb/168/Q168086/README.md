@@ -6,6 +6,8 @@ permalink: /kb/168/Q168086/
 
 ## Q168086: XCLN: MS Schedule+ Time Zones Wrong w/ OEM Service Release 2
 
+{% raw %}
+
 	Article: Q168086
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.5,95
@@ -59,3 +61,5 @@ permalink: /kb/168/Q168086/
 	
 	=============================================================================
 	
+
+{% endraw %}

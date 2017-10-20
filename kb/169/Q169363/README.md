@@ -6,6 +6,8 @@ permalink: /kb/169/Q169363/
 
 ## Q169363: DOC Err: SNMP OIDs Leave off Leading Dot
 
+{% raw %}
+
 	Article: Q169363
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/169/Q169363/
 	
 	=============================================================================
 	
+
+{% endraw %}

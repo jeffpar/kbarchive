@@ -6,6 +6,8 @@ permalink: /kb/124/Q124918/
 
 ## Q124918: TCP/IP-32 NetBIOS over TCP/IP May Not Parse DNS Correctly
 
+{% raw %}
+
 	Article: Q124918
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -54,3 +56,5 @@ permalink: /kb/124/Q124918/
 	
 	=============================================================================
 	
+
+{% endraw %}

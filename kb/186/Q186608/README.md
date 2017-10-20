@@ -6,6 +6,8 @@ permalink: /kb/186/Q186608/
 
 ## Q186608: Single-Application Sharing with Terminal Server
 
+{% raw %}
+
 	Article: Q186608
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -120,3 +122,5 @@ permalink: /kb/186/Q186608/
 	
 	=============================================================================
 	
+
+{% endraw %}

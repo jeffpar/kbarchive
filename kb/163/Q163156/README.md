@@ -6,6 +6,8 @@ permalink: /kb/163/Q163156/
 
 ## Q163156: WD97: Gridlines Missing from Cells Pasted as Excel Object
 
+{% raw %}
+
 	Article: Q163156
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/163/Q163156/
 	
 	=============================================================================
 	
+
+{% endraw %}

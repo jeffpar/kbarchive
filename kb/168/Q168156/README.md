@@ -6,6 +6,8 @@ permalink: /kb/168/Q168156/
 
 ## Q168156: FIX: DBGrid Bound to RDC Displays Small Resultsets Incorrectly
 
+{% raw %}
+
 	Article: Q168156
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 97
@@ -51,3 +53,5 @@ permalink: /kb/168/Q168156/
 	
 	=============================================================================
 	
+
+{% endraw %}

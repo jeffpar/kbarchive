@@ -6,6 +6,8 @@ permalink: /kb/130/Q130782/
 
 ## Q130782: Access 2.0 Command Line gets Truncated Under Windows NT 3.5
 
+{% raw %}
+
 	Article: Q130782
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -55,3 +57,5 @@ permalink: /kb/130/Q130782/
 	
 	=============================================================================
 	
+
+{% endraw %}

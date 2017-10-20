@@ -6,6 +6,8 @@ permalink: /kb/173/Q173538/
 
 ## Q173538: SMS: NetBIOS Reset Causes Windows 95 Remote Control To Fail
 
+{% raw %}
+
 	Article: Q173538
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -120,3 +122,5 @@ permalink: /kb/173/Q173538/
 	
 	=============================================================================
 	
+
+{% endraw %}

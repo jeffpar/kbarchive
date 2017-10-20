@@ -6,6 +6,8 @@ permalink: /kb/086/Q86872/
 
 ## Q86872: Program Manager DDE Command AddItem Documentation
 
+{% raw %}
+
 	Article: Q86872
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -78,3 +80,5 @@ permalink: /kb/086/Q86872/
 	
 	=============================================================================
 	
+
+{% endraw %}

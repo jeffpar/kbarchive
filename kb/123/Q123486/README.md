@@ -6,6 +6,8 @@ permalink: /kb/123/Q123486/
 
 ## Q123486: Err Msg: Setup Error 110 During Installation of Microsoft DLC
 
+{% raw %}
+
 	Article: Q123486
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -63,3 +65,5 @@ permalink: /kb/123/Q123486/
 	
 	=============================================================================
 	
+
+{% endraw %}

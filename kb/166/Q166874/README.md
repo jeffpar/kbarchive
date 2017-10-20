@@ -6,6 +6,8 @@ permalink: /kb/166/Q166874/
 
 ## Q166874: No Crashdump and Compaq Systems with Smart-2/P (PCI) Controller
 
+{% raw %}
+
 	Article: Q166874
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/166/Q166874/
 	
 	=============================================================================
 	
+
+{% endraw %}

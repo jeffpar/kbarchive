@@ -6,6 +6,8 @@ permalink: /kb/190/Q190771/
 
 ## Q190771: FILE: Vfp6rt.exe Distributing Run-Time Files w/ Active Document
 
+{% raw %}
+
 	Article: Q190771
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -62,3 +64,5 @@ permalink: /kb/190/Q190771/
 	
 	=============================================================================
 	
+
+{% endraw %}

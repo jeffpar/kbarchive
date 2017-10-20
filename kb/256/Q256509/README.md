@@ -6,6 +6,8 @@ permalink: /kb/256/Q256509/
 
 ## Q256509: RAS Client Authentication Causes &quot;Error 5: Access Is Denied&quot;
 
+{% raw %}
+
 	Article: Q256509
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP6,4.0 SP6a
@@ -117,3 +119,5 @@ permalink: /kb/256/Q256509/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161137/
 
 ## Q161137: HOWTO: Use Project and Binary Compatibility
 
+{% raw %}
+
 	Article: Q161137
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -95,3 +97,5 @@ permalink: /kb/161/Q161137/
 	
 	=============================================================================
 	
+
+{% endraw %}

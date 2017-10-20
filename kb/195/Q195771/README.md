@@ -6,6 +6,8 @@ permalink: /kb/195/Q195771/
 
 ## Q195771: Print Server Uses 100% CPU If No Line Formatting Option Enabled
 
+{% raw %}
+
 	Article: Q195771
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -95,3 +97,5 @@ permalink: /kb/195/Q195771/
 	
 	=============================================================================
 	
+
+{% endraw %}

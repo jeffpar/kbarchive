@@ -6,6 +6,8 @@ permalink: /kb/129/Q129586/
 
 ## Q129586: Baseball Guide 1995: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q129586
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -322,3 +324,5 @@ permalink: /kb/129/Q129586/
 	
 	=============================================================================
 	
+
+{% endraw %}

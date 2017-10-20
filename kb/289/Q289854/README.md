@@ -6,6 +6,8 @@ permalink: /kb/289/Q289854/
 
 ## Q289854: XIMS: NDRs Not Generated Even Though Mail Fails to Get Forwarded
 
+{% raw %}
+
 	Article: Q289854
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -62,3 +64,5 @@ permalink: /kb/289/Q289854/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177933/
 
 ## Q177933: How to Change Menu Font Size in MSN Program Viewer
 
+{% raw %}
+
 	Article: Q177933
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -74,3 +76,5 @@ permalink: /kb/177/Q177933/
 	
 	=============================================================================
 	
+
+{% endraw %}

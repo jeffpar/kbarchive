@@ -6,6 +6,8 @@ permalink: /kb/034/Q34856/
 
 ## Q34856: Run-Time Limits for C Version 5.10
 
+{% raw %}
+
 	Article: Q34856
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -42,3 +44,5 @@ permalink: /kb/034/Q34856/
 	
 	This table is listed on Page 286 of the user's guide contained
 	in the "Microsoft C 5.1 Optimizing Compiler" manual.
+
+{% endraw %}

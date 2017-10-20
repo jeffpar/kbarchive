@@ -6,6 +6,8 @@ permalink: /kb/236/Q236066/
 
 ## Q236066: SMS: INVMAC Fails to Report Package During Software Inventory
 
+{% raw %}
+
 	Article: Q236066
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -109,3 +111,5 @@ permalink: /kb/236/Q236066/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/317/Q317466/
 
 ## Q317466: HOWTO: Remove Buttons from the Print Preview Toolbar
 
+{% raw %}
+
 	Article: Q317466
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0,7.0
@@ -154,3 +156,5 @@ permalink: /kb/317/Q317466/
 	
 	=============================================================================
 	
+
+{% endraw %}

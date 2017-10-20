@@ -6,6 +6,8 @@ permalink: /kb/103/Q103343/
 
 ## Q103343: MkeGroup.exe Creates Program Manager Groups/Items w/DDE
 
+{% raw %}
+
 	Article: Q103343
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -73,3 +75,5 @@ permalink: /kb/103/Q103343/
 	
 	=============================================================================
 	
+
+{% endraw %}

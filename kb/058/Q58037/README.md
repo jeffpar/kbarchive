@@ -6,6 +6,8 @@ permalink: /kb/058/Q58037/
 
 ## Q58037: Can't READ DATA Statements Across BASIC Modules
 
+{% raw %}
+
 	Article: Q58037
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -44,3 +46,5 @@ permalink: /kb/058/Q58037/
 	
 	5. "Microsoft BASIC Compiler 6.0: BASIC Language Reference" for
 	   Versions 6.00 and 6.00b
+
+{% endraw %}

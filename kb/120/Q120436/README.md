@@ -6,6 +6,8 @@ permalink: /kb/120/Q120436/
 
 ## Q120436: Installing Non-Native Printer Drivers on a Print Server Fails
 
+{% raw %}
+
 	Article: Q120436
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -99,3 +101,5 @@ permalink: /kb/120/Q120436/
 	
 	=============================================================================
 	
+
+{% endraw %}

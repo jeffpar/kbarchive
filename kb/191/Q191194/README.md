@@ -6,6 +6,8 @@ permalink: /kb/191/Q191194/
 
 ## Q191194: XCLN: Error Message: Can't Read Your Internet E-mail Profile
 
+{% raw %}
+
 	Article: Q191194
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -91,3 +93,5 @@ permalink: /kb/191/Q191194/
 	
 	=============================================================================
 	
+
+{% endraw %}

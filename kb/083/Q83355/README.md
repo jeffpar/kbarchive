@@ -6,6 +6,8 @@ permalink: /kb/083/Q83355/
 
 ## Q83355: A Mouse Double-Click May Act Like a Single Click
 
+{% raw %}
+
 	Article: Q83355
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1
@@ -58,3 +60,5 @@ permalink: /kb/083/Q83355/
 	
 	=============================================================================
 	
+
+{% endraw %}

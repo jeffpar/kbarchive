@@ -6,6 +6,8 @@ permalink: /kb/129/Q129425/
 
 ## Q129425: Form Debugging Tips
 
+{% raw %}
+
 	Article: Q129425
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -92,3 +94,5 @@ permalink: /kb/129/Q129425/
 	
 	=============================================================================
 	
+
+{% endraw %}

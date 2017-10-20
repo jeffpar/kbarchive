@@ -6,6 +6,8 @@ permalink: /kb/064/Q64444/
 
 ## Q64444: CTRL Keys Not Functional on Monterey International Keyboard
 
+{% raw %}
+
 	Article: Q64444
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -57,3 +59,5 @@ permalink: /kb/064/Q64444/
 	
 	=============================================================================
 	
+
+{% endraw %}

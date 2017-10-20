@@ -6,6 +6,8 @@ permalink: /kb/245/Q245579/
 
 ## Q245579: SMS: Secondary Site Does Not Decompress Package
 
+{% raw %}
+
 	Article: Q245579
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -107,3 +109,5 @@ permalink: /kb/245/Q245579/
 	
 	=============================================================================
 	
+
+{% endraw %}

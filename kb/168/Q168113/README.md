@@ -6,6 +6,8 @@ permalink: /kb/168/Q168113/
 
 ## Q168113: Using Windows 95 PowerToys with Windows NT 4.0
 
+{% raw %}
+
 	Article: Q168113
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -122,3 +124,5 @@ permalink: /kb/168/Q168113/
 	
 	=============================================================================
 	
+
+{% endraw %}

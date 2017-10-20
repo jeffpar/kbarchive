@@ -6,6 +6,8 @@ permalink: /kb/193/Q193237/
 
 ## Q193237: Quota Advisor Causes STOP 0x00000024
 
+{% raw %}
+
 	Article: Q193237
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/193/Q193237/
 	
 	=============================================================================
 	
+
+{% endraw %}

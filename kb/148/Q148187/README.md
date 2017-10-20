@@ -6,6 +6,8 @@ permalink: /kb/148/Q148187/
 
 ## Q148187: BUG: Debugger Cannot Display Renamed Module Variables
 
+{% raw %}
+
 	Article: Q148187
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -91,3 +93,5 @@ permalink: /kb/148/Q148187/
 	
 	=============================================================================
 	
+
+{% endraw %}

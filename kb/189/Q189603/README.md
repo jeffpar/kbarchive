@@ -6,6 +6,8 @@ permalink: /kb/189/Q189603/
 
 ## Q189603: INFO: NewObject Command Respects the SET PROCEDURE Command
 
+{% raw %}
+
 	Article: Q189603
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -71,3 +73,5 @@ permalink: /kb/189/Q189603/
 	
 	=============================================================================
 	
+
+{% endraw %}

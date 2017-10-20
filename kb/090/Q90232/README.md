@@ -6,6 +6,8 @@ permalink: /kb/090/Q90232/
 
 ## Q90232: Shared Folder Icons May Revert to Standard Folder Icons
 
+{% raw %}
+
 	Article: Q90232
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/090/Q90232/
 	
 	=============================================================================
 	
+
+{% endraw %}

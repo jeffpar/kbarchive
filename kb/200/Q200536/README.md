@@ -6,6 +6,8 @@ permalink: /kb/200/Q200536/
 
 ## Q200536: SMS: Remote Control Does Not Have Inactivity Time-Out
 
+{% raw %}
+
 	Article: Q200536
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -54,3 +56,5 @@ permalink: /kb/200/Q200536/
 	
 	=============================================================================
 	
+
+{% endraw %}

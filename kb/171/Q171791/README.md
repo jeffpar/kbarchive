@@ -6,6 +6,8 @@ permalink: /kb/171/Q171791/
 
 ## Q171791: Creating Dependencies in Microsoft Cluster Server
 
+{% raw %}
+
 	Article: Q171791
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -81,3 +83,5 @@ permalink: /kb/171/Q171791/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125698/
 
 ## Q125698: HOWTO: Obtain Microsoft WinG SDK and General Overview of WinG
 
+{% raw %}
+
 	Article: Q125698
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 1.0
@@ -118,3 +120,5 @@ permalink: /kb/125/Q125698/
 	
 	=============================================================================
 	
+
+{% endraw %}

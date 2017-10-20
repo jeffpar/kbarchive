@@ -6,6 +6,8 @@ permalink: /kb/157/Q157673/
 
 ## Q157673: Policy Not Updated on Workstation
 
+{% raw %}
+
 	Article: Q157673
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -83,3 +85,5 @@ permalink: /kb/157/Q157673/
 	
 	=============================================================================
 	
+
+{% endraw %}

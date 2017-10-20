@@ -6,6 +6,8 @@ permalink: /kb/226/Q226328/
 
 ## Q226328: XWEB: OWA Crash in CDOHTML!CTableView::IsSameAs
 
+{% raw %}
+
 	Article: Q226328
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -89,3 +91,5 @@ permalink: /kb/226/Q226328/
 	
 	=============================================================================
 	
+
+{% endraw %}

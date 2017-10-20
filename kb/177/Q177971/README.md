@@ -6,6 +6,8 @@ permalink: /kb/177/Q177971/
 
 ## Q177971: WD97: Type Mismatch Error Running Converted WordBasic Macro
 
+{% raw %}
+
 	Article: Q177971
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/177/Q177971/
 	
 	=============================================================================
 	
+
+{% endraw %}

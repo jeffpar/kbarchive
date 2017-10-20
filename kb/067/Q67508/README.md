@@ -6,6 +6,8 @@ permalink: /kb/067/Q67508/
 
 ## Q67508: BIOS Version for Tandy 3000 Computers
 
+{% raw %}
+
 	Article: Q67508
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/067/Q67508/
 	
 	=============================================================================
 	
+
+{% endraw %}

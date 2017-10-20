@@ -6,6 +6,8 @@ permalink: /kb/135/Q135771/
 
 ## Q135771: SMS Setup User Interface Shows Duplicate Options
 
+{% raw %}
+
 	Article: Q135771
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -43,3 +45,5 @@ permalink: /kb/135/Q135771/
 	
 	=============================================================================
 	
+
+{% endraw %}

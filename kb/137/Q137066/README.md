@@ -6,6 +6,8 @@ permalink: /kb/137/Q137066/
 
 ## Q137066: Local Netware Connections may be Dropped
 
+{% raw %}
+
 	Article: Q137066
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -73,3 +75,5 @@ permalink: /kb/137/Q137066/
 	
 	=============================================================================
 	
+
+{% endraw %}

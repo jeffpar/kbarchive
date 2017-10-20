@@ -6,6 +6,8 @@ permalink: /kb/099/Q99056/
 
 ## Q99056: PC Forms: Electronic Forms Designer Cache
 
+{% raw %}
+
 	Article: Q99056
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -47,3 +49,5 @@ permalink: /kb/099/Q99056/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168514/
 
 ## Q168514: XFOR: Rasphone.pbk Cannot Be Accessed
 
+{% raw %}
+
 	Article: Q168514
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/168/Q168514/
 	
 	=============================================================================
 	
+
+{% endraw %}

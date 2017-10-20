@@ -6,6 +6,8 @@ permalink: /kb/235/Q235450/
 
 ## Q235450: XGEN: Exchange 5.5 SP3 InterOrg Replication Release Notes Update
 
+{% raw %}
+
 	Article: Q235450
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -35,3 +37,5 @@ permalink: /kb/235/Q235450/
 	
 	=============================================================================
 	
+
+{% endraw %}

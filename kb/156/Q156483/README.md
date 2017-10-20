@@ -6,6 +6,8 @@ permalink: /kb/156/Q156483/
 
 ## Q156483: Support for Diamond Stealth64 Graphics 2001 Series Video Card
 
+{% raw %}
+
 	Article: Q156483
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/156/Q156483/
 	
 	=============================================================================
 	
+
+{% endraw %}

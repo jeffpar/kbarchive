@@ -6,6 +6,8 @@ permalink: /kb/092/Q92647/
 
 ## Q92647: WinFax Pro 2.0 and Windows 3.1: Troubleshooting Information
 
+{% raw %}
+
 	Article: Q92647
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -153,3 +155,5 @@ permalink: /kb/092/Q92647/
 	
 	=============================================================================
 	
+
+{% endraw %}

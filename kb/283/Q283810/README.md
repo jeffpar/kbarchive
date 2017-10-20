@@ -6,6 +6,8 @@ permalink: /kb/283/Q283810/
 
 ## Q283810: W97/Ethan.A Macro Virus Alters .doc Properties
 
+{% raw %}
+
 	Article: Q283810
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/283/Q283810/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118784/
 
 ## Q118784: SMTP: Time on Gateway Screen and Log File
 
+{% raw %}
+
 	Article: Q118784
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -43,3 +45,5 @@ permalink: /kb/118/Q118784/
 	
 	=============================================================================
 	
+
+{% endraw %}

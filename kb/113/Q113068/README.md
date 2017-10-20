@@ -6,6 +6,8 @@ permalink: /kb/113/Q113068/
 
 ## Q113068: WFWG File Manager Shows Server in Wrong Workgroup
 
+{% raw %}
+
 	Article: Q113068
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11; WINDOWS:3.11
@@ -52,3 +54,5 @@ permalink: /kb/113/Q113068/
 	
 	=============================================================================
 	
+
+{% endraw %}

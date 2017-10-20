@@ -6,6 +6,8 @@ permalink: /kb/187/Q187421/
 
 ## Q187421: TC Manager Puts Icons in the Program Group
 
+{% raw %}
+
 	Article: Q187421
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/187/Q187421/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123106/
 
 ## Q123106: SMS Inventory Disables Speaker on Client Computer
 
+{% raw %}
+
 	Article: Q123106
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -62,3 +64,5 @@ permalink: /kb/123/Q123106/
 	
 	=============================================================================
 	
+
+{% endraw %}

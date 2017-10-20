@@ -6,6 +6,8 @@ permalink: /kb/297/Q297108/
 
 ## Q297108: BUG: VB SendKeys Causes Incorrect Keyboard Status or Freeze
 
+{% raw %}
+
 	Article: Q297108
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -91,3 +93,5 @@ permalink: /kb/297/Q297108/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127729/
 
 ## Q127729: X400: Sample TP4 Configuration Files
 
+{% raw %}
+
 	Article: Q127729
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -107,3 +109,5 @@ permalink: /kb/127/Q127729/
 	
 	=============================================================================
 	
+
+{% endraw %}

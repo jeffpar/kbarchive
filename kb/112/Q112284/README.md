@@ -6,6 +6,8 @@ permalink: /kb/112/Q112284/
 
 ## Q112284: PC Ext: External -SMono Monochrome Display Switch
 
+{% raw %}
+
 	Article: Q112284
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1d,3.0,3.0a
@@ -47,3 +49,5 @@ permalink: /kb/112/Q112284/
 	
 	=============================================================================
 	
+
+{% endraw %}

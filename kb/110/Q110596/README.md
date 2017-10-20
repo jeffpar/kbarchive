@@ -6,6 +6,8 @@ permalink: /kb/110/Q110596/
 
 ## Q110596: Font Assistant: What Are .FIF Files?
 
+{% raw %}
+
 	Article: Q110596
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): ; WINDOWS:3.1,3.11
@@ -74,3 +76,5 @@ permalink: /kb/110/Q110596/
 	
 	=============================================================================
 	
+
+{% endraw %}

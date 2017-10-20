@@ -6,6 +6,8 @@ permalink: /kb/161/Q161204/
 
 ## Q161204: PPT7: WLL's May Cause Write-Up to Fail
 
+{% raw %}
+
 	Article: Q161204
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -62,3 +64,5 @@ permalink: /kb/161/Q161204/
 	
 	=============================================================================
 	
+
+{% endraw %}

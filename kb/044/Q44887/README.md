@@ -6,6 +6,8 @@ permalink: /kb/044/Q44887/
 
 ## Q44887: MEP GP Faults After Consecutive Searches.
 
+{% raw %}
+
 	Article: Q44887
 	Product(s): See article
 	Version(s): 1.00
@@ -35,3 +37,5 @@ permalink: /kb/044/Q44887/
 	
 	On the 81st search, the Microsoft Editor for Protect, generates a
 	General Protection Violation.
+
+{% endraw %}

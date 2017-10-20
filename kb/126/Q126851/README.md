@@ -6,6 +6,8 @@ permalink: /kb/126/Q126851/
 
 ## Q126851: Error Changing To Directory with Spaces Using /D Switch
 
+{% raw %}
+
 	Article: Q126851
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/126/Q126851/
 	
 	=============================================================================
 	
+
+{% endraw %}

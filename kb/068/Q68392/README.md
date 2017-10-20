@@ -6,6 +6,8 @@ permalink: /kb/068/Q68392/
 
 ## Q68392: Re-entrant Function List for C 5.10 and 6.00
 
+{% raw %}
+
 	Article: Q68392
 	Product(s): See article
 	Version(s): 5.10 6.00 6.00a
@@ -35,3 +37,5 @@ permalink: /kb/068/Q68392/
 	   labs        putch           strncmp
 	   lfind       rmdir           strncpy
 	   lsearch     segread         strnicmp
+
+{% endraw %}

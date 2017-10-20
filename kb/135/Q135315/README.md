@@ -6,6 +6,8 @@ permalink: /kb/135/Q135315/
 
 ## Q135315: CD-ROM Extras for Microsoft Windows 95 Upgrade
 
+{% raw %}
+
 	Article: Q135315
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -245,3 +247,5 @@ permalink: /kb/135/Q135315/
 	
 	=============================================================================
 	
+
+{% endraw %}

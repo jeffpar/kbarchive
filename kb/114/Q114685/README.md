@@ -6,6 +6,8 @@ permalink: /kb/114/Q114685/
 
 ## Q114685: STOP - The Parameter is Incorrect
 
+{% raw %}
+
 	Article: Q114685
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -53,3 +55,5 @@ permalink: /kb/114/Q114685/
 	
 	=============================================================================
 	
+
+{% endraw %}

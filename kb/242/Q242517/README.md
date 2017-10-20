@@ -6,6 +6,8 @@ permalink: /kb/242/Q242517/
 
 ## Q242517: AoE II: Some Screen Areas or Objects Are Black or Discolored
 
+{% raw %}
+
 	Article: Q242517
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -84,3 +86,5 @@ permalink: /kb/242/Q242517/
 	
 	=============================================================================
 	
+
+{% endraw %}

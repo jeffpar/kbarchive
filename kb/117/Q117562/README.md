@@ -6,6 +6,8 @@ permalink: /kb/117/Q117562/
 
 ## Q117562: PC Ext: IMPORT.EXE Autocreate Fails if EXTERNAL.EXE Running
 
+{% raw %}
+
 	Article: Q117562
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -99,3 +101,5 @@ permalink: /kb/117/Q117562/
 	
 	=============================================================================
 	
+
+{% endraw %}

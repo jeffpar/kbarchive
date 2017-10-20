@@ -6,6 +6,8 @@ permalink: /kb/312/Q312623/
 
 ## Q312623: Adding New Secondary User: After Choosing User Name, MSN Explore
 
+{% raw %}
+
 	Article: Q312623
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -63,3 +65,5 @@ permalink: /kb/312/Q312623/
 	
 	=============================================================================
 	
+
+{% endraw %}

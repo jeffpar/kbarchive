@@ -6,6 +6,8 @@ permalink: /kb/240/Q240029/
 
 ## Q240029: Encarta 98: Computer Hangs During Playback of Video Clips
 
+{% raw %}
+
 	Article: Q240029
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -116,3 +118,5 @@ permalink: /kb/240/Q240029/
 	
 	=============================================================================
 	
+
+{% endraw %}

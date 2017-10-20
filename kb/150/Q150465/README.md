@@ -6,6 +6,8 @@ permalink: /kb/150/Q150465/
 
 ## Q150465: Doc. Error in CPI-C Programmer's Guide - Ref. to Wincpic32.dll
 
+{% raw %}
+
 	Article: Q150465
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -48,3 +50,5 @@ permalink: /kb/150/Q150465/
 	
 	=============================================================================
 	
+
+{% endraw %}

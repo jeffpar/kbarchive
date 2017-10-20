@@ -6,6 +6,8 @@ permalink: /kb/317/Q317053/
 
 ## Q317053: &quot;STOP 0x00000067&quot; Err Msg When You Attempt to Start Windows
 
+{% raw %}
+
 	Article: Q317053
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -88,3 +90,5 @@ permalink: /kb/317/Q317053/
 	
 	=============================================================================
 	
+
+{% endraw %}

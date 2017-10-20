@@ -6,6 +6,8 @@ permalink: /kb/035/Q35274/
 
 ## Q35274: Sample Program That Makes MS OS/2 Call to DosSleep Function
 
+{% raw %}
+
 	Article: Q35274
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -37,3 +39,5 @@ permalink: /kb/035/Q35274/
 	  Print "The amount of time you slept is : ";z-x
 	END IF
 	end
+
+{% endraw %}

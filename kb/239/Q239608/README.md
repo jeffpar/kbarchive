@@ -6,6 +6,8 @@ permalink: /kb/239/Q239608/
 
 ## Q239608: Err Msg: You Are Upgrading a Version of Internet Explorer 5...
 
+{% raw %}
+
 	Article: Q239608
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/239/Q239608/
 	
 	=============================================================================
 	
+
+{% endraw %}

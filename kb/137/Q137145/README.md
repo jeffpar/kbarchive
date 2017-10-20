@@ -6,6 +6,8 @@ permalink: /kb/137/Q137145/
 
 ## Q137145: Help Buttons Disappear After Printing Network Services
 
+{% raw %}
+
 	Article: Q137145
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -38,3 +40,5 @@ permalink: /kb/137/Q137145/
 	
 	=============================================================================
 	
+
+{% endraw %}

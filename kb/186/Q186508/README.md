@@ -6,6 +6,8 @@ permalink: /kb/186/Q186508/
 
 ## Q186508: Terminal Server Commands: CONNECT
 
+{% raw %}
+
 	Article: Q186508
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -119,3 +121,5 @@ permalink: /kb/186/Q186508/
 	
 	=============================================================================
 	
+
+{% endraw %}

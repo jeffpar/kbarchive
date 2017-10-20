@@ -6,6 +6,8 @@ permalink: /kb/260/Q260542/
 
 ## Q260542: MapPoint 2001: How to Import Pushpins from Previous Versions
 
+{% raw %}
+
 	Article: Q260542
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -130,3 +132,5 @@ permalink: /kb/260/Q260542/
 	
 	=============================================================================
 	
+
+{% endraw %}

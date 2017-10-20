@@ -6,6 +6,8 @@ permalink: /kb/235/Q235782/
 
 ## Q235782: SMSINST: REG_MULTI_SZ Entries Repackaged by Installer Not Same
 
+{% raw %}
+
 	Article: Q235782
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0; winnt:2.0
@@ -59,3 +61,5 @@ permalink: /kb/235/Q235782/
 	
 	=============================================================================
 	
+
+{% endraw %}

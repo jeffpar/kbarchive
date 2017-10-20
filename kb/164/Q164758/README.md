@@ -6,6 +6,8 @@ permalink: /kb/164/Q164758/
 
 ## Q164758: Remote Procedure Call (RPC) Service Access Violation
 
+{% raw %}
+
 	Article: Q164758
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/164/Q164758/
 	
 	=============================================================================
 	
+
+{% endraw %}

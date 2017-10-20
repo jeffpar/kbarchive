@@ -6,6 +6,8 @@ permalink: /kb/210/Q210509/
 
 ## Q210509: Golf 99 Err Msg: Golf 99 Could Not Set Your Video Mode...
 
+{% raw %}
+
 	Article: Q210509
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/210/Q210509/
 	
 	=============================================================================
 	
+
+{% endraw %}

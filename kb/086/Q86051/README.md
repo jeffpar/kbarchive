@@ -6,6 +6,8 @@ permalink: /kb/086/Q86051/
 
 ## Q86051: DOC: WM_HOOKRCRESULT Message Missing from Pen Documentation
 
+{% raw %}
+
 	Article: Q86051
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/086/Q86051/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130107/
 
 ## Q130107: MS WIN NT NETWORK RES GD: 2 Ed V2 Corrections and Comments
 
+{% raw %}
+
 	Article: Q130107
 	Product(s): Microsoft Press
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/130/Q130107/
 	
 	=============================================================================
 	
+
+{% endraw %}

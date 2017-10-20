@@ -6,6 +6,8 @@ permalink: /kb/300/Q300969/
 
 ## Q300969: HOW TO: Make a COM Object and ASP Pages Run In-Process to IIS
 
+{% raw %}
+
 	Article: Q300969
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -113,3 +115,5 @@ permalink: /kb/300/Q300969/
 	
 	=============================================================================
 	
+
+{% endraw %}

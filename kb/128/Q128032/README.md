@@ -6,6 +6,8 @@ permalink: /kb/128/Q128032/
 
 ## Q128032: Baseball: Daily City Must Be Longer Than Two Characters
 
+{% raw %}
+
 	Article: Q128032
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -64,3 +66,5 @@ permalink: /kb/128/Q128032/
 	
 	=============================================================================
 	
+
+{% endraw %}

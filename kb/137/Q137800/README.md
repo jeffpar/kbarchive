@@ -6,6 +6,8 @@ permalink: /kb/137/Q137800/
 
 ## Q137800: Batch Installation Over Windows 95 May Disable Network Client
 
+{% raw %}
+
 	Article: Q137800
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -89,3 +91,5 @@ permalink: /kb/137/Q137800/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/081/Q81987/
 
 ## Q81987: Windows 3.1 May Prompt for System Disk During Network Setup
 
+{% raw %}
+
 	Article: Q81987
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/081/Q81987/
 	
 	=============================================================================
 	
+
+{% endraw %}

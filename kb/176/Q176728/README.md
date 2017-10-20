@@ -6,6 +6,8 @@ permalink: /kb/176/Q176728/
 
 ## Q176728: How to Reinstall The Microsoft Network and Microsoft Exchange
 
+{% raw %}
+
 	Article: Q176728
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0
@@ -94,3 +96,5 @@ permalink: /kb/176/Q176728/
 	
 	=============================================================================
 	
+
+{% endraw %}

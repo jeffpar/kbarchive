@@ -6,6 +6,8 @@ permalink: /kb/071/Q71125/
 
 ## Q71125: Windows 3.0 File Manager Does Not Search Entire Hard Drive
 
+{% raw %}
+
 	Article: Q71125
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -43,3 +45,5 @@ permalink: /kb/071/Q71125/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197875/
 
 ## Q197875: XWEB: OWA Send Note Applet Doesn't Display Scroll Bars, Buttons
 
+{% raw %}
+
 	Article: Q197875
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -69,3 +71,5 @@ permalink: /kb/197/Q197875/
 	
 	=============================================================================
 	
+
+{% endraw %}

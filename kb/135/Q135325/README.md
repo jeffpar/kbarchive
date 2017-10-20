@@ -6,6 +6,8 @@ permalink: /kb/135/Q135325/
 
 ## Q135325: PPT7: Presentation Conference Troubleshooting Guide
 
+{% raw %}
+
 	Article: Q135325
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -111,3 +113,5 @@ permalink: /kb/135/Q135325/
 	
 	=============================================================================
 	
+
+{% endraw %}

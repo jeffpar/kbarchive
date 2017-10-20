@@ -6,6 +6,8 @@ permalink: /kb/062/Q62305/
 
 ## Q62305: _fastcall Register Argument Has Incorrect Value
 
+{% raw %}
+
 	Article: Q62305
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -85,3 +87,5 @@ permalink: /kb/062/Q62305/
 	Microsoft has confirmed this to be a problem with C 6.00. We are
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

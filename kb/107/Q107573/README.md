@@ -6,6 +6,8 @@ permalink: /kb/107/Q107573/
 
 ## Q107573: NetWare Directories in File Manager Look as If They Are Shared
 
+{% raw %}
+
 	Article: Q107573
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -51,3 +53,5 @@ permalink: /kb/107/Q107573/
 	
 	=============================================================================
 	
+
+{% endraw %}

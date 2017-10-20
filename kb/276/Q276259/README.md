@@ -6,6 +6,8 @@ permalink: /kb/276/Q276259/
 
 ## Q276259: SMS: Send Requests Are Created with Blank Routing Instructions
 
+{% raw %}
+
 	Article: Q276259
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -122,3 +124,5 @@ permalink: /kb/276/Q276259/
 	
 	=============================================================================
 	
+
+{% endraw %}

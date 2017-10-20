@@ -6,6 +6,8 @@ permalink: /kb/184/Q184696/
 
 ## Q184696: HOWTO: Create a DCOM VBR File for a VC++ Server
 
+{% raw %}
+
 	Article: Q184696
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -340,3 +342,5 @@ permalink: /kb/184/Q184696/
 	
 	=============================================================================
 	
+
+{% endraw %}

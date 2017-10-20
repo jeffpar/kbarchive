@@ -6,6 +6,8 @@ permalink: /kb/249/Q249100/
 
 ## Q249100: XFOR: Configuring Internet Mail Service for Mail w. No DNS Entry
 
+{% raw %}
+
 	Article: Q249100
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -100,3 +102,5 @@ permalink: /kb/249/Q249100/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177761/
 
 ## Q177761: XADM: ESE97 Error Codes
 
+{% raw %}
+
 	Article: Q177761
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -439,3 +441,5 @@ permalink: /kb/177/Q177761/
 	
 	=============================================================================
 	
+
+{% endraw %}

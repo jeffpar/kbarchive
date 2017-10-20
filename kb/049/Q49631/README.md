@@ -6,6 +6,8 @@ permalink: /kb/049/Q49631/
 
 ## Q49631: /Zr Switch Causes Incorrect Code Generation
 
+{% raw %}
+
 	Article: Q49631
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -72,3 +74,5 @@ permalink: /kb/049/Q49631/
 	Microsoft has confirmed this to be a problem with with QuickC Version
 	2.00 and 2.10. We are researching this problem and will post new
 	information as it becomes available.
+
+{% endraw %}

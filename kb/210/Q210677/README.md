@@ -6,6 +6,8 @@ permalink: /kb/210/Q210677/
 
 ## Q210677: Reconnecting to Share Name with Spaces Does Not Work in SP3
 
+{% raw %}
+
 	Article: Q210677
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP3
@@ -62,3 +64,5 @@ permalink: /kb/210/Q210677/
 	
 	=============================================================================
 	
+
+{% endraw %}

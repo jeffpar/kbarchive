@@ -6,6 +6,8 @@ permalink: /kb/124/Q124567/
 
 ## Q124567: LPR.EXE Command Can Pass Control Characters to an LPD Server
 
+{% raw %}
+
 	Article: Q124567
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -81,3 +83,5 @@ permalink: /kb/124/Q124567/
 	
 	=============================================================================
 	
+
+{% endraw %}

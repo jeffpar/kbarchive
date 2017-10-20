@@ -6,6 +6,8 @@ permalink: /kb/087/Q87024/
 
 ## Q87024: SMTP: Specific Hardware Needed by the Gateway
 
+{% raw %}
+
 	Article: Q87024
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/087/Q87024/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139304/
 
 ## Q139304: PPT7: Unexpected Font Substitution Caused by Some Printer Driver
 
+{% raw %}
+
 	Article: Q139304
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -82,3 +84,5 @@ permalink: /kb/139/Q139304/
 	
 	=============================================================================
 	
+
+{% endraw %}

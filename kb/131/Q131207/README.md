@@ -6,6 +6,8 @@ permalink: /kb/131/Q131207/
 
 ## Q131207: WINS Manager Fails to Add Static Entries
 
+{% raw %}
+
 	Article: Q131207
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -57,3 +59,5 @@ permalink: /kb/131/Q131207/
 	
 	=============================================================================
 	
+
+{% endraw %}

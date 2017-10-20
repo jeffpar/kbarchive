@@ -6,6 +6,8 @@ permalink: /kb/133/Q133109/
 
 ## Q133109: Workgroup Mail Stops Responding If Schedule Plus Runs Minimized
 
+{% raw %}
+
 	Article: Q133109
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/133/Q133109/
 	
 	=============================================================================
 	
+
+{% endraw %}

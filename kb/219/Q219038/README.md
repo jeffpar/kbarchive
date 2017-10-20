@@ -6,6 +6,8 @@ permalink: /kb/219/Q219038/
 
 ## Q219038: Disabling and Removing WLBS
 
+{% raw %}
+
 	Article: Q219038
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/219/Q219038/
 	
 	=============================================================================
 	
+
+{% endraw %}

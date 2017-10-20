@@ -6,6 +6,8 @@ permalink: /kb/118/Q118541/
 
 ## Q118541: Dangerous Creatures: Line Prints on Left with HP DeskJet 500
 
+{% raw %}
+
 	Article: Q118541
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/118/Q118541/
 	
 	=============================================================================
 	
+
+{% endraw %}

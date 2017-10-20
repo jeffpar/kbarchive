@@ -6,6 +6,8 @@ permalink: /kb/083/Q83055/
 
 ## Q83055: WININI.WRI from Windows 3.1
 
+{% raw %}
+
 	Article: Q83055
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -442,3 +444,5 @@ permalink: /kb/083/Q83055/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135038/
 
 ## Q135038: Cannot Scroll Through Printer List with Keyboard in Tools
 
+{% raw %}
+
 	Article: Q135038
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/135/Q135038/
 	
 	=============================================================================
 	
+
+{% endraw %}

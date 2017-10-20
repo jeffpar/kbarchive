@@ -6,6 +6,8 @@ permalink: /kb/266/Q266512/
 
 ## Q266512: Encarta Researcher: Keyboard Shortcuts Launch IE Commands
 
+{% raw %}
+
 	Article: Q266512
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/266/Q266512/
 	
 	=============================================================================
 	
+
+{% endraw %}

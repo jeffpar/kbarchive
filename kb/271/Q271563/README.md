@@ -6,6 +6,8 @@ permalink: /kb/271/Q271563/
 
 ## Q271563: Host Name Error in DNS Properties After Changing Computer Name
 
+{% raw %}
+
 	Article: Q271563
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/271/Q271563/
 	
 	=============================================================================
 	
+
+{% endraw %}

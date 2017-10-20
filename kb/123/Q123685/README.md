@@ -6,6 +6,8 @@ permalink: /kb/123/Q123685/
 
 ## Q123685: Characteristics of MASM Labels
 
+{% raw %}
+
 	Article: Q123685
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,6.0,6.1,6.11
@@ -95,3 +97,5 @@ permalink: /kb/123/Q123685/
 	
 	=============================================================================
 	
+
+{% endraw %}

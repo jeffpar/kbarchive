@@ -6,6 +6,8 @@ permalink: /kb/100/Q100773/
 
 ## Q100773: PRB: No Symbolic Information for Local Variables
 
+{% raw %}
+
 	Article: Q100773
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,4.0,5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/100/Q100773/
 	
 	=============================================================================
 	
+
+{% endraw %}

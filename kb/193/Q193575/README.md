@@ -6,6 +6,8 @@ permalink: /kb/193/Q193575/
 
 ## Q193575: BUG: Duplicate Hot Key &quot;Join Source Control Project&quot; Dialog
 
+{% raw %}
+
 	Article: Q193575
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -74,3 +76,5 @@ permalink: /kb/193/Q193575/
 	
 	=============================================================================
 	
+
+{% endraw %}

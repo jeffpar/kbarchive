@@ -6,6 +6,8 @@ permalink: /kb/178/Q178786/
 
 ## Q178786: PCMAIL: GFEXTEND 1 2 Required for Extended Characters Using GCAS
 
+{% raw %}
+
 	Article: Q178786
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a,3.5
@@ -80,3 +82,5 @@ permalink: /kb/178/Q178786/
 	
 	=============================================================================
 	
+
+{% endraw %}

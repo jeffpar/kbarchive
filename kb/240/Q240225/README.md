@@ -6,6 +6,8 @@ permalink: /kb/240/Q240225/
 
 ## Q240225: Description of Adsutil and MetaEdit Used to Modify the Metabase
 
+{% raw %}
+
 	Article: Q240225
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -108,3 +110,5 @@ permalink: /kb/240/Q240225/
 	
 	=============================================================================
 	
+
+{% endraw %}

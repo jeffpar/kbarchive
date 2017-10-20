@@ -6,6 +6,8 @@ permalink: /kb/115/Q115354/
 
 ## Q115354: X400: -BR option and Non-zero Restart Interval Cause ERROR 0
 
+{% raw %}
+
 	Article: Q115354
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -52,3 +54,5 @@ permalink: /kb/115/Q115354/
 	
 	=============================================================================
 	
+
+{% endraw %}

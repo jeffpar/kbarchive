@@ -6,6 +6,8 @@ permalink: /kb/285/Q285213/
 
 ## Q285213: Combat Flight Simulator 2: Sound or Frame Rate Issues
 
+{% raw %}
+
 	Article: Q285213
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -156,3 +158,5 @@ permalink: /kb/285/Q285213/
 	
 	=============================================================================
 	
+
+{% endraw %}

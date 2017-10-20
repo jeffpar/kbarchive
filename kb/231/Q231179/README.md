@@ -6,6 +6,8 @@ permalink: /kb/231/Q231179/
 
 ## Q231179: FP98SE: Heap Corruption, Memory Leak Occurs Performing Queries
 
+{% raw %}
+
 	Article: Q231179
 	Product(s): Word Front Page
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/231/Q231179/
 	
 	=============================================================================
 	
+
+{% endraw %}

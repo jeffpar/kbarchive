@@ -6,6 +6,8 @@ permalink: /kb/142/Q142553/
 
 ## Q142553: How to Create an Engraved Effect on a Form
 
+{% raw %}
+
 	Article: Q142553
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -71,3 +73,5 @@ permalink: /kb/142/Q142553/
 	
 	=============================================================================
 	
+
+{% endraw %}

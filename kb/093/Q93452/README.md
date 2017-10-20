@@ -6,6 +6,8 @@ permalink: /kb/093/Q93452/
 
 ## Q93452: NETWORKS.WRI from Windows for Workgroups Version 3.1
 
+{% raw %}
+
 	Article: Q93452
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -487,3 +489,5 @@ permalink: /kb/093/Q93452/
 	
 	=============================================================================
 	
+
+{% endraw %}

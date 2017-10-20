@@ -6,6 +6,8 @@ permalink: /kb/275/Q275469/
 
 ## Q275469: APPC Load Balancing May Fail to Choose &quot;Best&quot; SNA Server
 
+{% raw %}
+
 	Article: Q275469
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -89,3 +91,5 @@ permalink: /kb/275/Q275469/
 	
 	=============================================================================
 	
+
+{% endraw %}

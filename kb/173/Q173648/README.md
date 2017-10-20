@@ -6,6 +6,8 @@ permalink: /kb/173/Q173648/
 
 ## Q173648: HOWTO: Updating an Oracle Table Using DBGrid and RDO
 
+{% raw %}
+
 	Article: Q173648
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -80,3 +82,5 @@ permalink: /kb/173/Q173648/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68874/
 
 ## Q68874: Using ANSI.SYS Escape Codes with printf() for Screen Control
 
+{% raw %}
+
 	Article: Q68874
 	Product(s): See article
 	Version(s): 3.x 4.x 5.x 6.00 6.00a | 5.10 6.00 6.00a
@@ -62,3 +64,5 @@ permalink: /kb/068/Q68874/
 	except the Presentation Manager. To enable ANSI support in the DOS
 	box, a line must be added to the CONFIG.SYS file. See your OS/2
 	documentation for more information on the exact syntax.
+
+{% endraw %}

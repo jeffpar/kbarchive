@@ -6,6 +6,8 @@ permalink: /kb/221/Q221707/
 
 ## Q221707: FIX: Trace Breaks Too Often With Breakpoint on SET(&quot;NULL&quot;)
 
+{% raw %}
+
 	Article: Q221707
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a,6.0
@@ -80,3 +82,5 @@ permalink: /kb/221/Q221707/
 	
 	=============================================================================
 	
+
+{% endraw %}

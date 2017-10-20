@@ -6,6 +6,8 @@ permalink: /kb/134/Q134500/
 
 ## Q134500: Problems Saving Game in Chessmaster 2000
 
+{% raw %}
+
 	Article: Q134500
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -54,3 +56,5 @@ permalink: /kb/134/Q134500/
 	
 	=============================================================================
 	
+
+{% endraw %}

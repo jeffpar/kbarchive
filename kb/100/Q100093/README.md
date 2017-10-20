@@ -6,6 +6,8 @@ permalink: /kb/100/Q100093/
 
 ## Q100093: &quot;Invalid File Format&quot; Error When Launching MindMaze
 
+{% raw %}
+
 	Article: Q100093
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1993 edition
@@ -64,3 +66,5 @@ permalink: /kb/100/Q100093/
 	
 	=============================================================================
 	
+
+{% endraw %}

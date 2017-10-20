@@ -6,6 +6,8 @@ permalink: /kb/096/Q96832/
 
 ## Q96832: Setup Stops Before Completing Upgrade
 
+{% raw %}
+
 	Article: Q96832
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21
@@ -87,3 +89,5 @@ permalink: /kb/096/Q96832/
 	
 	=============================================================================
 	
+
+{% endraw %}

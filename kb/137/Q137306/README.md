@@ -6,6 +6,8 @@ permalink: /kb/137/Q137306/
 
 ## Q137306: Fonts Incorrectly Displayed During Windows 95 Remote Control
 
+{% raw %}
+
 	Article: Q137306
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -45,3 +47,5 @@ permalink: /kb/137/Q137306/
 	
 	=============================================================================
 	
+
+{% endraw %}

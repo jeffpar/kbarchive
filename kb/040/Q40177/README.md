@@ -6,6 +6,8 @@ permalink: /kb/040/Q40177/
 
 ## Q40177: Redirecting Errors to an Error File in M
 
+{% raw %}
+
 	Article: Q40177
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -18,3 +20,5 @@ permalink: /kb/040/Q40177/
 	variable points to. If TMP is not set, this file is located in
 	the current working directory. Under OS/2, MEP uses named pipes, so
 	there is no file to look at.
+
+{% endraw %}

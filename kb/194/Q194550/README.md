@@ -6,6 +6,8 @@ permalink: /kb/194/Q194550/
 
 ## Q194550: FIX: Freeing Memory Multiple Times May Cause an Access Violation
 
+{% raw %}
+
 	Article: Q194550
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -120,3 +122,5 @@ permalink: /kb/194/Q194550/
 	
 	=============================================================================
 	
+
+{% endraw %}

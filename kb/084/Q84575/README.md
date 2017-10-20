@@ -6,6 +6,8 @@ permalink: /kb/084/Q84575/
 
 ## Q84575: Windows 3.1: Troubleshooting Creating a Permanent Swap File
 
+{% raw %}
+
 	Article: Q84575
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -77,3 +79,5 @@ permalink: /kb/084/Q84575/
 	
 	=============================================================================
 	
+
+{% endraw %}

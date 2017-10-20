@@ -6,6 +6,8 @@ permalink: /kb/169/Q169916/
 
 ## Q169916: Linksnif.exe does not Contain Scroll Bars
 
+{% raw %}
+
 	Article: Q169916
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -58,3 +60,5 @@ permalink: /kb/169/Q169916/
 	
 	=============================================================================
 	
+
+{% endraw %}

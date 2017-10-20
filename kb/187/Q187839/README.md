@@ -6,6 +6,8 @@ permalink: /kb/187/Q187839/
 
 ## Q187839: XCLN: Runtime Error 367: Unable To Register Msriched.vbx
 
+{% raw %}
+
 	Article: Q187839
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -52,3 +54,5 @@ permalink: /kb/187/Q187839/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193063/
 
 ## Q193063: FP97: Sample JavaScript Code to Redirect Page Based on Browser
 
+{% raw %}
+
 	Article: Q193063
 	Product(s): Word Front Page
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/193/Q193063/
 	
 	=============================================================================
 	
+
+{% endraw %}

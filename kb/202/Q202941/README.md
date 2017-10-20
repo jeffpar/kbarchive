@@ -6,6 +6,8 @@ permalink: /kb/202/Q202941/
 
 ## Q202941: SMS: Systems Management Server International Client Packs
 
+{% raw %}
+
 	Article: Q202941
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0,2.0 SP1,2.0 SP2
@@ -148,3 +150,5 @@ permalink: /kb/202/Q202941/
 	
 	=============================================================================
 	
+
+{% endraw %}

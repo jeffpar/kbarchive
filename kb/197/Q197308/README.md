@@ -6,6 +6,8 @@ permalink: /kb/197/Q197308/
 
 ## Q197308: How to Obtain a Copy of a Notes Database Design Only?
 
+{% raw %}
+
 	Article: Q197308
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -66,3 +68,5 @@ permalink: /kb/197/Q197308/
 	
 	=============================================================================
 	
+
+{% endraw %}

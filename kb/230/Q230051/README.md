@@ -6,6 +6,8 @@ permalink: /kb/230/Q230051/
 
 ## Q230051: XFOR: Internet Mail Connector Dial-Up Connection Stops Working
 
+{% raw %}
+
 	Article: Q230051
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/230/Q230051/
 	
 	=============================================================================
 	
+
+{% endraw %}

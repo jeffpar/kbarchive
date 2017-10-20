@@ -6,6 +6,8 @@ permalink: /kb/249/Q249905/
 
 ## Q249905: Cannot Access SQL Database from Cold Fusion Applications
 
+{% raw %}
+
 	Article: Q249905
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/249/Q249905/
 	
 	=============================================================================
 	
+
+{% endraw %}

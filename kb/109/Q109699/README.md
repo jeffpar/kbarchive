@@ -6,6 +6,8 @@ permalink: /kb/109/Q109699/
 
 ## Q109699: PC WSPlus: Sending a Meeting Request for a Busy Resource
 
+{% raw %}
+
 	Article: Q109699
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -44,3 +46,5 @@ permalink: /kb/109/Q109699/
 	
 	=============================================================================
 	
+
+{% endraw %}

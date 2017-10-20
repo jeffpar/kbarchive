@@ -6,6 +6,8 @@ permalink: /kb/052/Q52140/
 
 ## Q52140: PG Chart Legend Window Is Restricted to Default Coordinates
 
+{% raw %}
+
 	Article: Q52140
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -123,3 +125,5 @@ permalink: /kb/052/Q52140/
 	          env.legend.legendwindow.y2);
 	   return(0);
 	}
+
+{% endraw %}

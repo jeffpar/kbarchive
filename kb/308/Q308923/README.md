@@ -6,6 +6,8 @@ permalink: /kb/308/Q308923/
 
 ## Q308923: Streets and Trips 2002: Windows Installer Error Message
 
+{% raw %}
+
 	Article: Q308923
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -174,3 +176,5 @@ permalink: /kb/308/Q308923/
 	
 	=============================================================================
 	
+
+{% endraw %}

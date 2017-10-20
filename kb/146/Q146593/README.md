@@ -6,6 +6,8 @@ permalink: /kb/146/Q146593/
 
 ## Q146593: WD97: Corrupted Field Codes in Header or Footer
 
+{% raw %}
+
 	Article: Q146593
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -134,3 +136,5 @@ permalink: /kb/146/Q146593/
 	
 	=============================================================================
 	
+
+{% endraw %}

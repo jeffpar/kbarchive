@@ -6,6 +6,8 @@ permalink: /kb/149/Q149184/
 
 ## Q149184: How to Convert a RGBCOMP() Value into Component Values
 
+{% raw %}
+
 	Article: Q149184
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -83,3 +85,5 @@ permalink: /kb/149/Q149184/
 	
 	=============================================================================
 	
+
+{% endraw %}

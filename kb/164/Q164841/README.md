@@ -6,6 +6,8 @@ permalink: /kb/164/Q164841/
 
 ## Q164841: XCON: Messages Stuck in MTA Queues
 
+{% raw %}
+
 	Article: Q164841
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/164/Q164841/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/062/Q62211/
 
 ## Q62211: &quot;Out of String Space&quot; Using DB/lib
 
+{% raw %}
+
 	Article: Q62211
 	Product(s): See article
 	Version(s): 4.50
@@ -26,3 +28,5 @@ permalink: /kb/062/Q62211/
 	Publishing, the developer of DB/lib, has confirmed the above
 	information about the DBPOOL environment variable and the possibility
 	of a memory conflict with QuickBASIC.
+
+{% endraw %}

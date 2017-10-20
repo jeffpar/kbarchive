@@ -6,6 +6,8 @@ permalink: /kb/136/Q136675/
 
 ## Q136675: Changing Sound Blaster 16 HDMA Settings in Windows 95/98
 
+{% raw %}
+
 	Article: Q136675
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,2.0
@@ -160,3 +162,5 @@ permalink: /kb/136/Q136675/
 	
 	=============================================================================
 	
+
+{% endraw %}

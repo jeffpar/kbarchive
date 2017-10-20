@@ -6,6 +6,8 @@ permalink: /kb/093/Q93456/
 
 ## Q93456: SYSINI.WRI from Windows for Workgroups Version 3.1 (Part B)
 
+{% raw %}
+
 	Article: Q93456
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -468,3 +470,5 @@ permalink: /kb/093/Q93456/
 	
 	=============================================================================
 	
+
+{% endraw %}

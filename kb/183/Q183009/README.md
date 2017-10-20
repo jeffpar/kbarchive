@@ -6,6 +6,8 @@ permalink: /kb/183/Q183009/
 
 ## Q183009: HOWTO: Enumerate Windows Using the WIN32 API
 
+{% raw %}
+
 	Article: Q183009
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -250,3 +252,5 @@ permalink: /kb/183/Q183009/
 	
 	=============================================================================
 	
+
+{% endraw %}

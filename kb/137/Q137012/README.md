@@ -6,6 +6,8 @@ permalink: /kb/137/Q137012/
 
 ## Q137012: CD-ROM Drive Not Recognized with BusLogic 946C SCSI Controller
 
+{% raw %}
+
 	Article: Q137012
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/137/Q137012/
 	
 	=============================================================================
 	
+
+{% endraw %}

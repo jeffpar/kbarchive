@@ -6,6 +6,8 @@ permalink: /kb/223/Q223092/
 
 ## Q223092: FIX: Using VB with Modal Form Fails in Internet Explorer
 
+{% raw %}
+
 	Article: Q223092
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.01 SP1,4.01 SP2,5.0,6.0
@@ -138,3 +140,5 @@ permalink: /kb/223/Q223092/
 	
 	=============================================================================
 	
+
+{% endraw %}

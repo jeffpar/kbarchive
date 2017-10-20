@@ -6,6 +6,8 @@ permalink: /kb/164/Q164983/
 
 ## Q164983: HOWTO: Do Asynchronous WinInet with MFC Classes
 
+{% raw %}
+
 	Article: Q164983
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.0; winnt:5.0,6.0
@@ -74,3 +76,5 @@ permalink: /kb/164/Q164983/
 	
 	=============================================================================
 	
+
+{% endraw %}

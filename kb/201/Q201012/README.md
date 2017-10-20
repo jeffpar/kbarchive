@@ -6,6 +6,8 @@ permalink: /kb/201/Q201012/
 
 ## Q201012: XADM: Error Accessing Properties of Mailbox Cleanup Agent
 
+{% raw %}
+
 	Article: Q201012
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/201/Q201012/
 	
 	=============================================================================
 	
+
+{% endraw %}

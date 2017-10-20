@@ -6,6 +6,8 @@ permalink: /kb/152/Q152838/
 
 ## Q152838: Mail Could Not Connect To Your Mail Server
 
+{% raw %}
+
 	Article: Q152838
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -57,3 +59,5 @@ permalink: /kb/152/Q152838/
 	
 	=============================================================================
 	
+
+{% endraw %}

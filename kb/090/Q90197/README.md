@@ -6,6 +6,8 @@ permalink: /kb/090/Q90197/
 
 ## Q90197: WFWG Err Msg: Invalid or Missing COMMAND.COM
 
+{% raw %}
+
 	Article: Q90197
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/090/Q90197/
 	
 	=============================================================================
 	
+
+{% endraw %}

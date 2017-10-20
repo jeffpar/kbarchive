@@ -6,6 +6,8 @@ permalink: /kb/166/Q166938/
 
 ## Q166938: HOWTO: Find Users Connected to an Access 7.0 Database
 
+{% raw %}
+
 	Article: Q166938
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -244,3 +246,5 @@ permalink: /kb/166/Q166938/
 	
 	=============================================================================
 	
+
+{% endraw %}

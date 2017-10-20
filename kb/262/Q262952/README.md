@@ -6,6 +6,8 @@ permalink: /kb/262/Q262952/
 
 ## Q262952: XFOR: Routing Cost on Exchange Connectors
 
+{% raw %}
+
 	Article: Q262952
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -46,3 +48,5 @@ permalink: /kb/262/Q262952/
 	
 	=============================================================================
 	
+
+{% endraw %}

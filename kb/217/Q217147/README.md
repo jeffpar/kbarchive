@@ -6,6 +6,8 @@ permalink: /kb/217/Q217147/
 
 ## Q217147: How to Restart Cluster Server After Clusdb Corruption
 
+{% raw %}
+
 	Article: Q217147
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -329,3 +331,5 @@ permalink: /kb/217/Q217147/
 	
 	=============================================================================
 	
+
+{% endraw %}

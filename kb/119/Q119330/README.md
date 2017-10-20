@@ -6,6 +6,8 @@ permalink: /kb/119/Q119330/
 
 ## Q119330: FIX: TAB-Indented Lines Are Not Cut or Copied with New Line
 
+{% raw %}
+
 	Article: Q119330
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -72,3 +74,5 @@ permalink: /kb/119/Q119330/
 	
 	=============================================================================
 	
+
+{% endraw %}

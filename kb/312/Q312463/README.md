@@ -6,6 +6,8 @@ permalink: /kb/312/Q312463/
 
 ## Q312463: FS: &quot;Scenery Read Error&quot; Err Msg When Starting Flight
 
+{% raw %}
+
 	Article: Q312463
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -239,3 +241,5 @@ permalink: /kb/312/Q312463/
 	
 	=============================================================================
 	
+
+{% endraw %}

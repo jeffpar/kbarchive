@@ -6,6 +6,8 @@ permalink: /kb/064/Q64899/
 
 ## Q64899: QBX.EXE Color Loss &amp; Hang on VGA on Tecmar BIOS 1.02; 1.11 OK
 
+{% raw %}
+
 	Article: Q64899
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -25,3 +27,5 @@ permalink: /kb/064/Q64899/
 	
 	This information applies to Microsoft BASIC Professional Development
 	System (PDS) versions 7.00 and 7.10 for MS-DOS.
+
+{% endraw %}

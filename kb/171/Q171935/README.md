@@ -6,6 +6,8 @@ permalink: /kb/171/Q171935/
 
 ## Q171935: TN3270 Server Incorrectly Truncates Last Character of SSCP Data
 
+{% raw %}
+
 	Article: Q171935
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
@@ -62,3 +64,5 @@ permalink: /kb/171/Q171935/
 	
 	=============================================================================
 	
+
+{% endraw %}

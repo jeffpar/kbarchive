@@ -6,6 +6,8 @@ permalink: /kb/031/Q31484/
 
 ## Q31484: In 4.00b, PEN(0) Returns Zero in QB.EXE or Compiled BC /V
 
+{% raw %}
+
 	Article: Q31484
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -39,3 +41,5 @@ permalink: /kb/031/Q31484/
 	      NEXT i%  'Delay loop for readability
 	      PRINT PEN(0)
 	   WEND
+
+{% endraw %}

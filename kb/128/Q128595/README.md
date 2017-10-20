@@ -6,6 +6,8 @@ permalink: /kb/128/Q128595/
 
 ## Q128595: Default Wavemix.ini from Arcade 1.0
 
+{% raw %}
+
 	Article: Q128595
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -138,3 +140,5 @@ permalink: /kb/128/Q128595/
 	
 	=============================================================================
 	
+
+{% endraw %}

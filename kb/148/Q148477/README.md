@@ -6,6 +6,8 @@ permalink: /kb/148/Q148477/
 
 ## Q148477: Golf Err Msg with Windows 95/98: Could Not Find Directory
 
+{% raw %}
+
 	Article: Q148477
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0,2.0a
@@ -96,3 +98,5 @@ permalink: /kb/148/Q148477/
 	
 	=============================================================================
 	
+
+{% endraw %}

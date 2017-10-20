@@ -6,6 +6,8 @@ permalink: /kb/154/Q154419/
 
 ## Q154419: INFO: Standard C++ Library Frequently Asked Questions
 
+{% raw %}
+
 	Article: Q154419
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -365,3 +367,5 @@ permalink: /kb/154/Q154419/
 	
 	=============================================================================
 	
+
+{% endraw %}

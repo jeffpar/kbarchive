@@ -6,6 +6,8 @@ permalink: /kb/173/Q173250/
 
 ## Q173250: Cannot Read Help Files Due To Missing Winhlp32.exe
 
+{% raw %}
+
 	Article: Q173250
 	Product(s): Microsoft Press
 	Version(s): 
@@ -124,3 +126,5 @@ permalink: /kb/173/Q173250/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216858/
 
 ## Q216858: HOWTO: Quick Sorting Using MFC CArray-Derived Classes
 
+{% raw %}
+
 	Article: Q216858
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -178,3 +180,5 @@ permalink: /kb/216/Q216858/
 	
 	=============================================================================
 	
+
+{% endraw %}

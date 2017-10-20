@@ -6,6 +6,8 @@ permalink: /kb/146/Q146473/
 
 ## Q146473: XFOR: Attachment with Name of Charset = iso-2022-JP
 
+{% raw %}
+
 	Article: Q146473
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/146/Q146473/
 	
 	=============================================================================
 	
+
+{% endraw %}

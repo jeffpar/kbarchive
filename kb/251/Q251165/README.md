@@ -6,6 +6,8 @@ permalink: /kb/251/Q251165/
 
 ## Q251165: XCLN: Adding Contacts to Secondary Contacts Folder in Outlook
 
+{% raw %}
+
 	Article: Q251165
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -105,3 +107,5 @@ permalink: /kb/251/Q251165/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147948/
 
 ## Q147948: FIX: Errors Occur Using DAO CLongBinary Data from Database
 
+{% raw %}
+
 	Article: Q147948
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10
@@ -102,3 +104,5 @@ permalink: /kb/147/Q147948/
 	
 	=============================================================================
 	
+
+{% endraw %}

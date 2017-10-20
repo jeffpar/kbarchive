@@ -6,6 +6,8 @@ permalink: /kb/282/Q282233/
 
 ## Q282233: BUG: Access Denied Recompiling VB Project with Public UDT
 
+{% raw %}
+
 	Article: Q282233
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -104,3 +106,5 @@ permalink: /kb/282/Q282233/
 	
 	=============================================================================
 	
+
+{% endraw %}

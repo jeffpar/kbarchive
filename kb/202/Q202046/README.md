@@ -6,6 +6,8 @@ permalink: /kb/202/Q202046/
 
 ## Q202046: SMS: Remote Control Supports Microsoft TCP/IP Stack Only
 
+{% raw %}
+
 	Article: Q202046
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -37,3 +39,5 @@ permalink: /kb/202/Q202046/
 	
 	=============================================================================
 	
+
+{% endraw %}

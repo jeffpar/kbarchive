@@ -6,6 +6,8 @@ permalink: /kb/308/Q308225/
 
 ## Q308225: Error Message: Windows Installer Internal Error 2889_ISAPATHDLG
 
+{% raw %}
+
 	Article: Q308225
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,4.0
@@ -114,3 +116,5 @@ permalink: /kb/308/Q308225/
 	
 	=============================================================================
 	
+
+{% endraw %}

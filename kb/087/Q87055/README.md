@@ -6,6 +6,8 @@ permalink: /kb/087/Q87055/
 
 ## Q87055: MCI: Reference Material Available for Installation
 
+{% raw %}
+
 	Article: Q87055
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -44,3 +46,5 @@ permalink: /kb/087/Q87055/
 	
 	=============================================================================
 	
+
+{% endraw %}

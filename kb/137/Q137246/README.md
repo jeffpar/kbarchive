@@ -6,6 +6,8 @@ permalink: /kb/137/Q137246/
 
 ## Q137246: Windows 3.x APPC Application Fails with F002 (AP_TP_BUSY) Error
 
+{% raw %}
+
 	Article: Q137246
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -92,3 +94,5 @@ permalink: /kb/137/Q137246/
 	
 	=============================================================================
 	
+
+{% endraw %}

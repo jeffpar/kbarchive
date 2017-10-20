@@ -6,6 +6,8 @@ permalink: /kb/086/Q86264/
 
 ## Q86264: Cannot Destroy Default Windows Help Menus and Buttons
 
+{% raw %}
+
 	Article: Q86264
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/086/Q86264/
 	
 	=============================================================================
 	
+
+{% endraw %}

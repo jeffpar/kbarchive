@@ -6,6 +6,8 @@ permalink: /kb/191/Q191638/
 
 ## Q191638: HOWTO: Programmatically Access the Registry in Visual FoxPro
 
+{% raw %}
+
 	Article: Q191638
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,6.0
@@ -185,3 +187,5 @@ permalink: /kb/191/Q191638/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198509/
 
 ## Q198509: XWEB: &quot;Unable to get your inbox&quot; Using OWA via Proxy Server
 
+{% raw %}
+
 	Article: Q198509
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5,5.5SP1; WINNT:1.0,2.0
@@ -62,3 +64,5 @@ permalink: /kb/198/Q198509/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241161/
 
 ## Q241161: NBA Inside Drive 2000: Reflected Light Appears as White Patches
 
+{% raw %}
+
 	Article: Q241161
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/241/Q241161/
 	
 	=============================================================================
 	
+
+{% endraw %}

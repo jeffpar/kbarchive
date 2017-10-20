@@ -6,6 +6,8 @@ permalink: /kb/089/Q89957/
 
 ## Q89957: Sound Finder Ignores Working Directory Setting
 
+{% raw %}
+
 	Article: Q89957
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/089/Q89957/
 	
 	=============================================================================
 	
+
+{% endraw %}

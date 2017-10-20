@@ -6,6 +6,8 @@ permalink: /kb/132/Q132155/
 
 ## Q132155: Sybase SQLServer Services Fail to Start
 
+{% raw %}
+
 	Article: Q132155
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -104,3 +106,5 @@ permalink: /kb/132/Q132155/
 	
 	=============================================================================
 	
+
+{% endraw %}

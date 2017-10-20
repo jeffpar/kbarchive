@@ -6,6 +6,8 @@ permalink: /kb/157/Q157299/
 
 ## Q157299: WD97: Where to Find Word 6.x or 7.x Commands and Features
 
+{% raw %}
+
 	Article: Q157299
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -185,3 +187,5 @@ permalink: /kb/157/Q157299/
 	
 	=============================================================================
 	
+
+{% endraw %}

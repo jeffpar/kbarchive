@@ -6,6 +6,8 @@ permalink: /kb/140/Q140961/
 
 ## Q140961: XADM: Duplicate Entries in PC Mail GAL
 
+{% raw %}
+
 	Article: Q140961
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/140/Q140961/
 	
 	=============================================================================
 	
+
+{% endraw %}

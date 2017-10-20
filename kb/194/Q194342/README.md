@@ -6,6 +6,8 @@ permalink: /kb/194/Q194342/
 
 ## Q194342: WINS Error: Denied the Replication Request
 
+{% raw %}
+
 	Article: Q194342
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/194/Q194342/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97644/
 
 ## Q97644: HOWTO: Merge Text from a Memo Field
 
+{% raw %}
+
 	Article: Q97644
 	Product(s): Microsoft FoxPro
 	Version(s): 2.0,2.5,2.5a,3.0,5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/097/Q97644/
 	
 	=============================================================================
 	
+
+{% endraw %}

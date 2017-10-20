@@ -6,6 +6,8 @@ permalink: /kb/127/Q127143/
 
 ## Q127143: SMARTMON.EXE Does Not Report Cache Information
 
+{% raw %}
+
 	Article: Q127143
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.11
@@ -91,3 +93,5 @@ permalink: /kb/127/Q127143/
 	
 	=============================================================================
 	
+
+{% endraw %}

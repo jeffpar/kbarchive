@@ -6,6 +6,8 @@ permalink: /kb/269/Q269832/
 
 ## Q269832: SMS: Case Sensitivity Slows Down Queries
 
+{% raw %}
+
 	Article: Q269832
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -182,3 +184,5 @@ permalink: /kb/269/Q269832/
 	
 	=============================================================================
 	
+
+{% endraw %}

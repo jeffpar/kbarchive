@@ -6,6 +6,8 @@ permalink: /kb/152/Q152467/
 
 ## Q152467: PGC Errors at the Client When Registry Entry Contains a Space
 
+{% raw %}
+
 	Article: Q152467
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -56,3 +58,5 @@ permalink: /kb/152/Q152467/
 	
 	=============================================================================
 	
+
+{% endraw %}

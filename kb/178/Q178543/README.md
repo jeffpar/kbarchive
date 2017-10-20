@@ -6,6 +6,8 @@ permalink: /kb/178/Q178543/
 
 ## Q178543: XCLN: Err Msg: Can't open this item. Cannot add the attachment.
 
+{% raw %}
+
 	Article: Q178543
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/178/Q178543/
 	
 	=============================================================================
 	
+
+{% endraw %}

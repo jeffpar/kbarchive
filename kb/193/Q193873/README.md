@@ -6,6 +6,8 @@ permalink: /kb/193/Q193873/
 
 ## Q193873: INFO: Determining What Oracle Components Are Installed
 
+{% raw %}
+
 	Article: Q193873
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,Build 2.573.2927
@@ -70,3 +72,5 @@ permalink: /kb/193/Q193873/
 	
 	=============================================================================
 	
+
+{% endraw %}

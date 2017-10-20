@@ -6,6 +6,8 @@ permalink: /kb/038/Q38266/
 
 ## Q38266: Error C1015 Cannot Open Include File 'filename'
 
+{% raw %}
+
 	Article: Q38266
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -46,3 +48,5 @@ permalink: /kb/038/Q38266/
 	   compilation and linkage by the CL driver, the compiler passes, the
 	   C source code file, the include files, the linker, libraries, and
 	   temporary files created by the compiler or linker.
+
+{% endraw %}

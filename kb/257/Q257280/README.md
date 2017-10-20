@@ -6,6 +6,8 @@ permalink: /kb/257/Q257280/
 
 ## Q257280: SMS: Advertisement Runs Multiple Times on Windows 95/98 Clients
 
+{% raw %}
+
 	Article: Q257280
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -68,3 +70,5 @@ permalink: /kb/257/Q257280/
 	
 	=============================================================================
 	
+
+{% endraw %}

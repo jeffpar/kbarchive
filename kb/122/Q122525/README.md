@@ -6,6 +6,8 @@ permalink: /kb/122/Q122525/
 
 ## Q122525: LPQ Command Not Supported with the HP Jet Direct Card
 
+{% raw %}
+
 	Article: Q122525
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -66,3 +68,5 @@ permalink: /kb/122/Q122525/
 	
 	=============================================================================
 	
+
+{% endraw %}

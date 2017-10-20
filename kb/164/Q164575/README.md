@@ -6,6 +6,8 @@ permalink: /kb/164/Q164575/
 
 ## Q164575: Application Exception in SNA Server Using APPC Sync Level 2
 
+{% raw %}
+
 	Article: Q164575
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -80,3 +82,5 @@ permalink: /kb/164/Q164575/
 	
 	=============================================================================
 	
+
+{% endraw %}

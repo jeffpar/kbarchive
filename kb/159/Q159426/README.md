@@ -6,6 +6,8 @@ permalink: /kb/159/Q159426/
 
 ## Q159426: XCLN: How to Write Listbox Items to an E-form Package
 
+{% raw %}
+
 	Article: Q159426
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -120,3 +122,5 @@ permalink: /kb/159/Q159426/
 	
 	=============================================================================
 	
+
+{% endraw %}

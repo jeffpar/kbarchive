@@ -6,6 +6,8 @@ permalink: /kb/137/Q137801/
 
 ## Q137801: Wrong Mouse Displayed in Mouse Properties
 
+{% raw %}
+
 	Article: Q137801
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -85,3 +87,5 @@ permalink: /kb/137/Q137801/
 	
 	=============================================================================
 	
+
+{% endraw %}

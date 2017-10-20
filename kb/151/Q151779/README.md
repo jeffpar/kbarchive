@@ -6,6 +6,8 @@ permalink: /kb/151/Q151779/
 
 ## Q151779: Error C0000034: The LsaOpenSecret Call Failed
 
+{% raw %}
+
 	Article: Q151779
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -78,3 +80,5 @@ permalink: /kb/151/Q151779/
 	
 	=============================================================================
 	
+
+{% endraw %}

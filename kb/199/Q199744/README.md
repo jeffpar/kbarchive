@@ -6,6 +6,8 @@ permalink: /kb/199/Q199744/
 
 ## Q199744: XFOR: Meeting Request Behavior on Delegation between Systems
 
+{% raw %}
+
 	Article: Q199744
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -83,3 +85,5 @@ permalink: /kb/199/Q199744/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67880/
 
 ## Q67880: LIB Error U2155 When Hyphen in File or Directory Name
 
+{% raw %}
+
 	Article: Q67880
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.1,3.11,3.17,3.18,3.2,3.20.010,3.31,3.4; OS/2:3.1,3.11,3.17,3.2
@@ -59,3 +61,5 @@ permalink: /kb/067/Q67880/
 	
 	=============================================================================
 	
+
+{% endraw %}

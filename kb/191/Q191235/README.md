@@ -6,6 +6,8 @@ permalink: /kb/191/Q191235/
 
 ## Q191235: HOWTO: Use the Shared Property Manager in MTS Through VB Code
 
+{% raw %}
+
 	Article: Q191235
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -270,3 +272,5 @@ permalink: /kb/191/Q191235/
 	
 	=============================================================================
 	
+
+{% endraw %}

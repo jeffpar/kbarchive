@@ -6,6 +6,8 @@ permalink: /kb/186/Q186141/
 
 ## Q186141: WD97: Bullets/Numbering Removed Opening WordPerfect 5.x Document
 
+{% raw %}
+
 	Article: Q186141
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/186/Q186141/
 	
 	=============================================================================
 	
+
+{% endraw %}

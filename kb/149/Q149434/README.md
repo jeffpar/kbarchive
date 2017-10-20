@@ -6,6 +6,8 @@ permalink: /kb/149/Q149434/
 
 ## Q149434: PRB: Control Not Visible or Partially Visible at Design Time
 
+{% raw %}
+
 	Article: Q149434
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,6.0
@@ -57,3 +59,5 @@ permalink: /kb/149/Q149434/
 	
 	=============================================================================
 	
+
+{% endraw %}

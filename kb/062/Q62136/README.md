@@ -6,6 +6,8 @@ permalink: /kb/062/Q62136/
 
 ## Q62136: DOCERR: EXE2BIN.EXE Doesn't Come w/ PC-DOS 3.3, 4.0, &amp; 4.01
 
+{% raw %}
+
 	Article: Q62136
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1
@@ -51,3 +53,5 @@ permalink: /kb/062/Q62136/
 	
 	=============================================================================
 	
+
+{% endraw %}

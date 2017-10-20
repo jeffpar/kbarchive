@@ -6,6 +6,8 @@ permalink: /kb/038/Q38494/
 
 ## Q38494: Beep or Hang Using RETURN without GOSUB with No BC /D Debug
 
+{% raw %}
+
 	Article: Q38494
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -50,3 +52,5 @@ permalink: /kb/038/Q38494/
 	  RETURN  ' Program will hang on this statement.
 	          ' This RETURN should be deleted; it is a programming error.
 	END SUB
+
+{% endraw %}

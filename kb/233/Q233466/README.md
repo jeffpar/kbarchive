@@ -6,6 +6,8 @@ permalink: /kb/233/Q233466/
 
 ## Q233466: Business Planner: Home Page Graphics Are Displayed Incorrectly
 
+{% raw %}
+
 	Article: Q233466
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/233/Q233466/
 	
 	=============================================================================
 	
+
+{% endraw %}

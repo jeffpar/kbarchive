@@ -6,6 +6,8 @@ permalink: /kb/190/Q190080/
 
 ## Q190080: PRB: VBCE 5.0 on Same Machine as VB6 Causes Application Error
 
+{% raw %}
+
 	Article: Q190080
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -85,3 +87,5 @@ permalink: /kb/190/Q190080/
 	
 	=============================================================================
 	
+
+{% endraw %}

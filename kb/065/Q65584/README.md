@@ -6,6 +6,8 @@ permalink: /kb/065/Q65584/
 
 ## Q65584: Mismatched DEFtypes in Main and SUBs Can Zero SHARED Variables
 
+{% raw %}
+
 	Article: Q65584
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -190,3 +192,5 @@ permalink: /kb/065/Q65584/
 	   Function #2 returns:  TRUE1 = -1
 	   In sub #1, TRUE1 =  0
 	   In sub #2, TRUE1 = -1
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136644/
 
 ## Q136644: Icon Spacing Not Updated Using Large Icons in Microsoft Plus!
 
+{% raw %}
+
 	Article: Q136644
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/136/Q136644/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105068/
 
 ## Q105068: Defrag May Not Be Able to Defragment a Drive 100%
 
+{% raw %}
+
 	Article: Q105068
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -77,3 +79,5 @@ permalink: /kb/105/Q105068/
 	
 	=============================================================================
 	
+
+{% endraw %}

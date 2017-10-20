@@ -6,6 +6,8 @@ permalink: /kb/100/Q100441/
 
 ## Q100441: PRB: Windows Are in Different Positions When Executable Is Run
 
+{% raw %}
+
 	Article: Q100441
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; WINDOWS:2.5x,2.6a,3.0
@@ -88,3 +90,5 @@ permalink: /kb/100/Q100441/
 	
 	=============================================================================
 	
+
+{% endraw %}

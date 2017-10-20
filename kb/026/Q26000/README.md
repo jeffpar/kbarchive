@@ -6,6 +6,8 @@ permalink: /kb/026/Q26000/
 
 ## Q26000: INFO: Print Manager Print Job File Limit and WM_SPOOLERSTATUS
 
+{% raw %}
+
 	Article: Q26000
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -63,3 +65,5 @@ permalink: /kb/026/Q26000/
 	
 	=============================================================================
 	
+
+{% endraw %}

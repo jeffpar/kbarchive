@@ -6,6 +6,8 @@ permalink: /kb/011/Q11591/
 
 ## Q11591: The Purpose of WINSTUB in Windows SDK
 
+{% raw %}
+
 	Article: Q11591
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -46,3 +48,5 @@ permalink: /kb/011/Q11591/
 	
 	=============================================================================
 	
+
+{% endraw %}

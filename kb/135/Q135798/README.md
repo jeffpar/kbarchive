@@ -6,6 +6,8 @@ permalink: /kb/135/Q135798/
 
 ## Q135798: How to Prevent a User from Changing the Row Height of a Grid
 
+{% raw %}
+
 	Article: Q135798
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/135/Q135798/
 	
 	=============================================================================
 	
+
+{% endraw %}

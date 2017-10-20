@@ -6,6 +6,8 @@ permalink: /kb/119/Q119891/
 
 ## Q119891: Floppy Drives Inaccessible on Gateway 2000 Nomad Laptops
 
+{% raw %}
+
 	Article: Q119891
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/119/Q119891/
 	
 	=============================================================================
 	
+
+{% endraw %}

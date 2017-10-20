@@ -6,6 +6,8 @@ permalink: /kb/163/Q163002/
 
 ## Q163002: HOWTO: Open an Access Database with User Security
 
+{% raw %}
+
 	Article: Q163002
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,7.0,97
@@ -235,3 +237,5 @@ permalink: /kb/163/Q163002/
 	
 	=============================================================================
 	
+
+{% endraw %}

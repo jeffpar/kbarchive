@@ -6,6 +6,8 @@ permalink: /kb/104/Q104654/
 
 ## Q104654: Dinosaurs: Can't Run 16-Color Mode in Windows NT 3.1
 
+{% raw %}
+
 	Article: Q104654
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/104/Q104654/
 	
 	=============================================================================
 	
+
+{% endraw %}

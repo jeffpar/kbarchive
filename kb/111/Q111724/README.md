@@ -6,6 +6,8 @@ permalink: /kb/111/Q111724/
 
 ## Q111724: BUG: Extra Block of 256 Bytes Used by Access ODBC Driver
 
+{% raw %}
+
 	Article: Q111724
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -77,3 +79,5 @@ permalink: /kb/111/Q111724/
 	
 	=============================================================================
 	
+
+{% endraw %}

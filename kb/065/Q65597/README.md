@@ -6,6 +6,8 @@ permalink: /kb/065/Q65597/
 
 ## Q65597: Correction to DIR&#36; Example In &quot;BASIC 7.0: Language Reference&quot;
 
+{% raw %}
+
 	Article: Q65597
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -33,3 +35,5 @@ permalink: /kb/065/Q65597/
 	
 	This information applies to Microsoft BASIC Professional Development
 	System (PDS) versions 7.00 and 7.10 for MS-DOS and MS OS/2.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184519/
 
 ## Q184519: WD97: Error Updating Table of Contents with Heading Styles
 
+{% raw %}
+
 	Article: Q184519
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/184/Q184519/
 	
 	=============================================================================
 	
+
+{% endraw %}

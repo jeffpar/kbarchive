@@ -6,6 +6,8 @@ permalink: /kb/171/Q171032/
 
 ## Q171032: XFOR: Configuring Internet Mail Service for POP3 Clients
 
+{% raw %}
+
 	Article: Q171032
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/171/Q171032/
 	
 	=============================================================================
 	
+
+{% endraw %}

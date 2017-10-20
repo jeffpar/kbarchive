@@ -6,6 +6,8 @@ permalink: /kb/193/Q193891/
 
 ## Q193891: HTTP Through Firewall and &quot;Bypass Proxy for Local Intranet&quot;
 
+{% raw %}
+
 	Article: Q193891
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -79,3 +81,5 @@ permalink: /kb/193/Q193891/
 	
 	=============================================================================
 	
+
+{% endraw %}

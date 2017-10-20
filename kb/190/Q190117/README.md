@@ -6,6 +6,8 @@ permalink: /kb/190/Q190117/
 
 ## Q190117: PRB: PACK May Cause the File Name to Change Case
 
+{% raw %}
+
 	Article: Q190117
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -79,3 +81,5 @@ permalink: /kb/190/Q190117/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124068/
 
 ## Q124068: SMS Sender Properties Help Incorrectly References HERMSRHx
 
+{% raw %}
+
 	Article: Q124068
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -35,3 +37,5 @@ permalink: /kb/124/Q124068/
 	
 	=============================================================================
 	
+
+{% endraw %}

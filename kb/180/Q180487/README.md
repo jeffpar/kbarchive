@@ -6,6 +6,8 @@ permalink: /kb/180/Q180487/
 
 ## Q180487: DOC: For Each ... Next Statement Does Not Work for Collections
 
+{% raw %}
+
 	Article: Q180487
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -60,3 +62,5 @@ permalink: /kb/180/Q180487/
 	
 	=============================================================================
 	
+
+{% endraw %}

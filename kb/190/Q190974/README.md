@@ -6,6 +6,8 @@ permalink: /kb/190/Q190974/
 
 ## Q190974: PRB: Function Prototypes Do Not Generate Parameter Info
 
+{% raw %}
+
 	Article: Q190974
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0
@@ -95,3 +97,5 @@ permalink: /kb/190/Q190974/
 	
 	=============================================================================
 	
+
+{% endraw %}

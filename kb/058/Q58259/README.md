@@ -6,6 +6,8 @@ permalink: /kb/058/Q58259/
 
 ## Q58259: Windows 2.x Should Not be Run from Windows 3.0
 
+{% raw %}
+
 	Article: Q58259
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -38,3 +40,5 @@ permalink: /kb/058/Q58259/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86962/
 
 ## Q86962: X400: How to Obtain CCITT X.400 &amp; X.25 Red Books
 
+{% raw %}
+
 	Article: Q86962
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -42,3 +44,5 @@ permalink: /kb/086/Q86962/
 	
 	=============================================================================
 	
+
+{% endraw %}

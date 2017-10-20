@@ -6,6 +6,8 @@ permalink: /kb/161/Q161050/
 
 ## Q161050: Encarta 97: Error When Starting Online Features Yearbook
 
+{% raw %}
+
 	Article: Q161050
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -134,3 +136,5 @@ permalink: /kb/161/Q161050/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/071/Q71585/
 
 ## Q71585: Disk Space Needed to Save UNFORMAT Information
 
+{% raw %}
+
 	Article: Q71585
 	Product(s): Microsoft Disk Operating System
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/071/Q71585/
 	
 	=============================================================================
 	
+
+{% endraw %}

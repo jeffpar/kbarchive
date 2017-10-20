@@ -6,6 +6,8 @@ permalink: /kb/231/Q231538/
 
 ## Q231538: MapPoint 2000: Zooms In Unexpectedly on an Enclosed Box
 
+{% raw %}
+
 	Article: Q231538
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -98,3 +100,5 @@ permalink: /kb/231/Q231538/
 	
 	=============================================================================
 	
+
+{% endraw %}

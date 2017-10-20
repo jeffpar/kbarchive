@@ -6,6 +6,8 @@ permalink: /kb/122/Q122961/
 
 ## Q122961: Print Job Stalls Printing to NEC NPDL2
 
+{% raw %}
+
 	Article: Q122961
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -63,3 +65,5 @@ permalink: /kb/122/Q122961/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/088/Q88577/
 
 ## Q88577: Windows 3.0 Setup Fails on Bondwell Laptops
 
+{% raw %}
+
 	Article: Q88577
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -60,3 +62,5 @@ permalink: /kb/088/Q88577/
 	
 	=============================================================================
 	
+
+{% endraw %}

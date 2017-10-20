@@ -6,6 +6,8 @@ permalink: /kb/165/Q165848/
 
 ## Q165848: Barr Channel Link Doesn't Support the Distribute Option
 
+{% raw %}
+
 	Article: Q165848
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -80,3 +82,5 @@ permalink: /kb/165/Q165848/
 	
 	=============================================================================
 	
+
+{% endraw %}

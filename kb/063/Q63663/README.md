@@ -6,6 +6,8 @@ permalink: /kb/063/Q63663/
 
 ## Q63663: Macro Recorder Does Not Record Keystrokes in MS-DOS Apps
 
+{% raw %}
+
 	Article: Q63663
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/063/Q63663/
 	
 	=============================================================================
 	
+
+{% endraw %}

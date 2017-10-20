@@ -6,6 +6,8 @@ permalink: /kb/131/Q131198/
 
 ## Q131198: List of Visual FoxPro Commands Supporting Long File Names
 
+{% raw %}
+
 	Article: Q131198
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -111,3 +113,5 @@ permalink: /kb/131/Q131198/
 	
 	=============================================================================
 	
+
+{% endraw %}

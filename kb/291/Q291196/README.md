@@ -6,6 +6,8 @@ permalink: /kb/291/Q291196/
 
 ## Q291196: BDC Running WINS May Log Event Error 3096
 
+{% raw %}
+
 	Article: Q291196
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/291/Q291196/
 	
 	=============================================================================
 	
+
+{% endraw %}

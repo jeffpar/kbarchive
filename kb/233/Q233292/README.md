@@ -6,6 +6,8 @@ permalink: /kb/233/Q233292/
 
 ## Q233292: SMS: SMS 2.0 Control Panel Applet Repair Button Doesn't Fix R/C
 
+{% raw %}
+
 	Article: Q233292
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -94,3 +96,5 @@ permalink: /kb/233/Q233292/
 	
 	=============================================================================
 	
+
+{% endraw %}

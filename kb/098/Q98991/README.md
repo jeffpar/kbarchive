@@ -6,6 +6,8 @@ permalink: /kb/098/Q98991/
 
 ## Q98991: Bookshelf 1993: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q98991
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 edition,2.0
@@ -352,3 +354,5 @@ permalink: /kb/098/Q98991/
 	
 	=============================================================================
 	
+
+{% endraw %}

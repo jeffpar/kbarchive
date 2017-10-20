@@ -6,6 +6,8 @@ permalink: /kb/142/Q142296/
 
 ## Q142296: Cannot Resume Paused Print Job on Windows NT 3.5 Server
 
+{% raw %}
+
 	Article: Q142296
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -47,3 +49,5 @@ permalink: /kb/142/Q142296/
 	
 	=============================================================================
 	
+
+{% endraw %}

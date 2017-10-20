@@ -6,6 +6,8 @@ permalink: /kb/119/Q119390/
 
 ## Q119390: No Launch Pad at Launch Pad 39A Location
 
+{% raw %}
+
 	Article: Q119390
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -45,3 +47,5 @@ permalink: /kb/119/Q119390/
 	
 	=============================================================================
 	
+
+{% endraw %}

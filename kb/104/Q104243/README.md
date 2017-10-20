@@ -6,6 +6,8 @@ permalink: /kb/104/Q104243/
 
 ## Q104243: PRB: Unexpected C2440 Error in C++ Typecast
 
+{% raw %}
+
 	Article: Q104243
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -127,3 +129,5 @@ permalink: /kb/104/Q104243/
 	
 	=============================================================================
 	
+
+{% endraw %}

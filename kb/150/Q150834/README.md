@@ -6,6 +6,8 @@ permalink: /kb/150/Q150834/
 
 ## Q150834: HP Network Port Disappears After User Selects Secondary Adapter
 
+{% raw %}
+
 	Article: Q150834
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -108,3 +110,5 @@ permalink: /kb/150/Q150834/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176629/
 
 ## Q176629: Disabling CSNW in Hardware Profile Causes Lengthy Logon Delay
 
+{% raw %}
+
 	Article: Q176629
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/176/Q176629/
 	
 	=============================================================================
 	
+
+{% endraw %}

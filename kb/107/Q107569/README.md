@@ -6,6 +6,8 @@ permalink: /kb/107/Q107569/
 
 ## Q107569: Configuring for LU 6.2 Through a 3174 APPN Network Node
 
+{% raw %}
+
 	Article: Q107569
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -175,3 +177,5 @@ permalink: /kb/107/Q107569/
 	
 	=============================================================================
 	
+
+{% endraw %}

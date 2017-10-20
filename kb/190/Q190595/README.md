@@ -6,6 +6,8 @@ permalink: /kb/190/Q190595/
 
 ## Q190595: INFO: Visual Modeler 2.0: Where Is the ORDERSYS Sample?
 
+{% raw %}
+
 	Article: Q190595
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0; winnt:6.0
@@ -52,3 +54,5 @@ permalink: /kb/190/Q190595/
 	
 	=============================================================================
 	
+
+{% endraw %}

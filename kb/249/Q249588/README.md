@@ -6,6 +6,8 @@ permalink: /kb/249/Q249588/
 
 ## Q249588: Package from Parent Makes SQL Problems at Restored Child Site
 
+{% raw %}
+
 	Article: Q249588
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -141,3 +143,5 @@ permalink: /kb/249/Q249588/
 	
 	=============================================================================
 	
+
+{% endraw %}

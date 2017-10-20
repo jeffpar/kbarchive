@@ -6,6 +6,8 @@ permalink: /kb/090/Q90231/
 
 ## Q90231: Central Point Backup Confidence Test Fails in WFWG
 
+{% raw %}
+
 	Article: Q90231
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -44,3 +46,5 @@ permalink: /kb/090/Q90231/
 	
 	=============================================================================
 	
+
+{% endraw %}

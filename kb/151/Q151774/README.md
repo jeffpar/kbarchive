@@ -6,6 +6,8 @@ permalink: /kb/151/Q151774/
 
 ## Q151774: HOWTO: Call NetUserGetInfo from Visual Basic
 
+{% raw %}
+
 	Article: Q151774
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -191,3 +193,5 @@ permalink: /kb/151/Q151774/
 	
 	=============================================================================
 	
+
+{% endraw %}

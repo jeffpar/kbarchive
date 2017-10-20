@@ -6,6 +6,8 @@ permalink: /kb/134/Q134386/
 
 ## Q134386: Computers Using QVision Display Driver Lock Up
 
+{% raw %}
+
 	Article: Q134386
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/134/Q134386/
 	
 	=============================================================================
 	
+
+{% endraw %}

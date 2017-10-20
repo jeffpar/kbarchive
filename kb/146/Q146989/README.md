@@ -6,6 +6,8 @@ permalink: /kb/146/Q146989/
 
 ## Q146989: XCLN: Views: Group By and Sort Have Same Property Values
 
+{% raw %}
+
 	Article: Q146989
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -55,3 +57,5 @@ permalink: /kb/146/Q146989/
 	
 	=============================================================================
 	
+
+{% endraw %}

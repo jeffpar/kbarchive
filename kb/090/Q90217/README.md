@@ -6,6 +6,8 @@ permalink: /kb/090/Q90217/
 
 ## Q90217: Purpose of Chat's Custom Colors Button
 
+{% raw %}
+
 	Article: Q90217
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -49,3 +51,5 @@ permalink: /kb/090/Q90217/
 	
 	=============================================================================
 	
+
+{% endraw %}

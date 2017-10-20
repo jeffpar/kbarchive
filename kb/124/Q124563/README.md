@@ -6,6 +6,8 @@ permalink: /kb/124/Q124563/
 
 ## Q124563: Canceling Tape Change Request Prevents Restore Operation
 
+{% raw %}
+
 	Article: Q124563
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/124/Q124563/
 	
 	=============================================================================
 	
+
+{% endraw %}

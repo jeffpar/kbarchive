@@ -6,6 +6,8 @@ permalink: /kb/236/Q236940/
 
 ## Q236940: Problems with ATAPI Multiple-LUN Devices
 
+{% raw %}
+
 	Article: Q236940
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -101,3 +103,5 @@ permalink: /kb/236/Q236940/
 	
 	=============================================================================
 	
+
+{% endraw %}

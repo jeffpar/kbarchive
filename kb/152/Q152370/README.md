@@ -6,6 +6,8 @@ permalink: /kb/152/Q152370/
 
 ## Q152370: How To Use the APPEND GENERAL Command with an Imager File
 
+{% raw %}
+
 	Article: Q152370
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00b
@@ -151,3 +153,5 @@ permalink: /kb/152/Q152370/
 	
 	=============================================================================
 	
+
+{% endraw %}

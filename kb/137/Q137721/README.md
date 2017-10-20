@@ -6,6 +6,8 @@ permalink: /kb/137/Q137721/
 
 ## Q137721: XTree Gold for DOS Slows Down Windows NT Performance
 
+{% raw %}
+
 	Article: Q137721
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/137/Q137721/
 	
 	=============================================================================
 	
+
+{% endraw %}

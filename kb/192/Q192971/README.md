@@ -6,6 +6,8 @@ permalink: /kb/192/Q192971/
 
 ## Q192971: WD97: Definitions of Typography Terms in Word
 
+{% raw %}
+
 	Article: Q192971
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -176,3 +178,5 @@ permalink: /kb/192/Q192971/
 	
 	=============================================================================
 	
+
+{% endraw %}

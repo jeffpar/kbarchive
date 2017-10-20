@@ -6,6 +6,8 @@ permalink: /kb/157/Q157330/
 
 ## Q157330: Windows NT 4.0 PostScript Driver Prints Only Last Page
 
+{% raw %}
+
 	Article: Q157330
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/157/Q157330/
 	
 	=============================================================================
 	
+
+{% endraw %}

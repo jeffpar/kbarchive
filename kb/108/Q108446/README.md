@@ -6,6 +6,8 @@ permalink: /kb/108/Q108446/
 
 ## Q108446: Writer 1: After Saving in Adult Mode, Can't Save Again
 
+{% raw %}
+
 	Article: Q108446
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -67,3 +69,5 @@ permalink: /kb/108/Q108446/
 	
 	=============================================================================
 	
+
+{% endraw %}

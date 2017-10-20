@@ -6,6 +6,8 @@ permalink: /kb/243/Q243501/
 
 ## Q243501: Task Manager Does Not Display the Peak Memory Usage Column
 
+{% raw %}
+
 	Article: Q243501
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -48,3 +50,5 @@ permalink: /kb/243/Q243501/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/073/Q73036/
 
 ## Q73036: BUG: Macro Expansion May Occur Before Macro Call in Listing File
 
+{% raw %}
+
 	Article: Q73036
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -111,3 +113,5 @@ permalink: /kb/073/Q73036/
 	
 	=============================================================================
 	
+
+{% endraw %}

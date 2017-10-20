@@ -6,6 +6,8 @@ permalink: /kb/165/Q165312/
 
 ## Q165312: Unable To Connect to Internet Mail over RAS with WinNT 4.0
 
+{% raw %}
+
 	Article: Q165312
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -122,3 +124,5 @@ permalink: /kb/165/Q165312/
 	
 	=============================================================================
 	
+
+{% endraw %}

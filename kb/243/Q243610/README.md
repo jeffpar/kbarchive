@@ -6,6 +6,8 @@ permalink: /kb/243/Q243610/
 
 ## Q243610: MSN 5.O Minimum Installation Requirements and Highlights
 
+{% raw %}
+
 	Article: Q243610
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/243/Q243610/
 	
 	=============================================================================
 	
+
+{% endraw %}

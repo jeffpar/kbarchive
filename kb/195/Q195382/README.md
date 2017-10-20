@@ -6,6 +6,8 @@ permalink: /kb/195/Q195382/
 
 ## Q195382: BUG: MsDev Caused an Invalid Page Fault in Devedit.pkg
 
+{% raw %}
+
 	Article: Q195382
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -71,3 +73,5 @@ permalink: /kb/195/Q195382/
 	
 	=============================================================================
 	
+
+{% endraw %}

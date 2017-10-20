@@ -6,6 +6,8 @@ permalink: /kb/115/Q115359/
 
 ## Q115359: X400: Precedence of the Parameters -U, -BD, -BT, - BR
 
+{% raw %}
+
 	Article: Q115359
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -64,3 +66,5 @@ permalink: /kb/115/Q115359/
 	
 	=============================================================================
 	
+
+{% endraw %}

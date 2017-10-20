@@ -6,6 +6,8 @@ permalink: /kb/235/Q235771/
 
 ## Q235771: BUG: Rchelp.Sys Can Cause CHKDSK to Run Continuously
 
+{% raw %}
+
 	Article: Q235771
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP2,2.0 SP3
@@ -106,3 +108,5 @@ permalink: /kb/235/Q235771/
 	
 	=============================================================================
 	
+
+{% endraw %}

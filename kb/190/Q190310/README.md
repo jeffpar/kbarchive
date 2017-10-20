@@ -6,6 +6,8 @@ permalink: /kb/190/Q190310/
 
 ## Q190310: PRB: IMPORT/EXPORT Commands Do Not Support CSV File Type
 
+{% raw %}
+
 	Article: Q190310
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -60,3 +62,5 @@ permalink: /kb/190/Q190310/
 	
 	=============================================================================
 	
+
+{% endraw %}

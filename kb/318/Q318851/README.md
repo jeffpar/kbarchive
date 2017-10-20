@@ -6,6 +6,8 @@ permalink: /kb/318/Q318851/
 
 ## Q318851: FS2002: How to Find Airport Radio Frequency Information
 
+{% raw %}
+
 	Article: Q318851
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/318/Q318851/
 	
 	=============================================================================
 	
+
+{% endraw %}

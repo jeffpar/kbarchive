@@ -6,6 +6,8 @@ permalink: /kb/258/Q258650/
 
 ## Q258650: Baseball 2001: Marker Is Not Displayed When You Hit a Fly Ball
 
+{% raw %}
+
 	Article: Q258650
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/258/Q258650/
 	
 	=============================================================================
 	
+
+{% endraw %}

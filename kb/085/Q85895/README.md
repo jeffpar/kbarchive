@@ -6,6 +6,8 @@ permalink: /kb/085/Q85895/
 
 ## Q85895: Windows 3.1 File Manager Does Not Refresh After Sizing Windows
 
+{% raw %}
+
 	Article: Q85895
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -47,3 +49,5 @@ permalink: /kb/085/Q85895/
 	
 	=============================================================================
 	
+
+{% endraw %}

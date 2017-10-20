@@ -6,6 +6,8 @@ permalink: /kb/267/Q267836/
 
 ## Q267836: HOWTO: Create a DCOM Client/Server with Events by Using VB
 
+{% raw %}
+
 	Article: Q267836
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -376,3 +378,5 @@ permalink: /kb/267/Q267836/
 	
 	=============================================================================
 	
+
+{% endraw %}

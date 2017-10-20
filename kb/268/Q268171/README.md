@@ -6,6 +6,8 @@ permalink: /kb/268/Q268171/
 
 ## Q268171: TN3270 Application May Process a Screen of Host Data Twice
 
+{% raw %}
+
 	Article: Q268171
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -184,3 +186,5 @@ permalink: /kb/268/Q268171/
 	
 	=============================================================================
 	
+
+{% endraw %}

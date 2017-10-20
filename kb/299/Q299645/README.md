@@ -6,6 +6,8 @@ permalink: /kb/299/Q299645/
 
 ## Q299645: BUG: Error &quot;Unable to Register MSADO15.TLB&quot; If You Use PDW Pkg.
 
+{% raw %}
+
 	Article: Q299645
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -193,3 +195,5 @@ permalink: /kb/299/Q299645/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262313/
 
 ## Q262313: StarLancer: Officer States That Enriquez Is on the Warpath
 
+{% raw %}
+
 	Article: Q262313
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -45,3 +47,5 @@ permalink: /kb/262/Q262313/
 	
 	=============================================================================
 	
+
+{% endraw %}

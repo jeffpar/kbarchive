@@ -6,6 +6,8 @@ permalink: /kb/108/Q108196/
 
 ## Q108196: PC DOS: MS-DOS Client Does Not Show Changed WELCOME.GLB Header
 
+{% raw %}
+
 	Article: Q108196
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1x,3.0,3.0b,3.2
@@ -42,3 +44,5 @@ permalink: /kb/108/Q108196/
 	
 	=============================================================================
 	
+
+{% endraw %}

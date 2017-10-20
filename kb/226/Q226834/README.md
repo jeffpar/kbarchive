@@ -6,6 +6,8 @@ permalink: /kb/226/Q226834/
 
 ## Q226834: SMS: Cancel Button in Remote Restart Dialog Box Doesn't Work
 
+{% raw %}
+
 	Article: Q226834
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -54,3 +56,5 @@ permalink: /kb/226/Q226834/
 	
 	=============================================================================
 	
+
+{% endraw %}

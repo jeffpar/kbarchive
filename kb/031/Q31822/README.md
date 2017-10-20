@@ -6,6 +6,8 @@ permalink: /kb/031/Q31822/
 
 ## Q31822: Structured Programming in QuickBASIC - Subprograms; SHARED
 
+{% raw %}
+
 	Article: Q31822
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -34,3 +36,5 @@ permalink: /kb/031/Q31822/
 	level ("module level") of the current module. To share variables
 	across separately-compiled modules, you must use the COMMON SHARED
 	statement.
+
+{% endraw %}

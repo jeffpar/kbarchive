@@ -6,6 +6,8 @@ permalink: /kb/260/Q260981/
 
 ## Q260981: Cannot Change Expired Domain Password When Accessing Web Server
 
+{% raw %}
+
 	Article: Q260981
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -61,3 +63,5 @@ permalink: /kb/260/Q260981/
 	
 	=============================================================================
 	
+
+{% endraw %}

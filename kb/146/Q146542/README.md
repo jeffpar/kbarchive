@@ -6,6 +6,8 @@ permalink: /kb/146/Q146542/
 
 ## Q146542: XCLN: No Indication of Attachments Associated with Appointment
 
+{% raw %}
+
 	Article: Q146542
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0a
@@ -45,3 +47,5 @@ permalink: /kb/146/Q146542/
 	
 	=============================================================================
 	
+
+{% endraw %}

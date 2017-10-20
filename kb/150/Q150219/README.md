@@ -6,6 +6,8 @@ permalink: /kb/150/Q150219/
 
 ## Q150219: BUG: Progress Bar Does Not Paint When DragMode Automatic
 
+{% raw %}
+
 	Article: Q150219
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -95,3 +97,5 @@ permalink: /kb/150/Q150219/
 	
 	=============================================================================
 	
+
+{% endraw %}

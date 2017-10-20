@@ -6,6 +6,8 @@ permalink: /kb/216/Q216368/
 
 ## Q216368: PRB: Access Violation During Application Setup When File in Use
 
+{% raw %}
+
 	Article: Q216368
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -178,3 +180,5 @@ permalink: /kb/216/Q216368/
 	
 	=============================================================================
 	
+
+{% endraw %}

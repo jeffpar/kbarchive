@@ -6,6 +6,8 @@ permalink: /kb/226/Q226490/
 
 ## Q226490: BUG: Optional Parameters Generate  Error with Data Environment
 
+{% raw %}
+
 	Article: Q226490
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -218,3 +220,5 @@ permalink: /kb/226/Q226490/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139532/
 
 ## Q139532: Streets 4.0 and Windows NT 3.51: Names Disappear When Zooming
 
+{% raw %}
+
 	Article: Q139532
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:4.0; winnt:3.51
@@ -70,3 +72,5 @@ permalink: /kb/139/Q139532/
 	
 	=============================================================================
 	
+
+{% endraw %}

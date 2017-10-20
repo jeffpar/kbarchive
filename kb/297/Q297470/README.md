@@ -6,6 +6,8 @@ permalink: /kb/297/Q297470/
 
 ## Q297470: XFOR: How to Secure Chat Channels with Exchange Chat Service 5.5
 
+{% raw %}
+
 	Article: Q297470
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -117,3 +119,5 @@ permalink: /kb/297/Q297470/
 	
 	=============================================================================
 	
+
+{% endraw %}

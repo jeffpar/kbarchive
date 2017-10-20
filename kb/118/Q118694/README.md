@@ -6,6 +6,8 @@ permalink: /kb/118/Q118694/
 
 ## Q118694: Alternating DOS Client RPC Calls Fail
 
+{% raw %}
+
 	Article: Q118694
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -66,3 +68,5 @@ permalink: /kb/118/Q118694/
 	
 	=============================================================================
 	
+
+{% endraw %}

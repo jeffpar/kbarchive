@@ -6,6 +6,8 @@ permalink: /kb/166/Q166472/
 
 ## Q166472: Using Fonts in ATL Controls with NiceText.exe
 
+{% raw %}
+
 	Article: Q166472
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0
@@ -287,3 +289,5 @@ permalink: /kb/166/Q166472/
 	
 	=============================================================================
 	
+
+{% endraw %}

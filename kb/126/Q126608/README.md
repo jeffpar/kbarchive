@@ -6,6 +6,8 @@ permalink: /kb/126/Q126608/
 
 ## Q126608: Uni to Multiprocessor Utility Fails to Update System
 
+{% raw %}
+
 	Article: Q126608
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -60,3 +62,5 @@ permalink: /kb/126/Q126608/
 	
 	=============================================================================
 	
+
+{% endraw %}

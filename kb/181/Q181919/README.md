@@ -6,6 +6,8 @@ permalink: /kb/181/Q181919/
 
 ## Q181919: XADM: Offline Address Book Not Updated After Changing Server
 
+{% raw %}
+
 	Article: Q181919
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/181/Q181919/
 	
 	=============================================================================
 	
+
+{% endraw %}

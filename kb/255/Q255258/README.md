@@ -6,6 +6,8 @@ permalink: /kb/255/Q255258/
 
 ## Q255258: Client Hangs During &quot;Remote Reboot&quot; with Auto Protection Enabled
 
+{% raw %}
+
 	Article: Q255258
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -64,3 +66,5 @@ permalink: /kb/255/Q255258/
 	
 	=============================================================================
 	
+
+{% endraw %}

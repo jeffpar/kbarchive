@@ -6,6 +6,8 @@ permalink: /kb/190/Q190252/
 
 ## Q190252: HOWTO: Change the External HTML Editor
 
+{% raw %}
+
 	Article: Q190252
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -52,3 +54,5 @@ permalink: /kb/190/Q190252/
 	
 	=============================================================================
 	
+
+{% endraw %}

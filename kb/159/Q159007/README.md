@@ -6,6 +6,8 @@ permalink: /kb/159/Q159007/
 
 ## Q159007: Encarta 1997: Manual Install Instructions for Windows 3.x
 
+{% raw %}
+
 	Article: Q159007
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11
@@ -491,3 +493,5 @@ permalink: /kb/159/Q159007/
 	
 	=============================================================================
 	
+
+{% endraw %}

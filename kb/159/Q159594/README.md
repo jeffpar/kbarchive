@@ -6,6 +6,8 @@ permalink: /kb/159/Q159594/
 
 ## Q159594: Missing Eastern Europe FontSubstitutes in Registry
 
+{% raw %}
+
 	Article: Q159594
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.00
@@ -64,3 +66,5 @@ permalink: /kb/159/Q159594/
 	
 	=============================================================================
 	
+
+{% endraw %}

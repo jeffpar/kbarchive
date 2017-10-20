@@ -6,6 +6,8 @@ permalink: /kb/157/Q157672/
 
 ## Q157672: STL Sample for the basic_string::find_first_of() Functions
 
+{% raw %}
+
 	Article: Q157672
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -166,3 +168,5 @@ permalink: /kb/157/Q157672/
 	
 	=============================================================================
 	
+
+{% endraw %}

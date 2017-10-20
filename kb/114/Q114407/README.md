@@ -6,6 +6,8 @@ permalink: /kb/114/Q114407/
 
 ## Q114407: SMTP: First Contact Form for SMTP Gateway
 
+{% raw %}
+
 	Article: Q114407
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1b,3.0
@@ -98,3 +100,5 @@ permalink: /kb/114/Q114407/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/296/Q296198/
 
 ## Q296198: How to Add EMC Drives w/ Multi-Paths to a WINNT 4 Serv. Cluster
 
+{% raw %}
+
 	Article: Q296198
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -289,3 +291,5 @@ permalink: /kb/296/Q296198/
 	
 	=============================================================================
 	
+
+{% endraw %}

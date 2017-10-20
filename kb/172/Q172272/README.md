@@ -6,6 +6,8 @@ permalink: /kb/172/Q172272/
 
 ## Q172272: SAMPLE: TREEVIEW.EXE Manipulating Nodes in a TreeView Control
 
+{% raw %}
+
 	Article: Q172272
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/172/Q172272/
 	
 	=============================================================================
 	
+
+{% endraw %}

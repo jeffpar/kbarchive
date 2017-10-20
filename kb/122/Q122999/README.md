@@ -6,6 +6,8 @@ permalink: /kb/122/Q122999/
 
 ## Q122999: PC WSPlus: Err Msg: Schedule+ Is Not Available for Booking...
 
+{% raw %}
+
 	Article: Q122999
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -96,3 +98,5 @@ permalink: /kb/122/Q122999/
 	
 	=============================================================================
 	
+
+{% endraw %}

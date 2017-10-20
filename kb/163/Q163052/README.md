@@ -6,6 +6,8 @@ permalink: /kb/163/Q163052/
 
 ## Q163052: WD97: Macro Error When Opening Template with Toolbar
 
+{% raw %}
+
 	Article: Q163052
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -185,3 +187,5 @@ permalink: /kb/163/Q163052/
 	
 	=============================================================================
 	
+
+{% endraw %}

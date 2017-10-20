@@ -6,6 +6,8 @@ permalink: /kb/139/Q139934/
 
 ## Q139934: XCLN: The Microsoft Exchange Client and Mobile Users
 
+{% raw %}
+
 	Article: Q139934
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -243,3 +245,5 @@ permalink: /kb/139/Q139934/
 	
 	=============================================================================
 	
+
+{% endraw %}

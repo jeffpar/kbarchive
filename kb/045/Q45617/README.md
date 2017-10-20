@@ -6,6 +6,8 @@ permalink: /kb/045/Q45617/
 
 ## Q45617: Mouse Disabled When Single-Stepping over Video Mode Change
 
+{% raw %}
+
 	Article: Q45617
 	Product(s): See article
 	Version(s): 2.20 2.30
@@ -49,3 +51,5 @@ permalink: /kb/045/Q45617/
 	  _setvideomode(_DEFAULTMODE);
 	
 	}
+
+{% endraw %}

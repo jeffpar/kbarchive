@@ -6,6 +6,8 @@ permalink: /kb/172/Q172053/
 
 ## Q172053: Restoring .lnk File Associations
 
+{% raw %}
+
 	Article: Q172053
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -103,3 +105,5 @@ permalink: /kb/172/Q172053/
 	
 	=============================================================================
 	
+
+{% endraw %}

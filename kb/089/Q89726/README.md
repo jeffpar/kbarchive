@@ -6,6 +6,8 @@ permalink: /kb/089/Q89726/
 
 ## Q89726: Task Swapping with UltraVision and MS-DOS
 
+{% raw %}
+
 	Article: Q89726
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -61,3 +63,5 @@ permalink: /kb/089/Q89726/
 	
 	=============================================================================
 	
+
+{% endraw %}

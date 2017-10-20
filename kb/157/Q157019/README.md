@@ -6,6 +6,8 @@ permalink: /kb/157/Q157019/
 
 ## Q157019: XADM: Changing X400 Country Code Toggles Between SE and SG
 
+{% raw %}
+
 	Article: Q157019
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/157/Q157019/
 	
 	=============================================================================
 	
+
+{% endraw %}

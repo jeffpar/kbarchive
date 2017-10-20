@@ -6,6 +6,8 @@ permalink: /kb/093/Q93234/
 
 ## Q93234: How a CD-ROM Drive Letter Is Assigned
 
+{% raw %}
+
 	Article: Q93234
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -53,3 +55,5 @@ permalink: /kb/093/Q93234/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/311/Q311481/
 
 ## Q311481: BETA-PRB: CGI Code That Calls External Applications May Fail
 
+{% raw %}
+
 	Article: Q311481
 	Product(s): Internet Information Server
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/311/Q311481/
 	
 	=============================================================================
 	
+
+{% endraw %}

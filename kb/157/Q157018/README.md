@@ -6,6 +6,8 @@ permalink: /kb/157/Q157018/
 
 ## Q157018: XCLN: Using OLE Messaging to View Non-Replicated PF Fails
 
+{% raw %}
+
 	Article: Q157018
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -77,3 +79,5 @@ permalink: /kb/157/Q157018/
 	
 	=============================================================================
 	
+
+{% endraw %}

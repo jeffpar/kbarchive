@@ -6,6 +6,8 @@ permalink: /kb/134/Q134563/
 
 ## Q134563: MS-DOS Prompt Does Not Shut Down with Third-Party TSRs
 
+{% raw %}
+
 	Article: Q134563
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -101,3 +103,5 @@ permalink: /kb/134/Q134563/
 	
 	=============================================================================
 	
+
+{% endraw %}

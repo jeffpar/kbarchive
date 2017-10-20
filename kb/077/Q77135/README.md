@@ -6,6 +6,8 @@ permalink: /kb/077/Q77135/
 
 ## Q77135: HOWTO: Different Ways to Close an Application Under Windows
 
+{% raw %}
+
 	Article: Q77135
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -110,3 +112,5 @@ permalink: /kb/077/Q77135/
 	
 	=============================================================================
 	
+
+{% endraw %}

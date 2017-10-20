@@ -6,6 +6,8 @@ permalink: /kb/192/Q192802/
 
 ## Q192802: Two CD-ROM Drive Letters Appear in My Computer
 
+{% raw %}
+
 	Article: Q192802
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -72,3 +74,5 @@ permalink: /kb/192/Q192802/
 	
 	=============================================================================
 	
+
+{% endraw %}

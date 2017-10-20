@@ -6,6 +6,8 @@ permalink: /kb/135/Q135484/
 
 ## Q135484: Windows 95 CD-ROM Msdosdrv.txt File (1 of 2)
 
+{% raw %}
+
 	Article: Q135484
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -465,3 +467,5 @@ permalink: /kb/135/Q135484/
 	
 	=============================================================================
 	
+
+{% endraw %}

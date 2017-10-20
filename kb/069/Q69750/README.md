@@ -6,6 +6,8 @@ permalink: /kb/069/Q69750/
 
 ## Q69750: Changing PWB Build from .COM to .EXE Causes File Conflict
 
+{% raw %}
+
 	Article: Q69750
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1
@@ -68,3 +70,5 @@ permalink: /kb/069/Q69750/
 	
 	=============================================================================
 	
+
+{% endraw %}

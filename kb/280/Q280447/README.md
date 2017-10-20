@@ -6,6 +6,8 @@ permalink: /kb/280/Q280447/
 
 ## Q280447: BUG: Text from a Rich Edit Control Is Truncated During DDX
 
+{% raw %}
+
 	Article: Q280447
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -105,8 +107,8 @@ permalink: /kb/280/Q280447/
 	If you do not use the preceding step, you must manually replace all calls to
 	DDX_Text with DDX_RichText. Then, you must move these calls outside the
 	wizard-controlled code. Wizard-controlled code is the code that is bracketed by
-	//{ {AFX_DATA_INIT(...) and //} }AFX_DATA_INIT, and //{ {AFX_DATA_MAP(...)
-	//} }AFX_DATA_MAP.
+	//{{AFX_DATA_INIT(...) and //}}AFX_DATA_INIT, and //{{AFX_DATA_MAP(...)
+	//}}AFX_DATA_MAP.
 	
 	For more information about DDX and dialog data validation (DDV) routines, see the
 	"References" section.
@@ -133,3 +135,5 @@ permalink: /kb/280/Q280447/
 	
 	=============================================================================
 	
+
+{% endraw %}

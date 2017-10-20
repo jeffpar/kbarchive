@@ -6,6 +6,8 @@ permalink: /kb/281/Q281204/
 
 ## Q281204: SMS: Installing SMS 2.0 Clients on Terminal Server Clients
 
+{% raw %}
+
 	Article: Q281204
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -81,3 +83,5 @@ permalink: /kb/281/Q281204/
 	
 	=============================================================================
 	
+
+{% endraw %}

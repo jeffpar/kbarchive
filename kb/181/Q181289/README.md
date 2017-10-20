@@ -6,6 +6,8 @@ permalink: /kb/181/Q181289/
 
 ## Q181289: HOWTO: Pass Structures to a DLL
 
+{% raw %}
+
 	Article: Q181289
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -154,3 +156,5 @@ permalink: /kb/181/Q181289/
 	
 	=============================================================================
 	
+
+{% endraw %}

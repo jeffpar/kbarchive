@@ -6,6 +6,8 @@ permalink: /kb/101/Q101765/
 
 ## Q101765: Windows Err Msg: Application Execution Error
 
+{% raw %}
+
 	Article: Q101765
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -84,3 +86,5 @@ permalink: /kb/101/Q101765/
 	
 	=============================================================================
 	
+
+{% endraw %}

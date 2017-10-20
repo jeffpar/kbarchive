@@ -6,6 +6,8 @@ permalink: /kb/172/Q172100/
 
 ## Q172100: PRB: Bound TextBox No Longer Populates During Form's Load Event
 
+{% raw %}
+
 	Article: Q172100
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/172/Q172100/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136104/
 
 ## Q136104: MVP144win Cardinal Modem Does Not Work with 32-Bit Programs
 
+{% raw %}
+
 	Article: Q136104
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -55,3 +57,5 @@ permalink: /kb/136/Q136104/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104990/
 
 ## Q104990: Problems Using DoubleSpace on Disk Manager Partitioned Drive
 
+{% raw %}
+
 	Article: Q104990
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -74,3 +76,5 @@ permalink: /kb/104/Q104990/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/265/Q265459/
 
 ## Q265459: PRB: Error Message &quot;The MAPI Spooler has Shut Down&quot;
 
+{% raw %}
+
 	Article: Q265459
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -70,3 +72,5 @@ permalink: /kb/265/Q265459/
 	
 	=============================================================================
 	
+
+{% endraw %}

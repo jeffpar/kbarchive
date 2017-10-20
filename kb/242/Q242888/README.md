@@ -6,6 +6,8 @@ permalink: /kb/242/Q242888/
 
 ## Q242888: XADM: How to Remove an E-mail Address from Site Addressing
 
+{% raw %}
+
 	Article: Q242888
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -76,3 +78,5 @@ permalink: /kb/242/Q242888/
 	
 	=============================================================================
 	
+
+{% endraw %}

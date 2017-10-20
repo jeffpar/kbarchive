@@ -6,6 +6,8 @@ permalink: /kb/165/Q165388/
 
 ## Q165388: Invalid Directory Returned When Attempting to Access FPNW
 
+{% raw %}
+
 	Article: Q165388
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.00
@@ -58,3 +60,5 @@ permalink: /kb/165/Q165388/
 	
 	=============================================================================
 	
+
+{% endraw %}

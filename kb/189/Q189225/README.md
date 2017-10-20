@@ -6,6 +6,8 @@ permalink: /kb/189/Q189225/
 
 ## Q189225: LMMIB2 Unable to &quot;Walk&quot; from .1.3.6.1.4.1.77.1.4.4
 
+{% raw %}
+
 	Article: Q189225
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/189/Q189225/
 	
 	=============================================================================
 	
+
+{% endraw %}

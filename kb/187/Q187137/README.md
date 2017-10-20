@@ -6,6 +6,8 @@ permalink: /kb/187/Q187137/
 
 ## Q187137: Add User Wizard Does Not Allow Setting of Home Directory
 
+{% raw %}
+
 	Article: Q187137
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -54,3 +56,5 @@ permalink: /kb/187/Q187137/
 	
 	=============================================================================
 	
+
+{% endraw %}

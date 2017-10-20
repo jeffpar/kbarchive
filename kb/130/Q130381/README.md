@@ -6,6 +6,8 @@ permalink: /kb/130/Q130381/
 
 ## Q130381: MHS: Err Msg: Inpost General I/O
 
+{% raw %}
+
 	Article: Q130381
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -82,3 +84,5 @@ permalink: /kb/130/Q130381/
 	
 	=============================================================================
 	
+
+{% endraw %}

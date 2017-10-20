@@ -6,6 +6,8 @@ permalink: /kb/286/Q286504/
 
 ## Q286504: eVB CreateObject Function Causes Memory Leak
 
+{% raw %}
+
 	Article: Q286504
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -124,3 +126,5 @@ permalink: /kb/286/Q286504/
 	
 	=============================================================================
 	
+
+{% endraw %}

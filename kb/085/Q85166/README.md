@@ -6,6 +6,8 @@ permalink: /kb/085/Q85166/
 
 ## Q85166: ATI 8514 Ultra Hangs Windows 3.1 in 800 x 600 Mode
 
+{% raw %}
+
 	Article: Q85166
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/085/Q85166/
 	
 	=============================================================================
 	
+
+{% endraw %}

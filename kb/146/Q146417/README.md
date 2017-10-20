@@ -6,6 +6,8 @@ permalink: /kb/146/Q146417/
 
 ## Q146417: Disk Access Light Blinks When CD Player Plays Audio CD
 
+{% raw %}
+
 	Article: Q146417
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/146/Q146417/
 	
 	=============================================================================
 	
+
+{% endraw %}

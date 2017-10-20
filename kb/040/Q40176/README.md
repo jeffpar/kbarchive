@@ -6,6 +6,8 @@ permalink: /kb/040/Q40176/
 
 ## Q40176: Inserting Time and Date into Files
 
+{% raw %}
+
 	Article: Q40176
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -32,3 +34,5 @@ permalink: /kb/040/Q40176/
 	;Macro for time and date.
 	    Header:= Curfilenam tab Curtime tab Curdate
 	    Header:Alt+H
+
+{% endraw %}

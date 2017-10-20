@@ -6,6 +6,8 @@ permalink: /kb/151/Q151670/
 
 ## Q151670: XFOR: Using the Mapisend.exeUtility with the AT Scheduler
 
+{% raw %}
+
 	Article: Q151670
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/151/Q151670/
 	
 	=============================================================================
 	
+
+{% endraw %}

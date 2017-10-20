@@ -6,6 +6,8 @@ permalink: /kb/142/Q142710/
 
 ## Q142710: Lock Violation Opening NetWare Server File w/ Shareable Bit Set
 
+{% raw %}
+
 	Article: Q142710
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142710/
 	
 	=============================================================================
 	
+
+{% endraw %}

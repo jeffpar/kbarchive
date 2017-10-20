@@ -6,6 +6,8 @@ permalink: /kb/195/Q195359/
 
 ## Q195359: WD97: Footnote Text Displayed, Printed on Top of Footer
 
+{% raw %}
+
 	Article: Q195359
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/195/Q195359/
 	
 	=============================================================================
 	
+
+{% endraw %}

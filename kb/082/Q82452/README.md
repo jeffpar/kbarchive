@@ -6,6 +6,8 @@ permalink: /kb/082/Q82452/
 
 ## Q82452: The Juggler Lists TT Fonts Multiple Times
 
+{% raw %}
+
 	Article: Q82452
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/082/Q82452/
 	
 	=============================================================================
 	
+
+{% endraw %}

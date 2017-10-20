@@ -6,6 +6,8 @@ permalink: /kb/177/Q177151/
 
 ## Q177151: FP97: DCOM Update Required for VSS Integration With MSPWS
 
+{% raw %}
+
 	Article: Q177151
 	Product(s): Word Front Page
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/177/Q177151/
 	
 	=============================================================================
 	
+
+{% endraw %}

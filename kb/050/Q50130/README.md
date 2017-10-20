@@ -6,6 +6,8 @@ permalink: /kb/050/Q50130/
 
 ## Q50130: PRB: Linker Error L2041: &quot;Stack Plus Data Exceeds 64K&quot;
 
+{% raw %}
+
 	Article: Q50130
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.65,3.69,4.x,5.0x,5.1x,5.2x,5.3x,5.5,5.6; OS/2:5.0x,5.1,5.11,5.13,5.15
@@ -95,3 +97,5 @@ permalink: /kb/050/Q50130/
 	
 	=============================================================================
 	
+
+{% endraw %}

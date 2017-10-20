@@ -6,6 +6,8 @@ permalink: /kb/176/Q176977/
 
 ## Q176977: STOP 0x00000023 FAT_FILE_SYSTEM with Corrupted Floppy Disk
 
+{% raw %}
+
 	Article: Q176977
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/176/Q176977/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116299/
 
 ## Q116299: FIX: Print Preview Problems for Chars with ASCII Values &gt; 127
 
+{% raw %}
+
 	Article: Q116299
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0
@@ -110,3 +112,5 @@ permalink: /kb/116/Q116299/
 	
 	=============================================================================
 	
+
+{% endraw %}

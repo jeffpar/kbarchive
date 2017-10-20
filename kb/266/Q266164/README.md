@@ -6,6 +6,8 @@ permalink: /kb/266/Q266164/
 
 ## Q266164: MCM2: Game Quits Before the Startup Screen Is Displayed
 
+{% raw %}
+
 	Article: Q266164
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -143,3 +145,5 @@ permalink: /kb/266/Q266164/
 	
 	=============================================================================
 	
+
+{% endraw %}

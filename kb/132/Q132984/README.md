@@ -6,6 +6,8 @@ permalink: /kb/132/Q132984/
 
 ## Q132984: Incorrect Calculator Results Using Percent Key
 
+{% raw %}
+
 	Article: Q132984
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -58,3 +60,5 @@ permalink: /kb/132/Q132984/
 	
 	=============================================================================
 	
+
+{% endraw %}

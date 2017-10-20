@@ -6,6 +6,8 @@ permalink: /kb/046/Q46384/
 
 ## Q46384: Example Program RECORD2.C Is Incorrect
 
+{% raw %}
+
 	Article: Q46384
 	Product(s): See article
 	Version(s): 2.00
@@ -38,3 +40,5 @@ permalink: /kb/046/Q46384/
 	with the following:
 	
 	   fpos_t *recpos = malloc(sizeof(fpos_t));
+
+{% endraw %}

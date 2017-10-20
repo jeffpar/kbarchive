@@ -6,6 +6,8 @@ permalink: /kb/216/Q216313/
 
 ## Q216313: XADM: Exchange Admin Unable to Map SIDs to Account Names After 5
 
+{% raw %}
+
 	Article: Q216313
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -94,3 +96,5 @@ permalink: /kb/216/Q216313/
 	
 	=============================================================================
 	
+
+{% endraw %}

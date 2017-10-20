@@ -6,6 +6,8 @@ permalink: /kb/161/Q161195/
 
 ## Q161195: OtherServers Parameter Fails on SNA Server 2.11 SP1 Clients
 
+{% raw %}
+
 	Article: Q161195
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -108,3 +110,5 @@ permalink: /kb/161/Q161195/
 	
 	=============================================================================
 	
+
+{% endraw %}

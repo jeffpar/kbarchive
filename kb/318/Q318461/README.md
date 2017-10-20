@@ -6,6 +6,8 @@ permalink: /kb/318/Q318461/
 
 ## Q318461: FIX: Grid Events Are Not Called if Grid Contains No Records
 
+{% raw %}
+
 	Article: Q318461
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -141,3 +143,5 @@ permalink: /kb/318/Q318461/
 	
 	=============================================================================
 	
+
+{% endraw %}

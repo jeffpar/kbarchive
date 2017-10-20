@@ -6,6 +6,8 @@ permalink: /kb/162/Q162163/
 
 ## Q162163: Error Message During Resume on IBM Aptiva Computer
 
+{% raw %}
+
 	Article: Q162163
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -44,3 +46,5 @@ permalink: /kb/162/Q162163/
 	
 	=============================================================================
 	
+
+{% endraw %}

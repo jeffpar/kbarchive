@@ -6,6 +6,8 @@ permalink: /kb/180/Q180542/
 
 ## Q180542: Configuring NWLink Frame Type in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q180542
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -94,3 +96,5 @@ permalink: /kb/180/Q180542/
 	
 	=============================================================================
 	
+
+{% endraw %}

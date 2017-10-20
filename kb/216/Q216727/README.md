@@ -6,6 +6,8 @@ permalink: /kb/216/Q216727/
 
 ## Q216727: FIX: Initializing const int With float Literal Gets Bad Value
 
+{% raw %}
+
 	Article: Q216727
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -78,3 +80,5 @@ permalink: /kb/216/Q216727/
 	
 	=============================================================================
 	
+
+{% endraw %}

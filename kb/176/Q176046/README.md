@@ -6,6 +6,8 @@ permalink: /kb/176/Q176046/
 
 ## Q176046: XCON: Routing Issues with Microsoft Exchange Server, Version 5.0
 
+{% raw %}
+
 	Article: Q176046
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -123,3 +125,5 @@ permalink: /kb/176/Q176046/
 	
 	=============================================================================
 	
+
+{% endraw %}

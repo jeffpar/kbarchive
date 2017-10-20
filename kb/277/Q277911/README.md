@@ -6,6 +6,8 @@ permalink: /kb/277/Q277911/
 
 ## Q277911: XADM: Lost Mail During MoveUser Between Two 5.5 Servers
 
+{% raw %}
+
 	Article: Q277911
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -82,3 +84,5 @@ permalink: /kb/277/Q277911/
 	
 	=============================================================================
 	
+
+{% endraw %}

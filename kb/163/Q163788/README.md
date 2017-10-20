@@ -6,6 +6,8 @@ permalink: /kb/163/Q163788/
 
 ## Q163788: INFO: FoxISAPI and Personal Web Server from FrontPage
 
+{% raw %}
+
 	Article: Q163788
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/163/Q163788/
 	
 	=============================================================================
 	
+
+{% endraw %}

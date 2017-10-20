@@ -6,6 +6,8 @@ permalink: /kb/216/Q216063/
 
 ## Q216063: DHCP MIB Returns Incorrect OID for SNMP GetNext Command
 
+{% raw %}
+
 	Article: Q216063
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/216/Q216063/
 	
 	=============================================================================
 	
+
+{% endraw %}

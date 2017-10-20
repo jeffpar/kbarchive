@@ -6,6 +6,8 @@ permalink: /kb/184/Q184089/
 
 ## Q184089: FIX: C2555 with Virtual Function Returning Template Object
 
+{% raw %}
+
 	Article: Q184089
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.0a,4.1,4.2,5.0,6.0
@@ -100,3 +102,5 @@ permalink: /kb/184/Q184089/
 	
 	=============================================================================
 	
+
+{% endraw %}

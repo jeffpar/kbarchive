@@ -6,6 +6,8 @@ permalink: /kb/165/Q165471/
 
 ## Q165471: WD97: ListNum Changes Numbering Level When Heading Style Applied
 
+{% raw %}
+
 	Article: Q165471
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/165/Q165471/
 	
 	=============================================================================
 	
+
+{% endraw %}

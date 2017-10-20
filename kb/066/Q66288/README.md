@@ -6,6 +6,8 @@ permalink: /kb/066/Q66288/
 
 ## Q66288: &quot;QuickC with QuickAssembler&quot; Is 2.51, &quot;QuickC&quot; Alone Is 2.50
 
+{% raw %}
+
 	Article: Q66288
 	Product(s): See article
 	Version(s): 2.00 2.50
@@ -31,3 +33,5 @@ permalink: /kb/066/Q66288/
 	Any problems regarding QuickC version 2.50 also apply to version 2.51.
 	
 	Any problems regarding QuickC version 2.00 also apply to version 2.01.
+
+{% endraw %}

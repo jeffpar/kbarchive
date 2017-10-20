@@ -6,6 +6,8 @@ permalink: /kb/043/Q43810/
 
 ## Q43810: C: PUSH CS Caused by Far Call Translation
 
+{% raw %}
+
 	Article: Q43810
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -40,3 +42,5 @@ permalink: /kb/043/Q43810/
 	in the same source file, so a near call is possible in this case. The
 	PUSH CS instruction allows the far return from the called function to
 	retrieve CS from the stack and return to the correct location.
+
+{% endraw %}

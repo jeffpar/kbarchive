@@ -6,6 +6,8 @@ permalink: /kb/105/Q105124/
 
 ## Q105124: PC Adm: Error Message: Template File Does Not Match Data File
 
+{% raw %}
+
 	Article: Q105124
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -130,3 +132,5 @@ permalink: /kb/105/Q105124/
 	
 	=============================================================================
 	
+
+{% endraw %}

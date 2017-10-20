@@ -6,6 +6,8 @@ permalink: /kb/031/Q31075/
 
 ## Q31075: PRB: Window Dragged Close to Screen Edge Becomes Invisible
 
+{% raw %}
+
 	Article: Q31075
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -64,3 +66,5 @@ permalink: /kb/031/Q31075/
 	
 	=============================================================================
 	
+
+{% endraw %}

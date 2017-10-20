@@ -6,6 +6,8 @@ permalink: /kb/060/Q60713/
 
 ## Q60713: Common RESTORE Problems, Including &quot;No Files Found to Restore&quot;
 
+{% raw %}
+
 	Article: Q60713
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -126,3 +128,5 @@ permalink: /kb/060/Q60713/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87906/
 
 ## Q87906: Dsklayt2 Does Not Support Duplicate Filenames
 
+{% raw %}
+
 	Article: Q87906
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.0,3.1; WINDOWS:3.5,3.51,4.0
@@ -50,3 +52,5 @@ permalink: /kb/087/Q87906/
 	
 	=============================================================================
 	
+
+{% endraw %}

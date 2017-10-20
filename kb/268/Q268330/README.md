@@ -6,6 +6,8 @@ permalink: /kb/268/Q268330/
 
 ## Q268330: Games: Screen Turns White and Game Hangs or Quits
 
+{% raw %}
+
 	Article: Q268330
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/268/Q268330/
 	
 	=============================================================================
 	
+
+{% endraw %}

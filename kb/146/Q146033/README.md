@@ -6,6 +6,8 @@ permalink: /kb/146/Q146033/
 
 ## Q146033: XCLN: Horizontal Scroll bar in EFD May Cover Text Box
 
+{% raw %}
+
 	Article: Q146033
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/146/Q146033/
 	
 	=============================================================================
 	
+
+{% endraw %}

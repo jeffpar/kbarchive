@@ -6,6 +6,8 @@ permalink: /kb/263/Q263839/
 
 ## Q263839: HOWTO: Use Long File Names with ITC Execute Method
 
+{% raw %}
+
 	Article: Q263839
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP3
@@ -78,3 +80,5 @@ permalink: /kb/263/Q263839/
 	
 	=============================================================================
 	
+
+{% endraw %}

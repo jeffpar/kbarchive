@@ -6,6 +6,8 @@ permalink: /kb/116/Q116333/
 
 ## Q116333: MS-DOS 6.22 Step-Up Directory Listing 3.5-Inch 1.44 MB Set
 
+{% raw %}
+
 	Article: Q116333
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -179,3 +181,5 @@ permalink: /kb/116/Q116333/
 	
 	=============================================================================
 	
+
+{% endraw %}

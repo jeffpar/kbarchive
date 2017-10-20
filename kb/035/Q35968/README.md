@@ -6,6 +6,8 @@ permalink: /kb/035/Q35968/
 
 ## Q35968: CALL SetUEvent in Assembly Routine to Disable PRINT SCREEN
 
+{% raw %}
+
 	Article: Q35968
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -159,3 +161,5 @@ permalink: /kb/035/Q35968/
 	        ret
 	deinst  endp
 	END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/201/Q201092/
 
 ## Q201092: FIX: Derived Structure Can Access Private Members of Base Class
 
+{% raw %}
+
 	Article: Q201092
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2b,5.0,6.0
@@ -115,3 +117,5 @@ permalink: /kb/201/Q201092/
 	
 	=============================================================================
 	
+
+{% endraw %}

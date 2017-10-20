@@ -6,6 +6,8 @@ permalink: /kb/157/Q157992/
 
 ## Q157992: How to Triple Boot to Windows NT, Windows 95/98, and MS-DOS
 
+{% raw %}
+
 	Article: Q157992
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
@@ -120,3 +122,5 @@ permalink: /kb/157/Q157992/
 	
 	=============================================================================
 	
+
+{% endraw %}

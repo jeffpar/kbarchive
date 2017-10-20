@@ -6,6 +6,8 @@ permalink: /kb/271/Q271303/
 
 ## Q271303: Reader Err Msg: Microsoft Reader Encountered an Internal Error
 
+{% raw %}
+
 	Article: Q271303
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -107,3 +109,5 @@ permalink: /kb/271/Q271303/
 	
 	=============================================================================
 	
+
+{% endraw %}

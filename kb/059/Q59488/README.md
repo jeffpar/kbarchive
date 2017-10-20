@@ -6,6 +6,8 @@ permalink: /kb/059/Q59488/
 
 ## Q59488: Don't Use OPTION BASE 1 in UI Toolbox: &quot;Illegal Function Call&quot;
 
+{% raw %}
+
 	Article: Q59488
 	Product(s): See article
 	Version(s): 7.00
@@ -21,3 +23,5 @@ permalink: /kb/059/Q59488/
 	
 	This information applies to Microsoft BASIC Professional Development
 	System (PDS) Version 7.00 for MS-DOS.
+
+{% endraw %}

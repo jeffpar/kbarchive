@@ -6,6 +6,8 @@ permalink: /kb/173/Q173587/
 
 ## Q173587: How to Connect to the Internet Using MSN
 
+{% raw %}
+
 	Article: Q173587
 	Product(s): The Microsoft Network
 	Version(s): 1.0,5.4
@@ -68,3 +70,5 @@ permalink: /kb/173/Q173587/
 	
 	=============================================================================
 	
+
+{% endraw %}

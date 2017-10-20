@@ -6,6 +6,8 @@ permalink: /kb/035/Q35025/
 
 ## Q35025: Accessing Switch Values in C Extensions
 
+{% raw %}
+
 	Article: Q35025
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -30,3 +32,5 @@ permalink: /kb/035/Q35025/
 	You also can use the GetLine() function to read through the <assign>
 	file; this method involves more coding, but it will run faster than
 	using fExecute() to execute macros.
+
+{% endraw %}

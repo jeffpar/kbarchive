@@ -6,6 +6,8 @@ permalink: /kb/132/Q132829/
 
 ## Q132829: Creative Labs Mixer Controls Not Working in Windows 95
 
+{% raw %}
+
 	Article: Q132829
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/132/Q132829/
 	
 	=============================================================================
 	
+
+{% endraw %}

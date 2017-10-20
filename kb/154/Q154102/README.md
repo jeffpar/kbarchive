@@ -6,6 +6,8 @@ permalink: /kb/154/Q154102/
 
 ## Q154102: SFM: Macintosh Client Cannot Connect to Windows NT Server
 
+{% raw %}
+
 	Article: Q154102
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -76,3 +78,5 @@ permalink: /kb/154/Q154102/
 	
 	=============================================================================
 	
+
+{% endraw %}

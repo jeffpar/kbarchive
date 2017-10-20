@@ -6,6 +6,8 @@ permalink: /kb/167/Q167208/
 
 ## Q167208: Sound Schemes Do Not Migrate to Other Users
 
+{% raw %}
+
 	Article: Q167208
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/167/Q167208/
 	
 	=============================================================================
 	
+
+{% endraw %}

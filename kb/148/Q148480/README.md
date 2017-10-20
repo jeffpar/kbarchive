@@ -6,6 +6,8 @@ permalink: /kb/148/Q148480/
 
 ## Q148480: Sounds Don't Play in Fury 3 with Pro Audio Spectrum
 
+{% raw %}
+
 	Article: Q148480
 	Product(s): Microsoft Home Games
 	Version(s): 1.00
@@ -77,3 +79,5 @@ permalink: /kb/148/Q148480/
 	
 	=============================================================================
 	
+
+{% endraw %}

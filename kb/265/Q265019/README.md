@@ -6,6 +6,8 @@ permalink: /kb/265/Q265019/
 
 ## Q265019: WD97: Modified Date Changes After Closing Doc from Outlook
 
+{% raw %}
+
 	Article: Q265019
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/265/Q265019/
 	
 	=============================================================================
 	
+
+{% endraw %}

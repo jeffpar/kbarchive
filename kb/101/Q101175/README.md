@@ -6,6 +6,8 @@ permalink: /kb/101/Q101175/
 
 ## Q101175: How to Automate Logon Procedures for Workgroups Mail
 
+{% raw %}
+
 	Article: Q101175
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -46,3 +48,5 @@ permalink: /kb/101/Q101175/
 	
 	=============================================================================
 	
+
+{% endraw %}

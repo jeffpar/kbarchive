@@ -6,6 +6,8 @@ permalink: /kb/155/Q155926/
 
 ## Q155926: Media Player Does Not Recognize Multiple CD-ROM Drives
 
+{% raw %}
+
 	Article: Q155926
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155926/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235875/
 
 ## Q235875: XADM: Japanese Characters Appear as Vertical Bars in Admin.exe
 
+{% raw %}
+
 	Article: Q235875
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/235/Q235875/
 	
 	=============================================================================
 	
+
+{% endraw %}

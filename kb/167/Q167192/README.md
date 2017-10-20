@@ -6,6 +6,8 @@ permalink: /kb/167/Q167192/
 
 ## Q167192: HOWTO: Create a Progress Indicator Using Threed Panel Control
 
+{% raw %}
+
 	Article: Q167192
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -191,3 +193,5 @@ permalink: /kb/167/Q167192/
 	
 	=============================================================================
 	
+
+{% endraw %}

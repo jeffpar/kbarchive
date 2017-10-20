@@ -6,6 +6,8 @@ permalink: /kb/121/Q121423/
 
 ## Q121423: WFWG Err Msg: Couldn't Locate Windows Installation
 
+{% raw %}
+
 	Article: Q121423
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -59,3 +61,5 @@ permalink: /kb/121/Q121423/
 	
 	=============================================================================
 	
+
+{% endraw %}

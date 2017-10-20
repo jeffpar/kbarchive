@@ -6,6 +6,8 @@ permalink: /kb/173/Q173894/
 
 ## Q173894: XGEN: ICS: Japanese Chat Server Shows Some Errors in English
 
+{% raw %}
+
 	Article: Q173894
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.0
@@ -60,3 +62,5 @@ permalink: /kb/173/Q173894/
 	
 	=============================================================================
 	
+
+{% endraw %}

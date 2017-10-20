@@ -6,6 +6,8 @@ permalink: /kb/210/Q210380/
 
 ## Q210380: SMS: Unable to Join Array Columns When Creating Queries
 
+{% raw %}
+
 	Article: Q210380
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -54,3 +56,5 @@ permalink: /kb/210/Q210380/
 	
 	=============================================================================
 	
+
+{% endraw %}

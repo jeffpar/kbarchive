@@ -6,6 +6,8 @@ permalink: /kb/173/Q173099/
 
 ## Q173099: MTG: OS2 Causes a GP Fault in Async.ovl.exe
 
+{% raw %}
+
 	Article: Q173099
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -79,3 +81,5 @@ permalink: /kb/173/Q173099/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/224/Q224087/
 
 ## Q224087: Error Message Running Emergency Repair Process
 
+{% raw %}
+
 	Article: Q224087
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -141,3 +143,5 @@ permalink: /kb/224/Q224087/
 	
 	=============================================================================
 	
+
+{% endraw %}

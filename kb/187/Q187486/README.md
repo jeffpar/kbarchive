@@ -6,6 +6,8 @@ permalink: /kb/187/Q187486/
 
 ## Q187486: Cannot Close Window with Upper-Right X Button
 
+{% raw %}
+
 	Article: Q187486
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/187/Q187486/
 	
 	=============================================================================
 	
+
+{% endraw %}

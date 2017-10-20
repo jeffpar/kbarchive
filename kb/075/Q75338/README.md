@@ -6,6 +6,8 @@ permalink: /kb/075/Q75338/
 
 ## Q75338: Determining Windows Version, Mode from MS-DOS App
 
+{% raw %}
+
 	Article: Q75338
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -119,3 +121,5 @@ permalink: /kb/075/Q75338/
 	
 	=============================================================================
 	
+
+{% endraw %}

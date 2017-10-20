@@ -6,6 +6,8 @@ permalink: /kb/326/Q326108/
 
 ## Q326108: PCL Codes are Ignored After You Install Host Integration Server
 
+{% raw %}
+
 	Article: Q326108
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -151,3 +153,5 @@ permalink: /kb/326/Q326108/
 	
 	=============================================================================
 	
+
+{% endraw %}

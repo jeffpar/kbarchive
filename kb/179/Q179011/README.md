@@ -6,6 +6,8 @@ permalink: /kb/179/Q179011/
 
 ## Q179011: ODE: Running Microsoft ODE97 on a Computer with IE 4.0
 
+{% raw %}
+
 	Article: Q179011
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/179/Q179011/
 	
 	=============================================================================
 	
+
+{% endraw %}

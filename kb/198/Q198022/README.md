@@ -6,6 +6,8 @@ permalink: /kb/198/Q198022/
 
 ## Q198022: Using the Windows NT Option Pack SMTP Pickup Directory
 
+{% raw %}
+
 	Article: Q198022
 	Product(s): Internet Information Server
 	Version(s): WINNT:
@@ -62,3 +64,5 @@ permalink: /kb/198/Q198022/
 	
 	=============================================================================
 	
+
+{% endraw %}

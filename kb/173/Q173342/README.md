@@ -6,6 +6,8 @@ permalink: /kb/173/Q173342/
 
 ## Q173342: How to Automatically Install TCP/IP in Windows 95
 
+{% raw %}
+
 	Article: Q173342
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -48,3 +50,5 @@ permalink: /kb/173/Q173342/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229812/
 
 ## Q229812: XCLN: Can't Check Attendee Availability from Resource Calendar
 
+{% raw %}
+
 	Article: Q229812
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/229/Q229812/
 	
 	=============================================================================
 	
+
+{% endraw %}

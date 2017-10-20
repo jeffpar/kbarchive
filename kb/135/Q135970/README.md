@@ -6,6 +6,8 @@ permalink: /kb/135/Q135970/
 
 ## Q135970: Protected-Mode-Only Drives Not Mounted
 
+{% raw %}
+
 	Article: Q135970
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/135/Q135970/
 	
 	=============================================================================
 	
+
+{% endraw %}

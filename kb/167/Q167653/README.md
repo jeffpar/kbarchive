@@ -6,6 +6,8 @@ permalink: /kb/167/Q167653/
 
 ## Q167653: WD97: Redo Deletion of Toolbox Control Causes Invalid Page Fault
 
+{% raw %}
+
 	Article: Q167653
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/167/Q167653/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72789/
 
 ## Q72789: Building .COM File with Main Language = None Causes L1127
 
+{% raw %}
+
 	Article: Q72789
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.1; OS/2:1.1
@@ -52,3 +54,5 @@ permalink: /kb/072/Q72789/
 	
 	=============================================================================
 	
+
+{% endraw %}

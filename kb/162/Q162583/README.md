@@ -6,6 +6,8 @@ permalink: /kb/162/Q162583/
 
 ## Q162583: ODE97: Upgrading Distributed Run-Time Applications in Access 97
 
+{% raw %}
+
 	Article: Q162583
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -326,3 +328,5 @@ permalink: /kb/162/Q162583/
 	
 	=============================================================================
 	
+
+{% endraw %}

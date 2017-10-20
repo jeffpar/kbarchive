@@ -6,6 +6,8 @@ permalink: /kb/189/Q189910/
 
 ## Q189910: INFO: Samples File Does Not Install with Typical MSDN Install
 
+{% raw %}
+
 	Article: Q189910
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -50,3 +52,5 @@ permalink: /kb/189/Q189910/
 	
 	=============================================================================
 	
+
+{% endraw %}

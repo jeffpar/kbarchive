@@ -6,6 +6,8 @@ permalink: /kb/121/Q121947/
 
 ## Q121947: How to Create a Modal Dialog from Within a USRDLL
 
+{% raw %}
+
 	Article: Q121947
 	Product(s): Microsoft C Compiler
 	Version(s): 1.50 1.51 | 2.00 4.00
@@ -104,3 +106,5 @@ permalink: /kb/121/Q121947/
 	
 	=============================================================================
 	
+
+{% endraw %}

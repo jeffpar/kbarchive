@@ -6,6 +6,8 @@ permalink: /kb/131/Q131775/
 
 ## Q131775: HOWTO: Access Child Process Exit Code from 32-Bit Parent Proc.
 
+{% raw %}
+
 	Article: Q131775
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT: 2.0,2.1,4.0,5.0;
@@ -135,3 +137,5 @@ permalink: /kb/131/Q131775/
 	
 	=============================================================================
 	
+
+{% endraw %}

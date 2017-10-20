@@ -6,6 +6,8 @@ permalink: /kb/173/Q173481/
 
 ## Q173481: XADM: PerfWiz Reports Multiple Errors when Moving Files
 
+{% raw %}
+
 	Article: Q173481
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -61,3 +63,5 @@ permalink: /kb/173/Q173481/
 	
 	=============================================================================
 	
+
+{% endraw %}

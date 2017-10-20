@@ -6,6 +6,8 @@ permalink: /kb/194/Q194573/
 
 ## Q194573: BUG: Grid Shows Only Two Added Records When Buffering/Order Set
 
+{% raw %}
+
 	Article: Q194573
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -128,3 +130,5 @@ permalink: /kb/194/Q194573/
 	
 	=============================================================================
 	
+
+{% endraw %}

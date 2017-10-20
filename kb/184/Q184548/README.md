@@ -6,6 +6,8 @@ permalink: /kb/184/Q184548/
 
 ## Q184548: SNA 3.0 SP3 Update Incorrectly Detects Previous Service Pack
 
+{% raw %}
+
 	Article: Q184548
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP3
@@ -61,3 +63,5 @@ permalink: /kb/184/Q184548/
 	
 	=============================================================================
 	
+
+{% endraw %}

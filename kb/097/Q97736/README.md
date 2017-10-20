@@ -6,6 +6,8 @@ permalink: /kb/097/Q97736/
 
 ## Q97736: Paradox for Windows Cannot Access WFWG Shared Directory
 
+{% raw %}
+
 	Article: Q97736
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): MS-DOS:6.0,6.2,6.22; WINDOWS:3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/097/Q97736/
 	
 	=============================================================================
 	
+
+{% endraw %}

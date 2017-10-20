@@ -6,6 +6,8 @@ permalink: /kb/258/Q258554/
 
 ## Q258554: Baseball 2001: Setup Stops Responding
 
+{% raw %}
+
 	Article: Q258554
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/258/Q258554/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/261/Q261930/
 
 ## Q261930: SMS: Error 679 or 3304 After You Install/Change Service Account
 
+{% raw %}
+
 	Article: Q261930
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -58,3 +60,5 @@ permalink: /kb/261/Q261930/
 	
 	=============================================================================
 	
+
+{% endraw %}

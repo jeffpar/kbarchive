@@ -6,6 +6,8 @@ permalink: /kb/221/Q221238/
 
 ## Q221238: XADM: OST Sync Fails with 80070005-508-00-324
 
+{% raw %}
+
 	Article: Q221238
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:8.0,8.01,8.02,8.03,8.5; winnt:5.5
@@ -99,3 +101,5 @@ permalink: /kb/221/Q221238/
 	
 	=============================================================================
 	
+
+{% endraw %}

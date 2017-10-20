@@ -6,6 +6,8 @@ permalink: /kb/135/Q135967/
 
 ## Q135967: Matrox Display Drivers Can Cause General Protection Fault
 
+{% raw %}
+
 	Article: Q135967
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -48,3 +50,5 @@ permalink: /kb/135/Q135967/
 	
 	=============================================================================
 	
+
+{% endraw %}

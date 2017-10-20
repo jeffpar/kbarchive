@@ -6,6 +6,8 @@ permalink: /kb/201/Q201265/
 
 ## Q201265: Troubleshooting Directory Service Manager for NetWare
 
+{% raw %}
+
 	Article: Q201265
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -145,3 +147,5 @@ permalink: /kb/201/Q201265/
 	
 	=============================================================================
 	
+
+{% endraw %}

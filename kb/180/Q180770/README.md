@@ -6,6 +6,8 @@ permalink: /kb/180/Q180770/
 
 ## Q180770: BUG: Check Boxes Always Appear Three-Dimensional (3D)
 
+{% raw %}
+
 	Article: Q180770
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.11,3.0
@@ -47,3 +49,5 @@ permalink: /kb/180/Q180770/
 	
 	=============================================================================
 	
+
+{% endraw %}

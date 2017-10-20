@@ -6,6 +6,8 @@ permalink: /kb/261/Q261051/
 
 ## Q261051: Motocross Madness 2: 3-D Hardware Rendering Is Not Available
 
+{% raw %}
+
 	Article: Q261051
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/261/Q261051/
 	
 	=============================================================================
 	
+
+{% endraw %}

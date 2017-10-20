@@ -6,6 +6,8 @@ permalink: /kb/190/Q190022/
 
 ## Q190022: XCON: Comparison of X.400 and Site Connectors
 
+{% raw %}
+
 	Article: Q190022
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -198,3 +200,5 @@ permalink: /kb/190/Q190022/
 	
 	=============================================================================
 	
+
+{% endraw %}

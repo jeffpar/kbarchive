@@ -6,6 +6,8 @@ permalink: /kb/068/Q68463/
 
 ## Q68463: Using the SHIFT+F1 Pointer for Topic-Specific Help in Windows
 
+{% raw %}
+
 	Article: Q68463
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -43,3 +45,5 @@ permalink: /kb/068/Q68463/
 	
 	=============================================================================
 	
+
+{% endraw %}

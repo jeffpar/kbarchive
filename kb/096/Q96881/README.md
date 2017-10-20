@@ -6,6 +6,8 @@ permalink: /kb/096/Q96881/
 
 ## Q96881: Err Msg: Voice Pilot Cannot Support Application
 
+{% raw %}
+
 	Article: Q96881
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/096/Q96881/
 	
 	=============================================================================
 	
+
+{% endraw %}

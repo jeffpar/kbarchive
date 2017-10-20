@@ -6,6 +6,8 @@ permalink: /kb/177/Q177043/
 
 ## Q177043: Age of Empires: How to Complete the River Outpost Campaign
 
+{% raw %}
+
 	Article: Q177043
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/177/Q177043/
 	
 	=============================================================================
 	
+
+{% endraw %}

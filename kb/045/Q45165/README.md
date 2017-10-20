@@ -6,6 +6,8 @@ permalink: /kb/045/Q45165/
 
 ## Q45165: &quot;Too Many Segments&quot; LINKing More Than 128 Modules
 
+{% raw %}
+
 	Article: Q45165
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -53,3 +55,5 @@ permalink: /kb/045/Q45165/
 	run-time module. This happens because BUILDRTM.EXE uses LINK.EXE to
 	create a run-time module. The workarounds are the same as above: combine
 	one or more modules or SET the LINK environment variable.
+
+{% endraw %}

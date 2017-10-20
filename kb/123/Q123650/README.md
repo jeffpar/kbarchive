@@ -6,6 +6,8 @@ permalink: /kb/123/Q123650/
 
 ## Q123650: X400: Err Msg: ERROR 1 (RTS): Failed to Decode PAccept
 
+{% raw %}
+
 	Article: Q123650
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -91,3 +93,5 @@ permalink: /kb/123/Q123650/
 	
 	=============================================================================
 	
+
+{% endraw %}

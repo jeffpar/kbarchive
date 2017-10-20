@@ -6,6 +6,8 @@ permalink: /kb/174/Q174931/
 
 ## Q174931: Printer Share Lost after Renaming Printer
 
+{% raw %}
+
 	Article: Q174931
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/174/Q174931/
 	
 	=============================================================================
 	
+
+{% endraw %}

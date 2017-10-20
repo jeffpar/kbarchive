@@ -6,6 +6,8 @@ permalink: /kb/071/Q71415/
 
 ## Q71415: Effect of the rmargin Switch in the PWB 1.0/1.1 Editor
 
+{% raw %}
+
 	Article: Q71415
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -85,3 +87,5 @@ permalink: /kb/071/Q71415/
 	
 	=============================================================================
 	
+
+{% endraw %}

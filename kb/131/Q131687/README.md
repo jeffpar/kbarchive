@@ -6,6 +6,8 @@ permalink: /kb/131/Q131687/
 
 ## Q131687: PPT: CompuServe GIF89a Doesn't Import Transparent Background
 
+{% raw %}
+
 	Article: Q131687
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:2.0,3.0,4.0,7.0
@@ -106,3 +108,5 @@ permalink: /kb/131/Q131687/
 	
 	=============================================================================
 	
+
+{% endraw %}

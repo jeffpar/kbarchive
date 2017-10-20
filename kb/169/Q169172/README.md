@@ -6,6 +6,8 @@ permalink: /kb/169/Q169172/
 
 ## Q169172: Allowed Directions Option Available for Leased SDLC Connection
 
+{% raw %}
+
 	Article: Q169172
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,4.0
@@ -55,3 +57,5 @@ permalink: /kb/169/Q169172/
 	
 	=============================================================================
 	
+
+{% endraw %}

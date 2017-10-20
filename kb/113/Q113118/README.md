@@ -6,6 +6,8 @@ permalink: /kb/113/Q113118/
 
 ## Q113118: BUG: C2061, C2062, C2226, C2039 Occur When Using enum types
 
+{% raw %}
+
 	Article: Q113118
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,4.1,4.2,5.0,7.0
@@ -146,3 +148,5 @@ permalink: /kb/113/Q113118/
 	
 	=============================================================================
 	
+
+{% endraw %}

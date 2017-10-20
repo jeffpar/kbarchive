@@ -6,6 +6,8 @@ permalink: /kb/155/Q155587/
 
 ## Q155587: No Administrative Tools or Common Folders Available
 
+{% raw %}
+
 	Article: Q155587
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/155/Q155587/
 	
 	=============================================================================
 	
+
+{% endraw %}

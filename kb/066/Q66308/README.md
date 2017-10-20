@@ -6,6 +6,8 @@ permalink: /kb/066/Q66308/
 
 ## Q66308: PWB's Use of Expanded Memory
 
+{% raw %}
+
 	Article: Q66308
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1
@@ -41,3 +43,5 @@ permalink: /kb/066/Q66308/
 	
 	=============================================================================
 	
+
+{% endraw %}

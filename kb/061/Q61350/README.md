@@ -6,6 +6,8 @@ permalink: /kb/061/Q61350/
 
 ## Q61350: Disk vs. RAM Memory of Stand Alone vs. Run Time in BASIC PDS
 
+{% raw %}
+
 	Article: Q61350
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -33,3 +35,5 @@ permalink: /kb/061/Q61350/
 	However, with a large enough number of .EXE programs, the combined
 	stand-alone programs require more disk storage space than the combined
 	run-time equivalents, which share one run-time module.
+
+{% endraw %}

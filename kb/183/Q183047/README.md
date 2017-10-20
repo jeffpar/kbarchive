@@ -6,6 +6,8 @@ permalink: /kb/183/Q183047/
 
 ## Q183047: FP: Form Results Not Secure in _Private Folder on IIS Server
 
+{% raw %}
+
 	Article: Q183047
 	Product(s): Word Front Page
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/183/Q183047/
 	
 	=============================================================================
 	
+
+{% endraw %}

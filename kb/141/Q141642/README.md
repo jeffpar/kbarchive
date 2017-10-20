@@ -6,6 +6,8 @@ permalink: /kb/141/Q141642/
 
 ## Q141642: Mac Dangerous Creatures: No Help Window Opens; Computer Beeps
 
+{% raw %}
+
 	Article: Q141642
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -67,3 +69,5 @@ permalink: /kb/141/Q141642/
 	
 	=============================================================================
 	
+
+{% endraw %}

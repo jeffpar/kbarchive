@@ -6,6 +6,8 @@ permalink: /kb/063/Q63793/
 
 ## Q63793: Communication Port Data Loss in Enhanced-Mode Windows 3.0
 
+{% raw %}
+
 	Article: Q63793
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -100,3 +102,5 @@ permalink: /kb/063/Q63793/
 	
 	=============================================================================
 	
+
+{% endraw %}

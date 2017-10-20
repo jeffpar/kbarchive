@@ -6,6 +6,8 @@ permalink: /kb/095/Q95397/
 
 ## Q95397: DynaComm Elite Requires a DLC Provider to Function with WFWG
 
+{% raw %}
+
 	Article: Q95397
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/095/Q95397/
 	
 	=============================================================================
 	
+
+{% endraw %}

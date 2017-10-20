@@ -6,6 +6,8 @@ permalink: /kb/238/Q238487/
 
 ## Q238487: XCON: Exchange Notes Connector May Stop Responding with Bad SMTP
 
+{% raw %}
+
 	Article: Q238487
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -57,3 +59,5 @@ permalink: /kb/238/Q238487/
 	
 	=============================================================================
 	
+
+{% endraw %}

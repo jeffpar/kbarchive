@@ -6,6 +6,8 @@ permalink: /kb/247/Q247066/
 
 ## Q247066: Windows NT DHCP Server May Not Add BAD_ADDRESS Entries
 
+{% raw %}
+
 	Article: Q247066
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -85,3 +87,5 @@ permalink: /kb/247/Q247066/
 	
 	=============================================================================
 	
+
+{% endraw %}

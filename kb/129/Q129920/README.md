@@ -6,6 +6,8 @@ permalink: /kb/129/Q129920/
 
 ## Q129920: PRB: INDEX ON produces 'File is read-only' Error with Cursor
 
+{% raw %}
+
 	Article: Q129920
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a; WINDOWS:2.6a,3.0
@@ -60,3 +62,5 @@ permalink: /kb/129/Q129920/
 	
 	=============================================================================
 	
+
+{% endraw %}

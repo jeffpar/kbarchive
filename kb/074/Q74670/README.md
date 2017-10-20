@@ -6,6 +6,8 @@ permalink: /kb/074/Q74670/
 
 ## Q74670: FIX: MASM 5.1/5.1a Cause LINK to Put Uninitialized Data in .EXE
 
+{% raw %}
+
 	Article: Q74670
 	Product(s): Microsoft Macro Assembler
 	Version(s): winnt:5.10,5.10a
@@ -77,3 +79,5 @@ permalink: /kb/074/Q74670/
 	
 	=============================================================================
 	
+
+{% endraw %}

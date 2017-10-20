@@ -6,6 +6,8 @@ permalink: /kb/195/Q195362/
 
 ## Q195362: DOC: Calendar Control Contains Proprietary Information
 
+{% raw %}
+
 	Article: Q195362
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -39,3 +41,5 @@ permalink: /kb/195/Q195362/
 	
 	=============================================================================
 	
+
+{% endraw %}

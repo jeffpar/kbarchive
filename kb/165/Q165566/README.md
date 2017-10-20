@@ -6,6 +6,8 @@ permalink: /kb/165/Q165566/
 
 ## Q165566: WD97: Cannot Use &quot;What's This?&quot; in Text Boxes
 
+{% raw %}
+
 	Article: Q165566
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -83,3 +85,5 @@ permalink: /kb/165/Q165566/
 	
 	=============================================================================
 	
+
+{% endraw %}

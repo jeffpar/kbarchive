@@ -6,6 +6,8 @@ permalink: /kb/288/Q288562/
 
 ## Q288562: XADM: Isinteg Won't Patch Information Store Running on Cluster
 
+{% raw %}
+
 	Article: Q288562
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -91,3 +93,5 @@ permalink: /kb/288/Q288562/
 	
 	=============================================================================
 	
+
+{% endraw %}

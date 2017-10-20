@@ -6,6 +6,8 @@ permalink: /kb/150/Q150045/
 
 ## Q150045: Mac Encarta 96 Hangs or Quits When Choosing a Word Processor
 
+{% raw %}
+
 	Article: Q150045
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -75,3 +77,5 @@ permalink: /kb/150/Q150045/
 	
 	=============================================================================
 	
+
+{% endraw %}

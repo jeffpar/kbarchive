@@ -6,6 +6,8 @@ permalink: /kb/149/Q149044/
 
 ## Q149044: DNS Host Name Substitutes &quot;-&quot; for Invalid Characters
 
+{% raw %}
+
 	Article: Q149044
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -87,3 +89,5 @@ permalink: /kb/149/Q149044/
 	
 	=============================================================================
 	
+
+{% endraw %}

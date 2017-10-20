@@ -6,6 +6,8 @@ permalink: /kb/082/Q82318/
 
 ## Q82318: Stack Overflow Can Cause Windows to Hang
 
+{% raw %}
+
 	Article: Q82318
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/082/Q82318/
 	
 	=============================================================================
 	
+
+{% endraw %}

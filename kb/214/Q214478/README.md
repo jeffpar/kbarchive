@@ -6,6 +6,8 @@ permalink: /kb/214/Q214478/
 
 ## Q214478: HOWTO: Handle Check Notifications in CCheckListBox
 
+{% raw %}
+
 	Article: Q214478
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/214/Q214478/
 	
 	=============================================================================
 	
+
+{% endraw %}

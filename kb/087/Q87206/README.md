@@ -6,6 +6,8 @@ permalink: /kb/087/Q87206/
 
 ## Q87206: PROFS: Tools Available to Configure Gateway
 
+{% raw %}
+
 	Article: Q87206
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -63,3 +65,5 @@ permalink: /kb/087/Q87206/
 	
 	=============================================================================
 	
+
+{% endraw %}

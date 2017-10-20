@@ -6,6 +6,8 @@ permalink: /kb/139/Q139589/
 
 ## Q139589: Distribution of Files with Long Filenames Require NTFS
 
+{% raw %}
+
 	Article: Q139589
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -77,3 +79,5 @@ permalink: /kb/139/Q139589/
 	
 	=============================================================================
 	
+
+{% endraw %}

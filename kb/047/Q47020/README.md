@@ -6,6 +6,8 @@ permalink: /kb/047/Q47020/
 
 ## Q47020: Don't Use #line While Debugging in QuickC or Using CodeView
 
+{% raw %}
+
 	Article: Q47020
 	Product(s): See article
 	Version(s): 1.01 2.00 2.01
@@ -28,3 +30,5 @@ permalink: /kb/047/Q47020/
 	values and continues processing with the new values. Therefore, if you
 	debug or use CodeView, the trace does not match up to your source
 	code.
+
+{% endraw %}

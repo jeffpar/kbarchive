@@ -6,6 +6,8 @@ permalink: /kb/148/Q148972/
 
 ## Q148972: INFO: How SNA Server Determines Max BTU Over 802.2 DLC
 
+{% raw %}
+
 	Article: Q148972
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11,3.0,4.0
@@ -177,3 +179,5 @@ permalink: /kb/148/Q148972/
 	
 	=============================================================================
 	
+
+{% endraw %}

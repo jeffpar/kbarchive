@@ -6,6 +6,8 @@ permalink: /kb/254/Q254432/
 
 ## Q254432: MapPoint 2001: Unable to Successfully Import Data from Excel
 
+{% raw %}
+
 	Article: Q254432
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/254/Q254432/
 	
 	=============================================================================
 	
+
+{% endraw %}

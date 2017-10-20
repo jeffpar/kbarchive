@@ -6,6 +6,8 @@ permalink: /kb/135/Q135513/
 
 ## Q135513: FltSim 5.1: Cannot Change View 1 When Map View Is Active
 
+{% raw %}
+
 	Article: Q135513
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:4.0,5.0,5.1
@@ -53,3 +55,5 @@ permalink: /kb/135/Q135513/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/226/Q226520/
 
 ## Q226520: NTFS Formatted Removable Media Write Operations Extremely Slow
 
+{% raw %}
+
 	Article: Q226520
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/226/Q226520/
 	
 	=============================================================================
 	
+
+{% endraw %}

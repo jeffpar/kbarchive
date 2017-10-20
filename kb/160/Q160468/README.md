@@ -6,6 +6,8 @@ permalink: /kb/160/Q160468/
 
 ## Q160468: Writer 2: Graphics Print with Solid Black Box on Canon BJC
 
+{% raw %}
+
 	Article: Q160468
 	Product(s): Microsoft Home Kids Products
 	Version(s): 2.0
@@ -62,3 +64,5 @@ permalink: /kb/160/Q160468/
 	
 	=============================================================================
 	
+
+{% endraw %}

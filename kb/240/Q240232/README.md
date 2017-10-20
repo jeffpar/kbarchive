@@ -6,6 +6,8 @@ permalink: /kb/240/Q240232/
 
 ## Q240232: WD97: Selection.Information Returns Incorrect Information
 
+{% raw %}
+
 	Article: Q240232
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/240/Q240232/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/255/Q255829/
 
 ## Q255829: PRB: PDW Includes Comsvcs.dll File with COM+ Applications
 
+{% raw %}
+
 	Article: Q255829
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -73,3 +75,5 @@ permalink: /kb/255/Q255829/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222123/
 
 ## Q222123: HOWTO: Debug OLE DB Providers That Are Called From SQL Server 7
 
+{% raw %}
+
 	Article: Q222123
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0
@@ -147,3 +149,5 @@ permalink: /kb/222/Q222123/
 	
 	=============================================================================
 	
+
+{% endraw %}

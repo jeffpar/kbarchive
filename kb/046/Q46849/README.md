@@ -6,6 +6,8 @@ permalink: /kb/046/Q46849/
 
 ## Q46849: During INPUT, CTRL+T Displays Softkeys on Line 25
 
+{% raw %}
+
 	Article: Q46849
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -43,3 +45,5 @@ permalink: /kb/046/Q46849/
 	
 	KeyPressed:
 	     RETURN
+
+{% endraw %}

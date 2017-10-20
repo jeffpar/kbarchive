@@ -6,6 +6,8 @@ permalink: /kb/246/Q246053/
 
 ## Q246053: Why Default.asp is Not Created in the Default Web Site of IIS5
 
+{% raw %}
+
 	Article: Q246053
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -59,3 +61,5 @@ permalink: /kb/246/Q246053/
 	
 	=============================================================================
 	
+
+{% endraw %}

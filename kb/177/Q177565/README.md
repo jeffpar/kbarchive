@@ -6,6 +6,8 @@ permalink: /kb/177/Q177565/
 
 ## Q177565: Unattended Install Fails If Using IBM Token Ring 16/4 /A NIC
 
+{% raw %}
+
 	Article: Q177565
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/177/Q177565/
 	
 	=============================================================================
 	
+
+{% endraw %}

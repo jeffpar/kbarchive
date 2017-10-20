@@ -6,6 +6,8 @@ permalink: /kb/121/Q121170/
 
 ## Q121170: How to Access Environment Variables in an MS-DOS Batch File
 
+{% raw %}
+
 	Article: Q121170
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:
@@ -72,3 +74,5 @@ permalink: /kb/121/Q121170/
 	
 	=============================================================================
 	
+
+{% endraw %}

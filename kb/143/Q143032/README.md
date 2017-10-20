@@ -6,6 +6,8 @@ permalink: /kb/143/Q143032/
 
 ## Q143032: PRB: RDO: Hstmt Error with Asynchronous SQL Server Queries
 
+{% raw %}
+
 	Article: Q143032
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -160,3 +162,5 @@ permalink: /kb/143/Q143032/
 	
 	=============================================================================
 	
+
+{% endraw %}

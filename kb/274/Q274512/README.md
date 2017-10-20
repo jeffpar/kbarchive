@@ -6,6 +6,8 @@ permalink: /kb/274/Q274512/
 
 ## Q274512: The Default Temporary Variable for the Inuse.exe Utility
 
+{% raw %}
+
 	Article: Q274512
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -46,3 +48,5 @@ permalink: /kb/274/Q274512/
 	
 	=============================================================================
 	
+
+{% endraw %}

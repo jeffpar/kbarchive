@@ -6,6 +6,8 @@ permalink: /kb/132/Q132538/
 
 ## Q132538: Bookshelf 95: Media Formats and Articles Totals for Books
 
+{% raw %}
+
 	Article: Q132538
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/132/Q132538/
 	
 	=============================================================================
 	
+
+{% endraw %}

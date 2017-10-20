@@ -6,6 +6,8 @@ permalink: /kb/190/Q190706/
 
 ## Q190706: XADM: Exported Multi-valued Fields May Vary in Order Listed
 
+{% raw %}
+
 	Article: Q190706
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/190/Q190706/
 	
 	=============================================================================
 	
+
+{% endraw %}

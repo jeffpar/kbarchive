@@ -6,6 +6,8 @@ permalink: /kb/090/Q90012/
 
 ## Q90012: BUG: Friction and Factor PWB Switches do not work
 
+{% raw %}
+
 	Article: Q90012
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:2.1.49
@@ -94,3 +96,5 @@ permalink: /kb/090/Q90012/
 	
 	=============================================================================
 	
+
+{% endraw %}

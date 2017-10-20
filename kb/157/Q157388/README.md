@@ -6,6 +6,8 @@ permalink: /kb/157/Q157388/
 
 ## Q157388: Soccer: Enhancing Performance
 
+{% raw %}
+
 	Article: Q157388
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/157/Q157388/
 	
 	=============================================================================
 	
+
+{% endraw %}

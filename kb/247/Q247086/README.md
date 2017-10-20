@@ -6,6 +6,8 @@ permalink: /kb/247/Q247086/
 
 ## Q247086: XWEB: Outlook Web Access Error Message: Failed to Get Inbox
 
+{% raw %}
+
 	Article: Q247086
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -72,3 +74,5 @@ permalink: /kb/247/Q247086/
 	
 	=============================================================================
 	
+
+{% endraw %}

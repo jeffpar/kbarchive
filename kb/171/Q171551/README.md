@@ -6,6 +6,8 @@ permalink: /kb/171/Q171551/
 
 ## Q171551: FIX: 32-Bit DBList/DBCombo May Exhibit Problems When Locked
 
+{% raw %}
+
 	Article: Q171551
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,97
@@ -85,3 +87,5 @@ permalink: /kb/171/Q171551/
 	
 	=============================================================================
 	
+
+{% endraw %}

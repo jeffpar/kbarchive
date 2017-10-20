@@ -6,6 +6,8 @@ permalink: /kb/108/Q108835/
 
 ## Q108835: PC Gen: PODIAG.INI Entries in &#91;Server Folder Check&#93;
 
+{% raw %}
+
 	Article: Q108835
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -114,3 +116,5 @@ permalink: /kb/108/Q108835/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171926/
 
 ## Q171926: Mac Bookshelf 98: Contents of Read Me Document (Complete Text)
 
+{% raw %}
+
 	Article: Q171926
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -524,3 +526,5 @@ permalink: /kb/171/Q171926/
 	
 	=============================================================================
 	
+
+{% endraw %}

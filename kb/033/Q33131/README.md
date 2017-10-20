@@ -6,6 +6,8 @@ permalink: /kb/033/Q33131/
 
 ## Q33131: When One Disk in a BACKUP/RESTORE Sequence Is Bad
 
+{% raw %}
+
 	Article: Q33131
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/033/Q33131/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148432/
 
 ## Q148432: XADM: Location of the Key Management Server Software
 
+{% raw %}
+
 	Article: Q148432
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -36,3 +38,5 @@ permalink: /kb/148/Q148432/
 	
 	=============================================================================
 	
+
+{% endraw %}

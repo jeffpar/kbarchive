@@ -6,6 +6,8 @@ permalink: /kb/303/Q303716/
 
 ## Q303716: FP: Error Publishing/Saving File to Server Using Web Storage Sys
 
+{% raw %}
+
 	Article: Q303716
 	Product(s): Word Front Page
 	Version(s): SP1
@@ -164,3 +166,5 @@ permalink: /kb/303/Q303716/
 	
 	=============================================================================
 	
+
+{% endraw %}

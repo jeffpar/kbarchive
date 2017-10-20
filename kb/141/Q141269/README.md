@@ -6,6 +6,8 @@ permalink: /kb/141/Q141269/
 
 ## Q141269: Windows 3.0 Shortcut Keys Work
 
+{% raw %}
+
 	Article: Q141269
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -49,3 +51,5 @@ permalink: /kb/141/Q141269/
 	
 	=============================================================================
 	
+
+{% endraw %}

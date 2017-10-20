@@ -6,6 +6,8 @@ permalink: /kb/028/Q28684/
 
 ## Q28684: Mouse Driver Command Line Switches
 
+{% raw %}
+
 	Article: Q28684
 	Product(s): See article
 	Version(s): 6.00 6.02 6.10 1.00
@@ -32,3 +34,5 @@ permalink: /kb/028/Q28684/
 	   /R4          InPort interupt rate 200Hz
 	
 	   Example: mouse /s75    <- sets mouse sensitivity to 75 (50 default)
+
+{% endraw %}

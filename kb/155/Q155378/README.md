@@ -6,6 +6,8 @@ permalink: /kb/155/Q155378/
 
 ## Q155378: XCLN: Message Field Elements not Propagated to EFD Form
 
+{% raw %}
+
 	Article: Q155378
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -88,3 +90,5 @@ permalink: /kb/155/Q155378/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/297/Q297686/
 
 ## Q297686: XADM: Mbclean Cleans Msgs. by PR_LAST_MODIFICATION_TIME in SP4
 
+{% raw %}
+
 	Article: Q297686
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP4
@@ -84,3 +86,5 @@ permalink: /kb/297/Q297686/
 	
 	=============================================================================
 	
+
+{% endraw %}

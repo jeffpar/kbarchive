@@ -6,6 +6,8 @@ permalink: /kb/070/Q70048/
 
 ## Q70048: Top and Bottom of Printer Output Missing on Legal-Size Paper
 
+{% raw %}
+
 	Article: Q70048
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -78,3 +80,5 @@ permalink: /kb/070/Q70048/
 	
 	=============================================================================
 	
+
+{% endraw %}

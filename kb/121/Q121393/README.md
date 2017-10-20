@@ -6,6 +6,8 @@ permalink: /kb/121/Q121393/
 
 ## Q121393: Error Message Claims NTFS Files Corrupt, Chkdsk Does Nothing
 
+{% raw %}
+
 	Article: Q121393
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -80,3 +82,5 @@ permalink: /kb/121/Q121393/
 	
 	=============================================================================
 	
+
+{% endraw %}

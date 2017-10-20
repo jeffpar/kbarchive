@@ -6,6 +6,8 @@ permalink: /kb/047/Q47781/
 
 ## Q47781: QCL Default Compile Options
 
+{% raw %}
+
 	Article: Q47781
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -32,3 +34,5 @@ permalink: /kb/047/Q47781/
 	
 	You can find detailed information about all the compiler options in
 	the "Microsoft QuickC Tool Kit," Chapter 4, QCL command reference.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146256/
 
 ## Q146256: XCLN: User w/ Delete Permissions Cannot Delete Messages
 
+{% raw %}
+
 	Article: Q146256
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -53,3 +55,5 @@ permalink: /kb/146/Q146256/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41195/
 
 ## Q41195: QuickC Version 2.00 Supports Coprocessor Libraries
 
+{% raw %}
+
 	Article: Q41195
 	Product(s): See article
 	Version(s): 1.x 2.00
@@ -31,3 +33,5 @@ permalink: /kb/041/Q41195/
 	library needing the emulator math package. In QuickC Version 2.00,
 	the core library is gone so there is no restriction to the emulator
 	math package.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87319/
 
 ## Q87319: MIDI Mapper Cannot Be Configured for Individual Workstation
 
+{% raw %}
+
 	Article: Q87319
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/087/Q87319/
 	
 	=============================================================================
 	
+
+{% endraw %}

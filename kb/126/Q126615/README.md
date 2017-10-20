@@ -6,6 +6,8 @@ permalink: /kb/126/Q126615/
 
 ## Q126615: BUG: MSDN CD#4: MSJETINT.DLL Missed in ODBC16.INF
 
+{% raw %}
+
 	Article: Q126615
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.10
@@ -65,3 +67,5 @@ permalink: /kb/126/Q126615/
 	
 	=============================================================================
 	
+
+{% endraw %}

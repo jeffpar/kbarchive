@@ -6,6 +6,8 @@ permalink: /kb/311/Q311063/
 
 ## Q311063: PRB: FSIZE() Returns Zero If Expression Has Trailing Spaces
 
+{% raw %}
+
 	Article: Q311063
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -65,3 +67,5 @@ permalink: /kb/311/Q311063/
 	
 	=============================================================================
 	
+
+{% endraw %}

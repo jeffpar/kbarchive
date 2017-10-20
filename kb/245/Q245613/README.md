@@ -6,6 +6,8 @@ permalink: /kb/245/Q245613/
 
 ## Q245613: SMS: Error Message Occurs When Status Messages Are Deleted
 
+{% raw %}
+
 	Article: Q245613
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -78,3 +80,5 @@ permalink: /kb/245/Q245613/
 	
 	=============================================================================
 	
+
+{% endraw %}

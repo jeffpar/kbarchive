@@ -6,6 +6,8 @@ permalink: /kb/126/Q126145/
 
 ## Q126145: MS EXCEL VB APPLIC SBS MAC ED: Corrections and Comments
 
+{% raw %}
+
 	Article: Q126145
 	Product(s): Microsoft Press
 	Version(s): 
@@ -157,3 +159,5 @@ permalink: /kb/126/Q126145/
 	
 	=============================================================================
 	
+
+{% endraw %}

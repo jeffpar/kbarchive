@@ -6,6 +6,8 @@ permalink: /kb/152/Q152655/
 
 ## Q152655: Wrong Cancellation Form Sent for Recurring Meeting
 
+{% raw %}
+
 	Article: Q152655
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -43,3 +45,5 @@ permalink: /kb/152/Q152655/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/298/Q298686/
 
 ## Q298686: SMS: Resource Explorer Displays IP Addresses Not Subnet Masks
 
+{% raw %}
+
 	Article: Q298686
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -88,3 +90,5 @@ permalink: /kb/298/Q298686/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239879/
 
 ## Q239879: CoCreateInstance Fails When Constructor String Is Blank
 
+{% raw %}
+
 	Article: Q239879
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -87,3 +89,5 @@ permalink: /kb/239/Q239879/
 	
 	=============================================================================
 	
+
+{% endraw %}

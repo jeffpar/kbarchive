@@ -6,6 +6,8 @@ permalink: /kb/117/Q117715/
 
 ## Q117715: Slow Performance over IBM Software Source Routing Bridge
 
+{% raw %}
+
 	Article: Q117715
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.11
@@ -125,3 +127,5 @@ permalink: /kb/117/Q117715/
 	
 	=============================================================================
 	
+
+{% endraw %}

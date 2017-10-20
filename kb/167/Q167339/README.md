@@ -6,6 +6,8 @@ permalink: /kb/167/Q167339/
 
 ## Q167339: FIX: New Class Added in ATLWizard Removes Edit Interface Setting
 
+{% raw %}
+
 	Article: Q167339
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -75,3 +77,5 @@ permalink: /kb/167/Q167339/
 	
 	=============================================================================
 	
+
+{% endraw %}

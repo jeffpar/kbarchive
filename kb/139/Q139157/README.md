@@ -6,6 +6,8 @@ permalink: /kb/139/Q139157/
 
 ## Q139157: HOWTO: Reducing RAM Memory to Test Visual FoxPro Applications
 
+{% raw %}
+
 	Article: Q139157
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -83,3 +85,5 @@ permalink: /kb/139/Q139157/
 	
 	=============================================================================
 	
+
+{% endraw %}

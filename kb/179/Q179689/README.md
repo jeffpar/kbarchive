@@ -6,6 +6,8 @@ permalink: /kb/179/Q179689/
 
 ## Q179689: Hooking into the IUnknown of a COM Object in MFC
 
+{% raw %}
+
 	Article: Q179689
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -154,3 +156,5 @@ permalink: /kb/179/Q179689/
 	
 	=============================================================================
 	
+
+{% endraw %}

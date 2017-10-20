@@ -6,6 +6,8 @@ permalink: /kb/176/Q176965/
 
 ## Q176965: Programs (16-bit .exe) May Start NTVDM at 100% CPU Utilization
 
+{% raw %}
+
 	Article: Q176965
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:4.0
@@ -94,3 +96,5 @@ permalink: /kb/176/Q176965/
 	
 	=============================================================================
 	
+
+{% endraw %}

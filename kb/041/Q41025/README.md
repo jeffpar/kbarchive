@@ -6,6 +6,8 @@ permalink: /kb/041/Q41025/
 
 ## Q41025: Using _dos_setdrive and _searchenv to Open a File
 
+{% raw %}
+
 	Article: Q41025
 	Product(s): See article
 	Version(s): 2.00
@@ -56,3 +58,5 @@ permalink: /kb/041/Q41025/
 	    else
 	       printf("File opened for reading\n");
 	}
+
+{% endraw %}

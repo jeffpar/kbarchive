@@ -6,6 +6,8 @@ permalink: /kb/134/Q134315/
 
 ## Q134315: FIX: Cannot Open Database and No Message Is Displayed
 
+{% raw %}
+
 	Article: Q134315
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -93,3 +95,5 @@ permalink: /kb/134/Q134315/
 	
 	=============================================================================
 	
+
+{% endraw %}

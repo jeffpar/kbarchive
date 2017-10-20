@@ -6,6 +6,8 @@ permalink: /kb/269/Q269366/
 
 ## Q269366: Pocket Streets 2001: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q269366
 	Product(s): Microsoft Automap
 	Version(s): 2.5
@@ -58,3 +60,5 @@ permalink: /kb/269/Q269366/
 	
 	=============================================================================
 	
+
+{% endraw %}

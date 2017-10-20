@@ -6,6 +6,8 @@ permalink: /kb/311/Q311771/
 
 ## Q311771: Encarta Online Deluxe: Free Membership Included with Computer
 
+{% raw %}
+
 	Article: Q311771
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -170,3 +172,5 @@ permalink: /kb/311/Q311771/
 	
 	=============================================================================
 	
+
+{% endraw %}

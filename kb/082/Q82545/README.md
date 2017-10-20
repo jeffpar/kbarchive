@@ -6,6 +6,8 @@ permalink: /kb/082/Q82545/
 
 ## Q82545: Serial Device Stops Working After Installing New Serial Device
 
+{% raw %}
+
 	Article: Q82545
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11,95
@@ -116,3 +118,5 @@ permalink: /kb/082/Q82545/
 	
 	=============================================================================
 	
+
+{% endraw %}

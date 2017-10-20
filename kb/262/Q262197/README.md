@@ -6,6 +6,8 @@ permalink: /kb/262/Q262197/
 
 ## Q262197: Allegiance: Nothing Happens When Player Attempts Suicide
 
+{% raw %}
+
 	Article: Q262197
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/262/Q262197/
 	
 	=============================================================================
 	
+
+{% endraw %}

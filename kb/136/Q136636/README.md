@@ -6,6 +6,8 @@ permalink: /kb/136/Q136636/
 
 ## Q136636: Automating NTFS Conversion
 
+{% raw %}
+
 	Article: Q136636
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -79,3 +81,5 @@ permalink: /kb/136/Q136636/
 	
 	=============================================================================
 	
+
+{% endraw %}

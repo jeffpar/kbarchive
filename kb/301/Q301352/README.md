@@ -6,6 +6,8 @@ permalink: /kb/301/Q301352/
 
 ## Q301352: SMS: Missing Status Messages on Large Distributions
 
+{% raw %}
+
 	Article: Q301352
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -89,3 +91,5 @@ permalink: /kb/301/Q301352/
 	
 	=============================================================================
 	
+
+{% endraw %}

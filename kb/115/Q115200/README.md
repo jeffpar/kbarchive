@@ -6,6 +6,8 @@ permalink: /kb/115/Q115200/
 
 ## Q115200: MS-DOS-Based Apps May Not Time-Slice Well Under WFWG 3.11
 
+{% raw %}
+
 	Article: Q115200
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -53,3 +55,5 @@ permalink: /kb/115/Q115200/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191267/
 
 ## Q191267: XFOR: IMC Won't Identify Which Server Produced Postmaster NDR
 
+{% raw %}
+
 	Article: Q191267
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -63,3 +65,5 @@ permalink: /kb/191/Q191267/
 	
 	=============================================================================
 	
+
+{% endraw %}

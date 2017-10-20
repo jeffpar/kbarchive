@@ -6,6 +6,8 @@ permalink: /kb/074/Q74581/
 
 ## Q74581: General Information About MS-DOS 5.0 and Intel Boards
 
+{% raw %}
+
 	Article: Q74581
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -74,3 +76,5 @@ permalink: /kb/074/Q74581/
 	
 	=============================================================================
 	
+
+{% endraw %}

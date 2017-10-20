@@ -6,6 +6,8 @@ permalink: /kb/169/Q169133/
 
 ## Q169133: SMSINST: Bitmap Missing in Edit Dialog Window
 
+{% raw %}
+
 	Article: Q169133
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.2
@@ -44,3 +46,5 @@ permalink: /kb/169/Q169133/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72034/
 
 ## Q72034: LAN Manager 2.0 Enhanced DOS Netpopup
 
+{% raw %}
+
 	Article: Q72034
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/072/Q72034/
 	
 	=============================================================================
 	
+
+{% endraw %}

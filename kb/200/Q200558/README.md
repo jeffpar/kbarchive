@@ -6,6 +6,8 @@ permalink: /kb/200/Q200558/
 
 ## Q200558: SMS: File Transfer Window Panes Not Sized Appropriately
 
+{% raw %}
+
 	Article: Q200558
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -49,3 +51,5 @@ permalink: /kb/200/Q200558/
 	
 	=============================================================================
 	
+
+{% endraw %}

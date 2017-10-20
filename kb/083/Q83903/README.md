@@ -6,6 +6,8 @@ permalink: /kb/083/Q83903/
 
 ## Q83903: Compaq Adapt Utility Shifts MS-DOS Colors with Windows 3.1
 
+{% raw %}
+
 	Article: Q83903
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/083/Q83903/
 	
 	=============================================================================
 	
+
+{% endraw %}

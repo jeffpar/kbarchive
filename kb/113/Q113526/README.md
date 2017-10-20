@@ -6,6 +6,8 @@ permalink: /kb/113/Q113526/
 
 ## Q113526: PRB: Can't Enter Valid Date with SET DATE and @ ... GET Date
 
+{% raw %}
+
 	Article: Q113526
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/113/Q113526/
 	
 	=============================================================================
 	
+
+{% endraw %}

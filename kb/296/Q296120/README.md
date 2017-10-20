@@ -6,6 +6,8 @@ permalink: /kb/296/Q296120/
 
 ## Q296120: INF: OLE DB Provider for AS/400 and VSAM Host Requirements
 
+{% raw %}
+
 	Article: Q296120
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -158,3 +160,5 @@ permalink: /kb/296/Q296120/
 	
 	=============================================================================
 	
+
+{% endraw %}

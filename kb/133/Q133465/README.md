@@ -6,6 +6,8 @@ permalink: /kb/133/Q133465/
 
 ## Q133465: Wine Guide for the Macintosh: Movie Control Buttons Missing
 
+{% raw %}
+
 	Article: Q133465
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -59,3 +61,5 @@ permalink: /kb/133/Q133465/
 	
 	=============================================================================
 	
+
+{% endraw %}

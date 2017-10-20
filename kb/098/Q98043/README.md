@@ -6,6 +6,8 @@ permalink: /kb/098/Q98043/
 
 ## Q98043: PC MAPI WRmt: Problems w/ Simple MAPI and Extended Characters
 
+{% raw %}
+
 	Article: Q98043
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2
@@ -71,3 +73,5 @@ permalink: /kb/098/Q98043/
 	
 	=============================================================================
 	
+
+{% endraw %}

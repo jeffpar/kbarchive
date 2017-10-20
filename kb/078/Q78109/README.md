@@ -6,6 +6,8 @@ permalink: /kb/078/Q78109/
 
 ## Q78109: MS-DOS Setup with LOCKIT Utility, Version 1.5
 
+{% raw %}
+
 	Article: Q78109
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -77,3 +79,5 @@ permalink: /kb/078/Q78109/
 	
 	=============================================================================
 	
+
+{% endraw %}

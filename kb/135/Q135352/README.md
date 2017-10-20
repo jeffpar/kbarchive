@@ -6,6 +6,8 @@ permalink: /kb/135/Q135352/
 
 ## Q135352: Frequently Asked Questions for Mail for PC Networks
 
+{% raw %}
+
 	Article: Q135352
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -389,3 +391,5 @@ permalink: /kb/135/Q135352/
 	
 	=============================================================================
 	
+
+{% endraw %}

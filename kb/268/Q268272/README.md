@@ -6,6 +6,8 @@ permalink: /kb/268/Q268272/
 
 ## Q268272: CDO MAPI Session Logon Fails If No Thread Token
 
+{% raw %}
+
 	Article: Q268272
 	Product(s): Microsoft Exchange
 	Version(s): 1.2,1.21,5.5
@@ -75,3 +77,5 @@ permalink: /kb/268/Q268272/
 	
 	=============================================================================
 	
+
+{% endraw %}

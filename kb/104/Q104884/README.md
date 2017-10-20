@@ -6,6 +6,8 @@ permalink: /kb/104/Q104884/
 
 ## Q104884: How to Write to the Calendar/Diary Programmatically
 
+{% raw %}
+
 	Article: Q104884
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5x,2.6,2.6a; WINDOWS:2.5x,2.6,2.6a,3.0
@@ -84,3 +86,5 @@ permalink: /kb/104/Q104884/
 	
 	=============================================================================
 	
+
+{% endraw %}

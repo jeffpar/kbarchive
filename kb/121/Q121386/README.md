@@ -6,6 +6,8 @@ permalink: /kb/121/Q121386/
 
 ## Q121386: Using Systems Management Server in a Split-Domain Model
 
+{% raw %}
+
 	Article: Q121386
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -119,3 +121,5 @@ permalink: /kb/121/Q121386/
 	
 	=============================================================================
 	
+
+{% endraw %}

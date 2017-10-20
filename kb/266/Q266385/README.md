@@ -6,6 +6,8 @@ permalink: /kb/266/Q266385/
 
 ## Q266385: Err Msg: The Stub Received Bad Data
 
+{% raw %}
+
 	Article: Q266385
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0,4.0,5.0
@@ -59,3 +61,5 @@ permalink: /kb/266/Q266385/
 	
 	=============================================================================
 	
+
+{% endraw %}

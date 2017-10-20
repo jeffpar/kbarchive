@@ -6,6 +6,8 @@ permalink: /kb/163/Q163166/
 
 ## Q163166: HOWTO: Fixing the &quot;500 Extended Server Error&quot; Problem on ISAPI
 
+{% raw %}
+
 	Article: Q163166
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,4.0,5.0
@@ -95,3 +97,5 @@ permalink: /kb/163/Q163166/
 	
 	=============================================================================
 	
+
+{% endraw %}

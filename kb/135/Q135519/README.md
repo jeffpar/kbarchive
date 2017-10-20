@@ -6,6 +6,8 @@ permalink: /kb/135/Q135519/
 
 ## Q135519: BUG: Creating 500 Instances of a Form Class Causes IC Error
 
+{% raw %}
+
 	Article: Q135519
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -101,3 +103,5 @@ permalink: /kb/135/Q135519/
 	
 	=============================================================================
 	
+
+{% endraw %}

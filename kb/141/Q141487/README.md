@@ -6,6 +6,8 @@ permalink: /kb/141/Q141487/
 
 ## Q141487: HOWTO: How to Change the Text in the Tabs of a CPropertySheet
 
+{% raw %}
+
 	Article: Q141487
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -73,9 +75,9 @@ permalink: /kb/141/Q141487/
 	  CPage1::CPage1(UINT nIDCaption) :
 	                CPropertyPage(CMyPage::IDD, nIDCaption)
 	  {
-	      //{ {AFX_DATA_INIT(CMyPage)
+	      //{{AFX_DATA_INIT(CMyPage)
 	          // NOTE: the ClassWizard will add member initialization here
-	      //} }AFX_DATA_INIT
+	      //}}AFX_DATA_INIT
 	  }
 	
 	  // Use the class's constructor to pass the string ID
@@ -131,3 +133,5 @@ permalink: /kb/141/Q141487/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231938/
 
 ## Q231938: BUG: ResetToDefault Doesn't Work on Events and Methods in VFP 6
 
+{% raw %}
+
 	Article: Q231938
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -98,3 +100,5 @@ permalink: /kb/231/Q231938/
 	
 	=============================================================================
 	
+
+{% endraw %}

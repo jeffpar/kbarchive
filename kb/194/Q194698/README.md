@@ -6,6 +6,8 @@ permalink: /kb/194/Q194698/
 
 ## Q194698: FIX: ScaleMode of Foxels Interferes with ColumnWidths Property
 
+{% raw %}
+
 	Article: Q194698
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -75,3 +77,5 @@ permalink: /kb/194/Q194698/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185993/
 
 ## Q185993: BUG: Public Friend Properties Break Binary Compatibility
 
+{% raw %}
+
 	Article: Q185993
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/185/Q185993/
 	
 	=============================================================================
 	
+
+{% endraw %}

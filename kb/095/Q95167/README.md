@@ -6,6 +6,8 @@ permalink: /kb/095/Q95167/
 
 ## Q95167: XGraphic Windows Accelerator Doesn't Work with SUPERVGA.DRV
 
+{% raw %}
+
 	Article: Q95167
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/095/Q95167/
 	
 	=============================================================================
 	
+
+{% endraw %}

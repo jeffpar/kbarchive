@@ -6,6 +6,8 @@ permalink: /kb/183/Q183144/
 
 ## Q183144: Mac Encarta 98: Contents of the Encarta 98 Read Me File
 
+{% raw %}
+
 	Article: Q183144
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -666,3 +668,5 @@ permalink: /kb/183/Q183144/
 	
 	=============================================================================
 	
+
+{% endraw %}

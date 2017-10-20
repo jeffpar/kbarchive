@@ -6,6 +6,8 @@ permalink: /kb/262/Q262962/
 
 ## Q262962: Cluster Service Does Not Start with Event ID 7000
 
+{% raw %}
+
 	Article: Q262962
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -77,3 +79,5 @@ permalink: /kb/262/Q262962/
 	
 	=============================================================================
 	
+
+{% endraw %}

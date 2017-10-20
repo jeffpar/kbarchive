@@ -6,6 +6,8 @@ permalink: /kb/118/Q118960/
 
 ## Q118960: Cannot Change Fonts for Windowed MS-DOS-Based Applications
 
+{% raw %}
+
 	Article: Q118960
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/118/Q118960/
 	
 	=============================================================================
 	
+
+{% endraw %}

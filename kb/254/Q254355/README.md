@@ -6,6 +6,8 @@ permalink: /kb/254/Q254355/
 
 ## Q254355: Access to Internet Services Manager Limited to Localhost
 
+{% raw %}
+
 	Article: Q254355
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -76,3 +78,5 @@ permalink: /kb/254/Q254355/
 	
 	=============================================================================
 	
+
+{% endraw %}

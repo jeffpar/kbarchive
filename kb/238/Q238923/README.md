@@ -6,6 +6,8 @@ permalink: /kb/238/Q238923/
 
 ## Q238923: User Is Prompted for Password When Browsing to Http://127.0.0.1
 
+{% raw %}
+
 	Article: Q238923
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -70,3 +72,5 @@ permalink: /kb/238/Q238923/
 	
 	=============================================================================
 	
+
+{% endraw %}

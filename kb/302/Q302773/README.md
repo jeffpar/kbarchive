@@ -6,6 +6,8 @@ permalink: /kb/302/Q302773/
 
 ## Q302773: HTML Tags Are Visible When Reading E-mail In MSN Explorer
 
+{% raw %}
+
 	Article: Q302773
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -54,3 +56,5 @@ permalink: /kb/302/Q302773/
 	
 	=============================================================================
 	
+
+{% endraw %}

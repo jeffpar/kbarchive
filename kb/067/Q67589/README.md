@@ -6,6 +6,8 @@ permalink: /kb/067/Q67589/
 
 ## Q67589: Use hmamin Not tsrmin on Page 86 &quot;BASIC 7.1: Getting Started&quot;
 
+{% raw %}
+
 	Article: Q67589
 	Product(s): See article
 	Version(s): 7.10
@@ -26,3 +28,5 @@ permalink: /kb/067/Q67589/
 	
 	This information applies to Microsoft Professional Development System
 	(PDS) version 7.10 for MS-DOS.
+
+{% endraw %}

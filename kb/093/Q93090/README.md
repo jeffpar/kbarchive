@@ -6,6 +6,8 @@ permalink: /kb/093/Q93090/
 
 ## Q93090: Media Player: Full Screen AVI Playback
 
+{% raw %}
+
 	Article: Q93090
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/093/Q93090/
 	
 	=============================================================================
 	
+
+{% endraw %}

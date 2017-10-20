@@ -6,6 +6,8 @@ permalink: /kb/101/Q101662/
 
 ## Q101662: How to Change the Background Color When Playing Fullscreen
 
+{% raw %}
+
 	Article: Q101662
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/101/Q101662/
 	
 	=============================================================================
 	
+
+{% endraw %}

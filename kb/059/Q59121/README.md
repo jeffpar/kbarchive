@@ -6,6 +6,8 @@ permalink: /kb/059/Q59121/
 
 ## Q59121: How to Change the Way MS-DOS Allocates Memory
 
+{% raw %}
+
 	Article: Q59121
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -54,3 +56,5 @@ permalink: /kb/059/Q59121/
 	
 	=============================================================================
 	
+
+{% endraw %}

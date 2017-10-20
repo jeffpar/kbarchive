@@ -6,6 +6,8 @@ permalink: /kb/305/Q305109/
 
 ## Q305109: XADM: Exchange Server 5.5 Mailbox Manager Overview
 
+{% raw %}
+
 	Article: Q305109
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -495,3 +497,5 @@ permalink: /kb/305/Q305109/
 	
 	=============================================================================
 	
+
+{% endraw %}

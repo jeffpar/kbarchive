@@ -6,6 +6,8 @@ permalink: /kb/030/Q30380/
 
 ## Q30380: FIX: Text Macros Cannot Serve as Data-Definition Replacements
 
+{% raw %}
+
 	Article: Q30380
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -54,3 +56,5 @@ permalink: /kb/030/Q30380/
 	
 	=============================================================================
 	
+
+{% endraw %}

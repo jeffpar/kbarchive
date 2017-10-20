@@ -6,6 +6,8 @@ permalink: /kb/190/Q190174/
 
 ## Q190174: HOWTO: Create Shortcuts on the Programs Menu with PDW
 
+{% raw %}
+
 	Article: Q190174
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -70,3 +72,5 @@ permalink: /kb/190/Q190174/
 	
 	=============================================================================
 	
+
+{% endraw %}

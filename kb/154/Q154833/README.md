@@ -6,6 +6,8 @@ permalink: /kb/154/Q154833/
 
 ## Q154833: Automatic Logoff After Screen Saver Fails
 
+{% raw %}
+
 	Article: Q154833
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -47,3 +49,5 @@ permalink: /kb/154/Q154833/
 	
 	=============================================================================
 	
+
+{% endraw %}

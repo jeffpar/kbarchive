@@ -6,6 +6,8 @@ permalink: /kb/134/Q134599/
 
 ## Q134599: Cannot Access Shared Folder with Extended Characters in Name
 
+{% raw %}
+
 	Article: Q134599
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/134/Q134599/
 	
 	=============================================================================
 	
+
+{% endraw %}

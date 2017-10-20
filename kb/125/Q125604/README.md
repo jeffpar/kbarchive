@@ -6,6 +6,8 @@ permalink: /kb/125/Q125604/
 
 ## Q125604: ADT2: Cannot Edit Fields in Form with Calendar Control
 
+{% raw %}
+
 	Article: Q125604
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -103,3 +105,5 @@ permalink: /kb/125/Q125604/
 	
 	=============================================================================
 	
+
+{% endraw %}

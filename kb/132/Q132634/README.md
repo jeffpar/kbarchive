@@ -6,6 +6,8 @@ permalink: /kb/132/Q132634/
 
 ## Q132634: Deleted Briefcase Loses Icon when Restored from Recycle Bin
 
+{% raw %}
+
 	Article: Q132634
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -51,3 +53,5 @@ permalink: /kb/132/Q132634/
 	
 	=============================================================================
 	
+
+{% endraw %}

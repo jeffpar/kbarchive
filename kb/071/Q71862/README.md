@@ -6,6 +6,8 @@ permalink: /kb/071/Q71862/
 
 ## Q71862: Brother HL-Series Driver Doesn't Support Italics for Residents
 
+{% raw %}
+
 	Article: Q71862
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/071/Q71862/
 	
 	=============================================================================
 	
+
+{% endraw %}

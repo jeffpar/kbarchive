@@ -6,6 +6,8 @@ permalink: /kb/196/Q196830/
 
 ## Q196830: FIX: MIDL2039 Warning with IFontDisp/IPictureDisp Parameter Type
 
+{% raw %}
+
 	Article: Q196830
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,3.0,5.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/196/Q196830/
 	
 	=============================================================================
 	
+
+{% endraw %}

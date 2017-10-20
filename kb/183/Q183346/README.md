@@ -6,6 +6,8 @@ permalink: /kb/183/Q183346/
 
 ## Q183346: SMS: Windows 95 Page File Is Not Inventoried
 
+{% raw %}
+
 	Article: Q183346
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -59,3 +61,5 @@ permalink: /kb/183/Q183346/
 	
 	=============================================================================
 	
+
+{% endraw %}

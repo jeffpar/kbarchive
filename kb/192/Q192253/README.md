@@ -6,6 +6,8 @@ permalink: /kb/192/Q192253/
 
 ## Q192253: BUG: ImageList: Can't Insert Multiple Images from Root Directory
 
+{% raw %}
+
 	Article: Q192253
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -85,3 +87,5 @@ permalink: /kb/192/Q192253/
 	
 	=============================================================================
 	
+
+{% endraw %}

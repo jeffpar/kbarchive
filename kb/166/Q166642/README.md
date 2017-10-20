@@ -6,6 +6,8 @@ permalink: /kb/166/Q166642/
 
 ## Q166642: XFOR: Err Msg: An Unexpected Response (500) Was Received...
 
+{% raw %}
+
 	Article: Q166642
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -79,3 +81,5 @@ permalink: /kb/166/Q166642/
 	
 	=============================================================================
 	
+
+{% endraw %}

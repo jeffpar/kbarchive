@@ -6,6 +6,8 @@ permalink: /kb/129/Q129394/
 
 ## Q129394: Configuring Password Requirements on RemoteBoot Workstations
 
+{% raw %}
+
 	Article: Q129394
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -84,3 +86,5 @@ permalink: /kb/129/Q129394/
 	
 	=============================================================================
 	
+
+{% endraw %}

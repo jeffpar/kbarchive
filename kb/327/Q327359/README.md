@@ -6,6 +6,8 @@ permalink: /kb/327/Q327359/
 
 ## Q327359: FIX: Event 25 Logged If Printer Configured for Upper Paper Tray
 
+{% raw %}
+
 	Article: Q327359
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -198,3 +200,5 @@ permalink: /kb/327/Q327359/
 	
 	=============================================================================
 	
+
+{% endraw %}

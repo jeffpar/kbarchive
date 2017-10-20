@@ -6,6 +6,8 @@ permalink: /kb/245/Q245159/
 
 ## Q245159: FIX: SendData Only Works Over the Latest Connection
 
+{% raw %}
+
 	Article: Q245159
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -97,3 +99,5 @@ permalink: /kb/245/Q245159/
 	
 	=============================================================================
 	
+
+{% endraw %}

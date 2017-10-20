@@ -6,6 +6,8 @@ permalink: /kb/195/Q195196/
 
 ## Q195196: New MSMQ Registry Values with Windows NT 4.0 Service Pack 4
 
+{% raw %}
+
 	Article: Q195196
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -101,3 +103,5 @@ permalink: /kb/195/Q195196/
 	
 	=============================================================================
 	
+
+{% endraw %}

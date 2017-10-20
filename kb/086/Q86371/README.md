@@ -6,6 +6,8 @@ permalink: /kb/086/Q86371/
 
 ## Q86371: PC DOS: New Features in 3.0 MS-DOS Client
 
+{% raw %}
+
 	Article: Q86371
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -207,3 +209,5 @@ permalink: /kb/086/Q86371/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123092/
 
 ## Q123092: FIX: Duplicate Source Files Cause Breakpoint Failures
 
+{% raw %}
+
 	Article: Q123092
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10 4.00
@@ -72,3 +74,5 @@ permalink: /kb/123/Q123092/
 	
 	=============================================================================
 	
+
+{% endraw %}

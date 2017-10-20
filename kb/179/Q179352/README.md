@@ -6,6 +6,8 @@ permalink: /kb/179/Q179352/
 
 ## Q179352: WD97: Tab Characters Removed When Turning Bullets On/Off
 
+{% raw %}
+
 	Article: Q179352
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -80,3 +82,5 @@ permalink: /kb/179/Q179352/
 	
 	=============================================================================
 	
+
+{% endraw %}

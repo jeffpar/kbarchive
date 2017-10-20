@@ -6,6 +6,8 @@ permalink: /kb/106/Q106022/
 
 ## Q106022: Network Dialog Err Msgs Truncated with Small Fonts
 
+{% raw %}
+
 	Article: Q106022
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -62,3 +64,5 @@ permalink: /kb/106/Q106022/
 	
 	=============================================================================
 	
+
+{% endraw %}

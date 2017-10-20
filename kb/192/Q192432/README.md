@@ -6,6 +6,8 @@ permalink: /kb/192/Q192432/
 
 ## Q192432: Err Msg: Msimn Caused an Invalid Page Fault in Module Msimnui.dl
 
+{% raw %}
+
 	Article: Q192432
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.51,2.52,2.6,4.0
@@ -86,3 +88,5 @@ permalink: /kb/192/Q192432/
 	
 	=============================================================================
 	
+
+{% endraw %}

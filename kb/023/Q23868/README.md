@@ -6,6 +6,8 @@ permalink: /kb/023/Q23868/
 
 ## Q23868: How to Do &quot;Peeks&quot; and &quot;Pokes&quot; in a C Program
 
+{% raw %}
+
 	Article: Q23868
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 6.00 6.00a
@@ -44,3 +46,5 @@ permalink: /kb/023/Q23868/
 	    ptr = (unsigned char far *) (((long)seg<<16)|(long)ofs);
 	    return(*ptr);
 	}
+
+{% endraw %}

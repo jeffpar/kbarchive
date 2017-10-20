@@ -6,6 +6,8 @@ permalink: /kb/186/Q186428/
 
 ## Q186428: HOWTO: Implement the 'SnapTo' Feature in Visual Basic
 
+{% raw %}
+
 	Article: Q186428
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -212,3 +214,5 @@ permalink: /kb/186/Q186428/
 	
 	=============================================================================
 	
+
+{% endraw %}

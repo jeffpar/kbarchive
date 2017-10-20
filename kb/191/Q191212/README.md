@@ -6,6 +6,8 @@ permalink: /kb/191/Q191212/
 
 ## Q191212: HOWTO: Modify and Rebuild .CAB Files Built with PDW
 
+{% raw %}
+
 	Article: Q191212
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -183,3 +185,5 @@ permalink: /kb/191/Q191212/
 	
 	=============================================================================
 	
+
+{% endraw %}

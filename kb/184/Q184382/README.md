@@ -6,6 +6,8 @@ permalink: /kb/184/Q184382/
 
 ## Q184382: INFO: Information Available on Using RDS in Visual C++
 
+{% raw %}
+
 	Article: Q184382
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.1,1.5,2.0,2.1,2.5,4.2,5.0,6.0
@@ -125,3 +127,5 @@ permalink: /kb/184/Q184382/
 	
 	=============================================================================
 	
+
+{% endraw %}

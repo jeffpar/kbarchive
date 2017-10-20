@@ -6,6 +6,8 @@ permalink: /kb/066/Q66189/
 
 ## Q66189: Flight Simulator: Adjusting Barometric Pressure
 
+{% raw %}
+
 	Article: Q66189
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -36,3 +38,5 @@ permalink: /kb/066/Q66189/
 	
 	=============================================================================
 	
+
+{% endraw %}

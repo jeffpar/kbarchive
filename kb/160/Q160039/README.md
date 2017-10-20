@@ -6,6 +6,8 @@ permalink: /kb/160/Q160039/
 
 ## Q160039: Hellbender: How to Play a Multiplayer Game
 
+{% raw %}
+
 	Article: Q160039
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -114,3 +116,5 @@ permalink: /kb/160/Q160039/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241840/
 
 ## Q241840: Improper Shutdown Occurrence Is Reported in Event Viewer
 
+{% raw %}
+
 	Article: Q241840
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -74,3 +76,5 @@ permalink: /kb/241/Q241840/
 	
 	=============================================================================
 	
+
+{% endraw %}

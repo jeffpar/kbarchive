@@ -6,6 +6,8 @@ permalink: /kb/159/Q159163/
 
 ## Q159163: XCLN: Exchange Client PST Limitations
 
+{% raw %}
+
 	Article: Q159163
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -71,3 +73,5 @@ permalink: /kb/159/Q159163/
 	
 	=============================================================================
 	
+
+{% endraw %}

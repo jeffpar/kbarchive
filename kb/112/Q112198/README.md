@@ -6,6 +6,8 @@ permalink: /kb/112/Q112198/
 
 ## Q112198: WinPopup Sends Multiple Messages to a Workgroup
 
+{% raw %}
+
 	Article: Q112198
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -69,3 +71,5 @@ permalink: /kb/112/Q112198/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195696/
 
 ## Q195696: XFOR: Limiting Size of Incoming Messages on Notes Connector
 
+{% raw %}
+
 	Article: Q195696
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -44,3 +46,5 @@ permalink: /kb/195/Q195696/
 	
 	=============================================================================
 	
+
+{% endraw %}

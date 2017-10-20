@@ -6,6 +6,8 @@ permalink: /kb/317/Q317025/
 
 ## Q317025: Cannot Connect to the Internet After Connecting to a VPN Server
 
+{% raw %}
+
 	Article: Q317025
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -212,3 +214,5 @@ permalink: /kb/317/Q317025/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192161/
 
 ## Q192161: WD97:Squares Appear in Text Form Field Inserted from Userform
 
+{% raw %}
+
 	Article: Q192161
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/192/Q192161/
 	
 	=============================================================================
 	
+
+{% endraw %}

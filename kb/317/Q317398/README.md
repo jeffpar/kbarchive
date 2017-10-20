@@ -6,6 +6,8 @@ permalink: /kb/317/Q317398/
 
 ## Q317398: Reader 2.0: &quot;Server Is Down for Maintenance&quot; Message
 
+{% raw %}
+
 	Article: Q317398
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/317/Q317398/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162560/
 
 ## Q162560: PPT7: How to Change the Font Size in PowerPoint Dialog Boxes
 
+{% raw %}
+
 	Article: Q162560
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -68,3 +70,5 @@ permalink: /kb/162/Q162560/
 	
 	=============================================================================
 	
+
+{% endraw %}

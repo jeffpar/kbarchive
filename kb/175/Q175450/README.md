@@ -6,6 +6,8 @@ permalink: /kb/175/Q175450/
 
 ## Q175450: INFO: Visual Basic 5.0 Fixes in Visual Studio 97 Service Pack 3
 
+{% raw %}
+
 	Article: Q175450
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -268,3 +270,5 @@ permalink: /kb/175/Q175450/
 	
 	=============================================================================
 	
+
+{% endraw %}

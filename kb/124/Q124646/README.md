@@ -6,6 +6,8 @@ permalink: /kb/124/Q124646/
 
 ## Q124646: Playing Compressed Audio on Reveal MM Pro 16
 
+{% raw %}
+
 	Article: Q124646
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.0a,2.0,3.1,3.11; :'94-'95 edition,1.0,1993 edition,1994 edition,1995 edit
@@ -110,3 +112,5 @@ permalink: /kb/124/Q124646/
 	
 	=============================================================================
 	
+
+{% endraw %}

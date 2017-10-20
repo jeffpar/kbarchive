@@ -6,6 +6,8 @@ permalink: /kb/157/Q157904/
 
 ## Q157904: MSB Earth: How to Run MSB Earth Without CD
 
+{% raw %}
+
 	Article: Q157904
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -92,3 +94,5 @@ permalink: /kb/157/Q157904/
 	
 	=============================================================================
 	
+
+{% endraw %}

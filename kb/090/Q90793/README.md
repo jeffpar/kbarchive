@@ -6,6 +6,8 @@ permalink: /kb/090/Q90793/
 
 ## Q90793: PRB: _MSSETUP.EXE Disappears
 
+{% raw %}
+
 	Article: Q90793
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -60,3 +62,5 @@ permalink: /kb/090/Q90793/
 	
 	=============================================================================
 	
+
+{% endraw %}

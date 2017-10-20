@@ -6,6 +6,8 @@ permalink: /kb/244/Q244147/
 
 ## Q244147: FS2000: Aircraft and Building Shadows Are Not Displayed
 
+{% raw %}
+
 	Article: Q244147
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/244/Q244147/
 	
 	=============================================================================
 	
+
+{% endraw %}

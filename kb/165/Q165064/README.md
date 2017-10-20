@@ -6,6 +6,8 @@ permalink: /kb/165/Q165064/
 
 ## Q165064: Group Policies Are Ignored, All Other Policies Work as Expected
 
+{% raw %}
+
 	Article: Q165064
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -89,3 +91,5 @@ permalink: /kb/165/Q165064/
 	
 	=============================================================================
 	
+
+{% endraw %}

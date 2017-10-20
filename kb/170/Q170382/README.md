@@ -6,6 +6,8 @@ permalink: /kb/170/Q170382/
 
 ## Q170382: Files or Folders Not Deleted on Network Drive with DELTREE
 
+{% raw %}
+
 	Article: Q170382
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:95
@@ -51,3 +53,5 @@ permalink: /kb/170/Q170382/
 	
 	=============================================================================
 	
+
+{% endraw %}

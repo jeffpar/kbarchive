@@ -6,6 +6,8 @@ permalink: /kb/266/Q266563/
 
 ## Q266563: Encarta Researcher: How to Select Notes to Build a Report
 
+{% raw %}
+
 	Article: Q266563
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/266/Q266563/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148722/
 
 ## Q148722: MS Backup Reports Incorrect Number of Kilobytes Selected
 
+{% raw %}
+
 	Article: Q148722
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/148/Q148722/
 	
 	=============================================================================
 	
+
+{% endraw %}

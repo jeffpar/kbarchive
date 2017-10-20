@@ -6,6 +6,8 @@ permalink: /kb/059/Q59666/
 
 ## Q59666: Control Panel: Desktop Pattern/Color Scheme Not Saved
 
+{% raw %}
+
 	Article: Q59666
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/059/Q59666/
 	
 	=============================================================================
 	
+
+{% endraw %}

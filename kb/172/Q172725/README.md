@@ -6,6 +6,8 @@ permalink: /kb/172/Q172725/
 
 ## Q172725: PC Pack/Barney Island: Minimum System Requirements for Windows
 
+{% raw %}
+
 	Article: Q172725
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -87,3 +89,5 @@ permalink: /kb/172/Q172725/
 	
 	=============================================================================
 	
+
+{% endraw %}

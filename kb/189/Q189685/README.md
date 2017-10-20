@@ -6,6 +6,8 @@ permalink: /kb/189/Q189685/
 
 ## Q189685: Encarta Hangs When You Click a Menu Item on an Article Screen
 
+{% raw %}
+
 	Article: Q189685
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -84,3 +86,5 @@ permalink: /kb/189/Q189685/
 	
 	=============================================================================
 	
+
+{% endraw %}

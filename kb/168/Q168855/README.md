@@ -6,6 +6,8 @@ permalink: /kb/168/Q168855/
 
 ## Q168855: WD97: Criteria Used by AutoStyle to Assign Body Text Style
 
+{% raw %}
+
 	Article: Q168855
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/168/Q168855/
 	
 	=============================================================================
 	
+
+{% endraw %}

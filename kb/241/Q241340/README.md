@@ -6,6 +6,8 @@ permalink: /kb/241/Q241340/
 
 ## Q241340: Branch Office Scenario Selects All SNA Subcomponents
 
+{% raw %}
+
 	Article: Q241340
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -93,3 +95,5 @@ permalink: /kb/241/Q241340/
 	
 	=============================================================================
 	
+
+{% endraw %}

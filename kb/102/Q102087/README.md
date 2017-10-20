@@ -6,6 +6,8 @@ permalink: /kb/102/Q102087/
 
 ## Q102087: Mac Bkup: Backup Status Message Could Not Be Sent
 
+{% raw %}
+
 	Article: Q102087
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -71,3 +73,5 @@ permalink: /kb/102/Q102087/
 	
 	=============================================================================
 	
+
+{% endraw %}

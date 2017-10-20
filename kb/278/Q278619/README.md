@@ -6,6 +6,8 @@ permalink: /kb/278/Q278619/
 
 ## Q278619: Upgrading the MSN Companion
 
+{% raw %}
+
 	Article: Q278619
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -45,3 +47,5 @@ permalink: /kb/278/Q278619/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183546/
 
 ## Q183546: BUG: Cedar Bank VBClientExplicitSecurity Compile Errors; Alpha
 
+{% raw %}
+
 	Article: Q183546
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -53,3 +55,5 @@ permalink: /kb/183/Q183546/
 	
 	=============================================================================
 	
+
+{% endraw %}

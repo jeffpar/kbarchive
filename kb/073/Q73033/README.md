@@ -6,6 +6,8 @@ permalink: /kb/073/Q73033/
 
 ## Q73033: Workarounds for the MS-DOS 1024-Cylinder Limit
 
+{% raw %}
+
 	Article: Q73033
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22; WINDOWS:95
@@ -75,3 +77,5 @@ permalink: /kb/073/Q73033/
 	
 	=============================================================================
 	
+
+{% endraw %}

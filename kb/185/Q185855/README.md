@@ -6,6 +6,8 @@ permalink: /kb/185/Q185855/
 
 ## Q185855: WD97: Graphic Is Black Box When You Open Mac Document in Word 97
 
+{% raw %}
+
 	Article: Q185855
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 1 (SR-1)
@@ -74,3 +76,5 @@ permalink: /kb/185/Q185855/
 	
 	=============================================================================
 	
+
+{% endraw %}

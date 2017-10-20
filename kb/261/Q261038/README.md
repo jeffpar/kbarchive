@@ -6,6 +6,8 @@ permalink: /kb/261/Q261038/
 
 ## Q261038: Motocross Madness 2: Opening Video Is Not Displayed Properly
 
+{% raw %}
+
 	Article: Q261038
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -76,3 +78,5 @@ permalink: /kb/261/Q261038/
 	
 	=============================================================================
 	
+
+{% endraw %}

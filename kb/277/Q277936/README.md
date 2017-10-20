@@ -6,6 +6,8 @@ permalink: /kb/277/Q277936/
 
 ## Q277936: Transferring Outlook Express Contact List or AOL Address Book to
 
+{% raw %}
+
 	Article: Q277936
 	Product(s): The Microsoft Network
 	Version(s): 1.x,6.0
@@ -61,3 +63,5 @@ permalink: /kb/277/Q277936/
 	
 	=============================================================================
 	
+
+{% endraw %}

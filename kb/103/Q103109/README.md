@@ -6,6 +6,8 @@ permalink: /kb/103/Q103109/
 
 ## Q103109: Changes to Performance Monitor After Installing SQL Server
 
+{% raw %}
+
 	Article: Q103109
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -74,3 +76,5 @@ permalink: /kb/103/Q103109/
 	
 	=============================================================================
 	
+
+{% endraw %}

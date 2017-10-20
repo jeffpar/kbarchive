@@ -6,6 +6,8 @@ permalink: /kb/141/Q141142/
 
 ## Q141142: FIX: Distributed Application Allows Setup /a
 
+{% raw %}
+
 	Article: Q141142
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -89,3 +91,5 @@ permalink: /kb/141/Q141142/
 	
 	=============================================================================
 	
+
+{% endraw %}

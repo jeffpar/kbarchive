@@ -6,6 +6,8 @@ permalink: /kb/084/Q84197/
 
 ## Q84197: Windows 3.1 Setup Hangs: Cannot Run Standard Mode Because...
 
+{% raw %}
+
 	Article: Q84197
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/084/Q84197/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174650/
 
 ## Q174650: PRB: VBG Files Do Not Appear to Work with Visual SourceSafe
 
+{% raw %}
+
 	Article: Q174650
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/174/Q174650/
 	
 	=============================================================================
 	
+
+{% endraw %}

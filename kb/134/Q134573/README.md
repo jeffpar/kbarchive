@@ -6,6 +6,8 @@ permalink: /kb/134/Q134573/
 
 ## Q134573: Error the First Time You Start Computer with Novell NE3200
 
+{% raw %}
+
 	Article: Q134573
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/134/Q134573/
 	
 	=============================================================================
 	
+
+{% endraw %}

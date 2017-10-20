@@ -6,6 +6,8 @@ permalink: /kb/190/Q190114/
 
 ## Q190114: FIX: SET PATH of &gt; 255 Characters Causes Settings to Be Ignored
 
+{% raw %}
+
 	Article: Q190114
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a.6.0
@@ -113,3 +115,5 @@ permalink: /kb/190/Q190114/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83210/
 
 ## Q83210: Windows 3.1 Hardware Compatibility List
 
+{% raw %}
+
 	Article: Q83210
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -1427,3 +1429,5 @@ permalink: /kb/083/Q83210/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/215/Q215493/
 
 ## Q215493: XFOR: Message Flow through the SNADS Connector
 
+{% raw %}
+
 	Article: Q215493
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -105,3 +107,5 @@ permalink: /kb/215/Q215493/
 	
 	=============================================================================
 	
+
+{% endraw %}

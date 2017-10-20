@@ -6,6 +6,8 @@ permalink: /kb/168/Q168334/
 
 ## Q168334: WD97: Read-Only Recommended Option Lost When Saving
 
+{% raw %}
+
 	Article: Q168334
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/168/Q168334/
 	
 	=============================================================================
 	
+
+{% endraw %}

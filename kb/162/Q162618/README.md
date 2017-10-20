@@ -6,6 +6,8 @@ permalink: /kb/162/Q162618/
 
 ## Q162618: Trap in Snalink.exe( _bm_rel@04 ) with DCA ISCA X.25 Adapter
 
+{% raw %}
+
 	Article: Q162618
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -68,3 +70,5 @@ permalink: /kb/162/Q162618/
 	
 	=============================================================================
 	
+
+{% endraw %}

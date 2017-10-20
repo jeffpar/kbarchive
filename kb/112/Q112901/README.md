@@ -6,6 +6,8 @@ permalink: /kb/112/Q112901/
 
 ## Q112901: PC Adm: Moving a Postoffice to Another Server
 
+{% raw %}
+
 	Article: Q112901
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -71,3 +73,5 @@ permalink: /kb/112/Q112901/
 	
 	=============================================================================
 	
+
+{% endraw %}

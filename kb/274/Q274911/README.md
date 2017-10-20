@@ -6,6 +6,8 @@ permalink: /kb/274/Q274911/
 
 ## Q274911: Combat Flight Simulator 2 Quits Unexpectedly
 
+{% raw %}
+
 	Article: Q274911
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/274/Q274911/
 	
 	=============================================================================
 	
+
+{% endraw %}

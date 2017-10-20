@@ -6,6 +6,8 @@ permalink: /kb/213/Q213106/
 
 ## Q213106: SMS: CAP or Distribution Point Requires NTFS Partition
 
+{% raw %}
+
 	Article: Q213106
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -67,3 +69,5 @@ permalink: /kb/213/Q213106/
 	
 	=============================================================================
 	
+
+{% endraw %}

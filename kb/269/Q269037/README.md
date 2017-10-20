@@ -6,6 +6,8 @@ permalink: /kb/269/Q269037/
 
 ## Q269037: BUG: DataCombo Loses BoundText When Recordset Re-Queried
 
+{% raw %}
+
 	Article: Q269037
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:2.5,2.6,6.0
@@ -99,3 +101,5 @@ permalink: /kb/269/Q269037/
 	
 	=============================================================================
 	
+
+{% endraw %}

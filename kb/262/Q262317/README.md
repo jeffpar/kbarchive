@@ -6,6 +6,8 @@ permalink: /kb/262/Q262317/
 
 ## Q262317: SMS: WMI 1.5 Support in SMS 2.0 SP2
 
+{% raw %}
+
 	Article: Q262317
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -60,3 +62,5 @@ permalink: /kb/262/Q262317/
 	
 	=============================================================================
 	
+
+{% endraw %}

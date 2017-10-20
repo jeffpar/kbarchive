@@ -6,6 +6,8 @@ permalink: /kb/096/Q96038/
 
 ## Q96038: PROFS: System Abend 0C2-0000 Attempting to IPL MS-RSCS
 
+{% raw %}
+
 	Article: Q96038
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1b
@@ -57,3 +59,5 @@ permalink: /kb/096/Q96038/
 	
 	=============================================================================
 	
+
+{% endraw %}

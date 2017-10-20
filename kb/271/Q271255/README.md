@@ -6,6 +6,8 @@ permalink: /kb/271/Q271255/
 
 ## Q271255: Microsoft Reader: Cannot Buy E-Book Content On the Internet
 
+{% raw %}
+
 	Article: Q271255
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -59,3 +61,5 @@ permalink: /kb/271/Q271255/
 	
 	=============================================================================
 	
+
+{% endraw %}

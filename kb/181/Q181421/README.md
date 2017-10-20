@@ -6,6 +6,8 @@ permalink: /kb/181/Q181421/
 
 ## Q181421: XFOR: Access Violation in Lsdxants.exe with Long Fullname Field
 
+{% raw %}
+
 	Article: Q181421
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -107,3 +109,5 @@ permalink: /kb/181/Q181421/
 	
 	=============================================================================
 	
+
+{% endraw %}

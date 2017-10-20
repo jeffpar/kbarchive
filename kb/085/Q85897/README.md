@@ -6,6 +6,8 @@ permalink: /kb/085/Q85897/
 
 ## Q85897: WDEB386-Compatible Timing Card Available
 
+{% raw %}
+
 	Article: Q85897
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -44,3 +46,5 @@ permalink: /kb/085/Q85897/
 	
 	=============================================================================
 	
+
+{% endraw %}

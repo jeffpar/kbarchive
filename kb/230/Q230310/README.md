@@ -6,6 +6,8 @@ permalink: /kb/230/Q230310/
 
 ## Q230310: IIS 4.0 Online Troubleshooting Information Include with NTOP
 
+{% raw %}
+
 	Article: Q230310
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -259,3 +261,5 @@ permalink: /kb/230/Q230310/
 	
 	=============================================================================
 	
+
+{% endraw %}

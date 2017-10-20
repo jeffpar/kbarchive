@@ -6,6 +6,8 @@ permalink: /kb/152/Q152789/
 
 ## Q152789: HOWTO: Install Visual Basic to a Network Using 8.3 File Names
 
+{% raw %}
+
 	Article: Q152789
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/152/Q152789/
 	
 	=============================================================================
 	
+
+{% endraw %}

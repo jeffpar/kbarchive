@@ -6,6 +6,8 @@ permalink: /kb/123/Q123612/
 
 ## Q123612: Support for CD-ROM Changers in Windows 95
 
+{% raw %}
+
 	Article: Q123612
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95; winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/123/Q123612/
 	
 	=============================================================================
 	
+
+{% endraw %}

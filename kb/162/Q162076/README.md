@@ -6,6 +6,8 @@ permalink: /kb/162/Q162076/
 
 ## Q162076: HOWTO: Converting VFP Files from Version 3.0 to 5.0 and Back
 
+{% raw %}
+
 	Article: Q162076
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b 5.00
@@ -286,3 +288,5 @@ permalink: /kb/162/Q162076/
 	
 	=============================================================================
 	
+
+{% endraw %}

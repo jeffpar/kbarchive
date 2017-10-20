@@ -6,6 +6,8 @@ permalink: /kb/149/Q149495/
 
 ## Q149495: Remote Control Fails with Lowercase Computer Name
 
+{% raw %}
+
 	Article: Q149495
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1
@@ -71,3 +73,5 @@ permalink: /kb/149/Q149495/
 	
 	=============================================================================
 	
+
+{% endraw %}

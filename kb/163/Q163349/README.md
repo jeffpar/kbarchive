@@ -6,6 +6,8 @@ permalink: /kb/163/Q163349/
 
 ## Q163349: ACC97: IPF Adding DB with Large Number of Objects to VSS 4.0
 
+{% raw %}
+
 	Article: Q163349
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,97
@@ -76,3 +78,5 @@ permalink: /kb/163/Q163349/
 	
 	=============================================================================
 	
+
+{% endraw %}

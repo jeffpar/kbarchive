@@ -6,6 +6,8 @@ permalink: /kb/189/Q189779/
 
 ## Q189779: BUG: Enabling Accelerator Keys in Visual Basic ActiveX Controls
 
+{% raw %}
+
 	Article: Q189779
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -200,3 +202,5 @@ permalink: /kb/189/Q189779/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250371/
 
 ## Q250371: INFO: Launching Setup from Start Menu Brings Up Compliancy Check
 
+{% raw %}
+
 	Article: Q250371
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:6.5 Service Pack 5 and 5a
@@ -49,3 +51,5 @@ permalink: /kb/250/Q250371/
 	
 	=============================================================================
 	
+
+{% endraw %}

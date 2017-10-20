@@ -6,6 +6,8 @@ permalink: /kb/190/Q190713/
 
 ## Q190713: Key Management Server Backup and Disaster Recovery
 
+{% raw %}
+
 	Article: Q190713
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/190/Q190713/
 	
 	=============================================================================
 	
+
+{% endraw %}

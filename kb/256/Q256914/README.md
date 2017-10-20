@@ -6,6 +6,8 @@ permalink: /kb/256/Q256914/
 
 ## Q256914: XIMS: Error Message: Your Configuration May Not Be Complete
 
+{% raw %}
+
 	Article: Q256914
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -52,3 +54,5 @@ permalink: /kb/256/Q256914/
 	
 	=============================================================================
 	
+
+{% endraw %}

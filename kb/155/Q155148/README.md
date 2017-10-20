@@ -6,6 +6,8 @@ permalink: /kb/155/Q155148/
 
 ## Q155148: Writer 2: Start New Page Places Cursor After Insertion Line
 
+{% raw %}
+
 	Article: Q155148
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -65,3 +67,5 @@ permalink: /kb/155/Q155148/
 	
 	=============================================================================
 	
+
+{% endraw %}

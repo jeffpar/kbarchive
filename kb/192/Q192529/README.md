@@ -6,6 +6,8 @@ permalink: /kb/192/Q192529/
 
 ## Q192529: MSN Mail Account in Outlook Express Restored to Default Settings
 
+{% raw %}
+
 	Article: Q192529
 	Product(s): The Microsoft Network
 	Version(s): 2.52,2.6,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5,5.0,5.01,5.1,5.2,5.3,5.5
@@ -46,3 +48,5 @@ permalink: /kb/192/Q192529/
 	
 	=============================================================================
 	
+
+{% endraw %}

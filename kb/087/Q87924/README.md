@@ -6,6 +6,8 @@ permalink: /kb/087/Q87924/
 
 ## Q87924: FIX: CodeView 4.0 Does Not Step Over Embedded Int 3
 
+{% raw %}
+
 	Article: Q87924
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.05
@@ -68,3 +70,5 @@ permalink: /kb/087/Q87924/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184806/
 
 ## Q184806: FIX: SQLPutData Truncates LONG RAW Data Using Oracle ODBC Driver
 
+{% raw %}
+
 	Article: Q184806
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03
@@ -63,3 +65,5 @@ permalink: /kb/184/Q184806/
 	
 	=============================================================================
 	
+
+{% endraw %}

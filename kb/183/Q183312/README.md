@@ -6,6 +6,8 @@ permalink: /kb/183/Q183312/
 
 ## Q183312: XFOR: SFS Mail Not Migrated When Custom Recipient Is Converted
 
+{% raw %}
+
 	Article: Q183312
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -76,3 +78,5 @@ permalink: /kb/183/Q183312/
 	
 	=============================================================================
 	
+
+{% endraw %}

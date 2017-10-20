@@ -6,6 +6,8 @@ permalink: /kb/194/Q194784/
 
 ## Q194784: INFO: Controls Shipped in Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q194784
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -671,3 +673,5 @@ permalink: /kb/194/Q194784/
 	
 	=============================================================================
 	
+
+{% endraw %}

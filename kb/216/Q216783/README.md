@@ -6,6 +6,8 @@ permalink: /kb/216/Q216783/
 
 ## Q216783: Unable to Completely Disconnect a Terminal Server Connection
 
+{% raw %}
+
 	Article: Q216783
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -94,3 +96,5 @@ permalink: /kb/216/Q216783/
 	
 	=============================================================================
 	
+
+{% endraw %}

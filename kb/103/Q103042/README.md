@@ -6,6 +6,8 @@ permalink: /kb/103/Q103042/
 
 ## Q103042: Event Msg: The Browser Has Forced an Election...
 
+{% raw %}
+
 	Article: Q103042
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -52,3 +54,5 @@ permalink: /kb/103/Q103042/
 	
 	=============================================================================
 	
+
+{% endraw %}

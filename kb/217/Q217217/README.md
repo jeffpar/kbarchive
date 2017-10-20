@@ -6,6 +6,8 @@ permalink: /kb/217/Q217217/
 
 ## Q217217: XFOR: How to Control Routing of Subdomains in IMS Routing
 
+{% raw %}
+
 	Article: Q217217
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/217/Q217217/
 	
 	=============================================================================
 	
+
+{% endraw %}

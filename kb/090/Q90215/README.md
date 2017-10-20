@@ -6,6 +6,8 @@ permalink: /kb/090/Q90215/
 
 ## Q90215: WFWG Err Msg: Error 6118: The List of Servers for This...
 
+{% raw %}
+
 	Article: Q90215
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0,3.11
@@ -135,3 +137,5 @@ permalink: /kb/090/Q90215/
 	
 	=============================================================================
 	
+
+{% endraw %}

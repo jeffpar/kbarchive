@@ -6,6 +6,8 @@ permalink: /kb/158/Q158829/
 
 ## Q158829: Domain Validation May Not Work Across Dial-on-Demand Routers
 
+{% raw %}
+
 	Article: Q158829
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/158/Q158829/
 	
 	=============================================================================
 	
+
+{% endraw %}

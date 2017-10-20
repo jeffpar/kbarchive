@@ -6,6 +6,8 @@ permalink: /kb/181/Q181925/
 
 ## Q181925: XCLN: How to Move or Copy Messages From a PST File to an MMF
 
+{% raw %}
+
 	Article: Q181925
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.0,3.2,3.5,4.0,5.0,8.0; :8.0,8.01,8.02,8.03
@@ -88,3 +90,5 @@ permalink: /kb/181/Q181925/
 	
 	=============================================================================
 	
+
+{% endraw %}

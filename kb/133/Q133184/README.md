@@ -6,6 +6,8 @@ permalink: /kb/133/Q133184/
 
 ## Q133184: ATAPI CD-ROM Drive Not Accessible with PCMCIA Devices
 
+{% raw %}
+
 	Article: Q133184
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/133/Q133184/
 	
 	=============================================================================
 	
+
+{% endraw %}

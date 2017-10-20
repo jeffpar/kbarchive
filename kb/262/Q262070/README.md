@@ -6,6 +6,8 @@ permalink: /kb/262/Q262070/
 
 ## Q262070: Motocross Madness 2: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q262070
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -79,3 +81,5 @@ permalink: /kb/262/Q262070/
 	
 	=============================================================================
 	
+
+{% endraw %}

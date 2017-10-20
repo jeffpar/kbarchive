@@ -6,6 +6,8 @@ permalink: /kb/226/Q226823/
 
 ## Q226823: SMS: Product Callback Messages May Result in Further Product Den
 
+{% raw %}
+
 	Article: Q226823
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -49,3 +51,5 @@ permalink: /kb/226/Q226823/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151073/
 
 ## Q151073: Frequently Asked Questions for Fortran PowerStation 32
 
+{% raw %}
+
 	Article: Q151073
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -236,3 +238,5 @@ permalink: /kb/151/Q151073/
 	
 	=============================================================================
 	
+
+{% endraw %}

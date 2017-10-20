@@ -6,6 +6,8 @@ permalink: /kb/230/Q230042/
 
 ## Q230042: XADM: How to Make Mailbox Cleanup Agent a Dependant Service
 
+{% raw %}
+
 	Article: Q230042
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/230/Q230042/
 	
 	=============================================================================
 	
+
+{% endraw %}

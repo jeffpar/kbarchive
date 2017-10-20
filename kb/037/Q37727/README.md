@@ -6,6 +6,8 @@ permalink: /kb/037/Q37727/
 
 ## Q37727: Error C2152 Identifier : Pointers to Functions...
 
+{% raw %}
+
 	Article: Q37727
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -32,3 +34,5 @@ permalink: /kb/037/Q37727/
 	
 	Additional causes for this error include mixing near and far function
 	pointers and mixing interrupt and non-interrupt function pointers.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146148/
 
 ## Q146148: Running the Seven Habits Wizard Doesntt add a Seven Habits Tab
 
+{% raw %}
+
 	Article: Q146148
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -40,3 +42,5 @@ permalink: /kb/146/Q146148/
 	
 	=============================================================================
 	
+
+{% endraw %}

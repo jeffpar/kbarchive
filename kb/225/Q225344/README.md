@@ -6,6 +6,8 @@ permalink: /kb/225/Q225344/
 
 ## Q225344: ICMP Redirect Attack Hangs Windows NT Server and Workstation
 
+{% raw %}
+
 	Article: Q225344
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -116,3 +118,5 @@ permalink: /kb/225/Q225344/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94226/
 
 ## Q94226: Remote Boot Machines Format 3.5-inch Disks for 720K Only
 
+{% raw %}
+
 	Article: Q94226
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/094/Q94226/
 	
 	=============================================================================
 	
+
+{% endraw %}

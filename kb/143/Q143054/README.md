@@ -6,6 +6,8 @@ permalink: /kb/143/Q143054/
 
 ## Q143054: Err Msg: RUNDLL32.EXE Has Caused an Error in COMMCTRL.DLL
 
+{% raw %}
+
 	Article: Q143054
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -86,3 +88,5 @@ permalink: /kb/143/Q143054/
 	
 	=============================================================================
 	
+
+{% endraw %}

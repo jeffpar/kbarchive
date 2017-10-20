@@ -6,6 +6,8 @@ permalink: /kb/098/Q98912/
 
 ## Q98912: PC WFW: Version 3.2 Postoffice Upgrade Instructions
 
+{% raw %}
+
 	Article: Q98912
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -271,3 +273,5 @@ permalink: /kb/098/Q98912/
 	
 	=============================================================================
 	
+
+{% endraw %}

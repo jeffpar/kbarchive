@@ -6,6 +6,8 @@ permalink: /kb/072/Q72792/
 
 ## Q72792: Placing .OBJ File in Program List Gives Unexpected Result
 
+{% raw %}
+
 	Article: Q72792
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -50,3 +52,5 @@ permalink: /kb/072/Q72792/
 	
 	=============================================================================
 	
+
+{% endraw %}

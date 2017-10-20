@@ -6,6 +6,8 @@ permalink: /kb/089/Q89119/
 
 ## Q89119: DOC: Avoid GDI Object Private Clipboard Formats
 
+{% raw %}
+
 	Article: Q89119
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -65,3 +67,5 @@ permalink: /kb/089/Q89119/
 	
 	=============================================================================
 	
+
+{% endraw %}

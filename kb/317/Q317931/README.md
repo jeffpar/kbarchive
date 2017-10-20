@@ -6,6 +6,8 @@ permalink: /kb/317/Q317931/
 
 ## Q317931: FP: Error 0x80040E14 When Using a Database 'Contains' Query
 
+{% raw %}
+
 	Article: Q317931
 	Product(s): Word Front Page
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/317/Q317931/
 	
 	=============================================================================
 	
+
+{% endraw %}

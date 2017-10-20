@@ -6,6 +6,8 @@ permalink: /kb/161/Q161310/
 
 ## Q161310: SMS: PCM Is Unable to Connect to NetWare Distribution Server
 
+{% raw %}
+
 	Article: Q161310
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -93,3 +95,5 @@ permalink: /kb/161/Q161310/
 	
 	=============================================================================
 	
+
+{% endraw %}

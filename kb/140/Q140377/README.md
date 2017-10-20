@@ -6,6 +6,8 @@ permalink: /kb/140/Q140377/
 
 ## Q140377: InitiateSystemShutdown API Ignores Timed Delay
 
+{% raw %}
+
 	Article: Q140377
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -46,3 +48,5 @@ permalink: /kb/140/Q140377/
 	
 	=============================================================================
 	
+
+{% endraw %}

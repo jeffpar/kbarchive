@@ -6,6 +6,8 @@ permalink: /kb/239/Q239664/
 
 ## Q239664: Encarta 2000: Cannot Play &quot;Arabian Camel&quot; in Full Screen Mode
 
+{% raw %}
+
 	Article: Q239664
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/239/Q239664/
 	
 	=============================================================================
 	
+
+{% endraw %}

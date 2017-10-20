@@ -6,6 +6,8 @@ permalink: /kb/162/Q162667/
 
 ## Q162667: System Files on Floppy Disk May Have Incorrect Date and Time
 
+{% raw %}
+
 	Article: Q162667
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/162/Q162667/
 	
 	=============================================================================
 	
+
+{% endraw %}

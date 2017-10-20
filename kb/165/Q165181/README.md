@@ -6,6 +6,8 @@ permalink: /kb/165/Q165181/
 
 ## Q165181: EISA Configuration Boot Code Is Replaced on Mirror Drives
 
+{% raw %}
+
 	Article: Q165181
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -97,3 +99,5 @@ permalink: /kb/165/Q165181/
 	
 	=============================================================================
 	
+
+{% endraw %}

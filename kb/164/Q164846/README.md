@@ -6,6 +6,8 @@ permalink: /kb/164/Q164846/
 
 ## Q164846: XCLN: Schedule+ Invitees Are Not Informed When Removed from Appt
 
+{% raw %}
+
 	Article: Q164846
 	Product(s): Microsoft Exchange
 	Version(s): Windows:5.0
@@ -70,3 +72,5 @@ permalink: /kb/164/Q164846/
 	
 	=============================================================================
 	
+
+{% endraw %}

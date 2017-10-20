@@ -6,6 +6,8 @@ permalink: /kb/234/Q234905/
 
 ## Q234905: Improperly Formatted HTTP Request May Cause INETINFO to Fail
 
+{% raw %}
+
 	Article: Q234905
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -144,3 +146,5 @@ permalink: /kb/234/Q234905/
 	
 	=============================================================================
 	
+
+{% endraw %}

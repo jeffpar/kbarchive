@@ -6,6 +6,8 @@ permalink: /kb/171/Q171593/
 
 ## Q171593: XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Packs
 
+{% raw %}
+
 	Article: Q171593
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1,5.5 SP2,5.5 SP3
@@ -57,3 +59,5 @@ permalink: /kb/171/Q171593/
 	
 	=============================================================================
 	
+
+{% endraw %}

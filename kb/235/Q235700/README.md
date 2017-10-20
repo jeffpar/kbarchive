@@ -6,6 +6,8 @@ permalink: /kb/235/Q235700/
 
 ## Q235700: ActiveX Property Pages May Appear Erased and Hang Program
 
+{% raw %}
+
 	Article: Q235700
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP3,4.0 SP4,4.0 SP5
@@ -105,3 +107,5 @@ permalink: /kb/235/Q235700/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164036/
 
 ## Q164036: How To Force 128-Bit SSL Connections With IIS 3.0
 
+{% raw %}
+
 	Article: Q164036
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0
@@ -86,3 +88,5 @@ permalink: /kb/164/Q164036/
 	
 	=============================================================================
 	
+
+{% endraw %}

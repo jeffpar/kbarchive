@@ -6,6 +6,8 @@ permalink: /kb/077/Q77102/
 
 ## Q77102: PC Rmt: COM3 and COM4 Not Available on MCA Machines
 
+{% raw %}
+
 	Article: Q77102
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -37,3 +39,5 @@ permalink: /kb/077/Q77102/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246291/
 
 ## Q246291: Using APPC Session Viewer to Verify LU6.2 Configuration
 
+{% raw %}
+
 	Article: Q246291
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -73,3 +75,5 @@ permalink: /kb/246/Q246291/
 	
 	=============================================================================
 	
+
+{% endraw %}

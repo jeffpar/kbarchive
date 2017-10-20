@@ -6,6 +6,8 @@ permalink: /kb/181/Q181578/
 
 ## Q181578: HOWTO: Callback Visual Basic Functions From a C DLL
 
+{% raw %}
+
 	Article: Q181578
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/181/Q181578/
 	
 	=============================================================================
 	
+
+{% endraw %}

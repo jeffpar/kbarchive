@@ -6,6 +6,8 @@ permalink: /kb/067/Q67492/
 
 ## Q67492: Installing PageMaker 3.0, 3.01 with Windows
 
+{% raw %}
+
 	Article: Q67492
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -87,3 +89,5 @@ permalink: /kb/067/Q67492/
 	
 	=============================================================================
 	
+
+{% endraw %}

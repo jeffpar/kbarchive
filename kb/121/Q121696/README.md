@@ -6,6 +6,8 @@ permalink: /kb/121/Q121696/
 
 ## Q121696: No Sound in Space Simulator
 
+{% raw %}
+
 	Article: Q121696
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/121/Q121696/
 	
 	=============================================================================
 	
+
+{% endraw %}

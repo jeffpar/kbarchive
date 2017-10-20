@@ -6,6 +6,8 @@ permalink: /kb/193/Q193692/
 
 ## Q193692: Exchange Server Eval Copy Will Not Send Mail
 
+{% raw %}
+
 	Article: Q193692
 	Product(s): Microsoft Press
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/193/Q193692/
 	
 	=============================================================================
 	
+
+{% endraw %}

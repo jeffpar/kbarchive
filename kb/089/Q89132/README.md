@@ -6,6 +6,8 @@ permalink: /kb/089/Q89132/
 
 ## Q89132: How to Run a Program from Within a QuickWin Program
 
+{% raw %}
+
 	Article: Q89132
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.1
@@ -257,3 +259,5 @@ permalink: /kb/089/Q89132/
 	
 	=============================================================================
 	
+
+{% endraw %}

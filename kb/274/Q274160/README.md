@@ -6,6 +6,8 @@ permalink: /kb/274/Q274160/
 
 ## Q274160: FIX: Four-Part Inserts to DB2 Through LinkedServer Fail
 
+{% raw %}
+
 	Article: Q274160
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3
@@ -71,3 +73,5 @@ permalink: /kb/274/Q274160/
 	
 	=============================================================================
 	
+
+{% endraw %}

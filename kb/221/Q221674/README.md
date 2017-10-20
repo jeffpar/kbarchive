@@ -6,6 +6,8 @@ permalink: /kb/221/Q221674/
 
 ## Q221674: FIX: Import Wizard Fails With Excel 97 With Chinese Char
 
+{% raw %}
+
 	Article: Q221674
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -74,3 +76,5 @@ permalink: /kb/221/Q221674/
 	
 	=============================================================================
 	
+
+{% endraw %}

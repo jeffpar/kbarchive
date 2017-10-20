@@ -6,6 +6,8 @@ permalink: /kb/296/Q296686/
 
 ## Q296686: IIS May Not Send an Entire Redirect Message Using an ISAPI Exten
 
+{% raw %}
+
 	Article: Q296686
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -78,3 +80,5 @@ permalink: /kb/296/Q296686/
 	
 	=============================================================================
 	
+
+{% endraw %}

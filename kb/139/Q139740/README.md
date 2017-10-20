@@ -6,6 +6,8 @@ permalink: /kb/139/Q139740/
 
 ## Q139740: Slow Performance with Sierra Semiconductor Chip Set Modem
 
+{% raw %}
+
 	Article: Q139740
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0,2.5
@@ -70,3 +72,5 @@ permalink: /kb/139/Q139740/
 	
 	=============================================================================
 	
+
+{% endraw %}

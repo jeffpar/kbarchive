@@ -6,6 +6,8 @@ permalink: /kb/086/Q86081/
 
 ## Q86081: PRB: DLL Function Returns Float or Double Value Incorrectly
 
+{% raw %}
+
 	Article: Q86081
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -127,3 +129,5 @@ permalink: /kb/086/Q86081/
 	
 	=============================================================================
 	
+
+{% endraw %}

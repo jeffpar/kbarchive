@@ -6,6 +6,8 @@ permalink: /kb/167/Q167731/
 
 ## Q167731: FIX: Access Violation When Connecting in MFC ODBC Application
 
+{% raw %}
+
 	Article: Q167731
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,4.2b,5.0
@@ -79,3 +81,5 @@ permalink: /kb/167/Q167731/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197965/
 
 ## Q197965: XGEN: FAQs on High and Low Encryption in Exchange Server
 
+{% raw %}
+
 	Article: Q197965
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:8.0,8.01,8.02,8.03,8.5; winnt:4.0,5.0,5.5,5.5 SP1
@@ -240,3 +242,5 @@ permalink: /kb/197/Q197965/
 	
 	=============================================================================
 	
+
+{% endraw %}

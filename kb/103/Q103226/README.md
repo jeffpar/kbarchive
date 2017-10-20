@@ -6,6 +6,8 @@ permalink: /kb/103/Q103226/
 
 ## Q103226: SAMPLE: VBCobSQL.exe - Mixed-Language Apps (VB, COBOL, SQL)
 
+{% raw %}
+
 	Article: Q103226
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -129,3 +131,5 @@ permalink: /kb/103/Q103226/
 	
 	=============================================================================
 	
+
+{% endraw %}

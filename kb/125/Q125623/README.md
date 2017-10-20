@@ -6,6 +6,8 @@ permalink: /kb/125/Q125623/
 
 ## Q125623: ERROR: Could Not Load Language DLL _MIFGEN.DLL
 
+{% raw %}
+
 	Article: Q125623
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0
@@ -107,3 +109,5 @@ permalink: /kb/125/Q125623/
 	
 	=============================================================================
 	
+
+{% endraw %}

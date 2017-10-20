@@ -6,6 +6,8 @@ permalink: /kb/177/Q177793/
 
 ## Q177793: XADM: NDRs Discarded by Internet Mail Service
 
+{% raw %}
+
 	Article: Q177793
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/177/Q177793/
 	
 	=============================================================================
 	
+
+{% endraw %}

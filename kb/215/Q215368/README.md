@@ -6,6 +6,8 @@ permalink: /kb/215/Q215368/
 
 ## Q215368: XCON: MTA Content Conversion Error 4101 with HP Openmail
 
+{% raw %}
+
 	Article: Q215368
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1
@@ -114,3 +116,5 @@ permalink: /kb/215/Q215368/
 	
 	=============================================================================
 	
+
+{% endraw %}

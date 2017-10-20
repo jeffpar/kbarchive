@@ -6,6 +6,8 @@ permalink: /kb/224/Q224186/
 
 ## Q224186: Access Violation Selecting More Than 32,767 Objects in Windows N
 
+{% raw %}
+
 	Article: Q224186
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -49,3 +51,5 @@ permalink: /kb/224/Q224186/
 	
 	=============================================================================
 	
+
+{% endraw %}

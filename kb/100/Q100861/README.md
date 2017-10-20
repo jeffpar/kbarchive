@@ -6,6 +6,8 @@ permalink: /kb/100/Q100861/
 
 ## Q100861: Windows 3.1 Features Not Included with OmniBook
 
+{% raw %}
+
 	Article: Q100861
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -73,3 +75,5 @@ permalink: /kb/100/Q100861/
 	
 	=============================================================================
 	
+
+{% endraw %}

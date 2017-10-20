@@ -6,6 +6,8 @@ permalink: /kb/102/Q102560/
 
 ## Q102560: PC Win: Err Msg: Notice 8 Error in Transmitting Mail...
 
+{% raw %}
+
 	Article: Q102560
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -63,3 +65,5 @@ permalink: /kb/102/Q102560/
 	
 	=============================================================================
 	
+
+{% endraw %}

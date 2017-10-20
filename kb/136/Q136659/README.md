@@ -6,6 +6,8 @@ permalink: /kb/136/Q136659/
 
 ## Q136659: Iomega Zip Drive Appears Twice in My Computer
 
+{% raw %}
+
 	Article: Q136659
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/136/Q136659/
 	
 	=============================================================================
 	
+
+{% endraw %}

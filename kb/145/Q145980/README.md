@@ -6,6 +6,8 @@ permalink: /kb/145/Q145980/
 
 ## Q145980: Node Type And Scope ID Not Updated Upon Lease Renewal
 
+{% raw %}
+
 	Article: Q145980
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11,95; winnt:3.5,3.51; :3.11
@@ -56,3 +58,5 @@ permalink: /kb/145/Q145980/
 	
 	=============================================================================
 	
+
+{% endraw %}

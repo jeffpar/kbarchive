@@ -6,6 +6,8 @@ permalink: /kb/194/Q194208/
 
 ## Q194208: Unable to Install GSNW on Windows NT Server 4.0
 
+{% raw %}
+
 	Article: Q194208
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -80,3 +82,5 @@ permalink: /kb/194/Q194208/
 	
 	=============================================================================
 	
+
+{% endraw %}

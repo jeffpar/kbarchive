@@ -6,6 +6,8 @@ permalink: /kb/103/Q103818/
 
 ## Q103818: DoubleSpace Leaves &#92;WINDOWS&#92;SPART.PAR on Host Drive
 
+{% raw %}
+
 	Article: Q103818
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -74,3 +76,5 @@ permalink: /kb/103/Q103818/
 	
 	=============================================================================
 	
+
+{% endraw %}

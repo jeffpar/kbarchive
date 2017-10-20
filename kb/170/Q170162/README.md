@@ -6,6 +6,8 @@ permalink: /kb/170/Q170162/
 
 ## Q170162: INFO: VB 6.0 Readme Part 3: Control Issues
 
+{% raw %}
+
 	Article: Q170162
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -642,3 +644,5 @@ permalink: /kb/170/Q170162/
 	
 	=============================================================================
 	
+
+{% endraw %}

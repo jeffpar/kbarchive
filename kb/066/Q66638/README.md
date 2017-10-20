@@ -6,6 +6,8 @@ permalink: /kb/066/Q66638/
 
 ## Q66638: ASD: Coordinates for Microsoft Campus
 
+{% raw %}
+
 	Article: Q66638
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -36,3 +38,5 @@ permalink: /kb/066/Q66638/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105605/
 
 ## Q105605: Using DISKCOPY to Make Single-Pass Copies
 
+{% raw %}
+
 	Article: Q105605
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -63,3 +65,5 @@ permalink: /kb/105/Q105605/
 	
 	=============================================================================
 	
+
+{% endraw %}

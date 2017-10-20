@@ -6,6 +6,8 @@ permalink: /kb/197/Q197138/
 
 ## Q197138: WD97: Word Beeps Opening Shortcut Menu with Macro Recorder On
 
+{% raw %}
+
 	Article: Q197138
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -49,3 +51,5 @@ permalink: /kb/197/Q197138/
 	
 	=============================================================================
 	
+
+{% endraw %}

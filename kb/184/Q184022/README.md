@@ -6,6 +6,8 @@ permalink: /kb/184/Q184022/
 
 ## Q184022: FP: Changing Size of Text Changes Line Spacing
 
+{% raw %}
+
 	Article: Q184022
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:1.1,97
@@ -53,3 +55,5 @@ permalink: /kb/184/Q184022/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122514/
 
 ## Q122514: MS-DOS Window Remains on Screen After Application Is Finished
 
+{% raw %}
+
 	Article: Q122514
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -80,3 +82,5 @@ permalink: /kb/122/Q122514/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150056/
 
 ## Q150056: PRB: Version Conflict Adding Components or Reinstalling Windows
 
+{% raw %}
+
 	Article: Q150056
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -132,3 +134,5 @@ permalink: /kb/150/Q150056/
 	
 	=============================================================================
 	
+
+{% endraw %}

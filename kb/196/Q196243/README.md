@@ -6,6 +6,8 @@ permalink: /kb/196/Q196243/
 
 ## Q196243: Host Print Sessions Using GDI May Stop Printing
 
+{% raw %}
+
 	Article: Q196243
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -86,3 +88,5 @@ permalink: /kb/196/Q196243/
 	
 	=============================================================================
 	
+
+{% endraw %}

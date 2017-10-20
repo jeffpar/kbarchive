@@ -6,6 +6,8 @@ permalink: /kb/133/Q133017/
 
 ## Q133017: PRB: Branching Files in SourceSafe Causes Lost Disk Space
 
+{% raw %}
+
 	Article: Q133017
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/133/Q133017/
 	
 	=============================================================================
 	
+
+{% endraw %}

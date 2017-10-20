@@ -6,6 +6,8 @@ permalink: /kb/259/Q259993/
 
 ## Q259993: StarLancer: How to Skip Virtual Reality Transitions
 
+{% raw %}
+
 	Article: Q259993
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -49,3 +51,5 @@ permalink: /kb/259/Q259993/
 	
 	=============================================================================
 	
+
+{% endraw %}

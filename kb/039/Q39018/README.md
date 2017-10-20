@@ -6,6 +6,8 @@ permalink: /kb/039/Q39018/
 
 ## Q39018: Error U1188 Cannot Write to VM
 
+{% raw %}
+
 	Article: Q39018
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -43,3 +45,5 @@ permalink: /kb/039/Q39018/
 	or with the name of the utility. If possible, LIB prints a warning and
 	continues operation. In some cases errors are fatal and LIB terminates
 	processing.
+
+{% endraw %}

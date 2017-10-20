@@ -6,6 +6,8 @@ permalink: /kb/241/Q241706/
 
 ## Q241706: BUG: Compiler Error C2143 on Function-Try-Block Syntax
 
+{% raw %}
+
 	Article: Q241706
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -96,3 +98,5 @@ permalink: /kb/241/Q241706/
 	
 	=============================================================================
 	
+
+{% endraw %}

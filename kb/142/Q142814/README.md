@@ -6,6 +6,8 @@ permalink: /kb/142/Q142814/
 
 ## Q142814: INFO: Diagnosing &quot;Error in loading DLL&quot; with LoadLibrary
 
+{% raw %}
+
 	Article: Q142814
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -143,3 +145,5 @@ permalink: /kb/142/Q142814/
 	
 	=============================================================================
 	
+
+{% endraw %}

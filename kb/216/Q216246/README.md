@@ -6,6 +6,8 @@ permalink: /kb/216/Q216246/
 
 ## Q216246: Secondary Time Zone Off by One Hour in Danish Schedule+ 7.5 Clie
 
+{% raw %}
+
 	Article: Q216246
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.5
@@ -86,3 +88,5 @@ permalink: /kb/216/Q216246/
 	
 	=============================================================================
 	
+
+{% endraw %}

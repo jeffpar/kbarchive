@@ -6,6 +6,8 @@ permalink: /kb/153/Q153470/
 
 ## Q153470: Incorrect Error Code Returned for Locked Files
 
+{% raw %}
+
 	Article: Q153470
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/153/Q153470/
 	
 	=============================================================================
 	
+
+{% endraw %}

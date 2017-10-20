@@ -6,6 +6,8 @@ permalink: /kb/303/Q303283/
 
 ## Q303283: Event 2086 Appears When You Run Multi-Protocol Services
 
+{% raw %}
+
 	Article: Q303283
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -57,3 +59,5 @@ permalink: /kb/303/Q303283/
 	
 	=============================================================================
 	
+
+{% endraw %}

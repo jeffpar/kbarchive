@@ -6,6 +6,8 @@ permalink: /kb/121/Q121661/
 
 ## Q121661: How to Use the TrueType Fonts Built into the Printer
 
+{% raw %}
+
 	Article: Q121661
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/121/Q121661/
 	
 	=============================================================================
 	
+
+{% endraw %}

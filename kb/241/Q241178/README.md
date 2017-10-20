@@ -6,6 +6,8 @@ permalink: /kb/241/Q241178/
 
 ## Q241178: NBA Inside Drive 2000: Court Textures Are Not Displayed Properly
 
+{% raw %}
+
 	Article: Q241178
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -77,3 +79,5 @@ permalink: /kb/241/Q241178/
 	
 	=============================================================================
 	
+
+{% endraw %}

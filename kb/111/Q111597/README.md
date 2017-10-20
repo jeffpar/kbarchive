@@ -6,6 +6,8 @@ permalink: /kb/111/Q111597/
 
 ## Q111597: BUG: Debug Kernel Ignores Fatal Exits When OutputTo=
 
+{% raw %}
+
 	Article: Q111597
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -51,3 +53,5 @@ permalink: /kb/111/Q111597/
 	
 	=============================================================================
 	
+
+{% endraw %}

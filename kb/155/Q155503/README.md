@@ -6,6 +6,8 @@ permalink: /kb/155/Q155503/
 
 ## Q155503: SMS: IPX Address Not Inventoried When You Use TCP/IP
 
+{% raw %}
+
 	Article: Q155503
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -54,3 +56,5 @@ permalink: /kb/155/Q155503/
 	
 	=============================================================================
 	
+
+{% endraw %}

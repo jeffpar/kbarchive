@@ -6,6 +6,8 @@ permalink: /kb/288/Q288740/
 
 ## Q288740: Event 39 Logged if SnaServer Service Configured to AutoStart
 
+{% raw %}
+
 	Article: Q288740
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP4
@@ -146,3 +148,5 @@ permalink: /kb/288/Q288740/
 	
 	=============================================================================
 	
+
+{% endraw %}

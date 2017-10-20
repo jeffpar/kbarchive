@@ -6,6 +6,8 @@ permalink: /kb/173/Q173394/
 
 ## Q173394: WD97: Check Links Does Not Accept Some Protocols as Valid Links
 
+{% raw %}
+
 	Article: Q173394
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -80,3 +82,5 @@ permalink: /kb/173/Q173394/
 	
 	=============================================================================
 	
+
+{% endraw %}

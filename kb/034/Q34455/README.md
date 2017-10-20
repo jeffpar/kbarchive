@@ -6,6 +6,8 @@ permalink: /kb/034/Q34455/
 
 ## Q34455: MASM 5.10 MACRO.DOC: BIOS Macro Syntax, Description
 
+{% raw %}
+
 	Article: Q34455
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -73,3 +75,5 @@ permalink: /kb/034/Q34455/
 	                              and 3
 	Return:         none
 	Registers used: AX
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194834/
 
 ## Q194834: List of Bugs Fixed in Windows NT 4.0 and TSE SP4 (Part 2)
 
+{% raw %}
+
 	Article: Q194834
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4
@@ -358,3 +360,5 @@ permalink: /kb/194/Q194834/
 	
 	=============================================================================
 	
+
+{% endraw %}

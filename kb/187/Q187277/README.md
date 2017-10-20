@@ -6,6 +6,8 @@ permalink: /kb/187/Q187277/
 
 ## Q187277: The FTP PORT Command Fails in IIS 3.0
 
+{% raw %}
+
 	Article: Q187277
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:3.0,4.0
@@ -68,3 +70,5 @@ permalink: /kb/187/Q187277/
 	
 	=============================================================================
 	
+
+{% endraw %}

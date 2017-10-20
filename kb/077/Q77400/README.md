@@ -6,6 +6,8 @@ permalink: /kb/077/Q77400/
 
 ## Q77400: Incompatible XENIX Partition Detected with SMARTDrive
 
+{% raw %}
+
 	Article: Q77400
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -61,3 +63,5 @@ permalink: /kb/077/Q77400/
 	
 	=============================================================================
 	
+
+{% endraw %}

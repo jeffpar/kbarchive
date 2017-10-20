@@ -6,6 +6,8 @@ permalink: /kb/180/Q180794/
 
 ## Q180794: How to Restore DNS Zones When Deleted from DNS Manager
 
+{% raw %}
+
 	Article: Q180794
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -40,3 +42,5 @@ permalink: /kb/180/Q180794/
 	
 	=============================================================================
 	
+
+{% endraw %}

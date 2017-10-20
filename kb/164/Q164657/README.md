@@ -6,6 +6,8 @@ permalink: /kb/164/Q164657/
 
 ## Q164657: SMS: Pcmwin32.exe Prevents PCM Service from Running Package
 
+{% raw %}
+
 	Article: Q164657
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -88,3 +90,5 @@ permalink: /kb/164/Q164657/
 	
 	=============================================================================
 	
+
+{% endraw %}

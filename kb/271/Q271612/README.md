@@ -6,6 +6,8 @@ permalink: /kb/271/Q271612/
 
 ## Q271612: FIX: Error &quot;Can't Print Form Image&quot; on Windows 98 with VB6 SP4
 
+{% raw %}
+
 	Article: Q271612
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0 SP4
@@ -119,3 +121,5 @@ permalink: /kb/271/Q271612/
 	
 	=============================================================================
 	
+
+{% endraw %}

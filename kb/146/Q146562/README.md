@@ -6,6 +6,8 @@ permalink: /kb/146/Q146562/
 
 ## Q146562: XFOR: Some Connection Parameters Not Configurable Per Domain
 
+{% raw %}
+
 	Article: Q146562
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/146/Q146562/
 	
 	=============================================================================
 	
+
+{% endraw %}

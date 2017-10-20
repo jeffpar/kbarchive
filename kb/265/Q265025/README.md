@@ -6,6 +6,8 @@ permalink: /kb/265/Q265025/
 
 ## Q265025: Access Violation in Ntbackup.exe
 
+{% raw %}
+
 	Article: Q265025
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/265/Q265025/
 	
 	=============================================================================
 	
+
+{% endraw %}

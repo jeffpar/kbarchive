@@ -6,6 +6,8 @@ permalink: /kb/156/Q156686/
 
 ## Q156686: Unavailable Connections to NetWare Volumes with InocuLAN 1.01
 
+{% raw %}
+
 	Article: Q156686
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51
@@ -62,3 +64,5 @@ permalink: /kb/156/Q156686/
 	
 	=============================================================================
 	
+
+{% endraw %}

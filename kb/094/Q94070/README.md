@@ -6,6 +6,8 @@ permalink: /kb/094/Q94070/
 
 ## Q94070: Creating Bound Applications with LAN Man PTK/SDK
 
+{% raw %}
+
 	Article: Q94070
 	Product(s): Microsoft LAN Manager
 	Version(s): 2.0,2.1
@@ -58,3 +60,5 @@ permalink: /kb/094/Q94070/
 	
 	=============================================================================
 	
+
+{% endraw %}

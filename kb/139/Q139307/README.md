@@ -6,6 +6,8 @@ permalink: /kb/139/Q139307/
 
 ## Q139307: PRB: Wizard-Generated Picture Buttons Need Bitmap in .Exe
 
+{% raw %}
+
 	Article: Q139307
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -94,3 +96,5 @@ permalink: /kb/139/Q139307/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/219/Q219931/
 
 ## Q219931: SMS: CCIM Fails to Make a Connection to APM
 
+{% raw %}
+
 	Article: Q219931
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/219/Q219931/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40783/
 
 ## Q40783: Assembly Listing Doesn't Match Generated Code in C
 
+{% raw %}
+
 	Article: Q40783
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -29,3 +31,5 @@ permalink: /kb/040/Q40783/
 	
 	Be sure to use EXACTLY the same options when comparing listing files
 	with the actual code.
+
+{% endraw %}

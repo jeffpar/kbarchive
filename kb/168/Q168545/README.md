@@ -6,6 +6,8 @@ permalink: /kb/168/Q168545/
 
 ## Q168545: SMS: Remote Control Session Shows Machine Name
 
+{% raw %}
+
 	Article: Q168545
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -49,3 +51,5 @@ permalink: /kb/168/Q168545/
 	
 	=============================================================================
 	
+
+{% endraw %}

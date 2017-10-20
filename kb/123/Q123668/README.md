@@ -6,6 +6,8 @@ permalink: /kb/123/Q123668/
 
 ## Q123668: PRB: LNK4022 &amp; LNK4006 Warnings When Build PowerStation 32 DLL
 
+{% raw %}
+
 	Article: Q123668
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,4.0
@@ -97,3 +99,5 @@ permalink: /kb/123/Q123668/
 	
 	=============================================================================
 	
+
+{% endraw %}

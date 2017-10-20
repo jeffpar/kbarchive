@@ -6,6 +6,8 @@ permalink: /kb/148/Q148678/
 
 ## Q148678: How To Synchronize A NetWare Server Using DSMN
 
+{% raw %}
+
 	Article: Q148678
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -94,3 +96,5 @@ permalink: /kb/148/Q148678/
 	
 	=============================================================================
 	
+
+{% endraw %}

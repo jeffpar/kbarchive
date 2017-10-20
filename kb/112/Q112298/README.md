@@ -6,6 +6,8 @@ permalink: /kb/112/Q112298/
 
 ## Q112298: DOC: Port I/O with inp() and outp() Fails on Windows NT
 
+{% raw %}
+
 	Article: Q112298
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00 2.00
@@ -91,3 +93,5 @@ permalink: /kb/112/Q112298/
 	
 	=============================================================================
 	
+
+{% endraw %}

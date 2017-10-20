@@ -6,6 +6,8 @@ permalink: /kb/157/Q157815/
 
 ## Q157815: Service Control Manager Event 7003 and 7024 (2105)
 
+{% raw %}
+
 	Article: Q157815
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -94,3 +96,5 @@ permalink: /kb/157/Q157815/
 	
 	=============================================================================
 	
+
+{% endraw %}

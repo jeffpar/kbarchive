@@ -6,6 +6,8 @@ permalink: /kb/140/Q140566/
 
 ## Q140566: FIX: Click Event Of Straight Line Not Firing
 
+{% raw %}
+
 	Article: Q140566
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -95,3 +97,5 @@ permalink: /kb/140/Q140566/
 	
 	=============================================================================
 	
+
+{% endraw %}

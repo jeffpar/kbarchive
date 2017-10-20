@@ -6,6 +6,8 @@ permalink: /kb/143/Q143007/
 
 ## Q143007: PPT7: &quot;Not Enough Memory--See User's Guide&quot; Printing to HP 1200c
 
+{% raw %}
+
 	Article: Q143007
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -57,3 +59,5 @@ permalink: /kb/143/Q143007/
 	
 	=============================================================================
 	
+
+{% endraw %}

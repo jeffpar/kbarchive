@@ -6,6 +6,8 @@ permalink: /kb/107/Q107525/
 
 ## Q107525: Drive Letters Swapped After Converting Stacker Drives
 
+{% raw %}
+
 	Article: Q107525
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -57,3 +59,5 @@ permalink: /kb/107/Q107525/
 	
 	=============================================================================
 	
+
+{% endraw %}

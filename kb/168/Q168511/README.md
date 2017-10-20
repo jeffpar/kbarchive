@@ -6,6 +6,8 @@ permalink: /kb/168/Q168511/
 
 ## Q168511: Have Disk Default Behavior Changed for Win95 Client Install
 
+{% raw %}
+
 	Article: Q168511
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/168/Q168511/
 	
 	=============================================================================
 	
+
+{% endraw %}

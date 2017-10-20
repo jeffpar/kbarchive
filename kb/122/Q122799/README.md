@@ -6,6 +6,8 @@ permalink: /kb/122/Q122799/
 
 ## Q122799: Err Msg: Unable to Find Seed Router w/COPS LTI Appletalk NIC
 
+{% raw %}
+
 	Article: Q122799
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/122/Q122799/
 	
 	=============================================================================
 	
+
+{% endraw %}

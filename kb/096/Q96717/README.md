@@ -6,6 +6,8 @@ permalink: /kb/096/Q96717/
 
 ## Q96717: PC WRmt: Message Header Listing Incorrect
 
+{% raw %}
+
 	Article: Q96717
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -63,3 +65,5 @@ permalink: /kb/096/Q96717/
 	
 	=============================================================================
 	
+
+{% endraw %}

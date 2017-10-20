@@ -6,6 +6,8 @@ permalink: /kb/138/Q138766/
 
 ## Q138766: Removing Default Items from Custom Network Neighborhood
 
+{% raw %}
+
 	Article: Q138766
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -88,3 +90,5 @@ permalink: /kb/138/Q138766/
 	
 	=============================================================================
 	
+
+{% endraw %}

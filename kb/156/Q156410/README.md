@@ -6,6 +6,8 @@ permalink: /kb/156/Q156410/
 
 ## Q156410: STOP 0x1E or 0x50 Error on Multiprocessor DEC Alpha Computer
 
+{% raw %}
+
 	Article: Q156410
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/156/Q156410/
 	
 	=============================================================================
 	
+
+{% endraw %}

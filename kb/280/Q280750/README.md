@@ -6,6 +6,8 @@ permalink: /kb/280/Q280750/
 
 ## Q280750: How to Restore Netscape Communicator as the Default Browser
 
+{% raw %}
+
 	Article: Q280750
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): 
@@ -123,3 +125,5 @@ permalink: /kb/280/Q280750/
 	
 	=============================================================================
 	
+
+{% endraw %}

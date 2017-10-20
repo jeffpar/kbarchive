@@ -6,6 +6,8 @@ permalink: /kb/084/Q84744/
 
 ## Q84744: Conditionally Assembling the END Directive
 
+{% raw %}
+
 	Article: Q84744
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.x,6.0,6.0a,6.0b
@@ -72,3 +74,5 @@ permalink: /kb/084/Q84744/
 	
 	=============================================================================
 	
+
+{% endraw %}

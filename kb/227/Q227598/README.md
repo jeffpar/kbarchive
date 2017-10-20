@@ -6,6 +6,8 @@ permalink: /kb/227/Q227598/
 
 ## Q227598: Input Devices Do Not Work After Installing Windows Using SMS 1.2
 
+{% raw %}
+
 	Article: Q227598
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -56,3 +58,5 @@ permalink: /kb/227/Q227598/
 	
 	=============================================================================
 	
+
+{% endraw %}

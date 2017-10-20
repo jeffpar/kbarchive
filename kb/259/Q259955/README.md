@@ -6,6 +6,8 @@ permalink: /kb/259/Q259955/
 
 ## Q259955: StarLancer: Video Adapter Is Not Detected as Direct3D Compatible
 
+{% raw %}
+
 	Article: Q259955
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/259/Q259955/
 	
 	=============================================================================
 	
+
+{% endraw %}

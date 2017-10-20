@@ -6,6 +6,8 @@ permalink: /kb/198/Q198363/
 
 ## Q198363: WD97: Deleted Text Not Displayed When Hidden Text Option Set
 
+{% raw %}
+
 	Article: Q198363
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/198/Q198363/
 	
 	=============================================================================
 	
+
+{% endraw %}

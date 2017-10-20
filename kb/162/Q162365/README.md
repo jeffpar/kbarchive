@@ -6,6 +6,8 @@ permalink: /kb/162/Q162365/
 
 ## Q162365: How to Delete Print Jobs That Will Not Print
 
+{% raw %}
+
 	Article: Q162365
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/162/Q162365/
 	
 	=============================================================================
 	
+
+{% endraw %}

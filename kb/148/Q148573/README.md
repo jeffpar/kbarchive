@@ -6,6 +6,8 @@ permalink: /kb/148/Q148573/
 
 ## Q148573: PPT7: Saving PowerPoint 7.0 File as PowerPoint 3.0 File
 
+{% raw %}
+
 	Article: Q148573
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -54,3 +56,5 @@ permalink: /kb/148/Q148573/
 	
 	=============================================================================
 	
+
+{% endraw %}

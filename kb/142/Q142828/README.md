@@ -6,6 +6,8 @@ permalink: /kb/142/Q142828/
 
 ## Q142828: PRB: Incorrect Toolbar Bitmaps Installed with VB 4.0
 
+{% raw %}
+
 	Article: Q142828
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -102,3 +104,5 @@ permalink: /kb/142/Q142828/
 	
 	=============================================================================
 	
+
+{% endraw %}

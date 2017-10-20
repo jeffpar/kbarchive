@@ -6,6 +6,8 @@ permalink: /kb/189/Q189809/
 
 ## Q189809: SMS: Logon Server Default Permissions
 
+{% raw %}
+
 	Article: Q189809
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -107,3 +109,5 @@ permalink: /kb/189/Q189809/
 	
 	=============================================================================
 	
+
+{% endraw %}

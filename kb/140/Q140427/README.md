@@ -6,6 +6,8 @@ permalink: /kb/140/Q140427/
 
 ## Q140427: Using the Novell Attach Command in Windows NT
 
+{% raw %}
+
 	Article: Q140427
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -50,3 +52,5 @@ permalink: /kb/140/Q140427/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123067/
 
 ## Q123067: CDFS Does Not Support Lowercase Filenames
 
+{% raw %}
+
 	Article: Q123067
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -61,3 +63,5 @@ permalink: /kb/123/Q123067/
 	
 	=============================================================================
 	
+
+{% endraw %}

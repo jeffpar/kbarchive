@@ -6,6 +6,8 @@ permalink: /kb/193/Q193010/
 
 ## Q193010: BUG: Blinking Hourglass When Expanding Object in Watch Window
 
+{% raw %}
+
 	Article: Q193010
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -78,3 +80,5 @@ permalink: /kb/193/Q193010/
 	
 	=============================================================================
 	
+
+{% endraw %}

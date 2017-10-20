@@ -6,6 +6,8 @@ permalink: /kb/083/Q83848/
 
 ## Q83848: Error Upgrading Full Windows 3.0 with Setup /N
 
+{% raw %}
+
 	Article: Q83848
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -85,3 +87,5 @@ permalink: /kb/083/Q83848/
 	
 	=============================================================================
 	
+
+{% endraw %}

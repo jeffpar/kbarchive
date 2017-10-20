@@ -6,6 +6,8 @@ permalink: /kb/052/Q52192/
 
 ## Q52192: COPY Merges Files If Copied to Nonexistent Directory
 
+{% raw %}
+
 	Article: Q52192
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -72,3 +74,5 @@ permalink: /kb/052/Q52192/
 	
 	=============================================================================
 	
+
+{% endraw %}

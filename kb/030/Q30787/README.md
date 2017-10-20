@@ -6,6 +6,8 @@ permalink: /kb/030/Q30787/
 
 ## Q30787: MASM 5.10 MIXED.DOC: Converting Old Macros of MASM 5.00
 
+{% raw %}
+
 	Article: Q30787
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -142,3 +144,5 @@ permalink: /kb/030/Q30787/
 	you use the .386 directive before the .MODEL directive to enable
 	32-bit segments, near pointers declared with PTR will be 32 bits wide
 	and far pointers will be 48 bits wide.
+
+{% endraw %}

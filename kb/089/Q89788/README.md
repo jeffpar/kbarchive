@@ -6,6 +6,8 @@ permalink: /kb/089/Q89788/
 
 ## Q89788: SMARTDRV /S Output Defined
 
+{% raw %}
+
 	Article: Q89788
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -126,3 +128,5 @@ permalink: /kb/089/Q89788/
 	
 	=============================================================================
 	
+
+{% endraw %}

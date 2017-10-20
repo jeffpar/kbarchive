@@ -6,6 +6,8 @@ permalink: /kb/201/Q201315/
 
 ## Q201315: XFOR: Propagation of Lotus Notes Group to Exchange Server
 
+{% raw %}
+
 	Article: Q201315
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -68,3 +70,5 @@ permalink: /kb/201/Q201315/
 	
 	=============================================================================
 	
+
+{% endraw %}

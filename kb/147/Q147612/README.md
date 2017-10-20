@@ -6,6 +6,8 @@ permalink: /kb/147/Q147612/
 
 ## Q147612: Microsoft Internet Jump Start CD for Education
 
+{% raw %}
+
 	Article: Q147612
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 1.0,1.0z,2.0z,3.51
@@ -85,3 +87,5 @@ permalink: /kb/147/Q147612/
 	
 	=============================================================================
 	
+
+{% endraw %}

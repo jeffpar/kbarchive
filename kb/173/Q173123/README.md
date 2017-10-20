@@ -6,6 +6,8 @@ permalink: /kb/173/Q173123/
 
 ## Q173123: XCLN: 5.0/SP1 Macintosh Client Drops Three-Letter Extension
 
+{% raw %}
+
 	Article: Q173123
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -74,3 +76,5 @@ permalink: /kb/173/Q173123/
 	
 	=============================================================================
 	
+
+{% endraw %}

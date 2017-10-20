@@ -6,6 +6,8 @@ permalink: /kb/048/Q48293/
 
 ## Q48293: QuickC Message: &quot;Cannot Edit Binary File&quot;
 
+{% raw %}
+
 	Article: Q48293
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00 2.01
@@ -66,3 +68,5 @@ permalink: /kb/048/Q48293/
 	2. If the file is originally from one of the distribution disks,
 	   replace it with a fresh copy from your backup copy of the
 	   distribution disks.
+
+{% endraw %}

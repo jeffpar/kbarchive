@@ -6,6 +6,8 @@ permalink: /kb/189/Q189356/
 
 ## Q189356: SAMR Pipes Cause Problems with Domain Controllers
 
+{% raw %}
+
 	Article: Q189356
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -131,3 +133,5 @@ permalink: /kb/189/Q189356/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130647/
 
 ## Q130647: Writer/Artist: How to Remove Your Recorded Sounds
 
+{% raw %}
+
 	Article: Q130647
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -75,3 +77,5 @@ permalink: /kb/130/Q130647/
 	
 	=============================================================================
 	
+
+{% endraw %}

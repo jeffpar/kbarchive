@@ -6,6 +6,8 @@ permalink: /kb/171/Q171167/
 
 ## Q171167: XCLN: Schedule+ 7.x Cannot Directly Import Version 1.0 CAL Files
 
+{% raw %}
+
 	Article: Q171167
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.5; :7.5
@@ -68,3 +70,5 @@ permalink: /kb/171/Q171167/
 	
 	=============================================================================
 	
+
+{% endraw %}

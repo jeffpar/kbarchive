@@ -6,6 +6,8 @@ permalink: /kb/035/Q35303/
 
 ## Q35303: Using PRINT SCREEN Key to Print CGA Graphics
 
+{% raw %}
+
 	Article: Q35303
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -42,3 +44,5 @@ permalink: /kb/035/Q35303/
 	necessary on some other printers to set some switch settings, if
 	available, to emulate either of these printers. The printer manual for
 	the specific printer should be consulted in these cases.
+
+{% endraw %}

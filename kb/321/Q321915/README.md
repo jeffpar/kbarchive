@@ -6,6 +6,8 @@ permalink: /kb/321/Q321915/
 
 ## Q321915: &quot;Incompatible Version of the RPC Stub&quot; Error with InstallShield
 
+{% raw %}
+
 	Article: Q321915
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,2000 SP2,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6a
@@ -121,3 +123,5 @@ permalink: /kb/321/Q321915/
 	
 	=============================================================================
 	
+
+{% endraw %}

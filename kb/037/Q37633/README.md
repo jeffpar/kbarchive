@@ -6,6 +6,8 @@ permalink: /kb/037/Q37633/
 
 ## Q37633: How errno Is Handled in Multi-Threaded Programs
 
+{% raw %}
+
 	Article: Q37633
 	Product(s): See article
 	Version(s): 5.10
@@ -35,3 +37,5 @@ permalink: /kb/037/Q37633/
 	
 	You can determine the behavior at compile time because errno will be
 	defined in the multi-thread case, i.e.,  "#ifdef  errno".
+
+{% endraw %}

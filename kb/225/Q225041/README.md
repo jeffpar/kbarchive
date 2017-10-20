@@ -6,6 +6,8 @@ permalink: /kb/225/Q225041/
 
 ## Q225041: Zone: How to Remove the Heartbeat ActiveX Control
 
+{% raw %}
+
 	Article: Q225041
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/225/Q225041/
 	
 	=============================================================================
 	
+
+{% endraw %}

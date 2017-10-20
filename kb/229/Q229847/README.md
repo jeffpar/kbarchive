@@ -6,6 +6,8 @@ permalink: /kb/229/Q229847/
 
 ## Q229847: INFO: Does Visual Basic Support 16-Bit Development?
 
+{% raw %}
+
 	Article: Q229847
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -56,3 +58,5 @@ permalink: /kb/229/Q229847/
 	
 	=============================================================================
 	
+
+{% endraw %}

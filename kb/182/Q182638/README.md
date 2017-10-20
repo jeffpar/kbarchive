@@ -6,6 +6,8 @@ permalink: /kb/182/Q182638/
 
 ## Q182638: Admin: Snap-in Does Not Recognize the Local Machine Name
 
+{% raw %}
+
 	Article: Q182638
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -65,3 +67,5 @@ permalink: /kb/182/Q182638/
 	
 	=============================================================================
 	
+
+{% endraw %}

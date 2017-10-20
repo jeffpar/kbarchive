@@ -6,6 +6,8 @@ permalink: /kb/133/Q133311/
 
 ## Q133311: FIX: Errors Occur When SQL Server Binary Field Over 64K
 
+{% raw %}
+
 	Article: Q133311
 	Product(s): Microsoft C Compiler
 	Version(s): 1.52 1.52a 1.52b | 2.00 2.10 2.2
@@ -309,3 +311,5 @@ permalink: /kb/133/Q133311/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154272/
 
 ## Q154272: Non-System Disk or Disk Error on Remote Boot Client
 
+{% raw %}
+
 	Article: Q154272
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -71,3 +73,5 @@ permalink: /kb/154/Q154272/
 	
 	=============================================================================
 	
+
+{% endraw %}

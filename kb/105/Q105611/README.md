@@ -6,6 +6,8 @@ permalink: /kb/105/Q105611/
 
 ## Q105611: README.NOW: MS-DOS 6.2 Step-Up (BBS) README.NOW File
 
+{% raw %}
+
 	Article: Q105611
 	Product(s): Microsoft Disk Operating System
 	Version(s): 6.2
@@ -484,3 +486,5 @@ permalink: /kb/105/Q105611/
 	
 	=============================================================================
 	
+
+{% endraw %}

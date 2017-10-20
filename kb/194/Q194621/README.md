@@ -6,6 +6,8 @@ permalink: /kb/194/Q194621/
 
 ## Q194621: Print Screen in 3270 Applet Does Not Support Greek Code Page
 
+{% raw %}
+
 	Article: Q194621
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -54,3 +56,5 @@ permalink: /kb/194/Q194621/
 	
 	=============================================================================
 	
+
+{% endraw %}

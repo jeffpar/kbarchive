@@ -6,6 +6,8 @@ permalink: /kb/102/Q102926/
 
 ## Q102926: PC DirSync: Invalid Import Filename Does Not Create Log
 
+{% raw %}
+
 	Article: Q102926
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b
@@ -65,3 +67,5 @@ permalink: /kb/102/Q102926/
 	
 	=============================================================================
 	
+
+{% endraw %}

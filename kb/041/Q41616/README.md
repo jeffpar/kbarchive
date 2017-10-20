@@ -6,6 +6,8 @@ permalink: /kb/041/Q41616/
 
 ## Q41616: QuickC 2.00 README.DOC: Example Program FOR.C
 
+{% raw %}
+
 	Article: Q41616
 	Product(s): See article
 	Version(s): 2.00
@@ -22,3 +24,5 @@ permalink: /kb/041/Q41616/
 	If you compile the program FOR.C and run it from the DOS command line,
 	it conflicts with the DOS FOR command. To eliminate the conflict,
 	rename the file FOR.EXE AS QCFOR.EXE.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166052/
 
 ## Q166052: WV: Menus in Word Viewer Do Not Respond on First Click
 
+{% raw %}
+
 	Article: Q166052
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/166/Q166052/
 	
 	=============================================================================
 	
+
+{% endraw %}

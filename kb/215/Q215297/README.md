@@ -6,6 +6,8 @@ permalink: /kb/215/Q215297/
 
 ## Q215297: XADM: Windows NT Version Change Rebuilds Exchange DB Indexes
 
+{% raw %}
+
 	Article: Q215297
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -77,3 +79,5 @@ permalink: /kb/215/Q215297/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153572/
 
 ## Q153572: SMSRUNxx Doesn't Support Redirectors Returning a Null Username
 
+{% raw %}
+
 	Article: Q153572
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -49,3 +51,5 @@ permalink: /kb/153/Q153572/
 	
 	=============================================================================
 	
+
+{% endraw %}

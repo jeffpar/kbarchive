@@ -6,6 +6,8 @@ permalink: /kb/223/Q223117/
 
 ## Q223117: FIX: Customizing Toolbar at Run-time Modifies Buttons
 
+{% raw %}
+
 	Article: Q223117
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -105,3 +107,5 @@ permalink: /kb/223/Q223117/
 	
 	=============================================================================
 	
+
+{% endraw %}

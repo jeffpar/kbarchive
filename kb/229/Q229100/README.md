@@ -6,6 +6,8 @@ permalink: /kb/229/Q229100/
 
 ## Q229100: PRB: VFP ODBC Driver Cannot Be Used With ODBC Connection Pooling
 
+{% raw %}
+
 	Article: Q229100
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -93,3 +95,5 @@ permalink: /kb/229/Q229100/
 	
 	=============================================================================
 	
+
+{% endraw %}

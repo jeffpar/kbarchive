@@ -6,6 +6,8 @@ permalink: /kb/189/Q189916/
 
 ## Q189916: BUG: SET(&quot;DEBUGOUT&quot;) Returns Filename After SET DEBUGOUT TO
 
+{% raw %}
+
 	Article: Q189916
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -85,3 +87,5 @@ permalink: /kb/189/Q189916/
 	
 	=============================================================================
 	
+
+{% endraw %}

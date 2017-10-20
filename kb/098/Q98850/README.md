@@ -6,6 +6,8 @@ permalink: /kb/098/Q98850/
 
 ## Q98850: Encarta 1993: Minimal Installation May Cause Sound Gaps
 
+{% raw %}
+
 	Article: Q98850
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1993 edition
@@ -67,3 +69,5 @@ permalink: /kb/098/Q98850/
 	
 	=============================================================================
 	
+
+{% endraw %}

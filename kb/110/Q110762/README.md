@@ -6,6 +6,8 @@ permalink: /kb/110/Q110762/
 
 ## Q110762: PC Gen: README.TXT: Mail 3.2 Serializer Utility
 
+{% raw %}
+
 	Article: Q110762
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -146,3 +148,5 @@ permalink: /kb/110/Q110762/
 	
 	=============================================================================
 	
+
+{% endraw %}

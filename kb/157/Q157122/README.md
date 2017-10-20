@@ -6,6 +6,8 @@ permalink: /kb/157/Q157122/
 
 ## Q157122: WD97: Multiple Instances of Toolbar Buttons
 
+{% raw %}
+
 	Article: Q157122
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/157/Q157122/
 	
 	=============================================================================
 	
+
+{% endraw %}

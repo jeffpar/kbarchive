@@ -6,6 +6,8 @@ permalink: /kb/134/Q134236/
 
 ## Q134236: PC WRmt: Mail in the Outbox May Not Be Sent
 
+{% raw %}
+
 	Article: Q134236
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -62,3 +64,5 @@ permalink: /kb/134/Q134236/
 	
 	=============================================================================
 	
+
+{% endraw %}

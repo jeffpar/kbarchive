@@ -6,6 +6,8 @@ permalink: /kb/123/Q123471/
 
 ## Q123471: HOWTO: Change the Data Directory Location
 
+{% raw %}
+
 	Article: Q123471
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/123/Q123471/
 	
 	=============================================================================
 	
+
+{% endraw %}

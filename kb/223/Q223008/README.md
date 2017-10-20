@@ -6,6 +6,8 @@ permalink: /kb/223/Q223008/
 
 ## Q223008: FP98: FrontPage Hit Counter Displays a Red X in the Browser
 
+{% raw %}
+
 	Article: Q223008
 	Product(s): Word Front Page
 	Version(s): 
@@ -134,3 +136,5 @@ permalink: /kb/223/Q223008/
 	
 	=============================================================================
 	
+
+{% endraw %}

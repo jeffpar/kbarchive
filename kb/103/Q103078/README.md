@@ -6,6 +6,8 @@ permalink: /kb/103/Q103078/
 
 ## Q103078: No Generic/Text Only Printer Driver with Windows NT
 
+{% raw %}
+
 	Article: Q103078
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -52,3 +54,5 @@ permalink: /kb/103/Q103078/
 	
 	=============================================================================
 	
+
+{% endraw %}

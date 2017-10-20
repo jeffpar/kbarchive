@@ -6,6 +6,8 @@ permalink: /kb/298/Q298926/
 
 ## Q298926: PRB: Error 800a01ad When You Run a WebClass from Terminal Server
 
+{% raw %}
+
 	Article: Q298926
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -95,3 +97,5 @@ permalink: /kb/298/Q298926/
 	
 	=============================================================================
 	
+
+{% endraw %}

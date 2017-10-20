@@ -6,6 +6,8 @@ permalink: /kb/131/Q131528/
 
 ## Q131528: PRB: Dynamic Grid Properties Don't Appear in Property Sheet
 
+{% raw %}
+
 	Article: Q131528
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/131/Q131528/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163772/
 
 ## Q163772: Nested FOR Loops Using &quot;~&quot; Operators Do Not Work
 
+{% raw %}
+
 	Article: Q163772
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/163/Q163772/
 	
 	=============================================================================
 	
+
+{% endraw %}

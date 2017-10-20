@@ -6,6 +6,8 @@ permalink: /kb/174/Q174217/
 
 ## Q174217: ODE97: Comcat.dll Can't Be Registered During Run-time Install
 
+{% raw %}
+
 	Article: Q174217
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): ; WINDOWS:
@@ -197,3 +199,5 @@ permalink: /kb/174/Q174217/
 	
 	=============================================================================
 	
+
+{% endraw %}

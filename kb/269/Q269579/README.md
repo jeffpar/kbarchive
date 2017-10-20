@@ -6,6 +6,8 @@ permalink: /kb/269/Q269579/
 
 ## Q269579: PRB: Tabbed Dialog Control Has Different Behavior on Non-VB Form
 
+{% raw %}
+
 	Article: Q269579
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -60,3 +62,5 @@ permalink: /kb/269/Q269579/
 	
 	=============================================================================
 	
+
+{% endraw %}

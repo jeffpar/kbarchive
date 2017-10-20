@@ -6,6 +6,8 @@ permalink: /kb/286/Q286443/
 
 ## Q286443: Age of Empires II: Game May Quit, Hang, or Blackout the Screen
 
+{% raw %}
+
 	Article: Q286443
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -67,3 +69,5 @@ permalink: /kb/286/Q286443/
 	
 	=============================================================================
 	
+
+{% endraw %}

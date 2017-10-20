@@ -6,6 +6,8 @@ permalink: /kb/275/Q275653/
 
 ## Q275653: XCON: MTA Terminates Unexpectedly in SNPUPUTN()
 
+{% raw %}
+
 	Article: Q275653
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -96,3 +98,5 @@ permalink: /kb/275/Q275653/
 	
 	=============================================================================
 	
+
+{% endraw %}

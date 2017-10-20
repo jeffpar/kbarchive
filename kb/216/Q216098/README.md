@@ -6,6 +6,8 @@ permalink: /kb/216/Q216098/
 
 ## Q216098: Visual C++ IDE Slows When Files Are in Many Directories
 
+{% raw %}
+
 	Article: Q216098
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -75,3 +77,5 @@ permalink: /kb/216/Q216098/
 	
 	=============================================================================
 	
+
+{% endraw %}

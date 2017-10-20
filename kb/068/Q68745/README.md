@@ -6,6 +6,8 @@ permalink: /kb/068/Q68745/
 
 ## Q68745: PGCHART: How to Draw a Line Chart with Lines Only
 
+{% raw %}
+
 	Article: Q68745
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -141,3 +143,5 @@ permalink: /kb/068/Q68745/
 	For more information about line charts, see pages 252-273 of
 	"Microsoft C Advanced Programming Techniques", and pages 267-296 of "C
 	for Yourself."
+
+{% endraw %}

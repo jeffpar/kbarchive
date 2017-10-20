@@ -6,6 +6,8 @@ permalink: /kb/149/Q149075/
 
 ## Q149075: ADT/ODE: How to Reference Buttons on a Custom Toolbar Control
 
+{% raw %}
+
 	Article: Q149075
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -145,3 +147,5 @@ permalink: /kb/149/Q149075/
 	
 	=============================================================================
 	
+
+{% endraw %}

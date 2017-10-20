@@ -6,6 +6,8 @@ permalink: /kb/136/Q136420/
 
 ## Q136420: How to Create an Array of Unique Random Numbers
 
+{% raw %}
+
 	Article: Q136420
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a; MS-DOS:2.0,2.5,2.5a,2.5b,2.6,2.6a; UNIX:2.6; WINDOWS:2.5,2.5a
@@ -140,3 +142,5 @@ permalink: /kb/136/Q136420/
 	
 	=============================================================================
 	
+
+{% endraw %}

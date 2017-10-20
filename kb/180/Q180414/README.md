@@ -6,6 +6,8 @@ permalink: /kb/180/Q180414/
 
 ## Q180414: XFOR: Non-Delivery Report: 554 (not a type writer)
 
+{% raw %}
+
 	Article: Q180414
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/180/Q180414/
 	
 	=============================================================================
 	
+
+{% endraw %}

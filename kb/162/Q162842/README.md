@@ -6,6 +6,8 @@ permalink: /kb/162/Q162842/
 
 ## Q162842: DNS with &quot;WINS Reverse Lookup&quot; Fails with Multiple IP Addresses
 
+{% raw %}
+
 	Article: Q162842
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/162/Q162842/
 	
 	=============================================================================
 	
+
+{% endraw %}

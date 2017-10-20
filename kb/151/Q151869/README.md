@@ -6,6 +6,8 @@ permalink: /kb/151/Q151869/
 
 ## Q151869: PRB: Incorrect Usage of CSingleLock May Lock Up Mutex Object
 
+{% raw %}
+
 	Article: Q151869
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.1
@@ -104,3 +106,5 @@ permalink: /kb/151/Q151869/
 	
 	=============================================================================
 	
+
+{% endraw %}

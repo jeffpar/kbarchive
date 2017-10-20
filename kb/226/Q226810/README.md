@@ -6,6 +6,8 @@ permalink: /kb/226/Q226810/
 
 ## Q226810: Can't Type Backward Slash in Remote Control w/German Keyboard
 
+{% raw %}
+
 	Article: Q226810
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -76,3 +78,5 @@ permalink: /kb/226/Q226810/
 	
 	=============================================================================
 	
+
+{% endraw %}

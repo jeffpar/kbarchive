@@ -6,6 +6,8 @@ permalink: /kb/214/Q214830/
 
 ## Q214830: BUG: Tab Control Initialization Problem with Control Array
 
+{% raw %}
+
 	Article: Q214830
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -167,3 +169,5 @@ permalink: /kb/214/Q214830/
 	
 	=============================================================================
 	
+
+{% endraw %}

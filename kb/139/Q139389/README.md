@@ -6,6 +6,8 @@ permalink: /kb/139/Q139389/
 
 ## Q139389: How to Read OLE Type Library Information in Visual FoxPro
 
+{% raw %}
+
 	Article: Q139389
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/139/Q139389/
 	
 	=============================================================================
 	
+
+{% endraw %}

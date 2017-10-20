@@ -6,6 +6,8 @@ permalink: /kb/120/Q120829/
 
 ## Q120829: XCOPY May Generate Incorrect Error Level
 
+{% raw %}
+
 	Article: Q120829
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/120/Q120829/
 	
 	=============================================================================
 	
+
+{% endraw %}

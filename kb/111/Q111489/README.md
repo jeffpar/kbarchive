@@ -6,6 +6,8 @@ permalink: /kb/111/Q111489/
 
 ## Q111489: Pipe Dream: Tile Prevents Further Play
 
+{% raw %}
+
 	Article: Q111489
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -37,3 +39,5 @@ permalink: /kb/111/Q111489/
 	
 	=============================================================================
 	
+
+{% endraw %}

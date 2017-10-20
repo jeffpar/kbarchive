@@ -6,6 +6,8 @@ permalink: /kb/153/Q153717/
 
 ## Q153717: XCON: Dynamic RAS Connector Not Sending Over NetBeui
 
+{% raw %}
+
 	Article: Q153717
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/153/Q153717/
 	
 	=============================================================================
 	
+
+{% endraw %}

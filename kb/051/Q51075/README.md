@@ -6,6 +6,8 @@ permalink: /kb/051/Q51075/
 
 ## Q51075: QB 4.x Editor Does Not Flag VARPTR&#36; Error, but BC.EXE Does
 
+{% raw %}
+
 	Article: Q51075
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -41,3 +43,5 @@ permalink: /kb/051/Q51075/
 	     a(1).a = 10
 	     PRINT VARPTR$(a(1).a)
 	     END
+
+{% endraw %}

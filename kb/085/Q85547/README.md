@@ -6,6 +6,8 @@ permalink: /kb/085/Q85547/
 
 ## Q85547: Windows 3.1 Hangs when IBM BASIC is Run in Enhanced Mode
 
+{% raw %}
+
 	Article: Q85547
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/085/Q85547/
 	
 	=============================================================================
 	
+
+{% endraw %}

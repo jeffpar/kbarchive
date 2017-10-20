@@ -6,6 +6,8 @@ permalink: /kb/166/Q166192/
 
 ## Q166192: Kids Plus!: Protect It! Err Msg: A Fatal Exception Has Occurred
 
+{% raw %}
+
 	Article: Q166192
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/166/Q166192/
 	
 	=============================================================================
 	
+
+{% endraw %}

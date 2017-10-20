@@ -6,6 +6,8 @@ permalink: /kb/117/Q117714/
 
 ## Q117714: Windows NT Reboots Constantly w/ AMI BIOS
 
+{% raw %}
+
 	Article: Q117714
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -52,3 +54,5 @@ permalink: /kb/117/Q117714/
 	
 	=============================================================================
 	
+
+{% endraw %}

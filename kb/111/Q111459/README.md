@@ -6,6 +6,8 @@ permalink: /kb/111/Q111459/
 
 ## Q111459: CONFIG and AUTOEXEC on Compressed and Host Drive Do Not Match
 
+{% raw %}
+
 	Article: Q111459
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -111,3 +113,5 @@ permalink: /kb/111/Q111459/
 	
 	=============================================================================
 	
+
+{% endraw %}

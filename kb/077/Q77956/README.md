@@ -6,6 +6,8 @@ permalink: /kb/077/Q77956/
 
 ## Q77956: PC DOS: Logging Options Inoperative in Operator and Monitor
 
+{% raw %}
+
 	Article: Q77956
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0
@@ -38,3 +40,5 @@ permalink: /kb/077/Q77956/
 	
 	=============================================================================
 	
+
+{% endraw %}

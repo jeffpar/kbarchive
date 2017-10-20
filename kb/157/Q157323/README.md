@@ -6,6 +6,8 @@ permalink: /kb/157/Q157323/
 
 ## Q157323: XCON: Identifying and/or Reconstructing a Connector Queue
 
+{% raw %}
+
 	Article: Q157323
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -200,3 +202,5 @@ permalink: /kb/157/Q157323/
 	
 	=============================================================================
 	
+
+{% endraw %}

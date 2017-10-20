@@ -6,6 +6,8 @@ permalink: /kb/082/Q82593/
 
 ## Q82593: Legacy 1.1 Hangs when Installed from File Manager
 
+{% raw %}
+
 	Article: Q82593
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/082/Q82593/
 	
 	=============================================================================
 	
+
+{% endraw %}

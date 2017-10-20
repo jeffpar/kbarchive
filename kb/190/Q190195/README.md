@@ -6,6 +6,8 @@ permalink: /kb/190/Q190195/
 
 ## Q190195: HOWTO: Extract Information from Excel Sheet with DAO
 
+{% raw %}
+
 	Article: Q190195
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0; winnt:
@@ -168,3 +170,5 @@ permalink: /kb/190/Q190195/
 	
 	=============================================================================
 	
+
+{% endraw %}

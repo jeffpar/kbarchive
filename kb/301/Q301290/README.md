@@ -6,6 +6,8 @@ permalink: /kb/301/Q301290/
 
 ## Q301290: FP: From Address Not Same as Reply-To in Results Sent to E-mail
 
+{% raw %}
+
 	Article: Q301290
 	Product(s): Word Front Page
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/301/Q301290/
 	
 	=============================================================================
 	
+
+{% endraw %}

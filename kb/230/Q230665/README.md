@@ -6,6 +6,8 @@ permalink: /kb/230/Q230665/
 
 ## Q230665: XADM: Why a DL Cannot Be the Owner of Another DL
 
+{% raw %}
+
 	Article: Q230665
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -95,3 +97,5 @@ permalink: /kb/230/Q230665/
 	
 	=============================================================================
 	
+
+{% endraw %}

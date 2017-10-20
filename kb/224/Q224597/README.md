@@ -6,6 +6,8 @@ permalink: /kb/224/Q224597/
 
 ## Q224597: XCON: SP2 of PROFS Connector Sets Sent Date to Jan 1, 1601
 
+{% raw %}
+
 	Article: Q224597
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -78,3 +80,5 @@ permalink: /kb/224/Q224597/
 	
 	=============================================================================
 	
+
+{% endraw %}

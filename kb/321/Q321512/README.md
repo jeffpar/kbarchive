@@ -6,6 +6,8 @@ permalink: /kb/321/Q321512/
 
 ## Q321512: HOWTO: Call a Visual FoxPro 7.0 Web Service from ASP
 
+{% raw %}
+
 	Article: Q321512
 	Product(s): Microsoft FoxPro
 	Version(s): 2.0,7.0
@@ -216,3 +218,5 @@ permalink: /kb/321/Q321512/
 	
 	=============================================================================
 	
+
+{% endraw %}

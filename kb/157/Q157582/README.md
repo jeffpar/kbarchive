@@ -6,6 +6,8 @@ permalink: /kb/157/Q157582/
 
 ## Q157582: Soccer: Multiplayer Troubleshooting
 
+{% raw %}
+
 	Article: Q157582
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -109,3 +111,5 @@ permalink: /kb/157/Q157582/
 	
 	=============================================================================
 	
+
+{% endraw %}

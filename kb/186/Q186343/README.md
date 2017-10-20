@@ -6,6 +6,8 @@ permalink: /kb/186/Q186343/
 
 ## Q186343: XCLN: Location of Attachments Shifted When Message Forwarded
 
+{% raw %}
+
 	Article: Q186343
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0; :8.0,8.01,8.02,8.03
@@ -68,3 +70,5 @@ permalink: /kb/186/Q186343/
 	
 	=============================================================================
 	
+
+{% endraw %}

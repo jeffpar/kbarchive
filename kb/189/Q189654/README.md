@@ -6,6 +6,8 @@ permalink: /kb/189/Q189654/
 
 ## Q189654: XWEB: &quot;Failed To Get Inbox&quot; Error May Occur If Name Is Ambiguous
 
+{% raw %}
+
 	Article: Q189654
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -84,3 +86,5 @@ permalink: /kb/189/Q189654/
 	
 	=============================================================================
 	
+
+{% endraw %}

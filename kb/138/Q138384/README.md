@@ -6,6 +6,8 @@ permalink: /kb/138/Q138384/
 
 ## Q138384: &quot;@&quot; Character in Computer Name Causes OLE Error Messages
 
+{% raw %}
+
 	Article: Q138384
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -69,3 +71,5 @@ permalink: /kb/138/Q138384/
 	
 	=============================================================================
 	
+
+{% endraw %}

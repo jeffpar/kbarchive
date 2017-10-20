@@ -6,6 +6,8 @@ permalink: /kb/103/Q103893/
 
 ## Q103893: Encarta MindMaze Err Msg: Invalid Property Value
 
+{% raw %}
+
 	Article: Q103893
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1993 edition,1994 edition
@@ -60,3 +62,5 @@ permalink: /kb/103/Q103893/
 	
 	=============================================================================
 	
+
+{% endraw %}

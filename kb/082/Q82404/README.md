@@ -6,6 +6,8 @@ permalink: /kb/082/Q82404/
 
 ## Q82404: Rumba 3.1.03 FastPath and Windows Screen Saver
 
+{% raw %}
+
 	Article: Q82404
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/082/Q82404/
 	
 	=============================================================================
 	
+
+{% endraw %}

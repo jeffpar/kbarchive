@@ -6,6 +6,8 @@ permalink: /kb/148/Q148383/
 
 ## Q148383: BUG: INTENT(OUT) Allows Subroutine to Use Undefined Argument
 
+{% raw %}
+
 	Article: Q148383
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/148/Q148383/
 	
 	=============================================================================
 	
+
+{% endraw %}

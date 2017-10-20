@@ -6,6 +6,8 @@ permalink: /kb/082/Q82037/
 
 ## Q82037: Cannot Use Permanent Swap File with Squish
 
+{% raw %}
+
 	Article: Q82037
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/082/Q82037/
 	
 	=============================================================================
 	
+
+{% endraw %}

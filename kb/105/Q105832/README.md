@@ -6,6 +6,8 @@ permalink: /kb/105/Q105832/
 
 ## Q105832: 1280x1024 Video Mode Doesn't Work with Number 9 Boards
 
+{% raw %}
+
 	Article: Q105832
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -53,3 +55,5 @@ permalink: /kb/105/Q105832/
 	
 	=============================================================================
 	
+
+{% endraw %}

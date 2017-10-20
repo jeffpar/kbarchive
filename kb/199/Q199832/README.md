@@ -6,6 +6,8 @@ permalink: /kb/199/Q199832/
 
 ## Q199832: XFOR:GWISECAL Doesn't Report Initialization Event During Startup
 
+{% raw %}
+
 	Article: Q199832
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -50,3 +52,5 @@ permalink: /kb/199/Q199832/
 	
 	=============================================================================
 	
+
+{% endraw %}

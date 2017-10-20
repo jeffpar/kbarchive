@@ -6,6 +6,8 @@ permalink: /kb/123/Q123809/
 
 ## Q123809: FIX: Development Environment Doesn't Unload DLL on Termination
 
+{% raw %}
+
 	Article: Q123809
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00
@@ -74,3 +76,5 @@ permalink: /kb/123/Q123809/
 	
 	=============================================================================
 	
+
+{% endraw %}

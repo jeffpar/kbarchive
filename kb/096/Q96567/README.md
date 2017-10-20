@@ -6,6 +6,8 @@ permalink: /kb/096/Q96567/
 
 ## Q96567: Setting Up WFWG on a Novell Workstation Without a Hard Disk
 
+{% raw %}
+
 	Article: Q96567
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -177,3 +179,5 @@ permalink: /kb/096/Q96567/
 	
 	=============================================================================
 	
+
+{% endraw %}

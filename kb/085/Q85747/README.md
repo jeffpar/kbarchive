@@ -6,6 +6,8 @@ permalink: /kb/085/Q85747/
 
 ## Q85747: Using an HP LaserJet III on a LANtastic Network with Windows
 
+{% raw %}
+
 	Article: Q85747
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -65,3 +67,5 @@ permalink: /kb/085/Q85747/
 	
 	=============================================================================
 	
+
+{% endraw %}

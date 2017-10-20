@@ -6,6 +6,8 @@ permalink: /kb/249/Q249611/
 
 ## Q249611: FIX: The HENV Isn't Accessible When You Use MFC ODBC Classes
 
+{% raw %}
+
 	Article: Q249611
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.1,4.2,5.0
@@ -65,3 +67,5 @@ permalink: /kb/249/Q249611/
 	
 	=============================================================================
 	
+
+{% endraw %}

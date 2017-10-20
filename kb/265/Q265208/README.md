@@ -6,6 +6,8 @@ permalink: /kb/265/Q265208/
 
 ## Q265208: Determining LU Pool Usage Across Servers
 
+{% raw %}
+
 	Article: Q265208
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3; :
@@ -90,3 +92,5 @@ permalink: /kb/265/Q265208/
 	
 	=============================================================================
 	
+
+{% endraw %}

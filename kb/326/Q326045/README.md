@@ -6,6 +6,8 @@ permalink: /kb/326/Q326045/
 
 ## Q326045: SMS: Distribution Mgr. Does Not Correctly Discover Package Size
 
+{% raw %}
+
 	Article: Q326045
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP3,2.0 SP4
@@ -66,3 +68,5 @@ permalink: /kb/326/Q326045/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129473/
 
 ## Q129473: 500 Nations: Copy Picture Not Working in Picture Gallery
 
+{% raw %}
+
 	Article: Q129473
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/129/Q129473/
 	
 	=============================================================================
 	
+
+{% endraw %}

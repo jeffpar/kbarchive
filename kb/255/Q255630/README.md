@@ -6,6 +6,8 @@ permalink: /kb/255/Q255630/
 
 ## Q255630: BUG: Using Friend Function w/ Implements Does Not Work in P-Code
 
+{% raw %}
+
 	Article: Q255630
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -160,3 +162,5 @@ permalink: /kb/255/Q255630/
 	
 	=============================================================================
 	
+
+{% endraw %}

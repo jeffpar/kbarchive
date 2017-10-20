@@ -6,6 +6,8 @@ permalink: /kb/162/Q162392/
 
 ## Q162392: XCLN: Exchange Server Service Not Available in Outlook
 
+{% raw %}
+
 	Article: Q162392
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/162/Q162392/
 	
 	=============================================================================
 	
+
+{% endraw %}

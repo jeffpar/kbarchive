@@ -6,6 +6,8 @@ permalink: /kb/281/Q281792/
 
 ## Q281792: Casino: Dice, Cards, Wheels, and Slot Animations Do Not Appear
 
+{% raw %}
+
 	Article: Q281792
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/281/Q281792/
 	
 	=============================================================================
 	
+
+{% endraw %}

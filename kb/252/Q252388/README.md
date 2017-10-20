@@ -6,6 +6,8 @@ permalink: /kb/252/Q252388/
 
 ## Q252388: How to Add a Default Printer for All New Users
 
+{% raw %}
+
 	Article: Q252388
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -173,3 +175,5 @@ permalink: /kb/252/Q252388/
 	
 	=============================================================================
 	
+
+{% endraw %}

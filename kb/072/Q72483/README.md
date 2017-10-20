@@ -6,6 +6,8 @@ permalink: /kb/072/Q72483/
 
 ## Q72483: QuickHelp Categories Menu May Be Shorter with MASM 6.0
 
+{% raw %}
+
 	Article: Q72483
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -44,3 +46,5 @@ permalink: /kb/072/Q72483/
 	
 	=============================================================================
 	
+
+{% endraw %}

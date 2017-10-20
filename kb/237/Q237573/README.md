@@ -6,6 +6,8 @@ permalink: /kb/237/Q237573/
 
 ## Q237573: SSO May Not Work After User Changes Windows NT Password
 
+{% raw %}
+
 	Article: Q237573
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
@@ -108,3 +110,5 @@ permalink: /kb/237/Q237573/
 	
 	=============================================================================
 	
+
+{% endraw %}

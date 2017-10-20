@@ -6,6 +6,8 @@ permalink: /kb/273/Q273346/
 
 ## Q273346: How to add, change, and delete contact records in MSN Companion
 
+{% raw %}
+
 	Article: Q273346
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/273/Q273346/
 	
 	=============================================================================
 	
+
+{% endraw %}

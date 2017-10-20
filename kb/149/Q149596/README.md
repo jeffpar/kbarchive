@@ -6,6 +6,8 @@ permalink: /kb/149/Q149596/
 
 ## Q149596: XCLN: Configuring Mac Client for TCP/IP
 
+{% raw %}
+
 	Article: Q149596
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -115,3 +117,5 @@ permalink: /kb/149/Q149596/
 	
 	=============================================================================
 	
+
+{% endraw %}

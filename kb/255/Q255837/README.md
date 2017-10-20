@@ -6,6 +6,8 @@ permalink: /kb/255/Q255837/
 
 ## Q255837: SMS: Uninstalling Software Inventory Agent Leaves Registry Key
 
+{% raw %}
+
 	Article: Q255837
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -65,3 +67,5 @@ permalink: /kb/255/Q255837/
 	
 	=============================================================================
 	
+
+{% endraw %}

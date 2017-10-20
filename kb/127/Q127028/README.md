@@ -6,6 +6,8 @@ permalink: /kb/127/Q127028/
 
 ## Q127028: How to Bind Data Controls Across Multiple Forms in VB 4.0
 
+{% raw %}
+
 	Article: Q127028
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/127/Q127028/
 	
 	=============================================================================
 	
+
+{% endraw %}

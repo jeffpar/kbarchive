@@ -6,6 +6,8 @@ permalink: /kb/147/Q147874/
 
 ## Q147874: Slow Performance Across Token Ring Source Routers with NetBEUI
 
+{% raw %}
+
 	Article: Q147874
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -63,3 +65,5 @@ permalink: /kb/147/Q147874/
 	
 	=============================================================================
 	
+
+{% endraw %}

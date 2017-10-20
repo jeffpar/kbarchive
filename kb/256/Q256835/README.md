@@ -6,6 +6,8 @@ permalink: /kb/256/Q256835/
 
 ## Q256835: MapPoint 2001: Finish Button Is Unvailable When You Import Data
 
+{% raw %}
+
 	Article: Q256835
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/256/Q256835/
 	
 	=============================================================================
 	
+
+{% endraw %}

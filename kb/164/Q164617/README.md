@@ -6,6 +6,8 @@ permalink: /kb/164/Q164617/
 
 ## Q164617: WD97: Inserted Table Automatically Formatted with Grid Border
 
+{% raw %}
+
 	Article: Q164617
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -107,3 +109,5 @@ permalink: /kb/164/Q164617/
 	
 	=============================================================================
 	
+
+{% endraw %}

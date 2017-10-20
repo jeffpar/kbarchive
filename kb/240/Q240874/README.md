@@ -6,6 +6,8 @@ permalink: /kb/240/Q240874/
 
 ## Q240874: XFOR: Connecting GroupWise Systems over Exchange Server
 
+{% raw %}
+
 	Article: Q240874
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -215,3 +217,5 @@ permalink: /kb/240/Q240874/
 	
 	=============================================================================
 	
+
+{% endraw %}

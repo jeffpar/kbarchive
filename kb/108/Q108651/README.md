@@ -6,6 +6,8 @@ permalink: /kb/108/Q108651/
 
 ## Q108651: Flight Simulator: &quot;Disk Error&quot; or &quot;Fatal Error Has Occurred&quot;
 
+{% raw %}
+
 	Article: Q108651
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -95,3 +97,5 @@ permalink: /kb/108/Q108651/
 	
 	=============================================================================
 	
+
+{% endraw %}

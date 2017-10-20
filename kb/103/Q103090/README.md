@@ -6,6 +6,8 @@ permalink: /kb/103/Q103090/
 
 ## Q103090: ERR: &quot;File Does Not Exist&quot; or &quot;Syntax Error&quot; on READ Command
 
+{% raw %}
+
 	Article: Q103090
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -96,3 +98,5 @@ permalink: /kb/103/Q103090/
 	
 	=============================================================================
 	
+
+{% endraw %}

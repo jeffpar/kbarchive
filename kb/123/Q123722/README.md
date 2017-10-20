@@ -6,6 +6,8 @@ permalink: /kb/123/Q123722/
 
 ## Q123722: RUN Command Not Available in FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q123722
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -57,3 +59,5 @@ permalink: /kb/123/Q123722/
 	
 	=============================================================================
 	
+
+{% endraw %}

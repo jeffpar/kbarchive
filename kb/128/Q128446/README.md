@@ -6,6 +6,8 @@ permalink: /kb/128/Q128446/
 
 ## Q128446: Lotus ScreenCam version 1.1 Causes GP Fault in Windows NT
 
+{% raw %}
+
 	Article: Q128446
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/128/Q128446/
 	
 	=============================================================================
 	
+
+{% endraw %}

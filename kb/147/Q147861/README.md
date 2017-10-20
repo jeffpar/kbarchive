@@ -6,6 +6,8 @@ permalink: /kb/147/Q147861/
 
 ## Q147861: MSB Solar: Listing of Files Installed and Modified
 
+{% raw %}
+
 	Article: Q147861
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -201,3 +203,5 @@ permalink: /kb/147/Q147861/
 	
 	=============================================================================
 	
+
+{% endraw %}

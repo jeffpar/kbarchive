@@ -6,6 +6,8 @@ permalink: /kb/141/Q141091/
 
 ## Q141091: BUG: SSCommand Control Generates Application Error
 
+{% raw %}
+
 	Article: Q141091
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -156,3 +158,5 @@ permalink: /kb/141/Q141091/
 	
 	=============================================================================
 	
+
+{% endraw %}

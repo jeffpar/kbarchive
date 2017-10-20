@@ -6,6 +6,8 @@ permalink: /kb/075/Q75633/
 
 ## Q75633: How to Delete PCTRACKR.DEL File
 
+{% raw %}
+
 	Article: Q75633
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -60,3 +62,5 @@ permalink: /kb/075/Q75633/
 	
 	=============================================================================
 	
+
+{% endraw %}

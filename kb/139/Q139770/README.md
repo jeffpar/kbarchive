@@ -6,6 +6,8 @@ permalink: /kb/139/Q139770/
 
 ## Q139770: First Print Job Slower Than Subsequent Print Jobs
 
+{% raw %}
+
 	Article: Q139770
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -42,3 +44,5 @@ permalink: /kb/139/Q139770/
 	
 	=============================================================================
 	
+
+{% endraw %}

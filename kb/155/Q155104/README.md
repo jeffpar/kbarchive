@@ -6,6 +6,8 @@ permalink: /kb/155/Q155104/
 
 ## Q155104: XCON: Event ID 178 Results if Mailbox Has No X.400 Address
 
+{% raw %}
+
 	Article: Q155104
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -80,3 +82,5 @@ permalink: /kb/155/Q155104/
 	
 	=============================================================================
 	
+
+{% endraw %}

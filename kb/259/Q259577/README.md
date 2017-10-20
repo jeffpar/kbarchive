@@ -6,6 +6,8 @@ permalink: /kb/259/Q259577/
 
 ## Q259577: XADM: Exchange Admin Settings Are Windows NT Profile-Specific
 
+{% raw %}
+
 	Article: Q259577
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -94,3 +96,5 @@ permalink: /kb/259/Q259577/
 	
 	=============================================================================
 	
+
+{% endraw %}

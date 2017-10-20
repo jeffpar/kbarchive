@@ -6,6 +6,8 @@ permalink: /kb/152/Q152202/
 
 ## Q152202: Dial-Up Networking Error 87
 
+{% raw %}
+
 	Article: Q152202
 	Product(s): The Microsoft Network
 	Version(s): 2.0,2.5,2.6
@@ -191,3 +193,5 @@ permalink: /kb/152/Q152202/
 	
 	=============================================================================
 	
+
+{% endraw %}

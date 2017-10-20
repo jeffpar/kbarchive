@@ -6,6 +6,8 @@ permalink: /kb/172/Q172138/
 
 ## Q172138: HOW TO: Create a Virtual Directory in IIS
 
+{% raw %}
+
 	Article: Q172138
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -264,3 +266,5 @@ permalink: /kb/172/Q172138/
 	
 	=============================================================================
 	
+
+{% endraw %}

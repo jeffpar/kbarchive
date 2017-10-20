@@ -6,6 +6,8 @@ permalink: /kb/067/Q67759/
 
 ## Q67759: _getpixel() Return Value is Not Changed by _setbkcolor() Call
 
+{% raw %}
+
 	Article: Q67759
 	Product(s): See article
 	Version(s): 5.10 6.00 6.00a
@@ -49,3 +51,5 @@ permalink: /kb/067/Q67759/
 	   printf("Before _setbkcolor - %d\n",result1);
 	   printf("After _setbkcolor  - %d\n",result2);
 	}
+
+{% endraw %}

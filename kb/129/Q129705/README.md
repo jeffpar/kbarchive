@@ -6,6 +6,8 @@ permalink: /kb/129/Q129705/
 
 ## Q129705: How DBCS Characters Are Used Depends on the Operating System
 
+{% raw %}
+
 	Article: Q129705
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -63,3 +65,5 @@ permalink: /kb/129/Q129705/
 	
 	=============================================================================
 	
+
+{% endraw %}

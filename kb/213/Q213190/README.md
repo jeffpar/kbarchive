@@ -6,6 +6,8 @@ permalink: /kb/213/Q213190/
 
 ## Q213190: SMS: Can't Register Apps with No Extension in Original Name Mode
 
+{% raw %}
+
 	Article: Q213190
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -45,3 +47,5 @@ permalink: /kb/213/Q213190/
 	
 	=============================================================================
 	
+
+{% endraw %}

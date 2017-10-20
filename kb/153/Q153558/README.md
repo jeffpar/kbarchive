@@ -6,6 +6,8 @@ permalink: /kb/153/Q153558/
 
 ## Q153558: Running Deinstall.cmd on an OS/2 Client Does Not Remove SMS
 
+{% raw %}
+
 	Article: Q153558
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -54,3 +56,5 @@ permalink: /kb/153/Q153558/
 	
 	=============================================================================
 	
+
+{% endraw %}

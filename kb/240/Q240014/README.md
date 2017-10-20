@@ -6,6 +6,8 @@ permalink: /kb/240/Q240014/
 
 ## Q240014: FIX: Listing Sort Function Removes Elements
 
+{% raw %}
+
 	Article: Q240014
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -109,3 +111,5 @@ permalink: /kb/240/Q240014/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234271/
 
 ## Q234271: INFO: Installing a VeriSign SGC Certificate on IIS 4.0
 
+{% raw %}
+
 	Article: Q234271
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -137,3 +139,5 @@ permalink: /kb/234/Q234271/
 	
 	=============================================================================
 	
+
+{% endraw %}

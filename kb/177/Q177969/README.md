@@ -6,6 +6,8 @@ permalink: /kb/177/Q177969/
 
 ## Q177969: XADM: Self Registration of Scripto.dll Failed
 
+{% raw %}
+
 	Article: Q177969
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -62,3 +64,5 @@ permalink: /kb/177/Q177969/
 	
 	=============================================================================
 	
+
+{% endraw %}

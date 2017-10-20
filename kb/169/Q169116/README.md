@@ -6,6 +6,8 @@ permalink: /kb/169/Q169116/
 
 ## Q169116: Troubleshooting TCP/IP CP Error 2 ERROR_FILE_NOT_FOUND
 
+{% raw %}
+
 	Article: Q169116
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -104,3 +106,5 @@ permalink: /kb/169/Q169116/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112737/
 
 ## Q112737: NET START SERVER Err Msg: Cannot Share (Error 2119)
 
+{% raw %}
+
 	Article: Q112737
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -56,3 +58,5 @@ permalink: /kb/112/Q112737/
 	
 	=============================================================================
 	
+
+{% endraw %}

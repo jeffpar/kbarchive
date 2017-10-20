@@ -6,6 +6,8 @@ permalink: /kb/102/Q102113/
 
 ## Q102113: FIX: &quot;Out of Virtual Memory&quot; Message may be Caused by chdir()
 
+{% raw %}
+
 	Article: Q102113
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00 2.00
@@ -59,3 +61,5 @@ permalink: /kb/102/Q102113/
 	
 	=============================================================================
 	
+
+{% endraw %}

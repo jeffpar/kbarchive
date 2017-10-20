@@ -6,6 +6,8 @@ permalink: /kb/061/Q61316/
 
 ## Q61316: C 6.00 Installation Defaults to x87 Libraries Under OS/2 2.00
 
+{% raw %}
+
 	Article: Q61316
 	Product(s): See article
 	Version(s): 6.00    | 6.00
@@ -21,3 +23,5 @@ permalink: /kb/061/Q61316/
 	coprocessor libraries will be installed by default. If these are not
 	wanted or other libraries are to be installed, be sure to choose the
 	Setup options appropriately.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190470/
 
 ## Q190470: How to Properly Install Outlook 98 in an SBS Environment
 
+{% raw %}
+
 	Article: Q190470
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0, 98
@@ -159,3 +161,5 @@ permalink: /kb/190/Q190470/
 	
 	=============================================================================
 	
+
+{% endraw %}

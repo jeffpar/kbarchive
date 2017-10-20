@@ -6,6 +6,8 @@ permalink: /kb/090/Q90253/
 
 ## Q90253: NetWare Tools Installs and WFWG Stops Working
 
+{% raw %}
+
 	Article: Q90253
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -66,3 +68,5 @@ permalink: /kb/090/Q90253/
 	
 	=============================================================================
 	
+
+{% endraw %}

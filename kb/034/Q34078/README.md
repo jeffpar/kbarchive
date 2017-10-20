@@ -6,6 +6,8 @@ permalink: /kb/034/Q34078/
 
 ## Q34078: &quot;Internal Error&quot; Using Fixed String in First TYPE Element
 
+{% raw %}
+
 	Article: Q34078
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -46,3 +48,5 @@ permalink: /kb/034/Q34078/
 	        s.b =64
 	        s.c = s.b
 	     End sub
+
+{% endraw %}

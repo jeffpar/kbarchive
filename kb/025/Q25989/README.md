@@ -6,6 +6,8 @@ permalink: /kb/025/Q25989/
 
 ## Q25989: DATE&#36;, TIME&#36; in Loop Can Push System Time Backwards in DOS 3.x
 
+{% raw %}
+
 	Article: Q25989
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -34,3 +36,5 @@ permalink: /kb/025/Q25989/
 	words:
 	
 	   _DOS_SETDATE and CLOCK and TIME and C
+
+{% endraw %}

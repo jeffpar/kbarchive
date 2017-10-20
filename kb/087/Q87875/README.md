@@ -6,6 +6,8 @@ permalink: /kb/087/Q87875/
 
 ## Q87875: Bookshelf: Word Integration Tools Not Installed
 
+{% raw %}
+
 	Article: Q87875
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 edition,1993 edition
@@ -46,3 +48,5 @@ permalink: /kb/087/Q87875/
 	
 	=============================================================================
 	
+
+{% endraw %}

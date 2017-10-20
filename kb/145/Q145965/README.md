@@ -6,6 +6,8 @@ permalink: /kb/145/Q145965/
 
 ## Q145965: XCLN: Remote Mail 3.x Client Uses All Processor Time
 
+{% raw %}
+
 	Article: Q145965
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -39,3 +41,5 @@ permalink: /kb/145/Q145965/
 	
 	=============================================================================
 	
+
+{% endraw %}

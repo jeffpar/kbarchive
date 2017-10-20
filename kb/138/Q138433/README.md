@@ -6,6 +6,8 @@ permalink: /kb/138/Q138433/
 
 ## Q138433: PRB: Unable to Open &lt;path Name&gt; When Running Analyze
 
+{% raw %}
+
 	Article: Q138433
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.10 | 3.10 | 3.10
@@ -78,3 +80,5 @@ permalink: /kb/138/Q138433/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/213/Q213063/
 
 ## Q213063: SMS: NW_Logon_Server_Manager Is Unable to Connect
 
+{% raw %}
+
 	Article: Q213063
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -77,3 +79,5 @@ permalink: /kb/213/Q213063/
 	
 	=============================================================================
 	
+
+{% endraw %}

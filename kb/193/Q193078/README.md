@@ -6,6 +6,8 @@ permalink: /kb/193/Q193078/
 
 ## Q193078: BUG: Scrollable Form Displays Improperly on Resize or Scroll
 
+{% raw %}
+
 	Article: Q193078
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -166,3 +168,5 @@ permalink: /kb/193/Q193078/
 	
 	=============================================================================
 	
+
+{% endraw %}

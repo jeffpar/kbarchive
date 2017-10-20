@@ -6,6 +6,8 @@ permalink: /kb/280/Q280325/
 
 ## Q280325: XCON: Text Wraps Unexpectedly in P772 Message
 
+{% raw %}
+
 	Article: Q280325
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -118,3 +120,5 @@ permalink: /kb/280/Q280325/
 	
 	=============================================================================
 	
+
+{% endraw %}

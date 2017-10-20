@@ -6,6 +6,8 @@ permalink: /kb/142/Q142426/
 
 ## Q142426: MSN Icon Not Removed from Desktop When MSN Is Removed
 
+{% raw %}
+
 	Article: Q142426
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -40,3 +42,5 @@ permalink: /kb/142/Q142426/
 	
 	=============================================================================
 	
+
+{% endraw %}

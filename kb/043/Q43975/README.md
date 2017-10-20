@@ -6,6 +6,8 @@ permalink: /kb/043/Q43975/
 
 ## Q43975: QuickC: Increasing Maximum Number of Open Files and Streams
 
+{% raw %}
+
 	Article: Q43975
 	Product(s): See article
 	Version(s): 2.00
@@ -119,3 +121,5 @@ permalink: /kb/043/Q43975/
 	
 	    fputs( "All done!\n", stdout );
 	}
+
+{% endraw %}

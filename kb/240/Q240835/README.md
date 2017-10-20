@@ -6,6 +6,8 @@ permalink: /kb/240/Q240835/
 
 ## Q240835: Office 2000 Installation May Require Windows 2000 CD-ROM
 
+{% raw %}
+
 	Article: Q240835
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000
@@ -93,3 +95,5 @@ permalink: /kb/240/Q240835/
 	
 	=============================================================================
 	
+
+{% endraw %}

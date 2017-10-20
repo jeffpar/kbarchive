@@ -6,6 +6,8 @@ permalink: /kb/085/Q85283/
 
 ## Q85283: Application Shows Microsoft Foundation Classes
 
+{% raw %}
+
 	Article: Q85283
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -77,3 +79,5 @@ permalink: /kb/085/Q85283/
 	
 	=============================================================================
 	
+
+{% endraw %}

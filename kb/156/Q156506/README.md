@@ -6,6 +6,8 @@ permalink: /kb/156/Q156506/
 
 ## Q156506: PRB: ADD OBJECT Syntax Error from Browser Code Snippet
 
+{% raw %}
+
 	Article: Q156506
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -160,3 +162,5 @@ permalink: /kb/156/Q156506/
 	
 	=============================================================================
 	
+
+{% endraw %}

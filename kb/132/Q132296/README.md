@@ -6,6 +6,8 @@ permalink: /kb/132/Q132296/
 
 ## Q132296: DOC: Bad Reference to Style Property with Command Button
 
+{% raw %}
+
 	Article: Q132296
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/132/Q132296/
 	
 	=============================================================================
 	
+
+{% endraw %}

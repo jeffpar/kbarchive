@@ -6,6 +6,8 @@ permalink: /kb/189/Q189722/
 
 ## Q189722: BUG: Form Ignores the Height Change of a Form Template
 
+{% raw %}
+
 	Article: Q189722
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -73,3 +75,5 @@ permalink: /kb/189/Q189722/
 	
 	=============================================================================
 	
+
+{% endraw %}

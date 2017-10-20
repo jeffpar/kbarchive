@@ -6,6 +6,8 @@ permalink: /kb/150/Q150656/
 
 ## Q150656: Mastering Visual C++ 4: Contents of README.TXT
 
+{% raw %}
+
 	Article: Q150656
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -46,3 +48,5 @@ permalink: /kb/150/Q150656/
 	
 	=============================================================================
 	
+
+{% endraw %}

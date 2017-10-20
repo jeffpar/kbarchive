@@ -6,6 +6,8 @@ permalink: /kb/139/Q139932/
 
 ## Q139932: Server Service Does Not Register Properly with WINS
 
+{% raw %}
+
 	Article: Q139932
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -51,3 +53,5 @@ permalink: /kb/139/Q139932/
 	
 	=============================================================================
 	
+
+{% endraw %}

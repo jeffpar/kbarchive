@@ -6,6 +6,8 @@ permalink: /kb/255/Q255538/
 
 ## Q255538: Code 19008 (DS_RC_BUFFER_TOO_SMALL) When You Run a Join Search
 
+{% raw %}
+
 	Article: Q255538
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -67,3 +69,5 @@ permalink: /kb/255/Q255538/
 	
 	=============================================================================
 	
+
+{% endraw %}

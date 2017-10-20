@@ -6,6 +6,8 @@ permalink: /kb/300/Q300065/
 
 ## Q300065: Tips That Help Keep Passport User Data Safe
 
+{% raw %}
+
 	Article: Q300065
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -62,3 +64,5 @@ permalink: /kb/300/Q300065/
 	
 	=============================================================================
 	
+
+{% endraw %}

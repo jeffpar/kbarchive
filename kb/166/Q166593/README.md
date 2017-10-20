@@ -6,6 +6,8 @@ permalink: /kb/166/Q166593/
 
 ## Q166593: XFOR: MSMail Migration Wizard Stops in Progress
 
+{% raw %}
+
 	Article: Q166593
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -44,3 +46,5 @@ permalink: /kb/166/Q166593/
 	
 	=============================================================================
 	
+
+{% endraw %}

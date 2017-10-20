@@ -6,6 +6,8 @@ permalink: /kb/085/Q85107/
 
 ## Q85107: Tektronix PostScript Printer Driver Does Not Support TrueType
 
+{% raw %}
+
 	Article: Q85107
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/085/Q85107/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/214/Q214609/
 
 ## Q214609: Routemon.exe Does Not Properly Set the Metric Option
 
+{% raw %}
+
 	Article: Q214609
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/214/Q214609/
 	
 	=============================================================================
 	
+
+{% endraw %}

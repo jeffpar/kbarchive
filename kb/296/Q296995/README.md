@@ -6,6 +6,8 @@ permalink: /kb/296/Q296995/
 
 ## Q296995: Find Printer Search Does Not Work on a Windows NT 4.0 Client
 
+{% raw %}
+
 	Article: Q296995
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -94,3 +96,5 @@ permalink: /kb/296/Q296995/
 	
 	=============================================================================
 	
+
+{% endraw %}

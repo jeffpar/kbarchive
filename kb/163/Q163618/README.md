@@ -6,6 +6,8 @@ permalink: /kb/163/Q163618/
 
 ## Q163618: WD97: Writing Macro Code for VBA and WordBasic Branching
 
+{% raw %}
+
 	Article: Q163618
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -151,3 +153,5 @@ permalink: /kb/163/Q163618/
 	
 	=============================================================================
 	
+
+{% endraw %}

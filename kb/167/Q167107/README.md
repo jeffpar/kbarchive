@@ -6,6 +6,8 @@ permalink: /kb/167/Q167107/
 
 ## Q167107: FIX: Missing Controls on the SSTAB Control Tabs
 
+{% raw %}
+
 	Article: Q167107
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0 5.0
@@ -192,3 +194,5 @@ permalink: /kb/167/Q167107/
 	
 	=============================================================================
 	
+
+{% endraw %}

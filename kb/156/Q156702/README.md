@@ -6,6 +6,8 @@ permalink: /kb/156/Q156702/
 
 ## Q156702: Windows NT 4 &quot;Browse Folders Using a Separate Window&quot; Option
 
+{% raw %}
+
 	Article: Q156702
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/156/Q156702/
 	
 	=============================================================================
 	
+
+{% endraw %}

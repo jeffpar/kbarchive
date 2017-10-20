@@ -6,6 +6,8 @@ permalink: /kb/124/Q124211/
 
 ## Q124211: Using IBM PC/3270 Version 4.0 on SNA Server
 
+{% raw %}
+
 	Article: Q124211
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -67,3 +69,5 @@ permalink: /kb/124/Q124211/
 	
 	=============================================================================
 	
+
+{% endraw %}

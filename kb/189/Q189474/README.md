@@ -6,6 +6,8 @@ permalink: /kb/189/Q189474/
 
 ## Q189474: Mngcli Traps When Opening a Subdomain &#92;&#92;XXX&#92;
 
+{% raw %}
+
 	Article: Q189474
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -99,3 +101,5 @@ permalink: /kb/189/Q189474/
 	
 	=============================================================================
 	
+
+{% endraw %}

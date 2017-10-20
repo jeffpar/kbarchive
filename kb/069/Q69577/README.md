@@ -6,6 +6,8 @@ permalink: /kb/069/Q69577/
 
 ## Q69577: FORMAT and 8-Sector Disks in MS-DOS
 
+{% raw %}
+
 	Article: Q69577
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
@@ -70,3 +72,5 @@ permalink: /kb/069/Q69577/
 	
 	=============================================================================
 	
+
+{% endraw %}

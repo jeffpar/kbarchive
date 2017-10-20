@@ -6,6 +6,8 @@ permalink: /kb/142/Q142407/
 
 ## Q142407: Using the CompuServe Address Book in Microsoft Exchange
 
+{% raw %}
+
 	Article: Q142407
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -98,3 +100,5 @@ permalink: /kb/142/Q142407/
 	
 	=============================================================================
 	
+
+{% endraw %}

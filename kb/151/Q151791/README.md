@@ -6,6 +6,8 @@ permalink: /kb/151/Q151791/
 
 ## Q151791: XFOR: MSMI Stops Processing When Submitting Bad Address
 
+{% raw %}
+
 	Article: Q151791
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -102,3 +104,5 @@ permalink: /kb/151/Q151791/
 	
 	=============================================================================
 	
+
+{% endraw %}

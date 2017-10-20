@@ -6,6 +6,8 @@ permalink: /kb/135/Q135219/
 
 ## Q135219: Left-Handed Mouse Does Not Work in Full-Screen MS-DOS Programs
 
+{% raw %}
+
 	Article: Q135219
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -48,3 +50,5 @@ permalink: /kb/135/Q135219/
 	
 	=============================================================================
 	
+
+{% endraw %}

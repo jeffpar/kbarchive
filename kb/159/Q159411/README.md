@@ -6,6 +6,8 @@ permalink: /kb/159/Q159411/
 
 ## Q159411: PRB: &quot;Invalid Line in Setup Information File&quot; Error Message
 
+{% raw %}
+
 	Article: Q159411
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -157,3 +159,5 @@ permalink: /kb/159/Q159411/
 	
 	=============================================================================
 	
+
+{% endraw %}

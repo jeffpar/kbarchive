@@ -6,6 +6,8 @@ permalink: /kb/182/Q182276/
 
 ## Q182276: XFOR: Incorrect Envelope Information When Meeting Request Is For
 
+{% raw %}
+
 	Article: Q182276
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/182/Q182276/
 	
 	=============================================================================
 	
+
+{% endraw %}

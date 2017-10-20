@@ -6,6 +6,8 @@ permalink: /kb/193/Q193728/
 
 ## Q193728: PRB: SET COLLATE TO Command Causes Inconsistent Comparisons
 
+{% raw %}
+
 	Article: Q193728
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -173,3 +175,5 @@ permalink: /kb/193/Q193728/
 	
 	=============================================================================
 	
+
+{% endraw %}

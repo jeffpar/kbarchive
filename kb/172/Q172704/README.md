@@ -6,6 +6,8 @@ permalink: /kb/172/Q172704/
 
 ## Q172704: WD97: Company Name Not Added to Header w/ Letter Wizard
 
+{% raw %}
+
 	Article: Q172704
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/172/Q172704/
 	
 	=============================================================================
 	
+
+{% endraw %}

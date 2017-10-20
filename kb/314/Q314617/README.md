@@ -6,6 +6,8 @@ permalink: /kb/314/Q314617/
 
 ## Q314617: Bicycle Card Games: First Score Remains After Second Game Starts
 
+{% raw %}
+
 	Article: Q314617
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/314/Q314617/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119449/
 
 ## Q119449: PC DirSync: Description of RESYNC.GLB
 
+{% raw %}
+
 	Article: Q119449
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -94,3 +96,5 @@ permalink: /kb/119/Q119449/
 	
 	=============================================================================
 	
+
+{% endraw %}

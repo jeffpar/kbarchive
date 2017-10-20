@@ -6,6 +6,8 @@ permalink: /kb/095/Q95111/
 
 ## Q95111: Aldus Network Setup Program May Not Operate with WFWG
 
+{% raw %}
+
 	Article: Q95111
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/095/Q95111/
 	
 	=============================================================================
 	
+
+{% endraw %}

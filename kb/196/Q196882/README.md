@@ -6,6 +6,8 @@ permalink: /kb/196/Q196882/
 
 ## Q196882: WD97: Cannot Turn Field Codes On or Off in Protected Document
 
+{% raw %}
+
 	Article: Q196882
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -55,3 +57,5 @@ permalink: /kb/196/Q196882/
 	
 	=============================================================================
 	
+
+{% endraw %}

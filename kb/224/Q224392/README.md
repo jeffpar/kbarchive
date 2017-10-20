@@ -6,6 +6,8 @@ permalink: /kb/224/Q224392/
 
 ## Q224392: Error Message: The System Call Level Is Not Correct
 
+{% raw %}
+
 	Article: Q224392
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -83,3 +85,5 @@ permalink: /kb/224/Q224392/
 	
 	=============================================================================
 	
+
+{% endraw %}

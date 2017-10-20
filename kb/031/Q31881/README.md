@@ -6,6 +6,8 @@ permalink: /kb/031/Q31881/
 
 ## Q31881: LINK /PAC and /F Options Are Not Supported by BASIC Compiler
 
+{% raw %}
+
 	Article: Q31881
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -34,3 +36,5 @@ permalink: /kb/031/Q31881/
 	6.00 and 6.00b for MS-DOS and MS OS/2, and to Microsoft BASIC
 	Professional Development System (PDS) Version 7.00 for MS-DOS and MS
 	OS/2.
+
+{% endraw %}

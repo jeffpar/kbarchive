@@ -6,6 +6,8 @@ permalink: /kb/185/Q185378/
 
 ## Q185378: IIS 4.0: FTP &quot;Bounce&quot; Attack and CERT Advisory CA-97.27
 
+{% raw %}
+
 	Article: Q185378
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/185/Q185378/
 	
 	=============================================================================
 	
+
+{% endraw %}

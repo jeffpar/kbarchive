@@ -6,6 +6,8 @@ permalink: /kb/120/Q120919/
 
 ## Q120919: Visual C++ Vers 2.0 README.WRI, Part 3 Compiler
 
+{% raw %}
+
 	Article: Q120919
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -129,3 +131,5 @@ permalink: /kb/120/Q120919/
 	
 	=============================================================================
 	
+
+{% endraw %}

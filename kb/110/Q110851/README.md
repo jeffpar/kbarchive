@@ -6,6 +6,8 @@ permalink: /kb/110/Q110851/
 
 ## Q110851: Erratic Mouse with Gateway 2000 P5-60 Computer
 
+{% raw %}
+
 	Article: Q110851
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -55,3 +57,5 @@ permalink: /kb/110/Q110851/
 	
 	=============================================================================
 	
+
+{% endraw %}

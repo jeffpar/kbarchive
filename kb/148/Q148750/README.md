@@ -6,6 +6,8 @@ permalink: /kb/148/Q148750/
 
 ## Q148750: CGI Scripts Compiled w/16-bit C Compilers Fail to Run on IIS
 
+{% raw %}
+
 	Article: Q148750
 	Product(s): Internet Information Server
 	Version(s): 1.0 3.51
@@ -69,3 +71,5 @@ permalink: /kb/148/Q148750/
 	
 	=============================================================================
 	
+
+{% endraw %}

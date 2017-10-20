@@ -6,6 +6,8 @@ permalink: /kb/163/Q163523/
 
 ## Q163523: AFTP Server Stops Accepting Connections Under Stress
 
+{% raw %}
+
 	Article: Q163523
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -51,3 +53,5 @@ permalink: /kb/163/Q163523/
 	
 	=============================================================================
 	
+
+{% endraw %}

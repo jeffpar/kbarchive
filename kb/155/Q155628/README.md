@@ -6,6 +6,8 @@ permalink: /kb/155/Q155628/
 
 ## Q155628: PRB: &quot;Save As&quot; Does Not Save a Stored Procedure on the Server
 
+{% raw %}
+
 	Article: Q155628
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,4.2b,5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/155/Q155628/
 	
 	=============================================================================
 	
+
+{% endraw %}

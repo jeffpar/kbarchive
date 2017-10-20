@@ -6,6 +6,8 @@ permalink: /kb/129/Q129763/
 
 ## Q129763: Cannot Select 32-Bit Program Area with Intel ProShare 1.8
 
+{% raw %}
+
 	Article: Q129763
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/129/Q129763/
 	
 	=============================================================================
 	
+
+{% endraw %}

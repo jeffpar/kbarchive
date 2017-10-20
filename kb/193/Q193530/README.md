@@ -6,6 +6,8 @@ permalink: /kb/193/Q193530/
 
 ## Q193530: Access Violation in WINSCL When Using CR or SDB Parameter
 
+{% raw %}
+
 	Article: Q193530
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/193/Q193530/
 	
 	=============================================================================
 	
+
+{% endraw %}

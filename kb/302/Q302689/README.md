@@ -6,6 +6,8 @@ permalink: /kb/302/Q302689/
 
 ## Q302689: PRB: Webfolders Does Not Work if Content (UNC) Stored On Novell
 
+{% raw %}
+
 	Article: Q302689
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -55,3 +57,5 @@ permalink: /kb/302/Q302689/
 	
 	=============================================================================
 	
+
+{% endraw %}

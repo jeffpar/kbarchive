@@ -6,6 +6,8 @@ permalink: /kb/190/Q190078/
 
 ## Q190078: BUG: Error &quot;&#91;&#91;BadImplementsRefInCompatLib&#93;&#93;&quot; When You Recompile
 
+{% raw %}
+
 	Article: Q190078
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -126,3 +128,5 @@ permalink: /kb/190/Q190078/
 	
 	=============================================================================
 	
+
+{% endraw %}

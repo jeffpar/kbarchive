@@ -6,6 +6,8 @@ permalink: /kb/131/Q131068/
 
 ## Q131068: SNA Server Does Not Resource Locate to Active APPC Connection
 
+{% raw %}
+
 	Article: Q131068
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -76,3 +78,5 @@ permalink: /kb/131/Q131068/
 	
 	=============================================================================
 	
+
+{% endraw %}

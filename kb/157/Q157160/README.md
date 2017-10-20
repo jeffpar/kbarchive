@@ -6,6 +6,8 @@ permalink: /kb/157/Q157160/
 
 ## Q157160: HOWTO: Provide Edit Menu Functions in a Top-Level Form
 
+{% raw %}
+
 	Article: Q157160
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -118,3 +120,5 @@ permalink: /kb/157/Q157160/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259881/
 
 ## Q259881: XADM: EventID 2078 Occurs When Client Has Multiple Transport
 
+{% raw %}
+
 	Article: Q259881
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -149,3 +151,5 @@ permalink: /kb/259/Q259881/
 	
 	=============================================================================
 	
+
+{% endraw %}

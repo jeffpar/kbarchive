@@ -6,6 +6,8 @@ permalink: /kb/167/Q167860/
 
 ## Q167860: FP97: Cannot Choose Collate or Selection in Print Dialog Box
 
+{% raw %}
+
 	Article: Q167860
 	Product(s): Word Front Page
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/167/Q167860/
 	
 	=============================================================================
 	
+
+{% endraw %}

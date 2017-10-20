@@ -6,6 +6,8 @@ permalink: /kb/106/Q106427/
 
 ## Q106427: MS-DOS 6.2x ScanDisk Fails to Correct MDBPB Problem
 
+{% raw %}
+
 	Article: Q106427
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -68,3 +70,5 @@ permalink: /kb/106/Q106427/
 	
 	=============================================================================
 	
+
+{% endraw %}

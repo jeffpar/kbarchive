@@ -6,6 +6,8 @@ permalink: /kb/058/Q58125/
 
 ## Q58125: &quot;Error Loading File (x.QLB)&quot; After QBX /L x; Must Compile /Fs
 
+{% raw %}
+
 	Article: Q58125
 	Product(s): See article
 	Version(s): 7.00
@@ -29,3 +31,5 @@ permalink: /kb/058/Q58125/
 	documented on Page 617 of the "Microsoft BASIC 7.0: Programmer's
 	Guide." For more information on Quick libraries, see Chapter 19,
 	"Creating and Using Quick Libraries."
+
+{% endraw %}

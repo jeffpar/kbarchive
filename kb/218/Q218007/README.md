@@ -6,6 +6,8 @@ permalink: /kb/218/Q218007/
 
 ## Q218007: PRB: IDE May Skip Some TRACE Statements Sent in Quick Succession
 
+{% raw %}
+
 	Article: Q218007
 	Product(s): Microsoft C Compiler
 	Version(s): 2000,5.0sp3,6.0
@@ -122,3 +124,5 @@ permalink: /kb/218/Q218007/
 	
 	=============================================================================
 	
+
+{% endraw %}

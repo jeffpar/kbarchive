@@ -6,6 +6,8 @@ permalink: /kb/163/Q163143/
 
 ## Q163143: STOP: 0x0000001E with Status C000009A
 
+{% raw %}
+
 	Article: Q163143
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/163/Q163143/
 	
 	=============================================================================
 	
+
+{% endraw %}

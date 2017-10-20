@@ -6,6 +6,8 @@ permalink: /kb/166/Q166504/
 
 ## Q166504: PRB: MFC and CRT Must Match in debug/release and static/dynamic
 
+{% raw %}
+
 	Article: Q166504
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -109,3 +111,5 @@ permalink: /kb/166/Q166504/
 	
 	=============================================================================
 	
+
+{% endraw %}

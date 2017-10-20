@@ -6,6 +6,8 @@ permalink: /kb/146/Q146566/
 
 ## Q146566: XCLN: Info Available from the Exchange Offline Address Book
 
+{% raw %}
+
 	Article: Q146566
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -56,3 +58,5 @@ permalink: /kb/146/Q146566/
 	
 	=============================================================================
 	
+
+{% endraw %}

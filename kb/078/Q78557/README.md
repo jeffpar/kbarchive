@@ -6,6 +6,8 @@ permalink: /kb/078/Q78557/
 
 ## Q78557: EMM386 Troubleshooting and Technical Information
 
+{% raw %}
+
 	Article: Q78557
 	Product(s): Microsoft Disk Operating System
 	Version(s): 3.1,3.11,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -261,3 +263,5 @@ permalink: /kb/078/Q78557/
 	
 	=============================================================================
 	
+
+{% endraw %}

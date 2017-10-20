@@ -6,6 +6,8 @@ permalink: /kb/149/Q149342/
 
 ## Q149342: PRB: CListCtrl Inserting Items Slow If in Icon Modes
 
+{% raw %}
+
 	Article: Q149342
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1,2.2,4.0,4.1
@@ -70,3 +72,5 @@ permalink: /kb/149/Q149342/
 	
 	=============================================================================
 	
+
+{% endraw %}

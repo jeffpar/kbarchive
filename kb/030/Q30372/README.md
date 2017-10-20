@@ -6,6 +6,8 @@ permalink: /kb/030/Q30372/
 
 ## Q30372: &quot;Type Mismatch&quot; When &quot;INPUT1&quot; Is Elementname in TYPE Statement
 
+{% raw %}
+
 	Article: Q30372
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -46,3 +48,5 @@ permalink: /kb/030/Q30372/
 	DIM f AS checkout1
 	f.input1 = "abcdef"
 	PRINT f.input1
+
+{% endraw %}

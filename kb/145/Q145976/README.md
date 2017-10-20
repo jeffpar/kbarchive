@@ -6,6 +6,8 @@ permalink: /kb/145/Q145976/
 
 ## Q145976: XCON: GWART Is Incorrect Due to Latency in Directory Replication
 
+{% raw %}
+
 	Article: Q145976
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -63,3 +65,5 @@ permalink: /kb/145/Q145976/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129258/
 
 ## Q129258: Err Msg: The Selected Security Provider Could Not Be Found
 
+{% raw %}
+
 	Article: Q129258
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/129/Q129258/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116434/
 
 ## Q116434: PC Ext: EXTERNAL.INI Equivalents to -Qx Command-Line Options
 
+{% raw %}
+
 	Article: Q116434
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -72,3 +74,5 @@ permalink: /kb/116/Q116434/
 	
 	=============================================================================
 	
+
+{% endraw %}

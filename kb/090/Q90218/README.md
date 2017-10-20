@@ -6,6 +6,8 @@ permalink: /kb/090/Q90218/
 
 ## Q90218: ClipBook Page from Write Loses Formatting and Fonts
 
+{% raw %}
+
 	Article: Q90218
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -61,3 +63,5 @@ permalink: /kb/090/Q90218/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/281/Q281511/
 
 ## Q281511: Sample Files for WinNT 4.0 Option Pack Unattended Installation
 
+{% raw %}
+
 	Article: Q281511
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -375,3 +377,5 @@ permalink: /kb/281/Q281511/
 	
 	=============================================================================
 	
+
+{% endraw %}

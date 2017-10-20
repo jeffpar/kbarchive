@@ -6,6 +6,8 @@ permalink: /kb/085/Q85583/
 
 ## Q85583: No Typeover Feature with Write, Cardfile, Notepad, or Calendar
 
+{% raw %}
+
 	Article: Q85583
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/085/Q85583/
 	
 	=============================================================================
 	
+
+{% endraw %}

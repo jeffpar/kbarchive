@@ -6,6 +6,8 @@ permalink: /kb/236/Q236855/
 
 ## Q236855: Changes to the IWAM Account in IIS 5.0
 
+{% raw %}
+
 	Article: Q236855
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -82,3 +84,5 @@ permalink: /kb/236/Q236855/
 	
 	=============================================================================
 	
+
+{% endraw %}

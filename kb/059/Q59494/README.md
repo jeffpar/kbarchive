@@ -6,6 +6,8 @@ permalink: /kb/059/Q59494/
 
 ## Q59494: Unassigning Help Keystrokes Must Be Done Under
 
+{% raw %}
+
 	Article: Q59494
 	Product(s): See article
 	Version(s): 1.02   | 1.02
@@ -37,3 +39,5 @@ permalink: /kb/059/Q59494/
 	keystroke is ALT+S. You can unassign ALT+S, as well as reassign a
 	different keystroke to "sethelp", but it must be done under the
 	[M-MHELP MEP-MHELP] tag.
+
+{% endraw %}

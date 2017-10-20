@@ -6,6 +6,8 @@ permalink: /kb/153/Q153752/
 
 ## Q153752: Incorrect Output Using HP DesignJet 650c and 750c
 
+{% raw %}
+
 	Article: Q153752
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -70,3 +72,5 @@ permalink: /kb/153/Q153752/
 	
 	=============================================================================
 	
+
+{% endraw %}

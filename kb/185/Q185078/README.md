@@ -6,6 +6,8 @@ permalink: /kb/185/Q185078/
 
 ## Q185078: XADM: Recommendations for Successful Disaster Recovery
 
+{% raw %}
+
 	Article: Q185078
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -213,3 +215,5 @@ permalink: /kb/185/Q185078/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/062/Q62063/
 
 ## Q62063: Mac Hyp: Reading an Enclosed File from a Message
 
+{% raw %}
+
 	Article: Q62063
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -69,3 +71,5 @@ permalink: /kb/062/Q62063/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248610/
 
 ## Q248610: Games Err Msg:&quot;A Required DirectX file was not found&quot;
 
+{% raw %}
+
 	Article: Q248610
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -73,3 +75,5 @@ permalink: /kb/248/Q248610/
 	
 	=============================================================================
 	
+
+{% endraw %}

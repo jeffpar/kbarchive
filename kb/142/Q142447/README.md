@@ -6,6 +6,8 @@ permalink: /kb/142/Q142447/
 
 ## Q142447: INFO: Summary List: Visual C++ Version 4.0 Known Problems
 
+{% raw %}
+
 	Article: Q142447
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.0a
@@ -661,3 +663,5 @@ permalink: /kb/142/Q142447/
 	
 	=============================================================================
 	
+
+{% endraw %}

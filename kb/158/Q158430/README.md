@@ -6,6 +6,8 @@ permalink: /kb/158/Q158430/
 
 ## Q158430: FIX: VSS 4.x Integration with VC 4.x under Windows NT 4.0
 
+{% raw %}
+
 	Article: Q158430
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0 4.0a 4.1 4.2
@@ -62,3 +64,5 @@ permalink: /kb/158/Q158430/
 	
 	=============================================================================
 	
+
+{% endraw %}

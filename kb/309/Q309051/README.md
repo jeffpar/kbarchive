@@ -6,6 +6,8 @@ permalink: /kb/309/Q309051/
 
 ## Q309051: HOW TO: Troubleshoot ASP in IIS 5.0
 
+{% raw %}
+
 	Article: Q309051
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -185,3 +187,5 @@ permalink: /kb/309/Q309051/
 	
 	=============================================================================
 	
+
+{% endraw %}

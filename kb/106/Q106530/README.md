@@ -6,6 +6,8 @@ permalink: /kb/106/Q106530/
 
 ## Q106530: FIX: F4201 on Entry with Attribute &#91;VALUE&#93;
 
+{% raw %}
+
 	Article: Q106530
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a,4.0,4.01,4.1,5.0,5.1
@@ -87,3 +89,5 @@ permalink: /kb/106/Q106530/
 	
 	=============================================================================
 	
+
+{% endraw %}

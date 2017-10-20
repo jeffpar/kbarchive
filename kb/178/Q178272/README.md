@@ -6,6 +6,8 @@ permalink: /kb/178/Q178272/
 
 ## Q178272: RRAS Event ID 20103 When Using Microsoft Proxy Server 1.0
 
+{% raw %}
+
 	Article: Q178272
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -90,3 +92,5 @@ permalink: /kb/178/Q178272/
 	
 	=============================================================================
 	
+
+{% endraw %}

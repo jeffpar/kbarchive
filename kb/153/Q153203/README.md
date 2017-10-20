@@ -6,6 +6,8 @@ permalink: /kb/153/Q153203/
 
 ## Q153203: Err Msg: APPSTART Caused an Error in Act16dll.dll
 
+{% raw %}
+
 	Article: Q153203
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -50,3 +52,5 @@ permalink: /kb/153/Q153203/
 	
 	=============================================================================
 	
+
+{% endraw %}

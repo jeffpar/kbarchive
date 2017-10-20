@@ -6,6 +6,8 @@ permalink: /kb/150/Q150063/
 
 ## Q150063: ADT/ODE: How to Use the Setup Wizard to Join Workgroup
 
+{% raw %}
+
 	Article: Q150063
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -135,3 +137,5 @@ permalink: /kb/150/Q150063/
 	
 	=============================================================================
 	
+
+{% endraw %}

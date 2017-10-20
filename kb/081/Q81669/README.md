@@ -6,6 +6,8 @@ permalink: /kb/081/Q81669/
 
 ## Q81669: Windows Err Msg: Corrupt Swap File Warning...
 
+{% raw %}
+
 	Article: Q81669
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -169,3 +171,5 @@ permalink: /kb/081/Q81669/
 	
 	=============================================================================
 	
+
+{% endraw %}

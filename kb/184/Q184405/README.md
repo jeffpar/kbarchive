@@ -6,6 +6,8 @@ permalink: /kb/184/Q184405/
 
 ## Q184405: FP: Wrapping Text Around an Image in FrontPage Editor
 
+{% raw %}
+
 	Article: Q184405
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/184/Q184405/
 	
 	=============================================================================
 	
+
+{% endraw %}

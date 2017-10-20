@@ -6,6 +6,8 @@ permalink: /kb/074/Q74797/
 
 ## Q74797: FormEdit.exe Implements Sizable Form Fields in Windows
 
+{% raw %}
+
 	Article: Q74797
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -94,3 +96,5 @@ permalink: /kb/074/Q74797/
 	
 	=============================================================================
 	
+
+{% endraw %}

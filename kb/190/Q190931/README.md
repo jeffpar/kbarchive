@@ -6,6 +6,8 @@ permalink: /kb/190/Q190931/
 
 ## Q190931: Snmptrap.exe Ignores SNMP Trap PDU Greater Than 4,096 Bytes
 
+{% raw %}
+
 	Article: Q190931
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/190/Q190931/
 	
 	=============================================================================
 	
+
+{% endraw %}

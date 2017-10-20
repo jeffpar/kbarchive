@@ -6,6 +6,8 @@ permalink: /kb/096/Q96643/
 
 ## Q96643: PC Rmt: 3.0 Modem Scripts Disk &#91;3.5, 5.25&#93;
 
+{% raw %}
+
 	Article: Q96643
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -145,3 +147,5 @@ permalink: /kb/096/Q96643/
 	
 	=============================================================================
 	
+
+{% endraw %}

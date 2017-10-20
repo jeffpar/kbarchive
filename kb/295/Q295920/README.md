@@ -6,6 +6,8 @@ permalink: /kb/295/Q295920/
 
 ## Q295920: WD97: Word Prints More Copies than Value Displayed in Print Box
 
+{% raw %}
+
 	Article: Q295920
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/295/Q295920/
 	
 	=============================================================================
 	
+
+{% endraw %}

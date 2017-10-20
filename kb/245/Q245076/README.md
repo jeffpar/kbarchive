@@ -6,6 +6,8 @@ permalink: /kb/245/Q245076/
 
 ## Q245076: 'Access Denied' in Internet Service Manager Virtual Directory.
 
+{% raw %}
+
 	Article: Q245076
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/245/Q245076/
 	
 	=============================================================================
 	
+
+{% endraw %}

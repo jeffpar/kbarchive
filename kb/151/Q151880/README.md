@@ -6,6 +6,8 @@ permalink: /kb/151/Q151880/
 
 ## Q151880: Using Server-Based User Profiles w/ Citrix Winframe
 
+{% raw %}
+
 	Article: Q151880
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -50,3 +52,5 @@ permalink: /kb/151/Q151880/
 	
 	=============================================================================
 	
+
+{% endraw %}

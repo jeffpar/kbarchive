@@ -6,6 +6,8 @@ permalink: /kb/161/Q161299/
 
 ## Q161299: HOWTO: Capture and Print the Screen, a Form, or Any Window
 
+{% raw %}
+
 	Article: Q161299
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -708,3 +710,5 @@ permalink: /kb/161/Q161299/
 	
 	=============================================================================
 	
+
+{% endraw %}

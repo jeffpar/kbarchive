@@ -6,6 +6,8 @@ permalink: /kb/161/Q161407/
 
 ## Q161407: WD97: VB Macro Examples to Insert Text into a Document
 
+{% raw %}
+
 	Article: Q161407
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -215,3 +217,5 @@ permalink: /kb/161/Q161407/
 	
 	=============================================================================
 	
+
+{% endraw %}

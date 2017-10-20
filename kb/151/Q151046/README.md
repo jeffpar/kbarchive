@@ -6,6 +6,8 @@ permalink: /kb/151/Q151046/
 
 ## Q151046: Errors Opening &quot;PowerPoint Step by Step&quot; Presentations
 
+{% raw %}
+
 	Article: Q151046
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -52,3 +54,5 @@ permalink: /kb/151/Q151046/
 	
 	=============================================================================
 	
+
+{% endraw %}

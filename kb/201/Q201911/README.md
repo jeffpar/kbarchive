@@ -6,6 +6,8 @@ permalink: /kb/201/Q201911/
 
 ## Q201911: BUG: DCOMCNFG Writes Ports Named Value in Incorrect Format
 
+{% raw %}
+
 	Article: Q201911
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/201/Q201911/
 	
 	=============================================================================
 	
+
+{% endraw %}

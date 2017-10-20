@@ -6,6 +6,8 @@ permalink: /kb/061/Q61234/
 
 ## Q61234: C 6.00 README: Getting Help on Files in the Packing List
 
+{% raw %}
+
 	Article: Q61234
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -27,3 +29,5 @@ permalink: /kb/061/Q61234/
 	   QH NMAKE.EXE
 	
 	at the operating-system prompt.
+
+{% endraw %}

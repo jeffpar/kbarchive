@@ -6,6 +6,8 @@ permalink: /kb/165/Q165470/
 
 ## Q165470: WD97: Outline Numbering Links to All Styles After Style Copy
 
+{% raw %}
+
 	Article: Q165470
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/165/Q165470/
 	
 	=============================================================================
 	
+
+{% endraw %}

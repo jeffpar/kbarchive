@@ -6,6 +6,8 @@ permalink: /kb/124/Q124816/
 
 ## Q124816: Very Large or Very Small Transfers to SCSI Printers Fail
 
+{% raw %}
+
 	Article: Q124816
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/124/Q124816/
 	
 	=============================================================================
 	
+
+{% endraw %}

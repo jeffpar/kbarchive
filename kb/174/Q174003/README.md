@@ -6,6 +6,8 @@ permalink: /kb/174/Q174003/
 
 ## Q174003: MSN Prompts You to Install Rifff Files from CD-ROM
 
+{% raw %}
+
 	Article: Q174003
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -61,3 +63,5 @@ permalink: /kb/174/Q174003/
 	
 	=============================================================================
 	
+
+{% endraw %}

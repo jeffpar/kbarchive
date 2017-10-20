@@ -6,6 +6,8 @@ permalink: /kb/316/Q316132/
 
 ## Q316132: SMS: Collection Replication Does Not Work with Carriage Return
 
+{% raw %}
+
 	Article: Q316132
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -134,3 +136,5 @@ permalink: /kb/316/Q316132/
 	
 	=============================================================================
 	
+
+{% endraw %}

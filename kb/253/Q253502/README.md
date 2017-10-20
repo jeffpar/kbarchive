@@ -6,6 +6,8 @@ permalink: /kb/253/Q253502/
 
 ## Q253502: Error When Resolving NetBIOS Name Longer than 16 Characters
 
+{% raw %}
+
 	Article: Q253502
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/253/Q253502/
 	
 	=============================================================================
 	
+
+{% endraw %}

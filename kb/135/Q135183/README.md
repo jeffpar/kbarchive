@@ -6,6 +6,8 @@ permalink: /kb/135/Q135183/
 
 ## Q135183: &quot;Windows Protection Error&quot; on NEC Powermate 466
 
+{% raw %}
+
 	Article: Q135183
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/135/Q135183/
 	
 	=============================================================================
 	
+
+{% endraw %}

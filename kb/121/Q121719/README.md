@@ -6,6 +6,8 @@ permalink: /kb/121/Q121719/
 
 ## Q121719: Running AMI Pro 3.0a QuickStart Tutorial with Windows 95
 
+{% raw %}
+
 	Article: Q121719
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -72,3 +74,5 @@ permalink: /kb/121/Q121719/
 	
 	=============================================================================
 	
+
+{% endraw %}

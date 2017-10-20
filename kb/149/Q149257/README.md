@@ -6,6 +6,8 @@ permalink: /kb/149/Q149257/
 
 ## Q149257: How to Replace a View in a Splitter Window
 
+{% raw %}
+
 	Article: Q149257
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -99,3 +101,5 @@ permalink: /kb/149/Q149257/
 	
 	=============================================================================
 	
+
+{% endraw %}

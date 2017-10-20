@@ -6,6 +6,8 @@ permalink: /kb/132/Q132636/
 
 ## Q132636: Warning Msg: Windows Cannot Determine if it Can Remove this...
 
+{% raw %}
+
 	Article: Q132636
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/132/Q132636/
 	
 	=============================================================================
 	
+
+{% endraw %}

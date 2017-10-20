@@ -6,6 +6,8 @@ permalink: /kb/156/Q156606/
 
 ## Q156606: Windows NT Setup Fails to Install OEM Network Driver
 
+{% raw %}
+
 	Article: Q156606
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -113,3 +115,5 @@ permalink: /kb/156/Q156606/
 	
 	=============================================================================
 	
+
+{% endraw %}

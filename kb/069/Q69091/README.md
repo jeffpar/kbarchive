@@ -6,6 +6,8 @@ permalink: /kb/069/Q69091/
 
 ## Q69091: Novell Map Insert Drive Not Added to Path Inside Windows
 
+{% raw %}
+
 	Article: Q69091
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/069/Q69091/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158839/
 
 ## Q158839: INFO: Updated Readme.txt file for VFP FoxIsapi Sample
 
+{% raw %}
+
 	Article: Q158839
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -247,3 +249,5 @@ permalink: /kb/158/Q158839/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/281/Q281269/
 
 ## Q281269: XADM: Moving Mailboxes with Events Scripts Installed on Inbox
 
+{% raw %}
+
 	Article: Q281269
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -79,3 +81,5 @@ permalink: /kb/281/Q281269/
 	
 	=============================================================================
 	
+
+{% endraw %}

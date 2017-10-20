@@ -6,6 +6,8 @@ permalink: /kb/209/Q209677/
 
 ## Q209677: WD97: Shading Changes Opening a Word 2000 Document
 
+{% raw %}
+
 	Article: Q209677
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -137,3 +139,5 @@ permalink: /kb/209/Q209677/
 	
 	=============================================================================
 	
+
+{% endraw %}

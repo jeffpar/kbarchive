@@ -6,6 +6,8 @@ permalink: /kb/167/Q167170/
 
 ## Q167170: BUG: GetWindowContextHelpId() returns 0 for ActiveX Controls
 
+{% raw %}
+
 	Article: Q167170
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,4.2b,5.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/167/Q167170/
 	
 	=============================================================================
 	
+
+{% endraw %}

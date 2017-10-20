@@ -6,6 +6,8 @@ permalink: /kb/208/Q208856/
 
 ## Q208856: BUG: BLOCKS32 Sample Fails to Show Cursors when Linked to MFC
 
+{% raw %}
+
 	Article: Q208856
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/208/Q208856/
 	
 	=============================================================================
 	
+
+{% endraw %}

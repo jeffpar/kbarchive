@@ -6,6 +6,8 @@ permalink: /kb/060/Q60138/
 
 ## Q60138: Explanation and Example of the NMAKE.EXE Utility
 
+{% raw %}
+
 	Article: Q60138
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -117,3 +119,5 @@ permalink: /kb/060/Q60138/
 	SUB file2
 	  PRINT "We are in the sub of file2.bas"
 	END SUB
+
+{% endraw %}

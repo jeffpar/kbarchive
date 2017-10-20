@@ -6,6 +6,8 @@ permalink: /kb/114/Q114405/
 
 ## Q114405: X400: First Contact Form for X.400 Gateway
 
+{% raw %}
+
 	Article: Q114405
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.2
@@ -138,3 +140,5 @@ permalink: /kb/114/Q114405/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104217/
 
 ## Q104217: Dinosaurs: Different Depictions May Look Slightly Different
 
+{% raw %}
+
 	Article: Q104217
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -38,3 +40,5 @@ permalink: /kb/104/Q104217/
 	
 	=============================================================================
 	
+
+{% endraw %}

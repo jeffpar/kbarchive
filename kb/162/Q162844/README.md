@@ -6,6 +6,8 @@ permalink: /kb/162/Q162844/
 
 ## Q162844: DNS Resolvers Fail on NetBIOS Names When Using Domain Suffixes
 
+{% raw %}
+
 	Article: Q162844
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/162/Q162844/
 	
 	=============================================================================
 	
+
+{% endraw %}

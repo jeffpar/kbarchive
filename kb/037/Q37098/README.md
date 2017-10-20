@@ -6,6 +6,8 @@ permalink: /kb/037/Q37098/
 
 ## Q37098: Porterville Airport Is Not Visible
 
+{% raw %}
+
 	Article: Q37098
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/037/Q37098/
 	
 	=============================================================================
 	
+
+{% endraw %}

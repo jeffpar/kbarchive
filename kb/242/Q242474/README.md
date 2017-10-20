@@ -6,6 +6,8 @@ permalink: /kb/242/Q242474/
 
 ## Q242474: Korean Year 2000 Update Does Not Contain English Strings
 
+{% raw %}
+
 	Article: Q242474
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -72,3 +74,5 @@ permalink: /kb/242/Q242474/
 	
 	=============================================================================
 	
+
+{% endraw %}

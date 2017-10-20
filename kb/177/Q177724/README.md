@@ -6,6 +6,8 @@ permalink: /kb/177/Q177724/
 
 ## Q177724: XADM: Cannot Find Exchange Server Recipients Using LDAP Queries
 
+{% raw %}
+
 	Article: Q177724
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/177/Q177724/
 	
 	=============================================================================
 	
+
+{% endraw %}

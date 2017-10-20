@@ -6,6 +6,8 @@ permalink: /kb/134/Q134801/
 
 ## Q134801: Help Not Available for WINS Manager Import Static Mappings
 
+{% raw %}
+
 	Article: Q134801
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -54,3 +56,5 @@ permalink: /kb/134/Q134801/
 	
 	=============================================================================
 	
+
+{% endraw %}

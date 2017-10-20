@@ -6,6 +6,8 @@ permalink: /kb/135/Q135874/
 
 ## Q135874: PRB: Exception Error When Using ODBC to SQL Server via TCP/IP
 
+{% raw %}
+
 	Article: Q135874
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:1.30,2.5,3.0,6.0
@@ -135,3 +137,5 @@ permalink: /kb/135/Q135874/
 	
 	=============================================================================
 	
+
+{% endraw %}

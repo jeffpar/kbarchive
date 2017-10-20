@@ -6,6 +6,8 @@ permalink: /kb/127/Q127987/
 
 ## Q127987: VFW Err Msg: Unable to Load the Capture Driver
 
+{% raw %}
+
 	Article: Q127987
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -57,3 +59,5 @@ permalink: /kb/127/Q127987/
 	
 	=============================================================================
 	
+
+{% endraw %}

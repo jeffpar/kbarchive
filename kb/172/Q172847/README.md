@@ -6,6 +6,8 @@ permalink: /kb/172/Q172847/
 
 ## Q172847: HOWTO: Cut and Paste from General Field into a Word Document
 
+{% raw %}
+
 	Article: Q172847
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -186,3 +188,5 @@ permalink: /kb/172/Q172847/
 	
 	=============================================================================
 	
+
+{% endraw %}

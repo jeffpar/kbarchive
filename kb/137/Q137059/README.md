@@ -6,6 +6,8 @@ permalink: /kb/137/Q137059/
 
 ## Q137059: DOCERR: Missing Visual C/C++ &quot;Multithreaded Using DLL&quot; Setting
 
+{% raw %}
+
 	Article: Q137059
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -181,3 +183,5 @@ permalink: /kb/137/Q137059/
 	
 	=============================================================================
 	
+
+{% endraw %}

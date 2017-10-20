@@ -6,6 +6,8 @@ permalink: /kb/274/Q274622/
 
 ## Q274622: Combat Flight Simulator 2: Slow Performance on High-End Computer
 
+{% raw %}
+
 	Article: Q274622
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -76,3 +78,5 @@ permalink: /kb/274/Q274622/
 	
 	=============================================================================
 	
+
+{% endraw %}

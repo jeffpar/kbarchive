@@ -6,6 +6,8 @@ permalink: /kb/181/Q181053/
 
 ## Q181053: WD97: Invalid Page Fault in Module MFC40.DLL When Quitting Word
 
+{% raw %}
+
 	Article: Q181053
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/181/Q181053/
 	
 	=============================================================================
 	
+
+{% endraw %}

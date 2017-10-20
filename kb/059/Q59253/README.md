@@ -6,6 +6,8 @@ permalink: /kb/059/Q59253/
 
 ## Q59253: Help on ungetch Not Available from Help Topics List
 
+{% raw %}
+
 	Article: Q59253
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -29,3 +31,5 @@ permalink: /kb/059/Q59253/
 	
 	2. Using HELPMAKE.EXE, decode the QC.HLP file, correct the
 	   misspelling, and encode it again with the change.
+
+{% endraw %}

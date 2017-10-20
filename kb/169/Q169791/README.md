@@ -6,6 +6,8 @@ permalink: /kb/169/Q169791/
 
 ## Q169791: PRB: Query Bases Result Set Field Size On Non-Included Values
 
+{% raw %}
+
 	Article: Q169791
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a,3.0b; MS-DOS:2.0,2.5,2.5a,2.5b,2.6,2.6a; WINDOWS:2.5,2.5a,2.5b
@@ -98,3 +100,5 @@ permalink: /kb/169/Q169791/
 	
 	=============================================================================
 	
+
+{% endraw %}

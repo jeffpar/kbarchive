@@ -6,6 +6,8 @@ permalink: /kb/191/Q191394/
 
 ## Q191394: SNA Server Access Violation in Function S1psineg
 
+{% raw %}
+
 	Article: Q191394
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
@@ -135,3 +137,5 @@ permalink: /kb/191/Q191394/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140921/
 
 ## Q140921: SMS Win95 Client w/ Office Shortcut Bar GPFs on Remote Control
 
+{% raw %}
+
 	Article: Q140921
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -45,3 +47,5 @@ permalink: /kb/140/Q140921/
 	
 	=============================================================================
 	
+
+{% endraw %}

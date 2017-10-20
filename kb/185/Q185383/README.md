@@ -6,6 +6,8 @@ permalink: /kb/185/Q185383/
 
 ## Q185383: How to Remove IIS 4.0 and Reinstall IIS 3.0
 
+{% raw %}
+
 	Article: Q185383
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/185/Q185383/
 	
 	=============================================================================
 	
+
+{% endraw %}

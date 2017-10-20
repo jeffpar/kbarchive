@@ -6,6 +6,8 @@ permalink: /kb/146/Q146623/
 
 ## Q146623: PRB: IsClipListChanged Will Always Return TRUE
 
+{% raw %}
+
 	Article: Q146623
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -44,3 +46,5 @@ permalink: /kb/146/Q146623/
 	
 	=============================================================================
 	
+
+{% endraw %}

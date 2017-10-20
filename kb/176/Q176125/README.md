@@ -6,6 +6,8 @@ permalink: /kb/176/Q176125/
 
 ## Q176125: XADM: Outbound Unicode 2.0 Messages Not Decoded Properly
 
+{% raw %}
+
 	Article: Q176125
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -107,3 +109,5 @@ permalink: /kb/176/Q176125/
 	
 	=============================================================================
 	
+
+{% endraw %}

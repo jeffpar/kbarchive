@@ -6,6 +6,8 @@ permalink: /kb/112/Q112339/
 
 ## Q112339: BUG: Opening More Than 61 Files in a FORTRAN Windows NT App
 
+{% raw %}
+
 	Article: Q112339
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,4.0
@@ -149,3 +151,5 @@ permalink: /kb/112/Q112339/
 	
 	=============================================================================
 	
+
+{% endraw %}

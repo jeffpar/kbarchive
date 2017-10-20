@@ -6,6 +6,8 @@ permalink: /kb/071/Q71126/
 
 ## Q71126: Windows Only Supports Okidata LaserLine 6 with 512K Memory
 
+{% raw %}
+
 	Article: Q71126
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/071/Q71126/
 	
 	=============================================================================
 	
+
+{% endraw %}

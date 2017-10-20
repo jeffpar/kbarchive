@@ -6,6 +6,8 @@ permalink: /kb/136/Q136172/
 
 ## Q136172: System Stops Responding (Hangs) with Certain Backgrounds
 
+{% raw %}
+
 	Article: Q136172
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -55,3 +57,5 @@ permalink: /kb/136/Q136172/
 	
 	=============================================================================
 	
+
+{% endraw %}

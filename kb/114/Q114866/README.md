@@ -6,6 +6,8 @@ permalink: /kb/114/Q114866/
 
 ## Q114866: Bookshelf 1994: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q114866
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -450,3 +452,5 @@ permalink: /kb/114/Q114866/
 	
 	=============================================================================
 	
+
+{% endraw %}

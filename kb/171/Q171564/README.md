@@ -6,6 +6,8 @@ permalink: /kb/171/Q171564/
 
 ## Q171564: TCP/IP Dead Gateway Detection Algorithm Updated for Windows NT
 
+{% raw %}
+
 	Article: Q171564
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -123,3 +125,5 @@ permalink: /kb/171/Q171564/
 	
 	=============================================================================
 	
+
+{% endraw %}

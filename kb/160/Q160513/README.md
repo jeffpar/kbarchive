@@ -6,6 +6,8 @@ permalink: /kb/160/Q160513/
 
 ## Q160513: Alternatives to the Directory Replicator Service
 
+{% raw %}
+
 	Article: Q160513
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -210,3 +212,5 @@ permalink: /kb/160/Q160513/
 	
 	=============================================================================
 	
+
+{% endraw %}

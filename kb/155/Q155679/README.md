@@ -6,6 +6,8 @@ permalink: /kb/155/Q155679/
 
 ## Q155679: Cannot Use Defragment Now Button in Drive Properties
 
+{% raw %}
+
 	Article: Q155679
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/155/Q155679/
 	
 	=============================================================================
 	
+
+{% endraw %}

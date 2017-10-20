@@ -6,6 +6,8 @@ permalink: /kb/153/Q153092/
 
 ## Q153092: SAMPLE: How to Add New Menu Items to the System Menu
 
+{% raw %}
+
 	Article: Q153092
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -177,3 +179,5 @@ permalink: /kb/153/Q153092/
 	
 	=============================================================================
 	
+
+{% endraw %}

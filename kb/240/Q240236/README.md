@@ -6,6 +6,8 @@ permalink: /kb/240/Q240236/
 
 ## Q240236: XFOR: Ctkeepdays Only Works with a Value of 1 or 7
 
+{% raw %}
+
 	Article: Q240236
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -57,3 +59,5 @@ permalink: /kb/240/Q240236/
 	
 	=============================================================================
 	
+
+{% endraw %}

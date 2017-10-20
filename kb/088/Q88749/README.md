@@ -6,6 +6,8 @@ permalink: /kb/088/Q88749/
 
 ## Q88749: Details of Setup Toolkit Function GetCopyListCost()
 
+{% raw %}
+
 	Article: Q88749
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -117,3 +119,5 @@ permalink: /kb/088/Q88749/
 	
 	=============================================================================
 	
+
+{% endraw %}

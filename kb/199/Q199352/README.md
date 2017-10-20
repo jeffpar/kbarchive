@@ -6,6 +6,8 @@ permalink: /kb/199/Q199352/
 
 ## Q199352: Err Msg: At Least One Service or Driver Failed During System...
 
+{% raw %}
+
 	Article: Q199352
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/199/Q199352/
 	
 	=============================================================================
 	
+
+{% endraw %}

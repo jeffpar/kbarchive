@@ -6,6 +6,8 @@ permalink: /kb/101/Q101238/
 
 ## Q101238: WFWG Err Msg with New NETAPI.DLL: Call to Undefined Dynalink
 
+{% raw %}
+
 	Article: Q101238
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -92,3 +94,5 @@ permalink: /kb/101/Q101238/
 	
 	=============================================================================
 	
+
+{% endraw %}

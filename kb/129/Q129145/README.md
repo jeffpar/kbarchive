@@ -6,6 +6,8 @@ permalink: /kb/129/Q129145/
 
 ## Q129145: Commas Not Recognized in NetWare Logon Scripts
 
+{% raw %}
+
 	Article: Q129145
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/129/Q129145/
 	
 	=============================================================================
 	
+
+{% endraw %}

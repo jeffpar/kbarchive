@@ -6,6 +6,8 @@ permalink: /kb/168/Q168895/
 
 ## Q168895: HOWTO: Convert Numeric Dollar Amount to Character Form
 
+{% raw %}
+
 	Article: Q168895
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -198,3 +200,5 @@ permalink: /kb/168/Q168895/
 	
 	=============================================================================
 	
+
+{% endraw %}

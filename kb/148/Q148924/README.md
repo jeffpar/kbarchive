@@ -6,6 +6,8 @@ permalink: /kb/148/Q148924/
 
 ## Q148924: Dial-Up Scripting Does Not Work After Reinstalling DUN
 
+{% raw %}
+
 	Article: Q148924
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -78,3 +80,5 @@ permalink: /kb/148/Q148924/
 	
 	=============================================================================
 	
+
+{% endraw %}

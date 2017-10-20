@@ -6,6 +6,8 @@ permalink: /kb/222/Q222162/
 
 ## Q222162: STOP 0x21a on Terminal Server Because of Invalid RPC Response
 
+{% raw %}
+
 	Article: Q222162
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/222/Q222162/
 	
 	=============================================================================
 	
+
+{% endraw %}

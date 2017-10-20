@@ -6,6 +6,8 @@ permalink: /kb/104/Q104152/
 
 ## Q104152: Multimedia Err Msg: Out-of-Date PICCLIP.VBX
 
+{% raw %}
+
 	Article: Q104152
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,2.0
@@ -129,3 +131,5 @@ permalink: /kb/104/Q104152/
 	
 	=============================================================================
 	
+
+{% endraw %}

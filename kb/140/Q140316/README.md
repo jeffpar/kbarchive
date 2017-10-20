@@ -6,6 +6,8 @@ permalink: /kb/140/Q140316/
 
 ## Q140316: INFO: All Variable Settings for Visual SourceSafe .INI File
 
+{% raw %}
+
 	Article: Q140316
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -250,3 +252,5 @@ permalink: /kb/140/Q140316/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/034/Q34279/
 
 ## Q34279: Cannot Pass More Than 21 Dynamic Array Elements to Subprogram
 
+{% raw %}
+
 	Article: Q34279
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -64,3 +66,5 @@ permalink: /kb/034/Q34279/
 	
 	    0 Warning Error(s)
 	    1 Severe  Error(s)
+
+{% endraw %}

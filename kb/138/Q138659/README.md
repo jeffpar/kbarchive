@@ -6,6 +6,8 @@ permalink: /kb/138/Q138659/
 
 ## Q138659: How to Pass an Array to a Form
 
+{% raw %}
+
 	Article: Q138659
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/138/Q138659/
 	
 	=============================================================================
 	
+
+{% endraw %}

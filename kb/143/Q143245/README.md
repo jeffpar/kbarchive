@@ -6,6 +6,8 @@ permalink: /kb/143/Q143245/
 
 ## Q143245: How to Strip Quotation Marks from an ASCII Delimited Text File
 
+{% raw %}
+
 	Article: Q143245
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a; MS-DOS:2.6a; WINDOWS:2.6a,3.0,3.0b
@@ -93,3 +95,5 @@ permalink: /kb/143/Q143245/
 	
 	=============================================================================
 	
+
+{% endraw %}

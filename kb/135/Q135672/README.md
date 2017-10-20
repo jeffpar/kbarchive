@@ -6,6 +6,8 @@ permalink: /kb/135/Q135672/
 
 ## Q135672: Why Coldconfirm Property Is Not Used in Frmaddremove Form
 
+{% raw %}
+
 	Article: Q135672
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/135/Q135672/
 	
 	=============================================================================
 	
+
+{% endraw %}

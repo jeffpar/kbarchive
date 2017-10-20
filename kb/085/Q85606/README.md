@@ -6,6 +6,8 @@ permalink: /kb/085/Q85606/
 
 ## Q85606: FAX: Error Returning Notification to User
 
+{% raw %}
+
 	Article: Q85606
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -44,3 +46,5 @@ permalink: /kb/085/Q85606/
 	
 	=============================================================================
 	
+
+{% endraw %}

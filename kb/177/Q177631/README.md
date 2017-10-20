@@ -6,6 +6,8 @@ permalink: /kb/177/Q177631/
 
 ## Q177631: Comdlg32 Fails to Display Drives Mapped by SUBST Command
 
+{% raw %}
+
 	Article: Q177631
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/177/Q177631/
 	
 	=============================================================================
 	
+
+{% endraw %}

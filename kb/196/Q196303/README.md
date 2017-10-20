@@ -6,6 +6,8 @@ permalink: /kb/196/Q196303/
 
 ## Q196303: IIS Performance Is Slower on Multiprocessor Computers
 
+{% raw %}
+
 	Article: Q196303
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/196/Q196303/
 	
 	=============================================================================
 	
+
+{% endraw %}

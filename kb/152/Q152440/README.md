@@ -6,6 +6,8 @@ permalink: /kb/152/Q152440/
 
 ## Q152440: XADM: Import Error Message: One Warning Event Was Encountered
 
+{% raw %}
+
 	Article: Q152440
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -48,3 +50,5 @@ permalink: /kb/152/Q152440/
 	
 	=============================================================================
 	
+
+{% endraw %}

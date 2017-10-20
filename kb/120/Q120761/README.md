@@ -6,6 +6,8 @@ permalink: /kb/120/Q120761/
 
 ## Q120761: Background Windows Show through Access 2.0's Window
 
+{% raw %}
+
 	Article: Q120761
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/120/Q120761/
 	
 	=============================================================================
 	
+
+{% endraw %}

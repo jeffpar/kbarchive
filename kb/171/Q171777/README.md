@@ -6,6 +6,8 @@ permalink: /kb/171/Q171777/
 
 ## Q171777: Getadmin.exe Causes a STOP 0xC000021A
 
+{% raw %}
+
 	Article: Q171777
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -77,3 +79,5 @@ permalink: /kb/171/Q171777/
 	
 	=============================================================================
 	
+
+{% endraw %}

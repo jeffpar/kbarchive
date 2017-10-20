@@ -6,6 +6,8 @@ permalink: /kb/182/Q182983/
 
 ## Q182983: SAMPLE: PLAYWAVE.EXE Demonstrates How To Play a Sound File
 
+{% raw %}
+
 	Article: Q182983
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -134,3 +136,5 @@ permalink: /kb/182/Q182983/
 	
 	=============================================================================
 	
+
+{% endraw %}

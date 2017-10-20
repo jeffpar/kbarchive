@@ -6,6 +6,8 @@ permalink: /kb/127/Q127073/
 
 ## Q127073: Access 2.0 Err Msg with SMS: Can't Find Wizard, or There is...
 
+{% raw %}
+
 	Article: Q127073
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -62,3 +64,5 @@ permalink: /kb/127/Q127073/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/025/Q25330/
 
 ## Q25330: Changing Format When Pasting Between Write Documents
 
+{% raw %}
+
 	Article: Q25330
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/025/Q25330/
 	
 	=============================================================================
 	
+
+{% endraw %}

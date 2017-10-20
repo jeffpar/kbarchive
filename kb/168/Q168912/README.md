@@ -6,6 +6,8 @@ permalink: /kb/168/Q168912/
 
 ## Q168912: INFO: Summary List: Visual C++ 5.0 Known Problems
 
+{% raw %}
+
 	Article: Q168912
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -535,3 +537,5 @@ permalink: /kb/168/Q168912/
 	
 	=============================================================================
 	
+
+{% endraw %}

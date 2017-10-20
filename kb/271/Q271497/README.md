@@ -6,6 +6,8 @@ permalink: /kb/271/Q271497/
 
 ## Q271497: Golf 2001: Multiplayer Options Are Unavailable
 
+{% raw %}
+
 	Article: Q271497
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/271/Q271497/
 	
 	=============================================================================
 	
+
+{% endraw %}

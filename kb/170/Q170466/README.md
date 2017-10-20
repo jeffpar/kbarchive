@@ -6,6 +6,8 @@ permalink: /kb/170/Q170466/
 
 ## Q170466: WD97: Inline Picture Becomes Red X in Word 6.0/95 Format
 
+{% raw %}
+
 	Article: Q170466
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/170/Q170466/
 	
 	=============================================================================
 	
+
+{% endraw %}

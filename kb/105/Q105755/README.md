@@ -6,6 +6,8 @@ permalink: /kb/105/Q105755/
 
 ## Q105755: Cannot Install Two MIDI Cards If They Have the Same Name
 
+{% raw %}
+
 	Article: Q105755
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0 with Multimedia extensions version 1.0; :3.1
@@ -43,3 +45,5 @@ permalink: /kb/105/Q105755/
 	
 	=============================================================================
 	
+
+{% endraw %}

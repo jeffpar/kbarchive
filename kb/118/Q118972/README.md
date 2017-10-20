@@ -6,6 +6,8 @@ permalink: /kb/118/Q118972/
 
 ## Q118972: Parallel Port Printing Problems on IBM Thinkpad
 
+{% raw %}
+
 	Article: Q118972
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -81,3 +83,5 @@ permalink: /kb/118/Q118972/
 	
 	=============================================================================
 	
+
+{% endraw %}

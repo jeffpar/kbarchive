@@ -6,6 +6,8 @@ permalink: /kb/290/Q290995/
 
 ## Q290995: SMS: Problems Updating Off-Line License Metering Logs
 
+{% raw %}
+
 	Article: Q290995
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -66,3 +68,5 @@ permalink: /kb/290/Q290995/
 	
 	=============================================================================
 	
+
+{% endraw %}

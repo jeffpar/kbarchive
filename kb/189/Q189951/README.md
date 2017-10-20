@@ -6,6 +6,8 @@ permalink: /kb/189/Q189951/
 
 ## Q189951: BUG: ScrollBar on WLCombo Does Not Scroll
 
+{% raw %}
+
 	Article: Q189951
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -80,3 +82,5 @@ permalink: /kb/189/Q189951/
 	
 	=============================================================================
 	
+
+{% endraw %}

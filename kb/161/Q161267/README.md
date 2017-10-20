@@ -6,6 +6,8 @@ permalink: /kb/161/Q161267/
 
 ## Q161267: Kids Plus!: Screen Savers Settings Require System Agent
 
+{% raw %}
+
 	Article: Q161267
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/161/Q161267/
 	
 	=============================================================================
 	
+
+{% endraw %}

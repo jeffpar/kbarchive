@@ -6,6 +6,8 @@ permalink: /kb/170/Q170137/
 
 ## Q170137: XFOR: PCMTA Service Stops When Message Sent with Date 00
 
+{% raw %}
+
 	Article: Q170137
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -56,3 +58,5 @@ permalink: /kb/170/Q170137/
 	
 	=============================================================================
 	
+
+{% endraw %}

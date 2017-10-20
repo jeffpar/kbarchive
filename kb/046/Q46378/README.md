@@ -6,6 +6,8 @@ permalink: /kb/046/Q46378/
 
 ## Q46378: MASM: Linker Error L2002: Fixup Overflow
 
+{% raw %}
+
 	Article: Q46378
 	Product(s): See article
 	Version(s): 5.10
@@ -32,3 +34,5 @@ permalink: /kb/046/Q46378/
 	        mov     word ptr cs:old_dma_vect,bx  ;(This line caused the error)
 	      .
 	        end capture
+
+{% endraw %}

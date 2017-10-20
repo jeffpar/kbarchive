@@ -6,6 +6,8 @@ permalink: /kb/139/Q139971/
 
 ## Q139971: BUG:DBGrid with Visible Property Set to False Becomes Visible
 
+{% raw %}
+
 	Article: Q139971
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -130,3 +132,5 @@ permalink: /kb/139/Q139971/
 	
 	=============================================================================
 	
+
+{% endraw %}

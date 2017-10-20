@@ -6,6 +6,8 @@ permalink: /kb/158/Q158394/
 
 ## Q158394: Soccer: Player Remains in the Game After Receiving a Red Card
 
+{% raw %}
+
 	Article: Q158394
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -42,3 +44,5 @@ permalink: /kb/158/Q158394/
 	
 	=============================================================================
 	
+
+{% endraw %}

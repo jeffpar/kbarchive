@@ -6,6 +6,8 @@ permalink: /kb/108/Q108777/
 
 ## Q108777: READ.ME File from Canon BJC-600 Version 1.00 Printer Driver
 
+{% raw %}
+
 	Article: Q108777
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -210,3 +212,5 @@ permalink: /kb/108/Q108777/
 	
 	=============================================================================
 	
+
+{% endraw %}

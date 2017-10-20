@@ -6,6 +6,8 @@ permalink: /kb/135/Q135567/
 
 ## Q135567: Novell Allow Tool Does Not Work on Windows 95 NCP Server
 
+{% raw %}
+
 	Article: Q135567
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/135/Q135567/
 	
 	=============================================================================
 	
+
+{% endraw %}

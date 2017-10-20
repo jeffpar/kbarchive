@@ -6,6 +6,8 @@ permalink: /kb/088/Q88557/
 
 ## Q88557: INFO: CFrameWnd Objects Can Destroy Themselves
 
+{% raw %}
+
 	Article: Q88557
 	Product(s): Microsoft C Compiler
 	Version(s): 7.0
@@ -77,3 +79,5 @@ permalink: /kb/088/Q88557/
 	
 	=============================================================================
 	
+
+{% endraw %}

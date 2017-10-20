@@ -6,6 +6,8 @@ permalink: /kb/189/Q189083/
 
 ## Q189083: WD97: Automatically Saving Current Work (Open Document)
 
+{% raw %}
+
 	Article: Q189083
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/189/Q189083/
 	
 	=============================================================================
 	
+
+{% endraw %}

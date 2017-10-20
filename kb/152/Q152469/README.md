@@ -6,6 +6,8 @@ permalink: /kb/152/Q152469/
 
 ## Q152469: Hardware Inventory Hangs at 30% When Detecting the Game Port
 
+{% raw %}
+
 	Article: Q152469
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -62,3 +64,5 @@ permalink: /kb/152/Q152469/
 	
 	=============================================================================
 	
+
+{% endraw %}

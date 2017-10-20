@@ -6,6 +6,8 @@ permalink: /kb/031/Q31535/
 
 ## Q31535: MASM 5.10 EXT.DOC: KbUnHook - Disable M's Logical Keyboard
 
+{% raw %}
+
 	Article: Q31535
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -29,3 +31,5 @@ permalink: /kb/031/Q31535/
 	 *  transferring control to a program that reads from the keyboard.
 	 */
 	void pascal KbUnHook();
+
+{% endraw %}

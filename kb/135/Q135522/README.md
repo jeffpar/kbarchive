@@ -6,6 +6,8 @@ permalink: /kb/135/Q135522/
 
 ## Q135522: PRB: Error Occurs When Using DynamicCurrentControl Property
 
+{% raw %}
+
 	Article: Q135522
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -96,3 +98,5 @@ permalink: /kb/135/Q135522/
 	
 	=============================================================================
 	
+
+{% endraw %}

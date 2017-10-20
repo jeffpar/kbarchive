@@ -6,6 +6,8 @@ permalink: /kb/257/Q257897/
 
 ## Q257897: Printer Shares May Not Come Online If Quorum Log Is Too Small
 
+{% raw %}
+
 	Article: Q257897
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -60,3 +62,5 @@ permalink: /kb/257/Q257897/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257683/
 
 ## Q257683: SMS: TMP Variable Not Consistent in SMSCliToknAcct&amp; Environment
 
+{% raw %}
+
 	Article: Q257683
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP1,2.0 SP2
@@ -72,3 +74,5 @@ permalink: /kb/257/Q257683/
 	
 	=============================================================================
 	
+
+{% endraw %}

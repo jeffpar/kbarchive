@@ -6,6 +6,8 @@ permalink: /kb/250/Q250990/
 
 ## Q250990: Zone Err Msg: Game Failed to Launch
 
+{% raw %}
+
 	Article: Q250990
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/250/Q250990/
 	
 	=============================================================================
 	
+
+{% endraw %}

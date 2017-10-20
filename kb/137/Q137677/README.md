@@ -6,6 +6,8 @@ permalink: /kb/137/Q137677/
 
 ## Q137677: PC NTMMTA: Err Msg:No Drive Is Available for Dynamic Attaching
 
+{% raw %}
+
 	Article: Q137677
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -54,3 +56,5 @@ permalink: /kb/137/Q137677/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128445/
 
 ## Q128445: Network Clients Cannot Print to Server LPR Printers
 
+{% raw %}
+
 	Article: Q128445
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11 3.5 4.0
@@ -48,3 +50,5 @@ permalink: /kb/128/Q128445/
 	
 	=============================================================================
 	
+
+{% endraw %}

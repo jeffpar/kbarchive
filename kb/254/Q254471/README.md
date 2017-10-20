@@ -6,6 +6,8 @@ permalink: /kb/254/Q254471/
 
 ## Q254471: How to Increase the Number of Child Processes in Interix
 
+{% raw %}
+
 	Article: Q254471
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/254/Q254471/
 	
 	=============================================================================
 	
+
+{% endraw %}

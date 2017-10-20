@@ -6,6 +6,8 @@ permalink: /kb/168/Q168247/
 
 ## Q168247: BUG: Keywords Cause New Version When &quot;Undo Check Out&quot; Set
 
+{% raw %}
+
 	Article: Q168247
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/168/Q168247/
 	
 	=============================================================================
 	
+
+{% endraw %}

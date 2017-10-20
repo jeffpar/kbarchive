@@ -6,6 +6,8 @@ permalink: /kb/153/Q153571/
 
 ## Q153571: PCM Causes Dr. Watson AV if CurrentLogonServer Unavailable
 
+{% raw %}
+
 	Article: Q153571
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -46,3 +48,5 @@ permalink: /kb/153/Q153571/
 	
 	=============================================================================
 	
+
+{% endraw %}

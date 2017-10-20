@@ -6,6 +6,8 @@ permalink: /kb/165/Q165649/
 
 ## Q165649: Pooling Of Local APPC LUs Not Functioning Properly
 
+{% raw %}
+
 	Article: Q165649
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/165/Q165649/
 	
 	=============================================================================
 	
+
+{% endraw %}

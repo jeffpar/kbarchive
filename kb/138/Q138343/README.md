@@ -6,6 +6,8 @@ permalink: /kb/138/Q138343/
 
 ## Q138343: INFO: New Features of Ddconv.exe in Visual SourceSafe
 
+{% raw %}
+
 	Article: Q138343
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0
@@ -72,3 +74,5 @@ permalink: /kb/138/Q138343/
 	
 	=============================================================================
 	
+
+{% endraw %}

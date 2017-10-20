@@ -6,6 +6,8 @@ permalink: /kb/138/Q138946/
 
 ## Q138946: PPT7: Errors Saving PowerPoint 95 File in PowerPoint 4.0 Format
 
+{% raw %}
+
 	Article: Q138946
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -203,3 +205,5 @@ permalink: /kb/138/Q138946/
 	
 	=============================================================================
 	
+
+{% endraw %}

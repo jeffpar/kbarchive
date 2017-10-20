@@ -6,6 +6,8 @@ permalink: /kb/119/Q119382/
 
 ## Q119382: FILE: Fw1040.exe Basic Concepts of Relational Database Design
 
+{% raw %}
+
 	Article: Q119382
 	Product(s): Microsoft FoxPro
 	Version(s): 2.0,2.5,2.5a,2.5b,2.5c,2.6,2.6a,3.0,5.0,6.0
@@ -70,3 +72,5 @@ permalink: /kb/119/Q119382/
 	
 	=============================================================================
 	
+
+{% endraw %}

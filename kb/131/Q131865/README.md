@@ -6,6 +6,8 @@ permalink: /kb/131/Q131865/
 
 ## Q131865: SMC Elite Ultra NIC Causes UNIX Computers to Disconnect TCP/IP
 
+{% raw %}
+
 	Article: Q131865
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51; :
@@ -100,3 +102,5 @@ permalink: /kb/131/Q131865/
 	
 	=============================================================================
 	
+
+{% endraw %}

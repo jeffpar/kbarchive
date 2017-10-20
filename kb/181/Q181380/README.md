@@ -6,6 +6,8 @@ permalink: /kb/181/Q181380/
 
 ## Q181380: RAS Disconnects Due to Line Noise When Using Multitech Modems
 
+{% raw %}
+
 	Article: Q181380
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -131,3 +133,5 @@ permalink: /kb/181/Q181380/
 	
 	=============================================================================
 	
+
+{% endraw %}

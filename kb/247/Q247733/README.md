@@ -6,6 +6,8 @@ permalink: /kb/247/Q247733/
 
 ## Q247733: Fighter Ace II: Ground Textures Are Outlined in Blue
 
+{% raw %}
+
 	Article: Q247733
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/247/Q247733/
 	
 	=============================================================================
 	
+
+{% endraw %}

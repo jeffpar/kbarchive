@@ -6,6 +6,8 @@ permalink: /kb/168/Q168635/
 
 ## Q168635: INFO: Explanation of Diff_Ignore
 
+{% raw %}
+
 	Article: Q168635
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/168/Q168635/
 	
 	=============================================================================
 	
+
+{% endraw %}

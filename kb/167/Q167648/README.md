@@ -6,6 +6,8 @@ permalink: /kb/167/Q167648/
 
 ## Q167648: XCLN: Free/Busy Connector Errors 1027 and 1029
 
+{% raw %}
+
 	Article: Q167648
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -67,3 +69,5 @@ permalink: /kb/167/Q167648/
 	
 	=============================================================================
 	
+
+{% endraw %}

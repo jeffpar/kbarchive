@@ -6,6 +6,8 @@ permalink: /kb/195/Q195632/
 
 ## Q195632: Err Msg: Encarta Virtual Globe Requires a Pentium 66...
 
+{% raw %}
+
 	Article: Q195632
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/195/Q195632/
 	
 	=============================================================================
 	
+
+{% endraw %}

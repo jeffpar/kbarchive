@@ -6,6 +6,8 @@ permalink: /kb/214/Q214500/
 
 ## Q214500: App. Compatibility Flag Registry Setting Not Read Correctly
 
+{% raw %}
+
 	Article: Q214500
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/214/Q214500/
 	
 	=============================================================================
 	
+
+{% endraw %}

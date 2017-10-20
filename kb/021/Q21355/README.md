@@ -6,6 +6,8 @@ permalink: /kb/021/Q21355/
 
 ## Q21355: Transponder Never Sends &quot;Squawk&quot; Code
 
+{% raw %}
+
 	Article: Q21355
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -27,3 +29,5 @@ permalink: /kb/021/Q21355/
 	
 	=============================================================================
 	
+
+{% endraw %}

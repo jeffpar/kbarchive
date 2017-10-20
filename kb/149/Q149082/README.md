@@ -6,6 +6,8 @@ permalink: /kb/149/Q149082/
 
 ## Q149082: 3D Movie Maker: Recorded Sound Is Distorted or Poor Quality
 
+{% raw %}
+
 	Article: Q149082
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.00
@@ -58,3 +60,5 @@ permalink: /kb/149/Q149082/
 	
 	=============================================================================
 	
+
+{% endraw %}

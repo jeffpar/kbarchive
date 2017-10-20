@@ -6,6 +6,8 @@ permalink: /kb/302/Q302655/
 
 ## Q302655: Weather On Start-Page Not Updating After Changing The Zip Code
 
+{% raw %}
+
 	Article: Q302655
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -46,3 +48,5 @@ permalink: /kb/302/Q302655/
 	
 	=============================================================================
 	
+
+{% endraw %}

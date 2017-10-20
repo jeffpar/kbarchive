@@ -6,6 +6,8 @@ permalink: /kb/126/Q126924/
 
 ## Q126924: PC Win: Err Msg: ...Has Occurred While Loading the Spelling...
 
+{% raw %}
+
 	Article: Q126924
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,6.0
@@ -81,3 +83,5 @@ permalink: /kb/126/Q126924/
 	
 	=============================================================================
 	
+
+{% endraw %}

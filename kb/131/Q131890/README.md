@@ -6,6 +6,8 @@ permalink: /kb/131/Q131890/
 
 ## Q131890: DOGS: OPTHELP.TXT Contents
 
+{% raw %}
+
 	Article: Q131890
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -247,3 +249,5 @@ permalink: /kb/131/Q131890/
 	
 	=============================================================================
 	
+
+{% endraw %}

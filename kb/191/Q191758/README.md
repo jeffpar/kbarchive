@@ -6,6 +6,8 @@ permalink: /kb/191/Q191758/
 
 ## Q191758: HOWTO: Convert FoxPro Cursor into XML Data Format
 
+{% raw %}
+
 	Article: Q191758
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -171,3 +173,5 @@ permalink: /kb/191/Q191758/
 	
 	=============================================================================
 	
+
+{% endraw %}

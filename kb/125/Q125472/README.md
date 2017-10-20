@@ -6,6 +6,8 @@ permalink: /kb/125/Q125472/
 
 ## Q125472: PRB: Unable to Open Files That Have Certain Extensions
 
+{% raw %}
+
 	Article: Q125472
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -68,3 +70,5 @@ permalink: /kb/125/Q125472/
 	
 	=============================================================================
 	
+
+{% endraw %}

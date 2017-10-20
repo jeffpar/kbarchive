@@ -6,6 +6,8 @@ permalink: /kb/248/Q248423/
 
 ## Q248423: Fighter Ace II: Textures in the Game Are Not Displayed Correctly
 
+{% raw %}
+
 	Article: Q248423
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/248/Q248423/
 	
 	=============================================================================
 	
+
+{% endraw %}

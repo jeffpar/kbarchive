@@ -6,6 +6,8 @@ permalink: /kb/139/Q139344/
 
 ## Q139344: Unable To Stop Resource Kit Remote Command Server Service
 
+{% raw %}
+
 	Article: Q139344
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -46,3 +48,5 @@ permalink: /kb/139/Q139344/
 	
 	=============================================================================
 	
+
+{% endraw %}

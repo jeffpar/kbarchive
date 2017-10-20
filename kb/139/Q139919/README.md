@@ -6,6 +6,8 @@ permalink: /kb/139/Q139919/
 
 ## Q139919: Julia Child: Err Msg: MSJULIA Causes a GP Fault
 
+{% raw %}
+
 	Article: Q139919
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/139/Q139919/
 	
 	=============================================================================
 	
+
+{% endraw %}

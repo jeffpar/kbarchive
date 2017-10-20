@@ -6,6 +6,8 @@ permalink: /kb/129/Q129468/
 
 ## Q129468: HOWTO: Update a Remote Table from a Local Table
 
+{% raw %}
+
 	Article: Q129468
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/129/Q129468/
 	
 	=============================================================================
 	
+
+{% endraw %}

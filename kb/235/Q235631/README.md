@@ -6,6 +6,8 @@ permalink: /kb/235/Q235631/
 
 ## Q235631: Crtpkgw.exe Hangs While Trying to Create Packages in DB2 When Co
 
+{% raw %}
+
 	Article: Q235631
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -78,3 +80,5 @@ permalink: /kb/235/Q235631/
 	
 	=============================================================================
 	
+
+{% endraw %}

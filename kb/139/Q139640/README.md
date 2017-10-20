@@ -6,6 +6,8 @@ permalink: /kb/139/Q139640/
 
 ## Q139640: Do Not Mix Operating System and CRT File Handles
 
+{% raw %}
+
 	Article: Q139640
 	Product(s): Microsoft C Compiler
 	Version(s): WinNT:2.0,2.1,2.2,4.0,5.0; Windows:2.0,2.1
@@ -97,3 +99,5 @@ permalink: /kb/139/Q139640/
 	
 	=============================================================================
 	
+
+{% endraw %}

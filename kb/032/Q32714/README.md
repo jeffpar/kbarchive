@@ -6,6 +6,8 @@ permalink: /kb/032/Q32714/
 
 ## Q32714: DEFAULT.COM Included with Mouse
 
+{% raw %}
+
 	Article: Q32714
 	Product(s): See article
 	Version(s): 1.x 2.x 3.x 4.x 5.x 6.x 1.00
@@ -20,3 +22,5 @@ permalink: /kb/032/Q32714/
 	owners with versions prior to Version 6.00 can write their own menus
 	using the mouse menu programming tools (MAKEMENU.EXE and MENU.COM)
 	included with their mouse software.
+
+{% endraw %}

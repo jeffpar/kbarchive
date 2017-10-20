@@ -6,6 +6,8 @@ permalink: /kb/188/Q188645/
 
 ## Q188645: XADM: Deleted Directory Objects Remain Deleted
 
+{% raw %}
+
 	Article: Q188645
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/188/Q188645/
 	
 	=============================================================================
 	
+
+{% endraw %}

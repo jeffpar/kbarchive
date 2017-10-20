@@ -6,6 +6,8 @@ permalink: /kb/027/Q27212/
 
 ## Q27212: Older Vega VGAs Hang CodeView When in VGA Mode
 
+{% raw %}
+
 	Article: Q27212
 	Product(s): See article
 	Version(s): 2.10 2.20 2.30 | 2.20 2.30
@@ -27,3 +29,5 @@ permalink: /kb/027/Q27212/
 	
 	We recommend that you contact Vega by calling 1 (800) 248-1850 for
 	advice if you experience this problem.
+
+{% endraw %}

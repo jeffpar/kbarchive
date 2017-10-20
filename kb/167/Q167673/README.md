@@ -6,6 +6,8 @@ permalink: /kb/167/Q167673/
 
 ## Q167673: DOC: Online Help References Removed Features of Form Designer
 
+{% raw %}
+
 	Article: Q167673
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -72,3 +74,5 @@ permalink: /kb/167/Q167673/
 	
 	=============================================================================
 	
+
+{% endraw %}

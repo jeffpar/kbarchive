@@ -6,6 +6,8 @@ permalink: /kb/114/Q114474/
 
 ## Q114474: PRB: Setup Toolkit Error &quot;Parser out of memory&quot;
 
+{% raw %}
+
 	Article: Q114474
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -72,3 +74,5 @@ permalink: /kb/114/Q114474/
 	
 	=============================================================================
 	
+
+{% endraw %}

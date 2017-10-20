@@ -6,6 +6,8 @@ permalink: /kb/067/Q67022/
 
 ## Q67022: Fontware Installation Kit Unable to Make Directory
 
+{% raw %}
+
 	Article: Q67022
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/067/Q67022/
 	
 	=============================================================================
 	
+
+{% endraw %}

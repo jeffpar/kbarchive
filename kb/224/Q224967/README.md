@@ -6,6 +6,8 @@ permalink: /kb/224/Q224967/
 
 ## Q224967: How to Create File Shares on a Cluster
 
+{% raw %}
+
 	Article: Q224967
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -167,3 +169,5 @@ permalink: /kb/224/Q224967/
 	
 	=============================================================================
 	
+
+{% endraw %}

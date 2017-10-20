@@ -6,6 +6,8 @@ permalink: /kb/111/Q111091/
 
 ## Q111091: FIX: Compiler Displays Incorrect Line-Number Information
 
+{% raw %}
+
 	Article: Q111091
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -82,3 +84,5 @@ permalink: /kb/111/Q111091/
 	
 	=============================================================================
 	
+
+{% endraw %}

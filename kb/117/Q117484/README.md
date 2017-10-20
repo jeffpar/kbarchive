@@ -6,6 +6,8 @@ permalink: /kb/117/Q117484/
 
 ## Q117484: Disks Created by MS-DOS 6.21 Upgrade SETUP /F
 
+{% raw %}
+
 	Article: Q117484
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21
@@ -67,3 +69,5 @@ permalink: /kb/117/Q117484/
 	
 	=============================================================================
 	
+
+{% endraw %}

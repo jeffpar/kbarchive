@@ -6,6 +6,8 @@ permalink: /kb/191/Q191385/
 
 ## Q191385: Duplicate Rules Appear in Secure Channel Account Mappings Advanc
 
+{% raw %}
+
 	Article: Q191385
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/191/Q191385/
 	
 	=============================================================================
 	
+
+{% endraw %}

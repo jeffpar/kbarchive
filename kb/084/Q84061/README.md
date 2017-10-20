@@ -6,6 +6,8 @@ permalink: /kb/084/Q84061/
 
 ## Q84061: Windows SDK Not Designed for Server Installation
 
+{% raw %}
+
 	Article: Q84061
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -41,3 +43,5 @@ permalink: /kb/084/Q84061/
 	
 	=============================================================================
 	
+
+{% endraw %}

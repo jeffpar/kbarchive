@@ -6,6 +6,8 @@ permalink: /kb/181/Q181649/
 
 ## Q181649: XADM: MSMail Message Body Missing when Received Through the IMS
 
+{% raw %}
+
 	Article: Q181649
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -91,3 +93,5 @@ permalink: /kb/181/Q181649/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162468/
 
 ## Q162468: Volume Creation Date Is Not Reported Correctly from WinNT Server
 
+{% raw %}
+
 	Article: Q162468
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/162/Q162468/
 	
 	=============================================================================
 	
+
+{% endraw %}

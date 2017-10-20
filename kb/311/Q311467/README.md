@@ -6,6 +6,8 @@ permalink: /kb/311/Q311467/
 
 ## Q311467: SMS: Clients Do Not Download Large Excluded Programs Lists
 
+{% raw %}
+
 	Article: Q311467
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -85,3 +87,5 @@ permalink: /kb/311/Q311467/
 	
 	=============================================================================
 	
+
+{% endraw %}

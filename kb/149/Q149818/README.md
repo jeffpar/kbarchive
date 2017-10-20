@@ -6,6 +6,8 @@ permalink: /kb/149/Q149818/
 
 ## Q149818: WFW Cannot Log On To WinNT Domain across SMC Token Ring Switch
 
+{% raw %}
+
 	Article: Q149818
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; winnt:3.5,3.51
@@ -55,3 +57,5 @@ permalink: /kb/149/Q149818/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199060/
 
 ## Q199060: PRB: ATL Service Run from the IDE Doesn't Log Events to Console
 
+{% raw %}
+
 	Article: Q199060
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,3.0,5.0,6.0
@@ -114,3 +116,5 @@ permalink: /kb/199/Q199060/
 	
 	=============================================================================
 	
+
+{% endraw %}

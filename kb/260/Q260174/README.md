@@ -6,6 +6,8 @@ permalink: /kb/260/Q260174/
 
 ## Q260174: Special Pool Feature Prevents Creation of Memory Dump
 
+{% raw %}
+
 	Article: Q260174
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -119,3 +121,5 @@ permalink: /kb/260/Q260174/
 	
 	=============================================================================
 	
+
+{% endraw %}

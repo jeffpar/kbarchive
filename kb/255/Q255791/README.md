@@ -6,6 +6,8 @@ permalink: /kb/255/Q255791/
 
 ## Q255791: XADM: Inappropriate Authentication with Mailbox Manager
 
+{% raw %}
+
 	Article: Q255791
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -63,3 +65,5 @@ permalink: /kb/255/Q255791/
 	
 	=============================================================================
 	
+
+{% endraw %}

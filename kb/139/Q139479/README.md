@@ -6,6 +6,8 @@ permalink: /kb/139/Q139479/
 
 ## Q139479: PRB: Uninstaller Error When Attempting to Uninstall Visual C++
 
+{% raw %}
+
 	Article: Q139479
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 5.0
@@ -66,3 +68,5 @@ permalink: /kb/139/Q139479/
 	
 	=============================================================================
 	
+
+{% endraw %}

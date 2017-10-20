@@ -6,6 +6,8 @@ permalink: /kb/235/Q235959/
 
 ## Q235959: SNA Server Fails to Reestablish Session Under Certain Conditions
 
+{% raw %}
+
 	Article: Q235959
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
@@ -87,3 +89,5 @@ permalink: /kb/235/Q235959/
 	
 	=============================================================================
 	
+
+{% endraw %}

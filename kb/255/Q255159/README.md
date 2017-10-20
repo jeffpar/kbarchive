@@ -6,6 +6,8 @@ permalink: /kb/255/Q255159/
 
 ## Q255159: How to Disable File and Printer Sharing in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q255159
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -114,3 +116,5 @@ permalink: /kb/255/Q255159/
 	
 	=============================================================================
 	
+
+{% endraw %}

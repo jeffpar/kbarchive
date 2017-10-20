@@ -6,6 +6,8 @@ permalink: /kb/134/Q134383/
 
 ## Q134383: PC NTMMTA: NT MMTA Not Supported Under OS/2 (Any Version)
 
+{% raw %}
+
 	Article: Q134383
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -44,3 +46,5 @@ permalink: /kb/134/Q134383/
 	
 	=============================================================================
 	
+
+{% endraw %}

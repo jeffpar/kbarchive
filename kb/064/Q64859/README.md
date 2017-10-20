@@ -6,6 +6,8 @@ permalink: /kb/064/Q64859/
 
 ## Q64859: Testing the Connection to a PostScript Printer
 
+{% raw %}
+
 	Article: Q64859
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -93,3 +95,5 @@ permalink: /kb/064/Q64859/
 	
 	=============================================================================
 	
+
+{% endraw %}

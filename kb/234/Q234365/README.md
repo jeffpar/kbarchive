@@ -6,6 +6,8 @@ permalink: /kb/234/Q234365/
 
 ## Q234365: XADM: ISINTEG -Patch May Take Several Hours to Finish
 
+{% raw %}
+
 	Article: Q234365
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/234/Q234365/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101151/
 
 ## Q101151: Can't Modify Screen or Form without a Mouse
 
+{% raw %}
+
 	Article: Q101151
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0
@@ -43,3 +45,5 @@ permalink: /kb/101/Q101151/
 	
 	=============================================================================
 	
+
+{% endraw %}

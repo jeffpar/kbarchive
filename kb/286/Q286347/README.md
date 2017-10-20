@@ -6,6 +6,8 @@ permalink: /kb/286/Q286347/
 
 ## Q286347: PRB: Can't Connect to VCM Database from Client with Older VCM
 
+{% raw %}
+
 	Article: Q286347
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -79,3 +81,5 @@ permalink: /kb/286/Q286347/
 	
 	=============================================================================
 	
+
+{% endraw %}

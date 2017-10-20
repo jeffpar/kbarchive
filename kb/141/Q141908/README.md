@@ -6,6 +6,8 @@ permalink: /kb/141/Q141908/
 
 ## Q141908: PRB: Arrow Key Inconsistency in List Boxes
 
+{% raw %}
+
 	Article: Q141908
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -73,3 +75,5 @@ permalink: /kb/141/Q141908/
 	
 	=============================================================================
 	
+
+{% endraw %}

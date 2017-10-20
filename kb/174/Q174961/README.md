@@ -6,6 +6,8 @@ permalink: /kb/174/Q174961/
 
 ## Q174961: SMS: Client Services Do Not Upgrade Automatically
 
+{% raw %}
+
 	Article: Q174961
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -86,3 +88,5 @@ permalink: /kb/174/Q174961/
 	
 	=============================================================================
 	
+
+{% endraw %}

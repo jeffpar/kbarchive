@@ -6,6 +6,8 @@ permalink: /kb/183/Q183241/
 
 ## Q183241: Host Account Cache Database Shows High CPU Utilization
 
+{% raw %}
+
 	Article: Q183241
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -59,3 +61,5 @@ permalink: /kb/183/Q183241/
 	
 	=============================================================================
 	
+
+{% endraw %}

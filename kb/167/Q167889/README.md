@@ -6,6 +6,8 @@ permalink: /kb/167/Q167889/
 
 ## Q167889: Missing or Damaged Vmm32.vxd File in OSR2.1 Setup
 
+{% raw %}
+
 	Article: Q167889
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -111,3 +113,5 @@ permalink: /kb/167/Q167889/
 	
 	=============================================================================
 	
+
+{% endraw %}

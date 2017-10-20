@@ -6,6 +6,8 @@ permalink: /kb/300/Q300422/
 
 ## Q300422: HOWTO: Rebuild the Index of the MSDN Library
 
+{% raw %}
+
 	Article: Q300422
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/300/Q300422/
 	
 	=============================================================================
 	
+
+{% endraw %}

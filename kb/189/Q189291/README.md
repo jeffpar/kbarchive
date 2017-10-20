@@ -6,6 +6,8 @@ permalink: /kb/189/Q189291/
 
 ## Q189291: Hang in Winlogon on Workstation Locked Dialog Box
 
+{% raw %}
+
 	Article: Q189291
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/189/Q189291/
 	
 	=============================================================================
 	
+
+{% endraw %}

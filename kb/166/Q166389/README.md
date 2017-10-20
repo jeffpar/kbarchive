@@ -6,6 +6,8 @@ permalink: /kb/166/Q166389/
 
 ## Q166389: Err Msg: Cannot Find File or One of its Components
 
+{% raw %}
+
 	Article: Q166389
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0,4.0
@@ -70,3 +72,5 @@ permalink: /kb/166/Q166389/
 	
 	=============================================================================
 	
+
+{% endraw %}

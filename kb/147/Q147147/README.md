@@ -6,6 +6,8 @@ permalink: /kb/147/Q147147/
 
 ## Q147147: XCLN: Cannot Select Multiple Files to Attach to a New Message
 
+{% raw %}
+
 	Article: Q147147
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -50,3 +52,5 @@ permalink: /kb/147/Q147147/
 	
 	=============================================================================
 	
+
+{% endraw %}

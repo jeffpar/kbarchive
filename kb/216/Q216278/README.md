@@ -6,6 +6,8 @@ permalink: /kb/216/Q216278/
 
 ## Q216278: BUG: Unspecified Error When Running VB Program Hosting ATL Ctrl
 
+{% raw %}
+
 	Article: Q216278
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0,6.0
@@ -70,3 +72,5 @@ permalink: /kb/216/Q216278/
 	
 	=============================================================================
 	
+
+{% endraw %}

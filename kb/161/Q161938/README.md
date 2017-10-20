@@ -6,6 +6,8 @@ permalink: /kb/161/Q161938/
 
 ## Q161938: Slow Exchange Client Logons Due to Resource Deadlock
 
+{% raw %}
+
 	Article: Q161938
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.51,4.0
@@ -140,3 +142,5 @@ permalink: /kb/161/Q161938/
 	
 	=============================================================================
 	
+
+{% endraw %}

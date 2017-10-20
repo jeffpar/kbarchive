@@ -6,6 +6,8 @@ permalink: /kb/286/Q286248/
 
 ## Q286248: MechWarrior 4: Autoconfig Utility Resets to Default Settings
 
+{% raw %}
+
 	Article: Q286248
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/286/Q286248/
 	
 	=============================================================================
 	
+
+{% endraw %}

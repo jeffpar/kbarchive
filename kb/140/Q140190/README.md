@@ -6,6 +6,8 @@ permalink: /kb/140/Q140190/
 
 ## Q140190: PC Win: CONVERT.EXE Not Converting Folders with Mac Attachment
 
+{% raw %}
+
 	Article: Q140190
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2a,3.5
@@ -73,3 +75,5 @@ permalink: /kb/140/Q140190/
 	
 	=============================================================================
 	
+
+{% endraw %}

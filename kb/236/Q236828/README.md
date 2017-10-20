@@ -6,6 +6,8 @@ permalink: /kb/236/Q236828/
 
 ## Q236828: PRB: IE_UNEXPECTED Returned from IRowsetChange::DeleteRows
 
+{% raw %}
+
 	Article: Q236828
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0,7.0,7.01
@@ -83,3 +85,5 @@ permalink: /kb/236/Q236828/
 	
 	=============================================================================
 	
+
+{% endraw %}

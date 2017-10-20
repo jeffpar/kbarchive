@@ -6,6 +6,8 @@ permalink: /kb/175/Q175675/
 
 ## Q175675: Repeatedly Disconnected From ISP After a Set Amount of Time
 
+{% raw %}
+
 	Article: Q175675
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -53,3 +55,5 @@ permalink: /kb/175/Q175675/
 	
 	=============================================================================
 	
+
+{% endraw %}

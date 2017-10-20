@@ -6,6 +6,8 @@ permalink: /kb/102/Q102107/
 
 ## Q102107: SMTP: Err Msg: ERROR Network_Read: Lost Network Connection
 
+{% raw %}
+
 	Article: Q102107
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -100,3 +102,5 @@ permalink: /kb/102/Q102107/
 	
 	=============================================================================
 	
+
+{% endraw %}

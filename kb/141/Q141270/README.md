@@ -6,6 +6,8 @@ permalink: /kb/141/Q141270/
 
 ## Q141270: Day Starts/Ends At Settings Rounded to 30 Minutes
 
+{% raw %}
+
 	Article: Q141270
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -51,3 +53,5 @@ permalink: /kb/141/Q141270/
 	
 	=============================================================================
 	
+
+{% endraw %}

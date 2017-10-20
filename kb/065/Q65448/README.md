@@ -6,6 +6,8 @@ permalink: /kb/065/Q65448/
 
 ## Q65448: Undoing a Deck Turn Over Decrements the Pass Counter
 
+{% raw %}
+
 	Article: Q65448
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -42,3 +44,5 @@ permalink: /kb/065/Q65448/
 	
 	=============================================================================
 	
+
+{% endraw %}

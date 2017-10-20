@@ -6,6 +6,8 @@ permalink: /kb/163/Q163785/
 
 ## Q163785: FIX: &quot;Error Instantiating Application Object&quot; on Windows NT
 
+{% raw %}
+
 	Article: Q163785
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -90,3 +92,5 @@ permalink: /kb/163/Q163785/
 	
 	=============================================================================
 	
+
+{% endraw %}

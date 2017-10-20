@@ -6,6 +6,8 @@ permalink: /kb/244/Q244736/
 
 ## Q244736: Asheron's Call: Character Created at a Previous Time Is Missing
 
+{% raw %}
+
 	Article: Q244736
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -99,3 +101,5 @@ permalink: /kb/244/Q244736/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194351/
 
 ## Q194351: Read Errors After Primary Member of Mirror Set Fails
 
+{% raw %}
+
 	Article: Q194351
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/194/Q194351/
 	
 	=============================================================================
 	
+
+{% endraw %}

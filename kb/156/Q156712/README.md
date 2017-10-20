@@ -6,6 +6,8 @@ permalink: /kb/156/Q156712/
 
 ## Q156712: XCLN: CMD Key Does Not Work in the MAC Inbox Assistant
 
+{% raw %}
+
 	Article: Q156712
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -54,3 +56,5 @@ permalink: /kb/156/Q156712/
 	
 	=============================================================================
 	
+
+{% endraw %}

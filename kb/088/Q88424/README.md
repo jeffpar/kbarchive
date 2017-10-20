@@ -6,6 +6,8 @@ permalink: /kb/088/Q88424/
 
 ## Q88424: DOS Applications Running in a Window Can't Use a Mouse
 
+{% raw %}
+
 	Article: Q88424
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -41,3 +43,5 @@ permalink: /kb/088/Q88424/
 	
 	=============================================================================
 	
+
+{% endraw %}

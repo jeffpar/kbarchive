@@ -6,6 +6,8 @@ permalink: /kb/242/Q242361/
 
 ## Q242361: RPC &quot;Server is Unavailable&quot; Message When Audit Log is Full
 
+{% raw %}
+
 	Article: Q242361
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5
@@ -113,3 +115,5 @@ permalink: /kb/242/Q242361/
 	
 	=============================================================================
 	
+
+{% endraw %}

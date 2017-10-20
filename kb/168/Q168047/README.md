@@ -6,6 +6,8 @@ permalink: /kb/168/Q168047/
 
 ## Q168047: HOWTO: STL Sample for &#91;list::remove, remove_if&#93; Function(s)
 
+{% raw %}
+
 	Article: Q168047
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -165,3 +167,5 @@ permalink: /kb/168/Q168047/
 	
 	=============================================================================
 	
+
+{% endraw %}

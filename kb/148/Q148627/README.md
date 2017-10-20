@@ -6,6 +6,8 @@ permalink: /kb/148/Q148627/
 
 ## Q148627: BUG: NMAKE Fails If File Names Contain Special Characters
 
+{% raw %}
+
 	Article: Q148627
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/148/Q148627/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84349/
 
 ## Q84349: Windows 3.1 Does Not Install MS-DOS Mouse Driver
 
+{% raw %}
+
 	Article: Q84349
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/084/Q84349/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159994/
 
 ## Q159994: SFM Does Not Unlock Record After PC Releases Lock
 
+{% raw %}
+
 	Article: Q159994
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -64,3 +66,5 @@ permalink: /kb/159/Q159994/
 	
 	=============================================================================
 	
+
+{% endraw %}

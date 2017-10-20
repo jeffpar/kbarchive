@@ -6,6 +6,8 @@ permalink: /kb/284/Q284277/
 
 ## Q284277: Casino: Game Quits Unexpectedly
 
+{% raw %}
+
 	Article: Q284277
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/284/Q284277/
 	
 	=============================================================================
 	
+
+{% endraw %}

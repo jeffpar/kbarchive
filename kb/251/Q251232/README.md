@@ -6,6 +6,8 @@ permalink: /kb/251/Q251232/
 
 ## Q251232: BUG: MFC Dockable Toolbars Do Not Paint Correctly
 
+{% raw %}
+
 	Article: Q251232
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -111,3 +113,5 @@ permalink: /kb/251/Q251232/
 	
 	=============================================================================
 	
+
+{% endraw %}

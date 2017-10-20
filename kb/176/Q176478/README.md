@@ -6,6 +6,8 @@ permalink: /kb/176/Q176478/
 
 ## Q176478: WD97: TimeOut Argument Ignored by Some Dialog Boxes
 
+{% raw %}
+
 	Article: Q176478
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/176/Q176478/
 	
 	=============================================================================
 	
+
+{% endraw %}

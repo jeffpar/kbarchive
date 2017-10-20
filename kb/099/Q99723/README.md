@@ -6,6 +6,8 @@ permalink: /kb/099/Q99723/
 
 ## Q99723: Mac Srv: Large Messages Stuck in Outgoing Queue
 
+{% raw %}
+
 	Article: Q99723
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0a,3.0b,3.1,3.1a
@@ -72,3 +74,5 @@ permalink: /kb/099/Q99723/
 	
 	=============================================================================
 	
+
+{% endraw %}

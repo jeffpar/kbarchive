@@ -6,6 +6,8 @@ permalink: /kb/165/Q165237/
 
 ## Q165237: FIX: Word 97 Document Added to Visual SourceSafe as Text File
 
+{% raw %}
+
 	Article: Q165237
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0
@@ -107,3 +109,5 @@ permalink: /kb/165/Q165237/
 	
 	=============================================================================
 	
+
+{% endraw %}

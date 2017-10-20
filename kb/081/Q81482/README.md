@@ -6,6 +6,8 @@ permalink: /kb/081/Q81482/
 
 ## Q81482: Windows: Tandy 2102 Prints Sixes or Random Characters
 
+{% raw %}
+
 	Article: Q81482
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -61,3 +63,5 @@ permalink: /kb/081/Q81482/
 	
 	=============================================================================
 	
+
+{% endraw %}

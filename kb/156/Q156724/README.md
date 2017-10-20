@@ -6,6 +6,8 @@ permalink: /kb/156/Q156724/
 
 ## Q156724: XCON: Messages Cannot Be Sent to Remote MTA, Repeated Err 2171
 
+{% raw %}
+
 	Article: Q156724
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/156/Q156724/
 	
 	=============================================================================
 	
+
+{% endraw %}

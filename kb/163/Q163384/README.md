@@ -6,6 +6,8 @@ permalink: /kb/163/Q163384/
 
 ## Q163384: NBA: Patches with Updated Rosters Available on Web
 
+{% raw %}
+
 	Article: Q163384
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/163/Q163384/
 	
 	=============================================================================
 	
+
+{% endraw %}

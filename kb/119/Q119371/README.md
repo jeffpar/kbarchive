@@ -6,6 +6,8 @@ permalink: /kb/119/Q119371/
 
 ## Q119371: DEC 205 EtherNet Card and TCP/IP-32
 
+{% raw %}
+
 	Article: Q119371
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 1.00
@@ -51,3 +53,5 @@ permalink: /kb/119/Q119371/
 	
 	=============================================================================
 	
+
+{% endraw %}

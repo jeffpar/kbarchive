@@ -6,6 +6,8 @@ permalink: /kb/248/Q248071/
 
 ## Q248071: HOWTO: Distribute a Custom DLL with Your eVB Application
 
+{% raw %}
+
 	Article: Q248071
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -122,3 +124,5 @@ permalink: /kb/248/Q248071/
 	
 	=============================================================================
 	
+
+{% endraw %}

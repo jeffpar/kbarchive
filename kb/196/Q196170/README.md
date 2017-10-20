@@ -6,6 +6,8 @@ permalink: /kb/196/Q196170/
 
 ## Q196170: XADM: Unreadable Message Flash when You Press the F1 Key
 
+{% raw %}
+
 	Article: Q196170
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -50,3 +52,5 @@ permalink: /kb/196/Q196170/
 	
 	=============================================================================
 	
+
+{% endraw %}

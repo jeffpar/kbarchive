@@ -6,6 +6,8 @@ permalink: /kb/044/Q44057/
 
 ## Q44057: MS123 Mouse Menu Not Correctly Positioning Cursor
 
+{% raw %}
+
 	Article: Q44057
 	Product(s): See article
 	Version(s): 1.x 2.x 3.x 4.x 5.x 6.x 1.00
@@ -25,3 +27,5 @@ permalink: /kb/044/Q44057/
 	place the mouse cursor on the appropriate arrow keys that appear on
 	the right side of the screen, or resort to using the keyboard cursor
 	keys.
+
+{% endraw %}

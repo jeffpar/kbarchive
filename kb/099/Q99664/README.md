@@ -6,6 +6,8 @@ permalink: /kb/099/Q99664/
 
 ## Q99664: PC Forms: Err Msg: MAPI Failure
 
+{% raw %}
+
 	Article: Q99664
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/099/Q99664/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176650/
 
 ## Q176650: INFO: Microsoft Developer Network Support Policies
 
+{% raw %}
+
 	Article: Q176650
 	Product(s): Microsoft Developer Network
 	Version(s): winnt:
@@ -47,3 +49,5 @@ permalink: /kb/176/Q176650/
 	
 	=============================================================================
 	
+
+{% endraw %}

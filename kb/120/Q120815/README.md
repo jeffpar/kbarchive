@@ -6,6 +6,8 @@ permalink: /kb/120/Q120815/
 
 ## Q120815: Modified Windows Sound System Setup with Adaptec 1570 &amp; 1572
 
+{% raw %}
+
 	Article: Q120815
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.0
@@ -40,3 +42,5 @@ permalink: /kb/120/Q120815/
 	
 	=============================================================================
 	
+
+{% endraw %}

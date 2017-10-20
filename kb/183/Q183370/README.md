@@ -6,6 +6,8 @@ permalink: /kb/183/Q183370/
 
 ## Q183370: PRB: System Error &quot;No Such Interface Supported&quot;
 
+{% raw %}
+
 	Article: Q183370
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -86,3 +88,5 @@ permalink: /kb/183/Q183370/
 	
 	=============================================================================
 	
+
+{% endraw %}

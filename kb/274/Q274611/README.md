@@ -6,6 +6,8 @@ permalink: /kb/274/Q274611/
 
 ## Q274611: CFS2: Green Lines Appear on Screen or Buttons Are Misplaced
 
+{% raw %}
+
 	Article: Q274611
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/274/Q274611/
 	
 	=============================================================================
 	
+
+{% endraw %}

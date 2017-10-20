@@ -6,6 +6,8 @@ permalink: /kb/105/Q105061/
 
 ## Q105061: ScanDisk Fails to Reset Video Mode Correctly
 
+{% raw %}
+
 	Article: Q105061
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -43,3 +45,5 @@ permalink: /kb/105/Q105061/
 	
 	=============================================================================
 	
+
+{% endraw %}

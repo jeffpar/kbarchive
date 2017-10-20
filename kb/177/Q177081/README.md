@@ -6,6 +6,8 @@ permalink: /kb/177/Q177081/
 
 ## Q177081: BUG: Control Displays Dithered Background in 256-Color Mode
 
+{% raw %}
+
 	Article: Q177081
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -108,3 +110,5 @@ permalink: /kb/177/Q177081/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152493/
 
 ## Q152493: FIX: ISAPI Extension Wizard Generates Bad OnAuthentication
 
+{% raw %}
+
 	Article: Q152493
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.1
@@ -85,3 +87,5 @@ permalink: /kb/152/Q152493/
 	
 	=============================================================================
 	
+
+{% endraw %}

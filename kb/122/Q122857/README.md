@@ -6,6 +6,8 @@ permalink: /kb/122/Q122857/
 
 ## Q122857: RDISK /S and RDISK /S- Options in Windows NT
 
+{% raw %}
+
 	Article: Q122857
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/122/Q122857/
 	
 	=============================================================================
 	
+
+{% endraw %}

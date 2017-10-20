@@ -6,6 +6,8 @@ permalink: /kb/163/Q163331/
 
 ## Q163331: Cirrus Logic Video Causes Event ID 21 on MIPS Computers
 
+{% raw %}
+
 	Article: Q163331
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/163/Q163331/
 	
 	=============================================================================
 	
+
+{% endraw %}

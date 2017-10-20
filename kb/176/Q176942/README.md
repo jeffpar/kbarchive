@@ -6,6 +6,8 @@ permalink: /kb/176/Q176942/
 
 ## Q176942: Fatal Exception Error or Computer Hangs with Incoming Fax
 
+{% raw %}
+
 	Article: Q176942
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -62,3 +64,5 @@ permalink: /kb/176/Q176942/
 	
 	=============================================================================
 	
+
+{% endraw %}

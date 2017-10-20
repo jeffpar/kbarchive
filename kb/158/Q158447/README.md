@@ -6,6 +6,8 @@ permalink: /kb/158/Q158447/
 
 ## Q158447: How to Run a Program Only Once After Unattended Setup of WinNT
 
+{% raw %}
+
 	Article: Q158447
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -191,3 +193,5 @@ permalink: /kb/158/Q158447/
 	
 	=============================================================================
 	
+
+{% endraw %}

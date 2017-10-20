@@ -6,6 +6,8 @@ permalink: /kb/169/Q169880/
 
 ## Q169880: How to Use Group Policies with MSNDS in Windows 95
 
+{% raw %}
+
 	Article: Q169880
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -107,3 +109,5 @@ permalink: /kb/169/Q169880/
 	
 	=============================================================================
 	
+
+{% endraw %}

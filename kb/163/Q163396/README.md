@@ -6,6 +6,8 @@ permalink: /kb/163/Q163396/
 
 ## Q163396: PRB: Creating Regular Indexes Through VFP ODBC Driver
 
+{% raw %}
+
 	Article: Q163396
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -164,3 +166,5 @@ permalink: /kb/163/Q163396/
 	
 	=============================================================================
 	
+
+{% endraw %}

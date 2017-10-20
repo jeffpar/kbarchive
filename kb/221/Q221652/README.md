@@ -6,6 +6,8 @@ permalink: /kb/221/Q221652/
 
 ## Q221652: FIX: Filter Ignored With REPORT FORM...NOWAIT and DE Table
 
+{% raw %}
+
 	Article: Q221652
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -74,3 +76,5 @@ permalink: /kb/221/Q221652/
 	
 	=============================================================================
 	
+
+{% endraw %}

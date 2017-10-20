@@ -6,6 +6,8 @@ permalink: /kb/041/Q41652/
 
 ## Q41652: QuickC 2.00 README.DOC: /Li (Link Incrementally)
 
+{% raw %}
+
 	Article: Q41652
 	Product(s): See article
 	Version(s): 2.00
@@ -37,3 +39,5 @@ permalink: /kb/041/Q41652/
 	This condition does not apply if you compile ("build") within the
 	QuickC environment. It affects only the QCL program that you run from
 	the DOS prompt and only when you change a linker-related option.
+
+{% endraw %}

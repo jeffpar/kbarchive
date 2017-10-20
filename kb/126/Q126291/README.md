@@ -6,6 +6,8 @@ permalink: /kb/126/Q126291/
 
 ## Q126291: PC MAPI: How MAPIResolveName Works
 
+{% raw %}
+
 	Article: Q126291
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -63,3 +65,5 @@ permalink: /kb/126/Q126291/
 	
 	=============================================================================
 	
+
+{% endraw %}

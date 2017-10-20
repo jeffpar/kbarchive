@@ -6,6 +6,8 @@ permalink: /kb/179/Q179982/
 
 ## Q179982: Windows NT 4.0 Support for Multicast TCP/IP Packets
 
+{% raw %}
+
 	Article: Q179982
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -46,3 +48,5 @@ permalink: /kb/179/Q179982/
 	
 	=============================================================================
 	
+
+{% endraw %}

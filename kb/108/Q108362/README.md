@@ -6,6 +6,8 @@ permalink: /kb/108/Q108362/
 
 ## Q108362: Changes Made by Video for Windows 1.1 Run-Time Installation
 
+{% raw %}
+
 	Article: Q108362
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.1
@@ -134,3 +136,5 @@ permalink: /kb/108/Q108362/
 	
 	=============================================================================
 	
+
+{% endraw %}

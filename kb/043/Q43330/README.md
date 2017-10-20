@@ -6,6 +6,8 @@ permalink: /kb/043/Q43330/
 
 ## Q43330: How to Use _remappalette in EGA Modes
 
+{% raw %}
+
 	Article: Q43330
 	Product(s): See article
 	Version(s): 5.10
@@ -149,3 +151,5 @@ permalink: /kb/043/Q43330/
 	
 	    return (lColor) ;
 	}
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157002/
 
 ## Q157002: XCLN: Attachments Might be Lost When Moving from OST to Server
 
+{% raw %}
+
 	Article: Q157002
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -57,3 +59,5 @@ permalink: /kb/157/Q157002/
 	
 	=============================================================================
 	
+
+{% endraw %}

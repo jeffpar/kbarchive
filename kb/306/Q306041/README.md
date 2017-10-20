@@ -6,6 +6,8 @@ permalink: /kb/306/Q306041/
 
 ## Q306041: Err Msg: 0x800CCC78 SMTP Rejected Sender (Outlook Express)
 
+{% raw %}
+
 	Article: Q306041
 	Product(s): The Microsoft Network
 	Version(s): 2.6,5.0,5.1,5.2,5.3,5.4,5.5
@@ -65,3 +67,5 @@ permalink: /kb/306/Q306041/
 	
 	=============================================================================
 	
+
+{% endraw %}

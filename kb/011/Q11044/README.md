@@ -6,6 +6,8 @@ permalink: /kb/011/Q11044/
 
 ## Q11044: EXEMOD Cannot Be Used with Windows Files
 
+{% raw %}
+
 	Article: Q11044
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -36,3 +38,5 @@ permalink: /kb/011/Q11044/
 	
 	=============================================================================
 	
+
+{% endraw %}

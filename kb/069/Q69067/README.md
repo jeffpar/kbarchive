@@ -6,6 +6,8 @@ permalink: /kb/069/Q69067/
 
 ## Q69067: Even and Align Directives Are Ignored in Inline Assembly
 
+{% raw %}
+
 	Article: Q69067
 	Product(s): See article
 	Version(s): 2.00 2.01 2.50 2.51
@@ -40,3 +42,5 @@ permalink: /kb/069/Q69067/
 	2.01, 2.50, 2.51 and C versions 6.00, and 6.00a (buglist6.00 and
 	buglist6.00a). We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

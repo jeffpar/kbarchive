@@ -6,6 +6,8 @@ permalink: /kb/177/Q177867/
 
 ## Q177867: XCON: NDR Not Received When Sending to Bad PAB Entry
 
+{% raw %}
+
 	Article: Q177867
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0 5.5
@@ -118,3 +120,5 @@ permalink: /kb/177/Q177867/
 	
 	=============================================================================
 	
+
+{% endraw %}

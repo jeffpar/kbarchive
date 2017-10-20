@@ -6,6 +6,8 @@ permalink: /kb/263/Q263718/
 
 ## Q263718: XADM: Performance Optimizer Service Restart Stops on KM Server
 
+{% raw %}
+
 	Article: Q263718
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -70,3 +72,5 @@ permalink: /kb/263/Q263718/
 	
 	=============================================================================
 	
+
+{% endraw %}

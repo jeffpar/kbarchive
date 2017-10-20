@@ -6,6 +6,8 @@ permalink: /kb/070/Q70772/
 
 ## Q70772: How the HP Intellifont Setup Modifies Windows 3.0
 
+{% raw %}
+
 	Article: Q70772
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -102,3 +104,5 @@ permalink: /kb/070/Q70772/
 	
 	=============================================================================
 	
+
+{% endraw %}

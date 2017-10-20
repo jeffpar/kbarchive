@@ -6,6 +6,8 @@ permalink: /kb/278/Q278613/
 
 ## Q278613: FP: Querying a Database Using Multiple Criteria, Drop-Down Menu
 
+{% raw %}
+
 	Article: Q278613
 	Product(s): Word Front Page
 	Version(s): 
@@ -258,3 +260,5 @@ permalink: /kb/278/Q278613/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/314/Q314431/
 
 ## Q314431: PRB: Programmatically Changing Focus Does Not Cause Validation
 
+{% raw %}
+
 	Article: Q314431
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -133,3 +135,5 @@ permalink: /kb/314/Q314431/
 	
 	=============================================================================
 	
+
+{% endraw %}

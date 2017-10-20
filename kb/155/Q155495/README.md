@@ -6,6 +6,8 @@ permalink: /kb/155/Q155495/
 
 ## Q155495: Reference Counter Overflow in Security Descriptor Causes STOP
 
+{% raw %}
+
 	Article: Q155495
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -67,3 +69,5 @@ permalink: /kb/155/Q155495/
 	
 	=============================================================================
 	
+
+{% endraw %}

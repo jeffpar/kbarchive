@@ -6,6 +6,8 @@ permalink: /kb/101/Q101682/
 
 ## Q101682: SMTP: Err Msg: ERROR: network_read: timed out
 
+{% raw %}
+
 	Article: Q101682
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -64,3 +66,5 @@ permalink: /kb/101/Q101682/
 	
 	=============================================================================
 	
+
+{% endraw %}

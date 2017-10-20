@@ -6,6 +6,8 @@ permalink: /kb/044/Q44793/
 
 ## Q44793: Using Third-Party Libraries Produced for C Version 4.00
 
+{% raw %}
+
 	Article: Q44793
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 | 5.10
@@ -36,3 +38,5 @@ permalink: /kb/044/Q44793/
 	
 	If there are still linker errors, you must request library updates
 	from the third-party vendor.
+
+{% endraw %}

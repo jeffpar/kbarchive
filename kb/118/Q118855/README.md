@@ -6,6 +6,8 @@ permalink: /kb/118/Q118855/
 
 ## Q118855: PC DB: How to Reset the MODEM.GLB File
 
+{% raw %}
+
 	Article: Q118855
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -79,3 +81,5 @@ permalink: /kb/118/Q118855/
 	
 	=============================================================================
 	
+
+{% endraw %}

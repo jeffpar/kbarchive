@@ -6,6 +6,8 @@ permalink: /kb/112/Q112342/
 
 ## Q112342: FIX: Format Editor Problems with Repeatable A Edit Descriptor
 
+{% raw %}
+
 	Article: Q112342
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -73,3 +75,5 @@ permalink: /kb/112/Q112342/
 	
 	=============================================================================
 	
+
+{% endraw %}

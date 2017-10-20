@@ -6,6 +6,8 @@ permalink: /kb/152/Q152888/
 
 ## Q152888: XADM: Profile Wizard Fails to Upgrade MMF
 
+{% raw %}
+
 	Article: Q152888
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -44,3 +46,5 @@ permalink: /kb/152/Q152888/
 	
 	=============================================================================
 	
+
+{% endraw %}

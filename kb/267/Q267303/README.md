@@ -6,6 +6,8 @@ permalink: /kb/267/Q267303/
 
 ## Q267303: BUG: Creating Project Under Template Folder Excludes Files
 
+{% raw %}
+
 	Article: Q267303
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -79,3 +81,5 @@ permalink: /kb/267/Q267303/
 	
 	=============================================================================
 	
+
+{% endraw %}

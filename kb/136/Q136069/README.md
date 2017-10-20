@@ -6,6 +6,8 @@ permalink: /kb/136/Q136069/
 
 ## Q136069: FIX: Visual C++ Build Process Won't Return If Missing ')'
 
+{% raw %}
+
 	Article: Q136069
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.10,2.20
@@ -75,3 +77,5 @@ permalink: /kb/136/Q136069/
 	
 	=============================================================================
 	
+
+{% endraw %}

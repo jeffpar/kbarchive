@@ -6,6 +6,8 @@ permalink: /kb/130/Q130512/
 
 ## Q130512: PC NTMMTA: Cannot Browse Service Accounts on NT Server
 
+{% raw %}
+
 	Article: Q130512
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -51,3 +53,5 @@ permalink: /kb/130/Q130512/
 	
 	=============================================================================
 	
+
+{% endraw %}

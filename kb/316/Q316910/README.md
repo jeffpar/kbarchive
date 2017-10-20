@@ -6,6 +6,8 @@ permalink: /kb/316/Q316910/
 
 ## Q316910: HOWTO: Create an Auto-ID Field in a FoxPro DBF via ADO and ASP
 
+{% raw %}
+
 	Article: Q316910
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -209,3 +211,5 @@ permalink: /kb/316/Q316910/
 	
 	=============================================================================
 	
+
+{% endraw %}

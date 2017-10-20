@@ -6,6 +6,8 @@ permalink: /kb/127/Q127026/
 
 ## Q127026: SMS Error 5000 on Macintosh Client
 
+{% raw %}
+
 	Article: Q127026
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -59,3 +61,5 @@ permalink: /kb/127/Q127026/
 	
 	=============================================================================
 	
+
+{% endraw %}

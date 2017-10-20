@@ -6,6 +6,8 @@ permalink: /kb/093/Q93557/
 
 ## Q93557: Controlling the Maximum Open Volumes for LMSFM
 
+{% raw %}
+
 	Article: Q93557
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/093/Q93557/
 	
 	=============================================================================
 	
+
+{% endraw %}

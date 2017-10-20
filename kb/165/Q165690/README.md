@@ -6,6 +6,8 @@ permalink: /kb/165/Q165690/
 
 ## Q165690: INFO: Visual C++ 5.0 Readme, Microsoft Transaction Server
 
+{% raw %}
+
 	Article: Q165690
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -179,3 +181,5 @@ permalink: /kb/165/Q165690/
 	
 	=============================================================================
 	
+
+{% endraw %}

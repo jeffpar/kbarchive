@@ -6,6 +6,8 @@ permalink: /kb/094/Q94560/
 
 ## Q94560: Sound Finder &amp; Quick Recorder Description &amp; Label Text Limits
 
+{% raw %}
+
 	Article: Q94560
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.00
@@ -54,3 +56,5 @@ permalink: /kb/094/Q94560/
 	
 	=============================================================================
 	
+
+{% endraw %}

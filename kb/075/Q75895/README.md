@@ -6,6 +6,8 @@ permalink: /kb/075/Q75895/
 
 ## Q75895: EMM386.EXE Exclude Ranges for IBM Token Ring Card
 
+{% raw %}
+
 	Article: Q75895
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -69,3 +71,5 @@ permalink: /kb/075/Q75895/
 	
 	=============================================================================
 	
+
+{% endraw %}

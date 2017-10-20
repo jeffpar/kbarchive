@@ -6,6 +6,8 @@ permalink: /kb/143/Q143324/
 
 ## Q143324: FP: HTTP Error 404 Opening Deleted Web
 
+{% raw %}
+
 	Article: Q143324
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97
@@ -77,3 +79,5 @@ permalink: /kb/143/Q143324/
 	
 	=============================================================================
 	
+
+{% endraw %}

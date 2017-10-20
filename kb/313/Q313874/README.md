@@ -6,6 +6,8 @@ permalink: /kb/313/Q313874/
 
 ## Q313874: SMSINST: SMS Installer Does Not Overwrite Identical Files
 
+{% raw %}
+
 	Article: Q313874
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -57,3 +59,5 @@ permalink: /kb/313/Q313874/
 	
 	=============================================================================
 	
+
+{% endraw %}

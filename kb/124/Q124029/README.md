@@ -6,6 +6,8 @@ permalink: /kb/124/Q124029/
 
 ## Q124029: No Site-Based Mapping for Single-Domain-Multiple-Site Clients
 
+{% raw %}
+
 	Article: Q124029
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -56,3 +58,5 @@ permalink: /kb/124/Q124029/
 	
 	=============================================================================
 	
+
+{% endraw %}

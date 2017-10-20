@@ -6,6 +6,8 @@ permalink: /kb/104/Q104191/
 
 ## Q104191: NCR Wavelan Cards Need the Same Network ID Number
 
+{% raw %}
+
 	Article: Q104191
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/104/Q104191/
 	
 	=============================================================================
 	
+
+{% endraw %}

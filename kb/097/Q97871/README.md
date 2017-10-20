@@ -6,6 +6,8 @@ permalink: /kb/097/Q97871/
 
 ## Q97871: LAN Manager Limits Number of ACLs on a FAT Partition
 
+{% raw %}
+
 	Article: Q97871
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/097/Q97871/
 	
 	=============================================================================
 	
+
+{% endraw %}

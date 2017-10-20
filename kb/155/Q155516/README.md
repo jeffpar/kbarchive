@@ -6,6 +6,8 @@ permalink: /kb/155/Q155516/
 
 ## Q155516: How to Remove the Lexmark MarkVision Monitor
 
+{% raw %}
+
 	Article: Q155516
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -140,3 +142,5 @@ permalink: /kb/155/Q155516/
 	
 	=============================================================================
 	
+
+{% endraw %}

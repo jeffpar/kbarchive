@@ -6,6 +6,8 @@ permalink: /kb/154/Q154576/
 
 ## Q154576: HOWTO: Write to the Windows NT Event Log from Visual Basic
 
+{% raw %}
+
 	Article: Q154576
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -182,3 +184,5 @@ permalink: /kb/154/Q154576/
 	
 	=============================================================================
 	
+
+{% endraw %}

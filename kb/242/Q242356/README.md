@@ -6,6 +6,8 @@ permalink: /kb/242/Q242356/
 
 ## Q242356: Remote Control Logging Does Not Work in SMS 2.0 SP1
 
+{% raw %}
+
 	Article: Q242356
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1
@@ -60,3 +62,5 @@ permalink: /kb/242/Q242356/
 	
 	=============================================================================
 	
+
+{% endraw %}

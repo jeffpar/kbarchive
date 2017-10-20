@@ -6,6 +6,8 @@ permalink: /kb/066/Q66925/
 
 ## Q66925: _getfontinfo and Vector Mapped Fonts
 
+{% raw %}
+
 	Article: Q66925
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -31,3 +33,5 @@ permalink: /kb/066/Q66925/
 	avgwidth will need to be recalculated. The factor can be determined by
 	dividing the pixheight value returned from _getfontinfo() by the Hy
 	parameter passed to _setfont().
+
+{% endraw %}

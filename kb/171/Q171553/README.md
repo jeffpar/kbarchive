@@ -6,6 +6,8 @@ permalink: /kb/171/Q171553/
 
 ## Q171553: FIX: VFP May Crash While Running MS Web Browser Control
 
+{% raw %}
+
 	Article: Q171553
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a; WINNT:97,97sp1,97sp2
@@ -75,3 +77,5 @@ permalink: /kb/171/Q171553/
 	
 	=============================================================================
 	
+
+{% endraw %}

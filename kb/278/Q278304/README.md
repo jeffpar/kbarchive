@@ -6,6 +6,8 @@ permalink: /kb/278/Q278304/
 
 ## Q278304: CFS2: How to Troubleshoot Performance Issues
 
+{% raw %}
+
 	Article: Q278304
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -117,3 +119,5 @@ permalink: /kb/278/Q278304/
 	
 	=============================================================================
 	
+
+{% endraw %}

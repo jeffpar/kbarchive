@@ -6,6 +6,8 @@ permalink: /kb/105/Q105254/
 
 ## Q105254: DoubleSpace Automount Fails After You Free a Drive Letter
 
+{% raw %}
+
 	Article: Q105254
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -53,3 +55,5 @@ permalink: /kb/105/Q105254/
 	
 	=============================================================================
 	
+
+{% endraw %}

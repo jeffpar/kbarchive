@@ -6,6 +6,8 @@ permalink: /kb/172/Q172291/
 
 ## Q172291: Snacfg.exe Does Not Support Omission of LOCALBLOCKNO
 
+{% raw %}
+
 	Article: Q172291
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -68,3 +70,5 @@ permalink: /kb/172/Q172291/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249105/
 
 ## Q249105: &quot;Short Date Style&quot; Setting May Not Maintain 4-Digit Year Format
 
+{% raw %}
+
 	Article: Q249105
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -53,3 +55,5 @@ permalink: /kb/249/Q249105/
 	
 	=============================================================================
 	
+
+{% endraw %}

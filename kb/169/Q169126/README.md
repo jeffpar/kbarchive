@@ -6,6 +6,8 @@ permalink: /kb/169/Q169126/
 
 ## Q169126: Madge Smart 16/4 PCI Ringnode BM2 Token Ring Network
 
+{% raw %}
+
 	Article: Q169126
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/169/Q169126/
 	
 	=============================================================================
 	
+
+{% endraw %}

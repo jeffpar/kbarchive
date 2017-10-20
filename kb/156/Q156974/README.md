@@ -6,6 +6,8 @@ permalink: /kb/156/Q156974/
 
 ## Q156974: IBM 6611 Routers May Generate Invalid DHCP Frames
 
+{% raw %}
+
 	Article: Q156974
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -86,3 +88,5 @@ permalink: /kb/156/Q156974/
 	
 	=============================================================================
 	
+
+{% endraw %}

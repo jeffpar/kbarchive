@@ -6,6 +6,8 @@ permalink: /kb/028/Q28173/
 
 ## Q28173: C Run-time Library History and Naming Conventions
 
+{% raw %}
+
 	Article: Q28173
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -221,3 +223,5 @@ permalink: /kb/028/Q28173/
 	
 	=============================================================================
 	
+
+{% endraw %}

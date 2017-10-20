@@ -6,6 +6,8 @@ permalink: /kb/031/Q31009/
 
 ## Q31009: Protected-Mode C Extensions Fail with &quot;Protection Fault&quot;
 
+{% raw %}
+
 	Article: Q31009
 	Product(s): See article
 	Version(s): 1.00 | 1.00
@@ -32,3 +34,5 @@ permalink: /kb/031/Q31009/
 	should read as follows:
 	
 	   cfile=FileNameTohandle("","");
+
+{% endraw %}

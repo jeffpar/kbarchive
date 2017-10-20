@@ -6,6 +6,8 @@ permalink: /kb/255/Q255625/
 
 ## Q255625: BUG: Err Object Returns Zero Number and Empty Description.
 
+{% raw %}
+
 	Article: Q255625
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -154,3 +156,5 @@ permalink: /kb/255/Q255625/
 	
 	=============================================================================
 	
+
+{% endraw %}

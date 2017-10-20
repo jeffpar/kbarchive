@@ -6,6 +6,8 @@ permalink: /kb/228/Q228514/
 
 ## Q228514: Baseball 2000: Game Quits and You Are Returned to the Desktop
 
+{% raw %}
+
 	Article: Q228514
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/228/Q228514/
 	
 	=============================================================================
 	
+
+{% endraw %}

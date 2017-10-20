@@ -6,6 +6,8 @@ permalink: /kb/258/Q258394/
 
 ## Q258394: Baseball 2001: Screen Turns Black and Game Stops Responding
 
+{% raw %}
+
 	Article: Q258394
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/258/Q258394/
 	
 	=============================================================================
 	
+
+{% endraw %}

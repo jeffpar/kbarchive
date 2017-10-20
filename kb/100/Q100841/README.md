@@ -6,6 +6,8 @@ permalink: /kb/100/Q100841/
 
 ## Q100841: WFWG: Redirecting DIR /W to LPTx Results in Blank Page
 
+{% raw %}
+
 	Article: Q100841
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -47,3 +49,5 @@ permalink: /kb/100/Q100841/
 	
 	=============================================================================
 	
+
+{% endraw %}

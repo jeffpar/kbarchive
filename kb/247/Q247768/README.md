@@ -6,6 +6,8 @@ permalink: /kb/247/Q247768/
 
 ## Q247768: No Load Balancing When Connecting to Cluster Virtual IP Address
 
+{% raw %}
+
 	Article: Q247768
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,4.0
@@ -58,3 +60,5 @@ permalink: /kb/247/Q247768/
 	
 	=============================================================================
 	
+
+{% endraw %}

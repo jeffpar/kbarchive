@@ -6,6 +6,8 @@ permalink: /kb/025/Q25374/
 
 ## Q25374: Cannot Print Graphics in Draft Quality
 
+{% raw %}
+
 	Article: Q25374
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.x,2.x,3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/025/Q25374/
 	
 	=============================================================================
 	
+
+{% endraw %}

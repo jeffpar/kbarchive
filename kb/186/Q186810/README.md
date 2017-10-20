@@ -6,6 +6,8 @@ permalink: /kb/186/Q186810/
 
 ## Q186810: Event ID 115 When Using Host Headers With IIS
 
+{% raw %}
+
 	Article: Q186810
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -77,3 +79,5 @@ permalink: /kb/186/Q186810/
 	
 	=============================================================================
 	
+
+{% endraw %}

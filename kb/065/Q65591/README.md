@@ -6,6 +6,8 @@ permalink: /kb/065/Q65591/
 
 ## Q65591: Screen Output Fails When Using Animate with Assembly Files
 
+{% raw %}
+
 	Article: Q65591
 	Product(s): See article
 	Version(s): 2.51
@@ -52,3 +54,5 @@ permalink: /kb/065/Q65591/
 	Microsoft has confirmed this to be a problem with QuickAssembler
 	version 2.51. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

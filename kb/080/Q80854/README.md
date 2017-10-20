@@ -6,6 +6,8 @@ permalink: /kb/080/Q80854/
 
 ## Q80854: Write Does Not Make Backups When Creating Files
 
+{% raw %}
+
 	Article: Q80854
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -38,3 +40,5 @@ permalink: /kb/080/Q80854/
 	
 	=============================================================================
 	
+
+{% endraw %}

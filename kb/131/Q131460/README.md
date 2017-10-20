@@ -6,6 +6,8 @@ permalink: /kb/131/Q131460/
 
 ## Q131460: PRB: Referential Intregrity Builder Leaves Code Behind
 
+{% raw %}
+
 	Article: Q131460
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -100,3 +102,5 @@ permalink: /kb/131/Q131460/
 	
 	=============================================================================
 	
+
+{% endraw %}

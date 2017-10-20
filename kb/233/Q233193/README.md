@@ -6,6 +6,8 @@ permalink: /kb/233/Q233193/
 
 ## Q233193: LMHOSTS File Referenced in #INCLUDE Is Not Parsed at Startup
 
+{% raw %}
+
 	Article: Q233193
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/233/Q233193/
 	
 	=============================================================================
 	
+
+{% endraw %}

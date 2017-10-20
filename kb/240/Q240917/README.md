@@ -6,6 +6,8 @@ permalink: /kb/240/Q240917/
 
 ## Q240917: XIMS: Relocating the Directories Used by SMTP Service
 
+{% raw %}
+
 	Article: Q240917
 	Product(s): Internet Information Server
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/240/Q240917/
 	
 	=============================================================================
 	
+
+{% endraw %}

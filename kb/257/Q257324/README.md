@@ -6,6 +6,8 @@ permalink: /kb/257/Q257324/
 
 ## Q257324: MapPoint 2001: Leading Zeros Are Truncated When You Import Numer
 
+{% raw %}
+
 	Article: Q257324
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/257/Q257324/
 	
 	=============================================================================
 	
+
+{% endraw %}

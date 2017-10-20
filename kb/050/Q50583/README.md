@@ -6,6 +6,8 @@ permalink: /kb/050/Q50583/
 
 ## Q50583: PRB: L1092: Cannot Open Module-Definition File
 
+{% raw %}
+
 	Article: Q50583
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.03,5.15
@@ -71,3 +73,5 @@ permalink: /kb/050/Q50583/
 	
 	=============================================================================
 	
+
+{% endraw %}

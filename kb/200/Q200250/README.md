@@ -6,6 +6,8 @@ permalink: /kb/200/Q200250/
 
 ## Q200250: XFOR: Importing .sc2 File into Outlook After Migration
 
+{% raw %}
+
 	Article: Q200250
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:97; winnt:5.5
@@ -151,3 +153,5 @@ permalink: /kb/200/Q200250/
 	
 	=============================================================================
 	
+
+{% endraw %}

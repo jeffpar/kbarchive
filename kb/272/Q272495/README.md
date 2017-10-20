@@ -6,6 +6,8 @@ permalink: /kb/272/Q272495/
 
 ## Q272495: How to change account information with MSN Companion
 
+{% raw %}
+
 	Article: Q272495
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -64,3 +66,5 @@ permalink: /kb/272/Q272495/
 	
 	=============================================================================
 	
+
+{% endraw %}

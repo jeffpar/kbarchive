@@ -6,6 +6,8 @@ permalink: /kb/241/Q241189/
 
 ## Q241189: SNMP Memory Leak in Windows NT4.0 Peer-to-Peer Network
 
+{% raw %}
+
 	Article: Q241189
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/241/Q241189/
 	
 	=============================================================================
 	
+
+{% endraw %}

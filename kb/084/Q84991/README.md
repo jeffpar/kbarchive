@@ -6,6 +6,8 @@ permalink: /kb/084/Q84991/
 
 ## Q84991: Write Has Display Problems with WingDings
 
+{% raw %}
+
 	Article: Q84991
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/084/Q84991/
 	
 	=============================================================================
 	
+
+{% endraw %}

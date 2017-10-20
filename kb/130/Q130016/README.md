@@ -6,6 +6,8 @@ permalink: /kb/130/Q130016/
 
 ## Q130016: Removing Everyone On Root Dir. Leaves Limited Virtual Memory
 
+{% raw %}
+
 	Article: Q130016
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -61,3 +63,5 @@ permalink: /kb/130/Q130016/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235730/
 
 ## Q235730: SMS: Remote Control Fails on Win95 Client w/ Nitro 3D Video Card
 
+{% raw %}
+
 	Article: Q235730
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -71,3 +73,5 @@ permalink: /kb/235/Q235730/
 	
 	=============================================================================
 	
+
+{% endraw %}

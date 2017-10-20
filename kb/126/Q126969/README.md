@@ -6,6 +6,8 @@ permalink: /kb/126/Q126969/
 
 ## Q126969: PRB: Running Genxtab with an Empty Table Causes Error
 
+{% raw %}
+
 	Article: Q126969
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.5,2.5a,2.5b,2.6,2.6a; WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0
@@ -149,3 +151,5 @@ permalink: /kb/126/Q126969/
 	
 	=============================================================================
 	
+
+{% endraw %}

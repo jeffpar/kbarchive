@@ -6,6 +6,8 @@ permalink: /kb/105/Q105067/
 
 ## Q105067: Undelete Forces Exclusive (Full-Screen) Mode Under Windows
 
+{% raw %}
+
 	Article: Q105067
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/105/Q105067/
 	
 	=============================================================================
 	
+
+{% endraw %}

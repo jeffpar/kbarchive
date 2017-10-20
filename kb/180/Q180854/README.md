@@ -6,6 +6,8 @@ permalink: /kb/180/Q180854/
 
 ## Q180854: Access Violation in Winlogon with Third-Party Gina.dll
 
+{% raw %}
+
 	Article: Q180854
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/180/Q180854/
 	
 	=============================================================================
 	
+
+{% endraw %}

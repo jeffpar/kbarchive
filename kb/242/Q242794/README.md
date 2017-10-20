@@ -6,6 +6,8 @@ permalink: /kb/242/Q242794/
 
 ## Q242794: AoE II: List of Enhancement (Cheat) Codes
 
+{% raw %}
+
 	Article: Q242794
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -87,3 +89,5 @@ permalink: /kb/242/Q242794/
 	
 	=============================================================================
 	
+
+{% endraw %}

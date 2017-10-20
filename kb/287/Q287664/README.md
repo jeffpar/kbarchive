@@ -6,6 +6,8 @@ permalink: /kb/287/Q287664/
 
 ## Q287664: W32.FunLove.4099 Virus Compromises Server Security
 
+{% raw %}
+
 	Article: Q287664
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/287/Q287664/
 	
 	=============================================================================
 	
+
+{% endraw %}

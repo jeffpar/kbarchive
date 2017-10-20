@@ -6,6 +6,8 @@ permalink: /kb/174/Q174672/
 
 ## Q174672: FS98/2000/CFS Err Msg: FLTSIM98 Caused an Invalid Page Fault...
 
+{% raw %}
+
 	Article: Q174672
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/174/Q174672/
 	
 	=============================================================================
 	
+
+{% endraw %}

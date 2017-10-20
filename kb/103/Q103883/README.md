@@ -6,6 +6,8 @@ permalink: /kb/103/Q103883/
 
 ## Q103883: Overview: &quot;Local&quot; I/O Operation
 
+{% raw %}
+
 	Article: Q103883
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/103/Q103883/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130702/
 
 ## Q130702: PC WSPlus: Offline Additions May Be Gone After Working Online
 
+{% raw %}
+
 	Article: Q130702
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -47,3 +49,5 @@ permalink: /kb/130/Q130702/
 	
 	=============================================================================
 	
+
+{% endraw %}

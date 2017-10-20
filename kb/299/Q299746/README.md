@@ -6,6 +6,8 @@ permalink: /kb/299/Q299746/
 
 ## Q299746: PRB: F1 Help Does Not Work With Focus on OLEControls
 
+{% raw %}
+
 	Article: Q299746
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -94,3 +96,5 @@ permalink: /kb/299/Q299746/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149556/
 
 ## Q149556: Mifwin.exe Produces GPF with Large Number in Number Field
 
+{% raw %}
+
 	Article: Q149556
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -70,3 +72,5 @@ permalink: /kb/149/Q149556/
 	
 	=============================================================================
 	
+
+{% endraw %}

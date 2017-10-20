@@ -6,6 +6,8 @@ permalink: /kb/120/Q120241/
 
 ## Q120241: FoxPro Advisor Magazine Articles October 1993
 
+{% raw %}
+
 	Article: Q120241
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 2.60 2.60a | 2.00 2.5x 2.60
@@ -82,3 +84,5 @@ permalink: /kb/120/Q120241/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174338/
 
 ## Q174338: Dial-Up Connection Disconnects After Downloading Messages
 
+{% raw %}
+
 	Article: Q174338
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/174/Q174338/
 	
 	=============================================================================
 	
+
+{% endraw %}

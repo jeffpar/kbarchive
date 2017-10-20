@@ -6,6 +6,8 @@ permalink: /kb/245/Q245656/
 
 ## Q245656: INFO: Where to Obtain Cluster Automation Server
 
+{% raw %}
+
 	Article: Q245656
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,1.1
@@ -64,3 +66,5 @@ permalink: /kb/245/Q245656/
 	
 	=============================================================================
 	
+
+{% endraw %}

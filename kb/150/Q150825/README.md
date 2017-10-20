@@ -6,6 +6,8 @@ permalink: /kb/150/Q150825/
 
 ## Q150825: REMOTE_USER Blank w/o BASIC Password Authentication
 
+{% raw %}
+
 	Article: Q150825
 	Product(s): Internet Information Server
 	Version(s): 1.0 3.5 3.51
@@ -51,3 +53,5 @@ permalink: /kb/150/Q150825/
 	
 	=============================================================================
 	
+
+{% endraw %}

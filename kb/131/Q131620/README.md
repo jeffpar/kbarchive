@@ -6,6 +6,8 @@ permalink: /kb/131/Q131620/
 
 ## Q131620: Filename Extension Remains .SC2 When Exporting
 
+{% raw %}
+
 	Article: Q131620
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -50,3 +52,5 @@ permalink: /kb/131/Q131620/
 	
 	=============================================================================
 	
+
+{% endraw %}

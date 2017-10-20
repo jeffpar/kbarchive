@@ -6,6 +6,8 @@ permalink: /kb/172/Q172601/
 
 ## Q172601: Known Issues and Alternatives to Mailsrv Utility
 
+{% raw %}
+
 	Article: Q172601
 	Product(s): Microsoft Press
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/172/Q172601/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136543/
 
 ## Q136543: Madge PCI Ringnode Network Adapter Hangs Using NDIS 3 Driver
 
+{% raw %}
+
 	Article: Q136543
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/136/Q136543/
 	
 	=============================================================================
 	
+
+{% endraw %}

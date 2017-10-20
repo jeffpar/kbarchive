@@ -6,6 +6,8 @@ permalink: /kb/119/Q119591/
 
 ## Q119591: How to Obtain Microsoft Support Files from Online Services
 
+{% raw %}
+
 	Article: Q119591
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -221,3 +223,5 @@ permalink: /kb/119/Q119591/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66193/
 
 ## Q66193: ATC Menu Appears Incorrectly Sending Multiplayer Messages
 
+{% raw %}
+
 	Article: Q66193
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/066/Q66193/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150872/
 
 ## Q150872: Setup Does Not Run ScanDisk from Windows 3.1 Standard Mode
 
+{% raw %}
+
 	Article: Q150872
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/150/Q150872/
 	
 	=============================================================================
 	
+
+{% endraw %}

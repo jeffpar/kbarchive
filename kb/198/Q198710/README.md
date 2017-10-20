@@ -6,6 +6,8 @@ permalink: /kb/198/Q198710/
 
 ## Q198710: SMSINST: Edit ini File May Produce Unexpected Results
 
+{% raw %}
+
 	Article: Q198710
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0; winnt:2.0
@@ -81,3 +83,5 @@ permalink: /kb/198/Q198710/
 	
 	=============================================================================
 	
+
+{% endraw %}

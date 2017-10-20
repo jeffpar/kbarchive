@@ -6,6 +6,8 @@ permalink: /kb/191/Q191590/
 
 ## Q191590: PRB: FPOle.dll Errors if _VFP.Caption Contains Apostrophe
 
+{% raw %}
+
 	Article: Q191590
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -63,3 +65,5 @@ permalink: /kb/191/Q191590/
 	
 	=============================================================================
 	
+
+{% endraw %}

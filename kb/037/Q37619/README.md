@@ -6,6 +6,8 @@ permalink: /kb/037/Q37619/
 
 ## Q37619: Backslash Character Interpreted In /Ss and /St Options
 
+{% raw %}
+
 	Article: Q37619
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -18,3 +20,5 @@ permalink: /kb/037/Q37619/
 	your title or subtitle to contain a single backslash. If you do not
 	include the second backslash, the next character will be interpreted
 	as an escape character.
+
+{% endraw %}

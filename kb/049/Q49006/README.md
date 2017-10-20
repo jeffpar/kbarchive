@@ -6,6 +6,8 @@ permalink: /kb/049/Q49006/
 
 ## Q49006: DOS APPEND Is Not Utilized with access() Function
 
+{% raw %}
+
 	Article: Q49006
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10
@@ -75,3 +77,5 @@ permalink: /kb/049/Q49006/
 	            printf( "file opened successfully using APPEND" );
 	  }
 	}
+
+{% endraw %}

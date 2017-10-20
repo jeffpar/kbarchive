@@ -6,6 +6,8 @@ permalink: /kb/153/Q153002/
 
 ## Q153002: BUG:SET PRINTER TO Portname COMx Connection Parameters Ignored
 
+{% raw %}
+
 	Article: Q153002
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -72,3 +74,5 @@ permalink: /kb/153/Q153002/
 	
 	=============================================================================
 	
+
+{% endraw %}

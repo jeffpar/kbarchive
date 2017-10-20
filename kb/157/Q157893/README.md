@@ -6,6 +6,8 @@ permalink: /kb/157/Q157893/
 
 ## Q157893: FIX: Closing an ActiveX Control Project Crashes DevStudio
 
+{% raw %}
+
 	Article: Q157893
 	Product(s): Microsoft C Compiler
 	Version(s): 4.20
@@ -100,3 +102,5 @@ permalink: /kb/157/Q157893/
 	
 	=============================================================================
 	
+
+{% endraw %}

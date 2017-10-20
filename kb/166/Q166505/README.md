@@ -6,6 +6,8 @@ permalink: /kb/166/Q166505/
 
 ## Q166505: DOC: FindNextFile Returns 0 for Last File Found
 
+{% raw %}
+
 	Article: Q166505
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/166/Q166505/
 	
 	=============================================================================
 	
+
+{% endraw %}

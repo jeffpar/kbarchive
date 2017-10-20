@@ -6,6 +6,8 @@ permalink: /kb/163/Q163472/
 
 ## Q163472: BUG: Path Greater than 95 Characters Causes VFP Mac to Hang
 
+{% raw %}
+
 	Article: Q163472
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -89,3 +91,5 @@ permalink: /kb/163/Q163472/
 	
 	=============================================================================
 	
+
+{% endraw %}

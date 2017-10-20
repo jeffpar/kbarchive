@@ -6,6 +6,8 @@ permalink: /kb/170/Q170368/
 
 ## Q170368: PRB: &quot;Invalid Cursor Position&quot; Using UserConnection to GetChunk
 
+{% raw %}
+
 	Article: Q170368
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -164,3 +166,5 @@ permalink: /kb/170/Q170368/
 	
 	=============================================================================
 	
+
+{% endraw %}

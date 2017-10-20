@@ -6,6 +6,8 @@ permalink: /kb/157/Q157694/
 
 ## Q157694: XFOR: Exchange Corrupts FIPS Header with MCI Mail
 
+{% raw %}
+
 	Article: Q157694
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/157/Q157694/
 	
 	=============================================================================
 	
+
+{% endraw %}

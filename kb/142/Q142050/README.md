@@ -6,6 +6,8 @@ permalink: /kb/142/Q142050/
 
 ## Q142050: Using Multiple Internet Domain Names and Addresses Over RAS
 
+{% raw %}
+
 	Article: Q142050
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -102,3 +104,5 @@ permalink: /kb/142/Q142050/
 	
 	=============================================================================
 	
+
+{% endraw %}

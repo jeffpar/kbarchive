@@ -6,6 +6,8 @@ permalink: /kb/088/Q88100/
 
 ## Q88100: MRU Limits for File Manager, Print Manager in WFWG
 
+{% raw %}
+
 	Article: Q88100
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/088/Q88100/
 	
 	=============================================================================
 	
+
+{% endraw %}

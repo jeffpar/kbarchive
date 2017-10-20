@@ -6,6 +6,8 @@ permalink: /kb/151/Q151328/
 
 ## Q151328: Changes and Corrections in Encarta Encyclopedia 1996a Update
 
+{% raw %}
+
 	Article: Q151328
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition
@@ -92,3 +94,5 @@ permalink: /kb/151/Q151328/
 	
 	=============================================================================
 	
+
+{% endraw %}

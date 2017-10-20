@@ -6,6 +6,8 @@ permalink: /kb/312/Q312885/
 
 ## Q312885: How to Obtain Help and Support for Xbox
 
+{% raw %}
+
 	Article: Q312885
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/312/Q312885/
 	
 	=============================================================================
 	
+
+{% endraw %}

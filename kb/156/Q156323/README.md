@@ -6,6 +6,8 @@ permalink: /kb/156/Q156323/
 
 ## Q156323: Error 3787: You Must Log on before Performing this Operation
 
+{% raw %}
+
 	Article: Q156323
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95
@@ -66,3 +68,5 @@ permalink: /kb/156/Q156323/
 	
 	=============================================================================
 	
+
+{% endraw %}

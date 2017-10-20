@@ -6,6 +6,8 @@ permalink: /kb/134/Q134484/
 
 ## Q134484: PC Subito Corso - Multimediale di Inglese Fatal Error Err Msg
 
+{% raw %}
+
 	Article: Q134484
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -62,3 +64,5 @@ permalink: /kb/134/Q134484/
 	
 	=============================================================================
 	
+
+{% endraw %}

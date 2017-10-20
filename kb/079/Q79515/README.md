@@ -6,6 +6,8 @@ permalink: /kb/079/Q79515/
 
 ## Q79515: Serial Mouse Problems with Magnavox 286
 
+{% raw %}
+
 	Article: Q79515
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/079/Q79515/
 	
 	=============================================================================
 	
+
+{% endraw %}

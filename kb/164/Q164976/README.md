@@ -6,6 +6,8 @@ permalink: /kb/164/Q164976/
 
 ## Q164976: XADM: Encrypted Msgs Can't Be Forwarded w/ Inbox Rule
 
+{% raw %}
+
 	Article: Q164976
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -56,3 +58,5 @@ permalink: /kb/164/Q164976/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136835/
 
 ## Q136835: PCMCIA Hard Disk Not Available After Windows 95 Starts
 
+{% raw %}
+
 	Article: Q136835
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/136/Q136835/
 	
 	=============================================================================
 	
+
+{% endraw %}

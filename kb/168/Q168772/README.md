@@ -6,6 +6,8 @@ permalink: /kb/168/Q168772/
 
 ## Q168772: SMSINST: Uninstall Does Not Restore Autoexec.bat or Config.sys
 
+{% raw %}
+
 	Article: Q168772
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.2
@@ -51,3 +53,5 @@ permalink: /kb/168/Q168772/
 	
 	=============================================================================
 	
+
+{% endraw %}

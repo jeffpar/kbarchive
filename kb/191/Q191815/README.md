@@ -6,6 +6,8 @@ permalink: /kb/191/Q191815/
 
 ## Q191815: Err Msg: Msnviewr Caused an Invalid Page Fault in Module Urlmon.
 
+{% raw %}
+
 	Article: Q191815
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.51,2.52,2.6
@@ -120,3 +122,5 @@ permalink: /kb/191/Q191815/
 	
 	=============================================================================
 	
+
+{% endraw %}

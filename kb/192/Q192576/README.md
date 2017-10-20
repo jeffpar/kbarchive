@@ -6,6 +6,8 @@ permalink: /kb/192/Q192576/
 
 ## Q192576: FIX: Fix From Debugger Does Not Show VFP Desktop if Visible=.F.
 
+{% raw %}
+
 	Article: Q192576
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -130,3 +132,5 @@ permalink: /kb/192/Q192576/
 	
 	=============================================================================
 	
+
+{% endraw %}

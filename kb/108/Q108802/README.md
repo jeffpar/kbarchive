@@ -6,6 +6,8 @@ permalink: /kb/108/Q108802/
 
 ## Q108802: WFWG 3.11 May Fail After Upgrading (Missing SlotNumber= Entry)
 
+{% raw %}
+
 	Article: Q108802
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -59,3 +61,5 @@ permalink: /kb/108/Q108802/
 	
 	=============================================================================
 	
+
+{% endraw %}

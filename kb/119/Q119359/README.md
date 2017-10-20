@@ -6,6 +6,8 @@ permalink: /kb/119/Q119359/
 
 ## Q119359: PC DB Win: Steps to Move User's Account Without Using MoveUser
 
+{% raw %}
+
 	Article: Q119359
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -56,3 +58,5 @@ permalink: /kb/119/Q119359/
 	
 	=============================================================================
 	
+
+{% endraw %}

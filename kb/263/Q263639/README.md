@@ -6,6 +6,8 @@ permalink: /kb/263/Q263639/
 
 ## Q263639: BUG: Class Access Specifier Ignored for Fully Qual. Stat Members
 
+{% raw %}
+
 	Article: Q263639
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -94,3 +96,5 @@ permalink: /kb/263/Q263639/
 	
 	=============================================================================
 	
+
+{% endraw %}

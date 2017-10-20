@@ -6,6 +6,8 @@ permalink: /kb/196/Q196463/
 
 ## Q196463: How to Obtain Tech Support Information from Cisco Routers
 
+{% raw %}
+
 	Article: Q196463
 	Product(s): Microsoft Windows NT
 	Version(s): Windows:3.1,3.11,95,98; WinNT:3.1,3.5,3.51,4.0
@@ -59,3 +61,5 @@ permalink: /kb/196/Q196463/
 	
 	=============================================================================
 	
+
+{% endraw %}

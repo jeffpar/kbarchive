@@ -6,6 +6,8 @@ permalink: /kb/292/Q292520/
 
 ## Q292520: Conflicting Access Control List Entries Cause Error Message
 
+{% raw %}
+
 	Article: Q292520
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -122,3 +124,5 @@ permalink: /kb/292/Q292520/
 	
 	=============================================================================
 	
+
+{% endraw %}

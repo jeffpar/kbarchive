@@ -6,6 +6,8 @@ permalink: /kb/137/Q137460/
 
 ## Q137460: Bookshelf 1995 and '95: Odd Animation or .avi File Behavior
 
+{% raw %}
+
 	Article: Q137460
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :1995 edition
@@ -62,3 +64,5 @@ permalink: /kb/137/Q137460/
 	
 	=============================================================================
 	
+
+{% endraw %}

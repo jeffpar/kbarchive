@@ -6,6 +6,8 @@ permalink: /kb/171/Q171657/
 
 ## Q171657: Hardcore VB 2ed: Goodies CD-ROM Directory Missing
 
+{% raw %}
+
 	Article: Q171657
 	Product(s): Microsoft Press
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/171/Q171657/
 	
 	=============================================================================
 	
+
+{% endraw %}

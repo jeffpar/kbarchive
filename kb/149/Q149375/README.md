@@ -6,6 +6,8 @@ permalink: /kb/149/Q149375/
 
 ## Q149375: XCLN: What is the Personal Forms Library?
 
+{% raw %}
+
 	Article: Q149375
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/149/Q149375/
 	
 	=============================================================================
 	
+
+{% endraw %}

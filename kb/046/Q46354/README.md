@@ -6,6 +6,8 @@ permalink: /kb/046/Q46354/
 
 ## Q46354: Placing Dependent &amp; Target Files in Different Directories
 
+{% raw %}
+
 	Article: Q46354
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.01,1.11,1.12,1.13,1.2,1.3,1.4; NT:1.4,1.5; OS/2:1.01,1.11,1.21
@@ -64,3 +66,5 @@ permalink: /kb/046/Q46354/
 	
 	=============================================================================
 	
+
+{% endraw %}

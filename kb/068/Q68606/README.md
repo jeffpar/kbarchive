@@ -6,6 +6,8 @@ permalink: /kb/068/Q68606/
 
 ## Q68606: Mac Wkst: System Error Occurs When Closing Address Book Window
 
+{% raw %}
+
 	Article: Q68606
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/068/Q68606/
 	
 	=============================================================================
 	
+
+{% endraw %}

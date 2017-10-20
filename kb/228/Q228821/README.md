@@ -6,6 +6,8 @@ permalink: /kb/228/Q228821/
 
 ## Q228821: Generating a Certificate Request File Using Certificate Wizard
 
+{% raw %}
+
 	Article: Q228821
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -144,3 +146,5 @@ permalink: /kb/228/Q228821/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/252/Q252802/
 
 ## Q252802: Allegiance: Player Moves Erratically with Quick Bursts of Speed
 
+{% raw %}
+
 	Article: Q252802
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/252/Q252802/
 	
 	=============================================================================
 	
+
+{% endraw %}

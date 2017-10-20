@@ -6,6 +6,8 @@ permalink: /kb/121/Q121627/
 
 ## Q121627: Using NCR C810 PCI SCSI Adapter on Systems with Phoenix BIOS
 
+{% raw %}
+
 	Article: Q121627
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/121/Q121627/
 	
 	=============================================================================
 	
+
+{% endraw %}

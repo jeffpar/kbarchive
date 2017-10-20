@@ -6,6 +6,8 @@ permalink: /kb/216/Q216672/
 
 ## Q216672: BUG:Wrong Error/Incorrect Data Returned w/ TCP/IP &amp; CICS Link
 
+{% raw %}
+
 	Article: Q216672
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -109,3 +111,5 @@ permalink: /kb/216/Q216672/
 	
 	=============================================================================
 	
+
+{% endraw %}

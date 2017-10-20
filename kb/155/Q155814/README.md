@@ -6,6 +6,8 @@ permalink: /kb/155/Q155814/
 
 ## Q155814: XFOR: Error 2186: Service is not Responding to Control Function
 
+{% raw %}
+
 	Article: Q155814
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/155/Q155814/
 	
 	=============================================================================
 	
+
+{% endraw %}

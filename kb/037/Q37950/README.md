@@ -6,6 +6,8 @@ permalink: /kb/037/Q37950/
 
 ## Q37950: Using Asterisk Wildcard Expansion with Trailing Characters
 
+{% raw %}
+
 	Article: Q37950
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
@@ -47,3 +49,5 @@ permalink: /kb/037/Q37950/
 	
 	=============================================================================
 	
+
+{% endraw %}

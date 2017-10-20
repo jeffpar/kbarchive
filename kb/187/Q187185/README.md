@@ -6,6 +6,8 @@ permalink: /kb/187/Q187185/
 
 ## Q187185: Users Cannot Customize Application Shortcuts
 
+{% raw %}
+
 	Article: Q187185
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -50,3 +52,5 @@ permalink: /kb/187/Q187185/
 	
 	=============================================================================
 	
+
+{% endraw %}

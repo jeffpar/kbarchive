@@ -6,6 +6,8 @@ permalink: /kb/299/Q299681/
 
 ## Q299681: FIX: Syntax Error on Form Makes Form Unusable
 
+{% raw %}
+
 	Article: Q299681
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -70,3 +72,5 @@ permalink: /kb/299/Q299681/
 	
 	=============================================================================
 	
+
+{% endraw %}

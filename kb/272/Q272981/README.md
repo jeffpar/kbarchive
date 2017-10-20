@@ -6,6 +6,8 @@ permalink: /kb/272/Q272981/
 
 ## Q272981: XADM: 1069 Error Message When Starting the System Attendant
 
+{% raw %}
+
 	Article: Q272981
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -129,3 +131,5 @@ permalink: /kb/272/Q272981/
 	
 	=============================================================================
 	
+
+{% endraw %}

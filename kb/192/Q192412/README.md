@@ -6,6 +6,8 @@ permalink: /kb/192/Q192412/
 
 ## Q192412: Changing Service Account for HSI Service Loses Cryptographic Key
 
+{% raw %}
+
 	Article: Q192412
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -85,3 +87,5 @@ permalink: /kb/192/Q192412/
 	
 	=============================================================================
 	
+
+{% endraw %}

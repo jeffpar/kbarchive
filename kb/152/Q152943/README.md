@@ -6,6 +6,8 @@ permalink: /kb/152/Q152943/
 
 ## Q152943: XCLN: Error When Receiving Schedule+ Confirmation Message
 
+{% raw %}
+
 	Article: Q152943
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,7.0; winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/152/Q152943/
 	
 	=============================================================================
 	
+
+{% endraw %}

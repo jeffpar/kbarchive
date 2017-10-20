@@ -6,6 +6,8 @@ permalink: /kb/129/Q129660/
 
 ## Q129660: Cannot Open Multiple Instances of Fax Cover Page Editor
 
+{% raw %}
+
 	Article: Q129660
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/129/Q129660/
 	
 	=============================================================================
 	
+
+{% endraw %}

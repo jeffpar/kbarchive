@@ -6,6 +6,8 @@ permalink: /kb/234/Q234588/
 
 ## Q234588: XFOR: GW Mailbox Gateway Alias Does Not Transfer to Exchange
 
+{% raw %}
+
 	Article: Q234588
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/234/Q234588/
 	
 	=============================================================================
 	
+
+{% endraw %}

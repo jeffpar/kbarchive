@@ -6,6 +6,8 @@ permalink: /kb/099/Q99055/
 
 ## Q99055: PC Forms: Mail Message Displays Name in Single Quotation Marks
 
+{% raw %}
+
 	Article: Q99055
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -58,3 +60,5 @@ permalink: /kb/099/Q99055/
 	
 	=============================================================================
 	
+
+{% endraw %}

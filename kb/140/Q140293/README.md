@@ -6,6 +6,8 @@ permalink: /kb/140/Q140293/
 
 ## Q140293: FIX: Missing Closing Parenthesis Acts Like a Comment
 
+{% raw %}
+
 	Article: Q140293
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/140/Q140293/
 	
 	=============================================================================
 	
+
+{% endraw %}

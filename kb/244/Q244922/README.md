@@ -6,6 +6,8 @@ permalink: /kb/244/Q244922/
 
 ## Q244922: &quot;STOP 0x00000050&quot; in Rdr.sys with Special Pool Enabled
 
+{% raw %}
+
 	Article: Q244922
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/244/Q244922/
 	
 	=============================================================================
 	
+
+{% endraw %}

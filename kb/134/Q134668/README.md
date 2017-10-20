@@ -6,6 +6,8 @@ permalink: /kb/134/Q134668/
 
 ## Q134668: PC NTMMTA: Monitor Option Can Be Called from a Command Line
 
+{% raw %}
+
 	Article: Q134668
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -55,3 +57,5 @@ permalink: /kb/134/Q134668/
 	
 	=============================================================================
 	
+
+{% endraw %}

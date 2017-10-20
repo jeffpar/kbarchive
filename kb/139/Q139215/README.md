@@ -6,6 +6,8 @@ permalink: /kb/139/Q139215/
 
 ## Q139215: BUG: Labels Truncated When Printable Page Option Is Selected
 
+{% raw %}
+
 	Article: Q139215
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -112,3 +114,5 @@ permalink: /kb/139/Q139215/
 	
 	=============================================================================
 	
+
+{% endraw %}

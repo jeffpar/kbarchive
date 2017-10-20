@@ -6,6 +6,8 @@ permalink: /kb/123/Q123873/
 
 ## Q123873: PRB: Lower Half of Menu Bar Covered by Client Area
 
+{% raw %}
+
 	Article: Q123873
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,2.0,4.0
@@ -84,3 +86,5 @@ permalink: /kb/123/Q123873/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/224/Q224274/
 
 ## Q224274: Streets and Trips 2000: Hangs When You Print to HP LaserJet 4500
 
+{% raw %}
+
 	Article: Q224274
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/224/Q224274/
 	
 	=============================================================================
 	
+
+{% endraw %}

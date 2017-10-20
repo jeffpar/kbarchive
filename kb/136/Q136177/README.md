@@ -6,6 +6,8 @@ permalink: /kb/136/Q136177/
 
 ## Q136177: PPT7: Shared Files Installed to &#92;Msapps Folder on WinNT 3.51
 
+{% raw %}
+
 	Article: Q136177
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0; winnt:3.51
@@ -46,3 +48,5 @@ permalink: /kb/136/Q136177/
 	
 	=============================================================================
 	
+
+{% endraw %}

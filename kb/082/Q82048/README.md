@@ -6,6 +6,8 @@ permalink: /kb/082/Q82048/
 
 ## Q82048: Windows 3.0 Err Msg: Second Instance of Windows
 
+{% raw %}
+
 	Article: Q82048
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -120,3 +122,5 @@ permalink: /kb/082/Q82048/
 	
 	=============================================================================
 	
+
+{% endraw %}

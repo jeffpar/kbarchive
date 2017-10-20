@@ -7,8 +7,6 @@ permalink: /id/homemisc/
 ## KB Articles for Microsoft Home Miscellaneous Products
 
 - [Q70050: Learning DOS 2.00: Hangs on Sanyo 16NB Laptop](/kb/070/Q70050/)
-- [Q130255: HOWTO: Installing or Setting a Default Printer Driver](/kb/130/Q130255/)
-- [Q130517: How to Modify Config.sys in Windows 95](/kb/130/Q130517/)
 - [Q131532: How to Modify the System.ini File in Windows 95/98](/kb/131/Q131532/)
 - [Q131533: How to Modify the Win.ini File in Windows 95/98](/kb/131/Q131533/)
 - [Q131806: Windows 95/98/Me: How to Install or Change a Video Driver](/kb/131/Q131806/)
@@ -19,6 +17,8 @@ permalink: /id/homemisc/
 - [Q133340: Windows 95/98: How to Delete a File](/kb/133/Q133340/)
 - [Q133348: Windows 95/98: How to Read MS-DOS Mem Command Information](/kb/133/Q133348/)
 - [Q133717: Windows 95/98: How to Find a File](/kb/133/Q133717/)
+- [Q130255: HOWTO: Installing or Setting a Default Printer Driver](/kb/130/Q130255/)
+- [Q130517: How to Modify Config.sys in Windows 95](/kb/130/Q130517/)
 - [Q177525: &quot;Fatal Exception 0D&quot; Error Message After Pressing CAPS LOCK Key](/kb/177/Q177525/)
 - [Q190023: How to Edit the Autoexec.bat File in Microsoft Windows 98](/kb/190/Q190023/)
 - [Q190024: How to Edit the Config.sys File in Microsoft Windows 98](/kb/190/Q190024/)

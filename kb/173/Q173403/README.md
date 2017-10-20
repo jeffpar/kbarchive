@@ -6,6 +6,8 @@ permalink: /kb/173/Q173403/
 
 ## Q173403: Deleting Non-Existent File Causes Event ID 2000
 
+{% raw %}
+
 	Article: Q173403
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/173/Q173403/
 	
 	=============================================================================
 	
+
+{% endraw %}

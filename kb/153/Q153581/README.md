@@ -6,6 +6,8 @@ permalink: /kb/153/Q153581/
 
 ## Q153581: HOWTO: Implement the Type Property of a Custom OLE Control
 
+{% raw %}
+
 	Article: Q153581
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -162,3 +164,5 @@ permalink: /kb/153/Q153581/
 	
 	=============================================================================
 	
+
+{% endraw %}

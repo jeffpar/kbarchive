@@ -6,6 +6,8 @@ permalink: /kb/184/Q184976/
 
 ## Q184976: PRB: Windows 95 OSR 2.5 Starts IE 4.x During Installation
 
+{% raw %}
+
 	Article: Q184976
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 4.0a,4.0b
@@ -84,3 +86,5 @@ permalink: /kb/184/Q184976/
 	
 	=============================================================================
 	
+
+{% endraw %}

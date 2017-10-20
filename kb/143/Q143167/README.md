@@ -6,6 +6,8 @@ permalink: /kb/143/Q143167/
 
 ## Q143167: WD97: Footnote Reference Mark Converted to Arabic Number
 
+{% raw %}
+
 	Article: Q143167
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/143/Q143167/
 	
 	=============================================================================
 	
+
+{% endraw %}

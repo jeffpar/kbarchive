@@ -6,6 +6,8 @@ permalink: /kb/130/Q130422/
 
 ## Q130422: Environment Space Limitations With SMS Inventory Scripts
 
+{% raw %}
+
 	Article: Q130422
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -56,3 +58,5 @@ permalink: /kb/130/Q130422/
 	
 	=============================================================================
 	
+
+{% endraw %}

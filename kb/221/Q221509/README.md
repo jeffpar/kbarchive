@@ -6,6 +6,8 @@ permalink: /kb/221/Q221509/
 
 ## Q221509: How to Set Default Autocreated Printer with Terminal Server
 
+{% raw %}
+
 	Article: Q221509
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -187,3 +189,5 @@ permalink: /kb/221/Q221509/
 	
 	=============================================================================
 	
+
+{% endraw %}

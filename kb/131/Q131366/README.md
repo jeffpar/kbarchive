@@ -6,6 +6,8 @@ permalink: /kb/131/Q131366/
 
 ## Q131366: Event Error 5712 with Status Access Denied
 
+{% raw %}
+
 	Article: Q131366
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -75,3 +77,5 @@ permalink: /kb/131/Q131366/
 	
 	=============================================================================
 	
+
+{% endraw %}

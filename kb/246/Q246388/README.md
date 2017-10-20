@@ -6,6 +6,8 @@ permalink: /kb/246/Q246388/
 
 ## Q246388: XCON: Event ID 290 and NDR Returned When Sending to Large DL
 
+{% raw %}
+
 	Article: Q246388
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/246/Q246388/
 	
 	=============================================================================
 	
+
+{% endraw %}

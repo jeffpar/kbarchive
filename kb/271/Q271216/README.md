@@ -6,6 +6,8 @@ permalink: /kb/271/Q271216/
 
 ## Q271216: Fix for E-mail Issues Between 128-Bit and 56-Bit Encryption
 
+{% raw %}
+
 	Article: Q271216
 	Product(s): Microsoft Windows NT
 	Version(s): 3.02,4.0,4.01,5,5.01,5.01 Service Pack 1,5.5
@@ -106,3 +108,5 @@ permalink: /kb/271/Q271216/
 	
 	=============================================================================
 	
+
+{% endraw %}

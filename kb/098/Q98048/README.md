@@ -6,6 +6,8 @@ permalink: /kb/098/Q98048/
 
 ## Q98048: PC WFW: 3.0 MS-DOS Client Disk 1 &#91;5.25, 1.2 MB&#93;
 
+{% raw %}
+
 	Article: Q98048
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -154,3 +156,5 @@ permalink: /kb/098/Q98048/
 	
 	=============================================================================
 	
+
+{% endraw %}

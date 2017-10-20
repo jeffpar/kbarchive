@@ -6,6 +6,8 @@ permalink: /kb/165/Q165508/
 
 ## Q165508: SMS: PCM Does Not Follow Correct Distribution Server Logic
 
+{% raw %}
+
 	Article: Q165508
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2,1.2 SP1
@@ -91,3 +93,5 @@ permalink: /kb/165/Q165508/
 	
 	=============================================================================
 	
+
+{% endraw %}

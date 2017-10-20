@@ -6,6 +6,8 @@ permalink: /kb/184/Q184375/
 
 ## Q184375: PRB: Security Implications of RDS 1.5, IIS 3.0 or 4.0, and ODBC
 
+{% raw %}
+
 	Article: Q184375
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.1,2.0,2.5; winnt:4.0
@@ -128,3 +130,5 @@ permalink: /kb/184/Q184375/
 	
 	=============================================================================
 	
+
+{% endraw %}

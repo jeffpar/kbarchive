@@ -6,6 +6,8 @@ permalink: /kb/174/Q174371/
 
 ## Q174371: Possible Database File Damage When Data Is Appended
 
+{% raw %}
+
 	Article: Q174371
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -113,3 +115,5 @@ permalink: /kb/174/Q174371/
 	
 	=============================================================================
 	
+
+{% endraw %}

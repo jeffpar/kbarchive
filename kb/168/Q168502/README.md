@@ -6,6 +6,8 @@ permalink: /kb/168/Q168502/
 
 ## Q168502: Windows NT Reboots Continuously During Installation
 
+{% raw %}
+
 	Article: Q168502
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -60,3 +62,5 @@ permalink: /kb/168/Q168502/
 	
 	=============================================================================
 	
+
+{% endraw %}

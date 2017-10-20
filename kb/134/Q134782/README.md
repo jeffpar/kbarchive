@@ -6,6 +6,8 @@ permalink: /kb/134/Q134782/
 
 ## Q134782: PPT7: Some Filled Objects on Embedded Slides Don't Print Properl
 
+{% raw %}
+
 	Article: Q134782
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -60,3 +62,5 @@ permalink: /kb/134/Q134782/
 	
 	=============================================================================
 	
+
+{% endraw %}

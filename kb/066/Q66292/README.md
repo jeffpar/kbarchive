@@ -6,6 +6,8 @@ permalink: /kb/066/Q66292/
 
 ## Q66292: Reading Text Files into MS-DOS Environment Variables
 
+{% raw %}
+
 	Article: Q66292
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0,6.0,6.2,6.21,6.22
@@ -80,3 +82,5 @@ permalink: /kb/066/Q66292/
 	
 	=============================================================================
 	
+
+{% endraw %}

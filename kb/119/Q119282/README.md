@@ -6,6 +6,8 @@ permalink: /kb/119/Q119282/
 
 ## Q119282: COM Ports Remain in Device Manager After Modem Is Removed
 
+{% raw %}
+
 	Article: Q119282
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/119/Q119282/
 	
 	=============================================================================
 	
+
+{% endraw %}

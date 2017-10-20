@@ -6,6 +6,8 @@ permalink: /kb/238/Q238064/
 
 ## Q238064: SMS: Sender Routing in Multi-Tiered Hierarchies
 
+{% raw %}
+
 	Article: Q238064
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -65,3 +67,5 @@ permalink: /kb/238/Q238064/
 	
 	=============================================================================
 	
+
+{% endraw %}

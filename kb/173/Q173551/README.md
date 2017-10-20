@@ -6,6 +6,8 @@ permalink: /kb/173/Q173551/
 
 ## Q173551: PPT7: &quot;Part of File is Missing&quot; Error Attempting to Open File
 
+{% raw %}
+
 	Article: Q173551
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -122,3 +124,5 @@ permalink: /kb/173/Q173551/
 	
 	=============================================================================
 	
+
+{% endraw %}

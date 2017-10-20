@@ -6,6 +6,8 @@ permalink: /kb/058/Q58817/
 
 ## Q58817: BASIC 7.00 &quot;Error Loading Run-Time Module: Incompatible&quot;
 
+{% raw %}
+
 	Article: Q58817
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -47,3 +49,5 @@ permalink: /kb/058/Q58817/
 	your BRT70ENR.EXE run-time, the code at that location is not going to
 	be the expected VGA routine, and the results of such a call are
 	unpredictable.
+
+{% endraw %}

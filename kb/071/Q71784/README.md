@@ -6,6 +6,8 @@ permalink: /kb/071/Q71784/
 
 ## Q71784: Installing Stacker Deletes Empty Directories
 
+{% raw %}
+
 	Article: Q71784
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -48,3 +50,5 @@ permalink: /kb/071/Q71784/
 	
 	=============================================================================
 	
+
+{% endraw %}

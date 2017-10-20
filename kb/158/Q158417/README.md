@@ -6,6 +6,8 @@ permalink: /kb/158/Q158417/
 
 ## Q158417: Some Drivers Do Not Read Long File Names on MSN CD-ROM
 
+{% raw %}
+
 	Article: Q158417
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,95
@@ -47,3 +49,5 @@ permalink: /kb/158/Q158417/
 	
 	=============================================================================
 	
+
+{% endraw %}

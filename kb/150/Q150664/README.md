@@ -6,6 +6,8 @@ permalink: /kb/150/Q150664/
 
 ## Q150664: Mastering Visual Basic: README.WRI Content
 
+{% raw %}
+
 	Article: Q150664
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -850,3 +852,5 @@ permalink: /kb/150/Q150664/
 	
 	=============================================================================
 	
+
+{% endraw %}

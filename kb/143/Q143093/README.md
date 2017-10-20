@@ -6,6 +6,8 @@ permalink: /kb/143/Q143093/
 
 ## Q143093: FP: Basic FrontPage Troubleshooting Utilities
 
+{% raw %}
+
 	Article: Q143093
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97
@@ -118,3 +120,5 @@ permalink: /kb/143/Q143093/
 	
 	=============================================================================
 	
+
+{% endraw %}

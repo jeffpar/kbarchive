@@ -6,6 +6,8 @@ permalink: /kb/257/Q257853/
 
 ## Q257853: PRB: Problem When You Call ITC Execute from Form_Load
 
+{% raw %}
+
 	Article: Q257853
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/257/Q257853/
 	
 	=============================================================================
 	
+
+{% endraw %}

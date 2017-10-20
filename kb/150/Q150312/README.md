@@ -6,6 +6,8 @@ permalink: /kb/150/Q150312/
 
 ## Q150312: HOWTO: Install an ISAPI Filter Dynamic-Link Library
 
+{% raw %}
+
 	Article: Q150312
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0,4.0,5.0
@@ -114,3 +116,5 @@ permalink: /kb/150/Q150312/
 	
 	=============================================================================
 	
+
+{% endraw %}

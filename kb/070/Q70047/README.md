@@ -6,6 +6,8 @@ permalink: /kb/070/Q70047/
 
 ## Q70047: Null Modem Connector Settings in Terminal
 
+{% raw %}
+
 	Article: Q70047
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -40,3 +42,5 @@ permalink: /kb/070/Q70047/
 	
 	=============================================================================
 	
+
+{% endraw %}

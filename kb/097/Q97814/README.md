@@ -6,6 +6,8 @@ permalink: /kb/097/Q97814/
 
 ## Q97814: Interfaces Allowing Direct LAN Man Connection to HP
 
+{% raw %}
+
 	Article: Q97814
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/097/Q97814/
 	
 	=============================================================================
 	
+
+{% endraw %}

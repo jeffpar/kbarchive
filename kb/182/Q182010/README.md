@@ -6,6 +6,8 @@ permalink: /kb/182/Q182010/
 
 ## Q182010: XADM: Auto Receipt Is Always from POSTMASTER@&lt;local_domain.ext&gt;
 
+{% raw %}
+
 	Article: Q182010
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -97,3 +99,5 @@ permalink: /kb/182/Q182010/
 	
 	=============================================================================
 	
+
+{% endraw %}

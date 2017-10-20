@@ -6,6 +6,8 @@ permalink: /kb/175/Q175953/
 
 ## Q175953: XADM: Disabling Proxy Address Generation Does Not Work
 
+{% raw %}
+
 	Article: Q175953
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0, 5.5
@@ -84,3 +86,5 @@ permalink: /kb/175/Q175953/
 	
 	=============================================================================
 	
+
+{% endraw %}

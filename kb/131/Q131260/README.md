@@ -6,6 +6,8 @@ permalink: /kb/131/Q131260/
 
 ## Q131260: Adaptec AHA-2940 SCSI and Viper PCI Video Hang Windows NT Setup
 
+{% raw %}
+
 	Article: Q131260
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/131/Q131260/
 	
 	=============================================================================
 	
+
+{% endraw %}

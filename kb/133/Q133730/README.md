@@ -6,6 +6,8 @@ permalink: /kb/133/Q133730/
 
 ## Q133730: Network User Profiles Not Supported on Real-Mode Networks
 
+{% raw %}
+
 	Article: Q133730
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/133/Q133730/
 	
 	=============================================================================
 	
+
+{% endraw %}

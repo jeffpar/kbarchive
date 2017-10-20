@@ -6,6 +6,8 @@ permalink: /kb/172/Q172757/
 
 ## Q172757: Several NT 4.0 Resource Kit Utilities Missing
 
+{% raw %}
+
 	Article: Q172757
 	Product(s): Microsoft Press
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/172/Q172757/
 	
 	=============================================================================
 	
+
+{% endraw %}

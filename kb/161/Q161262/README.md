@@ -6,6 +6,8 @@ permalink: /kb/161/Q161262/
 
 ## Q161262: Creative Writer 2: How to Import/Export Picture
 
+{% raw %}
+
 	Article: Q161262
 	Product(s): Microsoft Home Kids Products
 	Version(s): 2.0
@@ -86,3 +88,5 @@ permalink: /kb/161/Q161262/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112919/
 
 ## Q112919: PC WSPlus: Errors Importing Data Files
 
+{% raw %}
+
 	Article: Q112919
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -79,3 +81,5 @@ permalink: /kb/112/Q112919/
 	
 	=============================================================================
 	
+
+{% endraw %}

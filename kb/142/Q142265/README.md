@@ -6,6 +6,8 @@ permalink: /kb/142/Q142265/
 
 ## Q142265: How to use Regini.exe to modify HKEY_CURRENT_USER
 
+{% raw %}
+
 	Article: Q142265
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -88,3 +90,5 @@ permalink: /kb/142/Q142265/
 	
 	=============================================================================
 	
+
+{% endraw %}

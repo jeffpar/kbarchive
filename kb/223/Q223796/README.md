@@ -6,6 +6,8 @@ permalink: /kb/223/Q223796/
 
 ## Q223796: Flight Simulator: No Aircraft Traffic on Ground or in Air
 
+{% raw %}
+
 	Article: Q223796
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/223/Q223796/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171701/
 
 ## Q171701: Err Msg: MSN Has Detected You Are Missing Some ActiveX Controls
 
+{% raw %}
+
 	Article: Q171701
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -72,3 +74,5 @@ permalink: /kb/171/Q171701/
 	
 	=============================================================================
 	
+
+{% endraw %}

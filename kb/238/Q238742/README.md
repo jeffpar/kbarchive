@@ -6,6 +6,8 @@ permalink: /kb/238/Q238742/
 
 ## Q238742: Query Modifications Display at Top of Results Page
 
+{% raw %}
+
 	Article: Q238742
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -87,3 +89,5 @@ permalink: /kb/238/Q238742/
 	
 	=============================================================================
 	
+
+{% endraw %}

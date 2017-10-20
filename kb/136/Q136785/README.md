@@ -6,6 +6,8 @@ permalink: /kb/136/Q136785/
 
 ## Q136785: Can't See Attachment Sent w/ Sched+ 7.0 Meeting Requests in 1.0
 
+{% raw %}
+
 	Article: Q136785
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -48,3 +50,5 @@ permalink: /kb/136/Q136785/
 	
 	=============================================================================
 	
+
+{% endraw %}

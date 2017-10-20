@@ -6,6 +6,8 @@ permalink: /kb/148/Q148752/
 
 ## Q148752: Update Information Tool Does Not Show Some Updated Files
 
+{% raw %}
+
 	Article: Q148752
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/148/Q148752/
 	
 	=============================================================================
 	
+
+{% endraw %}

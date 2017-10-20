@@ -6,6 +6,8 @@ permalink: /kb/138/Q138081/
 
 ## Q138081: HOWTO: Load an Executable File into the Visual C++ Debugger
 
+{% raw %}
+
 	Article: Q138081
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:4.0,5.0;
@@ -58,3 +60,5 @@ permalink: /kb/138/Q138081/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142096/
 
 ## Q142096: How to Reinstall Windows 95 to a New Folder
 
+{% raw %}
+
 	Article: Q142096
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -145,3 +147,5 @@ permalink: /kb/142/Q142096/
 	
 	=============================================================================
 	
+
+{% endraw %}

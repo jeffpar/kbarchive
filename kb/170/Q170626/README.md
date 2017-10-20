@@ -6,6 +6,8 @@ permalink: /kb/170/Q170626/
 
 ## Q170626: DDEML: Memory Leak in Global Shared Memory
 
+{% raw %}
+
 	Article: Q170626
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/170/Q170626/
 	
 	=============================================================================
 	
+
+{% endraw %}

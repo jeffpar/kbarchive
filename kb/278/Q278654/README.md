@@ -6,6 +6,8 @@ permalink: /kb/278/Q278654/
 
 ## Q278654: MSN Companion Access Numbers
 
+{% raw %}
+
 	Article: Q278654
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/278/Q278654/
 	
 	=============================================================================
 	
+
+{% endraw %}

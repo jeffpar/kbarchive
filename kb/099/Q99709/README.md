@@ -6,6 +6,8 @@ permalink: /kb/099/Q99709/
 
 ## Q99709: PC-CACHE Err Msg: Data Monitor, Has Already Been Loaded...
 
+{% raw %}
+
 	Article: Q99709
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -51,3 +53,5 @@ permalink: /kb/099/Q99709/
 	
 	=============================================================================
 	
+
+{% endraw %}

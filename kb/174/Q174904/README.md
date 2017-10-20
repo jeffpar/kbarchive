@@ -6,6 +6,8 @@ permalink: /kb/174/Q174904/
 
 ## Q174904: Information about TCP/IP Port Assignments
 
+{% raw %}
+
 	Article: Q174904
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.2c,2000,3.0,3.1,3.11,3.5,3.51,4.0
@@ -107,3 +109,5 @@ permalink: /kb/174/Q174904/
 	
 	=============================================================================
 	
+
+{% endraw %}

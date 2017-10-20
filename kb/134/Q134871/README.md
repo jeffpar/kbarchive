@@ -6,6 +6,8 @@ permalink: /kb/134/Q134871/
 
 ## Q134871: PPT7: Embedded Object Resizes if Slide Formatted as Title Master
 
+{% raw %}
+
 	Article: Q134871
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -53,3 +55,5 @@ permalink: /kb/134/Q134871/
 	
 	=============================================================================
 	
+
+{% endraw %}

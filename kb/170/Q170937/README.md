@@ -6,6 +6,8 @@ permalink: /kb/170/Q170937/
 
 ## Q170937: WD97: Supplemental Converter Not Listed in Files Of Type List
 
+{% raw %}
+
 	Article: Q170937
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/170/Q170937/
 	
 	=============================================================================
 	
+
+{% endraw %}

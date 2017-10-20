@@ -6,6 +6,8 @@ permalink: /kb/151/Q151210/
 
 ## Q151210: Q&amp;A: Types Of Socket Applications Supported By Microsoft
 
+{% raw %}
+
 	Article: Q151210
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11b,3.5,3.51
@@ -164,3 +166,5 @@ permalink: /kb/151/Q151210/
 	
 	=============================================================================
 	
+
+{% endraw %}

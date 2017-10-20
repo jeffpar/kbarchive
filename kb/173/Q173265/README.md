@@ -6,6 +6,8 @@ permalink: /kb/173/Q173265/
 
 ## Q173265: BUG: Internet Transfer Control (SP2) Username and Password Fails
 
+{% raw %}
+
 	Article: Q173265
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97sp2
@@ -126,3 +128,5 @@ permalink: /kb/173/Q173265/
 	
 	=============================================================================
 	
+
+{% endraw %}

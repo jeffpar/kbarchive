@@ -6,6 +6,8 @@ permalink: /kb/136/Q136393/
 
 ## Q136393: How to Modify the Windows Registry
 
+{% raw %}
+
 	Article: Q136393
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 7.0
@@ -127,3 +129,5 @@ permalink: /kb/136/Q136393/
 	
 	=============================================================================
 	
+
+{% endraw %}

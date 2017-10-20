@@ -6,6 +6,8 @@ permalink: /kb/315/Q315134/
 
 ## Q315134: FIX: Exception Error After Saving and Closing Report
 
+{% raw %}
+
 	Article: Q315134
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -119,3 +121,5 @@ permalink: /kb/315/Q315134/
 	
 	=============================================================================
 	
+
+{% endraw %}

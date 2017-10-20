@@ -6,6 +6,8 @@ permalink: /kb/147/Q147091/
 
 ## Q147091: XCLN: Message Gets Deleted From Wrong Folder
 
+{% raw %}
+
 	Article: Q147091
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -60,3 +62,5 @@ permalink: /kb/147/Q147091/
 	
 	=============================================================================
 	
+
+{% endraw %}

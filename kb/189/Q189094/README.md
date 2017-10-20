@@ -6,6 +6,8 @@ permalink: /kb/189/Q189094/
 
 ## Q189094: FIX: Calling CHttpFile::ErrorDlg Function Causes Errors 127 &amp; 2
 
+{% raw %}
+
 	Article: Q189094
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:; winnt:5.0
@@ -145,3 +147,5 @@ permalink: /kb/189/Q189094/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152998/
 
 ## Q152998: How to Use gdsset to Change Host Pointer
 
+{% raw %}
+
 	Article: Q152998
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -63,3 +65,5 @@ permalink: /kb/152/Q152998/
 	
 	=============================================================================
 	
+
+{% endraw %}

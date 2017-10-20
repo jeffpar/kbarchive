@@ -6,6 +6,8 @@ permalink: /kb/196/Q196224/
 
 ## Q196224: SMS: STOP 1E Error When Using the &quot;Gold Key&quot; to Remote Control
 
+{% raw %}
+
 	Article: Q196224
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -60,3 +62,5 @@ permalink: /kb/196/Q196224/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168590/
 
 ## Q168590: Netlogon Does Not Replicate Case Changes In User Account Names
 
+{% raw %}
+
 	Article: Q168590
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/168/Q168590/
 	
 	=============================================================================
 	
+
+{% endraw %}

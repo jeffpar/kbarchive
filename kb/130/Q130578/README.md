@@ -6,6 +6,8 @@ permalink: /kb/130/Q130578/
 
 ## Q130578: HOWTO: Customize the Visual FoxPro Environment
 
+{% raw %}
+
 	Article: Q130578
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -158,3 +160,5 @@ permalink: /kb/130/Q130578/
 	
 	=============================================================================
 	
+
+{% endraw %}

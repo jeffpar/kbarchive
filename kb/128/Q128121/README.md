@@ -6,6 +6,8 @@ permalink: /kb/128/Q128121/
 
 ## Q128121: WINS PersonaNonGrata Registry Parameter
 
+{% raw %}
+
 	Article: Q128121
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/128/Q128121/
 	
 	=============================================================================
 	
+
+{% endraw %}

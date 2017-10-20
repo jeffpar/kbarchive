@@ -6,6 +6,8 @@ permalink: /kb/184/Q184981/
 
 ## Q184981: WD97: &quot;Can't Find Project or Library&quot; When You Run a Macro
 
+{% raw %}
+
 	Article: Q184981
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -123,3 +125,5 @@ permalink: /kb/184/Q184981/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/071/Q71767/
 
 ## Q71767: INFO: C2059, C2143: Syntax Errors Involving 'int constant'
 
+{% raw %}
+
 	Article: Q71767
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0
@@ -76,3 +78,5 @@ permalink: /kb/071/Q71767/
 	
 	=============================================================================
 	
+
+{% endraw %}

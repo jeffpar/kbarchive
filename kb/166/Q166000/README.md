@@ -6,6 +6,8 @@ permalink: /kb/166/Q166000/
 
 ## Q166000: Landscape Orientation Not Available for Generic/Text Only Driver
 
+{% raw %}
+
 	Article: Q166000
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -53,3 +55,5 @@ permalink: /kb/166/Q166000/
 	
 	=============================================================================
 	
+
+{% endraw %}

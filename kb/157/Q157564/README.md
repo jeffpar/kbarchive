@@ -6,6 +6,8 @@ permalink: /kb/157/Q157564/
 
 ## Q157564: STOP: c0000263 on Upgrade from WinNT 4.0 to WinNT 3.51
 
+{% raw %}
+
 	Article: Q157564
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -68,3 +70,5 @@ permalink: /kb/157/Q157564/
 	
 	=============================================================================
 	
+
+{% endraw %}

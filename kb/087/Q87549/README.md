@@ -6,6 +6,8 @@ permalink: /kb/087/Q87549/
 
 ## Q87549: FIX: ESP Not Updated Correctly After PUSHFD, POPFD
 
+{% raw %}
+
 	Article: Q87549
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/087/Q87549/
 	
 	=============================================================================
 	
+
+{% endraw %}

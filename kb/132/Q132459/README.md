@@ -6,6 +6,8 @@ permalink: /kb/132/Q132459/
 
 ## Q132459: TEXT &quot;Datatype&quot; Does Not Interpret Form-Feed Correctly
 
+{% raw %}
+
 	Article: Q132459
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -64,3 +66,5 @@ permalink: /kb/132/Q132459/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/109/Q109482/
 
 ## Q109482: How to Change the Creator and Type Set by FCREATE()
 
+{% raw %}
+
 	Article: Q109482
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -46,3 +48,5 @@ permalink: /kb/109/Q109482/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100084/
 
 ## Q100084: Using the LINK32 -LIB Command
 
+{% raw %}
+
 	Article: Q100084
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -119,3 +121,5 @@ permalink: /kb/100/Q100084/
 	
 	=============================================================================
 	
+
+{% endraw %}

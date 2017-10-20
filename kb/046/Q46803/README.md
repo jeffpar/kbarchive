@@ -6,6 +6,8 @@ permalink: /kb/046/Q46803/
 
 ## Q46803: Presentation Graphics Allows Only One Color Per Data Series
 
+{% raw %}
+
 	Article: Q46803
 	Product(s): See article
 	Version(s): 2.00
@@ -43,3 +45,5 @@ permalink: /kb/046/Q46803/
 	giving you the ability to assign one color, one style, one fillmask,
 	and one plot character to the series. This is by design and
 	cannot be changed.
+
+{% endraw %}

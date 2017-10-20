@@ -6,6 +6,8 @@ permalink: /kb/172/Q172851/
 
 ## Q172851: BUG: REPORT FORM TO FILE ASCII Adds Extra CR/LF in Detail Band
 
+{% raw %}
+
 	Article: Q172851
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -89,3 +91,5 @@ permalink: /kb/172/Q172851/
 	
 	=============================================================================
 	
+
+{% endraw %}

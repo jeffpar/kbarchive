@@ -6,6 +6,8 @@ permalink: /kb/163/Q163513/
 
 ## Q163513: Mac Multimedia: Internet Config Error Messages and Solutions
 
+{% raw %}
+
 	Article: Q163513
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition,1996-1997,1997 edition
@@ -119,3 +121,5 @@ permalink: /kb/163/Q163513/
 	
 	=============================================================================
 	
+
+{% endraw %}

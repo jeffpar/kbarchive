@@ -6,6 +6,8 @@ permalink: /kb/140/Q140653/
 
 ## Q140653: PRB: Cursor-Based Grid Goes Blank If SQL SELECT Resets Cursor
 
+{% raw %}
+
 	Article: Q140653
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 | 3.00b
@@ -130,3 +132,5 @@ permalink: /kb/140/Q140653/
 	
 	=============================================================================
 	
+
+{% endraw %}

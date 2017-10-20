@@ -6,6 +6,8 @@ permalink: /kb/166/Q166469/
 
 ## Q166469: FIX: Multiple Check In Fails with Keyword Expansion
 
+{% raw %}
+
 	Article: Q166469
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0,97; winnt:5.0
@@ -61,3 +63,5 @@ permalink: /kb/166/Q166469/
 	
 	=============================================================================
 	
+
+{% endraw %}

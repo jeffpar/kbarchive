@@ -6,6 +6,8 @@ permalink: /kb/064/Q64807/
 
 ## Q64807: goto Label at End of Block Without &quot;;&quot; Invalid Syntax
 
+{% raw %}
+
 	Article: Q64807
 	Product(s): See article
 	Version(s): 4.x 5.x 6.00 | 5.10 6.00
@@ -48,3 +50,5 @@ permalink: /kb/064/Q64807/
 	          mybug:   /* This line generates the syntax error      */
 	        }          /*       replace with: mybug:  ;             */
 	  }
+
+{% endraw %}

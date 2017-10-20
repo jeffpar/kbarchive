@@ -6,6 +6,8 @@ permalink: /kb/154/Q154983/
 
 ## Q154983: Dual Screens at High Resolutions Don't Display Correctly
 
+{% raw %}
+
 	Article: Q154983
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -58,3 +60,5 @@ permalink: /kb/154/Q154983/
 	
 	=============================================================================
 	
+
+{% endraw %}

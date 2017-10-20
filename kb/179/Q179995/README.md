@@ -6,6 +6,8 @@ permalink: /kb/179/Q179995/
 
 ## Q179995: Memory Leak in FPNW Causes Windows NT Server to Hang
 
+{% raw %}
+
 	Article: Q179995
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/179/Q179995/
 	
 	=============================================================================
 	
+
+{% endraw %}

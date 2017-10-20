@@ -6,6 +6,8 @@ permalink: /kb/126/Q126276/
 
 ## Q126276: Video Error Messages Under Windows NT 3.5
 
+{% raw %}
+
 	Article: Q126276
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :1.0,1994 edition,1995 edition; winnt:3.5
@@ -219,3 +221,5 @@ permalink: /kb/126/Q126276/
 	
 	=============================================================================
 	
+
+{% endraw %}

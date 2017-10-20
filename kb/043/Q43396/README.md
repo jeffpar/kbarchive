@@ -6,6 +6,8 @@ permalink: /kb/043/Q43396/
 
 ## Q43396: C: _bios_timeofday Documentation Error
 
+{% raw %}
+
 	Article: Q43396
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.00 5.10
@@ -23,3 +25,5 @@ permalink: /kb/043/Q43396/
 	The corrected declaration is a pointer to a long integer, as follows:
 	
 	   long *timeval;
+
+{% endraw %}
