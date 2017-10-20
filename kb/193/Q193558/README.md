@@ -6,6 +6,8 @@ permalink: /kb/193/Q193558/
 
 ## Q193558: COleServerDoc and CArchive Corrupts Large Files
 
+{% raw %}
+
 	Article: Q193558
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -92,3 +94,5 @@ permalink: /kb/193/Q193558/
 	
 	=============================================================================
 	
+
+{% endraw %}

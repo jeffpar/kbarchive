@@ -6,6 +6,8 @@ permalink: /kb/105/Q105158/
 
 ## Q105158: Schedule Service Doesn't Run on Sundays
 
+{% raw %}
+
 	Article: Q105158
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -50,3 +52,5 @@ permalink: /kb/105/Q105158/
 	
 	=============================================================================
 	
+
+{% endraw %}

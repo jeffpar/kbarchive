@@ -6,6 +6,8 @@ permalink: /kb/118/Q118977/
 
 ## Q118977: Error Msg When You Attach Paradox File to MS Access 2.0
 
+{% raw %}
+
 	Article: Q118977
 	Product(s): Microsoft Press
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/118/Q118977/
 	
 	=============================================================================
 	
+
+{% endraw %}

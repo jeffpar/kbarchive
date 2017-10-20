@@ -6,6 +6,8 @@ permalink: /kb/118/Q118771/
 
 ## Q118771: Word for Windows in Office 4.2 May Not Display Correctly
 
+{% raw %}
+
 	Article: Q118771
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -53,3 +55,5 @@ permalink: /kb/118/Q118771/
 	
 	=============================================================================
 	
+
+{% endraw %}

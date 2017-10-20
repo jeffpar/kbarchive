@@ -6,6 +6,8 @@ permalink: /kb/155/Q155567/
 
 ## Q155567: NetWare Login Script (NWSCRIPT) Parses &quot;cx..&quot; Incorrectly
 
+{% raw %}
+
 	Article: Q155567
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/155/Q155567/
 	
 	=============================================================================
 	
+
+{% endraw %}

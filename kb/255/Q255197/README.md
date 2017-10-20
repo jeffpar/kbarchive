@@ -6,6 +6,8 @@ permalink: /kb/255/Q255197/
 
 ## Q255197: Cannot Add a Printer Port, Access Violation in Spools.exe Occurs
 
+{% raw %}
+
 	Article: Q255197
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/255/Q255197/
 	
 	=============================================================================
 	
+
+{% endraw %}

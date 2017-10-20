@@ -6,6 +6,8 @@ permalink: /kb/150/Q150454/
 
 ## Q150454: INFO: Assigning Different LUs to Common Groups in SNA Server
 
+{% raw %}
+
 	Article: Q150454
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11,3.0,4.0
@@ -62,3 +64,5 @@ permalink: /kb/150/Q150454/
 	
 	=============================================================================
 	
+
+{% endraw %}

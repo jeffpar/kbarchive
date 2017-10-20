@@ -6,6 +6,8 @@ permalink: /kb/252/Q252308/
 
 ## Q252308: FS2000: Tutorials 12 and 13 Are Missing from Available Flights
 
+{% raw %}
+
 	Article: Q252308
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/252/Q252308/
 	
 	=============================================================================
 	
+
+{% endraw %}

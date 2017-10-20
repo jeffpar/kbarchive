@@ -6,6 +6,8 @@ permalink: /kb/191/Q191984/
 
 ## Q191984: DHCP Relay Agent Fails to Start after Install
 
+{% raw %}
+
 	Article: Q191984
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/191/Q191984/
 	
 	=============================================================================
 	
+
+{% endraw %}

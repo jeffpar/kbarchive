@@ -6,6 +6,8 @@ permalink: /kb/228/Q228744/
 
 ## Q228744: Runtime Error 1512 for String &#91;Input&#93; Parameter -- Korean Window
 
+{% raw %}
+
 	Article: Q228744
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -76,3 +78,5 @@ permalink: /kb/228/Q228744/
 	
 	=============================================================================
 	
+
+{% endraw %}

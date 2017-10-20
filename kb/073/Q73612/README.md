@@ -6,6 +6,8 @@ permalink: /kb/073/Q73612/
 
 ## Q73612: MS-DOS 5 Upgrade Incorrectly Detects Monochrome Monitors
 
+{% raw %}
+
 	Article: Q73612
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -50,3 +52,5 @@ permalink: /kb/073/Q73612/
 	
 	=============================================================================
 	
+
+{% endraw %}

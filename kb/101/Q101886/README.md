@@ -6,6 +6,8 @@ permalink: /kb/101/Q101886/
 
 ## Q101886: MS-DOS Shell Displays Undelete's Hidden Sentry Directory
 
+{% raw %}
+
 	Article: Q101886
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/101/Q101886/
 	
 	=============================================================================
 	
+
+{% endraw %}

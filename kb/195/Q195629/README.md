@@ -6,6 +6,8 @@ permalink: /kb/195/Q195629/
 
 ## Q195629: FIX: Cannot Add Items to Catalogs Not in VFP 98 Directory
 
+{% raw %}
+
 	Article: Q195629
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -88,3 +90,5 @@ permalink: /kb/195/Q195629/
 	
 	=============================================================================
 	
+
+{% endraw %}

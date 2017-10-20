@@ -6,6 +6,8 @@ permalink: /kb/134/Q134373/
 
 ## Q134373: FIX: Win32(80x86) Release Target Not Displayed in Windows 95
 
+{% raw %}
+
 	Article: Q134373
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -75,3 +77,5 @@ permalink: /kb/134/Q134373/
 	
 	=============================================================================
 	
+
+{% endraw %}

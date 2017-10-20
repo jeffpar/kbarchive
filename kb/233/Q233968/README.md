@@ -6,6 +6,8 @@ permalink: /kb/233/Q233968/
 
 ## Q233968: AspAllowOutOfProcComponents Is Obsolete in IIS 5.0
 
+{% raw %}
+
 	Article: Q233968
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -47,3 +49,5 @@ permalink: /kb/233/Q233968/
 	
 	=============================================================================
 	
+
+{% endraw %}

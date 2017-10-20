@@ -6,6 +6,8 @@ permalink: /kb/177/Q177580/
 
 ## Q177580: LU1 Print Jobs Formatted Incorrectly when Using Bypass GDI, PDT
 
+{% raw %}
+
 	Article: Q177580
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -69,3 +71,5 @@ permalink: /kb/177/Q177580/
 	
 	=============================================================================
 	
+
+{% endraw %}

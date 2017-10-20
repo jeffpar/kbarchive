@@ -6,6 +6,8 @@ permalink: /kb/258/Q258003/
 
 ## Q258003: Re-creating Missing DSA Attributes After VIACompact
 
+{% raw %}
+
 	Article: Q258003
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -95,3 +97,5 @@ permalink: /kb/258/Q258003/
 	
 	=============================================================================
 	
+
+{% endraw %}

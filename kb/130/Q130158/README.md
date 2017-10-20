@@ -6,6 +6,8 @@ permalink: /kb/130/Q130158/
 
 ## Q130158: PPT: Double-Clicking File Opens Wrong Version of PowerPoint
 
+{% raw %}
+
 	Article: Q130158
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0,95
@@ -82,3 +84,5 @@ permalink: /kb/130/Q130158/
 	
 	=============================================================================
 	
+
+{% endraw %}

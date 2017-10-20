@@ -6,6 +6,8 @@ permalink: /kb/140/Q140061/
 
 ## Q140061: SMS Administrator Not Updating After SQL Server Name Change
 
+{% raw %}
+
 	Article: Q140061
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -69,3 +71,5 @@ permalink: /kb/140/Q140061/
 	
 	=============================================================================
 	
+
+{% endraw %}

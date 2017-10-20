@@ -6,6 +6,8 @@ permalink: /kb/074/Q74658/
 
 ## Q74658: PC-Kwik Print Spooler 3.0 with Windows Enhanced and Standard
 
+{% raw %}
+
 	Article: Q74658
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/074/Q74658/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98782/
 
 ## Q98782: Mac Wkst: Message Summary Screen Not Displayed
 
+{% raw %}
+
 	Article: Q98782
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -62,3 +64,5 @@ permalink: /kb/098/Q98782/
 	
 	=============================================================================
 	
+
+{% endraw %}

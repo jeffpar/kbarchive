@@ -6,6 +6,8 @@ permalink: /kb/310/Q310614/
 
 ## Q310614: SMS: The SMS Client Is Not Supported on 64-Bit Windows XP
 
+{% raw %}
+
 	Article: Q310614
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -52,3 +54,5 @@ permalink: /kb/310/Q310614/
 	
 	=============================================================================
 	
+
+{% endraw %}

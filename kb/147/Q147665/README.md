@@ -6,6 +6,8 @@ permalink: /kb/147/Q147665/
 
 ## Q147665: HOWTO: Override Implicit Declaration with Declared Variable
 
+{% raw %}
+
 	Article: Q147665
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/147/Q147665/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/233/Q233476/
 
 ## Q233476: XCLN: Outlook Msg Sent to Wrong Recipients/OAB Corruption
 
+{% raw %}
+
 	Article: Q233476
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -105,3 +107,5 @@ permalink: /kb/233/Q233476/
 	
 	=============================================================================
 	
+
+{% endraw %}

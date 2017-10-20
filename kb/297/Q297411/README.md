@@ -6,6 +6,8 @@ permalink: /kb/297/Q297411/
 
 ## Q297411: Resolving the Duplicate Tile issue with MSN Explorer (MSN Versio
 
+{% raw %}
+
 	Article: Q297411
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -135,3 +137,5 @@ permalink: /kb/297/Q297411/
 	
 	=============================================================================
 	
+
+{% endraw %}

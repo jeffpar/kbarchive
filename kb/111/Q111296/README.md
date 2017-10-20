@@ -6,6 +6,8 @@ permalink: /kb/111/Q111296/
 
 ## Q111296: WFWG 3.11 Resource Kit Err Msg: THREED.VBX Is Out of Date
 
+{% raw %}
+
 	Article: Q111296
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/111/Q111296/
 	
 	=============================================================================
 	
+
+{% endraw %}

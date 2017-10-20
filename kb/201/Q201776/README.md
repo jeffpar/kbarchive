@@ -6,6 +6,8 @@ permalink: /kb/201/Q201776/
 
 ## Q201776: SMS: Double-Byte Character Set Name Sorting Limitation
 
+{% raw %}
+
 	Article: Q201776
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -56,3 +58,5 @@ permalink: /kb/201/Q201776/
 	
 	=============================================================================
 	
+
+{% endraw %}

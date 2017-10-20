@@ -6,6 +6,8 @@ permalink: /kb/099/Q99094/
 
 ## Q99094: How to Set a Custom Paper Size for Dot-Matrix Printers
 
+{% raw %}
+
 	Article: Q99094
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 3.00
@@ -74,3 +76,5 @@ permalink: /kb/099/Q99094/
 	
 	=============================================================================
 	
+
+{% endraw %}

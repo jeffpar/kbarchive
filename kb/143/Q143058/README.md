@@ -6,6 +6,8 @@ permalink: /kb/143/Q143058/
 
 ## Q143058: Cannot Add Internet Address by Clicking To Button
 
+{% raw %}
+
 	Article: Q143058
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -47,3 +49,5 @@ permalink: /kb/143/Q143058/
 	
 	=============================================================================
 	
+
+{% endraw %}

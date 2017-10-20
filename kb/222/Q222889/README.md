@@ -6,6 +6,8 @@ permalink: /kb/222/Q222889/
 
 ## Q222889: How to Copy the Msdun13.exe File from Another Computer
 
+{% raw %}
+
 	Article: Q222889
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -199,3 +201,5 @@ permalink: /kb/222/Q222889/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193031/
 
 ## Q193031: SMS: INVDOS Reports 2 GB Space on FAT32 Drives Larger Than 2 GB
 
+{% raw %}
+
 	Article: Q193031
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -157,3 +159,5 @@ permalink: /kb/193/Q193031/
 	
 	=============================================================================
 	
+
+{% endraw %}

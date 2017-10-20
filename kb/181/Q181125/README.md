@@ -6,6 +6,8 @@ permalink: /kb/181/Q181125/
 
 ## Q181125: XFOR: Bcc Recipients Visible in Migrated cc:Mail Messages
 
+{% raw %}
+
 	Article: Q181125
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5,8.02
@@ -55,3 +57,5 @@ permalink: /kb/181/Q181125/
 	
 	=============================================================================
 	
+
+{% endraw %}

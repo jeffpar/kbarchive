@@ -6,6 +6,8 @@ permalink: /kb/166/Q166246/
 
 ## Q166246: SMS: Inventory Is Not Always Reported to Current Logon Server
 
+{% raw %}
+
 	Article: Q166246
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.1,1.2
@@ -107,3 +109,5 @@ permalink: /kb/166/Q166246/
 	
 	=============================================================================
 	
+
+{% endraw %}

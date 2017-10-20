@@ -6,6 +6,8 @@ permalink: /kb/149/Q149080/
 
 ## Q149080: Err Msg in SNMPUTIL: &quot;error on SnmpMgrRequest 40&quot;
 
+{% raw %}
+
 	Article: Q149080
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -38,3 +40,5 @@ permalink: /kb/149/Q149080/
 	
 	=============================================================================
 	
+
+{% endraw %}

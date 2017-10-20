@@ -6,6 +6,8 @@ permalink: /kb/188/Q188872/
 
 ## Q188872: WD97: &quot;Header Record Delimiters&quot; Appears Repeatedly in Merge
 
+{% raw %}
+
 	Article: Q188872
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/188/Q188872/
 	
 	=============================================================================
 	
+
+{% endraw %}

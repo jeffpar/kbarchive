@@ -6,6 +6,8 @@ permalink: /kb/065/Q65590/
 
 ## Q65590: _Floodfill() Doesn't Completely Fill Areas with Patterns
 
+{% raw %}
+
 	Article: Q65590
 	Product(s): See article
 	Version(s): 6.00
@@ -70,3 +72,5 @@ permalink: /kb/065/Q65590/
 	    _setvideomode( _DEFAULTMODE );
 	
 	}
+
+{% endraw %}

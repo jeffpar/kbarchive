@@ -6,6 +6,8 @@ permalink: /kb/185/Q185611/
 
 ## Q185611: WD97: Track Changes Tracks Only the Last Change Made to Text
 
+{% raw %}
+
 	Article: Q185611
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/185/Q185611/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/304/Q304876/
 
 ## Q304876: NNTP Service in Windows NT 4.0 Contains Memory Leak
 
+{% raw %}
+
 	Article: Q304876
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6a
@@ -124,3 +126,5 @@ permalink: /kb/304/Q304876/
 	
 	=============================================================================
 	
+
+{% endraw %}

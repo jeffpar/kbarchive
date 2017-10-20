@@ -6,6 +6,8 @@ permalink: /kb/036/Q36935/
 
 ## Q36935: Writing to Video Memory in the QuickC Environment
 
+{% raw %}
+
 	Article: Q36935
 	Product(s): See article
 	Version(s): 1.00 1.01
@@ -29,3 +31,5 @@ permalink: /kb/036/Q36935/
 	If you are trying to achieve some effect through writing directly to
 	the video memory while in QuickC's environment, you should try other
 	alternatives instead, such as using DOS or BIOS interrupts.
+
+{% endraw %}

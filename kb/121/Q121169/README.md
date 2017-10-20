@@ -6,6 +6,8 @@ permalink: /kb/121/Q121169/
 
 ## Q121169: Lotus ScreenCam for Windows Causes Blank Screen
 
+{% raw %}
+
 	Article: Q121169
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/121/Q121169/
 	
 	=============================================================================
 	
+
+{% endraw %}

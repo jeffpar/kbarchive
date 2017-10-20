@@ -6,6 +6,8 @@ permalink: /kb/196/Q196079/
 
 ## Q196079: API Tracing May Cause Access Violation With CMETPN() Function
 
+{% raw %}
+
 	Article: Q196079
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -120,3 +122,5 @@ permalink: /kb/196/Q196079/
 	
 	=============================================================================
 	
+
+{% endraw %}

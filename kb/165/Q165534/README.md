@@ -6,6 +6,8 @@ permalink: /kb/165/Q165534/
 
 ## Q165534: Link Service Not Configured with Short Length of Service Title
 
+{% raw %}
+
 	Article: Q165534
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/165/Q165534/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155736/
 
 ## Q155736: CD Player Seems to Hang with Multiple-CD Changer
 
+{% raw %}
+
 	Article: Q155736
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/155/Q155736/
 	
 	=============================================================================
 	
+
+{% endraw %}

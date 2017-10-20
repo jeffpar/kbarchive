@@ -6,6 +6,8 @@ permalink: /kb/223/Q223172/
 
 ## Q223172: Encarta: Help Topic Appears When You Enable Voice Control
 
+{% raw %}
+
 	Article: Q223172
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -141,3 +143,5 @@ permalink: /kb/223/Q223172/
 	
 	=============================================================================
 	
+
+{% endraw %}

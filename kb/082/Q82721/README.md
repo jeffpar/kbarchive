@@ -6,6 +6,8 @@ permalink: /kb/082/Q82721/
 
 ## Q82721: Problems Running Windows 3.1 After Installing Desktop 1.0
 
+{% raw %}
+
 	Article: Q82721
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/082/Q82721/
 	
 	=============================================================================
 	
+
+{% endraw %}

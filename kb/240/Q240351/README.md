@@ -6,6 +6,8 @@ permalink: /kb/240/Q240351/
 
 ## Q240351: NBA Inside Drive 2000: How to Enable 3D Acceleration
 
+{% raw %}
+
 	Article: Q240351
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/240/Q240351/
 	
 	=============================================================================
 	
+
+{% endraw %}

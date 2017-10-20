@@ -6,6 +6,8 @@ permalink: /kb/031/Q31529/
 
 ## Q31529: MASM 5.10 EXT.DOC: DoMessage - Outputs String on Dialog Line
 
+{% raw %}
+
 	Article: Q31529
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -30,3 +32,5 @@ permalink: /kb/031/Q31529/
 	 */
 	int pascal DoMessage (pStr)
 	char far * pStr;
+
+{% endraw %}

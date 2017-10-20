@@ -6,6 +6,8 @@ permalink: /kb/163/Q163359/
 
 ## Q163359: HOWTO: STL Sample for list::size,list::resize Functions
 
+{% raw %}
+
 	Article: Q163359
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -152,3 +154,5 @@ permalink: /kb/163/Q163359/
 	
 	=============================================================================
 	
+
+{% endraw %}

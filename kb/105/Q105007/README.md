@@ -6,6 +6,8 @@ permalink: /kb/105/Q105007/
 
 ## Q105007: PRB: Too Many Memory Variables
 
+{% raw %}
+
 	Article: Q105007
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.01; MS-DOS:2.0,2.1,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -54,3 +56,5 @@ permalink: /kb/105/Q105007/
 	
 	=============================================================================
 	
+
+{% endraw %}

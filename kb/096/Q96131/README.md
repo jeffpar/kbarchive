@@ -6,6 +6,8 @@ permalink: /kb/096/Q96131/
 
 ## Q96131: Print Conflicts Between Remote and Local MS-DOS-Based Apps
 
+{% raw %}
+
 	Article: Q96131
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/096/Q96131/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/059/Q59321/
 
 ## Q59321: BASIC and C, /FPa, LINK L2025 &quot;Symbol Defined More Than Once&quot;
 
+{% raw %}
+
 	Article: Q59321
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -82,3 +84,5 @@ permalink: /kb/059/Q59321/
 	printf("%f",sin(d));           // Comment this line and
 	//printf("%f",BasSin(&d));     // uncomment this line for workaround #3
 	}
+
+{% endraw %}

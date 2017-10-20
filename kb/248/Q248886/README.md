@@ -6,6 +6,8 @@ permalink: /kb/248/Q248886/
 
 ## Q248886: &quot;Fatal Exception 0E&quot; Error in IFSMGR When Starting Windows 95
 
+{% raw %}
+
 	Article: Q248886
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -66,3 +68,5 @@ permalink: /kb/248/Q248886/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/253/Q253937/
 
 ## Q253937: FS2000: Program Hangs When You Fly Over San Francisco
 
+{% raw %}
+
 	Article: Q253937
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -75,3 +77,5 @@ permalink: /kb/253/Q253937/
 	
 	=============================================================================
 	
+
+{% endraw %}

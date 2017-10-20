@@ -6,6 +6,8 @@ permalink: /kb/186/Q186804/
 
 ## Q186804: Drive Mappings Not Processed During NDS Login Script Execution
 
+{% raw %}
+
 	Article: Q186804
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -83,3 +85,5 @@ permalink: /kb/186/Q186804/
 	
 	=============================================================================
 	
+
+{% endraw %}

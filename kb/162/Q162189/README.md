@@ -6,6 +6,8 @@ permalink: /kb/162/Q162189/
 
 ## Q162189: Macintosh Clients May Hang Temporarily with Multiple Mac Volumes
 
+{% raw %}
+
 	Article: Q162189
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -104,3 +106,5 @@ permalink: /kb/162/Q162189/
 	
 	=============================================================================
 	
+
+{% endraw %}

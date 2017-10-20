@@ -6,6 +6,8 @@ permalink: /kb/116/Q116009/
 
 ## Q116009: Get MPEG Command Set for MCI from Microsoft Download Center
 
+{% raw %}
+
 	Article: Q116009
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -62,3 +64,5 @@ permalink: /kb/116/Q116009/
 	
 	=============================================================================
 	
+
+{% endraw %}

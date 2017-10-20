@@ -6,6 +6,8 @@ permalink: /kb/066/Q66727/
 
 ## Q66727: IBM Mouse Driver Version 1.0 Changes Windows Screen Color
 
+{% raw %}
+
 	Article: Q66727
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/066/Q66727/
 	
 	=============================================================================
 	
+
+{% endraw %}

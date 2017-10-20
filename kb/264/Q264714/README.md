@@ -6,6 +6,8 @@ permalink: /kb/264/Q264714/
 
 ## Q264714: SMS: WIN9X Clients Fail to Run Advert. w/ Status Message 10003
 
+{% raw %}
+
 	Article: Q264714
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -68,3 +70,5 @@ permalink: /kb/264/Q264714/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150464/
 
 ## Q150464: UPD: New Object Navigator for &quot;Object Programming with VB4&quot;
 
+{% raw %}
+
 	Article: Q150464
 	Product(s): Microsoft Press
 	Version(s): 
@@ -132,3 +134,5 @@ permalink: /kb/150/Q150464/
 	
 	=============================================================================
 	
+
+{% endraw %}

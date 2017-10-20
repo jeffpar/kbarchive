@@ -6,6 +6,8 @@ permalink: /kb/107/Q107389/
 
 ## Q107389: Cannot Print Directly to Imagewriter Printer
 
+{% raw %}
+
 	Article: Q107389
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -49,3 +51,5 @@ permalink: /kb/107/Q107389/
 	
 	=============================================================================
 	
+
+{% endraw %}

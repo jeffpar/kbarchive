@@ -6,6 +6,8 @@ permalink: /kb/178/Q178075/
 
 ## Q178075: CPI-C Version 1.2 Is Not Supported On SNA Server
 
+{% raw %}
+
 	Article: Q178075
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,4.0
@@ -43,3 +45,5 @@ permalink: /kb/178/Q178075/
 	
 	=============================================================================
 	
+
+{% endraw %}

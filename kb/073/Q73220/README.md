@@ -6,6 +6,8 @@ permalink: /kb/073/Q73220/
 
 ## Q73220: Link Pulse May Need to Be Disabled on 3Com TP Cards
 
+{% raw %}
+
 	Article: Q73220
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/073/Q73220/
 	
 	=============================================================================
 	
+
+{% endraw %}

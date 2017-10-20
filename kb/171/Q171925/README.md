@@ -6,6 +6,8 @@ permalink: /kb/171/Q171925/
 
 ## Q171925: Mac Bookshelf: Cannot Print Landscape Orientation
 
+{% raw %}
+
 	Article: Q171925
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -51,3 +53,5 @@ permalink: /kb/171/Q171925/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182321/
 
 ## Q182321: XADM: Event ID 1025 Occurs When Search Folders Are Added To Back
 
+{% raw %}
+
 	Article: Q182321
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -106,3 +108,5 @@ permalink: /kb/182/Q182321/
 	
 	=============================================================================
 	
+
+{% endraw %}

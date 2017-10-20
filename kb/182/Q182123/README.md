@@ -6,6 +6,8 @@ permalink: /kb/182/Q182123/
 
 ## Q182123: FP: No Access to Form Properties by Right-Clicking Form Field
 
+{% raw %}
+
 	Article: Q182123
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:1.1,97
@@ -89,3 +91,5 @@ permalink: /kb/182/Q182123/
 	
 	=============================================================================
 	
+
+{% endraw %}

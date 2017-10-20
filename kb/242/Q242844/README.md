@@ -6,6 +6,8 @@ permalink: /kb/242/Q242844/
 
 ## Q242844: FS2000: New Flight Starts as Minimized Task
 
+{% raw %}
+
 	Article: Q242844
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/242/Q242844/
 	
 	=============================================================================
 	
+
+{% endraw %}

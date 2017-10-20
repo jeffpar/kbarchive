@@ -6,6 +6,8 @@ permalink: /kb/157/Q157145/
 
 ## Q157145: Extended or Unintelligible Characters Printed Starting Windows
 
+{% raw %}
+
 	Article: Q157145
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/157/Q157145/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148135/
 
 ## Q148135: Bookshelf '96-'97 ErrMsg: OLE Automation Error
 
+{% raw %}
+
 	Article: Q148135
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -46,3 +48,5 @@ permalink: /kb/148/Q148135/
 	
 	=============================================================================
 	
+
+{% endraw %}

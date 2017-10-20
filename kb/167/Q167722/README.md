@@ -6,6 +6,8 @@ permalink: /kb/167/Q167722/
 
 ## Q167722: WD97: How to Format a Hyperlinked Object in an HTML Document
 
+{% raw %}
+
 	Article: Q167722
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/167/Q167722/
 	
 	=============================================================================
 	
+
+{% endraw %}

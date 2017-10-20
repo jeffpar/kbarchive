@@ -6,6 +6,8 @@ permalink: /kb/165/Q165324/
 
 ## Q165324: XCON: Basic Site Connector Troubleshooting Checklist
 
+{% raw %}
+
 	Article: Q165324
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -307,3 +309,5 @@ permalink: /kb/165/Q165324/
 	
 	=============================================================================
 	
+
+{% endraw %}

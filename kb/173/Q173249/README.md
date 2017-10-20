@@ -6,6 +6,8 @@ permalink: /kb/173/Q173249/
 
 ## Q173249: FIX: Print Preview Doesn't Honor Font Width Setting
 
+{% raw %}
+
 	Article: Q173249
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0
@@ -144,3 +146,5 @@ permalink: /kb/173/Q173249/
 	
 	=============================================================================
 	
+
+{% endraw %}

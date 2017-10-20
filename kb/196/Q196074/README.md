@@ -6,6 +6,8 @@ permalink: /kb/196/Q196074/
 
 ## Q196074: How to Store the Authenticated User Name in a Session Variable
 
+{% raw %}
+
 	Article: Q196074
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0
@@ -110,3 +112,5 @@ permalink: /kb/196/Q196074/
 	
 	=============================================================================
 	
+
+{% endraw %}

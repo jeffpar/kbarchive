@@ -6,6 +6,8 @@ permalink: /kb/075/Q75712/
 
 ## Q75712: Alphabetical Listing of the MS-DOS 5.0 Working Disks Contents
 
+{% raw %}
+
 	Article: Q75712
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -132,3 +134,5 @@ permalink: /kb/075/Q75712/
 	
 	=============================================================================
 	
+
+{% endraw %}

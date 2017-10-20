@@ -6,6 +6,8 @@ permalink: /kb/166/Q166142/
 
 ## Q166142: PRB: Cannot Re-Choose &lt;None&gt; in Bug Property Sheet
 
+{% raw %}
+
 	Article: Q166142
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:1.0
@@ -95,3 +97,5 @@ permalink: /kb/166/Q166142/
 	
 	=============================================================================
 	
+
+{% endraw %}

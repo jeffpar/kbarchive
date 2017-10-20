@@ -6,6 +6,8 @@ permalink: /kb/137/Q137411/
 
 ## Q137411: BUG: HalfHeight Forms Closable Even If Closable = False
 
+{% raw %}
+
 	Article: Q137411
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -97,3 +99,5 @@ permalink: /kb/137/Q137411/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178415/
 
 ## Q178415: FS98: Installation Under Microsoft Windows NT Workstation 4.0
 
+{% raw %}
+
 	Article: Q178415
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:; winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/178/Q178415/
 	
 	=============================================================================
 	
+
+{% endraw %}

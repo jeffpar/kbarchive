@@ -6,6 +6,8 @@ permalink: /kb/149/Q149717/
 
 ## Q149717: PRB: MediaView: Jump to SubTopic Fails
 
+{% raw %}
+
 	Article: Q149717
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 1.0
@@ -83,3 +85,5 @@ permalink: /kb/149/Q149717/
 	
 	=============================================================================
 	
+
+{% endraw %}

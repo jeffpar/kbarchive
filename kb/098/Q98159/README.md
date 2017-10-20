@@ -6,6 +6,8 @@ permalink: /kb/098/Q98159/
 
 ## Q98159: SMTP: Err Msg: ERROR Translating Message to SMTP...
 
+{% raw %}
+
 	Article: Q98159
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -114,3 +116,5 @@ permalink: /kb/098/Q98159/
 	
 	=============================================================================
 	
+
+{% endraw %}

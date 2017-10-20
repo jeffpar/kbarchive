@@ -6,6 +6,8 @@ permalink: /kb/165/Q165185/
 
 ## Q165185: XCLN: Address Book Stops with Modeless Address Book Applications
 
+{% raw %}
+
 	Article: Q165185
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/165/Q165185/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/060/Q60506/
 
 ## Q60506: Workstation, Logon, and Other Domain Information
 
+{% raw %}
+
 	Article: Q60506
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/060/Q60506/
 	
 	=============================================================================
 	
+
+{% endraw %}

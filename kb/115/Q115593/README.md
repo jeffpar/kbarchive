@@ -6,6 +6,8 @@ permalink: /kb/115/Q115593/
 
 ## Q115593: Troubleshooting Remote Access in Windows for Workgroups 3.11
 
+{% raw %}
+
 	Article: Q115593
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -215,3 +217,5 @@ permalink: /kb/115/Q115593/
 	
 	=============================================================================
 	
+
+{% endraw %}

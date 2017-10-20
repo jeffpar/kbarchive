@@ -6,6 +6,8 @@ permalink: /kb/263/Q263922/
 
 ## Q263922: Message Sent to a Window Is Not Displayed Properly
 
+{% raw %}
+
 	Article: Q263922
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/263/Q263922/
 	
 	=============================================================================
 	
+
+{% endraw %}

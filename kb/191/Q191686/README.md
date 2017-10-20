@@ -6,6 +6,8 @@ permalink: /kb/191/Q191686/
 
 ## Q191686: BUG: Focus Changes Even Though Grid Text Box Valid Returns .F.
 
+{% raw %}
+
 	Article: Q191686
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -73,3 +75,5 @@ permalink: /kb/191/Q191686/
 	
 	=============================================================================
 	
+
+{% endraw %}

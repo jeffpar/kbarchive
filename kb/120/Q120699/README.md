@@ -6,6 +6,8 @@ permalink: /kb/120/Q120699/
 
 ## Q120699: Space: Manual Setup Does Not Install a Planetary System
 
+{% raw %}
+
 	Article: Q120699
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/120/Q120699/
 	
 	=============================================================================
 	
+
+{% endraw %}

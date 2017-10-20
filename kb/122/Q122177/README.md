@@ -6,6 +6,8 @@ permalink: /kb/122/Q122177/
 
 ## Q122177: Systems Management Server Event Log Codes 0 Through 99
 
+{% raw %}
+
 	Article: Q122177
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2
@@ -265,3 +267,5 @@ permalink: /kb/122/Q122177/
 	
 	=============================================================================
 	
+
+{% endraw %}

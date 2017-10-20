@@ -6,6 +6,8 @@ permalink: /kb/138/Q138998/
 
 ## Q138998: HOWTO: How to Use SQL Pass-Through to Send Results to a Table
 
+{% raw %}
+
 	Article: Q138998
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -72,3 +74,5 @@ permalink: /kb/138/Q138998/
 	
 	=============================================================================
 	
+
+{% endraw %}

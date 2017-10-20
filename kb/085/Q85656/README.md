@@ -6,6 +6,8 @@ permalink: /kb/085/Q85656/
 
 ## Q85656: HP ThinkJet Is Missing Euro FanFold Paper Size
 
+{% raw %}
+
 	Article: Q85656
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/085/Q85656/
 	
 	=============================================================================
 	
+
+{% endraw %}

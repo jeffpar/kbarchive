@@ -6,6 +6,8 @@ permalink: /kb/183/Q183553/
 
 ## Q183553: OLE DB Hangs Trying to Access Field Over 32,745 Bytes Long
 
+{% raw %}
+
 	Article: Q183553
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -58,3 +60,5 @@ permalink: /kb/183/Q183553/
 	
 	=============================================================================
 	
+
+{% endraw %}

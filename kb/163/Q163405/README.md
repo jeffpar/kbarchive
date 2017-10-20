@@ -6,6 +6,8 @@ permalink: /kb/163/Q163405/
 
 ## Q163405: Writer 2: Shared Graphic Filters not Compatible with Paint
 
+{% raw %}
+
 	Article: Q163405
 	Product(s): Microsoft Home Kids Products
 	Version(s): 2.0
@@ -88,3 +90,5 @@ permalink: /kb/163/Q163405/
 	
 	=============================================================================
 	
+
+{% endraw %}

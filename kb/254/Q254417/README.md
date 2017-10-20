@@ -6,6 +6,8 @@ permalink: /kb/254/Q254417/
 
 ## Q254417: MapPoint 2001: CD-ROM Drive Access Features Perform Slowly
 
+{% raw %}
+
 	Article: Q254417
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -91,3 +93,5 @@ permalink: /kb/254/Q254417/
 	
 	=============================================================================
 	
+
+{% endraw %}

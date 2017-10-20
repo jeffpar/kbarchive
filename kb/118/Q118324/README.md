@@ -6,6 +6,8 @@ permalink: /kb/118/Q118324/
 
 ## Q118324: Choosing Network Icon Hangs System with Access 1.1 Installed
 
+{% raw %}
+
 	Article: Q118324
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -69,3 +71,5 @@ permalink: /kb/118/Q118324/
 	
 	=============================================================================
 	
+
+{% endraw %}

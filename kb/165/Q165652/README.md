@@ -6,6 +6,8 @@ permalink: /kb/165/Q165652/
 
 ## Q165652: SNA Services Do Not Start if Save Required Dialog Box Appears
 
+{% raw %}
+
 	Article: Q165652
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/165/Q165652/
 	
 	=============================================================================
 	
+
+{% endraw %}

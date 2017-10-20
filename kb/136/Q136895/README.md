@@ -6,6 +6,8 @@ permalink: /kb/136/Q136895/
 
 ## Q136895: PC Gen: First Contact Form for MS Mail Connection Gateway
 
+{% raw %}
+
 	Article: Q136895
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0b,3.2
@@ -117,3 +119,5 @@ permalink: /kb/136/Q136895/
 	
 	=============================================================================
 	
+
+{% endraw %}

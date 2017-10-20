@@ -6,6 +6,8 @@ permalink: /kb/136/Q136976/
 
 ## Q136976: PRB: No Hot Keys to Switch Between Pages in Project Manager
 
+{% raw %}
+
 	Article: Q136976
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/136/Q136976/
 	
 	=============================================================================
 	
+
+{% endraw %}

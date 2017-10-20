@@ -6,6 +6,8 @@ permalink: /kb/203/Q203597/
 
 ## Q203597: Load Balancing PPTP with WLBS
 
+{% raw %}
+
 	Article: Q203597
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,2000,4.0
@@ -75,3 +77,5 @@ permalink: /kb/203/Q203597/
 	
 	=============================================================================
 	
+
+{% endraw %}

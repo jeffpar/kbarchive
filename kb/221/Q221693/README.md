@@ -6,6 +6,8 @@ permalink: /kb/221/Q221693/
 
 ## Q221693: FIX:C0000005 Fatal Error With This.Caption=This.Text In GotFocus
 
+{% raw %}
+
 	Article: Q221693
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -71,3 +73,5 @@ permalink: /kb/221/Q221693/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123148/
 
 ## Q123148: FIX: Problem w/Traditional Chinese Windows 3.1 DBCS File Names
 
+{% raw %}
+
 	Article: Q123148
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.1; WINDOWS:3.1
@@ -56,3 +58,5 @@ permalink: /kb/123/Q123148/
 	
 	=============================================================================
 	
+
+{% endraw %}

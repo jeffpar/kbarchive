@@ -6,6 +6,8 @@ permalink: /kb/303/Q303720/
 
 ## Q303720: Access Violation Occurs in Messenger Service During Shutdown
 
+{% raw %}
+
 	Article: Q303720
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -95,3 +97,5 @@ permalink: /kb/303/Q303720/
 	
 	=============================================================================
 	
+
+{% endraw %}

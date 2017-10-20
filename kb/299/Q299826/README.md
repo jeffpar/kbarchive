@@ -6,6 +6,8 @@ permalink: /kb/299/Q299826/
 
 ## Q299826: Streets and Trips: Program Unexpectedly Stops Responding
 
+{% raw %}
+
 	Article: Q299826
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -171,3 +173,5 @@ permalink: /kb/299/Q299826/
 	
 	=============================================================================
 	
+
+{% endraw %}

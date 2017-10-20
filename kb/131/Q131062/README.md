@@ -6,6 +6,8 @@ permalink: /kb/131/Q131062/
 
 ## Q131062: Network Connections Made From Logon Script May Fail
 
+{% raw %}
+
 	Article: Q131062
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11,95
@@ -67,3 +69,5 @@ permalink: /kb/131/Q131062/
 	
 	=============================================================================
 	
+
+{% endraw %}

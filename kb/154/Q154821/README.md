@@ -6,6 +6,8 @@ permalink: /kb/154/Q154821/
 
 ## Q154821: HOWTO: Get Extended File Time Information Using the Win32 API
 
+{% raw %}
+
 	Article: Q154821
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -169,3 +171,5 @@ permalink: /kb/154/Q154821/
 	
 	=============================================================================
 	
+
+{% endraw %}

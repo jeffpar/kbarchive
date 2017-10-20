@@ -6,6 +6,8 @@ permalink: /kb/271/Q271061/
 
 ## Q271061: Encarta: Cannot Download Image from Active Server Pages (ASP)
 
+{% raw %}
+
 	Article: Q271061
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/271/Q271061/
 	
 	=============================================================================
 	
+
+{% endraw %}

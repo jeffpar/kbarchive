@@ -6,6 +6,8 @@ permalink: /kb/195/Q195610/
 
 ## Q195610: WD97: After Update Excel Object Not a Paste Special Option
 
+{% raw %}
+
 	Article: Q195610
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/195/Q195610/
 	
 	=============================================================================
 	
+
+{% endraw %}

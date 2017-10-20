@@ -6,6 +6,8 @@ permalink: /kb/149/Q149451/
 
 ## Q149451: XFOR: Failure While Accessing the Process Table
 
+{% raw %}
+
 	Article: Q149451
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/149/Q149451/
 	
 	=============================================================================
 	
+
+{% endraw %}

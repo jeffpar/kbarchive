@@ -6,6 +6,8 @@ permalink: /kb/127/Q127909/
 
 ## Q127909: Seed Routing Not Working With C.O.P.S. LocalTalk NIC
 
+{% raw %}
+
 	Article: Q127909
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -56,3 +58,5 @@ permalink: /kb/127/Q127909/
 	
 	=============================================================================
 	
+
+{% endraw %}

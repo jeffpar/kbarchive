@@ -6,6 +6,8 @@ permalink: /kb/058/Q58597/
 
 ## Q58597: Mac Hyp: DisplayAddressScreen for User to Add Recipients
 
+{% raw %}
+
 	Article: Q58597
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -58,3 +60,5 @@ permalink: /kb/058/Q58597/
 	
 	=============================================================================
 	
+
+{% endraw %}

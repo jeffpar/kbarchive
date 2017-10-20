@@ -6,6 +6,8 @@ permalink: /kb/196/Q196402/
 
 ## Q196402: XADM: Changes Made During Move Server Process are Not Saved
 
+{% raw %}
+
 	Article: Q196402
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -50,3 +52,5 @@ permalink: /kb/196/Q196402/
 	
 	=============================================================================
 	
+
+{% endraw %}

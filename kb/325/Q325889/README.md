@@ -6,6 +6,8 @@ permalink: /kb/325/Q325889/
 
 ## Q325889: HOW TO: Remove and Reinstall IIS 5.0 and 5.1
 
+{% raw %}
+
 	Article: Q325889
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -222,3 +224,5 @@ permalink: /kb/325/Q325889/
 	
 	=============================================================================
 	
+
+{% endraw %}

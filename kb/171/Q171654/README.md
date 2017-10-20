@@ -6,6 +6,8 @@ permalink: /kb/171/Q171654/
 
 ## Q171654: HOWTO: Attach a Console Window to Your Visual Basic Program
 
+{% raw %}
+
 	Article: Q171654
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -141,3 +143,5 @@ permalink: /kb/171/Q171654/
 	
 	=============================================================================
 	
+
+{% endraw %}

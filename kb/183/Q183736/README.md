@@ -6,6 +6,8 @@ permalink: /kb/183/Q183736/
 
 ## Q183736: How to Administer IIS 3.0 from IIS 4.0 MMC
 
+{% raw %}
+
 	Article: Q183736
 	Product(s): Internet Information Server
 	Version(s): WINNT:3.0,4.0
@@ -113,3 +115,5 @@ permalink: /kb/183/Q183736/
 	
 	=============================================================================
 	
+
+{% endraw %}

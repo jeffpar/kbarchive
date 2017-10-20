@@ -6,6 +6,8 @@ permalink: /kb/185/Q185571/
 
 ## Q185571: Printing from Lotus Freelance 97 Produces Thin Horizontal Line
 
+{% raw %}
+
 	Article: Q185571
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/185/Q185571/
 	
 	=============================================================================
 	
+
+{% endraw %}

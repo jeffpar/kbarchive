@@ -6,6 +6,8 @@ permalink: /kb/279/Q279524/
 
 ## Q279524: MSN Companion setup does not connect to toll-free number
 
+{% raw %}
+
 	Article: Q279524
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -79,3 +81,5 @@ permalink: /kb/279/Q279524/
 	
 	=============================================================================
 	
+
+{% endraw %}

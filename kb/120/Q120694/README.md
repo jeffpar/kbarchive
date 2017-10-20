@@ -6,6 +6,8 @@ permalink: /kb/120/Q120694/
 
 ## Q120694: Anthems or Other MIDI Files Play Quietly or Inaudibly
 
+{% raw %}
+
 	Article: Q120694
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,1993 edition,1994 edition,3.0,3.1,3.11
@@ -132,3 +134,5 @@ permalink: /kb/120/Q120694/
 	
 	=============================================================================
 	
+
+{% endraw %}

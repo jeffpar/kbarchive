@@ -6,6 +6,8 @@ permalink: /kb/260/Q260047/
 
 ## Q260047: FS2000: Interior View Is Distorted in Hairy Carrier Adventure
 
+{% raw %}
+
 	Article: Q260047
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/260/Q260047/
 	
 	=============================================================================
 	
+
+{% endraw %}

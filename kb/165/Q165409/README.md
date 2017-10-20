@@ -6,6 +6,8 @@ permalink: /kb/165/Q165409/
 
 ## Q165409: WD97: How to Find Help for Creating Non-Breaking Spaces
 
+{% raw %}
+
 	Article: Q165409
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/165/Q165409/
 	
 	=============================================================================
 	
+
+{% endraw %}

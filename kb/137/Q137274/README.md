@@ -6,6 +6,8 @@ permalink: /kb/137/Q137274/
 
 ## Q137274: 25-Character Maximum for Preferred NetWare File Server
 
+{% raw %}
+
 	Article: Q137274
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/137/Q137274/
 	
 	=============================================================================
 	
+
+{% endraw %}

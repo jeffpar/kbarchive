@@ -6,6 +6,8 @@ permalink: /kb/038/Q38886/
 
 ## Q38886: Leading Edge Display Problems with QuickBASIC Version 4.50
 
+{% raw %}
+
 	Article: Q38886
 	Product(s): See article
 	Version(s): 4.50
@@ -58,3 +60,5 @@ permalink: /kb/038/Q38886/
 	correctly with no video problems.
 	
 	As stated above, this information has not been confirmed by Microsoft.
+
+{% endraw %}

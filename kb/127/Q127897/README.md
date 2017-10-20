@@ -6,6 +6,8 @@ permalink: /kb/127/Q127897/
 
 ## Q127897: WINSADMN Database Active Column Symbol Descriptions
 
+{% raw %}
+
 	Article: Q127897
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -46,3 +48,5 @@ permalink: /kb/127/Q127897/
 	
 	=============================================================================
 	
+
+{% endraw %}

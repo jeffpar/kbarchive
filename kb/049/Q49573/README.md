@@ -6,6 +6,8 @@ permalink: /kb/049/Q49573/
 
 ## Q49573: INFO: scanf() with %i and a Leading 0 Gives Octal Conversion
 
+{% raw %}
+
 	Article: Q49573
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:5.1,6.0,6.00a,6.00ax,7.0; OS/2:5.1,6.0,6.00a; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.
@@ -52,3 +54,5 @@ permalink: /kb/049/Q49573/
 	
 	=============================================================================
 	
+
+{% endraw %}

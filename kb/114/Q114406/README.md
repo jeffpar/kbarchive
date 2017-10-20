@@ -6,6 +6,8 @@ permalink: /kb/114/Q114406/
 
 ## Q114406: SNADS: First Contact Form for SNADS Gateway
 
+{% raw %}
+
 	Article: Q114406
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1
@@ -102,3 +104,5 @@ permalink: /kb/114/Q114406/
 	
 	=============================================================================
 	
+
+{% endraw %}

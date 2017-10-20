@@ -6,6 +6,8 @@ permalink: /kb/052/Q52196/
 
 ## Q52196: Serial Communications Parity Definition
 
+{% raw %}
+
 	Article: Q52196
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -62,3 +64,5 @@ permalink: /kb/052/Q52196/
 	
 	=============================================================================
 	
+
+{% endraw %}

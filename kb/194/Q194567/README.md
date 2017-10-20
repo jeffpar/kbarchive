@@ -6,6 +6,8 @@ permalink: /kb/194/Q194567/
 
 ## Q194567: WD97: What Happens to Fields When You Save As Text Only
 
+{% raw %}
+
 	Article: Q194567
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -212,3 +214,5 @@ permalink: /kb/194/Q194567/
 	
 	=============================================================================
 	
+
+{% endraw %}

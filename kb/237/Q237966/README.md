@@ -6,6 +6,8 @@ permalink: /kb/237/Q237966/
 
 ## Q237966: VSS Explorer Closes with Rename
 
+{% raw %}
+
 	Article: Q237966
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -102,3 +104,5 @@ permalink: /kb/237/Q237966/
 	
 	=============================================================================
 	
+
+{% endraw %}

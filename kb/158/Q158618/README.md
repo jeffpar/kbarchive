@@ -6,6 +6,8 @@ permalink: /kb/158/Q158618/
 
 ## Q158618: INF: SQLState 22002 Error When Fetching Results
 
+{% raw %}
+
 	Article: Q158618
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5; WINDOWS:2.5,2.65
@@ -59,3 +61,5 @@ permalink: /kb/158/Q158618/
 	
 	=============================================================================
 	
+
+{% endraw %}

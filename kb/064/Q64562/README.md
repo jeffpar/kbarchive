@@ -6,6 +6,8 @@ permalink: /kb/064/Q64562/
 
 ## Q64562: View.Source Truncates Long Pathnames
 
+{% raw %}
+
 	Article: Q64562
 	Product(s): See article
 	Version(s): 2.50 2.51
@@ -41,3 +43,5 @@ permalink: /kb/064/Q64562/
 	Microsoft has confirmed this to be a problem in QuickC versions 2.50
 	and 2.51. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

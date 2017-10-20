@@ -6,6 +6,8 @@ permalink: /kb/043/Q43237/
 
 ## Q43237: Mac Wkst: Difference Between Closing and Signing Out
 
+{% raw %}
+
 	Article: Q43237
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -45,3 +47,5 @@ permalink: /kb/043/Q43237/
 	
 	=============================================================================
 	
+
+{% endraw %}

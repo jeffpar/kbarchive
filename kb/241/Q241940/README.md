@@ -6,6 +6,8 @@ permalink: /kb/241/Q241940/
 
 ## Q241940: BUG: C2954 Error When Using Class Template as Template-Parameter
 
+{% raw %}
+
 	Article: Q241940
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/241/Q241940/
 	
 	=============================================================================
 	
+
+{% endraw %}

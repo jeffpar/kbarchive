@@ -6,6 +6,8 @@ permalink: /kb/157/Q157055/
 
 ## Q157055: INF: ODBC Access Driver Does Not Support Create or Drop View
 
+{% raw %}
+
 	Article: Q157055
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.4
@@ -40,3 +42,5 @@ permalink: /kb/157/Q157055/
 	
 	=============================================================================
 	
+
+{% endraw %}

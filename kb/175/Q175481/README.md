@@ -6,6 +6,8 @@ permalink: /kb/175/Q175481/
 
 ## Q175481: XADM: Store Does Not Grow When Moving Users to Another Server
 
+{% raw %}
+
 	Article: Q175481
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/175/Q175481/
 	
 	=============================================================================
 	
+
+{% endraw %}

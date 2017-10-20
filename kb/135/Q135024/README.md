@@ -6,6 +6,8 @@ permalink: /kb/135/Q135024/
 
 ## Q135024: Packard Bell Legend Hard Disk Using MS-DOS Compatibility Mode
 
+{% raw %}
+
 	Article: Q135024
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/135/Q135024/
 	
 	=============================================================================
 	
+
+{% endraw %}

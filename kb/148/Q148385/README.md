@@ -6,6 +6,8 @@ permalink: /kb/148/Q148385/
 
 ## Q148385: IFMEMBER.EXE Fails If User Is Member of More Than 15 Groups
 
+{% raw %}
+
 	Article: Q148385
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -54,3 +56,5 @@ permalink: /kb/148/Q148385/
 	
 	=============================================================================
 	
+
+{% endraw %}

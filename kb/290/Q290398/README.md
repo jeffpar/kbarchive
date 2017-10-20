@@ -6,6 +6,8 @@ permalink: /kb/290/Q290398/
 
 ## Q290398: PRB: Access Denied When You Try to Start DCOM Server
 
+{% raw %}
+
 	Article: Q290398
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -157,3 +159,5 @@ permalink: /kb/290/Q290398/
 	
 	=============================================================================
 	
+
+{% endraw %}

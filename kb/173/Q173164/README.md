@@ -6,6 +6,8 @@ permalink: /kb/173/Q173164/
 
 ## Q173164: PRB: Loading a Workspace Is Slow in Visual C++
 
+{% raw %}
+
 	Article: Q173164
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/173/Q173164/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106522/
 
 ## Q106522: DoubleSpace Drive: Make Directory Results in Zero Bytes Free
 
+{% raw %}
+
 	Article: Q106522
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -53,3 +55,5 @@ permalink: /kb/106/Q106522/
 	
 	=============================================================================
 	
+
+{% endraw %}

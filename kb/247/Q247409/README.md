@@ -6,6 +6,8 @@ permalink: /kb/247/Q247409/
 
 ## Q247409: RD Command with /S and &quot;&quot; Parameters Deletes All Subdirectories
 
+{% raw %}
+
 	Article: Q247409
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/247/Q247409/
 	
 	=============================================================================
 	
+
+{% endraw %}

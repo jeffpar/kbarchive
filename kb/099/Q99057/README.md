@@ -6,6 +6,8 @@ permalink: /kb/099/Q99057/
 
 ## Q99057: PC Forms: Resolved Names Are Not Underlined
 
+{% raw %}
+
 	Article: Q99057
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -49,3 +51,5 @@ permalink: /kb/099/Q99057/
 	
 	=============================================================================
 	
+
+{% endraw %}

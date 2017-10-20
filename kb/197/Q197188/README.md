@@ -6,6 +6,8 @@ permalink: /kb/197/Q197188/
 
 ## Q197188: STATUS_REPARSE w/ Trashed FileObject-&gt;Name Returned to Mup.sys
 
+{% raw %}
+
 	Article: Q197188
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/197/Q197188/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/034/Q34408/
 
 ## Q34408: Far Pointer Comparisons Assume Same Segment
 
+{% raw %}
+
 	Article: Q34408
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -25,3 +27,5 @@ permalink: /kb/034/Q34408/
 	the same object must share the same segment value (unless the
 	pointers are declared to point to a huge object, in which case
 	the pointers are handled using 32-bit arithmetic).
+
+{% endraw %}

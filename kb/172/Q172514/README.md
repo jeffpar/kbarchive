@@ -6,6 +6,8 @@ permalink: /kb/172/Q172514/
 
 ## Q172514: Silent RIP for IP Available for Windows NT Workstation
 
+{% raw %}
+
 	Article: Q172514
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4
@@ -61,3 +63,5 @@ permalink: /kb/172/Q172514/
 	
 	=============================================================================
 	
+
+{% endraw %}

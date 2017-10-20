@@ -6,6 +6,8 @@ permalink: /kb/075/Q75087/
 
 ## Q75087: 3.5-inch MS-DOS 5 Upgrade May Fail with Early DOS Versions
 
+{% raw %}
+
 	Article: Q75087
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -76,3 +78,5 @@ permalink: /kb/075/Q75087/
 	
 	=============================================================================
 	
+
+{% endraw %}

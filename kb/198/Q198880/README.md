@@ -6,6 +6,8 @@ permalink: /kb/198/Q198880/
 
 ## Q198880: FIX: Cannot Simultaneously Set DTPicker's MinDate And MaxDate
 
+{% raw %}
+
 	Article: Q198880
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -215,3 +217,5 @@ permalink: /kb/198/Q198880/
 	
 	=============================================================================
 	
+
+{% endraw %}

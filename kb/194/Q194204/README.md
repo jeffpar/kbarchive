@@ -6,6 +6,8 @@ permalink: /kb/194/Q194204/
 
 ## Q194204: HOWTO: Extend the Web Publishing Wizard with Custom Layouts
 
+{% raw %}
+
 	Article: Q194204
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -168,3 +170,5 @@ permalink: /kb/194/Q194204/
 	
 	=============================================================================
 	
+
+{% endraw %}

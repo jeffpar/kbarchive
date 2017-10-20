@@ -6,6 +6,8 @@ permalink: /kb/194/Q194206/
 
 ## Q194206: FIX: Jet Drivers Do Not Support Bit-wise Operators
 
+{% raw %}
+
 	Article: Q194206
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0,2.0,2.1 SP2,2.5,3.0,3.5,3.51,3.6
@@ -140,3 +142,5 @@ permalink: /kb/194/Q194206/
 	
 	=============================================================================
 	
+
+{% endraw %}

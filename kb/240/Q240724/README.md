@@ -6,6 +6,8 @@ permalink: /kb/240/Q240724/
 
 ## Q240724: TPU: Err Msg: Summary View Creation Failed
 
+{% raw %}
+
 	Article: Q240724
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -81,3 +83,5 @@ permalink: /kb/240/Q240724/
 	
 	=============================================================================
 	
+
+{% endraw %}

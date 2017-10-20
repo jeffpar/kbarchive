@@ -6,6 +6,8 @@ permalink: /kb/087/Q87201/
 
 ## Q87201: PROFS: Changes Made to Database During Installation
 
+{% raw %}
+
 	Article: Q87201
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -50,3 +52,5 @@ permalink: /kb/087/Q87201/
 	
 	=============================================================================
 	
+
+{% endraw %}

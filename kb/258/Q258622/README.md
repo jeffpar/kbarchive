@@ -6,6 +6,8 @@ permalink: /kb/258/Q258622/
 
 ## Q258622: Baseball 2001: Graphics Are Too Bright or Pale and Washed Out
 
+{% raw %}
+
 	Article: Q258622
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -50,3 +52,5 @@ permalink: /kb/258/Q258622/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82649/
 
 ## Q82649: The Benefits of OLE in Windows 3.1
 
+{% raw %}
+
 	Article: Q82649
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/082/Q82649/
 	
 	=============================================================================
 	
+
+{% endraw %}

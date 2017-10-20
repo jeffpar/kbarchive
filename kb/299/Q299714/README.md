@@ -6,6 +6,8 @@ permalink: /kb/299/Q299714/
 
 ## Q299714: HOW TO: Call a COM Object from Active Server Pages
 
+{% raw %}
+
 	Article: Q299714
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -143,3 +145,5 @@ permalink: /kb/299/Q299714/
 	
 	=============================================================================
 	
+
+{% endraw %}

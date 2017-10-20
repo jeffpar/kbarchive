@@ -6,6 +6,8 @@ permalink: /kb/265/Q265372/
 
 ## Q265372: PRB: Different Cases Across ASP Collection Key Names Not Advised
 
+{% raw %}
+
 	Article: Q265372
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -85,3 +87,5 @@ permalink: /kb/265/Q265372/
 	
 	=============================================================================
 	
+
+{% endraw %}

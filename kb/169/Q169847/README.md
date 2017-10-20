@@ -6,6 +6,8 @@ permalink: /kb/169/Q169847/
 
 ## Q169847: SNMP SysUpTime Counter Resets After 49.7 Days
 
+{% raw %}
+
 	Article: Q169847
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -65,3 +67,5 @@ permalink: /kb/169/Q169847/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99340/
 
 ## Q99340: Windows 3.1 Card File Format
 
+{% raw %}
+
 	Article: Q99340
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -200,3 +202,5 @@ permalink: /kb/099/Q99340/
 	
 	=============================================================================
 	
+
+{% endraw %}

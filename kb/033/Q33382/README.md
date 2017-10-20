@@ -6,6 +6,8 @@ permalink: /kb/033/Q33382/
 
 ## Q33382: DOCERR: Programmer's Guide FREE ST(num) Reference Is Incorrect
 
+{% raw %}
+
 	Article: Q33382
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1
@@ -35,3 +37,5 @@ permalink: /kb/033/Q33382/
 	
 	=============================================================================
 	
+
+{% endraw %}

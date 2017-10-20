@@ -6,6 +6,8 @@ permalink: /kb/126/Q126336/
 
 ## Q126336: Works 3.0: Problems Printing to HP DeskJet Drivers 4.x and 5.x
 
+{% raw %}
+
 	Article: Q126336
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1994 edition,1995 edition,3.0,3.1,3.11
@@ -116,3 +118,5 @@ permalink: /kb/126/Q126336/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172167/
 
 ## Q172167: ODE97: DOC: Code Example in NodeClick Event Help Topic Incorrect
 
+{% raw %}
+
 	Article: Q172167
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/172/Q172167/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182070/
 
 ## Q182070: HOWTO: Create a Resolution-Independent Form
 
+{% raw %}
+
 	Article: Q182070
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -218,3 +220,5 @@ permalink: /kb/182/Q182070/
 	
 	=============================================================================
 	
+
+{% endraw %}

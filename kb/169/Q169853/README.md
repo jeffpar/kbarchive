@@ -6,6 +6,8 @@ permalink: /kb/169/Q169853/
 
 ## Q169853: 0Ds Inserted When Transparency Is ASCII Is Selected
 
+{% raw %}
+
 	Article: Q169853
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -57,3 +59,5 @@ permalink: /kb/169/Q169853/
 	
 	=============================================================================
 	
+
+{% endraw %}

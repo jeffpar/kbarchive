@@ -6,6 +6,8 @@ permalink: /kb/244/Q244758/
 
 ## Q244758: Returns &quot;Type Mismatch&quot; Error After Request.BinaryRead() Method
 
+{% raw %}
+
 	Article: Q244758
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -126,3 +128,5 @@ permalink: /kb/244/Q244758/
 	
 	=============================================================================
 	
+
+{% endraw %}

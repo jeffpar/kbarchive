@@ -6,6 +6,8 @@ permalink: /kb/061/Q61603/
 
 ## Q61603: TEXT.C Can Cause a Protection Violation Under OS/2
 
+{% raw %}
+
 	Article: Q61603
 	Product(s): See article
 	Version(s): 6.00
@@ -38,3 +40,5 @@ permalink: /kb/061/Q61603/
 	Microsoft has confirmed this to be a problem with the C Compiler
 	version 6.00. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

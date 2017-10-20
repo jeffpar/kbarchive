@@ -6,6 +6,8 @@ permalink: /kb/152/Q152736/
 
 ## Q152736: XCLN: No Read Receipts Sent When Auto-Accepting Meetings
 
+{% raw %}
+
 	Article: Q152736
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,7.0
@@ -49,3 +51,5 @@ permalink: /kb/152/Q152736/
 	
 	=============================================================================
 	
+
+{% endraw %}

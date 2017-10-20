@@ -6,6 +6,8 @@ permalink: /kb/172/Q172405/
 
 ## Q172405: FIX: &quot;Unhandled exception&quot; in MFC DAO App After VC++ 5.0 SP1
 
+{% raw %}
+
 	Article: Q172405
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS NT:5.0sp1
@@ -147,3 +149,5 @@ permalink: /kb/172/Q172405/
 	
 	=============================================================================
 	
+
+{% endraw %}

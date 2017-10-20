@@ -6,6 +6,8 @@ permalink: /kb/166/Q166969/
 
 ## Q166969: WD97: Invalid Page Fault in Word at Startup When Disk Space Low
 
+{% raw %}
+
 	Article: Q166969
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/166/Q166969/
 	
 	=============================================================================
 	
+
+{% endraw %}

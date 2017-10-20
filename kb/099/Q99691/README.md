@@ -6,6 +6,8 @@ permalink: /kb/099/Q99691/
 
 ## Q99691: ErrMsg: &quot;Printer Fonts are Missing&quot; with HP DeskJet 2.1 Driver
 
+{% raw %}
+
 	Article: Q99691
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/099/Q99691/
 	
 	=============================================================================
 	
+
+{% endraw %}

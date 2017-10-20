@@ -6,6 +6,8 @@ permalink: /kb/155/Q155157/
 
 ## Q155157: Error Changing Password at Logon with Dial-Up Networking
 
+{% raw %}
+
 	Article: Q155157
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -64,3 +66,5 @@ permalink: /kb/155/Q155157/
 	
 	=============================================================================
 	
+
+{% endraw %}

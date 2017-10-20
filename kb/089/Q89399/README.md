@@ -6,6 +6,8 @@ permalink: /kb/089/Q89399/
 
 ## Q89399: Double-Clicking Multimedia Icon Does Not Start Program
 
+{% raw %}
+
 	Article: Q89399
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 1.0,1991 edition,1992 edition
@@ -68,3 +70,5 @@ permalink: /kb/089/Q89399/
 	
 	=============================================================================
 	
+
+{% endraw %}

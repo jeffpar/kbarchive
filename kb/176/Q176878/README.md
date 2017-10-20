@@ -6,6 +6,8 @@ permalink: /kb/176/Q176878/
 
 ## Q176878: PRB: Replacing Names.dat File Changes Long File Names
 
+{% raw %}
+
 	Article: Q176878
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/176/Q176878/
 	
 	=============================================================================
 	
+
+{% endraw %}

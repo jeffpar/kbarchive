@@ -6,6 +6,8 @@ permalink: /kb/184/Q184955/
 
 ## Q184955: Monster Truck Madness 2: Music Volume Control Does Not Work
 
+{% raw %}
+
 	Article: Q184955
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -74,3 +76,5 @@ permalink: /kb/184/Q184955/
 	
 	=============================================================================
 	
+
+{% endraw %}

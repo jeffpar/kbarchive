@@ -6,6 +6,8 @@ permalink: /kb/142/Q142859/
 
 ## Q142859: Configuring Internet Server Gopher Searches
 
+{% raw %}
+
 	Article: Q142859
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -128,3 +130,5 @@ permalink: /kb/142/Q142859/
 	
 	=============================================================================
 	
+
+{% endraw %}

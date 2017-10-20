@@ -6,6 +6,8 @@ permalink: /kb/084/Q84781/
 
 ## Q84781: Cannot Change Source Disk Location on Express Setup
 
+{% raw %}
+
 	Article: Q84781
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/084/Q84781/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191549/
 
 ## Q191549: MIME Parts and Message Source for a Digitally Signed Message
 
+{% raw %}
+
 	Article: Q191549
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -146,3 +148,5 @@ permalink: /kb/191/Q191549/
 	
 	=============================================================================
 	
+
+{% endraw %}

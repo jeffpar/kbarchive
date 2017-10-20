@@ -6,6 +6,8 @@ permalink: /kb/271/Q271660/
 
 ## Q271660: Pocket Streets: Map Does Not Scroll When You Use Cursor Control
 
+{% raw %}
+
 	Article: Q271660
 	Product(s): Microsoft Automap
 	Version(s): 2.5
@@ -77,3 +79,5 @@ permalink: /kb/271/Q271660/
 	
 	=============================================================================
 	
+
+{% endraw %}

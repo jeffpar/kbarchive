@@ -6,6 +6,8 @@ permalink: /kb/162/Q162180/
 
 ## Q162180: PPT: Sample Code to Assign a Random Animation to all Objects
 
+{% raw %}
+
 	Article: Q162180
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -287,3 +289,5 @@ permalink: /kb/162/Q162180/
 	
 	=============================================================================
 	
+
+{% endraw %}

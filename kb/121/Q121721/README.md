@@ -6,6 +6,8 @@ permalink: /kb/121/Q121721/
 
 ## Q121721: DIR of Local Share Fails from Command Prompt Started by AT
 
+{% raw %}
+
 	Article: Q121721
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -80,3 +82,5 @@ permalink: /kb/121/Q121721/
 	
 	=============================================================================
 	
+
+{% endraw %}

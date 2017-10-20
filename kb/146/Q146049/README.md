@@ -6,6 +6,8 @@ permalink: /kb/146/Q146049/
 
 ## Q146049: XCLN: User Permissions Not Migrated Over to New .SCD File
 
+{% raw %}
+
 	Article: Q146049
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -42,3 +44,5 @@ permalink: /kb/146/Q146049/
 	
 	=============================================================================
 	
+
+{% endraw %}

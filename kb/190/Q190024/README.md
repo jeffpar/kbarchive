@@ -6,6 +6,8 @@ permalink: /kb/190/Q190024/
 
 ## Q190024: How to Edit the Config.sys File in Microsoft Windows 98
 
+{% raw %}
+
 	Article: Q190024
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/190/Q190024/
 	
 	=============================================================================
 	
+
+{% endraw %}

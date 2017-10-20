@@ -6,6 +6,8 @@ permalink: /kb/032/Q32787/
 
 ## Q32787: &quot;Overflow,&quot; &quot;Subscript Out of Range,&quot; &gt;32,767 Array Elements
 
+{% raw %}
+
 	Article: Q32787
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -104,3 +106,5 @@ permalink: /kb/032/Q32787/
 	dimension.
 	
 	Note: 1K is equal to 1024 bytes.
+
+{% endraw %}

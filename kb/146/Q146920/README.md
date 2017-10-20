@@ -6,6 +6,8 @@ permalink: /kb/146/Q146920/
 
 ## Q146920: XADM: Restoring Individual Mailboxes, Messages, or Folders
 
+{% raw %}
+
 	Article: Q146920
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -93,3 +95,5 @@ permalink: /kb/146/Q146920/
 	
 	=============================================================================
 	
+
+{% endraw %}

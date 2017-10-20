@@ -6,6 +6,8 @@ permalink: /kb/161/Q161054/
 
 ## Q161054: FIX: COPY TO ... TYPE SDF Incorrectly Copies Null Fields
 
+{% raw %}
+
 	Article: Q161054
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0
@@ -73,3 +75,5 @@ permalink: /kb/161/Q161054/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153252/
 
 ## Q153252: RUI Contention Leads to Session Error
 
+{% raw %}
+
 	Article: Q153252
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -59,3 +61,5 @@ permalink: /kb/153/Q153252/
 	
 	=============================================================================
 	
+
+{% endraw %}

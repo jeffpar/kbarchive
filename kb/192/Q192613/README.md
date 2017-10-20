@@ -6,6 +6,8 @@ permalink: /kb/192/Q192613/
 
 ## Q192613: Bookshelf 98: How to Change Scroll Bar and Article Font Sizes
 
+{% raw %}
+
 	Article: Q192613
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -81,3 +83,5 @@ permalink: /kb/192/Q192613/
 	
 	=============================================================================
 	
+
+{% endraw %}

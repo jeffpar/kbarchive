@@ -6,6 +6,8 @@ permalink: /kb/163/Q163586/
 
 ## Q163586: FP: Can't Insert Blank Line Above or Below Table
 
+{% raw %}
+
 	Article: Q163586
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97
@@ -83,3 +85,5 @@ permalink: /kb/163/Q163586/
 	
 	=============================================================================
 	
+
+{% endraw %}

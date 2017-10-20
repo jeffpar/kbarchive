@@ -6,6 +6,8 @@ permalink: /kb/125/Q125857/
 
 ## Q125857: NET Command Does Not Return Errorlevel
 
+{% raw %}
+
 	Article: Q125857
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -56,3 +58,5 @@ permalink: /kb/125/Q125857/
 	
 	=============================================================================
 	
+
+{% endraw %}

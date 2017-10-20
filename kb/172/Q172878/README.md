@@ -6,6 +6,8 @@ permalink: /kb/172/Q172878/
 
 ## Q172878: Resource Kit Timeserv.exe Utility Causes 100% CPU Utilization
 
+{% raw %}
+
 	Article: Q172878
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -116,3 +118,5 @@ permalink: /kb/172/Q172878/
 	
 	=============================================================================
 	
+
+{% endraw %}

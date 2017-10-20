@@ -6,6 +6,8 @@ permalink: /kb/040/Q40155/
 
 ## Q40155: QB.EXE 4.50 Bad Alert Box if User TYPE &quot;Element Not Defined&quot;
 
+{% raw %}
+
 	Article: Q40155
 	Product(s): See article
 	Version(s): 4.50
@@ -62,3 +64,5 @@ permalink: /kb/040/Q40155/
 	program. The problem will not recur from this point on, until you
 	change the PRINT statement back to just PRINT Var, and run to get the
 	"Type Mismatch" error message.
+
+{% endraw %}

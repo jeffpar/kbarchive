@@ -6,6 +6,8 @@ permalink: /kb/157/Q157647/
 
 ## Q157647: XADM: Can't Change Location of IS Log Files if IS Not Running
 
+{% raw %}
+
 	Article: Q157647
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -48,3 +50,5 @@ permalink: /kb/157/Q157647/
 	
 	=============================================================================
 	
+
+{% endraw %}

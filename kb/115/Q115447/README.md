@@ -6,6 +6,8 @@ permalink: /kb/115/Q115447/
 
 ## Q115447: X400: Corrupt .XTN File for Network Postoffice Stops Install
 
+{% raw %}
+
 	Article: Q115447
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -51,3 +53,5 @@ permalink: /kb/115/Q115447/
 	
 	=============================================================================
 	
+
+{% endraw %}

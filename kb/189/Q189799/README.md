@@ -6,6 +6,8 @@ permalink: /kb/189/Q189799/
 
 ## Q189799: FP: Frequently Asked Questions About the Fpexedll.dll
 
+{% raw %}
+
 	Article: Q189799
 	Product(s): Word Front Page
 	Version(s): 
@@ -255,3 +257,5 @@ permalink: /kb/189/Q189799/
 	
 	=============================================================================
 	
+
+{% endraw %}

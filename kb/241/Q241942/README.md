@@ -6,6 +6,8 @@ permalink: /kb/241/Q241942/
 
 ## Q241942: HOWTO: Prevent Word Printing Error with BackgroundPrintingStatus
 
+{% raw %}
+
 	Article: Q241942
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2000,3.0,3.0b,5.0,5.0a,6.0,97
@@ -76,3 +78,5 @@ permalink: /kb/241/Q241942/
 	
 	=============================================================================
 	
+
+{% endraw %}

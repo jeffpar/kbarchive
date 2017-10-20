@@ -6,6 +6,8 @@ permalink: /kb/162/Q162663/
 
 ## Q162663: Cabletron T20xx Adapter Does Not Work After Installing SP2
 
+{% raw %}
+
 	Article: Q162663
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/162/Q162663/
 	
 	=============================================================================
 	
+
+{% endraw %}

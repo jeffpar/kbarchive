@@ -6,6 +6,8 @@ permalink: /kb/150/Q150989/
 
 ## Q150989: XCLN: Using the Equal Sign (=) to Resolve Alias Names
 
+{% raw %}
+
 	Article: Q150989
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -63,3 +65,5 @@ permalink: /kb/150/Q150989/
 	
 	=============================================================================
 	
+
+{% endraw %}

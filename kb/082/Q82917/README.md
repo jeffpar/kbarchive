@@ -6,6 +6,8 @@ permalink: /kb/082/Q82917/
 
 ## Q82917: PC Win: Button Face Color Can Leave Hole in Status Bar
 
+{% raw %}
+
 	Article: Q82917
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -43,3 +45,5 @@ permalink: /kb/082/Q82917/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138467/
 
 ## Q138467: Microsoft Systems Journal: December 1995
 
+{% raw %}
+
 	Article: Q138467
 	Product(s): Miscrosoft Systems Journal
 	Version(s): for December 1995
@@ -117,3 +119,5 @@ permalink: /kb/138/Q138467/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177908/
 
 ## Q177908: ADT/ODE: There Is &quot;No Object in this Control&quot; Error Message
 
+{% raw %}
+
 	Article: Q177908
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -189,3 +191,5 @@ permalink: /kb/177/Q177908/
 	
 	=============================================================================
 	
+
+{% endraw %}

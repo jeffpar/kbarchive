@@ -6,6 +6,8 @@ permalink: /kb/104/Q104541/
 
 ## Q104541: PC Tools SI Doesn't See Automounted DoubleSpace Floppy Disk
 
+{% raw %}
+
 	Article: Q104541
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -54,3 +56,5 @@ permalink: /kb/104/Q104541/
 	
 	=============================================================================
 	
+
+{% endraw %}

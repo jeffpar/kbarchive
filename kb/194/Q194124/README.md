@@ -6,6 +6,8 @@ permalink: /kb/194/Q194124/
 
 ## Q194124: PRB: Excel Values Returned as NULL Using DAO OpenRecordset
 
+{% raw %}
+
 	Article: Q194124
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -155,3 +157,5 @@ permalink: /kb/194/Q194124/
 	
 	=============================================================================
 	
+
+{% endraw %}

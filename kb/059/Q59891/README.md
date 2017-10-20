@@ -6,6 +6,8 @@ permalink: /kb/059/Q59891/
 
 ## Q59891: li, lu, and ld Replace I, U, and D as Format Specifiers
 
+{% raw %}
+
 	Article: Q59891
 	Product(s): See article
 	Version(s): 2.00 2.01 2.50 2.51
@@ -30,3 +32,5 @@ permalink: /kb/059/Q59891/
 	   %I --> %i
 	   %U --> %u
 	   %D --> %d
+
+{% endraw %}

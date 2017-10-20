@@ -6,6 +6,8 @@ permalink: /kb/168/Q168457/
 
 ## Q168457: Configuring Individual Printers to Passthrough LPR Print Jobs
 
+{% raw %}
+
 	Article: Q168457
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -97,3 +99,5 @@ permalink: /kb/168/Q168457/
 	
 	=============================================================================
 	
+
+{% endraw %}

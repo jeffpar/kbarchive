@@ -6,6 +6,8 @@ permalink: /kb/124/Q124982/
 
 ## Q124982: Encarta: Some Images Do Not Have the Print or Copy Option
 
+{% raw %}
+
 	Article: Q124982
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 editions
@@ -58,3 +60,5 @@ permalink: /kb/124/Q124982/
 	
 	=============================================================================
 	
+
+{% endraw %}

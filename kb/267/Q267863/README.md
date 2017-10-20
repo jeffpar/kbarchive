@@ -6,6 +6,8 @@ permalink: /kb/267/Q267863/
 
 ## Q267863: Profile Quota Error Message Is Not Reset in Danish Windows NT
 
+{% raw %}
+
 	Article: Q267863
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6,4.0 SP6a
@@ -78,3 +80,5 @@ permalink: /kb/267/Q267863/
 	
 	=============================================================================
 	
+
+{% endraw %}

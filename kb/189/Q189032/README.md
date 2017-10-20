@@ -6,6 +6,8 @@ permalink: /kb/189/Q189032/
 
 ## Q189032: Floating Point Arguments Won't Pass Between NT RPC and IBM RPC
 
+{% raw %}
+
 	Article: Q189032
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/189/Q189032/
 	
 	=============================================================================
 	
+
+{% endraw %}

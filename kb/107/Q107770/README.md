@@ -6,6 +6,8 @@ permalink: /kb/107/Q107770/
 
 ## Q107770: PC Setup: Run OS/2 2.x NetWare Redirector in 3.11 Environment
 
+{% raw %}
+
 	Article: Q107770
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -68,3 +70,5 @@ permalink: /kb/107/Q107770/
 	
 	=============================================================================
 	
+
+{% endraw %}

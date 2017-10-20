@@ -6,6 +6,8 @@ permalink: /kb/264/Q264077/
 
 ## Q264077: MapPoint 2001 Err Msg: This Application Is Unable to Continue...
 
+{% raw %}
+
 	Article: Q264077
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -205,3 +207,5 @@ permalink: /kb/264/Q264077/
 	
 	=============================================================================
 	
+
+{% endraw %}

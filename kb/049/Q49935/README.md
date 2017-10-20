@@ -6,6 +6,8 @@ permalink: /kb/049/Q49935/
 
 ## Q49935: PRB: L2028 Error Caused by HEAPSIZE, STACKSIZE and DGROUP Size
 
+{% raw %}
+
 	Article: Q49935
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.01.21,5.1,5.13,5.15,5.3,5.31.009,5.5,5.6; OS/2:5.01.21,5.1
@@ -81,3 +83,5 @@ permalink: /kb/049/Q49935/
 	
 	=============================================================================
 	
+
+{% endraw %}

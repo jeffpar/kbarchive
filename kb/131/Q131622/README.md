@@ -6,6 +6,8 @@ permalink: /kb/131/Q131622/
 
 ## Q131622: How to Display Current Control Properties at Run Time
 
+{% raw %}
+
 	Article: Q131622
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -86,3 +88,5 @@ permalink: /kb/131/Q131622/
 	
 	=============================================================================
 	
+
+{% endraw %}

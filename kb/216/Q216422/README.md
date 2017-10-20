@@ -6,6 +6,8 @@ permalink: /kb/216/Q216422/
 
 ## Q216422: Exchange Specific Policy Module for Certificate Server disables
 
+{% raw %}
+
 	Article: Q216422
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,5.5
@@ -196,3 +198,5 @@ permalink: /kb/216/Q216422/
 	
 	=============================================================================
 	
+
+{% endraw %}

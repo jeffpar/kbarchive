@@ -6,6 +6,8 @@ permalink: /kb/142/Q142692/
 
 ## Q142692: Minimizing WAN Traffic
 
+{% raw %}
+
 	Article: Q142692
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP5,4.0
@@ -242,3 +244,5 @@ permalink: /kb/142/Q142692/
 	
 	=============================================================================
 	
+
+{% endraw %}

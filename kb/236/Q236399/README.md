@@ -6,6 +6,8 @@ permalink: /kb/236/Q236399/
 
 ## Q236399: HOWTO: Troubleshoot Visual C++ Performance Problems
 
+{% raw %}
+
 	Article: Q236399
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -254,3 +256,5 @@ permalink: /kb/236/Q236399/
 	
 	=============================================================================
 	
+
+{% endraw %}

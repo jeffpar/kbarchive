@@ -6,6 +6,8 @@ permalink: /kb/230/Q230485/
 
 ## Q230485: HOWTO: Create an Access 2000 Database with MFC DAO
 
+{% raw %}
+
 	Article: Q230485
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -79,3 +81,5 @@ permalink: /kb/230/Q230485/
 	
 	=============================================================================
 	
+
+{% endraw %}

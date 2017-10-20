@@ -6,6 +6,8 @@ permalink: /kb/099/Q99005/
 
 ## Q99005: Microsoft Systems Journal: July 1993
 
+{% raw %}
+
 	Article: Q99005
 	Product(s): Miscrosoft Systems Journal
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/099/Q99005/
 	
 	=============================================================================
 	
+
+{% endraw %}

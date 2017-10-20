@@ -6,6 +6,8 @@ permalink: /kb/173/Q173257/
 
 ## Q173257: Where Are the Practice Files in VB Deluxe Learning Edition?
 
+{% raw %}
+
 	Article: Q173257
 	Product(s): Microsoft Press
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/173/Q173257/
 	
 	=============================================================================
 	
+
+{% endraw %}

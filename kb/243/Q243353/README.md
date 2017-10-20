@@ -6,6 +6,8 @@ permalink: /kb/243/Q243353/
 
 ## Q243353: Custom Certificate Mappings Are Not Recognized
 
+{% raw %}
+
 	Article: Q243353
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -84,3 +86,5 @@ permalink: /kb/243/Q243353/
 	
 	=============================================================================
 	
+
+{% endraw %}

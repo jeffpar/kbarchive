@@ -6,6 +6,8 @@ permalink: /kb/151/Q151751/
 
 ## Q151751: BUG:About Tasmanian Traders Dialog Disabled System Info Button
 
+{% raw %}
+
 	Article: Q151751
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -89,3 +91,5 @@ permalink: /kb/151/Q151751/
 	
 	=============================================================================
 	
+
+{% endraw %}

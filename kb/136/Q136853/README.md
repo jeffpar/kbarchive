@@ -6,6 +6,8 @@ permalink: /kb/136/Q136853/
 
 ## Q136853: Where to Find Info on SQL pass-through Versus Remote Views
 
+{% raw %}
+
 	Article: Q136853
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/136/Q136853/
 	
 	=============================================================================
 	
+
+{% endraw %}

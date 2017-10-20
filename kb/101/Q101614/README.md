@@ -6,6 +6,8 @@ permalink: /kb/101/Q101614/
 
 ## Q101614: PC Win: Err Msg: File Error
 
+{% raw %}
+
 	Article: Q101614
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -62,3 +64,5 @@ permalink: /kb/101/Q101614/
 	
 	=============================================================================
 	
+
+{% endraw %}

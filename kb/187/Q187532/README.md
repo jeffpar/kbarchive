@@ -6,6 +6,8 @@ permalink: /kb/187/Q187532/
 
 ## Q187532: HOWTO: Use the Remote Tools Installed with VBCE
 
+{% raw %}
+
 	Article: Q187532
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -191,3 +193,5 @@ permalink: /kb/187/Q187532/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163590/
 
 ## Q163590: XCLN: Err Msg: The Item Could not be Opened. Type Mismatch
 
+{% raw %}
+
 	Article: Q163590
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; Win95:4.0,5.0
@@ -55,3 +57,5 @@ permalink: /kb/163/Q163590/
 	
 	=============================================================================
 	
+
+{% endraw %}

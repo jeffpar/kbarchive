@@ -6,6 +6,8 @@ permalink: /kb/124/Q124524/
 
 ## Q124524: FIX: Using String Constant as Default Argument Doesn't Work
 
+{% raw %}
+
 	Article: Q124524
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -96,3 +98,5 @@ permalink: /kb/124/Q124524/
 	
 	=============================================================================
 	
+
+{% endraw %}

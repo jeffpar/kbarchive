@@ -6,6 +6,8 @@ permalink: /kb/138/Q138645/
 
 ## Q138645: PPT7: Can't Open PowerPoint Files with Windows 95 Quick View
 
+{% raw %}
+
 	Article: Q138645
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -61,3 +63,5 @@ permalink: /kb/138/Q138645/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110406/
 
 ## Q110406: MS-DOS 6.2 Step-Up Fails with McAfee V-Scan
 
+{% raw %}
+
 	Article: Q110406
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -80,3 +82,5 @@ permalink: /kb/110/Q110406/
 	
 	=============================================================================
 	
+
+{% endraw %}

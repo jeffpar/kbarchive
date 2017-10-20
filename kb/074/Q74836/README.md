@@ -6,6 +6,8 @@ permalink: /kb/074/Q74836/
 
 ## Q74836: Specifying HIMEM Handlers for Acer Computers
 
+{% raw %}
+
 	Article: Q74836
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -47,3 +49,5 @@ permalink: /kb/074/Q74836/
 	
 	=============================================================================
 	
+
+{% endraw %}

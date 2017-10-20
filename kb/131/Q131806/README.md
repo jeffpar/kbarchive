@@ -6,6 +6,8 @@ permalink: /kb/131/Q131806/
 
 ## Q131806: Windows 95/98/Me: How to Install or Change a Video Driver
 
+{% raw %}
+
 	Article: Q131806
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): 95
@@ -140,3 +142,5 @@ permalink: /kb/131/Q131806/
 	
 	=============================================================================
 	
+
+{% endraw %}

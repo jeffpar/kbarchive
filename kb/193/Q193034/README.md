@@ -6,6 +6,8 @@ permalink: /kb/193/Q193034/
 
 ## Q193034: FIX: Setup Program Created by PDW Disables Windows 95/98/Me Syst
 
+{% raw %}
+
 	Article: Q193034
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -174,3 +176,5 @@ permalink: /kb/193/Q193034/
 	
 	=============================================================================
 	
+
+{% endraw %}

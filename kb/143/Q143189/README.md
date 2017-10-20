@@ -6,6 +6,8 @@ permalink: /kb/143/Q143189/
 
 ## Q143189: Creating Separate FTP, Gopher, and WWW Text Log Files
 
+{% raw %}
+
 	Article: Q143189
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/143/Q143189/
 	
 	=============================================================================
 	
+
+{% endraw %}

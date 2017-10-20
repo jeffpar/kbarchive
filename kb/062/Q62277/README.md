@@ -6,6 +6,8 @@ permalink: /kb/062/Q62277/
 
 ## Q62277: Expanding Files from the Original Windows Disks
 
+{% raw %}
+
 	Article: Q62277
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -68,3 +70,5 @@ permalink: /kb/062/Q62277/
 	
 	=============================================================================
 	
+
+{% endraw %}

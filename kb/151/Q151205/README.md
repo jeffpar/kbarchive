@@ -6,6 +6,8 @@ permalink: /kb/151/Q151205/
 
 ## Q151205: Configure Downstream Leased SDLC Connection Causes Error 3992
 
+{% raw %}
+
 	Article: Q151205
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -85,3 +87,5 @@ permalink: /kb/151/Q151205/
 	
 	=============================================================================
 	
+
+{% endraw %}

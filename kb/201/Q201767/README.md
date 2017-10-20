@@ -6,6 +6,8 @@ permalink: /kb/201/Q201767/
 
 ## Q201767: SMS: How to Add a NDS Volume to be CAP  of a SMS 2.0 Site
 
+{% raw %}
+
 	Article: Q201767
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -76,3 +78,5 @@ permalink: /kb/201/Q201767/
 	
 	=============================================================================
 	
+
+{% endraw %}

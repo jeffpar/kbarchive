@@ -6,6 +6,8 @@ permalink: /kb/260/Q260172/
 
 ## Q260172: FIX: MFC ISAPI Parse Functions Fail Under Stress on Multiple-CPU
 
+{% raw %}
+
 	Article: Q260172
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -163,3 +165,5 @@ permalink: /kb/260/Q260172/
 	
 	=============================================================================
 	
+
+{% endraw %}

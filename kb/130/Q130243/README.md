@@ -6,6 +6,8 @@ permalink: /kb/130/Q130243/
 
 ## Q130243: How to Create Persistent Relations Using ALTER TABLE SQL
 
+{% raw %}
+
 	Article: Q130243
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -121,3 +123,5 @@ permalink: /kb/130/Q130243/
 	
 	=============================================================================
 	
+
+{% endraw %}

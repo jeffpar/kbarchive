@@ -6,6 +6,8 @@ permalink: /kb/227/Q227702/
 
 ## Q227702: Queries Work Incorrectly with Mixed-Language Documents
 
+{% raw %}
+
 	Article: Q227702
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -79,3 +81,5 @@ permalink: /kb/227/Q227702/
 	
 	=============================================================================
 	
+
+{% endraw %}

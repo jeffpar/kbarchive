@@ -6,6 +6,8 @@ permalink: /kb/063/Q63436/
 
 ## Q63436: &quot;Statement Label Not Allowed Between SELECT CASE&quot; Help Hangs
 
+{% raw %}
+
 	Article: Q63436
 	Product(s): See article
 	Version(s): 4.50
@@ -41,3 +43,5 @@ permalink: /kb/063/Q63436/
 	30   CASE 1              'that it is illegal to have a line label here
 	          PRINT "You will hang if you choose help on the error!"
 	   END SELECT
+
+{% endraw %}

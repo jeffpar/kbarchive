@@ -6,6 +6,8 @@ permalink: /kb/137/Q137878/
 
 ## Q137878: PowerPoint for Windows 95 CD Does Not Use DMF Compression
 
+{% raw %}
+
 	Article: Q137878
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -53,3 +55,5 @@ permalink: /kb/137/Q137878/
 	
 	=============================================================================
 	
+
+{% endraw %}

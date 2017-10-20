@@ -6,6 +6,8 @@ permalink: /kb/201/Q201442/
 
 ## Q201442: XCLN: &quot;Send Mail To&quot; Link Is Missing in Outlook Web Access
 
+{% raw %}
+
 	Article: Q201442
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -48,3 +50,5 @@ permalink: /kb/201/Q201442/
 	
 	=============================================================================
 	
+
+{% endraw %}

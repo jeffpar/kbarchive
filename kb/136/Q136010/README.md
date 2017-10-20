@@ -6,6 +6,8 @@ permalink: /kb/136/Q136010/
 
 ## Q136010: How to Use a Custom Method as a User-Defined Function (UDF)
 
+{% raw %}
+
 	Article: Q136010
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -103,3 +105,5 @@ permalink: /kb/136/Q136010/
 	
 	=============================================================================
 	
+
+{% endraw %}

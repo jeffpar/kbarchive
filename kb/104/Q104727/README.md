@@ -6,6 +6,8 @@ permalink: /kb/104/Q104727/
 
 ## Q104727: EMM386.EXE 4.48 Doesn't Enable HIGHSCAN on Some AMI BIOSs
 
+{% raw %}
+
 	Article: Q104727
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22; WINDOWS:3.11
@@ -49,3 +51,5 @@ permalink: /kb/104/Q104727/
 	
 	=============================================================================
 	
+
+{% endraw %}

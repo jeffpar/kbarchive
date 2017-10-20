@@ -6,6 +6,8 @@ permalink: /kb/192/Q192176/
 
 ## Q192176: XADM: Restoring a Private IS Only with Arcserve6.x
 
+{% raw %}
+
 	Article: Q192176
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -116,3 +118,5 @@ permalink: /kb/192/Q192176/
 	
 	=============================================================================
 	
+
+{% endraw %}

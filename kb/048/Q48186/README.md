@@ -6,6 +6,8 @@ permalink: /kb/048/Q48186/
 
 ## Q48186: Compiling Incorrect or Incomplete C Syntax Can Hang Computer
 
+{% raw %}
+
 	Article: Q48186
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -72,3 +74,5 @@ permalink: /kb/048/Q48186/
 	prg.c (4) error C2085: 'wrflen': not in formal parameter list
 	prg.c (4) error C2144: syntax error: missing ';' before type 'long'
 	prg.c (8) error C2065: 'value': undefined
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177404/
 
 ## Q177404: XCON: DL Size Limits Ignored in Exchange Server 5.0 SP1
 
+{% raw %}
+
 	Article: Q177404
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -50,3 +52,5 @@ permalink: /kb/177/Q177404/
 	
 	=============================================================================
 	
+
+{% endraw %}

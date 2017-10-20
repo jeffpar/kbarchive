@@ -6,6 +6,8 @@ permalink: /kb/131/Q131976/
 
 ## Q131976: How to Disable Detection of Devices on Serial Ports
 
+{% raw %}
+
 	Article: Q131976
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -92,3 +94,5 @@ permalink: /kb/131/Q131976/
 	
 	=============================================================================
 	
+
+{% endraw %}

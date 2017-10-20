@@ -6,6 +6,8 @@ permalink: /kb/146/Q146965/
 
 ## Q146965: GetAdmin Utility Grants Users Administrative Rights
 
+{% raw %}
+
 	Article: Q146965
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -125,3 +127,5 @@ permalink: /kb/146/Q146965/
 	
 	=============================================================================
 	
+
+{% endraw %}

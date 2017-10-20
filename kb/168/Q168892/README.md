@@ -6,6 +6,8 @@ permalink: /kb/168/Q168892/
 
 ## Q168892: XCON: MTA Reports Failure on Ecbios.dll During Startup
 
+{% raw %}
+
 	Article: Q168892
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/168/Q168892/
 	
 	=============================================================================
 	
+
+{% endraw %}

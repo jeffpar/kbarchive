@@ -6,6 +6,8 @@ permalink: /kb/261/Q261969/
 
 ## Q261969: StarLancer Err Msg: Invalid Page Fault in Module Kernel32.dll
 
+{% raw %}
+
 	Article: Q261969
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -89,3 +91,5 @@ permalink: /kb/261/Q261969/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141950/
 
 ## Q141950: FIX: GP Fault When Change RecordSource of a Column in a Grid
 
+{% raw %}
+
 	Article: Q141950
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -89,3 +91,5 @@ permalink: /kb/141/Q141950/
 	
 	=============================================================================
 	
+
+{% endraw %}

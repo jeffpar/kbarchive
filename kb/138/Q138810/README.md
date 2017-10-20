@@ -6,6 +6,8 @@ permalink: /kb/138/Q138810/
 
 ## Q138810: Using RASCOPY.BAT To Install Remote Access Service 1.1a
 
+{% raw %}
+
 	Article: Q138810
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): MS-DOS:3.0; :1.1a
@@ -39,3 +41,5 @@ permalink: /kb/138/Q138810/
 	
 	=============================================================================
 	
+
+{% endraw %}

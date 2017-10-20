@@ -6,6 +6,8 @@ permalink: /kb/175/Q175968/
 
 ## Q175968: XCLN: Windows 3.x Client Fails to Send to SMTP Address
 
+{% raw %}
+
 	Article: Q175968
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -73,3 +75,5 @@ permalink: /kb/175/Q175968/
 	
 	=============================================================================
 	
+
+{% endraw %}

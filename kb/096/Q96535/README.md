@@ -6,6 +6,8 @@ permalink: /kb/096/Q96535/
 
 ## Q96535: PC WRmt: How to Recover from Mistyping Password on First Login
 
+{% raw %}
+
 	Article: Q96535
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -42,3 +44,5 @@ permalink: /kb/096/Q96535/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103386/
 
 ## Q103386: Qemm 7.0 Causes SWITCHES Prompt to Appear During Startup
 
+{% raw %}
+
 	Article: Q103386
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -81,3 +83,5 @@ permalink: /kb/103/Q103386/
 	
 	=============================================================================
 	
+
+{% endraw %}

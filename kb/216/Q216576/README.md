@@ -6,6 +6,8 @@ permalink: /kb/216/Q216576/
 
 ## Q216576: Err Msg: Setup Was Unable to Write to the Floppy Disk in...
 
+{% raw %}
+
 	Article: Q216576
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -62,3 +64,5 @@ permalink: /kb/216/Q216576/
 	
 	=============================================================================
 	
+
+{% endraw %}

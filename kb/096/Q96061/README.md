@@ -6,6 +6,8 @@ permalink: /kb/096/Q96061/
 
 ## Q96061: MS-DOS Err Msg: Could Not Copy COMMAND.COM to Target...
 
+{% raw %}
+
 	Article: Q96061
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -54,3 +56,5 @@ permalink: /kb/096/Q96061/
 	
 	=============================================================================
 	
+
+{% endraw %}

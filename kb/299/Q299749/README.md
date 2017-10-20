@@ -6,6 +6,8 @@ permalink: /kb/299/Q299749/
 
 ## Q299749: Train Simulator May Not Start as Expected
 
+{% raw %}
+
 	Article: Q299749
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/299/Q299749/
 	
 	=============================================================================
 	
+
+{% endraw %}

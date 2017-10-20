@@ -6,6 +6,8 @@ permalink: /kb/195/Q195215/
 
 ## Q195215: XFOR: Outbound SMTP with 8-Bit Data in the Message Body
 
+{% raw %}
+
 	Article: Q195215
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -94,3 +96,5 @@ permalink: /kb/195/Q195215/
 	
 	=============================================================================
 	
+
+{% endraw %}

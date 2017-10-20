@@ -6,6 +6,8 @@ permalink: /kb/104/Q104150/
 
 ## Q104150: Screen Paging Doesn't Keep Up with Music
 
+{% raw %}
+
 	Article: Q104150
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/104/Q104150/
 	
 	=============================================================================
 	
+
+{% endraw %}

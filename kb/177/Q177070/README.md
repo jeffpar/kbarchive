@@ -6,6 +6,8 @@ permalink: /kb/177/Q177070/
 
 ## Q177070: How to Display Current Access Numbers for The Microsoft Network
 
+{% raw %}
+
 	Article: Q177070
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -50,3 +52,5 @@ permalink: /kb/177/Q177070/
 	
 	=============================================================================
 	
+
+{% endraw %}

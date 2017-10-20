@@ -6,6 +6,8 @@ permalink: /kb/241/Q241359/
 
 ## Q241359: Err Msg: STOP 0x0000001E in RDR.SYS on Terminal Server
 
+{% raw %}
+
 	Article: Q241359
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/241/Q241359/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136154/
 
 ## Q136154: FIX: Text Box Does Not Respond to DblClick Event
 
+{% raw %}
+
 	Article: Q136154
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -68,3 +70,5 @@ permalink: /kb/136/Q136154/
 	
 	=============================================================================
 	
+
+{% endraw %}

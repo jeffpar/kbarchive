@@ -6,6 +6,8 @@ permalink: /kb/133/Q133000/
 
 ## Q133000: BUG: Graphical Help Won t Run When EXE Installed on a Network
 
+{% raw %}
+
 	Article: Q133000
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -79,3 +81,5 @@ permalink: /kb/133/Q133000/
 	
 	=============================================================================
 	
+
+{% endraw %}

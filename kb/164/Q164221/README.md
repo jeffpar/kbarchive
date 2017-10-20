@@ -6,6 +6,8 @@ permalink: /kb/164/Q164221/
 
 ## Q164221: INFO: How to Enable Connection Pooling in an ODBC Application
 
+{% raw %}
+
 	Article: Q164221
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -125,3 +127,5 @@ permalink: /kb/164/Q164221/
 	
 	=============================================================================
 	
+
+{% endraw %}

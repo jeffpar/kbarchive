@@ -6,6 +6,8 @@ permalink: /kb/044/Q44004/
 
 ## Q44004: Error L2025 from BASIC Calls to QuickC 2.00 Routines
 
+{% raw %}
+
 	Article: Q44004
 	Product(s): See article
 	Version(s): 2.00
@@ -41,3 +43,5 @@ permalink: /kb/044/Q44004/
 	Using the linker option /NOE (NO Extended function name/symbol
 	dictionary search) will not prevent the L2025 error because the
 	symbols are defined in both the QuickC 2.00 and BASIC libraries.
+
+{% endraw %}

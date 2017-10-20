@@ -6,6 +6,8 @@ permalink: /kb/132/Q132414/
 
 ## Q132414: Bitmaps Stretched by Microsoft Plus! May Appear Distorted
 
+{% raw %}
+
 	Article: Q132414
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/132/Q132414/
 	
 	=============================================================================
 	
+
+{% endraw %}

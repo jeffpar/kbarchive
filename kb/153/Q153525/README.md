@@ -6,6 +6,8 @@ permalink: /kb/153/Q153525/
 
 ## Q153525: Flltest.exe Determines if FLL File Loads Successfully
 
+{% raw %}
+
 	Article: Q153525
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6a,3.0,3.0b,5.0,5.0a,6.0
@@ -75,3 +77,5 @@ permalink: /kb/153/Q153525/
 	
 	=============================================================================
 	
+
+{% endraw %}

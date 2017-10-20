@@ -6,6 +6,8 @@ permalink: /kb/041/Q41094/
 
 ## Q41094: Huge Arrays Not Allowed in QuickC 2.00, But Huge Pointers Are
 
+{% raw %}
+
 	Article: Q41094
 	Product(s): See article
 	Version(s): 2.00
@@ -88,3 +90,5 @@ permalink: /kb/041/Q41094/
 	        puts("Test passed");
 	        exit(0);
 	}
+
+{% endraw %}

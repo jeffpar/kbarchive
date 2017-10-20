@@ -6,6 +6,8 @@ permalink: /kb/149/Q149907/
 
 ## Q149907: Browsing a Remote Network from a DUN Client Using Only TCP/IP
 
+{% raw %}
+
 	Article: Q149907
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -78,3 +80,5 @@ permalink: /kb/149/Q149907/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95560/
 
 ## Q95560: MemMaker Converts Some Variables to Drive Letters
 
+{% raw %}
+
 	Article: Q95560
 	Product(s): Microsoft Disk Operating System
 	Version(s): 6.0,6.2,6.21,6.22
@@ -52,3 +54,5 @@ permalink: /kb/095/Q95560/
 	
 	=============================================================================
 	
+
+{% endraw %}

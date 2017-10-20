@@ -6,6 +6,8 @@ permalink: /kb/042/Q42762/
 
 ## Q42762: Patches of Floating-Point Instructions at Run Time Are Normal
 
+{% raw %}
+
 	Article: Q42762
 	Product(s): See article
 	Version(s): 5.10
@@ -72,3 +74,5 @@ permalink: /kb/042/Q42762/
 	Note: Such code modification is impossible under OS/2 because there is
 	no way to dynamically change a code segment under OS/2, although it is
 	possible to cause a data segment to be executed.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/048/Q48870/
 
 ## Q48870: Difference between Huge Pointers Is Incorrect in QuickC 2.00
 
+{% raw %}
+
 	Article: Q48870
 	Product(s): See article
 	Version(s): 2.00
@@ -108,3 +110,5 @@ permalink: /kb/048/Q48870/
 	Microsoft has confirmed this to be a problem with QuickC Version 2.00.
 	We are researching this problem and will post new information as it
 	becomes available.
+
+{% endraw %}

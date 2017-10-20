@@ -6,6 +6,8 @@ permalink: /kb/143/Q143181/
 
 ## Q143181: File Transfer Protocol (FTP) Server Monitor Counters
 
+{% raw %}
+
 	Article: Q143181
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -122,3 +124,5 @@ permalink: /kb/143/Q143181/
 	
 	=============================================================================
 	
+
+{% endraw %}

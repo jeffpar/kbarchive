@@ -6,6 +6,8 @@ permalink: /kb/062/Q62132/
 
 ## Q62132: Mac Hyp: Getting the Name of the Message Sender
 
+{% raw %}
+
 	Article: Q62132
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -48,3 +50,5 @@ permalink: /kb/062/Q62132/
 	
 	=============================================================================
 	
+
+{% endraw %}

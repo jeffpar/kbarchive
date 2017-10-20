@@ -6,6 +6,8 @@ permalink: /kb/146/Q146449/
 
 ## Q146449: Description of Microsoft Windows 95 Service Pack 1 Components
 
+{% raw %}
+
 	Article: Q146449
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.0,95
@@ -161,3 +163,5 @@ permalink: /kb/146/Q146449/
 	
 	=============================================================================
 	
+
+{% endraw %}

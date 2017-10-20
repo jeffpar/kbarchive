@@ -6,6 +6,8 @@ permalink: /kb/155/Q155500/
 
 ## Q155500: FP: Centering Bullet List Causes Extra Spaces Between Lines
 
+{% raw %}
+
 	Article: Q155500
 	Product(s): Word Front Page
 	Version(s): ; MACINTOSH:1.0; WINDOWS:1.1
@@ -89,3 +91,5 @@ permalink: /kb/155/Q155500/
 	
 	=============================================================================
 	
+
+{% endraw %}

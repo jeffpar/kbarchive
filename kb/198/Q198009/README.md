@@ -6,6 +6,8 @@ permalink: /kb/198/Q198009/
 
 ## Q198009: PRB: Calling String Conversion Macros in Catch Block Causes AV
 
+{% raw %}
+
 	Article: Q198009
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,3.0,5.0,6.0
@@ -95,3 +97,5 @@ permalink: /kb/198/Q198009/
 	
 	=============================================================================
 	
+
+{% endraw %}

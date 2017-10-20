@@ -6,6 +6,8 @@ permalink: /kb/164/Q164266/
 
 ## Q164266: PUB: Rulers Disappear When Inserting, Editing Object
 
+{% raw %}
+
 	Article: Q164266
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,97; :
@@ -66,3 +68,5 @@ permalink: /kb/164/Q164266/
 	
 	=============================================================================
 	
+
+{% endraw %}

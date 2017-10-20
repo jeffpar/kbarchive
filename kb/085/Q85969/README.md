@@ -6,6 +6,8 @@ permalink: /kb/085/Q85969/
 
 ## Q85969: PC Win: Multiple Update Prompts with OLE Objects
 
+{% raw %}
+
 	Article: Q85969
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -66,3 +68,5 @@ permalink: /kb/085/Q85969/
 	
 	=============================================================================
 	
+
+{% endraw %}

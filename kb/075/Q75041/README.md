@@ -6,6 +6,8 @@ permalink: /kb/075/Q75041/
 
 ## Q75041: Deleting .ICO Files Does Not Delete Icons in Windows
 
+{% raw %}
+
 	Article: Q75041
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/075/Q75041/
 	
 	=============================================================================
 	
+
+{% endraw %}

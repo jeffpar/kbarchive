@@ -6,6 +6,8 @@ permalink: /kb/235/Q235195/
 
 ## Q235195: SMS: Shared SQL Server Backup Can Corrupt Backup Files
 
+{% raw %}
+
 	Article: Q235195
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -69,3 +71,5 @@ permalink: /kb/235/Q235195/
 	
 	=============================================================================
 	
+
+{% endraw %}

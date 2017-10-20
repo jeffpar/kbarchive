@@ -6,6 +6,8 @@ permalink: /kb/047/Q47618/
 
 ## Q47618: Mac Wkst: No Address Button in Send Form with Simple User List
 
+{% raw %}
+
 	Article: Q47618
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.0a,3.0b,3.1,3.1a,3.1c
@@ -48,3 +50,5 @@ permalink: /kb/047/Q47618/
 	
 	=============================================================================
 	
+
+{% endraw %}

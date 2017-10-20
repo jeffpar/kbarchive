@@ -6,6 +6,8 @@ permalink: /kb/121/Q121520/
 
 ## Q121520: Fatal Error on Drive 1 with Adaptec 1540CF SCSI Controller
 
+{% raw %}
+
 	Article: Q121520
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -60,3 +62,5 @@ permalink: /kb/121/Q121520/
 	
 	=============================================================================
 	
+
+{% endraw %}

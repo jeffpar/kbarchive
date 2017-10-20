@@ -6,6 +6,8 @@ permalink: /kb/168/Q168750/
 
 ## Q168750: How to Easily Get to the Windows 95 Startup Menu
 
+{% raw %}
+
 	Article: Q168750
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/168/Q168750/
 	
 	=============================================================================
 	
+
+{% endraw %}

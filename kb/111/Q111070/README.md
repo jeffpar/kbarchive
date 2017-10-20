@@ -6,6 +6,8 @@ permalink: /kb/111/Q111070/
 
 ## Q111070: How to Change the Post Office Name After Setting Up
 
+{% raw %}
+
 	Article: Q111070
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -61,3 +63,5 @@ permalink: /kb/111/Q111070/
 	
 	=============================================================================
 	
+
+{% endraw %}

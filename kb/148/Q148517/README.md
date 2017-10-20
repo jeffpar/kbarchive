@@ -6,6 +6,8 @@ permalink: /kb/148/Q148517/
 
 ## Q148517: XCLN: Err Msg: You Must Use Character Set 850 or 852
 
+{% raw %}
+
 	Article: Q148517
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -58,3 +60,5 @@ permalink: /kb/148/Q148517/
 	
 	=============================================================================
 	
+
+{% endraw %}

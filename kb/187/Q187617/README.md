@@ -6,6 +6,8 @@ permalink: /kb/187/Q187617/
 
 ## Q187617: Off97 SBS: MS FrontPage No Longer Available For Download
 
+{% raw %}
+
 	Article: Q187617
 	Product(s): Microsoft Press
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/187/Q187617/
 	
 	=============================================================================
 	
+
+{% endraw %}

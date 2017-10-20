@@ -6,6 +6,8 @@ permalink: /kb/313/Q313820/
 
 ## Q313820: HOW TO: Enable UPN Logon for FTP in IIS 5.0
 
+{% raw %}
+
 	Article: Q313820
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -105,3 +107,5 @@ permalink: /kb/313/Q313820/
 	
 	=============================================================================
 	
+
+{% endraw %}

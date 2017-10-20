@@ -6,6 +6,8 @@ permalink: /kb/141/Q141797/
 
 ## Q141797: Fw1223.exe Describes Components of a Customized Builder
 
+{% raw %}
+
 	Article: Q141797
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/141/Q141797/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75911/
 
 ## Q75911: INFO: Paper Sizes 50 through 56 Reserved for PostScript Driver
 
+{% raw %}
+
 	Article: Q75911
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -70,3 +72,5 @@ permalink: /kb/075/Q75911/
 	
 	=============================================================================
 	
+
+{% endraw %}

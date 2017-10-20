@@ -6,6 +6,8 @@ permalink: /kb/136/Q136412/
 
 ## Q136412: Cannot Set Backup Access Number to Dial as Long Distance
 
+{% raw %}
+
 	Article: Q136412
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.2 1.3 2.0
@@ -41,3 +43,5 @@ permalink: /kb/136/Q136412/
 	
 	=============================================================================
 	
+
+{% endraw %}

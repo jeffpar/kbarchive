@@ -6,6 +6,8 @@ permalink: /kb/178/Q178283/
 
 ## Q178283: Cannot Browse CD that has Both Audio and Video
 
+{% raw %}
+
 	Article: Q178283
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/178/Q178283/
 	
 	=============================================================================
 	
+
+{% endraw %}

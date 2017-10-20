@@ -6,6 +6,8 @@ permalink: /kb/121/Q121839/
 
 ## Q121839: Determining Actual Disk Size: Why 1.44 MB Should Be 1.40 MB
 
+{% raw %}
+
 	Article: Q121839
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11,95
@@ -99,3 +101,5 @@ permalink: /kb/121/Q121839/
 	
 	=============================================================================
 	
+
+{% endraw %}

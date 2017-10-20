@@ -6,6 +6,8 @@ permalink: /kb/135/Q135089/
 
 ## Q135089: Program Group Control Causes GP Fault on Windows 95 Clients
 
+{% raw %}
+
 	Article: Q135089
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:95; winnt:1.1
@@ -46,3 +48,5 @@ permalink: /kb/135/Q135089/
 	
 	=============================================================================
 	
+
+{% endraw %}

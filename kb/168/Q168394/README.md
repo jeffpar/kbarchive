@@ -6,6 +6,8 @@ permalink: /kb/168/Q168394/
 
 ## Q168394: Kids Plus: What Is The &quot;.Default&quot; User?
 
+{% raw %}
+
 	Article: Q168394
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/168/Q168394/
 	
 	=============================================================================
 	
+
+{% endraw %}

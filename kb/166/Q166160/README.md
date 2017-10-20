@@ -6,6 +6,8 @@ permalink: /kb/166/Q166160/
 
 ## Q166160: Stop C000021a after Applying Windows NT 4.0 Service Pack
 
+{% raw %}
+
 	Article: Q166160
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -102,3 +104,5 @@ permalink: /kb/166/Q166160/
 	
 	=============================================================================
 	
+
+{% endraw %}

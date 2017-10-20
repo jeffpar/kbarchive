@@ -6,6 +6,8 @@ permalink: /kb/128/Q128930/
 
 ## Q128930: Err Msg: NTVDM.EXE Has Encountered a System Error
 
+{% raw %}
+
 	Article: Q128930
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/128/Q128930/
 	
 	=============================================================================
 	
+
+{% endraw %}

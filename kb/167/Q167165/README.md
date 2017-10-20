@@ -6,6 +6,8 @@ permalink: /kb/167/Q167165/
 
 ## Q167165: FIX: Too Many Controls on a Form May Crash Visual Basic IDE
 
+{% raw %}
+
 	Article: Q167165
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0; winnt:
@@ -118,3 +120,5 @@ permalink: /kb/167/Q167165/
 	
 	=============================================================================
 	
+
+{% endraw %}

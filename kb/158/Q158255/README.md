@@ -6,6 +6,8 @@ permalink: /kb/158/Q158255/
 
 ## Q158255: HOWTO: Modify a Table in Visual FoxPro Using Its Rules
 
+{% raw %}
+
 	Article: Q158255
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/158/Q158255/
 	
 	=============================================================================
 	
+
+{% endraw %}

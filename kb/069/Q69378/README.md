@@ -6,6 +6,8 @@ permalink: /kb/069/Q69378/
 
 ## Q69378: Swapfile and COMPAQ 650 MB Drives
 
+{% raw %}
+
 	Article: Q69378
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -49,3 +51,5 @@ permalink: /kb/069/Q69378/
 	
 	=============================================================================
 	
+
+{% endraw %}

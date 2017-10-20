@@ -6,6 +6,8 @@ permalink: /kb/189/Q189431/
 
 ## Q189431: DOC: Setting ActiveProject and ActiveConfiguration Properties
 
+{% raw %}
+
 	Article: Q189431
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -154,3 +156,5 @@ permalink: /kb/189/Q189431/
 	
 	=============================================================================
 	
+
+{% endraw %}

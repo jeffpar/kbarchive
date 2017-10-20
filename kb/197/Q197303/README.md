@@ -6,6 +6,8 @@ permalink: /kb/197/Q197303/
 
 ## Q197303: NNTP and SMTP in IIS Fail to Start
 
+{% raw %}
+
 	Article: Q197303
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -99,3 +101,5 @@ permalink: /kb/197/Q197303/
 	
 	=============================================================================
 	
+
+{% endraw %}

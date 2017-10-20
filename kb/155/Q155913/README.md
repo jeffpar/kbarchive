@@ -6,6 +6,8 @@ permalink: /kb/155/Q155913/
 
 ## Q155913: INFO: Visual Foxpro and ODBC Server-Side Cursors
 
+{% raw %}
+
 	Article: Q155913
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,5.0,6.0
@@ -76,3 +78,5 @@ permalink: /kb/155/Q155913/
 	
 	=============================================================================
 	
+
+{% endraw %}

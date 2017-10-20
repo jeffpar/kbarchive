@@ -6,6 +6,8 @@ permalink: /kb/133/Q133253/
 
 ## Q133253: Generating SQL Scripts for SMS Views
 
+{% raw %}
+
 	Article: Q133253
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2,6.0
@@ -329,3 +331,5 @@ permalink: /kb/133/Q133253/
 	
 	=============================================================================
 	
+
+{% endraw %}

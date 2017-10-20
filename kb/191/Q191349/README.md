@@ -6,6 +6,8 @@ permalink: /kb/191/Q191349/
 
 ## Q191349: SMS: WinNT Servers Don't Display Resource Domain in Inventory
 
+{% raw %}
+
 	Article: Q191349
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -57,3 +59,5 @@ permalink: /kb/191/Q191349/
 	
 	=============================================================================
 	
+
+{% endraw %}

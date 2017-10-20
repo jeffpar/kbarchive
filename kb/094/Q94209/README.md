@@ -6,6 +6,8 @@ permalink: /kb/094/Q94209/
 
 ## Q94209: Profiling an Application in Microsoft Windows
 
+{% raw %}
+
 	Article: Q94209
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.2,1.3
@@ -144,3 +146,5 @@ permalink: /kb/094/Q94209/
 	
 	=============================================================================
 	
+
+{% endraw %}

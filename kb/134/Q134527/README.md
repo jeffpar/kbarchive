@@ -6,6 +6,8 @@ permalink: /kb/134/Q134527/
 
 ## Q134527: Screen Flashing on Green PCs with Some AMI BIOS Versions
 
+{% raw %}
+
 	Article: Q134527
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/134/Q134527/
 	
 	=============================================================================
 	
+
+{% endraw %}

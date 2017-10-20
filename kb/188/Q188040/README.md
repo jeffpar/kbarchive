@@ -6,6 +6,8 @@ permalink: /kb/188/Q188040/
 
 ## Q188040: XCON: MTA Disconnects and 2004 Event Appears in Event Log
 
+{% raw %}
+
 	Article: Q188040
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -66,3 +68,5 @@ permalink: /kb/188/Q188040/
 	
 	=============================================================================
 	
+
+{% endraw %}

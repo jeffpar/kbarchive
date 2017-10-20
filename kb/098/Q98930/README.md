@@ -6,6 +6,8 @@ permalink: /kb/098/Q98930/
 
 ## Q98930: Description of Klotski
 
+{% raw %}
+
 	Article: Q98930
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/098/Q98930/
 	
 	=============================================================================
 	
+
+{% endraw %}

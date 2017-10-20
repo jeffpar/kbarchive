@@ -6,6 +6,8 @@ permalink: /kb/155/Q155507/
 
 ## Q155507: SMS: Remote Reboot Fails on Clients Running Windows NT 4.0
 
+{% raw %}
+
 	Article: Q155507
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155507/
 	
 	=============================================================================
 	
+
+{% endraw %}

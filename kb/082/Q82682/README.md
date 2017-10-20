@@ -6,6 +6,8 @@ permalink: /kb/082/Q82682/
 
 ## Q82682: HDC Memory Viewer Loses Title
 
+{% raw %}
+
 	Article: Q82682
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -39,3 +41,5 @@ permalink: /kb/082/Q82682/
 	
 	=============================================================================
 	
+
+{% endraw %}

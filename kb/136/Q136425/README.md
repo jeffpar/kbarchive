@@ -6,6 +6,8 @@ permalink: /kb/136/Q136425/
 
 ## Q136425: Err Msg: Drive Cannot Be Locked for Exclusive Use
 
+{% raw %}
+
 	Article: Q136425
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2,3.5,3.51
@@ -111,3 +113,5 @@ permalink: /kb/136/Q136425/
 	
 	=============================================================================
 	
+
+{% endraw %}

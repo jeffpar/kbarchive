@@ -6,6 +6,8 @@ permalink: /kb/119/Q119704/
 
 ## Q119704: MS-DOS SYS Copies DRVSPACE.BIN Even If You Are Using DBLSPACE
 
+{% raw %}
+
 	Article: Q119704
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -49,3 +51,5 @@ permalink: /kb/119/Q119704/
 	
 	=============================================================================
 	
+
+{% endraw %}

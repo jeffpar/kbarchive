@@ -6,6 +6,8 @@ permalink: /kb/290/Q290426/
 
 ## Q290426: PRB: Round() Function Does Not Accept Negative Parameters
 
+{% raw %}
+
 	Article: Q290426
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP3,6.0 SP4,6.0 SP5
@@ -63,3 +65,5 @@ permalink: /kb/290/Q290426/
 	
 	=============================================================================
 	
+
+{% endraw %}

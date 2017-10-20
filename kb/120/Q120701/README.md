@@ -6,6 +6,8 @@ permalink: /kb/120/Q120701/
 
 ## Q120701: Setup Does Not Copy Files to Disk
 
+{% raw %}
+
 	Article: Q120701
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/120/Q120701/
 	
 	=============================================================================
 	
+
+{% endraw %}

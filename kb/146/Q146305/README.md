@@ -6,6 +6,8 @@ permalink: /kb/146/Q146305/
 
 ## Q146305: Covey Sample Index May Not Show Information
 
+{% raw %}
+
 	Article: Q146305
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -52,3 +54,5 @@ permalink: /kb/146/Q146305/
 	
 	=============================================================================
 	
+
+{% endraw %}

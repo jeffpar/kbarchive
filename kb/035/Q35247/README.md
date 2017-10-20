@@ -6,6 +6,8 @@ permalink: /kb/035/Q35247/
 
 ## Q35247: QB.EXE &quot;Bad File Mode&quot; if First Character Extended ASCII
 
+{% raw %}
+
 	Article: Q35247
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -27,3 +29,5 @@ permalink: /kb/035/Q35247/
 	the loaded file. (The same is true for QB87.EXE in Version 3.00.)
 	
 	Extended ASCII bytes have values from 128 to 255.
+
+{% endraw %}

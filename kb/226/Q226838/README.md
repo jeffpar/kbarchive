@@ -6,6 +6,8 @@ permalink: /kb/226/Q226838/
 
 ## Q226838: SMS: Online Client Does Not Release Original License
 
+{% raw %}
+
 	Article: Q226838
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -46,3 +48,5 @@ permalink: /kb/226/Q226838/
 	
 	=============================================================================
 	
+
+{% endraw %}

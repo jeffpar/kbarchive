@@ -6,6 +6,8 @@ permalink: /kb/108/Q108840/
 
 ## Q108840: PC Adm: Err Msg: Notice 37 Disk Directory Full or Error
 
+{% raw %}
+
 	Article: Q108840
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1x,3.0,3.0a,3.2
@@ -217,3 +219,5 @@ permalink: /kb/108/Q108840/
 	
 	=============================================================================
 	
+
+{% endraw %}

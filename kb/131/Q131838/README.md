@@ -6,6 +6,8 @@ permalink: /kb/131/Q131838/
 
 ## Q131838: How OptionGroup Buttons Behave
 
+{% raw %}
+
 	Article: Q131838
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -129,3 +131,5 @@ permalink: /kb/131/Q131838/
 	
 	=============================================================================
 	
+
+{% endraw %}

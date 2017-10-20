@@ -6,6 +6,8 @@ permalink: /kb/310/Q310626/
 
 ## Q310626: TAPI Server Leaks Memory When Multiple Programs Own Calls
 
+{% raw %}
+
 	Article: Q310626
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,2000 SP2,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -84,3 +86,5 @@ permalink: /kb/310/Q310626/
 	
 	=============================================================================
 	
+
+{% endraw %}

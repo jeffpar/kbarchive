@@ -6,6 +6,8 @@ permalink: /kb/273/Q273565/
 
 ## Q273565: Unexpected Error 0x8007c801 When You Start the FTP Service
 
+{% raw %}
+
 	Article: Q273565
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -81,3 +83,5 @@ permalink: /kb/273/Q273565/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131231/
 
 ## Q131231: Macintosh Volume Connections from Trusted Domains
 
+{% raw %}
+
 	Article: Q131231
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -67,3 +69,5 @@ permalink: /kb/131/Q131231/
 	
 	=============================================================================
 	
+
+{% endraw %}

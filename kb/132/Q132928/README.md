@@ -6,6 +6,8 @@ permalink: /kb/132/Q132928/
 
 ## Q132928: Error Using Filename with More Than 236 Characters in WordPad
 
+{% raw %}
+
 	Article: Q132928
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -44,3 +46,5 @@ permalink: /kb/132/Q132928/
 	
 	=============================================================================
 	
+
+{% endraw %}

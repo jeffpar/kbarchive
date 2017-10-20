@@ -6,6 +6,8 @@ permalink: /kb/228/Q228519/
 
 ## Q228519: SBS: Settings for Internet Explorer Client Configuration
 
+{% raw %}
+
 	Article: Q228519
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -64,3 +66,5 @@ permalink: /kb/228/Q228519/
 	
 	=============================================================================
 	
+
+{% endraw %}

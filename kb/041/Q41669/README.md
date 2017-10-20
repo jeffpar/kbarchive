@@ -6,6 +6,8 @@ permalink: /kb/041/Q41669/
 
 ## Q41669: QuickC 2.00 README.DOC: Error Message C2429
 
+{% raw %}
+
 	Article: Q41669
 	Product(s): See article
 	Version(s): 2.00
@@ -27,3 +29,5 @@ permalink: /kb/041/Q41669/
 	to do a far call or a far jump to a label. It should never be
 	necessary to do this, since labels have function scope and a function
 	cannot be larger than a segment.
+
+{% endraw %}

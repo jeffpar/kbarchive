@@ -6,6 +6,8 @@ permalink: /kb/168/Q168419/
 
 ## Q168419: BUG: Browse Info Flag Not Saved for Subproject After Conversion
 
+{% raw %}
+
 	Article: Q168419
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -53,3 +55,5 @@ permalink: /kb/168/Q168419/
 	
 	=============================================================================
 	
+
+{% endraw %}

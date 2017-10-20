@@ -6,6 +6,8 @@ permalink: /kb/077/Q77545/
 
 ## Q77545: PC Adm: Description of Regular and Interval Times
 
+{% raw %}
+
 	Article: Q77545
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0
@@ -73,3 +75,5 @@ permalink: /kb/077/Q77545/
 	
 	=============================================================================
 	
+
+{% endraw %}

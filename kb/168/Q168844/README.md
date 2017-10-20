@@ -6,6 +6,8 @@ permalink: /kb/168/Q168844/
 
 ## Q168844: FIX: Undo Check Out Not Behaving as Expected
 
+{% raw %}
+
 	Article: Q168844
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0
@@ -87,3 +89,5 @@ permalink: /kb/168/Q168844/
 	
 	=============================================================================
 	
+
+{% endraw %}

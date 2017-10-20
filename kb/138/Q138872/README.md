@@ -6,6 +6,8 @@ permalink: /kb/138/Q138872/
 
 ## Q138872: FIX: TRACE() Message Appears When Closing DAO Objects
 
+{% raw %}
+
 	Article: Q138872
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -63,3 +65,5 @@ permalink: /kb/138/Q138872/
 	
 	=============================================================================
 	
+
+{% endraw %}

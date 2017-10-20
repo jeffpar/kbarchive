@@ -6,6 +6,8 @@ permalink: /kb/252/Q252948/
 
 ## Q252948: FIX: SQLRowCount Returns -1 After Inserting a BLOB &gt;= 400K
 
+{% raw %}
+
 	Article: Q252948
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.7
@@ -77,3 +79,5 @@ permalink: /kb/252/Q252948/
 	
 	=============================================================================
 	
+
+{% endraw %}

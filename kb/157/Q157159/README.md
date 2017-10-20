@@ -6,6 +6,8 @@ permalink: /kb/157/Q157159/
 
 ## Q157159: STL Sample for map::insert, map::find, and map::end Functions
 
+{% raw %}
+
 	Article: Q157159
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -165,3 +167,5 @@ permalink: /kb/157/Q157159/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242572/
 
 ## Q242572: Games: Compatibility Issues with Some CD-ROM Drives
 
+{% raw %}
+
 	Article: Q242572
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -123,3 +125,5 @@ permalink: /kb/242/Q242572/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192519/
 
 ## Q192519: XFOR: Cc: Field Moved to To: Field with MHS Extended Addressing
 
+{% raw %}
+
 	Article: Q192519
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -101,3 +103,5 @@ permalink: /kb/192/Q192519/
 	
 	=============================================================================
 	
+
+{% endraw %}

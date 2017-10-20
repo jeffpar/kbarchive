@@ -6,6 +6,8 @@ permalink: /kb/189/Q189069/
 
 ## Q189069: Black Screen or Game Hangs When Guard Dog Software Is Installed
 
+{% raw %}
+
 	Article: Q189069
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -83,3 +85,5 @@ permalink: /kb/189/Q189069/
 	
 	=============================================================================
 	
+
+{% endraw %}

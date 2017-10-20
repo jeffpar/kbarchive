@@ -6,6 +6,8 @@ permalink: /kb/141/Q141256/
 
 ## Q141256: Bookshelf 1995: Add/Remove Bookshelf Does Not Update Shortcut
 
+{% raw %}
+
 	Article: Q141256
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/141/Q141256/
 	
 	=============================================================================
 	
+
+{% endraw %}

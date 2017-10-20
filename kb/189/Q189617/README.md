@@ -6,6 +6,8 @@ permalink: /kb/189/Q189617/
 
 ## Q189617: PRB: Infinite Loop if Modal Form Shown in MDIChild's QueryUnload
 
+{% raw %}
+
 	Article: Q189617
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/189/Q189617/
 	
 	=============================================================================
 	
+
+{% endraw %}

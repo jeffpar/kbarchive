@@ -6,6 +6,8 @@ permalink: /kb/247/Q247526/
 
 ## Q247526: BUG: Hundreds of Icons Cause Icon Property Not to Refresh
 
+{% raw %}
+
 	Article: Q247526
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -125,3 +127,5 @@ permalink: /kb/247/Q247526/
 	
 	=============================================================================
 	
+
+{% endraw %}

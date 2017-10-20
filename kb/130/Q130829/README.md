@@ -6,6 +6,8 @@ permalink: /kb/130/Q130829/
 
 ## Q130829: &quot;Bad Command or Filename&quot; Starting Program with DOSSHELL
 
+{% raw %}
+
 	Article: Q130829
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/130/Q130829/
 	
 	=============================================================================
 	
+
+{% endraw %}

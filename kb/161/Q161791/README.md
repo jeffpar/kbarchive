@@ -6,6 +6,8 @@ permalink: /kb/161/Q161791/
 
 ## Q161791: XADM: Err Msg: The Command LODCTR DSACTRS.INI Failed
 
+{% raw %}
+
 	Article: Q161791
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -97,3 +99,5 @@ permalink: /kb/161/Q161791/
 	
 	=============================================================================
 	
+
+{% endraw %}

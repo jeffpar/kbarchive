@@ -6,6 +6,8 @@ permalink: /kb/152/Q152724/
 
 ## Q152724: XFOR: MS Mail Connector Failed Parsing the Message
 
+{% raw %}
+
 	Article: Q152724
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/152/Q152724/
 	
 	=============================================================================
 	
+
+{% endraw %}

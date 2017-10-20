@@ -6,6 +6,8 @@ permalink: /kb/160/Q160506/
 
 ## Q160506: Files Modified by VC42b Patch - Part 4 of 4
 
+{% raw %}
+
 	Article: Q160506
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -963,3 +965,5 @@ permalink: /kb/160/Q160506/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132666/
 
 ## Q132666: Logitech MouseWare 6.5 and Norton Desktop
 
+{% raw %}
+
 	Article: Q132666
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/132/Q132666/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/073/Q73740/
 
 ## Q73740: ATI Wondercard Comes with Mouse Port
 
+{% raw %}
+
 	Article: Q73740
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -52,3 +54,5 @@ permalink: /kb/073/Q73740/
 	
 	=============================================================================
 	
+
+{% endraw %}

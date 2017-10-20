@@ -6,6 +6,8 @@ permalink: /kb/035/Q35233/
 
 ## Q35233: Compiling in M Produces No .OBJ File
 
+{% raw %}
+
 	Article: Q35233
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -21,3 +23,5 @@ permalink: /kb/035/Q35233/
 	3.20, which doesn't support a file setting greater than 20. If files
 	exceed 20, DOS uses its default of eight files. When the user set
 	"files=20" an .OBJ was created from a compilation within M.
+
+{% endraw %}

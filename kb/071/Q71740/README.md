@@ -6,6 +6,8 @@ permalink: /kb/071/Q71740/
 
 ## Q71740: AST 386 and Bus Mouse Ports
 
+{% raw %}
+
 	Article: Q71740
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/071/Q71740/
 	
 	=============================================================================
 	
+
+{% endraw %}

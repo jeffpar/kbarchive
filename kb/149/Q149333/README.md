@@ -6,6 +6,8 @@ permalink: /kb/149/Q149333/
 
 ## Q149333: XADM: The Basics of Advanced Security
 
+{% raw %}
+
 	Article: Q149333
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -123,3 +125,5 @@ permalink: /kb/149/Q149333/
 	
 	=============================================================================
 	
+
+{% endraw %}

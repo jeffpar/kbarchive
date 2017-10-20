@@ -6,6 +6,8 @@ permalink: /kb/112/Q112915/
 
 ## Q112915: PC Win: How Windows Client Handles Return Receipts
 
+{% raw %}
+
 	Article: Q112915
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b,3.2
@@ -64,3 +66,5 @@ permalink: /kb/112/Q112915/
 	
 	=============================================================================
 	
+
+{% endraw %}

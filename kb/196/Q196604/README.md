@@ -6,6 +6,8 @@ permalink: /kb/196/Q196604/
 
 ## Q196604: SNA Server Manager May Not Find Subdomain When Started
 
+{% raw %}
+
 	Article: Q196604
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -88,3 +90,5 @@ permalink: /kb/196/Q196604/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250667/
 
 ## Q250667: XWEB: Mailbox access through OWA is denied when Proxy server is
 
+{% raw %}
+
 	Article: Q250667
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -110,3 +112,5 @@ permalink: /kb/250/Q250667/
 	
 	=============================================================================
 	
+
+{% endraw %}

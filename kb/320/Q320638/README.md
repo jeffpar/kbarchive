@@ -6,6 +6,8 @@ permalink: /kb/320/Q320638/
 
 ## Q320638: SMS: Job Files May Back Up in the Scheduler.box Folder
 
+{% raw %}
+
 	Article: Q320638
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -64,3 +66,5 @@ permalink: /kb/320/Q320638/
 	
 	=============================================================================
 	
+
+{% endraw %}

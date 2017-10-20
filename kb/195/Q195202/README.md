@@ -6,6 +6,8 @@ permalink: /kb/195/Q195202/
 
 ## Q195202: WD97: Err Msg: &quot;Word Could Not Merge the Main Document...&quot;
 
+{% raw %}
+
 	Article: Q195202
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -131,3 +133,5 @@ permalink: /kb/195/Q195202/
 	
 	=============================================================================
 	
+
+{% endraw %}

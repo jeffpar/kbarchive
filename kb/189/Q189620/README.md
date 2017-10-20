@@ -6,6 +6,8 @@ permalink: /kb/189/Q189620/
 
 ## Q189620: PRB: Form Scrollbar Property Read-Only at Run-Time
 
+{% raw %}
+
 	Article: Q189620
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -117,3 +119,5 @@ permalink: /kb/189/Q189620/
 	
 	=============================================================================
 	
+
+{% endraw %}

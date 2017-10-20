@@ -6,6 +6,8 @@ permalink: /kb/157/Q157698/
 
 ## Q157698: XCON: Exchange Fails to Allow an Incoming X.25 Connection
 
+{% raw %}
+
 	Article: Q157698
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0 SP1,4.0 SP2
@@ -59,3 +61,5 @@ permalink: /kb/157/Q157698/
 	
 	=============================================================================
 	
+
+{% endraw %}

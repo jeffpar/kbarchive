@@ -6,6 +6,8 @@ permalink: /kb/088/Q88586/
 
 ## Q88586: Using Dexxa Mice in Windows 3.0 and 3.1
 
+{% raw %}
+
 	Article: Q88586
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/088/Q88586/
 	
 	=============================================================================
 	
+
+{% endraw %}

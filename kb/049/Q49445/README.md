@@ -6,6 +6,8 @@ permalink: /kb/049/Q49445/
 
 ## Q49445: PRB: LINK versions 5.03 to 5.2 Require EXETYPE WINDOWS Stmt.
 
+{% raw %}
+
 	Article: Q49445
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.03,5.05,5.1,5.13,5.25
@@ -73,3 +75,5 @@ permalink: /kb/049/Q49445/
 	
 	=============================================================================
 	
+
+{% endraw %}

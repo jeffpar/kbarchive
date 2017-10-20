@@ -6,6 +6,8 @@ permalink: /kb/159/Q159822/
 
 ## Q159822: DHCP Clients' Ability to Send DHCPDECLINE Message
 
+{% raw %}
+
 	Article: Q159822
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -95,3 +97,5 @@ permalink: /kb/159/Q159822/
 	
 	=============================================================================
 	
+
+{% endraw %}

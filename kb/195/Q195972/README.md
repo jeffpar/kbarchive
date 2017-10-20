@@ -6,6 +6,8 @@ permalink: /kb/195/Q195972/
 
 ## Q195972: BUG: Data Report Not Always in WindowList
 
+{% raw %}
+
 	Article: Q195972
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -90,3 +92,5 @@ permalink: /kb/195/Q195972/
 	
 	=============================================================================
 	
+
+{% endraw %}

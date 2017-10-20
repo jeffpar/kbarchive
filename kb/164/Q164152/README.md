@@ -6,6 +6,8 @@ permalink: /kb/164/Q164152/
 
 ## Q164152: VC Hangs When Clicking Advanced Button on Source Control
 
+{% raw %}
+
 	Article: Q164152
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0; winnt:4.2
@@ -65,3 +67,5 @@ permalink: /kb/164/Q164152/
 	
 	=============================================================================
 	
+
+{% endraw %}

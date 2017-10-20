@@ -6,6 +6,8 @@ permalink: /kb/142/Q142566/
 
 ## Q142566: How to Create a Check Box that Shows a Check Mark
 
+{% raw %}
+
 	Article: Q142566
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -110,3 +112,5 @@ permalink: /kb/142/Q142566/
 	
 	=============================================================================
 	
+
+{% endraw %}

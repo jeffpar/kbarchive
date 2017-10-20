@@ -6,6 +6,8 @@ permalink: /kb/082/Q82351/
 
 ## Q82351: Relay Gold 5.0 and Gateway Computers
 
+{% raw %}
+
 	Article: Q82351
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -35,3 +37,5 @@ permalink: /kb/082/Q82351/
 	
 	=============================================================================
 	
+
+{% endraw %}

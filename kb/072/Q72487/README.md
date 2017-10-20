@@ -6,6 +6,8 @@ permalink: /kb/072/Q72487/
 
 ## Q72487: Error Messages Caused by DIRCMD
 
+{% raw %}
+
 	Article: Q72487
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -73,3 +75,5 @@ permalink: /kb/072/Q72487/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190707/
 
 ## Q190707: XADM: Where to Find Exchange Server 4.0 Service Pack 4
 
+{% raw %}
+
 	Article: Q190707
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -50,3 +52,5 @@ permalink: /kb/190/Q190707/
 	
 	=============================================================================
 	
+
+{% endraw %}

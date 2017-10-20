@@ -6,6 +6,8 @@ permalink: /kb/163/Q163612/
 
 ## Q163612: PPT: Sample VB Code to Make the Selected Text Bold
 
+{% raw %}
+
 	Article: Q163612
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -108,3 +110,5 @@ permalink: /kb/163/Q163612/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151860/
 
 ## Q151860: STOP 0x0A While Writing to the Middle of a Cached File
 
+{% raw %}
+
 	Article: Q151860
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/151/Q151860/
 	
 	=============================================================================
 	
+
+{% endraw %}

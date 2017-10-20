@@ -6,6 +6,8 @@ permalink: /kb/039/Q39257/
 
 ## Q39257: Hardware Compatibilities with QuickBASIC Version 4.50
 
+{% raw %}
+
 	Article: Q39257
 	Product(s): See article
 	Version(s): 4.50
@@ -167,3 +169,5 @@ permalink: /kb/039/Q39257/
 	monitor is connected to the card but the setup is not set correctly,
 	SCREEN 9 fails, but SCREEN 10 may work. Setting the ATI VGA Wonder
 	card for the monochrome monitor makes SCREEN 9 work successfully.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199817/
 
 ## Q199817: XFOR: Notes CALCON May Cause Session Leak on Notes Server
 
+{% raw %}
+
 	Article: Q199817
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/199/Q199817/
 	
 	=============================================================================
 	
+
+{% endraw %}

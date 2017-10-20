@@ -6,6 +6,8 @@ permalink: /kb/320/Q320103/
 
 ## Q320103: BUG: Conditionally Compiled Public Events Cause Access Violation
 
+{% raw %}
+
 	Article: Q320103
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -118,3 +120,5 @@ permalink: /kb/320/Q320103/
 	
 	=============================================================================
 	
+
+{% endraw %}

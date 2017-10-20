@@ -6,6 +6,8 @@ permalink: /kb/172/Q172294/
 
 ## Q172294: Win3270 Applet Fails to Connect If Path Longer Than 64 Bytes
 
+{% raw %}
+
 	Article: Q172294
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -63,3 +65,5 @@ permalink: /kb/172/Q172294/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/267/Q267578/
 
 ## Q267578: Access Violation in Lsass.exe in Windows NT 4.0 in Mixed Domain
 
+{% raw %}
+
 	Article: Q267578
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,2000 SP2,4.0
@@ -160,3 +162,5 @@ permalink: /kb/267/Q267578/
 	
 	=============================================================================
 	
+
+{% endraw %}

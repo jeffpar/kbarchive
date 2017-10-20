@@ -6,6 +6,8 @@ permalink: /kb/041/Q41128/
 
 ## Q41128: Meaning Of &quot;ILINK: ERROR: Invalid Flag Z&quot;
 
+{% raw %}
+
 	Article: Q41128
 	Product(s): See article
 	Version(s): 2.00
@@ -35,3 +37,5 @@ permalink: /kb/041/Q41128/
 	
 	The problem lies in the fact that the older Incremental Linker does
 	not recognize the CodeView information switch.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165477/
 
 ## Q165477: How to Add Modem Tracking to System Monitor
 
+{% raw %}
+
 	Article: Q165477
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/165/Q165477/
 	
 	=============================================================================
 	
+
+{% endraw %}

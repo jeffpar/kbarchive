@@ -6,6 +6,8 @@ permalink: /kb/132/Q132591/
 
 ## Q132591: ALT+ENTER Does Not Switch MS-DOS Session to Full-Screen
 
+{% raw %}
+
 	Article: Q132591
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/132/Q132591/
 	
 	=============================================================================
 	
+
+{% endraw %}

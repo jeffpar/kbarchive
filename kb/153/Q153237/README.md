@@ -6,6 +6,8 @@ permalink: /kb/153/Q153237/
 
 ## Q153237: File Manager Unable to Copy Long File Names to Write-Only Volume
 
+{% raw %}
+
 	Article: Q153237
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -77,3 +79,5 @@ permalink: /kb/153/Q153237/
 	
 	=============================================================================
 	
+
+{% endraw %}

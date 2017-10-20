@@ -6,6 +6,8 @@ permalink: /kb/072/Q72387/
 
 ## Q72387: HOWTO: How to Determine If a Device Is Palette Capable
 
+{% raw %}
+
 	Article: Q72387
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -89,3 +91,5 @@ permalink: /kb/072/Q72387/
 	
 	=============================================================================
 	
+
+{% endraw %}

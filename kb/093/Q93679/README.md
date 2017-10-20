@@ -6,6 +6,8 @@ permalink: /kb/093/Q93679/
 
 ## Q93679: Setup Is Unable to Read Uninstall Disk on a COMPAQ
 
+{% raw %}
+
 	Article: Q93679
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/093/Q93679/
 	
 	=============================================================================
 	
+
+{% endraw %}

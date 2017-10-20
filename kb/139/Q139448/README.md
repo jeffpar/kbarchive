@@ -6,6 +6,8 @@ permalink: /kb/139/Q139448/
 
 ## Q139448: PRB: &quot;Video for Windows is Not Installed&quot; Error
 
+{% raw %}
+
 	Article: Q139448
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -79,3 +81,5 @@ permalink: /kb/139/Q139448/
 	
 	=============================================================================
 	
+
+{% endraw %}

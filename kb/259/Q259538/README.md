@@ -6,6 +6,8 @@ permalink: /kb/259/Q259538/
 
 ## Q259538: Eventrap Uses 100% of CPU Resources Enumerating Event Source
 
+{% raw %}
+
 	Article: Q259538
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -57,3 +59,5 @@ permalink: /kb/259/Q259538/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150249/
 
 ## Q150249: 3D Movie Maker: CD-ROM Drive Error Messages During Setup
 
+{% raw %}
+
 	Article: Q150249
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,95
@@ -79,3 +81,5 @@ permalink: /kb/150/Q150249/
 	
 	=============================================================================
 	
+
+{% endraw %}

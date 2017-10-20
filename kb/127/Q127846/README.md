@@ -6,6 +6,8 @@ permalink: /kb/127/Q127846/
 
 ## Q127846: How to Use CANDIDATE Keys
 
+{% raw %}
+
 	Article: Q127846
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/127/Q127846/
 	
 	=============================================================================
 	
+
+{% endraw %}

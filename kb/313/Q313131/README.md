@@ -6,6 +6,8 @@ permalink: /kb/313/Q313131/
 
 ## Q313131: HOW TO: Use URLScan with Exchange Outlook Web Access in Exchange
 
+{% raw %}
+
 	Article: Q313131
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -161,3 +163,5 @@ permalink: /kb/313/Q313131/
 	
 	=============================================================================
 	
+
+{% endraw %}

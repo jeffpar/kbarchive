@@ -6,6 +6,8 @@ permalink: /kb/169/Q169907/
 
 ## Q169907: Error 127 Starting Dial Up Networking After Running Copyadmn.cm
 
+{% raw %}
+
 	Article: Q169907
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/169/Q169907/
 	
 	=============================================================================
 	
+
+{% endraw %}

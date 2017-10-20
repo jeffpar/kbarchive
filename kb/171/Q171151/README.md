@@ -6,6 +6,8 @@ permalink: /kb/171/Q171151/
 
 ## Q171151: MS Press Support Policy for Windows NT 4.0 Evaluation Edition
 
+{% raw %}
+
 	Article: Q171151
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/171/Q171151/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121462/
 
 ## Q121462: Obtaining Latest Novell Client Windows Drivers and DLLs
 
+{% raw %}
+
 	Article: Q121462
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/121/Q121462/
 	
 	=============================================================================
 	
+
+{% endraw %}

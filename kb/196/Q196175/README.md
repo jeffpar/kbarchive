@@ -6,6 +6,8 @@ permalink: /kb/196/Q196175/
 
 ## Q196175: XADM: Move Server Express Install does not Detect &#92;Bin
 
+{% raw %}
+
 	Article: Q196175
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -43,3 +45,5 @@ permalink: /kb/196/Q196175/
 	
 	=============================================================================
 	
+
+{% endraw %}

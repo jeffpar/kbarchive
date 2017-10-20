@@ -6,6 +6,8 @@ permalink: /kb/046/Q46024/
 
 ## Q46024: DOCFIX: fopen() Will Set errno Values Incorrect in Documentation
 
+{% raw %}
+
 	Article: Q46024
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS: 6.0, 6.00a, 6.00ax, 7.0; WINDOWS: 1.0, 1.5; WINDOWS NT: 1.0, 2.0, 2.1, 5.0
@@ -49,3 +51,5 @@ permalink: /kb/046/Q46024/
 	
 	=============================================================================
 	
+
+{% endraw %}

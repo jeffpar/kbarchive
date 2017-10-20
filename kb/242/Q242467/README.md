@@ -6,6 +6,8 @@ permalink: /kb/242/Q242467/
 
 ## Q242467: FIX: Dividing 0 by 0 Returns Garbage Chars or Incorrect Number
 
+{% raw %}
+
 	Article: Q242467
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -90,3 +92,5 @@ permalink: /kb/242/Q242467/
 	
 	=============================================================================
 	
+
+{% endraw %}

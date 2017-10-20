@@ -6,6 +6,8 @@ permalink: /kb/149/Q149819/
 
 ## Q149819: RPC Causes Exchange Server to Hang All Connected Clients
 
+{% raw %}
+
 	Article: Q149819
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/149/Q149819/
 	
 	=============================================================================
 	
+
+{% endraw %}

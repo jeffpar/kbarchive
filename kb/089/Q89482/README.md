@@ -6,6 +6,8 @@ permalink: /kb/089/Q89482/
 
 ## Q89482: NET START WORKSTATION Command AutoStart= Switch in WFWG
 
+{% raw %}
+
 	Article: Q89482
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0,3.1,3.11
@@ -96,3 +98,5 @@ permalink: /kb/089/Q89482/
 	
 	=============================================================================
 	
+
+{% endraw %}

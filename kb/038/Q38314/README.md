@@ -6,6 +6,8 @@ permalink: /kb/038/Q38314/
 
 ## Q38314: Interrupt Conflict with Greenleaf Libraries
 
+{% raw %}
+
 	Article: Q38314
 	Product(s): See article
 	Version(s): 2.20    | 2.20
@@ -21,3 +23,5 @@ permalink: /kb/038/Q38314/
 	
 	No workarounds are available. Greenleaf Software is located in
 	Carrollton, TX, and can be reached at (214) 248-2561.
+
+{% endraw %}

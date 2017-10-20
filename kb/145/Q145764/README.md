@@ -6,6 +6,8 @@ permalink: /kb/145/Q145764/
 
 ## Q145764: Windows Explorer Starts Each Time Windows 95 Is Started
 
+{% raw %}
+
 	Article: Q145764
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -53,3 +55,5 @@ permalink: /kb/145/Q145764/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142194/
 
 ## Q142194: FIX: Control Class in Control Not Shown in Control Array
 
+{% raw %}
+
 	Article: Q142194
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -125,3 +127,5 @@ permalink: /kb/142/Q142194/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258565/
 
 ## Q258565: Baseball 2001: How to Resume Playing After Game Stops Responding
 
+{% raw %}
+
 	Article: Q258565
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -43,3 +45,5 @@ permalink: /kb/258/Q258565/
 	
 	=============================================================================
 	
+
+{% endraw %}

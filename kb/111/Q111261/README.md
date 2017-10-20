@@ -6,6 +6,8 @@ permalink: /kb/111/Q111261/
 
 ## Q111261: Flight Simulator: Logbook Displays Hours Incorrectly
 
+{% raw %}
+
 	Article: Q111261
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -44,3 +46,5 @@ permalink: /kb/111/Q111261/
 	
 	=============================================================================
 	
+
+{% endraw %}

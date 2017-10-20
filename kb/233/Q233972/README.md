@@ -6,6 +6,8 @@ permalink: /kb/233/Q233972/
 
 ## Q233972: PRB: &quot;Syntax Error in PARAMETER clause&quot; When Opening an MFC DAO
 
+{% raw %}
+
 	Article: Q233972
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -116,3 +118,5 @@ permalink: /kb/233/Q233972/
 	
 	=============================================================================
 	
+
+{% endraw %}

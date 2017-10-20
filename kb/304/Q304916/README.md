@@ -6,6 +6,8 @@ permalink: /kb/304/Q304916/
 
 ## Q304916: ASP Pages Return a 403.1 Error After Upgrade to Windows 2000
 
+{% raw %}
+
 	Article: Q304916
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -71,3 +73,5 @@ permalink: /kb/304/Q304916/
 	
 	=============================================================================
 	
+
+{% endraw %}

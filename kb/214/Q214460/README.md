@@ -6,6 +6,8 @@ permalink: /kb/214/Q214460/
 
 ## Q214460: DSMN - Access Violation in Swsvc.exe When Comparing Two Strings
 
+{% raw %}
+
 	Article: Q214460
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/214/Q214460/
 	
 	=============================================================================
 	
+
+{% endraw %}

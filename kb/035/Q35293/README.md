@@ -6,6 +6,8 @@ permalink: /kb/035/Q35293/
 
 ## Q35293: Directory Listing of C 5.10 for OS/2 Distribution Disks
 
+{% raw %}
+
 	Article: Q35293
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -541,3 +543,5 @@ permalink: /kb/035/Q35293/
 	SNAP     C      13083   3-07-88   5:10a
 	MAKESNAP CMD     2148   3-07-88   5:10a
 	       16 File(s)         0 bytes free
+
+{% endraw %}

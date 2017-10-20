@@ -6,6 +6,8 @@ permalink: /kb/103/Q103034/
 
 ## Q103034: NT Err Msg: PNTVIDEO.DRV Not Found or Not Enough Memory
 
+{% raw %}
+
 	Article: Q103034
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0 3.1 3.5 4.0
@@ -55,3 +57,5 @@ permalink: /kb/103/Q103034/
 	
 	=============================================================================
 	
+
+{% endraw %}

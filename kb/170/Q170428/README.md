@@ -6,6 +6,8 @@ permalink: /kb/170/Q170428/
 
 ## Q170428: IIS Components Have to be Removed from the IIS Setup Program
 
+{% raw %}
+
 	Article: Q170428
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -46,3 +48,5 @@ permalink: /kb/170/Q170428/
 	
 	=============================================================================
 	
+
+{% endraw %}

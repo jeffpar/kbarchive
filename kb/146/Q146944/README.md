@@ -6,6 +6,8 @@ permalink: /kb/146/Q146944/
 
 ## Q146944: XFOR: IMC Does Not Check Hosts Table If DNS Server Down
 
+{% raw %}
+
 	Article: Q146944
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -40,3 +42,5 @@ permalink: /kb/146/Q146944/
 	
 	=============================================================================
 	
+
+{% endraw %}

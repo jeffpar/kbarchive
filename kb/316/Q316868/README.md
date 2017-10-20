@@ -6,6 +6,8 @@ permalink: /kb/316/Q316868/
 
 ## Q316868: SMS: Advertisements Do Not Start When a User Logs On
 
+{% raw %}
+
 	Article: Q316868
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -47,3 +49,5 @@ permalink: /kb/316/Q316868/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160977/
 
 ## Q160977: WD97: IPF Error Message When You Edit LISTNUM Field in Table
 
+{% raw %}
+
 	Article: Q160977
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/160/Q160977/
 	
 	=============================================================================
 	
+
+{% endraw %}

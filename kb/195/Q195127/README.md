@@ -6,6 +6,8 @@ permalink: /kb/195/Q195127/
 
 ## Q195127: WD97: Converter Not Automatically Installed in Word
 
+{% raw %}
+
 	Article: Q195127
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/195/Q195127/
 	
 	=============================================================================
 	
+
+{% endraw %}

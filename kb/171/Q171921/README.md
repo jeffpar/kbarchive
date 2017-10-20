@@ -6,6 +6,8 @@ permalink: /kb/171/Q171921/
 
 ## Q171921: Error Message: Error Loading Nwserver - Error 6260
 
+{% raw %}
+
 	Article: Q171921
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -134,3 +136,5 @@ permalink: /kb/171/Q171921/
 	
 	=============================================================================
 	
+
+{% endraw %}

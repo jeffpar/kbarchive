@@ -6,6 +6,8 @@ permalink: /kb/230/Q230326/
 
 ## Q230326: PRB: Validate Event Does Not Fire When Changing Focus with Mouse
 
+{% raw %}
+
 	Article: Q230326
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -304,3 +306,5 @@ permalink: /kb/230/Q230326/
 	
 	=============================================================================
 	
+
+{% endraw %}

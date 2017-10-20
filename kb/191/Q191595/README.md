@@ -6,6 +6,8 @@ permalink: /kb/191/Q191595/
 
 ## Q191595: Compatible Versions of Exchange Server and Outlook
 
+{% raw %}
+
 	Article: Q191595
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:8.0,8.01,8.02,8.03
@@ -108,3 +110,5 @@ permalink: /kb/191/Q191595/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123493/
 
 ## Q123493: OutputDebugString() Without &#92;n May GP Fault in MSVC.EXE
 
+{% raw %}
+
 	Article: Q123493
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,2.0
@@ -86,3 +88,5 @@ permalink: /kb/123/Q123493/
 	
 	=============================================================================
 	
+
+{% endraw %}

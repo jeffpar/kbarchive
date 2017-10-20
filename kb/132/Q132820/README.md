@@ -6,6 +6,8 @@ permalink: /kb/132/Q132820/
 
 ## Q132820: Resizing the Desktop or Taskbar May Clip Some Dialog Boxes
 
+{% raw %}
+
 	Article: Q132820
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/132/Q132820/
 	
 	=============================================================================
 	
+
+{% endraw %}

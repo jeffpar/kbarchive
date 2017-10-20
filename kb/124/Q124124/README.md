@@ -6,6 +6,8 @@ permalink: /kb/124/Q124124/
 
 ## Q124124: Updated IBMTOK.DOS Corrects Error 5736 on 90 MHz Pentiums
 
+{% raw %}
+
 	Article: Q124124
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.10 3.11
@@ -61,3 +63,5 @@ permalink: /kb/124/Q124124/
 	
 	=============================================================================
 	
+
+{% endraw %}

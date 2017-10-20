@@ -6,6 +6,8 @@ permalink: /kb/140/Q140290/
 
 ## Q140290: How to Add a Clock Display to a Form
 
+{% raw %}
+
 	Article: Q140290
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -65,3 +67,5 @@ permalink: /kb/140/Q140290/
 	
 	=============================================================================
 	
+
+{% endraw %}

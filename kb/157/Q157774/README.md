@@ -6,6 +6,8 @@ permalink: /kb/157/Q157774/
 
 ## Q157774: WD97: Can't Open HTML Document with Nested Tables
 
+{% raw %}
+
 	Article: Q157774
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/157/Q157774/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43914/
 
 ## Q43914: C: Text Modes Don't Return Pixel Information
 
+{% raw %}
+
 	Article: Q43914
 	Product(s): See article
 	Version(s): 5.10
@@ -68,3 +70,5 @@ permalink: /kb/043/Q43914/
 	arguments for _setvideomode() are also present on Page 539 of the
 	"Microsoft C for the MS-DOS Operating System: Run-Time Library
 	Reference."
+
+{% endraw %}

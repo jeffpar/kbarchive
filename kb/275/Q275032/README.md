@@ -6,6 +6,8 @@ permalink: /kb/275/Q275032/
 
 ## Q275032: IISLog Event Can't Create Directory Occurs at Startup
 
+{% raw %}
+
 	Article: Q275032
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -101,3 +103,5 @@ permalink: /kb/275/Q275032/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172077/
 
 ## Q172077: Menuprob.exe MENU() Malfunctions With Top-Level Forms
 
+{% raw %}
+
 	Article: Q172077
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -79,3 +81,5 @@ permalink: /kb/172/Q172077/
 	
 	=============================================================================
 	
+
+{% endraw %}

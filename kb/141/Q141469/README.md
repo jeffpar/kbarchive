@@ -6,6 +6,8 @@ permalink: /kb/141/Q141469/
 
 ## Q141469: Cannot Use Windows NT 3.51 Service Pack UPDATE.EXE Over Network
 
+{% raw %}
+
 	Article: Q141469
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP1,3.51 SP2,3.51 SP3,3.51 SP4,3.51 SP5
@@ -63,3 +65,5 @@ permalink: /kb/141/Q141469/
 	
 	=============================================================================
 	
+
+{% endraw %}

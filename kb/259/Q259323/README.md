@@ -6,6 +6,8 @@ permalink: /kb/259/Q259323/
 
 ## Q259323: Allegiance: Game Appears Too Dark
 
+{% raw %}
+
 	Article: Q259323
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/259/Q259323/
 	
 	=============================================================================
 	
+
+{% endraw %}

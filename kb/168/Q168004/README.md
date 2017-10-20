@@ -6,6 +6,8 @@ permalink: /kb/168/Q168004/
 
 ## Q168004: FIX: &quot;Unable to initialize DAO/Jet db engine&quot; Error
 
+{% raw %}
+
 	Article: Q168004
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2 4.2b 5.0
@@ -93,3 +95,5 @@ permalink: /kb/168/Q168004/
 	
 	=============================================================================
 	
+
+{% endraw %}

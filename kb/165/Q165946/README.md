@@ -6,6 +6,8 @@ permalink: /kb/165/Q165946/
 
 ## Q165946: RasEnumEntries Return Incorrect Number of Phonebook Entries
 
+{% raw %}
+
 	Article: Q165946
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/165/Q165946/
 	
 	=============================================================================
 	
+
+{% endraw %}

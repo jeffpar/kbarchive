@@ -6,6 +6,8 @@ permalink: /kb/142/Q142715/
 
 ## Q142715: Anonymous or Specific User Logon Returns HTTP/1.0 500 Error
 
+{% raw %}
+
 	Article: Q142715
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0
@@ -66,3 +68,5 @@ permalink: /kb/142/Q142715/
 	
 	=============================================================================
 	
+
+{% endraw %}

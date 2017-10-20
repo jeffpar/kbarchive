@@ -6,6 +6,8 @@ permalink: /kb/181/Q181089/
 
 ## Q181089: INFO: Dialog Box Appears Even When No Conflicts Exist
 
+{% raw %}
+
 	Article: Q181089
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -73,3 +75,5 @@ permalink: /kb/181/Q181089/
 	
 	=============================================================================
 	
+
+{% endraw %}

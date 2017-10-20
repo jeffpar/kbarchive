@@ -6,6 +6,8 @@ permalink: /kb/137/Q137722/
 
 ## Q137722: Err Msg: &quot;The Program Below Needs More Memory&quot; w/ Cabletron 22xx
 
+{% raw %}
+
 	Article: Q137722
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/137/Q137722/
 	
 	=============================================================================
 	
+
+{% endraw %}

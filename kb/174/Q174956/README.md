@@ -6,6 +6,8 @@ permalink: /kb/174/Q174956/
 
 ## Q174956: WINS, DHCP, and DNS Not Supported As Failover Resource
 
+{% raw %}
+
 	Article: Q174956
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/174/Q174956/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/022/Q22374/
 
 ## Q22374: How a DLL Can Display a Message Using MessageBox()
 
+{% raw %}
+
 	Article: Q22374
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -61,3 +63,5 @@ permalink: /kb/022/Q22374/
 	
 	=============================================================================
 	
+
+{% endraw %}

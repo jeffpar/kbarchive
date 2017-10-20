@@ -6,6 +6,8 @@ permalink: /kb/157/Q157178/
 
 ## Q157178: SMS: Hardware Inventory May Be Skipped
 
+{% raw %}
+
 	Article: Q157178
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -67,3 +69,5 @@ permalink: /kb/157/Q157178/
 	
 	=============================================================================
 	
+
+{% endraw %}

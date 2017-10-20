@@ -6,6 +6,8 @@ permalink: /kb/226/Q226888/
 
 ## Q226888: SMS: Component Status Times Listed Ahead Of Local Time in GMT
 
+{% raw %}
+
 	Article: Q226888
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -65,3 +67,5 @@ permalink: /kb/226/Q226888/
 	
 	=============================================================================
 	
+
+{% endraw %}

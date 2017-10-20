@@ -6,6 +6,8 @@ permalink: /kb/141/Q141717/
 
 ## Q141717: DAOTable Uses DAO Classes to Create Database Objects
 
+{% raw %}
+
 	Article: Q141717
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2 4.2b,5.0,6.0
@@ -163,3 +165,5 @@ permalink: /kb/141/Q141717/
 	
 	=============================================================================
 	
+
+{% endraw %}

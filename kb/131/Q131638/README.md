@@ -6,6 +6,8 @@ permalink: /kb/131/Q131638/
 
 ## Q131638: PC WFW: Client Files for Windows for Workgroups Mail
 
+{% raw %}
+
 	Article: Q131638
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -106,3 +108,5 @@ permalink: /kb/131/Q131638/
 	
 	=============================================================================
 	
+
+{% endraw %}

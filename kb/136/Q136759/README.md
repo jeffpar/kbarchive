@@ -6,6 +6,8 @@ permalink: /kb/136/Q136759/
 
 ## Q136759: FIX: Application Error When Releasing Popup Menu
 
+{% raw %}
+
 	Article: Q136759
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -86,3 +88,5 @@ permalink: /kb/136/Q136759/
 	
 	=============================================================================
 	
+
+{% endraw %}

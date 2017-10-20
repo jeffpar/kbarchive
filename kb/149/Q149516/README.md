@@ -6,6 +6,8 @@ permalink: /kb/149/Q149516/
 
 ## Q149516: BUG: Watching a DLL Common Block Using Context Operator Fails
 
+{% raw %}
+
 	Article: Q149516
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -152,3 +154,5 @@ permalink: /kb/149/Q149516/
 	
 	=============================================================================
 	
+
+{% endraw %}

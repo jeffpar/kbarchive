@@ -6,6 +6,8 @@ permalink: /kb/150/Q150122/
 
 ## Q150122: PRB: CDaoRecordView Toolbar Buttons Malfunction
 
+{% raw %}
+
 	Article: Q150122
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10 4.20 4.20b 5.00
@@ -178,3 +180,5 @@ permalink: /kb/150/Q150122/
 	
 	=============================================================================
 	
+
+{% endraw %}

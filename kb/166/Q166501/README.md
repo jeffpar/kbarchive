@@ -6,6 +6,8 @@ permalink: /kb/166/Q166501/
 
 ## Q166501: XADM: NDR from Postmaster Incorrectly Formatted by IS
 
+{% raw %}
+
 	Article: Q166501
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -75,3 +77,5 @@ permalink: /kb/166/Q166501/
 	
 	=============================================================================
 	
+
+{% endraw %}

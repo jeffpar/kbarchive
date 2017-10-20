@@ -6,6 +6,8 @@ permalink: /kb/158/Q158367/
 
 ## Q158367: How to Configure Joysticks in Flight Simulator for Windows 95
 
+{% raw %}
+
 	Article: Q158367
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/158/Q158367/
 	
 	=============================================================================
 	
+
+{% endraw %}

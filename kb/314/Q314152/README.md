@@ -6,6 +6,8 @@ permalink: /kb/314/Q314152/
 
 ## Q314152: Microsoft SharePoint Portal Server 2001 Resource Kit Comments an
 
+{% raw %}
+
 	Article: Q314152
 	Product(s): Microsoft Press
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/314/Q314152/
 	
 	=============================================================================
 	
+
+{% endraw %}

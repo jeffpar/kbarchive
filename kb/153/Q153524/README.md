@@ -6,6 +6,8 @@ permalink: /kb/153/Q153524/
 
 ## Q153524: Immediate CMRCV Response Also Trace the Buffer
 
+{% raw %}
+
 	Article: Q153524
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -93,3 +95,5 @@ permalink: /kb/153/Q153524/
 	
 	=============================================================================
 	
+
+{% endraw %}

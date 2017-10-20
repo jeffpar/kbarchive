@@ -6,6 +6,8 @@ permalink: /kb/152/Q152666/
 
 ## Q152666: XCON: Messages In RAS Connector Queue NDR when Modem is Busy
 
+{% raw %}
+
 	Article: Q152666
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/152/Q152666/
 	
 	=============================================================================
 	
+
+{% endraw %}

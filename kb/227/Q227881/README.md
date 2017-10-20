@@ -6,6 +6,8 @@ permalink: /kb/227/Q227881/
 
 ## Q227881: Index Server Process Terminates with Japanese Wordbreaker
 
+{% raw %}
+
 	Article: Q227881
 	Product(s): Internet Information Server
 	Version(s): winnt:1.1
@@ -100,3 +102,5 @@ permalink: /kb/227/Q227881/
 	
 	=============================================================================
 	
+
+{% endraw %}

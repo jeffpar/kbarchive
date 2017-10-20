@@ -6,6 +6,8 @@ permalink: /kb/061/Q61189/
 
 ## Q61189: C 6.00 README: The sizeof Operator Return Value
 
+{% raw %}
+
 	Article: Q61189
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -35,3 +37,5 @@ permalink: /kb/061/Q61189/
 	you negate it, as follows:
 	
 	   fseek( file, -((long)sizeof( record )), SEEK_END );
+
+{% endraw %}

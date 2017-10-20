@@ -6,6 +6,8 @@ permalink: /kb/288/Q288566/
 
 ## Q288566: SLI App. May Hang If Asynchronous Verb Returns Synchronously
 
+{% raw %}
+
 	Article: Q288566
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -160,3 +162,5 @@ permalink: /kb/288/Q288566/
 	
 	=============================================================================
 	
+
+{% endraw %}

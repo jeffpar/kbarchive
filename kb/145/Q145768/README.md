@@ -6,6 +6,8 @@ permalink: /kb/145/Q145768/
 
 ## Q145768: Cannot View Member Properties in a Newsgroup
 
+{% raw %}
+
 	Article: Q145768
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -44,3 +46,5 @@ permalink: /kb/145/Q145768/
 	
 	=============================================================================
 	
+
+{% endraw %}

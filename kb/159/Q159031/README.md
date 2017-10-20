@@ -6,6 +6,8 @@ permalink: /kb/159/Q159031/
 
 ## Q159031: Zone: Network Ports Required to Play
 
+{% raw %}
+
 	Article: Q159031
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/159/Q159031/
 	
 	=============================================================================
 	
+
+{% endraw %}

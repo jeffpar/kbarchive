@@ -6,6 +6,8 @@ permalink: /kb/072/Q72092/
 
 ## Q72092: MS-DOS 5 Upgrade Contents (5.25-Inch Disk Set)
 
+{% raw %}
+
 	Article: Q72092
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -195,3 +197,5 @@ permalink: /kb/072/Q72092/
 	
 	=============================================================================
 	
+
+{% endraw %}

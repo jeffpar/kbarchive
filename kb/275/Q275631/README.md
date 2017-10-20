@@ -6,6 +6,8 @@ permalink: /kb/275/Q275631/
 
 ## Q275631: XCON: MTA Does Not Send X.400 O/R Address Across X.400 Connector
 
+{% raw %}
+
 	Article: Q275631
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/275/Q275631/
 	
 	=============================================================================
 	
+
+{% endraw %}

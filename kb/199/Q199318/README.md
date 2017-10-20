@@ -6,6 +6,8 @@ permalink: /kb/199/Q199318/
 
 ## Q199318: SMS: How SMS Uses the SMS_DEF.MOF in Hardware Inventory
 
+{% raw %}
+
 	Article: Q199318
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -49,3 +51,5 @@ permalink: /kb/199/Q199318/
 	
 	=============================================================================
 	
+
+{% endraw %}

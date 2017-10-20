@@ -6,6 +6,8 @@ permalink: /kb/140/Q140514/
 
 ## Q140514: Using the Operator Agent Tool Included with Unimodem V
 
+{% raw %}
+
 	Article: Q140514
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -72,3 +74,5 @@ permalink: /kb/140/Q140514/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103477/
 
 ## Q103477: ProComm Plus Downloads Slowly Using Zmodem in Windows NT
 
+{% raw %}
+
 	Article: Q103477
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -66,3 +68,5 @@ permalink: /kb/103/Q103477/
 	
 	=============================================================================
 	
+
+{% endraw %}

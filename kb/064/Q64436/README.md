@@ -6,6 +6,8 @@ permalink: /kb/064/Q64436/
 
 ## Q64436: mktime() Function Does Not Flag Invalid Dates Before 1970
 
+{% raw %}
+
 	Article: Q64436
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -46,3 +48,5 @@ permalink: /kb/064/Q64436/
 	Microsoft has confirmed this to be a problem in C version 6.00 and in
 	QuickC versions 2.50 and 2.51. We are researching this problem and
 	will post new information here as it becomes available.
+
+{% endraw %}

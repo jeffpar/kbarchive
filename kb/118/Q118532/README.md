@@ -6,6 +6,8 @@ permalink: /kb/118/Q118532/
 
 ## Q118532: SNADS: Attachments Result in Separate Messages
 
+{% raw %}
+
 	Article: Q118532
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1
@@ -56,3 +58,5 @@ permalink: /kb/118/Q118532/
 	
 	=============================================================================
 	
+
+{% endraw %}

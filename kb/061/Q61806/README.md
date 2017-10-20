@@ -6,6 +6,8 @@ permalink: /kb/061/Q61806/
 
 ## Q61806: BIOS Equipment-List Word
 
+{% raw %}
+
 	Article: Q61806
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -84,3 +86,5 @@ permalink: /kb/061/Q61806/
 	
 	=============================================================================
 	
+
+{% endraw %}

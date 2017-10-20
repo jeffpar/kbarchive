@@ -6,6 +6,8 @@ permalink: /kb/235/Q235336/
 
 ## Q235336: MapPoint 2000 Err Msg: Too Many Fields Defined
 
+{% raw %}
+
 	Article: Q235336
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/235/Q235336/
 	
 	=============================================================================
 	
+
+{% endraw %}

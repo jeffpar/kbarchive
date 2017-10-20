@@ -6,6 +6,8 @@ permalink: /kb/085/Q85918/
 
 ## Q85918: TI Travelmate 3000 May Have Distorted Display During Setup
 
+{% raw %}
+
 	Article: Q85918
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/085/Q85918/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173398/
 
 ## Q173398: SNA Win 3.x Application Fails over WinNT Client Thunking DLLs
 
+{% raw %}
+
 	Article: Q173398
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 (all SP),3.0 (all SP)
@@ -88,3 +90,5 @@ permalink: /kb/173/Q173398/
 	
 	=============================================================================
 	
+
+{% endraw %}

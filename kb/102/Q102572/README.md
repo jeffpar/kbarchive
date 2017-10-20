@@ -6,6 +6,8 @@ permalink: /kb/102/Q102572/
 
 ## Q102572: Changes Between Win 3.1 and WFW 3.1 Versions of DDEML
 
+{% raw %}
+
 	Article: Q102572
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -68,3 +70,5 @@ permalink: /kb/102/Q102572/
 	
 	=============================================================================
 	
+
+{% endraw %}

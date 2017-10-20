@@ -6,6 +6,8 @@ permalink: /kb/156/Q156301/
 
 ## Q156301: INFO: STL Sample for the partition Function
 
+{% raw %}
+
 	Article: Q156301
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -167,3 +169,5 @@ permalink: /kb/156/Q156301/
 	
 	=============================================================================
 	
+
+{% endraw %}

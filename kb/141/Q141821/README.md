@@ -6,6 +6,8 @@ permalink: /kb/141/Q141821/
 
 ## Q141821: 3D Movie Maker: How to Improve Performance
 
+{% raw %}
+
 	Article: Q141821
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -87,3 +89,5 @@ permalink: /kb/141/Q141821/
 	
 	=============================================================================
 	
+
+{% endraw %}

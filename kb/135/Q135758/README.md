@@ -6,6 +6,8 @@ permalink: /kb/135/Q135758/
 
 ## Q135758: PRB: Long Field Names Interfere with the Append Command
 
+{% raw %}
+
 	Article: Q135758
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -94,3 +96,5 @@ permalink: /kb/135/Q135758/
 	
 	=============================================================================
 	
+
+{% endraw %}

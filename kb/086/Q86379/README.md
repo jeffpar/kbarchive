@@ -6,6 +6,8 @@ permalink: /kb/086/Q86379/
 
 ## Q86379: PC WSPlus: Auto-Pick Picks 1-Hour Slot for Appointment
 
+{% raw %}
+
 	Article: Q86379
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -41,3 +43,5 @@ permalink: /kb/086/Q86379/
 	
 	=============================================================================
 	
+
+{% endraw %}

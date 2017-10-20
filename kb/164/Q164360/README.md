@@ -6,6 +6,8 @@ permalink: /kb/164/Q164360/
 
 ## Q164360: FIX: Error &quot;OLE Error Code 0x80080005 Server Execution Failed&quot;
 
+{% raw %}
+
 	Article: Q164360
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b 5.00
@@ -92,3 +94,5 @@ permalink: /kb/164/Q164360/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170288/
 
 ## Q170288: CMWAIT Returns Incorrectly After Canceling CMALLC
 
+{% raw %}
+
 	Article: Q170288
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
@@ -96,3 +98,5 @@ permalink: /kb/170/Q170288/
 	
 	=============================================================================
 	
+
+{% endraw %}

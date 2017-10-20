@@ -6,6 +6,8 @@ permalink: /kb/301/Q301462/
 
 ## Q301462: RDP High Encryption Unavailable with French (Standard) Locale
 
+{% raw %}
+
 	Article: Q301462
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6
@@ -92,3 +94,5 @@ permalink: /kb/301/Q301462/
 	
 	=============================================================================
 	
+
+{% endraw %}

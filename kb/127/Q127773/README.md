@@ -6,6 +6,8 @@ permalink: /kb/127/Q127773/
 
 ## Q127773: NetWare Execute-Only Attribute Not Supported
 
+{% raw %}
+
 	Article: Q127773
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/127/Q127773/
 	
 	=============================================================================
 	
+
+{% endraw %}

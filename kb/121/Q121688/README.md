@@ -6,6 +6,8 @@ permalink: /kb/121/Q121688/
 
 ## Q121688: Using the ThrustMaster WCS with Space Simulator
 
+{% raw %}
+
 	Article: Q121688
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -60,3 +62,5 @@ permalink: /kb/121/Q121688/
 	
 	=============================================================================
 	
+
+{% endraw %}

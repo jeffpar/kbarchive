@@ -6,6 +6,8 @@ permalink: /kb/073/Q73308/
 
 ## Q73308: BUG: Class Must Be Listed Last in Full Segment Definitions
 
+{% raw %}
+
 	Article: Q73308
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -75,3 +77,5 @@ permalink: /kb/073/Q73308/
 	
 	=============================================================================
 	
+
+{% endraw %}

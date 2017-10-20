@@ -6,6 +6,8 @@ permalink: /kb/121/Q121068/
 
 ## Q121068: When Removing Read-Only Directory, No Warning Message Appears
 
+{% raw %}
+
 	Article: Q121068
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.3x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -54,3 +56,5 @@ permalink: /kb/121/Q121068/
 	
 	=============================================================================
 	
+
+{% endraw %}

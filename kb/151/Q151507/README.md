@@ -6,6 +6,8 @@ permalink: /kb/151/Q151507/
 
 ## Q151507: MSB Ocean: How to Play the Games
 
+{% raw %}
+
 	Article: Q151507
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0,1.01
@@ -104,3 +106,5 @@ permalink: /kb/151/Q151507/
 	
 	=============================================================================
 	
+
+{% endraw %}

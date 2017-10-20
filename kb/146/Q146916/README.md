@@ -6,6 +6,8 @@ permalink: /kb/146/Q146916/
 
 ## Q146916: HOWTO: Create a Modeless CPropertySheet with Standard Buttons
 
+{% raw %}
+
 	Article: Q146916
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/146/Q146916/
 	
 	=============================================================================
 	
+
+{% endraw %}

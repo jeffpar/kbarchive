@@ -6,6 +6,8 @@ permalink: /kb/151/Q151223/
 
 ## Q151223: Network Applications Database (NAD) Share Point Corruption
 
+{% raw %}
+
 	Article: Q151223
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -90,3 +92,5 @@ permalink: /kb/151/Q151223/
 	
 	=============================================================================
 	
+
+{% endraw %}

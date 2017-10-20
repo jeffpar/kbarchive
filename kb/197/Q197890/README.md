@@ -6,6 +6,8 @@ permalink: /kb/197/Q197890/
 
 ## Q197890: Cannot Overwrite ISAPI Extensions in Stopped Web Site
 
+{% raw %}
+
 	Article: Q197890
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/197/Q197890/
 	
 	=============================================================================
 	
+
+{% endraw %}

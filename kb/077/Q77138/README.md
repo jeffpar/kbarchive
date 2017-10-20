@@ -6,6 +6,8 @@ permalink: /kb/077/Q77138/
 
 ## Q77138: Line Numbers for MASM Listing Files
 
+{% raw %}
+
 	Article: Q77138
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.1,5.1a,6.0,6.0a,6.0b
@@ -60,3 +62,5 @@ permalink: /kb/077/Q77138/
 	
 	=============================================================================
 	
+
+{% endraw %}

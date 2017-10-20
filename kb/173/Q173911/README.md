@@ -6,6 +6,8 @@ permalink: /kb/173/Q173911/
 
 ## Q173911: XWEB: Received Column Off-Screen by Default in Win16 Client
 
+{% raw %}
+
 	Article: Q173911
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -57,3 +59,5 @@ permalink: /kb/173/Q173911/
 	
 	=============================================================================
 	
+
+{% endraw %}

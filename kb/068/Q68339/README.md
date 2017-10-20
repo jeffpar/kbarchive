@@ -6,6 +6,8 @@ permalink: /kb/068/Q68339/
 
 ## Q68339: ISAM Files Cannot Be Opened by Multiple Networked Workstations
 
+{% raw %}
+
 	Article: Q68339
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.10
@@ -35,3 +37,5 @@ permalink: /kb/068/Q68339/
 	support multiuser ISAM, query on the following:
 	
 	   why and BASIC and multiuser and ISAM
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191286/
 
 ## Q191286: XFOR: Notes Connector Crashes When Importing Too-Long Field
 
+{% raw %}
+
 	Article: Q191286
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -69,3 +71,5 @@ permalink: /kb/191/Q191286/
 	
 	=============================================================================
 	
+
+{% endraw %}

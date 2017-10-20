@@ -6,6 +6,8 @@ permalink: /kb/064/Q64428/
 
 ## Q64428: Assembly Function Returning Variable-Length String to BASIC
 
+{% raw %}
+
 	Article: Q64428
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -105,3 +107,5 @@ permalink: /kb/064/Q64428/
 	   a
 	   aa
 	   aaa
+
+{% endraw %}

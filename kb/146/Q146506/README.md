@@ -6,6 +6,8 @@ permalink: /kb/146/Q146506/
 
 ## Q146506: WD97: After Save As, Original Doc Unavailable to Other Programs
 
+{% raw %}
+
 	Article: Q146506
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/146/Q146506/
 	
 	=============================================================================
 	
+
+{% endraw %}

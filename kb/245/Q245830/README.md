@@ -6,6 +6,8 @@ permalink: /kb/245/Q245830/
 
 ## Q245830: XCLN: Using the Outlook LDAP Service to View Global Address List
 
+{% raw %}
+
 	Article: Q245830
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -62,3 +64,5 @@ permalink: /kb/245/Q245830/
 	
 	=============================================================================
 	
+
+{% endraw %}

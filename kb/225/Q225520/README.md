@@ -6,6 +6,8 @@ permalink: /kb/225/Q225520/
 
 ## Q225520: SMS Installer Uses Short-Date Format from Regional Settings
 
+{% raw %}
+
 	Article: Q225520
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0
@@ -53,3 +55,5 @@ permalink: /kb/225/Q225520/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137241/
 
 ## Q137241: CPU Type Information Different in Windows NT Diagnostics
 
+{% raw %}
+
 	Article: Q137241
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -36,3 +38,5 @@ permalink: /kb/137/Q137241/
 	
 	=============================================================================
 	
+
+{% endraw %}

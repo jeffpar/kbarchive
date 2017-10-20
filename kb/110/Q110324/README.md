@@ -6,6 +6,8 @@ permalink: /kb/110/Q110324/
 
 ## Q110324: Writer: Spelling Checker Does Not Recognize All Caps
 
+{% raw %}
+
 	Article: Q110324
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -82,3 +84,5 @@ permalink: /kb/110/Q110324/
 	
 	=============================================================================
 	
+
+{% endraw %}

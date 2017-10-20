@@ -6,6 +6,8 @@ permalink: /kb/094/Q94873/
 
 ## Q94873: GP Fault with More Windows by Aristosoft
 
+{% raw %}
+
 	Article: Q94873
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/094/Q94873/
 	
 	=============================================================================
 	
+
+{% endraw %}

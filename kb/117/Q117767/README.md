@@ -6,6 +6,8 @@ permalink: /kb/117/Q117767/
 
 ## Q117767: ADT2: &quot;Error Occurred in WriteSTF&quot; Error Msg in Setup Wizard
 
+{% raw %}
+
 	Article: Q117767
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -110,3 +112,5 @@ permalink: /kb/117/Q117767/
 	
 	=============================================================================
 	
+
+{% endraw %}

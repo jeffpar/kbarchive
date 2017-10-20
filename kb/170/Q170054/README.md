@@ -6,6 +6,8 @@ permalink: /kb/170/Q170054/
 
 ## Q170054: XCON: Read Receipt May Not Be Returned From ISOCOR MTA
 
+{% raw %}
+
 	Article: Q170054
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/170/Q170054/
 	
 	=============================================================================
 	
+
+{% endraw %}

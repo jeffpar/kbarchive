@@ -6,6 +6,8 @@ permalink: /kb/137/Q137343/
 
 ## Q137343: INFO: VB Automation of Visual C++ Server Using OBJ1.OBJ2.prop Sy
 
+{% raw %}
+
 	Article: Q137343
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1
@@ -130,3 +132,5 @@ permalink: /kb/137/Q137343/
 	
 	=============================================================================
 	
+
+{% endraw %}

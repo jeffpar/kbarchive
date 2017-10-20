@@ -6,6 +6,8 @@ permalink: /kb/221/Q221624/
 
 ## Q221624: FIX:Extra EOF Char Inserted with SELECT Within Transaction
 
+{% raw %}
+
 	Article: Q221624
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -141,3 +143,5 @@ permalink: /kb/221/Q221624/
 	
 	=============================================================================
 	
+
+{% endraw %}

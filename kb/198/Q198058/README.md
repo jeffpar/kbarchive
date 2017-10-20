@@ -6,6 +6,8 @@ permalink: /kb/198/Q198058/
 
 ## Q198058: WD97: Word Truncates Your User Information Mailing Address
 
+{% raw %}
+
 	Article: Q198058
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/198/Q198058/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130408/
 
 ## Q130408: How to Create a Wallpaper Effect in Visual FoxPro
 
+{% raw %}
+
 	Article: Q130408
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -70,3 +72,5 @@ permalink: /kb/130/Q130408/
 	
 	=============================================================================
 	
+
+{% endraw %}

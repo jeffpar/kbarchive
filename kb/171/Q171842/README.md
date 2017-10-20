@@ -6,6 +6,8 @@ permalink: /kb/171/Q171842/
 
 ## Q171842: FIX: GetSetting Function Is Leaking Handles
 
+{% raw %}
+
 	Article: Q171842
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -109,3 +111,5 @@ permalink: /kb/171/Q171842/
 	
 	=============================================================================
 	
+
+{% endraw %}

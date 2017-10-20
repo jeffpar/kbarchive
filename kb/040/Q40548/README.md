@@ -6,6 +6,8 @@ permalink: /kb/040/Q40548/
 
 ## Q40548: Using CALL INTERRUPT to Determine Current Video Mode
 
+{% raw %}
+
 	Article: Q40548
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -72,3 +74,5 @@ permalink: /kb/040/Q40548/
 	  CALL INTERRUPT(&H10, InRegs, OutRegs)
 	  GetVMode% = OutRegs.ax AND 255       'AL returns the Video Mode
 	END FUNCTION
+
+{% endraw %}

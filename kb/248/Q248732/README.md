@@ -6,6 +6,8 @@ permalink: /kb/248/Q248732/
 
 ## Q248732: XCON: MTA Stops Processing While Handling Incoming Mail
 
+{% raw %}
+
 	Article: Q248732
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -79,3 +81,5 @@ permalink: /kb/248/Q248732/
 	
 	=============================================================================
 	
+
+{% endraw %}

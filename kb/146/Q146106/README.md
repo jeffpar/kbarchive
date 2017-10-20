@@ -6,6 +6,8 @@ permalink: /kb/146/Q146106/
 
 ## Q146106: Using IBMTOK.DOS on Fast Computers Results In Error 36
 
+{% raw %}
+
 	Article: Q146106
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/146/Q146106/
 	
 	=============================================================================
 	
+
+{% endraw %}

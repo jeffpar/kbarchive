@@ -6,6 +6,8 @@ permalink: /kb/235/Q235448/
 
 ## Q235448: XGEN: Updates to the Exchange Server 5.5 SP3 GroupWise Connector
 
+{% raw %}
+
 	Article: Q235448
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -36,3 +38,5 @@ permalink: /kb/235/Q235448/
 	
 	=============================================================================
 	
+
+{% endraw %}

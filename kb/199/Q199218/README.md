@@ -6,6 +6,8 @@ permalink: /kb/199/Q199218/
 
 ## Q199218: Error Invoking the Security Editor
 
+{% raw %}
+
 	Article: Q199218
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/199/Q199218/
 	
 	=============================================================================
 	
+
+{% endraw %}

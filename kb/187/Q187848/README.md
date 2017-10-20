@@ -6,6 +6,8 @@ permalink: /kb/187/Q187848/
 
 ## Q187848: XWEB: Comic Sans Font in Meeting Requests
 
+{% raw %}
+
 	Article: Q187848
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -43,3 +45,5 @@ permalink: /kb/187/Q187848/
 	
 	=============================================================================
 	
+
+{% endraw %}

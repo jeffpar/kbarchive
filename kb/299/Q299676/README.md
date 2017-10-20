@@ -6,6 +6,8 @@ permalink: /kb/299/Q299676/
 
 ## Q299676: XADM: Event Service May Not Start with Event ID 5 Message
 
+{% raw %}
+
 	Article: Q299676
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -95,3 +97,5 @@ permalink: /kb/299/Q299676/
 	
 	=============================================================================
 	
+
+{% endraw %}

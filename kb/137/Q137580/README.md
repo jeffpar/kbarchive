@@ -6,6 +6,8 @@ permalink: /kb/137/Q137580/
 
 ## Q137580: Compaq Computers That May Require Updates for Windows 95
 
+{% raw %}
+
 	Article: Q137580
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -83,3 +85,5 @@ permalink: /kb/137/Q137580/
 	
 	=============================================================================
 	
+
+{% endraw %}

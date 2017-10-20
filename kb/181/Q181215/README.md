@@ -6,6 +6,8 @@ permalink: /kb/181/Q181215/
 
 ## Q181215: Unable to Pass Query String Which Contains &quot;=&quot; to CGI Program
 
+{% raw %}
+
 	Article: Q181215
 	Product(s): Internet Information Server
 	Version(s): WINNT: 3.0,4.0
@@ -65,3 +67,5 @@ permalink: /kb/181/Q181215/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163910/
 
 ## Q163910: WD97: Returned Height for Inline Shape Different from Specified
 
+{% raw %}
+
 	Article: Q163910
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/163/Q163910/
 	
 	=============================================================================
 	
+
+{% endraw %}

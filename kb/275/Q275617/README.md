@@ -6,6 +6,8 @@ permalink: /kb/275/Q275617/
 
 ## Q275617: SMS: Inbox Mgr Can't Remove Inboxlck.tok; Stops Software Distrib
 
+{% raw %}
+
 	Article: Q275617
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -168,3 +170,5 @@ permalink: /kb/275/Q275617/
 	
 	=============================================================================
 	
+
+{% endraw %}

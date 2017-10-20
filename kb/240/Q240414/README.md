@@ -6,6 +6,8 @@ permalink: /kb/240/Q240414/
 
 ## Q240414: Desktop Link to Local Folder Does Not Work After Installing SP5
 
+{% raw %}
+
 	Article: Q240414
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP5
@@ -86,3 +88,5 @@ permalink: /kb/240/Q240414/
 	
 	=============================================================================
 	
+
+{% endraw %}

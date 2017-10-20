@@ -6,6 +6,8 @@ permalink: /kb/082/Q82947/
 
 ## Q82947: Printing with Additional COM Ports
 
+{% raw %}
+
 	Article: Q82947
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/082/Q82947/
 	
 	=============================================================================
 	
+
+{% endraw %}

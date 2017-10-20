@@ -6,6 +6,8 @@ permalink: /kb/117/Q117738/
 
 ## Q117738: PC Adm: IMPORT.EXE Does Not Recover from Reset CONTROL.GLB
 
+{% raw %}
+
 	Article: Q117738
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -102,3 +104,5 @@ permalink: /kb/117/Q117738/
 	
 	=============================================================================
 	
+
+{% endraw %}

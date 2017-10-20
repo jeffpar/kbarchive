@@ -6,6 +6,8 @@ permalink: /kb/231/Q231578/
 
 ## Q231578: FIX: Hosting a WebBrowser Control in an MFC Container ASSERTs
 
+{% raw %}
+
 	Article: Q231578
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -92,3 +94,5 @@ permalink: /kb/231/Q231578/
 	
 	=============================================================================
 	
+
+{% endraw %}

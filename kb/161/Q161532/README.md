@@ -6,6 +6,8 @@ permalink: /kb/161/Q161532/
 
 ## Q161532: PPT7: Importing Freelance 96 Presentations into PowerPoint
 
+{% raw %}
+
 	Article: Q161532
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -95,3 +97,5 @@ permalink: /kb/161/Q161532/
 	
 	=============================================================================
 	
+
+{% endraw %}

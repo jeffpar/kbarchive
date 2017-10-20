@@ -6,6 +6,8 @@ permalink: /kb/166/Q166059/
 
 ## Q166059: WV: Documents Open in Word, Not Word Viewer, on Windows NT 3.51
 
+{% raw %}
+
 	Article: Q166059
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/166/Q166059/
 	
 	=============================================================================
 	
+
+{% endraw %}

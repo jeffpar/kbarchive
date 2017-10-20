@@ -6,6 +6,8 @@ permalink: /kb/158/Q158813/
 
 ## Q158813: Cannot Connect to Personal Web Server from Remote System
 
+{% raw %}
+
 	Article: Q158813
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.0,1.0a
@@ -53,3 +55,5 @@ permalink: /kb/158/Q158813/
 	
 	=============================================================================
 	
+
+{% endraw %}

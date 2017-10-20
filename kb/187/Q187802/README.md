@@ -6,6 +6,8 @@ permalink: /kb/187/Q187802/
 
 ## Q187802: DHCP Assigns &quot;Bad_Address&quot; to &quot;Host Unreachable&quot;
 
+{% raw %}
+
 	Article: Q187802
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -130,3 +132,5 @@ permalink: /kb/187/Q187802/
 	
 	=============================================================================
 	
+
+{% endraw %}

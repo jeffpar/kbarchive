@@ -6,6 +6,8 @@ permalink: /kb/201/Q201641/
 
 ## Q201641: FIX: Euro Symbol in ODL/IDL File Causes Visual C++ IDE to Freeze
 
+{% raw %}
+
 	Article: Q201641
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -59,3 +61,5 @@ permalink: /kb/201/Q201641/
 	
 	=============================================================================
 	
+
+{% endraw %}

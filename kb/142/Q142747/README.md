@@ -6,6 +6,8 @@ permalink: /kb/142/Q142747/
 
 ## Q142747: How to Disable Password Caching with the MS Service for NDS
 
+{% raw %}
+
 	Article: Q142747
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/142/Q142747/
 	
 	=============================================================================
 	
+
+{% endraw %}

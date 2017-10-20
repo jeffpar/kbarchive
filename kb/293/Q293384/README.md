@@ -6,6 +6,8 @@ permalink: /kb/293/Q293384/
 
 ## Q293384: Screen Goes Black Shortly After Signing In To MSN Explorer
 
+{% raw %}
+
 	Article: Q293384
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -52,3 +54,5 @@ permalink: /kb/293/Q293384/
 	
 	=============================================================================
 	
+
+{% endraw %}

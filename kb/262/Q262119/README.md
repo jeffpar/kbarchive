@@ -6,6 +6,8 @@ permalink: /kb/262/Q262119/
 
 ## Q262119: XCON: Information on Imsext.dll Event IDs
 
+{% raw %}
+
 	Article: Q262119
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -103,3 +105,5 @@ permalink: /kb/262/Q262119/
 	
 	=============================================================================
 	
+
+{% endraw %}

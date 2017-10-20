@@ -6,6 +6,8 @@ permalink: /kb/157/Q157835/
 
 ## Q157835: English Excel Worksheet Used Instead of German
 
+{% raw %}
+
 	Article: Q157835
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/157/Q157835/
 	
 	=============================================================================
 	
+
+{% endraw %}

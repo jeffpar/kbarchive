@@ -6,6 +6,8 @@ permalink: /kb/158/Q158763/
 
 ## Q158763: FIX: Server Out of Memory when Inserting into Text/Image Fields
 
+{% raw %}
+
 	Article: Q158763
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,2.65
@@ -61,3 +63,5 @@ permalink: /kb/158/Q158763/
 	
 	=============================================================================
 	
+
+{% endraw %}

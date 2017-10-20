@@ -6,6 +6,8 @@ permalink: /kb/132/Q132052/
 
 ## Q132052: Purpose of FOXRSTRT.EXE &amp; How to Troubleshoot Problems
 
+{% raw %}
+
 	Article: Q132052
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/132/Q132052/
 	
 	=============================================================================
 	
+
+{% endraw %}

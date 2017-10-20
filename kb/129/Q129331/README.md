@@ -6,6 +6,8 @@ permalink: /kb/129/Q129331/
 
 ## Q129331: How to Preserve Index Expressions to Rebuild CDX and Tags
 
+{% raw %}
+
 	Article: Q129331
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 2.60 2.60a 3.00| 2.5x 2.60
@@ -130,3 +132,5 @@ permalink: /kb/129/Q129331/
 	
 	=============================================================================
 	
+
+{% endraw %}

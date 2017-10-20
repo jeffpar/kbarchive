@@ -6,6 +6,8 @@ permalink: /kb/173/Q173950/
 
 ## Q173950: Err Msg: Guide.exe Caused an Invalid Page Fault in Module...
 
+{% raw %}
+
 	Article: Q173950
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,95
@@ -91,3 +93,5 @@ permalink: /kb/173/Q173950/
 	
 	=============================================================================
 	
+
+{% endraw %}

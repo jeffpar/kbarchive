@@ -6,6 +6,8 @@ permalink: /kb/177/Q177409/
 
 ## Q177409: BUG: &quot;Failed to Reload Project&quot; Error When Checking In VB File
 
+{% raw %}
+
 	Article: Q177409
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -114,3 +116,5 @@ permalink: /kb/177/Q177409/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160838/
 
 ## Q160838: FP97: Cancel Operation Fails When Renaming Files, Folders
 
+{% raw %}
+
 	Article: Q160838
 	Product(s): Word Front Page
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/160/Q160838/
 	
 	=============================================================================
 	
+
+{% endraw %}

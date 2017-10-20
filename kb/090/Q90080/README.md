@@ -6,6 +6,8 @@ permalink: /kb/090/Q90080/
 
 ## Q90080: General Protection Fault in Module FLSYS30.DLL
 
+{% raw %}
+
 	Article: Q90080
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/090/Q90080/
 	
 	=============================================================================
 	
+
+{% endraw %}

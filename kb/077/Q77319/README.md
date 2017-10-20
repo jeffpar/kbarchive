@@ -6,6 +6,8 @@ permalink: /kb/077/Q77319/
 
 ## Q77319: Setup Detects Disk Manager Partitions
 
+{% raw %}
+
 	Article: Q77319
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -111,3 +113,5 @@ permalink: /kb/077/Q77319/
 	
 	=============================================================================
 	
+
+{% endraw %}

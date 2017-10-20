@@ -6,6 +6,8 @@ permalink: /kb/131/Q131503/
 
 ## Q131503: How to Delay Start of Program Manager For Logon Scripts
 
+{% raw %}
+
 	Article: Q131503
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/131/Q131503/
 	
 	=============================================================================
 	
+
+{% endraw %}

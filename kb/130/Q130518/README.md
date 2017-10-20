@@ -6,6 +6,8 @@ permalink: /kb/130/Q130518/
 
 ## Q130518: User-Level Security Prevents Point and Print Functionality
 
+{% raw %}
+
 	Article: Q130518
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -85,3 +87,5 @@ permalink: /kb/130/Q130518/
 	
 	=============================================================================
 	
+
+{% endraw %}

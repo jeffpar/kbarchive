@@ -6,6 +6,8 @@ permalink: /kb/074/Q74422/
 
 ## Q74422: MS-DOS Does Not Upgrade from Compaq DOS 2.11
 
+{% raw %}
+
 	Article: Q74422
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -59,3 +61,5 @@ permalink: /kb/074/Q74422/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129906/
 
 ## Q129906: PRB: Listbox Not Properly Redrawn in Design Mode
 
+{% raw %}
+
 	Article: Q129906
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -81,3 +83,5 @@ permalink: /kb/129/Q129906/
 	
 	=============================================================================
 	
+
+{% endraw %}

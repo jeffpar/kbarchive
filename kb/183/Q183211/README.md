@@ -6,6 +6,8 @@ permalink: /kb/183/Q183211/
 
 ## Q183211: FIX: Assert in AtlCtl.cpp, Line 121
 
+{% raw %}
+
 	Article: Q183211
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0,2.1
@@ -75,3 +77,5 @@ permalink: /kb/183/Q183211/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248730/
 
 ## Q248730: Terminal Server Reboots 15 Minutes After Being Shut Down
 
+{% raw %}
+
 	Article: Q248730
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -85,3 +87,5 @@ permalink: /kb/248/Q248730/
 	
 	=============================================================================
 	
+
+{% endraw %}

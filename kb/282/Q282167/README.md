@@ -6,6 +6,8 @@ permalink: /kb/282/Q282167/
 
 ## Q282167: Microsoft Plus! Game Pack: Minimum Requirements
 
+{% raw %}
+
 	Article: Q282167
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/282/Q282167/
 	
 	=============================================================================
 	
+
+{% endraw %}

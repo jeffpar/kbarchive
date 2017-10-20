@@ -6,6 +6,8 @@ permalink: /kb/239/Q239103/
 
 ## Q239103: PRB: Synonyms of DBLinked Tables Do Not Show in Data View Window
 
+{% raw %}
+
 	Article: Q239103
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -87,3 +89,5 @@ permalink: /kb/239/Q239103/
 	
 	=============================================================================
 	
+
+{% endraw %}

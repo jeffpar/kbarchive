@@ -6,6 +6,8 @@ permalink: /kb/255/Q255820/
 
 ## Q255820: SMS: SMS_NT_Logon_Server_Manager Component Is Now Multithreaded
 
+{% raw %}
+
 	Article: Q255820
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -91,3 +93,5 @@ permalink: /kb/255/Q255820/
 	
 	=============================================================================
 	
+
+{% endraw %}

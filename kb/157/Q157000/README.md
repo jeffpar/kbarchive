@@ -6,6 +6,8 @@ permalink: /kb/157/Q157000/
 
 ## Q157000: XFOR: Korean UUENCODED Attachments Corrupted
 
+{% raw %}
+
 	Article: Q157000
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/157/Q157000/
 	
 	=============================================================================
 	
+
+{% endraw %}

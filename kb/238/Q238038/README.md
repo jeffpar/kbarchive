@@ -6,6 +6,8 @@ permalink: /kb/238/Q238038/
 
 ## Q238038: Reference 2000: Error Message Contains Wrong System Requirements
 
+{% raw %}
+
 	Article: Q238038
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/238/Q238038/
 	
 	=============================================================================
 	
+
+{% endraw %}

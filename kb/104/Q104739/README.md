@@ -6,6 +6,8 @@ permalink: /kb/104/Q104739/
 
 ## Q104739: Apps and Copying Files to Floppy Seem Slow with Automount
 
+{% raw %}
+
 	Article: Q104739
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -60,3 +62,5 @@ permalink: /kb/104/Q104739/
 	
 	=============================================================================
 	
+
+{% endraw %}

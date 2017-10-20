@@ -6,6 +6,8 @@ permalink: /kb/193/Q193736/
 
 ## Q193736: WD97: HTML Converter Disappears After Installing IE 4.01 on SR2
 
+{% raw %}
+
 	Article: Q193736
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 2
@@ -165,3 +167,5 @@ permalink: /kb/193/Q193736/
 	
 	=============================================================================
 	
+
+{% endraw %}

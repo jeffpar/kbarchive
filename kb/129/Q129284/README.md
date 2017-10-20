@@ -6,6 +6,8 @@ permalink: /kb/129/Q129284/
 
 ## Q129284: Automated Setup Does Not Install BDC
 
+{% raw %}
+
 	Article: Q129284
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -67,3 +69,5 @@ permalink: /kb/129/Q129284/
 	
 	=============================================================================
 	
+
+{% endraw %}

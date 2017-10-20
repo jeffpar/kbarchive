@@ -6,6 +6,8 @@ permalink: /kb/242/Q242221/
 
 ## Q242221: XGEN: List of Bugs Fixed in Exchange Server 5.5 Service Pack 1
 
+{% raw %}
+
 	Article: Q242221
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP1
@@ -315,3 +317,5 @@ permalink: /kb/242/Q242221/
 	
 	=============================================================================
 	
+
+{% endraw %}

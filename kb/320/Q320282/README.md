@@ -6,6 +6,8 @@ permalink: /kb/320/Q320282/
 
 ## Q320282: FP: No Option to Use Passive-Mode FTP in FrontPage Publishing
 
+{% raw %}
+
 	Article: Q320282
 	Product(s): Word Front Page
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/320/Q320282/
 	
 	=============================================================================
 	
+
+{% endraw %}

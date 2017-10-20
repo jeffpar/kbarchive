@@ -6,6 +6,8 @@ permalink: /kb/275/Q275005/
 
 ## Q275005: CFS2: List of New Features Included in Combat Flight Simulator 2
 
+{% raw %}
+
 	Article: Q275005
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -123,3 +125,5 @@ permalink: /kb/275/Q275005/
 	
 	=============================================================================
 	
+
+{% endraw %}

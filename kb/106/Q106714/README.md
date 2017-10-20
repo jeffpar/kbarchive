@@ -6,6 +6,8 @@ permalink: /kb/106/Q106714/
 
 ## Q106714: NET Command Returns Error in VM While Network Setup Is Active
 
+{% raw %}
+
 	Article: Q106714
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -49,3 +51,5 @@ permalink: /kb/106/Q106714/
 	
 	=============================================================================
 	
+
+{% endraw %}

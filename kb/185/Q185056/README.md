@@ -6,6 +6,8 @@ permalink: /kb/185/Q185056/
 
 ## Q185056: WD97: Incorrect Formula Results Using ABOVE, BELOW, LEFT, RIGHT
 
+{% raw %}
+
 	Article: Q185056
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -130,3 +132,5 @@ permalink: /kb/185/Q185056/
 	
 	=============================================================================
 	
+
+{% endraw %}

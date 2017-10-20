@@ -6,6 +6,8 @@ permalink: /kb/136/Q136622/
 
 ## Q136622: RPC Applications Hang: Computer Name Greater Than 15 Characters
 
+{% raw %}
+
 	Article: Q136622
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -44,3 +46,5 @@ permalink: /kb/136/Q136622/
 	
 	=============================================================================
 	
+
+{% endraw %}

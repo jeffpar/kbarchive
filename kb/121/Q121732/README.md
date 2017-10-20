@@ -6,6 +6,8 @@ permalink: /kb/121/Q121732/
 
 ## Q121732: PC Ext: Failure Delivering User Mail Due to Mailbag Contention
 
+{% raw %}
+
 	Article: Q121732
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -81,3 +83,5 @@ permalink: /kb/121/Q121732/
 	
 	=============================================================================
 	
+
+{% endraw %}

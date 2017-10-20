@@ -6,6 +6,8 @@ permalink: /kb/193/Q193690/
 
 ## Q193690: Wildcard Certificate Rule Mappings Disappear
 
+{% raw %}
+
 	Article: Q193690
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -73,3 +75,5 @@ permalink: /kb/193/Q193690/
 	
 	=============================================================================
 	
+
+{% endraw %}

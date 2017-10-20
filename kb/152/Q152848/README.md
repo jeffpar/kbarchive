@@ -6,6 +6,8 @@ permalink: /kb/152/Q152848/
 
 ## Q152848: XADM: IS Service Fails With Specific Error 429496676
 
+{% raw %}
+
 	Article: Q152848
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -43,3 +45,5 @@ permalink: /kb/152/Q152848/
 	
 	=============================================================================
 	
+
+{% endraw %}

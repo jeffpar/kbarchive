@@ -6,6 +6,8 @@ permalink: /kb/117/Q117324/
 
 ## Q117324: Dependencies May Not Be Updated as Expected
 
+{% raw %}
+
 	Article: Q117324
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/117/Q117324/
 	
 	=============================================================================
 	
+
+{% endraw %}

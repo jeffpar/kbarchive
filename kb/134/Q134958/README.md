@@ -6,6 +6,8 @@ permalink: /kb/134/Q134958/
 
 ## Q134958: WINS Errors 4204, 4294, and 7023 are Logged
 
+{% raw %}
+
 	Article: Q134958
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -59,3 +61,5 @@ permalink: /kb/134/Q134958/
 	
 	=============================================================================
 	
+
+{% endraw %}

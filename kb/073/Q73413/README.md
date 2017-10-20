@@ -6,6 +6,8 @@ permalink: /kb/073/Q73413/
 
 ## Q73413: Default CONFIG.SYS and AUTOEXEC.BAT on MS-DOS 5.0 Working Disk
 
+{% raw %}
+
 	Article: Q73413
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -74,3 +76,5 @@ permalink: /kb/073/Q73413/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72812/
 
 ## Q72812: Multimedia Installable Driver SYSTEM.INI Entries
 
+{% raw %}
+
 	Article: Q72812
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -56,3 +58,5 @@ permalink: /kb/072/Q72812/
 	
 	=============================================================================
 	
+
+{% endraw %}

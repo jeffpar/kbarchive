@@ -6,6 +6,8 @@ permalink: /kb/029/Q29832/
 
 ## Q29832: C 5.10 MTDYNA.DOC: Dynamic-Link Libraries
 
+{% raw %}
+
 	Article: Q29832
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -91,3 +93,5 @@ permalink: /kb/029/Q29832/
 	   are presented as external procedures that a user program can call.
 	
 	4. Linking is faster.
+
+{% endraw %}

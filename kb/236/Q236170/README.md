@@ -6,6 +6,8 @@ permalink: /kb/236/Q236170/
 
 ## Q236170: XCLN: Event Service Stops with Event ID 5
 
+{% raw %}
+
 	Article: Q236170
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -69,3 +71,5 @@ permalink: /kb/236/Q236170/
 	
 	=============================================================================
 	
+
+{% endraw %}

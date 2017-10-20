@@ -6,6 +6,8 @@ permalink: /kb/158/Q158179/
 
 ## Q158179: GEX: Improving Speed and Display Performance
 
+{% raw %}
+
 	Article: Q158179
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -99,3 +101,5 @@ permalink: /kb/158/Q158179/
 	
 	=============================================================================
 	
+
+{% endraw %}

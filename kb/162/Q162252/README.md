@@ -6,6 +6,8 @@ permalink: /kb/162/Q162252/
 
 ## Q162252: BUG: Erroneous &quot;Class Definition is Cyclical&quot; Error
 
+{% raw %}
+
 	Article: Q162252
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,6.0,7.0
@@ -81,3 +83,5 @@ permalink: /kb/162/Q162252/
 	
 	=============================================================================
 	
+
+{% endraw %}

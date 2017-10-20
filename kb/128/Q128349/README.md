@@ -6,6 +6,8 @@ permalink: /kb/128/Q128349/
 
 ## Q128349: Unable to Detect RAM Beyond 64 MB On HP Vectra XU P5/90
 
+{% raw %}
+
 	Article: Q128349
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -54,3 +56,5 @@ permalink: /kb/128/Q128349/
 	
 	=============================================================================
 	
+
+{% endraw %}

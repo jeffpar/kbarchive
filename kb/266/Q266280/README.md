@@ -6,6 +6,8 @@ permalink: /kb/266/Q266280/
 
 ## Q266280: Changing User Rights from a Batch File or Command Line
 
+{% raw %}
+
 	Article: Q266280
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -156,3 +158,5 @@ permalink: /kb/266/Q266280/
 	
 	=============================================================================
 	
+
+{% endraw %}

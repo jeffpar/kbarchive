@@ -6,6 +6,8 @@ permalink: /kb/110/Q110582/
 
 ## Q110582: SNA Server Service Stays Inactive When Started
 
+{% raw %}
+
 	Article: Q110582
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2
@@ -72,3 +74,5 @@ permalink: /kb/110/Q110582/
 	
 	=============================================================================
 	
+
+{% endraw %}

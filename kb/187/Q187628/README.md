@@ -6,6 +6,8 @@ permalink: /kb/187/Q187628/
 
 ## Q187628: Using Telnet to Test Port 3389 Functionality
 
+{% raw %}
+
 	Article: Q187628
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/187/Q187628/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138658/
 
 ## Q138658: PRB:Screen Turns Black &amp; Returns as Start Visual FoxPro or Exe
 
+{% raw %}
+
 	Article: Q138658
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -91,3 +93,5 @@ permalink: /kb/138/Q138658/
 	
 	=============================================================================
 	
+
+{% endraw %}

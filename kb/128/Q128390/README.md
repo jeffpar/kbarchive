@@ -6,6 +6,8 @@ permalink: /kb/128/Q128390/
 
 ## Q128390: Different Ways a Macintosh Can Connect Through SNA Server
 
+{% raw %}
+
 	Article: Q128390
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -89,3 +91,5 @@ permalink: /kb/128/Q128390/
 	
 	=============================================================================
 	
+
+{% endraw %}

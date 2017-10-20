@@ -6,6 +6,8 @@ permalink: /kb/062/Q62740/
 
 ## Q62740: Changing the Palette of Colors on a Nonpalette Device
 
+{% raw %}
+
 	Article: Q62740
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -83,3 +85,5 @@ permalink: /kb/062/Q62740/
 	
 	=============================================================================
 	
+
+{% endraw %}

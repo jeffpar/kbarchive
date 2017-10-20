@@ -6,6 +6,8 @@ permalink: /kb/136/Q136300/
 
 ## Q136300: Event ID 12053 or 12054 Caused by Macintosh Client Disconnect
 
+{% raw %}
+
 	Article: Q136300
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -80,3 +82,5 @@ permalink: /kb/136/Q136300/
 	
 	=============================================================================
 	
+
+{% endraw %}

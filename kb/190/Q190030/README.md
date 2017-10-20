@@ -6,6 +6,8 @@ permalink: /kb/190/Q190030/
 
 ## Q190030: BUG: FillStyle Pattern Not Visible for Shape on UserControl
 
+{% raw %}
+
 	Article: Q190030
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -77,3 +79,5 @@ permalink: /kb/190/Q190030/
 	
 	=============================================================================
 	
+
+{% endraw %}

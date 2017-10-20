@@ -6,6 +6,8 @@ permalink: /kb/189/Q189265/
 
 ## Q189265: INFO: Microsoft Graph Constants
 
+{% raw %}
+
 	Article: Q189265
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -170,3 +172,5 @@ permalink: /kb/189/Q189265/
 	
 	=============================================================================
 	
+
+{% endraw %}

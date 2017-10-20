@@ -6,6 +6,8 @@ permalink: /kb/180/Q180938/
 
 ## Q180938: Unable to Activate Multiple DLS Connections Using the Same SAP
 
+{% raw %}
+
 	Article: Q180938
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -118,3 +120,5 @@ permalink: /kb/180/Q180938/
 	
 	=============================================================================
 	
+
+{% endraw %}

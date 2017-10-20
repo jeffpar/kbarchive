@@ -6,6 +6,8 @@ permalink: /kb/241/Q241731/
 
 ## Q241731: Denial of Service Generates Error Message When Using Windows Ter
 
+{% raw %}
+
 	Article: Q241731
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -59,3 +61,5 @@ permalink: /kb/241/Q241731/
 	
 	=============================================================================
 	
+
+{% endraw %}

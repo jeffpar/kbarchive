@@ -6,6 +6,8 @@ permalink: /kb/173/Q173110/
 
 ## Q173110: ActiveX Controls Are Downloaded Every Time You Connect to MSN
 
+{% raw %}
+
 	Article: Q173110
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -60,3 +62,5 @@ permalink: /kb/173/Q173110/
 	
 	=============================================================================
 	
+
+{% endraw %}

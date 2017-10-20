@@ -6,6 +6,8 @@ permalink: /kb/158/Q158675/
 
 ## Q158675: How to Cancel CHKDSK After It Has Been Scheduled
 
+{% raw %}
+
 	Article: Q158675
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -71,3 +73,5 @@ permalink: /kb/158/Q158675/
 	
 	=============================================================================
 	
+
+{% endraw %}

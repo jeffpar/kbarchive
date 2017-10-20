@@ -6,6 +6,8 @@ permalink: /kb/051/Q51857/
 
 ## Q51857: Random Weather Winds Corrupted by Resetting Mode
 
+{% raw %}
+
 	Article: Q51857
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/051/Q51857/
 	
 	=============================================================================
 	
+
+{% endraw %}

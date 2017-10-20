@@ -6,6 +6,8 @@ permalink: /kb/181/Q181600/
 
 ## Q181600: Configuring a Secondary DNS Server with Windows NT
 
+{% raw %}
+
 	Article: Q181600
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -139,3 +141,5 @@ permalink: /kb/181/Q181600/
 	
 	=============================================================================
 	
+
+{% endraw %}

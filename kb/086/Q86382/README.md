@@ -6,6 +6,8 @@ permalink: /kb/086/Q86382/
 
 ## Q86382: PC WSPlus: Moving Appointments Off Line Gives Error Message
 
+{% raw %}
+
 	Article: Q86382
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -47,3 +49,5 @@ permalink: /kb/086/Q86382/
 	
 	=============================================================================
 	
+
+{% endraw %}

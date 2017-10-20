@@ -6,6 +6,8 @@ permalink: /kb/281/Q281084/
 
 ## Q281084: Classic Board Games: Cannot Promote Rook in Shogi Game
 
+{% raw %}
+
 	Article: Q281084
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/281/Q281084/
 	
 	=============================================================================
 	
+
+{% endraw %}

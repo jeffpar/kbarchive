@@ -6,6 +6,8 @@ permalink: /kb/247/Q247079/
 
 ## Q247079: XCLN: Create PFs and Set Default Properties on Subfolders
 
+{% raw %}
+
 	Article: Q247079
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.0 SP1,5.0 SP2,5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -86,3 +88,5 @@ permalink: /kb/247/Q247079/
 	
 	=============================================================================
 	
+
+{% endraw %}

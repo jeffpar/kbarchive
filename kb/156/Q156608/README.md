@@ -6,6 +6,8 @@ permalink: /kb/156/Q156608/
 
 ## Q156608: Err Msg: Account Unknown--Account Deleted
 
+{% raw %}
+
 	Article: Q156608
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/156/Q156608/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179432/
 
 ## Q179432: Silent Install Fails with Outlook Deployment Wizard
 
+{% raw %}
+
 	Article: Q179432
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -94,3 +96,5 @@ permalink: /kb/179/Q179432/
 	
 	=============================================================================
 	
+
+{% endraw %}

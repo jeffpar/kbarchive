@@ -6,6 +6,8 @@ permalink: /kb/140/Q140309/
 
 ## Q140309: BUG: Recordset Update Error Differs Between 16-Bit and 32-Bit
 
+{% raw %}
+
 	Article: Q140309
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -144,3 +146,5 @@ permalink: /kb/140/Q140309/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143155/
 
 ## Q143155: No Audio with Crystal Audio or SoundBlaster AWE32
 
+{% raw %}
+
 	Article: Q143155
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -163,3 +165,5 @@ permalink: /kb/143/Q143155/
 	
 	=============================================================================
 	
+
+{% endraw %}

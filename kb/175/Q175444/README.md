@@ -6,6 +6,8 @@ permalink: /kb/175/Q175444/
 
 ## Q175444: MSN 2.5 OEM Release Uninstall.txt File Contents
 
+{% raw %}
+
 	Article: Q175444
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -77,3 +79,5 @@ permalink: /kb/175/Q175444/
 	
 	=============================================================================
 	
+
+{% endraw %}

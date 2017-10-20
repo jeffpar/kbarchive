@@ -6,6 +6,8 @@ permalink: /kb/101/Q101651/
 
 ## Q101651: Can Delete Directory and Files When Files Read-Only
 
+{% raw %}
+
 	Article: Q101651
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -51,3 +53,5 @@ permalink: /kb/101/Q101651/
 	
 	=============================================================================
 	
+
+{% endraw %}

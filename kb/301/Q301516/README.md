@@ -6,6 +6,8 @@ permalink: /kb/301/Q301516/
 
 ## Q301516: MSN Explorer 6.1 Freezes When Playing Certain Media If Windows M
 
+{% raw %}
+
 	Article: Q301516
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -58,3 +60,5 @@ permalink: /kb/301/Q301516/
 	
 	=============================================================================
 	
+
+{% endraw %}

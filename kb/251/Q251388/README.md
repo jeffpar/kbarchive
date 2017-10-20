@@ -6,6 +6,8 @@ permalink: /kb/251/Q251388/
 
 ## Q251388: XCLN: Schedule+ User Calendar Opens Blank Outlook Calendar
 
+{% raw %}
+
 	Article: Q251388
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0; WINDOWS:2000,7.0a,7.5,97,98
@@ -76,3 +78,5 @@ permalink: /kb/251/Q251388/
 	
 	=============================================================================
 	
+
+{% endraw %}

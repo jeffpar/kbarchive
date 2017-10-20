@@ -6,6 +6,8 @@ permalink: /kb/084/Q84313/
 
 ## Q84313: CorelDRAW! Versions 2.x Do Not Support TrueType
 
+{% raw %}
+
 	Article: Q84313
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/084/Q84313/
 	
 	=============================================================================
 	
+
+{% endraw %}

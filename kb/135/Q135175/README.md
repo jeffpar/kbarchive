@@ -6,6 +6,8 @@ permalink: /kb/135/Q135175/
 
 ## Q135175: Cannot Use Two Xircom PCMCIA Network Cards at Once
 
+{% raw %}
+
 	Article: Q135175
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/135/Q135175/
 	
 	=============================================================================
 	
+
+{% endraw %}

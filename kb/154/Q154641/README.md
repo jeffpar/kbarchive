@@ -6,6 +6,8 @@ permalink: /kb/154/Q154641/
 
 ## Q154641: Express Meter 3.1 Causes General Protection Fault
 
+{% raw %}
+
 	Article: Q154641
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/154/Q154641/
 	
 	=============================================================================
 	
+
+{% endraw %}

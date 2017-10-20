@@ -6,6 +6,8 @@ permalink: /kb/244/Q244875/
 
 ## Q244875: SMS: How to Enable Logging for the Sms_License_Server Service
 
+{% raw %}
+
 	Article: Q244875
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -49,3 +51,5 @@ permalink: /kb/244/Q244875/
 	
 	=============================================================================
 	
+
+{% endraw %}

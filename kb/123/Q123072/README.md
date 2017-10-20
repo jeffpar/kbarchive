@@ -6,6 +6,8 @@ permalink: /kb/123/Q123072/
 
 ## Q123072: How to Use ToAscii() in Eastern European Windows
 
+{% raw %}
+
 	Article: Q123072
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -71,3 +73,5 @@ permalink: /kb/123/Q123072/
 	
 	=============================================================================
 	
+
+{% endraw %}

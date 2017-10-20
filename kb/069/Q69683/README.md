@@ -6,6 +6,8 @@ permalink: /kb/069/Q69683/
 
 ## Q69683: Packard-Bell PB1000 286 Requires PadCodeSegments=1
 
+{% raw %}
+
 	Article: Q69683
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -63,3 +65,5 @@ permalink: /kb/069/Q69683/
 	
 	=============================================================================
 	
+
+{% endraw %}

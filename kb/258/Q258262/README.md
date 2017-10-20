@@ -6,6 +6,8 @@ permalink: /kb/258/Q258262/
 
 ## Q258262: HOWTO: Write a DWORD to the Registry
 
+{% raw %}
+
 	Article: Q258262
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -184,3 +186,5 @@ permalink: /kb/258/Q258262/
 	
 	=============================================================================
 	
+
+{% endraw %}

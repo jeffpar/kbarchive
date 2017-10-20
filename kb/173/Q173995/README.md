@@ -6,6 +6,8 @@ permalink: /kb/173/Q173995/
 
 ## Q173995: SMS: How to Configure Multiple Shared Apps to Use a Single Share
 
+{% raw %}
+
 	Article: Q173995
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -153,3 +155,5 @@ permalink: /kb/173/Q173995/
 	
 	=============================================================================
 	
+
+{% endraw %}

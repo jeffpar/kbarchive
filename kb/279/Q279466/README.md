@@ -6,6 +6,8 @@ permalink: /kb/279/Q279466/
 
 ## Q279466: HOW TO: Request a Web Page Through a Telnet Client
 
+{% raw %}
+
 	Article: Q279466
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0,4.0,5.0
@@ -162,3 +164,5 @@ permalink: /kb/279/Q279466/
 	
 	=============================================================================
 	
+
+{% endraw %}

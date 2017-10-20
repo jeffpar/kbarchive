@@ -6,6 +6,8 @@ permalink: /kb/092/Q92638/
 
 ## Q92638: Windows Sound System Specifications
 
+{% raw %}
+
 	Article: Q92638
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/092/Q92638/
 	
 	=============================================================================
 	
+
+{% endraw %}

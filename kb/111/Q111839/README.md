@@ -6,6 +6,8 @@ permalink: /kb/111/Q111839/
 
 ## Q111839: SMTP: Gateway Does Not Get Outgoing Messages from Postoffice
 
+{% raw %}
+
 	Article: Q111839
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/111/Q111839/
 	
 	=============================================================================
 	
+
+{% endraw %}

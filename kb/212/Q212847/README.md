@@ -6,6 +6,8 @@ permalink: /kb/212/Q212847/
 
 ## Q212847: SMS: Aborted SMS Installer Installation Requests a Restart
 
+{% raw %}
+
 	Article: Q212847
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -55,3 +57,5 @@ permalink: /kb/212/Q212847/
 	
 	=============================================================================
 	
+
+{% endraw %}

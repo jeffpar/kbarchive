@@ -6,6 +6,8 @@ permalink: /kb/179/Q179417/
 
 ## Q179417: WD97: Format Font Option in Find and Replace Does Not Work
 
+{% raw %}
+
 	Article: Q179417
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/179/Q179417/
 	
 	=============================================================================
 	
+
+{% endraw %}

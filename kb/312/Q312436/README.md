@@ -6,6 +6,8 @@ permalink: /kb/312/Q312436/
 
 ## Q312436: XADM: Exchange Services Do Not Start on a Recovery Server
 
+{% raw %}
+
 	Article: Q312436
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -201,3 +203,5 @@ permalink: /kb/312/Q312436/
 	
 	=============================================================================
 	
+
+{% endraw %}

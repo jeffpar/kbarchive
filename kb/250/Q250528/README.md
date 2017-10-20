@@ -6,6 +6,8 @@ permalink: /kb/250/Q250528/
 
 ## Q250528: Using Account Joiner Utility in Microsoft Metadirectory Services
 
+{% raw %}
+
 	Article: Q250528
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -117,3 +119,5 @@ permalink: /kb/250/Q250528/
 	
 	=============================================================================
 	
+
+{% endraw %}

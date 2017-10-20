@@ -6,6 +6,8 @@ permalink: /kb/139/Q139807/
 
 ## Q139807: Daylight Savings Time Change Repeats Continuously
 
+{% raw %}
+
 	Article: Q139807
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/139/Q139807/
 	
 	=============================================================================
 	
+
+{% endraw %}

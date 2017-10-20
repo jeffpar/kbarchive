@@ -6,6 +6,8 @@ permalink: /kb/180/Q180351/
 
 ## Q180351: XWEB: Error Message: Unable to Delete Message
 
+{% raw %}
+
 	Article: Q180351
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/180/Q180351/
 	
 	=============================================================================
 	
+
+{% endraw %}

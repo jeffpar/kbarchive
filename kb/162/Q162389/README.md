@@ -6,6 +6,8 @@ permalink: /kb/162/Q162389/
 
 ## Q162389: WD97: &quot;This file could not be found&quot; Error with Open Method
 
+{% raw %}
+
 	Article: Q162389
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -118,3 +120,5 @@ permalink: /kb/162/Q162389/
 	
 	=============================================================================
 	
+
+{% endraw %}

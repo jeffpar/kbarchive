@@ -6,6 +6,8 @@ permalink: /kb/197/Q197279/
 
 ## Q197279: SP4 Blue Screen Occurs on Reboot If Hardware Key Used
 
+{% raw %}
+
 	Article: Q197279
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -88,3 +90,5 @@ permalink: /kb/197/Q197279/
 	
 	=============================================================================
 	
+
+{% endraw %}

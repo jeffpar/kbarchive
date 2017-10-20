@@ -6,6 +6,8 @@ permalink: /kb/169/Q169473/
 
 ## Q169473: BUG: Cannot Load FTSRCH.DLL When Using &quot;Find&quot; Tab of Help Dialog
 
+{% raw %}
+
 	Article: Q169473
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -67,3 +69,5 @@ permalink: /kb/169/Q169473/
 	
 	=============================================================================
 	
+
+{% endraw %}

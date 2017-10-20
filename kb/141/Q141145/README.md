@@ -6,6 +6,8 @@ permalink: /kb/141/Q141145/
 
 ## Q141145: PRB: APPEND FROM to Logical Field Loads Literal t or y Values
 
+{% raw %}
+
 	Article: Q141145
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -107,3 +109,5 @@ permalink: /kb/141/Q141145/
 	
 	=============================================================================
 	
+
+{% endraw %}

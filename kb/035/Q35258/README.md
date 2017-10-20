@@ -6,6 +6,8 @@ permalink: /kb/035/Q35258/
 
 ## Q35258: Why Compiling after Editing in M Shows Old Errors
 
+{% raw %}
+
 	Article: Q35258
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -28,3 +30,5 @@ permalink: /kb/035/Q35258/
 	
 	In either case, specify noautosave: to prevent automatic saving of
 	files, or autosave: to restore automatic file saving.
+
+{% endraw %}

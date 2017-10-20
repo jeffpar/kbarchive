@@ -6,6 +6,8 @@ permalink: /kb/154/Q154764/
 
 ## Q154764: PRB: Excluding Libraries with the Visual C++ Profiler
 
+{% raw %}
+
 	Article: Q154764
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -133,3 +135,5 @@ permalink: /kb/154/Q154764/
 	
 	=============================================================================
 	
+
+{% endraw %}

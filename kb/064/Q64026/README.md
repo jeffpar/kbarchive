@@ -6,6 +6,8 @@ permalink: /kb/064/Q64026/
 
 ## Q64026: CodeView Crashes in DOS on &quot;Drive Not Ready&quot; Error
 
+{% raw %}
+
 	Article: Q64026
 	Product(s): See article
 	Version(s): 3.00
@@ -43,3 +45,5 @@ permalink: /kb/064/Q64026/
 	Microsoft has confirmed this to be a problem with CodeView version
 	3.00. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

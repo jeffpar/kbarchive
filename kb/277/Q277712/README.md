@@ -6,6 +6,8 @@ permalink: /kb/277/Q277712/
 
 ## Q277712: HOWTO: Change the Axis Label Font and the Font Size in MSChart
 
+{% raw %}
+
 	Article: Q277712
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/277/Q277712/
 	
 	=============================================================================
 	
+
+{% endraw %}

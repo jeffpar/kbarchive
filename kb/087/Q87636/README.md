@@ -6,6 +6,8 @@ permalink: /kb/087/Q87636/
 
 ## Q87636: PRB: C2660
 
+{% raw %}
+
 	Article: Q87636
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/087/Q87636/
 	
 	=============================================================================
 	
+
+{% endraw %}

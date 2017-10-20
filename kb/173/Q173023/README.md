@@ -6,6 +6,8 @@ permalink: /kb/173/Q173023/
 
 ## Q173023: Err Msg: The Filename, Directory, or Volume Label Syntax Is...
 
+{% raw %}
+
 	Article: Q173023
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/173/Q173023/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245007/
 
 ## Q245007: STOP 0xA or 0x1E Error Message on Windows NT-Based Computer
 
+{% raw %}
+
 	Article: Q245007
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -83,3 +85,5 @@ permalink: /kb/245/Q245007/
 	
 	=============================================================================
 	
+
+{% endraw %}

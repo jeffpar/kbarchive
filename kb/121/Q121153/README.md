@@ -6,6 +6,8 @@ permalink: /kb/121/Q121153/
 
 ## Q121153: ScanDisk UNDO Date &amp; Time Format Doesn't Use the Country Code
 
+{% raw %}
+
 	Article: Q121153
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/121/Q121153/
 	
 	=============================================================================
 	
+
+{% endraw %}

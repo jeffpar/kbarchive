@@ -6,6 +6,8 @@ permalink: /kb/081/Q81537/
 
 ## Q81537: Control Panel Shows Only 24-Point in True Type &amp; Plotter
 
+{% raw %}
+
 	Article: Q81537
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -41,3 +43,5 @@ permalink: /kb/081/Q81537/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/288/Q288830/
 
 ## Q288830: WD97: Item Appears Without Heading Number in Document Map
 
+{% raw %}
+
 	Article: Q288830
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/288/Q288830/
 	
 	=============================================================================
 	
+
+{% endraw %}

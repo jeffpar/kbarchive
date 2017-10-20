@@ -6,6 +6,8 @@ permalink: /kb/272/Q272570/
 
 ## Q272570: XADM: Disaster Recovery of Information Store on Exchange Server
 
+{% raw %}
+
 	Article: Q272570
 	Product(s): Microsoft Exchange
 	Version(s): 4.5,5.5
@@ -422,3 +424,5 @@ permalink: /kb/272/Q272570/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149314/
 
 ## Q149314: XCLN: Send Mail Option in NT File Manager Won't Work
 
+{% raw %}
+
 	Article: Q149314
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -72,3 +74,5 @@ permalink: /kb/149/Q149314/
 	
 	=============================================================================
 	
+
+{% endraw %}

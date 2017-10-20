@@ -6,6 +6,8 @@ permalink: /kb/062/Q62505/
 
 ## Q62505: Common Mistakes Made when Modifying PROTOCOL.INI
 
+{% raw %}
+
 	Article: Q62505
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/062/Q62505/
 	
 	=============================================================================
 	
+
+{% endraw %}

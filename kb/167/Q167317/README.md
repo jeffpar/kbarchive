@@ -6,6 +6,8 @@ permalink: /kb/167/Q167317/
 
 ## Q167317: WD97: Cannot Close or Save Htmlview.dot
 
+{% raw %}
+
 	Article: Q167317
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/167/Q167317/
 	
 	=============================================================================
 	
+
+{% endraw %}

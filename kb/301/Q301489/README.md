@@ -6,6 +6,8 @@ permalink: /kb/301/Q301489/
 
 ## Q301489: Dialing Magic Codes
 
+{% raw %}
+
 	Article: Q301489
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -63,3 +65,5 @@ permalink: /kb/301/Q301489/
 	
 	=============================================================================
 	
+
+{% endraw %}

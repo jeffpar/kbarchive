@@ -6,6 +6,8 @@ permalink: /kb/186/Q186271/
 
 ## Q186271: HOWTO: Manipulate Text Box Contents
 
+{% raw %}
+
 	Article: Q186271
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -260,3 +262,5 @@ permalink: /kb/186/Q186271/
 	
 	=============================================================================
 	
+
+{% endraw %}

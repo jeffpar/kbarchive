@@ -6,6 +6,8 @@ permalink: /kb/192/Q192916/
 
 ## Q192916: Outwars: Cannot Hear Sound in Game
 
+{% raw %}
+
 	Article: Q192916
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,95
@@ -68,3 +70,5 @@ permalink: /kb/192/Q192916/
 	
 	=============================================================================
 	
+
+{% endraw %}

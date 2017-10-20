@@ -6,6 +6,8 @@ permalink: /kb/152/Q152338/
 
 ## Q152338: PCMMac Error -39 in File Cpackage.cpp
 
+{% raw %}
+
 	Article: Q152338
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -60,3 +62,5 @@ permalink: /kb/152/Q152338/
 	
 	=============================================================================
 	
+
+{% endraw %}

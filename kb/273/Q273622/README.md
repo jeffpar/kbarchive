@@ -6,6 +6,8 @@ permalink: /kb/273/Q273622/
 
 ## Q273622: Reader Error Message: StgOpenStorage Failed with 0x80030005
 
+{% raw %}
+
 	Article: Q273622
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -118,3 +120,5 @@ permalink: /kb/273/Q273622/
 	
 	=============================================================================
 	
+
+{% endraw %}

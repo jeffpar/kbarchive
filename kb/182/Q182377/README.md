@@ -6,6 +6,8 @@ permalink: /kb/182/Q182377/
 
 ## Q182377: XFOR: OnJoin and OnPart Messages Not Displayed with Chat Client
 
+{% raw %}
+
 	Article: Q182377
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -60,3 +62,5 @@ permalink: /kb/182/Q182377/
 	
 	=============================================================================
 	
+
+{% endraw %}

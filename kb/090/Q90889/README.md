@@ -6,6 +6,8 @@ permalink: /kb/090/Q90889/
 
 ## Q90889: Problems Printing Graphics Using LPTx.OS2 or COPY Command
 
+{% raw %}
+
 	Article: Q90889
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -88,3 +90,5 @@ permalink: /kb/090/Q90889/
 	
 	=============================================================================
 	
+
+{% endraw %}

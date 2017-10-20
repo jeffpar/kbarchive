@@ -6,6 +6,8 @@ permalink: /kb/150/Q150423/
 
 ## Q150423: INFO: Visual Basic 4.0a Fixes for Windows as of April 23, 1996
 
+{% raw %}
+
 	Article: Q150423
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/150/Q150423/
 	
 	=============================================================================
 	
+
+{% endraw %}

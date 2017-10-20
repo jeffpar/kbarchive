@@ -6,6 +6,8 @@ permalink: /kb/153/Q153282/
 
 ## Q153282: FIX: ClassWizard Overrides CDaoRecordset::Open Incorrectly
 
+{% raw %}
+
 	Article: Q153282
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10
@@ -81,3 +83,5 @@ permalink: /kb/153/Q153282/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173225/
 
 ## Q173225: MSN Does Not Remove Dial-Up Networking Connections
 
+{% raw %}
+
 	Article: Q173225
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -69,3 +71,5 @@ permalink: /kb/173/Q173225/
 	
 	=============================================================================
 	
+
+{% endraw %}

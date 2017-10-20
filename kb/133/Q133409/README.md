@@ -6,6 +6,8 @@ permalink: /kb/133/Q133409/
 
 ## Q133409: Checking Recovery Options for a Remote Windows NT Computer
 
+{% raw %}
+
 	Article: Q133409
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/133/Q133409/
 	
 	=============================================================================
 	
+
+{% endraw %}

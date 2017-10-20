@@ -6,6 +6,8 @@ permalink: /kb/163/Q163615/
 
 ## Q163615: Unattended Setup Does Not Honor Win31Upgrade=no In Answer File
 
+{% raw %}
+
 	Article: Q163615
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/163/Q163615/
 	
 	=============================================================================
 	
+
+{% endraw %}

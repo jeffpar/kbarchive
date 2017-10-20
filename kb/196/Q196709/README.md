@@ -6,6 +6,8 @@ permalink: /kb/196/Q196709/
 
 ## Q196709: INFO: Files Installed Win 98&#92;SYSTEM Folder for DCOM98 Step 3
 
+{% raw %}
+
 	Article: Q196709
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -69,3 +71,5 @@ permalink: /kb/196/Q196709/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183956/
 
 ## Q183956: Decreasing Directory Start Time During Off-network Recovery
 
+{% raw %}
+
 	Article: Q183956
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/183/Q183956/
 	
 	=============================================================================
 	
+
+{% endraw %}

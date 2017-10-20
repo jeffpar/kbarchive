@@ -6,6 +6,8 @@ permalink: /kb/305/Q305181/
 
 ## Q305181: Unable to Complete MSN Broadband DSL Setup--Err Msg:  &quot;Our serve
 
+{% raw %}
+
 	Article: Q305181
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -74,3 +76,5 @@ permalink: /kb/305/Q305181/
 	
 	=============================================================================
 	
+
+{% endraw %}

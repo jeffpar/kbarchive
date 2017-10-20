@@ -6,6 +6,8 @@ permalink: /kb/161/Q161283/
 
 ## Q161283: INFO: Default Filename for Text File Error Log: VBEVENTS.LOG
 
+{% raw %}
+
 	Article: Q161283
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -137,3 +139,5 @@ permalink: /kb/161/Q161283/
 	
 	=============================================================================
 	
+
+{% endraw %}

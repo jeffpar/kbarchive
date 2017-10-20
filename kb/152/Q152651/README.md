@@ -6,6 +6,8 @@ permalink: /kb/152/Q152651/
 
 ## Q152651: Audit32.log Displays &quot;Unable to write Status MIF&quot; Error
 
+{% raw %}
+
 	Article: Q152651
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -48,3 +50,5 @@ permalink: /kb/152/Q152651/
 	
 	=============================================================================
 	
+
+{% endraw %}

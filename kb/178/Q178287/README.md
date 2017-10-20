@@ -6,6 +6,8 @@ permalink: /kb/178/Q178287/
 
 ## Q178287: WD97: Track Changes Does Not Mark Some Formatting Changes
 
+{% raw %}
+
 	Article: Q178287
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -90,3 +92,5 @@ permalink: /kb/178/Q178287/
 	
 	=============================================================================
 	
+
+{% endraw %}

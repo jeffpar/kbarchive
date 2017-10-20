@@ -6,6 +6,8 @@ permalink: /kb/043/Q43209/
 
 ## Q43209: NUM LOCK On Affects QB.EXE Cut, Copy, Paste on Numeric Keypad
 
+{% raw %}
+
 	Article: Q43209
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -37,3 +39,5 @@ permalink: /kb/043/Q43209/
 	   SHIFT+DEL           Cut
 	   CTRL+INS            Copy
 	   SHIFT+INS           Paste
+
+{% endraw %}

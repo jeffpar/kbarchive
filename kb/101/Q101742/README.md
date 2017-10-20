@@ -6,6 +6,8 @@ permalink: /kb/101/Q101742/
 
 ## Q101742: How to Open dBASE Table with Nonstandard File Extension
 
+{% raw %}
+
 	Article: Q101742
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -92,3 +94,5 @@ permalink: /kb/101/Q101742/
 	
 	=============================================================================
 	
+
+{% endraw %}

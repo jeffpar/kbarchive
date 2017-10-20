@@ -6,6 +6,8 @@ permalink: /kb/157/Q157447/
 
 ## Q157447: Cannot Display Korean Windows NT 3.5 Programs Under Windows 3.51
 
+{% raw %}
+
 	Article: Q157447
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -69,3 +71,5 @@ permalink: /kb/157/Q157447/
 	
 	=============================================================================
 	
+
+{% endraw %}

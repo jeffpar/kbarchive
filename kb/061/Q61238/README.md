@@ -6,6 +6,8 @@ permalink: /kb/061/Q61238/
 
 ## Q61238: C 6.00 README: 43-Line Mode with DOS 4.01 ANSI.SYS
 
+{% raw %}
+
 	Article: Q61238
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -33,3 +35,5 @@ permalink: /kb/061/Q61238/
 	
 	At the moment, the only known solution is to remove ANSI.SYS from your
 	CONFIG.SYS file and reboot your machine.
+
+{% endraw %}

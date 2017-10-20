@@ -6,6 +6,8 @@ permalink: /kb/106/Q106481/
 
 ## Q106481: Installing MS-DOS 5, 6, 6.2 Upgrade from a Network Server
 
+{% raw %}
+
 	Article: Q106481
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -91,3 +93,5 @@ permalink: /kb/106/Q106481/
 	
 	=============================================================================
 	
+
+{% endraw %}

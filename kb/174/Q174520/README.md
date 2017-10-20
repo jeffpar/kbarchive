@@ -6,6 +6,8 @@ permalink: /kb/174/Q174520/
 
 ## Q174520: Error Numbers Associated with Inaccessible Roaming Profiles
 
+{% raw %}
+
 	Article: Q174520
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -120,3 +122,5 @@ permalink: /kb/174/Q174520/
 	
 	=============================================================================
 	
+
+{% endraw %}

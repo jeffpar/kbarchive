@@ -6,6 +6,8 @@ permalink: /kb/177/Q177782/
 
 ## Q177782: XADM: Home Server Not Updated After a Move Mailbox
 
+{% raw %}
+
 	Article: Q177782
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -92,3 +94,5 @@ permalink: /kb/177/Q177782/
 	
 	=============================================================================
 	
+
+{% endraw %}

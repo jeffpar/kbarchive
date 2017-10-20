@@ -6,6 +6,8 @@ permalink: /kb/069/Q69789/
 
 ## Q69789: ASD: Turning Off Dynamic Scenery
 
+{% raw %}
+
 	Article: Q69789
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/069/Q69789/
 	
 	=============================================================================
 	
+
+{% endraw %}

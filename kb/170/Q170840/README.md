@@ -6,6 +6,8 @@ permalink: /kb/170/Q170840/
 
 ## Q170840: Installing TN3270 Breaks Performance Counters on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q170840
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -82,3 +84,5 @@ permalink: /kb/170/Q170840/
 	
 	=============================================================================
 	
+
+{% endraw %}

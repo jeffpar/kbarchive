@@ -6,6 +6,8 @@ permalink: /kb/193/Q193056/
 
 ## Q193056: Problems in Date/Time after Choosing February 29 in a Leap Year
 
+{% raw %}
+
 	Article: Q193056
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -131,3 +133,5 @@ permalink: /kb/193/Q193056/
 	
 	=============================================================================
 	
+
+{% endraw %}

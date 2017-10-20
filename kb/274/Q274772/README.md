@@ -6,6 +6,8 @@ permalink: /kb/274/Q274772/
 
 ## Q274772: INFO: Perl Support Boundaries
 
+{% raw %}
+
 	Article: Q274772
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0,4.0,5.0
@@ -95,3 +97,5 @@ permalink: /kb/274/Q274772/
 	
 	=============================================================================
 	
+
+{% endraw %}

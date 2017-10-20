@@ -6,6 +6,8 @@ permalink: /kb/236/Q236390/
 
 ## Q236390: Spooler Rollup Fix to Address Memory Leaks in Terminal Server
 
+{% raw %}
+
 	Article: Q236390
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -73,3 +75,5 @@ permalink: /kb/236/Q236390/
 	
 	=============================================================================
 	
+
+{% endraw %}

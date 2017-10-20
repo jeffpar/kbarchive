@@ -6,6 +6,8 @@ permalink: /kb/148/Q148142/
 
 ## Q148142: Macintosh Cinemania 96: Cinemania 1996 ReadMe Contents
 
+{% raw %}
+
 	Article: Q148142
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -316,3 +318,5 @@ permalink: /kb/148/Q148142/
 	
 	=============================================================================
 	
+
+{% endraw %}

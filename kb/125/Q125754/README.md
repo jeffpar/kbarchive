@@ -6,6 +6,8 @@ permalink: /kb/125/Q125754/
 
 ## Q125754: Cannot Use Multiple Instances of Some Adaptec Controllers
 
+{% raw %}
+
 	Article: Q125754
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -49,3 +51,5 @@ permalink: /kb/125/Q125754/
 	
 	=============================================================================
 	
+
+{% endraw %}

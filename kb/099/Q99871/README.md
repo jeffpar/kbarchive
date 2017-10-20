@@ -6,6 +6,8 @@ permalink: /kb/099/Q99871/
 
 ## Q99871: NEW.H Does Not Contain new() that Takes a void&#42;
 
+{% raw %}
+
 	Article: Q99871
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -49,3 +51,5 @@ permalink: /kb/099/Q99871/
 	
 	=============================================================================
 	
+
+{% endraw %}

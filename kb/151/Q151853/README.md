@@ -6,6 +6,8 @@ permalink: /kb/151/Q151853/
 
 ## Q151853: INFO: Required Files For The Pivot Table Wizard
 
+{% raw %}
+
 	Article: Q151853
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -182,3 +184,5 @@ permalink: /kb/151/Q151853/
 	
 	=============================================================================
 	
+
+{% endraw %}

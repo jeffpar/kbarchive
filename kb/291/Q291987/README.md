@@ -6,6 +6,8 @@ permalink: /kb/291/Q291987/
 
 ## Q291987: MCSE Training Kit Designing Windows 2000 Network Security Commen
 
+{% raw %}
+
 	Article: Q291987
 	Product(s): Microsoft Press
 	Version(s): 
@@ -385,3 +387,5 @@ permalink: /kb/291/Q291987/
 	
 	=============================================================================
 	
+
+{% endraw %}

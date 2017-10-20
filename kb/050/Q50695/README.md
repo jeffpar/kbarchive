@@ -6,6 +6,8 @@ permalink: /kb/050/Q50695/
 
 ## Q50695: .EXE Linked with LLIBCMT Cannot Call DLL Linked with CRTLIB
 
+{% raw %}
+
 	Article: Q50695
 	Product(s): See article
 	Version(s): 5.10
@@ -117,3 +119,5 @@ permalink: /kb/050/Q50695/
 	means that a program with no calls to DosCreateThread and/or
 	_beginthread() will lie within the scope of this problem if it is
 	built as a multi-threaded executable.
+
+{% endraw %}

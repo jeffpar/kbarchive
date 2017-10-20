@@ -6,6 +6,8 @@ permalink: /kb/142/Q142866/
 
 ## Q142866: Alpha w/ Proteon P139x-Plus Rev E and Above NIC Doesn't Work
 
+{% raw %}
+
 	Article: Q142866
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -75,3 +77,5 @@ permalink: /kb/142/Q142866/
 	
 	=============================================================================
 	
+
+{% endraw %}

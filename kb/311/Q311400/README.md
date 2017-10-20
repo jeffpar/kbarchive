@@ -6,6 +6,8 @@ permalink: /kb/311/Q311400/
 
 ## Q311400: SMS: Problem with the Keyboard in a Remote Control Session
 
+{% raw %}
+
 	Article: Q311400
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -54,3 +56,5 @@ permalink: /kb/311/Q311400/
 	
 	=============================================================================
 	
+
+{% endraw %}

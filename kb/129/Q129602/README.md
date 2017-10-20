@@ -6,6 +6,8 @@ permalink: /kb/129/Q129602/
 
 ## Q129602: Functional Description of SMSWORK
 
+{% raw %}
+
 	Article: Q129602
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -62,3 +64,5 @@ permalink: /kb/129/Q129602/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90435/
 
 ## Q90435: FILE: Windows Setup Toolkit Tutorial Available for Download
 
+{% raw %}
+
 	Article: Q90435
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -89,3 +91,5 @@ permalink: /kb/090/Q90435/
 	
 	=============================================================================
 	
+
+{% endraw %}

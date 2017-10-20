@@ -6,6 +6,8 @@ permalink: /kb/164/Q164309/
 
 ## Q164309: Windows NT Client: Primary/Secondary WINS Servers Switch
 
+{% raw %}
+
 	Article: Q164309
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -79,3 +81,5 @@ permalink: /kb/164/Q164309/
 	
 	=============================================================================
 	
+
+{% endraw %}

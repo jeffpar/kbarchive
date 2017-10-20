@@ -6,6 +6,8 @@ permalink: /kb/187/Q187146/
 
 ## Q187146: DCOM Clients Cannot Create Objects
 
+{% raw %}
+
 	Article: Q187146
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -104,3 +106,5 @@ permalink: /kb/187/Q187146/
 	
 	=============================================================================
 	
+
+{% endraw %}

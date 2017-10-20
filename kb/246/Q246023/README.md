@@ -6,6 +6,8 @@ permalink: /kb/246/Q246023/
 
 ## Q246023: Cannot Remove Folder Without Being Prompted
 
+{% raw %}
+
 	Article: Q246023
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -78,3 +80,5 @@ permalink: /kb/246/Q246023/
 	
 	=============================================================================
 	
+
+{% endraw %}

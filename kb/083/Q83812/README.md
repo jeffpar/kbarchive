@@ -6,6 +6,8 @@ permalink: /kb/083/Q83812/
 
 ## Q83812: Access to Printer Cartridge Selection Unavailable
 
+{% raw %}
+
 	Article: Q83812
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/083/Q83812/
 	
 	=============================================================================
 	
+
+{% endraw %}

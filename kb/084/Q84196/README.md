@@ -6,6 +6,8 @@ permalink: /kb/084/Q84196/
 
 ## Q84196: Some Screen Savers Minimize the Productivity Pack
 
+{% raw %}
+
 	Article: Q84196
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/084/Q84196/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122054/
 
 ## Q122054: Information: PCMCIA Slot Specifications and Types
 
+{% raw %}
+
 	Article: Q122054
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/122/Q122054/
 	
 	=============================================================================
 	
+
+{% endraw %}

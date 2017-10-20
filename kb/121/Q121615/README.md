@@ -6,6 +6,8 @@ permalink: /kb/121/Q121615/
 
 ## Q121615: NCP Requirements for LU 6.2
 
+{% raw %}
+
 	Article: Q121615
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
@@ -50,3 +52,5 @@ permalink: /kb/121/Q121615/
 	
 	=============================================================================
 	
+
+{% endraw %}

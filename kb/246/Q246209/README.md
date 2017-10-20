@@ -6,6 +6,8 @@ permalink: /kb/246/Q246209/
 
 ## Q246209: Encarta 2000: Hangs or Quits Unexpectedly When You Start Program
 
+{% raw %}
+
 	Article: Q246209
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:
@@ -81,3 +83,5 @@ permalink: /kb/246/Q246209/
 	
 	=============================================================================
 	
+
+{% endraw %}

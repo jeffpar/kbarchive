@@ -6,6 +6,8 @@ permalink: /kb/103/Q103688/
 
 ## Q103688: PRB: &quot;Cannot Write VER.DLL&quot; Installing FoxPro with Windows 3.0
 
+{% raw %}
+
 	Article: Q103688
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a
@@ -40,3 +42,5 @@ permalink: /kb/103/Q103688/
 	
 	=============================================================================
 	
+
+{% endraw %}

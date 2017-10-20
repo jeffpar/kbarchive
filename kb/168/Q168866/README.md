@@ -6,6 +6,8 @@ permalink: /kb/168/Q168866/
 
 ## Q168866: FIX: IOS Failed to Initialize Error During Installation
 
+{% raw %}
+
 	Article: Q168866
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -64,3 +66,5 @@ permalink: /kb/168/Q168866/
 	
 	=============================================================================
 	
+
+{% endraw %}

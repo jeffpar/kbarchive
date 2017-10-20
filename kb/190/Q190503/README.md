@@ -6,6 +6,8 @@ permalink: /kb/190/Q190503/
 
 ## Q190503: PRB: Multi-Disk Package Too Large for Targeted Disk Size
 
+{% raw %}
+
 	Article: Q190503
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -76,3 +78,5 @@ permalink: /kb/190/Q190503/
 	
 	=============================================================================
 	
+
+{% endraw %}

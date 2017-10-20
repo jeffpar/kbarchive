@@ -6,6 +6,8 @@ permalink: /kb/297/Q297531/
 
 ## Q297531: PRB: Report Designer Menu Item Is Missing
 
+{% raw %}
+
 	Article: Q297531
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -76,3 +78,5 @@ permalink: /kb/297/Q297531/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137269/
 
 ## Q137269: System Agent May Hang MS Backup
 
+{% raw %}
+
 	Article: Q137269
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/137/Q137269/
 	
 	=============================================================================
 	
+
+{% endraw %}

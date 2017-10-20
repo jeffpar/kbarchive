@@ -6,6 +6,8 @@ permalink: /kb/146/Q146187/
 
 ## Q146187: Timex: Dates Are Not In Order When Downloaded
 
+{% raw %}
+
 	Article: Q146187
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:3.x,7.0,95
@@ -40,3 +42,5 @@ permalink: /kb/146/Q146187/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149480/
 
 ## Q149480: BUG: END DO Cannot Be on Separate Lines in Fixed-Form Source
 
+{% raw %}
+
 	Article: Q149480
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/149/Q149480/
 	
 	=============================================================================
 	
+
+{% endraw %}

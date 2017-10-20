@@ -6,6 +6,8 @@ permalink: /kb/130/Q130827/
 
 ## Q130827: FIX: MFC Reports Memory Leaks When cout and cin Are Used
 
+{% raw %}
+
 	Article: Q130827
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1
@@ -82,3 +84,5 @@ permalink: /kb/130/Q130827/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98706/
 
 ## Q98706: Login Scripts to Change a User to Home Directory
 
+{% raw %}
+
 	Article: Q98706
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/098/Q98706/
 	
 	=============================================================================
 	
+
+{% endraw %}

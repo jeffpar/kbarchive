@@ -6,6 +6,8 @@ permalink: /kb/196/Q196732/
 
 ## Q196732: HOWTO: Set a User's Default Local Printer with a Logon Script
 
+{% raw %}
+
 	Article: Q196732
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/196/Q196732/
 	
 	=============================================================================
 	
+
+{% endraw %}

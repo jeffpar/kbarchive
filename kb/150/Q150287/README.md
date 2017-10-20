@@ -6,6 +6,8 @@ permalink: /kb/150/Q150287/
 
 ## Q150287: FIX: Custom Build Commands Fail When Built from Command Line
 
+{% raw %}
+
 	Article: Q150287
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -83,3 +85,5 @@ permalink: /kb/150/Q150287/
 	
 	=============================================================================
 	
+
+{% endraw %}

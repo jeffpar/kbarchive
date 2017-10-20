@@ -6,6 +6,8 @@ permalink: /kb/142/Q142515/
 
 ## Q142515: Magic School Bus: No Printout on Canon BubbleJet
 
+{% raw %}
+
 	Article: Q142515
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -106,3 +108,5 @@ permalink: /kb/142/Q142515/
 	
 	=============================================================================
 	
+
+{% endraw %}

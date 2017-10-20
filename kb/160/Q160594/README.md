@@ -6,6 +6,8 @@ permalink: /kb/160/Q160594/
 
 ## Q160594: HOWTO: Use Report File Units
 
+{% raw %}
+
 	Article: Q160594
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0
@@ -65,3 +67,5 @@ permalink: /kb/160/Q160594/
 	
 	=============================================================================
 	
+
+{% endraw %}

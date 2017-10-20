@@ -6,6 +6,8 @@ permalink: /kb/231/Q231782/
 
 ## Q231782: SMS: Smsmon32 and/or Odpwin9x May Cause Windows 95/98 to Hang
 
+{% raw %}
+
 	Article: Q231782
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -70,3 +72,5 @@ permalink: /kb/231/Q231782/
 	
 	=============================================================================
 	
+
+{% endraw %}

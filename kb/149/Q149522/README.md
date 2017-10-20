@@ -6,6 +6,8 @@ permalink: /kb/149/Q149522/
 
 ## Q149522: System Error 71 and License Manager
 
+{% raw %}
+
 	Article: Q149522
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -53,3 +55,5 @@ permalink: /kb/149/Q149522/
 	
 	=============================================================================
 	
+
+{% endraw %}

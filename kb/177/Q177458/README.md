@@ -6,6 +6,8 @@ permalink: /kb/177/Q177458/
 
 ## Q177458: Unattended Installation of S3 Virge VGA Adapter
 
+{% raw %}
+
 	Article: Q177458
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -114,3 +116,5 @@ permalink: /kb/177/Q177458/
 	
 	=============================================================================
 	
+
+{% endraw %}

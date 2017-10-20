@@ -6,6 +6,8 @@ permalink: /kb/182/Q182281/
 
 ## Q182281: Remote Access Service Callback Authentication Does Not Work
 
+{% raw %}
+
 	Article: Q182281
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.5,3.51,4.0
@@ -68,3 +70,5 @@ permalink: /kb/182/Q182281/
 	
 	=============================================================================
 	
+
+{% endraw %}

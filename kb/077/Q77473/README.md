@@ -6,6 +6,8 @@ permalink: /kb/077/Q77473/
 
 ## Q77473: Rules for Using Far Pointers to Memory Objects
 
+{% raw %}
+
 	Article: Q77473
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -114,3 +116,5 @@ permalink: /kb/077/Q77473/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/275/Q275570/
 
 ## Q275570: Learn Visual J++ 6.0 Now Comments and Corrections
 
+{% raw %}
+
 	Article: Q275570
 	Product(s): Microsoft Press
 	Version(s): 
@@ -131,3 +133,5 @@ permalink: /kb/275/Q275570/
 	
 	=============================================================================
 	
+
+{% endraw %}

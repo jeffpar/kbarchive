@@ -6,6 +6,8 @@ permalink: /kb/170/Q170574/
 
 ## Q170574: MDG: One Mail Message Floods Windows Mail Client
 
+{% raw %}
+
 	Article: Q170574
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -50,3 +52,5 @@ permalink: /kb/170/Q170574/
 	
 	=============================================================================
 	
+
+{% endraw %}

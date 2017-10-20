@@ -6,6 +6,8 @@ permalink: /kb/111/Q111701/
 
 ## Q111701: Microsoft Mail REBUILD.EXE 3.2.16 Update
 
+{% raw %}
+
 	Article: Q111701
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -127,3 +129,5 @@ permalink: /kb/111/Q111701/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134721/
 
 ## Q134721: HOWTO: How to Handle Visual FoxPro Connectivity Errors w/o DBERR
 
+{% raw %}
+
 	Article: Q134721
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -79,3 +81,5 @@ permalink: /kb/134/Q134721/
 	
 	=============================================================================
 	
+
+{% endraw %}

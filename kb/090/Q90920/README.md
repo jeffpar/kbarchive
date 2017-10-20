@@ -6,6 +6,8 @@ permalink: /kb/090/Q90920/
 
 ## Q90920: Workgroup Connection Setup Program Is Black &amp; White on an 8514
 
+{% raw %}
+
 	Article: Q90920
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 1.0; MS-DOS:3.11
@@ -50,3 +52,5 @@ permalink: /kb/090/Q90920/
 	
 	=============================================================================
 	
+
+{% endraw %}

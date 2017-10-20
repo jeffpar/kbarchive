@@ -6,6 +6,8 @@ permalink: /kb/189/Q189199/
 
 ## Q189199: Inside Distributed COM Comments and Corrections
 
+{% raw %}
+
 	Article: Q189199
 	Product(s): Microsoft Press
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/189/Q189199/
 	
 	=============================================================================
 	
+
+{% endraw %}

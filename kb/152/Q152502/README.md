@@ -6,6 +6,8 @@ permalink: /kb/152/Q152502/
 
 ## Q152502: Restoring Schedule File Doesn't Reset Disallow Overlapping
 
+{% raw %}
+
 	Article: Q152502
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -44,3 +46,5 @@ permalink: /kb/152/Q152502/
 	
 	=============================================================================
 	
+
+{% endraw %}

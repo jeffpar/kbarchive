@@ -6,6 +6,8 @@ permalink: /kb/310/Q310339/
 
 ## Q310339: PRB: Netlogon Logs Event ID 5719 on a Domain Controller
 
+{% raw %}
+
 	Article: Q310339
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -134,3 +136,5 @@ permalink: /kb/310/Q310339/
 	
 	=============================================================================
 	
+
+{% endraw %}

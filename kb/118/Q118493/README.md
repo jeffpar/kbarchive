@@ -6,6 +6,8 @@ permalink: /kb/118/Q118493/
 
 ## Q118493: Long Filenames Cause Problems with Earlier Versions of MS-DOS
 
+{% raw %}
+
 	Article: Q118493
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -109,3 +111,5 @@ permalink: /kb/118/Q118493/
 	
 	=============================================================================
 	
+
+{% endraw %}

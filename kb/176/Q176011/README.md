@@ -6,6 +6,8 @@ permalink: /kb/176/Q176011/
 
 ## Q176011: Recommended MMF size
 
+{% raw %}
+
 	Article: Q176011
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -92,3 +94,5 @@ permalink: /kb/176/Q176011/
 	
 	=============================================================================
 	
+
+{% endraw %}

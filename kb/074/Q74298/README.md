@@ -6,6 +6,8 @@ permalink: /kb/074/Q74298/
 
 ## Q74298: INFO: Calculating Text Extents of Bold and Italic Text
 
+{% raw %}
+
 	Article: Q74298
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -102,3 +104,5 @@ permalink: /kb/074/Q74298/
 	
 	=============================================================================
 	
+
+{% endraw %}

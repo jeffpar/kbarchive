@@ -6,6 +6,8 @@ permalink: /kb/160/Q160176/
 
 ## Q160176: Changing WinNT System Date May Generate a Stop 0x0000000A
 
+{% raw %}
+
 	Article: Q160176
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/160/Q160176/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165417/
 
 ## Q165417: DOC: Toolbar_Size Not Implemented in VSS 5
 
+{% raw %}
+
 	Article: Q165417
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0
@@ -49,3 +51,5 @@ permalink: /kb/165/Q165417/
 	
 	=============================================================================
 	
+
+{% endraw %}

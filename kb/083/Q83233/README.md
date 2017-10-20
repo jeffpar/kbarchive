@@ -6,6 +6,8 @@ permalink: /kb/083/Q83233/
 
 ## Q83233: F1CDHelp.exe Uses Keyboard Hook to Access Help
 
+{% raw %}
+
 	Article: Q83233
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -168,3 +170,5 @@ permalink: /kb/083/Q83233/
 	
 	=============================================================================
 	
+
+{% endraw %}

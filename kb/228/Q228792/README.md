@@ -6,6 +6,8 @@ permalink: /kb/228/Q228792/
 
 ## Q228792: Stop 0x1e in NTFS After Changing Disk On Removable Drive
 
+{% raw %}
+
 	Article: Q228792
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -99,3 +101,5 @@ permalink: /kb/228/Q228792/
 	
 	=============================================================================
 	
+
+{% endraw %}

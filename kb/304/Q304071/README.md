@@ -6,6 +6,8 @@ permalink: /kb/304/Q304071/
 
 ## Q304071: BUG: WebClass Application with Japanese Templates May Fail
 
+{% raw %}
+
 	Article: Q304071
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -121,3 +123,5 @@ permalink: /kb/304/Q304071/
 	
 	=============================================================================
 	
+
+{% endraw %}

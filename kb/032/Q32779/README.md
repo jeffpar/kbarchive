@@ -6,6 +6,8 @@ permalink: /kb/032/Q32779/
 
 ## Q32779: Illegal Instruction under CodeView
 
+{% raw %}
+
 	Article: Q32779
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -26,3 +28,5 @@ permalink: /kb/032/Q32779/
 	   Microsoft has confirmed this to be a problem in Version 5.10. We
 	are researching this problem and will post new information as it
 	becomes available.
+
+{% endraw %}

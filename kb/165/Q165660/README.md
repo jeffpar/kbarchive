@@ -6,6 +6,8 @@ permalink: /kb/165/Q165660/
 
 ## Q165660: 3270 Wizard Dialog Does Not Work Properly When Adding Users
 
+{% raw %}
+
 	Article: Q165660
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/165/Q165660/
 	
 	=============================================================================
 	
+
+{% endraw %}

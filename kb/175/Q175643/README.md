@@ -6,6 +6,8 @@ permalink: /kb/175/Q175643/
 
 ## Q175643: CR Interpreted As CR/LF When Text Job Is Converted to PCL or PS
 
+{% raw %}
+
 	Article: Q175643
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/175/Q175643/
 	
 	=============================================================================
 	
+
+{% endraw %}

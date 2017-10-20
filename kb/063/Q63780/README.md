@@ -6,6 +6,8 @@ permalink: /kb/063/Q63780/
 
 ## Q63780: Flight Simulator: Ultralight Specifications
 
+{% raw %}
+
 	Article: Q63780
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/063/Q63780/
 	
 	=============================================================================
 	
+
+{% endraw %}

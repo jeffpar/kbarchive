@@ -6,6 +6,8 @@ permalink: /kb/220/Q220021/
 
 ## Q220021: FIX: CHtmlView Does Not Repaint Correctly in AppWizard MDI APP
 
+{% raw %}
+
 	Article: Q220021
 	Product(s): Microsoft C Compiler
 	Version(s): 2000,6.0
@@ -116,3 +118,5 @@ permalink: /kb/220/Q220021/
 	
 	=============================================================================
 	
+
+{% endraw %}

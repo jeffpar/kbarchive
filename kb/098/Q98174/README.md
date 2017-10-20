@@ -6,6 +6,8 @@ permalink: /kb/098/Q98174/
 
 ## Q98174: Setting/Checking Inherited vs. Explicit Permissions
 
+{% raw %}
+
 	Article: Q98174
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/098/Q98174/
 	
 	=============================================================================
 	
+
+{% endraw %}

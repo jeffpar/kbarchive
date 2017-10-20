@@ -6,6 +6,8 @@ permalink: /kb/200/Q200440/
 
 ## Q200440: PRB: MFC SAVER Sample Does Not Run Correctly
 
+{% raw %}
+
 	Article: Q200440
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -160,3 +162,5 @@ permalink: /kb/200/Q200440/
 	
 	=============================================================================
 	
+
+{% endraw %}

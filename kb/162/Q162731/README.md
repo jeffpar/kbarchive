@@ -6,6 +6,8 @@ permalink: /kb/162/Q162731/
 
 ## Q162731: FIX: Class Wizard Displays Incorrect Control IDs
 
+{% raw %}
+
 	Article: Q162731
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -57,3 +59,5 @@ permalink: /kb/162/Q162731/
 	
 	=============================================================================
 	
+
+{% endraw %}

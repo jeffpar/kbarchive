@@ -6,6 +6,8 @@ permalink: /kb/304/Q304374/
 
 ## Q304374: Streets 2002: System Requirements
 
+{% raw %}
+
 	Article: Q304374
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -108,3 +110,5 @@ permalink: /kb/304/Q304374/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197276/
 
 ## Q197276: PRB: Closing Top-Level Form with Docked Toolbar Leaves Image
 
+{% raw %}
+
 	Article: Q197276
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -156,3 +158,5 @@ permalink: /kb/197/Q197276/
 	
 	=============================================================================
 	
+
+{% endraw %}

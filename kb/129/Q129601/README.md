@@ -6,6 +6,8 @@ permalink: /kb/129/Q129601/
 
 ## Q129601: Connection Fails on SNA Server with Two Token Ring NICs
 
+{% raw %}
+
 	Article: Q129601
 	Product(s): Microsoft SNA Server
 	Version(s): 3.1; WINDOWS:2.0,2.1; winnt:3.5
@@ -72,3 +74,5 @@ permalink: /kb/129/Q129601/
 	
 	=============================================================================
 	
+
+{% endraw %}

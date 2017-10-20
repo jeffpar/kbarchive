@@ -6,6 +6,8 @@ permalink: /kb/269/Q269221/
 
 ## Q269221: Alias Is Not Deleted When  Associated Metaverse Object Deleted
 
+{% raw %}
+
 	Article: Q269221
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2
@@ -54,3 +56,5 @@ permalink: /kb/269/Q269221/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198778/
 
 ## Q198778: SMSINST: Adding Shortcuts to Start Menu When Using System Polici
 
+{% raw %}
+
 	Article: Q198778
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0
@@ -119,3 +121,5 @@ permalink: /kb/198/Q198778/
 	
 	=============================================================================
 	
+
+{% endraw %}

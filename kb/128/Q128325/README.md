@@ -6,6 +6,8 @@ permalink: /kb/128/Q128325/
 
 ## Q128325: XADM: Reclaiming Disk Space for the Information Store
 
+{% raw %}
+
 	Article: Q128325
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -148,3 +150,5 @@ permalink: /kb/128/Q128325/
 	
 	=============================================================================
 	
+
+{% endraw %}

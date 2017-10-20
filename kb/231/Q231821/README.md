@@ -6,6 +6,8 @@ permalink: /kb/231/Q231821/
 
 ## Q231821: SMS: Getdisk and 95Getdsk Display Messages When Verbose Mode Off
 
+{% raw %}
+
 	Article: Q231821
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -153,3 +155,5 @@ permalink: /kb/231/Q231821/
 	
 	=============================================================================
 	
+
+{% endraw %}

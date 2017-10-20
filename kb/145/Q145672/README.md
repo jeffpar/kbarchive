@@ -6,6 +6,8 @@ permalink: /kb/145/Q145672/
 
 ## Q145672: Pregnancy: How Do I Install and Set Up My Sound Card?
 
+{% raw %}
+
 	Article: Q145672
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -75,3 +77,5 @@ permalink: /kb/145/Q145672/
 	
 	=============================================================================
 	
+
+{% endraw %}

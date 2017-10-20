@@ -6,6 +6,8 @@ permalink: /kb/127/Q127795/
 
 ## Q127795: INF Back-Link Functionality in Visual FoxPro for Windows
 
+{% raw %}
+
 	Article: Q127795
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/127/Q127795/
 	
 	=============================================================================
 	
+
+{% endraw %}

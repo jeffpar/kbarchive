@@ -6,6 +6,8 @@ permalink: /kb/153/Q153754/
 
 ## Q153754: XADM: Misleading NDR When Recipient has Incoming Size Limit
 
+{% raw %}
+
 	Article: Q153754
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/153/Q153754/
 	
 	=============================================================================
 	
+
+{% endraw %}

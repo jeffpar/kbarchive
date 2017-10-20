@@ -6,6 +6,8 @@ permalink: /kb/099/Q99172/
 
 ## Q99172: 3COM: Gateway Does Not Work After Successful Install
 
+{% raw %}
+
 	Article: Q99172
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -83,3 +85,5 @@ permalink: /kb/099/Q99172/
 	
 	=============================================================================
 	
+
+{% endraw %}

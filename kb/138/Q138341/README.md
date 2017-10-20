@@ -6,6 +6,8 @@ permalink: /kb/138/Q138341/
 
 ## Q138341: Dialing with &quot;W&quot; Calling Card Dialing Rules Hangs Modem
 
+{% raw %}
+
 	Article: Q138341
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -73,3 +75,5 @@ permalink: /kb/138/Q138341/
 	
 	=============================================================================
 	
+
+{% endraw %}

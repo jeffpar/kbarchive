@@ -6,6 +6,8 @@ permalink: /kb/128/Q128346/
 
 ## Q128346: Error Messages Creating an Emergency Boot Disk
 
+{% raw %}
+
 	Article: Q128346
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/128/Q128346/
 	
 	=============================================================================
 	
+
+{% endraw %}

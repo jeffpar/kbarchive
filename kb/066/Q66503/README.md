@@ -6,6 +6,8 @@ permalink: /kb/066/Q66503/
 
 ## Q66503: Cannot ALT+ESC or CTRL+ESC to Switch Out of Learning Windows
 
+{% raw %}
+
 	Article: Q66503
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/066/Q66503/
 	
 	=============================================================================
 	
+
+{% endraw %}

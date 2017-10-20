@@ -6,6 +6,8 @@ permalink: /kb/168/Q168891/
 
 ## Q168891: Err Msg: Hotfix Internal Consistency Error: Invalid Tree Pointer
 
+{% raw %}
+
 	Article: Q168891
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -97,3 +99,5 @@ permalink: /kb/168/Q168891/
 	
 	=============================================================================
 	
+
+{% endraw %}

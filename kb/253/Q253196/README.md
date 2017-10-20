@@ -6,6 +6,8 @@ permalink: /kb/253/Q253196/
 
 ## Q253196: XFOR: cc:Mail DB8 SMTP PAB Entries Are Not Migrated to Exchange
 
+{% raw %}
+
 	Article: Q253196
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -59,3 +61,5 @@ permalink: /kb/253/Q253196/
 	
 	=============================================================================
 	
+
+{% endraw %}

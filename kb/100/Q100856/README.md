@@ -6,6 +6,8 @@ permalink: /kb/100/Q100856/
 
 ## Q100856: Compressed Waveform Files Don't Rewind or Repeat
 
+{% raw %}
+
 	Article: Q100856
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/100/Q100856/
 	
 	=============================================================================
 	
+
+{% endraw %}

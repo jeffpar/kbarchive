@@ -6,6 +6,8 @@ permalink: /kb/119/Q119062/
 
 ## Q119062: PRB: File &quot;C:&#92;TEMP&#92;99999999.TMP&quot; Does Not Exist
 
+{% raw %}
+
 	Article: Q119062
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0,3.0b
@@ -90,3 +92,5 @@ permalink: /kb/119/Q119062/
 	
 	=============================================================================
 	
+
+{% endraw %}

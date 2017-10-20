@@ -6,6 +6,8 @@ permalink: /kb/240/Q240632/
 
 ## Q240632: World Atlas 2000: Hangs When You Disconnect from the Internet
 
+{% raw %}
+
 	Article: Q240632
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -53,3 +55,5 @@ permalink: /kb/240/Q240632/
 	
 	=============================================================================
 	
+
+{% endraw %}

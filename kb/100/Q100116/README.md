@@ -6,6 +6,8 @@ permalink: /kb/100/Q100116/
 
 ## Q100116: MS-DOS Applications That Use MSDOSDATA Environment Variable
 
+{% raw %}
+
 	Article: Q100116
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -60,3 +62,5 @@ permalink: /kb/100/Q100116/
 	
 	=============================================================================
 	
+
+{% endraw %}

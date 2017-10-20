@@ -6,6 +6,8 @@ permalink: /kb/079/Q79809/
 
 ## Q79809: Persistent Net Connections with LAN Manager 2.1
 
+{% raw %}
+
 	Article: Q79809
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/079/Q79809/
 	
 	=============================================================================
 	
+
+{% endraw %}

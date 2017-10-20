@@ -6,6 +6,8 @@ permalink: /kb/261/Q261071/
 
 ## Q261071: MCM2: Game Stops Responding After Long Period of Inactivity
 
+{% raw %}
+
 	Article: Q261071
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -87,3 +89,5 @@ permalink: /kb/261/Q261071/
 	
 	=============================================================================
 	
+
+{% endraw %}

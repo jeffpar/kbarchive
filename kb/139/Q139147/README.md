@@ -6,6 +6,8 @@ permalink: /kb/139/Q139147/
 
 ## Q139147: Right Click On Title Does Not Activate Control Menu
 
+{% raw %}
+
 	Article: Q139147
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,95
@@ -55,3 +57,5 @@ permalink: /kb/139/Q139147/
 	
 	=============================================================================
 	
+
+{% endraw %}

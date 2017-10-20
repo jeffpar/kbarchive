@@ -6,6 +6,8 @@ permalink: /kb/275/Q275122/
 
 ## Q275122: Error Message: Microsoft Golf Cannot Be Run in Large Font Mode
 
+{% raw %}
+
 	Article: Q275122
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -72,3 +74,5 @@ permalink: /kb/275/Q275122/
 	
 	=============================================================================
 	
+
+{% endraw %}

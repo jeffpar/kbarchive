@@ -6,6 +6,8 @@ permalink: /kb/085/Q85607/
 
 ## Q85607: FAX: Errors Spooling to Printer
 
+{% raw %}
+
 	Article: Q85607
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/085/Q85607/
 	
 	=============================================================================
 	
+
+{% endraw %}

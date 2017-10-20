@@ -6,6 +6,8 @@ permalink: /kb/183/Q183564/
 
 ## Q183564: Start Parameter of Find Method Produces Error Message
 
+{% raw %}
+
 	Article: Q183564
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -52,3 +54,5 @@ permalink: /kb/183/Q183564/
 	
 	=============================================================================
 	
+
+{% endraw %}

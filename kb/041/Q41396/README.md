@@ -6,6 +6,8 @@ permalink: /kb/041/Q41396/
 
 ## Q41396: In QB, &quot;Blank lines Not Allowed before SUB/FUNCTION&quot; Misleads
 
+{% raw %}
+
 	Article: Q41396
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -70,3 +72,5 @@ permalink: /kb/041/Q41396/
 	
 	7. If you ignore the messages and enter the SUB or FUNCTION statement,
 	   the machine will hang, possibly requiring a cold boot.
+
+{% endraw %}

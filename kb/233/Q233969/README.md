@@ -6,6 +6,8 @@ permalink: /kb/233/Q233969/
 
 ## Q233969: SSIEnableCmdDirective Is Set to FALSE by Default
 
+{% raw %}
+
 	Article: Q233969
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -69,3 +71,5 @@ permalink: /kb/233/Q233969/
 	
 	=============================================================================
 	
+
+{% endraw %}

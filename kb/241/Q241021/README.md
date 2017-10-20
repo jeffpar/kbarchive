@@ -6,6 +6,8 @@ permalink: /kb/241/Q241021/
 
 ## Q241021: MS Windows NT 4.0 Security, Audit, and Control Corrections
 
+{% raw %}
+
 	Article: Q241021
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/241/Q241021/
 	
 	=============================================================================
 	
+
+{% endraw %}

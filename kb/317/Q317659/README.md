@@ -6,6 +6,8 @@ permalink: /kb/317/Q317659/
 
 ## Q317659: PRB: If You Rebind Only the Solution File, Change Can't Check In
 
+{% raw %}
+
 	Article: Q317659
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/317/Q317659/
 	
 	=============================================================================
 	
+
+{% endraw %}

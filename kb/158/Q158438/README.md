@@ -6,6 +6,8 @@ permalink: /kb/158/Q158438/
 
 ## Q158438: Enabling Non-Admin Users to Remotely Monitor with PERFMON
 
+{% raw %}
+
 	Article: Q158438
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -109,3 +111,5 @@ permalink: /kb/158/Q158438/
 	
 	=============================================================================
 	
+
+{% endraw %}

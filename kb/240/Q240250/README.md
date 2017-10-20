@@ -6,6 +6,8 @@ permalink: /kb/240/Q240250/
 
 ## Q240250: Migration from SMS 1.2 to 2.0 Uninstalls LANDesk Files
 
+{% raw %}
+
 	Article: Q240250
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -87,3 +89,5 @@ permalink: /kb/240/Q240250/
 	
 	=============================================================================
 	
+
+{% endraw %}

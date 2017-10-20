@@ -6,6 +6,8 @@ permalink: /kb/105/Q105563/
 
 ## Q105563: Mozart: Mozart Hangs when Restored from Program Manager Icon
 
+{% raw %}
+
 	Article: Q105563
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/105/Q105563/
 	
 	=============================================================================
 	
+
+{% endraw %}

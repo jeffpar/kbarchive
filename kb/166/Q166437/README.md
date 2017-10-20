@@ -6,6 +6,8 @@ permalink: /kb/166/Q166437/
 
 ## Q166437: Cannot Install Internet Mail Service for Microsoft Exchange
 
+{% raw %}
+
 	Article: Q166437
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -72,3 +74,5 @@ permalink: /kb/166/Q166437/
 	
 	=============================================================================
 	
+
+{% endraw %}

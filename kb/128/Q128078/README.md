@@ -6,6 +6,8 @@ permalink: /kb/128/Q128078/
 
 ## Q128078: How to Trap for &quot;Not a Database&quot; Error in a Corrupt .DBC
 
+{% raw %}
+
 	Article: Q128078
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -80,3 +82,5 @@ permalink: /kb/128/Q128078/
 	
 	=============================================================================
 	
+
+{% endraw %}

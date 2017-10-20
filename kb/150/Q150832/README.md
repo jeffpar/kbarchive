@@ -6,6 +6,8 @@ permalink: /kb/150/Q150832/
 
 ## Q150832: Unable to Connect to a Lotus Notes Server Over Router
 
+{% raw %}
+
 	Article: Q150832
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.11 3.50 3.51 95
@@ -73,3 +75,5 @@ permalink: /kb/150/Q150832/
 	
 	=============================================================================
 	
+
+{% endraw %}

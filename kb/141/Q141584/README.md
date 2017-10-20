@@ -6,6 +6,8 @@ permalink: /kb/141/Q141584/
 
 ## Q141584: Eicon S51 Adapter Supported in Windows NT 3.51
 
+{% raw %}
+
 	Article: Q141584
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -38,3 +40,5 @@ permalink: /kb/141/Q141584/
 	
 	=============================================================================
 	
+
+{% endraw %}

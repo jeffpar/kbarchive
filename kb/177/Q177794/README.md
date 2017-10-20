@@ -6,6 +6,8 @@ permalink: /kb/177/Q177794/
 
 ## Q177794: XADM: Log Files Generated During Backup with Circular Logging
 
+{% raw %}
+
 	Article: Q177794
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -61,3 +63,5 @@ permalink: /kb/177/Q177794/
 	
 	=============================================================================
 	
+
+{% endraw %}

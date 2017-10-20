@@ -6,6 +6,8 @@ permalink: /kb/198/Q198486/
 
 ## Q198486: HOWTO: SQL Server Full-Text Query Using ATL OLEDB Consumer
 
+{% raw %}
+
 	Article: Q198486
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0,7.0
@@ -145,3 +147,5 @@ permalink: /kb/198/Q198486/
 	
 	=============================================================================
 	
+
+{% endraw %}

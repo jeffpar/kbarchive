@@ -6,6 +6,8 @@ permalink: /kb/143/Q143260/
 
 ## Q143260: Default System Security Policy
 
+{% raw %}
+
 	Article: Q143260
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -63,3 +65,5 @@ permalink: /kb/143/Q143260/
 	
 	=============================================================================
 	
+
+{% endraw %}

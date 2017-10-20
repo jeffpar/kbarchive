@@ -6,6 +6,8 @@ permalink: /kb/249/Q249224/
 
 ## Q249224: Querying Physical Dirs in IS Using SQL Returns Empty Recordsets
 
+{% raw %}
+
 	Article: Q249224
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/249/Q249224/
 	
 	=============================================================================
 	
+
+{% endraw %}

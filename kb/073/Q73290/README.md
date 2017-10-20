@@ -6,6 +6,8 @@ permalink: /kb/073/Q73290/
 
 ## Q73290: MS-DOS 5 Working Disk Contents (5.25-Inch Disk Set)
 
+{% raw %}
+
 	Article: Q73290
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -201,3 +203,5 @@ permalink: /kb/073/Q73290/
 	
 	=============================================================================
 	
+
+{% endraw %}

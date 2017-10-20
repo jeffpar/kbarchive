@@ -6,6 +6,8 @@ permalink: /kb/170/Q170374/
 
 ## Q170374: MTG: Service Pack 5 Breaks Microsoft Mail Shared Using FPNW
 
+{% raw %}
+
 	Article: Q170374
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): winnt:3.51
@@ -114,3 +116,5 @@ permalink: /kb/170/Q170374/
 	
 	=============================================================================
 	
+
+{% endraw %}

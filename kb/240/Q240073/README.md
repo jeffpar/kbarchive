@@ -6,6 +6,8 @@ permalink: /kb/240/Q240073/
 
 ## Q240073: Privilege Violation When Creating a Pipe Instance in NPFS
 
+{% raw %}
+
 	Article: Q240073
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -126,3 +128,5 @@ permalink: /kb/240/Q240073/
 	
 	=============================================================================
 	
+
+{% endraw %}

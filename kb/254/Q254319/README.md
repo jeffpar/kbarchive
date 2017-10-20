@@ -6,6 +6,8 @@ permalink: /kb/254/Q254319/
 
 ## Q254319: Index Server Fails When it Is Installed on Cluster Server
 
+{% raw %}
+
 	Article: Q254319
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -59,3 +61,5 @@ permalink: /kb/254/Q254319/
 	
 	=============================================================================
 	
+
+{% endraw %}

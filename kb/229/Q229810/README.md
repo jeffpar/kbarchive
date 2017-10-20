@@ -6,6 +6,8 @@ permalink: /kb/229/Q229810/
 
 ## Q229810: SMS: Error: &quot;_com_error exception in MMC Admin UI!&quot;
 
+{% raw %}
+
 	Article: Q229810
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -93,3 +95,5 @@ permalink: /kb/229/Q229810/
 	
 	=============================================================================
 	
+
+{% endraw %}

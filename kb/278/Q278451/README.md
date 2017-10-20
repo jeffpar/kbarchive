@@ -6,6 +6,8 @@ permalink: /kb/278/Q278451/
 
 ## Q278451: PRB: Editing Any String Table Item Changes the First Item
 
+{% raw %}
+
 	Article: Q278451
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -70,3 +72,5 @@ permalink: /kb/278/Q278451/
 	
 	=============================================================================
 	
+
+{% endraw %}

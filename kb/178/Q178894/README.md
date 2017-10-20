@@ -6,6 +6,8 @@ permalink: /kb/178/Q178894/
 
 ## Q178894: Cannot Print to HP LaserJet 6L Printer in Windows NT
 
+{% raw %}
+
 	Article: Q178894
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/178/Q178894/
 	
 	=============================================================================
 	
+
+{% endraw %}

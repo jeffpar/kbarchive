@@ -6,6 +6,8 @@ permalink: /kb/051/Q51412/
 
 ## Q51412: How BASIC's Graphics GET Statement Stores Graphics in an Array
 
+{% raw %}
+
 	Article: Q51412
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -160,3 +162,5 @@ permalink: /kb/051/Q51412/
 	for the Apple Macintosh and Microsoft BASIC Interpreter Versions 1.00,
 	1.01, 2.00, 2.10, and 3.00 for the Apple Macintosh, do not support
 	ForeColor or BackColor, or any color capabilities.
+
+{% endraw %}

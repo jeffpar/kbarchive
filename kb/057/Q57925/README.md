@@ -6,6 +6,8 @@ permalink: /kb/057/Q57925/
 
 ## Q57925: Array Elements Are Passed in Temporary Variables for BC /D
 
+{% raw %}
+
 	Article: Q57925
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -57,3 +59,5 @@ permalink: /kb/057/Q57925/
 	
 	   BC /d Test.bas;
 	   LINK Test.bas;
+
+{% endraw %}

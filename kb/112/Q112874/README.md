@@ -6,6 +6,8 @@ permalink: /kb/112/Q112874/
 
 ## Q112874: Fonts Look Different When Printed and on Screen
 
+{% raw %}
+
 	Article: Q112874
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -46,3 +48,5 @@ permalink: /kb/112/Q112874/
 	
 	=============================================================================
 	
+
+{% endraw %}

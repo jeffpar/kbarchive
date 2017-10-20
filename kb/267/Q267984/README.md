@@ -6,6 +6,8 @@ permalink: /kb/267/Q267984/
 
 ## Q267984: HOWTO: Create and Use Custom Styles with Automation
 
+{% raw %}
+
 	Article: Q267984
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2000,2000, Service Release 1 (SR-1),6.0,97
@@ -133,3 +135,5 @@ permalink: /kb/267/Q267984/
 	
 	=============================================================================
 	
+
+{% endraw %}

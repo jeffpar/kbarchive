@@ -6,6 +6,8 @@ permalink: /kb/137/Q137795/
 
 ## Q137795: Program Names Do Not Appear in Remote MS-DOS Client Diagnostics
 
+{% raw %}
+
 	Article: Q137795
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -43,3 +45,5 @@ permalink: /kb/137/Q137795/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199077/
 
 ## Q199077: SMS: How to Set Thresholds in Healthmon
 
+{% raw %}
+
 	Article: Q199077
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -85,3 +87,5 @@ permalink: /kb/199/Q199077/
 	
 	=============================================================================
 	
+
+{% endraw %}

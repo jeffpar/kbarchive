@@ -6,6 +6,8 @@ permalink: /kb/119/Q119164/
 
 ## Q119164: INFO: Use of Polygon() Versus PolyPolygon()
 
+{% raw %}
+
 	Article: Q119164
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): winnt:3.5,3.51
@@ -71,3 +73,5 @@ permalink: /kb/119/Q119164/
 	
 	=============================================================================
 	
+
+{% endraw %}

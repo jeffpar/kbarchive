@@ -6,6 +6,8 @@ permalink: /kb/090/Q90513/
 
 ## Q90513: WFWG Err Msg: MS-DOS Error SYS0002
 
+{% raw %}
+
 	Article: Q90513
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -81,3 +83,5 @@ permalink: /kb/090/Q90513/
 	
 	=============================================================================
 	
+
+{% endraw %}

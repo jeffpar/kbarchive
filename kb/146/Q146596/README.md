@@ -6,6 +6,8 @@ permalink: /kb/146/Q146596/
 
 ## Q146596: XCLN: Cannot Open Linked Attachment in a Message
 
+{% raw %}
+
 	Article: Q146596
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -74,3 +76,5 @@ permalink: /kb/146/Q146596/
 	
 	=============================================================================
 	
+
+{% endraw %}

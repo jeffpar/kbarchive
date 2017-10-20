@@ -6,6 +6,8 @@ permalink: /kb/159/Q159473/
 
 ## Q159473: FIX: GETDIR() on Empty Floppy Drive Causes Crash
 
+{% raw %}
+
 	Article: Q159473
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -71,3 +73,5 @@ permalink: /kb/159/Q159473/
 	
 	=============================================================================
 	
+
+{% endraw %}

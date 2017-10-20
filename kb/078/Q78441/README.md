@@ -6,6 +6,8 @@ permalink: /kb/078/Q78441/
 
 ## Q78441: EMM386.EXE Hangs on GoldStar 386SX Model GT316
 
+{% raw %}
+
 	Article: Q78441
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -60,3 +62,5 @@ permalink: /kb/078/Q78441/
 	
 	=============================================================================
 	
+
+{% endraw %}

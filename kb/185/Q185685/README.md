@@ -6,6 +6,8 @@ permalink: /kb/185/Q185685/
 
 ## Q185685: TN5250 Event ID 9 Causes TN5250 Server to Stop Responding
 
+{% raw %}
+
 	Article: Q185685
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP2,3.0 SP3,4.0
@@ -76,3 +78,5 @@ permalink: /kb/185/Q185685/
 	
 	=============================================================================
 	
+
+{% endraw %}

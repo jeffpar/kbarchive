@@ -6,6 +6,8 @@ permalink: /kb/121/Q121224/
 
 ## Q121224: DRVSPACE: DBLSPACE Files NOT Updated on Uncompressed Drive
 
+{% raw %}
+
 	Article: Q121224
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -62,3 +64,5 @@ permalink: /kb/121/Q121224/
 	
 	=============================================================================
 	
+
+{% endraw %}

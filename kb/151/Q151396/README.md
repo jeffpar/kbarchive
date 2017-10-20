@@ -6,6 +6,8 @@ permalink: /kb/151/Q151396/
 
 ## Q151396: IBM PS/2 Computer Hangs When Start SNA Server SDLC Connection
 
+{% raw %}
+
 	Article: Q151396
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11,2.11 SP1,3.5,3.51
@@ -127,3 +129,5 @@ permalink: /kb/151/Q151396/
 	
 	=============================================================================
 	
+
+{% endraw %}

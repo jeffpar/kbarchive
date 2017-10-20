@@ -6,6 +6,8 @@ permalink: /kb/199/Q199309/
 
 ## Q199309: XFOR: Unable to Access Mailbox After Migration
 
+{% raw %}
+
 	Article: Q199309
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -91,3 +93,5 @@ permalink: /kb/199/Q199309/
 	
 	=============================================================================
 	
+
+{% endraw %}

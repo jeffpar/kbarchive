@@ -6,6 +6,8 @@ permalink: /kb/225/Q225329/
 
 ## Q225329: Access Violation in Resource Monitor (Resrcmon.exe)
 
+{% raw %}
+
 	Article: Q225329
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/225/Q225329/
 	
 	=============================================================================
 	
+
+{% endraw %}

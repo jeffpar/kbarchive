@@ -6,6 +6,8 @@ permalink: /kb/183/Q183656/
 
 ## Q183656: XCOPY Returns &quot;Invalid Parameter&quot; When Using Date Switch
 
+{% raw %}
+
 	Article: Q183656
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/183/Q183656/
 	
 	=============================================================================
 	
+
+{% endraw %}

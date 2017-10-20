@@ -6,6 +6,8 @@ permalink: /kb/182/Q182421/
 
 ## Q182421: APPC UserID &amp; Password in CPIC Side Info Converted to Capitals
 
+{% raw %}
+
 	Article: Q182421
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -53,3 +55,5 @@ permalink: /kb/182/Q182421/
 	
 	=============================================================================
 	
+
+{% endraw %}

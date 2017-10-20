@@ -6,6 +6,8 @@ permalink: /kb/125/Q125499/
 
 ## Q125499: SWITCH.INF Is Overwritten When You Upgrade to Windows NT 3.5
 
+{% raw %}
+
 	Article: Q125499
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/125/Q125499/
 	
 	=============================================================================
 	
+
+{% endraw %}

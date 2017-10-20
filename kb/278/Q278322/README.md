@@ -6,6 +6,8 @@ permalink: /kb/278/Q278322/
 
 ## Q278322: Zone Error Message: Browser Not Supported
 
+{% raw %}
+
 	Article: Q278322
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/278/Q278322/
 	
 	=============================================================================
 	
+
+{% endraw %}

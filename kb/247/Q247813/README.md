@@ -6,6 +6,8 @@ permalink: /kb/247/Q247813/
 
 ## Q247813: XCLN: Messages Not Saved to Drafts Folder
 
+{% raw %}
+
 	Article: Q247813
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,98
@@ -80,3 +82,5 @@ permalink: /kb/247/Q247813/
 	
 	=============================================================================
 	
+
+{% endraw %}

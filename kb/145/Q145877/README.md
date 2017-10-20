@@ -6,6 +6,8 @@ permalink: /kb/145/Q145877/
 
 ## Q145877: XLCN: Err Msg: Setup.ini Forced to Quit Product
 
+{% raw %}
+
 	Article: Q145877
 	Product(s): Microsoft Exchange
 	Version(s): 3.2 4.0
@@ -171,3 +173,5 @@ permalink: /kb/145/Q145877/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50224/
 
 ## Q50224: Watch Bytes (wb) Command Can Be Used to Watch a Buffer in HEX
 
+{% raw %}
+
 	Article: Q50224
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -44,3 +46,5 @@ permalink: /kb/050/Q50224/
 	For more information on the wb command in CodeView, see the "Microsoft
 	CodeView and Utilities, Microsoft Editor, Mixed-Language Programming
 	Guide" manual.
+
+{% endraw %}

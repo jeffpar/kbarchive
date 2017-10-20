@@ -6,6 +6,8 @@ permalink: /kb/180/Q180439/
 
 ## Q180439: Encarta 95 Err Msg: Cannot Open Encart95.stf
 
+{% raw %}
+
 	Article: Q180439
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition
@@ -94,3 +96,5 @@ permalink: /kb/180/Q180439/
 	
 	=============================================================================
 	
+
+{% endraw %}

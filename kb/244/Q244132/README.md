@@ -6,6 +6,8 @@ permalink: /kb/244/Q244132/
 
 ## Q244132: DNS Server Logs Event 453 or 7053 (Sendto Function Failed)
 
+{% raw %}
+
 	Article: Q244132
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4,4.0 SP5,4.0 SP6
@@ -103,3 +105,5 @@ permalink: /kb/244/Q244132/
 	
 	=============================================================================
 	
+
+{% endraw %}

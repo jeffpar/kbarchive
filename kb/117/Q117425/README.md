@@ -6,6 +6,8 @@ permalink: /kb/117/Q117425/
 
 ## Q117425: Err Msg: SCREG.EXE Application Error
 
+{% raw %}
+
 	Article: Q117425
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -53,3 +55,5 @@ permalink: /kb/117/Q117425/
 	
 	=============================================================================
 	
+
+{% endraw %}

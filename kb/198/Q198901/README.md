@@ -6,6 +6,8 @@ permalink: /kb/198/Q198901/
 
 ## Q198901: SAMPLE: PageSet.exe Programmatically Changes Default Printer
 
+{% raw %}
+
 	Article: Q198901
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -153,3 +155,5 @@ permalink: /kb/198/Q198901/
 	
 	=============================================================================
 	
+
+{% endraw %}

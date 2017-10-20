@@ -6,6 +6,8 @@ permalink: /kb/157/Q157785/
 
 ## Q157785: Msbatch.inf Parameters: Installing MSNDS
 
+{% raw %}
+
 	Article: Q157785
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -126,3 +128,5 @@ permalink: /kb/157/Q157785/
 	
 	=============================================================================
 	
+
+{% endraw %}

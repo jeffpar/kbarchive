@@ -6,6 +6,8 @@ permalink: /kb/079/Q79285/
 
 ## Q79285: FIX: MASM Generates a _TEXT Segment in Far Code Models
 
+{% raw %}
+
 	Article: Q79285
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -60,3 +62,5 @@ permalink: /kb/079/Q79285/
 	
 	=============================================================================
 	
+
+{% endraw %}

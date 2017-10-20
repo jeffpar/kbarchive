@@ -6,6 +6,8 @@ permalink: /kb/314/Q314991/
 
 ## Q314991: INFO: VB 6.0 Does Not Support Applications for Multiple Monitors
 
+{% raw %}
+
 	Article: Q314991
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -42,3 +44,5 @@ permalink: /kb/314/Q314991/
 	
 	=============================================================================
 	
+
+{% endraw %}

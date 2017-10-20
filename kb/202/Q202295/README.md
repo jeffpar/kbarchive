@@ -6,6 +6,8 @@ permalink: /kb/202/Q202295/
 
 ## Q202295: XIMS: IMS Configuration May Unexpectedly Overwrite Proxy Address
 
+{% raw %}
+
 	Article: Q202295
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/202/Q202295/
 	
 	=============================================================================
 	
+
+{% endraw %}

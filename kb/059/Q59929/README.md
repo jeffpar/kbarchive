@@ -6,6 +6,8 @@ permalink: /kb/059/Q59929/
 
 ## Q59929: MSETUP Deletes Reference to MOUSE.SYS in CONFIG.SYS
 
+{% raw %}
+
 	Article: Q59929
 	Product(s): See article
 	Version(s): 1.00
@@ -25,3 +27,5 @@ permalink: /kb/059/Q59929/
 	
 	Do not run MSETUP on an OS/2 system, and do not load the DOS mouse
 	driver to make the mouse work in the DOS box.
+
+{% endraw %}

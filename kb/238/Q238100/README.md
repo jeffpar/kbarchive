@@ -6,6 +6,8 @@ permalink: /kb/238/Q238100/
 
 ## Q238100: HOWTO: Limit 32-Bit MFC SDI App to a Single Instance in WinCE
 
+{% raw %}
+
 	Article: Q238100
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -128,3 +130,5 @@ permalink: /kb/238/Q238100/
 	
 	=============================================================================
 	
+
+{% endraw %}

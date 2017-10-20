@@ -6,6 +6,8 @@ permalink: /kb/222/Q222087/
 
 ## Q222087: How To Combine Multiple SNA Subdomains Into One Using Snacfg
 
+{% raw %}
+
 	Article: Q222087
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11,2.11SP1,2.11SP2,3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -159,3 +161,5 @@ permalink: /kb/222/Q222087/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89666/
 
 ## Q89666: PRB: &quot;Too Many PICTURE Characters Specified&quot; Error Cause
 
+{% raw %}
+
 	Article: Q89666
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01; MS-DOS:2.1
@@ -58,3 +60,5 @@ permalink: /kb/089/Q89666/
 	
 	=============================================================================
 	
+
+{% endraw %}

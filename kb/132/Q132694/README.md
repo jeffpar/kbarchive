@@ -6,6 +6,8 @@ permalink: /kb/132/Q132694/
 
 ## Q132694: Windows NT May Hang With DEC Pathworks Installed
 
+{% raw %}
+
 	Article: Q132694
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -59,3 +61,5 @@ permalink: /kb/132/Q132694/
 	
 	=============================================================================
 	
+
+{% endraw %}

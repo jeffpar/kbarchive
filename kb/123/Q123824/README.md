@@ -6,6 +6,8 @@ permalink: /kb/123/Q123824/
 
 ## Q123824: X400: Err Msg: ERROR 1 (TRAN): Invalid TPDU 70 in State 4
 
+{% raw %}
+
 	Article: Q123824
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2x
@@ -83,3 +85,5 @@ permalink: /kb/123/Q123824/
 	
 	=============================================================================
 	
+
+{% endraw %}

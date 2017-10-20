@@ -6,6 +6,8 @@ permalink: /kb/151/Q151797/
 
 ## Q151797: HOWTO: How To Create an SQL Outer Join Using the View Designer
 
+{% raw %}
+
 	Article: Q151797
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b
@@ -78,3 +80,5 @@ permalink: /kb/151/Q151797/
 	
 	=============================================================================
 	
+
+{% endraw %}

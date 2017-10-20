@@ -6,6 +6,8 @@ permalink: /kb/083/Q83735/
 
 ## Q83735: LVMD.386 and LMOUSE.DRV Not Installed with Windows 3.1
 
+{% raw %}
+
 	Article: Q83735
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -89,3 +91,5 @@ permalink: /kb/083/Q83735/
 	
 	=============================================================================
 	
+
+{% endraw %}

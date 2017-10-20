@@ -6,6 +6,8 @@ permalink: /kb/153/Q153563/
 
 ## Q153563: SMS: Inventory of NetWare Servers Is Delayed
 
+{% raw %}
+
 	Article: Q153563
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -77,3 +79,5 @@ permalink: /kb/153/Q153563/
 	
 	=============================================================================
 	
+
+{% endraw %}

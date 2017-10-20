@@ -6,6 +6,8 @@ permalink: /kb/155/Q155936/
 
 ## Q155936: PRB: Closing Table Loses Changes with Table Buffering
 
+{% raw %}
+
 	Article: Q155936
 	Product(s): Microsoft FoxPro
 	Version(s): 5.00
@@ -123,3 +125,5 @@ permalink: /kb/155/Q155936/
 	
 	=============================================================================
 	
+
+{% endraw %}

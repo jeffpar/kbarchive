@@ -6,6 +6,8 @@ permalink: /kb/324/Q324190/
 
 ## Q324190: Cannot Map Groups with a GID That Is Longer Than 999,999
 
+{% raw %}
+
 	Article: Q324190
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2 OEM Only
@@ -74,3 +76,5 @@ permalink: /kb/324/Q324190/
 	
 	=============================================================================
 	
+
+{% endraw %}

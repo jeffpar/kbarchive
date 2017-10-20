@@ -6,6 +6,8 @@ permalink: /kb/310/Q310762/
 
 ## Q310762: ENC: Encarta Quits Unexpectedly During Setup
 
+{% raw %}
+
 	Article: Q310762
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -116,3 +118,5 @@ permalink: /kb/310/Q310762/
 	
 	=============================================================================
 	
+
+{% endraw %}

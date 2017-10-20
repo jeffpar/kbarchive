@@ -6,6 +6,8 @@ permalink: /kb/249/Q249003/
 
 ## Q249003: DHCP Clients Receive Identical IP and Default Gateway Addresses
 
+{% raw %}
+
 	Article: Q249003
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/249/Q249003/
 	
 	=============================================================================
 	
+
+{% endraw %}

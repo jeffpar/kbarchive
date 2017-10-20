@@ -6,6 +6,8 @@ permalink: /kb/041/Q41581/
 
 ## Q41581: More Information about BASIC's DRAW Statement Macro Language
 
+{% raw %}
+
 	Article: Q41581
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -115,3 +117,5 @@ permalink: /kb/041/Q41581/
 	
 	Please refer to the BASIC language reference for further details about
 	the DRAW statement.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162300/
 
 ## Q162300: HOWTO: Converting VFP3 Source Control Projects to VFP5
 
+{% raw %}
+
 	Article: Q162300
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0
@@ -175,3 +177,5 @@ permalink: /kb/162/Q162300/
 	
 	=============================================================================
 	
+
+{% endraw %}

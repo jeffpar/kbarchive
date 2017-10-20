@@ -6,6 +6,8 @@ permalink: /kb/185/Q185207/
 
 ## Q185207: PRB: ODBC's SQL Config Driver Failed for Driver SQL Server-setup
 
+{% raw %}
+
 	Article: Q185207
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -62,3 +64,5 @@ permalink: /kb/185/Q185207/
 	
 	=============================================================================
 	
+
+{% endraw %}

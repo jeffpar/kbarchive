@@ -6,6 +6,8 @@ permalink: /kb/088/Q88886/
 
 ## Q88886: Using ON KEY Command in FoxBASE+
 
+{% raw %}
+
 	Article: Q88886
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:1.21,2.1
@@ -64,3 +66,5 @@ permalink: /kb/088/Q88886/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179192/
 
 ## Q179192: HOWTO: Limit Cursor Movement Inside a Form
 
+{% raw %}
+
 	Article: Q179192
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -136,3 +138,5 @@ permalink: /kb/179/Q179192/
 	
 	=============================================================================
 	
+
+{% endraw %}

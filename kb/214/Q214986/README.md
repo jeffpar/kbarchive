@@ -6,6 +6,8 @@ permalink: /kb/214/Q214986/
 
 ## Q214986: SMS: Cannot Print Euro Currency Symbol
 
+{% raw %}
+
 	Article: Q214986
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/214/Q214986/
 	
 	=============================================================================
 	
+
+{% endraw %}

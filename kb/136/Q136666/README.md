@@ -6,6 +6,8 @@ permalink: /kb/136/Q136666/
 
 ## Q136666: How to Make a Day Date Spinner
 
+{% raw %}
+
 	Article: Q136666
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -117,3 +119,5 @@ permalink: /kb/136/Q136666/
 	
 	=============================================================================
 	
+
+{% endraw %}

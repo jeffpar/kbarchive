@@ -6,6 +6,8 @@ permalink: /kb/156/Q156549/
 
 ## Q156549: FIX: Click Event of a List Box Fires Twice
 
+{% raw %}
+
 	Article: Q156549
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0
@@ -85,3 +87,5 @@ permalink: /kb/156/Q156549/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/063/Q63249/
 
 ## Q63249: Mac AL: AppleLink GW Recipients Are Listed in Simple User List
 
+{% raw %}
+
 	Article: Q63249
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -41,3 +43,5 @@ permalink: /kb/063/Q63249/
 	
 	=============================================================================
 	
+
+{% endraw %}

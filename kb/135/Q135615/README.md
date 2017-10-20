@@ -6,6 +6,8 @@ permalink: /kb/135/Q135615/
 
 ## Q135615: PRB: Setup Fails If Too Much Copyright Information Is Entered
 
+{% raw %}
+
 	Article: Q135615
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -78,3 +80,5 @@ permalink: /kb/135/Q135615/
 	
 	=============================================================================
 	
+
+{% endraw %}

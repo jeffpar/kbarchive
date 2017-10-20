@@ -6,6 +6,8 @@ permalink: /kb/186/Q186410/
 
 ## Q186410: SMS: 16-bit Background Job Causes WOW VDM Error Message
 
+{% raw %}
+
 	Article: Q186410
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -71,3 +73,5 @@ permalink: /kb/186/Q186410/
 	
 	=============================================================================
 	
+
+{% endraw %}

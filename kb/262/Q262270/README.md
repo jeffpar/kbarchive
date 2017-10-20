@@ -6,6 +6,8 @@ permalink: /kb/262/Q262270/
 
 ## Q262270: Outbound IMS Mail Backing Up Due to Incorrect TCP/IP LAN Setting
 
+{% raw %}
+
 	Article: Q262270
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; winnt:5.5 SP3
@@ -73,3 +75,5 @@ permalink: /kb/262/Q262270/
 	
 	=============================================================================
 	
+
+{% endraw %}

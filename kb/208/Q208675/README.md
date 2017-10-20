@@ -6,6 +6,8 @@ permalink: /kb/208/Q208675/
 
 ## Q208675: AT Command Displays Scheduled Tasks for Sunday Incorrectly
 
+{% raw %}
+
 	Article: Q208675
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/208/Q208675/
 	
 	=============================================================================
 	
+
+{% endraw %}

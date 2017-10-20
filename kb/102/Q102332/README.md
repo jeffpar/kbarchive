@@ -6,6 +6,8 @@ permalink: /kb/102/Q102332/
 
 ## Q102332: How to Show a Custom Common Dialog using CFileDialog
 
+{% raw %}
+
 	Article: Q102332
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/102/Q102332/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137028/
 
 ## Q137028: BUG: Activating and Closing OLE Object Causes GP Fault
 
+{% raw %}
+
 	Article: Q137028
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -75,3 +77,5 @@ permalink: /kb/137/Q137028/
 	
 	=============================================================================
 	
+
+{% endraw %}

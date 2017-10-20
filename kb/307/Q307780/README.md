@@ -6,6 +6,8 @@ permalink: /kb/307/Q307780/
 
 ## Q307780: INFO: Administrator Changes Not Reflected Until App Restarted
 
+{% raw %}
+
 	Article: Q307780
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -48,3 +50,5 @@ permalink: /kb/307/Q307780/
 	
 	=============================================================================
 	
+
+{% endraw %}

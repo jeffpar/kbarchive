@@ -6,6 +6,8 @@ permalink: /kb/298/Q298135/
 
 ## Q298135: PRB: Print Method Does Not Appear in Object Browser or ALM
 
+{% raw %}
+
 	Article: Q298135
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -111,3 +113,5 @@ permalink: /kb/298/Q298135/
 	
 	=============================================================================
 	
+
+{% endraw %}

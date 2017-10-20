@@ -6,6 +6,8 @@ permalink: /kb/125/Q125796/
 
 ## Q125796: PRB: GP Fault when Use CString Objects Inside TRACE&lt;x&gt; Macros
 
+{% raw %}
+
 	Article: Q125796
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:; :1.0,1.5,1.51,1.52,2.0,2.1,4.0
@@ -92,3 +94,5 @@ permalink: /kb/125/Q125796/
 	
 	=============================================================================
 	
+
+{% endraw %}

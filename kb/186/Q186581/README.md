@@ -6,6 +6,8 @@ permalink: /kb/186/Q186581/
 
 ## Q186581: XCON: Event ID:152 When Msg. Filtered by Originator O/R Address
 
+{% raw %}
+
 	Article: Q186581
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -160,3 +162,5 @@ permalink: /kb/186/Q186581/
 	
 	=============================================================================
 	
+
+{% endraw %}

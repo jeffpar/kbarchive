@@ -6,6 +6,8 @@ permalink: /kb/240/Q240822/
 
 ## Q240822: BackOffice Server 4.5 and License Manager
 
+{% raw %}
+
 	Article: Q240822
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -73,3 +75,5 @@ permalink: /kb/240/Q240822/
 	
 	=============================================================================
 	
+
+{% endraw %}

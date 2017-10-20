@@ -6,6 +6,8 @@ permalink: /kb/123/Q123373/
 
 ## Q123373: PC DOS: DrivesNovell Not Support Novell 4.0 Special Characters
 
+{% raw %}
+
 	Article: Q123373
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -58,3 +60,5 @@ permalink: /kb/123/Q123373/
 	
 	=============================================================================
 	
+
+{% endraw %}

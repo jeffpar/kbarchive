@@ -6,6 +6,8 @@ permalink: /kb/274/Q274629/
 
 ## Q274629: Games Hangs or Slow Performance on AMD System w/ VIA Chipset
 
+{% raw %}
+
 	Article: Q274629
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -119,3 +121,5 @@ permalink: /kb/274/Q274629/
 	
 	=============================================================================
 	
+
+{% endraw %}

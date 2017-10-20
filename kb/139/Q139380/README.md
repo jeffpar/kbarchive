@@ -6,6 +6,8 @@ permalink: /kb/139/Q139380/
 
 ## Q139380: Multihomed WINS Server Replication Partner Failures
 
+{% raw %}
+
 	Article: Q139380
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -74,3 +76,5 @@ permalink: /kb/139/Q139380/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119022/
 
 ## Q119022: CONN: Message Redelivered Repeatedly to Mac Clients
 
+{% raw %}
+
 	Article: Q119022
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -90,3 +92,5 @@ permalink: /kb/119/Q119022/
 	
 	=============================================================================
 	
+
+{% endraw %}

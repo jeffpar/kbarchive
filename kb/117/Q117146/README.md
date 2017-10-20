@@ -6,6 +6,8 @@ permalink: /kb/117/Q117146/
 
 ## Q117146: BUG: Invalid &quot;Argument List Doesn't Match A Function&quot; Error
 
+{% raw %}
+
 	Article: Q117146
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01,4.1
@@ -92,3 +94,5 @@ permalink: /kb/117/Q117146/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/044/Q44137/
 
 ## Q44137: CALLing C to Return Single-Precision Gives Incorrect Results
 
+{% raw %}
+
 	Article: Q44137
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -91,3 +93,5 @@ permalink: /kb/044/Q44137/
 	  1.45
 	  2                     <--These are the BASIC PRINT statements.
 	  1.45
+
+{% endraw %}

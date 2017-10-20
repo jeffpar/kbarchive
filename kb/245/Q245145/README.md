@@ -6,6 +6,8 @@ permalink: /kb/245/Q245145/
 
 ## Q245145: How to Move Metaverse Zones to a Subordinate VIA Server
 
+{% raw %}
+
 	Article: Q245145
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -102,3 +104,5 @@ permalink: /kb/245/Q245145/
 	
 	=============================================================================
 	
+
+{% endraw %}

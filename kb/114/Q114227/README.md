@@ -6,6 +6,8 @@ permalink: /kb/114/Q114227/
 
 ## Q114227: Err Msg: Invalid Setting in DBLSPACE.INI: FIRSTDRIVE=...
 
+{% raw %}
+
 	Article: Q114227
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -74,3 +76,5 @@ permalink: /kb/114/Q114227/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84118/
 
 ## Q84118: TrueType Fonts Not Printing Correctly on Panasonic KX-P4450i
 
+{% raw %}
+
 	Article: Q84118
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/084/Q84118/
 	
 	=============================================================================
 	
+
+{% endraw %}

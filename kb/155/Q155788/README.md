@@ -6,6 +6,8 @@ permalink: /kb/155/Q155788/
 
 ## Q155788: HOWTO: Optimize SQL Using the FORCE Clause and SYS(3054)
 
+{% raw %}
+
 	Article: Q155788
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/155/Q155788/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157368/
 
 ## Q157368: Expedia: Some Program Features May Behave Unexpectedly
 
+{% raw %}
+
 	Article: Q157368
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/157/Q157368/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234706/
 
 ## Q234706: Microsoft Pocket Guide to Microsoft PowerPoint 2000 Comments and
 
+{% raw %}
+
 	Article: Q234706
 	Product(s): Microsoft Press
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/234/Q234706/
 	
 	=============================================================================
 	
+
+{% endraw %}

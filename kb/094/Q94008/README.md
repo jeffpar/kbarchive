@@ -6,6 +6,8 @@ permalink: /kb/094/Q94008/
 
 ## Q94008: Troubleshooting Erratic Keyboard Behavior in MS-DOS
 
+{% raw %}
+
 	Article: Q94008
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
@@ -100,3 +102,5 @@ permalink: /kb/094/Q94008/
 	
 	=============================================================================
 	
+
+{% endraw %}

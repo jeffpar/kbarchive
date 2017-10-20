@@ -6,6 +6,8 @@ permalink: /kb/247/Q247224/
 
 ## Q247224: STOP 0x0000000A in Ndis.sys When Using Services for Macintosh
 
+{% raw %}
+
 	Article: Q247224
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -60,3 +62,5 @@ permalink: /kb/247/Q247224/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191118/
 
 ## Q191118: HOWTO: Create Context-Sensitive HTML Help in an MFC Application
 
+{% raw %}
+
 	Article: Q191118
 	Product(s): Microsoft C Compiler
 	Version(s): 1.1,1.3,5.0,6.0
@@ -169,3 +171,5 @@ permalink: /kb/191/Q191118/
 	
 	=============================================================================
 	
+
+{% endraw %}

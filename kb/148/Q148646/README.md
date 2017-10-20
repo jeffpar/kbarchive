@@ -6,6 +6,8 @@ permalink: /kb/148/Q148646/
 
 ## Q148646: Stop 0x0000000A When Referencing Empty Sent Queue
 
+{% raw %}
+
 	Article: Q148646
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -71,3 +73,5 @@ permalink: /kb/148/Q148646/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191614/
 
 ## Q191614: Able to Commit More Memory Than Is Available
 
+{% raw %}
+
 	Article: Q191614
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/191/Q191614/
 	
 	=============================================================================
 	
+
+{% endraw %}

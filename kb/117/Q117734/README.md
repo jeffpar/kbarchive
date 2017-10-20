@@ -6,6 +6,8 @@ permalink: /kb/117/Q117734/
 
 ## Q117734: CD Sampler: Demos Cause GPF with Diamond Stealth Video Card
 
+{% raw %}
+
 	Article: Q117734
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): Spring 1994
@@ -50,3 +52,5 @@ permalink: /kb/117/Q117734/
 	
 	=============================================================================
 	
+
+{% endraw %}

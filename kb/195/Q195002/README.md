@@ -6,6 +6,8 @@ permalink: /kb/195/Q195002/
 
 ## Q195002: Pinball Arcade: Not All Graphic Detail Settings Are Available
 
+{% raw %}
+
 	Article: Q195002
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/195/Q195002/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192986/
 
 ## Q192986: SAMPLE: MODLIST.EXE Shows How to Enumerate Processes and Modules
 
+{% raw %}
+
 	Article: Q192986
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -183,3 +185,5 @@ permalink: /kb/192/Q192986/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124815/
 
 ## Q124815: INFO: Explanation of the Two Available MS Access Drivers
 
+{% raw %}
+
 	Article: Q124815
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -61,3 +63,5 @@ permalink: /kb/124/Q124815/
 	
 	=============================================================================
 	
+
+{% endraw %}

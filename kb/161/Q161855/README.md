@@ -6,6 +6,8 @@ permalink: /kb/161/Q161855/
 
 ## Q161855: XADM: Restoring a Public Info Store from Earlier Service Pack
 
+{% raw %}
+
 	Article: Q161855
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/161/Q161855/
 	
 	=============================================================================
 	
+
+{% endraw %}

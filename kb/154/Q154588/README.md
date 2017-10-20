@@ -6,6 +6,8 @@ permalink: /kb/154/Q154588/
 
 ## Q154588: XADM: SP2 Resets Logging on the Information Store
 
+{% raw %}
+
 	Article: Q154588
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/154/Q154588/
 	
 	=============================================================================
 	
+
+{% endraw %}

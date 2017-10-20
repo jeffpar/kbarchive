@@ -6,6 +6,8 @@ permalink: /kb/234/Q234223/
 
 ## Q234223: File Corruption Saving to NetWare Server with Norton AntiVirus
 
+{% raw %}
+
 	Article: Q234223
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -82,3 +84,5 @@ permalink: /kb/234/Q234223/
 	
 	=============================================================================
 	
+
+{% endraw %}

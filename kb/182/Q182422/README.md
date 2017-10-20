@@ -6,6 +6,8 @@ permalink: /kb/182/Q182422/
 
 ## Q182422: Services on SNA Server Are Incorrectly Enumerated
 
+{% raw %}
+
 	Article: Q182422
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -65,3 +67,5 @@ permalink: /kb/182/Q182422/
 	
 	=============================================================================
 	
+
+{% endraw %}

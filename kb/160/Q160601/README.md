@@ -6,6 +6,8 @@ permalink: /kb/160/Q160601/
 
 ## Q160601: Bad Parameters Sent to Win32k.sys May Cause Stop Message
 
+{% raw %}
+
 	Article: Q160601
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/160/Q160601/
 	
 	=============================================================================
 	
+
+{% endraw %}

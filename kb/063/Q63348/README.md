@@ -6,6 +6,8 @@ permalink: /kb/063/Q63348/
 
 ## Q63348: DataProducts SPG 8050 Printer and Windows
 
+{% raw %}
+
 	Article: Q63348
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/063/Q63348/
 	
 	=============================================================================
 	
+
+{% endraw %}

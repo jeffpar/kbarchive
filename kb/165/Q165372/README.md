@@ -6,6 +6,8 @@ permalink: /kb/165/Q165372/
 
 ## Q165372: XADM: Err Msg When Running Admin Program: OR Is Incomplete
 
+{% raw %}
+
 	Article: Q165372
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/165/Q165372/
 	
 	=============================================================================
 	
+
+{% endraw %}

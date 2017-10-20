@@ -6,6 +6,8 @@ permalink: /kb/196/Q196244/
 
 ## Q196244: FIX: Developer Studio Settings for User Platforms Not Saved
 
+{% raw %}
+
 	Article: Q196244
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:
@@ -67,3 +69,5 @@ permalink: /kb/196/Q196244/
 	
 	=============================================================================
 	
+
+{% endraw %}

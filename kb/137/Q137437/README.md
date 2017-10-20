@@ -6,6 +6,8 @@ permalink: /kb/137/Q137437/
 
 ## Q137437: How SNA Server Manages Send and Receive Window Sizes on SDLC
 
+{% raw %}
+
 	Article: Q137437
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -65,3 +67,5 @@ permalink: /kb/137/Q137437/
 	
 	=============================================================================
 	
+
+{% endraw %}

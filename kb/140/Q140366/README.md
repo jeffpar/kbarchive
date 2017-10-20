@@ -6,6 +6,8 @@ permalink: /kb/140/Q140366/
 
 ## Q140366: Incomplete Requirements for Sender Installation
 
+{% raw %}
+
 	Article: Q140366
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -44,3 +46,5 @@ permalink: /kb/140/Q140366/
 	
 	=============================================================================
 	
+
+{% endraw %}

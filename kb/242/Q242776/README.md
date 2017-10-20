@@ -6,6 +6,8 @@ permalink: /kb/242/Q242776/
 
 ## Q242776: INFO: Redistribute Files with a Windows 2000 Migration DLL
 
+{% raw %}
+
 	Article: Q242776
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/242/Q242776/
 	
 	=============================================================================
 	
+
+{% endraw %}

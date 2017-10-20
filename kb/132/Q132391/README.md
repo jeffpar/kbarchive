@@ -6,6 +6,8 @@ permalink: /kb/132/Q132391/
 
 ## Q132391: Mac Art Gallery ErrMsg: Sorry, There Was a Problem Playing...
 
+{% raw %}
+
 	Article: Q132391
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -65,3 +67,5 @@ permalink: /kb/132/Q132391/
 	
 	=============================================================================
 	
+
+{% endraw %}

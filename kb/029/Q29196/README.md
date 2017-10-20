@@ -6,6 +6,8 @@ permalink: /kb/029/Q29196/
 
 ## Q29196: SORTDEMO.C/ BIND Use and Misuse
 
+{% raw %}
+
 	Article: Q29196
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -72,3 +74,5 @@ permalink: /kb/029/Q29196/
 	   DOS, you must Bind it using the following:
 	
 	   bind sortdemo.exe c:\c\lib\doscalls.lib c:\c\lib\api.lib apilmr.obj
+
+{% endraw %}

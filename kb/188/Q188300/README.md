@@ -6,6 +6,8 @@ permalink: /kb/188/Q188300/
 
 ## Q188300: Golf 98: Cannot Use Golf Courses from Earlier Versions of Golf
 
+{% raw %}
+
 	Article: Q188300
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/188/Q188300/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129944/
 
 ## Q129944: INFO: Do Not Define Functions in DLLs that Raise an Exception
 
+{% raw %}
+
 	Article: Q129944
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -95,3 +97,5 @@ permalink: /kb/129/Q129944/
 	
 	=============================================================================
 	
+
+{% endraw %}

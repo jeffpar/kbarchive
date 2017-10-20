@@ -6,6 +6,8 @@ permalink: /kb/105/Q105361/
 
 ## Q105361: SMTP: Locations of Domain Name Service (DNS) Files
 
+{% raw %}
+
 	Article: Q105361
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -40,3 +42,5 @@ permalink: /kb/105/Q105361/
 	
 	=============================================================================
 	
+
+{% endraw %}

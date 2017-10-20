@@ -6,6 +6,8 @@ permalink: /kb/254/Q254106/
 
 ## Q254106: Access to NetWare Server Stops Working After Applying SP4 or SP5
 
+{% raw %}
+
 	Article: Q254106
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -62,3 +64,5 @@ permalink: /kb/254/Q254106/
 	
 	=============================================================================
 	
+
+{% endraw %}

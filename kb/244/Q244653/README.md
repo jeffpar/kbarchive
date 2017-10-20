@@ -6,6 +6,8 @@ permalink: /kb/244/Q244653/
 
 ## Q244653: SMS: License Metering Messages w/Windows 98/95 Client Computers
 
+{% raw %}
+
 	Article: Q244653
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -62,3 +64,5 @@ permalink: /kb/244/Q244653/
 	
 	=============================================================================
 	
+
+{% endraw %}

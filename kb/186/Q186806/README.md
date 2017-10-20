@@ -6,6 +6,8 @@ permalink: /kb/186/Q186806/
 
 ## Q186806: Only 35 IP Addresses Listed In IIS Admin Drop-down Menu
 
+{% raw %}
+
 	Article: Q186806
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -50,3 +52,5 @@ permalink: /kb/186/Q186806/
 	
 	=============================================================================
 	
+
+{% endraw %}

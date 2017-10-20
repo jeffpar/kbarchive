@@ -6,6 +6,8 @@ permalink: /kb/125/Q125930/
 
 ## Q125930: Paintbrush Image and Scroll Bar Disappears
 
+{% raw %}
+
 	Article: Q125930
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/125/Q125930/
 	
 	=============================================================================
 	
+
+{% endraw %}

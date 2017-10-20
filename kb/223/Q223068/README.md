@@ -6,6 +6,8 @@ permalink: /kb/223/Q223068/
 
 ## Q223068: FIX: RDO InfoMessage Event Behavior Different in VB6 and VB5
 
+{% raw %}
+
 	Article: Q223068
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -112,3 +114,5 @@ permalink: /kb/223/Q223068/
 	
 	=============================================================================
 	
+
+{% endraw %}

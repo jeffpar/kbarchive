@@ -6,6 +6,8 @@ permalink: /kb/218/Q218602/
 
 ## Q218602: Troubleshooting Objects in an ASP Page Using WSH
 
+{% raw %}
+
 	Article: Q218602
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -183,3 +185,5 @@ permalink: /kb/218/Q218602/
 	
 	=============================================================================
 	
+
+{% endraw %}

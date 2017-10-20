@@ -6,6 +6,8 @@ permalink: /kb/158/Q158088/
 
 ## Q158088: Mac Encarta 97: Cannot Install Fonts Through Custom Install
 
+{% raw %}
+
 	Article: Q158088
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -50,3 +52,5 @@ permalink: /kb/158/Q158088/
 	
 	=============================================================================
 	
+
+{% endraw %}

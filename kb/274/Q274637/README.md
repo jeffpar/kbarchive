@@ -6,6 +6,8 @@ permalink: /kb/274/Q274637/
 
 ## Q274637: MSN Explorer Gives Ambiguous Error When Trying To Switch Connect
 
+{% raw %}
+
 	Article: Q274637
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -57,3 +59,5 @@ permalink: /kb/274/Q274637/
 	
 	=============================================================================
 	
+
+{% endraw %}

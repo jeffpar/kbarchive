@@ -6,6 +6,8 @@ permalink: /kb/241/Q241168/
 
 ## Q241168: NBA Inside Drive 2000: Court and Players Not Displayed Properly
 
+{% raw %}
+
 	Article: Q241168
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -83,3 +85,5 @@ permalink: /kb/241/Q241168/
 	
 	=============================================================================
 	
+
+{% endraw %}

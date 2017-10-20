@@ -6,6 +6,8 @@ permalink: /kb/316/Q316660/
 
 ## Q316660: Frequently Asked Questions About MSN Messenger
 
+{% raw %}
+
 	Article: Q316660
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -194,3 +196,5 @@ permalink: /kb/316/Q316660/
 	
 	=============================================================================
 	
+
+{% endraw %}

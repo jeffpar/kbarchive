@@ -6,6 +6,8 @@ permalink: /kb/184/Q184993/
 
 ## Q184993: XFOR: ReadReceipts and NDRs Appear with Message Class Icon
 
+{% raw %}
+
 	Article: Q184993
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -53,3 +55,5 @@ permalink: /kb/184/Q184993/
 	
 	=============================================================================
 	
+
+{% endraw %}

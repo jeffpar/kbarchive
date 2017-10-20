@@ -6,6 +6,8 @@ permalink: /kb/190/Q190475/
 
 ## Q190475: INFO: Understanding Microsoft's Oracle ODBC Driver Versions
 
+{% raw %}
+
 	Article: Q190475
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.0,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202,Build 2.573.44
@@ -101,3 +103,5 @@ permalink: /kb/190/Q190475/
 	
 	=============================================================================
 	
+
+{% endraw %}

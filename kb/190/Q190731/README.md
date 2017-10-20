@@ -6,6 +6,8 @@ permalink: /kb/190/Q190731/
 
 ## Q190731: BUG: Pageframe Border Disappears When Sparse Set to False
 
+{% raw %}
+
 	Article: Q190731
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -78,3 +80,5 @@ permalink: /kb/190/Q190731/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139284/
 
 ## Q139284: Microsoft Backup Menus Disappear with Unsupported Tape
 
+{% raw %}
+
 	Article: Q139284
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -53,3 +55,5 @@ permalink: /kb/139/Q139284/
 	
 	=============================================================================
 	
+
+{% endraw %}

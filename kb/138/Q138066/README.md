@@ -6,6 +6,8 @@ permalink: /kb/138/Q138066/
 
 ## Q138066: HOWTO: Handle OLE Automation Server Timeout and Synchronization
 
+{% raw %}
+
 	Article: Q138066
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/138/Q138066/
 	
 	=============================================================================
 	
+
+{% endraw %}

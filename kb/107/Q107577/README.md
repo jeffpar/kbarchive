@@ -6,6 +6,8 @@ permalink: /kb/107/Q107577/
 
 ## Q107577: Using Novell NetWare's RPRINTER with WFWG 3.11
 
+{% raw %}
+
 	Article: Q107577
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -91,3 +93,5 @@ permalink: /kb/107/Q107577/
 	
 	=============================================================================
 	
+
+{% endraw %}

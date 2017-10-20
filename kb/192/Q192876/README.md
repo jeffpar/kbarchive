@@ -6,6 +6,8 @@ permalink: /kb/192/Q192876/
 
 ## Q192876: BUG: DataFormat Doesn't Behave as Expected Using Datacombo/List
 
+{% raw %}
+
 	Article: Q192876
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -75,3 +77,5 @@ permalink: /kb/192/Q192876/
 	
 	=============================================================================
 	
+
+{% endraw %}

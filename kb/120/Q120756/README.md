@@ -6,6 +6,8 @@ permalink: /kb/120/Q120756/
 
 ## Q120756: WINS Manager: Static Mapping Expiration Dates are 1/18/38
 
+{% raw %}
+
 	Article: Q120756
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/120/Q120756/
 	
 	=============================================================================
 	
+
+{% endraw %}

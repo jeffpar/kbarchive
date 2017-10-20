@@ -6,6 +6,8 @@ permalink: /kb/125/Q125251/
 
 ## Q125251: PC DOS: Monitor Erases Message When Trying to Forward Message
 
+{% raw %}
+
 	Article: Q125251
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2
@@ -47,3 +49,5 @@ permalink: /kb/125/Q125251/
 	
 	=============================================================================
 	
+
+{% endraw %}

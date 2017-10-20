@@ -6,6 +6,8 @@ permalink: /kb/221/Q221989/
 
 ## Q221989: XADM: Buffer Overrun in Exchange Server 5.5 LDAP Service
 
+{% raw %}
+
 	Article: Q221989
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2
@@ -102,3 +104,5 @@ permalink: /kb/221/Q221989/
 	
 	=============================================================================
 	
+
+{% endraw %}

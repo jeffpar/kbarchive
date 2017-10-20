@@ -6,6 +6,8 @@ permalink: /kb/188/Q188895/
 
 ## Q188895: How to Turn Off IUSR_machinename Token Caching
 
+{% raw %}
+
 	Article: Q188895
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/188/Q188895/
 	
 	=============================================================================
 	
+
+{% endraw %}

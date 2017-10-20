@@ -6,6 +6,8 @@ permalink: /kb/142/Q142433/
 
 ## Q142433: BUG: Can't Open Performance Monitor Settings Files Read-Only
 
+{% raw %}
+
 	Article: Q142433
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -47,3 +49,5 @@ permalink: /kb/142/Q142433/
 	
 	=============================================================================
 	
+
+{% endraw %}

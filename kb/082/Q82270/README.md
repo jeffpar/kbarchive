@@ -6,6 +6,8 @@ permalink: /kb/082/Q82270/
 
 ## Q82270: ATTRIB Command May Inadvertently Remove File Attributes
 
+{% raw %}
+
 	Article: Q82270
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -59,3 +61,5 @@ permalink: /kb/082/Q82270/
 	
 	=============================================================================
 	
+
+{% endraw %}

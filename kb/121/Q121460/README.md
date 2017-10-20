@@ -6,6 +6,8 @@ permalink: /kb/121/Q121460/
 
 ## Q121460: Common Object File Format (COFF)
 
+{% raw %}
+
 	Article: Q121460
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5
@@ -168,3 +170,5 @@ permalink: /kb/121/Q121460/
 	
 	=============================================================================
 	
+
+{% endraw %}

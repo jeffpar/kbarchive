@@ -6,6 +6,8 @@ permalink: /kb/152/Q152126/
 
 ## Q152126: Windows NT Setup Stops on Compaq Prosignia 486/66 with Netflex-L
 
+{% raw %}
+
 	Article: Q152126
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -55,3 +57,5 @@ permalink: /kb/152/Q152126/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183484/
 
 ## Q183484: WD97: List Styles Start at Zero After Saving as 6.0/95 or RTF
 
+{% raw %}
+
 	Article: Q183484
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 1 (SR-1)
@@ -162,3 +164,5 @@ permalink: /kb/183/Q183484/
 	
 	=============================================================================
 	
+
+{% endraw %}

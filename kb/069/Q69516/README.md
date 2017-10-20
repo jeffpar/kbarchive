@@ -6,6 +6,8 @@ permalink: /kb/069/Q69516/
 
 ## Q69516: MS-DOS 5.0 UMBs, Enhanced Mode Windows, and LIM 4.0 Support
 
+{% raw %}
+
 	Article: Q69516
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0; WINDOWS:3.0
@@ -70,3 +72,5 @@ permalink: /kb/069/Q69516/
 	
 	=============================================================================
 	
+
+{% endraw %}

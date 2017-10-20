@@ -6,6 +6,8 @@ permalink: /kb/156/Q156282/
 
 ## Q156282: XCLN: Meeting Request Sent to Assistant Will NDR the Response
 
+{% raw %}
+
 	Article: Q156282
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -70,3 +72,5 @@ permalink: /kb/156/Q156282/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/060/Q60969/
 
 ## Q60969: NMAKE Example Using ALL, Pseudotarget and Macros
 
+{% raw %}
+
 	Article: Q60969
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -111,3 +113,5 @@ permalink: /kb/060/Q60969/
 	
 	mymain2.exe : mymain2.obj mylib.lib   # (this uses inference
 	                                      #  rule for linking)
+
+{% endraw %}

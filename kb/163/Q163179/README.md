@@ -6,6 +6,8 @@ permalink: /kb/163/Q163179/
 
 ## Q163179: DOC: Problem with &quot;Applies To&quot; on DblClick Event Help Topic
 
+{% raw %}
+
 	Article: Q163179
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -55,3 +57,5 @@ permalink: /kb/163/Q163179/
 	
 	=============================================================================
 	
+
+{% endraw %}

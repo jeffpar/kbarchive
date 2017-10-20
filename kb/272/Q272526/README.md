@@ -6,6 +6,8 @@ permalink: /kb/272/Q272526/
 
 ## Q272526: XCLN: Administration and Forms Tabs Missing from PST Properties
 
+{% raw %}
+
 	Article: Q272526
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/272/Q272526/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94333/
 
 ## Q94333: SETVER Table Entries Are Not Maintained When Upgrading
 
+{% raw %}
+
 	Article: Q94333
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -64,3 +66,5 @@ permalink: /kb/094/Q94333/
 	
 	=============================================================================
 	
+
+{% endraw %}

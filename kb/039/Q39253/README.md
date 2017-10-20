@@ -6,6 +6,8 @@ permalink: /kb/039/Q39253/
 
 ## Q39253: QB 4.50 Debugger Reference Bar Displays until STOP or END
 
+{% raw %}
+
 	Article: Q39253
 	Product(s): See article
 	Version(s): 4.50
@@ -30,3 +32,5 @@ permalink: /kb/039/Q39253/
 	To restore the normal reference bar, go to the immediate window and
 	type STOP and press ENTER. This will terminate the program and restore
 	the reference bar.
+
+{% endraw %}

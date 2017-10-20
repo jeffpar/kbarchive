@@ -6,6 +6,8 @@ permalink: /kb/185/Q185952/
 
 ## Q185952: Information from BDC Sent to PDC, and Then Replicated to Domain
 
+{% raw %}
+
 	Article: Q185952
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/185/Q185952/
 	
 	=============================================================================
 	
+
+{% endraw %}

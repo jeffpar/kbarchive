@@ -6,6 +6,8 @@ permalink: /kb/177/Q177726/
 
 ## Q177726: XADM: Authrest.exe Err Msg: Dynamic Link Library Not Found
 
+{% raw %}
+
 	Article: Q177726
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -59,3 +61,5 @@ permalink: /kb/177/Q177726/
 	
 	=============================================================================
 	
+
+{% endraw %}

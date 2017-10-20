@@ -6,6 +6,8 @@ permalink: /kb/140/Q140161/
 
 ## Q140161: Bookshelf: Cannot Print Multiple Pages
 
+{% raw %}
+
 	Article: Q140161
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/140/Q140161/
 	
 	=============================================================================
 	
+
+{% endraw %}

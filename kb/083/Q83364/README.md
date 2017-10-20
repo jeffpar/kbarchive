@@ -6,6 +6,8 @@ permalink: /kb/083/Q83364/
 
 ## Q83364: FlshEdit.exe Demonstrates Flashing an Edit Control
 
+{% raw %}
+
 	Article: Q83364
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -89,3 +91,5 @@ permalink: /kb/083/Q83364/
 	
 	=============================================================================
 	
+
+{% endraw %}

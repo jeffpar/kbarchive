@@ -6,6 +6,8 @@ permalink: /kb/064/Q64434/
 
 ## Q64434: The C 6.00 Graphics Library Supports Only One Video Page
 
+{% raw %}
+
 	Article: Q64434
 	Product(s): See article
 	Version(s): 6.00
@@ -17,3 +19,5 @@ permalink: /kb/064/Q64434/
 	Microsoft C graphics functions. This is by program design and may
 	change to allow for more video pages in a future version of the
 	compiler.
+
+{% endraw %}

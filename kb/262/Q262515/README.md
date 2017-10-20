@@ -6,6 +6,8 @@ permalink: /kb/262/Q262515/
 
 ## Q262515: FIX: /GT Compiler Switch May Cause AV During Thread Switch
 
+{% raw %}
+
 	Article: Q262515
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -95,3 +97,5 @@ permalink: /kb/262/Q262515/
 	
 	=============================================================================
 	
+
+{% endraw %}

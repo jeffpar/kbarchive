@@ -6,6 +6,8 @@ permalink: /kb/290/Q290522/
 
 ## Q290522: DNR Local Network Priority Sorting Does Not Work
 
+{% raw %}
+
 	Article: Q290522
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -84,3 +86,5 @@ permalink: /kb/290/Q290522/
 	
 	=============================================================================
 	
+
+{% endraw %}

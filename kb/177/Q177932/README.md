@@ -6,6 +6,8 @@ permalink: /kb/177/Q177932/
 
 ## Q177932: INFO: How to Disable LMHOSTS Lookup During an Unattended Install
 
+{% raw %}
+
 	Article: Q177932
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/177/Q177932/
 	
 	=============================================================================
 	
+
+{% endraw %}

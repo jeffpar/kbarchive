@@ -6,6 +6,8 @@ permalink: /kb/154/Q154895/
 
 ## Q154895: FIX: CInternet::File ReadString() Loses Data
 
+{% raw %}
+
 	Article: Q154895
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -91,3 +93,5 @@ permalink: /kb/154/Q154895/
 	
 	=============================================================================
 	
+
+{% endraw %}

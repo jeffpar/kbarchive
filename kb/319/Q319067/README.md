@@ -6,6 +6,8 @@ permalink: /kb/319/Q319067/
 
 ## Q319067: HOW TO: Run Applications Not in the Context of the System Accoun
 
+{% raw %}
+
 	Article: Q319067
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -193,3 +195,5 @@ permalink: /kb/319/Q319067/
 	
 	=============================================================================
 	
+
+{% endraw %}

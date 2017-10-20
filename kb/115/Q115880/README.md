@@ -6,6 +6,8 @@ permalink: /kb/115/Q115880/
 
 ## Q115880: ADT2: ADT Application Setup Fails with Error -1809
 
+{% raw %}
+
 	Article: Q115880
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -91,3 +93,5 @@ permalink: /kb/115/Q115880/
 	
 	=============================================================================
 	
+
+{% endraw %}

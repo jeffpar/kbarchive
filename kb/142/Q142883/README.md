@@ -6,6 +6,8 @@ permalink: /kb/142/Q142883/
 
 ## Q142883: HOWTO: Troubleshooting Btrieve Connections in Visual FoxPro
 
+{% raw %}
+
 	Article: Q142883
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0b
@@ -163,3 +165,5 @@ permalink: /kb/142/Q142883/
 	
 	=============================================================================
 	
+
+{% endraw %}

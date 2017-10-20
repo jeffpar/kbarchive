@@ -6,6 +6,8 @@ permalink: /kb/128/Q128973/
 
 ## Q128973: How To Create a Vertical Caption in Label Control
 
+{% raw %}
+
 	Article: Q128973
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -135,3 +137,5 @@ permalink: /kb/128/Q128973/
 	
 	=============================================================================
 	
+
+{% endraw %}

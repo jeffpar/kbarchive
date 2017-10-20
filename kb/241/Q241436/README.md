@@ -6,6 +6,8 @@ permalink: /kb/241/Q241436/
 
 ## Q241436: XCLN: Outlook for Macintosh Cannot Access Web Services Using Sec
 
+{% raw %}
+
 	Article: Q241436
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0,8.1,8.2
@@ -82,3 +84,5 @@ permalink: /kb/241/Q241436/
 	
 	=============================================================================
 	
+
+{% endraw %}

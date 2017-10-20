@@ -6,6 +6,8 @@ permalink: /kb/090/Q90214/
 
 ## Q90214: WC Mail Defaults to Two Lines Per Page When Printing
 
+{% raw %}
+
 	Article: Q90214
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 1.0; MS-DOS:3.11
@@ -50,3 +52,5 @@ permalink: /kb/090/Q90214/
 	
 	=============================================================================
 	
+
+{% endraw %}

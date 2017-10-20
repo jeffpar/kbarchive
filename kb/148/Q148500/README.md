@@ -6,6 +6,8 @@ permalink: /kb/148/Q148500/
 
 ## Q148500: XADM: Creating First/Last Names for MS Mail Custom Recipients
 
+{% raw %}
+
 	Article: Q148500
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -145,3 +147,5 @@ permalink: /kb/148/Q148500/
 	
 	=============================================================================
 	
+
+{% endraw %}

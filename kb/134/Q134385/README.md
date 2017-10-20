@@ -6,6 +6,8 @@ permalink: /kb/134/Q134385/
 
 ## Q134385: Unable to Open or Copy Files from a NetWare Server on FDDI Ring
 
+{% raw %}
+
 	Article: Q134385
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 SP2,3.51,4.0
@@ -83,3 +85,5 @@ permalink: /kb/134/Q134385/
 	
 	=============================================================================
 	
+
+{% endraw %}

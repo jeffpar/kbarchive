@@ -6,6 +6,8 @@ permalink: /kb/175/Q175118/
 
 ## Q175118: XWEB: Attachment Size Displays Incorrectly in OWA
 
+{% raw %}
+
 	Article: Q175118
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -46,3 +48,5 @@ permalink: /kb/175/Q175118/
 	
 	=============================================================================
 	
+
+{% endraw %}

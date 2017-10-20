@@ -6,6 +6,8 @@ permalink: /kb/139/Q139205/
 
 ## Q139205: &quot;Path Not Found&quot; Using DIR Command on NetWare Volume
 
+{% raw %}
+
 	Article: Q139205
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/139/Q139205/
 	
 	=============================================================================
 	
+
+{% endraw %}

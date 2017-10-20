@@ -6,6 +6,8 @@ permalink: /kb/162/Q162258/
 
 ## Q162258: How to Remove Cross-Platform Printer Drivers on Windows NT
 
+{% raw %}
+
 	Article: Q162258
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -137,3 +139,5 @@ permalink: /kb/162/Q162258/
 	
 	=============================================================================
 	
+
+{% endraw %}

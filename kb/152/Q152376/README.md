@@ -6,6 +6,8 @@ permalink: /kb/152/Q152376/
 
 ## Q152376: HOWTO: How To Disable Push Buttons on a DialogBar in MFC
 
+{% raw %}
+
 	Article: Q152376
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,2.2,4.0,4.1
@@ -55,9 +57,9 @@ permalink: /kb/152/Q152376/
 	  map:
 	
 	     BEGIN_MESSAGE_MAP(CMainFrame, CMDIFrameWnd)
-	         //{ {AFX_MSG_MAP(CMainFrame)
+	         //{{AFX_MSG_MAP(CMainFrame)
 	         ...
-	         //} }AFX_MSG_MAP
+	         //}}AFX_MSG_MAP
 	         ON_UPDATE_COMMAND_UI(IDC_BUTTON1, OnUpdateButton1)
 	     END_MESSAGE_MAP()
 	
@@ -78,3 +80,5 @@ permalink: /kb/152/Q152376/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154789/
 
 ## Q154789: AVI Playback (Streaming) onto DirectDraw Surface
 
+{% raw %}
+
 	Article: Q154789
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -80,3 +82,5 @@ permalink: /kb/154/Q154789/
 	
 	=============================================================================
 	
+
+{% endraw %}

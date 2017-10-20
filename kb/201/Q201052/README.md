@@ -6,6 +6,8 @@ permalink: /kb/201/Q201052/
 
 ## Q201052: XADM: CRs and DLs Are Not Moved But Are Mapped in Logs
 
+{% raw %}
+
 	Article: Q201052
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/201/Q201052/
 	
 	=============================================================================
 	
+
+{% endraw %}

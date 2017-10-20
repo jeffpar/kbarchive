@@ -6,6 +6,8 @@ permalink: /kb/058/Q58720/
 
 ## Q58720: Quote Function (CTRL+P) Can Fail to Work Properly
 
+{% raw %}
+
 	Article: Q58720
 	Product(s): See article
 	Version(s): 1.00 1.02 | 1.00 1.02
@@ -35,3 +37,5 @@ permalink: /kb/058/Q58720/
 	Microsoft has confirmed this to be a problem with the M Editor Versions
 	1.00 and 1.02. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

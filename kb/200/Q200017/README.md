@@ -6,6 +6,8 @@ permalink: /kb/200/Q200017/
 
 ## Q200017: Domain Controller with 2012 Errors and Connectivity Problems
 
+{% raw %}
+
 	Article: Q200017
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
@@ -126,3 +128,5 @@ permalink: /kb/200/Q200017/
 	
 	=============================================================================
 	
+
+{% endraw %}

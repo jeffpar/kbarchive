@@ -6,6 +6,8 @@ permalink: /kb/064/Q64812/
 
 ## Q64812: Numeric Keypad &quot;&#42;&quot; Key Doesn't Work in Some MS-DOS Apps
 
+{% raw %}
+
 	Article: Q64812
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -63,3 +65,5 @@ permalink: /kb/064/Q64812/
 	
 	=============================================================================
 	
+
+{% endraw %}

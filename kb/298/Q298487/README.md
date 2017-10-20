@@ -6,6 +6,8 @@ permalink: /kb/298/Q298487/
 
 ## Q298487: BUG: Localized Versions of CAB Files for Msjint35.dll Missing
 
+{% raw %}
+
 	Article: Q298487
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -381,3 +383,5 @@ permalink: /kb/298/Q298487/
 	
 	=============================================================================
 	
+
+{% endraw %}

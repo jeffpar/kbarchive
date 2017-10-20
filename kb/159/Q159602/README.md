@@ -6,6 +6,8 @@ permalink: /kb/159/Q159602/
 
 ## Q159602: &quot;The Path Specified...Does Not Contain A Valid....&quot;
 
+{% raw %}
+
 	Article: Q159602
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/159/Q159602/
 	
 	=============================================================================
 	
+
+{% endraw %}

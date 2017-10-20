@@ -6,6 +6,8 @@ permalink: /kb/288/Q288548/
 
 ## Q288548: HOWTO: Override MQMD MSMQ-MQSeries Bridge Extension Fields in VB
 
+{% raw %}
+
 	Article: Q288548
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2000,6.0
@@ -201,3 +203,5 @@ permalink: /kb/288/Q288548/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169316/
 
 ## Q169316: How to Install WAN Services for X.25 Exchange Installations
 
+{% raw %}
+
 	Article: Q169316
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:3.51,4.0
@@ -66,3 +68,5 @@ permalink: /kb/169/Q169316/
 	
 	=============================================================================
 	
+
+{% endraw %}

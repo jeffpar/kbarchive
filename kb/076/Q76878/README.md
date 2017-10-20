@@ -6,6 +6,8 @@ permalink: /kb/076/Q76878/
 
 ## Q76878: Setup Detects an Installed Copy of Windows on Hard Drive
 
+{% raw %}
+
 	Article: Q76878
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0
@@ -50,3 +52,5 @@ permalink: /kb/076/Q76878/
 	
 	=============================================================================
 	
+
+{% endraw %}

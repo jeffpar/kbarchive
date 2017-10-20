@@ -6,6 +6,8 @@ permalink: /kb/190/Q190169/
 
 ## Q190169: Zone: How to Change or Reset a Forgotten Password
 
+{% raw %}
+
 	Article: Q190169
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/190/Q190169/
 	
 	=============================================================================
 	
+
+{% endraw %}

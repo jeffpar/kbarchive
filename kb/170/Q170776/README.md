@@ -6,6 +6,8 @@ permalink: /kb/170/Q170776/
 
 ## Q170776: TP_STARTED Stops Responding If NT App Opens More Than 256 TP
 
+{% raw %}
+
 	Article: Q170776
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0
@@ -62,3 +64,5 @@ permalink: /kb/170/Q170776/
 	
 	=============================================================================
 	
+
+{% endraw %}

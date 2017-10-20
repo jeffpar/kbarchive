@@ -6,6 +6,8 @@ permalink: /kb/253/Q253885/
 
 ## Q253885: XCLN: Outlook for Macintosh Exchange Server Edition 8.2.1
 
+{% raw %}
+
 	Article: Q253885
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.2.1
@@ -112,3 +114,5 @@ permalink: /kb/253/Q253885/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/113/Q113838/
 
 ## Q113838: Comprehensive List of MS-DOS 6.21 Documentation Errors
 
+{% raw %}
+
 	Article: Q113838
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21
@@ -42,3 +44,5 @@ permalink: /kb/113/Q113838/
 	
 	=============================================================================
 	
+
+{% endraw %}

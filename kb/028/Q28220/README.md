@@ -6,6 +6,8 @@ permalink: /kb/028/Q28220/
 
 ## Q28220: BUG: Link &quot;Fatal Error L1085: Cannot Open Temporary File&quot;
 
+{% raw %}
+
 	Article: Q28220
 	Product(s): Microsoft Programming Utilities
 	Version(s): 5.0x,5.1x,5.3,5.31.009,5.6
@@ -64,3 +66,5 @@ permalink: /kb/028/Q28220/
 	
 	=============================================================================
 	
+
+{% endraw %}

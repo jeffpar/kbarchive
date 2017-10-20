@@ -6,6 +6,8 @@ permalink: /kb/140/Q140496/
 
 ## Q140496: INF: SQLColAttributes Clarification in ODBC 2.10b SDK RELNOTE2
 
+{% raw %}
+
 	Article: Q140496
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.1
@@ -50,3 +52,5 @@ permalink: /kb/140/Q140496/
 	
 	=============================================================================
 	
+
+{% endraw %}

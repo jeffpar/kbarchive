@@ -6,6 +6,8 @@ permalink: /kb/156/Q156668/
 
 ## Q156668: PRB: SET PATH TO Syntax for Folders with Spaces in Name
 
+{% raw %}
+
 	Article: Q156668
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0; WINDOWS:3.0,3.0b,5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/156/Q156668/
 	
 	=============================================================================
 	
+
+{% endraw %}

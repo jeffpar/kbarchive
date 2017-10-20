@@ -6,6 +6,8 @@ permalink: /kb/059/Q59656/
 
 ## Q59656: File Manager: Make System Disk Fails
 
+{% raw %}
+
 	Article: Q59656
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -38,3 +40,5 @@ permalink: /kb/059/Q59656/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101421/
 
 ## Q101421: Sharing Files with Windows for Workgroups Clients
 
+{% raw %}
+
 	Article: Q101421
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -100,3 +102,5 @@ permalink: /kb/101/Q101421/
 	
 	=============================================================================
 	
+
+{% endraw %}

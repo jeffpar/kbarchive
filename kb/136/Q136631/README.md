@@ -6,6 +6,8 @@ permalink: /kb/136/Q136631/
 
 ## Q136631: PC WRmt: Using Remote Mail Client and WinRules Version 1.0
 
+{% raw %}
+
 	Article: Q136631
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -99,3 +101,5 @@ permalink: /kb/136/Q136631/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151282/
 
 ## Q151282: Only Black Text Visible When Previewing Custom Cover Page
 
+{% raw %}
+
 	Article: Q151282
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/151/Q151282/
 	
 	=============================================================================
 	
+
+{% endraw %}

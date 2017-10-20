@@ -6,6 +6,8 @@ permalink: /kb/127/Q127160/
 
 ## Q127160: Err Msg: System Service Database Locked
 
+{% raw %}
+
 	Article: Q127160
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/127/Q127160/
 	
 	=============================================================================
 	
+
+{% endraw %}

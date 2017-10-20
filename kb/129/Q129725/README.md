@@ -6,6 +6,8 @@ permalink: /kb/129/Q129725/
 
 ## Q129725: Obtaining Knowledge Base Articles on the World Wide Web
 
+{% raw %}
+
 	Article: Q129725
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/129/Q129725/
 	
 	=============================================================================
 	
+
+{% endraw %}

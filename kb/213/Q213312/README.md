@@ -6,6 +6,8 @@ permalink: /kb/213/Q213312/
 
 ## Q213312: SMS: C++ Runtime Error in SMSMan.exe Using /Q Switch
 
+{% raw %}
+
 	Article: Q213312
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -59,3 +61,5 @@ permalink: /kb/213/Q213312/
 	
 	=============================================================================
 	
+
+{% endraw %}

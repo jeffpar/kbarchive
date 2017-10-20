@@ -6,6 +6,8 @@ permalink: /kb/012/Q12131/
 
 ## Q12131: Use Timer Interrupt to Maintain Time Independent of CPU Speed
 
+{% raw %}
+
 	Article: Q12131
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 6.00 6.00a
@@ -25,3 +27,5 @@ permalink: /kb/012/Q12131/
 	same on all machines (about 18.2 times per second with interrupts
 	enabled). The timer tick is interrupt 1C and can be modified for
 	access by your own routine.
+
+{% endraw %}

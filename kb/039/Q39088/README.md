@@ -6,6 +6,8 @@ permalink: /kb/039/Q39088/
 
 ## Q39088: C1004: Unexpected EOF
 
+{% raw %}
+
 	Article: Q39088
 	Product(s): See article
 	Version(s): 4.00  5.00  5.10 | 5.10
@@ -26,3 +28,5 @@ permalink: /kb/039/Q39088/
 	
 	Without the <CR> after the third line, error C1004 will be produced by
 	the compiler.
+
+{% endraw %}

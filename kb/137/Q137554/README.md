@@ -6,6 +6,8 @@ permalink: /kb/137/Q137554/
 
 ## Q137554: Password Change Fails Using DNS to Resolve Names
 
+{% raw %}
+
 	Article: Q137554
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -59,3 +61,5 @@ permalink: /kb/137/Q137554/
 	
 	=============================================================================
 	
+
+{% endraw %}

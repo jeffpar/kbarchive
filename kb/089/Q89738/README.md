@@ -6,6 +6,8 @@ permalink: /kb/089/Q89738/
 
 ## Q89738: INFO: Handling WM_QUIT While Not in Primary GetMessage() Loop
 
+{% raw %}
+
 	Article: Q89738
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -91,3 +93,5 @@ permalink: /kb/089/Q89738/
 	
 	=============================================================================
 	
+
+{% endraw %}

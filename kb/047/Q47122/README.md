@@ -6,6 +6,8 @@ permalink: /kb/047/Q47122/
 
 ## Q47122: Example of Passing a Variable-Length String to Assembly
 
+{% raw %}
+
 	Article: Q47122
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -76,3 +78,5 @@ permalink: /kb/047/Q47122/
 	
 	   Before call: Hello World
 	   After call : Aello World
+
+{% endraw %}

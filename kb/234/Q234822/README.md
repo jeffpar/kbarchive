@@ -6,6 +6,8 @@ permalink: /kb/234/Q234822/
 
 ## Q234822: MOD2000:Undo Check Out Doesn't Update the VSS SCC Status Window
 
+{% raw %}
+
 	Article: Q234822
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/234/Q234822/
 	
 	=============================================================================
 	
+
+{% endraw %}

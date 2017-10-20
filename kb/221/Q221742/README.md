@@ -6,6 +6,8 @@ permalink: /kb/221/Q221742/
 
 ## Q221742: FIX:C0000005 Fatal Error With Big Array Property
 
+{% raw %}
+
 	Article: Q221742
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -82,3 +84,5 @@ permalink: /kb/221/Q221742/
 	
 	=============================================================================
 	
+
+{% endraw %}

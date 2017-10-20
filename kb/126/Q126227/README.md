@@ -6,6 +6,8 @@ permalink: /kb/126/Q126227/
 
 ## Q126227: Applications Hang When Printing to File with Comma
 
+{% raw %}
+
 	Article: Q126227
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -44,3 +46,5 @@ permalink: /kb/126/Q126227/
 	
 	=============================================================================
 	
+
+{% endraw %}

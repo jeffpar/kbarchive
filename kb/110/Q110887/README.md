@@ -6,6 +6,8 @@ permalink: /kb/110/Q110887/
 
 ## Q110887: Chip Challenge: Bear Trap Won't Release Paramecia in Level 49
 
+{% raw %}
+
 	Article: Q110887
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/110/Q110887/
 	
 	=============================================================================
 	
+
+{% endraw %}

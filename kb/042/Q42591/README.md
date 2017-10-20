@@ -6,6 +6,8 @@ permalink: /kb/042/Q42591/
 
 ## Q42591: &quot;SYS2090&quot; Error Using SETUP, LINK, or LIB with BASIC Compiler
 
+{% raw %}
+
 	Article: Q42591
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -45,3 +47,5 @@ permalink: /kb/042/Q42591/
 	   preserving the SS and SP registers when spawning processes. Novell
 	   netware Version 2.0A++, and Versions 2.10 and later are patched
 	   properly, according to Novell.)
+
+{% endraw %}

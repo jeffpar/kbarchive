@@ -6,6 +6,8 @@ permalink: /kb/194/Q194168/
 
 ## Q194168: Dns.exe Dr. Watson When Changing the TTL of a Cached Record
 
+{% raw %}
+
 	Article: Q194168
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -89,3 +91,5 @@ permalink: /kb/194/Q194168/
 	
 	=============================================================================
 	
+
+{% endraw %}

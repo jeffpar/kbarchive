@@ -6,6 +6,8 @@ permalink: /kb/226/Q226829/
 
 ## Q226829: SMS: SWMAccount Is Not Removed from Local Account Database
 
+{% raw %}
+
 	Article: Q226829
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -57,3 +59,5 @@ permalink: /kb/226/Q226829/
 	
 	=============================================================================
 	
+
+{% endraw %}

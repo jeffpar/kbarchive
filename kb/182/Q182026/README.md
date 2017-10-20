@@ -6,6 +6,8 @@ permalink: /kb/182/Q182026/
 
 ## Q182026: XFOR: Chat Channel Created w/Double-byte Lead Character Fails
 
+{% raw %}
+
 	Article: Q182026
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -64,3 +66,5 @@ permalink: /kb/182/Q182026/
 	
 	=============================================================================
 	
+
+{% endraw %}

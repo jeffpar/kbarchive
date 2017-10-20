@@ -6,6 +6,8 @@ permalink: /kb/089/Q89960/
 
 ## Q89960: Novell LPTx-options Setting in WIN.INI &#91;Network&#93; Section
 
+{% raw %}
+
 	Article: Q89960
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/089/Q89960/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/108/Q108627/
 
 ## Q108627: Writer 1: Macintosh Setup Error Says to Use CHKDSK
 
+{% raw %}
+
 	Article: Q108627
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0
@@ -58,3 +60,5 @@ permalink: /kb/108/Q108627/
 	
 	=============================================================================
 	
+
+{% endraw %}

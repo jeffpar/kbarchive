@@ -6,6 +6,8 @@ permalink: /kb/143/Q143484/
 
 ## Q143484: IIS Services Stop with Large Client Requests
 
+{% raw %}
+
 	Article: Q143484
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0,4.0
@@ -70,3 +72,5 @@ permalink: /kb/143/Q143484/
 	
 	=============================================================================
 	
+
+{% endraw %}

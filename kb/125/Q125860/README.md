@@ -6,6 +6,8 @@ permalink: /kb/125/Q125860/
 
 ## Q125860: Incorrect Range for RegistrySizeLimit in Resource Kit
 
+{% raw %}
+
 	Article: Q125860
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.5
@@ -43,3 +45,5 @@ permalink: /kb/125/Q125860/
 	
 	=============================================================================
 	
+
+{% endraw %}

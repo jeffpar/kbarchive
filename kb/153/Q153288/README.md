@@ -6,6 +6,8 @@ permalink: /kb/153/Q153288/
 
 ## Q153288: SMSRUN16/32 Randomly Picks a Logon Server
 
+{% raw %}
+
 	Article: Q153288
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -53,3 +55,5 @@ permalink: /kb/153/Q153288/
 	
 	=============================================================================
 	
+
+{% endraw %}

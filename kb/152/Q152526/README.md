@@ -6,6 +6,8 @@ permalink: /kb/152/Q152526/
 
 ## Q152526: Changing the Default Interval for User Tokens in IIS
 
+{% raw %}
+
 	Article: Q152526
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0,4.0,5.0
@@ -74,3 +76,5 @@ permalink: /kb/152/Q152526/
 	
 	=============================================================================
 	
+
+{% endraw %}

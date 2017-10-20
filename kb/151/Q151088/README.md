@@ -6,6 +6,8 @@ permalink: /kb/151/Q151088/
 
 ## Q151088: Content of VFP for Mac Frequently Asked Questions Help File
 
+{% raw %}
+
 	Article: Q151088
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -157,3 +159,5 @@ permalink: /kb/151/Q151088/
 	
 	=============================================================================
 	
+
+{% endraw %}

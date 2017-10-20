@@ -6,6 +6,8 @@ permalink: /kb/169/Q169414/
 
 ## Q169414: Cluster Service May Stop After Failover
 
+{% raw %}
+
 	Article: Q169414
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/169/Q169414/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/285/Q285991/
 
 ## Q285991: OLE DB Provider for DB2 Error Transferring More Than 32,763 Rows
 
+{% raw %}
+
 	Article: Q285991
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3,4.0 SP4
@@ -104,3 +106,5 @@ permalink: /kb/285/Q285991/
 	
 	=============================================================================
 	
+
+{% endraw %}

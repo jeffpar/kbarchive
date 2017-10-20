@@ -6,6 +6,8 @@ permalink: /kb/132/Q132169/
 
 ## Q132169: Data Encryption Causes RAS NetBIOS Error 640 Error Message
 
+{% raw %}
+
 	Article: Q132169
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; winnt:3.5,3.51
@@ -60,3 +62,5 @@ permalink: /kb/132/Q132169/
 	
 	=============================================================================
 	
+
+{% endraw %}

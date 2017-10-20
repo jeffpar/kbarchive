@@ -6,6 +6,8 @@ permalink: /kb/138/Q138266/
 
 ## Q138266: HOWTO: Implement Scaled Printing in an MFC/OLE Container
 
+{% raw %}
+
 	Article: Q138266
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -113,3 +115,5 @@ permalink: /kb/138/Q138266/
 	
 	=============================================================================
 	
+
+{% endraw %}

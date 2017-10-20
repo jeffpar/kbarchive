@@ -6,6 +6,8 @@ permalink: /kb/122/Q122113/
 
 ## Q122113: MSB Human: Minimum System Requirements for Windows
 
+{% raw %}
+
 	Article: Q122113
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -80,3 +82,5 @@ permalink: /kb/122/Q122113/
 	
 	=============================================================================
 	
+
+{% endraw %}

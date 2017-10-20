@@ -6,6 +6,8 @@ permalink: /kb/183/Q183476/
 
 ## Q183476: Windows NT 4.0 Service Pack 4 Includes a New Version of SMTP
 
+{% raw %}
+
 	Article: Q183476
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4
@@ -276,3 +278,5 @@ permalink: /kb/183/Q183476/
 	
 	=============================================================================
 	
+
+{% endraw %}

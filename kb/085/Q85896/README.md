@@ -6,6 +6,8 @@ permalink: /kb/085/Q85896/
 
 ## Q85896: BUG: Input Focus Lost When Control Returns From Windows Help
 
+{% raw %}
+
 	Article: Q85896
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -48,3 +50,5 @@ permalink: /kb/085/Q85896/
 	
 	=============================================================================
 	
+
+{% endraw %}

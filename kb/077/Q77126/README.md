@@ -6,6 +6,8 @@ permalink: /kb/077/Q77126/
 
 ## Q77126: INFO: Raster and Stroke Fonts; GDI and Device Fonts
 
+{% raw %}
+
 	Article: Q77126
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1,95; winnt:3.5,3.51
@@ -78,3 +80,5 @@ permalink: /kb/077/Q77126/
 	
 	=============================================================================
 	
+
+{% endraw %}

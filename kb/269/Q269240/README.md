@@ -6,6 +6,8 @@ permalink: /kb/269/Q269240/
 
 ## Q269240: XCCC: Using Outlook 2000 to Change Conference Resource
 
+{% raw %}
+
 	Article: Q269240
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/269/Q269240/
 	
 	=============================================================================
 	
+
+{% endraw %}

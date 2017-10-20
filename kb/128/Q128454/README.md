@@ -6,6 +6,8 @@ permalink: /kb/128/Q128454/
 
 ## Q128454: Windows NT 3.51 Hangs with Office 95 (Word) Help File Wizard
 
+{% raw %}
+
 	Article: Q128454
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/128/Q128454/
 	
 	=============================================================================
 	
+
+{% endraw %}

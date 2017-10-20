@@ -6,6 +6,8 @@ permalink: /kb/196/Q196880/
 
 ## Q196880: WD97: How to Change the Agenda Wizard Document Formatting
 
+{% raw %}
+
 	Article: Q196880
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -110,3 +112,5 @@ permalink: /kb/196/Q196880/
 	
 	=============================================================================
 	
+
+{% endraw %}

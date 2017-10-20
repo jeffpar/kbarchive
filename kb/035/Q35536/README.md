@@ -6,6 +6,8 @@ permalink: /kb/035/Q35536/
 
 ## Q35536: How to Write and Use C Extensions
 
+{% raw %}
+
 	Article: Q35536
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -33,3 +35,5 @@ permalink: /kb/035/Q35536/
 	linking is separate from the main program but is loaded into memory
 	with the editor. The editor then will call your module whenever you
 	invoke one of your C extension functions.
+
+{% endraw %}

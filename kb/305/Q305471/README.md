@@ -6,6 +6,8 @@ permalink: /kb/305/Q305471/
 
 ## Q305471: HOWTO: Use IMPLEMENTS with Microsoft Agent and Visual FoxPro
 
+{% raw %}
+
 	Article: Q305471
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -335,3 +337,5 @@ permalink: /kb/305/Q305471/
 	
 	=============================================================================
 	
+
+{% endraw %}

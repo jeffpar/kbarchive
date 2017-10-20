@@ -6,6 +6,8 @@ permalink: /kb/152/Q152942/
 
 ## Q152942: XADM: Slow Intra-site Directory Replication Between Servers
 
+{% raw %}
+
 	Article: Q152942
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -120,3 +122,5 @@ permalink: /kb/152/Q152942/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85039/
 
 ## Q85039: FFAPI: The Role of FFAPI
 
+{% raw %}
+
 	Article: Q85039
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/085/Q85039/
 	
 	=============================================================================
 	
+
+{% endraw %}

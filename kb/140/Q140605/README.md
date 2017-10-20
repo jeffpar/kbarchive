@@ -6,6 +6,8 @@ permalink: /kb/140/Q140605/
 
 ## Q140605: PRB: C2059 When Declaring Friend Template Functions in a Class
 
+{% raw %}
+
 	Article: Q140605
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -75,3 +77,5 @@ permalink: /kb/140/Q140605/
 	
 	=============================================================================
 	
+
+{% endraw %}

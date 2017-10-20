@@ -6,6 +6,8 @@ permalink: /kb/137/Q137034/
 
 ## Q137034: PRB: Win32 GetTempFileName API Differs From 16-bit
 
+{% raw %}
+
 	Article: Q137034
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -150,3 +152,5 @@ permalink: /kb/137/Q137034/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170036/
 
 ## Q170036: XCLN:The Mapi Spooler Has Shut Down Unexpectedly
 
+{% raw %}
+
 	Article: Q170036
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/170/Q170036/
 	
 	=============================================================================
 	
+
+{% endraw %}

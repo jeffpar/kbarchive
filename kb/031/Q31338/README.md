@@ -6,6 +6,8 @@ permalink: /kb/031/Q31338/
 
 ## Q31338: ATI Wondercard Graphics Adapter
 
+{% raw %}
+
 	Article: Q31338
 	Product(s): See article
 	Version(s): 1.00 2.00
@@ -43,3 +45,5 @@ permalink: /kb/031/Q31338/
 	Unit #2
 	Scarborough, Ontario, Canada
 	M1W352
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248660/
 
 ## Q248660: Using the Command Line to Change Startup Value of Services
 
+{% raw %}
+
 	Article: Q248660
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/248/Q248660/
 	
 	=============================================================================
 	
+
+{% endraw %}

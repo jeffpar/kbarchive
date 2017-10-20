@@ -6,6 +6,8 @@ permalink: /kb/141/Q141492/
 
 ## Q141492: ADT2: ADT Setup Wizard Could Not Find MS Access Error Message
 
+{% raw %}
+
 	Article: Q141492
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -60,3 +62,5 @@ permalink: /kb/141/Q141492/
 	
 	=============================================================================
 	
+
+{% endraw %}

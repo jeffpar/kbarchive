@@ -6,6 +6,8 @@ permalink: /kb/062/Q62627/
 
 ## Q62627: M6101 on PG Scatter Charts with Autoscaling Off
 
+{% raw %}
+
 	Article: Q62627
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -92,3 +94,5 @@ permalink: /kb/062/Q62627/
 	
 	        _setvideomode( _DEFAULTMODE );
 	}
+
+{% endraw %}

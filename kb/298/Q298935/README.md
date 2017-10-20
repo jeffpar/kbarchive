@@ -6,6 +6,8 @@ permalink: /kb/298/Q298935/
 
 ## Q298935: SMS: Clients Remove Components and Clintx86.ofr Is Incomplete
 
+{% raw %}
+
 	Article: Q298935
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -66,3 +68,5 @@ permalink: /kb/298/Q298935/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191324/
 
 ## Q191324: FIX: Clicking Page Does Not Call Valid of Text or Edit Box
 
+{% raw %}
+
 	Article: Q191324
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -156,3 +158,5 @@ permalink: /kb/191/Q191324/
 	
 	=============================================================================
 	
+
+{% endraw %}

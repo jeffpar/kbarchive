@@ -6,6 +6,8 @@ permalink: /kb/157/Q157139/
 
 ## Q157139: Err Msg: The DHCP Client Was Unable to Obtain an IP Network...
 
+{% raw %}
+
 	Article: Q157139
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2
@@ -64,3 +66,5 @@ permalink: /kb/157/Q157139/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/265/Q265267/
 
 ## Q265267: XIMS: Chat Server Causes AV w/Chat Server Extension, MIC Client
 
+{% raw %}
+
 	Article: Q265267
 	Product(s): Microsoft Exchange
 	Version(s): 2.0,2.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -61,3 +63,5 @@ permalink: /kb/265/Q265267/
 	
 	=============================================================================
 	
+
+{% endraw %}

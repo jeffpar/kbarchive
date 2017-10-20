@@ -6,6 +6,8 @@ permalink: /kb/145/Q145718/
 
 ## Q145718: PC Gen: Err Msg: Error Copying... when Running MMFCLEAN.EXE
 
+{% raw %}
+
 	Article: Q145718
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -59,3 +61,5 @@ permalink: /kb/145/Q145718/
 	
 	=============================================================================
 	
+
+{% endraw %}

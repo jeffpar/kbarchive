@@ -6,6 +6,8 @@ permalink: /kb/150/Q150846/
 
 ## Q150846: Event 1955 Does Not Report LU Name for RUI_INIT Failure
 
+{% raw %}
+
 	Article: Q150846
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -61,3 +63,5 @@ permalink: /kb/150/Q150846/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195284/
 
 ## Q195284: Running Microsoft Outlook 98 Comments and Corrections
 
+{% raw %}
+
 	Article: Q195284
 	Product(s): Microsoft Press
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/195/Q195284/
 	
 	=============================================================================
 	
+
+{% endraw %}

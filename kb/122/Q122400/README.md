@@ -6,6 +6,8 @@ permalink: /kb/122/Q122400/
 
 ## Q122400: Using SMS to Share Document Files with PGC
 
+{% raw %}
+
 	Article: Q122400
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -77,3 +79,5 @@ permalink: /kb/122/Q122400/
 	
 	=============================================================================
 	
+
+{% endraw %}

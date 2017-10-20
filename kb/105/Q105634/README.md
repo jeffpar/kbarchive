@@ -6,6 +6,8 @@ permalink: /kb/105/Q105634/
 
 ## Q105634: PRB: Records from Other Platforms Remain in .SCX/.FRX
 
+{% raw %}
+
 	Article: Q105634
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; MS-DOS:2.5b; WINDOWS:2.5b,3.0
@@ -52,3 +54,5 @@ permalink: /kb/105/Q105634/
 	
 	=============================================================================
 	
+
+{% endraw %}

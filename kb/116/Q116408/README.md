@@ -6,6 +6,8 @@ permalink: /kb/116/Q116408/
 
 ## Q116408: Starting SNA Server Causes Computer to Slow Down
 
+{% raw %}
+
 	Article: Q116408
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0
@@ -89,3 +91,5 @@ permalink: /kb/116/Q116408/
 	
 	=============================================================================
 	
+
+{% endraw %}

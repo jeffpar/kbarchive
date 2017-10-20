@@ -6,6 +6,8 @@ permalink: /kb/111/Q111862/
 
 ## Q111862: BUG: TabbedTextOut() in Metric Mapping Mode Incorrect
 
+{% raw %}
+
 	Article: Q111862
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -45,3 +47,5 @@ permalink: /kb/111/Q111862/
 	
 	=============================================================================
 	
+
+{% endraw %}

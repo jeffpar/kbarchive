@@ -6,6 +6,8 @@ permalink: /kb/188/Q188635/
 
 ## Q188635: XADM: Changing the State of Circular Logging Fails on a Cluster
 
+{% raw %}
+
 	Article: Q188635
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -105,3 +107,5 @@ permalink: /kb/188/Q188635/
 	
 	=============================================================================
 	
+
+{% endraw %}

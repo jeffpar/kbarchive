@@ -6,6 +6,8 @@ permalink: /kb/198/Q198903/
 
 ## Q198903: XFOR: PROFS Connector Does not Support &quot;Messages&quot;
 
+{% raw %}
+
 	Article: Q198903
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/198/Q198903/
 	
 	=============================================================================
 	
+
+{% endraw %}

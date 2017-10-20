@@ -6,6 +6,8 @@ permalink: /kb/116/Q116482/
 
 ## Q116482: PRB: Inserting OLE Object Causes General Protection Fault
 
+{% raw %}
+
 	Article: Q116482
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0
@@ -68,3 +70,5 @@ permalink: /kb/116/Q116482/
 	
 	=============================================================================
 	
+
+{% endraw %}

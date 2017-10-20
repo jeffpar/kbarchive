@@ -6,6 +6,8 @@ permalink: /kb/104/Q104375/
 
 ## Q104375: PPT: Tab Limitation in Each Text Block
 
+{% raw %}
+
 	Article: Q104375
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:3.0,3.0b,4.0; WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -80,3 +82,5 @@ permalink: /kb/104/Q104375/
 	
 	=============================================================================
 	
+
+{% endraw %}

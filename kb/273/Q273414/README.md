@@ -6,6 +6,8 @@ permalink: /kb/273/Q273414/
 
 ## Q273414: Age of Empires II: The Age of Kings Update 2.0a Available
 
+{% raw %}
+
 	Article: Q273414
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -54,3 +56,5 @@ permalink: /kb/273/Q273414/
 	
 	=============================================================================
 	
+
+{% endraw %}

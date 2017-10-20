@@ -6,6 +6,8 @@ permalink: /kb/249/Q249259/
 
 ## Q249259: BUG: ATL OLE DB Provider not Working with OLE DB Services
 
+{% raw %}
+
 	Article: Q249259
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0
@@ -86,3 +88,5 @@ permalink: /kb/249/Q249259/
 	
 	=============================================================================
 	
+
+{% endraw %}

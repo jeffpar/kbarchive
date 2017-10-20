@@ -6,6 +6,8 @@ permalink: /kb/176/Q176501/
 
 ## Q176501: Explanation of Windows 95 Netlogon Packets
 
+{% raw %}
+
 	Article: Q176501
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95
@@ -75,3 +77,5 @@ permalink: /kb/176/Q176501/
 	
 	=============================================================================
 	
+
+{% endraw %}

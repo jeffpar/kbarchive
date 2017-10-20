@@ -6,6 +6,8 @@ permalink: /kb/200/Q200495/
 
 ## Q200495: FIX: Cannot Create bad_typeid Object with /MD
 
+{% raw %}
+
 	Article: Q200495
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -74,3 +76,5 @@ permalink: /kb/200/Q200495/
 	
 	=============================================================================
 	
+
+{% endraw %}

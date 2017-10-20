@@ -6,6 +6,8 @@ permalink: /kb/202/Q202520/
 
 ## Q202520: FILE: CDX(), TAG(), and SYS(14) Function to Create Index Utility
 
+{% raw %}
+
 	Article: Q202520
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -101,3 +103,5 @@ permalink: /kb/202/Q202520/
 	
 	=============================================================================
 	
+
+{% endraw %}

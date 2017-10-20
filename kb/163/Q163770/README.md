@@ -6,6 +6,8 @@ permalink: /kb/163/Q163770/
 
 ## Q163770: Cannot Log On to Windows NT Domain w/ DNS Name Resolution Only
 
+{% raw %}
+
 	Article: Q163770
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -67,3 +69,5 @@ permalink: /kb/163/Q163770/
 	
 	=============================================================================
 	
+
+{% endraw %}

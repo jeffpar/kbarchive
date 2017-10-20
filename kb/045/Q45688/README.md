@@ -6,6 +6,8 @@ permalink: /kb/045/Q45688/
 
 ## Q45688: BC.EXE 4.50 &quot;Internal Error Near 361F&quot; Passing Integers to SUB
 
+{% raw %}
+
 	Article: Q45688
 	Product(s): See article
 	Version(s): 4.50
@@ -42,3 +44,5 @@ permalink: /kb/045/Q45688/
 	i1% = i1% + i3% \ i2% + 1           'remove any operation fixes
 	i3% = 1                             'this line is necessary
 	END SUB
+
+{% endraw %}

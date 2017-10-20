@@ -6,6 +6,8 @@ permalink: /kb/068/Q68886/
 
 ## Q68886: Accessing Interrupt Return Status in Zero Flag
 
+{% raw %}
+
 	Article: Q68886
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -54,3 +56,5 @@ permalink: /kb/068/Q68886/
 	   }
 	   return(KeyInfo.rc);
 	}
+
+{% endraw %}

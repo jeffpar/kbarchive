@@ -6,6 +6,8 @@ permalink: /kb/176/Q176535/
 
 ## Q176535: HOWTO: Save Attachments to File with MSMAPI.VBX or MSMAPI.OCX
 
+{% raw %}
+
 	Article: Q176535
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/176/Q176535/
 	
 	=============================================================================
 	
+
+{% endraw %}

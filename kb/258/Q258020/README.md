@@ -6,6 +6,8 @@ permalink: /kb/258/Q258020/
 
 ## Q258020: &quot;Object Not Found&quot; Error Message Accessing &quot;The Known Universe&quot;
 
+{% raw %}
+
 	Article: Q258020
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -73,3 +75,5 @@ permalink: /kb/258/Q258020/
 	
 	=============================================================================
 	
+
+{% endraw %}

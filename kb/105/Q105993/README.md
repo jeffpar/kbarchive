@@ -6,6 +6,8 @@ permalink: /kb/105/Q105993/
 
 ## Q105993: Unable to Print Directly to Ports from a Command Prompt
 
+{% raw %}
+
 	Article: Q105993
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -82,3 +84,5 @@ permalink: /kb/105/Q105993/
 	
 	=============================================================================
 	
+
+{% endraw %}

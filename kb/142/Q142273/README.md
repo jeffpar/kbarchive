@@ -6,6 +6,8 @@ permalink: /kb/142/Q142273/
 
 ## Q142273: Backing up in-use WINS Database Files Can Cause Corruption
 
+{% raw %}
+
 	Article: Q142273
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -76,3 +78,5 @@ permalink: /kb/142/Q142273/
 	
 	=============================================================================
 	
+
+{% endraw %}

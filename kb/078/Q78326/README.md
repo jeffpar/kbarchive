@@ -6,6 +6,8 @@ permalink: /kb/078/Q78326/
 
 ## Q78326: Real Mode Not Supported by Windows 3.1
 
+{% raw %}
+
 	Article: Q78326
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -121,3 +123,5 @@ permalink: /kb/078/Q78326/
 	
 	=============================================================================
 	
+
+{% endraw %}

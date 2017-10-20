@@ -6,6 +6,8 @@ permalink: /kb/124/Q124374/
 
 ## Q124374: Windows NT 3.1 Computer Cannot Log On to Windows NT 3.5 Domain
 
+{% raw %}
+
 	Article: Q124374
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -67,3 +69,5 @@ permalink: /kb/124/Q124374/
 	
 	=============================================================================
 	
+
+{% endraw %}

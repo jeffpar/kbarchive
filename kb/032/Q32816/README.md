@@ -6,6 +6,8 @@ permalink: /kb/032/Q32816/
 
 ## Q32816: PRB: Causes of R6000 &quot;Stack Overflow&quot; Error
 
+{% raw %}
+
 	Article: Q32816
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -135,3 +137,5 @@ permalink: /kb/032/Q32816/
 	
 	=============================================================================
 	
+
+{% endraw %}

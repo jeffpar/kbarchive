@@ -6,6 +6,8 @@ permalink: /kb/132/Q132630/
 
 ## Q132630: Kerning System TrueType Fonts Does Not Change Appearance
 
+{% raw %}
+
 	Article: Q132630
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/132/Q132630/
 	
 	=============================================================================
 	
+
+{% endraw %}

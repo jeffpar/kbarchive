@@ -6,6 +6,8 @@ permalink: /kb/251/Q251079/
 
 ## Q251079: MSB Bugs: Does Not Run or Quits on Terminal Server
 
+{% raw %}
+
 	Article: Q251079
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS|MACINTOS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/251/Q251079/
 	
 	=============================================================================
 	
+
+{% endraw %}

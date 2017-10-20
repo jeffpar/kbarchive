@@ -6,6 +6,8 @@ permalink: /kb/173/Q173242/
 
 ## Q173242: PRB: Use Masks to Set/Get Item States in CListCtrl
 
+{% raw %}
+
 	Article: Q173242
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -154,3 +156,5 @@ permalink: /kb/173/Q173242/
 	
 	=============================================================================
 	
+
+{% endraw %}

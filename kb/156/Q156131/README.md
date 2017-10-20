@@ -6,6 +6,8 @@ permalink: /kb/156/Q156131/
 
 ## Q156131: Close Combat: Documentation Errors in Game Reference Manual
 
+{% raw %}
+
 	Article: Q156131
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/156/Q156131/
 	
 	=============================================================================
 	
+
+{% endraw %}

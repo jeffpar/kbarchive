@@ -6,6 +6,8 @@ permalink: /kb/121/Q121432/
 
 ## Q121432: Scenes 2.0: Pictures Do Not Seem to Display Randomly
 
+{% raw %}
+
 	Article: Q121432
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -46,3 +48,5 @@ permalink: /kb/121/Q121432/
 	
 	=============================================================================
 	
+
+{% endraw %}

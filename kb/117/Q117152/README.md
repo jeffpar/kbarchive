@@ -6,6 +6,8 @@ permalink: /kb/117/Q117152/
 
 ## Q117152: PC Ext: MTA Not Report LAN Man User-Level Security Problems
 
+{% raw %}
+
 	Article: Q117152
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2,3.5
@@ -91,3 +93,5 @@ permalink: /kb/117/Q117152/
 	
 	=============================================================================
 	
+
+{% endraw %}

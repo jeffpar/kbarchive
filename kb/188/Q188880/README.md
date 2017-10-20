@@ -6,6 +6,8 @@ permalink: /kb/188/Q188880/
 
 ## Q188880: SMS: OSR2 and Internet Explorer 4.0 Inventoried as Windows 98
 
+{% raw %}
+
 	Article: Q188880
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -83,3 +85,5 @@ permalink: /kb/188/Q188880/
 	
 	=============================================================================
 	
+
+{% endraw %}

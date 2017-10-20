@@ -6,6 +6,8 @@ permalink: /kb/180/Q180297/
 
 ## Q180297: Reconfiguring Exchange As The Dirsync Server
 
+{% raw %}
+
 	Article: Q180297
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.2a,3.5
@@ -172,3 +174,5 @@ permalink: /kb/180/Q180297/
 	
 	=============================================================================
 	
+
+{% endraw %}

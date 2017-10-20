@@ -6,6 +6,8 @@ permalink: /kb/134/Q134775/
 
 ## Q134775: Cannot Set Up from Network with Smc8000.dos Real-Mode Driver
 
+{% raw %}
+
 	Article: Q134775
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/134/Q134775/
 	
 	=============================================================================
 	
+
+{% endraw %}

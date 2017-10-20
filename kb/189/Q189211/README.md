@@ -6,6 +6,8 @@ permalink: /kb/189/Q189211/
 
 ## Q189211: Computer User's Dictionary: Web Address for Updates Is Incorrect
 
+{% raw %}
+
 	Article: Q189211
 	Product(s): Microsoft Press
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/189/Q189211/
 	
 	=============================================================================
 	
+
+{% endraw %}

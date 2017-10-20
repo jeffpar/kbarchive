@@ -6,6 +6,8 @@ permalink: /kb/139/Q139163/
 
 ## Q139163: World Atlas 1996: Incorrect Resolution Requirements on Package
 
+{% raw %}
+
 	Article: Q139163
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -53,3 +55,5 @@ permalink: /kb/139/Q139163/
 	
 	=============================================================================
 	
+
+{% endraw %}

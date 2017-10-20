@@ -6,6 +6,8 @@ permalink: /kb/282/Q282461/
 
 ## Q282461: DEACTIVATE_SESSION Returns Parameter_Check If No Sessions Active
 
+{% raw %}
+
 	Article: Q282461
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3,4.0 SP4
@@ -97,3 +99,5 @@ permalink: /kb/282/Q282461/
 	
 	=============================================================================
 	
+
+{% endraw %}

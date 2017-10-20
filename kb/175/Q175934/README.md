@@ -6,6 +6,8 @@ permalink: /kb/175/Q175934/
 
 ## Q175934: Schedule+ Time Zone Transition Dates Incorrect
 
+{% raw %}
+
 	Article: Q175934
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.5
@@ -76,3 +78,5 @@ permalink: /kb/175/Q175934/
 	
 	=============================================================================
 	
+
+{% endraw %}

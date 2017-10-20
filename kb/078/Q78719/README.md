@@ -6,6 +6,8 @@ permalink: /kb/078/Q78719/
 
 ## Q78719: Default Device Drivers in SETVER Table
 
+{% raw %}
+
 	Article: Q78719
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -84,3 +86,5 @@ permalink: /kb/078/Q78719/
 	
 	=============================================================================
 	
+
+{% endraw %}

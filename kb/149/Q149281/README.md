@@ -6,6 +6,8 @@ permalink: /kb/149/Q149281/
 
 ## Q149281: Adding Extensions to Macintosh File Names for Windows 95
 
+{% raw %}
+
 	Article: Q149281
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1; winnt:3.5,3.51,4.0
@@ -88,3 +90,5 @@ permalink: /kb/149/Q149281/
 	
 	=============================================================================
 	
+
+{% endraw %}

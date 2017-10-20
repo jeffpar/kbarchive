@@ -6,6 +6,8 @@ permalink: /kb/153/Q153596/
 
 ## Q153596: TCP/IP Performance Degrades When Resuming Large Data Transfer
 
+{% raw %}
+
 	Article: Q153596
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -140,3 +142,5 @@ permalink: /kb/153/Q153596/
 	
 	=============================================================================
 	
+
+{% endraw %}

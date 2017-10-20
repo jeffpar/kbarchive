@@ -6,6 +6,8 @@ permalink: /kb/192/Q192410/
 
 ## Q192410: Encarta Virtual Globe 1998 Does Not Start
 
+{% raw %}
+
 	Article: Q192410
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -89,3 +91,5 @@ permalink: /kb/192/Q192410/
 	
 	=============================================================================
 	
+
+{% endraw %}

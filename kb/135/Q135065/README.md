@@ -6,6 +6,8 @@ permalink: /kb/135/Q135065/
 
 ## Q135065: Windows NT 3.51 Hangs on Shutdown
 
+{% raw %}
+
 	Article: Q135065
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -66,3 +68,5 @@ permalink: /kb/135/Q135065/
 	
 	=============================================================================
 	
+
+{% endraw %}

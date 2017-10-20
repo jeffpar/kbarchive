@@ -6,6 +6,8 @@ permalink: /kb/095/Q95704/
 
 ## Q95704: PRB: ? Command Drops Carriage Return/Linefeed
 
+{% raw %}
+
 	Article: Q95704
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -59,3 +61,5 @@ permalink: /kb/095/Q95704/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158572/
 
 ## Q158572: STL Sample set::(lower_, upper_)bound, equal_range Functions
 
+{% raw %}
+
 	Article: Q158572
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -224,3 +226,5 @@ permalink: /kb/158/Q158572/
 	
 	=============================================================================
 	
+
+{% endraw %}

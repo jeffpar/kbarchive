@@ -6,6 +6,8 @@ permalink: /kb/157/Q157037/
 
 ## Q157037: SMS: Out of Memory Error When Launching Program Group Control
 
+{% raw %}
+
 	Article: Q157037
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -61,3 +63,5 @@ permalink: /kb/157/Q157037/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186691/
 
 ## Q186691: XCLN: Inbox Assistant Replies to Sender Not Alternate Recipient
 
+{% raw %}
+
 	Article: Q186691
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0; WINDOWS:4.0,5.0; :8.03
@@ -59,3 +61,5 @@ permalink: /kb/186/Q186691/
 	
 	=============================================================================
 	
+
+{% endraw %}

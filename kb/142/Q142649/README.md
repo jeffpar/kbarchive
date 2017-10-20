@@ -6,6 +6,8 @@ permalink: /kb/142/Q142649/
 
 ## Q142649: STOP 0x0000000A on ALR Revolution
 
+{% raw %}
+
 	Article: Q142649
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -65,3 +67,5 @@ permalink: /kb/142/Q142649/
 	
 	=============================================================================
 	
+
+{% endraw %}

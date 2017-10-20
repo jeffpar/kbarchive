@@ -6,6 +6,8 @@ permalink: /kb/231/Q231862/
 
 ## Q231862: INF: Configuring COMTI to use TCP/IP Link to CICS
 
+{% raw %}
+
 	Article: Q231862
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0SP2
@@ -225,3 +227,5 @@ permalink: /kb/231/Q231862/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264247/
 
 ## Q264247: &quot;Stop 0x0a&quot; Error When Using the QLogic Fibre Channel Driver
 
+{% raw %}
+
 	Article: Q264247
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/264/Q264247/
 	
 	=============================================================================
 	
+
+{% endraw %}

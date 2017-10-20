@@ -6,6 +6,8 @@ permalink: /kb/150/Q150298/
 
 ## Q150298: Renaming a Windows NT PDC or BDC
 
+{% raw %}
+
 	Article: Q150298
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -89,3 +91,5 @@ permalink: /kb/150/Q150298/
 	
 	=============================================================================
 	
+
+{% endraw %}

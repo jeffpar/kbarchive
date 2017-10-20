@@ -6,6 +6,8 @@ permalink: /kb/115/Q115356/
 
 ## Q115356: X400: V3.2 Handles 25 Percent More in Recipient Lists than V3.0
 
+{% raw %}
+
 	Article: Q115356
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -39,3 +41,5 @@ permalink: /kb/115/Q115356/
 	
 	=============================================================================
 	
+
+{% endraw %}

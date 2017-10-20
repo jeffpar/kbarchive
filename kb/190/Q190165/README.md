@@ -6,6 +6,8 @@ permalink: /kb/190/Q190165/
 
 ## Q190165: BUG: Compile Errors When You Use Command Line Argument /MAKE
 
+{% raw %}
+
 	Article: Q190165
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -106,3 +108,5 @@ permalink: /kb/190/Q190165/
 	
 	=============================================================================
 	
+
+{% endraw %}

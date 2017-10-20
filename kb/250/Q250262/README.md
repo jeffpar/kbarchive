@@ -6,6 +6,8 @@ permalink: /kb/250/Q250262/
 
 ## Q250262: NTOP Installation Error Message: Cannot Detect OS Type
 
+{% raw %}
+
 	Article: Q250262
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -113,3 +115,5 @@ permalink: /kb/250/Q250262/
 	
 	=============================================================================
 	
+
+{% endraw %}

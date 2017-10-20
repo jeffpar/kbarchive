@@ -6,6 +6,8 @@ permalink: /kb/178/Q178393/
 
 ## Q178393: SQL Server Hangs When Sending a Message Using SQLMail
 
+{% raw %}
+
 	Article: Q178393
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:4.0,6.5
@@ -83,3 +85,5 @@ permalink: /kb/178/Q178393/
 	
 	=============================================================================
 	
+
+{% endraw %}

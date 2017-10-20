@@ -6,6 +6,8 @@ permalink: /kb/041/Q41663/
 
 ## Q41663: QuickC 2.00 README.DOC: Page 190 Example
 
+{% raw %}
+
 	Article: Q41663
 	Product(s): See article
 	Version(s): 2.00
@@ -20,3 +22,5 @@ permalink: /kb/041/Q41663/
 	Page 190 Example
 	
 	Delete the characters "@EX =" from the example.
+
+{% endraw %}

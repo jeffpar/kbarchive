@@ -6,6 +6,8 @@ permalink: /kb/195/Q195609/
 
 ## Q195609: WD97: How to Create Mailing Labels Using the Mail Merge Feature
 
+{% raw %}
+
 	Article: Q195609
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -218,3 +220,5 @@ permalink: /kb/195/Q195609/
 	
 	=============================================================================
 	
+
+{% endraw %}

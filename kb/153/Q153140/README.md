@@ -6,6 +6,8 @@ permalink: /kb/153/Q153140/
 
 ## Q153140: How to Reset License Manager Information
 
+{% raw %}
+
 	Article: Q153140
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.51,4.0
@@ -66,3 +68,5 @@ permalink: /kb/153/Q153140/
 	
 	=============================================================================
 	
+
+{% endraw %}

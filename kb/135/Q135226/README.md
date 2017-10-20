@@ -6,6 +6,8 @@ permalink: /kb/135/Q135226/
 
 ## Q135226: Sound Blaster 16 Automatic Gain Control Setting Is Lost
 
+{% raw %}
+
 	Article: Q135226
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/135/Q135226/
 	
 	=============================================================================
 	
+
+{% endraw %}

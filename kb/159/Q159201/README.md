@@ -6,6 +6,8 @@ permalink: /kb/159/Q159201/
 
 ## Q159201: SMS: Infinite Loop in Scheduler with Corrupt SRQ File
 
+{% raw %}
+
 	Article: Q159201
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2
@@ -85,3 +87,5 @@ permalink: /kb/159/Q159201/
 	
 	=============================================================================
 	
+
+{% endraw %}

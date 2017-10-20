@@ -6,6 +6,8 @@ permalink: /kb/219/Q219419/
 
 ## Q219419: XADM: Information Store Stops Unexpectedly, Cannot Be Repaired
 
+{% raw %}
+
 	Article: Q219419
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -192,3 +194,5 @@ permalink: /kb/219/Q219419/
 	
 	=============================================================================
 	
+
+{% endraw %}

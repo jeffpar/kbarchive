@@ -6,6 +6,8 @@ permalink: /kb/322/Q322163/
 
 ## Q322163: Dungeon Siege: You Cannot Move Items in Your Inventory
 
+{% raw %}
+
 	Article: Q322163
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -83,3 +85,5 @@ permalink: /kb/322/Q322163/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193583/
 
 ## Q193583: INFO: SSInt.exe Is Added to Visual SourceSafe 6.0
 
+{% raw %}
+
 	Article: Q193583
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/193/Q193583/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140593/
 
 ## Q140593: PRB: Error &quot;File Names.dat may be corrupt&quot; Appears
 
+{% raw %}
+
 	Article: Q140593
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/140/Q140593/
 	
 	=============================================================================
 	
+
+{% endraw %}

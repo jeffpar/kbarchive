@@ -6,6 +6,8 @@ permalink: /kb/175/Q175648/
 
 ## Q175648: Event ID 20120: Could Not Open IPX SAP Socket...
 
+{% raw %}
+
 	Article: Q175648
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/175/Q175648/
 	
 	=============================================================================
 	
+
+{% endraw %}

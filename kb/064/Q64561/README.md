@@ -6,6 +6,8 @@ permalink: /kb/064/Q64561/
 
 ## Q64561: _outtext() Corrupts String in C 6.00 Large and Compact Models
 
+{% raw %}
+
 	Article: Q64561
 	Product(s): See article
 	Version(s): 6.00
@@ -54,3 +56,5 @@ permalink: /kb/064/Q64561/
 	Microsoft has confirmed this to be a problem with C version 6.00. We
 	are researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

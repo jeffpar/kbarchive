@@ -6,6 +6,8 @@ permalink: /kb/146/Q146113/
 
 ## Q146113: PC DB: Effect of Compress on System Used .KEY and .MBG Files
 
+{% raw %}
+
 	Article: Q146113
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -66,3 +68,5 @@ permalink: /kb/146/Q146113/
 	
 	=============================================================================
 	
+
+{% endraw %}

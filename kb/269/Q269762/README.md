@@ -6,6 +6,8 @@ permalink: /kb/269/Q269762/
 
 ## Q269762: MSB Mars: Minimum System Requirements for Windows
 
+{% raw %}
+
 	Article: Q269762
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -68,3 +70,5 @@ permalink: /kb/269/Q269762/
 	
 	=============================================================================
 	
+
+{% endraw %}

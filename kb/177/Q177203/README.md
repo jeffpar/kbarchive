@@ -6,6 +6,8 @@ permalink: /kb/177/Q177203/
 
 ## Q177203: ATI 3D RAGE PRO Chipset Requires Windows NT SP3
 
+{% raw %}
+
 	Article: Q177203
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/177/Q177203/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146918/
 
 ## Q146918: Scenes 1.0: Outer Space Disk 1 Contents
 
+{% raw %}
+
 	Article: Q146918
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/146/Q146918/
 	
 	=============================================================================
 	
+
+{% endraw %}

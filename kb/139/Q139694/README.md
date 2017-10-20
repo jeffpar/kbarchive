@@ -6,6 +6,8 @@ permalink: /kb/139/Q139694/
 
 ## Q139694: Description and Availability of Wizards in Visual FoxPro
 
+{% raw %}
+
 	Article: Q139694
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -199,3 +201,5 @@ permalink: /kb/139/Q139694/
 	
 	=============================================================================
 	
+
+{% endraw %}

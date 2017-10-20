@@ -6,6 +6,8 @@ permalink: /kb/084/Q84053/
 
 ## Q84053: How a TSR Can Serialize Access to Its Data
 
+{% raw %}
+
 	Article: Q84053
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -120,3 +122,5 @@ permalink: /kb/084/Q84053/
 	
 	=============================================================================
 	
+
+{% endraw %}

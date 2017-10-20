@@ -6,6 +6,8 @@ permalink: /kb/223/Q223383/
 
 ## Q223383: XCLN: Lotus cc:Mail Importer Asserts Migrating Archive Files
 
+{% raw %}
+
 	Article: Q223383
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -76,3 +78,5 @@ permalink: /kb/223/Q223383/
 	
 	=============================================================================
 	
+
+{% endraw %}

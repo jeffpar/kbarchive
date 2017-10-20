@@ -6,6 +6,8 @@ permalink: /kb/100/Q100911/
 
 ## Q100911: MS-DOS Err Msg with DoubleSpace: Insufficient Disk Space
 
+{% raw %}
+
 	Article: Q100911
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -157,3 +159,5 @@ permalink: /kb/100/Q100911/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/069/Q69156/
 
 ## Q69156: Underscore+CR+LF Added Before DATA Statement If &gt; 250 Columns
 
+{% raw %}
+
 	Article: Q69156
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -54,3 +56,5 @@ permalink: /kb/069/Q69156/
 	QBX.EXE, then try to load the file into GW-BASIC or BASICA:
 	
 	   100 DATA 123,1234567890,1234567890, ... ,1234567890
+
+{% endraw %}

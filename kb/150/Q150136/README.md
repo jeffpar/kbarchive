@@ -6,6 +6,8 @@ permalink: /kb/150/Q150136/
 
 ## Q150136: BUG: SPREAD() Intrinsic Function Application Error
 
+{% raw %}
+
 	Article: Q150136
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/150/Q150136/
 	
 	=============================================================================
 	
+
+{% endraw %}

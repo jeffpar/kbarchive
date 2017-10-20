@@ -6,6 +6,8 @@ permalink: /kb/165/Q165098/
 
 ## Q165098: WD97: Cannot Trap FormFieldOptions Command on Double-Click
 
+{% raw %}
+
 	Article: Q165098
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/165/Q165098/
 	
 	=============================================================================
 	
+
+{% endraw %}

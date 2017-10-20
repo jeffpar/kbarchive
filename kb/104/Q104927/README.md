@@ -6,6 +6,8 @@ permalink: /kb/104/Q104927/
 
 ## Q104927: Cardfile Printing on LaserJet 4 Prints Double Line
 
+{% raw %}
+
 	Article: Q104927
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -69,3 +71,5 @@ permalink: /kb/104/Q104927/
 	
 	=============================================================================
 	
+
+{% endraw %}

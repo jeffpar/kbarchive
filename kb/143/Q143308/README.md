@@ -6,6 +6,8 @@ permalink: /kb/143/Q143308/
 
 ## Q143308: BUG: Textwidth Method Does Not Return Foxel Units
 
+{% raw %}
+
 	Article: Q143308
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -61,3 +63,5 @@ permalink: /kb/143/Q143308/
 	
 	=============================================================================
 	
+
+{% endraw %}

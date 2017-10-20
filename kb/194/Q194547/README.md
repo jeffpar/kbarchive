@@ -6,6 +6,8 @@ permalink: /kb/194/Q194547/
 
 ## Q194547: X400: ISO 6937 Message with Attachment Is Not Delivered
 
+{% raw %}
+
 	Article: Q194547
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -87,3 +89,5 @@ permalink: /kb/194/Q194547/
 	
 	=============================================================================
 	
+
+{% endraw %}

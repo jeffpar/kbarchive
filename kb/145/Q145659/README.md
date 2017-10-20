@@ -6,6 +6,8 @@ permalink: /kb/145/Q145659/
 
 ## Q145659: Queries of Static WINS Entries Fail With NetBIOS Scopes
 
+{% raw %}
+
 	Article: Q145659
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -55,3 +57,5 @@ permalink: /kb/145/Q145659/
 	
 	=============================================================================
 	
+
+{% endraw %}

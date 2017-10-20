@@ -6,6 +6,8 @@ permalink: /kb/182/Q182986/
 
 ## Q182986: XCON: Use Expedited Data Option Relevant Only for TP4 Stacks
 
+{% raw %}
+
 	Article: Q182986
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -50,3 +52,5 @@ permalink: /kb/182/Q182986/
 	
 	=============================================================================
 	
+
+{% endraw %}

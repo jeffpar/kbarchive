@@ -6,6 +6,8 @@ permalink: /kb/022/Q22018/
 
 ## Q22018: PLAY &quot;N0&quot; First Note of Rest Clicks Speaker in QuickBASIC
 
+{% raw %}
+
 	Article: Q22018
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -30,3 +32,5 @@ permalink: /kb/022/Q22018/
 	(PDS) versions 7.00 and 7.10 (buglist7.00, buglist7.10). We are
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

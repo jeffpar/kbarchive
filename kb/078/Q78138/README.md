@@ -6,6 +6,8 @@ permalink: /kb/078/Q78138/
 
 ## Q78138: PPT: Colors on Screen and Color Printout May Not Match
 
+{% raw %}
+
 	Article: Q78138
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:2.0,2.01,3.0,4.0; WINDOWS:3.0,4.0,7.0
@@ -142,3 +144,5 @@ permalink: /kb/078/Q78138/
 	
 	=============================================================================
 	
+
+{% endraw %}

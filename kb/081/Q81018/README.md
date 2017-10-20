@@ -6,6 +6,8 @@ permalink: /kb/081/Q81018/
 
 ## Q81018: Program Filename Box Documented Incorrectly in PIF Editor Help
 
+{% raw %}
+
 	Article: Q81018
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -58,3 +60,5 @@ permalink: /kb/081/Q81018/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194948/
 
 ## Q194948: HOWTO: Create a Child Console Process from a CGI Process
 
+{% raw %}
+
 	Article: Q194948
 	Product(s): Internet Information Server
 	Version(s): WINNT:3.0,4.0
@@ -100,3 +102,5 @@ permalink: /kb/194/Q194948/
 	
 	=============================================================================
 	
+
+{% endraw %}

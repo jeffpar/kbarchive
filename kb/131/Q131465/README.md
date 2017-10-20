@@ -6,6 +6,8 @@ permalink: /kb/131/Q131465/
 
 ## Q131465: PRB: Cannot Use LOCAL Variables as Arrays
 
+{% raw %}
+
 	Article: Q131465
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/131/Q131465/
 	
 	=============================================================================
 	
+
+{% endraw %}

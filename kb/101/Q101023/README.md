@@ -6,6 +6,8 @@ permalink: /kb/101/Q101023/
 
 ## Q101023: PRB: FoxPro Installation Error: File Copy Operation Failed
 
+{% raw %}
+
 	Article: Q101023
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -53,3 +55,5 @@ permalink: /kb/101/Q101023/
 	
 	=============================================================================
 	
+
+{% endraw %}

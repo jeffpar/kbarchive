@@ -6,6 +6,8 @@ permalink: /kb/130/Q130075/
 
 ## Q130075: TEMP Environment Variable Overwritten in Command Prompt
 
+{% raw %}
+
 	Article: Q130075
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/130/Q130075/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231230/
 
 ## Q231230: SMS: Canned Queries Do Not Complete
 
+{% raw %}
+
 	Article: Q231230
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -93,3 +95,5 @@ permalink: /kb/231/Q231230/
 	
 	=============================================================================
 	
+
+{% endraw %}

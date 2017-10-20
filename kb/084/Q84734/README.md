@@ -6,6 +6,8 @@ permalink: /kb/084/Q84734/
 
 ## Q84734: Why Code Segment Contents May Begin at Offset 16
 
+{% raw %}
+
 	Article: Q84734
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.x,4.0x,4.1,5.0x,5.1x,5.2,5.3x,5.5,5.6; OS/2:5.0x,5.1,5.11,5.13,5.15
@@ -76,3 +78,5 @@ permalink: /kb/084/Q84734/
 	
 	=============================================================================
 	
+
+{% endraw %}

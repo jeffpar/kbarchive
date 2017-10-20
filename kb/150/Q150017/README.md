@@ -6,6 +6,8 @@ permalink: /kb/150/Q150017/
 
 ## Q150017: Multimedia Err Msg: &quot;The File Wing32.dll open...,&quot;
 
+{% raw %}
+
 	Article: Q150017
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/150/Q150017/
 	
 	=============================================================================
 	
+
+{% endraw %}

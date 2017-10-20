@@ -6,6 +6,8 @@ permalink: /kb/156/Q156089/
 
 ## Q156089: PRB: Closing SDI (Top-Level) Form Does Not Release Menu
 
+{% raw %}
+
 	Article: Q156089
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -108,3 +110,5 @@ permalink: /kb/156/Q156089/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195329/
 
 ## Q195329: WD97: Text Converted to One-Row Table (Paragraph Marks Ignored)
 
+{% raw %}
+
 	Article: Q195329
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -71,3 +73,5 @@ permalink: /kb/195/Q195329/
 	
 	=============================================================================
 	
+
+{% endraw %}

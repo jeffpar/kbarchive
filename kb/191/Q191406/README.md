@@ -6,6 +6,8 @@ permalink: /kb/191/Q191406/
 
 ## Q191406: Missing Appointments in Outlook Calendar When Using Schedule+
 
+{% raw %}
+
 	Article: Q191406
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.5
@@ -62,3 +64,5 @@ permalink: /kb/191/Q191406/
 	
 	=============================================================================
 	
+
+{% endraw %}

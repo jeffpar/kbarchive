@@ -6,6 +6,8 @@ permalink: /kb/246/Q246485/
 
 ## Q246485: STOP 0xC0000142 in User32.dll After Upgrading
 
+{% raw %}
+
 	Article: Q246485
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/246/Q246485/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123857/
 
 ## Q123857: PC DirSync: DirSync Request Limitations of SRVMAIN.EXE
 
+{% raw %}
+
 	Article: Q123857
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2,3.5
@@ -78,3 +80,5 @@ permalink: /kb/123/Q123857/
 	
 	=============================================================================
 	
+
+{% endraw %}

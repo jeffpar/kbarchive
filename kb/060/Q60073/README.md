@@ -6,6 +6,8 @@ permalink: /kb/060/Q60073/
 
 ## Q60073: Instruction: Step Turns Airspeed to High
 
+{% raw %}
+
 	Article: Q60073
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -31,3 +33,5 @@ permalink: /kb/060/Q60073/
 	
 	=============================================================================
 	
+
+{% endraw %}

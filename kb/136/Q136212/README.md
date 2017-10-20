@@ -6,6 +6,8 @@ permalink: /kb/136/Q136212/
 
 ## Q136212: How to Activate FoxPro 2.6 Style System Menu in Visual FoxPro
 
+{% raw %}
+
 	Article: Q136212
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/136/Q136212/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140045/
 
 ## Q140045: Creating a PCL Separator File That Creates No Printed Output
 
+{% raw %}
+
 	Article: Q140045
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -71,3 +73,5 @@ permalink: /kb/140/Q140045/
 	
 	=============================================================================
 	
+
+{% endraw %}

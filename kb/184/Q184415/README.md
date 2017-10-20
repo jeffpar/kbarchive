@@ -6,6 +6,8 @@ permalink: /kb/184/Q184415/
 
 ## Q184415: WD97: HTML Converter Cannot Save in Different Code Pages
 
+{% raw %}
+
 	Article: Q184415
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -56,3 +58,5 @@ permalink: /kb/184/Q184415/
 	
 	=============================================================================
 	
+
+{% endraw %}

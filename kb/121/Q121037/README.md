@@ -6,6 +6,8 @@ permalink: /kb/121/Q121037/
 
 ## Q121037: MAC Encarta 1994: README Contents
 
+{% raw %}
+
 	Article: Q121037
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -339,3 +341,5 @@ permalink: /kb/121/Q121037/
 	
 	=============================================================================
 	
+
+{% endraw %}

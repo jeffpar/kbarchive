@@ -6,6 +6,8 @@ permalink: /kb/319/Q319425/
 
 ## Q319425: Stop 0xc000021a Error Message on a Blue Screen in Windows NT
 
+{% raw %}
+
 	Article: Q319425
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/319/Q319425/
 	
 	=============================================================================
 	
+
+{% endraw %}

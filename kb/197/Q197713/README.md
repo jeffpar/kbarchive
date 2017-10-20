@@ -6,6 +6,8 @@ permalink: /kb/197/Q197713/
 
 ## Q197713: XCLN: ErrMsg: Authenticode Signature not Found with ODK
 
+{% raw %}
+
 	Article: Q197713
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -158,3 +160,5 @@ permalink: /kb/197/Q197713/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134229/
 
 ## Q134229: Attachmate Zip Host Manager Requires Patch
 
+{% raw %}
+
 	Article: Q134229
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -51,3 +53,5 @@ permalink: /kb/134/Q134229/
 	
 	=============================================================================
 	
+
+{% endraw %}

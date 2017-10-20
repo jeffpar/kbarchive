@@ -6,6 +6,8 @@ permalink: /kb/172/Q172968/
 
 ## Q172968: Disk Subsystem Recovery Documentation Error
 
+{% raw %}
+
 	Article: Q172968
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -47,3 +49,5 @@ permalink: /kb/172/Q172968/
 	
 	=============================================================================
 	
+
+{% endraw %}

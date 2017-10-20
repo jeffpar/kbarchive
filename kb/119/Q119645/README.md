@@ -6,6 +6,8 @@ permalink: /kb/119/Q119645/
 
 ## Q119645: PC Win: SMTP Address Generates a Non-Delivery Report
 
+{% raw %}
+
 	Article: Q119645
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -67,3 +69,5 @@ permalink: /kb/119/Q119645/
 	
 	=============================================================================
 	
+
+{% endraw %}

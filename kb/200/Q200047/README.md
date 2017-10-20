@@ -6,6 +6,8 @@ permalink: /kb/200/Q200047/
 
 ## Q200047: Error Uninstalling Internet Explorer on Terminal Server
 
+{% raw %}
+
 	Article: Q200047
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.0,4.01,4.01 Service Pack 1,5; winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/200/Q200047/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182127/
 
 ## Q182127: Computer Hangs With VoiceView Modem
 
+{% raw %}
+
 	Article: Q182127
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/182/Q182127/
 	
 	=============================================================================
 	
+
+{% endraw %}

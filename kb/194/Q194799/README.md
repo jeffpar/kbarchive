@@ -6,6 +6,8 @@ permalink: /kb/194/Q194799/
 
 ## Q194799: HOWTO: Retrieve RAW/LONG RAW Data from Oracle for ASP Page
 
+{% raw %}
+
 	Article: Q194799
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.0,2.1,2.1 SP2,2.5,2.6,2.7,Build 2.573.2927
@@ -110,3 +112,5 @@ permalink: /kb/194/Q194799/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96203/
 
 ## Q96203: SMTP: Break Absolute Option (-BT) Stops Gateway Immediately
 
+{% raw %}
+
 	Article: Q96203
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/096/Q96203/
 	
 	=============================================================================
 	
+
+{% endraw %}

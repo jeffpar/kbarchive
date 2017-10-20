@@ -6,6 +6,8 @@ permalink: /kb/307/Q307434/
 
 ## Q307434: SMS: SMSCliToknAcct&amp; Lockout with Software Installation Account
 
+{% raw %}
+
 	Article: Q307434
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -246,3 +248,5 @@ permalink: /kb/307/Q307434/
 	
 	=============================================================================
 	
+
+{% endraw %}

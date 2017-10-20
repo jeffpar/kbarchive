@@ -6,6 +6,8 @@ permalink: /kb/129/Q129286/
 
 ## Q129286: PRB: Clone Won't Support All ListFields &amp; ListIndexes Methods
 
+{% raw %}
+
 	Article: Q129286
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -143,3 +145,5 @@ permalink: /kb/129/Q129286/
 	
 	=============================================================================
 	
+
+{% endraw %}

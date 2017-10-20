@@ -6,6 +6,8 @@ permalink: /kb/177/Q177592/
 
 ## Q177592: PRB: User Connection Object Connect Property Remains Populated
 
+{% raw %}
+
 	Article: Q177592
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -143,3 +145,5 @@ permalink: /kb/177/Q177592/
 	
 	=============================================================================
 	
+
+{% endraw %}

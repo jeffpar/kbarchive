@@ -6,6 +6,8 @@ permalink: /kb/310/Q310770/
 
 ## Q310770: FP2002: JPEG Image Quality Degrades When Inserted into Web Page
 
+{% raw %}
+
 	Article: Q310770
 	Product(s): Word Front Page
 	Version(s): 
@@ -157,3 +159,5 @@ permalink: /kb/310/Q310770/
 	
 	=============================================================================
 	
+
+{% endraw %}

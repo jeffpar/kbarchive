@@ -6,6 +6,8 @@ permalink: /kb/130/Q130362/
 
 ## Q130362: How to Install and Troubleshoot the HP JetAdmin Service
 
+{% raw %}
+
 	Article: Q130362
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -164,3 +166,5 @@ permalink: /kb/130/Q130362/
 	
 	=============================================================================
 	
+
+{% endraw %}

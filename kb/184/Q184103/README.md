@@ -6,6 +6,8 @@ permalink: /kb/184/Q184103/
 
 ## Q184103: XCON: MTA Converts General Text BP15 Attachments
 
+{% raw %}
+
 	Article: Q184103
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/184/Q184103/
 	
 	=============================================================================
 	
+
+{% endraw %}

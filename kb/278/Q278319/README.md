@@ -6,6 +6,8 @@ permalink: /kb/278/Q278319/
 
 ## Q278319: INFO: Wscript.Shell Runs Commands as System in IIS
 
+{% raw %}
+
 	Article: Q278319
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -78,3 +80,5 @@ permalink: /kb/278/Q278319/
 	
 	=============================================================================
 	
+
+{% endraw %}

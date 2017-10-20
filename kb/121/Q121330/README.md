@@ -6,6 +6,8 @@ permalink: /kb/121/Q121330/
 
 ## Q121330: BUG: MCIWndClass Popup Window Palette Flashes
 
+{% raw %}
+
 	Article: Q121330
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:1.1,3.1
@@ -130,3 +132,5 @@ permalink: /kb/121/Q121330/
 	
 	=============================================================================
 	
+
+{% endraw %}

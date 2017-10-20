@@ -6,6 +6,8 @@ permalink: /kb/135/Q135930/
 
 ## Q135930: PC Adm: Err Msg: Failure to Update Part or All of RDI System
 
+{% raw %}
+
 	Article: Q135930
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -58,3 +60,5 @@ permalink: /kb/135/Q135930/
 	
 	=============================================================================
 	
+
+{% endraw %}

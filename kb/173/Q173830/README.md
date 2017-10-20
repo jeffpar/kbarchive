@@ -6,6 +6,8 @@ permalink: /kb/173/Q173830/
 
 ## Q173830: Office 97/VB Programmer's Guide Does Not Cover Macintosh
 
+{% raw %}
+
 	Article: Q173830
 	Product(s): Microsoft Press
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/173/Q173830/
 	
 	=============================================================================
 	
+
+{% endraw %}

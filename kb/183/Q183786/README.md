@@ -6,6 +6,8 @@ permalink: /kb/183/Q183786/
 
 ## Q183786: TN3270 Server Keeps SNA Session Open When TN3270 Client Rebooted
 
+{% raw %}
+
 	Article: Q183786
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -156,3 +158,5 @@ permalink: /kb/183/Q183786/
 	
 	=============================================================================
 	
+
+{% endraw %}

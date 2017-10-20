@@ -6,6 +6,8 @@ permalink: /kb/136/Q136283/
 
 ## Q136283: PRB: Installing Visual FoxPro Disables LAN Manager
 
+{% raw %}
+
 	Article: Q136283
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/136/Q136283/
 	
 	=============================================================================
 	
+
+{% endraw %}

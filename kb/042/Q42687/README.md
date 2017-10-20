@@ -6,6 +6,8 @@ permalink: /kb/042/Q42687/
 
 ## Q42687: QuickC 2.00 README.DOC: Type Quantifiers
 
+{% raw %}
+
 	Article: Q42687
 	Product(s): See article
 	Version(s): 2.00
@@ -25,3 +27,5 @@ permalink: /kb/042/Q42687/
 	precision, not 19.
 	
 	Table 4.1 on Page 49 should also be corrected.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68892/
 
 ## Q68892: Object Files Are Not Created in the Proper Directory
 
+{% raw %}
+
 	Article: Q68892
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -37,3 +39,5 @@ permalink: /kb/068/Q68892/
 	Microsoft has confirmed this to be a problem in the C compiler
 	versions 6.00 and 6.00a. We are researching the problem and will post
 	new information here as it becomes available.
+
+{% endraw %}

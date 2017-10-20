@@ -6,6 +6,8 @@ permalink: /kb/143/Q143021/
 
 ## Q143021: PPT7: Error Saving Presentation as PowerPoint 4.0 File
 
+{% raw %}
+
 	Article: Q143021
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -59,3 +61,5 @@ permalink: /kb/143/Q143021/
 	
 	=============================================================================
 	
+
+{% endraw %}

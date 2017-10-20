@@ -6,6 +6,8 @@ permalink: /kb/153/Q153605/
 
 ## Q153605: Helpdesk Displays Incomplete Message On Remote Control
 
+{% raw %}
+
 	Article: Q153605
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -49,3 +51,5 @@ permalink: /kb/153/Q153605/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183562/
 
 ## Q183562: No Help File For Microsoft Management Console Snap-in
 
+{% raw %}
+
 	Article: Q183562
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -55,3 +57,5 @@ permalink: /kb/183/Q183562/
 	
 	=============================================================================
 	
+
+{% endraw %}

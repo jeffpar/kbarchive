@@ -6,6 +6,8 @@ permalink: /kb/152/Q152019/
 
 ## Q152019: Encarta 96 Encyclopedia: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q152019
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -76,3 +78,5 @@ permalink: /kb/152/Q152019/
 	
 	=============================================================================
 	
+
+{% endraw %}

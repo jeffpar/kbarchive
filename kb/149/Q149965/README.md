@@ -6,6 +6,8 @@ permalink: /kb/149/Q149965/
 
 ## Q149965: FIX: C2668 in Overloaded Function When enum Is Promoted to int
 
+{% raw %}
+
 	Article: Q149965
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.52,2.0,2.1,2.2,4.0,4.1,4.2
@@ -84,3 +86,5 @@ permalink: /kb/149/Q149965/
 	
 	=============================================================================
 	
+
+{% endraw %}

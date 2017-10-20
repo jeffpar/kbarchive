@@ -6,6 +6,8 @@ permalink: /kb/047/Q47504/
 
 ## Q47504: Some Instructions May Require Enabling of Instruction Set
 
+{% raw %}
+
 	Article: Q47504
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -106,3 +108,5 @@ permalink: /kb/047/Q47504/
 	
 	=============================================================================
 	
+
+{% endraw %}

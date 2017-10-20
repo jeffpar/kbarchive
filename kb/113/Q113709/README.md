@@ -6,6 +6,8 @@ permalink: /kb/113/Q113709/
 
 ## Q113709: NTBACKUP Doesn't Create Set Description from Command Line
 
+{% raw %}
+
 	Article: Q113709
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -59,3 +61,5 @@ permalink: /kb/113/Q113709/
 	
 	=============================================================================
 	
+
+{% endraw %}

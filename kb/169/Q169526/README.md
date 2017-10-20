@@ -6,6 +6,8 @@ permalink: /kb/169/Q169526/
 
 ## Q169526: WordMail Errors After Remove All of Microsoft Project
 
+{% raw %}
+
 	Article: Q169526
 	Product(s): Word 97 for Windows
 	Version(s): 2000,4.0,4.1a
@@ -80,3 +82,5 @@ permalink: /kb/169/Q169526/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156523/
 
 ## Q156523: SMS: Remote Control Redraw Problems with Diamond Video Card
 
+{% raw %}
+
 	Article: Q156523
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -52,3 +54,5 @@ permalink: /kb/156/Q156523/
 	
 	=============================================================================
 	
+
+{% endraw %}

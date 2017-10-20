@@ -6,6 +6,8 @@ permalink: /kb/126/Q126711/
 
 ## Q126711: Quick Formatting Write-Protected Floppy Disks Allowed
 
+{% raw %}
+
 	Article: Q126711
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/126/Q126711/
 	
 	=============================================================================
 	
+
+{% endraw %}

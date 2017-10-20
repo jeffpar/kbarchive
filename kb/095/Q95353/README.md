@@ -6,6 +6,8 @@ permalink: /kb/095/Q95353/
 
 ## Q95353: No Sounds with PC-Speaker Driver
 
+{% raw %}
+
 	Article: Q95353
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0 2.0 1991 1992 1993 1994
@@ -61,3 +63,5 @@ permalink: /kb/095/Q95353/
 	
 	=============================================================================
 	
+
+{% endraw %}

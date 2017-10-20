@@ -6,6 +6,8 @@ permalink: /kb/150/Q150428/
 
 ## Q150428: Mac Bookshelf 96-97: Temp. Files Appear in Bookshelf Folder
 
+{% raw %}
+
 	Article: Q150428
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -58,3 +60,5 @@ permalink: /kb/150/Q150428/
 	
 	=============================================================================
 	
+
+{% endraw %}

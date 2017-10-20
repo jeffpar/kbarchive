@@ -6,6 +6,8 @@ permalink: /kb/196/Q196552/
 
 ## Q196552: WD97: How to Reset Character and Style Formatting
 
+{% raw %}
+
 	Article: Q196552
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/196/Q196552/
 	
 	=============================================================================
 	
+
+{% endraw %}

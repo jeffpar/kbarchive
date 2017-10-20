@@ -6,6 +6,8 @@ permalink: /kb/142/Q142577/
 
 ## Q142577: Reply to All Will Not Include Resources Attendees
 
+{% raw %}
+
 	Article: Q142577
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -73,3 +75,5 @@ permalink: /kb/142/Q142577/
 	
 	=============================================================================
 	
+
+{% endraw %}

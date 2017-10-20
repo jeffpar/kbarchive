@@ -6,6 +6,8 @@ permalink: /kb/133/Q133015/
 
 ## Q133015: BUG: Use of Apostrophes in DSN Setup Not Allowed
 
+{% raw %}
+
 	Article: Q133015
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -60,3 +62,5 @@ permalink: /kb/133/Q133015/
 	
 	=============================================================================
 	
+
+{% endraw %}

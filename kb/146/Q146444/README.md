@@ -6,6 +6,8 @@ permalink: /kb/146/Q146444/
 
 ## Q146444: FIX: Working Directory Setting with Trailing Backslash Fails
 
+{% raw %}
+
 	Article: Q146444
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -80,3 +82,5 @@ permalink: /kb/146/Q146444/
 	
 	=============================================================================
 	
+
+{% endraw %}

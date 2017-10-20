@@ -6,6 +6,8 @@ permalink: /kb/130/Q130668/
 
 ## Q130668: Mapping Netware Drives with the AT Scheduler
 
+{% raw %}
+
 	Article: Q130668
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -67,3 +69,5 @@ permalink: /kb/130/Q130668/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132605/
 
 ## Q132605: Channels Reversed on Sound Galaxy Washington 16 Sound Card
 
+{% raw %}
+
 	Article: Q132605
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/132/Q132605/
 	
 	=============================================================================
 	
+
+{% endraw %}

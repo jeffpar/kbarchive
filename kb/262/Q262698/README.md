@@ -6,6 +6,8 @@ permalink: /kb/262/Q262698/
 
 ## Q262698: FIX: Visual C++ 6.0 Debugger Hangs on Multiprocessor Computers
 
+{% raw %}
+
 	Article: Q262698
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0; winnt:
@@ -69,3 +71,5 @@ permalink: /kb/262/Q262698/
 	
 	=============================================================================
 	
+
+{% endraw %}

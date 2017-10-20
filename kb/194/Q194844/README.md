@@ -6,6 +6,8 @@ permalink: /kb/194/Q194844/
 
 ## Q194844: Combat FS: Chirping or Clicking Sounds During Game Play
 
+{% raw %}
+
 	Article: Q194844
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/194/Q194844/
 	
 	=============================================================================
 	
+
+{% endraw %}

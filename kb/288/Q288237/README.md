@@ -6,6 +6,8 @@ permalink: /kb/288/Q288237/
 
 ## Q288237: Server for NIS Does Not Start After You Demote a DC
 
+{% raw %}
+
 	Article: Q288237
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,3.0
@@ -87,3 +89,5 @@ permalink: /kb/288/Q288237/
 	
 	=============================================================================
 	
+
+{% endraw %}

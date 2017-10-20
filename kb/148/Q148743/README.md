@@ -6,6 +6,8 @@ permalink: /kb/148/Q148743/
 
 ## Q148743: Cannot Complete MSN 1.2 Upgrade If Msnver.txt File Is Missing
 
+{% raw %}
+
 	Article: Q148743
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05
@@ -64,3 +66,5 @@ permalink: /kb/148/Q148743/
 	
 	=============================================================================
 	
+
+{% endraw %}

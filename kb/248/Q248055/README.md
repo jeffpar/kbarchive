@@ -6,6 +6,8 @@ permalink: /kb/248/Q248055/
 
 ## Q248055: BUG: Run-Time Error 713 Opening Data Report in Distributed App
 
+{% raw %}
+
 	Article: Q248055
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -112,3 +114,5 @@ permalink: /kb/248/Q248055/
 	
 	=============================================================================
 	
+
+{% endraw %}

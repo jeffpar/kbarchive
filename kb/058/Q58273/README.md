@@ -6,6 +6,8 @@ permalink: /kb/058/Q58273/
 
 ## Q58273: Not Enough Space to Save File in Write
 
+{% raw %}
+
 	Article: Q58273
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/058/Q58273/
 	
 	=============================================================================
 	
+
+{% endraw %}

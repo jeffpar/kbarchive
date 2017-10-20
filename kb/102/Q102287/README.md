@@ -6,6 +6,8 @@ permalink: /kb/102/Q102287/
 
 ## Q102287: ERR: &quot;File Not Found&quot; or &quot;File Does Not Exist&quot;
 
+{% raw %}
+
 	Article: Q102287
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.0,2.01
@@ -59,3 +61,5 @@ permalink: /kb/102/Q102287/
 	
 	=============================================================================
 	
+
+{% endraw %}

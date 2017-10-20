@@ -6,6 +6,8 @@ permalink: /kb/146/Q146726/
 
 ## Q146726: ErrMsg: File .IDC Could Not Be Found
 
+{% raw %}
+
 	Article: Q146726
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -60,3 +62,5 @@ permalink: /kb/146/Q146726/
 	
 	=============================================================================
 	
+
+{% endraw %}

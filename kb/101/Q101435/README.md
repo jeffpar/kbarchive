@@ -6,6 +6,8 @@ permalink: /kb/101/Q101435/
 
 ## Q101435: Throttle Goes to Idle with ThrustMaster
 
+{% raw %}
+
 	Article: Q101435
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:4.0,4.0a,4.0b
@@ -54,3 +56,5 @@ permalink: /kb/101/Q101435/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129048/
 
 ## Q129048: Network Unable to Start with Compaq Netflex32 NIC
 
+{% raw %}
+
 	Article: Q129048
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/129/Q129048/
 	
 	=============================================================================
 	
+
+{% endraw %}

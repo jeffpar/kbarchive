@@ -6,6 +6,8 @@ permalink: /kb/171/Q171779/
 
 ## Q171779: Enabling User Profile Editor On a Windows NT 3.51 Workstation
 
+{% raw %}
+
 	Article: Q171779
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -58,3 +60,5 @@ permalink: /kb/171/Q171779/
 	
 	=============================================================================
 	
+
+{% endraw %}

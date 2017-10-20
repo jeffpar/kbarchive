@@ -6,6 +6,8 @@ permalink: /kb/170/Q170363/
 
 ## Q170363: Mastering: ENTER Key Doesn't Turn On Closed Captioning in Video
 
+{% raw %}
+
 	Article: Q170363
 	Product(s): Microsoft Mastering Series
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/170/Q170363/
 	
 	=============================================================================
 	
+
+{% endraw %}

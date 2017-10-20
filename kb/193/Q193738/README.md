@@ -6,6 +6,8 @@ permalink: /kb/193/Q193738/
 
 ## Q193738: WD97: Add Button Unavailable in the Spelling Dialog Box
 
+{% raw %}
+
 	Article: Q193738
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -114,3 +116,5 @@ permalink: /kb/193/Q193738/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181174/
 
 ## Q181174: WD97: How to Exit Windows from Word Using ExitWindows
 
+{% raw %}
+
 	Article: Q181174
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/181/Q181174/
 	
 	=============================================================================
 	
+
+{% endraw %}

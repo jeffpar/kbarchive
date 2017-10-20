@@ -6,6 +6,8 @@ permalink: /kb/168/Q168567/
 
 ## Q168567: Clustering Information on IP Address Failover
 
+{% raw %}
+
 	Article: Q168567
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -93,3 +95,5 @@ permalink: /kb/168/Q168567/
 	
 	=============================================================================
 	
+
+{% endraw %}

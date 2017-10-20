@@ -6,6 +6,8 @@ permalink: /kb/122/Q122998/
 
 ## Q122998: PC MAPI: Visual Basic Example for C Code in Tech Reference
 
+{% raw %}
+
 	Article: Q122998
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -92,3 +94,5 @@ permalink: /kb/122/Q122998/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/046/Q46733/
 
 ## Q46733: L1008: &quot;Segment Limit Too High&quot; May Be Caused by Missing Colon
 
+{% raw %}
+
 	Article: Q46733
 	Product(s): See article
 	Version(s): 3.x 4.06 4.07 5.01.21 5.03 5.05 5.10 | 5.01.21 5.03 5.05
@@ -29,3 +31,5 @@ permalink: /kb/046/Q46733/
 	switch from the numeric argument as follows:
 	
 	   LINK /SE:1024
+
+{% endraw %}

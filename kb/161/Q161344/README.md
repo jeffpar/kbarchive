@@ -6,6 +6,8 @@ permalink: /kb/161/Q161344/
 
 ## Q161344: INFO: Visual Basic 4.0 and Visual Basic 5.0 Compatibility
 
+{% raw %}
+
 	Article: Q161344
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -735,3 +737,5 @@ permalink: /kb/161/Q161344/
 	
 	=============================================================================
 	
+
+{% endraw %}

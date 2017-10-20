@@ -6,6 +6,8 @@ permalink: /kb/177/Q177737/
 
 ## Q177737: Error Message: Bad IP Address /?.
 
+{% raw %}
+
 	Article: Q177737
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/177/Q177737/
 	
 	=============================================================================
 	
+
+{% endraw %}

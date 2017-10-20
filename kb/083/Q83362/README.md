@@ -6,6 +6,8 @@ permalink: /kb/083/Q83362/
 
 ## Q83362: Windows-Based Applications Drift After Being Reopened
 
+{% raw %}
+
 	Article: Q83362
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/083/Q83362/
 	
 	=============================================================================
 	
+
+{% endraw %}

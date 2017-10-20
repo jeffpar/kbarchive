@@ -6,6 +6,8 @@ permalink: /kb/162/Q162723/
 
 ## Q162723: Golf 3.0: Player Name and PID List &quot;Illegal Copy&quot;
 
+{% raw %}
+
 	Article: Q162723
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:3.0
@@ -80,3 +82,5 @@ permalink: /kb/162/Q162723/
 	
 	=============================================================================
 	
+
+{% endraw %}

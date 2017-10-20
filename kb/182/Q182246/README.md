@@ -6,6 +6,8 @@ permalink: /kb/182/Q182246/
 
 ## Q182246: WD97: Custom Toolbar Lost Saving Document as New Template
 
+{% raw %}
+
 	Article: Q182246
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -90,3 +92,5 @@ permalink: /kb/182/Q182246/
 	
 	=============================================================================
 	
+
+{% endraw %}

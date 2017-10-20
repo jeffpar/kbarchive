@@ -6,6 +6,8 @@ permalink: /kb/173/Q173407/
 
 ## Q173407: HOWTO: Register Your Custom ActiveX DLL from a Client
 
+{% raw %}
+
 	Article: Q173407
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -203,3 +205,5 @@ permalink: /kb/173/Q173407/
 	
 	=============================================================================
 	
+
+{% endraw %}

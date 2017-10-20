@@ -6,6 +6,8 @@ permalink: /kb/039/Q39520/
 
 ## Q39520: Passing an Integer from C to MASM, Returning a Double
 
+{% raw %}
+
 	Article: Q39520
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,6.0,6.0a,6.0b
@@ -99,3 +101,5 @@ permalink: /kb/039/Q39520/
 	
 	=============================================================================
 	
+
+{% endraw %}

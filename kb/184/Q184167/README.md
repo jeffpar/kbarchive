@@ -6,6 +6,8 @@ permalink: /kb/184/Q184167/
 
 ## Q184167: SMS: Using the 'Group Not' Function in Queries
 
+{% raw %}
+
 	Article: Q184167
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -68,3 +70,5 @@ permalink: /kb/184/Q184167/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236286/
 
 ## Q236286: PRB: Out of Memory Error Message Using the Rich Textbox Control
 
+{% raw %}
+
 	Article: Q236286
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -104,3 +106,5 @@ permalink: /kb/236/Q236286/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/108/Q108318/
 
 ## Q108318: AppleTalk Rights Inheritence in Subfolders
 
+{% raw %}
+
 	Article: Q108318
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -70,3 +72,5 @@ permalink: /kb/108/Q108318/
 	
 	=============================================================================
 	
+
+{% endraw %}

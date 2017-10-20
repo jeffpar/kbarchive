@@ -6,6 +6,8 @@ permalink: /kb/191/Q191751/
 
 ## Q191751: Smoothing Fonts Disabled Using ETO_GLYPHINDEX
 
+{% raw %}
+
 	Article: Q191751
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/191/Q191751/
 	
 	=============================================================================
 	
+
+{% endraw %}

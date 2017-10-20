@@ -6,6 +6,8 @@ permalink: /kb/142/Q142985/
 
 ## Q142985: SBS Install Hangs Computer with Dial-Up Networking and MSDLC32
 
+{% raw %}
+
 	Article: Q142985
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -46,3 +48,5 @@ permalink: /kb/142/Q142985/
 	
 	=============================================================================
 	
+
+{% endraw %}

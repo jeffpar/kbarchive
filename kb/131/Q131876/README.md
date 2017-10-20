@@ -6,6 +6,8 @@ permalink: /kb/131/Q131876/
 
 ## Q131876: ATI Mach8 Video Adapter May Need BIOS Upgrade
 
+{% raw %}
+
 	Article: Q131876
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/131/Q131876/
 	
 	=============================================================================
 	
+
+{% endraw %}

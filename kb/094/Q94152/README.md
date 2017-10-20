@@ -6,6 +6,8 @@ permalink: /kb/094/Q94152/
 
 ## Q94152: HPPCL5E: Adobe Type Manager Fonts Print at Wrong Size
 
+{% raw %}
+
 	Article: Q94152
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): 3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/094/Q94152/
 	
 	=============================================================================
 	
+
+{% endraw %}

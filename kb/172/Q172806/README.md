@@ -6,6 +6,8 @@ permalink: /kb/172/Q172806/
 
 ## Q172806: Creating a WinNT Boot Floppy for DEC ALPHA RISC Computers
 
+{% raw %}
+
 	Article: Q172806
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -296,3 +298,5 @@ permalink: /kb/172/Q172806/
 	
 	=============================================================================
 	
+
+{% endraw %}

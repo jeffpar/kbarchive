@@ -6,6 +6,8 @@ permalink: /kb/128/Q128896/
 
 ## Q128896: PRB: Exception in Service Causes JIT Debugger to Hang Computer
 
+{% raw %}
+
 	Article: Q128896
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,5.0,6.0
@@ -72,3 +74,5 @@ permalink: /kb/128/Q128896/
 	
 	=============================================================================
 	
+
+{% endraw %}

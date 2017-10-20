@@ -6,6 +6,8 @@ permalink: /kb/240/Q240804/
 
 ## Q240804: Pause Statement Does Not Work in Logon Script
 
+{% raw %}
+
 	Article: Q240804
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -70,3 +72,5 @@ permalink: /kb/240/Q240804/
 	
 	=============================================================================
 	
+
+{% endraw %}

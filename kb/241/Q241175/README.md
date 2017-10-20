@@ -6,6 +6,8 @@ permalink: /kb/241/Q241175/
 
 ## Q241175: NBA 2000: Shadow of Basketball Does Not Appear Properly
 
+{% raw %}
+
 	Article: Q241175
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/241/Q241175/
 	
 	=============================================================================
 	
+
+{% endraw %}

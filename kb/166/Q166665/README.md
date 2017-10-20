@@ -6,6 +6,8 @@ permalink: /kb/166/Q166665/
 
 ## Q166665: XCLN: Troubleshooting AppleTalk Connection
 
+{% raw %}
+
 	Article: Q166665
 	Product(s): Microsoft Exchange
 	Version(s): Macintosh:4.0,5.0
@@ -190,3 +192,5 @@ permalink: /kb/166/Q166665/
 	
 	=============================================================================
 	
+
+{% endraw %}

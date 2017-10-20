@@ -6,6 +6,8 @@ permalink: /kb/235/Q235785/
 
 ## Q235785: SMS: SMS Backup Schedule Is Updated Only Once a Day
 
+{% raw %}
+
 	Article: Q235785
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -81,3 +83,5 @@ permalink: /kb/235/Q235785/
 	
 	=============================================================================
 	
+
+{% endraw %}

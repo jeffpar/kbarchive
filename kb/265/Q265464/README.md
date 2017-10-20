@@ -6,6 +6,8 @@ permalink: /kb/265/Q265464/
 
 ## Q265464: Cannot Gain Access to Server, System Event Log Shows Event ID 25
 
+{% raw %}
+
 	Article: Q265464
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP5
@@ -51,3 +53,5 @@ permalink: /kb/265/Q265464/
 	
 	=============================================================================
 	
+
+{% endraw %}

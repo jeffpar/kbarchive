@@ -6,6 +6,8 @@ permalink: /kb/316/Q316347/
 
 ## Q316347: IIS 5: HiSecWeb Potential Risks and the IIS Lockdown Tool
 
+{% raw %}
+
 	Article: Q316347
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -129,3 +131,5 @@ permalink: /kb/316/Q316347/
 	
 	=============================================================================
 	
+
+{% endraw %}

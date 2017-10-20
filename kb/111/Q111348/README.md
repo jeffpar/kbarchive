@@ -6,6 +6,8 @@ permalink: /kb/111/Q111348/
 
 ## Q111348: Stripe Set with Parity Incorrectly Displays RECOVERED
 
+{% raw %}
+
 	Article: Q111348
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -72,3 +74,5 @@ permalink: /kb/111/Q111348/
 	
 	=============================================================================
 	
+
+{% endraw %}

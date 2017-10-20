@@ -6,6 +6,8 @@ permalink: /kb/192/Q192595/
 
 ## Q192595: XFOR: Incorrect Date on Message Sent Through cc:Mail Connector
 
+{% raw %}
+
 	Article: Q192595
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -125,3 +127,5 @@ permalink: /kb/192/Q192595/
 	
 	=============================================================================
 	
+
+{% endraw %}

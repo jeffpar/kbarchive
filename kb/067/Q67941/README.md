@@ -6,6 +6,8 @@ permalink: /kb/067/Q67941/
 
 ## Q67941: Removing the Hidden File Attribute
 
+{% raw %}
+
 	Article: Q67941
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -87,3 +89,5 @@ permalink: /kb/067/Q67941/
 	
 	=============================================================================
 	
+
+{% endraw %}

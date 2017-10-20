@@ -6,6 +6,8 @@ permalink: /kb/164/Q164472/
 
 ## Q164472: WD97: GC1282: Rich Text Format Addendum (Spec. for Word 97)
 
+{% raw %}
+
 	Article: Q164472
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/164/Q164472/
 	
 	=============================================================================
 	
+
+{% endraw %}

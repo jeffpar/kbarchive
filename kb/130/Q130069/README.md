@@ -6,6 +6,8 @@ permalink: /kb/130/Q130069/
 
 ## Q130069: SERVICES.EXE Fails With Access Violation and Returns RPC Busy...
 
+{% raw %}
+
 	Article: Q130069
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -80,3 +82,5 @@ permalink: /kb/130/Q130069/
 	
 	=============================================================================
 	
+
+{% endraw %}

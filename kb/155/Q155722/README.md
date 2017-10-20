@@ -6,6 +6,8 @@ permalink: /kb/155/Q155722/
 
 ## Q155722: Wrong Icons Displayed After Upgrade to Windows NT 4.0
 
+{% raw %}
+
 	Article: Q155722
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/155/Q155722/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123320/
 
 ## Q123320: PC Forms: Err Msg: Could Not Copy File..
 
+{% raw %}
+
 	Article: Q123320
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.00
@@ -77,3 +79,5 @@ permalink: /kb/123/Q123320/
 	
 	=============================================================================
 	
+
+{% endraw %}

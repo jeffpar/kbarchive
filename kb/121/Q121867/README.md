@@ -6,6 +6,8 @@ permalink: /kb/121/Q121867/
 
 ## Q121867: PC Setup: Incorrect Disk Space Requirement for 3.2 Update
 
+{% raw %}
+
 	Article: Q121867
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -39,3 +41,5 @@ permalink: /kb/121/Q121867/
 	
 	=============================================================================
 	
+
+{% endraw %}

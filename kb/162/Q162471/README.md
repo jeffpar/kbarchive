@@ -6,6 +6,8 @@ permalink: /kb/162/Q162471/
 
 ## Q162471: WinNT 4.0 May Not Recognize SCSI Devices Using Nonzero LUNs
 
+{% raw %}
+
 	Article: Q162471
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -116,3 +118,5 @@ permalink: /kb/162/Q162471/
 	
 	=============================================================================
 	
+
+{% endraw %}

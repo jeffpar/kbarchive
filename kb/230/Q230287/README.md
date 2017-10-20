@@ -6,6 +6,8 @@ permalink: /kb/230/Q230287/
 
 ## Q230287: Contents of Internet Information Server 4.0 Release Notes
 
+{% raw %}
+
 	Article: Q230287
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -828,3 +830,5 @@ permalink: /kb/230/Q230287/
 	
 	=============================================================================
 	
+
+{% endraw %}

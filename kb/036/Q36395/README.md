@@ -6,6 +6,8 @@ permalink: /kb/036/Q36395/
 
 ## Q36395: How to Use REM or ' Comments in DATA Statements without Error
 
+{% raw %}
+
 	Article: Q36395
 	Product(s): See article
 	Version(s): 1.00 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -75,3 +77,5 @@ permalink: /kb/036/Q36395/
 	   READ d, e, f       ' This READ gives error while reading in f.
 	   PRINT d, e, f
 	   END
+
+{% endraw %}

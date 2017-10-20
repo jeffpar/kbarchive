@@ -6,6 +6,8 @@ permalink: /kb/245/Q245017/
 
 ## Q245017: How to Redirect an MS-DOS-Based Print Job to a Network Printer.
 
+{% raw %}
+
 	Article: Q245017
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/245/Q245017/
 	
 	=============================================================================
 	
+
+{% endraw %}

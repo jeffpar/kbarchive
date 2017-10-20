@@ -6,6 +6,8 @@ permalink: /kb/221/Q221926/
 
 ## Q221926: TCP/IP Forwarding Buffer Grows to Use Available Kernel Memory
 
+{% raw %}
+
 	Article: Q221926
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -96,3 +98,5 @@ permalink: /kb/221/Q221926/
 	
 	=============================================================================
 	
+
+{% endraw %}

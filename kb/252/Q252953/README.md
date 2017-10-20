@@ -6,6 +6,8 @@ permalink: /kb/252/Q252953/
 
 ## Q252953: SMS:Use of Only Last Static IP Addrs on Mult IP Address w/ 1 NIC
 
+{% raw %}
+
 	Article: Q252953
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -63,3 +65,5 @@ permalink: /kb/252/Q252953/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99717/
 
 ## Q99717: PROFS: Err Msg: DOS ERROR 5090, 119: Host Timeout Error
 
+{% raw %}
+
 	Article: Q99717
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1b,3.0
@@ -79,3 +81,5 @@ permalink: /kb/099/Q99717/
 	
 	=============================================================================
 	
+
+{% endraw %}

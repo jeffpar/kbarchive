@@ -6,6 +6,8 @@ permalink: /kb/130/Q130166/
 
 ## Q130166: Data Type Mapping in the Upsizing Wizard
 
+{% raw %}
+
 	Article: Q130166
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -145,3 +147,5 @@ permalink: /kb/130/Q130166/
 	
 	=============================================================================
 	
+
+{% endraw %}

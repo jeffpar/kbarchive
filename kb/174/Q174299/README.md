@@ -6,6 +6,8 @@ permalink: /kb/174/Q174299/
 
 ## Q174299: XADM: Private or Public Information Store Option Not Available
 
+{% raw %}
+
 	Article: Q174299
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/174/Q174299/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140077/
 
 ## Q140077: Mac Adm: Definition of Last seen in Mail Network Administrator
 
+{% raw %}
+
 	Article: Q140077
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1x
@@ -51,3 +53,5 @@ permalink: /kb/140/Q140077/
 	
 	=============================================================================
 	
+
+{% endraw %}

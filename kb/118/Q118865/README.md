@@ -6,6 +6,8 @@ permalink: /kb/118/Q118865/
 
 ## Q118865: FAX: FAXVIEW.EXE Postscript Printing Fails under Win 3.0, 3.0a
 
+{% raw %}
+
 	Article: Q118865
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.0a
@@ -48,3 +50,5 @@ permalink: /kb/118/Q118865/
 	
 	=============================================================================
 	
+
+{% endraw %}

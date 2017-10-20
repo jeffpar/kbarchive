@@ -6,6 +6,8 @@ permalink: /kb/028/Q28963/
 
 ## Q28963: BC Makes Smaller EXE than Make EXE File Using .LIB; e.g. Mouse
 
+{% raw %}
+
 	Article: Q28963
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -120,3 +122,5 @@ permalink: /kb/028/Q28963/
 	More information regarding making mouse calls from BASIC can be found
 	in the "Mouse Programmer's Reference Guide," which can be ordered from
 	Microsoft Customer Service by calling (206) 882-8088.
+
+{% endraw %}

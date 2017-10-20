@@ -6,6 +6,8 @@ permalink: /kb/237/Q237270/
 
 ## Q237270: Encarta 2000: How to Troubleshoot Issues Using Registry Keys
 
+{% raw %}
+
 	Article: Q237270
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:
@@ -108,3 +110,5 @@ permalink: /kb/237/Q237270/
 	
 	=============================================================================
 	
+
+{% endraw %}

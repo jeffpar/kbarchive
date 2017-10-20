@@ -6,6 +6,8 @@ permalink: /kb/111/Q111535/
 
 ## Q111535: Connect from WfWG Computer Without Network Policy
 
+{% raw %}
+
 	Article: Q111535
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -46,3 +48,5 @@ permalink: /kb/111/Q111535/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75520/
 
 ## Q75520: Changes to Code in QBasic Disappear After Pressing CTRL+BREAK
 
+{% raw %}
+
 	Article: Q75520
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -74,3 +76,5 @@ permalink: /kb/075/Q75520/
 	
 	=============================================================================
 	
+
+{% endraw %}

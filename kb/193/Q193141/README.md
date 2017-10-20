@@ -6,6 +6,8 @@ permalink: /kb/193/Q193141/
 
 ## Q193141: MCM: Reduced Frame Rate During First Stunt Quarry Event
 
+{% raw %}
+
 	Article: Q193141
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/193/Q193141/
 	
 	=============================================================================
 	
+
+{% endraw %}

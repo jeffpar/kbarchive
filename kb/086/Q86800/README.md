@@ -6,6 +6,8 @@ permalink: /kb/086/Q86800/
 
 ## Q86800: PRB: UnrealizeObject() Causes Unexpected Palette Behavior
 
+{% raw %}
+
 	Article: Q86800
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -86,3 +88,5 @@ permalink: /kb/086/Q86800/
 	
 	=============================================================================
 	
+
+{% endraw %}

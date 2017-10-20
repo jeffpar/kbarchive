@@ -6,6 +6,8 @@ permalink: /kb/045/Q45424/
 
 ## Q45424: SCREEN 9; 16 Foreground and Background Colors Simultaneously
 
+{% raw %}
+
 	Article: Q45424
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -201,3 +203,5 @@ permalink: /kb/045/Q45424/
 	END
 	DATA Blue,Green,Cyan,Red,Magenta,Brown,White,Gray
 	DATA BrBlue,BrGreen,BrCyan,BrRed,Pink,Yellow,BrWhite
+
+{% endraw %}

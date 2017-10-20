@@ -6,6 +6,8 @@ permalink: /kb/081/Q81706/
 
 ## Q81706: OwnCombo.exe Demonstrates an Owner-Draw Combo Box
 
+{% raw %}
+
 	Article: Q81706
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -59,3 +61,5 @@ permalink: /kb/081/Q81706/
 	
 	=============================================================================
 	
+
+{% endraw %}

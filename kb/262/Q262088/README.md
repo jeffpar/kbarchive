@@ -6,6 +6,8 @@ permalink: /kb/262/Q262088/
 
 ## Q262088: Description of the &quot;Show Desktop&quot; Feature in Windows
 
+{% raw %}
+
 	Article: Q262088
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000
@@ -68,3 +70,5 @@ permalink: /kb/262/Q262088/
 	
 	=============================================================================
 	
+
+{% endraw %}

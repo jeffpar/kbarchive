@@ -6,6 +6,8 @@ permalink: /kb/197/Q197664/
 
 ## Q197664: Empty Browser Window Opens When You View Multimedia Catalog
 
+{% raw %}
+
 	Article: Q197664
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -55,3 +57,5 @@ permalink: /kb/197/Q197664/
 	
 	=============================================================================
 	
+
+{% endraw %}

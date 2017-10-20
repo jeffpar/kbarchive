@@ -6,6 +6,8 @@ permalink: /kb/139/Q139269/
 
 ## Q139269: Using High Contrast Display Scheme Hides Part of Window
 
+{% raw %}
+
 	Article: Q139269
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -61,3 +63,5 @@ permalink: /kb/139/Q139269/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161305/
 
 ## Q161305: PRB: &quot;Hash Marks&quot; on ActiveX Controls After Run-Time Error
 
+{% raw %}
+
 	Article: Q161305
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -115,3 +117,5 @@ permalink: /kb/161/Q161305/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171616/
 
 ## Q171616: Update.exe Should Support DBCS Characters
 
+{% raw %}
+
 	Article: Q171616
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1 and above
@@ -49,3 +51,5 @@ permalink: /kb/171/Q171616/
 	
 	=============================================================================
 	
+
+{% endraw %}

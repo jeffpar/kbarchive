@@ -6,6 +6,8 @@ permalink: /kb/202/Q202332/
 
 ## Q202332: SMS: How 'Assignments Not Mandatory Over Slow Links' Works
 
+{% raw %}
+
 	Article: Q202332
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -103,3 +105,5 @@ permalink: /kb/202/Q202332/
 	
 	=============================================================================
 	
+
+{% endraw %}

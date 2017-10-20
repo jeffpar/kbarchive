@@ -6,6 +6,8 @@ permalink: /kb/132/Q132245/
 
 ## Q132245: SNA Server Version 2.11 - New Features
 
+{% raw %}
+
 	Article: Q132245
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -299,3 +301,5 @@ permalink: /kb/132/Q132245/
 	
 	=============================================================================
 	
+
+{% endraw %}

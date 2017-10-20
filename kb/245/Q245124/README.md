@@ -6,6 +6,8 @@ permalink: /kb/245/Q245124/
 
 ## Q245124: FIX: Access Violation in Remote Automation Manager
 
+{% raw %}
+
 	Article: Q245124
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -66,3 +68,5 @@ permalink: /kb/245/Q245124/
 	
 	=============================================================================
 	
+
+{% endraw %}

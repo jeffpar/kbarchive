@@ -6,6 +6,8 @@ permalink: /kb/050/Q50515/
 
 ## Q50515: QuickC .FON Files Identical to Windows .FON Files, Not .FNT
 
+{% raw %}
+
 	Article: Q50515
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -28,3 +30,5 @@ permalink: /kb/050/Q50515/
 	
 	This error in "C for yourself" is documented in the QuickC Version
 	2.00 README.DOC file, Part 2, "Notes on 'C for Yourself.'"
+
+{% endraw %}

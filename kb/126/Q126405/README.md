@@ -6,6 +6,8 @@ permalink: /kb/126/Q126405/
 
 ## Q126405: PRB: Cannot Hear Bell in FoxPro for Windows
 
+{% raw %}
+
 	Article: Q126405
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0
@@ -75,3 +77,5 @@ permalink: /kb/126/Q126405/
 	
 	=============================================================================
 	
+
+{% endraw %}

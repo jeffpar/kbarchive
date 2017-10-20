@@ -6,6 +6,8 @@ permalink: /kb/157/Q157434/
 
 ## Q157434: PPT: &quot;There are Too Many Windows Open&quot; Error Message
 
+{% raw %}
+
 	Article: Q157434
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -45,3 +47,5 @@ permalink: /kb/157/Q157434/
 	
 	=============================================================================
 	
+
+{% endraw %}

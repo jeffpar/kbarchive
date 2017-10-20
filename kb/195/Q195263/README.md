@@ -6,6 +6,8 @@ permalink: /kb/195/Q195263/
 
 ## Q195263: BUG: SavePicture Function Hangs VFP When Zero Disk Space
 
+{% raw %}
+
 	Article: Q195263
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/195/Q195263/
 	
 	=============================================================================
 	
+
+{% endraw %}

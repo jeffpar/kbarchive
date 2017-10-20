@@ -6,6 +6,8 @@ permalink: /kb/105/Q105292/
 
 ## Q105292: Defective Parallel Port Card May Cause .WAV Sounds to Repeat
 
+{% raw %}
+
 	Article: Q105292
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/105/Q105292/
 	
 	=============================================================================
 	
+
+{% endraw %}

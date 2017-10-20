@@ -6,6 +6,8 @@ permalink: /kb/235/Q235614/
 
 ## Q235614: Windows NT 4.0 SP6 Includes Fixes for Stress-Induced Issues
 
+{% raw %}
+
 	Article: Q235614
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6
@@ -108,3 +110,5 @@ permalink: /kb/235/Q235614/
 	
 	=============================================================================
 	
+
+{% endraw %}

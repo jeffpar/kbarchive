@@ -6,6 +6,8 @@ permalink: /kb/098/Q98118/
 
 ## Q98118: Can't Back Up .BAK,.LOG,.LST,.PRO,.RST,.SAV,.SLT, &amp; .TMP Files
 
+{% raw %}
+
 	Article: Q98118
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22; WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/098/Q98118/
 	
 	=============================================================================
 	
+
+{% endraw %}

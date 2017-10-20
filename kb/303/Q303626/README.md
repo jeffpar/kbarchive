@@ -6,6 +6,8 @@ permalink: /kb/303/Q303626/
 
 ## Q303626: SMSINST: Version of Windows Not Detected Correctly
 
+{% raw %}
+
 	Article: Q303626
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -51,3 +53,5 @@ permalink: /kb/303/Q303626/
 	
 	=============================================================================
 	
+
+{% endraw %}

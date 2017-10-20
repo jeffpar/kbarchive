@@ -6,6 +6,8 @@ permalink: /kb/242/Q242382/
 
 ## Q242382: XADM: Installing Internet Explorer 4.0 After Exchange Server
 
+{% raw %}
+
 	Article: Q242382
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -52,3 +54,5 @@ permalink: /kb/242/Q242382/
 	
 	=============================================================================
 	
+
+{% endraw %}

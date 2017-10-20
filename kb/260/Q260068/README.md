@@ -6,6 +6,8 @@ permalink: /kb/260/Q260068/
 
 ## Q260068: XADM: Error 800ff330 Running Exchange Performance Optimizer
 
+{% raw %}
+
 	Article: Q260068
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -112,3 +114,5 @@ permalink: /kb/260/Q260068/
 	
 	=============================================================================
 	
+
+{% endraw %}

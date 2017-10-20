@@ -6,6 +6,8 @@ permalink: /kb/196/Q196051/
 
 ## Q196051: Excessive Network Retransmissions While Running CSNW
 
+{% raw %}
+
 	Article: Q196051
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -112,3 +114,5 @@ permalink: /kb/196/Q196051/
 	
 	=============================================================================
 	
+
+{% endraw %}

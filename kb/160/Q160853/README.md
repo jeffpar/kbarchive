@@ -6,6 +6,8 @@ permalink: /kb/160/Q160853/
 
 ## Q160853: SMS: Mandatory Jobs Will Be Blocked If Details Window Is Open
 
+{% raw %}
+
 	Article: Q160853
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -55,3 +57,5 @@ permalink: /kb/160/Q160853/
 	
 	=============================================================================
 	
+
+{% endraw %}

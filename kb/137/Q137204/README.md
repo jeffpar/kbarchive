@@ -6,6 +6,8 @@ permalink: /kb/137/Q137204/
 
 ## Q137204: Attachments Sent to Schedule+ 1.0 User Cannot Be Saved
 
+{% raw %}
+
 	Article: Q137204
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,7.0; Win95:7.0
@@ -36,3 +38,5 @@ permalink: /kb/137/Q137204/
 	
 	=============================================================================
 	
+
+{% endraw %}

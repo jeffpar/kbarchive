@@ -6,6 +6,8 @@ permalink: /kb/114/Q114374/
 
 ## Q114374: PRB: _mktemp() May Return the Same Name Between Threads
 
+{% raw %}
+
 	Article: Q114374
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -149,3 +151,5 @@ permalink: /kb/114/Q114374/
 	
 	=============================================================================
 	
+
+{% endraw %}

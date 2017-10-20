@@ -6,6 +6,8 @@ permalink: /kb/258/Q258070/
 
 ## Q258070: NUM LOCK Not Synchronized When Using ALT+TAB in Terminal Server
 
+{% raw %}
+
 	Article: Q258070
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,4.0
@@ -104,3 +106,5 @@ permalink: /kb/258/Q258070/
 	
 	=============================================================================
 	
+
+{% endraw %}

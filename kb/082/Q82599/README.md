@@ -6,6 +6,8 @@ permalink: /kb/082/Q82599/
 
 ## Q82599: Mouse Disappears During Hollywood's Install with Idlewild
 
+{% raw %}
+
 	Article: Q82599
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/082/Q82599/
 	
 	=============================================================================
 	
+
+{% endraw %}

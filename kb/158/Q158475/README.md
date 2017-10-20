@@ -6,6 +6,8 @@ permalink: /kb/158/Q158475/
 
 ## Q158475: HOWTO: Find Missing Versions in the Project History Dialog Box
 
+{% raw %}
+
 	Article: Q158475
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -110,3 +112,5 @@ permalink: /kb/158/Q158475/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/038/Q38154/
 
 ## Q38154: Graphic Routines Fail to Use Active Card when Two are Present
 
+{% raw %}
+
 	Article: Q38154
 	Product(s): See article
 	Version(s): 1.00 1.10
@@ -32,3 +34,5 @@ permalink: /kb/038/Q38154/
 	not the bios recognizes the EGA as the active card will return the
 	value for an EGA-only mode. However, the graphics routines will
 	continue to use the MCGA card.
+
+{% endraw %}

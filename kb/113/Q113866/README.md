@@ -6,6 +6,8 @@ permalink: /kb/113/Q113866/
 
 ## Q113866: Long Filenames Appear Incorrect in File Manager
 
+{% raw %}
+
 	Article: Q113866
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -47,3 +49,5 @@ permalink: /kb/113/Q113866/
 	
 	=============================================================================
 	
+
+{% endraw %}

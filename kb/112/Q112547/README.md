@@ -6,6 +6,8 @@ permalink: /kb/112/Q112547/
 
 ## Q112547: Dial-Up Networking Hangs After Failed Multilink Attempt
 
+{% raw %}
+
 	Article: Q112547
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/112/Q112547/
 	
 	=============================================================================
 	
+
+{% endraw %}

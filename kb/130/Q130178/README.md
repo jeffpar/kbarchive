@@ -6,6 +6,8 @@ permalink: /kb/130/Q130178/
 
 ## Q130178: FIXPRNT Fixes Database Errors Reported by ANALYZE.EXE
 
+{% raw %}
+
 	Article: Q130178
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/130/Q130178/
 	
 	=============================================================================
 	
+
+{% endraw %}

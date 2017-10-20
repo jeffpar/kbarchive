@@ -6,6 +6,8 @@ permalink: /kb/166/Q166280/
 
 ## Q166280: DOC: T-SQL Debugger Server Setup Provides Incorrect Location
 
+{% raw %}
+
 	Article: Q166280
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -68,3 +70,5 @@ permalink: /kb/166/Q166280/
 	
 	=============================================================================
 	
+
+{% endraw %}

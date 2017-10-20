@@ -6,6 +6,8 @@ permalink: /kb/143/Q143117/
 
 ## Q143117: HOWTO: Determine if Windows 95/98/Me Taskbar Is Visible/Hidden
 
+{% raw %}
+
 	Article: Q143117
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -207,3 +209,5 @@ permalink: /kb/143/Q143117/
 	
 	=============================================================================
 	
+
+{% endraw %}

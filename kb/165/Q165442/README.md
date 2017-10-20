@@ -6,6 +6,8 @@ permalink: /kb/165/Q165442/
 
 ## Q165442: XCLN: Client Deletes Existing PST in Absence of Filescan Rights
 
+{% raw %}
+
 	Article: Q165442
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -63,3 +65,5 @@ permalink: /kb/165/Q165442/
 	
 	=============================================================================
 	
+
+{% endraw %}

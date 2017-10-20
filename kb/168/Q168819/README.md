@@ -6,6 +6,8 @@ permalink: /kb/168/Q168819/
 
 ## Q168819: FP97: FP Explorer Finds Misspellings that FP Editor Doesn't
 
+{% raw %}
+
 	Article: Q168819
 	Product(s): Word Front Page
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/168/Q168819/
 	
 	=============================================================================
 	
+
+{% endraw %}

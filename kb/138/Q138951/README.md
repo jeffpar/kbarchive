@@ -6,6 +6,8 @@ permalink: /kb/138/Q138951/
 
 ## Q138951: PPT7: Object w/ White Text, Black Background Prints Solid Black
 
+{% raw %}
+
 	Article: Q138951
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -119,3 +121,5 @@ permalink: /kb/138/Q138951/
 	
 	=============================================================================
 	
+
+{% endraw %}

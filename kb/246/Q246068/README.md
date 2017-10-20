@@ -6,6 +6,8 @@ permalink: /kb/246/Q246068/
 
 ## Q246068: Listing the Default IIS MIME Map Settings Using WSH
 
+{% raw %}
+
 	Article: Q246068
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -175,3 +177,5 @@ permalink: /kb/246/Q246068/
 	
 	=============================================================================
 	
+
+{% endraw %}

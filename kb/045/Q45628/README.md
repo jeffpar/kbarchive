@@ -6,6 +6,8 @@ permalink: /kb/045/Q45628/
 
 ## Q45628: Mac Wkst: Graphic Images Not Saved as a File
 
+{% raw %}
+
 	Article: Q45628
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -53,3 +55,5 @@ permalink: /kb/045/Q45628/
 	
 	=============================================================================
 	
+
+{% endraw %}

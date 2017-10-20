@@ -6,6 +6,8 @@ permalink: /kb/170/Q170048/
 
 ## Q170048: Err Msg: Cannot Open the File: Queryhits.idq
 
+{% raw %}
+
 	Article: Q170048
 	Product(s): Internet Information Server
 	Version(s): WinNT:1.1
@@ -62,3 +64,5 @@ permalink: /kb/170/Q170048/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235932/
 
 ## Q235932: FIX: Memory Exception Receiving Messages from AS400
 
+{% raw %}
+
 	Article: Q235932
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/235/Q235932/
 	
 	=============================================================================
 	
+
+{% endraw %}

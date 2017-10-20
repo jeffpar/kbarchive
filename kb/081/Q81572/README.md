@@ -6,6 +6,8 @@ permalink: /kb/081/Q81572/
 
 ## Q81572: Sysgen Tape Backup Hangs with MS-DOS 5.0 and later
 
+{% raw %}
+
 	Article: Q81572
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/081/Q81572/
 	
 	=============================================================================
 	
+
+{% endraw %}

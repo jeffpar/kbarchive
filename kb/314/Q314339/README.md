@@ -6,6 +6,8 @@ permalink: /kb/314/Q314339/
 
 ## Q314339: MS02-018: Patch for AV in URL Error Handling Vulnerability
 
+{% raw %}
+
 	Article: Q314339
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -147,3 +149,5 @@ permalink: /kb/314/Q314339/
 	
 	=============================================================================
 	
+
+{% endraw %}

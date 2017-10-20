@@ -6,6 +6,8 @@ permalink: /kb/109/Q109851/
 
 ## Q109851: Delay When Navigating Menus Using Keyboard
 
+{% raw %}
+
 	Article: Q109851
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -40,3 +42,5 @@ permalink: /kb/109/Q109851/
 	
 	=============================================================================
 	
+
+{% endraw %}

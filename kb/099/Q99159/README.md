@@ -6,6 +6,8 @@ permalink: /kb/099/Q99159/
 
 ## Q99159: Description of Chess
 
+{% raw %}
+
 	Article: Q99159
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -146,3 +148,5 @@ permalink: /kb/099/Q99159/
 	
 	=============================================================================
 	
+
+{% endraw %}

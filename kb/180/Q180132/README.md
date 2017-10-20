@@ -6,6 +6,8 @@ permalink: /kb/180/Q180132/
 
 ## Q180132: Kids Plus!: You Cannot Remove a Family Member in Protect It!
 
+{% raw %}
+
 	Article: Q180132
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/180/Q180132/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97930/
 
 ## Q97930: Norton Antivirus Err Msg: Insufficient Memory to Scan File
 
+{% raw %}
+
 	Article: Q97930
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -64,3 +66,5 @@ permalink: /kb/097/Q97930/
 	
 	=============================================================================
 	
+
+{% endraw %}

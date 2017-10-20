@@ -6,6 +6,8 @@ permalink: /kb/138/Q138884/
 
 ## Q138884: Artist: How to Print Without a Border on Your Painting
 
+{% raw %}
+
 	Article: Q138884
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -71,3 +73,5 @@ permalink: /kb/138/Q138884/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/276/Q276415/
 
 ## Q276415: Slow Performance When Lotus Notes Is Running on Terminal Server
 
+{% raw %}
+
 	Article: Q276415
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/276/Q276415/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166183/
 
 ## Q166183: FPNW Server Returns Error When User Opens More Than 256 Files
 
+{% raw %}
+
 	Article: Q166183
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/166/Q166183/
 	
 	=============================================================================
 	
+
+{% endraw %}

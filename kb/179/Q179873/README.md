@@ -6,6 +6,8 @@ permalink: /kb/179/Q179873/
 
 ## Q179873: Files Open with UNC Path May Be Closed Prematurely
 
+{% raw %}
+
 	Article: Q179873
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/179/Q179873/
 	
 	=============================================================================
 	
+
+{% endraw %}

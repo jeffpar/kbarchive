@@ -6,6 +6,8 @@ permalink: /kb/190/Q190929/
 
 ## Q190929: DirectX: List of Files Installed by the DirectX 6.0 Update Files
 
+{% raw %}
+
 	Article: Q190929
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:95
@@ -383,3 +385,5 @@ permalink: /kb/190/Q190929/
 	
 	=============================================================================
 	
+
+{% endraw %}

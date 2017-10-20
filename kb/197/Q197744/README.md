@@ -6,6 +6,8 @@ permalink: /kb/197/Q197744/
 
 ## Q197744: WD97: Text in Table Row/Column Cut Off Below Page Break
 
+{% raw %}
+
 	Article: Q197744
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -119,3 +121,5 @@ permalink: /kb/197/Q197744/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/310/Q310596/
 
 ## Q310596: ST2002/MapPoint2002: Err Msg: Program Has Encountered an Error
 
+{% raw %}
+
 	Article: Q310596
 	Product(s): Microsoft Automap
 	Version(s): 1.0,4.0
@@ -122,3 +124,5 @@ permalink: /kb/310/Q310596/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183874/
 
 ## Q183874: AOE: Priests Do Not Heal Assassins in Yamato Campaign
 
+{% raw %}
+
 	Article: Q183874
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/183/Q183874/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68658/
 
 ## Q68658: NMK Displays Only First of Multiple Commands
 
+{% raw %}
+
 	Article: Q68658
 	Product(s): See article
 	Version(s): 1.11
@@ -48,3 +50,5 @@ permalink: /kb/068/Q68658/
 	Microsoft has confirmed this to be a problem in NMK version 1.11. We
 	are researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

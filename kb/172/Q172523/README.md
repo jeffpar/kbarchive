@@ -6,6 +6,8 @@ permalink: /kb/172/Q172523/
 
 ## Q172523: Content Advisor Screen Opens Unexpectedly
 
+{% raw %}
+
 	Article: Q172523
 	Product(s): The Microsoft Network
 	Version(s): 2.0,2.5,2.51,2.52,2.6
@@ -89,3 +91,5 @@ permalink: /kb/172/Q172523/
 	
 	=============================================================================
 	
+
+{% endraw %}

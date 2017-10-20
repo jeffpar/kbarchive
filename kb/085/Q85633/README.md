@@ -6,6 +6,8 @@ permalink: /kb/085/Q85633/
 
 ## Q85633: SAMPLE: SplitWin.exe Splits a Window into Two Panes
 
+{% raw %}
+
 	Article: Q85633
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -68,3 +70,5 @@ permalink: /kb/085/Q85633/
 	
 	=============================================================================
 	
+
+{% endraw %}

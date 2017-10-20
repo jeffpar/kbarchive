@@ -6,6 +6,8 @@ permalink: /kb/128/Q128369/
 
 ## Q128369: PC WSPlus: Duplicate Appointments in Calendar (.CAL) File
 
+{% raw %}
+
 	Article: Q128369
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 1.0,1.0a
@@ -130,3 +132,5 @@ permalink: /kb/128/Q128369/
 	
 	=============================================================================
 	
+
+{% endraw %}

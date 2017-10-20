@@ -6,6 +6,8 @@ permalink: /kb/032/Q32465/
 
 ## Q32465: Switching from Header or Footer Dialog Box and Text in Write
 
+{% raw %}
+
 	Article: Q32465
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -34,3 +36,5 @@ permalink: /kb/032/Q32465/
 	
 	=============================================================================
 	
+
+{% endraw %}

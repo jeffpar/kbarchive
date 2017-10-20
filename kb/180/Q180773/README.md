@@ -6,6 +6,8 @@ permalink: /kb/180/Q180773/
 
 ## Q180773: BUG: Closing a Form with Control Box &quot;X&quot; Only Hides Form
 
+{% raw %}
+
 	Article: Q180773
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.11,3.0
@@ -100,3 +102,5 @@ permalink: /kb/180/Q180773/
 	
 	=============================================================================
 	
+
+{% endraw %}

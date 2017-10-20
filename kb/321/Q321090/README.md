@@ -6,6 +6,8 @@ permalink: /kb/321/Q321090/
 
 ## Q321090: SMS: Only Principal Site Creates an Advertisement for Client
 
+{% raw %}
+
 	Article: Q321090
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -102,3 +104,5 @@ permalink: /kb/321/Q321090/
 	
 	=============================================================================
 	
+
+{% endraw %}

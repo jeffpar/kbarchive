@@ -6,6 +6,8 @@ permalink: /kb/155/Q155027/
 
 ## Q155027: XCON: Cannot Start Microsoft Exchange MTA: Errors 1067 and 2140
 
+{% raw %}
+
 	Article: Q155027
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -123,3 +125,5 @@ permalink: /kb/155/Q155027/
 	
 	=============================================================================
 	
+
+{% endraw %}

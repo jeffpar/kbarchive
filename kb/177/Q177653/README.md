@@ -6,6 +6,8 @@ permalink: /kb/177/Q177653/
 
 ## Q177653: CRT Conflict with Getservbyname
 
+{% raw %}
+
 	Article: Q177653
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/177/Q177653/
 	
 	=============================================================================
 	
+
+{% endraw %}

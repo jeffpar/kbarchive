@@ -6,6 +6,8 @@ permalink: /kb/197/Q197045/
 
 ## Q197045: CMAK Incorrectly Configures a Customized Sign-in Bitmap
 
+{% raw %}
+
 	Article: Q197045
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0 (Spanish version)
@@ -75,3 +77,5 @@ permalink: /kb/197/Q197045/
 	
 	=============================================================================
 	
+
+{% endraw %}

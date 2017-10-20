@@ -6,6 +6,8 @@ permalink: /kb/233/Q233470/
 
 ## Q233470: Business Planner Err Msg: The Macros in the Project Are Disabled
 
+{% raw %}
+
 	Article: Q233470
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/233/Q233470/
 	
 	=============================================================================
 	
+
+{% endraw %}

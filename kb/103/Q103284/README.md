@@ -6,6 +6,8 @@ permalink: /kb/103/Q103284/
 
 ## Q103284: Contents of Windows NT SETUP.TXT, Part 1
 
+{% raw %}
+
 	Article: Q103284
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -590,3 +592,5 @@ permalink: /kb/103/Q103284/
 	
 	=============================================================================
 	
+
+{% endraw %}

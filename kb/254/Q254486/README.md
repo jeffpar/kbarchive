@@ -6,6 +6,8 @@ permalink: /kb/254/Q254486/
 
 ## Q254486: Sample Visual FoxPro Form to View XML Data
 
+{% raw %}
+
 	Article: Q254486
 	Product(s): Microsoft FoxPro
 	Version(s): 2.6,3.0,6.0
@@ -131,3 +133,5 @@ permalink: /kb/254/Q254486/
 	
 	=============================================================================
 	
+
+{% endraw %}

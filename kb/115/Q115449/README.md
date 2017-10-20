@@ -6,6 +6,8 @@ permalink: /kb/115/Q115449/
 
 ## Q115449: X400: Default Bodypart Parameter Applies to Message Body Only
 
+{% raw %}
+
 	Article: Q115449
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -47,3 +49,5 @@ permalink: /kb/115/Q115449/
 	
 	=============================================================================
 	
+
+{% endraw %}

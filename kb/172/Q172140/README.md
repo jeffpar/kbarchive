@@ -6,6 +6,8 @@ permalink: /kb/172/Q172140/
 
 ## Q172140: Verity Search '97 Causes IIS Authentication to Fail
 
+{% raw %}
+
 	Article: Q172140
 	Product(s): Internet Information Server
 	Version(s): WinNT:3.0
@@ -65,3 +67,5 @@ permalink: /kb/172/Q172140/
 	
 	=============================================================================
 	
+
+{% endraw %}

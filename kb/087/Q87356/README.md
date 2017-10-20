@@ -6,6 +6,8 @@ permalink: /kb/087/Q87356/
 
 ## Q87356: EMS Unavailable at MS-DOS Prompt in Standard Mode
 
+{% raw %}
+
 	Article: Q87356
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/087/Q87356/
 	
 	=============================================================================
 	
+
+{% endraw %}

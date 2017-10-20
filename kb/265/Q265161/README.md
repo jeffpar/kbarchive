@@ -6,6 +6,8 @@ permalink: /kb/265/Q265161/
 
 ## Q265161: FP: Errors Appear When You Attempt to Connect to Results Page
 
+{% raw %}
+
 	Article: Q265161
 	Product(s): Word Front Page
 	Version(s): 
@@ -280,3 +282,5 @@ permalink: /kb/265/Q265161/
 	
 	=============================================================================
 	
+
+{% endraw %}

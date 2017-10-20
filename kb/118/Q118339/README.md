@@ -6,6 +6,8 @@ permalink: /kb/118/Q118339/
 
 ## Q118339: PRB: DX1020 on a Call to OUTGTEXT under MS-DOS
 
+{% raw %}
+
 	Article: Q118339
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -74,3 +76,5 @@ permalink: /kb/118/Q118339/
 	
 	=============================================================================
 	
+
+{% endraw %}

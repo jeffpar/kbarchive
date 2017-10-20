@@ -6,6 +6,8 @@ permalink: /kb/243/Q243445/
 
 ## Q243445: Mastering Office 2000 Development Comments and Corrections
 
+{% raw %}
+
 	Article: Q243445
 	Product(s): Microsoft Press
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/243/Q243445/
 	
 	=============================================================================
 	
+
+{% endraw %}

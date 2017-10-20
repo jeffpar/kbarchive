@@ -6,6 +6,8 @@ permalink: /kb/121/Q121058/
 
 ## Q121058: DIR Results in Strange Characters When Using SCSI Drive
 
+{% raw %}
+
 	Article: Q121058
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -110,3 +112,5 @@ permalink: /kb/121/Q121058/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61483/
 
 ## Q61483: &quot;Illegal Function Call&quot; CHAINing to Stand Alone, /Fpa, or /Fs
 
+{% raw %}
+
 	Article: Q61483
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -60,3 +62,5 @@ permalink: /kb/061/Q61483/
 	   '   BC /o B;
 	   '   LINK B;
 	   PRINT "In Program B"
+
+{% endraw %}

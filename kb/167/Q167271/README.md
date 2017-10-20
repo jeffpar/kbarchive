@@ -6,6 +6,8 @@ permalink: /kb/167/Q167271/
 
 ## Q167271: &quot;Path Not Found&quot; When Using 3Com LANPLEX 2500 Router
 
+{% raw %}
+
 	Article: Q167271
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -113,3 +115,5 @@ permalink: /kb/167/Q167271/
 	
 	=============================================================================
 	
+
+{% endraw %}

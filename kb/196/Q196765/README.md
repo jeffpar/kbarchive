@@ -6,6 +6,8 @@ permalink: /kb/196/Q196765/
 
 ## Q196765: WD97: &quot;Cannot Open File&quot; Error in INCLUDETEXT Field
 
+{% raw %}
+
 	Article: Q196765
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/196/Q196765/
 	
 	=============================================================================
 	
+
+{% endraw %}

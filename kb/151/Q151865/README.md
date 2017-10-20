@@ -6,6 +6,8 @@ permalink: /kb/151/Q151865/
 
 ## Q151865: PRB: Brush Permanent Handle Map Doesn't Work on Windows 95
 
+{% raw %}
+
 	Article: Q151865
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,1.52b,2.0,2.1,2.2,4.0,4.1
@@ -138,3 +140,5 @@ permalink: /kb/151/Q151865/
 	
 	=============================================================================
 	
+
+{% endraw %}

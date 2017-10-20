@@ -6,6 +6,8 @@ permalink: /kb/258/Q258222/
 
 ## Q258222: XADM: How Mailbox Manager Uses the System Cleanup Folder
 
+{% raw %}
+
 	Article: Q258222
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -53,3 +55,5 @@ permalink: /kb/258/Q258222/
 	
 	=============================================================================
 	
+
+{% endraw %}

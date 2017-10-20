@@ -6,6 +6,8 @@ permalink: /kb/068/Q68171/
 
 ## Q68171: Archive's Qicstream Tape Backup Hangs Windows
 
+{% raw %}
+
 	Article: Q68171
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -57,3 +59,5 @@ permalink: /kb/068/Q68171/
 	
 	=============================================================================
 	
+
+{% endraw %}

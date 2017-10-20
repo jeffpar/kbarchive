@@ -6,6 +6,8 @@ permalink: /kb/225/Q225053/
 
 ## Q225053: Microsoft Windows 95 Year 2000 Update Readme File
 
+{% raw %}
+
 	Article: Q225053
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0,2.0,2.1,2.5
@@ -526,3 +528,5 @@ permalink: /kb/225/Q225053/
 	
 	=============================================================================
 	
+
+{% endraw %}

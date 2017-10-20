@@ -6,6 +6,8 @@ permalink: /kb/257/Q257421/
 
 ## Q257421: FIX: Compiling ActiveX Project Does Not Release Reference Right
 
+{% raw %}
+
 	Article: Q257421
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -112,3 +114,5 @@ permalink: /kb/257/Q257421/
 	
 	=============================================================================
 	
+
+{% endraw %}

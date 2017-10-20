@@ -6,6 +6,8 @@ permalink: /kb/313/Q313858/
 
 ## Q313858: ENC 2002: Installation Quits Unexpectedly After Displaying EULA
 
+{% raw %}
+
 	Article: Q313858
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -132,3 +134,5 @@ permalink: /kb/313/Q313858/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130237/
 
 ## Q130237: Duplicating READ NOLOCK Functionality in Visual FoxPro
 
+{% raw %}
+
 	Article: Q130237
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -118,3 +120,5 @@ permalink: /kb/130/Q130237/
 	
 	=============================================================================
 	
+
+{% endraw %}

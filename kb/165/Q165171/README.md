@@ -6,6 +6,8 @@ permalink: /kb/165/Q165171/
 
 ## Q165171: DOC: USE Command Incorrectly Documented in Help File &amp; Manual
 
+{% raw %}
+
 	Article: Q165171
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
@@ -61,3 +63,5 @@ permalink: /kb/165/Q165171/
 	
 	=============================================================================
 	
+
+{% endraw %}

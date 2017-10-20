@@ -6,6 +6,8 @@ permalink: /kb/150/Q150267/
 
 ## Q150267: Must Have Optional Duplexing Unit to Print Duplex to HP Printers
 
+{% raw %}
+
 	Article: Q150267
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -41,3 +43,5 @@ permalink: /kb/150/Q150267/
 	
 	=============================================================================
 	
+
+{% endraw %}

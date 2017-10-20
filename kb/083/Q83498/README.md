@@ -6,6 +6,8 @@ permalink: /kb/083/Q83498/
 
 ## Q83498: Print Option Unavailable in Windows-Based Applications
 
+{% raw %}
+
 	Article: Q83498
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -98,3 +100,5 @@ permalink: /kb/083/Q83498/
 	
 	=============================================================================
 	
+
+{% endraw %}

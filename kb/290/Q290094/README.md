@@ -6,6 +6,8 @@ permalink: /kb/290/Q290094/
 
 ## Q290094: How To Migrate To The Newest Version of MSN Explorer
 
+{% raw %}
+
 	Article: Q290094
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -57,3 +59,5 @@ permalink: /kb/290/Q290094/
 	
 	=============================================================================
 	
+
+{% endraw %}

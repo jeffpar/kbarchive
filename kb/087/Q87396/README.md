@@ -6,6 +6,8 @@ permalink: /kb/087/Q87396/
 
 ## Q87396: PC DB: Which Programs Access the GROUP.GLB File
 
+{% raw %}
+
 	Article: Q87396
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -53,3 +55,5 @@ permalink: /kb/087/Q87396/
 	
 	=============================================================================
 	
+
+{% endraw %}

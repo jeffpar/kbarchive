@@ -6,6 +6,8 @@ permalink: /kb/246/Q246359/
 
 ## Q246359: Differences in Microsoft Visual C/C++ 5.0
 
+{% raw %}
+
 	Article: Q246359
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2.1,2.2.2,2.2.3,2.2.4
@@ -67,3 +69,5 @@ permalink: /kb/246/Q246359/
 	
 	=============================================================================
 	
+
+{% endraw %}

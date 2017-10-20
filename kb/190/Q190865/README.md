@@ -6,6 +6,8 @@ permalink: /kb/190/Q190865/
 
 ## Q190865: XCLN: Outlook Error: Unable to Forward Meeting-Related Messages
 
+{% raw %}
+
 	Article: Q190865
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/190/Q190865/
 	
 	=============================================================================
 	
+
+{% endraw %}

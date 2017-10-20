@@ -6,6 +6,8 @@ permalink: /kb/150/Q150075/
 
 ## Q150075: FIX: False Memory Leaks in MFC DLL Statically Linked to MFC
 
+{% raw %}
+
 	Article: Q150075
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -121,3 +123,5 @@ permalink: /kb/150/Q150075/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151741/
 
 ## Q151741: Compressed Drives in Compatibility Mode After Compact Setup
 
+{% raw %}
+
 	Article: Q151741
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -87,3 +89,5 @@ permalink: /kb/151/Q151741/
 	
 	=============================================================================
 	
+
+{% endraw %}

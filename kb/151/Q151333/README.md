@@ -6,6 +6,8 @@ permalink: /kb/151/Q151333/
 
 ## Q151333: Mac Bookshelf 96-97: Problems Looking Up Words from Cinemania
 
+{% raw %}
+
 	Article: Q151333
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -70,3 +72,5 @@ permalink: /kb/151/Q151333/
 	
 	=============================================================================
 	
+
+{% endraw %}

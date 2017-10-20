@@ -6,6 +6,8 @@ permalink: /kb/158/Q158334/
 
 ## Q158334: Cannot Install PowerDesk in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q158334
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/158/Q158334/
 	
 	=============================================================================
 	
+
+{% endraw %}

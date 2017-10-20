@@ -6,6 +6,8 @@ permalink: /kb/258/Q258301/
 
 ## Q258301: XADM: Running Isinteg -t When Isinteg Fails For Lack of Space
 
+{% raw %}
+
 	Article: Q258301
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -103,3 +105,5 @@ permalink: /kb/258/Q258301/
 	
 	=============================================================================
 	
+
+{% endraw %}

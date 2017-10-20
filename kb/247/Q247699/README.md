@@ -6,6 +6,8 @@ permalink: /kb/247/Q247699/
 
 ## Q247699: Fighter Ace II: Splash Screen Is Grainy &amp; Colors Are Washed Out
 
+{% raw %}
+
 	Article: Q247699
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/247/Q247699/
 	
 	=============================================================================
 	
+
+{% endraw %}

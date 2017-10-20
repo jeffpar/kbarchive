@@ -6,6 +6,8 @@ permalink: /kb/176/Q176879/
 
 ## Q176879: INFO: Visual Modeler Ver. 1.1 Available at Microsoft Web Site
 
+{% raw %}
+
 	Article: Q176879
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -58,3 +60,5 @@ permalink: /kb/176/Q176879/
 	
 	=============================================================================
 	
+
+{% endraw %}

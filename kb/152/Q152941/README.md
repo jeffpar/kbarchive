@@ -6,6 +6,8 @@ permalink: /kb/152/Q152941/
 
 ## Q152941: XCON: MTA Crashes Over Slow or Sporadic Network Connection
 
+{% raw %}
+
 	Article: Q152941
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/152/Q152941/
 	
 	=============================================================================
 	
+
+{% endraw %}

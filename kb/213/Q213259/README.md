@@ -6,6 +6,8 @@ permalink: /kb/213/Q213259/
 
 ## Q213259: SMS: Running Crystal Reports Affects Site Server Performance
 
+{% raw %}
+
 	Article: Q213259
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -84,3 +86,5 @@ permalink: /kb/213/Q213259/
 	
 	=============================================================================
 	
+
+{% endraw %}

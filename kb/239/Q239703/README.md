@@ -6,6 +6,8 @@ permalink: /kb/239/Q239703/
 
 ## Q239703: ASP Template Cache Does Not Recognize Script Updates on Cluster
 
+{% raw %}
+
 	Article: Q239703
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -176,3 +178,5 @@ permalink: /kb/239/Q239703/
 	
 	=============================================================================
 	
+
+{% endraw %}

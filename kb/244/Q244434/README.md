@@ -6,6 +6,8 @@ permalink: /kb/244/Q244434/
 
 ## Q244434: WD97: Table Is Corrupted After Saving in Word 6.0/95 Format
 
+{% raw %}
+
 	Article: Q244434
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/244/Q244434/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106228/
 
 ## Q106228: There Is Not Enough Free Space on...
 
+{% raw %}
+
 	Article: Q106228
 	Product(s): Microsoft Disk Operating System
 	Version(s): 6.2,6.22
@@ -142,3 +144,5 @@ permalink: /kb/106/Q106228/
 	
 	=============================================================================
 	
+
+{% endraw %}

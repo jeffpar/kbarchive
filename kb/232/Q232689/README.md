@@ -6,6 +6,8 @@ permalink: /kb/232/Q232689/
 
 ## Q232689: HOWTO: Get the Window Handle to a WindowsCE Control from VB
 
+{% raw %}
+
 	Article: Q232689
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,3.0
@@ -117,3 +119,5 @@ permalink: /kb/232/Q232689/
 	
 	=============================================================================
 	
+
+{% endraw %}

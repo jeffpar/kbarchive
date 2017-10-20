@@ -6,6 +6,8 @@ permalink: /kb/075/Q75536/
 
 ## Q75536: Idle Interrupt (INT 28h) Under Windows 3.0
 
+{% raw %}
+
 	Article: Q75536
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0
@@ -68,3 +70,5 @@ permalink: /kb/075/Q75536/
 	
 	=============================================================================
 	
+
+{% endraw %}

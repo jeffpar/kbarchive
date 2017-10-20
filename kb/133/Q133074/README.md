@@ -6,6 +6,8 @@ permalink: /kb/133/Q133074/
 
 ## Q133074: Cannot Connect to Windows NT Share with Extended Character
 
+{% raw %}
+
 	Article: Q133074
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/133/Q133074/
 	
 	=============================================================================
 	
+
+{% endraw %}

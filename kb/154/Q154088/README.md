@@ -6,6 +6,8 @@ permalink: /kb/154/Q154088/
 
 ## Q154088: XCLN: Inserting File Via Shortcut Doesn't Work Properly
 
+{% raw %}
+
 	Article: Q154088
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/154/Q154088/
 	
 	=============================================================================
 	
+
+{% endraw %}

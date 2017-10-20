@@ -6,6 +6,8 @@ permalink: /kb/160/Q160405/
 
 ## Q160405: Video Memory Not Correctly Detected on Dell Latitude Laptops
 
+{% raw %}
+
 	Article: Q160405
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/160/Q160405/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197682/
 
 ## Q197682: WD97: After Install of ATI Driver, Text Looks Blocked or Corrupt
 
+{% raw %}
+
 	Article: Q197682
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/197/Q197682/
 	
 	=============================================================================
 	
+
+{% endraw %}

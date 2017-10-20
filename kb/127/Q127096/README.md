@@ -6,6 +6,8 @@ permalink: /kb/127/Q127096/
 
 ## Q127096: INF: Implementation of Searched Updates in the Access Driver
 
+{% raw %}
+
 	Article: Q127096
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -88,3 +90,5 @@ permalink: /kb/127/Q127096/
 	
 	=============================================================================
 	
+
+{% endraw %}

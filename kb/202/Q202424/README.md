@@ -6,6 +6,8 @@ permalink: /kb/202/Q202424/
 
 ## Q202424: XADM: Can't Modify 5.0 Server with Admin.exe After 5.5 Upgrade
 
+{% raw %}
+
 	Article: Q202424
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/202/Q202424/
 	
 	=============================================================================
 	
+
+{% endraw %}

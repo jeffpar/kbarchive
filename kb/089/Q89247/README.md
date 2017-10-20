@@ -6,6 +6,8 @@ permalink: /kb/089/Q89247/
 
 ## Q89247: WD97: How Word for Windows Uses Temporary Files
 
+{% raw %}
+
 	Article: Q89247
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -273,3 +275,5 @@ permalink: /kb/089/Q89247/
 	
 	=============================================================================
 	
+
+{% endraw %}

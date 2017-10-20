@@ -6,6 +6,8 @@ permalink: /kb/255/Q255968/
 
 ## Q255968: Viaserver.exe Starts and Runs When Viacompact Is Running
 
+{% raw %}
+
 	Article: Q255968
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -56,3 +58,5 @@ permalink: /kb/255/Q255968/
 	
 	=============================================================================
 	
+
+{% endraw %}

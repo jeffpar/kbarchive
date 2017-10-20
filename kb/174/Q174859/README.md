@@ -6,6 +6,8 @@ permalink: /kb/174/Q174859/
 
 ## Q174859: Cannot See Overview or Zoom Monitor
 
+{% raw %}
+
 	Article: Q174859
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/174/Q174859/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238489/
 
 ## Q238489: XCLN: Icon Selected for Custom Form Does Not Appear As Expected
 
+{% raw %}
+
 	Article: Q238489
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -62,3 +64,5 @@ permalink: /kb/238/Q238489/
 	
 	=============================================================================
 	
+
+{% endraw %}

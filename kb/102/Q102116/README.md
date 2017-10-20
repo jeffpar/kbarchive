@@ -6,6 +6,8 @@ permalink: /kb/102/Q102116/
 
 ## Q102116: How to Manually Delete Print Shares or Printers
 
+{% raw %}
+
 	Article: Q102116
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -216,3 +218,5 @@ permalink: /kb/102/Q102116/
 	
 	=============================================================================
 	
+
+{% endraw %}

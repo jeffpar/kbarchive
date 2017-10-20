@@ -6,6 +6,8 @@ permalink: /kb/171/Q171729/
 
 ## Q171729: HOWTO: Do Generic Callbacks Using a Helper DLL
 
+{% raw %}
+
 	Article: Q171729
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -246,3 +248,5 @@ permalink: /kb/171/Q171729/
 	
 	=============================================================================
 	
+
+{% endraw %}

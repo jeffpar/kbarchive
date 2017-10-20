@@ -6,6 +6,8 @@ permalink: /kb/068/Q68123/
 
 ## Q68123: 7.10 &quot;Subscript Out of Range,&quot; WindowDo with No Open Windows
 
+{% raw %}
+
 	Article: Q68123
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -83,3 +85,5 @@ permalink: /kb/068/Q68123/
 	WindowInit
 	WindowDo 0,0
 	END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163160/
 
 ## Q163160: WD97: Sample Macro to Remove a Submenu from a Menu
 
+{% raw %}
+
 	Article: Q163160
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -90,3 +92,5 @@ permalink: /kb/163/Q163160/
 	
 	=============================================================================
 	
+
+{% endraw %}

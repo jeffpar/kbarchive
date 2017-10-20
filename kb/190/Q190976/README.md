@@ -6,6 +6,8 @@ permalink: /kb/190/Q190976/
 
 ## Q190976: PRB: IntelliSense Ignores Unicode/ANSI Versions of Win32 API
 
+{% raw %}
+
 	Article: Q190976
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:6.0
@@ -68,3 +70,5 @@ permalink: /kb/190/Q190976/
 	
 	=============================================================================
 	
+
+{% endraw %}

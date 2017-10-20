@@ -6,6 +6,8 @@ permalink: /kb/224/Q224570/
 
 ## Q224570: UpDnDate DateTime Ctrl w/ Spin Button &amp; Cback Field
 
+{% raw %}
+
 	Article: Q224570
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -113,3 +115,5 @@ permalink: /kb/224/Q224570/
 	
 	=============================================================================
 	
+
+{% endraw %}

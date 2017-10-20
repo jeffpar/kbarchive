@@ -6,6 +6,8 @@ permalink: /kb/191/Q191179/
 
 ## Q191179: WD97: Customizing and Sharing Toolbars in Microsoft Word
 
+{% raw %}
+
 	Article: Q191179
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -161,3 +163,5 @@ permalink: /kb/191/Q191179/
 	
 	=============================================================================
 	
+
+{% endraw %}

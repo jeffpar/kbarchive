@@ -6,6 +6,8 @@ permalink: /kb/197/Q197569/
 
 ## Q197569: BUG: CRITICAL_SECTION is Defined Incorrectly in API Text Viewer
 
+{% raw %}
+
 	Article: Q197569
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/197/Q197569/
 	
 	=============================================================================
 	
+
+{% endraw %}

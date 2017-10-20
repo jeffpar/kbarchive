@@ -6,6 +6,8 @@ permalink: /kb/171/Q171514/
 
 ## Q171514: FIX: Visual Basic 5.0 Crashes When Shutting Down Forms
 
+{% raw %}
+
 	Article: Q171514
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -81,3 +83,5 @@ permalink: /kb/171/Q171514/
 	
 	=============================================================================
 	
+
+{% endraw %}

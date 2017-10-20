@@ -6,6 +6,8 @@ permalink: /kb/047/Q47610/
 
 ## Q47610: Directory Listing for QuickC 2.00 Distribution Disks (5.25)
 
+{% raw %}
+
 	Article: Q47610
 	Product(s): See article
 	Version(s): 2.00
@@ -217,3 +219,5 @@ permalink: /kb/047/Q47610/
 	SCRIPT       FON    10304  11-12-87    1:27p  ""
 	TMSRB        FON    45936  11-12-87    1:27p  ""
 	     8 File(s)     14336 bytes free
+
+{% endraw %}

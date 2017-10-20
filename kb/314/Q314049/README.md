@@ -6,6 +6,8 @@ permalink: /kb/314/Q314049/
 
 ## Q314049: ALS Microsoft Windows XP Professional Comments and Corrections
 
+{% raw %}
+
 	Article: Q314049
 	Product(s): Microsoft Press
 	Version(s): 
@@ -780,3 +782,5 @@ permalink: /kb/314/Q314049/
 	
 	=============================================================================
 	
+
+{% endraw %}

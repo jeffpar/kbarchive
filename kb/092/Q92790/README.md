@@ -6,6 +6,8 @@ permalink: /kb/092/Q92790/
 
 ## Q92790: WFWG Err Msg: Add SystemROMBreakpoint=FALSE to SYSTEM.INI
 
+{% raw %}
+
 	Article: Q92790
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/092/Q92790/
 	
 	=============================================================================
 	
+
+{% endraw %}

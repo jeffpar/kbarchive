@@ -6,6 +6,8 @@ permalink: /kb/287/Q287710/
 
 ## Q287710: SMS: User Prompted for Credentials During Remote Control Session
 
+{% raw %}
+
 	Article: Q287710
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -70,3 +72,5 @@ permalink: /kb/287/Q287710/
 	
 	=============================================================================
 	
+
+{% endraw %}

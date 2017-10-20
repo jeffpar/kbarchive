@@ -6,6 +6,8 @@ permalink: /kb/159/Q159910/
 
 ## Q159910: Memory Corruption on a Windows NT Alpha Platform
 
+{% raw %}
+
 	Article: Q159910
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -49,3 +51,5 @@ permalink: /kb/159/Q159910/
 	
 	=============================================================================
 	
+
+{% endraw %}

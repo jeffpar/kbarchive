@@ -6,6 +6,8 @@ permalink: /kb/130/Q130614/
 
 ## Q130614: Setup Does Not Install 32-Bit Token Ring Network Components
 
+{% raw %}
+
 	Article: Q130614
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/130/Q130614/
 	
 	=============================================================================
 	
+
+{% endraw %}

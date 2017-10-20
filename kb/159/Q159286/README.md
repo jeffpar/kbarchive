@@ -6,6 +6,8 @@ permalink: /kb/159/Q159286/
 
 ## Q159286: XCON: Messages Sent w/AppleSingle File Attachments Get Stuck
 
+{% raw %}
+
 	Article: Q159286
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/159/Q159286/
 	
 	=============================================================================
 	
+
+{% endraw %}

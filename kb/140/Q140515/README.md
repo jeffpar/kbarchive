@@ -6,6 +6,8 @@ permalink: /kb/140/Q140515/
 
 ## Q140515: BUG: VDM Apps Can Cause Other Applications to Redraw Slowly
 
+{% raw %}
+
 	Article: Q140515
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -58,3 +60,5 @@ permalink: /kb/140/Q140515/
 	
 	=============================================================================
 	
+
+{% endraw %}

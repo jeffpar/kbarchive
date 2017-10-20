@@ -6,6 +6,8 @@ permalink: /kb/059/Q59131/
 
 ## Q59131: How to Trap CTRL, ALT, and SHIFT Keys Alone in BASIC
 
+{% raw %}
+
 	Article: Q59131
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -88,3 +90,5 @@ permalink: /kb/059/Q59131/
 	
 	Shift:  PRINT "SHIFT"
 	RETURN
+
+{% endraw %}

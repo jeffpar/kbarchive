@@ -6,6 +6,8 @@ permalink: /kb/060/Q60147/
 
 ## Q60147: CHAINing with Additional Variables in COMMON Causes Hang
 
+{% raw %}
+
 	Article: Q60147
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -110,3 +112,5 @@ permalink: /kb/060/Q60147/
 	PRINT "In SECOND"
 	FixStr = "Test"                'Assignment to new COMMON var required.
 	END
+
+{% endraw %}

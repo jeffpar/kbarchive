@@ -6,6 +6,8 @@ permalink: /kb/149/Q149511/
 
 ## Q149511: BUG: FOR3278 and FOR3852 !MS&#36;NOFREEFORM After Subroutine END
 
+{% raw %}
+
 	Article: Q149511
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/149/Q149511/
 	
 	=============================================================================
 	
+
+{% endraw %}

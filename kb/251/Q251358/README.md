@@ -6,6 +6,8 @@ permalink: /kb/251/Q251358/
 
 ## Q251358: Encarta 2000: Cannot Run the Exercise and Calories Interactivity
 
+{% raw %}
+
 	Article: Q251358
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:
@@ -104,3 +106,5 @@ permalink: /kb/251/Q251358/
 	
 	=============================================================================
 	
+
+{% endraw %}

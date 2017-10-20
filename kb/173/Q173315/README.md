@@ -6,6 +6,8 @@ permalink: /kb/173/Q173315/
 
 ## Q173315: PPT7: White Text Prints Black w/ HP Color LaserJet Driver
 
+{% raw %}
+
 	Article: Q173315
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -76,3 +78,5 @@ permalink: /kb/173/Q173315/
 	
 	=============================================================================
 	
+
+{% endraw %}

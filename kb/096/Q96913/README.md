@@ -6,6 +6,8 @@ permalink: /kb/096/Q96913/
 
 ## Q96913: LAYOUTS.WRI from Windows Resource Kit Version 3.1 U-Z
 
+{% raw %}
+
 	Article: Q96913
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -208,3 +210,5 @@ permalink: /kb/096/Q96913/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82381/
 
 ## Q82381: Program Shell Has Problems After Loading SMARTDrive
 
+{% raw %}
+
 	Article: Q82381
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:6.0; WINDOWS:3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/082/Q82381/
 	
 	=============================================================================
 	
+
+{% endraw %}

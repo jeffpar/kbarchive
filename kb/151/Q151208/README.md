@@ -6,6 +6,8 @@ permalink: /kb/151/Q151208/
 
 ## Q151208: XCLN: Unable to Copy Mssp2_en.lex During Client Setup
 
+{% raw %}
+
 	Article: Q151208
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -65,3 +67,5 @@ permalink: /kb/151/Q151208/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/279/Q279228/
 
 ## Q279228: FIX: OLE Automation Created w/VSS 5.0 Does Not Work on VSS 6.0
 
+{% raw %}
+
 	Article: Q279228
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -73,3 +75,5 @@ permalink: /kb/279/Q279228/
 	
 	=============================================================================
 	
+
+{% endraw %}

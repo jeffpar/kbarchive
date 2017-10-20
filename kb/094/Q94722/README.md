@@ -6,6 +6,8 @@ permalink: /kb/094/Q94722/
 
 ## Q94722: Running MemMaker to Optimize a Startup Floppy Disk
 
+{% raw %}
+
 	Article: Q94722
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -63,3 +65,5 @@ permalink: /kb/094/Q94722/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/309/Q309693/
 
 ## Q309693: Zoo Tycoon: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q309693
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/309/Q309693/
 	
 	=============================================================================
 	
+
+{% endraw %}

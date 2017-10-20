@@ -6,6 +6,8 @@ permalink: /kb/238/Q238277/
 
 ## Q238277: Very Slow Scrolling in Excel 97, 2000 and Internet Explorer 4.0
 
+{% raw %}
+
 	Article: Q238277
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -68,3 +70,5 @@ permalink: /kb/238/Q238277/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169686/
 
 ## Q169686: XADM: IMC Shuts Down, Error Connecting to IS
 
+{% raw %}
+
 	Article: Q169686
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5,0
@@ -117,3 +119,5 @@ permalink: /kb/169/Q169686/
 	
 	=============================================================================
 	
+
+{% endraw %}

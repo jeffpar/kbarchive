@@ -6,6 +6,8 @@ permalink: /kb/199/Q199275/
 
 ## Q199275: Inside SQL Server 6.5: Comments and Corrections
 
+{% raw %}
+
 	Article: Q199275
 	Product(s): Microsoft Press
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/199/Q199275/
 	
 	=============================================================================
 	
+
+{% endraw %}

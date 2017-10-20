@@ -6,6 +6,8 @@ permalink: /kb/041/Q41152/
 
 ## Q41152: Same Random File Opened with Multiple Handles Loses Records
 
+{% raw %}
+
 	Article: Q41152
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -182,3 +184,5 @@ permalink: /kb/041/Q41152/
 	PRINT a$
 	
 	Additional Reference Words: SR# S890111-116 SR# S881228-141
+
+{% endraw %}

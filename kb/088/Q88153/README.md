@@ -6,6 +6,8 @@ permalink: /kb/088/Q88153/
 
 ## Q88153: Sound Master II Drivers Available from Covox Tympanum
 
+{% raw %}
+
 	Article: Q88153
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/088/Q88153/
 	
 	=============================================================================
 	
+
+{% endraw %}

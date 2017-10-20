@@ -6,6 +6,8 @@ permalink: /kb/225/Q225514/
 
 ## Q225514: SMS: NT Logon Server Manager Replicates Files When It Should Not
 
+{% raw %}
+
 	Article: Q225514
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -58,3 +60,5 @@ permalink: /kb/225/Q225514/
 	
 	=============================================================================
 	
+
+{% endraw %}

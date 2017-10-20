@@ -6,6 +6,8 @@ permalink: /kb/140/Q140987/
 
 ## Q140987: Errors Removing TCP/IP Registry Keys Using Insight Manager
 
+{% raw %}
+
 	Article: Q140987
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -135,3 +137,5 @@ permalink: /kb/140/Q140987/
 	
 	=============================================================================
 	
+
+{% endraw %}

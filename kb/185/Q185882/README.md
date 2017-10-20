@@ -6,6 +6,8 @@ permalink: /kb/185/Q185882/
 
 ## Q185882: HOWTO: Use the HitTest Event and HitBehavior Property
 
+{% raw %}
+
 	Article: Q185882
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -255,3 +257,5 @@ permalink: /kb/185/Q185882/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149150/
 
 ## Q149150: BUG: GETENV() Fails If Input Variable Has Trailing Spaces
 
+{% raw %}
+
 	Article: Q149150
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/149/Q149150/
 	
 	=============================================================================
 	
+
+{% endraw %}

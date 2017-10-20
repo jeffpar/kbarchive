@@ -6,6 +6,8 @@ permalink: /kb/195/Q195333/
 
 ## Q195333: Terminal Server Error 0x0a on SMP Computer
 
+{% raw %}
+
 	Article: Q195333
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/195/Q195333/
 	
 	=============================================================================
 	
+
+{% endraw %}

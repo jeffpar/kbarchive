@@ -6,6 +6,8 @@ permalink: /kb/170/Q170259/
 
 ## Q170259: MSB Rainforest: Toolbox Clues and Answers
 
+{% raw %}
+
 	Article: Q170259
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -179,3 +181,5 @@ permalink: /kb/170/Q170259/
 	
 	=============================================================================
 	
+
+{% endraw %}

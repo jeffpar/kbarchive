@@ -6,6 +6,8 @@ permalink: /kb/084/Q84668/
 
 ## Q84668: PIF's Optional Parameters Not Used with Association
 
+{% raw %}
+
 	Article: Q84668
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/084/Q84668/
 	
 	=============================================================================
 	
+
+{% endraw %}

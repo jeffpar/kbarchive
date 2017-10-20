@@ -6,6 +6,8 @@ permalink: /kb/094/Q94650/
 
 ## Q94650: SoundBits: Media Browser Set Sounds Button Fails
 
+{% raw %}
+
 	Article: Q94650
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -44,3 +46,5 @@ permalink: /kb/094/Q94650/
 	
 	=============================================================================
 	
+
+{% endraw %}

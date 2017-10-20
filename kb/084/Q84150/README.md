@@ -6,6 +6,8 @@ permalink: /kb/084/Q84150/
 
 ## Q84150: TrueType Fonts Print Incorrectly with 25 in One! Cartridge
 
+{% raw %}
+
 	Article: Q84150
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/084/Q84150/
 	
 	=============================================================================
 	
+
+{% endraw %}

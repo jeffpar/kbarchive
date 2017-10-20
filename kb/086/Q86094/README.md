@@ -6,6 +6,8 @@ permalink: /kb/086/Q86094/
 
 ## Q86094: PC Win: MSMAIL.INI Entries in &#91;Address Book&#93;
 
+{% raw %}
+
 	Article: Q86094
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -62,3 +64,5 @@ permalink: /kb/086/Q86094/
 	
 	=============================================================================
 	
+
+{% endraw %}

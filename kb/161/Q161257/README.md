@@ -6,6 +6,8 @@ permalink: /kb/161/Q161257/
 
 ## Q161257: HOWTO: Add a Toolbar to a Visual Basic Project
 
+{% raw %}
+
 	Article: Q161257
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -384,3 +386,5 @@ permalink: /kb/161/Q161257/
 	
 	=============================================================================
 	
+
+{% endraw %}

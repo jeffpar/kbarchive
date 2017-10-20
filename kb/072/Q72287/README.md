@@ -6,6 +6,8 @@ permalink: /kb/072/Q72287/
 
 ## Q72287: WD97: Using AppActivate to Switch to Another Application
 
+{% raw %}
+
 	Article: Q72287
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/072/Q72287/
 	
 	=============================================================================
 	
+
+{% endraw %}

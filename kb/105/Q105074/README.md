@@ -6,6 +6,8 @@ permalink: /kb/105/Q105074/
 
 ## Q105074: MS-DOS 6.2 Partitioning Questions and Answers
 
+{% raw %}
+
 	Article: Q105074
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -67,3 +69,5 @@ permalink: /kb/105/Q105074/
 	
 	=============================================================================
 	
+
+{% endraw %}

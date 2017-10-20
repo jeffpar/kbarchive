@@ -6,6 +6,8 @@ permalink: /kb/066/Q66926/
 
 ## Q66926: INFO: Dialog Box Creation Fails If Text Starts w/ Character 255
 
+{% raw %}
+
 	Article: Q66926
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -83,3 +85,5 @@ permalink: /kb/066/Q66926/
 	
 	=============================================================================
 	
+
+{% endraw %}

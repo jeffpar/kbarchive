@@ -6,6 +6,8 @@ permalink: /kb/199/Q199792/
 
 ## Q199792: DNS Event IDs 2000 Through 9999 for Windows NT 4.0 SP4
 
+{% raw %}
+
 	Article: Q199792
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -459,3 +461,5 @@ permalink: /kb/199/Q199792/
 	
 	=============================================================================
 	
+
+{% endraw %}

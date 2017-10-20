@@ -6,6 +6,8 @@ permalink: /kb/128/Q128608/
 
 ## Q128608: Windows NT Takes Long Time to Start with Aztech CD-ROM Driver
 
+{% raw %}
+
 	Article: Q128608
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/128/Q128608/
 	
 	=============================================================================
 	
+
+{% endraw %}

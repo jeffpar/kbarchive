@@ -6,6 +6,8 @@ permalink: /kb/166/Q166466/
 
 ## Q166466: Err Msg: Setup Found a Compressed Volume or a Disk-Cache Utility
 
+{% raw %}
+
 	Article: Q166466
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -124,3 +126,5 @@ permalink: /kb/166/Q166466/
 	
 	=============================================================================
 	
+
+{% endraw %}

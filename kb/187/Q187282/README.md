@@ -6,6 +6,8 @@ permalink: /kb/187/Q187282/
 
 ## Q187282: INFO: List of Visual Basic Run-Time Files Installed by Product
 
+{% raw %}
+
 	Article: Q187282
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -224,3 +226,5 @@ permalink: /kb/187/Q187282/
 	
 	=============================================================================
 	
+
+{% endraw %}

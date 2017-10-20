@@ -6,6 +6,8 @@ permalink: /kb/200/Q200626/
 
 ## Q200626: PRB: UserDocuments Can be Orphaned
 
+{% raw %}
+
 	Article: Q200626
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -195,3 +197,5 @@ permalink: /kb/200/Q200626/
 	
 	=============================================================================
 	
+
+{% endraw %}

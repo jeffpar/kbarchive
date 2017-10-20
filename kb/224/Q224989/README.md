@@ -6,6 +6,8 @@ permalink: /kb/224/Q224989/
 
 ## Q224989: FIX:&quot;Not Enough Memory&quot; Error with SQLCOLUMNS() and SQL Server
 
+{% raw %}
+
 	Article: Q224989
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -108,3 +110,5 @@ permalink: /kb/224/Q224989/
 	
 	=============================================================================
 	
+
+{% endraw %}

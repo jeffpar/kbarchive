@@ -6,6 +6,8 @@ permalink: /kb/027/Q27631/
 
 ## Q27631: Fixed String Initializing, Space &amp; Null Bytes, LEN, and RTRIM&#36;
 
+{% raw %}
+
 	Article: Q27631
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -80,3 +82,5 @@ permalink: /kb/027/Q27631/
 	WHILE RTRIM$(s) = ""        'Fails first time since RTRIM$(s)=10 nulls.
 	   INPUT "Input data: ",s   'Never executed
 	WEND
+
+{% endraw %}

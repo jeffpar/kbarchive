@@ -6,6 +6,8 @@ permalink: /kb/233/Q233199/
 
 ## Q233199: BUG: Duplicate Control Boxes on MDI Form
 
+{% raw %}
+
 	Article: Q233199
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -105,3 +107,5 @@ permalink: /kb/233/Q233199/
 	
 	=============================================================================
 	
+
+{% endraw %}

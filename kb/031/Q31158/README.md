@@ -6,6 +6,8 @@ permalink: /kb/031/Q31158/
 
 ## Q31158: LINK Error L1002 &quot;Unrecognized Option Name&quot;; SET LIB=C:&#92;LIB
 
+{% raw %}
+
 	Article: Q31158
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -32,3 +34,5 @@ permalink: /kb/031/Q31158/
 	6.00 and 6.00b for MS-DOS and OS/2, and Microsoft BASIC PDS Version
 	7.00 for MS-DOS and MS OS/2 generate the LINK error message L1002
 	"Unrecognized option name" when this problem occurs.
+
+{% endraw %}

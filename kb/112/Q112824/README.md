@@ -6,6 +6,8 @@ permalink: /kb/112/Q112824/
 
 ## Q112824: Mac Client Does Not Allow Auto Reconnect at Startup
 
+{% raw %}
+
 	Article: Q112824
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -62,3 +64,5 @@ permalink: /kb/112/Q112824/
 	
 	=============================================================================
 	
+
+{% endraw %}

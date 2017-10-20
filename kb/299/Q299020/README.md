@@ -6,6 +6,8 @@ permalink: /kb/299/Q299020/
 
 ## Q299020: FIX: Index Corruption Updating Same Record from FoxPro
 
+{% raw %}
+
 	Article: Q299020
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -152,3 +154,5 @@ permalink: /kb/299/Q299020/
 	
 	=============================================================================
 	
+
+{% endraw %}

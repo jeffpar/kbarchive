@@ -6,6 +6,8 @@ permalink: /kb/196/Q196706/
 
 ## Q196706: INFO: Files Installed in WINNT&#92;SYSTEM32 Folder for MSDN
 
+{% raw %}
+
 	Article: Q196706
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/196/Q196706/
 	
 	=============================================================================
 	
+
+{% endraw %}

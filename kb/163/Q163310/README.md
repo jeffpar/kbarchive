@@ -6,6 +6,8 @@ permalink: /kb/163/Q163310/
 
 ## Q163310: SNA Server Application Exception If Invalid Handle
 
+{% raw %}
+
 	Article: Q163310
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -66,3 +68,5 @@ permalink: /kb/163/Q163310/
 	
 	=============================================================================
 	
+
+{% endraw %}

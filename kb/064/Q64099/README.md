@@ -6,6 +6,8 @@ permalink: /kb/064/Q64099/
 
 ## Q64099: QB 4.50 SETUP.EXE Hanging Problem on Leading Edge Model D
 
+{% raw %}
+
 	Article: Q64099
 	Product(s): See article
 	Version(s): 4.50
@@ -30,3 +32,5 @@ permalink: /kb/064/Q64099/
 	The QB Express program can also be copied and run from a hard disk. To
 	run QB Express, copy all files on the root directory of the
 	Setup/Microsoft QB Express disk. Then type LEARN to start QB Express.
+
+{% endraw %}

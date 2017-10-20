@@ -6,6 +6,8 @@ permalink: /kb/134/Q134692/
 
 ## Q134692: PRB: Visual C++ Setup Was Unable to Copy a File
 
+{% raw %}
+
 	Article: Q134692
 	Product(s): Microsoft C Compiler
 	Version(s): 2.20
@@ -127,3 +129,5 @@ permalink: /kb/134/Q134692/
 	
 	=============================================================================
 	
+
+{% endraw %}

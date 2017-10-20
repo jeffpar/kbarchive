@@ -6,6 +6,8 @@ permalink: /kb/263/Q263411/
 
 ## Q263411: SMS: Can't Upgrade Client to SP2 w/ SMSMan from Logon Point
 
+{% raw %}
+
 	Article: Q263411
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -63,3 +65,5 @@ permalink: /kb/263/Q263411/
 	
 	=============================================================================
 	
+
+{% endraw %}

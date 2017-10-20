@@ -6,6 +6,8 @@ permalink: /kb/258/Q258700/
 
 ## Q258700: Error Message Attempting to Mount SFU 2.0 NFS Shared File System
 
+{% raw %}
+
 	Article: Q258700
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -56,3 +58,5 @@ permalink: /kb/258/Q258700/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75169/
 
 ## Q75169: Differences Between IBM PC-DOS 5.0 and MS-DOS 5 Upgrades
 
+{% raw %}
+
 	Article: Q75169
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -69,3 +71,5 @@ permalink: /kb/075/Q75169/
 	
 	=============================================================================
 	
+
+{% endraw %}

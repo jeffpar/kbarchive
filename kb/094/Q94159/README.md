@@ -6,6 +6,8 @@ permalink: /kb/094/Q94159/
 
 ## Q94159: HPPCL5E: Line Ends &amp; Joins Incorrect with Micrografx Designer
 
+{% raw %}
+
 	Article: Q94159
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/094/Q94159/
 	
 	=============================================================================
 	
+
+{% endraw %}

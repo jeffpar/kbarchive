@@ -6,6 +6,8 @@ permalink: /kb/030/Q30844/
 
 ## Q30844: INKEY&#36; Returns Two-Byte String for Arrow and Function Keys
 
+{% raw %}
+
 	Article: Q30844
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -67,3 +69,5 @@ permalink: /kb/030/Q30844/
 	Program note: The DO...LOOP statement is only supported in QuickBASIC
 	3.00 or later. In earlier versions, you can rewrite this example to
 	use a different loop, such as WHILE...WEND.
+
+{% endraw %}

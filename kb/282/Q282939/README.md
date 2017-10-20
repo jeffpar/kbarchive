@@ -6,6 +6,8 @@ permalink: /kb/282/Q282939/
 
 ## Q282939: XFOR: Installation of Lotus Notes E-mail Address Generator Fails
 
+{% raw %}
+
 	Article: Q282939
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -69,3 +71,5 @@ permalink: /kb/282/Q282939/
 	
 	=============================================================================
 	
+
+{% endraw %}

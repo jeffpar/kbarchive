@@ -6,6 +6,8 @@ permalink: /kb/265/Q265033/
 
 ## Q265033: FP: Macromedia Flash Movie Doesn't Work As Expected
 
+{% raw %}
+
 	Article: Q265033
 	Product(s): Word Front Page
 	Version(s): 
@@ -186,3 +188,5 @@ permalink: /kb/265/Q265033/
 	
 	=============================================================================
 	
+
+{% endraw %}

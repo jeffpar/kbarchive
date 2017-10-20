@@ -6,6 +6,8 @@ permalink: /kb/136/Q136060/
 
 ## Q136060: Green Caching VLB IDE Controller Incompatible with Windows 95
 
+{% raw %}
+
 	Article: Q136060
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -80,3 +82,5 @@ permalink: /kb/136/Q136060/
 	
 	=============================================================================
 	
+
+{% endraw %}

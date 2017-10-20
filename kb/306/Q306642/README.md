@@ -6,6 +6,8 @@ permalink: /kb/306/Q306642/
 
 ## Q306642: SMS: Permissions Assigned to Default Domain Local or Local Group
 
+{% raw %}
+
 	Article: Q306642
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -76,3 +78,5 @@ permalink: /kb/306/Q306642/
 	
 	=============================================================================
 	
+
+{% endraw %}

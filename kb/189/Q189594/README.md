@@ -6,6 +6,8 @@ permalink: /kb/189/Q189594/
 
 ## Q189594: RRAS Upgrade for WinNT Server 4.0 Hotfix Pack 3.0 Release Notes
 
+{% raw %}
+
 	Article: Q189594
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -358,3 +360,5 @@ permalink: /kb/189/Q189594/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152517/
 
 ## Q152517: Err Msg During Setup: DISK READ ERROR OCCURED
 
+{% raw %}
+
 	Article: Q152517
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -83,3 +85,5 @@ permalink: /kb/152/Q152517/
 	
 	=============================================================================
 	
+
+{% endraw %}

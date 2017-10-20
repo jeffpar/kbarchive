@@ -6,6 +6,8 @@ permalink: /kb/244/Q244748/
 
 ## Q244748: 14 Character Password Limitation in IMS Logon Information
 
+{% raw %}
+
 	Article: Q244748
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5,5.5
@@ -58,3 +60,5 @@ permalink: /kb/244/Q244748/
 	
 	=============================================================================
 	
+
+{% endraw %}

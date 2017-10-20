@@ -6,6 +6,8 @@ permalink: /kb/238/Q238676/
 
 ## Q238676: PRB: Shared DLL Removal in SQL Makes VB Add-ins Unloadable
 
+{% raw %}
+
 	Article: Q238676
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0; winnt:7.0
@@ -87,3 +89,5 @@ permalink: /kb/238/Q238676/
 	
 	=============================================================================
 	
+
+{% endraw %}

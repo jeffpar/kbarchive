@@ -6,6 +6,8 @@ permalink: /kb/057/Q57595/
 
 ## Q57595: Amdek CD-ROM Drive and Windows 3.0
 
+{% raw %}
+
 	Article: Q57595
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -48,3 +50,5 @@ permalink: /kb/057/Q57595/
 	
 	=============================================================================
 	
+
+{% endraw %}

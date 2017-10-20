@@ -6,6 +6,8 @@ permalink: /kb/161/Q161199/
 
 ## Q161199: FIX: FOR EACH...ENDFOR Does Not Work with Object Variable
 
+{% raw %}
+
 	Article: Q161199
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -84,3 +86,5 @@ permalink: /kb/161/Q161199/
 	
 	=============================================================================
 	
+
+{% endraw %}

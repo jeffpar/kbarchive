@@ -6,6 +6,8 @@ permalink: /kb/113/Q113900/
 
 ## Q113900: FIX: dBASE &amp; FoxPro Memos Corrupted During Concurrent Addnew
 
+{% raw %}
+
 	Article: Q113900
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -90,3 +92,5 @@ permalink: /kb/113/Q113900/
 	
 	=============================================================================
 	
+
+{% endraw %}

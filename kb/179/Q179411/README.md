@@ -6,6 +6,8 @@ permalink: /kb/179/Q179411/
 
 ## Q179411: Description of the DirectX Tool in Control Panel
 
+{% raw %}
+
 	Article: Q179411
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -53,3 +55,5 @@ permalink: /kb/179/Q179411/
 	
 	=============================================================================
 	
+
+{% endraw %}

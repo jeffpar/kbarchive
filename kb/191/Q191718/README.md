@@ -6,6 +6,8 @@ permalink: /kb/191/Q191718/
 
 ## Q191718: BUG: Error 13 Assigning Variable to UserControl in Same Project
 
+{% raw %}
+
 	Article: Q191718
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/191/Q191718/
 	
 	=============================================================================
 	
+
+{% endraw %}

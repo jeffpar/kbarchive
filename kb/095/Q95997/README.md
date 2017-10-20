@@ -6,6 +6,8 @@ permalink: /kb/095/Q95997/
 
 ## Q95997: DELTREE: No Error Message If Directory Does Not Exist
 
+{% raw %}
+
 	Article: Q95997
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -53,3 +55,5 @@ permalink: /kb/095/Q95997/
 	
 	=============================================================================
 	
+
+{% endraw %}

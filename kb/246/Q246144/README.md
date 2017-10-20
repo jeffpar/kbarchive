@@ -6,6 +6,8 @@ permalink: /kb/246/Q246144/
 
 ## Q246144: FS2000: Computer Stops Responding the First Time You Play Game
 
+{% raw %}
+
 	Article: Q246144
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/246/Q246144/
 	
 	=============================================================================
 	
+
+{% endraw %}

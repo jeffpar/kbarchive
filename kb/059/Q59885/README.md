@@ -6,6 +6,8 @@ permalink: /kb/059/Q59885/
 
 ## Q59885: Read() Run-Time Function Example Is Incorrect
 
+{% raw %}
+
 	Article: Q59885
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -49,3 +51,5 @@ permalink: /kb/059/Q59885/
 	  else
 	    printf ("Read %u bytes from file\n", bytesread);
 	}
+
+{% endraw %}

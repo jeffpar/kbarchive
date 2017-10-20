@@ -6,6 +6,8 @@ permalink: /kb/234/Q234531/
 
 ## Q234531: OLE Directory May Have Uninitialized Data in the Document File
 
+{% raw %}
+
 	Article: Q234531
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/234/Q234531/
 	
 	=============================================================================
 	
+
+{% endraw %}

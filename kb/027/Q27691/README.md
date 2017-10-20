@@ -6,6 +6,8 @@ permalink: /kb/027/Q27691/
 
 ## Q27691: If &quot;Disk Full&quot; Message While Saving, Editor Can Delete File
 
+{% raw %}
+
 	Article: Q27691
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b
@@ -33,3 +35,5 @@ permalink: /kb/027/Q27691/
 	code. Save the file. QuickBASIC will respond with a "Disk full--Retry
 	or Cancel" message. Even if you cancel the Save command, the file will
 	be gone when you leave QuickBASIC.
+
+{% endraw %}

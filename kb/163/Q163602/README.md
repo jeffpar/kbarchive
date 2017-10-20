@@ -6,6 +6,8 @@ permalink: /kb/163/Q163602/
 
 ## Q163602: WD97: Temporary Parameter for Control Does Not Work
 
+{% raw %}
+
 	Article: Q163602
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -87,3 +89,5 @@ permalink: /kb/163/Q163602/
 	
 	=============================================================================
 	
+
+{% endraw %}

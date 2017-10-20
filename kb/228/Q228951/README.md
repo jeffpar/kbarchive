@@ -6,6 +6,8 @@ permalink: /kb/228/Q228951/
 
 ## Q228951: Midtown Madness: Panoz GTR-1 Stops Abruptly when You Hop a Curb
 
+{% raw %}
+
 	Article: Q228951
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/228/Q228951/
 	
 	=============================================================================
 	
+
+{% endraw %}

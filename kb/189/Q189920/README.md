@@ -6,6 +6,8 @@ permalink: /kb/189/Q189920/
 
 ## Q189920: PRB: Image Control Shows Only First Frame of Animated GIF
 
+{% raw %}
+
 	Article: Q189920
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/189/Q189920/
 	
 	=============================================================================
 	
+
+{% endraw %}

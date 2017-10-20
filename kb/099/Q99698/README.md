@@ -6,6 +6,8 @@ permalink: /kb/099/Q99698/
 
 ## Q99698: Mac Bkup: Backup Can Stop Remote Connection
 
+{% raw %}
+
 	Article: Q99698
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1,3.1a
@@ -50,3 +52,5 @@ permalink: /kb/099/Q99698/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168044/
 
 ## Q168044: FIX: ClassWizard May Fail to Derive a Class from CRecordset
 
+{% raw %}
+
 	Article: Q168044
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -64,3 +66,5 @@ permalink: /kb/168/Q168044/
 	
 	=============================================================================
 	
+
+{% endraw %}

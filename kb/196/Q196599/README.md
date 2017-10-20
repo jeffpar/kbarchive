@@ -6,6 +6,8 @@ permalink: /kb/196/Q196599/
 
 ## Q196599: FIX: Visual SourceSafe Hangs With Recursive Get on &#36;/ With Label
 
+{% raw %}
+
 	Article: Q196599
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -96,3 +98,5 @@ permalink: /kb/196/Q196599/
 	
 	=============================================================================
 	
+
+{% endraw %}

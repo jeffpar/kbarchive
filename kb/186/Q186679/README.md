@@ -6,6 +6,8 @@ permalink: /kb/186/Q186679/
 
 ## Q186679: FIX: Universal Scrolling Closes Code Completion List Boxes
 
+{% raw %}
+
 	Article: Q186679
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:2.2,5.0
@@ -94,3 +96,5 @@ permalink: /kb/186/Q186679/
 	
 	=============================================================================
 	
+
+{% endraw %}

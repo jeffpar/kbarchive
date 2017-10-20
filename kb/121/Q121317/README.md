@@ -6,6 +6,8 @@ permalink: /kb/121/Q121317/
 
 ## Q121317: TCP/IP-32 Version 3.11 Does Not Include Terminal Font
 
+{% raw %}
+
 	Article: Q121317
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/121/Q121317/
 	
 	=============================================================================
 	
+
+{% endraw %}

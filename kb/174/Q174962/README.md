@@ -6,6 +6,8 @@ permalink: /kb/174/Q174962/
 
 ## Q174962: Multimedia: Uninstaller Error
 
+{% raw %}
+
 	Article: Q174962
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/174/Q174962/
 	
 	=============================================================================
 	
+
+{% endraw %}

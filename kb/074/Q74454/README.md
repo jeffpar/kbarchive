@@ -6,6 +6,8 @@ permalink: /kb/074/Q74454/
 
 ## Q74454: MS-DOS Shell and the Colorado Tape Backup System
 
+{% raw %}
+
 	Article: Q74454
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -65,3 +67,5 @@ permalink: /kb/074/Q74454/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124942/
 
 ## Q124942: Encarta 1995: MSETUP.TXT Incorrect
 
+{% raw %}
+
 	Article: Q124942
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition
@@ -65,3 +67,5 @@ permalink: /kb/124/Q124942/
 	
 	=============================================================================
 	
+
+{% endraw %}

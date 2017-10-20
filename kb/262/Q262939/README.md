@@ -6,6 +6,8 @@ permalink: /kb/262/Q262939/
 
 ## Q262939: XADM: Internet Mail Service Won't Start After DC Demoted
 
+{% raw %}
+
 	Article: Q262939
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -75,3 +77,5 @@ permalink: /kb/262/Q262939/
 	
 	=============================================================================
 	
+
+{% endraw %}

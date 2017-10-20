@@ -6,6 +6,8 @@ permalink: /kb/152/Q152734/
 
 ## Q152734: How to Obtain the Latest Windows NT 4.0 Service Pack
 
+{% raw %}
+
 	Article: Q152734
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -140,3 +142,5 @@ permalink: /kb/152/Q152734/
 	
 	=============================================================================
 	
+
+{% endraw %}

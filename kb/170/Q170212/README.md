@@ -6,6 +6,8 @@ permalink: /kb/170/Q170212/
 
 ## Q170212: WD97: Cutting Object wth Document Map Showing Hangs Word
 
+{% raw %}
+
 	Article: Q170212
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/170/Q170212/
 	
 	=============================================================================
 	
+
+{% endraw %}

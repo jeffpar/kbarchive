@@ -6,6 +6,8 @@ permalink: /kb/103/Q103463/
 
 ## Q103463: PC OS2: F1 Does Not Display Help When Menu Name Is Selected
 
+{% raw %}
+
 	Article: Q103463
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -61,3 +63,5 @@ permalink: /kb/103/Q103463/
 	
 	=============================================================================
 	
+
+{% endraw %}

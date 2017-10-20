@@ -6,6 +6,8 @@ permalink: /kb/155/Q155290/
 
 ## Q155290: PowerPoint Stops Responding During HTML Export
 
+{% raw %}
+
 	Article: Q155290
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; :
@@ -54,3 +56,5 @@ permalink: /kb/155/Q155290/
 	
 	=============================================================================
 	
+
+{% endraw %}

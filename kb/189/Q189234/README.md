@@ -6,6 +6,8 @@ permalink: /kb/189/Q189234/
 
 ## Q189234: Hellbender: Pressing ALT+TAB Does Not Switch Tasks Properly
 
+{% raw %}
+
 	Article: Q189234
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/189/Q189234/
 	
 	=============================================================================
 	
+
+{% endraw %}

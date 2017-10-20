@@ -6,6 +6,8 @@ permalink: /kb/149/Q149313/
 
 ## Q149313: Goto Date Box Changes When a Number Is Entered
 
+{% raw %}
+
 	Article: Q149313
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -50,3 +52,5 @@ permalink: /kb/149/Q149313/
 	
 	=============================================================================
 	
+
+{% endraw %}

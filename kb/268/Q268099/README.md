@@ -6,6 +6,8 @@ permalink: /kb/268/Q268099/
 
 ## Q268099: User &amp; User Group Ads Don't Work for Users w/ Certain DBCS UsrNm
 
+{% raw %}
+
 	Article: Q268099
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -74,3 +76,5 @@ permalink: /kb/268/Q268099/
 	
 	=============================================================================
 	
+
+{% endraw %}

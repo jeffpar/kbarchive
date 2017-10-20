@@ -6,6 +6,8 @@ permalink: /kb/155/Q155474/
 
 ## Q155474: PPT7: Text Does Not Display With Generic/Text Only Printer
 
+{% raw %}
+
 	Article: Q155474
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -51,3 +53,5 @@ permalink: /kb/155/Q155474/
 	
 	=============================================================================
 	
+
+{% endraw %}

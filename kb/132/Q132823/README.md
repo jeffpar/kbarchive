@@ -6,6 +6,8 @@ permalink: /kb/132/Q132823/
 
 ## Q132823: Borland C++ Version 4.5 Hangs During Installation
 
+{% raw %}
+
 	Article: Q132823
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/132/Q132823/
 	
 	=============================================================================
 	
+
+{% endraw %}

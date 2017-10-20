@@ -6,6 +6,8 @@ permalink: /kb/136/Q136620/
 
 ## Q136620: Benefit of Storing Printer Info in a Report Table (.FRX File)
 
+{% raw %}
+
 	Article: Q136620
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -53,3 +55,5 @@ permalink: /kb/136/Q136620/
 	
 	=============================================================================
 	
+
+{% endraw %}

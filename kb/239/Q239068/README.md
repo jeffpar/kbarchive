@@ -6,6 +6,8 @@ permalink: /kb/239/Q239068/
 
 ## Q239068: XADM: Mailbox Manager Setup Requires Service Account Password
 
+{% raw %}
+
 	Article: Q239068
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -60,3 +62,5 @@ permalink: /kb/239/Q239068/
 	
 	=============================================================================
 	
+
+{% endraw %}

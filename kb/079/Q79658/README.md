@@ -6,6 +6,8 @@ permalink: /kb/079/Q79658/
 
 ## Q79658: Using MS-DOS 5.0 COPY Switches /A /B to Remove ^Z
 
+{% raw %}
+
 	Article: Q79658
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -56,3 +58,5 @@ permalink: /kb/079/Q79658/
 	
 	=============================================================================
 	
+
+{% endraw %}

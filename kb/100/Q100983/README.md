@@ -6,6 +6,8 @@ permalink: /kb/100/Q100983/
 
 ## Q100983: Garbage or Vertical Lines Print on HP PaintJet
 
+{% raw %}
+
 	Article: Q100983
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/100/Q100983/
 	
 	=============================================================================
 	
+
+{% endraw %}

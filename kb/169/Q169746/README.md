@@ -6,6 +6,8 @@ permalink: /kb/169/Q169746/
 
 ## Q169746: Hellbender Opening Animations Skip Or Hang With Screamin' 3D
 
+{% raw %}
+
 	Article: Q169746
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/169/Q169746/
 	
 	=============================================================================
 	
+
+{% endraw %}

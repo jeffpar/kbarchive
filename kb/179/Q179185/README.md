@@ -6,6 +6,8 @@ permalink: /kb/179/Q179185/
 
 ## Q179185: WD97: Text Disappears Behind Floating Object
 
+{% raw %}
+
 	Article: Q179185
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -128,3 +130,5 @@ permalink: /kb/179/Q179185/
 	
 	=============================================================================
 	
+
+{% endraw %}

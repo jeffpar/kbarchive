@@ -6,6 +6,8 @@ permalink: /kb/174/Q174810/
 
 ## Q174810: Outlook Express Requires MSN 2.5 or later
 
+{% raw %}
+
 	Article: Q174810
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.51,2.52,2.6,5.0,5.1,5.2
@@ -71,3 +73,5 @@ permalink: /kb/174/Q174810/
 	
 	=============================================================================
 	
+
+{% endraw %}

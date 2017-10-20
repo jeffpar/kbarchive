@@ -6,6 +6,8 @@ permalink: /kb/126/Q126790/
 
 ## Q126790: PC Win: Err Msg: Not Enough Memory or System Resources...
 
+{% raw %}
+
 	Article: Q126790
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -88,3 +90,5 @@ permalink: /kb/126/Q126790/
 	
 	=============================================================================
 	
+
+{% endraw %}

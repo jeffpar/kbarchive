@@ -6,6 +6,8 @@ permalink: /kb/131/Q131435/
 
 ## Q131435: Mac Encarta 95: Can't Print from Atlas
 
+{% raw %}
+
 	Article: Q131435
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -58,3 +60,5 @@ permalink: /kb/131/Q131435/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/034/Q34172/
 
 ## Q34172: Splitpath Document Error in readme.doc
 
+{% raw %}
+
 	Article: Q34172
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -33,3 +35,5 @@ permalink: /kb/034/Q34172/
 	(stars, "*"'s) in front of them either.  A proper declaration is:
 	
 	    char path_buffer[40], drive[3], dir[30], fname[9], ext[5];
+
+{% endraw %}

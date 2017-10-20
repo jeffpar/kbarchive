@@ -6,6 +6,8 @@ permalink: /kb/236/Q236595/
 
 ## Q236595: NTFS Deadlock During Writethrough Caching
 
+{% raw %}
+
 	Article: Q236595
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/236/Q236595/
 	
 	=============================================================================
 	
+
+{% endraw %}

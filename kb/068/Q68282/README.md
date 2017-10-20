@@ -6,6 +6,8 @@ permalink: /kb/068/Q68282/
 
 ## Q68282: Zenith Windows 3.0 OEM Version and Zenith Portables
 
+{% raw %}
+
 	Article: Q68282
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/068/Q68282/
 	
 	=============================================================================
 	
+
+{% endraw %}

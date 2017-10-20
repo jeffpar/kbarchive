@@ -6,6 +6,8 @@ permalink: /kb/230/Q230215/
 
 ## Q230215: XADM: Backup Checksum Not Performed on Single Processor Computer
 
+{% raw %}
+
 	Article: Q230215
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -90,3 +92,5 @@ permalink: /kb/230/Q230215/
 	
 	=============================================================================
 	
+
+{% endraw %}

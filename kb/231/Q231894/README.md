@@ -6,6 +6,8 @@ permalink: /kb/231/Q231894/
 
 ## Q231894: HOWTO: Update a SQL Server Text Field Through a View
 
+{% raw %}
+
 	Article: Q231894
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -163,3 +165,5 @@ permalink: /kb/231/Q231894/
 	
 	=============================================================================
 	
+
+{% endraw %}

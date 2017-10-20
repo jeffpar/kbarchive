@@ -6,6 +6,8 @@ permalink: /kb/114/Q114502/
 
 ## Q114502: FIX: Error Occurs When Previewing an Untransported DOS Report
 
+{% raw %}
+
 	Article: Q114502
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; WINDOWS:2.5b,2.6,2.6a,3.0
@@ -122,3 +124,5 @@ permalink: /kb/114/Q114502/
 	
 	=============================================================================
 	
+
+{% endraw %}

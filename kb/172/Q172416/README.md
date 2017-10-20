@@ -6,6 +6,8 @@ permalink: /kb/172/Q172416/
 
 ## Q172416: FTP Clients Cannot Rename Files on Remote FTP Virtual Directory
 
+{% raw %}
+
 	Article: Q172416
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -141,3 +143,5 @@ permalink: /kb/172/Q172416/
 	
 	=============================================================================
 	
+
+{% endraw %}

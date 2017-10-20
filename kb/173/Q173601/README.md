@@ -6,6 +6,8 @@ permalink: /kb/173/Q173601/
 
 ## Q173601: WD97: Cannot Color Table Border in HTML Document
 
+{% raw %}
+
 	Article: Q173601
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -50,3 +52,5 @@ permalink: /kb/173/Q173601/
 	
 	=============================================================================
 	
+
+{% endraw %}

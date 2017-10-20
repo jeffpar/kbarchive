@@ -6,6 +6,8 @@ permalink: /kb/155/Q155149/
 
 ## Q155149: Writer 2: Letter Size Tool Remains Depressed
 
+{% raw %}
+
 	Article: Q155149
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -61,3 +63,5 @@ permalink: /kb/155/Q155149/
 	
 	=============================================================================
 	
+
+{% endraw %}

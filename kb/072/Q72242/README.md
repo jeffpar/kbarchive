@@ -6,6 +6,8 @@ permalink: /kb/072/Q72242/
 
 ## Q72242: Cannot Format Fonts in Write
 
+{% raw %}
+
 	Article: Q72242
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -78,3 +80,5 @@ permalink: /kb/072/Q72242/
 	
 	=============================================================================
 	
+
+{% endraw %}

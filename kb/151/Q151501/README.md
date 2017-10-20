@@ -6,6 +6,8 @@ permalink: /kb/151/Q151501/
 
 ## Q151501: FIX: Linking Large Projects Can Be Very Slow
 
+{% raw %}
+
 	Article: Q151501
 	Product(s): Microsoft Programming Utilities
 	Version(s): winnt:5.0
@@ -66,3 +68,5 @@ permalink: /kb/151/Q151501/
 	
 	=============================================================================
 	
+
+{% endraw %}

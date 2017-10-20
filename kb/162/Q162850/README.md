@@ -6,6 +6,8 @@ permalink: /kb/162/Q162850/
 
 ## Q162850: KiXtart Environment Variables Do Not Exist After Script Runs
 
+{% raw %}
+
 	Article: Q162850
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:4.0;Windows:95
@@ -73,3 +75,5 @@ permalink: /kb/162/Q162850/
 	
 	=============================================================================
 	
+
+{% endraw %}

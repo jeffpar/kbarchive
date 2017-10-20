@@ -6,6 +6,8 @@ permalink: /kb/110/Q110567/
 
 ## Q110567: At Work PC Fax ErrMsg: Attachment Type Was Not Supported
 
+{% raw %}
+
 	Article: Q110567
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -78,3 +80,5 @@ permalink: /kb/110/Q110567/
 	
 	=============================================================================
 	
+
+{% endraw %}

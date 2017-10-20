@@ -6,6 +6,8 @@ permalink: /kb/101/Q101834/
 
 ## Q101834: Mac Srv Wkst: FPU Not Used by Server or Workstation
 
+{% raw %}
+
 	Article: Q101834
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -36,3 +38,5 @@ permalink: /kb/101/Q101834/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/092/Q92473/
 
 ## Q92473: PPT: Text Shadows Don't Print Properly to PCL Printers
 
+{% raw %}
+
 	Article: Q92473
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,7.0
@@ -82,3 +84,5 @@ permalink: /kb/092/Q92473/
 	
 	=============================================================================
 	
+
+{% endraw %}

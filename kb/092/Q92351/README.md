@@ -6,6 +6,8 @@ permalink: /kb/092/Q92351/
 
 ## Q92351: Using the JOIN Command in FoxBASE+
 
+{% raw %}
+
 	Article: Q92351
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -91,3 +93,5 @@ permalink: /kb/092/Q92351/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151345/
 
 ## Q151345: Bookshelf '96-'97: No Online Registration in Windows 3.1x
 
+{% raw %}
+
 	Article: Q151345
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/151/Q151345/
 	
 	=============================================================================
 	
+
+{% endraw %}

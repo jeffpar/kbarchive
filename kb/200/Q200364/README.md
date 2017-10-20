@@ -6,6 +6,8 @@ permalink: /kb/200/Q200364/
 
 ## Q200364: NetWare Client 4.5 Does Not Pass Terminal Server Home Path
 
+{% raw %}
+
 	Article: Q200364
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -91,3 +93,5 @@ permalink: /kb/200/Q200364/
 	
 	=============================================================================
 	
+
+{% endraw %}

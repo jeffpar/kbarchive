@@ -6,6 +6,8 @@ permalink: /kb/029/Q29202/
 
 ## Q29202: Mouse Driver Installs but Mouse Does Not Work
 
+{% raw %}
+
 	Article: Q29202
 	Product(s): See article
 	Version(s): 1.00
@@ -40,3 +42,5 @@ permalink: /kb/029/Q29202/
 	interrupt conflict, an I/O address conflict, or expansion slot problems.
 	  If the problems continue, isolate the problem on another machine
 	before determining if you have a faulty mouse.
+
+{% endraw %}

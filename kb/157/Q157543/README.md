@@ -6,6 +6,8 @@ permalink: /kb/157/Q157543/
 
 ## Q157543: PRB: Bitmap Editor Distorts Icons and Bitmaps
 
+{% raw %}
+
 	Article: Q157543
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -53,3 +55,5 @@ permalink: /kb/157/Q157543/
 	
 	=============================================================================
 	
+
+{% endraw %}

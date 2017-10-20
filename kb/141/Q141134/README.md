@@ -6,6 +6,8 @@ permalink: /kb/141/Q141134/
 
 ## Q141134: PC WRmt: ErrMsg: Connection End Disconnect After Win95 Upgrade
 
+{% raw %}
+
 	Article: Q141134
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -62,3 +64,5 @@ permalink: /kb/141/Q141134/
 	
 	=============================================================================
 	
+
+{% endraw %}

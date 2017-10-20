@@ -6,6 +6,8 @@ permalink: /kb/092/Q92829/
 
 ## Q92829: DDEML Samples Using Microsoft Foundation Classes
 
+{% raw %}
+
 	Article: Q92829
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -94,3 +96,5 @@ permalink: /kb/092/Q92829/
 	
 	=============================================================================
 	
+
+{% endraw %}

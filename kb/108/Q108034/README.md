@@ -6,6 +6,8 @@ permalink: /kb/108/Q108034/
 
 ## Q108034: Installing a Banyan VINES Network with WFWG 3.11
 
+{% raw %}
+
 	Article: Q108034
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -157,3 +159,5 @@ permalink: /kb/108/Q108034/
 	
 	=============================================================================
 	
+
+{% endraw %}

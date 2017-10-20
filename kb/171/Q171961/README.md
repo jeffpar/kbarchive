@@ -6,6 +6,8 @@ permalink: /kb/171/Q171961/
 
 ## Q171961: Mac Bookshelf 98: Unexpected Behavior Using Multiple Monitors
 
+{% raw %}
+
 	Article: Q171961
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -47,3 +49,5 @@ permalink: /kb/171/Q171961/
 	
 	=============================================================================
 	
+
+{% endraw %}

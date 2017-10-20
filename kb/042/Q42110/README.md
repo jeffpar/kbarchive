@@ -6,6 +6,8 @@ permalink: /kb/042/Q42110/
 
 ## Q42110: QuickC Err Msg C2086: Redefinition Caused by Forward Reference
 
+{% raw %}
+
 	Article: Q42110
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00
@@ -116,3 +118,5 @@ permalink: /kb/042/Q42110/
 	behavior also applies to benign function type redefinitions in QuickC
 	Version 1.0x. QuickC Version 2.00 does not allow this type of
 	redefinition.
+
+{% endraw %}

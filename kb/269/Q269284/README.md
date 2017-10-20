@@ -6,6 +6,8 @@ permalink: /kb/269/Q269284/
 
 ## Q269284: INFO: Undocumented Function SYS(1104)
 
+{% raw %}
+
 	Article: Q269284
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -53,3 +55,5 @@ permalink: /kb/269/Q269284/
 	
 	=============================================================================
 	
+
+{% endraw %}

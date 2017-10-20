@@ -6,6 +6,8 @@ permalink: /kb/082/Q82738/
 
 ## Q82738: Using Central Point Backup with Windows 3.1
 
+{% raw %}
+
 	Article: Q82738
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/082/Q82738/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274631/
 
 ## Q274631: MSN Explorer On Windows 2000 Fails To Launch And No Error Messag
 
+{% raw %}
+
 	Article: Q274631
 	Product(s): The Microsoft Network
 	Version(s): 2000,6.0,6.1
@@ -55,3 +57,5 @@ permalink: /kb/274/Q274631/
 	
 	=============================================================================
 	
+
+{% endraw %}

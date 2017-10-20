@@ -6,6 +6,8 @@ permalink: /kb/145/Q145992/
 
 ## Q145992: PRB: Global MFC DAO Objects Cause Assertions
 
+{% raw %}
+
 	Article: Q145992
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10
@@ -85,3 +87,5 @@ permalink: /kb/145/Q145992/
 	
 	=============================================================================
 	
+
+{% endraw %}

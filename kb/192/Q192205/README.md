@@ -6,6 +6,8 @@ permalink: /kb/192/Q192205/
 
 ## Q192205: XADM: Full Fidelity Not Maintained on Opaque-Signed Message
 
+{% raw %}
+
 	Article: Q192205
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/192/Q192205/
 	
 	=============================================================================
 	
+
+{% endraw %}

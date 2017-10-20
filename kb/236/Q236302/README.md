@@ -6,6 +6,8 @@ permalink: /kb/236/Q236302/
 
 ## Q236302: Err Msg: STOP: 0xC0000143 After Uninstalling Procomm Plus 32
 
+{% raw %}
+
 	Article: Q236302
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -139,3 +141,5 @@ permalink: /kb/236/Q236302/
 	
 	=============================================================================
 	
+
+{% endraw %}

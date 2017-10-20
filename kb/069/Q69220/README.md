@@ -6,6 +6,8 @@ permalink: /kb/069/Q69220/
 
 ## Q69220: BUG: Can't Redirect File as Input When Running a Program in PWB
 
+{% raw %}
+
 	Article: Q69220
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -117,3 +119,5 @@ permalink: /kb/069/Q69220/
 	
 	=============================================================================
 	
+
+{% endraw %}

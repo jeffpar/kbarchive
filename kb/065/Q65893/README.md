@@ -6,6 +6,8 @@ permalink: /kb/065/Q65893/
 
 ## Q65893: HP LaserJet Series II Family Printers Do Not Shade Text
 
+{% raw %}
+
 	Article: Q65893
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -43,3 +45,5 @@ permalink: /kb/065/Q65893/
 	
 	=============================================================================
 	
+
+{% endraw %}

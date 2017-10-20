@@ -6,6 +6,8 @@ permalink: /kb/169/Q169121/
 
 ## Q169121: XCLN: Win95 Will Not Shut down with Exchange Client Running
 
+{% raw %}
+
 	Article: Q169121
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0:Win95
@@ -63,3 +65,5 @@ permalink: /kb/169/Q169121/
 	
 	=============================================================================
 	
+
+{% endraw %}

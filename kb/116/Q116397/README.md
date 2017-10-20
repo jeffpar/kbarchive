@@ -6,6 +6,8 @@ permalink: /kb/116/Q116397/
 
 ## Q116397: MS-DOS 6.22 SCANDISK.INI File
 
+{% raw %}
+
 	Article: Q116397
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -182,3 +184,5 @@ permalink: /kb/116/Q116397/
 	
 	=============================================================================
 	
+
+{% endraw %}

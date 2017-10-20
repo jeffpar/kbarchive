@@ -6,6 +6,8 @@ permalink: /kb/151/Q151567/
 
 ## Q151567: FP: Using NCSA or CERN Image Maps with PWS Upgrade
 
+{% raw %}
+
 	Article: Q151567
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97
@@ -62,3 +64,5 @@ permalink: /kb/151/Q151567/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96876/
 
 ## Q96876: Font Assistant Err Msg: Enable TrueType Fonts. TrueType...
 
+{% raw %}
+
 	Article: Q96876
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/096/Q96876/
 	
 	=============================================================================
 	
+
+{% endraw %}

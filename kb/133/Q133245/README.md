@@ -6,6 +6,8 @@ permalink: /kb/133/Q133245/
 
 ## Q133245: BUG: One-to-Many Report Wizard Doesn't Sort in Correct Order
 
+{% raw %}
+
 	Article: Q133245
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -86,3 +88,5 @@ permalink: /kb/133/Q133245/
 	
 	=============================================================================
 	
+
+{% endraw %}

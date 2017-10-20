@@ -6,6 +6,8 @@ permalink: /kb/140/Q140977/
 
 ## Q140977: Error When Copying Files from OS/2 2.x Client Computer
 
+{% raw %}
+
 	Article: Q140977
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -72,3 +74,5 @@ permalink: /kb/140/Q140977/
 	
 	=============================================================================
 	
+
+{% endraw %}

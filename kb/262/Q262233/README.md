@@ -6,6 +6,8 @@ permalink: /kb/262/Q262233/
 
 ## Q262233: IIS: How to Configure Basic/Clear Text Authentication for IIS5
 
+{% raw %}
+
 	Article: Q262233
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -237,3 +239,5 @@ permalink: /kb/262/Q262233/
 	
 	=============================================================================
 	
+
+{% endraw %}

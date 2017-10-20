@@ -6,6 +6,8 @@ permalink: /kb/190/Q190636/
 
 ## Q190636: BUG: Invalid TMP Directory Causes GPF in DataEnvironment
 
+{% raw %}
+
 	Article: Q190636
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -122,3 +124,5 @@ permalink: /kb/190/Q190636/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/069/Q69089/
 
 ## Q69089: Manifest Crash with EMM386 on COMPAQs
 
+{% raw %}
+
 	Article: Q69089
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -39,3 +41,5 @@ permalink: /kb/069/Q69089/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68161/
 
 ## Q68161: HP DeskJet 500 Printer Driver Available from Hewlett-Packard
 
+{% raw %}
+
 	Article: Q68161
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -101,3 +103,5 @@ permalink: /kb/068/Q68161/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/202/Q202333/
 
 ## Q202333: Printer Codes from MS-DOS-based Programs Do Not Function
 
+{% raw %}
+
 	Article: Q202333
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/202/Q202333/
 	
 	=============================================================================
 	
+
+{% endraw %}

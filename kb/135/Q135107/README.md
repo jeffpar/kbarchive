@@ -6,6 +6,8 @@ permalink: /kb/135/Q135107/
 
 ## Q135107: E-mail Address Limited to 64 Characters
 
+{% raw %}
+
 	Article: Q135107
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.2 1.3 2.0
@@ -41,3 +43,5 @@ permalink: /kb/135/Q135107/
 	
 	=============================================================================
 	
+
+{% endraw %}

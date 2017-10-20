@@ -6,6 +6,8 @@ permalink: /kb/190/Q190275/
 
 ## Q190275: XFOR: MSExchangeCCMC General Event ID: 65
 
+{% raw %}
+
 	Article: Q190275
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -69,3 +71,5 @@ permalink: /kb/190/Q190275/
 	
 	=============================================================================
 	
+
+{% endraw %}

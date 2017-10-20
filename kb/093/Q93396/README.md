@@ -6,6 +6,8 @@ permalink: /kb/093/Q93396/
 
 ## Q93396: DOCERR: PrependToPath Documented Incorrectly
 
+{% raw %}
+
 	Article: Q93396
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -51,3 +53,5 @@ permalink: /kb/093/Q93396/
 	
 	=============================================================================
 	
+
+{% endraw %}

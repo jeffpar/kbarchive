@@ -6,6 +6,8 @@ permalink: /kb/165/Q165529/
 
 ## Q165529: WD97: Style Changes When Numbering Applied to Based On Style
 
+{% raw %}
+
 	Article: Q165529
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -95,3 +97,5 @@ permalink: /kb/165/Q165529/
 	
 	=============================================================================
 	
+
+{% endraw %}

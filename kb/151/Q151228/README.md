@@ -6,6 +6,8 @@ permalink: /kb/151/Q151228/
 
 ## Q151228: XFOR: Microsoft Mail Connector and Duplicate Serial Numbers
 
+{% raw %}
+
 	Article: Q151228
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/151/Q151228/
 	
 	=============================================================================
 	
+
+{% endraw %}

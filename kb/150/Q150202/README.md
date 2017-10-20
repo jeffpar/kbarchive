@@ -6,6 +6,8 @@ permalink: /kb/150/Q150202/
 
 ## Q150202: BUG: Sheridan Frame and Panel Stretch Font with Move Method
 
+{% raw %}
+
 	Article: Q150202
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -91,3 +93,5 @@ permalink: /kb/150/Q150202/
 	
 	=============================================================================
 	
+
+{% endraw %}

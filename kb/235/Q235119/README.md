@@ -6,6 +6,8 @@ permalink: /kb/235/Q235119/
 
 ## Q235119: PRB: No Version Info if COM DLL/EXE Built Under Windows Me/98/95
 
+{% raw %}
+
 	Article: Q235119
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -107,3 +109,5 @@ permalink: /kb/235/Q235119/
 	
 	=============================================================================
 	
+
+{% endraw %}

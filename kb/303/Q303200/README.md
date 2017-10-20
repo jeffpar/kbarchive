@@ -6,6 +6,8 @@ permalink: /kb/303/Q303200/
 
 ## Q303200: HOWTO: Use eVB to Debug ActiveX DLLS in eVC++
 
+{% raw %}
+
 	Article: Q303200
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0
@@ -84,3 +86,5 @@ permalink: /kb/303/Q303200/
 	
 	=============================================================================
 	
+
+{% endraw %}

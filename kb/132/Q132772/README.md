@@ -6,6 +6,8 @@ permalink: /kb/132/Q132772/
 
 ## Q132772: IBM PCMCIA Token Ring Card Does Not Work on Omnibook 600
 
+{% raw %}
+
 	Article: Q132772
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/132/Q132772/
 	
 	=============================================================================
 	
+
+{% endraw %}

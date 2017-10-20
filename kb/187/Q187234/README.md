@@ -6,6 +6,8 @@ permalink: /kb/187/Q187234/
 
 ## Q187234: HOWTO: Use the Dictionary Object with Visual Basic
 
+{% raw %}
+
 	Article: Q187234
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -142,3 +144,5 @@ permalink: /kb/187/Q187234/
 	
 	=============================================================================
 	
+
+{% endraw %}

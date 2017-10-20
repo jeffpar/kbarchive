@@ -6,6 +6,8 @@ permalink: /kb/086/Q86377/
 
 ## Q86377: PC WSPlus: Replies from Gateway Users Not Received
 
+{% raw %}
+
 	Article: Q86377
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/086/Q86377/
 	
 	=============================================================================
 	
+
+{% endraw %}

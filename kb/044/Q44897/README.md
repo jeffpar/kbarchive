@@ -6,6 +6,8 @@ permalink: /kb/044/Q44897/
 
 ## Q44897: system() Returns an Exit Code Under OS/2
 
+{% raw %}
+
 	Article: Q44897
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -19,3 +21,5 @@ permalink: /kb/044/Q44897/
 	
 	Under both operating systems, if the system() function fails then a
 	value of -1 is returned.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/077/Q77989/
 
 ## Q77989: Cannot Access Bookmarks from Main Tutorial Screen
 
+{% raw %}
+
 	Article: Q77989
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1991 edition
@@ -39,3 +41,5 @@ permalink: /kb/077/Q77989/
 	
 	=============================================================================
 	
+
+{% endraw %}

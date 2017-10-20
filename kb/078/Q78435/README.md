@@ -6,6 +6,8 @@ permalink: /kb/078/Q78435/
 
 ## Q78435: What Is EGA.SYS and What Is Its Function?
 
+{% raw %}
+
 	Article: Q78435
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -55,3 +57,5 @@ permalink: /kb/078/Q78435/
 	
 	=============================================================================
 	
+
+{% endraw %}

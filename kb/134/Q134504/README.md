@@ -6,6 +6,8 @@ permalink: /kb/134/Q134504/
 
 ## Q134504: Zeos Pantera CMOS Settings Corrupted During Windows 95 Setup
 
+{% raw %}
+
 	Article: Q134504
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/134/Q134504/
 	
 	=============================================================================
 	
+
+{% endraw %}

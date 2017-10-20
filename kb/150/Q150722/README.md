@@ -6,6 +6,8 @@ permalink: /kb/150/Q150722/
 
 ## Q150722: Changing Country During Signup May Download Incorrect Info.
 
+{% raw %}
+
 	Article: Q150722
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.2,1.3,2.0
@@ -50,3 +52,5 @@ permalink: /kb/150/Q150722/
 	
 	=============================================================================
 	
+
+{% endraw %}

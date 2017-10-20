@@ -6,6 +6,8 @@ permalink: /kb/190/Q190799/
 
 ## Q190799: PRB: Potential Errors Passing CRT Objects Across DLL Boundaries
 
+{% raw %}
+
 	Article: Q190799
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -193,3 +195,5 @@ permalink: /kb/190/Q190799/
 	
 	=============================================================================
 	
+
+{% endraw %}

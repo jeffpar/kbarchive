@@ -6,6 +6,8 @@ permalink: /kb/184/Q184070/
 
 ## Q184070: XCLN: URL Opened in Outlook Today Starts Internet Explorer
 
+{% raw %}
+
 	Article: Q184070
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -62,3 +64,5 @@ permalink: /kb/184/Q184070/
 	
 	=============================================================================
 	
+
+{% endraw %}

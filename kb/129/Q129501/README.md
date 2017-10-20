@@ -6,6 +6,8 @@ permalink: /kb/129/Q129501/
 
 ## Q129501: Mac Srv: Mail Server and Client AppleTalk Protocols
 
+{% raw %}
+
 	Article: Q129501
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -54,3 +56,5 @@ permalink: /kb/129/Q129501/
 	
 	=============================================================================
 	
+
+{% endraw %}

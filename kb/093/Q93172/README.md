@@ -6,6 +6,8 @@ permalink: /kb/093/Q93172/
 
 ## Q93172: CURRENT.STS Stored According to USER Environment Variable
 
+{% raw %}
+
 	Article: Q93172
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1,2.0,2.1.49
@@ -41,3 +43,5 @@ permalink: /kb/093/Q93172/
 	
 	=============================================================================
 	
+
+{% endraw %}

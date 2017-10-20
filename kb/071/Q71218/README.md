@@ -6,6 +6,8 @@ permalink: /kb/071/Q71218/
 
 ## Q71218: Idlewild Shows Blackness as Only Option
 
+{% raw %}
+
 	Article: Q71218
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/071/Q71218/
 	
 	=============================================================================
 	
+
+{% endraw %}

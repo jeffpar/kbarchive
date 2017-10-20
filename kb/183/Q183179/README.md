@@ -6,6 +6,8 @@ permalink: /kb/183/Q183179/
 
 ## Q183179: Using PL/I Programs with COM Transaction Integrator
 
+{% raw %}
+
 	Article: Q183179
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -250,3 +252,5 @@ permalink: /kb/183/Q183179/
 	
 	=============================================================================
 	
+
+{% endraw %}

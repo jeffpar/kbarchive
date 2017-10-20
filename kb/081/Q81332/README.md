@@ -6,6 +6,8 @@ permalink: /kb/081/Q81332/
 
 ## Q81332: HookAll2.exe Demos WH_CALLWNDPROC &amp; WH_GETMESSAGE Hooks
 
+{% raw %}
+
 	Article: Q81332
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -68,3 +70,5 @@ permalink: /kb/081/Q81332/
 	
 	=============================================================================
 	
+
+{% endraw %}

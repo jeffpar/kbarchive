@@ -6,6 +6,8 @@ permalink: /kb/193/Q193172/
 
 ## Q193172: PRB: Runtime Error 430 in Client After Server Type is Changed
 
+{% raw %}
+
 	Article: Q193172
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -112,3 +114,5 @@ permalink: /kb/193/Q193172/
 	
 	=============================================================================
 	
+
+{% endraw %}

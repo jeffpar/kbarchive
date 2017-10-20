@@ -6,6 +6,8 @@ permalink: /kb/169/Q169115/
 
 ## Q169115: Importing a Dial-up Networking Phonebook
 
+{% raw %}
+
 	Article: Q169115
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/169/Q169115/
 	
 	=============================================================================
 	
+
+{% endraw %}

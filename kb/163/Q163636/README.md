@@ -6,6 +6,8 @@ permalink: /kb/163/Q163636/
 
 ## Q163636: XCLN: Cannot Modify Personal Address Book (PAB) Templates
 
+{% raw %}
+
 	Article: Q163636
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0; Win95:4.0
@@ -46,3 +48,5 @@ permalink: /kb/163/Q163636/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229650/
 
 ## Q229650: STOP 0x0000001E in Win32k.sys When Running Findfast.exe
 
+{% raw %}
+
 	Article: Q229650
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/229/Q229650/
 	
 	=============================================================================
 	
+
+{% endraw %}

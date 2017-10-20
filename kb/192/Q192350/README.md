@@ -6,6 +6,8 @@ permalink: /kb/192/Q192350/
 
 ## Q192350: When You Quit MSN You Are Not Prompted to Disconnect
 
+{% raw %}
+
 	Article: Q192350
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3
@@ -63,3 +65,5 @@ permalink: /kb/192/Q192350/
 	
 	=============================================================================
 	
+
+{% endraw %}

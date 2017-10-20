@@ -6,6 +6,8 @@ permalink: /kb/195/Q195850/
 
 ## Q195850: HOWTO: Determine the Windows Messaging Subsystem Default
 
+{% raw %}
+
 	Article: Q195850
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -102,3 +104,5 @@ permalink: /kb/195/Q195850/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/108/Q108937/
 
 ## Q108937: PRB: Graying Text in Disabled Multi-line Edit Controls
 
+{% raw %}
+
 	Article: Q108937
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -97,3 +99,5 @@ permalink: /kb/108/Q108937/
 	
 	=============================================================================
 	
+
+{% endraw %}

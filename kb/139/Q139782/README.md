@@ -6,6 +6,8 @@ permalink: /kb/139/Q139782/
 
 ## Q139782: WINS Logs Event Error 4204
 
+{% raw %}
+
 	Article: Q139782
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -55,3 +57,5 @@ permalink: /kb/139/Q139782/
 	
 	=============================================================================
 	
+
+{% endraw %}

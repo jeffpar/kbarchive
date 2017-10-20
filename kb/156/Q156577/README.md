@@ -6,6 +6,8 @@ permalink: /kb/156/Q156577/
 
 ## Q156577: WD97: Why You Are Unable to Recover a Lost Document
 
+{% raw %}
+
 	Article: Q156577
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/156/Q156577/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236610/
 
 ## Q236610: DirectPlay 6.1a Launches Stable Multiplayer Game Connections
 
+{% raw %}
+
 	Article: Q236610
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -158,3 +160,5 @@ permalink: /kb/236/Q236610/
 	
 	=============================================================================
 	
+
+{% endraw %}

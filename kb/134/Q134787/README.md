@@ -6,6 +6,8 @@ permalink: /kb/134/Q134787/
 
 ## Q134787: Complete List of Shortcut Keys for PowerPoint 7.0
 
+{% raw %}
+
 	Article: Q134787
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -238,3 +240,5 @@ permalink: /kb/134/Q134787/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100091/
 
 ## Q100091: MSAV Display Problems with Older 8514 Display Adapters
 
+{% raw %}
+
 	Article: Q100091
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -46,3 +48,5 @@ permalink: /kb/100/Q100091/
 	
 	=============================================================================
 	
+
+{% endraw %}

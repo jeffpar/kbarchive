@@ -6,6 +6,8 @@ permalink: /kb/086/Q86733/
 
 ## Q86733: Communications Unstable at 9600 BPS on DEC Pathworks
 
+{% raw %}
+
 	Article: Q86733
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/086/Q86733/
 	
 	=============================================================================
 	
+
+{% endraw %}

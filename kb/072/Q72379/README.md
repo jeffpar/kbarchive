@@ -6,6 +6,8 @@ permalink: /kb/072/Q72379/
 
 ## Q72379: Tips on Using WDEB386
 
+{% raw %}
+
 	Article: Q72379
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -276,3 +278,5 @@ permalink: /kb/072/Q72379/
 	
 	=============================================================================
 	
+
+{% endraw %}

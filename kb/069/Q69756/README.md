@@ -6,6 +6,8 @@ permalink: /kb/069/Q69756/
 
 ## Q69756: Avoid Low-Level Operations in Windows Programs: Use DLLs
 
+{% raw %}
+
 	Article: Q69756
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -67,3 +69,5 @@ permalink: /kb/069/Q69756/
 	
 	=============================================================================
 	
+
+{% endraw %}

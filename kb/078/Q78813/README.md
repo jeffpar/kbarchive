@@ -6,6 +6,8 @@ permalink: /kb/078/Q78813/
 
 ## Q78813: HIMEM.SYS Reports Loading A20 Handler X,Y
 
+{% raw %}
+
 	Article: Q78813
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -89,3 +91,5 @@ permalink: /kb/078/Q78813/
 	
 	=============================================================================
 	
+
+{% endraw %}

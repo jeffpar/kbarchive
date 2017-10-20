@@ -6,6 +6,8 @@ permalink: /kb/149/Q149425/
 
 ## Q149425: IDC: Error Performing Query, Not Defined as a Valid User
 
+{% raw %}
+
 	Article: Q149425
 	Product(s): Internet Information Server
 	Version(s): 1.0 3.51
@@ -85,3 +87,5 @@ permalink: /kb/149/Q149425/
 	
 	=============================================================================
 	
+
+{% endraw %}

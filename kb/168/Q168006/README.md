@@ -6,6 +6,8 @@ permalink: /kb/168/Q168006/
 
 ## Q168006: TN3270 Fails with Access Violation in ntdll!RtlFreeHeap
 
+{% raw %}
+
 	Article: Q168006
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -152,3 +154,5 @@ permalink: /kb/168/Q168006/
 	
 	=============================================================================
 	
+
+{% endraw %}

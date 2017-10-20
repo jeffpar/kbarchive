@@ -6,6 +6,8 @@ permalink: /kb/075/Q75479/
 
 ## Q75479: Windows 3.0 Notepad Search and Replace Macro
 
+{% raw %}
+
 	Article: Q75479
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -117,3 +119,5 @@ permalink: /kb/075/Q75479/
 	
 	=============================================================================
 	
+
+{% endraw %}

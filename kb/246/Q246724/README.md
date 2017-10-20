@@ -6,6 +6,8 @@ permalink: /kb/246/Q246724/
 
 ## Q246724: XFOR: Notes Conversion Fails Processing User-defined Fields
 
+{% raw %}
+
 	Article: Q246724
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -65,3 +67,5 @@ permalink: /kb/246/Q246724/
 	
 	=============================================================================
 	
+
+{% endraw %}

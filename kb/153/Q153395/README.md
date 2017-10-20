@@ -6,6 +6,8 @@ permalink: /kb/153/Q153395/
 
 ## Q153395: Error Message: &quot;Exception 0E in VPOWERD&quot; During First Boot
 
+{% raw %}
+
 	Article: Q153395
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/153/Q153395/
 	
 	=============================================================================
 	
+
+{% endraw %}

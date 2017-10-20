@@ -6,6 +6,8 @@ permalink: /kb/189/Q189505/
 
 ## Q189505: FIX: Init Event Code to Multilselect List Box Items Fails
 
+{% raw %}
+
 	Article: Q189505
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -104,3 +106,5 @@ permalink: /kb/189/Q189505/
 	
 	=============================================================================
 	
+
+{% endraw %}

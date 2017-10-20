@@ -6,6 +6,8 @@ permalink: /kb/216/Q216779/
 
 ## Q216779: DHCP Server Service May AV When Adminstrating Locally or Remotel
 
+{% raw %}
+
 	Article: Q216779
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/216/Q216779/
 	
 	=============================================================================
 	
+
+{% endraw %}

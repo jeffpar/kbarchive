@@ -6,6 +6,8 @@ permalink: /kb/068/Q68003/
 
 ## Q68003: Peculiarities with Edlin's Line Display
 
+{% raw %}
+
 	Article: Q68003
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.0
@@ -46,3 +48,5 @@ permalink: /kb/068/Q68003/
 	
 	=============================================================================
 	
+
+{% endraw %}

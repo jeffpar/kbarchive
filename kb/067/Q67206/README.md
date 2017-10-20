@@ -6,6 +6,8 @@ permalink: /kb/067/Q67206/
 
 ## Q67206: OS/2 &quot;Path/File Access Error&quot; Instead of &quot;Permission Denied&quot;
 
+{% raw %}
+
 	Article: Q67206
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10
@@ -41,3 +43,5 @@ permalink: /kb/067/Q67206/
 	OPEN "TESTFILE" FOR APPEND LOCK WRITE AS #1
 	PRINT #1, "Hello"
 	WHILE INKEY <> "q": WEND
+
+{% endraw %}

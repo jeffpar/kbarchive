@@ -6,6 +6,8 @@ permalink: /kb/318/Q318611/
 
 ## Q318611: How to Associate 3270 Display LUs with 3270 Printer LUs
 
+{% raw %}
+
 	Article: Q318611
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -98,3 +100,5 @@ permalink: /kb/318/Q318611/
 	
 	=============================================================================
 	
+
+{% endraw %}

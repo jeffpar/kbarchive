@@ -6,6 +6,8 @@ permalink: /kb/158/Q158272/
 
 ## Q158272: Printer Disappears After Upgrading to Windows NT 4.0
 
+{% raw %}
+
 	Article: Q158272
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/158/Q158272/
 	
 	=============================================================================
 	
+
+{% endraw %}

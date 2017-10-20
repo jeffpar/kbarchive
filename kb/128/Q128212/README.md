@@ -6,6 +6,8 @@ permalink: /kb/128/Q128212/
 
 ## Q128212: PRB: Error LNK2001 Generated When Porting 16-bit Code to Win32
 
+{% raw %}
+
 	Article: Q128212
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,4.0,5.0,6.0
@@ -85,3 +87,5 @@ permalink: /kb/128/Q128212/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75327/
 
 ## Q75327: Macros Do Not Become Part of the Environment
 
+{% raw %}
+
 	Article: Q75327
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.11,1.12,1.13,1.2,1.3,1.4; NT:1.4,1.5; OS/2:1.11,1.12,1.13,1.21
@@ -118,3 +120,5 @@ permalink: /kb/075/Q75327/
 	
 	=============================================================================
 	
+
+{% endraw %}

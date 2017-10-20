@@ -6,6 +6,8 @@ permalink: /kb/195/Q195483/
 
 ## Q195483: WD97: CAPI and WLL Support Policy
 
+{% raw %}
+
 	Article: Q195483
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/195/Q195483/
 	
 	=============================================================================
 	
+
+{% endraw %}

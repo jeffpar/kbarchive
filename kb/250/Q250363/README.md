@@ -6,6 +6,8 @@ permalink: /kb/250/Q250363/
 
 ## Q250363: Works 2000 Icons Change After Upgrade to Windows 2000
 
+{% raw %}
+
 	Article: Q250363
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:2000
@@ -43,3 +45,5 @@ permalink: /kb/250/Q250363/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175455/
 
 ## Q175455: Bookshelf: QuickDefine Does Not Function in Web Page Frame
 
+{% raw %}
+
 	Article: Q175455
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.0,3.01,3.02,4.0
@@ -62,3 +64,5 @@ permalink: /kb/175/Q175455/
 	
 	=============================================================================
 	
+
+{% endraw %}

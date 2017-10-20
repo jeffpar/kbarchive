@@ -6,6 +6,8 @@ permalink: /kb/147/Q147419/
 
 ## Q147419: Macintosh Frank Lloyd Wright: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q147419
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -56,3 +58,5 @@ permalink: /kb/147/Q147419/
 	
 	=============================================================================
 	
+
+{% endraw %}

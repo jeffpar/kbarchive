@@ -6,6 +6,8 @@ permalink: /kb/246/Q246121/
 
 ## Q246121: XCLN: Contacts in Public Folder Are Not Shown in Bold
 
+{% raw %}
+
 	Article: Q246121
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -43,3 +45,5 @@ permalink: /kb/246/Q246121/
 	
 	=============================================================================
 	
+
+{% endraw %}

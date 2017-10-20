@@ -6,6 +6,8 @@ permalink: /kb/268/Q268328/
 
 ## Q268328: ST2000: Printer Hangs When You Print Map and Directions
 
+{% raw %}
+
 	Article: Q268328
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -82,3 +84,5 @@ permalink: /kb/268/Q268328/
 	
 	=============================================================================
 	
+
+{% endraw %}

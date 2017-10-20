@@ -6,6 +6,8 @@ permalink: /kb/088/Q88332/
 
 ## Q88332: Windows and MS-DOS 5 for IBM PS/2 Disk Set (3.5 Inch)
 
+{% raw %}
+
 	Article: Q88332
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -674,3 +676,5 @@ permalink: /kb/088/Q88332/
 	
 	=============================================================================
 	
+
+{% endraw %}

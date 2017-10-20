@@ -6,6 +6,8 @@ permalink: /kb/191/Q191723/
 
 ## Q191723: BUG: DataGrid Column Appears To Be Missing
 
+{% raw %}
+
 	Article: Q191723
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/191/Q191723/
 	
 	=============================================================================
 	
+
+{% endraw %}

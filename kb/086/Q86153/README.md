@@ -6,6 +6,8 @@ permalink: /kb/086/Q86153/
 
 ## Q86153: PROFS: Why 3270 File Transfer Should Be Tested First
 
+{% raw %}
+
 	Article: Q86153
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -58,3 +60,5 @@ permalink: /kb/086/Q86153/
 	
 	=============================================================================
 	
+
+{% endraw %}

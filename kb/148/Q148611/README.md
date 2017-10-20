@@ -6,6 +6,8 @@ permalink: /kb/148/Q148611/
 
 ## Q148611: BUG: Unable to Load the Format Editor from Developer Studio
 
+{% raw %}
+
 	Article: Q148611
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/148/Q148611/
 	
 	=============================================================================
 	
+
+{% endraw %}

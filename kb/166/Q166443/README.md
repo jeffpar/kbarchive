@@ -6,6 +6,8 @@ permalink: /kb/166/Q166443/
 
 ## Q166443: Configuring a Novell DOS/Win Client-32 for DHCP
 
+{% raw %}
+
 	Article: Q166443
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0; :
@@ -108,3 +110,5 @@ permalink: /kb/166/Q166443/
 	
 	=============================================================================
 	
+
+{% endraw %}

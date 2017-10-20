@@ -6,6 +6,8 @@ permalink: /kb/150/Q150875/
 
 ## Q150875: No Internet Tab Available in Compose Note Properties
 
+{% raw %}
+
 	Article: Q150875
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -51,3 +53,5 @@ permalink: /kb/150/Q150875/
 	
 	=============================================================================
 	
+
+{% endraw %}

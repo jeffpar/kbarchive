@@ -6,6 +6,8 @@ permalink: /kb/256/Q256824/
 
 ## Q256824: MapPoint 2001: Driving Directions Are Not Printed Properly
 
+{% raw %}
+
 	Article: Q256824
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/256/Q256824/
 	
 	=============================================================================
 	
+
+{% endraw %}

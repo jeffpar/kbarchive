@@ -6,6 +6,8 @@ permalink: /kb/240/Q240195/
 
 ## Q240195: &quot;NET USER /TIMES&quot; Command Does Not Work in Year 2000
 
+{% raw %}
+
 	Article: Q240195
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -177,3 +179,5 @@ permalink: /kb/240/Q240195/
 	
 	=============================================================================
 	
+
+{% endraw %}

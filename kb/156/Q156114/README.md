@@ -6,6 +6,8 @@ permalink: /kb/156/Q156114/
 
 ## Q156114: XCLN: How to Print an Exchange Form with Graphics
 
+{% raw %}
+
 	Article: Q156114
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -68,3 +70,5 @@ permalink: /kb/156/Q156114/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159604/
 
 ## Q159604: Viewing Long File Names from Windows 95 Using Winfile.exe
 
+{% raw %}
+
 	Article: Q159604
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -55,3 +57,5 @@ permalink: /kb/159/Q159604/
 	
 	=============================================================================
 	
+
+{% endraw %}

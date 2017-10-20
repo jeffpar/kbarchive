@@ -6,6 +6,8 @@ permalink: /kb/096/Q96333/
 
 ## Q96333: MS Backup Err Msg: File Is Not a Setup File...
 
+{% raw %}
+
 	Article: Q96333
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -52,3 +54,5 @@ permalink: /kb/096/Q96333/
 	
 	=============================================================================
 	
+
+{% endraw %}

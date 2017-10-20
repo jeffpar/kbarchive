@@ -6,6 +6,8 @@ permalink: /kb/302/Q302888/
 
 ## Q302888: HOWTO: Schedule Metabase Backups Using WSH
 
+{% raw %}
+
 	Article: Q302888
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -191,3 +193,5 @@ permalink: /kb/302/Q302888/
 	
 	=============================================================================
 	
+
+{% endraw %}

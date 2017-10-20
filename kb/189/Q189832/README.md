@@ -6,6 +6,8 @@ permalink: /kb/189/Q189832/
 
 ## Q189832: Dial-Up Networking Generates Dr Watson When Called Via Shortcut
 
+{% raw %}
+
 	Article: Q189832
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -87,3 +89,5 @@ permalink: /kb/189/Q189832/
 	
 	=============================================================================
 	
+
+{% endraw %}

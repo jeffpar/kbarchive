@@ -6,6 +6,8 @@ permalink: /kb/149/Q149431/
 
 ## Q149431: PRB: Cannot Find Entry Point (DLL Name) in the DLL
 
+{% raw %}
+
 	Article: Q149431
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -88,3 +90,5 @@ permalink: /kb/149/Q149431/
 	
 	=============================================================================
 	
+
+{% endraw %}

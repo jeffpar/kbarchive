@@ -6,6 +6,8 @@ permalink: /kb/196/Q196961/
 
 ## Q196961: WD97: AutoRecover Not Available Using Word as Your E-mail Editor
 
+{% raw %}
+
 	Article: Q196961
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -60,3 +62,5 @@ permalink: /kb/196/Q196961/
 	
 	=============================================================================
 	
+
+{% endraw %}

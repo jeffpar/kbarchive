@@ -6,6 +6,8 @@ permalink: /kb/072/Q72459/
 
 ## Q72459: Shorthand Notation for Memory Allocation Flags
 
+{% raw %}
+
 	Article: Q72459
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -67,3 +69,5 @@ permalink: /kb/072/Q72459/
 	
 	=============================================================================
 	
+
+{% endraw %}

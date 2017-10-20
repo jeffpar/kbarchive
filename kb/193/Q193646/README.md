@@ -6,6 +6,8 @@ permalink: /kb/193/Q193646/
 
 ## Q193646: Event ID 10005 from DCOM After Installing IIS
 
+{% raw %}
+
 	Article: Q193646
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/193/Q193646/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167006/
 
 ## Q167006: INFO: Removing Recycle Bin Option During Unattended Setup
 
+{% raw %}
+
 	Article: Q167006
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -124,3 +126,5 @@ permalink: /kb/167/Q167006/
 	
 	=============================================================================
 	
+
+{% endraw %}

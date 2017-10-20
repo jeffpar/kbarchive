@@ -6,6 +6,8 @@ permalink: /kb/046/Q46850/
 
 ## Q46850: Increasing the Efficiency of QuickBASIC 4.50's QuickSort Demo
 
+{% raw %}
+
 	Article: Q46850
 	Product(s): See article
 	Version(s): 4.50
@@ -67,3 +69,5 @@ permalink: /kb/046/Q46850/
 	DO
 	
 	   DO WHILE (I < J) AND SortArray(I).Length <= Partition
+
+{% endraw %}

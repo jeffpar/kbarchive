@@ -6,6 +6,8 @@ permalink: /kb/153/Q153185/
 
 ## Q153185: Paul Bunyan: List of Files on Compact Disc
 
+{% raw %}
+
 	Article: Q153185
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -939,3 +941,5 @@ permalink: /kb/153/Q153185/
 	
 	=============================================================================
 	
+
+{% endraw %}

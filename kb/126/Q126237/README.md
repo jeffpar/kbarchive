@@ -6,6 +6,8 @@ permalink: /kb/126/Q126237/
 
 ## Q126237: Roland Rap-10 Sound Card: Progman Caused a GPF in Msacm.drv
 
+{% raw %}
+
 	Article: Q126237
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,3.1,3.11; :1.0,1993 edition,1994 edition,1994-1995 edition,1995 edition
@@ -77,3 +79,5 @@ permalink: /kb/126/Q126237/
 	
 	=============================================================================
 	
+
+{% endraw %}

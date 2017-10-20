@@ -6,6 +6,8 @@ permalink: /kb/241/Q241048/
 
 ## Q241048: Answer File for System Preparation Tool Is Not Removed
 
+{% raw %}
+
 	Article: Q241048
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/241/Q241048/
 	
 	=============================================================================
 	
+
+{% endraw %}

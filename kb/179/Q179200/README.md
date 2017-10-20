@@ -6,6 +6,8 @@ permalink: /kb/179/Q179200/
 
 ## Q179200: XADM: Removed AB View Containers Are Re-created Automatically
 
+{% raw %}
+
 	Article: Q179200
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -59,3 +61,5 @@ permalink: /kb/179/Q179200/
 	
 	=============================================================================
 	
+
+{% endraw %}

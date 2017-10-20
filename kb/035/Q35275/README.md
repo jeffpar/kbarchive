@@ -6,6 +6,8 @@ permalink: /kb/035/Q35275/
 
 ## Q35275: Sample Program That Makes MS OS/2 Call to DosScanEnv Function
 
+{% raw %}
+
 	Article: Q35275
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -50,3 +52,5 @@ permalink: /kb/035/Q35275/
 	   print item$;" = ";result$
 	END IF
 	END
+
+{% endraw %}

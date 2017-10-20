@@ -6,6 +6,8 @@ permalink: /kb/068/Q68897/
 
 ## Q68897: ASD: Specifying Altitude for Scenery
 
+{% raw %}
+
 	Article: Q68897
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/068/Q68897/
 	
 	=============================================================================
 	
+
+{% endraw %}

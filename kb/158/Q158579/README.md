@@ -6,6 +6,8 @@ permalink: /kb/158/Q158579/
 
 ## Q158579: STL Sample for the set::size Function
 
+{% raw %}
+
 	Article: Q158579
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -134,3 +136,5 @@ permalink: /kb/158/Q158579/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147012/
 
 ## Q147012: Activating /W Switch to Prevent Restarting in WinNT
 
+{% raw %}
+
 	Article: Q147012
 	Product(s): Microsoft Windows NT
 	Version(s): Winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/147/Q147012/
 	
 	=============================================================================
 	
+
+{% endraw %}

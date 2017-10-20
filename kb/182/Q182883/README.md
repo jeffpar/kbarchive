@@ -6,6 +6,8 @@ permalink: /kb/182/Q182883/
 
 ## Q182883: Using SNA Server 2.11, 3.0, and 4.0 in Same Network
 
+{% raw %}
+
 	Article: Q182883
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,4.0
@@ -97,3 +99,5 @@ permalink: /kb/182/Q182883/
 	
 	=============================================================================
 	
+
+{% endraw %}

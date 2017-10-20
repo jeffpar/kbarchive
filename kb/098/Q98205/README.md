@@ -6,6 +6,8 @@ permalink: /kb/098/Q98205/
 
 ## Q98205: PC WFW: 3.0 Supplementary Modem Scripts &#91;5.25, 1.2 MB&#93;
 
+{% raw %}
+
 	Article: Q98205
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -138,3 +140,5 @@ permalink: /kb/098/Q98205/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/065/Q65701/
 
 ## Q65701: CV May Come Up Only in Monochrome with 8514/A Display Adapter
 
+{% raw %}
+
 	Article: Q65701
 	Product(s): See article
 	Version(s): 3.00 3.10
@@ -56,3 +58,5 @@ permalink: /kb/065/Q65701/
 	problem is not specifically caused by CodeView, a more sophisticated
 	video detection routine will determine what video adapter and monitor
 	are present without relying on the possibly inaccurate BIOS data.
+
+{% endraw %}

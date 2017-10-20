@@ -6,6 +6,8 @@ permalink: /kb/179/Q179929/
 
 ## Q179929: Games: Multiplayer Connection Types Are Not Available
 
+{% raw %}
+
 	Article: Q179929
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,2.0
@@ -66,3 +68,5 @@ permalink: /kb/179/Q179929/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140302/
 
 ## Q140302: FoxPro Advisor Magazine Articles May 1995
 
+{% raw %}
+
 	Article: Q140302
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50x 2.60 2.60a 3.00 | 2.00 2.5
@@ -182,3 +184,5 @@ permalink: /kb/140/Q140302/
 	
 	=============================================================================
 	
+
+{% endraw %}

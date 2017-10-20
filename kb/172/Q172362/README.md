@@ -6,6 +6,8 @@ permalink: /kb/172/Q172362/
 
 ## Q172362: Directory Replicator Service Fails to Start with Event 7000
 
+{% raw %}
+
 	Article: Q172362
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -68,3 +70,5 @@ permalink: /kb/172/Q172362/
 	
 	=============================================================================
 	
+
+{% endraw %}

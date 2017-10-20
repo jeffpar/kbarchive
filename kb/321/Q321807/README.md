@@ -6,6 +6,8 @@ permalink: /kb/321/Q321807/
 
 ## Q321807: Err Msg: 800a01ad' ActiveX Component Can't Create Object
 
+{% raw %}
+
 	Article: Q321807
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6
@@ -124,3 +126,5 @@ permalink: /kb/321/Q321807/
 	
 	=============================================================================
 	
+
+{% endraw %}

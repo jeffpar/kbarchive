@@ -6,6 +6,8 @@ permalink: /kb/226/Q226528/
 
 ## Q226528: Streets &amp; Trips 2000 Err Msg: Failed to Initialize - Terminating
 
+{% raw %}
+
 	Article: Q226528
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -438,3 +440,5 @@ permalink: /kb/226/Q226528/
 	
 	=============================================================================
 	
+
+{% endraw %}

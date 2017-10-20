@@ -6,6 +6,8 @@ permalink: /kb/255/Q255174/
 
 ## Q255174: SMS: Systems Management Server 2.0 SP1 ICP4 Client Hotfix Bundle
 
+{% raw %}
+
 	Article: Q255174
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0,2.0 SP1
@@ -402,3 +404,5 @@ permalink: /kb/255/Q255174/
 	
 	=============================================================================
 	
+
+{% endraw %}

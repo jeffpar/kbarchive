@@ -6,6 +6,8 @@ permalink: /kb/174/Q174795/
 
 ## Q174795: Cluster Configuration for BusLogic Controllers
 
+{% raw %}
+
 	Article: Q174795
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/174/Q174795/
 	
 	=============================================================================
 	
+
+{% endraw %}

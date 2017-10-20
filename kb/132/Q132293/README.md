@@ -6,6 +6,8 @@ permalink: /kb/132/Q132293/
 
 ## Q132293: Windows 95 Hangs with Two PCMCIA Network Adapters
 
+{% raw %}
+
 	Article: Q132293
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/132/Q132293/
 	
 	=============================================================================
 	
+
+{% endraw %}

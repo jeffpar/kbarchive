@@ -6,6 +6,8 @@ permalink: /kb/146/Q146445/
 
 ## Q146445: PRB: istream::seekg() Does Not Reset EOF State
 
+{% raw %}
+
 	Article: Q146445
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -92,3 +94,5 @@ permalink: /kb/146/Q146445/
 	
 	=============================================================================
 	
+
+{% endraw %}

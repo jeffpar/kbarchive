@@ -6,6 +6,8 @@ permalink: /kb/186/Q186604/
 
 ## Q186604: Terminal Server Client Error 193
 
+{% raw %}
+
 	Article: Q186604
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/186/Q186604/
 	
 	=============================================================================
 	
+
+{% endraw %}

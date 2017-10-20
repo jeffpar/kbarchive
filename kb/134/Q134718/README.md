@@ -6,6 +6,8 @@ permalink: /kb/134/Q134718/
 
 ## Q134718: Documentation for Package Redistribution is Incorrect
 
+{% raw %}
+
 	Article: Q134718
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -71,3 +73,5 @@ permalink: /kb/134/Q134718/
 	
 	=============================================================================
 	
+
+{% endraw %}

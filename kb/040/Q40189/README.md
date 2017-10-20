@@ -6,6 +6,8 @@ permalink: /kb/040/Q40189/
 
 ## Q40189: SADD Function Will Not Accept Concatenated or Quoted Strings
 
+{% raw %}
+
 	Article: Q40189
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -34,3 +36,5 @@ permalink: /kb/040/Q40189/
 	b$ = " under Microsoft QuickBASIC 3.00"
 	PRINT c$ + b$
 	PRINT SADD(c$ + b$)
+
+{% endraw %}

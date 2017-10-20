@@ -6,6 +6,8 @@ permalink: /kb/125/Q125309/
 
 ## Q125309: PRB: AllocMemoryDebug Gives Assertion or Trace Error on New&#91;0&#93;
 
+{% raw %}
+
 	Article: Q125309
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51
@@ -96,3 +98,5 @@ permalink: /kb/125/Q125309/
 	
 	=============================================================================
 	
+
+{% endraw %}

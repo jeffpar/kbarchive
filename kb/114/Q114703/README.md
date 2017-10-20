@@ -6,6 +6,8 @@ permalink: /kb/114/Q114703/
 
 ## Q114703: DEL &#42;.&#42; Through Gateway Services for NetWare Leaves Files
 
+{% raw %}
+
 	Article: Q114703
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -80,3 +82,5 @@ permalink: /kb/114/Q114703/
 	
 	=============================================================================
 	
+
+{% endraw %}

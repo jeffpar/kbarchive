@@ -6,6 +6,8 @@ permalink: /kb/246/Q246090/
 
 ## Q246090: Excessive LSASS CPU Usage with Multiple SMS Sites in Same Domain
 
+{% raw %}
+
 	Article: Q246090
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -74,3 +76,5 @@ permalink: /kb/246/Q246090/
 	
 	=============================================================================
 	
+
+{% endraw %}

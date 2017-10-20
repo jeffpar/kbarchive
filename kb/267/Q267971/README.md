@@ -6,6 +6,8 @@ permalink: /kb/267/Q267971/
 
 ## Q267971: SMS: The Library for Smsperf.dll Could Not Be Opened
 
+{% raw %}
+
 	Article: Q267971
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2,2.0 SP3
@@ -81,3 +83,5 @@ permalink: /kb/267/Q267971/
 	
 	=============================================================================
 	
+
+{% endraw %}

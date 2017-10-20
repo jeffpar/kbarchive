@@ -6,6 +6,8 @@ permalink: /kb/057/Q57928/
 
 ## Q57928: Named COMMON SHARED /block/ Can Be Continued onto Next Line
 
+{% raw %}
+
 	Article: Q57928
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -41,3 +43,5 @@ permalink: /kb/057/Q57928/
 	   COMMON SHARED uvar1, uvar2, uvar3, uvar4, uvar5, uvar6
 	   COMMON SHARED uvar7, uvar8, uvar9, uvar10, uvar11, uvar12
 	   COMMON SHARED uvar13, uvar14, uvar15, uvar16, uvar17, uvar18
+
+{% endraw %}

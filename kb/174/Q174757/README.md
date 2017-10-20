@@ -6,6 +6,8 @@ permalink: /kb/174/Q174757/
 
 ## Q174757: XADM: INS Service Is Not Removed After Removing All Newsfeeds
 
+{% raw %}
+
 	Article: Q174757
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -45,3 +47,5 @@ permalink: /kb/174/Q174757/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164856/
 
 ## Q164856: XCON: MTA Fails to Pick Up DN of Servers with Similar Site Names
 
+{% raw %}
+
 	Article: Q164856
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -63,3 +65,5 @@ permalink: /kb/164/Q164856/
 	
 	=============================================================================
 	
+
+{% endraw %}

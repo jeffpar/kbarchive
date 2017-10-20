@@ -6,6 +6,8 @@ permalink: /kb/155/Q155958/
 
 ## Q155958: PPT7: Saving Version 7.0 File in 4.0 Format Changes Slide Setup
 
+{% raw %}
+
 	Article: Q155958
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -54,3 +56,5 @@ permalink: /kb/155/Q155958/
 	
 	=============================================================================
 	
+
+{% endraw %}

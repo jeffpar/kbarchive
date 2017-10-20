@@ -6,6 +6,8 @@ permalink: /kb/136/Q136941/
 
 ## Q136941: Options Dialog Box Choices That Are Set Immediately
 
+{% raw %}
+
 	Article: Q136941
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -93,3 +95,5 @@ permalink: /kb/136/Q136941/
 	
 	=============================================================================
 	
+
+{% endraw %}

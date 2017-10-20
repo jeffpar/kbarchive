@@ -6,6 +6,8 @@ permalink: /kb/125/Q125634/
 
 ## Q125634: Printing to a File with a Network Printer
 
+{% raw %}
+
 	Article: Q125634
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/125/Q125634/
 	
 	=============================================================================
 	
+
+{% endraw %}

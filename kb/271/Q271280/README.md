@@ -6,6 +6,8 @@ permalink: /kb/271/Q271280/
 
 ## Q271280: Microsoft Reader: Cannot Download E-Books with Internet Explorer
 
+{% raw %}
+
 	Article: Q271280
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -66,3 +68,5 @@ permalink: /kb/271/Q271280/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153652/
 
 ## Q153652: Errors Occur on OS/2 Client Setup When Windows Path Is Bad
 
+{% raw %}
+
 	Article: Q153652
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -46,3 +48,5 @@ permalink: /kb/153/Q153652/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235856/
 
 ## Q235856: HOWTO: Read IBM 370 Data from a Binary File
 
+{% raw %}
+
 	Article: Q235856
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,1.1,2.0,4.0,5.0,6.0,7.0
@@ -303,3 +305,5 @@ permalink: /kb/235/Q235856/
 	
 	=============================================================================
 	
+
+{% endraw %}

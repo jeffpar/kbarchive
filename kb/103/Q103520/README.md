@@ -6,6 +6,8 @@ permalink: /kb/103/Q103520/
 
 ## Q103520: MS-DOS 6.2 Defrag Uses XMS Memory When Available
 
+{% raw %}
+
 	Article: Q103520
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -55,3 +57,5 @@ permalink: /kb/103/Q103520/
 	
 	=============================================================================
 	
+
+{% endraw %}

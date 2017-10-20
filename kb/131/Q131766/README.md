@@ -6,6 +6,8 @@ permalink: /kb/131/Q131766/
 
 ## Q131766: Description of ViSCA in Windows 95
 
+{% raw %}
+
 	Article: Q131766
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/131/Q131766/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/027/Q27925/
 
 ## Q27925: EGA and VGA Graphics Are Not Supported in OS/2 Protected Mode
 
+{% raw %}
+
 	Article: Q27925
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -25,3 +27,5 @@ permalink: /kb/027/Q27925/
 	If the application needs to talk to the hardware, it must go through a
 	device driver. There is currently not a device driver for EGA or VGA
 	graphics in OS/2 protected mode.
+
+{% endraw %}

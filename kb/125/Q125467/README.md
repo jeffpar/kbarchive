@@ -6,6 +6,8 @@ permalink: /kb/125/Q125467/
 
 ## Q125467: Frank Lloyd Wright: No Sound, But Sound OK in Other Programs
 
+{% raw %}
+
 	Article: Q125467
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,3.x
@@ -93,3 +95,5 @@ permalink: /kb/125/Q125467/
 	
 	=============================================================================
 	
+
+{% endraw %}

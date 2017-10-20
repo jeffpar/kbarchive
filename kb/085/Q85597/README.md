@@ -6,6 +6,8 @@ permalink: /kb/085/Q85597/
 
 ## Q85597: Setup Toolkit for Windows Compatible with Windows 3.0
 
+{% raw %}
+
 	Article: Q85597
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -43,3 +45,5 @@ permalink: /kb/085/Q85597/
 	
 	=============================================================================
 	
+
+{% endraw %}

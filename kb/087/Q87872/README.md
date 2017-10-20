@@ -6,6 +6,8 @@ permalink: /kb/087/Q87872/
 
 ## Q87872: NORMAL.DOT Grows Each Time Bookshelf Setup Is Run
 
+{% raw %}
+
 	Article: Q87872
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 edition,1993 edition
@@ -63,3 +65,5 @@ permalink: /kb/087/Q87872/
 	
 	=============================================================================
 	
+
+{% endraw %}

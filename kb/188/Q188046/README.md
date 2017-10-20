@@ -6,6 +6,8 @@ permalink: /kb/188/Q188046/
 
 ## Q188046: SMS: Program Group Control Logs &quot;Fatal error!&quot; Message
 
+{% raw %}
+
 	Article: Q188046
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -78,3 +80,5 @@ permalink: /kb/188/Q188046/
 	
 	=============================================================================
 	
+
+{% endraw %}

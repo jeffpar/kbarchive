@@ -6,6 +6,8 @@ permalink: /kb/273/Q273483/
 
 ## Q273483: PRB: Form.Show() Within WITH Block Prevents Releasing Modal Form
 
+{% raw %}
+
 	Article: Q273483
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -86,3 +88,5 @@ permalink: /kb/273/Q273483/
 	
 	=============================================================================
 	
+
+{% endraw %}

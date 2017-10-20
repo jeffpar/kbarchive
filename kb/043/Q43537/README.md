@@ -6,6 +6,8 @@ permalink: /kb/043/Q43537/
 
 ## Q43537: Critical Error during Spawn Will Lose Parent
 
+{% raw %}
+
 	Article: Q43537
 	Product(s): See article
 	Version(s): 5.10
@@ -44,3 +46,5 @@ permalink: /kb/043/Q43537/
 	but not return to the parent, hanging the system. An assembly language
 	program that simply calls DOS interrupt 4B to do the same thing will
 	work correctly under the same conditions.
+
+{% endraw %}

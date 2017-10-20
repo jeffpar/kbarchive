@@ -6,6 +6,8 @@ permalink: /kb/078/Q78830/
 
 ## Q78830: PC Ext: Reverse Carrier for Voice/Modem Switches
 
+{% raw %}
+
 	Article: Q78830
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.0b,3.2,3.2a,3.5
@@ -56,3 +58,5 @@ permalink: /kb/078/Q78830/
 	
 	=============================================================================
 	
+
+{% endraw %}

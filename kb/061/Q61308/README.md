@@ -6,6 +6,8 @@ permalink: /kb/061/Q61308/
 
 ## Q61308: /Fs Does Not Locate Error When #line Directive Is Specified
 
+{% raw %}
+
 	Article: Q61308
 	Product(s): See article
 	Version(s): 5.10 6.00 | 5.10 6.00
@@ -94,3 +96,5 @@ permalink: /kb/061/Q61308/
 	Microsoft has confirmed this to be a problem with C version 6.00. We
 	are researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

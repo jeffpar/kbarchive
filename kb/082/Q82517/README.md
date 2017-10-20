@@ -6,6 +6,8 @@ permalink: /kb/082/Q82517/
 
 ## Q82517: Using AutoCAD with Windows 3.1
 
+{% raw %}
+
 	Article: Q82517
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -86,3 +88,5 @@ permalink: /kb/082/Q82517/
 	
 	=============================================================================
 	
+
+{% endraw %}

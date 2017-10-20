@@ -6,6 +6,8 @@ permalink: /kb/173/Q173807/
 
 ## Q173807: XADM: Opening Folders with Long Names Stops Netscape and Simeon
 
+{% raw %}
+
 	Article: Q173807
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/173/Q173807/
 	
 	=============================================================================
 	
+
+{% endraw %}

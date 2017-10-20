@@ -6,6 +6,8 @@ permalink: /kb/156/Q156092/
 
 ## Q156092: How to Make Program Manager the Shell in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q156092
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -64,3 +66,5 @@ permalink: /kb/156/Q156092/
 	
 	=============================================================================
 	
+
+{% endraw %}

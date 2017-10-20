@@ -6,6 +6,8 @@ permalink: /kb/099/Q99273/
 
 ## Q99273: An Exercise in Setting/Checking File Permissions
 
+{% raw %}
+
 	Article: Q99273
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -147,3 +149,5 @@ permalink: /kb/099/Q99273/
 	
 	=============================================================================
 	
+
+{% endraw %}

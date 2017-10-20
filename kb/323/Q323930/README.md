@@ -6,6 +6,8 @@ permalink: /kb/323/Q323930/
 
 ## Q323930: Flight Simulator 2002: How to Import Aircraft from FS 2000
 
+{% raw %}
+
 	Article: Q323930
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/323/Q323930/
 	
 	=============================================================================
 	
+
+{% endraw %}

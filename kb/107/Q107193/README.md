@@ -6,6 +6,8 @@ permalink: /kb/107/Q107193/
 
 ## Q107193: Running IBM PC Support/400 on SNA Server
 
+{% raw %}
+
 	Article: Q107193
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -140,3 +142,5 @@ permalink: /kb/107/Q107193/
 	
 	=============================================================================
 	
+
+{% endraw %}

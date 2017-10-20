@@ -6,6 +6,8 @@ permalink: /kb/159/Q159541/
 
 ## Q159541: SMS: HelpDesk Chat Fails on Administrator on First Attempt
 
+{% raw %}
+
 	Article: Q159541
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -55,3 +57,5 @@ permalink: /kb/159/Q159541/
 	
 	=============================================================================
 	
+
+{% endraw %}

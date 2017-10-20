@@ -6,6 +6,8 @@ permalink: /kb/134/Q134776/
 
 ## Q134776: QAPlus for Windows Does Not Detect Network Properly
 
+{% raw %}
+
 	Article: Q134776
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -57,3 +59,5 @@ permalink: /kb/134/Q134776/
 	
 	=============================================================================
 	
+
+{% endraw %}

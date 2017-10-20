@@ -6,6 +6,8 @@ permalink: /kb/131/Q131119/
 
 ## Q131119: Compilers Supported by Visual FoxPro LCK
 
+{% raw %}
+
 	Article: Q131119
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -39,3 +41,5 @@ permalink: /kb/131/Q131119/
 	
 	=============================================================================
 	
+
+{% endraw %}

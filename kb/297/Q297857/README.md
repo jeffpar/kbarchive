@@ -6,6 +6,8 @@ permalink: /kb/297/Q297857/
 
 ## Q297857: SMS: French SMS 2.0 SP3 Contains an Incorrect Ccm.dll File
 
+{% raw %}
+
 	Article: Q297857
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -132,3 +134,5 @@ permalink: /kb/297/Q297857/
 	
 	=============================================================================
 	
+
+{% endraw %}

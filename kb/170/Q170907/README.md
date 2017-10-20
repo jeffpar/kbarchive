@@ -6,6 +6,8 @@ permalink: /kb/170/Q170907/
 
 ## Q170907: Err Msg: Explorer.exe - Exception: Access Violation (0xC0000005)
 
+{% raw %}
+
 	Article: Q170907
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -99,3 +101,5 @@ permalink: /kb/170/Q170907/
 	
 	=============================================================================
 	
+
+{% endraw %}

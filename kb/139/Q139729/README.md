@@ -6,6 +6,8 @@ permalink: /kb/139/Q139729/
 
 ## Q139729: FIX: Visual SourceSafe Cannot Associate File That Has 2 Periods
 
+{% raw %}
+
 	Article: Q139729
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0
@@ -71,3 +73,5 @@ permalink: /kb/139/Q139729/
 	
 	=============================================================================
 	
+
+{% endraw %}

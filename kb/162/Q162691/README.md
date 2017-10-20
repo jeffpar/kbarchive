@@ -6,6 +6,8 @@ permalink: /kb/162/Q162691/
 
 ## Q162691: WD97: Text Missing, Saving as &quot;Hide Everything But Summary&quot;
 
+{% raw %}
+
 	Article: Q162691
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/162/Q162691/
 	
 	=============================================================================
 	
+
+{% endraw %}

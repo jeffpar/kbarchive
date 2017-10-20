@@ -6,6 +6,8 @@ permalink: /kb/086/Q86908/
 
 ## Q86908: FoxPro System Information Function
 
+{% raw %}
+
 	Article: Q86908
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.50 2.50a | 2.50 2.50a 3.0
@@ -128,3 +130,5 @@ permalink: /kb/086/Q86908/
 	
 	=============================================================================
 	
+
+{% endraw %}

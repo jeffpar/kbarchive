@@ -6,6 +6,8 @@ permalink: /kb/135/Q135453/
 
 ## Q135453: Winsock Application Hangs Using TCP/IP-32
 
+{% raw %}
+
 	Article: Q135453
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.11a,3.11b
@@ -48,3 +50,5 @@ permalink: /kb/135/Q135453/
 	
 	=============================================================================
 	
+
+{% endraw %}

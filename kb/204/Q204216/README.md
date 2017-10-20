@@ -6,6 +6,8 @@ permalink: /kb/204/Q204216/
 
 ## Q204216: XCLN: Schedule+ 1.0a Does Not Refresh Free and Busy Time
 
+{% raw %}
+
 	Article: Q204216
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/204/Q204216/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249874/
 
 ## Q249874: &quot;NBTSTAT -A&quot; Command Does Not Resolve Computer Name with DNS
 
+{% raw %}
+
 	Article: Q249874
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/249/Q249874/
 	
 	=============================================================================
 	
+
+{% endraw %}

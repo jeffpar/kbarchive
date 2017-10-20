@@ -6,6 +6,8 @@ permalink: /kb/179/Q179347/
 
 ## Q179347: &quot;Fatal Exception 0E&quot; Error Message When You Start Windows 95
 
+{% raw %}
+
 	Article: Q179347
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -94,3 +96,5 @@ permalink: /kb/179/Q179347/
 	
 	=============================================================================
 	
+
+{% endraw %}

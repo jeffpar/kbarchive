@@ -6,6 +6,8 @@ permalink: /kb/215/Q215129/
 
 ## Q215129: SMS: Remote Control Agent Fails to Upgrade from Beta to RTM
 
+{% raw %}
+
 	Article: Q215129
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -87,3 +89,5 @@ permalink: /kb/215/Q215129/
 	
 	=============================================================================
 	
+
+{% endraw %}

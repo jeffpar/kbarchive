@@ -6,6 +6,8 @@ permalink: /kb/311/Q311396/
 
 ## Q311396: XADM: Error -1022 and -1032 After Restore of Directory
 
+{% raw %}
+
 	Article: Q311396
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -154,3 +156,5 @@ permalink: /kb/311/Q311396/
 	
 	=============================================================================
 	
+
+{% endraw %}

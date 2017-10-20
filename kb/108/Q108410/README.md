@@ -6,6 +6,8 @@ permalink: /kb/108/Q108410/
 
 ## Q108410: FIX: Entire DLLEXPORTed Arrays Cannot Be Written Implicitly
 
+{% raw %}
+
 	Article: Q108410
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -115,3 +117,5 @@ permalink: /kb/108/Q108410/
 	
 	=============================================================================
 	
+
+{% endraw %}

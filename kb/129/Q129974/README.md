@@ -6,6 +6,8 @@ permalink: /kb/129/Q129974/
 
 ## Q129974: BUG: Winsock--Lost FD_WRITE Notifications
 
+{% raw %}
+
 	Article: Q129974
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -89,3 +91,5 @@ permalink: /kb/129/Q129974/
 	
 	=============================================================================
 	
+
+{% endraw %}

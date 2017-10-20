@@ -6,6 +6,8 @@ permalink: /kb/174/Q174571/
 
 ## Q174571: INFO: Making the Alerter Service Automatic during Unattended Set
 
+{% raw %}
+
 	Article: Q174571
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/174/Q174571/
 	
 	=============================================================================
 	
+
+{% endraw %}

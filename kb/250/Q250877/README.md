@@ -6,6 +6,8 @@ permalink: /kb/250/Q250877/
 
 ## Q250877: Problem Changing Domains Without Rebooting Within 10 Minutes
 
+{% raw %}
+
 	Article: Q250877
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/250/Q250877/
 	
 	=============================================================================
 	
+
+{% endraw %}

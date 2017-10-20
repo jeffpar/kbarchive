@@ -6,6 +6,8 @@ permalink: /kb/231/Q231942/
 
 ## Q231942: Cannot Undock Notebook Computer with LS-120 Removable Drive
 
+{% raw %}
+
 	Article: Q231942
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0,2.1,2.5
@@ -91,3 +93,5 @@ permalink: /kb/231/Q231942/
 	
 	=============================================================================
 	
+
+{% endraw %}

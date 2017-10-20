@@ -6,6 +6,8 @@ permalink: /kb/194/Q194609/
 
 ## Q194609: HOWTO: Pass Array of UDTs with Variable Length Strings to C/C++
 
+{% raw %}
+
 	Article: Q194609
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0; winnt:5.0,6.0
@@ -206,3 +208,5 @@ permalink: /kb/194/Q194609/
 	
 	=============================================================================
 	
+
+{% endraw %}

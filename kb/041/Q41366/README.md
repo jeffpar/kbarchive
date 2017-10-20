@@ -6,6 +6,8 @@ permalink: /kb/041/Q41366/
 
 ## Q41366: QuickC 2.00 README.DOC: Installing on a Floppy-Disk System
 
+{% raw %}
+
 	Article: Q41366
 	Product(s): See article
 	Version(s): 2.00
@@ -28,3 +30,5 @@ permalink: /kb/041/Q41366/
 	using the Make menu Edit Program List command, or you can use the LIB
 	program to add PGCHART to the combined library after you finish
 	installing QuickC.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166220/
 
 ## Q166220: Print Session Font List Should Have Truetype and Printer Fonts
 
+{% raw %}
+
 	Article: Q166220
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -53,3 +55,5 @@ permalink: /kb/166/Q166220/
 	
 	=============================================================================
 	
+
+{% endraw %}

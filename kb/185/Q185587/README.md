@@ -6,6 +6,8 @@ permalink: /kb/185/Q185587/
 
 ## Q185587: Guide To Windows NT 4.0 Profiles and Policies (Part 2 of 6)
 
+{% raw %}
+
 	Article: Q185587
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0
@@ -1052,3 +1054,5 @@ permalink: /kb/185/Q185587/
 	
 	=============================================================================
 	
+
+{% endraw %}

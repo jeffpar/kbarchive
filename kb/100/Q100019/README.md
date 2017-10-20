@@ -6,6 +6,8 @@ permalink: /kb/100/Q100019/
 
 ## Q100019: How to Score Points in SkiFree
 
+{% raw %}
+
 	Article: Q100019
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -97,3 +99,5 @@ permalink: /kb/100/Q100019/
 	
 	=============================================================================
 	
+
+{% endraw %}

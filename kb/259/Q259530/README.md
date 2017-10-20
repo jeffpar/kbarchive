@@ -6,6 +6,8 @@ permalink: /kb/259/Q259530/
 
 ## Q259530: Error Message Connecting to Your MMS Server by an HTTP Port
 
+{% raw %}
+
 	Article: Q259530
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -82,3 +84,5 @@ permalink: /kb/259/Q259530/
 	
 	=============================================================================
 	
+
+{% endraw %}

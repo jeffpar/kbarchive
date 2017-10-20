@@ -6,6 +6,8 @@ permalink: /kb/254/Q254646/
 
 ## Q254646: XFOR: URL Path Result When Converting Notes Doclink
 
+{% raw %}
+
 	Article: Q254646
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -50,3 +52,5 @@ permalink: /kb/254/Q254646/
 	
 	=============================================================================
 	
+
+{% endraw %}

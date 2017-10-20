@@ -6,6 +6,8 @@ permalink: /kb/104/Q104280/
 
 ## Q104280: FFAPI: Command Line Options for Remote FFAPI Programs
 
+{% raw %}
+
 	Article: Q104280
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -279,3 +281,5 @@ permalink: /kb/104/Q104280/
 	
 	=============================================================================
 	
+
+{% endraw %}

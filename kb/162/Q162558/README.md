@@ -6,6 +6,8 @@ permalink: /kb/162/Q162558/
 
 ## Q162558: SMS: Job Status MIF Processing Slow on Large JobDetails Table
 
+{% raw %}
+
 	Article: Q162558
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,6.0,6.5
@@ -65,3 +67,5 @@ permalink: /kb/162/Q162558/
 	
 	=============================================================================
 	
+
+{% endraw %}

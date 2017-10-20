@@ -6,6 +6,8 @@ permalink: /kb/253/Q253010/
 
 ## Q253010: FIX: Busy Connections Leave Cursors Open
 
+{% raw %}
+
 	Article: Q253010
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1,2.1 (GA),2.1 SP1,2.1 SP2,2.5,3.6,3.7
@@ -299,3 +301,5 @@ permalink: /kb/253/Q253010/
 	
 	=============================================================================
 	
+
+{% endraw %}

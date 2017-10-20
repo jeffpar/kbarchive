@@ -6,6 +6,8 @@ permalink: /kb/158/Q158815/
 
 ## Q158815: FP: Custom Confirmation Page Returns Field Name Adjacent to Data
 
+{% raw %}
+
 	Article: Q158815
 	Product(s): Word Front Page
 	Version(s): ; WINDOWS:1.1
@@ -64,3 +66,5 @@ permalink: /kb/158/Q158815/
 	
 	=============================================================================
 	
+
+{% endraw %}

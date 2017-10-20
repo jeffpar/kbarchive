@@ -6,6 +6,8 @@ permalink: /kb/325/Q325998/
 
 ## Q325998: Age of Empires II: Mouse Pointer Not Visible on Game Menu
 
+{% raw %}
+
 	Article: Q325998
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -183,3 +185,5 @@ permalink: /kb/325/Q325998/
 	
 	=============================================================================
 	
+
+{% endraw %}

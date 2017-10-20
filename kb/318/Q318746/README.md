@@ -6,6 +6,8 @@ permalink: /kb/318/Q318746/
 
 ## Q318746: XADM: Err Mssg: Error 123: The Filename, Directory Name, or ...
 
+{% raw %}
+
 	Article: Q318746
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -115,3 +117,5 @@ permalink: /kb/318/Q318746/
 	
 	=============================================================================
 	
+
+{% endraw %}

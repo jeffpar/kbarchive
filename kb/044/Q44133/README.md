@@ -6,6 +6,8 @@ permalink: /kb/044/Q44133/
 
 ## Q44133: Modifying a QuickC 2.00 Make File to Run MAKE
 
+{% raw %}
+
 	Article: Q44133
 	Product(s): See article
 	Version(s): 1.00   | 1.10
@@ -44,3 +46,5 @@ permalink: /kb/044/Q44133/
 	3. Remove any compiler switches in the make file that cl will not
 	   recognize. To eliminate this problem, turn off incremental compile
 	   in the QuickC environment prior to making the make file.
+
+{% endraw %}

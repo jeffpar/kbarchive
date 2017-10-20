@@ -6,6 +6,8 @@ permalink: /kb/272/Q272339/
 
 ## Q272339: Plus Game Pack: Black/Blue Screen When You Minimize/Restore Game
 
+{% raw %}
+
 	Article: Q272339
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/272/Q272339/
 	
 	=============================================================================
 	
+
+{% endraw %}

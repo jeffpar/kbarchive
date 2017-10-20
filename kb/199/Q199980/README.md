@@ -6,6 +6,8 @@ permalink: /kb/199/Q199980/
 
 ## Q199980: XFOR: Err Msg: Could not Migrate MMF File for Account
 
+{% raw %}
+
 	Article: Q199980
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -68,3 +70,5 @@ permalink: /kb/199/Q199980/
 	
 	=============================================================================
 	
+
+{% endraw %}

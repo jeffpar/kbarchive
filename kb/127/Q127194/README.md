@@ -6,6 +6,8 @@ permalink: /kb/127/Q127194/
 
 ## Q127194: FIX: CMap Template Class Leaks Non-Primitive KEY Objects
 
+{% raw %}
+
 	Article: Q127194
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0
@@ -90,3 +92,5 @@ permalink: /kb/127/Q127194/
 	
 	=============================================================================
 	
+
+{% endraw %}

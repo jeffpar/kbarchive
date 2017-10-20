@@ -6,6 +6,8 @@ permalink: /kb/129/Q129989/
 
 ## Q129989: MS WIN NT RESOURCE GUIDE 2ED  V1 Corrections and Comments
 
+{% raw %}
+
 	Article: Q129989
 	Product(s): Microsoft Press
 	Version(s): 
@@ -116,3 +118,5 @@ permalink: /kb/129/Q129989/
 	
 	=============================================================================
 	
+
+{% endraw %}

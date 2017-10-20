@@ -6,6 +6,8 @@ permalink: /kb/171/Q171597/
 
 ## Q171597: WD97: Banyan Vines Drives Do Not Appear in Word Drive List
 
+{% raw %}
+
 	Article: Q171597
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97; winnt:3.51
@@ -90,3 +92,5 @@ permalink: /kb/171/Q171597/
 	
 	=============================================================================
 	
+
+{% endraw %}

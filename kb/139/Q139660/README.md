@@ -6,6 +6,8 @@ permalink: /kb/139/Q139660/
 
 ## Q139660: Magic School Bus: Requires 13-Inch Monitor or Larger on Mac
 
+{% raw %}
+
 	Article: Q139660
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0
@@ -70,3 +72,5 @@ permalink: /kb/139/Q139660/
 	
 	=============================================================================
 	
+
+{% endraw %}

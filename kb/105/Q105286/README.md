@@ -6,6 +6,8 @@ permalink: /kb/105/Q105286/
 
 ## Q105286: HOWTO: Clean Up Temporary MFC Object in _USRDLL DLLs
 
+{% raw %}
+
 	Article: Q105286
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -160,3 +162,5 @@ permalink: /kb/105/Q105286/
 	
 	=============================================================================
 	
+
+{% endraw %}

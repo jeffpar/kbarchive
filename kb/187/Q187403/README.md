@@ -6,6 +6,8 @@ permalink: /kb/187/Q187403/
 
 ## Q187403: Reinstalling the Client Chooses the Incorrect Path
 
+{% raw %}
+
 	Article: Q187403
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -54,3 +56,5 @@ permalink: /kb/187/Q187403/
 	
 	=============================================================================
 	
+
+{% endraw %}

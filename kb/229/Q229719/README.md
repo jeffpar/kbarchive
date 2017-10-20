@@ -6,6 +6,8 @@ permalink: /kb/229/Q229719/
 
 ## Q229719: NvRunCmd Passes Wrong Data When Certain Programs Are Started
 
+{% raw %}
+
 	Article: Q229719
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2
@@ -81,3 +83,5 @@ permalink: /kb/229/Q229719/
 	
 	=============================================================================
 	
+
+{% endraw %}

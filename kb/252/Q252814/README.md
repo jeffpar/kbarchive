@@ -6,6 +6,8 @@ permalink: /kb/252/Q252814/
 
 ## Q252814: XCLN: Posting to a PF Using Send As Doesn't Work as Expected
 
+{% raw %}
+
 	Article: Q252814
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -85,3 +87,5 @@ permalink: /kb/252/Q252814/
 	
 	=============================================================================
 	
+
+{% endraw %}

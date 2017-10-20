@@ -6,6 +6,8 @@ permalink: /kb/147/Q147241/
 
 ## Q147241: HP Design Jet 650C Prints Large HPGL/2 Files Slowly
 
+{% raw %}
+
 	Article: Q147241
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.5,3.51
@@ -60,3 +62,5 @@ permalink: /kb/147/Q147241/
 	
 	=============================================================================
 	
+
+{% endraw %}

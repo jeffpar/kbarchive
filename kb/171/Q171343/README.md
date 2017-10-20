@@ -6,6 +6,8 @@ permalink: /kb/171/Q171343/
 
 ## Q171343: FP: How to Edit the List of Servers in FrontPage Explorer
 
+{% raw %}
+
 	Article: Q171343
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97,macintosh:1.0
@@ -108,3 +110,5 @@ permalink: /kb/171/Q171343/
 	
 	=============================================================================
 	
+
+{% endraw %}

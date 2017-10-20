@@ -6,6 +6,8 @@ permalink: /kb/102/Q102640/
 
 ## Q102640: The &quot;Segment Load Failure&quot; Error Message
 
+{% raw %}
+
 	Article: Q102640
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -80,3 +82,5 @@ permalink: /kb/102/Q102640/
 	
 	=============================================================================
 	
+
+{% endraw %}

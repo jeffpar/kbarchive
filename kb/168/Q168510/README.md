@@ -6,6 +6,8 @@ permalink: /kb/168/Q168510/
 
 ## Q168510: SMS: Event ID 330 Occurs When Attempting to Compress Package
 
+{% raw %}
+
 	Article: Q168510
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -82,3 +84,5 @@ permalink: /kb/168/Q168510/
 	
 	=============================================================================
 	
+
+{% endraw %}

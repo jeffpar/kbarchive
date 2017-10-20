@@ -6,6 +6,8 @@ permalink: /kb/171/Q171718/
 
 ## Q171718: FP: Editing HTML on Page w/Included Image Map Returns Error
 
+{% raw %}
+
 	Article: Q171718
 	Product(s): Word Front Page
 	Version(s): windows:97; macintosh:1.0
@@ -87,3 +89,5 @@ permalink: /kb/171/Q171718/
 	
 	=============================================================================
 	
+
+{% endraw %}

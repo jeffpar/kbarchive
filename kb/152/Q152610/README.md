@@ -6,6 +6,8 @@ permalink: /kb/152/Q152610/
 
 ## Q152610: Compression Agent Restarts Continuously on PCMCIA Drives
 
+{% raw %}
+
 	Article: Q152610
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/152/Q152610/
 	
 	=============================================================================
 	
+
+{% endraw %}

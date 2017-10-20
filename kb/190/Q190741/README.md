@@ -6,6 +6,8 @@ permalink: /kb/190/Q190741/
 
 ## Q190741: HOWTO: Get User Information Using ADSI
 
+{% raw %}
+
 	Article: Q190741
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0; winnt:2.5
@@ -260,3 +262,5 @@ permalink: /kb/190/Q190741/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/200/Q200812/
 
 ## Q200812: Chat MMC is Unable to Save View with Two or More Expanded Server
 
+{% raw %}
+
 	Article: Q200812
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -43,3 +45,5 @@ permalink: /kb/200/Q200812/
 	
 	=============================================================================
 	
+
+{% endraw %}

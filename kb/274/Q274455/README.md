@@ -6,6 +6,8 @@ permalink: /kb/274/Q274455/
 
 ## Q274455: MSN Explorer Setup Or Update Fails When Not Enough Disk Space
 
+{% raw %}
+
 	Article: Q274455
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -57,3 +59,5 @@ permalink: /kb/274/Q274455/
 	
 	=============================================================================
 	
+
+{% endraw %}

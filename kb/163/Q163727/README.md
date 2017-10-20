@@ -6,6 +6,8 @@ permalink: /kb/163/Q163727/
 
 ## Q163727: XADM: IMC Logs Event ID 1008
 
+{% raw %}
+
 	Article: Q163727
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -56,3 +58,5 @@ permalink: /kb/163/Q163727/
 	
 	=============================================================================
 	
+
+{% endraw %}

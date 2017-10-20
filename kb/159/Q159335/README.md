@@ -6,6 +6,8 @@ permalink: /kb/159/Q159335/
 
 ## Q159335: XFOR: IMC Perfmon Counters Available Only When IMC is Running
 
+{% raw %}
+
 	Article: Q159335
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -41,3 +43,5 @@ permalink: /kb/159/Q159335/
 	
 	=============================================================================
 	
+
+{% endraw %}

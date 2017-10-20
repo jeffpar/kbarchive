@@ -6,6 +6,8 @@ permalink: /kb/234/Q234212/
 
 ## Q234212: HOWTO: Insert Line into Text File Using Low-level File Functions
 
+{% raw %}
+
 	Article: Q234212
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0
@@ -91,3 +93,5 @@ permalink: /kb/234/Q234212/
 	
 	=============================================================================
 	
+
+{% endraw %}

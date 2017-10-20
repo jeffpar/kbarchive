@@ -6,6 +6,8 @@ permalink: /kb/140/Q140859/
 
 ## Q140859: TCP/IP Routing Basics for Windows NT
 
+{% raw %}
+
 	Article: Q140859
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.11,3.5,3.51,4.0,4.0a
@@ -213,3 +215,5 @@ permalink: /kb/140/Q140859/
 	
 	=============================================================================
 	
+
+{% endraw %}

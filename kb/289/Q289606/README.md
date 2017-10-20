@@ -6,6 +6,8 @@ permalink: /kb/289/Q289606/
 
 ## Q289606: XGEN: Exchange Server 5.5 Post-SP4 CDO Fixes
 
+{% raw %}
+
 	Article: Q289606
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -100,3 +102,5 @@ permalink: /kb/289/Q289606/
 	
 	=============================================================================
 	
+
+{% endraw %}

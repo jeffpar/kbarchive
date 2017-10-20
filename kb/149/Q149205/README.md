@@ -6,6 +6,8 @@ permalink: /kb/149/Q149205/
 
 ## Q149205: XADM: Msg: Setup Is Searching for Installed Components
 
+{% raw %}
+
 	Article: Q149205
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -81,3 +83,5 @@ permalink: /kb/149/Q149205/
 	
 	=============================================================================
 	
+
+{% endraw %}

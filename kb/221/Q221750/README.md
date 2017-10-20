@@ -6,6 +6,8 @@ permalink: /kb/221/Q221750/
 
 ## Q221750: FIX: Upsizing to SQL 7.0 with Currency Type Fails
 
+{% raw %}
+
 	Article: Q221750
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,6.0
@@ -69,3 +71,5 @@ permalink: /kb/221/Q221750/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40358/
 
 ## Q40358: Bit-Shift Function in C
 
+{% raw %}
+
 	Article: Q40358
 	Product(s): See article
 	Version(s): 5.10    | 5.10
@@ -22,3 +24,5 @@ permalink: /kb/040/Q40358/
 	
 	Use the _rotl and _rotr functions in the C Runtime Library. These
 	are described in the "Microsoft C Run-Time Library Reference."
+
+{% endraw %}

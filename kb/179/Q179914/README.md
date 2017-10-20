@@ -6,6 +6,8 @@ permalink: /kb/179/Q179914/
 
 ## Q179914: BUG: Terminal Font at 6 Point Size in List Box Grows in Size
 
+{% raw %}
+
 	Article: Q179914
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6,2.6a,3.0,3.0b,5.0,5.0a
@@ -175,3 +177,5 @@ permalink: /kb/179/Q179914/
 	
 	=============================================================================
 	
+
+{% endraw %}

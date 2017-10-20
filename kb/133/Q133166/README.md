@@ -6,6 +6,8 @@ permalink: /kb/133/Q133166/
 
 ## Q133166: Encarta '95 Edition: Msetup.txt Contents
 
+{% raw %}
+
 	Article: Q133166
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition
@@ -98,3 +100,5 @@ permalink: /kb/133/Q133166/
 	
 	=============================================================================
 	
+
+{% endraw %}

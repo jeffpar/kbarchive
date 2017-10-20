@@ -6,6 +6,8 @@ permalink: /kb/261/Q261124/
 
 ## Q261124: FS2000: Vocal Instructions Are Not Available in Tutorial Flights
 
+{% raw %}
+
 	Article: Q261124
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -45,3 +47,5 @@ permalink: /kb/261/Q261124/
 	
 	=============================================================================
 	
+
+{% endraw %}

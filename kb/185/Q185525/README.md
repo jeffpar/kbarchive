@@ -6,6 +6,8 @@ permalink: /kb/185/Q185525/
 
 ## Q185525: WD97: Opening Text Only Files Changes Right and Left Margins
 
+{% raw %}
+
 	Article: Q185525
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -114,3 +116,5 @@ permalink: /kb/185/Q185525/
 	
 	=============================================================================
 	
+
+{% endraw %}

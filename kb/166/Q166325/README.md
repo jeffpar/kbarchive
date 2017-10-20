@@ -6,6 +6,8 @@ permalink: /kb/166/Q166325/
 
 ## Q166325: INFO: Visual Basic 4.0 Does Not Include a Win32 API Help File
 
+{% raw %}
+
 	Article: Q166325
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/166/Q166325/
 	
 	=============================================================================
 	
+
+{% endraw %}

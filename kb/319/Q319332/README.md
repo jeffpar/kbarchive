@@ -6,6 +6,8 @@ permalink: /kb/319/Q319332/
 
 ## Q319332: Error Message: An Error Occurred Calling DllRegisterServer
 
+{% raw %}
+
 	Article: Q319332
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -123,3 +125,5 @@ permalink: /kb/319/Q319332/
 	
 	=============================================================================
 	
+
+{% endraw %}

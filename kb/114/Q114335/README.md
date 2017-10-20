@@ -6,6 +6,8 @@ permalink: /kb/114/Q114335/
 
 ## Q114335: Deleting Outdated Registry Trees for Fortran or Visual C++
 
+{% raw %}
+
 	Article: Q114335
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,2.1,4.0
@@ -68,3 +70,5 @@ permalink: /kb/114/Q114335/
 	
 	=============================================================================
 	
+
+{% endraw %}

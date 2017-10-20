@@ -6,6 +6,8 @@ permalink: /kb/060/Q60751/
 
 ## Q60751: Storage Types of Integer Constants Changed in C Version 6.00
 
+{% raw %}
+
 	Article: Q60751
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -76,3 +78,5 @@ permalink: /kb/060/Q60751/
 	   or U:  unsigned int, unsigned long int; suffixed by the letter l or
 	   L: long int, unsigned long int; suffixed by both the letters u or U
 	   and l or L: unsigned long int.
+
+{% endraw %}

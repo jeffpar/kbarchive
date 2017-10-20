@@ -6,6 +6,8 @@ permalink: /kb/086/Q86553/
 
 ## Q86553: MHS: How the Gateway Communicates with the MHS World
 
+{% raw %}
+
 	Article: Q86553
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -42,3 +44,5 @@ permalink: /kb/086/Q86553/
 	
 	=============================================================================
 	
+
+{% endraw %}

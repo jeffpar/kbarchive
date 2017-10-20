@@ -6,6 +6,8 @@ permalink: /kb/299/Q299427/
 
 ## Q299427: Users Cannot Reach or Resolve the Passport Login Server
 
+{% raw %}
+
 	Article: Q299427
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -54,3 +56,5 @@ permalink: /kb/299/Q299427/
 	
 	=============================================================================
 	
+
+{% endraw %}

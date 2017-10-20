@@ -6,6 +6,8 @@ permalink: /kb/102/Q102300/
 
 ## Q102300: X400: Retaining Addresses When Reinstalling Gateway
 
+{% raw %}
+
 	Article: Q102300
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0,3.2
@@ -76,3 +78,5 @@ permalink: /kb/102/Q102300/
 	
 	=============================================================================
 	
+
+{% endraw %}

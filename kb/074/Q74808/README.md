@@ -6,6 +6,8 @@ permalink: /kb/074/Q74808/
 
 ## Q74808: How Display Drivers Use Shadow RAM
 
+{% raw %}
+
 	Article: Q74808
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1,3.11
@@ -93,3 +95,5 @@ permalink: /kb/074/Q74808/
 	
 	=============================================================================
 	
+
+{% endraw %}

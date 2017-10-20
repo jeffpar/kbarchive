@@ -6,6 +6,8 @@ permalink: /kb/169/Q169501/
 
 ## Q169501: How to Install Windows 95 from a Hard Disk
 
+{% raw %}
+
 	Article: Q169501
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -109,3 +111,5 @@ permalink: /kb/169/Q169501/
 	
 	=============================================================================
 	
+
+{% endraw %}

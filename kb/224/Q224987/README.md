@@ -6,6 +6,8 @@ permalink: /kb/224/Q224987/
 
 ## Q224987: XFOR: NDR on Message Sent from Eastern European Outlook
 
+{% raw %}
+
 	Article: Q224987
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:8.0,8.01,8.02,8.03,8.5; winnt:5.0
@@ -159,3 +161,5 @@ permalink: /kb/224/Q224987/
 	
 	=============================================================================
 	
+
+{% endraw %}

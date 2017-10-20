@@ -6,6 +6,8 @@ permalink: /kb/050/Q50593/
 
 ## Q50593: Using OS/2 LAN Manager Alerts
 
+{% raw %}
+
 	Article: Q50593
 	Product(s): Microsoft LAN Manager
 	Version(s): 1.0,1.1,2.0,2.1,2.1a,2.2
@@ -79,3 +81,5 @@ permalink: /kb/050/Q50593/
 	
 	=============================================================================
 	
+
+{% endraw %}

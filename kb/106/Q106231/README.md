@@ -6,6 +6,8 @@ permalink: /kb/106/Q106231/
 
 ## Q106231: Windows Sound System 2.0 Disk Dir List (3.5 inch, 1.44 MB)
 
+{% raw %}
+
 	Article: Q106231
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -402,3 +404,5 @@ permalink: /kb/106/Q106231/
 	
 	=============================================================================
 	
+
+{% endraw %}

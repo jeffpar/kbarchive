@@ -6,6 +6,8 @@ permalink: /kb/170/Q170517/
 
 ## Q170517: Cannot Log on Using IPX After Installing SP3 on Windows NT 4.0
 
+{% raw %}
+
 	Article: Q170517
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0,3.11,4.0
@@ -121,3 +123,5 @@ permalink: /kb/170/Q170517/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141326/
 
 ## Q141326: Multimedia Programs: Screen Turns Black or Colors are Mottled
 
+{% raw %}
+
 	Article: Q141326
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,3.x
@@ -64,3 +66,5 @@ permalink: /kb/141/Q141326/
 	
 	=============================================================================
 	
+
+{% endraw %}

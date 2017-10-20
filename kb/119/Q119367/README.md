@@ -6,6 +6,8 @@ permalink: /kb/119/Q119367/
 
 ## Q119367: Error When Printing PageMaker 5.0 File to QMS 860 Printer
 
+{% raw %}
+
 	Article: Q119367
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/119/Q119367/
 	
 	=============================================================================
 	
+
+{% endraw %}

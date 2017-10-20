@@ -6,6 +6,8 @@ permalink: /kb/195/Q195930/
 
 ## Q195930: Memory Usage by MS-DOS Application Steadily Increases
 
+{% raw %}
+
 	Article: Q195930
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -62,3 +64,5 @@ permalink: /kb/195/Q195930/
 	
 	=============================================================================
 	
+
+{% endraw %}

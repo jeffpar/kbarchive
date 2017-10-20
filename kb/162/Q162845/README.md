@@ -6,6 +6,8 @@ permalink: /kb/162/Q162845/
 
 ## Q162845: Windows NT 3.51 WINS Admin Err Msg: The Parameter Is Incorrect
 
+{% raw %}
+
 	Article: Q162845
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -90,3 +92,5 @@ permalink: /kb/162/Q162845/
 	
 	=============================================================================
 	
+
+{% endraw %}

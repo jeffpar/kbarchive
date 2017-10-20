@@ -6,6 +6,8 @@ permalink: /kb/170/Q170345/
 
 ## Q170345: Open Database Connectivity (ODBC) 3.0 Service Pack 1 Fixlist
 
+{% raw %}
+
 	Article: Q170345
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/170/Q170345/
 	
 	=============================================================================
 	
+
+{% endraw %}

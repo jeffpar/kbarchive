@@ -6,6 +6,8 @@ permalink: /kb/197/Q197433/
 
 ## Q197433: WD97: Mail Merge Attached Envelope Does Not Create Bar Code
 
+{% raw %}
+
 	Article: Q197433
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,7 +67,7 @@ permalink: /kb/197/Q197433/
 	
 	  Use the following example:
 	
-	  {BARCODE \u {mergefield zipcode} }
+	  {BARCODE \u {mergefield zipcode}}
 	
 	  where zipcode is the mergefield that contains the postal code.
 	
@@ -84,3 +86,5 @@ permalink: /kb/197/Q197433/
 	
 	=============================================================================
 	
+
+{% endraw %}

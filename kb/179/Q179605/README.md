@@ -6,6 +6,8 @@ permalink: /kb/179/Q179605/
 
 ## Q179605: PRB: Cannot Quit VFP When Previewing Report in a DESKTOP Window
 
+{% raw %}
+
 	Article: Q179605
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -79,3 +81,5 @@ permalink: /kb/179/Q179605/
 	
 	=============================================================================
 	
+
+{% endraw %}

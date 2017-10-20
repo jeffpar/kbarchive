@@ -6,6 +6,8 @@ permalink: /kb/167/Q167197/
 
 ## Q167197: XFOR: Using Imcext.dll May Incorrectly Format Message Headers
 
+{% raw %}
+
 	Article: Q167197
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/167/Q167197/
 	
 	=============================================================================
 	
+
+{% endraw %}

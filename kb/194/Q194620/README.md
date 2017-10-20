@@ -6,6 +6,8 @@ permalink: /kb/194/Q194620/
 
 ## Q194620: I_DOTLESS_SMALL in PDF Always Maps to Space
 
+{% raw %}
+
 	Article: Q194620
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1
@@ -75,3 +77,5 @@ permalink: /kb/194/Q194620/
 	
 	=============================================================================
 	
+
+{% endraw %}

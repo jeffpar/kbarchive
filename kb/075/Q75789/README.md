@@ -6,6 +6,8 @@ permalink: /kb/075/Q75789/
 
 ## Q75789: Setup Hangs on Uninstall Disk with JRAM Board Installed
 
+{% raw %}
+
 	Article: Q75789
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -51,3 +53,5 @@ permalink: /kb/075/Q75789/
 	
 	=============================================================================
 	
+
+{% endraw %}

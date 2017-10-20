@@ -6,6 +6,8 @@ permalink: /kb/142/Q142378/
 
 ## Q142378: Access Number Problem If Cancel Selected During Signup
 
+{% raw %}
+
 	Article: Q142378
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5,2.6
@@ -56,3 +58,5 @@ permalink: /kb/142/Q142378/
 	
 	=============================================================================
 	
+
+{% endraw %}

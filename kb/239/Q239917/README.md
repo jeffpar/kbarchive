@@ -6,6 +6,8 @@ permalink: /kb/239/Q239917/
 
 ## Q239917: Windows NT Server 4.0 Terminal Server Edition and DCOM
 
+{% raw %}
+
 	Article: Q239917
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4
@@ -52,3 +54,5 @@ permalink: /kb/239/Q239917/
 	
 	=============================================================================
 	
+
+{% endraw %}

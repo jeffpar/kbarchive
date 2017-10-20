@@ -6,6 +6,8 @@ permalink: /kb/076/Q76845/
 
 ## Q76845: System Hangs with Kraft Mouse and Driver 3.01
 
+{% raw %}
+
 	Article: Q76845
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -68,3 +70,5 @@ permalink: /kb/076/Q76845/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100183/
 
 ## Q100183: BUG: UngetCommChar() Causes Character Loss or GP Faults
 
+{% raw %}
+
 	Article: Q100183
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -88,3 +90,5 @@ permalink: /kb/100/Q100183/
 	
 	=============================================================================
 	
+
+{% endraw %}

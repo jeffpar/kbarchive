@@ -6,6 +6,8 @@ permalink: /kb/314/Q314402/
 
 ## Q314402: PRB:Slow Clients Disconnected When Large Synchronous Writes Used
 
+{% raw %}
+
 	Article: Q314402
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -68,3 +70,5 @@ permalink: /kb/314/Q314402/
 	
 	=============================================================================
 	
+
+{% endraw %}

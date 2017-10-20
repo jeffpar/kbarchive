@@ -6,6 +6,8 @@ permalink: /kb/123/Q123794/
 
 ## Q123794: Custom.dic Not Updated in PowerPoint
 
+{% raw %}
+
 	Article: Q123794
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -54,3 +56,5 @@ permalink: /kb/123/Q123794/
 	
 	=============================================================================
 	
+
+{% endraw %}

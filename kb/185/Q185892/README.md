@@ -6,6 +6,8 @@ permalink: /kb/185/Q185892/
 
 ## Q185892: Unwanted Popup Message While Printing to an LPR Printer
 
+{% raw %}
+
 	Article: Q185892
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -92,3 +94,5 @@ permalink: /kb/185/Q185892/
 	
 	=============================================================================
 	
+
+{% endraw %}

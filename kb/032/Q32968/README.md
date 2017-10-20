@@ -6,6 +6,8 @@ permalink: /kb/032/Q32968/
 
 ## Q32968: &quot;Type Mismatch&quot; Using TAB() Between PRINT USING Variables
 
+{% raw %}
+
 	Article: Q32968
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -65,3 +67,5 @@ permalink: /kb/032/Q32968/
 	
 	The program then usually runs correctly (without getting a "Type
 	Mismatch" error) in QB.EXE.
+
+{% endraw %}

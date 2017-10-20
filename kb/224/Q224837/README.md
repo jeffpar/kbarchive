@@ -6,6 +6,8 @@ permalink: /kb/224/Q224837/
 
 ## Q224837: DCOM Clients Ping Server After Client Program Has Shut Down
 
+{% raw %}
+
 	Article: Q224837
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/224/Q224837/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99802/
 
 ## Q99802: INFO: Enabling and Disabling Print Manager
 
+{% raw %}
+
 	Article: Q99802
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -60,3 +62,5 @@ permalink: /kb/099/Q99802/
 	
 	=============================================================================
 	
+
+{% endraw %}

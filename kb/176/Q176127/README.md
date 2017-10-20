@@ -6,6 +6,8 @@ permalink: /kb/176/Q176127/
 
 ## Q176127: XCON: Read Receipts Looping in the Message Transfer Agent
 
+{% raw %}
+
 	Article: Q176127
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -59,3 +61,5 @@ permalink: /kb/176/Q176127/
 	
 	=============================================================================
 	
+
+{% endraw %}

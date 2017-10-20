@@ -6,6 +6,8 @@ permalink: /kb/159/Q159853/
 
 ## Q159853: Display Toolbar Checkbox Not Functional on MSDOS Shortcut
 
+{% raw %}
+
 	Article: Q159853
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/159/Q159853/
 	
 	=============================================================================
 	
+
+{% endraw %}

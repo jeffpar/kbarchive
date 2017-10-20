@@ -6,6 +6,8 @@ permalink: /kb/035/Q35804/
 
 ## Q35804: DOCERR: .code Directive with Segment Name
 
+{% raw %}
+
 	Article: Q35804
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -60,3 +62,5 @@ permalink: /kb/035/Q35804/
 	
 	=============================================================================
 	
+
+{% endraw %}

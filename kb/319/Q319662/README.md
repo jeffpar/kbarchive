@@ -6,6 +6,8 @@ permalink: /kb/319/Q319662/
 
 ## Q319662: MCSE Training Kit: Microsoft Exchange 2000 Server Design and Dep
 
+{% raw %}
+
 	Article: Q319662
 	Product(s): Microsoft Press
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/319/Q319662/
 	
 	=============================================================================
 	
+
+{% endraw %}

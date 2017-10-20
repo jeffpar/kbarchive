@@ -6,6 +6,8 @@ permalink: /kb/098/Q98181/
 
 ## Q98181: How to Quick Format an MSBACKUP.EXE Disk
 
+{% raw %}
+
 	Article: Q98181
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -62,3 +64,5 @@ permalink: /kb/098/Q98181/
 	
 	=============================================================================
 	
+
+{% endraw %}

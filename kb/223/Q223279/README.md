@@ -6,6 +6,8 @@ permalink: /kb/223/Q223279/
 
 ## Q223279: XADM: Extension DSAVUADM Could Not Be Loaded Accessing a Mailbox
 
+{% raw %}
+
 	Article: Q223279
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -91,3 +93,5 @@ permalink: /kb/223/Q223279/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172013/
 
 ## Q172013: W/out ODBC/DRDA Option, 32-Bit ODBC Administrator Is Deleted
 
+{% raw %}
+
 	Article: Q172013
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1; winnt:3.0,3.0 SP1
@@ -59,3 +61,5 @@ permalink: /kb/172/Q172013/
 	
 	=============================================================================
 	
+
+{% endraw %}

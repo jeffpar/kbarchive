@@ -6,6 +6,8 @@ permalink: /kb/283/Q283102/
 
 ## Q283102: Windows NT4.0 Print Servers Paged Pool Leak on FsRt Pooltag
 
+{% raw %}
+
 	Article: Q283102
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -109,3 +111,5 @@ permalink: /kb/283/Q283102/
 	
 	=============================================================================
 	
+
+{% endraw %}

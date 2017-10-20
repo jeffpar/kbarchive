@@ -6,6 +6,8 @@ permalink: /kb/192/Q192999/
 
 ## Q192999: Web Links in Bookshelf 98 and Encarta 98 Updated by Redirector
 
+{% raw %}
+
 	Article: Q192999
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:; WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/192/Q192999/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/037/Q37548/
 
 ## Q37548: Using CodeView to Examine FORTRAN Arrays
 
+{% raw %}
+
 	Article: Q37548
 	Product(s): Microsoft Programming Utilities
 	Version(s): 3.0,3.05,3.06,3.07,3.11,3.12,3.14,3.5,4.0,4.01,4.05,4.1
@@ -56,3 +58,5 @@ permalink: /kb/037/Q37548/
 	
 	=============================================================================
 	
+
+{% endraw %}

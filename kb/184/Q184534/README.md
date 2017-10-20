@@ -6,6 +6,8 @@ permalink: /kb/184/Q184534/
 
 ## Q184534: XADM: MIME Type Extension Mapping Not Used for Attachments
 
+{% raw %}
+
 	Article: Q184534
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0SP2,5.5
@@ -166,3 +168,5 @@ permalink: /kb/184/Q184534/
 	
 	=============================================================================
 	
+
+{% endraw %}

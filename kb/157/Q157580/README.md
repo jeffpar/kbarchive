@@ -6,6 +6,8 @@ permalink: /kb/157/Q157580/
 
 ## Q157580: WD97: Some Wizards Don't Show Finish On Progress Indicator
 
+{% raw %}
+
 	Article: Q157580
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/157/Q157580/
 	
 	=============================================================================
 	
+
+{% endraw %}

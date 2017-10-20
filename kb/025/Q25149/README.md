@@ -6,6 +6,8 @@ permalink: /kb/025/Q25149/
 
 ## Q25149: Mouse Support in Non-Windows-Based Applications
 
+{% raw %}
+
 	Article: Q25149
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.x,2.x,3.x
@@ -44,3 +46,5 @@ permalink: /kb/025/Q25149/
 	
 	=============================================================================
 	
+
+{% endraw %}

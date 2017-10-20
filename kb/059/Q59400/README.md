@@ -6,6 +6,8 @@ permalink: /kb/059/Q59400/
 
 ## Q59400: CHDIR &amp; SHELL &quot;CHDIR&quot; in OS/2 Protected Mode Differs from DOS
 
+{% raw %}
+
 	Article: Q59400
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -66,3 +68,5 @@ permalink: /kb/059/Q59400/
 	
 	In DOS, either the CHDIR statement or the commented SHELL statement in
 	the above program will change the directory for the DOS command line.
+
+{% endraw %}

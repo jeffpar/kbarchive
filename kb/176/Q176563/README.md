@@ -6,6 +6,8 @@ permalink: /kb/176/Q176563/
 
 ## Q176563: BUG: DBGrid Loses All Except One Row After Scrolling to Bottom
 
+{% raw %}
+
 	Article: Q176563
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/176/Q176563/
 	
 	=============================================================================
 	
+
+{% endraw %}

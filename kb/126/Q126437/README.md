@@ -6,6 +6,8 @@ permalink: /kb/126/Q126437/
 
 ## Q126437: Using Communications Applications When RAS Server is Running
 
+{% raw %}
+
 	Article: Q126437
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -78,3 +80,5 @@ permalink: /kb/126/Q126437/
 	
 	=============================================================================
 	
+
+{% endraw %}

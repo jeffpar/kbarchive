@@ -6,6 +6,8 @@ permalink: /kb/104/Q104278/
 
 ## Q104278: PC Forms: Fax Gateway Does Not Support E-Forms
 
+{% raw %}
+
 	Article: Q104278
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -52,3 +54,5 @@ permalink: /kb/104/Q104278/
 	
 	=============================================================================
 	
+
+{% endraw %}

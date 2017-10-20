@@ -6,6 +6,8 @@ permalink: /kb/155/Q155019/
 
 ## Q155019: Volume Control Tool Has Select Option Instead of Mute
 
+{% raw %}
+
 	Article: Q155019
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/155/Q155019/
 	
 	=============================================================================
 	
+
+{% endraw %}

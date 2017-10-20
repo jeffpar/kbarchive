@@ -6,6 +6,8 @@ permalink: /kb/217/Q217201/
 
 ## Q217201: FIX: CControlBar Crashes When TOOLTIPTEXT.lpszText Is ID for SR
 
+{% raw %}
+
 	Article: Q217201
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -87,3 +89,5 @@ permalink: /kb/217/Q217201/
 	
 	=============================================================================
 	
+
+{% endraw %}

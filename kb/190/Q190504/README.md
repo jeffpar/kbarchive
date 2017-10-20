@@ -6,6 +6,8 @@ permalink: /kb/190/Q190504/
 
 ## Q190504: BUG: CommandButton Style Problem with Cyrillic Script
 
+{% raw %}
+
 	Article: Q190504
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -71,3 +73,5 @@ permalink: /kb/190/Q190504/
 	
 	=============================================================================
 	
+
+{% endraw %}

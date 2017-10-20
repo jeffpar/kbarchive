@@ -6,6 +6,8 @@ permalink: /kb/071/Q71312/
 
 ## Q71312: PRB: Resource Compiler Error RW1022 Caused by Temporary File
 
+{% raw %}
+
 	Article: Q71312
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -51,3 +53,5 @@ permalink: /kb/071/Q71312/
 	
 	=============================================================================
 	
+
+{% endraw %}

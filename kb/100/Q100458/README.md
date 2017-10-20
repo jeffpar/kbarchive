@@ -6,6 +6,8 @@ permalink: /kb/100/Q100458/
 
 ## Q100458: PC WRmt: MAPI Ignores Scheduled Connections
 
+{% raw %}
+
 	Article: Q100458
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -68,3 +70,5 @@ permalink: /kb/100/Q100458/
 	
 	=============================================================================
 	
+
+{% endraw %}

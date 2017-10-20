@@ -6,6 +6,8 @@ permalink: /kb/265/Q265514/
 
 ## Q265514: XCLN: English Version of Fix for Store Provider Memory Leak
 
+{% raw %}
+
 	Article: Q265514
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -73,3 +75,5 @@ permalink: /kb/265/Q265514/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274179/
 
 ## Q274179: TN3270/TN5250 Port Values Limited to Four Digits in SNA Manager
 
+{% raw %}
+
 	Article: Q274179
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -104,3 +106,5 @@ permalink: /kb/274/Q274179/
 	
 	=============================================================================
 	
+
+{% endraw %}

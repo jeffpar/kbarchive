@@ -6,6 +6,8 @@ permalink: /kb/212/Q212773/
 
 ## Q212773: XFOR: CCMC Dirsync Error 14015
 
+{% raw %}
+
 	Article: Q212773
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/212/Q212773/
 	
 	=============================================================================
 	
+
+{% endraw %}

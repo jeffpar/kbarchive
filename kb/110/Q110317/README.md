@@ -6,6 +6,8 @@ permalink: /kb/110/Q110317/
 
 ## Q110317: Screen Corruption When Aircraft Crashes
 
+{% raw %}
+
 	Article: Q110317
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -47,3 +49,5 @@ permalink: /kb/110/Q110317/
 	
 	=============================================================================
 	
+
+{% endraw %}

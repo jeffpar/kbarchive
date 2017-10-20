@@ -6,6 +6,8 @@ permalink: /kb/072/Q72910/
 
 ## Q72910: Proteon Network Drivers Required for Windows 3.0
 
+{% raw %}
+
 	Article: Q72910
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -85,3 +87,5 @@ permalink: /kb/072/Q72910/
 	
 	=============================================================================
 	
+
+{% endraw %}

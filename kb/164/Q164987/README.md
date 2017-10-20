@@ -6,6 +6,8 @@ permalink: /kb/164/Q164987/
 
 ## Q164987: Hard-Coded Socket of 451 Causes LANtegrity Software to Fail
 
+{% raw %}
+
 	Article: Q164987
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/164/Q164987/
 	
 	=============================================================================
 	
+
+{% endraw %}

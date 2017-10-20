@@ -6,6 +6,8 @@ permalink: /kb/151/Q151962/
 
 ## Q151962: System Appears to Stop when Adding Users to Large Global Groups
 
+{% raw %}
+
 	Article: Q151962
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -58,3 +60,5 @@ permalink: /kb/151/Q151962/
 	
 	=============================================================================
 	
+
+{% endraw %}

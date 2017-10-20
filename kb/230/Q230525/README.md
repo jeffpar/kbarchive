@@ -6,6 +6,8 @@ permalink: /kb/230/Q230525/
 
 ## Q230525: Changes to Domain Group Initiates Full Domain Synchronization
 
+{% raw %}
+
 	Article: Q230525
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -96,3 +98,5 @@ permalink: /kb/230/Q230525/
 	
 	=============================================================================
 	
+
+{% endraw %}

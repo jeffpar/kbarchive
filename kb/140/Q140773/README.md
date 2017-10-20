@@ -6,6 +6,8 @@ permalink: /kb/140/Q140773/
 
 ## Q140773: Cannot Drag BBS Message to Create Shortcut
 
+{% raw %}
+
 	Article: Q140773
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -38,3 +40,5 @@ permalink: /kb/140/Q140773/
 	
 	=============================================================================
 	
+
+{% endraw %}

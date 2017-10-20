@@ -6,6 +6,8 @@ permalink: /kb/255/Q255251/
 
 ## Q255251: XADM: Cannot View Free and Busy Consistently
 
+{% raw %}
+
 	Article: Q255251
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -79,3 +81,5 @@ permalink: /kb/255/Q255251/
 	
 	=============================================================================
 	
+
+{% endraw %}

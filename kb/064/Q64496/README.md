@@ -6,6 +6,8 @@ permalink: /kb/064/Q64496/
 
 ## Q64496: SETUP Builds ISAMIO, ISAMCVT, ISAMPACK as Stand Alone or Not
 
+{% raw %}
+
 	Article: Q64496
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -60,3 +62,5 @@ permalink: /kb/064/Q64496/
 	For more information, see Pages 389-399, Chapter 10, "ISAM Utilities,"
 	of the "Microsoft BASIC 7.0: Programmer's Guide" for versions 7.00 and
 	7.10.
+
+{% endraw %}

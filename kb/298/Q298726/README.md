@@ -6,6 +6,8 @@ permalink: /kb/298/Q298726/
 
 ## Q298726: SMS: Backup Status Message 5013 Has Missing Insertion String
 
+{% raw %}
+
 	Article: Q298726
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP2,2.0 SP3
@@ -54,3 +56,5 @@ permalink: /kb/298/Q298726/
 	
 	=============================================================================
 	
+
+{% endraw %}

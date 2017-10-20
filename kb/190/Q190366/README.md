@@ -6,6 +6,8 @@ permalink: /kb/190/Q190366/
 
 ## Q190366: XFOR: Cannot Reply to Messages Through a Cisco PIX Firewall
 
+{% raw %}
+
 	Article: Q190366
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -69,3 +71,5 @@ permalink: /kb/190/Q190366/
 	
 	=============================================================================
 	
+
+{% endraw %}

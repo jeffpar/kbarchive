@@ -6,6 +6,8 @@ permalink: /kb/074/Q74207/
 
 ## Q74207: MS-DOS Backup Err Msg: Could Not Allocate Segment
 
+{% raw %}
+
 	Article: Q74207
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -59,3 +61,5 @@ permalink: /kb/074/Q74207/
 	
 	=============================================================================
 	
+
+{% endraw %}

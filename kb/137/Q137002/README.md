@@ -6,6 +6,8 @@ permalink: /kb/137/Q137002/
 
 ## Q137002: STOP 0x0000000A May Occur on Multi-processor Computers
 
+{% raw %}
+
 	Article: Q137002
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/137/Q137002/
 	
 	=============================================================================
 	
+
+{% endraw %}

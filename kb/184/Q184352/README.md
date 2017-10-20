@@ -6,6 +6,8 @@ permalink: /kb/184/Q184352/
 
 ## Q184352: HOWTO: Upload Files to the Internet Information Server
 
+{% raw %}
+
 	Article: Q184352
 	Product(s): Internet Information Server
 	Version(s): 1.0,4.0,4.01
@@ -217,3 +219,5 @@ permalink: /kb/184/Q184352/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/088/Q88746/
 
 ## Q88746: Difference Between Macro Substitution and Named Expression
 
+{% raw %}
+
 	Article: Q88746
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -50,3 +52,5 @@ permalink: /kb/088/Q88746/
 	
 	=============================================================================
 	
+
+{% endraw %}

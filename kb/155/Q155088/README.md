@@ -6,6 +6,8 @@ permalink: /kb/155/Q155088/
 
 ## Q155088: BUG: ListBox Control Scrolls Slowly
 
+{% raw %}
+
 	Article: Q155088
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -117,3 +119,5 @@ permalink: /kb/155/Q155088/
 	
 	=============================================================================
 	
+
+{% endraw %}

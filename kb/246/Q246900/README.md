@@ -6,6 +6,8 @@ permalink: /kb/246/Q246900/
 
 ## Q246900: TPU: Wrong Page Displayed When Moving Back in Management Console
 
+{% raw %}
+
 	Article: Q246900
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5; :
@@ -59,3 +61,5 @@ permalink: /kb/246/Q246900/
 	
 	=============================================================================
 	
+
+{% endraw %}

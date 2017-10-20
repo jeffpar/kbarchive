@@ -6,6 +6,8 @@ permalink: /kb/307/Q307519/
 
 ## Q307519: Computer Hangs When You Use VPN Ports
 
+{% raw %}
+
 	Article: Q307519
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -90,3 +92,5 @@ permalink: /kb/307/Q307519/
 	
 	=============================================================================
 	
+
+{% endraw %}

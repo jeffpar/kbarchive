@@ -6,6 +6,8 @@ permalink: /kb/137/Q137962/
 
 ## Q137962: HOWTO: Have a Disabled Picture Command Button Look Enabled
 
+{% raw %}
+
 	Article: Q137962
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/137/Q137962/
 	
 	=============================================================================
 	
+
+{% endraw %}

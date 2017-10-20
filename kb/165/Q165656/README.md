@@ -6,6 +6,8 @@ permalink: /kb/165/Q165656/
 
 ## Q165656: Connection for Downstream PU Fails to Reactivate After Outage
 
+{% raw %}
+
 	Article: Q165656
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -65,3 +67,5 @@ permalink: /kb/165/Q165656/
 	
 	=============================================================================
 	
+
+{% endraw %}

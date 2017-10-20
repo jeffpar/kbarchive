@@ -6,6 +6,8 @@ permalink: /kb/238/Q238917/
 
 ## Q238917: Delay If No Response for DHCP Renew/Discover
 
+{% raw %}
+
 	Article: Q238917
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -129,3 +131,5 @@ permalink: /kb/238/Q238917/
 	
 	=============================================================================
 	
+
+{% endraw %}

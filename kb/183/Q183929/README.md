@@ -6,6 +6,8 @@ permalink: /kb/183/Q183929/
 
 ## Q183929: XCLN: Err Msg: Not a full Exchange system. Cannot continue...
 
+{% raw %}
+
 	Article: Q183929
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,4.0 SP3,5.0,5.5
@@ -89,3 +91,5 @@ permalink: /kb/183/Q183929/
 	
 	=============================================================================
 	
+
+{% endraw %}

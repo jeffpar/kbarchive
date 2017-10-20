@@ -6,6 +6,8 @@ permalink: /kb/254/Q254376/
 
 ## Q254376: PRB: Err Msg: &quot;Access Is Denied&quot; When Client Accesses ASP Page
 
+{% raw %}
+
 	Article: Q254376
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/254/Q254376/
 	
 	=============================================================================
 	
+
+{% endraw %}

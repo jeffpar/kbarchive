@@ -6,6 +6,8 @@ permalink: /kb/321/Q321407/
 
 ## Q321407: Dungeon Siege: &quot;Needs to Close&quot; Err Msg When Switching Windows
 
+{% raw %}
+
 	Article: Q321407
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -93,3 +95,5 @@ permalink: /kb/321/Q321407/
 	
 	=============================================================================
 	
+
+{% endraw %}

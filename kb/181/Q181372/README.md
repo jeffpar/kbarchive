@@ -6,6 +6,8 @@ permalink: /kb/181/Q181372/
 
 ## Q181372: HttpMon.exe Does Not Write to CSV File
 
+{% raw %}
+
 	Article: Q181372
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0; :2.0
@@ -65,3 +67,5 @@ permalink: /kb/181/Q181372/
 	
 	=============================================================================
 	
+
+{% endraw %}

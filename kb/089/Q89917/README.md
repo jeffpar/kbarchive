@@ -6,6 +6,8 @@ permalink: /kb/089/Q89917/
 
 ## Q89917: Copying to LPT Port in MS-DOS Session Slow
 
+{% raw %}
+
 	Article: Q89917
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -86,3 +88,5 @@ permalink: /kb/089/Q89917/
 	
 	=============================================================================
 	
+
+{% endraw %}

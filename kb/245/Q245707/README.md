@@ -6,6 +6,8 @@ permalink: /kb/245/Q245707/
 
 ## Q245707: AFTP Binary File Transfer Does Not Covert Data to ASCII
 
+{% raw %}
+
 	Article: Q245707
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -54,3 +56,5 @@ permalink: /kb/245/Q245707/
 	
 	=============================================================================
 	
+
+{% endraw %}

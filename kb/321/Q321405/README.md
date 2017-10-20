@@ -6,6 +6,8 @@ permalink: /kb/321/Q321405/
 
 ## Q321405: Dungeon Siege: &quot;Encountered a Problem...Needs to Close&quot; Err Msg
 
+{% raw %}
+
 	Article: Q321405
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -82,3 +84,5 @@ permalink: /kb/321/Q321405/
 	
 	=============================================================================
 	
+
+{% endraw %}

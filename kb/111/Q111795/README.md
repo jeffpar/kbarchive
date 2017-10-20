@@ -6,6 +6,8 @@ permalink: /kb/111/Q111795/
 
 ## Q111795: Mac Srv: New Features in Microsoft Mail Version 3.1d
 
+{% raw %}
+
 	Article: Q111795
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1d
@@ -90,3 +92,5 @@ permalink: /kb/111/Q111795/
 	
 	=============================================================================
 	
+
+{% endraw %}

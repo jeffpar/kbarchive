@@ -6,6 +6,8 @@ permalink: /kb/208/Q208590/
 
 ## Q208590: BUG: CommandBar: &quot;Memory Could Not Be Read&quot; Error
 
+{% raw %}
+
 	Article: Q208590
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -88,3 +90,5 @@ permalink: /kb/208/Q208590/
 	
 	=============================================================================
 	
+
+{% endraw %}

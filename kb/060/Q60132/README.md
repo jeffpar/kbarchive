@@ -6,6 +6,8 @@ permalink: /kb/060/Q60132/
 
 ## Q60132: BASIC PDS 7.00: ISAMREPR Always Adds 32K to a .MDB File
 
+{% raw %}
+
 	Article: Q60132
 	Product(s): See article
 	Version(s): 7.00
@@ -34,3 +36,5 @@ permalink: /kb/060/Q60132/
 	If the size of the file becomes unmanageable because of unused space,
 	ISAMPACK.EXE can be used to remove the unused space and reduce the
 	size of the file.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/012/Q12384/
 
 ## Q12384: INFO: More Information About Atoms
 
+{% raw %}
+
 	Article: Q12384
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -70,3 +72,5 @@ permalink: /kb/012/Q12384/
 	
 	=============================================================================
 	
+
+{% endraw %}

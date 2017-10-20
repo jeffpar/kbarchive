@@ -6,6 +6,8 @@ permalink: /kb/245/Q245194/
 
 ## Q245194: DHCP and WINS Do Not Start with Command AntiVirus Version 4.54.
 
+{% raw %}
+
 	Article: Q245194
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/245/Q245194/
 	
 	=============================================================================
 	
+
+{% endraw %}

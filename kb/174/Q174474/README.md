@@ -6,6 +6,8 @@ permalink: /kb/174/Q174474/
 
 ## Q174474: Installing RRAS Disables 128-bit RAS Encryption
 
+{% raw %}
+
 	Article: Q174474
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0,95
@@ -122,3 +124,5 @@ permalink: /kb/174/Q174474/
 	
 	=============================================================================
 	
+
+{% endraw %}

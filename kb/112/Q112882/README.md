@@ -6,6 +6,8 @@ permalink: /kb/112/Q112882/
 
 ## Q112882: Mac SMI: Can Not Create Gateway Address with MAPI
 
+{% raw %}
+
 	Article: Q112882
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -42,3 +44,5 @@ permalink: /kb/112/Q112882/
 	
 	=============================================================================
 	
+
+{% endraw %}

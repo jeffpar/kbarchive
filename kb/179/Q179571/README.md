@@ -6,6 +6,8 @@ permalink: /kb/179/Q179571/
 
 ## Q179571: MS Internet Information Server Training Comments &amp; Corrections
 
+{% raw %}
+
 	Article: Q179571
 	Product(s): Microsoft Press
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/179/Q179571/
 	
 	=============================================================================
 	
+
+{% endraw %}

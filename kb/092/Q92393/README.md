@@ -6,6 +6,8 @@ permalink: /kb/092/Q92393/
 
 ## Q92393: Installing MS-DOS 6.x Upgrade with Dual-Boot Schemes
 
+{% raw %}
+
 	Article: Q92393
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -224,3 +226,5 @@ permalink: /kb/092/Q92393/
 	
 	=============================================================================
 	
+
+{% endraw %}

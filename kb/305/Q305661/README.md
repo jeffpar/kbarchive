@@ -6,6 +6,8 @@ permalink: /kb/305/Q305661/
 
 ## Q305661: Retried COM Function Calls Using IMessageFilter May Cause a Leak
 
+{% raw %}
+
 	Article: Q305661
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -103,3 +105,5 @@ permalink: /kb/305/Q305661/
 	
 	=============================================================================
 	
+
+{% endraw %}

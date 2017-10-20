@@ -6,6 +6,8 @@ permalink: /kb/062/Q62130/
 
 ## Q62130: Mac Hyp: Getting the Name of the Current Server
 
+{% raw %}
+
 	Article: Q62130
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -42,3 +44,5 @@ permalink: /kb/062/Q62130/
 	
 	=============================================================================
 	
+
+{% endraw %}

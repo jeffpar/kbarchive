@@ -6,6 +6,8 @@ permalink: /kb/145/Q145817/
 
 ## Q145817: HOWTO: Formatting a Date or Time Value to Query an SQL Table
 
+{% raw %}
+
 	Article: Q145817
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0 3.0b
@@ -79,3 +81,5 @@ permalink: /kb/145/Q145817/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158168/
 
 ## Q158168: XADM: SA Failed to Start: Logon Error 7013
 
+{% raw %}
+
 	Article: Q158168
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/158/Q158168/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184213/
 
 ## Q184213: SystemFileCacheInformation Can Be Changed Without Privilege
 
+{% raw %}
+
 	Article: Q184213
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/184/Q184213/
 	
 	=============================================================================
 	
+
+{% endraw %}

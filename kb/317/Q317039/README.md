@@ -6,6 +6,8 @@ permalink: /kb/317/Q317039/
 
 ## Q317039: Nothing Happens When You Double-Click the Modems Icon
 
+{% raw %}
+
 	Article: Q317039
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -139,3 +141,5 @@ permalink: /kb/317/Q317039/
 	
 	=============================================================================
 	
+
+{% endraw %}

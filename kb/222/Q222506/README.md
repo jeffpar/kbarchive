@@ -6,6 +6,8 @@ permalink: /kb/222/Q222506/
 
 ## Q222506: XFOR: GroupWise Connector Directory Synchronization Overview
 
+{% raw %}
+
 	Article: Q222506
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -191,3 +193,5 @@ permalink: /kb/222/Q222506/
 	
 	=============================================================================
 	
+
+{% endraw %}

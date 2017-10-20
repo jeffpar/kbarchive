@@ -6,6 +6,8 @@ permalink: /kb/130/Q130022/
 
 ## Q130022: XCLN: White Space Not Ignored When Grouping by Subject
 
+{% raw %}
+
 	Article: Q130022
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -53,3 +55,5 @@ permalink: /kb/130/Q130022/
 	
 	=============================================================================
 	
+
+{% endraw %}

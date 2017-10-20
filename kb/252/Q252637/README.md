@@ -6,6 +6,8 @@ permalink: /kb/252/Q252637/
 
 ## Q252637: PRB: Form Wizard Forms Display Non-US Currencies with a &#36; Symbol
 
+{% raw %}
+
 	Article: Q252637
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -113,3 +115,5 @@ permalink: /kb/252/Q252637/
 	
 	=============================================================================
 	
+
+{% endraw %}

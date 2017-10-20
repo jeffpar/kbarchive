@@ -6,6 +6,8 @@ permalink: /kb/274/Q274902/
 
 ## Q274902: Combat Flight Simulator 2: Graphics Options Are Turned Off When
 
+{% raw %}
+
 	Article: Q274902
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/274/Q274902/
 	
 	=============================================================================
 	
+
+{% endraw %}

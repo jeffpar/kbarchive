@@ -6,6 +6,8 @@ permalink: /kb/136/Q136325/
 
 ## Q136325: INFO: Three Types of Drag-and-Drop with Visual SourceSafe
 
+{% raw %}
+
 	Article: Q136325
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/136/Q136325/
 	
 	=============================================================================
 	
+
+{% endraw %}

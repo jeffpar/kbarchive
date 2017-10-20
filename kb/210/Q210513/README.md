@@ -6,6 +6,8 @@ permalink: /kb/210/Q210513/
 
 ## Q210513: Golf 99: Startup Screen Is Not Redrawn When You Quit a Round
 
+{% raw %}
+
 	Article: Q210513
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/210/Q210513/
 	
 	=============================================================================
 	
+
+{% endraw %}

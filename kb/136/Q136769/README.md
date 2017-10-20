@@ -6,6 +6,8 @@ permalink: /kb/136/Q136769/
 
 ## Q136769: Memory Requirements of Setup Wizard &amp; Distributed Applications
 
+{% raw %}
+
 	Article: Q136769
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -38,3 +40,5 @@ permalink: /kb/136/Q136769/
 	
 	=============================================================================
 	
+
+{% endraw %}

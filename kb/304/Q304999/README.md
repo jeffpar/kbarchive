@@ -6,6 +6,8 @@ permalink: /kb/304/Q304999/
 
 ## Q304999: How to Replace Missing System and TrueType Fonts
 
+{% raw %}
+
 	Article: Q304999
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/304/Q304999/
 	
 	=============================================================================
 	
+
+{% endraw %}

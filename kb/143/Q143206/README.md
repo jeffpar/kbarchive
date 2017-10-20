@@ -6,6 +6,8 @@ permalink: /kb/143/Q143206/
 
 ## Q143206: Bookshelf 1995 for the Macintosh Minimum System Requirements
 
+{% raw %}
+
 	Article: Q143206
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -51,3 +53,5 @@ permalink: /kb/143/Q143206/
 	
 	=============================================================================
 	
+
+{% endraw %}

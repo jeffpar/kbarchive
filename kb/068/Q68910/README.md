@@ -6,6 +6,8 @@ permalink: /kb/068/Q68910/
 
 ## Q68910: ASD: Setting Scenery Memory Allocations
 
+{% raw %}
+
 	Article: Q68910
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/068/Q68910/
 	
 	=============================================================================
 	
+
+{% endraw %}

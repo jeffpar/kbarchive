@@ -6,6 +6,8 @@ permalink: /kb/167/Q167406/
 
 ## Q167406: FIX: TYPE() Function Returns Wrong Value for Appended Records
 
+{% raw %}
+
 	Article: Q167406
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b
@@ -110,3 +112,5 @@ permalink: /kb/167/Q167406/
 	
 	=============================================================================
 	
+
+{% endraw %}

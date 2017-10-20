@@ -6,6 +6,8 @@ permalink: /kb/260/Q260065/
 
 ## Q260065: XIMS: STARTTLS Unavailable When Connecting To Loopback
 
+{% raw %}
+
 	Article: Q260065
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -46,3 +48,5 @@ permalink: /kb/260/Q260065/
 	
 	=============================================================================
 	
+
+{% endraw %}

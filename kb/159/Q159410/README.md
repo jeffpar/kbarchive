@@ -6,6 +6,8 @@ permalink: /kb/159/Q159410/
 
 ## Q159410: FIX: &quot;Invalid Procedure Call&quot; Referencing Collection Item
 
+{% raw %}
+
 	Article: Q159410
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -137,3 +139,5 @@ permalink: /kb/159/Q159410/
 	
 	=============================================================================
 	
+
+{% endraw %}

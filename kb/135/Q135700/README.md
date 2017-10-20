@@ -6,6 +6,8 @@ permalink: /kb/135/Q135700/
 
 ## Q135700: Modifications to NETBT.SYS to Support Layered Drivers
 
+{% raw %}
+
 	Article: Q135700
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -69,3 +71,5 @@ permalink: /kb/135/Q135700/
 	
 	=============================================================================
 	
+
+{% endraw %}

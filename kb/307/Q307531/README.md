@@ -6,6 +6,8 @@ permalink: /kb/307/Q307531/
 
 ## Q307531: SMS: SMS 2.0 English-Language Client Support on Non-English OS
 
+{% raw %}
+
 	Article: Q307531
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/307/Q307531/
 	
 	=============================================================================
 	
+
+{% endraw %}

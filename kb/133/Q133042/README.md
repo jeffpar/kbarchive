@@ -6,6 +6,8 @@ permalink: /kb/133/Q133042/
 
 ## Q133042: HOWTO: Pass IDispatch Pointer and Avoid an Application Error
 
+{% raw %}
+
 	Article: Q133042
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,5.0,6.0
@@ -106,3 +108,5 @@ permalink: /kb/133/Q133042/
 	
 	=============================================================================
 	
+
+{% endraw %}

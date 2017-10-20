@@ -6,6 +6,8 @@ permalink: /kb/245/Q245063/
 
 ## Q245063: Games Error Message: Setup Failed to Extract Files From...
 
+{% raw %}
+
 	Article: Q245063
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -256,3 +258,5 @@ permalink: /kb/245/Q245063/
 	
 	=============================================================================
 	
+
+{% endraw %}

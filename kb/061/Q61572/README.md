@@ -6,6 +6,8 @@ permalink: /kb/061/Q61572/
 
 ## Q61572: PRB: SYS2070 Issued When Running PWB.EXE for the First Time
 
+{% raw %}
+
 	Article: Q61572
 	Product(s): Microsoft Programming Utilities
 	Version(s): OS/2:1.0,1.1
@@ -99,3 +101,5 @@ permalink: /kb/061/Q61572/
 	
 	=============================================================================
 	
+
+{% endraw %}

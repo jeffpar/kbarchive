@@ -6,6 +6,8 @@ permalink: /kb/191/Q191704/
 
 ## Q191704: PRB: Unable to Load File to Register It During Setup
 
+{% raw %}
+
 	Article: Q191704
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.5,2.6,6.0,95,98
@@ -77,3 +79,5 @@ permalink: /kb/191/Q191704/
 	
 	=============================================================================
 	
+
+{% endraw %}

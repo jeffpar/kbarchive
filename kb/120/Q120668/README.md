@@ -6,6 +6,8 @@ permalink: /kb/120/Q120668/
 
 ## Q120668: BUG: Trigraph Statements May Produce End-of-File Error
 
+{% raw %}
+
 	Article: Q120668
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.1,4.2,5.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/120/Q120668/
 	
 	=============================================================================
 	
+
+{% endraw %}

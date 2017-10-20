@@ -6,6 +6,8 @@ permalink: /kb/178/Q178636/
 
 ## Q178636: Directory Listing Not Correct When Using Russian Characters
 
+{% raw %}
+
 	Article: Q178636
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.11,4.0
@@ -62,3 +64,5 @@ permalink: /kb/178/Q178636/
 	
 	=============================================================================
 	
+
+{% endraw %}

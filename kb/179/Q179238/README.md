@@ -6,6 +6,8 @@ permalink: /kb/179/Q179238/
 
 ## Q179238: MS-DOS Client 3.0 Hangs with Third-Party DHCP Server
 
+{% raw %}
+
 	Article: Q179238
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -42,3 +44,5 @@ permalink: /kb/179/Q179238/
 	
 	=============================================================================
 	
+
+{% endraw %}

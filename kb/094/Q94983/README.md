@@ -6,6 +6,8 @@ permalink: /kb/094/Q94983/
 
 ## Q94983: Microsoft Systems Journal: March 1993
 
+{% raw %}
+
 	Article: Q94983
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -71,3 +73,5 @@ permalink: /kb/094/Q94983/
 	
 	=============================================================================
 	
+
+{% endraw %}

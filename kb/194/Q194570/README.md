@@ -6,6 +6,8 @@ permalink: /kb/194/Q194570/
 
 ## Q194570: PRB: TypeOf Operator Does Not Recognize Form Object
 
+{% raw %}
+
 	Article: Q194570
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -100,3 +102,5 @@ permalink: /kb/194/Q194570/
 	
 	=============================================================================
 	
+
+{% endraw %}

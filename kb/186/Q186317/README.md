@@ -6,6 +6,8 @@ permalink: /kb/186/Q186317/
 
 ## Q186317: Subscriptions Fail Transferring DB2 CHAR and VARCHAR Datatype
 
+{% raw %}
+
 	Article: Q186317
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/186/Q186317/
 	
 	=============================================================================
 	
+
+{% endraw %}

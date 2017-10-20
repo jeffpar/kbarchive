@@ -6,6 +6,8 @@ permalink: /kb/297/Q297795/
 
 ## Q297795: HOW TO: Enable Reverse DNS Lookup for IIS
 
+{% raw %}
+
 	Article: Q297795
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -126,3 +128,5 @@ permalink: /kb/297/Q297795/
 	
 	=============================================================================
 	
+
+{% endraw %}

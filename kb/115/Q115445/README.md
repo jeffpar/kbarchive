@@ -6,6 +6,8 @@ permalink: /kb/115/Q115445/
 
 ## Q115445: X400: Network Name Field Refuses to Accept Character Input
 
+{% raw %}
+
 	Article: Q115445
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -62,3 +64,5 @@ permalink: /kb/115/Q115445/
 	
 	=============================================================================
 	
+
+{% endraw %}

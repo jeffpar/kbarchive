@@ -6,6 +6,8 @@ permalink: /kb/077/Q77702/
 
 ## Q77702: INFO: Processing WM_PALETTECHANGED and WM_QUERYNEWPALETTE
 
+{% raw %}
+
 	Article: Q77702
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -123,3 +125,5 @@ permalink: /kb/077/Q77702/
 	
 	=============================================================================
 	
+
+{% endraw %}

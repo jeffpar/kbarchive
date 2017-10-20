@@ -6,6 +6,8 @@ permalink: /kb/085/Q85478/
 
 ## Q85478: INFO: Error C2593 When Archiving an Enumerated Type
 
+{% raw %}
+
 	Article: Q85478
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -145,3 +147,5 @@ permalink: /kb/085/Q85478/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/276/Q276508/
 
 ## Q276508: XADM: Inconsistent MsgID Formats Between Exchange 5.5 and 2000
 
+{% raw %}
+
 	Article: Q276508
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -46,3 +48,5 @@ permalink: /kb/276/Q276508/
 	
 	=============================================================================
 	
+
+{% endraw %}

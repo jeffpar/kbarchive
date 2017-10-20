@@ -6,6 +6,8 @@ permalink: /kb/057/Q57549/
 
 ## Q57549: Displaying Only the Subdirectories with _A_SUBDIR
 
+{% raw %}
+
 	Article: Q57549
 	Product(s): See article
 	Version(s): 5.10
@@ -61,3 +63,5 @@ permalink: /kb/057/Q57549/
 	    if( pfind->attrib & _A_SUBDIR )
 	       printf ( "<DIR> %-8s\n", pfind->name );
 	}
+
+{% endraw %}

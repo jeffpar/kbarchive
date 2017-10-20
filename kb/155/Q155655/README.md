@@ -6,6 +6,8 @@ permalink: /kb/155/Q155655/
 
 ## Q155655: Monster Truck Madness: Game Hangs When CD Is Ejected
 
+{% raw %}
+
 	Article: Q155655
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/155/Q155655/
 	
 	=============================================================================
 	
+
+{% endraw %}

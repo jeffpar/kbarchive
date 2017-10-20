@@ -6,6 +6,8 @@ permalink: /kb/066/Q66585/
 
 ## Q66585: Flight Simulator: Support for MCGA
 
+{% raw %}
+
 	Article: Q66585
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -36,3 +38,5 @@ permalink: /kb/066/Q66585/
 	
 	=============================================================================
 	
+
+{% endraw %}

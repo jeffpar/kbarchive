@@ -6,6 +6,8 @@ permalink: /kb/265/Q265437/
 
 ## Q265437: XADM: Exchange Server 5.5 Upgrade Stops with Event ID 282
 
+{% raw %}
+
 	Article: Q265437
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -99,3 +101,5 @@ permalink: /kb/265/Q265437/
 	
 	=============================================================================
 	
+
+{% endraw %}

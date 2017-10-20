@@ -6,6 +6,8 @@ permalink: /kb/166/Q166430/
 
 ## Q166430: Error Viewing Text File Using Chinese Code Converter.
 
+{% raw %}
+
 	Article: Q166430
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/166/Q166430/
 	
 	=============================================================================
 	
+
+{% endraw %}

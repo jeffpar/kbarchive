@@ -6,6 +6,8 @@ permalink: /kb/119/Q119366/
 
 ## Q119366: Drawing Object Does Not Cover Text When Printing in Word 6.0a
 
+{% raw %}
+
 	Article: Q119366
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:6.0a,95
@@ -59,3 +61,5 @@ permalink: /kb/119/Q119366/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193138/
 
 ## Q193138: Windows NT 4.0 Does Not Support Unimodem V
 
+{% raw %}
+
 	Article: Q193138
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/193/Q193138/
 	
 	=============================================================================
 	
+
+{% endraw %}

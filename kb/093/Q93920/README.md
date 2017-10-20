@@ -6,6 +6,8 @@ permalink: /kb/093/Q93920/
 
 ## Q93920: Using Functions and Subroutines with Microsoft Setup
 
+{% raw %}
+
 	Article: Q93920
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/093/Q93920/
 	
 	=============================================================================
 	
+
+{% endraw %}

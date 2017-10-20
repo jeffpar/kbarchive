@@ -6,6 +6,8 @@ permalink: /kb/165/Q165525/
 
 ## Q165525: &quot;Stop 0xA&quot; Error Message During Setup
 
+{% raw %}
+
 	Article: Q165525
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -71,3 +73,5 @@ permalink: /kb/165/Q165525/
 	
 	=============================================================================
 	
+
+{% endraw %}

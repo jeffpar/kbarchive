@@ -6,6 +6,8 @@ permalink: /kb/152/Q152446/
 
 ## Q152446: XCON: Dead Letter Recipient Button is Missing
 
+{% raw %}
+
 	Article: Q152446
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -42,3 +44,5 @@ permalink: /kb/152/Q152446/
 	
 	=============================================================================
 	
+
+{% endraw %}

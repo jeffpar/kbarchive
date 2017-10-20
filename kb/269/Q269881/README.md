@@ -6,6 +6,8 @@ permalink: /kb/269/Q269881/
 
 ## Q269881: PRB: Problems with VFP Driver &quot;Fetch Data In Background&quot; Option
 
+{% raw %}
+
 	Article: Q269881
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -197,3 +199,5 @@ permalink: /kb/269/Q269881/
 	
 	=============================================================================
 	
+
+{% endraw %}

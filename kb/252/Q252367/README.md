@@ -6,6 +6,8 @@ permalink: /kb/252/Q252367/
 
 ## Q252367: Service Pack May Not Install When Run from Remote Console Client
 
+{% raw %}
+
 	Article: Q252367
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5,4.0 SP6,4.0 SP6a
@@ -70,3 +72,5 @@ permalink: /kb/252/Q252367/
 	
 	=============================================================================
 	
+
+{% endraw %}

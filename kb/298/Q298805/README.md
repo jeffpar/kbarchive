@@ -6,6 +6,8 @@ permalink: /kb/298/Q298805/
 
 ## Q298805: HOW TO: Enable SSL for Customers Who Interact w/ Your Web Site
 
+{% raw %}
+
 	Article: Q298805
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -270,3 +272,5 @@ permalink: /kb/298/Q298805/
 	
 	=============================================================================
 	
+
+{% endraw %}

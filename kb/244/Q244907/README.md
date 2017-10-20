@@ -6,6 +6,8 @@ permalink: /kb/244/Q244907/
 
 ## Q244907: WD97: Vertical Alignment Causes Incorrect Text Wrapping
 
+{% raw %}
+
 	Article: Q244907
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/244/Q244907/
 	
 	=============================================================================
 	
+
+{% endraw %}

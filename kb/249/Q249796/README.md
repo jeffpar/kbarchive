@@ -6,6 +6,8 @@ permalink: /kb/249/Q249796/
 
 ## Q249796: XCLN:Outlook Rule Creates Message Loop in Information Store
 
+{% raw %}
+
 	Article: Q249796
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:97; winnt:5.5; :
@@ -84,3 +86,5 @@ permalink: /kb/249/Q249796/
 	
 	=============================================================================
 	
+
+{% endraw %}

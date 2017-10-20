@@ -6,6 +6,8 @@ permalink: /kb/196/Q196976/
 
 ## Q196976: INFO: Updated VB4dll.txt for Visual Basic 4.0
 
+{% raw %}
+
 	Article: Q196976
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -278,3 +280,5 @@ permalink: /kb/196/Q196976/
 	
 	=============================================================================
 	
+
+{% endraw %}

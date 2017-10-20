@@ -6,6 +6,8 @@ permalink: /kb/060/Q60749/
 
 ## Q60749: PWB Makefiles Read-Only When Set as Active Program List
 
+{% raw %}
+
 	Article: Q60749
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -66,3 +68,5 @@ permalink: /kb/060/Q60749/
 	
 	=============================================================================
 	
+
+{% endraw %}

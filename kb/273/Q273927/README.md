@@ -6,6 +6,8 @@ permalink: /kb/273/Q273927/
 
 ## Q273927: Crimson Skies: Game Hangs When You Start Instant Action Mission
 
+{% raw %}
+
 	Article: Q273927
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/273/Q273927/
 	
 	=============================================================================
 	
+
+{% endraw %}

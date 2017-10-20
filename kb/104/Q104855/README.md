@@ -6,6 +6,8 @@ permalink: /kb/104/Q104855/
 
 ## Q104855: Flight Simulator: Sound Problems with Sound Blaster
 
+{% raw %}
+
 	Article: Q104855
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -71,3 +73,5 @@ permalink: /kb/104/Q104855/
 	
 	=============================================================================
 	
+
+{% endraw %}

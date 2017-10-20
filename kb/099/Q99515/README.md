@@ -6,6 +6,8 @@ permalink: /kb/099/Q99515/
 
 ## Q99515: FIX: F1001: typer.c, Line 911 From Concatenation in CALL
 
+{% raw %}
+
 	Article: Q99515
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -93,3 +95,5 @@ permalink: /kb/099/Q99515/
 	
 	=============================================================================
 	
+
+{% endraw %}

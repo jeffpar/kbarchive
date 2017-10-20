@@ -6,6 +6,8 @@ permalink: /kb/183/Q183419/
 
 ## Q183419: Memory Leak in Spoolss.exe Causes Performance Degradation
 
+{% raw %}
+
 	Article: Q183419
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/183/Q183419/
 	
 	=============================================================================
 	
+
+{% endraw %}

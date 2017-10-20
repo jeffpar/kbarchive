@@ -6,6 +6,8 @@ permalink: /kb/238/Q238966/
 
 ## Q238966: Statically Configured WINS Client Refreshes with Secondary
 
+{% raw %}
+
 	Article: Q238966
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/238/Q238966/
 	
 	=============================================================================
 	
+
+{% endraw %}

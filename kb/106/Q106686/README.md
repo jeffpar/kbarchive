@@ -6,6 +6,8 @@ permalink: /kb/106/Q106686/
 
 ## Q106686: Encarta GP Fault: Printing with Universal and Thirdparty Video
 
+{% raw %}
+
 	Article: Q106686
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition
@@ -75,3 +77,5 @@ permalink: /kb/106/Q106686/
 	
 	=============================================================================
 	
+
+{% endraw %}

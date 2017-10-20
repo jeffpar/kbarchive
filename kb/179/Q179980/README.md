@@ -6,6 +6,8 @@ permalink: /kb/179/Q179980/
 
 ## Q179980: XFOR: DBCS Messages Not Migrated Correctly from GroupWise
 
+{% raw %}
+
 	Article: Q179980
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -65,3 +67,5 @@ permalink: /kb/179/Q179980/
 	
 	=============================================================================
 	
+
+{% endraw %}

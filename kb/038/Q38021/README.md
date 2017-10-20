@@ -6,6 +6,8 @@ permalink: /kb/038/Q38021/
 
 ## Q38021: Mouse Cursor Disappears After Right Click
 
+{% raw %}
+
 	Article: Q38021
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -26,3 +28,5 @@ permalink: /kb/038/Q38021/
 	
 	To get your mouse cursor back again, redraw the screen with the "@"
 	command.
+
+{% endraw %}

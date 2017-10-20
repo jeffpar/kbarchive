@@ -6,6 +6,8 @@ permalink: /kb/057/Q57355/
 
 ## Q57355: Colored Buttons/Scroll Bars in BASIC 7.00 UI Toolbox
 
+{% raw %}
+
 	Article: Q57355
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -86,3 +88,5 @@ permalink: /kb/057/Q57355/
 	'ScrollBarBackground% to COLOR the scroll bar.
 	
 	CALL ButtonOpen (1, 1, "", 10, 30, 20, 30, 6)
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259754/
 
 ## Q259754: Zone Err Msg: Invalid Page Fault If a Player Shoots the Moon
 
+{% raw %}
+
 	Article: Q259754
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/259/Q259754/
 	
 	=============================================================================
 	
+
+{% endraw %}

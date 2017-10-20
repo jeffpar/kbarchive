@@ -6,6 +6,8 @@ permalink: /kb/104/Q104061/
 
 ## Q104061: PC WSPlus: Edit Gesture Does Not Work with Appointment Book
 
+{% raw %}
+
 	Article: Q104061
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -51,3 +53,5 @@ permalink: /kb/104/Q104061/
 	
 	=============================================================================
 	
+
+{% endraw %}

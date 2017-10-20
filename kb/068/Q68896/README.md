@@ -6,6 +6,8 @@ permalink: /kb/068/Q68896/
 
 ## Q68896: Setting a Startup Directory in WordPerfect 5.1
 
+{% raw %}
+
 	Article: Q68896
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/068/Q68896/
 	
 	=============================================================================
 	
+
+{% endraw %}

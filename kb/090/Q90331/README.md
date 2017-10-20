@@ -6,6 +6,8 @@ permalink: /kb/090/Q90331/
 
 ## Q90331: Cannot View Computer Name When Real-Mode Redirector Is Loaded
 
+{% raw %}
+
 	Article: Q90331
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -91,3 +93,5 @@ permalink: /kb/090/Q90331/
 	
 	=============================================================================
 	
+
+{% endraw %}

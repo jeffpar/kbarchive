@@ -6,6 +6,8 @@ permalink: /kb/200/Q200002/
 
 ## Q200002: SMS: Ismif16.exe From Command Line Allows No Spaces In Field
 
+{% raw %}
+
 	Article: Q200002
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -63,3 +65,5 @@ permalink: /kb/200/Q200002/
 	
 	=============================================================================
 	
+
+{% endraw %}

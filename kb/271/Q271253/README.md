@@ -6,6 +6,8 @@ permalink: /kb/271/Q271253/
 
 ## Q271253: Microsoft Reader Error Message: Error 0x8004005 (-2147467529)
 
+{% raw %}
+
 	Article: Q271253
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/271/Q271253/
 	
 	=============================================================================
 	
+
+{% endraw %}

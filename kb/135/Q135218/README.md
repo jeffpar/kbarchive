@@ -6,6 +6,8 @@ permalink: /kb/135/Q135218/
 
 ## Q135218: Double-Clicking Document Does Not Open It in WordPad
 
+{% raw %}
+
 	Article: Q135218
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/135/Q135218/
 	
 	=============================================================================
 	
+
+{% endraw %}

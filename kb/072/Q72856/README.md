@@ -6,6 +6,8 @@ permalink: /kb/072/Q72856/
 
 ## Q72856: Microlytic Applications Are Not Windows 3.0 Compatible
 
+{% raw %}
+
 	Article: Q72856
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/072/Q72856/
 	
 	=============================================================================
 	
+
+{% endraw %}

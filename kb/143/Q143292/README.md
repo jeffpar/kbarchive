@@ -6,6 +6,8 @@ permalink: /kb/143/Q143292/
 
 ## Q143292: INFO: Redistributing DAO Components with DAO Apps
 
+{% raw %}
+
 	Article: Q143292
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -167,3 +169,5 @@ permalink: /kb/143/Q143292/
 	
 	=============================================================================
 	
+
+{% endraw %}

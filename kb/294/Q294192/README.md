@@ -6,6 +6,8 @@ permalink: /kb/294/Q294192/
 
 ## Q294192: XCCC:  Assign 'Log On locally' Rights on Windows 2000 Domain
 
+{% raw %}
+
 	Article: Q294192
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -64,3 +66,5 @@ permalink: /kb/294/Q294192/
 	
 	=============================================================================
 	
+
+{% endraw %}

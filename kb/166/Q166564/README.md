@@ -6,6 +6,8 @@ permalink: /kb/166/Q166564/
 
 ## Q166564: XCLN: How to Not Convert Outbound Attachments to MacBinary
 
+{% raw %}
+
 	Article: Q166564
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -103,3 +105,5 @@ permalink: /kb/166/Q166564/
 	
 	=============================================================================
 	
+
+{% endraw %}

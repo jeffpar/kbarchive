@@ -6,6 +6,8 @@ permalink: /kb/174/Q174883/
 
 ## Q174883: DOC: ExitWindows Function Declaration Incorrect in API Viewer
 
+{% raw %}
+
 	Article: Q174883
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -72,3 +74,5 @@ permalink: /kb/174/Q174883/
 	
 	=============================================================================
 	
+
+{% endraw %}

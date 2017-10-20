@@ -6,6 +6,8 @@ permalink: /kb/126/Q126114/
 
 ## Q126114: Ultimate Haunted House README.WRI Contents
 
+{% raw %}
+
 	Article: Q126114
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -421,3 +423,5 @@ permalink: /kb/126/Q126114/
 	
 	=============================================================================
 	
+
+{% endraw %}

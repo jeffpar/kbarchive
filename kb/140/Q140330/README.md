@@ -6,6 +6,8 @@ permalink: /kb/140/Q140330/
 
 ## Q140330: Cannot Remote Control if Client Computer Name is in Lower Case
 
+{% raw %}
+
 	Article: Q140330
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -42,3 +44,5 @@ permalink: /kb/140/Q140330/
 	
 	=============================================================================
 	
+
+{% endraw %}

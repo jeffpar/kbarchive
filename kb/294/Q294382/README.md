@@ -6,6 +6,8 @@ permalink: /kb/294/Q294382/
 
 ## Q294382: Error 401.3 If &quot;Host Header&quot; Differs from Server's NetBIOS Name
 
+{% raw %}
+
 	Article: Q294382
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -103,3 +105,5 @@ permalink: /kb/294/Q294382/
 	
 	=============================================================================
 	
+
+{% endraw %}

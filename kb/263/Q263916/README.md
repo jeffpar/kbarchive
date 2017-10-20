@@ -6,6 +6,8 @@ permalink: /kb/263/Q263916/
 
 ## Q263916: XFOR: MS Mail Connector Stops Unexpectedly While Viewing Queue
 
+{% raw %}
+
 	Article: Q263916
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/263/Q263916/
 	
 	=============================================================================
 	
+
+{% endraw %}

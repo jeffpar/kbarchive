@@ -6,6 +6,8 @@ permalink: /kb/198/Q198938/
 
 ## Q198938: PRB: MSFLexGrid Redraw May Not Function Correctly
 
+{% raw %}
+
 	Article: Q198938
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -167,3 +169,5 @@ permalink: /kb/198/Q198938/
 	
 	=============================================================================
 	
+
+{% endraw %}

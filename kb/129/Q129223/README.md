@@ -6,6 +6,8 @@ permalink: /kb/129/Q129223/
 
 ## Q129223: Export to Timex Data Link Watch Overwrites Old Information
 
+{% raw %}
+
 	Article: Q129223
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -52,3 +54,5 @@ permalink: /kb/129/Q129223/
 	
 	=============================================================================
 	
+
+{% endraw %}

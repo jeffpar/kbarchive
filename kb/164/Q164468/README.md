@@ -6,6 +6,8 @@ permalink: /kb/164/Q164468/
 
 ## Q164468: XFOR: Hebrew or Arabic Microsoft Mail Message Body Corrupted
 
+{% raw %}
+
 	Article: Q164468
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/164/Q164468/
 	
 	=============================================================================
 	
+
+{% endraw %}

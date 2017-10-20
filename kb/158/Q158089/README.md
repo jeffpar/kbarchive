@@ -6,6 +6,8 @@ permalink: /kb/158/Q158089/
 
 ## Q158089: Internal Internet Links Do Not Work
 
+{% raw %}
+
 	Article: Q158089
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -60,3 +62,5 @@ permalink: /kb/158/Q158089/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159709/
 
 ## Q159709: Description of Microsoft Windows Encryption Pack 1
 
+{% raw %}
+
 	Article: Q159709
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -132,3 +134,5 @@ permalink: /kb/159/Q159709/
 	
 	=============================================================================
 	
+
+{% endraw %}

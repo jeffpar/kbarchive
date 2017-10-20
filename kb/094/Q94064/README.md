@@ -6,6 +6,8 @@ permalink: /kb/094/Q94064/
 
 ## Q94064: Installing IBM OS/2 1.3 on an ALR M.P.S System
 
+{% raw %}
+
 	Article: Q94064
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -110,3 +112,5 @@ permalink: /kb/094/Q94064/
 	
 	=============================================================================
 	
+
+{% endraw %}

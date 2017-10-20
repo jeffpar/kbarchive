@@ -6,6 +6,8 @@ permalink: /kb/087/Q87064/
 
 ## Q87064: MCI: How to Check to See If Mail Is Queued for the Gateway
 
+{% raw %}
+
 	Article: Q87064
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -43,3 +45,5 @@ permalink: /kb/087/Q87064/
 	
 	=============================================================================
 	
+
+{% endraw %}

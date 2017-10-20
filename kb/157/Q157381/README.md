@@ -6,6 +6,8 @@ permalink: /kb/157/Q157381/
 
 ## Q157381: WD97: Problems with Letter Wizard Contemporary Page Design
 
+{% raw %}
+
 	Article: Q157381
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -139,3 +141,5 @@ permalink: /kb/157/Q157381/
 	
 	=============================================================================
 	
+
+{% endraw %}

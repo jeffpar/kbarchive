@@ -6,6 +6,8 @@ permalink: /kb/246/Q246147/
 
 ## Q246147: FS2000: Computer Stops Responding After a Few Minutes of Play
 
+{% raw %}
+
 	Article: Q246147
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -69,3 +71,5 @@ permalink: /kb/246/Q246147/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40322/
 
 ## Q40322: Setting Up QuickC Version 2.00 on a Two-Floppy Machine
 
+{% raw %}
+
 	Article: Q40322
 	Product(s): See article
 	Version(s): 2.00   | 2.00
@@ -129,3 +131,5 @@ permalink: /kb/040/Q40322/
 	      1. Page 14, "Modifying CONFIG.SYS"
 	
 	      2. Page 13, "Setup Stage Three"
+
+{% endraw %}

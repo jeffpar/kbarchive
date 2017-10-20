@@ -6,6 +6,8 @@ permalink: /kb/131/Q131073/
 
 ## Q131073: Datagram Sends Fail if Route is Not in IPX Cache
 
+{% raw %}
+
 	Article: Q131073
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -72,3 +74,5 @@ permalink: /kb/131/Q131073/
 	
 	=============================================================================
 	
+
+{% endraw %}

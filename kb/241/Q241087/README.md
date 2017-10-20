@@ -6,6 +6,8 @@ permalink: /kb/241/Q241087/
 
 ## Q241087: SNA Server Stops Responding with Compaq Insight Manager 4.22
 
+{% raw %}
+
 	Article: Q241087
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,
@@ -114,3 +116,5 @@ permalink: /kb/241/Q241087/
 	
 	=============================================================================
 	
+
+{% endraw %}

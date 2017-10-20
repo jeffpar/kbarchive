@@ -6,6 +6,8 @@ permalink: /kb/108/Q108020/
 
 ## Q108020: Flight Simulator: Boeing 747 CDU Graphic Incorrect
 
+{% raw %}
+
 	Article: Q108020
 	Product(s): Microsoft Home Games
 	Version(s): 4.0
@@ -45,3 +47,5 @@ permalink: /kb/108/Q108020/
 	
 	=============================================================================
 	
+
+{% endraw %}

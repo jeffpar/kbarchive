@@ -6,6 +6,8 @@ permalink: /kb/239/Q239082/
 
 ## Q239082: XIMS: IMAP4 Client Hangs Attempting to Append Message Using SSL
 
+{% raw %}
+
 	Article: Q239082
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -100,3 +102,5 @@ permalink: /kb/239/Q239082/
 	
 	=============================================================================
 	
+
+{% endraw %}

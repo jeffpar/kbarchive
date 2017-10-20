@@ -6,6 +6,8 @@ permalink: /kb/134/Q134662/
 
 ## Q134662: Incorrect Time Reported in the Database for Last Software Scan
 
+{% raw %}
+
 	Article: Q134662
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -54,3 +56,5 @@ permalink: /kb/134/Q134662/
 	
 	=============================================================================
 	
+
+{% endraw %}

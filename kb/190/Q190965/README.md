@@ -6,6 +6,8 @@ permalink: /kb/190/Q190965/
 
 ## Q190965: PRB: IntelliSense Limitations with #define Macros
 
+{% raw %}
+
 	Article: Q190965
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:6.0
@@ -106,3 +108,5 @@ permalink: /kb/190/Q190965/
 	
 	=============================================================================
 	
+
+{% endraw %}

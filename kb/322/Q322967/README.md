@@ -6,6 +6,8 @@ permalink: /kb/322/Q322967/
 
 ## Q322967: SMS: Client Software Distribution Component May Not Be Upgraded
 
+{% raw %}
+
 	Article: Q322967
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -94,3 +96,5 @@ permalink: /kb/322/Q322967/
 	
 	=============================================================================
 	
+
+{% endraw %}

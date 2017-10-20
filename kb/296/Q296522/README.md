@@ -6,6 +6,8 @@ permalink: /kb/296/Q296522/
 
 ## Q296522: XADM: Can't Move Exch 5.5 Mailboxes w/ AD Users &amp; Computers
 
+{% raw %}
+
 	Article: Q296522
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -99,3 +101,5 @@ permalink: /kb/296/Q296522/
 	
 	=============================================================================
 	
+
+{% endraw %}

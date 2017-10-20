@@ -6,6 +6,8 @@ permalink: /kb/189/Q189839/
 
 ## Q189839: BUG: Uninstalling VB 5.0 via VB 6.0 Removes All ODBC DSNs
 
+{% raw %}
+
 	Article: Q189839
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -44,3 +46,5 @@ permalink: /kb/189/Q189839/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/304/Q304539/
 
 ## Q304539: BUG: Deploying Web Project by Label Returns &quot;Version Not Found&quot;
 
+{% raw %}
+
 	Article: Q304539
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -83,3 +85,5 @@ permalink: /kb/304/Q304539/
 	
 	=============================================================================
 	
+
+{% endraw %}

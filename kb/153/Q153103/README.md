@@ -6,6 +6,8 @@ permalink: /kb/153/Q153103/
 
 ## Q153103: XCON: MTA Terminates Unexpectedly in Large Nested DL Expansion
 
+{% raw %}
+
 	Article: Q153103
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -83,3 +85,5 @@ permalink: /kb/153/Q153103/
 	
 	=============================================================================
 	
+
+{% endraw %}

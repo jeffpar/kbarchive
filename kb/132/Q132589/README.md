@@ -6,6 +6,8 @@ permalink: /kb/132/Q132589/
 
 ## Q132589: Open Network Files Do Not Appear in Net Watcher
 
+{% raw %}
+
 	Article: Q132589
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/132/Q132589/
 	
 	=============================================================================
 	
+
+{% endraw %}

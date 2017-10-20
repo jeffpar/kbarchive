@@ -6,6 +6,8 @@ permalink: /kb/067/Q67711/
 
 ## Q67711: Using Windows User, Kernel, and GDI Symbols in CodeView
 
+{% raw %}
+
 	Article: Q67711
 	Product(s): Microsoft Programming Utilities
 	Version(s): 3.05,3.14,4.0,4.01,4.1
@@ -118,3 +120,5 @@ permalink: /kb/067/Q67711/
 	
 	=============================================================================
 	
+
+{% endraw %}

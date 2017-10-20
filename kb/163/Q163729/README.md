@@ -6,6 +6,8 @@ permalink: /kb/163/Q163729/
 
 ## Q163729: WD97: OLE Automation Fails When Using &quot;Word.Basic&quot; Object
 
+{% raw %}
+
 	Article: Q163729
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -127,3 +129,5 @@ permalink: /kb/163/Q163729/
 	
 	=============================================================================
 	
+
+{% endraw %}

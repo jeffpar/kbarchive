@@ -6,6 +6,8 @@ permalink: /kb/111/Q111651/
 
 ## Q111651: BUG: GetGlyphOutline() with GGO_BITMAP Fails with Large Scale
 
+{% raw %}
+
 	Article: Q111651
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -62,3 +64,5 @@ permalink: /kb/111/Q111651/
 	
 	=============================================================================
 	
+
+{% endraw %}

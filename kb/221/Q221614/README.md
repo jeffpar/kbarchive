@@ -6,6 +6,8 @@ permalink: /kb/221/Q221614/
 
 ## Q221614: FIX: Remote View Wizard Gives Error with Spaces in Table Name
 
+{% raw %}
+
 	Article: Q221614
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,5.0a,6.0
@@ -97,3 +99,5 @@ permalink: /kb/221/Q221614/
 	
 	=============================================================================
 	
+
+{% endraw %}

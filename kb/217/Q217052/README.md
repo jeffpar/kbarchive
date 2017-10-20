@@ -6,6 +6,8 @@ permalink: /kb/217/Q217052/
 
 ## Q217052: Modem Configuration File Is Not Copied During Modem Installation
 
+{% raw %}
+
 	Article: Q217052
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5
@@ -65,3 +67,5 @@ permalink: /kb/217/Q217052/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146032/
 
 ## Q146032: XCON: MTA: Invalid Originator Address When Sending to X.400
 
+{% raw %}
+
 	Article: Q146032
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -62,3 +64,5 @@ permalink: /kb/146/Q146032/
 	
 	=============================================================================
 	
+
+{% endraw %}

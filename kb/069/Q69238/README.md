@@ -6,6 +6,8 @@ permalink: /kb/069/Q69238/
 
 ## Q69238: Mac Srv Wkst: Mail and Public Folder Incompatibility
 
+{% raw %}
+
 	Article: Q69238
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/069/Q69238/
 	
 	=============================================================================
 	
+
+{% endraw %}

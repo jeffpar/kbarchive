@@ -6,6 +6,8 @@ permalink: /kb/130/Q130799/
 
 ## Q130799: PRB: Dragmode=1 Stops Click and Other Mouse Events from Firing
 
+{% raw %}
+
 	Article: Q130799
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -85,3 +87,5 @@ permalink: /kb/130/Q130799/
 	
 	=============================================================================
 	
+
+{% endraw %}

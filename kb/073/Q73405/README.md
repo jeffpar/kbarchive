@@ -6,6 +6,8 @@ permalink: /kb/073/Q73405/
 
 ## Q73405: DOSKEY Macros Supersede Internal Commands
 
+{% raw %}
+
 	Article: Q73405
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -45,3 +47,5 @@ permalink: /kb/073/Q73405/
 	
 	=============================================================================
 	
+
+{% endraw %}

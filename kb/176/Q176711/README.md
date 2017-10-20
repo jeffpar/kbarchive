@@ -6,6 +6,8 @@ permalink: /kb/176/Q176711/
 
 ## Q176711: Disconnecting from MSN Does Not Reset Your Modem to Answer Mode
 
+{% raw %}
+
 	Article: Q176711
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,95
@@ -67,3 +69,5 @@ permalink: /kb/176/Q176711/
 	
 	=============================================================================
 	
+
+{% endraw %}

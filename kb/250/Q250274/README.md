@@ -6,6 +6,8 @@ permalink: /kb/250/Q250274/
 
 ## Q250274: MS Cluster Server File Share Stops with Access Denied Error
 
+{% raw %}
+
 	Article: Q250274
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0
@@ -50,3 +52,5 @@ permalink: /kb/250/Q250274/
 	
 	=============================================================================
 	
+
+{% endraw %}

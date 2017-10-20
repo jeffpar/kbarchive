@@ -6,6 +6,8 @@ permalink: /kb/308/Q308215/
 
 ## Q308215: PRB: VFP ODBC Driver Causes Various Errors in Microsoft Products
 
+{% raw %}
+
 	Article: Q308215
 	Product(s): Microsoft FoxPro
 	Version(s): 1.0,2.0,3.0,4.0,5.0,6.0
@@ -100,3 +102,5 @@ permalink: /kb/308/Q308215/
 	
 	=============================================================================
 	
+
+{% endraw %}

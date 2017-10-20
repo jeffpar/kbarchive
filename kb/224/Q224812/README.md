@@ -6,6 +6,8 @@ permalink: /kb/224/Q224812/
 
 ## Q224812: Some Keys May Not Work if Canadian Stnd Keyboard Layout Selected
 
+{% raw %}
+
 	Article: Q224812
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -90,3 +92,5 @@ permalink: /kb/224/Q224812/
 	
 	=============================================================================
 	
+
+{% endraw %}

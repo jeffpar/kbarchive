@@ -6,6 +6,8 @@ permalink: /kb/171/Q171892/
 
 ## Q171892: Err Msg: The File System Does Not Support Compression
 
+{% raw %}
+
 	Article: Q171892
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -99,3 +101,5 @@ permalink: /kb/171/Q171892/
 	
 	=============================================================================
 	
+
+{% endraw %}

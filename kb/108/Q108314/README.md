@@ -6,6 +6,8 @@ permalink: /kb/108/Q108314/
 
 ## Q108314: Using More Than Four Communications Ports in Windows
 
+{% raw %}
+
 	Article: Q108314
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -85,3 +87,5 @@ permalink: /kb/108/Q108314/
 	
 	=============================================================================
 	
+
+{% endraw %}

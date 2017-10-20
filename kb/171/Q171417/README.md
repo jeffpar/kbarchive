@@ -6,6 +6,8 @@ permalink: /kb/171/Q171417/
 
 ## Q171417: SNA Server Setup Does Not Support Long Paths and Filenames
 
+{% raw %}
+
 	Article: Q171417
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1; winnt:3.0 SP1
@@ -86,3 +88,5 @@ permalink: /kb/171/Q171417/
 	
 	=============================================================================
 	
+
+{% endraw %}

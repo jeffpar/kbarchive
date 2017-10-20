@@ -6,6 +6,8 @@ permalink: /kb/235/Q235826/
 
 ## Q235826: SMS: Error Message 2703 Indicating That Valid MIFs Are Corrupted
 
+{% raw %}
+
 	Article: Q235826
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -90,3 +92,5 @@ permalink: /kb/235/Q235826/
 	
 	=============================================================================
 	
+
+{% endraw %}

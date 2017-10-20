@@ -6,6 +6,8 @@ permalink: /kb/163/Q163799/
 
 ## Q163799: PRB: Olegraph.scx Sample Fails if Graph 8 Is Installed
 
+{% raw %}
+
 	Article: Q163799
 	Product(s): Microsoft FoxPro
 	Version(s): 5.00 5.00a
@@ -100,3 +102,5 @@ permalink: /kb/163/Q163799/
 	
 	=============================================================================
 	
+
+{% endraw %}

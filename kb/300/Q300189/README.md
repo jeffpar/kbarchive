@@ -6,6 +6,8 @@ permalink: /kb/300/Q300189/
 
 ## Q300189: PRB: Paradox ISAM Does Not Support Some Paradox 4.x Types
 
+{% raw %}
+
 	Article: Q300189
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.51,3.6,5.0,6.0,6.0 SP3,6.0 SP4,6.0 SP5
@@ -55,3 +57,5 @@ permalink: /kb/300/Q300189/
 	
 	=============================================================================
 	
+
+{% endraw %}

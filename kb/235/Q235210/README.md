@@ -6,6 +6,8 @@ permalink: /kb/235/Q235210/
 
 ## Q235210: SMS: Site Unable to Remove CAP
 
+{% raw %}
+
 	Article: Q235210
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -163,3 +165,5 @@ permalink: /kb/235/Q235210/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190465/
 
 ## Q190465: PRB: &quot;Edit Redo&quot; Not Available for Text Box
 
+{% raw %}
+
 	Article: Q190465
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -72,3 +74,5 @@ permalink: /kb/190/Q190465/
 	
 	=============================================================================
 	
+
+{% endraw %}

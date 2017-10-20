@@ -6,6 +6,8 @@ permalink: /kb/089/Q89945/
 
 ## Q89945: Windows 3.1 Automated Setup May Show Incorrect Machine Type
 
+{% raw %}
+
 	Article: Q89945
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/089/Q89945/
 	
 	=============================================================================
 	
+
+{% endraw %}

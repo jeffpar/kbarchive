@@ -6,6 +6,8 @@ permalink: /kb/208/Q208879/
 
 ## Q208879: Urban Assault: Graphic Elements Are Not Displayed Correctly
 
+{% raw %}
+
 	Article: Q208879
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/208/Q208879/
 	
 	=============================================================================
 	
+
+{% endraw %}

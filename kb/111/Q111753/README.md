@@ -6,6 +6,8 @@ permalink: /kb/111/Q111753/
 
 ## Q111753: DOC: assert() Macro Does Not Display Pop-Up Window in Win32
 
+{% raw %}
+
 	Article: Q111753
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -88,3 +90,5 @@ permalink: /kb/111/Q111753/
 	
 	=============================================================================
 	
+
+{% endraw %}

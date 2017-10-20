@@ -6,6 +6,8 @@ permalink: /kb/159/Q159045/
 
 ## Q159045: Error Message: Tape Drive Error Detected
 
+{% raw %}
+
 	Article: Q159045
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/159/Q159045/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134549/
 
 ## Q134549: Cannot Restart Computer with Modified File Open in AutoCadLT
 
+{% raw %}
+
 	Article: Q134549
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/134/Q134549/
 	
 	=============================================================================
 	
+
+{% endraw %}

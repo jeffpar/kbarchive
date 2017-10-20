@@ -6,6 +6,8 @@ permalink: /kb/170/Q170918/
 
 ## Q170918: HOWTO: Use ShellExecute to Launch Associated File (32-bit)
 
+{% raw %}
+
 	Article: Q170918
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -185,3 +187,5 @@ permalink: /kb/170/Q170918/
 	
 	=============================================================================
 	
+
+{% endraw %}

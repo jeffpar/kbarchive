@@ -6,6 +6,8 @@ permalink: /kb/153/Q153794/
 
 ## Q153794: FIX: Error #36 in dofoxdoc(0) While Running Documenting Wizard
 
+{% raw %}
+
 	Article: Q153794
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -88,3 +90,5 @@ permalink: /kb/153/Q153794/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/042/Q42472/
 
 ## Q42472: BASIC Cannot Get Child Process' Return Code or &quot;Error Level&quot;
 
+{% raw %}
+
 	Article: Q42472
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -85,3 +87,5 @@ permalink: /kb/042/Q42472/
 	REM correctly returns a return code of 5.
 	ERRCODE.EXE
 	IF ERRORLEVEL 5 ECHO THE RETURN CODE IS 5
+
+{% endraw %}

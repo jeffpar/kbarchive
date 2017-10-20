@@ -6,6 +6,8 @@ permalink: /kb/186/Q186876/
 
 ## Q186876: PRB: Width_Access Method Fires When Height Changes
 
+{% raw %}
+
 	Article: Q186876
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -65,3 +67,5 @@ permalink: /kb/186/Q186876/
 	
 	=============================================================================
 	
+
+{% endraw %}

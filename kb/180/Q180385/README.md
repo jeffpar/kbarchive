@@ -6,6 +6,8 @@ permalink: /kb/180/Q180385/
 
 ## Q180385: FIX: AppWizard Sometimes Fails to Display the Platforms Option
 
+{% raw %}
+
 	Article: Q180385
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0;win95:5.0
@@ -84,3 +86,5 @@ permalink: /kb/180/Q180385/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/203/Q203661/
 
 ## Q203661: Error Message: Windows Has Encountered a Problem Accessing Mmsys
 
+{% raw %}
+
 	Article: Q203661
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/203/Q203661/
 	
 	=============================================================================
 	
+
+{% endraw %}

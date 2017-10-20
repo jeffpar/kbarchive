@@ -6,6 +6,8 @@ permalink: /kb/171/Q171267/
 
 ## Q171267: How to Install Remote Access Service in Windows NT 3.51
 
+{% raw %}
+
 	Article: Q171267
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:3.51
@@ -85,3 +87,5 @@ permalink: /kb/171/Q171267/
 	
 	=============================================================================
 	
+
+{% endraw %}

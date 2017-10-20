@@ -6,6 +6,8 @@ permalink: /kb/113/Q113323/
 
 ## Q113323: PPT: Shortcut Keys for Superscript and Subscript Text
 
+{% raw %}
+
 	Article: Q113323
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,7.0
@@ -54,3 +56,5 @@ permalink: /kb/113/Q113323/
 	
 	=============================================================================
 	
+
+{% endraw %}

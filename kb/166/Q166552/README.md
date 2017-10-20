@@ -6,6 +6,8 @@ permalink: /kb/166/Q166552/
 
 ## Q166552: XADM: Starting the IMS Causes the Information Store to Stop
 
+{% raw %}
+
 	Article: Q166552
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -47,3 +49,5 @@ permalink: /kb/166/Q166552/
 	
 	=============================================================================
 	
+
+{% endraw %}

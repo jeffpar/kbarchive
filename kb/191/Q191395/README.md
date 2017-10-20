@@ -6,6 +6,8 @@ permalink: /kb/191/Q191395/
 
 ## Q191395: SNA Client APPC and RUI/SLI Applications May Seem Slow
 
+{% raw %}
+
 	Article: Q191395
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP3,4.0,4.0 SP1
@@ -80,3 +82,5 @@ permalink: /kb/191/Q191395/
 	
 	=============================================================================
 	
+
+{% endraw %}

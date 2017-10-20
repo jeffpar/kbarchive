@@ -6,6 +6,8 @@ permalink: /kb/087/Q87408/
 
 ## Q87408: PC DB: Symptoms of Not Having a KEY File
 
+{% raw %}
+
 	Article: Q87408
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -61,3 +63,5 @@ permalink: /kb/087/Q87408/
 	
 	=============================================================================
 	
+
+{% endraw %}

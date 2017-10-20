@@ -6,6 +6,8 @@ permalink: /kb/184/Q184339/
 
 ## Q184339: How to Configure Outlook Express to Automatically Check MSN Mail
 
+{% raw %}
+
 	Article: Q184339
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,4.0
@@ -80,3 +82,5 @@ permalink: /kb/184/Q184339/
 	
 	=============================================================================
 	
+
+{% endraw %}

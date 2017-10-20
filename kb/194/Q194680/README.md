@@ -6,6 +6,8 @@ permalink: /kb/194/Q194680/
 
 ## Q194680: Blue Screen in KMODE_EXCEPTION_NOT_HANDLED with Compaq Driver
 
+{% raw %}
+
 	Article: Q194680
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/194/Q194680/
 	
 	=============================================================================
 	
+
+{% endraw %}

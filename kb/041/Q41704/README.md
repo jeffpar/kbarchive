@@ -6,6 +6,8 @@ permalink: /kb/041/Q41704/
 
 ## Q41704: QuickC 2.00, Watch Statement on Implicit Length Arrays
 
+{% raw %}
+
 	Article: Q41704
 	Product(s): See article
 	Version(s): 2.00
@@ -48,3 +50,5 @@ permalink: /kb/041/Q41704/
 	following, as expected:
 	
 	   y {1,2,3,4,5}
+
+{% endraw %}

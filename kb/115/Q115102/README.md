@@ -6,6 +6,8 @@ permalink: /kb/115/Q115102/
 
 ## Q115102: Err Msg: Error 530: Invalid Logon Sequence
 
+{% raw %}
+
 	Article: Q115102
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -53,3 +55,5 @@ permalink: /kb/115/Q115102/
 	
 	=============================================================================
 	
+
+{% endraw %}

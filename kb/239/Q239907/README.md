@@ -6,6 +6,8 @@ permalink: /kb/239/Q239907/
 
 ## Q239907: Too Many Printers Can Cause Unsuccessful Boot
 
+{% raw %}
+
 	Article: Q239907
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -162,3 +164,5 @@ permalink: /kb/239/Q239907/
 	
 	=============================================================================
 	
+
+{% endraw %}

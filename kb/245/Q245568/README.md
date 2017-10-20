@@ -6,6 +6,8 @@ permalink: /kb/245/Q245568/
 
 ## Q245568: XFOR: Workgroup Postoffice Migration to Exchange Server May Hang
 
+{% raw %}
+
 	Article: Q245568
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; winnt:5.5
@@ -65,3 +67,5 @@ permalink: /kb/245/Q245568/
 	
 	=============================================================================
 	
+
+{% endraw %}

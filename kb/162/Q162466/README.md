@@ -6,6 +6,8 @@ permalink: /kb/162/Q162466/
 
 ## Q162466: NTFS and DISK Synchronous Request Never Completes
 
+{% raw %}
+
 	Article: Q162466
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/162/Q162466/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138396/
 
 ## Q138396: HOWTO: Use the Default Windows Printer in Visual FoxPro
 
+{% raw %}
+
 	Article: Q138396
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/138/Q138396/
 	
 	=============================================================================
 	
+
+{% endraw %}

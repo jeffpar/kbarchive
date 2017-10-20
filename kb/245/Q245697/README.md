@@ -6,6 +6,8 @@ permalink: /kb/245/Q245697/
 
 ## Q245697: Domain User Can Avoid a Remote Shutdown
 
+{% raw %}
+
 	Article: Q245697
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6
@@ -53,3 +55,5 @@ permalink: /kb/245/Q245697/
 	
 	=============================================================================
 	
+
+{% endraw %}

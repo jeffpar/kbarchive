@@ -6,6 +6,8 @@ permalink: /kb/196/Q196713/
 
 ## Q196713: Stop 0x0000000A in Nwlnkipx Source Routing Info &gt; 18 Bytes
 
+{% raw %}
+
 	Article: Q196713
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -71,3 +73,5 @@ permalink: /kb/196/Q196713/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145675/
 
 ## Q145675: Pregnancy: Who Can I Send Suggestions To?
 
+{% raw %}
+
 	Article: Q145675
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -41,3 +43,5 @@ permalink: /kb/145/Q145675/
 	
 	=============================================================================
 	
+
+{% endraw %}

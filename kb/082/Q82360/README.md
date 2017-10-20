@@ -6,6 +6,8 @@ permalink: /kb/082/Q82360/
 
 ## Q82360: &quot;SatisFAXtion Board Is Busy&quot; Message With FAX.EXE
 
+{% raw %}
+
 	Article: Q82360
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/082/Q82360/
 	
 	=============================================================================
 	
+
+{% endraw %}

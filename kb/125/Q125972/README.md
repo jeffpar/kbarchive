@@ -6,6 +6,8 @@ permalink: /kb/125/Q125972/
 
 ## Q125972: MS WIN 3.1 STEP BY STEP: Corrections and Comments
 
+{% raw %}
+
 	Article: Q125972
 	Product(s): Microsoft Press
 	Version(s): 
@@ -124,3 +126,5 @@ permalink: /kb/125/Q125972/
 	
 	=============================================================================
 	
+
+{% endraw %}

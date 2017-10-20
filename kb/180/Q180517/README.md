@@ -6,6 +6,8 @@ permalink: /kb/180/Q180517/
 
 ## Q180517: XFOR: Customizing Dirsync Between Exchange and Notes
 
+{% raw %}
+
 	Article: Q180517
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -682,3 +684,5 @@ permalink: /kb/180/Q180517/
 	
 	=============================================================================
 	
+
+{% endraw %}

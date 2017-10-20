@@ -6,6 +6,8 @@ permalink: /kb/242/Q242875/
 
 ## Q242875: How to Use WinWord to Convert RTF Files to Windows DOC Files
 
+{% raw %}
+
 	Article: Q242875
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0
@@ -98,3 +100,5 @@ permalink: /kb/242/Q242875/
 	
 	=============================================================================
 	
+
+{% endraw %}

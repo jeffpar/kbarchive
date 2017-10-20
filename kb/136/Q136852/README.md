@@ -6,6 +6,8 @@ permalink: /kb/136/Q136852/
 
 ## Q136852: FIX: Objects Are Missing the Destroy Event
 
+{% raw %}
+
 	Article: Q136852
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -49,3 +51,5 @@ permalink: /kb/136/Q136852/
 	
 	=============================================================================
 	
+
+{% endraw %}

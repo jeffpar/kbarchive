@@ -6,6 +6,8 @@ permalink: /kb/143/Q143048/
 
 ## Q143048: BUG: Form Unload in Any DBGrid Event Ends Visual Basic
 
+{% raw %}
+
 	Article: Q143048
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -119,3 +121,5 @@ permalink: /kb/143/Q143048/
 	
 	=============================================================================
 	
+
+{% endraw %}

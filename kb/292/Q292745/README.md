@@ -6,6 +6,8 @@ permalink: /kb/292/Q292745/
 
 ## Q292745: Programming Windows with MFC, Second Edition Comments and Correc
 
+{% raw %}
+
 	Article: Q292745
 	Product(s): Microsoft Press
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/292/Q292745/
 	
 	=============================================================================
 	
+
+{% endraw %}

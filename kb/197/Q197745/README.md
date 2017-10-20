@@ -6,6 +6,8 @@ permalink: /kb/197/Q197745/
 
 ## Q197745: WD97: Fields in Header/Footer Not Merged in E-Mail Attachment
 
+{% raw %}
+
 	Article: Q197745
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/197/Q197745/
 	
 	=============================================================================
 	
+
+{% endraw %}

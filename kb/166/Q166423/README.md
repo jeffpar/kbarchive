@@ -6,6 +6,8 @@ permalink: /kb/166/Q166423/
 
 ## Q166423: Access Violation in SERVICES.EXE in EVENTLOG.DLL
 
+{% raw %}
+
 	Article: Q166423
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -66,3 +68,5 @@ permalink: /kb/166/Q166423/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132973/
 
 ## Q132973: FIX: OLE Automation After Loading Word Manually Gives GP Fault
 
+{% raw %}
+
 	Article: Q132973
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -81,3 +83,5 @@ permalink: /kb/132/Q132973/
 	
 	=============================================================================
 	
+
+{% endraw %}

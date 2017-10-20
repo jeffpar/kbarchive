@@ -6,6 +6,8 @@ permalink: /kb/242/Q242009/
 
 ## Q242009: Stop 0x0000000A Error in Tcpip.sys Caused by Damaged Packets
 
+{% raw %}
+
 	Article: Q242009
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -102,3 +104,5 @@ permalink: /kb/242/Q242009/
 	
 	=============================================================================
 	
+
+{% endraw %}

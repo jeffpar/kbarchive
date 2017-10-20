@@ -6,6 +6,8 @@ permalink: /kb/182/Q182245/
 
 ## Q182245: WD97: Word Hangs When Creating New Template from Custom Template
 
+{% raw %}
+
 	Article: Q182245
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/182/Q182245/
 	
 	=============================================================================
 	
+
+{% endraw %}

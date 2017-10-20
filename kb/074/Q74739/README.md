@@ -6,6 +6,8 @@ permalink: /kb/074/Q74739/
 
 ## Q74739: Implicit Casting by C Compiler Can Cause Problems
 
+{% raw %}
+
 	Article: Q74739
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -100,3 +102,5 @@ permalink: /kb/074/Q74739/
 	
 	=============================================================================
 	
+
+{% endraw %}

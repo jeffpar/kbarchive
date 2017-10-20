@@ -6,6 +6,8 @@ permalink: /kb/164/Q164252/
 
 ## Q164252: FIX: Receiving Error When Selecting 254th Item in List Box
 
+{% raw %}
+
 	Article: Q164252
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -107,3 +109,5 @@ permalink: /kb/164/Q164252/
 	
 	=============================================================================
 	
+
+{% endraw %}

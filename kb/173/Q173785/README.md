@@ -6,6 +6,8 @@ permalink: /kb/173/Q173785/
 
 ## Q173785: SMS: RService Does Not Stop a Service Before an Uninstall
 
+{% raw %}
+
 	Article: Q173785
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -62,3 +64,5 @@ permalink: /kb/173/Q173785/
 	
 	=============================================================================
 	
+
+{% endraw %}

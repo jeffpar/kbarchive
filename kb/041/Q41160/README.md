@@ -6,6 +6,8 @@ permalink: /kb/041/Q41160/
 
 ## Q41160: Getpid under DOS Is Not Functional
 
+{% raw %}
+
 	Article: Q41160
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -19,3 +21,5 @@ permalink: /kb/041/Q41160/
 	DOS is a single-tasking operating system, so it does not generate a
 	process ID and the Getpid function should not be used. Getpid is
 	intended to be used with OS/2 and serves no purpose under DOS.
+
+{% endraw %}

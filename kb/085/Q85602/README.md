@@ -6,6 +6,8 @@ permalink: /kb/085/Q85602/
 
 ## Q85602: FAX: What Occurs in the Event of a Mail Failure
 
+{% raw %}
+
 	Article: Q85602
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -43,3 +45,5 @@ permalink: /kb/085/Q85602/
 	
 	=============================================================================
 	
+
+{% endraw %}

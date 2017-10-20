@@ -6,6 +6,8 @@ permalink: /kb/106/Q106564/
 
 ## Q106564: FIX: Debugger Error EE0044 for Arrays If Lower Bound Not 1
 
+{% raw %}
+
 	Article: Q106564
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -101,3 +103,5 @@ permalink: /kb/106/Q106564/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156789/
 
 ## Q156789: Writer 2: Large Metafiles Decrease Program Performance
 
+{% raw %}
+
 	Article: Q156789
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -48,3 +50,5 @@ permalink: /kb/156/Q156789/
 	
 	=============================================================================
 	
+
+{% endraw %}

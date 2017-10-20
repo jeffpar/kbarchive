@@ -6,6 +6,8 @@ permalink: /kb/078/Q78505/
 
 ## Q78505: No Warning Beep with MS-DOS 4.x, 5.0 BACKUP Utility
 
+{% raw %}
+
 	Article: Q78505
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.0
@@ -36,3 +38,5 @@ permalink: /kb/078/Q78505/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68068/
 
 ## Q68068: Development Environment Required to Use Windows DDK
 
+{% raw %}
+
 	Article: Q68068
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -67,3 +69,5 @@ permalink: /kb/068/Q68068/
 	
 	=============================================================================
 	
+
+{% endraw %}

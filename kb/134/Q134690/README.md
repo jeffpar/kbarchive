@@ -6,6 +6,8 @@ permalink: /kb/134/Q134690/
 
 ## Q134690: INVDOS Fails When Inventorying an Unformatted Partition
 
+{% raw %}
+
 	Article: Q134690
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134690/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58336/
 
 ## Q58336: Windows 3.0 WIN.INI &#91;colors&#93; Section
 
+{% raw %}
+
 	Article: Q58336
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -106,3 +108,5 @@ permalink: /kb/058/Q58336/
 	
 	=============================================================================
 	
+
+{% endraw %}

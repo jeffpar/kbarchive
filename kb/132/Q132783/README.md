@@ -6,6 +6,8 @@ permalink: /kb/132/Q132783/
 
 ## Q132783: Norton Navigator Causes Page Fault During Hardware Detection
 
+{% raw %}
+
 	Article: Q132783
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/132/Q132783/
 	
 	=============================================================================
 	
+
+{% endraw %}

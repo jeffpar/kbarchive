@@ -6,6 +6,8 @@ permalink: /kb/167/Q167247/
 
 ## Q167247: XFOR: Dirsync Fails to Import Addresses with Template Info
 
+{% raw %}
+
 	Article: Q167247
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -55,3 +57,5 @@ permalink: /kb/167/Q167247/
 	
 	=============================================================================
 	
+
+{% endraw %}

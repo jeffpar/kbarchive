@@ -6,6 +6,8 @@ permalink: /kb/234/Q234638/
 
 ## Q234638: XADM: Server Location and Public Folder Access
 
+{% raw %}
+
 	Article: Q234638
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -105,3 +107,5 @@ permalink: /kb/234/Q234638/
 	
 	=============================================================================
 	
+
+{% endraw %}

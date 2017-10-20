@@ -6,6 +6,8 @@ permalink: /kb/161/Q161679/
 
 ## Q161679: Kids Plus!: Quit Button Saves Changes to Embedded Objects
 
+{% raw %}
+
 	Article: Q161679
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/161/Q161679/
 	
 	=============================================================================
 	
+
+{% endraw %}

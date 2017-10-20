@@ -6,6 +6,8 @@ permalink: /kb/047/Q47031/
 
 ## Q47031: .Startup Not Interchangeable with ORG Instruction, Tiny Model
 
+{% raw %}
+
 	Article: Q47031
 	Product(s): See article
 	Version(s): 2.01
@@ -27,3 +29,5 @@ permalink: /kb/047/Q47031/
 	initializes DS, SS, and SP, as necessary.
 	
 	Be sure to use .Exit as well as .Startup to avoid other errors.
+
+{% endraw %}

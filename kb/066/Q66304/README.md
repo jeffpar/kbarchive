@@ -6,6 +6,8 @@ permalink: /kb/066/Q66304/
 
 ## Q66304: Daybook: Toolbook Setup Disks (5.25 Inch, 360K)
 
+{% raw %}
+
 	Article: Q66304
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0
@@ -71,3 +73,5 @@ permalink: /kb/066/Q66304/
 	
 	=============================================================================
 	
+
+{% endraw %}

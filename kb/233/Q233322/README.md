@@ -6,6 +6,8 @@ permalink: /kb/233/Q233322/
 
 ## Q233322: Computer Hangs at Shutdown If Anti-Virus Software Is Installed
 
+{% raw %}
+
 	Article: Q233322
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -102,3 +104,5 @@ permalink: /kb/233/Q233322/
 	
 	=============================================================================
 	
+
+{% endraw %}

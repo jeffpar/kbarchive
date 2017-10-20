@@ -6,6 +6,8 @@ permalink: /kb/147/Q147863/
 
 ## Q147863: MSB Ocean and MSB Earth: Problems Starting in Windows 3.x
 
+{% raw %}
+
 	Article: Q147863
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,3.x
@@ -173,3 +175,5 @@ permalink: /kb/147/Q147863/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141912/
 
 ## Q141912: PRB: AutoOpenTables/AutoCloseTables Ignored in Program
 
+{% raw %}
+
 	Article: Q141912
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -97,3 +99,5 @@ permalink: /kb/141/Q141912/
 	
 	=============================================================================
 	
+
+{% endraw %}

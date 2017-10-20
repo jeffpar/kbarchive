@@ -6,6 +6,8 @@ permalink: /kb/172/Q172797/
 
 ## Q172797: Windows NT Printing is Slower than OS/2
 
+{% raw %}
+
 	Article: Q172797
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/172/Q172797/
 	
 	=============================================================================
 	
+
+{% endraw %}

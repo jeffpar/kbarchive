@@ -6,6 +6,8 @@ permalink: /kb/162/Q162085/
 
 ## Q162085: FIX: Using SET COLOR TO &amp; Printing a Report Prints Blank Page
 
+{% raw %}
+
 	Article: Q162085
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b
@@ -90,3 +92,5 @@ permalink: /kb/162/Q162085/
 	
 	=============================================================================
 	
+
+{% endraw %}

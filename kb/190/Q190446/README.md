@@ -6,6 +6,8 @@ permalink: /kb/190/Q190446/
 
 ## Q190446: Restricting Access to TN3270 LUs
 
+{% raw %}
+
 	Article: Q190446
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -110,3 +112,5 @@ permalink: /kb/190/Q190446/
 	
 	=============================================================================
 	
+
+{% endraw %}

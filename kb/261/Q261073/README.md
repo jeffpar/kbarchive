@@ -6,6 +6,8 @@ permalink: /kb/261/Q261073/
 
 ## Q261073: MCM2: Game Stops Responding When You Select Motorcycle or Rider
 
+{% raw %}
+
 	Article: Q261073
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -60,3 +62,5 @@ permalink: /kb/261/Q261073/
 	
 	=============================================================================
 	
+
+{% endraw %}

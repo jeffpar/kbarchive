@@ -6,6 +6,8 @@ permalink: /kb/320/Q320200/
 
 ## Q320200: MTA Does Not Start After You Apply Service Pack 4
 
+{% raw %}
+
 	Article: Q320200
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -153,3 +155,5 @@ permalink: /kb/320/Q320200/
 	
 	=============================================================================
 	
+
+{% endraw %}

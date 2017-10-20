@@ -6,6 +6,8 @@ permalink: /kb/187/Q187070/
 
 ## Q187070: Office 97 Uninstall Program Does Not Clean Registry
 
+{% raw %}
+
 	Article: Q187070
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -43,3 +45,5 @@ permalink: /kb/187/Q187070/
 	
 	=============================================================================
 	
+
+{% endraw %}

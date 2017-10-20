@@ -6,6 +6,8 @@ permalink: /kb/069/Q69164/
 
 ## Q69164: BASIC Uses Radians, Not Degrees, for Trigonometric Functions
 
+{% raw %}
+
 	Article: Q69164
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -60,3 +62,5 @@ permalink: /kb/069/Q69164/
 	
 	' Now, convert X to radians before passing to the SIN function:
 	PRINT SIN(X * PI / 180)  'This gives .7071068 as the SIN of 45 degrees
+
+{% endraw %}

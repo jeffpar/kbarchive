@@ -6,6 +6,8 @@ permalink: /kb/149/Q149417/
 
 ## Q149417: Users Can't Copy Common Group Program Icons to Personal Group
 
+{% raw %}
+
 	Article: Q149417
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.5,3.51
@@ -51,3 +53,5 @@ permalink: /kb/149/Q149417/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64850/
 
 ## Q64850: AT&amp;T 60386-25 Phoenix BIOS FB12 Needs Update to FB15
 
+{% raw %}
+
 	Article: Q64850
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -40,3 +42,5 @@ permalink: /kb/064/Q64850/
 	
 	=============================================================================
 	
+
+{% endraw %}

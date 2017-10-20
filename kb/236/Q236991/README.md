@@ -6,6 +6,8 @@ permalink: /kb/236/Q236991/
 
 ## Q236991: PRB: Unrecognized Database Format Error w/ Access 2000 Database
 
+{% raw %}
+
 	Article: Q236991
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -111,3 +113,5 @@ permalink: /kb/236/Q236991/
 	
 	=============================================================================
 	
+
+{% endraw %}

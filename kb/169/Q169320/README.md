@@ -6,6 +6,8 @@ permalink: /kb/169/Q169320/
 
 ## Q169320: Connect Using The Modem Option Unavailable in Internet Mail
 
+{% raw %}
+
 	Article: Q169320
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/169/Q169320/
 	
 	=============================================================================
 	
+
+{% endraw %}

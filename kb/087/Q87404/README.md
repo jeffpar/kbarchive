@@ -6,6 +6,8 @@ permalink: /kb/087/Q87404/
 
 ## Q87404: PC DB: What the TID.GLB File Is Used For
 
+{% raw %}
+
 	Article: Q87404
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -42,3 +44,5 @@ permalink: /kb/087/Q87404/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194622/
 
 ## Q194622: No SNA Manager Status Changes When TN3270 Session Load Under 30K
 
+{% raw %}
+
 	Article: Q194622
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -59,3 +61,5 @@ permalink: /kb/194/Q194622/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130429/
 
 ## Q130429: One-Minute Appointment Doesn't Appear in Planner
 
+{% raw %}
+
 	Article: Q130429
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -40,3 +42,5 @@ permalink: /kb/130/Q130429/
 	
 	=============================================================================
 	
+
+{% endraw %}

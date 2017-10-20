@@ -6,6 +6,8 @@ permalink: /kb/170/Q170400/
 
 ## Q170400: Unauthorized Program Can Be Installed and Run on ZAK Workstation
 
+{% raw %}
+
 	Article: Q170400
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0
@@ -86,3 +88,5 @@ permalink: /kb/170/Q170400/
 	
 	=============================================================================
 	
+
+{% endraw %}

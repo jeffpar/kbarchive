@@ -6,6 +6,8 @@ permalink: /kb/150/Q150196/
 
 ## Q150196: BUG: AutoSize Feature of Sheridan Command Button Does Not Work
 
+{% raw %}
+
 	Article: Q150196
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/150/Q150196/
 	
 	=============================================================================
 	
+
+{% endraw %}

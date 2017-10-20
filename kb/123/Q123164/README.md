@@ -6,6 +6,8 @@ permalink: /kb/123/Q123164/
 
 ## Q123164: Windows 95 Err Msg: The Above Model Is Not Supported By...
 
+{% raw %}
+
 	Article: Q123164
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/123/Q123164/
 	
 	=============================================================================
 	
+
+{% endraw %}

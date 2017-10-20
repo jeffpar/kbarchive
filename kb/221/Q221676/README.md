@@ -6,6 +6,8 @@ permalink: /kb/221/Q221676/
 
 ## Q221676: FIX: &quot;Error #1234 in remotizeviews&quot; Using SQL Upsizing Wizard
 
+{% raw %}
+
 	Article: Q221676
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -63,3 +65,5 @@ permalink: /kb/221/Q221676/
 	
 	=============================================================================
 	
+
+{% endraw %}

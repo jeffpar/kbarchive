@@ -6,6 +6,8 @@ permalink: /kb/143/Q143191/
 
 ## Q143191: Real Audio Is Supported on Windows NT Internet Explorer
 
+{% raw %}
+
 	Article: Q143191
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -38,3 +40,5 @@ permalink: /kb/143/Q143191/
 	
 	=============================================================================
 	
+
+{% endraw %}

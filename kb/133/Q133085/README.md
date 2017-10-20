@@ -6,6 +6,8 @@ permalink: /kb/133/Q133085/
 
 ## Q133085: EPS Picture Appears Transparent on PCL Printers
 
+{% raw %}
+
 	Article: Q133085
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -66,3 +68,5 @@ permalink: /kb/133/Q133085/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195225/
 
 ## Q195225: PRB: DAO Run-Time Error 3146 When Modifying SQLServer Data
 
+{% raw %}
+
 	Article: Q195225
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -145,3 +147,5 @@ permalink: /kb/195/Q195225/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190263/
 
 ## Q190263: PRB: Hyperlink Object Cannot NavigateTo Name With DBCS
 
+{% raw %}
+
 	Article: Q190263
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -72,3 +74,5 @@ permalink: /kb/190/Q190263/
 	
 	=============================================================================
 	
+
+{% endraw %}

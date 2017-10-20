@@ -6,6 +6,8 @@ permalink: /kb/139/Q139472/
 
 ## Q139472: ESS488 Sound Card Cannot Be Configured for IRQ 10
 
+{% raw %}
+
 	Article: Q139472
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -49,3 +51,5 @@ permalink: /kb/139/Q139472/
 	
 	=============================================================================
 	
+
+{% endraw %}

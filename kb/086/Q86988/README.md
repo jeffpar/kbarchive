@@ -6,6 +6,8 @@ permalink: /kb/086/Q86988/
 
 ## Q86988: X400: How MTAs Initiate and Communicate
 
+{% raw %}
+
 	Article: Q86988
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -118,3 +120,5 @@ permalink: /kb/086/Q86988/
 	
 	=============================================================================
 	
+
+{% endraw %}

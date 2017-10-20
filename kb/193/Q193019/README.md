@@ -6,6 +6,8 @@ permalink: /kb/193/Q193019/
 
 ## Q193019: BUG: Type Mismatch Error Erasing a Fixed-Size Array in UDT
 
+{% raw %}
+
 	Article: Q193019
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -85,3 +87,5 @@ permalink: /kb/193/Q193019/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148330/
 
 ## Q148330: BUG: ODBC: SQLGetProp Causes IC Error in Debug Window
 
+{% raw %}
+
 	Article: Q148330
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b
@@ -78,3 +80,5 @@ permalink: /kb/148/Q148330/
 	
 	=============================================================================
 	
+
+{% endraw %}

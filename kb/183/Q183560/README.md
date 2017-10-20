@@ -6,6 +6,8 @@ permalink: /kb/183/Q183560/
 
 ## Q183560: OpenSchema Method Fails for DBSCHEMA_PROVIDER_TYPES
 
+{% raw %}
+
 	Article: Q183560
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -51,3 +53,5 @@ permalink: /kb/183/Q183560/
 	
 	=============================================================================
 	
+
+{% endraw %}

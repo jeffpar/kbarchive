@@ -6,6 +6,8 @@ permalink: /kb/139/Q139902/
 
 ## Q139902: Doc Err: Invalid IP Address in NETWORKS File
 
+{% raw %}
+
 	Article: Q139902
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -46,3 +48,5 @@ permalink: /kb/139/Q139902/
 	
 	=============================================================================
 	
+
+{% endraw %}

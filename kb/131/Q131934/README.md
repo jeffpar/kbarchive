@@ -6,6 +6,8 @@ permalink: /kb/131/Q131934/
 
 ## Q131934: ACC: Cannot Reference OLE Control in Datasheet View
 
+{% raw %}
+
 	Article: Q131934
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0,7.0,97
@@ -112,3 +114,5 @@ permalink: /kb/131/Q131934/
 	
 	=============================================================================
 	
+
+{% endraw %}

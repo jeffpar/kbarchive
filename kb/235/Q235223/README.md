@@ -6,6 +6,8 @@ permalink: /kb/235/Q235223/
 
 ## Q235223: XADM: Cannot Configure Dial-Up Connections in German Version
 
+{% raw %}
+
 	Article: Q235223
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -92,3 +94,5 @@ permalink: /kb/235/Q235223/
 	
 	=============================================================================
 	
+
+{% endraw %}

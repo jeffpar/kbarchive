@@ -6,6 +6,8 @@ permalink: /kb/160/Q160017/
 
 ## Q160017: FIX: Access Violation Using deque class
 
+{% raw %}
+
 	Article: Q160017
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -86,3 +88,5 @@ permalink: /kb/160/Q160017/
 	
 	=============================================================================
 	
+
+{% endraw %}

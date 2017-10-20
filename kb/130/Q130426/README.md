@@ -6,6 +6,8 @@ permalink: /kb/130/Q130426/
 
 ## Q130426: Schedule+ Tasks: Duration and Estimated Effort
 
+{% raw %}
+
 	Article: Q130426
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -38,3 +40,5 @@ permalink: /kb/130/Q130426/
 	
 	=============================================================================
 	
+
+{% endraw %}

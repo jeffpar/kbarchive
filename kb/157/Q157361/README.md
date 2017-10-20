@@ -6,6 +6,8 @@ permalink: /kb/157/Q157361/
 
 ## Q157361: INFO: How to Automatically Log On After an Unattended Setup
 
+{% raw %}
+
 	Article: Q157361
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -113,3 +115,5 @@ permalink: /kb/157/Q157361/
 	
 	=============================================================================
 	
+
+{% endraw %}

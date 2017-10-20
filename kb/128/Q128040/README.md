@@ -6,6 +6,8 @@ permalink: /kb/128/Q128040/
 
 ## Q128040: Fatal Error Installing RAS Client Software for Network Client
 
+{% raw %}
+
 	Article: Q128040
 	Product(s): Microsoft Windows NT
 	Version(s): 3.00
@@ -67,3 +69,5 @@ permalink: /kb/128/Q128040/
 	
 	=============================================================================
 	
+
+{% endraw %}

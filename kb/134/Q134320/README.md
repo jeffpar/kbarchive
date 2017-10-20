@@ -6,6 +6,8 @@ permalink: /kb/134/Q134320/
 
 ## Q134320: Black Blocks Appear with Pasted Text in Notepad
 
+{% raw %}
+
 	Article: Q134320
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/134/Q134320/
 	
 	=============================================================================
 	
+
+{% endraw %}

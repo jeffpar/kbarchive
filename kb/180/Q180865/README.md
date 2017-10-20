@@ -6,6 +6,8 @@ permalink: /kb/180/Q180865/
 
 ## Q180865: Print Server Adds Space After Form Feed
 
+{% raw %}
+
 	Article: Q180865
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -96,3 +98,5 @@ permalink: /kb/180/Q180865/
 	
 	=============================================================================
 	
+
+{% endraw %}

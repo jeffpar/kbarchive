@@ -6,6 +6,8 @@ permalink: /kb/108/Q108683/
 
 ## Q108683: PROFS: 3.4 Gateway Disk 2 &#91;3.5, 1.44 MB&#93;
 
+{% raw %}
+
 	Article: Q108683
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4
@@ -45,3 +47,5 @@ permalink: /kb/108/Q108683/
 	
 	=============================================================================
 	
+
+{% endraw %}

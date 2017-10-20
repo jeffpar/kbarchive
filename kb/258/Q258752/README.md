@@ -6,6 +6,8 @@ permalink: /kb/258/Q258752/
 
 ## Q258752: Creating PDT to Support an IBM Proprinter
 
+{% raw %}
+
 	Article: Q258752
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,4.0
@@ -161,3 +163,5 @@ permalink: /kb/258/Q258752/
 	
 	=============================================================================
 	
+
+{% endraw %}

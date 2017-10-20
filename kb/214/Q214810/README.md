@@ -6,6 +6,8 @@ permalink: /kb/214/Q214810/
 
 ## Q214810: STOP 0x0000007B INACCESSIBLE_BOOT_DEVICE After Applying SP4
 
+{% raw %}
+
 	Article: Q214810
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -109,3 +111,5 @@ permalink: /kb/214/Q214810/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222714/
 
 ## Q222714: Pause/Break Key Functions As NUMLOCK Key on Terminal Server
 
+{% raw %}
+
 	Article: Q222714
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/222/Q222714/
 	
 	=============================================================================
 	
+
+{% endraw %}

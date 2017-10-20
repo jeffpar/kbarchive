@@ -6,6 +6,8 @@ permalink: /kb/031/Q31517/
 
 ## Q31517: MASM 5.10 EXT.DOC: Movecur: Moves Cursor to Specified Location
 
+{% raw %}
+
 	Article: Q31517
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -30,3 +32,5 @@ permalink: /kb/031/Q31517/
 	void pascal MoveCur (x, y)
 	COL  x;
 	LINE y;
+
+{% endraw %}

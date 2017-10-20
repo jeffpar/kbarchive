@@ -6,6 +6,8 @@ permalink: /kb/156/Q156800/
 
 ## Q156800: SFM Primary Group Show
 
+{% raw %}
+
 	Article: Q156800
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51
@@ -51,3 +53,5 @@ permalink: /kb/156/Q156800/
 	
 	=============================================================================
 	
+
+{% endraw %}

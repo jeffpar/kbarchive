@@ -6,6 +6,8 @@ permalink: /kb/073/Q73615/
 
 ## Q73615: Unable to Install MS-DOS 5.0 from Backup Copy
 
+{% raw %}
+
 	Article: Q73615
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -66,3 +68,5 @@ permalink: /kb/073/Q73615/
 	
 	=============================================================================
 	
+
+{% endraw %}

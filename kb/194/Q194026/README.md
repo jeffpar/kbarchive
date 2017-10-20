@@ -6,6 +6,8 @@ permalink: /kb/194/Q194026/
 
 ## Q194026: WD97: How to Create a Combo Box with More Than 25 Items
 
+{% raw %}
+
 	Article: Q194026
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -202,3 +204,5 @@ permalink: /kb/194/Q194026/
 	
 	=============================================================================
 	
+
+{% endraw %}

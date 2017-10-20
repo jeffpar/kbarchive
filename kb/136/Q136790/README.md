@@ -6,6 +6,8 @@ permalink: /kb/136/Q136790/
 
 ## Q136790: Logitech Mouse Stops Working When Used with Modem on COM2
 
+{% raw %}
+
 	Article: Q136790
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -94,3 +96,5 @@ permalink: /kb/136/Q136790/
 	
 	=============================================================================
 	
+
+{% endraw %}

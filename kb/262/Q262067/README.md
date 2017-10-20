@@ -6,6 +6,8 @@ permalink: /kb/262/Q262067/
 
 ## Q262067: BUG: RStoCursor in Vfpcom.dll Fails with Certain Data Types
 
+{% raw %}
+
 	Article: Q262067
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -169,3 +171,5 @@ permalink: /kb/262/Q262067/
 	
 	=============================================================================
 	
+
+{% endraw %}

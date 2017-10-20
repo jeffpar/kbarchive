@@ -6,6 +6,8 @@ permalink: /kb/186/Q186499/
 
 ## Q186499: Terminal Server Registry Settings for Applications
 
+{% raw %}
+
 	Article: Q186499
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -226,3 +228,5 @@ permalink: /kb/186/Q186499/
 	
 	=============================================================================
 	
+
+{% endraw %}

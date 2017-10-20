@@ -6,6 +6,8 @@ permalink: /kb/183/Q183709/
 
 ## Q183709: Printing from Xerox 3006 May Cause Paper Jams
 
+{% raw %}
+
 	Article: Q183709
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/183/Q183709/
 	
 	=============================================================================
 	
+
+{% endraw %}

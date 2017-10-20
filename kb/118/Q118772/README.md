@@ -6,6 +6,8 @@ permalink: /kb/118/Q118772/
 
 ## Q118772: Err Msg During Backup: Fatal Error on Drive 1
 
+{% raw %}
+
 	Article: Q118772
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -56,3 +58,5 @@ permalink: /kb/118/Q118772/
 	
 	=============================================================================
 	
+
+{% endraw %}

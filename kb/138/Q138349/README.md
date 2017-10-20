@@ -6,6 +6,8 @@ permalink: /kb/138/Q138349/
 
 ## Q138349: Windows 95 Installation Requirements
 
+{% raw %}
+
 	Article: Q138349
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -113,3 +115,5 @@ permalink: /kb/138/Q138349/
 	
 	=============================================================================
 	
+
+{% endraw %}

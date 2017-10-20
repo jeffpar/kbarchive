@@ -6,6 +6,8 @@ permalink: /kb/255/Q255912/
 
 ## Q255912: Shutting Down COM+ Application at Timeout
 
+{% raw %}
+
 	Article: Q255912
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:2000; winnt:5.0
@@ -60,3 +62,5 @@ permalink: /kb/255/Q255912/
 	
 	=============================================================================
 	
+
+{% endraw %}

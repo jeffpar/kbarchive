@@ -6,6 +6,8 @@ permalink: /kb/026/Q26972/
 
 ## Q26972: Change of Radix Does Not Change Array Index
 
+{% raw %}
+
 	Article: Q26972
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.2,3.0,3.05,3.06,3.07,3.11,3.12,3.14,3.5,4.0,4.01,4.05,4.1
@@ -48,3 +50,5 @@ permalink: /kb/026/Q26972/
 	
 	=============================================================================
 	
+
+{% endraw %}

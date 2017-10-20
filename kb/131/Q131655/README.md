@@ -6,6 +6,8 @@ permalink: /kb/131/Q131655/
 
 ## Q131655: Mac Wine Guide, Ancient Lands: Play Button Sounds Don't Work
 
+{% raw %}
+
 	Article: Q131655
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -69,3 +71,5 @@ permalink: /kb/131/Q131655/
 	
 	=============================================================================
 	
+
+{% endraw %}

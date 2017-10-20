@@ -6,6 +6,8 @@ permalink: /kb/142/Q142765/
 
 ## Q142765: Cdplayfx.exe - Form Shows How to Play Audio CDs
 
+{% raw %}
+
 	Article: Q142765
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/142/Q142765/
 	
 	=============================================================================
 	
+
+{% endraw %}

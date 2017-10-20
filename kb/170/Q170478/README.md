@@ -6,6 +6,8 @@ permalink: /kb/170/Q170478/
 
 ## Q170478: XCON: Err Msg: The Recipient could not be Processed
 
+{% raw %}
+
 	Article: Q170478
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0 5.5
@@ -67,3 +69,5 @@ permalink: /kb/170/Q170478/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107444/
 
 ## Q107444: PC Win: Running Windows Client from the Network
 
+{% raw %}
+
 	Article: Q107444
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2a
@@ -466,3 +468,5 @@ permalink: /kb/107/Q107444/
 	
 	=============================================================================
 	
+
+{% endraw %}

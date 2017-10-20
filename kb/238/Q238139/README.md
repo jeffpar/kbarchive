@@ -6,6 +6,8 @@ permalink: /kb/238/Q238139/
 
 ## Q238139: FP98: Importing Files from Unix Server Will Not Import All Files
 
+{% raw %}
+
 	Article: Q238139
 	Product(s): Word Front Page
 	Version(s): WINDOWS:
@@ -54,3 +56,5 @@ permalink: /kb/238/Q238139/
 	
 	=============================================================================
 	
+
+{% endraw %}

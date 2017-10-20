@@ -6,6 +6,8 @@ permalink: /kb/221/Q221825/
 
 ## Q221825: Return or Revenge of Arcade: Game Hangs or Quits Unexpectedly
 
+{% raw %}
+
 	Article: Q221825
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -93,3 +95,5 @@ permalink: /kb/221/Q221825/
 	
 	=============================================================================
 	
+
+{% endraw %}

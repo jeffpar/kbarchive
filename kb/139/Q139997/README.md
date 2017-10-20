@@ -6,6 +6,8 @@ permalink: /kb/139/Q139997/
 
 ## Q139997: FIX: &quot;Item not found in this collection&quot; with MFC DAO Join
 
+{% raw %}
+
 	Article: Q139997
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -116,3 +118,5 @@ permalink: /kb/139/Q139997/
 	
 	=============================================================================
 	
+
+{% endraw %}

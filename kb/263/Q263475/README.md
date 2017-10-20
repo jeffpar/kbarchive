@@ -6,6 +6,8 @@ permalink: /kb/263/Q263475/
 
 ## Q263475: MapPoint 2001: How to Clear Entries from the Find Box
 
+{% raw %}
+
 	Article: Q263475
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -69,3 +71,5 @@ permalink: /kb/263/Q263475/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156088/
 
 ## Q156088: HOWTO: Hide Desktop in Run-Time (.exe) VFP5 Application
 
+{% raw %}
+
 	Article: Q156088
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/156/Q156088/
 	
 	=============================================================================
 	
+
+{% endraw %}

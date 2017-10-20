@@ -6,6 +6,8 @@ permalink: /kb/147/Q147203/
 
 ## Q147203: SMTP TCP/IP Port Hangs in Windows NT 3.51
 
+{% raw %}
+
 	Article: Q147203
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -62,3 +64,5 @@ permalink: /kb/147/Q147203/
 	
 	=============================================================================
 	
+
+{% endraw %}

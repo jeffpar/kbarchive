@@ -6,6 +6,8 @@ permalink: /kb/049/Q49729/
 
 ## Q49729: Clock: C Function -- Documentation Supplement
 
+{% raw %}
+
 	Article: Q49729
 	Product(s): See article
 	Version(s): 5.10   |  5.10
@@ -59,3 +61,5 @@ permalink: /kb/049/Q49729/
 	the MS-DOS Operating System: Run-Time Library Reference," Page 167 and
 	the clock function in the "C Run-Time Library Source Routines," which
 	is available as a separate package.
+
+{% endraw %}

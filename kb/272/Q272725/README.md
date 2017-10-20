@@ -6,6 +6,8 @@ permalink: /kb/272/Q272725/
 
 ## Q272725: BUG: Playing WMF with a Palette into Another WMF Leaks a Palette
 
+{% raw %}
+
 	Article: Q272725
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/272/Q272725/
 	
 	=============================================================================
 	
+
+{% endraw %}

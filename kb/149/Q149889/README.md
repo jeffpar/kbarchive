@@ -6,6 +6,8 @@ permalink: /kb/149/Q149889/
 
 ## Q149889: PRB: Assertion or Problems Using DAO in a DLL
 
+{% raw %}
+
 	Article: Q149889
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -204,3 +206,5 @@ permalink: /kb/149/Q149889/
 	
 	=============================================================================
 	
+
+{% endraw %}

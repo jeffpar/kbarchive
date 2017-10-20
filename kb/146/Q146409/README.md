@@ -6,6 +6,8 @@ permalink: /kb/146/Q146409/
 
 ## Q146409: Backup Error.log File Contains Garbage Characters
 
+{% raw %}
+
 	Article: Q146409
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -73,3 +75,5 @@ permalink: /kb/146/Q146409/
 	
 	=============================================================================
 	
+
+{% endraw %}

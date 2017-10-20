@@ -6,6 +6,8 @@ permalink: /kb/120/Q120606/
 
 ## Q120606: BUG: Path Name Greater Than 256 Characters May Cause Errors
 
+{% raw %}
+
 	Article: Q120606
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5b,2.5c,2.6a,3.0b
@@ -78,3 +80,5 @@ permalink: /kb/120/Q120606/
 	
 	=============================================================================
 	
+
+{% endraw %}

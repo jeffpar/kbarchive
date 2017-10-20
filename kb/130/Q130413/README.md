@@ -6,6 +6,8 @@ permalink: /kb/130/Q130413/
 
 ## Q130413: HOWTO: Create an Updatable Cursor (View) to Update Table
 
+{% raw %}
+
 	Article: Q130413
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/130/Q130413/
 	
 	=============================================================================
 	
+
+{% endraw %}

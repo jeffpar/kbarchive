@@ -6,6 +6,8 @@ permalink: /kb/180/Q180501/
 
 ## Q180501: How to Move the Start Button in Windows 95
 
+{% raw %}
+
 	Article: Q180501
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/180/Q180501/
 	
 	=============================================================================
 	
+
+{% endraw %}

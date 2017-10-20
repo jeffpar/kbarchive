@@ -6,6 +6,8 @@ permalink: /kb/068/Q68652/
 
 ## Q68652: Printing to Windows LPT1.OS2 or LPT1.DOS Port
 
+{% raw %}
+
 	Article: Q68652
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -95,3 +97,5 @@ permalink: /kb/068/Q68652/
 	
 	=============================================================================
 	
+
+{% endraw %}

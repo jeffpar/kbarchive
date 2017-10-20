@@ -6,6 +6,8 @@ permalink: /kb/034/Q34310/
 
 ## Q34310: Manual-Setup Procedure for C
 
+{% raw %}
+
 	Article: Q34310
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -143,3 +145,5 @@ permalink: /kb/034/Q34310/
 	
 	The above example can be repeated with appropriate modifications to
 	create the other C combined libraries.
+
+{% endraw %}

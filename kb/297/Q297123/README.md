@@ -6,6 +6,8 @@ permalink: /kb/297/Q297123/
 
 ## Q297123: Err Msg: You Specified a User Name Which Is Already in Use By...
 
+{% raw %}
+
 	Article: Q297123
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -68,3 +70,5 @@ permalink: /kb/297/Q297123/
 	
 	=============================================================================
 	
+
+{% endraw %}

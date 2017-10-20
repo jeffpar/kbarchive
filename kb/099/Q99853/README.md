@@ -6,6 +6,8 @@ permalink: /kb/099/Q99853/
 
 ## Q99853: SMTP: Err Msg: WARNING Getline: NL with No CR
 
+{% raw %}
+
 	Article: Q99853
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -44,3 +46,5 @@ permalink: /kb/099/Q99853/
 	
 	=============================================================================
 	
+
+{% endraw %}

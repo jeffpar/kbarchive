@@ -6,6 +6,8 @@ permalink: /kb/247/Q247858/
 
 ## Q247858: CRC Error Message on FAT Media Causes Kernel Stack Overflow
 
+{% raw %}
+
 	Article: Q247858
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/247/Q247858/
 	
 	=============================================================================
 	
+
+{% endraw %}

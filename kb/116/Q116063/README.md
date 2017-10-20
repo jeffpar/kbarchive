@@ -6,6 +6,8 @@ permalink: /kb/116/Q116063/
 
 ## Q116063: ADT2: &quot;Setup Parse Error&quot; Error Message in Run-Time Setup
 
+{% raw %}
+
 	Article: Q116063
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -81,3 +83,5 @@ permalink: /kb/116/Q116063/
 	
 	=============================================================================
 	
+
+{% endraw %}

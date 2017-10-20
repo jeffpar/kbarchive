@@ -6,6 +6,8 @@ permalink: /kb/062/Q62388/
 
 ## Q62388: PWB Doesn't Update Mark Location If Mark Moves Up or Left
 
+{% raw %}
+
 	Article: Q62388
 	Product(s): See article
 	Version(s): 1.00 | 1.00
@@ -46,3 +48,5 @@ permalink: /kb/062/Q62388/
 	Microsoft has confirmed this to be a problem in the Programmer's
 	WorkBench (PWB) version 1.00. We are researching this problem and will
 	post new information here as it becomes available.
+
+{% endraw %}

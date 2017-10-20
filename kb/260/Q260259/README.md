@@ -6,6 +6,8 @@ permalink: /kb/260/Q260259/
 
 ## Q260259: INFO: Undocumented {PAUSE} Option for KEYBOARD Command
 
+{% raw %}
+
 	Article: Q260259
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -53,3 +55,5 @@ permalink: /kb/260/Q260259/
 	
 	=============================================================================
 	
+
+{% endraw %}

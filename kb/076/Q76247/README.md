@@ -6,6 +6,8 @@ permalink: /kb/076/Q76247/
 
 ## Q76247: HOWTO: Use TOOLHELP to Determine Free System Resources
 
+{% raw %}
+
 	Article: Q76247
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -45,3 +47,5 @@ permalink: /kb/076/Q76247/
 	
 	=============================================================================
 	
+
+{% endraw %}

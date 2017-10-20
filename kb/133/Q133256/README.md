@@ -6,6 +6,8 @@ permalink: /kb/133/Q133256/
 
 ## Q133256: HOWTO: How to Prevent Mainframe Window from Being ReSized
 
+{% raw %}
+
 	Article: Q133256
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2
@@ -135,3 +137,5 @@ permalink: /kb/133/Q133256/
 	
 	=============================================================================
 	
+
+{% endraw %}

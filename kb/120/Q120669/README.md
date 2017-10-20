@@ -6,6 +6,8 @@ permalink: /kb/120/Q120669/
 
 ## Q120669: /Gt Switch Has the Default Value /Gt5
 
+{% raw %}
+
 	Article: Q120669
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -41,3 +43,5 @@ permalink: /kb/120/Q120669/
 	
 	=============================================================================
 	
+
+{% endraw %}

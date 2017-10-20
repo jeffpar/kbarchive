@@ -6,6 +6,8 @@ permalink: /kb/185/Q185082/
 
 ## Q185082: WD97: How to Rotate or Flip Clip Art
 
+{% raw %}
+
 	Article: Q185082
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -73,3 +75,5 @@ permalink: /kb/185/Q185082/
 	
 	=============================================================================
 	
+
+{% endraw %}

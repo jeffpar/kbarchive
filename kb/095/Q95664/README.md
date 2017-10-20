@@ -6,6 +6,8 @@ permalink: /kb/095/Q95664/
 
 ## Q95664: PRB: APPEND FROM &lt;File&gt; w/FOR Cause Doesn't Behave As Expected
 
+{% raw %}
+
 	Article: Q95664
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c; MS-DOS:2.0,2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
@@ -71,3 +73,5 @@ permalink: /kb/095/Q95664/
 	
 	=============================================================================
 	
+
+{% endraw %}

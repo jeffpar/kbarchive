@@ -6,6 +6,8 @@ permalink: /kb/135/Q135840/
 
 ## Q135840: INF: Use of SQLBindParameter with VB and an ODBC driver
 
+{% raw %}
+
 	Article: Q135840
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0,3.0
@@ -267,3 +269,5 @@ permalink: /kb/135/Q135840/
 	
 	=============================================================================
 	
+
+{% endraw %}

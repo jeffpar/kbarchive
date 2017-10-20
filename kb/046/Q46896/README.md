@@ -6,6 +6,8 @@ permalink: /kb/046/Q46896/
 
 ## Q46896: CALLTREE Produces Argument Mismatch with Void Parameter List
 
+{% raw %}
+
 	Article: Q46896
 	Product(s): See article
 	Version(s): 1.00
@@ -52,3 +54,5 @@ permalink: /kb/046/Q46896/
 	The "warn.out" file will now contain the error message:
 	
 	   Argument Mismatch Calling        foo  in  main.c(5)
+
+{% endraw %}

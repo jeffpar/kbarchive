@@ -6,6 +6,8 @@ permalink: /kb/253/Q253750/
 
 ## Q253750: Asheron's Call Error Msg: Correct Version Is Not Installed
 
+{% raw %}
+
 	Article: Q253750
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -89,3 +91,5 @@ permalink: /kb/253/Q253750/
 	
 	=============================================================================
 	
+
+{% endraw %}

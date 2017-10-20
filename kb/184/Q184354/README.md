@@ -6,6 +6,8 @@ permalink: /kb/184/Q184354/
 
 ## Q184354: BUG: Working Folder for Subproject Not Inherited from Parent
 
+{% raw %}
+
 	Article: Q184354
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0
@@ -129,3 +131,5 @@ permalink: /kb/184/Q184354/
 	
 	=============================================================================
 	
+
+{% endraw %}

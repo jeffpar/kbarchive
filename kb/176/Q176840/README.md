@@ -6,6 +6,8 @@ permalink: /kb/176/Q176840/
 
 ## Q176840: FS98/2000: SideWinder 3D Pro Joystick Stops Responding
 
+{% raw %}
+
 	Article: Q176840
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/176/Q176840/
 	
 	=============================================================================
 	
+
+{% endraw %}

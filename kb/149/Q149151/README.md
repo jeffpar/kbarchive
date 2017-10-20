@@ -6,6 +6,8 @@ permalink: /kb/149/Q149151/
 
 ## Q149151: BUG: Internal READ of Character&#42;1 String Fails
 
+{% raw %}
+
 	Article: Q149151
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/149/Q149151/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130163/
 
 ## Q130163: PRB: Remove Button Won't Delete Stored Procedure in Proj Mgr
 
+{% raw %}
+
 	Article: Q130163
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/130/Q130163/
 	
 	=============================================================================
 	
+
+{% endraw %}

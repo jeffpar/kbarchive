@@ -6,6 +6,8 @@ permalink: /kb/121/Q121090/
 
 ## Q121090: WIN /D:T Disables Printing and Communications in WFWG 3.11
 
+{% raw %}
+
 	Article: Q121090
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -56,3 +58,5 @@ permalink: /kb/121/Q121090/
 	
 	=============================================================================
 	
+
+{% endraw %}

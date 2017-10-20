@@ -6,6 +6,8 @@ permalink: /kb/095/Q95679/
 
 ## Q95679: Select All Menu Command Unavailable in a General Field
 
+{% raw %}
+
 	Article: Q95679
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0
@@ -40,3 +42,5 @@ permalink: /kb/095/Q95679/
 	
 	=============================================================================
 	
+
+{% endraw %}

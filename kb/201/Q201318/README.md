@@ -6,6 +6,8 @@ permalink: /kb/201/Q201318/
 
 ## Q201318: FIX: Registering ATL Server with Long Name Causes 0x80070002
 
+{% raw %}
+
 	Article: Q201318
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -148,3 +150,5 @@ permalink: /kb/201/Q201318/
 	
 	=============================================================================
 	
+
+{% endraw %}

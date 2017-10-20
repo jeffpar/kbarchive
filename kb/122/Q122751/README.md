@@ -6,6 +6,8 @@ permalink: /kb/122/Q122751/
 
 ## Q122751: PC DirSync: Err Msg: Gateway Not Installed: &lt;Gateway Name&gt;
 
+{% raw %}
+
 	Article: Q122751
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a,3.5
@@ -61,3 +63,5 @@ permalink: /kb/122/Q122751/
 	
 	=============================================================================
 	
+
+{% endraw %}

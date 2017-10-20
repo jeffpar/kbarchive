@@ -6,6 +6,8 @@ permalink: /kb/097/Q97576/
 
 ## Q97576: Err Msg: &quot;DoubleSpace Cannot Copy the File DBLSPACE.INF&quot;
 
+{% raw %}
+
 	Article: Q97576
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -58,3 +60,5 @@ permalink: /kb/097/Q97576/
 	
 	=============================================================================
 	
+
+{% endraw %}

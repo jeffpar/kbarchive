@@ -6,6 +6,8 @@ permalink: /kb/119/Q119355/
 
 ## Q119355: PC Gen: Answer Procedure Played Approximately Once Per Second
 
+{% raw %}
+
 	Article: Q119355
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -118,3 +120,5 @@ permalink: /kb/119/Q119355/
 	
 	=============================================================================
 	
+
+{% endraw %}

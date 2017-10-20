@@ -6,6 +6,8 @@ permalink: /kb/171/Q171124/
 
 ## Q171124: SMS: 3COM Network Card May Cause Audit16 to Fail on Win95 Client
 
+{% raw %}
+
 	Article: Q171124
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -66,3 +68,5 @@ permalink: /kb/171/Q171124/
 	
 	=============================================================================
 	
+
+{% endraw %}

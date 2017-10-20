@@ -6,6 +6,8 @@ permalink: /kb/245/Q245573/
 
 ## Q245573: Display Verb Returns Unexpected Results with Channel Connections
 
+{% raw %}
+
 	Article: Q245573
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -88,3 +90,5 @@ permalink: /kb/245/Q245573/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/052/Q52179/
 
 ## Q52179: Flight Simulator Coordinates for Fuel Bases in WWI Mode
 
+{% raw %}
+
 	Article: Q52179
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/052/Q52179/
 	
 	=============================================================================
 	
+
+{% endraw %}

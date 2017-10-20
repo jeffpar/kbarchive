@@ -6,6 +6,8 @@ permalink: /kb/242/Q242541/
 
 ## Q242541: Encarta: How to Obtain the DVD-ROM Version of Your Program
 
+{% raw %}
+
 	Article: Q242541
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/242/Q242541/
 	
 	=============================================================================
 	
+
+{% endraw %}

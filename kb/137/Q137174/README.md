@@ -6,6 +6,8 @@ permalink: /kb/137/Q137174/
 
 ## Q137174: DOCERR: A2041 Error When Macro Parameter Length &gt; 255 bytes
 
+{% raw %}
+
 	Article: Q137174
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.11
@@ -68,3 +70,5 @@ permalink: /kb/137/Q137174/
 	
 	=============================================================================
 	
+
+{% endraw %}

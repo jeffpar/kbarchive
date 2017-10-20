@@ -6,6 +6,8 @@ permalink: /kb/166/Q166348/
 
 ## Q166348: Maximum Number of ACEs in an ACL
 
+{% raw %}
+
 	Article: Q166348
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -52,3 +54,5 @@ permalink: /kb/166/Q166348/
 	
 	=============================================================================
 	
+
+{% endraw %}

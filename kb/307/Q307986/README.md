@@ -6,6 +6,8 @@ permalink: /kb/307/Q307986/
 
 ## Q307986: SMS: Can't Install Virtual and Mouse Remote Control Is Stuck
 
+{% raw %}
+
 	Article: Q307986
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -98,3 +100,5 @@ permalink: /kb/307/Q307986/
 	
 	=============================================================================
 	
+
+{% endraw %}

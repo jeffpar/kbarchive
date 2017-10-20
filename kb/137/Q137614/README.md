@@ -6,6 +6,8 @@ permalink: /kb/137/Q137614/
 
 ## Q137614: PC WRmt: Files That Contain User Detail Information
 
+{% raw %}
+
 	Article: Q137614
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -54,3 +56,5 @@ permalink: /kb/137/Q137614/
 	
 	=============================================================================
 	
+
+{% endraw %}

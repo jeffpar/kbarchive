@@ -6,6 +6,8 @@ permalink: /kb/175/Q175427/
 
 ## Q175427: Full Court Press: DirectX: Conflict With ThinkPad Video Driver
 
+{% raw %}
+
 	Article: Q175427
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/175/Q175427/
 	
 	=============================================================================
 	
+
+{% endraw %}

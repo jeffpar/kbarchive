@@ -6,6 +6,8 @@ permalink: /kb/157/Q157147/
 
 ## Q157147: FP: TCP/IP Test Fails But Other Internet Programs Run
 
+{% raw %}
+
 	Article: Q157147
 	Product(s): Word Front Page
 	Version(s): ; WINDOWS:1.0,1.1
@@ -102,3 +104,5 @@ permalink: /kb/157/Q157147/
 	
 	=============================================================================
 	
+
+{% endraw %}

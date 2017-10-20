@@ -6,6 +6,8 @@ permalink: /kb/141/Q141443/
 
 ## Q141443: FIX: C1001: Compiler File P2symtab.c, Line 878
 
+{% raw %}
+
 	Article: Q141443
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -99,3 +101,5 @@ permalink: /kb/141/Q141443/
 	
 	=============================================================================
 	
+
+{% endraw %}

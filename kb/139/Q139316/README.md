@@ -6,6 +6,8 @@ permalink: /kb/139/Q139316/
 
 ## Q139316: PC Gen: Mail 3.5 Server Upgrade Kit includes WGPO Upgrade
 
+{% raw %}
+
 	Article: Q139316
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.5
@@ -57,3 +59,5 @@ permalink: /kb/139/Q139316/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150600/
 
 ## Q150600: Full Screen Option Doesn't Change in Full Screen View
 
+{% raw %}
+
 	Article: Q150600
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/150/Q150600/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193726/
 
 ## Q193726: PRB: Problems Using the Graph Wizard in Visual FoxPro 6.0
 
+{% raw %}
+
 	Article: Q193726
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -76,3 +78,5 @@ permalink: /kb/193/Q193726/
 	
 	=============================================================================
 	
+
+{% endraw %}

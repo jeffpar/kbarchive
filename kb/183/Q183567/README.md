@@ -6,6 +6,8 @@ permalink: /kb/183/Q183567/
 
 ## Q183567: BUG: GetChunk/AppendChunk Error: Not Allowed In This Context
 
+{% raw %}
+
 	Article: Q183567
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -52,3 +54,5 @@ permalink: /kb/183/Q183567/
 	
 	=============================================================================
 	
+
+{% endraw %}

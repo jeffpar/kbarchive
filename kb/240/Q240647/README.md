@@ -6,6 +6,8 @@ permalink: /kb/240/Q240647/
 
 ## Q240647: World Atlas 2000: Unable to Copy or Print an Article or Image
 
+{% raw %}
+
 	Article: Q240647
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/240/Q240647/
 	
 	=============================================================================
 	
+
+{% endraw %}

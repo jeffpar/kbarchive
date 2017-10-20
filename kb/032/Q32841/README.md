@@ -6,6 +6,8 @@ permalink: /kb/032/Q32841/
 
 ## Q32841: INFO: How Bitfields Are Stored in Memory
 
+{% raw %}
+
 	Article: Q32841
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -50,3 +52,5 @@ permalink: /kb/032/Q32841/
 	
 	=============================================================================
 	
+
+{% endraw %}

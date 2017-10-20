@@ -6,6 +6,8 @@ permalink: /kb/104/Q104576/
 
 ## Q104576: Embedding Non-printable Characters in LMHOSTS Computer Names
 
+{% raw %}
+
 	Article: Q104576
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -55,3 +57,5 @@ permalink: /kb/104/Q104576/
 	
 	=============================================================================
 	
+
+{% endraw %}

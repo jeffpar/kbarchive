@@ -6,6 +6,8 @@ permalink: /kb/111/Q111923/
 
 ## Q111923: HOWTO: Compare a CString to the Empty String
 
+{% raw %}
+
 	Article: Q111923
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,5.0
@@ -72,3 +74,5 @@ permalink: /kb/111/Q111923/
 	
 	=============================================================================
 	
+
+{% endraw %}

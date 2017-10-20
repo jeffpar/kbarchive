@@ -6,6 +6,8 @@ permalink: /kb/194/Q194549/
 
 ## Q194549: X400: Message Sent to Invalid Recipient Generates Second NDR
 
+{% raw %}
+
 	Article: Q194549
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -83,3 +85,5 @@ permalink: /kb/194/Q194549/
 	
 	=============================================================================
 	
+
+{% endraw %}

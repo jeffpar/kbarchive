@@ -6,6 +6,8 @@ permalink: /kb/180/Q180171/
 
 ## Q180171: PRB: FoxPro/Mac Table Operations Do Not Release Memory
 
+{% raw %}
+
 	Article: Q180171
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -135,3 +137,5 @@ permalink: /kb/180/Q180171/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160517/
 
 ## Q160517: RRAS May Decrement Local Static Route Metric
 
+{% raw %}
+
 	Article: Q160517
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -85,3 +87,5 @@ permalink: /kb/160/Q160517/
 	
 	=============================================================================
 	
+
+{% endraw %}

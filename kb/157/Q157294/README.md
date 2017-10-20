@@ -6,6 +6,8 @@ permalink: /kb/157/Q157294/
 
 ## Q157294: WD97: Some Commands Not Available When Control Object Selected
 
+{% raw %}
+
 	Article: Q157294
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -119,3 +121,5 @@ permalink: /kb/157/Q157294/
 	
 	=============================================================================
 	
+
+{% endraw %}

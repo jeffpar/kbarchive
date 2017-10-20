@@ -6,6 +6,8 @@ permalink: /kb/140/Q140587/
 
 ## Q140587: HOWTO: How to Change Default Button on CPropertySheet
 
+{% raw %}
+
 	Article: Q140587
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/140/Q140587/
 	
 	=============================================================================
 	
+
+{% endraw %}

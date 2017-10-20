@@ -6,6 +6,8 @@ permalink: /kb/244/Q244467/
 
 ## Q244467: XFOR: GroupWise DR Doesn't Work on Long Orig-Msg-ID
 
+{% raw %}
+
 	Article: Q244467
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/244/Q244467/
 	
 	=============================================================================
 	
+
+{% endraw %}

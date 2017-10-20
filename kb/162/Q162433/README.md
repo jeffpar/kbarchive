@@ -6,6 +6,8 @@ permalink: /kb/162/Q162433/
 
 ## Q162433: MSB Dinosaurs: Media Control Device Not Installed Message
 
+{% raw %}
+
 	Article: Q162433
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -95,3 +97,5 @@ permalink: /kb/162/Q162433/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149326/
 
 ## Q149326: FIX: Multiselect with ListView Causes Lost Mouse Events
 
+{% raw %}
+
 	Article: Q149326
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -104,3 +106,5 @@ permalink: /kb/149/Q149326/
 	
 	=============================================================================
 	
+
+{% endraw %}

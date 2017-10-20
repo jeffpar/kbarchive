@@ -6,6 +6,8 @@ permalink: /kb/173/Q173199/
 
 ## Q173199: Multiple Credentials in a Single Windows NT Session
 
+{% raw %}
+
 	Article: Q173199
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/173/Q173199/
 	
 	=============================================================================
 	
+
+{% endraw %}

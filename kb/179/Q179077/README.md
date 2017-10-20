@@ -6,6 +6,8 @@ permalink: /kb/179/Q179077/
 
 ## Q179077: WD97: Creating a Hyperlink to a Microsoft Access Table or Query
 
+{% raw %}
+
 	Article: Q179077
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/179/Q179077/
 	
 	=============================================================================
 	
+
+{% endraw %}

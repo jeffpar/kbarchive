@@ -6,6 +6,8 @@ permalink: /kb/180/Q180071/
 
 ## Q180071: FILE: Msvbvm50.exe Installs Visual Basic 5.0 Run-Time Files
 
+{% raw %}
+
 	Article: Q180071
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.51,4.0,5.0
@@ -131,3 +133,5 @@ permalink: /kb/180/Q180071/
 	
 	=============================================================================
 	
+
+{% endraw %}

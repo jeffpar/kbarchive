@@ -6,6 +6,8 @@ permalink: /kb/109/Q109969/
 
 ## Q109969: WD97: Text or Graphic in Wrong Position with AutoText
 
+{% raw %}
+
 	Article: Q109969
 	Product(s): Word 97 for Windows
 	Version(s): 97
@@ -103,3 +105,5 @@ permalink: /kb/109/Q109969/
 	
 	=============================================================================
 	
+
+{% endraw %}

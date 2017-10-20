@@ -6,6 +6,8 @@ permalink: /kb/152/Q152359/
 
 ## Q152359: Err Msg: Item Could Not Be Deleted. The Action Could Not Be...
 
+{% raw %}
+
 	Article: Q152359
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5,2.51,2.52,2.6
@@ -44,3 +46,5 @@ permalink: /kb/152/Q152359/
 	
 	=============================================================================
 	
+
+{% endraw %}

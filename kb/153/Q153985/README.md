@@ -6,6 +6,8 @@ permalink: /kb/153/Q153985/
 
 ## Q153985: QuickShelf: Shut Down Windows Dialog Box Disappears
 
+{% raw %}
+
 	Article: Q153985
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -54,3 +56,5 @@ permalink: /kb/153/Q153985/
 	
 	=============================================================================
 	
+
+{% endraw %}

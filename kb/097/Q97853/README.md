@@ -6,6 +6,8 @@ permalink: /kb/097/Q97853/
 
 ## Q97853: PC Interface Version 4.1.3 Is Required with MS-DOS 6.0
 
+{% raw %}
+
 	Article: Q97853
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -54,3 +56,5 @@ permalink: /kb/097/Q97853/
 	
 	=============================================================================
 	
+
+{% endraw %}

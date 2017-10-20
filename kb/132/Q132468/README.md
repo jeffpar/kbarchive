@@ -6,6 +6,8 @@ permalink: /kb/132/Q132468/
 
 ## Q132468: Encarta '95 ErrMsg: MMP.DLL Needed for Media Player
 
+{% raw %}
+
 	Article: Q132468
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/132/Q132468/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104615/
 
 ## Q104615: Arcade: Description of Battlezone
 
+{% raw %}
+
 	Article: Q104615
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0
@@ -82,3 +84,5 @@ permalink: /kb/104/Q104615/
 	
 	=============================================================================
 	
+
+{% endraw %}

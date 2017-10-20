@@ -6,6 +6,8 @@ permalink: /kb/216/Q216740/
 
 ## Q216740: Search Drive Mappings Lost When Using NetWare Client
 
+{% raw %}
+
 	Article: Q216740
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/216/Q216740/
 	
 	=============================================================================
 	
+
+{% endraw %}

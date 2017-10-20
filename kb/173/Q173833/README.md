@@ -6,6 +6,8 @@ permalink: /kb/173/Q173833/
 
 ## Q173833: Microsoft Word 97 Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q173833
 	Product(s): Microsoft Press
 	Version(s): 
@@ -172,3 +174,5 @@ permalink: /kb/173/Q173833/
 	
 	=============================================================================
 	
+
+{% endraw %}

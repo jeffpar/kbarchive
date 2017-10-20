@@ -6,6 +6,8 @@ permalink: /kb/140/Q140997/
 
 ## Q140997: PPT7: How to Play Video Clips Full Screen in PowerPoint
 
+{% raw %}
+
 	Article: Q140997
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -121,3 +123,5 @@ permalink: /kb/140/Q140997/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/038/Q38133/
 
 ## Q38133: Hewlett-Packard Font Cartridges &quot;A&quot; Through &quot;G&quot; Description
 
+{% raw %}
+
 	Article: Q38133
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.x,2.x,3.0,3.0a,3.1,3.11
@@ -103,3 +105,5 @@ permalink: /kb/038/Q38133/
 	
 	=============================================================================
 	
+
+{% endraw %}

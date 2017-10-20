@@ -6,6 +6,8 @@ permalink: /kb/191/Q191764/
 
 ## Q191764: PRB: Closing a Project Does Not Make Other Open Project Active
 
+{% raw %}
+
 	Article: Q191764
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -70,3 +72,5 @@ permalink: /kb/191/Q191764/
 	
 	=============================================================================
 	
+
+{% endraw %}

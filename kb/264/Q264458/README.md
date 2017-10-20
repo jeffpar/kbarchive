@@ -6,6 +6,8 @@ permalink: /kb/264/Q264458/
 
 ## Q264458: BUG: ATL Object Wizard Misses &quot;Ready State&quot; Stock Property
 
+{% raw %}
+
 	Article: Q264458
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -83,3 +85,5 @@ permalink: /kb/264/Q264458/
 	
 	=============================================================================
 	
+
+{% endraw %}

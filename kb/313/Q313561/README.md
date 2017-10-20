@@ -6,6 +6,8 @@ permalink: /kb/313/Q313561/
 
 ## Q313561: HOW TO: Set HTTP Headers for Content Expiration in IIS
 
+{% raw %}
+
 	Article: Q313561
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -135,3 +137,5 @@ permalink: /kb/313/Q313561/
 	
 	=============================================================================
 	
+
+{% endraw %}

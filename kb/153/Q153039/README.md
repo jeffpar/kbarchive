@@ -6,6 +6,8 @@ permalink: /kb/153/Q153039/
 
 ## Q153039: XFOR: Non-TNEF Attachments Inbound From IMC at Top of Message
 
+{% raw %}
+
 	Article: Q153039
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -112,3 +114,5 @@ permalink: /kb/153/Q153039/
 	
 	=============================================================================
 	
+
+{% endraw %}

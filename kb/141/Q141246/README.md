@@ -6,6 +6,8 @@ permalink: /kb/141/Q141246/
 
 ## Q141246: PPT7: Group Command Unavailable When Placeholder Object Selected
 
+{% raw %}
+
 	Article: Q141246
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -61,3 +63,5 @@ permalink: /kb/141/Q141246/
 	
 	=============================================================================
 	
+
+{% endraw %}

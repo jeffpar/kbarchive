@@ -6,6 +6,8 @@ permalink: /kb/262/Q262775/
 
 ## Q262775: Installing MSN 5.1 prompts the user to call technical support if
 
+{% raw %}
+
 	Article: Q262775
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:5.0,5.1; Win2000:95,98; :
@@ -82,3 +84,5 @@ permalink: /kb/262/Q262775/
 	
 	=============================================================================
 	
+
+{% endraw %}

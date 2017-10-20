@@ -6,6 +6,8 @@ permalink: /kb/099/Q99872/
 
 ## Q99872: FIX: Wrong Menu Click Event After Hiding Menu
 
+{% raw %}
+
 	Article: Q99872
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,3.0
@@ -149,3 +151,5 @@ permalink: /kb/099/Q99872/
 	
 	=============================================================================
 	
+
+{% endraw %}

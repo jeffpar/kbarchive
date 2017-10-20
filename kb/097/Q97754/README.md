@@ -6,6 +6,8 @@ permalink: /kb/097/Q97754/
 
 ## Q97754: RAS 1.1/VCOMMIOD.EXE Internal Modem Fix
 
+{% raw %}
+
 	Article: Q97754
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/097/Q97754/
 	
 	=============================================================================
 	
+
+{% endraw %}

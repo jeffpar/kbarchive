@@ -6,6 +6,8 @@ permalink: /kb/181/Q181081/
 
 ## Q181081: SMS: ScanDisk Runs After a Remote Reboot of a Win95 OSR2 Client
 
+{% raw %}
+
 	Article: Q181081
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -87,3 +89,5 @@ permalink: /kb/181/Q181081/
 	
 	=============================================================================
 	
+
+{% endraw %}

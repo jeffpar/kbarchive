@@ -6,6 +6,8 @@ permalink: /kb/220/Q220724/
 
 ## Q220724: Name Change of an IIS 5.0 Application Restarts the Application
 
+{% raw %}
+
 	Article: Q220724
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -56,3 +58,5 @@ permalink: /kb/220/Q220724/
 	
 	=============================================================================
 	
+
+{% endraw %}

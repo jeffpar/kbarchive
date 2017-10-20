@@ -6,6 +6,8 @@ permalink: /kb/221/Q221508/
 
 ## Q221508: OL&#92;Exch Mac Client Hangs Wrkstn While Attempting to Find Server
 
+{% raw %}
+
 	Article: Q221508
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.1
@@ -65,3 +67,5 @@ permalink: /kb/221/Q221508/
 	
 	=============================================================================
 	
+
+{% endraw %}

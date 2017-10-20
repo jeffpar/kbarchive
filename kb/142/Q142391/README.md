@@ -6,6 +6,8 @@ permalink: /kb/142/Q142391/
 
 ## Q142391: Cannot Upgrade NFR or MSDN Windows NT 4.0 to Retail
 
+{% raw %}
+
 	Article: Q142391
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/142/Q142391/
 	
 	=============================================================================
 	
+
+{% endraw %}

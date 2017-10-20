@@ -6,6 +6,8 @@ permalink: /kb/096/Q96826/
 
 ## Q96826: Delete Sentry Automatically Purges Files When Necessary
 
+{% raw %}
+
 	Article: Q96826
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -88,3 +90,5 @@ permalink: /kb/096/Q96826/
 	
 	=============================================================================
 	
+
+{% endraw %}

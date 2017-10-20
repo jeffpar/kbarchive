@@ -6,6 +6,8 @@ permalink: /kb/176/Q176735/
 
 ## Q176735: XADM: Intel and Alpha Extension DLLs are Installed on Alpha
 
+{% raw %}
+
 	Article: Q176735
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -51,3 +53,5 @@ permalink: /kb/176/Q176735/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239447/
 
 ## Q239447: Unable to Connect to Down-Level SMB Server
 
+{% raw %}
+
 	Article: Q239447
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/239/Q239447/
 	
 	=============================================================================
 	
+
+{% endraw %}

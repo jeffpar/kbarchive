@@ -6,6 +6,8 @@ permalink: /kb/128/Q128902/
 
 ## Q128902: XCLN: Overlapping Group Boxes Not Visible
 
+{% raw %}
+
 	Article: Q128902
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -52,3 +54,5 @@ permalink: /kb/128/Q128902/
 	
 	=============================================================================
 	
+
+{% endraw %}

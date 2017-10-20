@@ -6,6 +6,8 @@ permalink: /kb/123/Q123617/
 
 ## Q123617: Summary List: Visual C++ Version 2.0 Known Problems
 
+{% raw %}
+
 	Article: Q123617
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -199,3 +201,5 @@ permalink: /kb/123/Q123617/
 	
 	=============================================================================
 	
+
+{% endraw %}

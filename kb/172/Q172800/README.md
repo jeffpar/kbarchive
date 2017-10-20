@@ -6,6 +6,8 @@ permalink: /kb/172/Q172800/
 
 ## Q172800: APPC Application Unable to Cancel TEST_RTS_AND_POST
 
+{% raw %}
+
 	Article: Q172800
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -60,3 +62,5 @@ permalink: /kb/172/Q172800/
 	
 	=============================================================================
 	
+
+{% endraw %}

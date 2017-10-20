@@ -6,6 +6,8 @@ permalink: /kb/163/Q163939/
 
 ## Q163939: ODE97: Help Workshop Help Topics Contents
 
+{% raw %}
+
 	Article: Q163939
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -139,3 +141,5 @@ permalink: /kb/163/Q163939/
 	
 	=============================================================================
 	
+
+{% endraw %}

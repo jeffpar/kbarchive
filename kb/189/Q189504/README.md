@@ -6,6 +6,8 @@ permalink: /kb/189/Q189504/
 
 ## Q189504: PRB: Menu Builder Creates Duplicate Hot Keys
 
+{% raw %}
+
 	Article: Q189504
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -71,3 +73,5 @@ permalink: /kb/189/Q189504/
 	
 	=============================================================================
 	
+
+{% endraw %}

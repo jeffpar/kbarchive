@@ -6,6 +6,8 @@ permalink: /kb/123/Q123983/
 
 ## Q123983: Line by Line Scrolling Does Not Work in MS-DOS-Based Editor
 
+{% raw %}
+
 	Article: Q123983
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/123/Q123983/
 	
 	=============================================================================
 	
+
+{% endraw %}

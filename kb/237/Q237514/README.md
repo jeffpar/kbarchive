@@ -6,6 +6,8 @@ permalink: /kb/237/Q237514/
 
 ## Q237514: Encarta Encyclopedia: Unable to Copy or Print Images
 
+{% raw %}
+
 	Article: Q237514
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/237/Q237514/
 	
 	=============================================================================
 	
+
+{% endraw %}

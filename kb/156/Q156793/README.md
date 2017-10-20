@@ -6,6 +6,8 @@ permalink: /kb/156/Q156793/
 
 ## Q156793: Windows Far East Localized Support of IME in a Command Prompt
 
+{% raw %}
+
 	Article: Q156793
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0; winnt:3.51,4.0
@@ -54,3 +56,5 @@ permalink: /kb/156/Q156793/
 	
 	=============================================================================
 	
+
+{% endraw %}

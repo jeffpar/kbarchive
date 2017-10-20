@@ -6,6 +6,8 @@ permalink: /kb/032/Q32089/
 
 ## Q32089: Performing NDB Navigation in Flight Simulator
 
+{% raw %}
+
 	Article: Q32089
 	Product(s): Microsoft Home Games
 	Version(s): 3.00 4.00
@@ -40,3 +42,5 @@ permalink: /kb/032/Q32089/
 	
 	=============================================================================
 	
+
+{% endraw %}

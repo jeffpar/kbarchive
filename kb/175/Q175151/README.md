@@ -6,6 +6,8 @@ permalink: /kb/175/Q175151/
 
 ## Q175151: FS98/2000 Err Msg: There was an Unrecoverable Exception Error...
 
+{% raw %}
+
 	Article: Q175151
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -104,3 +106,5 @@ permalink: /kb/175/Q175151/
 	
 	=============================================================================
 	
+
+{% endraw %}

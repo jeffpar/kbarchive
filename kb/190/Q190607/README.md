@@ -6,6 +6,8 @@ permalink: /kb/190/Q190607/
 
 ## Q190607: PRB: DataEnvironment: DataReport Moves Form To EOF
 
+{% raw %}
+
 	Article: Q190607
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -142,3 +144,5 @@ permalink: /kb/190/Q190607/
 	
 	=============================================================================
 	
+
+{% endraw %}

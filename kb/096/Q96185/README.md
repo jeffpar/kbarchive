@@ -6,6 +6,8 @@ permalink: /kb/096/Q96185/
 
 ## Q96185: Norton Speed Disk May Cause Lost Clusters with DBLSPACE
 
+{% raw %}
+
 	Article: Q96185
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -54,3 +56,5 @@ permalink: /kb/096/Q96185/
 	
 	=============================================================================
 	
+
+{% endraw %}

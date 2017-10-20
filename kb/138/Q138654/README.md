@@ -6,6 +6,8 @@ permalink: /kb/138/Q138654/
 
 ## Q138654: How to Add Items to a Combo Box with RowSourceType of Value
 
+{% raw %}
+
 	Article: Q138654
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/138/Q138654/
 	
 	=============================================================================
 	
+
+{% endraw %}

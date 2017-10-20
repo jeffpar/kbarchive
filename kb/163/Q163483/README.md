@@ -6,6 +6,8 @@ permalink: /kb/163/Q163483/
 
 ## Q163483: SMS: OS/2 Client Trap 000d in CLI_OS2
 
+{% raw %}
+
 	Article: Q163483
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -66,3 +68,5 @@ permalink: /kb/163/Q163483/
 	
 	=============================================================================
 	
+
+{% endraw %}

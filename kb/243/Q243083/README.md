@@ -6,6 +6,8 @@ permalink: /kb/243/Q243083/
 
 ## Q243083: Learn Microsoft Visual C++ 6.0 Now Comments and Corrections
 
+{% raw %}
+
 	Article: Q243083
 	Product(s): Microsoft Press
 	Version(s): 
@@ -132,3 +134,5 @@ permalink: /kb/243/Q243083/
 	
 	=============================================================================
 	
+
+{% endraw %}

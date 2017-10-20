@@ -6,6 +6,8 @@ permalink: /kb/137/Q137039/
 
 ## Q137039: New Features in Microsoft Jet Version 3.0
 
+{% raw %}
+
 	Article: Q137039
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -117,3 +119,5 @@ permalink: /kb/137/Q137039/
 	
 	=============================================================================
 	
+
+{% endraw %}

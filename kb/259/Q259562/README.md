@@ -6,6 +6,8 @@ permalink: /kb/259/Q259562/
 
 ## Q259562: INFO: The Visual FoxPro Digits of Precision
 
+{% raw %}
+
 	Article: Q259562
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -74,3 +76,5 @@ permalink: /kb/259/Q259562/
 	
 	=============================================================================
 	
+
+{% endraw %}

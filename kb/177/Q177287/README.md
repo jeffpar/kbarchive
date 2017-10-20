@@ -6,6 +6,8 @@ permalink: /kb/177/Q177287/
 
 ## Q177287: WD97: How to Specify Multiple Conditions with a Nested IF Field
 
+{% raw %}
+
 	Article: Q177287
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -118,3 +120,5 @@ permalink: /kb/177/Q177287/
 	
 	=============================================================================
 	
+
+{% endraw %}

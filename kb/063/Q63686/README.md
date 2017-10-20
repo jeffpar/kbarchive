@@ -6,6 +6,8 @@ permalink: /kb/063/Q63686/
 
 ## Q63686: Disk Space Required for Windows 3.0 Installation
 
+{% raw %}
+
 	Article: Q63686
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,95
@@ -59,3 +61,5 @@ permalink: /kb/063/Q63686/
 	
 	=============================================================================
 	
+
+{% endraw %}

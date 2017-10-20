@@ -6,6 +6,8 @@ permalink: /kb/156/Q156321/
 
 ## Q156321: INFO: STL Sample for Predicate Version of adjacent_find Function
 
+{% raw %}
+
 	Article: Q156321
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -168,3 +170,5 @@ permalink: /kb/156/Q156321/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143169/
 
 ## Q143169: User Account Expiration Date Decreases After Verifying Account
 
+{% raw %}
+
 	Article: Q143169
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -56,3 +58,5 @@ permalink: /kb/143/Q143169/
 	
 	=============================================================================
 	
+
+{% endraw %}

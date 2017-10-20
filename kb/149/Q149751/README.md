@@ -6,6 +6,8 @@ permalink: /kb/149/Q149751/
 
 ## Q149751: BUG: FOR3294 Error Using Module Inside Module Procedure
 
+{% raw %}
+
 	Article: Q149751
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -106,3 +108,5 @@ permalink: /kb/149/Q149751/
 	
 	=============================================================================
 	
+
+{% endraw %}

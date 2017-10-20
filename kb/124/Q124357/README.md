@@ -6,6 +6,8 @@ permalink: /kb/124/Q124357/
 
 ## Q124357: Err Msg Using NET USE: System Error 1130 Has Occurred
 
+{% raw %}
+
 	Article: Q124357
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -86,3 +88,5 @@ permalink: /kb/124/Q124357/
 	
 	=============================================================================
 	
+
+{% endraw %}

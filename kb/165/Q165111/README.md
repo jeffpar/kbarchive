@@ -6,6 +6,8 @@ permalink: /kb/165/Q165111/
 
 ## Q165111: XCON: Configuring X.400 Connector between Two Exchange Servers
 
+{% raw %}
+
 	Article: Q165111
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -119,3 +121,5 @@ permalink: /kb/165/Q165111/
 	
 	=============================================================================
 	
+
+{% endraw %}

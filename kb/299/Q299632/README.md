@@ -6,6 +6,8 @@ permalink: /kb/299/Q299632/
 
 ## Q299632: Editing Dictionary For Spelling Checker In MSN Explorer 6.1
 
+{% raw %}
+
 	Article: Q299632
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -112,3 +114,5 @@ permalink: /kb/299/Q299632/
 	
 	=============================================================================
 	
+
+{% endraw %}

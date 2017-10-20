@@ -6,6 +6,8 @@ permalink: /kb/153/Q153253/
 
 ## Q153253: SNA Server 3270 Sessions Not Recovered with Eicon WAN Server
 
+{% raw %}
+
 	Article: Q153253
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -77,3 +79,5 @@ permalink: /kb/153/Q153253/
 	
 	=============================================================================
 	
+
+{% endraw %}

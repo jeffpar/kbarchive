@@ -6,6 +6,8 @@ permalink: /kb/172/Q172991/
 
 ## Q172991: INFO: CAB Files Distributed with Visual Basic 5.0
 
+{% raw %}
+
 	Article: Q172991
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -94,3 +96,5 @@ permalink: /kb/172/Q172991/
 	
 	=============================================================================
 	
+
+{% endraw %}

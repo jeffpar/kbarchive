@@ -6,6 +6,8 @@ permalink: /kb/126/Q126448/
 
 ## Q126448: Err Msg: Not Enough Extended Memory Available to Start...
 
+{% raw %}
+
 	Article: Q126448
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -77,3 +79,5 @@ permalink: /kb/126/Q126448/
 	
 	=============================================================================
 	
+
+{% endraw %}

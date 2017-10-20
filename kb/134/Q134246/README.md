@@ -6,6 +6,8 @@ permalink: /kb/134/Q134246/
 
 ## Q134246: How to Hide the Application Control Box
 
+{% raw %}
+
 	Article: Q134246
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -70,3 +72,5 @@ permalink: /kb/134/Q134246/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216174/
 
 ## Q216174: Do Not Install ExAir Site on a Public Web Site
 
+{% raw %}
+
 	Article: Q216174
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -44,3 +46,5 @@ permalink: /kb/216/Q216174/
 	
 	=============================================================================
 	
+
+{% endraw %}

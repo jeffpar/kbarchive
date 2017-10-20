@@ -6,6 +6,8 @@ permalink: /kb/172/Q172701/
 
 ## Q172701: ODE97: Setup Wizard Requires ODESP2 for Updated ODBC Drivers
 
+{% raw %}
+
 	Article: Q172701
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -133,3 +135,5 @@ permalink: /kb/172/Q172701/
 	
 	=============================================================================
 	
+
+{% endraw %}

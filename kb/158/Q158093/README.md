@@ -6,6 +6,8 @@ permalink: /kb/158/Q158093/
 
 ## Q158093: GEX: Game Crashes if Compact Disc Is Removed
 
+{% raw %}
+
 	Article: Q158093
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -43,3 +45,5 @@ permalink: /kb/158/Q158093/
 	
 	=============================================================================
 	
+
+{% endraw %}

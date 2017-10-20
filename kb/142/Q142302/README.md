@@ -6,6 +6,8 @@ permalink: /kb/142/Q142302/
 
 ## Q142302: Information About the WINSDMP.EXE Utility
 
+{% raw %}
+
 	Article: Q142302
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51 4.0
@@ -79,3 +81,5 @@ permalink: /kb/142/Q142302/
 	
 	=============================================================================
 	
+
+{% endraw %}

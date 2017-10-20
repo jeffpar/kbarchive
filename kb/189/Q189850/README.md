@@ -6,6 +6,8 @@ permalink: /kb/189/Q189850/
 
 ## Q189850: INFO: Using WinInet APIs Asynchronously Within Visual Basic
 
+{% raw %}
+
 	Article: Q189850
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -186,3 +188,5 @@ permalink: /kb/189/Q189850/
 	
 	=============================================================================
 	
+
+{% endraw %}

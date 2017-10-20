@@ -6,6 +6,8 @@ permalink: /kb/166/Q166768/
 
 ## Q166768: HOWTO: Implementing a Custom Property Showing a FileOpen Dialog
 
+{% raw %}
+
 	Article: Q166768
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,4.2b,5.0
@@ -136,3 +138,5 @@ permalink: /kb/166/Q166768/
 	
 	=============================================================================
 	
+
+{% endraw %}

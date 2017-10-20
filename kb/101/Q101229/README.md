@@ -6,6 +6,8 @@ permalink: /kb/101/Q101229/
 
 ## Q101229: How to Restore Windows NT Over an Existing Installation
 
+{% raw %}
+
 	Article: Q101229
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -91,3 +93,5 @@ permalink: /kb/101/Q101229/
 	
 	=============================================================================
 	
+
+{% endraw %}

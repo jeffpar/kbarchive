@@ -6,6 +6,8 @@ permalink: /kb/134/Q134769/
 
 ## Q134769: System Agent Does Not Shut Down Startup Tasks
 
+{% raw %}
+
 	Article: Q134769
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134769/
 	
 	=============================================================================
 	
+
+{% endraw %}

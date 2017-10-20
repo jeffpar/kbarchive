@@ -6,6 +6,8 @@ permalink: /kb/141/Q141490/
 
 ## Q141490: Flight Simulator: How to Configure for MS Sidewinder 3D Pro
 
+{% raw %}
+
 	Article: Q141490
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0,5.1; WINDOWS:95
@@ -119,3 +121,5 @@ permalink: /kb/141/Q141490/
 	
 	=============================================================================
 	
+
+{% endraw %}

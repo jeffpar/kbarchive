@@ -6,6 +6,8 @@ permalink: /kb/135/Q135961/
 
 ## Q135961: Slow Performance After Installing Microsoft Plus!
 
+{% raw %}
+
 	Article: Q135961
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -64,3 +66,5 @@ permalink: /kb/135/Q135961/
 	
 	=============================================================================
 	
+
+{% endraw %}

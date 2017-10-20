@@ -6,6 +6,8 @@ permalink: /kb/151/Q151306/
 
 ## Q151306: WINS Partner Registry Settings May Be Deleted
 
+{% raw %}
+
 	Article: Q151306
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -63,3 +65,5 @@ permalink: /kb/151/Q151306/
 	
 	=============================================================================
 	
+
+{% endraw %}

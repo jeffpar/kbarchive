@@ -6,6 +6,8 @@ permalink: /kb/072/Q72394/
 
 ## Q72394: Mouse Is Not Supported on COM3 or COM4
 
+{% raw %}
+
 	Article: Q72394
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11,95
@@ -79,3 +81,5 @@ permalink: /kb/072/Q72394/
 	
 	=============================================================================
 	
+
+{% endraw %}

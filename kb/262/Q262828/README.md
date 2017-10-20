@@ -6,6 +6,8 @@ permalink: /kb/262/Q262828/
 
 ## Q262828: Long Server Name Not Found with Terminal Server Client
 
+{% raw %}
+
 	Article: Q262828
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/262/Q262828/
 	
 	=============================================================================
 	
+
+{% endraw %}

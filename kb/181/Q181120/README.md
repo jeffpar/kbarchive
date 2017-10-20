@@ -6,6 +6,8 @@ permalink: /kb/181/Q181120/
 
 ## Q181120: Manual Dial Dialog Fails to Appear when Logging On
 
+{% raw %}
+
 	Article: Q181120
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/181/Q181120/
 	
 	=============================================================================
 	
+
+{% endraw %}

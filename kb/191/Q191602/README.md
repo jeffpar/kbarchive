@@ -6,6 +6,8 @@ permalink: /kb/191/Q191602/
 
 ## Q191602: INFO: Bypassing Display Adapter Autodetect during Unattended Set
 
+{% raw %}
+
 	Article: Q191602
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/191/Q191602/
 	
 	=============================================================================
 	
+
+{% endraw %}

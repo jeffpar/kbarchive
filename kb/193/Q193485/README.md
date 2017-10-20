@@ -6,6 +6,8 @@ permalink: /kb/193/Q193485/
 
 ## Q193485: XADM: Exchange Server 5.5 120-Day Evaluation Copy Expiring
 
+{% raw %}
+
 	Article: Q193485
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -87,3 +89,5 @@ permalink: /kb/193/Q193485/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181834/
 
 ## Q181834: Message ID Tab Missing in Properties of a Message
 
+{% raw %}
+
 	Article: Q181834
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:8.00,8.01,8.02,8.03
@@ -72,3 +74,5 @@ permalink: /kb/181/Q181834/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141675/
 
 ## Q141675: HOWTO: How to Save and Restore State of Dockable Toolbars
 
+{% raw %}
+
 	Article: Q141675
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0
@@ -91,3 +93,5 @@ permalink: /kb/141/Q141675/
 	
 	=============================================================================
 	
+
+{% endraw %}

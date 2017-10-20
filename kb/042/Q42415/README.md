@@ -6,6 +6,8 @@ permalink: /kb/042/Q42415/
 
 ## Q42415: Eliminating Extra QC.INI Files
 
+{% raw %}
+
 	Article: Q42415
 	Product(s): See article
 	Version(s): 2.00
@@ -32,3 +34,5 @@ permalink: /kb/042/Q42415/
 	configuration. This will create a QC.INI file in that directory. This
 	.INI file then will be found in the PATH when QuickC is started from
 	any other directory.
+
+{% endraw %}

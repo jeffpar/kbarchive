@@ -6,6 +6,8 @@ permalink: /kb/161/Q161864/
 
 ## Q161864: PRB: Return 0 in TextBox Valid Allows Switching Active Form
 
+{% raw %}
+
 	Article: Q161864
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/161/Q161864/
 	
 	=============================================================================
 	
+
+{% endraw %}

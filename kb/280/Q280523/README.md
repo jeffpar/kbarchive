@@ -6,6 +6,8 @@ permalink: /kb/280/Q280523/
 
 ## Q280523: Client Certificate Mapping Does Not Work with French Locale
 
+{% raw %}
+
 	Article: Q280523
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/280/Q280523/
 	
 	=============================================================================
 	
+
+{% endraw %}

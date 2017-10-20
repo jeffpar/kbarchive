@@ -6,6 +6,8 @@ permalink: /kb/032/Q32057/
 
 ## Q32057: _beginthread()/_endthread() Coding Multi-Threaded Applications
 
+{% raw %}
+
 	Article: Q32057
 	Product(s): See article
 	Version(s): 5.10
@@ -46,3 +48,5 @@ permalink: /kb/032/Q32057/
 	when coding multi-threaded applications in C Version 5.10. Although
 	you may be able to use DosCreateThread(), consistent results are not
 	guaranteed.
+
+{% endraw %}

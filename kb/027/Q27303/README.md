@@ -6,6 +6,8 @@ permalink: /kb/027/Q27303/
 
 ## Q27303: Passing BASIC 2-Dimension INTEGER Array to C by Far Reference
 
+{% raw %}
+
 	Article: Q27303
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -74,3 +76,5 @@ permalink: /kb/027/Q27303/
 	    0       2       4       6       8
 	    0       3       6       9      12
 	    0       4       8      12      16
+
+{% endraw %}

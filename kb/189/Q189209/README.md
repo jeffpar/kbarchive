@@ -6,6 +6,8 @@ permalink: /kb/189/Q189209/
 
 ## Q189209: Off 97 Starts Here Setup Error With More Than 2 GB Free Space
 
+{% raw %}
+
 	Article: Q189209
 	Product(s): Microsoft Press
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/189/Q189209/
 	
 	=============================================================================
 	
+
+{% endraw %}

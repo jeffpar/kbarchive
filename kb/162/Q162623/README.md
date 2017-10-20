@@ -6,6 +6,8 @@ permalink: /kb/162/Q162623/
 
 ## Q162623: Error 87 and Dr. Watson
 
+{% raw %}
+
 	Article: Q162623
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -65,3 +67,5 @@ permalink: /kb/162/Q162623/
 	
 	=============================================================================
 	
+
+{% endraw %}

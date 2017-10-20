@@ -6,6 +6,8 @@ permalink: /kb/133/Q133312/
 
 ## Q133312: SNA Server Win 3.x APPC/CPIC Apps Hang Using Blocking Hook
 
+{% raw %}
+
 	Article: Q133312
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -73,3 +75,5 @@ permalink: /kb/133/Q133312/
 	
 	=============================================================================
 	
+
+{% endraw %}

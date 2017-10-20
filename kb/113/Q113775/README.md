@@ -6,6 +6,8 @@ permalink: /kb/113/Q113775/
 
 ## Q113775: MS-DOS 6.21: Errors Restoring Compressed Backups
 
+{% raw %}
+
 	Article: Q113775
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21
@@ -125,3 +127,5 @@ permalink: /kb/113/Q113775/
 	
 	=============================================================================
 	
+
+{% endraw %}

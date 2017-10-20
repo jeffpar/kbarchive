@@ -6,6 +6,8 @@ permalink: /kb/135/Q135221/
 
 ## Q135221: Cannot Display 256 Colors on Lexmark AR10
 
+{% raw %}
+
 	Article: Q135221
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/135/Q135221/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130272/
 
 ## Q130272: PRB: SourceSafe Appears to Use the Incorrect Date/Time
 
+{% raw %}
+
 	Article: Q130272
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.10 4.00 5.00 | 3.10 4.00 5.00
@@ -80,3 +82,5 @@ permalink: /kb/130/Q130272/
 	
 	=============================================================================
 	
+
+{% endraw %}

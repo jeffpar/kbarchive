@@ -6,6 +6,8 @@ permalink: /kb/154/Q154791/
 
 ## Q154791: MS-DOS-based Applications May Not Find All Files
 
+{% raw %}
+
 	Article: Q154791
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/154/Q154791/
 	
 	=============================================================================
 	
+
+{% endraw %}

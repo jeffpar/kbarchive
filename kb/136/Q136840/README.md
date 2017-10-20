@@ -6,6 +6,8 @@ permalink: /kb/136/Q136840/
 
 ## Q136840: Clicking the Quickshelf Icon Runs the CTRL+C Macro
 
+{% raw %}
+
 	Article: Q136840
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:6.0,6.0a,6.0c,7.0; :1995 edition
@@ -65,3 +67,5 @@ permalink: /kb/136/Q136840/
 	
 	=============================================================================
 	
+
+{% endraw %}

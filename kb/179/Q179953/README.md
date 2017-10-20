@@ -6,6 +6,8 @@ permalink: /kb/179/Q179953/
 
 ## Q179953: Shiva Client De-installation Leaves File References
 
+{% raw %}
+
 	Article: Q179953
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -64,3 +66,5 @@ permalink: /kb/179/Q179953/
 	
 	=============================================================================
 	
+
+{% endraw %}

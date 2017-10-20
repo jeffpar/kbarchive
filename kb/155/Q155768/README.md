@@ -6,6 +6,8 @@ permalink: /kb/155/Q155768/
 
 ## Q155768: IIS Services Will Not Start
 
+{% raw %}
+
 	Article: Q155768
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:1.0,3.51
@@ -71,3 +73,5 @@ permalink: /kb/155/Q155768/
 	
 	=============================================================================
 	
+
+{% endraw %}

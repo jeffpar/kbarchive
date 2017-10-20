@@ -6,6 +6,8 @@ permalink: /kb/099/Q99932/
 
 ## Q99932: IP Fragment Reassembly Bug Identified and Corrected
 
+{% raw %}
+
 	Article: Q99932
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/099/Q99932/
 	
 	=============================================================================
 	
+
+{% endraw %}

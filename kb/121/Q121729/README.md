@@ -6,6 +6,8 @@ permalink: /kb/121/Q121729/
 
 ## Q121729: Space Err Msg: Error Loading 2D driver
 
+{% raw %}
+
 	Article: Q121729
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/121/Q121729/
 	
 	=============================================================================
 	
+
+{% endraw %}

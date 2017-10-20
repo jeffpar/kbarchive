@@ -6,6 +6,8 @@ permalink: /kb/163/Q163172/
 
 ## Q163172: ODE97: Autorun Screen Appears When Adding ODE Tools Components
 
+{% raw %}
+
 	Article: Q163172
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/163/Q163172/
 	
 	=============================================================================
 	
+
+{% endraw %}

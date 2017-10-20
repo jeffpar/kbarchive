@@ -6,6 +6,8 @@ permalink: /kb/155/Q155632/
 
 ## Q155632: NWCONV.EXE Does Not Allow Conversion to Standalone Server
 
+{% raw %}
+
 	Article: Q155632
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50,3.51,4.0
@@ -57,3 +59,5 @@ permalink: /kb/155/Q155632/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180941/
 
 ## Q180941: APPC Printing Misinterprets ASCII Data
 
+{% raw %}
+
 	Article: Q180941
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -63,3 +65,5 @@ permalink: /kb/180/Q180941/
 	
 	=============================================================================
 	
+
+{% endraw %}

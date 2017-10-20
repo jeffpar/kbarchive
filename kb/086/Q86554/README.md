@@ -6,6 +6,8 @@ permalink: /kb/086/Q86554/
 
 ## Q86554: MHS: Requirements for the MHS Host
 
+{% raw %}
+
 	Article: Q86554
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/086/Q86554/
 	
 	=============================================================================
 	
+
+{% endraw %}

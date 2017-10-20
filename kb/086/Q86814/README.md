@@ -6,6 +6,8 @@ permalink: /kb/086/Q86814/
 
 ## Q86814: BUG: NMAKE TOOLS.INI Commands Ignore Environment Variables
 
+{% raw %}
+
 	Article: Q86814
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.2,1.3,1.4; NT:1.4,1.5
@@ -87,3 +89,5 @@ permalink: /kb/086/Q86814/
 	
 	=============================================================================
 	
+
+{% endraw %}

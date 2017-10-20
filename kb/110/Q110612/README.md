@@ -6,6 +6,8 @@ permalink: /kb/110/Q110612/
 
 ## Q110612: FFAPI: Slow PUT of Large Messages or Attachments
 
+{% raw %}
+
 	Article: Q110612
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1c
@@ -49,3 +51,5 @@ permalink: /kb/110/Q110612/
 	
 	=============================================================================
 	
+
+{% endraw %}

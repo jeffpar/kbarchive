@@ -6,6 +6,8 @@ permalink: /kb/145/Q145875/
 
 ## Q145875: XFOR: cc:Mail Messages Are Not Delivered by DEC Mail Bus
 
+{% raw %}
+
 	Article: Q145875
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -65,3 +67,5 @@ permalink: /kb/145/Q145875/
 	
 	=============================================================================
 	
+
+{% endraw %}

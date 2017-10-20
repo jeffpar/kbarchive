@@ -6,6 +6,8 @@ permalink: /kb/108/Q108244/
 
 ## Q108244: Pacific Data PostScript Cartridge is Limited Under Windows NT
 
+{% raw %}
+
 	Article: Q108244
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -50,3 +52,5 @@ permalink: /kb/108/Q108244/
 	
 	=============================================================================
 	
+
+{% endraw %}

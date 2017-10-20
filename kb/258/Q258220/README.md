@@ -6,6 +6,8 @@ permalink: /kb/258/Q258220/
 
 ## Q258220: XFOR: Migration Wizard Does Not Support cc:Mail Database 7
 
+{% raw %}
+
 	Article: Q258220
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/258/Q258220/
 	
 	=============================================================================
 	
+
+{% endraw %}

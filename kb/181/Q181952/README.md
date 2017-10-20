@@ -6,6 +6,8 @@ permalink: /kb/181/Q181952/
 
 ## Q181952: XFOR: PAB Addresses Invalid After Converting to DirSync Server
 
+{% raw %}
+
 	Article: Q181952
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -128,3 +130,5 @@ permalink: /kb/181/Q181952/
 	
 	=============================================================================
 	
+
+{% endraw %}

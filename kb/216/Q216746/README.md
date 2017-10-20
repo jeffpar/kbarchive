@@ -6,6 +6,8 @@ permalink: /kb/216/Q216746/
 
 ## Q216746: FP: Uppercase Links to Files Are Broken Publishing to UNIX
 
+{% raw %}
+
 	Article: Q216746
 	Product(s): Word Front Page
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/216/Q216746/
 	
 	=============================================================================
 	
+
+{% endraw %}

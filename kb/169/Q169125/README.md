@@ -6,6 +6,8 @@ permalink: /kb/169/Q169125/
 
 ## Q169125: SMS: Bitmap Buffering Causes Remote Control Corruption
 
+{% raw %}
+
 	Article: Q169125
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -74,3 +76,5 @@ permalink: /kb/169/Q169125/
 	
 	=============================================================================
 	
+
+{% endraw %}

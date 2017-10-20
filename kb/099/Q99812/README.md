@@ -6,6 +6,8 @@ permalink: /kb/099/Q99812/
 
 ## Q99812: BUG: GP Fault with Visual Basic DDE Sample &amp; Word for Windows
 
+{% raw %}
+
 	Article: Q99812
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.0a,2.0b,2.0c,3.0
@@ -79,3 +81,5 @@ permalink: /kb/099/Q99812/
 	
 	=============================================================================
 	
+
+{% endraw %}

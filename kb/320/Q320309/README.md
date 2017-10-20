@@ -6,6 +6,8 @@ permalink: /kb/320/Q320309/
 
 ## Q320309: PRB: &quot;File or Project Not Found&quot; Err Msg When You Add User Right
 
+{% raw %}
+
 	Article: Q320309
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -74,3 +76,5 @@ permalink: /kb/320/Q320309/
 	
 	=============================================================================
 	
+
+{% endraw %}

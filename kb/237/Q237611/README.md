@@ -6,6 +6,8 @@ permalink: /kb/237/Q237611/
 
 ## Q237611: SMS Executive Components Hang or Perform Slowly
 
+{% raw %}
+
 	Article: Q237611
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -91,3 +93,5 @@ permalink: /kb/237/Q237611/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118930/
 
 ## Q118930: PC Win: Send Note Becomes Read Note After Move to Shared Fld
 
+{% raw %}
+
 	Article: Q118930
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -39,3 +41,5 @@ permalink: /kb/118/Q118930/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198376/
 
 ## Q198376: WD97: Scroll Bars Reappear After Print Preview Full Screen
 
+{% raw %}
+
 	Article: Q198376
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/198/Q198376/
 	
 	=============================================================================
 	
+
+{% endraw %}

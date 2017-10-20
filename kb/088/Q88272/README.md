@@ -6,6 +6,8 @@ permalink: /kb/088/Q88272/
 
 ## Q88272: DOCERR: DSKLAYT2.EXE /V (Verbose) Switch Not Documented
 
+{% raw %}
+
 	Article: Q88272
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -46,3 +48,5 @@ permalink: /kb/088/Q88272/
 	
 	=============================================================================
 	
+
+{% endraw %}

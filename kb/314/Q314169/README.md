@@ -6,6 +6,8 @@ permalink: /kb/314/Q314169/
 
 ## Q314169: SMS: &quot;Connection Failed&quot; Error Message w/Administrator Console
 
+{% raw %}
+
 	Article: Q314169
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -53,3 +55,5 @@ permalink: /kb/314/Q314169/
 	
 	=============================================================================
 	
+
+{% endraw %}

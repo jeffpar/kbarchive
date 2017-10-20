@@ -6,6 +6,8 @@ permalink: /kb/125/Q125610/
 
 ## Q125610: Bookshelf: How to Change the Placement of QuickShelf
 
+{% raw %}
+
 	Article: Q125610
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1995 edition
@@ -100,3 +102,5 @@ permalink: /kb/125/Q125610/
 	
 	=============================================================================
 	
+
+{% endraw %}

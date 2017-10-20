@@ -6,6 +6,8 @@ permalink: /kb/165/Q165717/
 
 ## Q165717: WD97: Errors Installing Avery Wizard
 
+{% raw %}
+
 	Article: Q165717
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -114,3 +116,5 @@ permalink: /kb/165/Q165717/
 	
 	=============================================================================
 	
+
+{% endraw %}

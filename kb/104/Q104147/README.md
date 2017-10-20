@@ -6,6 +6,8 @@ permalink: /kb/104/Q104147/
 
 ## Q104147: PC Forms: Extended Characters Lost When Saving Forms
 
+{% raw %}
+
 	Article: Q104147
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -59,3 +61,5 @@ permalink: /kb/104/Q104147/
 	
 	=============================================================================
 	
+
+{% endraw %}

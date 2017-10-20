@@ -6,6 +6,8 @@ permalink: /kb/172/Q172671/
 
 ## Q172671: Print Server Does Not Honor Print Properties Set In Dialog
 
+{% raw %}
+
 	Article: Q172671
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -60,3 +62,5 @@ permalink: /kb/172/Q172671/
 	
 	=============================================================================
 	
+
+{% endraw %}

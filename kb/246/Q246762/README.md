@@ -6,6 +6,8 @@ permalink: /kb/246/Q246762/
 
 ## Q246762: XCON: Error Starting the MTA After Upgrading to Exchange 5.5
 
+{% raw %}
+
 	Article: Q246762
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/246/Q246762/
 	
 	=============================================================================
 	
+
+{% endraw %}

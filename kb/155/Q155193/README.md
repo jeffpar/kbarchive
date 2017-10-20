@@ -6,6 +6,8 @@ permalink: /kb/155/Q155193/
 
 ## Q155193: MOVE Command Does Not Support Overwriting Files
 
+{% raw %}
+
 	Article: Q155193
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -53,3 +55,5 @@ permalink: /kb/155/Q155193/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/299/Q299898/
 
 ## Q299898: FIX: Coverage Profiler Fails when Procedure Contains &amp;&amp;
 
+{% raw %}
+
 	Article: Q299898
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -90,3 +92,5 @@ permalink: /kb/299/Q299898/
 	
 	=============================================================================
 	
+
+{% endraw %}

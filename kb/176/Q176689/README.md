@@ -6,6 +6,8 @@ permalink: /kb/176/Q176689/
 
 ## Q176689: RRAS Requires Hotfix Update When Using Proxy 2.0
 
+{% raw %}
+
 	Article: Q176689
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:2.0,4.0
@@ -68,3 +70,5 @@ permalink: /kb/176/Q176689/
 	
 	=============================================================================
 	
+
+{% endraw %}

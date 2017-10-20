@@ -6,6 +6,8 @@ permalink: /kb/161/Q161070/
 
 ## Q161070: Step by Step Roaming Profiles Configuration
 
+{% raw %}
+
 	Article: Q161070
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/161/Q161070/
 	
 	=============================================================================
 	
+
+{% endraw %}

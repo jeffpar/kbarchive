@@ -6,6 +6,8 @@ permalink: /kb/094/Q94180/
 
 ## Q94180: PC Win: WINMAIL.DAT File Appears in 2.1 Clients
 
+{% raw %}
+
 	Article: Q94180
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -45,3 +47,5 @@ permalink: /kb/094/Q94180/
 	
 	=============================================================================
 	
+
+{% endraw %}

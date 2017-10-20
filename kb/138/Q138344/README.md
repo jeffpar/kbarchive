@@ -6,6 +6,8 @@ permalink: /kb/138/Q138344/
 
 ## Q138344: HOWTO: Set up a Shadow Dir in Visual SourceSafe Administrator
 
+{% raw %}
+
 	Article: Q138344
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -102,3 +104,5 @@ permalink: /kb/138/Q138344/
 	
 	=============================================================================
 	
+
+{% endraw %}

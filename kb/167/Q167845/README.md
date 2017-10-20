@@ -6,6 +6,8 @@ permalink: /kb/167/Q167845/
 
 ## Q167845: FIX: Class Wizard Deletes Source Files
 
+{% raw %}
+
 	Article: Q167845
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -77,3 +79,5 @@ permalink: /kb/167/Q167845/
 	
 	=============================================================================
 	
+
+{% endraw %}

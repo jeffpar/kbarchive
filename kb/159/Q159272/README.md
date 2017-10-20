@@ -6,6 +6,8 @@ permalink: /kb/159/Q159272/
 
 ## Q159272: RESKIT: RConsole Leaks Process Handles
 
+{% raw %}
+
 	Article: Q159272
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -54,3 +56,5 @@ permalink: /kb/159/Q159272/
 	
 	=============================================================================
 	
+
+{% endraw %}

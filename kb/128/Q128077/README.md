@@ -6,6 +6,8 @@ permalink: /kb/128/Q128077/
 
 ## Q128077: PRB: Can't Use DOCKED or DOCKPOSITION Props to Dock a Toolbar
 
+{% raw %}
+
 	Article: Q128077
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/128/Q128077/
 	
 	=============================================================================
 	
+
+{% endraw %}

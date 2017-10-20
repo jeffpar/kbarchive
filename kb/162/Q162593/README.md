@@ -6,6 +6,8 @@ permalink: /kb/162/Q162593/
 
 ## Q162593: DSPU LU Not Reactivated After Host Outage
 
+{% raw %}
+
 	Article: Q162593
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -96,3 +98,5 @@ permalink: /kb/162/Q162593/
 	
 	=============================================================================
 	
+
+{% endraw %}

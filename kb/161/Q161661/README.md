@@ -6,6 +6,8 @@ permalink: /kb/161/Q161661/
 
 ## Q161661: PPT: Sample Code to Copy Slides to Another Presentation
 
+{% raw %}
+
 	Article: Q161661
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -210,3 +212,5 @@ permalink: /kb/161/Q161661/
 	
 	=============================================================================
 	
+
+{% endraw %}

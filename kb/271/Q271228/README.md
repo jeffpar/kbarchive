@@ -6,6 +6,8 @@ permalink: /kb/271/Q271228/
 
 ## Q271228: IIS 5.0: Can't Get Data from Access Database on Netware 5 Server
 
+{% raw %}
+
 	Article: Q271228
 	Product(s): Internet Information Server
 	Version(s): 2.0,2000,2000, Service Release 1 (SR-1),4.0,5.0
@@ -174,3 +176,5 @@ permalink: /kb/271/Q271228/
 	
 	=============================================================================
 	
+
+{% endraw %}

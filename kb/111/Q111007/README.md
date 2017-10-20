@@ -6,6 +6,8 @@ permalink: /kb/111/Q111007/
 
 ## Q111007: BUG: MoveTo/LineTo Causes Divide by 0 Error
 
+{% raw %}
+
 	Article: Q111007
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -64,3 +66,5 @@ permalink: /kb/111/Q111007/
 	
 	=============================================================================
 	
+
+{% endraw %}

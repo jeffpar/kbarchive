@@ -6,6 +6,8 @@ permalink: /kb/185/Q185950/
 
 ## Q185950: Updating User Profiles in Mixed Environments
 
+{% raw %}
+
 	Article: Q185950
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -76,3 +78,5 @@ permalink: /kb/185/Q185950/
 	
 	=============================================================================
 	
+
+{% endraw %}

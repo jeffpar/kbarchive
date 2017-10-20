@@ -6,6 +6,8 @@ permalink: /kb/153/Q153560/
 
 ## Q153560: SMS: Cannot Distinguish Long Package Command Strings
 
+{% raw %}
+
 	Article: Q153560
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -46,3 +48,5 @@ permalink: /kb/153/Q153560/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/084/Q84373/
 
 ## Q84373: Wang PC with BIOS 1.14 Requires /M:2 Switch in DEVICE=
 
+{% raw %}
+
 	Article: Q84373
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:5.0,5.0a; WINDOWS:3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/084/Q84373/
 	
 	=============================================================================
 	
+
+{% endraw %}

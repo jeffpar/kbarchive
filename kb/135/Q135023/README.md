@@ -6,6 +6,8 @@ permalink: /kb/135/Q135023/
 
 ## Q135023: DOC: Error Code 1744 Documentation Is Incorrect
 
+{% raw %}
+
 	Article: Q135023
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -38,3 +40,5 @@ permalink: /kb/135/Q135023/
 	
 	=============================================================================
 	
+
+{% endraw %}

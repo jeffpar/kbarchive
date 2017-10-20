@@ -6,6 +6,8 @@ permalink: /kb/061/Q61660/
 
 ## Q61660: FIX: Certain Key Sequences Cause R6003 or SYS1943 in PWB 1.0
 
+{% raw %}
+
 	Article: Q61660
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/061/Q61660/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/201/Q201999/
 
 ## Q201999: SMS: ANSI SQL-92 Keywords Used as SMS Database Column Names
 
+{% raw %}
+
 	Article: Q201999
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0,6.0,6.5
@@ -64,3 +66,5 @@ permalink: /kb/201/Q201999/
 	
 	=============================================================================
 	
+
+{% endraw %}

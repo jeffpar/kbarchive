@@ -6,6 +6,8 @@ permalink: /kb/073/Q73794/
 
 ## Q73794: Windows Productivity Pack Installation Deletes Other Groups
 
+{% raw %}
+
 	Article: Q73794
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -62,3 +64,5 @@ permalink: /kb/073/Q73794/
 	
 	=============================================================================
 	
+
+{% endraw %}

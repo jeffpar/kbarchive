@@ -6,6 +6,8 @@ permalink: /kb/058/Q58311/
 
 ## Q58311: Adding Same Screen Font Twice Causes Problems
 
+{% raw %}
+
 	Article: Q58311
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/058/Q58311/
 	
 	=============================================================================
 	
+
+{% endraw %}

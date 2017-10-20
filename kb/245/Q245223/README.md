@@ -6,6 +6,8 @@ permalink: /kb/245/Q245223/
 
 ## Q245223: XFOR: Filter Rules for Lotus Notes and Exchange Server Dirsync
 
+{% raw %}
+
 	Article: Q245223
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -120,3 +122,5 @@ permalink: /kb/245/Q245223/
 	
 	=============================================================================
 	
+
+{% endraw %}

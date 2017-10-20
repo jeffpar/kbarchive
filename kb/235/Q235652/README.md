@@ -6,6 +6,8 @@ permalink: /kb/235/Q235652/
 
 ## Q235652: XADM: Constrain Violation Adding Accounts to Permissions Tab
 
+{% raw %}
+
 	Article: Q235652
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -64,3 +66,5 @@ permalink: /kb/235/Q235652/
 	
 	=============================================================================
 	
+
+{% endraw %}

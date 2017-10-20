@@ -6,6 +6,8 @@ permalink: /kb/199/Q199977/
 
 ## Q199977: XFOR: Common LinkAge V3.2 Exchange-Notes Connector Problem
 
+{% raw %}
+
 	Article: Q199977
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -84,3 +86,5 @@ permalink: /kb/199/Q199977/
 	
 	=============================================================================
 	
+
+{% endraw %}

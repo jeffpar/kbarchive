@@ -6,6 +6,8 @@ permalink: /kb/041/Q41345/
 
 ## Q41345: Calculating Available Memory in Large Model
 
+{% raw %}
+
 	Article: Q41345
 	Product(s): See article
 	Version(s): 5.10
@@ -95,3 +97,5 @@ permalink: /kb/041/Q41345/
 	    printf("Total memory available is about %ld bytes\n", totalavail);
 	
 	}
+
+{% endraw %}

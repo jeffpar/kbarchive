@@ -6,6 +6,8 @@ permalink: /kb/170/Q170902/
 
 ## Q170902: SMS: Printed SMS Query Results Do Not Match Screen Results
 
+{% raw %}
+
 	Article: Q170902
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -58,3 +60,5 @@ permalink: /kb/170/Q170902/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135702/
 
 ## Q135702: FIX: File List for Recently Used Projects Lost
 
+{% raw %}
+
 	Article: Q135702
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/135/Q135702/
 	
 	=============================================================================
 	
+
+{% endraw %}

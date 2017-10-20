@@ -6,6 +6,8 @@ permalink: /kb/186/Q186705/
 
 ## Q186705: XCLN: Explore Web Page Fails Opening FTP Address
 
+{% raw %}
+
 	Article: Q186705
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -57,3 +59,5 @@ permalink: /kb/186/Q186705/
 	
 	=============================================================================
 	
+
+{% endraw %}

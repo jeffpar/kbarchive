@@ -6,6 +6,8 @@ permalink: /kb/143/Q143112/
 
 ## Q143112: Tips for Using the Class Browser in Visual FoxPro 3.0b
 
+{% raw %}
+
 	Article: Q143112
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b
@@ -155,3 +157,5 @@ permalink: /kb/143/Q143112/
 	
 	=============================================================================
 	
+
+{% endraw %}

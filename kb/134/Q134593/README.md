@@ -6,6 +6,8 @@ permalink: /kb/134/Q134593/
 
 ## Q134593: How to Modify the Documents Menu
 
+{% raw %}
+
 	Article: Q134593
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -76,3 +78,5 @@ permalink: /kb/134/Q134593/
 	
 	=============================================================================
 	
+
+{% endraw %}

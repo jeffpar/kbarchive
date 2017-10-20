@@ -6,6 +6,8 @@ permalink: /kb/228/Q228447/
 
 ## Q228447: Baseball 2000: Shredded or Torn Graphics in Game
 
+{% raw %}
+
 	Article: Q228447
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/228/Q228447/
 	
 	=============================================================================
 	
+
+{% endraw %}

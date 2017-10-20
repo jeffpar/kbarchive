@@ -6,6 +6,8 @@ permalink: /kb/081/Q81704/
 
 ## Q81704: PRB: VGA Monitor Loses Sync on 8514 Dual Monitor System
 
+{% raw %}
+
 	Article: Q81704
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -59,3 +61,5 @@ permalink: /kb/081/Q81704/
 	
 	=============================================================================
 	
+
+{% endraw %}

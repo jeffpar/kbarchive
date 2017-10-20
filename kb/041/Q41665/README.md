@@ -6,6 +6,8 @@ permalink: /kb/041/Q41665/
 
 ## Q41665: QuickC 2.00 README.DOC: Error Message C1025
 
+{% raw %}
+
 	Article: Q41665
 	Product(s): See article
 	Version(s): 2.00
@@ -24,3 +26,5 @@ permalink: /kb/041/Q41665/
 	   C1025   compiler terminated by user
 	
 	   The compiler was stopped by the user.
+
+{% endraw %}

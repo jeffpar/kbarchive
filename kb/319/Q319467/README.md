@@ -6,6 +6,8 @@ permalink: /kb/319/Q319467/
 
 ## Q319467: Flight Simulator 2002: Documentation Errors in Help
 
+{% raw %}
+
 	Article: Q319467
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -126,3 +128,5 @@ permalink: /kb/319/Q319467/
 	
 	=============================================================================
 	
+
+{% endraw %}

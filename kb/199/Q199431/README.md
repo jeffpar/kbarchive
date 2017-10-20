@@ -6,6 +6,8 @@ permalink: /kb/199/Q199431/
 
 ## Q199431: PRB: Enabling Menu Mnemonics in an MFC ActiveX Control
 
+{% raw %}
+
 	Article: Q199431
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -109,3 +111,5 @@ permalink: /kb/199/Q199431/
 	
 	=============================================================================
 	
+
+{% endraw %}

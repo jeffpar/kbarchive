@@ -6,6 +6,8 @@ permalink: /kb/132/Q132644/
 
 ## Q132644: Error Printing from WordPerfect to PostScript Printer
 
+{% raw %}
+
 	Article: Q132644
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/132/Q132644/
 	
 	=============================================================================
 	
+
+{% endraw %}

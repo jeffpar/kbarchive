@@ -6,6 +6,8 @@ permalink: /kb/084/Q84335/
 
 ## Q84335: Canon and DeskJet Printers Only Offer TrueType at 300 x 300
 
+{% raw %}
+
 	Article: Q84335
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -47,3 +49,5 @@ permalink: /kb/084/Q84335/
 	
 	=============================================================================
 	
+
+{% endraw %}

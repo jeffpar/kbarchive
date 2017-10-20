@@ -6,6 +6,8 @@ permalink: /kb/171/Q171051/
 
 ## Q171051: How to Bypass the Recycle Bin When Deleting Files
 
+{% raw %}
+
 	Article: Q171051
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 95
@@ -63,3 +65,5 @@ permalink: /kb/171/Q171051/
 	
 	=============================================================================
 	
+
+{% endraw %}

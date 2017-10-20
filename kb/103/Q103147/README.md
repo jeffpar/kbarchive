@@ -6,6 +6,8 @@ permalink: /kb/103/Q103147/
 
 ## Q103147: Err Msg: An Application Error Has Occurred... in SPOOLSS.EXE
 
+{% raw %}
+
 	Article: Q103147
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -93,3 +95,5 @@ permalink: /kb/103/Q103147/
 	
 	=============================================================================
 	
+
+{% endraw %}

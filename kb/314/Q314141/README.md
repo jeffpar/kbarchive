@@ -6,6 +6,8 @@ permalink: /kb/314/Q314141/
 
 ## Q314141: SMS: Hardware Inventory Limited to Root&#92;Cimv2 and Root&#92;Cimv2&#92;Sms
 
+{% raw %}
+
 	Article: Q314141
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP3
@@ -131,3 +133,5 @@ permalink: /kb/314/Q314141/
 	
 	=============================================================================
 	
+
+{% endraw %}

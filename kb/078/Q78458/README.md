@@ -6,6 +6,8 @@ permalink: /kb/078/Q78458/
 
 ## Q78458: NEC 80286 APC4 Is Not Supported by MS-DOS 5.x &amp; 6.x
 
+{% raw %}
+
 	Article: Q78458
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -46,3 +48,5 @@ permalink: /kb/078/Q78458/
 	
 	=============================================================================
 	
+
+{% endraw %}

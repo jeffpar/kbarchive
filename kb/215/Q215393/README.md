@@ -6,6 +6,8 @@ permalink: /kb/215/Q215393/
 
 ## Q215393: BUG: Code Comments Increase the Size of a Compiled VBCE App
 
+{% raw %}
+
 	Article: Q215393
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -83,3 +85,5 @@ permalink: /kb/215/Q215393/
 	
 	=============================================================================
 	
+
+{% endraw %}

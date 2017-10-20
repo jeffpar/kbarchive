@@ -6,6 +6,8 @@ permalink: /kb/173/Q173835/
 
 ## Q173835: Learn C Now Includes 5.25&quot; Disks Only
 
+{% raw %}
+
 	Article: Q173835
 	Product(s): Microsoft Press
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/173/Q173835/
 	
 	=============================================================================
 	
+
+{% endraw %}

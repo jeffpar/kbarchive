@@ -6,6 +6,8 @@ permalink: /kb/088/Q88781/
 
 ## Q88781: SMTP: How to Use the Import Utility
 
+{% raw %}
+
 	Article: Q88781
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -36,3 +38,5 @@ permalink: /kb/088/Q88781/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67788/
 
 ## Q67788: FIX: IRP Directive Has Single Line Limit of 120 Characters
 
+{% raw %}
+
 	Article: Q67788
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.1,5.1a
@@ -85,3 +87,5 @@ permalink: /kb/067/Q67788/
 	
 	=============================================================================
 	
+
+{% endraw %}

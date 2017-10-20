@@ -6,6 +6,8 @@ permalink: /kb/095/Q95016/
 
 ## Q95016: PROFS: &quot;System Abend 155&quot; Installing Gateway on Host
 
+{% raw %}
+
 	Article: Q95016
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1b
@@ -69,3 +71,5 @@ permalink: /kb/095/Q95016/
 	
 	=============================================================================
 	
+
+{% endraw %}

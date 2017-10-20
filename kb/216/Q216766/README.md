@@ -6,6 +6,8 @@ permalink: /kb/216/Q216766/
 
 ## Q216766: FIX: Windows NT 4.0 w/ SP4 Causes Data Corruption in RPC Calls
 
+{% raw %}
+
 	Article: Q216766
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -125,3 +127,5 @@ permalink: /kb/216/Q216766/
 	
 	=============================================================================
 	
+
+{% endraw %}

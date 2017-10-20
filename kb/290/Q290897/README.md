@@ -6,6 +6,8 @@ permalink: /kb/290/Q290897/
 
 ## Q290897: XADM: Error Message: The Folder Could Not Be Opened
 
+{% raw %}
+
 	Article: Q290897
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -88,3 +90,5 @@ permalink: /kb/290/Q290897/
 	
 	=============================================================================
 	
+
+{% endraw %}

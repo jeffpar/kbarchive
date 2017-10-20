@@ -6,6 +6,8 @@ permalink: /kb/139/Q139891/
 
 ## Q139891: INFO: Visual SourceSafe Installation is Processor Specific
 
+{% raw %}
+
 	Article: Q139891
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/139/Q139891/
 	
 	=============================================================================
 	
+
+{% endraw %}

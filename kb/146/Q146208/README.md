@@ -6,6 +6,8 @@ permalink: /kb/146/Q146208/
 
 ## Q146208: XCLN: Help File for Fax Template Invalid or Non-Existent
 
+{% raw %}
+
 	Article: Q146208
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -73,3 +75,5 @@ permalink: /kb/146/Q146208/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/219/Q219031/
 
 ## Q219031: XADM: Default POP3 Line-Wrap Set to 72 Characters
 
+{% raw %}
+
 	Article: Q219031
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -104,3 +106,5 @@ permalink: /kb/219/Q219031/
 	
 	=============================================================================
 	
+
+{% endraw %}

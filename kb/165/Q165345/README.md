@@ -6,6 +6,8 @@ permalink: /kb/165/Q165345/
 
 ## Q165345: SCS Codes Ignored When Bypassing GDI
 
+{% raw %}
+
 	Article: Q165345
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -140,3 +142,5 @@ permalink: /kb/165/Q165345/
 	
 	=============================================================================
 	
+
+{% endraw %}

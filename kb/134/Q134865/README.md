@@ -6,6 +6,8 @@ permalink: /kb/134/Q134865/
 
 ## Q134865: PPT7: Presentation Conference Fails with Errors
 
+{% raw %}
+
 	Article: Q134865
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -68,3 +70,5 @@ permalink: /kb/134/Q134865/
 	
 	=============================================================================
 	
+
+{% endraw %}

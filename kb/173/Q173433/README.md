@@ -6,6 +6,8 @@ permalink: /kb/173/Q173433/
 
 ## Q173433: Is MSN Supported on Macintosh Computers?
 
+{% raw %}
+
 	Article: Q173433
 	Product(s): The Microsoft Network
 	Version(s): 1.2,1.3,2.0,2.5
@@ -36,3 +38,5 @@ permalink: /kb/173/Q173433/
 	
 	=============================================================================
 	
+
+{% endraw %}

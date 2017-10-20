@@ -6,6 +6,8 @@ permalink: /kb/173/Q173107/
 
 ## Q173107: XCLN: Setup /Q1 in Win3.x Ignores HomeServer, MailboxName
 
+{% raw %}
+
 	Article: Q173107
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -82,3 +84,5 @@ permalink: /kb/173/Q173107/
 	
 	=============================================================================
 	
+
+{% endraw %}

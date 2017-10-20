@@ -6,6 +6,8 @@ permalink: /kb/240/Q240107/
 
 ## Q240107: NBA 2000: Game Hangs When You Press the PAUSE/BREAK Key
 
+{% raw %}
+
 	Article: Q240107
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/240/Q240107/
 	
 	=============================================================================
 	
+
+{% endraw %}

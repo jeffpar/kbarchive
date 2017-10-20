@@ -6,6 +6,8 @@ permalink: /kb/147/Q147144/
 
 ## Q147144: XCLN: ESC Key Does Not Close Profiles Window
 
+{% raw %}
+
 	Article: Q147144
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -47,3 +49,5 @@ permalink: /kb/147/Q147144/
 	
 	=============================================================================
 	
+
+{% endraw %}

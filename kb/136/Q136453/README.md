@@ -6,6 +6,8 @@ permalink: /kb/136/Q136453/
 
 ## Q136453: Using MS Exchange Remotely in Windows 95 Questions and Answers
 
+{% raw %}
+
 	Article: Q136453
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -131,3 +133,5 @@ permalink: /kb/136/Q136453/
 	
 	=============================================================================
 	
+
+{% endraw %}

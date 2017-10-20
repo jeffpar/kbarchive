@@ -6,6 +6,8 @@ permalink: /kb/165/Q165434/
 
 ## Q165434: BUG: Undo Database Deletion Causes Data View to Lose Database
 
+{% raw %}
+
 	Article: Q165434
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -49,3 +51,5 @@ permalink: /kb/165/Q165434/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/306/Q306810/
 
 ## Q306810: XCLN: Japanese ODK Language Tool Fails During Package Creation
 
+{% raw %}
+
 	Article: Q306810
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,98
@@ -91,3 +93,5 @@ permalink: /kb/306/Q306810/
 	
 	=============================================================================
 	
+
+{% endraw %}

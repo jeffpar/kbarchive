@@ -6,6 +6,8 @@ permalink: /kb/242/Q242515/
 
 ## Q242515: ALS TCP/IP For Windows NT Comments and Corrections
 
+{% raw %}
+
 	Article: Q242515
 	Product(s): Microsoft Press
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/242/Q242515/
 	
 	=============================================================================
 	
+
+{% endraw %}

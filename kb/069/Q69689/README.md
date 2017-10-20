@@ -6,6 +6,8 @@ permalink: /kb/069/Q69689/
 
 ## Q69689: SysEdit Err Msg: Cannot Create File &#92;windows&#92;system.ini
 
+{% raw %}
+
 	Article: Q69689
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/069/Q69689/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/224/Q224081/
 
 ## Q224081: Performance Monitor Counters Do Not Start from a Shared Bus
 
+{% raw %}
+
 	Article: Q224081
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/224/Q224081/
 	
 	=============================================================================
 	
+
+{% endraw %}

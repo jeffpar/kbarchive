@@ -6,6 +6,8 @@ permalink: /kb/140/Q140056/
 
 ## Q140056: SMS: Wrongly Allowed to Set Up Secondary Site On Primary Site
 
+{% raw %}
+
 	Article: Q140056
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -49,3 +51,5 @@ permalink: /kb/140/Q140056/
 	
 	=============================================================================
 	
+
+{% endraw %}

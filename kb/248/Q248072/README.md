@@ -6,6 +6,8 @@ permalink: /kb/248/Q248072/
 
 ## Q248072: Err Msg: HTTP 403.3 - Forbidden: Write Access Forbidden
 
+{% raw %}
+
 	Article: Q248072
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -93,3 +95,5 @@ permalink: /kb/248/Q248072/
 	
 	=============================================================================
 	
+
+{% endraw %}

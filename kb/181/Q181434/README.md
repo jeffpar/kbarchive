@@ -6,6 +6,8 @@ permalink: /kb/181/Q181434/
 
 ## Q181434: PRB: SQL_DRIVER_NOPROMPT Error in IIS 4.0 ISAPI Application
 
+{% raw %}
+
 	Article: Q181434
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0,6.0
@@ -83,3 +85,5 @@ permalink: /kb/181/Q181434/
 	
 	=============================================================================
 	
+
+{% endraw %}

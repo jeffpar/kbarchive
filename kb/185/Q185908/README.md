@@ -6,6 +6,8 @@ permalink: /kb/185/Q185908/
 
 ## Q185908: SMS: How to Integrate Apple Macintosh Clients
 
+{% raw %}
+
 	Article: Q185908
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -81,3 +83,5 @@ permalink: /kb/185/Q185908/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141390/
 
 ## Q141390: FIX: NOCONSOLE in Report Form Command Causes Erratic Behavior
 
+{% raw %}
+
 	Article: Q141390
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -63,3 +65,5 @@ permalink: /kb/141/Q141390/
 	
 	=============================================================================
 	
+
+{% endraw %}

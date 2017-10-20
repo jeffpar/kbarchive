@@ -6,6 +6,8 @@ permalink: /kb/129/Q129866/
 
 ## Q129866: Use of Long Names
 
+{% raw %}
+
 	Article: Q129866
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -102,3 +104,5 @@ permalink: /kb/129/Q129866/
 	
 	=============================================================================
 	
+
+{% endraw %}

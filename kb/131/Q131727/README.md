@@ -6,6 +6,8 @@ permalink: /kb/131/Q131727/
 
 ## Q131727: XADM: EDBUTIL /d &lt;Path to Dir.edb&gt; Causes NT 2140 Error
 
+{% raw %}
+
 	Article: Q131727
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/131/Q131727/
 	
 	=============================================================================
 	
+
+{% endraw %}

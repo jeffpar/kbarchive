@@ -6,6 +6,8 @@ permalink: /kb/139/Q139333/
 
 ## Q139333: Creating Alternate Boot Selections on AXP Machines
 
+{% raw %}
+
 	Article: Q139333
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0 3.51
@@ -138,3 +140,5 @@ permalink: /kb/139/Q139333/
 	
 	=============================================================================
 	
+
+{% endraw %}

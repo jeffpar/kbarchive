@@ -6,6 +6,8 @@ permalink: /kb/242/Q242097/
 
 ## Q242097: GSNW Shares Deleted with NT Server Connected to Cisco Catalyst 5
 
+{% raw %}
+
 	Article: Q242097
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/242/Q242097/
 	
 	=============================================================================
 	
+
+{% endraw %}

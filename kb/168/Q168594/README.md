@@ -6,6 +6,8 @@ permalink: /kb/168/Q168594/
 
 ## Q168594: HOWTO: Use a Date Filter in an Oracle Remote View
 
+{% raw %}
+
 	Article: Q168594
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/168/Q168594/
 	
 	=============================================================================
 	
+
+{% endraw %}

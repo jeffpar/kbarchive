@@ -6,6 +6,8 @@ permalink: /kb/234/Q234295/
 
 ## Q234295: XADM: Changing Database Paths Using the Administrator Program
 
+{% raw %}
+
 	Article: Q234295
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/234/Q234295/
 	
 	=============================================================================
 	
+
+{% endraw %}

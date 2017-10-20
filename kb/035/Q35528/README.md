@@ -6,6 +6,8 @@ permalink: /kb/035/Q35528/
 
 ## Q35528: Placing Control Characters in Text of File
 
+{% raw %}
+
 	Article: Q35528
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -24,3 +26,5 @@ permalink: /kb/035/Q35528/
 	your text. Use the keystroke assigned to "Quote", then enter the
 	combination of keys necessary to produce the character. For example, a
 	Form Feed would be a combination of the CTRL key and the L key.
+
+{% endraw %}

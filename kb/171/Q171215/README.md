@@ -6,6 +6,8 @@ permalink: /kb/171/Q171215/
 
 ## Q171215: HOWTO: Use Data Form Wizard to Connect to Remote Data via DAO
 
+{% raw %}
+
 	Article: Q171215
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/171/Q171215/
 	
 	=============================================================================
 	
+
+{% endraw %}

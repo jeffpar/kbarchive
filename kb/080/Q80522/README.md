@@ -6,6 +6,8 @@ permalink: /kb/080/Q80522/
 
 ## Q80522: FltSim: Surface Winds Do Not Affect Take Off
 
+{% raw %}
+
 	Article: Q80522
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/080/Q80522/
 	
 	=============================================================================
 	
+
+{% endraw %}

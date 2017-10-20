@@ -6,6 +6,8 @@ permalink: /kb/158/Q158713/
 
 ## Q158713: Fatal Exception Error Using DHCP
 
+{% raw %}
+
 	Article: Q158713
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/158/Q158713/
 	
 	=============================================================================
 	
+
+{% endraw %}

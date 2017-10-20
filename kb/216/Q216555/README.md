@@ -6,6 +6,8 @@ permalink: /kb/216/Q216555/
 
 ## Q216555: How to Allow Web Access to Large User Groups
 
+{% raw %}
+
 	Article: Q216555
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/216/Q216555/
 	
 	=============================================================================
 	
+
+{% endraw %}

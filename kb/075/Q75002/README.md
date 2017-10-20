@@ -6,6 +6,8 @@ permalink: /kb/075/Q75002/
 
 ## Q75002: MDISubCl.exe Changes Background Color of MDI Client
 
+{% raw %}
+
 	Article: Q75002
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -102,3 +104,5 @@ permalink: /kb/075/Q75002/
 	
 	=============================================================================
 	
+
+{% endraw %}

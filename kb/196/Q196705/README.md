@@ -6,6 +6,8 @@ permalink: /kb/196/Q196705/
 
 ## Q196705: INFO: Files Installed in WINNT&#92;SYSTEM32 Folder for VFP6 Setup
 
+{% raw %}
+
 	Article: Q196705
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -180,3 +182,5 @@ permalink: /kb/196/Q196705/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263389/
 
 ## Q263389: Upgrading Multiple-User SMS 1.2 Clients Running Windows NT 3.51
 
+{% raw %}
+
 	Article: Q263389
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP2
@@ -61,3 +63,5 @@ permalink: /kb/263/Q263389/
 	
 	=============================================================================
 	
+
+{% endraw %}

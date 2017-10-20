@@ -6,6 +6,8 @@ permalink: /kb/156/Q156976/
 
 ## Q156976: PRB: A Required .DLL file, MSVCRT.DLL, Was Not Found
 
+{% raw %}
+
 	Article: Q156976
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0
@@ -105,3 +107,5 @@ permalink: /kb/156/Q156976/
 	
 	=============================================================================
 	
+
+{% endraw %}

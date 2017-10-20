@@ -6,6 +6,8 @@ permalink: /kb/262/Q262464/
 
 ## Q262464: WD97: File Size Increases with EMF, PNG, GIF, or JPEG Graphics
 
+{% raw %}
+
 	Article: Q262464
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/262/Q262464/
 	
 	=============================================================================
 	
+
+{% endraw %}

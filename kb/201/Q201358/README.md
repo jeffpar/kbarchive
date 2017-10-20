@@ -6,6 +6,8 @@ permalink: /kb/201/Q201358/
 
 ## Q201358: XCLN: Cannot Generate/View Forms Created in Form Design Wizard
 
+{% raw %}
+
 	Article: Q201358
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:97; winnt:5.5 SP1
@@ -80,3 +82,5 @@ permalink: /kb/201/Q201358/
 	
 	=============================================================================
 	
+
+{% endraw %}

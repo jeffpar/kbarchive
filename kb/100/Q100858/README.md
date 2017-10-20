@@ -6,6 +6,8 @@ permalink: /kb/100/Q100858/
 
 ## Q100858: Cinemania: ListMaker Lists Cannot Be Copied
 
+{% raw %}
+
 	Article: Q100858
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 editions,1994 editions
@@ -51,3 +53,5 @@ permalink: /kb/100/Q100858/
 	
 	=============================================================================
 	
+
+{% endraw %}

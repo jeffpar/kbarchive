@@ -6,6 +6,8 @@ permalink: /kb/140/Q140712/
 
 ## Q140712: How to Enable Promiscuous Mode for Madge Token Ring Adapter
 
+{% raw %}
+
 	Article: Q140712
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -78,3 +80,5 @@ permalink: /kb/140/Q140712/
 	
 	=============================================================================
 	
+
+{% endraw %}

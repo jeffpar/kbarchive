@@ -6,6 +6,8 @@ permalink: /kb/096/Q96029/
 
 ## Q96029: SPEEDCACHE PLUS Version 4.3 Not MS-DOS 6.x-Compatible
 
+{% raw %}
+
 	Article: Q96029
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/096/Q96029/
 	
 	=============================================================================
 	
+
+{% endraw %}

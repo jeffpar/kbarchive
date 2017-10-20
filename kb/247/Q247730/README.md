@@ -6,6 +6,8 @@ permalink: /kb/247/Q247730/
 
 ## Q247730: Fighter Ace II Err: Fatal Error: Can't Set Video Mode 640x480x16
 
+{% raw %}
+
 	Article: Q247730
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/247/Q247730/
 	
 	=============================================================================
 	
+
+{% endraw %}

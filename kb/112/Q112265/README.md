@@ -6,6 +6,8 @@ permalink: /kb/112/Q112265/
 
 ## Q112265: PC Win: Using F5 or SHIFT Key to Start Mail Utilities
 
+{% raw %}
+
 	Article: Q112265
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b,3.2
@@ -55,3 +57,5 @@ permalink: /kb/112/Q112265/
 	
 	=============================================================================
 	
+
+{% endraw %}

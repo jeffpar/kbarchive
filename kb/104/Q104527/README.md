@@ -6,6 +6,8 @@ permalink: /kb/104/Q104527/
 
 ## Q104527: PC DB: Shared Folder Rights Not Available to Admin by Default
 
+{% raw %}
+
 	Article: Q104527
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.0a,3.0b,3.2
@@ -62,3 +64,5 @@ permalink: /kb/104/Q104527/
 	
 	=============================================================================
 	
+
+{% endraw %}

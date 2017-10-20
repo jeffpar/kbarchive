@@ -6,6 +6,8 @@ permalink: /kb/160/Q160152/
 
 ## Q160152: PPT: PowerPoint Does Not Collate Using NT 3.51 Postscript Driver
 
+{% raw %}
+
 	Article: Q160152
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MS-DOS:1.0; WINDOWS:7.0,7.0a,7.0b,97; winnt:3.5,3.51,4.0
@@ -88,3 +90,5 @@ permalink: /kb/160/Q160152/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127207/
 
 ## Q127207: Missing Objects and Counters in Performance Monitor
 
+{% raw %}
+
 	Article: Q127207
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -91,3 +93,5 @@ permalink: /kb/127/Q127207/
 	
 	=============================================================================
 	
+
+{% endraw %}

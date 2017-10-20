@@ -6,6 +6,8 @@ permalink: /kb/084/Q84125/
 
 ## Q84125: Cannot Install Windows SDK Over Debugging Windows
 
+{% raw %}
+
 	Article: Q84125
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -37,3 +39,5 @@ permalink: /kb/084/Q84125/
 	
 	=============================================================================
 	
+
+{% endraw %}

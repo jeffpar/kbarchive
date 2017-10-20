@@ -6,6 +6,8 @@ permalink: /kb/081/Q81142/
 
 ## Q81142: An Annotated Dr. Watson Log File
 
+{% raw %}
+
 	Article: Q81142
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 
@@ -230,3 +232,5 @@ permalink: /kb/081/Q81142/
 	
 	=============================================================================
 	
+
+{% endraw %}

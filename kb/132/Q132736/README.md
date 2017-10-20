@@ -6,6 +6,8 @@ permalink: /kb/132/Q132736/
 
 ## Q132736: Windows 95 Networking Questions and Answers
 
+{% raw %}
+
 	Article: Q132736
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -142,3 +144,5 @@ permalink: /kb/132/Q132736/
 	
 	=============================================================================
 	
+
+{% endraw %}

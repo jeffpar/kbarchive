@@ -6,6 +6,8 @@ permalink: /kb/274/Q274602/
 
 ## Q274602: CFS2: Cannot Upgrade from Combat Flight Simulator
 
+{% raw %}
+
 	Article: Q274602
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/274/Q274602/
 	
 	=============================================================================
 	
+
+{% endraw %}

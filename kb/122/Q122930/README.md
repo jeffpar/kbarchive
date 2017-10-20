@@ -6,6 +6,8 @@ permalink: /kb/122/Q122930/
 
 ## Q122930: Kids: Program Icons and Groups Disappear from Program Manager
 
+{% raw %}
+
 	Article: Q122930
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a,3.1,3.11
@@ -169,3 +171,5 @@ permalink: /kb/122/Q122930/
 	
 	=============================================================================
 	
+
+{% endraw %}

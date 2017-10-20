@@ -6,6 +6,8 @@ permalink: /kb/170/Q170852/
 
 ## Q170852: Access Denied to Subdirectory w/ Windows NT Challenge/Response
 
+{% raw %}
+
 	Article: Q170852
 	Product(s): Internet Information Server
 	Version(s): WinNT:3.0
@@ -56,3 +58,5 @@ permalink: /kb/170/Q170852/
 	
 	=============================================================================
 	
+
+{% endraw %}

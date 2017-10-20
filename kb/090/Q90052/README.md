@@ -6,6 +6,8 @@ permalink: /kb/090/Q90052/
 
 ## Q90052: Banyan VINES Err Msg: The Switch Has Been Prevented. Cannot...
 
+{% raw %}
+
 	Article: Q90052
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -96,3 +98,5 @@ permalink: /kb/090/Q90052/
 	
 	=============================================================================
 	
+
+{% endraw %}

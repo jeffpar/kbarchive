@@ -6,6 +6,8 @@ permalink: /kb/183/Q183636/
 
 ## Q183636: Errors using Personal Web Manager
 
+{% raw %}
+
 	Article: Q183636
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:4.0,4.01,95
@@ -65,3 +67,5 @@ permalink: /kb/183/Q183636/
 	
 	=============================================================================
 	
+
+{% endraw %}

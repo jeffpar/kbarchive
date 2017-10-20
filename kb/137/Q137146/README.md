@@ -6,6 +6,8 @@ permalink: /kb/137/Q137146/
 
 ## Q137146: SnaBase Now Limits Domain or Subdomain to 15 SNA Servers
 
+{% raw %}
+
 	Article: Q137146
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -70,3 +72,5 @@ permalink: /kb/137/Q137146/
 	
 	=============================================================================
 	
+
+{% endraw %}

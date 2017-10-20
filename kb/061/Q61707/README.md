@@ -6,6 +6,8 @@ permalink: /kb/061/Q61707/
 
 ## Q61707: Epson EPL-6000 Laser Prints Incorrect Font
 
+{% raw %}
+
 	Article: Q61707
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/061/Q61707/
 	
 	=============================================================================
 	
+
+{% endraw %}

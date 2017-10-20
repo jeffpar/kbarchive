@@ -6,6 +6,8 @@ permalink: /kb/076/Q76759/
 
 ## Q76759: Sound Blaster: 1 Digitized Voice Channel Feature
 
+{% raw %}
+
 	Article: Q76759
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0; WINDOWS:3.1
@@ -87,3 +89,5 @@ permalink: /kb/076/Q76759/
 	
 	=============================================================================
 	
+
+{% endraw %}

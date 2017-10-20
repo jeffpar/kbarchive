@@ -6,6 +6,8 @@ permalink: /kb/126/Q126144/
 
 ## Q126144: Cannot Print to PostScript Printer on Novell Network
 
+{% raw %}
+
 	Article: Q126144
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/126/Q126144/
 	
 	=============================================================================
 	
+
+{% endraw %}

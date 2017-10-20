@@ -6,6 +6,8 @@ permalink: /kb/034/Q34469/
 
 ## Q34469: MASM 5.10 MACRO.DOC: Device I/O
 
+{% raw %}
+
 	Article: Q34469
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -51,3 +53,5 @@ permalink: /kb/034/Q34469/
 	Return:         If carry clear, bytes written in AX
 	Registers used: Always AX, DX, BX, and CX; DS if segment
 	                changed
+
+{% endraw %}

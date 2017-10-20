@@ -6,6 +6,8 @@ permalink: /kb/129/Q129973/
 
 ## Q129973: MS-DOS-Based Program's Setup Causes Blue-Screen Error Message
 
+{% raw %}
+
 	Article: Q129973
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/129/Q129973/
 	
 	=============================================================================
 	
+
+{% endraw %}

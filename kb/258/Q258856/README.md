@@ -6,6 +6,8 @@ permalink: /kb/258/Q258856/
 
 ## Q258856: Index Server Does Not Display PPT Title Information
 
+{% raw %}
+
 	Article: Q258856
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:2000; winnt:2.0
@@ -98,3 +100,5 @@ permalink: /kb/258/Q258856/
 	
 	=============================================================================
 	
+
+{% endraw %}

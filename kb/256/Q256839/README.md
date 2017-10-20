@@ -6,6 +6,8 @@ permalink: /kb/256/Q256839/
 
 ## Q256839: Long URL Requests/Parameters Aren't Logged Using ODBC Logging
 
+{% raw %}
+
 	Article: Q256839
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -74,3 +76,5 @@ permalink: /kb/256/Q256839/
 	
 	=============================================================================
 	
+
+{% endraw %}

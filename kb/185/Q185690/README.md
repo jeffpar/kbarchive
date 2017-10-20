@@ -6,6 +6,8 @@ permalink: /kb/185/Q185690/
 
 ## Q185690: SNA Server Manager Not Reflecting Correct Status
 
+{% raw %}
+
 	Article: Q185690
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP2,3.0 SP3,4.0
@@ -84,3 +86,5 @@ permalink: /kb/185/Q185690/
 	
 	=============================================================================
 	
+
+{% endraw %}

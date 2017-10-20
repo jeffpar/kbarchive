@@ -6,6 +6,8 @@ permalink: /kb/140/Q140073/
 
 ## Q140073: PC NTMMTA: Err Msg: Failure to Initialize Modem Session
 
+{% raw %}
+
 	Article: Q140073
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -93,3 +95,5 @@ permalink: /kb/140/Q140073/
 	
 	=============================================================================
 	
+
+{% endraw %}

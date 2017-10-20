@@ -6,6 +6,8 @@ permalink: /kb/216/Q216094/
 
 ## Q216094: Combat FS: Display Is Choppy or Blinks Intermittently
 
+{% raw %}
+
 	Article: Q216094
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/216/Q216094/
 	
 	=============================================================================
 	
+
+{% endraw %}

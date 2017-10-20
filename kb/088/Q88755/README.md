@@ -6,6 +6,8 @@ permalink: /kb/088/Q88755/
 
 ## Q88755: Windows 3.1 Screen Savers May Be Disabled by AutoSave
 
+{% raw %}
+
 	Article: Q88755
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11,4.0,5.0,5.0a,5.0c
@@ -70,3 +72,5 @@ permalink: /kb/088/Q88755/
 	
 	=============================================================================
 	
+
+{% endraw %}

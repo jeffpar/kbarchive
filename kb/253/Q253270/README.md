@@ -6,6 +6,8 @@ permalink: /kb/253/Q253270/
 
 ## Q253270: Locally Created Collections Become Locked
 
+{% raw %}
+
 	Article: Q253270
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -80,3 +82,5 @@ permalink: /kb/253/Q253270/
 	
 	=============================================================================
 	
+
+{% endraw %}

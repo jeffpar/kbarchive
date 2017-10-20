@@ -6,6 +6,8 @@ permalink: /kb/155/Q155608/
 
 ## Q155608: XCON: TWA Reference in RAS Connector Help Erroneous
 
+{% raw %}
+
 	Article: Q155608
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -42,3 +44,5 @@ permalink: /kb/155/Q155608/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100637/
 
 ## Q100637: INFO: Specifying Icons for Console Applications in Windows NT
 
+{% raw %}
+
 	Article: Q100637
 	Product(s): Microsoft Programming Utilities
 	Version(s): winnt:
@@ -66,3 +68,5 @@ permalink: /kb/100/Q100637/
 	
 	=============================================================================
 	
+
+{% endraw %}

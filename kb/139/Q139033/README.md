@@ -6,6 +6,8 @@ permalink: /kb/139/Q139033/
 
 ## Q139033: PC NTMMTA: Err Msg: Error OS/2 Error Code 38
 
+{% raw %}
+
 	Article: Q139033
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -69,3 +71,5 @@ permalink: /kb/139/Q139033/
 	
 	=============================================================================
 	
+
+{% endraw %}

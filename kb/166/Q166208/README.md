@@ -6,6 +6,8 @@ permalink: /kb/166/Q166208/
 
 ## Q166208: Kids Plus!: How To Remove Plus! For Kids From Your Computer
 
+{% raw %}
+
 	Article: Q166208
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/166/Q166208/
 	
 	=============================================================================
 	
+
+{% endraw %}

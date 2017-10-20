@@ -6,6 +6,8 @@ permalink: /kb/148/Q148596/
 
 ## Q148596: Event ID 951 Should Not Be Logged As A Significant System
 
+{% raw %}
+
 	Article: Q148596
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -67,3 +69,5 @@ permalink: /kb/148/Q148596/
 	
 	=============================================================================
 	
+
+{% endraw %}

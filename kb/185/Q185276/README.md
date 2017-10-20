@@ -6,6 +6,8 @@ permalink: /kb/185/Q185276/
 
 ## Q185276: Err Msg: Error Writing to LPTx. The System Cannot Find...
 
+{% raw %}
+
 	Article: Q185276
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -89,3 +91,5 @@ permalink: /kb/185/Q185276/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/039/Q39310/
 
 ## Q39310: INFO: Selective Initialization of Array Elements Not Allowed
 
+{% raw %}
+
 	Article: Q39310
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0
@@ -56,3 +58,5 @@ permalink: /kb/039/Q39310/
 	
 	=============================================================================
 	
+
+{% endraw %}

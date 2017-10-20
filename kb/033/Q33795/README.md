@@ -6,6 +6,8 @@ permalink: /kb/033/Q33795/
 
 ## Q33795: INFO: Consecutive Calls to ctime() Overwrite Previous Values
 
+{% raw %}
+
 	Article: Q33795
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/033/Q33795/
 	
 	=============================================================================
 	
+
+{% endraw %}

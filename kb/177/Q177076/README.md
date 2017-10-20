@@ -6,6 +6,8 @@ permalink: /kb/177/Q177076/
 
 ## Q177076: How to Start the Add Printer Wizard at a Command Prompt
 
+{% raw %}
+
 	Article: Q177076
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/177/Q177076/
 	
 	=============================================================================
 	
+
+{% endraw %}

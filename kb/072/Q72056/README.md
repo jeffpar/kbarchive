@@ -6,6 +6,8 @@ permalink: /kb/072/Q72056/
 
 ## Q72056: User's Guide Incorrectly Describes How Paintbrush Uses Fonts
 
+{% raw %}
+
 	Article: Q72056
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -45,3 +47,5 @@ permalink: /kb/072/Q72056/
 	
 	=============================================================================
 	
+
+{% endraw %}

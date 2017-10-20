@@ -6,6 +6,8 @@ permalink: /kb/040/Q40351/
 
 ## Q40351: Call _setvideomode before Calling _imagesize
 
+{% raw %}
+
 	Article: Q40351
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -33,3 +35,5 @@ permalink: /kb/040/Q40351/
 	2. _imagesize
 	
 	3. _getimage and putimage
+
+{% endraw %}

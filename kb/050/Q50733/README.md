@@ -6,6 +6,8 @@ permalink: /kb/050/Q50733/
 
 ## Q50733: Huge Indirection May not Cross Segment Boundaries
 
+{% raw %}
+
 	Article: Q50733
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -74,3 +76,5 @@ permalink: /kb/050/Q50733/
 	Microsoft C, however. Accordingly, the huge pointer arithmetic does
 	not account for such a situation. This is not a bug in the compiler,
 	but an error in the code.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128895/
 
 ## Q128895: PRB: LNK2001 Link Error on Floating Division Functions
 
+{% raw %}
+
 	Article: Q128895
 	Product(s): Microsoft C Compiler
 	Version(s): 2.10
@@ -107,3 +109,5 @@ permalink: /kb/128/Q128895/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128403/
 
 ## Q128403: System Time Advances One Day When You Run Mail's EXTERNAL
 
+{% raw %}
+
 	Article: Q128403
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5
@@ -122,3 +124,5 @@ permalink: /kb/128/Q128403/
 	
 	=============================================================================
 	
+
+{% endraw %}

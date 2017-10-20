@@ -6,6 +6,8 @@ permalink: /kb/171/Q171046/
 
 ## Q171046: WD97: Some Underline Styles Are Lost During Save to HTML
 
+{% raw %}
+
 	Article: Q171046
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/171/Q171046/
 	
 	=============================================================================
 	
+
+{% endraw %}

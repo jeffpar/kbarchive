@@ -6,6 +6,8 @@ permalink: /kb/129/Q129220/
 
 ## Q129220: Taskbar Button Not Updated After Exiting Command Prompt
 
+{% raw %}
+
 	Article: Q129220
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -72,3 +74,5 @@ permalink: /kb/129/Q129220/
 	
 	=============================================================================
 	
+
+{% endraw %}

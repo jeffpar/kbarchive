@@ -6,6 +6,8 @@ permalink: /kb/090/Q90403/
 
 ## Q90403: PC Win: Send Mail Feature and Microsoft Word for Windows
 
+{% raw %}
+
 	Article: Q90403
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/090/Q90403/
 	
 	=============================================================================
 	
+
+{% endraw %}

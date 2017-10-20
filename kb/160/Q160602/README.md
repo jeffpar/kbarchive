@@ -6,6 +6,8 @@ permalink: /kb/160/Q160602/
 
 ## Q160602: XADM: Exporting from Command Line Produces Only Mailboxes
 
+{% raw %}
+
 	Article: Q160602
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/160/Q160602/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/087/Q87030/
 
 ## Q87030: SMTP: Installing and Configuring a Downstream Postoffice
 
+{% raw %}
+
 	Article: Q87030
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -118,3 +120,5 @@ permalink: /kb/087/Q87030/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163725/
 
 ## Q163725: NDIS Driver Fails To Check Functional Address
 
+{% raw %}
+
 	Article: Q163725
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -62,3 +64,5 @@ permalink: /kb/163/Q163725/
 	
 	=============================================================================
 	
+
+{% endraw %}

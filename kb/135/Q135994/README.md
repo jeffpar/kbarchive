@@ -6,6 +6,8 @@ permalink: /kb/135/Q135994/
 
 ## Q135994: PRB: Visual SourceSafe Explorer Checks Out .FRM Without .FRX
 
+{% raw %}
+
 	Article: Q135994
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -128,3 +130,5 @@ permalink: /kb/135/Q135994/
 	
 	=============================================================================
 	
+
+{% endraw %}

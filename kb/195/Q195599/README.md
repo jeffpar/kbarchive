@@ -6,6 +6,8 @@ permalink: /kb/195/Q195599/
 
 ## Q195599: Games: Acceleration Unavailable w/ 3Dfx Voodoo Display Adapter
 
+{% raw %}
+
 	Article: Q195599
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -119,3 +121,5 @@ permalink: /kb/195/Q195599/
 	
 	=============================================================================
 	
+
+{% endraw %}

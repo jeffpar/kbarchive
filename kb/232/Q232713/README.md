@@ -6,6 +6,8 @@ permalink: /kb/232/Q232713/
 
 ## Q232713: XCON: Message Arrives with Blank To and From Fields
 
+{% raw %}
+
 	Article: Q232713
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -113,3 +115,5 @@ permalink: /kb/232/Q232713/
 	
 	=============================================================================
 	
+
+{% endraw %}

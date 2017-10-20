@@ -6,6 +6,8 @@ permalink: /kb/287/Q287616/
 
 ## Q287616: FTP Error 550 Occurs When You Use Put and Append Commands
 
+{% raw %}
+
 	Article: Q287616
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -77,3 +79,5 @@ permalink: /kb/287/Q287616/
 	
 	=============================================================================
 	
+
+{% endraw %}

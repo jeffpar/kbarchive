@@ -6,6 +6,8 @@ permalink: /kb/099/Q99109/
 
 ## Q99109: DOC: Bad Printing Code Example in Guide to Programming
 
+{% raw %}
+
 	Article: Q99109
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/099/Q99109/
 	
 	=============================================================================
 	
+
+{% endraw %}

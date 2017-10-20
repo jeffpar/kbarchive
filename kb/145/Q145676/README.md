@@ -6,6 +6,8 @@ permalink: /kb/145/Q145676/
 
 ## Q145676: PRB: Registry Overwritten with Same ProgID/Different Bitness Ser
 
+{% raw %}
+
 	Article: Q145676
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -188,3 +190,5 @@ permalink: /kb/145/Q145676/
 	
 	=============================================================================
 	
+
+{% endraw %}

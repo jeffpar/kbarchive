@@ -6,6 +6,8 @@ permalink: /kb/141/Q141677/
 
 ## Q141677: FIX: Insufficient Memory Errors Using OLE Controls
 
+{% raw %}
+
 	Article: Q141677
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -117,3 +119,5 @@ permalink: /kb/141/Q141677/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168579/
 
 ## Q168579: How to Set Up Locally-Based System Policies
 
+{% raw %}
+
 	Article: Q168579
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -130,3 +132,5 @@ permalink: /kb/168/Q168579/
 	
 	=============================================================================
 	
+
+{% endraw %}

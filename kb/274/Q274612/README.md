@@ -6,6 +6,8 @@ permalink: /kb/274/Q274612/
 
 ## Q274612: CFS2: Game Minimizes When You Attempt to Calibrate the Joystick
 
+{% raw %}
+
 	Article: Q274612
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -48,3 +50,5 @@ permalink: /kb/274/Q274612/
 	
 	=============================================================================
 	
+
+{% endraw %}

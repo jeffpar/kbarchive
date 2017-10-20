@@ -6,6 +6,8 @@ permalink: /kb/051/Q51414/
 
 ## Q51414: Internal Format of CURRENCY Data Type in BASIC PDS 7.00
 
+{% raw %}
+
 	Article: Q51414
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -63,3 +65,5 @@ permalink: /kb/051/Q51414/
 	  PRINT "press a key to continue, Esc to EXIT"
 	  SLEEP
 	LOOP
+
+{% endraw %}

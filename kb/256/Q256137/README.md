@@ -6,6 +6,8 @@ permalink: /kb/256/Q256137/
 
 ## Q256137: Cannot Log Off or Shut Down a Windows NT Server
 
+{% raw %}
+
 	Article: Q256137
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -109,3 +111,5 @@ permalink: /kb/256/Q256137/
 	
 	=============================================================================
 	
+
+{% endraw %}

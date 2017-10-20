@@ -6,6 +6,8 @@ permalink: /kb/105/Q105066/
 
 ## Q105066: Delete Sentry Appears to Hang on Network Server
 
+{% raw %}
+
 	Article: Q105066
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -45,3 +47,5 @@ permalink: /kb/105/Q105066/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192053/
 
 ## Q192053: XADM: Information Store Access Violates When Freeing Memory
 
+{% raw %}
+
 	Article: Q192053
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -145,3 +147,5 @@ permalink: /kb/192/Q192053/
 	
 	=============================================================================
 	
+
+{% endraw %}

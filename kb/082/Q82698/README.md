@@ -6,6 +6,8 @@ permalink: /kb/082/Q82698/
 
 ## Q82698: Novell NetWare &amp; NETBIOS.EXE Should Not Run in a VM
 
+{% raw %}
+
 	Article: Q82698
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/082/Q82698/
 	
 	=============================================================================
 	
+
+{% endraw %}

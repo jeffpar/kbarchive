@@ -6,6 +6,8 @@ permalink: /kb/185/Q185901/
 
 ## Q185901: SMS: Jobs Will Not Go Active, Invalid JobIDs generated.
 
+{% raw %}
+
 	Article: Q185901
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -56,3 +58,5 @@ permalink: /kb/185/Q185901/
 	
 	=============================================================================
 	
+
+{% endraw %}

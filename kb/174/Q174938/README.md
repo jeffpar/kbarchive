@@ -6,6 +6,8 @@ permalink: /kb/174/Q174938/
 
 ## Q174938: SMS: Rservice May Install Service with Bad Password
 
+{% raw %}
+
 	Article: Q174938
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -48,3 +50,5 @@ permalink: /kb/174/Q174938/
 	
 	=============================================================================
 	
+
+{% endraw %}

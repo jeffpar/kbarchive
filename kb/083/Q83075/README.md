@@ -6,6 +6,8 @@ permalink: /kb/083/Q83075/
 
 ## Q83075: Running MEM /D Under Windows
 
+{% raw %}
+
 	Article: Q83075
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/083/Q83075/
 	
 	=============================================================================
 	
+
+{% endraw %}

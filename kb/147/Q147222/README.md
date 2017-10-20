@@ -6,6 +6,8 @@ permalink: /kb/147/Q147222/
 
 ## Q147222: Group of Hotfixes for Exchange 5.5 and IIS 4.0
 
+{% raw %}
+
 	Article: Q147222
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.0,4.0,5.5
@@ -133,3 +135,5 @@ permalink: /kb/147/Q147222/
 	
 	=============================================================================
 	
+
+{% endraw %}

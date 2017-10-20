@@ -6,6 +6,8 @@ permalink: /kb/036/Q36955/
 
 ## Q36955: C2086, C2061 on CFLOW.C when Language Extentions Not Enabled
 
+{% raw %}
+
 	Article: Q36955
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -40,3 +42,5 @@ permalink: /kb/036/Q36955/
 	by the compiler to be the simple identifier being defined, leaving the
 	now-surplus "c" to be flagged as syntactically incorrect. This
 	information is documented in the user's guide on Page 99.
+
+{% endraw %}

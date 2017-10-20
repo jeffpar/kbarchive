@@ -6,6 +6,8 @@ permalink: /kb/130/Q130394/
 
 ## Q130394: Kids: Color Palette Problems During PowerPoint Slide Show
 
+{% raw %}
+
 	Article: Q130394
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,4.0
@@ -71,3 +73,5 @@ permalink: /kb/130/Q130394/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222974/
 
 ## Q222974: Windows NT 4.0 Enterprise Edition Does Not Use More Than 256 MB
 
+{% raw %}
+
 	Article: Q222974
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -76,3 +78,5 @@ permalink: /kb/222/Q222974/
 	
 	=============================================================================
 	
+
+{% endraw %}

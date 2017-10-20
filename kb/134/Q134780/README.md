@@ -6,6 +6,8 @@ permalink: /kb/134/Q134780/
 
 ## Q134780: PPT7: Action Item Slides Not Written from Embedded Presentation
 
+{% raw %}
+
 	Article: Q134780
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134780/
 	
 	=============================================================================
 	
+
+{% endraw %}

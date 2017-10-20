@@ -6,6 +6,8 @@ permalink: /kb/164/Q164198/
 
 ## Q164198: Sound Recorder Saves Renamed File with Previous Name
 
+{% raw %}
+
 	Article: Q164198
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -48,3 +50,5 @@ permalink: /kb/164/Q164198/
 	
 	=============================================================================
 	
+
+{% endraw %}

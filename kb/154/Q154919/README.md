@@ -6,6 +6,8 @@ permalink: /kb/154/Q154919/
 
 ## Q154919: Internet Explorer 3.0 Setup Prompts to Overwrite Riched20.dll
 
+{% raw %}
+
 	Article: Q154919
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:3.0; winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/154/Q154919/
 	
 	=============================================================================
 	
+
+{% endraw %}

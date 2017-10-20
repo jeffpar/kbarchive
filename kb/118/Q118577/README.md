@@ -6,6 +6,8 @@ permalink: /kb/118/Q118577/
 
 ## Q118577: Lotus Tutorials Change System Colors in Windows 95
 
+{% raw %}
+
 	Article: Q118577
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -54,3 +56,5 @@ permalink: /kb/118/Q118577/
 	
 	=============================================================================
 	
+
+{% endraw %}

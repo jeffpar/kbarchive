@@ -6,6 +6,8 @@ permalink: /kb/291/Q291781/
 
 ## Q291781: &quot;Stop 0x50&quot; in IopReportResourceUsage
 
+{% raw %}
+
 	Article: Q291781
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP5,4.0 SP6a
@@ -94,3 +96,5 @@ permalink: /kb/291/Q291781/
 	
 	=============================================================================
 	
+
+{% endraw %}

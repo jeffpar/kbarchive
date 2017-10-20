@@ -6,6 +6,8 @@ permalink: /kb/319/Q319276/
 
 ## Q319276: FIX: Fatal Exception Error with VAL() and Alpha Character
 
+{% raw %}
+
 	Article: Q319276
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0,7.0
@@ -76,3 +78,5 @@ permalink: /kb/319/Q319276/
 	
 	=============================================================================
 	
+
+{% endraw %}

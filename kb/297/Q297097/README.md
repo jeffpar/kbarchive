@@ -6,6 +6,8 @@ permalink: /kb/297/Q297097/
 
 ## Q297097: XCCC: Playback for Multimedia Control on Swedish Windows NT 4.0
 
+{% raw %}
+
 	Article: Q297097
 	Product(s): Microsoft Exchange
 	Version(s): 4.01,5.5
@@ -65,3 +67,5 @@ permalink: /kb/297/Q297097/
 	
 	=============================================================================
 	
+
+{% endraw %}

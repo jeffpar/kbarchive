@@ -6,6 +6,8 @@ permalink: /kb/268/Q268742/
 
 ## Q268742: PPTP Filtering Disables IP Forwarding
 
+{% raw %}
+
 	Article: Q268742
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/268/Q268742/
 	
 	=============================================================================
 	
+
+{% endraw %}

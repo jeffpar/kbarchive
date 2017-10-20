@@ -6,6 +6,8 @@ permalink: /kb/165/Q165253/
 
 ## Q165253: WD97: Bullets and Numbering Not Aligned in Document Map
 
+{% raw %}
+
 	Article: Q165253
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/165/Q165253/
 	
 	=============================================================================
 	
+
+{% endraw %}

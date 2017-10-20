@@ -6,6 +6,8 @@ permalink: /kb/155/Q155186/
 
 ## Q155186: Start Menu Minimized When Program Minimizes Itself
 
+{% raw %}
+
 	Article: Q155186
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/155/Q155186/
 	
 	=============================================================================
 	
+
+{% endraw %}

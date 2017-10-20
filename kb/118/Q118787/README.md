@@ -6,6 +6,8 @@ permalink: /kb/118/Q118787/
 
 ## Q118787: FFAPI: Command Line Options for Application FFAPI
 
+{% raw %}
+
 	Article: Q118787
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -311,3 +313,5 @@ permalink: /kb/118/Q118787/
 	
 	=============================================================================
 	
+
+{% endraw %}

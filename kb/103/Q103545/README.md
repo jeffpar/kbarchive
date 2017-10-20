@@ -6,6 +6,8 @@ permalink: /kb/103/Q103545/
 
 ## Q103545: Cannot Choose Create New for Removable Media
 
+{% raw %}
+
 	Article: Q103545
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -51,3 +53,5 @@ permalink: /kb/103/Q103545/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154006/
 
 ## Q154006: HOWTO: Drag a Form by a Child Control
 
+{% raw %}
+
 	Article: Q154006
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/154/Q154006/
 	
 	=============================================================================
 	
+
+{% endraw %}

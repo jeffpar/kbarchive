@@ -6,6 +6,8 @@ permalink: /kb/275/Q275856/
 
 ## Q275856: Programming Outlook and Exchange Second Edition Comments and Cor
 
+{% raw %}
+
 	Article: Q275856
 	Product(s): Microsoft Press
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/275/Q275856/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89963/
 
 ## Q89963: Sound Finder Converts All Files in Convert Dialog Box
 
+{% raw %}
+
 	Article: Q89963
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/089/Q89963/
 	
 	=============================================================================
 	
+
+{% endraw %}

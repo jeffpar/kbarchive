@@ -6,6 +6,8 @@ permalink: /kb/130/Q130757/
 
 ## Q130757: Setup Does Not Detect Tseng 4000/W32 on NEC Image P90E
 
+{% raw %}
+
 	Article: Q130757
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/130/Q130757/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/320/Q320276/
 
 ## Q320276: SMS: SMS_EXECUTIVE Service Crashes If You Use %n in Command Line
 
+{% raw %}
+
 	Article: Q320276
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -72,3 +74,5 @@ permalink: /kb/320/Q320276/
 	
 	=============================================================================
 	
+
+{% endraw %}

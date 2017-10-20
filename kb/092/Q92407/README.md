@@ -6,6 +6,8 @@ permalink: /kb/092/Q92407/
 
 ## Q92407: API Translation Buffers in Enhanced Mode Windows
 
+{% raw %}
+
 	Article: Q92407
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.1
@@ -136,3 +138,5 @@ permalink: /kb/092/Q92407/
 	
 	=============================================================================
 	
+
+{% endraw %}

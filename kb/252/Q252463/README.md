@@ -6,6 +6,8 @@ permalink: /kb/252/Q252463/
 
 ## Q252463: Index Server Error Message Reveals Location of Web Folders
 
+{% raw %}
+
 	Article: Q252463
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -154,3 +156,5 @@ permalink: /kb/252/Q252463/
 	
 	=============================================================================
 	
+
+{% endraw %}

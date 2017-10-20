@@ -6,6 +6,8 @@ permalink: /kb/164/Q164771/
 
 ## Q164771: No Event Logging Occurs When SNAUDB Is Stopped
 
+{% raw %}
+
 	Article: Q164771
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/164/Q164771/
 	
 	=============================================================================
 	
+
+{% endraw %}

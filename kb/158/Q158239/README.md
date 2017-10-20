@@ -6,6 +6,8 @@ permalink: /kb/158/Q158239/
 
 ## Q158239: BUG: VCX Corrupted by Saving Two Classes with the Same Name
 
+{% raw %}
+
 	Article: Q158239
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 5.0,5.0a,6.0
@@ -100,3 +102,5 @@ permalink: /kb/158/Q158239/
 	
 	=============================================================================
 	
+
+{% endraw %}

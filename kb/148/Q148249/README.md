@@ -6,6 +6,8 @@ permalink: /kb/148/Q148249/
 
 ## Q148249: DOC: Help File Example for SELECT SQL UNION Does Not Work
 
+{% raw %}
+
 	Article: Q148249
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -55,3 +57,5 @@ permalink: /kb/148/Q148249/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126979/
 
 ## Q126979: Group Does Not Migrate from NetWare Server to Windows NT
 
+{% raw %}
+
 	Article: Q126979
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -57,3 +59,5 @@ permalink: /kb/126/Q126979/
 	
 	=============================================================================
 	
+
+{% endraw %}

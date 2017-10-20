@@ -6,6 +6,8 @@ permalink: /kb/313/Q313984/
 
 ## Q313984: INFO: Winsock Control Run-Time Error 429 and Scalability
 
+{% raw %}
+
 	Article: Q313984
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0,6.0 SP3,6.0 SP4,6.0 SP5
@@ -136,3 +138,5 @@ permalink: /kb/313/Q313984/
 	
 	=============================================================================
 	
+
+{% endraw %}

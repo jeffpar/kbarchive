@@ -6,6 +6,8 @@ permalink: /kb/186/Q186709/
 
 ## Q186709: How to Move SNA from One Domain to Another
 
+{% raw %}
+
 	Article: Q186709
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,4.0
@@ -120,3 +122,5 @@ permalink: /kb/186/Q186709/
 	
 	=============================================================================
 	
+
+{% endraw %}

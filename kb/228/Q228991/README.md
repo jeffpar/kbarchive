@@ -6,6 +6,8 @@ permalink: /kb/228/Q228991/
 
 ## Q228991: How to Create and Install an SSL Certificate in IIS 4.0
 
+{% raw %}
+
 	Article: Q228991
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -137,3 +139,5 @@ permalink: /kb/228/Q228991/
 	
 	=============================================================================
 	
+
+{% endraw %}

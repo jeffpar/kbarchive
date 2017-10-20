@@ -6,6 +6,8 @@ permalink: /kb/083/Q83961/
 
 ## Q83961: Font Pack Can Be Installed in the Windows 3.1 Control Panel
 
+{% raw %}
+
 	Article: Q83961
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -71,3 +73,5 @@ permalink: /kb/083/Q83961/
 	
 	=============================================================================
 	
+
+{% endraw %}

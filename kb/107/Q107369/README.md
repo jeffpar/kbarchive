@@ -6,6 +6,8 @@ permalink: /kb/107/Q107369/
 
 ## Q107369: Os2LibPath Variable Requires &quot;Set&quot; to Change
 
+{% raw %}
+
 	Article: Q107369
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -50,3 +52,5 @@ permalink: /kb/107/Q107369/
 	
 	=============================================================================
 	
+
+{% endraw %}

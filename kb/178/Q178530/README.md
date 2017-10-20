@@ -6,6 +6,8 @@ permalink: /kb/178/Q178530/
 
 ## Q178530: FS98: How to Register Online After Program Is Installed
 
+{% raw %}
+
 	Article: Q178530
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -83,3 +85,5 @@ permalink: /kb/178/Q178530/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74925/
 
 ## Q74925: FIX: A1010 from Unclosed Segment in MASM @ShowStr Macro
 
+{% raw %}
+
 	Article: Q74925
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -98,3 +100,5 @@ permalink: /kb/074/Q74925/
 	
 	=============================================================================
 	
+
+{% endraw %}

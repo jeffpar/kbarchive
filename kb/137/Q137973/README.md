@@ -6,6 +6,8 @@ permalink: /kb/137/Q137973/
 
 ## Q137973: Documentation Error in &quot;Introducing MS Windows 95&quot;
 
+{% raw %}
+
 	Article: Q137973
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -54,3 +56,5 @@ permalink: /kb/137/Q137973/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/317/Q317636/
 
 ## Q317636: Windows NT Server 4.0, Terminal Server Edition, SRP
 
+{% raw %}
+
 	Article: Q317636
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6
@@ -330,3 +332,5 @@ permalink: /kb/317/Q317636/
 	
 	=============================================================================
 	
+
+{% endraw %}

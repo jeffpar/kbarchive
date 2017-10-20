@@ -6,6 +6,8 @@ permalink: /kb/222/Q222981/
 
 ## Q222981: SMS: Setup Cannot Remove SMS 2.0 Components
 
+{% raw %}
+
 	Article: Q222981
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -73,3 +75,5 @@ permalink: /kb/222/Q222981/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175957/
 
 ## Q175957: Event ID 5770 When Installing New Member Server
 
+{% raw %}
+
 	Article: Q175957
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -59,3 +61,5 @@ permalink: /kb/175/Q175957/
 	
 	=============================================================================
 	
+
+{% endraw %}

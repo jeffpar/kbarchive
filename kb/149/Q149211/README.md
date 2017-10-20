@@ -6,6 +6,8 @@ permalink: /kb/149/Q149211/
 
 ## Q149211: Interlnk May Report Drive Letters Incorrectly
 
+{% raw %}
+
 	Article: Q149211
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -61,3 +63,5 @@ permalink: /kb/149/Q149211/
 	
 	=============================================================================
 	
+
+{% endraw %}

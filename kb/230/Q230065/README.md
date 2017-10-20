@@ -6,6 +6,8 @@ permalink: /kb/230/Q230065/
 
 ## Q230065: How to Use Virtual Directories for Newsgroups
 
+{% raw %}
+
 	Article: Q230065
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/230/Q230065/
 	
 	=============================================================================
 	
+
+{% endraw %}

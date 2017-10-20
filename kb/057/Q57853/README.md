@@ -6,6 +6,8 @@ permalink: /kb/057/Q57853/
 
 ## Q57853: BASIC 7.00 WindowDo Doesn't Trap Click in Current Window
 
+{% raw %}
+
 	Article: Q57853
 	Product(s): See article
 	Version(s): 7.00
@@ -107,3 +109,5 @@ permalink: /kb/057/Q57853/
 	                      'window1 will be trapped because there is a
 	                      'button (although invisible) in window1 that
 	                      'is the same size as window1.
+
+{% endraw %}

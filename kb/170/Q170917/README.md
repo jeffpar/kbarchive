@@ -6,6 +6,8 @@ permalink: /kb/170/Q170917/
 
 ## Q170917: PRB: &quot;Error 1709&quot; When Several Users Are Using the Same Database
 
+{% raw %}
+
 	Article: Q170917
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -73,3 +75,5 @@ permalink: /kb/170/Q170917/
 	
 	=============================================================================
 	
+
+{% endraw %}

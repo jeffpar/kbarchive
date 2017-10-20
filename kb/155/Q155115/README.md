@@ -6,6 +6,8 @@ permalink: /kb/155/Q155115/
 
 ## Q155115: Windows 95 OSR2 Hangs at Startup with 3Com 3c562
 
+{% raw %}
+
 	Article: Q155115
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -75,3 +77,5 @@ permalink: /kb/155/Q155115/
 	
 	=============================================================================
 	
+
+{% endraw %}

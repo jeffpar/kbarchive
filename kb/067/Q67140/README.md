@@ -6,6 +6,8 @@ permalink: /kb/067/Q67140/
 
 ## Q67140: Mouse Systems Optical Mouse III Driver and Windows 3.0
 
+{% raw %}
+
 	Article: Q67140
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -45,3 +47,5 @@ permalink: /kb/067/Q67140/
 	
 	=============================================================================
 	
+
+{% endraw %}

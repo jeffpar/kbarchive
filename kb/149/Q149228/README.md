@@ -6,6 +6,8 @@ permalink: /kb/149/Q149228/
 
 ## Q149228: How to Disable Mouse Acceleration
 
+{% raw %}
+
 	Article: Q149228
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -86,3 +88,5 @@ permalink: /kb/149/Q149228/
 	
 	=============================================================================
 	
+
+{% endraw %}

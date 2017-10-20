@@ -6,6 +6,8 @@ permalink: /kb/028/Q28505/
 
 ## Q28505: Mouse Installation with OS/2
 
+{% raw %}
+
 	Article: Q28505
 	Product(s): See article
 	Version(s): 1.0
@@ -23,3 +25,5 @@ permalink: /kb/028/Q28505/
 	addition to the OS/2 mouse driver, you should load the POINTDD.SYS and
 	EGA.SYS as well. Refer to your OS/2 documentation for further OS/2
 	mouse driver details.
+
+{% endraw %}

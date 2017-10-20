@@ -6,6 +6,8 @@ permalink: /kb/213/Q213186/
 
 ## Q213186: SMS: Cannot Change Site Server Domain Name or Computer Name
 
+{% raw %}
+
 	Article: Q213186
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -75,3 +77,5 @@ permalink: /kb/213/Q213186/
 	
 	=============================================================================
 	
+
+{% endraw %}

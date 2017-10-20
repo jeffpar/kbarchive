@@ -6,6 +6,8 @@ permalink: /kb/156/Q156699/
 
 ## Q156699: Limitations of &quot;Run Only Allowed Windows Application&quot;
 
+{% raw %}
+
 	Article: Q156699
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/156/Q156699/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160347/
 
 ## Q160347: WD97: Document Opened as Text Only If Already Open
 
+{% raw %}
+
 	Article: Q160347
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:6.0,6.0a,6.0c,7.0,7.0a,97
@@ -89,3 +91,5 @@ permalink: /kb/160/Q160347/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/265/Q265143/
 
 ## Q265143: .nim File for NetWare Servers Reports &quot;No Data Available&quot;
 
+{% raw %}
+
 	Article: Q265143
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -115,3 +117,5 @@ permalink: /kb/265/Q265143/
 	
 	=============================================================================
 	
+
+{% endraw %}

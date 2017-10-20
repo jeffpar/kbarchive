@@ -6,6 +6,8 @@ permalink: /kb/183/Q183598/
 
 ## Q183598: XFOR: Multiple &quot;Text/Plain&quot; Body Parts Combined by Default
 
+{% raw %}
+
 	Article: Q183598
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -71,3 +73,5 @@ permalink: /kb/183/Q183598/
 	
 	=============================================================================
 	
+
+{% endraw %}

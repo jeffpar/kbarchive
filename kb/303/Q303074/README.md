@@ -6,6 +6,8 @@ permalink: /kb/303/Q303074/
 
 ## Q303074: Academic Learning Series Microsoft Windows 2000 Network Security
 
+{% raw %}
+
 	Article: Q303074
 	Product(s): Microsoft Press
 	Version(s): 
@@ -323,3 +325,5 @@ permalink: /kb/303/Q303074/
 	
 	=============================================================================
 	
+
+{% endraw %}

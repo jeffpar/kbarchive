@@ -6,6 +6,8 @@ permalink: /kb/120/Q120345/
 
 ## Q120345: Menu Bar in Microsoft Bookshelf '94 Does Not Work Properly
 
+{% raw %}
+
 	Article: Q120345
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,95
@@ -79,3 +81,5 @@ permalink: /kb/120/Q120345/
 	
 	=============================================================================
 	
+
+{% endraw %}

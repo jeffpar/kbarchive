@@ -6,6 +6,8 @@ permalink: /kb/058/Q58106/
 
 ## Q58106: Compiler Options Explained for QBX.EXE's Make EXE File Command
 
+{% raw %}
+
 	Article: Q58106
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -145,3 +147,5 @@ permalink: /kb/058/Q58106/
 	
 	Help -- The Help button briefly describes a few features of the Make
 	EXE File window.
+
+{% endraw %}

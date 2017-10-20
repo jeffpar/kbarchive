@@ -6,6 +6,8 @@ permalink: /kb/240/Q240016/
 
 ## Q240016: NBA2K: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q240016
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/240/Q240016/
 	
 	=============================================================================
 	
+
+{% endraw %}

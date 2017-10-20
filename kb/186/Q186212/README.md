@@ -6,6 +6,8 @@ permalink: /kb/186/Q186212/
 
 ## Q186212: HOWTO: Unregister MFC Automation Servers
 
+{% raw %}
+
 	Article: Q186212
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0
@@ -186,3 +188,5 @@ permalink: /kb/186/Q186212/
 	
 	=============================================================================
 	
+
+{% endraw %}

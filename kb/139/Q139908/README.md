@@ -6,6 +6,8 @@ permalink: /kb/139/Q139908/
 
 ## Q139908: Creating a SMSSAFE.TMP To Bypass Specific Hardware Detection
 
+{% raw %}
+
 	Article: Q139908
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2
@@ -111,3 +113,5 @@ permalink: /kb/139/Q139908/
 	
 	=============================================================================
 	
+
+{% endraw %}

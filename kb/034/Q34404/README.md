@@ -6,6 +6,8 @@ permalink: /kb/034/Q34404/
 
 ## Q34404: QB 4.00b/BC 6.00 Now Offers Global ON ERROR Handling
 
+{% raw %}
+
 	Article: Q34404
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -124,3 +126,5 @@ permalink: /kb/034/Q34404/
 	function identifies as the source of an error is the line that
 	contains the last executed statement in the module where the active
 	error handler is located.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168463/
 
 ## Q168463: SMS: PCM Service Keeps Client Components From Getting Updated
 
+{% raw %}
+
 	Article: Q168463
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -97,3 +99,5 @@ permalink: /kb/168/Q168463/
 	
 	=============================================================================
 	
+
+{% endraw %}

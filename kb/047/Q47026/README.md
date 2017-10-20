@@ -6,6 +6,8 @@ permalink: /kb/047/Q47026/
 
 ## Q47026: Second sscanf Fails After sscanf Using %i Format
 
+{% raw %}
+
 	Article: Q47026
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -55,3 +57,5 @@ permalink: /kb/047/Q47026/
 	
 	Microsoft is researching this problem and will post new information as
 	it becomes available.
+
+{% endraw %}

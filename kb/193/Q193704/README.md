@@ -6,6 +6,8 @@ permalink: /kb/193/Q193704/
 
 ## Q193704: XADM: Error Creating Local User Account on Member Server
 
+{% raw %}
+
 	Article: Q193704
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/193/Q193704/
 	
 	=============================================================================
 	
+
+{% endraw %}

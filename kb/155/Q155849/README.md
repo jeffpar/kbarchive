@@ -6,6 +6,8 @@ permalink: /kb/155/Q155849/
 
 ## Q155849: Tape Drive Error Message When Cataloging Tape
 
+{% raw %}
+
 	Article: Q155849
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/155/Q155849/
 	
 	=============================================================================
 	
+
+{% endraw %}

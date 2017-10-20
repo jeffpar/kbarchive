@@ -6,6 +6,8 @@ permalink: /kb/105/Q105125/
 
 ## Q105125: PC DirSync: Address Deleted After Dir-Sync Import or Resync
 
+{% raw %}
+
 	Article: Q105125
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -85,3 +87,5 @@ permalink: /kb/105/Q105125/
 	
 	=============================================================================
 	
+
+{% endraw %}

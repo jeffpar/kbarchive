@@ -6,6 +6,8 @@ permalink: /kb/190/Q190822/
 
 ## Q190822: XADM: Error During Installation: Account Information Is Incorrec
 
+{% raw %}
+
 	Article: Q190822
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/190/Q190822/
 	
 	=============================================================================
 	
+
+{% endraw %}

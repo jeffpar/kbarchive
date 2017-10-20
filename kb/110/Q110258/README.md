@@ -6,6 +6,8 @@ permalink: /kb/110/Q110258/
 
 ## Q110258: Changing Dynamic Scenery Options Has No Effect
 
+{% raw %}
+
 	Article: Q110258
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -50,3 +52,5 @@ permalink: /kb/110/Q110258/
 	
 	=============================================================================
 	
+
+{% endraw %}

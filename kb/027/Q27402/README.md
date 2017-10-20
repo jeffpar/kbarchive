@@ -6,6 +6,8 @@ permalink: /kb/027/Q27402/
 
 ## Q27402: BC Hangs Compiling on f(1) GOTO with Constant in Function
 
+{% raw %}
+
 	Article: Q27402
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -48,3 +50,5 @@ permalink: /kb/027/Q27402/
 	
 	    i = 1
 	    ON test(i) GOTO ter
+
+{% endraw %}

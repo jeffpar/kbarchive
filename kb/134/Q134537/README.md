@@ -6,6 +6,8 @@ permalink: /kb/134/Q134537/
 
 ## Q134537: No Sound or Incorrect Sound from Sound Card
 
+{% raw %}
+
 	Article: Q134537
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/134/Q134537/
 	
 	=============================================================================
 	
+
+{% endraw %}

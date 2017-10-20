@@ -6,6 +6,8 @@ permalink: /kb/135/Q135553/
 
 ## Q135553: IOCTL_NDIS_QUERY_ALL_STATS Causes STOP Msg in Windows NT 3.51
 
+{% raw %}
+
 	Article: Q135553
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -62,3 +64,5 @@ permalink: /kb/135/Q135553/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153972/
 
 ## Q153972: Err Msg: Error 1:There Is an Internal Error on the IRDA Device
 
+{% raw %}
+
 	Article: Q153972
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -49,3 +51,5 @@ permalink: /kb/153/Q153972/
 	
 	=============================================================================
 	
+
+{% endraw %}

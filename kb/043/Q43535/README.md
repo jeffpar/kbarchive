@@ -6,6 +6,8 @@ permalink: /kb/043/Q43535/
 
 ## Q43535: 'strerror' Example in QuickC Manual May Yield Error
 
+{% raw %}
+
 	Article: Q43535
 	Product(s): See article
 	Version(s): 2.00
@@ -44,3 +46,5 @@ permalink: /kb/043/Q43535/
 	Only QuickC Version 2.00 will produce the above error as it is the
 	first Microsoft compiler to declare errno to be external in the
 	include file ERRNO.H.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154520/
 
 ## Q154520: XADM: Making Custom Attributes Viewable to Clients
 
+{% raw %}
+
 	Article: Q154520
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/154/Q154520/
 	
 	=============================================================================
 	
+
+{% endraw %}

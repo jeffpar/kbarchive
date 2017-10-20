@@ -6,6 +6,8 @@ permalink: /kb/249/Q249826/
 
 ## Q249826: Corrupted or Inconsistent Version of Odbc32.dll Stops ASP Pages
 
+{% raw %}
+
 	Article: Q249826
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/249/Q249826/
 	
 	=============================================================================
 	
+
+{% endraw %}

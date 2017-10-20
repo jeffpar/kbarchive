@@ -6,6 +6,8 @@ permalink: /kb/249/Q249780/
 
 ## Q249780: XCLN: Outlook Security Features Installed with Office 2000 SR-1
 
+{% raw %}
+
 	Article: Q249780
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -161,3 +163,5 @@ permalink: /kb/249/Q249780/
 	
 	=============================================================================
 	
+
+{% endraw %}

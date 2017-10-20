@@ -6,6 +6,8 @@ permalink: /kb/166/Q166040/
 
 ## Q166040: Bookshelf: Unable to Find National Zip Code Directory
 
+{% raw %}
+
 	Article: Q166040
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; MACINTOSH:; WINDOWS:
@@ -45,3 +47,5 @@ permalink: /kb/166/Q166040/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159875/
 
 ## Q159875: MSN 2.0 CD-ROM Displays Only a Readme.txt File
 
+{% raw %}
+
 	Article: Q159875
 	Product(s): The Microsoft Network
 	Version(s): 2.00
@@ -50,3 +52,5 @@ permalink: /kb/159/Q159875/
 	
 	=============================================================================
 	
+
+{% endraw %}

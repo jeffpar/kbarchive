@@ -6,6 +6,8 @@ permalink: /kb/117/Q117522/
 
 ## Q117522: Workgroup Add-On for MS-DOS: Drive Light on w/Shared Printer
 
+{% raw %}
+
 	Article: Q117522
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -52,3 +54,5 @@ permalink: /kb/117/Q117522/
 	
 	=============================================================================
 	
+
+{% endraw %}

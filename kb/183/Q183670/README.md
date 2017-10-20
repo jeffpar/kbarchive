@@ -6,6 +6,8 @@ permalink: /kb/183/Q183670/
 
 ## Q183670: XADM: Setup Fails with DS_E_INSUFFICIENT_ACCESS_RIGHTS
 
+{% raw %}
+
 	Article: Q183670
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/183/Q183670/
 	
 	=============================================================================
 	
+
+{% endraw %}

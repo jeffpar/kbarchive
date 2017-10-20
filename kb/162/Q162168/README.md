@@ -6,6 +6,8 @@ permalink: /kb/162/Q162168/
 
 ## Q162168: DLC Printers Show &quot;Status Unknown&quot; After Restarting Spooler
 
+{% raw %}
+
 	Article: Q162168
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -87,3 +89,5 @@ permalink: /kb/162/Q162168/
 	
 	=============================================================================
 	
+
+{% endraw %}

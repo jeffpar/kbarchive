@@ -6,6 +6,8 @@ permalink: /kb/237/Q237689/
 
 ## Q237689: SQL Server 7.0 Database Implementation Training Kit Comments and
 
+{% raw %}
+
 	Article: Q237689
 	Product(s): Microsoft Press
 	Version(s): 
@@ -388,3 +390,5 @@ permalink: /kb/237/Q237689/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178113/
 
 ## Q178113: Specifying a Group Name in LMHOSTS File May Cause STOP 0xA
 
+{% raw %}
+
 	Article: Q178113
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/178/Q178113/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134972/
 
 ## Q134972: Restore Local Database Option in WINS is Unavailable
 
+{% raw %}
+
 	Article: Q134972
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -50,3 +52,5 @@ permalink: /kb/134/Q134972/
 	
 	=============================================================================
 	
+
+{% endraw %}

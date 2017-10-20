@@ -6,6 +6,8 @@ permalink: /kb/087/Q87155/
 
 ## Q87155: Mac Wkst Srv: Differences Between Local and Server Folders
 
+{% raw %}
+
 	Article: Q87155
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -49,3 +51,5 @@ permalink: /kb/087/Q87155/
 	
 	=============================================================================
 	
+
+{% endraw %}

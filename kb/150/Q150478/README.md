@@ -6,6 +6,8 @@ permalink: /kb/150/Q150478/
 
 ## Q150478: Julia Child: Manual Installation For Windows 95
 
+{% raw %}
+
 	Article: Q150478
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,95
@@ -193,3 +195,5 @@ permalink: /kb/150/Q150478/
 	
 	=============================================================================
 	
+
+{% endraw %}

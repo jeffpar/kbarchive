@@ -6,6 +6,8 @@ permalink: /kb/294/Q294278/
 
 ## Q294278: Security Settings in the Source Code in SDK Need Adjustment
 
+{% raw %}
+
 	Article: Q294278
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -98,3 +100,5 @@ permalink: /kb/294/Q294278/
 	
 	=============================================================================
 	
+
+{% endraw %}

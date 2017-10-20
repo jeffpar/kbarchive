@@ -6,6 +6,8 @@ permalink: /kb/197/Q197514/
 
 ## Q197514: Msmtpsnp.dll File Is Missing from Windows NT 4.0 SP4 CD
 
+{% raw %}
+
 	Article: Q197514
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:2.0
@@ -73,3 +75,5 @@ permalink: /kb/197/Q197514/
 	
 	=============================================================================
 	
+
+{% endraw %}

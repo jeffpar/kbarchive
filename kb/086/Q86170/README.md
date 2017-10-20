@@ -6,6 +6,8 @@ permalink: /kb/086/Q86170/
 
 ## Q86170: Previous Connections List in the WRK 3.1 May Be Empty
 
+{% raw %}
+
 	Article: Q86170
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/086/Q86170/
 	
 	=============================================================================
 	
+
+{% endraw %}

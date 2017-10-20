@@ -6,6 +6,8 @@ permalink: /kb/245/Q245649/
 
 ## Q245649: SMS: License Server Manager Causes Full Synchronization Requests
 
+{% raw %}
+
 	Article: Q245649
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -106,3 +108,5 @@ permalink: /kb/245/Q245649/
 	
 	=============================================================================
 	
+
+{% endraw %}

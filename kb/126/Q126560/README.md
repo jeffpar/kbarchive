@@ -6,6 +6,8 @@ permalink: /kb/126/Q126560/
 
 ## Q126560: Cannot Create NetBIOS Session Over TCP/IP
 
+{% raw %}
+
 	Article: Q126560
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -70,3 +72,5 @@ permalink: /kb/126/Q126560/
 	
 	=============================================================================
 	
+
+{% endraw %}

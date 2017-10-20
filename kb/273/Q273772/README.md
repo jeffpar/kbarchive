@@ -6,6 +6,8 @@ permalink: /kb/273/Q273772/
 
 ## Q273772: FIX: Memory Leak in Jet ODBC Driver with Numeric or Binary Data
 
+{% raw %}
+
 	Article: Q273772
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,2.5 SP1,4.0
@@ -303,3 +305,5 @@ permalink: /kb/273/Q273772/
 	
 	=============================================================================
 	
+
+{% endraw %}

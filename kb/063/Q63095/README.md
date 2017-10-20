@@ -6,6 +6,8 @@ permalink: /kb/063/Q63095/
 
 ## Q63095: QB Sample Function to Convert from Floating-Point to String
 
+{% raw %}
+
 	Article: Q63095
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -170,3 +172,5 @@ permalink: /kb/063/Q63095/
 	   437.13783
 	   0.000173
 	   100
+
+{% endraw %}

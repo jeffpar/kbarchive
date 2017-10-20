@@ -6,6 +6,8 @@ permalink: /kb/189/Q189403/
 
 ## Q189403: Page Fault Error Message in Uhcd.sys Docking or Undocking Laptop
 
+{% raw %}
+
 	Article: Q189403
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.5
@@ -60,3 +62,5 @@ permalink: /kb/189/Q189403/
 	
 	=============================================================================
 	
+
+{% endraw %}

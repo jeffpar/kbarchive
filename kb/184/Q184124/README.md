@@ -6,6 +6,8 @@ permalink: /kb/184/Q184124/
 
 ## Q184124: Service Still Runs Although WinNT Prompts to Turn Off Computer
 
+{% raw %}
+
 	Article: Q184124
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/184/Q184124/
 	
 	=============================================================================
 	
+
+{% endraw %}

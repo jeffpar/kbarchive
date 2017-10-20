@@ -6,6 +6,8 @@ permalink: /kb/181/Q181854/
 
 ## Q181854: FILE: VB5cli.exe Fixes VB 5.0 Control Installation Problem
 
+{% raw %}
+
 	Article: Q181854
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -209,3 +211,5 @@ permalink: /kb/181/Q181854/
 	
 	=============================================================================
 	
+
+{% endraw %}

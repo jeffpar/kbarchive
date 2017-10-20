@@ -6,6 +6,8 @@ permalink: /kb/156/Q156717/
 
 ## Q156717: PRB: Rollback of Shared File Forces a Branch
 
+{% raw %}
+
 	Article: Q156717
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/156/Q156717/
 	
 	=============================================================================
 	
+
+{% endraw %}

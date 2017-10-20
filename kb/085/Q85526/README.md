@@ -6,6 +6,8 @@ permalink: /kb/085/Q85526/
 
 ## Q85526: Novell Workstation Hangs Due to Queued Messages
 
+{% raw %}
+
 	Article: Q85526
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/085/Q85526/
 	
 	=============================================================================
 	
+
+{% endraw %}

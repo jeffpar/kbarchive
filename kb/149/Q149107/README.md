@@ -6,6 +6,8 @@ permalink: /kb/149/Q149107/
 
 ## Q149107: How to Return Values to AppleScript from FoxPro
 
+{% raw %}
+
 	Article: Q149107
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -85,3 +87,5 @@ permalink: /kb/149/Q149107/
 	
 	=============================================================================
 	
+
+{% endraw %}

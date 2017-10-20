@@ -6,6 +6,8 @@ permalink: /kb/124/Q124741/
 
 ## Q124741: BUG: WinG 1.0 Bug List
 
+{% raw %}
+
 	Article: Q124741
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 1.0
@@ -86,3 +88,5 @@ permalink: /kb/124/Q124741/
 	
 	=============================================================================
 	
+
+{% endraw %}

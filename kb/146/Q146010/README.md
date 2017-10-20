@@ -6,6 +6,8 @@ permalink: /kb/146/Q146010/
 
 ## Q146010: HOWTO: Setting the Picture Property of an ActiveX Control
 
+{% raw %}
+
 	Article: Q146010
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,5.0,6.0
@@ -124,3 +126,5 @@ permalink: /kb/146/Q146010/
 	
 	=============================================================================
 	
+
+{% endraw %}

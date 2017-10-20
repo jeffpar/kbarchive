@@ -6,6 +6,8 @@ permalink: /kb/235/Q235381/
 
 ## Q235381: SNA Server Access Violation While Determining Proxy Privilege
 
+{% raw %}
+
 	Article: Q235381
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1,4.0SP2
@@ -118,3 +120,5 @@ permalink: /kb/235/Q235381/
 	
 	=============================================================================
 	
+
+{% endraw %}

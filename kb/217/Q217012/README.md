@@ -6,6 +6,8 @@ permalink: /kb/217/Q217012/
 
 ## Q217012: HOWTO: Format Strings to Right-Justify When Printing
 
+{% raw %}
+
 	Article: Q217012
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -231,3 +233,5 @@ permalink: /kb/217/Q217012/
 	
 	=============================================================================
 	
+
+{% endraw %}

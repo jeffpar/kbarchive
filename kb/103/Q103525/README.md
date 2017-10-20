@@ -6,6 +6,8 @@ permalink: /kb/103/Q103525/
 
 ## Q103525: Interactive Boot with Different Startup Batch File (/K)
 
+{% raw %}
+
 	Article: Q103525
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/103/Q103525/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192162/
 
 ## Q192162: Windows Terminal Server Clients Do Not List Server Names
 
+{% raw %}
+
 	Article: Q192162
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/192/Q192162/
 	
 	=============================================================================
 	
+
+{% endraw %}

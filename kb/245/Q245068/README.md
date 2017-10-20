@@ -6,6 +6,8 @@ permalink: /kb/245/Q245068/
 
 ## Q245068: Err Msg: Access Is Denied. You Don't Have Permissions Or...
 
+{% raw %}
+
 	Article: Q245068
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/245/Q245068/
 	
 	=============================================================================
 	
+
+{% endraw %}

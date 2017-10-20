@@ -6,6 +6,8 @@ permalink: /kb/192/Q192035/
 
 ## Q192035: PRB: Do Not Use a WebClass ProcessTag Inside an HTML Tag
 
+{% raw %}
+
 	Article: Q192035
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -101,3 +103,5 @@ permalink: /kb/192/Q192035/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249612/
 
 ## Q249612: XCLN: Auto Name Check Does Not Work After Running Exmerge
 
+{% raw %}
+
 	Article: Q249612
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP2
@@ -75,3 +77,5 @@ permalink: /kb/249/Q249612/
 	
 	=============================================================================
 	
+
+{% endraw %}

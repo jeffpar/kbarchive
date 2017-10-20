@@ -6,6 +6,8 @@ permalink: /kb/097/Q97265/
 
 ## Q97265: SAMPLE: Floating-Point Samples for Windows
 
+{% raw %}
+
 	Article: Q97265
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -89,3 +91,5 @@ permalink: /kb/097/Q97265/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158726/
 
 ## Q158726: How to Query Custom Document Properties in Index Server
 
+{% raw %}
+
 	Article: Q158726
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -79,3 +81,5 @@ permalink: /kb/158/Q158726/
 	
 	=============================================================================
 	
+
+{% endraw %}

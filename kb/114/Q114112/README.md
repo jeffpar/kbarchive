@@ -6,6 +6,8 @@ permalink: /kb/114/Q114112/
 
 ## Q114112: Receiving Blank Pages or &quot;Bad Error&quot; Err Msg in At Work PC Fax
 
+{% raw %}
+
 	Article: Q114112
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -70,3 +72,5 @@ permalink: /kb/114/Q114112/
 	
 	=============================================================================
 	
+
+{% endraw %}

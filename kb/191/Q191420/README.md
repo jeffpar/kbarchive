@@ -6,6 +6,8 @@ permalink: /kb/191/Q191420/
 
 ## Q191420: How to Configure IP RIP Route Filters with Service Pack 4
 
+{% raw %}
+
 	Article: Q191420
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -106,3 +108,5 @@ permalink: /kb/191/Q191420/
 	
 	=============================================================================
 	
+
+{% endraw %}

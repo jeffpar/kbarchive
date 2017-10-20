@@ -6,6 +6,8 @@ permalink: /kb/147/Q147142/
 
 ## Q147142: XCLN: AutoSignatures Not Applied to Out of Office Messages
 
+{% raw %}
+
 	Article: Q147142
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -44,3 +46,5 @@ permalink: /kb/147/Q147142/
 	
 	=============================================================================
 	
+
+{% endraw %}

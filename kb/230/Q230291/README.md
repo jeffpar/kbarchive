@@ -6,6 +6,8 @@ permalink: /kb/230/Q230291/
 
 ## Q230291: Index Server 2.0 Release Notes
 
+{% raw %}
+
 	Article: Q230291
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0
@@ -151,3 +153,5 @@ permalink: /kb/230/Q230291/
 	
 	=============================================================================
 	
+
+{% endraw %}

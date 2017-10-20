@@ -6,6 +6,8 @@ permalink: /kb/298/Q298815/
 
 ## Q298815: Using COMTI Over TCP/IP with IMS Connect
 
+{% raw %}
+
 	Article: Q298815
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/298/Q298815/
 	
 	=============================================================================
 	
+
+{% endraw %}

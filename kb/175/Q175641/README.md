@@ -6,6 +6,8 @@ permalink: /kb/175/Q175641/
 
 ## Q175641: LMCompatibilityLevel and Its Effects
 
+{% raw %}
+
 	Article: Q175641
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0,5.0,5.5
@@ -113,3 +115,5 @@ permalink: /kb/175/Q175641/
 	
 	=============================================================================
 	
+
+{% endraw %}

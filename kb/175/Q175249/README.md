@@ -6,6 +6,8 @@ permalink: /kb/175/Q175249/
 
 ## Q175249: Extra Modem Settings R-T for Connecting to MSN
 
+{% raw %}
+
 	Article: Q175249
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -128,3 +130,5 @@ permalink: /kb/175/Q175249/
 	
 	=============================================================================
 	
+
+{% endraw %}

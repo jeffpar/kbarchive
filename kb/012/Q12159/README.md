@@ -6,6 +6,8 @@ permalink: /kb/012/Q12159/
 
 ## Q12159: HOWTO: Use malloc() and _fmalloc() in an Application
 
+{% raw %}
+
 	Article: Q12159
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,4.0
@@ -68,3 +70,5 @@ permalink: /kb/012/Q12159/
 	
 	=============================================================================
 	
+
+{% endraw %}

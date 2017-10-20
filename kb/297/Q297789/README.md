@@ -6,6 +6,8 @@ permalink: /kb/297/Q297789/
 
 ## Q297789: How to Disable the Computer Browser Service Throughout a Domain
 
+{% raw %}
+
 	Article: Q297789
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -94,3 +96,5 @@ permalink: /kb/297/Q297789/
 	
 	=============================================================================
 	
+
+{% endraw %}

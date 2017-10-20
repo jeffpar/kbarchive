@@ -6,6 +6,8 @@ permalink: /kb/243/Q243261/
 
 ## Q243261: Terminal Server Hangs on Shutdown with GSNW or CSNW Installed
 
+{% raw %}
+
 	Article: Q243261
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -87,3 +89,5 @@ permalink: /kb/243/Q243261/
 	
 	=============================================================================
 	
+
+{% endraw %}

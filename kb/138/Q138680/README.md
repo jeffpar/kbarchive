@@ -6,6 +6,8 @@ permalink: /kb/138/Q138680/
 
 ## Q138680: How to Scope Variable Declared in Event Code
 
+{% raw %}
+
 	Article: Q138680
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -92,3 +94,5 @@ permalink: /kb/138/Q138680/
 	
 	=============================================================================
 	
+
+{% endraw %}

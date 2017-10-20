@@ -6,6 +6,8 @@ permalink: /kb/096/Q96244/
 
 ## Q96244: SMTP: Err Msg: Socket Error (123) When Starting Gateway
 
+{% raw %}
+
 	Article: Q96244
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -93,3 +95,5 @@ permalink: /kb/096/Q96244/
 	
 	=============================================================================
 	
+
+{% endraw %}

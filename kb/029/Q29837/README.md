@@ -6,6 +6,8 @@ permalink: /kb/029/Q29837/
 
 ## Q29837: C 5.10 MTDYNA.DOC: Sample MT Program/Possible Problem Areas
 
+{% raw %}
+
 	Article: Q29837
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -41,3 +43,5 @@ permalink: /kb/029/Q29837/
 	   to DS" in the CL command invocation. Specify the correct conditions
 	   with the /Alfw customized memory-model option. Recompile the
 	   program with /Alfw.
+
+{% endraw %}

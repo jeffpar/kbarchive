@@ -6,6 +6,8 @@ permalink: /kb/232/Q232711/
 
 ## Q232711: How Cluster Integrity Is Monitored in WLBS
 
+{% raw %}
+
 	Article: Q232711
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,4.0
@@ -75,3 +77,5 @@ permalink: /kb/232/Q232711/
 	
 	=============================================================================
 	
+
+{% endraw %}

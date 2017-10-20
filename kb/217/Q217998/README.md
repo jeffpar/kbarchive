@@ -6,6 +6,8 @@ permalink: /kb/217/Q217998/
 
 ## Q217998: BackOffice 4.5 Setup May Fail When Upgrading SQL 6.5 to 7.0
 
+{% raw %}
+
 	Article: Q217998
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5,7.0
@@ -56,3 +58,5 @@ permalink: /kb/217/Q217998/
 	
 	=============================================================================
 	
+
+{% endraw %}

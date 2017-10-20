@@ -6,6 +6,8 @@ permalink: /kb/139/Q139424/
 
 ## Q139424: Bookshelf 1995: Quickshelf Toolbar Overlaps Office Manager
 
+{% raw %}
+
 	Article: Q139424
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :1995 edition
@@ -64,3 +66,5 @@ permalink: /kb/139/Q139424/
 	
 	=============================================================================
 	
+
+{% endraw %}

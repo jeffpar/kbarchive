@@ -6,6 +6,8 @@ permalink: /kb/135/Q135644/
 
 ## Q135644: PRB: Deleted Project Files Are Not Converted with DELTA_SS.EXE
 
+{% raw %}
+
 	Article: Q135644
 	Product(s): Microsoft SourceSafe
 	Version(s): MS-DOS:3.1; WINDOWS:3.1,4.0,5.0; winnt:3.1
@@ -58,3 +60,5 @@ permalink: /kb/135/Q135644/
 	
 	=============================================================================
 	
+
+{% endraw %}

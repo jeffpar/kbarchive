@@ -6,6 +6,8 @@ permalink: /kb/253/Q253712/
 
 ## Q253712: XFOR: Issues with Attachments Sent over Notes Connector
 
+{% raw %}
+
 	Article: Q253712
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -55,3 +57,5 @@ permalink: /kb/253/Q253712/
 	
 	=============================================================================
 	
+
+{% endraw %}

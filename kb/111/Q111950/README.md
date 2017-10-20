@@ -6,6 +6,8 @@ permalink: /kb/111/Q111950/
 
 ## Q111950: PROFS: Using the CMS TAG FILE Command
 
+{% raw %}
+
 	Article: Q111950
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.3,3.4
@@ -47,3 +49,5 @@ permalink: /kb/111/Q111950/
 	
 	=============================================================================
 	
+
+{% endraw %}

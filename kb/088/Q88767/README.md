@@ -6,6 +6,8 @@ permalink: /kb/088/Q88767/
 
 ## Q88767: Using the IBM Personal PagePrinter 4216-31 with Windows
 
+{% raw %}
+
 	Article: Q88767
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/088/Q88767/
 	
 	=============================================================================
 	
+
+{% endraw %}

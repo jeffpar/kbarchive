@@ -6,6 +6,8 @@ permalink: /kb/151/Q151714/
 
 ## Q151714: WinNT RPC Client May Fail Against DCE Server
 
+{% raw %}
+
 	Article: Q151714
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -58,3 +60,5 @@ permalink: /kb/151/Q151714/
 	
 	=============================================================================
 	
+
+{% endraw %}

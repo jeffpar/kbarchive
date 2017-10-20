@@ -6,6 +6,8 @@ permalink: /kb/160/Q160583/
 
 ## Q160583: Windows NT 4.0 with More Than 4 Processors May Stall &amp; Reboot
 
+{% raw %}
+
 	Article: Q160583
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -49,3 +51,5 @@ permalink: /kb/160/Q160583/
 	
 	=============================================================================
 	
+
+{% endraw %}

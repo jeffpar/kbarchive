@@ -6,6 +6,8 @@ permalink: /kb/164/Q164641/
 
 ## Q164641: SNA Server 3.0 Windows 3.x Client Does Not Allow Logon Retry
 
+{% raw %}
+
 	Article: Q164641
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/164/Q164641/
 	
 	=============================================================================
 	
+
+{% endraw %}

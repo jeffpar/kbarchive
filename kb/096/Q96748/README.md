@@ -6,6 +6,8 @@ permalink: /kb/096/Q96748/
 
 ## Q96748: Detailed Description of lstrcmp and Alphabetic Characters
 
+{% raw %}
+
 	Article: Q96748
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -109,3 +111,5 @@ permalink: /kb/096/Q96748/
 	
 	=============================================================================
 	
+
+{% endraw %}

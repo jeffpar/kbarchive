@@ -6,6 +6,8 @@ permalink: /kb/090/Q90553/
 
 ## Q90553: Unreferenced Packaged Functions Included With /Zi and /CO
 
+{% raw %}
+
 	Article: Q90553
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/090/Q90553/
 	
 	=============================================================================
 	
+
+{% endraw %}

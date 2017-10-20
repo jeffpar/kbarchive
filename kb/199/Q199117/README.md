@@ -6,6 +6,8 @@ permalink: /kb/199/Q199117/
 
 ## Q199117: SP4 Causes Extra Delimiter to Appear in NCSA Common Log Format
 
+{% raw %}
+
 	Article: Q199117
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/199/Q199117/
 	
 	=============================================================================
 	
+
+{% endraw %}

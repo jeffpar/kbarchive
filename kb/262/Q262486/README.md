@@ -6,6 +6,8 @@ permalink: /kb/262/Q262486/
 
 ## Q262486: 100% CPU Utilization or AV When You Use Basic Authentication
 
+{% raw %}
+
 	Article: Q262486
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -84,3 +86,5 @@ permalink: /kb/262/Q262486/
 	
 	=============================================================================
 	
+
+{% endraw %}

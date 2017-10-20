@@ -6,6 +6,8 @@ permalink: /kb/314/Q314746/
 
 ## Q314746: BUG: Access Violation Occurs in ADO When You Run Executable File
 
+{% raw %}
+
 	Article: Q314746
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1,2.5,2.6,2.7,6.0
@@ -130,3 +132,5 @@ permalink: /kb/314/Q314746/
 	
 	=============================================================================
 	
+
+{% endraw %}

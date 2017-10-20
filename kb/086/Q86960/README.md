@@ -6,6 +6,8 @@ permalink: /kb/086/Q86960/
 
 ## Q86960: X400: X.400, X.200, and X.25 Acronyms
 
+{% raw %}
+
 	Article: Q86960
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -71,3 +73,5 @@ permalink: /kb/086/Q86960/
 	
 	=============================================================================
 	
+
+{% endraw %}

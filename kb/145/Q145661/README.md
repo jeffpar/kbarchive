@@ -6,6 +6,8 @@ permalink: /kb/145/Q145661/
 
 ## Q145661: PRB: Specified CGI Application Misbehaved
 
+{% raw %}
+
 	Article: Q145661
 	Product(s): Internet Information Server
 	Version(s): 1.0,3.0,4.0,5.0
@@ -61,3 +63,5 @@ permalink: /kb/145/Q145661/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/230/Q230683/
 
 ## Q230683: XFOR: Connection Refused to Notes Server with DBCS in FQDN
 
+{% raw %}
+
 	Article: Q230683
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -47,3 +49,5 @@ permalink: /kb/230/Q230683/
 	
 	=============================================================================
 	
+
+{% endraw %}

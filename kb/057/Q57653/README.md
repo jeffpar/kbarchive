@@ -6,6 +6,8 @@ permalink: /kb/057/Q57653/
 
 ## Q57653: U1013 Link: Error 2: Not Enough Memory for Exec in M
 
+{% raw %}
+
 	Article: Q57653
 	Product(s): See article
 	Version(s): 1.00 1.02
@@ -35,3 +37,5 @@ permalink: /kb/057/Q57653/
 	workaround would be to use MAKE or NMAKE to link your file outside of
 	M, because M will have problems exec'ing the linker in any sizable
 	application due to the size of LINK and MAKE.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137959/
 
 ## Q137959: Bookshelf: Advanced Find Settings Saved Even if Canceled
 
+{% raw %}
+
 	Article: Q137959
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :1995 edition
@@ -66,3 +68,5 @@ permalink: /kb/137/Q137959/
 	
 	=============================================================================
 	
+
+{% endraw %}

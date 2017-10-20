@@ -6,6 +6,8 @@ permalink: /kb/285/Q285105/
 
 ## Q285105: Invalid Access Code When Creating Large Archive File Reports
 
+{% raw %}
+
 	Article: Q285105
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -61,3 +63,5 @@ permalink: /kb/285/Q285105/
 	
 	=============================================================================
 	
+
+{% endraw %}

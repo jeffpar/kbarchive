@@ -6,6 +6,8 @@ permalink: /kb/159/Q159418/
 
 ## Q159418: WD97: Characters Appear as Square Boxes in Printed Document
 
+{% raw %}
+
 	Article: Q159418
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -322,3 +324,5 @@ permalink: /kb/159/Q159418/
 	
 	=============================================================================
 	
+
+{% endraw %}

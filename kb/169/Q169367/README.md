@@ -6,6 +6,8 @@ permalink: /kb/169/Q169367/
 
 ## Q169367: FIX: Cannot Update More Than 23 Columns of a View
 
+{% raw %}
+
 	Article: Q169367
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -313,3 +315,5 @@ permalink: /kb/169/Q169367/
 	
 	=============================================================================
 	
+
+{% endraw %}

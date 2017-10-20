@@ -6,6 +6,8 @@ permalink: /kb/202/Q202795/
 
 ## Q202795: PRB: REPLACE Command is Slow in Some Instances
 
+{% raw %}
+
 	Article: Q202795
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -143,3 +145,5 @@ permalink: /kb/202/Q202795/
 	
 	=============================================================================
 	
+
+{% endraw %}

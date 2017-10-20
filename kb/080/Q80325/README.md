@@ -6,6 +6,8 @@ permalink: /kb/080/Q80325/
 
 ## Q80325: Application Cannot Define Subset of the Gestures
 
+{% raw %}
+
 	Article: Q80325
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/080/Q80325/
 	
 	=============================================================================
 	
+
+{% endraw %}

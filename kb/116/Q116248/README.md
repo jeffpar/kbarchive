@@ -6,6 +6,8 @@ permalink: /kb/116/Q116248/
 
 ## Q116248: Phoenix BIOS May Cause Wave Files to Continually Play on WSS
 
+{% raw %}
+
 	Article: Q116248
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -75,3 +77,5 @@ permalink: /kb/116/Q116248/
 	
 	=============================================================================
 	
+
+{% endraw %}

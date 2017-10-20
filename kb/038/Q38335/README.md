@@ -6,6 +6,8 @@ permalink: /kb/038/Q38335/
 
 ## Q38335: HOWTO: sscanf() Example Using a Comma (,) as Delimiter
 
+{% raw %}
+
 	Article: Q38335
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:6.0,6.00a,6.00ax,7.0; OS/2:6.0,6.00a; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.0,4.0,5.
@@ -67,3 +69,5 @@ permalink: /kb/038/Q38335/
 	
 	=============================================================================
 	
+
+{% endraw %}

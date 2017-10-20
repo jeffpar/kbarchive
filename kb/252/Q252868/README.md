@@ -6,6 +6,8 @@ permalink: /kb/252/Q252868/
 
 ## Q252868: How Index Server Determines Query and Indexing Languages
 
+{% raw %}
+
 	Article: Q252868
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -77,3 +79,5 @@ permalink: /kb/252/Q252868/
 	
 	=============================================================================
 	
+
+{% endraw %}

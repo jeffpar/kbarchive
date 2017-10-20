@@ -6,6 +6,8 @@ permalink: /kb/195/Q195294/
 
 ## Q195294: PRB: Emulator Traps KeyDown Event for Arrow Keys
 
+{% raw %}
+
 	Article: Q195294
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -92,3 +94,5 @@ permalink: /kb/195/Q195294/
 	
 	=============================================================================
 	
+
+{% endraw %}

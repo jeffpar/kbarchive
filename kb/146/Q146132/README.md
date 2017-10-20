@@ -6,6 +6,8 @@ permalink: /kb/146/Q146132/
 
 ## Q146132: Meeting Wizard: Resource Displayed in Where Field
 
+{% raw %}
+
 	Article: Q146132
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 7.0
@@ -56,3 +58,5 @@ permalink: /kb/146/Q146132/
 	
 	=============================================================================
 	
+
+{% endraw %}

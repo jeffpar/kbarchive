@@ -6,6 +6,8 @@ permalink: /kb/099/Q99240/
 
 ## Q99240: Macintosh and Appletalk Stack Limits Imposed
 
+{% raw %}
+
 	Article: Q99240
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 1.0,1.0a,2.0,2.1,2.1a,2.2,3.5,3.51,4.0
@@ -65,3 +67,5 @@ permalink: /kb/099/Q99240/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85002/
 
 ## Q85002: Media Player Can't Open CDAudio After Opening CD-ROM File
 
+{% raw %}
+
 	Article: Q85002
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/085/Q85002/
 	
 	=============================================================================
 	
+
+{% endraw %}

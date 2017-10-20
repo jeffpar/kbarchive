@@ -6,6 +6,8 @@ permalink: /kb/090/Q90340/
 
 ## Q90340: Client Not Notified of Remote Printer Problem
 
+{% raw %}
+
 	Article: Q90340
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -41,3 +43,5 @@ permalink: /kb/090/Q90340/
 	
 	=============================================================================
 	
+
+{% endraw %}

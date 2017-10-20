@@ -6,6 +6,8 @@ permalink: /kb/239/Q239834/
 
 ## Q239834: How to Remove the NWLink IPX/SPX Protocol, CSNW, and GSNW
 
+{% raw %}
+
 	Article: Q239834
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5
@@ -70,3 +72,5 @@ permalink: /kb/239/Q239834/
 	
 	=============================================================================
 	
+
+{% endraw %}

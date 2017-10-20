@@ -6,6 +6,8 @@ permalink: /kb/192/Q192673/
 
 ## Q192673: Accessing Files on NTFS Partitions Created with Windows 2000
 
+{% raw %}
+
 	Article: Q192673
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/192/Q192673/
 	
 	=============================================================================
 	
+
+{% endraw %}

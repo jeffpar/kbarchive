@@ -6,6 +6,8 @@ permalink: /kb/150/Q150543/
 
 ## Q150543: WinNT, Terminal Server, &amp; Exchange Services Use TCP/IP Ports
 
+{% raw %}
+
 	Article: Q150543
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,2000,4.0,5.0
@@ -140,3 +142,5 @@ permalink: /kb/150/Q150543/
 	
 	=============================================================================
 	
+
+{% endraw %}

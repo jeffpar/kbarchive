@@ -6,6 +6,8 @@ permalink: /kb/243/Q243649/
 
 ## Q243649: MS99-047: Unchecked Print Spooler Buffer May Expose System Vulne
 
+{% raw %}
+
 	Article: Q243649
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.5
@@ -142,3 +144,5 @@ permalink: /kb/243/Q243649/
 	
 	=============================================================================
 	
+
+{% endraw %}

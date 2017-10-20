@@ -6,6 +6,8 @@ permalink: /kb/183/Q183688/
 
 ## Q183688: WD97: Undesired Font in Imported Text Files
 
+{% raw %}
+
 	Article: Q183688
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/183/Q183688/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152230/
 
 ## Q152230: XFOR: Current Microsoft Internet Mail Products
 
+{% raw %}
+
 	Article: Q152230
 	Product(s): Microsoft Exchange
 	Version(s): 3.0,4.0,95
@@ -157,3 +159,5 @@ permalink: /kb/152/Q152230/
 	
 	=============================================================================
 	
+
+{% endraw %}

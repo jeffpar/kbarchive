@@ -6,6 +6,8 @@ permalink: /kb/156/Q156135/
 
 ## Q156135: FIX: CRecordset::m_lCurrentRecord Gives Inaccurate Values
 
+{% raw %}
+
 	Article: Q156135
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -210,3 +212,5 @@ permalink: /kb/156/Q156135/
 	
 	=============================================================================
 	
+
+{% endraw %}

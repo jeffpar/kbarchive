@@ -6,6 +6,8 @@ permalink: /kb/216/Q216539/
 
 ## Q216539: Err Msg: An Error Occurred in the Secure Channel Support
 
+{% raw %}
+
 	Article: Q216539
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/216/Q216539/
 	
 	=============================================================================
 	
+
+{% endraw %}

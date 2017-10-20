@@ -6,6 +6,8 @@ permalink: /kb/139/Q139735/
 
 ## Q139735: NTBackup Stops Responding w/ STB PowerGraph 64V Video Adapter
 
+{% raw %}
+
 	Article: Q139735
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -57,3 +59,5 @@ permalink: /kb/139/Q139735/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112337/
 
 ## Q112337: PRB: /MD Causes C4273 Warning When Replacing _matherr
 
+{% raw %}
+
 	Article: Q112337
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0
@@ -132,3 +134,5 @@ permalink: /kb/112/Q112337/
 	
 	=============================================================================
 	
+
+{% endraw %}

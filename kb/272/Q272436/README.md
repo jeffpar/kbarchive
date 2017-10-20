@@ -6,6 +6,8 @@ permalink: /kb/272/Q272436/
 
 ## Q272436: SMS: Support Utilities Updated in Service Pack 2
 
+{% raw %}
+
 	Article: Q272436
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -230,3 +232,5 @@ permalink: /kb/272/Q272436/
 	
 	=============================================================================
 	
+
+{% endraw %}

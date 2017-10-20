@@ -6,6 +6,8 @@ permalink: /kb/265/Q265391/
 
 ## Q265391: XADM: Exchange Server Honors Message Expiry Even If Incorrect
 
+{% raw %}
+
 	Article: Q265391
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -51,3 +53,5 @@ permalink: /kb/265/Q265391/
 	
 	=============================================================================
 	
+
+{% endraw %}

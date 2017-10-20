@@ -6,6 +6,8 @@ permalink: /kb/140/Q140074/
 
 ## Q140074: Mac Gty: Removing Gateway Resources from Gateway Mail Server
 
+{% raw %}
+
 	Article: Q140074
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1x
@@ -50,3 +52,5 @@ permalink: /kb/140/Q140074/
 	
 	=============================================================================
 	
+
+{% endraw %}

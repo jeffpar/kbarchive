@@ -6,6 +6,8 @@ permalink: /kb/152/Q152854/
 
 ## Q152854: XADM: Using Bulk Import to Remove Data
 
+{% raw %}
+
 	Article: Q152854
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/152/Q152854/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122167/
 
 ## Q122167: Microsoft RAS Does Not Work on Intel PCMCIA Data/Fax Modem
 
+{% raw %}
+
 	Article: Q122167
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -87,3 +89,5 @@ permalink: /kb/122/Q122167/
 	
 	=============================================================================
 	
+
+{% endraw %}

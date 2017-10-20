@@ -6,6 +6,8 @@ permalink: /kb/132/Q132891/
 
 ## Q132891: INFO: The Meaning of v.# for User Name in SourceSafe
 
+{% raw %}
+
 	Article: Q132891
 	Product(s): Microsoft SourceSafe
 	Version(s): MS-DOS:3.04,3.1; WINDOWS:3.04,3.1; winnt:3.04,3.1
@@ -67,3 +69,5 @@ permalink: /kb/132/Q132891/
 	
 	=============================================================================
 	
+
+{% endraw %}

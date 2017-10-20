@@ -6,6 +6,8 @@ permalink: /kb/113/Q113071/
 
 ## Q113071: PC Adm: Requestor Name of MSMAIL Appears Corrupt
 
+{% raw %}
+
 	Article: Q113071
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -66,3 +68,5 @@ permalink: /kb/113/Q113071/
 	
 	=============================================================================
 	
+
+{% endraw %}

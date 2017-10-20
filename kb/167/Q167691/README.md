@@ -6,6 +6,8 @@ permalink: /kb/167/Q167691/
 
 ## Q167691: Display Repainted Incorrectly After Palette Change
 
+{% raw %}
+
 	Article: Q167691
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -57,3 +59,5 @@ permalink: /kb/167/Q167691/
 	
 	=============================================================================
 	
+
+{% endraw %}

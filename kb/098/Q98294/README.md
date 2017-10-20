@@ -6,6 +6,8 @@ permalink: /kb/098/Q98294/
 
 ## Q98294: DELTREE Identifies a Directory Name as a Filename
 
+{% raw %}
+
 	Article: Q98294
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -53,3 +55,5 @@ permalink: /kb/098/Q98294/
 	
 	=============================================================================
 	
+
+{% endraw %}

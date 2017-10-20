@@ -6,6 +6,8 @@ permalink: /kb/087/Q87199/
 
 ## Q87199: PROFS: What Is the Gateway Name, and Why Is It Required?
 
+{% raw %}
+
 	Article: Q87199
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -57,3 +59,5 @@ permalink: /kb/087/Q87199/
 	
 	=============================================================================
 	
+
+{% endraw %}

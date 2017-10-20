@@ -6,6 +6,8 @@ permalink: /kb/205/Q205405/
 
 ## Q205405: WD97: Undo or Redo Button on Menu Bar May Cause Stack Fault
 
+{% raw %}
+
 	Article: Q205405
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -98,3 +100,5 @@ permalink: /kb/205/Q205405/
 	
 	=============================================================================
 	
+
+{% endraw %}

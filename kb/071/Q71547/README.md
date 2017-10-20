@@ -6,6 +6,8 @@ permalink: /kb/071/Q71547/
 
 ## Q71547: Known Problems with TIGA Driver
 
+{% raw %}
+
 	Article: Q71547
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -133,3 +135,5 @@ permalink: /kb/071/Q71547/
 	
 	=============================================================================
 	
+
+{% endraw %}

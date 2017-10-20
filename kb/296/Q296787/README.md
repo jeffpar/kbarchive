@@ -6,6 +6,8 @@ permalink: /kb/296/Q296787/
 
 ## Q296787: XADM: Offline Backup and Restore Procedures for Exchange Server
 
+{% raw %}
+
 	Article: Q296787
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -780,3 +782,5 @@ permalink: /kb/296/Q296787/
 	
 	=============================================================================
 	
+
+{% endraw %}

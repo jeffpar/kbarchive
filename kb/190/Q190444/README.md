@@ -6,6 +6,8 @@ permalink: /kb/190/Q190444/
 
 ## Q190444: Memory Leak when Reading Configuration File
 
+{% raw %}
+
 	Article: Q190444
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -59,3 +61,5 @@ permalink: /kb/190/Q190444/
 	
 	=============================================================================
 	
+
+{% endraw %}

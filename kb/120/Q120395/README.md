@@ -6,6 +6,8 @@ permalink: /kb/120/Q120395/
 
 ## Q120395: PRB: Link or CVPack May Fail with PS 1.0a Objects
 
+{% raw %}
+
 	Article: Q120395
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -121,3 +123,5 @@ permalink: /kb/120/Q120395/
 	
 	=============================================================================
 	
+
+{% endraw %}

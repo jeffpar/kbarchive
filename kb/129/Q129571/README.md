@@ -6,6 +6,8 @@ permalink: /kb/129/Q129571/
 
 ## Q129571: PRB: Formset.LOAD Is Not the First Event to Fire
 
+{% raw %}
+
 	Article: Q129571
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -104,3 +106,5 @@ permalink: /kb/129/Q129571/
 	
 	=============================================================================
 	
+
+{% endraw %}

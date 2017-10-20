@@ -6,6 +6,8 @@ permalink: /kb/243/Q243295/
 
 ## Q243295: How to Print to Local Printer from a Terminal Server Client
 
+{% raw %}
+
 	Article: Q243295
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/243/Q243295/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180006/
 
 ## Q180006: Event ID: 4229 When Replicating with Partners
 
+{% raw %}
+
 	Article: Q180006
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -50,3 +52,5 @@ permalink: /kb/180/Q180006/
 	
 	=============================================================================
 	
+
+{% endraw %}

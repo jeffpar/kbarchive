@@ -6,6 +6,8 @@ permalink: /kb/095/Q95086/
 
 ## Q95086: Player Starts at Blue Tees After Selecting Black Tees
 
+{% raw %}
+
 	Article: Q95086
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/095/Q95086/
 	
 	=============================================================================
 	
+
+{% endraw %}

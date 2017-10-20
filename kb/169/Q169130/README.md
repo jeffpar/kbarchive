@@ -6,6 +6,8 @@ permalink: /kb/169/Q169130/
 
 ## Q169130: XFOR: MS Mail Migration Fails When User List File Is Specified
 
+{% raw %}
+
 	Article: Q169130
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -99,3 +101,5 @@ permalink: /kb/169/Q169130/
 	
 	=============================================================================
 	
+
+{% endraw %}

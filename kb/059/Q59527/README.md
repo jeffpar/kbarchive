@@ -6,6 +6,8 @@ permalink: /kb/059/Q59527/
 
 ## Q59527: Using RIGHT ARROW on Dialog Line Locks Keyboard or GP Faults
 
+{% raw %}
+
 	Article: Q59527
 	Product(s): See article
 	Version(s): 1.02   | 1.02
@@ -43,3 +45,5 @@ permalink: /kb/059/Q59527/
 	Microsoft has confirmed this to be a problem in Version 1.02. We are
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

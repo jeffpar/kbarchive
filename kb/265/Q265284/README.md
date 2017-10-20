@@ -6,6 +6,8 @@ permalink: /kb/265/Q265284/
 
 ## Q265284: Hiding the Server's Computer Name from Other Computers in Domain
 
+{% raw %}
+
 	Article: Q265284
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -73,3 +75,5 @@ permalink: /kb/265/Q265284/
 	
 	=============================================================================
 	
+
+{% endraw %}

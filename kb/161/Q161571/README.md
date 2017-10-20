@@ -6,6 +6,8 @@ permalink: /kb/161/Q161571/
 
 ## Q161571: Using DHCP &quot;Superscopes&quot; to Serve Multiple Logical Subnets
 
+{% raw %}
+
 	Article: Q161571
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/161/Q161571/
 	
 	=============================================================================
 	
+
+{% endraw %}

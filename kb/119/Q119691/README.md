@@ -6,6 +6,8 @@ permalink: /kb/119/Q119691/
 
 ## Q119691: How to Format Telephone Numbers with PICTURE Mask
 
+{% raw %}
+
 	Article: Q119691
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c; MS-DOS:2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
@@ -134,3 +136,5 @@ permalink: /kb/119/Q119691/
 	
 	=============================================================================
 	
+
+{% endraw %}

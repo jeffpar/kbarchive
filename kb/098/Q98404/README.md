@@ -6,6 +6,8 @@ permalink: /kb/098/Q98404/
 
 ## Q98404: Using MS Undelete to Restore Files with Existing Filenames
 
+{% raw %}
+
 	Article: Q98404
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -51,3 +53,5 @@ permalink: /kb/098/Q98404/
 	
 	=============================================================================
 	
+
+{% endraw %}

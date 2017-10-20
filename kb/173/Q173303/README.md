@@ -6,6 +6,8 @@ permalink: /kb/173/Q173303/
 
 ## Q173303: XADM: 5.0 Administrator Program Stops 4.0 Directory Service
 
+{% raw %}
+
 	Article: Q173303
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.0 SP1
@@ -71,3 +73,5 @@ permalink: /kb/173/Q173303/
 	
 	=============================================================================
 	
+
+{% endraw %}

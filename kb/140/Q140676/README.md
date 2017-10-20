@@ -6,6 +6,8 @@ permalink: /kb/140/Q140676/
 
 ## Q140676: PRB: ClassWizard Uses WM_HELPINFO Instead of WM_HELP
 
+{% raw %}
+
 	Article: Q140676
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -53,3 +55,5 @@ permalink: /kb/140/Q140676/
 	
 	=============================================================================
 	
+
+{% endraw %}

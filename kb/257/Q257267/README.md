@@ -6,6 +6,8 @@ permalink: /kb/257/Q257267/
 
 ## Q257267: Unable to Serve ASP or HTML Pages
 
+{% raw %}
+
 	Article: Q257267
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:1.0; winnt:5.0,6.5,7.0
@@ -136,3 +138,5 @@ permalink: /kb/257/Q257267/
 	
 	=============================================================================
 	
+
+{% endraw %}

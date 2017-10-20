@@ -6,6 +6,8 @@ permalink: /kb/089/Q89239/
 
 ## Q89239: Novell NetWare 286 Hanging with Windows
 
+{% raw %}
+
 	Article: Q89239
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/089/Q89239/
 	
 	=============================================================================
 	
+
+{% endraw %}

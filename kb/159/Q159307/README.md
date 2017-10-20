@@ -6,6 +6,8 @@ permalink: /kb/159/Q159307/
 
 ## Q159307: XCON: MTA Stopping with Event ID 2143: Unrecoverable Error
 
+{% raw %}
+
 	Article: Q159307
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/159/Q159307/
 	
 	=============================================================================
 	
+
+{% endraw %}

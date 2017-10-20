@@ -6,6 +6,8 @@ permalink: /kb/176/Q176131/
 
 ## Q176131: XCON: Recipient Added from PAB Does Not Convert MSXCX500 DDA
 
+{% raw %}
+
 	Article: Q176131
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -49,3 +51,5 @@ permalink: /kb/176/Q176131/
 	
 	=============================================================================
 	
+
+{% endraw %}

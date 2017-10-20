@@ -6,6 +6,8 @@ permalink: /kb/086/Q86151/
 
 ## Q86151: PROFS: Consequences of XEDITing a Config File
 
+{% raw %}
+
 	Article: Q86151
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -41,3 +43,5 @@ permalink: /kb/086/Q86151/
 	
 	=============================================================================
 	
+
+{% endraw %}

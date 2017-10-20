@@ -6,6 +6,8 @@ permalink: /kb/120/Q120154/
 
 ## Q120154: FIX: DX1020 Using TEXTEQU to Define False IF Block
 
+{% raw %}
+
 	Article: Q120154
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0a,6.0b,6.1,6.1a
@@ -90,3 +92,5 @@ permalink: /kb/120/Q120154/
 	
 	=============================================================================
 	
+
+{% endraw %}

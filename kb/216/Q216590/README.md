@@ -6,6 +6,8 @@ permalink: /kb/216/Q216590/
 
 ## Q216590: Using Attachmate Advanced Function Adapter On Multidrop Line
 
+{% raw %}
+
 	Article: Q216590
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11SP1,2.11SP2,3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -75,3 +77,5 @@ permalink: /kb/216/Q216590/
 	
 	=============================================================================
 	
+
+{% endraw %}

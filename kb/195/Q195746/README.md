@@ -6,6 +6,8 @@ permalink: /kb/195/Q195746/
 
 ## Q195746: Print Server Sends a Continuous Stream of Formfeeds to Printer
 
+{% raw %}
+
 	Article: Q195746
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -107,3 +109,5 @@ permalink: /kb/195/Q195746/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240753/
 
 ## Q240753: XWEB: How to Change the TCP/IP Port for Outlook Web Access
 
+{% raw %}
+
 	Article: Q240753
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5; winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/240/Q240753/
 	
 	=============================================================================
 	
+
+{% endraw %}

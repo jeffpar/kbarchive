@@ -6,6 +6,8 @@ permalink: /kb/135/Q135525/
 
 ## Q135525: Mandatory Profiles on 3.51 Server Do Not Work for 3.5 Clients
 
+{% raw %}
+
 	Article: Q135525
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51
@@ -51,3 +53,5 @@ permalink: /kb/135/Q135525/
 	
 	=============================================================================
 	
+
+{% endraw %}

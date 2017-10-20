@@ -6,6 +6,8 @@ permalink: /kb/165/Q165875/
 
 ## Q165875: Excel May Print Only 1 Page to LaserJet Series II
 
+{% raw %}
+
 	Article: Q165875
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -67,3 +69,5 @@ permalink: /kb/165/Q165875/
 	
 	=============================================================================
 	
+
+{% endraw %}

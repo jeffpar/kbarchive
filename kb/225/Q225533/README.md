@@ -6,6 +6,8 @@ permalink: /kb/225/Q225533/
 
 ## Q225533: SMS: Inventory MIFs Processes Slowly
 
+{% raw %}
+
 	Article: Q225533
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -90,3 +92,5 @@ permalink: /kb/225/Q225533/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250392/
 
 ## Q250392: Using the Viabackup Tool in Microsoft Metadirectory Services
 
+{% raw %}
+
 	Article: Q250392
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -103,3 +105,5 @@ permalink: /kb/250/Q250392/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/301/Q301505/
 
 ## Q301505: XADM: Directory Service Doesn't Start, Event Log Error -510
 
+{% raw %}
+
 	Article: Q301505
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -100,3 +102,5 @@ permalink: /kb/301/Q301505/
 	
 	=============================================================================
 	
+
+{% endraw %}

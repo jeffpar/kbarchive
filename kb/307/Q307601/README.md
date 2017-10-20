@@ -6,6 +6,8 @@ permalink: /kb/307/Q307601/
 
 ## Q307601: Unable to Allocate LU 6.2 Sessions Using Dependent APPC LUs
 
+{% raw %}
+
 	Article: Q307601
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,4.0
@@ -162,3 +164,5 @@ permalink: /kb/307/Q307601/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99204/
 
 ## Q99204: PC Adm: Doc Err: Setting Attributes for High Traffic Network
 
+{% raw %}
+
 	Article: Q99204
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -116,3 +118,5 @@ permalink: /kb/099/Q99204/
 	
 	=============================================================================
 	
+
+{% endraw %}

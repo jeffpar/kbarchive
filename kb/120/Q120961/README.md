@@ -6,6 +6,8 @@ permalink: /kb/120/Q120961/
 
 ## Q120961: HOWTO: How to Sort a CStringArray in MFC
 
+{% raw %}
+
 	Article: Q120961
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -110,3 +112,5 @@ permalink: /kb/120/Q120961/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/027/Q27803/
 
 ## Q27803: _remapallpalette Example Causes C4049 Warning
 
+{% raw %}
+
 	Article: Q27803
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -28,3 +30,5 @@ permalink: /kb/027/Q27803/
 	should read as follows to avoid the warning message:
 	
 	_remapallpalette((long far *)(&(colorsarray[0])));
+
+{% endraw %}

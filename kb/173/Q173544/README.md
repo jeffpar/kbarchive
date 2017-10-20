@@ -6,6 +6,8 @@ permalink: /kb/173/Q173544/
 
 ## Q173544: XADM: Security Keys Cannot Be Used Without Rich Text Format
 
+{% raw %}
+
 	Article: Q173544
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -90,3 +92,5 @@ permalink: /kb/173/Q173544/
 	
 	=============================================================================
 	
+
+{% endraw %}

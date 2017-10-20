@@ -6,6 +6,8 @@ permalink: /kb/185/Q185789/
 
 ## Q185789: INFO: QLogic QLA1040 SCSI Miniport driver added to SP4
 
+{% raw %}
+
 	Article: Q185789
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -39,3 +41,5 @@ permalink: /kb/185/Q185789/
 	
 	=============================================================================
 	
+
+{% endraw %}

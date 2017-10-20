@@ -6,6 +6,8 @@ permalink: /kb/196/Q196286/
 
 ## Q196286: Vb4Run.exe Run-Time .dlls for Visual Basic 4.0 Apps
 
+{% raw %}
+
 	Article: Q196286
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -115,3 +117,5 @@ permalink: /kb/196/Q196286/
 	
 	=============================================================================
 	
+
+{% endraw %}

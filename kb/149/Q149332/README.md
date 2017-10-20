@@ -6,6 +6,8 @@ permalink: /kb/149/Q149332/
 
 ## Q149332: Problems Connecting to MSN with U.S. Robotics Sportster Modem
 
+{% raw %}
+
 	Article: Q149332
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -81,3 +83,5 @@ permalink: /kb/149/Q149332/
 	
 	=============================================================================
 	
+
+{% endraw %}

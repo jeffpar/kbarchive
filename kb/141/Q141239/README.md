@@ -6,6 +6,8 @@ permalink: /kb/141/Q141239/
 
 ## Q141239: Stop 0xA Errors May Occur After Installing Service Pack 2
 
+{% raw %}
+
 	Article: Q141239
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/141/Q141239/
 	
 	=============================================================================
 	
+
+{% endraw %}

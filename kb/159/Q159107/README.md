@@ -6,6 +6,8 @@ permalink: /kb/159/Q159107/
 
 ## Q159107: Access Violation in AddAtom Inside Kernel32.dll
 
+{% raw %}
+
 	Article: Q159107
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/159/Q159107/
 	
 	=============================================================================
 	
+
+{% endraw %}

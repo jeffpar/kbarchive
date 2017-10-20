@@ -6,6 +6,8 @@ permalink: /kb/229/Q229794/
 
 ## Q229794: XCLN: Macintosh Outlook Doesn't Open PAB/PST Files NT MAC Vol.
 
+{% raw %}
+
 	Article: Q229794
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0,8.1; WINDOWS:4.0,5.0
@@ -96,3 +98,5 @@ permalink: /kb/229/Q229794/
 	
 	=============================================================================
 	
+
+{% endraw %}

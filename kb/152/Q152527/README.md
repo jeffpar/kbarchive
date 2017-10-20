@@ -6,6 +6,8 @@ permalink: /kb/152/Q152527/
 
 ## Q152527: Err Msg: Keycheck Failed 0x8009030e
 
+{% raw %}
+
 	Article: Q152527
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/152/Q152527/
 	
 	=============================================================================
 	
+
+{% endraw %}

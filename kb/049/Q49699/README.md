@@ -6,6 +6,8 @@ permalink: /kb/049/Q49699/
 
 ## Q49699: DOCERR: MASM Err Msg A2063, Name in .MODEL SMALL Not Ignored
 
+{% raw %}
+
 	Article: Q49699
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -55,3 +57,5 @@ permalink: /kb/049/Q49699/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170274/
 
 ## Q170274: XCON: How to Configure DRAS Between Different Organizations
 
+{% raw %}
+
 	Article: Q170274
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/170/Q170274/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257812/
 
 ## Q257812: BUG: MFC Dialog Explicitly Owned by the Desktop Disables Desktop
 
+{% raw %}
+
 	Article: Q257812
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -188,3 +190,5 @@ permalink: /kb/257/Q257812/
 	
 	=============================================================================
 	
+
+{% endraw %}

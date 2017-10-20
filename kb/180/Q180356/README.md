@@ -6,6 +6,8 @@ permalink: /kb/180/Q180356/
 
 ## Q180356: NWConv Fails to Apply Correct Group Permissions
 
+{% raw %}
+
 	Article: Q180356
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/180/Q180356/
 	
 	=============================================================================
 	
+
+{% endraw %}

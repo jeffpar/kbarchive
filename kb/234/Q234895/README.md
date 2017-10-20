@@ -6,6 +6,8 @@ permalink: /kb/234/Q234895/
 
 ## Q234895: Microsoft Office 2000 Professional At a Glance Comments and Corr
 
+{% raw %}
+
 	Article: Q234895
 	Product(s): Microsoft Press
 	Version(s): 
@@ -129,3 +131,5 @@ permalink: /kb/234/Q234895/
 	
 	=============================================================================
 	
+
+{% endraw %}

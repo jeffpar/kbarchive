@@ -6,6 +6,8 @@ permalink: /kb/186/Q186973/
 
 ## Q186973: XCLN: Outlook Forms Page Names Change To Numbers By Forms Conver
 
+{% raw %}
+
 	Article: Q186973
 	Product(s): Microsoft Exchange
 	Version(s): 8.03; WINDOWS:
@@ -53,3 +55,5 @@ permalink: /kb/186/Q186973/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/230/Q230052/
 
 ## Q230052: Files or Folders Deleted from Floppy Disk Not in the Recycle Bin
 
+{% raw %}
+
 	Article: Q230052
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -56,3 +58,5 @@ permalink: /kb/230/Q230052/
 	
 	=============================================================================
 	
+
+{% endraw %}

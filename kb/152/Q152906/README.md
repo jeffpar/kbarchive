@@ -6,6 +6,8 @@ permalink: /kb/152/Q152906/
 
 ## Q152906: XADM: Regedit Errors When Installing or Updating Server
 
+{% raw %}
+
 	Article: Q152906
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -77,3 +79,5 @@ permalink: /kb/152/Q152906/
 	
 	=============================================================================
 	
+
+{% endraw %}

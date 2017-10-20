@@ -6,6 +6,8 @@ permalink: /kb/140/Q140032/
 
 ## Q140032: BUG: After Switching OLE Client Hangs in Visual Basic 16-Bit
 
+{% raw %}
+
 	Article: Q140032
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -120,3 +122,5 @@ permalink: /kb/140/Q140032/
 	
 	=============================================================================
 	
+
+{% endraw %}

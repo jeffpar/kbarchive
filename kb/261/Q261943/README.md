@@ -6,6 +6,8 @@ permalink: /kb/261/Q261943/
 
 ## Q261943: HOWTO: Use Basic Visio Operations from Visual FoxPro
 
+{% raw %}
+
 	Article: Q261943
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -86,3 +88,5 @@ permalink: /kb/261/Q261943/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165813/
 
 ## Q165813: 16-bit Applications Cause Access Violation in NTDLL.DLL
 
+{% raw %}
+
 	Article: Q165813
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/165/Q165813/
 	
 	=============================================================================
 	
+
+{% endraw %}

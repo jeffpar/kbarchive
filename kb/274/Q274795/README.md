@@ -6,6 +6,8 @@ permalink: /kb/274/Q274795/
 
 ## Q274795: SMS: Site System Status Summary Dates Appear Out-of-Date
 
+{% raw %}
+
 	Article: Q274795
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP2
@@ -148,3 +150,5 @@ permalink: /kb/274/Q274795/
 	
 	=============================================================================
 	
+
+{% endraw %}

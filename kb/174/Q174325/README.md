@@ -6,6 +6,8 @@ permalink: /kb/174/Q174325/
 
 ## Q174325: WD97: Some CorelDRAW EMF Graphics Do Not Display Gradients
 
+{% raw %}
+
 	Article: Q174325
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/174/Q174325/
 	
 	=============================================================================
 	
+
+{% endraw %}

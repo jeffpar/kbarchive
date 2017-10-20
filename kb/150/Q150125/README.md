@@ -6,6 +6,8 @@ permalink: /kb/150/Q150125/
 
 ## Q150125: BUG: Write of Function Returning a Character String Fails
 
+{% raw %}
+
 	Article: Q150125
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/150/Q150125/
 	
 	=============================================================================
 	
+
+{% endraw %}

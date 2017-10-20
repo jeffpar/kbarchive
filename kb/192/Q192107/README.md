@@ -6,6 +6,8 @@ permalink: /kb/192/Q192107/
 
 ## Q192107: FIX: Numeric Overflow if no Decimal is in InputMask of Text Box
 
+{% raw %}
+
 	Article: Q192107
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -76,3 +78,5 @@ permalink: /kb/192/Q192107/
 	
 	=============================================================================
 	
+
+{% endraw %}

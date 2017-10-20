@@ -6,6 +6,8 @@ permalink: /kb/178/Q178115/
 
 ## Q178115: Encarta 98: Conversion of Miles to Feet Is Incorrect
 
+{% raw %}
+
 	Article: Q178115
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -53,3 +55,5 @@ permalink: /kb/178/Q178115/
 	
 	=============================================================================
 	
+
+{% endraw %}

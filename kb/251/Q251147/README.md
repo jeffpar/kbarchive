@@ -6,6 +6,8 @@ permalink: /kb/251/Q251147/
 
 ## Q251147: PRB: Unable to Display Help or No Help Available for ADO in VB
 
+{% raw %}
+
 	Article: Q251147
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -112,3 +114,5 @@ permalink: /kb/251/Q251147/
 	
 	=============================================================================
 	
+
+{% endraw %}

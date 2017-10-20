@@ -6,6 +6,8 @@ permalink: /kb/161/Q161724/
 
 ## Q161724: PPT7: Running PowerPoint Animations with Netscape Navigator 3.x
 
+{% raw %}
+
 	Article: Q161724
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -127,3 +129,5 @@ permalink: /kb/161/Q161724/
 	
 	=============================================================================
 	
+
+{% endraw %}

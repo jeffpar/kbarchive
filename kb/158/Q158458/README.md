@@ -6,6 +6,8 @@ permalink: /kb/158/Q158458/
 
 ## Q158458: Frequent Browsing Causes Explorer Settings to Revert
 
+{% raw %}
+
 	Article: Q158458
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/158/Q158458/
 	
 	=============================================================================
 	
+
+{% endraw %}

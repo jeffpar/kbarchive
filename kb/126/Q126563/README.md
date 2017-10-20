@@ -6,6 +6,8 @@ permalink: /kb/126/Q126563/
 
 ## Q126563: PRB: SetItemRects Causes Server to Change Zoom Factor
 
+{% raw %}
+
 	Article: Q126563
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -100,3 +102,5 @@ permalink: /kb/126/Q126563/
 	
 	=============================================================================
 	
+
+{% endraw %}

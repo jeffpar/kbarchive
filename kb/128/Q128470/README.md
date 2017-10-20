@@ -6,6 +6,8 @@ permalink: /kb/128/Q128470/
 
 ## Q128470: PROFS: Err Msg: PWABFUP Unable to Spool PUNCH to MSCAL...
 
+{% raw %}
+
 	Article: Q128470
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4a
@@ -99,3 +101,5 @@ permalink: /kb/128/Q128470/
 	
 	=============================================================================
 	
+
+{% endraw %}

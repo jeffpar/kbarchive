@@ -6,6 +6,8 @@ permalink: /kb/175/Q175637/
 
 ## Q175637: Poor Print Quality with Epson Stylus Pro XL ESC/P 2
 
+{% raw %}
+
 	Article: Q175637
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/175/Q175637/
 	
 	=============================================================================
 	
+
+{% endraw %}

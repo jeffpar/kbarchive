@@ -6,6 +6,8 @@ permalink: /kb/078/Q78167/
 
 ## Q78167: Kraft Trackball Mouse and Windows 3.0
 
+{% raw %}
+
 	Article: Q78167
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/078/Q78167/
 	
 	=============================================================================
 	
+
+{% endraw %}

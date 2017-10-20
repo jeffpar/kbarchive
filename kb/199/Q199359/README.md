@@ -6,6 +6,8 @@ permalink: /kb/199/Q199359/
 
 ## Q199359: SMS: How to Fix the WMI Repository of a Site Server
 
+{% raw %}
+
 	Article: Q199359
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -67,3 +69,5 @@ permalink: /kb/199/Q199359/
 	
 	=============================================================================
 	
+
+{% endraw %}

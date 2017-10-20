@@ -6,6 +6,8 @@ permalink: /kb/199/Q199182/
 
 ## Q199182: IIS: Name Field in Default Application May be Blank
 
+{% raw %}
+
 	Article: Q199182
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -46,3 +48,5 @@ permalink: /kb/199/Q199182/
 	
 	=============================================================================
 	
+
+{% endraw %}

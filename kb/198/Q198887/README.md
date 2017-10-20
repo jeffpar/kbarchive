@@ -6,6 +6,8 @@ permalink: /kb/198/Q198887/
 
 ## Q198887: BUG: Incorrect Error Assigning Read-Only Property of UserControl
 
+{% raw %}
+
 	Article: Q198887
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -87,3 +89,5 @@ permalink: /kb/198/Q198887/
 	
 	=============================================================================
 	
+
+{% endraw %}

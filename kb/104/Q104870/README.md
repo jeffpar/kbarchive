@@ -6,6 +6,8 @@ permalink: /kb/104/Q104870/
 
 ## Q104870: PC DirSync: Err Msg: Fatal &#91;202&#93; No Valid Postoffice Found
 
+{% raw %}
+
 	Article: Q104870
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2,3.5
@@ -79,3 +81,5 @@ permalink: /kb/104/Q104870/
 	
 	=============================================================================
 	
+
+{% endraw %}

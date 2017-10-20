@@ -6,6 +6,8 @@ permalink: /kb/262/Q262041/
 
 ## Q262041: XADM: Data Missing from Database After an Online Restore
 
+{% raw %}
+
 	Article: Q262041
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -232,3 +234,5 @@ permalink: /kb/262/Q262041/
 	
 	=============================================================================
 	
+
+{% endraw %}

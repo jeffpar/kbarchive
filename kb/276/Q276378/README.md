@@ -6,6 +6,8 @@ permalink: /kb/276/Q276378/
 
 ## Q276378: Remote Control Does Not Work Even If Other Remote Tools Work
 
+{% raw %}
+
 	Article: Q276378
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -96,3 +98,5 @@ permalink: /kb/276/Q276378/
 	
 	=============================================================================
 	
+
+{% endraw %}

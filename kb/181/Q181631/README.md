@@ -6,6 +6,8 @@ permalink: /kb/181/Q181631/
 
 ## Q181631: XCLN: Exchange Client Polls Flag.glb File on MS Mail Postoffice
 
+{% raw %}
+
 	Article: Q181631
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:4.0,5.0,8.0
@@ -63,3 +65,5 @@ permalink: /kb/181/Q181631/
 	
 	=============================================================================
 	
+
+{% endraw %}

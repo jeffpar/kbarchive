@@ -6,6 +6,8 @@ permalink: /kb/132/Q132534/
 
 ## Q132534: FIX: Error Changing Grid s DynamicBackColor &amp; DynamicForeColor
 
+{% raw %}
+
 	Article: Q132534
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -143,3 +145,5 @@ permalink: /kb/132/Q132534/
 	
 	=============================================================================
 	
+
+{% endraw %}

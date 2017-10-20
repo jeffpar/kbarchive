@@ -6,6 +6,8 @@ permalink: /kb/175/Q175738/
 
 ## Q175738: Collate Feature May Not Work with PostScript Printing
 
+{% raw %}
+
 	Article: Q175738
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/175/Q175738/
 	
 	=============================================================================
 	
+
+{% endraw %}

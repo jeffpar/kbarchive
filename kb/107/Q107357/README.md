@@ -6,6 +6,8 @@ permalink: /kb/107/Q107357/
 
 ## Q107357: PC Forms: Incorrect Data Printed from Subform
 
+{% raw %}
+
 	Article: Q107357
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -93,3 +95,5 @@ permalink: /kb/107/Q107357/
 	
 	=============================================================================
 	
+
+{% endraw %}

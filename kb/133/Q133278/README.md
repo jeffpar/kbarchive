@@ -6,6 +6,8 @@ permalink: /kb/133/Q133278/
 
 ## Q133278: MSB Human: Freezes on Opening Animation on Macintosh
 
+{% raw %}
+
 	Article: Q133278
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0
@@ -84,3 +86,5 @@ permalink: /kb/133/Q133278/
 	
 	=============================================================================
 	
+
+{% endraw %}

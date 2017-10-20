@@ -6,6 +6,8 @@ permalink: /kb/126/Q126492/
 
 ## Q126492: PPT: PowerPoint Viewer (32-Bit) Available from Online Services
 
+{% raw %}
+
 	Article: Q126492
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 2.0,2001,3.0,4.0,4.0a,4.0c,7.0,98
@@ -68,3 +70,5 @@ permalink: /kb/126/Q126492/
 	
 	=============================================================================
 	
+
+{% endraw %}

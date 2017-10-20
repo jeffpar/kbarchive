@@ -6,6 +6,8 @@ permalink: /kb/193/Q193775/
 
 ## Q193775: BUG: Labels Disabled in a Class Not Disabled at Run-Time
 
+{% raw %}
+
 	Article: Q193775
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -166,3 +168,5 @@ permalink: /kb/193/Q193775/
 	
 	=============================================================================
 	
+
+{% endraw %}

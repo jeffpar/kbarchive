@@ -6,6 +6,8 @@ permalink: /kb/068/Q68240/
 
 ## Q68240: Renaissance RVGA 2 Video Card WIN30FIX Patch for Windows 3.0
 
+{% raw %}
+
 	Article: Q68240
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/068/Q68240/
 	
 	=============================================================================
 	
+
+{% endraw %}

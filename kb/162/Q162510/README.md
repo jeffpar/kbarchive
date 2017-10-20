@@ -6,6 +6,8 @@ permalink: /kb/162/Q162510/
 
 ## Q162510: Monster Truck Madness: Multiplayer Patch Information
 
+{% raw %}
+
 	Article: Q162510
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -92,3 +94,5 @@ permalink: /kb/162/Q162510/
 	
 	=============================================================================
 	
+
+{% endraw %}

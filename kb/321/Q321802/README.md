@@ -6,6 +6,8 @@ permalink: /kb/321/Q321802/
 
 ## Q321802: SMS: Chinese Client Cannot Report Inventory to Japanese Server
 
+{% raw %}
+
 	Article: Q321802
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -49,3 +51,5 @@ permalink: /kb/321/Q321802/
 	
 	=============================================================================
 	
+
+{% endraw %}

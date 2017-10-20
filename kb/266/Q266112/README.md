@@ -6,6 +6,8 @@ permalink: /kb/266/Q266112/
 
 ## Q266112: Microsoft SQL Server 7.0 Data Warehousing Training Kit Comments
 
+{% raw %}
+
 	Article: Q266112
 	Product(s): Microsoft Press
 	Version(s): 
@@ -190,3 +192,5 @@ permalink: /kb/266/Q266112/
 	
 	=============================================================================
 	
+
+{% endraw %}

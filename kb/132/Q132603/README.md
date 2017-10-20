@@ -6,6 +6,8 @@ permalink: /kb/132/Q132603/
 
 ## Q132603: Cannot View Shared Fonts Folder
 
+{% raw %}
+
 	Article: Q132603
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/132/Q132603/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116404/
 
 ## Q116404: STOP Message: 0xC000021A or Other Problems with Long PATH
 
+{% raw %}
+
 	Article: Q116404
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -86,3 +88,5 @@ permalink: /kb/116/Q116404/
 	
 	=============================================================================
 	
+
+{% endraw %}

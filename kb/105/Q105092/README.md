@@ -6,6 +6,8 @@ permalink: /kb/105/Q105092/
 
 ## Q105092: No Default Printer Selection in Printer Pool
 
+{% raw %}
+
 	Article: Q105092
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -83,3 +85,5 @@ permalink: /kb/105/Q105092/
 	
 	=============================================================================
 	
+
+{% endraw %}

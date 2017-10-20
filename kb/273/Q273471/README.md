@@ -6,6 +6,8 @@ permalink: /kb/273/Q273471/
 
 ## Q273471: Creating Multiple-Line, Single-Value Attributes in Templates
 
+{% raw %}
+
 	Article: Q273471
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -56,3 +58,5 @@ permalink: /kb/273/Q273471/
 	
 	=============================================================================
 	
+
+{% endraw %}

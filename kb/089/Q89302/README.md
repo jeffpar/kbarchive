@@ -6,6 +6,8 @@ permalink: /kb/089/Q89302/
 
 ## Q89302: Erratic Behavior with Enhanced Mode Windows and LANtastic 4.x
 
+{% raw %}
+
 	Article: Q89302
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/089/Q89302/
 	
 	=============================================================================
 	
+
+{% endraw %}

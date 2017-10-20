@@ -6,6 +6,8 @@ permalink: /kb/119/Q119350/
 
 ## Q119350: DIR/CHKDSK Behavior w/ More Than 32,768 Files in Subdirectory
 
+{% raw %}
+
 	Article: Q119350
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.01,5.0,6.0,6.2,6.21,6.22
@@ -67,3 +69,5 @@ permalink: /kb/119/Q119350/
 	
 	=============================================================================
 	
+
+{% endraw %}

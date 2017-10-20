@@ -6,6 +6,8 @@ permalink: /kb/285/Q285932/
 
 ## Q285932: BUG: MaxLength Property Is Ignored When Alignment Is Changed
 
+{% raw %}
+
 	Article: Q285932
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -81,3 +83,5 @@ permalink: /kb/285/Q285932/
 	
 	=============================================================================
 	
+
+{% endraw %}

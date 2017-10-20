@@ -6,6 +6,8 @@ permalink: /kb/172/Q172692/
 
 ## Q172692: Error 0001: Incorrect Function When Starting WINS Service
 
+{% raw %}
+
 	Article: Q172692
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/172/Q172692/
 	
 	=============================================================================
 	
+
+{% endraw %}

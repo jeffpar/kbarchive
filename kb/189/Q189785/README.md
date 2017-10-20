@@ -6,6 +6,8 @@ permalink: /kb/189/Q189785/
 
 ## Q189785: FS98/2000: Delete Button Unavailable in Select Flight Dialog Box
 
+{% raw %}
+
 	Article: Q189785
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/189/Q189785/
 	
 	=============================================================================
 	
+
+{% endraw %}

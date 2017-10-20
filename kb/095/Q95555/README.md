@@ -6,6 +6,8 @@ permalink: /kb/095/Q95555/
 
 ## Q95555: Overview of Memory-Management Functionality in MS-DOS
 
+{% raw %}
+
 	Article: Q95555
 	Product(s): Microsoft Disk Operating System
 	Version(s): 3.1,3.2,3.21,3.3,3.3a,4.0,4.01,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -364,3 +366,5 @@ permalink: /kb/095/Q95555/
 	
 	=============================================================================
 	
+
+{% endraw %}

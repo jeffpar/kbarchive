@@ -6,6 +6,8 @@ permalink: /kb/166/Q166791/
 
 ## Q166791: Windows Explorer Error: Unable to Copy Disk on This Drive
 
+{% raw %}
+
 	Article: Q166791
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/166/Q166791/
 	
 	=============================================================================
 	
+
+{% endraw %}

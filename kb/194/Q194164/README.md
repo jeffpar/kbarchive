@@ -6,6 +6,8 @@ permalink: /kb/194/Q194164/
 
 ## Q194164: Configuring Outlook Express to Read Msnnews.msn.com Newsgroups
 
+{% raw %}
+
 	Article: Q194164
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,4.0
@@ -69,3 +71,5 @@ permalink: /kb/194/Q194164/
 	
 	=============================================================================
 	
+
+{% endraw %}

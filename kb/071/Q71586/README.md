@@ -6,6 +6,8 @@ permalink: /kb/071/Q71586/
 
 ## Q71586: MS-DOS: Running CHKDSK As A Child Process
 
+{% raw %}
+
 	Article: Q71586
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -44,3 +46,5 @@ permalink: /kb/071/Q71586/
 	
 	=============================================================================
 	
+
+{% endraw %}

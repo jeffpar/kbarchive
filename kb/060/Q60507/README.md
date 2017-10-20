@@ -6,6 +6,8 @@ permalink: /kb/060/Q60507/
 
 ## Q60507: HLLAPI SEND KEY Function 3: TAB and BACKTAB
 
+{% raw %}
+
 	Article: Q60507
 	Product(s): Microsoft LAN Manager
 	Version(s): 1.0
@@ -47,3 +49,5 @@ permalink: /kb/060/Q60507/
 	
 	=============================================================================
 	
+
+{% endraw %}

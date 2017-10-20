@@ -6,6 +6,8 @@ permalink: /kb/180/Q180330/
 
 ## Q180330: PRB: InvalidateRect() Yields Empty Update Region on Win95/98/Me
 
+{% raw %}
+
 	Article: Q180330
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/180/Q180330/
 	
 	=============================================================================
 	
+
+{% endraw %}

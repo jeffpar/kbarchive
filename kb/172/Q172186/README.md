@@ -6,6 +6,8 @@ permalink: /kb/172/Q172186/
 
 ## Q172186: dbWeb No Longer Part of the Resource Kit
 
+{% raw %}
+
 	Article: Q172186
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.51
@@ -53,3 +55,5 @@ permalink: /kb/172/Q172186/
 	
 	=============================================================================
 	
+
+{% endraw %}

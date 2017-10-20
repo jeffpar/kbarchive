@@ -6,6 +6,8 @@ permalink: /kb/033/Q33112/
 
 ## Q33112: Removing BACKUP.??? and CONTROL.??? from a Backup Disk
 
+{% raw %}
+
 	Article: Q33112
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -49,3 +51,5 @@ permalink: /kb/033/Q33112/
 	
 	=============================================================================
 	
+
+{% endraw %}

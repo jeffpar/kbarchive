@@ -6,6 +6,8 @@ permalink: /kb/092/Q92435/
 
 ## Q92435: ASMClock.exe Uses MASM 6.0 to Program in Windows
 
+{% raw %}
+
 	Article: Q92435
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11
@@ -56,3 +58,5 @@ permalink: /kb/092/Q92435/
 	
 	=============================================================================
 	
+
+{% endraw %}

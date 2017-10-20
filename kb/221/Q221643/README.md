@@ -6,6 +6,8 @@ permalink: /kb/221/Q221643/
 
 ## Q221643: FIX:Shortcut Menus Limited by Form Size, Have Up/Down Arrows
 
+{% raw %}
+
 	Article: Q221643
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -111,3 +113,5 @@ permalink: /kb/221/Q221643/
 	
 	=============================================================================
 	
+
+{% endraw %}

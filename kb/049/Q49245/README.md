@@ -6,6 +6,8 @@ permalink: /kb/049/Q49245/
 
 ## Q49245: DOCERR: Error in Macro Example in MASM 5.1 Update Manual
 
+{% raw %}
+
 	Article: Q49245
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.1
@@ -53,3 +55,5 @@ permalink: /kb/049/Q49245/
 	
 	=============================================================================
 	
+
+{% endraw %}

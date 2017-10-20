@@ -6,6 +6,8 @@ permalink: /kb/225/Q225352/
 
 ## Q225352: Non-Computing Devices May Not Be Discovered by Network Discovery
 
+{% raw %}
+
 	Article: Q225352
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -48,3 +50,5 @@ permalink: /kb/225/Q225352/
 	
 	=============================================================================
 	
+
+{% endraw %}

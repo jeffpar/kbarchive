@@ -6,6 +6,8 @@ permalink: /kb/186/Q186488/
 
 ## Q186488: Terminal Server Error Messages: 1800 to 1999
 
+{% raw %}
+
 	Article: Q186488
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -286,3 +288,5 @@ permalink: /kb/186/Q186488/
 	
 	=============================================================================
 	
+
+{% endraw %}

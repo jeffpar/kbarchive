@@ -6,6 +6,8 @@ permalink: /kb/010/Q10216/
 
 ## Q10216: Using EndPaint() and BeginPaint()
 
+{% raw %}
+
 	Article: Q10216
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -48,3 +50,5 @@ permalink: /kb/010/Q10216/
 	
 	=============================================================================
 	
+
+{% endraw %}

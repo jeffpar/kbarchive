@@ -6,6 +6,8 @@ permalink: /kb/073/Q73296/
 
 ## Q73296: MS-DOS 5.0 Technical Reference Availability
 
+{% raw %}
+
 	Article: Q73296
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -50,3 +52,5 @@ permalink: /kb/073/Q73296/
 	
 	=============================================================================
 	
+
+{% endraw %}

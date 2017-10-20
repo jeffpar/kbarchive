@@ -6,6 +6,8 @@ permalink: /kb/108/Q108591/
 
 ## Q108591: Joystick Stops Working After Situation Reset
 
+{% raw %}
+
 	Article: Q108591
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -57,3 +59,5 @@ permalink: /kb/108/Q108591/
 	
 	=============================================================================
 	
+
+{% endraw %}

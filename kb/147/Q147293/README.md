@@ -6,6 +6,8 @@ permalink: /kb/147/Q147293/
 
 ## Q147293: QMS Spooler Monitor Does Not Deallocate Memory, Causes Errors
 
+{% raw %}
+
 	Article: Q147293
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -57,3 +59,5 @@ permalink: /kb/147/Q147293/
 	
 	=============================================================================
 	
+
+{% endraw %}

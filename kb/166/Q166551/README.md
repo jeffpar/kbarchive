@@ -6,6 +6,8 @@ permalink: /kb/166/Q166551/
 
 ## Q166551: XCON: MTA Fails While Rebuilding Routing Table
 
+{% raw %}
+
 	Article: Q166551
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -50,3 +52,5 @@ permalink: /kb/166/Q166551/
 	
 	=============================================================================
 	
+
+{% endraw %}

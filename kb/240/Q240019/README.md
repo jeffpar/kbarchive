@@ -6,6 +6,8 @@ permalink: /kb/240/Q240019/
 
 ## Q240019: HOWTO: Dynamically Populate a Data Report in Visual Basic
 
+{% raw %}
+
 	Article: Q240019
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1,2.1 (GA),2.1 SP1,2.1 SP2,2.5,2.6,6.0
@@ -138,3 +140,5 @@ permalink: /kb/240/Q240019/
 	
 	=============================================================================
 	
+
+{% endraw %}

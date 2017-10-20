@@ -6,6 +6,8 @@ permalink: /kb/188/Q188552/
 
 ## Q188552: BUG: UserControl's ContainedControls Do Not Inherit ScaleMode
 
+{% raw %}
+
 	Article: Q188552
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/188/Q188552/
 	
 	=============================================================================
 	
+
+{% endraw %}

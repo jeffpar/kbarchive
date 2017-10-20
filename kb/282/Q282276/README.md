@@ -6,6 +6,8 @@ permalink: /kb/282/Q282276/
 
 ## Q282276: SMS: Deleting Numerous Ads Causes Delay in Offer Mgr Processing
 
+{% raw %}
+
 	Article: Q282276
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -59,3 +61,5 @@ permalink: /kb/282/Q282276/
 	
 	=============================================================================
 	
+
+{% endraw %}

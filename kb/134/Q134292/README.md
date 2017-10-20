@@ -6,6 +6,8 @@ permalink: /kb/134/Q134292/
 
 ## Q134292: Cannot Paste Windows Explorer or Desktop Object into BBS
 
+{% raw %}
+
 	Article: Q134292
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -40,3 +42,5 @@ permalink: /kb/134/Q134292/
 	
 	=============================================================================
 	
+
+{% endraw %}

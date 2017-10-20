@@ -6,6 +6,8 @@ permalink: /kb/246/Q246541/
 
 ## Q246541: Memory Leak in Tcpsvcs.exe When the LPD Service Is Stressed
 
+{% raw %}
+
 	Article: Q246541
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP6
@@ -77,3 +79,5 @@ permalink: /kb/246/Q246541/
 	
 	=============================================================================
 	
+
+{% endraw %}

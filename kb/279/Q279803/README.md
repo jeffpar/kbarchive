@@ -6,6 +6,8 @@ permalink: /kb/279/Q279803/
 
 ## Q279803: DirectX Diagnostic Tool Lists Debug Version of Files
 
+{% raw %}
+
 	Article: Q279803
 	Product(s): Microsoft Home Games
 	Version(s): 7.0
@@ -64,3 +66,5 @@ permalink: /kb/279/Q279803/
 	
 	=============================================================================
 	
+
+{% endraw %}

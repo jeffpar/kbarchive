@@ -6,6 +6,8 @@ permalink: /kb/037/Q37772/
 
 ## Q37772: BASIC Example to Call OS/2 Function DosSetVerify, DosQVerify
 
+{% raw %}
+
 	Article: Q37772
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -79,3 +81,5 @@ permalink: /kb/037/Q37772/
 	  END SELECT
 	END IF
 	END
+
+{% endraw %}

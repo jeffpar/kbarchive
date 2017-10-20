@@ -6,6 +6,8 @@ permalink: /kb/312/Q312437/
 
 ## Q312437: XADM: Unable to Install Exchange 5.5; Command Lodctr Error
 
+{% raw %}
+
 	Article: Q312437
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -94,3 +96,5 @@ permalink: /kb/312/Q312437/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/228/Q228771/
 
 ## Q228771: PDF Import of Inventory Rules Does Not Validate Date Criteria
 
+{% raw %}
+
 	Article: Q228771
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -55,3 +57,5 @@ permalink: /kb/228/Q228771/
 	
 	=============================================================================
 	
+
+{% endraw %}

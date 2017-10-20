@@ -6,6 +6,8 @@ permalink: /kb/309/Q309381/
 
 ## Q309381: A Distribution Point Does Not Appear on the Parent
 
+{% raw %}
+
 	Article: Q309381
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -123,3 +125,5 @@ permalink: /kb/309/Q309381/
 	
 	=============================================================================
 	
+
+{% endraw %}

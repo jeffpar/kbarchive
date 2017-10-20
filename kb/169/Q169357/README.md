@@ -6,6 +6,8 @@ permalink: /kb/169/Q169357/
 
 ## Q169357: WinNT SP3 Says Mtxdm.dll Older Than Currently Installed Version
 
+{% raw %}
+
 	Article: Q169357
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/169/Q169357/
 	
 	=============================================================================
 	
+
+{% endraw %}

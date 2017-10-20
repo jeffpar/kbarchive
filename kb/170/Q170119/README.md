@@ -6,6 +6,8 @@ permalink: /kb/170/Q170119/
 
 ## Q170119: DOC: New Record Not Inserted to the End of Recordset
 
+{% raw %}
+
 	Article: Q170119
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0
@@ -61,3 +63,5 @@ permalink: /kb/170/Q170119/
 	
 	=============================================================================
 	
+
+{% endraw %}

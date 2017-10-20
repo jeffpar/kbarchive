@@ -6,6 +6,8 @@ permalink: /kb/158/Q158873/
 
 ## Q158873: How to Enable IDE DMA Bus-Mastering Using SP2 Atapi.sys
 
+{% raw %}
+
 	Article: Q158873
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -151,3 +153,5 @@ permalink: /kb/158/Q158873/
 	
 	=============================================================================
 	
+
+{% endraw %}

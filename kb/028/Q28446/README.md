@@ -6,6 +6,8 @@ permalink: /kb/028/Q28446/
 
 ## Q28446: Example of Calling OS/2 Function DosGetEnv
 
+{% raw %}
+
 	Article: Q28446
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -79,3 +81,5 @@ permalink: /kb/028/Q28446/
 	   print "To have the complete demo, set the FOO=**********"
 	END IF
 	END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105419/
 
 ## Q105419: Sharing Printers on Serial Ports in Windows for Workgroups
 
+{% raw %}
+
 	Article: Q105419
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/105/Q105419/
 	
 	=============================================================================
 	
+
+{% endraw %}

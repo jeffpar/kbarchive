@@ -6,6 +6,8 @@ permalink: /kb/036/Q36725/
 
 ## Q36725: Warning C4040 near/far/huge on 'identifier' Ignored
 
+{% raw %}
+
 	Article: Q36725
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -39,3 +41,5 @@ permalink: /kb/036/Q36725/
 	
 	QuickC Versions 1.00 and 1.01 do not support the huge keyword or the
 	huge-memory model.
+
+{% endraw %}

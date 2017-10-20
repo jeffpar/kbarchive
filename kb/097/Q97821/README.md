@@ -6,6 +6,8 @@ permalink: /kb/097/Q97821/
 
 ## Q97821: How Encrypted Passwords Are Validated from Workstations
 
+{% raw %}
+
 	Article: Q97821
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/097/Q97821/
 	
 	=============================================================================
 	
+
+{% endraw %}

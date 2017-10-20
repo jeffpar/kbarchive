@@ -6,6 +6,8 @@ permalink: /kb/135/Q135216/
 
 ## Q135216: Changing Folder or Printer Name Loses Shared Status
 
+{% raw %}
+
 	Article: Q135216
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -47,3 +49,5 @@ permalink: /kb/135/Q135216/
 	
 	=============================================================================
 	
+
+{% endraw %}

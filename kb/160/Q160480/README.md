@@ -6,6 +6,8 @@ permalink: /kb/160/Q160480/
 
 ## Q160480: Encarta 97: &quot;Dynalink&quot; Error Message Starting Word or Excel
 
+{% raw %}
+
 	Article: Q160480
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11,5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/160/Q160480/
 	
 	=============================================================================
 	
+
+{% endraw %}

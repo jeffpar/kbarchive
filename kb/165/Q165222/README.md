@@ -6,6 +6,8 @@ permalink: /kb/165/Q165222/
 
 ## Q165222: Application Violation Error Occurs on Windows 95 Client
 
+{% raw %}
+
 	Article: Q165222
 	Product(s): Microsoft SNA Server
 	Version(s): winnt:3.0,4.0
@@ -76,3 +78,5 @@ permalink: /kb/165/Q165222/
 	
 	=============================================================================
 	
+
+{% endraw %}

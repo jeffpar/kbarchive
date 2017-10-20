@@ -6,6 +6,8 @@ permalink: /kb/206/Q206596/
 
 ## Q206596: WD97: Bulleted or Numbered Style Shows Additional Tab Stop
 
+{% raw %}
+
 	Article: Q206596
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -129,3 +131,5 @@ permalink: /kb/206/Q206596/
 	
 	=============================================================================
 	
+
+{% endraw %}

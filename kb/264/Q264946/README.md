@@ -6,6 +6,8 @@ permalink: /kb/264/Q264946/
 
 ## Q264946: PRB: Bandwidth Leak of USB Device on Surprise Removal
 
+{% raw %}
+
 	Article: Q264946
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/264/Q264946/
 	
 	=============================================================================
 	
+
+{% endraw %}

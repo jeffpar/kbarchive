@@ -6,6 +6,8 @@ permalink: /kb/195/Q195338/
 
 ## Q195338: FreeDoc Feature Not Supported In Outlook Web Access
 
+{% raw %}
+
 	Article: Q195338
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 SP5,5.5
@@ -96,3 +98,5 @@ permalink: /kb/195/Q195338/
 	
 	=============================================================================
 	
+
+{% endraw %}

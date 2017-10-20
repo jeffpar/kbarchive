@@ -6,6 +6,8 @@ permalink: /kb/138/Q138941/
 
 ## Q138941: Microsoft Plus! Incorrectly Allows Setup to Network Drive
 
+{% raw %}
+
 	Article: Q138941
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -49,3 +51,5 @@ permalink: /kb/138/Q138941/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263924/
 
 ## Q263924: Message Transfer Agent Slows Down and CPU Usage Increases
 
+{% raw %}
+
 	Article: Q263924
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -77,3 +79,5 @@ permalink: /kb/263/Q263924/
 	
 	=============================================================================
 	
+
+{% endraw %}

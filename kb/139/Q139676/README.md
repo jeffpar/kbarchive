@@ -6,6 +6,8 @@ permalink: /kb/139/Q139676/
 
 ## Q139676: Finding Out Who Has Locked the SNA Server Configuration File
 
+{% raw %}
+
 	Article: Q139676
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -98,3 +100,5 @@ permalink: /kb/139/Q139676/
 	
 	=============================================================================
 	
+
+{% endraw %}

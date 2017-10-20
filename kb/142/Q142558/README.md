@@ -6,6 +6,8 @@ permalink: /kb/142/Q142558/
 
 ## Q142558: Adding Mime Types to Internet Information Server
 
+{% raw %}
+
 	Article: Q142558
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -94,3 +96,5 @@ permalink: /kb/142/Q142558/
 	
 	=============================================================================
 	
+
+{% endraw %}

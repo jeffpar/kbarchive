@@ -6,6 +6,8 @@ permalink: /kb/180/Q180027/
 
 ## Q180027: Troubleshooting: How to Remove and Reinstall a Program
 
+{% raw %}
+
 	Article: Q180027
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:95
@@ -99,3 +101,5 @@ permalink: /kb/180/Q180027/
 	
 	=============================================================================
 	
+
+{% endraw %}

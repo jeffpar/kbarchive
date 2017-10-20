@@ -6,6 +6,8 @@ permalink: /kb/108/Q108283/
 
 ## Q108283: FIX: F1001 in codegen.c with IMPLICIT COMPLEX
 
+{% raw %}
+
 	Article: Q108283
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/108/Q108283/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236788/
 
 ## Q236788: XIMS: URL Not Formatted Properly in IMAP Referral Response
 
+{% raw %}
+
 	Article: Q236788
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -82,3 +84,5 @@ permalink: /kb/236/Q236788/
 	
 	=============================================================================
 	
+
+{% endraw %}

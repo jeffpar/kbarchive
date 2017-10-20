@@ -6,6 +6,8 @@ permalink: /kb/175/Q175501/
 
 ## Q175501: BUG: RichTextBox Horizontal Scroll Bar Does Not Always Appear
 
+{% raw %}
+
 	Article: Q175501
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -192,3 +194,5 @@ permalink: /kb/175/Q175501/
 	
 	=============================================================================
 	
+
+{% endraw %}

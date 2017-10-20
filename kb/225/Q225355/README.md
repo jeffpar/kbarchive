@@ -6,6 +6,8 @@ permalink: /kb/225/Q225355/
 
 ## Q225355: Err Msg: Unable to Find the Magic School Bus Animals Files...
 
+{% raw %}
+
 	Article: Q225355
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -138,3 +140,5 @@ permalink: /kb/225/Q225355/
 	
 	=============================================================================
 	
+
+{% endraw %}

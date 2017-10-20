@@ -6,6 +6,8 @@ permalink: /kb/128/Q128591/
 
 ## Q128591: Encarta Err Msg: MindMaze Cannot Play Game Music
 
+{% raw %}
+
 	Article: Q128591
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition
@@ -107,3 +109,5 @@ permalink: /kb/128/Q128591/
 	
 	=============================================================================
 	
+
+{% endraw %}

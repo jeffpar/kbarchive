@@ -6,6 +6,8 @@ permalink: /kb/179/Q179267/
 
 ## Q179267: FP97: 32-bit TCP/IP Missing Error After Installing Winsock 2.0
 
+{% raw %}
+
 	Article: Q179267
 	Product(s): Word Front Page
 	Version(s): 
@@ -110,3 +112,5 @@ permalink: /kb/179/Q179267/
 	
 	=============================================================================
 	
+
+{% endraw %}

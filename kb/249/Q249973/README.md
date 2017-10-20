@@ -6,6 +6,8 @@ permalink: /kb/249/Q249973/
 
 ## Q249973: MS00-005: Default RTF File Viewer Interrupts Normal Program Proc
 
+{% raw %}
+
 	Article: Q249973
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -189,3 +191,5 @@ permalink: /kb/249/Q249973/
 	
 	=============================================================================
 	
+
+{% endraw %}

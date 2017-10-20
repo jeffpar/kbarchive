@@ -6,6 +6,8 @@ permalink: /kb/099/Q99283/
 
 ## Q99283: Clean Boot Procedure with CD-ROM Drive
 
+{% raw %}
+
 	Article: Q99283
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/099/Q99283/
 	
 	=============================================================================
 	
+
+{% endraw %}

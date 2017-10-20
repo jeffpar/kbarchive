@@ -6,6 +6,8 @@ permalink: /kb/169/Q169541/
 
 ## Q169541: WD97: Multiple Cover Pages Sent When Using Fax Wizard
 
+{% raw %}
+
 	Article: Q169541
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:95,97
@@ -108,3 +110,5 @@ permalink: /kb/169/Q169541/
 	
 	=============================================================================
 	
+
+{% endraw %}

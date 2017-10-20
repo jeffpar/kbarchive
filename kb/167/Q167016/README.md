@@ -6,6 +6,8 @@ permalink: /kb/167/Q167016/
 
 ## Q167016: Lexmark Optra C Series Printer Incorrectly Presents Duplex Optio
 
+{% raw %}
+
 	Article: Q167016
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/167/Q167016/
 	
 	=============================================================================
 	
+
+{% endraw %}

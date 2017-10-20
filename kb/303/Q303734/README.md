@@ -6,6 +6,8 @@ permalink: /kb/303/Q303734/
 
 ## Q303734: HOW TO: Configure the SMTP Virtual Server for Message Delivery
 
+{% raw %}
+
 	Article: Q303734
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -204,3 +206,5 @@ permalink: /kb/303/Q303734/
 	
 	=============================================================================
 	
+
+{% endraw %}

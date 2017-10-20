@@ -6,6 +6,8 @@ permalink: /kb/074/Q74196/
 
 ## Q74196: EDIT.COM Will Convert Eight Spaces to a Tab in Some Cases
 
+{% raw %}
+
 	Article: Q74196
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -68,3 +70,5 @@ permalink: /kb/074/Q74196/
 	
 	=============================================================================
 	
+
+{% endraw %}

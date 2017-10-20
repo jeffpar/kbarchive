@@ -6,6 +6,8 @@ permalink: /kb/075/Q75497/
 
 ## Q75497: Writing Embedded Applications for Microsoft Windows
 
+{% raw %}
+
 	Article: Q75497
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -86,3 +88,5 @@ permalink: /kb/075/Q75497/
 	
 	=============================================================================
 	
+
+{% endraw %}

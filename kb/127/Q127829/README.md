@@ -6,6 +6,8 @@ permalink: /kb/127/Q127829/
 
 ## Q127829: Automap Road Atlas Err Msg: Cannot Find an Existing Version...
 
+{% raw %}
+
 	Article: Q127829
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/127/Q127829/
 	
 	=============================================================================
 	
+
+{% endraw %}

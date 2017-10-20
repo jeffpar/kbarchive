@@ -6,6 +6,8 @@ permalink: /kb/150/Q150380/
 
 ## Q150380: PRB: Sizeof Constant Character Returns Different Values
 
+{% raw %}
+
 	Article: Q150380
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1
@@ -62,3 +64,5 @@ permalink: /kb/150/Q150380/
 	
 	=============================================================================
 	
+
+{% endraw %}

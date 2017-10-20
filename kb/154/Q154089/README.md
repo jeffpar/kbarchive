@@ -6,6 +6,8 @@ permalink: /kb/154/Q154089/
 
 ## Q154089: XCLN: Cannot Send Sealed Message when Offline
 
+{% raw %}
+
 	Article: Q154089
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/154/Q154089/
 	
 	=============================================================================
 	
+
+{% endraw %}

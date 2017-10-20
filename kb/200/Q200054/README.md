@@ -6,6 +6,8 @@ permalink: /kb/200/Q200054/
 
 ## Q200054: PRB: OnTimer() Is Not Called Repeatedly for a List Control
 
+{% raw %}
+
 	Article: Q200054
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -104,3 +106,5 @@ permalink: /kb/200/Q200054/
 	
 	=============================================================================
 	
+
+{% endraw %}

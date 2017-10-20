@@ -6,6 +6,8 @@ permalink: /kb/135/Q135190/
 
 ## Q135190: Part of the Paint Window May Be Offscreen When Tiled
 
+{% raw %}
+
 	Article: Q135190
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/135/Q135190/
 	
 	=============================================================================
 	
+
+{% endraw %}

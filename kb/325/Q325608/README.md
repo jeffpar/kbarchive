@@ -6,6 +6,8 @@ permalink: /kb/325/Q325608/
 
 ## Q325608: PRB: Authentication Delegation Through Kerberos Does Not Work
 
+{% raw %}
+
 	Article: Q325608
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -87,3 +89,5 @@ permalink: /kb/325/Q325608/
 	
 	=============================================================================
 	
+
+{% endraw %}

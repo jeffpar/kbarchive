@@ -6,6 +6,8 @@ permalink: /kb/086/Q86776/
 
 ## Q86776: How to Use a Linked Paintbrush Object with OLECLIEN.VBX
 
+{% raw %}
+
 	Article: Q86776
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0
@@ -103,3 +105,5 @@ permalink: /kb/086/Q86776/
 	
 	=============================================================================
 	
+
+{% endraw %}

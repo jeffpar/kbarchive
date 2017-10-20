@@ -6,6 +6,8 @@ permalink: /kb/120/Q120789/
 
 ## Q120789: Banyan Vines Utility PCCONFIG.EXE
 
+{% raw %}
+
 	Article: Q120789
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -49,3 +51,5 @@ permalink: /kb/120/Q120789/
 	
 	=============================================================================
 	
+
+{% endraw %}

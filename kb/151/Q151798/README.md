@@ -6,6 +6,8 @@ permalink: /kb/151/Q151798/
 
 ## Q151798: How To Prevent the VFP Desktop from Appearing at Startup
 
+{% raw %}
+
 	Article: Q151798
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -52,3 +54,5 @@ permalink: /kb/151/Q151798/
 	
 	=============================================================================
 	
+
+{% endraw %}

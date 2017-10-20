@@ -6,6 +6,8 @@ permalink: /kb/149/Q149776/
 
 ## Q149776: BUG: BACKSPACE Key Doesn't Reset Matching on DBList or DBCombo
 
+{% raw %}
+
 	Article: Q149776
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/149/Q149776/
 	
 	=============================================================================
 	
+
+{% endraw %}

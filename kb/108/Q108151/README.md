@@ -6,6 +6,8 @@ permalink: /kb/108/Q108151/
 
 ## Q108151: IBM ValuePoint with BIOS Date 4/29/93 Hangs at Logo Screen
 
+{% raw %}
+
 	Article: Q108151
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -82,3 +84,5 @@ permalink: /kb/108/Q108151/
 	
 	=============================================================================
 	
+
+{% endraw %}

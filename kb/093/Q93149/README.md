@@ -6,6 +6,8 @@ permalink: /kb/093/Q93149/
 
 ## Q93149: Vocal Eyes Does Not Read Screen in MS-DOS Session
 
+{% raw %}
+
 	Article: Q93149
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/093/Q93149/
 	
 	=============================================================================
 	
+
+{% endraw %}

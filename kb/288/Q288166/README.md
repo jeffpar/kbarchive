@@ -6,6 +6,8 @@ permalink: /kb/288/Q288166/
 
 ## Q288166: XCON: MTA Stops Delivering from Certain Queues After Event 2187
 
+{% raw %}
+
 	Article: Q288166
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP4
@@ -126,3 +128,5 @@ permalink: /kb/288/Q288166/
 	
 	=============================================================================
 	
+
+{% endraw %}

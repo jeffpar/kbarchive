@@ -6,6 +6,8 @@ permalink: /kb/149/Q149373/
 
 ## Q149373: XCLN: New Profile Defaults to Emptying Deleted Items folder
 
+{% raw %}
+
 	Article: Q149373
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/149/Q149373/
 	
 	=============================================================================
 	
+
+{% endraw %}

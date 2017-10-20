@@ -6,6 +6,8 @@ permalink: /kb/217/Q217757/
 
 ## Q217757: INF: Default Schema to be Used with ODBC Driver for DB2 and OLE
 
+{% raw %}
+
 	Article: Q217757
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -48,3 +50,5 @@ permalink: /kb/217/Q217757/
 	
 	=============================================================================
 	
+
+{% endraw %}

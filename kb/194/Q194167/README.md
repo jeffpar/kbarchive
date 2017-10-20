@@ -6,6 +6,8 @@ permalink: /kb/194/Q194167/
 
 ## Q194167: Encarta: Description of Compound Interest InterActivity
 
+{% raw %}
+
 	Article: Q194167
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -59,3 +61,5 @@ permalink: /kb/194/Q194167/
 	
 	=============================================================================
 	
+
+{% endraw %}

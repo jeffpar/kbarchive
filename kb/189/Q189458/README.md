@@ -6,6 +6,8 @@ permalink: /kb/189/Q189458/
 
 ## Q189458: INFO: Third Party Utility Repairs FoxPro Record and Memo Data
 
+{% raw %}
+
 	Article: Q189458
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a; MS-DOS:2.6a; WINDOWS:2.6a,3.0,3.0b,5.0,5.0a
@@ -103,3 +105,5 @@ permalink: /kb/189/Q189458/
 	
 	=============================================================================
 	
+
+{% endraw %}

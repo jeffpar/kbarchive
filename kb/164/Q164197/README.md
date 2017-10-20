@@ -6,6 +6,8 @@ permalink: /kb/164/Q164197/
 
 ## Q164197: Writer 2: How to Remove Clip Art from My Clipart
 
+{% raw %}
+
 	Article: Q164197
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -68,3 +70,5 @@ permalink: /kb/164/Q164197/
 	
 	=============================================================================
 	
+
+{% endraw %}

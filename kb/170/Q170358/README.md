@@ -6,6 +6,8 @@ permalink: /kb/170/Q170358/
 
 ## Q170358: PRB: Masked Edit May Not Show Empty When Bound Field is Null
 
+{% raw %}
+
 	Article: Q170358
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0 5.0
@@ -187,3 +189,5 @@ permalink: /kb/170/Q170358/
 	
 	=============================================================================
 	
+
+{% endraw %}

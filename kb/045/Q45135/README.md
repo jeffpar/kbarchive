@@ -6,6 +6,8 @@ permalink: /kb/045/Q45135/
 
 ## Q45135: Cannot Open Source File Under CVP
 
+{% raw %}
+
 	Article: Q45135
 	Product(s): See article
 	Version(s): 2.20
@@ -35,3 +37,5 @@ permalink: /kb/045/Q45135/
 	Microsoft has confirmed this to be a problem with CodeView versions
 	2.20 and 2.30. We are researching this problem and will post new
 	information as it becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128456/
 
 ## Q128456: PCM and PGC Fail to Execute Package from Servers with Long Name
 
+{% raw %}
+
 	Article: Q128456
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -66,3 +68,5 @@ permalink: /kb/128/Q128456/
 	
 	=============================================================================
 	
+
+{% endraw %}

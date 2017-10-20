@@ -6,6 +6,8 @@ permalink: /kb/118/Q118528/
 
 ## Q118528: PC Gen: Mail Client Polling Defaults and How to Reset Them
 
+{% raw %}
+
 	Article: Q118528
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -68,3 +70,5 @@ permalink: /kb/118/Q118528/
 	
 	=============================================================================
 	
+
+{% endraw %}

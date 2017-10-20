@@ -6,6 +6,8 @@ permalink: /kb/126/Q126021/
 
 ## Q126021: How to Access Help Screen in Haunted House
 
+{% raw %}
+
 	Article: Q126021
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/126/Q126021/
 	
 	=============================================================================
 	
+
+{% endraw %}

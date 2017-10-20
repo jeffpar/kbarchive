@@ -6,6 +6,8 @@ permalink: /kb/028/Q28160/
 
 ## Q28160: QB /L A: Does Not Find QB.QLB If SET LIB=A: Is Not Set
 
+{% raw %}
+
 	Article: Q28160
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -37,3 +39,5 @@ permalink: /kb/028/Q28160/
 	   the DOS command line before running QB /L:
 	
 	      SET LIB=A:
+
+{% endraw %}

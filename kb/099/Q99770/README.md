@@ -6,6 +6,8 @@ permalink: /kb/099/Q99770/
 
 ## Q99770: Third-Party Support Needed to Print to SCSI Printers
 
+{% raw %}
+
 	Article: Q99770
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,4.0
@@ -39,3 +41,5 @@ permalink: /kb/099/Q99770/
 	
 	=============================================================================
 	
+
+{% endraw %}

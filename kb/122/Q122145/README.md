@@ -6,6 +6,8 @@ permalink: /kb/122/Q122145/
 
 ## Q122145: Minimized Excel Workbooks Disappear When Resizing the Window
 
+{% raw %}
+
 	Article: Q122145
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -51,3 +53,5 @@ permalink: /kb/122/Q122145/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85540/
 
 ## Q85540: Sending a Break Sequence in Terminal
 
+{% raw %}
+
 	Article: Q85540
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -36,3 +38,5 @@ permalink: /kb/085/Q85540/
 	
 	=============================================================================
 	
+
+{% endraw %}

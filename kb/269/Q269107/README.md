@@ -6,6 +6,8 @@ permalink: /kb/269/Q269107/
 
 ## Q269107: Fax Service Is Missing After Upgrade from Windows NT Workstation
 
+{% raw %}
+
 	Article: Q269107
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000
@@ -80,3 +82,5 @@ permalink: /kb/269/Q269107/
 	
 	=============================================================================
 	
+
+{% endraw %}

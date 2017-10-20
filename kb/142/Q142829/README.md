@@ -6,6 +6,8 @@ permalink: /kb/142/Q142829/
 
 ## Q142829: BUG: DBGrid Align Before Retrieve Fields Causes Hidden Data
 
+{% raw %}
+
 	Article: Q142829
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -95,3 +97,5 @@ permalink: /kb/142/Q142829/
 	
 	=============================================================================
 	
+
+{% endraw %}

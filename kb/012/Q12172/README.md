@@ -6,6 +6,8 @@ permalink: /kb/012/Q12172/
 
 ## Q12172: HOWTO: How to Change a Window's Parent
 
+{% raw %}
+
 	Article: Q12172
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/012/Q12172/
 	
 	=============================================================================
 	
+
+{% endraw %}

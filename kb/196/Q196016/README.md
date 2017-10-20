@@ -6,6 +6,8 @@ permalink: /kb/196/Q196016/
 
 ## Q196016: XWEB: Outlook Web Access Fails Intermittently
 
+{% raw %}
+
 	Article: Q196016
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -134,3 +136,5 @@ permalink: /kb/196/Q196016/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146274/
 
 ## Q146274: INFO: Limitation of SNA Server Client Using Network Client 3.0
 
+{% raw %}
+
 	Article: Q146274
 	Product(s): Microsoft SNA Server
 	Version(s): MS-DOS:3.0; WINDOWS:2.0,2.1,2.11 SP1;2.11 SP2,3.0 (all SP),4.0,4.0 SP1,4.0 SP2
@@ -99,3 +101,5 @@ permalink: /kb/146/Q146274/
 	
 	=============================================================================
 	
+
+{% endraw %}

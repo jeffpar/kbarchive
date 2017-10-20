@@ -6,6 +6,8 @@ permalink: /kb/259/Q259052/
 
 ## Q259052: Availability of Encarta Online &amp; Description of Support Options
 
+{% raw %}
+
 	Article: Q259052
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -162,3 +164,5 @@ permalink: /kb/259/Q259052/
 	
 	=============================================================================
 	
+
+{% endraw %}

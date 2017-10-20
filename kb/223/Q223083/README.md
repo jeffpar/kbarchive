@@ -6,6 +6,8 @@ permalink: /kb/223/Q223083/
 
 ## Q223083: FIX: Changes to MSHFlexgrid Adding/Removing Records Not Vis
 
+{% raw %}
+
 	Article: Q223083
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -93,3 +95,5 @@ permalink: /kb/223/Q223083/
 	
 	=============================================================================
 	
+
+{% endraw %}

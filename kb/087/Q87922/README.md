@@ -6,6 +6,8 @@ permalink: /kb/087/Q87922/
 
 ## Q87922: CodeView Gives &quot;Bad DLL Format in 'Filename'&quot;
 
+{% raw %}
+
 	Article: Q87922
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/087/Q87922/
 	
 	=============================================================================
 	
+
+{% endraw %}

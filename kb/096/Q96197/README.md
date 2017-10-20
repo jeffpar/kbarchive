@@ -6,6 +6,8 @@ permalink: /kb/096/Q96197/
 
 ## Q96197: Cannot See Dell Partitions After Upgrading to MS-DOS
 
+{% raw %}
+
 	Article: Q96197
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -58,3 +60,5 @@ permalink: /kb/096/Q96197/
 	
 	=============================================================================
 	
+
+{% endraw %}

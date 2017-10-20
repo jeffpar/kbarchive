@@ -6,6 +6,8 @@ permalink: /kb/191/Q191593/
 
 ## Q191593: BUG: ALTER TABLE Causes Memo File is Missing or Invalid Err
 
+{% raw %}
+
 	Article: Q191593
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -66,3 +68,5 @@ permalink: /kb/191/Q191593/
 	
 	=============================================================================
 	
+
+{% endraw %}

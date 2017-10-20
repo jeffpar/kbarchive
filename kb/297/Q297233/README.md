@@ -6,6 +6,8 @@ permalink: /kb/297/Q297233/
 
 ## Q297233: Single MSN Internet Access Account On Two Computers--Connectivit
 
+{% raw %}
+
 	Article: Q297233
 	Product(s): The Microsoft Network
 	Version(s): 1.0,1.05,1.2,1.3,2.0,2.5,2.5 (OEM Release),2.51,2.52,2.6,5.0,5.1,5.2,5.3,6.0,6.1
@@ -66,3 +68,5 @@ permalink: /kb/297/Q297233/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/238/Q238529/
 
 ## Q238529: Response Truncated for PUT Sent to Port Other Than 80 or 443
 
+{% raw %}
+
 	Article: Q238529
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -130,3 +132,5 @@ permalink: /kb/238/Q238529/
 	
 	=============================================================================
 	
+
+{% endraw %}

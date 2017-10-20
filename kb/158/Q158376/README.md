@@ -6,6 +6,8 @@ permalink: /kb/158/Q158376/
 
 ## Q158376: &quot;Stop 0xc000021a&quot; During Setup
 
+{% raw %}
+
 	Article: Q158376
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/158/Q158376/
 	
 	=============================================================================
 	
+
+{% endraw %}

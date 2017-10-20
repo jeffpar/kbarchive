@@ -6,6 +6,8 @@ permalink: /kb/171/Q171906/
 
 ## Q171906: MSN Program Viewer Does Not Display Pictures on Web Pages
 
+{% raw %}
+
 	Article: Q171906
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5,95
@@ -69,3 +71,5 @@ permalink: /kb/171/Q171906/
 	
 	=============================================================================
 	
+
+{% endraw %}

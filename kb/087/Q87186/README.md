@@ -6,6 +6,8 @@ permalink: /kb/087/Q87186/
 
 ## Q87186: PROFS: Using Microsoft Comm Server and the PROFS Gateway
 
+{% raw %}
+
 	Article: Q87186
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -62,3 +64,5 @@ permalink: /kb/087/Q87186/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240927/
 
 ## Q240927: FIX: Cannot Read Source File Error Running PDW Distribution
 
+{% raw %}
+
 	Article: Q240927
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -87,3 +89,5 @@ permalink: /kb/240/Q240927/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167599/
 
 ## Q167599: 8 x 16 TrueType Font for MS-DOS Not Available
 
+{% raw %}
+
 	Article: Q167599
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/167/Q167599/
 	
 	=============================================================================
 	
+
+{% endraw %}

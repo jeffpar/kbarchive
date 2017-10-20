@@ -6,6 +6,8 @@ permalink: /kb/125/Q125729/
 
 ## Q125729: PRB: Pre-Built STDREG.EXE Works Incorrectly
 
+{% raw %}
+
 	Article: Q125729
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1
@@ -62,3 +64,5 @@ permalink: /kb/125/Q125729/
 	
 	=============================================================================
 	
+
+{% endraw %}

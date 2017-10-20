@@ -6,6 +6,8 @@ permalink: /kb/156/Q156962/
 
 ## Q156962: XFOR: Problem with BCC Line in Messages from AppleTalk Mail
 
+{% raw %}
+
 	Article: Q156962
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/156/Q156962/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/042/Q42666/
 
 ## Q42666: QB.EXE &quot;Type Mismatch&quot;, BC.EXE &quot;String Expression Required&quot;
 
+{% raw %}
+
 	Article: Q42666
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/042/Q42666/
 	The following is the necessary correction to follow proper syntax:
 	
 	   OPEN "FILE.DAT" FOR RANDOM AS #1 LEN = 20
+
+{% endraw %}

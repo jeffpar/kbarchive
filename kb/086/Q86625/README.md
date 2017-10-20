@@ -6,6 +6,8 @@ permalink: /kb/086/Q86625/
 
 ## Q86625: PC Adm: Err Msg: This Post Office Is a Hub for Other...
 
+{% raw %}
+
 	Article: Q86625
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -137,3 +139,5 @@ permalink: /kb/086/Q86625/
 	
 	=============================================================================
 	
+
+{% endraw %}

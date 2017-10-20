@@ -6,6 +6,8 @@ permalink: /kb/065/Q65267/
 
 ## Q65267: Setting the Default Directory for Windows Applications
 
+{% raw %}
+
 	Article: Q65267
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -94,3 +96,5 @@ permalink: /kb/065/Q65267/
 	
 	=============================================================================
 	
+
+{% endraw %}

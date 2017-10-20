@@ -6,6 +6,8 @@ permalink: /kb/151/Q151980/
 
 ## Q151980: SMS: Error Trying to Remote Control a French Windows NT Client
 
+{% raw %}
+
 	Article: Q151980
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -110,3 +112,5 @@ permalink: /kb/151/Q151980/
 	
 	=============================================================================
 	
+
+{% endraw %}

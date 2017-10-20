@@ -6,6 +6,8 @@ permalink: /kb/138/Q138706/
 
 ## Q138706: Files installed by Visual FoxPro Professional in Windows NT
 
+{% raw %}
+
 	Article: Q138706
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -135,3 +137,5 @@ permalink: /kb/138/Q138706/
 	
 	=============================================================================
 	
+
+{% endraw %}

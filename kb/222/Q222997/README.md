@@ -6,6 +6,8 @@ permalink: /kb/222/Q222997/
 
 ## Q222997: XADM: Importing a Large CSV Hangs and Eventually Consumes All Me
 
+{% raw %}
+
 	Article: Q222997
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -87,3 +89,5 @@ permalink: /kb/222/Q222997/
 	
 	=============================================================================
 	
+
+{% endraw %}

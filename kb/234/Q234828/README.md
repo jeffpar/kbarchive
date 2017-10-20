@@ -6,6 +6,8 @@ permalink: /kb/234/Q234828/
 
 ## Q234828: MOD2000: Confusing Error Adding Project to Visual SourceSafe
 
+{% raw %}
+
 	Article: Q234828
 	Product(s): Microsoft SourceSafe
 	Version(s): ; WINDOWS:6.0
@@ -70,3 +72,5 @@ permalink: /kb/234/Q234828/
 	
 	=============================================================================
 	
+
+{% endraw %}

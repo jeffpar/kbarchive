@@ -6,6 +6,8 @@ permalink: /kb/104/Q104524/
 
 ## Q104524: Incorrect Syntax for DOSSHELL.INI in MS-DOS Shell Help
 
+{% raw %}
+
 	Article: Q104524
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -51,3 +53,5 @@ permalink: /kb/104/Q104524/
 	
 	=============================================================================
 	
+
+{% endraw %}

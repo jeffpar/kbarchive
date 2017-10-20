@@ -6,6 +6,8 @@ permalink: /kb/149/Q149403/
 
 ## Q149403: XADM: Logon failure During Exchange Server Installation
 
+{% raw %}
+
 	Article: Q149403
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -68,3 +70,5 @@ permalink: /kb/149/Q149403/
 	
 	=============================================================================
 	
+
+{% endraw %}

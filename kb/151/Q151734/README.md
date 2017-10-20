@@ -6,6 +6,8 @@ permalink: /kb/151/Q151734/
 
 ## Q151734: MSB Earth: Can't Enter Name in High Score Table
 
+{% raw %}
+
 	Article: Q151734
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/151/Q151734/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120963/
 
 ## Q120963: PRB: ON KEY LABEL CMD+&lt;Key_Name&gt; Causes &quot;Syntax Error&quot;
 
+{% raw %}
+
 	Article: Q120963
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a,3.0b
@@ -69,3 +71,5 @@ permalink: /kb/120/Q120963/
 	
 	=============================================================================
 	
+
+{% endraw %}

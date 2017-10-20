@@ -6,6 +6,8 @@ permalink: /kb/051/Q51415/
 
 ## Q51415: PDS 7.00 Alert FUNCTION Return Value Description Incorrect
 
+{% raw %}
+
 	Article: Q51415
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -35,3 +37,5 @@ permalink: /kb/051/Q51415/
 	
 	The dollar sign ($) appended to "variablename" should be a percent
 	sign (%) because the Alert FUNCTION returns an integer.
+
+{% endraw %}

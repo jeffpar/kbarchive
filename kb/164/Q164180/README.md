@@ -6,6 +6,8 @@ permalink: /kb/164/Q164180/
 
 ## Q164180: Full App Event Log Prevents Virtual Root Enumeration &amp; Indexing
 
+{% raw %}
+
 	Article: Q164180
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/164/Q164180/
 	
 	=============================================================================
 	
+
+{% endraw %}

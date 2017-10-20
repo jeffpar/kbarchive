@@ -6,6 +6,8 @@ permalink: /kb/130/Q130541/
 
 ## Q130541: PCMCIA Modem Does Not Emit Sound When Dialing
 
+{% raw %}
+
 	Article: Q130541
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -43,3 +45,5 @@ permalink: /kb/130/Q130541/
 	
 	=============================================================================
 	
+
+{% endraw %}

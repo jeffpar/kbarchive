@@ -6,6 +6,8 @@ permalink: /kb/279/Q279618/
 
 ## Q279618: XFOR:  How to Move Directory Replication to a Site Connector
 
+{% raw %}
+
 	Article: Q279618
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -59,3 +61,5 @@ permalink: /kb/279/Q279618/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/287/Q287888/
 
 ## Q287888: XADM: Corrupted Message-ID Text
 
+{% raw %}
+
 	Article: Q287888
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/287/Q287888/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189170/
 
 ## Q189170: HOWTO: Package HiWord/LoWord Values Into a Long Parameter
 
+{% raw %}
+
 	Article: Q189170
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -144,3 +146,5 @@ permalink: /kb/189/Q189170/
 	
 	=============================================================================
 	
+
+{% endraw %}

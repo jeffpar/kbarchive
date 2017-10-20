@@ -6,6 +6,8 @@ permalink: /kb/101/Q101797/
 
 ## Q101797: PRB: &quot;Missing Operand&quot; Error Using a Database in FoxCentral
 
+{% raw %}
+
 	Article: Q101797
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -67,3 +69,5 @@ permalink: /kb/101/Q101797/
 	
 	=============================================================================
 	
+
+{% endraw %}

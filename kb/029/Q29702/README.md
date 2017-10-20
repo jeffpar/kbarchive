@@ -6,6 +6,8 @@ permalink: /kb/029/Q29702/
 
 ## Q29702: Mouse MREADME.DOC: Single Drive PCs
 
+{% raw %}
+
 	Article: Q29702
 	Product(s): See article
 	Version(s): 1.00
@@ -37,3 +39,5 @@ permalink: /kb/029/Q29702/
 	
 	   For more information on this subject, see the "What the MSETUP
 	Program Does" section of the "Microsoft Mouse User's Guide."
+
+{% endraw %}

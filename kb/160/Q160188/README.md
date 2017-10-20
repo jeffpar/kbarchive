@@ -6,6 +6,8 @@ permalink: /kb/160/Q160188/
 
 ## Q160188: Misleading Error 692 with RAS if HyperTerminal Owns COM Port
 
+{% raw %}
+
 	Article: Q160188
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/160/Q160188/
 	
 	=============================================================================
 	
+
+{% endraw %}

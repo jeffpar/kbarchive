@@ -6,6 +6,8 @@ permalink: /kb/168/Q168585/
 
 ## Q168585: Stop C000021A After Re-Applying Windows NT v4.0 SP1
 
+{% raw %}
+
 	Article: Q168585
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/168/Q168585/
 	
 	=============================================================================
 	
+
+{% endraw %}

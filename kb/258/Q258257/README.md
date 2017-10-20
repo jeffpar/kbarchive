@@ -6,6 +6,8 @@ permalink: /kb/258/Q258257/
 
 ## Q258257: XADM: How to Verify Object-Version When Troubleshooting DIR_REP
 
+{% raw %}
+
 	Article: Q258257
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -134,3 +136,5 @@ permalink: /kb/258/Q258257/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135164/
 
 ## Q135164: SLIP Connection: Ping Works, Other Programs Do Not
 
+{% raw %}
+
 	Article: Q135164
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -60,3 +62,5 @@ permalink: /kb/135/Q135164/
 	
 	=============================================================================
 	
+
+{% endraw %}

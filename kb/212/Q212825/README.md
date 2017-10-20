@@ -6,6 +6,8 @@ permalink: /kb/212/Q212825/
 
 ## Q212825: SMS: GPF: &quot;Initialization of CRYPT32.DLL Failed&quot;
 
+{% raw %}
+
 	Article: Q212825
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -69,3 +71,5 @@ permalink: /kb/212/Q212825/
 	
 	=============================================================================
 	
+
+{% endraw %}

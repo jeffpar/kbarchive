@@ -6,6 +6,8 @@ permalink: /kb/162/Q162565/
 
 ## Q162565: How to Install CSNW or GSNW from Floppy Disks for Windows NT 4.0
 
+{% raw %}
+
 	Article: Q162565
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -142,3 +144,5 @@ permalink: /kb/162/Q162565/
 	
 	=============================================================================
 	
+
+{% endraw %}

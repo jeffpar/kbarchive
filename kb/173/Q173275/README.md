@@ -6,6 +6,8 @@ permalink: /kb/173/Q173275/
 
 ## Q173275: WD97: EMF Graphic Missing When You Open Document
 
+{% raw %}
+
 	Article: Q173275
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/173/Q173275/
 	
 	=============================================================================
 	
+
+{% endraw %}

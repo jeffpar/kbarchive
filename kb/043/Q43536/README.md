@@ -6,6 +6,8 @@ permalink: /kb/043/Q43536/
 
 ## Q43536: Using _getvideoconfig for Analog Monitors
 
+{% raw %}
+
 	Article: Q43536
 	Product(s): See article
 	Version(s): 5.10
@@ -25,3 +27,5 @@ permalink: /kb/043/Q43536/
 	There are two additional manifest constants defined in the new
 	GRAPH.H: _ANALOGCOLOR (defined to be 0x0010) and _ANALOGMONO
 	(0x0008).
+
+{% endraw %}

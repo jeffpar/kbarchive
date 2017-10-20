@@ -6,6 +6,8 @@ permalink: /kb/184/Q184562/
 
 ## Q184562: Internet Information Server ResKit Comments and Corrections
 
+{% raw %}
+
 	Article: Q184562
 	Product(s): Microsoft Press
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/184/Q184562/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164884/
 
 ## Q164884: Err Msg: Connection with Server Could Not Be Established
 
+{% raw %}
+
 	Article: Q164884
 	Product(s): Internet Information Server
 	Version(s): Winnt:1.0,2.0,3.0
@@ -63,3 +65,5 @@ permalink: /kb/164/Q164884/
 	
 	=============================================================================
 	
+
+{% endraw %}

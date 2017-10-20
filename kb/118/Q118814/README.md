@@ -6,6 +6,8 @@ permalink: /kb/118/Q118814/
 
 ## Q118814: DOCERR: Win32 APIs Callable from a QuickWin Application
 
+{% raw %}
+
 	Article: Q118814
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,4.0
@@ -83,3 +85,5 @@ permalink: /kb/118/Q118814/
 	
 	=============================================================================
 	
+
+{% endraw %}

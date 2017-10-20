@@ -6,6 +6,8 @@ permalink: /kb/197/Q197257/
 
 ## Q197257: PRB: Problems Using Subclassed TreeView MFC Control in VB
 
+{% raw %}
+
 	Article: Q197257
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0; winnt:5.0,6.0
@@ -190,3 +192,5 @@ permalink: /kb/197/Q197257/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/233/Q233774/
 
 ## Q233774: Access Violation Using Component Builder's Import COBOL Wizard
 
+{% raw %}
+
 	Article: Q233774
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -71,3 +73,5 @@ permalink: /kb/233/Q233774/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245235/
 
 ## Q245235: XADM: Running Performance Optimizer Resets Registry Values
 
+{% raw %}
+
 	Article: Q245235
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -70,3 +72,5 @@ permalink: /kb/245/Q245235/
 	
 	=============================================================================
 	
+
+{% endraw %}

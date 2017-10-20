@@ -6,6 +6,8 @@ permalink: /kb/306/Q306013/
 
 ## Q306013: FP: How to Import and Publish Web Site Created in Publisher
 
+{% raw %}
+
 	Article: Q306013
 	Product(s): Word Front Page
 	Version(s): 
@@ -155,3 +157,5 @@ permalink: /kb/306/Q306013/
 	
 	=============================================================================
 	
+
+{% endraw %}

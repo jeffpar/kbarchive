@@ -6,6 +6,8 @@ permalink: /kb/134/Q134859/
 
 ## Q134859: DriveSpace VxD and Real-Mode Driver Are Mismatched
 
+{% raw %}
+
 	Article: Q134859
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -128,3 +130,5 @@ permalink: /kb/134/Q134859/
 	
 	=============================================================================
 	
+
+{% endraw %}

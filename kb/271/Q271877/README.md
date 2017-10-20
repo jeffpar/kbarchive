@@ -6,6 +6,8 @@ permalink: /kb/271/Q271877/
 
 ## Q271877: BUG: ToolTips Do Not Follow Controls on Scrollable Form
 
+{% raw %}
+
 	Article: Q271877
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -146,3 +148,5 @@ permalink: /kb/271/Q271877/
 	
 	=============================================================================
 	
+
+{% endraw %}

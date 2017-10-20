@@ -6,6 +6,8 @@ permalink: /kb/160/Q160043/
 
 ## Q160043: Err Msg: Error Defragmenting Drive &lt;X&gt;. Windows Could Not...
 
+{% raw %}
+
 	Article: Q160043
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; Win2000:95
@@ -161,3 +163,5 @@ permalink: /kb/160/Q160043/
 	
 	=============================================================================
 	
+
+{% endraw %}

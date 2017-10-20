@@ -6,6 +6,8 @@ permalink: /kb/139/Q139964/
 
 ## Q139964: SAMPLE: How to List Directories on Entire Drive
 
+{% raw %}
+
 	Article: Q139964
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -214,3 +216,5 @@ permalink: /kb/139/Q139964/
 	
 	=============================================================================
 	
+
+{% endraw %}

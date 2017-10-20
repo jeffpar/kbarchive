@@ -6,6 +6,8 @@ permalink: /kb/159/Q159171/
 
 ## Q159171: XADM: Mailboxes Show Multiple Instances in Admin Resources Page
 
+{% raw %}
+
 	Article: Q159171
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/159/Q159171/
 	
 	=============================================================================
 	
+
+{% endraw %}

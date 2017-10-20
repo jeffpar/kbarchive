@@ -6,6 +6,8 @@ permalink: /kb/266/Q266737/
 
 ## Q266737: XCLN: Problems Creating Notes Connector Using Lotus Notes Client
 
+{% raw %}
+
 	Article: Q266737
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -69,3 +71,5 @@ permalink: /kb/266/Q266737/
 	
 	=============================================================================
 	
+
+{% endraw %}

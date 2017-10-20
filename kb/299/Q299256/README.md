@@ -6,6 +6,8 @@ permalink: /kb/299/Q299256/
 
 ## Q299256: IIS: Error w/Attempt to Log on to FTP Server with Guest Account
 
+{% raw %}
+
 	Article: Q299256
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -89,3 +91,5 @@ permalink: /kb/299/Q299256/
 	
 	=============================================================================
 	
+
+{% endraw %}

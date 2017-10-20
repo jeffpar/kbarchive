@@ -6,6 +6,8 @@ permalink: /kb/156/Q156739/
 
 ## Q156739: BUG: Show Event Calls Refresh Despite NODEFAULT in Subclass
 
+{% raw %}
+
 	Article: Q156739
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -187,3 +189,5 @@ permalink: /kb/156/Q156739/
 	
 	=============================================================================
 	
+
+{% endraw %}

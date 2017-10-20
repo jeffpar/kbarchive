@@ -6,6 +6,8 @@ permalink: /kb/167/Q167948/
 
 ## Q167948: FIX: Internet Component Download Fails After Using Setup Toolkit
 
+{% raw %}
+
 	Article: Q167948
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 97
@@ -60,3 +62,5 @@ permalink: /kb/167/Q167948/
 	
 	=============================================================================
 	
+
+{% endraw %}

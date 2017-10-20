@@ -6,6 +6,8 @@ permalink: /kb/119/Q119103/
 
 ## Q119103: Installing Windows NT Version 3.5 on a Dell OmniPlex Pentium
 
+{% raw %}
+
 	Article: Q119103
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -50,3 +52,5 @@ permalink: /kb/119/Q119103/
 	
 	=============================================================================
 	
+
+{% endraw %}

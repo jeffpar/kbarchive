@@ -6,6 +6,8 @@ permalink: /kb/244/Q244189/
 
 ## Q244189: Flight Simulator 2000: List of New Features
 
+{% raw %}
+
 	Article: Q244189
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -91,3 +93,5 @@ permalink: /kb/244/Q244189/
 	
 	=============================================================================
 	
+
+{% endraw %}

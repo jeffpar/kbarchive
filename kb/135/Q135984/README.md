@@ -6,6 +6,8 @@ permalink: /kb/135/Q135984/
 
 ## Q135984: PC Win: Mail Only Displays the Global Address List
 
+{% raw %}
+
 	Article: Q135984
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -46,3 +48,5 @@ permalink: /kb/135/Q135984/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/022/Q22317/
 
 ## Q22317: matherr and Trapping Floating-Point Errors
 
+{% raw %}
+
 	Article: Q22317
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10
@@ -46,3 +48,5 @@ permalink: /kb/022/Q22317/
 	To trap in-line floating-point errors such as the one above, we
 	recommend that you use signal with SIGFPE (see the run-time reference
 	manual).
+
+{% endraw %}

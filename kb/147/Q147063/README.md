@@ -6,6 +6,8 @@ permalink: /kb/147/Q147063/
 
 ## Q147063: XCLN: Remove All Does Not Remove Forms
 
+{% raw %}
+
 	Article: Q147063
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -53,3 +55,5 @@ permalink: /kb/147/Q147063/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67882/
 
 ## Q67882: DOC: Error C2213 Occurs When Base Is an Expression
 
+{% raw %}
+
 	Article: Q67882
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,6.0,6.0a,6.0ax
@@ -91,3 +93,5 @@ permalink: /kb/067/Q67882/
 	
 	=============================================================================
 	
+
+{% endraw %}

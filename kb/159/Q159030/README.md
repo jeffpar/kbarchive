@@ -6,6 +6,8 @@ permalink: /kb/159/Q159030/
 
 ## Q159030: Close Combat: Troubleshooting Head to Head Connection Problems
 
+{% raw %}
+
 	Article: Q159030
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0,1.0a
@@ -85,3 +87,5 @@ permalink: /kb/159/Q159030/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154262/
 
 ## Q154262: FP: Errors Attempting to Start FrontPage Personal Web Server
 
+{% raw %}
+
 	Article: Q154262
 	Product(s): Word Front Page
 	Version(s): ; WINDOWS:1.1
@@ -54,3 +56,5 @@ permalink: /kb/154/Q154262/
 	
 	=============================================================================
 	
+
+{% endraw %}

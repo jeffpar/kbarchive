@@ -6,6 +6,8 @@ permalink: /kb/193/Q193243/
 
 ## Q193243: HOWTO: Set the Default Window's Printer Using OLE Automation
 
+{% raw %}
+
 	Article: Q193243
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a,6.0
@@ -65,3 +67,5 @@ permalink: /kb/193/Q193243/
 	
 	=============================================================================
 	
+
+{% endraw %}

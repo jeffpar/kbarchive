@@ -6,6 +6,8 @@ permalink: /kb/253/Q253130/
 
 ## Q253130: PRB: Message Box in ExitInstance of MFC App Are Not Displayed
 
+{% raw %}
+
 	Article: Q253130
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.2,5.0,6.0
@@ -109,3 +111,5 @@ permalink: /kb/253/Q253130/
 	
 	=============================================================================
 	
+
+{% endraw %}

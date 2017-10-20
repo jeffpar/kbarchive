@@ -6,6 +6,8 @@ permalink: /kb/269/Q269571/
 
 ## Q269571: Unsigned CRL File Causes Access Violation in Inetinfo
 
+{% raw %}
+
 	Article: Q269571
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:2000; winnt:4.0,5.0
@@ -103,3 +105,5 @@ permalink: /kb/269/Q269571/
 	
 	=============================================================================
 	
+
+{% endraw %}

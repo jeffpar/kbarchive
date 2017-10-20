@@ -6,6 +6,8 @@ permalink: /kb/040/Q40633/
 
 ## Q40633: SCREEN 4 Fails on Compaq Portable III
 
+{% raw %}
+
 	Article: Q40633
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -32,3 +34,5 @@ permalink: /kb/040/Q40633/
 	SCREEN 4 fails on the following hardware:
 	
 	   Compaq III
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128371/
 
 ## Q128371: Error 5733 with InfoExpress Real-Mode Drivers
 
+{% raw %}
+
 	Article: Q128371
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -56,3 +58,5 @@ permalink: /kb/128/Q128371/
 	
 	=============================================================================
 	
+
+{% endraw %}

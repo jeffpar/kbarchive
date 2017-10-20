@@ -6,6 +6,8 @@ permalink: /kb/171/Q171667/
 
 ## Q171667: Err Msg: Cannot Determine the Device from the Given File Name
 
+{% raw %}
+
 	Article: Q171667
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.0
@@ -82,3 +84,5 @@ permalink: /kb/171/Q171667/
 	
 	=============================================================================
 	
+
+{% endraw %}

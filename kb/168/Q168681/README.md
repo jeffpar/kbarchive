@@ -6,6 +6,8 @@ permalink: /kb/168/Q168681/
 
 ## Q168681: Cannot Drag and Drop Connection Between SNA Servers
 
+{% raw %}
+
 	Article: Q168681
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -58,3 +60,5 @@ permalink: /kb/168/Q168681/
 	
 	=============================================================================
 	
+
+{% endraw %}

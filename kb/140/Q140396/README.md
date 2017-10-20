@@ -6,6 +6,8 @@ permalink: /kb/140/Q140396/
 
 ## Q140396: SMS Sender Manager Tool
 
+{% raw %}
+
 	Article: Q140396
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -76,3 +78,5 @@ permalink: /kb/140/Q140396/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/214/Q214527/
 
 ## Q214527: FP97: Save Results Form Handler and Four-Digit Year Format
 
+{% raw %}
+
 	Article: Q214527
 	Product(s): Word Front Page
 	Version(s): 
@@ -176,3 +178,5 @@ permalink: /kb/214/Q214527/
 	
 	=============================================================================
 	
+
+{% endraw %}

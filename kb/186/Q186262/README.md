@@ -6,6 +6,8 @@ permalink: /kb/186/Q186262/
 
 ## Q186262: BUG: Name Conflict When Using Binary Compatibility
 
+{% raw %}
+
 	Article: Q186262
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97sp3
@@ -62,3 +64,5 @@ permalink: /kb/186/Q186262/
 	
 	=============================================================================
 	
+
+{% endraw %}

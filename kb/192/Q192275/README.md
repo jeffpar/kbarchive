@@ -6,6 +6,8 @@ permalink: /kb/192/Q192275/
 
 ## Q192275: Outlook Express Is Not an Available MSN E-mail Client
 
+{% raw %}
+
 	Article: Q192275
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,4.0,5
@@ -134,3 +136,5 @@ permalink: /kb/192/Q192275/
 	
 	=============================================================================
 	
+
+{% endraw %}

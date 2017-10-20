@@ -6,6 +6,8 @@ permalink: /kb/198/Q198607/
 
 ## Q198607: PRB: Access Violation in VB Run-Time Using AddressOf
 
+{% raw %}
+
 	Article: Q198607
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -108,3 +110,5 @@ permalink: /kb/198/Q198607/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166949/
 
 ## Q166949: WD97: Unable to Fax When You Start Word the First Time
 
+{% raw %}
+
 	Article: Q166949
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/166/Q166949/
 	
 	=============================================================================
 	
+
+{% endraw %}

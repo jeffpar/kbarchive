@@ -6,6 +6,8 @@ permalink: /kb/086/Q86334/
 
 ## Q86334: DOCERR: Corrections to Program Manager Group File Format Docs
 
+{% raw %}
+
 	Article: Q86334
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -101,3 +103,5 @@ permalink: /kb/086/Q86334/
 	
 	=============================================================================
 	
+
+{% endraw %}

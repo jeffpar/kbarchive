@@ -6,6 +6,8 @@ permalink: /kb/239/Q239707/
 
 ## Q239707: TN3270 Clients May Fail to Reconnect to a Host Session
 
+{% raw %}
+
 	Article: Q239707
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -88,3 +90,5 @@ permalink: /kb/239/Q239707/
 	
 	=============================================================================
 	
+
+{% endraw %}

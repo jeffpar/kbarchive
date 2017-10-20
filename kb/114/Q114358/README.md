@@ -6,6 +6,8 @@ permalink: /kb/114/Q114358/
 
 ## Q114358: Insufficient Disk Space to Install MS-DOS 6.21 Upgrade
 
+{% raw %}
+
 	Article: Q114358
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21,6.22
@@ -59,3 +61,5 @@ permalink: /kb/114/Q114358/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197765/
 
 ## Q197765: WD97: List of Search Criteria for Next Citation
 
+{% raw %}
+
 	Article: Q197765
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -56,3 +58,5 @@ permalink: /kb/197/Q197765/
 	
 	=============================================================================
 	
+
+{% endraw %}

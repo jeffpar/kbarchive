@@ -6,6 +6,8 @@ permalink: /kb/096/Q96772/
 
 ## Q96772: HOWTO: Use WNetGetUser() in Windows for Workgroups
 
+{% raw %}
+
 	Article: Q96772
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.1,3.11
@@ -184,3 +186,5 @@ permalink: /kb/096/Q96772/
 	
 	=============================================================================
 	
+
+{% endraw %}

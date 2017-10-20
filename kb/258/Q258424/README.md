@@ -6,6 +6,8 @@ permalink: /kb/258/Q258424/
 
 ## Q258424: Distmgr.log Shows Errors If Distribution Pt Is Updated
 
+{% raw %}
+
 	Article: Q258424
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -56,3 +58,5 @@ permalink: /kb/258/Q258424/
 	
 	=============================================================================
 	
+
+{% endraw %}

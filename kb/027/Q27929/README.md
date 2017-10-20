@@ -6,6 +6,8 @@ permalink: /kb/027/Q27929/
 
 ## Q27929: Cannot Create Dynamic Link Libraries from BC 6.00 Modules
 
+{% raw %}
+
 	Article: Q27929
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -39,3 +41,5 @@ permalink: /kb/027/Q27929/
 	
 	BASIC compiler routines can also call routines contained in dynamic
 	link libraries other than the BASIC run-time library.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137071/
 
 ## Q137071: Xircom PE3 Network Adapter Card Hangs on HP Omnibook 600
 
+{% raw %}
+
 	Article: Q137071
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -71,3 +73,5 @@ permalink: /kb/137/Q137071/
 	
 	=============================================================================
 	
+
+{% endraw %}

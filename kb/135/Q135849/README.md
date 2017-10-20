@@ -6,6 +6,8 @@ permalink: /kb/135/Q135849/
 
 ## Q135849: List of Documentation Errors in Windows 95 Resource Kit
 
+{% raw %}
+
 	Article: Q135849
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -966,3 +968,5 @@ permalink: /kb/135/Q135849/
 	
 	=============================================================================
 	
+
+{% endraw %}

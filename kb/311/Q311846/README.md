@@ -6,6 +6,8 @@ permalink: /kb/311/Q311846/
 
 ## Q311846: INFO: Names and IP Addresses an MSDTC Client Must Have
 
+{% raw %}
+
 	Article: Q311846
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,2.0,4.0,5.0
@@ -111,3 +113,5 @@ permalink: /kb/311/Q311846/
 	
 	=============================================================================
 	
+
+{% endraw %}

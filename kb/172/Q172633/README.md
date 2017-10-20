@@ -6,6 +6,8 @@ permalink: /kb/172/Q172633/
 
 ## Q172633: Unable to Ping Cisco Router or Through Router
 
+{% raw %}
+
 	Article: Q172633
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
@@ -75,3 +77,5 @@ permalink: /kb/172/Q172633/
 	
 	=============================================================================
 	
+
+{% endraw %}

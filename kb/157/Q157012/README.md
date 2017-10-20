@@ -6,6 +6,8 @@ permalink: /kb/157/Q157012/
 
 ## Q157012: XFOR: Corrupted Message When Using Hebrew or Arabic
 
+{% raw %}
+
 	Article: Q157012
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/157/Q157012/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124823/
 
 ## Q124823: ADK/ADT: How to Create Pop-up, Context-Sensitive Help
 
+{% raw %}
+
 	Article: Q124823
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.1,2.0
@@ -137,3 +139,5 @@ permalink: /kb/124/Q124823/
 	
 	=============================================================================
 	
+
+{% endraw %}

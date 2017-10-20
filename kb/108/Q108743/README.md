@@ -6,6 +6,8 @@ permalink: /kb/108/Q108743/
 
 ## Q108743: Writer 1: Fir Tree Border Prints Incorrectly on Card
 
+{% raw %}
+
 	Article: Q108743
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -59,3 +61,5 @@ permalink: /kb/108/Q108743/
 	
 	=============================================================================
 	
+
+{% endraw %}

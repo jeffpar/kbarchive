@@ -6,6 +6,8 @@ permalink: /kb/094/Q94151/
 
 ## Q94151: HPPCL5E: Incorrect Output with Adobe Type Manager
 
+{% raw %}
+
 	Article: Q94151
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/094/Q94151/
 	
 	=============================================================================
 	
+
+{% endraw %}

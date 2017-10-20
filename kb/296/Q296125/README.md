@@ -6,6 +6,8 @@ permalink: /kb/296/Q296125/
 
 ## Q296125: Error Calling IsInherited Attribute of GetPropertyAttribObj
 
+{% raw %}
+
 	Article: Q296125
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -117,3 +119,5 @@ permalink: /kb/296/Q296125/
 	
 	=============================================================================
 	
+
+{% endraw %}

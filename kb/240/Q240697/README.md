@@ -6,6 +6,8 @@ permalink: /kb/240/Q240697/
 
 ## Q240697: XCLN: &quot;Outlook Cannot Perform Your Search&quot; Message Using Find
 
+{% raw %}
+
 	Article: Q240697
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -81,3 +83,5 @@ permalink: /kb/240/Q240697/
 	
 	=============================================================================
 	
+
+{% endraw %}

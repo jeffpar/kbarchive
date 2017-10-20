@@ -6,6 +6,8 @@ permalink: /kb/272/Q272545/
 
 ## Q272545: Contacting Member Support for MSN Companion
 
+{% raw %}
+
 	Article: Q272545
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -59,3 +61,5 @@ permalink: /kb/272/Q272545/
 	
 	=============================================================================
 	
+
+{% endraw %}

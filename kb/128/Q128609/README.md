@@ -6,6 +6,8 @@ permalink: /kb/128/Q128609/
 
 ## Q128609: Display Skewed at High Resolution on IBM 9515 Monitor
 
+{% raw %}
+
 	Article: Q128609
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/128/Q128609/
 	
 	=============================================================================
 	
+
+{% endraw %}

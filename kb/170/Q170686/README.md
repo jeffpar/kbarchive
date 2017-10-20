@@ -6,6 +6,8 @@ permalink: /kb/170/Q170686/
 
 ## Q170686: WD97: Text Not Visible, Even When Selected
 
+{% raw %}
+
 	Article: Q170686
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/170/Q170686/
 	
 	=============================================================================
 	
+
+{% endraw %}

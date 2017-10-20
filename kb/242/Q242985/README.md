@@ -6,6 +6,8 @@ permalink: /kb/242/Q242985/
 
 ## Q242985: DirectX: List of New Features Included in Microsoft DirectX 7.0
 
+{% raw %}
+
 	Article: Q242985
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -127,3 +129,5 @@ permalink: /kb/242/Q242985/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141499/
 
 ## Q141499: VWRPLC32 Replacing a View in a CMDIChildWnd Window
 
+{% raw %}
+
 	Article: Q141499
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -174,3 +176,5 @@ permalink: /kb/141/Q141499/
 	
 	=============================================================================
 	
+
+{% endraw %}

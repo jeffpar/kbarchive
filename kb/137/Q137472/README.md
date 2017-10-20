@@ -6,6 +6,8 @@ permalink: /kb/137/Q137472/
 
 ## Q137472: HOWTO: How to Deal with a load=foxrstart.exe Line in the Win.ini
 
+{% raw %}
+
 	Article: Q137472
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/137/Q137472/
 	
 	=============================================================================
 	
+
+{% endraw %}

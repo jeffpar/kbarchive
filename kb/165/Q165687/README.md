@@ -6,6 +6,8 @@ permalink: /kb/165/Q165687/
 
 ## Q165687: INFO: Visual C++ 5.0 Readme, Compiler, Linker and Utilities
 
+{% raw %}
+
 	Article: Q165687
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -472,3 +474,5 @@ permalink: /kb/165/Q165687/
 	
 	=============================================================================
 	
+
+{% endraw %}

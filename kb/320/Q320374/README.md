@@ -6,6 +6,8 @@ permalink: /kb/320/Q320374/
 
 ## Q320374: MS02-018: Patch Available for Cross-site Scripting Vulnerability
 
+{% raw %}
+
 	Article: Q320374
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -108,3 +110,5 @@ permalink: /kb/320/Q320374/
 	
 	=============================================================================
 	
+
+{% endraw %}

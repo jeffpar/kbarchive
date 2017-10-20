@@ -6,6 +6,8 @@ permalink: /kb/085/Q85847/
 
 ## Q85847: PPT: Objects on Master Appear Behind Objects on Slide
 
+{% raw %}
+
 	Article: Q85847
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,7.0
@@ -57,3 +59,5 @@ permalink: /kb/085/Q85847/
 	
 	=============================================================================
 	
+
+{% endraw %}

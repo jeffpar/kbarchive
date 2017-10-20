@@ -6,6 +6,8 @@ permalink: /kb/166/Q166148/
 
 ## Q166148: RasSetEntryProperties() Fails to Set Options in Service Pack 2
 
+{% raw %}
+
 	Article: Q166148
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/166/Q166148/
 	
 	=============================================================================
 	
+
+{% endraw %}

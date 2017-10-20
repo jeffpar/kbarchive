@@ -6,6 +6,8 @@ permalink: /kb/106/Q106728/
 
 ## Q106728: BUG: DX1010 Running PowerStation Application from NMAKE
 
+{% raw %}
+
 	Article: Q106728
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -89,3 +91,5 @@ permalink: /kb/106/Q106728/
 	
 	=============================================================================
 	
+
+{% endraw %}

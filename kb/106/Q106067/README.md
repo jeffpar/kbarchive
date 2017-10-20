@@ -6,6 +6,8 @@ permalink: /kb/106/Q106067/
 
 ## Q106067: PC WRmt: Using Mail Remote with Postoffice in Another Language
 
+{% raw %}
+
 	Article: Q106067
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -46,3 +48,5 @@ permalink: /kb/106/Q106067/
 	
 	=============================================================================
 	
+
+{% endraw %}

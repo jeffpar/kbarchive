@@ -6,6 +6,8 @@ permalink: /kb/162/Q162985/
 
 ## Q162985: WD97: Using Relative Paths in HTML Files
 
+{% raw %}
+
 	Article: Q162985
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/162/Q162985/
 	
 	=============================================================================
 	
+
+{% endraw %}

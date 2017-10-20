@@ -6,6 +6,8 @@ permalink: /kb/257/Q257501/
 
 ## Q257501: FIX: Error Message When Exporting Data Report to HTML File
 
+{% raw %}
+
 	Article: Q257501
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -112,3 +114,5 @@ permalink: /kb/257/Q257501/
 	
 	=============================================================================
 	
+
+{% endraw %}

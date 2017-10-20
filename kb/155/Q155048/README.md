@@ -6,6 +6,8 @@ permalink: /kb/155/Q155048/
 
 ## Q155048: XCLN: Troubleshooting Startup of Windows Client Using TCP/IP
 
+{% raw %}
+
 	Article: Q155048
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -168,3 +170,5 @@ permalink: /kb/155/Q155048/
 	
 	=============================================================================
 	
+
+{% endraw %}

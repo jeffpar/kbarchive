@@ -6,6 +6,8 @@ permalink: /kb/073/Q73385/
 
 ## Q73385: Notebook 386SX Screen Saver Reboots in Enhanced Mode
 
+{% raw %}
+
 	Article: Q73385
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -44,3 +46,5 @@ permalink: /kb/073/Q73385/
 	
 	=============================================================================
 	
+
+{% endraw %}

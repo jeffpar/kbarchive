@@ -6,6 +6,8 @@ permalink: /kb/193/Q193784/
 
 ## Q193784: PCM &quot;Execute&quot; Button Unavailable or Dimmed
 
+{% raw %}
+
 	Article: Q193784
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP4
@@ -160,3 +162,5 @@ permalink: /kb/193/Q193784/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/035/Q35145/
 
 ## Q35145: &quot;String Space Corrupt&quot; If Drive Door Open, &amp; QB.INI Not Found
 
+{% raw %}
+
 	Article: Q35145
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -61,3 +63,5 @@ permalink: /kb/035/Q35145/
 	
 	   "Not Ready Error Reading Drive A:
 	   Abort, Retry, Ignore, Fail?"
+
+{% endraw %}

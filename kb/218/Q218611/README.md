@@ -6,6 +6,8 @@ permalink: /kb/218/Q218611/
 
 ## Q218611: FIX: Incorrect Code Generated With /Og and /Ob1
 
+{% raw %}
+
 	Article: Q218611
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -118,3 +120,5 @@ permalink: /kb/218/Q218611/
 	
 	=============================================================================
 	
+
+{% endraw %}

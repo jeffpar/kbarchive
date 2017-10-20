@@ -6,6 +6,8 @@ permalink: /kb/163/Q163873/
 
 ## Q163873: Czech Keyboard Layout Has Wrong Mapping
 
+{% raw %}
+
 	Article: Q163873
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/163/Q163873/
 	
 	=============================================================================
 	
+
+{% endraw %}

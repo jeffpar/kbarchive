@@ -6,6 +6,8 @@ permalink: /kb/199/Q199662/
 
 ## Q199662: XADM: Service Pack Update Fails on Exchange Standard Edition
 
+{% raw %}
+
 	Article: Q199662
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -58,3 +60,5 @@ permalink: /kb/199/Q199662/
 	
 	=============================================================================
 	
+
+{% endraw %}

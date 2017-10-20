@@ -6,6 +6,8 @@ permalink: /kb/156/Q156240/
 
 ## Q156240: PRB: &quot;Missing Operand&quot; Using TIME() with WAIT WINDOW Command
 
+{% raw %}
+
 	Article: Q156240
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -70,3 +72,5 @@ permalink: /kb/156/Q156240/
 	
 	=============================================================================
 	
+
+{% endraw %}

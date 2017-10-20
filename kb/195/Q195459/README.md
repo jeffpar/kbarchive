@@ -6,6 +6,8 @@ permalink: /kb/195/Q195459/
 
 ## Q195459: Tutor Err Msg: Insufficient Available Space to Install Program
 
+{% raw %}
+
 	Article: Q195459
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/195/Q195459/
 	
 	=============================================================================
 	
+
+{% endraw %}

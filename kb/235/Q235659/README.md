@@ -6,6 +6,8 @@ permalink: /kb/235/Q235659/
 
 ## Q235659: XFOR:Lsmexnts Access Violation Sending Recurring Meeting Request
 
+{% raw %}
+
 	Article: Q235659
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -77,3 +79,5 @@ permalink: /kb/235/Q235659/
 	
 	=============================================================================
 	
+
+{% endraw %}

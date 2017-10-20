@@ -6,6 +6,8 @@ permalink: /kb/126/Q126463/
 
 ## Q126463: Remote Command Service Does Not Install Correctly
 
+{% raw %}
+
 	Article: Q126463
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -62,3 +64,5 @@ permalink: /kb/126/Q126463/
 	
 	=============================================================================
 	
+
+{% endraw %}

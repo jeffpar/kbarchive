@@ -6,6 +6,8 @@ permalink: /kb/114/Q114883/
 
 ## Q114883: Art Gallery, Wine Guide 1.0: Distorted Video Images
 
+{% raw %}
+
 	Article: Q114883
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,3.0,3.1,3.11
@@ -157,3 +159,5 @@ permalink: /kb/114/Q114883/
 	
 	=============================================================================
 	
+
+{% endraw %}

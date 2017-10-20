@@ -6,6 +6,8 @@ permalink: /kb/124/Q124505/
 
 ## Q124505: Writer/Artist: Fonts Not Visible in Font/DA Mover 4.0
 
+{% raw %}
+
 	Article: Q124505
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -52,3 +54,5 @@ permalink: /kb/124/Q124505/
 	
 	=============================================================================
 	
+
+{% endraw %}

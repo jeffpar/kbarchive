@@ -6,6 +6,8 @@ permalink: /kb/261/Q261228/
 
 ## Q261228: XCLN: Users Cannot Connect to Exchange Server After DCPromo
 
+{% raw %}
+
 	Article: Q261228
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -102,3 +104,5 @@ permalink: /kb/261/Q261228/
 	
 	=============================================================================
 	
+
+{% endraw %}

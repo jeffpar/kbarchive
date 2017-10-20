@@ -6,6 +6,8 @@ permalink: /kb/174/Q174315/
 
 ## Q174315: WD97: Warning When You Save Multilingual Web Page or HTML File
 
+{% raw %}
+
 	Article: Q174315
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -215,3 +217,5 @@ permalink: /kb/174/Q174315/
 	
 	=============================================================================
 	
+
+{% endraw %}

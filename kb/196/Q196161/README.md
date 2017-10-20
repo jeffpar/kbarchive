@@ -6,6 +6,8 @@ permalink: /kb/196/Q196161/
 
 ## Q196161: XADM: Cannot Install Key Management Server in Site
 
+{% raw %}
+
 	Article: Q196161
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -100,3 +102,5 @@ permalink: /kb/196/Q196161/
 	
 	=============================================================================
 	
+
+{% endraw %}

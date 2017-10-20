@@ -6,6 +6,8 @@ permalink: /kb/147/Q147859/
 
 ## Q147859: ErrMsg: NET PRINT May Cause Internal Error
 
+{% raw %}
+
 	Article: Q147859
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -53,3 +55,5 @@ permalink: /kb/147/Q147859/
 	
 	=============================================================================
 	
+
+{% endraw %}

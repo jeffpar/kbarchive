@@ -6,6 +6,8 @@ permalink: /kb/160/Q160969/
 
 ## Q160969: SMS: How the SNMP Trap ID Relates to a Windows NT Event
 
+{% raw %}
+
 	Article: Q160969
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -86,3 +88,5 @@ permalink: /kb/160/Q160969/
 	
 	=============================================================================
 	
+
+{% endraw %}

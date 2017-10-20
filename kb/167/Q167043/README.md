@@ -6,6 +6,8 @@ permalink: /kb/167/Q167043/
 
 ## Q167043: XCLN: NextExists and PreviousExists Properties Always True
 
+{% raw %}
+
 	Article: Q167043
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; Win95:4.0,5.0
@@ -49,3 +51,5 @@ permalink: /kb/167/Q167043/
 	
 	=============================================================================
 	
+
+{% endraw %}

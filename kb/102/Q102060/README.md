@@ -6,6 +6,8 @@ permalink: /kb/102/Q102060/
 
 ## Q102060: Increasing the Performance of MS-DOS-Based Applications
 
+{% raw %}
+
 	Article: Q102060
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/102/Q102060/
 	
 	=============================================================================
 	
+
+{% endraw %}

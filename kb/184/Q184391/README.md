@@ -6,6 +6,8 @@ permalink: /kb/184/Q184391/
 
 ## Q184391: XADM: Event 1029 Occurs When Migrating cc:Mail Users
 
+{% raw %}
+
 	Article: Q184391
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/184/Q184391/
 	
 	=============================================================================
 	
+
+{% endraw %}

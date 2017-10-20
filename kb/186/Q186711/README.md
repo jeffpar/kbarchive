@@ -6,6 +6,8 @@ permalink: /kb/186/Q186711/
 
 ## Q186711: Back Level SNA Manager May Save Com.cfg Incorrectly
 
+{% raw %}
+
 	Article: Q186711
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3
@@ -48,3 +50,5 @@ permalink: /kb/186/Q186711/
 	
 	=============================================================================
 	
+
+{% endraw %}

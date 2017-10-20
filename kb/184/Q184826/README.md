@@ -6,6 +6,8 @@ permalink: /kb/184/Q184826/
 
 ## Q184826: Symbol Checksum Error Reported When Kernel Debugging
 
+{% raw %}
+
 	Article: Q184826
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -68,3 +70,5 @@ permalink: /kb/184/Q184826/
 	
 	=============================================================================
 	
+
+{% endraw %}

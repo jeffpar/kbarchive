@@ -6,6 +6,8 @@ permalink: /kb/184/Q184733/
 
 ## Q184733: BUG: EXE File Not Created After Compiling
 
+{% raw %}
+
 	Article: Q184733
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -107,3 +109,5 @@ permalink: /kb/184/Q184733/
 	
 	=============================================================================
 	
+
+{% endraw %}

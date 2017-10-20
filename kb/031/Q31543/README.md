@@ -6,6 +6,8 @@ permalink: /kb/031/Q31543/
 
 ## Q31543: MASM 5.10 EXT.DOC: FExecute - Executes an MS-Editor Macro
 
+{% raw %}
+
 	Article: Q31543
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -29,3 +31,5 @@ permalink: /kb/031/Q31543/
 	 */
 	flagType pascal fExecute (pStr)
 	char far *pStr;
+
+{% endraw %}

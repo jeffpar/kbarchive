@@ -6,6 +6,8 @@ permalink: /kb/170/Q170975/
 
 ## Q170975: FP: Deleted Pages from Web Show up in Search Results List
 
+{% raw %}
+
 	Article: Q170975
 	Product(s): Word Front Page
 	Version(s): 1.0
@@ -105,3 +107,5 @@ permalink: /kb/170/Q170975/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/277/Q277783/
 
 ## Q277783: Clicore.log Incorrectly Displays That Client Files Are Installed
 
+{% raw %}
+
 	Article: Q277783
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -97,3 +99,5 @@ permalink: /kb/277/Q277783/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185795/
 
 ## Q185795: WD97: ErrMsg: &quot;... Unable to Open the Data Source&quot; Using ODBC
 
+{% raw %}
+
 	Article: Q185795
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/185/Q185795/
 	
 	=============================================================================
 	
+
+{% endraw %}

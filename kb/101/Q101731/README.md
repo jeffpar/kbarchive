@@ -6,6 +6,8 @@ permalink: /kb/101/Q101731/
 
 ## Q101731: File/Folder Attribute Mapping from NT AS to Macintosh
 
+{% raw %}
+
 	Article: Q101731
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -76,3 +78,5 @@ permalink: /kb/101/Q101731/
 	
 	=============================================================================
 	
+
+{% endraw %}

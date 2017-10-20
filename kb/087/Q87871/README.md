@@ -6,6 +6,8 @@ permalink: /kb/087/Q87871/
 
 ## Q87871: Bookshelf 1992 Animations Stop When Screen Saver Started
 
+{% raw %}
+
 	Article: Q87871
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 edition,1993 edition
@@ -36,3 +38,5 @@ permalink: /kb/087/Q87871/
 	
 	=============================================================================
 	
+
+{% endraw %}

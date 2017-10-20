@@ -6,6 +6,8 @@ permalink: /kb/140/Q140008/
 
 ## Q140008: Seed Routing Network Range Options Grayed Out with DEC FDDI
 
+{% raw %}
+
 	Article: Q140008
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -93,3 +95,5 @@ permalink: /kb/140/Q140008/
 	
 	=============================================================================
 	
+
+{% endraw %}

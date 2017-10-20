@@ -6,6 +6,8 @@ permalink: /kb/157/Q157869/
 
 ## Q157869: STL Sample for Predicate Version of next_permutation Function
 
+{% raw %}
+
 	Article: Q157869
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -166,3 +168,5 @@ permalink: /kb/157/Q157869/
 	
 	=============================================================================
 	
+
+{% endraw %}

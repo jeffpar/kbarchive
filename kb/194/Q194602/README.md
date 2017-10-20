@@ -6,6 +6,8 @@ permalink: /kb/194/Q194602/
 
 ## Q194602: PC MMTA: Incorrect Error from Windows NT MMTA Dispatch
 
+{% raw %}
+
 	Article: Q194602
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.5
@@ -95,3 +97,5 @@ permalink: /kb/194/Q194602/
 	
 	=============================================================================
 	
+
+{% endraw %}

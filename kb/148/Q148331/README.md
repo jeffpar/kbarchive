@@ -6,6 +6,8 @@ permalink: /kb/148/Q148331/
 
 ## Q148331: PRB: Cannot Open Form That Has =CREATEOBJECT() Property Value
 
+{% raw %}
+
 	Article: Q148331
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -111,3 +113,5 @@ permalink: /kb/148/Q148331/
 	
 	=============================================================================
 	
+
+{% endraw %}

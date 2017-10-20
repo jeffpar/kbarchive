@@ -6,6 +6,8 @@ permalink: /kb/101/Q101565/
 
 ## Q101565: DoubleSpace Err Msg: MS-DOS Fastopen Program...Detected!
 
+{% raw %}
+
 	Article: Q101565
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -75,3 +77,5 @@ permalink: /kb/101/Q101565/
 	
 	=============================================================================
 	
+
+{% endraw %}

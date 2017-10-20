@@ -6,6 +6,8 @@ permalink: /kb/112/Q112684/
 
 ## Q112684: IBM Raid Controller Support in Windows NT
 
+{% raw %}
+
 	Article: Q112684
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -58,3 +60,5 @@ permalink: /kb/112/Q112684/
 	
 	=============================================================================
 	
+
+{% endraw %}

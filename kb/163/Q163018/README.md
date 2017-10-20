@@ -6,6 +6,8 @@ permalink: /kb/163/Q163018/
 
 ## Q163018: Distributed Link Service Does Not Reactivate Dropped Connection
 
+{% raw %}
+
 	Article: Q163018
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -190,3 +192,5 @@ permalink: /kb/163/Q163018/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/026/Q26009/
 
 ## Q26009: CONST &quot;Syntax Error&quot; with BC.EXE 4.00, but Works in Editor
 
+{% raw %}
+
 	Article: Q26009
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -30,3 +32,5 @@ permalink: /kb/026/Q26009/
 	
 	Microsoft is researching this problem and will post new information
 	as it becomes available.
+
+{% endraw %}

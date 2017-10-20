@@ -6,6 +6,8 @@ permalink: /kb/260/Q260153/
 
 ## Q260153: XCLN: Deleted Items Folder Is Emptied When Installing a Form
 
+{% raw %}
+
 	Article: Q260153
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/260/Q260153/
 	
 	=============================================================================
 	
+
+{% endraw %}

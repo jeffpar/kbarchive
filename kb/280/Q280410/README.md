@@ -6,6 +6,8 @@ permalink: /kb/280/Q280410/
 
 ## Q280410: Crimson Skies: Fixes Included in the Crimson Skies Updates
 
+{% raw %}
+
 	Article: Q280410
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/280/Q280410/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98471/
 
 ## Q98471: No Continue Button from Practice Range in Golf
 
+{% raw %}
+
 	Article: Q98471
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/098/Q98471/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/042/Q42317/
 
 ## Q42317: PC Tools Version 5.00 Needs Mouse Driver Version 6.14 or Later
 
+{% raw %}
+
 	Article: Q42317
 	Product(s): See article
 	Version(s): 1.x 2.x 3.x 4.00 4.01
@@ -15,3 +17,5 @@ permalink: /kb/042/Q42317/
 	
 	PC Tools Version 5.00 documentation recommends Version 6.14 or later
 	of the mouse driver.
+
+{% endraw %}

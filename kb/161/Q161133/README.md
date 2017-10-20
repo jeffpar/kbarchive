@@ -6,6 +6,8 @@ permalink: /kb/161/Q161133/
 
 ## Q161133: HOWTO: Block CTRL+ALT+DEL &amp; ALT+TAB in Windows 95 or Windows 98
 
+{% raw %}
+
 	Article: Q161133
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -119,3 +121,5 @@ permalink: /kb/161/Q161133/
 	
 	=============================================================================
 	
+
+{% endraw %}

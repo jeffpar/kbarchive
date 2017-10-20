@@ -6,6 +6,8 @@ permalink: /kb/315/Q315101/
 
 ## Q315101: Cannot Cancel Novell Print Job After You Apply Q299444 SRP
 
+{% raw %}
+
 	Article: Q315101
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -94,3 +96,5 @@ permalink: /kb/315/Q315101/
 	
 	=============================================================================
 	
+
+{% endraw %}

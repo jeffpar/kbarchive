@@ -6,6 +6,8 @@ permalink: /kb/074/Q74890/
 
 ## Q74890: Sharing Windows-Based Applications Across Networks
 
+{% raw %}
+
 	Article: Q74890
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -54,3 +56,5 @@ permalink: /kb/074/Q74890/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151735/
 
 ## Q151735: Visual Test 4.0 Is Not Supported with Windows 95 PCM
 
+{% raw %}
+
 	Article: Q151735
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2; :4.0
@@ -53,3 +55,5 @@ permalink: /kb/151/Q151735/
 	
 	=============================================================================
 	
+
+{% endraw %}

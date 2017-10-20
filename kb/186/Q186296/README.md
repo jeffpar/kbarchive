@@ -6,6 +6,8 @@ permalink: /kb/186/Q186296/
 
 ## Q186296: Err Msg: Could Not Find the MSN Phone Number
 
+{% raw %}
+
 	Article: Q186296
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.52
@@ -81,3 +83,5 @@ permalink: /kb/186/Q186296/
 	
 	=============================================================================
 	
+
+{% endraw %}

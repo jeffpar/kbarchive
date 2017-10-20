@@ -6,6 +6,8 @@ permalink: /kb/063/Q63591/
 
 ## Q63591: Duplicate Lines When Printing Help Files
 
+{% raw %}
+
 	Article: Q63591
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -43,3 +45,5 @@ permalink: /kb/063/Q63591/
 	
 	=============================================================================
 	
+
+{% endraw %}

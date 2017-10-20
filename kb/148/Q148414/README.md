@@ -6,6 +6,8 @@ permalink: /kb/148/Q148414/
 
 ## Q148414: FP: How to Add Subwebs and Create Links to Subwebs
 
+{% raw %}
+
 	Article: Q148414
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97
@@ -144,3 +146,5 @@ permalink: /kb/148/Q148414/
 	
 	=============================================================================
 	
+
+{% endraw %}

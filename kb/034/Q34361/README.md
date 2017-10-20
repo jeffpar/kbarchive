@@ -6,6 +6,8 @@ permalink: /kb/034/Q34361/
 
 ## Q34361: Making Backup Copies
 
+{% raw %}
+
 	Article: Q34361
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -19,3 +21,5 @@ permalink: /kb/034/Q34361/
 	they are damaged or destroyed."
 	   The advice should be to use the backups and to save the original
 	disks for making future working copies.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97717/
 
 ## Q97717: FltSim: Unable to Fly Using Mouse As Yoke
 
+{% raw %}
+
 	Article: Q97717
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:4.0
@@ -52,3 +54,5 @@ permalink: /kb/097/Q97717/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170267/
 
 ## Q170267: WD97: WordBasic MacroCopy Command Fails
 
+{% raw %}
+
 	Article: Q170267
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 1 (SR-1)
@@ -159,3 +161,5 @@ permalink: /kb/170/Q170267/
 	
 	=============================================================================
 	
+
+{% endraw %}

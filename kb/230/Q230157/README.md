@@ -6,6 +6,8 @@ permalink: /kb/230/Q230157/
 
 ## Q230157: Margins Not Correct with HP 4si Printer in Windows NT SP4
 
+{% raw %}
+
 	Article: Q230157
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -88,3 +90,5 @@ permalink: /kb/230/Q230157/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/215/Q215035/
 
 ## Q215035: SMS: Various Components Report Errors on Initial Site Startup
 
+{% raw %}
+
 	Article: Q215035
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -54,3 +56,5 @@ permalink: /kb/215/Q215035/
 	
 	=============================================================================
 	
+
+{% endraw %}

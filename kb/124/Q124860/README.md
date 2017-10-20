@@ -6,6 +6,8 @@ permalink: /kb/124/Q124860/
 
 ## Q124860: Real Mode Redir Domain Validation Err Msg: Access Denied
 
+{% raw %}
+
 	Article: Q124860
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0,3.11,3.5
@@ -64,3 +66,5 @@ permalink: /kb/124/Q124860/
 	
 	=============================================================================
 	
+
+{% endraw %}

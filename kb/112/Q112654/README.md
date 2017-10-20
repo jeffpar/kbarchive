@@ -6,6 +6,8 @@ permalink: /kb/112/Q112654/
 
 ## Q112654: Using the BocaModem M1440IW with WFWG RAS Client
 
+{% raw %}
+
 	Article: Q112654
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -88,3 +90,5 @@ permalink: /kb/112/Q112654/
 	
 	=============================================================================
 	
+
+{% endraw %}

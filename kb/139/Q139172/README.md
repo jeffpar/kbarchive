@@ -6,6 +6,8 @@ permalink: /kb/139/Q139172/
 
 ## Q139172: PRB: Win32api.hlp &amp; Autodemo Missing from VFP3 Floppy Version
 
+{% raw %}
+
 	Article: Q139172
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -68,3 +70,5 @@ permalink: /kb/139/Q139172/
 	
 	=============================================================================
 	
+
+{% endraw %}

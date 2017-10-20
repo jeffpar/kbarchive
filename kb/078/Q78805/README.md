@@ -6,6 +6,8 @@ permalink: /kb/078/Q78805/
 
 ## Q78805: Terminal Does Not Accept Eight Data Bits and Odd Parity
 
+{% raw %}
+
 	Article: Q78805
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -40,3 +42,5 @@ permalink: /kb/078/Q78805/
 	
 	=============================================================================
 	
+
+{% endraw %}

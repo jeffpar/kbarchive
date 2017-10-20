@@ -6,6 +6,8 @@ permalink: /kb/240/Q240930/
 
 ## Q240930: Err Msg: Content Advisor Will Not Allow You to See This Web Site
 
+{% raw %}
+
 	Article: Q240930
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/240/Q240930/
 	
 	=============================================================================
 	
+
+{% endraw %}

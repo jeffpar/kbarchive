@@ -6,6 +6,8 @@ permalink: /kb/131/Q131726/
 
 ## Q131726: PC Win: Err Msg: ...Too Many Entries Selected to Complete...
 
+{% raw %}
+
 	Article: Q131726
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -66,3 +68,5 @@ permalink: /kb/131/Q131726/
 	
 	=============================================================================
 	
+
+{% endraw %}

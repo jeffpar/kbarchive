@@ -6,6 +6,8 @@ permalink: /kb/195/Q195635/
 
 ## Q195635: Install /S100 Series Compaq Switched SCSI Cluster
 
+{% raw %}
+
 	Article: Q195635
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -141,3 +143,5 @@ permalink: /kb/195/Q195635/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/292/Q292041/
 
 ## Q292041: Heap Coruption in Windows NT RPCSS Service with DCOM Calls
 
+{% raw %}
+
 	Article: Q292041
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -93,3 +95,5 @@ permalink: /kb/292/Q292041/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159982/
 
 ## Q159982: Assigning Specific LUs to TN3270 Users Doesn't Work Reliably
 
+{% raw %}
+
 	Article: Q159982
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -67,3 +69,5 @@ permalink: /kb/159/Q159982/
 	
 	=============================================================================
 	
+
+{% endraw %}

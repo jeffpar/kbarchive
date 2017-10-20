@@ -6,6 +6,8 @@ permalink: /kb/153/Q153619/
 
 ## Q153619: Windows NT 4.0 Configures PC-Card Hard Disk as Drive C
 
+{% raw %}
+
 	Article: Q153619
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -120,3 +122,5 @@ permalink: /kb/153/Q153619/
 	
 	=============================================================================
 	
+
+{% endraw %}

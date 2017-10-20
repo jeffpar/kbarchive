@@ -6,6 +6,8 @@ permalink: /kb/077/Q77207/
 
 ## Q77207: Using Math Works MATLAB with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q77207
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -52,3 +54,5 @@ permalink: /kb/077/Q77207/
 	
 	=============================================================================
 	
+
+{% endraw %}

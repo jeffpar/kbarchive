@@ -6,6 +6,8 @@ permalink: /kb/187/Q187097/
 
 ## Q187097: Chat and Clipbook Viewer Produce NetDDE Errors
 
+{% raw %}
+
 	Article: Q187097
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -47,3 +49,5 @@ permalink: /kb/187/Q187097/
 	
 	=============================================================================
 	
+
+{% endraw %}

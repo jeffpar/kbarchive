@@ -6,6 +6,8 @@ permalink: /kb/177/Q177704/
 
 ## Q177704: Networking Essentials, 2nd. Ed. Corrections Part 1
 
+{% raw %}
+
 	Article: Q177704
 	Product(s): Microsoft Press
 	Version(s): 
@@ -275,3 +277,5 @@ permalink: /kb/177/Q177704/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/044/Q44747/
 
 ## Q44747: Differences between Quick Assembler and Macro Assembler
 
+{% raw %}
+
 	Article: Q44747
 	Product(s): See article
 	Version(s): 2.01
@@ -125,3 +127,5 @@ permalink: /kb/044/Q44747/
 	
 	All of these changes should decrease the size of the resultant object.
 	Savings in size should range from 5 to 20 percent.
+
+{% endraw %}

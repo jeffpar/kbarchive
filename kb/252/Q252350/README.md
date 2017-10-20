@@ -6,6 +6,8 @@ permalink: /kb/252/Q252350/
 
 ## Q252350: PRB: Err Message: &quot;Runtime Error -2147217885 (80040e23) : A ...&quot;
 
+{% raw %}
+
 	Article: Q252350
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:2.0,2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0
@@ -156,3 +158,5 @@ permalink: /kb/252/Q252350/
 	
 	=============================================================================
 	
+
+{% endraw %}

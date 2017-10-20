@@ -6,6 +6,8 @@ permalink: /kb/271/Q271684/
 
 ## Q271684: PRB: Setup for EVT Causes Invalid Page Fault in Ce98pro.dll
 
+{% raw %}
+
 	Article: Q271684
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0
@@ -83,3 +85,5 @@ permalink: /kb/271/Q271684/
 	
 	=============================================================================
 	
+
+{% endraw %}

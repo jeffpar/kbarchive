@@ -6,6 +6,8 @@ permalink: /kb/139/Q139052/
 
 ## Q139052: &quot;Dirty&quot; and &quot;Deadly&quot; TSRs Detected by Windows 95
 
+{% raw %}
+
 	Article: Q139052
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -152,3 +154,5 @@ permalink: /kb/139/Q139052/
 	
 	=============================================================================
 	
+
+{% endraw %}

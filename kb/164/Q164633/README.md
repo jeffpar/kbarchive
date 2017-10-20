@@ -6,6 +6,8 @@ permalink: /kb/164/Q164633/
 
 ## Q164633: SNA Server Issues with DBCS 3270 Printing.
 
+{% raw %}
+
 	Article: Q164633
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -134,3 +136,5 @@ permalink: /kb/164/Q164633/
 	
 	=============================================================================
 	
+
+{% endraw %}

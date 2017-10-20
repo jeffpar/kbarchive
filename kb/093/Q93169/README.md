@@ -6,6 +6,8 @@ permalink: /kb/093/Q93169/
 
 ## Q93169: Using Custom IRQ and I/O Settings with Windows for Workgroups
 
+{% raw %}
+
 	Article: Q93169
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -141,3 +143,5 @@ permalink: /kb/093/Q93169/
 	
 	=============================================================================
 	
+
+{% endraw %}

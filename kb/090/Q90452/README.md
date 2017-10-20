@@ -6,6 +6,8 @@ permalink: /kb/090/Q90452/
 
 ## Q90452: WFWG Err Msg: The Network Software Currently...LAN Manager 2.0
 
+{% raw %}
+
 	Article: Q90452
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -69,3 +71,5 @@ permalink: /kb/090/Q90452/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191214/
 
 ## Q191214: BUG: Error Message When Not Breaking Binary Compatibility
 
+{% raw %}
+
 	Article: Q191214
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -62,3 +64,5 @@ permalink: /kb/191/Q191214/
 	
 	=============================================================================
 	
+
+{% endraw %}

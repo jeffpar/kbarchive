@@ -6,6 +6,8 @@ permalink: /kb/047/Q47766/
 
 ## Q47766: _amblksiz Affects Memory Allocation in Near and Far Heaps
 
+{% raw %}
+
 	Article: Q47766
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -33,3 +35,5 @@ permalink: /kb/047/Q47766/
 	declared in malloc.h. For more information about the use of _amblksiz,
 	refer to the "Microsoft C for the MS-DOS Operating System: Run-Time
 	Library Reference," Section 3.2.
+
+{% endraw %}

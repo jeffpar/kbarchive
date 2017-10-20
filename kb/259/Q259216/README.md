@@ -6,6 +6,8 @@ permalink: /kb/259/Q259216/
 
 ## Q259216: Behavior of DOMAINNAME&#91;1Bh&#93; Entries in WINS Manager
 
+{% raw %}
+
 	Article: Q259216
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -88,3 +90,5 @@ permalink: /kb/259/Q259216/
 	
 	=============================================================================
 	
+
+{% endraw %}

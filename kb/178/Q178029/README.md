@@ -6,6 +6,8 @@ permalink: /kb/178/Q178029/
 
 ## Q178029: WD97: Forcing Word to Save a Document with the .wpd Extension
 
+{% raw %}
+
 	Article: Q178029
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -156,3 +158,5 @@ permalink: /kb/178/Q178029/
 	
 	=============================================================================
 	
+
+{% endraw %}

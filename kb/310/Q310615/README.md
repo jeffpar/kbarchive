@@ -6,6 +6,8 @@ permalink: /kb/310/Q310615/
 
 ## Q310615: SMS: Datalodr Cannot Process Inventory from Japanese Windows XP
 
+{% raw %}
+
 	Article: Q310615
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -66,3 +68,5 @@ permalink: /kb/310/Q310615/
 	
 	=============================================================================
 	
+
+{% endraw %}

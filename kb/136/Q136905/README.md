@@ -6,6 +6,8 @@ permalink: /kb/136/Q136905/
 
 ## Q136905: Ventura Does Not Launch After Installing Multimedia
 
+{% raw %}
+
 	Article: Q136905
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1994 edition,1995 edition; WINDOWS:1.0,1.0a,2.0
@@ -132,3 +134,5 @@ permalink: /kb/136/Q136905/
 	
 	=============================================================================
 	
+
+{% endraw %}

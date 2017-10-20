@@ -6,6 +6,8 @@ permalink: /kb/192/Q192589/
 
 ## Q192589: Encarta 98 Research Organizer Err Msg: Cannot Find the File...
 
+{% raw %}
+
 	Article: Q192589
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -116,3 +118,5 @@ permalink: /kb/192/Q192589/
 	
 	=============================================================================
 	
+
+{% endraw %}

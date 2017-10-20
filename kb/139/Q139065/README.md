@@ -6,6 +6,8 @@ permalink: /kb/139/Q139065/
 
 ## Q139065: Services For Macintosh on Windows NT 3.51 Service Pack 2 Hangs
 
+{% raw %}
+
 	Article: Q139065
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -63,3 +65,5 @@ permalink: /kb/139/Q139065/
 	
 	=============================================================================
 	
+
+{% endraw %}

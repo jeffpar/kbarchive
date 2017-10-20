@@ -6,6 +6,8 @@ permalink: /kb/077/Q77365/
 
 ## Q77365: Considerations for Programming DATA NONE DLLs
 
+{% raw %}
+
 	Article: Q77365
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -112,3 +114,5 @@ permalink: /kb/077/Q77365/
 	
 	=============================================================================
 	
+
+{% endraw %}

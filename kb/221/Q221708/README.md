@@ -6,6 +6,8 @@ permalink: /kb/221/Q221708/
 
 ## Q221708: FIX: Class Browser Open File History List Truncates File Names
 
+{% raw %}
+
 	Article: Q221708
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -80,3 +82,5 @@ permalink: /kb/221/Q221708/
 	
 	=============================================================================
 	
+
+{% endraw %}

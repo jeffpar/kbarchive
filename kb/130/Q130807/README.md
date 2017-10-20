@@ -6,6 +6,8 @@ permalink: /kb/130/Q130807/
 
 ## Q130807: BUG: READ w/ Numeric Literal Subscript Causes Access Violation
 
+{% raw %}
+
 	Article: Q130807
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -110,3 +112,5 @@ permalink: /kb/130/Q130807/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234065/
 
 ## Q234065: XGEN: Troubleshooting the MTA Queue to Internet Mail Service
 
+{% raw %}
+
 	Article: Q234065
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -121,3 +123,5 @@ permalink: /kb/234/Q234065/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176828/
 
 ## Q176828: MSN Sign-In Screen Prompts Repeatedly in Windows NT
 
+{% raw %}
+
 	Article: Q176828
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2.5; winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/176/Q176828/
 	
 	=============================================================================
 	
+
+{% endraw %}

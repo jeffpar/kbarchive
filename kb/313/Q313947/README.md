@@ -6,6 +6,8 @@ permalink: /kb/313/Q313947/
 
 ## Q313947: ENC2002:  &quot;Page Cannot Be Displayed&quot; Err Msg Starting Researcher
 
+{% raw %}
+
 	Article: Q313947
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -92,3 +94,5 @@ permalink: /kb/313/Q313947/
 	
 	=============================================================================
 	
+
+{% endraw %}

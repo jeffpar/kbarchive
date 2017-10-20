@@ -6,6 +6,8 @@ permalink: /kb/189/Q189193/
 
 ## Q189193: XADM: Problems Occur When Incorrect Property Is Set on Message
 
+{% raw %}
+
 	Article: Q189193
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5,8.03,8.5
@@ -76,3 +78,5 @@ permalink: /kb/189/Q189193/
 	
 	=============================================================================
 	
+
+{% endraw %}

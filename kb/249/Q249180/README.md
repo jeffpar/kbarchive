@@ -6,6 +6,8 @@ permalink: /kb/249/Q249180/
 
 ## Q249180: Desktop Applications with Microsoft Visual C++ 6.0 MCSD Training
 
+{% raw %}
+
 	Article: Q249180
 	Product(s): Microsoft Press
 	Version(s): 
@@ -732,3 +734,5 @@ permalink: /kb/249/Q249180/
 	
 	=============================================================================
 	
+
+{% endraw %}

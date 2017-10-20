@@ -6,6 +6,8 @@ permalink: /kb/109/Q109613/
 
 ## Q109613: How to Run Another Application from FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q109613
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -131,3 +133,5 @@ permalink: /kb/109/Q109613/
 	
 	=============================================================================
 	
+
+{% endraw %}

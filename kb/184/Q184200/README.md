@@ -6,6 +6,8 @@ permalink: /kb/184/Q184200/
 
 ## Q184200: FIX: Error 405: &quot;Unable to Show Modal Form Within this Context&quot;
 
+{% raw %}
+
 	Article: Q184200
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -112,3 +114,5 @@ permalink: /kb/184/Q184200/
 	
 	=============================================================================
 	
+
+{% endraw %}

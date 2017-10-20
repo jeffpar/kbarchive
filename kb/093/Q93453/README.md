@@ -6,6 +6,8 @@ permalink: /kb/093/Q93453/
 
 ## Q93453: PRINTERS.WRI from Windows for Workgroups Version 3.1
 
+{% raw %}
+
 	Article: Q93453
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -708,3 +710,5 @@ permalink: /kb/093/Q93453/
 	
 	=============================================================================
 	
+
+{% endraw %}

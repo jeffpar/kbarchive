@@ -6,6 +6,8 @@ permalink: /kb/157/Q157838/
 
 ## Q157838: SMS: NetWare Client32 for Windows 95 Stops Responding on Logon
 
+{% raw %}
+
 	Article: Q157838
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -120,3 +122,5 @@ permalink: /kb/157/Q157838/
 	
 	=============================================================================
 	
+
+{% endraw %}

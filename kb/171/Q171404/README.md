@@ -6,6 +6,8 @@ permalink: /kb/171/Q171404/
 
 ## Q171404: INFO: ODBC Files Shipped with Visual C++ 5.0
 
+{% raw %}
+
 	Article: Q171404
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -137,3 +139,5 @@ permalink: /kb/171/Q171404/
 	
 	=============================================================================
 	
+
+{% endraw %}

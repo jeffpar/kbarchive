@@ -6,6 +6,8 @@ permalink: /kb/226/Q226368/
 
 ## Q226368: SMS: NAL May Search Mapped Drives for Network DLLs
 
+{% raw %}
+
 	Article: Q226368
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -81,3 +83,5 @@ permalink: /kb/226/Q226368/
 	
 	=============================================================================
 	
+
+{% endraw %}

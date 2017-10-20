@@ -6,6 +6,8 @@ permalink: /kb/032/Q32513/
 
 ## Q32513: ANSI Constants Not in Stdio.h
 
+{% raw %}
+
 	Article: Q32513
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -28,3 +30,5 @@ permalink: /kb/032/Q32513/
 	
 	#define EXIT_SUCCESS  0
 	#define EXIT_FAILURE  1
+
+{% endraw %}

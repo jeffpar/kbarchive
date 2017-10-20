@@ -6,6 +6,8 @@ permalink: /kb/116/Q116030/
 
 ## Q116030: BUG: Help Compiler Indents Text Laid Out Above Bulleted Text
 
+{% raw %}
+
 	Article: Q116030
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -84,3 +86,5 @@ permalink: /kb/116/Q116030/
 	
 	=============================================================================
 	
+
+{% endraw %}

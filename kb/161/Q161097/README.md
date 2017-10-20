@@ -6,6 +6,8 @@ permalink: /kb/161/Q161097/
 
 ## Q161097: Cinemania 97: How To Turn Opening Video Off From the Registry
 
+{% raw %}
+
 	Article: Q161097
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -85,3 +87,5 @@ permalink: /kb/161/Q161097/
 	
 	=============================================================================
 	
+
+{% endraw %}

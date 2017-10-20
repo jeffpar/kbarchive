@@ -6,6 +6,8 @@ permalink: /kb/136/Q136944/
 
 ## Q136944: PRB: Cannot Ignore Activate Event When It Contains an Error
 
+{% raw %}
+
 	Article: Q136944
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -70,3 +72,5 @@ permalink: /kb/136/Q136944/
 	
 	=============================================================================
 	
+
+{% endraw %}

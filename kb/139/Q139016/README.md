@@ -6,6 +6,8 @@ permalink: /kb/139/Q139016/
 
 ## Q139016: Optimizing WFWG 3.11 for Real-Mode NetBIOS Programs
 
+{% raw %}
+
 	Article: Q139016
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -132,3 +134,5 @@ permalink: /kb/139/Q139016/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/305/Q305289/
 
 ## Q305289: ENC2002: 100% CPU Usage Indicated When You Load 3D Virtual Tour
 
+{% raw %}
+
 	Article: Q305289
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -46,3 +48,5 @@ permalink: /kb/305/Q305289/
 	
 	=============================================================================
 	
+
+{% endraw %}

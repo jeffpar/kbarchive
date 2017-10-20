@@ -6,6 +6,8 @@ permalink: /kb/166/Q166305/
 
 ## Q166305: HOWTO: Reconnecting a Visual C++ Project to Source Control
 
+{% raw %}
+
 	Article: Q166305
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/166/Q166305/
 	
 	=============================================================================
 	
+
+{% endraw %}

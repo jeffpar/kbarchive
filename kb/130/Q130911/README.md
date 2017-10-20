@@ -6,6 +6,8 @@ permalink: /kb/130/Q130911/
 
 ## Q130911: 16-bit Applications Hang Using Sony CDU 3x CD-ROM
 
+{% raw %}
+
 	Article: Q130911
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -61,3 +63,5 @@ permalink: /kb/130/Q130911/
 	
 	=============================================================================
 	
+
+{% endraw %}

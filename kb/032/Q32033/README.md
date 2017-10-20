@@ -6,6 +6,8 @@ permalink: /kb/032/Q32033/
 
 ## Q32033: Preventing Generation of Tabs in the Edited Disk Files
 
+{% raw %}
+
 	Article: Q32033
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -29,3 +31,5 @@ permalink: /kb/032/Q32033/
 	writing from memory to disk.
 	   For more information on the ENTAB switch, please refer to Table 7.2
 	on Page 59 of the "Microsoft Editor User's Guide."
+
+{% endraw %}

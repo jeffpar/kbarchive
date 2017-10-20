@@ -6,6 +6,8 @@ permalink: /kb/186/Q186798/
 
 ## Q186798: Populating Connection Manager Profile Using the INS File
 
+{% raw %}
+
 	Article: Q186798
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -73,3 +75,5 @@ permalink: /kb/186/Q186798/
 	
 	=============================================================================
 	
+
+{% endraw %}

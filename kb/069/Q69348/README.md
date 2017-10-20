@@ -6,6 +6,8 @@ permalink: /kb/069/Q69348/
 
 ## Q69348: CVP May Generate a Trap B with Large Programs Under OS/2 1.30
 
+{% raw %}
+
 	Article: Q69348
 	Product(s): See article
 	Version(s): 2.20 2.30 3.00 3.10 3.11
@@ -49,3 +51,5 @@ permalink: /kb/069/Q69348/
 	not a problem with CodeView. This change is being reconsidered for
 	future versions of OS/2. New information will be posted here as it
 	becomes available.
+
+{% endraw %}

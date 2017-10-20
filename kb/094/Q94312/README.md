@@ -6,6 +6,8 @@ permalink: /kb/094/Q94312/
 
 ## Q94312: How To: Customizing the WFWG Mail and Schedule+ Chime Sound
 
+{% raw %}
+
 	Article: Q94312
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/094/Q94312/
 	
 	=============================================================================
 	
+
+{% endraw %}

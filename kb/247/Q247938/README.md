@@ -6,6 +6,8 @@ permalink: /kb/247/Q247938/
 
 ## Q247938: SMS 2.0 and SMS Service Pack 1 Are Not Supported on Windows 2000
 
+{% raw %}
+
 	Article: Q247938
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2000; winnt:2.0,2.0 SP1
@@ -40,3 +42,5 @@ permalink: /kb/247/Q247938/
 	
 	=============================================================================
 	
+
+{% endraw %}

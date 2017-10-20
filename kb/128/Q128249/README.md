@@ -6,6 +6,8 @@ permalink: /kb/128/Q128249/
 
 ## Q128249: Windows NT Hangs During Network File Copy with 3C679
 
+{% raw %}
+
 	Article: Q128249
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/128/Q128249/
 	
 	=============================================================================
 	
+
+{% endraw %}

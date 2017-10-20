@@ -6,6 +6,8 @@ permalink: /kb/199/Q199532/
 
 ## Q199532: XWEB:Netscape Navigator for Solaris Corrupts Options Page in OWA
 
+{% raw %}
+
 	Article: Q199532
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/199/Q199532/
 	
 	=============================================================================
 	
+
+{% endraw %}

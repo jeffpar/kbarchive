@@ -6,6 +6,8 @@ permalink: /kb/198/Q198060/
 
 ## Q198060: Program Runs Slowly on Terminal Server
 
+{% raw %}
+
 	Article: Q198060
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -93,3 +95,5 @@ permalink: /kb/198/Q198060/
 	
 	=============================================================================
 	
+
+{% endraw %}

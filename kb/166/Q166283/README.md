@@ -6,6 +6,8 @@ permalink: /kb/166/Q166283/
 
 ## Q166283: Cannot Install RIP for Internet Protocol
 
+{% raw %}
+
 	Article: Q166283
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/166/Q166283/
 	
 	=============================================================================
 	
+
+{% endraw %}

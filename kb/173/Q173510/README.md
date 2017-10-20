@@ -6,6 +6,8 @@ permalink: /kb/173/Q173510/
 
 ## Q173510: XCON: NDR Sent to Originator Instead of DL Owner
 
+{% raw %}
+
 	Article: Q173510
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -59,3 +61,5 @@ permalink: /kb/173/Q173510/
 	
 	=============================================================================
 	
+
+{% endraw %}

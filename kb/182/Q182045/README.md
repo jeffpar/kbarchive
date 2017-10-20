@@ -6,6 +6,8 @@ permalink: /kb/182/Q182045/
 
 ## Q182045: FIX: Excessive Delay Before Build, Export Makefile, or Debug
 
+{% raw %}
+
 	Article: Q182045
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/182/Q182045/
 	
 	=============================================================================
 	
+
+{% endraw %}

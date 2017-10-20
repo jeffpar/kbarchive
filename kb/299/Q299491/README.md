@@ -6,6 +6,8 @@ permalink: /kb/299/Q299491/
 
 ## Q299491: FIX: Program Stops With Outstanding Class Reference
 
+{% raw %}
+
 	Article: Q299491
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0,7.0
@@ -109,3 +111,5 @@ permalink: /kb/299/Q299491/
 	
 	=============================================================================
 	
+
+{% endraw %}

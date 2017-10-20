@@ -6,6 +6,8 @@ permalink: /kb/085/Q85624/
 
 ## Q85624: How to Disable FaceLift 2.0 in Windows
 
+{% raw %}
+
 	Article: Q85624
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1
@@ -138,3 +140,5 @@ permalink: /kb/085/Q85624/
 	
 	=============================================================================
 	
+
+{% endraw %}

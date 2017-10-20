@@ -6,6 +6,8 @@ permalink: /kb/156/Q156507/
 
 ## Q156507: HOWTO: Bypass Registry Settings on Visual FoxPro Startup
 
+{% raw %}
+
 	Article: Q156507
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -62,3 +64,5 @@ permalink: /kb/156/Q156507/
 	
 	=============================================================================
 	
+
+{% endraw %}

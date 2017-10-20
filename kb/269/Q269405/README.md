@@ -6,6 +6,8 @@ permalink: /kb/269/Q269405/
 
 ## Q269405: SMS: Secondary Site Wizard Corrupts Files on Primary Site Server
 
+{% raw %}
+
 	Article: Q269405
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -58,3 +60,5 @@ permalink: /kb/269/Q269405/
 	
 	=============================================================================
 	
+
+{% endraw %}

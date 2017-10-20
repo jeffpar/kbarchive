@@ -6,6 +6,8 @@ permalink: /kb/185/Q185574/
 
 ## Q185574: XADM: Space Requirements for Exchange 5.5 Fault Tolerant Upgrade
 
+{% raw %}
+
 	Article: Q185574
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/185/Q185574/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188633/
 
 ## Q188633: XADM: Error 502: No Permissions When Accessing NNTP Server
 
+{% raw %}
+
 	Article: Q188633
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/188/Q188633/
 	
 	=============================================================================
 	
+
+{% endraw %}

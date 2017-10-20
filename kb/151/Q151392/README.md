@@ -6,6 +6,8 @@ permalink: /kb/151/Q151392/
 
 ## Q151392: Cannot Connect to MSN After Installing Pipeline
 
+{% raw %}
+
 	Article: Q151392
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -76,3 +78,5 @@ permalink: /kb/151/Q151392/
 	
 	=============================================================================
 	
+
+{% endraw %}

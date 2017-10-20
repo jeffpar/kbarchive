@@ -6,6 +6,8 @@ permalink: /kb/032/Q32836/
 
 ## Q32836: .TYPE Operator Has New Bit Settings
 
+{% raw %}
+
 	Article: Q32836
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -50,3 +52,5 @@ permalink: /kb/032/Q32836/
 	
 	=============================================================================
 	
+
+{% endraw %}

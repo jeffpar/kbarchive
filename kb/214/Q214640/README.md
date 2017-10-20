@@ -6,6 +6,8 @@ permalink: /kb/214/Q214640/
 
 ## Q214640: XFOR: Internet Mail Service Access Violation with SSL
 
+{% raw %}
+
 	Article: Q214640
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -84,3 +86,5 @@ permalink: /kb/214/Q214640/
 	
 	=============================================================================
 	
+
+{% endraw %}

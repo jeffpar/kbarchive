@@ -6,6 +6,8 @@ permalink: /kb/159/Q159235/
 
 ## Q159235: APM Drive Spin Down Supported on IDE Devices Only
 
+{% raw %}
+
 	Article: Q159235
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -48,3 +50,5 @@ permalink: /kb/159/Q159235/
 	
 	=============================================================================
 	
+
+{% endraw %}

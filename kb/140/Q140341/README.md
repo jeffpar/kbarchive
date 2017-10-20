@@ -6,6 +6,8 @@ permalink: /kb/140/Q140341/
 
 ## Q140341: INFO: Fixlist for Visual Basic 4.0 for Windows - 26-Nov-1995
 
+{% raw %}
+
 	Article: Q140341
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -116,3 +118,5 @@ permalink: /kb/140/Q140341/
 	
 	=============================================================================
 	
+
+{% endraw %}

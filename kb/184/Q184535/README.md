@@ -6,6 +6,8 @@ permalink: /kb/184/Q184535/
 
 ## Q184535: XADM: Removing a Site from an Organization
 
+{% raw %}
+
 	Article: Q184535
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/184/Q184535/
 	
 	=============================================================================
 	
+
+{% endraw %}

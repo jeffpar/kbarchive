@@ -6,6 +6,8 @@ permalink: /kb/173/Q173020/
 
 ## Q173020: MASTERING: .Frm Files Missing From Democode Folder
 
+{% raw %}
+
 	Article: Q173020
 	Product(s): Microsoft Mastering Series
 	Version(s): WINDOWS:
@@ -44,3 +46,5 @@ permalink: /kb/173/Q173020/
 	
 	=============================================================================
 	
+
+{% endraw %}

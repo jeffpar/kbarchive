@@ -6,6 +6,8 @@ permalink: /kb/149/Q149842/
 
 ## Q149842: NCP Clients Always Connect to FPNW Server on Startup
 
+{% raw %}
+
 	Article: Q149842
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -69,3 +71,5 @@ permalink: /kb/149/Q149842/
 	
 	=============================================================================
 	
+
+{% endraw %}

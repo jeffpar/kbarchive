@@ -6,6 +6,8 @@ permalink: /kb/063/Q63823/
 
 ## Q63823: Presentation Mode Not Working on PaintJet XL in Windows 3.0
 
+{% raw %}
+
 	Article: Q63823
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/063/Q63823/
 	
 	=============================================================================
 	
+
+{% endraw %}

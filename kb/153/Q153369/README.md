@@ -6,6 +6,8 @@ permalink: /kb/153/Q153369/
 
 ## Q153369: Pcmdump.exe Shows Wrong Expiration Month
 
+{% raw %}
+
 	Article: Q153369
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -51,3 +53,5 @@ permalink: /kb/153/Q153369/
 	
 	=============================================================================
 	
+
+{% endraw %}

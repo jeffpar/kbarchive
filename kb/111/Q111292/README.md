@@ -6,6 +6,8 @@ permalink: /kb/111/Q111292/
 
 ## Q111292: Windows for Workgroups 3.11 Point-to-Point Server Update
 
+{% raw %}
+
 	Article: Q111292
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -105,3 +107,5 @@ permalink: /kb/111/Q111292/
 	
 	=============================================================================
 	
+
+{% endraw %}

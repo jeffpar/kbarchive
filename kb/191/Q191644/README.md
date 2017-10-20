@@ -6,6 +6,8 @@ permalink: /kb/191/Q191644/
 
 ## Q191644: BUG: WhatsThisHelp Displays Wrong Mouse Icon On Form Title Bar
 
+{% raw %}
+
 	Article: Q191644
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -83,3 +85,5 @@ permalink: /kb/191/Q191644/
 	
 	=============================================================================
 	
+
+{% endraw %}

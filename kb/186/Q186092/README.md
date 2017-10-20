@@ -6,6 +6,8 @@ permalink: /kb/186/Q186092/
 
 ## Q186092: Virtual Globe 98: Black Screen When You Start Program
 
+{% raw %}
+
 	Article: Q186092
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -77,3 +79,5 @@ permalink: /kb/186/Q186092/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122933/
 
 ## Q122933: Event Viewer Messages for the Olicom Network Card
 
+{% raw %}
+
 	Article: Q122933
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -239,3 +241,5 @@ permalink: /kb/122/Q122933/
 	
 	=============================================================================
 	
+
+{% endraw %}

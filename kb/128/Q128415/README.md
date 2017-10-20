@@ -6,6 +6,8 @@ permalink: /kb/128/Q128415/
 
 ## Q128415: NT to LAN Manager UAS Replication Problem after using PORTUAS
 
+{% raw %}
+
 	Article: Q128415
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/128/Q128415/
 	
 	=============================================================================
 	
+
+{% endraw %}

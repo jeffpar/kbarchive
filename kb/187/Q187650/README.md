@@ -6,6 +6,8 @@ permalink: /kb/187/Q187650/
 
 ## Q187650: Error: &quot;Server Returned Invalid or Unrecognized Response&quot;
 
+{% raw %}
+
 	Article: Q187650
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0,4.0
@@ -58,3 +60,5 @@ permalink: /kb/187/Q187650/
 	
 	=============================================================================
 	
+
+{% endraw %}

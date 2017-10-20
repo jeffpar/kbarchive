@@ -6,6 +6,8 @@ permalink: /kb/172/Q172118/
 
 ## Q172118: Failure to Open Domain Error Displayed Too Soon By Manager
 
+{% raw %}
+
 	Article: Q172118
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -68,3 +70,5 @@ permalink: /kb/172/Q172118/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/073/Q73627/
 
 ## Q73627: Running MS-DOS 5.0 EMM386.EXE with VCPI Applications
 
+{% raw %}
+
 	Article: Q73627
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -73,3 +75,5 @@ permalink: /kb/073/Q73627/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94612/
 
 ## Q94612: DOCERR: Name of Standard Help Menu Incorrect for InsertItem
 
+{% raw %}
+
 	Article: Q94612
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -49,3 +51,5 @@ permalink: /kb/094/Q94612/
 	
 	=============================================================================
 	
+
+{% endraw %}

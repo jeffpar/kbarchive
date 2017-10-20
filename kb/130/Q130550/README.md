@@ -6,6 +6,8 @@ permalink: /kb/130/Q130550/
 
 ## Q130550: XCLN: Unable to Sort on Grouped Field
 
+{% raw %}
+
 	Article: Q130550
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -54,3 +56,5 @@ permalink: /kb/130/Q130550/
 	
 	=============================================================================
 	
+
+{% endraw %}

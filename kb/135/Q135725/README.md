@@ -6,6 +6,8 @@ permalink: /kb/135/Q135725/
 
 ## Q135725: PRB: Messages May Not Appear in Status Bar
 
+{% raw %}
+
 	Article: Q135725
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -89,3 +91,5 @@ permalink: /kb/135/Q135725/
 	
 	=============================================================================
 	
+
+{% endraw %}

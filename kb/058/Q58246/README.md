@@ -6,6 +6,8 @@ permalink: /kb/058/Q58246/
 
 ## Q58246: The Amount of Memory That Is Required for Registered Fonts
 
+{% raw %}
+
 	Article: Q58246
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -22,3 +24,5 @@ permalink: /kb/058/Q58246/
 	516 bytes and then use the allocated space to store information for
 	each font header. This technique of memory management is similar to
 	the way malloc allocates memory using the _amblksiz global variable.
+
+{% endraw %}

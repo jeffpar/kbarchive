@@ -6,6 +6,8 @@ permalink: /kb/309/Q309132/
 
 ## Q309132: Minimal installation fails for Swedish Retail version of Microso
 
+{% raw %}
+
 	Article: Q309132
 	Product(s): Microsoft Press
 	Version(s): 3.0
@@ -63,3 +65,5 @@ permalink: /kb/309/Q309132/
 	
 	=============================================================================
 	
+
+{% endraw %}

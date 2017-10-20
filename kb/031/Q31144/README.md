@@ -6,6 +6,8 @@ permalink: /kb/031/Q31144/
 
 ## Q31144: MEP Crashes OS/2 when Switching from Real-Mode Screen Group
 
+{% raw %}
+
 	Article: Q31144
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -52,3 +54,5 @@ permalink: /kb/031/Q31144/
 	The CTRL+C hotkey brings you back to the program selector. Once
 	there, you can select the next screen group by using the mouse or
 	cursor keys.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174478/
 
 ## Q174478: Minimizing or Maximizing Does Not Redraw Window Properly
 
+{% raw %}
+
 	Article: Q174478
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/174/Q174478/
 	
 	=============================================================================
 	
+
+{% endraw %}

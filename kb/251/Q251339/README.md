@@ -6,6 +6,8 @@ permalink: /kb/251/Q251339/
 
 ## Q251339: PRB: CopyFolder Syntax Differs for UNC Paths and Mapped Drives
 
+{% raw %}
+
 	Article: Q251339
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -125,3 +127,5 @@ permalink: /kb/251/Q251339/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139753/
 
 ## Q139753: Fonts Do Not Appear in Corel Draw 4.0 or 5.0
 
+{% raw %}
+
 	Article: Q139753
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/139/Q139753/
 	
 	=============================================================================
 	
+
+{% endraw %}

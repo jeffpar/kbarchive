@@ -6,6 +6,8 @@ permalink: /kb/190/Q190131/
 
 ## Q190131: PRB: Instantiating a Project-Compatible Server Causes Error 430
 
+{% raw %}
+
 	Article: Q190131
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -105,3 +107,5 @@ permalink: /kb/190/Q190131/
 	
 	=============================================================================
 	
+
+{% endraw %}

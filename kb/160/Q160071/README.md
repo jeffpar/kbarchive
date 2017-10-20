@@ -6,6 +6,8 @@ permalink: /kb/160/Q160071/
 
 ## Q160071: WD97: VB Code to Select or Clear a Check Box in a Dialog Box
 
+{% raw %}
+
 	Article: Q160071
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/160/Q160071/
 	
 	=============================================================================
 	
+
+{% endraw %}

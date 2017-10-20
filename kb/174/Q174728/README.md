@@ -6,6 +6,8 @@ permalink: /kb/174/Q174728/
 
 ## Q174728: XADM: Err Msg: Error Occurred While Processing E-mail Address
 
+{% raw %}
+
 	Article: Q174728
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -51,3 +53,5 @@ permalink: /kb/174/Q174728/
 	
 	=============================================================================
 	
+
+{% endraw %}

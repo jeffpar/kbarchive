@@ -6,6 +6,8 @@ permalink: /kb/129/Q129840/
 
 ## Q129840: ADVANCED WINDOWS: Corrections and Comments
 
+{% raw %}
+
 	Article: Q129840
 	Product(s): Microsoft Press
 	Version(s): 
@@ -111,3 +113,5 @@ permalink: /kb/129/Q129840/
 	
 	=============================================================================
 	
+
+{% endraw %}

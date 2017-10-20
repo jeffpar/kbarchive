@@ -6,6 +6,8 @@ permalink: /kb/173/Q173582/
 
 ## Q173582: HOWTO: Using OLE Automation to Display Outlook from VFP
 
+{% raw %}
+
 	Article: Q173582
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,6.0,97,97sp1,97sp2
@@ -96,3 +98,5 @@ permalink: /kb/173/Q173582/
 	
 	=============================================================================
 	
+
+{% endraw %}

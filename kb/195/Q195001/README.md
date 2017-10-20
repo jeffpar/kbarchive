@@ -6,6 +6,8 @@ permalink: /kb/195/Q195001/
 
 ## Q195001: Pinball Arcade: Computer Hangs When You Return to Startup Screen
 
+{% raw %}
+
 	Article: Q195001
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/195/Q195001/
 	
 	=============================================================================
 	
+
+{% endraw %}

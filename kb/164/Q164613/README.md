@@ -6,6 +6,8 @@ permalink: /kb/164/Q164613/
 
 ## Q164613: Installation Changes Made by Novell IntranetWare Client
 
+{% raw %}
+
 	Article: Q164613
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -316,3 +318,5 @@ permalink: /kb/164/Q164613/
 	
 	=============================================================================
 	
+
+{% endraw %}

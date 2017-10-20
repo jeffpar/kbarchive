@@ -6,6 +6,8 @@ permalink: /kb/079/Q79242/
 
 ## Q79242: BUG: Some Property Values May Be Incorrect in Maximized Form
 
+{% raw %}
+
 	Article: Q79242
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,3.0,3.1
@@ -101,3 +103,5 @@ permalink: /kb/079/Q79242/
 	
 	=============================================================================
 	
+
+{% endraw %}

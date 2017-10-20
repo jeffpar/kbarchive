@@ -6,6 +6,8 @@ permalink: /kb/184/Q184675/
 
 ## Q184675: BUG: PictureBox Prints Incorrectly with PrintForm
 
+{% raw %}
+
 	Article: Q184675
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -103,3 +105,5 @@ permalink: /kb/184/Q184675/
 	
 	=============================================================================
 	
+
+{% endraw %}

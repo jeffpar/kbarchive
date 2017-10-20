@@ -6,6 +6,8 @@ permalink: /kb/118/Q118937/
 
 ## Q118937: PRB: Files Copied from MS-DOS to Mac Have Wrong Icon and Type
 
+{% raw %}
+
 	Article: Q118937
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -144,3 +146,5 @@ permalink: /kb/118/Q118937/
 	
 	=============================================================================
 	
+
+{% endraw %}

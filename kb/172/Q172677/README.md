@@ -6,6 +6,8 @@ permalink: /kb/172/Q172677/
 
 ## Q172677: WD97: &quot;Appellant vs. Appellee&quot; Added to Pleading Wizard
 
+{% raw %}
+
 	Article: Q172677
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/172/Q172677/
 	
 	=============================================================================
 	
+
+{% endraw %}

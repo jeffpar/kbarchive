@@ -6,6 +6,8 @@ permalink: /kb/188/Q188977/
 
 ## Q188977: HOWTO: Use the Win32 API to Access File Dates and Times
 
+{% raw %}
+
 	Article: Q188977
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -319,3 +321,5 @@ permalink: /kb/188/Q188977/
 	
 	=============================================================================
 	
+
+{% endraw %}

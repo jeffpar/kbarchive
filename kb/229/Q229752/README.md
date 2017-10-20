@@ -6,6 +6,8 @@ permalink: /kb/229/Q229752/
 
 ## Q229752: BUG: IDE Uses All Resources When Breakpoint is Hit in Debug Mode
 
+{% raw %}
+
 	Article: Q229752
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -105,3 +107,5 @@ permalink: /kb/229/Q229752/
 	
 	=============================================================================
 	
+
+{% endraw %}

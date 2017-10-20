@@ -6,6 +6,8 @@ permalink: /kb/038/Q38810/
 
 ## Q38810: Error L1089 Filename : Cannot Open Response File
 
+{% raw %}
+
 	Article: Q38810
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -34,3 +36,5 @@ permalink: /kb/038/Q38810/
 	parentheses.
 	
 	Also, check the TMP environment variable setting and/or TSR's.
+
+{% endraw %}

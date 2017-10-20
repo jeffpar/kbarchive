@@ -6,6 +6,8 @@ permalink: /kb/094/Q94674/
 
 ## Q94674: HPPCL5E: Memory Setting Goes Up to 130 MB
 
+{% raw %}
+
 	Article: Q94674
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/094/Q94674/
 	
 	=============================================================================
 	
+
+{% endraw %}

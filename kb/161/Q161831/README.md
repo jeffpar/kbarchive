@@ -6,6 +6,8 @@ permalink: /kb/161/Q161831/
 
 ## Q161831: FIX: &quot;Error loading SETUPAPI.DLL&quot; Installing VB5CCE on NT 3.51
 
+{% raw %}
+
 	Article: Q161831
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -80,3 +82,5 @@ permalink: /kb/161/Q161831/
 	
 	=============================================================================
 	
+
+{% endraw %}

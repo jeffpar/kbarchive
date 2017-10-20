@@ -6,6 +6,8 @@ permalink: /kb/173/Q173192/
 
 ## Q173192: Logon Total Counter in PerfMon Returns Incorrect Values
 
+{% raw %}
+
 	Article: Q173192
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -49,3 +51,5 @@ permalink: /kb/173/Q173192/
 	
 	=============================================================================
 	
+
+{% endraw %}

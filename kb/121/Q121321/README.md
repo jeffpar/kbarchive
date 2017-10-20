@@ -6,6 +6,8 @@ permalink: /kb/121/Q121321/
 
 ## Q121321: DOC:CDocTemplate::CreateNewFrame() Won't Make New CDocument
 
+{% raw %}
+
 	Article: Q121321
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00 1.50 1.51 | 1.00 2.00
@@ -66,3 +68,5 @@ permalink: /kb/121/Q121321/
 	
 	=============================================================================
 	
+
+{% endraw %}

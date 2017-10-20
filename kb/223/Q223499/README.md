@@ -6,6 +6,8 @@ permalink: /kb/223/Q223499/
 
 ## Q223499: PRB: Error C0042116: Files Specified in Section Are Busy
 
+{% raw %}
+
 	Article: Q223499
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/223/Q223499/
 	
 	=============================================================================
 	
+
+{% endraw %}

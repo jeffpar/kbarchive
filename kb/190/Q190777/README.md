@@ -6,6 +6,8 @@ permalink: /kb/190/Q190777/
 
 ## Q190777: FIX: PDW: Out-of-Date Dependency Information COMCT332.OCX
 
+{% raw %}
+
 	Article: Q190777
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -110,3 +112,5 @@ permalink: /kb/190/Q190777/
 	
 	=============================================================================
 	
+
+{% endraw %}

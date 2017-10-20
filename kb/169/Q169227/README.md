@@ -6,6 +6,8 @@ permalink: /kb/169/Q169227/
 
 ## Q169227: Windows 95 Logon Script does not Process Correctly
 
+{% raw %}
+
 	Article: Q169227
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/169/Q169227/
 	
 	=============================================================================
 	
+
+{% endraw %}

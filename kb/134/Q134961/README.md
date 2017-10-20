@@ -6,6 +6,8 @@ permalink: /kb/134/Q134961/
 
 ## Q134961: Network Monitor Hangs Windows for Workgroups 3.11
 
+{% raw %}
+
 	Article: Q134961
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -53,3 +55,5 @@ permalink: /kb/134/Q134961/
 	
 	=============================================================================
 	
+
+{% endraw %}

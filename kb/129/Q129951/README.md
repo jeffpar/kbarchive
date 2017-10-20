@@ -6,6 +6,8 @@ permalink: /kb/129/Q129951/
 
 ## Q129951: Problems Using Orchid Celsius VLB Display Card in Windows 95
 
+{% raw %}
+
 	Article: Q129951
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -74,3 +76,5 @@ permalink: /kb/129/Q129951/
 	
 	=============================================================================
 	
+
+{% endraw %}

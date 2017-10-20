@@ -6,6 +6,8 @@ permalink: /kb/146/Q146267/
 
 ## Q146267: XCLN: Selecting Sort for Case Sensitivity Inconsistent
 
+{% raw %}
+
 	Article: Q146267
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/146/Q146267/
 	
 	=============================================================================
 	
+
+{% endraw %}

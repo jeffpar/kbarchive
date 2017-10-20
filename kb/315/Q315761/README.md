@@ -6,6 +6,8 @@ permalink: /kb/315/Q315761/
 
 ## Q315761: FIX: SQLTables() with a Server-Side Cursor Returns No Data
 
+{% raw %}
+
 	Article: Q315761
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.5,2.0,2.1,2.5,2.6,2.6 SP1,2.6 sp2,2.65,2.65.0212,2.7,2000.80.194,3.0,3.5,3.6,3.7
@@ -144,3 +146,5 @@ permalink: /kb/315/Q315761/
 	
 	=============================================================================
 	
+
+{% endraw %}

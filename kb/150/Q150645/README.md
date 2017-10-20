@@ -6,6 +6,8 @@ permalink: /kb/150/Q150645/
 
 ## Q150645: INFO: Minor Inconsistencies in the Header Log for &lt;filename&gt;
 
+{% raw %}
+
 	Article: Q150645
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/150/Q150645/
 	
 	=============================================================================
 	
+
+{% endraw %}

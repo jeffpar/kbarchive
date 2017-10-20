@@ -6,6 +6,8 @@ permalink: /kb/148/Q148648/
 
 ## Q148648: Stopping the Browser Service Causes STOP: 0x0000000A Error
 
+{% raw %}
+
 	Article: Q148648
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -55,3 +57,5 @@ permalink: /kb/148/Q148648/
 	
 	=============================================================================
 	
+
+{% endraw %}

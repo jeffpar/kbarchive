@@ -6,6 +6,8 @@ permalink: /kb/274/Q274573/
 
 ## Q274573: XADM: Delegate Permissions Assigned Through a DL Do Not Work
 
+{% raw %}
+
 	Article: Q274573
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP1,5.5 SP2,5.5 SP3
@@ -89,3 +91,5 @@ permalink: /kb/274/Q274573/
 	
 	=============================================================================
 	
+
+{% endraw %}

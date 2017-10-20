@@ -6,6 +6,8 @@ permalink: /kb/105/Q105311/
 
 ## Q105311: PC WSPlus: Default Reminder Poll Time in Schedule+
 
+{% raw %}
+
 	Article: Q105311
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -45,3 +47,5 @@ permalink: /kb/105/Q105311/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131817/
 
 ## Q131817: Julia Child: Readme.wri Contents (Part 2 of 2)
 
+{% raw %}
+
 	Article: Q131817
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -304,3 +306,5 @@ permalink: /kb/131/Q131817/
 	
 	=============================================================================
 	
+
+{% endraw %}

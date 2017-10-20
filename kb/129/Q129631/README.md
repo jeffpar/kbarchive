@@ -6,6 +6,8 @@ permalink: /kb/129/Q129631/
 
 ## Q129631: Understanding Code Pages in Visual FoxPro
 
+{% raw %}
+
 	Article: Q129631
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -166,3 +168,5 @@ permalink: /kb/129/Q129631/
 	
 	=============================================================================
 	
+
+{% endraw %}

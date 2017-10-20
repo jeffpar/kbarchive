@@ -6,6 +6,8 @@ permalink: /kb/159/Q159278/
 
 ## Q159278: PRB: Can Log on to a Locked Visual SourceSafe Database
 
+{% raw %}
+
 	Article: Q159278
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/159/Q159278/
 	
 	=============================================================================
 	
+
+{% endraw %}

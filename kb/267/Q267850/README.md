@@ -6,6 +6,8 @@ permalink: /kb/267/Q267850/
 
 ## Q267850: Anonymous User Has Access Even When File Permissions Are Denied
 
+{% raw %}
+
 	Article: Q267850
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -92,3 +94,5 @@ permalink: /kb/267/Q267850/
 	
 	=============================================================================
 	
+
+{% endraw %}

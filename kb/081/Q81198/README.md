@@ -6,6 +6,8 @@ permalink: /kb/081/Q81198/
 
 ## Q81198: SAMPLE: OLE Implementation Guides and Sample Code
 
+{% raw %}
+
 	Article: Q81198
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -71,3 +73,5 @@ permalink: /kb/081/Q81198/
 	
 	=============================================================================
 	
+
+{% endraw %}

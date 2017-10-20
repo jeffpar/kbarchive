@@ -6,6 +6,8 @@ permalink: /kb/148/Q148864/
 
 ## Q148864: File Conflict Installing IrDA with OEM Service Release 1
 
+{% raw %}
+
 	Article: Q148864
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -59,3 +61,5 @@ permalink: /kb/148/Q148864/
 	
 	=============================================================================
 	
+
+{% endraw %}

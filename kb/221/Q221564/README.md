@@ -6,6 +6,8 @@ permalink: /kb/221/Q221564/
 
 ## Q221564: HOWTO: Uninstall Visual SourceSafe 6.0
 
+{% raw %}
+
 	Article: Q221564
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -89,3 +91,5 @@ permalink: /kb/221/Q221564/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163995/
 
 ## Q163995: FIX: C2989 Declaring Template Class in a Namespace
 
+{% raw %}
+
 	Article: Q163995
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -78,3 +80,5 @@ permalink: /kb/163/Q163995/
 	
 	=============================================================================
 	
+
+{% endraw %}

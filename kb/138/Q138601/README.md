@@ -6,6 +6,8 @@ permalink: /kb/138/Q138601/
 
 ## Q138601: How to Make a Form Disappear
 
+{% raw %}
+
 	Article: Q138601
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -76,3 +78,5 @@ permalink: /kb/138/Q138601/
 	
 	=============================================================================
 	
+
+{% endraw %}

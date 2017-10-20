@@ -6,6 +6,8 @@ permalink: /kb/230/Q230270/
 
 ## Q230270: Program Reports that 3D Hardware Acceleration Is Unavailable
 
+{% raw %}
+
 	Article: Q230270
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -104,3 +106,5 @@ permalink: /kb/230/Q230270/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197431/
 
 ## Q197431: PRB: Year Returned by DateSerial may be Unanticipated
 
+{% raw %}
+
 	Article: Q197431
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -118,3 +120,5 @@ permalink: /kb/197/Q197431/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123502/
 
 ## Q123502: Microsoft Systems Journal: January 1995
 
+{% raw %}
+
 	Article: Q123502
 	Product(s): Miscrosoft Systems Journal
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/123/Q123502/
 	
 	=============================================================================
 	
+
+{% endraw %}

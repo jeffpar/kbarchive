@@ -6,6 +6,8 @@ permalink: /kb/122/Q122761/
 
 ## Q122761: PC Win: Error Messages Associated with STORE.DLL &amp; MSMAIL.EXE
 
+{% raw %}
+
 	Article: Q122761
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -166,3 +168,5 @@ permalink: /kb/122/Q122761/
 	
 	=============================================================================
 	
+
+{% endraw %}

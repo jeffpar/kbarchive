@@ -6,6 +6,8 @@ permalink: /kb/259/Q259371/
 
 ## Q259371: BUG: ActiveX Controls Are Disabled
 
+{% raw %}
+
 	Article: Q259371
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -76,3 +78,5 @@ permalink: /kb/259/Q259371/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148274/
 
 ## Q148274: Frank Lloyd Wright: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148274
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/148/Q148274/
 	
 	=============================================================================
 	
+
+{% endraw %}

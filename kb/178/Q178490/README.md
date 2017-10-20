@@ -6,6 +6,8 @@ permalink: /kb/178/Q178490/
 
 ## Q178490: PRB: &quot;Can't Assign To Read-Only Property&quot; Error Message
 
+{% raw %}
+
 	Article: Q178490
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -139,3 +141,5 @@ permalink: /kb/178/Q178490/
 	
 	=============================================================================
 	
+
+{% endraw %}

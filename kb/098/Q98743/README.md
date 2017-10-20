@@ -6,6 +6,8 @@ permalink: /kb/098/Q98743/
 
 ## Q98743: ERR: &quot;Not a Database File&quot;; How to Modify Database Header
 
+{% raw %}
+
 	Article: Q98743
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5x,2.6; WINDOWS:2.5x,2.6,3.0,5.0
@@ -155,3 +157,5 @@ permalink: /kb/098/Q98743/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156296/
 
 ## Q156296: PRB: CLongBinary Edits Fail with SQL Server Snapshot
 
+{% raw %}
+
 	Article: Q156296
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -71,3 +73,5 @@ permalink: /kb/156/Q156296/
 	
 	=============================================================================
 	
+
+{% endraw %}

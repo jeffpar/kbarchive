@@ -6,6 +6,8 @@ permalink: /kb/134/Q134467/
 
 ## Q134467: El Fish Game Appears to Stop Responding at Startup
 
+{% raw %}
+
 	Article: Q134467
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -74,3 +76,5 @@ permalink: /kb/134/Q134467/
 	
 	=============================================================================
 	
+
+{% endraw %}

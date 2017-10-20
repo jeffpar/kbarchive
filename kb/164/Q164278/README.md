@@ -6,6 +6,8 @@ permalink: /kb/164/Q164278/
 
 ## Q164278: FP: Error Installing FP Server Extensions if Directory Mapped
 
+{% raw %}
+
 	Article: Q164278
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97
@@ -89,3 +91,5 @@ permalink: /kb/164/Q164278/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185889/
 
 ## Q185889: HOWTO: Access Host Objects and Controls Using the ScriptControl
 
+{% raw %}
+
 	Article: Q185889
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -147,3 +149,5 @@ permalink: /kb/185/Q185889/
 	
 	=============================================================================
 	
+
+{% endraw %}

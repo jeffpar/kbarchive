@@ -6,6 +6,8 @@ permalink: /kb/176/Q176618/
 
 ## Q176618: Migration Tool for NetWare Does Not Create Local Groups
 
+{% raw %}
+
 	Article: Q176618
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -52,3 +54,5 @@ permalink: /kb/176/Q176618/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136514/
 
 ## Q136514: PC DirSync: Err Msg: Fatal Error 54 Server Name Not Accessed
 
+{% raw %}
+
 	Article: Q136514
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -49,3 +51,5 @@ permalink: /kb/136/Q136514/
 	
 	=============================================================================
 	
+
+{% endraw %}

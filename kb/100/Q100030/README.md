@@ -6,6 +6,8 @@ permalink: /kb/100/Q100030/
 
 ## Q100030: PRB: midiInputHandler GP faults in MIDIMON Sample Application
 
+{% raw %}
+
 	Article: Q100030
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -59,3 +61,5 @@ permalink: /kb/100/Q100030/
 	
 	=============================================================================
 	
+
+{% endraw %}

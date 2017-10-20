@@ -6,6 +6,8 @@ permalink: /kb/096/Q96560/
 
 ## Q96560: POWER.EXE and Advanced Power Management (APM) Support
 
+{% raw %}
+
 	Article: Q96560
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -71,3 +73,5 @@ permalink: /kb/096/Q96560/
 	
 	=============================================================================
 	
+
+{% endraw %}

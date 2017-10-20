@@ -6,6 +6,8 @@ permalink: /kb/158/Q158107/
 
 ## Q158107: GEX Setup Repeatedly Installs DirectX Drivers
 
+{% raw %}
+
 	Article: Q158107
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -43,3 +45,5 @@ permalink: /kb/158/Q158107/
 	
 	=============================================================================
 	
+
+{% endraw %}

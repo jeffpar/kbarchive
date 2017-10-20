@@ -6,6 +6,8 @@ permalink: /kb/223/Q223310/
 
 ## Q223310: Zone Err Msg: Your Current Security Settings Prohibit...
 
+{% raw %}
+
 	Article: Q223310
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -110,3 +112,5 @@ permalink: /kb/223/Q223310/
 	
 	=============================================================================
 	
+
+{% endraw %}

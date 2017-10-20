@@ -6,6 +6,8 @@ permalink: /kb/186/Q186409/
 
 ## Q186409: SMS: Using Filters in Systems Management Server Administrator
 
+{% raw %}
+
 	Article: Q186409
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -73,3 +75,5 @@ permalink: /kb/186/Q186409/
 	
 	=============================================================================
 	
+
+{% endraw %}

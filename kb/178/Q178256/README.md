@@ -6,6 +6,8 @@ permalink: /kb/178/Q178256/
 
 ## Q178256: LUA Program Hangs After Receiving Exception Request (EXR)
 
+{% raw %}
+
 	Article: Q178256
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -57,3 +59,5 @@ permalink: /kb/178/Q178256/
 	
 	=============================================================================
 	
+
+{% endraw %}

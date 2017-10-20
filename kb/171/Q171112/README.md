@@ -6,6 +6,8 @@ permalink: /kb/171/Q171112/
 
 ## Q171112: FP: 32-bit TCP/IP Required or IPF Error Starting FP Explorer
 
+{% raw %}
+
 	Article: Q171112
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97
@@ -73,3 +75,5 @@ permalink: /kb/171/Q171112/
 	
 	=============================================================================
 	
+
+{% endraw %}

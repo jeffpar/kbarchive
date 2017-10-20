@@ -6,6 +6,8 @@ permalink: /kb/125/Q125975/
 
 ## Q125975: Automating Remote RAS Logons Using SWITCH.INF Scripts
 
+{% raw %}
+
 	Article: Q125975
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11; winnt:3.1,3.5,3.51,4.0; :3.1
@@ -438,3 +440,5 @@ permalink: /kb/125/Q125975/
 	
 	=============================================================================
 	
+
+{% endraw %}

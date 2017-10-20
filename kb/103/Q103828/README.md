@@ -6,6 +6,8 @@ permalink: /kb/103/Q103828/
 
 ## Q103828: RAS Password Authentication Failed
 
+{% raw %}
+
 	Article: Q103828
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -79,3 +81,5 @@ permalink: /kb/103/Q103828/
 	
 	=============================================================================
 	
+
+{% endraw %}

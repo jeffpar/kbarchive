@@ -6,6 +6,8 @@ permalink: /kb/246/Q246793/
 
 ## Q246793: System Preparation Tool Does Not Update the Computer Host Name
 
+{% raw %}
+
 	Article: Q246793
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -134,3 +136,5 @@ permalink: /kb/246/Q246793/
 	
 	=============================================================================
 	
+
+{% endraw %}

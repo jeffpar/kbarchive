@@ -6,6 +6,8 @@ permalink: /kb/099/Q99924/
 
 ## Q99924: Inaccurate DoubleSpace Help Message: There Is No Disk in...
 
+{% raw %}
+
 	Article: Q99924
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -57,3 +59,5 @@ permalink: /kb/099/Q99924/
 	
 	=============================================================================
 	
+
+{% endraw %}

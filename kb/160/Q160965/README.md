@@ -6,6 +6,8 @@ permalink: /kb/160/Q160965/
 
 ## Q160965: Flight Simulator: Fuel Tanks Do Not Switch Automatically
 
+{% raw %}
+
 	Article: Q160965
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -78,3 +80,5 @@ permalink: /kb/160/Q160965/
 	
 	=============================================================================
 	
+
+{% endraw %}

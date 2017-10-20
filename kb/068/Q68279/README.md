@@ -6,6 +6,8 @@ permalink: /kb/068/Q68279/
 
 ## Q68279: Expanding the File Manager Directory Tree Using the SHIFT Key
 
+{% raw %}
+
 	Article: Q68279
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/068/Q68279/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/071/Q71257/
 
 ## Q71257: Mac Srv: Deleting Messages Not Work Properly Under Low Memory
 
+{% raw %}
+
 	Article: Q71257
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/071/Q71257/
 	
 	=============================================================================
 	
+
+{% endraw %}

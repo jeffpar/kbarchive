@@ -6,6 +6,8 @@ permalink: /kb/216/Q216793/
 
 ## Q216793: DHCP Server Stops Leasing Addresses if Sharing Violation Occurs
 
+{% raw %}
+
 	Article: Q216793
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -126,3 +128,5 @@ permalink: /kb/216/Q216793/
 	
 	=============================================================================
 	
+
+{% endraw %}

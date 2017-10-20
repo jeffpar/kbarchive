@@ -6,6 +6,8 @@ permalink: /kb/162/Q162774/
 
 ## Q162774: Policy Editor Crashes When Using Large Custom ADM Files
 
+{% raw %}
+
 	Article: Q162774
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/162/Q162774/
 	
 	=============================================================================
 	
+
+{% endraw %}

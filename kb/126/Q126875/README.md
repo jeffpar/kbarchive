@@ -6,6 +6,8 @@ permalink: /kb/126/Q126875/
 
 ## Q126875: Creating Macintosh Disk Images from Microsoft Select
 
+{% raw %}
+
 	Article: Q126875
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/126/Q126875/
 	
 	=============================================================================
 	
+
+{% endraw %}

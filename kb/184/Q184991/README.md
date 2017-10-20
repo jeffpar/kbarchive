@@ -6,6 +6,8 @@ permalink: /kb/184/Q184991/
 
 ## Q184991: XFOR: Embedded Message Title Line Truncated to 30 Chars
 
+{% raw %}
+
 	Article: Q184991
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -46,3 +48,5 @@ permalink: /kb/184/Q184991/
 	
 	=============================================================================
 	
+
+{% endraw %}

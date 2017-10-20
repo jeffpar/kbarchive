@@ -6,6 +6,8 @@ permalink: /kb/104/Q104238/
 
 ## Q104238: FIX: ClassWizard Cannot Read .CLW File &gt; 65530 Bytes
 
+{% raw %}
+
 	Article: Q104238
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -117,3 +119,5 @@ permalink: /kb/104/Q104238/
 	
 	=============================================================================
 	
+
+{% endraw %}

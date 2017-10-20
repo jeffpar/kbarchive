@@ -6,6 +6,8 @@ permalink: /kb/038/Q38159/
 
 ## Q38159: Mouse Cursor Disappears on Monochrome Displays
 
+{% raw %}
+
 	Article: Q38159
 	Product(s): See article
 	Version(s): 2.00
@@ -44,3 +46,5 @@ permalink: /kb/038/Q38159/
 	QuickC will now display its output (including the mouse cursor) in
 	black and white mode. This setting will remain in effect throughout
 	this QuickC session and all subsequent sessions until you change it.
+
+{% endraw %}

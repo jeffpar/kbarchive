@@ -6,6 +6,8 @@ permalink: /kb/305/Q305985/
 
 ## Q305985: HOWTO: Add Functionality to Your Dynamically Built Grid
 
+{% raw %}
+
 	Article: Q305985
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -110,3 +112,5 @@ permalink: /kb/305/Q305985/
 	
 	=============================================================================
 	
+
+{% endraw %}

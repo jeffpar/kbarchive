@@ -6,6 +6,8 @@ permalink: /kb/134/Q134643/
 
 ## Q134643: FIX: Alter Table Add Primary Key Error Not Trappable
 
+{% raw %}
+
 	Article: Q134643
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -91,3 +93,5 @@ permalink: /kb/134/Q134643/
 	
 	=============================================================================
 	
+
+{% endraw %}

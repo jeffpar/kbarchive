@@ -6,6 +6,8 @@ permalink: /kb/230/Q230331/
 
 ## Q230331: XFOR: SMTP Address Generator Includes Consecutive Periods
 
+{% raw %}
+
 	Article: Q230331
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -87,3 +89,5 @@ permalink: /kb/230/Q230331/
 	
 	=============================================================================
 	
+
+{% endraw %}

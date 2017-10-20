@@ -6,6 +6,8 @@ permalink: /kb/100/Q100485/
 
 ## Q100485: Musical Instruments: Colored Icons Turn Black and White
 
+{% raw %}
+
 	Article: Q100485
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -50,3 +52,5 @@ permalink: /kb/100/Q100485/
 	
 	=============================================================================
 	
+
+{% endraw %}

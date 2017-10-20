@@ -6,6 +6,8 @@ permalink: /kb/255/Q255783/
 
 ## Q255783: Allegiance Err Msg: Invalid Page Fault in Module Allegiance.exe
 
+{% raw %}
+
 	Article: Q255783
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -76,3 +78,5 @@ permalink: /kb/255/Q255783/
 	
 	=============================================================================
 	
+
+{% endraw %}

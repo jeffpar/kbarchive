@@ -6,6 +6,8 @@ permalink: /kb/104/Q104074/
 
 ## Q104074: Err Msg: Incorrect Function... When Accessing a CD-ROM
 
+{% raw %}
+
 	Article: Q104074
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -81,3 +83,5 @@ permalink: /kb/104/Q104074/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112880/
 
 ## Q112880: PC WSPlus: Access Privileges Invalid After Using MOVEUSER
 
+{% raw %}
+
 	Article: Q112880
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -55,3 +57,5 @@ permalink: /kb/112/Q112880/
 	
 	=============================================================================
 	
+
+{% endraw %}

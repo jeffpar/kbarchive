@@ -6,6 +6,8 @@ permalink: /kb/155/Q155519/
 
 ## Q155519: Using the Shortcut Key to Enable FilterKeys
 
+{% raw %}
+
 	Article: Q155519
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -104,3 +106,5 @@ permalink: /kb/155/Q155519/
 	
 	=============================================================================
 	
+
+{% endraw %}

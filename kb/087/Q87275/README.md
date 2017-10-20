@@ -6,6 +6,8 @@ permalink: /kb/087/Q87275/
 
 ## Q87275: BACKSPACE Key Does Not Delete Characters in VT100 Emulation
 
+{% raw %}
+
 	Article: Q87275
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/087/Q87275/
 	
 	=============================================================================
 	
+
+{% endraw %}

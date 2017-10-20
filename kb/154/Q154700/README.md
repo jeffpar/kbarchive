@@ -6,6 +6,8 @@ permalink: /kb/154/Q154700/
 
 ## Q154700: HALMCA Does Not Check got PCI
 
+{% raw %}
+
 	Article: Q154700
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -68,3 +70,5 @@ permalink: /kb/154/Q154700/
 	
 	=============================================================================
 	
+
+{% endraw %}

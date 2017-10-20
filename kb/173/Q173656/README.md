@@ -6,6 +6,8 @@ permalink: /kb/173/Q173656/
 
 ## Q173656: XFOR: How to Troubleshoot Authenticated IMS Logons w/ Base64.exe
 
+{% raw %}
+
 	Article: Q173656
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/173/Q173656/
 	
 	=============================================================================
 	
+
+{% endraw %}

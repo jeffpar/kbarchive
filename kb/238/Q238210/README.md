@@ -6,6 +6,8 @@ permalink: /kb/238/Q238210/
 
 ## Q238210: HTTP Keep Alive Header Sent Whenever ASP Buffering is Enabled
 
+{% raw %}
+
 	Article: Q238210
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -62,3 +64,5 @@ permalink: /kb/238/Q238210/
 	
 	=============================================================================
 	
+
+{% endraw %}

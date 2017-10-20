@@ -6,6 +6,8 @@ permalink: /kb/276/Q276199/
 
 ## Q276199: SNA Manager (Snaexp.exe) Trapping in CSnaOleObj::CreateObject
 
+{% raw %}
+
 	Article: Q276199
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -96,3 +98,5 @@ permalink: /kb/276/Q276199/
 	
 	=============================================================================
 	
+
+{% endraw %}

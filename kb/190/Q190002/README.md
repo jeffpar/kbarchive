@@ -6,6 +6,8 @@ permalink: /kb/190/Q190002/
 
 ## Q190002: CGI and Perl Applications Do Not Run in a New Console
 
+{% raw %}
+
 	Article: Q190002
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/190/Q190002/
 	
 	=============================================================================
 	
+
+{% endraw %}

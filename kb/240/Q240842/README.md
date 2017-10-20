@@ -6,6 +6,8 @@ permalink: /kb/240/Q240842/
 
 ## Q240842: Using Java Servlets on IIS
 
+{% raw %}
+
 	Article: Q240842
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -74,3 +76,5 @@ permalink: /kb/240/Q240842/
 	
 	=============================================================================
 	
+
+{% endraw %}

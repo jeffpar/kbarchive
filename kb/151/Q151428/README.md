@@ -6,6 +6,8 @@ permalink: /kb/151/Q151428/
 
 ## Q151428: Cannot Rename Disk in DBCS Windows 95
 
+{% raw %}
+
 	Article: Q151428
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -70,3 +72,5 @@ permalink: /kb/151/Q151428/
 	
 	=============================================================================
 	
+
+{% endraw %}

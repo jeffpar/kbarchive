@@ -6,6 +6,8 @@ permalink: /kb/171/Q171501/
 
 ## Q171501: FIX: User Control Moves When Width/Height Is Set in Container
 
+{% raw %}
+
 	Article: Q171501
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -117,3 +119,5 @@ permalink: /kb/171/Q171501/
 	
 	=============================================================================
 	
+
+{% endraw %}

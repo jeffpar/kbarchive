@@ -6,6 +6,8 @@ permalink: /kb/159/Q159882/
 
 ## Q159882: Slow Shutdown When LM Announce Is Enabled
 
+{% raw %}
+
 	Article: Q159882
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -56,3 +58,5 @@ permalink: /kb/159/Q159882/
 	
 	=============================================================================
 	
+
+{% endraw %}

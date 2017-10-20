@@ -6,6 +6,8 @@ permalink: /kb/195/Q195141/
 
 ## Q195141: WD97: Soft Page Breaks Appear Misplaced in Tables in Normal View
 
+{% raw %}
+
 	Article: Q195141
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -146,3 +148,5 @@ permalink: /kb/195/Q195141/
 	
 	=============================================================================
 	
+
+{% endraw %}

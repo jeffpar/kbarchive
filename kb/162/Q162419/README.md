@@ -6,6 +6,8 @@ permalink: /kb/162/Q162419/
 
 ## Q162419: STOP 0x0000001e Installing IBM PeerMaster MCA Adapter
 
+{% raw %}
+
 	Article: Q162419
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/162/Q162419/
 	
 	=============================================================================
 	
+
+{% endraw %}

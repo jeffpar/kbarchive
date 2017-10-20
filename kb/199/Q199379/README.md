@@ -6,6 +6,8 @@ permalink: /kb/199/Q199379/
 
 ## Q199379: XADM: Event 7000 :The System Cannot Find the File Specified
 
+{% raw %}
+
 	Article: Q199379
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/199/Q199379/
 	
 	=============================================================================
 	
+
+{% endraw %}

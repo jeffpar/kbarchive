@@ -6,6 +6,8 @@ permalink: /kb/064/Q64874/
 
 ## Q64874: Use Supplied Batch Files to Recompile Start-Up Code
 
+{% raw %}
+
 	Article: Q64874
 	Product(s): See article
 	Version(s): 6.00
@@ -29,3 +31,5 @@ permalink: /kb/064/Q64874/
 	The best way to modify the start-up code is to use the provided
 	STARTUP.BAT or STARTUP.CMD files. Documentation for the use of these
 	files may be found in STARTUP.DOC.
+
+{% endraw %}

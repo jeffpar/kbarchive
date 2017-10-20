@@ -6,6 +6,8 @@ permalink: /kb/097/Q97145/
 
 ## Q97145: PC WRmt: System Selector Does Not Validate Its Results
 
+{% raw %}
+
 	Article: Q97145
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -59,3 +61,5 @@ permalink: /kb/097/Q97145/
 	
 	=============================================================================
 	
+
+{% endraw %}

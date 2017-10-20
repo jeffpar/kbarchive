@@ -6,6 +6,8 @@ permalink: /kb/172/Q172253/
 
 ## Q172253: FIX: VB 5.0 DBCombo May Display Wrong Column for RDC 1.0
 
+{% raw %}
+
 	Article: Q172253
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97
@@ -66,3 +68,5 @@ permalink: /kb/172/Q172253/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250633/
 
 ## Q250633: Pandora's Box: How to Install and How to Remove the Program
 
+{% raw %}
+
 	Article: Q250633
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -99,3 +101,5 @@ permalink: /kb/250/Q250633/
 	
 	=============================================================================
 	
+
+{% endraw %}

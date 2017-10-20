@@ -6,6 +6,8 @@ permalink: /kb/187/Q187929/
 
 ## Q187929: XCON: Recovery Checkpoint Size Different, MTA Connection Fails
 
+{% raw %}
+
 	Article: Q187929
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -66,3 +68,5 @@ permalink: /kb/187/Q187929/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142160/
 
 ## Q142160: How to Automate FTP Installation
 
+{% raw %}
+
 	Article: Q142160
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -203,3 +205,5 @@ permalink: /kb/142/Q142160/
 	
 	=============================================================================
 	
+
+{% endraw %}

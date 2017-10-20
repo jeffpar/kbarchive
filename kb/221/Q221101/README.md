@@ -6,6 +6,8 @@ permalink: /kb/221/Q221101/
 
 ## Q221101: BUG: Visual Basic App Crashes Passing UDT w/ String &amp; Enum
 
+{% raw %}
+
 	Article: Q221101
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -159,3 +161,5 @@ permalink: /kb/221/Q221101/
 	
 	=============================================================================
 	
+
+{% endraw %}

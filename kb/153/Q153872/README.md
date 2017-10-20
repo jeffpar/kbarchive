@@ -6,6 +6,8 @@ permalink: /kb/153/Q153872/
 
 ## Q153872: INFO: DDConv Messages of Visual SourceSafe 4.0
 
+{% raw %}
+
 	Article: Q153872
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -192,3 +194,5 @@ permalink: /kb/153/Q153872/
 	
 	=============================================================================
 	
+
+{% endraw %}

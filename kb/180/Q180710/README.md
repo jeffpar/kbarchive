@@ -6,6 +6,8 @@ permalink: /kb/180/Q180710/
 
 ## Q180710: Browser Returns Error 270 (0x0000010e)
 
+{% raw %}
+
 	Article: Q180710
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/180/Q180710/
 	
 	=============================================================================
 	
+
+{% endraw %}

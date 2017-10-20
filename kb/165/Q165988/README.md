@@ -6,6 +6,8 @@ permalink: /kb/165/Q165988/
 
 ## Q165988: SNA Print Server Doesn't Interpret LU3 Orders
 
+{% raw %}
+
 	Article: Q165988
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/165/Q165988/
 	
 	=============================================================================
 	
+
+{% endraw %}

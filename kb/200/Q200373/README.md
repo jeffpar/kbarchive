@@ -6,6 +6,8 @@ permalink: /kb/200/Q200373/
 
 ## Q200373: XWEB: OWA Error: Unable to Set Default Formats and Patterns
 
+{% raw %}
+
 	Article: Q200373
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -74,3 +76,5 @@ permalink: /kb/200/Q200373/
 	
 	=============================================================================
 	
+
+{% endraw %}

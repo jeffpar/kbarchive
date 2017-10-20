@@ -6,6 +6,8 @@ permalink: /kb/256/Q256181/
 
 ## Q256181: Logo FAQ: Exposing Keyboard Focus in Remote-Control Utilities?
 
+{% raw %}
+
 	Article: Q256181
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -92,3 +94,5 @@ permalink: /kb/256/Q256181/
 	
 	=============================================================================
 	
+
+{% endraw %}

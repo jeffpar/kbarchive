@@ -6,6 +6,8 @@ permalink: /kb/178/Q178203/
 
 ## Q178203: FS98: Nothing Happens When You Click a Menu Command
 
+{% raw %}
+
 	Article: Q178203
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -73,3 +75,5 @@ permalink: /kb/178/Q178203/
 	
 	=============================================================================
 	
+
+{% endraw %}

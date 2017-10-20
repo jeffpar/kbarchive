@@ -6,6 +6,8 @@ permalink: /kb/232/Q232338/
 
 ## Q232338: User Prompted for Wrong Version of Windows NT CD
 
+{% raw %}
+
 	Article: Q232338
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -123,3 +125,5 @@ permalink: /kb/232/Q232338/
 	
 	=============================================================================
 	
+
+{% endraw %}

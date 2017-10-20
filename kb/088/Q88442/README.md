@@ -6,6 +6,8 @@ permalink: /kb/088/Q88442/
 
 ## Q88442: Windows Err Msg: Cannot Find File...
 
+{% raw %}
+
 	Article: Q88442
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -84,3 +86,5 @@ permalink: /kb/088/Q88442/
 	
 	=============================================================================
 	
+
+{% endraw %}

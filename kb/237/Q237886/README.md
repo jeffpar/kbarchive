@@ -6,6 +6,8 @@ permalink: /kb/237/Q237886/
 
 ## Q237886: XFOR: Msg. Attachment Name Changed in Migration from cc:Mail DB6
 
+{% raw %}
+
 	Article: Q237886
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -61,3 +63,5 @@ permalink: /kb/237/Q237886/
 	
 	=============================================================================
 	
+
+{% endraw %}

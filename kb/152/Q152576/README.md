@@ -6,6 +6,8 @@ permalink: /kb/152/Q152576/
 
 ## Q152576: XCLN: Components Installed During Exchange 4.0 Client Setup
 
+{% raw %}
+
 	Article: Q152576
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -73,3 +75,5 @@ permalink: /kb/152/Q152576/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110552/
 
 ## Q110552: Recovering Folders from a Corrupted Microsoft Mail File
 
+{% raw %}
+
 	Article: Q110552
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.0,3.11,3.2
@@ -60,3 +62,5 @@ permalink: /kb/110/Q110552/
 	
 	=============================================================================
 	
+
+{% endraw %}

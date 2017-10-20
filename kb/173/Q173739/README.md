@@ -6,6 +6,8 @@ permalink: /kb/173/Q173739/
 
 ## Q173739: XADM: How to View Deleted Items Space Usage in Administrator
 
+{% raw %}
+
 	Article: Q173739
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/173/Q173739/
 	
 	=============================================================================
 	
+
+{% endraw %}

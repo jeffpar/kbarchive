@@ -6,6 +6,8 @@ permalink: /kb/187/Q187252/
 
 ## Q187252: FrontPage Editor Removes Spaces From Tables
 
+{% raw %}
+
 	Article: Q187252
 	Product(s): Word Front Page
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/187/Q187252/
 	
 	=============================================================================
 	
+
+{% endraw %}

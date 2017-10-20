@@ -6,6 +6,8 @@ permalink: /kb/184/Q184451/
 
 ## Q184451: Web Advertising &amp; Marketing by Design Comments and Corrections
 
+{% raw %}
+
 	Article: Q184451
 	Product(s): Microsoft Press
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/184/Q184451/
 	
 	=============================================================================
 	
+
+{% endraw %}

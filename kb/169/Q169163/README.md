@@ -6,6 +6,8 @@ permalink: /kb/169/Q169163/
 
 ## Q169163: XCLN: Changes Not Propped When Items Added to Fields Collection
 
+{% raw %}
+
 	Article: Q169163
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0; Win95:4.0
@@ -50,3 +52,5 @@ permalink: /kb/169/Q169163/
 	
 	=============================================================================
 	
+
+{% endraw %}

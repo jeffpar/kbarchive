@@ -6,6 +6,8 @@ permalink: /kb/069/Q69788/
 
 ## Q69788: ASD: 747 Panel Cannot Be Moved or Sized
 
+{% raw %}
+
 	Article: Q69788
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/069/Q69788/
 	
 	=============================================================================
 	
+
+{% endraw %}

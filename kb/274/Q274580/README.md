@@ -6,6 +6,8 @@ permalink: /kb/274/Q274580/
 
 ## Q274580: Creating Supplementary Timestamp Log in MMS Management Agent Log
 
+{% raw %}
+
 	Article: Q274580
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -109,3 +111,5 @@ permalink: /kb/274/Q274580/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174733/
 
 ## Q174733: OPTi FireStar Chip Set Not Recognized by Windows 95
 
+{% raw %}
+
 	Article: Q174733
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -63,3 +65,5 @@ permalink: /kb/174/Q174733/
 	
 	=============================================================================
 	
+
+{% endraw %}

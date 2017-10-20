@@ -6,6 +6,8 @@ permalink: /kb/286/Q286196/
 
 ## Q286196: IISReset May Not Save IIS Configuration Changes
 
+{% raw %}
+
 	Article: Q286196
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -93,3 +95,5 @@ permalink: /kb/286/Q286196/
 	
 	=============================================================================
 	
+
+{% endraw %}

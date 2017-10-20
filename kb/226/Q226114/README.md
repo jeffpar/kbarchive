@@ -6,6 +6,8 @@ permalink: /kb/226/Q226114/
 
 ## Q226114: SMS: Ads Fail when Sent to Win9x Users in More than 10 Groups
 
+{% raw %}
+
 	Article: Q226114
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -101,3 +103,5 @@ permalink: /kb/226/Q226114/
 	
 	=============================================================================
 	
+
+{% endraw %}

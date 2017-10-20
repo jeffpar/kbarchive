@@ -6,6 +6,8 @@ permalink: /kb/112/Q112368/
 
 ## Q112368: WFWG: Chat Text Is Pasted in the Wrong Window
 
+{% raw %}
+
 	Article: Q112368
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -49,3 +51,5 @@ permalink: /kb/112/Q112368/
 	
 	=============================================================================
 	
+
+{% endraw %}

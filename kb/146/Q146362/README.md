@@ -6,6 +6,8 @@ permalink: /kb/146/Q146362/
 
 ## Q146362: Schedule+ Meeting Wizard and Time Zones
 
+{% raw %}
+
 	Article: Q146362
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -52,3 +54,5 @@ permalink: /kb/146/Q146362/
 	
 	=============================================================================
 	
+
+{% endraw %}

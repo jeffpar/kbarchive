@@ -6,6 +6,8 @@ permalink: /kb/123/Q123686/
 
 ## Q123686: Controlling Segment Ordering
 
+{% raw %}
+
 	Article: Q123686
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,6.0,6.11,6.16.11
@@ -92,3 +94,5 @@ permalink: /kb/123/Q123686/
 	
 	=============================================================================
 	
+
+{% endraw %}

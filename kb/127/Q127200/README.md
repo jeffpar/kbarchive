@@ -6,6 +6,8 @@ permalink: /kb/127/Q127200/
 
 ## Q127200: HOWTO: Use Other Registry Keys with Visual C++ 2.0 and Above
 
+{% raw %}
+
 	Article: Q127200
 	Product(s): Microsoft C Compiler
 	Version(s): 2000,4.0,4.1,4.2,5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/127/Q127200/
 	
 	=============================================================================
 	
+
+{% endraw %}

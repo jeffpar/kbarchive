@@ -6,6 +6,8 @@ permalink: /kb/196/Q196846/
 
 ## Q196846: XFOR: Migration Wizard Fails when Migrating from GroupWise 4.1a
 
+{% raw %}
+
 	Article: Q196846
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -61,3 +63,5 @@ permalink: /kb/196/Q196846/
 	
 	=============================================================================
 	
+
+{% endraw %}

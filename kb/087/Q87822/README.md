@@ -6,6 +6,8 @@ permalink: /kb/087/Q87822/
 
 ## Q87822: ROTATE.DRV Will Not Rotate Full-Screen MS-DOS Applications
 
+{% raw %}
+
 	Article: Q87822
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0,1.0a
@@ -67,3 +69,5 @@ permalink: /kb/087/Q87822/
 	
 	=============================================================================
 	
+
+{% endraw %}

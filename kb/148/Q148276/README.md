@@ -6,6 +6,8 @@ permalink: /kb/148/Q148276/
 
 ## Q148276: Asimov: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148276
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -60,3 +62,5 @@ permalink: /kb/148/Q148276/
 	
 	=============================================================================
 	
+
+{% endraw %}

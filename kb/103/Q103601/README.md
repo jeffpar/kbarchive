@@ -6,6 +6,8 @@ permalink: /kb/103/Q103601/
 
 ## Q103601: How the Menu Font Is Determined in FoxPro for Windows
 
+{% raw %}
+
 	Article: Q103601
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0
@@ -105,3 +107,5 @@ permalink: /kb/103/Q103601/
 	
 	=============================================================================
 	
+
+{% endraw %}

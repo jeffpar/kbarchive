@@ -6,6 +6,8 @@ permalink: /kb/178/Q178208/
 
 ## Q178208: CrashOnAuditFail with Logon/Logoff Auditing Causes Blue Screen
 
+{% raw %}
+
 	Article: Q178208
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -81,3 +83,5 @@ permalink: /kb/178/Q178208/
 	
 	=============================================================================
 	
+
+{% endraw %}

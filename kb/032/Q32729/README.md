@@ -6,6 +6,8 @@ permalink: /kb/032/Q32729/
 
 ## Q32729: &quot;Path/File Access&quot; Opening a &quot;NUL&quot; File on a Novell Network
 
+{% raw %}
+
 	Article: Q32729
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -44,3 +46,5 @@ permalink: /kb/032/Q32729/
 	3.00 and later) network calls. Microsoft QuickBASIC and  Microsoft
 	BASIC Compiler are not tested or supported on the Novell Network or
 	IBM Token Ring Network.
+
+{% endraw %}

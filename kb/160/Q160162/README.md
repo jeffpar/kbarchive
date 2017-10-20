@@ -6,6 +6,8 @@ permalink: /kb/160/Q160162/
 
 ## Q160162: Installing Madge Smart 16/4 PCMCIA Ringnode Under WinNT 4.0
 
+{% raw %}
+
 	Article: Q160162
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -100,3 +102,5 @@ permalink: /kb/160/Q160162/
 	
 	=============================================================================
 	
+
+{% endraw %}

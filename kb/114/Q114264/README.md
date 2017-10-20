@@ -6,6 +6,8 @@ permalink: /kb/114/Q114264/
 
 ## Q114264: PC Tools Utilities Fail When 32-Bit Access Is Enabled
 
+{% raw %}
+
 	Article: Q114264
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -74,3 +76,5 @@ permalink: /kb/114/Q114264/
 	
 	=============================================================================
 	
+
+{% endraw %}

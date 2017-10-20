@@ -6,6 +6,8 @@ permalink: /kb/180/Q180001/
 
 ## Q180001: XADM: The Service Cannot Accept Control Messages at This Time
 
+{% raw %}
+
 	Article: Q180001
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/180/Q180001/
 	
 	=============================================================================
 	
+
+{% endraw %}

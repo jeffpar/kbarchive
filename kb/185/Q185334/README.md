@@ -6,6 +6,8 @@ permalink: /kb/185/Q185334/
 
 ## Q185334: Internet Explorer Starts When You Double-Click MSN Icon
 
+{% raw %}
+
 	Article: Q185334
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.52,2.6,4.0,4.01 Service Pack 2,5,98,98 Second Edition
@@ -44,3 +46,5 @@ permalink: /kb/185/Q185334/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185039/
 
 ## Q185039: XWEB: Deleting Email Address in OWA Contacts Generates Error
 
+{% raw %}
+
 	Article: Q185039
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -58,3 +60,5 @@ permalink: /kb/185/Q185039/
 	
 	=============================================================================
 	
+
+{% endraw %}

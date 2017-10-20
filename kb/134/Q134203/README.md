@@ -6,6 +6,8 @@ permalink: /kb/134/Q134203/
 
 ## Q134203: PC MAPI: How to Resolve MAPI Name Mangling in Visual C++
 
+{% raw %}
+
 	Article: Q134203
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -63,3 +65,5 @@ permalink: /kb/134/Q134203/
 	
 	=============================================================================
 	
+
+{% endraw %}

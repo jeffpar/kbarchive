@@ -6,6 +6,8 @@ permalink: /kb/137/Q137832/
 
 ## Q137832: Bookshelf 1995: QuickShelf Toolbar Settings Are Not Saved
 
+{% raw %}
+
 	Article: Q137832
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/137/Q137832/
 	
 	=============================================================================
 	
+
+{% endraw %}

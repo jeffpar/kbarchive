@@ -6,6 +6,8 @@ permalink: /kb/093/Q93562/
 
 ## Q93562: PC Win: New Mail Notification -- Sound Chime &amp; Flash Envelope
 
+{% raw %}
+
 	Article: Q93562
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/093/Q93562/
 	
 	=============================================================================
 	
+
+{% endraw %}

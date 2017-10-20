@@ -6,6 +6,8 @@ permalink: /kb/103/Q103886/
 
 ## Q103886: OSI Model: Standard Data Flow Architecture
 
+{% raw %}
+
 	Article: Q103886
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/103/Q103886/
 	
 	=============================================================================
 	
+
+{% endraw %}

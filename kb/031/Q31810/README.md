@@ -6,6 +6,8 @@ permalink: /kb/031/Q31810/
 
 ## Q31810: Writing Faster Macro Assembler Programs
 
+{% raw %}
+
 	Article: Q31810
 	Product(s): Microsoft Macro Assembler
 	Version(s): 4.0,5.0,5.1,6.0
@@ -61,3 +63,5 @@ permalink: /kb/031/Q31810/
 	
 	=============================================================================
 	
+
+{% endraw %}

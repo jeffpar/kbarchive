@@ -6,6 +6,8 @@ permalink: /kb/133/Q133460/
 
 ## Q133460: Macintosh Multimedia: Finder Items Lose Color
 
+{% raw %}
+
 	Article: Q133460
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0; :1996-1997
@@ -62,3 +64,5 @@ permalink: /kb/133/Q133460/
 	
 	=============================================================================
 	
+
+{% endraw %}

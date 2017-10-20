@@ -6,6 +6,8 @@ permalink: /kb/090/Q90821/
 
 ## Q90821: Write: How to Enter a Soft Return
 
+{% raw %}
+
 	Article: Q90821
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -33,3 +35,5 @@ permalink: /kb/090/Q90821/
 	
 	=============================================================================
 	
+
+{% endraw %}

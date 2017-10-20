@@ -6,6 +6,8 @@ permalink: /kb/157/Q157274/
 
 ## Q157274: How to Set Up the USR Courier I-Modem for Single-Channel ISDN
 
+{% raw %}
+
 	Article: Q157274
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -73,3 +75,5 @@ permalink: /kb/157/Q157274/
 	
 	=============================================================================
 	
+
+{% endraw %}

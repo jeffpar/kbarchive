@@ -6,6 +6,8 @@ permalink: /kb/196/Q196469/
 
 ## Q196469: FIX: MSDN Library Does Not Support CD Server Installation
 
+{% raw %}
+
 	Article: Q196469
 	Product(s): Microsoft Developer Network
 	Version(s): WINDOWS:1.21; winnt:6.0
@@ -183,3 +185,5 @@ permalink: /kb/196/Q196469/
 	
 	=============================================================================
 	
+
+{% endraw %}

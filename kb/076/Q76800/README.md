@@ -6,6 +6,8 @@ permalink: /kb/076/Q76800/
 
 ## Q76800: Description of a Multimedia PC
 
+{% raw %}
+
 	Article: Q76800
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0; WINDOWS:3.1
@@ -59,3 +61,5 @@ permalink: /kb/076/Q76800/
 	
 	=============================================================================
 	
+
+{% endraw %}

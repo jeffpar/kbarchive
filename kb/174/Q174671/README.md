@@ -6,6 +6,8 @@ permalink: /kb/174/Q174671/
 
 ## Q174671: FS95/98/2000/2002 or CFS: Problems Flying by Keyboard on Laptop
 
+{% raw %}
+
 	Article: Q174671
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -113,3 +115,5 @@ permalink: /kb/174/Q174671/
 	
 	=============================================================================
 	
+
+{% endraw %}

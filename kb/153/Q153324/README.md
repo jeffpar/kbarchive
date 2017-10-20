@@ -6,6 +6,8 @@ permalink: /kb/153/Q153324/
 
 ## Q153324: BUG: MSDEV May Leave Orphaned Threads in the Memory After Exit
 
+{% raw %}
+
 	Article: Q153324
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10 4.20
@@ -76,3 +78,5 @@ permalink: /kb/153/Q153324/
 	
 	=============================================================================
 	
+
+{% endraw %}

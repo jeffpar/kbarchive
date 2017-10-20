@@ -6,6 +6,8 @@ permalink: /kb/201/Q201250/
 
 ## Q201250: BUG: Explorer May Incorrectly Display Auditing Settings
 
+{% raw %}
+
 	Article: Q201250
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/201/Q201250/
 	
 	=============================================================================
 	
+
+{% endraw %}

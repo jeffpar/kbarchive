@@ -6,6 +6,8 @@ permalink: /kb/136/Q136510/
 
 ## Q136510: Unexpected Behavior with ALT+&lt;num&gt; Key Combinations in Notepad
 
+{% raw %}
+
 	Article: Q136510
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/136/Q136510/
 	
 	=============================================================================
 	
+
+{% endraw %}

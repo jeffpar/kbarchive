@@ -6,6 +6,8 @@ permalink: /kb/168/Q168670/
 
 ## Q168670: XFOR: Err Msg: cc:Mail Connector Event ID 59
 
+{% raw %}
+
 	Article: Q168670
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -77,3 +79,5 @@ permalink: /kb/168/Q168670/
 	
 	=============================================================================
 	
+
+{% endraw %}

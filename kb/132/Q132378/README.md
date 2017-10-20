@@ -6,6 +6,8 @@ permalink: /kb/132/Q132378/
 
 ## Q132378: MS-DOS Command Prompt May Hang with Standard VGA Driver
 
+{% raw %}
+
 	Article: Q132378
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/132/Q132378/
 	
 	=============================================================================
 	
+
+{% endraw %}

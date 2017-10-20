@@ -6,6 +6,8 @@ permalink: /kb/166/Q166718/
 
 ## Q166718: FIX: C1001 from Conditional Operator in Initializer
 
+{% raw %}
+
 	Article: Q166718
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -92,3 +94,5 @@ permalink: /kb/166/Q166718/
 	
 	=============================================================================
 	
+
+{% endraw %}

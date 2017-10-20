@@ -6,6 +6,8 @@ permalink: /kb/240/Q240635/
 
 ## Q240635: World Atlas: Pushpins Briefly Displayed in Wrong Location on Map
 
+{% raw %}
+
 	Article: Q240635
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -43,3 +45,5 @@ permalink: /kb/240/Q240635/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/059/Q59116/
 
 ## Q59116: Mac Form: Err Msg: &quot;Not Enough Memory&quot; While Compiling Form
 
+{% raw %}
+
 	Article: Q59116
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -36,3 +38,5 @@ permalink: /kb/059/Q59116/
 	
 	=============================================================================
 	
+
+{% endraw %}

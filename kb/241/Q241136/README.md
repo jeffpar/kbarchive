@@ -6,6 +6,8 @@ permalink: /kb/241/Q241136/
 
 ## Q241136: MprAdminConnectionGetInfo() Reports Wrong IP Address for Server
 
+{% raw %}
+
 	Article: Q241136
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -73,3 +75,5 @@ permalink: /kb/241/Q241136/
 	
 	=============================================================================
 	
+
+{% endraw %}

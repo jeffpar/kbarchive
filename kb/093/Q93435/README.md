@@ -6,6 +6,8 @@ permalink: /kb/093/Q93435/
 
 ## Q93435: FIX: GPF/UAE When Converting String &gt; 32K to Double Precision
 
+{% raw %}
+
 	Article: Q93435
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -72,3 +74,5 @@ permalink: /kb/093/Q93435/
 	
 	=============================================================================
 	
+
+{% endraw %}

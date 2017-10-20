@@ -6,6 +6,8 @@ permalink: /kb/088/Q88603/
 
 ## Q88603: BUG: Calculated Currency Field Ignores Formatting
 
+{% raw %}
+
 	Article: Q88603
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5x,2.6,2.6a; WINDOWS:2.5x,2.6,2.6a,3.0,5.0,5.0a,6.0
@@ -69,3 +71,5 @@ permalink: /kb/088/Q88603/
 	
 	=============================================================================
 	
+
+{% endraw %}

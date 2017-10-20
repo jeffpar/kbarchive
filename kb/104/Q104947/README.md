@@ -6,6 +6,8 @@ permalink: /kb/104/Q104947/
 
 ## Q104947: DoubleSpace Leaves ASPI4DOS.SYS and UPSI14.SYS on Host Drive
 
+{% raw %}
+
 	Article: Q104947
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -58,3 +60,5 @@ permalink: /kb/104/Q104947/
 	
 	=============================================================================
 	
+
+{% endraw %}

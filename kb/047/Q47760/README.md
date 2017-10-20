@@ -6,6 +6,8 @@ permalink: /kb/047/Q47760/
 
 ## Q47760: The _QC Predefined Preprocessing Macro
 
+{% raw %}
+
 	Article: Q47760
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00
@@ -31,3 +33,5 @@ permalink: /kb/047/Q47760/
 	This macro was not documented in the QuickC manuals or in the
 	README.DOC. Support for this macro is not guaranteed in future
 	releases of the QuickC product.
+
+{% endraw %}

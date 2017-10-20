@@ -6,6 +6,8 @@ permalink: /kb/263/Q263597/
 
 ## Q263597: XGEN: Automatically Creating a Criteria File for Isscan
 
+{% raw %}
+
 	Article: Q263597
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -59,3 +61,5 @@ permalink: /kb/263/Q263597/
 	
 	=============================================================================
 	
+
+{% endraw %}

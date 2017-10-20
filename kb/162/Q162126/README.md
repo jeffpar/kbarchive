@@ -6,6 +6,8 @@ permalink: /kb/162/Q162126/
 
 ## Q162126: Error: The Picture File Hud004g.shg or Hud004f.shg Is Missing
 
+{% raw %}
+
 	Article: Q162126
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/162/Q162126/
 	
 	=============================================================================
 	
+
+{% endraw %}

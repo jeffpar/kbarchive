@@ -6,6 +6,8 @@ permalink: /kb/196/Q196166/
 
 ## Q196166: XADM: Move Server Wizard and Microsoft Exchange Event Service
 
+{% raw %}
+
 	Article: Q196166
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -71,3 +73,5 @@ permalink: /kb/196/Q196166/
 	
 	=============================================================================
 	
+
+{% endraw %}

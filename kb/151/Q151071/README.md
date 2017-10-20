@@ -6,6 +6,8 @@ permalink: /kb/151/Q151071/
 
 ## Q151071: FIX: Spawn Hangs When Inheriting Pipe Handle
 
+{% raw %}
+
 	Article: Q151071
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10
@@ -188,3 +190,5 @@ permalink: /kb/151/Q151071/
 	
 	=============================================================================
 	
+
+{% endraw %}

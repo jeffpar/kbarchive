@@ -6,6 +6,8 @@ permalink: /kb/114/Q114087/
 
 ## Q114087: Installing NT on a Ultrastor 22CA ESDI Controller
 
+{% raw %}
+
 	Article: Q114087
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -58,3 +60,5 @@ permalink: /kb/114/Q114087/
 	
 	=============================================================================
 	
+
+{% endraw %}

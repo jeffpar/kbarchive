@@ -6,6 +6,8 @@ permalink: /kb/134/Q134794/
 
 ## Q134794: Automap: Latitude and Longitude Coordinates Fail With Go To
 
+{% raw %}
+
 	Article: Q134794
 	Product(s): Microsoft Automap
 	Version(s): 3.00
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134794/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125928/
 
 ## Q125928: HOWTO: How to Mix GDI and WinG
 
+{% raw %}
+
 	Article: Q125928
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.x
@@ -168,3 +170,5 @@ permalink: /kb/125/Q125928/
 	
 	=============================================================================
 	
+
+{% endraw %}

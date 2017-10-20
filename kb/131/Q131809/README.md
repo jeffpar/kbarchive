@@ -6,6 +6,8 @@ permalink: /kb/131/Q131809/
 
 ## Q131809: The Microsoft Network Puts Files in Cache Folder
 
+{% raw %}
+
 	Article: Q131809
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -48,3 +50,5 @@ permalink: /kb/131/Q131809/
 	
 	=============================================================================
 	
+
+{% endraw %}

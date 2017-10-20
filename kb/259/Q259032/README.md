@@ -6,6 +6,8 @@ permalink: /kb/259/Q259032/
 
 ## Q259032: Understanding Attribute Flow in Microsoft Metadirectory Services
 
+{% raw %}
+
 	Article: Q259032
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -106,3 +108,5 @@ permalink: /kb/259/Q259032/
 	
 	=============================================================================
 	
+
+{% endraw %}

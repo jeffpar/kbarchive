@@ -6,6 +6,8 @@ permalink: /kb/164/Q164643/
 
 ## Q164643: 3270 Print Session May Stop Responding in Spooling Status
 
+{% raw %}
+
 	Article: Q164643
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/164/Q164643/
 	
 	=============================================================================
 	
+
+{% endraw %}

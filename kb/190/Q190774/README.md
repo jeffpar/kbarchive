@@ -6,6 +6,8 @@ permalink: /kb/190/Q190774/
 
 ## Q190774: FIX: Keyboard Can Cause Component Gallery to Close
 
+{% raw %}
+
 	Article: Q190774
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -79,3 +81,5 @@ permalink: /kb/190/Q190774/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155164/
 
 ## Q155164: FIX: C2678 on Overloaded Functions When Using a Namespace
 
+{% raw %}
+
 	Article: Q155164
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -131,3 +133,5 @@ permalink: /kb/155/Q155164/
 	
 	=============================================================================
 	
+
+{% endraw %}

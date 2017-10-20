@@ -6,6 +6,8 @@ permalink: /kb/264/Q264494/
 
 ## Q264494: SMS: The SMS_EXECUTIVE Service Causes an Access Violation
 
+{% raw %}
+
 	Article: Q264494
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -87,3 +89,5 @@ permalink: /kb/264/Q264494/
 	
 	=============================================================================
 	
+
+{% endraw %}

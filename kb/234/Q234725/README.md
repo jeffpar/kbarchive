@@ -6,6 +6,8 @@ permalink: /kb/234/Q234725/
 
 ## Q234725: PRB: Microsoft Pocket Guide to Microsoft Outlook 2000 Comments a
 
+{% raw %}
+
 	Article: Q234725
 	Product(s): Microsoft Press
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/234/Q234725/
 	
 	=============================================================================
 	
+
+{% endraw %}

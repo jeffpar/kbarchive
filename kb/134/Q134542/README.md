@@ -6,6 +6,8 @@ permalink: /kb/134/Q134542/
 
 ## Q134542: Extended video (VESA) Programs Display Incorrectly
 
+{% raw %}
+
 	Article: Q134542
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/134/Q134542/
 	
 	=============================================================================
 	
+
+{% endraw %}

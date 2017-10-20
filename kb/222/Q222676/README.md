@@ -6,6 +6,8 @@ permalink: /kb/222/Q222676/
 
 ## Q222676: HOWTO: Tell if a VFP COM DLL is Single- or Multi-threaded
 
+{% raw %}
+
 	Article: Q222676
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -150,3 +152,5 @@ permalink: /kb/222/Q222676/
 	
 	=============================================================================
 	
+
+{% endraw %}

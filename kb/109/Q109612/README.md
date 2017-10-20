@@ -6,6 +6,8 @@ permalink: /kb/109/Q109612/
 
 ## Q109612: How to Pass Parameters from Windows to FoxPro for Windows
 
+{% raw %}
+
 	Article: Q109612
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,3.0
@@ -82,3 +84,5 @@ permalink: /kb/109/Q109612/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/207/Q207369/
 
 ## Q207369: SMS: INVOS2 Does Not Report TCP/IP Information
 
+{% raw %}
+
 	Article: Q207369
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -89,3 +91,5 @@ permalink: /kb/207/Q207369/
 	
 	=============================================================================
 	
+
+{% endraw %}

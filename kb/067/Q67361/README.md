@@ -6,6 +6,8 @@ permalink: /kb/067/Q67361/
 
 ## Q67361: PWB Help Crashes When Using &quot;Moving Through a File&quot;
 
+{% raw %}
+
 	Article: Q67361
 	Product(s): See article
 	Version(s): 1.10   | 1.10
@@ -38,3 +40,5 @@ permalink: /kb/067/Q67361/
 	Microsoft has confirmed this to be a problem in the Programmer's
 	WorkBench version 1.10. We are researching this problem and will post
 	new information here as it becomes available.
+
+{% endraw %}

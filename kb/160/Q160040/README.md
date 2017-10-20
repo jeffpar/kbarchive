@@ -6,6 +6,8 @@ permalink: /kb/160/Q160040/
 
 ## Q160040: Encarta 97: How To Download Yearbook Updates Using AOL
 
+{% raw %}
+
 	Article: Q160040
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997
@@ -109,3 +111,5 @@ permalink: /kb/160/Q160040/
 	
 	=============================================================================
 	
+
+{% endraw %}

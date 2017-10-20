@@ -6,6 +6,8 @@ permalink: /kb/136/Q136770/
 
 ## Q136770: How to Optimize Network Traffic in a Multiuser Application
 
+{% raw %}
+
 	Article: Q136770
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/136/Q136770/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/318/Q318990/
 
 ## Q318990: FIX: Reserved Word &quot;IsDataSet&quot; in CURSORTOXML Schema Is Misspell
 
+{% raw %}
+
 	Article: Q318990
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -74,3 +76,5 @@ permalink: /kb/318/Q318990/
 	
 	=============================================================================
 	
+
+{% endraw %}

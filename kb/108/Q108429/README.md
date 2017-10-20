@@ -6,6 +6,8 @@ permalink: /kb/108/Q108429/
 
 ## Q108429: How to Use PostMessage() with FOXTOOLS
 
+{% raw %}
+
 	Article: Q108429
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,2.5a,2.5b,2.5x,2.6x,3.0
@@ -121,3 +123,5 @@ permalink: /kb/108/Q108429/
 	
 	=============================================================================
 	
+
+{% endraw %}

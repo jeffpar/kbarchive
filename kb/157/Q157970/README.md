@@ -6,6 +6,8 @@ permalink: /kb/157/Q157970/
 
 ## Q157970: PRB: Event Firing Changes in MFC May Break Some Containers
 
+{% raw %}
+
 	Article: Q157970
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -74,3 +76,5 @@ permalink: /kb/157/Q157970/
 	
 	=============================================================================
 	
+
+{% endraw %}

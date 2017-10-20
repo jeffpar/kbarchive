@@ -6,6 +6,8 @@ permalink: /kb/162/Q162010/
 
 ## Q162010: XCLN: Exchange Server Name Resolution on a Novell Network
 
+{% raw %}
+
 	Article: Q162010
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/162/Q162010/
 	
 	=============================================================================
 	
+
+{% endraw %}

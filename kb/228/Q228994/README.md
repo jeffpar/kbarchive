@@ -6,6 +6,8 @@ permalink: /kb/228/Q228994/
 
 ## Q228994: Smss.exe Does Not Resolve Forward References in Environment
 
+{% raw %}
+
 	Article: Q228994
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -63,3 +65,5 @@ permalink: /kb/228/Q228994/
 	
 	=============================================================================
 	
+
+{% endraw %}

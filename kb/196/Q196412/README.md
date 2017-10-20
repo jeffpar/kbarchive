@@ -6,6 +6,8 @@ permalink: /kb/196/Q196412/
 
 ## Q196412: XADM: Cannot Change Password Generation Method In Move Server
 
+{% raw %}
+
 	Article: Q196412
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -51,3 +53,5 @@ permalink: /kb/196/Q196412/
 	
 	=============================================================================
 	
+
+{% endraw %}

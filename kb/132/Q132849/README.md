@@ -6,6 +6,8 @@ permalink: /kb/132/Q132849/
 
 ## Q132849: GPF or Poor Performance with Interleaf Running in Windows 95
 
+{% raw %}
+
 	Article: Q132849
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/132/Q132849/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191261/
 
 ## Q191261: XFOR: All Outbound IMC Mail NDRs: &quot;We Do Not Relay&quot;
 
+{% raw %}
+
 	Article: Q191261
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -76,3 +78,5 @@ permalink: /kb/191/Q191261/
 	
 	=============================================================================
 	
+
+{% endraw %}

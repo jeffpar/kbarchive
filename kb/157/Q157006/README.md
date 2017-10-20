@@ -6,6 +6,8 @@ permalink: /kb/157/Q157006/
 
 ## Q157006: XCLN: Access Violation when Opening New Message
 
+{% raw %}
+
 	Article: Q157006
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -119,3 +121,5 @@ permalink: /kb/157/Q157006/
 	
 	=============================================================================
 	
+
+{% endraw %}

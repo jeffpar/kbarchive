@@ -6,6 +6,8 @@ permalink: /kb/290/Q290091/
 
 ## Q290091: XADM: Remove all Proxy Addresses from Mailbox w/ Directory Imprt
 
+{% raw %}
+
 	Article: Q290091
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -62,3 +64,5 @@ permalink: /kb/290/Q290091/
 	
 	=============================================================================
 	
+
+{% endraw %}

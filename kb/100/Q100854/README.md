@@ -6,6 +6,8 @@ permalink: /kb/100/Q100854/
 
 ## Q100854: MS-DOS Upgrade Setup Adds C:&#92;DOS to Each PATH Statement
 
+{% raw %}
+
 	Article: Q100854
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -47,3 +49,5 @@ permalink: /kb/100/Q100854/
 	
 	=============================================================================
 	
+
+{% endraw %}

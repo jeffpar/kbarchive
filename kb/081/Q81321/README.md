@@ -6,6 +6,8 @@ permalink: /kb/081/Q81321/
 
 ## Q81321: Maintaining PWB Display While Running a Program
 
+{% raw %}
+
 	Article: Q81321
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1,2.0; OS/2:1.0,1.1
@@ -92,12 +94,12 @@ permalink: /kb/081/Q81321/
 	      flagType fMeta);
 	
 	  /* Switch description table (required for an extension) */ 
-	  struct swiDesc swiTable[] = { { NULL,NULL,0} };
+	  struct swiDesc swiTable[] = { { NULL,NULL,0}};
 	
 	  /* Command description table ( required for a PWB extension) */ 
 	  struct cmdDesc cmdTable[] ={
 	      { "funcname", funcname, 0 , NOARG},
-	      { NULL, NULL, 0, 0} };
+	      { NULL, NULL, 0, 0}};
 	
 	  /* Function that PWB calls when loading the extension */ 
 	  void EXTERNAL WhenLoaded(void)
@@ -123,3 +125,5 @@ permalink: /kb/081/Q81321/
 	
 	=============================================================================
 	
+
+{% endraw %}

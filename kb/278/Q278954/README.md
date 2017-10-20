@@ -6,6 +6,8 @@ permalink: /kb/278/Q278954/
 
 ## Q278954: XADM: Recurring Appts Made by CDO Not Added to Local F/B Map
 
+{% raw %}
+
 	Article: Q278954
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -136,3 +138,5 @@ permalink: /kb/278/Q278954/
 	
 	=============================================================================
 	
+
+{% endraw %}

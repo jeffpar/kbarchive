@@ -6,6 +6,8 @@ permalink: /kb/133/Q133454/
 
 ## Q133454: PRB: Setup Error: Setup Parse Error in Initialize Pass
 
+{% raw %}
+
 	Article: Q133454
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -90,3 +92,5 @@ permalink: /kb/133/Q133454/
 	
 	=============================================================================
 	
+
+{% endraw %}

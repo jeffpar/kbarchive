@@ -6,6 +6,8 @@ permalink: /kb/068/Q68715/
 
 ## Q68715: Mac AL: AppleLink 2.0 Does Not Support Multiple Enclosures
 
+{% raw %}
+
 	Article: Q68715
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -39,3 +41,5 @@ permalink: /kb/068/Q68715/
 	
 	=============================================================================
 	
+
+{% endraw %}

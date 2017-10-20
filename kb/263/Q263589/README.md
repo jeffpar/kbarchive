@@ -6,6 +6,8 @@ permalink: /kb/263/Q263589/
 
 ## Q263589: BUG: Pointer to Member Allows Non-const Method Call on const Obj
 
+{% raw %}
+
 	Article: Q263589
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -70,3 +72,5 @@ permalink: /kb/263/Q263589/
 	
 	=============================================================================
 	
+
+{% endraw %}

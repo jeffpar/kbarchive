@@ -6,6 +6,8 @@ permalink: /kb/071/Q71871/
 
 ## Q71871: MS-DOS 5 Upgrade README.TXT: Documentation
 
+{% raw %}
+
 	Article: Q71871
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0
@@ -108,3 +110,5 @@ permalink: /kb/071/Q71871/
 	
 	=============================================================================
 	
+
+{% endraw %}

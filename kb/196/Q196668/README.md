@@ -6,6 +6,8 @@ permalink: /kb/196/Q196668/
 
 ## Q196668: WD97: Find/Replace Command Doesn't Ignore Deleted Text
 
+{% raw %}
+
 	Article: Q196668
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/196/Q196668/
 	
 	=============================================================================
 	
+
+{% endraw %}

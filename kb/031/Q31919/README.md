@@ -6,6 +6,8 @@ permalink: /kb/031/Q31919/
 
 ## Q31919: Using the T Command to Echo CodeView Output
 
+{% raw %}
+
 	Article: Q31919
 	Product(s): See article
 	Version(s): 2.00 2.10 2.20
@@ -41,3 +43,5 @@ permalink: /kb/031/Q31919/
 	
 	   The lines traced will be written both to the console and to the log
 	file.
+
+{% endraw %}

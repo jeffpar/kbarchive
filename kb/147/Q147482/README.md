@@ -6,6 +6,8 @@ permalink: /kb/147/Q147482/
 
 ## Q147482: Picture in About Dialog Box Does Not Fill Frame
 
+{% raw %}
+
 	Article: Q147482
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -75,3 +77,5 @@ permalink: /kb/147/Q147482/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/033/Q33766/
 
 ## Q33766: Cannot Open a File Without an Extension by Double-Clicking
 
+{% raw %}
+
 	Article: Q33766
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a
@@ -65,3 +67,5 @@ permalink: /kb/033/Q33766/
 	
 	=============================================================================
 	
+
+{% endraw %}

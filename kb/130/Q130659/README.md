@@ -6,6 +6,8 @@ permalink: /kb/130/Q130659/
 
 ## Q130659: PRB: &quot;The database must be opened exclusively&quot; Multiuser Error
 
+{% raw %}
+
 	Article: Q130659
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -141,3 +143,5 @@ permalink: /kb/130/Q130659/
 	
 	=============================================================================
 	
+
+{% endraw %}

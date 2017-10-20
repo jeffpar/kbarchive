@@ -6,6 +6,8 @@ permalink: /kb/167/Q167528/
 
 ## Q167528: FIX: Class Browser Causes System Error on Exit
 
+{% raw %}
+
 	Article: Q167528
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -130,3 +132,5 @@ permalink: /kb/167/Q167528/
 	
 	=============================================================================
 	
+
+{% endraw %}

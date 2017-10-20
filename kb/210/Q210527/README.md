@@ -6,6 +6,8 @@ permalink: /kb/210/Q210527/
 
 ## Q210527: Golf 99: &quot;Removing Game Files&quot; Displayed When You Add Courses
 
+{% raw %}
+
 	Article: Q210527
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/210/Q210527/
 	
 	=============================================================================
 	
+
+{% endraw %}

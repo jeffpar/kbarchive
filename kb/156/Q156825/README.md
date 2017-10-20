@@ -6,6 +6,8 @@ permalink: /kb/156/Q156825/
 
 ## Q156825: Error Message: Invalid Product Identification Number
 
+{% raw %}
+
 	Article: Q156825
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/156/Q156825/
 	
 	=============================================================================
 	
+
+{% endraw %}

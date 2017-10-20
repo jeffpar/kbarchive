@@ -6,6 +6,8 @@ permalink: /kb/134/Q134474/
 
 ## Q134474: Power Spanish Causes a GP Fault When You Quit Program
 
+{% raw %}
+
 	Article: Q134474
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -62,3 +64,5 @@ permalink: /kb/134/Q134474/
 	
 	=============================================================================
 	
+
+{% endraw %}

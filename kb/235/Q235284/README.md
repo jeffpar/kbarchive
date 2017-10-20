@@ -6,6 +6,8 @@ permalink: /kb/235/Q235284/
 
 ## Q235284: MPPE Keys Not Handled Correctly for a 128-Bit MS-CHAP Request
 
+{% raw %}
+
 	Article: Q235284
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -96,3 +98,5 @@ permalink: /kb/235/Q235284/
 	
 	=============================================================================
 	
+
+{% endraw %}

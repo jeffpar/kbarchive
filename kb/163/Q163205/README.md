@@ -6,6 +6,8 @@ permalink: /kb/163/Q163205/
 
 ## Q163205: XCLN: Inserting a File into a Folder
 
+{% raw %}
+
 	Article: Q163205
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -87,3 +89,5 @@ permalink: /kb/163/Q163205/
 	
 	=============================================================================
 	
+
+{% endraw %}

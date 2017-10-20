@@ -6,6 +6,8 @@ permalink: /kb/099/Q99191/
 
 ## Q99191: Logon to File Server with Boot Disk
 
+{% raw %}
+
 	Article: Q99191
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/099/Q99191/
 	
 	=============================================================================
 	
+
+{% endraw %}

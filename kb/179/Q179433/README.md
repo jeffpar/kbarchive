@@ -6,6 +6,8 @@ permalink: /kb/179/Q179433/
 
 ## Q179433: Cache Manager May Cause Data Corruption on SMB Servers on FAT
 
+{% raw %}
+
 	Article: Q179433
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -113,3 +115,5 @@ permalink: /kb/179/Q179433/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/215/Q215604/
 
 ## Q215604: XWEB: OWA Client Allows You to Delete Special Outlook Folders
 
+{% raw %}
+
 	Article: Q215604
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -110,3 +112,5 @@ permalink: /kb/215/Q215604/
 	
 	=============================================================================
 	
+
+{% endraw %}

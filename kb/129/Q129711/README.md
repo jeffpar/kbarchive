@@ -6,6 +6,8 @@ permalink: /kb/129/Q129711/
 
 ## Q129711: HOWTO: Clean Up the Visual FoxPro Environment
 
+{% raw %}
+
 	Article: Q129711
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/129/Q129711/
 	
 	=============================================================================
 	
+
+{% endraw %}

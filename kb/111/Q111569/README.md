@@ -6,6 +6,8 @@ permalink: /kb/111/Q111569/
 
 ## Q111569: Cannot See Writing with Pen Pointing Device and Super VGA
 
+{% raw %}
+
 	Article: Q111569
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11; :1.0
@@ -55,3 +57,5 @@ permalink: /kb/111/Q111569/
 	
 	=============================================================================
 	
+
+{% endraw %}

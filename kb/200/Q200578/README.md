@@ -6,6 +6,8 @@ permalink: /kb/200/Q200578/
 
 ## Q200578: BUG: Cannot Step Over Function That Contains Data Breakpoint
 
+{% raw %}
+
 	Article: Q200578
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -67,3 +69,5 @@ permalink: /kb/200/Q200578/
 	
 	=============================================================================
 	
+
+{% endraw %}

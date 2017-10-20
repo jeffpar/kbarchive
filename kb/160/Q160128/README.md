@@ -6,6 +6,8 @@ permalink: /kb/160/Q160128/
 
 ## Q160128: Close Combat for the Macintosh: Contents of Network Read Me
 
+{% raw %}
+
 	Article: Q160128
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0
@@ -284,3 +286,5 @@ permalink: /kb/160/Q160128/
 	
 	=============================================================================
 	
+
+{% endraw %}

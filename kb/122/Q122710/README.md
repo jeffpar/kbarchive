@@ -6,6 +6,8 @@ permalink: /kb/122/Q122710/
 
 ## Q122710: Display Drivers Included with Windows 95 and Supported Modes
 
+{% raw %}
+
 	Article: Q122710
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -266,3 +268,5 @@ permalink: /kb/122/Q122710/
 	
 	=============================================================================
 	
+
+{% endraw %}

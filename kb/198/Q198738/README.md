@@ -6,6 +6,8 @@ permalink: /kb/198/Q198738/
 
 ## Q198738: Probable Non-Windows NT Disk Error on HP NetServers
 
+{% raw %}
+
 	Article: Q198738
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -103,3 +105,5 @@ permalink: /kb/198/Q198738/
 	
 	=============================================================================
 	
+
+{% endraw %}

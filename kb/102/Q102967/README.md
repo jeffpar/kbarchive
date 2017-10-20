@@ -6,6 +6,8 @@ permalink: /kb/102/Q102967/
 
 ## Q102967: REG: Server Service Entries, PART 1
 
+{% raw %}
+
 	Article: Q102967
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -286,3 +288,5 @@ permalink: /kb/102/Q102967/
 	
 	=============================================================================
 	
+
+{% endraw %}

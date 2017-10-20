@@ -6,6 +6,8 @@ permalink: /kb/174/Q174254/
 
 ## Q174254: XADM: GroupWise Users must Grant Access Rights to be Migrated
 
+{% raw %}
+
 	Article: Q174254
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -50,3 +52,5 @@ permalink: /kb/174/Q174254/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176992/
 
 ## Q176992: WD97: How to Find the ANSI Value of Characters
 
+{% raw %}
+
 	Article: Q176992
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/176/Q176992/
 	
 	=============================================================================
 	
+
+{% endraw %}

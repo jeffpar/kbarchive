@@ -6,6 +6,8 @@ permalink: /kb/169/Q169545/
 
 ## Q169545: WD97: GetSpellingSuggestions Method Causes Errors
 
+{% raw %}
+
 	Article: Q169545
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -66,3 +68,5 @@ permalink: /kb/169/Q169545/
 	
 	=============================================================================
 	
+
+{% endraw %}

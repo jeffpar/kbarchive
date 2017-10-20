@@ -6,6 +6,8 @@ permalink: /kb/136/Q136646/
 
 ## Q136646: Leopard: Audio Breaks Up
 
+{% raw %}
+
 	Article: Q136646
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -72,3 +74,5 @@ permalink: /kb/136/Q136646/
 	
 	=============================================================================
 	
+
+{% endraw %}

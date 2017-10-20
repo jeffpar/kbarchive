@@ -6,6 +6,8 @@ permalink: /kb/211/Q211057/
 
 ## Q211057: Computer Stops Responding When Your Plane Stalls
 
+{% raw %}
+
 	Article: Q211057
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -52,3 +54,5 @@ permalink: /kb/211/Q211057/
 	
 	=============================================================================
 	
+
+{% endraw %}

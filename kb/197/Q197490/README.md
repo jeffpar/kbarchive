@@ -6,6 +6,8 @@ permalink: /kb/197/Q197490/
 
 ## Q197490: PRB: ATL Full Control Needs Enabled Stock Property for Access 97
 
+{% raw %}
+
 	Article: Q197490
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -150,3 +152,5 @@ permalink: /kb/197/Q197490/
 	
 	=============================================================================
 	
+
+{% endraw %}

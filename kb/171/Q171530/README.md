@@ -6,6 +6,8 @@ permalink: /kb/171/Q171530/
 
 ## Q171530: FIX: Crash on Data Tip After Enum Name Changed
 
+{% raw %}
+
 	Article: Q171530
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -121,3 +123,5 @@ permalink: /kb/171/Q171530/
 	
 	=============================================================================
 	
+
+{% endraw %}

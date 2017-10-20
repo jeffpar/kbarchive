@@ -6,6 +6,8 @@ permalink: /kb/309/Q309366/
 
 ## Q309366: INFO: VB 6.0 Does Not Support Windows XP Themes or Visual Styles
 
+{% raw %}
+
 	Article: Q309366
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -132,3 +134,5 @@ permalink: /kb/309/Q309366/
 	
 	=============================================================================
 	
+
+{% endraw %}

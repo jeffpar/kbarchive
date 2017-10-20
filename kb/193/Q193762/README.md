@@ -6,6 +6,8 @@ permalink: /kb/193/Q193762/
 
 ## Q193762: XCON: Zero Byte Attachments Cause NDRs from Exchange 5.5 SP1
 
+{% raw %}
+
 	Article: Q193762
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1
@@ -106,3 +108,5 @@ permalink: /kb/193/Q193762/
 	
 	=============================================================================
 	
+
+{% endraw %}

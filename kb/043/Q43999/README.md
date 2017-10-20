@@ -6,6 +6,8 @@ permalink: /kb/043/Q43999/
 
 ## Q43999: NMAKE Is Case Sensitive
 
+{% raw %}
+
 	Article: Q43999
 	Product(s): See article
 	Version(s): 1.00
@@ -38,3 +40,5 @@ permalink: /kb/043/Q43999/
 	
 	   Then, all files with the .dll extension must have the .dll
 	   extension in lowercase letters.
+
+{% endraw %}

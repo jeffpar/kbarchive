@@ -6,6 +6,8 @@ permalink: /kb/141/Q141253/
 
 ## Q141253: Picture Gallery Wallpaper Is Not Centered on Screen
 
+{% raw %}
+
 	Article: Q141253
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,95
@@ -69,3 +71,5 @@ permalink: /kb/141/Q141253/
 	
 	=============================================================================
 	
+
+{% endraw %}

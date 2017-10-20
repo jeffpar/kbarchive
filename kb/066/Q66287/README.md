@@ -6,6 +6,8 @@ permalink: /kb/066/Q66287/
 
 ## Q66287: What _getvideoconfig() Returns for Non-Standard Adapters
 
+{% raw %}
+
 	Article: Q66287
 	Product(s): See article
 	Version(s): 6.00
@@ -34,3 +36,5 @@ permalink: /kb/066/Q66287/
 	_getvideoconfig to determine what mode was actually set. There is more
 	information on these topics in the Microsoft Advisor online help
 	system, which comes with your C compiler package.
+
+{% endraw %}

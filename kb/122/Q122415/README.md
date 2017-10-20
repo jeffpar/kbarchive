@@ -6,6 +6,8 @@ permalink: /kb/122/Q122415/
 
 ## Q122415: Updated EMM386.EXE and MSD.EXE Available for MS-DOS 6.0, 6.2
 
+{% raw %}
+
 	Article: Q122415
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21
@@ -75,3 +77,5 @@ permalink: /kb/122/Q122415/
 	
 	=============================================================================
 	
+
+{% endraw %}

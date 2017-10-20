@@ -6,6 +6,8 @@ permalink: /kb/064/Q64788/
 
 ## Q64788: How to Use the PWB with the Windows 3.00 SDK
 
+{% raw %}
+
 	Article: Q64788
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -24,3 +26,5 @@ permalink: /kb/064/Q64788/
 	
 	This file can be viewed and printed with the WRITE program, which is
 	packaged with the Windows 3.00 package.
+
+{% endraw %}

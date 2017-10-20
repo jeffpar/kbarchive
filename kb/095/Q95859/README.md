@@ -6,6 +6,8 @@ permalink: /kb/095/Q95859/
 
 ## Q95859: Extra Tools Menu Added to Norton Desktop for Windows
 
+{% raw %}
+
 	Article: Q95859
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -78,3 +80,5 @@ permalink: /kb/095/Q95859/
 	
 	=============================================================================
 	
+
+{% endraw %}

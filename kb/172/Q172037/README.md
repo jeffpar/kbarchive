@@ -6,6 +6,8 @@ permalink: /kb/172/Q172037/
 
 ## Q172037: Terminal Font Selection Not Saved In Telnet
 
+{% raw %}
+
 	Article: Q172037
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95; WINDOWS NT:4.0
@@ -42,3 +44,5 @@ permalink: /kb/172/Q172037/
 	
 	=============================================================================
 	
+
+{% endraw %}

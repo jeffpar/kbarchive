@@ -6,6 +6,8 @@ permalink: /kb/285/Q285396/
 
 ## Q285396: HOWTO: Obtain Office Constants from .OLB Files with VFP
 
+{% raw %}
+
 	Article: Q285396
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -256,3 +258,5 @@ permalink: /kb/285/Q285396/
 	
 	=============================================================================
 	
+
+{% endraw %}

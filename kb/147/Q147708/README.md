@@ -6,6 +6,8 @@ permalink: /kb/147/Q147708/
 
 ## Q147708: IIS Scripts Request To Save the File Instead of Executing
 
+{% raw %}
+
 	Article: Q147708
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/147/Q147708/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138353/
 
 ## Q138353: Complete Basketball 95-96: No Daily Update Feature Available
 
+{% raw %}
+
 	Article: Q138353
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995-1996 edition
@@ -51,3 +53,5 @@ permalink: /kb/138/Q138353/
 	
 	=============================================================================
 	
+
+{% endraw %}

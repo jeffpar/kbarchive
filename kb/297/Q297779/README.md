@@ -6,6 +6,8 @@ permalink: /kb/297/Q297779/
 
 ## Q297779: FIX:Closing Connection While View Designer Open Crashes VFP
 
+{% raw %}
+
 	Article: Q297779
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -111,3 +113,5 @@ permalink: /kb/297/Q297779/
 	
 	=============================================================================
 	
+
+{% endraw %}

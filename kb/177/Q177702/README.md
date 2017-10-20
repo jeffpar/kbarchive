@@ -6,6 +6,8 @@ permalink: /kb/177/Q177702/
 
 ## Q177702: Software Project Survival Guide Comments and Corrections
 
+{% raw %}
+
 	Article: Q177702
 	Product(s): Microsoft Press
 	Version(s): 
@@ -153,3 +155,5 @@ permalink: /kb/177/Q177702/
 	
 	=============================================================================
 	
+
+{% endraw %}

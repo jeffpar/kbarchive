@@ -6,6 +6,8 @@ permalink: /kb/260/Q260108/
 
 ## Q260108: PRB: Restart Option Is Only Available on Windows CE 3.0
 
+{% raw %}
+
 	Article: Q260108
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -53,3 +55,5 @@ permalink: /kb/260/Q260108/
 	
 	=============================================================================
 	
+
+{% endraw %}

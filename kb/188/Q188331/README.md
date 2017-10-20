@@ -6,6 +6,8 @@ permalink: /kb/188/Q188331/
 
 ## Q188331: PRB: Opening Property Page Results in &quot;Class Not Registered&quot;
 
+{% raw %}
+
 	Article: Q188331
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -75,3 +77,5 @@ permalink: /kb/188/Q188331/
 	
 	=============================================================================
 	
+
+{% endraw %}

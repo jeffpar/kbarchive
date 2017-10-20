@@ -6,6 +6,8 @@ permalink: /kb/169/Q169550/
 
 ## Q169550: Windows 95 Clock Loses Time with APM Enabled
 
+{% raw %}
+
 	Article: Q169550
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -86,3 +88,5 @@ permalink: /kb/169/Q169550/
 	
 	=============================================================================
 	
+
+{% endraw %}

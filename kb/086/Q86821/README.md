@@ -6,6 +6,8 @@ permalink: /kb/086/Q86821/
 
 ## Q86821: BUG: Cursor Disappears After Using File Find Command in PWB
 
+{% raw %}
+
 	Article: Q86821
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:2.0,2.1.49
@@ -56,3 +58,5 @@ permalink: /kb/086/Q86821/
 	
 	=============================================================================
 	
+
+{% endraw %}

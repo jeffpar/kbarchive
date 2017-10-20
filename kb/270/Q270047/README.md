@@ -6,6 +6,8 @@ permalink: /kb/270/Q270047/
 
 ## Q270047: Streets/MapPoint: Blue Screen When You Start Program
 
+{% raw %}
+
 	Article: Q270047
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -120,3 +122,5 @@ permalink: /kb/270/Q270047/
 	
 	=============================================================================
 	
+
+{% endraw %}

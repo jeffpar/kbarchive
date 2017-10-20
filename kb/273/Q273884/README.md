@@ -6,6 +6,8 @@ permalink: /kb/273/Q273884/
 
 ## Q273884: XADM: How to Stop Address Book View Intersite Replication
 
+{% raw %}
+
 	Article: Q273884
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -93,3 +95,5 @@ permalink: /kb/273/Q273884/
 	
 	=============================================================================
 	
+
+{% endraw %}

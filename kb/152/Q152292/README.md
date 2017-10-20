@@ -6,6 +6,8 @@ permalink: /kb/152/Q152292/
 
 ## Q152292: XFOR: IA5 Body Part Used Although Different Setting is Selected
 
+{% raw %}
+
 	Article: Q152292
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -46,3 +48,5 @@ permalink: /kb/152/Q152292/
 	
 	=============================================================================
 	
+
+{% endraw %}

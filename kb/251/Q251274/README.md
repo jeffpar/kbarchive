@@ -6,6 +6,8 @@ permalink: /kb/251/Q251274/
 
 ## Q251274: Error When Attempting to Install Program Using Windows Installer
 
+{% raw %}
+
 	Article: Q251274
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -112,3 +114,5 @@ permalink: /kb/251/Q251274/
 	
 	=============================================================================
 	
+
+{% endraw %}

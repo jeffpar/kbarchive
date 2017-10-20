@@ -6,6 +6,8 @@ permalink: /kb/179/Q179892/
 
 ## Q179892: XWEB: OWA Client Does Not Correctly Associate .Rtf Freedoc
 
+{% raw %}
+
 	Article: Q179892
 	Product(s): Microsoft Exchange
 	Version(s): 3.01a,3.02,3.02a,3.03,4.0,4.01,5.0,5.5
@@ -92,3 +94,5 @@ permalink: /kb/179/Q179892/
 	
 	=============================================================================
 	
+
+{% endraw %}

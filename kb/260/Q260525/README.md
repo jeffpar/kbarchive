@@ -6,6 +6,8 @@ permalink: /kb/260/Q260525/
 
 ## Q260525: &quot;License Violation&quot; Error When You Enable Registry Auditing
 
+{% raw %}
+
 	Article: Q260525
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/260/Q260525/
 	
 	=============================================================================
 	
+
+{% endraw %}

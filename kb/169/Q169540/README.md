@@ -6,6 +6,8 @@ permalink: /kb/169/Q169540/
 
 ## Q169540: Error Message: Too Many Outstanding Commands
 
+{% raw %}
+
 	Article: Q169540
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -104,3 +106,5 @@ permalink: /kb/169/Q169540/
 	
 	=============================================================================
 	
+
+{% endraw %}

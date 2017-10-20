@@ -6,6 +6,8 @@ permalink: /kb/124/Q124854/
 
 ## Q124854: XCOPY Results in Data Loss When Copying Extremely Large Files
 
+{% raw %}
+
 	Article: Q124854
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,6.0,6.2,6.21,6.22
@@ -55,3 +57,5 @@ permalink: /kb/124/Q124854/
 	
 	=============================================================================
 	
+
+{% endraw %}

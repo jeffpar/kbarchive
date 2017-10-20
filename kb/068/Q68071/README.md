@@ -6,6 +6,8 @@ permalink: /kb/068/Q68071/
 
 ## Q68071: FIX: MASM Aligns on 4-Byte Boundary After Offset 8000h
 
+{% raw %}
+
 	Article: Q68071
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -82,3 +84,5 @@ permalink: /kb/068/Q68071/
 	
 	=============================================================================
 	
+
+{% endraw %}

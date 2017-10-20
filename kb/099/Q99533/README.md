@@ -6,6 +6,8 @@ permalink: /kb/099/Q99533/
 
 ## Q99533: DIRECTORY Command Returns Incorrect 0 Bytes Free Message
 
+{% raw %}
+
 	Article: Q99533
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/099/Q99533/
 	
 	=============================================================================
 	
+
+{% endraw %}

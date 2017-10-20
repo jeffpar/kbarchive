@@ -6,6 +6,8 @@ permalink: /kb/221/Q221686/
 
 ## Q221686: FIX: Hang When Arrowing Through Disabled Item in ComboBox
 
+{% raw %}
+
 	Article: Q221686
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -100,3 +102,5 @@ permalink: /kb/221/Q221686/
 	
 	=============================================================================
 	
+
+{% endraw %}

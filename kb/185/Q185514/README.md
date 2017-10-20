@@ -6,6 +6,8 @@ permalink: /kb/185/Q185514/
 
 ## Q185514: Age of Empires: List of Campaigns and Scenarios
 
+{% raw %}
+
 	Article: Q185514
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -91,3 +93,5 @@ permalink: /kb/185/Q185514/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232559/
 
 ## Q232559: Novell Print Banner Always Printed After Applying Service Pack 5
 
+{% raw %}
+
 	Article: Q232559
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -113,3 +115,5 @@ permalink: /kb/232/Q232559/
 	
 	=============================================================================
 	
+
+{% endraw %}

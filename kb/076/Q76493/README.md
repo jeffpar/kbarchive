@@ -6,6 +6,8 @@ permalink: /kb/076/Q76493/
 
 ## Q76493: Creating a Nonscrollable Region in Windows Help 3.1
 
+{% raw %}
+
 	Article: Q76493
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -69,3 +71,5 @@ permalink: /kb/076/Q76493/
 	
 	=============================================================================
 	
+
+{% endraw %}

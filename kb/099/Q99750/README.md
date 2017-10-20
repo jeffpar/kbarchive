@@ -6,6 +6,8 @@ permalink: /kb/099/Q99750/
 
 ## Q99750: Using LAN Manager 2.2 OS/2 Workstation to Support OS/2
 
+{% raw %}
+
 	Article: Q99750
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -37,3 +39,5 @@ permalink: /kb/099/Q99750/
 	
 	=============================================================================
 	
+
+{% endraw %}

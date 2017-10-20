@@ -6,6 +6,8 @@ permalink: /kb/176/Q176083/
 
 ## Q176083: System Is Running Low on Registry Quota
 
+{% raw %}
+
 	Article: Q176083
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/176/Q176083/
 	
 	=============================================================================
 	
+
+{% endraw %}

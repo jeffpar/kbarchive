@@ -6,6 +6,8 @@ permalink: /kb/192/Q192766/
 
 ## Q192766: SAMPLE: ADSIBrow.exe Browses Active Directory w/ Visual FoxPro
 
+{% raw %}
+
 	Article: Q192766
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0; winnt:2.5
@@ -112,3 +114,5 @@ permalink: /kb/192/Q192766/
 	
 	=============================================================================
 	
+
+{% endraw %}

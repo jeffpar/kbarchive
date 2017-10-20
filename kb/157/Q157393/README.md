@@ -6,6 +6,8 @@ permalink: /kb/157/Q157393/
 
 ## Q157393: INFO: STL Sample for the partial_sum Function
 
+{% raw %}
+
 	Article: Q157393
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -171,3 +173,5 @@ permalink: /kb/157/Q157393/
 	
 	=============================================================================
 	
+
+{% endraw %}

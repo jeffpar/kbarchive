@@ -6,6 +6,8 @@ permalink: /kb/128/Q128996/
 
 ## Q128996: HOWTO: Assign Database Location Generically in Data Env
 
+{% raw %}
+
 	Article: Q128996
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/128/Q128996/
 	
 	=============================================================================
 	
+
+{% endraw %}

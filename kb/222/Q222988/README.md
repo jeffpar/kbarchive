@@ -6,6 +6,8 @@ permalink: /kb/222/Q222988/
 
 ## Q222988: SMS: SystemRole and SystemType Values Removed from Sms.ini
 
+{% raw %}
+
 	Article: Q222988
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -133,3 +135,5 @@ permalink: /kb/222/Q222988/
 	
 	=============================================================================
 	
+
+{% endraw %}

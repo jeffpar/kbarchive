@@ -6,6 +6,8 @@ permalink: /kb/161/Q161020/
 
 ## Q161020: Implementing Windows 95 Updates
 
+{% raw %}
+
 	Article: Q161020
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -362,3 +364,5 @@ permalink: /kb/161/Q161020/
 	
 	=============================================================================
 	
+
+{% endraw %}

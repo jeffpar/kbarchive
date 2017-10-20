@@ -6,6 +6,8 @@ permalink: /kb/028/Q28842/
 
 ## Q28842: EXE Size Using BCOM4x.LIB (Stand Alone) Versus BRUN4x.LIB
 
+{% raw %}
+
 	Article: Q28842
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -136,3 +138,5 @@ permalink: /kb/028/Q28842/
 	The BCOM run-time module is replaced in memory when CHAINing between
 	BCOM programs, and no COMMON can be passed. The CHAIN and RUN
 	statements behave identically in programs compiled with BCOM.
+
+{% endraw %}

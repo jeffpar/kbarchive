@@ -6,6 +6,8 @@ permalink: /kb/117/Q117581/
 
 ## Q117581: CONN: Mail Messages Rejected for &gt; 63 Character Subject: Line
 
+{% raw %}
+
 	Article: Q117581
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -68,3 +70,5 @@ permalink: /kb/117/Q117581/
 	
 	=============================================================================
 	
+
+{% endraw %}

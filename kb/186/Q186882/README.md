@@ -6,6 +6,8 @@ permalink: /kb/186/Q186882/
 
 ## Q186882: FIX: Non-U.S. English DevStudio Typelibs Improperly Registered
 
+{% raw %}
+
 	Article: Q186882
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -137,3 +139,5 @@ permalink: /kb/186/Q186882/
 	
 	=============================================================================
 	
+
+{% endraw %}

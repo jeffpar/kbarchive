@@ -6,6 +6,8 @@ permalink: /kb/163/Q163923/
 
 ## Q163923: HOST Name Resolution Returns Last IP Addr on Multihomed Computer
 
+{% raw %}
+
 	Article: Q163923
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/163/Q163923/
 	
 	=============================================================================
 	
+
+{% endraw %}

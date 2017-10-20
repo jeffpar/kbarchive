@@ -6,6 +6,8 @@ permalink: /kb/215/Q215924/
 
 ## Q215924: XADM: Store Process Is Causing 100 Percent CPU Utilization
 
+{% raw %}
+
 	Article: Q215924
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -113,3 +115,5 @@ permalink: /kb/215/Q215924/
 	
 	=============================================================================
 	
+
+{% endraw %}

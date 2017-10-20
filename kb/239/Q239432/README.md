@@ -6,6 +6,8 @@ permalink: /kb/239/Q239432/
 
 ## Q239432: INFO: Visual FoxPro 5.0 Year 2000 Update
 
+{% raw %}
+
 	Article: Q239432
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a
@@ -65,3 +67,5 @@ permalink: /kb/239/Q239432/
 	
 	=============================================================================
 	
+
+{% endraw %}

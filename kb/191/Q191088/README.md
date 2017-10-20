@@ -6,6 +6,8 @@ permalink: /kb/191/Q191088/
 
 ## Q191088: Printer Prompts for Paper with Dutch Workstations
 
+{% raw %}
+
 	Article: Q191088
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/191/Q191088/
 	
 	=============================================================================
 	
+
+{% endraw %}

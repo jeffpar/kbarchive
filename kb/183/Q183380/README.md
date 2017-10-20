@@ -6,6 +6,8 @@ permalink: /kb/183/Q183380/
 
 ## Q183380: XADM: Full Online Backup Must Be Done After a Defrag or Repair
 
+{% raw %}
+
 	Article: Q183380
 	Product(s): Microsoft Exchange
 	Version(s): Windows:4.0,5.0,5.5
@@ -50,3 +52,5 @@ permalink: /kb/183/Q183380/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231616/
 
 ## Q231616: INFO: Terminal Server Console-Directed Pop-Up Print Error Box
 
+{% raw %}
+
 	Article: Q231616
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -139,3 +141,5 @@ permalink: /kb/231/Q231616/
 	
 	=============================================================================
 	
+
+{% endraw %}

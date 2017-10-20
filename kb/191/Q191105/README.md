@@ -6,6 +6,8 @@ permalink: /kb/191/Q191105/
 
 ## Q191105: BUG: RestoreToolbar Method May Not Restore Toolbar Correctly
 
+{% raw %}
+
 	Article: Q191105
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -171,3 +173,5 @@ permalink: /kb/191/Q191105/
 	
 	=============================================================================
 	
+
+{% endraw %}

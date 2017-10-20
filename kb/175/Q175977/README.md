@@ -6,6 +6,8 @@ permalink: /kb/175/Q175977/
 
 ## Q175977: XADM: Install Exchange Server &amp; Client 5.0 w/ Citrix WinFrame
 
+{% raw %}
+
 	Article: Q175977
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -82,3 +84,5 @@ permalink: /kb/175/Q175977/
 	
 	=============================================================================
 	
+
+{% endraw %}

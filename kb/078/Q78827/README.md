@@ -6,6 +6,8 @@ permalink: /kb/078/Q78827/
 
 ## Q78827: PC Gen: Two Versions of Hayes 9600 V-Series Modem
 
+{% raw %}
+
 	Article: Q78827
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.0b,3.2,3.2a
@@ -47,3 +49,5 @@ permalink: /kb/078/Q78827/
 	
 	=============================================================================
 	
+
+{% endraw %}

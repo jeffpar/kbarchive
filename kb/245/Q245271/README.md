@@ -6,6 +6,8 @@ permalink: /kb/245/Q245271/
 
 ## Q245271: Memory Leak in Remodbc.exe for Software Metering Component
 
+{% raw %}
+
 	Article: Q245271
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -283,3 +285,5 @@ permalink: /kb/245/Q245271/
 	
 	=============================================================================
 	
+
+{% endraw %}

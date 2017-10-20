@@ -6,6 +6,8 @@ permalink: /kb/234/Q234705/
 
 ## Q234705: Microsoft Pocket Guide to Microsoft Word 2000 Comments and Corre
 
+{% raw %}
+
 	Article: Q234705
 	Product(s): Microsoft Press
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/234/Q234705/
 	
 	=============================================================================
 	
+
+{% endraw %}

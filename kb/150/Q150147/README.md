@@ -6,6 +6,8 @@ permalink: /kb/150/Q150147/
 
 ## Q150147: BUG: LOADIMAGE() or LOADIMAGE_W() Graphics Functions Can Fail
 
+{% raw %}
+
 	Article: Q150147
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/150/Q150147/
 	
 	=============================================================================
 	
+
+{% endraw %}

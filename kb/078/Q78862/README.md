@@ -6,6 +6,8 @@ permalink: /kb/078/Q78862/
 
 ## Q78862: FIX: Incorrect Code Generated If Operand Is &#91;eax&#93;&#91;eax&#93;
 
+{% raw %}
+
 	Article: Q78862
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0
@@ -82,3 +84,5 @@ permalink: /kb/078/Q78862/
 	
 	=============================================================================
 	
+
+{% endraw %}

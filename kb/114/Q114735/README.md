@@ -6,6 +6,8 @@ permalink: /kb/114/Q114735/
 
 ## Q114735: Service Pack 2: COM2 Port Problem
 
+{% raw %}
+
 	Article: Q114735
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -48,3 +50,5 @@ permalink: /kb/114/Q114735/
 	
 	=============================================================================
 	
+
+{% endraw %}

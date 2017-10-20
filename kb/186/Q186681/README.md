@@ -6,6 +6,8 @@ permalink: /kb/186/Q186681/
 
 ## Q186681: BUG: Selecting Item in DBCombo Locks Up Form
 
+{% raw %}
+
 	Article: Q186681
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,97,97sp1,97sp2,97sp3
@@ -71,3 +73,5 @@ permalink: /kb/186/Q186681/
 	
 	=============================================================================
 	
+
+{% endraw %}

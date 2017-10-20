@@ -6,6 +6,8 @@ permalink: /kb/243/Q243249/
 
 ## Q243249: &quot;STOP 0x00000024&quot; Error Message Because of NTFS Timing Issue
 
+{% raw %}
+
 	Article: Q243249
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -85,3 +87,5 @@ permalink: /kb/243/Q243249/
 	
 	=============================================================================
 	
+
+{% endraw %}

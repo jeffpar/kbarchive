@@ -6,6 +6,8 @@ permalink: /kb/188/Q188271/
 
 ## Q188271: HOWTO: Print Contents of the Web Browser Control From VB
 
+{% raw %}
+
 	Article: Q188271
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -100,3 +102,5 @@ permalink: /kb/188/Q188271/
 	
 	=============================================================================
 	
+
+{% endraw %}

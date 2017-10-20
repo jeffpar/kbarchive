@@ -6,6 +6,8 @@ permalink: /kb/094/Q94956/
 
 ## Q94956: DOCERR: WinExec() Error Codes in Windows 3.0/3.1
 
+{% raw %}
+
 	Article: Q94956
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -183,3 +185,5 @@ permalink: /kb/094/Q94956/
 	
 	=============================================================================
 	
+
+{% endraw %}

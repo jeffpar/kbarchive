@@ -6,6 +6,8 @@ permalink: /kb/089/Q89214/
 
 ## Q89214: Drag-and-Drop Support in Version 1.0 of Freelance for Windows
 
+{% raw %}
+
 	Article: Q89214
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -106,3 +108,5 @@ permalink: /kb/089/Q89214/
 	
 	=============================================================================
 	
+
+{% endraw %}

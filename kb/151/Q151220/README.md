@@ -6,6 +6,8 @@ permalink: /kb/151/Q151220/
 
 ## Q151220: XCLN: Users with Delegates do not Appear in Meeting Requests
 
+{% raw %}
+
 	Article: Q151220
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -52,3 +54,5 @@ permalink: /kb/151/Q151220/
 	
 	=============================================================================
 	
+
+{% endraw %}

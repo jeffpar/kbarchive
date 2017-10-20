@@ -6,6 +6,8 @@ permalink: /kb/181/Q181880/
 
 ## Q181880: PRB: &quot;Access to an Unnamed File Was Denied&quot; Error
 
+{% raw %}
+
 	Article: Q181880
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/181/Q181880/
 	
 	=============================================================================
 	
+
+{% endraw %}

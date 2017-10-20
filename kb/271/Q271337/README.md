@@ -6,6 +6,8 @@ permalink: /kb/271/Q271337/
 
 ## Q271337: FS2000: View Through Windshield of Boeing 777-300 Is Black
 
+{% raw %}
+
 	Article: Q271337
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/271/Q271337/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195277/
 
 ## Q195277: Programming Visual C++ 5th Ed. Comments and Corrections
 
+{% raw %}
+
 	Article: Q195277
 	Product(s): Microsoft Press
 	Version(s): 
@@ -265,3 +267,5 @@ permalink: /kb/195/Q195277/
 	
 	=============================================================================
 	
+
+{% endraw %}

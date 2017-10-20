@@ -6,6 +6,8 @@ permalink: /kb/232/Q232118/
 
 ## Q232118: XCLN: How to Force the Internet Connection Wizard to Start
 
+{% raw %}
+
 	Article: Q232118
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/232/Q232118/
 	
 	=============================================================================
 	
+
+{% endraw %}

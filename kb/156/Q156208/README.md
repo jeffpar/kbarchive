@@ -6,6 +6,8 @@ permalink: /kb/156/Q156208/
 
 ## Q156208: STOP: 0x0000000A During Client Socket Disconnect
 
+{% raw %}
+
 	Article: Q156208
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -70,3 +72,5 @@ permalink: /kb/156/Q156208/
 	
 	=============================================================================
 	
+
+{% endraw %}

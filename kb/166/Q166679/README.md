@@ -6,6 +6,8 @@ permalink: /kb/166/Q166679/
 
 ## Q166679: SMS: Smsacm32.exe Does Not Set Status to Success
 
+{% raw %}
+
 	Article: Q166679
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -72,3 +74,5 @@ permalink: /kb/166/Q166679/
 	
 	=============================================================================
 	
+
+{% endraw %}

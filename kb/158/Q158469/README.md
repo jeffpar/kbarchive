@@ -6,6 +6,8 @@ permalink: /kb/158/Q158469/
 
 ## Q158469: INFO: Time Difference in Checking Out vs. Getting File in Source
 
+{% raw %}
+
 	Article: Q158469
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,4.0a,5.0
@@ -92,3 +94,5 @@ permalink: /kb/158/Q158469/
 	
 	=============================================================================
 	
+
+{% endraw %}

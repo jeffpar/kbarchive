@@ -6,6 +6,8 @@ permalink: /kb/142/Q142372/
 
 ## Q142372: Windows NT Support For Long File Names Under CDFS File System
 
+{% raw %}
+
 	Article: Q142372
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -74,3 +76,5 @@ permalink: /kb/142/Q142372/
 	
 	=============================================================================
 	
+
+{% endraw %}

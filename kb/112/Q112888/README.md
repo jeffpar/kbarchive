@@ -6,6 +6,8 @@ permalink: /kb/112/Q112888/
 
 ## Q112888: PC DOS: Err Msg: Notice 13 Disk Full or Error Writing to Disk
 
+{% raw %}
+
 	Article: Q112888
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1x,3.0,3.0b,3.2
@@ -65,3 +67,5 @@ permalink: /kb/112/Q112888/
 	
 	=============================================================================
 	
+
+{% endraw %}

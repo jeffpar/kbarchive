@@ -6,6 +6,8 @@ permalink: /kb/249/Q249836/
 
 ## Q249836: PRB: Table Buffer Contains Uncommitted Changes on REQUERY()
 
+{% raw %}
+
 	Article: Q249836
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -151,3 +153,5 @@ permalink: /kb/249/Q249836/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61712/
 
 ## Q61712: Terminal Err Msg: Cannot Communicate with Modem
 
+{% raw %}
+
 	Article: Q61712
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.x,2.x,3.0,3.0a,3.1,3.11,95
@@ -42,3 +44,5 @@ permalink: /kb/061/Q61712/
 	
 	=============================================================================
 	
+
+{% endraw %}

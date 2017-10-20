@@ -6,6 +6,8 @@ permalink: /kb/179/Q179920/
 
 ## Q179920: AOE: Error Message: Could Not Initialize Graphics System
 
+{% raw %}
+
 	Article: Q179920
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -77,3 +79,5 @@ permalink: /kb/179/Q179920/
 	
 	=============================================================================
 	
+
+{% endraw %}

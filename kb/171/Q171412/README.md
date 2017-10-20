@@ -6,6 +6,8 @@ permalink: /kb/171/Q171412/
 
 ## Q171412: FIX: SMC 8416 is Not Recognized during Windows NT Unattended Set
 
+{% raw %}
+
 	Article: Q171412
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -137,3 +139,5 @@ permalink: /kb/171/Q171412/
 	
 	=============================================================================
 	
+
+{% endraw %}

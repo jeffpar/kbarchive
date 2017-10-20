@@ -6,6 +6,8 @@ permalink: /kb/138/Q138561/
 
 ## Q138561: FIX: Combo Box Does Not Appear to Drop Down When Clicked
 
+{% raw %}
+
 	Article: Q138561
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/138/Q138561/
 	
 	=============================================================================
 	
+
+{% endraw %}

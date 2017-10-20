@@ -6,6 +6,8 @@ permalink: /kb/088/Q88449/
 
 ## Q88449: Distance Figures in Post Shot Dialog Are Not Correct
 
+{% raw %}
+
 	Article: Q88449
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/088/Q88449/
 	
 	=============================================================================
 	
+
+{% endraw %}

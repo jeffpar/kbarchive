@@ -6,6 +6,8 @@ permalink: /kb/077/Q77071/
 
 ## Q77071: Correctly Configuring PWB for Windows Development
 
+{% raw %}
+
 	Article: Q77071
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -137,3 +139,5 @@ permalink: /kb/077/Q77071/
 	
 	=============================================================================
 	
+
+{% endraw %}

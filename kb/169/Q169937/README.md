@@ -6,6 +6,8 @@ permalink: /kb/169/Q169937/
 
 ## Q169937: WD97: Avoiding &quot;Save As&quot; Alert When Saving to Different Format
 
+{% raw %}
+
 	Article: Q169937
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -121,3 +123,5 @@ permalink: /kb/169/Q169937/
 	
 	=============================================================================
 	
+
+{% endraw %}

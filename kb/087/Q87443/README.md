@@ -6,6 +6,8 @@ permalink: /kb/087/Q87443/
 
 ## Q87443: Maximum of 10 Printers Can Be Set Up Using SETUP.SHH
 
+{% raw %}
+
 	Article: Q87443
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/087/Q87443/
 	
 	=============================================================================
 	
+
+{% endraw %}

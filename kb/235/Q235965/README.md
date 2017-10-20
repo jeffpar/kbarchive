@@ -6,6 +6,8 @@ permalink: /kb/235/Q235965/
 
 ## Q235965: XADM: Message Forwarded By CHT Client Not Displayed Properly
 
+{% raw %}
+
 	Article: Q235965
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98; winnt:5.5
@@ -110,3 +112,5 @@ permalink: /kb/235/Q235965/
 	
 	=============================================================================
 	
+
+{% endraw %}

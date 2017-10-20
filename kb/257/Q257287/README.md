@@ -6,6 +6,8 @@ permalink: /kb/257/Q257287/
 
 ## Q257287: PRB: RTF Control 6.0 Displays Word Tables Incorrectly
 
+{% raw %}
+
 	Article: Q257287
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -119,3 +121,5 @@ permalink: /kb/257/Q257287/
 	
 	=============================================================================
 	
+
+{% endraw %}

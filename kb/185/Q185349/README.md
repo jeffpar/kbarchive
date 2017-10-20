@@ -6,6 +6,8 @@ permalink: /kb/185/Q185349/
 
 ## Q185349: Problems Remotely Accessing W3 or FTP Perfmon Counters
 
+{% raw %}
+
 	Article: Q185349
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/185/Q185349/
 	
 	=============================================================================
 	
+
+{% endraw %}

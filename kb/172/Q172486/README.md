@@ -6,6 +6,8 @@ permalink: /kb/172/Q172486/
 
 ## Q172486: Bookshelf: &quot;Click Image...&quot; Text Is Copied or Printed with Image
 
+{% raw %}
+
 	Article: Q172486
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:; WINDOWS:1.0
@@ -77,3 +79,5 @@ permalink: /kb/172/Q172486/
 	
 	=============================================================================
 	
+
+{% endraw %}

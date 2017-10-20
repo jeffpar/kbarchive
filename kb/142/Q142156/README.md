@@ -6,6 +6,8 @@ permalink: /kb/142/Q142156/
 
 ## Q142156: PRB: Cannot See Objects on Back Tabs If Using VB SSTAB Control
 
+{% raw %}
+
 	Article: Q142156
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/142/Q142156/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271288/
 
 ## Q271288: Domain Trusts May Not Work with Password Sync Service
 
+{% raw %}
+
 	Article: Q271288
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -97,3 +99,5 @@ permalink: /kb/271/Q271288/
 	
 	=============================================================================
 	
+
+{% endraw %}

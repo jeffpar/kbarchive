@@ -6,6 +6,8 @@ permalink: /kb/258/Q258903/
 
 ## Q258903: Allegiance: Weapon Sounds Stutter After Ship Reloads Ammunition
 
+{% raw %}
+
 	Article: Q258903
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/258/Q258903/
 	
 	=============================================================================
 	
+
+{% endraw %}

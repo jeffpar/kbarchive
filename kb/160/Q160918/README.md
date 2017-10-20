@@ -6,6 +6,8 @@ permalink: /kb/160/Q160918/
 
 ## Q160918: FIX: SAVE SCREEN and TYPE() Cause Visual FoxPro to Terminate
 
+{% raw %}
+
 	Article: Q160918
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -54,3 +56,5 @@ permalink: /kb/160/Q160918/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/032/Q32448/
 
 ## Q32448: INFO: Specifying .DEF Files on the CL Command Line
 
+{% raw %}
+
 	Article: Q32448
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:6.0,6.00a,6.00ax,7.0; OS/2:6.0,6.00a; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.0,4.0,5.
@@ -51,3 +53,5 @@ permalink: /kb/032/Q32448/
 	
 	=============================================================================
 	
+
+{% endraw %}

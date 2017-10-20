@@ -6,6 +6,8 @@ permalink: /kb/269/Q269850/
 
 ## Q269850: TN5250 Service Stops Responding and Logs Event 9 Error Messages
 
+{% raw %}
+
 	Article: Q269850
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3; :
@@ -115,3 +117,5 @@ permalink: /kb/269/Q269850/
 	
 	=============================================================================
 	
+
+{% endraw %}

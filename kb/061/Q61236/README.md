@@ -6,6 +6,8 @@ permalink: /kb/061/Q61236/
 
 ## Q61236: C 6.00 README: Increasing the Maximum Number of Open Files
 
+{% raw %}
+
 	Article: Q61236
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -114,3 +116,5 @@ permalink: /kb/061/Q61236/
 	the new CRT0DAT.OBJ and _FILE.OBJ file(s), or replace the CRT0DAT.OBJ
 	and _FILE.OBJ object(s) in the appropriate model of the C run-time
 	library.
+
+{% endraw %}

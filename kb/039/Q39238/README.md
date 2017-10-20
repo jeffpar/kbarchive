@@ -6,6 +6,8 @@ permalink: /kb/039/Q39238/
 
 ## Q39238: &quot;File AB45ADVR.HLP Not Found&quot; QB Advisor 4.50, ERASE Example
 
+{% raw %}
+
 	Article: Q39238
 	Product(s): See article
 	Version(s): 4.50
@@ -44,3 +46,5 @@ permalink: /kb/039/Q39238/
 	   <Next>). This will put you in the window for the ERASE statement.
 	
 	4. Choose the ERASE <example> and it will come up on the screen.
+
+{% endraw %}

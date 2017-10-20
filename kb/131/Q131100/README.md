@@ -6,6 +6,8 @@ permalink: /kb/131/Q131100/
 
 ## Q131100: INFO: DoDragDrop() Parameter Documented Incorrectly
 
+{% raw %}
+
 	Article: Q131100
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,5.0
@@ -82,3 +84,5 @@ permalink: /kb/131/Q131100/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138472/
 
 ## Q138472: Failure Connecting to Network Monitor Agent Across RAS Gateway
 
+{% raw %}
+
 	Article: Q138472
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2,3.5,3.51
@@ -95,3 +97,5 @@ permalink: /kb/138/Q138472/
 	
 	=============================================================================
 	
+
+{% endraw %}

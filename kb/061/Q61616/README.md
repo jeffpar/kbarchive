@@ -6,6 +6,8 @@ permalink: /kb/061/Q61616/
 
 ## Q61616: CL.EXE Command-Line Switches Are Order Dependent
 
+{% raw %}
+
 	Article: Q61616
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -39,3 +41,5 @@ permalink: /kb/061/Q61616/
 	
 	Example 1 will disable optimizations, and Example 2 and 3 will enable
 	optimizations.
+
+{% endraw %}

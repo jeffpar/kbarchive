@@ -6,6 +6,8 @@ permalink: /kb/081/Q81522/
 
 ## Q81522: Manually Reconstructing Windows Productivity Pack Groups
 
+{% raw %}
+
 	Article: Q81522
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0,3.0,3.0a
@@ -139,3 +141,5 @@ permalink: /kb/081/Q81522/
 	
 	=============================================================================
 	
+
+{% endraw %}

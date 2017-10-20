@@ -6,6 +6,8 @@ permalink: /kb/321/Q321921/
 
 ## Q321921: MCSA Readiness Review Managing A Microsoft Windows 2000 Network
 
+{% raw %}
+
 	Article: Q321921
 	Product(s): Microsoft Press
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/321/Q321921/
 	
 	=============================================================================
 	
+
+{% endraw %}

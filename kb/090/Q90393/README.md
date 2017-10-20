@@ -6,6 +6,8 @@ permalink: /kb/090/Q90393/
 
 ## Q90393: WD97: How to Use Nested IF Fields in a Mail Merge Document
 
+{% raw %}
+
 	Article: Q90393
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -131,3 +133,5 @@ permalink: /kb/090/Q90393/
 	
 	=============================================================================
 	
+
+{% endraw %}

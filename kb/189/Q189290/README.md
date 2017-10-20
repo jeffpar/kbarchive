@@ -6,6 +6,8 @@ permalink: /kb/189/Q189290/
 
 ## Q189290: Loss of Desktop After Logon When Using a Filter Gina.dll
 
+{% raw %}
+
 	Article: Q189290
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/189/Q189290/
 	
 	=============================================================================
 	
+
+{% endraw %}

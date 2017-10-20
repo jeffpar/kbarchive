@@ -6,6 +6,8 @@ permalink: /kb/180/Q180727/
 
 ## Q180727: Error Message: Property or Method Not Found
 
+{% raw %}
+
 	Article: Q180727
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -152,3 +154,5 @@ permalink: /kb/180/Q180727/
 	
 	=============================================================================
 	
+
+{% endraw %}

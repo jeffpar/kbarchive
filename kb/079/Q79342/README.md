@@ -6,6 +6,8 @@ permalink: /kb/079/Q79342/
 
 ## Q79342: Windows Paintbrush File Format
 
+{% raw %}
+
 	Article: Q79342
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -149,3 +151,5 @@ permalink: /kb/079/Q79342/
 	
 	=============================================================================
 	
+
+{% endraw %}

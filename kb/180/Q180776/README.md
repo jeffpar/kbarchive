@@ -6,6 +6,8 @@ permalink: /kb/180/Q180776/
 
 ## Q180776: Windows Messaging Does Not Change Addresses to Hyperlinks
 
+{% raw %}
+
 	Article: Q180776
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -77,3 +79,5 @@ permalink: /kb/180/Q180776/
 	
 	=============================================================================
 	
+
+{% endraw %}

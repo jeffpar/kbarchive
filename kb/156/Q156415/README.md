@@ -6,6 +6,8 @@ permalink: /kb/156/Q156415/
 
 ## Q156415: XADM: Information Store Fails to Start with Jet Error -327
 
+{% raw %}
+
 	Article: Q156415
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -116,3 +118,5 @@ permalink: /kb/156/Q156415/
 	
 	=============================================================================
 	
+
+{% endraw %}

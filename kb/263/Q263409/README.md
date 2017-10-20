@@ -6,6 +6,8 @@ permalink: /kb/263/Q263409/
 
 ## Q263409: Admin Console: WinNT Diagnostics/Perform Mon. Attach Incorrectly
 
+{% raw %}
+
 	Article: Q263409
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/263/Q263409/
 	
 	=============================================================================
 	
+
+{% endraw %}

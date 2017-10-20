@@ -6,6 +6,8 @@ permalink: /kb/253/Q253473/
 
 ## Q253473: How to Use the Arrow (ALT+TAB) Button in Remote Control Window
 
+{% raw %}
+
 	Article: Q253473
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -63,3 +65,5 @@ permalink: /kb/253/Q253473/
 	
 	=============================================================================
 	
+
+{% endraw %}

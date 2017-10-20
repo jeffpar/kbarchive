@@ -6,6 +6,8 @@ permalink: /kb/142/Q142551/
 
 ## Q142551: FIX: No Carriage Return Between RI Code and Appended Code
 
+{% raw %}
+
 	Article: Q142551
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -75,3 +77,5 @@ permalink: /kb/142/Q142551/
 	
 	=============================================================================
 	
+
+{% endraw %}

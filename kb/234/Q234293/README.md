@@ -6,6 +6,8 @@ permalink: /kb/234/Q234293/
 
 ## Q234293: XFOR: Setup Problems Upgrading GW/Notes/SNADS/PROFS Connectors
 
+{% raw %}
+
 	Article: Q234293
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -88,3 +90,5 @@ permalink: /kb/234/Q234293/
 	
 	=============================================================================
 	
+
+{% endraw %}

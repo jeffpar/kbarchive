@@ -6,6 +6,8 @@ permalink: /kb/158/Q158824/
 
 ## Q158824: Using Quotation Marks with Set Path= Statement Fails
 
+{% raw %}
+
 	Article: Q158824
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/158/Q158824/
 	
 	=============================================================================
 	
+
+{% endraw %}

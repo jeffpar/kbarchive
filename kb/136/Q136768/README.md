@@ -6,6 +6,8 @@ permalink: /kb/136/Q136768/
 
 ## Q136768: Benefits of Object-Oriented Coding
 
+{% raw %}
+
 	Article: Q136768
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -82,3 +84,5 @@ permalink: /kb/136/Q136768/
 	
 	=============================================================================
 	
+
+{% endraw %}

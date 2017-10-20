@@ -6,6 +6,8 @@ permalink: /kb/169/Q169558/
 
 ## Q169558: SMS Database Manager Ignores Named Pipe Definition
 
+{% raw %}
+
 	Article: Q169558
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -49,3 +51,5 @@ permalink: /kb/169/Q169558/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146480/
 
 ## Q146480: XCLN: Additional Addresses Not Included with Resent Message
 
+{% raw %}
+
 	Article: Q146480
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; :
@@ -61,3 +63,5 @@ permalink: /kb/146/Q146480/
 	
 	=============================================================================
 	
+
+{% endraw %}

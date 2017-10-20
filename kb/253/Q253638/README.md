@@ -6,6 +6,8 @@ permalink: /kb/253/Q253638/
 
 ## Q253638: XADM: Mailbox Manager Does Not Install, (80004005)
 
+{% raw %}
+
 	Article: Q253638
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -83,3 +85,5 @@ permalink: /kb/253/Q253638/
 	
 	=============================================================================
 	
+
+{% endraw %}

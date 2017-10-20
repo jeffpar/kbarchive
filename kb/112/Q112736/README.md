@@ -6,6 +6,8 @@ permalink: /kb/112/Q112736/
 
 ## Q112736: WFWG Err Msg on Exit: There Are 1 User(s) Connected to Your...
 
+{% raw %}
+
 	Article: Q112736
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -60,3 +62,5 @@ permalink: /kb/112/Q112736/
 	
 	=============================================================================
 	
+
+{% endraw %}

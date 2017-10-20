@@ -6,6 +6,8 @@ permalink: /kb/123/Q123222/
 
 ## Q123222: PC Gen: External Group Details Do Not Display Friendly Names
 
+{% raw %}
+
 	Article: Q123222
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -52,3 +54,5 @@ permalink: /kb/123/Q123222/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/109/Q109251/
 
 ## Q109251: Cannot Remount DoubleSpace Drive (ASPIDRVR.SYS and DOSOAD.SYS)
 
+{% raw %}
+
 	Article: Q109251
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -57,3 +59,5 @@ permalink: /kb/109/Q109251/
 	
 	=============================================================================
 	
+
+{% endraw %}

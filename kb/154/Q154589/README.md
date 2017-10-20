@@ -6,6 +6,8 @@ permalink: /kb/154/Q154589/
 
 ## Q154589: XFOR: Error 2140 Starting the Internet Mail Connector Service
 
+{% raw %}
+
 	Article: Q154589
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/154/Q154589/
 	
 	=============================================================================
 	
+
+{% endraw %}

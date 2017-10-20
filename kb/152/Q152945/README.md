@@ -6,6 +6,8 @@ permalink: /kb/152/Q152945/
 
 ## Q152945: XCON: Microsoft Exchange Server MTA Not Responding
 
+{% raw %}
+
 	Article: Q152945
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -100,3 +102,5 @@ permalink: /kb/152/Q152945/
 	
 	=============================================================================
 	
+
+{% endraw %}

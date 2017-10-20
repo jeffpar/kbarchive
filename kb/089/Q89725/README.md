@@ -6,6 +6,8 @@ permalink: /kb/089/Q89725/
 
 ## Q89725: Using 3COM 3+Share NB.COM and MSREDIR.EXE
 
+{% raw %}
+
 	Article: Q89725
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/089/Q89725/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166441/
 
 ## Q166441: HOWTO: Getting IIS to work with Informix ODBC
 
+{% raw %}
+
 	Article: Q166441
 	Product(s): Internet Information Server
 	Version(s): 3.0
@@ -69,3 +71,5 @@ permalink: /kb/166/Q166441/
 	
 	=============================================================================
 	
+
+{% endraw %}

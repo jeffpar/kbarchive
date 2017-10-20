@@ -6,6 +6,8 @@ permalink: /kb/197/Q197296/
 
 ## Q197296: BUG: Error 424 Adding Data Object Wizard-Created Ctrl to Form
 
+{% raw %}
+
 	Article: Q197296
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -176,3 +178,5 @@ permalink: /kb/197/Q197296/
 	
 	=============================================================================
 	
+
+{% endraw %}

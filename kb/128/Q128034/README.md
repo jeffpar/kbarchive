@@ -6,6 +6,8 @@ permalink: /kb/128/Q128034/
 
 ## Q128034: OEM Printer Driver May Be Overwritten by Windows 95 Setup
 
+{% raw %}
+
 	Article: Q128034
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/128/Q128034/
 	
 	=============================================================================
 	
+
+{% endraw %}

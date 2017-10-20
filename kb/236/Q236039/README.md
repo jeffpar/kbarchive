@@ -6,6 +6,8 @@ permalink: /kb/236/Q236039/
 
 ## Q236039: SMS: Client May Not Install On Finnish Windows NT Workstations
 
+{% raw %}
+
 	Article: Q236039
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -64,3 +66,5 @@ permalink: /kb/236/Q236039/
 	
 	=============================================================================
 	
+
+{% endraw %}

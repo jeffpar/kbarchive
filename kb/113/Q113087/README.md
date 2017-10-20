@@ -6,6 +6,8 @@ permalink: /kb/113/Q113087/
 
 ## Q113087: WFWG 3.11 Disk 2 Directory Listing (5.25 Inch, 1.2 MB)
 
+{% raw %}
+
 	Article: Q113087
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -157,3 +159,5 @@ permalink: /kb/113/Q113087/
 	
 	=============================================================================
 	
+
+{% endraw %}

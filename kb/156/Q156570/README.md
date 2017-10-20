@@ -6,6 +6,8 @@ permalink: /kb/156/Q156570/
 
 ## Q156570: XFOR: How to Prevent MSMail from Delivering to SMTP Addresses
 
+{% raw %}
+
 	Article: Q156570
 	Product(s): Microsoft Exchange
 	Version(s): winnt:3.5,3.51,4.0
@@ -63,3 +65,5 @@ permalink: /kb/156/Q156570/
 	
 	=============================================================================
 	
+
+{% endraw %}

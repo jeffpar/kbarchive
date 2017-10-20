@@ -6,6 +6,8 @@ permalink: /kb/241/Q241279/
 
 ## Q241279: SMS: Client Appears as Not Installed in Administrator Console
 
+{% raw %}
+
 	Article: Q241279
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -144,3 +146,5 @@ permalink: /kb/241/Q241279/
 	
 	=============================================================================
 	
+
+{% endraw %}

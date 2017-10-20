@@ -6,6 +6,8 @@ permalink: /kb/011/Q11339/
 
 ## Q11339: PRB: 8087 mnemonics without Operators
 
+{% raw %}
+
 	Article: Q11339
 	Product(s): Microsoft Macro Assembler
 	Version(s): 1.25,5.0,5.1,6.0
@@ -60,3 +62,5 @@ permalink: /kb/011/Q11339/
 	
 	=============================================================================
 	
+
+{% endraw %}

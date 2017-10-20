@@ -6,6 +6,8 @@ permalink: /kb/029/Q29703/
 
 ## Q29703: Mouse MREADME.DOC: Invoking the Control Panel in Word
 
+{% raw %}
+
 	Article: Q29703
 	Product(s): See article
 	Version(s): 1.00
@@ -20,3 +22,5 @@ permalink: /kb/029/Q29703/
 	
 	1. Hold down the CTRL key.
 	2. Press the ALT or SHIFT keys before pressing the left mouse button.
+
+{% endraw %}

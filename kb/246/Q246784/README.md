@@ -6,6 +6,8 @@ permalink: /kb/246/Q246784/
 
 ## Q246784: RPC Services Do Not Start and 'Not Enough Resources' Message
 
+{% raw %}
+
 	Article: Q246784
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -125,3 +127,5 @@ permalink: /kb/246/Q246784/
 	
 	=============================================================================
 	
+
+{% endraw %}

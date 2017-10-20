@@ -6,6 +6,8 @@ permalink: /kb/249/Q249921/
 
 ## Q249921: Terminal Server Programs Do Not Run, Files32.vxd Cannot Be Found
 
+{% raw %}
+
 	Article: Q249921
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/249/Q249921/
 	
 	=============================================================================
 	
+
+{% endraw %}

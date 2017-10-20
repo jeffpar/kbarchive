@@ -6,6 +6,8 @@ permalink: /kb/151/Q151901/
 
 ## Q151901: PRB: StatusBar Pane Enabled by Default
 
+{% raw %}
+
 	Article: Q151901
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -71,7 +73,7 @@ permalink: /kb/151/Q151901/
 	     class CMainFrame : public CMDIFrameWnd
 	     {
 	     ...
-	         //} }AFX_MSG
+	         //}}AFX_MSG
 	         afx_msg void OnUpdateMypane(CCmdUI* pCmdUI);
 	         DECLARE_MESSAGE_MAP()
 	     };
@@ -80,9 +82,9 @@ permalink: /kb/151/Q151901/
 	     ...
 	
 	     BEGIN_MESSAGE_MAP(CMainFrame, CMDIFrameWnd)
-	         //{ {AFX_MSG_MAP(CMainFrame)
+	         //{{AFX_MSG_MAP(CMainFrame)
 	     ...
-	         //} }AFX_MSG_MAP
+	         //}}AFX_MSG_MAP
 	         ON_UPDATE_COMMAND_UI(ID_MYPANE, OnUpdateMypane)
 	     END_MESSAGE_MAP()
 	
@@ -112,3 +114,5 @@ permalink: /kb/151/Q151901/
 	
 	=============================================================================
 	
+
+{% endraw %}

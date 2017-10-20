@@ -6,6 +6,8 @@ permalink: /kb/154/Q154183/
 
 ## Q154183: CreateFile API with Delete-on-Close Option May Fail
 
+{% raw %}
+
 	Article: Q154183
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -61,3 +63,5 @@ permalink: /kb/154/Q154183/
 	
 	=============================================================================
 	
+
+{% endraw %}

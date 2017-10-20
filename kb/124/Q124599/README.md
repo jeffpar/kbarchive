@@ -6,6 +6,8 @@ permalink: /kb/124/Q124599/
 
 ## Q124599: Trumpet PPP Client Can Hang RAS
 
+{% raw %}
+
 	Article: Q124599
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -53,3 +55,5 @@ permalink: /kb/124/Q124599/
 	
 	=============================================================================
 	
+
+{% endraw %}

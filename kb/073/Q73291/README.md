@@ -6,6 +6,8 @@ permalink: /kb/073/Q73291/
 
 ## Q73291: Gibson Research Spinrite II and MS-DOS 5.x/6.x
 
+{% raw %}
+
 	Article: Q73291
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/073/Q73291/
 	
 	=============================================================================
 	
+
+{% endraw %}

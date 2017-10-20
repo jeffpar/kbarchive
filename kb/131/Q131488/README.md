@@ -6,6 +6,8 @@ permalink: /kb/131/Q131488/
 
 ## Q131488: Today's Date Is the Default Date in Go To Dialog Box
 
+{% raw %}
+
 	Article: Q131488
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -35,3 +37,5 @@ permalink: /kb/131/Q131488/
 	
 	=============================================================================
 	
+
+{% endraw %}

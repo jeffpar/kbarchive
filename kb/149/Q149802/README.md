@@ -6,6 +6,8 @@ permalink: /kb/149/Q149802/
 
 ## Q149802: Assigning 3270 LUs to Workstations Using SNA Server Client
 
+{% raw %}
+
 	Article: Q149802
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -164,3 +166,5 @@ permalink: /kb/149/Q149802/
 	
 	=============================================================================
 	
+
+{% endraw %}

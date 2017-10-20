@@ -6,6 +6,8 @@ permalink: /kb/035/Q35270/
 
 ## Q35270: Installing Compilers on a Network Violates License Agreement
 
+{% raw %}
+
 	Article: Q35270
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -30,3 +32,5 @@ permalink: /kb/035/Q35270/
 	
 	Note that the applications created with the compilers are allowed to
 	be used on networks.
+
+{% endraw %}

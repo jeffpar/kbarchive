@@ -6,6 +6,8 @@ permalink: /kb/028/Q28517/
 
 ## Q28517: Choice of Three Software Bundles for New Mouse 1.00
 
+{% raw %}
+
 	Article: Q28517
 	Product(s): See article
 	Version(s): 1.00
@@ -22,3 +24,5 @@ permalink: /kb/028/Q28517/
 	2. Microsoft Paintbrush with Mouse Menus
 	
 	3. Windows with Paintbrush for Windows
+
+{% endraw %}

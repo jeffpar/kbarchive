@@ -6,6 +6,8 @@ permalink: /kb/184/Q184545/
 
 ## Q184545: XADM: Error Using From: Field When Replying to Public Folder
 
+{% raw %}
+
 	Article: Q184545
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -86,3 +88,5 @@ permalink: /kb/184/Q184545/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162201/
 
 ## Q162201: MSB Solar: ErrMsg: Magic School Bus Needs More Memory
 
+{% raw %}
+
 	Article: Q162201
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -167,3 +169,5 @@ permalink: /kb/162/Q162201/
 	
 	=============================================================================
 	
+
+{% endraw %}

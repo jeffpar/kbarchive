@@ -6,6 +6,8 @@ permalink: /kb/027/Q27201/
 
 ## Q27201: Passed Double-Precision Array Assigned Long Integer Hangs
 
+{% raw %}
+
 	Article: Q27201
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -57,3 +59,5 @@ permalink: /kb/027/Q27201/
 	                                '9.058940453046392D-233 when it is printed
 	                                'out here.
 	END SUB
+
+{% endraw %}

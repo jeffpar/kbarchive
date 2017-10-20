@@ -6,6 +6,8 @@ permalink: /kb/235/Q235991/
 
 ## Q235991: SMS: Systems Management Server 2.0 Service Pack 1 Fixlist
 
+{% raw %}
+
 	Article: Q235991
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -212,3 +214,5 @@ permalink: /kb/235/Q235991/
 	
 	=============================================================================
 	
+
+{% endraw %}

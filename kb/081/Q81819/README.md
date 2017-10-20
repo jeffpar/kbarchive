@@ -6,6 +6,8 @@ permalink: /kb/081/Q81819/
 
 ## Q81819: Exit Codes or Errorlevels Set by MS-DOS Commands
 
+{% raw %}
+
 	Article: Q81819
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.22
@@ -97,3 +99,5 @@ permalink: /kb/081/Q81819/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223073/
 
 ## Q223073: FIX: MSHFlexGrid Dashes/Dots Invalid for GridLinesHeader/In
 
+{% raw %}
+
 	Article: Q223073
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -124,3 +126,5 @@ permalink: /kb/223/Q223073/
 	
 	=============================================================================
 	
+
+{% endraw %}

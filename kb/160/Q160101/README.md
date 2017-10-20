@@ -6,6 +6,8 @@ permalink: /kb/160/Q160101/
 
 ## Q160101: NBA Full Court Press: Invalid Page Fault in Kernel32.dll
 
+{% raw %}
+
 	Article: Q160101
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -84,3 +86,5 @@ permalink: /kb/160/Q160101/
 	
 	=============================================================================
 	
+
+{% endraw %}

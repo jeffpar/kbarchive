@@ -6,6 +6,8 @@ permalink: /kb/115/Q115495/
 
 ## Q115495: SMTP: Err Msg: 552 Error in Local Delivery
 
+{% raw %}
+
 	Article: Q115495
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/115/Q115495/
 	
 	=============================================================================
 	
+
+{% endraw %}

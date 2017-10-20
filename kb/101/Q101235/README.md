@@ -6,6 +6,8 @@ permalink: /kb/101/Q101235/
 
 ## Q101235: TN3270 Server Now Supports Client-Side Hot Backup
 
+{% raw %}
+
 	Article: Q101235
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -82,3 +84,5 @@ permalink: /kb/101/Q101235/
 	
 	=============================================================================
 	
+
+{% endraw %}

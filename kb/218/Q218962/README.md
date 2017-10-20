@@ -6,6 +6,8 @@ permalink: /kb/218/Q218962/
 
 ## Q218962: XADM: MTSIDs Generated w/ 2 Different Characters as Delimiters
 
+{% raw %}
+
 	Article: Q218962
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2
@@ -86,3 +88,5 @@ permalink: /kb/218/Q218962/
 	
 	=============================================================================
 	
+
+{% endraw %}

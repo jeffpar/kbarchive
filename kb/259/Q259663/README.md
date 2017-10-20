@@ -6,6 +6,8 @@ permalink: /kb/259/Q259663/
 
 ## Q259663: HOWTO: Convert Currency or Numbers into English Words
 
+{% raw %}
+
 	Article: Q259663
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -288,3 +290,5 @@ permalink: /kb/259/Q259663/
 	
 	=============================================================================
 	
+
+{% endraw %}

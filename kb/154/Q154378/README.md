@@ -6,6 +6,8 @@ permalink: /kb/154/Q154378/
 
 ## Q154378: Tooltips Slow to Appear
 
+{% raw %}
+
 	Article: Q154378
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/154/Q154378/
 	
 	=============================================================================
 	
+
+{% endraw %}

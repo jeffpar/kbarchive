@@ -6,6 +6,8 @@ permalink: /kb/146/Q146874/
 
 ## Q146874: PRB: Sizebox Property Has Different Value in FoxPro for Mac
 
+{% raw %}
+
 	Article: Q146874
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -66,3 +68,5 @@ permalink: /kb/146/Q146874/
 	
 	=============================================================================
 	
+
+{% endraw %}

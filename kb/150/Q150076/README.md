@@ -6,6 +6,8 @@ permalink: /kb/150/Q150076/
 
 ## Q150076: BUG: C4003: Not Enough Parameters for SubclassWindow Macro
 
+{% raw %}
+
 	Article: Q150076
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,1.52a,2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -73,3 +75,5 @@ permalink: /kb/150/Q150076/
 	
 	=============================================================================
 	
+
+{% endraw %}

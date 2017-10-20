@@ -6,6 +6,8 @@ permalink: /kb/093/Q93051/
 
 ## Q93051: Okidata ML92 Prints Random Characters
 
+{% raw %}
+
 	Article: Q93051
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/093/Q93051/
 	
 	=============================================================================
 	
+
+{% endraw %}

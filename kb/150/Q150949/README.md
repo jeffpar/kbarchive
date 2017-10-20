@@ -6,6 +6,8 @@ permalink: /kb/150/Q150949/
 
 ## Q150949: PRB: Setup Wizard Fails to Recognize Disk Drive Selections
 
+{% raw %}
+
 	Article: Q150949
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -82,3 +84,5 @@ permalink: /kb/150/Q150949/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31454/
 
 ## Q31454: README.DOC Refers to Undocumented &quot;Link Options&quot;
 
+{% raw %}
+
 	Article: Q31454
 	Product(s): See article
 	Version(s): 5.10
@@ -26,3 +28,5 @@ permalink: /kb/031/Q31454/
 	section labelled "Update (CV. and Util.)". In this document, the /NOE
 	option and the /NON option are described in Section 4, "Using the OS/2
 	Linker", subsection 4.3, "New Options for Both Modes", Page Update-28.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176657/
 
 ## Q176657: PRB: SET FILTER Command Behaves Differently in a Method or Event
 
+{% raw %}
+
 	Article: Q176657
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -113,3 +115,5 @@ permalink: /kb/176/Q176657/
 	
 	=============================================================================
 	
+
+{% endraw %}

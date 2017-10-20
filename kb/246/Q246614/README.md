@@ -6,6 +6,8 @@ permalink: /kb/246/Q246614/
 
 ## Q246614: SMS: Corrupted .ofr file Causes Offer Manager Not to Work
 
+{% raw %}
+
 	Article: Q246614
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -76,3 +78,5 @@ permalink: /kb/246/Q246614/
 	
 	=============================================================================
 	
+
+{% endraw %}

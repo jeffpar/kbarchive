@@ -6,6 +6,8 @@ permalink: /kb/097/Q97072/
 
 ## Q97072: PC WRmt: Alphanumeric Characters Only in AT&amp;T Driver Addresses
 
+{% raw %}
+
 	Article: Q97072
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -40,3 +42,5 @@ permalink: /kb/097/Q97072/
 	
 	=============================================================================
 	
+
+{% endraw %}

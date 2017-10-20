@@ -6,6 +6,8 @@ permalink: /kb/156/Q156156/
 
 ## Q156156: PPT7: Color Text in Shaded Objects Doesn't Print to DeskJet 1600
 
+{% raw %}
+
 	Article: Q156156
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0; winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/156/Q156156/
 	
 	=============================================================================
 	
+
+{% endraw %}

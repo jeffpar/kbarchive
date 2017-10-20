@@ -6,6 +6,8 @@ permalink: /kb/108/Q108586/
 
 ## Q108586: Erratic Serial Mouse Behavior in Microsoft Diagnostics (MSD)
 
+{% raw %}
+
 	Article: Q108586
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -58,3 +60,5 @@ permalink: /kb/108/Q108586/
 	
 	=============================================================================
 	
+
+{% endraw %}

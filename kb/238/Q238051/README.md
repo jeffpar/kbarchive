@@ -6,6 +6,8 @@ permalink: /kb/238/Q238051/
 
 ## Q238051: Encarta 2000: Setup Quits When You Remove Previous Version
 
+{% raw %}
+
 	Article: Q238051
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/238/Q238051/
 	
 	=============================================================================
 	
+
+{% endraw %}

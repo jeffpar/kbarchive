@@ -6,6 +6,8 @@ permalink: /kb/176/Q176109/
 
 ## Q176109: Fatal Exception Error When You Press the CAPS LOCK Key
 
+{% raw %}
+
 	Article: Q176109
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -89,3 +91,5 @@ permalink: /kb/176/Q176109/
 	
 	=============================================================================
 	
+
+{% endraw %}

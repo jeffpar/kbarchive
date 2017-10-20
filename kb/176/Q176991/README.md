@@ -6,6 +6,8 @@ permalink: /kb/176/Q176991/
 
 ## Q176991: RAS Client Registers with WINS Using RAS Server's IP Address
 
+{% raw %}
+
 	Article: Q176991
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11,95; winnt:3.5,3.51,4.0; :3.11,3.11a,3.11b
@@ -76,3 +78,5 @@ permalink: /kb/176/Q176991/
 	
 	=============================================================================
 	
+
+{% endraw %}

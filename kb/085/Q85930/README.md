@@ -6,6 +6,8 @@ permalink: /kb/085/Q85930/
 
 ## Q85930: Windows 3.1: Logitech Mouse Directional Settings Not Saved
 
+{% raw %}
+
 	Article: Q85930
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1
@@ -51,3 +53,5 @@ permalink: /kb/085/Q85930/
 	
 	=============================================================================
 	
+
+{% endraw %}

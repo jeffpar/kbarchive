@@ -6,6 +6,8 @@ permalink: /kb/132/Q132356/
 
 ## Q132356: How to Use a Container Object Instead of a Custom Object
 
+{% raw %}
+
 	Article: Q132356
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -111,3 +113,5 @@ permalink: /kb/132/Q132356/
 	
 	=============================================================================
 	
+
+{% endraw %}

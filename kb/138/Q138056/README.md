@@ -6,6 +6,8 @@ permalink: /kb/138/Q138056/
 
 ## Q138056: FIX: CurrentControl Property of Grid Column Reverts to Default
 
+{% raw %}
+
 	Article: Q138056
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -113,3 +115,5 @@ permalink: /kb/138/Q138056/
 	
 	=============================================================================
 	
+
+{% endraw %}

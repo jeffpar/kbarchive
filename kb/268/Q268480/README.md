@@ -6,6 +6,8 @@ permalink: /kb/268/Q268480/
 
 ## Q268480: Workstation Service Does Not Start, Event Viewer Records 'Duplic
 
+{% raw %}
+
 	Article: Q268480
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -65,3 +67,5 @@ permalink: /kb/268/Q268480/
 	
 	=============================================================================
 	
+
+{% endraw %}

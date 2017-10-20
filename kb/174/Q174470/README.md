@@ -6,6 +6,8 @@ permalink: /kb/174/Q174470/
 
 ## Q174470: SMS: Problem w/System Key Pass Through of the Flying Windows Key
 
+{% raw %}
+
 	Article: Q174470
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -55,3 +57,5 @@ permalink: /kb/174/Q174470/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179273/
 
 ## Q179273: FIX: C2059 Initializing Static Data Member of a Template Class
 
+{% raw %}
+
 	Article: Q179273
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,5.0sp1,5.0sp2,5.0sp3,6.0
@@ -96,3 +98,5 @@ permalink: /kb/179/Q179273/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188638/
 
 ## Q188638: XCLN: Equations in Msg. from cc:Mail PO Appear Wrong in Outlook
 
+{% raw %}
+
 	Article: Q188638
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; winnt:4.0,5.0,5.5; :8.0,8.01,8.02,8.03
@@ -68,3 +70,5 @@ permalink: /kb/188/Q188638/
 	
 	=============================================================================
 	
+
+{% endraw %}

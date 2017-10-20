@@ -6,6 +6,8 @@ permalink: /kb/238/Q238447/
 
 ## Q238447: XADM: Event 6206 after Lotus Notes Directory Synchronization
 
+{% raw %}
+
 	Article: Q238447
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/238/Q238447/
 	
 	=============================================================================
 	
+
+{% endraw %}

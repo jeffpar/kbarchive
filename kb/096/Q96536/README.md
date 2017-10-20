@@ -6,6 +6,8 @@ permalink: /kb/096/Q96536/
 
 ## Q96536: PC WRmt: Exclusive During Active Modem Session
 
+{% raw %}
+
 	Article: Q96536
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -39,3 +41,5 @@ permalink: /kb/096/Q96536/
 	
 	=============================================================================
 	
+
+{% endraw %}

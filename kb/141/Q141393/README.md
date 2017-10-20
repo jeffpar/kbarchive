@@ -6,6 +6,8 @@ permalink: /kb/141/Q141393/
 
 ## Q141393: DOC: Developer's Guide Has Incorrect OLE Automation Syntax
 
+{% raw %}
+
 	Article: Q141393
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -58,3 +60,5 @@ permalink: /kb/141/Q141393/
 	
 	=============================================================================
 	
+
+{% endraw %}

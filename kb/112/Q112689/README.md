@@ -6,6 +6,8 @@ permalink: /kb/112/Q112689/
 
 ## Q112689: BUG: Use of Certain Scalar Functions May Cause SQLFetch Errors
 
+{% raw %}
+
 	Article: Q112689
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/112/Q112689/
 	
 	=============================================================================
 	
+
+{% endraw %}

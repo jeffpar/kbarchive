@@ -6,6 +6,8 @@ permalink: /kb/133/Q133758/
 
 ## Q133758: BUG: Mismatched User32.dbg File on Windows NT 3.51 CD-ROM Disc
 
+{% raw %}
+
 	Article: Q133758
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -88,3 +90,5 @@ permalink: /kb/133/Q133758/
 	
 	=============================================================================
 	
+
+{% endraw %}

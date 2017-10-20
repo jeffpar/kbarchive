@@ -6,6 +6,8 @@ permalink: /kb/185/Q185864/
 
 ## Q185864: PRB: Access Violation in ODBC Cursor Library in MFC Application
 
+{% raw %}
+
 	Article: Q185864
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -128,3 +130,5 @@ permalink: /kb/185/Q185864/
 	
 	=============================================================================
 	
+
+{% endraw %}

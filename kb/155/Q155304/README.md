@@ -6,6 +6,8 @@ permalink: /kb/155/Q155304/
 
 ## Q155304: HOWTO: Trap an Invalid ODBC Logon Using the ODBC API
 
+{% raw %}
+
 	Article: Q155304
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -224,3 +226,5 @@ permalink: /kb/155/Q155304/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142235/
 
 ## Q142235: Protected Share Can Be Accessed Without Cached Password
 
+{% raw %}
+
 	Article: Q142235
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/142/Q142235/
 	
 	=============================================================================
 	
+
+{% endraw %}

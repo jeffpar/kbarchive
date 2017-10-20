@@ -6,6 +6,8 @@ permalink: /kb/087/Q87209/
 
 ## Q87209: PROFS: How Are VM User Addresses Created Within MS Mail?
 
+{% raw %}
+
 	Article: Q87209
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -60,3 +62,5 @@ permalink: /kb/087/Q87209/
 	
 	=============================================================================
 	
+
+{% endraw %}

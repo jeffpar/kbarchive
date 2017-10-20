@@ -6,6 +6,8 @@ permalink: /kb/279/Q279214/
 
 ## Q279214: XIMS: Exchange Server Cannot Communicate with IIS over SSL
 
+{% raw %}
+
 	Article: Q279214
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -92,3 +94,5 @@ permalink: /kb/279/Q279214/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191478/
 
 ## Q191478: INFO: Palm-size PC 1.0 Does Not Support VBCE Applications
 
+{% raw %}
+
 	Article: Q191478
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/191/Q191478/
 	
 	=============================================================================
 	
+
+{% endraw %}

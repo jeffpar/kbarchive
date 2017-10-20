@@ -6,6 +6,8 @@ permalink: /kb/173/Q173147/
 
 ## Q173147: WD97: Removing Headings When Running Resume Wizard Causes Errors
 
+{% raw %}
+
 	Article: Q173147
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/173/Q173147/
 	
 	=============================================================================
 	
+
+{% endraw %}

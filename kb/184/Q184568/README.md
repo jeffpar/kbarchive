@@ -6,6 +6,8 @@ permalink: /kb/184/Q184568/
 
 ## Q184568: XADM: Authrest Err. Msg. in 5.0: Dynamic Link Library Not Found
 
+{% raw %}
+
 	Article: Q184568
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -47,3 +49,5 @@ permalink: /kb/184/Q184568/
 	
 	=============================================================================
 	
+
+{% endraw %}

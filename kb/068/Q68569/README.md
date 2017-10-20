@@ -6,6 +6,8 @@ permalink: /kb/068/Q68569/
 
 ## Q68569: Sample Code Uses PatBlt to Drag a Frame Rectangle
 
+{% raw %}
+
 	Article: Q68569
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -139,3 +141,5 @@ permalink: /kb/068/Q68569/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/299/Q299341/
 
 ## Q299341: FIX: Rounding Error Saving Calculated Value into Integer
 
+{% raw %}
+
 	Article: Q299341
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -74,3 +76,5 @@ permalink: /kb/299/Q299341/
 	
 	=============================================================================
 	
+
+{% endraw %}

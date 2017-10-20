@@ -6,6 +6,8 @@ permalink: /kb/137/Q137275/
 
 ## Q137275: Policy Editor Adds Incorrect Value Enabling LFNs on NetWare
 
+{% raw %}
+
 	Article: Q137275
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -96,3 +98,5 @@ permalink: /kb/137/Q137275/
 	
 	=============================================================================
 	
+
+{% endraw %}

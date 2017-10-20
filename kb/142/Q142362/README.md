@@ -6,6 +6,8 @@ permalink: /kb/142/Q142362/
 
 ## Q142362: NetWare FLAG and FLAGDIR Commands Do Not Work
 
+{% raw %}
+
 	Article: Q142362
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/142/Q142362/
 	
 	=============================================================================
 	
+
+{% endraw %}

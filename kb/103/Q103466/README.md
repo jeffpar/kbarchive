@@ -6,6 +6,8 @@ permalink: /kb/103/Q103466/
 
 ## Q103466: REGION.BMP Not a Supported Paintbrush Format
 
+{% raw %}
+
 	Article: Q103466
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0
@@ -59,3 +61,5 @@ permalink: /kb/103/Q103466/
 	
 	=============================================================================
 	
+
+{% endraw %}

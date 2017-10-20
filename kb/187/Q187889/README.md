@@ -6,6 +6,8 @@ permalink: /kb/187/Q187889/
 
 ## Q187889: WD97: Sample Macros to Turn a True or False Property On and Off
 
+{% raw %}
+
 	Article: Q187889
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -104,3 +106,5 @@ permalink: /kb/187/Q187889/
 	
 	=============================================================================
 	
+
+{% endraw %}

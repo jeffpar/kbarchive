@@ -6,6 +6,8 @@ permalink: /kb/167/Q167526/
 
 ## Q167526: FIX: ATL Control May Cause an Access Violation
 
+{% raw %}
+
 	Article: Q167526
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0
@@ -85,3 +87,5 @@ permalink: /kb/167/Q167526/
 	
 	=============================================================================
 	
+
+{% endraw %}

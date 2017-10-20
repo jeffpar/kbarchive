@@ -6,6 +6,8 @@ permalink: /kb/164/Q164375/
 
 ## Q164375: Cinemania/Music Central 97: Connections Link Fails To Download
 
+{% raw %}
+
 	Article: Q164375
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -54,3 +56,5 @@ permalink: /kb/164/Q164375/
 	
 	=============================================================================
 	
+
+{% endraw %}

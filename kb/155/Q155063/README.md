@@ -6,6 +6,8 @@ permalink: /kb/155/Q155063/
 
 ## Q155063: Pure Black and White Add-in Not Installed on Workstation
 
+{% raw %}
+
 	Article: Q155063
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -51,3 +53,5 @@ permalink: /kb/155/Q155063/
 	
 	=============================================================================
 	
+
+{% endraw %}

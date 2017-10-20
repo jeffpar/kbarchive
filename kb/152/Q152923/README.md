@@ -6,6 +6,8 @@ permalink: /kb/152/Q152923/
 
 ## Q152923: XCLN: Can't Change Expired Password From MAC Exchange Client
 
+{% raw %}
+
 	Article: Q152923
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -129,3 +131,5 @@ permalink: /kb/152/Q152923/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138107/
 
 ## Q138107: PRB: Standard Toolbar Visible in .Exe
 
+{% raw %}
+
 	Article: Q138107
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/138/Q138107/
 	
 	=============================================================================
 	
+
+{% endraw %}

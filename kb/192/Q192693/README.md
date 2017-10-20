@@ -6,6 +6,8 @@ permalink: /kb/192/Q192693/
 
 ## Q192693: BUG: License Error with ActiveX Control Added at Run-Time
 
+{% raw %}
+
 	Article: Q192693
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -267,3 +269,5 @@ permalink: /kb/192/Q192693/
 	
 	=============================================================================
 	
+
+{% endraw %}

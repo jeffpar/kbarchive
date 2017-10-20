@@ -6,6 +6,8 @@ permalink: /kb/198/Q198573/
 
 ## Q198573: 16-bit Windows-Based Programs Support Up to 26 DDE Connections
 
+{% raw %}
+
 	Article: Q198573
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/198/Q198573/
 	
 	=============================================================================
 	
+
+{% endraw %}

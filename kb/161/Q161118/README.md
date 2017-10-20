@@ -6,6 +6,8 @@ permalink: /kb/161/Q161118/
 
 ## Q161118: XCLN: Troubleshooting POP3 Connections to Exchange Server
 
+{% raw %}
+
 	Article: Q161118
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -172,3 +174,5 @@ permalink: /kb/161/Q161118/
 	
 	=============================================================================
 	
+
+{% endraw %}

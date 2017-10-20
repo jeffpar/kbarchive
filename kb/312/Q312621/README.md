@@ -6,6 +6,8 @@ permalink: /kb/312/Q312621/
 
 ## Q312621: Unable To Add Free MSN Account Again After A System Restoration
 
+{% raw %}
+
 	Article: Q312621
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/312/Q312621/
 	
 	=============================================================================
 	
+
+{% endraw %}

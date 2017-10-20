@@ -6,6 +6,8 @@ permalink: /kb/192/Q192274/
 
 ## Q192274: XADM: IIS Crashes with ActiveX Component Using MAPI
 
+{% raw %}
+
 	Article: Q192274
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1
@@ -136,3 +138,5 @@ permalink: /kb/192/Q192274/
 	
 	=============================================================================
 	
+
+{% endraw %}

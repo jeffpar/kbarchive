@@ -6,6 +6,8 @@ permalink: /kb/164/Q164982/
 
 ## Q164982: Lack of Secondary Address May Cause DNS Service to Hang
 
+{% raw %}
+
 	Article: Q164982
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/164/Q164982/
 	
 	=============================================================================
 	
+
+{% endraw %}

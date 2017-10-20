@@ -6,6 +6,8 @@ permalink: /kb/258/Q258669/
 
 ## Q258669: Redirection Operators (&lt; and &gt;) May Not Work
 
+{% raw %}
+
 	Article: Q258669
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP5,4.0 SP6a
@@ -92,3 +94,5 @@ permalink: /kb/258/Q258669/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138861/
 
 ## Q138861: SNA Server 2.11 CD missing Rally-compatible PC Support API
 
+{% raw %}
+
 	Article: Q138861
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -83,3 +85,5 @@ permalink: /kb/138/Q138861/
 	
 	=============================================================================
 	
+
+{% endraw %}

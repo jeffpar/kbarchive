@@ -6,6 +6,8 @@ permalink: /kb/136/Q136590/
 
 ## Q136590: AST StarCom Program Reports &quot;Modem Hardware Failure&quot;
 
+{% raw %}
+
 	Article: Q136590
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/136/Q136590/
 	
 	=============================================================================
 	
+
+{% endraw %}

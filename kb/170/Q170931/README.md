@@ -6,6 +6,8 @@ permalink: /kb/170/Q170931/
 
 ## Q170931: Japanese MSN Program Viewer Menus Displayed in English
 
+{% raw %}
+
 	Article: Q170931
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -66,3 +68,5 @@ permalink: /kb/170/Q170931/
 	
 	=============================================================================
 	
+
+{% endraw %}

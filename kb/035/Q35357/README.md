@@ -6,6 +6,8 @@ permalink: /kb/035/Q35357/
 
 ## Q35357: BLOAD Can Fail with Older Monochrome Cards; Newer Cards OK
 
+{% raw %}
+
 	Article: Q35357
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -35,3 +37,5 @@ permalink: /kb/035/Q35357/
 	BSAVE "test.img", 0, &H8000  ' &H8000 hex is 32,767 decimal
 	CLS
 	BLOAD "test.img", 0
+
+{% endraw %}

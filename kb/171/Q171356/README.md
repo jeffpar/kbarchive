@@ -6,6 +6,8 @@ permalink: /kb/171/Q171356/
 
 ## Q171356: Octopus 3.0 Beta May Cause WinNT to Boot In a Continuous Loop
 
+{% raw %}
+
 	Article: Q171356
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/171/Q171356/
 	
 	=============================================================================
 	
+
+{% endraw %}

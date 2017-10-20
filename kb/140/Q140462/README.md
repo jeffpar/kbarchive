@@ -6,6 +6,8 @@ permalink: /kb/140/Q140462/
 
 ## Q140462: PC DirSync: LISTDS.EXE Does Not Reset REQCONF.GLB
 
+{% raw %}
+
 	Article: Q140462
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -56,3 +58,5 @@ permalink: /kb/140/Q140462/
 	
 	=============================================================================
 	
+
+{% endraw %}

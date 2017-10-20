@@ -6,6 +6,8 @@ permalink: /kb/217/Q217157/
 
 ## Q217157: Event ID 1057 or 1000 When the Cluster Service Attempts to Start
 
+{% raw %}
+
 	Article: Q217157
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -95,3 +97,5 @@ permalink: /kb/217/Q217157/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258987/
 
 ## Q258987: SMS: False Errors Are Recorded in the Smsprov.log File
 
+{% raw %}
+
 	Article: Q258987
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -67,3 +69,5 @@ permalink: /kb/258/Q258987/
 	
 	=============================================================================
 	
+
+{% endraw %}

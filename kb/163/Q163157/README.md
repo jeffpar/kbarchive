@@ -6,6 +6,8 @@ permalink: /kb/163/Q163157/
 
 ## Q163157: WD97: Pleading Wizard Uses Negative Margins
 
+{% raw %}
+
 	Article: Q163157
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/163/Q163157/
 	
 	=============================================================================
 	
+
+{% endraw %}

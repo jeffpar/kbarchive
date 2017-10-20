@@ -6,6 +6,8 @@ permalink: /kb/246/Q246924/
 
 ## Q246924: FP: Error Message: The Destination File System Ignores Case
 
+{% raw %}
+
 	Article: Q246924
 	Product(s): Word Front Page
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/246/Q246924/
 	
 	=============================================================================
 	
+
+{% endraw %}

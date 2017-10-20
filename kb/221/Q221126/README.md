@@ -6,6 +6,8 @@ permalink: /kb/221/Q221126/
 
 ## Q221126: SMS: Instance and Class Permissions: Which Has Precedence?
 
+{% raw %}
+
 	Article: Q221126
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -68,3 +70,5 @@ permalink: /kb/221/Q221126/
 	
 	=============================================================================
 	
+
+{% endraw %}

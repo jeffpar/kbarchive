@@ -6,6 +6,8 @@ permalink: /kb/117/Q117927/
 
 ## Q117927: PC DB: General Information About Mail Templates
 
+{% raw %}
+
 	Article: Q117927
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.2
@@ -97,3 +99,5 @@ permalink: /kb/117/Q117927/
 	
 	=============================================================================
 	
+
+{% endraw %}

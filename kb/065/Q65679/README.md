@@ -6,6 +6,8 @@ permalink: /kb/065/Q65679/
 
 ## Q65679: How Windows Identifies Multiple Instances of MS-DOS Programs
 
+{% raw %}
+
 	Article: Q65679
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -49,3 +51,5 @@ permalink: /kb/065/Q65679/
 	
 	=============================================================================
 	
+
+{% endraw %}

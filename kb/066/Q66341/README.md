@@ -6,6 +6,8 @@ permalink: /kb/066/Q66341/
 
 ## Q66341: Problem with Switch List Usage Due to Problem in PMSHL.H
 
+{% raw %}
+
 	Article: Q66341
 	Product(s): See article
 	Version(s): 6.00
@@ -51,3 +53,5 @@ permalink: /kb/066/Q66341/
 	Microsoft has confirmed this to be a problem with C version 6.00. This
 	problem has been corrected in the PMSHL.H include file included with
 	the C 6.00a maintenance release.
+
+{% endraw %}

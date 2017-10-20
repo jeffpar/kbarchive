@@ -6,6 +6,8 @@ permalink: /kb/175/Q175483/
 
 ## Q175483: XCON: Configuration Sample - Exchange X.400 Connector &amp; Infonet
 
+{% raw %}
+
 	Article: Q175483
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -160,3 +162,5 @@ permalink: /kb/175/Q175483/
 	
 	=============================================================================
 	
+
+{% endraw %}

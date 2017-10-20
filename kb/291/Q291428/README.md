@@ -6,6 +6,8 @@ permalink: /kb/291/Q291428/
 
 ## Q291428: ICA Clients Cannot Map Drives After Installing ZAK
 
+{% raw %}
+
 	Article: Q291428
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/291/Q291428/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124034/
 
 ## Q124034: OpenGL Interface in Windows NT 3.5
 
+{% raw %}
+
 	Article: Q124034
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/124/Q124034/
 	
 	=============================================================================
 	
+
+{% endraw %}

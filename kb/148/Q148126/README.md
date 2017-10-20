@@ -6,6 +6,8 @@ permalink: /kb/148/Q148126/
 
 ## Q148126: Files With Changed Permissions Not Incrementally Backed Up
 
+{% raw %}
+
 	Article: Q148126
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -72,3 +74,5 @@ permalink: /kb/148/Q148126/
 	
 	=============================================================================
 	
+
+{% endraw %}

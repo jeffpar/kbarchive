@@ -6,6 +6,8 @@ permalink: /kb/059/Q59722/
 
 ## Q59722: Open and Save in QB/QBX Editor Treat Filenames as Directories
 
+{% raw %}
+
 	Article: Q59722
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/059/Q59722/
 	              Treats the name entered    Treats the name entered as a
 	   QBX 7.00   as a directory and         directory and changes to it.
 	              changes to it.
+
+{% endraw %}

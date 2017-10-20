@@ -6,6 +6,8 @@ permalink: /kb/097/Q97766/
 
 ## Q97766: Using IBM LAN Server 1.3 with Windows for Workgroups
 
+{% raw %}
+
 	Article: Q97766
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -97,3 +99,5 @@ permalink: /kb/097/Q97766/
 	
 	=============================================================================
 	
+
+{% endraw %}

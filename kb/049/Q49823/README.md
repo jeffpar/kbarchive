@@ -6,6 +6,8 @@ permalink: /kb/049/Q49823/
 
 ## Q49823: PRB: Inconsistent Use of fscanf %x.xf Formatting
 
+{% raw %}
+
 	Article: Q49823
 	Product(s): Microsoft C Compiler
 	Version(s): 5.1 6.0 6.0a 6.0ax 7.0 1.0 1.5 2
@@ -115,3 +117,5 @@ permalink: /kb/049/Q49823/
 	
 	=============================================================================
 	
+
+{% endraw %}

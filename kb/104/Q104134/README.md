@@ -6,6 +6,8 @@ permalink: /kb/104/Q104134/
 
 ## Q104134: PC Win: Send Mail Command Doesn't Support Extended Characters
 
+{% raw %}
+
 	Article: Q104134
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b
@@ -42,3 +44,5 @@ permalink: /kb/104/Q104134/
 	
 	=============================================================================
 	
+
+{% endraw %}

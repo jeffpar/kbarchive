@@ -6,6 +6,8 @@ permalink: /kb/196/Q196275/
 
 ## Q196275: PRB: Repeatedly Pressing F1 Key on VB Application May Crash Help
 
+{% raw %}
+
 	Article: Q196275
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -105,3 +107,5 @@ permalink: /kb/196/Q196275/
 	
 	=============================================================================
 	
+
+{% endraw %}

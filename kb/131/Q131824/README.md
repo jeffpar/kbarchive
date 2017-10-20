@@ -6,6 +6,8 @@ permalink: /kb/131/Q131824/
 
 ## Q131824: PC NTMMTA: Press ESC and Y to Exit Monitor Window
 
+{% raw %}
+
 	Article: Q131824
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -47,3 +49,5 @@ permalink: /kb/131/Q131824/
 	
 	=============================================================================
 	
+
+{% endraw %}

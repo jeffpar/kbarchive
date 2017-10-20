@@ -6,6 +6,8 @@ permalink: /kb/235/Q235289/
 
 ## Q235289: DNS Server Delegations Disappear on Secondary Name Servers
 
+{% raw %}
+
 	Article: Q235289
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/235/Q235289/
 	
 	=============================================================================
 	
+
+{% endraw %}

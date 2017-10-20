@@ -6,6 +6,8 @@ permalink: /kb/224/Q224963/
 
 ## Q224963: Using Enhanced &lt;SCRIPT&gt; Tags for Includes
 
+{% raw %}
+
 	Article: Q224963
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -169,3 +171,5 @@ permalink: /kb/224/Q224963/
 	
 	=============================================================================
 	
+
+{% endraw %}

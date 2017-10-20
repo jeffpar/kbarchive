@@ -6,6 +6,8 @@ permalink: /kb/225/Q225496/
 
 ## Q225496: PRB: Cannot Execute Stored Procedures with More Than 60 Params
 
+{% raw %}
+
 	Article: Q225496
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -218,3 +220,5 @@ permalink: /kb/225/Q225496/
 	
 	=============================================================================
 	
+
+{% endraw %}

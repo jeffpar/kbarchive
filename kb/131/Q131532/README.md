@@ -6,6 +6,8 @@ permalink: /kb/131/Q131532/
 
 ## Q131532: How to Modify the System.ini File in Windows 95/98
 
+{% raw %}
+
 	Article: Q131532
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): WINDOWS:95
@@ -65,3 +67,5 @@ permalink: /kb/131/Q131532/
 	
 	=============================================================================
 	
+
+{% endraw %}

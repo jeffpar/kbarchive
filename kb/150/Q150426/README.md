@@ -6,6 +6,8 @@ permalink: /kb/150/Q150426/
 
 ## Q150426: Ethernet Packet Size Incorrectly Determined w/ Packet Burst Off
 
+{% raw %}
+
 	Article: Q150426
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -135,3 +137,5 @@ permalink: /kb/150/Q150426/
 	
 	=============================================================================
 	
+
+{% endraw %}

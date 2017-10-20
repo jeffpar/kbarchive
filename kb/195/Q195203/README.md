@@ -6,6 +6,8 @@ permalink: /kb/195/Q195203/
 
 ## Q195203: XFOR: cc:Mail 8.01 Clients See Attachment Name Changed to Date
 
+{% raw %}
+
 	Article: Q195203
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -109,3 +111,5 @@ permalink: /kb/195/Q195203/
 	
 	=============================================================================
 	
+
+{% endraw %}

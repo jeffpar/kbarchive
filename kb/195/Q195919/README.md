@@ -6,6 +6,8 @@ permalink: /kb/195/Q195919/
 
 ## Q195919: Excluding Exchange Services from Inoculan Realtime Scanner
 
+{% raw %}
+
 	Article: Q195919
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -104,3 +106,5 @@ permalink: /kb/195/Q195919/
 	
 	=============================================================================
 	
+
+{% endraw %}

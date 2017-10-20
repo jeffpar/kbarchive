@@ -6,6 +6,8 @@ permalink: /kb/121/Q121232/
 
 ## Q121232: Greyed Out Connect To Printer Option in Print Manager
 
+{% raw %}
+
 	Article: Q121232
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -56,3 +58,5 @@ permalink: /kb/121/Q121232/
 	
 	=============================================================================
 	
+
+{% endraw %}

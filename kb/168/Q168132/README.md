@@ -6,6 +6,8 @@ permalink: /kb/168/Q168132/
 
 ## Q168132: After Applying Service Pack NT Reports Single Processor
 
+{% raw %}
+
 	Article: Q168132
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -189,3 +191,5 @@ permalink: /kb/168/Q168132/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124852/
 
 ## Q124852: Program Doesn't Take Up Entire Screen at 640 x 480 Resolution
 
+{% raw %}
+
 	Article: Q124852
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1
@@ -107,3 +109,5 @@ permalink: /kb/124/Q124852/
 	
 	=============================================================================
 	
+
+{% endraw %}

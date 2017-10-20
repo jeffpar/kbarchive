@@ -6,6 +6,8 @@ permalink: /kb/170/Q170984/
 
 ## Q170984: ACC97: Results Dialog Box Remains After First Check Out
 
+{% raw %}
+
 	Article: Q170984
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,97
@@ -77,3 +79,5 @@ permalink: /kb/170/Q170984/
 	
 	=============================================================================
 	
+
+{% endraw %}

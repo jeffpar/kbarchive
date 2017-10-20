@@ -6,6 +6,8 @@ permalink: /kb/158/Q158823/
 
 ## Q158823: FIX: Operator/Operand Type Mismatch Executing SQL with IIF
 
+{% raw %}
+
 	Article: Q158823
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -60,3 +62,5 @@ permalink: /kb/158/Q158823/
 	
 	=============================================================================
 	
+
+{% endraw %}

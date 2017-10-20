@@ -6,6 +6,8 @@ permalink: /kb/129/Q129196/
 
 ## Q129196: System Hangs with 3Com EtherLink III (3C509B) ISA NIC
 
+{% raw %}
+
 	Article: Q129196
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; winnt:3.5
@@ -92,3 +94,5 @@ permalink: /kb/129/Q129196/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106393/
 
 ## Q106393: FIX: Print Footer Options Reset to &amp;P in Visual Workbench
 
+{% raw %}
+
 	Article: Q106393
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/106/Q106393/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83501/
 
 ## Q83501: SETUP.TXT from Windows 3.1 Part B
 
+{% raw %}
+
 	Article: Q83501
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -738,3 +740,5 @@ permalink: /kb/083/Q83501/
 	
 	=============================================================================
 	
+
+{% endraw %}

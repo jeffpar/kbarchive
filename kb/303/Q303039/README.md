@@ -6,6 +6,8 @@ permalink: /kb/303/Q303039/
 
 ## Q303039: Links 2001: Error Message: Access Violation; D3Dim700! (+0xE386)
 
+{% raw %}
+
 	Article: Q303039
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -133,3 +135,5 @@ permalink: /kb/303/Q303039/
 	
 	=============================================================================
 	
+
+{% endraw %}

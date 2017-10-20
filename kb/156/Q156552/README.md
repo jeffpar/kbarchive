@@ -6,6 +6,8 @@ permalink: /kb/156/Q156552/
 
 ## Q156552: HOWTO: Use Offline Views in Visual FoxPro
 
+{% raw %}
+
 	Article: Q156552
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/156/Q156552/
 	
 	=============================================================================
 	
+
+{% endraw %}

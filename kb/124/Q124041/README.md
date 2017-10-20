@@ -6,6 +6,8 @@ permalink: /kb/124/Q124041/
 
 ## Q124041: PC Win: Problems with CONVERT.EXE when Upgrading Folders
 
+{% raw %}
+
 	Article: Q124041
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b
@@ -59,3 +61,5 @@ permalink: /kb/124/Q124041/
 	
 	=============================================================================
 	
+
+{% endraw %}

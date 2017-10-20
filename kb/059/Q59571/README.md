@@ -6,6 +6,8 @@ permalink: /kb/059/Q59571/
 
 ## Q59571: Flight Simulator: Kraft High-Speed Joystick Adapter Card
 
+{% raw %}
+
 	Article: Q59571
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/059/Q59571/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231232/
 
 ## Q231232: SMS: Performance Issues for CCIM Working on a 23-Hour Cycle
 
+{% raw %}
+
 	Article: Q231232
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -78,3 +80,5 @@ permalink: /kb/231/Q231232/
 	
 	=============================================================================
 	
+
+{% endraw %}

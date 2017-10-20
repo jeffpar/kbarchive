@@ -6,6 +6,8 @@ permalink: /kb/157/Q157474/
 
 ## Q157474: PPT7: Can't Change Linked File in Folder With &quot;!&quot; in Name
 
+{% raw %}
+
 	Article: Q157474
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -54,3 +56,5 @@ permalink: /kb/157/Q157474/
 	
 	=============================================================================
 	
+
+{% endraw %}

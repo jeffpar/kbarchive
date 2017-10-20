@@ -6,6 +6,8 @@ permalink: /kb/076/Q76805/
 
 ## Q76805: Clicking Noises While Playing Sounds on Sound Blaster Feature
 
+{% raw %}
+
 	Article: Q76805
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -87,3 +89,5 @@ permalink: /kb/076/Q76805/
 	
 	=============================================================================
 	
+
+{% endraw %}

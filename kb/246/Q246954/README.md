@@ -6,6 +6,8 @@ permalink: /kb/246/Q246954/
 
 ## Q246954: Unattended RAS Installation Prompts for New IP Address
 
+{% raw %}
+
 	Article: Q246954
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/246/Q246954/
 	
 	=============================================================================
 	
+
+{% endraw %}

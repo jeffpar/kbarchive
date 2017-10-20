@@ -6,6 +6,8 @@ permalink: /kb/261/Q261298/
 
 ## Q261298: Access Violation in Remote Procedure Call Server Service (RPCSS)
 
+{% raw %}
+
 	Article: Q261298
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP5,4.0 SP6
@@ -85,3 +87,5 @@ permalink: /kb/261/Q261298/
 	
 	=============================================================================
 	
+
+{% endraw %}

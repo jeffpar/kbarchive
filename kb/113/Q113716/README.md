@@ -6,6 +6,8 @@ permalink: /kb/113/Q113716/
 
 ## Q113716: Installing DeskJet Plus Printer Does Not Allow Font Cartridges
 
+{% raw %}
+
 	Article: Q113716
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -56,3 +58,5 @@ permalink: /kb/113/Q113716/
 	
 	=============================================================================
 	
+
+{% endraw %}

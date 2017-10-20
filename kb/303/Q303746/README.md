@@ -6,6 +6,8 @@ permalink: /kb/303/Q303746/
 
 ## Q303746: Event Error: Target Folder Permissions Deny Access to XML Files
 
+{% raw %}
+
 	Article: Q303746
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4,1.99,2.0
@@ -67,3 +69,5 @@ permalink: /kb/303/Q303746/
 	
 	=============================================================================
 	
+
+{% endraw %}

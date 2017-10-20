@@ -6,6 +6,8 @@ permalink: /kb/177/Q177887/
 
 ## Q177887: XCON: MTA Terminates Suddenly with 2175, 100, and 9405 Events
 
+{% raw %}
+
 	Article: Q177887
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -84,3 +86,5 @@ permalink: /kb/177/Q177887/
 	
 	=============================================================================
 	
+
+{% endraw %}

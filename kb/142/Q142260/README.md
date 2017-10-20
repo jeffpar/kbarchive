@@ -6,6 +6,8 @@ permalink: /kb/142/Q142260/
 
 ## Q142260: XCON: IMC Replies To SMTP Messages In RTF
 
+{% raw %}
+
 	Article: Q142260
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142260/
 	
 	=============================================================================
 	
+
+{% endraw %}

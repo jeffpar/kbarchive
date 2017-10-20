@@ -6,6 +6,8 @@ permalink: /kb/149/Q149378/
 
 ## Q149378: PRB: File Not Found Error When You Add New Users
 
+{% raw %}
+
 	Article: Q149378
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/149/Q149378/
 	
 	=============================================================================
 	
+
+{% endraw %}

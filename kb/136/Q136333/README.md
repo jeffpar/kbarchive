@@ -6,6 +6,8 @@ permalink: /kb/136/Q136333/
 
 ## Q136333: PC DirSync: Err Msg: Fatal 159 Failure to Send Update Mail...
 
+{% raw %}
+
 	Article: Q136333
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -72,3 +74,5 @@ permalink: /kb/136/Q136333/
 	
 	=============================================================================
 	
+
+{% endraw %}

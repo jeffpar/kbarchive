@@ -6,6 +6,8 @@ permalink: /kb/179/Q179012/
 
 ## Q179012: FIX: ClassView Lacks &quot;Go to Declaration&quot; for Static Data Members
 
+{% raw %}
+
 	Article: Q179012
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -118,3 +120,5 @@ permalink: /kb/179/Q179012/
 	
 	=============================================================================
 	
+
+{% endraw %}

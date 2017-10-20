@@ -6,6 +6,8 @@ permalink: /kb/241/Q241213/
 
 ## Q241213: XFOR: Message Looping w/SNADS/PROFS/GroupWise/Notes Connectors
 
+{% raw %}
+
 	Article: Q241213
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -78,3 +80,5 @@ permalink: /kb/241/Q241213/
 	
 	=============================================================================
 	
+
+{% endraw %}

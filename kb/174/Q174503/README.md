@@ -6,6 +6,8 @@ permalink: /kb/174/Q174503/
 
 ## Q174503: SMS: TRAPMON Is Not on the BackOffice Resource Kit CD
 
+{% raw %}
+
 	Article: Q174503
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -34,3 +36,5 @@ permalink: /kb/174/Q174503/
 	
 	=============================================================================
 	
+
+{% endraw %}

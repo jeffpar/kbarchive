@@ -6,6 +6,8 @@ permalink: /kb/131/Q131446/
 
 ## Q131446: FIX: File or Project Not Found If Add or Rename Long Filename
 
+{% raw %}
+
 	Article: Q131446
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/131/Q131446/
 	
 	=============================================================================
 	
+
+{% endraw %}

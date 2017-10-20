@@ -6,6 +6,8 @@ permalink: /kb/177/Q177627/
 
 ## Q177627: HOWTO: Use the OLE_OPTEXCLUSIVE Property Data Type
 
+{% raw %}
+
 	Article: Q177627
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -170,3 +172,5 @@ permalink: /kb/177/Q177627/
 	
 	=============================================================================
 	
+
+{% endraw %}

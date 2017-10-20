@@ -6,6 +6,8 @@ permalink: /kb/040/Q40495/
 
 ## Q40495: QuickC 2.00 Lacks the Ability To Print Chart Screens
 
+{% raw %}
+
 	Article: Q40495
 	Product(s): See article
 	Version(s): 2.00
@@ -22,3 +24,5 @@ permalink: /kb/040/Q40495/
 	
 	Microsoft is actively considering the addition of this abitliy
 	in a future release of QuickC.
+
+{% endraw %}

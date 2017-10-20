@@ -6,6 +6,8 @@ permalink: /kb/171/Q171535/
 
 ## Q171535: FIX: ANALYZE Crashes When No Log Entries Found in Log File
 
+{% raw %}
+
 	Article: Q171535
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,97
@@ -66,3 +68,5 @@ permalink: /kb/171/Q171535/
 	
 	=============================================================================
 	
+
+{% endraw %}

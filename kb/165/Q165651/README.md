@@ -6,6 +6,8 @@ permalink: /kb/165/Q165651/
 
 ## Q165651: Some SNA Server Binaries Show Incorrect Version
 
+{% raw %}
+
 	Article: Q165651
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/165/Q165651/
 	
 	=============================================================================
 	
+
+{% endraw %}

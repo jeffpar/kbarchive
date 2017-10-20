@@ -6,6 +6,8 @@ permalink: /kb/140/Q140693/
 
 ## Q140693: FIX: Error When Changing Data Type in Remote View
 
+{% raw %}
+
 	Article: Q140693
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/140/Q140693/
 	
 	=============================================================================
 	
+
+{% endraw %}

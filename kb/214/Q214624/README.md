@@ -6,6 +6,8 @@ permalink: /kb/214/Q214624/
 
 ## Q214624: STOP 0xA When Using SPX
 
+{% raw %}
+
 	Article: Q214624
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/214/Q214624/
 	
 	=============================================================================
 	
+
+{% endraw %}

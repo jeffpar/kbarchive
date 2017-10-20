@@ -6,6 +6,8 @@ permalink: /kb/147/Q147406/
 
 ## Q147406: Stravinsky: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q147406
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/147/Q147406/
 	
 	=============================================================================
 	
+
+{% endraw %}

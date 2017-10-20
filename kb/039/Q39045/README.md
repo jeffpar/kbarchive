@@ -6,6 +6,8 @@ permalink: /kb/039/Q39045/
 
 ## Q39045: Error R6006 Bad Format on exec
 
+{% raw %}
+
 	Article: Q39045
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -34,3 +36,5 @@ permalink: /kb/039/Q39045/
 	of the exec library routines fails, and DOS could not return control
 	to the parent process. This error indicates that not enough memory
 	remained to load the program being spawned.
+
+{% endraw %}

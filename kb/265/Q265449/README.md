@@ -6,6 +6,8 @@ permalink: /kb/265/Q265449/
 
 ## Q265449: WD97: Word Document Statistics Different in Windows Explorer
 
+{% raw %}
+
 	Article: Q265449
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -92,3 +94,5 @@ permalink: /kb/265/Q265449/
 	
 	=============================================================================
 	
+
+{% endraw %}

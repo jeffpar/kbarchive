@@ -6,6 +6,8 @@ permalink: /kb/258/Q258192/
 
 ## Q258192: PRB: Errors Recompiling ActiveX Component w/ Binary Compability
 
+{% raw %}
+
 	Article: Q258192
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -166,3 +168,5 @@ permalink: /kb/258/Q258192/
 	
 	=============================================================================
 	
+
+{% endraw %}

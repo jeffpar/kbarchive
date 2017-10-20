@@ -6,6 +6,8 @@ permalink: /kb/110/Q110672/
 
 ## Q110672: Flight Simulator: Diamond Viper SVGA Mode Requirements
 
+{% raw %}
+
 	Article: Q110672
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -91,3 +93,5 @@ permalink: /kb/110/Q110672/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61197/
 
 ## Q61197: C 6.00 README: Compiler Options Order-Dependant
 
+{% raw %}
+
 	Article: Q61197
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -23,3 +25,5 @@ permalink: /kb/061/Q61197/
 	following order on the command line:
 	
 	   /qc /Zr
+
+{% endraw %}

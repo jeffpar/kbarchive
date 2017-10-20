@@ -6,6 +6,8 @@ permalink: /kb/126/Q126411/
 
 ## Q126411: Screen Saver Does Not Restore Full-Screen MS-DOS Window
 
+{% raw %}
+
 	Article: Q126411
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/126/Q126411/
 	
 	=============================================================================
 	
+
+{% endraw %}

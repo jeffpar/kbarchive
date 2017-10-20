@@ -6,6 +6,8 @@ permalink: /kb/221/Q221346/
 
 ## Q221346: Stop 0x0000007f Exception Handling Problem in Termdd.sys
 
+{% raw %}
+
 	Article: Q221346
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/221/Q221346/
 	
 	=============================================================================
 	
+
+{% endraw %}

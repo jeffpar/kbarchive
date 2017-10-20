@@ -6,6 +6,8 @@ permalink: /kb/236/Q236981/
 
 ## Q236981: &quot;STOP 0x0000000A&quot; Involving Scsiport.sys in Windows NT 4.0 SP5
 
+{% raw %}
+
 	Article: Q236981
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -112,3 +114,5 @@ permalink: /kb/236/Q236981/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138492/
 
 ## Q138492: How to Run Quick Preview
 
+{% raw %}
+
 	Article: Q138492
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -80,3 +82,5 @@ permalink: /kb/138/Q138492/
 	
 	=============================================================================
 	
+
+{% endraw %}

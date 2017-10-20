@@ -6,6 +6,8 @@ permalink: /kb/174/Q174116/
 
 ## Q174116: The Microsoft Network Does Not Run in Windows NT
 
+{% raw %}
+
 	Article: Q174116
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0,2.5,2.6
@@ -56,3 +58,5 @@ permalink: /kb/174/Q174116/
 	
 	=============================================================================
 	
+
+{% endraw %}

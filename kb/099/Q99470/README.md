@@ -6,6 +6,8 @@ permalink: /kb/099/Q99470/
 
 ## Q99470: Troubleshooting CD Audio Problems in Windows 3.1
 
+{% raw %}
+
 	Article: Q99470
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,2.0,2.0a,3.1
@@ -176,3 +178,5 @@ permalink: /kb/099/Q99470/
 	
 	=============================================================================
 	
+
+{% endraw %}

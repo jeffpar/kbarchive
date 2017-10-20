@@ -6,6 +6,8 @@ permalink: /kb/268/Q268155/
 
 ## Q268155: NetBIOS Name Resolution May Be Slow or Stop Working
 
+{% raw %}
+
 	Article: Q268155
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1,2.5
@@ -67,3 +69,5 @@ permalink: /kb/268/Q268155/
 	
 	=============================================================================
 	
+
+{% endraw %}

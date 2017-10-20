@@ -6,6 +6,8 @@ permalink: /kb/158/Q158554/
 
 ## Q158554: Music Central 97: Discography Screen is Missing Credits
 
+{% raw %}
+
 	Article: Q158554
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -46,3 +48,5 @@ permalink: /kb/158/Q158554/
 	
 	=============================================================================
 	
+
+{% endraw %}

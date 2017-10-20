@@ -6,6 +6,8 @@ permalink: /kb/302/Q302836/
 
 ## Q302836: SMS: Cannot Increase APM Polling Interval to More Than 1,440
 
+{% raw %}
+
 	Article: Q302836
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -69,3 +71,5 @@ permalink: /kb/302/Q302836/
 	
 	=============================================================================
 	
+
+{% endraw %}

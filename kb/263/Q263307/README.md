@@ -6,6 +6,8 @@ permalink: /kb/263/Q263307/
 
 ## Q263307: MS00-036: Excessive Browser Announcements May Force Computer Shu
 
+{% raw %}
+
 	Article: Q263307
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -118,3 +120,5 @@ permalink: /kb/263/Q263307/
 	
 	=============================================================================
 	
+
+{% endraw %}

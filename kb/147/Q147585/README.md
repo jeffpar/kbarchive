@@ -6,6 +6,8 @@ permalink: /kb/147/Q147585/
 
 ## Q147585: INFO: The Mssccprj.scc File and How Is It Used
 
+{% raw %}
+
 	Article: Q147585
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/147/Q147585/
 	
 	=============================================================================
 	
+
+{% endraw %}

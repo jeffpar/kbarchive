@@ -6,6 +6,8 @@ permalink: /kb/136/Q136977/
 
 ## Q136977: DOCERR: Incomplete Instructions for Populating a Grid Control
 
+{% raw %}
+
 	Article: Q136977
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/136/Q136977/
 	
 	=============================================================================
 	
+
+{% endraw %}

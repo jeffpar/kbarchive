@@ -6,6 +6,8 @@ permalink: /kb/043/Q43899/
 
 ## Q43899: Floating-Point Errors in QB.EXE with Coprocessor; Use SET NO87
 
+{% raw %}
+
 	Article: Q43899
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -38,3 +40,5 @@ permalink: /kb/043/Q43899/
 	This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b,
 	and 4.50, Microsoft BASIC Compiler Versions 6.00 and 6.00b, and
 	Microsoft BASIC PDS Version 7.00.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43023/
 
 ## Q43023: Multiple Event Traps Can Malfunction in QB.EXE
 
+{% raw %}
+
 	Article: Q43023
 	Product(s): See article
 	Version(s): 4.00b 4.50
@@ -76,3 +78,5 @@ permalink: /kb/043/Q43023/
 	event1:
 	  PRINT "user event"
 	RETURN
+
+{% endraw %}

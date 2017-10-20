@@ -6,6 +6,8 @@ permalink: /kb/169/Q169258/
 
 ## Q169258: WD95: Large Envelopes Print in Portrait to HP 5si MX, 5n on NT 4
 
+{% raw %}
+
 	Article: Q169258
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:7.0,7.0a; winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/169/Q169258/
 	
 	=============================================================================
 	
+
+{% endraw %}

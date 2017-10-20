@@ -6,6 +6,8 @@ permalink: /kb/183/Q183192/
 
 ## Q183192: Mac Bookshelf 98: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q183192
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -56,3 +58,5 @@ permalink: /kb/183/Q183192/
 	
 	=============================================================================
 	
+
+{% endraw %}

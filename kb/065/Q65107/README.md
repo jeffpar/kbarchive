@@ -6,6 +6,8 @@ permalink: /kb/065/Q65107/
 
 ## Q65107: Modulus Yields Incorrect Result When Used with /Ot
 
+{% raw %}
+
 	Article: Q65107
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -42,3 +44,5 @@ permalink: /kb/065/Q65107/
 	
 	Microsoft has confirmed this to be a problem with QuickC versions 2.00
 	and 2.01. This problem is corrected in versions 2.50 and 2.51.
+
+{% endraw %}

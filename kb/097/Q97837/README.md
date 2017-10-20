@@ -6,6 +6,8 @@ permalink: /kb/097/Q97837/
 
 ## Q97837: Changes and Functions of SpaceMan with MS-DOS DoubleSpace
 
+{% raw %}
+
 	Article: Q97837
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -91,3 +93,5 @@ permalink: /kb/097/Q97837/
 	
 	=============================================================================
 	
+
+{% endraw %}

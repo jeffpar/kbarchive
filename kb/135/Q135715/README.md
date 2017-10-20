@@ -6,6 +6,8 @@ permalink: /kb/135/Q135715/
 
 ## Q135715: BUG: SQLParamData Returns Incorrect Values Under Win32s
 
+{% raw %}
+
 	Article: Q135715
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.10b
@@ -164,3 +166,5 @@ permalink: /kb/135/Q135715/
 	
 	=============================================================================
 	
+
+{% endraw %}

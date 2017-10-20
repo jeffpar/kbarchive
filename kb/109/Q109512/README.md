@@ -6,6 +6,8 @@ permalink: /kb/109/Q109512/
 
 ## Q109512: SETUP.TXT from Windows for Workgroups 3.11 (Part 3 of 3)
 
+{% raw %}
+
 	Article: Q109512
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -456,3 +458,5 @@ permalink: /kb/109/Q109512/
 	
 	=============================================================================
 	
+
+{% endraw %}

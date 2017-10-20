@@ -6,6 +6,8 @@ permalink: /kb/077/Q77829/
 
 ## Q77829: WD97: Creating Special Characters with Overstrike
 
+{% raw %}
+
 	Article: Q77829
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/077/Q77829/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/282/Q282458/
 
 ## Q282458: 502 Access Denied Errors Occur When There Are a Large Number of
 
+{% raw %}
+
 	Article: Q282458
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -75,3 +77,5 @@ permalink: /kb/282/Q282458/
 	
 	=============================================================================
 	
+
+{% endraw %}

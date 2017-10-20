@@ -6,6 +6,8 @@ permalink: /kb/101/Q101139/
 
 ## Q101139: PC Win: Err Msg: MAIL SYSTEM ERROR
 
+{% raw %}
+
 	Article: Q101139
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/101/Q101139/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196403/
 
 ## Q196403: XADM: Newly Replicated Folders Appear Not to Have Content
 
+{% raw %}
+
 	Article: Q196403
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -46,3 +48,5 @@ permalink: /kb/196/Q196403/
 	
 	=============================================================================
 	
+
+{% endraw %}

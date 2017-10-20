@@ -6,6 +6,8 @@ permalink: /kb/166/Q166601/
 
 ## Q166601: XADM: Folder(s) Missing After Using Move Mailbox Command
 
+{% raw %}
+
 	Article: Q166601
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -90,3 +92,5 @@ permalink: /kb/166/Q166601/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146162/
 
 ## Q146162: XCLN: Copy Across Store Does Not Change the Message Size
 
+{% raw %}
+
 	Article: Q146162
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -43,3 +45,5 @@ permalink: /kb/146/Q146162/
 	
 	=============================================================================
 	
+
+{% endraw %}

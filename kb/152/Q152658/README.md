@@ -6,6 +6,8 @@ permalink: /kb/152/Q152658/
 
 ## Q152658: XCLN: Sort Button Behaves Unexpectedly on Forms
 
+{% raw %}
+
 	Article: Q152658
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/152/Q152658/
 	
 	=============================================================================
 	
+
+{% endraw %}

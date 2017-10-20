@@ -6,6 +6,8 @@ permalink: /kb/180/Q180023/
 
 ## Q180023: WD97: Some Menu Commands Unavailable (Document Protection)
 
+{% raw %}
+
 	Article: Q180023
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -208,3 +210,5 @@ permalink: /kb/180/Q180023/
 	
 	=============================================================================
 	
+
+{% endraw %}

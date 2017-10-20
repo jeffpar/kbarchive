@@ -6,6 +6,8 @@ permalink: /kb/257/Q257374/
 
 ## Q257374: NetUserEnum() May Return Error 2140
 
+{% raw %}
+
 	Article: Q257374
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -93,3 +95,5 @@ permalink: /kb/257/Q257374/
 	
 	=============================================================================
 	
+
+{% endraw %}

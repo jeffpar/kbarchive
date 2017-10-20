@@ -6,6 +6,8 @@ permalink: /kb/111/Q111610/
 
 ## Q111610: Suppressing &quot;Cannot Find MYDLL.DLL&quot; Error Box
 
+{% raw %}
+
 	Article: Q111610
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -100,3 +102,5 @@ permalink: /kb/111/Q111610/
 	
 	=============================================================================
 	
+
+{% endraw %}

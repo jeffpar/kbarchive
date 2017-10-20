@@ -6,6 +6,8 @@ permalink: /kb/152/Q152087/
 
 ## Q152087: Connpts.exe Implements Connection Points in MFC Apps
 
+{% raw %}
+
 	Article: Q152087
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,5.0,6.0
@@ -183,3 +185,5 @@ permalink: /kb/152/Q152087/
 	
 	=============================================================================
 	
+
+{% endraw %}

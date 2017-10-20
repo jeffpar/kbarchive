@@ -6,6 +6,8 @@ permalink: /kb/167/Q167822/
 
 ## Q167822: Error 0122 Starting Peer Web Server
 
+{% raw %}
+
 	Article: Q167822
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -66,3 +68,5 @@ permalink: /kb/167/Q167822/
 	
 	=============================================================================
 	
+
+{% endraw %}

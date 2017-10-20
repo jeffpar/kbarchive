@@ -6,6 +6,8 @@ permalink: /kb/317/Q317805/
 
 ## Q317805: Sponsor Connection Changes in Host Integration Server 2000
 
+{% raw %}
+
 	Article: Q317805
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/317/Q317805/
 	
 	=============================================================================
 	
+
+{% endraw %}

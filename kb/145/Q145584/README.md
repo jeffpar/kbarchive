@@ -6,6 +6,8 @@ permalink: /kb/145/Q145584/
 
 ## Q145584: WD97: Documents May Be Deleted from ODMA System
 
+{% raw %}
+
 	Article: Q145584
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/145/Q145584/
 	
 	=============================================================================
 	
+
+{% endraw %}

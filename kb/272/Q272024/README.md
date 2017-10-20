@@ -6,6 +6,8 @@ permalink: /kb/272/Q272024/
 
 ## Q272024: BUG: Release Calls When Using _ATL_DEBUG_INTEFACES May Crash
 
+{% raw %}
+
 	Article: Q272024
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -152,3 +154,5 @@ permalink: /kb/272/Q272024/
 	
 	=============================================================================
 	
+
+{% endraw %}

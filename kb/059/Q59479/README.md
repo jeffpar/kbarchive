@@ -6,6 +6,8 @@ permalink: /kb/059/Q59479/
 
 ## Q59479: Cannot Open Compiler Intermediate File
 
+{% raw %}
+
 	Article: Q59479
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -43,3 +45,5 @@ permalink: /kb/059/Q59479/
 	
 	This is true only for the TMP variable because other environment
 	variables are used only for a search path.
+
+{% endraw %}

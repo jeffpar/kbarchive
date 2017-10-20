@@ -6,6 +6,8 @@ permalink: /kb/142/Q142887/
 
 ## Q142887: FIX: SQL Select Inconsistency with SET ANSI OFF and ALLTRIM()
 
+{% raw %}
+
 	Article: Q142887
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/142/Q142887/
 	
 	=============================================================================
 	
+
+{% endraw %}

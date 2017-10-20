@@ -6,6 +6,8 @@ permalink: /kb/175/Q175867/
 
 ## Q175867: XADM: How to Send Outlook Contacts to an Internet User
 
+{% raw %}
+
 	Article: Q175867
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5,8.0,8.01,8.02,8.03
@@ -65,3 +67,5 @@ permalink: /kb/175/Q175867/
 	
 	=============================================================================
 	
+
+{% endraw %}

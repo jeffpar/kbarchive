@@ -6,6 +6,8 @@ permalink: /kb/231/Q231972/
 
 ## Q231972: How to Set Up Your Windows NT Network File System Server
 
+{% raw %}
+
 	Article: Q231972
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -120,3 +122,5 @@ permalink: /kb/231/Q231972/
 	
 	=============================================================================
 	
+
+{% endraw %}

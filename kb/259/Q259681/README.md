@@ -6,6 +6,8 @@ permalink: /kb/259/Q259681/
 
 ## Q259681: SMS: Hardware Inventory Doesn't Capture Variables on Win9x
 
+{% raw %}
+
 	Article: Q259681
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP2
@@ -57,3 +59,5 @@ permalink: /kb/259/Q259681/
 	
 	=============================================================================
 	
+
+{% endraw %}

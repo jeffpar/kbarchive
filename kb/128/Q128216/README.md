@@ -6,6 +6,8 @@ permalink: /kb/128/Q128216/
 
 ## Q128216: SCHDPLUS.INI File Appears in Root Directory
 
+{% raw %}
+
 	Article: Q128216
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -68,3 +70,5 @@ permalink: /kb/128/Q128216/
 	
 	=============================================================================
 	
+
+{% endraw %}

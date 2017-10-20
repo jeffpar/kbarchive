@@ -6,6 +6,8 @@ permalink: /kb/102/Q102889/
 
 ## Q102889: Mapping .INI File Entries to the Registry
 
+{% raw %}
+
 	Article: Q102889
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/102/Q102889/
 	
 	=============================================================================
 	
+
+{% endraw %}

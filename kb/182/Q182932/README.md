@@ -6,6 +6,8 @@ permalink: /kb/182/Q182932/
 
 ## Q182932: XFOR: Directory Replication Fails over Internet Mail Service
 
+{% raw %}
+
 	Article: Q182932
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -73,3 +75,5 @@ permalink: /kb/182/Q182932/
 	
 	=============================================================================
 	
+
+{% endraw %}

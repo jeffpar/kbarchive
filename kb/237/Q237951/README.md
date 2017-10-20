@@ -6,6 +6,8 @@ permalink: /kb/237/Q237951/
 
 ## Q237951: XCLN: Non-Delivery Reports Received by Clients May Be Confusing
 
+{% raw %}
+
 	Article: Q237951
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,4.0,5.0,97,98; winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/237/Q237951/
 	
 	=============================================================================
 	
+
+{% endraw %}

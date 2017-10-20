@@ -6,6 +6,8 @@ permalink: /kb/193/Q193414/
 
 ## Q193414: BUG: SetAll Not Refreshing Text Boxes in Grid When Sparse =.F.
 
+{% raw %}
+
 	Article: Q193414
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -123,3 +125,5 @@ permalink: /kb/193/Q193414/
 	
 	=============================================================================
 	
+
+{% endraw %}

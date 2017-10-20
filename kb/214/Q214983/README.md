@@ -6,6 +6,8 @@ permalink: /kb/214/Q214983/
 
 ## Q214983: Skipinv.exe Fails to Compensate for Change of Month
 
+{% raw %}
+
 	Article: Q214983
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -82,3 +84,5 @@ permalink: /kb/214/Q214983/
 	
 	=============================================================================
 	
+
+{% endraw %}

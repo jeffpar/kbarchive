@@ -6,6 +6,8 @@ permalink: /kb/180/Q180678/
 
 ## Q180678: Folder on FPNW Server Inaccessible to intraNetWare Client
 
+{% raw %}
+
 	Article: Q180678
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/180/Q180678/
 	
 	=============================================================================
 	
+
+{% endraw %}

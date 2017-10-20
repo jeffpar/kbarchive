@@ -6,6 +6,8 @@ permalink: /kb/317/Q317172/
 
 ## Q317172: XADM: Exchange Server 5.5 and Network-Attached Storage
 
+{% raw %}
+
 	Article: Q317172
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -242,3 +244,5 @@ permalink: /kb/317/Q317172/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68128/
 
 ## Q68128: Troubleshooting the CONFIG.SYS and AUTOEXEC.BAT Files
 
+{% raw %}
+
 	Article: Q68128
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -169,3 +171,5 @@ permalink: /kb/068/Q68128/
 	
 	=============================================================================
 	
+
+{% endraw %}

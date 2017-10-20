@@ -6,6 +6,8 @@ permalink: /kb/152/Q152344/
 
 ## Q152344: XCLN: Winsock Application Starts When Exchange Client Starts
 
+{% raw %}
+
 	Article: Q152344
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -75,3 +77,5 @@ permalink: /kb/152/Q152344/
 	
 	=============================================================================
 	
+
+{% endraw %}

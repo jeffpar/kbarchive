@@ -6,6 +6,8 @@ permalink: /kb/235/Q235772/
 
 ## Q235772: SMS: DHCP Server Has Unlimited Leases NetDisc Fails to Retrieve
 
+{% raw %}
+
 	Article: Q235772
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/235/Q235772/
 	
 	=============================================================================
 	
+
+{% endraw %}

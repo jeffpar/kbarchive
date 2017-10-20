@@ -6,6 +6,8 @@ permalink: /kb/076/Q76090/
 
 ## Q76090: WPP Err Msg: An Error Occurred While Setup...(with NDW)
 
+{% raw %}
+
 	Article: Q76090
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -65,3 +67,5 @@ permalink: /kb/076/Q76090/
 	
 	=============================================================================
 	
+
+{% endraw %}

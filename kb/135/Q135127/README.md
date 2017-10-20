@@ -6,6 +6,8 @@ permalink: /kb/135/Q135127/
 
 ## Q135127: Trust Relationship Confirmation Messages Different
 
+{% raw %}
+
 	Article: Q135127
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; Win2000:3.1; winnt:3.5,3.51
@@ -60,3 +62,5 @@ permalink: /kb/135/Q135127/
 	
 	=============================================================================
 	
+
+{% endraw %}

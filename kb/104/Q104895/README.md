@@ -6,6 +6,8 @@ permalink: /kb/104/Q104895/
 
 ## Q104895: FIX: No Hexidecimal Display in Watch and Locals
 
+{% raw %}
+
 	Article: Q104895
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -95,3 +97,5 @@ permalink: /kb/104/Q104895/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153696/
 
 ## Q153696: Partners Have Different Expiration Times for WINS Entries
 
+{% raw %}
+
 	Article: Q153696
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -48,3 +50,5 @@ permalink: /kb/153/Q153696/
 	
 	=============================================================================
 	
+
+{% endraw %}

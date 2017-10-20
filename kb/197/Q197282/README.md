@@ -6,6 +6,8 @@ permalink: /kb/197/Q197282/
 
 ## Q197282: Combat Flight Simulator: Mouse Pointer Behaves Erratically
 
+{% raw %}
+
 	Article: Q197282
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -106,3 +108,5 @@ permalink: /kb/197/Q197282/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197254/
 
 ## Q197254: Customize Dirsynced cc:Mail Display and Alias Names
 
+{% raw %}
+
 	Article: Q197254
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0
@@ -106,3 +108,5 @@ permalink: /kb/197/Q197254/
 	
 	=============================================================================
 	
+
+{% endraw %}

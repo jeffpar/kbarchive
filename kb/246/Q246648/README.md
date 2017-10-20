@@ -6,6 +6,8 @@ permalink: /kb/246/Q246648/
 
 ## Q246648: XCLN: How to Install the Routing Wizard Sample Application
 
+{% raw %}
+
 	Article: Q246648
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,98
@@ -61,3 +63,5 @@ permalink: /kb/246/Q246648/
 	
 	=============================================================================
 	
+
+{% endraw %}

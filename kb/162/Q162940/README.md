@@ -6,6 +6,8 @@ permalink: /kb/162/Q162940/
 
 ## Q162940: WD97: WordBasic.EditGoTo Does Not Go to Bookmark
 
+{% raw %}
+
 	Article: Q162940
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -103,3 +105,5 @@ permalink: /kb/162/Q162940/
 	
 	=============================================================================
 	
+
+{% endraw %}

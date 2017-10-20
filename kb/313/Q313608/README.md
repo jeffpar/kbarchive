@@ -6,6 +6,8 @@ permalink: /kb/313/Q313608/
 
 ## Q313608: HOWTO: Replace a DLL with Its Checked Version for Testing
 
+{% raw %}
+
 	Article: Q313608
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -69,3 +71,5 @@ permalink: /kb/313/Q313608/
 	
 	=============================================================================
 	
+
+{% endraw %}

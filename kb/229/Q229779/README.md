@@ -6,6 +6,8 @@ permalink: /kb/229/Q229779/
 
 ## Q229779: PRB: Data Environment Stores Paths as Relative Paths
 
+{% raw %}
+
 	Article: Q229779
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -117,3 +119,5 @@ permalink: /kb/229/Q229779/
 	
 	=============================================================================
 	
+
+{% endraw %}

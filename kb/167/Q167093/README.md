@@ -6,6 +6,8 @@ permalink: /kb/167/Q167093/
 
 ## Q167093: Err Msg: The WINS Client TCP/IP Service Depends on the TCP/IP...
 
+{% raw %}
+
 	Article: Q167093
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/167/Q167093/
 	
 	=============================================================================
 	
+
+{% endraw %}

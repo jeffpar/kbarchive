@@ -6,6 +6,8 @@ permalink: /kb/259/Q259877/
 
 ## Q259877: &quot;Stop 0x1E&quot; on Terminal Server During Session Shutdown
 
+{% raw %}
+
 	Article: Q259877
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -107,3 +109,5 @@ permalink: /kb/259/Q259877/
 	
 	=============================================================================
 	
+
+{% endraw %}

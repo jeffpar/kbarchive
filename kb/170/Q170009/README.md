@@ -6,6 +6,8 @@ permalink: /kb/170/Q170009/
 
 ## Q170009: XADM: NTFS Compressed Volume Causes Store to Fail
 
+{% raw %}
+
 	Article: Q170009
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/170/Q170009/
 	
 	=============================================================================
 	
+
+{% endraw %}

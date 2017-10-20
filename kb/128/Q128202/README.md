@@ -6,6 +6,8 @@ permalink: /kb/128/Q128202/
 
 ## Q128202: How to Set the Display Size of Design Screen
 
+{% raw %}
+
 	Article: Q128202
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/128/Q128202/
 	
 	=============================================================================
 	
+
+{% endraw %}

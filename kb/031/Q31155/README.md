@@ -6,6 +6,8 @@ permalink: /kb/031/Q31155/
 
 ## Q31155: &quot;Unable to Read TOOLS.INI&quot; Message Appears in OS/2 with MEP
 
+{% raw %}
+
 	Article: Q31155
 	Product(s): See article
 	Version(s): 1.00
@@ -26,3 +28,5 @@ permalink: /kb/031/Q31155/
 	tag [MEP].
 	   The tag can be set to [M MEP] if you wish to use the same TOOLS.INI
 	settings for both real-mode and protected-mode versions of the editor.
+
+{% endraw %}

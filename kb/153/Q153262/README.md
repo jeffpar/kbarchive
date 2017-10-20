@@ -6,6 +6,8 @@ permalink: /kb/153/Q153262/
 
 ## Q153262: Close Combat Trial Version: Minimum Requirements for Windows
 
+{% raw %}
+
 	Article: Q153262
 	Product(s): Microsoft Home Games
 	Version(s): Trial Version
@@ -60,3 +62,5 @@ permalink: /kb/153/Q153262/
 	
 	=============================================================================
 	
+
+{% endraw %}

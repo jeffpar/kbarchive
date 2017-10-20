@@ -6,6 +6,8 @@ permalink: /kb/196/Q196699/
 
 ## Q196699: INFO: Files Installed in WINNT&#92;SYSTEM32 Folder Before VFP6
 
+{% raw %}
+
 	Article: Q196699
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -804,3 +806,5 @@ permalink: /kb/196/Q196699/
 	
 	=============================================================================
 	
+
+{% endraw %}

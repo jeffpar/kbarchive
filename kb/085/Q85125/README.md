@@ -6,6 +6,8 @@ permalink: /kb/085/Q85125/
 
 ## Q85125: Command-Line Switches for Windows 3.1 Setup
 
+{% raw %}
+
 	Article: Q85125
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -83,3 +85,5 @@ permalink: /kb/085/Q85125/
 	
 	=============================================================================
 	
+
+{% endraw %}

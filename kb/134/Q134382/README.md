@@ -6,6 +6,8 @@ permalink: /kb/134/Q134382/
 
 ## Q134382: CONN: DocErr: EXTERNAL.EXE and Manual Dir-Sync
 
+{% raw %}
+
 	Article: Q134382
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -129,3 +131,5 @@ permalink: /kb/134/Q134382/
 	
 	=============================================================================
 	
+
+{% endraw %}

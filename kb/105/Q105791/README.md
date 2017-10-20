@@ -6,6 +6,8 @@ permalink: /kb/105/Q105791/
 
 ## Q105791: MS-DOS Setup Appears to Corrupt or Damage Windows .INI Files
 
+{% raw %}
+
 	Article: Q105791
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -64,3 +66,5 @@ permalink: /kb/105/Q105791/
 	
 	=============================================================================
 	
+
+{% endraw %}

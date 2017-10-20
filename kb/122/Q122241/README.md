@@ -6,6 +6,8 @@ permalink: /kb/122/Q122241/
 
 ## Q122241: ADT2: WRKGADM.EXE File Installed Without Being Specified
 
+{% raw %}
+
 	Article: Q122241
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -65,3 +67,5 @@ permalink: /kb/122/Q122241/
 	
 	=============================================================================
 	
+
+{% endraw %}

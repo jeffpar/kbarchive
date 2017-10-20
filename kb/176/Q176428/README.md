@@ -6,6 +6,8 @@ permalink: /kb/176/Q176428/
 
 ## Q176428: PRB: MSRDO20.OCX Not Registered When Running Application Setup
 
+{% raw %}
+
 	Article: Q176428
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -85,3 +87,5 @@ permalink: /kb/176/Q176428/
 	
 	=============================================================================
 	
+
+{% endraw %}

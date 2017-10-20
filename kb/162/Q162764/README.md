@@ -6,6 +6,8 @@ permalink: /kb/162/Q162764/
 
 ## Q162764: Unix FTP Clients Get 1 Line at a Time w/ SNA Server AFTP Gateway
 
+{% raw %}
+
 	Article: Q162764
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -84,3 +86,5 @@ permalink: /kb/162/Q162764/
 	
 	=============================================================================
 	
+
+{% endraw %}

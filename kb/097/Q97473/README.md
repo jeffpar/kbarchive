@@ -6,6 +6,8 @@ permalink: /kb/097/Q97473/
 
 ## Q97473: RESTORE Err Msg: 'Incorrect DOS Version'
 
+{% raw %}
+
 	Article: Q97473
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -54,3 +56,5 @@ permalink: /kb/097/Q97473/
 	
 	=============================================================================
 	
+
+{% endraw %}

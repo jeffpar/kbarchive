@@ -6,6 +6,8 @@ permalink: /kb/071/Q71531/
 
 ## Q71531: STAR Color Printers Print in Color from Paintbrush
 
+{% raw %}
+
 	Article: Q71531
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -67,3 +69,5 @@ permalink: /kb/071/Q71531/
 	
 	=============================================================================
 	
+
+{% endraw %}

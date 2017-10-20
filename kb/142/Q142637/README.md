@@ -6,6 +6,8 @@ permalink: /kb/142/Q142637/
 
 ## Q142637: Xircom Pocket Ether3 Adapters Require 802.2 Frame Type
 
+{% raw %}
+
 	Article: Q142637
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -62,3 +64,5 @@ permalink: /kb/142/Q142637/
 	
 	=============================================================================
 	
+
+{% endraw %}

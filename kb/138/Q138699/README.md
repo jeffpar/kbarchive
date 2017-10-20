@@ -6,6 +6,8 @@ permalink: /kb/138/Q138699/
 
 ## Q138699: Configuring Windows NT Workstation for Multiple Frame Types
 
+{% raw %}
+
 	Article: Q138699
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -88,3 +90,5 @@ permalink: /kb/138/Q138699/
 	
 	=============================================================================
 	
+
+{% endraw %}

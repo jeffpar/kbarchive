@@ -6,6 +6,8 @@ permalink: /kb/132/Q132149/
 
 ## Q132149: Logon Scripts Run From Wrong Server
 
+{% raw %}
+
 	Article: Q132149
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -57,3 +59,5 @@ permalink: /kb/132/Q132149/
 	
 	=============================================================================
 	
+
+{% endraw %}

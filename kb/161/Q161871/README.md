@@ -6,6 +6,8 @@ permalink: /kb/161/Q161871/
 
 ## Q161871: PRB: MFC Sockets Application Crashes after Exit on NT 3.51
 
+{% raw %}
+
 	Article: Q161871
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.1,4.2
@@ -88,3 +90,5 @@ permalink: /kb/161/Q161871/
 	
 	=============================================================================
 	
+
+{% endraw %}

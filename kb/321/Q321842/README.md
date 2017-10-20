@@ -6,6 +6,8 @@ permalink: /kb/321/Q321842/
 
 ## Q321842: ODBC Call Fail on SQL Query with Parameter Markers in Subquery
 
+{% raw %}
+
 	Article: Q321842
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.0,2.0,2.5,2.65,2.65.0212,2000.80.194,3.0,3.5,3.6,3.7
@@ -76,3 +78,5 @@ permalink: /kb/321/Q321842/
 	
 	=============================================================================
 	
+
+{% endraw %}

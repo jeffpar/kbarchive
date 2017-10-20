@@ -6,6 +6,8 @@ permalink: /kb/309/Q309277/
 
 ## Q309277: Asheron's Call Dark Majesty: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q309277
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -79,3 +81,5 @@ permalink: /kb/309/Q309277/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94607/
 
 ## Q94607: PRB: MULTIPAD Sample from Win 3.1 SDK Gives Printing Error
 
+{% raw %}
+
 	Article: Q94607
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -86,3 +88,5 @@ permalink: /kb/094/Q94607/
 	
 	=============================================================================
 	
+
+{% endraw %}

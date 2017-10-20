@@ -6,6 +6,8 @@ permalink: /kb/145/Q145943/
 
 ## Q145943: How To Set Up ODBC Connectivity To An AS/400
 
+{% raw %}
+
 	Article: Q145943
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -228,3 +230,5 @@ permalink: /kb/145/Q145943/
 	
 	=============================================================================
 	
+
+{% endraw %}

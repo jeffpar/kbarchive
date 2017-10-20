@@ -6,6 +6,8 @@ permalink: /kb/083/Q83076/
 
 ## Q83076: PostScript WIN.INI Settings for Windows 3.1
 
+{% raw %}
+
 	Article: Q83076
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -100,3 +102,5 @@ permalink: /kb/083/Q83076/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161042/
 
 ## Q161042: XCLN: Schedule+ Error: &quot;The Schedule File Could Not Be Opened&quot;
 
+{% raw %}
+
 	Article: Q161042
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -66,3 +68,5 @@ permalink: /kb/161/Q161042/
 	
 	=============================================================================
 	
+
+{% endraw %}

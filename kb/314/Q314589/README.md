@@ -6,6 +6,8 @@ permalink: /kb/314/Q314589/
 
 ## Q314589: ST2002: Pushpins Appear Different Than Expected
 
+{% raw %}
+
 	Article: Q314589
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -171,3 +173,5 @@ permalink: /kb/314/Q314589/
 	
 	=============================================================================
 	
+
+{% endraw %}

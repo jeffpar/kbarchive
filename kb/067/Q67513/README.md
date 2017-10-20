@@ -6,6 +6,8 @@ permalink: /kb/067/Q67513/
 
 ## Q67513: Comments in .COD Listing Are Wrong When Using _fastcall
 
+{% raw %}
+
 	Article: Q67513
 	Product(s): See article
 	Version(s): 6.00a  | 6.00a
@@ -99,3 +101,5 @@ permalink: /kb/067/Q67513/
 	Microsoft has confirmed this to be a problem in the C version 6.00a.
 	We are researching this problem and will post new information here as
 	it becomes available.
+
+{% endraw %}

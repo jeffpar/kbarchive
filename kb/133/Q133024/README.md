@@ -6,6 +6,8 @@ permalink: /kb/133/Q133024/
 
 ## Q133024: PRB: Error Loading File w/Combo Box RowSourceType = 6 (Fields)
 
+{% raw %}
+
 	Article: Q133024
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -63,3 +65,5 @@ permalink: /kb/133/Q133024/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/315/Q315600/
 
 ## Q315600: Asheron's Call: Err Msg: One of Your Characters Is Still in...
 
+{% raw %}
+
 	Article: Q315600
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -86,3 +88,5 @@ permalink: /kb/315/Q315600/
 	
 	=============================================================================
 	
+
+{% endraw %}

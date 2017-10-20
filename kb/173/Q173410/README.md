@@ -6,6 +6,8 @@ permalink: /kb/173/Q173410/
 
 ## Q173410: INFO: Server-Side Cursors Are Forced w/More Than One Command Obj
 
+{% raw %}
+
 	Article: Q173410
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.1
@@ -99,3 +101,5 @@ permalink: /kb/173/Q173410/
 	
 	=============================================================================
 	
+
+{% endraw %}

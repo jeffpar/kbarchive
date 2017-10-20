@@ -6,6 +6,8 @@ permalink: /kb/298/Q298351/
 
 ## Q298351: How to Change User Passwords on Windows NT Server by Web Browser
 
+{% raw %}
+
 	Article: Q298351
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/298/Q298351/
 	
 	=============================================================================
 	
+
+{% endraw %}

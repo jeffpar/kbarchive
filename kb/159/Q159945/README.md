@@ -6,6 +6,8 @@ permalink: /kb/159/Q159945/
 
 ## Q159945: WD97: General Information About E-Mail Support
 
+{% raw %}
+
 	Article: Q159945
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -131,3 +133,5 @@ permalink: /kb/159/Q159945/
 	
 	=============================================================================
 	
+
+{% endraw %}

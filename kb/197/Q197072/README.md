@@ -6,6 +6,8 @@ permalink: /kb/197/Q197072/
 
 ## Q197072: Encarta Virtual Globe 99: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q197072
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/197/Q197072/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139476/
 
 ## Q139476: FIX: File Time Incorrect After Saving During Build
 
+{% raw %}
+
 	Article: Q139476
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,4.0,4.1,4.2,5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/139/Q139476/
 	
 	=============================================================================
 	
+
+{% endraw %}

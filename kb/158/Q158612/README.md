@@ -6,6 +6,8 @@ permalink: /kb/158/Q158612/
 
 ## Q158612: STL Sample for the vector::(empty, erase, push_back) Functions
 
+{% raw %}
+
 	Article: Q158612
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -200,3 +202,5 @@ permalink: /kb/158/Q158612/
 	
 	=============================================================================
 	
+
+{% endraw %}

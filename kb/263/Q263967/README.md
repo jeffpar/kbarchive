@@ -6,6 +6,8 @@ permalink: /kb/263/Q263967/
 
 ## Q263967: Domain Admins Group Is Not Added to Local Administrators Group
 
+{% raw %}
+
 	Article: Q263967
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/263/Q263967/
 	
 	=============================================================================
 	
+
+{% endraw %}

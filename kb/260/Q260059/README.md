@@ -6,6 +6,8 @@ permalink: /kb/260/Q260059/
 
 ## Q260059: Extending a Volume Set Requires Chkdsk to Be Run
 
+{% raw %}
+
 	Article: Q260059
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -118,3 +120,5 @@ permalink: /kb/260/Q260059/
 	
 	=============================================================================
 	
+
+{% endraw %}

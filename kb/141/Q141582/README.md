@@ -6,6 +6,8 @@ permalink: /kb/141/Q141582/
 
 ## Q141582: CONN: Not Select MACGATE Directory with Gateway, Configuration
 
+{% raw %}
+
 	Article: Q141582
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -68,3 +70,5 @@ permalink: /kb/141/Q141582/
 	
 	=============================================================================
 	
+
+{% endraw %}

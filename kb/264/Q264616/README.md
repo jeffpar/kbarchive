@@ -6,6 +6,8 @@ permalink: /kb/264/Q264616/
 
 ## Q264616: FS2000: Differences Between True and Indicated Air Speeds
 
+{% raw %}
+
 	Article: Q264616
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -91,3 +93,5 @@ permalink: /kb/264/Q264616/
 	
 	=============================================================================
 	
+
+{% endraw %}

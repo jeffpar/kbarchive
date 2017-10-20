@@ -6,6 +6,8 @@ permalink: /kb/172/Q172121/
 
 ## Q172121: BUG: Microsoft Grid Control Cannot Load a Metafile
 
+{% raw %}
+
 	Article: Q172121
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -72,3 +74,5 @@ permalink: /kb/172/Q172121/
 	
 	=============================================================================
 	
+
+{% endraw %}

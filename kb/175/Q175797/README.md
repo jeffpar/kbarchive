@@ -6,6 +6,8 @@ permalink: /kb/175/Q175797/
 
 ## Q175797: How to Configure Btrieve 6.15 Support for MS Client
 
+{% raw %}
+
 	Article: Q175797
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -57,3 +59,5 @@ permalink: /kb/175/Q175797/
 	
 	=============================================================================
 	
+
+{% endraw %}

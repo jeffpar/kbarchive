@@ -6,6 +6,8 @@ permalink: /kb/192/Q192745/
 
 ## Q192745: HOWTO: Use CreateObject with Visual C++ COM Objects
 
+{% raw %}
+
 	Article: Q192745
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -97,3 +99,5 @@ permalink: /kb/192/Q192745/
 	
 	=============================================================================
 	
+
+{% endraw %}

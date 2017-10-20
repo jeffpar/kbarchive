@@ -6,6 +6,8 @@ permalink: /kb/192/Q192206/
 
 ## Q192206: FIX: Built .Exe Does Not Include .Dcx from Included .Dbc
 
+{% raw %}
+
 	Article: Q192206
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -108,3 +110,5 @@ permalink: /kb/192/Q192206/
 	
 	=============================================================================
 	
+
+{% endraw %}

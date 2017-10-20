@@ -6,6 +6,8 @@ permalink: /kb/164/Q164133/
 
 ## Q164133: Logon Allowed When Access Denied to Mandatory User Profile
 
+{% raw %}
+
 	Article: Q164133
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/164/Q164133/
 	
 	=============================================================================
 	
+
+{% endraw %}

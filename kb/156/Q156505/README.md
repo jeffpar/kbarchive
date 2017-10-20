@@ -6,6 +6,8 @@ permalink: /kb/156/Q156505/
 
 ## Q156505: PRB: Syntax Error with ActiveX Control Terminates VFP
 
+{% raw %}
+
 	Article: Q156505
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0, 6.0
@@ -151,3 +153,5 @@ permalink: /kb/156/Q156505/
 	
 	=============================================================================
 	
+
+{% endraw %}

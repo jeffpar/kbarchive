@@ -6,6 +6,8 @@ permalink: /kb/150/Q150718/
 
 ## Q150718: Mac Bookshelf 96-97: Pronunciation Does Not Copy
 
+{% raw %}
+
 	Article: Q150718
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996-1997
@@ -55,3 +57,5 @@ permalink: /kb/150/Q150718/
 	
 	=============================================================================
 	
+
+{% endraw %}

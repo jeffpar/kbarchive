@@ -6,6 +6,8 @@ permalink: /kb/123/Q123182/
 
 ## Q123182: Setup Accepts Invalid Computer Name that Begins with Braces
 
+{% raw %}
+
 	Article: Q123182
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/123/Q123182/
 	
 	=============================================================================
 	
+
+{% endraw %}

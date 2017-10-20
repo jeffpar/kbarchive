@@ -6,6 +6,8 @@ permalink: /kb/194/Q194129/
 
 ## Q194129: Microsoft DNS Fails to Acquire Zone Transfer from BIND Primary
 
+{% raw %}
+
 	Article: Q194129
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/194/Q194129/
 	
 	=============================================================================
 	
+
+{% endraw %}

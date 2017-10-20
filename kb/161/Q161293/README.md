@@ -6,6 +6,8 @@ permalink: /kb/161/Q161293/
 
 ## Q161293: SMS: NET TIME May Cause the Login Script to Fail
 
+{% raw %}
+
 	Article: Q161293
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -61,3 +63,5 @@ permalink: /kb/161/Q161293/
 	
 	=============================================================================
 	
+
+{% endraw %}

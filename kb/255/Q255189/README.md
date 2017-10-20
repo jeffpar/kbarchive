@@ -6,6 +6,8 @@ permalink: /kb/255/Q255189/
 
 ## Q255189: Windows NT Explorer Displays Only Font Files on CD-ROM Copy
 
+{% raw %}
+
 	Article: Q255189
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/255/Q255189/
 	
 	=============================================================================
 	
+
+{% endraw %}

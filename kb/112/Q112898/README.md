@@ -6,6 +6,8 @@ permalink: /kb/112/Q112898/
 
 ## Q112898: PC Adm: Err Msg: Notice 31 Error Loading Template
 
+{% raw %}
+
 	Article: Q112898
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1x,3.0,3.0a,3.2
@@ -59,3 +61,5 @@ permalink: /kb/112/Q112898/
 	
 	=============================================================================
 	
+
+{% endraw %}

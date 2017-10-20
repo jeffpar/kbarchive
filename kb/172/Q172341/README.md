@@ -6,6 +6,8 @@ permalink: /kb/172/Q172341/
 
 ## Q172341: &quot;Select NT User&quot; Does Not Provide Help
 
+{% raw %}
+
 	Article: Q172341
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -53,3 +55,5 @@ permalink: /kb/172/Q172341/
 	
 	=============================================================================
 	
+
+{% endraw %}

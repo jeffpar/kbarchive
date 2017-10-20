@@ -6,6 +6,8 @@ permalink: /kb/138/Q138115/
 
 ## Q138115: Error 1811 Occurs Running JETPACK.EXE
 
+{% raw %}
+
 	Article: Q138115
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/138/Q138115/
 	
 	=============================================================================
 	
+
+{% endraw %}

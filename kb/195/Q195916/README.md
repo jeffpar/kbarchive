@@ -6,6 +6,8 @@ permalink: /kb/195/Q195916/
 
 ## Q195916: XADM: Setting Network Connection Logging for Exchange Server
 
+{% raw %}
+
 	Article: Q195916
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -54,3 +56,5 @@ permalink: /kb/195/Q195916/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154797/
 
 ## Q154797: SP5 Adds Code Pages for Central European Language Support
 
+{% raw %}
+
 	Article: Q154797
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -53,3 +55,5 @@ permalink: /kb/154/Q154797/
 	
 	=============================================================================
 	
+
+{% endraw %}

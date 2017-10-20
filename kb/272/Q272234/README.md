@@ -6,6 +6,8 @@ permalink: /kb/272/Q272234/
 
 ## Q272234: XADM: Overview of Maintenance, Backup, and Disaster Recovery for
 
+{% raw %}
+
 	Article: Q272234
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -359,3 +361,5 @@ permalink: /kb/272/Q272234/
 	
 	=============================================================================
 	
+
+{% endraw %}

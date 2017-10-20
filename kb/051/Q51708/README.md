@@ -6,6 +6,8 @@ permalink: /kb/051/Q51708/
 
 ## Q51708: /Ot Generates Incorrect Code on JMP SHORT &#36;+2
 
+{% raw %}
+
 	Article: Q51708
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -47,3 +49,5 @@ permalink: /kb/051/Q51708/
 	      OUT DX, AL
 	   }
 	}
+
+{% endraw %}

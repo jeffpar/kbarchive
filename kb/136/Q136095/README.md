@@ -6,6 +6,8 @@ permalink: /kb/136/Q136095/
 
 ## Q136095: 802.2 Link Service Hangs APPC Program or Causes Event ID 592
 
+{% raw %}
+
 	Article: Q136095
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -86,3 +88,5 @@ permalink: /kb/136/Q136095/
 	
 	=============================================================================
 	
+
+{% endraw %}

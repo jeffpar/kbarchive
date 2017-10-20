@@ -6,6 +6,8 @@ permalink: /kb/104/Q104901/
 
 ## Q104901: BUG: Anti-Virus TSRs May Prevent Builds from VWB
 
+{% raw %}
+
 	Article: Q104901
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -64,3 +66,5 @@ permalink: /kb/104/Q104901/
 	
 	=============================================================================
 	
+
+{% endraw %}

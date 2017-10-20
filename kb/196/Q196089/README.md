@@ -6,6 +6,8 @@ permalink: /kb/196/Q196089/
 
 ## Q196089: PRB: ALT Key Activates a Menu Defined Programmatically
 
+{% raw %}
+
 	Article: Q196089
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -70,3 +72,5 @@ permalink: /kb/196/Q196089/
 	
 	=============================================================================
 	
+
+{% endraw %}

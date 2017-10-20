@@ -6,6 +6,8 @@ permalink: /kb/159/Q159085/
 
 ## Q159085: Windows NT Kernel Crashes While Processing WM_NCCREATE
 
+{% raw %}
+
 	Article: Q159085
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/159/Q159085/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157515/
 
 ## Q157515: Windows NT Resource Kit FAQ, versions 3.50 and 3.51
 
+{% raw %}
+
 	Article: Q157515
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.5,3.51
@@ -340,3 +342,5 @@ permalink: /kb/157/Q157515/
 	
 	=============================================================================
 	
+
+{% endraw %}

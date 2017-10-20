@@ -6,6 +6,8 @@ permalink: /kb/123/Q123811/
 
 ## Q123811: FIX: C2466: Using New to Allocate an Array of Size Zero
 
+{% raw %}
+
 	Article: Q123811
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/123/Q123811/
 	
 	=============================================================================
 	
+
+{% endraw %}

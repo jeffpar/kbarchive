@@ -6,6 +6,8 @@ permalink: /kb/103/Q103714/
 
 ## Q103714: PRB: LNK4016: Unresolved External Symbol &quot;&#95;&#95;doserrno&quot;
 
+{% raw %}
+
 	Article: Q103714
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1
@@ -82,3 +84,5 @@ permalink: /kb/103/Q103714/
 	
 	=============================================================================
 	
+
+{% endraw %}

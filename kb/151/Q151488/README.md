@@ -6,6 +6,8 @@ permalink: /kb/151/Q151488/
 
 ## Q151488: PRB: DrawText Can Cause Stack Fault
 
+{% raw %}
+
 	Article: Q151488
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/151/Q151488/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177846/
 
 ## Q177846: Kids Plus!: Desktop Themes Wallpaper Is Not Displayed
 
+{% raw %}
+
 	Article: Q177846
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/177/Q177846/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241273/
 
 ## Q241273: XCLN: Copy Folder Design Loses Properties
 
+{% raw %}
+
 	Article: Q241273
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; winnt:5.5,5.5 SP1,5.5 SP2
@@ -68,3 +70,5 @@ permalink: /kb/241/Q241273/
 	
 	=============================================================================
 	
+
+{% endraw %}

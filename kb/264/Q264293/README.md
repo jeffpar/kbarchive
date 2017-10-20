@@ -6,6 +6,8 @@ permalink: /kb/264/Q264293/
 
 ## Q264293: How Streets &amp; Trips 2001 Recognizes Geographic Information
 
+{% raw %}
+
 	Article: Q264293
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -81,3 +83,5 @@ permalink: /kb/264/Q264293/
 	
 	=============================================================================
 	
+
+{% endraw %}

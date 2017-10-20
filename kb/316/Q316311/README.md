@@ -6,6 +6,8 @@ permalink: /kb/316/Q316311/
 
 ## Q316311: HOW TO: Configure a Mirror Set on Windows NT Server 4.0
 
+{% raw %}
+
 	Article: Q316311
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -118,3 +120,5 @@ permalink: /kb/316/Q316311/
 	
 	=============================================================================
 	
+
+{% endraw %}

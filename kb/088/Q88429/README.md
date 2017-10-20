@@ -6,6 +6,8 @@ permalink: /kb/088/Q88429/
 
 ## Q88429: Problems with Swan Video Drivers and Utilities and Windows
 
+{% raw %}
+
 	Article: Q88429
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/088/Q88429/
 	
 	=============================================================================
 	
+
+{% endraw %}

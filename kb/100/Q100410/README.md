@@ -6,6 +6,8 @@ permalink: /kb/100/Q100410/
 
 ## Q100410: Defrag: Error Writing Cluster nnn,nnn in CVF (But CVF Is OK)
 
+{% raw %}
+
 	Article: Q100410
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -65,3 +67,5 @@ permalink: /kb/100/Q100410/
 	
 	=============================================================================
 	
+
+{% endraw %}

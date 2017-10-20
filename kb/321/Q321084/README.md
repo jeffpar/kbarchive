@@ -6,6 +6,8 @@ permalink: /kb/321/Q321084/
 
 ## Q321084: Dungeon Siege: Game Stops During Startup at Black Screen
 
+{% raw %}
+
 	Article: Q321084
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -218,3 +220,5 @@ permalink: /kb/321/Q321084/
 	
 	=============================================================================
 	
+
+{% endraw %}

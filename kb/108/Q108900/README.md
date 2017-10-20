@@ -6,6 +6,8 @@ permalink: /kb/108/Q108900/
 
 ## Q108900: How to Return After F8 into a C Run-Time Library Function
 
+{% raw %}
+
 	Article: Q108900
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/108/Q108900/
 	
 	=============================================================================
 	
+
+{% endraw %}

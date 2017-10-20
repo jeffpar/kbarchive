@@ -6,6 +6,8 @@ permalink: /kb/065/Q65475/
 
 ## Q65475: OS/2 LAN Manager: How to Remove Local and User-Level Security
 
+{% raw %}
+
 	Article: Q65475
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/065/Q65475/
 	
 	=============================================================================
 	
+
+{% endraw %}

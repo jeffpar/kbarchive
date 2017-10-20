@@ -6,6 +6,8 @@ permalink: /kb/191/Q191298/
 
 ## Q191298: SMS: Inventory May Stop Responding on Windows 3.1 LanMan Client
 
+{% raw %}
+
 	Article: Q191298
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -60,3 +62,5 @@ permalink: /kb/191/Q191298/
 	
 	=============================================================================
 	
+
+{% endraw %}

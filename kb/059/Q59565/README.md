@@ -6,6 +6,8 @@ permalink: /kb/059/Q59565/
 
 ## Q59565: &quot;Cannot Load File&quot; Error with ISAMREPR.EXE and SHARE.EXE
 
+{% raw %}
+
 	Article: Q59565
 	Product(s): See article
 	Version(s): 7.00
@@ -40,3 +42,5 @@ permalink: /kb/059/Q59565/
 	   Copyright  (C)  Microsoft Corp 1989.  All rights reserved.
 	
 	   ISAMREPR : Cannot open 'BOOKS.MDB'
+
+{% endraw %}

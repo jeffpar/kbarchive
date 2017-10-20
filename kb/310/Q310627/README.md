@@ -6,6 +6,8 @@ permalink: /kb/310/Q310627/
 
 ## Q310627: MechWarrior 4 Black Knight/Mech Paks: Minimum System Requirement
 
+{% raw %}
+
 	Article: Q310627
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/310/Q310627/
 	
 	=============================================================================
 	
+
+{% endraw %}

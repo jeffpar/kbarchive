@@ -6,6 +6,8 @@ permalink: /kb/159/Q159926/
 
 ## Q159926: Event ID 3216 - System Error 53 Occurred
 
+{% raw %}
+
 	Article: Q159926
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -51,3 +53,5 @@ permalink: /kb/159/Q159926/
 	
 	=============================================================================
 	
+
+{% endraw %}

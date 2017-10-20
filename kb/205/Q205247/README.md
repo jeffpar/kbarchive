@@ -6,6 +6,8 @@ permalink: /kb/205/Q205247/
 
 ## Q205247: Overriding Automatic WINS and DNS Server Assignment for RAS/DUN
 
+{% raw %}
+
 	Article: Q205247
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -111,3 +113,5 @@ permalink: /kb/205/Q205247/
 	
 	=============================================================================
 	
+
+{% endraw %}

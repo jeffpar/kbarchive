@@ -6,6 +6,8 @@ permalink: /kb/093/Q93230/
 
 ## Q93230: Windows APPC for 16 and 32-Bit Windows
 
+{% raw %}
+
 	Article: Q93230
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -92,3 +94,5 @@ permalink: /kb/093/Q93230/
 	
 	=============================================================================
 	
+
+{% endraw %}

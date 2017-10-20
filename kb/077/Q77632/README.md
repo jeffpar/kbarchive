@@ -6,6 +6,8 @@ permalink: /kb/077/Q77632/
 
 ## Q77632: Trailing Spaces in SET TEMP Returns Error in MS-DOS Shell
 
+{% raw %}
+
 	Article: Q77632
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -78,3 +80,5 @@ permalink: /kb/077/Q77632/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246489/
 
 ## Q246489: Frequent Browser Elections with Windows 95-Based Clients
 
+{% raw %}
+
 	Article: Q246489
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:4.0
@@ -144,3 +146,5 @@ permalink: /kb/246/Q246489/
 	
 	=============================================================================
 	
+
+{% endraw %}

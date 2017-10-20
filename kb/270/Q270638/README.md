@@ -6,6 +6,8 @@ permalink: /kb/270/Q270638/
 
 ## Q270638: BUG: Database Compaction using SQLConfigDataSource fails
 
+{% raw %}
+
 	Article: Q270638
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.0,3.4,3.5,3.6,4.0
@@ -158,3 +160,5 @@ permalink: /kb/270/Q270638/
 	
 	=============================================================================
 	
+
+{% endraw %}

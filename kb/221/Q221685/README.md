@@ -6,6 +6,8 @@ permalink: /kb/221/Q221685/
 
 ## Q221685: FIX: NODEFAULT in Activate of Page Can Cause Fatal Error
 
+{% raw %}
+
 	Article: Q221685
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -85,3 +87,5 @@ permalink: /kb/221/Q221685/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119635/
 
 ## Q119635: PRB: APPEND FROM ARRAY Creates Only One Record
 
+{% raw %}
+
 	Article: Q119635
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; MS-DOS:2.0,2.5x,2.6,2.6a; UNIX:2.6; WINDOWS:2.5x,2.6,2.6a,3.0,3.0b
@@ -58,3 +60,5 @@ permalink: /kb/119/Q119635/
 	
 	=============================================================================
 	
+
+{% endraw %}

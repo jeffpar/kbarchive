@@ -6,6 +6,8 @@ permalink: /kb/136/Q136951/
 
 ## Q136951: Released Client IP Address Shows As Active in DHCP Server
 
+{% raw %}
+
 	Article: Q136951
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -63,3 +65,5 @@ permalink: /kb/136/Q136951/
 	
 	=============================================================================
 	
+
+{% endraw %}

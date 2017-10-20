@@ -6,6 +6,8 @@ permalink: /kb/173/Q173801/
 
 ## Q173801: WD97: Word Count Is Zero When Object Is Selected
 
+{% raw %}
+
 	Article: Q173801
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -60,3 +62,5 @@ permalink: /kb/173/Q173801/
 	
 	=============================================================================
 	
+
+{% endraw %}

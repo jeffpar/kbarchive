@@ -6,6 +6,8 @@ permalink: /kb/248/Q248486/
 
 ## Q248486: XCCC: Mailbox Access Across Domains Is Denied Through OWA
 
+{% raw %}
+
 	Article: Q248486
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -78,3 +80,5 @@ permalink: /kb/248/Q248486/
 	
 	=============================================================================
 	
+
+{% endraw %}

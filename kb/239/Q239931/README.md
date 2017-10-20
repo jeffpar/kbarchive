@@ -6,6 +6,8 @@ permalink: /kb/239/Q239931/
 
 ## Q239931: System Crashes When Unprivileged User Accesses Privileged IOCTL
 
+{% raw %}
+
 	Article: Q239931
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/239/Q239931/
 	
 	=============================================================================
 	
+
+{% endraw %}

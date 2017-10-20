@@ -6,6 +6,8 @@ permalink: /kb/100/Q100400/
 
 ## Q100400: Musical Instruments: Pop-Ups Disappear When You Switch Away
 
+{% raw %}
+
 	Article: Q100400
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -41,3 +43,5 @@ permalink: /kb/100/Q100400/
 	
 	=============================================================================
 	
+
+{% endraw %}

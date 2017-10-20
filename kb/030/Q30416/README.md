@@ -6,6 +6,8 @@ permalink: /kb/030/Q30416/
 
 ## Q30416: FIX: Only First LOCAL Variable Generates CodeView Information
 
+{% raw %}
+
 	Article: Q30416
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -100,3 +102,5 @@ permalink: /kb/030/Q30416/
 	
 	=============================================================================
 	
+
+{% endraw %}

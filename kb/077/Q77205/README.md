@@ -6,6 +6,8 @@ permalink: /kb/077/Q77205/
 
 ## Q77205: SHIFT+UP/DOWN ARROW Combinations Don't Work on Toshiba 5100
 
+{% raw %}
+
 	Article: Q77205
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -78,3 +80,5 @@ permalink: /kb/077/Q77205/
 	
 	=============================================================================
 	
+
+{% endraw %}

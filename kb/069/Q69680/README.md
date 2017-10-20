@@ -6,6 +6,8 @@ permalink: /kb/069/Q69680/
 
 ## Q69680: Packard-Bell Computers and Genius Mice in Windows
 
+{% raw %}
+
 	Article: Q69680
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -48,3 +50,5 @@ permalink: /kb/069/Q69680/
 	
 	=============================================================================
 	
+
+{% endraw %}

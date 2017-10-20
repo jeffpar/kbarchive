@@ -6,6 +6,8 @@ permalink: /kb/158/Q158103/
 
 ## Q158103: GEX: Choppy Sound or Gameplay
 
+{% raw %}
+
 	Article: Q158103
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/158/Q158103/
 	
 	=============================================================================
 	
+
+{% endraw %}

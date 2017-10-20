@@ -6,6 +6,8 @@ permalink: /kb/196/Q196573/
 
 ## Q196573: Application Error in Outlook.exe Using Matrox Millennium
 
+{% raw %}
+
 	Article: Q196573
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0;97
@@ -96,3 +98,5 @@ permalink: /kb/196/Q196573/
 	
 	=============================================================================
 	
+
+{% endraw %}

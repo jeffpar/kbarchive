@@ -6,6 +6,8 @@ permalink: /kb/260/Q260237/
 
 ## Q260237: Visual FoxPro 6.0 Sample: Using a PictureClip Control
 
+{% raw %}
+
 	Article: Q260237
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -88,3 +90,5 @@ permalink: /kb/260/Q260237/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111897/
 
 ## Q111897: PC WSPlus: Files Installed During Schedule+ 1.0a Setup
 
+{% raw %}
+
 	Article: Q111897
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0a
@@ -64,3 +66,5 @@ permalink: /kb/111/Q111897/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/121/Q121272/
 
 ## Q121272: Can No Longer Access .CAL Filename That Includes a Space
 
+{% raw %}
+
 	Article: Q121272
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -72,3 +74,5 @@ permalink: /kb/121/Q121272/
 	
 	=============================================================================
 	
+
+{% endraw %}

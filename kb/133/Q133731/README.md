@@ -6,6 +6,8 @@ permalink: /kb/133/Q133731/
 
 ## Q133731: Error Message: Cannot Run This Version of Windows...
 
+{% raw %}
+
 	Article: Q133731
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/133/Q133731/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/105/Q105888/
 
 ## Q105888: WD97: How to Merge Conditional Number of Records to Same Page
 
+{% raw %}
+
 	Article: Q105888
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -80,14 +82,14 @@ permalink: /kb/105/Q105888/
 	
 	  Employee     Project
 	  {MERGEFIELD Employee}     {MERGEFIELD Project}{set duplicate {if
-	  {MERGEFIELD Check}="1" "off" "on"} }{nextif {mergefield check}=""}{if
+	  {MERGEFIELD Check}="1" "off" "on"}}{nextif {mergefield check}=""}{if
 	  {duplicate}="on" "P
 	  t{MERGEFIELD Project}"}{set duplicate {if {MERGEFIELD Check}="1"
-	  "off" "on"} }{nextif {mergefield check}=""}{if {duplicate}="on" "P
+	  "off" "on"}}{nextif {mergefield check}=""}{if {duplicate}="on" "P
 	  t{MERGEFIELD Project}"}{set duplicate {if {MERGEFIELD Check}="1"
-	  "off" "on"} }{nextif {mergefield check}=""}{if {duplicate}="on" "P
+	  "off" "on"}}{nextif {mergefield check}=""}{if {duplicate}="on" "P
 	  t{MERGEFIELD Project}"}{set duplicate {if {MERGEFIELD Check}="1"
-	  "off" "on"} }{nextif {mergefield check}=""}{if {duplicate}="on" "P
+	  "off" "on"}}{nextif {mergefield check}=""}{if {duplicate}="on" "P
 	  t{MERGEFIELD Project}"}
 	
 	Where "P" represents a paragraph mark that pushes the next Project to a new line,
@@ -121,3 +123,5 @@ permalink: /kb/105/Q105888/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154579/
 
 ## Q154579: Slow TCP/IP Performance When Resuming Large Data Transfer
 
+{% raw %}
+
 	Article: Q154579
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -125,3 +127,5 @@ permalink: /kb/154/Q154579/
 	
 	=============================================================================
 	
+
+{% endraw %}

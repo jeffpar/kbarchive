@@ -6,6 +6,8 @@ permalink: /kb/127/Q127186/
 
 ## Q127186: OLE is Very Slow: Word for Windows NT and Excel for Windows NT
 
+{% raw %}
+
 	Article: Q127186
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/127/Q127186/
 	
 	=============================================================================
 	
+
+{% endraw %}

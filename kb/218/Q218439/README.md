@@ -6,6 +6,8 @@ permalink: /kb/218/Q218439/
 
 ## Q218439: XADM: PerfMon Counters for Monitoring Exchange DB Sessions
 
+{% raw %}
+
 	Article: Q218439
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -105,3 +107,5 @@ permalink: /kb/218/Q218439/
 	
 	=============================================================================
 	
+
+{% endraw %}

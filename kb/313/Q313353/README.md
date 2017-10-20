@@ -6,6 +6,8 @@ permalink: /kb/313/Q313353/
 
 ## Q313353: SMS 2.0 SP3 Is Required to Support Windows XP Clients
 
+{% raw %}
+
 	Article: Q313353
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0
@@ -100,3 +102,5 @@ permalink: /kb/313/Q313353/
 	
 	=============================================================================
 	
+
+{% endraw %}

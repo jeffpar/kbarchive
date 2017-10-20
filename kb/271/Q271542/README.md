@@ -6,6 +6,8 @@ permalink: /kb/271/Q271542/
 
 ## Q271542: XADM: Directory Service Does Not Start with Event ID 1171
 
+{% raw %}
+
 	Article: Q271542
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -84,3 +86,5 @@ permalink: /kb/271/Q271542/
 	
 	=============================================================================
 	
+
+{% endraw %}

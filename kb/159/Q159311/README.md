@@ -6,6 +6,8 @@ permalink: /kb/159/Q159311/
 
 ## Q159311: Instantiating Remote Components in MTS and IIS
 
+{% raw %}
+
 	Article: Q159311
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,4.0
@@ -78,3 +80,5 @@ permalink: /kb/159/Q159311/
 	
 	=============================================================================
 	
+
+{% endraw %}

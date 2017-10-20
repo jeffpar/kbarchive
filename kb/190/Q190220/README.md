@@ -6,6 +6,8 @@ permalink: /kb/190/Q190220/
 
 ## Q190220: PRB: &quot;Invalid Property Value&quot; When You Query MDIChild Property
 
+{% raw %}
+
 	Article: Q190220
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -106,3 +108,5 @@ permalink: /kb/190/Q190220/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157562/
 
 ## Q157562: XCLN: How To Merge Two .PST Files
 
+{% raw %}
+
 	Article: Q157562
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -159,3 +161,5 @@ permalink: /kb/157/Q157562/
 	
 	=============================================================================
 	
+
+{% endraw %}

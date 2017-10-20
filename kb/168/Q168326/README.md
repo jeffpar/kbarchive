@@ -6,6 +6,8 @@ permalink: /kb/168/Q168326/
 
 ## Q168326: HOWTO: Define the Display Size of an MFC ActiveX Control
 
+{% raw %}
+
 	Article: Q168326
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,4.2b,5.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/168/Q168326/
 	
 	=============================================================================
 	
+
+{% endraw %}

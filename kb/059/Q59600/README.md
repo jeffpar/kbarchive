@@ -6,6 +6,8 @@ permalink: /kb/059/Q59600/
 
 ## Q59600: Mac GW: Allowing Multiple Users to Receive Gateway Mail
 
+{% raw %}
+
 	Article: Q59600
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -68,3 +70,5 @@ permalink: /kb/059/Q59600/
 	
 	=============================================================================
 	
+
+{% endraw %}

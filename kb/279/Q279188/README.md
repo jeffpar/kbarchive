@@ -6,6 +6,8 @@ permalink: /kb/279/Q279188/
 
 ## Q279188: FIX: VSS Doesn't Provide Feedback When It Deletes Projects
 
+{% raw %}
+
 	Article: Q279188
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -57,3 +59,5 @@ permalink: /kb/279/Q279188/
 	
 	=============================================================================
 	
+
+{% endraw %}

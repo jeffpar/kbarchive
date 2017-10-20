@@ -6,6 +6,8 @@ permalink: /kb/210/Q210202/
 
 ## Q210202: SMS: Software Metering Servers Not Balancing Licenses Correctly
 
+{% raw %}
+
 	Article: Q210202
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -67,3 +69,5 @@ permalink: /kb/210/Q210202/
 	
 	=============================================================================
 	
+
+{% endraw %}

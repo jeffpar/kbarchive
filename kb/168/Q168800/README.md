@@ -6,6 +6,8 @@ permalink: /kb/168/Q168800/
 
 ## Q168800: INFO: Visual Basic 5.0 Fixes in Visual Studio 97 Service Pack 1
 
+{% raw %}
+
 	Article: Q168800
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 97
@@ -106,3 +108,5 @@ permalink: /kb/168/Q168800/
 	
 	=============================================================================
 	
+
+{% endraw %}

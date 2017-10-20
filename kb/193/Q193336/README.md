@@ -6,6 +6,8 @@ permalink: /kb/193/Q193336/
 
 ## Q193336: HOWTO: Install Crystal Reports for Use in Visual Basic 6.0
 
+{% raw %}
+
 	Article: Q193336
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -92,3 +94,5 @@ permalink: /kb/193/Q193336/
 	
 	=============================================================================
 	
+
+{% endraw %}

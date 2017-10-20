@@ -6,6 +6,8 @@ permalink: /kb/165/Q165916/
 
 ## Q165916: Incorrect Video Memory Amount is Detected for WD90C24a.
 
+{% raw %}
+
 	Article: Q165916
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/165/Q165916/
 	
 	=============================================================================
 	
+
+{% endraw %}

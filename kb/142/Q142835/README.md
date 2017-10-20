@@ -6,6 +6,8 @@ permalink: /kb/142/Q142835/
 
 ## Q142835: BUG: DBCombo Issues Click Event While Scrolling
 
+{% raw %}
+
 	Article: Q142835
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -89,3 +91,5 @@ permalink: /kb/142/Q142835/
 	
 	=============================================================================
 	
+
+{% endraw %}

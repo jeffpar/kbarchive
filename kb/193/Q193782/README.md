@@ -6,6 +6,8 @@ permalink: /kb/193/Q193782/
 
 ## Q193782: XADM: Internet Mail Service Stops with Event IDs 4182, 12800
 
+{% raw %}
+
 	Article: Q193782
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1
@@ -114,3 +116,5 @@ permalink: /kb/193/Q193782/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197807/
 
 ## Q197807: Combat Flight Simulator: How to Import Flight Simulator Scenery
 
+{% raw %}
+
 	Article: Q197807
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -209,3 +211,5 @@ permalink: /kb/197/Q197807/
 	
 	=============================================================================
 	
+
+{% endraw %}

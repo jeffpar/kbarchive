@@ -6,6 +6,8 @@ permalink: /kb/221/Q221225/
 
 ## Q221225: FIX: Calling Method in User Ctrl w/ParamArray Causes Fatal Excep
 
+{% raw %}
+
 	Article: Q221225
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -96,3 +98,5 @@ permalink: /kb/221/Q221225/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137552/
 
 ## Q137552: Monitor Service Generates Event 7005
 
+{% raw %}
+
 	Article: Q137552
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/137/Q137552/
 	
 	=============================================================================
 	
+
+{% endraw %}

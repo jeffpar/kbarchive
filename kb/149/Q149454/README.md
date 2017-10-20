@@ -6,6 +6,8 @@ permalink: /kb/149/Q149454/
 
 ## Q149454: Cannot Access Network When Connected to Dial-Up Server
 
+{% raw %}
+
 	Article: Q149454
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -86,3 +88,5 @@ permalink: /kb/149/Q149454/
 	
 	=============================================================================
 	
+
+{% endraw %}

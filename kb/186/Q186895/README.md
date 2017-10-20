@@ -6,6 +6,8 @@ permalink: /kb/186/Q186895/
 
 ## Q186895: FIX: Custom AppWizard Errors with Applications That Have Help
 
+{% raw %}
+
 	Article: Q186895
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0,
@@ -209,3 +211,5 @@ permalink: /kb/186/Q186895/
 	
 	=============================================================================
 	
+
+{% endraw %}

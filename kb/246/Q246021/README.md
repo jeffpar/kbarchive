@@ -6,6 +6,8 @@ permalink: /kb/246/Q246021/
 
 ## Q246021: HOWTO: Close an Instance of Word from Visual FoxPro Using APIs
 
+{% raw %}
+
 	Article: Q246021
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2000,5.0a,6.0
@@ -72,3 +74,5 @@ permalink: /kb/246/Q246021/
 	
 	=============================================================================
 	
+
+{% endraw %}

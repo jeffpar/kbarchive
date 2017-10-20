@@ -6,6 +6,8 @@ permalink: /kb/193/Q193581/
 
 ## Q193581: HOWTO: Use Archive Wizard to Archive with a Specific Version
 
+{% raw %}
+
 	Article: Q193581
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/193/Q193581/
 	
 	=============================================================================
 	
+
+{% endraw %}

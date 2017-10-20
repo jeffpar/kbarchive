@@ -6,6 +6,8 @@ permalink: /kb/257/Q257551/
 
 ## Q257551: GSNW/CSNW NetWare Banner Page missing Username
 
+{% raw %}
+
 	Article: Q257551
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/257/Q257551/
 	
 	=============================================================================
 	
+
+{% endraw %}

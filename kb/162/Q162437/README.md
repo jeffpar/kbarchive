@@ -6,6 +6,8 @@ permalink: /kb/162/Q162437/
 
 ## Q162437: WD97: File Saved in RTF Has Extra Language Property
 
+{% raw %}
+
 	Article: Q162437
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/162/Q162437/
 	
 	=============================================================================
 	
+
+{% endraw %}

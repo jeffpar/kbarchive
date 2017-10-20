@@ -6,6 +6,8 @@ permalink: /kb/038/Q38319/
 
 ## Q38319: C Setup Gives Error U2155 When Building Libraries
 
+{% raw %}
+
 	Article: Q38319
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -43,3 +45,5 @@ permalink: /kb/038/Q38319/
 	Note: this error can occur in situations other than setting up the
 	compiler. Anytime you pass a directory/file name that contains a
 	hyphen, you can cause this behavior.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/213/Q213241/
 
 ## Q213241: SMS: Software-Metering Server Is Not Fully Uninstalled
 
+{% raw %}
+
 	Article: Q213241
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -73,3 +75,5 @@ permalink: /kb/213/Q213241/
 	
 	=============================================================================
 	
+
+{% endraw %}

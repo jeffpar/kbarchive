@@ -6,6 +6,8 @@ permalink: /kb/112/Q112477/
 
 ## Q112477: _PDRIVER Incorrectly Documented in FoxPro 1.02
 
+{% raw %}
+
 	Article: Q112477
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:1.02
@@ -58,3 +60,5 @@ permalink: /kb/112/Q112477/
 	
 	=============================================================================
 	
+
+{% endraw %}

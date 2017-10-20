@@ -6,6 +6,8 @@ permalink: /kb/239/Q239063/
 
 ## Q239063: XWEB: Information Store Logs 1219 Events When Browsing PFs
 
+{% raw %}
+
 	Article: Q239063
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -61,3 +63,5 @@ permalink: /kb/239/Q239063/
 	
 	=============================================================================
 	
+
+{% endraw %}

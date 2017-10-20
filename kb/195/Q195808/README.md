@@ -6,6 +6,8 @@ permalink: /kb/195/Q195808/
 
 ## Q195808: XCLN: Unexpected Behavior Downloading GAL with Exchange Client
 
+{% raw %}
+
 	Article: Q195808
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -63,3 +65,5 @@ permalink: /kb/195/Q195808/
 	
 	=============================================================================
 	
+
+{% endraw %}

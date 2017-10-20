@@ -6,6 +6,8 @@ permalink: /kb/151/Q151908/
 
 ## Q151908: SYSDIFF /dump Displays Some Registry Data Types Incorrectly
 
+{% raw %}
+
 	Article: Q151908
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/151/Q151908/
 	
 	=============================================================================
 	
+
+{% endraw %}

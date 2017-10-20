@@ -6,6 +6,8 @@ permalink: /kb/059/Q59008/
 
 ## Q59008: Bad Integer Output Using DEF FN, VAL, FOR-NEXT in BASIC 7.00
 
+{% raw %}
+
 	Article: Q59008
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -68,3 +70,5 @@ permalink: /kb/059/Q59008/
 	      PRINT d(i);
 	   NEXT
 	   END
+
+{% endraw %}

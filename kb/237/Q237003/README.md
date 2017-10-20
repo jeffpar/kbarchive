@@ -6,6 +6,8 @@ permalink: /kb/237/Q237003/
 
 ## Q237003: Sessionless Event Creates Session When Running Application
 
+{% raw %}
+
 	Article: Q237003
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,4.0 SP4
@@ -77,3 +79,5 @@ permalink: /kb/237/Q237003/
 	
 	=============================================================================
 	
+
+{% endraw %}

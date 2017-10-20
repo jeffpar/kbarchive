@@ -6,6 +6,8 @@ permalink: /kb/197/Q197661/
 
 ## Q197661: Games Err Msg: Invalid Page Fault in Module Kernel32.dll
 
+{% raw %}
+
 	Article: Q197661
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -89,3 +91,5 @@ permalink: /kb/197/Q197661/
 	
 	=============================================================================
 	
+
+{% endraw %}

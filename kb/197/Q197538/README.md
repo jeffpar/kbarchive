@@ -6,6 +6,8 @@ permalink: /kb/197/Q197538/
 
 ## Q197538: Full-screen DOS Window Is Split with Some Number 9 Video Cards
 
+{% raw %}
+
 	Article: Q197538
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/197/Q197538/
 	
 	=============================================================================
 	
+
+{% endraw %}

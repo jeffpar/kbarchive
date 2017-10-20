@@ -6,6 +6,8 @@ permalink: /kb/145/Q145968/
 
 ## Q145968: WD97: Revision Number/EditTime Incorrect (Word 6.0/95 Export)
 
+{% raw %}
+
 	Article: Q145968
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 1 (SR-1)
@@ -62,3 +64,5 @@ permalink: /kb/145/Q145968/
 	
 	=============================================================================
 	
+
+{% endraw %}

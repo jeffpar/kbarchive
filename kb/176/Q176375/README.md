@@ -6,6 +6,8 @@ permalink: /kb/176/Q176375/
 
 ## Q176375: XFOR: CCMC Shuts Down and Logs Events 82 and 83
 
+{% raw %}
+
 	Article: Q176375
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -71,3 +73,5 @@ permalink: /kb/176/Q176375/
 	
 	=============================================================================
 	
+
+{% endraw %}

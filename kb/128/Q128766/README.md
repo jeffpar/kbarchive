@@ -6,6 +6,8 @@ permalink: /kb/128/Q128766/
 
 ## Q128766: ADT2: Installing ADT Application on Workstation Causes Error
 
+{% raw %}
+
 	Article: Q128766
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -114,3 +116,5 @@ permalink: /kb/128/Q128766/
 	
 	=============================================================================
 	
+
+{% endraw %}

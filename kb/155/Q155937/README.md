@@ -6,6 +6,8 @@ permalink: /kb/155/Q155937/
 
 ## Q155937: FIX: SET COMPATIBLE ON Causes Problems with Crosstab Query
 
+{% raw %}
+
 	Article: Q155937
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -87,3 +89,5 @@ permalink: /kb/155/Q155937/
 	
 	=============================================================================
 	
+
+{% endraw %}

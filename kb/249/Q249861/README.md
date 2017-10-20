@@ -6,6 +6,8 @@ permalink: /kb/249/Q249861/
 
 ## Q249861: XCON: Connector for Novell GroupWise Can't Process NDR
 
+{% raw %}
+
 	Article: Q249861
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/249/Q249861/
 	
 	=============================================================================
 	
+
+{% endraw %}

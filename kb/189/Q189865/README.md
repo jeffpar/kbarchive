@@ -6,6 +6,8 @@ permalink: /kb/189/Q189865/
 
 ## Q189865: DOC: Form's Circle Method Accepts Negative Aspect Ratio
 
+{% raw %}
+
 	Article: Q189865
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -56,3 +58,5 @@ permalink: /kb/189/Q189865/
 	
 	=============================================================================
 	
+
+{% endraw %}

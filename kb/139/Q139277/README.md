@@ -6,6 +6,8 @@ permalink: /kb/139/Q139277/
 
 ## Q139277: Windows NT Does Not Recognize Wearnes CDD-120 CD-ROM Drive
 
+{% raw %}
+
 	Article: Q139277
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -62,3 +64,5 @@ permalink: /kb/139/Q139277/
 	
 	=============================================================================
 	
+
+{% endraw %}

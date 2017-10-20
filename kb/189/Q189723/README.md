@@ -6,6 +6,8 @@ permalink: /kb/189/Q189723/
 
 ## Q189723: SMS: Audit Fails on Win95 or Win98 Clients with FAT32 Partitions
 
+{% raw %}
+
 	Article: Q189723
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -54,3 +56,5 @@ permalink: /kb/189/Q189723/
 	
 	=============================================================================
 	
+
+{% endraw %}

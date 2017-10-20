@@ -6,6 +6,8 @@ permalink: /kb/236/Q236459/
 
 ## Q236459: XFOR: Meeting Time Off One Hour When Sent by GroupWise Connector
 
+{% raw %}
+
 	Article: Q236459
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/236/Q236459/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/297/Q297269/
 
 ## Q297269: XCON: Error Message When Sending Moderated Newsgroup Messages
 
+{% raw %}
+
 	Article: Q297269
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.5
@@ -91,3 +93,5 @@ permalink: /kb/297/Q297269/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61438/
 
 ## Q61438: Slow Printing from BASIC to Network Printer Under OS/2
 
+{% raw %}
+
 	Article: Q61438
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -51,3 +53,5 @@ permalink: /kb/061/Q61438/
 	spooler, and therefore, the computer must wait for the printer to
 	print each line. Also, a similar C routine prints at normal speed
 	under OS/2.
+
+{% endraw %}

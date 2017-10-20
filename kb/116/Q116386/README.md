@@ -6,6 +6,8 @@ permalink: /kb/116/Q116386/
 
 ## Q116386: ADT/ODE: Minimizing All Objects Sets Focus to Database Window
 
+{% raw %}
+
 	Article: Q116386
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0,7.0,97
@@ -122,3 +124,5 @@ permalink: /kb/116/Q116386/
 	
 	=============================================================================
 	
+
+{% endraw %}

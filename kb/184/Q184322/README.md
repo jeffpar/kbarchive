@@ -6,6 +6,8 @@ permalink: /kb/184/Q184322/
 
 ## Q184322: BUG: Error &quot;438&quot; When Implementing Base Class in ActiveX Exe
 
+{% raw %}
+
 	Article: Q184322
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -178,3 +180,5 @@ permalink: /kb/184/Q184322/
 	
 	=============================================================================
 	
+
+{% endraw %}

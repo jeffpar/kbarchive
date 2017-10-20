@@ -6,6 +6,8 @@ permalink: /kb/108/Q108398/
 
 ## Q108398: Art Gallery: Animations Play Incorrectly on Second Screen
 
+{% raw %}
+
 	Article: Q108398
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -59,3 +61,5 @@ permalink: /kb/108/Q108398/
 	
 	=============================================================================
 	
+
+{% endraw %}

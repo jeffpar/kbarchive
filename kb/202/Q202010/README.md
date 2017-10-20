@@ -6,6 +6,8 @@ permalink: /kb/202/Q202010/
 
 ## Q202010: SMS: &quot;Out of Environment Space&quot; Error on Windows 95 Clients
 
+{% raw %}
+
 	Article: Q202010
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -76,3 +78,5 @@ permalink: /kb/202/Q202010/
 	
 	=============================================================================
 	
+
+{% endraw %}

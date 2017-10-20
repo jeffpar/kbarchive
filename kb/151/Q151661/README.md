@@ -6,6 +6,8 @@ permalink: /kb/151/Q151661/
 
 ## Q151661: Encarta World Atlas: How To Disable Cosmo In The Registry
 
+{% raw %}
+
 	Article: Q151661
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -78,3 +80,5 @@ permalink: /kb/151/Q151661/
 	
 	=============================================================================
 	
+
+{% endraw %}

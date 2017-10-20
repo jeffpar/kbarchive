@@ -6,6 +6,8 @@ permalink: /kb/185/Q185107/
 
 ## Q185107: XFOR: Character Set Translation Issues with VAX Mail Systems
 
+{% raw %}
+
 	Article: Q185107
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/185/Q185107/
 	
 	=============================================================================
 	
+
+{% endraw %}

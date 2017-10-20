@@ -6,6 +6,8 @@ permalink: /kb/196/Q196416/
 
 ## Q196416: XADM: Move Server Wizard Displays Setup Icons in Toolbar
 
+{% raw %}
+
 	Article: Q196416
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -42,3 +44,5 @@ permalink: /kb/196/Q196416/
 	
 	=============================================================================
 	
+
+{% endraw %}

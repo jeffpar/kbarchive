@@ -6,6 +6,8 @@ permalink: /kb/142/Q142269/
 
 ## Q142269: Garbled Graphics Output on Shared PostScript Printer
 
+{% raw %}
+
 	Article: Q142269
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11,3.5,3.51,4.0
@@ -63,3 +65,5 @@ permalink: /kb/142/Q142269/
 	
 	=============================================================================
 	
+
+{% endraw %}

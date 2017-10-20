@@ -6,6 +6,8 @@ permalink: /kb/176/Q176756/
 
 ## Q176756: How to Install the Internet Explorer Active Desktop
 
+{% raw %}
+
 	Article: Q176756
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.51,4.0
@@ -71,3 +73,5 @@ permalink: /kb/176/Q176756/
 	
 	=============================================================================
 	
+
+{% endraw %}

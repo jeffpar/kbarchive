@@ -6,6 +6,8 @@ permalink: /kb/158/Q158581/
 
 ## Q158581: Icon Position Not Stored When Using Roaming Profiles
 
+{% raw %}
+
 	Article: Q158581
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/158/Q158581/
 	
 	=============================================================================
 	
+
+{% endraw %}

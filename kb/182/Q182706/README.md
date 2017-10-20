@@ -6,6 +6,8 @@ permalink: /kb/182/Q182706/
 
 ## Q182706: Application Exception in Snaexp.exe After Deleting LUA Pool
 
+{% raw %}
+
 	Article: Q182706
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -85,3 +87,5 @@ permalink: /kb/182/Q182706/
 	
 	=============================================================================
 	
+
+{% endraw %}

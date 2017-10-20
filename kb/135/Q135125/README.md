@@ -6,6 +6,8 @@ permalink: /kb/135/Q135125/
 
 ## Q135125: German File Transfer Window on Clients Has English Text
 
+{% raw %}
+
 	Article: Q135125
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -53,3 +55,5 @@ permalink: /kb/135/Q135125/
 	
 	=============================================================================
 	
+
+{% endraw %}

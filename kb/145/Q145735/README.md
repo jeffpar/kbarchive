@@ -6,6 +6,8 @@ permalink: /kb/145/Q145735/
 
 ## Q145735: BUG: SQL Counters Not Available Under Integrated Security
 
+{% raw %}
+
 	Article: Q145735
 	Product(s): Microsoft Windows NT
 	Version(s): 6.00 3.5 3.51
@@ -77,3 +79,5 @@ permalink: /kb/145/Q145735/
 	
 	=============================================================================
 	
+
+{% endraw %}

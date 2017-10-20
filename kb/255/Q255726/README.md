@@ -6,6 +6,8 @@ permalink: /kb/255/Q255726/
 
 ## Q255726: PRB: Error 429 Occurs When You Use the Package &amp; Deployment Wiz.
 
+{% raw %}
+
 	Article: Q255726
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -124,3 +126,5 @@ permalink: /kb/255/Q255726/
 	
 	=============================================================================
 	
+
+{% endraw %}

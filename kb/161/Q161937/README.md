@@ -6,6 +6,8 @@ permalink: /kb/161/Q161937/
 
 ## Q161937: XCON: IMC Stops Processing Mail on Alpha Platform
 
+{% raw %}
+
 	Article: Q161937
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/161/Q161937/
 	
 	=============================================================================
 	
+
+{% endraw %}

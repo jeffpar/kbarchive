@@ -6,6 +6,8 @@ permalink: /kb/082/Q82436/
 
 ## Q82436: DynaComm Elite Version 3.2 Hangs in Standard Mode
 
+{% raw %}
+
 	Article: Q82436
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/082/Q82436/
 	
 	=============================================================================
 	
+
+{% endraw %}

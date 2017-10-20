@@ -6,6 +6,8 @@ permalink: /kb/300/Q300987/
 
 ## Q300987: Windows NT 4.0 Winbond Super I/O Floppy Disk Controller Problems
 
+{% raw %}
+
 	Article: Q300987
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6a
@@ -107,3 +109,5 @@ permalink: /kb/300/Q300987/
 	
 	=============================================================================
 	
+
+{% endraw %}

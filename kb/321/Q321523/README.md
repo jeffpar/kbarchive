@@ -6,6 +6,8 @@ permalink: /kb/321/Q321523/
 
 ## Q321523: TN3270 Clients May Receive Error From Host When Pressing AID Key
 
+{% raw %}
+
 	Article: Q321523
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3,4.0 SP4
@@ -181,3 +183,5 @@ permalink: /kb/321/Q321523/
 	
 	=============================================================================
 	
+
+{% endraw %}

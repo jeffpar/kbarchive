@@ -6,6 +6,8 @@ permalink: /kb/087/Q87242/
 
 ## Q87242: Drive Mapped at MS-DOS Prompt Not Recognized in File Manager
 
+{% raw %}
+
 	Article: Q87242
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/087/Q87242/
 	
 	=============================================================================
 	
+
+{% endraw %}

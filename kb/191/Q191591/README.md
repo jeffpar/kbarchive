@@ -6,6 +6,8 @@ permalink: /kb/191/Q191591/
 
 ## Q191591: BUG: Meaningless or Undocumented Errors in Visual FoxPro 6.0
 
+{% raw %}
+
 	Article: Q191591
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -86,3 +88,5 @@ permalink: /kb/191/Q191591/
 	
 	=============================================================================
 	
+
+{% endraw %}

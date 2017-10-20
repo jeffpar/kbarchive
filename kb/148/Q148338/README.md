@@ -6,6 +6,8 @@ permalink: /kb/148/Q148338/
 
 ## Q148338: Error Message: Microsoft Voice Was Left in an Unstable State
 
+{% raw %}
+
 	Article: Q148338
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -67,3 +69,5 @@ permalink: /kb/148/Q148338/
 	
 	=============================================================================
 	
+
+{% endraw %}

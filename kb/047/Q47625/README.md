@@ -6,6 +6,8 @@ permalink: /kb/047/Q47625/
 
 ## Q47625: Trace Stops on Line Following a Loop Before Loop Is Done
 
+{% raw %}
+
 	Article: Q47625
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -52,3 +54,5 @@ permalink: /kb/047/Q47625/
 	
 	    printf("Count is %d\n",count);
 	}
+
+{% endraw %}

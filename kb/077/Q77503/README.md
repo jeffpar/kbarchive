@@ -6,6 +6,8 @@ permalink: /kb/077/Q77503/
 
 ## Q77503: Installing Microsoft Windows 3.0 Class-In-A-Box Data Files
 
+{% raw %}
+
 	Article: Q77503
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -60,3 +62,5 @@ permalink: /kb/077/Q77503/
 	
 	=============================================================================
 	
+
+{% endraw %}

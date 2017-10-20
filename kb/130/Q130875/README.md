@@ -6,6 +6,8 @@ permalink: /kb/130/Q130875/
 
 ## Q130875: Troubleshooting MS Network Client 3.0 and DHCP
 
+{% raw %}
+
 	Article: Q130875
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0
@@ -127,3 +129,5 @@ permalink: /kb/130/Q130875/
 	
 	=============================================================================
 	
+
+{% endraw %}

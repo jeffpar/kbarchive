@@ -6,6 +6,8 @@ permalink: /kb/184/Q184232/
 
 ## Q184232: DCOMCNFG Saves Incorrect Display Name in Services
 
+{% raw %}
+
 	Article: Q184232
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/184/Q184232/
 	
 	=============================================================================
 	
+
+{% endraw %}

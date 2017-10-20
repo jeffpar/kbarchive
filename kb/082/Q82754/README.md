@@ -6,6 +6,8 @@ permalink: /kb/082/Q82754/
 
 ## Q82754: How Windows 3.1 Performs Font Mapping (True Type)
 
+{% raw %}
+
 	Article: Q82754
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -91,3 +93,5 @@ permalink: /kb/082/Q82754/
 	
 	=============================================================================
 	
+
+{% endraw %}

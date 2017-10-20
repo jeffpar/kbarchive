@@ -6,6 +6,8 @@ permalink: /kb/315/Q315456/
 
 ## Q315456: FP: Error: Unable to Open Jet Temporary Key Connecting to DB
 
+{% raw %}
+
 	Article: Q315456
 	Product(s): Word Front Page
 	Version(s): 
@@ -150,3 +152,5 @@ permalink: /kb/315/Q315456/
 	
 	=============================================================================
 	
+
+{% endraw %}

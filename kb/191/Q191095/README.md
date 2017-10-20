@@ -6,6 +6,8 @@ permalink: /kb/191/Q191095/
 
 ## Q191095: BUG: Error When Attempting to Update Included Files in PDW
 
+{% raw %}
+
 	Article: Q191095
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -163,3 +165,5 @@ permalink: /kb/191/Q191095/
 	
 	=============================================================================
 	
+
+{% endraw %}

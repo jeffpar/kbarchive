@@ -6,6 +6,8 @@ permalink: /kb/063/Q63834/
 
 ## Q63834: How to LINK PROISAMD.LIB to .EXE Even If SETUP &quot;ISAM in TSR&quot;
 
+{% raw %}
+
 	Article: Q63834
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.10
@@ -105,3 +107,5 @@ permalink: /kb/063/Q63834/
 	OPEN "ISAMFILE" FOR ISAM test "table" AS #1
 	CLOSE #1
 	END
+
+{% endraw %}

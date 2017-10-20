@@ -6,6 +6,8 @@ permalink: /kb/152/Q152160/
 
 ## Q152160: Disk Administrator Cannot Always Save Disk Configuration
 
+{% raw %}
+
 	Article: Q152160
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.10,3.50,3.51
@@ -119,3 +121,5 @@ permalink: /kb/152/Q152160/
 	
 	=============================================================================
 	
+
+{% endraw %}

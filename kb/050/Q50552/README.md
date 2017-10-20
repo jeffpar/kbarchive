@@ -6,6 +6,8 @@ permalink: /kb/050/Q50552/
 
 ## Q50552: QB.EXE Hangs If BACKSPACE after IF GOTO Syntax (with No THEN)
 
+{% raw %}
+
 	Article: Q50552
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -34,3 +36,5 @@ permalink: /kb/050/Q50552/
 	While the cursor is in the column beneath the "I" in the "IF"
 	statement (the first column), press the BACKSPACE key to hang the
 	machine.
+
+{% endraw %}

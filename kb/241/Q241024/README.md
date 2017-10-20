@@ -6,6 +6,8 @@ permalink: /kb/241/Q241024/
 
 ## Q241024: Slow File Access from Macintosh Client on Windows NT Server
 
+{% raw %}
+
 	Article: Q241024
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -135,3 +137,5 @@ permalink: /kb/241/Q241024/
 	
 	=============================================================================
 	
+
+{% endraw %}

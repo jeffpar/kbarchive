@@ -6,6 +6,8 @@ permalink: /kb/241/Q241933/
 
 ## Q241933: PRB: Unsupported Automation Type Compile Error
 
+{% raw %}
+
 	Article: Q241933
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -143,3 +145,5 @@ permalink: /kb/241/Q241933/
 	
 	=============================================================================
 	
+
+{% endraw %}

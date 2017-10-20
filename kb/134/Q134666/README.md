@@ -6,6 +6,8 @@ permalink: /kb/134/Q134666/
 
 ## Q134666: MSN: Changing Swapfile Size May Cause Page Fault Error
 
+{% raw %}
+
 	Article: Q134666
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -65,3 +67,5 @@ permalink: /kb/134/Q134666/
 	
 	=============================================================================
 	
+
+{% endraw %}

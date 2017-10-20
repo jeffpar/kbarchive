@@ -6,6 +6,8 @@ permalink: /kb/057/Q57705/
 
 ## Q57705: Mgrep Can Skip Occurrences of Pattern When Using Mgreplist
 
+{% raw %}
+
 	Article: Q57705
 	Product(s): See article
 	Version(s): 1.02   | 1.02
@@ -44,3 +46,5 @@ permalink: /kb/057/Q57705/
 	occurrence of "include" is found. Also, if you view the <compile>
 	pseudo file it will only contain a list every other occurrence of
 	"include".
+
+{% endraw %}

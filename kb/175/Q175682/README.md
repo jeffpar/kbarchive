@@ -6,6 +6,8 @@ permalink: /kb/175/Q175682/
 
 ## Q175682: PRB: VFP Crashes When Working With Top-Level &amp; Child Forms
 
+{% raw %}
+
 	Article: Q175682
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -146,3 +148,5 @@ permalink: /kb/175/Q175682/
 	
 	=============================================================================
 	
+
+{% endraw %}

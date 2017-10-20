@@ -6,6 +6,8 @@ permalink: /kb/137/Q137126/
 
 ## Q137126: DOC: README.HLP Contains Incorrect Language Reference Info
 
+{% raw %}
+
 	Article: Q137126
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -41,3 +43,5 @@ permalink: /kb/137/Q137126/
 	
 	=============================================================================
 	
+
+{% endraw %}

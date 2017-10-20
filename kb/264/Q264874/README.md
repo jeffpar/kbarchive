@@ -6,6 +6,8 @@ permalink: /kb/264/Q264874/
 
 ## Q264874: WD97: Formula Calculates to Zero When You Use Currency Symbol
 
+{% raw %}
+
 	Article: Q264874
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -147,3 +149,5 @@ permalink: /kb/264/Q264874/
 	
 	=============================================================================
 	
+
+{% endraw %}

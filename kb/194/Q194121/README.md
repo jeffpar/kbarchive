@@ -6,6 +6,8 @@ permalink: /kb/194/Q194121/
 
 ## Q194121: XADM: Update DLs When Their Expansion Server is Moved
 
+{% raw %}
+
 	Article: Q194121
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -48,3 +50,5 @@ permalink: /kb/194/Q194121/
 	
 	=============================================================================
 	
+
+{% endraw %}

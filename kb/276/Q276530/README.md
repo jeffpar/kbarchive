@@ -6,6 +6,8 @@ permalink: /kb/276/Q276530/
 
 ## Q276530: Golf 2001: Golf Quits Unexpectedly After the Splash Screen
 
+{% raw %}
+
 	Article: Q276530
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/276/Q276530/
 	
 	=============================================================================
 	
+
+{% endraw %}

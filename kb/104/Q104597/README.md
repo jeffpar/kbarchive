@@ -6,6 +6,8 @@ permalink: /kb/104/Q104597/
 
 ## Q104597: Pan Chinese Characters Appear as ASCII Text
 
+{% raw %}
+
 	Article: Q104597
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/104/Q104597/
 	
 	=============================================================================
 	
+
+{% endraw %}

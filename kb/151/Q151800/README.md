@@ -6,6 +6,8 @@ permalink: /kb/151/Q151800/
 
 ## Q151800: Err Msg: Windows Disk Compression Is Incompatible...
 
+{% raw %}
+
 	Article: Q151800
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -71,3 +73,5 @@ permalink: /kb/151/Q151800/
 	
 	=============================================================================
 	
+
+{% endraw %}

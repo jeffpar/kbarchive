@@ -6,6 +6,8 @@ permalink: /kb/262/Q262342/
 
 ## Q262342: SMS: Setup May Not Succeed When Upgrading During Table Indexing
 
+{% raw %}
+
 	Article: Q262342
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -60,3 +62,5 @@ permalink: /kb/262/Q262342/
 	
 	=============================================================================
 	
+
+{% endraw %}

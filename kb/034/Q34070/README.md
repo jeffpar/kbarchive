@@ -6,6 +6,8 @@ permalink: /kb/034/Q34070/
 
 ## Q34070: Converting from IEEE to MS binary format
 
+{% raw %}
+
 	Article: Q34070
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 | 5.10
@@ -33,3 +35,5 @@ permalink: /kb/034/Q34070/
 	              format to MS binary format
 	dmsbintoieee: Converts a double precision number in MS binary
 	              format to IEEE format
+
+{% endraw %}

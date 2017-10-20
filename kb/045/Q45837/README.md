@@ -6,6 +6,8 @@ permalink: /kb/045/Q45837/
 
 ## Q45837: QB 4.50 Help Incorrectly Displays Context Strings As Titles
 
+{% raw %}
+
 	Article: Q45837
 	Product(s): See article
 	Version(s): 4.50
@@ -59,3 +61,5 @@ permalink: /kb/045/Q45837/
 	interprets the line correctly (as a context), so it is not possible to
 	alter the context string (by padding an extra character, for example)
 	and still have the help file work properly.
+
+{% endraw %}

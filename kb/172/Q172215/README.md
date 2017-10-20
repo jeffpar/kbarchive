@@ -6,6 +6,8 @@ permalink: /kb/172/Q172215/
 
 ## Q172215: How to Force 128-bit Data Encryption for RAS
 
+{% raw %}
+
 	Article: Q172215
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0
@@ -116,3 +118,5 @@ permalink: /kb/172/Q172215/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85195/
 
 ## Q85195: PC Win: System Requirements for Mail for Windows
 
+{% raw %}
+
 	Article: Q85195
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -44,3 +46,5 @@ permalink: /kb/085/Q85195/
 	
 	=============================================================================
 	
+
+{% endraw %}

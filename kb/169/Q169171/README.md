@@ -6,6 +6,8 @@ permalink: /kb/169/Q169171/
 
 ## Q169171: Long PATH Environment Variable Causes 16-bit Apps to Hang
 
+{% raw %}
+
 	Article: Q169171
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -99,3 +101,5 @@ permalink: /kb/169/Q169171/
 	
 	=============================================================================
 	
+
+{% endraw %}

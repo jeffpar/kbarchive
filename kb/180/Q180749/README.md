@@ -6,6 +6,8 @@ permalink: /kb/180/Q180749/
 
 ## Q180749: BUG: Menu Shortcuts May Not Be Disabled with Form
 
+{% raw %}
+
 	Article: Q180749
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/180/Q180749/
 	
 	=============================================================================
 	
+
+{% endraw %}

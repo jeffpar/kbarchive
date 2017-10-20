@@ -6,6 +6,8 @@ permalink: /kb/278/Q278242/
 
 ## Q278242: DB2OLEDB Provider Incorrectly Maps Isolation Levels
 
+{% raw %}
+
 	Article: Q278242
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3
@@ -57,3 +59,5 @@ permalink: /kb/278/Q278242/
 	
 	=============================================================================
 	
+
+{% endraw %}

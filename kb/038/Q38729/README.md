@@ -6,6 +6,8 @@ permalink: /kb/038/Q38729/
 
 ## Q38729: Mixing Old Declarations with Prototypes Causes Passing Errors
 
+{% raw %}
+
 	Article: Q38729
 	Product(s): See article
 	Version(s): 5.10
@@ -73,3 +75,5 @@ permalink: /kb/038/Q38729/
 	
 	As a result, you passed floats to a function that was expecting
 	doubles.
+
+{% endraw %}

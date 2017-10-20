@@ -6,6 +6,8 @@ permalink: /kb/181/Q181086/
 
 ## Q181086: XCLN: Err Msg: The MS Exchange Directory Service Could Not Be...
 
+{% raw %}
+
 	Article: Q181086
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/181/Q181086/
 	
 	=============================================================================
 	
+
+{% endraw %}

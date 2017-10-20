@@ -6,6 +6,8 @@ permalink: /kb/195/Q195573/
 
 ## Q195573: WD97: Word Doesn't Propose Correct &quot;Address To&quot;
 
+{% raw %}
+
 	Article: Q195573
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -100,3 +102,5 @@ permalink: /kb/195/Q195573/
 	
 	=============================================================================
 	
+
+{% endraw %}

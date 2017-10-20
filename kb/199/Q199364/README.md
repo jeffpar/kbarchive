@@ -6,6 +6,8 @@ permalink: /kb/199/Q199364/
 
 ## Q199364: SMS: SQL Server Error 1105 - Tempdb Is Full
 
+{% raw %}
+
 	Article: Q199364
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,6.5
@@ -72,3 +74,5 @@ permalink: /kb/199/Q199364/
 	
 	=============================================================================
 	
+
+{% endraw %}

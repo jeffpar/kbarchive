@@ -6,6 +6,8 @@ permalink: /kb/137/Q137821/
 
 ## Q137821: Removing Desktop Themes May Remove Fonts
 
+{% raw %}
+
 	Article: Q137821
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -74,3 +76,5 @@ permalink: /kb/137/Q137821/
 	
 	=============================================================================
 	
+
+{% endraw %}

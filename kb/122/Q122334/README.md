@@ -6,6 +6,8 @@ permalink: /kb/122/Q122334/
 
 ## Q122334: FIX: Dependencies Not Generated for Files w/Lines Ending in LF
 
+{% raw %}
+
 	Article: Q122334
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -60,3 +62,5 @@ permalink: /kb/122/Q122334/
 	
 	=============================================================================
 	
+
+{% endraw %}

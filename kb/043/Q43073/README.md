@@ -6,6 +6,8 @@ permalink: /kb/043/Q43073/
 
 ## Q43073: The Function fopen Accepts Filenames with Embedded Spaces
 
+{% raw %}
+
 	Article: Q43073
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -34,3 +36,5 @@ permalink: /kb/043/Q43073/
 	However, the creation of this file could cause some difficulties under
 	DOS. The simplest way to delete such a file would be "del *.dat"
 	(without the quotation marks).
+
+{% endraw %}

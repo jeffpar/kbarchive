@@ -6,6 +6,8 @@ permalink: /kb/187/Q187165/
 
 ## Q187165: License Manager Issued to Field Does Not Reflect Name Change
 
+{% raw %}
+
 	Article: Q187165
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -47,3 +49,5 @@ permalink: /kb/187/Q187165/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155584/
 
 ## Q155584: PRB: Files Missing or Not Displayed in GUI Interface
 
+{% raw %}
+
 	Article: Q155584
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/155/Q155584/
 	
 	=============================================================================
 	
+
+{% endraw %}

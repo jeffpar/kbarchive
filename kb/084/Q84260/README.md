@@ -6,6 +6,8 @@ permalink: /kb/084/Q84260/
 
 ## Q84260: Printing Problems on an Okidata ML 380 Under Windows 3.1
 
+{% raw %}
+
 	Article: Q84260
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/084/Q84260/
 	
 	=============================================================================
 	
+
+{% endraw %}

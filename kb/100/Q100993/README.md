@@ -6,6 +6,8 @@ permalink: /kb/100/Q100993/
 
 ## Q100993: HOWTO: Create Additional Views with CreateNewFrame() Function
 
+{% raw %}
+
 	Article: Q100993
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,5.0,6.0
@@ -120,3 +122,5 @@ permalink: /kb/100/Q100993/
 	
 	=============================================================================
 	
+
+{% endraw %}

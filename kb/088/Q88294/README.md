@@ -6,6 +6,8 @@ permalink: /kb/088/Q88294/
 
 ## Q88294: PRB: Screen Generator Causes &quot;File Not Found&quot; Error
 
+{% raw %}
+
 	Article: Q88294
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -61,3 +63,5 @@ permalink: /kb/088/Q88294/
 	
 	=============================================================================
 	
+
+{% endraw %}

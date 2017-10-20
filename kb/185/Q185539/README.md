@@ -6,6 +6,8 @@ permalink: /kb/185/Q185539/
 
 ## Q185539: HOWTO: Create a Web Aware UserControl
 
+{% raw %}
+
 	Article: Q185539
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/185/Q185539/
 	
 	=============================================================================
 	
+
+{% endraw %}

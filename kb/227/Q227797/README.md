@@ -6,6 +6,8 @@ permalink: /kb/227/Q227797/
 
 ## Q227797: Offline Logon Servers Continue to Show Errors in Site Status
 
+{% raw %}
+
 	Article: Q227797
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,2.0
@@ -73,3 +75,5 @@ permalink: /kb/227/Q227797/
 	
 	=============================================================================
 	
+
+{% endraw %}

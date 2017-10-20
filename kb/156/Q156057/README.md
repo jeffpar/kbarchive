@@ -6,6 +6,8 @@ permalink: /kb/156/Q156057/
 
 ## Q156057: PRB: EXE with Included CONFIG.FPW Does Not Allow -C Option
 
+{% raw %}
+
 	Article: Q156057
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -117,3 +119,5 @@ permalink: /kb/156/Q156057/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/030/Q30579/
 
 ## Q30579: Predefined Text Macros Are Case Sensitive
 
+{% raw %}
+
 	Article: Q30579
 	Product(s): See article
 	Version(s): 5.10
@@ -22,3 +24,5 @@ permalink: /kb/030/Q30579/
 	
 	   This convention does not apply to the predefined equates used with
 	segment directives, such as the equate @curseg.
+
+{% endraw %}

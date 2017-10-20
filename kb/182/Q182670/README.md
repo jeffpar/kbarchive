@@ -6,6 +6,8 @@ permalink: /kb/182/Q182670/
 
 ## Q182670: System Default Locale is Changed When Administrator Logs On
 
+{% raw %}
+
 	Article: Q182670
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 1.0,2.0,3.1,3.5,3.51,4.0
@@ -63,3 +65,5 @@ permalink: /kb/182/Q182670/
 	
 	=============================================================================
 	
+
+{% endraw %}

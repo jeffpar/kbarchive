@@ -6,6 +6,8 @@ permalink: /kb/133/Q133132/
 
 ## Q133132: Suspend Mode Causes Network Transfer Problems on ZNote-Flex
 
+{% raw %}
+
 	Article: Q133132
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/133/Q133132/
 	
 	=============================================================================
 	
+
+{% endraw %}

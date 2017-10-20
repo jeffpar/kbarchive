@@ -6,6 +6,8 @@ permalink: /kb/131/Q131993/
 
 ## Q131993: PRB: DDX Displays Float/Double in Exponential Format
 
+{% raw %}
+
 	Article: Q131993
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -124,9 +126,9 @@ permalink: /kb/131/Q131993/
 	  void CDlgfloatView::DoDataExchange(CDataExchange* pDX)
 	  {
 	      CFormView::DoDataExchange(pDX);
-	      //{ {AFX_DATA_MAP(CDlgfloatView)
+	      //{{AFX_DATA_MAP(CDlgfloatView)
 	      DDX_MyFloatText(pDX, IDC_EDIT1, m_eFloat);
-	      //} }AFX_DATA_MAP
+	      //}}AFX_DATA_MAP
 	  }
 	
 	  //............
@@ -286,10 +288,10 @@ permalink: /kb/131/Q131993/
 	  void CDlgfloatView::DoDataExchange(CDataExchange* pDX)
 	  {
 	      CFormView::DoDataExchange(pDX);
-	      //{ {AFX_DATA_MAP(CDlgfloatView)
+	      //{{AFX_DATA_MAP(CDlgfloatView)
 	      DDX_MyFloatText(pDX, IDC_EDIT1, m_eFloat);
 	      DDX_MyDoubleText(pDX, IDC_EDIT2, m_eDouble);
-	      //} }AFX_DATA_MAP
+	      //}}AFX_DATA_MAP
 	  }
 	
 	  //............
@@ -356,3 +358,5 @@ permalink: /kb/131/Q131993/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221785/
 
 ## Q221785: Encarta: Error Messages Displayed While Setup Updates Computer
 
+{% raw %}
+
 	Article: Q221785
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -93,3 +95,5 @@ permalink: /kb/221/Q221785/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160554/
 
 ## Q160554: Updated DAO Redistributable Components
 
+{% raw %}
+
 	Article: Q160554
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.2; winnt:4.0,4.1,4.2
@@ -107,3 +109,5 @@ permalink: /kb/160/Q160554/
 	
 	=============================================================================
 	
+
+{% endraw %}

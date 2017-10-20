@@ -6,6 +6,8 @@ permalink: /kb/042/Q42942/
 
 ## Q42942: Dump Command on Arrays in FORTRAN Gives Syntax Error
 
+{% raw %}
+
 	Article: Q42942
 	Product(s): See article
 	Version(s): 1.10 2.20 | 2.20
@@ -42,3 +44,5 @@ permalink: /kb/042/Q42942/
 	Microsoft has confirmed this to be a problem in Versions 2.20 and
 	2.30. We are researching this problem and will post new information as
 	it becomes available.
+
+{% endraw %}

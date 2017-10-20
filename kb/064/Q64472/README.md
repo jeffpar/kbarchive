@@ -6,6 +6,8 @@ permalink: /kb/064/Q64472/
 
 ## Q64472: PostScript Soft Fonts Download on Each Page of Document
 
+{% raw %}
+
 	Article: Q64472
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/064/Q64472/
 	
 	=============================================================================
 	
+
+{% endraw %}

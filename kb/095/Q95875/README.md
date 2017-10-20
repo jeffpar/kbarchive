@@ -6,6 +6,8 @@ permalink: /kb/095/Q95875/
 
 ## Q95875: WFWG Err Msg: &quot;No Response from File Server&quot; with ROUTE.COM
 
+{% raw %}
+
 	Article: Q95875
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -53,3 +55,5 @@ permalink: /kb/095/Q95875/
 	
 	=============================================================================
 	
+
+{% endraw %}

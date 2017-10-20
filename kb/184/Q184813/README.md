@@ -6,6 +6,8 @@ permalink: /kb/184/Q184813/
 
 ## Q184813: BUG: Windows 95 Clients Cannot View Server Using Net View
 
+{% raw %}
+
 	Article: Q184813
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -59,3 +61,5 @@ permalink: /kb/184/Q184813/
 	
 	=============================================================================
 	
+
+{% endraw %}

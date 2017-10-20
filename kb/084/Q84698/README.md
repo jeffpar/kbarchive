@@ -6,6 +6,8 @@ permalink: /kb/084/Q84698/
 
 ## Q84698: Windows Err Msg: Directory &lt;dir&gt; Does Not Exist...
 
+{% raw %}
+
 	Article: Q84698
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/084/Q84698/
 	
 	=============================================================================
 	
+
+{% endraw %}

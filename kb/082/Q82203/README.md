@@ -6,6 +6,8 @@ permalink: /kb/082/Q82203/
 
 ## Q82203: SMARTDrive 4.0 Design Overview
 
+{% raw %}
+
 	Article: Q82203
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -209,3 +211,5 @@ permalink: /kb/082/Q82203/
 	
 	=============================================================================
 	
+
+{% endraw %}

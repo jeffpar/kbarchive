@@ -6,6 +6,8 @@ permalink: /kb/106/Q106412/
 
 ## Q106412: MSAV: Disk Error Prevents Further Virus Checking
 
+{% raw %}
+
 	Article: Q106412
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -42,3 +44,5 @@ permalink: /kb/106/Q106412/
 	
 	=============================================================================
 	
+
+{% endraw %}

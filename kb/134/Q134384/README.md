@@ -6,6 +6,8 @@ permalink: /kb/134/Q134384/
 
 ## Q134384: Configuring for Additional Sessions under IPX/SPX
 
+{% raw %}
+
 	Article: Q134384
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,4.0,4.0 SP1,4.0 SP2
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134384/
 	
 	=============================================================================
 	
+
+{% endraw %}

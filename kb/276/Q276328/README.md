@@ -6,6 +6,8 @@ permalink: /kb/276/Q276328/
 
 ## Q276328: Classic Board Games: Reversi: Player Must Pass if Unable to Move
 
+{% raw %}
+
 	Article: Q276328
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -48,3 +50,5 @@ permalink: /kb/276/Q276328/
 	
 	=============================================================================
 	
+
+{% endraw %}

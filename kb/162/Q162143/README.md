@@ -6,6 +6,8 @@ permalink: /kb/162/Q162143/
 
 ## Q162143: PRB: MSDataList/MSDataCombo Controls Do Not Work in VFP
 
+{% raw %}
+
 	Article: Q162143
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -77,3 +79,5 @@ permalink: /kb/162/Q162143/
 	
 	=============================================================================
 	
+
+{% endraw %}

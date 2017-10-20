@@ -6,6 +6,8 @@ permalink: /kb/077/Q77426/
 
 ## Q77426: Setup /F on Machines Without a Formatted Hard Disk
 
+{% raw %}
+
 	Article: Q77426
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -53,3 +55,5 @@ permalink: /kb/077/Q77426/
 	
 	=============================================================================
 	
+
+{% endraw %}

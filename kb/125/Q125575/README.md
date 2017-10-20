@@ -6,6 +6,8 @@ permalink: /kb/125/Q125575/
 
 ## Q125575: Access Denied Error When Changing Expired Domain Password
 
+{% raw %}
+
 	Article: Q125575
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -54,3 +56,5 @@ permalink: /kb/125/Q125575/
 	
 	=============================================================================
 	
+
+{% endraw %}

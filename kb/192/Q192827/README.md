@@ -6,6 +6,8 @@ permalink: /kb/192/Q192827/
 
 ## Q192827: HOWTO: Get a Short File Name from a Long File Name
 
+{% raw %}
+
 	Article: Q192827
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -105,3 +107,5 @@ permalink: /kb/192/Q192827/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163713/
 
 ## Q163713: XADM: Recovering a Single Mailbox from the Online Backup
 
+{% raw %}
+
 	Article: Q163713
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -114,3 +116,5 @@ permalink: /kb/163/Q163713/
 	
 	=============================================================================
 	
+
+{% endraw %}

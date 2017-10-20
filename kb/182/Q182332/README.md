@@ -6,6 +6,8 @@ permalink: /kb/182/Q182332/
 
 ## Q182332: SNA Clients Experience Delay Connecting to Multihomed Server
 
+{% raw %}
+
 	Article: Q182332
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2,4.0
@@ -94,3 +96,5 @@ permalink: /kb/182/Q182332/
 	
 	=============================================================================
 	
+
+{% endraw %}

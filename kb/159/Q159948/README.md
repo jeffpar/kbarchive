@@ -6,6 +6,8 @@ permalink: /kb/159/Q159948/
 
 ## Q159948: WD97: General Information About Web Page Authoring
 
+{% raw %}
+
 	Article: Q159948
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -122,3 +124,5 @@ permalink: /kb/159/Q159948/
 	
 	=============================================================================
 	
+
+{% endraw %}

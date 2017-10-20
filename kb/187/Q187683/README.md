@@ -6,6 +6,8 @@ permalink: /kb/187/Q187683/
 
 ## Q187683: Bookshelf 98: Find Media Tab Finds Items by Media Title Only
 
+{% raw %}
+
 	Article: Q187683
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -47,3 +49,5 @@ permalink: /kb/187/Q187683/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194321/
 
 ## Q194321: XADM: Alt 0216 Character Incorrectly Translated in SMTP &amp; X.400
 
+{% raw %}
+
 	Article: Q194321
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1
@@ -106,3 +108,5 @@ permalink: /kb/194/Q194321/
 	
 	=============================================================================
 	
+
+{% endraw %}

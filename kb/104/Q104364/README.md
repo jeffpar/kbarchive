@@ -6,6 +6,8 @@ permalink: /kb/104/Q104364/
 
 ## Q104364: PC Forms: Message Displayed in Compose Form
 
+{% raw %}
+
 	Article: Q104364
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -75,3 +77,5 @@ permalink: /kb/104/Q104364/
 	
 	=============================================================================
 	
+
+{% endraw %}

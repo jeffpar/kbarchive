@@ -6,6 +6,8 @@ permalink: /kb/126/Q126498/
 
 ## Q126498: PATCH: Vfp3sbs.exe VFP 3.0 Step By Step Corrections
 
+{% raw %}
+
 	Article: Q126498
 	Product(s): Microsoft Press
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/126/Q126498/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173409/
 
 ## Q173409: PRB: RDOErrors Collection Always Empty When Using EXE Server
 
+{% raw %}
+
 	Article: Q173409
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -181,3 +183,5 @@ permalink: /kb/173/Q173409/
 	
 	=============================================================================
 	
+
+{% endraw %}

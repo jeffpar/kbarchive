@@ -6,6 +6,8 @@ permalink: /kb/164/Q164756/
 
 ## Q164756: SMS: Unable to Determine the Current Client Version
 
+{% raw %}
+
 	Article: Q164756
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -67,3 +69,5 @@ permalink: /kb/164/Q164756/
 	
 	=============================================================================
 	
+
+{% endraw %}

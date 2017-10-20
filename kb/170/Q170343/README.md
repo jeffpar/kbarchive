@@ -6,6 +6,8 @@ permalink: /kb/170/Q170343/
 
 ## Q170343: Administrator Cannot Set Logon Banner on ZAK Workstation
 
+{% raw %}
+
 	Article: Q170343
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -81,3 +83,5 @@ permalink: /kb/170/Q170343/
 	
 	=============================================================================
 	
+
+{% endraw %}

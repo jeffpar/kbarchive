@@ -6,6 +6,8 @@ permalink: /kb/190/Q190196/
 
 ## Q190196: FIX: Command Line Compile Fails with MFC ActiveX Control
 
+{% raw %}
+
 	Article: Q190196
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -103,3 +105,5 @@ permalink: /kb/190/Q190196/
 	
 	=============================================================================
 	
+
+{% endraw %}

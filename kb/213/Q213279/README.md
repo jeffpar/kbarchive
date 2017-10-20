@@ -6,6 +6,8 @@ permalink: /kb/213/Q213279/
 
 ## Q213279: SMS: Component Status Summarizer Does Not Clear Daily Buckets
 
+{% raw %}
+
 	Article: Q213279
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/213/Q213279/
 	
 	=============================================================================
 	
+
+{% endraw %}

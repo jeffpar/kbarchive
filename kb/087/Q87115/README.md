@@ -6,6 +6,8 @@ permalink: /kb/087/Q87115/
 
 ## Q87115: HOWTO: GetGlyphOutline() Native Buffer Format
 
+{% raw %}
+
 	Article: Q87115
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1,3.5,3.51,4.0,95
@@ -215,3 +217,5 @@ permalink: /kb/087/Q87115/
 	
 	=============================================================================
 	
+
+{% endraw %}

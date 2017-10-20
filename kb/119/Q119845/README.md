@@ -6,6 +6,8 @@ permalink: /kb/119/Q119845/
 
 ## Q119845: Changing the Working Directory in PowerPoint
 
+{% raw %}
+
 	Article: Q119845
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:2.0,3.0,4.0,4.0a,4.0c,7.0
@@ -90,3 +92,5 @@ permalink: /kb/119/Q119845/
 	
 	=============================================================================
 	
+
+{% endraw %}

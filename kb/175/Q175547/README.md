@@ -6,6 +6,8 @@ permalink: /kb/175/Q175547/
 
 ## Q175547: FIX: Toolbar Performance Degrades with Dynamic Modification
 
+{% raw %}
+
 	Article: Q175547
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -101,3 +103,5 @@ permalink: /kb/175/Q175547/
 	
 	=============================================================================
 	
+
+{% endraw %}

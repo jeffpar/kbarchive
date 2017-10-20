@@ -6,6 +6,8 @@ permalink: /kb/125/Q125957/
 
 ## Q125957: Explorapedia: Cannot Hear Tad's Narration
 
+{% raw %}
+
 	Article: Q125957
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -96,3 +98,5 @@ permalink: /kb/125/Q125957/
 	
 	=============================================================================
 	
+
+{% endraw %}

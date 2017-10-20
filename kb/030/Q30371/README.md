@@ -6,6 +6,8 @@ permalink: /kb/030/Q30371/
 
 ## Q30371: printf() Does Not Display Text in the Current Text Color
 
+{% raw %}
+
 	Article: Q30371
 	Product(s): See article
 	Version(s): 5.00 5.10 6.00 6.00a
@@ -23,3 +25,5 @@ permalink: /kb/030/Q30371/
 	then you should use a function such as sprintf() to print the
 	formatted text to a buffer and then you can use _outtext() to print
 	the buffer in the desired color.
+
+{% endraw %}

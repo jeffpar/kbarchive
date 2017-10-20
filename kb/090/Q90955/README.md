@@ -6,6 +6,8 @@ permalink: /kb/090/Q90955/
 
 ## Q90955: Using the CREATE VIEW &lt;Name&gt; FROM ENVIRONMENT ALL Command
 
+{% raw %}
+
 	Article: Q90955
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -63,3 +65,5 @@ permalink: /kb/090/Q90955/
 	
 	=============================================================================
 	
+
+{% endraw %}

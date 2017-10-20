@@ -6,6 +6,8 @@ permalink: /kb/139/Q139413/
 
 ## Q139413: Installing SCSI2GO PCMCIA Card in a Compaq Elite Laptop
 
+{% raw %}
+
 	Article: Q139413
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -43,3 +45,5 @@ permalink: /kb/139/Q139413/
 	
 	=============================================================================
 	
+
+{% endraw %}

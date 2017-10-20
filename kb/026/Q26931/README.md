@@ -6,6 +6,8 @@ permalink: /kb/026/Q26931/
 
 ## Q26931: VAL(&quot;&amp;H&quot;) and VAL(&quot;%&quot;) Unexpectedly Returning Nonzero Value
 
+{% raw %}
+
 	Article: Q26931
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -54,3 +56,5 @@ permalink: /kb/026/Q26931/
 	' 4.00 editor or EXE; it prints 0 (zero) in QuickBASIC Version 3.00:
 	
 	PRINT VAL("%")
+
+{% endraw %}

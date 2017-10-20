@@ -6,6 +6,8 @@ permalink: /kb/216/Q216739/
 
 ## Q216739: Windows 98 Requires Terminal Server Client Disk to Uninstall
 
+{% raw %}
+
 	Article: Q216739
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/216/Q216739/
 	
 	=============================================================================
 	
+
+{% endraw %}

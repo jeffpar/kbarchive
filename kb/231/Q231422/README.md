@@ -6,6 +6,8 @@ permalink: /kb/231/Q231422/
 
 ## Q231422: Setting Administrative Privileges Using User Manager for Domains
 
+{% raw %}
+
 	Article: Q231422
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/231/Q231422/
 	
 	=============================================================================
 	
+
+{% endraw %}

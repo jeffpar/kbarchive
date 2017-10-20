@@ -6,6 +6,8 @@ permalink: /kb/142/Q142629/
 
 ## Q142629: Time Zone Map Does Not Highlight Borders
 
+{% raw %}
+
 	Article: Q142629
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -48,3 +50,5 @@ permalink: /kb/142/Q142629/
 	
 	=============================================================================
 	
+
+{% endraw %}

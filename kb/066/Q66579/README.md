@@ -6,6 +6,8 @@ permalink: /kb/066/Q66579/
 
 ## Q66579: Purpose of the M-bit and FRAME DATUM Fields
 
+{% raw %}
+
 	Article: Q66579
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.x,4.x,5.x; OS/2:1.x
@@ -102,3 +104,5 @@ permalink: /kb/066/Q66579/
 	
 	=============================================================================
 	
+
+{% endraw %}

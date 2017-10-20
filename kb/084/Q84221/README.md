@@ -6,6 +6,8 @@ permalink: /kb/084/Q84221/
 
 ## Q84221: Problem Running DOS Applications with CompuAdd 325TFX, 325NX
 
+{% raw %}
+
 	Article: Q84221
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/084/Q84221/
 	
 	=============================================================================
 	
+
+{% endraw %}

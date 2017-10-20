@@ -6,6 +6,8 @@ permalink: /kb/156/Q156756/
 
 ## Q156756: Using the IDC &quot;%z&quot; Parameter
 
+{% raw %}
+
 	Article: Q156756
 	Product(s): Internet Information Server
 	Version(s): 1.0 2.0
@@ -74,3 +76,5 @@ permalink: /kb/156/Q156756/
 	
 	=============================================================================
 	
+
+{% endraw %}

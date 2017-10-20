@@ -6,6 +6,8 @@ permalink: /kb/169/Q169319/
 
 ## Q169319: XFOR: Performance Tuning the PCMTA
 
+{% raw %}
+
 	Article: Q169319
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -85,3 +87,5 @@ permalink: /kb/169/Q169319/
 	
 	=============================================================================
 	
+
+{% endraw %}

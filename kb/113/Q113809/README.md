@@ -6,6 +6,8 @@ permalink: /kb/113/Q113809/
 
 ## Q113809: PRB: FoxPro for Mac Displays Dialog Boxes in Unreadable Font
 
+{% raw %}
+
 	Article: Q113809
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -77,3 +79,5 @@ permalink: /kb/113/Q113809/
 	
 	=============================================================================
 	
+
+{% endraw %}

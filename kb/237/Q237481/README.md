@@ -6,6 +6,8 @@ permalink: /kb/237/Q237481/
 
 ## Q237481: XADM: Event 1023 Using Mailbox Manager w. Clean Remote Mailbox
 
+{% raw %}
+
 	Article: Q237481
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -58,3 +60,5 @@ permalink: /kb/237/Q237481/
 	
 	=============================================================================
 	
+
+{% endraw %}

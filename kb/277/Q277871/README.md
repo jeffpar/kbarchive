@@ -6,6 +6,8 @@ permalink: /kb/277/Q277871/
 
 ## Q277871: Linked Server SELECT's to DB2/400 tables w/ DBCS Char Field Fail
 
+{% raw %}
+
 	Article: Q277871
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3
@@ -66,3 +68,5 @@ permalink: /kb/277/Q277871/
 	
 	=============================================================================
 	
+
+{% endraw %}

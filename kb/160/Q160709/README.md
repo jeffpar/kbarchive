@@ -6,6 +6,8 @@ permalink: /kb/160/Q160709/
 
 ## Q160709: Length = 0 in BIND Causes SNA Server to Reject BIND
 
+{% raw %}
+
 	Article: Q160709
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0
@@ -83,3 +85,5 @@ permalink: /kb/160/Q160709/
 	
 	=============================================================================
 	
+
+{% endraw %}

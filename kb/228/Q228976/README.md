@@ -6,6 +6,8 @@ permalink: /kb/228/Q228976/
 
 ## Q228976: Midtown Madness: Stops Responding (Hangs) When You Start a Race
 
+{% raw %}
+
 	Article: Q228976
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -77,3 +79,5 @@ permalink: /kb/228/Q228976/
 	
 	=============================================================================
 	
+
+{% endraw %}

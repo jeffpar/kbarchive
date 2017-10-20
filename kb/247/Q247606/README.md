@@ -6,6 +6,8 @@ permalink: /kb/247/Q247606/
 
 ## Q247606: NFL Fever 2000: Unable to Delete a Created Player
 
+{% raw %}
+
 	Article: Q247606
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -70,3 +72,5 @@ permalink: /kb/247/Q247606/
 	
 	=============================================================================
 	
+
+{% endraw %}

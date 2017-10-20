@@ -6,6 +6,8 @@ permalink: /kb/170/Q170370/
 
 ## Q170370: BUG: Deactivate Event of Non-Modal ActiveX Form Fails to Fire
 
+{% raw %}
+
 	Article: Q170370
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -173,3 +175,5 @@ permalink: /kb/170/Q170370/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125384/
 
 ## Q125384: Performance Monitor Does Not Monitor Process File Operations
 
+{% raw %}
+
 	Article: Q125384
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -40,3 +42,5 @@ permalink: /kb/125/Q125384/
 	
 	=============================================================================
 	
+
+{% endraw %}

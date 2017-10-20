@@ -6,6 +6,8 @@ permalink: /kb/199/Q199515/
 
 ## Q199515: SwSplit.exe Switches Splitter Pane Views in SDI App
 
+{% raw %}
+
 	Article: Q199515
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -151,3 +153,5 @@ permalink: /kb/199/Q199515/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190891/
 
 ## Q190891: SMS Doc Err: RSERVICE Is Unable to Install Rcmdsvc.exe
 
+{% raw %}
+
 	Article: Q190891
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -132,3 +134,5 @@ permalink: /kb/190/Q190891/
 	
 	=============================================================================
 	
+
+{% endraw %}

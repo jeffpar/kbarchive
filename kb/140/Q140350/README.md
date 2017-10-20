@@ -6,6 +6,8 @@ permalink: /kb/140/Q140350/
 
 ## Q140350: Deleting .frx File Causes Visual Basic to Exit Abnormally
 
+{% raw %}
+
 	Article: Q140350
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -82,3 +84,5 @@ permalink: /kb/140/Q140350/
 	
 	=============================================================================
 	
+
+{% endraw %}

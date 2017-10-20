@@ -6,6 +6,8 @@ permalink: /kb/175/Q175958/
 
 ## Q175958: XFOR: NDR When You Send Msg over MS MAIL Connector
 
+{% raw %}
+
 	Article: Q175958
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -86,3 +88,5 @@ permalink: /kb/175/Q175958/
 	
 	=============================================================================
 	
+
+{% endraw %}

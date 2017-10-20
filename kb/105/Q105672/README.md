@@ -6,6 +6,8 @@ permalink: /kb/105/Q105672/
 
 ## Q105672: Explanation of Numbers in Device Settings in MPLAYER.INI
 
+{% raw %}
+
 	Article: Q105672
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/105/Q105672/
 	
 	=============================================================================
 	
+
+{% endraw %}

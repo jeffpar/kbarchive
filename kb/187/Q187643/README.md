@@ -6,6 +6,8 @@ permalink: /kb/187/Q187643/
 
 ## Q187643: XCON: Message Content Changes When Sending via X.400 to UNIX
 
+{% raw %}
+
 	Article: Q187643
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/187/Q187643/
 	
 	=============================================================================
 	
+
+{% endraw %}

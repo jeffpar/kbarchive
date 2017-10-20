@@ -6,6 +6,8 @@ permalink: /kb/228/Q228487/
 
 ## Q228487: PRB: System Error Message &quot;&amp;H80004015&quot; Running ActiveX DLL in ID
 
+{% raw %}
+
 	Article: Q228487
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/228/Q228487/
 	
 	=============================================================================
 	
+
+{% endraw %}

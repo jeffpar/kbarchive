@@ -6,6 +6,8 @@ permalink: /kb/137/Q137482/
 
 ## Q137482: LUA Program Receives Host Sign-On Screen Twice and then Hangs
 
+{% raw %}
+
 	Article: Q137482
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -83,3 +85,5 @@ permalink: /kb/137/Q137482/
 	
 	=============================================================================
 	
+
+{% endraw %}

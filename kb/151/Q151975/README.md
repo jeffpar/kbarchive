@@ -6,6 +6,8 @@ permalink: /kb/151/Q151975/
 
 ## Q151975: INFO: List of SourceSafe Error Messages Documented on the Web
 
+{% raw %}
+
 	Article: Q151975
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -54,3 +56,5 @@ permalink: /kb/151/Q151975/
 	
 	=============================================================================
 	
+
+{% endraw %}

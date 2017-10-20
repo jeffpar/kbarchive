@@ -6,6 +6,8 @@ permalink: /kb/258/Q258731/
 
 ## Q258731: XFOR: IMAP Migration Extractor Doesn't Work with Event ID 14002
 
+{% raw %}
+
 	Article: Q258731
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -72,3 +74,5 @@ permalink: /kb/258/Q258731/
 	
 	=============================================================================
 	
+
+{% endraw %}

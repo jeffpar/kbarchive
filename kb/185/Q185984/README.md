@@ -6,6 +6,8 @@ permalink: /kb/185/Q185984/
 
 ## Q185984: WD97: Outlook Message Icons Remain Unopened with Routed Document
 
+{% raw %}
+
 	Article: Q185984
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -56,3 +58,5 @@ permalink: /kb/185/Q185984/
 	
 	=============================================================================
 	
+
+{% endraw %}

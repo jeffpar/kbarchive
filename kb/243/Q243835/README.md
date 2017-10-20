@@ -6,6 +6,8 @@ permalink: /kb/243/Q243835/
 
 ## Q243835: MS99-046: How to Prevent Predictable TCP/IP Initial Sequence Num
 
+{% raw %}
+
 	Article: Q243835
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.5
@@ -178,3 +180,5 @@ permalink: /kb/243/Q243835/
 	
 	=============================================================================
 	
+
+{% endraw %}

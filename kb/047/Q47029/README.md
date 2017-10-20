@@ -6,6 +6,8 @@ permalink: /kb/047/Q47029/
 
 ## Q47029: .DBG File Needed to Debug .COM File
 
+{% raw %}
+
 	Article: Q47029
 	Product(s): See article
 	Version(s): 2.01
@@ -26,3 +28,5 @@ permalink: /kb/047/Q47029/
 	displays of variables by name, will be unavailable. Because of this,
 	Microsoft recommends rebuilding to include debugging information
 	before debugging.
+
+{% endraw %}

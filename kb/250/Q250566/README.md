@@ -6,6 +6,8 @@ permalink: /kb/250/Q250566/
 
 ## Q250566: Unable to Connect to Internet When Connected to Network with RAS
 
+{% raw %}
+
 	Article: Q250566
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:2000,5,5.01; winnt:2.0,4.0
@@ -66,3 +68,5 @@ permalink: /kb/250/Q250566/
 	
 	=============================================================================
 	
+
+{% endraw %}

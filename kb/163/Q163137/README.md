@@ -6,6 +6,8 @@ permalink: /kb/163/Q163137/
 
 ## Q163137: Kids Plus: Themes are Located in Different Directories
 
+{% raw %}
+
 	Article: Q163137
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,95
@@ -69,3 +71,5 @@ permalink: /kb/163/Q163137/
 	
 	=============================================================================
 	
+
+{% endraw %}

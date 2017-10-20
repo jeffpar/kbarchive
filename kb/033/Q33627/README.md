@@ -6,6 +6,8 @@ permalink: /kb/033/Q33627/
 
 ## Q33627: SHELL in QuickBASIC Version 3.00 May Overwrite String Space
 
+{% raw %}
+
 	Article: Q33627
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/033/Q33627/
 	   SHELL
 	   PRINT y$(0)               'prints "WExxxxx".
 	   END SUB
+
+{% endraw %}

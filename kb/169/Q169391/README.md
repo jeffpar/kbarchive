@@ -6,6 +6,8 @@ permalink: /kb/169/Q169391/
 
 ## Q169391: Error Messages After Opening Add/Remove Programs
 
+{% raw %}
+
 	Article: Q169391
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -114,3 +116,5 @@ permalink: /kb/169/Q169391/
 	
 	=============================================================================
 	
+
+{% endraw %}

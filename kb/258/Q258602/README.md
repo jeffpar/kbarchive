@@ -6,6 +6,8 @@ permalink: /kb/258/Q258602/
 
 ## Q258602: XADM: Clients Cannot Reply After Exchange Server Computer Moved
 
+{% raw %}
+
 	Article: Q258602
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -98,3 +100,5 @@ permalink: /kb/258/Q258602/
 	
 	=============================================================================
 	
+
+{% endraw %}

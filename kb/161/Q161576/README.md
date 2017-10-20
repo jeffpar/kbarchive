@@ -6,6 +6,8 @@ permalink: /kb/161/Q161576/
 
 ## Q161576: PRB: Cannot Checkout a File When Multiple Checkouts are Enabled
 
+{% raw %}
+
 	Article: Q161576
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/161/Q161576/
 	
 	=============================================================================
 	
+
+{% endraw %}

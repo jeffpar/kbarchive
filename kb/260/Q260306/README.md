@@ -6,6 +6,8 @@ permalink: /kb/260/Q260306/
 
 ## Q260306: Nwscript.exe May Generate Network Provider Invalid Error Message
 
+{% raw %}
+
 	Article: Q260306
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -74,3 +76,5 @@ permalink: /kb/260/Q260306/
 	
 	=============================================================================
 	
+
+{% endraw %}

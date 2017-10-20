@@ -6,6 +6,8 @@ permalink: /kb/103/Q103951/
 
 ## Q103951: OSI Model: Vertical Interface Terminology
 
+{% raw %}
+
 	Article: Q103951
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/103/Q103951/
 	
 	=============================================================================
 	
+
+{% endraw %}

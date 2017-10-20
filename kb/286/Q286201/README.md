@@ -6,6 +6,8 @@ permalink: /kb/286/Q286201/
 
 ## Q286201: Directory Name Returned from Server.MapPath() Truncated
 
+{% raw %}
+
 	Article: Q286201
 	Product(s): Internet Information Server
 	Version(s): 2000
@@ -96,3 +98,5 @@ permalink: /kb/286/Q286201/
 	
 	=============================================================================
 	
+
+{% endraw %}

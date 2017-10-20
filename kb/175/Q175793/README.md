@@ -6,6 +6,8 @@ permalink: /kb/175/Q175793/
 
 ## Q175793: Event ID 20105 or 20108 on RRAS Server That Will Not Redial
 
+{% raw %}
+
 	Article: Q175793
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/175/Q175793/
 	
 	=============================================================================
 	
+
+{% endraw %}

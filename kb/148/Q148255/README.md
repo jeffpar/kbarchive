@@ -6,6 +6,8 @@ permalink: /kb/148/Q148255/
 
 ## Q148255: FIX: C1001 on Cast to Base from Derived Friend Class
 
+{% raw %}
+
 	Article: Q148255
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -94,3 +96,5 @@ permalink: /kb/148/Q148255/
 	
 	=============================================================================
 	
+
+{% endraw %}

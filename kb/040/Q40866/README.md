@@ -6,6 +6,8 @@ permalink: /kb/040/Q40866/
 
 ## Q40866: BC 6.00 Example of OS/2 API Calls DosGetPrty, DosSetPrty
 
+{% raw %}
+
 	Article: Q40866
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -76,3 +78,5 @@ permalink: /kb/040/Q40866/
 	        PRINT "Priority Changed."
 	    end if
 	END SUB
+
+{% endraw %}

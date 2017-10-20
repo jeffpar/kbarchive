@@ -6,6 +6,8 @@ permalink: /kb/129/Q129100/
 
 ## Q129100: Bookshelf 93: Scrolling Off Screen Causes Audio to Stop Playin
 
+{% raw %}
+
 	Article: Q129100
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 edition
@@ -50,3 +52,5 @@ permalink: /kb/129/Q129100/
 	
 	=============================================================================
 	
+
+{% endraw %}

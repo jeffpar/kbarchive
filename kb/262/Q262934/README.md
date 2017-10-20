@@ -6,6 +6,8 @@ permalink: /kb/262/Q262934/
 
 ## Q262934: PRB: ADO Update Method Fails When SELECT Statement has Subquery
 
+{% raw %}
+
 	Article: Q262934
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,2.6,2.7,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202,Build
@@ -163,3 +165,5 @@ permalink: /kb/262/Q262934/
 	
 	=============================================================================
 	
+
+{% endraw %}

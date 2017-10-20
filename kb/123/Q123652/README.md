@@ -6,6 +6,8 @@ permalink: /kb/123/Q123652/
 
 ## Q123652: FIX: Update() Fails to Write Changed Text Field
 
+{% raw %}
+
 	Article: Q123652
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00
@@ -139,3 +141,5 @@ permalink: /kb/123/Q123652/
 	
 	=============================================================================
 	
+
+{% endraw %}

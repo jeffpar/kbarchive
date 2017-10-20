@@ -6,6 +6,8 @@ permalink: /kb/248/Q248138/
 
 ## Q248138: XADM: Applying Exchange 5.5 SP to a Clustered Exchange Server
 
+{% raw %}
+
 	Article: Q248138
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/248/Q248138/
 	
 	=============================================================================
 	
+
+{% endraw %}

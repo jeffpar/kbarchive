@@ -6,6 +6,8 @@ permalink: /kb/142/Q142436/
 
 ## Q142436: XFOR: SMTP Headers That the Exchange IMC Understands
 
+{% raw %}
+
 	Article: Q142436
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -73,3 +75,5 @@ permalink: /kb/142/Q142436/
 	
 	=============================================================================
 	
+
+{% endraw %}

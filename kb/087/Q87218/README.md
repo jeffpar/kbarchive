@@ -6,6 +6,8 @@ permalink: /kb/087/Q87218/
 
 ## Q87218: PROFS: Additional Command-Line Options for the Gateway
 
+{% raw %}
+
 	Article: Q87218
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -68,3 +70,5 @@ permalink: /kb/087/Q87218/
 	
 	=============================================================================
 	
+
+{% endraw %}

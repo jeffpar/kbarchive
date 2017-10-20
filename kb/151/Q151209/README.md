@@ -6,6 +6,8 @@ permalink: /kb/151/Q151209/
 
 ## Q151209: Shared Application Icon Names Do Not Update on Clients
 
+{% raw %}
+
 	Article: Q151209
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -58,3 +60,5 @@ permalink: /kb/151/Q151209/
 	
 	=============================================================================
 	
+
+{% endraw %}

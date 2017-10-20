@@ -6,6 +6,8 @@ permalink: /kb/132/Q132595/
 
 ## Q132595: Quick View Does Not Support Older Lotus 1-2-3 Versions
 
+{% raw %}
+
 	Article: Q132595
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/132/Q132595/
 	
 	=============================================================================
 	
+
+{% endraw %}

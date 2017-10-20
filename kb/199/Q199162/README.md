@@ -6,6 +6,8 @@ permalink: /kb/199/Q199162/
 
 ## Q199162: Issues with Global Groups, Local Groups, and Trusts
 
+{% raw %}
+
 	Article: Q199162
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -102,3 +104,5 @@ permalink: /kb/199/Q199162/
 	
 	=============================================================================
 	
+
+{% endraw %}

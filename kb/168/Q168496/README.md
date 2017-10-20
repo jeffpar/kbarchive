@@ -6,6 +6,8 @@ permalink: /kb/168/Q168496/
 
 ## Q168496: Windows 95 RPC Does Not Retry Failed Named Pipe Connections
 
+{% raw %}
+
 	Article: Q168496
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -78,3 +80,5 @@ permalink: /kb/168/Q168496/
 	
 	=============================================================================
 	
+
+{% endraw %}

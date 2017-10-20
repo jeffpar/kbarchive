@@ -6,6 +6,8 @@ permalink: /kb/030/Q30393/
 
 ## Q30393: Parameters Incorrectly Passed in Nested Subprogram CALLs
 
+{% raw %}
+
 	Article: Q30393
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -86,3 +88,5 @@ permalink: /kb/030/Q30393/
 	' file.index = 1                                file.index = 1
 	' Sub3. file.index = 1                  Sub3. file.index = 1
 	' Sub2. file.index = 1                  Sub2. file.index = -999
+
+{% endraw %}

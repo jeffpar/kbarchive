@@ -6,6 +6,8 @@ permalink: /kb/165/Q165097/
 
 ## Q165097: WD97: WordBasic.ToolsCalculate Returns Incorrect Result
 
+{% raw %}
+
 	Article: Q165097
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -103,3 +105,5 @@ permalink: /kb/165/Q165097/
 	
 	=============================================================================
 	
+
+{% endraw %}

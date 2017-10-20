@@ -6,6 +6,8 @@ permalink: /kb/037/Q37029/
 
 ## Q37029: &quot;Invalid Constant&quot; Using Variable for Length of Fixed String
 
+{% raw %}
+
 	Article: Q37029
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/037/Q37029/
 	   a = "hello there"
 	   PRINT a
 	   END
+
+{% endraw %}

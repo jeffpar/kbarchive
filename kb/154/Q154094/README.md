@@ -6,6 +6,8 @@ permalink: /kb/154/Q154094/
 
 ## Q154094: Using Iomega ATAPI Zip Drives with Windows NT
 
+{% raw %}
+
 	Article: Q154094
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -105,3 +107,5 @@ permalink: /kb/154/Q154094/
 	
 	=============================================================================
 	
+
+{% endraw %}

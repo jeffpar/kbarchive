@@ -6,6 +6,8 @@ permalink: /kb/172/Q172385/
 
 ## Q172385: WD97: Text With Layout Not Listed in EditConversionOptions Macro
 
+{% raw %}
+
 	Article: Q172385
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -110,3 +112,5 @@ permalink: /kb/172/Q172385/
 	
 	=============================================================================
 	
+
+{% endraw %}

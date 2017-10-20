@@ -6,6 +6,8 @@ permalink: /kb/162/Q162249/
 
 ## Q162249: HOWTO: Create a Toolbar Containing a ComboBox
 
+{% raw %}
+
 	Article: Q162249
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -353,3 +355,5 @@ permalink: /kb/162/Q162249/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151414/
 
 ## Q151414: Windows 95/98 Partition Types Not Recognized by Windows NT
 
+{% raw %}
+
 	Article: Q151414
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5,3.51,4.0
@@ -82,3 +84,5 @@ permalink: /kb/151/Q151414/
 	
 	=============================================================================
 	
+
+{% endraw %}

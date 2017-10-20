@@ -6,6 +6,8 @@ permalink: /kb/164/Q164151/
 
 ## Q164151: HOWTO: Comparing Binary Images of Same Project Builds
 
+{% raw %}
+
 	Article: Q164151
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -125,3 +127,5 @@ permalink: /kb/164/Q164151/
 	
 	=============================================================================
 	
+
+{% endraw %}

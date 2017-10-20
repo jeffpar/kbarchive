@@ -6,6 +6,8 @@ permalink: /kb/044/Q44923/
 
 ## Q44923: MASM Calling C Making MASM Main Routine
 
+{% raw %}
+
 	Article: Q44923
 	Product(s): See article
 	Version(s): 5.10
@@ -33,3 +35,5 @@ permalink: /kb/044/Q44923/
 	        ADD   SP,4      ; Fix-up stack after C subroutine
 	MAIN ENDP
 	        END            ; Do not specify starting location
+
+{% endraw %}

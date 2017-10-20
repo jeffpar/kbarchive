@@ -6,6 +6,8 @@ permalink: /kb/030/Q30363/
 
 ## Q30363: DOCERR: procedure Pprog(); Should Be procedure Pprog;
 
+{% raw %}
+
 	Article: Q30363
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1
@@ -48,3 +50,5 @@ permalink: /kb/030/Q30363/
 	
 	=============================================================================
 	
+
+{% endraw %}

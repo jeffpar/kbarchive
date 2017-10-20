@@ -6,6 +6,8 @@ permalink: /kb/124/Q124290/
 
 ## Q124290: HOWTO: Add File Filters to Visual C++ Version 2.0
 
+{% raw %}
+
 	Article: Q124290
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -136,3 +138,5 @@ permalink: /kb/124/Q124290/
 	
 	=============================================================================
 	
+
+{% endraw %}

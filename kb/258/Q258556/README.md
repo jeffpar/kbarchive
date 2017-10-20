@@ -6,6 +6,8 @@ permalink: /kb/258/Q258556/
 
 ## Q258556: HOWTO: Read a REG_SZ Value From the Registry
 
+{% raw %}
+
 	Article: Q258556
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -172,3 +174,5 @@ permalink: /kb/258/Q258556/
 	
 	=============================================================================
 	
+
+{% endraw %}

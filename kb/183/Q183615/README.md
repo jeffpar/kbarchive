@@ -6,6 +6,8 @@ permalink: /kb/183/Q183615/
 
 ## Q183615: XADM: Access Violation in Store.exe
 
+{% raw %}
+
 	Article: Q183615
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -58,3 +60,5 @@ permalink: /kb/183/Q183615/
 	
 	=============================================================================
 	
+
+{% endraw %}

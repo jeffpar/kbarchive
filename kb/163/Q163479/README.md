@@ -6,6 +6,8 @@ permalink: /kb/163/Q163479/
 
 ## Q163479: MSB Dinos: Name Game: Close Captioning Doesn't Match Crystals
 
+{% raw %}
+
 	Article: Q163479
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/163/Q163479/
 	
 	=============================================================================
 	
+
+{% endraw %}

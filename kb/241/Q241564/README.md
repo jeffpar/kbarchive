@@ -6,6 +6,8 @@ permalink: /kb/241/Q241564/
 
 ## Q241564: XWEB: Logon.asp Displays Script Text Instead of Running Script
 
+{% raw %}
+
 	Article: Q241564
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5; winnt:5.5,5.5 SP1,5.5 SP2
@@ -88,3 +90,5 @@ permalink: /kb/241/Q241564/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155902/
 
 ## Q155902: WD97: Wrong Feed Method Selected Using HP LaserJet 4 Driver
 
+{% raw %}
+
 	Article: Q155902
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:95,97
@@ -70,3 +72,5 @@ permalink: /kb/155/Q155902/
 	
 	=============================================================================
 	
+
+{% endraw %}

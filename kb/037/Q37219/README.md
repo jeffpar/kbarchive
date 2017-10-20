@@ -6,6 +6,8 @@ permalink: /kb/037/Q37219/
 
 ## Q37219: No Such Thing as a static auto Variable.
 
+{% raw %}
+
 	Article: Q37219
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.00 5.10
@@ -20,3 +22,5 @@ permalink: /kb/037/Q37219/
 	However, the storage classes static and auto are mutually exclusive --
 	there is no "static auto" class. The text should read, "A static OR
 	auto variable can be initialized..."
+
+{% endraw %}

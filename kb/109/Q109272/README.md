@@ -6,6 +6,8 @@ permalink: /kb/109/Q109272/
 
 ## Q109272: Writer: Can't Print from Control Room (Adult Mode)
 
+{% raw %}
+
 	Article: Q109272
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -66,3 +68,5 @@ permalink: /kb/109/Q109272/
 	
 	=============================================================================
 	
+
+{% endraw %}

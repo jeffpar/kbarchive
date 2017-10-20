@@ -6,6 +6,8 @@ permalink: /kb/239/Q239036/
 
 ## Q239036: Stand-Alone Root Certificate Server May Not Appear in WSC Wizard
 
+{% raw %}
+
 	Article: Q239036
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -57,3 +59,5 @@ permalink: /kb/239/Q239036/
 	
 	=============================================================================
 	
+
+{% endraw %}

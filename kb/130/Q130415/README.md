@@ -6,6 +6,8 @@ permalink: /kb/130/Q130415/
 
 ## Q130415: Golf 2.0 Err Msg: Crucial Files Missing
 
+{% raw %}
+
 	Article: Q130415
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -66,3 +68,5 @@ permalink: /kb/130/Q130415/
 	
 	=============================================================================
 	
+
+{% endraw %}

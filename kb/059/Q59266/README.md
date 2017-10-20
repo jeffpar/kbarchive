@@ -6,6 +6,8 @@ permalink: /kb/059/Q59266/
 
 ## Q59266: SYS0491/SYS1107 When Running MASM Under OS/2
 
+{% raw %}
+
 	Article: Q59266
 	Product(s): See article
 	Version(s): 5.10
@@ -42,3 +44,5 @@ permalink: /kb/059/Q59266/
 	dosexit replaces the standard DOS int 21h exit that is normal for DOS
 	MASM executables. The DOSCALLS.LIB and OS2.INC include files are
 	located on the MS OS/2 TOOLS disk that comes with MASM 5.10.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156472/
 
 ## Q156472: Incorrect Error on Dial-In Only Server
 
+{% raw %}
+
 	Article: Q156472
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/156/Q156472/
 	
 	=============================================================================
 	
+
+{% endraw %}

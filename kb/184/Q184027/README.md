@@ -6,6 +6,8 @@ permalink: /kb/184/Q184027/
 
 ## Q184027: Multiple Default Documents Fail With 403 Access Forbidden
 
+{% raw %}
+
 	Article: Q184027
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0,3.0
@@ -48,3 +50,5 @@ permalink: /kb/184/Q184027/
 	
 	=============================================================================
 	
+
+{% endraw %}

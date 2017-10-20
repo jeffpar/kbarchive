@@ -6,6 +6,8 @@ permalink: /kb/129/Q129139/
 
 ## Q129139: XCLN: Exchange Forms Designer Must Run Locally
 
+{% raw %}
+
 	Article: Q129139
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -35,3 +37,5 @@ permalink: /kb/129/Q129139/
 	
 	=============================================================================
 	
+
+{% endraw %}

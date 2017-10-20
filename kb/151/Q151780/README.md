@@ -6,6 +6,8 @@ permalink: /kb/151/Q151780/
 
 ## Q151780: XFOR: IMC's Retry Interval Text Box Allows Invalid Values
 
+{% raw %}
+
 	Article: Q151780
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -46,3 +48,5 @@ permalink: /kb/151/Q151780/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66588/
 
 ## Q66588: Flight Simulator: White Flashing with Overcast Sky
 
+{% raw %}
+
 	Article: Q66588
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/066/Q66588/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120809/
 
 ## Q120809: How to Turn .MVB or .HLP File Back into .RTF File
 
+{% raw %}
+
 	Article: Q120809
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 2.0,2.0a,3.1
@@ -71,3 +73,5 @@ permalink: /kb/120/Q120809/
 	
 	=============================================================================
 	
+
+{% endraw %}

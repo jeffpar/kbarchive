@@ -6,6 +6,8 @@ permalink: /kb/259/Q259240/
 
 ## Q259240: XWEB: Configure OWA to Connect to Exchange Through a Firewall
 
+{% raw %}
+
 	Article: Q259240
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -127,3 +129,5 @@ permalink: /kb/259/Q259240/
 	
 	=============================================================================
 	
+
+{% endraw %}

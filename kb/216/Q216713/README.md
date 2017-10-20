@@ -6,6 +6,8 @@ permalink: /kb/216/Q216713/
 
 ## Q216713: Server Access Violation in S1PXSND Using Persistent Verification
 
+{% raw %}
+
 	Article: Q216713
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0SP3,4.0SP1,4.0SP2
@@ -114,3 +116,5 @@ permalink: /kb/216/Q216713/
 	
 	=============================================================================
 	
+
+{% endraw %}

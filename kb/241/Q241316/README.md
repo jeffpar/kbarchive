@@ -6,6 +6,8 @@ permalink: /kb/241/Q241316/
 
 ## Q241316: WD97: Word Count Macro Available to Count Words in a Selection
 
+{% raw %}
+
 	Article: Q241316
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -195,3 +197,5 @@ permalink: /kb/241/Q241316/
 	
 	=============================================================================
 	
+
+{% endraw %}

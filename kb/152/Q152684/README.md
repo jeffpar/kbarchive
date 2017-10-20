@@ -6,6 +6,8 @@ permalink: /kb/152/Q152684/
 
 ## Q152684: XCLN: Reinstalling Exchange Client Deletes Files
 
+{% raw %}
+
 	Article: Q152684
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -59,3 +61,5 @@ permalink: /kb/152/Q152684/
 	
 	=============================================================================
 	
+
+{% endraw %}

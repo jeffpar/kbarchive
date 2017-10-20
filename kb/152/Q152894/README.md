@@ -6,6 +6,8 @@ permalink: /kb/152/Q152894/
 
 ## Q152894: XADM: Store Crashes When Passing 32K of Data to Event Log
 
+{% raw %}
+
 	Article: Q152894
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -46,3 +48,5 @@ permalink: /kb/152/Q152894/
 	
 	=============================================================================
 	
+
+{% endraw %}

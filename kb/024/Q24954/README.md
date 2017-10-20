@@ -6,6 +6,8 @@ permalink: /kb/024/Q24954/
 
 ## Q24954: Producing .com Files With MASM
 
+{% raw %}
+
 	Article: Q24954
 	Product(s): Microsoft Macro Assembler
 	Version(s): 1.25,1.27,3.0x,4.0,5.0,5.1
@@ -69,3 +71,5 @@ permalink: /kb/024/Q24954/
 	
 	=============================================================================
 	
+
+{% endraw %}

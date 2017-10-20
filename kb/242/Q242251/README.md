@@ -6,6 +6,8 @@ permalink: /kb/242/Q242251/
 
 ## Q242251: XWEB: First Chance Exception in Mapi32.dll
 
+{% raw %}
+
 	Article: Q242251
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP2
@@ -68,3 +70,5 @@ permalink: /kb/242/Q242251/
 	
 	=============================================================================
 	
+
+{% endraw %}

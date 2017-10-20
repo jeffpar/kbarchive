@@ -6,6 +6,8 @@ permalink: /kb/170/Q170922/
 
 ## Q170922: How PCI Devices Are Detected and Why They May Fail
 
+{% raw %}
+
 	Article: Q170922
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -128,3 +130,5 @@ permalink: /kb/170/Q170922/
 	
 	=============================================================================
 	
+
+{% endraw %}

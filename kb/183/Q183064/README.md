@@ -6,6 +6,8 @@ permalink: /kb/183/Q183064/
 
 ## Q183064: XCON: MTA Does Not Correctly Handle DDA Values With Equal Signs
 
+{% raw %}
+
 	Article: Q183064
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -61,3 +63,5 @@ permalink: /kb/183/Q183064/
 	
 	=============================================================================
 	
+
+{% endraw %}

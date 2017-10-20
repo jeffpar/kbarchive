@@ -6,6 +6,8 @@ permalink: /kb/071/Q71433/
 
 ## Q71433: Grid Systems OEM Windows Installs WIN.BAT
 
+{% raw %}
+
 	Article: Q71433
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -63,3 +65,5 @@ permalink: /kb/071/Q71433/
 	
 	=============================================================================
 	
+
+{% endraw %}

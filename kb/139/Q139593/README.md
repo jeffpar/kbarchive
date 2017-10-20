@@ -6,6 +6,8 @@ permalink: /kb/139/Q139593/
 
 ## Q139593: BUG: DDX Problem with Combo Box in Win32s
 
+{% raw %}
+
 	Article: Q139593
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1
@@ -136,3 +138,5 @@ permalink: /kb/139/Q139593/
 	
 	=============================================================================
 	
+
+{% endraw %}

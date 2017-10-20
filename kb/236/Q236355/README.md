@@ -6,6 +6,8 @@ permalink: /kb/236/Q236355/
 
 ## Q236355: DLC Link Service Adapter List Empty if 11+ Adapters Configured
 
+{% raw %}
+
 	Article: Q236355
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
@@ -76,3 +78,5 @@ permalink: /kb/236/Q236355/
 	
 	=============================================================================
 	
+
+{% endraw %}

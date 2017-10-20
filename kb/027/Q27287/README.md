@@ -6,6 +6,8 @@ permalink: /kb/027/Q27287/
 
 ## Q27287: How to Assign High &amp; Low Registers for CALL INTERRUPT, INT86
 
+{% raw %}
+
 	Article: Q27287
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -63,3 +65,5 @@ permalink: /kb/027/Q27287/
 	
 	AH% = AX% \ 256  ' Integer division by 256 removes the lower byte.
 	PRINT "The AH register contains &H"; HEX$(AH%)
+
+{% endraw %}

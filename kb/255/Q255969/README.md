@@ -6,6 +6,8 @@ permalink: /kb/255/Q255969/
 
 ## Q255969: Allegiance: Some Graphics Are Not Displayed Correctly
 
+{% raw %}
+
 	Article: Q255969
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -59,3 +61,5 @@ permalink: /kb/255/Q255969/
 	
 	=============================================================================
 	
+
+{% endraw %}

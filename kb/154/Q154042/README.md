@@ -6,6 +6,8 @@ permalink: /kb/154/Q154042/
 
 ## Q154042: Intermediate File Error During Pipe Command
 
+{% raw %}
+
 	Article: Q154042
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -68,3 +70,5 @@ permalink: /kb/154/Q154042/
 	
 	=============================================================================
 	
+
+{% endraw %}

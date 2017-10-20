@@ -6,6 +6,8 @@ permalink: /kb/193/Q193693/
 
 ## Q193693: Queries Return Documents That No Longer Exist
 
+{% raw %}
+
 	Article: Q193693
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,1.1,2.0
@@ -94,3 +96,5 @@ permalink: /kb/193/Q193693/
 	
 	=============================================================================
 	
+
+{% endraw %}

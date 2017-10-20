@@ -6,6 +6,8 @@ permalink: /kb/099/Q99711/
 
 ## Q99711: MIDI Sounds Do Not Play or Sounds Distorted with Sound Blaster
 
+{% raw %}
+
 	Article: Q99711
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/099/Q99711/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122324/
 
 ## Q122324: DEC Turbo Port Addresses Appear Reported Incorrectly
 
+{% raw %}
+
 	Article: Q122324
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -58,3 +60,5 @@ permalink: /kb/122/Q122324/
 	
 	=============================================================================
 	
+
+{% endraw %}

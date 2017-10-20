@@ -6,6 +6,8 @@ permalink: /kb/143/Q143139/
 
 ## Q143139: Screen Captures From ProComm Plus
 
+{% raw %}
+
 	Article: Q143139
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -43,3 +45,5 @@ permalink: /kb/143/Q143139/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66338/
 
 ## Q66338: Flight Simulator: Proper Display Option for VGA LCD Display
 
+{% raw %}
+
 	Article: Q66338
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/066/Q66338/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187615/
 
 ## Q187615: Setup Hangs When System Includes More Than Two RAW Drives
 
+{% raw %}
+
 	Article: Q187615
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/187/Q187615/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216120/
 
 ## Q216120: HOWTO: Create and Install a One-Off Address Template
 
+{% raw %}
+
 	Article: Q216120
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -274,3 +276,5 @@ permalink: /kb/216/Q216120/
 	
 	=============================================================================
 	
+
+{% endraw %}

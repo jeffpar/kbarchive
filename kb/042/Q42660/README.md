@@ -6,6 +6,8 @@ permalink: /kb/042/Q42660/
 
 ## Q42660: QuickBASIC Updates Screen Faster than CGA Can Update
 
+{% raw %}
+
 	Article: Q42660
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -37,3 +39,5 @@ permalink: /kb/042/Q42660/
 	FOR d% = 1 TO 1000
 	  PRINT d$
 	NEXT
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171822/
 
 ## Q171822: FIX: Adding Routine to UserControl in Break Mode Causes Crash
 
+{% raw %}
+
 	Article: Q171822
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -99,3 +101,5 @@ permalink: /kb/171/Q171822/
 	
 	=============================================================================
 	
+
+{% endraw %}

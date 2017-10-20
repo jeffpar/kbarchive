@@ -6,6 +6,8 @@ permalink: /kb/188/Q188369/
 
 ## Q188369: XADM: AUTHINFO Command Causes Information Store Problems
 
+{% raw %}
+
 	Article: Q188369
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/188/Q188369/
 	
 	=============================================================================
 	
+
+{% endraw %}

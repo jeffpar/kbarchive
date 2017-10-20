@@ -6,6 +6,8 @@ permalink: /kb/082/Q82400/
 
 ## Q82400: DCA Irma Workstation for Windows and PCLP Network
 
+{% raw %}
+
 	Article: Q82400
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/082/Q82400/
 	
 	=============================================================================
 	
+
+{% endraw %}

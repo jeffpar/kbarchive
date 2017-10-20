@@ -6,6 +6,8 @@ permalink: /kb/183/Q183167/
 
 ## Q183167: PRB: TranslateAccelerator() Not Called for ActiveX Controls
 
+{% raw %}
+
 	Article: Q183167
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -148,3 +150,5 @@ permalink: /kb/183/Q183167/
 	
 	=============================================================================
 	
+
+{% endraw %}

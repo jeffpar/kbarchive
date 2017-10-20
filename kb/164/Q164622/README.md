@@ -6,6 +6,8 @@ permalink: /kb/164/Q164622/
 
 ## Q164622: WD97: Inserting Linked Picture Results in Absolute Path
 
+{% raw %}
+
 	Article: Q164622
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/164/Q164622/
 	
 	=============================================================================
 	
+
+{% endraw %}

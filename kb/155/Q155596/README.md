@@ -6,6 +6,8 @@ permalink: /kb/155/Q155596/
 
 ## Q155596: XCLN: Exchange Client Address Search Ignores Hyphens
 
+{% raw %}
+
 	Article: Q155596
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -47,3 +49,5 @@ permalink: /kb/155/Q155596/
 	
 	=============================================================================
 	
+
+{% endraw %}

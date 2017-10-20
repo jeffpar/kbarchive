@@ -6,6 +6,8 @@ permalink: /kb/033/Q33553/
 
 ## Q33553: Cursor Freezes when Using Old Mouse Driver on AT-Type Machine
 
+{% raw %}
+
 	Article: Q33553
 	Product(s): See article
 	Version(s): 5.03
@@ -18,3 +20,5 @@ permalink: /kb/033/Q33553/
 	is Version 5.03 or earlier.
 	   The keyboard ordinarily will still work correctly. You should
 	update to the current version of the driver.
+
+{% endraw %}

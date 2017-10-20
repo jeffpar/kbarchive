@@ -6,6 +6,8 @@ permalink: /kb/074/Q74445/
 
 ## Q74445: Opening Files, Compatibility Mode and Windows
 
+{% raw %}
+
 	Article: Q74445
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -63,3 +65,5 @@ permalink: /kb/074/Q74445/
 	
 	=============================================================================
 	
+
+{% endraw %}

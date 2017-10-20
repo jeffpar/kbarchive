@@ -6,6 +6,8 @@ permalink: /kb/114/Q114867/
 
 ## Q114867: Net2Com and RAS Can Conflict on LANA Number
 
+{% raw %}
+
 	Article: Q114867
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -64,3 +66,5 @@ permalink: /kb/114/Q114867/
 	
 	=============================================================================
 	
+
+{% endraw %}

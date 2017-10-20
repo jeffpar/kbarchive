@@ -6,6 +6,8 @@ permalink: /kb/156/Q156533/
 
 ## Q156533: INFO: STL Sample for the remove_copy Function
 
+{% raw %}
+
 	Article: Q156533
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -196,3 +198,5 @@ permalink: /kb/156/Q156533/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192915/
 
 ## Q192915: PRB: Corrupt Hh.dat Prevents Starting the MSDN Library
 
+{% raw %}
+
 	Article: Q192915
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/192/Q192915/
 	
 	=============================================================================
 	
+
+{% endraw %}

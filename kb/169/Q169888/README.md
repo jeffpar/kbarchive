@@ -6,6 +6,8 @@ permalink: /kb/169/Q169888/
 
 ## Q169888: User-Define Path Dropped When User and System Paths Too Large
 
+{% raw %}
+
 	Article: Q169888
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/169/Q169888/
 	
 	=============================================================================
 	
+
+{% endraw %}

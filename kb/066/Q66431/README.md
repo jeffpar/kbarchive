@@ -6,6 +6,8 @@ permalink: /kb/066/Q66431/
 
 ## Q66431: How to Read Internal Floating-Point Function Names
 
+{% raw %}
+
 	Article: Q66431
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -74,3 +76,5 @@ permalink: /kb/066/Q66431/
 	So, __aNfadds is a near called routine that will add the top of the
 	altmath stack st(0) with the float (single precision) in DS:BX. This
 	is similar to "fadd  dword ptr ds:[bx]" in 80x87 code.
+
+{% endraw %}

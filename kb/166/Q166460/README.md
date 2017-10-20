@@ -6,6 +6,8 @@ permalink: /kb/166/Q166460/
 
 ## Q166460: Unwanted Banner Page Printed from MS-DOS-Based Program
 
+{% raw %}
+
 	Article: Q166460
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/166/Q166460/
 	
 	=============================================================================
 	
+
+{% endraw %}

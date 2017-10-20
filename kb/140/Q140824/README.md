@@ -6,6 +6,8 @@ permalink: /kb/140/Q140824/
 
 ## Q140824: RUI FI RH Bit Modified by SNA Server
 
+{% raw %}
+
 	Article: Q140824
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -67,3 +69,5 @@ permalink: /kb/140/Q140824/
 	
 	=============================================================================
 	
+
+{% endraw %}

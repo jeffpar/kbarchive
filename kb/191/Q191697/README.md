@@ -6,6 +6,8 @@ permalink: /kb/191/Q191697/
 
 ## Q191697: BUG: ALTER TABLE Command With Multiple Drop Statements Fails
 
+{% raw %}
+
 	Article: Q191697
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0b,5.0,5.0a,6.0
@@ -70,3 +72,5 @@ permalink: /kb/191/Q191697/
 	
 	=============================================================================
 	
+
+{% endraw %}

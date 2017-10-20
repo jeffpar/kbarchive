@@ -6,6 +6,8 @@ permalink: /kb/191/Q191852/
 
 ## Q191852: Bhnetb.dll Leaks Memory in Winlogon.exe Process with NetMon
 
+{% raw %}
+
 	Article: Q191852
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/191/Q191852/
 	
 	=============================================================================
 	
+
+{% endraw %}

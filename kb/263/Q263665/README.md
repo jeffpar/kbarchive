@@ -6,6 +6,8 @@ permalink: /kb/263/Q263665/
 
 ## Q263665: SMS: Travel Mode Switch Prevents New Clients from Being Assigned
 
+{% raw %}
+
 	Article: Q263665
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -70,3 +72,5 @@ permalink: /kb/263/Q263665/
 	
 	=============================================================================
 	
+
+{% endraw %}

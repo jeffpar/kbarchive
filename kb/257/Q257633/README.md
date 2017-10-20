@@ -6,6 +6,8 @@ permalink: /kb/257/Q257633/
 
 ## Q257633: Resolution of Unqualified Host Name May Not Succeed
 
+{% raw %}
+
 	Article: Q257633
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -90,3 +92,5 @@ permalink: /kb/257/Q257633/
 	
 	=============================================================================
 	
+
+{% endraw %}

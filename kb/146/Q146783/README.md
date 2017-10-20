@@ -6,6 +6,8 @@ permalink: /kb/146/Q146783/
 
 ## Q146783: XFOR: IMC Resolves Domain Names using MX Record Lookup
 
+{% raw %}
+
 	Article: Q146783
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/146/Q146783/
 	
 	=============================================================================
 	
+
+{% endraw %}

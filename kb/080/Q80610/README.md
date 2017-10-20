@@ -6,6 +6,8 @@ permalink: /kb/080/Q80610/
 
 ## Q80610: MS-DOS 5 Upgrade (5.0a) Disks (5.25-Inch, 360K)
 
+{% raw %}
+
 	Article: Q80610
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0a
@@ -209,3 +211,5 @@ permalink: /kb/080/Q80610/
 	
 	=============================================================================
 	
+
+{% endraw %}

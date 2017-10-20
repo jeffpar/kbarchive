@@ -6,6 +6,8 @@ permalink: /kb/198/Q198366/
 
 ## Q198366: WD97: How to Add the Insert Address Button to a Toolbar
 
+{% raw %}
+
 	Article: Q198366
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -96,3 +98,5 @@ permalink: /kb/198/Q198366/
 	
 	=============================================================================
 	
+
+{% endraw %}

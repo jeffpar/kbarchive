@@ -6,6 +6,8 @@ permalink: /kb/185/Q185228/
 
 ## Q185228: WD97: New Style or Changes Unavailable in Master or Subdocument
 
+{% raw %}
+
 	Article: Q185228
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -184,3 +186,5 @@ permalink: /kb/185/Q185228/
 	
 	=============================================================================
 	
+
+{% endraw %}

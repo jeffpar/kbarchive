@@ -6,6 +6,8 @@ permalink: /kb/114/Q114702/
 
 ## Q114702: How to Use the LIKE and EXCEPT Clauses
 
+{% raw %}
+
 	Article: Q114702
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6; WINDOWS:2.6,3.0
@@ -140,3 +142,5 @@ permalink: /kb/114/Q114702/
 	
 	=============================================================================
 	
+
+{% endraw %}

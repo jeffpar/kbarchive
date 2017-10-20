@@ -6,6 +6,8 @@ permalink: /kb/082/Q82486/
 
 ## Q82486: Picture Publisher Stack Fault Changing Scanner Option
 
+{% raw %}
+
 	Article: Q82486
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/082/Q82486/
 	
 	=============================================================================
 	
+
+{% endraw %}

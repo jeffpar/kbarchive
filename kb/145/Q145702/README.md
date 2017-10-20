@@ -6,6 +6,8 @@ permalink: /kb/145/Q145702/
 
 ## Q145702: PC Card Services Unavailable on Dell Latitude XP Notebook
 
+{% raw %}
+
 	Article: Q145702
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -67,3 +69,5 @@ permalink: /kb/145/Q145702/
 	
 	=============================================================================
 	
+
+{% endraw %}

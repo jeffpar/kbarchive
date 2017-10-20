@@ -6,6 +6,8 @@ permalink: /kb/147/Q147827/
 
 ## Q147827: ErrMsg: ResKit - LMUICMNO.DLL Could Not Be Found
 
+{% raw %}
+
 	Article: Q147827
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -54,3 +56,5 @@ permalink: /kb/147/Q147827/
 	
 	=============================================================================
 	
+
+{% endraw %}

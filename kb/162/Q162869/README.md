@@ -6,6 +6,8 @@ permalink: /kb/162/Q162869/
 
 ## Q162869: Taskbar and Part of Display is Missing
 
+{% raw %}
+
 	Article: Q162869
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -89,3 +91,5 @@ permalink: /kb/162/Q162869/
 	
 	=============================================================================
 	
+
+{% endraw %}

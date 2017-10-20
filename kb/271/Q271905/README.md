@@ -6,6 +6,8 @@ permalink: /kb/271/Q271905/
 
 ## Q271905: XADM: Using Replay Process to Restore Data from MTA Backlog
 
+{% raw %}
+
 	Article: Q271905
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -459,3 +461,5 @@ permalink: /kb/271/Q271905/
 	
 	=============================================================================
 	
+
+{% endraw %}

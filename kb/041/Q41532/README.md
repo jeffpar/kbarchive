@@ -6,6 +6,8 @@ permalink: /kb/041/Q41532/
 
 ## Q41532: FRE(-1), FRE(&quot;) Both Reduced by Run-Time String Allocation
 
+{% raw %}
+
 	Article: Q41532
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -136,3 +138,5 @@ permalink: /kb/041/Q41532/
 	   Prior: String space = 59144    Prior: String space = 58360
 	   After:         Heap = 443308   After:         Heap = 443368
 	   After: String space = 58332    After: String space = 58360
+
+{% endraw %}

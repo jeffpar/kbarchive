@@ -6,6 +6,8 @@ permalink: /kb/178/Q178930/
 
 ## Q178930: XADM: Directory Does Not Start After Service Pack Upgrade
 
+{% raw %}
+
 	Article: Q178930
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -76,3 +78,5 @@ permalink: /kb/178/Q178930/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264426/
 
 ## Q264426: XCON: List of KB Articles on X.400 Connector Concepts
 
+{% raw %}
+
 	Article: Q264426
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -93,3 +95,5 @@ permalink: /kb/264/Q264426/
 	
 	=============================================================================
 	
+
+{% endraw %}

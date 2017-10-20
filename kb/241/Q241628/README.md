@@ -6,6 +6,8 @@ permalink: /kb/241/Q241628/
 
 ## Q241628: WD97: Using Selection.Cells in a Loop Gives Incorrect Results
 
+{% raw %}
+
 	Article: Q241628
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/241/Q241628/
 	
 	=============================================================================
 	
+
+{% endraw %}

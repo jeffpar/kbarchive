@@ -6,6 +6,8 @@ permalink: /kb/109/Q109038/
 
 ## Q109038: Art Gallery: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q109038
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.00
@@ -220,3 +222,5 @@ permalink: /kb/109/Q109038/
 	
 	=============================================================================
 	
+
+{% endraw %}

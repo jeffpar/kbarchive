@@ -6,6 +6,8 @@ permalink: /kb/057/Q57482/
 
 ## Q57482: Graphics Library Code Limited to One Code Segment
 
+{% raw %}
+
 	Article: Q57482
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -28,3 +30,5 @@ permalink: /kb/057/Q57482/
 	graphics library functions are called, this segment may overflow and
 	the only workaround is to reduce the number of functions needed from
 	the graphics libraries.
+
+{% endraw %}

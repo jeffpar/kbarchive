@@ -6,6 +6,8 @@ permalink: /kb/059/Q59374/
 
 ## Q59374: FIX: Incorrect Code With TYPE and SI Index Register
 
+{% raw %}
+
 	Article: Q59374
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -80,3 +82,5 @@ permalink: /kb/059/Q59374/
 	
 	=============================================================================
 	
+
+{% endraw %}

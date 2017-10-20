@@ -6,6 +6,8 @@ permalink: /kb/161/Q161692/
 
 ## Q161692: WD97: Problems With Float Over Text Objects
 
+{% raw %}
+
 	Article: Q161692
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/161/Q161692/
 	
 	=============================================================================
 	
+
+{% endraw %}

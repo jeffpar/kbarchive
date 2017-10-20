@@ -6,6 +6,8 @@ permalink: /kb/147/Q147793/
 
 ## Q147793: Specifying User Logon Servers
 
+{% raw %}
+
 	Article: Q147793
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -56,3 +58,5 @@ permalink: /kb/147/Q147793/
 	
 	=============================================================================
 	
+
+{% endraw %}

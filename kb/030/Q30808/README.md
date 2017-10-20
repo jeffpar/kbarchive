@@ -6,6 +6,8 @@ permalink: /kb/030/Q30808/
 
 ## Q30808: MASM 5.10 OS2.DOC: OS/2 Call Summary - Semaphores
 
+{% raw %}
+
 	Article: Q30808
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -48,3 +50,5 @@ permalink: /kb/030/Q30808/
 	                    semaphores is cleared
 	   Parameters - IndexNum:PW, ListAddr:PS, Timeout:D
 	   Structure - MUXSEMLIST (which contains MUXSEM structures)
+
+{% endraw %}

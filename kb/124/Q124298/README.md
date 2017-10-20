@@ -6,6 +6,8 @@ permalink: /kb/124/Q124298/
 
 ## Q124298: Changing the Drive Letter of the System or Boot Partition
 
+{% raw %}
+
 	Article: Q124298
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -64,3 +66,5 @@ permalink: /kb/124/Q124298/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/253/Q253249/
 
 ## Q253249: XADM: Exchange Server Versions Supported on Windows 2000 Server
 
+{% raw %}
+
 	Article: Q253249
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -52,3 +54,5 @@ permalink: /kb/253/Q253249/
 	
 	=============================================================================
 	
+
+{% endraw %}

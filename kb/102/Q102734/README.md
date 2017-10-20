@@ -6,6 +6,8 @@ permalink: /kb/102/Q102734/
 
 ## Q102734: PRB: GET Objects w/ MS Sans Serif Font Look Strange in Win 3.0
 
+{% raw %}
+
 	Article: Q102734
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a
@@ -59,3 +61,5 @@ permalink: /kb/102/Q102734/
 	
 	=============================================================================
 	
+
+{% endraw %}

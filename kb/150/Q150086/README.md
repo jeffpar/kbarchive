@@ -6,6 +6,8 @@ permalink: /kb/150/Q150086/
 
 ## Q150086: Map.exe Problem When FPNW and NetWare Server Names Are Similar
 
+{% raw %}
+
 	Article: Q150086
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -58,3 +60,5 @@ permalink: /kb/150/Q150086/
 	
 	=============================================================================
 	
+
+{% endraw %}

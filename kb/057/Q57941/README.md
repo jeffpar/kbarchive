@@ -6,6 +6,8 @@ permalink: /kb/057/Q57941/
 
 ## Q57941: Methods for Debugging Large Programs within the 640K DOS Limit
 
+{% raw %}
+
 	Article: Q57941
 	Product(s): See article
 	Version(s): 1.00 1.10 2.00 2.10 2.20 2.30
@@ -62,3 +64,5 @@ permalink: /kb/057/Q57941/
 	   not endorse MagicCV or make any claims as to its usage. The
 	   information is offered only as a potential option. Nu-Mega can be
 	   reached at (603) 888-2386.
+
+{% endraw %}

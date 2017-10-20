@@ -6,6 +6,8 @@ permalink: /kb/252/Q252829/
 
 ## Q252829: Warning Message When Gaining Access to Windows Update Web Site
 
+{% raw %}
+
 	Article: Q252829
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -98,3 +100,5 @@ permalink: /kb/252/Q252829/
 	
 	=============================================================================
 	
+
+{% endraw %}

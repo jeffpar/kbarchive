@@ -6,6 +6,8 @@ permalink: /kb/153/Q153817/
 
 ## Q153817: SMS: Inventory Fails if Removable Media Drive Has No Disk
 
+{% raw %}
+
 	Article: Q153817
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -66,3 +68,5 @@ permalink: /kb/153/Q153817/
 	
 	=============================================================================
 	
+
+{% endraw %}

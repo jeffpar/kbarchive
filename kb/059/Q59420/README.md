@@ -6,6 +6,8 @@ permalink: /kb/059/Q59420/
 
 ## Q59420: Specifying the Order in Which NMAKE Builds Files
 
+{% raw %}
+
 	Article: Q59420
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/059/Q59420/
 	
 	=============================================================================
 	
+
+{% endraw %}

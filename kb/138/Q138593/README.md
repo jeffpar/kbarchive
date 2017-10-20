@@ -6,6 +6,8 @@ permalink: /kb/138/Q138593/
 
 ## Q138593: Unable to Print to Windows NT LPR Printers After Applying SP
 
+{% raw %}
+
 	Article: Q138593
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -66,3 +68,5 @@ permalink: /kb/138/Q138593/
 	
 	=============================================================================
 	
+
+{% endraw %}

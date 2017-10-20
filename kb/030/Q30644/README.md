@@ -6,6 +6,8 @@ permalink: /kb/030/Q30644/
 
 ## Q30644: Trapping FP Execptions with In-Line 8087 Code
 
+{% raw %}
+
 	Article: Q30644
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -40,3 +42,5 @@ permalink: /kb/030/Q30644/
 	Without the previous code, the start-up code will not initialize
 	the emulator and the signal function returns an error when you attempt
 	to use signal to trap floating-point exceptions.
+
+{% endraw %}

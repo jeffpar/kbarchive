@@ -6,6 +6,8 @@ permalink: /kb/156/Q156119/
 
 ## Q156119: Manic Marbles Trial Version: Characters Summary
 
+{% raw %}
+
 	Article: Q156119
 	Product(s): Microsoft Home Kids Products
 	Version(s): Trial Version
@@ -150,3 +152,5 @@ permalink: /kb/156/Q156119/
 	
 	=============================================================================
 	
+
+{% endraw %}

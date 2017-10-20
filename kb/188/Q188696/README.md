@@ -6,6 +6,8 @@ permalink: /kb/188/Q188696/
 
 ## Q188696: XCLN: Deferred Delivery Options for Exchange/Outlook Clients
 
+{% raw %}
+
 	Article: Q188696
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -99,3 +101,5 @@ permalink: /kb/188/Q188696/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163532/
 
 ## Q163532: PPT: For Each Loop Doesn't Find All Shapes on a Slide
 
+{% raw %}
+
 	Article: Q163532
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -105,3 +107,5 @@ permalink: /kb/163/Q163532/
 	
 	=============================================================================
 	
+
+{% endraw %}

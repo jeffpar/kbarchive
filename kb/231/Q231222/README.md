@@ -6,6 +6,8 @@ permalink: /kb/231/Q231222/
 
 ## Q231222: SMS: Scripts Not Removed When Logon Point Is Removed
 
+{% raw %}
+
 	Article: Q231222
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -52,3 +54,5 @@ permalink: /kb/231/Q231222/
 	
 	=============================================================================
 	
+
+{% endraw %}

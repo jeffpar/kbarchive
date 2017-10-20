@@ -6,6 +6,8 @@ permalink: /kb/122/Q122225/
 
 ## Q122225: Sub-directory and File Permissions Not Set on Macintosh Volume
 
+{% raw %}
+
 	Article: Q122225
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -63,3 +65,5 @@ permalink: /kb/122/Q122225/
 	
 	=============================================================================
 	
+
+{% endraw %}

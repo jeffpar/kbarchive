@@ -6,6 +6,8 @@ permalink: /kb/126/Q126870/
 
 ## Q126870: How Transaction Processing Affects Record Locking
 
+{% raw %}
+
 	Article: Q126870
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -87,3 +89,5 @@ permalink: /kb/126/Q126870/
 	
 	=============================================================================
 	
+
+{% endraw %}

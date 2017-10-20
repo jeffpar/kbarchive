@@ -6,6 +6,8 @@ permalink: /kb/266/Q266240/
 
 ## Q266240: PRB: Custom SDK Not Available for Existing eVC Projects
 
+{% raw %}
+
 	Article: Q266240
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -97,3 +99,5 @@ permalink: /kb/266/Q266240/
 	
 	=============================================================================
 	
+
+{% endraw %}

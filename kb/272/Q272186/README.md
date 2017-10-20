@@ -6,6 +6,8 @@ permalink: /kb/272/Q272186/
 
 ## Q272186: MapPoint 2001 Err Msg: This Application Is Unable to Continue...
 
+{% raw %}
+
 	Article: Q272186
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -82,3 +84,5 @@ permalink: /kb/272/Q272186/
 	
 	=============================================================================
 	
+
+{% endraw %}

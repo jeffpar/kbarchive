@@ -6,6 +6,8 @@ permalink: /kb/145/Q145606/
 
 ## Q145606: List of Macintosh Processors
 
+{% raw %}
+
 	Article: Q145606
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a,3.0b
@@ -186,3 +188,5 @@ permalink: /kb/145/Q145606/
 	
 	=============================================================================
 	
+
+{% endraw %}

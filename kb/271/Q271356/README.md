@@ -6,6 +6,8 @@ permalink: /kb/271/Q271356/
 
 ## Q271356: Require Secure Channel Incorrectly Checked Changing Certificate
 
+{% raw %}
+
 	Article: Q271356
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,4.0 SP6a
@@ -61,3 +63,5 @@ permalink: /kb/271/Q271356/
 	
 	=============================================================================
 	
+
+{% endraw %}

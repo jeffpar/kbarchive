@@ -6,6 +6,8 @@ permalink: /kb/169/Q169876/
 
 ## Q169876: WD97: Width of Pasted Table Cell Changes to Width of Column One
 
+{% raw %}
+
 	Article: Q169876
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -66,3 +68,5 @@ permalink: /kb/169/Q169876/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/225/Q225192/
 
 ## Q225192: Incorrect Registry Upgrading Shared Computer from SMS 1.2 to 2.0
 
+{% raw %}
+
 	Article: Q225192
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -64,3 +66,5 @@ permalink: /kb/225/Q225192/
 	
 	=============================================================================
 	
+
+{% endraw %}

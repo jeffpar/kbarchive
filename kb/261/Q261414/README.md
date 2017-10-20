@@ -6,6 +6,8 @@ permalink: /kb/261/Q261414/
 
 ## Q261414: XCON: Internet Mail Service Queues Become Backlogged
 
+{% raw %}
+
 	Article: Q261414
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/261/Q261414/
 	
 	=============================================================================
 	
+
+{% endraw %}

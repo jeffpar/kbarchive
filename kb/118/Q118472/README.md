@@ -6,6 +6,8 @@ permalink: /kb/118/Q118472/
 
 ## Q118472: PRB: SelectClipRgn() Cannot Grow Clip Region in WM_PAINT
 
+{% raw %}
+
 	Article: Q118472
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -110,3 +112,5 @@ permalink: /kb/118/Q118472/
 	
 	=============================================================================
 	
+
+{% endraw %}

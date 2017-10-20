@@ -6,6 +6,8 @@ permalink: /kb/198/Q198075/
 
 ## Q198075: PRB: Installing VB App Causes Error Determining Free Disk Space
 
+{% raw %}
+
 	Article: Q198075
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -150,3 +152,5 @@ permalink: /kb/198/Q198075/
 	
 	=============================================================================
 	
+
+{% endraw %}

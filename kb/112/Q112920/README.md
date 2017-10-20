@@ -6,6 +6,8 @@ permalink: /kb/112/Q112920/
 
 ## Q112920: PC WSPlus: Users Disappear from Set Access Privileges List
 
+{% raw %}
+
 	Article: Q112920
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -41,3 +43,5 @@ permalink: /kb/112/Q112920/
 	
 	=============================================================================
 	
+
+{% endraw %}

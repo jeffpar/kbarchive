@@ -6,6 +6,8 @@ permalink: /kb/122/Q122465/
 
 ## Q122465: Using the Microcom 14400 Deskporte ES Series with AWFAX
 
+{% raw %}
+
 	Article: Q122465
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -88,3 +90,5 @@ permalink: /kb/122/Q122465/
 	
 	=============================================================================
 	
+
+{% endraw %}

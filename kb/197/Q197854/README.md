@@ -6,6 +6,8 @@ permalink: /kb/197/Q197854/
 
 ## Q197854: WD97: Numeric Switch for Thousand Separator and Dollar Sign
 
+{% raw %}
+
 	Article: Q197854
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/197/Q197854/
 	
 	=============================================================================
 	
+
+{% endraw %}

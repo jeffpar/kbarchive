@@ -6,6 +6,8 @@ permalink: /kb/148/Q148983/
 
 ## Q148983: InvDos Reports Only 16 Environment Strings
 
+{% raw %}
+
 	Article: Q148983
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -43,3 +45,5 @@ permalink: /kb/148/Q148983/
 	
 	=============================================================================
 	
+
+{% endraw %}

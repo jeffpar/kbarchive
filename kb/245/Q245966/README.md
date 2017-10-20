@@ -6,6 +6,8 @@ permalink: /kb/245/Q245966/
 
 ## Q245966: Winmgt32.dll May Complete Same Verb Three Times
 
+{% raw %}
+
 	Article: Q245966
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3
@@ -58,3 +60,5 @@ permalink: /kb/245/Q245966/
 	
 	=============================================================================
 	
+
+{% endraw %}

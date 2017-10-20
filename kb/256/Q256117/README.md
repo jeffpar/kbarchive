@@ -6,6 +6,8 @@ permalink: /kb/256/Q256117/
 
 ## Q256117: ATLComp.exe: Add Many ATL Simple Objects from ATL Object Wizard
 
+{% raw %}
+
 	Article: Q256117
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,3.0,5.0,6.0
@@ -170,3 +172,5 @@ permalink: /kb/256/Q256117/
 	
 	=============================================================================
 	
+
+{% endraw %}

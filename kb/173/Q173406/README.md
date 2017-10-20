@@ -6,6 +6,8 @@ permalink: /kb/173/Q173406/
 
 ## Q173406: Connection Terminated by News Server When Posting Large Messages
 
+{% raw %}
+
 	Article: Q173406
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5
@@ -52,3 +54,5 @@ permalink: /kb/173/Q173406/
 	
 	=============================================================================
 	
+
+{% endraw %}

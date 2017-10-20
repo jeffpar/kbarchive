@@ -6,6 +6,8 @@ permalink: /kb/147/Q147471/
 
 ## Q147471: PC Ext: Remote Client Sets Hop Count to Ten
 
+{% raw %}
+
 	Article: Q147471
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -124,3 +126,5 @@ permalink: /kb/147/Q147471/
 	
 	=============================================================================
 	
+
+{% endraw %}

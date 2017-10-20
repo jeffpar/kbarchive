@@ -6,6 +6,8 @@ permalink: /kb/139/Q139076/
 
 ## Q139076: BUG: Mpw2lib Fails on Long File Names
 
+{% raw %}
+
 	Article: Q139076
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:2.0
@@ -87,3 +89,5 @@ permalink: /kb/139/Q139076/
 	
 	=============================================================================
 	
+
+{% endraw %}

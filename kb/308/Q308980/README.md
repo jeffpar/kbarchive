@@ -6,6 +6,8 @@ permalink: /kb/308/Q308980/
 
 ## Q308980: PRB:Native Error Not Sent Back to ADO When You Run SQL XML Query
 
+{% raw %}
+
 	Article: Q308980
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.6,6.0
@@ -171,3 +173,5 @@ permalink: /kb/308/Q308980/
 	
 	=============================================================================
 	
+
+{% endraw %}

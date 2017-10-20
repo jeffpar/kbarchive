@@ -6,6 +6,8 @@ permalink: /kb/201/Q201050/
 
 ## Q201050: PRB: Custom AppWizard Based On COM Project Uses Same GUIDs
 
+{% raw %}
+
 	Article: Q201050
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -224,3 +226,5 @@ permalink: /kb/201/Q201050/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102089/
 
 ## Q102089: PC WRmt: Mail Message Formatting Changes
 
+{% raw %}
+
 	Article: Q102089
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -53,3 +55,5 @@ permalink: /kb/102/Q102089/
 	
 	=============================================================================
 	
+
+{% endraw %}

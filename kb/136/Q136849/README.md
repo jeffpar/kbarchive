@@ -6,6 +6,8 @@ permalink: /kb/136/Q136849/
 
 ## Q136849: Invalid Object Member Types
 
+{% raw %}
+
 	Article: Q136849
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/136/Q136849/
 	
 	=============================================================================
 	
+
+{% endraw %}

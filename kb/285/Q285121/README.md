@@ -6,6 +6,8 @@ permalink: /kb/285/Q285121/
 
 ## Q285121: Events 15 and 21 Are Logged When You Use HIS2000 Print Server
 
+{% raw %}
+
 	Article: Q285121
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/285/Q285121/
 	
 	=============================================================================
 	
+
+{% endraw %}

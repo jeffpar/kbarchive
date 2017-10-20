@@ -6,6 +6,8 @@ permalink: /kb/140/Q140860/
 
 ## Q140860: HOWTO: Refresh a Graph
 
+{% raw %}
+
 	Article: Q140860
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0
@@ -120,3 +122,5 @@ permalink: /kb/140/Q140860/
 	
 	=============================================================================
 	
+
+{% endraw %}

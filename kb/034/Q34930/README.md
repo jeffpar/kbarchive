@@ -6,6 +6,8 @@ permalink: /kb/034/Q34930/
 
 ## Q34930: FIX: MASM Generates Stack Overflow on Code with Redefinition
 
+{% raw %}
+
 	Article: Q34930
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -81,3 +83,5 @@ permalink: /kb/034/Q34930/
 	
 	=============================================================================
 	
+
+{% endraw %}

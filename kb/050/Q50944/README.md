@@ -6,6 +6,8 @@ permalink: /kb/050/Q50944/
 
 ## Q50944: Using CALL INTERRUPT to Push Characters into Keyboard Buffer
 
+{% raw %}
+
 	Article: Q50944
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -156,3 +158,5 @@ permalink: /kb/050/Q50944/
 	Appendix A of "Microsoft BASIC Compiler 6.0: Language Reference" for
 	6.00 and 6.00b; and in Appendix A of "Microsoft BASIC 7.0: Language
 	Reference" manual for BASIC PDS versions 7.00 and 7.10.
+
+{% endraw %}

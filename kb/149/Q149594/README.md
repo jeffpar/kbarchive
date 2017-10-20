@@ -6,6 +6,8 @@ permalink: /kb/149/Q149594/
 
 ## Q149594: HOWTO: Calling DAO Directly from MFC to Change a User's Password
 
+{% raw %}
+
 	Article: Q149594
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1
@@ -268,3 +270,5 @@ permalink: /kb/149/Q149594/
 	
 	=============================================================================
 	
+
+{% endraw %}

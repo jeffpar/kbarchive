@@ -6,6 +6,8 @@ permalink: /kb/103/Q103527/
 
 ## Q103527: Setup Reports Less Free Space than MS-DOS (DoubleSpace Drive)
 
+{% raw %}
+
 	Article: Q103527
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -84,3 +86,5 @@ permalink: /kb/103/Q103527/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/010/Q10462/
 
 ## Q10462: The MASM ASSUME Directive Does Not Generate Code
 
+{% raw %}
+
 	Article: Q10462
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,6.0,6.0a,6.0b
@@ -34,3 +36,5 @@ permalink: /kb/010/Q10462/
 	
 	=============================================================================
 	
+
+{% endraw %}

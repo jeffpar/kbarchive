@@ -6,6 +6,8 @@ permalink: /kb/140/Q140810/
 
 ## Q140810: Job Status MIF with &#92;&quot; is Not Loaded in the Database
 
+{% raw %}
+
 	Article: Q140810
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -41,3 +43,5 @@ permalink: /kb/140/Q140810/
 	
 	=============================================================================
 	
+
+{% endraw %}

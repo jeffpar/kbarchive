@@ -6,6 +6,8 @@ permalink: /kb/258/Q258972/
 
 ## Q258972: TN3270 Display Can be Opened with Associated Printer In Use
 
+{% raw %}
+
 	Article: Q258972
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -84,3 +86,5 @@ permalink: /kb/258/Q258972/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96614/
 
 ## Q96614: MSIPX Stops when Switching from 802.3 to ETHERNET2
 
+{% raw %}
+
 	Article: Q96614
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -113,3 +115,5 @@ permalink: /kb/096/Q96614/
 	
 	=============================================================================
 	
+
+{% endraw %}

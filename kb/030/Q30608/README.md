@@ -6,6 +6,8 @@ permalink: /kb/030/Q30608/
 
 ## Q30608: In QB.EXE, Save with &quot;Too Many Files&quot; Erases Source File
 
+{% raw %}
+
 	Article: Q30608
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -76,3 +78,5 @@ permalink: /kb/030/Q30608/
 	   message will appear.
 	
 	4. The program file is now erased and cannot be reopened in QB.EXE.
+
+{% endraw %}

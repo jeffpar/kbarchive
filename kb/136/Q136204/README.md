@@ -6,6 +6,8 @@ permalink: /kb/136/Q136204/
 
 ## Q136204: XCLN: Sending Messages In Rich-Text Format
 
+{% raw %}
+
 	Article: Q136204
 	Product(s): Microsoft Exchange
 	Version(s): 95
@@ -197,3 +199,5 @@ permalink: /kb/136/Q136204/
 	
 	=============================================================================
 	
+
+{% endraw %}

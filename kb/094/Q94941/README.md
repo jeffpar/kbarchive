@@ -6,6 +6,8 @@ permalink: /kb/094/Q94941/
 
 ## Q94941: BUG: EXTERNDEF ABS Fails with Span Dependent Value
 
+{% raw %}
+
 	Article: Q94941
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -133,3 +135,5 @@ permalink: /kb/094/Q94941/
 	
 	=============================================================================
 	
+
+{% endraw %}

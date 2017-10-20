@@ -6,6 +6,8 @@ permalink: /kb/201/Q201031/
 
 ## Q201031: PRB: Changes to ASP Scripts Are Not Reflected on IIS 3.0 Server
 
+{% raw %}
+
 	Article: Q201031
 	Product(s): Internet Information Server
 	Version(s): 3.0
@@ -98,3 +100,5 @@ permalink: /kb/201/Q201031/
 	
 	=============================================================================
 	
+
+{% endraw %}

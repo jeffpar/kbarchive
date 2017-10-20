@@ -6,6 +6,8 @@ permalink: /kb/189/Q189739/
 
 ## Q189739: HOWTO: Package and Deployment Wizard Installation Macros
 
+{% raw %}
+
 	Article: Q189739
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -112,3 +114,5 @@ permalink: /kb/189/Q189739/
 	
 	=============================================================================
 	
+
+{% endraw %}

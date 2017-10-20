@@ -6,6 +6,8 @@ permalink: /kb/256/Q256097/
 
 ## Q256097: Clients Do Not Generate &quot;Failed to Start Program&quot; Error Message
 
+{% raw %}
+
 	Article: Q256097
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -56,3 +58,5 @@ permalink: /kb/256/Q256097/
 	
 	=============================================================================
 	
+
+{% endraw %}

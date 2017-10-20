@@ -6,6 +6,8 @@ permalink: /kb/148/Q148419/
 
 ## Q148419: XCLN: Exchange GP Fault in Winsock.dll Using DEC Pathworks
 
+{% raw %}
+
 	Article: Q148419
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/148/Q148419/
 	
 	=============================================================================
 	
+
+{% endraw %}

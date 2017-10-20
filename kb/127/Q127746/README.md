@@ -6,6 +6,8 @@ permalink: /kb/127/Q127746/
 
 ## Q127746: APM Features Do Not Seem to Work
 
+{% raw %}
+
 	Article: Q127746
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/127/Q127746/
 	
 	=============================================================================
 	
+
+{% endraw %}

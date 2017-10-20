@@ -6,6 +6,8 @@ permalink: /kb/268/Q268643/
 
 ## Q268643: XFOR: Internet Mail Service Does not Start with Event 4003, 4020
 
+{% raw %}
+
 	Article: Q268643
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -102,3 +104,5 @@ permalink: /kb/268/Q268643/
 	
 	=============================================================================
 	
+
+{% endraw %}

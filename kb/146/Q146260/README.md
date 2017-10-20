@@ -6,6 +6,8 @@ permalink: /kb/146/Q146260/
 
 ## Q146260: XCLN: Exchange Forms Designer Labels Can Be 255 Chars
 
+{% raw %}
+
 	Article: Q146260
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -49,3 +51,5 @@ permalink: /kb/146/Q146260/
 	
 	=============================================================================
 	
+
+{% endraw %}

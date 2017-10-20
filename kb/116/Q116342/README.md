@@ -6,6 +6,8 @@ permalink: /kb/116/Q116342/
 
 ## Q116342: How To Disable Long Filename Support on FAT Partitions
 
+{% raw %}
+
 	Article: Q116342
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -52,3 +54,5 @@ permalink: /kb/116/Q116342/
 	
 	=============================================================================
 	
+
+{% endraw %}

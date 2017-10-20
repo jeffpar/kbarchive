@@ -6,6 +6,8 @@ permalink: /kb/171/Q171694/
 
 ## Q171694: Differences Between the Recycle Bin and the Recycler Folder
 
+{% raw %}
+
 	Article: Q171694
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.0
@@ -54,3 +56,5 @@ permalink: /kb/171/Q171694/
 	
 	=============================================================================
 	
+
+{% endraw %}

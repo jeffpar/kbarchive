@@ -6,6 +6,8 @@ permalink: /kb/216/Q216547/
 
 ## Q216547: BUG: Err.Raise 40040 Stores the Err.Number as 440
 
+{% raw %}
+
 	Article: Q216547
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/216/Q216547/
 	
 	=============================================================================
 	
+
+{% endraw %}

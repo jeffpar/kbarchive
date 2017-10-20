@@ -6,6 +6,8 @@ permalink: /kb/169/Q169693/
 
 ## Q169693: XADM: Private Byte Memory Leak in Store.exe
 
+{% raw %}
+
 	Article: Q169693
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -64,3 +66,5 @@ permalink: /kb/169/Q169693/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246792/
 
 ## Q246792: ReleaseDC API Fails with Laststatus and Lasterror Error Messages
 
+{% raw %}
+
 	Article: Q246792
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4
@@ -89,3 +91,5 @@ permalink: /kb/246/Q246792/
 	
 	=============================================================================
 	
+
+{% endraw %}

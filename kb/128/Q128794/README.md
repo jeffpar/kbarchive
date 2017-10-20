@@ -6,6 +6,8 @@ permalink: /kb/128/Q128794/
 
 ## Q128794: File Manager Displays Maximum Disk Space of 1.99 GB
 
+{% raw %}
+
 	Article: Q128794
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95,98; winnt:3.5
@@ -76,3 +78,5 @@ permalink: /kb/128/Q128794/
 	
 	=============================================================================
 	
+
+{% endraw %}

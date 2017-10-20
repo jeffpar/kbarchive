@@ -6,6 +6,8 @@ permalink: /kb/067/Q67496/
 
 ## Q67496: Windows 3.0 SDL Disk Directories (3.5 Inch, 720K)
 
+{% raw %}
+
 	Article: Q67496
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -188,3 +190,5 @@ permalink: /kb/067/Q67496/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159195/
 
 ## Q159195: XCON: MTA Terminates Unexpectedly with Event ID 9405
 
+{% raw %}
+
 	Article: Q159195
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -131,3 +133,5 @@ permalink: /kb/159/Q159195/
 	
 	=============================================================================
 	
+
+{% endraw %}

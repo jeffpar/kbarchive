@@ -6,6 +6,8 @@ permalink: /kb/111/Q111723/
 
 ## Q111723: BUG: SQL Server SQLSetParam Fails on the 252nd Parameter
 
+{% raw %}
+
 	Article: Q111723
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -84,3 +86,5 @@ permalink: /kb/111/Q111723/
 	
 	=============================================================================
 	
+
+{% endraw %}

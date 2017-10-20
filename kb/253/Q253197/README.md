@@ -6,6 +6,8 @@ permalink: /kb/253/Q253197/
 
 ## Q253197: SMS: Run-Time Error When Advertising MFC-Based Package (ICP Vers
 
+{% raw %}
+
 	Article: Q253197
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -212,3 +214,5 @@ permalink: /kb/253/Q253197/
 	
 	=============================================================================
 	
+
+{% endraw %}

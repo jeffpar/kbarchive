@@ -6,6 +6,8 @@ permalink: /kb/157/Q157963/
 
 ## Q157963: Setacl.exe Not Available in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q157963
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -101,3 +103,5 @@ permalink: /kb/157/Q157963/
 	
 	=============================================================================
 	
+
+{% endraw %}

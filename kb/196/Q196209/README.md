@@ -6,6 +6,8 @@ permalink: /kb/196/Q196209/
 
 ## Q196209: WINS Replication Does Not Start at the Scheduled Time Every Day
 
+{% raw %}
+
 	Article: Q196209
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/196/Q196209/
 	
 	=============================================================================
 	
+
+{% endraw %}

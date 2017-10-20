@@ -6,6 +6,8 @@ permalink: /kb/042/Q42761/
 
 ## Q42761: PRB: Use /Op to Avoid Loss of Precision from Optimization
 
+{% raw %}
+
 	Article: Q42761
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -91,3 +93,5 @@ permalink: /kb/042/Q42761/
 	
 	=============================================================================
 	
+
+{% endraw %}

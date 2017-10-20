@@ -6,6 +6,8 @@ permalink: /kb/198/Q198361/
 
 ## Q198361: WD97: Multiple Spaces After Colon/Tab Flagged in Grammar Check
 
+{% raw %}
+
 	Article: Q198361
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/198/Q198361/
 	
 	=============================================================================
 	
+
+{% endraw %}

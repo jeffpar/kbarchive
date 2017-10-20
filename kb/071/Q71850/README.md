@@ -6,6 +6,8 @@ permalink: /kb/071/Q71850/
 
 ## Q71850: Windows Err Msg: Another Application Is Using Communication...
 
+{% raw %}
+
 	Article: Q71850
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/071/Q71850/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188491/
 
 ## Q188491: IIS 4.0 Applies Footers To All Documents
 
+{% raw %}
+
 	Article: Q188491
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/188/Q188491/
 	
 	=============================================================================
 	
+
+{% endraw %}

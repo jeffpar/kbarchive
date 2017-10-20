@@ -6,6 +6,8 @@ permalink: /kb/173/Q173555/
 
 ## Q173555: XADM: Exchange Generates Conflict for Same Public Folder
 
+{% raw %}
+
 	Article: Q173555
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -49,3 +51,5 @@ permalink: /kb/173/Q173555/
 	
 	=============================================================================
 	
+
+{% endraw %}

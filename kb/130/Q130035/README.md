@@ -6,6 +6,8 @@ permalink: /kb/130/Q130035/
 
 ## Q130035: PC Win: Troubleshooting Segment Load Failures in Mail
 
+{% raw %}
+
 	Article: Q130035
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -92,3 +94,5 @@ permalink: /kb/130/Q130035/
 	
 	=============================================================================
 	
+
+{% endraw %}

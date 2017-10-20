@@ -6,6 +6,8 @@ permalink: /kb/233/Q233331/
 
 ## Q233331: XADM: How to Configure a View-Only Admin to Create Mailboxes
 
+{% raw %}
+
 	Article: Q233331
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/233/Q233331/
 	
 	=============================================================================
 	
+
+{% endraw %}

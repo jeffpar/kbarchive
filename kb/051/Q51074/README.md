@@ -6,6 +6,8 @@ permalink: /kb/051/Q51074/
 
 ## Q51074: May Be LINK Error If Separate Source Files Have Same Root Name
 
+{% raw %}
+
 	Article: Q51074
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -119,3 +121,5 @@ permalink: /kb/051/Q51074/
 	 0098:0   DGROUP
 	
 	Program entry point at 002F:00CE
+
+{% endraw %}

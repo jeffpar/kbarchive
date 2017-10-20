@@ -6,6 +6,8 @@ permalink: /kb/240/Q240028/
 
 ## Q240028: NBA Inside Drive 2000: How to Enable 3D Hardware Acceleration
 
+{% raw %}
+
 	Article: Q240028
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/240/Q240028/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/108/Q108832/
 
 ## Q108832: PC WRmt: Immediately on Send Option Retrieves No Unread Mail
 
+{% raw %}
+
 	Article: Q108832
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -51,3 +53,5 @@ permalink: /kb/108/Q108832/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167052/
 
 ## Q167052: Maximum Number of Supported SCSI Disk Drives Increased
 
+{% raw %}
+
 	Article: Q167052
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/167/Q167052/
 	
 	=============================================================================
 	
+
+{% endraw %}

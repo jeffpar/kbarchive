@@ -6,6 +6,8 @@ permalink: /kb/103/Q103533/
 
 ## Q103533: DoubleSpace Err Msg Mounting CVF: There Is a Disk Error on...
 
+{% raw %}
+
 	Article: Q103533
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -63,3 +65,5 @@ permalink: /kb/103/Q103533/
 	
 	=============================================================================
 	
+
+{% endraw %}

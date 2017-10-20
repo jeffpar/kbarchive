@@ -6,6 +6,8 @@ permalink: /kb/172/Q172929/
 
 ## Q172929: Windows 95 Print Jobs Disappear from Windows NT Print Queue
 
+{% raw %}
+
 	Article: Q172929
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,4.0
@@ -82,3 +84,5 @@ permalink: /kb/172/Q172929/
 	
 	=============================================================================
 	
+
+{% endraw %}

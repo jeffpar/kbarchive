@@ -6,6 +6,8 @@ permalink: /kb/039/Q39911/
 
 ## Q39911: C 5.10 Setup Gives U1203 Error under DOS Versions 2.x
 
+{% raw %}
+
 	Article: Q39911
 	Product(s): See article
 	Version(s): 5.10
@@ -26,3 +28,5 @@ permalink: /kb/039/Q39911/
 	Moving LIB.EXE into the current directory may avoid this problem.
 	
 	More information will be posted as it becomes available.
+
+{% endraw %}

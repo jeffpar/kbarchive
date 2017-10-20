@@ -6,6 +6,8 @@ permalink: /kb/130/Q130587/
 
 ## Q130587: Setup Incorrectly Detects Network Card Transceiver Type
 
+{% raw %}
+
 	Article: Q130587
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/130/Q130587/
 	
 	=============================================================================
 	
+
+{% endraw %}

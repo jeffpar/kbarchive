@@ -6,6 +6,8 @@ permalink: /kb/126/Q126657/
 
 ## Q126657: Mac Wkst: Err Msg: Unable to Retrieve Details for That Item
 
+{% raw %}
+
 	Article: Q126657
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -54,3 +56,5 @@ permalink: /kb/126/Q126657/
 	
 	=============================================================================
 	
+
+{% endraw %}

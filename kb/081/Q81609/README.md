@@ -6,6 +6,8 @@ permalink: /kb/081/Q81609/
 
 ## Q81609: Err Msg: 'Incorrect System Version' When Starting MS-DOS App
 
+{% raw %}
+
 	Article: Q81609
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -156,3 +158,5 @@ permalink: /kb/081/Q81609/
 	
 	=============================================================================
 	
+
+{% endraw %}

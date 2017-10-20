@@ -6,6 +6,8 @@ permalink: /kb/136/Q136149/
 
 ## Q136149: Optical Disks and Save Configuration in Disk Administrator
 
+{% raw %}
+
 	Article: Q136149
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/136/Q136149/
 	
 	=============================================================================
 	
+
+{% endraw %}

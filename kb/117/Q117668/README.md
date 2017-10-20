@@ -6,6 +6,8 @@ permalink: /kb/117/Q117668/
 
 ## Q117668: Err Msg: Ring 0 Systems. Virtual 16550 Driver...
 
+{% raw %}
+
 	Article: Q117668
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.1,3.11
@@ -110,3 +112,5 @@ permalink: /kb/117/Q117668/
 	
 	=============================================================================
 	
+
+{% endraw %}

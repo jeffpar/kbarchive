@@ -6,6 +6,8 @@ permalink: /kb/235/Q235260/
 
 ## Q235260: Microsoft Excel 2000 Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q235260
 	Product(s): Microsoft Press
 	Version(s): 
@@ -169,3 +171,5 @@ permalink: /kb/235/Q235260/
 	
 	=============================================================================
 	
+
+{% endraw %}

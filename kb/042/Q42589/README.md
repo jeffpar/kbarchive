@@ -6,6 +6,8 @@ permalink: /kb/042/Q42589/
 
 ## Q42589: Mouse Not Supported on VGA in OS/2 Real Mode; OK in MS-DOS
 
+{% raw %}
+
 	Article: Q42589
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -35,3 +37,5 @@ permalink: /kb/042/Q42589/
 	More information on the VioSetMode and MouSetDevStatus MS OS/2 API
 	CALLs can be found in the "Microsoft Operating System/2: Programmer's
 	Toolkit Programming Tools."
+
+{% endraw %}

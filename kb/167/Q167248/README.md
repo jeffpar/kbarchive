@@ -6,6 +6,8 @@ permalink: /kb/167/Q167248/
 
 ## Q167248: How to Demote to BDC When Two PDCs Present
 
+{% raw %}
+
 	Article: Q167248
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -207,3 +209,5 @@ permalink: /kb/167/Q167248/
 	
 	=============================================================================
 	
+
+{% endraw %}

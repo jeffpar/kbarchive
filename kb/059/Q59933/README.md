@@ -6,6 +6,8 @@ permalink: /kb/059/Q59933/
 
 ## Q59933: Clarification of MTDYNA.DOC: Cooperation on Global Data
 
+{% raw %}
+
 	Article: Q59933
 	Product(s): See article
 	Version(s): 5.10 6.00
@@ -64,3 +66,5 @@ permalink: /kb/059/Q59933/
 	another in the same file. This may or may not be the desired result.
 	
 	The same scenario holds true for the other global run-time data.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139458/
 
 ## Q139458: FIX: Ambiguous C2966 Error with Nested Template Classes
 
+{% raw %}
+
 	Article: Q139458
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/139/Q139458/
 	
 	=============================================================================
 	
+
+{% endraw %}

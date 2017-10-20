@@ -6,6 +6,8 @@ permalink: /kb/316/Q316743/
 
 ## Q316743: A NetRAID 2 Controller May Cause Disk Error 21 in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q316743
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -100,3 +102,5 @@ permalink: /kb/316/Q316743/
 	
 	=============================================================================
 	
+
+{% endraw %}

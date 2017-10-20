@@ -6,6 +6,8 @@ permalink: /kb/050/Q50210/
 
 ## Q50210: Flt Sim: Plane Position Shifts 2 Degrees per Minute
 
+{% raw %}
+
 	Article: Q50210
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/050/Q50210/
 	
 	=============================================================================
 	
+
+{% endraw %}

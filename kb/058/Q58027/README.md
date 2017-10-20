@@ -6,6 +6,8 @@ permalink: /kb/058/Q58027/
 
 ## Q58027: BASIC PDS 7.10 Allows Line Numbers 40 Digits Long; Correction
 
+{% raw %}
+
 	Article: Q58027
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -35,3 +37,5 @@ permalink: /kb/058/Q58027/
 	             PRINT "That is the F1 key"
 	             PRINT "Hit 'q' or 'Q' to quit"
 	             RETURN
+
+{% endraw %}

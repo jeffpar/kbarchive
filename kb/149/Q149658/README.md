@@ -6,6 +6,8 @@ permalink: /kb/149/Q149658/
 
 ## Q149658: TCP/IP Printing Causes File Cache to Grow
 
+{% raw %}
+
 	Article: Q149658
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -73,3 +75,5 @@ permalink: /kb/149/Q149658/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162530/
 
 ## Q162530: PRB: Invalid Handle on Client When Journal_Text Set to Bad Path
 
+{% raw %}
+
 	Article: Q162530
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/162/Q162530/
 	
 	=============================================================================
 	
+
+{% endraw %}

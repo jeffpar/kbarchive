@@ -6,6 +6,8 @@ permalink: /kb/158/Q158396/
 
 ## Q158396: Explorer Hangs When Creating a New Folder On a MAC Volume
 
+{% raw %}
+
 	Article: Q158396
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/158/Q158396/
 	
 	=============================================================================
 	
+
+{% endraw %}

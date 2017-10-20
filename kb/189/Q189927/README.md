@@ -6,6 +6,8 @@ permalink: /kb/189/Q189927/
 
 ## Q189927: PRB: MsGraph 8.0 Causes Fatal Exception Error
 
+{% raw %}
+
 	Article: Q189927
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -91,3 +93,5 @@ permalink: /kb/189/Q189927/
 	
 	=============================================================================
 	
+
+{% endraw %}

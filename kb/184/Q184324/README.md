@@ -6,6 +6,8 @@ permalink: /kb/184/Q184324/
 
 ## Q184324: XWEB: Customizing the Checkname Feature for Outlook Web Access
 
+{% raw %}
+
 	Article: Q184324
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -68,3 +70,5 @@ permalink: /kb/184/Q184324/
 	
 	=============================================================================
 	
+
+{% endraw %}

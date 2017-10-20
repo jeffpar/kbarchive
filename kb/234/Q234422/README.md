@@ -6,6 +6,8 @@ permalink: /kb/234/Q234422/
 
 ## Q234422: XFOR: Cannot Install AppleTalk Connector on Windows NT 4.0 SP5
 
+{% raw %}
+
 	Article: Q234422
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0 SP5,5.5
@@ -60,3 +62,5 @@ permalink: /kb/234/Q234422/
 	
 	=============================================================================
 	
+
+{% endraw %}

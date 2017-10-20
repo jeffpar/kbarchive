@@ -6,6 +6,8 @@ permalink: /kb/121/Q121038/
 
 ## Q121038: MAC Art Gallery: README Contents
 
+{% raw %}
+
 	Article: Q121038
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -307,3 +309,5 @@ permalink: /kb/121/Q121038/
 	
 	=============================================================================
 	
+
+{% endraw %}

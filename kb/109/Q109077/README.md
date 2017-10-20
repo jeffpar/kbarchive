@@ -6,6 +6,8 @@ permalink: /kb/109/Q109077/
 
 ## Q109077: Event 624 Logs Improper File Name in Explanation Text
 
+{% raw %}
+
 	Article: Q109077
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -84,3 +86,5 @@ permalink: /kb/109/Q109077/
 	
 	=============================================================================
 	
+
+{% endraw %}

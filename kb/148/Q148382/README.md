@@ -6,6 +6,8 @@ permalink: /kb/148/Q148382/
 
 ## Q148382: BUG: Menus Disappear When All Child Windows Are Closed
 
+{% raw %}
+
 	Article: Q148382
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,4.0
@@ -62,3 +64,5 @@ permalink: /kb/148/Q148382/
 	
 	=============================================================================
 	
+
+{% endraw %}

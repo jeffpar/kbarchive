@@ -6,6 +6,8 @@ permalink: /kb/258/Q258547/
 
 ## Q258547: SMS: Upgrade Process May Hang When Upgrading Site Server to SP2
 
+{% raw %}
+
 	Article: Q258547
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/258/Q258547/
 	
 	=============================================================================
 	
+
+{% endraw %}

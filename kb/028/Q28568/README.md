@@ -6,6 +6,8 @@ permalink: /kb/028/Q28568/
 
 ## Q28568: Terminate-and-Stay-Resident (TSR) Program Example
 
+{% raw %}
+
 	Article: Q28568
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.5,5.1,6.0,6.0a,6.0ax; MS-DOS:7.0
@@ -248,3 +250,5 @@ permalink: /kb/028/Q28568/
 	
 	=============================================================================
 	
+
+{% endraw %}

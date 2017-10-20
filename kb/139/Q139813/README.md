@@ -6,6 +6,8 @@ permalink: /kb/139/Q139813/
 
 ## Q139813: Event ID 2453 Appears When Using Tabs For USRTOGRP
 
+{% raw %}
+
 	Article: Q139813
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -54,3 +56,5 @@ permalink: /kb/139/Q139813/
 	
 	=============================================================================
 	
+
+{% endraw %}

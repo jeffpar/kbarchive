@@ -6,6 +6,8 @@ permalink: /kb/061/Q61182/
 
 ## Q61182: Mac Wkst: Possible Cause of &quot;Looking for Server&quot; Message
 
+{% raw %}
+
 	Article: Q61182
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -39,3 +41,5 @@ permalink: /kb/061/Q61182/
 	
 	=============================================================================
 	
+
+{% endraw %}

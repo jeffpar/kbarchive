@@ -6,6 +6,8 @@ permalink: /kb/179/Q179844/
 
 ## Q179844: XCLN: Client for Macintosh Release Notes, Version 5
 
+{% raw %}
+
 	Article: Q179844
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -471,3 +473,5 @@ permalink: /kb/179/Q179844/
 	
 	=============================================================================
 	
+
+{% endraw %}

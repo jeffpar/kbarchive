@@ -6,6 +6,8 @@ permalink: /kb/142/Q142043/
 
 ## Q142043: How To Configure MPR In An IPX Network
 
+{% raw %}
+
 	Article: Q142043
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -77,3 +79,5 @@ permalink: /kb/142/Q142043/
 	
 	=============================================================================
 	
+
+{% endraw %}

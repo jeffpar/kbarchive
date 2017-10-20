@@ -6,6 +6,8 @@ permalink: /kb/265/Q265776/
 
 ## Q265776: INFO: System Requirements for eMbedded Visual Basic 3.0
 
+{% raw %}
+
 	Article: Q265776
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -94,3 +96,5 @@ permalink: /kb/265/Q265776/
 	
 	=============================================================================
 	
+
+{% endraw %}

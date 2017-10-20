@@ -6,6 +6,8 @@ permalink: /kb/115/Q115440/
 
 ## Q115440: X400: Priority 1 Mail Returned in 24 Hours Instead of 36 Hours
 
+{% raw %}
+
 	Article: Q115440
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -48,3 +50,5 @@ permalink: /kb/115/Q115440/
 	
 	=============================================================================
 	
+
+{% endraw %}

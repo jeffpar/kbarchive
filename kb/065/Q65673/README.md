@@ -6,6 +6,8 @@ permalink: /kb/065/Q65673/
 
 ## Q65673: Explanation of Device Development Kit (DDK)
 
+{% raw %}
+
 	Article: Q65673
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/065/Q65673/
 	
 	=============================================================================
 	
+
+{% endraw %}

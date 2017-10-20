@@ -6,6 +6,8 @@ permalink: /kb/150/Q150885/
 
 ## Q150885: FIX: C2321 Expanding Template with a Pointer to a Nested Class
 
+{% raw %}
+
 	Article: Q150885
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0
@@ -97,3 +99,5 @@ permalink: /kb/150/Q150885/
 	
 	=============================================================================
 	
+
+{% endraw %}

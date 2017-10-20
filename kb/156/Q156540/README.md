@@ -6,6 +6,8 @@ permalink: /kb/156/Q156540/
 
 ## Q156540: SMS: How Systems Management Server Uses the Smsls.ini File
 
+{% raw %}
+
 	Article: Q156540
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2
@@ -177,3 +179,5 @@ permalink: /kb/156/Q156540/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/023/Q23033/
 
 ## Q23033: HOWTO: Use NetBIOS Interrupts Under Windows
 
+{% raw %}
+
 	Article: Q23033
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -63,3 +65,5 @@ permalink: /kb/023/Q23033/
 	
 	=============================================================================
 	
+
+{% endraw %}

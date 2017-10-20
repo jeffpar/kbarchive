@@ -6,6 +6,8 @@ permalink: /kb/199/Q199522/
 
 ## Q199522: HOWTO: Porting Static PowerPC Libraries
 
+{% raw %}
+
 	Article: Q199522
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:4.0,4.0b
@@ -77,3 +79,5 @@ permalink: /kb/199/Q199522/
 	
 	=============================================================================
 	
+
+{% endraw %}

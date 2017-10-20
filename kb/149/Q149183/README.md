@@ -6,6 +6,8 @@ permalink: /kb/149/Q149183/
 
 ## Q149183: PRB: Insufficient Memory If You Use PGUP or PGDN Key w/ Lists
 
+{% raw %}
+
 	Article: Q149183
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -67,3 +69,5 @@ permalink: /kb/149/Q149183/
 	
 	=============================================================================
 	
+
+{% endraw %}

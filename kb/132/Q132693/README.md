@@ -6,6 +6,8 @@ permalink: /kb/132/Q132693/
 
 ## Q132693: PC Gen: Disk Contents: Postoffice Upgrade for WFW
 
+{% raw %}
+
 	Article: Q132693
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.1,3.11,3.2
@@ -886,3 +888,5 @@ permalink: /kb/132/Q132693/
 	
 	=============================================================================
 	
+
+{% endraw %}

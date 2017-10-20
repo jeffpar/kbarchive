@@ -6,6 +6,8 @@ permalink: /kb/196/Q196540/
 
 ## Q196540: WD97: Misspelled Words in Main Dictionary
 
+{% raw %}
+
 	Article: Q196540
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/196/Q196540/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242879/
 
 ## Q242879: TP_Start Fails and Logs Event ID 705 if Installed in MTS Package
 
+{% raw %}
+
 	Article: Q242879
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,3.0 U.S. SP1,3.0 U.S. SP2,4.0,4.0 SP1,4.0 S
@@ -69,3 +71,5 @@ permalink: /kb/242/Q242879/
 	
 	=============================================================================
 	
+
+{% endraw %}

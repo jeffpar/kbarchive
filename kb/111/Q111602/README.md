@@ -6,6 +6,8 @@ permalink: /kb/111/Q111602/
 
 ## Q111602: FIX: GetPrivateProfileInt() May Not Read Correct Value
 
+{% raw %}
+
 	Article: Q111602
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/111/Q111602/
 	
 	=============================================================================
 	
+
+{% endraw %}

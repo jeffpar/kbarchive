@@ -6,6 +6,8 @@ permalink: /kb/113/Q113183/
 
 ## Q113183: Difficulty Adding Support for ODI/NDIS or IPX/SPX
 
+{% raw %}
+
 	Article: Q113183
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -47,3 +49,5 @@ permalink: /kb/113/Q113183/
 	
 	=============================================================================
 	
+
+{% endraw %}

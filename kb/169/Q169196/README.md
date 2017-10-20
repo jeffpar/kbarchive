@@ -6,6 +6,8 @@ permalink: /kb/169/Q169196/
 
 ## Q169196: XADM: Client Slow to Access a Public Folder
 
+{% raw %}
+
 	Article: Q169196
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/169/Q169196/
 	
 	=============================================================================
 	
+
+{% endraw %}

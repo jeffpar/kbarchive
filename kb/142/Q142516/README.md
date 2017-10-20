@@ -6,6 +6,8 @@ permalink: /kb/142/Q142516/
 
 ## Q142516: MSB Ocean: CD Audio MCI Driver Not Installed with Aztech Sound
 
+{% raw %}
+
 	Article: Q142516
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0,3.0,3.0a,3.1,3.11
@@ -136,3 +138,5 @@ permalink: /kb/142/Q142516/
 	
 	=============================================================================
 	
+
+{% endraw %}

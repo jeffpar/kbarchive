@@ -6,6 +6,8 @@ permalink: /kb/195/Q195147/
 
 ## Q195147: XADM: MSW Allows Last Private Store Server to Move from Site
 
+{% raw %}
+
 	Article: Q195147
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -49,3 +51,5 @@ permalink: /kb/195/Q195147/
 	
 	=============================================================================
 	
+
+{% endraw %}

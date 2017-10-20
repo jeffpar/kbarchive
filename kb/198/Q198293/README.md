@@ -6,6 +6,8 @@ permalink: /kb/198/Q198293/
 
 ## Q198293: WD97: How to Use Mail Merge with a Microsoft Access Parameter
 
+{% raw %}
+
 	Article: Q198293
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -111,3 +113,5 @@ permalink: /kb/198/Q198293/
 	
 	=============================================================================
 	
+
+{% endraw %}

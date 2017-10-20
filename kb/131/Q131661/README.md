@@ -6,6 +6,8 @@ permalink: /kb/131/Q131661/
 
 ## Q131661: Microsoft Office Manager Stays On Top of Screen Saver
 
+{% raw %}
+
 	Article: Q131661
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/131/Q131661/
 	
 	=============================================================================
 	
+
+{% endraw %}

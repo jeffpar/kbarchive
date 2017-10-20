@@ -6,6 +6,8 @@ permalink: /kb/065/Q65439/
 
 ## Q65439: Northgate Elegance 386 Gets Garbled Video in Turbo Mode
 
+{% raw %}
+
 	Article: Q65439
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/065/Q65439/
 	
 	=============================================================================
 	
+
+{% endraw %}

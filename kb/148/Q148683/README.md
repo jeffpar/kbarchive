@@ -6,6 +6,8 @@ permalink: /kb/148/Q148683/
 
 ## Q148683: FIX: Command Button's Default Property Cannot Be Changed
 
+{% raw %}
+
 	Article: Q148683
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -104,3 +106,5 @@ permalink: /kb/148/Q148683/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86031/
 
 ## Q86031: DOC: Pen Documentation in Windows Resource Kit Incorrect
 
+{% raw %}
+
 	Article: Q86031
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/086/Q86031/
 	
 	=============================================================================
 	
+
+{% endraw %}

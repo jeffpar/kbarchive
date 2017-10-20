@@ -6,6 +6,8 @@ permalink: /kb/146/Q146193/
 
 ## Q146193: Internet Information Server 1.0 FAQ
 
+{% raw %}
+
 	Article: Q146193
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -325,3 +327,5 @@ permalink: /kb/146/Q146193/
 	
 	=============================================================================
 	
+
+{% endraw %}

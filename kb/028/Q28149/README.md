@@ -6,6 +6,8 @@ permalink: /kb/028/Q28149/
 
 ## Q28149: &quot;Device I/O Error&quot; Error 57 with OPEN COM1:; Use ON ERROR GOTO
 
+{% raw %}
+
 	Article: Q28149
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -147,3 +149,5 @@ permalink: /kb/028/Q28149/
 	  PRINT "ESC - Display this Help Message"
 	  PRINT
 	RETURN
+
+{% endraw %}

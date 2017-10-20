@@ -6,6 +6,8 @@ permalink: /kb/225/Q225026/
 
 ## Q225026: Unable to Share Root Folder Using Share a Folder Wizard
 
+{% raw %}
+
 	Article: Q225026
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -87,3 +89,5 @@ permalink: /kb/225/Q225026/
 	
 	=============================================================================
 	
+
+{% endraw %}

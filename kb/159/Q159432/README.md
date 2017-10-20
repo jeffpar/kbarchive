@@ -6,6 +6,8 @@ permalink: /kb/159/Q159432/
 
 ## Q159432: FP97: Replaced Text Inherits Previous Font Characteristics
 
+{% raw %}
+
 	Article: Q159432
 	Product(s): Word Front Page
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/159/Q159432/
 	
 	=============================================================================
 	
+
+{% endraw %}

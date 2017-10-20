@@ -6,6 +6,8 @@ permalink: /kb/136/Q136947/
 
 ## Q136947: PRB: Corrupted .vcx or .vct File Causes Visual FoxPro to Hang
 
+{% raw %}
+
 	Article: Q136947
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/136/Q136947/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194593/
 
 ## Q194593: Print Sessions May Fail to Start When Using Host Print Service
 
+{% raw %}
+
 	Article: Q194593
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -80,3 +82,5 @@ permalink: /kb/194/Q194593/
 	
 	=============================================================================
 	
+
+{% endraw %}

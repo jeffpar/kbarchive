@@ -6,6 +6,8 @@ permalink: /kb/061/Q61313/
 
 ## Q61313: malloc() Is Slower in Large and Compact Models
 
+{% raw %}
+
 	Article: Q61313
 	Product(s): See article
 	Version(s): 5.00 5.10 6.00 | 5.10 6.00
@@ -51,3 +53,5 @@ permalink: /kb/061/Q61313/
 	Note that adjusting the value of _amblksiz affects both near- and
 	far-heap allocation. Adjusting this value has no effect on halloc or
 	_nmalloc in any memory model.
+
+{% endraw %}

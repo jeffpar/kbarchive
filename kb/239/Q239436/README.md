@@ -6,6 +6,8 @@ permalink: /kb/239/Q239436/
 
 ## Q239436: PRB: LNK2001 on Template Member Functions
 
+{% raw %}
+
 	Article: Q239436
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -103,3 +105,5 @@ permalink: /kb/239/Q239436/
 	
 	=============================================================================
 	
+
+{% endraw %}

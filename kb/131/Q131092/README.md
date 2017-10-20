@@ -6,6 +6,8 @@ permalink: /kb/131/Q131092/
 
 ## Q131092: PRB: Keyword Expansion Is Case Sensitive
 
+{% raw %}
+
 	Article: Q131092
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/131/Q131092/
 	
 	=============================================================================
 	
+
+{% endraw %}

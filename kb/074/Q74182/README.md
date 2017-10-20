@@ -6,6 +6,8 @@ permalink: /kb/074/Q74182/
 
 ## Q74182: ANSI.SYS /L Switch Not Available in MS-DOS 5.0 or Later
 
+{% raw %}
+
 	Article: Q74182
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -39,3 +41,5 @@ permalink: /kb/074/Q74182/
 	
 	=============================================================================
 	
+
+{% endraw %}

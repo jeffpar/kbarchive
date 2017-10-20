@@ -6,6 +6,8 @@ permalink: /kb/111/Q111068/
 
 ## Q111068: Configuring RAS Callback Time Parameters
 
+{% raw %}
+
 	Article: Q111068
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.1,1.1a,1.x,3.1,3.11,3.5
@@ -116,3 +118,5 @@ permalink: /kb/111/Q111068/
 	
 	=============================================================================
 	
+
+{% endraw %}

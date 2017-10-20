@@ -6,6 +6,8 @@ permalink: /kb/266/Q266681/
 
 ## Q266681: PRB: RTRIM() Function in SQL Select Does Not Remove Trailing Spa
 
+{% raw %}
+
 	Article: Q266681
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -117,3 +119,5 @@ permalink: /kb/266/Q266681/
 	
 	=============================================================================
 	
+
+{% endraw %}

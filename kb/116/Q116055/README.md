@@ -6,6 +6,8 @@ permalink: /kb/116/Q116055/
 
 ## Q116055: Baseball: Help Stays Open After Baseball Closes
 
+{% raw %}
+
 	Article: Q116055
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1995-1996 edition; WINDOWS:
@@ -41,3 +43,5 @@ permalink: /kb/116/Q116055/
 	
 	=============================================================================
 	
+
+{% endraw %}

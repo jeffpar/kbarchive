@@ -6,6 +6,8 @@ permalink: /kb/238/Q238027/
 
 ## Q238027: Winning Chess Strategies Comments and Corrections
 
+{% raw %}
+
 	Article: Q238027
 	Product(s): Microsoft Press
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/238/Q238027/
 	
 	=============================================================================
 	
+
+{% endraw %}

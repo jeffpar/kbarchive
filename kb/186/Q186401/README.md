@@ -6,6 +6,8 @@ permalink: /kb/186/Q186401/
 
 ## Q186401: Leak in Services.exe
 
+{% raw %}
+
 	Article: Q186401
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/186/Q186401/
 	
 	=============================================================================
 	
+
+{% endraw %}

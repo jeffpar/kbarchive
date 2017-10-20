@@ -6,6 +6,8 @@ permalink: /kb/126/Q126985/
 
 ## Q126985: INFO: Unattended Setup Switch Fails to Run
 
+{% raw %}
+
 	Article: Q126985
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -85,3 +87,5 @@ permalink: /kb/126/Q126985/
 	
 	=============================================================================
 	
+
+{% endraw %}

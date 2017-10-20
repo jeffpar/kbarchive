@@ -6,6 +6,8 @@ permalink: /kb/154/Q154438/
 
 ## Q154438: Koi and Bunyan: Ejecting CD During Setup Causes Error Message
 
+{% raw %}
+
 	Article: Q154438
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0,3.1
@@ -78,3 +80,5 @@ permalink: /kb/154/Q154438/
 	
 	=============================================================================
 	
+
+{% endraw %}

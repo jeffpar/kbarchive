@@ -6,6 +6,8 @@ permalink: /kb/074/Q74047/
 
 ## Q74047: How to Boot a PS/1 from a Floppy or Fixed Disk
 
+{% raw %}
+
 	Article: Q74047
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.0,4.01,4.01a,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -50,3 +52,5 @@ permalink: /kb/074/Q74047/
 	
 	=============================================================================
 	
+
+{% endraw %}

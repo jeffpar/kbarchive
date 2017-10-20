@@ -6,6 +6,8 @@ permalink: /kb/149/Q149753/
 
 ## Q149753: How to Determine the Size of a User-Defined Data Type
 
+{% raw %}
+
 	Article: Q149753
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/149/Q149753/
 	
 	=============================================================================
 	
+
+{% endraw %}

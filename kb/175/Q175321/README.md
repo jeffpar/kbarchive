@@ -6,6 +6,8 @@ permalink: /kb/175/Q175321/
 
 ## Q175321: SNA Client Sessions Hang Until SNA Server Is Restarted
 
+{% raw %}
+
 	Article: Q175321
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2.11,2.11SP1,2.11SP2,3.0,3.0SP1,3.0SP2; winnt:3.51,4.0
@@ -145,3 +147,5 @@ permalink: /kb/175/Q175321/
 	
 	=============================================================================
 	
+
+{% endraw %}

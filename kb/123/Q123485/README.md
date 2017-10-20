@@ -6,6 +6,8 @@ permalink: /kb/123/Q123485/
 
 ## Q123485: Troubleshooting Print Overflow/Overrun Errors w/LaserJet 4
 
+{% raw %}
+
 	Article: Q123485
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:3.1,3.11,95
@@ -195,3 +197,5 @@ permalink: /kb/123/Q123485/
 	
 	=============================================================================
 	
+
+{% endraw %}

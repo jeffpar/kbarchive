@@ -6,6 +6,8 @@ permalink: /kb/192/Q192841/
 
 ## Q192841: Difficulties Using AMD K6-2 or Athlon Central Processing Unit
 
+{% raw %}
+
 	Article: Q192841
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1,2.5
@@ -164,3 +166,5 @@ permalink: /kb/192/Q192841/
 	
 	=============================================================================
 	
+
+{% endraw %}

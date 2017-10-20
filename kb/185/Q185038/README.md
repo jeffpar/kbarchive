@@ -6,6 +6,8 @@ permalink: /kb/185/Q185038/
 
 ## Q185038: XCLN: Message Recall Failure when Recalling a Message
 
+{% raw %}
+
 	Article: Q185038
 	Product(s): Microsoft Exchange
 	Version(s): 8.03; WINDOWS:; winnt:4.0,5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/185/Q185038/
 	
 	=============================================================================
 	
+
+{% endraw %}

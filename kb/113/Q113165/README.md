@@ -6,6 +6,8 @@ permalink: /kb/113/Q113165/
 
 ## Q113165: PC Ext: Err Msg: Retry Count Exceeded
 
+{% raw %}
+
 	Article: Q113165
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -89,3 +91,5 @@ permalink: /kb/113/Q113165/
 	
 	=============================================================================
 	
+
+{% endraw %}

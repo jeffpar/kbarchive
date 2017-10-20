@@ -6,6 +6,8 @@ permalink: /kb/181/Q181664/
 
 ## Q181664: PRB: Rich Edit Control Message Handlers Are Not Called
 
+{% raw %}
+
 	Article: Q181664
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -127,3 +129,5 @@ permalink: /kb/181/Q181664/
 	
 	=============================================================================
 	
+
+{% endraw %}

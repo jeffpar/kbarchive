@@ -6,6 +6,8 @@ permalink: /kb/275/Q275582/
 
 ## Q275582: Pocket Streets 2001: Exported Pushpins Appear in Wrong Location
 
+{% raw %}
+
 	Article: Q275582
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/275/Q275582/
 	
 	=============================================================================
 	
+
+{% endraw %}

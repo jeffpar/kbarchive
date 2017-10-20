@@ -6,6 +6,8 @@ permalink: /kb/268/Q268105/
 
 ## Q268105: XADM: Mailbox Manager May Access Violate Cleaning a Container
 
+{% raw %}
+
 	Article: Q268105
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -83,3 +85,5 @@ permalink: /kb/268/Q268105/
 	
 	=============================================================================
 	
+
+{% endraw %}

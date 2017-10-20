@@ -6,6 +6,8 @@ permalink: /kb/130/Q130054/
 
 ## Q130054: HOWTO: How to Determine the Japanese OEM Windows Version
 
+{% raw %}
+
 	Article: Q130054
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.1; WINDOWS:1.2,3.5
@@ -70,3 +72,5 @@ permalink: /kb/130/Q130054/
 	
 	=============================================================================
 	
+
+{% endraw %}

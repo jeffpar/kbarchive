@@ -6,6 +6,8 @@ permalink: /kb/317/Q317649/
 
 ## Q317649: PRB: Cannot Add Filenames Containing UTF-8 Characters to VSS SCC
 
+{% raw %}
+
 	Article: Q317649
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0,6.0c
@@ -68,3 +70,5 @@ permalink: /kb/317/Q317649/
 	
 	=============================================================================
 	
+
+{% endraw %}

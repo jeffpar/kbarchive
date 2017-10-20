@@ -6,6 +6,8 @@ permalink: /kb/119/Q119087/
 
 ## Q119087: PC DOS: Attachments Save to Root with Monitor 3.0b
 
+{% raw %}
+
 	Article: Q119087
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b
@@ -59,3 +61,5 @@ permalink: /kb/119/Q119087/
 	
 	=============================================================================
 	
+
+{% endraw %}

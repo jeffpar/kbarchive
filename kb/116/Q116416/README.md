@@ -6,6 +6,8 @@ permalink: /kb/116/Q116416/
 
 ## Q116416: Mac Bookshelf 94: Err Msg: &quot;Installation Was Cancelled...&quot;
 
+{% raw %}
+
 	Article: Q116416
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -62,3 +64,5 @@ permalink: /kb/116/Q116416/
 	
 	=============================================================================
 	
+
+{% endraw %}

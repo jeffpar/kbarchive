@@ -6,6 +6,8 @@ permalink: /kb/147/Q147707/
 
 ## Q147707: INVProc Does Not Remove Packages Group when It Is Empty
 
+{% raw %}
+
 	Article: Q147707
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -55,3 +57,5 @@ permalink: /kb/147/Q147707/
 	
 	=============================================================================
 	
+
+{% endraw %}

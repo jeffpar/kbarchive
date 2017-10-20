@@ -6,6 +6,8 @@ permalink: /kb/065/Q65795/
 
 ## Q65795: Using the AST Fastboard with Windows 3.0
 
+{% raw %}
+
 	Article: Q65795
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/065/Q65795/
 	
 	=============================================================================
 	
+
+{% endraw %}

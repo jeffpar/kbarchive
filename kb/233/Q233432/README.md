@@ -6,6 +6,8 @@ permalink: /kb/233/Q233432/
 
 ## Q233432: Business Planner: Web Links Page Is Printed Twice
 
+{% raw %}
+
 	Article: Q233432
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/233/Q233432/
 	
 	=============================================================================
 	
+
+{% endraw %}

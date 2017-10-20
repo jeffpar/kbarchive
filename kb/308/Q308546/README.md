@@ -6,6 +6,8 @@ permalink: /kb/308/Q308546/
 
 ## Q308546: Err Msg: Link to the Room You Have Clicked on Is Out of Date
 
+{% raw %}
+
 	Article: Q308546
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/308/Q308546/
 	
 	=============================================================================
 	
+
+{% endraw %}

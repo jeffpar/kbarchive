@@ -6,6 +6,8 @@ permalink: /kb/141/Q141880/
 
 ## Q141880: BUG: Object Browser's Member Options Dialog Help Gives Error
 
+{% raw %}
+
 	Article: Q141880
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -89,3 +91,5 @@ permalink: /kb/141/Q141880/
 	
 	=============================================================================
 	
+
+{% endraw %}

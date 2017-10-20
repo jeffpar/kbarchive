@@ -6,6 +6,8 @@ permalink: /kb/125/Q125464/
 
 ## Q125464: How to Call SetCursorPos() API to Move Mouse Pointer in FoxPro
 
+{% raw %}
+
 	Article: Q125464
 	Product(s): Microsoft FoxPro
 	Version(s): 2.60a 3.00
@@ -80,3 +82,5 @@ permalink: /kb/125/Q125464/
 	
 	=============================================================================
 	
+
+{% endraw %}

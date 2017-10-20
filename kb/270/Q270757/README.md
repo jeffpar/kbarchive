@@ -6,6 +6,8 @@ permalink: /kb/270/Q270757/
 
 ## Q270757: ELL: DirectX Is Not Installed on Windows NT 4.0-Based Computers
 
+{% raw %}
+
 	Article: Q270757
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/270/Q270757/
 	
 	=============================================================================
 	
+
+{% endraw %}

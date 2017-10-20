@@ -6,6 +6,8 @@ permalink: /kb/167/Q167147/
 
 ## Q167147: FIX: Invalid Page Fault Occurs After Replicate of Enter Key
 
+{% raw %}
+
 	Article: Q167147
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -93,3 +95,5 @@ permalink: /kb/167/Q167147/
 	
 	=============================================================================
 	
+
+{% endraw %}

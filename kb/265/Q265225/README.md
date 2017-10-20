@@ -6,6 +6,8 @@ permalink: /kb/265/Q265225/
 
 ## Q265225: INF: HIS2000 AD Client Is Slow to Find Restarted Server
 
+{% raw %}
+
 	Article: Q265225
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -146,3 +148,5 @@ permalink: /kb/265/Q265225/
 	
 	=============================================================================
 	
+
+{% endraw %}

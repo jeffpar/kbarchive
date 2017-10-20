@@ -6,6 +6,8 @@ permalink: /kb/261/Q261112/
 
 ## Q261112: XADM: Bulk Edit Mailbox Properties w. Directory Export &amp; Import
 
+{% raw %}
+
 	Article: Q261112
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -85,3 +87,5 @@ permalink: /kb/261/Q261112/
 	
 	=============================================================================
 	
+
+{% endraw %}

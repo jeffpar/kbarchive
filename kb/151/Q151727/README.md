@@ -6,6 +6,8 @@ permalink: /kb/151/Q151727/
 
 ## Q151727: BUG: Mastering Exchange: Add/Remove Does not Remove all Files
 
+{% raw %}
+
 	Article: Q151727
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0; WINDOWS:95
@@ -65,3 +67,5 @@ permalink: /kb/151/Q151727/
 	
 	=============================================================================
 	
+
+{% endraw %}

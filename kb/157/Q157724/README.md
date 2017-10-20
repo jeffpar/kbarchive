@@ -6,6 +6,8 @@ permalink: /kb/157/Q157724/
 
 ## Q157724: BUG: Import Wizard Incorrectly Treats Consecutive Delimiters
 
+{% raw %}
+
 	Article: Q157724
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -79,3 +81,5 @@ permalink: /kb/157/Q157724/
 	
 	=============================================================================
 	
+
+{% endraw %}

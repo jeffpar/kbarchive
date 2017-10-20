@@ -6,6 +6,8 @@ permalink: /kb/180/Q180733/
 
 ## Q180733: HOWTO: Add Context-Sensitive Help to Your ActiveX Control
 
+{% raw %}
+
 	Article: Q180733
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/180/Q180733/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185815/
 
 ## Q185815: WINS Event 4294: Client Does Not Have the Permissions...
 
+{% raw %}
+
 	Article: Q185815
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -83,3 +85,5 @@ permalink: /kb/185/Q185815/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188426/
 
 ## Q188426: WD97: Macro to Insert Style Name in Each Paragraph
 
+{% raw %}
+
 	Article: Q188426
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -97,3 +99,5 @@ permalink: /kb/188/Q188426/
 	
 	=============================================================================
 	
+
+{% endraw %}

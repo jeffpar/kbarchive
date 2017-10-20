@@ -6,6 +6,8 @@ permalink: /kb/071/Q71161/
 
 ## Q71161: Appending Binary Files Using the COPY Command
 
+{% raw %}
+
 	Article: Q71161
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0a,6.0,6.2,6.21,6.22
@@ -60,3 +62,5 @@ permalink: /kb/071/Q71161/
 	
 	=============================================================================
 	
+
+{% endraw %}

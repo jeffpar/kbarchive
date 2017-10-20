@@ -6,6 +6,8 @@ permalink: /kb/171/Q171277/
 
 ## Q171277: Microsoft Cluster Server Cluster Resource Failover Time
 
+{% raw %}
+
 	Article: Q171277
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -93,3 +95,5 @@ permalink: /kb/171/Q171277/
 	
 	=============================================================================
 	
+
+{% endraw %}

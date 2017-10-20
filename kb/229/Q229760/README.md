@@ -6,6 +6,8 @@ permalink: /kb/229/Q229760/
 
 ## Q229760: Service Pack 5 Updates Scsiport.sys as Expected
 
+{% raw %}
+
 	Article: Q229760
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/229/Q229760/
 	
 	=============================================================================
 	
+
+{% endraw %}

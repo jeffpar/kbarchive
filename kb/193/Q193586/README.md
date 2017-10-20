@@ -6,6 +6,8 @@ permalink: /kb/193/Q193586/
 
 ## Q193586: PRB: Error &quot;Rights.Dat is already open&quot; When Running Ddupd.exe
 
+{% raw %}
+
 	Article: Q193586
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -76,3 +78,5 @@ permalink: /kb/193/Q193586/
 	
 	=============================================================================
 	
+
+{% endraw %}

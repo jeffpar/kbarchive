@@ -6,6 +6,8 @@ permalink: /kb/256/Q256590/
 
 ## Q256590: XFOR: Configuring Port Assignment for Internet Mail Service
 
+{% raw %}
+
 	Article: Q256590
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -40,3 +42,5 @@ permalink: /kb/256/Q256590/
 	
 	=============================================================================
 	
+
+{% endraw %}

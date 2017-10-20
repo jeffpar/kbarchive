@@ -6,6 +6,8 @@ permalink: /kb/179/Q179107/
 
 ## Q179107: STOP 0x0000000A in Raspptpe.sys on a Windows NT PPTP Server
 
+{% raw %}
+
 	Article: Q179107
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -82,3 +84,5 @@ permalink: /kb/179/Q179107/
 	
 	=============================================================================
 	
+
+{% endraw %}

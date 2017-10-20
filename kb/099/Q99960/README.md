@@ -6,6 +6,8 @@ permalink: /kb/099/Q99960/
 
 ## Q99960: Fault Tolerance Allows FDISKPM to Delete Mirror Partition
 
+{% raw %}
+
 	Article: Q99960
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/099/Q99960/
 	
 	=============================================================================
 	
+
+{% endraw %}

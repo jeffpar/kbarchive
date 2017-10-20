@@ -6,6 +6,8 @@ permalink: /kb/082/Q82808/
 
 ## Q82808: Designer, Draw, and Charisma Not Found by Setup
 
+{% raw %}
+
 	Article: Q82808
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -36,3 +38,5 @@ permalink: /kb/082/Q82808/
 	
 	=============================================================================
 	
+
+{% endraw %}

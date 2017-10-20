@@ -6,6 +6,8 @@ permalink: /kb/279/Q279636/
 
 ## Q279636: MechWarrior 4: Error Message: STOP: Scroll Lock Pressed
 
+{% raw %}
+
 	Article: Q279636
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/279/Q279636/
 	
 	=============================================================================
 	
+
+{% endraw %}

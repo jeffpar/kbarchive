@@ -6,6 +6,8 @@ permalink: /kb/130/Q130359/
 
 ## Q130359: Windows NT 3.5 RAS: Buying a Supported 28,800 bps Modem
 
+{% raw %}
+
 	Article: Q130359
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -126,3 +128,5 @@ permalink: /kb/130/Q130359/
 	
 	=============================================================================
 	
+
+{% endraw %}

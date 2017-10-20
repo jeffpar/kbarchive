@@ -6,6 +6,8 @@ permalink: /kb/235/Q235048/
 
 ## Q235048: Quick Course in Microsoft Internet Explorer 5
 
+{% raw %}
+
 	Article: Q235048
 	Product(s): Microsoft Press
 	Version(s): 
@@ -213,3 +215,5 @@ permalink: /kb/235/Q235048/
 	
 	=============================================================================
 	
+
+{% endraw %}

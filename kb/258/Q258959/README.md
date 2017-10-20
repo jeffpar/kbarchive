@@ -6,6 +6,8 @@ permalink: /kb/258/Q258959/
 
 ## Q258959: XADM: How to Save Properties to a File Using Mdbvu32.exe
 
+{% raw %}
+
 	Article: Q258959
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -114,3 +116,5 @@ permalink: /kb/258/Q258959/
 	
 	=============================================================================
 	
+
+{% endraw %}

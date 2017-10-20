@@ -6,6 +6,8 @@ permalink: /kb/132/Q132904/
 
 ## Q132904: Windows NT Upgrade Err Msg: ... NtPathToDosPath reported...
 
+{% raw %}
+
 	Article: Q132904
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:3.5,3.51
@@ -65,3 +67,5 @@ permalink: /kb/132/Q132904/
 	
 	=============================================================================
 	
+
+{% endraw %}

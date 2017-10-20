@@ -6,6 +6,8 @@ permalink: /kb/177/Q177011/
 
 ## Q177011: Generated COBOL Will Not Compile
 
+{% raw %}
+
 	Article: Q177011
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0
@@ -85,3 +87,5 @@ permalink: /kb/177/Q177011/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/301/Q301260/
 
 ## Q301260: HOW TO: Install SQL Server CE by Using eMbedded Visual Basic
 
+{% raw %}
+
 	Article: Q301260
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -136,3 +138,5 @@ permalink: /kb/301/Q301260/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40375/
 
 ## Q40375: Incomplete Memory Model Switch in User's Guide Example
 
+{% raw %}
+
 	Article: Q40375
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -29,3 +31,5 @@ permalink: /kb/040/Q40375/
 	
 	This error occurs because the data pointer size has not been
 	specified.
+
+{% endraw %}

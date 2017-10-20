@@ -6,6 +6,8 @@ permalink: /kb/231/Q231826/
 
 ## Q231826: Turning Off MSN Removes MSN User Settings
 
+{% raw %}
+
 	Article: Q231826
 	Product(s): The Microsoft Network
 	Version(s): 5.0,5.1,5.2,5.3
@@ -48,3 +50,5 @@ permalink: /kb/231/Q231826/
 	
 	=============================================================================
 	
+
+{% endraw %}

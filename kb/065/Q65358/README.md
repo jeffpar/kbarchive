@@ -6,6 +6,8 @@ permalink: /kb/065/Q65358/
 
 ## Q65358: C 6.00 Incorrectly Evaluates Pointer Arrays to Constant Data
 
+{% raw %}
+
 	Article: Q65358
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -41,3 +43,5 @@ permalink: /kb/065/Q65358/
 	Microsoft has confirmed this to be a problem with the Microsoft C
 	Compiler version 6.00. We are researching this problem and will post
 	new information here as it becomes available.
+
+{% endraw %}

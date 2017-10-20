@@ -6,6 +6,8 @@ permalink: /kb/035/Q35817/
 
 ## Q35817: M on an AMDEK System 88 XT Clone
 
+{% raw %}
+
 	Article: Q35817
 	Product(s): See article
 	Version(s): 1.00
@@ -37,3 +39,5 @@ permalink: /kb/035/Q35817/
 	By running SETEPC.EXE, a switch is set so M sees the keyboard as a XT
 	keyboard and everything functions properly. CLREPC.EXE clears this
 	switch.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114361/
 
 ## Q114361: Novell DOS 7 Files That Remain After Installing MS-DOS 6.21
 
+{% raw %}
+
 	Article: Q114361
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21
@@ -120,3 +122,5 @@ permalink: /kb/114/Q114361/
 	
 	=============================================================================
 	
+
+{% endraw %}

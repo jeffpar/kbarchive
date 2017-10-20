@@ -6,6 +6,8 @@ permalink: /kb/297/Q297200/
 
 ## Q297200: Microsoft Enterprise Learning Library: Step by Step Interactive
 
+{% raw %}
+
 	Article: Q297200
 	Product(s): Microsoft Press
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/297/Q297200/
 	
 	=============================================================================
 	
+
+{% endraw %}

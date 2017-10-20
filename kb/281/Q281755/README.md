@@ -6,6 +6,8 @@ permalink: /kb/281/Q281755/
 
 ## Q281755: HOWTO: Connect to FileMaker Pro from Visual Basic with ODBC
 
+{% raw %}
+
 	Article: Q281755
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -103,3 +105,5 @@ permalink: /kb/281/Q281755/
 	
 	=============================================================================
 	
+
+{% endraw %}

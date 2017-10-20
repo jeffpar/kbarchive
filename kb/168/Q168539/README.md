@@ -6,6 +6,8 @@ permalink: /kb/168/Q168539/
 
 ## Q168539: XFOR: How to Delete Exchange Dirsync Server
 
+{% raw %}
+
 	Article: Q168539
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -91,3 +93,5 @@ permalink: /kb/168/Q168539/
 	
 	=============================================================================
 	
+
+{% endraw %}

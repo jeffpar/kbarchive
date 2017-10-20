@@ -6,6 +6,8 @@ permalink: /kb/156/Q156468/
 
 ## Q156468: Writer 2: You Can Enter Anything As Web Link
 
+{% raw %}
+
 	Article: Q156468
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -44,3 +46,5 @@ permalink: /kb/156/Q156468/
 	
 	=============================================================================
 	
+
+{% endraw %}

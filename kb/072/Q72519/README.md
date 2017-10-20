@@ -6,6 +6,8 @@ permalink: /kb/072/Q72519/
 
 ## Q72519: NCR 286 Requires BIOS 4.42 or Later to Run in Standard Mode
 
+{% raw %}
+
 	Article: Q72519
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -32,3 +34,5 @@ permalink: /kb/072/Q72519/
 	
 	=============================================================================
 	
+
+{% endraw %}

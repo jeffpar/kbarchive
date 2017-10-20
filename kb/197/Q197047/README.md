@@ -6,6 +6,8 @@ permalink: /kb/197/Q197047/
 
 ## Q197047: Failover/Failback Policies on Microsoft Cluster Server
 
+{% raw %}
+
 	Article: Q197047
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -117,3 +119,5 @@ permalink: /kb/197/Q197047/
 	
 	=============================================================================
 	
+
+{% endraw %}

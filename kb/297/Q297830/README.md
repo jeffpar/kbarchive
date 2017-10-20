@@ -6,6 +6,8 @@ permalink: /kb/297/Q297830/
 
 ## Q297830: FIX: Error Assigning Memo Field To _CLIPTEXT Variable
 
+{% raw %}
+
 	Article: Q297830
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -66,3 +68,5 @@ permalink: /kb/297/Q297830/
 	
 	=============================================================================
 	
+
+{% endraw %}

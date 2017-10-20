@@ -6,6 +6,8 @@ permalink: /kb/152/Q152858/
 
 ## Q152858: XGEN: How to Obtain Exchange Server 4.0 U.S. Service Pack 2
 
+{% raw %}
+
 	Article: Q152858
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -153,3 +155,5 @@ permalink: /kb/152/Q152858/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154944/
 
 ## Q154944: Power PC (PPC) Only: OldIrql Is Stored Before Spinlock
 
+{% raw %}
+
 	Article: Q154944
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -65,3 +67,5 @@ permalink: /kb/154/Q154944/
 	
 	=============================================================================
 	
+
+{% endraw %}

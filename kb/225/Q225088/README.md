@@ -6,6 +6,8 @@ permalink: /kb/225/Q225088/
 
 ## Q225088: Services.exe Problems When You Try to View Log Files
 
+{% raw %}
+
 	Article: Q225088
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -66,3 +68,5 @@ permalink: /kb/225/Q225088/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/042/Q42700/
 
 ## Q42700: BASIC User-Entry Points Cannot Be Called from Other Languages
 
+{% raw %}
+
 	Article: Q42700
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -28,3 +30,5 @@ permalink: /kb/042/Q42700/
 	Professional Development System (PDS) Version 7.00 or 7.10 for MS-DOS
 	and MS OS/2. This note should be removed, since there are no such
 	user-entry points available.
+
+{% endraw %}

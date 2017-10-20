@@ -6,6 +6,8 @@ permalink: /kb/130/Q130995/
 
 ## Q130995: RAS:&quot;Error 1326&quot; or &quot;Access Denied&quot; Connecting to Remote Share
 
+{% raw %}
+
 	Article: Q130995
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): ; winnt:3.5,3.51
@@ -173,3 +175,5 @@ permalink: /kb/130/Q130995/
 	
 	=============================================================================
 	
+
+{% endraw %}

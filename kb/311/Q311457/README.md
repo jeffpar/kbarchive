@@ -6,6 +6,8 @@ permalink: /kb/311/Q311457/
 
 ## Q311457: SMS: How to Obtain and Install SMS 2.0 SP4
 
+{% raw %}
+
 	Article: Q311457
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -154,3 +156,5 @@ permalink: /kb/311/Q311457/
 	
 	=============================================================================
 	
+
+{% endraw %}

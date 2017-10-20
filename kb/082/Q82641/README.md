@@ -6,6 +6,8 @@ permalink: /kb/082/Q82641/
 
 ## Q82641: Windows 3.1 Serial Communications Improvements
 
+{% raw %}
+
 	Article: Q82641
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/082/Q82641/
 	
 	=============================================================================
 	
+
+{% endraw %}

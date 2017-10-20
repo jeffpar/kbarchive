@@ -6,6 +6,8 @@ permalink: /kb/103/Q103955/
 
 ## Q103955: Overview: SMB Structure is Standard Vehicle for Requests
 
+{% raw %}
+
 	Article: Q103955
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/103/Q103955/
 	
 	=============================================================================
 	
+
+{% endraw %}

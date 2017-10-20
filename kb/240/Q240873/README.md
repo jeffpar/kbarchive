@@ -6,6 +6,8 @@ permalink: /kb/240/Q240873/
 
 ## Q240873: XFOR: Notes Migration Source Extractor Fails To Migrate Mail
 
+{% raw %}
+
 	Article: Q240873
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -82,3 +84,5 @@ permalink: /kb/240/Q240873/
 	
 	=============================================================================
 	
+
+{% endraw %}

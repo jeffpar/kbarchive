@@ -6,6 +6,8 @@ permalink: /kb/140/Q140827/
 
 ## Q140827: TN3270 Server Incorrectly Formats Mod 5 Terminal LU-SSCP Screens
 
+{% raw %}
+
 	Article: Q140827
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -55,3 +57,5 @@ permalink: /kb/140/Q140827/
 	
 	=============================================================================
 	
+
+{% endraw %}

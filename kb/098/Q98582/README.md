@@ -6,6 +6,8 @@ permalink: /kb/098/Q98582/
 
 ## Q98582: Changes Made to Windows .INI Files by MS-DOS 6 Applications
 
+{% raw %}
+
 	Article: Q98582
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -105,3 +107,5 @@ permalink: /kb/098/Q98582/
 	
 	=============================================================================
 	
+
+{% endraw %}

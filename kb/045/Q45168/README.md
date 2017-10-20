@@ -6,6 +6,8 @@ permalink: /kb/045/Q45168/
 
 ## Q45168: Finding Address of Run-Time Error Line Using .LST or LINK /LI
 
+{% raw %}
+
 	Article: Q45168
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -83,3 +85,5 @@ permalink: /kb/045/Q45168/
 	   and MS OS/2
 	
 	The BASIC PDS manuals correctly document the /LI option.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155986/
 
 ## Q155986: NetBT Communication Slow on Multihomed Client
 
+{% raw %}
+
 	Article: Q155986
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -67,3 +69,5 @@ permalink: /kb/155/Q155986/
 	
 	=============================================================================
 	
+
+{% endraw %}

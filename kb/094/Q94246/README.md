@@ -6,6 +6,8 @@ permalink: /kb/094/Q94246/
 
 ## Q94246: TCP Connections Require Extra Time to Close
 
+{% raw %}
+
 	Article: Q94246
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -116,3 +118,5 @@ permalink: /kb/094/Q94246/
 	
 	=============================================================================
 	
+
+{% endraw %}

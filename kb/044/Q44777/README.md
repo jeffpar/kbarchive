@@ -6,6 +6,8 @@ permalink: /kb/044/Q44777/
 
 ## Q44777: NMAKE Uses &quot;makefile &quot; Ignoring File Name on Command Line
 
+{% raw %}
+
 	Article: Q44777
 	Product(s): See article
 	Version(s): 1.00
@@ -29,3 +31,5 @@ permalink: /kb/044/Q44777/
 	
 	This is expected behavior, as documented on Page 156 of the "Microsoft
 	QuickC ToolKit" manual for QuickC Version 2.00.
+
+{% endraw %}

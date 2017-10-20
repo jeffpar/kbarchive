@@ -6,6 +6,8 @@ permalink: /kb/040/Q40632/
 
 ## Q40632: If PRINT Fails on Non-Standard System, PRINT#n to &quot;CONS:&quot;
 
+{% raw %}
+
 	Article: Q40632
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -64,3 +66,5 @@ permalink: /kb/040/Q40632/
 	PRINT #1, "Howdy pahd-nuh..."
 	CLOSE #1
 	END
+
+{% endraw %}

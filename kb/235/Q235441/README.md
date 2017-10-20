@@ -6,6 +6,8 @@ permalink: /kb/235/Q235441/
 
 ## Q235441: XFOR: Dirsync with Verimation Memo 6.3 Fails Doesn't Work
 
+{% raw %}
+
 	Article: Q235441
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -83,3 +85,5 @@ permalink: /kb/235/Q235441/
 	
 	=============================================================================
 	
+
+{% endraw %}

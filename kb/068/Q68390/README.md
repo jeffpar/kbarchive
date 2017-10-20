@@ -6,6 +6,8 @@ permalink: /kb/068/Q68390/
 
 ## Q68390: &quot;C1063: Stack Overflow&quot; Caused by Taking Address of Constant
 
+{% raw %}
+
 	Article: Q68390
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -45,3 +47,5 @@ permalink: /kb/068/Q68390/
 	{
 	   foo(&"ABC");
 	}
+
+{% endraw %}

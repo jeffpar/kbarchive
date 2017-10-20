@@ -6,6 +6,8 @@ permalink: /kb/158/Q158724/
 
 ## Q158724: HTTP 500 Server Error Unable to Perform a Security Operation
 
+{% raw %}
+
 	Article: Q158724
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0,4.0
@@ -61,3 +63,5 @@ permalink: /kb/158/Q158724/
 	
 	=============================================================================
 	
+
+{% endraw %}

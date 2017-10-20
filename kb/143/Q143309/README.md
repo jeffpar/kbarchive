@@ -6,6 +6,8 @@ permalink: /kb/143/Q143309/
 
 ## Q143309: FIX: Report Writer Ignores Constant Band Height Setting
 
+{% raw %}
+
 	Article: Q143309
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -81,3 +83,5 @@ permalink: /kb/143/Q143309/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154557/
 
 ## Q154557: Cache Icon Does Not Appear in DNS Manager
 
+{% raw %}
+
 	Article: Q154557
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -38,3 +40,5 @@ permalink: /kb/154/Q154557/
 	
 	=============================================================================
 	
+
+{% endraw %}

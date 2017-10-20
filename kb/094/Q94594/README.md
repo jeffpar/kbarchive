@@ -6,6 +6,8 @@ permalink: /kb/094/Q94594/
 
 ## Q94594: Windows Sound System and Berkeley Systems' Screen Savers
 
+{% raw %}
+
 	Article: Q94594
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.00 1.00a, 2.00
@@ -92,3 +94,5 @@ permalink: /kb/094/Q94594/
 	
 	=============================================================================
 	
+
+{% endraw %}

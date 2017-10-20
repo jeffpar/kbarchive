@@ -6,6 +6,8 @@ permalink: /kb/162/Q162218/
 
 ## Q162218: Unable to Rename WinNT Root Dir After Upgrade to WinNT 4.0
 
+{% raw %}
+
 	Article: Q162218
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -52,3 +54,5 @@ permalink: /kb/162/Q162218/
 	
 	=============================================================================
 	
+
+{% endraw %}

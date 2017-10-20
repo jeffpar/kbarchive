@@ -6,6 +6,8 @@ permalink: /kb/259/Q259195/
 
 ## Q259195: Cannot Control COMMIT or ROLLBACK Commands Using ADO with DB2 an
 
+{% raw %}
+
 	Article: Q259195
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP3
@@ -75,3 +77,5 @@ permalink: /kb/259/Q259195/
 	
 	=============================================================================
 	
+
+{% endraw %}

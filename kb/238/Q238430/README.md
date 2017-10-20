@@ -6,6 +6,8 @@ permalink: /kb/238/Q238430/
 
 ## Q238430: XCON: Msg with 3+ Attachments Has Wrong Attachment Name
 
+{% raw %}
+
 	Article: Q238430
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -63,3 +65,5 @@ permalink: /kb/238/Q238430/
 	
 	=============================================================================
 	
+
+{% endraw %}

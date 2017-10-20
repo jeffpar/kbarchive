@@ -6,6 +6,8 @@ permalink: /kb/132/Q132727/
 
 ## Q132727: How to Use a UDF to Calculate Percentages in a Report
 
+{% raw %}
+
 	Article: Q132727
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6a,3.0
@@ -59,3 +61,5 @@ permalink: /kb/132/Q132727/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134476/
 
 ## Q134476: MS Paint Color Eraser Tool Does Not Erase Bitmap
 
+{% raw %}
+
 	Article: Q134476
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -46,3 +48,5 @@ permalink: /kb/134/Q134476/
 	
 	=============================================================================
 	
+
+{% endraw %}

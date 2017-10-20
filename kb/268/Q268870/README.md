@@ -6,6 +6,8 @@ permalink: /kb/268/Q268870/
 
 ## Q268870: Internet Explorer Exhausts System/User Resources w/ Some Pages
 
+{% raw %}
+
 	Article: Q268870
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/268/Q268870/
 	
 	=============================================================================
 	
+
+{% endraw %}

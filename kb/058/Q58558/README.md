@@ -6,6 +6,8 @@ permalink: /kb/058/Q58558/
 
 ## Q58558: Mac Hyp: AddField Adds Information to Nonstandard Form Fields
 
+{% raw %}
+
 	Article: Q58558
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -70,3 +72,5 @@ permalink: /kb/058/Q58558/
 	
 	=============================================================================
 	
+
+{% endraw %}

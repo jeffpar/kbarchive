@@ -6,6 +6,8 @@ permalink: /kb/260/Q260103/
 
 ## Q260103: FIX: IDE Memory Leak on Form Run/Stop in Visual Basic 6
 
+{% raw %}
+
 	Article: Q260103
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0,6.0 SP4,6.0 sp1, sp2, sp3
@@ -83,3 +85,5 @@ permalink: /kb/260/Q260103/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/215/Q215079/
 
 ## Q215079: SMS: Unable to Establish Remote Connection to IPX Client
 
+{% raw %}
+
 	Article: Q215079
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -55,3 +57,5 @@ permalink: /kb/215/Q215079/
 	
 	=============================================================================
 	
+
+{% endraw %}

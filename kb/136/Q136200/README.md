@@ -6,6 +6,8 @@ permalink: /kb/136/Q136200/
 
 ## Q136200: Slow Behavior In Plus! Pack Screen Savers When Fury3 Started
 
+{% raw %}
+
 	Article: Q136200
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/136/Q136200/
 	
 	=============================================================================
 	
+
+{% endraw %}

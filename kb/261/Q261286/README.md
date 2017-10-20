@@ -6,6 +6,8 @@ permalink: /kb/261/Q261286/
 
 ## Q261286: SMS: &quot;Could Not Connect to Registry Key&quot; Message in SQL Monitor
 
+{% raw %}
+
 	Article: Q261286
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -112,3 +114,5 @@ permalink: /kb/261/Q261286/
 	
 	=============================================================================
 	
+
+{% endraw %}

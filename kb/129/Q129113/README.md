@@ -6,6 +6,8 @@ permalink: /kb/129/Q129113/
 
 ## Q129113: WINS Server Event 4206 Log Entries May Not be Valid
 
+{% raw %}
+
 	Article: Q129113
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -39,3 +41,5 @@ permalink: /kb/129/Q129113/
 	
 	=============================================================================
 	
+
+{% endraw %}

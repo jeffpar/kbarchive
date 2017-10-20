@@ -6,6 +6,8 @@ permalink: /kb/201/Q201781/
 
 ## Q201781: SMS: Clients with Static IP Addresses Not Network Discovered
 
+{% raw %}
+
 	Article: Q201781
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0; winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/201/Q201781/
 	
 	=============================================================================
 	
+
+{% endraw %}

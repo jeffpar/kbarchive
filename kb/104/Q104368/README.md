@@ -6,6 +6,8 @@ permalink: /kb/104/Q104368/
 
 ## Q104368: PC Win: Lotus 1-2-3 Does Not Launch Mail Attachment
 
+{% raw %}
+
 	Article: Q104368
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -64,3 +66,5 @@ permalink: /kb/104/Q104368/
 	
 	=============================================================================
 	
+
+{% endraw %}

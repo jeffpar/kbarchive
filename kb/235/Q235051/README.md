@@ -6,6 +6,8 @@ permalink: /kb/235/Q235051/
 
 ## Q235051: XADM: Disabling POP3 Clear Text Authentication Disables SSL CTA
 
+{% raw %}
+
 	Article: Q235051
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -88,3 +90,5 @@ permalink: /kb/235/Q235051/
 	
 	=============================================================================
 	
+
+{% endraw %}

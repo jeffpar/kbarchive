@@ -6,6 +6,8 @@ permalink: /kb/145/Q145932/
 
 ## Q145932: Scenes 2.0: Personal Collection Disk Contents
 
+{% raw %}
+
 	Article: Q145932
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:2.0
@@ -104,3 +106,5 @@ permalink: /kb/145/Q145932/
 	
 	=============================================================================
 	
+
+{% endraw %}

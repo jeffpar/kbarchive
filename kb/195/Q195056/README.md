@@ -6,6 +6,8 @@ permalink: /kb/195/Q195056/
 
 ## Q195056: Pinball Arcade: Pointing Device Leaves Black Trails on Screen
 
+{% raw %}
+
 	Article: Q195056
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -62,3 +64,5 @@ permalink: /kb/195/Q195056/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262034/
 
 ## Q262034: SMS: How to Manage the Deletion of Aged Status Messages
 
+{% raw %}
+
 	Article: Q262034
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -107,3 +109,5 @@ permalink: /kb/262/Q262034/
 	
 	=============================================================================
 	
+
+{% endraw %}

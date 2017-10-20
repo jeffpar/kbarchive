@@ -6,6 +6,8 @@ permalink: /kb/113/Q113865/
 
 ## Q113865: NET 0101 Error Installing Microsoft TCP/IP on WFWG 3.11
 
+{% raw %}
+
 	Article: Q113865
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11; :1.0,1.0a
@@ -83,3 +85,5 @@ permalink: /kb/113/Q113865/
 	
 	=============================================================================
 	
+
+{% endraw %}

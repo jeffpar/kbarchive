@@ -6,6 +6,8 @@ permalink: /kb/130/Q130425/
 
 ## Q130425: Weekly - 5 Day Print Layout Always Begins on Monday
 
+{% raw %}
+
 	Article: Q130425
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -49,3 +51,5 @@ permalink: /kb/130/Q130425/
 	
 	=============================================================================
 	
+
+{% endraw %}

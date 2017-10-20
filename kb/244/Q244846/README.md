@@ -6,6 +6,8 @@ permalink: /kb/244/Q244846/
 
 ## Q244846: MAP Command in Nwscript.exe Does Not Work with Upper ASCII Codes
 
+{% raw %}
+
 	Article: Q244846
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -82,3 +84,5 @@ permalink: /kb/244/Q244846/
 	
 	=============================================================================
 	
+
+{% endraw %}

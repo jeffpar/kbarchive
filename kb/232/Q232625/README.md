@@ -6,6 +6,8 @@ permalink: /kb/232/Q232625/
 
 ## Q232625: HOWTO: Use a String Resource in a DLL with a Specific Locale ID
 
+{% raw %}
+
 	Article: Q232625
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -234,3 +236,5 @@ permalink: /kb/232/Q232625/
 	
 	=============================================================================
 	
+
+{% endraw %}

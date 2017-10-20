@@ -6,6 +6,8 @@ permalink: /kb/041/Q41537/
 
 ## Q41537: QB Editor Causes Fourth Line to Be Overwritten by Third Line
 
+{% raw %}
+
 	Article: Q41537
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -52,3 +54,5 @@ permalink: /kb/041/Q41537/
 	    REM line two
 	    CALL bull
 	    REM line four
+
+{% endraw %}

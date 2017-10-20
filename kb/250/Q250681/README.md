@@ -6,6 +6,8 @@ permalink: /kb/250/Q250681/
 
 ## Q250681: Access Violation in Mprouter.exe with OSPF Hardcoded Breakpoint
 
+{% raw %}
+
 	Article: Q250681
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP6a
@@ -86,3 +88,5 @@ permalink: /kb/250/Q250681/
 	
 	=============================================================================
 	
+
+{% endraw %}

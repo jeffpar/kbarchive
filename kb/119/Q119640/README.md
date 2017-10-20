@@ -6,6 +6,8 @@ permalink: /kb/119/Q119640/
 
 ## Q119640: PC Adm: Incorrect Mailbags for SNADS and  PROFS
 
+{% raw %}
+
 	Article: Q119640
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -59,3 +61,5 @@ permalink: /kb/119/Q119640/
 	
 	=============================================================================
 	
+
+{% endraw %}

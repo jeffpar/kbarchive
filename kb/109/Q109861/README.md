@@ -6,6 +6,8 @@ permalink: /kb/109/Q109861/
 
 ## Q109861: Flight Simulator: Runway at Half Moon Bay Is Not Solid
 
+{% raw %}
+
 	Article: Q109861
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -44,3 +46,5 @@ permalink: /kb/109/Q109861/
 	
 	=============================================================================
 	
+
+{% endraw %}

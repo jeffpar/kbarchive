@@ -6,6 +6,8 @@ permalink: /kb/128/Q128607/
 
 ## Q128607: Macintosh Chooser Cannot See SFM Servers Using Compaq PCI NIC
 
+{% raw %}
+
 	Article: Q128607
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/128/Q128607/
 	
 	=============================================================================
 	
+
+{% endraw %}

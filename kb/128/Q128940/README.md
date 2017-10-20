@@ -6,6 +6,8 @@ permalink: /kb/128/Q128940/
 
 ## Q128940: Cannot Install DC21X4.SYS Driver Included in Service Pack 2
 
+{% raw %}
+
 	Article: Q128940
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/128/Q128940/
 	
 	=============================================================================
 	
+
+{% endraw %}

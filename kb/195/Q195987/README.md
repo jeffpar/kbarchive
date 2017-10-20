@@ -6,6 +6,8 @@ permalink: /kb/195/Q195987/
 
 ## Q195987: Snatrace Won't Start if &quot;Background Thread&quot; = &quot;Below normal&quot;
 
+{% raw %}
+
 	Article: Q195987
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP1,3.0 SP2,4.0,4.0 SP1
@@ -84,3 +86,5 @@ permalink: /kb/195/Q195987/
 	
 	=============================================================================
 	
+
+{% endraw %}

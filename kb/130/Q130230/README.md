@@ -6,6 +6,8 @@ permalink: /kb/130/Q130230/
 
 ## Q130230: PC DirSync: Deleted Postoffice Not Removed from GAL
 
+{% raw %}
+
 	Article: Q130230
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -57,3 +59,5 @@ permalink: /kb/130/Q130230/
 	
 	=============================================================================
 	
+
+{% endraw %}

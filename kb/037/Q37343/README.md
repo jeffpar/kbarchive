@@ -6,6 +6,8 @@ permalink: /kb/037/Q37343/
 
 ## Q37343: How to Define Your Own Font in Graphics Mode for EGA or VGA
 
+{% raw %}
+
 	Article: Q37343
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -75,3 +77,5 @@ permalink: /kb/037/Q37343/
 	FOR i = 0 TO 3
 	   PRINT CHR$(i); " "; 'prints normal characters
 	NEXT
+
+{% endraw %}

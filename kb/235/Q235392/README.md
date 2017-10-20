@@ -6,6 +6,8 @@ permalink: /kb/235/Q235392/
 
 ## Q235392: XADM: Slow Intra-Site Replication on Multi-Processor Server
 
+{% raw %}
+
 	Article: Q235392
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -94,3 +96,5 @@ permalink: /kb/235/Q235392/
 	
 	=============================================================================
 	
+
+{% endraw %}

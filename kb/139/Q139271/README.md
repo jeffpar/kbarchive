@@ -6,6 +6,8 @@ permalink: /kb/139/Q139271/
 
 ## Q139271: FIX: Changing Keyboard Compatibility Fails to Update Some Keys
 
+{% raw %}
+
 	Article: Q139271
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -92,3 +94,5 @@ permalink: /kb/139/Q139271/
 	
 	=============================================================================
 	
+
+{% endraw %}

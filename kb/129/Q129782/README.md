@@ -6,6 +6,8 @@ permalink: /kb/129/Q129782/
 
 ## Q129782: FIX: MFCN30.DLL and MFCN30D.DLL Not Copied with Win32S Setup
 
+{% raw %}
+
 	Article: Q129782
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -72,3 +74,5 @@ permalink: /kb/129/Q129782/
 	
 	=============================================================================
 	
+
+{% endraw %}

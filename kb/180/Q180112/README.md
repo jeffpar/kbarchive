@@ -6,6 +6,8 @@ permalink: /kb/180/Q180112/
 
 ## Q180112: XADM: How To Export the Creation Date
 
+{% raw %}
+
 	Article: Q180112
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/180/Q180112/
 	
 	=============================================================================
 	
+
+{% endraw %}

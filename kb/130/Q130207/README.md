@@ -6,6 +6,8 @@ permalink: /kb/130/Q130207/
 
 ## Q130207: Changes Made in Control Panel System for BOOT.INI Are Ignored
 
+{% raw %}
+
 	Article: Q130207
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -75,3 +77,5 @@ permalink: /kb/130/Q130207/
 	
 	=============================================================================
 	
+
+{% endraw %}

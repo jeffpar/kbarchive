@@ -6,6 +6,8 @@ permalink: /kb/284/Q284279/
 
 ## Q284279: INFO: Finding the Index for MSDN Subscriptions
 
+{% raw %}
+
 	Article: Q284279
 	Product(s): Microsoft Developer Network
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/284/Q284279/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241531/
 
 ## Q241531: HOWTO: Create a UI-Less eVC DLL for Use in an eVB Application
 
+{% raw %}
+
 	Article: Q241531
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -159,3 +161,5 @@ permalink: /kb/241/Q241531/
 	
 	=============================================================================
 	
+
+{% endraw %}

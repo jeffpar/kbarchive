@@ -6,6 +6,8 @@ permalink: /kb/188/Q188641/
 
 ## Q188641: XADM: Mailbox Cleanup Agent Service Fails to Start with 1069
 
+{% raw %}
+
 	Article: Q188641
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -69,3 +71,5 @@ permalink: /kb/188/Q188641/
 	
 	=============================================================================
 	
+
+{% endraw %}

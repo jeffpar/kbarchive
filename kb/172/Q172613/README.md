@@ -6,6 +6,8 @@ permalink: /kb/172/Q172613/
 
 ## Q172613: Errors Connecting Through RAS When Password Expires
 
+{% raw %}
+
 	Article: Q172613
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -115,3 +117,5 @@ permalink: /kb/172/Q172613/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198984/
 
 ## Q198984: SMSINST: Command Line Switches Are Not Designed to Work Together
 
+{% raw %}
+
 	Article: Q198984
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0
@@ -91,3 +93,5 @@ permalink: /kb/198/Q198984/
 	
 	=============================================================================
 	
+
+{% endraw %}

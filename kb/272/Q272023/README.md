@@ -6,6 +6,8 @@ permalink: /kb/272/Q272023/
 
 ## Q272023: MMS 2.2 Release Notes: Known Issues Section
 
+{% raw %}
+
 	Article: Q272023
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2
@@ -301,3 +303,5 @@ permalink: /kb/272/Q272023/
 	
 	=============================================================================
 	
+
+{% endraw %}

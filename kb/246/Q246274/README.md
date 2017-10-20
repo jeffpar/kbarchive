@@ -6,6 +6,8 @@ permalink: /kb/246/Q246274/
 
 ## Q246274: XCLN: The Originator Does Not Have Permission to Submit Message
 
+{% raw %}
+
 	Article: Q246274
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -64,3 +66,5 @@ permalink: /kb/246/Q246274/
 	
 	=============================================================================
 	
+
+{% endraw %}

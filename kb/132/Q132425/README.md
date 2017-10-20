@@ -6,6 +6,8 @@ permalink: /kb/132/Q132425/
 
 ## Q132425: Extra Page Printed with Each Print Job
 
+{% raw %}
+
 	Article: Q132425
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -83,3 +85,5 @@ permalink: /kb/132/Q132425/
 	
 	=============================================================================
 	
+
+{% endraw %}

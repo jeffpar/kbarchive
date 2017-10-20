@@ -6,6 +6,8 @@ permalink: /kb/031/Q31046/
 
 ## Q31046: &quot;Save As&quot; Fails after &quot;Disk Not Ready&quot; Error in QB.EXE
 
+{% raw %}
+
 	Article: Q31046
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -47,3 +49,5 @@ permalink: /kb/031/Q31046/
 	2. Close the drive door.
 	
 	3. Attempt the save again.
+
+{% endraw %}

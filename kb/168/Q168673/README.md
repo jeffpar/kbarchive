@@ -6,6 +6,8 @@ permalink: /kb/168/Q168673/
 
 ## Q168673: MSN Err Msg: A Required .dll file, Ragui32.dll, Was Not Found
 
+{% raw %}
+
 	Article: Q168673
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0,2.5 (OEM Release),95
@@ -96,3 +98,5 @@ permalink: /kb/168/Q168673/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172602/
 
 ## Q172602: Event ID 3 Logged After Application Exception in Snaservr.exe
 
+{% raw %}
+
 	Article: Q172602
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -96,3 +98,5 @@ permalink: /kb/172/Q172602/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31539/
 
 ## Q31539: MASM 5.10 EXT.DOC: CopyBox - Copies &quot;Box&quot; from File to File
 
+{% raw %}
+
 	Article: Q31539
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -38,3 +40,5 @@ permalink: /kb/031/Q31539/
 	PFILE pFileSrc, pFileDst;
 	COL  xLeft, xRight, xDst;
 	LINE yTop, yBottom, yDst;
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197014/
 
 ## Q197014: WD97: Unable to Edit Earlier Versions of WordArt Objects
 
+{% raw %}
+
 	Article: Q197014
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/197/Q197014/
 	
 	=============================================================================
 	
+
+{% endraw %}

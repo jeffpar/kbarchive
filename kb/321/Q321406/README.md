@@ -6,6 +6,8 @@ permalink: /kb/321/Q321406/
 
 ## Q321406: Dungeon Siege: Known Sound Issues
 
+{% raw %}
+
 	Article: Q321406
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -222,3 +224,5 @@ permalink: /kb/321/Q321406/
 	
 	=============================================================================
 	
+
+{% endraw %}

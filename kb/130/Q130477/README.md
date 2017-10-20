@@ -6,6 +6,8 @@ permalink: /kb/130/Q130477/
 
 ## Q130477: Changing the Number of Packages Read by Audit16
 
+{% raw %}
+
 	Article: Q130477
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -48,3 +50,5 @@ permalink: /kb/130/Q130477/
 	
 	=============================================================================
 	
+
+{% endraw %}

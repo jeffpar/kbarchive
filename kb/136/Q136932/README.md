@@ -6,6 +6,8 @@ permalink: /kb/136/Q136932/
 
 ## Q136932: SMS Fails to Upgrade MS-DOS and Windows on NetWare Clients
 
+{% raw %}
+
 	Article: Q136932
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -144,3 +146,5 @@ permalink: /kb/136/Q136932/
 	
 	=============================================================================
 	
+
+{% endraw %}

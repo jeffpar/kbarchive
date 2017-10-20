@@ -6,6 +6,8 @@ permalink: /kb/096/Q96001/
 
 ## Q96001: PC DirSync: Error and Status Msgs #9 - 29
 
+{% raw %}
+
 	Article: Q96001
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -181,3 +183,5 @@ permalink: /kb/096/Q96001/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96752/
 
 ## Q96752: Installing DoubleSpace When Norton Erase Protect Is Loaded
 
+{% raw %}
+
 	Article: Q96752
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -83,3 +85,5 @@ permalink: /kb/096/Q96752/
 	
 	=============================================================================
 	
+
+{% endraw %}

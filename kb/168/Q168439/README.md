@@ -6,6 +6,8 @@ permalink: /kb/168/Q168439/
 
 ## Q168439: PRB: _stat Function Fails for Names Ending with &quot;&#92;&quot;
 
+{% raw %}
+
 	Article: Q168439
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -104,3 +106,5 @@ permalink: /kb/168/Q168439/
 	
 	=============================================================================
 	
+
+{% endraw %}

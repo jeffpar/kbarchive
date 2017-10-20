@@ -6,6 +6,8 @@ permalink: /kb/275/Q275490/
 
 ## Q275490: Debugger Symbol Loading Facility Cannot Load SP6 Kernel Symbols
 
+{% raw %}
+
 	Article: Q275490
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6,4.0 SP6a
@@ -128,3 +130,5 @@ permalink: /kb/275/Q275490/
 	
 	=============================================================================
 	
+
+{% endraw %}

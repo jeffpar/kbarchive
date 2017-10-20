@@ -6,6 +6,8 @@ permalink: /kb/049/Q49258/
 
 ## Q49258: No Watch in Debug Menu of QBI.EXE Interpreter Academic Edition
 
+{% raw %}
+
 	Article: Q49258
 	Product(s): See article
 	Version(s): 4.50
@@ -41,3 +43,5 @@ permalink: /kb/049/Q49258/
 	   Toggle Breakpoint       F9
 	   Clear All Breakpoints
 	   Set Next Statement
+
+{% endraw %}

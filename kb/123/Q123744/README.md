@@ -6,6 +6,8 @@ permalink: /kb/123/Q123744/
 
 ## Q123744: Secure Erase on Exabyte 2501 Err Msg: The Computer Has Rebooted
 
+{% raw %}
+
 	Article: Q123744
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/123/Q123744/
 	
 	=============================================================================
 	
+
+{% endraw %}

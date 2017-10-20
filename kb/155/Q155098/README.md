@@ -6,6 +6,8 @@ permalink: /kb/155/Q155098/
 
 ## Q155098: Double-Clicking Desktop Does Not Start Task Manager
 
+{% raw %}
+
 	Article: Q155098
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155098/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160249/
 
 ## Q160249: Duplicate Chats Appear in Favorite Chats List
 
+{% raw %}
+
 	Article: Q160249
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -47,3 +49,5 @@ permalink: /kb/160/Q160249/
 	
 	=============================================================================
 	
+
+{% endraw %}

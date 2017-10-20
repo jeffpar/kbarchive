@@ -6,6 +6,8 @@ permalink: /kb/147/Q147427/
 
 ## Q147427: DOC: Description of C2354 Error Is Unclear
 
+{% raw %}
+
 	Article: Q147427
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -70,3 +72,5 @@ permalink: /kb/147/Q147427/
 	
 	=============================================================================
 	
+
+{% endraw %}

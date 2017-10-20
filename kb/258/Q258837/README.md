@@ -6,6 +6,8 @@ permalink: /kb/258/Q258837/
 
 ## Q258837: Services That Use Remote Connections Leak User Sessions
 
+{% raw %}
+
 	Article: Q258837
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -134,3 +136,5 @@ permalink: /kb/258/Q258837/
 	
 	=============================================================================
 	
+
+{% endraw %}

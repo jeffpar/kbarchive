@@ -6,6 +6,8 @@ permalink: /kb/171/Q171159/
 
 ## Q171159: WD97: List of Fixed Problems in Word 97 for Windows, SR-1
 
+{% raw %}
+
 	Article: Q171159
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 1 (SR-1)
@@ -139,3 +141,5 @@ permalink: /kb/171/Q171159/
 	
 	=============================================================================
 	
+
+{% endraw %}

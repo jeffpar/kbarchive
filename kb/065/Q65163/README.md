@@ -6,6 +6,8 @@ permalink: /kb/065/Q65163/
 
 ## Q65163: How to Remove Spaces from an MS-DOS Filename or Subdirectory
 
+{% raw %}
+
 	Article: Q65163
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -117,3 +119,5 @@ permalink: /kb/065/Q65163/
 	
 	=============================================================================
 	
+
+{% endraw %}

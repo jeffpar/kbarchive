@@ -6,6 +6,8 @@ permalink: /kb/276/Q276263/
 
 ## Q276263: XFOR: Notes Connector Shuts Down with Encrypted Attachments
 
+{% raw %}
+
 	Article: Q276263
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -64,3 +66,5 @@ permalink: /kb/276/Q276263/
 	
 	=============================================================================
 	
+
+{% endraw %}

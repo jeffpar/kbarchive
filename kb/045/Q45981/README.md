@@ -6,6 +6,8 @@ permalink: /kb/045/Q45981/
 
 ## Q45981: How to Search Multiple Files in QuickC Advisor
 
+{% raw %}
+
 	Article: Q45981
 	Product(s): See article
 	Version(s): 2.00
@@ -53,3 +55,5 @@ permalink: /kb/045/Q45981/
 	
 	You can also use "Search.Find" when the "Help.Index" menu is on the
 	screen.
+
+{% endraw %}

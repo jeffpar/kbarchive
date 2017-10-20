@@ -6,6 +6,8 @@ permalink: /kb/181/Q181955/
 
 ## Q181955: XFOR: DAT Extension On Inbound Internet Mail Attachments
 
+{% raw %}
+
 	Article: Q181955
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/181/Q181955/
 	
 	=============================================================================
 	
+
+{% endraw %}

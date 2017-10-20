@@ -6,6 +6,8 @@ permalink: /kb/320/Q320010/
 
 ## Q320010: 100 % CPU Utilization and Event ID 8 Warnings After MC_ALLOCATE
 
+{% raw %}
+
 	Article: Q320010
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -100,3 +102,5 @@ permalink: /kb/320/Q320010/
 	
 	=============================================================================
 	
+
+{% endraw %}

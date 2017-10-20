@@ -6,6 +6,8 @@ permalink: /kb/303/Q303668/
 
 ## Q303668: HOW TO: Configure Remote Domains in Windows 2000
 
+{% raw %}
+
 	Article: Q303668
 	Product(s): Internet Information Server
 	Version(s): 2000,5.0
@@ -233,3 +235,5 @@ permalink: /kb/303/Q303668/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139540/
 
 ## Q139540: Windows for Workgroups Error: SMB Error (17) Working...
 
+{% raw %}
+
 	Article: Q139540
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -40,3 +42,5 @@ permalink: /kb/139/Q139540/
 	
 	=============================================================================
 	
+
+{% endraw %}

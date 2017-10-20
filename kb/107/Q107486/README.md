@@ -6,6 +6,8 @@ permalink: /kb/107/Q107486/
 
 ## Q107486: Writer/Artist: Error Message During Network Setup
 
+{% raw %}
+
 	Article: Q107486
 	Product(s): Microsoft Home Kids Products
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/107/Q107486/
 	
 	=============================================================================
 	
+
+{% endraw %}

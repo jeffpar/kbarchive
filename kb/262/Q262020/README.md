@@ -6,6 +6,8 @@ permalink: /kb/262/Q262020/
 
 ## Q262020: Age of Empires Err Msg: Game Stopped Because It Was Out Of Sync
 
+{% raw %}
+
 	Article: Q262020
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/262/Q262020/
 	
 	=============================================================================
 	
+
+{% endraw %}

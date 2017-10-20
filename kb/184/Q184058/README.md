@@ -6,6 +6,8 @@ permalink: /kb/184/Q184058/
 
 ## Q184058: Unable to Change Password Using IIS 4.0 Change Password Feature
 
+{% raw %}
+
 	Article: Q184058
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -88,3 +90,5 @@ permalink: /kb/184/Q184058/
 	
 	=============================================================================
 	
+
+{% endraw %}

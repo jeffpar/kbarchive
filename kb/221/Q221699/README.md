@@ -6,6 +6,8 @@ permalink: /kb/221/Q221699/
 
 ## Q221699: XFOR: MTA Includes Else Doorways into Previous Route Siblings
 
+{% raw %}
+
 	Article: Q221699
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -109,3 +111,5 @@ permalink: /kb/221/Q221699/
 	
 	=============================================================================
 	
+
+{% endraw %}

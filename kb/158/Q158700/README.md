@@ -6,6 +6,8 @@ permalink: /kb/158/Q158700/
 
 ## Q158700: WD97: AutoRecover Doesn't Create Recovered Document
 
+{% raw %}
+
 	Article: Q158700
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -80,3 +82,5 @@ permalink: /kb/158/Q158700/
 	
 	=============================================================================
 	
+
+{% endraw %}

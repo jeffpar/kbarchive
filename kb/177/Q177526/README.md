@@ -6,6 +6,8 @@ permalink: /kb/177/Q177526/
 
 ## Q177526: CSNW Does Not Handle Files Correctly When PBurst Is Enabled
 
+{% raw %}
+
 	Article: Q177526
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -122,3 +124,5 @@ permalink: /kb/177/Q177526/
 	
 	=============================================================================
 	
+
+{% endraw %}

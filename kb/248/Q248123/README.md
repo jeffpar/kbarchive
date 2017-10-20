@@ -6,6 +6,8 @@ permalink: /kb/248/Q248123/
 
 ## Q248123: DNS CNAME Resolution May Not Work
 
+{% raw %}
+
 	Article: Q248123
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -94,3 +96,5 @@ permalink: /kb/248/Q248123/
 	
 	=============================================================================
 	
+
+{% endraw %}

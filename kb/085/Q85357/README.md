@@ -6,6 +6,8 @@ permalink: /kb/085/Q85357/
 
 ## Q85357: FAX: How to Check Whether Mail Is Queued for the Gateway
 
+{% raw %}
+
 	Article: Q85357
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -44,3 +46,5 @@ permalink: /kb/085/Q85357/
 	
 	=============================================================================
 	
+
+{% endraw %}

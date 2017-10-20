@@ -6,6 +6,8 @@ permalink: /kb/155/Q155783/
 
 ## Q155783: FIX: Share Dialog Box Appears Unexpectedly
 
+{% raw %}
+
 	Article: Q155783
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a
@@ -86,3 +88,5 @@ permalink: /kb/155/Q155783/
 	
 	=============================================================================
 	
+
+{% endraw %}

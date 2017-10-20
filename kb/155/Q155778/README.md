@@ -6,6 +6,8 @@ permalink: /kb/155/Q155778/
 
 ## Q155778: WD97: Next Page Button Closes Header or Footer View
 
+{% raw %}
+
 	Article: Q155778
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -60,3 +62,5 @@ permalink: /kb/155/Q155778/
 	
 	=============================================================================
 	
+
+{% endraw %}

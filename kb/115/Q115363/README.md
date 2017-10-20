@@ -6,6 +6,8 @@ permalink: /kb/115/Q115363/
 
 ## Q115363: X400: Selecting Customized Mapping Scrolls Admin Window Up
 
+{% raw %}
+
 	Article: Q115363
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -42,3 +44,5 @@ permalink: /kb/115/Q115363/
 	
 	=============================================================================
 	
+
+{% endraw %}

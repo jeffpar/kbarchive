@@ -6,6 +6,8 @@ permalink: /kb/065/Q65307/
 
 ## Q65307: M6110: MATH Floating-Point Error: Stack Overflow
 
+{% raw %}
+
 	Article: Q65307
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -67,3 +69,5 @@ permalink: /kb/065/Q65307/
 	Microsoft has confirmed this to be a problem with C version 6.00. We
 	are researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

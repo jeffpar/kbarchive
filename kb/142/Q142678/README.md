@@ -6,6 +6,8 @@ permalink: /kb/142/Q142678/
 
 ## Q142678: Cannot Print Envelopes with Envelope Feeder
 
+{% raw %}
+
 	Article: Q142678
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/142/Q142678/
 	
 	=============================================================================
 	
+
+{% endraw %}

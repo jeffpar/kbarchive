@@ -6,6 +6,8 @@ permalink: /kb/102/Q102981/
 
 ## Q102981: REG: Workstation Service Entries
 
+{% raw %}
+
 	Article: Q102981
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -408,3 +410,5 @@ permalink: /kb/102/Q102981/
 	
 	=============================================================================
 	
+
+{% endraw %}

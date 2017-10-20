@@ -6,6 +6,8 @@ permalink: /kb/127/Q127793/
 
 ## Q127793: Windows Sound System 2.0 DEINSTAL.TXT Contents
 
+{% raw %}
+
 	Article: Q127793
 	Product(s): Miscellaneous Windows Products
 	Version(s): 2.0
@@ -420,3 +422,5 @@ permalink: /kb/127/Q127793/
 	
 	=============================================================================
 	
+
+{% endraw %}

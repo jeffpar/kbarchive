@@ -6,6 +6,8 @@ permalink: /kb/109/Q109527/
 
 ## Q109527: 32-Bit File Access ErrMsg: Exit Windows and Run the MS-DOS...
 
+{% raw %}
+
 	Article: Q109527
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -67,3 +69,5 @@ permalink: /kb/109/Q109527/
 	
 	=============================================================================
 	
+
+{% endraw %}

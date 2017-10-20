@@ -6,6 +6,8 @@ permalink: /kb/230/Q230048/
 
 ## Q230048: Microsoft Excel 2000/Visual Basic for Applications Fundamentals
 
+{% raw %}
+
 	Article: Q230048
 	Product(s): Microsoft Press
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/230/Q230048/
 	
 	=============================================================================
 	
+
+{% endraw %}

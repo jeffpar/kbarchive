@@ -6,6 +6,8 @@ permalink: /kb/257/Q257627/
 
 ## Q257627: Network Programming for Windows Comments and Corrections
 
+{% raw %}
+
 	Article: Q257627
 	Product(s): Microsoft Press
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/257/Q257627/
 	
 	=============================================================================
 	
+
+{% endraw %}

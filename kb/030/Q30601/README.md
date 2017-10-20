@@ -6,6 +6,8 @@ permalink: /kb/030/Q30601/
 
 ## Q30601: Real-Number Data in IEEE Format
 
+{% raw %}
+
 	Article: Q30601
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,6.0
@@ -63,3 +65,5 @@ permalink: /kb/030/Q30601/
 	
 	=============================================================================
 	
+
+{% endraw %}

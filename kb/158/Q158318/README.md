@@ -6,6 +6,8 @@ permalink: /kb/158/Q158318/
 
 ## Q158318: XFOR: IMC Doesn't Deliver Mail When Service Is Started
 
+{% raw %}
+
 	Article: Q158318
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/158/Q158318/
 	
 	=============================================================================
 	
+
+{% endraw %}

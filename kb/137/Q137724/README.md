@@ -6,6 +6,8 @@ permalink: /kb/137/Q137724/
 
 ## Q137724: Replicating Files With Long File Names To LAN Manager Fails
 
+{% raw %}
+
 	Article: Q137724
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2b,3.5,3.51,4.0
@@ -38,3 +40,5 @@ permalink: /kb/137/Q137724/
 	
 	=============================================================================
 	
+
+{% endraw %}

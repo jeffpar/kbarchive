@@ -6,6 +6,8 @@ permalink: /kb/130/Q130131/
 
 ## Q130131: PRB: ON ERROR Not Called When Trigger Fails in Browse or Grid
 
+{% raw %}
+
 	Article: Q130131
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -121,3 +123,5 @@ permalink: /kb/130/Q130131/
 	
 	=============================================================================
 	
+
+{% endraw %}

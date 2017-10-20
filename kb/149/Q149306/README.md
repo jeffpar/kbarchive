@@ -6,6 +6,8 @@ permalink: /kb/149/Q149306/
 
 ## Q149306: Unable to Open Oemnadd3.inf During Update of Service Packs
 
+{% raw %}
+
 	Article: Q149306
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -69,3 +71,5 @@ permalink: /kb/149/Q149306/
 	
 	=============================================================================
 	
+
+{% endraw %}

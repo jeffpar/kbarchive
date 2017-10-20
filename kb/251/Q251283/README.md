@@ -6,6 +6,8 @@ permalink: /kb/251/Q251283/
 
 ## Q251283: XIMS: Enabling FrontPage Server Extensions to Relay on Exchange
 
+{% raw %}
+
 	Article: Q251283
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -79,3 +81,5 @@ permalink: /kb/251/Q251283/
 	
 	=============================================================================
 	
+
+{% endraw %}

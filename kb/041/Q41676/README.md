@@ -6,6 +6,8 @@ permalink: /kb/041/Q41676/
 
 ## Q41676: QuickC 2.00 README.DOC: Linker Warning L4024
 
+{% raw %}
+
 	Article: Q41676
 	Product(s): See article
 	Version(s): 2.00
@@ -24,3 +26,5 @@ permalink: /kb/041/Q41676/
 	file and with the _export keyword in a .C file. It can be safely
 	ignored. You can eliminate it be removing one or the other of the
 	export declarations for the name.
+
+{% endraw %}

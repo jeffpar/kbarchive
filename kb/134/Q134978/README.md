@@ -6,6 +6,8 @@ permalink: /kb/134/Q134978/
 
 ## Q134978: How to Extract the Full Path of a Table in Database Container
 
+{% raw %}
+
 	Article: Q134978
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/134/Q134978/
 	
 	=============================================================================
 	
+
+{% endraw %}

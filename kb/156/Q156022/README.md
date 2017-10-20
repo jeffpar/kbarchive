@@ -6,6 +6,8 @@ permalink: /kb/156/Q156022/
 
 ## Q156022: PPT7: Text in Drawing Objects Prints Double to HP LaserJet 4
 
+{% raw %}
+
 	Article: Q156022
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -82,3 +84,5 @@ permalink: /kb/156/Q156022/
 	
 	=============================================================================
 	
+
+{% endraw %}

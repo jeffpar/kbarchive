@@ -6,6 +6,8 @@ permalink: /kb/159/Q159075/
 
 ## Q159075: Compression Is Not Supported on Quantum 4000DLT
 
+{% raw %}
+
 	Article: Q159075
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -49,3 +51,5 @@ permalink: /kb/159/Q159075/
 	
 	=============================================================================
 	
+
+{% endraw %}

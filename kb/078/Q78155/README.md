@@ -6,6 +6,8 @@ permalink: /kb/078/Q78155/
 
 ## Q78155: INFO: Introduction to Nonpreemptive Multitasking in Windows
 
+{% raw %}
+
 	Article: Q78155
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -136,3 +138,5 @@ permalink: /kb/078/Q78155/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136926/
 
 ## Q136926: HOWTO: Improve Performance of SQL Queries
 
+{% raw %}
+
 	Article: Q136926
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/136/Q136926/
 	
 	=============================================================================
 	
+
+{% endraw %}

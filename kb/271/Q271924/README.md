@@ -6,6 +6,8 @@ permalink: /kb/271/Q271924/
 
 ## Q271924: Permissions for Users in a Trusted Domain Appear as 'Account Unk
 
+{% raw %}
+
 	Article: Q271924
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -47,3 +49,5 @@ permalink: /kb/271/Q271924/
 	
 	=============================================================================
 	
+
+{% endraw %}

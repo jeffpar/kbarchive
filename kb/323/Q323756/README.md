@@ -6,6 +6,8 @@ permalink: /kb/323/Q323756/
 
 ## Q323756: Redirection Response Contains Garbage Characters with Long URL
 
+{% raw %}
+
 	Article: Q323756
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -169,3 +171,5 @@ permalink: /kb/323/Q323756/
 	
 	=============================================================================
 	
+
+{% endraw %}

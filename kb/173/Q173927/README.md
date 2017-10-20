@@ -6,6 +6,8 @@ permalink: /kb/173/Q173927/
 
 ## Q173927: WD97: Word Hangs on Open with Graphics Blaster Display Drivers
 
+{% raw %}
+
 	Article: Q173927
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -192,3 +194,5 @@ permalink: /kb/173/Q173927/
 	
 	=============================================================================
 	
+
+{% endraw %}

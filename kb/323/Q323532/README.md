@@ -6,6 +6,8 @@ permalink: /kb/323/Q323532/
 
 ## Q323532: SMS: Client Exception Errors Occur When No User Is Logged On
 
+{% raw %}
+
 	Article: Q323532
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -62,3 +64,5 @@ permalink: /kb/323/Q323532/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244817/
 
 ## Q244817: BUG: IOleControlSite::TransformCoords() Returns S_OK
 
+{% raw %}
+
 	Article: Q244817
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -127,3 +129,5 @@ permalink: /kb/244/Q244817/
 	
 	=============================================================================
 	
+
+{% endraw %}

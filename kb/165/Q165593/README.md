@@ -6,6 +6,8 @@ permalink: /kb/165/Q165593/
 
 ## Q165593: Unable to Set Mouse Hot Corners Using Resource Kit Screen Savers
 
+{% raw %}
+
 	Article: Q165593
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/165/Q165593/
 	
 	=============================================================================
 	
+
+{% endraw %}

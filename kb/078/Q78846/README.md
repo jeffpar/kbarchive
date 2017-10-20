@@ -6,6 +6,8 @@ permalink: /kb/078/Q78846/
 
 ## Q78846: Incomplete DEVICE Line in CONFIG.SYS Causes Screen Garbage
 
+{% raw %}
+
 	Article: Q78846
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -57,3 +59,5 @@ permalink: /kb/078/Q78846/
 	
 	=============================================================================
 	
+
+{% endraw %}

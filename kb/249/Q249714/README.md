@@ -6,6 +6,8 @@ permalink: /kb/249/Q249714/
 
 ## Q249714: MapPoint: How to Create a High Contrast Shaded Area Map
 
+{% raw %}
+
 	Article: Q249714
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:; :
@@ -105,3 +107,5 @@ permalink: /kb/249/Q249714/
 	
 	=============================================================================
 	
+
+{% endraw %}

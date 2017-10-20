@@ -6,6 +6,8 @@ permalink: /kb/111/Q111684/
 
 ## Q111684: After WFWG Install, Can't Access NetWare Servers Using IPXODI
 
+{% raw %}
+
 	Article: Q111684
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -65,3 +67,5 @@ permalink: /kb/111/Q111684/
 	
 	=============================================================================
 	
+
+{% endraw %}

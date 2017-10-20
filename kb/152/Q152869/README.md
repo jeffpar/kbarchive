@@ -6,6 +6,8 @@ permalink: /kb/152/Q152869/
 
 ## Q152869: XADM: IS Crashes When Replication Status Page is Opened
 
+{% raw %}
+
 	Article: Q152869
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -46,3 +48,5 @@ permalink: /kb/152/Q152869/
 	
 	=============================================================================
 	
+
+{% endraw %}

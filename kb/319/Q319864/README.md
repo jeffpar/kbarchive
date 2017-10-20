@@ -6,6 +6,8 @@ permalink: /kb/319/Q319864/
 
 ## Q319864: SMS: Upgrade to SP4 Does Not Cause Inventory Resynchronization
 
+{% raw %}
+
 	Article: Q319864
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -53,3 +55,5 @@ permalink: /kb/319/Q319864/
 	
 	=============================================================================
 	
+
+{% endraw %}

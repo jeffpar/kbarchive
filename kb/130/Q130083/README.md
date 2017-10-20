@@ -6,6 +6,8 @@ permalink: /kb/130/Q130083/
 
 ## Q130083: PRB: Record Pointer Moves to EOF After INSERT - SQL Fails
 
+{% raw %}
+
 	Article: Q130083
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -117,3 +119,5 @@ permalink: /kb/130/Q130083/
 	
 	=============================================================================
 	
+
+{% endraw %}

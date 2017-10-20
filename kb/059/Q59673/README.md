@@ -6,6 +6,8 @@ permalink: /kb/059/Q59673/
 
 ## Q59673: Directory Tree Not Updated After Rename
 
+{% raw %}
+
 	Article: Q59673
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -44,3 +46,5 @@ permalink: /kb/059/Q59673/
 	
 	=============================================================================
 	
+
+{% endraw %}

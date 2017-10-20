@@ -6,6 +6,8 @@ permalink: /kb/077/Q77917/
 
 ## Q77917: 1024 x 768 Wallpaper Causes UAE in Windows
 
+{% raw %}
+
 	Article: Q77917
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -68,3 +70,5 @@ permalink: /kb/077/Q77917/
 	
 	=============================================================================
 	
+
+{% endraw %}

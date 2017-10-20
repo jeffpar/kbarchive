@@ -6,6 +6,8 @@ permalink: /kb/156/Q156259/
 
 ## Q156259: Wacom Tablet Driver Does Not Unload at System Shutdown
 
+{% raw %}
+
 	Article: Q156259
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/156/Q156259/
 	
 	=============================================================================
 	
+
+{% endraw %}

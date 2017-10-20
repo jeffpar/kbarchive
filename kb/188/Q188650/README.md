@@ -6,6 +6,8 @@ permalink: /kb/188/Q188650/
 
 ## Q188650: XADM: Restore of Private-Only Server Fails with Arcserve
 
+{% raw %}
+
 	Article: Q188650
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -99,3 +101,5 @@ permalink: /kb/188/Q188650/
 	
 	=============================================================================
 	
+
+{% endraw %}

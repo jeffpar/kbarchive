@@ -6,6 +6,8 @@ permalink: /kb/142/Q142258/
 
 ## Q142258: XADM: Exception Error on MTA Service Shutdown
 
+{% raw %}
+
 	Article: Q142258
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/142/Q142258/
 	
 	=============================================================================
 	
+
+{% endraw %}

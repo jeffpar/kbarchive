@@ -6,6 +6,8 @@ permalink: /kb/127/Q127728/
 
 ## Q127728: X400: TP4 Stack Not Compatible with WFWG MS-DOS Client
 
+{% raw %}
+
 	Article: Q127728
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -58,3 +60,5 @@ permalink: /kb/127/Q127728/
 	
 	=============================================================================
 	
+
+{% endraw %}

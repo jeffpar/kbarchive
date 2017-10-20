@@ -6,6 +6,8 @@ permalink: /kb/047/Q47260/
 
 ## Q47260: Mac Wkst: Multiple File Enclosures Supported in Version 3.0
 
+{% raw %}
+
 	Article: Q47260
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/047/Q47260/
 	
 	=============================================================================
 	
+
+{% endraw %}

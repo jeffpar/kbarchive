@@ -6,6 +6,8 @@ permalink: /kb/199/Q199131/
 
 ## Q199131: HOWTO: Add a FoxPro Database to SQL Server as a Linked Server
 
+{% raw %}
+
 	Article: Q199131
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0; winnt:7.0
@@ -139,3 +141,5 @@ permalink: /kb/199/Q199131/
 	
 	=============================================================================
 	
+
+{% endraw %}

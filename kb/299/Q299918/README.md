@@ -6,6 +6,8 @@ permalink: /kb/299/Q299918/
 
 ## Q299918: FIX: Memory Leak Calling Connection Designer from Database
 
+{% raw %}
+
 	Article: Q299918
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -87,3 +89,5 @@ permalink: /kb/299/Q299918/
 	
 	=============================================================================
 	
+
+{% endraw %}

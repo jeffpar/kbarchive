@@ -6,6 +6,8 @@ permalink: /kb/182/Q182198/
 
 ## Q182198: XADM: Server Invocation ID Identical to Other Server's UUID
 
+{% raw %}
+
 	Article: Q182198
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -88,3 +90,5 @@ permalink: /kb/182/Q182198/
 	
 	=============================================================================
 	
+
+{% endraw %}

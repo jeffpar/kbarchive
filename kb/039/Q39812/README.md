@@ -6,6 +6,8 @@ permalink: /kb/039/Q39812/
 
 ## Q39812: Replacing Real Mode Family API Functions in Bound Applications
 
+{% raw %}
+
 	Article: Q39812
 	Product(s): See article
 	Version(s): 1.00 1.10 1.30 | 1.00 1.10 1.30
@@ -79,3 +81,5 @@ permalink: /kb/039/Q39812/
 	   .EXE file. In protected mode, the system will load only the
 	   protected-mode version. In real-mode, the system will load only
 	   real-mode applications.
+
+{% endraw %}

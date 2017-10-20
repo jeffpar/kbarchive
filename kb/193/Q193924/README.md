@@ -6,6 +6,8 @@ permalink: /kb/193/Q193924/
 
 ## Q193924: XFOR: Non-Delivery Report: Unknown Or Illegal User
 
+{% raw %}
+
 	Article: Q193924
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -61,3 +63,5 @@ permalink: /kb/193/Q193924/
 	
 	=============================================================================
 	
+
+{% endraw %}

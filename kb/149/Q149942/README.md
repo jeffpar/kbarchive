@@ -6,6 +6,8 @@ permalink: /kb/149/Q149942/
 
 ## Q149942: Automating a SLIP Connection with Remote Access Services
 
+{% raw %}
+
 	Article: Q149942
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -79,3 +81,5 @@ permalink: /kb/149/Q149942/
 	
 	=============================================================================
 	
+
+{% endraw %}

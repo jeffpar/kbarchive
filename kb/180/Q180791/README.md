@@ -6,6 +6,8 @@ permalink: /kb/180/Q180791/
 
 ## Q180791: An ATTACH May Fail When Using Set_CPIC_Side_Information
 
+{% raw %}
+
 	Article: Q180791
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -79,3 +81,5 @@ permalink: /kb/180/Q180791/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127943/
 
 ## Q127943: Mac Client Can't Logon Because Password Has Expired
 
+{% raw %}
+
 	Article: Q127943
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -71,3 +73,5 @@ permalink: /kb/127/Q127943/
 	
 	=============================================================================
 	
+
+{% endraw %}

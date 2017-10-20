@@ -6,6 +6,8 @@ permalink: /kb/128/Q128586/
 
 ## Q128586: SNADS: Lotus-Softswitch SNADGET.EXE Version 3.04.6
 
+{% raw %}
+
 	Article: Q128586
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -54,3 +56,5 @@ permalink: /kb/128/Q128586/
 	
 	=============================================================================
 	
+
+{% endraw %}

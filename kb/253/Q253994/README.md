@@ -6,6 +6,8 @@ permalink: /kb/253/Q253994/
 
 ## Q253994: SMS: Network Discovery Does Not Change &quot;client=1&quot; to &quot;client=0&quot;
 
+{% raw %}
+
 	Article: Q253994
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -127,3 +129,5 @@ permalink: /kb/253/Q253994/
 	
 	=============================================================================
 	
+
+{% endraw %}

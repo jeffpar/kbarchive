@@ -6,6 +6,8 @@ permalink: /kb/149/Q149882/
 
 ## Q149882: HOWTO: Execute a Stored Procedure on an Oracle Server
 
+{% raw %}
+
 	Article: Q149882
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,6.0
@@ -85,3 +87,5 @@ permalink: /kb/149/Q149882/
 	
 	=============================================================================
 	
+
+{% endraw %}

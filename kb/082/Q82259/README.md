@@ -6,6 +6,8 @@ permalink: /kb/082/Q82259/
 
 ## Q82259: Windows 3.0 Paintbrush Requires Save As to Create Monochrome
 
+{% raw %}
+
 	Article: Q82259
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.0,3.0a
@@ -69,3 +71,5 @@ permalink: /kb/082/Q82259/
 	
 	=============================================================================
 	
+
+{% endraw %}

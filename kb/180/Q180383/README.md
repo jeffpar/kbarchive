@@ -6,6 +6,8 @@ permalink: /kb/180/Q180383/
 
 ## Q180383: FP: Modified By Attribute Displays as a Question Mark
 
+{% raw %}
+
 	Article: Q180383
 	Product(s): Word Front Page
 	Version(s): WINDOWS:1.1,97
@@ -81,3 +83,5 @@ permalink: /kb/180/Q180383/
 	
 	=============================================================================
 	
+
+{% endraw %}

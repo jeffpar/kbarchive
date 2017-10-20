@@ -6,6 +6,8 @@ permalink: /kb/186/Q186046/
 
 ## Q186046: Mylex Dac960nt.sys May Not Find SCSI CD Devices Set to ID 6
 
+{% raw %}
+
 	Article: Q186046
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -52,3 +54,5 @@ permalink: /kb/186/Q186046/
 	
 	=============================================================================
 	
+
+{% endraw %}

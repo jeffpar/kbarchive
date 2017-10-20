@@ -6,6 +6,8 @@ permalink: /kb/048/Q48744/
 
 ## Q48744: int86x() and int86() Trap for Interrupts 25h, 26h
 
+{% raw %}
+
 	Article: Q48744
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -98,3 +100,5 @@ permalink: /kb/048/Q48744/
 	
 	=============================================================================
 	
+
+{% endraw %}

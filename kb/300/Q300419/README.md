@@ -6,6 +6,8 @@ permalink: /kb/300/Q300419/
 
 ## Q300419: Internet Explorer 4.0 Fails to Connect to Passport Mgr Page
 
+{% raw %}
+
 	Article: Q300419
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -43,3 +45,5 @@ permalink: /kb/300/Q300419/
 	
 	=============================================================================
 	
+
+{% endraw %}

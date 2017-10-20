@@ -6,6 +6,8 @@ permalink: /kb/177/Q177339/
 
 ## Q177339: PRB: OLE Error When Appending from Excel 97 Workbook
 
+{% raw %}
+
 	Article: Q177339
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a
@@ -105,3 +107,5 @@ permalink: /kb/177/Q177339/
 	
 	=============================================================================
 	
+
+{% endraw %}

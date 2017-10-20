@@ -6,6 +6,8 @@ permalink: /kb/149/Q149382/
 
 ## Q149382: INFO: Setting Options You Can Modify in the Srcsafe.ini File
 
+{% raw %}
+
 	Article: Q149382
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0
@@ -91,3 +93,5 @@ permalink: /kb/149/Q149382/
 	
 	=============================================================================
 	
+
+{% endraw %}

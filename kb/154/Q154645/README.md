@@ -6,6 +6,8 @@ permalink: /kb/154/Q154645/
 
 ## Q154645: INF: ODBC Desktop Driver Pack 2.0 Does Not Install ODBCADM
 
+{% raw %}
+
 	Article: Q154645
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -76,3 +78,5 @@ permalink: /kb/154/Q154645/
 	
 	=============================================================================
 	
+
+{% endraw %}

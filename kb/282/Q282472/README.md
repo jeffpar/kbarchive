@@ -6,6 +6,8 @@ permalink: /kb/282/Q282472/
 
 ## Q282472: IIS May Hang or Terminate When Using OLE DB Provider
 
+{% raw %}
+
 	Article: Q282472
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3,4.0 SP4
@@ -96,3 +98,5 @@ permalink: /kb/282/Q282472/
 	
 	=============================================================================
 	
+
+{% endraw %}

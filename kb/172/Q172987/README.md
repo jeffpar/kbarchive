@@ -6,6 +6,8 @@ permalink: /kb/172/Q172987/
 
 ## Q172987: NEC 1800a CD-ROM Drive Will Not Play Audio After Applying SP3
 
+{% raw %}
+
 	Article: Q172987
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/172/Q172987/
 	
 	=============================================================================
 	
+
+{% endraw %}

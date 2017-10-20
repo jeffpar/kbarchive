@@ -6,6 +6,8 @@ permalink: /kb/044/Q44230/
 
 ## Q44230: MARKEXE.EXE in OS/2 May Cause .EXE Hang at Run Time
 
+{% raw %}
+
 	Article: Q44230
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -69,3 +71,5 @@ permalink: /kb/044/Q44230/
 	If the program is deleted from the Start Program menu, the .EXE header
 	is changed back to what it was prior to being entered into the Start
 	Program menu.
+
+{% endraw %}

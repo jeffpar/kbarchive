@@ -6,6 +6,8 @@ permalink: /kb/256/Q256169/
 
 ## Q256169: GLINT-Based Display Adapters Disabled in Windows 2000 on Upgrade
 
+{% raw %}
+
 	Article: Q256169
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -82,3 +84,5 @@ permalink: /kb/256/Q256169/
 	
 	=============================================================================
 	
+
+{% endraw %}

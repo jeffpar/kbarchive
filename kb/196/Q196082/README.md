@@ -6,6 +6,8 @@ permalink: /kb/196/Q196082/
 
 ## Q196082: XWEB: When publishing All Public Folders Nothing is Published
 
+{% raw %}
+
 	Article: Q196082
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -51,3 +53,5 @@ permalink: /kb/196/Q196082/
 	
 	=============================================================================
 	
+
+{% endraw %}

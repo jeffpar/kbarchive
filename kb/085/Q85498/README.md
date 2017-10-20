@@ -6,6 +6,8 @@ permalink: /kb/085/Q85498/
 
 ## Q85498: PRB: /Tp and /Tc Show Unexpected Behavior with Wildcards
 
+{% raw %}
+
 	Article: Q85498
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,4.1,4.2,5.0
@@ -98,3 +100,5 @@ permalink: /kb/085/Q85498/
 	
 	=============================================================================
 	
+
+{% endraw %}

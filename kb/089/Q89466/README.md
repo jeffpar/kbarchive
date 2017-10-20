@@ -6,6 +6,8 @@ permalink: /kb/089/Q89466/
 
 ## Q89466: LAN Man 2.1 Test Summary (NSSI Network Security Systems)
 
+{% raw %}
+
 	Article: Q89466
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -158,3 +160,5 @@ permalink: /kb/089/Q89466/
 	
 	=============================================================================
 	
+
+{% endraw %}

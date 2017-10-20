@@ -6,6 +6,8 @@ permalink: /kb/177/Q177421/
 
 ## Q177421: FIX: Remote Debug in Windows NT Requires Psapi.dll
 
+{% raw %}
+
 	Article: Q177421
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -70,3 +72,5 @@ permalink: /kb/177/Q177421/
 	
 	=============================================================================
 	
+
+{% endraw %}

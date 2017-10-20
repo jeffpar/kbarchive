@@ -6,6 +6,8 @@ permalink: /kb/095/Q95085/
 
 ## Q95085: Pausing the Windows Sound System 1.0 Voice Pilot
 
+{% raw %}
+
 	Article: Q95085
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/095/Q95085/
 	
 	=============================================================================
 	
+
+{% endraw %}

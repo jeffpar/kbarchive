@@ -6,6 +6,8 @@ permalink: /kb/066/Q66560/
 
 ## Q66560: &quot;Illegal Function Call&quot; Using Coprocessor in BASIC 7.10
 
+{% raw %}
+
 	Article: Q66560
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -51,3 +53,5 @@ permalink: /kb/066/Q66560/
 	
 	Simplifying the equation eliminates the problem. For example, removing
 	the (b * e ^ 2 / d) factor eliminates the error.
+
+{% endraw %}

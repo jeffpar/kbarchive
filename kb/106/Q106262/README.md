@@ -6,6 +6,8 @@ permalink: /kb/106/Q106262/
 
 ## Q106262: FIX: Direction Flag Is Not Cleared When an Exception Occurs
 
+{% raw %}
+
 	Article: Q106262
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -140,3 +142,5 @@ permalink: /kb/106/Q106262/
 	
 	=============================================================================
 	
+
+{% endraw %}

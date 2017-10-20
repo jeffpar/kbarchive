@@ -6,6 +6,8 @@ permalink: /kb/230/Q230034/
 
 ## Q230034: WD97: Bullet Replaces Leading Number in Paragraph
 
+{% raw %}
+
 	Article: Q230034
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -127,3 +129,5 @@ permalink: /kb/230/Q230034/
 	
 	=============================================================================
 	
+
+{% endraw %}

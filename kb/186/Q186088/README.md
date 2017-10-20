@@ -6,6 +6,8 @@ permalink: /kb/186/Q186088/
 
 ## Q186088: BUG: Report Variable Not Released After Report Runs
 
+{% raw %}
+
 	Article: Q186088
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0b,5.0,5.0a,6.0
@@ -89,3 +91,5 @@ permalink: /kb/186/Q186088/
 	
 	=============================================================================
 	
+
+{% endraw %}

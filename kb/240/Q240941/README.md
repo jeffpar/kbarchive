@@ -6,6 +6,8 @@ permalink: /kb/240/Q240941/
 
 ## Q240941: An Introduction to the IIS Metabase
 
+{% raw %}
+
 	Article: Q240941
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -103,3 +105,5 @@ permalink: /kb/240/Q240941/
 	
 	=============================================================================
 	
+
+{% endraw %}

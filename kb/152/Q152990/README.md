@@ -6,6 +6,8 @@ permalink: /kb/152/Q152990/
 
 ## Q152990: 100-Megabit Ethernet May Hang or Exhibit Poor Performance
 
+{% raw %}
+
 	Article: Q152990
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -71,3 +73,5 @@ permalink: /kb/152/Q152990/
 	
 	=============================================================================
 	
+
+{% endraw %}

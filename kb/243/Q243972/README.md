@@ -6,6 +6,8 @@ permalink: /kb/243/Q243972/
 
 ## Q243972: SDLC Connection with MicroGate MGT1 Adapter Remains Pending
 
+{% raw %}
+
 	Article: Q243972
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,4.0
@@ -63,3 +65,5 @@ permalink: /kb/243/Q243972/
 	
 	=============================================================================
 	
+
+{% endraw %}

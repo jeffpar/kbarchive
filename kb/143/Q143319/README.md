@@ -6,6 +6,8 @@ permalink: /kb/143/Q143319/
 
 ## Q143319: List of Problems Solved by Visual FoxPro 3.0b for Windows
 
+{% raw %}
+
 	Article: Q143319
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00b
@@ -179,3 +181,5 @@ permalink: /kb/143/Q143319/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162397/
 
 ## Q162397: WD97: Cannot Switch to Navigation Pane in Document Map View
 
+{% raw %}
+
 	Article: Q162397
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -124,3 +126,5 @@ permalink: /kb/162/Q162397/
 	
 	=============================================================================
 	
+
+{% endraw %}

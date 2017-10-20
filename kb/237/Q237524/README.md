@@ -6,6 +6,8 @@ permalink: /kb/237/Q237524/
 
 ## Q237524: Encarta Dictionary: Setup Installs an Earlier Version of MsInfo
 
+{% raw %}
+
 	Article: Q237524
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -90,3 +92,5 @@ permalink: /kb/237/Q237524/
 	
 	=============================================================================
 	
+
+{% endraw %}

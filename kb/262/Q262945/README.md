@@ -6,6 +6,8 @@ permalink: /kb/262/Q262945/
 
 ## Q262945: XFOR: Non-Delivery Report: 554 Mailbox Is Not Local
 
+{% raw %}
+
 	Article: Q262945
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -89,3 +91,5 @@ permalink: /kb/262/Q262945/
 	
 	=============================================================================
 	
+
+{% endraw %}

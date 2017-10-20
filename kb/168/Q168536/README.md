@@ -6,6 +6,8 @@ permalink: /kb/168/Q168536/
 
 ## Q168536: XCON: Event ID: 246 An Internal MTA Error Has Occurred
 
+{% raw %}
+
 	Article: Q168536
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -67,3 +69,5 @@ permalink: /kb/168/Q168536/
 	
 	=============================================================================
 	
+
+{% endraw %}

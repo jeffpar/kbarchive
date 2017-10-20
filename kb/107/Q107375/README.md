@@ -6,6 +6,8 @@ permalink: /kb/107/Q107375/
 
 ## Q107375: WFWG 3.11: Hardware Compatibility List - Network Cards
 
+{% raw %}
+
 	Article: Q107375
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -195,3 +197,5 @@ permalink: /kb/107/Q107375/
 	
 	=============================================================================
 	
+
+{% endraw %}

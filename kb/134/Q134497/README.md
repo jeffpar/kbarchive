@@ -6,6 +6,8 @@ permalink: /kb/134/Q134497/
 
 ## Q134497: Mavis Beacon Teaches Typing Ver. 3.0 Seems to Hang
 
+{% raw %}
+
 	Article: Q134497
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/134/Q134497/
 	
 	=============================================================================
 	
+
+{% endraw %}

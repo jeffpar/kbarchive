@@ -6,6 +6,8 @@ permalink: /kb/277/Q277759/
 
 ## Q277759: Microsoft Passport FAQ
 
+{% raw %}
+
 	Article: Q277759
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -104,3 +106,5 @@ permalink: /kb/277/Q277759/
 	
 	=============================================================================
 	
+
+{% endraw %}

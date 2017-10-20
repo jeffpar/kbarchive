@@ -6,6 +6,8 @@ permalink: /kb/180/Q180954/
 
 ## Q180954: Allocation of Print Server Threads May Cause Delays
 
+{% raw %}
+
 	Article: Q180954
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -66,3 +68,5 @@ permalink: /kb/180/Q180954/
 	
 	=============================================================================
 	
+
+{% endraw %}

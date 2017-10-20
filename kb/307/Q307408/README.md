@@ -6,6 +6,8 @@ permalink: /kb/307/Q307408/
 
 ## Q307408: Err Msg: Lrun32 Caused Exception 10H in Module Lrun32.exe
 
+{% raw %}
+
 	Article: Q307408
 	Product(s): Microsoft Press
 	Version(s): 
@@ -116,3 +118,5 @@ permalink: /kb/307/Q307408/
 	
 	=============================================================================
 	
+
+{% endraw %}

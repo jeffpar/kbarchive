@@ -6,6 +6,8 @@ permalink: /kb/297/Q297681/
 
 ## Q297681: Err Msg: This Security Certificate Was Issued by a Company...
 
+{% raw %}
+
 	Article: Q297681
 	Product(s): Internet Information Server
 	Version(s): 4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5,5.0,5.01,5.01 Service Pack 1,5.01 S
@@ -163,3 +165,5 @@ permalink: /kb/297/Q297681/
 	
 	=============================================================================
 	
+
+{% endraw %}

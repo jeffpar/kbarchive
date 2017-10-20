@@ -6,6 +6,8 @@ permalink: /kb/215/Q215407/
 
 ## Q215407: DOC: Index Property Incorrectly Defined
 
+{% raw %}
+
 	Article: Q215407
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,3.0
@@ -64,3 +66,5 @@ permalink: /kb/215/Q215407/
 	
 	=============================================================================
 	
+
+{% endraw %}

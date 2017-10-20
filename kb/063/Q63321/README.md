@@ -6,6 +6,8 @@ permalink: /kb/063/Q63321/
 
 ## Q63321: C 6.00 STARTUP.DOC Requests Wrong MASM Version
 
+{% raw %}
+
 	Article: Q63321
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -35,3 +37,5 @@ permalink: /kb/063/Q63321/
 	should read    FOO:
 	
 	This problem does not occur when MASM version 5.10 or later is used.
+
+{% endraw %}

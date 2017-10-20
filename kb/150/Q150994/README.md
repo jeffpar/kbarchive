@@ -6,6 +6,8 @@ permalink: /kb/150/Q150994/
 
 ## Q150994: Encarta: Invalid Page Fault When Printing to Inkjet Printer
 
+{% raw %}
+
 	Article: Q150994
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -80,3 +82,5 @@ permalink: /kb/150/Q150994/
 	
 	=============================================================================
 	
+
+{% endraw %}

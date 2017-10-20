@@ -6,6 +6,8 @@ permalink: /kb/154/Q154896/
 
 ## Q154896: Microsoft Access 7.0 Wizard Does Not Work in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q154896
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:7.0; winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/154/Q154896/
 	
 	=============================================================================
 	
+
+{% endraw %}

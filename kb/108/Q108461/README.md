@@ -6,6 +6,8 @@ permalink: /kb/108/Q108461/
 
 ## Q108461: FIX: DO Loop/Computed GOTO Errors with /Ox and /4Yb
 
+{% raw %}
+
 	Article: Q108461
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -112,3 +114,5 @@ permalink: /kb/108/Q108461/
 	
 	=============================================================================
 	
+
+{% endraw %}

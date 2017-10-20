@@ -6,6 +6,8 @@ permalink: /kb/124/Q124731/
 
 ## Q124731: AST Plug and Play BIOS Is Not Registered as Plug and Play
 
+{% raw %}
+
 	Article: Q124731
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/124/Q124731/
 	
 	=============================================================================
 	
+
+{% endraw %}

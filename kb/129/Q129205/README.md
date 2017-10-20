@@ -6,6 +6,8 @@ permalink: /kb/129/Q129205/
 
 ## Q129205: How to Add Multiple Properties When You Add Objects
 
+{% raw %}
+
 	Article: Q129205
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -125,3 +127,5 @@ permalink: /kb/129/Q129205/
 	
 	=============================================================================
 	
+
+{% endraw %}

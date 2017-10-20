@@ -6,6 +6,8 @@ permalink: /kb/121/Q121912/
 
 ## Q121912: PING Hangs or Reboots Workstation
 
+{% raw %}
+
 	Article: Q121912
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -50,3 +52,5 @@ permalink: /kb/121/Q121912/
 	
 	=============================================================================
 	
+
+{% endraw %}

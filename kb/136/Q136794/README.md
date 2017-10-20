@@ -6,6 +6,8 @@ permalink: /kb/136/Q136794/
 
 ## Q136794: Computer Hangs After Changing to Novell NetWare Client
 
+{% raw %}
+
 	Article: Q136794
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/136/Q136794/
 	
 	=============================================================================
 	
+
+{% endraw %}

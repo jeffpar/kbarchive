@@ -6,6 +6,8 @@ permalink: /kb/066/Q66148/
 
 ## Q66148: Setup Reports Error Copying Files in Entertainment Pack
 
+{% raw %}
+
 	Article: Q66148
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/066/Q66148/
 	
 	=============================================================================
 	
+
+{% endraw %}

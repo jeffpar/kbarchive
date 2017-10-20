@@ -6,6 +6,8 @@ permalink: /kb/260/Q260541/
 
 ## Q260541: Uninstalling Client by Removing Site Boundaries Leaves Files
 
+{% raw %}
+
 	Article: Q260541
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -101,3 +103,5 @@ permalink: /kb/260/Q260541/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243887/
 
 ## Q243887: XFOR: Application Converter for Notes Replaces App. Connector
 
+{% raw %}
+
 	Article: Q243887
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -49,3 +51,5 @@ permalink: /kb/243/Q243887/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183674/
 
 ## Q183674: XADM: How to Find What User Is Changing Objects in Administrator
 
+{% raw %}
+
 	Article: Q183674
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -151,3 +153,5 @@ permalink: /kb/183/Q183674/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50680/
 
 ## Q50680: Instruction: Incorrect Instruction in Taxiing Lesson
 
+{% raw %}
+
 	Article: Q50680
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/050/Q50680/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222143/
 
 ## Q222143: PRB: AppWizard, CHtmlView with Splitter Show Extra Scrollbars
 
+{% raw %}
+
 	Article: Q222143
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -113,3 +115,5 @@ permalink: /kb/222/Q222143/
 	
 	=============================================================================
 	
+
+{% endraw %}

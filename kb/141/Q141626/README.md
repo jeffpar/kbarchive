@@ -6,6 +6,8 @@ permalink: /kb/141/Q141626/
 
 ## Q141626: ADT/ODE: Invalid Page Fault in Module ACMSETUP.EXE
 
+{% raw %}
+
 	Article: Q141626
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 7.0 97
@@ -117,3 +119,5 @@ permalink: /kb/141/Q141626/
 	
 	=============================================================================
 	
+
+{% endraw %}

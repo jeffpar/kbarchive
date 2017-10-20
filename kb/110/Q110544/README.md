@@ -6,6 +6,8 @@ permalink: /kb/110/Q110544/
 
 ## Q110544: Crop Duster Summary Appears in Other Situations
 
+{% raw %}
+
 	Article: Q110544
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -47,3 +49,5 @@ permalink: /kb/110/Q110544/
 	
 	=============================================================================
 	
+
+{% endraw %}

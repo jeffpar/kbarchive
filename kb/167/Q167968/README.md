@@ -6,6 +6,8 @@ permalink: /kb/167/Q167968/
 
 ## Q167968: Access Violation Causes 16-Bit Applications to Silently Quit
 
+{% raw %}
+
 	Article: Q167968
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -98,3 +100,5 @@ permalink: /kb/167/Q167968/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/063/Q63582/
 
 ## Q63582: NWPOPUP.EXE Does Not Initialize Properly in Windows 3.0
 
+{% raw %}
+
 	Article: Q63582
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/063/Q63582/
 	
 	=============================================================================
 	
+
+{% endraw %}

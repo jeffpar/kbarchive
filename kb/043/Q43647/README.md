@@ -6,6 +6,8 @@ permalink: /kb/043/Q43647/
 
 ## Q43647: Why Syntax Errors Might Not Display While Compiling in M
 
+{% raw %}
+
 	Article: Q43647
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -83,3 +85,5 @@ permalink: /kb/043/Q43647/
 	   A good way to check the validity of the Compile command and to check
 	   for the presence of the compiler is to type in the compile line with
 	   all of the options directly from DOS.
+
+{% endraw %}

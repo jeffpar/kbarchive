@@ -6,6 +6,8 @@ permalink: /kb/098/Q98909/
 
 ## Q98909: Description of Chip's Challenge
 
+{% raw %}
+
 	Article: Q98909
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -77,3 +79,5 @@ permalink: /kb/098/Q98909/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185592/
 
 ## Q185592: XCON: Recipient Address Corrupted on Messages to EDK Gateway
 
+{% raw %}
+
 	Article: Q185592
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -103,3 +105,5 @@ permalink: /kb/185/Q185592/
 	
 	=============================================================================
 	
+
+{% endraw %}

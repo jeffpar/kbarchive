@@ -6,6 +6,8 @@ permalink: /kb/280/Q280047/
 
 ## Q280047: Encarta: Cannot Print Image Colors Correctly
 
+{% raw %}
+
 	Article: Q280047
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/280/Q280047/
 	
 	=============================================================================
 	
+
+{% endraw %}

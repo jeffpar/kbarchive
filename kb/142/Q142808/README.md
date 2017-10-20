@@ -6,6 +6,8 @@ permalink: /kb/142/Q142808/
 
 ## Q142808: Error Message: The Password-List File %1 Is Damaged...
 
+{% raw %}
+
 	Article: Q142808
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -83,3 +85,5 @@ permalink: /kb/142/Q142808/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100432/
 
 ## Q100432: PRB: LABEL Command SAMPLE Clause Doesn't Work with Windows
 
+{% raw %}
+
 	Article: Q100432
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0,3.0b
@@ -47,3 +49,5 @@ permalink: /kb/100/Q100432/
 	
 	=============================================================================
 	
+
+{% endraw %}

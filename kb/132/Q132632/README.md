@@ -6,6 +6,8 @@ permalink: /kb/132/Q132632/
 
 ## Q132632: No Digitized Sound Running BloodNet
 
+{% raw %}
+
 	Article: Q132632
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/132/Q132632/
 	
 	=============================================================================
 	
+
+{% endraw %}

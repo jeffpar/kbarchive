@@ -6,6 +6,8 @@ permalink: /kb/153/Q153410/
 
 ## Q153410: Some Mouse Actions Not Recorded with Capture Next Actions
 
+{% raw %}
+
 	Article: Q153410
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -76,3 +78,5 @@ permalink: /kb/153/Q153410/
 	
 	=============================================================================
 	
+
+{% endraw %}

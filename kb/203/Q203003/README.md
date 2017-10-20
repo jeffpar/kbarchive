@@ -6,6 +6,8 @@ permalink: /kb/203/Q203003/
 
 ## Q203003: SMS: Erratic Mouse Behavior During Remote Control Session
 
+{% raw %}
+
 	Article: Q203003
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -76,3 +78,5 @@ permalink: /kb/203/Q203003/
 	
 	=============================================================================
 	
+
+{% endraw %}

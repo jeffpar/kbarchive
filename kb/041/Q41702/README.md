@@ -6,6 +6,8 @@ permalink: /kb/041/Q41702/
 
 ## Q41702: #define Source-Code Line Error in Manual
 
+{% raw %}
+
 	Article: Q41702
 	Product(s): See article
 	Version(s): 2.00
@@ -25,3 +27,5 @@ permalink: /kb/041/Q41702/
 	
 	The bit-shift operator should replace the logical less than
 	sign.
+
+{% endraw %}

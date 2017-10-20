@@ -6,6 +6,8 @@ permalink: /kb/153/Q153800/
 
 ## Q153800: Install Not Found Installing IIS on MSDN Level III CD
 
+{% raw %}
+
 	Article: Q153800
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -85,3 +87,5 @@ permalink: /kb/153/Q153800/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158758/
 
 ## Q158758: FIX: Form Wizard EditBox ForeColor Property Not Recognized
 
+{% raw %}
+
 	Article: Q158758
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b; MACINTOSH:3.0b; WINDOWS:5.0,5.0a
@@ -97,3 +99,5 @@ permalink: /kb/158/Q158758/
 	
 	=============================================================================
 	
+
+{% endraw %}

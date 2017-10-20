@@ -6,6 +6,8 @@ permalink: /kb/108/Q108298/
 
 ## Q108298: SNADS: Running Linkage OS/2 SNADS Gateway and MMTA
 
+{% raw %}
+
 	Article: Q108298
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1
@@ -58,3 +60,5 @@ permalink: /kb/108/Q108298/
 	
 	=============================================================================
 	
+
+{% endraw %}

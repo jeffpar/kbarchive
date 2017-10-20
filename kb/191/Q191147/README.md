@@ -6,6 +6,8 @@ permalink: /kb/191/Q191147/
 
 ## Q191147: How to Resolve Catalog Corruption
 
+{% raw %}
+
 	Article: Q191147
 	Product(s): Internet Information Server
 	Version(s): 1.0,1.1,2.0
@@ -57,3 +59,5 @@ permalink: /kb/191/Q191147/
 	
 	=============================================================================
 	
+
+{% endraw %}

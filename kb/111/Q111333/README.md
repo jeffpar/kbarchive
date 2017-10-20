@@ -6,6 +6,8 @@ permalink: /kb/111/Q111333/
 
 ## Q111333: Errors on Token Ring Network with Banyan Vines 5.52 and WFWG
 
+{% raw %}
+
 	Article: Q111333
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -61,3 +63,5 @@ permalink: /kb/111/Q111333/
 	
 	=============================================================================
 	
+
+{% endraw %}

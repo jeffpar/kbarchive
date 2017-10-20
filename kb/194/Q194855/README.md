@@ -6,6 +6,8 @@ permalink: /kb/194/Q194855/
 
 ## Q194855: X400: Recv.log File Is Not Updated when -MR Option Is Used
 
+{% raw %}
+
 	Article: Q194855
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -71,3 +73,5 @@ permalink: /kb/194/Q194855/
 	
 	=============================================================================
 	
+
+{% endraw %}

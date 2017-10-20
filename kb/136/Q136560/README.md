@@ -6,6 +6,8 @@ permalink: /kb/136/Q136560/
 
 ## Q136560: FIX: RI Fails with 'Trigger Failed' if dBASE Compatibility ON
 
+{% raw %}
+
 	Article: Q136560
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -82,3 +84,5 @@ permalink: /kb/136/Q136560/
 	
 	=============================================================================
 	
+
+{% endraw %}

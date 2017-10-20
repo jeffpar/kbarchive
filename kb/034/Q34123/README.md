@@ -6,6 +6,8 @@ permalink: /kb/034/Q34123/
 
 ## Q34123: Definition of the Localizer in Flight Simulator
 
+{% raw %}
+
 	Article: Q34123
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/034/Q34123/
 	
 	=============================================================================
 	
+
+{% endraw %}

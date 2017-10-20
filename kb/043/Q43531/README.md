@@ -6,6 +6,8 @@ permalink: /kb/043/Q43531/
 
 ## Q43531: INKEY&#36; Does Not Trap Extended Keys; Must Use Softkeys
 
+{% raw %}
+
 	Article: Q43531
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -82,3 +84,5 @@ permalink: /kb/043/Q43531/
 	keytrap2:
 	  PRINT "THAT IS THE EXTENDED LEFT ARROW KEY"
 	  RETURN
+
+{% endraw %}

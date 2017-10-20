@@ -6,6 +6,8 @@ permalink: /kb/237/Q237265/
 
 ## Q237265: Encarta 2000: How Creation Dates Are Affected During Setup
 
+{% raw %}
+
 	Article: Q237265
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/237/Q237265/
 	
 	=============================================================================
 	
+
+{% endraw %}

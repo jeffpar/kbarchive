@@ -6,6 +6,8 @@ permalink: /kb/136/Q136780/
 
 ## Q136780: WinFax Pro Software Causes 16-bit Applications To Hang
 
+{% raw %}
+
 	Article: Q136780
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/136/Q136780/
 	
 	=============================================================================
 	
+
+{% endraw %}

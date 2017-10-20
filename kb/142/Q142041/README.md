@@ -6,6 +6,8 @@ permalink: /kb/142/Q142041/
 
 ## Q142041: How to Set Up a Default RPC Name Server
 
+{% raw %}
+
 	Article: Q142041
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -76,3 +78,5 @@ permalink: /kb/142/Q142041/
 	
 	=============================================================================
 	
+
+{% endraw %}

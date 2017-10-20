@@ -6,6 +6,8 @@ permalink: /kb/075/Q75649/
 
 ## Q75649: Sysgen Durapak and MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q75649
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -42,3 +44,5 @@ permalink: /kb/075/Q75649/
 	
 	=============================================================================
 	
+
+{% endraw %}

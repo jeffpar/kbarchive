@@ -6,6 +6,8 @@ permalink: /kb/260/Q260743/
 
 ## Q260743: Baseball 2001: You Can Substitute Designated Hitter at Any Time
 
+{% raw %}
+
 	Article: Q260743
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -46,3 +48,5 @@ permalink: /kb/260/Q260743/
 	
 	=============================================================================
 	
+
+{% endraw %}

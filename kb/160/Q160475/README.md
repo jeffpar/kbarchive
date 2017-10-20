@@ -6,6 +6,8 @@ permalink: /kb/160/Q160475/
 
 ## Q160475: CG3: How to Download and Run Clip Gallery CIL Files from the Web
 
+{% raw %}
+
 	Article: Q160475
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 3.0; WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/160/Q160475/
 	
 	=============================================================================
 	
+
+{% endraw %}

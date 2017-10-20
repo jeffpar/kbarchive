@@ -6,6 +6,8 @@ permalink: /kb/077/Q77440/
 
 ## Q77440: DEC PathWorks VT320 Fonts Must Be Installed
 
+{% raw %}
+
 	Article: Q77440
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -60,3 +62,5 @@ permalink: /kb/077/Q77440/
 	
 	=============================================================================
 	
+
+{% endraw %}

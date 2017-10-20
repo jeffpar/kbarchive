@@ -6,6 +6,8 @@ permalink: /kb/111/Q111095/
 
 ## Q111095: BUG: Nonscrolling Region in Help File Topic Does Scroll
 
+{% raw %}
+
 	Article: Q111095
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/111/Q111095/
 	
 	=============================================================================
 	
+
+{% endraw %}

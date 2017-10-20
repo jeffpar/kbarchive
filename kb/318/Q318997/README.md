@@ -6,6 +6,8 @@ permalink: /kb/318/Q318997/
 
 ## Q318997: FIX: Report Form ASCII Clause Allows No White Space
 
+{% raw %}
+
 	Article: Q318997
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -94,3 +96,5 @@ permalink: /kb/318/Q318997/
 	
 	=============================================================================
 	
+
+{% endraw %}

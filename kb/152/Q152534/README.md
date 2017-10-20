@@ -6,6 +6,8 @@ permalink: /kb/152/Q152534/
 
 ## Q152534: Dbctl.exe Using ODBC in an ActiveX Control
 
+{% raw %}
+
 	Article: Q152534
 	Product(s): Microsoft C Compiler
 	Version(s): 2.5,2.6,4.0,4.1,5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/152/Q152534/
 	
 	=============================================================================
 	
+
+{% endraw %}

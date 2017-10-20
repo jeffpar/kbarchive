@@ -6,6 +6,8 @@ permalink: /kb/108/Q108923/
 
 ## Q108923: PRB: ATSP Returns Error for Validated Parameter
 
+{% raw %}
+
 	Article: Q108923
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 1.0
@@ -89,3 +91,5 @@ permalink: /kb/108/Q108923/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166245/
 
 ## Q166245: SMS: Package Command Line with Spaces Requires Quotes
 
+{% raw %}
+
 	Article: Q166245
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -56,3 +58,5 @@ permalink: /kb/166/Q166245/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170456/
 
 ## Q170456: Less Conventional Memory Available in European OSR2
 
+{% raw %}
+
 	Article: Q170456
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -156,3 +158,5 @@ permalink: /kb/170/Q170456/
 	
 	=============================================================================
 	
+
+{% endraw %}

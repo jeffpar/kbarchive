@@ -6,6 +6,8 @@ permalink: /kb/196/Q196719/
 
 ## Q196719: WD97: Cannot Place Frame or Text Box in Exact Position
 
+{% raw %}
+
 	Article: Q196719
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/196/Q196719/
 	
 	=============================================================================
 	
+
+{% endraw %}

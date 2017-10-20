@@ -6,6 +6,8 @@ permalink: /kb/243/Q243224/
 
 ## Q243224: Asheron's Call: Keyboard Commands Don't Work After Using ALT+TAB
 
+{% raw %}
+
 	Article: Q243224
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/243/Q243224/
 	
 	=============================================================================
 	
+
+{% endraw %}

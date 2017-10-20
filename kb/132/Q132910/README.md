@@ -6,6 +6,8 @@ permalink: /kb/132/Q132910/
 
 ## Q132910: FIX: Can't Move Focus from a Toolbar to an Object on a Form
 
+{% raw %}
+
 	Article: Q132910
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -184,3 +186,5 @@ permalink: /kb/132/Q132910/
 	
 	=============================================================================
 	
+
+{% endraw %}

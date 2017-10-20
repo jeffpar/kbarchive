@@ -6,6 +6,8 @@ permalink: /kb/248/Q248019/
 
 ## Q248019: HOWTO: Prevent Server Busy Dialog Box From Appearing
 
+{% raw %}
+
 	Article: Q248019
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -83,3 +85,5 @@ permalink: /kb/248/Q248019/
 	
 	=============================================================================
 	
+
+{% endraw %}

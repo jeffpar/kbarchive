@@ -6,6 +6,8 @@ permalink: /kb/156/Q156300/
 
 ## Q156300: STL Sample for the count_if Function
 
+{% raw %}
+
 	Article: Q156300
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -164,3 +166,5 @@ permalink: /kb/156/Q156300/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124958/
 
 ## Q124958: NTFS Integrity Problems with Large Stripe Sets
 
+{% raw %}
+
 	Article: Q124958
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/124/Q124958/
 	
 	=============================================================================
 	
+
+{% endraw %}

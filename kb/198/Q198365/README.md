@@ -6,6 +6,8 @@ permalink: /kb/198/Q198365/
 
 ## Q198365: WD97: Parentheses Missing, Decimal Appears in Number Form Field
 
+{% raw %}
+
 	Article: Q198365
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -104,3 +106,5 @@ permalink: /kb/198/Q198365/
 	
 	=============================================================================
 	
+
+{% endraw %}

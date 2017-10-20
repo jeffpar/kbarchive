@@ -6,6 +6,8 @@ permalink: /kb/184/Q184560/
 
 ## Q184560: NT40 Enterprise Training: W95brows.cap and Ntwbrows.cap Missing
 
+{% raw %}
+
 	Article: Q184560
 	Product(s): Microsoft Press
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/184/Q184560/
 	
 	=============================================================================
 	
+
+{% endraw %}

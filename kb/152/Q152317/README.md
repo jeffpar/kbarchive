@@ -6,6 +6,8 @@ permalink: /kb/152/Q152317/
 
 ## Q152317: FIX: Setup Could Not Open &#92;MSDEV&#92;REDIST&#92; QFEUPD.EXE
 
+{% raw %}
+
 	Article: Q152317
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.1
@@ -78,3 +80,5 @@ permalink: /kb/152/Q152317/
 	
 	=============================================================================
 	
+
+{% endraw %}

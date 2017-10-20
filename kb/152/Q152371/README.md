@@ -6,6 +6,8 @@ permalink: /kb/152/Q152371/
 
 ## Q152371: BUG: Small Left Grid Partition Leaves Scroll Bar Remnants
 
+{% raw %}
+
 	Article: Q152371
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -90,3 +92,5 @@ permalink: /kb/152/Q152371/
 	
 	=============================================================================
 	
+
+{% endraw %}

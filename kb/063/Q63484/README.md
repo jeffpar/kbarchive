@@ -6,6 +6,8 @@ permalink: /kb/063/Q63484/
 
 ## Q63484: Installing Third-Party Windows 3.0 Drivers
 
+{% raw %}
+
 	Article: Q63484
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -65,3 +67,5 @@ permalink: /kb/063/Q63484/
 	
 	=============================================================================
 	
+
+{% endraw %}

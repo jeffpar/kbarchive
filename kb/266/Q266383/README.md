@@ -6,6 +6,8 @@ permalink: /kb/266/Q266383/
 
 ## Q266383: XCON: MTA 2026 and Internet Mail Service 3016 Error Messages
 
+{% raw %}
+
 	Article: Q266383
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -82,3 +84,5 @@ permalink: /kb/266/Q266383/
 	
 	=============================================================================
 	
+
+{% endraw %}

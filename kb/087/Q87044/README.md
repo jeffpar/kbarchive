@@ -6,6 +6,8 @@ permalink: /kb/087/Q87044/
 
 ## Q87044: SMTP: Definition of Gateway
 
+{% raw %}
+
 	Article: Q87044
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/087/Q87044/
 	
 	=============================================================================
 	
+
+{% endraw %}

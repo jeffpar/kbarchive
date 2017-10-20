@@ -6,6 +6,8 @@ permalink: /kb/127/Q127827/
 
 ## Q127827: Increasing DefaultTTL in Registry Has No Effect
 
+{% raw %}
+
 	Article: Q127827
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/127/Q127827/
 	
 	=============================================================================
 	
+
+{% endraw %}

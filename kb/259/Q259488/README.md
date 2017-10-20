@@ -6,6 +6,8 @@ permalink: /kb/259/Q259488/
 
 ## Q259488: Slovakian Month Names Have Incorrect Grammar in Long Date
 
+{% raw %}
+
 	Article: Q259488
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -85,3 +87,5 @@ permalink: /kb/259/Q259488/
 	
 	=============================================================================
 	
+
+{% endraw %}

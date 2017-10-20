@@ -6,6 +6,8 @@ permalink: /kb/160/Q160771/
 
 ## Q160771: PRB: Setup Unable to Register an .ocx File Error
 
+{% raw %}
+
 	Article: Q160771
 	Product(s): Microsoft FoxPro
 	Version(s): 5.00
@@ -153,3 +155,5 @@ permalink: /kb/160/Q160771/
 	
 	=============================================================================
 	
+
+{% endraw %}

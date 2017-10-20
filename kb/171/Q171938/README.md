@@ -6,6 +6,8 @@ permalink: /kb/171/Q171938/
 
 ## Q171938: Bookshelf 98: No Ambient Music in 360 Degree Views
 
+{% raw %}
+
 	Article: Q171938
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:; WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/171/Q171938/
 	
 	=============================================================================
 	
+
+{% endraw %}

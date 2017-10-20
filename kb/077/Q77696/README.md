@@ -6,6 +6,8 @@ permalink: /kb/077/Q77696/
 
 ## Q77696: &quot;Close Waveaudio&quot; Command Closes Open Waveaudio Device
 
+{% raw %}
+
 	Article: Q77696
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -68,3 +70,5 @@ permalink: /kb/077/Q77696/
 	
 	=============================================================================
 	
+
+{% endraw %}

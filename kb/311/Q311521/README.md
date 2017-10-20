@@ -6,6 +6,8 @@ permalink: /kb/311/Q311521/
 
 ## Q311521: HOW TO: Index ASP.NET Content by Using MS Index Server
 
+{% raw %}
+
 	Article: Q311521
 	Product(s): Internet Information Server
 	Version(s): 3.0
@@ -110,3 +112,5 @@ permalink: /kb/311/Q311521/
 	
 	=============================================================================
 	
+
+{% endraw %}

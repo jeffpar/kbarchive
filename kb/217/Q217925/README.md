@@ -6,6 +6,8 @@ permalink: /kb/217/Q217925/
 
 ## Q217925: Unable to Provide Installation Path for SNA Server
 
+{% raw %}
+
 	Article: Q217925
 	Product(s): Microsoft Windows NT
 	Version(s): NT:4.5
@@ -50,3 +52,5 @@ permalink: /kb/217/Q217925/
 	
 	=============================================================================
 	
+
+{% endraw %}

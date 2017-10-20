@@ -6,6 +6,8 @@ permalink: /kb/157/Q157660/
 
 ## Q157660: XCON: Troubleshooting w/out MTA Object in Administrator Program
 
+{% raw %}
+
 	Article: Q157660
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -111,3 +113,5 @@ permalink: /kb/157/Q157660/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240277/
 
 ## Q240277: XFOR: Lotus Notes Configuration Utility Does Not Finish and Save
 
+{% raw %}
+
 	Article: Q240277
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/240/Q240277/
 	
 	=============================================================================
 	
+
+{% endraw %}

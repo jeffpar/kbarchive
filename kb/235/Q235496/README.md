@@ -6,6 +6,8 @@ permalink: /kb/235/Q235496/
 
 ## Q235496: Enabling a Memory.dmp File Capture Using the GUI or the Registry
 
+{% raw %}
+
 	Article: Q235496
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -226,3 +228,5 @@ permalink: /kb/235/Q235496/
 	
 	=============================================================================
 	
+
+{% endraw %}

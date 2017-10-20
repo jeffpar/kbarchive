@@ -6,6 +6,8 @@ permalink: /kb/103/Q103107/
 
 ## Q103107: Quark XPress for Windows Fails to Print
 
+{% raw %}
+
 	Article: Q103107
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -59,3 +61,5 @@ permalink: /kb/103/Q103107/
 	
 	=============================================================================
 	
+
+{% endraw %}

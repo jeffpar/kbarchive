@@ -6,6 +6,8 @@ permalink: /kb/135/Q135047/
 
 ## Q135047: HOWTO: Use Resource Editor for 16-Color 32x32 Mouse Pointers
 
+{% raw %}
+
 	Article: Q135047
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10 2.20 4.00 4.10
@@ -158,3 +160,5 @@ permalink: /kb/135/Q135047/
 	
 	=============================================================================
 	
+
+{% endraw %}

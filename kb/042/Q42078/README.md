@@ -6,6 +6,8 @@ permalink: /kb/042/Q42078/
 
 ## Q42078: QuickC 2.00 README.DOC: Example Program SORT.C
 
+{% raw %}
+
 	Article: Q42078
 	Product(s): See article
 	Version(s): 2.00
@@ -22,3 +24,5 @@ permalink: /kb/042/Q42078/
 	If you compile the program SORT.C and run it from the DOS command
 	line, it conflicts with the DOS SORT command. To eliminate the
 	problem, rename the file SORT.EXE as QCSORT.EXE.
+
+{% endraw %}

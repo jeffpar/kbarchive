@@ -6,6 +6,8 @@ permalink: /kb/185/Q185559/
 
 ## Q185559: Negative Value in NtGdiFastPolyPolyline Causes Blue Screen
 
+{% raw %}
+
 	Article: Q185559
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/185/Q185559/
 	
 	=============================================================================
 	
+
+{% endraw %}

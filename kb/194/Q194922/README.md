@@ -6,6 +6,8 @@ permalink: /kb/194/Q194922/
 
 ## Q194922: INFO: Receiving Data Using the MSComm Control's OnComm Event
 
+{% raw %}
+
 	Article: Q194922
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -206,3 +208,5 @@ permalink: /kb/194/Q194922/
 	
 	=============================================================================
 	
+
+{% endraw %}

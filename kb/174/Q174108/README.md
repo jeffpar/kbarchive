@@ -6,6 +6,8 @@ permalink: /kb/174/Q174108/
 
 ## Q174108: Error Message: This Folder Has Been Damaged. It Will Now Be...
 
+{% raw %}
+
 	Article: Q174108
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -77,3 +79,5 @@ permalink: /kb/174/Q174108/
 	
 	=============================================================================
 	
+
+{% endraw %}

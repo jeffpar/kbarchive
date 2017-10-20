@@ -6,6 +6,8 @@ permalink: /kb/158/Q158559/
 
 ## Q158559: How to Change Your Name in Microsoft Exchange Server
 
+{% raw %}
+
 	Article: Q158559
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/158/Q158559/
 	
 	=============================================================================
 	
+
+{% endraw %}

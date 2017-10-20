@@ -6,6 +6,8 @@ permalink: /kb/183/Q183903/
 
 ## Q183903: HOWTO: Display the Find All Files Dialog Box
 
+{% raw %}
+
 	Article: Q183903
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/183/Q183903/
 	
 	=============================================================================
 	
+
+{% endraw %}

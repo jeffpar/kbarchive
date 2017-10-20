@@ -6,6 +6,8 @@ permalink: /kb/184/Q184550/
 
 ## Q184550: XCLN: Outlook Deployment Kit (ODK) Availability
 
+{% raw %}
+
 	Article: Q184550
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,98
@@ -96,3 +98,5 @@ permalink: /kb/184/Q184550/
 	
 	=============================================================================
 	
+
+{% endraw %}

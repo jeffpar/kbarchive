@@ -6,6 +6,8 @@ permalink: /kb/099/Q99067/
 
 ## Q99067: REXX Practices, Peculiarities and Problems
 
+{% raw %}
+
 	Article: Q99067
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -118,3 +120,5 @@ permalink: /kb/099/Q99067/
 	
 	=============================================================================
 	
+
+{% endraw %}

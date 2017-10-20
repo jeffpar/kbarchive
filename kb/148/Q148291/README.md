@@ -6,6 +6,8 @@ permalink: /kb/148/Q148291/
 
 ## Q148291: Incomplete &quot;What Can I Say?&quot; List After Moving Mouse Pointer
 
+{% raw %}
+
 	Article: Q148291
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/148/Q148291/
 	
 	=============================================================================
 	
+
+{% endraw %}

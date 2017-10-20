@@ -6,6 +6,8 @@ permalink: /kb/121/Q121207/
 
 ## Q121207: SMS: Inventory Does Not Distinguish Individual Raid 5 Drives
 
+{% raw %}
+
 	Article: Q121207
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -42,3 +44,5 @@ permalink: /kb/121/Q121207/
 	
 	=============================================================================
 	
+
+{% endraw %}

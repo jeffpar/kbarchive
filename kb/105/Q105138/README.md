@@ -6,6 +6,8 @@ permalink: /kb/105/Q105138/
 
 ## Q105138: WFWG Mail: DoubleSpace and Highest Security Options
 
+{% raw %}
+
 	Article: Q105138
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -66,3 +68,5 @@ permalink: /kb/105/Q105138/
 	
 	=============================================================================
 	
+
+{% endraw %}

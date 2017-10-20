@@ -6,6 +6,8 @@ permalink: /kb/243/Q243655/
 
 ## Q243655: Trust Relationships Return &quot;STATUS_TRUSTED_DOMAIN_FAILURE&quot;
 
+{% raw %}
+
 	Article: Q243655
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5,4.0 SP6
@@ -85,3 +87,5 @@ permalink: /kb/243/Q243655/
 	
 	=============================================================================
 	
+
+{% endraw %}

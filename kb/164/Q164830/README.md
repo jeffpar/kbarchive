@@ -6,6 +6,8 @@ permalink: /kb/164/Q164830/
 
 ## Q164830: WD97: Invalid Page Fault Clearing &quot;Float Over Text&quot; Check Box
 
+{% raw %}
+
 	Article: Q164830
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -125,3 +127,5 @@ permalink: /kb/164/Q164830/
 	
 	=============================================================================
 	
+
+{% endraw %}

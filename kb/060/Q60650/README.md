@@ -6,6 +6,8 @@ permalink: /kb/060/Q60650/
 
 ## Q60650: C 6.00 SAMPLES.DOC: Note on Graphics Libraries
 
+{% raw %}
+
 	Article: Q60650
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -32,3 +34,5 @@ permalink: /kb/060/Q60650/
 	
 	If you are using PWB, you can use the supplied program list (.MAK)
 	files. These automatically add the appropriate libraries.
+
+{% endraw %}

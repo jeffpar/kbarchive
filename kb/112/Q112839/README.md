@@ -6,6 +6,8 @@ permalink: /kb/112/Q112839/
 
 ## Q112839: How to Index on Numbers in a Character Field
 
+{% raw %}
+
 	Article: Q112839
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
@@ -94,3 +96,5 @@ permalink: /kb/112/Q112839/
 	
 	=============================================================================
 	
+
+{% endraw %}

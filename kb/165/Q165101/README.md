@@ -6,6 +6,8 @@ permalink: /kb/165/Q165101/
 
 ## Q165101: HOWTO: Use a Windows 95/98/Me Computer as DCOM Server
 
+{% raw %}
+
 	Article: Q165101
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -156,3 +158,5 @@ permalink: /kb/165/Q165101/
 	
 	=============================================================================
 	
+
+{% endraw %}

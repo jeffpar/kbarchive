@@ -6,6 +6,8 @@ permalink: /kb/057/Q57356/
 
 ## Q57356: &quot;Overflow&quot; Accessing &gt; 32K Array Inside User-Defined TYPE
 
+{% raw %}
+
 	Article: Q57356
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -67,3 +69,5 @@ permalink: /kb/057/Q57356/
 	FOR i = 1 TO 16384
 	   aVariable.anArray(i) = 1   'No "Overflow" error -
 	NEXT i                        '16384 * 2 <= 32768.
+
+{% endraw %}

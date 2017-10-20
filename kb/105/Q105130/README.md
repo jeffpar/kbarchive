@@ -6,6 +6,8 @@ permalink: /kb/105/Q105130/
 
 ## Q105130: SMTP: Err Msg: WARNING Incoming SMTP Mail From Unknown Host
 
+{% raw %}
+
 	Article: Q105130
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -57,3 +59,5 @@ permalink: /kb/105/Q105130/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237597/
 
 ## Q237597: The Spoolss.exe Service Shows Increased Processor Usage
 
+{% raw %}
+
 	Article: Q237597
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -95,3 +97,5 @@ permalink: /kb/237/Q237597/
 	
 	=============================================================================
 	
+
+{% endraw %}

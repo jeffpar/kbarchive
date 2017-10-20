@@ -6,6 +6,8 @@ permalink: /kb/226/Q226358/
 
 ## Q226358: Using the AspEnableApplicationRestart Metabase
 
+{% raw %}
+
 	Article: Q226358
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -84,3 +86,5 @@ permalink: /kb/226/Q226358/
 	
 	=============================================================================
 	
+
+{% endraw %}

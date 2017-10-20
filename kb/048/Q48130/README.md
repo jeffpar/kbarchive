@@ -6,6 +6,8 @@ permalink: /kb/048/Q48130/
 
 ## Q48130: Microsoft Editor (M) Version 1.02: On-Line Help Not Loaded
 
+{% raw %}
+
 	Article: Q48130
 	Product(s): See article
 	Version(s): 1.02
@@ -30,3 +32,5 @@ permalink: /kb/048/Q48130/
 	
 	Microsoft is researching this problem and will post new information
 	as it becomes available.
+
+{% endraw %}

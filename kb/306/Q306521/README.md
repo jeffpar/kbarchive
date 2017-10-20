@@ -6,6 +6,8 @@ permalink: /kb/306/Q306521/
 
 ## Q306521: SMS: SMS Service Manager May Not Connect
 
+{% raw %}
+
 	Article: Q306521
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -157,3 +159,5 @@ permalink: /kb/306/Q306521/
 	
 	=============================================================================
 	
+
+{% endraw %}

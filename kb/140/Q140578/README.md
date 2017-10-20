@@ -6,6 +6,8 @@ permalink: /kb/140/Q140578/
 
 ## Q140578: FIX: Resizing Field in Grid Builder Causes Error
 
+{% raw %}
+
 	Article: Q140578
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -85,3 +87,5 @@ permalink: /kb/140/Q140578/
 	
 	=============================================================================
 	
+
+{% endraw %}

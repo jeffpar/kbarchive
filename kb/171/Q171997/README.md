@@ -6,6 +6,8 @@ permalink: /kb/171/Q171997/
 
 ## Q171997: WINS Replication Does Not Start As Scheduled
 
+{% raw %}
+
 	Article: Q171997
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -83,3 +85,5 @@ permalink: /kb/171/Q171997/
 	
 	=============================================================================
 	
+
+{% endraw %}

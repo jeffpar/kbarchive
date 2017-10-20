@@ -6,6 +6,8 @@ permalink: /kb/288/Q288218/
 
 ## Q288218: Windows 95/98 Clients May Remove SMS Client Components
 
+{% raw %}
+
 	Article: Q288218
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -114,3 +116,5 @@ permalink: /kb/288/Q288218/
 	
 	=============================================================================
 	
+
+{% endraw %}

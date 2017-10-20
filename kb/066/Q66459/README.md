@@ -6,6 +6,8 @@ permalink: /kb/066/Q66459/
 
 ## Q66459: FIX: Bad Macro Substitution, In-line File in Inference Rule
 
+{% raw %}
+
 	Article: Q66459
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/066/Q66459/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195755/
 
 ## Q195755: BUG: Parent Property Returns Invalid Object Type for UserControl
 
+{% raw %}
+
 	Article: Q195755
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -116,3 +118,5 @@ permalink: /kb/195/Q195755/
 	
 	=============================================================================
 	
+
+{% endraw %}

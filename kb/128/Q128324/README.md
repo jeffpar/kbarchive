@@ -6,6 +6,8 @@ permalink: /kb/128/Q128324/
 
 ## Q128324: PC DOS: Err Msg: Notice 109 Accessing Folders
 
+{% raw %}
+
 	Article: Q128324
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -55,3 +57,5 @@ permalink: /kb/128/Q128324/
 	
 	=============================================================================
 	
+
+{% endraw %}

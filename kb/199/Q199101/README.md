@@ -6,6 +6,8 @@ permalink: /kb/199/Q199101/
 
 ## Q199101: Rasman.exe Causes Access Violation with Connection Manager
 
+{% raw %}
+
 	Article: Q199101
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/199/Q199101/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75257/
 
 ## Q75257: Passing File Handles from TSR to Windows-Based App
 
+{% raw %}
+
 	Article: Q75257
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -103,3 +105,5 @@ permalink: /kb/075/Q75257/
 	
 	=============================================================================
 	
+
+{% endraw %}

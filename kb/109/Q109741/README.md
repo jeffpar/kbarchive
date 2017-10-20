@@ -6,6 +6,8 @@ permalink: /kb/109/Q109741/
 
 ## Q109741: HOWTO: Scroll a Form When VB Forms are Limited to Screen Size
 
+{% raw %}
+
 	Article: Q109741
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0,4.0,5.0,6.0
@@ -144,3 +146,5 @@ permalink: /kb/109/Q109741/
 	
 	=============================================================================
 	
+
+{% endraw %}

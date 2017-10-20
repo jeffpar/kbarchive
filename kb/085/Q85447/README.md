@@ -6,6 +6,8 @@ permalink: /kb/085/Q85447/
 
 ## Q85447: No Draft Mode with TrueType Fonts on a Dot-Matrix Printer
 
+{% raw %}
+
 	Article: Q85447
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/085/Q85447/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/268/Q268816/
 
 ## Q268816: XADM: Using an Active Directory Connector to Rebuild Exchg Dir.
 
+{% raw %}
+
 	Article: Q268816
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -84,3 +86,5 @@ permalink: /kb/268/Q268816/
 	
 	=============================================================================
 	
+
+{% endraw %}

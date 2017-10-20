@@ -6,6 +6,8 @@ permalink: /kb/121/Q121067/
 
 ## Q121067: MS-DOS 6.21 or 6.22 Upgrade: Files Not Updated in English
 
+{% raw %}
+
 	Article: Q121067
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -51,3 +53,5 @@ permalink: /kb/121/Q121067/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186567/
 
 ## Q186567: Terminal Server Domain Structure Considerations
 
+{% raw %}
+
 	Article: Q186567
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/186/Q186567/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151460/
 
 ## Q151460: Mastering Microsoft Visual C++: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q151460
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0,1.0a
@@ -60,3 +62,5 @@ permalink: /kb/151/Q151460/
 	
 	=============================================================================
 	
+
+{% endraw %}

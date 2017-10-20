@@ -6,6 +6,8 @@ permalink: /kb/214/Q214682/
 
 ## Q214682: XCON: MTA Deferred Delivery Message Generates NDR
 
+{% raw %}
+
 	Article: Q214682
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -117,3 +119,5 @@ permalink: /kb/214/Q214682/
 	
 	=============================================================================
 	
+
+{% endraw %}

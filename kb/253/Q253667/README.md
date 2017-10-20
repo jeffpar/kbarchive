@@ -6,6 +6,8 @@ permalink: /kb/253/Q253667/
 
 ## Q253667: Err Msg: HTTP 401.2 - Unauthorized: Logon Failed Due to...
 
+{% raw %}
+
 	Article: Q253667
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -77,3 +79,5 @@ permalink: /kb/253/Q253667/
 	
 	=============================================================================
 	
+
+{% endraw %}

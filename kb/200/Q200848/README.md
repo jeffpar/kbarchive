@@ -6,6 +6,8 @@ permalink: /kb/200/Q200848/
 
 ## Q200848: Stop 0xC000021a on Windows NT Server 4.0 with Service Pack 4
 
+{% raw %}
+
 	Article: Q200848
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a
@@ -75,3 +77,5 @@ permalink: /kb/200/Q200848/
 	
 	=============================================================================
 	
+
+{% endraw %}

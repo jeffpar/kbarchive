@@ -6,6 +6,8 @@ permalink: /kb/182/Q182331/
 
 ## Q182331: Default 802.2 DLC Pacing Values May Result In Slow Performance
 
+{% raw %}
+
 	Article: Q182331
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -73,3 +75,5 @@ permalink: /kb/182/Q182331/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169037/
 
 ## Q169037: Win31Upgrade Switch May Not Work Properly At Unattend Setup
 
+{% raw %}
+
 	Article: Q169037
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/169/Q169037/
 	
 	=============================================================================
 	
+
+{% endraw %}

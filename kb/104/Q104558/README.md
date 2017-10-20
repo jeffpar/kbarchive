@@ -6,6 +6,8 @@ permalink: /kb/104/Q104558/
 
 ## Q104558: Changing the Computer Name of a Windows NT Advanced Server
 
+{% raw %}
+
 	Article: Q104558
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -67,3 +69,5 @@ permalink: /kb/104/Q104558/
 	
 	=============================================================================
 	
+
+{% endraw %}

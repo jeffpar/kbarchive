@@ -6,6 +6,8 @@ permalink: /kb/313/Q313993/
 
 ## Q313993: BUG: VSS Database Truncates Stored Procedures Larger Than 4 KB
 
+{% raw %}
+
 	Article: Q313993
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -79,3 +81,5 @@ permalink: /kb/313/Q313993/
 	
 	=============================================================================
 	
+
+{% endraw %}

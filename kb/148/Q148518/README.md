@@ -6,6 +6,8 @@ permalink: /kb/148/Q148518/
 
 ## Q148518: XCLN: Err Msg: The MS Exchange Server Could Not Be Opened
 
+{% raw %}
+
 	Article: Q148518
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/148/Q148518/
 	
 	=============================================================================
 	
+
+{% endraw %}

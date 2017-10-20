@@ -6,6 +6,8 @@ permalink: /kb/176/Q176186/
 
 ## Q176186: PRB: File Name Extension Needed to Run Exe from Support Library
 
+{% raw %}
+
 	Article: Q176186
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:2.5
@@ -110,3 +112,5 @@ permalink: /kb/176/Q176186/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259773/
 
 ## Q259773: Incorrect Response to Local Procedure Call Causes &quot;Stop&quot; Error
 
+{% raw %}
+
 	Article: Q259773
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -96,3 +98,5 @@ permalink: /kb/259/Q259773/
 	
 	=============================================================================
 	
+
+{% endraw %}

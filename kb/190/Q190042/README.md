@@ -6,6 +6,8 @@ permalink: /kb/190/Q190042/
 
 ## Q190042: PRB: License Collection vs. Standard Collection in For Each
 
+{% raw %}
+
 	Article: Q190042
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0;
@@ -99,3 +101,5 @@ permalink: /kb/190/Q190042/
 	
 	=============================================================================
 	
+
+{% endraw %}

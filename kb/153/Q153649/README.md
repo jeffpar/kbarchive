@@ -6,6 +6,8 @@ permalink: /kb/153/Q153649/
 
 ## Q153649: Dataloader Aborts Insertion of MIF After SQL Error
 
+{% raw %}
+
 	Article: Q153649
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -49,3 +51,5 @@ permalink: /kb/153/Q153649/
 	
 	=============================================================================
 	
+
+{% endraw %}

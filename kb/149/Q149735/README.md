@@ -6,6 +6,8 @@ permalink: /kb/149/Q149735/
 
 ## Q149735: BUG: DBGrid CachePages Property Is Disabled
 
+{% raw %}
+
 	Article: Q149735
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -75,3 +77,5 @@ permalink: /kb/149/Q149735/
 	
 	=============================================================================
 	
+
+{% endraw %}

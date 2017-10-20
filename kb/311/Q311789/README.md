@@ -6,6 +6,8 @@ permalink: /kb/311/Q311789/
 
 ## Q311789: Microsoft Windows XP Step By Step Comments And Corrections
 
+{% raw %}
+
 	Article: Q311789
 	Product(s): Microsoft Press
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/311/Q311789/
 	
 	=============================================================================
 	
+
+{% endraw %}

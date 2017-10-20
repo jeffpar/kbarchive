@@ -6,6 +6,8 @@ permalink: /kb/099/Q99599/
 
 ## Q99599: FoxBASE+/Mac Err Msg: File Is in Use by Another
 
+{% raw %}
+
 	Article: Q99599
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -51,3 +53,5 @@ permalink: /kb/099/Q99599/
 	
 	=============================================================================
 	
+
+{% endraw %}

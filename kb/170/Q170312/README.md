@@ -6,6 +6,8 @@ permalink: /kb/170/Q170312/
 
 ## Q170312: FP: Java Applets Fail if Case Is Incorrect in Codebase
 
+{% raw %}
+
 	Article: Q170312
 	Product(s): Word Front Page
 	Version(s): windows:97,macintosh:1.0
@@ -60,3 +62,5 @@ permalink: /kb/170/Q170312/
 	
 	=============================================================================
 	
+
+{% endraw %}

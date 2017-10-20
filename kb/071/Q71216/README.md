@@ -6,6 +6,8 @@ permalink: /kb/071/Q71216/
 
 ## Q71216: Mac Srv: User Lists Not Exchanged Between Mail 2.0 and 3.0
 
+{% raw %}
+
 	Article: Q71216
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/071/Q71216/
 	
 	=============================================================================
 	
+
+{% endraw %}

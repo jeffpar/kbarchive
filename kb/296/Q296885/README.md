@@ -6,6 +6,8 @@ permalink: /kb/296/Q296885/
 
 ## Q296885: Console Process May Hang During the Creation of a Child Console
 
+{% raw %}
+
 	Article: Q296885
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -106,3 +108,5 @@ permalink: /kb/296/Q296885/
 	
 	=============================================================================
 	
+
+{% endraw %}

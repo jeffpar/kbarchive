@@ -6,6 +6,8 @@ permalink: /kb/140/Q140988/
 
 ## Q140988: BUG: Negative File Size Replacing File Over 2 Gigabytes
 
+{% raw %}
+
 	Article: Q140988
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -61,3 +63,5 @@ permalink: /kb/140/Q140988/
 	
 	=============================================================================
 	
+
+{% endraw %}

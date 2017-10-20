@@ -6,6 +6,8 @@ permalink: /kb/140/Q140935/
 
 ## Q140935: XFOR: IMC: Empty or Partial Messages Received
 
+{% raw %}
+
 	Article: Q140935
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -64,3 +66,5 @@ permalink: /kb/140/Q140935/
 	
 	=============================================================================
 	
+
+{% endraw %}

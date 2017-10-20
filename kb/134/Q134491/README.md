@@ -6,6 +6,8 @@ permalink: /kb/134/Q134491/
 
 ## Q134491: Stuttering Sound in Lion King 1.1 with ESS488 Sound Card
 
+{% raw %}
+
 	Article: Q134491
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/134/Q134491/
 	
 	=============================================================================
 	
+
+{% endraw %}

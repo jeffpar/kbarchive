@@ -6,6 +6,8 @@ permalink: /kb/218/Q218066/
 
 ## Q218066: The Server Status Tool Does Not Work Without an E-mail Client
 
+{% raw %}
+
 	Article: Q218066
 	Product(s): Microsoft Windows NT
 	Version(s): 4.5
@@ -89,3 +91,5 @@ permalink: /kb/218/Q218066/
 	
 	=============================================================================
 	
+
+{% endraw %}

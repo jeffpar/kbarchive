@@ -6,6 +6,8 @@ permalink: /kb/316/Q316441/
 
 ## Q316441: FIX: XMLToCursor Does Not Convert XML Dates with Seconds
 
+{% raw %}
+
 	Article: Q316441
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -102,3 +104,5 @@ permalink: /kb/316/Q316441/
 	
 	=============================================================================
 	
+
+{% endraw %}

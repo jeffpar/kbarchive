@@ -6,6 +6,8 @@ permalink: /kb/247/Q247030/
 
 ## Q247030: XADM: Custom Attributes 11-15 Are Not Replicated to Other Sites
 
+{% raw %}
+
 	Article: Q247030
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/247/Q247030/
 	
 	=============================================================================
 	
+
+{% endraw %}

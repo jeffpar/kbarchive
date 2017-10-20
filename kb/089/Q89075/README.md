@@ -6,6 +6,8 @@ permalink: /kb/089/Q89075/
 
 ## Q89075: Using IRMA Workstation for Windows with Windows 3.1
 
+{% raw %}
+
 	Article: Q89075
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/089/Q89075/
 	
 	=============================================================================
 	
+
+{% endraw %}

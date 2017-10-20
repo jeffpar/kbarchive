@@ -6,6 +6,8 @@ permalink: /kb/090/Q90409/
 
 ## Q90409: Using a Mouse with FoxBASE+ and FoxBASE Central
 
+{% raw %}
+
 	Article: Q90409
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -75,3 +77,5 @@ permalink: /kb/090/Q90409/
 	
 	=============================================================================
 	
+
+{% endraw %}

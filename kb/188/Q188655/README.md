@@ -6,6 +6,8 @@ permalink: /kb/188/Q188655/
 
 ## Q188655: NetBIOS CacheTimeout Explanation
 
+{% raw %}
+
 	Article: Q188655
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -79,3 +81,5 @@ permalink: /kb/188/Q188655/
 	
 	=============================================================================
 	
+
+{% endraw %}

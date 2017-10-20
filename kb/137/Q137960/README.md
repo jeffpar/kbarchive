@@ -6,6 +6,8 @@ permalink: /kb/137/Q137960/
 
 ## Q137960: Wine Guide 1.0: Incorrect BACK Functionality in Encyclopedia
 
+{% raw %}
+
 	Article: Q137960
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0; WINDOWS:1.0,1.0a,2.0
@@ -43,3 +45,5 @@ permalink: /kb/137/Q137960/
 	
 	=============================================================================
 	
+
+{% endraw %}

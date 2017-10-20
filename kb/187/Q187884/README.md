@@ -6,6 +6,8 @@ permalink: /kb/187/Q187884/
 
 ## Q187884: CoCreateInstance on Multiple Threads Causes Hangs or Failures
 
+{% raw %}
+
 	Article: Q187884
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/187/Q187884/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163507/
 
 ## Q163507: Trap 0x00000024 Occurs During the Autochk Sequence at Boot
 
+{% raw %}
+
 	Article: Q163507
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/163/Q163507/
 	
 	=============================================================================
 	
+
+{% endraw %}

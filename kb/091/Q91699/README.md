@@ -6,6 +6,8 @@ permalink: /kb/091/Q91699/
 
 ## Q91699: PC Win OS2: Virus Message on Dual-Boot Systems
 
+{% raw %}
+
 	Article: Q91699
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/091/Q91699/
 	
 	=============================================================================
 	
+
+{% endraw %}

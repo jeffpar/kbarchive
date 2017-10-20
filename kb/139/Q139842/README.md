@@ -6,6 +6,8 @@ permalink: /kb/139/Q139842/
 
 ## Q139842: Windows NT 3.51 SP2 Cannot Create Mac Volume for CD-ROM Drives
 
+{% raw %}
+
 	Article: Q139842
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -50,3 +52,5 @@ permalink: /kb/139/Q139842/
 	
 	=============================================================================
 	
+
+{% endraw %}

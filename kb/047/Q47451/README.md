@@ -6,6 +6,8 @@ permalink: /kb/047/Q47451/
 
 ## Q47451: Black and White Text Modes Display in Color on Color System
 
+{% raw %}
+
 	Article: Q47451
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -43,3 +45,5 @@ permalink: /kb/047/Q47451/
 	
 	"For monochrome displays the number of colors is the number of gray
 	shades".
+
+{% endraw %}

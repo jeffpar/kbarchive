@@ -6,6 +6,8 @@ permalink: /kb/261/Q261874/
 
 ## Q261874: LAN_Sender Generates Error 487 on WNetAddConnection2 to Child
 
+{% raw %}
+
 	Article: Q261874
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -52,3 +54,5 @@ permalink: /kb/261/Q261874/
 	
 	=============================================================================
 	
+
+{% endraw %}

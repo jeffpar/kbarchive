@@ -6,6 +6,8 @@ permalink: /kb/250/Q250237/
 
 ## Q250237: Using ScriptIt.exe to Automate Setup of Partitions and Printers
 
+{% raw %}
+
 	Article: Q250237
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/250/Q250237/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150228/
 
 ## Q150228: BUG: BackColor Property of OCX Control Saved in Decimal
 
+{% raw %}
+
 	Article: Q150228
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/150/Q150228/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247515/
 
 ## Q247515: Program Is Not Listed in Add/Remove Programs After Installation
 
+{% raw %}
+
 	Article: Q247515
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -118,3 +120,5 @@ permalink: /kb/247/Q247515/
 	
 	=============================================================================
 	
+
+{% endraw %}

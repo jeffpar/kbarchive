@@ -6,6 +6,8 @@ permalink: /kb/076/Q76977/
 
 ## Q76977: Plus Passport Hard Drive Appears As Two Drives to FDISK
 
+{% raw %}
+
 	Article: Q76977
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -60,3 +62,5 @@ permalink: /kb/076/Q76977/
 	
 	=============================================================================
 	
+
+{% endraw %}

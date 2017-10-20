@@ -6,6 +6,8 @@ permalink: /kb/129/Q129873/
 
 ## Q129873: Why Property Pages Might Be Missing on OLE Controls
 
+{% raw %}
+
 	Article: Q129873
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -68,3 +70,5 @@ permalink: /kb/129/Q129873/
 	
 	=============================================================================
 	
+
+{% endraw %}

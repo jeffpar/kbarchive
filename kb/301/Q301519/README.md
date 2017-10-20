@@ -6,6 +6,8 @@ permalink: /kb/301/Q301519/
 
 ## Q301519: Customer receives e-mail at username@hotmail.msn.com but not at
 
+{% raw %}
+
 	Article: Q301519
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -45,3 +47,5 @@ permalink: /kb/301/Q301519/
 	
 	=============================================================================
 	
+
+{% endraw %}

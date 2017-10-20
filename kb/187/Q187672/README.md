@@ -6,6 +6,8 @@ permalink: /kb/187/Q187672/
 
 ## Q187672: Access Violation in RAS Using Multilink
 
+{% raw %}
+
 	Article: Q187672
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/187/Q187672/
 	
 	=============================================================================
 	
+
+{% endraw %}

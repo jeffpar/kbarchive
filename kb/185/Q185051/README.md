@@ -6,6 +6,8 @@ permalink: /kb/185/Q185051/
 
 ## Q185051: Restarting Cluster Service Causes Services.exe to Crash
 
+{% raw %}
+
 	Article: Q185051
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/185/Q185051/
 	
 	=============================================================================
 	
+
+{% endraw %}

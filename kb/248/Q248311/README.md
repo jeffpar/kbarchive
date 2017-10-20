@@ -6,6 +6,8 @@ permalink: /kb/248/Q248311/
 
 ## Q248311: Fighter Ace II: Game Quits When Detecting 3D Accelerators
 
+{% raw %}
+
 	Article: Q248311
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/248/Q248311/
 	
 	=============================================================================
 	
+
+{% endraw %}

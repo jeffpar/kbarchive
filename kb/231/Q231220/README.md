@@ -6,6 +6,8 @@ permalink: /kb/231/Q231220/
 
 ## Q231220: SMS: Unable to Create a Secondary Site of a Child Primary Site
 
+{% raw %}
+
 	Article: Q231220
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -65,3 +67,5 @@ permalink: /kb/231/Q231220/
 	
 	=============================================================================
 	
+
+{% endraw %}

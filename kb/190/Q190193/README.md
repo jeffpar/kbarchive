@@ -6,6 +6,8 @@ permalink: /kb/190/Q190193/
 
 ## Q190193: HOWTO: Use a Satellite DLL to Localize an Add-In
 
+{% raw %}
+
 	Article: Q190193
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -150,3 +152,5 @@ permalink: /kb/190/Q190193/
 	
 	=============================================================================
 	
+
+{% endraw %}

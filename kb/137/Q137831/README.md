@@ -6,6 +6,8 @@ permalink: /kb/137/Q137831/
 
 ## Q137831: PPT7: Default Formatting Not Applied to Every New Presentation
 
+{% raw %}
+
 	Article: Q137831
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -74,3 +76,5 @@ permalink: /kb/137/Q137831/
 	
 	=============================================================================
 	
+
+{% endraw %}

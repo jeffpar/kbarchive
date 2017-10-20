@@ -6,6 +6,8 @@ permalink: /kb/157/Q157038/
 
 ## Q157038: STL Sample for the Predicate Version of min_element Function
 
+{% raw %}
+
 	Article: Q157038
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -147,3 +149,5 @@ permalink: /kb/157/Q157038/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198480/
 
 ## Q198480: XCLN: Message Displays Forwarded Icon but was not Forwarded
 
+{% raw %}
+
 	Article: Q198480
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/198/Q198480/
 	
 	=============================================================================
 	
+
+{% endraw %}

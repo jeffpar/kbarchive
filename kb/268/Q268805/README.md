@@ -6,6 +6,8 @@ permalink: /kb/268/Q268805/
 
 ## Q268805: AoE II Expansion: Computer Hangs During Multiplayer Game
 
+{% raw %}
+
 	Article: Q268805
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/268/Q268805/
 	
 	=============================================================================
 	
+
+{% endraw %}

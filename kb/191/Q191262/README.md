@@ -6,6 +6,8 @@ permalink: /kb/191/Q191262/
 
 ## Q191262: XFOR: IMC Accepts SMTP Address with Space While IMS Does Not
 
+{% raw %}
+
 	Article: Q191262
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/191/Q191262/
 	
 	=============================================================================
 	
+
+{% endraw %}

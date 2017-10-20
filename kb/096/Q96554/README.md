@@ -6,6 +6,8 @@ permalink: /kb/096/Q96554/
 
 ## Q96554: WFWG: Microsoft Diagnostics (MSD) May Fail in Standard Mode
 
+{% raw %}
+
 	Article: Q96554
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/096/Q96554/
 	
 	=============================================================================
 	
+
+{% endraw %}

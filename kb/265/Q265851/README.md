@@ -6,6 +6,8 @@ permalink: /kb/265/Q265851/
 
 ## Q265851: XADM: Error C103089F Appears During Object Creation
 
+{% raw %}
+
 	Article: Q265851
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/265/Q265851/
 	
 	=============================================================================
 	
+
+{% endraw %}

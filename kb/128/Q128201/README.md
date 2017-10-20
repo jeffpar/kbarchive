@@ -6,6 +6,8 @@ permalink: /kb/128/Q128201/
 
 ## Q128201: How to Put a Null Value in a Field
 
+{% raw %}
+
 	Article: Q128201
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0; WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/128/Q128201/
 	
 	=============================================================================
 	
+
+{% endraw %}

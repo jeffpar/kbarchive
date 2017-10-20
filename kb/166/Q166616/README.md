@@ -6,6 +6,8 @@ permalink: /kb/166/Q166616/
 
 ## Q166616: XFOR: IMS Can Accept RFC821 Addresses Containing an Equal Sign
 
+{% raw %}
+
 	Article: Q166616
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -85,3 +87,5 @@ permalink: /kb/166/Q166616/
 	
 	=============================================================================
 	
+
+{% endraw %}

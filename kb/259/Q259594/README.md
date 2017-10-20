@@ -6,6 +6,8 @@ permalink: /kb/259/Q259594/
 
 ## Q259594: XADM: Mailbox Manager Scans Excluded Parent Folder Subfolders
 
+{% raw %}
+
 	Article: Q259594
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -59,3 +61,5 @@ permalink: /kb/259/Q259594/
 	
 	=============================================================================
 	
+
+{% endraw %}

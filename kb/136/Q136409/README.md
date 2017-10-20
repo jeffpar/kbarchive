@@ -6,6 +6,8 @@ permalink: /kb/136/Q136409/
 
 ## Q136409: Potential Invalid Page Faults Using Bulletin Boards on MSN
 
+{% raw %}
+
 	Article: Q136409
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -54,3 +56,5 @@ permalink: /kb/136/Q136409/
 	
 	=============================================================================
 	
+
+{% endraw %}

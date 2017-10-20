@@ -6,6 +6,8 @@ permalink: /kb/197/Q197460/
 
 ## Q197460: Access Violation Occurs when Client Certificates are Required
 
+{% raw %}
+
 	Article: Q197460
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/197/Q197460/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116302/
 
 ## Q116302: BUG: LINK Generates Incorrect Unresolved External for Pointer
 
+{% raw %}
+
 	Article: Q116302
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.3,5.31.009,5.5,5.6
@@ -92,3 +94,5 @@ permalink: /kb/116/Q116302/
 	
 	=============================================================================
 	
+
+{% endraw %}

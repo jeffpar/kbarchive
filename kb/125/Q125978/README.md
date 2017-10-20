@@ -6,6 +6,8 @@ permalink: /kb/125/Q125978/
 
 ## Q125978: SMS Will Not Deinstall On Windows for Workgroups clients
 
+{% raw %}
+
 	Article: Q125978
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:; winnt:1.0,1.1
@@ -98,3 +100,5 @@ permalink: /kb/125/Q125978/
 	
 	=============================================================================
 	
+
+{% endraw %}

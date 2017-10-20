@@ -6,6 +6,8 @@ permalink: /kb/156/Q156437/
 
 ## Q156437: Cyrix 5x86 or 6x86 CPU Reported as 486
 
+{% raw %}
+
 	Article: Q156437
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -53,3 +55,5 @@ permalink: /kb/156/Q156437/
 	
 	=============================================================================
 	
+
+{% endraw %}

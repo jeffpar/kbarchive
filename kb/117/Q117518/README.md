@@ -6,6 +6,8 @@ permalink: /kb/117/Q117518/
 
 ## Q117518: MS-DOS 6.22 Upgrade Directory Listings for 3.5-Inch 720K Set
 
+{% raw %}
+
 	Article: Q117518
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -258,3 +260,5 @@ permalink: /kb/117/Q117518/
 	
 	=============================================================================
 	
+
+{% endraw %}

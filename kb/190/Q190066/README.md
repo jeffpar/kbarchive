@@ -6,6 +6,8 @@ permalink: /kb/190/Q190066/
 
 ## Q190066: FIX: Table Can Not Be USED After REPLACE of Memo in TRANSACTION
 
+{% raw %}
+
 	Article: Q190066
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -212,3 +214,5 @@ permalink: /kb/190/Q190066/
 	
 	=============================================================================
 	
+
+{% endraw %}

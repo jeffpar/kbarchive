@@ -6,6 +6,8 @@ permalink: /kb/197/Q197667/
 
 ## Q197667: Installing Windows NT on a Large IDE Hard Disk
 
+{% raw %}
+
 	Article: Q197667
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0a
@@ -171,3 +173,5 @@ permalink: /kb/197/Q197667/
 	
 	=============================================================================
 	
+
+{% endraw %}

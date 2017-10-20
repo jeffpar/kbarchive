@@ -6,6 +6,8 @@ permalink: /kb/130/Q130285/
 
 ## Q130285: PC Adm: Resetting or Rebuilding Mailbags with MAILQ16.EXE
 
+{% raw %}
+
 	Article: Q130285
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -72,3 +74,5 @@ permalink: /kb/130/Q130285/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243756/
 
 ## Q243756: HOWTO: Use Encrypting File System (EFS) with IIS
 
+{% raw %}
+
 	Article: Q243756
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -126,3 +128,5 @@ permalink: /kb/243/Q243756/
 	
 	=============================================================================
 	
+
+{% endraw %}

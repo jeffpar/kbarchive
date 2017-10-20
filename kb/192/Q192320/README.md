@@ -6,6 +6,8 @@ permalink: /kb/192/Q192320/
 
 ## Q192320: WD97: Disable System Menu Button and Keyboard Close Command
 
+{% raw %}
+
 	Article: Q192320
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -151,3 +153,5 @@ permalink: /kb/192/Q192320/
 	
 	=============================================================================
 	
+
+{% endraw %}

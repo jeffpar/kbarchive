@@ -6,6 +6,8 @@ permalink: /kb/165/Q165172/
 
 ## Q165172: Gphsamp.exe Shows Automation to DataSheet in MS Graph 8
 
+{% raw %}
+
 	Article: Q165172
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -66,3 +68,5 @@ permalink: /kb/165/Q165172/
 	
 	=============================================================================
 	
+
+{% endraw %}

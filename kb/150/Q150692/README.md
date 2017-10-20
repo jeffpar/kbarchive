@@ -6,6 +6,8 @@ permalink: /kb/150/Q150692/
 
 ## Q150692: Mac Bookshelf 96-97: Text Pasted to Scrapbook Does Not Display
 
+{% raw %}
+
 	Article: Q150692
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -60,3 +62,5 @@ permalink: /kb/150/Q150692/
 	
 	=============================================================================
 	
+
+{% endraw %}

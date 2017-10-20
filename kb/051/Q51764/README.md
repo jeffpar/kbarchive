@@ -6,6 +6,8 @@ permalink: /kb/051/Q51764/
 
 ## Q51764: Debugging DLLs with Codeview
 
+{% raw %}
+
 	Article: Q51764
 	Product(s): See article
 	Version(s): 2.20 2.30
@@ -34,3 +36,5 @@ permalink: /kb/051/Q51764/
 	information, query on the following:
 	
 	    CODEVIEW DLL LIBPATH
+
+{% endraw %}

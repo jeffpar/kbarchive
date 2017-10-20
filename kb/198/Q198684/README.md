@@ -6,6 +6,8 @@ permalink: /kb/198/Q198684/
 
 ## Q198684: Event 94 Continuously Logged on COMTI Client
 
+{% raw %}
+
 	Article: Q198684
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1
@@ -98,3 +100,5 @@ permalink: /kb/198/Q198684/
 	
 	=============================================================================
 	
+
+{% endraw %}

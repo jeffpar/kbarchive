@@ -6,6 +6,8 @@ permalink: /kb/111/Q111922/
 
 ## Q111922: How to Import ASCII Files with Nonstandard Delimiters
 
+{% raw %}
+
 	Article: Q111922
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.5x 2.6x | 2.5x 2.6x 3.00
@@ -81,3 +83,5 @@ permalink: /kb/111/Q111922/
 	
 	=============================================================================
 	
+
+{% endraw %}

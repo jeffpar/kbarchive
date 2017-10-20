@@ -6,6 +6,8 @@ permalink: /kb/123/Q123749/
 
 ## Q123749: How the TCP Push Bit Was Changed for Windows NT 3.5
 
+{% raw %}
+
 	Article: Q123749
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,4.0
@@ -146,3 +148,5 @@ permalink: /kb/123/Q123749/
 	
 	=============================================================================
 	
+
+{% endraw %}

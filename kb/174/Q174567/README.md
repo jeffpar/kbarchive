@@ -6,6 +6,8 @@ permalink: /kb/174/Q174567/
 
 ## Q174567: AGP Video Support for Windows NT 3.51 and 4.0
 
+{% raw %}
+
 	Article: Q174567
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -73,3 +75,5 @@ permalink: /kb/174/Q174567/
 	
 	=============================================================================
 	
+
+{% endraw %}

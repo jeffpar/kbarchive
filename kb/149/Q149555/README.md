@@ -6,6 +6,8 @@ permalink: /kb/149/Q149555/
 
 ## Q149555: Winlogon &amp; PerfMon Rpc Too Busy or Access Violation
 
+{% raw %}
+
 	Article: Q149555
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -90,3 +92,5 @@ permalink: /kb/149/Q149555/
 	
 	=============================================================================
 	
+
+{% endraw %}

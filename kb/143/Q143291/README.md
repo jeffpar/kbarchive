@@ -6,6 +6,8 @@ permalink: /kb/143/Q143291/
 
 ## Q143291: HOWTO: Resize CPropertyPages at Run Time
 
+{% raw %}
+
 	Article: Q143291
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,5.0,6.0
@@ -89,12 +91,12 @@ permalink: /kb/143/Q143291/
 	   #define WM_RESIZEPAGE WM_USER + 111
 	
 	   BEGIN_MESSAGE_MAP(CMySheet, CPropertySheet)
-	       //{ {AFX_MSG_MAP(CMySheet)
+	       //{{AFX_MSG_MAP(CMySheet)
 	       // NOTE - the ClassWizard will add and remove mapping macros here.
 	
 	       // ... other message map entries
 	
-	       //} }AFX_MSG_MAP
+	       //}}AFX_MSG_MAP
 	
 	       // ... add the 2 following entries here
 	       ON_MESSAGE (WM_RESIZEPAGE, OnResizePage)
@@ -202,3 +204,5 @@ permalink: /kb/143/Q143291/
 	
 	=============================================================================
 	
+
+{% endraw %}

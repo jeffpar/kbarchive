@@ -6,6 +6,8 @@ permalink: /kb/184/Q184187/
 
 ## Q184187: XADM: Unable to Connect to Server, Licenses Still Available
 
+{% raw %}
+
 	Article: Q184187
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/184/Q184187/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/217/Q217053/
 
 ## Q217053: XADM: Memory Leak When Information Store Is Stopped
 
+{% raw %}
+
 	Article: Q217053
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/217/Q217053/
 	
 	=============================================================================
 	
+
+{% endraw %}

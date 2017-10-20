@@ -6,6 +6,8 @@ permalink: /kb/030/Q30033/
 
 ## Q30033: Microsoft Editor Macro Moves Text with TAB Key
 
+{% raw %}
+
 	Article: Q30033
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -45,3 +47,5 @@ permalink: /kb/030/Q30033/
 	
 	This macro leaves your cursor back where it started, so one more TAB
 	moves your cursor to the right (on top of the shifted text).
+
+{% endraw %}

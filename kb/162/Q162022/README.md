@@ -6,6 +6,8 @@ permalink: /kb/162/Q162022/
 
 ## Q162022: SMS: Client Inventory Fails After Applying SMS 1.2 SP1
 
+{% raw %}
+
 	Article: Q162022
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP1,2.0
@@ -90,3 +92,5 @@ permalink: /kb/162/Q162022/
 	
 	=============================================================================
 	
+
+{% endraw %}

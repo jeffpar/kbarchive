@@ -6,6 +6,8 @@ permalink: /kb/181/Q181931/
 
 ## Q181931: XADM: Information Store Crashes in JetMove
 
+{% raw %}
+
 	Article: Q181931
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -64,3 +66,5 @@ permalink: /kb/181/Q181931/
 	
 	=============================================================================
 	
+
+{% endraw %}

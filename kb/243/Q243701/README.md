@@ -6,6 +6,8 @@ permalink: /kb/243/Q243701/
 
 ## Q243701: XCON: Microsoft Mail Connector Interchange Events 2450 and 2380
 
+{% raw %}
+
 	Article: Q243701
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -82,3 +84,5 @@ permalink: /kb/243/Q243701/
 	
 	=============================================================================
 	
+
+{% endraw %}

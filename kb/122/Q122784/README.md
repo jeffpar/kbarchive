@@ -6,6 +6,8 @@ permalink: /kb/122/Q122784/
 
 ## Q122784: PPT: Bullets Change with PowerPoint Viewer
 
+{% raw %}
+
 	Article: Q122784
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -87,3 +89,5 @@ permalink: /kb/122/Q122784/
 	
 	=============================================================================
 	
+
+{% endraw %}

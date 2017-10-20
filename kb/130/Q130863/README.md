@@ -6,6 +6,8 @@ permalink: /kb/130/Q130863/
 
 ## Q130863: PRB: Cannot Change Mouse Pointer for Non-Active Cells in Grid
 
+{% raw %}
+
 	Article: Q130863
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -94,3 +96,5 @@ permalink: /kb/130/Q130863/
 	
 	=============================================================================
 	
+
+{% endraw %}

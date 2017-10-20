@@ -6,6 +6,8 @@ permalink: /kb/187/Q187821/
 
 ## Q187821: FP: What Is a Registration Web?
 
+{% raw %}
+
 	Article: Q187821
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:97
@@ -71,3 +73,5 @@ permalink: /kb/187/Q187821/
 	
 	=============================================================================
 	
+
+{% endraw %}

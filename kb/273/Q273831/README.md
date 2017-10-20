@@ -6,6 +6,8 @@ permalink: /kb/273/Q273831/
 
 ## Q273831: Midtown Madness: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q273831
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -74,3 +76,5 @@ permalink: /kb/273/Q273831/
 	
 	=============================================================================
 	
+
+{% endraw %}

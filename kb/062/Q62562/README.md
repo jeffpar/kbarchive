@@ -6,6 +6,8 @@ permalink: /kb/062/Q62562/
 
 ## Q62562: DOS LAN Manager NetBIOS Sample Program
 
+{% raw %}
+
 	Article: Q62562
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -209,3 +211,5 @@ permalink: /kb/062/Q62562/
 	
 	=============================================================================
 	
+
+{% endraw %}

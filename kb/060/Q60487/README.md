@@ -6,6 +6,8 @@ permalink: /kb/060/Q60487/
 
 ## Q60487: Prototype in User's Guide for tglcase() Is Incorrect
 
+{% raw %}
+
 	Article: Q60487
 	Product(s): See article
 	Version(s): 1.02    | 1.02
@@ -26,3 +28,5 @@ permalink: /kb/060/Q60487/
 	   flagType pascal EXTERNAL tglcase (unsigned int, ARG far *, flagType);
 	
 	Note: The word EXTERNAL replaces EXPORT.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128076/
 
 ## Q128076: How to Reference a Class in Class Hierarchy Generically
 
+{% raw %}
+
 	Article: Q128076
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -85,3 +87,5 @@ permalink: /kb/128/Q128076/
 	
 	=============================================================================
 	
+
+{% endraw %}

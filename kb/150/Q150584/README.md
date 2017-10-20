@@ -6,6 +6,8 @@ permalink: /kb/150/Q150584/
 
 ## Q150584: Service Pack 1 for SMS 1.1 Does Not Update Clients
 
+{% raw %}
+
 	Article: Q150584
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -57,3 +59,5 @@ permalink: /kb/150/Q150584/
 	
 	=============================================================================
 	
+
+{% endraw %}

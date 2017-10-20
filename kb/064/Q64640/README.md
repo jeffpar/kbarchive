@@ -6,6 +6,8 @@ permalink: /kb/064/Q64640/
 
 ## Q64640: Online Help Solution for C4139 Warning Is Incorrect
 
+{% raw %}
+
 	Article: Q64640
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -55,3 +57,5 @@ permalink: /kb/064/Q64640/
 	Additional information is given in the C 6.00 README.DOC file in Part
 	2: "Differences between C 5.1 and 6.0," under the subtitle
 	"Hexadecimal Constants in Strings."
+
+{% endraw %}

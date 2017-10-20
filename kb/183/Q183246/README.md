@@ -6,6 +6,8 @@ permalink: /kb/183/Q183246/
 
 ## Q183246: INFO: Printing Features Not Available in VBCE
 
+{% raw %}
+
 	Article: Q183246
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -67,3 +69,5 @@ permalink: /kb/183/Q183246/
 	
 	=============================================================================
 	
+
+{% endraw %}

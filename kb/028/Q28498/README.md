@@ -6,6 +6,8 @@ permalink: /kb/028/Q28498/
 
 ## Q28498: Installing Windows when Using the PS/2 Mouse Port
 
+{% raw %}
+
 	Article: Q28498
 	Product(s): See article
 	Version(s): 6.10 1.0
@@ -19,3 +21,5 @@ permalink: /kb/028/Q28498/
 	
 	   Selecting the Microsoft mouse when using the IBM PS/2 mouse port
 	will not give you mouse control in Windows Version 1.04.
+
+{% endraw %}

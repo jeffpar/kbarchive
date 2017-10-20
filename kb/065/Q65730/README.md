@@ -6,6 +6,8 @@ permalink: /kb/065/Q65730/
 
 ## Q65730: Film Recorder Support Under PowerPoint for Windows
 
+{% raw %}
+
 	Article: Q65730
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:2.0,3.0,4.0,4.0a,4.0c,7.0
@@ -123,3 +125,5 @@ permalink: /kb/065/Q65730/
 	
 	=============================================================================
 	
+
+{% endraw %}

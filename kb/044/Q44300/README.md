@@ -6,6 +6,8 @@ permalink: /kb/044/Q44300/
 
 ## Q44300: Internal Compiler Error: omf.c:1.70 Line 146
 
+{% raw %}
+
 	Article: Q44300
 	Product(s): See article
 	Version(s): 5.10
@@ -46,3 +48,5 @@ permalink: /kb/044/Q44300/
 	
 	#pragma data_seg( global )
 	#include "os2def.h"
+
+{% endraw %}

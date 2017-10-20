@@ -6,6 +6,8 @@ permalink: /kb/082/Q82482/
 
 ## Q82482: Fuji-Matrix Printer Driver and Windows 3.1 Upgrade
 
+{% raw %}
+
 	Article: Q82482
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/082/Q82482/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127180/
 
 ## Q127180: XCOPY /? Shows Incorrect Date Format
 
+{% raw %}
+
 	Article: Q127180
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/127/Q127180/
 	
 	=============================================================================
 	
+
+{% endraw %}

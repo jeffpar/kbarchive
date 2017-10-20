@@ -6,6 +6,8 @@ permalink: /kb/257/Q257170/
 
 ## Q257170: SMS: Collection Evaluator May Not Manage Custom MIF Files
 
+{% raw %}
+
 	Article: Q257170
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -61,3 +63,5 @@ permalink: /kb/257/Q257170/
 	
 	=============================================================================
 	
+
+{% endraw %}

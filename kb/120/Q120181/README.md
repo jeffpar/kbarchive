@@ -6,6 +6,8 @@ permalink: /kb/120/Q120181/
 
 ## Q120181: BUG: Incomplete APPEND GENERAL Command Doesn't Generate Error
 
+{% raw %}
+
 	Article: Q120181
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a; WINDOWS:2.5x,2.6,2.6a,3.0,5.0,5.0a,6.0
@@ -67,3 +69,5 @@ permalink: /kb/120/Q120181/
 	
 	=============================================================================
 	
+
+{% endraw %}

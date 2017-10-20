@@ -6,6 +6,8 @@ permalink: /kb/146/Q146875/
 
 ## Q146875: PRB: Setup Wizard Fails on Files with no Name
 
+{% raw %}
+
 	Article: Q146875
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -76,3 +78,5 @@ permalink: /kb/146/Q146875/
 	
 	=============================================================================
 	
+
+{% endraw %}

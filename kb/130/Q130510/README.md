@@ -6,6 +6,8 @@ permalink: /kb/130/Q130510/
 
 ## Q130510: Command-Line Switches for Windows Explorer
 
+{% raw %}
+
 	Article: Q130510
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/130/Q130510/
 	
 	=============================================================================
 	
+
+{% endraw %}

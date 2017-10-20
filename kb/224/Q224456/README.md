@@ -6,6 +6,8 @@ permalink: /kb/224/Q224456/
 
 ## Q224456: XFOR: Properties Changed After Member Moves to Different Channel
 
+{% raw %}
+
 	Article: Q224456
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -80,3 +82,5 @@ permalink: /kb/224/Q224456/
 	
 	=============================================================================
 	
+
+{% endraw %}

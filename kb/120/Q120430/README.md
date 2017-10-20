@@ -6,6 +6,8 @@ permalink: /kb/120/Q120430/
 
 ## Q120430: CA-SuperProject For Windows Crashes When Printing
 
+{% raw %}
+
 	Article: Q120430
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -55,3 +57,5 @@ permalink: /kb/120/Q120430/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118298/
 
 ## Q118298: PC DirSync: Template Information Sent with TEMPLATE=NO
 
+{% raw %}
+
 	Article: Q118298
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -114,3 +116,5 @@ permalink: /kb/118/Q118298/
 	
 	=============================================================================
 	
+
+{% endraw %}

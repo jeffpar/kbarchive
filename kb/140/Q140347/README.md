@@ -6,6 +6,8 @@ permalink: /kb/140/Q140347/
 
 ## Q140347: How to Manage Differences in Stacked Pages Between Platforms
 
+{% raw %}
+
 	Article: Q140347
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -81,3 +83,5 @@ permalink: /kb/140/Q140347/
 	
 	=============================================================================
 	
+
+{% endraw %}

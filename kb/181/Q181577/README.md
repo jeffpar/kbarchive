@@ -6,6 +6,8 @@ permalink: /kb/181/Q181577/
 
 ## Q181577: WD97: Text Form Fields Not Retained During Mail Merge
 
+{% raw %}
+
 	Article: Q181577
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -288,3 +290,5 @@ permalink: /kb/181/Q181577/
 	
 	=============================================================================
 	
+
+{% endraw %}

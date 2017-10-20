@@ -6,6 +6,8 @@ permalink: /kb/192/Q192508/
 
 ## Q192508: Internet Explorer 4 Step by Step Commments and Corrections
 
+{% raw %}
+
 	Article: Q192508
 	Product(s): Microsoft Press
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/192/Q192508/
 	
 	=============================================================================
 	
+
+{% endraw %}

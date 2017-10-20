@@ -6,6 +6,8 @@ permalink: /kb/260/Q260859/
 
 ## Q260859: StarLancer: Computer Hangs When You Start Instant Action Mission
 
+{% raw %}
+
 	Article: Q260859
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/260/Q260859/
 	
 	=============================================================================
 	
+
+{% endraw %}

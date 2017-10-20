@@ -6,6 +6,8 @@ permalink: /kb/136/Q136866/
 
 ## Q136866: Cannot Print Multiple Copies to Microsoft Fax
 
+{% raw %}
+
 	Article: Q136866
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/136/Q136866/
 	
 	=============================================================================
 	
+
+{% endraw %}

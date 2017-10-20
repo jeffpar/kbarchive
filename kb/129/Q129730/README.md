@@ -6,6 +6,8 @@ permalink: /kb/129/Q129730/
 
 ## Q129730: Event Viewer Displays DHCP Events 1010, 1016, and 1014
 
+{% raw %}
+
 	Article: Q129730
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -88,3 +90,5 @@ permalink: /kb/129/Q129730/
 	
 	=============================================================================
 	
+
+{% endraw %}

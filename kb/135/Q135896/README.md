@@ -6,6 +6,8 @@ permalink: /kb/135/Q135896/
 
 ## Q135896: Windows 95 CD-ROM Hardware.txt File
 
+{% raw %}
+
 	Article: Q135896
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -541,3 +543,5 @@ permalink: /kb/135/Q135896/
 	
 	=============================================================================
 	
+
+{% endraw %}

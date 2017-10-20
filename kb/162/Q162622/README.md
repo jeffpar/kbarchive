@@ -6,6 +6,8 @@ permalink: /kb/162/Q162622/
 
 ## Q162622: HOWTO: Pass a NULL String to a Windows API from Visual Basic
 
+{% raw %}
+
 	Article: Q162622
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/162/Q162622/
 	
 	=============================================================================
 	
+
+{% endraw %}

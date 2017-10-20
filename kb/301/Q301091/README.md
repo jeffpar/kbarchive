@@ -6,6 +6,8 @@ permalink: /kb/301/Q301091/
 
 ## Q301091: HOW TO: Import a Table into a Windows CE ADOCE Database by Using
 
+{% raw %}
+
 	Article: Q301091
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -174,3 +176,5 @@ permalink: /kb/301/Q301091/
 	
 	=============================================================================
 	
+
+{% endraw %}

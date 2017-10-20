@@ -6,6 +6,8 @@ permalink: /kb/085/Q85256/
 
 ## Q85256: Windows 3.1 Expand Utility -R Switch
 
+{% raw %}
+
 	Article: Q85256
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/085/Q85256/
 	
 	=============================================================================
 	
+
+{% endraw %}

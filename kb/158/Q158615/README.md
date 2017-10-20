@@ -6,6 +6,8 @@ permalink: /kb/158/Q158615/
 
 ## Q158615: INF: How to Use SQLInstallDriver API with a 32-Bit Installer
 
+{% raw %}
+
 	Article: Q158615
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5
@@ -298,3 +300,5 @@ permalink: /kb/158/Q158615/
 	
 	=============================================================================
 	
+
+{% endraw %}

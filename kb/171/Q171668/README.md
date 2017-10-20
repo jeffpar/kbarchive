@@ -6,6 +6,8 @@ permalink: /kb/171/Q171668/
 
 ## Q171668: FIX: Shared Table in DBC Remains Locked After Table Update
 
+{% raw %}
+
 	Article: Q171668
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -116,3 +118,5 @@ permalink: /kb/171/Q171668/
 	
 	=============================================================================
 	
+
+{% endraw %}

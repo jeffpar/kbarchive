@@ -6,6 +6,8 @@ permalink: /kb/216/Q216369/
 
 ## Q216369: Unable to Create a Large Number of DHCP Scopes
 
+{% raw %}
+
 	Article: Q216369
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/216/Q216369/
 	
 	=============================================================================
 	
+
+{% endraw %}

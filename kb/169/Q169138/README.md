@@ -6,6 +6,8 @@ permalink: /kb/169/Q169138/
 
 ## Q169138: Network Connections Are Deferred
 
+{% raw %}
+
 	Article: Q169138
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2,3.11,4.0
@@ -79,3 +81,5 @@ permalink: /kb/169/Q169138/
 	
 	=============================================================================
 	
+
+{% endraw %}

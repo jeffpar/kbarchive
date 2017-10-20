@@ -6,6 +6,8 @@ permalink: /kb/042/Q42760/
 
 ## Q42760: /Zg Misspells the Word &quot;Interrupt&quot; for Function Pointers
 
+{% raw %}
+
 	Article: Q42760
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -43,3 +45,5 @@ permalink: /kb/042/Q42760/
 	void (far interrupt *r)();
 	{
 	}
+
+{% endraw %}

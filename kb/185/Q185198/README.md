@@ -6,6 +6,8 @@ permalink: /kb/185/Q185198/
 
 ## Q185198: Error 1000 and User Profiles
 
+{% raw %}
+
 	Article: Q185198
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -138,3 +140,5 @@ permalink: /kb/185/Q185198/
 	
 	=============================================================================
 	
+
+{% endraw %}

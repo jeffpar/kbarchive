@@ -6,6 +6,8 @@ permalink: /kb/195/Q195073/
 
 ## Q195073: BUG: Error C2065: 'DDX_FieldDateTimeCtrl': Undeclared Identifier
 
+{% raw %}
+
 	Article: Q195073
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -82,3 +84,5 @@ permalink: /kb/195/Q195073/
 	
 	=============================================================================
 	
+
+{% endraw %}

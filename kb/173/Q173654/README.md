@@ -6,6 +6,8 @@ permalink: /kb/173/Q173654/
 
 ## Q173654: Windows 95 Hangs When Running Server Tools
 
+{% raw %}
+
 	Article: Q173654
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -57,3 +59,5 @@ permalink: /kb/173/Q173654/
 	
 	=============================================================================
 	
+
+{% endraw %}

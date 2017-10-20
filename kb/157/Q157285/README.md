@@ -6,6 +6,8 @@ permalink: /kb/157/Q157285/
 
 ## Q157285: STL Sample for the Predicate Persion of upper_bound Function
 
+{% raw %}
+
 	Article: Q157285
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -161,3 +163,5 @@ permalink: /kb/157/Q157285/
 	
 	=============================================================================
 	
+
+{% endraw %}

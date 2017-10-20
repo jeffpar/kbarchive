@@ -6,6 +6,8 @@ permalink: /kb/186/Q186051/
 
 ## Q186051: Archive Bit Is Not Set with File or Directory Rename
 
+{% raw %}
+
 	Article: Q186051
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/186/Q186051/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155744/
 
 ## Q155744: SMS: WINS Replication Causes Remote Control Delay
 
+{% raw %}
+
 	Article: Q155744
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -82,3 +84,5 @@ permalink: /kb/155/Q155744/
 	
 	=============================================================================
 	
+
+{% endraw %}

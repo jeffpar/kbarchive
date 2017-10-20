@@ -6,6 +6,8 @@ permalink: /kb/148/Q148273/
 
 ## Q148273: Do It Yourself Guide: No sound with Windows NT
 
+{% raw %}
+
 	Article: Q148273
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/148/Q148273/
 	
 	=============================================================================
 	
+
+{% endraw %}

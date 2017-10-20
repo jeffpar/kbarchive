@@ -6,6 +6,8 @@ permalink: /kb/124/Q124318/
 
 ## Q124318: BUG: Invalid Connection String Error with Certain Passwords
 
+{% raw %}
+
 	Article: Q124318
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -76,3 +78,5 @@ permalink: /kb/124/Q124318/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111429/
 
 ## Q111429: SET Batch File Command Resets Error Levels
 
+{% raw %}
+
 	Article: Q111429
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -53,3 +55,5 @@ permalink: /kb/111/Q111429/
 	
 	=============================================================================
 	
+
+{% endraw %}

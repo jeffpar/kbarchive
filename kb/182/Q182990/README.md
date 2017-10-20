@@ -6,6 +6,8 @@ permalink: /kb/182/Q182990/
 
 ## Q182990: XCON: MTA Stops Unexpectedly After Receiving RPC Information
 
+{% raw %}
+
 	Article: Q182990
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -47,3 +49,5 @@ permalink: /kb/182/Q182990/
 	
 	=============================================================================
 	
+
+{% endraw %}

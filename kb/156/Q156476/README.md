@@ -6,6 +6,8 @@ permalink: /kb/156/Q156476/
 
 ## Q156476: SMS: Documentation Error in the SMS 1.2 Release Notes
 
+{% raw %}
+
 	Article: Q156476
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -69,3 +71,5 @@ permalink: /kb/156/Q156476/
 	
 	=============================================================================
 	
+
+{% endraw %}

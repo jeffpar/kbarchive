@@ -6,6 +6,8 @@ permalink: /kb/173/Q173841/
 
 ## Q173841: How to Perform an Unattended Installation of the NT 4.0 ResKit
 
+{% raw %}
+
 	Article: Q173841
 	Product(s): Microsoft Press
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/173/Q173841/
 	
 	=============================================================================
 	
+
+{% endraw %}

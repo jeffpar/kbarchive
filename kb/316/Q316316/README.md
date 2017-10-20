@@ -6,6 +6,8 @@ permalink: /kb/316/Q316316/
 
 ## Q316316: SMS: Distribution Manager Not Work and Error 998 During Compress
 
+{% raw %}
+
 	Article: Q316316
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3,2.0 SP4
@@ -116,3 +118,5 @@ permalink: /kb/316/Q316316/
 	
 	=============================================================================
 	
+
+{% endraw %}

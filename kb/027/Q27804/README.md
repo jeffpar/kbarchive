@@ -6,6 +6,8 @@ permalink: /kb/027/Q27804/
 
 ## Q27804: The struct videoconfig Declaration
 
+{% raw %}
+
 	Article: Q27804
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -45,3 +47,5 @@ permalink: /kb/027/Q27804/
 	  short monitor;      /* active display monitor */
 	  short memory;       /* adapter video memory in K bytes */
 	}
+
+{% endraw %}

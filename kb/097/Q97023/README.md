@@ -6,6 +6,8 @@ permalink: /kb/097/Q97023/
 
 ## Q97023: PC WRmt: Version 3.2 Unable to Open Packaged Item
 
+{% raw %}
+
 	Article: Q97023
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -46,3 +48,5 @@ permalink: /kb/097/Q97023/
 	
 	=============================================================================
 	
+
+{% endraw %}

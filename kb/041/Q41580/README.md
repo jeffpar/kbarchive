@@ -6,6 +6,8 @@ permalink: /kb/041/Q41580/
 
 ## Q41580: Graphics Lib. Ref. Incorrectly References Optimizing Compiler
 
+{% raw %}
+
 	Article: Q41580
 	Product(s): See article
 	Version(s): 2.00
@@ -24,3 +26,5 @@ permalink: /kb/041/Q41580/
 	   The first part of this manual provides an overview of the graphics
 	   functions provided with the Microsoft QuickC 2.0 Optimizing
 	   Compiler.
+
+{% endraw %}

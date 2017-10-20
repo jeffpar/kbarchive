@@ -6,6 +6,8 @@ permalink: /kb/070/Q70749/
 
 ## Q70749: Debug: &quot;U 0 FFFF&quot; Produces Incorrect Results
 
+{% raw %}
+
 	Article: Q70749
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,6.0,6.2,6.21,6.22
@@ -40,3 +42,5 @@ permalink: /kb/070/Q70749/
 	
 	=============================================================================
 	
+
+{% endraw %}

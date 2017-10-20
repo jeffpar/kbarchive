@@ -6,6 +6,8 @@ permalink: /kb/254/Q254606/
 
 ## Q254606: XADM: How to Enable Additional Information Store Logging
 
+{% raw %}
+
 	Article: Q254606
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -65,3 +67,5 @@ permalink: /kb/254/Q254606/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158826/
 
 ## Q158826: XCLN: Location of Mapisvc.inf File Not Configurable
 
+{% raw %}
+
 	Article: Q158826
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -45,3 +47,5 @@ permalink: /kb/158/Q158826/
 	
 	=============================================================================
 	
+
+{% endraw %}

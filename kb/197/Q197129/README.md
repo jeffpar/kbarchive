@@ -6,6 +6,8 @@ permalink: /kb/197/Q197129/
 
 ## Q197129: INFO: Wang Image Control Limited to 18k Pixels in Ea. Dimension
 
+{% raw %}
+
 	Article: Q197129
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -59,3 +61,5 @@ permalink: /kb/197/Q197129/
 	
 	=============================================================================
 	
+
+{% endraw %}

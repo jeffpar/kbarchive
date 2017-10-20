@@ -6,6 +6,8 @@ permalink: /kb/121/Q121657/
 
 ## Q121657: MAC Encarta 94: &quot;Encarta and Memory Read Me&quot; Contents
 
+{% raw %}
+
 	Article: Q121657
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -285,3 +287,5 @@ permalink: /kb/121/Q121657/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161287/
 
 ## Q161287: HOWTO: Register 4.0 Add-ins for Visual Basic 5.0 or 6.0
 
+{% raw %}
+
 	Article: Q161287
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/161/Q161287/
 	
 	=============================================================================
 	
+
+{% endraw %}

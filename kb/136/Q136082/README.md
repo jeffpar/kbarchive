@@ -6,6 +6,8 @@ permalink: /kb/136/Q136082/
 
 ## Q136082: Artist: Centers of Borderless Balloon Text are White
 
+{% raw %}
+
 	Article: Q136082
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -69,3 +71,5 @@ permalink: /kb/136/Q136082/
 	
 	=============================================================================
 	
+
+{% endraw %}

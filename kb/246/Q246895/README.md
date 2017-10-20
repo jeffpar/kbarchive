@@ -6,6 +6,8 @@ permalink: /kb/246/Q246895/
 
 ## Q246895: XADM: DS_E_ATTRIBUTE_OR_VALUE_EXISTS When Applying Service Pack
 
+{% raw %}
+
 	Article: Q246895
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -80,3 +82,5 @@ permalink: /kb/246/Q246895/
 	
 	=============================================================================
 	
+
+{% endraw %}

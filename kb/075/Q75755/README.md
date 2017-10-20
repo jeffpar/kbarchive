@@ -6,6 +6,8 @@ permalink: /kb/075/Q75755/
 
 ## Q75755: Starting Windows Terminal in Full-Screen Mode
 
+{% raw %}
+
 	Article: Q75755
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/075/Q75755/
 	
 	=============================================================================
 	
+
+{% endraw %}

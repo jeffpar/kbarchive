@@ -6,6 +6,8 @@ permalink: /kb/168/Q168109/
 
 ## Q168109: XFOR: POP3 Clients and Mail Conversion Failures
 
+{% raw %}
+
 	Article: Q168109
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -92,3 +94,5 @@ permalink: /kb/168/Q168109/
 	
 	=============================================================================
 	
+
+{% endraw %}

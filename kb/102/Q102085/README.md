@@ -6,6 +6,8 @@ permalink: /kb/102/Q102085/
 
 ## Q102085: Mac Wkst: Mailbox Displays Mail Messages in Unexpected Order
 
+{% raw %}
+
 	Article: Q102085
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/102/Q102085/
 	
 	=============================================================================
 	
+
+{% endraw %}

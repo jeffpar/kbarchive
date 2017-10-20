@@ -6,6 +6,8 @@ permalink: /kb/189/Q189171/
 
 ## Q189171: WinSock Applications May Fail or Stop Responding
 
+{% raw %}
+
 	Article: Q189171
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -77,3 +79,5 @@ permalink: /kb/189/Q189171/
 	
 	=============================================================================
 	
+
+{% endraw %}

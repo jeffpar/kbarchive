@@ -6,6 +6,8 @@ permalink: /kb/185/Q185720/
 
 ## Q185720: HOWTO: Provide Type Information From an MFC Automation Server
 
+{% raw %}
+
 	Article: Q185720
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2,5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/185/Q185720/
 	
 	=============================================================================
 	
+
+{% endraw %}

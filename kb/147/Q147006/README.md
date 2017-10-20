@@ -6,6 +6,8 @@ permalink: /kb/147/Q147006/
 
 ## Q147006: CONN: MS Mail Connection Gateway Needs Purge on Novell
 
+{% raw %}
+
 	Article: Q147006
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -73,3 +75,5 @@ permalink: /kb/147/Q147006/
 	
 	=============================================================================
 	
+
+{% endraw %}

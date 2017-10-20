@@ -6,6 +6,8 @@ permalink: /kb/196/Q196628/
 
 ## Q196628: How to Print a Folder Listing in Windows
 
+{% raw %}
+
 	Article: Q196628
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,4.0
@@ -74,3 +76,5 @@ permalink: /kb/196/Q196628/
 	
 	=============================================================================
 	
+
+{% endraw %}

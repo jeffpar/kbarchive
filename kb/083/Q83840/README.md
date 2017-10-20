@@ -6,6 +6,8 @@ permalink: /kb/083/Q83840/
 
 ## Q83840: Emulations for Seikosha Printers
 
+{% raw %}
+
 	Article: Q83840
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/083/Q83840/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172945/
 
 ## Q172945: How To View A Remote Printer in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q172945
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/172/Q172945/
 	
 	=============================================================================
 	
+
+{% endraw %}

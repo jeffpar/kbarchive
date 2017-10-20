@@ -6,6 +6,8 @@ permalink: /kb/132/Q132611/
 
 ## Q132611: System Performance Slow When Windows 95 Starts the First Time
 
+{% raw %}
+
 	Article: Q132611
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/132/Q132611/
 	
 	=============================================================================
 	
+
+{% endraw %}

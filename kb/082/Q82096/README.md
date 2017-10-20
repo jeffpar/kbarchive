@@ -6,6 +6,8 @@ permalink: /kb/082/Q82096/
 
 ## Q82096: Disabling Drafix CAD Fonts in Windows 3.0
 
+{% raw %}
+
 	Article: Q82096
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -79,3 +81,5 @@ permalink: /kb/082/Q82096/
 	
 	=============================================================================
 	
+
+{% endraw %}

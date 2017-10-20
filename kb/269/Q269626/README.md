@@ -6,6 +6,8 @@ permalink: /kb/269/Q269626/
 
 ## Q269626: INFO: Permissions to Create Packages Using DB2OLEDB on DB2
 
+{% raw %}
+
 	Article: Q269626
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3
@@ -119,3 +121,5 @@ permalink: /kb/269/Q269626/
 	
 	=============================================================================
 	
+
+{% endraw %}

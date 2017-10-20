@@ -6,6 +6,8 @@ permalink: /kb/194/Q194179/
 
 ## Q194179: SAMPLE: AtlEvnt.exe Creates ATL Sinks Using IDispEventImpl
 
+{% raw %}
+
 	Article: Q194179
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -357,3 +359,5 @@ permalink: /kb/194/Q194179/
 	
 	=============================================================================
 	
+
+{% endraw %}

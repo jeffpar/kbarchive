@@ -6,6 +6,8 @@ permalink: /kb/131/Q131345/
 
 ## Q131345: Using the DISPLAY OBJECTS Command
 
+{% raw %}
+
 	Article: Q131345
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -88,3 +90,5 @@ permalink: /kb/131/Q131345/
 	
 	=============================================================================
 	
+
+{% endraw %}

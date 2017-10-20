@@ -6,6 +6,8 @@ permalink: /kb/198/Q198383/
 
 ## Q198383: WD97: Text Fails to Appear in Envelopes/Labels Delivery Box
 
+{% raw %}
+
 	Article: Q198383
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/198/Q198383/
 	
 	=============================================================================
 	
+
+{% endraw %}

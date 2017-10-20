@@ -6,6 +6,8 @@ permalink: /kb/090/Q90249/
 
 ## Q90249: Some Network DDE Connections Not Displayed in Net Watcher
 
+{% raw %}
+
 	Article: Q90249
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/090/Q90249/
 	
 	=============================================================================
 	
+
+{% endraw %}

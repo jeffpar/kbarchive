@@ -6,6 +6,8 @@ permalink: /kb/200/Q200069/
 
 ## Q200069: INFO: Russian and Portuguese MFC Resource Files Not Available
 
+{% raw %}
+
 	Article: Q200069
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0,6.0 SP1, SP2,97,97sp1,97sp2,97sp3
@@ -75,3 +77,5 @@ permalink: /kb/200/Q200069/
 	
 	=============================================================================
 	
+
+{% endraw %}

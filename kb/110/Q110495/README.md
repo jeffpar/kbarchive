@@ -6,6 +6,8 @@ permalink: /kb/110/Q110495/
 
 ## Q110495: Self-Extracting Files on NTFS Don't Work from Command Prompt
 
+{% raw %}
+
 	Article: Q110495
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -49,3 +51,5 @@ permalink: /kb/110/Q110495/
 	
 	=============================================================================
 	
+
+{% endraw %}

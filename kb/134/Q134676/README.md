@@ -6,6 +6,8 @@ permalink: /kb/134/Q134676/
 
 ## Q134676: PC Gen: 3.5 Mail for PC Networks Microsoft Fax Disk &#91;3.5&#93;
 
+{% raw %}
+
 	Article: Q134676
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -161,3 +163,5 @@ permalink: /kb/134/Q134676/
 	
 	=============================================================================
 	
+
+{% endraw %}

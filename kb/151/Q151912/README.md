@@ -6,6 +6,8 @@ permalink: /kb/151/Q151912/
 
 ## Q151912: NWRedir Returns Cached File Size Information
 
+{% raw %}
+
 	Article: Q151912
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/151/Q151912/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178875/
 
 ## Q178875: ORALONG.EXE: Use RDO with Oracle LONG/LONG RAW Datatypes
 
+{% raw %}
+
 	Article: Q178875
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1 SP2,2.5,5.0,6.0
@@ -86,3 +88,5 @@ permalink: /kb/178/Q178875/
 	
 	=============================================================================
 	
+
+{% endraw %}

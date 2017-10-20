@@ -6,6 +6,8 @@ permalink: /kb/154/Q154651/
 
 ## Q154651: HOWTO: Determine When the Initialize Event of Class Gets Fired
 
+{% raw %}
+
 	Article: Q154651
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -174,3 +176,5 @@ permalink: /kb/154/Q154651/
 	
 	=============================================================================
 	
+
+{% endraw %}

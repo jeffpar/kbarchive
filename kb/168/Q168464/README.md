@@ -6,6 +6,8 @@ permalink: /kb/168/Q168464/
 
 ## Q168464: Directory Replication Fails with Event ID 3216
 
+{% raw %}
+
 	Article: Q168464
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -136,3 +138,5 @@ permalink: /kb/168/Q168464/
 	
 	=============================================================================
 	
+
+{% endraw %}

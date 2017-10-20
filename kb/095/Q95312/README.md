@@ -6,6 +6,8 @@ permalink: /kb/095/Q95312/
 
 ## Q95312: Default Selection of Radio Button with @ ... GET Command
 
+{% raw %}
+
 	Article: Q95312
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -61,3 +63,5 @@ permalink: /kb/095/Q95312/
 	
 	=============================================================================
 	
+
+{% endraw %}

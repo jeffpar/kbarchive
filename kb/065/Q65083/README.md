@@ -6,6 +6,8 @@ permalink: /kb/065/Q65083/
 
 ## Q65083: QBX Incorrectly Initializes Array in TYPE with OPTION BASE 1
 
+{% raw %}
+
 	Article: Q65083
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -42,3 +44,5 @@ permalink: /kb/065/Q65083/
 	   PRINT LEN(varArrayType)               'Should be 2 (incorrectly 3)
 	   PRINT LBOUND(varArrayType.Array)      'Should be 1 (incorrectly 0)
 	   END
+
+{% endraw %}

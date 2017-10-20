@@ -6,6 +6,8 @@ permalink: /kb/132/Q132931/
 
 ## Q132931: FIX: Drag/Drop Executes Create and Add with Insufficient Rights
 
+{% raw %}
+
 	Article: Q132931
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.04 3.1
@@ -65,3 +67,5 @@ permalink: /kb/132/Q132931/
 	
 	=============================================================================
 	
+
+{% endraw %}

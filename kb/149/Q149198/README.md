@@ -6,6 +6,8 @@ permalink: /kb/149/Q149198/
 
 ## Q149198: TN3270 Users Are Able to Get an LU After It Has Been Removed
 
+{% raw %}
+
 	Article: Q149198
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -53,3 +55,5 @@ permalink: /kb/149/Q149198/
 	
 	=============================================================================
 	
+
+{% endraw %}

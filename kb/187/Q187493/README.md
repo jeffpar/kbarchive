@@ -6,6 +6,8 @@ permalink: /kb/187/Q187493/
 
 ## Q187493: Some Netscape Client Certificates Rejected by IIS
 
+{% raw %}
+
 	Article: Q187493
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/187/Q187493/
 	
 	=============================================================================
 	
+
+{% endraw %}

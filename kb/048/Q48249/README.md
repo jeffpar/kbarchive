@@ -6,6 +6,8 @@ permalink: /kb/048/Q48249/
 
 ## Q48249: Mac Form: Shadowed Boxes Are Not Available for Custom Forms
 
+{% raw %}
+
 	Article: Q48249
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -35,3 +37,5 @@ permalink: /kb/048/Q48249/
 	
 	=============================================================================
 	
+
+{% endraw %}

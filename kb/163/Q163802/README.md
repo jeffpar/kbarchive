@@ -6,6 +6,8 @@ permalink: /kb/163/Q163802/
 
 ## Q163802: HOWTO: Retrieve Contact Names from Schedule+ Tasks
 
+{% raw %}
+
 	Article: Q163802
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -112,3 +114,5 @@ permalink: /kb/163/Q163802/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158470/
 
 ## Q158470: WD97: VB Code to Switch a Document to Two-Page View
 
+{% raw %}
+
 	Article: Q158470
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/158/Q158470/
 	
 	=============================================================================
 	
+
+{% endraw %}

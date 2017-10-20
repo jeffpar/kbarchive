@@ -6,6 +6,8 @@ permalink: /kb/246/Q246313/
 
 ## Q246313: BUG: Certain Icons May Cause Error with FoxPro
 
+{% raw %}
+
 	Article: Q246313
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -92,3 +94,5 @@ permalink: /kb/246/Q246313/
 	
 	=============================================================================
 	
+
+{% endraw %}

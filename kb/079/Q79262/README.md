@@ -6,6 +6,8 @@ permalink: /kb/079/Q79262/
 
 ## Q79262: Windows Err Msg: Path Not Found (with Novell Network)
 
+{% raw %}
+
 	Article: Q79262
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -48,3 +50,5 @@ permalink: /kb/079/Q79262/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136257/
 
 ## Q136257: Microsoft Systems Journal: October 1995
 
+{% raw %}
+
 	Article: Q136257
 	Product(s): Miscrosoft Systems Journal
 	Version(s): for October 1995
@@ -107,3 +109,5 @@ permalink: /kb/136/Q136257/
 	
 	=============================================================================
 	
+
+{% endraw %}

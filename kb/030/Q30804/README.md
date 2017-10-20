@@ -6,6 +6,8 @@ permalink: /kb/030/Q30804/
 
 ## Q30804: MASM 5.10 OS2.DOC: OS/2 Call Summary - Process Control
 
+{% raw %}
+
 	Article: Q30804
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -61,3 +63,5 @@ permalink: /kb/030/Q30804/
 	
 	   @DosKillProcess - Terminates a process and returns its termination code
 	   Parameters - ActionCode:W, ProcessID:W
+
+{% endraw %}

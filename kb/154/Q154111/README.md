@@ -6,6 +6,8 @@ permalink: /kb/154/Q154111/
 
 ## Q154111: FIX: Access Violation Opening a Workspace of Type Makefile
 
+{% raw %}
+
 	Article: Q154111
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/154/Q154111/
 	
 	=============================================================================
 	
+
+{% endraw %}

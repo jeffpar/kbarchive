@@ -6,6 +6,8 @@ permalink: /kb/305/Q305164/
 
 ## Q305164: SMS: Remote Control Clients May Not Be Contacted by the Console
 
+{% raw %}
+
 	Article: Q305164
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -118,3 +120,5 @@ permalink: /kb/305/Q305164/
 	
 	=============================================================================
 	
+
+{% endraw %}

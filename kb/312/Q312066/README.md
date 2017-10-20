@@ -6,6 +6,8 @@ permalink: /kb/312/Q312066/
 
 ## Q312066: Computer Does Not Boot Without a Video Adapter with the SAK
 
+{% raw %}
+
 	Article: Q312066
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/312/Q312066/
 	
 	=============================================================================
 	
+
+{% endraw %}

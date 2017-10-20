@@ -6,6 +6,8 @@ permalink: /kb/149/Q149278/
 
 ## Q149278: FIX: TreeView.Visible = False at Design-Time Causes Problems
 
+{% raw %}
+
 	Article: Q149278
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/149/Q149278/
 	
 	=============================================================================
 	
+
+{% endraw %}

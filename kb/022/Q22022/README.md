@@ -6,6 +6,8 @@ permalink: /kb/022/Q22022/
 
 ## Q22022: PRINT Forces Contiguous String to Next Row &amp; Doesn't Wrap It
 
+{% raw %}
+
 	Article: Q22022
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -45,3 +47,5 @@ permalink: /kb/022/Q22022/
 	   40 PRINT "DESPITE BEING LOCATED ON ROW 2, THIS PRINTS ON ROW 3"
 	   50 LOCATE 4,71   ' To make it wrap, break up the string as follows:
 	   60 PRINT "1234567890";"THIS STARS IN COLUMN 1"
+
+{% endraw %}

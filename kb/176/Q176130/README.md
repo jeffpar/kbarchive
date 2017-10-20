@@ -6,6 +6,8 @@ permalink: /kb/176/Q176130/
 
 ## Q176130: XCON: MTA Stops When You Select Items in MTA Queue
 
+{% raw %}
+
 	Article: Q176130
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -55,3 +57,5 @@ permalink: /kb/176/Q176130/
 	
 	=============================================================================
 	
+
+{% endraw %}

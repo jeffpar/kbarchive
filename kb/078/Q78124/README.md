@@ -6,6 +6,8 @@ permalink: /kb/078/Q78124/
 
 ## Q78124: Emerson Promouse Driver and MS-DOS Shell
 
+{% raw %}
+
 	Article: Q78124
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -52,3 +54,5 @@ permalink: /kb/078/Q78124/
 	
 	=============================================================================
 	
+
+{% endraw %}

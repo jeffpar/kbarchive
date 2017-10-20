@@ -6,6 +6,8 @@ permalink: /kb/050/Q50644/
 
 ## Q50644: Adding helpwindow in TOOLS.INI as a Switch
 
+{% raw %}
+
 	Article: Q50644
 	Product(s): See article
 	Version(s): 1.02   | 1.02
@@ -29,3 +31,5 @@ permalink: /kb/050/Q50644/
 	following:
 	
 	   <arg> nohelpwindow: <assign>
+
+{% endraw %}

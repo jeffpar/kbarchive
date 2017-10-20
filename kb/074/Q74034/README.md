@@ -6,6 +6,8 @@ permalink: /kb/074/Q74034/
 
 ## Q74034: Running Mickey's ABCs with Windows 3.0
 
+{% raw %}
+
 	Article: Q74034
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/074/Q74034/
 	
 	=============================================================================
 	
+
+{% endraw %}

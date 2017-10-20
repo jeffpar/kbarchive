@@ -6,6 +6,8 @@ permalink: /kb/140/Q140025/
 
 ## Q140025: HOWTO: Add an Outline Control to a Form and Populate It
 
+{% raw %}
+
 	Article: Q140025
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -213,3 +215,5 @@ permalink: /kb/140/Q140025/
 	
 	=============================================================================
 	
+
+{% endraw %}

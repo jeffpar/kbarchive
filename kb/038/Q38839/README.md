@@ -6,6 +6,8 @@ permalink: /kb/038/Q38839/
 
 ## Q38839: %TMP% in NEW_VARS.BAT Causes Fatal Error C1042
 
+{% raw %}
+
 	Article: Q38839
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -28,3 +30,5 @@ permalink: /kb/038/Q38839/
 	Generally, it is best not to have any %<environmental variable>%
 	symbols in AUTOEXEC.BAT because it should be the first place the
 	environment is defined.
+
+{% endraw %}

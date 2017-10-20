@@ -6,6 +6,8 @@ permalink: /kb/123/Q123767/
 
 ## Q123767: PRB: Help Compiler Error 5059 - Not Enough Memory
 
+{% raw %}
+
 	Article: Q123767
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0
@@ -75,3 +77,5 @@ permalink: /kb/123/Q123767/
 	
 	=============================================================================
 	
+
+{% endraw %}

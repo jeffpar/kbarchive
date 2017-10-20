@@ -6,6 +6,8 @@ permalink: /kb/140/Q140251/
 
 ## Q140251: ErrMsg When Using Windows NT: Cannot find USER.DLL
 
+{% raw %}
+
 	Article: Q140251
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; winnt:3.5,3.51
@@ -54,3 +56,5 @@ permalink: /kb/140/Q140251/
 	
 	=============================================================================
 	
+
+{% endraw %}

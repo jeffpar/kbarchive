@@ -6,6 +6,8 @@ permalink: /kb/062/Q62774/
 
 ## Q62774: Using PC-DOS 3.00 and QBX.EXE Will Give SHELL Problems
 
+{% raw %}
+
 	Article: Q62774
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -41,3 +43,5 @@ permalink: /kb/062/Q62774/
 	                         ' file name" error.
 	   SHELL "CLS"           ' This is supposed to work but it gives a "bad
 	                         ' command or file name" error
+
+{% endraw %}

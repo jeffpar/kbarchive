@@ -6,6 +6,8 @@ permalink: /kb/132/Q132344/
 
 ## Q132344: FIX: App Terminates Unexpectedly after Windows NT 3.51 Upgrade
 
+{% raw %}
+
 	Article: Q132344
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -98,3 +100,5 @@ permalink: /kb/132/Q132344/
 	
 	=============================================================================
 	
+
+{% endraw %}

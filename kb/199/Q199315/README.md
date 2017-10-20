@@ -6,6 +6,8 @@ permalink: /kb/199/Q199315/
 
 ## Q199315: FIX: Method with BOOL&#42; Parameter Type Overwriting Memory in VB
 
+{% raw %}
+
 	Article: Q199315
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -63,9 +65,9 @@ permalink: /kb/199/Q199315/
 	         // ... other stuff
 	
 	         // Generated OLE dispatch map functions
-	         //{ {AFX_DISPATCH(MyTest)
+	         //{{AFX_DISPATCH(MyTest)
 	         // ... other stuff
-	         //} }AFX_DISPATCH
+	         //}}AFX_DISPATCH
 	         afx_msg void Boo(VARIANT_BOOL FAR* p1);// USE VARIANT_BOOL and 
 	                                                // MOVE OUT OF AFX_DISPATCH BLOCK!
 	     };
@@ -87,9 +89,9 @@ permalink: /kb/199/Q199315/
 	         methods:
 	            // NOTE: ClassWizard maintains method information here.
 	            //    Use extreme caution when editing this section.
-	            //{ {AFX_ODL_METHOD(MyTest)
+	            //{{AFX_ODL_METHOD(MyTest)
 	            // ... other stuff
-	            //} }AFX_ODL_METHOD
+	            //}}AFX_ODL_METHOD
 	        [id(1)] void Boo(VARIANT_BOOL* p1);// USE VARIANT_BOOL and MOVE THIS
 	                                           // OUT OF AFX_ODL_METHOD BLOCK!
 	     };
@@ -155,3 +157,5 @@ permalink: /kb/199/Q199315/
 	
 	=============================================================================
 	
+
+{% endraw %}

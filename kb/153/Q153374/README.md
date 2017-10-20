@@ -6,6 +6,8 @@ permalink: /kb/153/Q153374/
 
 ## Q153374: Microsoft Phone May Not Hang Up Immediately After Dialing
 
+{% raw %}
+
 	Article: Q153374
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -41,3 +43,5 @@ permalink: /kb/153/Q153374/
 	
 	=============================================================================
 	
+
+{% endraw %}

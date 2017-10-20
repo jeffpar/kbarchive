@@ -6,6 +6,8 @@ permalink: /kb/233/Q233482/
 
 ## Q233482: STOP 0x0000001E in Win32k.sys on Terminal Server
 
+{% raw %}
+
 	Article: Q233482
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -66,3 +68,5 @@ permalink: /kb/233/Q233482/
 	
 	=============================================================================
 	
+
+{% endraw %}

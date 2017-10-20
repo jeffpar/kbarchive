@@ -6,6 +6,8 @@ permalink: /kb/139/Q139706/
 
 ## Q139706: Windows 95 Shared Folders Update Readme.txt File
 
+{% raw %}
+
 	Article: Q139706
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -86,3 +88,5 @@ permalink: /kb/139/Q139706/
 	
 	=============================================================================
 	
+
+{% endraw %}

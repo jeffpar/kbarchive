@@ -6,6 +6,8 @@ permalink: /kb/150/Q150491/
 
 ## Q150491: WD97: Screen Flickers Constantly After Pasting Excel Chart
 
+{% raw %}
+
 	Article: Q150491
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/150/Q150491/
 	
 	=============================================================================
 	
+
+{% endraw %}

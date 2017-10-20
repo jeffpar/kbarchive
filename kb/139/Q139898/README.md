@@ -6,6 +6,8 @@ permalink: /kb/139/Q139898/
 
 ## Q139898: APPC/5250 Hot Backup Fails if Configured for &quot;On Demand&quot;
 
+{% raw %}
+
 	Article: Q139898
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -109,3 +111,5 @@ permalink: /kb/139/Q139898/
 	
 	=============================================================================
 	
+
+{% endraw %}

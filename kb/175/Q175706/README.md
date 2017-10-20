@@ -6,6 +6,8 @@ permalink: /kb/175/Q175706/
 
 ## Q175706: XADM: How Moving Mailboxes Affects Single Instance Storage
 
+{% raw %}
+
 	Article: Q175706
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/175/Q175706/
 	
 	=============================================================================
 	
+
+{% endraw %}

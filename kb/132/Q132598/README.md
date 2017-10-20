@@ -6,6 +6,8 @@ permalink: /kb/132/Q132598/
 
 ## Q132598: Must Restart Computer Before Running Grolier Encyclopedia
 
+{% raw %}
+
 	Article: Q132598
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/132/Q132598/
 	
 	=============================================================================
 	
+
+{% endraw %}

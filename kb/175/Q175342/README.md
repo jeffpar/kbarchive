@@ -6,6 +6,8 @@ permalink: /kb/175/Q175342/
 
 ## Q175342: Hellbender Closes at Random Intervals
 
+{% raw %}
+
 	Article: Q175342
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -112,3 +114,5 @@ permalink: /kb/175/Q175342/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142690/
 
 ## Q142690: Windows NT Explorer Hangs With NEC CD-ROM
 
+{% raw %}
+
 	Article: Q142690
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/142/Q142690/
 	
 	=============================================================================
 	
+
+{% endraw %}

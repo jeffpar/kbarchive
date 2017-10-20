@@ -6,6 +6,8 @@ permalink: /kb/060/Q60253/
 
 ## Q60253: C4061 Long/Short Mismatch in Argument
 
+{% raw %}
+
 	Article: Q60253
 	Product(s): See article
 	Version(s): 5.00 5.01 6.00 | 5.00 5.01 6.00
@@ -41,3 +43,5 @@ permalink: /kb/060/Q60253/
 	
 	void foo (char c) /* Argument correctly declared as CHAR */
 	{}
+
+{% endraw %}

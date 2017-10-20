@@ -6,6 +6,8 @@ permalink: /kb/230/Q230912/
 
 ## Q230912: PRB: Not a Valid Month Error when Inserting to Oracle Date Field
 
+{% raw %}
+
 	Article: Q230912
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 1.0,2.0,2.1,2.5,2.6,2.7,Build 2.573.2927,Build 2.573.4403,Build 2.573.6526,Build 2.573
@@ -86,3 +88,5 @@ permalink: /kb/230/Q230912/
 	
 	=============================================================================
 	
+
+{% endraw %}

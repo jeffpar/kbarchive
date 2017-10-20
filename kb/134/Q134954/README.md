@@ -6,6 +6,8 @@ permalink: /kb/134/Q134954/
 
 ## Q134954: X400: Gateway Does Not Support the PROBE Message Type
 
+{% raw %}
+
 	Article: Q134954
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -44,3 +46,5 @@ permalink: /kb/134/Q134954/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175708/
 
 ## Q175708: XCON: Gateway Address Routing Table Not Recalculated Correctly
 
+{% raw %}
+
 	Article: Q175708
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -58,3 +60,5 @@ permalink: /kb/175/Q175708/
 	
 	=============================================================================
 	
+
+{% endraw %}

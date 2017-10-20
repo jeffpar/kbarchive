@@ -6,6 +6,8 @@ permalink: /kb/153/Q153268/
 
 ## Q153268: Cannot Install V-Chat Update While Running V-Chat
 
+{% raw %}
+
 	Article: Q153268
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -56,3 +58,5 @@ permalink: /kb/153/Q153268/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190778/
 
 ## Q190778: BUG: PDW Incorrectly Includes Autprx32.dll for DCOM Server
 
+{% raw %}
+
 	Article: Q190778
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -52,3 +54,5 @@ permalink: /kb/190/Q190778/
 	
 	=============================================================================
 	
+
+{% endraw %}

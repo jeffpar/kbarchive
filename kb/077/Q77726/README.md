@@ -6,6 +6,8 @@ permalink: /kb/077/Q77726/
 
 ## Q77726: No Sounds when Starting Windows or Receiving Error Messages
 
+{% raw %}
+
 	Article: Q77726
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1; :1.0
@@ -54,3 +56,5 @@ permalink: /kb/077/Q77726/
 	
 	=============================================================================
 	
+
+{% endraw %}

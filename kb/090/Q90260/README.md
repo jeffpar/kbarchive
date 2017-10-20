@@ -6,6 +6,8 @@ permalink: /kb/090/Q90260/
 
 ## Q90260: Running NetBIOS over DECnet Protocol
 
+{% raw %}
+
 	Article: Q90260
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/090/Q90260/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138511/
 
 ## Q138511: CG: How to Manually Merge .cag Files in ClipArt Gallery 2.0/3.0
 
+{% raw %}
+
 	Article: Q138511
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 2.0,3.0; WINDOWS:3.0,4.0,7.0,97; Win95:7.0
@@ -99,3 +101,5 @@ permalink: /kb/138/Q138511/
 	
 	=============================================================================
 	
+
+{% endraw %}

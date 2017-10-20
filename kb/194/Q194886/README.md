@@ -6,6 +6,8 @@ permalink: /kb/194/Q194886/
 
 ## Q194886: BUG: Repeatedly Calling Genxtab Can Cause Memory Leak
 
+{% raw %}
+
 	Article: Q194886
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -80,3 +82,5 @@ permalink: /kb/194/Q194886/
 	
 	=============================================================================
 	
+
+{% endraw %}

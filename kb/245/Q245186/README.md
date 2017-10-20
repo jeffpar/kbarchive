@@ -6,6 +6,8 @@ permalink: /kb/245/Q245186/
 
 ## Q245186: Print Jobs Are Not Printed and Spooler Service Stops Responding.
 
+{% raw %}
+
 	Article: Q245186
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/245/Q245186/
 	
 	=============================================================================
 	
+
+{% endraw %}

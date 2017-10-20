@@ -6,6 +6,8 @@ permalink: /kb/060/Q60508/
 
 ## Q60508: Handling Link Timeouts on Host Connections
 
+{% raw %}
+
 	Article: Q60508
 	Product(s): Microsoft LAN Manager
 	Version(s): 1.0
@@ -49,3 +51,5 @@ permalink: /kb/060/Q60508/
 	
 	=============================================================================
 	
+
+{% endraw %}

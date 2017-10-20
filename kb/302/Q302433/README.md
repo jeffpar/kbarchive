@@ -6,6 +6,8 @@ permalink: /kb/302/Q302433/
 
 ## Q302433: Cannot Install Legacy Version Of MSN Software After Uninstalling
 
+{% raw %}
+
 	Article: Q302433
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -82,3 +84,5 @@ permalink: /kb/302/Q302433/
 	
 	=============================================================================
 	
+
+{% endraw %}

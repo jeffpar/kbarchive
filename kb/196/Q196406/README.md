@@ -6,6 +6,8 @@ permalink: /kb/196/Q196406/
 
 ## Q196406: XADM: Replication Fails After Disaster Recovery
 
+{% raw %}
+
 	Article: Q196406
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -132,3 +134,5 @@ permalink: /kb/196/Q196406/
 	
 	=============================================================================
 	
+
+{% endraw %}

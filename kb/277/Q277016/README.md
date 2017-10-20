@@ -6,6 +6,8 @@ permalink: /kb/277/Q277016/
 
 ## Q277016: Cannot Install Windows Services for UNIX 2.0 on Windows NT TS
 
+{% raw %}
+
 	Article: Q277016
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,4.0
@@ -111,3 +113,5 @@ permalink: /kb/277/Q277016/
 	
 	=============================================================================
 	
+
+{% endraw %}

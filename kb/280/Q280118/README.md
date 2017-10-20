@@ -6,6 +6,8 @@ permalink: /kb/280/Q280118/
 
 ## Q280118: XFOR: Non-Delivery Report with &quot;501 Sender Domain Must Exist&quot; Me
 
+{% raw %}
+
 	Article: Q280118
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -63,3 +65,5 @@ permalink: /kb/280/Q280118/
 	
 	=============================================================================
 	
+
+{% endraw %}

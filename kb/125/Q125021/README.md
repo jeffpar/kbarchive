@@ -6,6 +6,8 @@ permalink: /kb/125/Q125021/
 
 ## Q125021: AWFAX Using Sportster Modem Fails Group 3 Fax Connection
 
+{% raw %}
+
 	Article: Q125021
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -39,3 +41,5 @@ permalink: /kb/125/Q125021/
 	
 	=============================================================================
 	
+
+{% endraw %}

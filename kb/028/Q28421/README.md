@@ -6,6 +6,8 @@ permalink: /kb/028/Q28421/
 
 ## Q28421: Network and Mouse Conflicts
 
+{% raw %}
+
 	Article: Q28421
 	Product(s): See article
 	Version(s): 6.x 1.00
@@ -30,3 +32,5 @@ permalink: /kb/028/Q28421/
 	
 	Contact the manufacturers of your netcard to see if they know of the
 	above problem.
+
+{% endraw %}

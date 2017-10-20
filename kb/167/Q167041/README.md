@@ -6,6 +6,8 @@ permalink: /kb/167/Q167041/
 
 ## Q167041: 8.3 File Names Are Displayed When Viewing an NDS Directory
 
+{% raw %}
+
 	Article: Q167041
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -108,3 +110,5 @@ permalink: /kb/167/Q167041/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126789/
 
 ## Q126789: MHS: Err Msg: Outpost: General File I/O Error
 
+{% raw %}
+
 	Article: Q126789
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/126/Q126789/
 	
 	=============================================================================
 	
+
+{% endraw %}

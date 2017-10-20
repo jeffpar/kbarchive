@@ -6,6 +6,8 @@ permalink: /kb/150/Q150208/
 
 ## Q150208: BUG: Form Height Not Displayed Correctly in Design View
 
+{% raw %}
+
 	Article: Q150208
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/150/Q150208/
 	
 	=============================================================================
 	
+
+{% endraw %}

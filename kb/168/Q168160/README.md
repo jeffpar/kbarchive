@@ -6,6 +6,8 @@ permalink: /kb/168/Q168160/
 
 ## Q168160: FIX: Error on Update After AddNew with RDC and Bound Controls
 
+{% raw %}
+
 	Article: Q168160
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 97
@@ -48,3 +50,5 @@ permalink: /kb/168/Q168160/
 	
 	=============================================================================
 	
+
+{% endraw %}

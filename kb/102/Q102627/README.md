@@ -6,6 +6,8 @@ permalink: /kb/102/Q102627/
 
 ## Q102627: Maximum of 5 Domains Can be Viewed with LAN Manager
 
+{% raw %}
+
 	Article: Q102627
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/102/Q102627/
 	
 	=============================================================================
 	
+
+{% endraw %}

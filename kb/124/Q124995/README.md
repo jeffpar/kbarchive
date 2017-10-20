@@ -6,6 +6,8 @@ permalink: /kb/124/Q124995/
 
 ## Q124995: WINMIF Fails If XNF File Has Text Before Numeric Fields
 
+{% raw %}
+
 	Article: Q124995
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -64,3 +66,5 @@ permalink: /kb/124/Q124995/
 	
 	=============================================================================
 	
+
+{% endraw %}

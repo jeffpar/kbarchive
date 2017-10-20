@@ -6,6 +6,8 @@ permalink: /kb/200/Q200702/
 
 ## Q200702: SMS: RC Can Not Initiate Session After Virtual Memory Error
 
+{% raw %}
+
 	Article: Q200702
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/200/Q200702/
 	
 	=============================================================================
 	
+
+{% endraw %}

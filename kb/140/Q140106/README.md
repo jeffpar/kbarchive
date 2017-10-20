@@ -6,6 +6,8 @@ permalink: /kb/140/Q140106/
 
 ## Q140106: PC MAPI: Sample VB Code to Read a Microsoft Mail Message
 
+{% raw %}
+
 	Article: Q140106
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -109,3 +111,5 @@ permalink: /kb/140/Q140106/
 	
 	=============================================================================
 	
+
+{% endraw %}

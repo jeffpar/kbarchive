@@ -6,6 +6,8 @@ permalink: /kb/162/Q162485/
 
 ## Q162485: XWEB: ASC Doesn't Show Number of Unread Messages
 
+{% raw %}
+
 	Article: Q162485
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -40,3 +42,5 @@ permalink: /kb/162/Q162485/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/108/Q108349/
 
 ## Q108349: BUG: Console I/O Problem; CR/LF Skipped After File Open
 
+{% raw %}
+
 	Article: Q108349
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,4.0
@@ -79,3 +81,5 @@ permalink: /kb/108/Q108349/
 	
 	=============================================================================
 	
+
+{% endraw %}

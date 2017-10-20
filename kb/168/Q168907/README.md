@@ -6,6 +6,8 @@ permalink: /kb/168/Q168907/
 
 ## Q168907: SMS: Using the &quot;Gold-Key&quot; May Cause a Blue Screen STOP 1E
 
+{% raw %}
+
 	Article: Q168907
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP1,1.2 SP2
@@ -71,3 +73,5 @@ permalink: /kb/168/Q168907/
 	
 	=============================================================================
 	
+
+{% endraw %}

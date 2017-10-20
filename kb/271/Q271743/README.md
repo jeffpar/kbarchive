@@ -6,6 +6,8 @@ permalink: /kb/271/Q271743/
 
 ## Q271743: XFOR: Exchange Server Users Not Receiving Free and Busy Results
 
+{% raw %}
+
 	Article: Q271743
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -70,3 +72,5 @@ permalink: /kb/271/Q271743/
 	
 	=============================================================================
 	
+
+{% endraw %}

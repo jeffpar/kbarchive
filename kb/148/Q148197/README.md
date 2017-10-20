@@ -6,6 +6,8 @@ permalink: /kb/148/Q148197/
 
 ## Q148197: XCLN: WinNT Client Can Leave 0 Byte File on W95 or W16 Share
 
+{% raw %}
+
 	Article: Q148197
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -48,3 +50,5 @@ permalink: /kb/148/Q148197/
 	
 	=============================================================================
 	
+
+{% endraw %}

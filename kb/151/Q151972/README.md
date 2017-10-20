@@ -6,6 +6,8 @@ permalink: /kb/151/Q151972/
 
 ## Q151972: XADM: Message Limits Incorrectly Calculated After 5.0 Upgrade
 
+{% raw %}
+
 	Article: Q151972
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -67,3 +69,5 @@ permalink: /kb/151/Q151972/
 	
 	=============================================================================
 	
+
+{% endraw %}

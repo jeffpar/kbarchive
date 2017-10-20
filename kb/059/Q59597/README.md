@@ -6,6 +6,8 @@ permalink: /kb/059/Q59597/
 
 ## Q59597: Mac GW: Can't Give Group Access to a Gateway Account
 
+{% raw %}
+
 	Article: Q59597
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -60,3 +62,5 @@ permalink: /kb/059/Q59597/
 	
 	=============================================================================
 	
+
+{% endraw %}

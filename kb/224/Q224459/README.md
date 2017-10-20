@@ -6,6 +6,8 @@ permalink: /kb/224/Q224459/
 
 ## Q224459: BackOffice Web Administrator Links Are Unavailable
 
+{% raw %}
+
 	Article: Q224459
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -130,3 +132,5 @@ permalink: /kb/224/Q224459/
 	
 	=============================================================================
 	
+
+{% endraw %}

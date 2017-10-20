@@ -6,6 +6,8 @@ permalink: /kb/189/Q189345/
 
 ## Q189345: XCON: MTA Logs Event 9301 Though X.400 Connector Is Identified
 
+{% raw %}
+
 	Article: Q189345
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -89,3 +91,5 @@ permalink: /kb/189/Q189345/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172787/
 
 ## Q172787: How to Prevent MSN Quick View from Being Loaded Automatically
 
+{% raw %}
+
 	Article: Q172787
 	Product(s): The Microsoft Network
 	Version(s): 2.6,5.0,5.1,5.2,5.3
@@ -57,3 +59,5 @@ permalink: /kb/172/Q172787/
 	
 	=============================================================================
 	
+
+{% endraw %}

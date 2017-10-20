@@ -6,6 +6,8 @@ permalink: /kb/163/Q163617/
 
 ## Q163617: Equation Editor Hangs on Multiprocessor Computers
 
+{% raw %}
+
 	Article: Q163617
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.51
@@ -84,3 +86,5 @@ permalink: /kb/163/Q163617/
 	
 	=============================================================================
 	
+
+{% endraw %}

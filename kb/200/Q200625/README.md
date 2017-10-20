@@ -6,6 +6,8 @@ permalink: /kb/200/Q200625/
 
 ## Q200625: SMS: Licensed Software Listing Not Sorted by Header Buttons
 
+{% raw %}
+
 	Article: Q200625
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -50,3 +52,5 @@ permalink: /kb/200/Q200625/
 	
 	=============================================================================
 	
+
+{% endraw %}

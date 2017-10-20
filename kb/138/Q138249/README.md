@@ -6,6 +6,8 @@ permalink: /kb/138/Q138249/
 
 ## Q138249: Updated Vredir.vxd Corrects Errors Running Files on LMX
 
+{% raw %}
+
 	Article: Q138249
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/138/Q138249/
 	
 	=============================================================================
 	
+
+{% endraw %}

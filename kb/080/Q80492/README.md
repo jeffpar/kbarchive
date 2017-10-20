@@ -6,6 +6,8 @@ permalink: /kb/080/Q80492/
 
 ## Q80492: &quot;Path/File Access Error&quot; with MS-DOS Editor
 
+{% raw %}
+
 	Article: Q80492
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -43,3 +45,5 @@ permalink: /kb/080/Q80492/
 	
 	=============================================================================
 	
+
+{% endraw %}

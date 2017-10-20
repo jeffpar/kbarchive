@@ -6,6 +6,8 @@ permalink: /kb/196/Q196542/
 
 ## Q196542: WD97: Edit Find/Replace Doesn't Find Text Formatted as All Caps
 
+{% raw %}
+
 	Article: Q196542
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/196/Q196542/
 	
 	=============================================================================
 	
+
+{% endraw %}

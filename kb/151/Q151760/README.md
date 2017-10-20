@@ -6,6 +6,8 @@ permalink: /kb/151/Q151760/
 
 ## Q151760: Error 20091 When Client Dials RAS Server Using TCP/IP
 
+{% raw %}
+
 	Article: Q151760
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -94,3 +96,5 @@ permalink: /kb/151/Q151760/
 	
 	=============================================================================
 	
+
+{% endraw %}

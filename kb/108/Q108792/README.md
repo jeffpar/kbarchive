@@ -6,6 +6,8 @@ permalink: /kb/108/Q108792/
 
 ## Q108792: Video for Windows 1.1 Runtime Disk (3.5 Inch, 1.44 MB)
 
+{% raw %}
+
 	Article: Q108792
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.1
@@ -90,3 +92,5 @@ permalink: /kb/108/Q108792/
 	
 	=============================================================================
 	
+
+{% endraw %}

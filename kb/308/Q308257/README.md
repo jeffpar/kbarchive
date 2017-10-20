@@ -6,6 +6,8 @@ permalink: /kb/308/Q308257/
 
 ## Q308257: OLEDB: Complex SELECT Statements Including FROM Clause Fail
 
+{% raw %}
+
 	Article: Q308257
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/308/Q308257/
 	
 	=============================================================================
 	
+
+{% endraw %}

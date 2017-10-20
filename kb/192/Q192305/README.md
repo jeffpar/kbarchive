@@ -6,6 +6,8 @@ permalink: /kb/192/Q192305/
 
 ## Q192305: PRB: Separate Instance of HTML Help Used With Certain Objects
 
+{% raw %}
+
 	Article: Q192305
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -64,3 +66,5 @@ permalink: /kb/192/Q192305/
 	
 	=============================================================================
 	
+
+{% endraw %}

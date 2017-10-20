@@ -6,6 +6,8 @@ permalink: /kb/201/Q201280/
 
 ## Q201280: XFOR: EXCALCON May Fail to Connect to the CALCON Server
 
+{% raw %}
+
 	Article: Q201280
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -68,3 +70,5 @@ permalink: /kb/201/Q201280/
 	
 	=============================================================================
 	
+
+{% endraw %}

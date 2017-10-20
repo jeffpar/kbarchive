@@ -6,6 +6,8 @@ permalink: /kb/136/Q136817/
 
 ## Q136817: How to Change Editor Settings
 
+{% raw %}
+
 	Article: Q136817
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/136/Q136817/
 	
 	=============================================================================
 	
+
+{% endraw %}

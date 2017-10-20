@@ -6,6 +6,8 @@ permalink: /kb/246/Q246014/
 
 ## Q246014: XCLN: Outlook Y2K Information &amp; Compliancy with Exchange Server
 
+{% raw %}
+
 	Article: Q246014
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -57,3 +59,5 @@ permalink: /kb/246/Q246014/
 	
 	=============================================================================
 	
+
+{% endraw %}

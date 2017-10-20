@@ -6,6 +6,8 @@ permalink: /kb/254/Q254042/
 
 ## Q254042: Preserve Custom Services File When Installing Network Components
 
+{% raw %}
+
 	Article: Q254042
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -80,3 +82,5 @@ permalink: /kb/254/Q254042/
 	
 	=============================================================================
 	
+
+{% endraw %}

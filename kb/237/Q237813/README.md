@@ -6,6 +6,8 @@ permalink: /kb/237/Q237813/
 
 ## Q237813: Err: &quot;INF Install Failure&quot; When Non-administrator Logs On
 
+{% raw %}
+
 	Article: Q237813
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4
@@ -72,3 +74,5 @@ permalink: /kb/237/Q237813/
 	
 	=============================================================================
 	
+
+{% endraw %}

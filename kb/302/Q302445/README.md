@@ -6,6 +6,8 @@ permalink: /kb/302/Q302445/
 
 ## Q302445: MSN Explorer 6.1 Setup Stops Responding When Used With ZoomText
 
+{% raw %}
+
 	Article: Q302445
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -66,3 +68,5 @@ permalink: /kb/302/Q302445/
 	
 	=============================================================================
 	
+
+{% endraw %}

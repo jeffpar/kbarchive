@@ -6,6 +6,8 @@ permalink: /kb/043/Q43787/
 
 ## Q43787: LINK.EXE 3.69 Warning L4045 When No .QLB on Quick Library Name
 
+{% raw %}
+
 	Article: Q43787
 	Product(s): See article
 	Version(s): 4.50
@@ -46,3 +48,5 @@ permalink: /kb/043/Q43787/
 	
 	LINK.EXE Version 3.69 is shipped with QuickBASIC Version 4.50.
 	LINK.EXE Version 5.05 is shipped with BASIC PDS Version 7.00.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177689/
 
 ## Q177689: Microsoft Age of Empires: Inside Moves Corrections and Comments
 
+{% raw %}
+
 	Article: Q177689
 	Product(s): Microsoft Press
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/177/Q177689/
 	
 	=============================================================================
 	
+
+{% endraw %}

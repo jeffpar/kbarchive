@@ -6,6 +6,8 @@ permalink: /kb/136/Q136774/
 
 ## Q136774: PRB: Cannot Use Macro Substitution in Remote Views
 
+{% raw %}
+
 	Article: Q136774
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/136/Q136774/
 	
 	=============================================================================
 	
+
+{% endraw %}

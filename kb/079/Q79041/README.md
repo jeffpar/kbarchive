@@ -6,6 +6,8 @@ permalink: /kb/079/Q79041/
 
 ## Q79041: LANtastic and Zero-Length Files
 
+{% raw %}
+
 	Article: Q79041
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.3,4.0,4.01,5.x,6.0,6.2,6.21,6.22
@@ -65,3 +67,5 @@ permalink: /kb/079/Q79041/
 	
 	=============================================================================
 	
+
+{% endraw %}

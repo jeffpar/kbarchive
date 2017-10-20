@@ -6,6 +6,8 @@ permalink: /kb/066/Q66963/
 
 ## Q66963: Can't Run Different Applications with Same Name Simultaneously
 
+{% raw %}
+
 	Article: Q66963
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -43,3 +45,5 @@ permalink: /kb/066/Q66963/
 	
 	=============================================================================
 	
+
+{% endraw %}

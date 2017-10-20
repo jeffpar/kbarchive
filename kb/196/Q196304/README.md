@@ -6,6 +6,8 @@ permalink: /kb/196/Q196304/
 
 ## Q196304: XFOR: SNADS Connector Displays Error Due to Incoming SMTP Messag
 
+{% raw %}
+
 	Article: Q196304
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -72,3 +74,5 @@ permalink: /kb/196/Q196304/
 	
 	=============================================================================
 	
+
+{% endraw %}

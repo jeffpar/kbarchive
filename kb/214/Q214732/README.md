@@ -6,6 +6,8 @@ permalink: /kb/214/Q214732/
 
 ## Q214732: SFU Password Synchronization to Digital UNIX Server Problem
 
+{% raw %}
+
 	Article: Q214732
 	Product(s): Microsoft Windows NT
 	Version(s): ; winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/214/Q214732/
 	
 	=============================================================================
 	
+
+{% endraw %}

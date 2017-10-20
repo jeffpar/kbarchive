@@ -6,6 +6,8 @@ permalink: /kb/135/Q135492/
 
 ## Q135492: DSPU Through Demo Link Service Causes Scrolling 3270 Screen
 
+{% raw %}
+
 	Article: Q135492
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -84,3 +86,5 @@ permalink: /kb/135/Q135492/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259351/
 
 ## Q259351: Allegiance: How to Map Functions to POV Switch on Your Joystick
 
+{% raw %}
+
 	Article: Q259351
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -64,3 +66,5 @@ permalink: /kb/259/Q259351/
 	
 	=============================================================================
 	
+
+{% endraw %}

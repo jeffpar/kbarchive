@@ -6,6 +6,8 @@ permalink: /kb/156/Q156677/
 
 ## Q156677: Logoff Screen Saver Does Not Function in Windows NT
 
+{% raw %}
+
 	Article: Q156677
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -150,3 +152,5 @@ permalink: /kb/156/Q156677/
 	
 	=============================================================================
 	
+
+{% endraw %}

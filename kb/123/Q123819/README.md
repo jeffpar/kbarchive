@@ -6,6 +6,8 @@ permalink: /kb/123/Q123819/
 
 ## Q123819: File Manager I/O Optimizations Slow other File Transfers
 
+{% raw %}
+
 	Article: Q123819
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.1,3.1,3.5,3.51,3.5,3.51; :3.1
@@ -92,3 +94,5 @@ permalink: /kb/123/Q123819/
 	
 	=============================================================================
 	
+
+{% endraw %}

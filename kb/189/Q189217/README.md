@@ -6,6 +6,8 @@ permalink: /kb/189/Q189217/
 
 ## Q189217: Running Office 97 Updated Ed. Intl. Version: Incorrect Setup
 
+{% raw %}
+
 	Article: Q189217
 	Product(s): Microsoft Press
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/189/Q189217/
 	
 	=============================================================================
 	
+
+{% endraw %}

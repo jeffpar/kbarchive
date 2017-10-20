@@ -6,6 +6,8 @@ permalink: /kb/196/Q196432/
 
 ## Q196432: DNS SOA Default Values Are Not Configurable
 
+{% raw %}
+
 	Article: Q196432
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -149,3 +151,5 @@ permalink: /kb/196/Q196432/
 	
 	=============================================================================
 	
+
+{% endraw %}

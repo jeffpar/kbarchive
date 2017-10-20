@@ -6,6 +6,8 @@ permalink: /kb/131/Q131779/
 
 ## Q131779: Help Fails for Visual Basic Modules in Microsoft Excel
 
+{% raw %}
+
 	Article: Q131779
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/131/Q131779/
 	
 	=============================================================================
 	
+
+{% endraw %}

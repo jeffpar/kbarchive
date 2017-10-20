@@ -6,6 +6,8 @@ permalink: /kb/165/Q165245/
 
 ## Q165245: DDE Client Experiences Intermittent DDE Disconnects
 
+{% raw %}
+
 	Article: Q165245
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/165/Q165245/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/101/Q101042/
 
 ## Q101042: Comprehensive List of MS-DOS 5 Documentation Errors
 
+{% raw %}
+
 	Article: Q101042
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0
@@ -575,3 +577,5 @@ permalink: /kb/101/Q101042/
 	
 	=============================================================================
 	
+
+{% endraw %}

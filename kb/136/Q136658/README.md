@@ -6,6 +6,8 @@ permalink: /kb/136/Q136658/
 
 ## Q136658: Err Msg: The Specified Network Server Is Not Running...
 
+{% raw %}
+
 	Article: Q136658
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/136/Q136658/
 	
 	=============================================================================
 	
+
+{% endraw %}

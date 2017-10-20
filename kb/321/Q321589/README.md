@@ -6,6 +6,8 @@ permalink: /kb/321/Q321589/
 
 ## Q321589: Multiple Named Pipes May Become Slow
 
+{% raw %}
+
 	Article: Q321589
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -84,3 +86,5 @@ permalink: /kb/321/Q321589/
 	
 	=============================================================================
 	
+
+{% endraw %}

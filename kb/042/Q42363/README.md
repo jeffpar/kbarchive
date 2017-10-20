@@ -6,6 +6,8 @@ permalink: /kb/042/Q42363/
 
 ## Q42363: Memory Model Stored in Both QC.INI and .MAK Files
 
+{% raw %}
+
 	Article: Q42363
 	Product(s): See article
 	Version(s): 2.00
@@ -33,3 +35,5 @@ permalink: /kb/042/Q42363/
 	model was changed, the memory model is not saved to the QC.INI. The
 	manner in which this works is important to consider in order to avoid
 	mixing .OBJ files compiled under different memory models.
+
+{% endraw %}

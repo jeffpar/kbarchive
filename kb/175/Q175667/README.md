@@ -6,6 +6,8 @@ permalink: /kb/175/Q175667/
 
 ## Q175667: Error Message: Copy Profile Error
 
+{% raw %}
+
 	Article: Q175667
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -107,3 +109,5 @@ permalink: /kb/175/Q175667/
 	
 	=============================================================================
 	
+
+{% endraw %}

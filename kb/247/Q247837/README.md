@@ -6,6 +6,8 @@ permalink: /kb/247/Q247837/
 
 ## Q247837: FS2000: Unexpected Action When You Press SideWinder Button
 
+{% raw %}
+
 	Article: Q247837
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -89,3 +91,5 @@ permalink: /kb/247/Q247837/
 	
 	=============================================================================
 	
+
+{% endraw %}

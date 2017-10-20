@@ -6,6 +6,8 @@ permalink: /kb/129/Q129731/
 
 ## Q129731: BUG: ODBC OrdinalPosition Differs with dbSQLPassThrough
 
+{% raw %}
+
 	Article: Q129731
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -147,3 +149,5 @@ permalink: /kb/129/Q129731/
 	
 	=============================================================================
 	
+
+{% endraw %}

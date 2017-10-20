@@ -6,6 +6,8 @@ permalink: /kb/128/Q128788/
 
 ## Q128788: BUG: C2143 When Initializing Static Member in Class Template
 
+{% raw %}
+
 	Article: Q128788
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1
@@ -85,3 +87,5 @@ permalink: /kb/128/Q128788/
 	
 	=============================================================================
 	
+
+{% endraw %}

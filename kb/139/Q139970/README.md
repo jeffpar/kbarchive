@@ -6,6 +6,8 @@ permalink: /kb/139/Q139970/
 
 ## Q139970: BUG:Text &amp; Value Properties of DBGrid Column Show Empty String
 
+{% raw %}
+
 	Article: Q139970
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -120,3 +122,5 @@ permalink: /kb/139/Q139970/
 	
 	=============================================================================
 	
+
+{% endraw %}

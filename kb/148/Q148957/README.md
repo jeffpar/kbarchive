@@ -6,6 +6,8 @@ permalink: /kb/148/Q148957/
 
 ## Q148957: NTBACKUP Fails With Application Error During Verify Process
 
+{% raw %}
+
 	Article: Q148957
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -69,3 +71,5 @@ permalink: /kb/148/Q148957/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/307/Q307581/
 
 ## Q307581: Games: Games Do Not Run As Expected on Virtual PC
 
+{% raw %}
+
 	Article: Q307581
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -83,3 +85,5 @@ permalink: /kb/307/Q307581/
 	
 	=============================================================================
 	
+
+{% endraw %}

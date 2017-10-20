@@ -6,6 +6,8 @@ permalink: /kb/219/Q219898/
 
 ## Q219898: How the Bad Password Count Is Incremented in Windows NT
 
+{% raw %}
+
 	Article: Q219898
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -121,3 +123,5 @@ permalink: /kb/219/Q219898/
 	
 	=============================================================================
 	
+
+{% endraw %}

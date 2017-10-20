@@ -6,6 +6,8 @@ permalink: /kb/075/Q75379/
 
 ## Q75379: Minimal Install Does Not Set COMSPEC to Upgraded COMMAND.COM
 
+{% raw %}
+
 	Article: Q75379
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -59,3 +61,5 @@ permalink: /kb/075/Q75379/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50625/
 
 ## Q50625: OS/2 Program Selector Fails to Show DOS Box If Using SCREEN 3
 
+{% raw %}
+
 	Article: Q50625
 	Product(s): See article
 	Version(s): 6.00 6.00b | 6.00 6.00b
@@ -79,3 +81,5 @@ permalink: /kb/050/Q50625/
 	accessed by the keyboard, but the screen is never displayed correctly
 	unless the program itself reinvokes SCREEN 0. The only way out of this
 	condition is to reboot the computer.
+
+{% endraw %}

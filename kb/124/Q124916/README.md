@@ -6,6 +6,8 @@ permalink: /kb/124/Q124916/
 
 ## Q124916: Some Client Applications Fail When Writing to Windows NT
 
+{% raw %}
+
 	Article: Q124916
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -103,3 +105,5 @@ permalink: /kb/124/Q124916/
 	
 	=============================================================================
 	
+
+{% endraw %}

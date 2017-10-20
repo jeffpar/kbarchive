@@ -6,6 +6,8 @@ permalink: /kb/082/Q82826/
 
 ## Q82826: OLE and Networking Issues
 
+{% raw %}
+
 	Article: Q82826
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/082/Q82826/
 	
 	=============================================================================
 	
+
+{% endraw %}

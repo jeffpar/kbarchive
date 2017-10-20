@@ -6,6 +6,8 @@ permalink: /kb/182/Q182390/
 
 ## Q182390: Tips Listed in the Windows 95 Shell.inf File
 
+{% raw %}
+
 	Article: Q182390
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -180,3 +182,5 @@ permalink: /kb/182/Q182390/
 	
 	=============================================================================
 	
+
+{% endraw %}

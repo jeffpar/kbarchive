@@ -6,6 +6,8 @@ permalink: /kb/237/Q237454/
 
 ## Q237454: HOWTO: Associate File Extensions with a Custom Fox App
 
+{% raw %}
+
 	Article: Q237454
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0,95,98,98 Second Edition; winnt:4.0
@@ -239,3 +241,5 @@ permalink: /kb/237/Q237454/
 	
 	=============================================================================
 	
+
+{% endraw %}

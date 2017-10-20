@@ -6,6 +6,8 @@ permalink: /kb/131/Q131429/
 
 ## Q131429: Conner Backup Exec Incompatible with Long Filenames
 
+{% raw %}
+
 	Article: Q131429
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/131/Q131429/
 	
 	=============================================================================
 	
+
+{% endraw %}

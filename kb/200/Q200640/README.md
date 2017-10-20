@@ -6,6 +6,8 @@ permalink: /kb/200/Q200640/
 
 ## Q200640: SMS: If the Temp.Tcf File Is Deleted, CCIM May Fail
 
+{% raw %}
+
 	Article: Q200640
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0; winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/200/Q200640/
 	
 	=============================================================================
 	
+
+{% endraw %}

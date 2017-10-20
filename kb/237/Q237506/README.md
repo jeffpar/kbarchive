@@ -6,6 +6,8 @@ permalink: /kb/237/Q237506/
 
 ## Q237506: Encarta 2000: Previous Version of Research Organizer Starts
 
+{% raw %}
+
 	Article: Q237506
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/237/Q237506/
 	
 	=============================================================================
 	
+
+{% endraw %}

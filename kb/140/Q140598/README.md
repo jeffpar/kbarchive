@@ -6,6 +6,8 @@ permalink: /kb/140/Q140598/
 
 ## Q140598: FIX: AppendOnly Snapshot Recordset Update() Causes Error
 
+{% raw %}
+
 	Article: Q140598
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10 2.20
@@ -87,3 +89,5 @@ permalink: /kb/140/Q140598/
 	
 	=============================================================================
 	
+
+{% endraw %}

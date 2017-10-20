@@ -6,6 +6,8 @@ permalink: /kb/166/Q166168/
 
 ## Q166168: HOWTO: Use RUNDLL32 to Debug Control Panel Applets
 
+{% raw %}
+
 	Article: Q166168
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0
@@ -71,3 +73,5 @@ permalink: /kb/166/Q166168/
 	
 	=============================================================================
 	
+
+{% endraw %}

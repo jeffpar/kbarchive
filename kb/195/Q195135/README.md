@@ -6,6 +6,8 @@ permalink: /kb/195/Q195135/
 
 ## Q195135: WD97: Error Message: &quot;The subdocument ...is missing&quot;
 
+{% raw %}
+
 	Article: Q195135
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/195/Q195135/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/240/Q240314/
 
 ## Q240314: INFO: Concurrent I/O Requests Number Setting Restrictions
 
+{% raw %}
+
 	Article: Q240314
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/240/Q240314/
 	
 	=============================================================================
 	
+
+{% endraw %}

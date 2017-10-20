@@ -6,6 +6,8 @@ permalink: /kb/151/Q151924/
 
 ## Q151924: Windows 95 Starts Here: README.DOC Contents
 
+{% raw %}
+
 	Article: Q151924
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -205,3 +207,5 @@ permalink: /kb/151/Q151924/
 	
 	=============================================================================
 	
+
+{% endraw %}

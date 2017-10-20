@@ -6,6 +6,8 @@ permalink: /kb/041/Q41670/
 
 ## Q41670: QuickC 2.00 README.DOC: Warning Message C4118
 
+{% raw %}
+
 	Article: Q41670
 	Product(s): See article
 	Version(s): 2.00
@@ -28,3 +30,5 @@ permalink: /kb/041/Q41670/
 	
 	Using these pragmas results in warning message C4118, but only at
 	warning level 3. In all other cases, C4118 is a level-1 warning.
+
+{% endraw %}

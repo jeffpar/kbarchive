@@ -6,6 +6,8 @@ permalink: /kb/092/Q92792/
 
 ## Q92792: WFWG: Segment Load Failure with NCR MCA 486
 
+{% raw %}
+
 	Article: Q92792
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -59,3 +61,5 @@ permalink: /kb/092/Q92792/
 	
 	=============================================================================
 	
+
+{% endraw %}

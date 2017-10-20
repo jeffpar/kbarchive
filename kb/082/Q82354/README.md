@@ -6,6 +6,8 @@ permalink: /kb/082/Q82354/
 
 ## Q82354: On Target 1.0 Does Not Install on Windows System
 
+{% raw %}
+
 	Article: Q82354
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/082/Q82354/
 	
 	=============================================================================
 	
+
+{% endraw %}

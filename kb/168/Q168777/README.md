@@ -6,6 +6,8 @@ permalink: /kb/168/Q168777/
 
 ## Q168777: PRB: MFC ActiveX Control in IE Doesn't Detect Keystrokes
 
+{% raw %}
+
 	Article: Q168777
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,3.01,3.02,4.0,4.0a,4.1,4.2,4.2b,5.0
@@ -145,3 +147,5 @@ permalink: /kb/168/Q168777/
 	
 	=============================================================================
 	
+
+{% endraw %}

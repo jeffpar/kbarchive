@@ -6,6 +6,8 @@ permalink: /kb/077/Q77626/
 
 ## Q77626: Uninstalling After Deleting the OLD_DOS.1 Directory
 
+{% raw %}
+
 	Article: Q77626
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -87,3 +89,5 @@ permalink: /kb/077/Q77626/
 	
 	=============================================================================
 	
+
+{% endraw %}

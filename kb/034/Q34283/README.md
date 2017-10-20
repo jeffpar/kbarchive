@@ -6,6 +6,8 @@ permalink: /kb/034/Q34283/
 
 ## Q34283: BC Hangs on a POKE with a FUNCTION Passed a Dynamic Array
 
+{% raw %}
+
 	Article: Q34283
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -54,3 +56,5 @@ permalink: /kb/034/Q34283/
 	
 	FUNCTION charOff (row)
 	END FUNCTION
+
+{% endraw %}

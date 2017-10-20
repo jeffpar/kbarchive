@@ -6,6 +6,8 @@ permalink: /kb/263/Q263520/
 
 ## Q263520: HOWTO: Programmatically Create a Distribution List Using ADSI
 
+{% raw %}
+
 	Article: Q263520
 	Product(s): Microsoft Exchange
 	Version(s): 2.5,5.5
@@ -368,3 +370,5 @@ permalink: /kb/263/Q263520/
 	
 	=============================================================================
 	
+
+{% endraw %}

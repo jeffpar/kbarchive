@@ -6,6 +6,8 @@ permalink: /kb/113/Q113673/
 
 ## Q113673: FIX: GP Fault in SIMBA.DLL w/ Second SQLExecute() of DEL Stmt
 
+{% raw %}
+
 	Article: Q113673
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/113/Q113673/
 	
 	=============================================================================
 	
+
+{% endraw %}

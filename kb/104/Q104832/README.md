@@ -6,6 +6,8 @@ permalink: /kb/104/Q104832/
 
 ## Q104832: Cinemania: Some Keyboard Equivalents Don't Work
 
+{% raw %}
+
 	Article: Q104832
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 editions
@@ -47,3 +49,5 @@ permalink: /kb/104/Q104832/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147625/
 
 ## Q147625: Configuring Connections Using Eicon SDLC Link Services
 
+{% raw %}
+
 	Article: Q147625
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0
@@ -102,3 +104,5 @@ permalink: /kb/147/Q147625/
 	
 	=============================================================================
 	
+
+{% endraw %}

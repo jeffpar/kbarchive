@@ -6,6 +6,8 @@ permalink: /kb/071/Q71814/
 
 ## Q71814: PostScript Driver and Printer Resolution
 
+{% raw %}
+
 	Article: Q71814
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -42,3 +44,5 @@ permalink: /kb/071/Q71814/
 	
 	=============================================================================
 	
+
+{% endraw %}

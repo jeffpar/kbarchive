@@ -6,6 +6,8 @@ permalink: /kb/201/Q201255/
 
 ## Q201255: HOW TO: Enable SGC on Internet Information Server
 
+{% raw %}
+
 	Article: Q201255
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -279,3 +281,5 @@ permalink: /kb/201/Q201255/
 	
 	=============================================================================
 	
+
+{% endraw %}

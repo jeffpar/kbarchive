@@ -6,6 +6,8 @@ permalink: /kb/111/Q111581/
 
 ## Q111581: BUG: Pie() Vertex Not Drawn Completely with Wide Pen
 
+{% raw %}
+
 	Article: Q111581
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -53,3 +55,5 @@ permalink: /kb/111/Q111581/
 	
 	=============================================================================
 	
+
+{% endraw %}

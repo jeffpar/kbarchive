@@ -6,6 +6,8 @@ permalink: /kb/167/Q167162/
 
 ## Q167162: Kids Plus: Custom Icons Appear in User Start Menu Profiles
 
+{% raw %}
+
 	Article: Q167162
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/167/Q167162/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/262/Q262392/
 
 ## Q262392: SMS: Network Discovery Returns FQDNs Instead of NetBIOS Names
 
+{% raw %}
+
 	Article: Q262392
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -148,3 +150,5 @@ permalink: /kb/262/Q262392/
 	
 	=============================================================================
 	
+
+{% endraw %}

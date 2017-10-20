@@ -6,6 +6,8 @@ permalink: /kb/172/Q172695/
 
 ## Q172695: FIX: Visual FoxPro ODBC Driver Creates an Invalid File DSN
 
+{% raw %}
+
 	Article: Q172695
 	Product(s): Microsoft FoxPro
 	Version(s): 1.0,5.0
@@ -78,3 +80,5 @@ permalink: /kb/172/Q172695/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159219/
 
 ## Q159219: NWLink Binding Cannot Be Disabled for Specific Services
 
+{% raw %}
+
 	Article: Q159219
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/159/Q159219/
 	
 	=============================================================================
 	
+
+{% endraw %}

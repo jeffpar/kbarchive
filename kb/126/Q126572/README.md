@@ -6,6 +6,8 @@ permalink: /kb/126/Q126572/
 
 ## Q126572: DELTREE Command Does Not Remove DIR000&lt;x&gt; Directory
 
+{% raw %}
+
 	Article: Q126572
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -54,3 +56,5 @@ permalink: /kb/126/Q126572/
 	
 	=============================================================================
 	
+
+{% endraw %}

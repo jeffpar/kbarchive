@@ -6,6 +6,8 @@ permalink: /kb/092/Q92870/
 
 ## Q92870: WFWG: NETX.COM Err Msg: File Server Not Found
 
+{% raw %}
+
 	Article: Q92870
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -70,3 +72,5 @@ permalink: /kb/092/Q92870/
 	
 	=============================================================================
 	
+
+{% endraw %}

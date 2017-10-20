@@ -6,6 +6,8 @@ permalink: /kb/141/Q141728/
 
 ## Q141728: World of Flight: How to Manually Install
 
+{% raw %}
+
 	Article: Q141728
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -307,3 +309,5 @@ permalink: /kb/141/Q141728/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177544/
 
 ## Q177544: XFOR: Fixed Length File Sent from OV/VM Using SENDFILE Corrupted
 
+{% raw %}
+
 	Article: Q177544
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -60,3 +62,5 @@ permalink: /kb/177/Q177544/
 	
 	=============================================================================
 	
+
+{% endraw %}

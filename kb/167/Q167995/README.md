@@ -6,6 +6,8 @@ permalink: /kb/167/Q167995/
 
 ## Q167995: FIX: Calling a Function Returning double May Not Pop FPU Stack
 
+{% raw %}
+
 	Article: Q167995
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -85,3 +87,5 @@ permalink: /kb/167/Q167995/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256217/
 
 ## Q256217: INFO: Free Threaded Marshaler Guidelines
 
+{% raw %}
+
 	Article: Q256217
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.2,95,98,98 Second Edition
@@ -117,3 +119,5 @@ permalink: /kb/256/Q256217/
 	
 	=============================================================================
 	
+
+{% endraw %}

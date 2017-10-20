@@ -6,6 +6,8 @@ permalink: /kb/246/Q246794/
 
 ## Q246794: Invokable APPC/CPI-C TP May Fail Intermittently with Event 60
 
+{% raw %}
+
 	Article: Q246794
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -163,3 +165,5 @@ permalink: /kb/246/Q246794/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140152/
 
 ## Q140152: Client Setup Fails to Find Windows If WINDIR is Incorrect
 
+{% raw %}
+
 	Article: Q140152
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -51,3 +53,5 @@ permalink: /kb/140/Q140152/
 	
 	=============================================================================
 	
+
+{% endraw %}

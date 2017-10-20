@@ -6,6 +6,8 @@ permalink: /kb/191/Q191719/
 
 ## Q191719: BUG: UpDown Control's BuddyProperty Returns Empty String in EXE
 
+{% raw %}
+
 	Article: Q191719
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/191/Q191719/
 	
 	=============================================================================
 	
+
+{% endraw %}

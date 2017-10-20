@@ -6,6 +6,8 @@ permalink: /kb/156/Q156788/
 
 ## Q156788: FIX: Report Print Preview Illegible Under Windows NT
 
+{% raw %}
+
 	Article: Q156788
 	Product(s): Microsoft FoxPro
 	Version(s): 2.6a 3.0 3.0b 5.0 5.0a
@@ -83,3 +85,5 @@ permalink: /kb/156/Q156788/
 	
 	=============================================================================
 	
+
+{% endraw %}

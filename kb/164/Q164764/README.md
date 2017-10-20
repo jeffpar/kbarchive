@@ -6,6 +6,8 @@ permalink: /kb/164/Q164764/
 
 ## Q164764: SMS: Eventcmi.exe Requires Incorrect Syntax in .CNF File
 
+{% raw %}
+
 	Article: Q164764
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -56,3 +58,5 @@ permalink: /kb/164/Q164764/
 	
 	=============================================================================
 	
+
+{% endraw %}

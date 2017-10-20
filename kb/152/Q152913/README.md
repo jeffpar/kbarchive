@@ -6,6 +6,8 @@ permalink: /kb/152/Q152913/
 
 ## Q152913: XCLN: WindowsNT Client Toolbar Buttons Missing After SP2 Upgrade
 
+{% raw %}
+
 	Article: Q152913
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0; winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/152/Q152913/
 	
 	=============================================================================
 	
+
+{% endraw %}

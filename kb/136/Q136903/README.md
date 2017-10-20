@@ -6,6 +6,8 @@ permalink: /kb/136/Q136903/
 
 ## Q136903: PRB: Open Dialog Box in SET VIEW If Table Name Contains Space
 
+{% raw %}
+
 	Article: Q136903
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -77,3 +79,5 @@ permalink: /kb/136/Q136903/
 	
 	=============================================================================
 	
+
+{% endraw %}

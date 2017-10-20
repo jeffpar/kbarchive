@@ -6,6 +6,8 @@ permalink: /kb/159/Q159375/
 
 ## Q159375: CG3: Unable to Connect to Design Gallery Live Web Site
 
+{% raw %}
+
 	Article: Q159375
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 3.0,97
@@ -81,3 +83,5 @@ permalink: /kb/159/Q159375/
 	
 	=============================================================================
 	
+
+{% endraw %}

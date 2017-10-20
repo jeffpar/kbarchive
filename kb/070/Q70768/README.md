@@ -6,6 +6,8 @@ permalink: /kb/070/Q70768/
 
 ## Q70768: SETUP /N Does Not Create SYSTEM Subdirectory
 
+{% raw %}
+
 	Article: Q70768
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -37,3 +39,5 @@ permalink: /kb/070/Q70768/
 	
 	=============================================================================
 	
+
+{% endraw %}

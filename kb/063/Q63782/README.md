@@ -6,6 +6,8 @@ permalink: /kb/063/Q63782/
 
 ## Q63782: &quot;Permission Denied&quot; If SHELL to 7.00 .EXE Using ISAM from TSR
 
+{% raw %}
+
 	Article: Q63782
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -112,3 +114,5 @@ permalink: /kb/063/Q63782/
 	following query in this Knowledge Base:
 	
 	   LINK and ISAM and component and even and SETUP and TSR
+
+{% endraw %}

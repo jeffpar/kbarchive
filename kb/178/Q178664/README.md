@@ -6,6 +6,8 @@ permalink: /kb/178/Q178664/
 
 ## Q178664: BUG: ? Displays Incorrect Number of Characters to Screen
 
+{% raw %}
+
 	Article: Q178664
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -76,3 +78,5 @@ permalink: /kb/178/Q178664/
 	
 	=============================================================================
 	
+
+{% endraw %}

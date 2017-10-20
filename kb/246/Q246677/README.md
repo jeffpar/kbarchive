@@ -6,6 +6,8 @@ permalink: /kb/246/Q246677/
 
 ## Q246677: Setting TN3270 Mode Only on SNA Server Causes Applet to Fail
 
+{% raw %}
+
 	Article: Q246677
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -49,3 +51,5 @@ permalink: /kb/246/Q246677/
 	
 	=============================================================================
 	
+
+{% endraw %}

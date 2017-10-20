@@ -6,6 +6,8 @@ permalink: /kb/134/Q134360/
 
 ## Q134360: Err Msg: The Command You Specified Could Not Be Carried Out
 
+{% raw %}
+
 	Article: Q134360
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -129,3 +131,5 @@ permalink: /kb/134/Q134360/
 	
 	=============================================================================
 	
+
+{% endraw %}

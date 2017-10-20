@@ -6,6 +6,8 @@ permalink: /kb/266/Q266092/
 
 ## Q266092: XFOR: NDR When Sending an Excel Spreadsheet As an Attachment
 
+{% raw %}
+
 	Article: Q266092
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -85,3 +87,5 @@ permalink: /kb/266/Q266092/
 	
 	=============================================================================
 	
+
+{% endraw %}

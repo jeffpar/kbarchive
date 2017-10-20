@@ -6,6 +6,8 @@ permalink: /kb/164/Q164471/
 
 ## Q164471: Replacing System Files Using a Modified Emergency Repair Disk
 
+{% raw %}
+
 	Article: Q164471
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -171,3 +173,5 @@ permalink: /kb/164/Q164471/
 	
 	=============================================================================
 	
+
+{% endraw %}

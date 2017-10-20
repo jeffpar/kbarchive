@@ -6,6 +6,8 @@ permalink: /kb/301/Q301513/
 
 ## Q301513: Ads Do Not Appear When Going Online From Offline Mode With &quot;My S
 
+{% raw %}
+
 	Article: Q301513
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -47,3 +49,5 @@ permalink: /kb/301/Q301513/
 	
 	=============================================================================
 	
+
+{% endraw %}

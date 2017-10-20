@@ -6,6 +6,8 @@ permalink: /kb/036/Q36567/
 
 ## Q36567: Intitialize function is Shift+F8
 
+{% raw %}
+
 	Article: Q36567
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -23,3 +25,5 @@ permalink: /kb/036/Q36567/
 	3. Invoke the Initialize function (press SHIFT+F8)
 	
 	The F10 should be replaced with SHIFT+F8. SHIFT+8 is the default.
+
+{% endraw %}

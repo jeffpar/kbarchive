@@ -6,6 +6,8 @@ permalink: /kb/221/Q221716/
 
 ## Q221716: FIX: Component Gallery Not Refreshing Dynamic Web View
 
+{% raw %}
+
 	Article: Q221716
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -82,3 +84,5 @@ permalink: /kb/221/Q221716/
 	
 	=============================================================================
 	
+
+{% endraw %}

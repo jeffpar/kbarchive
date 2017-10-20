@@ -6,6 +6,8 @@ permalink: /kb/023/Q23388/
 
 ## Q23388: CTRL+UP and CTRL+DOWN ARROW Keys No Longer Scroll the Screen
 
+{% raw %}
+
 	Article: Q23388
 	Product(s): See article
 	Version(s): 3.00
@@ -25,3 +27,5 @@ permalink: /kb/023/Q23388/
 	removed during this change. In the non-3.00 product versions above,
 	these keys successfully scroll the screen down or up one line at a
 	time.
+
+{% endraw %}

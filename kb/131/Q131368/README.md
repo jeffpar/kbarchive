@@ -6,6 +6,8 @@ permalink: /kb/131/Q131368/
 
 ## Q131368: HOWTO: Create MFC Applications that Do Not Have a Menu Bar
 
+{% raw %}
+
 	Article: Q131368
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2,5.0
@@ -134,3 +136,5 @@ permalink: /kb/131/Q131368/
 	
 	=============================================================================
 	
+
+{% endraw %}

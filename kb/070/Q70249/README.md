@@ -6,6 +6,8 @@ permalink: /kb/070/Q70249/
 
 ## Q70249: Max Identifier Length May Cause Mixed C/MASM Conflict
 
+{% raw %}
+
 	Article: Q70249
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -64,3 +66,5 @@ permalink: /kb/070/Q70249/
 	
 	=============================================================================
 	
+
+{% endraw %}

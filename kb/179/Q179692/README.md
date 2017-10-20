@@ -6,6 +6,8 @@ permalink: /kb/179/Q179692/
 
 ## Q179692: INFO: COM Method Call in WM_PAINT Handler Returns 0x80010005
 
+{% raw %}
+
 	Article: Q179692
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,4.2b,5.0,6.0
@@ -134,3 +136,5 @@ permalink: /kb/179/Q179692/
 	
 	=============================================================================
 	
+
+{% endraw %}

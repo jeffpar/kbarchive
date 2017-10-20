@@ -6,6 +6,8 @@ permalink: /kb/162/Q162846/
 
 ## Q162846: Preparing to Create or Modify a Fault Tolerant Set
 
+{% raw %}
+
 	Article: Q162846
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -188,3 +190,5 @@ permalink: /kb/162/Q162846/
 	
 	=============================================================================
 	
+
+{% endraw %}

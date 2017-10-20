@@ -6,6 +6,8 @@ permalink: /kb/192/Q192944/
 
 ## Q192944: PRB: &quot;Class Not Registered&quot; Error on ImgEdit Property Page Show
 
+{% raw %}
+
 	Article: Q192944
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -98,3 +100,5 @@ permalink: /kb/192/Q192944/
 	
 	=============================================================================
 	
+
+{% endraw %}

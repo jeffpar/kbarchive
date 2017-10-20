@@ -6,6 +6,8 @@ permalink: /kb/190/Q190153/
 
 ## Q190153: INFO: Remove Information About Unused ActiveX Controls
 
+{% raw %}
+
 	Article: Q190153
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -150,3 +152,5 @@ permalink: /kb/190/Q190153/
 	
 	=============================================================================
 	
+
+{% endraw %}

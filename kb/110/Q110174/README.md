@@ -6,6 +6,8 @@ permalink: /kb/110/Q110174/
 
 ## Q110174: WD97: Preserving Text When Re-protecting a Form Without Macros
 
+{% raw %}
+
 	Article: Q110174
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/110/Q110174/
 	
 	=============================================================================
 	
+
+{% endraw %}

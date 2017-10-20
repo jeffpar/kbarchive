@@ -6,6 +6,8 @@ permalink: /kb/066/Q66591/
 
 ## Q66591: ALT+240 Hangs QBX.EXE or QB.EXE with Phoenix BIOS
 
+{% raw %}
+
 	Article: Q66591
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -33,3 +35,5 @@ permalink: /kb/066/Q66591/
 	Base for the following words:
 	
 	   extended and ASCII and ALT and 240 and 255
+
+{% endraw %}

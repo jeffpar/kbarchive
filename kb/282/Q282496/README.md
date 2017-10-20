@@ -6,6 +6,8 @@ permalink: /kb/282/Q282496/
 
 ## Q282496: XADM: Best Practices When Resetting an Exchange Mailbox Database
 
+{% raw %}
+
 	Article: Q282496
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -583,3 +585,5 @@ permalink: /kb/282/Q282496/
 	
 	=============================================================================
 	
+
+{% endraw %}

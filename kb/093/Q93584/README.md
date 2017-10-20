@@ -6,6 +6,8 @@ permalink: /kb/093/Q93584/
 
 ## Q93584: EMM386.EXE: Default DMA Buffer Size
 
+{% raw %}
+
 	Article: Q93584
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -42,3 +44,5 @@ permalink: /kb/093/Q93584/
 	
 	=============================================================================
 	
+
+{% endraw %}

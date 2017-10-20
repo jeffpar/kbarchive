@@ -6,6 +6,8 @@ permalink: /kb/142/Q142818/
 
 ## Q142818: Visual Basic Companion Products and Services Available
 
+{% raw %}
+
 	Article: Q142818
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -49,3 +51,5 @@ permalink: /kb/142/Q142818/
 	
 	=============================================================================
 	
+
+{% endraw %}

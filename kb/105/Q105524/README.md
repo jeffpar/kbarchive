@@ -6,6 +6,8 @@ permalink: /kb/105/Q105524/
 
 ## Q105524: MCI: Problems with International Carriers XPC Access to MCI
 
+{% raw %}
+
 	Article: Q105524
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1b
@@ -47,3 +49,5 @@ permalink: /kb/105/Q105524/
 	
 	=============================================================================
 	
+
+{% endraw %}

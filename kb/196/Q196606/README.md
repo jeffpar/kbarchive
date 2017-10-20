@@ -6,6 +6,8 @@ permalink: /kb/196/Q196606/
 
 ## Q196606: APPC DLL Has A Hardcoded Limit of 4 KB GDS Data Size
 
+{% raw %}
+
 	Article: Q196606
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -75,3 +77,5 @@ permalink: /kb/196/Q196606/
 	
 	=============================================================================
 	
+
+{% endraw %}

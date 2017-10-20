@@ -6,6 +6,8 @@ permalink: /kb/180/Q180307/
 
 ## Q180307: FP: &quot;FrontPage 98 Setup Has Updated a Shared System File&quot;
 
+{% raw %}
+
 	Article: Q180307
 	Product(s): Word Front Page
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/180/Q180307/
 	
 	=============================================================================
 	
+
+{% endraw %}

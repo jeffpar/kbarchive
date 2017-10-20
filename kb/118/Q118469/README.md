@@ -6,6 +6,8 @@ permalink: /kb/118/Q118469/
 
 ## Q118469: GSNW Gateway Requires NTGATEWAY group
 
+{% raw %}
+
 	Article: Q118469
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.1,4.0
@@ -57,3 +59,5 @@ permalink: /kb/118/Q118469/
 	
 	=============================================================================
 	
+
+{% endraw %}

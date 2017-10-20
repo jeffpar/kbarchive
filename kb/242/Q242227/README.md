@@ -6,6 +6,8 @@ permalink: /kb/242/Q242227/
 
 ## Q242227: Age Of Empires II: Command Line Parameters
 
+{% raw %}
+
 	Article: Q242227
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -135,3 +137,5 @@ permalink: /kb/242/Q242227/
 	
 	=============================================================================
 	
+
+{% endraw %}

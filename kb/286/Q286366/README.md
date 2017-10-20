@@ -6,6 +6,8 @@ permalink: /kb/286/Q286366/
 
 ## Q286366: SMS: RC White Screen When Trying to Control Client w/ Intel 815
 
+{% raw %}
+
 	Article: Q286366
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2,1.2 SP1,1.2 SP2,1.2 SP3,1.2 SP4
@@ -58,3 +60,5 @@ permalink: /kb/286/Q286366/
 	
 	=============================================================================
 	
+
+{% endraw %}

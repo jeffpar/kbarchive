@@ -6,6 +6,8 @@ permalink: /kb/071/Q71736/
 
 ## Q71736: PARTY.BMP and RIBBONS.BMP Omitted from Windows Version 3.00a
 
+{% raw %}
+
 	Article: Q71736
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0a
@@ -53,3 +55,5 @@ permalink: /kb/071/Q71736/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185706/
 
 ## Q185706: FTP-AFTP Gateway Does Not Work with IIS 4.0
 
+{% raw %}
+
 	Article: Q185706
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -86,3 +88,5 @@ permalink: /kb/185/Q185706/
 	
 	=============================================================================
 	
+
+{% endraw %}

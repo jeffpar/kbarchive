@@ -6,6 +6,8 @@ permalink: /kb/156/Q156079/
 
 ## Q156079: STL Sample for the Generate Function
 
+{% raw %}
+
 	Article: Q156079
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2
@@ -136,3 +138,5 @@ permalink: /kb/156/Q156079/
 	
 	=============================================================================
 	
+
+{% endraw %}

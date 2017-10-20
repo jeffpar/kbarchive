@@ -6,6 +6,8 @@ permalink: /kb/189/Q189115/
 
 ## Q189115: Macfile Menu May Not Appear in Winfile with SFM Installed
 
+{% raw %}
+
 	Article: Q189115
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.51,4.0
@@ -101,3 +103,5 @@ permalink: /kb/189/Q189115/
 	
 	=============================================================================
 	
+
+{% endraw %}

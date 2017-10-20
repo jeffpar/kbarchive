@@ -6,6 +6,8 @@ permalink: /kb/273/Q273628/
 
 ## Q273628: Midtown Madness 2: Cannot Play Multiplayer Games on the Internet
 
+{% raw %}
+
 	Article: Q273628
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -119,3 +121,5 @@ permalink: /kb/273/Q273628/
 	
 	=============================================================================
 	
+
+{% endraw %}

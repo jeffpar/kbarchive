@@ -6,6 +6,8 @@ permalink: /kb/130/Q130306/
 
 ## Q130306: Save/SET/Restore of SET Environment Settings
 
+{% raw %}
+
 	Article: Q130306
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -234,3 +236,5 @@ permalink: /kb/130/Q130306/
 	
 	=============================================================================
 	
+
+{% endraw %}

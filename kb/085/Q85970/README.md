@@ -6,6 +6,8 @@ permalink: /kb/085/Q85970/
 
 ## Q85970: PC Win: Missing Information in Paste Special Dialog Box
 
+{% raw %}
+
 	Article: Q85970
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -81,3 +83,5 @@ permalink: /kb/085/Q85970/
 	
 	=============================================================================
 	
+
+{% endraw %}

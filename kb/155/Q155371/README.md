@@ -6,6 +6,8 @@ permalink: /kb/155/Q155371/
 
 ## Q155371: Windows NT 4.0 Does Not Support HP ScanJet Interface Card
 
+{% raw %}
+
 	Article: Q155371
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/155/Q155371/
 	
 	=============================================================================
 	
+
+{% endraw %}

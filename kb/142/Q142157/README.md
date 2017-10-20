@@ -6,6 +6,8 @@ permalink: /kb/142/Q142157/
 
 ## Q142157: DOC: Merge Branches Option Doesn't Work at Project Level
 
+{% raw %}
+
 	Article: Q142157
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/142/Q142157/
 	
 	=============================================================================
 	
+
+{% endraw %}

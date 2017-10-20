@@ -6,6 +6,8 @@ permalink: /kb/176/Q176082/
 
 ## Q176082: RRAS Server Updates Link State Database but Not Route Table
 
+{% raw %}
+
 	Article: Q176082
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/176/Q176082/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161868/
 
 ## Q161868: WD97: Captions in Text Boxes Not Updated Correctly
 
+{% raw %}
+
 	Article: Q161868
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -169,3 +171,5 @@ permalink: /kb/161/Q161868/
 	
 	=============================================================================
 	
+
+{% endraw %}

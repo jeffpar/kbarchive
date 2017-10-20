@@ -6,6 +6,8 @@ permalink: /kb/157/Q157440/
 
 ## Q157440: Windows 95 Client Receives MSN Pop-up Screen When Starting
 
+{% raw %}
+
 	Article: Q157440
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
@@ -83,3 +85,5 @@ permalink: /kb/157/Q157440/
 	
 	=============================================================================
 	
+
+{% endraw %}

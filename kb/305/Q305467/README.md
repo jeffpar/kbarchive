@@ -6,6 +6,8 @@ permalink: /kb/305/Q305467/
 
 ## Q305467: Microsoft Windows Script Host 2.0 Developer's Guide Comments and
 
+{% raw %}
+
 	Article: Q305467
 	Product(s): Microsoft Press
 	Version(s): 
@@ -118,3 +120,5 @@ permalink: /kb/305/Q305467/
 	
 	=============================================================================
 	
+
+{% endraw %}

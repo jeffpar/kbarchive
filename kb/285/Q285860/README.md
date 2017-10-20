@@ -6,6 +6,8 @@ permalink: /kb/285/Q285860/
 
 ## Q285860: XFOR: Domains Removed from Message Filtering List Are Turfed
 
+{% raw %}
+
 	Article: Q285860
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP4
@@ -61,3 +63,5 @@ permalink: /kb/285/Q285860/
 	
 	=============================================================================
 	
+
+{% endraw %}

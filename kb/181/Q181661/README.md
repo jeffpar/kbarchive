@@ -6,6 +6,8 @@ permalink: /kb/181/Q181661/
 
 ## Q181661: Files Included with the USB Supplement in OSR2.1 and OSR2.5
 
+{% raw %}
+
 	Article: Q181661
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.1,2.5
@@ -101,3 +103,5 @@ permalink: /kb/181/Q181661/
 	
 	=============================================================================
 	
+
+{% endraw %}

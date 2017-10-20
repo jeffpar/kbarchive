@@ -6,6 +6,8 @@ permalink: /kb/089/Q89484/
 
 ## Q89484: GP Fault in WFWG Mail May Suppress Password
 
+{% raw %}
+
 	Article: Q89484
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -80,3 +82,5 @@ permalink: /kb/089/Q89484/
 	
 	=============================================================================
 	
+
+{% endraw %}

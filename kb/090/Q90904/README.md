@@ -6,6 +6,8 @@ permalink: /kb/090/Q90904/
 
 ## Q90904: Access Key in Label Before Control with No TabStop Problem
 
+{% raw %}
+
 	Article: Q90904
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): MS-DOS:1.0
@@ -78,3 +80,5 @@ permalink: /kb/090/Q90904/
 	
 	=============================================================================
 	
+
+{% endraw %}

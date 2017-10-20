@@ -6,6 +6,8 @@ permalink: /kb/057/Q57971/
 
 ## Q57971: Unresolved Externals from GRAPHICS.LIB
 
+{% raw %}
+
 	Article: Q57971
 	Product(s): See article
 	Version(s): 5.10
@@ -64,3 +66,5 @@ permalink: /kb/057/Q57971/
 	
 	It is recommended that you use the version of GRAPHICS.LIB that comes
 	with the compiler to avoid any problems.
+
+{% endraw %}

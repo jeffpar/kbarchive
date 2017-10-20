@@ -6,6 +6,8 @@ permalink: /kb/167/Q167338/
 
 ## Q167338: BUG: Format(&quot;%D&quot;) Fails for COleDateTime and COleDateTimeSpan
 
+{% raw %}
+
 	Article: Q167338
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -81,3 +83,5 @@ permalink: /kb/167/Q167338/
 	
 	=============================================================================
 	
+
+{% endraw %}

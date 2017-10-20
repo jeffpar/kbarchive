@@ -6,6 +6,8 @@ permalink: /kb/135/Q135902/
 
 ## Q135902: PC Ext: Err Msg: Sending File xxxxxxxx.P1 Failed
 
+{% raw %}
+
 	Article: Q135902
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -69,3 +71,5 @@ permalink: /kb/135/Q135902/
 	
 	=============================================================================
 	
+
+{% endraw %}

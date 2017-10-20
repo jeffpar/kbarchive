@@ -6,6 +6,8 @@ permalink: /kb/168/Q168606/
 
 ## Q168606: XFOR: MS Mail Migration Stops with Event ID 7000 and 7007
 
+{% raw %}
+
 	Article: Q168606
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -79,3 +81,5 @@ permalink: /kb/168/Q168606/
 	
 	=============================================================================
 	
+
+{% endraw %}

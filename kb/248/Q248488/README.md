@@ -6,6 +6,8 @@ permalink: /kb/248/Q248488/
 
 ## Q248488: XCON: Event ID 9318 Occurs Within Site Operating Over a WAN
 
+{% raw %}
+
 	Article: Q248488
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -90,3 +92,5 @@ permalink: /kb/248/Q248488/
 	
 	=============================================================================
 	
+
+{% endraw %}

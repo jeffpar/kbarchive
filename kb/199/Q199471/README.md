@@ -6,6 +6,8 @@ permalink: /kb/199/Q199471/
 
 ## Q199471: XCLN: ODK Silent Installation Prompts if IE 4.01 is Installed
 
+{% raw %}
+
 	Article: Q199471
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -48,3 +50,5 @@ permalink: /kb/199/Q199471/
 	
 	=============================================================================
 	
+
+{% endraw %}

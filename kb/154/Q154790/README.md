@@ -6,6 +6,8 @@ permalink: /kb/154/Q154790/
 
 ## Q154790: Weitek PCI Video Fails to Load on PowerPC Secondary PCI Bus
 
+{% raw %}
+
 	Article: Q154790
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -48,3 +50,5 @@ permalink: /kb/154/Q154790/
 	
 	=============================================================================
 	
+
+{% endraw %}

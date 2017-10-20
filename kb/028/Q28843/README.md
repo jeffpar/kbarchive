@@ -6,6 +6,8 @@ permalink: /kb/028/Q28843/
 
 ## Q28843: Why QuickBASIC Does Not Support COM3: and COM4: Serial Ports
 
+{% raw %}
+
 	Article: Q28843
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -47,3 +49,5 @@ permalink: /kb/028/Q28843/
 	For a list of other catalogs, search for the following words:
 	
 	   programmer and tool and catalog
+
+{% endraw %}

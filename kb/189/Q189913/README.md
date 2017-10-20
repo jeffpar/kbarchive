@@ -6,6 +6,8 @@ permalink: /kb/189/Q189913/
 
 ## Q189913: BUG: Inconsistent Firing of ListBox Click Event Using Keyboard
 
+{% raw %}
+
 	Article: Q189913
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -95,3 +97,5 @@ permalink: /kb/189/Q189913/
 	
 	=============================================================================
 	
+
+{% endraw %}

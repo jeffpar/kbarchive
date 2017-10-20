@@ -6,6 +6,8 @@ permalink: /kb/222/Q222842/
 
 ## Q222842: STOP 0x000000050 in Win32k.sys on Terminal Server
 
+{% raw %}
+
 	Article: Q222842
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/222/Q222842/
 	
 	=============================================================================
 	
+
+{% endraw %}

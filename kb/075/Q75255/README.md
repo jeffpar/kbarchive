@@ -6,6 +6,8 @@ permalink: /kb/075/Q75255/
 
 ## Q75255: INFO: DBCS Support in Windows Versions 3.0 And 3.1
 
+{% raw %}
+
 	Article: Q75255
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -65,3 +67,5 @@ permalink: /kb/075/Q75255/
 	
 	=============================================================================
 	
+
+{% endraw %}

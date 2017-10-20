@@ -6,6 +6,8 @@ permalink: /kb/186/Q186802/
 
 ## Q186802: FIX: Lock Error Occurs When Deleting a File from FTP Directory
 
+{% raw %}
+
 	Article: Q186802
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/186/Q186802/
 	
 	=============================================================================
 	
+
+{% endraw %}

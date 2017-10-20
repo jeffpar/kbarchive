@@ -6,6 +6,8 @@ permalink: /kb/139/Q139591/
 
 ## Q139591: Packages Not Detected By Inventory Agent
 
+{% raw %}
+
 	Article: Q139591
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -60,3 +62,5 @@ permalink: /kb/139/Q139591/
 	
 	=============================================================================
 	
+
+{% endraw %}

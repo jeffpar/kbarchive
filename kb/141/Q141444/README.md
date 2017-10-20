@@ -6,6 +6,8 @@ permalink: /kb/141/Q141444/
 
 ## Q141444: DOC: Incorrect Documentation for CToolBar::SetSizes()
 
+{% raw %}
+
 	Article: Q141444
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/141/Q141444/
 	
 	=============================================================================
 	
+
+{% endraw %}

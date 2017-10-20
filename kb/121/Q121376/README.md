@@ -6,6 +6,8 @@ permalink: /kb/121/Q121376/
 
 ## Q121376: PC Win: Inbox Missing on Login
 
+{% raw %}
+
 	Article: Q121376
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -47,3 +49,5 @@ permalink: /kb/121/Q121376/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/027/Q27347/
 
 ## Q27347: Explanation of Compiler &quot;Bytes Available&quot; and &quot;Bytes Free&quot;
 
+{% raw %}
+
 	Article: Q27347
 	Product(s): See article
 	Version(s): 4.00 4.00 4.50
@@ -71,3 +73,5 @@ permalink: /kb/027/Q27347/
 	listed by name in the .MAP file under a _Code Class, and its code
 	segment size will be shown in hexadecimal (base 16) notation in the
 	Length column.
+
+{% endraw %}

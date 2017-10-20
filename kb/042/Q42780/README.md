@@ -6,6 +6,8 @@ permalink: /kb/042/Q42780/
 
 ## Q42780: CodeView: Debugging Presentation Manager Printer Drivers
 
+{% raw %}
+
 	Article: Q42780
 	Product(s): See article
 	Version(s): 2.20 2.30
@@ -17,3 +19,5 @@ permalink: /kb/042/Q42780/
 	the kernel debugger. Currently, PM printer drivers fall under the same
 	category as lower-level device drivers. These device drivers cannot be
 	debugged using the current version of CodeView.
+
+{% endraw %}

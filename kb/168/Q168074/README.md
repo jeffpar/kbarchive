@@ -6,6 +6,8 @@ permalink: /kb/168/Q168074/
 
 ## Q168074: XADM: Err Msg When Creating New Custom Recipient
 
+{% raw %}
+
 	Article: Q168074
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -73,3 +75,5 @@ permalink: /kb/168/Q168074/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189159/
 
 ## Q189159: HOWTO: Set a Custom Range for Value Axis with MSChart Control
 
+{% raw %}
+
 	Article: Q189159
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/189/Q189159/
 	
 	=============================================================================
 	
+
+{% endraw %}

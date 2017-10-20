@@ -6,6 +6,8 @@ permalink: /kb/115/Q115086/
 
 ## Q115086: PRB: Misuse of ASSERT Causes Problems for MFC Apps
 
+{% raw %}
+
 	Article: Q115086
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -103,3 +105,5 @@ permalink: /kb/115/Q115086/
 	
 	=============================================================================
 	
+
+{% endraw %}

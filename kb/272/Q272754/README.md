@@ -6,6 +6,8 @@ permalink: /kb/272/Q272754/
 
 ## Q272754: Encarta Language Learning: How to Troubleshoot Microphone Relate
 
+{% raw %}
+
 	Article: Q272754
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -231,3 +233,5 @@ permalink: /kb/272/Q272754/
 	
 	=============================================================================
 	
+
+{% endraw %}

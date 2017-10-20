@@ -6,6 +6,8 @@ permalink: /kb/124/Q124205/
 
 ## Q124205: FIX: Browse Does Not Repaint Correctly
 
+{% raw %}
+
 	Article: Q124205
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6a,3.0
@@ -104,3 +106,5 @@ permalink: /kb/124/Q124205/
 	
 	=============================================================================
 	
+
+{% endraw %}

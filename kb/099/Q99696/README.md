@@ -6,6 +6,8 @@ permalink: /kb/099/Q99696/
 
 ## Q99696: PC Forms: Sending E-Forms Via SMTP Gateway
 
+{% raw %}
+
 	Article: Q99696
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -55,3 +57,5 @@ permalink: /kb/099/Q99696/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171067/
 
 ## Q171067: SMSINST: Error Creating Registry Keys with Empty Values
 
+{% raw %}
+
 	Article: Q171067
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -74,3 +76,5 @@ permalink: /kb/171/Q171067/
 	
 	=============================================================================
 	
+
+{% endraw %}

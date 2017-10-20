@@ -6,6 +6,8 @@ permalink: /kb/186/Q186131/
 
 ## Q186131: MS-DOS Application Using Novell IPX API May Leak Memory in NTVDM
 
+{% raw %}
+
 	Article: Q186131
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -69,3 +71,5 @@ permalink: /kb/186/Q186131/
 	
 	=============================================================================
 	
+
+{% endraw %}

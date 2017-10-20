@@ -6,6 +6,8 @@ permalink: /kb/191/Q191362/
 
 ## Q191362: FPNW Pass-Through Authentication from Trusted Domain May Fail
 
+{% raw %}
+
 	Article: Q191362
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -78,3 +80,5 @@ permalink: /kb/191/Q191362/
 	
 	=============================================================================
 	
+
+{% endraw %}

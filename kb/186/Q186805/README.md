@@ -6,6 +6,8 @@ permalink: /kb/186/Q186805/
 
 ## Q186805: Intermittent Stop 0xA in Srv.sys on Shutdown
 
+{% raw %}
+
 	Article: Q186805
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/186/Q186805/
 	
 	=============================================================================
 	
+
+{% endraw %}

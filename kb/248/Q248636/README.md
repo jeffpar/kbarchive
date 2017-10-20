@@ -6,6 +6,8 @@ permalink: /kb/248/Q248636/
 
 ## Q248636: Error When Executing a Query from ODBC Client in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q248636
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/248/Q248636/
 	
 	=============================================================================
 	
+
+{% endraw %}

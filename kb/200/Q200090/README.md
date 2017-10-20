@@ -6,6 +6,8 @@ permalink: /kb/200/Q200090/
 
 ## Q200090: XFOR: Wrong cc:Mail Connector Screen in Exchange 5.0 What's New
 
+{% raw %}
+
 	Article: Q200090
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -48,3 +50,5 @@ permalink: /kb/200/Q200090/
 	
 	=============================================================================
 	
+
+{% endraw %}

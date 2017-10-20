@@ -6,6 +6,8 @@ permalink: /kb/124/Q124875/
 
 ## Q124875: SMS: Spell Checker for Shared Version of Word Does Not Work
 
+{% raw %}
+
 	Article: Q124875
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.1
@@ -56,3 +58,5 @@ permalink: /kb/124/Q124875/
 	
 	=============================================================================
 	
+
+{% endraw %}

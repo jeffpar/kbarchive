@@ -6,6 +6,8 @@ permalink: /kb/094/Q94131/
 
 ## Q94131: MemMaker Values for Memory Change Don't Match
 
+{% raw %}
+
 	Article: Q94131
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -52,3 +54,5 @@ permalink: /kb/094/Q94131/
 	
 	=============================================================================
 	
+
+{% endraw %}

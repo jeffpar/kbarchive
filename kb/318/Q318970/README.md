@@ -6,6 +6,8 @@ permalink: /kb/318/Q318970/
 
 ## Q318970: FIX:Bound optionbutton Not Checked in MS Active Accessibility
 
+{% raw %}
+
 	Article: Q318970
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -128,3 +130,5 @@ permalink: /kb/318/Q318970/
 	
 	=============================================================================
 	
+
+{% endraw %}

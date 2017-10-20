@@ -6,6 +6,8 @@ permalink: /kb/141/Q141337/
 
 ## Q141337: XCLN: Error Message: The Item Could Not Be Displayed
 
+{% raw %}
+
 	Article: Q141337
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :
@@ -58,3 +60,5 @@ permalink: /kb/141/Q141337/
 	
 	=============================================================================
 	
+
+{% endraw %}

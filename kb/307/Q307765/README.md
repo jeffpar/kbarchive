@@ -6,6 +6,8 @@ permalink: /kb/307/Q307765/
 
 ## Q307765: Troubleshooting 'RPC Server Too Busy to Complete Operation' Err.
 
+{% raw %}
+
 	Article: Q307765
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -161,3 +163,5 @@ permalink: /kb/307/Q307765/
 	
 	=============================================================================
 	
+
+{% endraw %}

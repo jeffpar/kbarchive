@@ -6,6 +6,8 @@ permalink: /kb/110/Q110608/
 
 ## Q110608: PPT: Resetting Customized Toolbars in PowerPoint
 
+{% raw %}
+
 	Article: Q110608
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,4.0a,4.0c,7.0
@@ -97,3 +99,5 @@ permalink: /kb/110/Q110608/
 	
 	=============================================================================
 	
+
+{% endraw %}

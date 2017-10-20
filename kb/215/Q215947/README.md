@@ -6,6 +6,8 @@ permalink: /kb/215/Q215947/
 
 ## Q215947: XFOR: SNADS: Bad In-body Addresses Cause NDRs to Stop Lsdiamex
 
+{% raw %}
+
 	Article: Q215947
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -91,3 +93,5 @@ permalink: /kb/215/Q215947/
 	
 	=============================================================================
 	
+
+{% endraw %}

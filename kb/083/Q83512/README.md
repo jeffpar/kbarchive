@@ -6,6 +6,8 @@ permalink: /kb/083/Q83512/
 
 ## Q83512: Windows 3.1 Does Not Update Third-Party Communications Driver
 
+{% raw %}
+
 	Article: Q83512
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/083/Q83512/
 	
 	=============================================================================
 	
+
+{% endraw %}

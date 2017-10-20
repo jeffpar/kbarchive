@@ -6,6 +6,8 @@ permalink: /kb/194/Q194504/
 
 ## Q194504: XCON: NDR Returned for Deleted Mailbox when Message Sent to DL
 
+{% raw %}
+
 	Article: Q194504
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -147,3 +149,5 @@ permalink: /kb/194/Q194504/
 	
 	=============================================================================
 	
+
+{% endraw %}

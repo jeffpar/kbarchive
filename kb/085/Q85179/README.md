@@ -6,6 +6,8 @@ permalink: /kb/085/Q85179/
 
 ## Q85179: Use Adlib MIDI Map with Sound Blaster Internal Synthesizer
 
+{% raw %}
+
 	Article: Q85179
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -89,3 +91,5 @@ permalink: /kb/085/Q85179/
 	
 	=============================================================================
 	
+
+{% endraw %}

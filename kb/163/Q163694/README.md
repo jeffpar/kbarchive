@@ -6,6 +6,8 @@ permalink: /kb/163/Q163694/
 
 ## Q163694: PPT: Sample Code to Apply Small Caps Formatting to Selection
 
+{% raw %}
+
 	Article: Q163694
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -143,3 +145,5 @@ permalink: /kb/163/Q163694/
 	
 	=============================================================================
 	
+
+{% endraw %}

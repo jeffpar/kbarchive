@@ -6,6 +6,8 @@ permalink: /kb/118/Q118434/
 
 ## Q118434: BUG: GETFILEINFOQQ with UNPACKTIMEQQ Fails in MS-DOS
 
+{% raw %}
+
 	Article: Q118434
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0a
@@ -75,3 +77,5 @@ permalink: /kb/118/Q118434/
 	
 	=============================================================================
 	
+
+{% endraw %}

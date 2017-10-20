@@ -6,6 +6,8 @@ permalink: /kb/076/Q76684/
 
 ## Q76684: SAMPLE: Wsscanf.exe Replaces sscanf in Windows DLLs
 
+{% raw %}
+
 	Article: Q76684
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -88,3 +90,5 @@ permalink: /kb/076/Q76684/
 	
 	=============================================================================
 	
+
+{% endraw %}

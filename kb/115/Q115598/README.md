@@ -6,6 +6,8 @@ permalink: /kb/115/Q115598/
 
 ## Q115598: Sharing Violation Using NetWare 3.x FILER.EXE
 
+{% raw %}
+
 	Article: Q115598
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/115/Q115598/
 	
 	=============================================================================
 	
+
+{% endraw %}

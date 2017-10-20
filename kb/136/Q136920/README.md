@@ -6,6 +6,8 @@ permalink: /kb/136/Q136920/
 
 ## Q136920: HOWTO: Use Universal Naming Conventions (UNC) w/ Visual FoxPro
 
+{% raw %}
+
 	Article: Q136920
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/136/Q136920/
 	
 	=============================================================================
 	
+
+{% endraw %}

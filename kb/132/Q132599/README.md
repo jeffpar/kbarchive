@@ -6,6 +6,8 @@ permalink: /kb/132/Q132599/
 
 ## Q132599: Shortcut to Network Drive Does Not Work
 
+{% raw %}
+
 	Article: Q132599
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/132/Q132599/
 	
 	=============================================================================
 	
+
+{% endraw %}

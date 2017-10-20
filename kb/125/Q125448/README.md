@@ -6,6 +6,8 @@ permalink: /kb/125/Q125448/
 
 ## Q125448: Application Setup Fails If No AUTOEXEC.BAT or CONFIG.SYS
 
+{% raw %}
+
 	Article: Q125448
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/125/Q125448/
 	
 	=============================================================================
 	
+
+{% endraw %}

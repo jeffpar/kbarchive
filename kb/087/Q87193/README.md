@@ -6,6 +6,8 @@ permalink: /kb/087/Q87193/
 
 ## Q87193: PROFS: How Is the LAN Connected to the VM Systems?
 
+{% raw %}
+
 	Article: Q87193
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -57,3 +59,5 @@ permalink: /kb/087/Q87193/
 	
 	=============================================================================
 	
+
+{% endraw %}

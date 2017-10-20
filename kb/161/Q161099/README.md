@@ -6,6 +6,8 @@ permalink: /kb/161/Q161099/
 
 ## Q161099: Secured Web Pages Not Loaded with Netscape Navigator 1.x
 
+{% raw %}
+
 	Article: Q161099
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -69,3 +71,5 @@ permalink: /kb/161/Q161099/
 	
 	=============================================================================
 	
+
+{% endraw %}

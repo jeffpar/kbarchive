@@ -6,6 +6,8 @@ permalink: /kb/194/Q194068/
 
 ## Q194068: Err Msg: Your Server Has Unexpectedly Terminated the...
 
+{% raw %}
+
 	Article: Q194068
 	Product(s): The Microsoft Network
 	Version(s): 5.4
@@ -121,3 +123,5 @@ permalink: /kb/194/Q194068/
 	
 	=============================================================================
 	
+
+{% endraw %}

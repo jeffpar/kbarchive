@@ -6,6 +6,8 @@ permalink: /kb/245/Q245134/
 
 ## Q245134: Windows 95 Updates May Not Install in OSR 2.1 or 2.5
 
+{% raw %}
+
 	Article: Q245134
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.1,2.5
@@ -99,3 +101,5 @@ permalink: /kb/245/Q245134/
 	
 	=============================================================================
 	
+
+{% endraw %}

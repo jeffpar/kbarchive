@@ -6,6 +6,8 @@ permalink: /kb/155/Q155721/
 
 ## Q155721: FIX: Access Violation in RFX_Date If CTime Not Initialized
 
+{% raw %}
+
 	Article: Q155721
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -118,3 +120,5 @@ permalink: /kb/155/Q155721/
 	
 	=============================================================================
 	
+
+{% endraw %}

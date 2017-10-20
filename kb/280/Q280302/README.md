@@ -6,6 +6,8 @@ permalink: /kb/280/Q280302/
 
 ## Q280302: MultiMedia: Troubleshooting IPF and Exception Errors (Part 2)
 
+{% raw %}
+
 	Article: Q280302
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.5
@@ -682,3 +684,5 @@ permalink: /kb/280/Q280302/
 	
 	=============================================================================
 	
+
+{% endraw %}

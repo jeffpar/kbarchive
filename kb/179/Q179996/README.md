@@ -6,6 +6,8 @@ permalink: /kb/179/Q179996/
 
 ## Q179996: XFOR: LDE Doesn't Send Delete Transactions for Hidden Recipients
 
+{% raw %}
+
 	Article: Q179996
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:3.2, 5.5
@@ -72,3 +74,5 @@ permalink: /kb/179/Q179996/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129486/
 
 ## Q129486: IBM Thinkpad Supports Only 640x480 16-Color Video Resolution
 
+{% raw %}
+
 	Article: Q129486
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -42,3 +44,5 @@ permalink: /kb/129/Q129486/
 	
 	=============================================================================
 	
+
+{% endraw %}

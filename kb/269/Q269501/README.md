@@ -6,6 +6,8 @@ permalink: /kb/269/Q269501/
 
 ## Q269501: UNIX Clients Are Unable to Print to a Shared Windows 95 or Windo
 
+{% raw %}
+
 	Article: Q269501
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/269/Q269501/
 	
 	=============================================================================
 	
+
+{% endraw %}

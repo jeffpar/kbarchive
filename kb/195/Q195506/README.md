@@ -6,6 +6,8 @@ permalink: /kb/195/Q195506/
 
 ## Q195506: XADM: How to Recover When the System Drive Fails
 
+{% raw %}
+
 	Article: Q195506
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:4.0,5.0,5.5
@@ -50,3 +52,5 @@ permalink: /kb/195/Q195506/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177059/
 
 ## Q177059: WD97: Err Msg: &quot;Invalid Page Fault&quot; When Inserting a Symbol
 
+{% raw %}
+
 	Article: Q177059
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -128,3 +130,5 @@ permalink: /kb/177/Q177059/
 	
 	=============================================================================
 	
+
+{% endraw %}

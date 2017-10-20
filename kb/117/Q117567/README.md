@@ -6,6 +6,8 @@ permalink: /kb/117/Q117567/
 
 ## Q117567: How 16-Bit and 32-Bit Programs Multitask in Windows 95
 
+{% raw %}
+
 	Article: Q117567
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -115,3 +117,5 @@ permalink: /kb/117/Q117567/
 	
 	=============================================================================
 	
+
+{% endraw %}

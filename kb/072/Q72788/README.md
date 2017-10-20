@@ -6,6 +6,8 @@ permalink: /kb/072/Q72788/
 
 ## Q72788: Multimedia Personal Computing: The Microsoft View
 
+{% raw %}
+
 	Article: Q72788
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a
@@ -57,3 +59,5 @@ permalink: /kb/072/Q72788/
 	
 	=============================================================================
 	
+
+{% endraw %}

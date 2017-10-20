@@ -6,6 +6,8 @@ permalink: /kb/175/Q175664/
 
 ## Q175664: Error Creating Dependency for Quorum Resource
 
+{% raw %}
+
 	Article: Q175664
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/175/Q175664/
 	
 	=============================================================================
 	
+
+{% endraw %}

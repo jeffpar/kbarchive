@@ -6,6 +6,8 @@ permalink: /kb/021/Q21581/
 
 ## Q21581: Shrinking Heap Space
 
+{% raw %}
+
 	Article: Q21581
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -51,3 +53,5 @@ permalink: /kb/021/Q21581/
 	
 	=============================================================================
 	
+
+{% endraw %}

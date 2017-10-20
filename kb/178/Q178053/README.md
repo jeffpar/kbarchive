@@ -6,6 +6,8 @@ permalink: /kb/178/Q178053/
 
 ## Q178053: XADM: Store Thread's Processor Use Peaks Indefinitely
 
+{% raw %}
+
 	Article: Q178053
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -80,3 +82,5 @@ permalink: /kb/178/Q178053/
 	
 	=============================================================================
 	
+
+{% endraw %}

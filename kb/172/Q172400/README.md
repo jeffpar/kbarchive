@@ -6,6 +6,8 @@ permalink: /kb/172/Q172400/
 
 ## Q172400: PRB: Class Wizard Overridables Are Not Added to Converted Proj
 
+{% raw %}
+
 	Article: Q172400
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.52; winnt:5.0,6.0
@@ -65,3 +67,5 @@ permalink: /kb/172/Q172400/
 	
 	=============================================================================
 	
+
+{% endraw %}

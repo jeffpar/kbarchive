@@ -6,6 +6,8 @@ permalink: /kb/190/Q190023/
 
 ## Q190023: How to Edit the Autoexec.bat File in Microsoft Windows 98
 
+{% raw %}
+
 	Article: Q190023
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/190/Q190023/
 	
 	=============================================================================
 	
+
+{% endraw %}

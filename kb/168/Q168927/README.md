@@ -6,6 +6,8 @@ permalink: /kb/168/Q168927/
 
 ## Q168927: FIX: Application_NewWorkspace Event Is Never Fired
 
+{% raw %}
+
 	Article: Q168927
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -52,3 +54,5 @@ permalink: /kb/168/Q168927/
 	
 	=============================================================================
 	
+
+{% endraw %}

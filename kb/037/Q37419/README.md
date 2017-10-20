@@ -6,6 +6,8 @@ permalink: /kb/037/Q37419/
 
 ## Q37419: Program to Translate QuickBASIC 4.00 to C Language
 
+{% raw %}
+
 	Article: Q37419
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -47,3 +49,5 @@ permalink: /kb/037/Q37419/
 	1.00, 1.02, 2.00, 2.01, 3.00, 4.00, 4.00b, or 4.50, Microsoft BASIC
 	Compiler Version 6.00 or 6.00b, or Microsoft BASIC PDS Version 7.00
 	for IBM Personal Computers and strict compatibles.
+
+{% endraw %}

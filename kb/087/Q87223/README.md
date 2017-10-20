@@ -6,6 +6,8 @@ permalink: /kb/087/Q87223/
 
 ## Q87223: FFAPI: Understanding Microsoft Mail File Formats
 
+{% raw %}
+
 	Article: Q87223
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -99,3 +101,5 @@ permalink: /kb/087/Q87223/
 	
 	=============================================================================
 	
+
+{% endraw %}

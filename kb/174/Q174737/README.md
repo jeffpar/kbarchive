@@ -6,6 +6,8 @@ permalink: /kb/174/Q174737/
 
 ## Q174737: How to Start an Internet-Based Program Using MSN
 
+{% raw %}
+
 	Article: Q174737
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -67,3 +69,5 @@ permalink: /kb/174/Q174737/
 	
 	=============================================================================
 	
+
+{% endraw %}

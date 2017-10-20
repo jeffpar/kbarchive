@@ -6,6 +6,8 @@ permalink: /kb/111/Q111473/
 
 ## Q111473: BUG: ORG in STRUCT Affects Current Segment Size with -Sf
 
+{% raw %}
+
 	Article: Q111473
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -110,3 +112,5 @@ permalink: /kb/111/Q111473/
 	
 	=============================================================================
 	
+
+{% endraw %}

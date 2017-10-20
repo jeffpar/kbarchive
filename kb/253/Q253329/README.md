@@ -6,6 +6,8 @@ permalink: /kb/253/Q253329/
 
 ## Q253329: Age of Empires II Troubleshooter Available
 
+{% raw %}
+
 	Article: Q253329
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -46,3 +48,5 @@ permalink: /kb/253/Q253329/
 	
 	=============================================================================
 	
+
+{% endraw %}

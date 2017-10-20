@@ -6,6 +6,8 @@ permalink: /kb/122/Q122470/
 
 ## Q122470: Problems with Mouse Snap-To Feature in Multimedia Titles
 
+{% raw %}
+
 	Article: Q122470
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0; :1992 editions,1994 edition,1994 editions,1995 editions
@@ -63,3 +65,5 @@ permalink: /kb/122/Q122470/
 	
 	=============================================================================
 	
+
+{% endraw %}

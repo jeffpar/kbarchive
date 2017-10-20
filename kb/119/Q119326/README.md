@@ -6,6 +6,8 @@ permalink: /kb/119/Q119326/
 
 ## Q119326: No File Information in Sound Control Panel
 
+{% raw %}
+
 	Article: Q119326
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0, Classic Hollywood Movies,1.0a,2.0,2.0a; MACINTOSH:1.0; WINDOWS:3.1x
@@ -57,3 +59,5 @@ permalink: /kb/119/Q119326/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237737/
 
 ## Q237737: WD97: Bullets Become Squares When Font Permanently Converted
 
+{% raw %}
+
 	Article: Q237737
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/237/Q237737/
 	
 	=============================================================================
 	
+
+{% endraw %}

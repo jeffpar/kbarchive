@@ -6,6 +6,8 @@ permalink: /kb/216/Q216989/
 
 ## Q216989: XFOR: Chat Service May Truncate Complete Chat Room List
 
+{% raw %}
+
 	Article: Q216989
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -71,3 +73,5 @@ permalink: /kb/216/Q216989/
 	
 	=============================================================================
 	
+
+{% endraw %}

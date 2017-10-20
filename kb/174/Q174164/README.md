@@ -6,6 +6,8 @@ permalink: /kb/174/Q174164/
 
 ## Q174164: MTG: PC DIRSYNC
 
+{% raw %}
+
 	Article: Q174164
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2a,3.5
@@ -55,3 +57,5 @@ permalink: /kb/174/Q174164/
 	
 	=============================================================================
 	
+
+{% endraw %}

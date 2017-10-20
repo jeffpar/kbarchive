@@ -6,6 +6,8 @@ permalink: /kb/221/Q221727/
 
 ## Q221727: FIX: FOXUSER Restores Window to Incorrect MDI State
 
+{% raw %}
+
 	Article: Q221727
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -107,3 +109,5 @@ permalink: /kb/221/Q221727/
 	
 	=============================================================================
 	
+
+{% endraw %}

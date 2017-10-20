@@ -6,6 +6,8 @@ permalink: /kb/198/Q198746/
 
 ## Q198746: SMS: Courier Sender Must Run Local to Site Server
 
+{% raw %}
+
 	Article: Q198746
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -57,3 +59,5 @@ permalink: /kb/198/Q198746/
 	
 	=============================================================================
 	
+
+{% endraw %}

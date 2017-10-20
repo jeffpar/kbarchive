@@ -6,6 +6,8 @@ permalink: /kb/235/Q235835/
 
 ## Q235835: SMS: Users With Restrict Collect View Rights May See Resources
 
+{% raw %}
+
 	Article: Q235835
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -64,3 +66,5 @@ permalink: /kb/235/Q235835/
 	
 	=============================================================================
 	
+
+{% endraw %}

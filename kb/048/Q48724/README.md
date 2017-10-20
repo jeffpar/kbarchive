@@ -6,6 +6,8 @@ permalink: /kb/048/Q48724/
 
 ## Q48724: Incorrect Evaluation When Type Casting in while and for Loops
 
+{% raw %}
+
 	Article: Q48724
 	Product(s): See article
 	Version(s): 1.01 2.00 2.01
@@ -70,3 +72,5 @@ permalink: /kb/048/Q48724/
 	            continue;
 	   printf("var = %12f, expected 7.000000\n", var);
 	}
+
+{% endraw %}

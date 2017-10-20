@@ -6,6 +6,8 @@ permalink: /kb/125/Q125471/
 
 ## Q125471: PRB: BINDMSF Error: Cannot Create Binder file &#92;2
 
+{% raw %}
+
 	Article: Q125471
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -193,3 +195,5 @@ permalink: /kb/125/Q125471/
 	
 	=============================================================================
 	
+
+{% endraw %}

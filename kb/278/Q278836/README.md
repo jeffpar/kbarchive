@@ -6,6 +6,8 @@ permalink: /kb/278/Q278836/
 
 ## Q278836: ADSI GetObject Queries May Fail from ASP but Work from VBScript
 
+{% raw %}
+
 	Article: Q278836
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -97,3 +99,5 @@ permalink: /kb/278/Q278836/
 	
 	=============================================================================
 	
+
+{% endraw %}

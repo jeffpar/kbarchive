@@ -6,6 +6,8 @@ permalink: /kb/096/Q96955/
 
 ## Q96955: RENAME Drops Character If Wildcard Is Used
 
+{% raw %}
+
 	Article: Q96955
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -61,3 +63,5 @@ permalink: /kb/096/Q96955/
 	
 	=============================================================================
 	
+
+{% endraw %}

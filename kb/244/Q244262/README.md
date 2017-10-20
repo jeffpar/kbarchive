@@ -6,6 +6,8 @@ permalink: /kb/244/Q244262/
 
 ## Q244262: OLE DB Provider/ODBC Driver for DB2 May Break Jet Applications
 
+{% raw %}
+
 	Article: Q244262
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3
@@ -108,3 +110,5 @@ permalink: /kb/244/Q244262/
 	
 	=============================================================================
 	
+
+{% endraw %}

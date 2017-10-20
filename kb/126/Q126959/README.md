@@ -6,6 +6,8 @@ permalink: /kb/126/Q126959/
 
 ## Q126959: Automap Pro: Installing Automap Destination Europe
 
+{% raw %}
+
 	Article: Q126959
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/126/Q126959/
 	
 	=============================================================================
 	
+
+{% endraw %}

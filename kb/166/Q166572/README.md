@@ -6,6 +6,8 @@ permalink: /kb/166/Q166572/
 
 ## Q166572: XADM: 5.0 Proxy Address Generator and Scandinavian Characters
 
+{% raw %}
+
 	Article: Q166572
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -72,3 +74,5 @@ permalink: /kb/166/Q166572/
 	
 	=============================================================================
 	
+
+{% endraw %}

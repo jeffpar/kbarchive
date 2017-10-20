@@ -6,6 +6,8 @@ permalink: /kb/231/Q231600/
 
 ## Q231600: How to Use the Check Free Disk Space Script Action Successfully
 
+{% raw %}
+
 	Article: Q231600
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -203,3 +205,5 @@ permalink: /kb/231/Q231600/
 	
 	=============================================================================
 	
+
+{% endraw %}

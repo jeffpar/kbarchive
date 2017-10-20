@@ -6,6 +6,8 @@ permalink: /kb/082/Q82462/
 
 ## Q82462: Using WindowsTools with Windows 3.1 and 3.11
 
+{% raw %}
+
 	Article: Q82462
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/082/Q82462/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149746/
 
 ## Q149746: BUG: Access Violation Calling Exported Subroutine in DLL
 
+{% raw %}
+
 	Article: Q149746
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -104,3 +106,5 @@ permalink: /kb/149/Q149746/
 	
 	=============================================================================
 	
+
+{% endraw %}

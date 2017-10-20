@@ -6,6 +6,8 @@ permalink: /kb/152/Q152933/
 
 ## Q152933: XCLN: PowerPoint Presentation Can't Be Opened from Public Folder
 
+{% raw %}
+
 	Article: Q152933
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -65,3 +67,5 @@ permalink: /kb/152/Q152933/
 	
 	=============================================================================
 	
+
+{% endraw %}

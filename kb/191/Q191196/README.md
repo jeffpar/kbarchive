@@ -6,6 +6,8 @@ permalink: /kb/191/Q191196/
 
 ## Q191196: XCLN: Frames Do Not Convert Correctly in HTML Form Converter
 
+{% raw %}
+
 	Article: Q191196
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -53,3 +55,5 @@ permalink: /kb/191/Q191196/
 	
 	=============================================================================
 	
+
+{% endraw %}

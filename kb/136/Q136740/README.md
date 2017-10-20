@@ -6,6 +6,8 @@ permalink: /kb/136/Q136740/
 
 ## Q136740: Mustek Scanning Program Does Not Print in Windows 95
 
+{% raw %}
+
 	Article: Q136740
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/136/Q136740/
 	
 	=============================================================================
 	
+
+{% endraw %}

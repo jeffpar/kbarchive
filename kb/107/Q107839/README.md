@@ -6,6 +6,8 @@ permalink: /kb/107/Q107839/
 
 ## Q107839: INFO: BROWSE IN SCREEN Uses Active Window
 
+{% raw %}
+
 	Article: Q107839
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0,5.0,6.0
@@ -68,3 +70,5 @@ permalink: /kb/107/Q107839/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161561/
 
 ## Q161561: SMS: Upgrade May Fail with SQL Integrated or Mixed Security
 
+{% raw %}
+
 	Article: Q161561
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -90,3 +92,5 @@ permalink: /kb/161/Q161561/
 	
 	=============================================================================
 	
+
+{% endraw %}

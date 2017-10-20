@@ -6,6 +6,8 @@ permalink: /kb/021/Q21835/
 
 ## Q21835: Last SOUND Truncated at End of Program
 
+{% raw %}
+
 	Article: Q21835
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -29,3 +31,5 @@ permalink: /kb/021/Q21835/
 	To give the program time to complete its SOUND statements, give the
 	program something to do after the SOUND (a dummy loop for example) so
 	that the SOUND has time to finish before the program terminates.
+
+{% endraw %}

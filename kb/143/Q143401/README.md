@@ -6,6 +6,8 @@ permalink: /kb/143/Q143401/
 
 ## Q143401: PRB: Cannot Shorten Report Bands of Wizard-Generated Reports
 
+{% raw %}
+
 	Article: Q143401
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -120,3 +122,5 @@ permalink: /kb/143/Q143401/
 	
 	=============================================================================
 	
+
+{% endraw %}

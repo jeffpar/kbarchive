@@ -6,6 +6,8 @@ permalink: /kb/174/Q174876/
 
 ## Q174876: FIX: &quot;Invalid DOS Path&quot; to SSADMIN.INI on Unix
 
+{% raw %}
+
 	Article: Q174876
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/174/Q174876/
 	
 	=============================================================================
 	
+
+{% endraw %}

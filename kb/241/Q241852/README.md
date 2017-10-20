@@ -6,6 +6,8 @@ permalink: /kb/241/Q241852/
 
 ## Q241852: PRB: ERR C2535 When Compiling ATL Project with VC++ 6.0
 
+{% raw %}
+
 	Article: Q241852
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -62,14 +64,14 @@ permalink: /kb/241/Q241852/
 	following:
 	
 	  #ifdef _ATL_DEBUG_QI
-	  #define END_COM_MAP()   {NULL, 0, 0} };	return &_entries[1];}
+	  #define END_COM_MAP()   {NULL, 0, 0}};	return &_entries[1];}
 	  #else
-	  #define END_COM_MAP()   {NULL, 0, 0} };	return _entries;}
+	  #define END_COM_MAP()   {NULL, 0, 0}};	return _entries;}
 	  #endif // _ATL_DEBUG_QI
 	
 	In Visual C++ 6.0, it is defined as this:
 	
-	  #define END_COM_MAP() {NULL, 0, 0} }; 
+	  #define END_COM_MAP() {NULL, 0, 0}}; 
 	  return _entries;} 	
 	  virtual ULONG STDMETHODCALLTYPE AddRef( void) = 0; 	
 	  virtual ULONG STDMETHODCALLTYPE Release( void) = 0; 	
@@ -83,9 +85,9 @@ permalink: /kb/241/Q241852/
 	implemented or add something like the following code sample:
 	
 	  #ifdef _ATL_DEBUG
-	  #define END_MY_COM_MAP() {NULL, 0, 0} }; return &_entries[1];} 
+	  #define END_MY_COM_MAP() {NULL, 0, 0}}; return &_entries[1];} 
 	  #else
-	  #define END_MY_COM_MAP() {NULL, 0, 0} }; return _entries;} 
+	  #define END_MY_COM_MAP() {NULL, 0, 0}}; return _entries;} 
 	  #endif // _ATL_DEBUG
 	
 	  // CCOMTest
@@ -127,3 +129,5 @@ permalink: /kb/241/Q241852/
 	
 	=============================================================================
 	
+
+{% endraw %}

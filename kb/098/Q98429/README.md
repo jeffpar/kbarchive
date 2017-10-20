@@ -6,6 +6,8 @@ permalink: /kb/098/Q98429/
 
 ## Q98429: Logshow Reports &quot;Failed to Generate Interrupt&quot; Error
 
+{% raw %}
+
 	Article: Q98429
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/098/Q98429/
 	
 	=============================================================================
 	
+
+{% endraw %}

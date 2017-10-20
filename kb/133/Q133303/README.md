@@ -6,6 +6,8 @@ permalink: /kb/133/Q133303/
 
 ## Q133303: WINFILE.EXE Application Error When Associating a Searched File
 
+{% raw %}
+
 	Article: Q133303
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/133/Q133303/
 	
 	=============================================================================
 	
+
+{% endraw %}

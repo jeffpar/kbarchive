@@ -6,6 +6,8 @@ permalink: /kb/258/Q258627/
 
 ## Q258627: Baseball 2001: Parts of Outfield Are Not Displayed Correctly
 
+{% raw %}
+
 	Article: Q258627
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/258/Q258627/
 	
 	=============================================================================
 	
+
+{% endraw %}

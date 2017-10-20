@@ -6,6 +6,8 @@ permalink: /kb/138/Q138210/
 
 ## Q138210: Julia Child Err Msg: &quot;Unable to Find File&quot;, &quot;Error Opening...&quot;
 
+{% raw %}
+
 	Article: Q138210
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -72,3 +74,5 @@ permalink: /kb/138/Q138210/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/065/Q65568/
 
 ## Q65568: How to Add Other Language Compilers to PWB's Build Options
 
+{% raw %}
+
 	Article: Q65568
 	Product(s): See article
 	Version(s): 1.00 1.10 | 1.00 1.10
@@ -104,3 +106,5 @@ permalink: /kb/065/Q65568/
 	After completing these instructions, the PWB utility will now be ready
 	to compile assembler along with BASIC source code, provided that paths
 	to the necessary compilers are furnished.
+
+{% endraw %}

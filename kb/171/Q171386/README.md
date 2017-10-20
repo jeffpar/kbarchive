@@ -6,6 +6,8 @@ permalink: /kb/171/Q171386/
 
 ## Q171386: Connectivity Delay with Multiple Redirectors Installed
 
+{% raw %}
+
 	Article: Q171386
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -185,3 +187,5 @@ permalink: /kb/171/Q171386/
 	
 	=============================================================================
 	
+
+{% endraw %}

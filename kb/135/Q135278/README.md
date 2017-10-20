@@ -6,6 +6,8 @@ permalink: /kb/135/Q135278/
 
 ## Q135278: Not Enough Free Disk Space to Remove The Microsoft Network
 
+{% raw %}
+
 	Article: Q135278
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/135/Q135278/
 	
 	=============================================================================
 	
+
+{% endraw %}

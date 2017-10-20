@@ -6,6 +6,8 @@ permalink: /kb/238/Q238979/
 
 ## Q238979: WD97: Two Prompts Inserting AutoText Entry with ASK or FILLIN
 
+{% raw %}
+
 	Article: Q238979
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -53,3 +55,5 @@ permalink: /kb/238/Q238979/
 	
 	=============================================================================
 	
+
+{% endraw %}

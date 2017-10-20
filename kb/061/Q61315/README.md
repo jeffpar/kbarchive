@@ -6,6 +6,8 @@ permalink: /kb/061/Q61315/
 
 ## Q61315: Mixing Prototype Styles Generates C2059 Syntax Error in C 6.00
 
+{% raw %}
+
 	Article: Q61315
 	Product(s): See article
 	Version(s): 5.10 6.00 | 5.10 6.00
@@ -45,3 +47,5 @@ permalink: /kb/061/Q61315/
 	Microsoft has confirmed this to be a problem in C version 6.00. We are
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

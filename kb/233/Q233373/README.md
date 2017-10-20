@@ -6,6 +6,8 @@ permalink: /kb/233/Q233373/
 
 ## Q233373: CPIC App No Longer Limited to Single Local APPC LU
 
+{% raw %}
+
 	Article: Q233373
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1,4.0SP2
@@ -99,3 +101,5 @@ permalink: /kb/233/Q233373/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134716/
 
 ## Q134716: Secondary Sites Must All be Active Before Any are Upgraded
 
+{% raw %}
+
 	Article: Q134716
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -52,3 +54,5 @@ permalink: /kb/134/Q134716/
 	
 	=============================================================================
 	
+
+{% endraw %}

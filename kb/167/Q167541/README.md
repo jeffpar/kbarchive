@@ -6,6 +6,8 @@ permalink: /kb/167/Q167541/
 
 ## Q167541: Encarta 97/Bookshelf 98: Invalid Page Fault Starting Program
 
+{% raw %}
+
 	Article: Q167541
 	Product(s): Microsoft Home Kids Products
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/167/Q167541/
 	
 	=============================================================================
 	
+
+{% endraw %}

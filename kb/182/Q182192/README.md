@@ -6,6 +6,8 @@ permalink: /kb/182/Q182192/
 
 ## Q182192: HOWTO: Rtwizx86.exe and Rtwizaxp.exe Create New Resource Types
 
+{% raw %}
+
 	Article: Q182192
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2b,5.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/182/Q182192/
 	
 	=============================================================================
 	
+
+{% endraw %}

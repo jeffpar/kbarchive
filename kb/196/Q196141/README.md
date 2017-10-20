@@ -6,6 +6,8 @@ permalink: /kb/196/Q196141/
 
 ## Q196141: PRB: Problems Using Intrinsic File System Controls
 
+{% raw %}
+
 	Article: Q196141
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -89,3 +91,5 @@ permalink: /kb/196/Q196141/
 	
 	=============================================================================
 	
+
+{% endraw %}

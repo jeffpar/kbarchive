@@ -6,6 +6,8 @@ permalink: /kb/238/Q238250/
 
 ## Q238250: SMSCliSvcAcct&amp; May Be Used When Netware Redirector Is Installed
 
+{% raw %}
+
 	Article: Q238250
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -74,3 +76,5 @@ permalink: /kb/238/Q238250/
 	
 	=============================================================================
 	
+
+{% endraw %}

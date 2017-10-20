@@ -6,6 +6,8 @@ permalink: /kb/134/Q134511/
 
 ## Q134511: Err Msg: Software Installed Interferes w/Display Mini-Driver
 
+{% raw %}
+
 	Article: Q134511
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/134/Q134511/
 	
 	=============================================================================
 	
+
+{% endraw %}

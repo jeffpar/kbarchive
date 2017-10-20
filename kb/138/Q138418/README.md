@@ -6,6 +6,8 @@ permalink: /kb/138/Q138418/
 
 ## Q138418: WD97: Can't Use UNC Drive for Document Path on Some Networks
 
+{% raw %}
+
 	Article: Q138418
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/138/Q138418/
 	
 	=============================================================================
 	
+
+{% endraw %}

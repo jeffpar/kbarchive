@@ -6,6 +6,8 @@ permalink: /kb/059/Q59085/
 
 ## Q59085: Replacing Normal String Takes Longer Than Regular Expression
 
+{% raw %}
+
 	Article: Q59085
 	Product(s): See article
 	Version(s): 1.00 1.02 | 1.00 1.02
@@ -46,3 +48,5 @@ permalink: /kb/059/Q59085/
 	
 	For details on regular expression, refer to the "Microsoft Editor
 	User's Guide," Chapter 5, "Regular Expressions."
+
+{% endraw %}

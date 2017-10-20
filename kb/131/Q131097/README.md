@@ -6,6 +6,8 @@ permalink: /kb/131/Q131097/
 
 ## Q131097: How To Set Up The Macintosh Client and Windows NT Mail
 
+{% raw %}
+
 	Article: Q131097
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51
@@ -151,3 +153,5 @@ permalink: /kb/131/Q131097/
 	
 	=============================================================================
 	
+
+{% endraw %}

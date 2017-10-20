@@ -6,6 +6,8 @@ permalink: /kb/301/Q301941/
 
 ## Q301941: SMS: Remote Control Freeze When Remote Desktop Connection Starts
 
+{% raw %}
+
 	Article: Q301941
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -51,3 +53,5 @@ permalink: /kb/301/Q301941/
 	
 	=============================================================================
 	
+
+{% endraw %}

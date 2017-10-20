@@ -6,6 +6,8 @@ permalink: /kb/150/Q150393/
 
 ## Q150393: XCLN: How To Have New Mail Delivered to a Local PST
 
+{% raw %}
+
 	Article: Q150393
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -70,3 +72,5 @@ permalink: /kb/150/Q150393/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174754/
 
 ## Q174754: XFOR: Connecting IMS to IMS with SASL
 
+{% raw %}
+
 	Article: Q174754
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -115,3 +117,5 @@ permalink: /kb/174/Q174754/
 	
 	=============================================================================
 	
+
+{% endraw %}

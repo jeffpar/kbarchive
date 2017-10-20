@@ -6,6 +6,8 @@ permalink: /kb/174/Q174844/
 
 ## Q174844: Spooler Service Causing Access Violation
 
+{% raw %}
+
 	Article: Q174844
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/174/Q174844/
 	
 	=============================================================================
 	
+
+{% endraw %}

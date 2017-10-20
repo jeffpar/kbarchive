@@ -6,6 +6,8 @@ permalink: /kb/062/Q62909/
 
 ## Q62909: How to Disable QEMM.SYS Version 5.0 in Windows
 
+{% raw %}
+
 	Article: Q62909
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/062/Q62909/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/201/Q201638/
 
 ## Q201638: Multiple Event Viewer ID 1003 Messages from Counters
 
+{% raw %}
+
 	Article: Q201638
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/201/Q201638/
 	
 	=============================================================================
 	
+
+{% endraw %}

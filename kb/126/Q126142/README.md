@@ -6,6 +6,8 @@ permalink: /kb/126/Q126142/
 
 ## Q126142: Windows NT Mail Err Msg: The Network Path You Entered Could...
 
+{% raw %}
+
 	Article: Q126142
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/126/Q126142/
 	
 	=============================================================================
 	
+
+{% endraw %}

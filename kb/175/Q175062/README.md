@@ -6,6 +6,8 @@ permalink: /kb/175/Q175062/
 
 ## Q175062: How To Determine from Which Computer a User Logged On
 
+{% raw %}
+
 	Article: Q175062
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -179,3 +181,5 @@ permalink: /kb/175/Q175062/
 	
 	=============================================================================
 	
+
+{% endraw %}

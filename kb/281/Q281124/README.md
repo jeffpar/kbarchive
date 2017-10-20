@@ -6,6 +6,8 @@ permalink: /kb/281/Q281124/
 
 ## Q281124: MechWarrior 4 Err Msg: Your Hardware or Drivers Setup Are Not...
 
+{% raw %}
+
 	Article: Q281124
 	Product(s): Microsoft Home Games
 	Version(s): 4.0
@@ -228,3 +230,5 @@ permalink: /kb/281/Q281124/
 	
 	=============================================================================
 	
+
+{% endraw %}

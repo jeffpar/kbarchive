@@ -6,6 +6,8 @@ permalink: /kb/263/Q263199/
 
 ## Q263199: XIMS: Receiving Internet Mail as user@department.company.com
 
+{% raw %}
+
 	Article: Q263199
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -98,3 +100,5 @@ permalink: /kb/263/Q263199/
 	
 	=============================================================================
 	
+
+{% endraw %}

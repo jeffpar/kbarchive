@@ -6,6 +6,8 @@ permalink: /kb/158/Q158780/
 
 ## Q158780: Unable to Print to Local Port from WordPerfect for DOS
 
+{% raw %}
+
 	Article: Q158780
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -72,3 +74,5 @@ permalink: /kb/158/Q158780/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172395/
 
 ## Q172395: PRB: Intl Number Settings Cause Upsizing Wizard Failure
 
+{% raw %}
+
 	Article: Q172395
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0a
@@ -106,3 +108,5 @@ permalink: /kb/172/Q172395/
 	
 	=============================================================================
 	
+
+{% endraw %}

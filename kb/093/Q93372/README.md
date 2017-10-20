@@ -6,6 +6,8 @@ permalink: /kb/093/Q93372/
 
 ## Q93372: DOCERR: DDEDATA Documentation Error
 
+{% raw %}
+
 	Article: Q93372
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -67,3 +69,5 @@ permalink: /kb/093/Q93372/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/221/Q221947/
 
 ## Q221947: SMS: Force Software Inventory Incorrectly Documented in Guide
 
+{% raw %}
+
 	Article: Q221947
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/221/Q221947/
 	
 	=============================================================================
 	
+
+{% endraw %}

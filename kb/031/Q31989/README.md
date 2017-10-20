@@ -6,6 +6,8 @@ permalink: /kb/031/Q31989/
 
 ## Q31989: Object Modules Handled by LINK
 
+{% raw %}
+
 	Article: Q31989
 	Product(s): See article
 	Version(s): 3.x 5.01.20 5.01.21
@@ -18,3 +20,5 @@ permalink: /kb/031/Q31989/
 	link any existing object module, but not necessarily any future object
 	module.
 	   To solve this problem, update to the latest version of LINK.
+
+{% endraw %}

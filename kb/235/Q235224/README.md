@@ -6,6 +6,8 @@ permalink: /kb/235/Q235224/
 
 ## Q235224: BUG: Compiling ANSI Build of Dao36x.dll Generates Error
 
+{% raw %}
+
 	Article: Q235224
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -95,3 +97,5 @@ permalink: /kb/235/Q235224/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/316/Q316818/
 
 ## Q316818: FIX: Fatal Error Using the Equal Sign on Excel Classed Property
 
+{% raw %}
+
 	Article: Q316818
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -77,3 +79,5 @@ permalink: /kb/316/Q316818/
 	
 	=============================================================================
 	
+
+{% endraw %}

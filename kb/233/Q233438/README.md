@@ -6,6 +6,8 @@ permalink: /kb/233/Q233438/
 
 ## Q233438: MSBP: Unable to Select or Print Text in Personal Interviewer
 
+{% raw %}
+
 	Article: Q233438
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/233/Q233438/
 	
 	=============================================================================
 	
+
+{% endraw %}

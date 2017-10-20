@@ -6,6 +6,8 @@ permalink: /kb/147/Q147724/
 
 ## Q147724: HOWTO: Use TOP N Query from Microsoft Access 2.0 in VB
 
+{% raw %}
+
 	Article: Q147724
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -135,3 +137,5 @@ permalink: /kb/147/Q147724/
 	
 	=============================================================================
 	
+
+{% endraw %}

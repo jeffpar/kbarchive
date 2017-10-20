@@ -6,6 +6,8 @@ permalink: /kb/027/Q27277/
 
 ## Q27277: IF Statement Missing Colon Not Always Trapped at Compile Time
 
+{% raw %}
+
 	Article: Q27277
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b
@@ -41,3 +43,5 @@ permalink: /kb/027/Q27277/
 	ending:
 	print "a =";a
 	system
+
+{% endraw %}

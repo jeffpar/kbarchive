@@ -6,6 +6,8 @@ permalink: /kb/196/Q196691/
 
 ## Q196691: XADM: Exchange 5.5 Standard Does Not Need a Connector Disk
 
+{% raw %}
+
 	Article: Q196691
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -48,3 +50,5 @@ permalink: /kb/196/Q196691/
 	
 	=============================================================================
 	
+
+{% endraw %}

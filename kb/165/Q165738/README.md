@@ -6,6 +6,8 @@ permalink: /kb/165/Q165738/
 
 ## Q165738: XWEB: POP3 Clients Not Authenticated by Exchange Server
 
+{% raw %}
+
 	Article: Q165738
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -70,3 +72,5 @@ permalink: /kb/165/Q165738/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160159/
 
 ## Q160159: Win/Mac Encarta: What's the Second Disc For?
 
+{% raw %}
+
 	Article: Q160159
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:; WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/160/Q160159/
 	
 	=============================================================================
 	
+
+{% endraw %}

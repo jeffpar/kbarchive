@@ -6,6 +6,8 @@ permalink: /kb/096/Q96842/
 
 ## Q96842: Mac Srv: Failure to Upgrade to Version 3.1a
 
+{% raw %}
+
 	Article: Q96842
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1a
@@ -53,3 +55,5 @@ permalink: /kb/096/Q96842/
 	
 	=============================================================================
 	
+
+{% endraw %}

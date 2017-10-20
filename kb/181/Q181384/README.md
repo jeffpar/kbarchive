@@ -6,6 +6,8 @@ permalink: /kb/181/Q181384/
 
 ## Q181384: WD97: Text, Line Numbering Don't Line Up in Pleading File
 
+{% raw %}
+
 	Article: Q181384
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/181/Q181384/
 	
 	=============================================================================
 	
+
+{% endraw %}

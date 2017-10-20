@@ -6,6 +6,8 @@ permalink: /kb/267/Q267977/
 
 ## Q267977: SMS: Package That Contains a Long File Name May Not Decompress
 
+{% raw %}
+
 	Article: Q267977
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -117,3 +119,5 @@ permalink: /kb/267/Q267977/
 	
 	=============================================================================
 	
+
+{% endraw %}

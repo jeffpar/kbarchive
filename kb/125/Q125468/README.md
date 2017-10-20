@@ -6,6 +6,8 @@ permalink: /kb/125/Q125468/
 
 ## Q125468: PRB: F6700 Heap Space Exceeded
 
+{% raw %}
+
 	Article: Q125468
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.1
@@ -102,3 +104,5 @@ permalink: /kb/125/Q125468/
 	
 	=============================================================================
 	
+
+{% endraw %}

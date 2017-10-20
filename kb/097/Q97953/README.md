@@ -6,6 +6,8 @@ permalink: /kb/097/Q97953/
 
 ## Q97953: Anti-Virus for Windows Doesn't Scan Due to Insufficient Memory
 
+{% raw %}
+
 	Article: Q97953
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/097/Q97953/
 	
 	=============================================================================
 	
+
+{% endraw %}

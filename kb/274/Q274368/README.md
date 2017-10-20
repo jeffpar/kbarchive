@@ -6,6 +6,8 @@ permalink: /kb/274/Q274368/
 
 ## Q274368: After Parental Consent For Hotmail Child Account, Prompted Again
 
+{% raw %}
+
 	Article: Q274368
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -67,3 +69,5 @@ permalink: /kb/274/Q274368/
 	
 	=============================================================================
 	
+
+{% endraw %}

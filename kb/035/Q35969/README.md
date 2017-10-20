@@ -6,6 +6,8 @@ permalink: /kb/035/Q35969/
 
 ## Q35969: Do Not Mix Arrayname AS Type and % Type Suffix in DIM/COMMON
 
+{% raw %}
+
 	Article: Q35969
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -75,3 +77,5 @@ permalink: /kb/035/Q35969/
 	  PRINT "i% = "; i%
 	  x(i%) = 1
 	NEXT i%
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185504/
 
 ## Q185504: XFOR: Dxadata Folder Cannot Be Moved to Different Location
 
+{% raw %}
+
 	Article: Q185504
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -128,3 +130,5 @@ permalink: /kb/185/Q185504/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104104/
 
 ## Q104104: FIX: CodeView for Windows Corrupts Display
 
+{% raw %}
+
 	Article: Q104104
 	Product(s): Microsoft Programming Utilities
 	Version(s): 4.0,4.01
@@ -59,3 +61,5 @@ permalink: /kb/104/Q104104/
 	
 	=============================================================================
 	
+
+{% endraw %}

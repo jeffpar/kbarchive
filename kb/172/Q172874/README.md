@@ -6,6 +6,8 @@ permalink: /kb/172/Q172874/
 
 ## Q172874: WD97: Web Publisher Does Not Make Absolute Paths Relative Paths
 
+{% raw %}
+
 	Article: Q172874
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/172/Q172874/
 	
 	=============================================================================
 	
+
+{% endraw %}

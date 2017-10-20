@@ -6,6 +6,8 @@ permalink: /kb/279/Q279302/
 
 ## Q279302: CFS2: Pilot's Manual Incorrectly States You Can Drop Torpedoes
 
+{% raw %}
+
 	Article: Q279302
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/279/Q279302/
 	
 	=============================================================================
 	
+
+{% endraw %}

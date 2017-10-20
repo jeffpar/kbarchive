@@ -6,6 +6,8 @@ permalink: /kb/156/Q156010/
 
 ## Q156010: INFO: Pool Manager Sample (Custom OLE Automation Server)
 
+{% raw %}
+
 	Article: Q156010
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,6.0
@@ -57,3 +59,5 @@ permalink: /kb/156/Q156010/
 	
 	=============================================================================
 	
+
+{% endraw %}

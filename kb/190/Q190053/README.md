@@ -6,6 +6,8 @@ permalink: /kb/190/Q190053/
 
 ## Q190053: XCLN: Adding Custom Applications to Active Setup with the ODK
 
+{% raw %}
+
 	Article: Q190053
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:98
@@ -153,3 +155,5 @@ permalink: /kb/190/Q190053/
 	
 	=============================================================================
 	
+
+{% endraw %}

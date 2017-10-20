@@ -6,6 +6,8 @@ permalink: /kb/124/Q124853/
 
 ## Q124853: STOP Message with SFMATALK.SYS
 
+{% raw %}
+
 	Article: Q124853
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -97,3 +99,5 @@ permalink: /kb/124/Q124853/
 	
 	=============================================================================
 	
+
+{% endraw %}

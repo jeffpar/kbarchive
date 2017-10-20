@@ -6,6 +6,8 @@ permalink: /kb/171/Q171310/
 
 ## Q171310: Learn Java Now: No Bolded Text in Code Samples
 
+{% raw %}
+
 	Article: Q171310
 	Product(s): Microsoft Press
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/171/Q171310/
 	
 	=============================================================================
 	
+
+{% endraw %}

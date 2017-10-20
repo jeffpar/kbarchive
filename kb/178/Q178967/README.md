@@ -6,6 +6,8 @@ permalink: /kb/178/Q178967/
 
 ## Q178967: FIX: CRecordset Does Not Set HSTMT Attributes for Updates
 
+{% raw %}
+
 	Article: Q178967
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -128,3 +130,5 @@ permalink: /kb/178/Q178967/
 	
 	=============================================================================
 	
+
+{% endraw %}

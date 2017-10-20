@@ -6,6 +6,8 @@ permalink: /kb/040/Q40606/
 
 ## Q40606: Internal Compiler Error getattrib.c from typedef
 
+{% raw %}
+
 	Article: Q40606
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -57,3 +59,5 @@ permalink: /kb/040/Q40606/
 	void main(void)
 	{
 	}
+
+{% endraw %}

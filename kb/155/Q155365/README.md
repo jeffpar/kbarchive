@@ -6,6 +6,8 @@ permalink: /kb/155/Q155365/
 
 ## Q155365: Cannot Uninstall Microsoft Internet Products in OSR2
 
+{% raw %}
+
 	Article: Q155365
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -61,3 +63,5 @@ permalink: /kb/155/Q155365/
 	
 	=============================================================================
 	
+
+{% endraw %}

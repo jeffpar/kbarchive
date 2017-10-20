@@ -6,6 +6,8 @@ permalink: /kb/251/Q251329/
 
 ## Q251329: HOWTO: Modify the Command of a Hierarchical DataReport
 
+{% raw %}
+
 	Article: Q251329
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0
@@ -217,3 +219,5 @@ permalink: /kb/251/Q251329/
 	
 	=============================================================================
 	
+
+{% endraw %}

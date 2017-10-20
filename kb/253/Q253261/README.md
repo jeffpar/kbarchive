@@ -6,6 +6,8 @@ permalink: /kb/253/Q253261/
 
 ## Q253261: XFOR: Large Temporary Proxy Address Tables May Be Corrupted
 
+{% raw %}
+
 	Article: Q253261
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -73,3 +75,5 @@ permalink: /kb/253/Q253261/
 	
 	=============================================================================
 	
+
+{% endraw %}

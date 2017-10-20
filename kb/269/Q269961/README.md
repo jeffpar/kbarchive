@@ -6,6 +6,8 @@ permalink: /kb/269/Q269961/
 
 ## Q269961: MSB Mars: Minimum System Requirements for Macintosh
 
+{% raw %}
+
 	Article: Q269961
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/269/Q269961/
 	
 	=============================================================================
 	
+
+{% endraw %}

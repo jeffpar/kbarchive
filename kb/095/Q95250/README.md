@@ -6,6 +6,8 @@ permalink: /kb/095/Q95250/
 
 ## Q95250: How to Recycle Deleted Records in a Multiuser Environment
 
+{% raw %}
+
 	Article: Q95250
 	Product(s): Microsoft FoxPro
 	Version(s): 1.02 2.00 2.10 2.50 2.50a | 2.50
@@ -96,3 +98,5 @@ permalink: /kb/095/Q95250/
 	
 	=============================================================================
 	
+
+{% endraw %}

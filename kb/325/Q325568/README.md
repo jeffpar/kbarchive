@@ -6,6 +6,8 @@ permalink: /kb/325/Q325568/
 
 ## Q325568: WM_WININICHANGE Message Causes Deadlock in Multithreaded VB Apps
 
+{% raw %}
+
 	Article: Q325568
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -85,3 +87,5 @@ permalink: /kb/325/Q325568/
 	
 	=============================================================================
 	
+
+{% endraw %}

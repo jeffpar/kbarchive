@@ -6,6 +6,8 @@ permalink: /kb/105/Q105266/
 
 ## Q105266: SFM: Print Spooler Does Not Work in Embedded Print Jobs
 
+{% raw %}
+
 	Article: Q105266
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -44,3 +46,5 @@ permalink: /kb/105/Q105266/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/282/Q282752/
 
 ## Q282752: DEACTIVATE_SESSION Verb May Cause Snaservr.exe Hang
 
+{% raw %}
+
 	Article: Q282752
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3,4.0 SP4
@@ -127,3 +129,5 @@ permalink: /kb/282/Q282752/
 	
 	=============================================================================
 	
+
+{% endraw %}

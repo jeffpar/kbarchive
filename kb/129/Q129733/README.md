@@ -6,6 +6,8 @@ permalink: /kb/129/Q129733/
 
 ## Q129733: VB 4.0 Calls the FreezeEvents Method to Inform OLE Controls
 
+{% raw %}
+
 	Article: Q129733
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -91,3 +93,5 @@ permalink: /kb/129/Q129733/
 	
 	=============================================================================
 	
+
+{% endraw %}

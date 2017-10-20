@@ -6,6 +6,8 @@ permalink: /kb/182/Q182834/
 
 ## Q182834: Missing Error Messages When Using Diagnostic Capture
 
+{% raw %}
+
 	Article: Q182834
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -239,3 +241,5 @@ permalink: /kb/182/Q182834/
 	
 	=============================================================================
 	
+
+{% endraw %}

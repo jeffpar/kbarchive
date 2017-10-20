@@ -6,6 +6,8 @@ permalink: /kb/155/Q155920/
 
 ## Q155920: XFOR: Setting Accept/Reject by Host in IMC Connection Settings
 
+{% raw %}
+
 	Article: Q155920
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/155/Q155920/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165909/
 
 ## Q165909: WV: Form Fields Are Not Editable in Word Viewer 97-2000
 
+{% raw %}
+
 	Article: Q165909
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/165/Q165909/
 	
 	=============================================================================
 	
+
+{% endraw %}

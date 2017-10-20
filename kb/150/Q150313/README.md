@@ -6,6 +6,8 @@ permalink: /kb/150/Q150313/
 
 ## Q150313: Renaming or Deleting Microsoft Phone Voice Commands
 
+{% raw %}
+
 	Article: Q150313
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/150/Q150313/
 	
 	=============================================================================
 	
+
+{% endraw %}

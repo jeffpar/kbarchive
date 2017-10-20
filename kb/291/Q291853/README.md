@@ -6,6 +6,8 @@ permalink: /kb/291/Q291853/
 
 ## Q291853: INFO: Avoid Page Skipping When You Print Multiple Data Reports
 
+{% raw %}
+
 	Article: Q291853
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -68,3 +70,5 @@ permalink: /kb/291/Q291853/
 	
 	=============================================================================
 	
+
+{% endraw %}

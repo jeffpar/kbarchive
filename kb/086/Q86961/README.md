@@ -6,6 +6,8 @@ permalink: /kb/086/Q86961/
 
 ## Q86961: X400: Documentation Index for X.400 and X.25 Protocols
 
+{% raw %}
+
 	Article: Q86961
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/086/Q86961/
 	
 	=============================================================================
 	
+
+{% endraw %}

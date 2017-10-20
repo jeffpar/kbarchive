@@ -6,6 +6,8 @@ permalink: /kb/191/Q191696/
 
 ## Q191696: Upgrading Host Security Files May Cause Corrupted Database
 
+{% raw %}
+
 	Article: Q191696
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP1
@@ -59,3 +61,5 @@ permalink: /kb/191/Q191696/
 	
 	=============================================================================
 	
+
+{% endraw %}

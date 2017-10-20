@@ -6,6 +6,8 @@ permalink: /kb/137/Q137408/
 
 ## Q137408: DOC: Can't Use ConnectName Property w/SQLGETPROP() Function
 
+{% raw %}
+
 	Article: Q137408
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -66,3 +68,5 @@ permalink: /kb/137/Q137408/
 	
 	=============================================================================
 	
+
+{% endraw %}

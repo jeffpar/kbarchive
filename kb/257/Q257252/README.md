@@ -6,6 +6,8 @@ permalink: /kb/257/Q257252/
 
 ## Q257252: XADM: Default Registry Entries for Exchange Server Info Store
 
+{% raw %}
+
 	Article: Q257252
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -251,3 +253,5 @@ permalink: /kb/257/Q257252/
 	
 	=============================================================================
 	
+
+{% endraw %}

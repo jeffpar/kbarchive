@@ -6,6 +6,8 @@ permalink: /kb/173/Q173677/
 
 ## Q173677: Audio Problems with Cirrus Logic PD6832 CardBus Controller
 
+{% raw %}
+
 	Article: Q173677
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -57,3 +59,5 @@ permalink: /kb/173/Q173677/
 	
 	=============================================================================
 	
+
+{% endraw %}

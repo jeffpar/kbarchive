@@ -6,6 +6,8 @@ permalink: /kb/114/Q114426/
 
 ## Q114426: Installing RAS for Workgroup Add-On for MS-DOS 3.11
 
+{% raw %}
+
 	Article: Q114426
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -101,3 +103,5 @@ permalink: /kb/114/Q114426/
 	
 	=============================================================================
 	
+
+{% endraw %}

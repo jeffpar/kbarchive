@@ -6,6 +6,8 @@ permalink: /kb/157/Q157686/
 
 ## Q157686: XCON: MTA Crashes When Logging Event 321
 
+{% raw %}
+
 	Article: Q157686
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/157/Q157686/
 	
 	=============================================================================
 	
+
+{% endraw %}

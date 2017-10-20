@@ -6,6 +6,8 @@ permalink: /kb/196/Q196033/
 
 ## Q196033: XCLN: Cannot Delete Birthday and Anniversary in OWA
 
+{% raw %}
+
 	Article: Q196033
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -50,3 +52,5 @@ permalink: /kb/196/Q196033/
 	
 	=============================================================================
 	
+
+{% endraw %}

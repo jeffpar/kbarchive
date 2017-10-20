@@ -6,6 +6,8 @@ permalink: /kb/082/Q82832/
 
 ## Q82832: Panacea WinSpeed 1.0 Has Problems Under Windows 3.1
 
+{% raw %}
+
 	Article: Q82832
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -80,3 +82,5 @@ permalink: /kb/082/Q82832/
 	
 	=============================================================================
 	
+
+{% endraw %}

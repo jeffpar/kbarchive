@@ -6,6 +6,8 @@ permalink: /kb/190/Q190920/
 
 ## Q190920: PRB: Cannot Use MSFlexGrid Wizard Control in Custom App
 
+{% raw %}
+
 	Article: Q190920
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/190/Q190920/
 	
 	=============================================================================
 	
+
+{% endraw %}

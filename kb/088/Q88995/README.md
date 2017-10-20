@@ -6,6 +6,8 @@ permalink: /kb/088/Q88995/
 
 ## Q88995: Micrografx Designer 3.1 Fails to Release GDI Resources
 
+{% raw %}
+
 	Article: Q88995
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/088/Q88995/
 	
 	=============================================================================
 	
+
+{% endraw %}

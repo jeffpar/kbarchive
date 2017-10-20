@@ -6,6 +6,8 @@ permalink: /kb/098/Q98314/
 
 ## Q98314: PRB: #pragma pack Can Generate Compiler Warnings
 
+{% raw %}
+
 	Article: Q98314
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -111,3 +113,5 @@ permalink: /kb/098/Q98314/
 	
 	=============================================================================
 	
+
+{% endraw %}

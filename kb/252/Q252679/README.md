@@ -6,6 +6,8 @@ permalink: /kb/252/Q252679/
 
 ## Q252679: INFO: Tips on WMI Driver Testing
 
+{% raw %}
+
 	Article: Q252679
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:
@@ -198,3 +200,5 @@ permalink: /kb/252/Q252679/
 	
 	=============================================================================
 	
+
+{% endraw %}

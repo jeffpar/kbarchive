@@ -6,6 +6,8 @@ permalink: /kb/161/Q161289/
 
 ## Q161289: SMS: Network Adapter IRQ Is Not Inventoried on Windows 95
 
+{% raw %}
+
 	Article: Q161289
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -48,3 +50,5 @@ permalink: /kb/161/Q161289/
 	
 	=============================================================================
 	
+
+{% endraw %}

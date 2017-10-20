@@ -6,6 +6,8 @@ permalink: /kb/130/Q130682/
 
 ## Q130682: SMS: Automating Installations of Windows for Workgroups 3.11
 
+{% raw %}
+
 	Article: Q130682
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -47,3 +49,5 @@ permalink: /kb/130/Q130682/
 	
 	=============================================================================
 	
+
+{% endraw %}

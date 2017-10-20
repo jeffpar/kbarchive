@@ -6,6 +6,8 @@ permalink: /kb/050/Q50012/
 
 ## Q50012: Undocumented Switch &quot;Sethelp&quot; for M Version 1.02
 
+{% raw %}
+
 	Article: Q50012
 	Product(s): See article
 	Version(s): 1.02   | 1.02
@@ -29,3 +31,5 @@ permalink: /kb/050/Q50012/
 	
 	Now you could place the cursor on printf (or any other C language item
 	that is in the Help file) and press F1 to get help on that topic.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/076/Q76522/
 
 ## Q76522: PC Adm: How to Tell Who Owns a Group or Shared Folder
 
+{% raw %}
+
 	Article: Q76522
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.0b,3.2,3.2a
@@ -59,3 +61,5 @@ permalink: /kb/076/Q76522/
 	
 	=============================================================================
 	
+
+{% endraw %}

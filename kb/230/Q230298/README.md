@@ -6,6 +6,8 @@ permalink: /kb/230/Q230298/
 
 ## Q230298: Posting Acceptor Release Notes
 
+{% raw %}
+
 	Article: Q230298
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -601,3 +603,5 @@ permalink: /kb/230/Q230298/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111685/
 
 ## Q111685: AWFAX: Invalid Directory Accepted in Share Fax Modem Dialog
 
+{% raw %}
+
 	Article: Q111685
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -65,3 +67,5 @@ permalink: /kb/111/Q111685/
 	
 	=============================================================================
 	
+
+{% endraw %}

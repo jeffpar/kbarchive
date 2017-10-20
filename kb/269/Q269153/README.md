@@ -6,6 +6,8 @@ permalink: /kb/269/Q269153/
 
 ## Q269153: Kodak Imaging for Windows Does Not Invert TIFF Images
 
+{% raw %}
+
 	Article: Q269153
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/269/Q269153/
 	
 	=============================================================================
 	
+
+{% endraw %}

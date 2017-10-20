@@ -6,6 +6,8 @@ permalink: /kb/149/Q149678/
 
 ## Q149678: BUG: File Dates Do Not Change After a Rollback
 
+{% raw %}
+
 	Article: Q149678
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/149/Q149678/
 	
 	=============================================================================
 	
+
+{% endraw %}

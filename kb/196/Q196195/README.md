@@ -6,6 +6,8 @@ permalink: /kb/196/Q196195/
 
 ## Q196195: PRB: VSSVer.scc Added to FrontPage Web
 
+{% raw %}
+
 	Article: Q196195
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0,97,98
@@ -69,3 +71,5 @@ permalink: /kb/196/Q196195/
 	
 	=============================================================================
 	
+
+{% endraw %}

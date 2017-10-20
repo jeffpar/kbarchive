@@ -6,6 +6,8 @@ permalink: /kb/148/Q148889/
 
 ## Q148889: Desktop Appearance Changes After Installing Corel Draw 6.0
 
+{% raw %}
+
 	Article: Q148889
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -102,3 +104,5 @@ permalink: /kb/148/Q148889/
 	
 	=============================================================================
 	
+
+{% endraw %}

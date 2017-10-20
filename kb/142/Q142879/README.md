@@ -6,6 +6,8 @@ permalink: /kb/142/Q142879/
 
 ## Q142879: HOWTO: Set Up Directory Annotation for Internet Server FTP
 
+{% raw %}
+
 	Article: Q142879
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -85,3 +87,5 @@ permalink: /kb/142/Q142879/
 	
 	=============================================================================
 	
+
+{% endraw %}

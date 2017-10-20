@@ -6,6 +6,8 @@ permalink: /kb/177/Q177382/
 
 ## Q177382: FileSystemObject Object in ASP Does Not Handle DBCS
 
+{% raw %}
+
 	Article: Q177382
 	Product(s): Internet Information Server
 	Version(s): WinNT:3.0
@@ -78,3 +80,5 @@ permalink: /kb/177/Q177382/
 	
 	=============================================================================
 	
+
+{% endraw %}

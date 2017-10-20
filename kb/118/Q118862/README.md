@@ -6,6 +6,8 @@ permalink: /kb/118/Q118862/
 
 ## Q118862: X400: How MS-DOS and Windows Priorities Convert to X.400
 
+{% raw %}
+
 	Article: Q118862
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -84,3 +86,5 @@ permalink: /kb/118/Q118862/
 	
 	=============================================================================
 	
+
+{% endraw %}

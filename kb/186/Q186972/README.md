@@ -6,6 +6,8 @@ permalink: /kb/186/Q186972/
 
 ## Q186972: XCLN: Forms Converter Fails to Convert When Form Is In Use
 
+{% raw %}
+
 	Article: Q186972
 	Product(s): Microsoft Exchange
 	Version(s): 8.03; WINDOWS:
@@ -60,3 +62,5 @@ permalink: /kb/186/Q186972/
 	
 	=============================================================================
 	
+
+{% endraw %}

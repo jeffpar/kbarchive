@@ -6,6 +6,8 @@ permalink: /kb/027/Q27475/
 
 ## Q27475: Can't Pass QuickBASIC COMMON Block to FORTRAN
 
+{% raw %}
+
 	Article: Q27475
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -27,3 +29,5 @@ permalink: /kb/027/Q27475/
 	This information applies to Microsoft QuickBASIC Versions 4.00, 4.00b,
 	and 4.50 for MS-DOS, and to the Microsoft BASIC Compiler Versions 6.00
 	and 6.00b for MS-DOS and OS/2.
+
+{% endraw %}

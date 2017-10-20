@@ -6,6 +6,8 @@ permalink: /kb/162/Q162533/
 
 ## Q162533: FIX: &quot;File or Project Not Found&quot; Errors Between Mac &amp; PC Clients
 
+{% raw %}
+
 	Article: Q162533
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/162/Q162533/
 	
 	=============================================================================
 	
+
+{% endraw %}

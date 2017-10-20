@@ -6,6 +6,8 @@ permalink: /kb/262/Q262422/
 
 ## Q262422: PRB: Visual FoxPro Form Repeatedly Prompts to Be Saved
 
+{% raw %}
+
 	Article: Q262422
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -104,3 +106,5 @@ permalink: /kb/262/Q262422/
 	
 	=============================================================================
 	
+
+{% endraw %}

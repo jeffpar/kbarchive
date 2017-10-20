@@ -6,6 +6,8 @@ permalink: /kb/285/Q285994/
 
 ## Q285994: MechWarrior 4 Err Msg: Stop: Failed (Dderr_CannotAttachSurface)
 
+{% raw %}
+
 	Article: Q285994
 	Product(s): Microsoft Home Games
 	Version(s): 4.0
@@ -114,3 +116,5 @@ permalink: /kb/285/Q285994/
 	
 	=============================================================================
 	
+
+{% endraw %}

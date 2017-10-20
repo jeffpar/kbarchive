@@ -6,6 +6,8 @@ permalink: /kb/238/Q238493/
 
 ## Q238493: Memory Leak in Programs That Load/Unload Security.dll
 
+{% raw %}
+
 	Article: Q238493
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5
@@ -99,3 +101,5 @@ permalink: /kb/238/Q238493/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161776/
 
 ## Q161776: IBM MPA/A (MCA) SDLC Adapter Not Detected on Dual-Bus Servers
 
+{% raw %}
+
 	Article: Q161776
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
@@ -110,3 +112,5 @@ permalink: /kb/161/Q161776/
 	
 	=============================================================================
 	
+
+{% endraw %}

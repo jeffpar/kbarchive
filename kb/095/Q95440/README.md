@@ -6,6 +6,8 @@ permalink: /kb/095/Q95440/
 
 ## Q95440: Short Menus in Microsoft Excel 3.0 Hide Proof Menu
 
+{% raw %}
+
 	Article: Q95440
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/095/Q95440/
 	
 	=============================================================================
 	
+
+{% endraw %}

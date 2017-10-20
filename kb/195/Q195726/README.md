@@ -6,6 +6,8 @@ permalink: /kb/195/Q195726/
 
 ## Q195726: Virtual Globe 99: Current Speed Not Displayed in Virtual Flights
 
+{% raw %}
+
 	Article: Q195726
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -86,3 +88,5 @@ permalink: /kb/195/Q195726/
 	
 	=============================================================================
 	
+
+{% endraw %}

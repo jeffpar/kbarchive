@@ -6,6 +6,8 @@ permalink: /kb/057/Q57579/
 
 ## Q57579: Why BASIC 7.00 and 7.10 Don't Support Multiuser ISAM
 
+{% raw %}
+
 	Article: Q57579
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -71,3 +73,5 @@ permalink: /kb/057/Q57579/
 	Our perpetual challenge in the product release planning process is to
 	find the combination of features and schedule that will best satisfy
 	the needs of most of our customers.
+
+{% endraw %}

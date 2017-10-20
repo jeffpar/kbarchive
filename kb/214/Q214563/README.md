@@ -6,6 +6,8 @@ permalink: /kb/214/Q214563/
 
 ## Q214563: NET USE /d Returns Error 2404 After Applying Service Pack 4
 
+{% raw %}
+
 	Article: Q214563
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/214/Q214563/
 	
 	=============================================================================
 	
+
+{% endraw %}

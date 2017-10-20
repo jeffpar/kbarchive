@@ -6,6 +6,8 @@ permalink: /kb/155/Q155994/
 
 ## Q155994: NBA Full Court Press: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q155994
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/155/Q155994/
 	
 	=============================================================================
 	
+
+{% endraw %}

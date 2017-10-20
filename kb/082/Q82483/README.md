@@ -6,6 +6,8 @@ permalink: /kb/082/Q82483/
 
 ## Q82483: Err Msg: Virtual Machine Error 19 (Lotus 1-2-3)
 
+{% raw %}
+
 	Article: Q82483
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/082/Q82483/
 	
 	=============================================================================
 	
+
+{% endraw %}

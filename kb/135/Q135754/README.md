@@ -6,6 +6,8 @@ permalink: /kb/135/Q135754/
 
 ## Q135754: BUG: ListBox Does Not Refresh Properly with SET FILTER Command
 
+{% raw %}
+
 	Article: Q135754
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
@@ -112,3 +114,5 @@ permalink: /kb/135/Q135754/
 	
 	=============================================================================
 	
+
+{% endraw %}

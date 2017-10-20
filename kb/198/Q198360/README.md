@@ -6,6 +6,8 @@ permalink: /kb/198/Q198360/
 
 ## Q198360: WD97: Line Numbers Stop After Line 65534
 
+{% raw %}
+
 	Article: Q198360
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/198/Q198360/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/312/Q312487/
 
 ## Q312487: Error Message: Cannot Read Port Name from Registry
 
+{% raw %}
+
 	Article: Q312487
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -149,3 +151,5 @@ permalink: /kb/312/Q312487/
 	
 	=============================================================================
 	
+
+{% endraw %}

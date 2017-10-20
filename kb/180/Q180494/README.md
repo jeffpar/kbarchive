@@ -6,6 +6,8 @@ permalink: /kb/180/Q180494/
 
 ## Q180494: BUG: Private Variables in a Module Are Public
 
+{% raw %}
+
 	Article: Q180494
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -85,3 +87,5 @@ permalink: /kb/180/Q180494/
 	
 	=============================================================================
 	
+
+{% endraw %}

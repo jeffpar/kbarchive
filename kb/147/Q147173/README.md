@@ -6,6 +6,8 @@ permalink: /kb/147/Q147173/
 
 ## Q147173: PRB: Visual C++ Seems to Hang - Updating Source Control Status
 
+{% raw %}
+
 	Article: Q147173
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.00 4.10 4.20 | 4.00 4.10 4.20
@@ -95,3 +97,5 @@ permalink: /kb/147/Q147173/
 	
 	=============================================================================
 	
+
+{% endraw %}

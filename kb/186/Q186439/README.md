@@ -6,6 +6,8 @@ permalink: /kb/186/Q186439/
 
 ## Q186439: Removing Server Service Results in Memory Leak
 
+{% raw %}
+
 	Article: Q186439
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/186/Q186439/
 	
 	=============================================================================
 	
+
+{% endraw %}

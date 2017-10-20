@@ -6,6 +6,8 @@ permalink: /kb/118/Q118794/
 
 ## Q118794: SFM: Problem Capturing Windows NT Printer
 
+{% raw %}
+
 	Article: Q118794
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10
@@ -56,3 +58,5 @@ permalink: /kb/118/Q118794/
 	
 	=============================================================================
 	
+
+{% endraw %}

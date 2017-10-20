@@ -6,6 +6,8 @@ permalink: /kb/090/Q90242/
 
 ## Q90242: The NET START Memory Loader and Its Memory Usage
 
+{% raw %}
+
 	Article: Q90242
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -60,3 +62,5 @@ permalink: /kb/090/Q90242/
 	
 	=============================================================================
 	
+
+{% endraw %}

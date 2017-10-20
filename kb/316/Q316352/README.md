@@ -6,6 +6,8 @@ permalink: /kb/316/Q316352/
 
 ## Q316352: HOW TO: Configure a Separator Page in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q316352
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -114,3 +116,5 @@ permalink: /kb/316/Q316352/
 	
 	=============================================================================
 	
+
+{% endraw %}

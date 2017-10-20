@@ -6,6 +6,8 @@ permalink: /kb/155/Q155851/
 
 ## Q155851: HOWTO: Implement Cross Platform Solution 3.0 Mac/5.0 Win
 
+{% raw %}
+
 	Article: Q155851
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0; WINDOWS:5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/155/Q155851/
 	
 	=============================================================================
 	
+
+{% endraw %}

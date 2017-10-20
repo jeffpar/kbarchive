@@ -6,6 +6,8 @@ permalink: /kb/098/Q98825/
 
 ## Q98825: PROFS: Address List from PROFS Fails to Import
 
+{% raw %}
+
 	Article: Q98825
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1b,3.0
@@ -78,3 +80,5 @@ permalink: /kb/098/Q98825/
 	
 	=============================================================================
 	
+
+{% endraw %}

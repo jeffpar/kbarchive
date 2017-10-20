@@ -6,6 +6,8 @@ permalink: /kb/281/Q281215/
 
 ## Q281215: CFS: Cannot Join or Host Multiplayer Game on the Zone
 
+{% raw %}
+
 	Article: Q281215
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -260,3 +262,5 @@ permalink: /kb/281/Q281215/
 	
 	=============================================================================
 	
+
+{% endraw %}

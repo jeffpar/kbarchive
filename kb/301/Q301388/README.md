@@ -6,6 +6,8 @@ permalink: /kb/301/Q301388/
 
 ## Q301388: HOW TO: Upgrade from IIS 4.0 to IIS 5.0
 
+{% raw %}
+
 	Article: Q301388
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -153,3 +155,5 @@ permalink: /kb/301/Q301388/
 	
 	=============================================================================
 	
+
+{% endraw %}

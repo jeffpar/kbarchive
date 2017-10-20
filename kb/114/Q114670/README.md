@@ -6,6 +6,8 @@ permalink: /kb/114/Q114670/
 
 ## Q114670: HOWTO: Passing Variables to SELECT-SQL w/o Using Macro Substitut
 
+{% raw %}
+
 	Article: Q114670
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; MS-DOS:2.5b,2.6; WINDOWS:2.5b,2.6,3.0,5.0,6.0
@@ -83,3 +85,5 @@ permalink: /kb/114/Q114670/
 	
 	=============================================================================
 	
+
+{% endraw %}

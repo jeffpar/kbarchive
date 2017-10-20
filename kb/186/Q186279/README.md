@@ -6,6 +6,8 @@ permalink: /kb/186/Q186279/
 
 ## Q186279: Tutor Error Message: Invalid Page Fault in Module Kernel32.dll
 
+{% raw %}
+
 	Article: Q186279
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -149,3 +151,5 @@ permalink: /kb/186/Q186279/
 	
 	=============================================================================
 	
+
+{% endraw %}

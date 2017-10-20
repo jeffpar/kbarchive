@@ -6,6 +6,8 @@ permalink: /kb/297/Q297420/
 
 ## Q297420: Forgot Password Feature in MSN Explorer
 
+{% raw %}
+
 	Article: Q297420
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -79,3 +81,5 @@ permalink: /kb/297/Q297420/
 	
 	=============================================================================
 	
+
+{% endraw %}

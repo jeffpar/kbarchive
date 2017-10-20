@@ -6,6 +6,8 @@ permalink: /kb/119/Q119668/
 
 ## Q119668: PRB: Linker Produces 2-MB Executables Under Windows NT 3.5
 
+{% raw %}
+
 	Article: Q119668
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0
@@ -85,3 +87,5 @@ permalink: /kb/119/Q119668/
 	
 	=============================================================================
 	
+
+{% endraw %}

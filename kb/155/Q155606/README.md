@@ -6,6 +6,8 @@ permalink: /kb/155/Q155606/
 
 ## Q155606: Windows NT Setup Hangs with NE2000 Installed at Port 340
 
+{% raw %}
+
 	Article: Q155606
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/155/Q155606/
 	
 	=============================================================================
 	
+
+{% endraw %}

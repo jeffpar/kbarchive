@@ -6,6 +6,8 @@ permalink: /kb/155/Q155592/
 
 ## Q155592: XFOR: MSMI Message Tracking Does Not Log Message Size
 
+{% raw %}
+
 	Article: Q155592
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -72,3 +74,5 @@ permalink: /kb/155/Q155592/
 	
 	=============================================================================
 	
+
+{% endraw %}

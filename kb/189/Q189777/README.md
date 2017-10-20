@@ -6,6 +6,8 @@ permalink: /kb/189/Q189777/
 
 ## Q189777: PRB: HalfHeight Property Must Be Zero to Remove Title Bar
 
+{% raw %}
+
 	Article: Q189777
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -62,3 +64,5 @@ permalink: /kb/189/Q189777/
 	
 	=============================================================================
 	
+
+{% endraw %}

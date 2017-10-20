@@ -6,6 +6,8 @@ permalink: /kb/186/Q186400/
 
 ## Q186400: SMS: Msapps32.pdf Does Not Support Windows NT Clients
 
+{% raw %}
+
 	Article: Q186400
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -71,3 +73,5 @@ permalink: /kb/186/Q186400/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90240/
 
 ## Q90240: No Pop-Up Dialog Box in Windows for Workgroups TSR
 
+{% raw %}
+
 	Article: Q90240
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1; :1.0
@@ -37,3 +39,5 @@ permalink: /kb/090/Q90240/
 	
 	=============================================================================
 	
+
+{% endraw %}

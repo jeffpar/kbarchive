@@ -6,6 +6,8 @@ permalink: /kb/095/Q95243/
 
 ## Q95243: DEFINE WINDOW IN DESKTOP Documentation Error
 
+{% raw %}
+
 	Article: Q95243
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,3.0
@@ -50,3 +52,5 @@ permalink: /kb/095/Q95243/
 	
 	=============================================================================
 	
+
+{% endraw %}

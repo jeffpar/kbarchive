@@ -6,6 +6,8 @@ permalink: /kb/169/Q169860/
 
 ## Q169860: XCON: MTA Error 210 Due to Invalid ADMD Length
 
+{% raw %}
+
 	Article: Q169860
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -67,3 +69,5 @@ permalink: /kb/169/Q169860/
 	
 	=============================================================================
 	
+
+{% endraw %}

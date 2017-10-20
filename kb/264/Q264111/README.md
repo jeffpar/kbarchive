@@ -6,6 +6,8 @@ permalink: /kb/264/Q264111/
 
 ## Q264111: XCON: Internet Mail Service Requires Domain Name System Name
 
+{% raw %}
+
 	Article: Q264111
 	Product(s): Microsoft Exchange
 	Version(s): 2000,5.5 SP3
@@ -78,3 +80,5 @@ permalink: /kb/264/Q264111/
 	
 	=============================================================================
 	
+
+{% endraw %}

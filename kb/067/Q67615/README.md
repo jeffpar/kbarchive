@@ -6,6 +6,8 @@ permalink: /kb/067/Q67615/
 
 ## Q67615: FIX: Protection Violation When Structure Element Used in OPEN
 
+{% raw %}
+
 	Article: Q67615
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.0
@@ -97,3 +99,5 @@ permalink: /kb/067/Q67615/
 	
 	=============================================================================
 	
+
+{% endraw %}

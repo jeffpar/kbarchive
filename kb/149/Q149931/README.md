@@ -6,6 +6,8 @@ permalink: /kb/149/Q149931/
 
 ## Q149931: XADM: Setup Cannot Connect To Remote Directory Service
 
+{% raw %}
+
 	Article: Q149931
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/149/Q149931/
 	
 	=============================================================================
 	
+
+{% endraw %}

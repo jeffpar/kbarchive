@@ -6,6 +6,8 @@ permalink: /kb/177/Q177635/
 
 ## Q177635: XADM: How to Set Up a Disaster Recovery Server for Dir.edb
 
+{% raw %}
+
 	Article: Q177635
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -79,3 +81,5 @@ permalink: /kb/177/Q177635/
 	
 	=============================================================================
 	
+
+{% endraw %}

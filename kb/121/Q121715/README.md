@@ -6,6 +6,8 @@ permalink: /kb/121/Q121715/
 
 ## Q121715: PC NT: Err Msg: Mail Could Not Read the Entire Message...
 
+{% raw %}
+
 	Article: Q121715
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): winnt:3.5; :
@@ -96,3 +98,5 @@ permalink: /kb/121/Q121715/
 	
 	=============================================================================
 	
+
+{% endraw %}

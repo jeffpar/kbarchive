@@ -6,6 +6,8 @@ permalink: /kb/148/Q148242/
 
 ## Q148242: HOWTO: Handle OCM_CTLCOLORxxx Reflected Messages
 
+{% raw %}
+
 	Article: Q148242
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -100,3 +102,5 @@ permalink: /kb/148/Q148242/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147227/
 
 ## Q147227: HOWTO: Adding Legal Notice on Logon for Unattended Setup
 
+{% raw %}
+
 	Article: Q147227
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -107,3 +109,5 @@ permalink: /kb/147/Q147227/
 	
 	=============================================================================
 	
+
+{% endraw %}

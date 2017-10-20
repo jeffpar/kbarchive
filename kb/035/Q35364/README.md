@@ -6,6 +6,8 @@ permalink: /kb/035/Q35364/
 
 ## Q35364: Bus Mouse with InPort Not Supported in IBM PC-DOS 4.00
 
+{% raw %}
+
 	Article: Q35364
 	Product(s): See article
 	Version(s): 6.x 1.00
@@ -22,3 +24,5 @@ permalink: /kb/035/Q35364/
 	driver:
 	
 	/MOS:PCMSPDRV.MOS
+
+{% endraw %}

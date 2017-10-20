@@ -6,6 +6,8 @@ permalink: /kb/163/Q163745/
 
 ## Q163745: Explanation of DNS Notify List &quot;Secondary Notification&quot; Behavior
 
+{% raw %}
+
 	Article: Q163745
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/163/Q163745/
 	
 	=============================================================================
 	
+
+{% endraw %}

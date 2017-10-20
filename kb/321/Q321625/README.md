@@ -6,6 +6,8 @@ permalink: /kb/321/Q321625/
 
 ## Q321625: HOWTO: Use Bandwidth and Process Throttling to Limit Resources
 
+{% raw %}
+
 	Article: Q321625
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -126,3 +128,5 @@ permalink: /kb/321/Q321625/
 	
 	=============================================================================
 	
+
+{% endraw %}

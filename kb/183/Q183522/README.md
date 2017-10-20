@@ -6,6 +6,8 @@ permalink: /kb/183/Q183522/
 
 ## Q183522: FIX: Divide by Zero Creates Err with Third-Party Print Drivers
 
+{% raw %}
+
 	Article: Q183522
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -175,3 +177,5 @@ permalink: /kb/183/Q183522/
 	
 	=============================================================================
 	
+
+{% endraw %}

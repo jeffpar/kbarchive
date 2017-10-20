@@ -6,6 +6,8 @@ permalink: /kb/121/Q121435/
 
 ## Q121435: Err Msg: Secondary Interrupt Controller Detected...
 
+{% raw %}
+
 	Article: Q121435
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/121/Q121435/
 	
 	=============================================================================
 	
+
+{% endraw %}

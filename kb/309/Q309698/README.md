@@ -6,6 +6,8 @@ permalink: /kb/309/Q309698/
 
 ## Q309698: Bicycle Games: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q309698
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/309/Q309698/
 	
 	=============================================================================
 	
+
+{% endraw %}

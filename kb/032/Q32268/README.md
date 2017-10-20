@@ -6,6 +6,8 @@ permalink: /kb/032/Q32268/
 
 ## Q32268: Error Code 2 Is &quot;Syntax Error&quot; at Both Compile and Run Time
 
+{% raw %}
+
 	Article: Q32268
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -31,3 +33,5 @@ permalink: /kb/032/Q32268/
 	   "Several conditions can cause this error. The most common cause at
 	    compile time is a mistyped BASIC keyword or argument. At run-time,
 	    it is often caused by an improperly formatted DATA statement."
+
+{% endraw %}

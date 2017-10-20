@@ -6,6 +6,8 @@ permalink: /kb/074/Q74174/
 
 ## Q74174: Invalid SET TEMP Prevents Operation of Task Swapper
 
+{% raw %}
+
 	Article: Q74174
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -69,3 +71,5 @@ permalink: /kb/074/Q74174/
 	
 	=============================================================================
 	
+
+{% endraw %}

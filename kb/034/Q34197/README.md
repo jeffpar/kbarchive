@@ -6,6 +6,8 @@ permalink: /kb/034/Q34197/
 
 ## Q34197: FltSim: Erratic Mouse Behavior on IBM PS/2 Computer
 
+{% raw %}
+
 	Article: Q34197
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/034/Q34197/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163704/
 
 ## Q163704: ACC97: Some Access Commands Don't Prompt to Check Out VSS Module
 
+{% raw %}
+
 	Article: Q163704
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,97
@@ -97,3 +99,5 @@ permalink: /kb/163/Q163704/
 	
 	=============================================================================
 	
+
+{% endraw %}

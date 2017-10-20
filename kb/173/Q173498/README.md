@@ -6,6 +6,8 @@ permalink: /kb/173/Q173498/
 
 ## Q173498: Renaming MSN Connections Prevents Access to MSN
 
+{% raw %}
+
 	Article: Q173498
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -70,3 +72,5 @@ permalink: /kb/173/Q173498/
 	
 	=============================================================================
 	
+
+{% endraw %}

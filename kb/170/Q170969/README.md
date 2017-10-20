@@ -6,6 +6,8 @@ permalink: /kb/170/Q170969/
 
 ## Q170969: WD97: Macro to Cascade Open Document Windows
 
+{% raw %}
+
 	Article: Q170969
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -120,3 +122,5 @@ permalink: /kb/170/Q170969/
 	
 	=============================================================================
 	
+
+{% endraw %}

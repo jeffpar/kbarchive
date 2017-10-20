@@ -6,6 +6,8 @@ permalink: /kb/141/Q141483/
 
 ## Q141483: Sound and Video Drivers Used by Multimedia Programs
 
+{% raw %}
+
 	Article: Q141483
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a,1991 edition,1992 edition,1993 edition,1994 edition,1995 edition,1996 edition
@@ -319,3 +321,5 @@ permalink: /kb/141/Q141483/
 	
 	=============================================================================
 	
+
+{% endraw %}

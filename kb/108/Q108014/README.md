@@ -6,6 +6,8 @@ permalink: /kb/108/Q108014/
 
 ## Q108014: NET USE &#42; /HOME Err Msg: The Syntax Is Incorrect
 
+{% raw %}
+
 	Article: Q108014
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -63,3 +65,5 @@ permalink: /kb/108/Q108014/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100539/
 
 ## Q100539: FIX: No C4051 Warnings Compiling .CPP or .CXX Files
 
+{% raw %}
+
 	Article: Q100539
 	Product(s): Microsoft C Compiler
 	Version(s): 7.00 | 1.00 1.50 | 1.00
@@ -75,3 +77,5 @@ permalink: /kb/100/Q100539/
 	
 	=============================================================================
 	
+
+{% endraw %}

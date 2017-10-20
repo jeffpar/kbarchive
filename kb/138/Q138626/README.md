@@ -6,6 +6,8 @@ permalink: /kb/138/Q138626/
 
 ## Q138626: Enabling PCMCIA Support on the AT&amp;T Globalyst 130
 
+{% raw %}
+
 	Article: Q138626
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/138/Q138626/
 	
 	=============================================================================
 	
+
+{% endraw %}

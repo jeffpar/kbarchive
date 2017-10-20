@@ -6,6 +6,8 @@ permalink: /kb/232/Q232526/
 
 ## Q232526: FP: Earlier FrontPage Versions Can Use 2000 Server Extensions
 
+{% raw %}
+
 	Article: Q232526
 	Product(s): Word Front Page
 	Version(s): 1.0,1.0a,1.1,1.1a
@@ -54,3 +56,5 @@ permalink: /kb/232/Q232526/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/311/Q311380/
 
 ## Q311380: Stop Error Message in ObpDereferenceSecurityDescriptor
 
+{% raw %}
+
 	Article: Q311380
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6
@@ -89,3 +91,5 @@ permalink: /kb/311/Q311380/
 	
 	=============================================================================
 	
+
+{% endraw %}

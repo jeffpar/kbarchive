@@ -6,6 +6,8 @@ permalink: /kb/129/Q129837/
 
 ## Q129837: Nested OLE Objects Are Destroyed When Parents Are Destroyed
 
+{% raw %}
+
 	Article: Q129837
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -88,3 +90,5 @@ permalink: /kb/129/Q129837/
 	
 	=============================================================================
 	
+
+{% endraw %}

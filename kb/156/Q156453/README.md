@@ -6,6 +6,8 @@ permalink: /kb/156/Q156453/
 
 ## Q156453: DOCERR: Excel Code in Chapter 16 of Online Docs Incorrect
 
+{% raw %}
+
 	Article: Q156453
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -66,3 +68,5 @@ permalink: /kb/156/Q156453/
 	
 	=============================================================================
 	
+
+{% endraw %}

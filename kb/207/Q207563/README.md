@@ -6,6 +6,8 @@ permalink: /kb/207/Q207563/
 
 ## Q207563: HOWTO: Remotely Check the Time Zone on Windows NT
 
+{% raw %}
+
 	Article: Q207563
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/207/Q207563/
 	
 	=============================================================================
 	
+
+{% endraw %}

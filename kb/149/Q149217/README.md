@@ -6,6 +6,8 @@ permalink: /kb/149/Q149217/
 
 ## Q149217: XCLN: Microsoft Exchange Message Size Limitations
 
+{% raw %}
+
 	Article: Q149217
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; winnt:4.0
@@ -126,3 +128,5 @@ permalink: /kb/149/Q149217/
 	
 	=============================================================================
 	
+
+{% endraw %}

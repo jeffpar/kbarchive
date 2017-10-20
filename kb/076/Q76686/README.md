@@ -6,6 +6,8 @@ permalink: /kb/076/Q76686/
 
 ## Q76686: BUG: Protected-Mode GlobalCompact() Return Not Free Memory
 
+{% raw %}
+
 	Article: Q76686
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/076/Q76686/
 	
 	=============================================================================
 	
+
+{% endraw %}

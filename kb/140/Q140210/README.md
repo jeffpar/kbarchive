@@ -6,6 +6,8 @@ permalink: /kb/140/Q140210/
 
 ## Q140210: INF: Microsoft Jet 3.0 Questions and Answers
 
+{% raw %}
+
 	Article: Q140210
 	Product(s): Microsoft Product Support Information
 	Version(s): 4.0,7.0
@@ -288,3 +290,5 @@ permalink: /kb/140/Q140210/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/265/Q265261/
 
 ## Q265261: HOWTO: Improve Speed of Word Automation
 
+{% raw %}
+
 	Article: Q265261
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2000,6.0,97
@@ -203,3 +205,5 @@ permalink: /kb/265/Q265261/
 	
 	=============================================================================
 	
+
+{% endraw %}

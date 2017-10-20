@@ -6,6 +6,8 @@ permalink: /kb/117/Q117582/
 
 ## Q117582: CONN: Connection Installer Corrupts Gateway Templates
 
+{% raw %}
+
 	Article: Q117582
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -60,3 +62,5 @@ permalink: /kb/117/Q117582/
 	
 	=============================================================================
 	
+
+{% endraw %}

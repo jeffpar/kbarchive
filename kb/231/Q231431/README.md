@@ -6,6 +6,8 @@ permalink: /kb/231/Q231431/
 
 ## Q231431: Raptor CIFS Firewall Disables Access to Network Monitor Agents
 
+{% raw %}
+
 	Article: Q231431
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -69,3 +71,5 @@ permalink: /kb/231/Q231431/
 	
 	=============================================================================
 	
+
+{% endraw %}

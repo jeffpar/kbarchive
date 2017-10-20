@@ -6,6 +6,8 @@ permalink: /kb/173/Q173621/
 
 ## Q173621: WD97: Attached Template Changes to Normal After Saving Document
 
+{% raw %}
+
 	Article: Q173621
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/173/Q173621/
 	
 	=============================================================================
 	
+
+{% endraw %}

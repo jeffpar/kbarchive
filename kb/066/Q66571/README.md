@@ -6,6 +6,8 @@ permalink: /kb/066/Q66571/
 
 ## Q66571: Problem in NMAKE 1.11 with Multiple Dependency Blocks
 
+{% raw %}
+
 	Article: Q66571
 	Product(s): See article
 	Version(s): 1.11   | 1.11
@@ -35,3 +37,5 @@ permalink: /kb/066/Q66571/
 	
 	test.exe :: test.res
 	    rc test.res
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164201/
 
 ## Q164201: Access Violation Installing IIS
 
+{% raw %}
+
 	Article: Q164201
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,3.5,3.51,4.0
@@ -54,3 +56,5 @@ permalink: /kb/164/Q164201/
 	
 	=============================================================================
 	
+
+{% endraw %}

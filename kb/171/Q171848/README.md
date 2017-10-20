@@ -6,6 +6,8 @@ permalink: /kb/171/Q171848/
 
 ## Q171848: FIX: Source Control Info Not Preserved During Project Conversion
 
+{% raw %}
+
 	Article: Q171848
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0 5.0sp1
@@ -58,3 +60,5 @@ permalink: /kb/171/Q171848/
 	
 	=============================================================================
 	
+
+{% endraw %}

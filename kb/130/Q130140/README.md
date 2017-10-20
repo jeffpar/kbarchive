@@ -6,6 +6,8 @@ permalink: /kb/130/Q130140/
 
 ## Q130140: FIX: SourceSafe Might Not Get Long Filenames on Windows NT
 
+{% raw %}
+
 	Article: Q130140
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.10
@@ -51,3 +53,5 @@ permalink: /kb/130/Q130140/
 	
 	=============================================================================
 	
+
+{% endraw %}

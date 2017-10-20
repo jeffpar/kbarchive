@@ -6,6 +6,8 @@ permalink: /kb/125/Q125367/
 
 ## Q125367: HOWTO: Connecting a CRecordset to a CDialog
 
+{% raw %}
+
 	Article: Q125367
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2,4.2b,5.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/125/Q125367/
 	
 	=============================================================================
 	
+
+{% endraw %}

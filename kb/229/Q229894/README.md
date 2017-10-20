@@ -6,6 +6,8 @@ permalink: /kb/229/Q229894/
 
 ## Q229894: CSNW Experiences Delays Opening Files on the Network
 
+{% raw %}
+
 	Article: Q229894
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -159,3 +161,5 @@ permalink: /kb/229/Q229894/
 	
 	=============================================================================
 	
+
+{% endraw %}

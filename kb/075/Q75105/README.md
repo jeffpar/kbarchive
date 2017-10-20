@@ -6,6 +6,8 @@ permalink: /kb/075/Q75105/
 
 ## Q75105: Award BIOS Earlier than 3.1 Not Compatible with MS-DOS
 
+{% raw %}
+
 	Article: Q75105
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -71,3 +73,5 @@ permalink: /kb/075/Q75105/
 	
 	=============================================================================
 	
+
+{% endraw %}

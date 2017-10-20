@@ -6,6 +6,8 @@ permalink: /kb/298/Q298072/
 
 ## Q298072: URL In Address Bar Incorrect After Clicking Refresh In MSN Explo
 
+{% raw %}
+
 	Article: Q298072
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -61,3 +63,5 @@ permalink: /kb/298/Q298072/
 	
 	=============================================================================
 	
+
+{% endraw %}

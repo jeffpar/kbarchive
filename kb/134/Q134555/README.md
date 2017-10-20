@@ -6,6 +6,8 @@ permalink: /kb/134/Q134555/
 
 ## Q134555: Canon NoteJet II 486C Cannot Suspend
 
+{% raw %}
+
 	Article: Q134555
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/134/Q134555/
 	
 	=============================================================================
 	
+
+{% endraw %}

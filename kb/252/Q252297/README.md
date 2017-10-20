@@ -6,6 +6,8 @@ permalink: /kb/252/Q252297/
 
 ## Q252297: BUG: Calling GetPageInfo Can Give Unhandled Exception
 
+{% raw %}
+
 	Article: Q252297
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -109,3 +111,5 @@ permalink: /kb/252/Q252297/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186338/
 
 ## Q186338: BUG: Unattended Installation of IBMTOK Disables Networking
 
+{% raw %}
+
 	Article: Q186338
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/186/Q186338/
 	
 	=============================================================================
 	
+
+{% endraw %}

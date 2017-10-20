@@ -6,6 +6,8 @@ permalink: /kb/093/Q93574/
 
 ## Q93574: PC Win: Wrong Button Discussed in &quot;Find a Name&quot; Help Topic
 
+{% raw %}
+
 	Article: Q93574
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -47,3 +49,5 @@ permalink: /kb/093/Q93574/
 	
 	=============================================================================
 	
+
+{% endraw %}

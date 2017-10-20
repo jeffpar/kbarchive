@@ -6,6 +6,8 @@ permalink: /kb/059/Q59401/
 
 ## Q59401: Designer Quickwindows Is Alternative Graphics User Interface
 
+{% raw %}
+
 	Article: Q59401
 	Product(s): See article
 	Version(s): 4.50
@@ -53,3 +55,5 @@ permalink: /kb/059/Q59401/
 	Versions 6.00 and 6.00b, but not with QuickBASIC packages. QuickBASIC
 	owners can order it (free) from Microsoft Sales/Consumer Response by
 	calling (800) 426-9400 or (206) 882-8088.]
+
+{% endraw %}

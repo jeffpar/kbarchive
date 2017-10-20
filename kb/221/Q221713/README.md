@@ -6,6 +6,8 @@ permalink: /kb/221/Q221713/
 
 ## Q221713: FIX: Possible Run-time Error with _EvalText in _html.vcx
 
+{% raw %}
+
 	Article: Q221713
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -70,3 +72,5 @@ permalink: /kb/221/Q221713/
 	
 	=============================================================================
 	
+
+{% endraw %}

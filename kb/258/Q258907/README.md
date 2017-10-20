@@ -6,6 +6,8 @@ permalink: /kb/258/Q258907/
 
 ## Q258907: INFO: LOGO FAQ: Key Topics of Certified for Win2000 Spec
 
+{% raw %}
+
 	Article: Q258907
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -144,3 +146,5 @@ permalink: /kb/258/Q258907/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148247/
 
 ## Q148247: V-Chat Environment Installation Cannot Find File Specified
 
+{% raw %}
+
 	Article: Q148247
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -53,3 +55,5 @@ permalink: /kb/148/Q148247/
 	
 	=============================================================================
 	
+
+{% endraw %}

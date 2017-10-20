@@ -6,6 +6,8 @@ permalink: /kb/185/Q185447/
 
 ## Q185447: LUA Program Access Violation Occurs If SnaBase Fails to Start
 
+{% raw %}
+
 	Article: Q185447
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -81,3 +83,5 @@ permalink: /kb/185/Q185447/
 	
 	=============================================================================
 	
+
+{% endraw %}

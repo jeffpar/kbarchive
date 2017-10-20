@@ -6,6 +6,8 @@ permalink: /kb/264/Q264723/
 
 ## Q264723: WD97: How to Suppress Blank Lines During a Mail Merge
 
+{% raw %}
+
 	Article: Q264723
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -100,3 +102,5 @@ permalink: /kb/264/Q264723/
 	
 	=============================================================================
 	
+
+{% endraw %}

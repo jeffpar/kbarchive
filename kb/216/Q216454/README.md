@@ -6,6 +6,8 @@ permalink: /kb/216/Q216454/
 
 ## Q216454: Print Jobs Formatted Incorrectly If Using &quot;No Line Formatting&quot;
 
+{% raw %}
+
 	Article: Q216454
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0SP2,3.0SP3,4.0,4.0SP1,4.0SP2
@@ -105,3 +107,5 @@ permalink: /kb/216/Q216454/
 	
 	=============================================================================
 	
+
+{% endraw %}

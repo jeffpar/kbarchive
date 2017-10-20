@@ -6,6 +6,8 @@ permalink: /kb/263/Q263029/
 
 ## Q263029: XCON: Internet Mail Service Setup Does Not Work on Windows 2000
 
+{% raw %}
+
 	Article: Q263029
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -96,3 +98,5 @@ permalink: /kb/263/Q263029/
 	
 	=============================================================================
 	
+
+{% endraw %}

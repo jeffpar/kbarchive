@@ -6,6 +6,8 @@ permalink: /kb/173/Q173449/
 
 ## Q173449: XWEB: Clicking on Outlook Bar Before View Totally Refreshes
 
+{% raw %}
+
 	Article: Q173449
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -62,3 +64,5 @@ permalink: /kb/173/Q173449/
 	
 	=============================================================================
 	
+
+{% endraw %}

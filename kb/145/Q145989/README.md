@@ -6,6 +6,8 @@ permalink: /kb/145/Q145989/
 
 ## Q145989: Windows 95 CD-ROM Contains Two Setup.exe Files
 
+{% raw %}
+
 	Article: Q145989
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -52,3 +54,5 @@ permalink: /kb/145/Q145989/
 	
 	=============================================================================
 	
+
+{% endraw %}

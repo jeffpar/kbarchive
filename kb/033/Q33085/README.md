@@ -6,6 +6,8 @@ permalink: /kb/033/Q33085/
 
 ## Q33085: DOS Append Interacts with /Fo /Fe
 
+{% raw %}
+
 	Article: Q33085
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -40,3 +42,5 @@ permalink: /kb/033/Q33085/
 	   Although the .OBJ and .EXE files should be placed in the test3
 	directory, they will be placed into the test1 and test2 directories,
 	respectively.
+
+{% endraw %}

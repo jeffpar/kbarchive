@@ -6,6 +6,8 @@ permalink: /kb/227/Q227854/
 
 ## Q227854: XCLN: Dr. Watson in Schedule+ While Opening Outlook Calendar
 
+{% raw %}
+
 	Article: Q227854
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.5
@@ -134,3 +136,5 @@ permalink: /kb/227/Q227854/
 	
 	=============================================================================
 	
+
+{% endraw %}

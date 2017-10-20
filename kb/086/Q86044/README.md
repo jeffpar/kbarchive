@@ -6,6 +6,8 @@ permalink: /kb/086/Q86044/
 
 ## Q86044: DOC: SetRecogHook() Function Documented Incorrectly
 
+{% raw %}
+
 	Article: Q86044
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -43,3 +45,5 @@ permalink: /kb/086/Q86044/
 	
 	=============================================================================
 	
+
+{% endraw %}

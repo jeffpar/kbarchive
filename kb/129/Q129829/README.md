@@ -6,6 +6,8 @@ permalink: /kb/129/Q129829/
 
 ## Q129829: Cannot Logon to Domain After Changing Computer Name
 
+{% raw %}
+
 	Article: Q129829
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -61,3 +63,5 @@ permalink: /kb/129/Q129829/
 	
 	=============================================================================
 	
+
+{% endraw %}

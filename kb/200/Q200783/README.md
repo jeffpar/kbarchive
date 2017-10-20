@@ -6,6 +6,8 @@ permalink: /kb/200/Q200783/
 
 ## Q200783: SMS: Standard Security in SQL Server
 
+{% raw %}
+
 	Article: Q200783
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -51,3 +53,5 @@ permalink: /kb/200/Q200783/
 	
 	=============================================================================
 	
+
+{% endraw %}

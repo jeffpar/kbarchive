@@ -6,6 +6,8 @@ permalink: /kb/172/Q172019/
 
 ## Q172019: Index Server Cannot Filter Office 97 Documents
 
+{% raw %}
+
 	Article: Q172019
 	Product(s): Internet Information Server
 	Version(s): WinNT:1.1
@@ -33,3 +35,5 @@ permalink: /kb/172/Q172019/
 	
 	=============================================================================
 	
+
+{% endraw %}

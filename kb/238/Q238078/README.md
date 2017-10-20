@@ -6,6 +6,8 @@ permalink: /kb/238/Q238078/
 
 ## Q238078: Microsoft Fax Does Not Dial Complete Phone Number
 
+{% raw %}
+
 	Article: Q238078
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -51,3 +53,5 @@ permalink: /kb/238/Q238078/
 	
 	=============================================================================
 	
+
+{% endraw %}

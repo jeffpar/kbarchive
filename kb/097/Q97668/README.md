@@ -6,6 +6,8 @@ permalink: /kb/097/Q97668/
 
 ## Q97668: CONVERT.TXT: Microsoft MS-DOS 6 Stacker Conversion
 
+{% raw %}
+
 	Article: Q97668
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -293,3 +295,5 @@ permalink: /kb/097/Q97668/
 	
 	=============================================================================
 	
+
+{% endraw %}

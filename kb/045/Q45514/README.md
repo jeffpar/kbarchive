@@ -6,6 +6,8 @@ permalink: /kb/045/Q45514/
 
 ## Q45514: 4.50 Manual Has Misleading Note for Calling FUNCTION Procedure
 
+{% raw %}
+
 	Article: Q45514
 	Product(s): See article
 	Version(s): 4.50
@@ -26,3 +28,5 @@ permalink: /kb/045/Q45514/
 	entered in the QuickBASIC environment, the DECLARE will automatically
 	be added when the program is Saved. This misleading comment does not
 	appear in the documentation for Microsoft BASIC PDS Version 7.00.
+
+{% endraw %}

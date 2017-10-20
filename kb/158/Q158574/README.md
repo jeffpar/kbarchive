@@ -6,6 +6,8 @@ permalink: /kb/158/Q158574/
 
 ## Q158574: STL Sample for the set::count Function
 
+{% raw %}
+
 	Article: Q158574
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -162,3 +164,5 @@ permalink: /kb/158/Q158574/
 	
 	=============================================================================
 	
+
+{% endraw %}

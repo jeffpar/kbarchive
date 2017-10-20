@@ -6,6 +6,8 @@ permalink: /kb/044/Q44424/
 
 ## Q44424: sizeof() Returns 0 for Dereferenced Pointers to Arrays
 
+{% raw %}
+
 	Article: Q44424
 	Product(s): See article
 	Version(s): 2.00
@@ -64,3 +66,5 @@ permalink: /kb/044/Q44424/
 	
 	Microsoft is researching this problem and will post new information as
 	it becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/280/Q280494/
 
 ## Q280494: Deadlock in Ps.exe
 
+{% raw %}
+
 	Article: Q280494
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,4.0
@@ -77,3 +79,5 @@ permalink: /kb/280/Q280494/
 	
 	=============================================================================
 	
+
+{% endraw %}

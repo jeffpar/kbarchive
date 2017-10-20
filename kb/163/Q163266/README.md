@@ -6,6 +6,8 @@ permalink: /kb/163/Q163266/
 
 ## Q163266: SNA Server Service Always Sends a Null XID on a Leased Line
 
+{% raw %}
+
 	Article: Q163266
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
@@ -68,3 +70,5 @@ permalink: /kb/163/Q163266/
 	
 	=============================================================================
 	
+
+{% endraw %}

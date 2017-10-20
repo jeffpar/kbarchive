@@ -6,6 +6,8 @@ permalink: /kb/169/Q169135/
 
 ## Q169135: SMSINST: &quot;The File Does Not Contain a Valid Header&quot; Error
 
+{% raw %}
+
 	Article: Q169135
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.2
@@ -52,3 +54,5 @@ permalink: /kb/169/Q169135/
 	
 	=============================================================================
 	
+
+{% endraw %}

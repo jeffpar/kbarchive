@@ -6,6 +6,8 @@ permalink: /kb/128/Q128173/
 
 ## Q128173: Contents of the Microsoft Windows Sound System DEINSTAL.TXT
 
+{% raw %}
+
 	Article: Q128173
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -300,3 +302,5 @@ permalink: /kb/128/Q128173/
 	
 	=============================================================================
 	
+
+{% endraw %}

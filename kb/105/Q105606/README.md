@@ -6,6 +6,8 @@ permalink: /kb/105/Q105606/
 
 ## Q105606: MS-DOS 6.2 DBLSPACE.INF File
 
+{% raw %}
+
 	Article: Q105606
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -141,3 +143,5 @@ permalink: /kb/105/Q105606/
 	
 	=============================================================================
 	
+
+{% endraw %}

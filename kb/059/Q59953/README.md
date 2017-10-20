@@ -6,6 +6,8 @@ permalink: /kb/059/Q59953/
 
 ## Q59953: 9th Pixel of 9x16 VGA Fonts Mimics 8th Pixel for ASCII 192-223
 
+{% raw %}
+
 	Article: Q59953
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -61,3 +63,5 @@ permalink: /kb/059/Q59953/
 	range 192 to 223), the 9th pixel is always off, regardless of the
 	status of the 8th pixel. This behavior is limited to VGA text mode and
 	is not found in CGA, EGA, or MCGA.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/278/Q278357/
 
 ## Q278357: Adjusting the Sender's Retry Delay Can Cause Errors on Retry
 
+{% raw %}
+
 	Article: Q278357
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -97,3 +99,5 @@ permalink: /kb/278/Q278357/
 	
 	=============================================================================
 	
+
+{% endraw %}

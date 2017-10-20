@@ -6,6 +6,8 @@ permalink: /kb/214/Q214763/
 
 ## Q214763: XFOR: OVVM Connector Sends Incorrect Loc. Info. in Meeting Req.
 
+{% raw %}
+
 	Article: Q214763
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -107,3 +109,5 @@ permalink: /kb/214/Q214763/
 	
 	=============================================================================
 	
+
+{% endraw %}

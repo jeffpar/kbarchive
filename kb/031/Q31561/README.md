@@ -6,6 +6,8 @@ permalink: /kb/031/Q31561/
 
 ## Q31561: Time and Date from _dos_findfirst(), _dos_findnext()
 
+{% raw %}
+
 	Article: Q31561
 	Product(s): See article
 	Version(s): 5.00 5.10 6.00 6.00a
@@ -29,3 +31,5 @@ permalink: /kb/031/Q31561/
 	   Bits 09-0FH  = year (relative to 1980)
 	   Bits 05-08H  = month (0 through 12)
 	   Bits 00-04H  = day of month (0 through 31)
+
+{% endraw %}

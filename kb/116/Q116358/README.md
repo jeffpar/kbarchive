@@ -6,6 +6,8 @@ permalink: /kb/116/Q116358/
 
 ## Q116358: Upgrading to Windows 95 May Disable Windows NT Boot Sector
 
+{% raw %}
+
 	Article: Q116358
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -72,3 +74,5 @@ permalink: /kb/116/Q116358/
 	
 	=============================================================================
 	
+
+{% endraw %}

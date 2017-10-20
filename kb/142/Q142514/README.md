@@ -6,6 +6,8 @@ permalink: /kb/142/Q142514/
 
 ## Q142514: MSB Ocean: ErrMsg: Internal Error XXX Skip Type XXX
 
+{% raw %}
+
 	Article: Q142514
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -125,3 +127,5 @@ permalink: /kb/142/Q142514/
 	
 	=============================================================================
 	
+
+{% endraw %}

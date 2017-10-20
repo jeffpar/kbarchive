@@ -6,6 +6,8 @@ permalink: /kb/181/Q181735/
 
 ## Q181735: Adding a Link Service to a Remote SNA Server
 
+{% raw %}
+
 	Article: Q181735
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0,4.0 SP1
@@ -73,3 +75,5 @@ permalink: /kb/181/Q181735/
 	
 	=============================================================================
 	
+
+{% endraw %}

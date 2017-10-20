@@ -6,6 +6,8 @@ permalink: /kb/193/Q193990/
 
 ## Q193990: Encarta 99: Black Lines Appear on the Screen During Transitions
 
+{% raw %}
+
 	Article: Q193990
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -86,3 +88,5 @@ permalink: /kb/193/Q193990/
 	
 	=============================================================================
 	
+
+{% endraw %}

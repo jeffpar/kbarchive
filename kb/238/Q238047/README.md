@@ -6,6 +6,8 @@ permalink: /kb/238/Q238047/
 
 ## Q238047: &quot;Insufficient Hard Disk Space to Install Natural Language Query&quot;
 
+{% raw %}
+
 	Article: Q238047
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/238/Q238047/
 	
 	=============================================================================
 	
+
+{% endraw %}

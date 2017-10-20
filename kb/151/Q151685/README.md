@@ -6,6 +6,8 @@ permalink: /kb/151/Q151685/
 
 ## Q151685: Garmin GPS Interface Disk Contents (3.5 inch, 1.44 MB)
 
+{% raw %}
+
 	Article: Q151685
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/151/Q151685/
 	
 	=============================================================================
 	
+
+{% endraw %}

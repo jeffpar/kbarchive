@@ -6,6 +6,8 @@ permalink: /kb/127/Q127926/
 
 ## Q127926: Updated Proteon P1392 Token Ring Adapter Available
 
+{% raw %}
+
 	Article: Q127926
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/127/Q127926/
 	
 	=============================================================================
 	
+
+{% endraw %}

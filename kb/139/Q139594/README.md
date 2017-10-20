@@ -6,6 +6,8 @@ permalink: /kb/139/Q139594/
 
 ## Q139594: Meaning of &quot;DLCST UPSN&quot; in a SNA Server Data Link Control Trace
 
+{% raw %}
+
 	Article: Q139594
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -110,3 +112,5 @@ permalink: /kb/139/Q139594/
 	
 	=============================================================================
 	
+
+{% endraw %}

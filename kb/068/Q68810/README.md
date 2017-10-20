@@ -6,6 +6,8 @@ permalink: /kb/068/Q68810/
 
 ## Q68810: Procom SCSI Problem Running MS-DOS Applications
 
+{% raw %}
+
 	Article: Q68810
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -66,3 +68,5 @@ permalink: /kb/068/Q68810/
 	
 	=============================================================================
 	
+
+{% endraw %}

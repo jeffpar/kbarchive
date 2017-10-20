@@ -6,6 +6,8 @@ permalink: /kb/074/Q74197/
 
 ## Q74197: Minimizing Lock and Unlock Calls in Protected Mode
 
+{% raw %}
+
 	Article: Q74197
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -69,3 +71,5 @@ permalink: /kb/074/Q74197/
 	
 	=============================================================================
 	
+
+{% endraw %}

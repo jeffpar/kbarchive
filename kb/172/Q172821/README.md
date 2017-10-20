@@ -6,6 +6,8 @@ permalink: /kb/172/Q172821/
 
 ## Q172821: Expectation of Unbind Response Can Cause Application Failure
 
+{% raw %}
+
 	Article: Q172821
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,3.0 SP1
@@ -67,3 +69,5 @@ permalink: /kb/172/Q172821/
 	
 	=============================================================================
 	
+
+{% endraw %}

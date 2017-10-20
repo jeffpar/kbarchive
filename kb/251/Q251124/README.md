@@ -6,6 +6,8 @@ permalink: /kb/251/Q251124/
 
 ## Q251124: XFOR: How to Configure Alias Table in Exchange Server
 
+{% raw %}
+
 	Article: Q251124
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -135,3 +137,5 @@ permalink: /kb/251/Q251124/
 	
 	=============================================================================
 	
+
+{% endraw %}

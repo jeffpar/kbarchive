@@ -6,6 +6,8 @@ permalink: /kb/151/Q151354/
 
 ## Q151354: Sslogin Utility to Validate User Name and Password
 
+{% raw %}
+
 	Article: Q151354
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,5.0
@@ -75,3 +77,5 @@ permalink: /kb/151/Q151354/
 	
 	=============================================================================
 	
+
+{% endraw %}

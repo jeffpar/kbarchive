@@ -6,6 +6,8 @@ permalink: /kb/195/Q195330/
 
 ## Q195330: WD97: How to Change Default Tabs Stops Globally
 
+{% raw %}
+
 	Article: Q195330
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/195/Q195330/
 	
 	=============================================================================
 	
+
+{% endraw %}

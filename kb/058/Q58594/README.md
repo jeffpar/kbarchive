@@ -6,6 +6,8 @@ permalink: /kb/058/Q58594/
 
 ## Q58594: Mac Hyp: AddMacResource Adds Resources to Current Stack
 
+{% raw %}
+
 	Article: Q58594
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -53,3 +55,5 @@ permalink: /kb/058/Q58594/
 	
 	=============================================================================
 	
+
+{% endraw %}

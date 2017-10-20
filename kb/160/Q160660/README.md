@@ -6,6 +6,8 @@ permalink: /kb/160/Q160660/
 
 ## Q160660: Ntregmon.exe causes STOP 0x0000001E with New Service Pack
 
+{% raw %}
+
 	Article: Q160660
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -52,3 +54,5 @@ permalink: /kb/160/Q160660/
 	
 	=============================================================================
 	
+
+{% endraw %}

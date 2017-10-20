@@ -6,6 +6,8 @@ permalink: /kb/157/Q157470/
 
 ## Q157470: XFOR: IMC: Connectors Missing from MSDN
 
+{% raw %}
+
 	Article: Q157470
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/157/Q157470/
 	
 	=============================================================================
 	
+
+{% endraw %}

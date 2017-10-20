@@ -6,6 +6,8 @@ permalink: /kb/067/Q67845/
 
 ## Q67845: Calling a DLL Written for Windows from a TSR for MS-DOS
 
+{% raw %}
+
 	Article: Q67845
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -243,3 +245,5 @@ permalink: /kb/067/Q67845/
 	
 	=============================================================================
 	
+
+{% endraw %}

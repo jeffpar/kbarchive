@@ -6,6 +6,8 @@ permalink: /kb/173/Q173497/
 
 ## Q173497: XADM: Session Timeout Settings for Outlook Web Access
 
+{% raw %}
+
 	Article: Q173497
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -54,3 +56,5 @@ permalink: /kb/173/Q173497/
 	
 	=============================================================================
 	
+
+{% endraw %}

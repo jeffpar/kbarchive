@@ -6,6 +6,8 @@ permalink: /kb/186/Q186525/
 
 ## Q186525: Terminal Server Commands: DOSKBD
 
+{% raw %}
+
 	Article: Q186525
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -229,3 +231,5 @@ permalink: /kb/186/Q186525/
 	
 	=============================================================================
 	
+
+{% endraw %}

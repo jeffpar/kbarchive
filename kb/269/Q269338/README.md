@@ -6,6 +6,8 @@ permalink: /kb/269/Q269338/
 
 ## Q269338: Encarta 2001: How to Use the Copy to Hard Drive Feature
 
+{% raw %}
+
 	Article: Q269338
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -123,3 +125,5 @@ permalink: /kb/269/Q269338/
 	
 	=============================================================================
 	
+
+{% endraw %}

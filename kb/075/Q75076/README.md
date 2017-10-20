@@ -6,6 +6,8 @@ permalink: /kb/075/Q75076/
 
 ## Q75076: Installing MS-DOS on a Tandy 1000SL, SL2, TL, TL2, or RL
 
+{% raw %}
+
 	Article: Q75076
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -66,3 +68,5 @@ permalink: /kb/075/Q75076/
 	
 	=============================================================================
 	
+
+{% endraw %}

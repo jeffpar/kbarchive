@@ -6,6 +6,8 @@ permalink: /kb/115/Q115882/
 
 ## Q115882: MS-DOS 6.2 Upgrade 1.44 MB Files Compressed and Expanded Sizes
 
+{% raw %}
+
 	Article: Q115882
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -196,3 +198,5 @@ permalink: /kb/115/Q115882/
 	
 	=============================================================================
 	
+
+{% endraw %}

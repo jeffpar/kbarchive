@@ -6,6 +6,8 @@ permalink: /kb/074/Q74655/
 
 ## Q74655: Tandy 1000 TX Video Memory Uses the High Memory Area (HMA)
 
+{% raw %}
+
 	Article: Q74655
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -52,3 +54,5 @@ permalink: /kb/074/Q74655/
 	
 	=============================================================================
 	
+
+{% endraw %}

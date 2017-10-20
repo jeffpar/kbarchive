@@ -6,6 +6,8 @@ permalink: /kb/067/Q67313/
 
 ## Q67313: &quot;Bad Record Number&quot; Using Network Printer in OS/2, LANMAN 2.00
 
+{% raw %}
+
 	Article: Q67313
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10
@@ -51,3 +53,5 @@ permalink: /kb/067/Q67313/
 	following words:
 	
 	   CHAIN and device and I/O and LPT1 and LPRINT
+
+{% endraw %}

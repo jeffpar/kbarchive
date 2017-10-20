@@ -6,6 +6,8 @@ permalink: /kb/154/Q154799/
 
 ## Q154799: Update.exe in 3.51 Service Packs May Use Wrong Patchdll.dll
 
+{% raw %}
+
 	Article: Q154799
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -70,3 +72,5 @@ permalink: /kb/154/Q154799/
 	
 	=============================================================================
 	
+
+{% endraw %}

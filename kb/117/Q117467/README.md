@@ -6,6 +6,8 @@ permalink: /kb/117/Q117467/
 
 ## Q117467: Windows 95 Message: This Folder Already Contains a File...
 
+{% raw %}
+
 	Article: Q117467
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.0
@@ -48,3 +50,5 @@ permalink: /kb/117/Q117467/
 	
 	=============================================================================
 	
+
+{% endraw %}

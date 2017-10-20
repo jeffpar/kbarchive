@@ -6,6 +6,8 @@ permalink: /kb/240/Q240430/
 
 ## Q240430: XADM: Recovering a Deleted Protocol Object
 
+{% raw %}
+
 	Article: Q240430
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/240/Q240430/
 	
 	=============================================================================
 	
+
+{% endraw %}

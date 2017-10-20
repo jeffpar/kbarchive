@@ -6,6 +6,8 @@ permalink: /kb/141/Q141120/
 
 ## Q141120: BUG: FPNW &quot;error changing password&quot;
 
+{% raw %}
+
 	Article: Q141120
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -56,3 +58,5 @@ permalink: /kb/141/Q141120/
 	
 	=============================================================================
 	
+
+{% endraw %}

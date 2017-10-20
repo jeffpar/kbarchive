@@ -6,6 +6,8 @@ permalink: /kb/247/Q247071/
 
 ## Q247071: ICA Auto-Created Printer Functionality May Not Work with TSE SP5
 
+{% raw %}
+
 	Article: Q247071
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP5
@@ -110,3 +112,5 @@ permalink: /kb/247/Q247071/
 	
 	=============================================================================
 	
+
+{% endraw %}

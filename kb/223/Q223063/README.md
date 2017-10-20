@@ -6,6 +6,8 @@ permalink: /kb/223/Q223063/
 
 ## Q223063: FIX: ADO AddNew After Trap for EOF Not Correct w/Data Binding
 
+{% raw %}
+
 	Article: Q223063
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -145,3 +147,5 @@ permalink: /kb/223/Q223063/
 	
 	=============================================================================
 	
+
+{% endraw %}

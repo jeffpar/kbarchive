@@ -6,6 +6,8 @@ permalink: /kb/194/Q194653/
 
 ## Q194653: FIX: MSHFLexGrid Does Not Display More Than 2048 Rows
 
+{% raw %}
+
 	Article: Q194653
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -225,3 +227,5 @@ permalink: /kb/194/Q194653/
 	
 	=============================================================================
 	
+
+{% endraw %}

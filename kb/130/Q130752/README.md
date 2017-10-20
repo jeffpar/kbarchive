@@ -6,6 +6,8 @@ permalink: /kb/130/Q130752/
 
 ## Q130752: PC DB: Use of the ALIAS.TPL
 
+{% raw %}
+
 	Article: Q130752
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -58,3 +60,5 @@ permalink: /kb/130/Q130752/
 	
 	=============================================================================
 	
+
+{% endraw %}

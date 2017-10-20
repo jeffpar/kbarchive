@@ -6,6 +6,8 @@ permalink: /kb/123/Q123074/
 
 ## Q123074: MSB Human: MIDI Mapper Does Not Appear in Control Panel
 
+{% raw %}
+
 	Article: Q123074
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/123/Q123074/
 	
 	=============================================================================
 	
+
+{% endraw %}

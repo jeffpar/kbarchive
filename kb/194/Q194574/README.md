@@ -6,6 +6,8 @@ permalink: /kb/194/Q194574/
 
 ## Q194574: PRB: SET HELP TO Causes &quot;File Does Not Exist&quot; Error
 
+{% raw %}
+
 	Article: Q194574
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6,2.6a; WINDOWS:2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0
@@ -68,3 +70,5 @@ permalink: /kb/194/Q194574/
 	
 	=============================================================================
 	
+
+{% endraw %}

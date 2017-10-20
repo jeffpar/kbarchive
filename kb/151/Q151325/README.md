@@ -6,6 +6,8 @@ permalink: /kb/151/Q151325/
 
 ## Q151325: Bookshelf '96-'97: Manual Installation On Windows 3.1
 
+{% raw %}
+
 	Article: Q151325
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11
@@ -337,3 +339,5 @@ permalink: /kb/151/Q151325/
 	
 	=============================================================================
 	
+
+{% endraw %}

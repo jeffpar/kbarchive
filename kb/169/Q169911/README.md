@@ -6,6 +6,8 @@ permalink: /kb/169/Q169911/
 
 ## Q169911: Incorrect Print Output If AHM Is Contained in 5250 Datastream
 
+{% raw %}
+
 	Article: Q169911
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -67,3 +69,5 @@ permalink: /kb/169/Q169911/
 	
 	=============================================================================
 	
+
+{% endraw %}

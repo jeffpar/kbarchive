@@ -6,6 +6,8 @@ permalink: /kb/094/Q94314/
 
 ## Q94314: 32-Bit Flat Memory Model MASM Code for Windows NT
 
+{% raw %}
+
 	Article: Q94314
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.00a,6.00b,6.10,6.10a,6.11
@@ -142,3 +144,5 @@ permalink: /kb/094/Q94314/
 	
 	=============================================================================
 	
+
+{% endraw %}

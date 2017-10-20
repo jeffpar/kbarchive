@@ -6,6 +6,8 @@ permalink: /kb/170/Q170735/
 
 ## Q170735: WD97: Word Hangs After Inserting Outlook Address Book Address
 
+{% raw %}
+
 	Article: Q170735
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/170/Q170735/
 	
 	=============================================================================
 	
+
+{% endraw %}

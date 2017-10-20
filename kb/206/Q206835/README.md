@@ -6,6 +6,8 @@ permalink: /kb/206/Q206835/
 
 ## Q206835: SMS: Courier Sender Receives Incomplete Parcel
 
+{% raw %}
+
 	Article: Q206835
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/206/Q206835/
 	
 	=============================================================================
 	
+
+{% endraw %}

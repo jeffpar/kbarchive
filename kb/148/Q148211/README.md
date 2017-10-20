@@ -6,6 +6,8 @@ permalink: /kb/148/Q148211/
 
 ## Q148211: Seven Habits Tools Goals Not Appear When Recurring
 
+{% raw %}
+
 	Article: Q148211
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -43,3 +45,5 @@ permalink: /kb/148/Q148211/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174709/
 
 ## Q174709: XWEB: Err Msg: Exchange Server Down or HTTP Service Disabled
 
+{% raw %}
+
 	Article: Q174709
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -68,3 +70,5 @@ permalink: /kb/174/Q174709/
 	
 	=============================================================================
 	
+
+{% endraw %}

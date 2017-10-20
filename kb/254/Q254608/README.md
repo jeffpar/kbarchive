@@ -6,6 +6,8 @@ permalink: /kb/254/Q254608/
 
 ## Q254608: Configuring Phonebook Entry for Callback Causes Extra Devices
 
+{% raw %}
+
 	Article: Q254608
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/254/Q254608/
 	
 	=============================================================================
 	
+
+{% endraw %}

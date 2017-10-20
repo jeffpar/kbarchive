@@ -6,6 +6,8 @@ permalink: /kb/197/Q197115/
 
 ## Q197115: XFOR: PROFS Connector Sends NULL Date and Time to RSCS
 
+{% raw %}
+
 	Article: Q197115
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -94,3 +96,5 @@ permalink: /kb/197/Q197115/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141879/
 
 ## Q141879: PRB: Print Function Evaluation Order Has Changed
 
+{% raw %}
+
 	Article: Q141879
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -96,3 +98,5 @@ permalink: /kb/141/Q141879/
 	
 	=============================================================================
 	
+
+{% endraw %}

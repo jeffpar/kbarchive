@@ -6,6 +6,8 @@ permalink: /kb/316/Q316304/
 
 ## Q316304: HOW TO: Configure a Stripe Set with Parity in Windows NT Server
 
+{% raw %}
+
 	Article: Q316304
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -162,3 +164,5 @@ permalink: /kb/316/Q316304/
 	
 	=============================================================================
 	
+
+{% endraw %}

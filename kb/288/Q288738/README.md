@@ -6,6 +6,8 @@ permalink: /kb/288/Q288738/
 
 ## Q288738: Queries with Periods in Document Name Fail to Find Text in Files
 
+{% raw %}
+
 	Article: Q288738
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -52,3 +54,5 @@ permalink: /kb/288/Q288738/
 	
 	=============================================================================
 	
+
+{% endraw %}

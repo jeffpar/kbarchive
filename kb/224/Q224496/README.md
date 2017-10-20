@@ -6,6 +6,8 @@ permalink: /kb/224/Q224496/
 
 ## Q224496: Error Message Using Roaming Profiles Stored on Macintosh Volume
 
+{% raw %}
+
 	Article: Q224496
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -61,3 +63,5 @@ permalink: /kb/224/Q224496/
 	
 	=============================================================================
 	
+
+{% endraw %}

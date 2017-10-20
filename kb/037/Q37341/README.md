@@ -6,6 +6,8 @@ permalink: /kb/037/Q37341/
 
 ## Q37341: How to Create Your Own Font in Character Mode for EGA Text
 
+{% raw %}
+
 	Article: Q37341
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -58,3 +60,5 @@ permalink: /kb/037/Q37341/
 	CALL interruptX(&H10, RegL, RegL)  ' make the call
 	
 	PRINT CHR$(0) + CHR$(1) + CHR$(2) + CHR$(3)
+
+{% endraw %}

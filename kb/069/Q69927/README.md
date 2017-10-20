@@ -6,6 +6,8 @@ permalink: /kb/069/Q69927/
 
 ## Q69927: PC Hangs with 8514/a Display and Printing to Banyan Network
 
+{% raw %}
+
 	Article: Q69927
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -68,3 +70,5 @@ permalink: /kb/069/Q69927/
 	
 	=============================================================================
 	
+
+{% endraw %}

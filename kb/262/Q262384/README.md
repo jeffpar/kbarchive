@@ -6,6 +6,8 @@ permalink: /kb/262/Q262384/
 
 ## Q262384: SMS: Info on Configuring Collection Evaluator Resync Interval
 
+{% raw %}
+
 	Article: Q262384
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -79,3 +81,5 @@ permalink: /kb/262/Q262384/
 	
 	=============================================================================
 	
+
+{% endraw %}

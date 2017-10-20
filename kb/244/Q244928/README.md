@@ -6,6 +6,8 @@ permalink: /kb/244/Q244928/
 
 ## Q244928: PRB: Unrecognized Phrase/Keyword Message Saving Remote Views
 
+{% raw %}
+
 	Article: Q244928
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,5.0a,6.0
@@ -95,3 +97,5 @@ permalink: /kb/244/Q244928/
 	
 	=============================================================================
 	
+
+{% endraw %}

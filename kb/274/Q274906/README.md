@@ -6,6 +6,8 @@ permalink: /kb/274/Q274906/
 
 ## Q274906: CFS2 Err Msg: Rundll32 Has Caused an Error in IVIVIDEO.AX
 
+{% raw %}
+
 	Article: Q274906
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -73,3 +75,5 @@ permalink: /kb/274/Q274906/
 	
 	=============================================================================
 	
+
+{% endraw %}

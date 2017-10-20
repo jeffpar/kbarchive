@@ -6,6 +6,8 @@ permalink: /kb/308/Q308705/
 
 ## Q308705: SMS: Cannot Install Client Components w/ Terminal Services
 
+{% raw %}
+
 	Article: Q308705
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -61,3 +63,5 @@ permalink: /kb/308/Q308705/
 	
 	=============================================================================
 	
+
+{% endraw %}

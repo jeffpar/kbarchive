@@ -6,6 +6,8 @@ permalink: /kb/252/Q252193/
 
 ## Q252193: POSIX-Based Program Leaks Private Bytes or Non Paged Pool Bytes
 
+{% raw %}
+
 	Article: Q252193
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/252/Q252193/
 	
 	=============================================================================
 	
+
+{% endraw %}

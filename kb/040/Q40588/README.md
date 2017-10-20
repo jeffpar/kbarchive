@@ -6,6 +6,8 @@ permalink: /kb/040/Q40588/
 
 ## Q40588: Search Order for Include Files When Using APPEND Command
 
+{% raw %}
+
 	Article: Q40588
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -30,3 +32,5 @@ permalink: /kb/040/Q40588/
 	Note: The APPEND command can cause other problems during
 	compilation, linking, and execution. Microsoft recommends not using
 	the APPEND command when developing C programs.
+
+{% endraw %}

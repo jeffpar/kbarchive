@@ -6,6 +6,8 @@ permalink: /kb/092/Q92465/
 
 ## Q92465: APM.EXE Needed for APM With Twinhead 386SL Notebook
 
+{% raw %}
+
 	Article: Q92465
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/092/Q92465/
 	
 	=============================================================================
 	
+
+{% endraw %}

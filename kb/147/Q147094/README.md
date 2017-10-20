@@ -6,6 +6,8 @@ permalink: /kb/147/Q147094/
 
 ## Q147094: XCLN: View/Group By Changes Column Order, Column Size
 
+{% raw %}
+
 	Article: Q147094
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -55,3 +57,5 @@ permalink: /kb/147/Q147094/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102913/
 
 ## Q102913: Scenes 1.0: Adding Pictures to Default PICSETS
 
+{% raw %}
+
 	Article: Q102913
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -83,3 +85,5 @@ permalink: /kb/102/Q102913/
 	
 	=============================================================================
 	
+
+{% endraw %}

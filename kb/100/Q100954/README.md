@@ -6,6 +6,8 @@ permalink: /kb/100/Q100954/
 
 ## Q100954: MS-DOS 5.0 Components Not Included with OmniBook
 
+{% raw %}
+
 	Article: Q100954
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:5.0; WINDOWS:3.1
@@ -124,3 +126,5 @@ permalink: /kb/100/Q100954/
 	
 	=============================================================================
 	
+
+{% endraw %}

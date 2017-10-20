@@ -6,6 +6,8 @@ permalink: /kb/174/Q174464/
 
 ## Q174464: Windows 95 RAS Client Cannot Ping Remote Network
 
+{% raw %}
+
 	Article: Q174464
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WinNT:4.0;Windows:95
@@ -57,3 +59,5 @@ permalink: /kb/174/Q174464/
 	
 	=============================================================================
 	
+
+{% endraw %}

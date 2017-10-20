@@ -6,6 +6,8 @@ permalink: /kb/106/Q106433/
 
 ## Q106433: MS-DOS 6.2 Step-Up Error Message: Cannot Update File
 
+{% raw %}
+
 	Article: Q106433
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -152,3 +154,5 @@ permalink: /kb/106/Q106433/
 	
 	=============================================================================
 	
+
+{% endraw %}

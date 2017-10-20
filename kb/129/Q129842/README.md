@@ -6,6 +6,8 @@ permalink: /kb/129/Q129842/
 
 ## Q129842: Maximum Number of Send and Receive Packets Used By NBF
 
+{% raw %}
+
 	Article: Q129842
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 4.0
@@ -96,3 +98,5 @@ permalink: /kb/129/Q129842/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169606/
 
 ## Q169606: FP: Creating Links to Files Inside and Outside of a Web
 
+{% raw %}
+
 	Article: Q169606
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97; macintosh:1.0
@@ -144,3 +146,5 @@ permalink: /kb/169/Q169606/
 	
 	=============================================================================
 	
+
+{% endraw %}

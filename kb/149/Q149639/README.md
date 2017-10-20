@@ -6,6 +6,8 @@ permalink: /kb/149/Q149639/
 
 ## Q149639: PRB: Network DDE Requests Fail from Visual FoxPro
 
+{% raw %}
+
 	Article: Q149639
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
@@ -80,3 +82,5 @@ permalink: /kb/149/Q149639/
 	
 	=============================================================================
 	
+
+{% endraw %}

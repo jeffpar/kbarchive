@@ -6,6 +6,8 @@ permalink: /kb/146/Q146366/
 
 ## Q146366: Mtg Req: Decline and Don't Send Response - Attendee Icon Wrong
 
+{% raw %}
+
 	Article: Q146366
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:4.0,7.0; Win95:4.0
@@ -49,3 +51,5 @@ permalink: /kb/146/Q146366/
 	
 	=============================================================================
 	
+
+{% endraw %}

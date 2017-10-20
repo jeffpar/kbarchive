@@ -6,6 +6,8 @@ permalink: /kb/196/Q196818/
 
 ## Q196818: XFOR: How to Limit Recipients on Outbound SMTP Messages
 
+{% raw %}
+
 	Article: Q196818
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -111,3 +113,5 @@ permalink: /kb/196/Q196818/
 	
 	=============================================================================
 	
+
+{% endraw %}

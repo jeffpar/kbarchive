@@ -6,6 +6,8 @@ permalink: /kb/317/Q317925/
 
 ## Q317925: BUG: Location Files Are Checked Out from the Original Project Af
 
+{% raw %}
+
 	Article: Q317925
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/317/Q317925/
 	
 	=============================================================================
 	
+
+{% endraw %}

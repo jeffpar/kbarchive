@@ -6,6 +6,8 @@ permalink: /kb/064/Q64180/
 
 ## Q64180: PRB: L1089 Error Caused by Incorrect Linker Version
 
+{% raw %}
+
 	Article: Q64180
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:3.x,4.x,5.0x,5.1x,5.3,5.31.009,5.5,5.6; OS/2:5.0x,5.1,5.11,5.13,5.15
@@ -60,3 +62,5 @@ permalink: /kb/064/Q64180/
 	
 	=============================================================================
 	
+
+{% endraw %}

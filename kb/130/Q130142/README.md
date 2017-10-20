@@ -6,6 +6,8 @@ permalink: /kb/130/Q130142/
 
 ## Q130142: HOWTO: Install SourceSafe on a Windows NT Client Workstation
 
+{% raw %}
+
 	Article: Q130142
 	Product(s): Microsoft SourceSafe
 	Version(s): 3.1
@@ -74,3 +76,5 @@ permalink: /kb/130/Q130142/
 	
 	=============================================================================
 	
+
+{% endraw %}

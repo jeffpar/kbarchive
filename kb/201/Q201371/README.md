@@ -6,6 +6,8 @@ permalink: /kb/201/Q201371/
 
 ## Q201371: How to Reset License Information in License Manager
 
+{% raw %}
+
 	Article: Q201371
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/201/Q201371/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166929/
 
 ## Q166929: FIX: DBCombo Control Change Event Does Not Fire
 
+{% raw %}
+
 	Article: Q166929
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -133,3 +135,5 @@ permalink: /kb/166/Q166929/
 	
 	=============================================================================
 	
+
+{% endraw %}

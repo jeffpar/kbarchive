@@ -6,6 +6,8 @@ permalink: /kb/218/Q218636/
 
 ## Q218636: DHCP Options Not Set by SBS Setup
 
+{% raw %}
+
 	Article: Q218636
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5
@@ -95,3 +97,5 @@ permalink: /kb/218/Q218636/
 	
 	=============================================================================
 	
+
+{% endraw %}

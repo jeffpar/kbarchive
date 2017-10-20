@@ -6,6 +6,8 @@ permalink: /kb/107/Q107199/
 
 ## Q107199: Windows Help Does Not Save Maximized Window Position
 
+{% raw %}
+
 	Article: Q107199
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -107,3 +109,5 @@ permalink: /kb/107/Q107199/
 	
 	=============================================================================
 	
+
+{% endraw %}

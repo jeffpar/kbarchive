@@ -6,6 +6,8 @@ permalink: /kb/184/Q184819/
 
 ## Q184819: Awkward COBOL Definition for Bounded Recordsets
 
+{% raw %}
+
 	Article: Q184819
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -81,3 +83,5 @@ permalink: /kb/184/Q184819/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/188/Q188054/
 
 ## Q188054: SMS: Description and Usage of Smgenie.exe (Event Generator)
 
+{% raw %}
+
 	Article: Q188054
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -94,3 +96,5 @@ permalink: /kb/188/Q188054/
 	
 	=============================================================================
 	
+
+{% endraw %}

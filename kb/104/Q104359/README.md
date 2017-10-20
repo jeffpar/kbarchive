@@ -6,6 +6,8 @@ permalink: /kb/104/Q104359/
 
 ## Q104359: PC Win: Sharing PAB with Other Users
 
+{% raw %}
+
 	Article: Q104359
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b,3.2
@@ -134,3 +136,5 @@ permalink: /kb/104/Q104359/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/295/Q295753/
 
 ## Q295753: XFOR: Dirsync Between Exchange Server 5.5 &amp; cc:Mail
 
+{% raw %}
+
 	Article: Q295753
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -129,3 +131,5 @@ permalink: /kb/295/Q295753/
 	
 	=============================================================================
 	
+
+{% endraw %}

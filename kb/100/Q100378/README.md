@@ -6,6 +6,8 @@ permalink: /kb/100/Q100378/
 
 ## Q100378: Multimedia Err Msg: Filename Extension of the Specified...
 
+{% raw %}
+
 	Article: Q100378
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/100/Q100378/
 	
 	=============================================================================
 	
+
+{% endraw %}

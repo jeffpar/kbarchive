@@ -6,6 +6,8 @@ permalink: /kb/135/Q135515/
 
 ## Q135515: DOC: Picture's Caption Different from Example's Caption
 
+{% raw %}
+
 	Article: Q135515
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/135/Q135515/
 	
 	=============================================================================
 	
+
+{% endraw %}

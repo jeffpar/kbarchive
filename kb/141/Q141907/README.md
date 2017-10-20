@@ -6,6 +6,8 @@ permalink: /kb/141/Q141907/
 
 ## Q141907: PRB: Cannot Set the Visible Property of the PicClip Control
 
+{% raw %}
+
 	Article: Q141907
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -98,3 +100,5 @@ permalink: /kb/141/Q141907/
 	
 	=============================================================================
 	
+
+{% endraw %}

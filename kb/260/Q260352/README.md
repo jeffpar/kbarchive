@@ -6,6 +6,8 @@ permalink: /kb/260/Q260352/
 
 ## Q260352: PRB: Delay in Receiving Final Report Using Routing Wizard
 
+{% raw %}
+
 	Article: Q260352
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -121,3 +123,5 @@ permalink: /kb/260/Q260352/
 	
 	=============================================================================
 	
+
+{% endraw %}

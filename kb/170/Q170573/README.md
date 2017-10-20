@@ -6,6 +6,8 @@ permalink: /kb/170/Q170573/
 
 ## Q170573: MDG: Remote Mail is BlackListed
 
+{% raw %}
+
 	Article: Q170573
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2a
@@ -58,3 +60,5 @@ permalink: /kb/170/Q170573/
 	
 	=============================================================================
 	
+
+{% endraw %}

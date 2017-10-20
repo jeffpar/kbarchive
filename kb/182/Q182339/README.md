@@ -6,6 +6,8 @@ permalink: /kb/182/Q182339/
 
 ## Q182339: XFOR: Verifying the Configuration of an Internet Mail Service
 
+{% raw %}
+
 	Article: Q182339
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,4.0a,4.5,5.0,5.5
@@ -121,3 +123,5 @@ permalink: /kb/182/Q182339/
 	
 	=============================================================================
 	
+
+{% endraw %}

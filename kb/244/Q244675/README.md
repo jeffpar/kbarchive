@@ -6,6 +6,8 @@ permalink: /kb/244/Q244675/
 
 ## Q244675: HOWTO:Use Windows Scripting Host to Read, Write, Delete Registry
 
+{% raw %}
+
 	Article: Q244675
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -137,3 +139,5 @@ permalink: /kb/244/Q244675/
 	
 	=============================================================================
 	
+
+{% endraw %}

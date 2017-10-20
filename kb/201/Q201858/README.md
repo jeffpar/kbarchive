@@ -6,6 +6,8 @@ permalink: /kb/201/Q201858/
 
 ## Q201858: SMS: IP Address Cannot Be Used as SQL Server Name During Setup
 
+{% raw %}
+
 	Article: Q201858
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -51,3 +53,5 @@ permalink: /kb/201/Q201858/
 	
 	=============================================================================
 	
+
+{% endraw %}

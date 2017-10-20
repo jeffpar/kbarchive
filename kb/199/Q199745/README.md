@@ -6,6 +6,8 @@ permalink: /kb/199/Q199745/
 
 ## Q199745: SMS: Ensuring SW Metering Does Not Start Out of License Apps
 
+{% raw %}
+
 	Article: Q199745
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -67,3 +69,5 @@ permalink: /kb/199/Q199745/
 	
 	=============================================================================
 	
+
+{% endraw %}

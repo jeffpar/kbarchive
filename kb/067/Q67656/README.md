@@ -6,6 +6,8 @@ permalink: /kb/067/Q67656/
 
 ## Q67656: Zenith ZBF-3339-EK 16 MHz 386 Conflict w/ Server Services
 
+{% raw %}
+
 	Article: Q67656
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/067/Q67656/
 	
 	=============================================================================
 	
+
+{% endraw %}

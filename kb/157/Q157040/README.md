@@ -6,6 +6,8 @@ permalink: /kb/157/Q157040/
 
 ## Q157040: INFO: BackStyle=0 Is Transparent When EditBox Is Not in Focus
 
+{% raw %}
+
 	Article: Q157040
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -76,3 +78,5 @@ permalink: /kb/157/Q157040/
 	
 	=============================================================================
 	
+
+{% endraw %}

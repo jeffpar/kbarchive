@@ -6,6 +6,8 @@ permalink: /kb/151/Q151043/
 
 ## Q151043: PPT7: How to Customize Right Mouse Button Behavior in PowerPoint
 
+{% raw %}
+
 	Article: Q151043
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -54,3 +56,5 @@ permalink: /kb/151/Q151043/
 	
 	=============================================================================
 	
+
+{% endraw %}

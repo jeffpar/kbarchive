@@ -6,6 +6,8 @@ permalink: /kb/182/Q182641/
 
 ## Q182641: 5250 App Doesn't Support Accelerator Keys from Sign-on Box
 
+{% raw %}
+
 	Article: Q182641
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,4.0
@@ -54,3 +56,5 @@ permalink: /kb/182/Q182641/
 	
 	=============================================================================
 	
+
+{% endraw %}

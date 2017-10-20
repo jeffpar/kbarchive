@@ -6,6 +6,8 @@ permalink: /kb/255/Q255922/
 
 ## Q255922: Management Agent Configuration Form Contains Incorrect Example
 
+{% raw %}
+
 	Article: Q255922
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -65,3 +67,5 @@ permalink: /kb/255/Q255922/
 	
 	=============================================================================
 	
+
+{% endraw %}

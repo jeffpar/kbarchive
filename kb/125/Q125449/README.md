@@ -6,6 +6,8 @@ permalink: /kb/125/Q125449/
 
 ## Q125449: Arranging Icons by Type Does Not Sort by Extension
 
+{% raw %}
+
 	Article: Q125449
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -51,3 +53,5 @@ permalink: /kb/125/Q125449/
 	
 	=============================================================================
 	
+
+{% endraw %}

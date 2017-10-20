@@ -6,6 +6,8 @@ permalink: /kb/169/Q169158/
 
 ## Q169158: Adding Interface to OSPF Does Not Enable the OSPF Protocol
 
+{% raw %}
+
 	Article: Q169158
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -48,3 +50,5 @@ permalink: /kb/169/Q169158/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40152/
 
 ## Q40152: How to Incorporate Paintbrush (PCX) EGA File into QB SCREEN 9
 
+{% raw %}
+
 	Article: Q40152
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -79,3 +81,5 @@ permalink: /kb/040/Q40152/
 	  NEXT I
 	  DEF SEG
 	END SUB
+
+{% endraw %}

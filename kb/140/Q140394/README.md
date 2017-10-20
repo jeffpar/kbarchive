@@ -6,6 +6,8 @@ permalink: /kb/140/Q140394/
 
 ## Q140394: Background Color of Excel 5.0 Changes Intermittently
 
+{% raw %}
+
 	Article: Q140394
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -56,3 +58,5 @@ permalink: /kb/140/Q140394/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172099/
 
 ## Q172099: PRB: T-SQL - Running Remote and Local SQL Debugging
 
+{% raw %}
+
 	Article: Q172099
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0,97
@@ -108,3 +110,5 @@ permalink: /kb/172/Q172099/
 	
 	=============================================================================
 	
+
+{% endraw %}

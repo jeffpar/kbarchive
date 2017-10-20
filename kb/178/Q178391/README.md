@@ -6,6 +6,8 @@ permalink: /kb/178/Q178391/
 
 ## Q178391: PRB: Oracle TNS: Authentication Service Initialization Error
 
+{% raw %}
+
 	Article: Q178391
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.0,2.1,2.5,2.6,Build 2.573.2927,Build 2.73.7269,Build 2.73.7283.03,Build 2.73.7356
@@ -62,3 +64,5 @@ permalink: /kb/178/Q178391/
 	
 	=============================================================================
 	
+
+{% endraw %}

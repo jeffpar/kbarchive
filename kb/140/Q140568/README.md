@@ -6,6 +6,8 @@ permalink: /kb/140/Q140568/
 
 ## Q140568: DriveSpace 3 Reports Only Half of Free Space Specified
 
+{% raw %}
+
 	Article: Q140568
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -69,3 +71,5 @@ permalink: /kb/140/Q140568/
 	
 	=============================================================================
 	
+
+{% endraw %}

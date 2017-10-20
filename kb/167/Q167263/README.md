@@ -6,6 +6,8 @@ permalink: /kb/167/Q167263/
 
 ## Q167263: PRB: &lt;filename&gt; is Already Open
 
+{% raw %}
+
 	Article: Q167263
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/167/Q167263/
 	
 	=============================================================================
 	
+
+{% endraw %}

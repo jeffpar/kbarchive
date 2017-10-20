@@ -6,6 +6,8 @@ permalink: /kb/041/Q41551/
 
 ## Q41551: QuickC 2.00 README.DOC: Passing By Value
 
+{% raw %}
+
 	Article: Q41551
 	Product(s): See article
 	Version(s): 2.00
@@ -26,3 +28,5 @@ permalink: /kb/041/Q41551/
 	The phrase should read as follows:
 	
 	   Since the variables in the showme function are local
+
+{% endraw %}

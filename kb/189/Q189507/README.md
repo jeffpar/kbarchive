@@ -6,6 +6,8 @@ permalink: /kb/189/Q189507/
 
 ## Q189507: PRB: Pset Method Does Not Work When DrawWidth Property &lt; 2
 
+{% raw %}
+
 	Article: Q189507
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -77,3 +79,5 @@ permalink: /kb/189/Q189507/
 	
 	=============================================================================
 	
+
+{% endraw %}

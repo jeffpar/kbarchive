@@ -6,6 +6,8 @@ permalink: /kb/175/Q175909/
 
 ## Q175909: HOWTO: Hide an Executable from the Taskbar
 
+{% raw %}
+
 	Article: Q175909
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -101,3 +103,5 @@ permalink: /kb/175/Q175909/
 	
 	=============================================================================
 	
+
+{% endraw %}

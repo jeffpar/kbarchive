@@ -6,6 +6,8 @@ permalink: /kb/275/Q275712/
 
 ## Q275712: BUG: Custom Build Step Is Not Applied to New Configuration
 
+{% raw %}
+
 	Article: Q275712
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -108,3 +110,5 @@ permalink: /kb/275/Q275712/
 	
 	=============================================================================
 	
+
+{% endraw %}

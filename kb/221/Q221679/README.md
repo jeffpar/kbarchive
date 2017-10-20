@@ -6,6 +6,8 @@ permalink: /kb/221/Q221679/
 
 ## Q221679: FIX: Servers Do Not Release if Init Returns .F.
 
+{% raw %}
+
 	Article: Q221679
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -158,3 +160,5 @@ permalink: /kb/221/Q221679/
 	
 	=============================================================================
 	
+
+{% endraw %}

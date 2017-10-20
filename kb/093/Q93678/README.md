@@ -6,6 +6,8 @@ permalink: /kb/093/Q93678/
 
 ## Q93678: Differences Between SMARTDrive Version 4.0 and 4.1
 
+{% raw %}
+
 	Article: Q93678
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -71,3 +73,5 @@ permalink: /kb/093/Q93678/
 	
 	=============================================================================
 	
+
+{% endraw %}

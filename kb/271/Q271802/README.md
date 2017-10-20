@@ -6,6 +6,8 @@ permalink: /kb/271/Q271802/
 
 ## Q271802: Passwords in Metadirectory Services Cannot Be Reset to Null
 
+{% raw %}
+
 	Article: Q271802
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -53,3 +55,5 @@ permalink: /kb/271/Q271802/
 	
 	=============================================================================
 	
+
+{% endraw %}

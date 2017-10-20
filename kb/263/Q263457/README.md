@@ -6,6 +6,8 @@ permalink: /kb/263/Q263457/
 
 ## Q263457: XADM: Information Store Access Violation w. Long One-Off Addr.
 
+{% raw %}
+
 	Article: Q263457
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -100,3 +102,5 @@ permalink: /kb/263/Q263457/
 	
 	=============================================================================
 	
+
+{% endraw %}

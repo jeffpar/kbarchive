@@ -6,6 +6,8 @@ permalink: /kb/129/Q129298/
 
 ## Q129298: Windows NT 3.51 Generic / Text Only Driver Halftoning Option
 
+{% raw %}
+
 	Article: Q129298
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -47,3 +49,5 @@ permalink: /kb/129/Q129298/
 	
 	=============================================================================
 	
+
+{% endraw %}

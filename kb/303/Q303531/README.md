@@ -6,6 +6,8 @@ permalink: /kb/303/Q303531/
 
 ## Q303531: Unable to Link to a Database
 
+{% raw %}
+
 	Article: Q303531
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -100,3 +102,5 @@ permalink: /kb/303/Q303531/
 	
 	=============================================================================
 	
+
+{% endraw %}

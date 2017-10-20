@@ -6,6 +6,8 @@ permalink: /kb/262/Q262203/
 
 ## Q262203: Roaming User Profile May Be Corrupted by Copy Hive Problem
 
+{% raw %}
+
 	Article: Q262203
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -86,3 +88,5 @@ permalink: /kb/262/Q262203/
 	
 	=============================================================================
 	
+
+{% endraw %}

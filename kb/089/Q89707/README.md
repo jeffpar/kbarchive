@@ -6,6 +6,8 @@ permalink: /kb/089/Q89707/
 
 ## Q89707: Shaded Areas Don't Print the Same in Windows 3.0 and 3.1
 
+{% raw %}
+
 	Article: Q89707
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1
@@ -45,3 +47,5 @@ permalink: /kb/089/Q89707/
 	
 	=============================================================================
 	
+
+{% endraw %}

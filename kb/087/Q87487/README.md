@@ -6,6 +6,8 @@ permalink: /kb/087/Q87487/
 
 ## Q87487: X400: Setting the X.400 Log File Debug Option -LD
 
+{% raw %}
+
 	Article: Q87487
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -38,3 +40,5 @@ permalink: /kb/087/Q87487/
 	
 	=============================================================================
 	
+
+{% endraw %}

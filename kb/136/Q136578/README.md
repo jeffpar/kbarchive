@@ -6,6 +6,8 @@ permalink: /kb/136/Q136578/
 
 ## Q136578: Code Samples Demonstrate How to Use the Outline Control
 
+{% raw %}
+
 	Article: Q136578
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -188,3 +190,5 @@ permalink: /kb/136/Q136578/
 	
 	=============================================================================
 	
+
+{% endraw %}

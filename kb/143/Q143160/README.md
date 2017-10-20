@@ -6,6 +6,8 @@ permalink: /kb/143/Q143160/
 
 ## Q143160: Enterprise Server Stops During Print Spooling
 
+{% raw %}
+
 	Article: Q143160
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/143/Q143160/
 	
 	=============================================================================
 	
+
+{% endraw %}

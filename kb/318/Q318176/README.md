@@ -6,6 +6,8 @@ permalink: /kb/318/Q318176/
 
 ## Q318176: SSI Output Disappears After You Apply Security Patches
 
+{% raw %}
+
 	Article: Q318176
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -172,3 +174,5 @@ permalink: /kb/318/Q318176/
 	
 	=============================================================================
 	
+
+{% endraw %}

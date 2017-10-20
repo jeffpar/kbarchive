@@ -6,6 +6,8 @@ permalink: /kb/226/Q226882/
 
 ## Q226882: SMS: APMSPY.EXE Requires Program Number to Display Offers
 
+{% raw %}
+
 	Article: Q226882
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -59,3 +61,5 @@ permalink: /kb/226/Q226882/
 	
 	=============================================================================
 	
+
+{% endraw %}

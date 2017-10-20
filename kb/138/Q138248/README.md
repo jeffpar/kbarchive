@@ -6,6 +6,8 @@ permalink: /kb/138/Q138248/
 
 ## Q138248: Instsupp.bat File Does Not Install Restore.exe Properly
 
+{% raw %}
+
 	Article: Q138248
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -131,3 +133,5 @@ permalink: /kb/138/Q138248/
 	
 	=============================================================================
 	
+
+{% endraw %}

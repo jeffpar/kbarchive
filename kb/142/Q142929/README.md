@@ -6,6 +6,8 @@ permalink: /kb/142/Q142929/
 
 ## Q142929: INFO: Comparing DAO and RDO in Visual Basic 4.0
 
+{% raw %}
+
 	Article: Q142929
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -171,3 +173,5 @@ permalink: /kb/142/Q142929/
 	
 	=============================================================================
 	
+
+{% endraw %}

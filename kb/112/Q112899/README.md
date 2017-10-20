@@ -6,6 +6,8 @@ permalink: /kb/112/Q112899/
 
 ## Q112899: PC WRmt: Problems Mixing Language Versions of Mail
 
+{% raw %}
+
 	Article: Q112899
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -72,3 +74,5 @@ permalink: /kb/112/Q112899/
 	
 	=============================================================================
 	
+
+{% endraw %}

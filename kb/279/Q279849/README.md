@@ -6,6 +6,8 @@ permalink: /kb/279/Q279849/
 
 ## Q279849: MM2: Troubleshooting Game Controller Problems (Part 2)
 
+{% raw %}
+
 	Article: Q279849
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -373,3 +375,5 @@ permalink: /kb/279/Q279849/
 	
 	=============================================================================
 	
+
+{% endraw %}

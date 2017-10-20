@@ -6,6 +6,8 @@ permalink: /kb/231/Q231429/
 
 ## Q231429: XFOR: Can Send But Cannot Receive Inbound Internet Mail
 
+{% raw %}
+
 	Article: Q231429
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/231/Q231429/
 	
 	=============================================================================
 	
+
+{% endraw %}

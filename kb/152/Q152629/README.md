@@ -6,6 +6,8 @@ permalink: /kb/152/Q152629/
 
 ## Q152629: Setup Requires Unusually Large Amount of Disk Space
 
+{% raw %}
+
 	Article: Q152629
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/152/Q152629/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195971/
 
 ## Q195971: XADM: Deadlock in STORE Due to a Stack Overflow
 
+{% raw %}
+
 	Article: Q195971
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -120,3 +122,5 @@ permalink: /kb/195/Q195971/
 	
 	=============================================================================
 	
+
+{% endraw %}

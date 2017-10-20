@@ -6,6 +6,8 @@ permalink: /kb/153/Q153962/
 
 ## Q153962: XADM: Err Msg: The Interface is Unknown
 
+{% raw %}
+
 	Article: Q153962
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/153/Q153962/
 	
 	=============================================================================
 	
+
+{% endraw %}

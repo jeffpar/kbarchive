@@ -6,6 +6,8 @@ permalink: /kb/047/Q47186/
 
 ## Q47186: Mac Wkst: Cannot Change Default Settings in Address Window
 
+{% raw %}
+
 	Article: Q47186
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -45,3 +47,5 @@ permalink: /kb/047/Q47186/
 	
 	=============================================================================
 	
+
+{% endraw %}

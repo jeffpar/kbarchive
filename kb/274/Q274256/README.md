@@ -6,6 +6,8 @@ permalink: /kb/274/Q274256/
 
 ## Q274256: MSN Companion Troubleshooting Tool FAILSAFE
 
+{% raw %}
+
 	Article: Q274256
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -173,3 +175,5 @@ permalink: /kb/274/Q274256/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/225/Q225011/
 
 ## Q225011: XADM: Error c1037996 Installing  Exchange Server 5.5 on Cluster
 
+{% raw %}
+
 	Article: Q225011
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/225/Q225011/
 	
 	=============================================================================
 	
+
+{% endraw %}

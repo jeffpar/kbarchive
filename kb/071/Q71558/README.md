@@ -6,6 +6,8 @@ permalink: /kb/071/Q71558/
 
 ## Q71558: ECHO OFF Prevents ANSI Escape Sequences Using PROMPT
 
+{% raw %}
+
 	Article: Q71558
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -52,3 +54,5 @@ permalink: /kb/071/Q71558/
 	
 	=============================================================================
 	
+
+{% endraw %}

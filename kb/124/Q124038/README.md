@@ -6,6 +6,8 @@ permalink: /kb/124/Q124038/
 
 ## Q124038: VIEWNAD Does Not Display Platform Type Correctly
 
+{% raw %}
+
 	Article: Q124038
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -49,3 +51,5 @@ permalink: /kb/124/Q124038/
 	
 	=============================================================================
 	
+
+{% endraw %}

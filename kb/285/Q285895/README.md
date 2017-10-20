@@ -6,6 +6,8 @@ permalink: /kb/285/Q285895/
 
 ## Q285895: No WMI Win32_POTSModem or Win32_POTSModemToSerialPort Returns
 
+{% raw %}
+
 	Article: Q285895
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.5
@@ -118,3 +120,5 @@ permalink: /kb/285/Q285895/
 	
 	=============================================================================
 	
+
+{% endraw %}

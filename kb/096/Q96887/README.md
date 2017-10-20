@@ -6,6 +6,8 @@ permalink: /kb/096/Q96887/
 
 ## Q96887: PC WRmt: Changing the User-Information Data Files
 
+{% raw %}
+
 	Article: Q96887
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -67,3 +69,5 @@ permalink: /kb/096/Q96887/
 	
 	=============================================================================
 	
+
+{% endraw %}

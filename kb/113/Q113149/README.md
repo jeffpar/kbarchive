@@ -6,6 +6,8 @@ permalink: /kb/113/Q113149/
 
 ## Q113149: PC Win: Err Msg: A Folder Could Not Be Accessed
 
+{% raw %}
+
 	Article: Q113149
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -130,3 +132,5 @@ permalink: /kb/113/Q113149/
 	
 	=============================================================================
 	
+
+{% endraw %}

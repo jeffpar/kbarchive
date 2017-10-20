@@ -6,6 +6,8 @@ permalink: /kb/152/Q152875/
 
 ## Q152875: XCON: Failure to Send to Embedded DL with Delivery Restrictions
 
+{% raw %}
+
 	Article: Q152875
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/152/Q152875/
 	
 	=============================================================================
 	
+
+{% endraw %}

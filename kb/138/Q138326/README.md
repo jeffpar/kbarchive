@@ -6,6 +6,8 @@ permalink: /kb/138/Q138326/
 
 ## Q138326: HOWTO: Create a Browser Library for the Common Control Classes
 
+{% raw %}
+
 	Article: Q138326
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1,2.2
@@ -91,3 +93,5 @@ permalink: /kb/138/Q138326/
 	
 	=============================================================================
 	
+
+{% endraw %}

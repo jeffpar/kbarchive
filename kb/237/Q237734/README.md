@@ -6,6 +6,8 @@ permalink: /kb/237/Q237734/
 
 ## Q237734: NFL Fever 2000: Unable to Add Plays to Playbook During Season
 
+{% raw %}
+
 	Article: Q237734
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -137,3 +139,5 @@ permalink: /kb/237/Q237734/
 	
 	=============================================================================
 	
+
+{% endraw %}

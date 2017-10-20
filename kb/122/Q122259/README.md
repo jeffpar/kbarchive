@@ -6,6 +6,8 @@ permalink: /kb/122/Q122259/
 
 ## Q122259: FIX: ClassWizard Reports Invalid Filename When Importing Class
 
+{% raw %}
+
 	Article: Q122259
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -84,3 +86,5 @@ permalink: /kb/122/Q122259/
 	
 	=============================================================================
 	
+
+{% endraw %}

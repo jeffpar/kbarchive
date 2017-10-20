@@ -6,6 +6,8 @@ permalink: /kb/138/Q138613/
 
 ## Q138613: How to Use the SYS(3052) Function to Avoid Scrolling Error
 
+{% raw %}
+
 	Article: Q138613
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -142,3 +144,5 @@ permalink: /kb/138/Q138613/
 	
 	=============================================================================
 	
+
+{% endraw %}

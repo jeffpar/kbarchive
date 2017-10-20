@@ -6,6 +6,8 @@ permalink: /kb/235/Q235863/
 
 ## Q235863: RPC Locator Returns Duplicate or Missing Entries to RpcNsBinding
 
+{% raw %}
+
 	Article: Q235863
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5
@@ -89,3 +91,5 @@ permalink: /kb/235/Q235863/
 	
 	=============================================================================
 	
+
+{% endraw %}

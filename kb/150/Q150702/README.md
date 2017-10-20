@@ -6,6 +6,8 @@ permalink: /kb/150/Q150702/
 
 ## Q150702: INFO: No IAP Support for Mastering Visual Basic 4.0
 
+{% raw %}
+
 	Article: Q150702
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/150/Q150702/
 	
 	=============================================================================
 	
+
+{% endraw %}

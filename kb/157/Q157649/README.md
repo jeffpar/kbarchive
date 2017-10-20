@@ -6,6 +6,8 @@ permalink: /kb/157/Q157649/
 
 ## Q157649: XADM: PerfOpt Does Not Check for Sufficient Disk Space
 
+{% raw %}
+
 	Article: Q157649
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -45,3 +47,5 @@ permalink: /kb/157/Q157649/
 	
 	=============================================================================
 	
+
+{% endraw %}

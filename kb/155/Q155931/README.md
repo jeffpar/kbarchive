@@ -6,6 +6,8 @@ permalink: /kb/155/Q155931/
 
 ## Q155931: INFO: Project File Structure Changes in Visual FoxPro 5.0
 
+{% raw %}
+
 	Article: Q155931
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -66,3 +68,5 @@ permalink: /kb/155/Q155931/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85337/
 
 ## Q85337: FAX: Hardware Required of the Fax Gateway PC
 
+{% raw %}
+
 	Article: Q85337
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/085/Q85337/
 	
 	=============================================================================
 	
+
+{% endraw %}

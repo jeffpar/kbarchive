@@ -6,6 +6,8 @@ permalink: /kb/196/Q196917/
 
 ## Q196917: Err Msg: The Wininet.dll File Is Linked to Missing Export...
 
+{% raw %}
+
 	Article: Q196917
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -107,3 +109,5 @@ permalink: /kb/196/Q196917/
 	
 	=============================================================================
 	
+
+{% endraw %}

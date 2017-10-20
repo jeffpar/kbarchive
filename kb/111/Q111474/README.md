@@ -6,6 +6,8 @@ permalink: /kb/111/Q111474/
 
 ## Q111474: PRB: Usage of an ORG Directive in a STRUCT Declaration
 
+{% raw %}
+
 	Article: Q111474
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -137,3 +139,5 @@ permalink: /kb/111/Q111474/
 	
 	=============================================================================
 	
+
+{% endraw %}

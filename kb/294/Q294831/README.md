@@ -6,6 +6,8 @@ permalink: /kb/294/Q294831/
 
 ## Q294831: Server.HTMLEncode/Server.URLEncode Corrupt High UTF8 Characters
 
+{% raw %}
+
 	Article: Q294831
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -135,3 +137,5 @@ permalink: /kb/294/Q294831/
 	
 	=============================================================================
 	
+
+{% endraw %}

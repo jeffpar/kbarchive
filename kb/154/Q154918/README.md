@@ -6,6 +6,8 @@ permalink: /kb/154/Q154918/
 
 ## Q154918: MicroGrafx Draw 4.0 Prints Garbled Output to PostSript Printer
 
+{% raw %}
+
 	Article: Q154918
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/154/Q154918/
 	
 	=============================================================================
 	
+
+{% endraw %}

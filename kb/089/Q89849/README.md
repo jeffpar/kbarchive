@@ -6,6 +6,8 @@ permalink: /kb/089/Q89849/
 
 ## Q89849: PC Ext: Slow Modem Communications with 9600 Baud Modems
 
+{% raw %}
+
 	Article: Q89849
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0
@@ -45,3 +47,5 @@ permalink: /kb/089/Q89849/
 	
 	=============================================================================
 	
+
+{% endraw %}

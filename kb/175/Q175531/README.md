@@ -6,6 +6,8 @@ permalink: /kb/175/Q175531/
 
 ## Q175531: White Paper: Migrating Applications to Visual Basic 5.0
 
+{% raw %}
+
 	Article: Q175531
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -71,3 +73,5 @@ permalink: /kb/175/Q175531/
 	
 	=============================================================================
 	
+
+{% endraw %}

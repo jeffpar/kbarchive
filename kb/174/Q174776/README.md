@@ -6,6 +6,8 @@ permalink: /kb/174/Q174776/
 
 ## Q174776: Index Server Queries Return Not Enough Storage Is Available Err.
 
+{% raw %}
+
 	Article: Q174776
 	Product(s): Internet Information Server
 	Version(s): 1.1
@@ -51,3 +53,5 @@ permalink: /kb/174/Q174776/
 	
 	=============================================================================
 	
+
+{% endraw %}

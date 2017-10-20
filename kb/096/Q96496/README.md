@@ -6,6 +6,8 @@ permalink: /kb/096/Q96496/
 
 ## Q96496: Err Msg: SYS Is Unable to Operate on Target Drive
 
+{% raw %}
+
 	Article: Q96496
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22; WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/096/Q96496/
 	
 	=============================================================================
 	
+
+{% endraw %}

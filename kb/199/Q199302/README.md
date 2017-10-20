@@ -6,6 +6,8 @@ permalink: /kb/199/Q199302/
 
 ## Q199302: XFOR: Understanding F/B Flow Between GroupWise &amp; Exchange Server
 
+{% raw %}
+
 	Article: Q199302
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -106,3 +108,5 @@ permalink: /kb/199/Q199302/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123331/
 
 ## Q123331: HOWTO: Compile Large Chinese or Korean Help Files
 
+{% raw %}
+
 	Article: Q123331
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 3.1
@@ -49,3 +51,5 @@ permalink: /kb/123/Q123331/
 	
 	=============================================================================
 	
+
+{% endraw %}

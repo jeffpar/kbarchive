@@ -6,6 +6,8 @@ permalink: /kb/141/Q141557/
 
 ## Q141557: FIX: Cursor's ReadOnly Property Carried to Other Data Sessions
 
+{% raw %}
+
 	Article: Q141557
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -102,3 +104,5 @@ permalink: /kb/141/Q141557/
 	
 	=============================================================================
 	
+
+{% endraw %}

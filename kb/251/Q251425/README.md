@@ -6,6 +6,8 @@ permalink: /kb/251/Q251425/
 
 ## Q251425: STOP 0x1E When Session Shadowing Another Session Is Disconnected
 
+{% raw %}
+
 	Article: Q251425
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -61,3 +63,5 @@ permalink: /kb/251/Q251425/
 	
 	=============================================================================
 	
+
+{% endraw %}

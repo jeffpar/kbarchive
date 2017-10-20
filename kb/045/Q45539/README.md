@@ -6,6 +6,8 @@ permalink: /kb/045/Q45539/
 
 ## Q45539: Incorrect Prototypes for 'Window' Functions in QC Advisor
 
+{% raw %}
+
 	Article: Q45539
 	Product(s): See article
 	Version(s): 2.00
@@ -33,3 +35,5 @@ permalink: /kb/045/Q45539/
 	   _getimage_wxy
 	   _getviewcoord_wxy
 	   _imagesize_wxy
+
+{% endraw %}

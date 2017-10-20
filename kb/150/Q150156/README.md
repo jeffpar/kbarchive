@@ -6,6 +6,8 @@ permalink: /kb/150/Q150156/
 
 ## Q150156: XCLN: Cannot Send from Word When Exchange Client not Running
 
+{% raw %}
+
 	Article: Q150156
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -58,3 +60,5 @@ permalink: /kb/150/Q150156/
 	
 	=============================================================================
 	
+
+{% endraw %}

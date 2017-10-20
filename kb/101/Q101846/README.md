@@ -6,6 +6,8 @@ permalink: /kb/101/Q101846/
 
 ## Q101846: WFWG: Where Workgroup Mail Finds the Default Account Name
 
+{% raw %}
+
 	Article: Q101846
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -39,3 +41,5 @@ permalink: /kb/101/Q101846/
 	
 	=============================================================================
 	
+
+{% endraw %}

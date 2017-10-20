@@ -6,6 +6,8 @@ permalink: /kb/194/Q194596/
 
 ## Q194596: XGEN: Requirements - MS Importer for Lotus cc:Mail Archives
 
+{% raw %}
+
 	Article: Q194596
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/194/Q194596/
 	
 	=============================================================================
 	
+
+{% endraw %}

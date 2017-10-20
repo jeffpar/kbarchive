@@ -6,6 +6,8 @@ permalink: /kb/148/Q148421/
 
 ## Q148421: XCLN: Messages Marked as Read when Moved from Client
 
+{% raw %}
+
 	Article: Q148421
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -45,3 +47,5 @@ permalink: /kb/148/Q148421/
 	
 	=============================================================================
 	
+
+{% endraw %}

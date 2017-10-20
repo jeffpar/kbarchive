@@ -6,6 +6,8 @@ permalink: /kb/140/Q140081/
 
 ## Q140081: Purpose of the Wmconfig.exe and Wavemix.inf Files
 
+{% raw %}
+
 	Article: Q140081
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -60,3 +62,5 @@ permalink: /kb/140/Q140081/
 	
 	=============================================================================
 	
+
+{% endraw %}

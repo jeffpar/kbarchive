@@ -6,6 +6,8 @@ permalink: /kb/110/Q110385/
 
 ## Q110385: Changes Made to CONFIG.SYS by WSSCNFG.EXE
 
+{% raw %}
+
 	Article: Q110385
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/110/Q110385/
 	
 	=============================================================================
 	
+
+{% endraw %}

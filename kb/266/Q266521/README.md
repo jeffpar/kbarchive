@@ -6,6 +6,8 @@ permalink: /kb/266/Q266521/
 
 ## Q266521: Encarta 2001: Shockwave Is Automatically Reinstalled
 
+{% raw %}
+
 	Article: Q266521
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/266/Q266521/
 	
 	=============================================================================
 	
+
+{% endraw %}

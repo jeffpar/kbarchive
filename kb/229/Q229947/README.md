@@ -6,6 +6,8 @@ permalink: /kb/229/Q229947/
 
 ## Q229947: How to Silently Install the Windows 95 Year 2000 Update
 
+{% raw %}
+
 	Article: Q229947
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.0,3.0,3.01,3.02,4.0,4.01,4.01 Service Pack 1,4.01 Service Pack 2,5,95
@@ -80,3 +82,5 @@ permalink: /kb/229/Q229947/
 	
 	=============================================================================
 	
+
+{% endraw %}

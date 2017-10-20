@@ -6,6 +6,8 @@ permalink: /kb/050/Q50246/
 
 ## Q50246: Mac Form: Notifier Window Does Not Appear with Custom Form
 
+{% raw %}
+
 	Article: Q50246
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -45,3 +47,5 @@ permalink: /kb/050/Q50246/
 	
 	=============================================================================
 	
+
+{% endraw %}

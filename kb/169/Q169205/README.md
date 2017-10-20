@@ -6,6 +6,8 @@ permalink: /kb/169/Q169205/
 
 ## Q169205: XADM: Repercussions of Deleting Public Folder Replication Messag
 
+{% raw %}
+
 	Article: Q169205
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -81,3 +83,5 @@ permalink: /kb/169/Q169205/
 	
 	=============================================================================
 	
+
+{% endraw %}

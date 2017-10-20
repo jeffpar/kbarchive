@@ -6,6 +6,8 @@ permalink: /kb/148/Q148367/
 
 ## Q148367: Possible Network File Damage with Redirector Caching
 
+{% raw %}
+
 	Article: Q148367
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -124,3 +126,5 @@ permalink: /kb/148/Q148367/
 	
 	=============================================================================
 	
+
+{% endraw %}

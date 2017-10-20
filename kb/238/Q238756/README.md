@@ -6,6 +6,8 @@ permalink: /kb/238/Q238756/
 
 ## Q238756: XFOR: Migration Fails w/Attached Appt. in GroupWise 5.x Msgs.
 
+{% raw %}
+
 	Article: Q238756
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/238/Q238756/
 	
 	=============================================================================
 	
+
+{% endraw %}

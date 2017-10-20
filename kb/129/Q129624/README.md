@@ -6,6 +6,8 @@ permalink: /kb/129/Q129624/
 
 ## Q129624: Error Message: This Setup Is Not Intended for This Version...
 
+{% raw %}
+
 	Article: Q129624
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/129/Q129624/
 	
 	=============================================================================
 	
+
+{% endraw %}

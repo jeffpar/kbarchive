@@ -6,6 +6,8 @@ permalink: /kb/150/Q150485/
 
 ## Q150485: HPMON Causes an Access Violation in SPOOLSS
 
+{% raw %}
+
 	Article: Q150485
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -118,3 +120,5 @@ permalink: /kb/150/Q150485/
 	
 	=============================================================================
 	
+
+{% endraw %}

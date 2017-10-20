@@ -6,6 +6,8 @@ permalink: /kb/082/Q82423/
 
 ## Q82423: Amortizer Plus GP Faults when Balancing
 
+{% raw %}
+
 	Article: Q82423
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -41,3 +43,5 @@ permalink: /kb/082/Q82423/
 	
 	=============================================================================
 	
+
+{% endraw %}

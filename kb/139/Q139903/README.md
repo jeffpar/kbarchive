@@ -6,6 +6,8 @@ permalink: /kb/139/Q139903/
 
 ## Q139903: Doc Err: File Manager Registry Entries for Users
 
+{% raw %}
+
 	Article: Q139903
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -52,3 +54,5 @@ permalink: /kb/139/Q139903/
 	
 	=============================================================================
 	
+
+{% endraw %}

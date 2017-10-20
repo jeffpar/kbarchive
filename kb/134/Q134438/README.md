@@ -6,6 +6,8 @@ permalink: /kb/134/Q134438/
 
 ## Q134438: PRB: Initializing Spell Checker Error When Running Spellchk
 
+{% raw %}
+
 	Article: Q134438
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -86,3 +88,5 @@ permalink: /kb/134/Q134438/
 	
 	=============================================================================
 	
+
+{% endraw %}

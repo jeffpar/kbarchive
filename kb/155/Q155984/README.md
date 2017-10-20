@@ -6,6 +6,8 @@ permalink: /kb/155/Q155984/
 
 ## Q155984: Using the AVM Fritz ISDN Card with MSN
 
+{% raw %}
+
 	Article: Q155984
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -83,3 +85,5 @@ permalink: /kb/155/Q155984/
 	
 	=============================================================================
 	
+
+{% endraw %}

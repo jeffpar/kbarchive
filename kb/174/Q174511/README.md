@@ -6,6 +6,8 @@ permalink: /kb/174/Q174511/
 
 ## Q174511: Access Violation in Win32K When Calling GetDCEx
 
+{% raw %}
+
 	Article: Q174511
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -54,3 +56,5 @@ permalink: /kb/174/Q174511/
 	
 	=============================================================================
 	
+
+{% endraw %}

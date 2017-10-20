@@ -6,6 +6,8 @@ permalink: /kb/066/Q66229/
 
 ## Q66229: Situation Where PWB Online Help Text Disappears
 
+{% raw %}
+
 	Article: Q66229
 	Product(s): See article
 	Version(s): 1.00 1.10 | 1.00 1.10
@@ -48,3 +50,5 @@ permalink: /kb/066/Q66229/
 	   mouse button with the cursor on any of these empty hyperlinks; the
 	   text on the screen will disappear, with empty hyperlinks appearing
 	   on the screen.
+
+{% endraw %}

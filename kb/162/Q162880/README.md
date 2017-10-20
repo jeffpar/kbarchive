@@ -6,6 +6,8 @@ permalink: /kb/162/Q162880/
 
 ## Q162880: XADM: Event ID-1305 Jet_errObjectNotFound
 
+{% raw %}
+
 	Article: Q162880
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -68,3 +70,5 @@ permalink: /kb/162/Q162880/
 	
 	=============================================================================
 	
+
+{% endraw %}

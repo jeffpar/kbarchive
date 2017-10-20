@@ -6,6 +6,8 @@ permalink: /kb/222/Q222905/
 
 ## Q222905: HOWTO: Display a Context Menu for CTreeCtrl
 
+{% raw %}
+
 	Article: Q222905
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -70,10 +72,10 @@ permalink: /kb/222/Q222905/
 	messages be implemented by the control. For example:
 	
 	  BEGIN_MESSAGE_MAP(CMyTreeCtrl, CTreeCtrl)
-	  	//{ {AFX_MSG_MAP(CMyTreeCtrl)
+	  	//{{AFX_MSG_MAP(CMyTreeCtrl)
 	  	ON_NOTIFY_REFLECT(NM_RCLICK, OnRClick)
 	  	ON_WM_CONTEXTMENU()
-	  	//} }AFX_MSG_MAP
+	  	//}}AFX_MSG_MAP
 	  END_MESSAGE_MAP()
 	
 	  void CMyTreeCtrl::OnRClick(NMHDR* pNMHDR, LRESULT* pResult) 
@@ -123,3 +125,5 @@ permalink: /kb/222/Q222905/
 	
 	=============================================================================
 	
+
+{% endraw %}

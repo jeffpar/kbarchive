@@ -6,6 +6,8 @@ permalink: /kb/105/Q105040/
 
 ## Q105040: WFWG Err: ODINSUP Requires BUFFERED Switch in NET.CFG File
 
+{% raw %}
+
 	Article: Q105040
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -68,3 +70,5 @@ permalink: /kb/105/Q105040/
 	
 	=============================================================================
 	
+
+{% endraw %}

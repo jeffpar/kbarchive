@@ -6,6 +6,8 @@ permalink: /kb/138/Q138271/
 
 ## Q138271: Windows 95 NetBIOS Scope ID Configuration
 
+{% raw %}
+
 	Article: Q138271
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 95
@@ -69,3 +71,5 @@ permalink: /kb/138/Q138271/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156073/
 
 ## Q156073: XCLN: File, Send Brings Up Window with Missing Options
 
+{% raw %}
+
 	Article: Q156073
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -64,3 +66,5 @@ permalink: /kb/156/Q156073/
 	
 	=============================================================================
 	
+
+{% endraw %}

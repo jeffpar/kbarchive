@@ -6,6 +6,8 @@ permalink: /kb/216/Q216532/
 
 ## Q216532: XADM: Exchange 5.5 Does Not Function Properly on EV6 Computer
 
+{% raw %}
+
 	Article: Q216532
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -94,3 +96,5 @@ permalink: /kb/216/Q216532/
 	
 	=============================================================================
 	
+
+{% endraw %}

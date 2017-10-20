@@ -6,6 +6,8 @@ permalink: /kb/170/Q170412/
 
 ## Q170412: WD97: Word Stops Responding in Preview Via Web Page Wizard
 
+{% raw %}
+
 	Article: Q170412
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -72,3 +74,5 @@ permalink: /kb/170/Q170412/
 	
 	=============================================================================
 	
+
+{% endraw %}

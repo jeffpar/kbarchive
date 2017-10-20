@@ -6,6 +6,8 @@ permalink: /kb/174/Q174752/
 
 ## Q174752: XCLN: Windows CE Inbox Client Requires Full Transfer of POP3 Msg
 
+{% raw %}
+
 	Article: Q174752
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -44,3 +46,5 @@ permalink: /kb/174/Q174752/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140572/
 
 ## Q140572: How To Save Or Reset My Place When I Exit Encarta
 
+{% raw %}
+
 	Article: Q140572
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition,1995 edition; WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/140/Q140572/
 	
 	=============================================================================
 	
+
+{% endraw %}

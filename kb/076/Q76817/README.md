@@ -6,6 +6,8 @@ permalink: /kb/076/Q76817/
 
 ## Q76817: Fountain 286 Computer Slows After MS-DOS 5 Upgrade
 
+{% raw %}
+
 	Article: Q76817
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -54,3 +56,5 @@ permalink: /kb/076/Q76817/
 	
 	=============================================================================
 	
+
+{% endraw %}

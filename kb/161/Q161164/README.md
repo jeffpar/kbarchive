@@ -6,6 +6,8 @@ permalink: /kb/161/Q161164/
 
 ## Q161164: Duplex Setting May Not Change When Target Printer Changes
 
+{% raw %}
+
 	Article: Q161164
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -48,3 +50,5 @@ permalink: /kb/161/Q161164/
 	
 	=============================================================================
 	
+
+{% endraw %}

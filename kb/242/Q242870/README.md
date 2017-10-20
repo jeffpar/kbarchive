@@ -6,6 +6,8 @@ permalink: /kb/242/Q242870/
 
 ## Q242870: AoE II: Hangs, Quits Unexpectedly, or &quot;Invalid Page Fault&quot;
 
+{% raw %}
+
 	Article: Q242870
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -92,3 +94,5 @@ permalink: /kb/242/Q242870/
 	
 	=============================================================================
 	
+
+{% endraw %}

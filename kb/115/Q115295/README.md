@@ -6,6 +6,8 @@ permalink: /kb/115/Q115295/
 
 ## Q115295: Mac Gty: Third Party Gateway Systems for AppleTalk Mail
 
+{% raw %}
+
 	Article: Q115295
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -146,3 +148,5 @@ permalink: /kb/115/Q115295/
 	
 	=============================================================================
 	
+
+{% endraw %}

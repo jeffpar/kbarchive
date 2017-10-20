@@ -6,6 +6,8 @@ permalink: /kb/230/Q230577/
 
 ## Q230577: Error Message &quot;The Drive Is Not Ready for Use&quot; at Startup
 
+{% raw %}
+
 	Article: Q230577
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/230/Q230577/
 	
 	=============================================================================
 	
+
+{% endraw %}

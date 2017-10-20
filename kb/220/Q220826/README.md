@@ -6,6 +6,8 @@ permalink: /kb/220/Q220826/
 
 ## Q220826: Back Button in HTMLA Administration Forms May be Problematic
 
+{% raw %}
+
 	Article: Q220826
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -54,3 +56,5 @@ permalink: /kb/220/Q220826/
 	
 	=============================================================================
 	
+
+{% endraw %}

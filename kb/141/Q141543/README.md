@@ -6,6 +6,8 @@ permalink: /kb/141/Q141543/
 
 ## Q141543: Selected Screen Saver Is Never Displayed
 
+{% raw %}
+
 	Article: Q141543
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -80,3 +82,5 @@ permalink: /kb/141/Q141543/
 	
 	=============================================================================
 	
+
+{% endraw %}

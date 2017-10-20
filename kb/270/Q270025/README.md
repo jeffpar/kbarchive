@@ -6,6 +6,8 @@ permalink: /kb/270/Q270025/
 
 ## Q270025: Automatic Dial Settings Are Lost After You Upgrade to ISA Server
 
+{% raw %}
+
 	Article: Q270025
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -62,3 +64,5 @@ permalink: /kb/270/Q270025/
 	
 	=============================================================================
 	
+
+{% endraw %}

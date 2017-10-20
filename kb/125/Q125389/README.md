@@ -6,6 +6,8 @@ permalink: /kb/125/Q125389/
 
 ## Q125389: How to Simulate INT 15 Rather Than Calling EISA BIOS Directly
 
+{% raw %}
+
 	Article: Q125389
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -84,3 +86,5 @@ permalink: /kb/125/Q125389/
 	
 	=============================================================================
 	
+
+{% endraw %}

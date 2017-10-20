@@ -6,6 +6,8 @@ permalink: /kb/080/Q80712/
 
 ## Q80712: RAS Manual Dial
 
+{% raw %}
+
 	Article: Q80712
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/080/Q80712/
 	
 	=============================================================================
 	
+
+{% endraw %}

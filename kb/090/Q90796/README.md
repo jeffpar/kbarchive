@@ -6,6 +6,8 @@ permalink: /kb/090/Q90796/
 
 ## Q90796: Instanced Data Management in Enhanced Mode Windows
 
+{% raw %}
+
 	Article: Q90796
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.1
@@ -165,3 +167,5 @@ permalink: /kb/090/Q90796/
 	
 	=============================================================================
 	
+
+{% endraw %}

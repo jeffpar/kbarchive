@@ -6,6 +6,8 @@ permalink: /kb/084/Q84293/
 
 ## Q84293: Summa Graphics Tablet May Require Upgrade for Windows
 
+{% raw %}
+
 	Article: Q84293
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/084/Q84293/
 	
 	=============================================================================
 	
+
+{% endraw %}

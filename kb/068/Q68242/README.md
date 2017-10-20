@@ -6,6 +6,8 @@ permalink: /kb/068/Q68242/
 
 ## Q68242: Microsoft MS-DOS 5 Upgrade vs. Microsoft MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q68242
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -96,3 +98,5 @@ permalink: /kb/068/Q68242/
 	
 	=============================================================================
 	
+
+{% endraw %}

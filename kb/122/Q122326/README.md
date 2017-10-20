@@ -6,6 +6,8 @@ permalink: /kb/122/Q122326/
 
 ## Q122326: BUG: Win32s Setup May Fail if BUFFERS or FILES Set Too Small
 
+{% raw %}
+
 	Article: Q122326
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00 2.10 4.00 4.10
@@ -54,3 +56,5 @@ permalink: /kb/122/Q122326/
 	
 	=============================================================================
 	
+
+{% endraw %}

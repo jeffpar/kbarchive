@@ -6,6 +6,8 @@ permalink: /kb/033/Q33178/
 
 ## Q33178: Example to Load OS/2 Disk Directory into String Array
 
+{% raw %}
+
 	Article: Q33178
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -136,3 +138,5 @@ permalink: /kb/033/Q33178/
 	next i
 	
 	END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/203/Q203064/
 
 ## Q203064: IIS: Notes on Server-Side Includes (SSI) Syntax
 
+{% raw %}
+
 	Article: Q203064
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -200,3 +202,5 @@ permalink: /kb/203/Q203064/
 	
 	=============================================================================
 	
+
+{% endraw %}

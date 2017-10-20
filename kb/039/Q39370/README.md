@@ -6,6 +6,8 @@ permalink: /kb/039/Q39370/
 
 ## Q39370: Addressing above 1 Megabyte Under MS-DOS
 
+{% raw %}
+
 	Article: Q39370
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1a,6.0,6.0a,6.0b
@@ -45,3 +47,5 @@ permalink: /kb/039/Q39370/
 	
 	=============================================================================
 	
+
+{% endraw %}

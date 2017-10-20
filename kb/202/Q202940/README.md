@@ -6,6 +6,8 @@ permalink: /kb/202/Q202940/
 
 ## Q202940: SMS: Resource Explorer Shows Blank Hardware Inventory Classes
 
+{% raw %}
+
 	Article: Q202940
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -122,3 +124,5 @@ permalink: /kb/202/Q202940/
 	
 	=============================================================================
 	
+
+{% endraw %}

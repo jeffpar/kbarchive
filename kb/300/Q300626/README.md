@@ -6,6 +6,8 @@ permalink: /kb/300/Q300626/
 
 ## Q300626: FIX: Unable to Specify Folder Path for Moderated Newsgroups
 
+{% raw %}
+
 	Article: Q300626
 	Product(s): Internet Information Server
 	Version(s): 2.0,2.5,4.0,5.0
@@ -109,3 +111,5 @@ permalink: /kb/300/Q300626/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168830/
 
 ## Q168830: HOWTO: Cast an Object to a Different Interface
 
+{% raw %}
+
 	Article: Q168830
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -193,3 +195,5 @@ permalink: /kb/168/Q168830/
 	
 	=============================================================================
 	
+
+{% endraw %}

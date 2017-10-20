@@ -6,6 +6,8 @@ permalink: /kb/114/Q114588/
 
 ## Q114588: Library Return Codes
 
+{% raw %}
+
 	Article: Q114588
 	Product(s): Microsoft Programming Utilities
 	Version(s): 3.31,3.4
@@ -52,3 +54,5 @@ permalink: /kb/114/Q114588/
 	
 	=============================================================================
 	
+
+{% endraw %}

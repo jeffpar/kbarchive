@@ -6,6 +6,8 @@ permalink: /kb/115/Q115552/
 
 ## Q115552: MHS: Running the MHS Gateway from Within MS-DOS
 
+{% raw %}
+
 	Article: Q115552
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -94,3 +96,5 @@ permalink: /kb/115/Q115552/
 	
 	=============================================================================
 	
+
+{% endraw %}

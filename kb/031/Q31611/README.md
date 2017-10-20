@@ -6,6 +6,8 @@ permalink: /kb/031/Q31611/
 
 ## Q31611: RunTmLibRef ftime Returns millitm to 100ths
 
+{% raw %}
+
 	Article: Q31611
 	Product(s): See article
 	Version(s): 4.00 5.00 5.10 | 5.10
@@ -24,3 +26,5 @@ permalink: /kb/031/Q31611/
 	   Note also that this function uses the system clock to determine
 	the time. Since the resolution of the clock on PC's is about 1/18.2
 	seconds, the time function can not be more accurate than that.
+
+{% endraw %}

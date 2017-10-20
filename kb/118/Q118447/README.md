@@ -6,6 +6,8 @@ permalink: /kb/118/Q118447/
 
 ## Q118447: PC Adm: Using IMPORT -A Removes Users from Postoffice List
 
+{% raw %}
+
 	Article: Q118447
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -91,3 +93,5 @@ permalink: /kb/118/Q118447/
 	
 	=============================================================================
 	
+
+{% endraw %}

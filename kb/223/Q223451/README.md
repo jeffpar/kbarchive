@@ -6,6 +6,8 @@ permalink: /kb/223/Q223451/
 
 ## Q223451: Multimedia Err Msg: OLE Initialization Failed...
 
+{% raw %}
+
 	Article: Q223451
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -113,3 +115,5 @@ permalink: /kb/223/Q223451/
 	
 	=============================================================================
 	
+
+{% endraw %}

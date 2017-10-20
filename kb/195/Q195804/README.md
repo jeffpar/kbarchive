@@ -6,6 +6,8 @@ permalink: /kb/195/Q195804/
 
 ## Q195804: XFOR: Imcsave Utility
 
+{% raw %}
+
 	Article: Q195804
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -111,3 +113,5 @@ permalink: /kb/195/Q195804/
 	
 	=============================================================================
 	
+
+{% endraw %}

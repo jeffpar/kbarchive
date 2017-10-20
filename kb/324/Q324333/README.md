@@ -6,6 +6,8 @@ permalink: /kb/324/Q324333/
 
 ## Q324333: Error if User Not Included in Bypass Traversal Checking Policy
 
+{% raw %}
+
 	Article: Q324333
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -75,3 +77,5 @@ permalink: /kb/324/Q324333/
 	
 	=============================================================================
 	
+
+{% endraw %}

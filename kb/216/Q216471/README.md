@@ -6,6 +6,8 @@ permalink: /kb/216/Q216471/
 
 ## Q216471: NetBT Improvements for Connections Between Multihomed Computers
 
+{% raw %}
+
 	Article: Q216471
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -137,3 +139,5 @@ permalink: /kb/216/Q216471/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/300/Q300382/
 
 ## Q300382: HOW TO: Create a Database Connection from an ASP Page in IIS
 
+{% raw %}
+
 	Article: Q300382
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -194,3 +196,5 @@ permalink: /kb/300/Q300382/
 	
 	=============================================================================
 	
+
+{% endraw %}

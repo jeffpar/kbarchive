@@ -6,6 +6,8 @@ permalink: /kb/316/Q316988/
 
 ## Q316988: PRB: &quot;Parameter Not Optional&quot; Err with Outlook 2000 Move Method
 
+{% raw %}
+
 	Article: Q316988
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0,7.0 SP1
@@ -86,3 +88,5 @@ permalink: /kb/316/Q316988/
 	
 	=============================================================================
 	
+
+{% endraw %}

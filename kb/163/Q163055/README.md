@@ -6,6 +6,8 @@ permalink: /kb/163/Q163055/
 
 ## Q163055: DHCP Client May Fail with WinNT 4.0 SP2 Multinetted DHCP Server
 
+{% raw %}
+
 	Article: Q163055
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -134,3 +136,5 @@ permalink: /kb/163/Q163055/
 	
 	=============================================================================
 	
+
+{% endraw %}

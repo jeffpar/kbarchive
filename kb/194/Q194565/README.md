@@ -6,6 +6,8 @@ permalink: /kb/194/Q194565/
 
 ## Q194565: WD97: Converting Documents Created in WordPerfect 7.0, 8.0
 
+{% raw %}
+
 	Article: Q194565
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/194/Q194565/
 	
 	=============================================================================
 	
+
+{% endraw %}

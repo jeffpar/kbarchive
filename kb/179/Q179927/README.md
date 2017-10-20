@@ -6,6 +6,8 @@ permalink: /kb/179/Q179927/
 
 ## Q179927: XADM: KCC Site Teardown Blocked by Site-Proxy-Space Attribute
 
+{% raw %}
+
 	Article: Q179927
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -240,3 +242,5 @@ permalink: /kb/179/Q179927/
 	
 	=============================================================================
 	
+
+{% endraw %}

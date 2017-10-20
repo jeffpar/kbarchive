@@ -6,6 +6,8 @@ permalink: /kb/149/Q149481/
 
 ## Q149481: PRB: Debugging Past END Statement Puts You in Disassembly Mode
 
+{% raw %}
+
 	Article: Q149481
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/149/Q149481/
 	
 	=============================================================================
 	
+
+{% endraw %}

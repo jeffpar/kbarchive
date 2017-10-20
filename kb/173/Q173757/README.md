@@ -6,6 +6,8 @@ permalink: /kb/173/Q173757/
 
 ## Q173757: FAQ: Do I Have Visual FoxPro 5.0 or 5.0a
 
+{% raw %}
+
 	Article: Q173757
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0a
@@ -44,3 +46,5 @@ permalink: /kb/173/Q173757/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173581/
 
 ## Q173581: WD97: Inserted Video Missing When HTML Document Is Reopened
 
+{% raw %}
+
 	Article: Q173581
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -58,3 +60,5 @@ permalink: /kb/173/Q173581/
 	
 	=============================================================================
 	
+
+{% endraw %}

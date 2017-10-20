@@ -6,6 +6,8 @@ permalink: /kb/190/Q190818/
 
 ## Q190818: HOWTO: Programmatically Scroll a Visual FoxPro Form
 
+{% raw %}
+
 	Article: Q190818
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -91,3 +93,5 @@ permalink: /kb/190/Q190818/
 	
 	=============================================================================
 	
+
+{% endraw %}

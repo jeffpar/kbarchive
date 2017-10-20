@@ -6,6 +6,8 @@ permalink: /kb/082/Q82309/
 
 ## Q82309: Rotated TrueType Fonts in Ami Pro Garble
 
+{% raw %}
+
 	Article: Q82309
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/082/Q82309/
 	
 	=============================================================================
 	
+
+{% endraw %}

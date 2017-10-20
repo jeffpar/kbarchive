@@ -6,6 +6,8 @@ permalink: /kb/031/Q31157/
 
 ## Q31157: Use PRINT# to MS-DOS &quot;CON&quot; Device to Send ANSI Escape Codes
 
+{% raw %}
+
 	Article: Q31157
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -88,3 +90,5 @@ permalink: /kb/031/Q31157/
 	PRINT #1, escape$ + green$ + "green"
 	PRINT #1, escape$ + blue$ + "blue"
 	CLOSE #1
+
+{% endraw %}

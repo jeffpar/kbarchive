@@ -6,6 +6,8 @@ permalink: /kb/164/Q164430/
 
 ## Q164430: Access Denied When Saving Event Log
 
+{% raw %}
+
 	Article: Q164430
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP5,4.0
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164430/
 	
 	=============================================================================
 	
+
+{% endraw %}

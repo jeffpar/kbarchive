@@ -6,6 +6,8 @@ permalink: /kb/232/Q232624/
 
 ## Q232624: PRB: Accelerator Keys Fail with ATL Control on VB UserControl
 
+{% raw %}
+
 	Article: Q232624
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0; winnt:6.0
@@ -149,3 +151,5 @@ permalink: /kb/232/Q232624/
 	
 	=============================================================================
 	
+
+{% endraw %}

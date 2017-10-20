@@ -6,6 +6,8 @@ permalink: /kb/174/Q174482/
 
 ## Q174482: Performance Monitor Chart View Limited to 100 Data Points
 
+{% raw %}
+
 	Article: Q174482
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -50,3 +52,5 @@ permalink: /kb/174/Q174482/
 	
 	=============================================================================
 	
+
+{% endraw %}

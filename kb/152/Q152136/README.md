@@ -6,6 +6,8 @@ permalink: /kb/152/Q152136/
 
 ## Q152136: HOWTO: Know if Large/Small Font Is in Use Under Win95/98/Me/NT
 
+{% raw %}
+
 	Article: Q152136
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -143,3 +145,5 @@ permalink: /kb/152/Q152136/
 	
 	=============================================================================
 	
+
+{% endraw %}

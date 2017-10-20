@@ -6,6 +6,8 @@ permalink: /kb/190/Q190151/
 
 ## Q190151: SNA Server in a Cluster Server Environment
 
+{% raw %}
+
 	Article: Q190151
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -66,3 +68,5 @@ permalink: /kb/190/Q190151/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/305/Q305409/
 
 ## Q305409: MCSE Training Kit: Designing a Microsoft Windows 2000 Network In
 
+{% raw %}
+
 	Article: Q305409
 	Product(s): Microsoft Press
 	Version(s): 
@@ -287,3 +289,5 @@ permalink: /kb/305/Q305409/
 	
 	=============================================================================
 	
+
+{% endraw %}

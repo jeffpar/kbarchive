@@ -6,6 +6,8 @@ permalink: /kb/242/Q242184/
 
 ## Q242184: XFOR: Exchange Migration Wizard Does Not Work with Event ID 7026
 
+{% raw %}
+
 	Article: Q242184
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -96,3 +98,5 @@ permalink: /kb/242/Q242184/
 	
 	=============================================================================
 	
+
+{% endraw %}

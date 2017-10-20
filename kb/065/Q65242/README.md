@@ -6,6 +6,8 @@ permalink: /kb/065/Q65242/
 
 ## Q65242: CV1319 Error May Be Caused by CodeView DOS Extender
 
+{% raw %}
+
 	Article: Q65242
 	Product(s): See article
 	Version(s): 3.00
@@ -62,3 +64,5 @@ permalink: /kb/065/Q65242/
 	
 	Microsoft has confirmed this to be a problem in CodeView version 3.00.
 	This problem has been corrected in version 3.10.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155854/
 
 ## Q155854: CG3: Sound Recorder Needed to Add .wav Files to Clip Gallery
 
+{% raw %}
+
 	Article: Q155854
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 3.0; WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/155/Q155854/
 	
 	=============================================================================
 	
+
+{% endraw %}

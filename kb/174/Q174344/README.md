@@ -6,6 +6,8 @@ permalink: /kb/174/Q174344/
 
 ## Q174344: XCLN: Private Messages Can Be Viewed by Delegates Using Exchange
 
+{% raw %}
+
 	Article: Q174344
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -56,3 +58,5 @@ permalink: /kb/174/Q174344/
 	
 	=============================================================================
 	
+
+{% endraw %}

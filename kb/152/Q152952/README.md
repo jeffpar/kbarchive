@@ -6,6 +6,8 @@ permalink: /kb/152/Q152952/
 
 ## Q152952: XCON: No Read/Delivery Receipts Sending X.400 Messages
 
+{% raw %}
+
 	Article: Q152952
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/152/Q152952/
 	
 	=============================================================================
 	
+
+{% endraw %}

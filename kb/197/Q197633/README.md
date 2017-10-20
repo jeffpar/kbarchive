@@ -6,6 +6,8 @@ permalink: /kb/197/Q197633/
 
 ## Q197633: Encarta: How to Transfer or Restore Integrated Yearbook Files
 
+{% raw %}
+
 	Article: Q197633
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -203,3 +205,5 @@ permalink: /kb/197/Q197633/
 	
 	=============================================================================
 	
+
+{% endraw %}

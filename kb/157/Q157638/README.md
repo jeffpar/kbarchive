@@ -6,6 +6,8 @@ permalink: /kb/157/Q157638/
 
 ## Q157638: WD97: Excel 97 Chart Object Becomes Picture Converting to Word 7
 
+{% raw %}
+
 	Article: Q157638
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -56,3 +58,5 @@ permalink: /kb/157/Q157638/
 	
 	=============================================================================
 	
+
+{% endraw %}

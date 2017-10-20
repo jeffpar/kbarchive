@@ -6,6 +6,8 @@ permalink: /kb/183/Q183418/
 
 ## Q183418: BUG: Build Succeeds Despite Invalid Custom Build Command
 
+{% raw %}
+
 	Article: Q183418
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,5.0sp1,5.0sp2,5.0sp3,6.0
@@ -82,3 +84,5 @@ permalink: /kb/183/Q183418/
 	
 	=============================================================================
 	
+
+{% endraw %}

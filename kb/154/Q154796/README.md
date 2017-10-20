@@ -6,6 +6,8 @@ permalink: /kb/154/Q154796/
 
 ## Q154796: Close Combat: Playing Modem to Network
 
+{% raw %}
+
 	Article: Q154796
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -124,3 +126,5 @@ permalink: /kb/154/Q154796/
 	
 	=============================================================================
 	
+
+{% endraw %}

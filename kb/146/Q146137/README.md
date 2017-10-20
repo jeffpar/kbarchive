@@ -6,6 +6,8 @@ permalink: /kb/146/Q146137/
 
 ## Q146137: Schedule+ ErrMsg: There Was a Problem Importing the File
 
+{% raw %}
+
 	Article: Q146137
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.x; Win95:7.0
@@ -65,3 +67,5 @@ permalink: /kb/146/Q146137/
 	
 	=============================================================================
 	
+
+{% endraw %}

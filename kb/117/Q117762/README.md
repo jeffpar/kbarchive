@@ -6,6 +6,8 @@ permalink: /kb/117/Q117762/
 
 ## Q117762: PC MAPI: README: Messaging Applications Development Tools Disk
 
+{% raw %}
+
 	Article: Q117762
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -134,3 +136,5 @@ permalink: /kb/117/Q117762/
 	
 	=============================================================================
 	
+
+{% endraw %}

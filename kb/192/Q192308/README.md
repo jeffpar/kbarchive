@@ -6,6 +6,8 @@ permalink: /kb/192/Q192308/
 
 ## Q192308: PRB: View Designer Misreads Date Criteria in ODBC Date Format
 
+{% raw %}
+
 	Article: Q192308
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0
@@ -110,3 +112,5 @@ permalink: /kb/192/Q192308/
 	
 	=============================================================================
 	
+
+{% endraw %}

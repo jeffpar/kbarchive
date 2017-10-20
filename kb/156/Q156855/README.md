@@ -6,6 +6,8 @@ permalink: /kb/156/Q156855/
 
 ## Q156855: Incorrect User Profile Loaded When Logging On to Workstation
 
+{% raw %}
+
 	Article: Q156855
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -70,3 +72,5 @@ permalink: /kb/156/Q156855/
 	
 	=============================================================================
 	
+
+{% endraw %}

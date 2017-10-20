@@ -6,6 +6,8 @@ permalink: /kb/078/Q78528/
 
 ## Q78528: Shadow RAM Basics
 
+{% raw %}
+
 	Article: Q78528
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -94,3 +96,5 @@ permalink: /kb/078/Q78528/
 	
 	=============================================================================
 	
+
+{% endraw %}

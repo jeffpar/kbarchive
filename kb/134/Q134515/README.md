@@ -6,6 +6,8 @@ permalink: /kb/134/Q134515/
 
 ## Q134515: Cannot Invoke Cancel Button in Scandisk Using Keyboard
 
+{% raw %}
+
 	Article: Q134515
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/134/Q134515/
 	
 	=============================================================================
 	
+
+{% endraw %}

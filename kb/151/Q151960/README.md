@@ -6,6 +6,8 @@ permalink: /kb/151/Q151960/
 
 ## Q151960: FP: Table Column Widths Don't Equal Total Width of Table
 
+{% raw %}
+
 	Article: Q151960
 	Product(s): Word Front Page
 	Version(s): WINDOWS:1.1
@@ -50,3 +52,5 @@ permalink: /kb/151/Q151960/
 	
 	=============================================================================
 	
+
+{% endraw %}

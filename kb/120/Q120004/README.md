@@ -6,6 +6,8 @@ permalink: /kb/120/Q120004/
 
 ## Q120004: Task-Switching Window Remains After TAB Key Is Released
 
+{% raw %}
+
 	Article: Q120004
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/120/Q120004/
 	
 	=============================================================================
 	
+
+{% endraw %}

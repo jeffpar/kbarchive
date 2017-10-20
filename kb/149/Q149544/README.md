@@ -6,6 +6,8 @@ permalink: /kb/149/Q149544/
 
 ## Q149544: MPR DLL Files Not Installed From Windows NT 3.51 SP 3
 
+{% raw %}
+
 	Article: Q149544
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -51,3 +53,5 @@ permalink: /kb/149/Q149544/
 	
 	=============================================================================
 	
+
+{% endraw %}

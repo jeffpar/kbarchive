@@ -6,6 +6,8 @@ permalink: /kb/135/Q135888/
 
 ## Q135888: Windows 95 CD-ROM Mouse.txt File
 
+{% raw %}
+
 	Article: Q135888
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -134,3 +136,5 @@ permalink: /kb/135/Q135888/
 	
 	=============================================================================
 	
+
+{% endraw %}

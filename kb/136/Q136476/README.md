@@ -6,6 +6,8 @@ permalink: /kb/136/Q136476/
 
 ## Q136476: Third-Party PPP Clients Cannot Connect to Windows NT RAS Server
 
+{% raw %}
+
 	Article: Q136476
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -75,3 +77,5 @@ permalink: /kb/136/Q136476/
 	
 	=============================================================================
 	
+
+{% endraw %}

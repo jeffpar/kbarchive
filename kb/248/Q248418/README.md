@@ -6,6 +6,8 @@ permalink: /kb/248/Q248418/
 
 ## Q248418: FIX: Unable to Develop WebClass on Windows 2000
 
+{% raw %}
+
 	Article: Q248418
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -112,3 +114,5 @@ permalink: /kb/248/Q248418/
 	
 	=============================================================================
 	
+
+{% endraw %}

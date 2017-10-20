@@ -6,6 +6,8 @@ permalink: /kb/260/Q260527/
 
 ## Q260527: Generating Notifications for an MSCS Resource Problem
 
+{% raw %}
+
 	Article: Q260527
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -114,3 +116,5 @@ permalink: /kb/260/Q260527/
 	
 	=============================================================================
 	
+
+{% endraw %}

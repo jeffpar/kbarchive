@@ -6,6 +6,8 @@ permalink: /kb/259/Q259103/
 
 ## Q259103: HOWTO: Use the Windows Script Host to Automate an Application
 
+{% raw %}
+
 	Article: Q259103
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -105,3 +107,5 @@ permalink: /kb/259/Q259103/
 	
 	=============================================================================
 	
+
+{% endraw %}

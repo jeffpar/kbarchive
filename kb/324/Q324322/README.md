@@ -6,6 +6,8 @@ permalink: /kb/324/Q324322/
 
 ## Q324322: XSL ISAPI Contains Non-Secure Code that Results in Access to IIS
 
+{% raw %}
+
 	Article: Q324322
 	Product(s): Internet Information Server
 	Version(s): 2.5,2.6,3.0,4.0,5.0
@@ -92,3 +94,5 @@ permalink: /kb/324/Q324322/
 	
 	=============================================================================
 	
+
+{% endraw %}

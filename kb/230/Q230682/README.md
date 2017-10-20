@@ -6,6 +6,8 @@ permalink: /kb/230/Q230682/
 
 ## Q230682: XFOR: Convert Processes MEXNTS and NTSMEX Don't Run
 
+{% raw %}
+
 	Article: Q230682
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/230/Q230682/
 	
 	=============================================================================
 	
+
+{% endraw %}

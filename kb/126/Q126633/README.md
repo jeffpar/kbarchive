@@ -6,6 +6,8 @@ permalink: /kb/126/Q126633/
 
 ## Q126633: Network Card IRQ Conflicts with Another Device
 
+{% raw %}
+
 	Article: Q126633
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -75,3 +77,5 @@ permalink: /kb/126/Q126633/
 	
 	=============================================================================
 	
+
+{% endraw %}

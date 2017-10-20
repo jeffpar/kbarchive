@@ -6,6 +6,8 @@ permalink: /kb/241/Q241127/
 
 ## Q241127: ASP Uses SYSTEM Account to Release User Object
 
+{% raw %}
+
 	Article: Q241127
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -114,3 +116,5 @@ permalink: /kb/241/Q241127/
 	
 	=============================================================================
 	
+
+{% endraw %}

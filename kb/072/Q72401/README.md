@@ -6,6 +6,8 @@ permalink: /kb/072/Q72401/
 
 ## Q72401: No Enhanced Mode or System Hangs (Austin Computer)
 
+{% raw %}
+
 	Article: Q72401
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/072/Q72401/
 	
 	=============================================================================
 	
+
+{% endraw %}

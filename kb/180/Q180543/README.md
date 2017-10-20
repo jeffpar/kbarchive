@@ -6,6 +6,8 @@ permalink: /kb/180/Q180543/
 
 ## Q180543: Event 9503: NwlnkNB Parameter Export was Illegal
 
+{% raw %}
+
 	Article: Q180543
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/180/Q180543/
 	
 	=============================================================================
 	
+
+{% endraw %}

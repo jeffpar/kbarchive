@@ -6,6 +6,8 @@ permalink: /kb/187/Q187633/
 
 ## Q187633: BUG: Type Mismatch Referencing UserControl on Unloaded Form
 
+{% raw %}
+
 	Article: Q187633
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/187/Q187633/
 	
 	=============================================================================
 	
+
+{% endraw %}

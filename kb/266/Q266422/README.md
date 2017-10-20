@@ -6,6 +6,8 @@ permalink: /kb/266/Q266422/
 
 ## Q266422: SMS: Remote Control May Not Work with Matrox G400 Video Adapters
 
+{% raw %}
+
 	Article: Q266422
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -59,3 +61,5 @@ permalink: /kb/266/Q266422/
 	
 	=============================================================================
 	
+
+{% endraw %}

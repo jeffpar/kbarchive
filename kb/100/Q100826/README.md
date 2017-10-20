@@ -6,6 +6,8 @@ permalink: /kb/100/Q100826/
 
 ## Q100826: PC Ext: How External Sends Mail Between Postoffices
 
+{% raw %}
+
 	Article: Q100826
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -165,3 +167,5 @@ permalink: /kb/100/Q100826/
 	
 	=============================================================================
 	
+
+{% endraw %}

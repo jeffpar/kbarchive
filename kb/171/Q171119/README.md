@@ -6,6 +6,8 @@ permalink: /kb/171/Q171119/
 
 ## Q171119: Err. Msg.: Access Forbidden During Certificate Creation
 
+{% raw %}
+
 	Article: Q171119
 	Product(s): Internet Information Server
 	Version(s): WinNT:3.0
@@ -100,3 +102,5 @@ permalink: /kb/171/Q171119/
 	
 	=============================================================================
 	
+
+{% endraw %}

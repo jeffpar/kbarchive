@@ -6,6 +6,8 @@ permalink: /kb/148/Q148482/
 
 ## Q148482: Bookshelf 96-97: Missing Text with High Contrast Color Scheme
 
+{% raw %}
+
 	Article: Q148482
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -57,3 +59,5 @@ permalink: /kb/148/Q148482/
 	
 	=============================================================================
 	
+
+{% endraw %}

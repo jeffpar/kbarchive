@@ -6,6 +6,8 @@ permalink: /kb/122/Q122335/
 
 ## Q122335: FAX: Subject Line Limited to 40 Characters
 
+{% raw %}
+
 	Article: Q122335
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0a
@@ -45,3 +47,5 @@ permalink: /kb/122/Q122335/
 	
 	=============================================================================
 	
+
+{% endraw %}

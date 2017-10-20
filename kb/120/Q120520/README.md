@@ -6,6 +6,8 @@ permalink: /kb/120/Q120520/
 
 ## Q120520: Server Manager Disconnects Multiple Users
 
+{% raw %}
+
 	Article: Q120520
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/120/Q120520/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/044/Q44452/
 
 ## Q44452: -Zg Won't Handle Untagged Aggregate typedef Parameters
 
+{% raw %}
+
 	Article: Q44452
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -78,3 +80,5 @@ permalink: /kb/044/Q44452/
 	{
 	    return( 0 );
 	}
+
+{% endraw %}

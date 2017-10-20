@@ -6,6 +6,8 @@ permalink: /kb/247/Q247725/
 
 ## Q247725: SP3 Required During Installation of Windows NT 4.0 Enterprise Ed
 
+{% raw %}
+
 	Article: Q247725
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/247/Q247725/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/027/Q27856/
 
 ## Q27856: &quot;Formal Parameter Specification Illegal&quot; from BC But Not QB
 
+{% raw %}
+
 	Article: Q27856
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -46,3 +48,5 @@ permalink: /kb/027/Q27856/
 	The requirement that procedure and variable names be different was
 	introduced in QuickBASIC Version 4.00 and BASIC compiler Version 6.00.
 	This was not a requirement in earlier versions.
+
+{% endraw %}

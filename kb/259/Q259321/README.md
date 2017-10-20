@@ -6,6 +6,8 @@ permalink: /kb/259/Q259321/
 
 ## Q259321: XWEB: Outlook Web Access Error Replying or Forwarding Messages
 
+{% raw %}
+
 	Article: Q259321
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -91,3 +93,5 @@ permalink: /kb/259/Q259321/
 	
 	=============================================================================
 	
+
+{% endraw %}

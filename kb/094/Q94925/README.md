@@ -6,6 +6,8 @@ permalink: /kb/094/Q94925/
 
 ## Q94925: DOC: SetTimer() Unclearly Documented in Programmer's Ref
 
+{% raw %}
+
 	Article: Q94925
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -90,3 +92,5 @@ permalink: /kb/094/Q94925/
 	
 	=============================================================================
 	
+
+{% endraw %}

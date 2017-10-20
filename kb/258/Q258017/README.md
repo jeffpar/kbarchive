@@ -6,6 +6,8 @@ permalink: /kb/258/Q258017/
 
 ## Q258017: FIX: FieldChangeComplete Not Fired When UserControl Loses Focus
 
+{% raw %}
+
 	Article: Q258017
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -152,3 +154,5 @@ permalink: /kb/258/Q258017/
 	
 	=============================================================================
 	
+
+{% endraw %}

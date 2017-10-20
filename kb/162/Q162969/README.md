@@ -6,6 +6,8 @@ permalink: /kb/162/Q162969/
 
 ## Q162969: WD97: No Connectors Command on AutoShapes Menu
 
+{% raw %}
+
 	Article: Q162969
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/162/Q162969/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152643/
 
 ## Q152643: Netmon Does Not Capture Outbound Frames
 
+{% raw %}
+
 	Article: Q152643
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -95,3 +97,5 @@ permalink: /kb/152/Q152643/
 	
 	=============================================================================
 	
+
+{% endraw %}

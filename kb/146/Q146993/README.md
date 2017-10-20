@@ -6,6 +6,8 @@ permalink: /kb/146/Q146993/
 
 ## Q146993: XFOR: Quoted-Printable Encoded Messages Stay in IMC
 
+{% raw %}
+
 	Article: Q146993
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/146/Q146993/
 	
 	=============================================================================
 	
+
+{% endraw %}

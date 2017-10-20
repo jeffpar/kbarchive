@@ -6,6 +6,8 @@ permalink: /kb/223/Q223074/
 
 ## Q223074: FIX: Update Does Not Time Out if Data Is Locked
 
+{% raw %}
+
 	Article: Q223074
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -125,3 +127,5 @@ permalink: /kb/223/Q223074/
 	
 	=============================================================================
 	
+
+{% endraw %}

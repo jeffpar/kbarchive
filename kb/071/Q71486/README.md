@@ -6,6 +6,8 @@ permalink: /kb/071/Q71486/
 
 ## Q71486: Structure of Interrupt Vector Table
 
+{% raw %}
+
 	Article: Q71486
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:1.x,2.x,3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -74,3 +76,5 @@ permalink: /kb/071/Q71486/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190745/
 
 ## Q190745: Manager Does Not Show Details View for TN3270 and Print Server
 
+{% raw %}
+
 	Article: Q190745
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -57,3 +59,5 @@ permalink: /kb/190/Q190745/
 	
 	=============================================================================
 	
+
+{% endraw %}

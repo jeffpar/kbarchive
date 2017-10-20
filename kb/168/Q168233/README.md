@@ -6,6 +6,8 @@ permalink: /kb/168/Q168233/
 
 ## Q168233: Continuous No Page Break Setting Ignored by Generic Text Driver
 
+{% raw %}
+
 	Article: Q168233
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/168/Q168233/
 	
 	=============================================================================
 	
+
+{% endraw %}

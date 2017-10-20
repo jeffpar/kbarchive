@@ -6,6 +6,8 @@ permalink: /kb/153/Q153947/
 
 ## Q153947: Problem Accessing Hard Drive After Running Optimizer
 
+{% raw %}
+
 	Article: Q153947
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -147,3 +149,5 @@ permalink: /kb/153/Q153947/
 	
 	=============================================================================
 	
+
+{% endraw %}

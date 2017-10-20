@@ -6,6 +6,8 @@ permalink: /kb/245/Q245474/
 
 ## Q245474: Storage Methods for Server-Based User Profiles
 
+{% raw %}
+
 	Article: Q245474
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -98,3 +100,5 @@ permalink: /kb/245/Q245474/
 	
 	=============================================================================
 	
+
+{% endraw %}

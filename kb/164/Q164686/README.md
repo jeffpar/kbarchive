@@ -6,6 +6,8 @@ permalink: /kb/164/Q164686/
 
 ## Q164686: WD97: Instant Access OCR, Word Proofreader Commands Unavailable
 
+{% raw %}
+
 	Article: Q164686
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -88,3 +90,5 @@ permalink: /kb/164/Q164686/
 	
 	=============================================================================
 	
+
+{% endraw %}

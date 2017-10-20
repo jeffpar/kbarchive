@@ -6,6 +6,8 @@ permalink: /kb/093/Q93265/
 
 ## Q93265: Problems Running Windows on Zenith Supersport 286
 
+{% raw %}
+
 	Article: Q93265
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/093/Q93265/
 	
 	=============================================================================
 	
+
+{% endraw %}

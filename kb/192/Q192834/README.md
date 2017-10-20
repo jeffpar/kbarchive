@@ -6,6 +6,8 @@ permalink: /kb/192/Q192834/
 
 ## Q192834: My Personal Tutor 1st &amp; 2nd Grade: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q192834
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/192/Q192834/
 	
 	=============================================================================
 	
+
+{% endraw %}

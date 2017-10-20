@@ -6,6 +6,8 @@ permalink: /kb/218/Q218613/
 
 ## Q218613: FIX: /DELAYLOAD Linker Option Generates Bad Image On Alpha
 
+{% raw %}
+
 	Article: Q218613
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -60,3 +62,5 @@ permalink: /kb/218/Q218613/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166242/
 
 ## Q166242: PRB: Statusbar Pane Text Disappears When MDI Child Window Open
 
+{% raw %}
+
 	Article: Q166242
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -90,3 +92,5 @@ permalink: /kb/166/Q166242/
 	
 	=============================================================================
 	
+
+{% endraw %}

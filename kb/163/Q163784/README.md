@@ -6,6 +6,8 @@ permalink: /kb/163/Q163784/
 
 ## Q163784: FIX: Form Wizard Ignores Design Area Limitation
 
+{% raw %}
+
 	Article: Q163784
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -149,3 +151,5 @@ permalink: /kb/163/Q163784/
 	
 	=============================================================================
 	
+
+{% endraw %}

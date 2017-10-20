@@ -6,6 +6,8 @@ permalink: /kb/148/Q148724/
 
 ## Q148724: How to Fill Second List with Values from Multiselect List Box
 
+{% raw %}
+
 	Article: Q148724
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -176,3 +178,5 @@ permalink: /kb/148/Q148724/
 	
 	=============================================================================
 	
+
+{% endraw %}

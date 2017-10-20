@@ -6,6 +6,8 @@ permalink: /kb/141/Q141732/
 
 ## Q141732: Adaptec AHA154x Driver Fails to Install Second Adapter
 
+{% raw %}
+
 	Article: Q141732
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP2,SP3
@@ -85,3 +87,5 @@ permalink: /kb/141/Q141732/
 	
 	=============================================================================
 	
+
+{% endraw %}

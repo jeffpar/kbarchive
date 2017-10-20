@@ -6,6 +6,8 @@ permalink: /kb/158/Q158672/
 
 ## Q158672: An IBM 720 Server Multiprocessor May Randomly Hang
 
+{% raw %}
+
 	Article: Q158672
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -47,3 +49,5 @@ permalink: /kb/158/Q158672/
 	
 	=============================================================================
 	
+
+{% endraw %}

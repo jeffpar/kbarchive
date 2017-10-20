@@ -6,6 +6,8 @@ permalink: /kb/123/Q123797/
 
 ## Q123797: PPT: Cannot Change Shadow Color of Organization Chart Object
 
+{% raw %}
+
 	Article: Q123797
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,7.0; :1.0,2.0
@@ -87,3 +89,5 @@ permalink: /kb/123/Q123797/
 	
 	=============================================================================
 	
+
+{% endraw %}

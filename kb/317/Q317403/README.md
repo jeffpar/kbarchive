@@ -6,6 +6,8 @@ permalink: /kb/317/Q317403/
 
 ## Q317403: ENC: &quot;Offset: 000023ab&quot; Error Message Starting Encarta
 
+{% raw %}
+
 	Article: Q317403
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -261,3 +263,5 @@ permalink: /kb/317/Q317403/
 	
 	=============================================================================
 	
+
+{% endraw %}

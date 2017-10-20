@@ -6,6 +6,8 @@ permalink: /kb/068/Q68852/
 
 ## Q68852: Installing Windows 3.0 on NEC ProSpeed with Docking Station
 
+{% raw %}
+
 	Article: Q68852
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -40,3 +42,5 @@ permalink: /kb/068/Q68852/
 	
 	=============================================================================
 	
+
+{% endraw %}

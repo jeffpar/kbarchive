@@ -6,6 +6,8 @@ permalink: /kb/104/Q104993/
 
 ## Q104993: MS-DOS Includes MSD.COM and MSD.EXE
 
+{% raw %}
+
 	Article: Q104993
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -55,3 +57,5 @@ permalink: /kb/104/Q104993/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/090/Q90526/
 
 ## Q90526: Cannot Set Default Appointment Time in Schedule+
 
+{% raw %}
+
 	Article: Q90526
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:1.0,3.1,3.11
@@ -39,3 +41,5 @@ permalink: /kb/090/Q90526/
 	
 	=============================================================================
 	
+
+{% endraw %}

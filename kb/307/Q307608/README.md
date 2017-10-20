@@ -6,6 +6,8 @@ permalink: /kb/307/Q307608/
 
 ## Q307608: INFO: Availability of URLScan Version 2.5 Security Tool
 
+{% raw %}
+
 	Article: Q307608
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -434,3 +436,5 @@ permalink: /kb/307/Q307608/
 	
 	=============================================================================
 	
+
+{% endraw %}

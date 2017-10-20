@@ -6,6 +6,8 @@ permalink: /kb/231/Q231922/
 
 ## Q231922: WD97: Poor Compression of Word Files That Contain Graphics
 
+{% raw %}
+
 	Article: Q231922
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -48,3 +50,5 @@ permalink: /kb/231/Q231922/
 	
 	=============================================================================
 	
+
+{% endraw %}

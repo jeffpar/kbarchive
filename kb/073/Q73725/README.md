@@ -6,6 +6,8 @@ permalink: /kb/073/Q73725/
 
 ## Q73725: Meaning of MODE &quot;Illegal Device Name - COMx&quot; Message
 
+{% raw %}
+
 	Article: Q73725
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.01,5.0,5.0a
@@ -69,3 +71,5 @@ permalink: /kb/073/Q73725/
 	
 	=============================================================================
 	
+
+{% endraw %}

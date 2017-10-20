@@ -6,6 +6,8 @@ permalink: /kb/152/Q152700/
 
 ## Q152700: Koi and the Kola Nuts: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q152700
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -72,3 +74,5 @@ permalink: /kb/152/Q152700/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161671/
 
 ## Q161671: WD97: &quot;Word Could Not Split...&quot; Attempting to Split Cells
 
+{% raw %}
+
 	Article: Q161671
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -90,3 +92,5 @@ permalink: /kb/161/Q161671/
 	
 	=============================================================================
 	
+
+{% endraw %}

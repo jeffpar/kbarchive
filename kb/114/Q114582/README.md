@@ -6,6 +6,8 @@ permalink: /kb/114/Q114582/
 
 ## Q114582: X400: Attachments Show Up as BDYx.P00
 
+{% raw %}
+
 	Article: Q114582
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -49,3 +51,5 @@ permalink: /kb/114/Q114582/
 	
 	=============================================================================
 	
+
+{% endraw %}

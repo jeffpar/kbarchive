@@ -6,6 +6,8 @@ permalink: /kb/083/Q83342/
 
 ## Q83342: Mouse Doesn't Work in 386 Enhanced Mode
 
+{% raw %}
+
 	Article: Q83342
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -90,3 +92,5 @@ permalink: /kb/083/Q83342/
 	
 	=============================================================================
 	
+
+{% endraw %}

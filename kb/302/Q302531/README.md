@@ -6,6 +6,8 @@ permalink: /kb/302/Q302531/
 
 ## Q302531: How To Add A User
 
+{% raw %}
+
 	Article: Q302531
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -83,3 +85,5 @@ permalink: /kb/302/Q302531/
 	
 	=============================================================================
 	
+
+{% endraw %}

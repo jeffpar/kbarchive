@@ -6,6 +6,8 @@ permalink: /kb/152/Q152489/
 
 ## Q152489: Inventory Fails to Inventory a Package
 
+{% raw %}
+
 	Article: Q152489
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -58,3 +60,5 @@ permalink: /kb/152/Q152489/
 	
 	=============================================================================
 	
+
+{% endraw %}

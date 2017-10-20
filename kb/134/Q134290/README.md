@@ -6,6 +6,8 @@ permalink: /kb/134/Q134290/
 
 ## Q134290: Cannot Forward Attachment from BBS by E-Mail
 
+{% raw %}
+
 	Article: Q134290
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134290/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153469/
 
 ## Q153469: Policy Editor Causes Page Fault in Comctl32.dll
 
+{% raw %}
+
 	Article: Q153469
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2
@@ -62,3 +64,5 @@ permalink: /kb/153/Q153469/
 	
 	=============================================================================
 	
+
+{% endraw %}

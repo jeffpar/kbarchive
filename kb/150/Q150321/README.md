@@ -6,6 +6,8 @@ permalink: /kb/150/Q150321/
 
 ## Q150321: Bookshelf 96: Word's Define Command Looks Up First Word
 
+{% raw %}
+
 	Article: Q150321
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:3.1,3.11,6.0,6.0a,6.0c
@@ -53,3 +55,5 @@ permalink: /kb/150/Q150321/
 	
 	=============================================================================
 	
+
+{% endraw %}

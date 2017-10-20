@@ -6,6 +6,8 @@ permalink: /kb/279/Q279003/
 
 ## Q279003: Understanding and Configuring the SNA Server/HIS 2000 Web Client
 
+{% raw %}
+
 	Article: Q279003
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -144,3 +146,5 @@ permalink: /kb/279/Q279003/
 	
 	=============================================================================
 	
+
+{% endraw %}

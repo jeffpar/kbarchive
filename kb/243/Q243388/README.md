@@ -6,6 +6,8 @@ permalink: /kb/243/Q243388/
 
 ## Q243388: Shared Folders Connections Fail Using Same User ID
 
+{% raw %}
+
 	Article: Q243388
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -82,3 +84,5 @@ permalink: /kb/243/Q243388/
 	
 	=============================================================================
 	
+
+{% endraw %}

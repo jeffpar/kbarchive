@@ -6,6 +6,8 @@ permalink: /kb/131/Q131989/
 
 ## Q131989: PRB: PreCreateWindow() Not Called for CFormView
 
+{% raw %}
+
 	Article: Q131989
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1
@@ -94,3 +96,5 @@ permalink: /kb/131/Q131989/
 	
 	=============================================================================
 	
+
+{% endraw %}

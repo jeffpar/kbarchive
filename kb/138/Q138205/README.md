@@ -6,6 +6,8 @@ permalink: /kb/138/Q138205/
 
 ## Q138205: HOWTO: Use OLE Automation with Microsoft Word
 
+{% raw %}
+
 	Article: Q138205
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -143,3 +145,5 @@ permalink: /kb/138/Q138205/
 	
 	=============================================================================
 	
+
+{% endraw %}

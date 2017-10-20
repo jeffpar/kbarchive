@@ -6,6 +6,8 @@ permalink: /kb/132/Q132757/
 
 ## Q132757: GP Fault Printing a File in CorelDRAW
 
+{% raw %}
+
 	Article: Q132757
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -88,3 +90,5 @@ permalink: /kb/132/Q132757/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257874/
 
 ## Q257874: XADM: Hard Coded Organization Name When Installing DMS
 
+{% raw %}
+
 	Article: Q257874
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -49,3 +51,5 @@ permalink: /kb/257/Q257874/
 	
 	=============================================================================
 	
+
+{% endraw %}

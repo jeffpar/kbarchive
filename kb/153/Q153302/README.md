@@ -6,6 +6,8 @@ permalink: /kb/153/Q153302/
 
 ## Q153302: Error Reading Site Control File from Parent Site
 
+{% raw %}
+
 	Article: Q153302
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -49,3 +51,5 @@ permalink: /kb/153/Q153302/
 	
 	=============================================================================
 	
+
+{% endraw %}

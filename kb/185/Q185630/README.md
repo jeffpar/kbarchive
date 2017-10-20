@@ -6,6 +6,8 @@ permalink: /kb/185/Q185630/
 
 ## Q185630: 3270 Sessions May Hang When Emulator Rejects Host Bind
 
+{% raw %}
+
 	Article: Q185630
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP2,3.0 SP3,4.0
@@ -188,3 +190,5 @@ permalink: /kb/185/Q185630/
 	
 	=============================================================================
 	
+
+{% endraw %}

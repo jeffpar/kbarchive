@@ -6,6 +6,8 @@ permalink: /kb/146/Q146336/
 
 ## Q146336: Joystick in Windows NT 4.0 Does Not Work Properly
 
+{% raw %}
+
 	Article: Q146336
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/146/Q146336/
 	
 	=============================================================================
 	
+
+{% endraw %}

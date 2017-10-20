@@ -6,6 +6,8 @@ permalink: /kb/078/Q78681/
 
 ## Q78681: VTI Turbo 55 80286 Requires BIOS Version 3.22 or Later
 
+{% raw %}
+
 	Article: Q78681
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:
@@ -60,3 +62,5 @@ permalink: /kb/078/Q78681/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190992/
 
 ## Q190992: BUG: Mouse Events Do Not Fire From ADODC
 
+{% raw %}
+
 	Article: Q190992
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -76,3 +78,5 @@ permalink: /kb/190/Q190992/
 	
 	=============================================================================
 	
+
+{% endraw %}

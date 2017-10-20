@@ -6,6 +6,8 @@ permalink: /kb/064/Q64470/
 
 ## Q64470: International Keyboard Layout Always Prompts for Disk
 
+{% raw %}
+
 	Article: Q64470
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -47,3 +49,5 @@ permalink: /kb/064/Q64470/
 	
 	=============================================================================
 	
+
+{% endraw %}

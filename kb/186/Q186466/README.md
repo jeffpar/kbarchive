@@ -6,6 +6,8 @@ permalink: /kb/186/Q186466/
 
 ## Q186466: Terminal Server Clients Should be Set to at Least 256 Colors
 
+{% raw %}
+
 	Article: Q186466
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -40,3 +42,5 @@ permalink: /kb/186/Q186466/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177116/
 
 ## Q177116: ODE97: How to Create Context-Sensitive Help for an MS Access DB
 
+{% raw %}
+
 	Article: Q177116
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -268,3 +270,5 @@ permalink: /kb/177/Q177116/
 	
 	=============================================================================
 	
+
+{% endraw %}

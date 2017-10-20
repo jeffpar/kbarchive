@@ -6,6 +6,8 @@ permalink: /kb/131/Q131011/
 
 ## Q131011: SMS: Netspeed.com Internals
 
+{% raw %}
+
 	Article: Q131011
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -81,3 +83,5 @@ permalink: /kb/131/Q131011/
 	
 	=============================================================================
 	
+
+{% endraw %}

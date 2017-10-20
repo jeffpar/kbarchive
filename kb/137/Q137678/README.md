@@ -6,6 +6,8 @@ permalink: /kb/137/Q137678/
 
 ## Q137678: SMS Service Pack Does Not Upgrade Administrator Tools
 
+{% raw %}
+
 	Article: Q137678
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -122,3 +124,5 @@ permalink: /kb/137/Q137678/
 	
 	=============================================================================
 	
+
+{% endraw %}

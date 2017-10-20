@@ -6,6 +6,8 @@ permalink: /kb/301/Q301963/
 
 ## Q301963: Err Msg: A Fatal Exception 0E Has Occurred at 0157:BFF9A25B
 
+{% raw %}
+
 	Article: Q301963
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/301/Q301963/
 	
 	=============================================================================
 	
+
+{% endraw %}

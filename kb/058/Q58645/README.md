@@ -6,6 +6,8 @@ permalink: /kb/058/Q58645/
 
 ## Q58645: UB Drivers Specified in LANMAN.INI/AUTOEXEC.BAT Truncated
 
+{% raw %}
+
 	Article: Q58645
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/058/Q58645/
 	
 	=============================================================================
 	
+
+{% endraw %}

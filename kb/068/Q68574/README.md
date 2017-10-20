@@ -6,6 +6,8 @@ permalink: /kb/068/Q68574/
 
 ## Q68574: Performance Differences Between LineTo() and Polyline()
 
+{% raw %}
+
 	Article: Q68574
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -60,3 +62,5 @@ permalink: /kb/068/Q68574/
 	
 	=============================================================================
 	
+
+{% endraw %}

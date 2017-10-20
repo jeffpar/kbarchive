@@ -6,6 +6,8 @@ permalink: /kb/248/Q248629/
 
 ## Q248629: No WINS Reverse Lookup Using RFC2317 Classless In-Addr.arpa
 
+{% raw %}
+
 	Article: Q248629
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/248/Q248629/
 	
 	=============================================================================
 	
+
+{% endraw %}

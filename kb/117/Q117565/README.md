@@ -6,6 +6,8 @@ permalink: /kb/117/Q117565/
 
 ## Q117565: HOWTO: Getting the Current Printer Settings in MFC
 
+{% raw %}
+
 	Article: Q117565
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1
@@ -114,3 +116,5 @@ permalink: /kb/117/Q117565/
 	
 	=============================================================================
 	
+
+{% endraw %}

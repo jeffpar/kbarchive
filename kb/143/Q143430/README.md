@@ -6,6 +6,8 @@ permalink: /kb/143/Q143430/
 
 ## Q143430: FIX: Pointer to Member Function Is Not Shown as Reference
 
+{% raw %}
+
 	Article: Q143430
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -90,3 +92,5 @@ permalink: /kb/143/Q143430/
 	
 	=============================================================================
 	
+
+{% endraw %}

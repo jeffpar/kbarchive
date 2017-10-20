@@ -6,6 +6,8 @@ permalink: /kb/275/Q275245/
 
 ## Q275245: BUG: Floppy Disks Created by PDW Repeats Prompt to Insert Disks
 
+{% raw %}
+
 	Article: Q275245
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP4
@@ -77,3 +79,5 @@ permalink: /kb/275/Q275245/
 	
 	=============================================================================
 	
+
+{% endraw %}

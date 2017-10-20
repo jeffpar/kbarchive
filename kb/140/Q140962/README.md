@@ -6,6 +6,8 @@ permalink: /kb/140/Q140962/
 
 ## Q140962: XFOR: Access Violation When RTF Message Over 64K
 
+{% raw %}
+
 	Article: Q140962
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -43,3 +45,5 @@ permalink: /kb/140/Q140962/
 	
 	=============================================================================
 	
+
+{% endraw %}

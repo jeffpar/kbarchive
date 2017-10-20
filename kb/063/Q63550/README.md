@@ -6,6 +6,8 @@ permalink: /kb/063/Q63550/
 
 ## Q63550: Forward Slashes Appear in Paths of Some Error Messages
 
+{% raw %}
+
 	Article: Q63550
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -28,3 +30,5 @@ permalink: /kb/063/Q63550/
 	
 	The forward slashes in these error messages are normal and do not
 	cause any problems with the compiler. This behavior is intended.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160661/
 
 ## Q160661: XCLN: Japanese Exchange Client Requires Japanese Windows 95
 
+{% raw %}
+
 	Article: Q160661
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -48,3 +50,5 @@ permalink: /kb/160/Q160661/
 	
 	=============================================================================
 	
+
+{% endraw %}

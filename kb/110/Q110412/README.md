@@ -6,6 +6,8 @@ permalink: /kb/110/Q110412/
 
 ## Q110412: Screen Corruption in Crop Duster World Scenery
 
+{% raw %}
+
 	Article: Q110412
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -63,3 +65,5 @@ permalink: /kb/110/Q110412/
 	
 	=============================================================================
 	
+
+{% endraw %}

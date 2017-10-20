@@ -6,6 +6,8 @@ permalink: /kb/123/Q123052/
 
 ## Q123052: Notepad Does Not Print Tabs Properly
 
+{% raw %}
+
 	Article: Q123052
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/123/Q123052/
 	
 	=============================================================================
 	
+
+{% endraw %}

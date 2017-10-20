@@ -6,6 +6,8 @@ permalink: /kb/082/Q82433/
 
 ## Q82433: Meaning of the &#91;compatibility&#93; Section in SETUP.INF
 
+{% raw %}
+
 	Article: Q82433
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/082/Q82433/
 	
 	=============================================================================
 	
+
+{% endraw %}

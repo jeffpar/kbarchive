@@ -6,6 +6,8 @@ permalink: /kb/323/Q323470/
 
 ## Q323470: HOW TO: Create a Secure WebDAV Publishing Directory
 
+{% raw %}
+
 	Article: Q323470
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -126,3 +128,5 @@ permalink: /kb/323/Q323470/
 	
 	=============================================================================
 	
+
+{% endraw %}

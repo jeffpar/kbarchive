@@ -6,6 +6,8 @@ permalink: /kb/195/Q195612/
 
 ## Q195612: Local Named Object Is Mistakenly Created in Global Name Space
 
+{% raw %}
+
 	Article: Q195612
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/195/Q195612/
 	
 	=============================================================================
 	
+
+{% endraw %}

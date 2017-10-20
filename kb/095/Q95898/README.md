@@ -6,6 +6,8 @@ permalink: /kb/095/Q95898/
 
 ## Q95898: PC DOS: Slash Character Truncates X.400 Organization Name
 
+{% raw %}
+
 	Article: Q95898
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/095/Q95898/
 	
 	=============================================================================
 	
+
+{% endraw %}

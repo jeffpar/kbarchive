@@ -6,6 +6,8 @@ permalink: /kb/172/Q172105/
 
 ## Q172105: FIX: NewPage Method Followed by EndDoc Method Prints Blank Page
 
+{% raw %}
+
 	Article: Q172105
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/172/Q172105/
 	
 	=============================================================================
 	
+
+{% endraw %}

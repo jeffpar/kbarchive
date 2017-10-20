@@ -6,6 +6,8 @@ permalink: /kb/148/Q148943/
 
 ## Q148943: Removing Banyan Vines Client for NT Leaves Vines Protocol
 
+{% raw %}
+
 	Article: Q148943
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51 4.00
@@ -66,3 +68,5 @@ permalink: /kb/148/Q148943/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237543/
 
 ## Q237543: SMS: Service Pack Upgrade Considerations for Clients
 
+{% raw %}
+
 	Article: Q237543
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -110,3 +112,5 @@ permalink: /kb/237/Q237543/
 	
 	=============================================================================
 	
+
+{% endraw %}

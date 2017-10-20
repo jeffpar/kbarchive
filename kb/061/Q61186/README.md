@@ -6,6 +6,8 @@ permalink: /kb/061/Q61186/
 
 ## Q61186: C 6.00 README: Installation Program Notes
 
+{% raw %}
+
 	Article: Q61186
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -22,3 +24,5 @@ permalink: /kb/061/Q61186/
 	If you are already running QuickHelp as a keyboard monitor under OS/2,
 	disable it before running SETUP so it can copy new versions of
 	QuickHelp and MSHELP.DLL to your hard disk.
+
+{% endraw %}

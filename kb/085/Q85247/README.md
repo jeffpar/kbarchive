@@ -6,6 +6,8 @@ permalink: /kb/085/Q85247/
 
 ## Q85247: Windows 3.1 Resource Kit Setup and Utilities Disk (3.5 Inch)
 
+{% raw %}
+
 	Article: Q85247
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -116,3 +118,5 @@ permalink: /kb/085/Q85247/
 	
 	=============================================================================
 	
+
+{% endraw %}

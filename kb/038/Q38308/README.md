@@ -6,6 +6,8 @@ permalink: /kb/038/Q38308/
 
 ## Q38308: Spawn Will Not Pass Redirection to Child
 
+{% raw %}
+
 	Article: Q38308
 	Product(s): See article
 	Version(s): 5.10
@@ -63,3 +65,5 @@ permalink: /kb/038/Q38308/
 	of COMMAND.COM that runs SORT.EXE, as follows:
 	
 	   system("sort.exe <infile.dat >outfile.dat");
+
+{% endraw %}

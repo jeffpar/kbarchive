@@ -6,6 +6,8 @@ permalink: /kb/084/Q84886/
 
 ## Q84886: Unable to Print TrueType Fonts on Novell Network
 
+{% raw %}
+
 	Article: Q84886
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/084/Q84886/
 	
 	=============================================================================
 	
+
+{% endraw %}

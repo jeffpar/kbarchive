@@ -6,6 +6,8 @@ permalink: /kb/061/Q61568/
 
 ## Q61568: Processing Data Returned from DosQNmPipeSemState()
 
+{% raw %}
+
 	Article: Q61568
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -262,3 +264,5 @@ permalink: /kb/061/Q61568/
 	
 	=============================================================================
 	
+
+{% endraw %}

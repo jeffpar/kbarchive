@@ -6,6 +6,8 @@ permalink: /kb/243/Q243542/
 
 ## Q243542: PRB: File() Function Ignores Path if Given in Parameter
 
+{% raw %}
+
 	Article: Q243542
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -83,3 +85,5 @@ permalink: /kb/243/Q243542/
 	
 	=============================================================================
 	
+
+{% endraw %}

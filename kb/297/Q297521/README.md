@@ -6,6 +6,8 @@ permalink: /kb/297/Q297521/
 
 ## Q297521: DB2OLEDB Provider Overlaps Meta Data After Column 84
 
+{% raw %}
+
 	Article: Q297521
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -149,3 +151,5 @@ permalink: /kb/297/Q297521/
 	
 	=============================================================================
 	
+
+{% endraw %}

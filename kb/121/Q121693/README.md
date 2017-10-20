@@ -6,6 +6,8 @@ permalink: /kb/121/Q121693/
 
 ## Q121693: How to Obtain Windows NT Version 3.5 U.S. Service Pack
 
+{% raw %}
+
 	Article: Q121693
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP3
@@ -220,3 +222,5 @@ permalink: /kb/121/Q121693/
 	
 	=============================================================================
 	
+
+{% endraw %}

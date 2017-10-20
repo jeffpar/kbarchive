@@ -6,6 +6,8 @@ permalink: /kb/077/Q77878/
 
 ## Q77878: IBM PC 3270 Emulation Ver. 1.22 Incompatible with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q77878
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -47,3 +49,5 @@ permalink: /kb/077/Q77878/
 	
 	=============================================================================
 	
+
+{% endraw %}

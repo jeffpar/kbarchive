@@ -6,6 +6,8 @@ permalink: /kb/241/Q241796/
 
 ## Q241796: Local Groups and Microsoft Cluster Server
 
+{% raw %}
+
 	Article: Q241796
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -66,3 +68,5 @@ permalink: /kb/241/Q241796/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72285/
 
 ## Q72285: Non-MS-DOS Format Conversion Utility: Xeno Copy PC
 
+{% raw %}
+
 	Article: Q72285
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -52,3 +54,5 @@ permalink: /kb/072/Q72285/
 	
 	=============================================================================
 	
+
+{% endraw %}

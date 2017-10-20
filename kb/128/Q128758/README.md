@@ -6,6 +6,8 @@ permalink: /kb/128/Q128758/
 
 ## Q128758: MSB Solar: How to Play the Games
 
+{% raw %}
+
 	Article: Q128758
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -280,3 +282,5 @@ permalink: /kb/128/Q128758/
 	
 	=============================================================================
 	
+
+{% endraw %}

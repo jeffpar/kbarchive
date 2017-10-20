@@ -6,6 +6,8 @@ permalink: /kb/043/Q43083/
 
 ## Q43083: DOSSHELL Returns to DOS after Executing Batch File
 
+{% raw %}
+
 	Article: Q43083
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
@@ -55,3 +57,5 @@ permalink: /kb/043/Q43083/
 	
 	=============================================================================
 	
+
+{% endraw %}

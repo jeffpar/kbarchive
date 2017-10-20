@@ -6,6 +6,8 @@ permalink: /kb/271/Q271237/
 
 ## Q271237: Magic School Bus: Sound Is Not Played in Program
 
+{% raw %}
+
 	Article: Q271237
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -142,3 +144,5 @@ permalink: /kb/271/Q271237/
 	
 	=============================================================================
 	
+
+{% endraw %}

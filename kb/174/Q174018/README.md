@@ -6,6 +6,8 @@ permalink: /kb/174/Q174018/
 
 ## Q174018: Description of the Windows 95 Startup Process
 
+{% raw %}
+
 	Article: Q174018
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -288,3 +290,5 @@ permalink: /kb/174/Q174018/
 	
 	=============================================================================
 	
+
+{% endraw %}

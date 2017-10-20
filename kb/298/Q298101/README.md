@@ -6,6 +6,8 @@ permalink: /kb/298/Q298101/
 
 ## Q298101: World Atlas 2001: Internet Explorer Error When You Start Atlas
 
+{% raw %}
+
 	Article: Q298101
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -229,3 +231,5 @@ permalink: /kb/298/Q298101/
 	
 	=============================================================================
 	
+
+{% endraw %}

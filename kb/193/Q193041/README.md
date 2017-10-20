@@ -6,6 +6,8 @@ permalink: /kb/193/Q193041/
 
 ## Q193041: XADM: Information Store's Directory Query Returns LDAP Error
 
+{% raw %}
+
 	Article: Q193041
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -74,3 +76,5 @@ permalink: /kb/193/Q193041/
 	
 	=============================================================================
 	
+
+{% endraw %}

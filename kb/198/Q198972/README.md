@@ -6,6 +6,8 @@ permalink: /kb/198/Q198972/
 
 ## Q198972: Bookshelf/Dictionary: Citations Not Added to Research Projects
 
+{% raw %}
+
 	Article: Q198972
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/198/Q198972/
 	
 	=============================================================================
 	
+
+{% endraw %}

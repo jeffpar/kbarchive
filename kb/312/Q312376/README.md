@@ -6,6 +6,8 @@ permalink: /kb/312/Q312376/
 
 ## Q312376: HOW TO:Configure URLScan to Allow Requests with a Null Extension
 
+{% raw %}
+
 	Article: Q312376
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -144,3 +146,5 @@ permalink: /kb/312/Q312376/
 	
 	=============================================================================
 	
+
+{% endraw %}

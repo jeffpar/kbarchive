@@ -6,6 +6,8 @@ permalink: /kb/164/Q164023/
 
 ## Q164023: Fix for Gethostbyname() IP Address Order on Local Multihomed Mac
 
+{% raw %}
+
 	Article: Q164023
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -121,3 +123,5 @@ permalink: /kb/164/Q164023/
 	
 	=============================================================================
 	
+
+{% endraw %}

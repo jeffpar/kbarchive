@@ -6,6 +6,8 @@ permalink: /kb/160/Q160068/
 
 ## Q160068: WD97: Optimizing Microsoft Word 97
 
+{% raw %}
+
 	Article: Q160068
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -539,3 +541,5 @@ permalink: /kb/160/Q160068/
 	
 	=============================================================================
 	
+
+{% endraw %}

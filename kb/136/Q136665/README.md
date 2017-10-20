@@ -6,6 +6,8 @@ permalink: /kb/136/Q136665/
 
 ## Q136665: Err Msg Accessing Netware or Compatible Network: Network Request
 
+{% raw %}
+
 	Article: Q136665
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -51,3 +53,5 @@ permalink: /kb/136/Q136665/
 	
 	=============================================================================
 	
+
+{% endraw %}

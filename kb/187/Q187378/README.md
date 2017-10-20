@@ -6,6 +6,8 @@ permalink: /kb/187/Q187378/
 
 ## Q187378: BUG: DoBulkFieldExchange Not Called for MFC Recordset Class
 
+{% raw %}
+
 	Article: Q187378
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -73,3 +75,5 @@ permalink: /kb/187/Q187378/
 	
 	=============================================================================
 	
+
+{% endraw %}

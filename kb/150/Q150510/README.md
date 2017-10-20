@@ -6,6 +6,8 @@ permalink: /kb/150/Q150510/
 
 ## Q150510: Pregnancy and Child Care: Find Highlight is Inconsistent
 
+{% raw %}
+
 	Article: Q150510
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -42,3 +44,5 @@ permalink: /kb/150/Q150510/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/273/Q273945/
 
 ## Q273945: XCON: X.400 Connector Ignores OU2 During Routing
 
+{% raw %}
+
 	Article: Q273945
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -119,3 +121,5 @@ permalink: /kb/273/Q273945/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191955/
 
 ## Q191955: PRB: NOWAIT Breaks Filter Printing Report from Preview Window
 
+{% raw %}
+
 	Article: Q191955
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -99,3 +101,5 @@ permalink: /kb/191/Q191955/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271200/
 
 ## Q271200: XADM: Event ID 1171 Message Occurs with  Exception E0010006
 
+{% raw %}
+
 	Article: Q271200
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -193,3 +195,5 @@ permalink: /kb/271/Q271200/
 	
 	=============================================================================
 	
+
+{% endraw %}

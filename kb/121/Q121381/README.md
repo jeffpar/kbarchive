@@ -6,6 +6,8 @@ permalink: /kb/121/Q121381/
 
 ## Q121381: Microsoft Systems Journal: November 1994
 
+{% raw %}
+
 	Article: Q121381
 	Product(s): Miscrosoft Systems Journal
 	Version(s): for November 1994
@@ -100,3 +102,5 @@ permalink: /kb/121/Q121381/
 	
 	=============================================================================
 	
+
+{% endraw %}

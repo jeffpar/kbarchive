@@ -6,6 +6,8 @@ permalink: /kb/151/Q151401/
 
 ## Q151401: Err Msg: &quot;Bad Command or Filename&quot; on Windows NT Login Script
 
+{% raw %}
+
 	Article: Q151401
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -83,3 +85,5 @@ permalink: /kb/151/Q151401/
 	
 	=============================================================================
 	
+
+{% endraw %}

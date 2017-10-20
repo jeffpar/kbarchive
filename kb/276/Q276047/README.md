@@ -6,6 +6,8 @@ permalink: /kb/276/Q276047/
 
 ## Q276047: Application Exception in DMODInitReceiveAllocate
 
+{% raw %}
+
 	Article: Q276047
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3
@@ -98,3 +100,5 @@ permalink: /kb/276/Q276047/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150042/
 
 ## Q150042: Browser Client Sends Multiple Logon Requests
 
+{% raw %}
+
 	Article: Q150042
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/150/Q150042/
 	
 	=============================================================================
 	
+
+{% endraw %}

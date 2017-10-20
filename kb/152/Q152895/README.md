@@ -6,6 +6,8 @@ permalink: /kb/152/Q152895/
 
 ## Q152895: XADM: Unable to Migrate PABs for Appletalk Mail Users
 
+{% raw %}
+
 	Article: Q152895
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -46,3 +48,5 @@ permalink: /kb/152/Q152895/
 	
 	=============================================================================
 	
+
+{% endraw %}

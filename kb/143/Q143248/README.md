@@ -6,6 +6,8 @@ permalink: /kb/143/Q143248/
 
 ## Q143248: FIX: Error: &quot;Variable 'TITLE' is not found&quot; as Start Tastrade
 
+{% raw %}
+
 	Article: Q143248
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -152,3 +154,5 @@ permalink: /kb/143/Q143248/
 	
 	=============================================================================
 	
+
+{% endraw %}

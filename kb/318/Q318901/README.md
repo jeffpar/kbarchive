@@ -6,6 +6,8 @@ permalink: /kb/318/Q318901/
 
 ## Q318901: Application Exception in Explorer.exe When You Use OLE DB for DB
 
+{% raw %}
+
 	Article: Q318901
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/318/Q318901/
 	
 	=============================================================================
 	
+
+{% endraw %}

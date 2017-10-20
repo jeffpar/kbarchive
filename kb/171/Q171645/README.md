@@ -6,6 +6,8 @@ permalink: /kb/171/Q171645/
 
 ## Q171645: MS Outlook 97 Step by Step Corrections and Comments
 
+{% raw %}
+
 	Article: Q171645
 	Product(s): Microsoft Press
 	Version(s): 
@@ -225,3 +227,5 @@ permalink: /kb/171/Q171645/
 	
 	=============================================================================
 	
+
+{% endraw %}

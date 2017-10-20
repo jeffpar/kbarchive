@@ -6,6 +6,8 @@ permalink: /kb/238/Q238849/
 
 ## Q238849: PRB: Numbered Positioned Updates Against Oracle8i DB Server Fail
 
+{% raw %}
+
 	Article: Q238849
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202
@@ -90,3 +92,5 @@ permalink: /kb/238/Q238849/
 	
 	=============================================================================
 	
+
+{% endraw %}

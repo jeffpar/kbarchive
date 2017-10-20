@@ -6,6 +6,8 @@ permalink: /kb/157/Q157704/
 
 ## Q157704: XCLN: Schedule+ Appointments Scheduled Time Incorrect
 
+{% raw %}
+
 	Article: Q157704
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 1.0,4.0,7.0
@@ -97,3 +99,5 @@ permalink: /kb/157/Q157704/
 	
 	=============================================================================
 	
+
+{% endraw %}

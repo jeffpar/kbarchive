@@ -6,6 +6,8 @@ permalink: /kb/254/Q254494/
 
 ## Q254494: FIX: Analyze -F Causes Inconsistencies Error Messages
 
+{% raw %}
+
 	Article: Q254494
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -111,3 +113,5 @@ permalink: /kb/254/Q254494/
 	
 	=============================================================================
 	
+
+{% endraw %}

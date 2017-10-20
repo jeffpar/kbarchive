@@ -6,6 +6,8 @@ permalink: /kb/215/Q215492/
 
 ## Q215492: XFOR: Message Flow Through the Notes Connector
 
+{% raw %}
+
 	Article: Q215492
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -87,3 +89,5 @@ permalink: /kb/215/Q215492/
 	
 	=============================================================================
 	
+
+{% endraw %}

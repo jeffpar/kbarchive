@@ -6,6 +6,8 @@ permalink: /kb/200/Q200769/
 
 ## Q200769: SMS: Logon Servers Are Not Receiving Updates
 
+{% raw %}
+
 	Article: Q200769
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,3.51,4.0
@@ -75,3 +77,5 @@ permalink: /kb/200/Q200769/
 	
 	=============================================================================
 	
+
+{% endraw %}

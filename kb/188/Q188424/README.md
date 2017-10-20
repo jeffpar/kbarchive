@@ -6,6 +6,8 @@ permalink: /kb/188/Q188424/
 
 ## Q188424: Multilayered Display Driver Produces Black Line in Word
 
+{% raw %}
+
 	Article: Q188424
 	Product(s): Word 97 for Windows
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/188/Q188424/
 	
 	=============================================================================
 	
+
+{% endraw %}

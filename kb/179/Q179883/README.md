@@ -6,6 +6,8 @@ permalink: /kb/179/Q179883/
 
 ## Q179883: WD97: Error Saving Document in Word 6.0/95 Format
 
+{% raw %}
+
 	Article: Q179883
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/179/Q179883/
 	
 	=============================================================================
 	
+
+{% endraw %}

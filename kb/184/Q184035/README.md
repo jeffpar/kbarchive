@@ -6,6 +6,8 @@ permalink: /kb/184/Q184035/
 
 ## Q184035: WD97: Case Change in Spelling Checker Causes Constant Recheck
 
+{% raw %}
+
 	Article: Q184035
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -134,3 +136,5 @@ permalink: /kb/184/Q184035/
 	
 	=============================================================================
 	
+
+{% endraw %}

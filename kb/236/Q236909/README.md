@@ -6,6 +6,8 @@ permalink: /kb/236/Q236909/
 
 ## Q236909: XWEB: OWA: Current Password Is About to Expire in 0 Days
 
+{% raw %}
+
 	Article: Q236909
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -99,3 +101,5 @@ permalink: /kb/236/Q236909/
 	
 	=============================================================================
 	
+
+{% endraw %}

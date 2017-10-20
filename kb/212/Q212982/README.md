@@ -6,6 +6,8 @@ permalink: /kb/212/Q212982/
 
 ## Q212982: SMS: Deleting an Object Does Not Delete Class Permissions
 
+{% raw %}
+
 	Article: Q212982
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -54,3 +56,5 @@ permalink: /kb/212/Q212982/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/297/Q297796/
 
 ## Q297796: Setting Idle Times With MSN versions 5.3, 5.4, and MSN Explorer
 
+{% raw %}
+
 	Article: Q297796
 	Product(s): The Microsoft Network
 	Version(s): 5.3,5.4,6.0,6.1
@@ -64,3 +66,5 @@ permalink: /kb/297/Q297796/
 	
 	=============================================================================
 	
+
+{% endraw %}

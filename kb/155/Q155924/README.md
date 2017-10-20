@@ -6,6 +6,8 @@ permalink: /kb/155/Q155924/
 
 ## Q155924: &quot;Not Enough Resources&quot; Error Running WINS Administrator
 
+{% raw %}
+
 	Article: Q155924
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/155/Q155924/
 	
 	=============================================================================
 	
+
+{% endraw %}

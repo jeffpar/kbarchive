@@ -6,6 +6,8 @@ permalink: /kb/176/Q176177/
 
 ## Q176177: XADM: Outlook Client Connects to Remote Public Folder Servers
 
+{% raw %}
+
 	Article: Q176177
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -54,3 +56,5 @@ permalink: /kb/176/Q176177/
 	
 	=============================================================================
 	
+
+{% endraw %}

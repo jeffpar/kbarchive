@@ -6,6 +6,8 @@ permalink: /kb/067/Q67440/
 
 ## Q67440: Tracing into a Macro When Debugging Assembly Programs
 
+{% raw %}
+
 	Article: Q67440
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.1,6.0,6.0a,6.0b
@@ -45,3 +47,5 @@ permalink: /kb/067/Q67440/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/073/Q73411/
 
 ## Q73411: Commenting Lines in DOSSHELL.INI
 
+{% raw %}
+
 	Article: Q73411
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -36,3 +38,5 @@ permalink: /kb/073/Q73411/
 	
 	=============================================================================
 	
+
+{% endraw %}

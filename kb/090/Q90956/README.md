@@ -6,6 +6,8 @@ permalink: /kb/090/Q90956/
 
 ## Q90956: Specifying a Memo Field Text Editor for FoxBASE+
 
+{% raw %}
+
 	Article: Q90956
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -54,3 +56,5 @@ permalink: /kb/090/Q90956/
 	
 	=============================================================================
 	
+
+{% endraw %}

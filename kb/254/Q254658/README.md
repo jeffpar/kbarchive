@@ -6,6 +6,8 @@ permalink: /kb/254/Q254658/
 
 ## Q254658: Problems Using ISM (HTML) to Create &amp; View Virtual Directory
 
+{% raw %}
+
 	Article: Q254658
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -58,3 +60,5 @@ permalink: /kb/254/Q254658/
 	
 	=============================================================================
 	
+
+{% endraw %}

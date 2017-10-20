@@ -6,6 +6,8 @@ permalink: /kb/177/Q177319/
 
 ## Q177319: How to Set the MSN Quick View Notification Delay
 
+{% raw %}
+
 	Article: Q177319
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -61,3 +63,5 @@ permalink: /kb/177/Q177319/
 	
 	=============================================================================
 	
+
+{% endraw %}

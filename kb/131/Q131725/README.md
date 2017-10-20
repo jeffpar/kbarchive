@@ -6,6 +6,8 @@ permalink: /kb/131/Q131725/
 
 ## Q131725: PC Win: Err Msg: Some Entries Could Not Be Added to the Group
 
+{% raw %}
+
 	Article: Q131725
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b,3.2,3.2a
@@ -55,3 +57,5 @@ permalink: /kb/131/Q131725/
 	
 	=============================================================================
 	
+
+{% endraw %}

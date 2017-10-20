@@ -6,6 +6,8 @@ permalink: /kb/074/Q74931/
 
 ## Q74931: Cannot Do a Minimal Setup to Floppy Disks in MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q74931
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a
@@ -57,3 +59,5 @@ permalink: /kb/074/Q74931/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156726/
 
 ## Q156726: XFOR: DXA does not Import X.121 Addresses Correctly
 
+{% raw %}
+
 	Article: Q156726
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/156/Q156726/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/278/Q278320/
 
 ## Q278320: XFOR: Dr Watson for Inbound Internet Message with Blank CHARSET
 
+{% raw %}
+
 	Article: Q278320
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -96,3 +98,5 @@ permalink: /kb/278/Q278320/
 	
 	=============================================================================
 	
+
+{% endraw %}

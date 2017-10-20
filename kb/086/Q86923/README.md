@@ -6,6 +6,8 @@ permalink: /kb/086/Q86923/
 
 ## Q86923: DOCERR: EMC, EML, and EMR RTF Tokens Documented Incorrectly
 
+{% raw %}
+
 	Article: Q86923
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -37,3 +39,5 @@ permalink: /kb/086/Q86923/
 	
 	=============================================================================
 	
+
+{% endraw %}

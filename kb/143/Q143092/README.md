@@ -6,6 +6,8 @@ permalink: /kb/143/Q143092/
 
 ## Q143092: FP: How to Create a Registration Web
 
+{% raw %}
+
 	Article: Q143092
 	Product(s): Word Front Page
 	Version(s): 1.0,1.1
@@ -199,3 +201,5 @@ permalink: /kb/143/Q143092/
 	
 	=============================================================================
 	
+
+{% endraw %}

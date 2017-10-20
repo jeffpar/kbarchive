@@ -6,6 +6,8 @@ permalink: /kb/316/Q316907/
 
 ## Q316907: HOW TO: Run a Post Setup Executable with InstallShield Express
 
+{% raw %}
+
 	Article: Q316907
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -110,3 +112,5 @@ permalink: /kb/316/Q316907/
 	
 	=============================================================================
 	
+
+{% endraw %}

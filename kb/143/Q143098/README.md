@@ -6,6 +6,8 @@ permalink: /kb/143/Q143098/
 
 ## Q143098: FP: How to Add White Space to a Web Page
 
+{% raw %}
+
 	Article: Q143098
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97; macintosh:1.0
@@ -54,3 +56,5 @@ permalink: /kb/143/Q143098/
 	
 	=============================================================================
 	
+
+{% endraw %}

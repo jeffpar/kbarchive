@@ -6,6 +6,8 @@ permalink: /kb/174/Q174767/
 
 ## Q174767: SMS: Program Group Control Does Not Warn User If Not Logged On
 
+{% raw %}
+
 	Article: Q174767
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -54,3 +56,5 @@ permalink: /kb/174/Q174767/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156995/
 
 ## Q156995: XCLN: PST File Cannot Be Accessed Running NetWare Client 32
 
+{% raw %}
+
 	Article: Q156995
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -58,3 +60,5 @@ permalink: /kb/156/Q156995/
 	
 	=============================================================================
 	
+
+{% endraw %}

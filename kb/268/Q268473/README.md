@@ -6,6 +6,8 @@ permalink: /kb/268/Q268473/
 
 ## Q268473: Cannot Issue the IISRESET Command with the /timeout:0 Switch
 
+{% raw %}
+
 	Article: Q268473
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -72,3 +74,5 @@ permalink: /kb/268/Q268473/
 	
 	=============================================================================
 	
+
+{% endraw %}

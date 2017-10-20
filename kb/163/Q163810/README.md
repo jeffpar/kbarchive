@@ -6,6 +6,8 @@ permalink: /kb/163/Q163810/
 
 ## Q163810: WD97: Returning Bookmarks Sorted by Location or Alphabetically
 
+{% raw %}
+
 	Article: Q163810
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -113,3 +115,5 @@ permalink: /kb/163/Q163810/
 	
 	=============================================================================
 	
+
+{% endraw %}

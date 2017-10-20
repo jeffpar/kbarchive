@@ -6,6 +6,8 @@ permalink: /kb/145/Q145752/
 
 ## Q145752: How to Eliminate RI Rule Code from a .DBC File
 
+{% raw %}
+
 	Article: Q145752
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -61,3 +63,5 @@ permalink: /kb/145/Q145752/
 	
 	=============================================================================
 	
+
+{% endraw %}

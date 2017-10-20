@@ -6,6 +6,8 @@ permalink: /kb/149/Q149456/
 
 ## Q149456: FIX: Blank Child Record Added in One-to-Many Wizard Form
 
+{% raw %}
+
 	Article: Q149456
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -109,3 +111,5 @@ permalink: /kb/149/Q149456/
 	
 	=============================================================================
 	
+
+{% endraw %}

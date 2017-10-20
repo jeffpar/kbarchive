@@ -6,6 +6,8 @@ permalink: /kb/272/Q272543/
 
 ## Q272543: Network Segment Object in Performance Monitor Has Limitations
 
+{% raw %}
+
 	Article: Q272543
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -67,3 +69,5 @@ permalink: /kb/272/Q272543/
 	
 	=============================================================================
 	
+
+{% endraw %}

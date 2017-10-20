@@ -6,6 +6,8 @@ permalink: /kb/249/Q249825/
 
 ## Q249825: XWEB: Calendar Date Doesn't Change if Date Selected w/Scroll Bar
 
+{% raw %}
+
 	Article: Q249825
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -58,3 +60,5 @@ permalink: /kb/249/Q249825/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158570/
 
 ## Q158570: INFO: How to Determine When 3270 RTM Data Should be Sent
 
+{% raw %}
+
 	Article: Q158570
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0,4.0
@@ -98,3 +100,5 @@ permalink: /kb/158/Q158570/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/257/Q257220/
 
 ## Q257220: XCON: Newsfeeds Unavailable in Internet Information Services 5.0
 
+{% raw %}
+
 	Article: Q257220
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:2000; winnt:5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/257/Q257220/
 	
 	=============================================================================
 	
+
+{% endraw %}

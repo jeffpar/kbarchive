@@ -6,6 +6,8 @@ permalink: /kb/160/Q160787/
 
 ## Q160787: D-link DE-220 ISA Ethernet Adapter will Not Install
 
+{% raw %}
+
 	Article: Q160787
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -84,3 +86,5 @@ permalink: /kb/160/Q160787/
 	
 	=============================================================================
 	
+
+{% endraw %}

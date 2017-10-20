@@ -6,6 +6,8 @@ permalink: /kb/174/Q174822/
 
 ## Q174822: XCLN: Item Selection Does Not Work as Expected with SHIFT Key
 
+{% raw %}
+
 	Article: Q174822
 	Product(s): Microsoft Exchange
 	Version(s): Windows:5.5
@@ -48,3 +50,5 @@ permalink: /kb/174/Q174822/
 	
 	=============================================================================
 	
+
+{% endraw %}

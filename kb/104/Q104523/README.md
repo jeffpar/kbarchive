@@ -6,6 +6,8 @@ permalink: /kb/104/Q104523/
 
 ## Q104523: Backup for MS-DOS Err Msg: CONTROL.FIL Cannot Be Read by DOS
 
+{% raw %}
+
 	Article: Q104523
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -66,3 +68,5 @@ permalink: /kb/104/Q104523/
 	
 	=============================================================================
 	
+
+{% endraw %}

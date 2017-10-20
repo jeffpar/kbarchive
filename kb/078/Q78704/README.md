@@ -6,6 +6,8 @@ permalink: /kb/078/Q78704/
 
 ## Q78704: PC DOS: Group Folder Owner Can Always Use Group Folder
 
+{% raw %}
+
 	Article: Q78704
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.0b,3.2
@@ -51,3 +53,5 @@ permalink: /kb/078/Q78704/
 	
 	=============================================================================
 	
+
+{% endraw %}

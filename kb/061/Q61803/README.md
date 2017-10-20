@@ -6,6 +6,8 @@ permalink: /kb/061/Q61803/
 
 ## Q61803: INFO: Calculating Free System Resources in Microsoft Windows
 
+{% raw %}
+
 	Article: Q61803
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -100,3 +102,5 @@ permalink: /kb/061/Q61803/
 	
 	=============================================================================
 	
+
+{% endraw %}

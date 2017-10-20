@@ -6,6 +6,8 @@ permalink: /kb/197/Q197947/
 
 ## Q197947: HOWTO: Get Computer Information Using ADSI
 
+{% raw %}
+
 	Article: Q197947
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0; winnt:2.5
@@ -92,3 +94,5 @@ permalink: /kb/197/Q197947/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129884/
 
 ## Q129884: PRB: HWNDs on OLE Controls Are Not Persistent
 
+{% raw %}
+
 	Article: Q129884
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/129/Q129884/
 	
 	=============================================================================
 	
+
+{% endraw %}

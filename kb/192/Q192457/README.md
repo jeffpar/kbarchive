@@ -6,6 +6,8 @@ permalink: /kb/192/Q192457/
 
 ## Q192457: Downloaded File May Be Saved in Incorrect Folder with IE
 
+{% raw %}
+
 	Article: Q192457
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/192/Q192457/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154502/
 
 ## Q154502: Replication Increased by ANNOUNCE_IMMEDIATE Events
 
+{% raw %}
+
 	Article: Q154502
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -74,3 +76,5 @@ permalink: /kb/154/Q154502/
 	
 	=============================================================================
 	
+
+{% endraw %}

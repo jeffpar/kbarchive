@@ -6,6 +6,8 @@ permalink: /kb/281/Q281095/
 
 ## Q281095: Active Directory Services For Windows 2000 Technical Reference C
 
+{% raw %}
+
 	Article: Q281095
 	Product(s): Microsoft Press
 	Version(s): 
@@ -137,3 +139,5 @@ permalink: /kb/281/Q281095/
 	
 	=============================================================================
 	
+
+{% endraw %}

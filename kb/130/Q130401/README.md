@@ -6,6 +6,8 @@ permalink: /kb/130/Q130401/
 
 ## Q130401: WAN Browsing May Fail After Promoting New PDC
 
+{% raw %}
+
 	Article: Q130401
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -81,3 +83,5 @@ permalink: /kb/130/Q130401/
 	
 	=============================================================================
 	
+
+{% endraw %}

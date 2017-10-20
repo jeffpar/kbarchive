@@ -6,6 +6,8 @@ permalink: /kb/167/Q167021/
 
 ## Q167021: INFO: 3Com 3c900 Card Does Not Install During Unattended Setup
 
+{% raw %}
+
 	Article: Q167021
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/167/Q167021/
 	
 	=============================================================================
 	
+
+{% endraw %}

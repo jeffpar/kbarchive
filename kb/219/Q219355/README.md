@@ -6,6 +6,8 @@ permalink: /kb/219/Q219355/
 
 ## Q219355: Restarted Print Job Are Deleted When Spooler Service Restarted
 
+{% raw %}
+
 	Article: Q219355
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a,4.5
@@ -77,3 +79,5 @@ permalink: /kb/219/Q219355/
 	
 	=============================================================================
 	
+
+{% endraw %}

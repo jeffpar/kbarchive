@@ -6,6 +6,8 @@ permalink: /kb/259/Q259669/
 
 ## Q259669: PRB: _Include Variable Behavior with Modify Form/Class
 
+{% raw %}
+
 	Article: Q259669
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0a,6.0
@@ -93,3 +95,5 @@ permalink: /kb/259/Q259669/
 	
 	=============================================================================
 	
+
+{% endraw %}

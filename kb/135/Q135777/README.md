@@ -6,6 +6,8 @@ permalink: /kb/135/Q135777/
 
 ## Q135777: Unable to Connect Using Cabletron EISA F70XX FDDI NIC
 
+{% raw %}
+
 	Article: Q135777
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -66,3 +68,5 @@ permalink: /kb/135/Q135777/
 	
 	=============================================================================
 	
+
+{% endraw %}

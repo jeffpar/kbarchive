@@ -6,6 +6,8 @@ permalink: /kb/148/Q148138/
 
 ## Q148138: Enabling MouseKeys Feature Causes Invalid VxD Error in ENABLE2
 
+{% raw %}
+
 	Article: Q148138
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -104,3 +106,5 @@ permalink: /kb/148/Q148138/
 	
 	=============================================================================
 	
+
+{% endraw %}

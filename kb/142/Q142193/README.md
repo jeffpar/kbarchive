@@ -6,6 +6,8 @@ permalink: /kb/142/Q142193/
 
 ## Q142193: HOWTO: Use OLE Automation to Add Data to Excel Sheet
 
+{% raw %}
+
 	Article: Q142193
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -129,3 +131,5 @@ permalink: /kb/142/Q142193/
 	
 	=============================================================================
 	
+
+{% endraw %}

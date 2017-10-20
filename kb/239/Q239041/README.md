@@ -6,6 +6,8 @@ permalink: /kb/239/Q239041/
 
 ## Q239041: IIS: The FTP PORT Command May be Issued Before Client has Logon
 
+{% raw %}
+
 	Article: Q239041
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -59,3 +61,5 @@ permalink: /kb/239/Q239041/
 	
 	=============================================================================
 	
+
+{% endraw %}

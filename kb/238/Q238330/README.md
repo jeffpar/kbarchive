@@ -6,6 +6,8 @@ permalink: /kb/238/Q238330/
 
 ## Q238330: Add Printer Wizard Offers More Printer Selections in Service Pac
 
+{% raw %}
+
 	Article: Q238330
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP5
@@ -157,3 +159,5 @@ permalink: /kb/238/Q238330/
 	
 	=============================================================================
 	
+
+{% endraw %}

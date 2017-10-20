@@ -6,6 +6,8 @@ permalink: /kb/240/Q240249/
 
 ## Q240249: PRB: Cannot Open or Save Files When Running OS 9
 
+{% raw %}
+
 	Article: Q240249
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a
@@ -105,3 +107,5 @@ permalink: /kb/240/Q240249/
 	
 	=============================================================================
 	
+
+{% endraw %}

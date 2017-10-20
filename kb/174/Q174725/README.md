@@ -6,6 +6,8 @@ permalink: /kb/174/Q174725/
 
 ## Q174725: XFOR: Packing List Code Page 10000 or 437 May Cause Mismatch
 
+{% raw %}
+
 	Article: Q174725
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -76,3 +78,5 @@ permalink: /kb/174/Q174725/
 	
 	=============================================================================
 	
+
+{% endraw %}

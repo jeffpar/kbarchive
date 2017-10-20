@@ -6,6 +6,8 @@ permalink: /kb/238/Q238780/
 
 ## Q238780: SMS: Best Practices for Applying Systems Management Server 2.0 S
 
+{% raw %}
+
 	Article: Q238780
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -134,3 +136,5 @@ permalink: /kb/238/Q238780/
 	
 	=============================================================================
 	
+
+{% endraw %}

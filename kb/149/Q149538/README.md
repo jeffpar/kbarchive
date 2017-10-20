@@ -6,6 +6,8 @@ permalink: /kb/149/Q149538/
 
 ## Q149538: System Restarts Every 5 Hours if Workstation to Server Upgrade
 
+{% raw %}
+
 	Article: Q149538
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -56,3 +58,5 @@ permalink: /kb/149/Q149538/
 	
 	=============================================================================
 	
+
+{% endraw %}

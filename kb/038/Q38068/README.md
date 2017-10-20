@@ -6,6 +6,8 @@ permalink: /kb/038/Q38068/
 
 ## Q38068: PRINT SCREEN (Hardware Interrupt 5) Fails If Printer Is Busy
 
+{% raw %}
+
 	Article: Q38068
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -98,3 +100,5 @@ permalink: /kb/038/Q38068/
 	  CALL INTERRUPT(&H17, Regs, Regs)
 	  PStat% = Regs.AX \ 256                'status = AH
 	END FUNCTION
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177559/
 
 ## Q177559: How to Connect to MSN Using a Third-Party ISP
 
+{% raw %}
+
 	Article: Q177559
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.51
@@ -66,3 +68,5 @@ permalink: /kb/177/Q177559/
 	
 	=============================================================================
 	
+
+{% endraw %}

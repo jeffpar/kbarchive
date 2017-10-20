@@ -6,6 +6,8 @@ permalink: /kb/153/Q153175/
 
 ## Q153175: Mouse Malfunctions in MS-DOS Applications
 
+{% raw %}
+
 	Article: Q153175
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -69,3 +71,5 @@ permalink: /kb/153/Q153175/
 	
 	=============================================================================
 	
+
+{% endraw %}

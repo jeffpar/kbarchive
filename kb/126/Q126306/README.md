@@ -6,6 +6,8 @@ permalink: /kb/126/Q126306/
 
 ## Q126306: Laser Tools PrintCache (PCACHE.EXE) Hangs MSD
 
+{% raw %}
+
 	Article: Q126306
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.21,6.22; WINDOWS:3.11
@@ -66,3 +68,5 @@ permalink: /kb/126/Q126306/
 	
 	=============================================================================
 	
+
+{% endraw %}

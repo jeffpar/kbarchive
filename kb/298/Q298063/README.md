@@ -6,6 +6,8 @@ permalink: /kb/298/Q298063/
 
 ## Q298063: WD97: No Macro Warning Opening RTF Document
 
+{% raw %}
+
 	Article: Q298063
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -124,3 +126,5 @@ permalink: /kb/298/Q298063/
 	
 	=============================================================================
 	
+
+{% endraw %}

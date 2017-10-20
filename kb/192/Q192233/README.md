@@ -6,6 +6,8 @@ permalink: /kb/192/Q192233/
 
 ## Q192233: Winframe 1.x not detected by Terminal Server 4.0 for Upgrade
 
+{% raw %}
+
 	Article: Q192233
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -95,3 +97,5 @@ permalink: /kb/192/Q192233/
 	
 	=============================================================================
 	
+
+{% endraw %}

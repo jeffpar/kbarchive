@@ -6,6 +6,8 @@ permalink: /kb/275/Q275862/
 
 ## Q275862: HOWTO: Add Verbs for ATL ActiveX Controls Embedded Within Office
 
+{% raw %}
+
 	Article: Q275862
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -95,3 +97,5 @@ permalink: /kb/275/Q275862/
 	
 	=============================================================================
 	
+
+{% endraw %}

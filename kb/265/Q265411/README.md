@@ -6,6 +6,8 @@ permalink: /kb/265/Q265411/
 
 ## Q265411: SMS: DDM Hangs on Secondary Site Performing Full Refresh
 
+{% raw %}
+
 	Article: Q265411
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -66,3 +68,5 @@ permalink: /kb/265/Q265411/
 	
 	=============================================================================
 	
+
+{% endraw %}

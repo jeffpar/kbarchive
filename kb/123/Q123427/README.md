@@ -6,6 +6,8 @@ permalink: /kb/123/Q123427/
 
 ## Q123427: Use FIXPROJ.EXE to Fix Project Errors in SourceSafe
 
+{% raw %}
+
 	Article: Q123427
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/123/Q123427/
 	
 	=============================================================================
 	
+
+{% endraw %}

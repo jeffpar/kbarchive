@@ -6,6 +6,8 @@ permalink: /kb/061/Q61341/
 
 ## Q61341: CodeView Does Not Support the BASIC CHAIN Statement
 
+{% raw %}
+
 	Article: Q61341
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -43,3 +45,5 @@ permalink: /kb/061/Q61341/
 	
 	Note: CV.EXE is the CodeView utility for MS-DOS. CVP.EXE is the
 	CodeView utility for MS OS/2.
+
+{% endraw %}

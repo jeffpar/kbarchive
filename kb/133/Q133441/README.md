@@ -6,6 +6,8 @@ permalink: /kb/133/Q133441/
 
 ## Q133441: Cannot Copy File to Plus Hard Card Drive
 
+{% raw %}
+
 	Article: Q133441
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/133/Q133441/
 	
 	=============================================================================
 	
+
+{% endraw %}

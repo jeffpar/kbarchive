@@ -6,6 +6,8 @@ permalink: /kb/195/Q195747/
 
 ## Q195747: Implicit Incoming LU Not Used After Saving Configuration Change
 
+{% raw %}
+
 	Article: Q195747
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,4.0
@@ -133,3 +135,5 @@ permalink: /kb/195/Q195747/
 	
 	=============================================================================
 	
+
+{% endraw %}

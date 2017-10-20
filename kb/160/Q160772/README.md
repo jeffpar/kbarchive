@@ -6,6 +6,8 @@ permalink: /kb/160/Q160772/
 
 ## Q160772: PRB: &quot;File does not exist&quot; Using FoxTools Functions
 
+{% raw %}
+
 	Article: Q160772
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -68,3 +70,5 @@ permalink: /kb/160/Q160772/
 	
 	=============================================================================
 	
+
+{% endraw %}

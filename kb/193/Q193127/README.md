@@ -6,6 +6,8 @@ permalink: /kb/193/Q193127/
 
 ## Q193127: How to Set Up IAS (RADIUS Server) with ODBC Authentication
 
+{% raw %}
+
 	Article: Q193127
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,4.0
@@ -103,3 +105,5 @@ permalink: /kb/193/Q193127/
 	
 	=============================================================================
 	
+
+{% endraw %}

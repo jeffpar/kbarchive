@@ -6,6 +6,8 @@ permalink: /kb/115/Q115442/
 
 ## Q115442: X400: Use Editor to Search Config Utility's Customized Mapping
 
+{% raw %}
+
 	Article: Q115442
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -42,3 +44,5 @@ permalink: /kb/115/Q115442/
 	
 	=============================================================================
 	
+
+{% endraw %}

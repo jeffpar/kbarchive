@@ -6,6 +6,8 @@ permalink: /kb/132/Q132078/
 
 ## Q132078: How to Use _beginthreadex() and _endthreadex()
 
+{% raw %}
+
 	Article: Q132078
 	Product(s): Microsoft C Compiler
 	Version(s): WinNT:2.0,2.1,2.2,4.0,5.0
@@ -141,3 +143,5 @@ permalink: /kb/132/Q132078/
 	
 	=============================================================================
 	
+
+{% endraw %}

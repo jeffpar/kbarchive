@@ -6,6 +6,8 @@ permalink: /kb/163/Q163800/
 
 ## Q163800: INFO: Create an SQL Command with &gt; 255 Characters
 
+{% raw %}
+
 	Article: Q163800
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -112,3 +114,5 @@ permalink: /kb/163/Q163800/
 	
 	=============================================================================
 	
+
+{% endraw %}

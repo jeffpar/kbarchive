@@ -6,6 +6,8 @@ permalink: /kb/196/Q196459/
 
 ## Q196459: Terminal Server Upgrading IE 4.0 from Either IE 3.0 or IE 2.0
 
+{% raw %}
+
 	Article: Q196459
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/196/Q196459/
 	
 	=============================================================================
 	
+
+{% endraw %}

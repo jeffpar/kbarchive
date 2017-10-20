@@ -6,6 +6,8 @@ permalink: /kb/156/Q156214/
 
 ## Q156214: Unclear Error Message Printing from Windows NT Diagnostics
 
+{% raw %}
+
 	Article: Q156214
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/156/Q156214/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136106/
 
 ## Q136106: Re-enabling CMD PCI IDE Controller Hangs Computer
 
+{% raw %}
+
 	Article: Q136106
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -71,3 +73,5 @@ permalink: /kb/136/Q136106/
 	
 	=============================================================================
 	
+
+{% endraw %}

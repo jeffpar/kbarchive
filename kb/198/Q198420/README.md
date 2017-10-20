@@ -6,6 +6,8 @@ permalink: /kb/198/Q198420/
 
 ## Q198420: Combat FS: Converted FS98 Aircraft Use Incorrect Flap Sounds
 
+{% raw %}
+
 	Article: Q198420
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -56,3 +58,5 @@ permalink: /kb/198/Q198420/
 	
 	=============================================================================
 	
+
+{% endraw %}

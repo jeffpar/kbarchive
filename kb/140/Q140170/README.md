@@ -6,6 +6,8 @@ permalink: /kb/140/Q140170/
 
 ## Q140170: HOWTO: Read from the Windows Registry
 
+{% raw %}
+
 	Article: Q140170
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -126,3 +128,5 @@ permalink: /kb/140/Q140170/
 	
 	=============================================================================
 	
+
+{% endraw %}

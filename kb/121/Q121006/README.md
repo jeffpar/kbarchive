@@ -6,6 +6,8 @@ permalink: /kb/121/Q121006/
 
 ## Q121006: Limitations of DHCP Option Overlays
 
+{% raw %}
+
 	Article: Q121006
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -37,3 +39,5 @@ permalink: /kb/121/Q121006/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194997/
 
 ## Q194997: Pinball Arcade: Slow Game Performance and Flashing Graphics
 
+{% raw %}
+
 	Article: Q194997
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/194/Q194997/
 	
 	=============================================================================
 	
+
+{% endraw %}

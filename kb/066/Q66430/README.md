@@ -6,6 +6,8 @@ permalink: /kb/066/Q66430/
 
 ## Q66430: C1001: Internal Compiler Error: @(#)exphelp.c:1.115, Line 391
 
+{% raw %}
+
 	Article: Q66430
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -47,3 +49,5 @@ permalink: /kb/066/Q66430/
 	
 	Microsoft has confirmed this to be a problem in C version 6.00. This
 	problem has been corrected in version 6.00a.
+
+{% endraw %}

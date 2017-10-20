@@ -6,6 +6,8 @@ permalink: /kb/141/Q141736/
 
 ## Q141736: How to Create a Clock Class to Show Time in AM/PM Format
 
+{% raw %}
+
 	Article: Q141736
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -151,3 +153,5 @@ permalink: /kb/141/Q141736/
 	
 	=============================================================================
 	
+
+{% endraw %}

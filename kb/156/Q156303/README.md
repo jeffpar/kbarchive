@@ -6,6 +6,8 @@ permalink: /kb/156/Q156303/
 
 ## Q156303: Music Central 97: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q156303
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -67,3 +69,5 @@ permalink: /kb/156/Q156303/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/292/Q292721/
 
 ## Q292721: Windows NT 4.0 Resource Kit, Supplement One Comments and Correct
 
+{% raw %}
+
 	Article: Q292721
 	Product(s): Microsoft Press
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/292/Q292721/
 	
 	=============================================================================
 	
+
+{% endraw %}

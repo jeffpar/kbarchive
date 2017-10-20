@@ -6,6 +6,8 @@ permalink: /kb/226/Q226844/
 
 ## Q226844: SMS: Can't Enforce Security by Group with Sofware Metering
 
+{% raw %}
+
 	Article: Q226844
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -86,3 +88,5 @@ permalink: /kb/226/Q226844/
 	
 	=============================================================================
 	
+
+{% endraw %}

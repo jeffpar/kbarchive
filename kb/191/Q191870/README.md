@@ -6,6 +6,8 @@ permalink: /kb/191/Q191870/
 
 ## Q191870: INF: Poor Response Time Returning Multiple Mainframe Records
 
+{% raw %}
+
 	Article: Q191870
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -43,3 +45,5 @@ permalink: /kb/191/Q191870/
 	
 	=============================================================================
 	
+
+{% endraw %}

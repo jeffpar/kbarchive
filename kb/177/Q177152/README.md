@@ -6,6 +6,8 @@ permalink: /kb/177/Q177152/
 
 ## Q177152: XADM: Store Rejects X.400 Address with Embedded Slashes
 
+{% raw %}
+
 	Article: Q177152
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0 SP1
@@ -58,3 +60,5 @@ permalink: /kb/177/Q177152/
 	
 	=============================================================================
 	
+
+{% endraw %}

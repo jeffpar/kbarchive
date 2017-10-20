@@ -6,6 +6,8 @@ permalink: /kb/185/Q185967/
 
 ## Q185967: HOWTO: Display Hierarchical Data Using the MSHFlexGrid
 
+{% raw %}
+
 	Article: Q185967
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -143,3 +145,5 @@ permalink: /kb/185/Q185967/
 	
 	=============================================================================
 	
+
+{% endraw %}

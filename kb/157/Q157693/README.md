@@ -6,6 +6,8 @@ permalink: /kb/157/Q157693/
 
 ## Q157693: XFOR: IMC Might Lose Messages if Code Pages are not Installed
 
+{% raw %}
+
 	Article: Q157693
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/157/Q157693/
 	
 	=============================================================================
 	
+
+{% endraw %}

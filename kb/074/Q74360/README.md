@@ -6,6 +6,8 @@ permalink: /kb/074/Q74360/
 
 ## Q74360: Three Methods to Import Functions from a DLL
 
+{% raw %}
+
 	Article: Q74360
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -79,3 +81,5 @@ permalink: /kb/074/Q74360/
 	
 	=============================================================================
 	
+
+{% endraw %}

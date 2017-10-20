@@ -6,6 +6,8 @@ permalink: /kb/225/Q225157/
 
 ## Q225157: XCON: MTA Stops Unexpectedly with Cirel Winsock X.400 Connection
 
+{% raw %}
+
 	Article: Q225157
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -120,3 +122,5 @@ permalink: /kb/225/Q225157/
 	
 	=============================================================================
 	
+
+{% endraw %}

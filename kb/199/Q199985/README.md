@@ -6,6 +6,8 @@ permalink: /kb/199/Q199985/
 
 ## Q199985: SMS: Event ID 320 Occurs and Jobs Remain Pending
 
+{% raw %}
+
 	Article: Q199985
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -73,3 +75,5 @@ permalink: /kb/199/Q199985/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/115/Q115069/
 
 ## Q115069: Writer: Canon BubbleJet Prints Off Page
 
+{% raw %}
+
 	Article: Q115069
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -62,3 +64,5 @@ permalink: /kb/115/Q115069/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241810/
 
 ## Q241810: BUG: IDispEventImpl Event Handlers May Give Strange Parameters
 
+{% raw %}
+
 	Article: Q241810
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -130,3 +132,5 @@ permalink: /kb/241/Q241810/
 	
 	=============================================================================
 	
+
+{% endraw %}

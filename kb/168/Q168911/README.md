@@ -6,6 +6,8 @@ permalink: /kb/168/Q168911/
 
 ## Q168911: WD97: Can't Use Customize Dialog Box to Remove Customize Menu
 
+{% raw %}
+
 	Article: Q168911
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -96,3 +98,5 @@ permalink: /kb/168/Q168911/
 	
 	=============================================================================
 	
+
+{% endraw %}

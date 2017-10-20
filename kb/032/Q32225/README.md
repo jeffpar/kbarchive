@@ -6,6 +6,8 @@ permalink: /kb/032/Q32225/
 
 ## Q32225: Using the SHORTNAMES Switch
 
+{% raw %}
+
 	Article: Q32225
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -31,3 +33,5 @@ permalink: /kb/032/Q32225/
 	<setfile>, which will look only in the current directory. The presence
 	of any path character (".", etc.) disables the SHORTNAMES feature for
 	the file being referenced.
+
+{% endraw %}

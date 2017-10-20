@@ -6,6 +6,8 @@ permalink: /kb/061/Q61228/
 
 ## Q61228: C 6.00 README: LINK/LIB/NMAKE/BIND: OS/2 1.20 Long Filenames
 
+{% raw %}
+
 	Article: Q61228
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -27,3 +29,5 @@ permalink: /kb/061/Q61228/
 	
 	2. If quotes are necessary, the full filename (including the path)
 	   must be enclosed in quotation marks.
+
+{% endraw %}

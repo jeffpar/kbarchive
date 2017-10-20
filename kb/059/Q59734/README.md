@@ -6,6 +6,8 @@ permalink: /kb/059/Q59734/
 
 ## Q59734: BASIC 7.00 Can Write Whole Array (in TYPE) to Disk at Once
 
+{% raw %}
+
 	Article: Q59734
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -69,3 +71,5 @@ permalink: /kb/059/Q59734/
 	  PRINT var2.array1(i);
 	NEXT
 	CLOSE
+
+{% endraw %}

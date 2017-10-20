@@ -6,6 +6,8 @@ permalink: /kb/130/Q130164/
 
 ## Q130164: PRB: Table Wizard Fields Not Customizable
 
+{% raw %}
+
 	Article: Q130164
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/130/Q130164/
 	
 	=============================================================================
 	
+
+{% endraw %}

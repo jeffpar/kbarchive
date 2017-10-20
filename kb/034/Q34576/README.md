@@ -6,6 +6,8 @@ permalink: /kb/034/Q34576/
 
 ## Q34576: MASM 5.10 MACRO.DOC: Memory Control
 
+{% raw %}
+
 	Article: Q34576
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -58,3 +60,5 @@ permalink: /kb/034/Q34576/
 	                        ES  = Segment address of allocated memory
 	                        BX  = If carry is clear, paragraphs allocated
 	Register used:  AX and BX; ES if segment given
+
+{% endraw %}

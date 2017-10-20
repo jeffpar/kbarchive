@@ -6,6 +6,8 @@ permalink: /kb/120/Q120707/
 
 ## Q120707: HOWTO: Debug an Active Process in 32-bit Visual C++
 
+{% raw %}
+
 	Article: Q120707
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,4.1,5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/120/Q120707/
 	
 	=============================================================================
 	
+
+{% endraw %}

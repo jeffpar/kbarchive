@@ -6,6 +6,8 @@ permalink: /kb/235/Q235745/
 
 ## Q235745: SMS: Setup Doesn't Create SMS Admins on Backup Domain Controller
 
+{% raw %}
+
 	Article: Q235745
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -54,3 +56,5 @@ permalink: /kb/235/Q235745/
 	
 	=============================================================================
 	
+
+{% endraw %}

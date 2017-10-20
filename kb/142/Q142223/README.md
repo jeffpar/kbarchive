@@ -6,6 +6,8 @@ permalink: /kb/142/Q142223/
 
 ## Q142223: INFO: Variant Handling in an MFC Server w/ VB 4.0 as Its Client
 
+{% raw %}
+
 	Article: Q142223
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.0; winnt:2.0,2.1,2.2,4.0
@@ -105,3 +107,5 @@ permalink: /kb/142/Q142223/
 	
 	=============================================================================
 	
+
+{% endraw %}

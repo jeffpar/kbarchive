@@ -6,6 +6,8 @@ permalink: /kb/124/Q124804/
 
 ## Q124804: VOLINFO Utility from Novell Server Reports Incorrect Values
 
+{% raw %}
+
 	Article: Q124804
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -47,3 +49,5 @@ permalink: /kb/124/Q124804/
 	
 	=============================================================================
 	
+
+{% endraw %}

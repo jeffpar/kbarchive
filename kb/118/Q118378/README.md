@@ -6,6 +6,8 @@ permalink: /kb/118/Q118378/
 
 ## Q118378: BUG: Cannot Update More Than 64K of Long Data
 
+{% raw %}
+
 	Article: Q118378
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/118/Q118378/
 	
 	=============================================================================
 	
+
+{% endraw %}

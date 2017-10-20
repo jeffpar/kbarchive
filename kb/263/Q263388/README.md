@@ -6,6 +6,8 @@ permalink: /kb/263/Q263388/
 
 ## Q263388: SMS: Cordless Mouse May Not Work After Remote Control Install
 
+{% raw %}
+
 	Article: Q263388
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP2
@@ -48,3 +50,5 @@ permalink: /kb/263/Q263388/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43788/
 
 ## Q43788: M.EXE Editor's CALLTREE Does Not Support BASIC Source Files
 
+{% raw %}
+
 	Article: Q43788
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -107,3 +109,5 @@ permalink: /kb/043/Q43788/
 	|   |   |   printf?
 	|   |   |   func1
 	|   |   |   |   printf?
+
+{% endraw %}

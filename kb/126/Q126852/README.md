@@ -6,6 +6,8 @@ permalink: /kb/126/Q126852/
 
 ## Q126852: Pasting in Write Closes All 16-bit Applications
 
+{% raw %}
+
 	Article: Q126852
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/126/Q126852/
 	
 	=============================================================================
 	
+
+{% endraw %}

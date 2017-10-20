@@ -6,6 +6,8 @@ permalink: /kb/224/Q224609/
 
 ## Q224609: How to Obtain Versions of Internet Information Server (IIS)
 
+{% raw %}
+
 	Article: Q224609
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,4.0,5.0
@@ -53,3 +55,5 @@ permalink: /kb/224/Q224609/
 	
 	=============================================================================
 	
+
+{% endraw %}

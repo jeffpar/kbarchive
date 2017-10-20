@@ -6,6 +6,8 @@ permalink: /kb/150/Q150684/
 
 ## Q150684: FP: &quot;No Server on Port ...&quot; Error Opening, Creating Web Page
 
+{% raw %}
+
 	Article: Q150684
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97
@@ -66,3 +68,5 @@ permalink: /kb/150/Q150684/
 	
 	=============================================================================
 	
+
+{% endraw %}

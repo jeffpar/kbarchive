@@ -6,6 +6,8 @@ permalink: /kb/040/Q40859/
 
 ## Q40859: Cannot Use FN at Beginning of SUB or Variable Names
 
+{% raw %}
+
 	Article: Q40859
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -38,3 +40,5 @@ permalink: /kb/040/Q40859/
 	More information on the DEF FN statement can be found in the Microsoft
 	BASIC language reference manual for your version of BASIC or
 	QuickBASIC.
+
+{% endraw %}

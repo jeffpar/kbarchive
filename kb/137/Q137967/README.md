@@ -6,6 +6,8 @@ permalink: /kb/137/Q137967/
 
 ## Q137967: STOP 0x00000077 with Two MYLEX DAC 960 in the Same Computer
 
+{% raw %}
+
 	Article: Q137967
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/137/Q137967/
 	
 	=============================================================================
 	
+
+{% endraw %}

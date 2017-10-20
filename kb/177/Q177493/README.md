@@ -6,6 +6,8 @@ permalink: /kb/177/Q177493/
 
 ## Q177493: XADM: Outlook Web Access does not Fully Support Thai Characters
 
+{% raw %}
+
 	Article: Q177493
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -52,3 +54,5 @@ permalink: /kb/177/Q177493/
 	
 	=============================================================================
 	
+
+{% endraw %}

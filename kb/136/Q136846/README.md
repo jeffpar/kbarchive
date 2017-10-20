@@ -6,6 +6,8 @@ permalink: /kb/136/Q136846/
 
 ## Q136846: Vfp30wiz.exe Updated VFP 3.0 for Windows Wizards
 
+{% raw %}
+
 	Article: Q136846
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -90,3 +92,5 @@ permalink: /kb/136/Q136846/
 	
 	=============================================================================
 	
+
+{% endraw %}

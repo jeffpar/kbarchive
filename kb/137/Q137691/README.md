@@ -6,6 +6,8 @@ permalink: /kb/137/Q137691/
 
 ## Q137691: Bookshelf 1995: Cannot Alt+Tab from Quickshelf Keys
 
+{% raw %}
+
 	Article: Q137691
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:
@@ -41,3 +43,5 @@ permalink: /kb/137/Q137691/
 	
 	=============================================================================
 	
+
+{% endraw %}

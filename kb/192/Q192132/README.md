@@ -6,6 +6,8 @@ permalink: /kb/192/Q192132/
 
 ## Q192132: STA Threads Lose Thread Token
 
+{% raw %}
+
 	Article: Q192132
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -75,3 +77,5 @@ permalink: /kb/192/Q192132/
 	
 	=============================================================================
 	
+
+{% endraw %}

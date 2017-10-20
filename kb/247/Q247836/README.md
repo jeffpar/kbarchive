@@ -6,6 +6,8 @@ permalink: /kb/247/Q247836/
 
 ## Q247836: SMS: Windows 95/98 Clients Hang When Shutting Down
 
+{% raw %}
+
 	Article: Q247836
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -64,3 +66,5 @@ permalink: /kb/247/Q247836/
 	
 	=============================================================================
 	
+
+{% endraw %}

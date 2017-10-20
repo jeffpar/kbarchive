@@ -6,6 +6,8 @@ permalink: /kb/273/Q273754/
 
 ## Q273754: Distributing Software May Not Work w/10004 Under Admin Context
 
+{% raw %}
+
 	Article: Q273754
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -61,3 +63,5 @@ permalink: /kb/273/Q273754/
 	
 	=============================================================================
 	
+
+{% endraw %}

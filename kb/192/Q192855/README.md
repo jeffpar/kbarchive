@@ -6,6 +6,8 @@ permalink: /kb/192/Q192855/
 
 ## Q192855: System Preparation Tool Does Not Save Desktop Preferences
 
+{% raw %}
+
 	Article: Q192855
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -101,3 +103,5 @@ permalink: /kb/192/Q192855/
 	
 	=============================================================================
 	
+
+{% endraw %}

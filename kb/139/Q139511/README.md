@@ -6,6 +6,8 @@ permalink: /kb/139/Q139511/
 
 ## Q139511: FIX: Text Data Truncated When Using optimizeBulkAdd
 
+{% raw %}
+
 	Article: Q139511
 	Product(s): Microsoft C Compiler
 	Version(s): 1.52a 1.52b
@@ -227,3 +229,5 @@ permalink: /kb/139/Q139511/
 	
 	=============================================================================
 	
+
+{% endraw %}

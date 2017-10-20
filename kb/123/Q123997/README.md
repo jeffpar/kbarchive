@@ -6,6 +6,8 @@ permalink: /kb/123/Q123997/
 
 ## Q123997: Inserted Picture Converted w/Visio 3 Contains Horizontal Lines
 
+{% raw %}
+
 	Article: Q123997
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/123/Q123997/
 	
 	=============================================================================
 	
+
+{% endraw %}

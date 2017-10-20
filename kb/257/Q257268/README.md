@@ -6,6 +6,8 @@ permalink: /kb/257/Q257268/
 
 ## Q257268: SMS: Group Members Cannot Advertise to New Collections
 
+{% raw %}
+
 	Article: Q257268
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/257/Q257268/
 	
 	=============================================================================
 	
+
+{% endraw %}

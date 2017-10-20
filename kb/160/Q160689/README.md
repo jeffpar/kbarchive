@@ -6,6 +6,8 @@ permalink: /kb/160/Q160689/
 
 ## Q160689: Systems Management Server Query Appears to Lose Data
 
+{% raw %}
+
 	Article: Q160689
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -51,3 +53,5 @@ permalink: /kb/160/Q160689/
 	
 	=============================================================================
 	
+
+{% endraw %}

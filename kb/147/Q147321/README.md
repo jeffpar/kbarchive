@@ -6,6 +6,8 @@ permalink: /kb/147/Q147321/
 
 ## Q147321: Oceans: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q147321
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.00
@@ -61,3 +63,5 @@ permalink: /kb/147/Q147321/
 	
 	=============================================================================
 	
+
+{% endraw %}

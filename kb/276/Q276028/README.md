@@ -6,6 +6,8 @@ permalink: /kb/276/Q276028/
 
 ## Q276028: Running Excel 2000 Comments and Corrections
 
+{% raw %}
+
 	Article: Q276028
 	Product(s): Microsoft Press
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/276/Q276028/
 	
 	=============================================================================
 	
+
+{% endraw %}

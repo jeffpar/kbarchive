@@ -6,6 +6,8 @@ permalink: /kb/135/Q135940/
 
 ## Q135940: Large Files Left on Host After Compressing with DriveSpace
 
+{% raw %}
+
 	Article: Q135940
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/135/Q135940/
 	
 	=============================================================================
 	
+
+{% endraw %}

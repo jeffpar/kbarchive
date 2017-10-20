@@ -6,6 +6,8 @@ permalink: /kb/214/Q214840/
 
 ## Q214840: MSV1_0 Allows Network Connections for Specific Accounts
 
+{% raw %}
+
 	Article: Q214840
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -98,3 +100,5 @@ permalink: /kb/214/Q214840/
 	
 	=============================================================================
 	
+
+{% endraw %}

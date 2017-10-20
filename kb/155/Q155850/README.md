@@ -6,6 +6,8 @@ permalink: /kb/155/Q155850/
 
 ## Q155850: PRB: &quot;Error Retrieving Record&quot; with SQL Statement in Open()
 
+{% raw %}
+
 	Article: Q155850
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10 4.20
@@ -78,3 +80,5 @@ permalink: /kb/155/Q155850/
 	
 	=============================================================================
 	
+
+{% endraw %}

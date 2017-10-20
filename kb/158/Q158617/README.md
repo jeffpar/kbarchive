@@ -6,6 +6,8 @@ permalink: /kb/158/Q158617/
 
 ## Q158617: WD97: Cannot Link Text Boxes in Different Subdocuments
 
+{% raw %}
+
 	Article: Q158617
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -53,3 +55,5 @@ permalink: /kb/158/Q158617/
 	
 	=============================================================================
 	
+
+{% endraw %}

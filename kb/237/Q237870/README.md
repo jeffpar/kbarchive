@@ -6,6 +6,8 @@ permalink: /kb/237/Q237870/
 
 ## Q237870: HOWTO: Increment Version Information After Each Build in VC++
 
+{% raw %}
+
 	Article: Q237870
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -309,3 +311,5 @@ permalink: /kb/237/Q237870/
 	
 	=============================================================================
 	
+
+{% endraw %}

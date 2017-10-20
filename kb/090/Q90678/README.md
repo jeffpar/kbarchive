@@ -6,6 +6,8 @@ permalink: /kb/090/Q90678/
 
 ## Q90678: MS-DOS Setup Disk is Bootable but Setup Doesn't Run
 
+{% raw %}
+
 	Article: Q90678
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -55,3 +57,5 @@ permalink: /kb/090/Q90678/
 	
 	=============================================================================
 	
+
+{% endraw %}

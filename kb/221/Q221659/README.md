@@ -6,6 +6,8 @@ permalink: /kb/221/Q221659/
 
 ## Q221659: FIX: SQL Upsizing Wizard Fails to Create PK Indexes
 
+{% raw %}
+
 	Article: Q221659
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,6.0
@@ -93,3 +95,5 @@ permalink: /kb/221/Q221659/
 	
 	=============================================================================
 	
+
+{% endraw %}

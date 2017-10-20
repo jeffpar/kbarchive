@@ -6,6 +6,8 @@ permalink: /kb/238/Q238099/
 
 ## Q238099: Flight Simulator 98: GPF in Module User.exe
 
+{% raw %}
+
 	Article: Q238099
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/238/Q238099/
 	
 	=============================================================================
 	
+
+{% endraw %}

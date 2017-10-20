@@ -6,6 +6,8 @@ permalink: /kb/203/Q203116/
 
 ## Q203116: XFOR: TCP/IP Listener Socket Error Message When Starting IMS
 
+{% raw %}
+
 	Article: Q203116
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/203/Q203116/
 	
 	=============================================================================
 	
+
+{% endraw %}

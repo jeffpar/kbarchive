@@ -6,6 +6,8 @@ permalink: /kb/129/Q129770/
 
 ## Q129770: FIX: CString::TrimLeft Fails in a UNICODE Application
 
+{% raw %}
+
 	Article: Q129770
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -131,3 +133,5 @@ permalink: /kb/129/Q129770/
 	
 	=============================================================================
 	
+
+{% endraw %}

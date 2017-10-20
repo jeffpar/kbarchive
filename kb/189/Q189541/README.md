@@ -6,6 +6,8 @@ permalink: /kb/189/Q189541/
 
 ## Q189541: Using the Checked Netlogon.dll to Track Account Lockouts
 
+{% raw %}
+
 	Article: Q189541
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0
@@ -177,3 +179,5 @@ permalink: /kb/189/Q189541/
 	
 	=============================================================================
 	
+
+{% endraw %}

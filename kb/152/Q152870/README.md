@@ -6,6 +6,8 @@ permalink: /kb/152/Q152870/
 
 ## Q152870: XADM: Event 2024 Logged When Not Necessary
 
+{% raw %}
+
 	Article: Q152870
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -44,3 +46,5 @@ permalink: /kb/152/Q152870/
 	
 	=============================================================================
 	
+
+{% endraw %}

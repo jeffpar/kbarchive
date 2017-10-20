@@ -6,6 +6,8 @@ permalink: /kb/118/Q118612/
 
 ## Q118612: INFO: Schema Numbers Not Stored if Serialize() Called Directly
 
+{% raw %}
+
 	Article: Q118612
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:7.0; winnt:1.0,2.0,2.1,2.2,4.0,4.1,4.2; :1.0,1.5,1.51,1.52
@@ -76,3 +78,5 @@ permalink: /kb/118/Q118612/
 	
 	=============================================================================
 	
+
+{% endraw %}

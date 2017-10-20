@@ -6,6 +6,8 @@ permalink: /kb/225/Q225071/
 
 ## Q225071: Mac QuickShelf 98: Long Delay Defining a Word on the Desktop
 
+{% raw %}
+
 	Article: Q225071
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -84,3 +86,5 @@ permalink: /kb/225/Q225071/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191915/
 
 ## Q191915: Screen Saver Time-out is Limited to 60 Minutes
 
+{% raw %}
+
 	Article: Q191915
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -71,3 +73,5 @@ permalink: /kb/191/Q191915/
 	
 	=============================================================================
 	
+
+{% endraw %}

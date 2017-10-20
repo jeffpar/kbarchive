@@ -6,6 +6,8 @@ permalink: /kb/160/Q160422/
 
 ## Q160422: How IIS Launches a CGI Application
 
+{% raw %}
+
 	Article: Q160422
 	Product(s): Internet Information Server
 	Version(s): WINNT: 1.0,2.0,3.0,4.0
@@ -92,3 +94,5 @@ permalink: /kb/160/Q160422/
 	
 	=============================================================================
 	
+
+{% endraw %}

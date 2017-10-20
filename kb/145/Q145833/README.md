@@ -6,6 +6,8 @@ permalink: /kb/145/Q145833/
 
 ## Q145833: No Network Access with 3Com EtherLink 16 and NetBEUI Only
 
+{% raw %}
+
 	Article: Q145833
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -60,3 +62,5 @@ permalink: /kb/145/Q145833/
 	
 	=============================================================================
 	
+
+{% endraw %}

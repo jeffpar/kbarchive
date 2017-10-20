@@ -6,6 +6,8 @@ permalink: /kb/304/Q304714/
 
 ## Q304714: &quot;Client Could Not Establish a Connection to the Remote Computer&quot;
 
+{% raw %}
+
 	Article: Q304714
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6
@@ -64,3 +66,5 @@ permalink: /kb/304/Q304714/
 	
 	=============================================================================
 	
+
+{% endraw %}

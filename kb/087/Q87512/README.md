@@ -6,6 +6,8 @@ permalink: /kb/087/Q87512/
 
 ## Q87512: Intellifont Problems with QEMM, Adobe Type Manager, EOF Marker
 
+{% raw %}
+
 	Article: Q87512
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -83,3 +85,5 @@ permalink: /kb/087/Q87512/
 	
 	=============================================================================
 	
+
+{% endraw %}

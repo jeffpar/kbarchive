@@ -6,6 +6,8 @@ permalink: /kb/236/Q236078/
 
 ## Q236078: BUG: Mouse Clicks on Scrollbar of Open ComboBox are Trapped
 
+{% raw %}
+
 	Article: Q236078
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -116,3 +118,5 @@ permalink: /kb/236/Q236078/
 	
 	=============================================================================
 	
+
+{% endraw %}

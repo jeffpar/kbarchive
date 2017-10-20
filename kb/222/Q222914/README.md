@@ -6,6 +6,8 @@ permalink: /kb/222/Q222914/
 
 ## Q222914: XCLN: Error When Adding Mailboxes to Profile
 
+{% raw %}
+
 	Article: Q222914
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :
@@ -60,3 +62,5 @@ permalink: /kb/222/Q222914/
 	
 	=============================================================================
 	
+
+{% endraw %}

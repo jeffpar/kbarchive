@@ -6,6 +6,8 @@ permalink: /kb/190/Q190173/
 
 ## Q190173: INFO: How Setup Wizard and PDW Compare File Versions and Dates
 
+{% raw %}
+
 	Article: Q190173
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -140,3 +142,5 @@ permalink: /kb/190/Q190173/
 	
 	=============================================================================
 	
+
+{% endraw %}

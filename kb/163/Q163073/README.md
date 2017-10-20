@@ -6,6 +6,8 @@ permalink: /kb/163/Q163073/
 
 ## Q163073: Backup Config. Server May Not Always Read Local Config. File
 
+{% raw %}
+
 	Article: Q163073
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -96,3 +98,5 @@ permalink: /kb/163/Q163073/
 	
 	=============================================================================
 	
+
+{% endraw %}

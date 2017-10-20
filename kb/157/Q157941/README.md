@@ -6,6 +6,8 @@ permalink: /kb/157/Q157941/
 
 ## Q157941: XFOR: Attachment Moved When Sent Over MS Mail Connector
 
+{% raw %}
+
 	Article: Q157941
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/157/Q157941/
 	
 	=============================================================================
 	
+
+{% endraw %}

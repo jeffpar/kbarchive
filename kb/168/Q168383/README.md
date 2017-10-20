@@ -6,6 +6,8 @@ permalink: /kb/168/Q168383/
 
 ## Q168383: FIX: C1001 p2symtab.c, line 2221 In Direct Init of Static
 
+{% raw %}
+
 	Article: Q168383
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -85,3 +87,5 @@ permalink: /kb/168/Q168383/
 	
 	=============================================================================
 	
+
+{% endraw %}

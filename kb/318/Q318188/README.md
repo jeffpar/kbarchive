@@ -6,6 +6,8 @@ permalink: /kb/318/Q318188/
 
 ## Q318188: HOW TO: Save The Contents Of Visual Basic Form To a DIB Section
 
+{% raw %}
+
 	Article: Q318188
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -167,3 +169,5 @@ permalink: /kb/318/Q318188/
 	
 	=============================================================================
 	
+
+{% endraw %}

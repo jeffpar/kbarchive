@@ -6,6 +6,8 @@ permalink: /kb/235/Q235743/
 
 ## Q235743: SMS: Pre-Defined Product Compliance Queries Return Wrong Results
 
+{% raw %}
+
 	Article: Q235743
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -50,3 +52,5 @@ permalink: /kb/235/Q235743/
 	
 	=============================================================================
 	
+
+{% endraw %}

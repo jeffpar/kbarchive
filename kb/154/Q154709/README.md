@@ -6,6 +6,8 @@ permalink: /kb/154/Q154709/
 
 ## Q154709: BUG: Setup Wizard Grid Hangs VFP When KEYCOMP Not Macintosh
 
+{% raw %}
+
 	Article: Q154709
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -107,3 +109,5 @@ permalink: /kb/154/Q154709/
 	
 	=============================================================================
 	
+
+{% endraw %}

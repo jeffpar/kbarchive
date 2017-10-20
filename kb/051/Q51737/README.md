@@ -6,6 +6,8 @@ permalink: /kb/051/Q51737/
 
 ## Q51737: Expanded Memory under Windows 3.0
 
+{% raw %}
+
 	Article: Q51737
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -109,3 +111,5 @@ permalink: /kb/051/Q51737/
 	
 	=============================================================================
 	
+
+{% endraw %}

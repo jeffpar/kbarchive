@@ -6,6 +6,8 @@ permalink: /kb/280/Q280071/
 
 ## Q280071: XCON: Message Read or Unread Status Lost Migrating from cc:Mail
 
+{% raw %}
+
 	Article: Q280071
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -81,3 +83,5 @@ permalink: /kb/280/Q280071/
 	
 	=============================================================================
 	
+
+{% endraw %}

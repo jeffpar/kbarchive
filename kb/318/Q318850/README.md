@@ -6,6 +6,8 @@ permalink: /kb/318/Q318850/
 
 ## Q318850: FS2002: Error Message When You Try to Read a Library/Help File
 
+{% raw %}
+
 	Article: Q318850
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/318/Q318850/
 	
 	=============================================================================
 	
+
+{% endraw %}

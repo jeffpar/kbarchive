@@ -6,6 +6,8 @@ permalink: /kb/157/Q157632/
 
 ## Q157632: XADM: Client Hangs or Prompts for Domain Credentials
 
+{% raw %}
+
 	Article: Q157632
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.5
@@ -104,3 +106,5 @@ permalink: /kb/157/Q157632/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/251/Q251273/
 
 ## Q251273: Sample: Create XMLDOM Document with #import
 
+{% raw %}
+
 	Article: Q251273
 	Product(s): Microsoft C Compiler
 	Version(s): 2.5,2.6,3.0,4.0,6.0
@@ -135,3 +137,5 @@ permalink: /kb/251/Q251273/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/123/Q123789/
 
 ## Q123789: Can't Restrict User from Changing Password
 
+{% raw %}
+
 	Article: Q123789
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5
@@ -49,3 +51,5 @@ permalink: /kb/123/Q123789/
 	
 	=============================================================================
 	
+
+{% endraw %}

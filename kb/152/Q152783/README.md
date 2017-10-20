@@ -6,6 +6,8 @@ permalink: /kb/152/Q152783/
 
 ## Q152783: INFO: Sample Twinax Configuration for SNA Server
 
+{% raw %}
+
 	Article: Q152783
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,4.0
@@ -229,3 +231,5 @@ permalink: /kb/152/Q152783/
 	
 	=============================================================================
 	
+
+{% endraw %}

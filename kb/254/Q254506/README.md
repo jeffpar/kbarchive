@@ -6,6 +6,8 @@ permalink: /kb/254/Q254506/
 
 ## Q254506: XADM: Hidden Public Folders Shown in GAL of Other Site
 
+{% raw %}
+
 	Article: Q254506
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -89,3 +91,5 @@ permalink: /kb/254/Q254506/
 	
 	=============================================================================
 	
+
+{% endraw %}

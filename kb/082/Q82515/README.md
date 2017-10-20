@@ -6,6 +6,8 @@ permalink: /kb/082/Q82515/
 
 ## Q82515: Harvard Graphics 3.0 Mouse Corruption Shown on Screen
 
+{% raw %}
+
 	Article: Q82515
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/082/Q82515/
 	
 	=============================================================================
 	
+
+{% endraw %}

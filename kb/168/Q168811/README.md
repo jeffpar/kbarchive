@@ -6,6 +6,8 @@ permalink: /kb/168/Q168811/
 
 ## Q168811: WD97: Cannot Paste or Drag Text to Text Box
 
+{% raw %}
+
 	Article: Q168811
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:6.0,6.0a,6.0c,7.0,7.0a,97; winnt:6.0
@@ -93,3 +95,5 @@ permalink: /kb/168/Q168811/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156572/
 
 ## Q156572: How to Install the FTP Server Service in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q156572
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -73,3 +75,5 @@ permalink: /kb/156/Q156572/
 	
 	=============================================================================
 	
+
+{% endraw %}

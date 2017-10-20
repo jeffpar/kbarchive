@@ -6,6 +6,8 @@ permalink: /kb/139/Q139846/
 
 ## Q139846: Floppy Disk Drive Letters Not Swapped in Windows 95
 
+{% raw %}
+
 	Article: Q139846
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/139/Q139846/
 	
 	=============================================================================
 	
+
+{% endraw %}

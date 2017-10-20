@@ -6,6 +6,8 @@ permalink: /kb/196/Q196168/
 
 ## Q196168: XADM: Error Configuring Message Service (MSEMS)
 
+{% raw %}
+
 	Article: Q196168
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:4.0,5.0,5.5
@@ -93,3 +95,5 @@ permalink: /kb/196/Q196168/
 	
 	=============================================================================
 	
+
+{% endraw %}

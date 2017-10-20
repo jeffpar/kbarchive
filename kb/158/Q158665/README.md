@@ -6,6 +6,8 @@ permalink: /kb/158/Q158665/
 
 ## Q158665: FIX: 16-Bit Driver Keyset Cursor Operations with Query Timeout
 
+{% raw %}
+
 	Article: Q158665
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.65
@@ -51,3 +53,5 @@ permalink: /kb/158/Q158665/
 	
 	=============================================================================
 	
+
+{% endraw %}

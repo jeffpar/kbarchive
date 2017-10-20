@@ -6,6 +6,8 @@ permalink: /kb/179/Q179054/
 
 ## Q179054: XCLN: GPF in Access 2.0 When Viewing New Message Properties
 
+{% raw %}
+
 	Article: Q179054
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,8.0
@@ -49,3 +51,5 @@ permalink: /kb/179/Q179054/
 	
 	=============================================================================
 	
+
+{% endraw %}

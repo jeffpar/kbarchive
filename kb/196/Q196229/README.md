@@ -6,6 +6,8 @@ permalink: /kb/196/Q196229/
 
 ## Q196229: SMS: How to Delete Inventory History Accumulated Over Time
 
+{% raw %}
+
 	Article: Q196229
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -72,3 +74,5 @@ permalink: /kb/196/Q196229/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110981/
 
 ## Q110981: Removing WinFax Pro from Windows for Troubleshooting
 
+{% raw %}
+
 	Article: Q110981
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/110/Q110981/
 	
 	=============================================================================
 	
+
+{% endraw %}

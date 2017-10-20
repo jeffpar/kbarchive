@@ -6,6 +6,8 @@ permalink: /kb/089/Q89061/
 
 ## Q89061: FoxBASE+/386 Requirements
 
+{% raw %}
+
 	Article: Q89061
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -47,3 +49,5 @@ permalink: /kb/089/Q89061/
 	
 	=============================================================================
 	
+
+{% endraw %}

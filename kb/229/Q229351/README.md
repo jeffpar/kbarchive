@@ -6,6 +6,8 @@ permalink: /kb/229/Q229351/
 
 ## Q229351: SP5 Includes an Updated Version of the Streaming SIMD Driver
 
+{% raw %}
+
 	Article: Q229351
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -107,3 +109,5 @@ permalink: /kb/229/Q229351/
 	
 	=============================================================================
 	
+
+{% endraw %}

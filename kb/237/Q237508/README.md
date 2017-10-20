@@ -6,6 +6,8 @@ permalink: /kb/237/Q237508/
 
 ## Q237508: Encarta 2000: Problems When You Turn On Closed Captions
 
+{% raw %}
+
 	Article: Q237508
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/237/Q237508/
 	
 	=============================================================================
 	
+
+{% endraw %}

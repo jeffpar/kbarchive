@@ -6,6 +6,8 @@ permalink: /kb/242/Q242137/
 
 ## Q242137: Cannot restore files that were deleted off server from a client.
 
+{% raw %}
+
 	Article: Q242137
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -42,3 +44,5 @@ permalink: /kb/242/Q242137/
 	
 	=============================================================================
 	
+
+{% endraw %}

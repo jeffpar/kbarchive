@@ -6,6 +6,8 @@ permalink: /kb/185/Q185215/
 
 ## Q185215: HOWTO: Use the SeDebugPrivilege to Acquire Any Process Handle
 
+{% raw %}
+
 	Article: Q185215
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -480,3 +482,5 @@ permalink: /kb/185/Q185215/
 	
 	=============================================================================
 	
+
+{% endraw %}

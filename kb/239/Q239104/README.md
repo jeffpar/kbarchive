@@ -6,6 +6,8 @@ permalink: /kb/239/Q239104/
 
 ## Q239104: Jet Expression Can Execute Unsafe VBA Functions
 
+{% raw %}
+
 	Article: Q239104
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.5,7.0
@@ -170,3 +172,5 @@ permalink: /kb/239/Q239104/
 	
 	=============================================================================
 	
+
+{% endraw %}

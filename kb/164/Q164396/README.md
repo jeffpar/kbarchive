@@ -6,6 +6,8 @@ permalink: /kb/164/Q164396/
 
 ## Q164396: STOP 0x0000000A May Occur in Afd.sys Under High Stress
 
+{% raw %}
+
 	Article: Q164396
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/164/Q164396/
 	
 	=============================================================================
 	
+
+{% endraw %}

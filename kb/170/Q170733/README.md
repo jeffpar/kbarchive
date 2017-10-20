@@ -6,6 +6,8 @@ permalink: /kb/170/Q170733/
 
 ## Q170733: WD97: Sample Macro Code to Select Table Columns and Rows
 
+{% raw %}
+
 	Article: Q170733
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/170/Q170733/
 	
 	=============================================================================
 	
+
+{% endraw %}

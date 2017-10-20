@@ -6,6 +6,8 @@ permalink: /kb/115/Q115461/
 
 ## Q115461: FAX: Kortex Software Has No Control of Board-Level Queue
 
+{% raw %}
+
 	Article: Q115461
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0a
@@ -39,3 +41,5 @@ permalink: /kb/115/Q115461/
 	
 	=============================================================================
 	
+
+{% endraw %}

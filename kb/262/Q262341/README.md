@@ -6,6 +6,8 @@ permalink: /kb/262/Q262341/
 
 ## Q262341: SMS: SMSClitoknAcct&amp; Account Lockout When HINV Is Run
 
+{% raw %}
+
 	Article: Q262341
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -79,3 +81,5 @@ permalink: /kb/262/Q262341/
 	
 	=============================================================================
 	
+
+{% endraw %}

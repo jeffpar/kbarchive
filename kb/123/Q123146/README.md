@@ -6,6 +6,8 @@ permalink: /kb/123/Q123146/
 
 ## Q123146: BUG: GetOutlineTextMetrics() Returns Bad Data in Japanese Win
 
+{% raw %}
+
 	Article: Q123146
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,Japanese
@@ -58,3 +60,5 @@ permalink: /kb/123/Q123146/
 	
 	=============================================================================
 	
+
+{% endraw %}

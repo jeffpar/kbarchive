@@ -6,6 +6,8 @@ permalink: /kb/034/Q34905/
 
 ## Q34905: Array Reference Gives &quot;C4046 '&amp;' on Function/Array, Ignored&quot;
 
+{% raw %}
+
 	Article: Q34905
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -39,3 +41,5 @@ permalink: /kb/034/Q34905/
 	More information about arrays can be found in the last paragraph on
 	Page 104 and in Example 1 on Page 119 of the "Microsoft C Optimizing
 	Compiler Language Reference" manual.
+
+{% endraw %}

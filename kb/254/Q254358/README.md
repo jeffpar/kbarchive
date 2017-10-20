@@ -6,6 +6,8 @@ permalink: /kb/254/Q254358/
 
 ## Q254358: MapPoint 2001: How to Install and Remove Pocket Streets
 
+{% raw %}
+
 	Article: Q254358
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/254/Q254358/
 	
 	=============================================================================
 	
+
+{% endraw %}

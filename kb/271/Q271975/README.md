@@ -6,6 +6,8 @@ permalink: /kb/271/Q271975/
 
 ## Q271975: XADM: Folders in English Instead of Brazilian or Portuguese
 
+{% raw %}
+
 	Article: Q271975
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -61,3 +63,5 @@ permalink: /kb/271/Q271975/
 	
 	=============================================================================
 	
+
+{% endraw %}

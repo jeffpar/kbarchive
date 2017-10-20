@@ -6,6 +6,8 @@ permalink: /kb/114/Q114864/
 
 ## Q114864: How to Find the Hard Disk Drive Name Using FoxPro for Mac
 
+{% raw %}
+
 	Article: Q114864
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -72,3 +74,5 @@ permalink: /kb/114/Q114864/
 	
 	=============================================================================
 	
+
+{% endraw %}

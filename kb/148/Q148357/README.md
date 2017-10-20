@@ -6,6 +6,8 @@ permalink: /kb/148/Q148357/
 
 ## Q148357: FIX: Class Designer Changes the Width of a Form Class
 
+{% raw %}
+
 	Article: Q148357
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -81,3 +83,5 @@ permalink: /kb/148/Q148357/
 	
 	=============================================================================
 	
+
+{% endraw %}

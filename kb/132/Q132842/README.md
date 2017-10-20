@@ -6,6 +6,8 @@ permalink: /kb/132/Q132842/
 
 ## Q132842: Act 2.04 Prints to Color Printer in Black and White
 
+{% raw %}
+
 	Article: Q132842
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -70,3 +72,5 @@ permalink: /kb/132/Q132842/
 	
 	=============================================================================
 	
+
+{% endraw %}

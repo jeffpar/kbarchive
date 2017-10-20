@@ -6,6 +6,8 @@ permalink: /kb/149/Q149349/
 
 ## Q149349: Using UMAX Scanners with Windows NT
 
+{% raw %}
+
 	Article: Q149349
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -59,3 +61,5 @@ permalink: /kb/149/Q149349/
 	
 	=============================================================================
 	
+
+{% endraw %}

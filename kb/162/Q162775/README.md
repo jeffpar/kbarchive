@@ -6,6 +6,8 @@ permalink: /kb/162/Q162775/
 
 ## Q162775: Access Violation in SPOOLSS when Printing to a Serial Printer
 
+{% raw %}
+
 	Article: Q162775
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/162/Q162775/
 	
 	=============================================================================
 	
+
+{% endraw %}

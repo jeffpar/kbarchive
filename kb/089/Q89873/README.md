@@ -6,6 +6,8 @@ permalink: /kb/089/Q89873/
 
 ## Q89873: WSS Compatibility with Sound Boards and MS-DOS Applications
 
+{% raw %}
+
 	Article: Q89873
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/089/Q89873/
 	
 	=============================================================================
 	
+
+{% endraw %}

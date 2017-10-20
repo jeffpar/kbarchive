@@ -6,6 +6,8 @@ permalink: /kb/231/Q231210/
 
 ## Q231210: SMS: Smsman.exe Is Unable to Start the Removal Process
 
+{% raw %}
+
 	Article: Q231210
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -100,3 +102,5 @@ permalink: /kb/231/Q231210/
 	
 	=============================================================================
 	
+
+{% endraw %}

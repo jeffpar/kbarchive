@@ -6,6 +6,8 @@ permalink: /kb/098/Q98976/
 
 ## Q98976: Mac Hyp: Out of the Office Stack Sends Only One Message
 
+{% raw %}
+
 	Article: Q98976
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0,3.1
@@ -48,3 +50,5 @@ permalink: /kb/098/Q98976/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189743/
 
 ## Q189743: INFO: Description of Setup.lst Sections
 
+{% raw %}
+
 	Article: Q189743
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -267,3 +269,5 @@ permalink: /kb/189/Q189743/
 	
 	=============================================================================
 	
+
+{% endraw %}

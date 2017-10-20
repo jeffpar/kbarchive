@@ -6,6 +6,8 @@ permalink: /kb/099/Q99098/
 
 ## Q99098: Erratic Printing with HP IIIsi PostScript and LMSFM
 
+{% raw %}
+
 	Article: Q99098
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/099/Q99098/
 	
 	=============================================================================
 	
+
+{% endraw %}

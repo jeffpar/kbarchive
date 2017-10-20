@@ -6,6 +6,8 @@ permalink: /kb/152/Q152254/
 
 ## Q152254: BUG: LNK2001 on Operator&gt;&gt; with Class from MFC Extension DLL
 
+{% raw %}
+
 	Article: Q152254
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -142,3 +144,5 @@ permalink: /kb/152/Q152254/
 	
 	=============================================================================
 	
+
+{% endraw %}

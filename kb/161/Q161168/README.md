@@ -6,6 +6,8 @@ permalink: /kb/161/Q161168/
 
 ## Q161168: Encarta 97: Removing Program Without Losing Yearbook Updates
 
+{% raw %}
+
 	Article: Q161168
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -50,3 +52,5 @@ permalink: /kb/161/Q161168/
 	
 	=============================================================================
 	
+
+{% endraw %}

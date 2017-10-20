@@ -6,6 +6,8 @@ permalink: /kb/086/Q86745/
 
 ## Q86745: Bookshelf Demonstration on the Multimedia Works Disc
 
+{% raw %}
+
 	Article: Q86745
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1992 edition
@@ -62,3 +64,5 @@ permalink: /kb/086/Q86745/
 	
 	=============================================================================
 	
+
+{% endraw %}

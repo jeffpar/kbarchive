@@ -6,6 +6,8 @@ permalink: /kb/079/Q79159/
 
 ## Q79159: FIX: Incorrect Code Generated If Operand Is &#91;esp&#93;&#91;esp&#93;
 
+{% raw %}
+
 	Article: Q79159
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0
@@ -78,3 +80,5 @@ permalink: /kb/079/Q79159/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137553/
 
 ## Q137553: IBM 4019 Defaults to Manual Paper Feed
 
+{% raw %}
+
 	Article: Q137553
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -80,3 +82,5 @@ permalink: /kb/137/Q137553/
 	
 	=============================================================================
 	
+
+{% endraw %}

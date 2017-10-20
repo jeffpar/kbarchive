@@ -6,6 +6,8 @@ permalink: /kb/074/Q74744/
 
 ## Q74744: FIX: Bad Code Produced When Using Location Arithmetic
 
+{% raw %}
+
 	Article: Q74744
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -130,3 +132,5 @@ permalink: /kb/074/Q74744/
 	
 	=============================================================================
 	
+
+{% endraw %}

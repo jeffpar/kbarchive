@@ -6,6 +6,8 @@ permalink: /kb/150/Q150476/
 
 ## Q150476: MSB Ocean: Hangs at the Beach After Playing About 30 Times
 
+{% raw %}
+
 	Article: Q150476
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -157,3 +159,5 @@ permalink: /kb/150/Q150476/
 	
 	=============================================================================
 	
+
+{% endraw %}

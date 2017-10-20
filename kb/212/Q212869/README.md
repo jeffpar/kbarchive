@@ -6,6 +6,8 @@ permalink: /kb/212/Q212869/
 
 ## Q212869: &quot;Check Disk Space&quot; Script Is Inaccurate with Component Lists
 
+{% raw %}
+
 	Article: Q212869
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0; winnt:2.0
@@ -56,3 +58,5 @@ permalink: /kb/212/Q212869/
 	
 	=============================================================================
 	
+
+{% endraw %}

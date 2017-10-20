@@ -6,6 +6,8 @@ permalink: /kb/279/Q279152/
 
 ## Q279152: Microsoft Systems Management Server 2.0 Administrator's Companio
 
+{% raw %}
+
 	Article: Q279152
 	Product(s): Microsoft Press
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/279/Q279152/
 	
 	=============================================================================
 	
+
+{% endraw %}

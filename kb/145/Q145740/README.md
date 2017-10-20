@@ -6,6 +6,8 @@ permalink: /kb/145/Q145740/
 
 ## Q145740: How to Start Dial-Up Networking Connection Using Command Line
 
+{% raw %}
+
 	Article: Q145740
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -60,3 +62,5 @@ permalink: /kb/145/Q145740/
 	
 	=============================================================================
 	
+
+{% endraw %}

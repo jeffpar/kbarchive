@@ -6,6 +6,8 @@ permalink: /kb/165/Q165707/
 
 ## Q165707: Virus Scanning for Outgoing Files Can Cause Setups to Run Slow
 
+{% raw %}
+
 	Article: Q165707
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/165/Q165707/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154678/
 
 ## Q154678: FP: Error Using Publish Web Command Copying Web Remotely
 
+{% raw %}
+
 	Article: Q154678
 	Product(s): Word Front Page
 	Version(s): 1.1
@@ -128,3 +130,5 @@ permalink: /kb/154/Q154678/
 	
 	=============================================================================
 	
+
+{% endraw %}

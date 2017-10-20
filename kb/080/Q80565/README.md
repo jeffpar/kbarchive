@@ -6,6 +6,8 @@ permalink: /kb/080/Q80565/
 
 ## Q80565: Sound Blaster's Mixer May Need an Upgrade
 
+{% raw %}
+
 	Article: Q80565
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/080/Q80565/
 	
 	=============================================================================
 	
+
+{% endraw %}

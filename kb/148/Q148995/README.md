@@ -6,6 +6,8 @@ permalink: /kb/148/Q148995/
 
 ## Q148995: README.TXT: Microsoft File and Print Services for NetWare
 
+{% raw %}
+
 	Article: Q148995
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -526,3 +528,5 @@ permalink: /kb/148/Q148995/
 	
 	=============================================================================
 	
+
+{% endraw %}

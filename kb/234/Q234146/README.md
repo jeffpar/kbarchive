@@ -6,6 +6,8 @@ permalink: /kb/234/Q234146/
 
 ## Q234146: BUG: ATL Consumer Wizard truncates SQL Server Field to TCHAR
 
+{% raw %}
+
 	Article: Q234146
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/234/Q234146/
 	
 	=============================================================================
 	
+
+{% endraw %}

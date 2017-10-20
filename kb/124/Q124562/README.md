@@ -6,6 +6,8 @@ permalink: /kb/124/Q124562/
 
 ## Q124562: CPU Utilization on a NCR3450
 
+{% raw %}
+
 	Article: Q124562
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/124/Q124562/
 	
 	=============================================================================
 	
+
+{% endraw %}

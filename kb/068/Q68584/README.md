@@ -6,6 +6,8 @@ permalink: /kb/068/Q68584/
 
 ## Q68584: Avoid SetClassLong If Subclassing a Standard Control Class
 
+{% raw %}
+
 	Article: Q68584
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -53,3 +55,5 @@ permalink: /kb/068/Q68584/
 	
 	=============================================================================
 	
+
+{% endraw %}

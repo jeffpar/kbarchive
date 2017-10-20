@@ -6,6 +6,8 @@ permalink: /kb/193/Q193585/
 
 ## Q193585: BUG: Recursive History Fails if Used With -f- Switch
 
+{% raw %}
+
 	Article: Q193585
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -95,3 +97,5 @@ permalink: /kb/193/Q193585/
 	
 	=============================================================================
 	
+
+{% endraw %}

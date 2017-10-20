@@ -6,6 +6,8 @@ permalink: /kb/242/Q242591/
 
 ## Q242591: PRB: Running Noncertified Applications as a Non-Administrator
 
+{% raw %}
+
 	Article: Q242591
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:RC1,RC2
@@ -94,3 +96,5 @@ permalink: /kb/242/Q242591/
 	
 	=============================================================================
 	
+
+{% endraw %}

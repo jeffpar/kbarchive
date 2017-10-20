@@ -6,6 +6,8 @@ permalink: /kb/277/Q277988/
 
 ## Q277988: COMTI: Memory Leak When Using TCP/IP MS Link Component
 
+{% raw %}
+
 	Article: Q277988
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -60,3 +62,5 @@ permalink: /kb/277/Q277988/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/268/Q268801/
 
 ## Q268801: XADM: How to Remove the InterOrg Synchronization Tool
 
+{% raw %}
+
 	Article: Q268801
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -84,3 +86,5 @@ permalink: /kb/268/Q268801/
 	
 	=============================================================================
 	
+
+{% endraw %}

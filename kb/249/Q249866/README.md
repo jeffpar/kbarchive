@@ -6,6 +6,8 @@ permalink: /kb/249/Q249866/
 
 ## Q249866: Description of #MH Entry in Windows NT Lmhosts File
 
+{% raw %}
+
 	Article: Q249866
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/249/Q249866/
 	
 	=============================================================================
 	
+
+{% endraw %}

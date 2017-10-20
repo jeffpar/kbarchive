@@ -6,6 +6,8 @@ permalink: /kb/138/Q138653/
 
 ## Q138653: Part 2 of 2 Visual FoxPro Prof Files After Installation
 
+{% raw %}
+
 	Article: Q138653
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -681,3 +683,5 @@ permalink: /kb/138/Q138653/
 	
 	=============================================================================
 	
+
+{% endraw %}

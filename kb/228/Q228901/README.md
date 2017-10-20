@@ -6,6 +6,8 @@ permalink: /kb/228/Q228901/
 
 ## Q228901: XCON: Account Validation Problems with Dynamic RAS Installation
 
+{% raw %}
+
 	Article: Q228901
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/228/Q228901/
 	
 	=============================================================================
 	
+
+{% endraw %}

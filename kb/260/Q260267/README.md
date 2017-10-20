@@ -6,6 +6,8 @@ permalink: /kb/260/Q260267/
 
 ## Q260267: FrontPage Server Extensions Image Map Files Expose Vulnerability
 
+{% raw %}
+
 	Article: Q260267
 	Product(s): Word Front Page
 	Version(s): 
@@ -129,3 +131,5 @@ permalink: /kb/260/Q260267/
 	
 	=============================================================================
 	
+
+{% endraw %}

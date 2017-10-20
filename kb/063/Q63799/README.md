@@ -6,6 +6,8 @@ permalink: /kb/063/Q63799/
 
 ## Q63799: 7.00 UI Toolbox MENU.BAS Correction, Narrow Menu Selectability
 
+{% raw %}
+
 	Article: Q63799
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -71,3 +73,5 @@ permalink: /kb/063/Q63799/
 	on the following words:
 	
 	   user and interface and toolbox and buglist7.00
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152272/
 
 ## Q152272: GetSecurityDescriptorGroup() Returns Incorrect Primary Group
 
+{% raw %}
+
 	Article: Q152272
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -61,3 +63,5 @@ permalink: /kb/152/Q152272/
 	
 	=============================================================================
 	
+
+{% endraw %}

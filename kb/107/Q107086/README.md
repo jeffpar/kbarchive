@@ -6,6 +6,8 @@ permalink: /kb/107/Q107086/
 
 ## Q107086: FAX: Doc Err: GammaFAX XP Board Is Not Supported
 
+{% raw %}
+
 	Article: Q107086
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -38,3 +40,5 @@ permalink: /kb/107/Q107086/
 	
 	=============================================================================
 	
+
+{% endraw %}

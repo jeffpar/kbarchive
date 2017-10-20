@@ -6,6 +6,8 @@ permalink: /kb/157/Q157719/
 
 ## Q157719: INFO: VSS 5.0 Readme: Sec. 4 &amp; 5, VSS 4.0/VSS Home Page Users
 
+{% raw %}
+
 	Article: Q157719
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0
@@ -176,3 +178,5 @@ permalink: /kb/157/Q157719/
 	
 	=============================================================================
 	
+
+{% endraw %}

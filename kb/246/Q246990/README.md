@@ -6,6 +6,8 @@ permalink: /kb/246/Q246990/
 
 ## Q246990: Low Free Hard Disk Space May Damage a Roaming User Profile
 
+{% raw %}
+
 	Article: Q246990
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -89,3 +91,5 @@ permalink: /kb/246/Q246990/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164160/
 
 ## Q164160: Text Background Not Computed Correctly for Text Reflection
 
+{% raw %}
+
 	Article: Q164160
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/164/Q164160/
 	
 	=============================================================================
 	
+
+{% endraw %}

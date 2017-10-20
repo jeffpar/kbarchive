@@ -6,6 +6,8 @@ permalink: /kb/140/Q140681/
 
 ## Q140681: Incomplete SQL Server Upgrade Causes Problems Creating Jobs
 
+{% raw %}
+
 	Article: Q140681
 	Product(s): Microsoft Windows NT
 	Version(s): 1.10
@@ -81,3 +83,5 @@ permalink: /kb/140/Q140681/
 	
 	=============================================================================
 	
+
+{% endraw %}

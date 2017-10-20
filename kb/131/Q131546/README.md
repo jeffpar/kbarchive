@@ -6,6 +6,8 @@ permalink: /kb/131/Q131546/
 
 ## Q131546: ALT+ENTER in MS-DOS Prompt Causes AnyKey Keyboard to Hang
 
+{% raw %}
+
 	Article: Q131546
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/131/Q131546/
 	
 	=============================================================================
 	
+
+{% endraw %}

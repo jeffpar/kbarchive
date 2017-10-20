@@ -6,6 +6,8 @@ permalink: /kb/030/Q30409/
 
 ## Q30409: Warning A4001: Extra Characters on Line
 
+{% raw %}
+
 	Article: Q30409
 	Product(s): See article
 	Version(s): 5.10
@@ -23,3 +25,5 @@ permalink: /kb/030/Q30409/
 	
 	   Microsoft is researching this problem and will post new information
 	as it becomes available.
+
+{% endraw %}

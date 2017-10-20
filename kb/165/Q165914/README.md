@@ -6,6 +6,8 @@ permalink: /kb/165/Q165914/
 
 ## Q165914: XCLN: Troubleshooting the Free/Busy Connector
 
+{% raw %}
+
 	Article: Q165914
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -173,3 +175,5 @@ permalink: /kb/165/Q165914/
 	
 	=============================================================================
 	
+
+{% endraw %}

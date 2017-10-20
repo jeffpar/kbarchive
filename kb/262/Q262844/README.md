@@ -6,6 +6,8 @@ permalink: /kb/262/Q262844/
 
 ## Q262844: PRB: Error -2147024893 When You Try to Start IIS Admin Service
 
+{% raw %}
+
 	Article: Q262844
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/262/Q262844/
 	
 	=============================================================================
 	
+
+{% endraw %}

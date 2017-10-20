@@ -6,6 +6,8 @@ permalink: /kb/064/Q64423/
 
 ## Q64423: WD97: Setting the Default Font in Word for Windows
 
+{% raw %}
+
 	Article: Q64423
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/064/Q64423/
 	
 	=============================================================================
 	
+
+{% endraw %}

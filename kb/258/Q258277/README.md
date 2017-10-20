@@ -6,6 +6,8 @@ permalink: /kb/258/Q258277/
 
 ## Q258277: XCLN: How to Disable AutoArchive and Personal Folders
 
+{% raw %}
+
 	Article: Q258277
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -111,3 +113,5 @@ permalink: /kb/258/Q258277/
 	
 	=============================================================================
 	
+
+{% endraw %}

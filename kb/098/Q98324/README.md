@@ -6,6 +6,8 @@ permalink: /kb/098/Q98324/
 
 ## Q98324: BUG: Excel GP Faults When Passing Intersection
 
+{% raw %}
+
 	Article: Q98324
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/098/Q98324/
 	
 	=============================================================================
 	
+
+{% endraw %}

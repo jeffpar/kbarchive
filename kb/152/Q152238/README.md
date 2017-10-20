@@ -6,6 +6,8 @@ permalink: /kb/152/Q152238/
 
 ## Q152238: Music Central 96 Update Contents: April 96
 
+{% raw %}
+
 	Article: Q152238
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -112,3 +114,5 @@ permalink: /kb/152/Q152238/
 	
 	=============================================================================
 	
+
+{% endraw %}

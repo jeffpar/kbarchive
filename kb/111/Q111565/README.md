@@ -6,6 +6,8 @@ permalink: /kb/111/Q111565/
 
 ## Q111565: How to Create a Trust Relationship from One Computer
 
+{% raw %}
+
 	Article: Q111565
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -87,3 +89,5 @@ permalink: /kb/111/Q111565/
 	
 	=============================================================================
 	
+
+{% endraw %}

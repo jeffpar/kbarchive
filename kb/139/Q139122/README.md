@@ -6,6 +6,8 @@ permalink: /kb/139/Q139122/
 
 ## Q139122: Manage WINS &amp; DHCP by Using Only Local Administrator Privilege
 
+{% raw %}
+
 	Article: Q139122
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -47,3 +49,5 @@ permalink: /kb/139/Q139122/
 	
 	=============================================================================
 	
+
+{% endraw %}

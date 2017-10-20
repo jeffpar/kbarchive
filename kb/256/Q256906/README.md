@@ -6,6 +6,8 @@ permalink: /kb/256/Q256906/
 
 ## Q256906: SNA Server Fails Unexpectedly with Access Violation in S1PROLU6
 
+{% raw %}
+
 	Article: Q256906
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -106,3 +108,5 @@ permalink: /kb/256/Q256906/
 	
 	=============================================================================
 	
+
+{% endraw %}

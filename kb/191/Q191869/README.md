@@ -6,6 +6,8 @@ permalink: /kb/191/Q191869/
 
 ## Q191869: BUG: RELEASE MENUS _MSYSMENU Releases System Menu
 
+{% raw %}
+
 	Article: Q191869
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -69,3 +71,5 @@ permalink: /kb/191/Q191869/
 	
 	=============================================================================
 	
+
+{% endraw %}

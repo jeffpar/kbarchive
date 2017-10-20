@@ -6,6 +6,8 @@ permalink: /kb/184/Q184205/
 
 ## Q184205: XADM: Information Store Fails to Start with Error 2186
 
+{% raw %}
+
 	Article: Q184205
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -132,3 +134,5 @@ permalink: /kb/184/Q184205/
 	
 	=============================================================================
 	
+
+{% endraw %}

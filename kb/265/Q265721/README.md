@@ -6,6 +6,8 @@ permalink: /kb/265/Q265721/
 
 ## Q265721: DOC: /CEConfig Switch Builds Incorrect Platform
 
+{% raw %}
+
 	Article: Q265721
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/265/Q265721/
 	
 	=============================================================================
 	
+
+{% endraw %}

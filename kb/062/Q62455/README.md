@@ -6,6 +6,8 @@ permalink: /kb/062/Q62455/
 
 ## Q62455: Invalid Entries in Symbol Table Using F1 in QB.EXE, QBX.EXE
 
+{% raw %}
+
 	Article: Q62455
 	Product(s): See article
 	Version(s): 4.50
@@ -57,3 +59,5 @@ permalink: /kb/062/Q62455/
 	    | D:\TEST.BAS -----------------------
 	    | variable of type: STRING
 	    | variable of type: SINGLE precision
+
+{% endraw %}

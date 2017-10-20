@@ -6,6 +6,8 @@ permalink: /kb/134/Q134773/
 
 ## Q134773: Printer Name Does Not Appear During Drag-and-Drop Printing
 
+{% raw %}
+
 	Article: Q134773
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/134/Q134773/
 	
 	=============================================================================
 	
+
+{% endraw %}

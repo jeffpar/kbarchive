@@ -6,6 +6,8 @@ permalink: /kb/198/Q198102/
 
 ## Q198102: Combat Flight Simulator: Terrain and 3D Objects Flicker
 
+{% raw %}
+
 	Article: Q198102
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/198/Q198102/
 	
 	=============================================================================
 	
+
+{% endraw %}

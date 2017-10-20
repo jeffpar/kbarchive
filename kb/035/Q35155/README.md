@@ -6,6 +6,8 @@ permalink: /kb/035/Q35155/
 
 ## Q35155: L2001 Fixups without Data
 
+{% raw %}
+
 	Article: Q35155
 	Product(s): See article
 	Version(s): 3.65 5.01.21 | 5.01.21
@@ -42,3 +44,5 @@ permalink: /kb/035/Q35155/
 	Another example is when you include the same STRUC definitions in both
 	absolute and non-absolute segments, so that the STRUC definitions
 	contain relocatable addresses.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120513/
 
 ## Q120513: PRB: Output Parameters Not Received From Stored Procedure
 
+{% raw %}
+
 	Article: Q120513
 	Product(s): Microsoft C Compiler
 	Version(s): 1.50 1.51 1.52
@@ -163,3 +165,5 @@ permalink: /kb/120/Q120513/
 	
 	=============================================================================
 	
+
+{% endraw %}

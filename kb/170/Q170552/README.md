@@ -6,6 +6,8 @@ permalink: /kb/170/Q170552/
 
 ## Q170552: HOWTO: Establish a One-to-Many Relation with a DBCombo
 
+{% raw %}
+
 	Article: Q170552
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/170/Q170552/
 	
 	=============================================================================
 	
+
+{% endraw %}

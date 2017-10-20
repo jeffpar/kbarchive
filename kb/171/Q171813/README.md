@@ -6,6 +6,8 @@ permalink: /kb/171/Q171813/
 
 ## Q171813: FIX: IPF in MSO97RT.DLL When Starting Visual Basic
 
+{% raw %}
+
 	Article: Q171813
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -77,3 +79,5 @@ permalink: /kb/171/Q171813/
 	
 	=============================================================================
 	
+
+{% endraw %}

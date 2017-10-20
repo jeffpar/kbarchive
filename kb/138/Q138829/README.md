@@ -6,6 +6,8 @@ permalink: /kb/138/Q138829/
 
 ## Q138829: SMS Incorrectly Identifies Windows Clients as MS-DOS Clients
 
+{% raw %}
+
 	Article: Q138829
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -85,3 +87,5 @@ permalink: /kb/138/Q138829/
 	
 	=============================================================================
 	
+
+{% endraw %}

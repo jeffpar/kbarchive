@@ -6,6 +6,8 @@ permalink: /kb/095/Q95955/
 
 ## Q95955: Configuring MSCDEX for Multiple CD-ROM Drives
 
+{% raw %}
+
 	Article: Q95955
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/095/Q95955/
 	
 	=============================================================================
 	
+
+{% endraw %}

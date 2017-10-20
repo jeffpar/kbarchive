@@ -6,6 +6,8 @@ permalink: /kb/130/Q130997/
 
 ## Q130997: How to Use the Caption Fields of a Table in a Form
 
+{% raw %}
+
 	Article: Q130997
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -167,3 +169,5 @@ permalink: /kb/130/Q130997/
 	
 	=============================================================================
 	
+
+{% endraw %}

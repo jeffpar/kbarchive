@@ -6,6 +6,8 @@ permalink: /kb/200/Q200126/
 
 ## Q200126: HOWTO: Determining the Domain of A User Through ADSI
 
+{% raw %}
+
 	Article: Q200126
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:2.0,2.5,4.0
@@ -150,3 +152,5 @@ permalink: /kb/200/Q200126/
 	
 	=============================================================================
 	
+
+{% endraw %}

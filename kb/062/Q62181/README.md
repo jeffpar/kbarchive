@@ -6,6 +6,8 @@ permalink: /kb/062/Q62181/
 
 ## Q62181: Hardware Compatibility Questions with Windows 3.0
 
+{% raw %}
+
 	Article: Q62181
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -48,3 +50,5 @@ permalink: /kb/062/Q62181/
 	
 	=============================================================================
 	
+
+{% endraw %}

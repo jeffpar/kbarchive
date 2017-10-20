@@ -6,6 +6,8 @@ permalink: /kb/121/Q121913/
 
 ## Q121913: Err Msg: Error 59: An Unexpected Network Error Has Occurred
 
+{% raw %}
+
 	Article: Q121913
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11; WINDOWS:3.11
@@ -67,3 +69,5 @@ permalink: /kb/121/Q121913/
 	
 	=============================================================================
 	
+
+{% endraw %}

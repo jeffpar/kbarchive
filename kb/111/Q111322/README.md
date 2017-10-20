@@ -6,6 +6,8 @@ permalink: /kb/111/Q111322/
 
 ## Q111322: INFO: Code Page Information Stored in Byte 29 of Table Header
 
+{% raw %}
+
 	Article: Q111322
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; MS-DOS:2.5a,2.5b; WINDOWS:2.5a,2.5b,3.0,5.0,6.0
@@ -51,3 +53,5 @@ permalink: /kb/111/Q111322/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152614/
 
 ## Q152614: XADM: Removing Objects Whose Tombstone Expired Before DirRep
 
+{% raw %}
+
 	Article: Q152614
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -90,3 +92,5 @@ permalink: /kb/152/Q152614/
 	
 	=============================================================================
 	
+
+{% endraw %}

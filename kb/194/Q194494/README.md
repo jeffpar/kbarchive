@@ -6,6 +6,8 @@ permalink: /kb/194/Q194494/
 
 ## Q194494: WD97: Password Protection Lost When Saving as Previous Versions
 
+{% raw %}
+
 	Article: Q194494
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -71,3 +73,5 @@ permalink: /kb/194/Q194494/
 	
 	=============================================================================
 	
+
+{% endraw %}

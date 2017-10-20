@@ -6,6 +6,8 @@ permalink: /kb/265/Q265887/
 
 ## Q265887: SMS 1.2 Remote Control Agent May Not Start with NIC Teaming
 
+{% raw %}
+
 	Article: Q265887
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -84,3 +86,5 @@ permalink: /kb/265/Q265887/
 	
 	=============================================================================
 	
+
+{% endraw %}

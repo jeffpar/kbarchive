@@ -6,6 +6,8 @@ permalink: /kb/046/Q46380/
 
 ## Q46380: -P1 One-Pass Assembly Can Result in A2006 Phase Error
 
+{% raw %}
+
 	Article: Q46380
 	Product(s): See article
 	Version(s): 2.01
@@ -86,3 +88,5 @@ permalink: /kb/046/Q46380/
 	QuickAssembler or MASM since the source of phase errors is usually due
 	to the assembler making an incorrect assumption about the type of a
 	variable that is referred to before it is defined.
+
+{% endraw %}

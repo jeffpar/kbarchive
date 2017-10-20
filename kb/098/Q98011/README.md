@@ -6,6 +6,8 @@ permalink: /kb/098/Q98011/
 
 ## Q98011: PC Forms: Mail Options Reset After Using Custom Form
 
+{% raw %}
+
 	Article: Q98011
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -49,3 +51,5 @@ permalink: /kb/098/Q98011/
 	
 	=============================================================================
 	
+
+{% endraw %}

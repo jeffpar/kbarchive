@@ -6,6 +6,8 @@ permalink: /kb/141/Q141211/
 
 ## Q141211: Memory Leak with Multithreaded Winsock Programs
 
+{% raw %}
+
 	Article: Q141211
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/141/Q141211/
 	
 	=============================================================================
 	
+
+{% endraw %}

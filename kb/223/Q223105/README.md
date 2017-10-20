@@ -6,6 +6,8 @@ permalink: /kb/223/Q223105/
 
 ## Q223105: FIX: DllUnregisterServer Fails on msvbvm60.dll w/Error H80029C4A
 
+{% raw %}
+
 	Article: Q223105
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -76,3 +78,5 @@ permalink: /kb/223/Q223105/
 	
 	=============================================================================
 	
+
+{% endraw %}

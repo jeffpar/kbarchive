@@ -6,6 +6,8 @@ permalink: /kb/214/Q214684/
 
 ## Q214684: XADM: Information Store Crashes Due to Database Corruption
 
+{% raw %}
+
 	Article: Q214684
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -90,3 +92,5 @@ permalink: /kb/214/Q214684/
 	
 	=============================================================================
 	
+
+{% endraw %}

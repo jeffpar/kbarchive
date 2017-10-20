@@ -6,6 +6,8 @@ permalink: /kb/185/Q185653/
 
 ## Q185653: FIX: MAPIMessage.Object in Watch Window Causes Program Error
 
+{% raw %}
+
 	Article: Q185653
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -76,3 +78,5 @@ permalink: /kb/185/Q185653/
 	
 	=============================================================================
 	
+
+{% endraw %}

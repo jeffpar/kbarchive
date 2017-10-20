@@ -6,6 +6,8 @@ permalink: /kb/162/Q162000/
 
 ## Q162000: BUG: Visual FoxPro/Mac Setup Wizard Cannot Copy Source Files
 
+{% raw %}
+
 	Article: Q162000
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -122,3 +124,5 @@ permalink: /kb/162/Q162000/
 	
 	=============================================================================
 	
+
+{% endraw %}

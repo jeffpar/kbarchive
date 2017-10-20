@@ -6,6 +6,8 @@ permalink: /kb/096/Q96336/
 
 ## Q96336: &quot;Call to Undefined Dynalink&quot; Errors
 
+{% raw %}
+
 	Article: Q96336
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1993 edition,1994 edition,1995 edition,3.1,3.11
@@ -84,3 +86,5 @@ permalink: /kb/096/Q96336/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110472/
 
 ## Q110472: INF: How to Differentiate Multiple SQLAllocEnv() Calls
 
+{% raw %}
+
 	Article: Q110472
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/110/Q110472/
 	
 	=============================================================================
 	
+
+{% endraw %}

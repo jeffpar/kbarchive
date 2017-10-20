@@ -6,6 +6,8 @@ permalink: /kb/162/Q162522/
 
 ## Q162522: ADT/ODE: Distributing a Split Database Application with ODE/ADT
 
+{% raw %}
+
 	Article: Q162522
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:7.0
@@ -148,3 +150,5 @@ permalink: /kb/162/Q162522/
 	
 	=============================================================================
 	
+
+{% endraw %}

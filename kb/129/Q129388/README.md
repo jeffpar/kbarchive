@@ -6,6 +6,8 @@ permalink: /kb/129/Q129388/
 
 ## Q129388: INFO: How Null String Pointers Behave in Visual Basic 4.0
 
+{% raw %}
+
 	Article: Q129388
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -129,3 +131,5 @@ permalink: /kb/129/Q129388/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137950/
 
 ## Q137950: BUG: Valid Event Doesn't Fire in Control Array of Text Boxes
 
+{% raw %}
+
 	Article: Q137950
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -124,3 +126,5 @@ permalink: /kb/137/Q137950/
 	
 	=============================================================================
 	
+
+{% endraw %}

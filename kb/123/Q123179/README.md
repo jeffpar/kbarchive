@@ -6,6 +6,8 @@ permalink: /kb/123/Q123179/
 
 ## Q123179: MDI DB2 Gateway Reports Open Server Error
 
+{% raw %}
+
 	Article: Q123179
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0; winnt:4.2x
@@ -64,3 +66,5 @@ permalink: /kb/123/Q123179/
 	
 	=============================================================================
 	
+
+{% endraw %}

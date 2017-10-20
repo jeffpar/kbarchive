@@ -6,6 +6,8 @@ permalink: /kb/147/Q147837/
 
 ## Q147837: FIX: &quot;File not Found&quot; Error Message During Check In
 
+{% raw %}
+
 	Article: Q147837
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0
@@ -85,3 +87,5 @@ permalink: /kb/147/Q147837/
 	
 	=============================================================================
 	
+
+{% endraw %}

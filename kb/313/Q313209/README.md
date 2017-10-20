@@ -6,6 +6,8 @@ permalink: /kb/313/Q313209/
 
 ## Q313209: SMS: Copylog.tcf File Contains Invalid Sites After Site Removal
 
+{% raw %}
+
 	Article: Q313209
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -146,3 +148,5 @@ permalink: /kb/313/Q313209/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120413/
 
 ## Q120413: Microsoft Mail for PC Networks Version 3.2a Update
 
+{% raw %}
+
 	Article: Q120413
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2a
@@ -100,3 +102,5 @@ permalink: /kb/120/Q120413/
 	
 	=============================================================================
 	
+
+{% endraw %}

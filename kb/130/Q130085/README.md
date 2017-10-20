@@ -6,6 +6,8 @@ permalink: /kb/130/Q130085/
 
 ## Q130085: Details of the .VCX File Architecture
 
+{% raw %}
+
 	Article: Q130085
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -186,3 +188,5 @@ permalink: /kb/130/Q130085/
 	
 	=============================================================================
 	
+
+{% endraw %}

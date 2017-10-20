@@ -6,6 +6,8 @@ permalink: /kb/158/Q158653/
 
 ## Q158653: Mac Encarta 97: About Encarta Not Available From Some Screens
 
+{% raw %}
+
 	Article: Q158653
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -38,3 +40,5 @@ permalink: /kb/158/Q158653/
 	
 	=============================================================================
 	
+
+{% endraw %}

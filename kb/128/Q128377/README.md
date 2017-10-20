@@ -6,6 +6,8 @@ permalink: /kb/128/Q128377/
 
 ## Q128377: FoxPro Information Stored in the Registry or REG.DAT
 
+{% raw %}
+
 	Article: Q128377
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/128/Q128377/
 	
 	=============================================================================
 	
+
+{% endraw %}

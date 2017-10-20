@@ -6,6 +6,8 @@ permalink: /kb/124/Q124044/
 
 ## Q124044: PC Adm: Replicating Postoffice Address List Groups Between POs
 
+{% raw %}
+
 	Article: Q124044
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -128,3 +130,5 @@ permalink: /kb/124/Q124044/
 	
 	=============================================================================
 	
+
+{% endraw %}

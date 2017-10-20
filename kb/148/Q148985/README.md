@@ -6,6 +6,8 @@ permalink: /kb/148/Q148985/
 
 ## Q148985: XFOR: Frequently Asked Questions for IMC
 
+{% raw %}
+
 	Article: Q148985
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -111,3 +113,5 @@ permalink: /kb/148/Q148985/
 	
 	=============================================================================
 	
+
+{% endraw %}

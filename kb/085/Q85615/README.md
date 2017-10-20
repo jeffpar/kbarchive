@@ -6,6 +6,8 @@ permalink: /kb/085/Q85615/
 
 ## Q85615: FAX: How Attachments Are Handled
 
+{% raw %}
+
 	Article: Q85615
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/085/Q85615/
 	
 	=============================================================================
 	
+
+{% endraw %}

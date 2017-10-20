@@ -6,6 +6,8 @@ permalink: /kb/265/Q265847/
 
 ## Q265847: Err Msg: The Page Cannot Be Displayed . . .
 
+{% raw %}
+
 	Article: Q265847
 	Product(s): Internet Information Server
 	Version(s): 2.0,5.0
@@ -100,3 +102,5 @@ permalink: /kb/265/Q265847/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/080/Q80131/
 
 ## Q80131: DOCERR: MASM 6.0 Programmer's Guide Errors: Chapters 1-6
 
+{% raw %}
+
 	Article: Q80131
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -220,3 +222,5 @@ permalink: /kb/080/Q80131/
 	
 	=============================================================================
 	
+
+{% endraw %}

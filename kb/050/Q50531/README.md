@@ -6,6 +6,8 @@ permalink: /kb/050/Q50531/
 
 ## Q50531: Mac DOS:Err Msg: &quot;You Need to Load AppleTalk&quot; w/ AppleShare PC
 
+{% raw %}
+
 	Article: Q50531
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.37,2.0,3.0
@@ -53,3 +55,5 @@ permalink: /kb/050/Q50531/
 	
 	=============================================================================
 	
+
+{% endraw %}

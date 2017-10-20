@@ -6,6 +6,8 @@ permalink: /kb/185/Q185240/
 
 ## Q185240: HOWTO: Updating Embedded Excel Sheet When Linked Sheet Changed
 
+{% raw %}
+
 	Article: Q185240
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -100,3 +102,5 @@ permalink: /kb/185/Q185240/
 	
 	=============================================================================
 	
+
+{% endraw %}

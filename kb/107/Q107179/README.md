@@ -6,6 +6,8 @@ permalink: /kb/107/Q107179/
 
 ## Q107179: Encarta 1994: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q107179
 	Product(s): Microsoft Home Kids Products
 	Version(s): 
@@ -240,3 +242,5 @@ permalink: /kb/107/Q107179/
 	
 	=============================================================================
 	
+
+{% endraw %}

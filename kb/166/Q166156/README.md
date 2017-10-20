@@ -6,6 +6,8 @@ permalink: /kb/166/Q166156/
 
 ## Q166156: XFOR: How to Change the Migration PAB Message
 
+{% raw %}
+
 	Article: Q166156
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/166/Q166156/
 	
 	=============================================================================
 	
+
+{% endraw %}

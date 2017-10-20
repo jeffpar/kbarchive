@@ -6,6 +6,8 @@ permalink: /kb/269/Q269597/
 
 ## Q269597: PRB: Limits of ADO Client Cursor &amp; Data-bound Controls w/DB2OLDB
 
+{% raw %}
+
 	Article: Q269597
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3
@@ -93,3 +95,5 @@ permalink: /kb/269/Q269597/
 	
 	=============================================================================
 	
+
+{% endraw %}

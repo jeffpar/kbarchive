@@ -6,6 +6,8 @@ permalink: /kb/274/Q274910/
 
 ## Q274910: CFS2: Corsair Maximum Airspeed Is Slower Than Real Aircraft
 
+{% raw %}
+
 	Article: Q274910
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/274/Q274910/
 	
 	=============================================================================
 	
+
+{% endraw %}

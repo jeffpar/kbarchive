@@ -6,6 +6,8 @@ permalink: /kb/160/Q160184/
 
 ## Q160184: XADM: Header.exe Must Run on Exchange Server Computer
 
+{% raw %}
+
 	Article: Q160184
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -44,3 +46,5 @@ permalink: /kb/160/Q160184/
 	
 	=============================================================================
 	
+
+{% endraw %}

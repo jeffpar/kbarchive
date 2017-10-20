@@ -6,6 +6,8 @@ permalink: /kb/245/Q245714/
 
 ## Q245714: PRB: Inserting &gt; than 250K of Data in a SQL 7 Image Field Fails
 
+{% raw %}
+
 	Article: Q245714
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,6.0
@@ -216,3 +218,5 @@ permalink: /kb/245/Q245714/
 	
 	=============================================================================
 	
+
+{% endraw %}

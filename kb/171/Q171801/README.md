@@ -6,6 +6,8 @@ permalink: /kb/171/Q171801/
 
 ## Q171801: FIX: Bound Controls Built in VB5 Do Not Work in VB4 IDE
 
+{% raw %}
+
 	Article: Q171801
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -63,3 +65,5 @@ permalink: /kb/171/Q171801/
 	
 	=============================================================================
 	
+
+{% endraw %}

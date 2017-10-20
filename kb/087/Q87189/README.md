@@ -6,6 +6,8 @@ permalink: /kb/087/Q87189/
 
 ## Q87189: PROFS: Using -P0xx and -V20 Options on Command Line
 
+{% raw %}
+
 	Article: Q87189
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -54,3 +56,5 @@ permalink: /kb/087/Q87189/
 	
 	=============================================================================
 	
+
+{% endraw %}

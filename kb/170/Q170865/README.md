@@ -6,6 +6,8 @@ permalink: /kb/170/Q170865/
 
 ## Q170865: ErrMsg: Reentrant Call to Interupt Window on Netscape 2.0 (UNIX)
 
+{% raw %}
+
 	Article: Q170865
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,3.0
@@ -53,3 +55,5 @@ permalink: /kb/170/Q170865/
 	
 	=============================================================================
 	
+
+{% endraw %}

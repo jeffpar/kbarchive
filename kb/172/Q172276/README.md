@@ -6,6 +6,8 @@ permalink: /kb/172/Q172276/
 
 ## Q172276: FIX: CToolTipCtrl Not Displaying Text After VS SP1, SP2 Install
 
+{% raw %}
+
 	Article: Q172276
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0sp1,5.0sp2
@@ -136,3 +138,5 @@ permalink: /kb/172/Q172276/
 	
 	=============================================================================
 	
+
+{% endraw %}

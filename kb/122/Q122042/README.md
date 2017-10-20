@@ -6,6 +6,8 @@ permalink: /kb/122/Q122042/
 
 ## Q122042: BUG: Fatal Error C1001 Using /Zg with Large C++ Header Files
 
+{% raw %}
+
 	Article: Q122042
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,2.0,4.0,4.1,4.2,5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/122/Q122042/
 	
 	=============================================================================
 	
+
+{% endraw %}

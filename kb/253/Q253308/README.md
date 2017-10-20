@@ -6,6 +6,8 @@ permalink: /kb/253/Q253308/
 
 ## Q253308: BUG: MFT_RIGHTORDER Doesn't Work for Nonresource Menu
 
+{% raw %}
+
 	Article: Q253308
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -172,3 +174,5 @@ permalink: /kb/253/Q253308/
 	
 	=============================================================================
 	
+
+{% endraw %}

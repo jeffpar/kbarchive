@@ -6,6 +6,8 @@ permalink: /kb/059/Q59256/
 
 ## Q59256: Incorrect Version Numbers Cause Tagged Sections to Be Ignored
 
+{% raw %}
+
 	Article: Q59256
 	Product(s): See article
 	Version(s): 1.00 1.02 | 1.00 1.02
@@ -54,3 +56,5 @@ permalink: /kb/059/Q59256/
 	
 	Note: For the PWB, the above examples would change to PWB-xxxx instead
 	of M-xxx.
+
+{% endraw %}

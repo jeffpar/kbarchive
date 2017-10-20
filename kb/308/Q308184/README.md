@@ -6,6 +6,8 @@ permalink: /kb/308/Q308184/
 
 ## Q308184: IIS 5.1: Reboot of WinXP Pro Shuts Down Computer Without Warning
 
+{% raw %}
+
 	Article: Q308184
 	Product(s): Internet Information Server
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/308/Q308184/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246302/
 
 ## Q246302: XCON: MTA Stops When Receiving Message from Foreign MTA
 
+{% raw %}
+
 	Article: Q246302
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -79,3 +81,5 @@ permalink: /kb/246/Q246302/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131914/
 
 ## Q131914: PC Gen: Using the DEC Redirector Slows Mail
 
+{% raw %}
+
 	Article: Q131914
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -101,3 +103,5 @@ permalink: /kb/131/Q131914/
 	
 	=============================================================================
 	
+
+{% endraw %}

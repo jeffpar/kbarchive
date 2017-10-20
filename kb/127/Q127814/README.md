@@ -6,6 +6,8 @@ permalink: /kb/127/Q127814/
 
 ## Q127814: Printing to WinNT Queue Attached to NetWare Queue Hangs NetWare
 
+{% raw %}
+
 	Article: Q127814
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/127/Q127814/
 	
 	=============================================================================
 	
+
+{% endraw %}

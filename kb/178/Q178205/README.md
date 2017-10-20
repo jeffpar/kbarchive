@@ -6,6 +6,8 @@ permalink: /kb/178/Q178205/
 
 ## Q178205: Connecting to a Server is Slow over RAS Using LMHOSTS File
 
+{% raw %}
+
 	Article: Q178205
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -81,3 +83,5 @@ permalink: /kb/178/Q178205/
 	
 	=============================================================================
 	
+
+{% endraw %}

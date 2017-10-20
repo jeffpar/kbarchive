@@ -6,6 +6,8 @@ permalink: /kb/224/Q224165/
 
 ## Q224165: MSB Animals: License and Certificate Printouts Are Not Centered
 
+{% raw %}
+
 	Article: Q224165
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/224/Q224165/
 	
 	=============================================================================
 	
+
+{% endraw %}

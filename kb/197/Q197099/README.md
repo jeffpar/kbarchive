@@ -6,6 +6,8 @@ permalink: /kb/197/Q197099/
 
 ## Q197099: Determining Which Service Pack Is Installed in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q197099
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -95,3 +97,5 @@ permalink: /kb/197/Q197099/
 	
 	=============================================================================
 	
+
+{% endraw %}

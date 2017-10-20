@@ -6,6 +6,8 @@ permalink: /kb/057/Q57363/
 
 ## Q57363: How to Pass a Variable Length String from BASIC to MASM
 
+{% raw %}
+
 	Article: Q57363
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -51,3 +53,5 @@ permalink: /kb/057/Q57363/
 	                    ret
 	printmessage        endp
 	                    end
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/065/Q65445/
 
 ## Q65445: Printing Directory Listings from Windows File Manager
 
+{% raw %}
+
 	Article: Q65445
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -125,3 +127,5 @@ permalink: /kb/065/Q65445/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137299/
 
 ## Q137299: System Font Size Mismatch in Windows 95 Remote Control
 
+{% raw %}
+
 	Article: Q137299
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:95; winnt:1.1
@@ -47,3 +49,5 @@ permalink: /kb/137/Q137299/
 	
 	=============================================================================
 	
+
+{% endraw %}

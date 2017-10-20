@@ -6,6 +6,8 @@ permalink: /kb/073/Q73414/
 
 ## Q73414: Requirements to Run SETUP /F from 3.5- to 5.25-Inch Drives
 
+{% raw %}
+
 	Article: Q73414
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -56,3 +58,5 @@ permalink: /kb/073/Q73414/
 	
 	=============================================================================
 	
+
+{% endraw %}

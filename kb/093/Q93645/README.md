@@ -6,6 +6,8 @@ permalink: /kb/093/Q93645/
 
 ## Q93645: Windows Help Internal Variables
 
+{% raw %}
+
 	Article: Q93645
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -86,3 +88,5 @@ permalink: /kb/093/Q93645/
 	
 	=============================================================================
 	
+
+{% endraw %}

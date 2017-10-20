@@ -6,6 +6,8 @@ permalink: /kb/069/Q69297/
 
 ## Q69297: Windows Err Msgs: Paintbrush Message List
 
+{% raw %}
+
 	Article: Q69297
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -141,3 +143,5 @@ permalink: /kb/069/Q69297/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85939/
 
 ## Q85939: HP LaserJet II Is Limited to 32 Permanent Soft Fonts
 
+{% raw %}
+
 	Article: Q85939
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -44,3 +46,5 @@ permalink: /kb/085/Q85939/
 	
 	=============================================================================
 	
+
+{% endraw %}

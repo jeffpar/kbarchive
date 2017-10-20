@@ -6,6 +6,8 @@ permalink: /kb/220/Q220969/
 
 ## Q220969: INFO: Description of Files in the DATA Directory
 
+{% raw %}
+
 	Article: Q220969
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/220/Q220969/
 	
 	=============================================================================
 	
+
+{% endraw %}

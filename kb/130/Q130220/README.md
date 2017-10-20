@@ -6,6 +6,8 @@ permalink: /kb/130/Q130220/
 
 ## Q130220: DHCP Client Renew Fails after Deleting Active Lease
 
+{% raw %}
+
 	Article: Q130220
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11a,3.5
@@ -62,3 +64,5 @@ permalink: /kb/130/Q130220/
 	
 	=============================================================================
 	
+
+{% endraw %}

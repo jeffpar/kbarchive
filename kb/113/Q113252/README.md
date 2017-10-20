@@ -6,6 +6,8 @@ permalink: /kb/113/Q113252/
 
 ## Q113252: BUG: Viewer Setup Causes Error in SYMTAB11.C
 
+{% raw %}
+
 	Article: Q113252
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0
@@ -91,3 +93,5 @@ permalink: /kb/113/Q113252/
 	
 	=============================================================================
 	
+
+{% endraw %}

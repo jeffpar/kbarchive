@@ -6,6 +6,8 @@ permalink: /kb/279/Q279635/
 
 ## Q279635: CTL on Destination Node Does Not Work after Replicatication
 
+{% raw %}
+
 	Article: Q279635
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -77,3 +79,5 @@ permalink: /kb/279/Q279635/
 	
 	=============================================================================
 	
+
+{% endraw %}

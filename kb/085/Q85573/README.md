@@ -6,6 +6,8 @@ permalink: /kb/085/Q85573/
 
 ## Q85573: Pen-Compatible DIP Switch Settings for Wacom 510C Tablet
 
+{% raw %}
+
 	Article: Q85573
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -44,3 +46,5 @@ permalink: /kb/085/Q85573/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174337/
 
 ## Q174337: How to Install an AppleTalk Printer in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q174337
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -101,3 +103,5 @@ permalink: /kb/174/Q174337/
 	
 	=============================================================================
 	
+
+{% endraw %}

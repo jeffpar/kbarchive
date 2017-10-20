@@ -6,6 +6,8 @@ permalink: /kb/093/Q93165/
 
 ## Q93165: Intel EtherExpress Card Conflicts with Scanning Hardware
 
+{% raw %}
+
 	Article: Q93165
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/093/Q93165/
 	
 	=============================================================================
 	
+
+{% endraw %}

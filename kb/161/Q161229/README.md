@@ -6,6 +6,8 @@ permalink: /kb/161/Q161229/
 
 ## Q161229: Resource Leak in Eicon V3R3 X.25 Link Service
 
+{% raw %}
+
 	Article: Q161229
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,3.0
@@ -65,3 +67,5 @@ permalink: /kb/161/Q161229/
 	
 	=============================================================================
 	
+
+{% endraw %}

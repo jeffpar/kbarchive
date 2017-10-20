@@ -6,6 +6,8 @@ permalink: /kb/126/Q126868/
 
 ## Q126868: error with how to setup event logging
 
+{% raw %}
+
 	Article: Q126868
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1
@@ -59,3 +61,5 @@ permalink: /kb/126/Q126868/
 	
 	=============================================================================
 	
+
+{% endraw %}

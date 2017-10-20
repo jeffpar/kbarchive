@@ -6,6 +6,8 @@ permalink: /kb/080/Q80020/
 
 ## Q80020: Mac Wkst: System 7.0 Custom Icons Not Supported for Enclosures
 
+{% raw %}
+
 	Article: Q80020
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -41,3 +43,5 @@ permalink: /kb/080/Q80020/
 	
 	=============================================================================
 	
+
+{% endraw %}

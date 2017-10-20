@@ -6,6 +6,8 @@ permalink: /kb/134/Q134502/
 
 ## Q134502: Cannot Hear Some MIDI Files with Tandy Sensation Sound Card
 
+{% raw %}
+
 	Article: Q134502
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/134/Q134502/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137064/
 
 ## Q137064: Unable to Read Error 52225 During Windows NT Setup
 
+{% raw %}
+
 	Article: Q137064
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -72,3 +74,5 @@ permalink: /kb/137/Q137064/
 	
 	=============================================================================
 	
+
+{% endraw %}

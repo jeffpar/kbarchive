@@ -6,6 +6,8 @@ permalink: /kb/127/Q127945/
 
 ## Q127945: Printers Supported by PSMON.DLL
 
+{% raw %}
+
 	Article: Q127945
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/127/Q127945/
 	
 	=============================================================================
 	
+
+{% endraw %}

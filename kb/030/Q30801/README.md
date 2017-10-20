@@ -6,6 +6,8 @@ permalink: /kb/030/Q30801/
 
 ## Q30801: MASM 5.10 OS2.DOC: OS/2 Call Summary - Overview
 
+{% raw %}
+
 	Article: Q30801
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -40,3 +42,5 @@ permalink: /kb/030/Q30801/
 	of the OS/2 systems calls. The calls are described in detail in
 	manuals published separately by Microsoft and in some third-party
 	books and magazine articles.
+
+{% endraw %}

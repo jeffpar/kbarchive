@@ -6,6 +6,8 @@ permalink: /kb/128/Q128756/
 
 ## Q128756: Command Line Switches for the XCOPY Command
 
+{% raw %}
+
 	Article: Q128756
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -81,3 +83,5 @@ permalink: /kb/128/Q128756/
 	
 	=============================================================================
 	
+
+{% endraw %}

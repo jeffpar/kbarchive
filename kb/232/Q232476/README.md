@@ -6,6 +6,8 @@ permalink: /kb/232/Q232476/
 
 ## Q232476: Terminal Server Connections and Logon Limited by MaxWorkItems
 
+{% raw %}
+
 	Article: Q232476
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4
@@ -246,3 +248,5 @@ permalink: /kb/232/Q232476/
 	
 	=============================================================================
 	
+
+{% endraw %}

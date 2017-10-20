@@ -6,6 +6,8 @@ permalink: /kb/189/Q189061/
 
 ## Q189061: Repeated Regsavekey/Regrestorekey Actions Corrupt Registry Hive
 
+{% raw %}
+
 	Article: Q189061
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1,3.5,3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/189/Q189061/
 	
 	=============================================================================
 	
+
+{% endraw %}

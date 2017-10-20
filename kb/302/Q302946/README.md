@@ -6,6 +6,8 @@ permalink: /kb/302/Q302946/
 
 ## Q302946: Train Sim: Err Msg Cmd Create Mpeg32 Task_cmd Was Not Successful
 
+{% raw %}
+
 	Article: Q302946
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -142,3 +144,5 @@ permalink: /kb/302/Q302946/
 	
 	=============================================================================
 	
+
+{% endraw %}

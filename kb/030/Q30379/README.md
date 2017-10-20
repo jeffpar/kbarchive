@@ -6,6 +6,8 @@ permalink: /kb/030/Q30379/
 
 ## Q30379: FIX: Structure References Using '.' Cause Confusion
 
+{% raw %}
+
 	Article: Q30379
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -69,3 +71,5 @@ permalink: /kb/030/Q30379/
 	
 	=============================================================================
 	
+
+{% endraw %}

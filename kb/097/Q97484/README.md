@@ -6,6 +6,8 @@ permalink: /kb/097/Q97484/
 
 ## Q97484: WD97: Conditional Alphanumeric Merge May Yield Incorrect Results
 
+{% raw %}
+
 	Article: Q97484
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -124,3 +126,5 @@ permalink: /kb/097/Q97484/
 	
 	=============================================================================
 	
+
+{% endraw %}

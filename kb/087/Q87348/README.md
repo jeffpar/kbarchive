@@ -6,6 +6,8 @@ permalink: /kb/087/Q87348/
 
 ## Q87348: BUG: HPPCL Driver Reports SETABORTPROC Not Supported
 
+{% raw %}
+
 	Article: Q87348
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -50,3 +52,5 @@ permalink: /kb/087/Q87348/
 	
 	=============================================================================
 	
+
+{% endraw %}

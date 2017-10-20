@@ -6,6 +6,8 @@ permalink: /kb/191/Q191299/
 
 ## Q191299: SMS: PCMDOS Cannot Regain Control After Running a Package
 
+{% raw %}
+
 	Article: Q191299
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -50,3 +52,5 @@ permalink: /kb/191/Q191299/
 	
 	=============================================================================
 	
+
+{% endraw %}

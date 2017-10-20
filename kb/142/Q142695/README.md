@@ -6,6 +6,8 @@ permalink: /kb/142/Q142695/
 
 ## Q142695: SP3 Localized SERVER.HLP (On-line Books) Causes Dr. Watson Error
 
+{% raw %}
+
 	Article: Q142695
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 SP3
@@ -57,3 +59,5 @@ permalink: /kb/142/Q142695/
 	
 	=============================================================================
 	
+
+{% endraw %}

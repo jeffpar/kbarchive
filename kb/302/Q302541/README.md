@@ -6,6 +6,8 @@ permalink: /kb/302/Q302541/
 
 ## Q302541: In-Box Protector For E-mail
 
+{% raw %}
+
 	Article: Q302541
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/302/Q302541/
 	
 	=============================================================================
 	
+
+{% endraw %}

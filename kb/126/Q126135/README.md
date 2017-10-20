@@ -6,6 +6,8 @@ permalink: /kb/126/Q126135/
 
 ## Q126135: Problems Saving a Text File From Lotus 123 for Windows Running
 
+{% raw %}
+
 	Article: Q126135
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51 4.00
@@ -54,3 +56,5 @@ permalink: /kb/126/Q126135/
 	
 	=============================================================================
 	
+
+{% endraw %}

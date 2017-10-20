@@ -6,6 +6,8 @@ permalink: /kb/251/Q251997/
 
 ## Q251997: XCLN: Outlook Error Message: Word Is Unable to Open the Data Sou
 
+{% raw %}
+
 	Article: Q251997
 	Product(s): Microsoft Exchange
 	Version(s): 8.01,8.02,8.03,8.04,SR-1 Enterprise Update; WINDOWS:8.5
@@ -80,3 +82,5 @@ permalink: /kb/251/Q251997/
 	
 	=============================================================================
 	
+
+{% endraw %}

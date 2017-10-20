@@ -6,6 +6,8 @@ permalink: /kb/027/Q27993/
 
 ## Q27993: Creating a Quick Library (.QLB) from a LINK Library (.LIB)
 
+{% raw %}
+
 	Article: Q27993
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -93,3 +95,5 @@ permalink: /kb/027/Q27993/
 	output. Object .OBJ files cannot be input to BUILDLIB.EXE if you
 	invoke with the /L switch, unless the .OBJ files first are put into
 	.LIB files with the Microsoft LIB.EXE library manager utility.
+
+{% endraw %}

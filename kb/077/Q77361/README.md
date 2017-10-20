@@ -6,6 +6,8 @@ permalink: /kb/077/Q77361/
 
 ## Q77361: DOS &quot;IF EXIST Z:&#92;NUL&quot; Fails on HPFS Servers
 
+{% raw %}
+
 	Article: Q77361
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -70,3 +72,5 @@ permalink: /kb/077/Q77361/
 	
 	=============================================================================
 	
+
+{% endraw %}

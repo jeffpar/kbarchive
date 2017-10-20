@@ -6,6 +6,8 @@ permalink: /kb/314/Q314242/
 
 ## Q314242: Flight Simulator 2002: Disk Error or Error Writing to File
 
+{% raw %}
+
 	Article: Q314242
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -162,3 +164,5 @@ permalink: /kb/314/Q314242/
 	
 	=============================================================================
 	
+
+{% endraw %}

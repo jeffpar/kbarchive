@@ -6,6 +6,8 @@ permalink: /kb/259/Q259457/
 
 ## Q259457: Allegiance Error Message: Failed to Connect to the Lobby
 
+{% raw %}
+
 	Article: Q259457
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -90,3 +92,5 @@ permalink: /kb/259/Q259457/
 	
 	=============================================================================
 	
+
+{% endraw %}

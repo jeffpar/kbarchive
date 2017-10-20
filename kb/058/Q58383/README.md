@@ -6,6 +6,8 @@ permalink: /kb/058/Q58383/
 
 ## Q58383: Windows 3.0 SYSTEM.INI &#91;386Enh&#93; Section
 
+{% raw %}
+
 	Article: Q58383
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.0,3.0a
@@ -680,3 +682,5 @@ permalink: /kb/058/Q58383/
 	
 	=============================================================================
 	
+
+{% endraw %}

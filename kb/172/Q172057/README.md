@@ -6,6 +6,8 @@ permalink: /kb/172/Q172057/
 
 ## Q172057: FIX: CreateDragImage Method in ListView Uses Wrong Icon
 
+{% raw %}
+
 	Article: Q172057
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -104,3 +106,5 @@ permalink: /kb/172/Q172057/
 	
 	=============================================================================
 	
+
+{% endraw %}

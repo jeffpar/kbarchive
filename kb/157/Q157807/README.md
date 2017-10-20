@@ -6,6 +6,8 @@ permalink: /kb/157/Q157807/
 
 ## Q157807: Enabling AutoDial with Internet Explorer in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q157807
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -99,3 +101,5 @@ permalink: /kb/157/Q157807/
 	
 	=============================================================================
 	
+
+{% endraw %}

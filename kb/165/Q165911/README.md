@@ -6,6 +6,8 @@ permalink: /kb/165/Q165911/
 
 ## Q165911: SNA Manager Support for &quot;Assigned To&quot; Column for 3270 LUs
 
+{% raw %}
+
 	Article: Q165911
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/165/Q165911/
 	
 	=============================================================================
 	
+
+{% endraw %}

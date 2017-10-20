@@ -6,6 +6,8 @@ permalink: /kb/128/Q128436/
 
 ## Q128436: Setup and Boot Hangs on HP Vectra XU/XUC Computer
 
+{% raw %}
+
 	Article: Q128436
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -88,3 +90,5 @@ permalink: /kb/128/Q128436/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/027/Q27482/
 
 ## Q27482: &quot;String Space Corrupt&quot; Within Editor but Not in .EXE File
 
+{% raw %}
+
 	Article: Q27482
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -51,3 +53,5 @@ permalink: /kb/027/Q27482/
 	PRINT "Hello, the next statement fails on the second pass through"
 	D$ = CHR$(6)
 	CLOSE INFI
+
+{% endraw %}

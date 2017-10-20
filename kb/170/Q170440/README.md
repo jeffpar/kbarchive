@@ -6,6 +6,8 @@ permalink: /kb/170/Q170440/
 
 ## Q170440: SMS: Remote Controlling a Multihomed Windows NT Client Computer
 
+{% raw %}
+
 	Article: Q170440
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -290,3 +292,5 @@ permalink: /kb/170/Q170440/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110535/
 
 ## Q110535: PRB: Open Dialog Does Not Display Objects Without Extensions
 
+{% raw %}
+
 	Article: Q110535
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -67,3 +69,5 @@ permalink: /kb/110/Q110535/
 	
 	=============================================================================
 	
+
+{% endraw %}

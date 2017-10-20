@@ -6,6 +6,8 @@ permalink: /kb/158/Q158654/
 
 ## Q158654: Mac Encarta 97: Home Screen Blank with Low Memory on 68K
 
+{% raw %}
+
 	Article: Q158654
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition
@@ -101,3 +103,5 @@ permalink: /kb/158/Q158654/
 	
 	=============================================================================
 	
+
+{% endraw %}

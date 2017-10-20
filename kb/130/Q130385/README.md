@@ -6,6 +6,8 @@ permalink: /kb/130/Q130385/
 
 ## Q130385: PC Mac: Err Msg: Error 43: Unable to Create Working Directory
 
+{% raw %}
+
 	Article: Q130385
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -79,3 +81,5 @@ permalink: /kb/130/Q130385/
 	
 	=============================================================================
 	
+
+{% endraw %}

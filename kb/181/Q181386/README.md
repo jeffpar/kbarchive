@@ -6,6 +6,8 @@ permalink: /kb/181/Q181386/
 
 ## Q181386: Error Message Deleting File Using Setupapi.dll and INF Script
 
+{% raw %}
+
 	Article: Q181386
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/181/Q181386/
 	
 	=============================================================================
 	
+
+{% endraw %}

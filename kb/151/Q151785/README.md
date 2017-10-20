@@ -6,6 +6,8 @@ permalink: /kb/151/Q151785/
 
 ## Q151785: XCON: MTA Queue Blocked by NDR or Delivery Receipts
 
+{% raw %}
+
 	Article: Q151785
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -68,3 +70,5 @@ permalink: /kb/151/Q151785/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152925/
 
 ## Q152925: XADM: Schedule Requests not Updated in MS Mail Clients
 
+{% raw %}
+
 	Article: Q152925
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -117,3 +119,5 @@ permalink: /kb/152/Q152925/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/026/Q26588/
 
 ## Q26588: FPSEG() and FP_OFF() Require DOS.H to Avoid C2106 Error
 
+{% raw %}
+
 	Article: Q26588
 	Product(s): See article
 	Version(s): 5.00 5.10 6.00 6.00a | 5.00 5.10 6.00 6.00a
@@ -28,3 +30,5 @@ permalink: /kb/026/Q26588/
 	the C2106 error. For more information on the FP_SEG() and FP_OFF()
 	macros, consult the run-time library reference or online help that
 	shipped with your version of the compiler.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156681/
 
 ## Q156681: Remote Access Errors 657 and 659 with Dial-Up Networking
 
+{% raw %}
+
 	Article: Q156681
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/156/Q156681/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98264/
 
 ## Q98264: PC DB: 3.0a Mail Server Disk 1 &#91;3.5, 720K; 5.25, 1.2 MB&#93;
 
+{% raw %}
+
 	Article: Q98264
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0a
@@ -95,3 +97,5 @@ permalink: /kb/098/Q98264/
 	
 	=============================================================================
 	
+
+{% endraw %}

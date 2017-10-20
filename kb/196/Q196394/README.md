@@ -6,6 +6,8 @@ permalink: /kb/196/Q196394/
 
 ## Q196394: XADM: Store Randomly Stops with Dr.Watson and c0000005 Error
 
+{% raw %}
+
 	Article: Q196394
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -69,3 +71,5 @@ permalink: /kb/196/Q196394/
 	
 	=============================================================================
 	
+
+{% endraw %}

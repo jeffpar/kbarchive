@@ -6,6 +6,8 @@ permalink: /kb/102/Q102690/
 
 ## Q102690: FIX: No Include Dependencies for &#36;INCLUDE Metacommand Contents
 
+{% raw %}
+
 	Article: Q102690
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/102/Q102690/
 	
 	=============================================================================
 	
+
+{% endraw %}

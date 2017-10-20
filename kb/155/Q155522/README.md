@@ -6,6 +6,8 @@ permalink: /kb/155/Q155522/
 
 ## Q155522: XADM: SP2 or SP3 Server Upgrade Fails with 281 and 1171 Errors
 
+{% raw %}
+
 	Article: Q155522
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/155/Q155522/
 	
 	=============================================================================
 	
+
+{% endraw %}

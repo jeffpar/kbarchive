@@ -6,6 +6,8 @@ permalink: /kb/152/Q152878/
 
 ## Q152878: XADM: Wizard Sets Incorrect Concurrent Read Thread Range
 
+{% raw %}
+
 	Article: Q152878
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -46,3 +48,5 @@ permalink: /kb/152/Q152878/
 	
 	=============================================================================
 	
+
+{% endraw %}

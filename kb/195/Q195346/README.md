@@ -6,6 +6,8 @@ permalink: /kb/195/Q195346/
 
 ## Q195346: My Personal Tutor: System Info Button Is Not Visible
 
+{% raw %}
+
 	Article: Q195346
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/195/Q195346/
 	
 	=============================================================================
 	
+
+{% endraw %}

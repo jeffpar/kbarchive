@@ -6,6 +6,8 @@ permalink: /kb/138/Q138074/
 
 ## Q138074: Word 95 Step By Step Book: Corrections and Comments
 
+{% raw %}
+
 	Article: Q138074
 	Product(s): Microsoft Press
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/138/Q138074/
 	
 	=============================================================================
 	
+
+{% endraw %}

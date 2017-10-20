@@ -6,6 +6,8 @@ permalink: /kb/039/Q39974/
 
 ## Q39974: Error C2177: Constant Too Big
 
+{% raw %}
+
 	Article: Q39974
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -46,3 +48,5 @@ permalink: /kb/039/Q39974/
 	The code will produce the following output:
 	
 	   4294967295 is the maximum unsigned long.
+
+{% endraw %}

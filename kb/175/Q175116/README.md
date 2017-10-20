@@ -6,6 +6,8 @@ permalink: /kb/175/Q175116/
 
 ## Q175116: XADM: Error 0xc8000713 Occurred After a Restore Operation
 
+{% raw %}
+
 	Article: Q175116
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -74,3 +76,5 @@ permalink: /kb/175/Q175116/
 	
 	=============================================================================
 	
+
+{% endraw %}

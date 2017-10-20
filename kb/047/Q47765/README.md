@@ -6,6 +6,8 @@ permalink: /kb/047/Q47765/
 
 ## Q47765: CopyBox Function Doesn't Work Across Files
 
+{% raw %}
+
 	Article: Q47765
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -27,3 +29,5 @@ permalink: /kb/047/Q47765/
 	functions. A line can be read from the source file, trimmed to get the
 	proper portion of the line, and then written to the target file. This
 	procedure must be followed for each line of the box to copy.
+
+{% endraw %}

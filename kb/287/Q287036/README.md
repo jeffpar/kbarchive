@@ -6,6 +6,8 @@ permalink: /kb/287/Q287036/
 
 ## Q287036: Slow Connection of Outlook Client to Exchange Server When You Us
 
+{% raw %}
+
 	Article: Q287036
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -49,3 +51,5 @@ permalink: /kb/287/Q287036/
 	
 	=============================================================================
 	
+
+{% endraw %}

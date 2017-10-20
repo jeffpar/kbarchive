@@ -6,6 +6,8 @@ permalink: /kb/220/Q220816/
 
 ## Q220816: FILE: Application Wizard License Not Found
 
+{% raw %}
+
 	Article: Q220816
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/220/Q220816/
 	
 	=============================================================================
 	
+
+{% endraw %}

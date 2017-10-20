@@ -6,6 +6,8 @@ permalink: /kb/180/Q180709/
 
 ## Q180709: Code in Main Thread Still Executes After Issuing CTRL+C Command
 
+{% raw %}
+
 	Article: Q180709
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/180/Q180709/
 	
 	=============================================================================
 	
+
+{% endraw %}

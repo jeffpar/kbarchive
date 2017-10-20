@@ -6,6 +6,8 @@ permalink: /kb/106/Q106527/
 
 ## Q106527: FIX: Error in /FILE&#36;INFO/ in FLIB.FI and FLIB.FD
 
+{% raw %}
+
 	Article: Q106527
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -93,3 +95,5 @@ permalink: /kb/106/Q106527/
 	
 	=============================================================================
 	
+
+{% endraw %}

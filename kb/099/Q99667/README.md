@@ -6,6 +6,8 @@ permalink: /kb/099/Q99667/
 
 ## Q99667: PC WSPlus: Err Msg: Schedule Transport DLL Does Not Support...
 
+{% raw %}
+
 	Article: Q99667
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/099/Q99667/
 	
 	=============================================================================
 	
+
+{% endraw %}

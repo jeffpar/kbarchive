@@ -6,6 +6,8 @@ permalink: /kb/153/Q153590/
 
 ## Q153590: XFOR: Sent Time Incorrect on Incoming SMTP Messages
 
+{% raw %}
+
 	Article: Q153590
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -76,3 +78,5 @@ permalink: /kb/153/Q153590/
 	
 	=============================================================================
 	
+
+{% endraw %}

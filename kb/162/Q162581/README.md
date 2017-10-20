@@ -6,6 +6,8 @@ permalink: /kb/162/Q162581/
 
 ## Q162581: Printer Session Font Override Option
 
+{% raw %}
+
 	Article: Q162581
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/162/Q162581/
 	
 	=============================================================================
 	
+
+{% endraw %}

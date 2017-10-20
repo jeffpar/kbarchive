@@ -6,6 +6,8 @@ permalink: /kb/135/Q135765/
 
 ## Q135765: PRB: Convert Dialog Doesn't Appear for OLE Object in MS Excel
 
+{% raw %}
+
 	Article: Q135765
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -130,3 +132,5 @@ permalink: /kb/135/Q135765/
 	
 	=============================================================================
 	
+
+{% endraw %}

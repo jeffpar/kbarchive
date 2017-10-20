@@ -6,6 +6,8 @@ permalink: /kb/198/Q198586/
 
 ## Q198586: How to Preload the Property Cache
 
+{% raw %}
+
 	Article: Q198586
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -96,3 +98,5 @@ permalink: /kb/198/Q198586/
 	
 	=============================================================================
 	
+
+{% endraw %}

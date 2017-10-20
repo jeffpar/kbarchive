@@ -6,6 +6,8 @@ permalink: /kb/138/Q138307/
 
 ## Q138307: PPT7: How to Run a Slide Show Within a Window (Undocumented)
 
+{% raw %}
+
 	Article: Q138307
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -76,3 +78,5 @@ permalink: /kb/138/Q138307/
 	
 	=============================================================================
 	
+
+{% endraw %}

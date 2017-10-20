@@ -6,6 +6,8 @@ permalink: /kb/259/Q259721/
 
 ## Q259721: Unable to Log On and Authenticate with Novell Server 5.x
 
+{% raw %}
+
 	Article: Q259721
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:; Win2000:95; winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/259/Q259721/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246391/
 
 ## Q246391: PaswordChangeFlags Set to 4 or Higher Causes Access Violation
 
+{% raw %}
+
 	Article: Q246391
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -102,3 +104,5 @@ permalink: /kb/246/Q246391/
 	
 	=============================================================================
 	
+
+{% endraw %}

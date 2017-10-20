@@ -6,6 +6,8 @@ permalink: /kb/133/Q133725/
 
 ## Q133725: Missing Menu Commands in the Fonts Folder
 
+{% raw %}
+
 	Article: Q133725
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,4.0
@@ -180,3 +182,5 @@ permalink: /kb/133/Q133725/
 	
 	=============================================================================
 	
+
+{% endraw %}

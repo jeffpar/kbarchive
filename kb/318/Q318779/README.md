@@ -6,6 +6,8 @@ permalink: /kb/318/Q318779/
 
 ## Q318779: SMS: Programs Run After Applying Software Distribribution Hotfix
 
+{% raw %}
+
 	Article: Q318779
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -135,3 +137,5 @@ permalink: /kb/318/Q318779/
 	
 	=============================================================================
 	
+
+{% endraw %}

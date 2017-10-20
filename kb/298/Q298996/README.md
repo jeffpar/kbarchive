@@ -6,6 +6,8 @@ permalink: /kb/298/Q298996/
 
 ## Q298996: Asheron's Call: First Update Takes a Long Time to Download
 
+{% raw %}
+
 	Article: Q298996
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/298/Q298996/
 	
 	=============================================================================
 	
+
+{% endraw %}

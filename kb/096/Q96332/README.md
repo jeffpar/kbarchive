@@ -6,6 +6,8 @@ permalink: /kb/096/Q96332/
 
 ## Q96332: F5 and F8 Keys Do Not Seem to Affect Startup Files
 
+{% raw %}
+
 	Article: Q96332
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -72,3 +74,5 @@ permalink: /kb/096/Q96332/
 	
 	=============================================================================
 	
+
+{% endraw %}

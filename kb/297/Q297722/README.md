@@ -6,6 +6,8 @@ permalink: /kb/297/Q297722/
 
 ## Q297722: COM Server May Not Be Started from the Login Script
 
+{% raw %}
+
 	Article: Q297722
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6
@@ -104,3 +106,5 @@ permalink: /kb/297/Q297722/
 	
 	=============================================================================
 	
+
+{% endraw %}

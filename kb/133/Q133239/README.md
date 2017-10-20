@@ -6,6 +6,8 @@ permalink: /kb/133/Q133239/
 
 ## Q133239: Enabling PCMCIA Support in Windows 95
 
+{% raw %}
+
 	Article: Q133239
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -174,3 +176,5 @@ permalink: /kb/133/Q133239/
 	
 	=============================================================================
 	
+
+{% endraw %}

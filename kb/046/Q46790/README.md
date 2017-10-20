@@ -6,6 +6,8 @@ permalink: /kb/046/Q46790/
 
 ## Q46790: Curtime Function Pulls In Time Editor Was Invoked
 
+{% raw %}
+
 	Article: Q46790
 	Product(s): See article
 	Version(s): 1.00 | 1.00
@@ -43,3 +45,5 @@ permalink: /kb/046/Q46790/
 	Editor User's Guide," which is contained in the "CodeView and
 	Utilities, Microsoft Editor, Mixed-Language Programming Guide" manual
 	from the Microsoft C Optimizing Compiler Version 5.10.
+
+{% endraw %}

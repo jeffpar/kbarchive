@@ -6,6 +6,8 @@ permalink: /kb/037/Q37242/
 
 ## Q37242: A General Tutorial on the Various Forms of Memory
 
+{% raw %}
+
 	Article: Q37242
 	Product(s): Microsoft Disk Operating System
 	Version(s): 2.11,3.1,3.2,3.21,3.3,3.3a,4.0,4.01,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -291,3 +293,5 @@ permalink: /kb/037/Q37242/
 	
 	=============================================================================
 	
+
+{% endraw %}

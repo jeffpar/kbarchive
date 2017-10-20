@@ -6,6 +6,8 @@ permalink: /kb/194/Q194248/
 
 ## Q194248: FP98: Errors w/ Ismaps, Searches After Moving Content to Server
 
+{% raw %}
+
 	Article: Q194248
 	Product(s): Word Front Page
 	Version(s): WINDOWS:98
@@ -68,3 +70,5 @@ permalink: /kb/194/Q194248/
 	
 	=============================================================================
 	
+
+{% endraw %}

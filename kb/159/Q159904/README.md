@@ -6,6 +6,8 @@ permalink: /kb/159/Q159904/
 
 ## Q159904: XCLN: Using ShivaRemote with Exchange (Win 3.x/LanMan TCP/IP)
 
+{% raw %}
+
 	Article: Q159904
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -273,3 +275,5 @@ permalink: /kb/159/Q159904/
 	
 	=============================================================================
 	
+
+{% endraw %}

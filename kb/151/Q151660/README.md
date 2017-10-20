@@ -6,6 +6,8 @@ permalink: /kb/151/Q151660/
 
 ## Q151660: Reinstalling Causes Loss of MS Exchange Client Functions
 
+{% raw %}
+
 	Article: Q151660
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -78,3 +80,5 @@ permalink: /kb/151/Q151660/
 	
 	=============================================================================
 	
+
+{% endraw %}

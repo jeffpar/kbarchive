@@ -6,6 +6,8 @@ permalink: /kb/232/Q232656/
 
 ## Q232656: XCON: MTA X.400 1988 to 1984 Downgrade Failure Causes NDR
 
+{% raw %}
+
 	Article: Q232656
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -111,3 +113,5 @@ permalink: /kb/232/Q232656/
 	
 	=============================================================================
 	
+
+{% endraw %}

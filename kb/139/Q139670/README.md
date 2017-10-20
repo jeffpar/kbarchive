@@ -6,6 +6,8 @@ permalink: /kb/139/Q139670/
 
 ## Q139670: Setup Does Not Detect Creative Labs Wave Blaster
 
+{% raw %}
+
 	Article: Q139670
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/139/Q139670/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157048/
 
 ## Q157048: HOWTO: Add a Check Box to a List in Visual FoxPro
 
+{% raw %}
+
 	Article: Q157048
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -145,3 +147,5 @@ permalink: /kb/157/Q157048/
 	
 	=============================================================================
 	
+
+{% endraw %}

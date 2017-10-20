@@ -6,6 +6,8 @@ permalink: /kb/104/Q104170/
 
 ## Q104170: PC Win: Dynamic Data Exchange Is Not Supported
 
+{% raw %}
+
 	Article: Q104170
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -37,3 +39,5 @@ permalink: /kb/104/Q104170/
 	
 	=============================================================================
 	
+
+{% endraw %}

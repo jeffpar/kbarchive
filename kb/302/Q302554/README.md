@@ -6,6 +6,8 @@ permalink: /kb/302/Q302554/
 
 ## Q302554: General Information About Favorites
 
+{% raw %}
+
 	Article: Q302554
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/302/Q302554/
 	
 	=============================================================================
 	
+
+{% endraw %}

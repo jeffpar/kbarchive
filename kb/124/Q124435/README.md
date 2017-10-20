@@ -6,6 +6,8 @@ permalink: /kb/124/Q124435/
 
 ## Q124435: Windows 3.1 Resource Kit Files Available
 
+{% raw %}
+
 	Article: Q124435
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/124/Q124435/
 	
 	=============================================================================
 	
+
+{% endraw %}

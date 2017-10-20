@@ -6,6 +6,8 @@ permalink: /kb/234/Q234545/
 
 ## Q234545: Opropsheet.exe Modeless OLE Property Sheet Using MFC
 
+{% raw %}
+
 	Article: Q234545
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -170,9 +172,9 @@ permalink: /kb/234/Q234545/
 	          {
 	              throw (e);
 	          }
-	      file://{ {AFX_DATA_INIT(COlePropPage)
+	      file://{{AFX_DATA_INIT(COlePropPage)
 	      // <B>NOTE</B>: The ClassWizard adds member initialization here
-	      file://} }AFX_DATA_INIT
+	      file://}}AFX_DATA_INIT
 	  }
 	
 	4. One problem with using the COM property pages as children of MFC property
@@ -284,3 +286,5 @@ permalink: /kb/234/Q234545/
 	
 	=============================================================================
 	
+
+{% endraw %}

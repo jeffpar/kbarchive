@@ -6,6 +6,8 @@ permalink: /kb/147/Q147384/
 
 ## Q147384: FIX: Icons, Bitmaps, &amp; Menus Not Displayed in an AFXDLL Dialog
 
+{% raw %}
+
 	Article: Q147384
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -119,3 +121,5 @@ permalink: /kb/147/Q147384/
 	
 	=============================================================================
 	
+
+{% endraw %}

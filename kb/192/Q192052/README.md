@@ -6,6 +6,8 @@ permalink: /kb/192/Q192052/
 
 ## Q192052: XFOR: MSMI: Messages with Incomplete X.400 Addresses are NDR
 
+{% raw %}
+
 	Article: Q192052
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -65,3 +67,5 @@ permalink: /kb/192/Q192052/
 	
 	=============================================================================
 	
+
+{% endraw %}

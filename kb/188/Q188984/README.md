@@ -6,6 +6,8 @@ permalink: /kb/188/Q188984/
 
 ## Q188984: Office 97/2000 Is Not Supported in a Clustered Environment
 
+{% raw %}
+
 	Article: Q188984
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2000,4.0,97
@@ -55,3 +57,5 @@ permalink: /kb/188/Q188984/
 	
 	=============================================================================
 	
+
+{% endraw %}

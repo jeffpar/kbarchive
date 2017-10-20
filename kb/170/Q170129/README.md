@@ -6,6 +6,8 @@ permalink: /kb/170/Q170129/
 
 ## Q170129: PRB: Update Conflict When Updating Oracle Varchar Data Types
 
+{% raw %}
+
 	Article: Q170129
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -120,3 +122,5 @@ permalink: /kb/170/Q170129/
 	
 	=============================================================================
 	
+
+{% endraw %}

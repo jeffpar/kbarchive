@@ -6,6 +6,8 @@ permalink: /kb/178/Q178551/
 
 ## Q178551: FS98 Err Msg: General Floating Point Error in Module Panels.dll
 
+{% raw %}
+
 	Article: Q178551
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -164,3 +166,5 @@ permalink: /kb/178/Q178551/
 	
 	=============================================================================
 	
+
+{% endraw %}

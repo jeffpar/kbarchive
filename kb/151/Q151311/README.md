@@ -6,6 +6,8 @@ permalink: /kb/151/Q151311/
 
 ## Q151311: Mastering VB: Testing CD-ROM Drive for File Access
 
+{% raw %}
+
 	Article: Q151311
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -98,3 +100,5 @@ permalink: /kb/151/Q151311/
 	
 	=============================================================================
 	
+
+{% endraw %}

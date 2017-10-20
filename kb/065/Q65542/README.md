@@ -6,6 +6,8 @@ permalink: /kb/065/Q65542/
 
 ## Q65542: Mac Hyp: Preventing Continuous Beep Conflict with HyperCard
 
+{% raw %}
+
 	Article: Q65542
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0
@@ -84,3 +86,5 @@ permalink: /kb/065/Q65542/
 	
 	=============================================================================
 	
+
+{% endraw %}

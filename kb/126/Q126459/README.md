@@ -6,6 +6,8 @@ permalink: /kb/126/Q126459/
 
 ## Q126459: Windows NT Backup Fails During Restore with a DPT 2022
 
+{% raw %}
+
 	Article: Q126459
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/126/Q126459/
 	
 	=============================================================================
 	
+
+{% endraw %}

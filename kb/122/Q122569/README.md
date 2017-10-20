@@ -6,6 +6,8 @@ permalink: /kb/122/Q122569/
 
 ## Q122569: APPCTL Err Msg: Failed to Connect to SMS Network Server...
 
+{% raw %}
+
 	Article: Q122569
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -50,3 +52,5 @@ permalink: /kb/122/Q122569/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216223/
 
 ## Q216223: Windows NT 4.0 Service Pack 4 Information
 
+{% raw %}
+
 	Article: Q216223
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/216/Q216223/
 	
 	=============================================================================
 	
+
+{% endraw %}

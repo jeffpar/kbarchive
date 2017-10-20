@@ -6,6 +6,8 @@ permalink: /kb/135/Q135355/
 
 ## Q135355: Event 11 (1178) Causes SNA Server to Fail Abnormally
 
+{% raw %}
+
 	Article: Q135355
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -113,3 +115,5 @@ permalink: /kb/135/Q135355/
 	
 	=============================================================================
 	
+
+{% endraw %}

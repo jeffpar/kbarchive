@@ -6,6 +6,8 @@ permalink: /kb/142/Q142510/
 
 ## Q142510: DOCERR: Errors in Visual FoxPro &quot;Step By Step&quot; Book on Page 26
 
+{% raw %}
+
 	Article: Q142510
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,Step by Step ISBN 1-55615-846-7
@@ -113,3 +115,5 @@ permalink: /kb/142/Q142510/
 	
 	=============================================================================
 	
+
+{% endraw %}

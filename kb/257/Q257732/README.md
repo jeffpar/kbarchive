@@ -6,6 +6,8 @@ permalink: /kb/257/Q257732/
 
 ## Q257732: FIX: GDI Resource Leak When MaskPicture Is Set to an Icon
 
+{% raw %}
+
 	Article: Q257732
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -59,3 +61,5 @@ permalink: /kb/257/Q257732/
 	
 	=============================================================================
 	
+
+{% endraw %}

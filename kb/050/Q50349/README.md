@@ -6,6 +6,8 @@ permalink: /kb/050/Q50349/
 
 ## Q50349: PUBLIC Keyword Necessary in Most Multiple Modules Programs
 
+{% raw %}
+
 	Article: Q50349
 	Product(s): See article
 	Version(s): 2.01
@@ -21,3 +23,5 @@ permalink: /kb/050/Q50349/
 	need for the PUBLIC keyword. If a high level language is not
 	specified, the PUBLIC keyword must be included on every symbol that
 	will be accessed from another module.
+
+{% endraw %}

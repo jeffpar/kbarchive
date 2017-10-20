@@ -6,6 +6,8 @@ permalink: /kb/233/Q233467/
 
 ## Q233467: Business Planner: PID Is Not Required to Start Program
 
+{% raw %}
+
 	Article: Q233467
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/233/Q233467/
 	
 	=============================================================================
 	
+
+{% endraw %}

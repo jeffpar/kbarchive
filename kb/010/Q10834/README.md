@@ -6,6 +6,8 @@ permalink: /kb/010/Q10834/
 
 ## Q10834: INFO: GDI Simulation Routines and Device Drivers for Windows
 
+{% raw %}
+
 	Article: Q10834
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -47,3 +49,5 @@ permalink: /kb/010/Q10834/
 	
 	=============================================================================
 	
+
+{% endraw %}

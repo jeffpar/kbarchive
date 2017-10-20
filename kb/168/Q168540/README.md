@@ -6,6 +6,8 @@ permalink: /kb/168/Q168540/
 
 ## Q168540: XCLN: Cannot Save Changes to a Public Folder Item
 
+{% raw %}
+
 	Article: Q168540
 	Product(s): Microsoft Exchange
 	Version(s): 8.01; MS-DOS:4.0,5.0; WINDOWS:4.0,5.0
@@ -84,3 +86,5 @@ permalink: /kb/168/Q168540/
 	
 	=============================================================================
 	
+
+{% endraw %}

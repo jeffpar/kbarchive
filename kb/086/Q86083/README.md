@@ -6,6 +6,8 @@ permalink: /kb/086/Q86083/
 
 ## Q86083: PC Win: Embedded Objects from Excel 3.0 Sized Larger
 
+{% raw %}
+
 	Article: Q86083
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -64,3 +66,5 @@ permalink: /kb/086/Q86083/
 	
 	=============================================================================
 	
+
+{% endraw %}

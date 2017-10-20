@@ -6,6 +6,8 @@ permalink: /kb/126/Q126436/
 
 ## Q126436: Q&amp;A: The Role of a Windows NT Server in a Domain
 
+{% raw %}
+
 	Article: Q126436
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -172,3 +174,5 @@ permalink: /kb/126/Q126436/
 	
 	=============================================================================
 	
+
+{% endraw %}

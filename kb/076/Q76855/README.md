@@ -6,6 +6,8 @@ permalink: /kb/076/Q76855/
 
 ## Q76855: Sound Driver Plays Portion of Sound, Then Stops
 
+{% raw %}
+
 	Article: Q76855
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -38,3 +40,5 @@ permalink: /kb/076/Q76855/
 	
 	=============================================================================
 	
+
+{% endraw %}

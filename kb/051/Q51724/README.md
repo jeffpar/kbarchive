@@ -6,6 +6,8 @@ permalink: /kb/051/Q51724/
 
 ## Q51724: DOC: Clarification of the /H Identifier Length Option
 
+{% raw %}
+
 	Article: Q51724
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,4.1,5.0,6.0
@@ -91,3 +93,5 @@ permalink: /kb/051/Q51724/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161756/
 
 ## Q161756: WD97: Comment Inserted at Unexpected Location
 
+{% raw %}
+
 	Article: Q161756
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/161/Q161756/
 	
 	=============================================================================
 	
+
+{% endraw %}

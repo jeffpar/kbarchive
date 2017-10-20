@@ -6,6 +6,8 @@ permalink: /kb/186/Q186906/
 
 ## Q186906: FIX: VBScript Macro Names Cannot Contain MBCS Characters
 
+{% raw %}
+
 	Article: Q186906
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/186/Q186906/
 	
 	=============================================================================
 	
+
+{% endraw %}

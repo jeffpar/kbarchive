@@ -6,6 +6,8 @@ permalink: /kb/233/Q233977/
 
 ## Q233977: WD97: Cannot Go to Bookmark in Unprotected Section of Document
 
+{% raw %}
+
 	Article: Q233977
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/233/Q233977/
 	
 	=============================================================================
 	
+
+{% endraw %}

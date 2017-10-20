@@ -6,6 +6,8 @@ permalink: /kb/281/Q281082/
 
 ## Q281082: Encarta: DVD Player Starts When You Insert the Encarta DVD-ROM
 
+{% raw %}
+
 	Article: Q281082
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/281/Q281082/
 	
 	=============================================================================
 	
+
+{% endraw %}

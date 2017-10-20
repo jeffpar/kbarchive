@@ -6,6 +6,8 @@ permalink: /kb/322/Q322812/
 
 ## Q322812: How to Turn Setuid/Setgid On or Off
 
+{% raw %}
+
 	Article: Q322812
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0
@@ -93,3 +95,5 @@ permalink: /kb/322/Q322812/
 	
 	=============================================================================
 	
+
+{% endraw %}

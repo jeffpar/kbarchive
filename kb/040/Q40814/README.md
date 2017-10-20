@@ -6,6 +6,8 @@ permalink: /kb/040/Q40814/
 
 ## Q40814: Mac Wkst: Changing &quot;Reply&quot; Default to &quot;Reply All&quot;
 
+{% raw %}
+
 	Article: Q40814
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.x,3.0
@@ -51,3 +53,5 @@ permalink: /kb/040/Q40814/
 	
 	=============================================================================
 	
+
+{% endraw %}

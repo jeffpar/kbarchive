@@ -6,6 +6,8 @@ permalink: /kb/136/Q136672/
 
 ## Q136672: PRB: Cannot Disable the System Menu While Running a Form
 
+{% raw %}
+
 	Article: Q136672
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/136/Q136672/
 	
 	=============================================================================
 	
+
+{% endraw %}

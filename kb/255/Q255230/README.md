@@ -6,6 +6,8 @@ permalink: /kb/255/Q255230/
 
 ## Q255230: FIX: Memory Leak in OLE Automation for Visual SourceSafe
 
+{% raw %}
+
 	Article: Q255230
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -114,3 +116,5 @@ permalink: /kb/255/Q255230/
 	
 	=============================================================================
 	
+
+{% endraw %}

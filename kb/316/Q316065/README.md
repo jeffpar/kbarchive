@@ -6,6 +6,8 @@ permalink: /kb/316/Q316065/
 
 ## Q316065: PRB: Emulator Connection Is Lost if SNA Host Printer Is Added
 
+{% raw %}
+
 	Article: Q316065
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
@@ -76,3 +78,5 @@ permalink: /kb/316/Q316065/
 	
 	=============================================================================
 	
+
+{% endraw %}

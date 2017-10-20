@@ -6,6 +6,8 @@ permalink: /kb/098/Q98014/
 
 ## Q98014: PC WFW: Schedule+ for Windows Disk 3 &#91;5.25, 1.2 MB)
 
+{% raw %}
+
 	Article: Q98014
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -55,3 +57,5 @@ permalink: /kb/098/Q98014/
 	
 	=============================================================================
 	
+
+{% endraw %}

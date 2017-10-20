@@ -6,6 +6,8 @@ permalink: /kb/087/Q87194/
 
 ## Q87194: PROFS: Versions of MS Mail Compatible with PROFS Gateway
 
+{% raw %}
+
 	Article: Q87194
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -46,3 +48,5 @@ permalink: /kb/087/Q87194/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133092/
 
 ## Q133092: How to Test and View Fonts in Windows 95/98
 
+{% raw %}
+
 	Article: Q133092
 	Product(s): Microsoft Home Miscellaneous Products
 	Version(s): WINDOWS:95
@@ -84,3 +86,5 @@ permalink: /kb/133/Q133092/
 	
 	=============================================================================
 	
+
+{% endraw %}

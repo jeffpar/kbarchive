@@ -6,6 +6,8 @@ permalink: /kb/255/Q255279/
 
 ## Q255279: HOWTO: Create a COM DLL with Visual FoxPro that Prints Screen Im
 
+{% raw %}
+
 	Article: Q255279
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -135,3 +137,5 @@ permalink: /kb/255/Q255279/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184063/
 
 ## Q184063: Available Bytes Counter Definition is Incorrect in Perfmon
 
+{% raw %}
+
 	Article: Q184063
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/184/Q184063/
 	
 	=============================================================================
 	
+
+{% endraw %}

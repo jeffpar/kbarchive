@@ -6,6 +6,8 @@ permalink: /kb/242/Q242411/
 
 ## Q242411: HOWTO: Determine the Currently Selected ScopePaneItem
 
+{% raw %}
+
 	Article: Q242411
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.1,1.2,6.0
@@ -41,3 +43,5 @@ permalink: /kb/242/Q242411/
 	
 	=============================================================================
 	
+
+{% endraw %}

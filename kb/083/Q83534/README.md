@@ -6,6 +6,8 @@ permalink: /kb/083/Q83534/
 
 ## Q83534: Mac Fax: Sealing Wax and Fax Gateway 3.00a-ms
 
+{% raw %}
+
 	Article: Q83534
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.x,3.0
@@ -83,3 +85,5 @@ permalink: /kb/083/Q83534/
 	
 	=============================================================================
 	
+
+{% endraw %}

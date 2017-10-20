@@ -6,6 +6,8 @@ permalink: /kb/268/Q268887/
 
 ## Q268887: XADM: Delivery Receipts Contain &quot;Unknown&quot; for Detail
 
+{% raw %}
+
 	Article: Q268887
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -100,3 +102,5 @@ permalink: /kb/268/Q268887/
 	
 	=============================================================================
 	
+
+{% endraw %}

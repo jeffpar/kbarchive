@@ -6,6 +6,8 @@ permalink: /kb/065/Q65935/
 
 ## Q65935: Explanation of Why BASIC Programs Can Open Devices As Files
 
+{% raw %}
+
 	Article: Q65935
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -66,3 +68,5 @@ permalink: /kb/065/Q65935/
 	For more information on device drivers, consult a book on programming
 	DOS such as "Advanced MS-DOS Programming, Second Edition" by Ray
 	Duncan, published by Microsoft Press (1988).
+
+{% endraw %}

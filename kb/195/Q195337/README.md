@@ -6,6 +6,8 @@ permalink: /kb/195/Q195337/
 
 ## Q195337: MSN: E-mail Notification Temporarily Disabled
 
+{% raw %}
+
 	Article: Q195337
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -84,3 +86,5 @@ permalink: /kb/195/Q195337/
 	
 	=============================================================================
 	
+
+{% endraw %}

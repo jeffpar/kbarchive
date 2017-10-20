@@ -6,6 +6,8 @@ permalink: /kb/059/Q59073/
 
 ## Q59073: &quot;BASIC 7.0: Reference&quot; Correction for CALL Statement Example
 
+{% raw %}
+
 	Article: Q59073
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -31,3 +33,5 @@ permalink: /kb/059/Q59073/
 	
 	This information applies to Microsoft BASIC Professional Development
 	System (PDS) versions 7.00 and 7.10 for MS-DOS and MS OS/2.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196306/
 
 ## Q196306: XFOR: Err Msg: The Remote Access Service Phone Book Cannot...
 
+{% raw %}
+
 	Article: Q196306
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -90,3 +92,5 @@ permalink: /kb/196/Q196306/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128353/
 
 ## Q128353: Memory Leak on Clients with Remote Procedure Calls
 
+{% raw %}
+
 	Article: Q128353
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -53,3 +55,5 @@ permalink: /kb/128/Q128353/
 	
 	=============================================================================
 	
+
+{% endraw %}

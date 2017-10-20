@@ -6,6 +6,8 @@ permalink: /kb/062/Q62217/
 
 ## Q62217: EXEHDR.EXE Switch Omissions in 7.00/7.10 Manual
 
+{% raw %}
+
 	Article: Q62217
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -54,3 +56,5 @@ permalink: /kb/062/Q62217/
 	
 	   EXEHDR: error U1110: malformed number FFFFH
 	   EXEHDR: error U1115: option /MAX:FFFFH ignored
+
+{% endraw %}

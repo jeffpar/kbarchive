@@ -6,6 +6,8 @@ permalink: /kb/089/Q89872/
 
 ## Q89872: Control Panel Changes Have No Effect with Proof Reader, 1-2-3
 
+{% raw %}
+
 	Article: Q89872
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/089/Q89872/
 	
 	=============================================================================
 	
+
+{% endraw %}

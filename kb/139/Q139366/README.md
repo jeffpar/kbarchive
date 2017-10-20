@@ -6,6 +6,8 @@ permalink: /kb/139/Q139366/
 
 ## Q139366: 3D Movie Maker: Storing Recorded/Imported Sounds
 
+{% raw %}
+
 	Article: Q139366
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -60,3 +62,5 @@ permalink: /kb/139/Q139366/
 	
 	=============================================================================
 	
+
+{% endraw %}

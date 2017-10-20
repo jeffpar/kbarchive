@@ -6,6 +6,8 @@ permalink: /kb/168/Q168716/
 
 ## Q168716: XADM: How to Import Manager Data into Exchange
 
+{% raw %}
+
 	Article: Q168716
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/168/Q168716/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153487/
 
 ## Q153487: XFOR: Exchange Proxy Addresses Not Deleted on cc:Mail POs
 
+{% raw %}
+
 	Article: Q153487
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -63,3 +65,5 @@ permalink: /kb/153/Q153487/
 	
 	=============================================================================
 	
+
+{% endraw %}

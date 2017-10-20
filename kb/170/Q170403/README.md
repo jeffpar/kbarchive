@@ -6,6 +6,8 @@ permalink: /kb/170/Q170403/
 
 ## Q170403: XCON: Err Msg: Unable to Interrogate Database...
 
+{% raw %}
+
 	Article: Q170403
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -47,3 +49,5 @@ permalink: /kb/170/Q170403/
 	
 	=============================================================================
 	
+
+{% endraw %}

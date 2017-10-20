@@ -6,6 +6,8 @@ permalink: /kb/161/Q161274/
 
 ## Q161274: HOWTO: Port a Remote OLE Application to DCOM
 
+{% raw %}
+
 	Article: Q161274
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -90,3 +92,5 @@ permalink: /kb/161/Q161274/
 	
 	=============================================================================
 	
+
+{% endraw %}

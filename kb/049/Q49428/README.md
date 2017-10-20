@@ -6,6 +6,8 @@ permalink: /kb/049/Q49428/
 
 ## Q49428: Error in Run-Time Reference to _getcursorposition
 
+{% raw %}
+
 	Article: Q49428
 	Product(s): See article
 	Version(s): 5.10
@@ -27,3 +29,5 @@ permalink: /kb/049/Q49428/
 	
 	The list shown in Appendix B in the manuals is not included in the
 	QuickC 2.00 and 2.01 on-line help references.
+
+{% endraw %}

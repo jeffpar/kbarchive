@@ -6,6 +6,8 @@ permalink: /kb/150/Q150796/
 
 ## Q150796: 5250 Emulator Displays a Black Screen Then Disconnects
 
+{% raw %}
+
 	Article: Q150796
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -164,3 +166,5 @@ permalink: /kb/150/Q150796/
 	
 	=============================================================================
 	
+
+{% endraw %}

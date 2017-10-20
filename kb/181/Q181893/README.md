@@ -6,6 +6,8 @@ permalink: /kb/181/Q181893/
 
 ## Q181893: PRB: Debug Exception Connecting to Oracle Server
 
+{% raw %}
+
 	Article: Q181893
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:5.0,5.0sp1,5.0sp2,5.0sp3
@@ -64,3 +66,5 @@ permalink: /kb/181/Q181893/
 	
 	=============================================================================
 	
+
+{% endraw %}

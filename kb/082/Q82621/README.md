@@ -6,6 +6,8 @@ permalink: /kb/082/Q82621/
 
 ## Q82621: CoolSwitch Window Loses Document Title Switching to Excel
 
+{% raw %}
+
 	Article: Q82621
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -39,3 +41,5 @@ permalink: /kb/082/Q82621/
 	
 	=============================================================================
 	
+
+{% endraw %}

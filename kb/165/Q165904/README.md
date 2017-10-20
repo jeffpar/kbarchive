@@ -6,6 +6,8 @@ permalink: /kb/165/Q165904/
 
 ## Q165904: PPT7: Frames Print on Handouts and Notes Pages
 
+{% raw %}
+
 	Article: Q165904
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -73,3 +75,5 @@ permalink: /kb/165/Q165904/
 	
 	=============================================================================
 	
+
+{% endraw %}

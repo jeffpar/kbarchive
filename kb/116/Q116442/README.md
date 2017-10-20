@@ -6,6 +6,8 @@ permalink: /kb/116/Q116442/
 
 ## Q116442: BUG: C1001 Generated Using typedef for Member Functions
 
+{% raw %}
+
 	Article: Q116442
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/116/Q116442/
 	
 	=============================================================================
 	
+
+{% endraw %}

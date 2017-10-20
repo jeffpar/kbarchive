@@ -6,6 +6,8 @@ permalink: /kb/194/Q194743/
 
 ## Q194743: Scripting Appears as Part of the Abstract in Search Results
 
+{% raw %}
+
 	Article: Q194743
 	Product(s): Internet Information Server
 	Version(s): winnt:2.0,4.0
@@ -66,3 +68,5 @@ permalink: /kb/194/Q194743/
 	
 	=============================================================================
 	
+
+{% endraw %}

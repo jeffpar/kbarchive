@@ -6,6 +6,8 @@ permalink: /kb/125/Q125213/
 
 ## Q125213: PRB: Spawn with _P_WAIT Returns Immediately on Win32s
 
+{% raw %}
+
 	Article: Q125213
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0 1.3 1.3a 1.3c 2.0 2.1 2.2 4.
@@ -125,3 +127,5 @@ permalink: /kb/125/Q125213/
 	
 	=============================================================================
 	
+
+{% endraw %}

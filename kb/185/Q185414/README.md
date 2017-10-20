@@ -6,6 +6,8 @@ permalink: /kb/185/Q185414/
 
 ## Q185414: XCLN: Err Msg: There was a problem opening MSTRE schedule...
 
+{% raw %}
+
 	Article: Q185414
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0,7.5
@@ -71,3 +73,5 @@ permalink: /kb/185/Q185414/
 	
 	=============================================================================
 	
+
+{% endraw %}

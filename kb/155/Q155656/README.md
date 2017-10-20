@@ -6,6 +6,8 @@ permalink: /kb/155/Q155656/
 
 ## Q155656: Monster Truck Madness: Some Trucks Crash More Often than Other
 
+{% raw %}
+
 	Article: Q155656
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -42,3 +44,5 @@ permalink: /kb/155/Q155656/
 	
 	=============================================================================
 	
+
+{% endraw %}

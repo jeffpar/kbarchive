@@ -6,6 +6,8 @@ permalink: /kb/080/Q80491/
 
 ## Q80491: MS-DOS Upgrade Detects Current MS-DOS in Root Directory
 
+{% raw %}
+
 	Article: Q80491
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -111,3 +113,5 @@ permalink: /kb/080/Q80491/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263914/
 
 ## Q263914: PRB: CREATEOFFLINE() Can Result in No Records
 
+{% raw %}
+
 	Article: Q263914
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -139,3 +141,5 @@ permalink: /kb/263/Q263914/
 	
 	=============================================================================
 	
+
+{% endraw %}

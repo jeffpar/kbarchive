@@ -6,6 +6,8 @@ permalink: /kb/074/Q74052/
 
 ## Q74052: Setup Hangs on a Sharp PC6200 Series Notebook Computer
 
+{% raw %}
+
 	Article: Q74052
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -56,3 +58,5 @@ permalink: /kb/074/Q74052/
 	
 	=============================================================================
 	
+
+{% endraw %}

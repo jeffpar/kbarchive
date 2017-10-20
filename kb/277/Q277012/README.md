@@ -6,6 +6,8 @@ permalink: /kb/277/Q277012/
 
 ## Q277012: DirectX: List of New Features Included in Microsoft DirectX 8.0
 
+{% raw %}
+
 	Article: Q277012
 	Product(s): Microsoft Home Games
 	Version(s): 2000
@@ -228,3 +230,5 @@ permalink: /kb/277/Q277012/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157630/
 
 ## Q157630: XCON: Adjustment of Connection Retry Values on Override Tab
 
+{% raw %}
+
 	Article: Q157630
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -142,3 +144,5 @@ permalink: /kb/157/Q157630/
 	
 	=============================================================================
 	
+
+{% endraw %}

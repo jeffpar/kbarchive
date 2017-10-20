@@ -6,6 +6,8 @@ permalink: /kb/130/Q130590/
 
 ## Q130590: Starting SNA Client Applet Can Start CIS Internet Dialer
 
+{% raw %}
+
 	Article: Q130590
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,3.0
@@ -69,3 +71,5 @@ permalink: /kb/130/Q130590/
 	
 	=============================================================================
 	
+
+{% endraw %}

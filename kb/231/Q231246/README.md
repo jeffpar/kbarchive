@@ -6,6 +6,8 @@ permalink: /kb/231/Q231246/
 
 ## Q231246: SMS: Custom DLL Causes SMS Installer to Stop Responding
 
+{% raw %}
+
 	Article: Q231246
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -54,3 +56,5 @@ permalink: /kb/231/Q231246/
 	
 	=============================================================================
 	
+
+{% endraw %}

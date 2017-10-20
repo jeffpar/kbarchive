@@ -6,6 +6,8 @@ permalink: /kb/155/Q155809/
 
 ## Q155809: HOWTO: Use the SYS(3053) Function Handle with ODBC
 
+{% raw %}
+
 	Article: Q155809
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,5.0,6.0
@@ -92,3 +94,5 @@ permalink: /kb/155/Q155809/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130162/
 
 ## Q130162: How to Assign an Icon to an .EXE File
 
+{% raw %}
+
 	Article: Q130162
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -57,3 +59,5 @@ permalink: /kb/130/Q130162/
 	
 	=============================================================================
 	
+
+{% endraw %}

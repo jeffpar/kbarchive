@@ -6,6 +6,8 @@ permalink: /kb/174/Q174306/
 
 ## Q174306: XADM: Cannot Delete the Internet Newsgroups Public Folder
 
+{% raw %}
+
 	Article: Q174306
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -60,3 +62,5 @@ permalink: /kb/174/Q174306/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122644/
 
 ## Q122644: Incorrect Number of Drives Appear for Pioneer DRM-600
 
+{% raw %}
+
 	Article: Q122644
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/122/Q122644/
 	
 	=============================================================================
 	
+
+{% endraw %}

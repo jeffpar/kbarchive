@@ -6,6 +6,8 @@ permalink: /kb/130/Q130021/
 
 ## Q130021: XCLN: Copy from To: Field Doesn't Copy Trailing Semicolon
 
+{% raw %}
+
 	Article: Q130021
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -45,3 +47,5 @@ permalink: /kb/130/Q130021/
 	
 	=============================================================================
 	
+
+{% endraw %}

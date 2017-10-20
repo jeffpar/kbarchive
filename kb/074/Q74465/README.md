@@ -6,6 +6,8 @@ permalink: /kb/074/Q74465/
 
 ## Q74465: XMS Memory with MS-DOS Shell Task Swapper
 
+{% raw %}
+
 	Article: Q74465
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -60,3 +62,5 @@ permalink: /kb/074/Q74465/
 	
 	=============================================================================
 	
+
+{% endraw %}

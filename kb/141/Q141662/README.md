@@ -6,6 +6,8 @@ permalink: /kb/141/Q141662/
 
 ## Q141662: FAX: Err Msg: Failure to Submit Fax
 
+{% raw %}
+
 	Article: Q141662
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0a
@@ -81,3 +83,5 @@ permalink: /kb/141/Q141662/
 	
 	=============================================================================
 	
+
+{% endraw %}

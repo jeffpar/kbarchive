@@ -6,6 +6,8 @@ permalink: /kb/172/Q172560/
 
 ## Q172560: HOWTO: Switch Focus to a Visual FoxPro Application
 
+{% raw %}
+
 	Article: Q172560
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/172/Q172560/
 	
 	=============================================================================
 	
+
+{% endraw %}

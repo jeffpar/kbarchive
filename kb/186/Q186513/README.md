@@ -6,6 +6,8 @@ permalink: /kb/186/Q186513/
 
 ## Q186513: Terminal Server Commands: DISCONN
 
+{% raw %}
+
 	Article: Q186513
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -82,3 +84,5 @@ permalink: /kb/186/Q186513/
 	
 	=============================================================================
 	
+
+{% endraw %}

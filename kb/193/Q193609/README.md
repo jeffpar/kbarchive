@@ -6,6 +6,8 @@ permalink: /kb/193/Q193609/
 
 ## Q193609: Visual Basic 5.0 Run-time DLL Has Read-only Attribute
 
+{% raw %}
+
 	Article: Q193609
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -48,3 +50,5 @@ permalink: /kb/193/Q193609/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/028/Q28233/
 
 ## Q28233: DOCERR: Signed/Unsigned Comparisons
 
+{% raw %}
+
 	Article: Q28233
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -50,3 +52,5 @@ permalink: /kb/028/Q28233/
 	
 	=============================================================================
 	
+
+{% endraw %}

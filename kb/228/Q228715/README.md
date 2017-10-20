@@ -6,6 +6,8 @@ permalink: /kb/228/Q228715/
 
 ## Q228715: XFOR: Notes Connector Crashes When Converting Trace Messages
 
+{% raw %}
+
 	Article: Q228715
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -90,3 +92,5 @@ permalink: /kb/228/Q228715/
 	
 	=============================================================================
 	
+
+{% endraw %}

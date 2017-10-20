@@ -6,6 +6,8 @@ permalink: /kb/201/Q201397/
 
 ## Q201397: SMSINST: Custom Dialogs May Contain Blank Controls
 
+{% raw %}
+
 	Article: Q201397
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/201/Q201397/
 	
 	=============================================================================
 	
+
+{% endraw %}

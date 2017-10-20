@@ -6,6 +6,8 @@ permalink: /kb/242/Q242571/
 
 ## Q242571: How To Manually Uninstall SNA Server 4.0
 
+{% raw %}
+
 	Article: Q242571
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -187,3 +189,5 @@ permalink: /kb/242/Q242571/
 	
 	=============================================================================
 	
+
+{% endraw %}

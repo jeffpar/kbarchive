@@ -6,6 +6,8 @@ permalink: /kb/182/Q182605/
 
 ## Q182605: XCLN: Multinational Client Cannot View User's Properties
 
+{% raw %}
+
 	Article: Q182605
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -60,3 +62,5 @@ permalink: /kb/182/Q182605/
 	
 	=============================================================================
 	
+
+{% endraw %}

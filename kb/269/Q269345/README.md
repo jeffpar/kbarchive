@@ -6,6 +6,8 @@ permalink: /kb/269/Q269345/
 
 ## Q269345: SMS: Systems Management Server Technical Resources
 
+{% raw %}
+
 	Article: Q269345
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -232,3 +234,5 @@ permalink: /kb/269/Q269345/
 	
 	=============================================================================
 	
+
+{% endraw %}

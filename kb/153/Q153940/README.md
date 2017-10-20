@@ -6,6 +6,8 @@ permalink: /kb/153/Q153940/
 
 ## Q153940: XFOR: Microsoft Mail Recipients Do Not Receive NDRs If CRs Exist
 
+{% raw %}
+
 	Article: Q153940
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -67,3 +69,5 @@ permalink: /kb/153/Q153940/
 	
 	=============================================================================
 	
+
+{% endraw %}

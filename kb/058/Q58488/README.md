@@ -6,6 +6,8 @@ permalink: /kb/058/Q58488/
 
 ## Q58488: Change in Hex Literal Interpretation with C 6.00
 
+{% raw %}
+
 	Article: Q58488
 	Product(s): See article
 	Version(s): 6.00    | 6.00
@@ -57,3 +59,5 @@ permalink: /kb/058/Q58488/
 	
 	Such a string works properly when compiled using any ANSI compatible
 	compiler.
+
+{% endraw %}

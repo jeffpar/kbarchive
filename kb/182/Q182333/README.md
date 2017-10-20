@@ -6,6 +6,8 @@ permalink: /kb/182/Q182333/
 
 ## Q182333: Excessive Processor Usage on Print Servers
 
+{% raw %}
+
 	Article: Q182333
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -87,3 +89,5 @@ permalink: /kb/182/Q182333/
 	
 	=============================================================================
 	
+
+{% endraw %}

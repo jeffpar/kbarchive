@@ -6,6 +6,8 @@ permalink: /kb/190/Q190497/
 
 ## Q190497: PRB: List Box Becomes Distorted Counting the Selected Items
 
+{% raw %}
+
 	Article: Q190497
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -86,3 +88,5 @@ permalink: /kb/190/Q190497/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122387/
 
 ## Q122387: ATI Video Fails with Adaptec 2940 SCSI Adapter on PCI Bus
 
+{% raw %}
+
 	Article: Q122387
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/122/Q122387/
 	
 	=============================================================================
 	
+
+{% endraw %}

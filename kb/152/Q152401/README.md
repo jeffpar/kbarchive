@@ -6,6 +6,8 @@ permalink: /kb/152/Q152401/
 
 ## Q152401: Problems If NetWare Server Allows More Than 256 Users
 
+{% raw %}
+
 	Article: Q152401
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/152/Q152401/
 	
 	=============================================================================
 	
+
+{% endraw %}

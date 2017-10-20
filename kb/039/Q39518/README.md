@@ -6,6 +6,8 @@ permalink: /kb/039/Q39518/
 
 ## Q39518: DOCERR: Example in MASM 5.1 Programmer's Guide
 
+{% raw %}
+
 	Article: Q39518
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -46,3 +48,5 @@ permalink: /kb/039/Q39518/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172047/
 
 ## Q172047: Sharing Violation with Server-side Includes
 
+{% raw %}
+
 	Article: Q172047
 	Product(s): Internet Information Server
 	Version(s): WinNT:3.0
@@ -55,3 +57,5 @@ permalink: /kb/172/Q172047/
 	
 	=============================================================================
 	
+
+{% endraw %}

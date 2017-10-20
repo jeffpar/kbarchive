@@ -6,6 +6,8 @@ permalink: /kb/163/Q163215/
 
 ## Q163215: System Policies May Not Work with Third-Party GINA DLLs
 
+{% raw %}
+
 	Article: Q163215
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/163/Q163215/
 	
 	=============================================================================
 	
+
+{% endraw %}

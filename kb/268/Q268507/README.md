@@ -6,6 +6,8 @@ permalink: /kb/268/Q268507/
 
 ## Q268507: Plus! Game Pack: Error Message When You Start Pandora's Box
 
+{% raw %}
+
 	Article: Q268507
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/268/Q268507/
 	
 	=============================================================================
 	
+
+{% endraw %}

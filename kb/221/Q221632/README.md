@@ -6,6 +6,8 @@ permalink: /kb/221/Q221632/
 
 ## Q221632: FIX: Web Publishing Wizard Gives RunCode Runtime Error
 
+{% raw %}
+
 	Article: Q221632
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -136,3 +138,5 @@ permalink: /kb/221/Q221632/
 	
 	=============================================================================
 	
+
+{% endraw %}

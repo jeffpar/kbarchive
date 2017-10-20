@@ -6,6 +6,8 @@ permalink: /kb/139/Q139075/
 
 ## Q139075: BUG: MF4024/MF1005 Generated for Serial Communication Settings
 
+{% raw %}
+
 	Article: Q139075
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -86,3 +88,5 @@ permalink: /kb/139/Q139075/
 	
 	=============================================================================
 	
+
+{% endraw %}

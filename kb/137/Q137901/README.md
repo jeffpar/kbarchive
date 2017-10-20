@@ -6,6 +6,8 @@ permalink: /kb/137/Q137901/
 
 ## Q137901: SNA Server Event 563 and Win 3.x Client Application Problems
 
+{% raw %}
+
 	Article: Q137901
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -121,3 +123,5 @@ permalink: /kb/137/Q137901/
 	
 	=============================================================================
 	
+
+{% endraw %}

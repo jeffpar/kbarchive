@@ -6,6 +6,8 @@ permalink: /kb/150/Q150952/
 
 ## Q150952: One-Time Install Message When No Configuration Command Line
 
+{% raw %}
+
 	Article: Q150952
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -76,3 +78,5 @@ permalink: /kb/150/Q150952/
 	
 	=============================================================================
 	
+
+{% endraw %}

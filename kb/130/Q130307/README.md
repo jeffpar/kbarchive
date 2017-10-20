@@ -6,6 +6,8 @@ permalink: /kb/130/Q130307/
 
 ## Q130307: How to Use Null Values in Visual FoxPro
 
+{% raw %}
+
 	Article: Q130307
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,5.0,6.0
@@ -157,3 +159,5 @@ permalink: /kb/130/Q130307/
 	
 	=============================================================================
 	
+
+{% endraw %}

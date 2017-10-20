@@ -6,6 +6,8 @@ permalink: /kb/199/Q199946/
 
 ## Q199946: SMS:Subnets Property Page Displays Subnet Address in Name Column
 
+{% raw %}
+
 	Article: Q199946
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -45,3 +47,5 @@ permalink: /kb/199/Q199946/
 	
 	=============================================================================
 	
+
+{% endraw %}

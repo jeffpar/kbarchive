@@ -6,6 +6,8 @@ permalink: /kb/237/Q237739/
 
 ## Q237739: XADM: Exchange On-line Restore Fails with Event ID 8010
 
+{% raw %}
+
 	Article: Q237739
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/237/Q237739/
 	
 	=============================================================================
 	
+
+{% endraw %}

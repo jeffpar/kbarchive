@@ -6,6 +6,8 @@ permalink: /kb/107/Q107135/
 
 ## Q107135: Using a RAM Drive to Enhance Performance of DISKCOPY
 
+{% raw %}
+
 	Article: Q107135
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.21,6.22
@@ -70,3 +72,5 @@ permalink: /kb/107/Q107135/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128965/
 
 ## Q128965: PC WSPlus: Compressing Schedule+ Calendar Files
 
+{% raw %}
+
 	Article: Q128965
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 1.0,1.0a
@@ -110,3 +112,5 @@ permalink: /kb/128/Q128965/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129201/
 
 ## Q129201: PC MMTA: OS/2 Version 1.3 Installation Issues
 
+{% raw %}
+
 	Article: Q129201
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -131,3 +133,5 @@ permalink: /kb/129/Q129201/
 	
 	=============================================================================
 	
+
+{% endraw %}

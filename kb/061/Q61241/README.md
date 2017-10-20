@@ -6,6 +6,8 @@ permalink: /kb/061/Q61241/
 
 ## Q61241: C 6.00 README: &quot;Advanced Programming Techniques&quot; Notes
 
+{% raw %}
+
 	Article: Q61241
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -81,3 +83,5 @@ permalink: /kb/061/Q61241/
 	           References in this section to the predefined date and time
 	           macros should be to __DATE__ and __TIME__, rather than
 	           _DATE_ and _TIME_.
+
+{% endraw %}

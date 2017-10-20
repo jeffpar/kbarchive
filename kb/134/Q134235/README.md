@@ -6,6 +6,8 @@ permalink: /kb/134/Q134235/
 
 ## Q134235: Mac Srv: Group Messages w/ Gateway Users May Go to Wrong User
 
+{% raw %}
+
 	Article: Q134235
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1d
@@ -69,3 +71,5 @@ permalink: /kb/134/Q134235/
 	
 	=============================================================================
 	
+
+{% endraw %}

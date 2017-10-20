@@ -6,6 +6,8 @@ permalink: /kb/051/Q51411/
 
 ## Q51411: How to Use SEG Keyword with Arrays in DECLARE and CALLs
 
+{% raw %}
+
 	Article: Q51411
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/051/Q51411/
 	
 	If a DECLARE statement is used with an explicit CALL statement that
 	uses SEG, the error "Parameter type mismatch" displays.
+
+{% endraw %}

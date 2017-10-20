@@ -6,6 +6,8 @@ permalink: /kb/148/Q148369/
 
 ## Q148369: PC MAPI: Loss of Memory with MapiSendMail and Visual Basic
 
+{% raw %}
+
 	Article: Q148369
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -68,3 +70,5 @@ permalink: /kb/148/Q148369/
 	
 	=============================================================================
 	
+
+{% endraw %}

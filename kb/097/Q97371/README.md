@@ -6,6 +6,8 @@ permalink: /kb/097/Q97371/
 
 ## Q97371: SAMPLE: VLB.exe Implements a Virtual List Box
 
+{% raw %}
+
 	Article: Q97371
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -66,3 +68,5 @@ permalink: /kb/097/Q97371/
 	
 	=============================================================================
 	
+
+{% endraw %}

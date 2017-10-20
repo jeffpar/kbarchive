@@ -6,6 +6,8 @@ permalink: /kb/119/Q119808/
 
 ## Q119808: Transverse &amp; Extra Paper Sizes Not Available in Common Dialogs
 
+{% raw %}
+
 	Article: Q119808
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -77,3 +79,5 @@ permalink: /kb/119/Q119808/
 	
 	=============================================================================
 	
+
+{% endraw %}

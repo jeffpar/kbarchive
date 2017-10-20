@@ -6,6 +6,8 @@ permalink: /kb/096/Q96757/
 
 ## Q96757: TSR Causes System to Hang When Running MS-DOS Editor or QBASIC
 
+{% raw %}
+
 	Article: Q96757
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/096/Q96757/
 	
 	=============================================================================
 	
+
+{% endraw %}

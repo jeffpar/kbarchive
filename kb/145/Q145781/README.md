@@ -6,6 +6,8 @@ permalink: /kb/145/Q145781/
 
 ## Q145781: XCLN: MacBinary FreeDoc W/O Extension Uses Generic Icon
 
+{% raw %}
+
 	Article: Q145781
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -45,3 +47,5 @@ permalink: /kb/145/Q145781/
 	
 	=============================================================================
 	
+
+{% endraw %}

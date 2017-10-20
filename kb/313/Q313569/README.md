@@ -6,6 +6,8 @@ permalink: /kb/313/Q313569/
 
 ## Q313569: XADM: CDO Changed to Regenerate Public Free-and-Busy Message
 
+{% raw %}
+
 	Article: Q313569
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3,5.5 SP4
@@ -114,3 +116,5 @@ permalink: /kb/313/Q313569/
 	
 	=============================================================================
 	
+
+{% endraw %}

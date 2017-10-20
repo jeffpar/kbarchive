@@ -6,6 +6,8 @@ permalink: /kb/148/Q148253/
 
 ## Q148253: Ancient Lands: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148253
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/148/Q148253/
 	
 	=============================================================================
 	
+
+{% endraw %}

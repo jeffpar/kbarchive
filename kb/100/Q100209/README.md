@@ -6,6 +6,8 @@ permalink: /kb/100/Q100209/
 
 ## Q100209: Windows NT 3.5 Driver Library
 
+{% raw %}
+
 	Article: Q100209
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -231,3 +233,5 @@ permalink: /kb/100/Q100209/
 	
 	=============================================================================
 	
+
+{% endraw %}

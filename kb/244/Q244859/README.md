@@ -6,6 +6,8 @@ permalink: /kb/244/Q244859/
 
 ## Q244859: WD97: Nothing Happens When You Click Web Page Preview
 
+{% raw %}
+
 	Article: Q244859
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -53,3 +55,5 @@ permalink: /kb/244/Q244859/
 	
 	=============================================================================
 	
+
+{% endraw %}

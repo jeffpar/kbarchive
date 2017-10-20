@@ -6,6 +6,8 @@ permalink: /kb/178/Q178234/
 
 ## Q178234: INFO: Summary List: Bugs Fixed by Visual C++ Version 4.1
 
+{% raw %}
+
 	Article: Q178234
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.1
@@ -145,3 +147,5 @@ permalink: /kb/178/Q178234/
 	
 	=============================================================================
 	
+
+{% endraw %}

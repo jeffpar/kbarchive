@@ -6,6 +6,8 @@ permalink: /kb/046/Q46820/
 
 ## Q46820: Library Support for Near, Far, and Huge Keywords
 
+{% raw %}
+
 	Article: Q46820
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.00 5.10
@@ -69,3 +71,5 @@ permalink: /kb/046/Q46820/
 	.
 	.
 	fwrite ( nearbuffer, size, count, stream);
+
+{% endraw %}

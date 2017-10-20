@@ -6,6 +6,8 @@ permalink: /kb/167/Q167775/
 
 ## Q167775: Spool32.exe Error When Printing on a Network
 
+{% raw %}
+
 	Article: Q167775
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -71,3 +73,5 @@ permalink: /kb/167/Q167775/
 	
 	=============================================================================
 	
+
+{% endraw %}

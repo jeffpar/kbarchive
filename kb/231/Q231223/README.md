@@ -6,6 +6,8 @@ permalink: /kb/231/Q231223/
 
 ## Q231223: SMS: Remote Tools Command Line Tool Fails with Valid IPX No.
 
+{% raw %}
+
 	Article: Q231223
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -73,3 +75,5 @@ permalink: /kb/231/Q231223/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180180/
 
 ## Q180180: XFOR: Attachment May Be Lost Forwarding from MSMail to Exchange
 
+{% raw %}
+
 	Article: Q180180
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -68,3 +70,5 @@ permalink: /kb/180/Q180180/
 	
 	=============================================================================
 	
+
+{% endraw %}

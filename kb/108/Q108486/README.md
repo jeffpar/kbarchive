@@ -6,6 +6,8 @@ permalink: /kb/108/Q108486/
 
 ## Q108486: Server Manager Reports Incorrect Number of Open Files
 
+{% raw %}
+
 	Article: Q108486
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -50,3 +52,5 @@ permalink: /kb/108/Q108486/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/299/Q299445/
 
 ## Q299445: Core Profile Attributes Return Empty Values or Unexpected Result
 
+{% raw %}
+
 	Article: Q299445
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -113,3 +115,5 @@ permalink: /kb/299/Q299445/
 	
 	=============================================================================
 	
+
+{% endraw %}

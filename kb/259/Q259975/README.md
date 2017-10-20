@@ -6,6 +6,8 @@ permalink: /kb/259/Q259975/
 
 ## Q259975: XADM: Error Message: Account Information Is Incorrect
 
+{% raw %}
+
 	Article: Q259975
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -62,3 +64,5 @@ permalink: /kb/259/Q259975/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183372/
 
 ## Q183372: Running Microsoft FrontPage 98 Comments and Corrections
 
+{% raw %}
+
 	Article: Q183372
 	Product(s): Microsoft Press
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/183/Q183372/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/289/Q289829/
 
 ## Q289829: Blank Spaces in Folder Name Aliases Become Underscore Characters
 
+{% raw %}
+
 	Article: Q289829
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -55,3 +57,5 @@ permalink: /kb/289/Q289829/
 	
 	=============================================================================
 	
+
+{% endraw %}

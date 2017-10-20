@@ -6,6 +6,8 @@ permalink: /kb/219/Q219261/
 
 ## Q219261: PRB: VB References Dialog Doesn't List an MFC DLL Automation Svr
 
+{% raw %}
+
 	Article: Q219261
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -129,3 +131,5 @@ permalink: /kb/219/Q219261/
 	
 	=============================================================================
 	
+
+{% endraw %}

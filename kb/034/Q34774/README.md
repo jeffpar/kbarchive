@@ -6,6 +6,8 @@ permalink: /kb/034/Q34774/
 
 ## Q34774: FIX: FWAIT Prefixes Generated for Processor Control Instructions
 
+{% raw %}
+
 	Article: Q34774
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a
@@ -68,3 +70,5 @@ permalink: /kb/034/Q34774/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/320/Q320019/
 
 ## Q320019: Dungeon Siege: Known Video Issues
 
+{% raw %}
+
 	Article: Q320019
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -621,3 +623,5 @@ permalink: /kb/320/Q320019/
 	
 	=============================================================================
 	
+
+{% endraw %}

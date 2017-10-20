@@ -6,6 +6,8 @@ permalink: /kb/200/Q200983/
 
 ## Q200983: HOWTO: How to Install Visual C++ on Terminal Server
 
+{% raw %}
+
 	Article: Q200983
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/200/Q200983/
 	
 	=============================================================================
 	
+
+{% endraw %}

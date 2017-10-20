@@ -6,6 +6,8 @@ permalink: /kb/172/Q172863/
 
 ## Q172863: SMSINST: Using 'Execute Path' in Install.log File May Fail
 
+{% raw %}
+
 	Article: Q172863
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -82,3 +84,5 @@ permalink: /kb/172/Q172863/
 	
 	=============================================================================
 	
+
+{% endraw %}

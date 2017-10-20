@@ -6,6 +6,8 @@ permalink: /kb/264/Q264991/
 
 ## Q264991: TS Loses &quot;User Must Change Password at Next Logon&quot; Property
 
+{% raw %}
+
 	Article: Q264991
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -85,3 +87,5 @@ permalink: /kb/264/Q264991/
 	
 	=============================================================================
 	
+
+{% endraw %}

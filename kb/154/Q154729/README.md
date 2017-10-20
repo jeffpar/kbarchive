@@ -6,6 +6,8 @@ permalink: /kb/154/Q154729/
 
 ## Q154729: Close Combat: How to Set Up Modem-to-Modem Play
 
+{% raw %}
+
 	Article: Q154729
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -368,3 +370,5 @@ permalink: /kb/154/Q154729/
 	
 	=============================================================================
 	
+
+{% endraw %}

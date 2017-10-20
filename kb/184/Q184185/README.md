@@ -6,6 +6,8 @@ permalink: /kb/184/Q184185/
 
 ## Q184185: XFOR: Older Versions of Exchange Server Cannot Send ETRN Command
 
+{% raw %}
+
 	Article: Q184185
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -45,3 +47,5 @@ permalink: /kb/184/Q184185/
 	
 	=============================================================================
 	
+
+{% endraw %}

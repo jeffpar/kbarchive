@@ -6,6 +6,8 @@ permalink: /kb/235/Q235692/
 
 ## Q235692: XADM: Cannot Remove Exchange Server on Clustered Server
 
+{% raw %}
+
 	Article: Q235692
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/235/Q235692/
 	
 	=============================================================================
 	
+
+{% endraw %}

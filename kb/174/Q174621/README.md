@@ -6,6 +6,8 @@ permalink: /kb/174/Q174621/
 
 ## Q174621: Margin Setting In Custom Forms are Ignored
 
+{% raw %}
+
 	Article: Q174621
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -46,3 +48,5 @@ permalink: /kb/174/Q174621/
 	
 	=============================================================================
 	
+
+{% endraw %}

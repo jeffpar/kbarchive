@@ -6,6 +6,8 @@ permalink: /kb/259/Q259269/
 
 ## Q259269: PC NTMMTA: Error Message: Setup Has Encountered a Problem
 
+{% raw %}
+
 	Article: Q259269
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -71,3 +73,5 @@ permalink: /kb/259/Q259269/
 	
 	=============================================================================
 	
+
+{% endraw %}

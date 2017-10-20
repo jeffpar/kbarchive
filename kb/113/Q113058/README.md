@@ -6,6 +6,8 @@ permalink: /kb/113/Q113058/
 
 ## Q113058: Using Interrupt 21h, Function 3Fh to Read the Keyboard
 
+{% raw %}
+
 	Article: Q113058
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a,6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -154,3 +156,5 @@ permalink: /kb/113/Q113058/
 	
 	=============================================================================
 	
+
+{% endraw %}

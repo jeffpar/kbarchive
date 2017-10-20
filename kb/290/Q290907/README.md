@@ -6,6 +6,8 @@ permalink: /kb/290/Q290907/
 
 ## Q290907: FIX: Race Condition on Heap Variable Causes AV in Oracle ODBC
 
+{% raw %}
+
 	Article: Q290907
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202,Build 2.573.4403,B
@@ -77,3 +79,5 @@ permalink: /kb/290/Q290907/
 	
 	=============================================================================
 	
+
+{% endraw %}

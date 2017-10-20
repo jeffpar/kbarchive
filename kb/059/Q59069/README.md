@@ -6,6 +6,8 @@ permalink: /kb/059/Q59069/
 
 ## Q59069: FIX: NMAKE File Hangs Machine When Right Parenthesis Missing
 
+{% raw %}
+
 	Article: Q59069
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.01,1.1,1.11; OS/2:1.11
@@ -76,3 +78,5 @@ permalink: /kb/059/Q59069/
 	
 	=============================================================================
 	
+
+{% endraw %}

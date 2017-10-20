@@ -6,6 +6,8 @@ permalink: /kb/149/Q149322/
 
 ## Q149322: FIX: Tag Changed Incorrectly After Linking to Invalid ImageList
 
+{% raw %}
+
 	Article: Q149322
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -76,3 +78,5 @@ permalink: /kb/149/Q149322/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174741/
 
 ## Q174741: XFOR: Exchange Dirsync Server Allows Empty Admin Mailbox
 
+{% raw %}
+
 	Article: Q174741
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -51,3 +53,5 @@ permalink: /kb/174/Q174741/
 	
 	=============================================================================
 	
+
+{% endraw %}

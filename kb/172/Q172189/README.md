@@ -6,6 +6,8 @@ permalink: /kb/172/Q172189/
 
 ## Q172189: Routing and Remote Access with a Null Serial Cable
 
+{% raw %}
+
 	Article: Q172189
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -165,3 +167,5 @@ permalink: /kb/172/Q172189/
 	
 	=============================================================================
 	
+
+{% endraw %}

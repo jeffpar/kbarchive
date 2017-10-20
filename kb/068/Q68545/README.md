@@ -6,6 +6,8 @@ permalink: /kb/068/Q68545/
 
 ## Q68545: File Save As Check Boxes in Windows Write
 
+{% raw %}
+
 	Article: Q68545
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -36,3 +38,5 @@ permalink: /kb/068/Q68545/
 	
 	=============================================================================
 	
+
+{% endraw %}

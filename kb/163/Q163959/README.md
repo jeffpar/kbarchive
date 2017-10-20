@@ -6,6 +6,8 @@ permalink: /kb/163/Q163959/
 
 ## Q163959: FIX: .dct File Grows Larger After Each Compile
 
+{% raw %}
+
 	Article: Q163959
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0a 3.0 3.0b 5.0
@@ -81,3 +83,5 @@ permalink: /kb/163/Q163959/
 	
 	=============================================================================
 	
+
+{% endraw %}

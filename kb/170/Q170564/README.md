@@ -6,6 +6,8 @@ permalink: /kb/170/Q170564/
 
 ## Q170564: WD97: Objects Inserted as Inline by Default in SR-1
 
+{% raw %}
+
 	Article: Q170564
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 1 (SR-1)
@@ -129,3 +131,5 @@ permalink: /kb/170/Q170564/
 	
 	=============================================================================
 	
+
+{% endraw %}

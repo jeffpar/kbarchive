@@ -6,6 +6,8 @@ permalink: /kb/187/Q187882/
 
 ## Q187882: Memory Allocation Error During MS-DOS Share Access
 
+{% raw %}
+
 	Article: Q187882
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.11,6.22
@@ -53,3 +55,5 @@ permalink: /kb/187/Q187882/
 	
 	=============================================================================
 	
+
+{% endraw %}

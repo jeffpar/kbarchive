@@ -6,6 +6,8 @@ permalink: /kb/119/Q119392/
 
 ## Q119392: &quot;None Available in This Situation&quot; Appears in List
 
+{% raw %}
+
 	Article: Q119392
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -47,3 +49,5 @@ permalink: /kb/119/Q119392/
 	
 	=============================================================================
 	
+
+{% endraw %}

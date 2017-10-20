@@ -6,6 +6,8 @@ permalink: /kb/165/Q165941/
 
 ## Q165941: RAS Fails w/ Error 1068 &quot;RIP for NWLINK Failed to Start&quot;
 
+{% raw %}
+
 	Article: Q165941
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -61,3 +63,5 @@ permalink: /kb/165/Q165941/
 	
 	=============================================================================
 	
+
+{% endraw %}

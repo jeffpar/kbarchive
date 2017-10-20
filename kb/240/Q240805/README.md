@@ -6,6 +6,8 @@ permalink: /kb/240/Q240805/
 
 ## Q240805: Err Msg: The Dependency Service Does Not Exist or Is Marked...
 
+{% raw %}
+
 	Article: Q240805
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/240/Q240805/
 	
 	=============================================================================
 	
+
+{% endraw %}

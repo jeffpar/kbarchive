@@ -6,6 +6,8 @@ permalink: /kb/040/Q40886/
 
 ## Q40886: PUT Statement Correction, Page 342 QB Language Reference
 
+{% raw %}
+
 	Article: Q40886
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -35,3 +37,5 @@ permalink: /kb/040/Q40886/
 	BASIC Language Reference" manual for Version 4.50 and in the
 	"Microsoft BASIC 7.0: Language Reference" manual for Microsoft BASIC
 	PDS Version 7.00 for MS-DOS and MS OS/2.
+
+{% endraw %}

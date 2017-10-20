@@ -6,6 +6,8 @@ permalink: /kb/130/Q130074/
 
 ## Q130074: User Profiles Default to Global SENDTO Directory
 
+{% raw %}
+
 	Article: Q130074
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -93,3 +95,5 @@ permalink: /kb/130/Q130074/
 	
 	=============================================================================
 	
+
+{% endraw %}

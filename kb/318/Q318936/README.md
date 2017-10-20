@@ -6,6 +6,8 @@ permalink: /kb/318/Q318936/
 
 ## Q318936: Event ID 3051 Is Caused by an Incorrect Netlogon Registry Key
 
+{% raw %}
+
 	Article: Q318936
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -98,3 +100,5 @@ permalink: /kb/318/Q318936/
 	
 	=============================================================================
 	
+
+{% endraw %}

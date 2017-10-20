@@ -6,6 +6,8 @@ permalink: /kb/240/Q240955/
 
 ## Q240955: Multithreaded Program May Wait Forever on WaitForMultipleObjects
 
+{% raw %}
+
 	Article: Q240955
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5,4.0 SP6
@@ -90,3 +92,5 @@ permalink: /kb/240/Q240955/
 	
 	=============================================================================
 	
+
+{% endraw %}

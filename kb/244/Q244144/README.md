@@ -6,6 +6,8 @@ permalink: /kb/244/Q244144/
 
 ## Q244144: XCON: Exchange MTA Stops When Restarting After Abnormal Shutdown
 
+{% raw %}
+
 	Article: Q244144
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -75,3 +77,5 @@ permalink: /kb/244/Q244144/
 	
 	=============================================================================
 	
+
+{% endraw %}

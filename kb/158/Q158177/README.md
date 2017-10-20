@@ -6,6 +6,8 @@ permalink: /kb/158/Q158177/
 
 ## Q158177: Games: How to Turn off Screen Savers
 
+{% raw %}
+
 	Article: Q158177
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0,3.0
@@ -72,3 +74,5 @@ permalink: /kb/158/Q158177/
 	
 	=============================================================================
 	
+
+{% endraw %}

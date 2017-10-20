@@ -6,6 +6,8 @@ permalink: /kb/153/Q153600/
 
 ## Q153600: Missing Extended Memory After Restarting from MS-DOS Mode
 
+{% raw %}
+
 	Article: Q153600
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2
@@ -65,3 +67,5 @@ permalink: /kb/153/Q153600/
 	
 	=============================================================================
 	
+
+{% endraw %}

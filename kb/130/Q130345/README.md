@@ -6,6 +6,8 @@ permalink: /kb/130/Q130345/
 
 ## Q130345: How to Retreive Database Properties in a Program
 
+{% raw %}
+
 	Article: Q130345
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -129,3 +131,5 @@ permalink: /kb/130/Q130345/
 	
 	=============================================================================
 	
+
+{% endraw %}

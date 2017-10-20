@@ -6,6 +6,8 @@ permalink: /kb/112/Q112084/
 
 ## Q112084: PRB: SET TALK ON Does Not Work with SET STATUS BAR ON
 
+{% raw %}
+
 	Article: Q112084
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b; WINDOWS:2.5,2.5a,2.5b,3.0,3.0b,5.0,5.0a
@@ -90,3 +92,5 @@ permalink: /kb/112/Q112084/
 	
 	=============================================================================
 	
+
+{% endraw %}

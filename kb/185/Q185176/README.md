@@ -6,6 +6,8 @@ permalink: /kb/185/Q185176/
 
 ## Q185176: XADM: Setup Fails Creating A New Site With Error c1030b0d
 
+{% raw %}
+
 	Article: Q185176
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -61,3 +63,5 @@ permalink: /kb/185/Q185176/
 	
 	=============================================================================
 	
+
+{% endraw %}

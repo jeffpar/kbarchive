@@ -6,6 +6,8 @@ permalink: /kb/044/Q44761/
 
 ## Q44761: ALT+File+Print After CTRL+BREAK May Hang Machine Using DTK ROM
 
+{% raw %}
+
 	Article: Q44761
 	Product(s): See article
 	Version(s): 4.50
@@ -19,3 +21,5 @@ permalink: /kb/044/Q44761/
 	corrected by updating the machine's BIOS.
 	
 	Microsoft has not confirmed this information.
+
+{% endraw %}

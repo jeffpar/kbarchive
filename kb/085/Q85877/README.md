@@ -6,6 +6,8 @@ permalink: /kb/085/Q85877/
 
 ## Q85877: FIX: MASM BELL and SNAP TSR Program Examples Incorrect
 
+{% raw %}
+
 	Article: Q85877
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -96,3 +98,5 @@ permalink: /kb/085/Q85877/
 	
 	=============================================================================
 	
+
+{% endraw %}

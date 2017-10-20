@@ -6,6 +6,8 @@ permalink: /kb/129/Q129872/
 
 ## Q129872: PRB: Wrong Number of Arguments Error When Call Math Functions
 
+{% raw %}
+
 	Article: Q129872
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -90,3 +92,5 @@ permalink: /kb/129/Q129872/
 	
 	=============================================================================
 	
+
+{% endraw %}

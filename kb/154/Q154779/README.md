@@ -6,6 +6,8 @@ permalink: /kb/154/Q154779/
 
 ## Q154779: Close Combat Err Msg: Video Not Available, Cannot Find...
 
+{% raw %}
+
 	Article: Q154779
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -101,3 +103,5 @@ permalink: /kb/154/Q154779/
 	
 	=============================================================================
 	
+
+{% endraw %}

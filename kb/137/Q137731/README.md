@@ -6,6 +6,8 @@ permalink: /kb/137/Q137731/
 
 ## Q137731: Some Mapped NetWare Drives Incorrect in Windows Explorer
 
+{% raw %}
+
 	Article: Q137731
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -66,3 +68,5 @@ permalink: /kb/137/Q137731/
 	
 	=============================================================================
 	
+
+{% endraw %}

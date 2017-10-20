@@ -6,6 +6,8 @@ permalink: /kb/166/Q166717/
 
 ## Q166717: DOC: Instructions for Statically Linking to Registrar Code
 
+{% raw %}
+
 	Article: Q166717
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1
@@ -83,3 +85,5 @@ permalink: /kb/166/Q166717/
 	
 	=============================================================================
 	
+
+{% endraw %}

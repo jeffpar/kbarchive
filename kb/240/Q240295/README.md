@@ -6,6 +6,8 @@ permalink: /kb/240/Q240295/
 
 ## Q240295: CGI Scripts on Multi Processor System Cause ERROR_PIPE_BUSY
 
+{% raw %}
+
 	Article: Q240295
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0,4.0,5.0
@@ -72,3 +74,5 @@ permalink: /kb/240/Q240295/
 	
 	=============================================================================
 	
+
+{% endraw %}

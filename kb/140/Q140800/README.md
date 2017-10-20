@@ -6,6 +6,8 @@ permalink: /kb/140/Q140800/
 
 ## Q140800: TN3270E Print Job Hangs in Print Manager
 
+{% raw %}
+
 	Article: Q140800
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -102,3 +104,5 @@ permalink: /kb/140/Q140800/
 	
 	=============================================================================
 	
+
+{% endraw %}

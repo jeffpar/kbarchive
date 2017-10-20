@@ -6,6 +6,8 @@ permalink: /kb/043/Q43587/
 
 ## Q43587: Why _setvideomode() May Fail to Set Some Modes
 
+{% raw %}
+
 	Article: Q43587
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -37,3 +39,5 @@ permalink: /kb/043/Q43587/
 	4. Many VGA cards have non-standard extended modes that are unique to
 	   those cards. _setvideomode() supports only standard video modes
 	   and, thus, will not recognize the extended modes.
+
+{% endraw %}

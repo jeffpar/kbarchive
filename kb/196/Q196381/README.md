@@ -6,6 +6,8 @@ permalink: /kb/196/Q196381/
 
 ## Q196381: XCON: Messages Queue Over X.400 Connectors Through Firewall
 
+{% raw %}
+
 	Article: Q196381
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -168,3 +170,5 @@ permalink: /kb/196/Q196381/
 	
 	=============================================================================
 	
+
+{% endraw %}

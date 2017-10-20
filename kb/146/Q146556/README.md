@@ -6,6 +6,8 @@ permalink: /kb/146/Q146556/
 
 ## Q146556: XFOR: Method Used by IMS to Obtain IP Address
 
+{% raw %}
+
 	Article: Q146556
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -65,3 +67,5 @@ permalink: /kb/146/Q146556/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/215/Q215401/
 
 ## Q215401: BUG: Cannot Use a Constant to Define the Size of Array in VBCE
 
+{% raw %}
+
 	Article: Q215401
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -63,3 +65,5 @@ permalink: /kb/215/Q215401/
 	
 	=============================================================================
 	
+
+{% endraw %}

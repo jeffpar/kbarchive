@@ -6,6 +6,8 @@ permalink: /kb/258/Q258652/
 
 ## Q258652: Baseball 2001: Game Graphics Are Not Displayed Properly
 
+{% raw %}
+
 	Article: Q258652
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/258/Q258652/
 	
 	=============================================================================
 	
+
+{% endraw %}

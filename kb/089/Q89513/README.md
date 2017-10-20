@@ -6,6 +6,8 @@ permalink: /kb/089/Q89513/
 
 ## Q89513: LAN Man 2.1 Test Summary (DigiBoard DigiCHANNEL C/X MCA)
 
+{% raw %}
+
 	Article: Q89513
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/089/Q89513/
 	
 	=============================================================================
 	
+
+{% endraw %}

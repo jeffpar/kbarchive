@@ -6,6 +6,8 @@ permalink: /kb/083/Q83546/
 
 ## Q83546: Wrong Port Name in Windows 3.1 Getting Started Guide
 
+{% raw %}
+
 	Article: Q83546
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/083/Q83546/
 	
 	=============================================================================
 	
+
+{% endraw %}

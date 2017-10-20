@@ -6,6 +6,8 @@ permalink: /kb/129/Q129094/
 
 ## Q129094: FIX: GP Fault in Visual C++ When Separators in Top Level Menu
 
+{% raw %}
+
 	Article: Q129094
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -90,3 +92,5 @@ permalink: /kb/129/Q129094/
 	
 	=============================================================================
 	
+
+{% endraw %}

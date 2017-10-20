@@ -6,6 +6,8 @@ permalink: /kb/176/Q176812/
 
 ## Q176812: XADM: 5.5 Exchange Admin Indicates Incorrect Build Number
 
+{% raw %}
+
 	Article: Q176812
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -43,3 +45,5 @@ permalink: /kb/176/Q176812/
 	
 	=============================================================================
 	
+
+{% endraw %}

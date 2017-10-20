@@ -6,6 +6,8 @@ permalink: /kb/141/Q141680/
 
 ## Q141680: BUG: Error Occurs When Printing a Form Stored in an Array
 
+{% raw %}
+
 	Article: Q141680
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -108,3 +110,5 @@ permalink: /kb/141/Q141680/
 	
 	=============================================================================
 	
+
+{% endraw %}

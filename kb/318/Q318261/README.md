@@ -6,6 +6,8 @@ permalink: /kb/318/Q318261/
 
 ## Q318261: FIX: Grid Lines Assume the Windows Font Color
 
+{% raw %}
+
 	Article: Q318261
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -76,3 +78,5 @@ permalink: /kb/318/Q318261/
 	
 	=============================================================================
 	
+
+{% endraw %}

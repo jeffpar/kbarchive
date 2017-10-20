@@ -6,6 +6,8 @@ permalink: /kb/176/Q176270/
 
 ## Q176270: Treewrap.exe - Sample TreeView Control in Visual FoxPro
 
+{% raw %}
+
 	Article: Q176270
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -154,3 +156,5 @@ permalink: /kb/176/Q176270/
 	
 	=============================================================================
 	
+
+{% endraw %}

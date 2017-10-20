@@ -6,6 +6,8 @@ permalink: /kb/194/Q194180/
 
 ## Q194180: FIX: Unregistering ATL Server Causes Access Violation
 
+{% raw %}
+
 	Article: Q194180
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -93,3 +95,5 @@ permalink: /kb/194/Q194180/
 	
 	=============================================================================
 	
+
+{% endraw %}

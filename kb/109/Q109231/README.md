@@ -6,6 +6,8 @@ permalink: /kb/109/Q109231/
 
 ## Q109231: How to Record Macros with FoxPro for Macintosh
 
+{% raw %}
+
 	Article: Q109231
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -56,3 +58,5 @@ permalink: /kb/109/Q109231/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135768/
 
 ## Q135768: SMS: ResultSharePoint Entry Incorrectly Documented
 
+{% raw %}
+
 	Article: Q135768
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -48,3 +50,5 @@ permalink: /kb/135/Q135768/
 	
 	=============================================================================
 	
+
+{% endraw %}

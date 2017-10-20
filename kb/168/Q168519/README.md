@@ -6,6 +6,8 @@ permalink: /kb/168/Q168519/
 
 ## Q168519: PRB: Search Using OpenFile API Instead of Dir/Dir&#36; Function
 
+{% raw %}
+
 	Article: Q168519
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -126,3 +128,5 @@ permalink: /kb/168/Q168519/
 	
 	=============================================================================
 	
+
+{% endraw %}

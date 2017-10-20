@@ -6,6 +6,8 @@ permalink: /kb/062/Q62267/
 
 ## Q62267: Problem Using SETMEM and SHELL in QuickBASIC 4.50
 
+{% raw %}
+
 	Article: Q62267
 	Product(s): See article
 	Version(s): 4.50
@@ -44,3 +46,5 @@ permalink: /kb/062/Q62267/
 	                                    ' problem is reproduced.
 	   differ& = before& - after&
 	   PRINT " Difference  ";differ&    ' This should be 0.
+
+{% endraw %}

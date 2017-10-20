@@ -6,6 +6,8 @@ permalink: /kb/049/Q49502/
 
 ## Q49502: PRB: NMAKE Runs But Does Not Produce OBJ and EXE Files
 
+{% raw %}
+
 	Article: Q49502
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.01,1.11,1.12,1.13,1.2,1.3,1.4; OS/2:1.01,1.11,1.21
@@ -70,3 +72,5 @@ permalink: /kb/049/Q49502/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191378/
 
 ## Q191378: WD97: Print: Odd Pages and Even Pages Have Opposite Effect
 
+{% raw %}
+
 	Article: Q191378
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/191/Q191378/
 	
 	=============================================================================
 	
+
+{% endraw %}

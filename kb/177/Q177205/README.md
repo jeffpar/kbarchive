@@ -6,6 +6,8 @@ permalink: /kb/177/Q177205/
 
 ## Q177205: How to Add an OEM SCSI Controller During SBS Installation
 
+{% raw %}
+
 	Article: Q177205
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0a,4.5
@@ -86,3 +88,5 @@ permalink: /kb/177/Q177205/
 	
 	=============================================================================
 	
+
+{% endraw %}

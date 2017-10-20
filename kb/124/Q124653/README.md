@@ -6,6 +6,8 @@ permalink: /kb/124/Q124653/
 
 ## Q124653: Error Reading WINS Event Detail on a Computer Without WINS
 
+{% raw %}
+
 	Article: Q124653
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -54,3 +56,5 @@ permalink: /kb/124/Q124653/
 	
 	=============================================================================
 	
+
+{% endraw %}

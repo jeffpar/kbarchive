@@ -6,6 +6,8 @@ permalink: /kb/145/Q145663/
 
 ## Q145663: PC NTMMTA: Using the NT MMTA and RAS on the Same Server
 
+{% raw %}
+
 	Article: Q145663
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5; :3.5
@@ -76,3 +78,5 @@ permalink: /kb/145/Q145663/
 	
 	=============================================================================
 	
+
+{% endraw %}

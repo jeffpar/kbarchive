@@ -6,6 +6,8 @@ permalink: /kb/107/Q107353/
 
 ## Q107353: Real-Time Pass Through Not Possible with the WSS Card
 
+{% raw %}
+
 	Article: Q107353
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.00 1.00a 2.00
@@ -45,3 +47,5 @@ permalink: /kb/107/Q107353/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192610/
 
 ## Q192610: Research Organizer Err Msg: Setup Could Not Open the DLL...
 
+{% raw %}
+
 	Article: Q192610
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -86,3 +88,5 @@ permalink: /kb/192/Q192610/
 	
 	=============================================================================
 	
+
+{% endraw %}

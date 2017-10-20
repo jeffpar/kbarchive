@@ -6,6 +6,8 @@ permalink: /kb/139/Q139984/
 
 ## Q139984: Windows NT Hangs Running Display Test from Control Panel
 
+{% raw %}
+
 	Article: Q139984
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -65,3 +67,5 @@ permalink: /kb/139/Q139984/
 	
 	=============================================================================
 	
+
+{% endraw %}

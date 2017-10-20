@@ -6,6 +6,8 @@ permalink: /kb/107/Q107658/
 
 ## Q107658: Writer: No Network Setup Option on Lantastic
 
+{% raw %}
+
 	Article: Q107658
 	Product(s): Microsoft Home Kids Products
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/107/Q107658/
 	
 	=============================================================================
 	
+
+{% endraw %}

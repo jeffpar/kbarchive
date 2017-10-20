@@ -6,6 +6,8 @@ permalink: /kb/137/Q137761/
 
 ## Q137761: PPT7: Color Mapping Errors Between Windows 95 and NT 3.51
 
+{% raw %}
+
 	Article: Q137761
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -57,3 +59,5 @@ permalink: /kb/137/Q137761/
 	
 	=============================================================================
 	
+
+{% endraw %}

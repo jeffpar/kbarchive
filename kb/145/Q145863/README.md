@@ -6,6 +6,8 @@ permalink: /kb/145/Q145863/
 
 ## Q145863: FIX: Clear All Guides in Dialog Editor Causes Access Violation
 
+{% raw %}
+
 	Article: Q145863
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -84,3 +86,5 @@ permalink: /kb/145/Q145863/
 	
 	=============================================================================
 	
+
+{% endraw %}

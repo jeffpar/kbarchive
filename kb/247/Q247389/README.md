@@ -6,6 +6,8 @@ permalink: /kb/247/Q247389/
 
 ## Q247389: IIS: How to Disable Caching of Specific MIME Types
 
+{% raw %}
+
 	Article: Q247389
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -163,3 +165,5 @@ permalink: /kb/247/Q247389/
 	
 	=============================================================================
 	
+
+{% endraw %}

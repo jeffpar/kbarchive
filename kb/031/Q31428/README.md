@@ -6,6 +6,8 @@ permalink: /kb/031/Q31428/
 
 ## Q31428: Making Screen MODE Such as CO40 Remain After Program Is Run
 
+{% raw %}
+
 	Article: Q31428
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -60,3 +62,5 @@ permalink: /kb/031/Q31428/
 	OPEN "CON" FOR OUTPUT AS 1
 	PRINT #1, escape$ + screen1$ + "Wow, 40 by 25"
 	CLOSE 1
+
+{% endraw %}

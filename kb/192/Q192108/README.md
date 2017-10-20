@@ -6,6 +6,8 @@ permalink: /kb/192/Q192108/
 
 ## Q192108: FIX: CUSTOMWZ Sample Partially Overwrites Custom AppWizard Code
 
+{% raw %}
+
 	Article: Q192108
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -108,3 +110,5 @@ permalink: /kb/192/Q192108/
 	
 	=============================================================================
 	
+
+{% endraw %}

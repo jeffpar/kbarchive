@@ -6,6 +6,8 @@ permalink: /kb/109/Q109491/
 
 ## Q109491: SYSINI.WRI from Windows for Workgroups 3.11 (Part 1 of 3)
 
+{% raw %}
+
 	Article: Q109491
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -359,3 +361,5 @@ permalink: /kb/109/Q109491/
 	
 	=============================================================================
 	
+
+{% endraw %}

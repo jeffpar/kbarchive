@@ -6,6 +6,8 @@ permalink: /kb/247/Q247717/
 
 ## Q247717: Repeatedly Loading an XML Document May Crash in MSXML.dll
 
+{% raw %}
+
 	Article: Q247717
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:5; winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/247/Q247717/
 	
 	=============================================================================
 	
+
+{% endraw %}

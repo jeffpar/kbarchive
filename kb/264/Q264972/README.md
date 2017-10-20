@@ -6,6 +6,8 @@ permalink: /kb/264/Q264972/
 
 ## Q264972: Event ID 5072 and Error 5216 Appear When You Restart Cluster Ser
 
+{% raw %}
+
 	Article: Q264972
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/264/Q264972/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139763/
 
 ## Q139763: Julia Child: Cannot Minimize Program When Playing a Lesson
 
+{% raw %}
+
 	Article: Q139763
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/139/Q139763/
 	
 	=============================================================================
 	
+
+{% endraw %}

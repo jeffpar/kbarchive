@@ -6,6 +6,8 @@ permalink: /kb/030/Q30807/
 
 ## Q30807: MASM 5.10 OS2.DOC: OS/2 Call Summary - Memory Management
 
+{% raw %}
+
 	Article: Q30807
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -75,3 +77,5 @@ permalink: /kb/030/Q30807/
 	   @DosSubSet - Initializes a segment for suballocation, or changes the size
 	                of a previous suballocation
 	   Parameters - SegSelector:W, BlockOffset:W, Size:W
+
+{% endraw %}

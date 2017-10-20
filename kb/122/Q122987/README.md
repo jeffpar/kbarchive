@@ -6,6 +6,8 @@ permalink: /kb/122/Q122987/
 
 ## Q122987: VSHARE.386 Does Not Work with Novell DOS 6.0 or 7.0
 
+{% raw %}
+
 	Article: Q122987
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -121,3 +123,5 @@ permalink: /kb/122/Q122987/
 	
 	=============================================================================
 	
+
+{% endraw %}

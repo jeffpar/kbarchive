@@ -6,6 +6,8 @@ permalink: /kb/069/Q69235/
 
 ## Q69235: Mac Srv: Err Msg: ...Mail Server Could Not Be Loaded...
 
+{% raw %}
+
 	Article: Q69235
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1a,3.1c,3.1d
@@ -51,3 +53,5 @@ permalink: /kb/069/Q69235/
 	
 	=============================================================================
 	
+
+{% endraw %}

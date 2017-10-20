@@ -6,6 +6,8 @@ permalink: /kb/254/Q254790/
 
 ## Q254790: Desktop Refreshes When You Access the Control Panel
 
+{% raw %}
+
 	Article: Q254790
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -52,3 +54,5 @@ permalink: /kb/254/Q254790/
 	
 	=============================================================================
 	
+
+{% endraw %}

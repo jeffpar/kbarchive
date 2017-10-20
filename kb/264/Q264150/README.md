@@ -6,6 +6,8 @@ permalink: /kb/264/Q264150/
 
 ## Q264150: StarLancer: Choppy Sounds During Introductory Movie and in Game
 
+{% raw %}
+
 	Article: Q264150
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -99,3 +101,5 @@ permalink: /kb/264/Q264150/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274484/
 
 ## Q274484: HOWTO: Grant Users the Access to Add Visual Basic Components
 
+{% raw %}
+
 	Article: Q274484
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2000,4.0,6.0
@@ -104,3 +106,5 @@ permalink: /kb/274/Q274484/
 	
 	=============================================================================
 	
+
+{% endraw %}

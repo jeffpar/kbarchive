@@ -6,6 +6,8 @@ permalink: /kb/124/Q124851/
 
 ## Q124851: MSB Human: Program Hangs in Classroom
 
+{% raw %}
+
 	Article: Q124851
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -92,3 +94,5 @@ permalink: /kb/124/Q124851/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142703/
 
 ## Q142703: Setting MS-DOS Client 3.0 to Automatically Log On to Domain
 
+{% raw %}
+
 	Article: Q142703
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:3.0,3.5,3.51
@@ -118,3 +120,5 @@ permalink: /kb/142/Q142703/
 	
 	=============================================================================
 	
+
+{% endraw %}

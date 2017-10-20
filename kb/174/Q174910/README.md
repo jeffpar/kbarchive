@@ -6,6 +6,8 @@ permalink: /kb/174/Q174910/
 
 ## Q174910: Bookshelf 98: How to Get 360 Views Zoom Support Within Program
 
+{% raw %}
+
 	Article: Q174910
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -86,3 +88,5 @@ permalink: /kb/174/Q174910/
 	
 	=============================================================================
 	
+
+{% endraw %}

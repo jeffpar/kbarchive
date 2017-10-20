@@ -6,6 +6,8 @@ permalink: /kb/066/Q66513/
 
 ## Q66513: Memory Requirements for Real-Mode CodeView (CV.EXE)
 
+{% raw %}
+
 	Article: Q66513
 	Product(s): See article
 	Version(s): 3.00 3.10 3.11 | 3.00 3.10 3.11
@@ -80,3 +82,5 @@ permalink: /kb/066/Q66513/
 	use extended memory. If extended memory is unavailable, CV looks for
 	expanded memory. CV will use disk overlays on its own only if expanded
 	memory is not found.
+
+{% endraw %}

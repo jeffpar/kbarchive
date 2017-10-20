@@ -6,6 +6,8 @@ permalink: /kb/107/Q107670/
 
 ## Q107670: Writer/Artist: Directory Name Disappears on Network Install
 
+{% raw %}
+
 	Article: Q107670
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -67,3 +69,5 @@ permalink: /kb/107/Q107670/
 	
 	=============================================================================
 	
+
+{% endraw %}

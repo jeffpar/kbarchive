@@ -6,6 +6,8 @@ permalink: /kb/300/Q300584/
 
 ## Q300584: Deleting a cancelled user tile in MSN Explorer 6.0
 
+{% raw %}
+
 	Article: Q300584
 	Product(s): The Microsoft Network
 	Version(s): 6.0
@@ -191,3 +193,5 @@ permalink: /kb/300/Q300584/
 	
 	=============================================================================
 	
+
+{% endraw %}

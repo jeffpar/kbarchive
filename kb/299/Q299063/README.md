@@ -6,6 +6,8 @@ permalink: /kb/299/Q299063/
 
 ## Q299063: FIX: Print Preview Appears Inside Debug Frame
 
+{% raw %}
+
 	Article: Q299063
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -75,3 +77,5 @@ permalink: /kb/299/Q299063/
 	
 	=============================================================================
 	
+
+{% endraw %}

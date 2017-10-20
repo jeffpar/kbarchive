@@ -6,6 +6,8 @@ permalink: /kb/090/Q90928/
 
 ## Q90928: MSIPX and NETX Command Line Switches with WFWG
 
+{% raw %}
+
 	Article: Q90928
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -85,3 +87,5 @@ permalink: /kb/090/Q90928/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148488/
 
 ## Q148488: XCLN: British Dictionary Not Enabled by Default
 
+{% raw %}
+
 	Article: Q148488
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -60,3 +62,5 @@ permalink: /kb/148/Q148488/
 	
 	=============================================================================
 	
+
+{% endraw %}

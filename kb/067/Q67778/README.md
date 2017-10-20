@@ -6,6 +6,8 @@ permalink: /kb/067/Q67778/
 
 ## Q67778: C1001: Internal Compiler Error: regMD.c, Line 1017
 
+{% raw %}
+
 	Article: Q67778
 	Product(s): See article
 	Version(s): 6.00a  | 6.00a
@@ -48,3 +50,5 @@ permalink: /kb/067/Q67778/
 	   offending optimizations for the particular function.
 	
 	3. Compile under the small or medium memory models.
+
+{% endraw %}

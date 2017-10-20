@@ -6,6 +6,8 @@ permalink: /kb/242/Q242421/
 
 ## Q242421: SMS: Offer Summarizer May Process .sum Files Out of Order
 
+{% raw %}
+
 	Article: Q242421
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -70,3 +72,5 @@ permalink: /kb/242/Q242421/
 	
 	=============================================================================
 	
+
+{% endraw %}

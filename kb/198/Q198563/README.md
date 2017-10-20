@@ -6,6 +6,8 @@ permalink: /kb/198/Q198563/
 
 ## Q198563: XFOR: Replies to Some Internet Mail Messages Fail
 
+{% raw %}
+
 	Article: Q198563
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/198/Q198563/
 	
 	=============================================================================
 	
+
+{% endraw %}

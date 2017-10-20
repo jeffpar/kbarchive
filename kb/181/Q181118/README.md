@@ -6,6 +6,8 @@ permalink: /kb/181/Q181118/
 
 ## Q181118: SMS: Security Considerations for the PCM Service Account
 
+{% raw %}
+
 	Article: Q181118
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -166,3 +168,5 @@ permalink: /kb/181/Q181118/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175283/
 
 ## Q175283: XADM: How to Run PerfWiz in Silent Mode or Batch Mode
 
+{% raw %}
+
 	Article: Q175283
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -154,3 +156,5 @@ permalink: /kb/175/Q175283/
 	
 	=============================================================================
 	
+
+{% endraw %}

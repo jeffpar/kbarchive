@@ -6,6 +6,8 @@ permalink: /kb/178/Q178147/
 
 ## Q178147: Unable to Save Typelib Changed in Component Builder
 
+{% raw %}
+
 	Article: Q178147
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0
@@ -64,3 +66,5 @@ permalink: /kb/178/Q178147/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/100/Q100516/
 
 ## Q100516: Error 2 Stops OTN Installation of DCA Token Ring Adapters
 
+{% raw %}
+
 	Article: Q100516
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -49,3 +51,5 @@ permalink: /kb/100/Q100516/
 	
 	=============================================================================
 	
+
+{% endraw %}

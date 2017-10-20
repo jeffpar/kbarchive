@@ -6,6 +6,8 @@ permalink: /kb/177/Q177764/
 
 ## Q177764: XADM: Server Monitor Cannot Restart Services On Cluster Server
 
+{% raw %}
+
 	Article: Q177764
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -39,3 +41,5 @@ permalink: /kb/177/Q177764/
 	
 	=============================================================================
 	
+
+{% endraw %}

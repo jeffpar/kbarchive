@@ -6,6 +6,8 @@ permalink: /kb/264/Q264330/
 
 ## Q264330: XFOR: Internet Mail Service Relays Messages Despite Restrictions
 
+{% raw %}
+
 	Article: Q264330
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -72,3 +74,5 @@ permalink: /kb/264/Q264330/
 	
 	=============================================================================
 	
+
+{% endraw %}

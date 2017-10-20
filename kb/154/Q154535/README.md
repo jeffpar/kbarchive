@@ -6,6 +6,8 @@ permalink: /kb/154/Q154535/
 
 ## Q154535: Multiple Instances of Network Interface in Performance Monitor
 
+{% raw %}
+
 	Article: Q154535
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -62,3 +64,5 @@ permalink: /kb/154/Q154535/
 	
 	=============================================================================
 	
+
+{% endraw %}

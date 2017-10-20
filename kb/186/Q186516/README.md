@@ -6,6 +6,8 @@ permalink: /kb/186/Q186516/
 
 ## Q186516: Terminal Server Commands: FLATTEMP
 
+{% raw %}
+
 	Article: Q186516
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -115,3 +117,5 @@ permalink: /kb/186/Q186516/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/184/Q184484/
 
 ## Q184484: Err Msg: HTTP/1.0 403 Access Forbidden
 
+{% raw %}
+
 	Article: Q184484
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0
@@ -61,3 +63,5 @@ permalink: /kb/184/Q184484/
 	
 	=============================================================================
 	
+
+{% endraw %}

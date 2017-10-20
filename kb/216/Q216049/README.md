@@ -6,6 +6,8 @@ permalink: /kb/216/Q216049/
 
 ## Q216049: XCLN: MAPIResolveName Doesn't Properly Handle DBCS Strings
 
+{% raw %}
+
 	Article: Q216049
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -71,3 +73,5 @@ permalink: /kb/216/Q216049/
 	
 	=============================================================================
 	
+
+{% endraw %}

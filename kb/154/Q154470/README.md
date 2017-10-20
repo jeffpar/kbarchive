@@ -6,6 +6,8 @@ permalink: /kb/154/Q154470/
 
 ## Q154470: BUG: Long File Name Working Directory Not Created
 
+{% raw %}
+
 	Article: Q154470
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/154/Q154470/
 	
 	=============================================================================
 	
+
+{% endraw %}

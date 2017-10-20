@@ -6,6 +6,8 @@ permalink: /kb/129/Q129607/
 
 ## Q129607: Printer Connected to Redirected Parallel Port Appears as Local
 
+{% raw %}
+
 	Article: Q129607
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/129/Q129607/
 	
 	=============================================================================
 	
+
+{% endraw %}

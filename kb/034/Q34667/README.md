@@ -6,6 +6,8 @@ permalink: /kb/034/Q34667/
 
 ## Q34667: No Warning on Immediate Value Out of Range
 
+{% raw %}
+
 	Article: Q34667
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -28,3 +30,5 @@ permalink: /kb/034/Q34667/
 	assembler can't tell if the immediate value is a negative number or an
 	unsigned number that is out of bounds. In this case, MASM will not
 	generate an error message.
+
+{% endraw %}

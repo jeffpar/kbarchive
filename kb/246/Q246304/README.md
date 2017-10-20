@@ -6,6 +6,8 @@ permalink: /kb/246/Q246304/
 
 ## Q246304: Debugging Ported Code
 
+{% raw %}
+
 	Article: Q246304
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2.1,2.2.2,2.2.3,2.2.4
@@ -62,3 +64,5 @@ permalink: /kb/246/Q246304/
 	
 	=============================================================================
 	
+
+{% endraw %}

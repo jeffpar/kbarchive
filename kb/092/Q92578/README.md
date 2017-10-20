@@ -6,6 +6,8 @@ permalink: /kb/092/Q92578/
 
 ## Q92578: ClipBook: Paste Link with Ami Pro May Paste Corrupt Data
 
+{% raw %}
+
 	Article: Q92578
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/092/Q92578/
 	
 	=============================================================================
 	
+
+{% endraw %}

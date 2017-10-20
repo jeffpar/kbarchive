@@ -6,6 +6,8 @@ permalink: /kb/191/Q191928/
 
 ## Q191928: How to Obtain Additional Licenses for 3270 and 5250 Applets
 
+{% raw %}
+
 	Article: Q191928
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11,3.0,4.0
@@ -75,3 +77,5 @@ permalink: /kb/191/Q191928/
 	
 	=============================================================================
 	
+
+{% endraw %}

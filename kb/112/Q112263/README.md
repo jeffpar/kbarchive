@@ -6,6 +6,8 @@ permalink: /kb/112/Q112263/
 
 ## Q112263: PC Gen: Slow Performance with Version 3.22 of Novell NETX
 
+{% raw %}
+
 	Article: Q112263
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -52,3 +54,5 @@ permalink: /kb/112/Q112263/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247927/
 
 ## Q247927: XCLN: Error Message: Unable to Update Public Free/Busy Data
 
+{% raw %}
+
 	Article: Q247927
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,97,98
@@ -81,3 +83,5 @@ permalink: /kb/247/Q247927/
 	
 	=============================================================================
 	
+
+{% endraw %}

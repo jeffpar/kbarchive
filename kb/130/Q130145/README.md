@@ -6,6 +6,8 @@ permalink: /kb/130/Q130145/
 
 ## Q130145: BUG: SourceSafe and Windows Debug Kernel Causes Termination
 
+{% raw %}
+
 	Article: Q130145
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/130/Q130145/
 	
 	=============================================================================
 	
+
+{% endraw %}

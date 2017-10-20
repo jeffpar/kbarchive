@@ -6,6 +6,8 @@ permalink: /kb/215/Q215134/
 
 ## Q215134: SMS: Unable to Edit Products Registered in Other Sites
 
+{% raw %}
+
 	Article: Q215134
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -70,3 +72,5 @@ permalink: /kb/215/Q215134/
 	
 	=============================================================================
 	
+
+{% endraw %}

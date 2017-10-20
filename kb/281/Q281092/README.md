@@ -6,6 +6,8 @@ permalink: /kb/281/Q281092/
 
 ## Q281092: MCSE Training Kit Windows 2000 Accelerated Comments and Correcti
 
+{% raw %}
+
 	Article: Q281092
 	Product(s): Microsoft Press
 	Version(s): 
@@ -219,3 +221,5 @@ permalink: /kb/281/Q281092/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135520/
 
 ## Q135520: DOCERR: Syntax Error When Using INSERT INTO Example Code
 
+{% raw %}
+
 	Article: Q135520
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/135/Q135520/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242765/
 
 ## Q242765: Age of Empires II: Computer Hangs When You Quit the Game
 
+{% raw %}
+
 	Article: Q242765
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -64,3 +66,5 @@ permalink: /kb/242/Q242765/
 	
 	=============================================================================
 	
+
+{% endraw %}

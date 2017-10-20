@@ -6,6 +6,8 @@ permalink: /kb/302/Q302323/
 
 ## Q302323: The RPC Services May Hang Intermittently
 
+{% raw %}
+
 	Article: Q302323
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -92,3 +94,5 @@ permalink: /kb/302/Q302323/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163407/
 
 ## Q163407: HOWTO: Use OLE Automation with Visual SourceSafe
 
+{% raw %}
+
 	Article: Q163407
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/163/Q163407/
 	
 	=============================================================================
 	
+
+{% endraw %}

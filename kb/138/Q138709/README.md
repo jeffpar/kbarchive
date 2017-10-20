@@ -6,6 +6,8 @@ permalink: /kb/138/Q138709/
 
 ## Q138709: Microsoft Service for NetWare Directory Services Available
 
+{% raw %}
+
 	Article: Q138709
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -88,3 +90,5 @@ permalink: /kb/138/Q138709/
 	
 	=============================================================================
 	
+
+{% endraw %}

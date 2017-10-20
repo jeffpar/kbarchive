@@ -6,6 +6,8 @@ permalink: /kb/251/Q251399/
 
 ## Q251399: Visual FoxPro FoxRun.pif Fails with Long File Names in NT/W2K
 
+{% raw %}
+
 	Article: Q251399
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a,6.0
@@ -99,3 +101,5 @@ permalink: /kb/251/Q251399/
 	
 	=============================================================================
 	
+
+{% endraw %}

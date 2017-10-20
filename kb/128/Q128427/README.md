@@ -6,6 +6,8 @@ permalink: /kb/128/Q128427/
 
 ## Q128427: QuickPrep Sales Resource for SMS Server 1.0
 
+{% raw %}
+
 	Article: Q128427
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -64,3 +66,5 @@ permalink: /kb/128/Q128427/
 	
 	=============================================================================
 	
+
+{% endraw %}

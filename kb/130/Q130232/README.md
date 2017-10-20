@@ -6,6 +6,8 @@ permalink: /kb/130/Q130232/
 
 ## Q130232: WINS Response to Group Name Query is Limited Broadcast Address
 
+{% raw %}
+
 	Article: Q130232
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -49,3 +51,5 @@ permalink: /kb/130/Q130232/
 	
 	=============================================================================
 	
+
+{% endraw %}

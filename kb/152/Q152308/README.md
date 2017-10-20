@@ -6,6 +6,8 @@ permalink: /kb/152/Q152308/
 
 ## Q152308: Remote Control Causes GPF on Windows 3.11 Clients
 
+{% raw %}
+
 	Article: Q152308
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -47,3 +49,5 @@ permalink: /kb/152/Q152308/
 	
 	=============================================================================
 	
+
+{% endraw %}

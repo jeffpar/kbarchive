@@ -6,6 +6,8 @@ permalink: /kb/185/Q185053/
 
 ## Q185053: Printing Duplex with HP LaserJet 5 PostScript Printer
 
+{% raw %}
+
 	Article: Q185053
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/185/Q185053/
 	
 	=============================================================================
 	
+
+{% endraw %}

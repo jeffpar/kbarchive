@@ -6,6 +6,8 @@ permalink: /kb/161/Q161920/
 
 ## Q161920: SMS: Program Group Control Fails to Set Up Localized Office 95
 
+{% raw %}
+
 	Article: Q161920
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -56,3 +58,5 @@ permalink: /kb/161/Q161920/
 	
 	=============================================================================
 	
+
+{% endraw %}

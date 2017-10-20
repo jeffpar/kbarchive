@@ -6,6 +6,8 @@ permalink: /kb/146/Q146194/
 
 ## Q146194: Covey ALT Key Combination Not Funtional on Some Tabs
 
+{% raw %}
+
 	Article: Q146194
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -45,3 +47,5 @@ permalink: /kb/146/Q146194/
 	
 	=============================================================================
 	
+
+{% endraw %}

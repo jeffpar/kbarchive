@@ -6,6 +6,8 @@ permalink: /kb/166/Q166066/
 
 ## Q166066: WV: RTF Link in Netscape Starts New Instance of Word Viewer
 
+{% raw %}
+
 	Article: Q166066
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/166/Q166066/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58452/
 
 ## Q58452: Mac Hyp: Need ID Number to Access Message Fields Using GetField
 
+{% raw %}
+
 	Article: Q58452
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -55,3 +57,5 @@ permalink: /kb/058/Q58452/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180602/
 
 ## Q180602: RRAS Fails to Start with Event IDs 20103, 20133, or 7024
 
+{% raw %}
+
 	Article: Q180602
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -85,3 +87,5 @@ permalink: /kb/180/Q180602/
 	
 	=============================================================================
 	
+
+{% endraw %}

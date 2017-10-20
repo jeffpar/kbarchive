@@ -6,6 +6,8 @@ permalink: /kb/192/Q192522/
 
 ## Q192522: How to Make Client Local Drive Available to Terminal Server
 
+{% raw %}
+
 	Article: Q192522
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -53,3 +55,5 @@ permalink: /kb/192/Q192522/
 	
 	=============================================================================
 	
+
+{% endraw %}

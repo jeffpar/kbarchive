@@ -6,6 +6,8 @@ permalink: /kb/059/Q59383/
 
 ## Q59383: _setcliprgn Bad Definition in QC Graphics Library Reference
 
+{% raw %}
+
 	Article: Q59383
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -25,3 +27,5 @@ permalink: /kb/059/Q59383/
 	     void far _setcliprgn(x1,y1,x2,y2);
 	
 	Note that the last parameter is different.
+
+{% endraw %}

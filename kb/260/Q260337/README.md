@@ -6,6 +6,8 @@ permalink: /kb/260/Q260337/
 
 ## Q260337: HOWTO: Use the Sleep API to Pause Program Execution in a DLL
 
+{% raw %}
+
 	Article: Q260337
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -58,3 +60,5 @@ permalink: /kb/260/Q260337/
 	
 	=============================================================================
 	
+
+{% endraw %}

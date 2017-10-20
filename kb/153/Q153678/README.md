@@ -6,6 +6,8 @@ permalink: /kb/153/Q153678/
 
 ## Q153678: Do-It-Yourself Guide: Ceramic Tile Estimator Limitation
 
+{% raw %}
+
 	Article: Q153678
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/153/Q153678/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/116/Q116159/
 
 ## Q116159: Baseball: GPF if CD Is Removed after Starting Baseball
 
+{% raw %}
+
 	Article: Q116159
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -62,3 +64,5 @@ permalink: /kb/116/Q116159/
 	
 	=============================================================================
 	
+
+{% endraw %}

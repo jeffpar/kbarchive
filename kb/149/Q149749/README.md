@@ -6,6 +6,8 @@ permalink: /kb/149/Q149749/
 
 ## Q149749: PRB: DIM() Intrinsic Function does not Support Complex Numbers
 
+{% raw %}
+
 	Article: Q149749
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/149/Q149749/
 	
 	=============================================================================
 	
+
+{% endraw %}

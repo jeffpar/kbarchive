@@ -6,6 +6,8 @@ permalink: /kb/044/Q44006/
 
 ## Q44006: CodeView Requires PUBLIC to Trace MASM Program in Source Mode
 
+{% raw %}
+
 	Article: Q44006
 	Product(s): See article
 	Version(s): 2.20
@@ -65,3 +67,5 @@ permalink: /kb/044/Q44006/
 	.
 	.
 	END      myprog
+
+{% endraw %}

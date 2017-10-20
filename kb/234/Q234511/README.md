@@ -6,6 +6,8 @@ permalink: /kb/234/Q234511/
 
 ## Q234511: FIX: VC++ 6.0 Compiler Does Not Remove Unneeded Instructions
 
+{% raw %}
+
 	Article: Q234511
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -220,3 +222,5 @@ permalink: /kb/234/Q234511/
 	
 	=============================================================================
 	
+
+{% endraw %}

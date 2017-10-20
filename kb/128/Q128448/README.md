@@ -6,6 +6,8 @@ permalink: /kb/128/Q128448/
 
 ## Q128448: RAS Event ID 20013: The User Connected to Port...
 
+{% raw %}
+
 	Article: Q128448
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -54,3 +56,5 @@ permalink: /kb/128/Q128448/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/297/Q297522/
 
 ## Q297522: SMS: Unpredictable &quot;Only When No User Logged On&quot; Advertisements
 
+{% raw %}
+
 	Article: Q297522
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -82,3 +84,5 @@ permalink: /kb/297/Q297522/
 	
 	=============================================================================
 	
+
+{% endraw %}

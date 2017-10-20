@@ -6,6 +6,8 @@ permalink: /kb/142/Q142631/
 
 ## Q142631: Internet Information Server Directory Access Issue Resolved
 
+{% raw %}
+
 	Article: Q142631
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.0,3.5,3.51
@@ -73,3 +75,5 @@ permalink: /kb/142/Q142631/
 	
 	=============================================================================
 	
+
+{% endraw %}

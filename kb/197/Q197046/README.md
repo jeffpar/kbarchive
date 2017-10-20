@@ -6,6 +6,8 @@ permalink: /kb/197/Q197046/
 
 ## Q197046: How to Set up a Print Spooler on Microsoft Cluster Server
 
+{% raw %}
+
 	Article: Q197046
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -313,3 +315,5 @@ permalink: /kb/197/Q197046/
 	
 	=============================================================================
 	
+
+{% endraw %}

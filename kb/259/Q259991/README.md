@@ -6,6 +6,8 @@ permalink: /kb/259/Q259991/
 
 ## Q259991: SMS: Smsapm32 Continually Checks for Logged-On User
 
+{% raw %}
+
 	Article: Q259991
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -144,3 +146,5 @@ permalink: /kb/259/Q259991/
 	
 	=============================================================================
 	
+
+{% endraw %}

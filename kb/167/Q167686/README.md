@@ -6,6 +6,8 @@ permalink: /kb/167/Q167686/
 
 ## Q167686: New DHCP Parameter for Switched Networks
 
+{% raw %}
+
 	Article: Q167686
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -109,3 +111,5 @@ permalink: /kb/167/Q167686/
 	
 	=============================================================================
 	
+
+{% endraw %}

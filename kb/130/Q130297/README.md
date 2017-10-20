@@ -6,6 +6,8 @@ permalink: /kb/130/Q130297/
 
 ## Q130297: PRB: Cannot Reinstall a Specific Visual FoxPro Component
 
+{% raw %}
+
 	Article: Q130297
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -80,3 +82,5 @@ permalink: /kb/130/Q130297/
 	
 	=============================================================================
 	
+
+{% endraw %}

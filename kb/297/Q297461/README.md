@@ -6,6 +6,8 @@ permalink: /kb/297/Q297461/
 
 ## Q297461: PRB: Sporadic Access Violations Originate from Inetinfo.exe
 
+{% raw %}
+
 	Article: Q297461
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/297/Q297461/
 	
 	=============================================================================
 	
+
+{% endraw %}

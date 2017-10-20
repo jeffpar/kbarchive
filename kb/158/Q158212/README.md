@@ -6,6 +6,8 @@ permalink: /kb/158/Q158212/
 
 ## Q158212: SNA Server Unable to Reconnect to Distributed Link Service
 
+{% raw %}
+
 	Article: Q158212
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -66,3 +68,5 @@ permalink: /kb/158/Q158212/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126883/
 
 ## Q126883: Changing Windows and NT Domain Passwords Causes Error Messages
 
+{% raw %}
+
 	Article: Q126883
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/126/Q126883/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/265/Q265834/
 
 ## Q265834: XCLN: Help File Gives Wrong Location to Set Default OWA Server
 
+{% raw %}
+
 	Article: Q265834
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -60,3 +62,5 @@ permalink: /kb/265/Q265834/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89335/
 
 ## Q89335: Using Compaq EXMEM.EXE with Windows, WFWG, and MS-DOS
 
+{% raw %}
+
 	Article: Q89335
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -92,3 +94,5 @@ permalink: /kb/089/Q89335/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171839/
 
 ## Q171839: FIX: Crash When Compiling a Call to a UserControl Function
 
+{% raw %}
+
 	Article: Q171839
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -98,3 +100,5 @@ permalink: /kb/171/Q171839/
 	
 	=============================================================================
 	
+
+{% endraw %}

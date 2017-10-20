@@ -6,6 +6,8 @@ permalink: /kb/038/Q38807/
 
 ## Q38807: Error L1070 Segment Size Exceeds 64K
 
+{% raw %}
+
 	Article: Q38807
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -44,3 +46,5 @@ permalink: /kb/038/Q38807/
 	
 	Use a large data model (compact, large, or huge). Try applying the /Gt
 	compilation option to lower the threshhold.
+
+{% endraw %}

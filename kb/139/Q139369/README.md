@@ -6,6 +6,8 @@ permalink: /kb/139/Q139369/
 
 ## Q139369: PC MMTA: Err Msg: Failure to Initialize the Modem Session
 
+{% raw %}
+
 	Article: Q139369
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -107,3 +109,5 @@ permalink: /kb/139/Q139369/
 	
 	=============================================================================
 	
+
+{% endraw %}

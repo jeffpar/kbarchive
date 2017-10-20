@@ -6,6 +6,8 @@ permalink: /kb/138/Q138664/
 
 ## Q138664: DOC: GetClientRect() May Assert in OLE Controls
 
+{% raw %}
+
 	Article: Q138664
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -83,3 +85,5 @@ permalink: /kb/138/Q138664/
 	
 	=============================================================================
 	
+
+{% endraw %}

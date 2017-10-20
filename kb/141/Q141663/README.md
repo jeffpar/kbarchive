@@ -6,6 +6,8 @@ permalink: /kb/141/Q141663/
 
 ## Q141663: SMTP: Err Msg: Sockets 0116: TCP Access Failure by Sockets
 
+{% raw %}
+
 	Article: Q141663
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/141/Q141663/
 	
 	=============================================================================
 	
+
+{% endraw %}

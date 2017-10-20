@@ -6,6 +6,8 @@ permalink: /kb/113/Q113431/
 
 ## Q113431: Lear Engine Sounds Are Choppy with SoundBlaster 16
 
+{% raw %}
+
 	Article: Q113431
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -100,3 +102,5 @@ permalink: /kb/113/Q113431/
 	
 	=============================================================================
 	
+
+{% endraw %}

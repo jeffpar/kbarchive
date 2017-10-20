@@ -6,6 +6,8 @@ permalink: /kb/174/Q174502/
 
 ## Q174502: Fault Tolerant Recovery Does Not Reoccur After Shut Down
 
+{% raw %}
+
 	Article: Q174502
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/174/Q174502/
 	
 	=============================================================================
 	
+
+{% endraw %}

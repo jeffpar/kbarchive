@@ -6,6 +6,8 @@ permalink: /kb/145/Q145691/
 
 ## Q145691: SMS Incorrectly Reports CPU Processor Speeds
 
+{% raw %}
+
 	Article: Q145691
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -45,3 +47,5 @@ permalink: /kb/145/Q145691/
 	
 	=============================================================================
 	
+
+{% endraw %}

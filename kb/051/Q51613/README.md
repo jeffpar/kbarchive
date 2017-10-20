@@ -6,6 +6,8 @@ permalink: /kb/051/Q51613/
 
 ## Q51613: The /Gm Switch Really Does Move Constants to _CONST
 
+{% raw %}
+
 	Article: Q51613
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -55,3 +57,5 @@ permalink: /kb/051/Q51613/
 	       char *foo = "This would be moved out to _CONST with /Gm";
 	       printf("This string will be moved to _CONST\n");
 	    }
+
+{% endraw %}

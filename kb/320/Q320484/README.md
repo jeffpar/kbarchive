@@ -6,6 +6,8 @@ permalink: /kb/320/Q320484/
 
 ## Q320484: XCCC: &quot;HTTP 500.x&quot; Error Messages in Outlook Web Access 5.5
 
+{% raw %}
+
 	Article: Q320484
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -65,3 +67,5 @@ permalink: /kb/320/Q320484/
 	
 	=============================================================================
 	
+
+{% endraw %}

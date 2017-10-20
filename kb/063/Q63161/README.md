@@ -6,6 +6,8 @@ permalink: /kb/063/Q63161/
 
 ## Q63161: Overlaid Modules Loaded into EM Only When 1st Overlay Called
 
+{% raw %}
+
 	Article: Q63161
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -113,3 +115,5 @@ permalink: /kb/063/Q63161/
 	When loadovls is called, the code for overlay1 and overlay2 will be
 	loaded into expanded memory. This eliminates the disk activity between
 	the display of "MAIN" and "OVERLAY1".
+
+{% endraw %}

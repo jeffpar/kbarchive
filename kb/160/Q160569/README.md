@@ -6,6 +6,8 @@ permalink: /kb/160/Q160569/
 
 ## Q160569: SMS: Inventory &amp; Audit Differences &amp; How to Perform an Audit
 
+{% raw %}
+
 	Article: Q160569
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -118,3 +120,5 @@ permalink: /kb/160/Q160569/
 	
 	=============================================================================
 	
+
+{% endraw %}

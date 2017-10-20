@@ -6,6 +6,8 @@ permalink: /kb/258/Q258682/
 
 ## Q258682: SMS: List of Bugs Fixed in Systems Management Server 2.0 SP2
 
+{% raw %}
+
 	Article: Q258682
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -397,3 +399,5 @@ permalink: /kb/258/Q258682/
 	
 	=============================================================================
 	
+
+{% endraw %}

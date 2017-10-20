@@ -6,6 +6,8 @@ permalink: /kb/120/Q120457/
 
 ## Q120457: Undocked Laptop RAS Server Cannot See Connected RAS Client
 
+{% raw %}
+
 	Article: Q120457
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -63,3 +65,5 @@ permalink: /kb/120/Q120457/
 	
 	=============================================================================
 	
+
+{% endraw %}

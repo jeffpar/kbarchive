@@ -6,6 +6,8 @@ permalink: /kb/221/Q221673/
 
 ## Q221673: FIX: Black Cursor in ControlSource Not Supported in Korean VFP
 
+{% raw %}
+
 	Article: Q221673
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -80,3 +82,5 @@ permalink: /kb/221/Q221673/
 	
 	=============================================================================
 	
+
+{% endraw %}

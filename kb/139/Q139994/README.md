@@ -6,6 +6,8 @@ permalink: /kb/139/Q139994/
 
 ## Q139994: PRB: Specifying Table Name with Column Name in MFC DAO
 
+{% raw %}
+
 	Article: Q139994
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1
@@ -57,3 +59,5 @@ permalink: /kb/139/Q139994/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40368/
 
 ## Q40368: QuickBASIC 4.50 Does Not Return to 25-Line Mode after Make EXE
 
+{% raw %}
+
 	Article: Q40368
 	Product(s): See article
 	Version(s): 4.50
@@ -34,3 +36,5 @@ permalink: /kb/040/Q40368/
 	Versions 4.00 and 4.00b of Microsoft QuickBASIC and the QBX.EXE
 	environment provided with Microsoft BASIC PDS Version 7.00 all return
 	to 25-line mode upon exiting (fixlist7.00).
+
+{% endraw %}

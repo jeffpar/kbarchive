@@ -6,6 +6,8 @@ permalink: /kb/236/Q236434/
 
 ## Q236434: XCLN: You Do Not Have a Valid Microsoft Exchange Offline Store
 
+{% raw %}
+
 	Article: Q236434
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/236/Q236434/
 	
 	=============================================================================
 	
+
+{% endraw %}

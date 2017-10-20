@@ -6,6 +6,8 @@ permalink: /kb/111/Q111274/
 
 ## Q111274: NFS Connectivity for Windows NT
 
+{% raw %}
+
 	Article: Q111274
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.1,3.5,3.51
@@ -65,3 +67,5 @@ permalink: /kb/111/Q111274/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133403/
 
 ## Q133403: XCON: Err Msg: The Recipient Name Is Not Recognized
 
+{% raw %}
+
 	Article: Q133403
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/133/Q133403/
 	
 	=============================================================================
 	
+
+{% endraw %}

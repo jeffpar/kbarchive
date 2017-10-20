@@ -6,6 +6,8 @@ permalink: /kb/253/Q253713/
 
 ## Q253713: HOWTO: Move Data from an XML Document into a FoxPro Table
 
+{% raw %}
+
 	Article: Q253713
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,2.6,3.0,6.0
@@ -174,3 +176,5 @@ permalink: /kb/253/Q253713/
 	
 	=============================================================================
 	
+
+{% endraw %}

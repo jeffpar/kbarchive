@@ -6,6 +6,8 @@ permalink: /kb/185/Q185437/
 
 ## Q185437: Puzzle Collection: Other Thief Does Not Appear in Jewel Chase
 
+{% raw %}
+
 	Article: Q185437
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0; :
@@ -62,3 +64,5 @@ permalink: /kb/185/Q185437/
 	
 	=============================================================================
 	
+
+{% endraw %}

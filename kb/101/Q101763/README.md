@@ -6,6 +6,8 @@ permalink: /kb/101/Q101763/
 
 ## Q101763: MS-DOS Err Msg: &quot;Unrecoverable Error&quot; Returning to MS-DOS 5.x
 
+{% raw %}
+
 	Article: Q101763
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -49,3 +51,5 @@ permalink: /kb/101/Q101763/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96814/
 
 ## Q96814: Microsoft SoundBits Browser Does Not Run Minimized
 
+{% raw %}
+
 	Article: Q96814
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -46,3 +48,5 @@ permalink: /kb/096/Q96814/
 	
 	=============================================================================
 	
+
+{% endraw %}

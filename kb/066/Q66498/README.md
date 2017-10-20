@@ -6,6 +6,8 @@ permalink: /kb/066/Q66498/
 
 ## Q66498: Productivity Pack Setup Must Be Run from MS-DOS Command Prompt
 
+{% raw %}
+
 	Article: Q66498
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a
@@ -78,3 +80,5 @@ permalink: /kb/066/Q66498/
 	
 	=============================================================================
 	
+
+{% endraw %}

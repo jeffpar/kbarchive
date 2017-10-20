@@ -6,6 +6,8 @@ permalink: /kb/152/Q152146/
 
 ## Q152146: SMS Admin Query Operators Not Available in Localized Versions
 
+{% raw %}
+
 	Article: Q152146
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -57,3 +59,5 @@ permalink: /kb/152/Q152146/
 	
 	=============================================================================
 	
+
+{% endraw %}

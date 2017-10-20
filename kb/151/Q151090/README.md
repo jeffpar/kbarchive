@@ -6,6 +6,8 @@ permalink: /kb/151/Q151090/
 
 ## Q151090: HOWTO: Return an Error Message from Microsoft SQL Server
 
+{% raw %}
+
 	Article: Q151090
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -134,3 +136,5 @@ permalink: /kb/151/Q151090/
 	
 	=============================================================================
 	
+
+{% endraw %}

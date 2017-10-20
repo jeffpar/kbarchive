@@ -6,6 +6,8 @@ permalink: /kb/196/Q196554/
 
 ## Q196554: WD97: Table of Contents Shows Wrong Formatting
 
+{% raw %}
+
 	Article: Q196554
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/196/Q196554/
 	
 	=============================================================================
 	
+
+{% endraw %}

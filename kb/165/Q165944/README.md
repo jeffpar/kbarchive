@@ -6,6 +6,8 @@ permalink: /kb/165/Q165944/
 
 ## Q165944: FIX: &amp;(&#42;variable) Causes C1001, trees.c line 6256
 
+{% raw %}
+
 	Article: Q165944
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -67,3 +69,5 @@ permalink: /kb/165/Q165944/
 	
 	=============================================================================
 	
+
+{% endraw %}

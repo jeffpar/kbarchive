@@ -6,6 +6,8 @@ permalink: /kb/189/Q189204/
 
 ## Q189204: Manual of Style: E-Book Setup Label Incorrect
 
+{% raw %}
+
 	Article: Q189204
 	Product(s): Microsoft Press
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/189/Q189204/
 	
 	=============================================================================
 	
+
+{% endraw %}

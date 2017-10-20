@@ -6,6 +6,8 @@ permalink: /kb/159/Q159433/
 
 ## Q159433: FP: Error, Broken Image Inserting WordPerfect Graphic File
 
+{% raw %}
+
 	Article: Q159433
 	Product(s): Word Front Page
 	Version(s): ; WINDOWS:1.1
@@ -62,3 +64,5 @@ permalink: /kb/159/Q159433/
 	
 	=============================================================================
 	
+
+{% endraw %}

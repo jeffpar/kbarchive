@@ -6,6 +6,8 @@ permalink: /kb/308/Q308520/
 
 ## Q308520: Games: Computer Appears to Hang Running Setup
 
+{% raw %}
+
 	Article: Q308520
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -55,3 +57,5 @@ permalink: /kb/308/Q308520/
 	
 	=============================================================================
 	
+
+{% endraw %}

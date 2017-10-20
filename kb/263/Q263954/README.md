@@ -6,6 +6,8 @@ permalink: /kb/263/Q263954/
 
 ## Q263954: Possible Loss of Transactions in Microsoft Metadirectory Service
 
+{% raw %}
+
 	Article: Q263954
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -98,3 +100,5 @@ permalink: /kb/263/Q263954/
 	
 	=============================================================================
 	
+
+{% endraw %}

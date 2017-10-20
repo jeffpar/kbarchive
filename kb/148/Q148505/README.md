@@ -6,6 +6,8 @@ permalink: /kb/148/Q148505/
 
 ## Q148505: HOWTO: Force Files to Be Flushed to Disk
 
+{% raw %}
+
 	Article: Q148505
 	Product(s): Microsoft C Compiler
 	Version(s): WIN3X:1.0,1.5,1.51,1.52;WINNT:1.0,2.0,2.1,2.2,4.0;
@@ -133,3 +135,5 @@ permalink: /kb/148/Q148505/
 	
 	=============================================================================
 	
+
+{% endraw %}

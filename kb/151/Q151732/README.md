@@ -6,6 +6,8 @@ permalink: /kb/151/Q151732/
 
 ## Q151732: MSB Solar: How to Change the Installation Folder
 
+{% raw %}
+
 	Article: Q151732
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -111,3 +113,5 @@ permalink: /kb/151/Q151732/
 	
 	=============================================================================
 	
+
+{% endraw %}

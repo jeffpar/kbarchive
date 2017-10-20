@@ -6,6 +6,8 @@ permalink: /kb/139/Q139615/
 
 ## Q139615: Blank Screen May Be Caused By Corrupt Video Driver
 
+{% raw %}
+
 	Article: Q139615
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -68,3 +70,5 @@ permalink: /kb/139/Q139615/
 	
 	=============================================================================
 	
+
+{% endraw %}

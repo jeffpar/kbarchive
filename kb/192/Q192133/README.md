@@ -6,6 +6,8 @@ permalink: /kb/192/Q192133/
 
 ## Q192133: Cannot Sign Up for MSN Using a Credit Card Expiring After 2000
 
+{% raw %}
+
 	Article: Q192133
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3
@@ -54,3 +56,5 @@ permalink: /kb/192/Q192133/
 	
 	=============================================================================
 	
+
+{% endraw %}

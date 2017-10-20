@@ -6,6 +6,8 @@ permalink: /kb/207/Q207799/
 
 ## Q207799: IBM PS/1 Will Not Boot on or After January 1, 2000
 
+{% raw %}
+
 	Article: Q207799
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -105,3 +107,5 @@ permalink: /kb/207/Q207799/
 	
 	=============================================================================
 	
+
+{% endraw %}

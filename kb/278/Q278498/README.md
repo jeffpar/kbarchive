@@ -6,6 +6,8 @@ permalink: /kb/278/Q278498/
 
 ## Q278498: HOWTO: Configure NNTP Service to Use Secure Sockets Layer
 
+{% raw %}
+
 	Article: Q278498
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -175,3 +177,5 @@ permalink: /kb/278/Q278498/
 	
 	=============================================================================
 	
+
+{% endraw %}

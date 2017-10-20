@@ -6,6 +6,8 @@ permalink: /kb/134/Q134339/
 
 ## Q134339: Gtwy: Frequently Asked Questions for Microsoft Mail Gateways
 
+{% raw %}
+
 	Article: Q134339
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): ; MS-DOS:
@@ -339,3 +341,5 @@ permalink: /kb/134/Q134339/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167239/
 
 ## Q167239: PRB: Failing SQLExec() Breaks Connection with Oracle Server
 
+{% raw %}
+
 	Article: Q167239
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,3.0b
@@ -86,3 +88,5 @@ permalink: /kb/167/Q167239/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/047/Q47014/
 
 ## Q47014: Mac Srv: Mail Server and AppleShare Server Coexistence
 
+{% raw %}
+
 	Article: Q47014
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -38,3 +40,5 @@ permalink: /kb/047/Q47014/
 	
 	=============================================================================
 	
+
+{% endraw %}

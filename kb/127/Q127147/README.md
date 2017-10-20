@@ -6,6 +6,8 @@ permalink: /kb/127/Q127147/
 
 ## Q127147: Baseball 1995 BBLEGAL.TXT (Subscription Agreement)
 
+{% raw %}
+
 	Article: Q127147
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -175,3 +177,5 @@ permalink: /kb/127/Q127147/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126746/
 
 ## Q126746: Windows for Workgroups Version History
 
+{% raw %}
+
 	Article: Q126746
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.1,3.11
@@ -245,3 +247,5 @@ permalink: /kb/126/Q126746/
 	
 	=============================================================================
 	
+
+{% endraw %}

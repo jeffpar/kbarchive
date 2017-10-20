@@ -6,6 +6,8 @@ permalink: /kb/034/Q34113/
 
 ## Q34113: Use CONST N=45, Not CONT N=45, Documentation Error in 4.00
 
+{% raw %}
+
 	Article: Q34113
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -31,3 +33,5 @@ permalink: /kb/034/Q34113/
 	
 	This information was corrected in the documentation for Microsoft
 	QuickBASIC 4.50 and Microsoft BASIC PDS 7.00.
+
+{% endraw %}

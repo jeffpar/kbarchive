@@ -6,6 +6,8 @@ permalink: /kb/168/Q168610/
 
 ## Q168610: PRB: Overflow Doesn't Occur Using Pentium Pro or Pentium II
 
+{% raw %}
+
 	Article: Q168610
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0,97
@@ -192,3 +194,5 @@ permalink: /kb/168/Q168610/
 	
 	=============================================================================
 	
+
+{% endraw %}

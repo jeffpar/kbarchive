@@ -6,6 +6,8 @@ permalink: /kb/216/Q216149/
 
 ## Q216149: How to Install ODBC or MDAC on Terminal Server
 
+{% raw %}
+
 	Article: Q216149
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -155,3 +157,5 @@ permalink: /kb/216/Q216149/
 	
 	=============================================================================
 	
+
+{% endraw %}

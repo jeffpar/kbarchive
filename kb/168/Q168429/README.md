@@ -6,6 +6,8 @@ permalink: /kb/168/Q168429/
 
 ## Q168429: PRB: Component Download Fails for DCOM Projects
 
+{% raw %}
+
 	Article: Q168429
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -97,3 +99,5 @@ permalink: /kb/168/Q168429/
 	
 	=============================================================================
 	
+
+{% endraw %}

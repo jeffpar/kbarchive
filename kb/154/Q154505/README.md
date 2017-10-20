@@ -6,6 +6,8 @@ permalink: /kb/154/Q154505/
 
 ## Q154505: XFOR: SMTP Protocol Log Not Created When Minimally Logging
 
+{% raw %}
+
 	Article: Q154505
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -86,3 +88,5 @@ permalink: /kb/154/Q154505/
 	
 	=============================================================================
 	
+
+{% endraw %}

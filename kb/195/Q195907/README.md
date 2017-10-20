@@ -6,6 +6,8 @@ permalink: /kb/195/Q195907/
 
 ## Q195907: PRB: Cannot Update VFP Free Table Using FoxPro ODBC ISAM Drive
 
+{% raw %}
+
 	Article: Q195907
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.1 SP2,5.0,6.0; winnt:6.0
@@ -85,3 +87,5 @@ permalink: /kb/195/Q195907/
 	
 	=============================================================================
 	
+
+{% endraw %}

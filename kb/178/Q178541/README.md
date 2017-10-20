@@ -6,6 +6,8 @@ permalink: /kb/178/Q178541/
 
 ## Q178541: Age of Empires: Connection Type Dialog Box Is Empty
 
+{% raw %}
+
 	Article: Q178541
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/178/Q178541/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95961/
 
 ## Q95961: PC Win: Corrupted Address List Caused by Corrupted NETWORK.GLB
 
+{% raw %}
+
 	Article: Q95961
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.5
@@ -54,3 +56,5 @@ permalink: /kb/095/Q95961/
 	
 	=============================================================================
 	
+
+{% endraw %}

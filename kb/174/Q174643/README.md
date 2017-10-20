@@ -6,6 +6,8 @@ permalink: /kb/174/Q174643/
 
 ## Q174643: SNA Server RUI Application Unable To Send NSPE +RSP
 
+{% raw %}
+
 	Article: Q174643
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1
@@ -71,3 +73,5 @@ permalink: /kb/174/Q174643/
 	
 	=============================================================================
 	
+
+{% endraw %}

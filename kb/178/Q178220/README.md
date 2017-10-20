@@ -6,6 +6,8 @@ permalink: /kb/178/Q178220/
 
 ## Q178220: XCLN: Certain Characters Not Allowed in Web Services URL
 
+{% raw %}
+
 	Article: Q178220
 	Product(s): Microsoft Exchange
 	Version(s): 8.03; MACINTOSH:8.0; WINDOWS:8.0
@@ -78,3 +80,5 @@ permalink: /kb/178/Q178220/
 	
 	=============================================================================
 	
+
+{% endraw %}

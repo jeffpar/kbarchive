@@ -6,6 +6,8 @@ permalink: /kb/196/Q196270/
 
 ## Q196270: SNMP Agent Leaks Memory When Queried
 
+{% raw %}
+
 	Article: Q196270
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -93,3 +95,5 @@ permalink: /kb/196/Q196270/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/061/Q61470/
 
 ## Q61470: C 6.00 Command-Line Options /Li and /Gi Documented Incorrectly
 
+{% raw %}
+
 	Article: Q61470
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -28,3 +30,5 @@ permalink: /kb/061/Q61470/
 	The /Li switch does not take an optional argument. In the presence of
 	an argument (for example, /Li60) the compiler will generate an
 	"unknown switch" warning and ignore it.
+
+{% endraw %}

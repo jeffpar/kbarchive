@@ -6,6 +6,8 @@ permalink: /kb/270/Q270056/
 
 ## Q270056: Indexing Service Catalog Updates Take Several Hours/Days to Show
 
+{% raw %}
+
 	Article: Q270056
 	Product(s): Internet Information Server
 	Version(s): 2000
@@ -65,3 +67,5 @@ permalink: /kb/270/Q270056/
 	
 	=============================================================================
 	
+
+{% endraw %}

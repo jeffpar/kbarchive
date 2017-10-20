@@ -6,6 +6,8 @@ permalink: /kb/120/Q120047/
 
 ## Q120047: Access 2.0 Does Not Create ODBC Group or Icon Under Windows NT
 
+{% raw %}
+
 	Article: Q120047
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.1
@@ -42,3 +44,5 @@ permalink: /kb/120/Q120047/
 	
 	=============================================================================
 	
+
+{% endraw %}

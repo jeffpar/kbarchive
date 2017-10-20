@@ -6,6 +6,8 @@ permalink: /kb/199/Q199007/
 
 ## Q199007: EVG99: Different Graph Scale Displayed When Statistic Map Opened
 
+{% raw %}
+
 	Article: Q199007
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/199/Q199007/
 	
 	=============================================================================
 	
+
+{% endraw %}

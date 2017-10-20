@@ -6,6 +6,8 @@ permalink: /kb/159/Q159752/
 
 ## Q159752: XFOR: Korean Character Not Displayed Properly in Message
 
+{% raw %}
+
 	Article: Q159752
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.0a
@@ -50,3 +52,5 @@ permalink: /kb/159/Q159752/
 	
 	=============================================================================
 	
+
+{% endraw %}

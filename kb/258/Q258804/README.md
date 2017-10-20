@@ -6,6 +6,8 @@ permalink: /kb/258/Q258804/
 
 ## Q258804: Streets 98: Error Message on a Blue Screen When You Run Program
 
+{% raw %}
+
 	Article: Q258804
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/258/Q258804/
 	
 	=============================================================================
 	
+
+{% endraw %}

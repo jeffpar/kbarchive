@@ -6,6 +6,8 @@ permalink: /kb/187/Q187800/
 
 ## Q187800: NSLOOKUP Fails to Return DomainName Option for DHCP Client
 
+{% raw %}
+
 	Article: Q187800
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -74,3 +76,5 @@ permalink: /kb/187/Q187800/
 	
 	=============================================================================
 	
+
+{% endraw %}

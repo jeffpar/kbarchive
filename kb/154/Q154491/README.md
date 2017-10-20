@@ -6,6 +6,8 @@ permalink: /kb/154/Q154491/
 
 ## Q154491: XADM: DS/IS Fails to Re-create Mailboxes in Subcontainers
 
+{% raw %}
+
 	Article: Q154491
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/154/Q154491/
 	
 	=============================================================================
 	
+
+{% endraw %}

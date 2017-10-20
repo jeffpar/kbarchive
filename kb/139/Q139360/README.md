@@ -6,6 +6,8 @@ permalink: /kb/139/Q139360/
 
 ## Q139360: INFO: Readme.wri: Section 4, Documentation Notes
 
+{% raw %}
+
 	Article: Q139360
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/139/Q139360/
 	
 	=============================================================================
 	
+
+{% endraw %}

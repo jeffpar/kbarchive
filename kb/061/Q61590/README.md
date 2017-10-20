@@ -6,6 +6,8 @@ permalink: /kb/061/Q61590/
 
 ## Q61590: Passing a long&#42; from a C Module to an Assembly Module
 
+{% raw %}
+
 	Article: Q61590
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a,6.0,6.0a,6.0b
@@ -102,3 +104,5 @@ permalink: /kb/061/Q61590/
 	
 	=============================================================================
 	
+
+{% endraw %}

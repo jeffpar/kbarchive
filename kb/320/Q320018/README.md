@@ -6,6 +6,8 @@ permalink: /kb/320/Q320018/
 
 ## Q320018: Dungeon Siege: Minimum System Requirements for Version 1.0
 
+{% raw %}
+
 	Article: Q320018
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/320/Q320018/
 	
 	=============================================================================
 	
+
+{% endraw %}

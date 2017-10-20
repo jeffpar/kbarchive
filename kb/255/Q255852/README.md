@@ -6,6 +6,8 @@ permalink: /kb/255/Q255852/
 
 ## Q255852: Administrator Console May Not Connect After Changing SQL Account
 
+{% raw %}
+
 	Article: Q255852
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -68,3 +70,5 @@ permalink: /kb/255/Q255852/
 	
 	=============================================================================
 	
+
+{% endraw %}

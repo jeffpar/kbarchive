@@ -6,6 +6,8 @@ permalink: /kb/175/Q175478/
 
 ## Q175478: FS98: Flight Simulator Hangs During Setup
 
+{% raw %}
+
 	Article: Q175478
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -251,3 +253,5 @@ permalink: /kb/175/Q175478/
 	
 	=============================================================================
 	
+
+{% endraw %}

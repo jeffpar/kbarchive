@@ -6,6 +6,8 @@ permalink: /kb/157/Q157017/
 
 ## Q157017: XADM: Attempting to Open Public Folder Might Return Error
 
+{% raw %}
+
 	Article: Q157017
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/157/Q157017/
 	
 	=============================================================================
 	
+
+{% endraw %}

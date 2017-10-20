@@ -6,6 +6,8 @@ permalink: /kb/130/Q130443/
 
 ## Q130443: Form Wizard Basics and Differences from 2.6 Screen Wizard
 
+{% raw %}
+
 	Article: Q130443
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -135,3 +137,5 @@ permalink: /kb/130/Q130443/
 	
 	=============================================================================
 	
+
+{% endraw %}

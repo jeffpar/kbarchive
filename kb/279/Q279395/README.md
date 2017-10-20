@@ -6,6 +6,8 @@ permalink: /kb/279/Q279395/
 
 ## Q279395: Connectivity: MSN Companion repeatedly disconnects while in use
 
+{% raw %}
+
 	Article: Q279395
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -124,3 +126,5 @@ permalink: /kb/279/Q279395/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89216/
 
 ## Q89216: MicroRegister Can Cause Windows 3.1 to Stop
 
+{% raw %}
+
 	Article: Q89216
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/089/Q89216/
 	
 	=============================================================================
 	
+
+{% endraw %}

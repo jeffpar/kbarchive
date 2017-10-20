@@ -6,6 +6,8 @@ permalink: /kb/246/Q246783/
 
 ## Q246783: Server Running NetShield NT and QuotaAdvisor Stops Responding
 
+{% raw %}
+
 	Article: Q246783
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -49,3 +51,5 @@ permalink: /kb/246/Q246783/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/233/Q233434/
 
 ## Q233434: MSBP: Blank Publication Displayed When You Click Publisher Link
 
+{% raw %}
+
 	Article: Q233434
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/233/Q233434/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/115/Q115362/
 
 ## Q115362: X400: X400ADM.EXE Crashes to MS-DOS, Database Is Corrupted
 
+{% raw %}
+
 	Article: Q115362
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -68,3 +70,5 @@ permalink: /kb/115/Q115362/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163383/
 
 ## Q163383: Failure to Obtain IP Address Via DHCP on Token Ring w/ SP2
 
+{% raw %}
+
 	Article: Q163383
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -91,3 +93,5 @@ permalink: /kb/163/Q163383/
 	
 	=============================================================================
 	
+
+{% endraw %}

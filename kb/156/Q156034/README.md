@@ -6,6 +6,8 @@ permalink: /kb/156/Q156034/
 
 ## Q156034: HOWTO: Retrieve Information from SQL Server on Rows Affected
 
+{% raw %}
+
 	Article: Q156034
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/156/Q156034/
 	
 	=============================================================================
 	
+
+{% endraw %}

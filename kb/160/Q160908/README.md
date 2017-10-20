@@ -6,6 +6,8 @@ permalink: /kb/160/Q160908/
 
 ## Q160908: Refresh Screen Link Does Not Work in PWS FTP Administration
 
+{% raw %}
+
 	Article: Q160908
 	Product(s): Internet Information Server
 	Version(s): 1.0,2,2.1
@@ -51,3 +53,5 @@ permalink: /kb/160/Q160908/
 	
 	=============================================================================
 	
+
+{% endraw %}

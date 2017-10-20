@@ -6,6 +6,8 @@ permalink: /kb/168/Q168058/
 
 ## Q168058: PRB: Application Wizard EXE or APP Gives Path or File Error
 
+{% raw %}
+
 	Article: Q168058
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -170,3 +172,5 @@ permalink: /kb/168/Q168058/
 	
 	=============================================================================
 	
+
+{% endraw %}

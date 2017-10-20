@@ -6,6 +6,8 @@ permalink: /kb/264/Q264605/
 
 ## Q264605: StarLancer: Cannot Fire Rear-Facing Weapons
 
+{% raw %}
+
 	Article: Q264605
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -41,3 +43,5 @@ permalink: /kb/264/Q264605/
 	
 	=============================================================================
 	
+
+{% endraw %}

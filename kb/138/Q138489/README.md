@@ -6,6 +6,8 @@ permalink: /kb/138/Q138489/
 
 ## Q138489: ScanJet IIp Connected to AHA1542 SCSI May Not Work Correctly
 
+{% raw %}
+
 	Article: Q138489
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -101,3 +103,5 @@ permalink: /kb/138/Q138489/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256856/
 
 ## Q256856: XIMS: &quot;550 Relaying Is Prohibited&quot; Error Returned for Messages
 
+{% raw %}
+
 	Article: Q256856
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -73,3 +75,5 @@ permalink: /kb/256/Q256856/
 	
 	=============================================================================
 	
+
+{% endraw %}

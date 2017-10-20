@@ -6,6 +6,8 @@ permalink: /kb/040/Q40188/
 
 ## Q40188: FRE(-2) Returns Fixed Lowest Value Even After Stack Shrinks
 
+{% raw %}
+
 	Article: Q40188
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -85,3 +87,5 @@ permalink: /kb/040/Q40188/
 	   SHARED a$
 	   PRINT "hello "; a$
 	   END SUB
+
+{% endraw %}

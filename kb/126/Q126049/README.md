@@ -6,6 +6,8 @@ permalink: /kb/126/Q126049/
 
 ## Q126049: Writer: How To Set Default Font/Font Size for a Session
 
+{% raw %}
+
 	Article: Q126049
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -73,3 +75,5 @@ permalink: /kb/126/Q126049/
 	
 	=============================================================================
 	
+
+{% endraw %}

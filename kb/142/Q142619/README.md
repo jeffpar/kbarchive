@@ -6,6 +6,8 @@ permalink: /kb/142/Q142619/
 
 ## Q142619: Unattended Setup of Network Cards from Drvlib
 
+{% raw %}
+
 	Article: Q142619
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -179,3 +181,5 @@ permalink: /kb/142/Q142619/
 	
 	=============================================================================
 	
+
+{% endraw %}

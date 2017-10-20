@@ -6,6 +6,8 @@ permalink: /kb/040/Q40837/
 
 ## Q40837: Maximum Number of Include Directories Is 15
 
+{% raw %}
+
 	Article: Q40837
 	Product(s): See article
 	Version(s): 5.00 5.10  | 5.10
@@ -26,3 +28,5 @@ permalink: /kb/040/Q40837/
 	and added several others at the command line (with one /I, as opposed
 	to using a /I for every directory), you could break this boundary.
 	However, you should normally avoid using more than 15 directories.
+
+{% endraw %}

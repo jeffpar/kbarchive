@@ -6,6 +6,8 @@ permalink: /kb/131/Q131903/
 
 ## Q131903: How to Set Up IBM Token Ring PCMCIA for Windows for Workgroups
 
+{% raw %}
+
 	Article: Q131903
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -94,3 +96,5 @@ permalink: /kb/131/Q131903/
 	
 	=============================================================================
 	
+
+{% endraw %}

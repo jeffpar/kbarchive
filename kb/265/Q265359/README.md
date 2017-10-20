@@ -6,6 +6,8 @@ permalink: /kb/265/Q265359/
 
 ## Q265359: Error Message &quot;Unknown Registry Failure: Service NDIS WAN&quot;
 
+{% raw %}
+
 	Article: Q265359
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP3
@@ -56,3 +58,5 @@ permalink: /kb/265/Q265359/
 	
 	=============================================================================
 	
+
+{% endraw %}

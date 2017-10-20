@@ -6,6 +6,8 @@ permalink: /kb/112/Q112011/
 
 ## Q112011: FIX: Access Violation with Pass by Value and -Ox -G3
 
+{% raw %}
+
 	Article: Q112011
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -81,3 +83,5 @@ permalink: /kb/112/Q112011/
 	
 	=============================================================================
 	
+
+{% endraw %}

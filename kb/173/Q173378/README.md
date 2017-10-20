@@ -6,6 +6,8 @@ permalink: /kb/173/Q173378/
 
 ## Q173378: WD97: Indentation in List Disappears After You Restart Numbering
 
+{% raw %}
+
 	Article: Q173378
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -106,3 +108,5 @@ permalink: /kb/173/Q173378/
 	
 	=============================================================================
 	
+
+{% endraw %}

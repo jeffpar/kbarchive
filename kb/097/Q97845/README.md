@@ -6,6 +6,8 @@ permalink: /kb/097/Q97845/
 
 ## Q97845: Text Copied from Bookshelf to Word Formatted Incorrectly
 
+{% raw %}
+
 	Article: Q97845
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1991 edition,1992 edition
@@ -66,3 +68,5 @@ permalink: /kb/097/Q97845/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126055/
 
 ## Q126055: Frank Lloyd Wright Err Msg: Call to Undefined Dynalink
 
+{% raw %}
+
 	Article: Q126055
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.00
@@ -141,3 +143,5 @@ permalink: /kb/126/Q126055/
 	
 	=============================================================================
 	
+
+{% endraw %}

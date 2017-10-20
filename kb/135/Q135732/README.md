@@ -6,6 +6,8 @@ permalink: /kb/135/Q135732/
 
 ## Q135732: PC NTMMTA: Doc Err: No WINNT Directory Created at Setup
 
+{% raw %}
+
 	Article: Q135732
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -74,3 +76,5 @@ permalink: /kb/135/Q135732/
 	
 	=============================================================================
 	
+
+{% endraw %}

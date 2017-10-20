@@ -6,6 +6,8 @@ permalink: /kb/049/Q49900/
 
 ## Q49900: PRB: Jumping to an Absolute Address with MASM
 
+{% raw %}
+
 	Article: Q49900
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -79,3 +81,5 @@ permalink: /kb/049/Q49900/
 	
 	=============================================================================
 	
+
+{% endraw %}

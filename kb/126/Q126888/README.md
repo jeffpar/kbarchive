@@ -6,6 +6,8 @@ permalink: /kb/126/Q126888/
 
 ## Q126888: PC WSPlus: Err Msg: SCHDPLUS Caused a GPF in DEMILAYR.DLL
 
+{% raw %}
+
 	Article: Q126888
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -62,3 +64,5 @@ permalink: /kb/126/Q126888/
 	
 	=============================================================================
 	
+
+{% endraw %}

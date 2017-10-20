@@ -6,6 +6,8 @@ permalink: /kb/235/Q235834/
 
 ## Q235834: SMS: Read Instance on Collection Fails  Produce Collection List
 
+{% raw %}
+
 	Article: Q235834
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -64,3 +66,5 @@ permalink: /kb/235/Q235834/
 	
 	=============================================================================
 	
+
+{% endraw %}

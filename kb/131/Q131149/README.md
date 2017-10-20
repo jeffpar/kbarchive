@@ -6,6 +6,8 @@ permalink: /kb/131/Q131149/
 
 ## Q131149: PC Gen: Err Msg: Unknown User with MOVEFOLD.EXE
 
+{% raw %}
+
 	Article: Q131149
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -66,3 +68,5 @@ permalink: /kb/131/Q131149/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119848/
 
 ## Q119848: No Space Vehicles Available as Target Object
 
+{% raw %}
+
 	Article: Q119848
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -43,3 +45,5 @@ permalink: /kb/119/Q119848/
 	
 	=============================================================================
 	
+
+{% endraw %}

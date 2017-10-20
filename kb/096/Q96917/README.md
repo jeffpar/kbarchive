@@ -6,6 +6,8 @@ permalink: /kb/096/Q96917/
 
 ## Q96917: PC WRmt: Version 3.2 Does Not Support Shared Folders
 
+{% raw %}
+
 	Article: Q96917
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -42,3 +44,5 @@ permalink: /kb/096/Q96917/
 	
 	=============================================================================
 	
+
+{% endraw %}

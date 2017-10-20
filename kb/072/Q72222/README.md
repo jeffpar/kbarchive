@@ -6,6 +6,8 @@ permalink: /kb/072/Q72222/
 
 ## Q72222: SubApp.exe Shows How to Append Menu Items to Other Apps
 
+{% raw %}
+
 	Article: Q72222
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -149,3 +151,5 @@ permalink: /kb/072/Q72222/
 	
 	=============================================================================
 	
+
+{% endraw %}

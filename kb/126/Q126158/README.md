@@ -6,6 +6,8 @@ permalink: /kb/126/Q126158/
 
 ## Q126158: SMS Administrator Err Msg: Socket () failed, 10047
 
+{% raw %}
+
 	Article: Q126158
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -58,3 +60,5 @@ permalink: /kb/126/Q126158/
 	
 	=============================================================================
 	
+
+{% endraw %}

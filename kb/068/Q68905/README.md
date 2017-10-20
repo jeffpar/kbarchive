@@ -6,6 +6,8 @@ permalink: /kb/068/Q68905/
 
 ## Q68905: Ventura Gold Doesn't Print Last Page on PostScript Printer
 
+{% raw %}
+
 	Article: Q68905
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -67,3 +69,5 @@ permalink: /kb/068/Q68905/
 	
 	=============================================================================
 	
+
+{% endraw %}

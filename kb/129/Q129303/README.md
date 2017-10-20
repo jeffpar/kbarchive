@@ -6,6 +6,8 @@ permalink: /kb/129/Q129303/
 
 ## Q129303: ADT/ODE: OLE Controls Appear Blank in Run-Time Applications
 
+{% raw %}
+
 	Article: Q129303
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 2.0 7.0 97
@@ -135,3 +137,5 @@ permalink: /kb/129/Q129303/
 	
 	=============================================================================
 	
+
+{% endraw %}

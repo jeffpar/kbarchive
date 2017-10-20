@@ -6,6 +6,8 @@ permalink: /kb/234/Q234589/
 
 ## Q234589: Running Microsoft Office 2000 Premium Comments and Corrections
 
+{% raw %}
+
 	Article: Q234589
 	Product(s): Microsoft Press
 	Version(s): 
@@ -186,3 +188,5 @@ permalink: /kb/234/Q234589/
 	
 	=============================================================================
 	
+
+{% endraw %}

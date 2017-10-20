@@ -6,6 +6,8 @@ permalink: /kb/168/Q168054/
 
 ## Q168054: PRB: &quot;Cannot activate OLE Server&quot; or &quot;Moniker cannot open file&quot;
 
+{% raw %}
+
 	Article: Q168054
 	Product(s): Microsoft FoxPro
 	Version(s): 2.6a 3.0 3.0b 5.0 5.0a 6.0
@@ -89,3 +91,5 @@ permalink: /kb/168/Q168054/
 	
 	=============================================================================
 	
+
+{% endraw %}

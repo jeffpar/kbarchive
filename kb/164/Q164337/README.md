@@ -6,6 +6,8 @@ permalink: /kb/164/Q164337/
 
 ## Q164337: WD97: WordMail: Track Changes Doesn't Show Deleted Text
 
+{% raw %}
+
 	Article: Q164337
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -81,3 +83,5 @@ permalink: /kb/164/Q164337/
 	
 	=============================================================================
 	
+
+{% endraw %}

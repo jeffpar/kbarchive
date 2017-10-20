@@ -6,6 +6,8 @@ permalink: /kb/174/Q174210/
 
 ## Q174210: XWEB: Outlook Express Does Not Notify on Copy Failure
 
+{% raw %}
+
 	Article: Q174210
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -53,3 +55,5 @@ permalink: /kb/174/Q174210/
 	
 	=============================================================================
 	
+
+{% endraw %}

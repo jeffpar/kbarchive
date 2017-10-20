@@ -6,6 +6,8 @@ permalink: /kb/175/Q175868/
 
 ## Q175868: BUG: T-SQL Debugger Does Not Run on NT with User Account
 
+{% raw %}
+
 	Article: Q175868
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -141,3 +143,5 @@ permalink: /kb/175/Q175868/
 	
 	=============================================================================
 	
+
+{% endraw %}

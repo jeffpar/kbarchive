@@ -6,6 +6,8 @@ permalink: /kb/113/Q113100/
 
 ## Q113100: Multimedia Titles: Cannot Print Selected Areas of Text
 
+{% raw %}
+
 	Article: Q113100
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/113/Q113100/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172553/
 
 ## Q172553: How To Determine Sound Card Brand and Model in Windows 95/98
 
+{% raw %}
+
 	Article: Q172553
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/172/Q172553/
 	
 	=============================================================================
 	
+
+{% endraw %}

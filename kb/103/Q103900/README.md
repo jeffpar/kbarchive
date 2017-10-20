@@ -6,6 +6,8 @@ permalink: /kb/103/Q103900/
 
 ## Q103900: PC WRmt Ext: Telebit Modem Poor Throughput w/ 9600 Connection
 
+{% raw %}
+
 	Article: Q103900
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0,3.0a; WINDOWS:2.1,3.0,3.0a,3.2
@@ -53,3 +55,5 @@ permalink: /kb/103/Q103900/
 	
 	=============================================================================
 	
+
+{% endraw %}

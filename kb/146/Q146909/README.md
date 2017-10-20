@@ -6,6 +6,8 @@ permalink: /kb/146/Q146909/
 
 ## Q146909: HOWTO: Use VB Control Property or Variable in SQL Statement
 
+{% raw %}
+
 	Article: Q146909
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/146/Q146909/
 	
 	=============================================================================
 	
+
+{% endraw %}

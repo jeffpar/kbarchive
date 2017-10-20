@@ -6,6 +6,8 @@ permalink: /kb/247/Q247018/
 
 ## Q247018: XFOR: Using DBCS with the Exchange Connector for Lotus cc:Mail
 
+{% raw %}
+
 	Article: Q247018
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -72,3 +74,5 @@ permalink: /kb/247/Q247018/
 	
 	=============================================================================
 	
+
+{% endraw %}

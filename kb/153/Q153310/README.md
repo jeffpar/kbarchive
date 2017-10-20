@@ -6,6 +6,8 @@ permalink: /kb/153/Q153310/
 
 ## Q153310: How to Select All Text in a Field When It Gets the Focus
 
+{% raw %}
+
 	Article: Q153310
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -89,3 +91,5 @@ permalink: /kb/153/Q153310/
 	
 	=============================================================================
 	
+
+{% endraw %}

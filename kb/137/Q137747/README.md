@@ -6,6 +6,8 @@ permalink: /kb/137/Q137747/
 
 ## Q137747: Quick View Does Not Show Area Graph in Microsoft Excel
 
+{% raw %}
+
 	Article: Q137747
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -46,3 +48,5 @@ permalink: /kb/137/Q137747/
 	
 	=============================================================================
 	
+
+{% endraw %}

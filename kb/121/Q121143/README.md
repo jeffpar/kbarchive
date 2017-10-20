@@ -6,6 +6,8 @@ permalink: /kb/121/Q121143/
 
 ## Q121143: Flight Simulator Available Media
 
+{% raw %}
+
 	Article: Q121143
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0,5.0a
@@ -60,3 +62,5 @@ permalink: /kb/121/Q121143/
 	
 	=============================================================================
 	
+
+{% endraw %}

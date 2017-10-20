@@ -6,6 +6,8 @@ permalink: /kb/240/Q240779/
 
 ## Q240779: Event Log Error: Event ID 105 from Service W3SVC or FTPSVC
 
+{% raw %}
+
 	Article: Q240779
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/240/Q240779/
 	
 	=============================================================================
 	
+
+{% endraw %}

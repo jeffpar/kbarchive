@@ -6,6 +6,8 @@ permalink: /kb/177/Q177837/
 
 ## Q177837: SMSINST: SMS Installer Ignores REG_NONE Key Changes
 
+{% raw %}
+
 	Article: Q177837
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/177/Q177837/
 	
 	=============================================================================
 	
+
+{% endraw %}

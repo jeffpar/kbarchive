@@ -6,6 +6,8 @@ permalink: /kb/137/Q137138/
 
 ## Q137138: WFW 3.11 Computer with Windows NT 3.51 Update Files Hangs
 
+{% raw %}
+
 	Article: Q137138
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -70,3 +72,5 @@ permalink: /kb/137/Q137138/
 	
 	=============================================================================
 	
+
+{% endraw %}

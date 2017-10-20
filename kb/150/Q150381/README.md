@@ -6,6 +6,8 @@ permalink: /kb/150/Q150381/
 
 ## Q150381: Windows NT Internet Explorer 1.5 Overview and Release Notes
 
+{% raw %}
+
 	Article: Q150381
 	Product(s): Internet Information Server
 	Version(s): 1.0,1.5,3.5,3.51
@@ -136,3 +138,5 @@ permalink: /kb/150/Q150381/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/080/Q80270/
 
 ## Q80270: PC Rmt: Err Msg: Directory Specified Not Remote...
 
+{% raw %}
+
 	Article: Q80270
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -56,3 +58,5 @@ permalink: /kb/080/Q80270/
 	
 	=============================================================================
 	
+
+{% endraw %}

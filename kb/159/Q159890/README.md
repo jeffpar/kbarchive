@@ -6,6 +6,8 @@ permalink: /kb/159/Q159890/
 
 ## Q159890: Mac Encarta Setup: QuickTime Musical Instrument Error
 
+{% raw %}
+
 	Article: Q159890
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996 edition
@@ -76,3 +78,5 @@ permalink: /kb/159/Q159890/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/226/Q226484/
 
 ## Q226484: Interface Table Contains WAN Interfaces Marked as LAN
 
+{% raw %}
+
 	Article: Q226484
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95,98; winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/226/Q226484/
 	
 	=============================================================================
 	
+
+{% endraw %}

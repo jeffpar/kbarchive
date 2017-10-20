@@ -6,6 +6,8 @@ permalink: /kb/167/Q167656/
 
 ## Q167656: SMS: Despooler Does Not Preserve Existing Rights on Shares
 
+{% raw %}
+
 	Article: Q167656
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -70,3 +72,5 @@ permalink: /kb/167/Q167656/
 	
 	=============================================================================
 	
+
+{% endraw %}

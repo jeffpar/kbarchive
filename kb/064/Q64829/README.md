@@ -6,6 +6,8 @@ permalink: /kb/064/Q64829/
 
 ## Q64829: Tips for Using the Microsoft Advisor Online Help
 
+{% raw %}
+
 	Article: Q64829
 	Product(s): See article
 	Version(s): 1.00 1.10 | 1.00 1.10
@@ -65,3 +67,5 @@ permalink: /kb/064/Q64829/
 	   information about the HELPMAKE utility, see Chapter 7 of the
 	   "Microsoft C Advanced Programming Techniques" manual that comes
 	   with C version 6.00.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/200/Q200386/
 
 ## Q200386: SMS: NetWare Server Roles in SMS 2.0
 
+{% raw %}
+
 	Article: Q200386
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -104,3 +106,5 @@ permalink: /kb/200/Q200386/
 	
 	=============================================================================
 	
+
+{% endraw %}

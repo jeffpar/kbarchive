@@ -6,6 +6,8 @@ permalink: /kb/174/Q174890/
 
 ## Q174890: XFOR: Content Conversion Fails with Outbound Internet Message
 
+{% raw %}
+
 	Article: Q174890
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -90,3 +92,5 @@ permalink: /kb/174/Q174890/
 	
 	=============================================================================
 	
+
+{% endraw %}

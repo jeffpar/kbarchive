@@ -6,6 +6,8 @@ permalink: /kb/184/Q184749/
 
 ## Q184749: HOWTO: Call Stored Procedures Using Data Access Objects
 
+{% raw %}
+
 	Article: Q184749
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -159,3 +161,5 @@ permalink: /kb/184/Q184749/
 	
 	=============================================================================
 	
+
+{% endraw %}

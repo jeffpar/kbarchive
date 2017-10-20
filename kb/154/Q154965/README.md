@@ -6,6 +6,8 @@ permalink: /kb/154/Q154965/
 
 ## Q154965: XCLN:  System 11 Bomb When Printing
 
+{% raw %}
+
 	Article: Q154965
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -62,3 +64,5 @@ permalink: /kb/154/Q154965/
 	
 	=============================================================================
 	
+
+{% endraw %}

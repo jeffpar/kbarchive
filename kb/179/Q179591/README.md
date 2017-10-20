@@ -6,6 +6,8 @@ permalink: /kb/179/Q179591/
 
 ## Q179591: Cinemania: Monthly Update Files Are No Longer Available
 
+{% raw %}
+
 	Article: Q179591
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/179/Q179591/
 	
 	=============================================================================
 	
+
+{% endraw %}

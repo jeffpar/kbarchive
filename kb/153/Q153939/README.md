@@ -6,6 +6,8 @@ permalink: /kb/153/Q153939/
 
 ## Q153939: WFW TCPIP32b Client Does Not Hold Lease if DHCP Not Available
 
+{% raw %}
+
 	Article: Q153939
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.11a,3.11b
@@ -61,3 +63,5 @@ permalink: /kb/153/Q153939/
 	
 	=============================================================================
 	
+
+{% endraw %}

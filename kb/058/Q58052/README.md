@@ -6,6 +6,8 @@ permalink: /kb/058/Q58052/
 
 ## Q58052: Mac Wkst: Alternative to User-Defined Address Groups for 2.00
 
+{% raw %}
+
 	Article: Q58052
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -74,3 +76,5 @@ permalink: /kb/058/Q58052/
 	
 	=============================================================================
 	
+
+{% endraw %}

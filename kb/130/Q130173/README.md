@@ -6,6 +6,8 @@ permalink: /kb/130/Q130173/
 
 ## Q130173: Bookshelf: Audio Clips Do Not Rewind Automatically
 
+{% raw %}
+
 	Article: Q130173
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition; WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/130/Q130173/
 	
 	=============================================================================
 	
+
+{% endraw %}

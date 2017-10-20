@@ -6,6 +6,8 @@ permalink: /kb/145/Q145687/
 
 ## Q145687: DOC: CFileDialog Filter String Won't Work Under Windows 95
 
+{% raw %}
+
 	Article: Q145687
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.2,4.0
@@ -56,3 +58,5 @@ permalink: /kb/145/Q145687/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150967/
 
 ## Q150967: Bookshelf 96-97: Description of Colored Item Boxes
 
+{% raw %}
+
 	Article: Q150967
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:; WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/150/Q150967/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149744/
 
 ## Q149744: 3D Movie Maker: Copy, Paste Path Varies by Actor or Prop Used
 
+{% raw %}
+
 	Article: Q149744
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/149/Q149744/
 	
 	=============================================================================
 	
+
+{% endraw %}

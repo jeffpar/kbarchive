@@ -6,6 +6,8 @@ permalink: /kb/156/Q156840/
 
 ## Q156840: FP: FrontPage Editor Doesn't Support &quot;border=0&quot; Table Attribute
 
+{% raw %}
+
 	Article: Q156840
 	Product(s): Word Front Page
 	Version(s): ; MACINTOSH:1.0; WINDOWS:1.1
@@ -66,3 +68,5 @@ permalink: /kb/156/Q156840/
 	
 	=============================================================================
 	
+
+{% endraw %}

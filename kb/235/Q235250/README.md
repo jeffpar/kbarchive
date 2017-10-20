@@ -6,6 +6,8 @@ permalink: /kb/235/Q235250/
 
 ## Q235250: I/O May Be Performed at the Wrong Offset with Large Files
 
+{% raw %}
+
 	Article: Q235250
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -105,3 +107,5 @@ permalink: /kb/235/Q235250/
 	
 	=============================================================================
 	
+
+{% endraw %}

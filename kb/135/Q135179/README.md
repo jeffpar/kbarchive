@@ -6,6 +6,8 @@ permalink: /kb/135/Q135179/
 
 ## Q135179: Cannot Copy File Whose Filename Begins with a Period
 
+{% raw %}
+
 	Article: Q135179
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/135/Q135179/
 	
 	=============================================================================
 	
+
+{% endraw %}

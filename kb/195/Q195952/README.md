@@ -6,6 +6,8 @@ permalink: /kb/195/Q195952/
 
 ## Q195952: PRB: VID and VSS Out of Sync, Resulting in Possible Data Loss
 
+{% raw %}
+
 	Article: Q195952
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -60,3 +62,5 @@ permalink: /kb/195/Q195952/
 	
 	=============================================================================
 	
+
+{% endraw %}

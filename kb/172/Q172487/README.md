@@ -6,6 +6,8 @@ permalink: /kb/172/Q172487/
 
 ## Q172487: MSN Icon Remains on Desktop After MSN Is Removed
 
+{% raw %}
+
 	Article: Q172487
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -77,3 +79,5 @@ permalink: /kb/172/Q172487/
 	
 	=============================================================================
 	
+
+{% endraw %}

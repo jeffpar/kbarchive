@@ -6,6 +6,8 @@ permalink: /kb/175/Q175101/
 
 ## Q175101: XADM: Long Site and Organization Names Cause Setup Problems
 
+{% raw %}
+
 	Article: Q175101
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/175/Q175101/
 	
 	=============================================================================
 	
+
+{% endraw %}

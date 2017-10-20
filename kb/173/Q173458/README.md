@@ -6,6 +6,8 @@ permalink: /kb/173/Q173458/
 
 ## Q173458: XCON: Event ID 9406 Occurs When Memory or Free Disk Space is Low
 
+{% raw %}
+
 	Article: Q173458
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -55,3 +57,5 @@ permalink: /kb/173/Q173458/
 	
 	=============================================================================
 	
+
+{% endraw %}

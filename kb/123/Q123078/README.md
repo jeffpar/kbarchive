@@ -6,6 +6,8 @@ permalink: /kb/123/Q123078/
 
 ## Q123078: IDE E-Z Raid-1 Driver Doesn't Load; Uses Real-Mode Drivers
 
+{% raw %}
+
 	Article: Q123078
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/123/Q123078/
 	
 	=============================================================================
 	
+
+{% endraw %}

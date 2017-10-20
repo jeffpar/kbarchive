@@ -6,6 +6,8 @@ permalink: /kb/059/Q59927/
 
 ## Q59927: Mac Hyp: Accessing Resources or Data in Nonstandard Fields
 
+{% raw %}
+
 	Article: Q59927
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -70,3 +72,5 @@ permalink: /kb/059/Q59927/
 	
 	=============================================================================
 	
+
+{% endraw %}

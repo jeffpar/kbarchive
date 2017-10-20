@@ -6,6 +6,8 @@ permalink: /kb/082/Q82594/
 
 ## Q82594: Minimum Space Required for Windows 3.1 Setup
 
+{% raw %}
+
 	Article: Q82594
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/082/Q82594/
 	
 	=============================================================================
 	
+
+{% endraw %}

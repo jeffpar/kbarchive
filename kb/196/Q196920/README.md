@@ -6,6 +6,8 @@ permalink: /kb/196/Q196920/
 
 ## Q196920: XFOR: MAPI Embedded Message may NDR Due to Invalid Recipient
 
+{% raw %}
+
 	Article: Q196920
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:4.0
@@ -59,3 +61,5 @@ permalink: /kb/196/Q196920/
 	
 	=============================================================================
 	
+
+{% endraw %}

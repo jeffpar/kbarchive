@@ -6,6 +6,8 @@ permalink: /kb/190/Q190685/
 
 ## Q190685: BUG: TabStrip Control's TabStyle Has No Effect at Run-Time
 
+{% raw %}
+
 	Article: Q190685
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -99,3 +101,5 @@ permalink: /kb/190/Q190685/
 	
 	=============================================================================
 	
+
+{% endraw %}

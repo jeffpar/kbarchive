@@ -6,6 +6,8 @@ permalink: /kb/150/Q150542/
 
 ## Q150542: Gardening: Pressing F1 in List Maker Causes Unknown Error
 
+{% raw %}
+
 	Article: Q150542
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -57,3 +59,5 @@ permalink: /kb/150/Q150542/
 	
 	=============================================================================
 	
+
+{% endraw %}

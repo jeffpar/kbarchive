@@ -6,6 +6,8 @@ permalink: /kb/237/Q237520/
 
 ## Q237520: Encarta 2000: Article Opens Slowly or Program Stops Responding
 
+{% raw %}
+
 	Article: Q237520
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/237/Q237520/
 	
 	=============================================================================
 	
+
+{% endraw %}

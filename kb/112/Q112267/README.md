@@ -6,6 +6,8 @@ permalink: /kb/112/Q112267/
 
 ## Q112267: PC Win: TO: List Not Sorting Alphabetically
 
+{% raw %}
+
 	Article: Q112267
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -48,3 +50,5 @@ permalink: /kb/112/Q112267/
 	
 	=============================================================================
 	
+
+{% endraw %}

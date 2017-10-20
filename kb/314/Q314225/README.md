@@ -6,6 +6,8 @@ permalink: /kb/314/Q314225/
 
 ## Q314225: FS2002: How to Optimize Game Performance
 
+{% raw %}
+
 	Article: Q314225
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -276,3 +278,5 @@ permalink: /kb/314/Q314225/
 	
 	=============================================================================
 	
+
+{% endraw %}

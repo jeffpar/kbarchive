@@ -6,6 +6,8 @@ permalink: /kb/133/Q133704/
 
 ## Q133704: ISDN Bandwidth Capabilities of Windows NT
 
+{% raw %}
+
 	Article: Q133704
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51 4.00
@@ -73,3 +75,5 @@ permalink: /kb/133/Q133704/
 	
 	=============================================================================
 	
+
+{% endraw %}

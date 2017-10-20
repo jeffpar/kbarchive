@@ -6,6 +6,8 @@ permalink: /kb/134/Q134478/
 
 ## Q134478: Incorrect &quot;Invalid Path&quot; Error Message Returned by XCOPY
 
+{% raw %}
+
 	Article: Q134478
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/134/Q134478/
 	
 	=============================================================================
 	
+
+{% endraw %}

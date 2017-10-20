@@ -6,6 +6,8 @@ permalink: /kb/272/Q272141/
 
 ## Q272141: XADM: CDO CopyTo Method May Cause a MAPI_E_NOT_FOUND Error
 
+{% raw %}
+
 	Article: Q272141
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP4
@@ -105,3 +107,5 @@ permalink: /kb/272/Q272141/
 	
 	=============================================================================
 	
+
+{% endraw %}

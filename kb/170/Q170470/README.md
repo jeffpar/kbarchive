@@ -6,6 +6,8 @@ permalink: /kb/170/Q170470/
 
 ## Q170470: XWEB: Time on Status Bar of OWA Logon Page Is In 24-Hour Format
 
+{% raw %}
+
 	Article: Q170470
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5; winnt:5.0,5.5
@@ -48,3 +50,5 @@ permalink: /kb/170/Q170470/
 	
 	=============================================================================
 	
+
+{% endraw %}

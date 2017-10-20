@@ -6,6 +6,8 @@ permalink: /kb/259/Q259050/
 
 ## Q259050: Unwanted Attribute Updates by Management Agent
 
+{% raw %}
+
 	Article: Q259050
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -129,3 +131,5 @@ permalink: /kb/259/Q259050/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196881/
 
 ## Q196881: WD97: How to Modify the Sales Tax Form Field in Invoice.dot
 
+{% raw %}
+
 	Article: Q196881
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -103,3 +105,5 @@ permalink: /kb/196/Q196881/
 	
 	=============================================================================
 	
+
+{% endraw %}

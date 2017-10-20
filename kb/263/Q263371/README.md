@@ -6,6 +6,8 @@ permalink: /kb/263/Q263371/
 
 ## Q263371: Software Inventory Enumerates, Inventories NTFS Reparsed Volumes
 
+{% raw %}
+
 	Article: Q263371
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP2
@@ -57,3 +59,5 @@ permalink: /kb/263/Q263371/
 	
 	=============================================================================
 	
+
+{% endraw %}

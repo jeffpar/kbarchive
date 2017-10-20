@@ -6,6 +6,8 @@ permalink: /kb/238/Q238747/
 
 ## Q238747: Windows Load Balancing Service Does Not Work on Token Ring
 
+{% raw %}
+
 	Article: Q238747
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:1.0,4.0
@@ -49,3 +51,5 @@ permalink: /kb/238/Q238747/
 	
 	=============================================================================
 	
+
+{% endraw %}

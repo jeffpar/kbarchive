@@ -6,6 +6,8 @@ permalink: /kb/090/Q90222/
 
 ## Q90222: Printer Manager and Critical Errors Can Halt Servers
 
+{% raw %}
+
 	Article: Q90222
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -61,3 +63,5 @@ permalink: /kb/090/Q90222/
 	
 	=============================================================================
 	
+
+{% endraw %}

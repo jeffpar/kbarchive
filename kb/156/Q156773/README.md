@@ -6,6 +6,8 @@ permalink: /kb/156/Q156773/
 
 ## Q156773: PRB: COPY TO TYPE DELIMITED Differs in Various FP Versions
 
+{% raw %}
+
 	Article: Q156773
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/156/Q156773/
 	
 	=============================================================================
 	
+
+{% endraw %}

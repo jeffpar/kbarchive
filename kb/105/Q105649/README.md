@@ -6,6 +6,8 @@ permalink: /kb/105/Q105649/
 
 ## Q105649: ADK: ADK 1.1 Disk Contents (3.5 Inch, 1.44 MB)
 
+{% raw %}
+
 	Article: Q105649
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.1
@@ -87,3 +89,5 @@ permalink: /kb/105/Q105649/
 	
 	=============================================================================
 	
+
+{% endraw %}

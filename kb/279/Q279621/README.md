@@ -6,6 +6,8 @@ permalink: /kb/279/Q279621/
 
 ## Q279621: MechWarrior 4 Err Msg: Nested Exception! Cause: EnterWindowMode
 
+{% raw %}
+
 	Article: Q279621
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/279/Q279621/
 	
 	=============================================================================
 	
+
+{% endraw %}

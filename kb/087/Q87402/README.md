@@ -6,6 +6,8 @@ permalink: /kb/087/Q87402/
 
 ## Q87402: PC DB: How ACCESS Files Are Linked Together
 
+{% raw %}
+
 	Article: Q87402
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -57,3 +59,5 @@ permalink: /kb/087/Q87402/
 	
 	=============================================================================
 	
+
+{% endraw %}

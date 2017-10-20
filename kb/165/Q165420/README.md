@@ -6,6 +6,8 @@ permalink: /kb/165/Q165420/
 
 ## Q165420: FIX: SQL Breakpoint Not Hit After Executing SP in Another DB
 
+{% raw %}
+
 	Article: Q165420
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:5.0
@@ -100,3 +102,5 @@ permalink: /kb/165/Q165420/
 	
 	=============================================================================
 	
+
+{% endraw %}

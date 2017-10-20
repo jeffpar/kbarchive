@@ -6,6 +6,8 @@ permalink: /kb/305/Q305151/
 
 ## Q305151: SMS: Cannot Create Collection Based on Direct Rule Membership
 
+{% raw %}
+
 	Article: Q305151
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -75,3 +77,5 @@ permalink: /kb/305/Q305151/
 	
 	=============================================================================
 	
+
+{% endraw %}

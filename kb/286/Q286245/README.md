@@ -6,6 +6,8 @@ permalink: /kb/286/Q286245/
 
 ## Q286245: PRB: Error Updating Records w/DB2OLEDB &amp; Server-Side ADO Cursor
 
+{% raw %}
+
 	Article: Q286245
 	Product(s): Microsoft SNA Server
 	Version(s): 2.5,2.6,4.0 SP3,4.0 SP4
@@ -129,3 +131,5 @@ permalink: /kb/286/Q286245/
 	
 	=============================================================================
 	
+
+{% endraw %}

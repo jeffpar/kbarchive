@@ -6,6 +6,8 @@ permalink: /kb/243/Q243425/
 
 ## Q243425: XGEN: Rules May No Longer Work After MIMEsweeper Is Installed
 
+{% raw %}
+
 	Article: Q243425
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/243/Q243425/
 	
 	=============================================================================
 	
+
+{% endraw %}

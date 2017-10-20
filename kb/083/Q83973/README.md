@@ -6,6 +6,8 @@ permalink: /kb/083/Q83973/
 
 ## Q83973: Large Titles and Icons on EVEREX/AGI 286
 
+{% raw %}
+
 	Article: Q83973
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/083/Q83973/
 	
 	=============================================================================
 	
+
+{% endraw %}

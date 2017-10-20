@@ -6,6 +6,8 @@ permalink: /kb/200/Q200323/
 
 ## Q200323: INFO: Use Migration DLLs to obtain corrected user names
 
+{% raw %}
+
 	Article: Q200323
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95,98
@@ -89,3 +91,5 @@ permalink: /kb/200/Q200323/
 	
 	=============================================================================
 	
+
+{% endraw %}

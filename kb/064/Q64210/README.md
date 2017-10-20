@@ -6,6 +6,8 @@ permalink: /kb/064/Q64210/
 
 ## Q64210: How to Simulate Bound Executables with BASIC 6.00 - 7.10
 
+{% raw %}
+
 	Article: Q64210
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -95,3 +97,5 @@ permalink: /kb/064/Q64210/
 	session:
 	
 	   This program has the same output in protected and real modes.
+
+{% endraw %}

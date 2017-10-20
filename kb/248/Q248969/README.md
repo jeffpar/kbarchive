@@ -6,6 +6,8 @@ permalink: /kb/248/Q248969/
 
 ## Q248969: Sinvproc Leaves Zero-Byte Files in the BADSINV Folder
 
+{% raw %}
+
 	Article: Q248969
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -117,3 +119,5 @@ permalink: /kb/248/Q248969/
 	
 	=============================================================================
 	
+
+{% endraw %}

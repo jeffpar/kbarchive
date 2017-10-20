@@ -6,6 +6,8 @@ permalink: /kb/251/Q251009/
 
 ## Q251009: INFO: Where to Find the MMC Snap-In Designer for Visual Basic
 
+{% raw %}
+
 	Article: Q251009
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -68,3 +70,5 @@ permalink: /kb/251/Q251009/
 	
 	=============================================================================
 	
+
+{% endraw %}

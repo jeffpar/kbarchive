@@ -6,6 +6,8 @@ permalink: /kb/285/Q285079/
 
 ## Q285079: Default Country Set to United States Not Canada in Find Feature
 
+{% raw %}
+
 	Article: Q285079
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -87,3 +89,5 @@ permalink: /kb/285/Q285079/
 	
 	=============================================================================
 	
+
+{% endraw %}

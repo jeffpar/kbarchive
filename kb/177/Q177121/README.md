@@ -6,6 +6,8 @@ permalink: /kb/177/Q177121/
 
 ## Q177121: Format Tape Command Unavailable in Ntbackup.exe
 
+{% raw %}
+
 	Article: Q177121
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/177/Q177121/
 	
 	=============================================================================
 	
+
+{% endraw %}

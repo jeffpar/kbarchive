@@ -6,6 +6,8 @@ permalink: /kb/293/Q293115/
 
 ## Q293115: Viewing .ema Or .email Attachments In MSN Explorer
 
+{% raw %}
+
 	Article: Q293115
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -63,3 +65,5 @@ permalink: /kb/293/Q293115/
 	
 	=============================================================================
 	
+
+{% endraw %}

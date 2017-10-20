@@ -6,6 +6,8 @@ permalink: /kb/254/Q254718/
 
 ## Q254718: IIS &quot;Bytes Sent&quot; (Sc-bytes) Logging Property is 0 for ASP Files
 
+{% raw %}
+
 	Article: Q254718
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -90,3 +92,5 @@ permalink: /kb/254/Q254718/
 	
 	=============================================================================
 	
+
+{% endraw %}

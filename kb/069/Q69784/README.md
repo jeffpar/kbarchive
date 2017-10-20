@@ -6,6 +6,8 @@ permalink: /kb/069/Q69784/
 
 ## Q69784: Flt Sim: Cannot Access SubLogic Scenery Disk from Drive B
 
+{% raw %}
+
 	Article: Q69784
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/069/Q69784/
 	
 	=============================================================================
 	
+
+{% endraw %}

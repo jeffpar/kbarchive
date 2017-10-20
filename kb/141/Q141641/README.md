@@ -6,6 +6,8 @@ permalink: /kb/141/Q141641/
 
 ## Q141641: Macintosh Dangerous Creatures: Problems Using Dual Monitors
 
+{% raw %}
+
 	Article: Q141641
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -50,3 +52,5 @@ permalink: /kb/141/Q141641/
 	
 	=============================================================================
 	
+
+{% endraw %}

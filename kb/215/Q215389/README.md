@@ -6,6 +6,8 @@ permalink: /kb/215/Q215389/
 
 ## Q215389: BUG: Application May Not Close When Frame Contains a CommandBar
 
+{% raw %}
+
 	Article: Q215389
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.11,3.0
@@ -72,3 +74,5 @@ permalink: /kb/215/Q215389/
 	
 	=============================================================================
 	
+
+{% endraw %}

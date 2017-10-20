@@ -6,6 +6,8 @@ permalink: /kb/160/Q160228/
 
 ## Q160228: FP97: Bullet Points, Numbers Hidden When Font Size Increased
 
+{% raw %}
+
 	Article: Q160228
 	Product(s): Word Front Page
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/160/Q160228/
 	
 	=============================================================================
 	
+
+{% endraw %}

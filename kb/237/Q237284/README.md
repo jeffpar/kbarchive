@@ -6,6 +6,8 @@ permalink: /kb/237/Q237284/
 
 ## Q237284: WD97: Error Message: &quot;Cannot Find Installable ISAM&quot;
 
+{% raw %}
+
 	Article: Q237284
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -159,3 +161,5 @@ permalink: /kb/237/Q237284/
 	
 	=============================================================================
 	
+
+{% endraw %}

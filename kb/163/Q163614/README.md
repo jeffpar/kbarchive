@@ -6,6 +6,8 @@ permalink: /kb/163/Q163614/
 
 ## Q163614: HP LaserJet Series II Prints Extra Small Stripes or Points
 
+{% raw %}
+
 	Article: Q163614
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/163/Q163614/
 	
 	=============================================================================
 	
+
+{% endraw %}

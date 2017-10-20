@@ -6,6 +6,8 @@ permalink: /kb/244/Q244759/
 
 ## Q244759: WD97: Microsoft Word 97 Equivalents to WordPerfect White Paper
 
+{% raw %}
+
 	Article: Q244759
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/244/Q244759/
 	
 	=============================================================================
 	
+
+{% endraw %}

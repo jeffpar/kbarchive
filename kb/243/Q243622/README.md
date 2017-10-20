@@ -6,6 +6,8 @@ permalink: /kb/243/Q243622/
 
 ## Q243622: Asheron's Call: List of Chat Commands
 
+{% raw %}
+
 	Article: Q243622
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -109,3 +111,5 @@ permalink: /kb/243/Q243622/
 	
 	=============================================================================
 	
+
+{% endraw %}

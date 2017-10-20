@@ -6,6 +6,8 @@ permalink: /kb/199/Q199326/
 
 ## Q199326: XCON: Configuring X.400 Connectors to Communicate via a Firewall
 
+{% raw %}
+
 	Article: Q199326
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -99,3 +101,5 @@ permalink: /kb/199/Q199326/
 	
 	=============================================================================
 	
+
+{% endraw %}

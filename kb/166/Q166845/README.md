@@ -6,6 +6,8 @@ permalink: /kb/166/Q166845/
 
 ## Q166845: TN3270E Service Error 503 - Session Dropped Due to Inactivity
 
+{% raw %}
+
 	Article: Q166845
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2,3.0,4.0
@@ -72,3 +74,5 @@ permalink: /kb/166/Q166845/
 	
 	=============================================================================
 	
+
+{% endraw %}

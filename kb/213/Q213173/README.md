@@ -6,6 +6,8 @@ permalink: /kb/213/Q213173/
 
 ## Q213173: SMS: Error When Using DISTINCT Keyword Inside Count Query in WQL
 
+{% raw %}
+
 	Article: Q213173
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -67,3 +69,5 @@ permalink: /kb/213/Q213173/
 	
 	=============================================================================
 	
+
+{% endraw %}

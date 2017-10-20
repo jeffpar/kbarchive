@@ -6,6 +6,8 @@ permalink: /kb/157/Q157833/
 
 ## Q157833: WD97: &quot;PAGE &#92;#...&quot; Displays in ScreenTip for Comments
 
+{% raw %}
+
 	Article: Q157833
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/157/Q157833/
 	
 	=============================================================================
 	
+
+{% endraw %}

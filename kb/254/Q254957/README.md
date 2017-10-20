@@ -6,6 +6,8 @@ permalink: /kb/254/Q254957/
 
 ## Q254957: BUG: Registry Update Code For MFC OLE Server Fails on W2K
 
+{% raw %}
+
 	Article: Q254957
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -144,3 +146,5 @@ permalink: /kb/254/Q254957/
 	
 	=============================================================================
 	
+
+{% endraw %}

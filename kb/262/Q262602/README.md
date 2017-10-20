@@ -6,6 +6,8 @@ permalink: /kb/262/Q262602/
 
 ## Q262602: Third-Party Program Does Not Start with C0000138 Error Message
 
+{% raw %}
+
 	Article: Q262602
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/262/Q262602/
 	
 	=============================================================================
 	
+
+{% endraw %}

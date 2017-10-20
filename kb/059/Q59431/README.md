@@ -6,6 +6,8 @@ permalink: /kb/059/Q59431/
 
 ## Q59431: 7.10 Correction for OPEN COM Transfer &amp; Receive Buffer; TB, RB
 
+{% raw %}
+
 	Article: Q59431
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -77,3 +79,5 @@ permalink: /kb/059/Q59431/
 	   with the CHAIN statement.
 	
 	The OPEN COM statement can open the device names "COM1:" and "COM2:".
+
+{% endraw %}

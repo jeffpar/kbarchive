@@ -6,6 +6,8 @@ permalink: /kb/126/Q126774/
 
 ## Q126774: Writer/Artist: Colors Lost When Pasting From Paintbrush
 
+{% raw %}
+
 	Article: Q126774
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a,3.x
@@ -53,3 +55,5 @@ permalink: /kb/126/Q126774/
 	
 	=============================================================================
 	
+
+{% endraw %}

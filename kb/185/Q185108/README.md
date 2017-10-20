@@ -6,6 +6,8 @@ permalink: /kb/185/Q185108/
 
 ## Q185108: XFOR: Event ID 4132 When Using the IMC for Directory Replication
 
+{% raw %}
+
 	Article: Q185108
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -91,3 +93,5 @@ permalink: /kb/185/Q185108/
 	
 	=============================================================================
 	
+
+{% endraw %}

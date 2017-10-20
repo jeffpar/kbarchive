@@ -6,6 +6,8 @@ permalink: /kb/153/Q153643/
 
 ## Q153643: Registry Editor Scroll Bars Do Not Appear in Quick Viewer
 
+{% raw %}
+
 	Article: Q153643
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -44,3 +46,5 @@ permalink: /kb/153/Q153643/
 	
 	=============================================================================
 	
+
+{% endraw %}

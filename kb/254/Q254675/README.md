@@ -6,6 +6,8 @@ permalink: /kb/254/Q254675/
 
 ## Q254675: FIX: DTC/MTS Errors Cause Ora-00000 Normal Successful Completion
 
+{% raw %}
+
 	Article: Q254675
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202,Build 2.573.4403
@@ -126,3 +128,5 @@ permalink: /kb/254/Q254675/
 	
 	=============================================================================
 	
+
+{% endraw %}

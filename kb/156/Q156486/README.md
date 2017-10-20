@@ -6,6 +6,8 @@ permalink: /kb/156/Q156486/
 
 ## Q156486: WD97: Database Command Missing from the Insert Menu
 
+{% raw %}
+
 	Article: Q156486
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -63,3 +65,5 @@ permalink: /kb/156/Q156486/
 	
 	=============================================================================
 	
+
+{% endraw %}

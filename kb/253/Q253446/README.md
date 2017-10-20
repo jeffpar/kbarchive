@@ -6,6 +6,8 @@ permalink: /kb/253/Q253446/
 
 ## Q253446: Allegiance Err Msg: Invalid Page Fault in Module &lt;Unknown&gt;
 
+{% raw %}
+
 	Article: Q253446
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -49,3 +51,5 @@ permalink: /kb/253/Q253446/
 	
 	=============================================================================
 	
+
+{% endraw %}

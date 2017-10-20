@@ -6,6 +6,8 @@ permalink: /kb/179/Q179845/
 
 ## Q179845: PRB: 32-bit BASIC Does Not Convert UNICODE/ANSI in Binary Field
 
+{% raw %}
+
 	Article: Q179845
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0,7.0
@@ -158,3 +160,5 @@ permalink: /kb/179/Q179845/
 	
 	=============================================================================
 	
+
+{% endraw %}

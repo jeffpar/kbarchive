@@ -6,6 +6,8 @@ permalink: /kb/096/Q96137/
 
 ## Q96137: Description of Fuji Golf
 
+{% raw %}
+
 	Article: Q96137
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/096/Q96137/
 	
 	=============================================================================
 	
+
+{% endraw %}

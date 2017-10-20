@@ -6,6 +6,8 @@ permalink: /kb/157/Q157916/
 
 ## Q157916: SMS: Service Pack Reporting in Inventory
 
+{% raw %}
+
 	Article: Q157916
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -73,3 +75,5 @@ permalink: /kb/157/Q157916/
 	
 	=============================================================================
 	
+
+{% endraw %}

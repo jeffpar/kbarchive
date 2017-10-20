@@ -6,6 +6,8 @@ permalink: /kb/160/Q160616/
 
 ## Q160616: FP: Unable to Use Scroll Bar, Page Displayed Incorrectly
 
+{% raw %}
+
 	Article: Q160616
 	Product(s): Word Front Page
 	Version(s): WINDOWS:1.0,1.0a,1.1,97
@@ -74,3 +76,5 @@ permalink: /kb/160/Q160616/
 	
 	=============================================================================
 	
+
+{% endraw %}

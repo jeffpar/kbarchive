@@ -6,6 +6,8 @@ permalink: /kb/229/Q229113/
 
 ## Q229113: SMS: APM32 Doesn't Display the Reboot Countdown Dialog Box
 
+{% raw %}
+
 	Article: Q229113
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -84,3 +86,5 @@ permalink: /kb/229/Q229113/
 	
 	=============================================================================
 	
+
+{% endraw %}

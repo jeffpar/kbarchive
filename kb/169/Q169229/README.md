@@ -6,6 +6,8 @@ permalink: /kb/169/Q169229/
 
 ## Q169229: How to Remove and Reinstall DHCP and Keep the DHCP Config
 
+{% raw %}
+
 	Article: Q169229
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -88,3 +90,5 @@ permalink: /kb/169/Q169229/
 	
 	=============================================================================
 	
+
+{% endraw %}

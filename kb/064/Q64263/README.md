@@ -6,6 +6,8 @@ permalink: /kb/064/Q64263/
 
 ## Q64263: Toshiba T1200XE Needs /M:toshiba for Standard-Mode Windows
 
+{% raw %}
+
 	Article: Q64263
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/064/Q64263/
 	
 	=============================================================================
 	
+
+{% endraw %}

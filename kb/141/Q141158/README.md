@@ -6,6 +6,8 @@ permalink: /kb/141/Q141158/
 
 ## Q141158: Wrkgrp.ini File Not Implemented When Installing from Network
 
+{% raw %}
+
 	Article: Q141158
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -114,3 +116,5 @@ permalink: /kb/141/Q141158/
 	
 	=============================================================================
 	
+
+{% endraw %}

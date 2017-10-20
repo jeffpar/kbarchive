@@ -6,6 +6,8 @@ permalink: /kb/158/Q158028/
 
 ## Q158028: XADM: Changing the Exchange Organization Name
 
+{% raw %}
+
 	Article: Q158028
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -85,3 +87,5 @@ permalink: /kb/158/Q158028/
 	
 	=============================================================================
 	
+
+{% endraw %}

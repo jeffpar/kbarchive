@@ -6,6 +6,8 @@ permalink: /kb/142/Q142368/
 
 ## Q142368: ERD Fails on SNA Directory Entries in SETUP.LOG
 
+{% raw %}
+
 	Article: Q142368
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11; winnt:3.51
@@ -85,3 +87,5 @@ permalink: /kb/142/Q142368/
 	
 	=============================================================================
 	
+
+{% endraw %}

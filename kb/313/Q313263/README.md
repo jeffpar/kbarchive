@@ -6,6 +6,8 @@ permalink: /kb/313/Q313263/
 
 ## Q313263: MSB: Sound Stops Working After You Enter the Schoolroom
 
+{% raw %}
+
 	Article: Q313263
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -88,3 +90,5 @@ permalink: /kb/313/Q313263/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177885/
 
 ## Q177885: XADM: ISINTEG -FIX With -PUB or -PRI No Longer Works in 5.5
 
+{% raw %}
+
 	Article: Q177885
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -56,3 +58,5 @@ permalink: /kb/177/Q177885/
 	
 	=============================================================================
 	
+
+{% endraw %}

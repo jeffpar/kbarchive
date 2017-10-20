@@ -6,6 +6,8 @@ permalink: /kb/134/Q134556/
 
 ## Q134556: Computer Hangs with S3 Video Adapter and QEMM
 
+{% raw %}
+
 	Article: Q134556
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/134/Q134556/
 	
 	=============================================================================
 	
+
+{% endraw %}

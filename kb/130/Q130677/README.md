@@ -6,6 +6,8 @@ permalink: /kb/130/Q130677/
 
 ## Q130677: TCP/IP Generates Frames with Loopback Address as Source Address
 
+{% raw %}
+
 	Article: Q130677
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -57,3 +59,5 @@ permalink: /kb/130/Q130677/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141526/
 
 ## Q141526: Text1 Object in Grid Column by Default Gives You More Control
 
+{% raw %}
+
 	Article: Q141526
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -54,3 +56,5 @@ permalink: /kb/141/Q141526/
 	
 	=============================================================================
 	
+
+{% endraw %}

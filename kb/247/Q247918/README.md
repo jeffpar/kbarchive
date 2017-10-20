@@ -6,6 +6,8 @@ permalink: /kb/247/Q247918/
 
 ## Q247918: Cannot Resolve NetBIOS Name of Remote Domain Controller
 
+{% raw %}
+
 	Article: Q247918
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/247/Q247918/
 	
 	=============================================================================
 	
+
+{% endraw %}

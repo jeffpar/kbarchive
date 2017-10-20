@@ -6,6 +6,8 @@ permalink: /kb/045/Q45228/
 
 ## Q45228: Tzset Sample Program Redefinition Errors in Large Model
 
+{% raw %}
+
 	Article: Q45228
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -40,3 +42,5 @@ permalink: /kb/045/Q45228/
 	   extern int     near    cdecl daylight;
 	   extern long    near    cdecl timezone;
 	   extern char *  near    cdecl tzname[2];
+
+{% endraw %}

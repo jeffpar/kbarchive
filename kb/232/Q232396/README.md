@@ -6,6 +6,8 @@ permalink: /kb/232/Q232396/
 
 ## Q232396: XCON: Content Conversion Failure, Reroute to Another Server
 
+{% raw %}
+
 	Article: Q232396
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -100,3 +102,5 @@ permalink: /kb/232/Q232396/
 	
 	=============================================================================
 	
+
+{% endraw %}

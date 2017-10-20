@@ -6,6 +6,8 @@ permalink: /kb/132/Q132416/
 
 ## Q132416: PRB: Visual FoxPro Does Not Run Under OS/2
 
+{% raw %}
+
 	Article: Q132416
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/132/Q132416/
 	
 	=============================================================================
 	
+
+{% endraw %}

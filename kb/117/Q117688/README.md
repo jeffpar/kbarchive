@@ -6,6 +6,8 @@ permalink: /kb/117/Q117688/
 
 ## Q117688: Control Panel Does Not Accept Microsoft Driver Disk
 
+{% raw %}
+
 	Article: Q117688
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/117/Q117688/
 	
 	=============================================================================
 	
+
+{% endraw %}

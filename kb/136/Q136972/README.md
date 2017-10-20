@@ -6,6 +6,8 @@ permalink: /kb/136/Q136972/
 
 ## Q136972: Cannot Access NEC CDR-82 CD-ROM Drive
 
+{% raw %}
+
 	Article: Q136972
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/136/Q136972/
 	
 	=============================================================================
 	
+
+{% endraw %}

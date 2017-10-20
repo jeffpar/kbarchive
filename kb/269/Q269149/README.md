@@ -6,6 +6,8 @@ permalink: /kb/269/Q269149/
 
 ## Q269149: Code Page Specific Fonts Lost in DOS Graphics Mode
 
+{% raw %}
+
 	Article: Q269149
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -106,3 +108,5 @@ permalink: /kb/269/Q269149/
 	
 	=============================================================================
 	
+
+{% endraw %}

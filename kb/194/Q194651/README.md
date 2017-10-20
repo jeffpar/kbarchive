@@ -6,6 +6,8 @@ permalink: /kb/194/Q194651/
 
 ## Q194651: XCON: Empty Subject Msg Can Cause NDR When Sent Through X.400
 
+{% raw %}
+
 	Article: Q194651
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -138,3 +140,5 @@ permalink: /kb/194/Q194651/
 	
 	=============================================================================
 	
+
+{% endraw %}

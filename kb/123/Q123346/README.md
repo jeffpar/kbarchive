@@ -6,6 +6,8 @@ permalink: /kb/123/Q123346/
 
 ## Q123346: FILE: Migrat.exe Contains the FoxPro Migration Tool
 
+{% raw %}
+
 	Article: Q123346
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x
@@ -60,3 +62,5 @@ permalink: /kb/123/Q123346/
 	
 	=============================================================================
 	
+
+{% endraw %}

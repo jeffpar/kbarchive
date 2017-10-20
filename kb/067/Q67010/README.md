@@ -6,6 +6,8 @@ permalink: /kb/067/Q67010/
 
 ## Q67010: XTs Does Not Install for EGA or VGA Color with Windows 3.0
 
+{% raw %}
+
 	Article: Q67010
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/067/Q67010/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169137/
 
 ## Q169137: XADM: Exchange Mailbox Template Cannot Be Changed
 
+{% raw %}
+
 	Article: Q169137
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -89,3 +91,5 @@ permalink: /kb/169/Q169137/
 	
 	=============================================================================
 	
+
+{% endraw %}

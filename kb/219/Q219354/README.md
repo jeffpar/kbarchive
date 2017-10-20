@@ -6,6 +6,8 @@ permalink: /kb/219/Q219354/
 
 ## Q219354: RCP Does Not Work on SP4 with a Permission Denied Error
 
+{% raw %}
+
 	Article: Q219354
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -58,3 +60,5 @@ permalink: /kb/219/Q219354/
 	
 	=============================================================================
 	
+
+{% endraw %}

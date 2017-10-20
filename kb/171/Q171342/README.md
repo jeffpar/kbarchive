@@ -6,6 +6,8 @@ permalink: /kb/171/Q171342/
 
 ## Q171342: SMS: Running Office as a Shared SMS Application
 
+{% raw %}
+
 	Article: Q171342
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -176,3 +178,5 @@ permalink: /kb/171/Q171342/
 	
 	=============================================================================
 	
+
+{% endraw %}

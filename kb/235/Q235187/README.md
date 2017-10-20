@@ -6,6 +6,8 @@ permalink: /kb/235/Q235187/
 
 ## Q235187: SMS: NDS CAP and SMSLOGON Points May Cause GPF
 
+{% raw %}
+
 	Article: Q235187
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -69,3 +71,5 @@ permalink: /kb/235/Q235187/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157456/
 
 ## Q157456: WD97: Pleading Wizard Block Quotation Not Justified
 
+{% raw %}
+
 	Article: Q157456
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/157/Q157456/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129261/
 
 ## Q129261: Cannot Install Windows 95 on Acer Portable Computer
 
+{% raw %}
+
 	Article: Q129261
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/129/Q129261/
 	
 	=============================================================================
 	
+
+{% endraw %}

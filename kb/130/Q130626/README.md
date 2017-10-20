@@ -6,6 +6,8 @@ permalink: /kb/130/Q130626/
 
 ## Q130626: MHS: MHSINP.EXE Version 3.0.9 Update
 
+{% raw %}
+
 	Article: Q130626
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -91,3 +93,5 @@ permalink: /kb/130/Q130626/
 	
 	=============================================================================
 	
+
+{% endraw %}

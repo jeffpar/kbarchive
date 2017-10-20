@@ -6,6 +6,8 @@ permalink: /kb/183/Q183548/
 
 ## Q183548: Update to Diag. Capture Remote Environment Not Recognized
 
+{% raw %}
+
 	Article: Q183548
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/183/Q183548/
 	
 	=============================================================================
 	
+
+{% endraw %}

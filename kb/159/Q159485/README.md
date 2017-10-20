@@ -6,6 +6,8 @@ permalink: /kb/159/Q159485/
 
 ## Q159485: XADM: Troubleshooting Setup Problems Joining an Existing Site
 
+{% raw %}
+
 	Article: Q159485
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -186,3 +188,5 @@ permalink: /kb/159/Q159485/
 	
 	=============================================================================
 	
+
+{% endraw %}

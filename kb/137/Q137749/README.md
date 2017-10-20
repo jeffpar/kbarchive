@@ -6,6 +6,8 @@ permalink: /kb/137/Q137749/
 
 ## Q137749: How to Perform an Automated Backup with System Agent
 
+{% raw %}
+
 	Article: Q137749
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -89,3 +91,5 @@ permalink: /kb/137/Q137749/
 	
 	=============================================================================
 	
+
+{% endraw %}

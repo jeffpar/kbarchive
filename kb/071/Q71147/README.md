@@ -6,6 +6,8 @@ permalink: /kb/071/Q71147/
 
 ## Q71147: PRB: SDK Sample Programs Define Delete Accelerator Incorrectly
 
+{% raw %}
+
 	Article: Q71147
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -51,3 +53,5 @@ permalink: /kb/071/Q71147/
 	
 	=============================================================================
 	
+
+{% endraw %}

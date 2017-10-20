@@ -6,6 +6,8 @@ permalink: /kb/136/Q136037/
 
 ## Q136037: OLEDLG.DLL and MSVCRT20.DLL Not Found For Crystal Reports
 
+{% raw %}
+
 	Article: Q136037
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,3.5
@@ -80,3 +82,5 @@ permalink: /kb/136/Q136037/
 	
 	=============================================================================
 	
+
+{% endraw %}

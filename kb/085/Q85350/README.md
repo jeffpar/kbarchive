@@ -6,6 +6,8 @@ permalink: /kb/085/Q85350/
 
 ## Q85350: FAX: How Mail Gets from Downstream PO to Fax Gateway PO
 
+{% raw %}
+
 	Article: Q85350
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -41,3 +43,5 @@ permalink: /kb/085/Q85350/
 	
 	=============================================================================
 	
+
+{% endraw %}

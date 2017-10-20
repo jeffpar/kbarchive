@@ -6,6 +6,8 @@ permalink: /kb/108/Q108445/
 
 ## Q108445: Writer/Artist 1: Can't Find Files Saved in Control Room
 
+{% raw %}
+
 	Article: Q108445
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -108,3 +110,5 @@ permalink: /kb/108/Q108445/
 	
 	=============================================================================
 	
+
+{% endraw %}

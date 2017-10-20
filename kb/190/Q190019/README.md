@@ -6,6 +6,8 @@ permalink: /kb/190/Q190019/
 
 ## Q190019: XFOR: Reinstalling Microsoft Exchange Connectivity Software
 
+{% raw %}
+
 	Article: Q190019
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -130,3 +132,5 @@ permalink: /kb/190/Q190019/
 	
 	=============================================================================
 	
+
+{% endraw %}

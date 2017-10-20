@@ -6,6 +6,8 @@ permalink: /kb/186/Q186118/
 
 ## Q186118: HOWTO: Use FileSystemObject with Visual Basic
 
+{% raw %}
+
 	Article: Q186118
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -148,3 +150,5 @@ permalink: /kb/186/Q186118/
 	
 	=============================================================================
 	
+
+{% endraw %}

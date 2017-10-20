@@ -6,6 +6,8 @@ permalink: /kb/184/Q184196/
 
 ## Q184196: Rchelp.sys Causes a STOP Error at Boot on WinNT Clients
 
+{% raw %}
+
 	Article: Q184196
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP3
@@ -89,3 +91,5 @@ permalink: /kb/184/Q184196/
 	
 	=============================================================================
 	
+
+{% endraw %}

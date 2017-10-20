@@ -6,6 +6,8 @@ permalink: /kb/142/Q142561/
 
 ## Q142561: IIS ErrMsg: Specified Driver Could Not Be Loaded
 
+{% raw %}
+
 	Article: Q142561
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142561/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169014/
 
 ## Q169014: How to Setup for a Remote Debug
 
+{% raw %}
+
 	Article: Q169014
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0
@@ -135,3 +137,5 @@ permalink: /kb/169/Q169014/
 	
 	=============================================================================
 	
+
+{% endraw %}

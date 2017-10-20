@@ -6,6 +6,8 @@ permalink: /kb/120/Q120218/
 
 ## Q120218: FIX: Warning C4056 Generated When /Op Option is Used
 
+{% raw %}
+
 	Article: Q120218
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,4.0,4.1,4.2,5.0
@@ -67,3 +69,5 @@ permalink: /kb/120/Q120218/
 	
 	=============================================================================
 	
+
+{% endraw %}

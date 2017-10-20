@@ -6,6 +6,8 @@ permalink: /kb/254/Q254361/
 
 ## Q254361: Streets and Trips: How to Export Maps to Pocket Streets
 
+{% raw %}
+
 	Article: Q254361
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -104,3 +106,5 @@ permalink: /kb/254/Q254361/
 	
 	=============================================================================
 	
+
+{% endraw %}

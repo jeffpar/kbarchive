@@ -6,6 +6,8 @@ permalink: /kb/126/Q126289/
 
 ## Q126289: PC Forms: Cannot Delete Attachment from Routing Form
 
+{% raw %}
+
 	Article: Q126289
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/126/Q126289/
 	
 	=============================================================================
 	
+
+{% endraw %}

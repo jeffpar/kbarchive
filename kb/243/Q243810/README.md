@@ -6,6 +6,8 @@ permalink: /kb/243/Q243810/
 
 ## Q243810: FIX: Incorrect Errors Occur w/ SELECT Queries Using Oracle 8.0.5
 
+{% raw %}
+
 	Article: Q243810
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): Build 2.573.2927,Build 2.573.3513,Build 2.573.3711
@@ -117,3 +119,5 @@ permalink: /kb/243/Q243810/
 	
 	=============================================================================
 	
+
+{% endraw %}

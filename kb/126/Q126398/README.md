@@ -6,6 +6,8 @@ permalink: /kb/126/Q126398/
 
 ## Q126398: Limits on OtherServers Parameter in SNA Server.
 
+{% raw %}
+
 	Article: Q126398
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,3.0
@@ -59,3 +61,5 @@ permalink: /kb/126/Q126398/
 	
 	=============================================================================
 	
+
+{% endraw %}

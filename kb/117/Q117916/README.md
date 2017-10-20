@@ -6,6 +6,8 @@ permalink: /kb/117/Q117916/
 
 ## Q117916: ADT2: ADT Splash Screen Is Not Repainted
 
+{% raw %}
+
 	Article: Q117916
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -76,3 +78,5 @@ permalink: /kb/117/Q117916/
 	
 	=============================================================================
 	
+
+{% endraw %}

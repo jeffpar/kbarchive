@@ -6,6 +6,8 @@ permalink: /kb/256/Q256147/
 
 ## Q256147: BS2000 Err Msg: Current Shockwave Cannot Handle New Format
 
+{% raw %}
+
 	Article: Q256147
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -172,3 +174,5 @@ permalink: /kb/256/Q256147/
 	
 	=============================================================================
 	
+
+{% endraw %}

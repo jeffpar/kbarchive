@@ -6,6 +6,8 @@ permalink: /kb/266/Q266433/
 
 ## Q266433: MS00-070: Patch for Numerous Vulnerabilities in the LPC Port Sys
 
+{% raw %}
+
 	Article: Q266433
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -249,3 +251,5 @@ permalink: /kb/266/Q266433/
 	
 	=============================================================================
 	
+
+{% endraw %}

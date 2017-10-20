@@ -6,6 +6,8 @@ permalink: /kb/076/Q76810/
 
 ## Q76810: Marstek Mouse Driver 6.01 or Later with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q76810
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -62,3 +64,5 @@ permalink: /kb/076/Q76810/
 	
 	=============================================================================
 	
+
+{% endraw %}

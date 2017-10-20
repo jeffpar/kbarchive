@@ -6,6 +6,8 @@ permalink: /kb/085/Q85518/
 
 ## Q85518: INFO: Correct Use of the SetFont() Function in MFC
 
+{% raw %}
+
 	Article: Q85518
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -114,3 +116,5 @@ permalink: /kb/085/Q85518/
 	
 	=============================================================================
 	
+
+{% endraw %}

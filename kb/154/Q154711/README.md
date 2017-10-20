@@ -6,6 +6,8 @@ permalink: /kb/154/Q154711/
 
 ## Q154711: HP Scanners Not Detected by Deskscan Program
 
+{% raw %}
+
 	Article: Q154711
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/154/Q154711/
 	
 	=============================================================================
 	
+
+{% endraw %}

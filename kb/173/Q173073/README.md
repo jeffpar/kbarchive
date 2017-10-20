@@ -6,6 +6,8 @@ permalink: /kb/173/Q173073/
 
 ## Q173073: SMS: Package Is Currently Being Installed in the Background
 
+{% raw %}
+
 	Article: Q173073
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -82,3 +84,5 @@ permalink: /kb/173/Q173073/
 	
 	=============================================================================
 	
+
+{% endraw %}

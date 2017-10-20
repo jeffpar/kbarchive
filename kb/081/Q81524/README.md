@@ -6,6 +6,8 @@ permalink: /kb/081/Q81524/
 
 ## Q81524: Description of Files Included with Windows Version 3.0
 
+{% raw %}
+
 	Article: Q81524
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -274,3 +276,5 @@ permalink: /kb/081/Q81524/
 	
 	=============================================================================
 	
+
+{% endraw %}

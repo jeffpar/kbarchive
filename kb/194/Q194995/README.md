@@ -6,6 +6,8 @@ permalink: /kb/194/Q194995/
 
 ## Q194995: Pinball Arcade: Game Pauses or Game Performance Is Slow
 
+{% raw %}
+
 	Article: Q194995
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -81,3 +83,5 @@ permalink: /kb/194/Q194995/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58035/
 
 ## Q58035: Alternate Math (BC /FPa) Won't Always Produce Smaller .EXE's
 
+{% raw %}
+
 	Article: Q58035
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -69,3 +71,5 @@ permalink: /kb/058/Q58035/
 	programs with lots of floating-point calculations, the extra code for
 	each floating-point operation can actually create a larger executable
 	file.
+
+{% endraw %}

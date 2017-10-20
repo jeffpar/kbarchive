@@ -6,6 +6,8 @@ permalink: /kb/167/Q167090/
 
 ## Q167090: PPT: How to Videotape a PowerPoint Presentation
 
+{% raw %}
+
 	Article: Q167090
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:3.0,4.0; WINDOWS:3.0,4.0,7.0
@@ -126,3 +128,5 @@ permalink: /kb/167/Q167090/
 	
 	=============================================================================
 	
+
+{% endraw %}

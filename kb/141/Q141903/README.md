@@ -6,6 +6,8 @@ permalink: /kb/141/Q141903/
 
 ## Q141903: Text Missing from Bottom of Page Viewing Fax with Fax Viewer
 
+{% raw %}
+
 	Article: Q141903
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/141/Q141903/
 	
 	=============================================================================
 	
+
+{% endraw %}

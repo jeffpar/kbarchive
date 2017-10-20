@@ -6,6 +6,8 @@ permalink: /kb/151/Q151217/
 
 ## Q151217: Password Substitution Is Not Available in SNASVCMG Mode
 
+{% raw %}
+
 	Article: Q151217
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -59,3 +61,5 @@ permalink: /kb/151/Q151217/
 	
 	=============================================================================
 	
+
+{% endraw %}

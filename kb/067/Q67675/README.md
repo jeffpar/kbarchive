@@ -6,6 +6,8 @@ permalink: /kb/067/Q67675/
 
 ## Q67675: Access to the Windows Clipboard by MS-DOS-Based App
 
+{% raw %}
+
 	Article: Q67675
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -187,3 +189,5 @@ permalink: /kb/067/Q67675/
 	
 	=============================================================================
 	
+
+{% endraw %}

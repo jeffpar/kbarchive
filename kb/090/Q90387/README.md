@@ -6,6 +6,8 @@ permalink: /kb/090/Q90387/
 
 ## Q90387: Information on Network Card Detection (NCD)
 
+{% raw %}
+
 	Article: Q90387
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0,3.1,3.11
@@ -240,3 +242,5 @@ permalink: /kb/090/Q90387/
 	
 	=============================================================================
 	
+
+{% endraw %}

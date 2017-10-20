@@ -6,6 +6,8 @@ permalink: /kb/198/Q198197/
 
 ## Q198197: Combat Flight Simulator: Functionality of Numeric Keypad
 
+{% raw %}
+
 	Article: Q198197
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -70,3 +72,5 @@ permalink: /kb/198/Q198197/
 	
 	=============================================================================
 	
+
+{% endraw %}

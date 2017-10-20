@@ -6,6 +6,8 @@ permalink: /kb/302/Q302550/
 
 ## Q302550: Updated Fail-Safe Information
 
+{% raw %}
+
 	Article: Q302550
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -50,3 +52,5 @@ permalink: /kb/302/Q302550/
 	
 	=============================================================================
 	
+
+{% endraw %}

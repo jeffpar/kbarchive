@@ -6,6 +6,8 @@ permalink: /kb/121/Q121059/
 
 ## Q121059: Command-Line Filenames Appear Limited to 127 Characters
 
+{% raw %}
+
 	Article: Q121059
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -71,3 +73,5 @@ permalink: /kb/121/Q121059/
 	
 	=============================================================================
 	
+
+{% endraw %}

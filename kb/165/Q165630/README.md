@@ -6,6 +6,8 @@ permalink: /kb/165/Q165630/
 
 ## Q165630: ODE97: Files Added to the Disk Images by the ODE Setup Wizard
 
+{% raw %}
+
 	Article: Q165630
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -245,3 +247,5 @@ permalink: /kb/165/Q165630/
 	
 	=============================================================================
 	
+
+{% endraw %}

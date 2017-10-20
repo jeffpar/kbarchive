@@ -6,6 +6,8 @@ permalink: /kb/216/Q216862/
 
 ## Q216862: PRB:Access Violation on Chat Server During Callback Registration
 
+{% raw %}
+
 	Article: Q216862
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -116,3 +118,5 @@ permalink: /kb/216/Q216862/
 	
 	=============================================================================
 	
+
+{% endraw %}

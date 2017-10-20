@@ -6,6 +6,8 @@ permalink: /kb/135/Q135691/
 
 ## Q135691: SMS: Invmac Hangs After Cold-Boot on Quadra 800 or Centra 650
 
+{% raw %}
+
 	Article: Q135691
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -44,3 +46,5 @@ permalink: /kb/135/Q135691/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/308/Q308998/
 
 ## Q308998: Print Server Access Violation in Function MonitorThread
 
+{% raw %}
+
 	Article: Q308998
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0
@@ -157,3 +159,5 @@ permalink: /kb/308/Q308998/
 	
 	=============================================================================
 	
+
+{% endraw %}

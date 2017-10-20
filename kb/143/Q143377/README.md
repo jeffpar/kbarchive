@@ -6,6 +6,8 @@ permalink: /kb/143/Q143377/
 
 ## Q143377: XADM: Cannot Open Custom Recipient in Administrator
 
+{% raw %}
+
 	Article: Q143377
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/143/Q143377/
 	
 	=============================================================================
 	
+
+{% endraw %}

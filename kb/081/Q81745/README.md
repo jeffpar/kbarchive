@@ -6,6 +6,8 @@ permalink: /kb/081/Q81745/
 
 ## Q81745: MSD May Return Incorrect Values for Extended Partitions
 
+{% raw %}
+
 	Article: Q81745
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/081/Q81745/
 	
 	=============================================================================
 	
+
+{% endraw %}

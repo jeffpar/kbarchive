@@ -6,6 +6,8 @@ permalink: /kb/251/Q251382/
 
 ## Q251382: PPTP Connection Does Not Transfer Any Data over the Connection
 
+{% raw %}
+
 	Article: Q251382
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/251/Q251382/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181890/
 
 ## Q181890: PRB: Known OLE DB Provider Problems with Visual C++ 6.0 Wizards
 
+{% raw %}
+
 	Article: Q181890
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -207,3 +209,5 @@ permalink: /kb/181/Q181890/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75244/
 
 ## Q75244: FIX: Avoid externdef or proto when Initializing Data
 
+{% raw %}
+
 	Article: Q75244
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -95,3 +97,5 @@ permalink: /kb/075/Q75244/
 	
 	=============================================================================
 	
+
+{% endraw %}

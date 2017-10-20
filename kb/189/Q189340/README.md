@@ -6,6 +6,8 @@ permalink: /kb/189/Q189340/
 
 ## Q189340: XADM: Msg. Auto-Forwarded Though Automatic Replies Is Disabled
 
+{% raw %}
+
 	Article: Q189340
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -79,3 +81,5 @@ permalink: /kb/189/Q189340/
 	
 	=============================================================================
 	
+
+{% endraw %}

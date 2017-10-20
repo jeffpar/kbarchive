@@ -6,6 +6,8 @@ permalink: /kb/224/Q224574/
 
 ## Q224574: SMS: Remote Control Installation Fails to Recognize LANDesk 6.x
 
+{% raw %}
+
 	Article: Q224574
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -81,3 +83,5 @@ permalink: /kb/224/Q224574/
 	
 	=============================================================================
 	
+
+{% endraw %}

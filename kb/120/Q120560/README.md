@@ -6,6 +6,8 @@ permalink: /kb/120/Q120560/
 
 ## Q120560: Step-Up Runs MAKESYS but Fails SETUP w/Insufficient Memory Err
 
+{% raw %}
+
 	Article: Q120560
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -61,3 +63,5 @@ permalink: /kb/120/Q120560/
 	
 	=============================================================================
 	
+
+{% endraw %}

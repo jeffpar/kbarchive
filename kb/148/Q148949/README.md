@@ -6,6 +6,8 @@ permalink: /kb/148/Q148949/
 
 ## Q148949: Inventory of a File with a Path Defined Will Fail
 
+{% raw %}
+
 	Article: Q148949
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -62,3 +64,5 @@ permalink: /kb/148/Q148949/
 	
 	=============================================================================
 	
+
+{% endraw %}

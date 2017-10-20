@@ -6,6 +6,8 @@ permalink: /kb/168/Q168447/
 
 ## Q168447: PRB: DAO SetParamValue Limited to 255 Characters
 
+{% raw %}
+
 	Article: Q168447
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2 5.0 6.0
@@ -103,3 +105,5 @@ permalink: /kb/168/Q168447/
 	
 	=============================================================================
 	
+
+{% endraw %}

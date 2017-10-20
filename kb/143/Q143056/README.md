@@ -6,6 +6,8 @@ permalink: /kb/143/Q143056/
 
 ## Q143056: MSN Mail Header and Routing Problems
 
+{% raw %}
+
 	Article: Q143056
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0,2.5
@@ -52,3 +54,5 @@ permalink: /kb/143/Q143056/
 	
 	=============================================================================
 	
+
+{% endraw %}

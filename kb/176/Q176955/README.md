@@ -6,6 +6,8 @@ permalink: /kb/176/Q176955/
 
 ## Q176955: Active Server Pages Supported Configurations
 
+{% raw %}
+
 	Article: Q176955
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0; :1.0b
@@ -53,3 +55,5 @@ permalink: /kb/176/Q176955/
 	
 	=============================================================================
 	
+
+{% endraw %}

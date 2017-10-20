@@ -6,6 +6,8 @@ permalink: /kb/139/Q139612/
 
 ## Q139612: TCP/IP-32 3.11b NET LOGON to Domain Fails Across Router
 
+{% raw %}
+
 	Article: Q139612
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11b
@@ -141,3 +143,5 @@ permalink: /kb/139/Q139612/
 	
 	=============================================================================
 	
+
+{% endraw %}

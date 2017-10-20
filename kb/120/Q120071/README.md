@@ -6,6 +6,8 @@ permalink: /kb/120/Q120071/
 
 ## Q120071: BUG: Record Instance Cannot Have Same Name as a Record Field
 
+{% raw %}
+
 	Article: Q120071
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.1,6.11
@@ -64,3 +66,5 @@ permalink: /kb/120/Q120071/
 	
 	=============================================================================
 	
+
+{% endraw %}

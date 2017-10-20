@@ -6,6 +6,8 @@ permalink: /kb/307/Q307557/
 
 ## Q307557: BUG: 32-Bit App. Use of DBGrid Fails When 16-Bit Already Running
 
+{% raw %}
+
 	Article: Q307557
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -84,3 +86,5 @@ permalink: /kb/307/Q307557/
 	
 	=============================================================================
 	
+
+{% endraw %}

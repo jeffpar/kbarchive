@@ -6,6 +6,8 @@ permalink: /kb/268/Q268420/
 
 ## Q268420: Encarta 2001: Installing Encarta Adds Features to Word 2000
 
+{% raw %}
+
 	Article: Q268420
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): ; WINDOWS:1.0,2000
@@ -78,3 +80,5 @@ permalink: /kb/268/Q268420/
 	
 	=============================================================================
 	
+
+{% endraw %}

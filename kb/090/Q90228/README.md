@@ -6,6 +6,8 @@ permalink: /kb/090/Q90228/
 
 ## Q90228: Primary File Server Suggested MS-DOS Configuration Changes
 
+{% raw %}
+
 	Article: Q90228
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -49,3 +51,5 @@ permalink: /kb/090/Q90228/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/176/Q176782/
 
 ## Q176782: Err Msg: Multicast Detector Failed Initialization
 
+{% raw %}
+
 	Article: Q176782
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.51,4.0
@@ -120,3 +122,5 @@ permalink: /kb/176/Q176782/
 	
 	=============================================================================
 	
+
+{% endraw %}

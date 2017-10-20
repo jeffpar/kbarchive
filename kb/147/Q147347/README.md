@@ -6,6 +6,8 @@ permalink: /kb/147/Q147347/
 
 ## Q147347: Application Error in SPOOLSS.EXE When Printing
 
+{% raw %}
+
 	Article: Q147347
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.5,3.51,4.0
@@ -72,3 +74,5 @@ permalink: /kb/147/Q147347/
 	
 	=============================================================================
 	
+
+{% endraw %}

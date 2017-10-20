@@ -6,6 +6,8 @@ permalink: /kb/264/Q264079/
 
 ## Q264079: Runtime Library Error Message When You Install or Start Encarta
 
+{% raw %}
+
 	Article: Q264079
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:; :
@@ -95,3 +97,5 @@ permalink: /kb/264/Q264079/
 	
 	=============================================================================
 	
+
+{% endraw %}

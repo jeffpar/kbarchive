@@ -6,6 +6,8 @@ permalink: /kb/242/Q242088/
 
 ## Q242088: Winnt /b Doesn't Work on WinNT 4.0 w/ Onboard Adaptec 7895 SCSI
 
+{% raw %}
+
 	Article: Q242088
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -72,3 +74,5 @@ permalink: /kb/242/Q242088/
 	
 	=============================================================================
 	
+
+{% endraw %}

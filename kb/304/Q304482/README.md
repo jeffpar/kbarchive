@@ -6,6 +6,8 @@ permalink: /kb/304/Q304482/
 
 ## Q304482: PRB: VFP Executable File Is Slow to Access Tables On Server
 
+{% raw %}
+
 	Article: Q304482
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,5.0,6.0,7.0
@@ -68,3 +70,5 @@ permalink: /kb/304/Q304482/
 	
 	=============================================================================
 	
+
+{% endraw %}

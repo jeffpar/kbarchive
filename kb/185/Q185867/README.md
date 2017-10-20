@@ -6,6 +6,8 @@ permalink: /kb/185/Q185867/
 
 ## Q185867: STOP 0x0000000A in Win32k.sys After Installing Korean Office 97
 
+{% raw %}
+
 	Article: Q185867
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/185/Q185867/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137390/
 
 ## Q137390: System Agent Does Not Detect Joystick Activity
 
+{% raw %}
+
 	Article: Q137390
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -55,3 +57,5 @@ permalink: /kb/137/Q137390/
 	
 	=============================================================================
 	
+
+{% endraw %}

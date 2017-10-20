@@ -6,6 +6,8 @@ permalink: /kb/112/Q112402/
 
 ## Q112402: DIR and File Manager Show SFM Files with Wrong Size
 
+{% raw %}
+
 	Article: Q112402
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -57,3 +59,5 @@ permalink: /kb/112/Q112402/
 	
 	=============================================================================
 	
+
+{% endraw %}

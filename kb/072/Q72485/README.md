@@ -6,6 +6,8 @@ permalink: /kb/072/Q72485/
 
 ## Q72485: Error Copying Files During Entertainment Pack Setup
 
+{% raw %}
+
 	Article: Q72485
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/072/Q72485/
 	
 	=============================================================================
 	
+
+{% endraw %}

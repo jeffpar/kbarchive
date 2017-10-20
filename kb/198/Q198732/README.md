@@ -6,6 +6,8 @@ permalink: /kb/198/Q198732/
 
 ## Q198732: HOWTO: Draw ActiveX Controls with Child Controls in Design Time
 
+{% raw %}
+
 	Article: Q198732
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -209,3 +211,5 @@ permalink: /kb/198/Q198732/
 	
 	=============================================================================
 	
+
+{% endraw %}

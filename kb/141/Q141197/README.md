@@ -6,6 +6,8 @@ permalink: /kb/141/Q141197/
 
 ## Q141197: Encarta 1996: How the Dictionary Displays a Definition
 
+{% raw %}
+
 	Article: Q141197
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -47,3 +49,5 @@ permalink: /kb/141/Q141197/
 	
 	=============================================================================
 	
+
+{% endraw %}

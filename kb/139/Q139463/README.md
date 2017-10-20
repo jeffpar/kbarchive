@@ -6,6 +6,8 @@ permalink: /kb/139/Q139463/
 
 ## Q139463: PC Win: How to Customize Mail 3.x MailBeep under Windows 95
 
+{% raw %}
+
 	Article: Q139463
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -92,3 +94,5 @@ permalink: /kb/139/Q139463/
 	
 	=============================================================================
 	
+
+{% endraw %}

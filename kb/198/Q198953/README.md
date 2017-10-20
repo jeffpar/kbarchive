@@ -6,6 +6,8 @@ permalink: /kb/198/Q198953/
 
 ## Q198953: HOWTO: Expand An Array Pointer in the Visual C++ Debugger
 
+{% raw %}
+
 	Article: Q198953
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -85,3 +87,5 @@ permalink: /kb/198/Q198953/
 	
 	=============================================================================
 	
+
+{% endraw %}

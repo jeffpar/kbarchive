@@ -6,6 +6,8 @@ permalink: /kb/042/Q42466/
 
 ## Q42466: &quot;RETURN Without GOSUB&quot;; Btrieve BTVRFAR Fails with BASIC
 
+{% raw %}
+
 	Article: Q42466
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -53,3 +55,5 @@ permalink: /kb/042/Q42466/
 	  CALL BTRV( OP%, STAT%, BLK$, FCB%, BLEN%, KBUF$, KNUM%)
 	'Instead of:
 	'  CALL BTRVFAR(OP%,STAT%,BLK$,SADD(A$),VARSEG(A$),BLEN%,KBUF$,KNUM%);
+
+{% endraw %}

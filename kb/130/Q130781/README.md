@@ -6,6 +6,8 @@ permalink: /kb/130/Q130781/
 
 ## Q130781: Trust Fails if PDC Computer Name Exists in a Trusted Domain
 
+{% raw %}
+
 	Article: Q130781
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -87,3 +89,5 @@ permalink: /kb/130/Q130781/
 	
 	=============================================================================
 	
+
+{% endraw %}

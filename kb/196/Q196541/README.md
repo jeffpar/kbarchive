@@ -6,6 +6,8 @@ permalink: /kb/196/Q196541/
 
 ## Q196541: WD97: Copying Toolbar Does Not Copy Associated Macros
 
+{% raw %}
+
 	Article: Q196541
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/196/Q196541/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68756/
 
 ## Q68756: Using COM1.OS2 or COM1.PRN Ports in Windows 3.0
 
+{% raw %}
+
 	Article: Q68756
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -99,3 +101,5 @@ permalink: /kb/068/Q68756/
 	
 	=============================================================================
 	
+
+{% endraw %}

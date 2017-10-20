@@ -6,6 +6,8 @@ permalink: /kb/142/Q142709/
 
 ## Q142709: Big Files Copy Slowly from Mac to SFM Over AppleTalk Router
 
+{% raw %}
+
 	Article: Q142709
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -58,3 +60,5 @@ permalink: /kb/142/Q142709/
 	
 	=============================================================================
 	
+
+{% endraw %}

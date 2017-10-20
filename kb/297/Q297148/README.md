@@ -6,6 +6,8 @@ permalink: /kb/297/Q297148/
 
 ## Q297148: Costing Errors For Dial-up Networking And Internet Explorer
 
+{% raw %}
+
 	Article: Q297148
 	Product(s): The Microsoft Network
 	Version(s): 6.0
@@ -126,3 +128,5 @@ permalink: /kb/297/Q297148/
 	
 	=============================================================================
 	
+
+{% endraw %}

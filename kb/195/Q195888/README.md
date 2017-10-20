@@ -6,6 +6,8 @@ permalink: /kb/195/Q195888/
 
 ## Q195888: EVG99: Cannot Display All Zoom Levels Using Zoom Buttons
 
+{% raw %}
+
 	Article: Q195888
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/195/Q195888/
 	
 	=============================================================================
 	
+
+{% endraw %}

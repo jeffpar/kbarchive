@@ -6,6 +6,8 @@ permalink: /kb/139/Q139949/
 
 ## Q139949: Golf 2.0: Err Msg with Low-Res Courses and How to Convert
 
+{% raw %}
+
 	Article: Q139949
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -106,3 +108,5 @@ permalink: /kb/139/Q139949/
 	
 	=============================================================================
 	
+
+{% endraw %}

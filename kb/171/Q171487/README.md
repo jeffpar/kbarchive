@@ -6,6 +6,8 @@ permalink: /kb/171/Q171487/
 
 ## Q171487: FIX: Crash When Assigning Uninitialized Object to Tag
 
+{% raw %}
+
 	Article: Q171487
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -89,3 +91,5 @@ permalink: /kb/171/Q171487/
 	
 	=============================================================================
 	
+
+{% endraw %}

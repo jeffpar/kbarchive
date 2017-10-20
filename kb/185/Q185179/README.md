@@ -6,6 +6,8 @@ permalink: /kb/185/Q185179/
 
 ## Q185179: SMS: No Retry For &quot;Remove Package&quot; Jobs
 
+{% raw %}
+
 	Article: Q185179
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -62,3 +64,5 @@ permalink: /kb/185/Q185179/
 	
 	=============================================================================
 	
+
+{% endraw %}

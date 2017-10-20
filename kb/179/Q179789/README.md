@@ -6,6 +6,8 @@ permalink: /kb/179/Q179789/
 
 ## Q179789: SMSINST: Repackage Of Netscape Communicator 4.03 Pro Fails
 
+{% raw %}
+
 	Article: Q179789
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/179/Q179789/
 	
 	=============================================================================
 	
+
+{% endraw %}

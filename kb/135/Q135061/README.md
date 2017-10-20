@@ -6,6 +6,8 @@ permalink: /kb/135/Q135061/
 
 ## Q135061: Regeneration of a Stripe Set With Parity Disk Fails
 
+{% raw %}
+
 	Article: Q135061
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -94,3 +96,5 @@ permalink: /kb/135/Q135061/
 	
 	=============================================================================
 	
+
+{% endraw %}

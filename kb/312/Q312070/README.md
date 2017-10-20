@@ -6,6 +6,8 @@ permalink: /kb/312/Q312070/
 
 ## Q312070: ENC: Computer May Stop Responding During Installation
 
+{% raw %}
+
 	Article: Q312070
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -231,3 +233,5 @@ permalink: /kb/312/Q312070/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237366/
 
 ## Q237366: SMS: Microsoft SMS and Clustered Server Environments
 
+{% raw %}
+
 	Article: Q237366
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2,2.0
@@ -118,3 +120,5 @@ permalink: /kb/237/Q237366/
 	
 	=============================================================================
 	
+
+{% endraw %}

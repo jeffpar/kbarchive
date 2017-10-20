@@ -6,6 +6,8 @@ permalink: /kb/067/Q67795/
 
 ## Q67795: EXE File Checksum Incorrect If LINK /CO or /E Option Used
 
+{% raw %}
+
 	Article: Q67795
 	Product(s): Microsoft Programming Utilities
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/067/Q67795/
 	
 	=============================================================================
 	
+
+{% endraw %}

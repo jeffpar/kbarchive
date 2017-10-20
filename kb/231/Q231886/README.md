@@ -6,6 +6,8 @@ permalink: /kb/231/Q231886/
 
 ## Q231886: BUG: Misleading Error 0x8004d021 When Import Transaction Fails
 
+{% raw %}
+
 	Article: Q231886
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,1.5
@@ -86,3 +88,5 @@ permalink: /kb/231/Q231886/
 	
 	=============================================================================
 	
+
+{% endraw %}

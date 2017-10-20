@@ -6,6 +6,8 @@ permalink: /kb/115/Q115884/
 
 ## Q115884: Err Msg in WFWG 3.11 w/LANtastic 5.x: RFC:SFT Not in SFT List
 
+{% raw %}
+
 	Article: Q115884
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -67,3 +69,5 @@ permalink: /kb/115/Q115884/
 	
 	=============================================================================
 	
+
+{% endraw %}

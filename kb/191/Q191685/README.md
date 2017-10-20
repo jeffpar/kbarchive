@@ -6,6 +6,8 @@ permalink: /kb/191/Q191685/
 
 ## Q191685: Vfp6int.exe VFP 6.0 ODBC Driver FoxPro.int Resource File
 
+{% raw %}
+
 	Article: Q191685
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -55,3 +57,5 @@ permalink: /kb/191/Q191685/
 	
 	=============================================================================
 	
+
+{% endraw %}

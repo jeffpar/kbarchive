@@ -6,6 +6,8 @@ permalink: /kb/093/Q93451/
 
 ## Q93451: WININI.WRI from Windows for Workgroups Version 3.1
 
+{% raw %}
+
 	Article: Q93451
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -447,3 +449,5 @@ permalink: /kb/093/Q93451/
 	
 	=============================================================================
 	
+
+{% endraw %}

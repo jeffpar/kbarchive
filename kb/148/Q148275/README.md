@@ -6,6 +6,8 @@ permalink: /kb/148/Q148275/
 
 ## Q148275: Baseball 95: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148275
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/148/Q148275/
 	
 	=============================================================================
 	
+
+{% endraw %}

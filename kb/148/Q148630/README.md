@@ -6,6 +6,8 @@ permalink: /kb/148/Q148630/
 
 ## Q148630: Incorrect Token Ring Frame Type Causes &quot;Request Timed Out&quot;
 
+{% raw %}
+
 	Article: Q148630
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11; :3.11,3.11a
@@ -57,3 +59,5 @@ permalink: /kb/148/Q148630/
 	
 	=============================================================================
 	
+
+{% endraw %}

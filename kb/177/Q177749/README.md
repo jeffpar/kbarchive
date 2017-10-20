@@ -6,6 +6,8 @@ permalink: /kb/177/Q177749/
 
 ## Q177749: How IIS 3.0 Handles Client Language
 
+{% raw %}
+
 	Article: Q177749
 	Product(s): Internet Information Server
 	Version(s): WinNT:3.0
@@ -94,3 +96,5 @@ permalink: /kb/177/Q177749/
 	
 	=============================================================================
 	
+
+{% endraw %}

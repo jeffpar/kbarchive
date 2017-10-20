@@ -6,6 +6,8 @@ permalink: /kb/141/Q141395/
 
 ## Q141395: FIX: Problem Setting Focus to a Combobox from a PageFrame
 
+{% raw %}
+
 	Article: Q141395
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -101,3 +103,5 @@ permalink: /kb/141/Q141395/
 	
 	=============================================================================
 	
+
+{% endraw %}

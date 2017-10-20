@@ -6,6 +6,8 @@ permalink: /kb/132/Q132298/
 
 ## Q132298: Bookshelf 1995 for the Macintosh: Movie Skips As It Plays
 
+{% raw %}
+
 	Article: Q132298
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -47,3 +49,5 @@ permalink: /kb/132/Q132298/
 	
 	=============================================================================
 	
+
+{% endraw %}

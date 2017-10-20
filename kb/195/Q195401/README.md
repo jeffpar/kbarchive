@@ -6,6 +6,8 @@ permalink: /kb/195/Q195401/
 
 ## Q195401: ACTPU(ERP)/ACTLU(ERP) Requests Not Sent To Downstream Systems
 
+{% raw %}
+
 	Article: Q195401
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -160,3 +162,5 @@ permalink: /kb/195/Q195401/
 	
 	=============================================================================
 	
+
+{% endraw %}

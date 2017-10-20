@@ -6,6 +6,8 @@ permalink: /kb/163/Q163584/
 
 ## Q163584: FP: Unable to Save to IIS Server if Permissions Incorrect
 
+{% raw %}
+
 	Article: Q163584
 	Product(s): Word Front Page
 	Version(s): ; WINDOWS:1.1
@@ -78,3 +80,5 @@ permalink: /kb/163/Q163584/
 	
 	=============================================================================
 	
+
+{% endraw %}

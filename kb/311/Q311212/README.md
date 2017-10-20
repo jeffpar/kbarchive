@@ -6,6 +6,8 @@ permalink: /kb/311/Q311212/
 
 ## Q311212: SMS: Missing Advertisement Status Messages
 
+{% raw %}
+
 	Article: Q311212
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -187,3 +189,5 @@ permalink: /kb/311/Q311212/
 	
 	=============================================================================
 	
+
+{% endraw %}

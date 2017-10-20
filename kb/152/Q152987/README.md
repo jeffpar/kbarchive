@@ -6,6 +6,8 @@ permalink: /kb/152/Q152987/
 
 ## Q152987: MS-DOS Apps Report Sharing Violation When Using CSNW
 
+{% raw %}
+
 	Article: Q152987
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -60,3 +62,5 @@ permalink: /kb/152/Q152987/
 	
 	=============================================================================
 	
+
+{% endraw %}

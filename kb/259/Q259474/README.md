@@ -6,6 +6,8 @@ permalink: /kb/259/Q259474/
 
 ## Q259474: Australian Daylight Saving Time Changes for Microsoft Products
 
+{% raw %}
+
 	Article: Q259474
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -291,3 +293,5 @@ permalink: /kb/259/Q259474/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/321/Q321280/
 
 ## Q321280: SMS: Installer &quot;Parse String&quot; Action Leaves Undeclared String
 
+{% raw %}
+
 	Article: Q321280
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -53,3 +55,5 @@ permalink: /kb/321/Q321280/
 	
 	=============================================================================
 	
+
+{% endraw %}

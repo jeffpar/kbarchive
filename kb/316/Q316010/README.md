@@ -6,6 +6,8 @@ permalink: /kb/316/Q316010/
 
 ## Q316010: FIX: Error Message When You Build Large Visual Basic Projects
 
+{% raw %}
+
 	Article: Q316010
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -95,3 +97,5 @@ permalink: /kb/316/Q316010/
 	
 	=============================================================================
 	
+
+{% endraw %}

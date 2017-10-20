@@ -6,6 +6,8 @@ permalink: /kb/142/Q142643/
 
 ## Q142643: Windows NT 4.0 Driver Library
 
+{% raw %}
+
 	Article: Q142643
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -628,3 +630,5 @@ permalink: /kb/142/Q142643/
 	
 	=============================================================================
 	
+
+{% endraw %}

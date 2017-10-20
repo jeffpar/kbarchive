@@ -6,6 +6,8 @@ permalink: /kb/153/Q153908/
 
 ## Q153908: FIX: 16-bit Driver Times Out on Async Calls to SQLTables
 
+{% raw %}
+
 	Article: Q153908
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0,3.0
@@ -111,3 +113,5 @@ permalink: /kb/153/Q153908/
 	
 	=============================================================================
 	
+
+{% endraw %}

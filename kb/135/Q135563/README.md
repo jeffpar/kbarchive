@@ -6,6 +6,8 @@ permalink: /kb/135/Q135563/
 
 ## Q135563: FIX: One-to-Many Report Based on Two Views Causes Errors
 
+{% raw %}
+
 	Article: Q135563
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -92,3 +94,5 @@ permalink: /kb/135/Q135563/
 	
 	=============================================================================
 	
+
+{% endraw %}

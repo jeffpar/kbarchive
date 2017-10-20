@@ -6,6 +6,8 @@ permalink: /kb/180/Q180717/
 
 ## Q180717: SFM: File Date and Time Stamp Change with Get Info
 
+{% raw %}
+
 	Article: Q180717
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -104,3 +106,5 @@ permalink: /kb/180/Q180717/
 	
 	=============================================================================
 	
+
+{% endraw %}

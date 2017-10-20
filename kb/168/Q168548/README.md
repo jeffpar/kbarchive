@@ -6,6 +6,8 @@ permalink: /kb/168/Q168548/
 
 ## Q168548: XADM: Exchange Server 5.0 Standard vs. Enterprise Edition
 
+{% raw %}
+
 	Article: Q168548
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -105,3 +107,5 @@ permalink: /kb/168/Q168548/
 	
 	=============================================================================
 	
+
+{% endraw %}

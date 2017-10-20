@@ -6,6 +6,8 @@ permalink: /kb/194/Q194833/
 
 ## Q194833: HOWTO: Using the Supermover Foundation Class
 
+{% raw %}
+
 	Article: Q194833
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -139,3 +141,5 @@ permalink: /kb/194/Q194833/
 	
 	=============================================================================
 	
+
+{% endraw %}

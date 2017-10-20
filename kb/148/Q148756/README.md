@@ -6,6 +6,8 @@ permalink: /kb/148/Q148756/
 
 ## Q148756: Return of Arcade: Game Does Not Install/Start on Windows 2000/NT
 
+{% raw %}
+
 	Article: Q148756
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/148/Q148756/
 	
 	=============================================================================
 	
+
+{% endraw %}

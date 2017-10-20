@@ -6,6 +6,8 @@ permalink: /kb/197/Q197435/
 
 ## Q197435: WD97: New Custom.dic Is Not Created in the TOOLS-PATH Directory
 
+{% raw %}
+
 	Article: Q197435
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/197/Q197435/
 	
 	=============================================================================
 	
+
+{% endraw %}

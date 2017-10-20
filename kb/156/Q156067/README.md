@@ -6,6 +6,8 @@ permalink: /kb/156/Q156067/
 
 ## Q156067: FIX: Setting Tooltip Text in OnToolHitTest Causes Assertion
 
+{% raw %}
+
 	Article: Q156067
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -89,3 +91,5 @@ permalink: /kb/156/Q156067/
 	
 	=============================================================================
 	
+
+{% endraw %}

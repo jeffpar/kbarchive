@@ -6,6 +6,8 @@ permalink: /kb/217/Q217921/
 
 ## Q217921: SBS FAX: Unsent Fax Does Not Stay in Queue for Days Specified
 
+{% raw %}
+
 	Article: Q217921
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -70,3 +72,5 @@ permalink: /kb/217/Q217921/
 	
 	=============================================================================
 	
+
+{% endraw %}

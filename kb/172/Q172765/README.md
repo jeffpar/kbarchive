@@ -6,6 +6,8 @@ permalink: /kb/172/Q172765/
 
 ## Q172765: WD97: ErrMsg: The Wrong Wwintl32.dll Has Been Loaded
 
+{% raw %}
+
 	Article: Q172765
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 1 (SR-1)
@@ -174,3 +176,5 @@ permalink: /kb/172/Q172765/
 	
 	=============================================================================
 	
+
+{% endraw %}

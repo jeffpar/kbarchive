@@ -6,6 +6,8 @@ permalink: /kb/134/Q134905/
 
 ## Q134905: SNA Server and 2012 System Log Errors
 
+{% raw %}
+
 	Article: Q134905
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -187,3 +189,5 @@ permalink: /kb/134/Q134905/
 	
 	=============================================================================
 	
+
+{% endraw %}

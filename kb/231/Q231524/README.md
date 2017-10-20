@@ -6,6 +6,8 @@ permalink: /kb/231/Q231524/
 
 ## Q231524: MapPoint 2000: Unexpected E-mail Program Starts When Sending Map
 
+{% raw %}
+
 	Article: Q231524
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/231/Q231524/
 	
 	=============================================================================
 	
+
+{% endraw %}

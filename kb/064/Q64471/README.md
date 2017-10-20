@@ -6,6 +6,8 @@ permalink: /kb/064/Q64471/
 
 ## Q64471: Troubleshooting Logitech Serial Mouse Problems in Windows 3.0
 
+{% raw %}
+
 	Article: Q64471
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -140,3 +142,5 @@ permalink: /kb/064/Q64471/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231976/
 
 ## Q231976: Disk Full Broadcast When Accessing Virtual CD-ROM Folder
 
+{% raw %}
+
 	Article: Q231976
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -125,3 +127,5 @@ permalink: /kb/231/Q231976/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162790/
 
 ## Q162790: Auto Arrange Activates Itself in Copied User Profiles
 
+{% raw %}
+
 	Article: Q162790
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/162/Q162790/
 	
 	=============================================================================
 	
+
+{% endraw %}

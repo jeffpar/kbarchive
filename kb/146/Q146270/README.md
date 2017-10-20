@@ -6,6 +6,8 @@ permalink: /kb/146/Q146270/
 
 ## Q146270: XFOR: Read Receipt to UNIX Client
 
+{% raw %}
+
 	Article: Q146270
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/146/Q146270/
 	
 	=============================================================================
 	
+
+{% endraw %}

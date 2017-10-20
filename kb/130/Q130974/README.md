@@ -6,6 +6,8 @@ permalink: /kb/130/Q130974/
 
 ## Q130974: WFW Err Msg: Unable to Contact IP Driver, Error Code 0
 
+{% raw %}
+
 	Article: Q130974
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -63,3 +65,5 @@ permalink: /kb/130/Q130974/
 	
 	=============================================================================
 	
+
+{% endraw %}

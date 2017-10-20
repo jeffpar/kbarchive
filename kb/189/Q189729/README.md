@@ -6,6 +6,8 @@ permalink: /kb/189/Q189729/
 
 ## Q189729: XCLN: How to Remove Outlook Express Icon Using ODK
 
+{% raw %}
+
 	Article: Q189729
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:
@@ -120,3 +122,5 @@ permalink: /kb/189/Q189729/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/166/Q166197/
 
 ## Q166197: NBTSTAT Error When Using More Than 25 Dialout Devices with RAS
 
+{% raw %}
+
 	Article: Q166197
 	Product(s): Microsoft Windows NT
 	Version(s): 4.00
@@ -59,3 +61,5 @@ permalink: /kb/166/Q166197/
 	
 	=============================================================================
 	
+
+{% endraw %}

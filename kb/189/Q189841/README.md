@@ -6,6 +6,8 @@ permalink: /kb/189/Q189841/
 
 ## Q189841: XCLN: Corrupt Calendar Causes &quot;Unable to Open This Item&quot; Message
 
+{% raw %}
+
 	Article: Q189841
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,8.0,8.01,8.02,8.03
@@ -83,3 +85,5 @@ permalink: /kb/189/Q189841/
 	
 	=============================================================================
 	
+
+{% endraw %}

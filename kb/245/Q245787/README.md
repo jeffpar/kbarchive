@@ -6,6 +6,8 @@ permalink: /kb/245/Q245787/
 
 ## Q245787: XFOR: SMTP Error Message: 550 Invalid Domain
 
+{% raw %}
+
 	Article: Q245787
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -123,3 +125,5 @@ permalink: /kb/245/Q245787/
 	
 	=============================================================================
 	
+
+{% endraw %}

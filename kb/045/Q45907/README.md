@@ -6,6 +6,8 @@ permalink: /kb/045/Q45907/
 
 ## Q45907: QuickBASIC's Hierarchy of Operations
 
+{% raw %}
+
 	Article: Q45907
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -75,3 +77,5 @@ permalink: /kb/045/Q45907/
 	
 	For more information on the "Hierarchy of Operations," consult the
 	BASIC language reference manual for your version of BASIC.
+
+{% endraw %}

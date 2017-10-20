@@ -6,6 +6,8 @@ permalink: /kb/050/Q50212/
 
 ## Q50212: C2205: Cannot Initialize Extern Block-Scoped Variables
 
+{% raw %}
+
 	Article: Q50212
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -67,3 +69,5 @@ permalink: /kb/050/Q50212/
 	      extern int n;
 	      n = 10;
 	      }
+
+{% endraw %}

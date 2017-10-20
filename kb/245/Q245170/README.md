@@ -6,6 +6,8 @@ permalink: /kb/245/Q245170/
 
 ## Q245170: SMS: Cannot Run Advertisement with Missing or Damaged Offer File
 
+{% raw %}
+
 	Article: Q245170
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -73,3 +75,5 @@ permalink: /kb/245/Q245170/
 	
 	=============================================================================
 	
+
+{% endraw %}

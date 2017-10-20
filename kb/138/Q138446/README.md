@@ -6,6 +6,8 @@ permalink: /kb/138/Q138446/
 
 ## Q138446: FIX: Inlined Templated Member Functions Cannot Be Specialized
 
+{% raw %}
+
 	Article: Q138446
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0 2.1 2.2 4.0 4.1 4.2
@@ -93,3 +95,5 @@ permalink: /kb/138/Q138446/
 	
 	=============================================================================
 	
+
+{% endraw %}

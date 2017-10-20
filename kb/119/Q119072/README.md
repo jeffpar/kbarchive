@@ -6,6 +6,8 @@ permalink: /kb/119/Q119072/
 
 ## Q119072: DoubleSpace/DriveSpace Limits on 1028 MB to 1153 MB Partitions
 
+{% raw %}
+
 	Article: Q119072
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -98,3 +100,5 @@ permalink: /kb/119/Q119072/
 	
 	=============================================================================
 	
+
+{% endraw %}

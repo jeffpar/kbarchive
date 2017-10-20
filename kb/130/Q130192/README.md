@@ -6,6 +6,8 @@ permalink: /kb/130/Q130192/
 
 ## Q130192: Support Options for Microsoft Press Inquiries
 
+{% raw %}
+
 	Article: Q130192
 	Product(s): Microsoft Press
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/130/Q130192/
 	
 	=============================================================================
 	
+
+{% endraw %}

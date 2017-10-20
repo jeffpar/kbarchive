@@ -6,6 +6,8 @@ permalink: /kb/169/Q169744/
 
 ## Q169744: Setup Hangs While Detecting Adaptec SCSI Controllers
 
+{% raw %}
+
 	Article: Q169744
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -114,3 +116,5 @@ permalink: /kb/169/Q169744/
 	
 	=============================================================================
 	
+
+{% endraw %}

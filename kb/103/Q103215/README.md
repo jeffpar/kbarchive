@@ -6,6 +6,8 @@ permalink: /kb/103/Q103215/
 
 ## Q103215: Animation in Windows
 
+{% raw %}
+
 	Article: Q103215
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -84,3 +86,5 @@ permalink: /kb/103/Q103215/
 	
 	=============================================================================
 	
+
+{% endraw %}

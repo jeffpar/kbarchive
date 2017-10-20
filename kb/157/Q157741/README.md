@@ -6,6 +6,8 @@ permalink: /kb/157/Q157741/
 
 ## Q157741: PPT7: OLE Object Icon Doesn't Display at All Zoom Percentages
 
+{% raw %}
+
 	Article: Q157741
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -48,3 +50,5 @@ permalink: /kb/157/Q157741/
 	
 	=============================================================================
 	
+
+{% endraw %}

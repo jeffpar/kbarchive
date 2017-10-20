@@ -6,6 +6,8 @@ permalink: /kb/259/Q259919/
 
 ## Q259919: Remote Control May Not Work If Similar Program Was Installed
 
+{% raw %}
+
 	Article: Q259919
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -73,3 +75,5 @@ permalink: /kb/259/Q259919/
 	
 	=============================================================================
 	
+
+{% endraw %}

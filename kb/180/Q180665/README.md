@@ -6,6 +6,8 @@ permalink: /kb/180/Q180665/
 
 ## Q180665: SNA Server Code Conversion Between 037 And 932 does not work
 
+{% raw %}
+
 	Article: Q180665
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -68,3 +70,5 @@ permalink: /kb/180/Q180665/
 	
 	=============================================================================
 	
+
+{% endraw %}

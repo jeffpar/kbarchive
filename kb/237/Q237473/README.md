@@ -6,6 +6,8 @@ permalink: /kb/237/Q237473/
 
 ## Q237473: XCLN: 64 Attachment Limit with Exchange Client
 
+{% raw %}
+
 	Article: Q237473
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -82,3 +84,5 @@ permalink: /kb/237/Q237473/
 	
 	=============================================================================
 	
+
+{% endraw %}

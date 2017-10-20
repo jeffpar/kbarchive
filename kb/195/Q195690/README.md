@@ -6,6 +6,8 @@ permalink: /kb/195/Q195690/
 
 ## Q195690: WD97: No Response When Selecting Form Letters for Mail Merge
 
+{% raw %}
+
 	Article: Q195690
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/195/Q195690/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/089/Q89639/
 
 ## Q89639: WRKs NEWIPX May Not Upgrade IPX.COM
 
+{% raw %}
+
 	Article: Q89639
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): ; WINDOWS:3.1,3.11
@@ -85,3 +87,5 @@ permalink: /kb/089/Q89639/
 	
 	=============================================================================
 	
+
+{% endraw %}

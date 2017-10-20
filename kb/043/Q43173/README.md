@@ -6,6 +6,8 @@ permalink: /kb/043/Q43173/
 
 ## Q43173: Using printf with %p in Small or Medium Model
 
+{% raw %}
+
 	Article: Q43173
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -45,3 +47,5 @@ permalink: /kb/043/Q43173/
 	The following is the correct statement in small and medium model:
 	
 	    printf ("ch = %p\n", (char far *) ch) ;
+
+{% endraw %}

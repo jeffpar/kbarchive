@@ -6,6 +6,8 @@ permalink: /kb/160/Q160199/
 
 ## Q160199: XCLN: URLs Do Not Activate Using WordMail As Default Editor
 
+{% raw %}
+
 	Article: Q160199
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -42,3 +44,5 @@ permalink: /kb/160/Q160199/
 	
 	=============================================================================
 	
+
+{% endraw %}

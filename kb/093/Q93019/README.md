@@ -6,6 +6,8 @@ permalink: /kb/093/Q93019/
 
 ## Q93019: No Drop Cables Allowed from Thin Ethernet T-Connector to NIC
 
+{% raw %}
+
 	Article: Q93019
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/093/Q93019/
 	
 	=============================================================================
 	
+
+{% endraw %}

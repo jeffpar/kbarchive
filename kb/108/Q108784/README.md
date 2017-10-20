@@ -6,6 +6,8 @@ permalink: /kb/108/Q108784/
 
 ## Q108784: Net Statistics Workstation Incorrectly Refers to Reqbuf
 
+{% raw %}
+
 	Article: Q108784
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/108/Q108784/
 	
 	=============================================================================
 	
+
+{% endraw %}

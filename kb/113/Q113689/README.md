@@ -6,6 +6,8 @@ permalink: /kb/113/Q113689/
 
 ## Q113689: PRB: Transport Screens w/ PICT Files from Macintosh to Windows
 
+{% raw %}
+
 	Article: Q113689
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6x,3.0
@@ -74,3 +76,5 @@ permalink: /kb/113/Q113689/
 	
 	=============================================================================
 	
+
+{% endraw %}

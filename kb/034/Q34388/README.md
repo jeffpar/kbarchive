@@ -6,6 +6,8 @@ permalink: /kb/034/Q34388/
 
 ## Q34388: _getimage() Buffer Format is Proprietary
 
+{% raw %}
+
 	Article: Q34388
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -20,3 +22,5 @@ permalink: /kb/034/Q34388/
 	Response:
 	   Microsoft does not currently release information on the internal
 	representation of graphic images saved by _getimage.
+
+{% endraw %}

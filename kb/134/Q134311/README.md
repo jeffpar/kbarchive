@@ -6,6 +6,8 @@ permalink: /kb/134/Q134311/
 
 ## Q134311: PRB: Error Type -192 on 68K Macintosh
 
+{% raw %}
+
 	Article: Q134311
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -135,3 +137,5 @@ permalink: /kb/134/Q134311/
 	
 	=============================================================================
 	
+
+{% endraw %}

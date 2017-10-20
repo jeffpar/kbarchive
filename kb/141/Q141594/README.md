@@ -6,6 +6,8 @@ permalink: /kb/141/Q141594/
 
 ## Q141594: WinNT Err Msg: STOP 0x0000021a When You Log On To Domain
 
+{% raw %}
+
 	Article: Q141594
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5 3.51
@@ -54,3 +56,5 @@ permalink: /kb/141/Q141594/
 	
 	=============================================================================
 	
+
+{% endraw %}

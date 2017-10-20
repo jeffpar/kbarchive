@@ -6,6 +6,8 @@ permalink: /kb/129/Q129550/
 
 ## Q129550: Unable to Install SMS Client Software with VSAFE
 
+{% raw %}
+
 	Article: Q129550
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -61,3 +63,5 @@ permalink: /kb/129/Q129550/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/308/Q308170/
 
 ## Q308170: IIS Property Sheet Incorrect in IIS 5.1
 
+{% raw %}
+
 	Article: Q308170
 	Product(s): Internet Information Server
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/308/Q308170/
 	
 	=============================================================================
 	
+
+{% endraw %}

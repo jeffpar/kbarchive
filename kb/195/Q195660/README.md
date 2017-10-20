@@ -6,6 +6,8 @@ permalink: /kb/195/Q195660/
 
 ## Q195660: WD97: How to Remove Footnote/Endnote Separators (Lines)
 
+{% raw %}
+
 	Article: Q195660
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -47,3 +49,5 @@ permalink: /kb/195/Q195660/
 	
 	=============================================================================
 	
+
+{% endraw %}

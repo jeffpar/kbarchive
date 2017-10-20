@@ -6,6 +6,8 @@ permalink: /kb/156/Q156746/
 
 ## Q156746: Print Jobs Are Deleted When Printer Is Resumed After Restart
 
+{% raw %}
+
 	Article: Q156746
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/156/Q156746/
 	
 	=============================================================================
 	
+
+{% endraw %}

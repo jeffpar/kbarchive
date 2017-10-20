@@ -6,6 +6,8 @@ permalink: /kb/166/Q166241/
 
 ## Q166241: Font-Specific Character Set Not Being Used
 
+{% raw %}
+
 	Article: Q166241
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/166/Q166241/
 	
 	=============================================================================
 	
+
+{% endraw %}

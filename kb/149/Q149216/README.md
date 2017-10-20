@@ -6,6 +6,8 @@ permalink: /kb/149/Q149216/
 
 ## Q149216: PRB: Not All Build Options Are Available in Project Manager
 
+{% raw %}
+
 	Article: Q149216
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -77,3 +79,5 @@ permalink: /kb/149/Q149216/
 	
 	=============================================================================
 	
+
+{% endraw %}

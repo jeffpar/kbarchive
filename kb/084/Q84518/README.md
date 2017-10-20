@@ -6,6 +6,8 @@ permalink: /kb/084/Q84518/
 
 ## Q84518: Cannot Switch from WordPerfect for MS-DOS Version 5.1
 
+{% raw %}
+
 	Article: Q84518
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/084/Q84518/
 	
 	=============================================================================
 	
+
+{% endraw %}

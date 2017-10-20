@@ -6,6 +6,8 @@ permalink: /kb/240/Q240452/
 
 ## Q240452: Secure RPC Traffic Problem When Using RPC Ping Tool
 
+{% raw %}
+
 	Article: Q240452
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/240/Q240452/
 	
 	=============================================================================
 	
+
+{% endraw %}

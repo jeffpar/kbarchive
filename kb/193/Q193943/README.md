@@ -6,6 +6,8 @@ permalink: /kb/193/Q193943/
 
 ## Q193943: HOWTO: Use GetDeviceCaps to Determine Margins on a Page
 
+{% raw %}
+
 	Article: Q193943
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -368,3 +370,5 @@ permalink: /kb/193/Q193943/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/108/Q108805/
 
 ## Q108805: Video for Windows 1.1 Utilities Disk Directory
 
+{% raw %}
+
 	Article: Q108805
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.1
@@ -52,3 +54,5 @@ permalink: /kb/108/Q108805/
 	
 	=============================================================================
 	
+
+{% endraw %}

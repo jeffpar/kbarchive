@@ -6,6 +6,8 @@ permalink: /kb/045/Q45653/
 
 ## Q45653: Making Your Own Key File with the MKKEY.EXE Program
 
+{% raw %}
+
 	Article: Q45653
 	Product(s): See article
 	Version(s): 2.00
@@ -56,3 +58,5 @@ permalink: /kb/045/Q45653/
 	shows their default assignments in the supplied .KEY files. Any of
 	these may be remapped using the MKKEY utility. Menu options, which have
 	key equivalents, may not be remapped (e.g. Exit).
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169231/
 
 ## Q169231: Name Resolution Slow over RAS Connection
 
+{% raw %}
+
 	Article: Q169231
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -117,3 +119,5 @@ permalink: /kb/169/Q169231/
 	
 	=============================================================================
 	
+
+{% endraw %}

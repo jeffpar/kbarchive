@@ -6,6 +6,8 @@ permalink: /kb/198/Q198707/
 
 ## Q198707: SMS: Dependency Walker for Win32 (Depends.exe)
 
+{% raw %}
+
 	Article: Q198707
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -84,3 +86,5 @@ permalink: /kb/198/Q198707/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237339/
 
 ## Q237339: WD97: Automating Word Creates an Additional Document
 
+{% raw %}
+
 	Article: Q237339
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -110,3 +112,5 @@ permalink: /kb/237/Q237339/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/092/Q92433/
 
 ## Q92433: Handling Callbacks with C++ Member Functions
 
+{% raw %}
+
 	Article: Q92433
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -71,3 +73,5 @@ permalink: /kb/092/Q92433/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197412/
 
 ## Q197412: Err Msg: An Unknown Error Has Occurred While Initializing...
 
+{% raw %}
+
 	Article: Q197412
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -78,3 +80,5 @@ permalink: /kb/197/Q197412/
 	
 	=============================================================================
 	
+
+{% endraw %}

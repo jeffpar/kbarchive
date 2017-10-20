@@ -6,6 +6,8 @@ permalink: /kb/160/Q160518/
 
 ## Q160518: Zone Files in Multiples of 4 KB May Cause Access Violation
 
+{% raw %}
+
 	Article: Q160518
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/160/Q160518/
 	
 	=============================================================================
 	
+
+{% endraw %}

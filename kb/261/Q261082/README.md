@@ -6,6 +6,8 @@ permalink: /kb/261/Q261082/
 
 ## Q261082: MCM2: &quot;Ready&quot; Unavailable on Multiplayer Game Settings Screen
 
+{% raw %}
+
 	Article: Q261082
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -54,3 +56,5 @@ permalink: /kb/261/Q261082/
 	
 	=============================================================================
 	
+
+{% endraw %}

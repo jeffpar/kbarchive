@@ -6,6 +6,8 @@ permalink: /kb/134/Q134359/
 
 ## Q134359: Starting Media Player Plays Audio CD
 
+{% raw %}
+
 	Article: Q134359
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -66,3 +68,5 @@ permalink: /kb/134/Q134359/
 	
 	=============================================================================
 	
+
+{% endraw %}

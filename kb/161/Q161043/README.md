@@ -6,6 +6,8 @@ permalink: /kb/161/Q161043/
 
 ## Q161043: SMS: Despooler Error: 'WIN32 ERROR = 32'
 
+{% raw %}
+
 	Article: Q161043
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -80,3 +82,5 @@ permalink: /kb/161/Q161043/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/068/Q68836/
 
 ## Q68836: NMAKE Doesn't Allow CD Command That Only Specifies Drive
 
+{% raw %}
+
 	Article: Q68836
 	Product(s): See article
 	Version(s): 1.11 1.12 | 1.11 1.12
@@ -33,3 +35,5 @@ permalink: /kb/068/Q68836/
 	Microsoft has confirmed this to be a problem in NMAKE versions 1.11
 	and 1.12. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151192/
 
 ## Q151192: Configuring the Default Wallpaper with CPS
 
+{% raw %}
+
 	Article: Q151192
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -65,3 +67,5 @@ permalink: /kb/151/Q151192/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152451/
 
 ## Q152451: Applications Run from the Schedule Service Fail to Print
 
+{% raw %}
+
 	Article: Q152451
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -177,3 +179,5 @@ permalink: /kb/152/Q152451/
 	
 	=============================================================================
 	
+
+{% endraw %}

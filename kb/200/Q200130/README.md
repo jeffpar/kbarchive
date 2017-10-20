@@ -6,6 +6,8 @@ permalink: /kb/200/Q200130/
 
 ## Q200130: XCLN: How to Return X.400 Addresses with Outlook LDAP Service
 
+{% raw %}
+
 	Article: Q200130
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000,98
@@ -67,3 +69,5 @@ permalink: /kb/200/Q200130/
 	
 	=============================================================================
 	
+
+{% endraw %}

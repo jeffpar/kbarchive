@@ -6,6 +6,8 @@ permalink: /kb/148/Q148769/
 
 ## Q148769: PC MMTA: General Protection Fault in X25EICON.OVL
 
+{% raw %}
+
 	Article: Q148769
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -60,3 +62,5 @@ permalink: /kb/148/Q148769/
 	
 	=============================================================================
 	
+
+{% endraw %}

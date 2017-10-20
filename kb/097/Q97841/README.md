@@ -6,6 +6,8 @@ permalink: /kb/097/Q97841/
 
 ## Q97841: IF EXISTS Command Exhibits Different Behavior on HPFS
 
+{% raw %}
+
 	Article: Q97841
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/097/Q97841/
 	
 	=============================================================================
 	
+
+{% endraw %}

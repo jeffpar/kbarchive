@@ -6,6 +6,8 @@ permalink: /kb/119/Q119455/
 
 ## Q119455: PRB: RoundRect() and Ellipse() Don't Match Same Shaped Regions
 
+{% raw %}
+
 	Article: Q119455
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -71,3 +73,5 @@ permalink: /kb/119/Q119455/
 	
 	=============================================================================
 	
+
+{% endraw %}

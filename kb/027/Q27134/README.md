@@ -6,6 +6,8 @@ permalink: /kb/027/Q27134/
 
 ## Q27134: The Purpose of Module Definition Files
 
+{% raw %}
+
 	Article: Q27134
 	Product(s): See article
 	Version(s): 5.01.21 5.02 5.03 5.05 5.10 5.13 | 5.01.21 5.02 5.03 5.05
@@ -59,3 +61,5 @@ permalink: /kb/027/Q27134/
 	
 	For more information, refer to the utility reference or online help
 	that accompanied your particular compiler or assembler.
+
+{% endraw %}

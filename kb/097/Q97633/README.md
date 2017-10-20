@@ -6,6 +6,8 @@ permalink: /kb/097/Q97633/
 
 ## Q97633: PRB: Alias Problems with Table Name Starting with Number
 
+{% raw %}
+
 	Article: Q97633
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6; WINDOWS:2.6,3.0,5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/097/Q97633/
 	
 	=============================================================================
 	
+
+{% endraw %}

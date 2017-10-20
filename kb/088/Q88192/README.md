@@ -6,6 +6,8 @@ permalink: /kb/088/Q88192/
 
 ## Q88192: INFO: WM_PAINTICON Message Removed from Windows SDK Docs
 
+{% raw %}
+
 	Article: Q88192
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -105,3 +107,5 @@ permalink: /kb/088/Q88192/
 	
 	=============================================================================
 	
+
+{% endraw %}

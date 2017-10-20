@@ -6,6 +6,8 @@ permalink: /kb/068/Q68600/
 
 ## Q68600: Mac Bkup: MSMailBackup CDEV Not Creating Backup Mail Data File
 
+{% raw %}
+
 	Article: Q68600
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/068/Q68600/
 	
 	=============================================================================
 	
+
+{% endraw %}

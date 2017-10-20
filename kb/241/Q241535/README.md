@@ -6,6 +6,8 @@ permalink: /kb/241/Q241535/
 
 ## Q241535: Updated Support for MSAA Features in Windows NT 4.0 SP6
 
+{% raw %}
+
 	Article: Q241535
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -105,3 +107,5 @@ permalink: /kb/241/Q241535/
 	
 	=============================================================================
 	
+
+{% endraw %}

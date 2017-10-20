@@ -6,6 +6,8 @@ permalink: /kb/089/Q89781/
 
 ## Q89781: IPX Not Listed in Available Protocols in Control Panel
 
+{% raw %}
+
 	Article: Q89781
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -61,3 +63,5 @@ permalink: /kb/089/Q89781/
 	
 	=============================================================================
 	
+
+{% endraw %}

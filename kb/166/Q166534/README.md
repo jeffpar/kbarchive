@@ -6,6 +6,8 @@ permalink: /kb/166/Q166534/
 
 ## Q166534: XCLN: Synchronization of Offline Folders over RAS or Net Hangs
 
+{% raw %}
+
 	Article: Q166534
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -61,3 +63,5 @@ permalink: /kb/166/Q166534/
 	
 	=============================================================================
 	
+
+{% endraw %}

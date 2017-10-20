@@ -6,6 +6,8 @@ permalink: /kb/128/Q128467/
 
 ## Q128467: PROFS: Err Msg: Intermittent 'ABEND 0C4' Would Be Reported...
 
+{% raw %}
+
 	Article: Q128467
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4a
@@ -91,3 +93,5 @@ permalink: /kb/128/Q128467/
 	
 	=============================================================================
 	
+
+{% endraw %}

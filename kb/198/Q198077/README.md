@@ -6,6 +6,8 @@ permalink: /kb/198/Q198077/
 
 ## Q198077: WD97: Tab Leaders Unavailable in Format Tabs Dialog Box
 
+{% raw %}
+
 	Article: Q198077
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -51,3 +53,5 @@ permalink: /kb/198/Q198077/
 	
 	=============================================================================
 	
+
+{% endraw %}

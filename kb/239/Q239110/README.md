@@ -6,6 +6,8 @@ permalink: /kb/239/Q239110/
 
 ## Q239110: Service Pack 4 for Terminal Server Does Not Copy Dhcpssvc.dll
 
+{% raw %}
+
 	Article: Q239110
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -79,3 +81,5 @@ permalink: /kb/239/Q239110/
 	
 	=============================================================================
 	
+
+{% endraw %}

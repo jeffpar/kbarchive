@@ -6,6 +6,8 @@ permalink: /kb/040/Q40183/
 
 ## Q40183: Open() Will Not Ignore Append Path
 
+{% raw %}
+
 	Article: Q40183
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -19,3 +21,5 @@ permalink: /kb/040/Q40183/
 	This is expected behavior. If you wish to have the APPEND path
 	ignored, you will have to write your own low-level open function, or
 	ensure that the APPEND path is removed before your program is run.
+
+{% endraw %}

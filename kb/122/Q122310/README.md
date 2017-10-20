@@ -6,6 +6,8 @@ permalink: /kb/122/Q122310/
 
 ## Q122310: Server Viewer Unable to Open Queue on Same Server
 
+{% raw %}
+
 	Article: Q122310
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -54,3 +56,5 @@ permalink: /kb/122/Q122310/
 	
 	=============================================================================
 	
+
+{% endraw %}

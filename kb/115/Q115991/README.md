@@ -6,6 +6,8 @@ permalink: /kb/115/Q115991/
 
 ## Q115991: How to Obtain the Current Instance Handle of an .FLL File
 
+{% raw %}
+
 	Article: Q115991
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x,2.6x,3.0,3.0b
@@ -67,3 +69,5 @@ permalink: /kb/115/Q115991/
 	
 	=============================================================================
 	
+
+{% endraw %}

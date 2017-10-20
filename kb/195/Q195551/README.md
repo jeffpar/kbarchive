@@ -6,6 +6,8 @@ permalink: /kb/195/Q195551/
 
 ## Q195551: PRB: SP4 Detects BackOffice Small Business Server
 
+{% raw %}
+
 	Article: Q195551
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -58,3 +60,5 @@ permalink: /kb/195/Q195551/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/037/Q37621/
 
 ## Q37621: Amount of Disk Space Needed for Minimum C 5.10 Setup for DOS
 
+{% raw %}
+
 	Article: Q37621
 	Product(s): See article
 	Version(s): 5.10
@@ -30,3 +32,5 @@ permalink: /kb/037/Q37621/
 	Although you will be able to use the compiler in this minimum setup,
 	we recommend that you have about 2.5 megabytes of disk space and do a
 	complete setup.
+
+{% endraw %}

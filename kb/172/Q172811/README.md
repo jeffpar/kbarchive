@@ -6,6 +6,8 @@ permalink: /kb/172/Q172811/
 
 ## Q172811: Network Printers Always Offline
 
+{% raw %}
+
 	Article: Q172811
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -77,3 +79,5 @@ permalink: /kb/172/Q172811/
 	
 	=============================================================================
 	
+
+{% endraw %}

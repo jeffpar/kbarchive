@@ -6,6 +6,8 @@ permalink: /kb/106/Q106636/
 
 ## Q106636: FIX: Debugger Does Not Properly Trace Include Files
 
+{% raw %}
+
 	Article: Q106636
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -109,3 +111,5 @@ permalink: /kb/106/Q106636/
 	
 	=============================================================================
 	
+
+{% endraw %}

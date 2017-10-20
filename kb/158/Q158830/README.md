@@ -6,6 +6,8 @@ permalink: /kb/158/Q158830/
 
 ## Q158830: FIX: OptionGroup with M, P, H, K Hot Keys Fire Valid
 
+{% raw %}
+
 	Article: Q158830
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b
@@ -105,3 +107,5 @@ permalink: /kb/158/Q158830/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249659/
 
 ## Q249659: BUG: Invalid Page Fault Using Scripting Run-Time on Windows 95
 
+{% raw %}
+
 	Article: Q249659
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -105,3 +107,5 @@ permalink: /kb/249/Q249659/
 	
 	=============================================================================
 	
+
+{% endraw %}

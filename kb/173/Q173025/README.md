@@ -6,6 +6,8 @@ permalink: /kb/173/Q173025/
 
 ## Q173025: FIX: /Og Causes C1001 with Member Lookup in an Infinite Loop
 
+{% raw %}
+
 	Article: Q173025
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -84,3 +86,5 @@ permalink: /kb/173/Q173025/
 	
 	=============================================================================
 	
+
+{% endraw %}

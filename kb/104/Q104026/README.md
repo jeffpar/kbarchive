@@ -6,6 +6,8 @@ permalink: /kb/104/Q104026/
 
 ## Q104026: PC Ext: F1 Displays Help Screen in External Mail Program
 
+{% raw %}
+
 	Article: Q104026
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -71,3 +73,5 @@ permalink: /kb/104/Q104026/
 	
 	=============================================================================
 	
+
+{% endraw %}

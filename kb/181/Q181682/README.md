@@ -6,6 +6,8 @@ permalink: /kb/181/Q181682/
 
 ## Q181682: Project SBS: Cannot Find Installation Directory On CD-ROM
 
+{% raw %}
+
 	Article: Q181682
 	Product(s): Microsoft Press
 	Version(s): 
@@ -128,3 +130,5 @@ permalink: /kb/181/Q181682/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/112/Q112620/
 
 ## Q112620: Incorrect Network Card Detected During Setup with Novell ODI
 
+{% raw %}
+
 	Article: Q112620
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -67,3 +69,5 @@ permalink: /kb/112/Q112620/
 	
 	=============================================================================
 	
+
+{% endraw %}

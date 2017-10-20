@@ -6,6 +6,8 @@ permalink: /kb/175/Q175842/
 
 ## Q175842: XFOR: EXPN Command Not Supported By Internet Mail Service
 
+{% raw %}
+
 	Article: Q175842
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -42,3 +44,5 @@ permalink: /kb/175/Q175842/
 	
 	=============================================================================
 	
+
+{% endraw %}

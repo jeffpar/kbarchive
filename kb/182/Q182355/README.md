@@ -6,6 +6,8 @@ permalink: /kb/182/Q182355/
 
 ## Q182355: PRB: Jet Text IISAM Truncates Trailing Spaces
 
+{% raw %}
+
 	Article: Q182355
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97
@@ -121,3 +123,5 @@ permalink: /kb/182/Q182355/
 	
 	=============================================================================
 	
+
+{% endraw %}

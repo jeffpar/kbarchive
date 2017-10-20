@@ -6,6 +6,8 @@ permalink: /kb/103/Q103621/
 
 ## Q103621: Running Visual C++ for Windows with Windows NT
 
+{% raw %}
+
 	Article: Q103621
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -78,3 +80,5 @@ permalink: /kb/103/Q103621/
 	
 	=============================================================================
 	
+
+{% endraw %}

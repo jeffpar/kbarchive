@@ -6,6 +6,8 @@ permalink: /kb/034/Q34410/
 
 ## Q34410: Far Pointer Comparisons Don't Account for Aliases
 
+{% raw %}
+
 	Article: Q34410
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -25,3 +27,5 @@ permalink: /kb/034/Q34410/
 	Normalizing pointers would involve a tremendous performance penalty
 	under MS-DOS and would be impossible under OS/2 due to the
 	protected-mode addressing scheme.
+
+{% endraw %}

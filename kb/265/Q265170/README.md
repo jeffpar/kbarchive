@@ -6,6 +6,8 @@ permalink: /kb/265/Q265170/
 
 ## Q265170: NetGroupEnum() Generates Internal Error
 
+{% raw %}
+
 	Article: Q265170
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -84,3 +86,5 @@ permalink: /kb/265/Q265170/
 	
 	=============================================================================
 	
+
+{% endraw %}

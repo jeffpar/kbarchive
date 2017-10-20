@@ -6,6 +6,8 @@ permalink: /kb/060/Q60866/
 
 ## Q60866: OS/2 1.20 Requirements for Dual-Monitor Debugging
 
+{% raw %}
+
 	Article: Q60866
 	Product(s): See article
 	Version(s): 2.x 3.00
@@ -58,3 +60,5 @@ permalink: /kb/060/Q60866/
 	Using this setup, the 8514 monitor displays the graphics output (or
 	the Presentation Manager screen) and the VGA is the debug monitor and
 	displays all text output.
+
+{% endraw %}

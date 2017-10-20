@@ -6,6 +6,8 @@ permalink: /kb/155/Q155777/
 
 ## Q155777: WD97: Can't Crop Object with SHIFT Key (Dragging Size Handle)
 
+{% raw %}
+
 	Article: Q155777
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/155/Q155777/
 	
 	=============================================================================
 	
+
+{% endraw %}

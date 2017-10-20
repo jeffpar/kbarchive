@@ -6,6 +6,8 @@ permalink: /kb/027/Q27290/
 
 ## Q27290: Passing BASIC Double-Precision Array to C by Far Reference
 
+{% raw %}
+
 	Article: Q27290
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -92,3 +94,5 @@ permalink: /kb/027/Q27290/
 	 8             208
 	 9             209
 	 10            210
+
+{% endraw %}

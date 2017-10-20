@@ -6,6 +6,8 @@ permalink: /kb/249/Q249715/
 
 ## Q249715: Soccer 2000: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q249715
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/249/Q249715/
 	
 	=============================================================================
 	
+
+{% endraw %}

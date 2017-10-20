@@ -6,6 +6,8 @@ permalink: /kb/080/Q80860/
 
 ## Q80860: Uses of the LANMAN.INI RASLANNETS Entry
 
+{% raw %}
+
 	Article: Q80860
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/080/Q80860/
 	
 	=============================================================================
 	
+
+{% endraw %}

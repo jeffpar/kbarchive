@@ -6,6 +6,8 @@ permalink: /kb/155/Q155835/
 
 ## Q155835: PRB: ActiveX Controls That Do Not Work Correctly in VFP
 
+{% raw %}
+
 	Article: Q155835
 	Product(s): Microsoft FoxPro
 	Version(s): 5.00
@@ -80,3 +82,5 @@ permalink: /kb/155/Q155835/
 	
 	=============================================================================
 	
+
+{% endraw %}

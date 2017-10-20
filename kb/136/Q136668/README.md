@@ -6,6 +6,8 @@ permalink: /kb/136/Q136668/
 
 ## Q136668: FIX: Inconsistent Behavior of KeyPreview Property
 
+{% raw %}
+
 	Article: Q136668
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -71,3 +73,5 @@ permalink: /kb/136/Q136668/
 	
 	=============================================================================
 	
+
+{% endraw %}

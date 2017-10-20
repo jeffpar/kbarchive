@@ -6,6 +6,8 @@ permalink: /kb/121/Q121420/
 
 ## Q121420: IBM 3174 Support C - Rel. 5.0 Causes Negative Bind Response
 
+{% raw %}
+
 	Article: Q121420
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -47,3 +49,5 @@ permalink: /kb/121/Q121420/
 	
 	=============================================================================
 	
+
+{% endraw %}

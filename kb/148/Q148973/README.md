@@ -6,6 +6,8 @@ permalink: /kb/148/Q148973/
 
 ## Q148973: XADM: Installation Allows Selection of Group Account
 
+{% raw %}
+
 	Article: Q148973
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/148/Q148973/
 	
 	=============================================================================
 	
+
+{% endraw %}

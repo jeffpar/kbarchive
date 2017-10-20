@@ -6,6 +6,8 @@ permalink: /kb/131/Q131504/
 
 ## Q131504: PRB: Trouble Implementing Drill Down in Visual FoxPro Grid
 
+{% raw %}
+
 	Article: Q131504
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -72,3 +74,5 @@ permalink: /kb/131/Q131504/
 	
 	=============================================================================
 	
+
+{% endraw %}

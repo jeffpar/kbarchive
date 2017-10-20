@@ -6,6 +6,8 @@ permalink: /kb/089/Q89410/
 
 ## Q89410: PC Win: Mailing to an Address Not Found in the Address List
 
+{% raw %}
+
 	Article: Q89410
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -86,3 +88,5 @@ permalink: /kb/089/Q89410/
 	
 	=============================================================================
 	
+
+{% endraw %}

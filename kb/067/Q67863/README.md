@@ -6,6 +6,8 @@ permalink: /kb/067/Q67863/
 
 ## Q67863: 400 DPI Serial Mouse and Epson Equity LT 386/SX
 
+{% raw %}
+
 	Article: Q67863
 	Product(s): See article
 	Version(s): 1.00
@@ -20,3 +22,5 @@ permalink: /kb/067/Q67863/
 	
 	Note: Not all Epson dealers may be aware of this problem, but they
 	should be able to get the patch from their main Epson supplier.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/278/Q278615/
 
 ## Q278615: MSN Companion Features
 
+{% raw %}
+
 	Article: Q278615
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -107,3 +109,5 @@ permalink: /kb/278/Q278615/
 	
 	=============================================================================
 	
+
+{% endraw %}

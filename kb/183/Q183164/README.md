@@ -6,6 +6,8 @@ permalink: /kb/183/Q183164/
 
 ## Q183164: FIX: For..Each Loop in ActiveX Component Causes Errors
 
+{% raw %}
+
 	Article: Q183164
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -186,3 +188,5 @@ permalink: /kb/183/Q183164/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/326/Q326000/
 
 ## Q326000: Casino: Game Closes Unexpectedly When Accepting a Comp
 
+{% raw %}
+
 	Article: Q326000
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -250,3 +252,5 @@ permalink: /kb/326/Q326000/
 	
 	=============================================================================
 	
+
+{% endraw %}

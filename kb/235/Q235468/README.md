@@ -6,6 +6,8 @@ permalink: /kb/235/Q235468/
 
 ## Q235468: XCLN: Wrong Language Pack Causes Error Message with OWA Calendar
 
+{% raw %}
+
 	Article: Q235468
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -72,3 +74,5 @@ permalink: /kb/235/Q235468/
 	
 	=============================================================================
 	
+
+{% endraw %}

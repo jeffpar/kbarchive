@@ -6,6 +6,8 @@ permalink: /kb/246/Q246288/
 
 ## Q246288: BUG: Error in Declaration of SHFileOperation() from API Text Vie
 
+{% raw %}
+
 	Article: Q246288
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -65,3 +67,5 @@ permalink: /kb/246/Q246288/
 	
 	=============================================================================
 	
+
+{% endraw %}

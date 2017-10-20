@@ -6,6 +6,8 @@ permalink: /kb/224/Q224374/
 
 ## Q224374: Program Starts Slowly and Media Clips Are Played Slowly
 
+{% raw %}
+
 	Article: Q224374
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -86,3 +88,5 @@ permalink: /kb/224/Q224374/
 	
 	=============================================================================
 	
+
+{% endraw %}

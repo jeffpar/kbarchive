@@ -6,6 +6,8 @@ permalink: /kb/115/Q115457/
 
 ## Q115457: PROFS: Message Format for Version 3.4
 
+{% raw %}
+
 	Article: Q115457
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4
@@ -49,3 +51,5 @@ permalink: /kb/115/Q115457/
 	
 	=============================================================================
 	
+
+{% endraw %}

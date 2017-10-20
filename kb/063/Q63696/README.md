@@ -6,6 +6,8 @@ permalink: /kb/063/Q63696/
 
 ## Q63696: Hardware Options Offered When Installing Windows
 
+{% raw %}
+
 	Article: Q63696
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -161,3 +163,5 @@ permalink: /kb/063/Q63696/
 	
 	=============================================================================
 	
+
+{% endraw %}

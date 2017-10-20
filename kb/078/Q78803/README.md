@@ -6,6 +6,8 @@ permalink: /kb/078/Q78803/
 
 ## Q78803: PC Ext: Estimating Memory Requirements for EXTERNAL.EXE
 
+{% raw %}
+
 	Article: Q78803
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2,3.5
@@ -111,3 +113,5 @@ permalink: /kb/078/Q78803/
 	
 	=============================================================================
 	
+
+{% endraw %}

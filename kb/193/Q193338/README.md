@@ -6,6 +6,8 @@ permalink: /kb/193/Q193338/
 
 ## Q193338: PRB: Setting RightToLeft to True Returns Out Of Memory Error
 
+{% raw %}
+
 	Article: Q193338
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -72,3 +74,5 @@ permalink: /kb/193/Q193338/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247378/
 
 ## Q247378: HTTP/1.1 Error 403 - Access Forbidden
 
+{% raw %}
+
 	Article: Q247378
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -63,3 +65,5 @@ permalink: /kb/247/Q247378/
 	
 	=============================================================================
 	
+
+{% endraw %}

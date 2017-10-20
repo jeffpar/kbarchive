@@ -6,6 +6,8 @@ permalink: /kb/177/Q177094/
 
 ## Q177094: PRB: ActiveX Control Cannot Assign Run-Time Read-Only Property
 
+{% raw %}
+
 	Article: Q177094
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/177/Q177094/
 	
 	=============================================================================
 	
+
+{% endraw %}

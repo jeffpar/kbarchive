@@ -6,6 +6,8 @@ permalink: /kb/097/Q97453/
 
 ## Q97453: Backup for Windows Shows Incorrect Date on Directory Printout
 
+{% raw %}
+
 	Article: Q97453
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -41,3 +43,5 @@ permalink: /kb/097/Q97453/
 	
 	=============================================================================
 	
+
+{% endraw %}

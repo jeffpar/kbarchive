@@ -6,6 +6,8 @@ permalink: /kb/171/Q171547/
 
 ## Q171547: FIX: New DBGrid32.OCX Breaks VB4 Apps that Use VB4 Version
 
+{% raw %}
+
 	Article: Q171547
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,97,97sp1
@@ -88,3 +90,5 @@ permalink: /kb/171/Q171547/
 	
 	=============================================================================
 	
+
+{% endraw %}

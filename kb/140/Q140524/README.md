@@ -6,6 +6,8 @@ permalink: /kb/140/Q140524/
 
 ## Q140524: SNA Server Event ID 18 Reports Incorrect Sense Data
 
+{% raw %}
+
 	Article: Q140524
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -77,3 +79,5 @@ permalink: /kb/140/Q140524/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136021/
 
 ## Q136021: HOWTO: Move or Rename Files Used with Visual C++
 
+{% raw %}
+
 	Article: Q136021
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/136/Q136021/
 	
 	=============================================================================
 	
+
+{% endraw %}

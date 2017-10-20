@@ -6,6 +6,8 @@ permalink: /kb/247/Q247732/
 
 ## Q247732: Age of Empires II: Game Slows Down or Becomes Choppy
 
+{% raw %}
+
 	Article: Q247732
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -156,3 +158,5 @@ permalink: /kb/247/Q247732/
 	
 	=============================================================================
 	
+
+{% endraw %}

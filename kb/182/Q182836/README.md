@@ -6,6 +6,8 @@ permalink: /kb/182/Q182836/
 
 ## Q182836: Numeric Edit Fields Allow Non-numeric Input
 
+{% raw %}
+
 	Article: Q182836
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -56,3 +58,5 @@ permalink: /kb/182/Q182836/
 	
 	=============================================================================
 	
+
+{% endraw %}

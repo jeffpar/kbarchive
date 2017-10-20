@@ -6,6 +6,8 @@ permalink: /kb/309/Q309003/
 
 ## Q309003: GETRT Run on Trace File w/Too Many APPC Conversations Fails
 
+{% raw %}
+
 	Article: Q309003
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0
@@ -112,3 +114,5 @@ permalink: /kb/309/Q309003/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131193/
 
 ## Q131193: Carrier Tone Heard But Modem Loses Connection
 
+{% raw %}
+
 	Article: Q131193
 	Product(s): The Microsoft Network
 	Version(s): 2.6,5.0,5.1,5.2
@@ -83,3 +85,5 @@ permalink: /kb/131/Q131193/
 	
 	=============================================================================
 	
+
+{% endraw %}

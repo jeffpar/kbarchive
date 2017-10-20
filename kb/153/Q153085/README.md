@@ -6,6 +6,8 @@ permalink: /kb/153/Q153085/
 
 ## Q153085: SMS: MIFs Not Collected on OS/2 Clients with Multiple Drives
 
+{% raw %}
+
 	Article: Q153085
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -72,3 +74,5 @@ permalink: /kb/153/Q153085/
 	
 	=============================================================================
 	
+
+{% endraw %}

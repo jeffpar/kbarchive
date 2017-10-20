@@ -6,6 +6,8 @@ permalink: /kb/163/Q163535/
 
 ## Q163535: ODE97: List of Files You Can Redistribute with ODE Run-Time App
 
+{% raw %}
+
 	Article: Q163535
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 97
@@ -222,3 +224,5 @@ permalink: /kb/163/Q163535/
 	
 	=============================================================================
 	
+
+{% endraw %}

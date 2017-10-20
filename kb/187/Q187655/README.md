@@ -6,6 +6,8 @@ permalink: /kb/187/Q187655/
 
 ## Q187655: Err Msg: System Error 224 Occurred
 
+{% raw %}
+
 	Article: Q187655
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): Windows:95;WinNT:3.51,4.0
@@ -84,3 +86,5 @@ permalink: /kb/187/Q187655/
 	
 	=============================================================================
 	
+
+{% endraw %}

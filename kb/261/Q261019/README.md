@@ -6,6 +6,8 @@ permalink: /kb/261/Q261019/
 
 ## Q261019: MCM2: Textures Become Distorted If You Receive a Reminder
 
+{% raw %}
+
 	Article: Q261019
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -77,3 +79,5 @@ permalink: /kb/261/Q261019/
 	
 	=============================================================================
 	
+
+{% endraw %}

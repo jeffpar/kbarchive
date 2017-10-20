@@ -6,6 +6,8 @@ permalink: /kb/148/Q148415/
 
 ## Q148415: Upgrading From Visual FoxPro 3.0 to Visual FoxPro 3.0b
 
+{% raw %}
+
 	Article: Q148415
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -70,3 +72,5 @@ permalink: /kb/148/Q148415/
 	
 	=============================================================================
 	
+
+{% endraw %}

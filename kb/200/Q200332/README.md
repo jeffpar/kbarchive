@@ -6,6 +6,8 @@ permalink: /kb/200/Q200332/
 
 ## Q200332: SMS: Netmon 2.0 Able To Read the Netmon 1.x Captures
 
+{% raw %}
+
 	Article: Q200332
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -46,3 +48,5 @@ permalink: /kb/200/Q200332/
 	
 	=============================================================================
 	
+
+{% endraw %}

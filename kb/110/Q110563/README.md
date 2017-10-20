@@ -6,6 +6,8 @@ permalink: /kb/110/Q110563/
 
 ## Q110563: Changing the Default Font in Windows NT Microsoft Mail
 
+{% raw %}
+
 	Article: Q110563
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,4.0
@@ -83,3 +85,5 @@ permalink: /kb/110/Q110563/
 	
 	=============================================================================
 	
+
+{% endraw %}

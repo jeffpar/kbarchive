@@ -6,6 +6,8 @@ permalink: /kb/063/Q63661/
 
 ## Q63661: FIX: Problems Viewing C README.DOC in PWB 1.0 Online Help and QH
 
+{% raw %}
+
 	Article: Q63661
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0; OS/2:1.0
@@ -98,3 +100,5 @@ permalink: /kb/063/Q63661/
 	
 	=============================================================================
 	
+
+{% endraw %}

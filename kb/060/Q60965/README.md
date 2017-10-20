@@ -6,6 +6,8 @@ permalink: /kb/060/Q60965/
 
 ## Q60965: Problem When Using Integer Array and FOR Loop in BASIC 7.00
 
+{% raw %}
+
 	Article: Q60965
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -82,3 +84,5 @@ permalink: /kb/060/Q60965/
 	   4
 	   4
 	   4
+
+{% endraw %}

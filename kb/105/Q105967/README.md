@@ -6,6 +6,8 @@ permalink: /kb/105/Q105967/
 
 ## Q105967: PC Adm: Removed User Still Has Access to Group Folder
 
+{% raw %}
+
 	Article: Q105967
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.0b,3.2
@@ -92,3 +94,5 @@ permalink: /kb/105/Q105967/
 	
 	=============================================================================
 	
+
+{% endraw %}

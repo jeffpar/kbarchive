@@ -6,6 +6,8 @@ permalink: /kb/064/Q64277/
 
 ## Q64277: Mac AL: Undeliverable AppleLink Gateway Messages Not Generated
 
+{% raw %}
+
 	Article: Q64277
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -46,3 +48,5 @@ permalink: /kb/064/Q64277/
 	
 	=============================================================================
 	
+
+{% endraw %}

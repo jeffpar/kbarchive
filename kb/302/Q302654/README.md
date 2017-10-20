@@ -6,6 +6,8 @@ permalink: /kb/302/Q302654/
 
 ## Q302654: Account Settings: Adding A Child User
 
+{% raw %}
+
 	Article: Q302654
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -39,3 +41,5 @@ permalink: /kb/302/Q302654/
 	
 	=============================================================================
 	
+
+{% endraw %}

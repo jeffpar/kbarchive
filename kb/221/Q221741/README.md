@@ -6,6 +6,8 @@ permalink: /kb/221/Q221741/
 
 ## Q221741: FIX: C0000005 Fatal Error with Unknown Var in Include File
 
+{% raw %}
+
 	Article: Q221741
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -96,3 +98,5 @@ permalink: /kb/221/Q221741/
 	
 	=============================================================================
 	
+
+{% endraw %}

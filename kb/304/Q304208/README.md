@@ -6,6 +6,8 @@ permalink: /kb/304/Q304208/
 
 ## Q304208: Error Message: STOP: 000000de POOL_CORRUPTION_IN_FILE_AREA
 
+{% raw %}
+
 	Article: Q304208
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,2000 SP2,4.0
@@ -68,3 +70,5 @@ permalink: /kb/304/Q304208/
 	
 	=============================================================================
 	
+
+{% endraw %}

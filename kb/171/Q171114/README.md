@@ -6,6 +6,8 @@ permalink: /kb/171/Q171114/
 
 ## Q171114: Distributed Link Service Allows Link Type To Be Changed
 
+{% raw %}
+
 	Article: Q171114
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -91,3 +93,5 @@ permalink: /kb/171/Q171114/
 	
 	=============================================================================
 	
+
+{% endraw %}

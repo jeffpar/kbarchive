@@ -6,6 +6,8 @@ permalink: /kb/185/Q185681/
 
 ## Q185681: WD97: Error Msg. Selecting Button on Inactive Style Box
 
+{% raw %}
+
 	Article: Q185681
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/185/Q185681/
 	
 	=============================================================================
 	
+
+{% endraw %}

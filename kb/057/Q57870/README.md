@@ -6,6 +6,8 @@ permalink: /kb/057/Q57870/
 
 ## Q57870: I/O Redirection Under CV Not Supported Prior to Version 2.30
 
+{% raw %}
+
 	Article: Q57870
 	Product(s): See article
 	Version(s): 1.x 2.10 2.20 2.30 | 2.20 2.30
@@ -52,3 +54,5 @@ permalink: /kb/057/Q57870/
 	brings up CodeView with TEST.EXE as in the example above (with the
 	TEST.EXE input coming from TEST.DAT), but this time CodeView also
 	reads the debugging instructions to perform from the file CV.DAT.
+
+{% endraw %}

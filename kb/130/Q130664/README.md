@@ -6,6 +6,8 @@ permalink: /kb/130/Q130664/
 
 ## Q130664: HOWTO: Use the Setup Wizard in Professional Visual FoxPro
 
+{% raw %}
+
 	Article: Q130664
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -239,3 +241,5 @@ permalink: /kb/130/Q130664/
 	
 	=============================================================================
 	
+
+{% endraw %}

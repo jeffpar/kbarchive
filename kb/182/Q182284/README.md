@@ -6,6 +6,8 @@ permalink: /kb/182/Q182284/
 
 ## Q182284: WD97: Cannot Cross-reference to Caption in Text Box
 
+{% raw %}
+
 	Article: Q182284
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -74,3 +76,5 @@ permalink: /kb/182/Q182284/
 	
 	=============================================================================
 	
+
+{% endraw %}

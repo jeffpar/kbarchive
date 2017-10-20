@@ -6,6 +6,8 @@ permalink: /kb/057/Q57500/
 
 ## Q57500: Redirecting NMAKE 1.00/1.01 Output with -p Gives False Errors
 
+{% raw %}
+
 	Article: Q57500
 	Product(s): See article
 	Version(s): 1.00 1.01
@@ -44,3 +46,5 @@ permalink: /kb/057/Q57500/
 	
 	Microsoft has confirmed this to be a problem in NMAKE versions 1.00
 	and 1.01. This problem was corrected in NMAKE version 1.11.
+
+{% endraw %}

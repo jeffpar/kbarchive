@@ -6,6 +6,8 @@ permalink: /kb/196/Q196414/
 
 ## Q196414: XADM: Opening Move Server Documentation Crashes JPN Netscape
 
+{% raw %}
+
 	Article: Q196414
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -43,3 +45,5 @@ permalink: /kb/196/Q196414/
 	
 	=============================================================================
 	
+
+{% endraw %}

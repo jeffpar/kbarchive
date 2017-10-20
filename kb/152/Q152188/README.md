@@ -6,6 +6,8 @@ permalink: /kb/152/Q152188/
 
 ## Q152188: MSB Solar: Overview of Magic School Bus Explores Solar System
 
+{% raw %}
+
 	Article: Q152188
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -70,3 +72,5 @@ permalink: /kb/152/Q152188/
 	
 	=============================================================================
 	
+
+{% endraw %}

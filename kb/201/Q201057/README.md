@@ -6,6 +6,8 @@ permalink: /kb/201/Q201057/
 
 ## Q201057: XADM: Event ID 5002
 
+{% raw %}
+
 	Article: Q201057
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/201/Q201057/
 	
 	=============================================================================
 	
+
+{% endraw %}

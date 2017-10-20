@@ -6,6 +6,8 @@ permalink: /kb/030/Q30805/
 
 ## Q30805: MASM 5.10 OS2.DOC: OS/2 Call Summary - Segment Information
 
+{% raw %}
+
 	Article: Q30805
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -23,3 +25,5 @@ permalink: /kb/030/Q30805/
 	   Parameters - GlobalSeg:PW, LocalSeg:PW
 	   Structures - The returned segments contain the addresses of the GINFOSEG
 	                and LINFOSEG structures
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178274/
 
 ## Q178274: No Authentication Using Non-Domain Controller for RAS Server
 
+{% raw %}
+
 	Article: Q178274
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.5,3.51,4.0
@@ -84,3 +86,5 @@ permalink: /kb/178/Q178274/
 	
 	=============================================================================
 	
+
+{% endraw %}

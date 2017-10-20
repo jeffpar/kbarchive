@@ -6,6 +6,8 @@ permalink: /kb/315/Q315589/
 
 ## Q315589: Games: Err Msg: Not a Valid Win32 Application
 
+{% raw %}
+
 	Article: Q315589
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -192,3 +194,5 @@ permalink: /kb/315/Q315589/
 	
 	=============================================================================
 	
+
+{% endraw %}

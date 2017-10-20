@@ -6,6 +6,8 @@ permalink: /kb/156/Q156547/
 
 ## Q156547: HOWTO: Manually Register a Custom OLE Server
 
+{% raw %}
+
 	Article: Q156547
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -116,3 +118,5 @@ permalink: /kb/156/Q156547/
 	
 	=============================================================================
 	
+
+{% endraw %}

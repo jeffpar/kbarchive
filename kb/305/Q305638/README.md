@@ -6,6 +6,8 @@ permalink: /kb/305/Q305638/
 
 ## Q305638: A Windows NT 4.0 Cluster Disk May Generate Error 3
 
+{% raw %}
+
 	Article: Q305638
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6,4.0 SP6a
@@ -163,3 +165,5 @@ permalink: /kb/305/Q305638/
 	
 	=============================================================================
 	
+
+{% endraw %}

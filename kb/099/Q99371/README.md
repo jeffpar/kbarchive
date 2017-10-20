@@ -6,6 +6,8 @@ permalink: /kb/099/Q99371/
 
 ## Q99371: Err Msg: The Name Already Exists on the Network
 
+{% raw %}
+
 	Article: Q99371
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -57,3 +59,5 @@ permalink: /kb/099/Q99371/
 	
 	=============================================================================
 	
+
+{% endraw %}

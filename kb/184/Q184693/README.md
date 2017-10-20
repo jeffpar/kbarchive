@@ -6,6 +6,8 @@ permalink: /kb/184/Q184693/
 
 ## Q184693: DNS/DHCP/WINS Release Notes for Windows NT 4.0 SP4 Update
 
+{% raw %}
+
 	Article: Q184693
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4
@@ -438,3 +440,5 @@ permalink: /kb/184/Q184693/
 	
 	=============================================================================
 	
+
+{% endraw %}

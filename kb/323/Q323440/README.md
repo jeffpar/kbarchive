@@ -6,6 +6,8 @@ permalink: /kb/323/Q323440/
 
 ## Q323440: Dungeon Siege: Gom Character Does Not Respond to Attack
 
+{% raw %}
+
 	Article: Q323440
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -156,3 +158,5 @@ permalink: /kb/323/Q323440/
 	
 	=============================================================================
 	
+
+{% endraw %}

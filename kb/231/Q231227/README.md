@@ -6,6 +6,8 @@ permalink: /kb/231/Q231227/
 
 ## Q231227: SMS: Credentials Request Does Not Succeed
 
+{% raw %}
+
 	Article: Q231227
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -85,3 +87,5 @@ permalink: /kb/231/Q231227/
 	
 	=============================================================================
 	
+
+{% endraw %}

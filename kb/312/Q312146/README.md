@@ -6,6 +6,8 @@ permalink: /kb/312/Q312146/
 
 ## Q312146: Microsoft Windows 2000 Server Administrator's Companion Comments
 
+{% raw %}
+
 	Article: Q312146
 	Product(s): Microsoft Press
 	Version(s): 
@@ -194,3 +196,5 @@ permalink: /kb/312/Q312146/
 	
 	=============================================================================
 	
+
+{% endraw %}

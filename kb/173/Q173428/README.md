@@ -6,6 +6,8 @@ permalink: /kb/173/Q173428/
 
 ## Q173428: WD97: General Information About the Comments Feature
 
+{% raw %}
+
 	Article: Q173428
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -237,3 +239,5 @@ permalink: /kb/173/Q173428/
 	
 	=============================================================================
 	
+
+{% endraw %}

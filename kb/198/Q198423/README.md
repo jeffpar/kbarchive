@@ -6,6 +6,8 @@ permalink: /kb/198/Q198423/
 
 ## Q198423: Combat Flight Simulator: How to Change the Simulation Rate
 
+{% raw %}
+
 	Article: Q198423
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -71,3 +73,5 @@ permalink: /kb/198/Q198423/
 	
 	=============================================================================
 	
+
+{% endraw %}

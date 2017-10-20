@@ -6,6 +6,8 @@ permalink: /kb/184/Q184211/
 
 ## Q184211: NT Option Pack Fails to Install with Turkish Regional Settings
 
+{% raw %}
+
 	Article: Q184211
 	Product(s): Internet Information Server
 	Version(s): WINNT:1.0,2.0
@@ -81,3 +83,5 @@ permalink: /kb/184/Q184211/
 	
 	=============================================================================
 	
+
+{% endraw %}

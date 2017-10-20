@@ -6,6 +6,8 @@ permalink: /kb/199/Q199538/
 
 ## Q199538: BUG: Scroll Bars May Be Re-Enabled or Crash App When Clicked
 
+{% raw %}
+
 	Article: Q199538
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:4.0,4.0b
@@ -90,3 +92,5 @@ permalink: /kb/199/Q199538/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102303/
 
 ## Q102303: Lost Apple Printer Connection Due to Outdated Mac Services
 
+{% raw %}
+
 	Article: Q102303
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/102/Q102303/
 	
 	=============================================================================
 	
+
+{% endraw %}

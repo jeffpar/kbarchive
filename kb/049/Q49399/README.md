@@ -6,6 +6,8 @@ permalink: /kb/049/Q49399/
 
 ## Q49399: Example Allocating Memory in MASM Released by BASIC's SETMEM
 
+{% raw %}
+
 	Article: Q49399
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -105,3 +107,5 @@ permalink: /kb/049/Q49399/
 	
 	   Successfully allocated memory
 	   Memory was successfully reallocated
+
+{% endraw %}

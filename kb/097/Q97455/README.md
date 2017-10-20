@@ -6,6 +6,8 @@ permalink: /kb/097/Q97455/
 
 ## Q97455: MS-DOS: Making a Bootable DoubleSpace Floppy Disk
 
+{% raw %}
+
 	Article: Q97455
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -110,3 +112,5 @@ permalink: /kb/097/Q97455/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/065/Q65402/
 
 ## Q65402: BC /R Makes UBOUND and LBOUND Incorrect for Multi-DIM Array
 
+{% raw %}
+
 	Article: Q65402
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -80,3 +82,5 @@ permalink: /kb/065/Q65402/
 	
 	   -2      2
 	   -1      1
+
+{% endraw %}

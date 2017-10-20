@@ -6,6 +6,8 @@ permalink: /kb/193/Q193835/
 
 ## Q193835: FP97: Infinite Loop Creates Thousands of Temp Files
 
+{% raw %}
+
 	Article: Q193835
 	Product(s): Word Front Page
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/193/Q193835/
 	
 	=============================================================================
 	
+
+{% endraw %}

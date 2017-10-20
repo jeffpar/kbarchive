@@ -6,6 +6,8 @@ permalink: /kb/140/Q140614/
 
 ## Q140614: PRB: SYS(2004) Returns Incorrect Directory
 
+{% raw %}
+
 	Article: Q140614
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -99,3 +101,5 @@ permalink: /kb/140/Q140614/
 	
 	=============================================================================
 	
+
+{% endraw %}

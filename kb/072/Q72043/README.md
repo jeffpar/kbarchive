@@ -6,6 +6,8 @@ permalink: /kb/072/Q72043/
 
 ## Q72043: Byte Total Returned by DIR Less Than Bytes Used
 
+{% raw %}
+
 	Article: Q72043
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -96,3 +98,5 @@ permalink: /kb/072/Q72043/
 	
 	=============================================================================
 	
+
+{% endraw %}

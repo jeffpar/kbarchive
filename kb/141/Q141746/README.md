@@ -6,6 +6,8 @@ permalink: /kb/141/Q141746/
 
 ## Q141746: MAC Art Gallery: Screen Flickers with Animations
 
+{% raw %}
+
 	Article: Q141746
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -47,3 +49,5 @@ permalink: /kb/141/Q141746/
 	
 	=============================================================================
 	
+
+{% endraw %}

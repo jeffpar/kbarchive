@@ -6,6 +6,8 @@ permalink: /kb/140/Q140202/
 
 ## Q140202: SAMPLE: MFCARRAY Using Safe Arrays in MFC Automation
 
+{% raw %}
+
 	Article: Q140202
 	Product(s): Microsoft C Compiler
 	Version(s): 3.5,4.0,5.0,6.0
@@ -95,3 +97,5 @@ permalink: /kb/140/Q140202/
 	
 	=============================================================================
 	
+
+{% endraw %}

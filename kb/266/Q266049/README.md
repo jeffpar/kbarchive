@@ -6,6 +6,8 @@ permalink: /kb/266/Q266049/
 
 ## Q266049: XADM: The &quot;Planning and Deploying Outlook Web Access&quot; WP
 
+{% raw %}
+
 	Article: Q266049
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -46,3 +48,5 @@ permalink: /kb/266/Q266049/
 	
 	=============================================================================
 	
+
+{% endraw %}

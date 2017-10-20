@@ -6,6 +6,8 @@ permalink: /kb/176/Q176458/
 
 ## Q176458: XCLN: Misleading Message After Installing Service Pack 1
 
+{% raw %}
+
 	Article: Q176458
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -52,3 +54,5 @@ permalink: /kb/176/Q176458/
 	
 	=============================================================================
 	
+
+{% endraw %}

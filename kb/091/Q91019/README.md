@@ -6,6 +6,8 @@ permalink: /kb/091/Q91019/
 
 ## Q91019: Characters Lost or Changed and File Access Problems
 
+{% raw %}
+
 	Article: Q91019
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -49,3 +51,5 @@ permalink: /kb/091/Q91019/
 	
 	=============================================================================
 	
+
+{% endraw %}

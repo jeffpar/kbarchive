@@ -6,6 +6,8 @@ permalink: /kb/142/Q142847/
 
 ## Q142847: Bugcheck 0x1e Caused by Isotp.sys Driver
 
+{% raw %}
+
 	Article: Q142847
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -60,3 +62,5 @@ permalink: /kb/142/Q142847/
 	
 	=============================================================================
 	
+
+{% endraw %}

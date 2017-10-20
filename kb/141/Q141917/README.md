@@ -6,6 +6,8 @@ permalink: /kb/141/Q141917/
 
 ## Q141917: PRB: WAIT WINDOW Will Not Terminate with Outline Control
 
+{% raw %}
+
 	Article: Q141917
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -85,3 +87,5 @@ permalink: /kb/141/Q141917/
 	
 	=============================================================================
 	
+
+{% endraw %}

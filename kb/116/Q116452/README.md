@@ -6,6 +6,8 @@ permalink: /kb/116/Q116452/
 
 ## Q116452: Windows 95 and After Dark 2.0 Issues
 
+{% raw %}
+
 	Article: Q116452
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -73,3 +75,5 @@ permalink: /kb/116/Q116452/
 	
 	=============================================================================
 	
+
+{% endraw %}

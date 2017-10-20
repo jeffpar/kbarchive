@@ -6,6 +6,8 @@ permalink: /kb/240/Q240071/
 
 ## Q240071: &quot;Unable to Display Security Information&quot; on Computer with SCM
 
+{% raw %}
+
 	Article: Q240071
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/240/Q240071/
 	
 	=============================================================================
 	
+
+{% endraw %}

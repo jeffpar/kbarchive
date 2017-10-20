@@ -6,6 +6,8 @@ permalink: /kb/130/Q130159/
 
 ## Q130159: INFO: When Visual FoxPro Uses 16-bit &amp; 32-bit ODBC Drivers
 
+{% raw %}
+
 	Article: Q130159
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -67,3 +69,5 @@ permalink: /kb/130/Q130159/
 	
 	=============================================================================
 	
+
+{% endraw %}

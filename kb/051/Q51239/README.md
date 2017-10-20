@@ -6,6 +6,8 @@ permalink: /kb/051/Q51239/
 
 ## Q51239: Flt Sim: Nose Pitches Up When Executing a Turn with Joystick
 
+{% raw %}
+
 	Article: Q51239
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -30,3 +32,5 @@ permalink: /kb/051/Q51239/
 	
 	=============================================================================
 	
+
+{% endraw %}

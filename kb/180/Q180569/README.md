@@ -6,6 +6,8 @@ permalink: /kb/180/Q180569/
 
 ## Q180569: XADM: Counting Age in Clean Mailbox
 
+{% raw %}
+
 	Article: Q180569
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -43,3 +45,5 @@ permalink: /kb/180/Q180569/
 	
 	=============================================================================
 	
+
+{% endraw %}

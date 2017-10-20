@@ -6,6 +6,8 @@ permalink: /kb/143/Q143355/
 
 ## Q143355: XCLN: Address Book Delete Button Not Unavailable
 
+{% raw %}
+
 	Article: Q143355
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -45,3 +47,5 @@ permalink: /kb/143/Q143355/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74934/
 
 ## Q74934: DELL 486 Computers and Windows 3.0
 
+{% raw %}
+
 	Article: Q74934
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -59,3 +61,5 @@ permalink: /kb/074/Q74934/
 	
 	=============================================================================
 	
+
+{% endraw %}

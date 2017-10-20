@@ -6,6 +6,8 @@ permalink: /kb/198/Q198450/
 
 ## Q198450: XCLN: You do not have create permissions on this folder
 
+{% raw %}
+
 	Article: Q198450
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
@@ -102,3 +104,5 @@ permalink: /kb/198/Q198450/
 	
 	=============================================================================
 	
+
+{% endraw %}

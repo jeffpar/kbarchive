@@ -6,6 +6,8 @@ permalink: /kb/128/Q128872/
 
 ## Q128872: PC DirSync: Err Msg: Error &#91; 81&#93; No Mailbox Name Net/PO/
 
+{% raw %}
+
 	Article: Q128872
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -71,3 +73,5 @@ permalink: /kb/128/Q128872/
 	
 	=============================================================================
 	
+
+{% endraw %}

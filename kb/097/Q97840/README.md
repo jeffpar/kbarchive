@@ -6,6 +6,8 @@ permalink: /kb/097/Q97840/
 
 ## Q97840: FIX: DOSXNT DX1020 Error Using .WHILE and Processor Flag
 
+{% raw %}
+
 	Article: Q97840
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.1,6.1a; MS-DOS:6.0
@@ -88,3 +90,5 @@ permalink: /kb/097/Q97840/
 	
 	=============================================================================
 	
+
+{% endraw %}

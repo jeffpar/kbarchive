@@ -6,6 +6,8 @@ permalink: /kb/229/Q229729/
 
 ## Q229729: XWEB: Inetinfo.exe Stops Running During Anonymous MAPI Logon
 
+{% raw %}
+
 	Article: Q229729
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -57,3 +59,5 @@ permalink: /kb/229/Q229729/
 	
 	=============================================================================
 	
+
+{% endraw %}

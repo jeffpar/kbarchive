@@ -6,6 +6,8 @@ permalink: /kb/108/Q108824/
 
 ## Q108824: Programmatically Copying Text to/from Windows Clipboard
 
+{% raw %}
+
 	Article: Q108824
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,3.0
@@ -107,3 +109,5 @@ permalink: /kb/108/Q108824/
 	
 	=============================================================================
 	
+
+{% endraw %}

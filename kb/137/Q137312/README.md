@@ -6,6 +6,8 @@ permalink: /kb/137/Q137312/
 
 ## Q137312: Cannot Run The Microsoft Network After Installing HiJaak95
 
+{% raw %}
+
 	Article: Q137312
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.05
@@ -68,3 +70,5 @@ permalink: /kb/137/Q137312/
 	
 	=============================================================================
 	
+
+{% endraw %}

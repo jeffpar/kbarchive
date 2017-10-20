@@ -6,6 +6,8 @@ permalink: /kb/124/Q124416/
 
 ## Q124416: Multimedia: No Sound with Soundscape Card
 
+{% raw %}
+
 	Article: Q124416
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,Fall 1993 edition
@@ -117,3 +119,5 @@ permalink: /kb/124/Q124416/
 	
 	=============================================================================
 	
+
+{% endraw %}

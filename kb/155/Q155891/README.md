@@ -6,6 +6,8 @@ permalink: /kb/155/Q155891/
 
 ## Q155891: INFO: VFP 5.0 Compatible with Oracle's SQL&#42;Net and ODBC Drivers
 
+{% raw %}
+
 	Article: Q155891
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/155/Q155891/
 	
 	=============================================================================
 	
+
+{% endraw %}

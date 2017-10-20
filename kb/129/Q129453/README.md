@@ -6,6 +6,8 @@ permalink: /kb/129/Q129453/
 
 ## Q129453: Explorapedia: Error Messages When Running Explorapedia
 
+{% raw %}
+
 	Article: Q129453
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.00
@@ -128,3 +130,5 @@ permalink: /kb/129/Q129453/
 	
 	=============================================================================
 	
+
+{% endraw %}

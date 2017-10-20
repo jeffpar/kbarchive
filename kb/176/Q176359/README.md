@@ -6,6 +6,8 @@ permalink: /kb/176/Q176359/
 
 ## Q176359: FP: Video Controls Do Not Appear in the Browser
 
+{% raw %}
+
 	Article: Q176359
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0
@@ -79,3 +81,5 @@ permalink: /kb/176/Q176359/
 	
 	=============================================================================
 	
+
+{% endraw %}

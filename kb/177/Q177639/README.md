@@ -6,6 +6,8 @@ permalink: /kb/177/Q177639/
 
 ## Q177639: MngAgent Event 5137:Internal Error - Allocation Failed
 
+{% raw %}
+
 	Article: Q177639
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -57,3 +59,5 @@ permalink: /kb/177/Q177639/
 	
 	=============================================================================
 	
+
+{% endraw %}

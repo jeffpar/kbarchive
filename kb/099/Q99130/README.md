@@ -6,6 +6,8 @@ permalink: /kb/099/Q99130/
 
 ## Q99130: DocErr: IsDomainMasterBrowser Not Valid Key in Windows NT 3.5
 
+{% raw %}
+
 	Article: Q99130
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.5,3.51
@@ -34,3 +36,5 @@ permalink: /kb/099/Q99130/
 	
 	=============================================================================
 	
+
+{% endraw %}

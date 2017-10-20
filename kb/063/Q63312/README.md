@@ -6,6 +6,8 @@ permalink: /kb/063/Q63312/
 
 ## Q63312: Not Receiving VORs Even Though Within Range
 
+{% raw %}
+
 	Article: Q63312
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/063/Q63312/
 	
 	=============================================================================
 	
+
+{% endraw %}

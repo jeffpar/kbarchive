@@ -6,6 +6,8 @@ permalink: /kb/060/Q60091/
 
 ## Q60091: Using 720K or 1.44 MB 3.5-Inch Disk Drive with MS-DOS
 
+{% raw %}
+
 	Article: Q60091
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -76,3 +78,5 @@ permalink: /kb/060/Q60091/
 	
 	=============================================================================
 	
+
+{% endraw %}

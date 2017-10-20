@@ -6,6 +6,8 @@ permalink: /kb/141/Q141336/
 
 ## Q141336: XCLN: MAPI_BODY_CUSTOM Required for Attachments
 
+{% raw %}
+
 	Article: Q141336
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -44,3 +46,5 @@ permalink: /kb/141/Q141336/
 	
 	=============================================================================
 	
+
+{% endraw %}

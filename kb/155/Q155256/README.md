@@ -6,6 +6,8 @@ permalink: /kb/155/Q155256/
 
 ## Q155256: IIS 2.0 on Windows NT 4.0 BDC Does Not Create IUSER
 
+{% raw %}
+
 	Article: Q155256
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -60,3 +62,5 @@ permalink: /kb/155/Q155256/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147702/
 
 ## Q147702: XADM: Permissions Required to Install Microsoft Exchange Server
 
+{% raw %}
+
 	Article: Q147702
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/147/Q147702/
 	
 	=============================================================================
 	
+
+{% endraw %}

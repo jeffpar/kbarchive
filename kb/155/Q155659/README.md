@@ -6,6 +6,8 @@ permalink: /kb/155/Q155659/
 
 ## Q155659: Monster Truck Madness: Optimizing Performance
 
+{% raw %}
+
 	Article: Q155659
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -166,3 +168,5 @@ permalink: /kb/155/Q155659/
 	
 	=============================================================================
 	
+
+{% endraw %}

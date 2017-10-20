@@ -6,6 +6,8 @@ permalink: /kb/028/Q28223/
 
 ## Q28223: DOCERR: Macro Contains IF Directive Rather than IFE Directive
 
+{% raw %}
+
 	Article: Q28223
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a
@@ -38,3 +40,5 @@ permalink: /kb/028/Q28223/
 	
 	=============================================================================
 	
+
+{% endraw %}

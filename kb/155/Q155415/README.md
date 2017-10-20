@@ -6,6 +6,8 @@ permalink: /kb/155/Q155415/
 
 ## Q155415: PCMCIA.SYS Fails to Load w/ Cirrus Logic CL-PD6730 Controller
 
+{% raw %}
+
 	Article: Q155415
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -82,3 +84,5 @@ permalink: /kb/155/Q155415/
 	
 	=============================================================================
 	
+
+{% endraw %}

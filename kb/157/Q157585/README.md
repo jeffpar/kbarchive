@@ -6,6 +6,8 @@ permalink: /kb/157/Q157585/
 
 ## Q157585: Golf: System Requirements
 
+{% raw %}
+
 	Article: Q157585
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/157/Q157585/
 	
 	=============================================================================
 	
+
+{% endraw %}

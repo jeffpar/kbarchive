@@ -6,6 +6,8 @@ permalink: /kb/258/Q258981/
 
 ## Q258981: Error When You Add LU to Connection and Pool by Using Snacfg.exe
 
+{% raw %}
+
 	Article: Q258981
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0
@@ -97,3 +99,5 @@ permalink: /kb/258/Q258981/
 	
 	=============================================================================
 	
+
+{% endraw %}

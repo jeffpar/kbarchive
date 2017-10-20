@@ -6,6 +6,8 @@ permalink: /kb/256/Q256208/
 
 ## Q256208: SMS: Query-Based Collection May Not Work Correctly on Child Site
 
+{% raw %}
+
 	Article: Q256208
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -81,3 +83,5 @@ permalink: /kb/256/Q256208/
 	
 	=============================================================================
 	
+
+{% endraw %}

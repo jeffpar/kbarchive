@@ -6,6 +6,8 @@ permalink: /kb/150/Q150323/
 
 ## Q150323: Computer Appears to Stop Responding Restarting in MS-DOS Mode
 
+{% raw %}
+
 	Article: Q150323
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -83,3 +85,5 @@ permalink: /kb/150/Q150323/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149199/
 
 ## Q149199: Err Msg in XCOPY &quot;Access Denied&quot;
 
+{% raw %}
+
 	Article: Q149199
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -43,3 +45,5 @@ permalink: /kb/149/Q149199/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175386/
 
 ## Q175386: How to Move the Event Logs to Another Location
 
+{% raw %}
+
 	Article: Q175386
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -84,3 +86,5 @@ permalink: /kb/175/Q175386/
 	
 	=============================================================================
 	
+
+{% endraw %}

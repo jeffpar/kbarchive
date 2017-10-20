@@ -6,6 +6,8 @@ permalink: /kb/307/Q307481/
 
 ## Q307481: Multiple Instances of CPI-C App. Fail on Terminal Services
 
+{% raw %}
+
 	Article: Q307481
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -137,3 +139,5 @@ permalink: /kb/307/Q307481/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187826/
 
 ## Q187826: SNA 4.0 Server Backup Information Can Be Centrally Administered
 
+{% raw %}
+
 	Article: Q187826
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -69,3 +71,5 @@ permalink: /kb/187/Q187826/
 	
 	=============================================================================
 	
+
+{% endraw %}

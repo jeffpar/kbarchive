@@ -6,6 +6,8 @@ permalink: /kb/069/Q69338/
 
 ## Q69338: Mouse Pointer Disappears in Quattro Pro Graph Annotations
 
+{% raw %}
+
 	Article: Q69338
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/069/Q69338/
 	
 	=============================================================================
 	
+
+{% endraw %}

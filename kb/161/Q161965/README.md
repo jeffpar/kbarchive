@@ -6,6 +6,8 @@ permalink: /kb/161/Q161965/
 
 ## Q161965: FP: Java Applet Doesn't Function if Class File Is Moved
 
+{% raw %}
+
 	Article: Q161965
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0
@@ -75,3 +77,5 @@ permalink: /kb/161/Q161965/
 	
 	=============================================================================
 	
+
+{% endraw %}

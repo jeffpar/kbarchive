@@ -6,6 +6,8 @@ permalink: /kb/226/Q226908/
 
 ## Q226908: SMS: Distribute Software Wizard GPF in particular Internal Envir
 
+{% raw %}
+
 	Article: Q226908
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -76,3 +78,5 @@ permalink: /kb/226/Q226908/
 	
 	=============================================================================
 	
+
+{% endraw %}

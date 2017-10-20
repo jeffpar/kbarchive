@@ -6,6 +6,8 @@ permalink: /kb/186/Q186213/
 
 ## Q186213: Outwars: List of Enhancement (Cheat) Codes
 
+{% raw %}
+
 	Article: Q186213
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -124,3 +126,5 @@ permalink: /kb/186/Q186213/
 	
 	=============================================================================
 	
+
+{% endraw %}

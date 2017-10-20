@@ -6,6 +6,8 @@ permalink: /kb/152/Q152075/
 
 ## Q152075: FIX: Control Container Support Only Works in Primary Thread
 
+{% raw %}
+
 	Article: Q152075
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -78,3 +80,5 @@ permalink: /kb/152/Q152075/
 	
 	=============================================================================
 	
+
+{% endraw %}

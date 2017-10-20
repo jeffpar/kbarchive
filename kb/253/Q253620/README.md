@@ -6,6 +6,8 @@ permalink: /kb/253/Q253620/
 
 ## Q253620: XCLN: Non-Delivery Report from &quot;Ghost&quot; Recipients
 
+{% raw %}
+
 	Article: Q253620
 	Product(s): Microsoft Exchange
 	Version(s): 98
@@ -69,3 +71,5 @@ permalink: /kb/253/Q253620/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175173/
 
 ## Q175173: HOWTO: Use Word to Print General Fields in Report Designer
 
+{% raw %}
+
 	Article: Q175173
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -222,3 +224,5 @@ permalink: /kb/175/Q175173/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/081/Q81739/
 
 ## Q81739: Using UNINSTAL.EXE With MS-DOS Upgrade
 
+{% raw %}
+
 	Article: Q81739
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -61,3 +63,5 @@ permalink: /kb/081/Q81739/
 	
 	=============================================================================
 	
+
+{% endraw %}

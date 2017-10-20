@@ -6,6 +6,8 @@ permalink: /kb/154/Q154664/
 
 ## Q154664: PRB: Dispatch Interface for Automation Object Must Be Registered
 
+{% raw %}
+
 	Article: Q154664
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -117,3 +119,5 @@ permalink: /kb/154/Q154664/
 	
 	=============================================================================
 	
+
+{% endraw %}

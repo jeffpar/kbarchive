@@ -6,6 +6,8 @@ permalink: /kb/235/Q235445/
 
 ## Q235445: Seven Fonts Not Supporting the Euro Currency Symbol
 
+{% raw %}
+
 	Article: Q235445
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -115,3 +117,5 @@ permalink: /kb/235/Q235445/
 	
 	=============================================================================
 	
+
+{% endraw %}

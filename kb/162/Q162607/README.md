@@ -6,6 +6,8 @@ permalink: /kb/162/Q162607/
 
 ## Q162607: If 1st Thunked LUA App Is Closed, Other LUA Calls Not Processed
 
+{% raw %}
+
 	Article: Q162607
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -67,3 +69,5 @@ permalink: /kb/162/Q162607/
 	
 	=============================================================================
 	
+
+{% endraw %}

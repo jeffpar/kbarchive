@@ -6,6 +6,8 @@ permalink: /kb/176/Q176844/
 
 ## Q176844: Bookshelf Setup Does Not Continue After Removing Older Version
 
+{% raw %}
+
 	Article: Q176844
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -50,3 +52,5 @@ permalink: /kb/176/Q176844/
 	
 	=============================================================================
 	
+
+{% endraw %}

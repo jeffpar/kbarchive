@@ -6,6 +6,8 @@ permalink: /kb/128/Q128430/
 
 ## Q128430: Cannot Install TCP/IP After Installing SQL Server
 
+{% raw %}
+
 	Article: Q128430
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -56,3 +58,5 @@ permalink: /kb/128/Q128430/
 	
 	=============================================================================
 	
+
+{% endraw %}

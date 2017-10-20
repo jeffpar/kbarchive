@@ -6,6 +6,8 @@ permalink: /kb/088/Q88434/
 
 ## Q88434: INFO: Casting Difference Between C and C++ May Cause C2105
 
+{% raw %}
+
 	Article: Q88434
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:; WINDOWS:1.0,1.5; winnt:1.0,2.0,2.1,4.0,5.0
@@ -70,3 +72,5 @@ permalink: /kb/088/Q88434/
 	
 	=============================================================================
 	
+
+{% endraw %}

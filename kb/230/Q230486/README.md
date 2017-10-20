@@ -6,6 +6,8 @@ permalink: /kb/230/Q230486/
 
 ## Q230486: PRB: Cannot Have Secondary Y Axis with MSChart XY Scatterchart
 
+{% raw %}
+
 	Article: Q230486
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -83,3 +85,5 @@ permalink: /kb/230/Q230486/
 	
 	=============================================================================
 	
+
+{% endraw %}

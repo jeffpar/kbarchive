@@ -6,6 +6,8 @@ permalink: /kb/254/Q254919/
 
 ## Q254919: Installing the Windows Desktop Update with Internet Explorer 5.x
 
+{% raw %}
+
 	Article: Q254919
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.0,5.0,95
@@ -120,3 +122,5 @@ permalink: /kb/254/Q254919/
 	
 	=============================================================================
 	
+
+{% endraw %}

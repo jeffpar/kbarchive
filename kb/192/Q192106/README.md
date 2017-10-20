@@ -6,6 +6,8 @@ permalink: /kb/192/Q192106/
 
 ## Q192106: PRB: ActiveDoc Displays Incorrectly When Internet Explorer is Ma
 
+{% raw %}
+
 	Article: Q192106
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -95,3 +97,5 @@ permalink: /kb/192/Q192106/
 	
 	=============================================================================
 	
+
+{% endraw %}

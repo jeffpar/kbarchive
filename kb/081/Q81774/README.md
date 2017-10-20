@@ -6,6 +6,8 @@ permalink: /kb/081/Q81774/
 
 ## Q81774: SUBST Command Doesn't Work with CD-ROM Drive
 
+{% raw %}
+
 	Article: Q81774
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -51,3 +53,5 @@ permalink: /kb/081/Q81774/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164157/
 
 ## Q164157: SMS: Kbstuff.sys May Cause a STOP 1E Blue Screen Error
 
+{% raw %}
+
 	Article: Q164157
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP1
@@ -58,3 +60,5 @@ permalink: /kb/164/Q164157/
 	
 	=============================================================================
 	
+
+{% endraw %}

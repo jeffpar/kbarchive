@@ -6,6 +6,8 @@ permalink: /kb/108/Q108841/
 
 ## Q108841: PC DB: Import Does Not Send Welcome Message to New Users
 
+{% raw %}
+
 	Article: Q108841
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -56,3 +58,5 @@ permalink: /kb/108/Q108841/
 	
 	=============================================================================
 	
+
+{% endraw %}

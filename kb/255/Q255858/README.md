@@ -6,6 +6,8 @@ permalink: /kb/255/Q255858/
 
 ## Q255858: PRB: New Behavior of Multiline CJK Rich Edit Controls w/ Win2000
 
+{% raw %}
+
 	Article: Q255858
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/255/Q255858/
 	
 	=============================================================================
 	
+
+{% endraw %}

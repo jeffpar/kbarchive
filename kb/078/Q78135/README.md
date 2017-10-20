@@ -6,6 +6,8 @@ permalink: /kb/078/Q78135/
 
 ## Q78135: Becoming a Microsoft OEM for MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q78135
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -53,3 +55,5 @@ permalink: /kb/078/Q78135/
 	
 	=============================================================================
 	
+
+{% endraw %}

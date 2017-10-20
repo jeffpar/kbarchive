@@ -6,6 +6,8 @@ permalink: /kb/149/Q149320/
 
 ## Q149320: BUG: First ListItem Truncated with ListView in Report View
 
+{% raw %}
+
 	Article: Q149320
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -108,3 +110,5 @@ permalink: /kb/149/Q149320/
 	
 	=============================================================================
 	
+
+{% endraw %}

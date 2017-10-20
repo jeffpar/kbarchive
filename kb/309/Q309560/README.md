@@ -6,6 +6,8 @@ permalink: /kb/309/Q309560/
 
 ## Q309560: Unable To Send Or Receive E-mail In Windows XP
 
+{% raw %}
+
 	Article: Q309560
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -63,3 +65,5 @@ permalink: /kb/309/Q309560/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186937/
 
 ## Q186937: XWEB: Cannot See Note/Post In the Calendar/Contact Folder In OWA
 
+{% raw %}
+
 	Article: Q186937
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -60,3 +62,5 @@ permalink: /kb/186/Q186937/
 	
 	=============================================================================
 	
+
+{% endraw %}

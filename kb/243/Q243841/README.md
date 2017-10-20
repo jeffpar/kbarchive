@@ -6,6 +6,8 @@ permalink: /kb/243/Q243841/
 
 ## Q243841: XCLN: How to Change Organization, Site, Exchange Server for OWA
 
+{% raw %}
+
 	Article: Q243841
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0 SP1,5.0 SP2,5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -88,3 +90,5 @@ permalink: /kb/243/Q243841/
 	
 	=============================================================================
 	
+
+{% endraw %}

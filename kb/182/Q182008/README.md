@@ -6,6 +6,8 @@ permalink: /kb/182/Q182008/
 
 ## Q182008: WD97: Word Hangs Viewing Headers on Compaq Presario 1220 Laptop
 
+{% raw %}
+
 	Article: Q182008
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -64,3 +66,5 @@ permalink: /kb/182/Q182008/
 	
 	=============================================================================
 	
+
+{% endraw %}

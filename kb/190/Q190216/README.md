@@ -6,6 +6,8 @@ permalink: /kb/190/Q190216/
 
 ## Q190216: BUG: Printer.DrawWidth Appears To Be Ignored with Windows 95/98
 
+{% raw %}
+
 	Article: Q190216
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -119,3 +121,5 @@ permalink: /kb/190/Q190216/
 	
 	=============================================================================
 	
+
+{% endraw %}

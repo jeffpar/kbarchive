@@ -6,6 +6,8 @@ permalink: /kb/130/Q130798/
 
 ## Q130798: BUG: &quot;File Does Not Exist&quot; Occurs After FoxPro Is Maximized
 
+{% raw %}
+
 	Article: Q130798
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:2.6a,3.0,3.0b,5.0,5.0a,6.0
@@ -89,3 +91,5 @@ permalink: /kb/130/Q130798/
 	
 	=============================================================================
 	
+
+{% endraw %}

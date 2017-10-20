@@ -6,6 +6,8 @@ permalink: /kb/040/Q40443/
 
 ## Q40443: Type of Aircraft Not Saved in User Mode
 
+{% raw %}
+
 	Article: Q40443
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/040/Q40443/
 	
 	=============================================================================
 	
+
+{% endraw %}

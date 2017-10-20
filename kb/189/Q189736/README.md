@@ -6,6 +6,8 @@ permalink: /kb/189/Q189736/
 
 ## Q189736: BUG: Painting Model for BitBlt and StretchBlt Changed for VB6
 
+{% raw %}
+
 	Article: Q189736
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/189/Q189736/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/218/Q218173/
 
 ## Q218173: COMTI &#91;MC_&#93;ALLOCATE Hangs After Host Rejects SNA Server BIND Req
 
+{% raw %}
+
 	Article: Q218173
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1,4.0SP2
@@ -91,3 +93,5 @@ permalink: /kb/218/Q218173/
 	
 	=============================================================================
 	
+
+{% endraw %}

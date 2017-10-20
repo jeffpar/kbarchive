@@ -6,6 +6,8 @@ permalink: /kb/138/Q138754/
 
 ## Q138754: PRB: Exported Comma-Delimited File Has 3 Commas &amp; No Quotes
 
+{% raw %}
+
 	Article: Q138754
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -76,3 +78,5 @@ permalink: /kb/138/Q138754/
 	
 	=============================================================================
 	
+
+{% endraw %}

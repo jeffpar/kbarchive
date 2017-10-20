@@ -6,6 +6,8 @@ permalink: /kb/096/Q96021/
 
 ## Q96021: VidCap: Captures Only Blackness with Video Blaster
 
+{% raw %}
+
 	Article: Q96021
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/096/Q96021/
 	
 	=============================================================================
 	
+
+{% endraw %}

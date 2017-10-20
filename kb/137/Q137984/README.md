@@ -6,6 +6,8 @@ permalink: /kb/137/Q137984/
 
 ## Q137984: TCP Connection States and Netstat Output
 
+{% raw %}
+
 	Article: Q137984
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.5,3.51
@@ -144,3 +146,5 @@ permalink: /kb/137/Q137984/
 	
 	=============================================================================
 	
+
+{% endraw %}

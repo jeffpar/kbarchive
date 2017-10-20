@@ -6,6 +6,8 @@ permalink: /kb/087/Q87150/
 
 ## Q87150: Mac Wkst: Creation of Local Information
 
+{% raw %}
+
 	Article: Q87150
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -38,3 +40,5 @@ permalink: /kb/087/Q87150/
 	
 	=============================================================================
 	
+
+{% endraw %}

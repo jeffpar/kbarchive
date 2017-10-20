@@ -6,6 +6,8 @@ permalink: /kb/188/Q188049/
 
 ## Q188049: SMS: Acctchg.exe Syntax and Description
 
+{% raw %}
+
 	Article: Q188049
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -77,3 +79,5 @@ permalink: /kb/188/Q188049/
 	
 	=============================================================================
 	
+
+{% endraw %}

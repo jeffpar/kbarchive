@@ -6,6 +6,8 @@ permalink: /kb/071/Q71971/
 
 ## Q71971: Calculating the Checksum for a Segmented-Executable File
 
+{% raw %}
+
 	Article: Q71971
 	Product(s): Microsoft Programming Utilities
 	Version(s): 5.0x,5.1,5.11,5.13,5.15,5.1x,5.2,5.3x,5.5,5.6
@@ -223,3 +225,5 @@ permalink: /kb/071/Q71971/
 	
 	=============================================================================
 	
+
+{% endraw %}

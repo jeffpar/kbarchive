@@ -6,6 +6,8 @@ permalink: /kb/236/Q236964/
 
 ## Q236964: Delayed Return of Paged Pool Causes Error 1450
 
+{% raw %}
+
 	Article: Q236964
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP6
@@ -108,3 +110,5 @@ permalink: /kb/236/Q236964/
 	
 	=============================================================================
 	
+
+{% endraw %}

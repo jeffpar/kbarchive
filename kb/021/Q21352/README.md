@@ -6,6 +6,8 @@ permalink: /kb/021/Q21352/
 
 ## Q21352: Setting the COM, NAV, and OBI
 
+{% raw %}
+
 	Article: Q21352
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/021/Q21352/
 	
 	=============================================================================
 	
+
+{% endraw %}

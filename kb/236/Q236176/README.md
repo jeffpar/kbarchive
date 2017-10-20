@@ -6,6 +6,8 @@ permalink: /kb/236/Q236176/
 
 ## Q236176: XFOR: Event ID 12010: Failed to Initialize the Notes Migration S
 
+{% raw %}
+
 	Article: Q236176
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP1,5.5 SP2
@@ -64,3 +66,5 @@ permalink: /kb/236/Q236176/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137342/
 
 ## Q137342: Incorrect Drive Size Reported Using Compaq SmartSCSI Array
 
+{% raw %}
+
 	Article: Q137342
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -71,3 +73,5 @@ permalink: /kb/137/Q137342/
 	
 	=============================================================================
 	
+
+{% endraw %}

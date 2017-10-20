@@ -6,6 +6,8 @@ permalink: /kb/190/Q190016/
 
 ## Q190016: Store.exe Causes Stack Fault When Starting IMC
 
+{% raw %}
+
 	Article: Q190016
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -157,3 +159,5 @@ permalink: /kb/190/Q190016/
 	
 	=============================================================================
 	
+
+{% endraw %}

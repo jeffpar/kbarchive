@@ -6,6 +6,8 @@ permalink: /kb/248/Q248294/
 
 ## Q248294: Invalid Font File Can Cause Error Message on Blue Screen
 
+{% raw %}
+
 	Article: Q248294
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -54,3 +56,5 @@ permalink: /kb/248/Q248294/
 	
 	=============================================================================
 	
+
+{% endraw %}

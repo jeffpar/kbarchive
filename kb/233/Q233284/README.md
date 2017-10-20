@@ -6,6 +6,8 @@ permalink: /kb/233/Q233284/
 
 ## Q233284: XADM: Event Service Causes Unwanted Public Folder Replication
 
+{% raw %}
+
 	Article: Q233284
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -89,3 +91,5 @@ permalink: /kb/233/Q233284/
 	
 	=============================================================================
 	
+
+{% endraw %}

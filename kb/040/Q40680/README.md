@@ -6,6 +6,8 @@ permalink: /kb/040/Q40680/
 
 ## Q40680: Why #ifdef and #ifndef Are Used in PGCHART.H
 
+{% raw %}
+
 	Article: Q40680
 	Product(s): See article
 	Version(s): 2.00
@@ -22,3 +24,5 @@ permalink: /kb/040/Q40680/
 	These commands are provided in all of the include files where
 	structures (or types) are typedef'ed; it is just a little more obvious
 	in PGCHART.H because it defines so many structures.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/069/Q69475/
 
 ## Q69475: Increasing the Size of the PWB Build Status Box on MS-DOS
 
+{% raw %}
+
 	Article: Q69475
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1
@@ -58,3 +60,5 @@ permalink: /kb/069/Q69475/
 	
 	=============================================================================
 	
+
+{% endraw %}

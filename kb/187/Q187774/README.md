@@ -6,6 +6,8 @@ permalink: /kb/187/Q187774/
 
 ## Q187774: FP: FrontPage Editor Removes Blank Lines in Tables
 
+{% raw %}
+
 	Article: Q187774
 	Product(s): Word Front Page
 	Version(s): 1.0
@@ -72,3 +74,5 @@ permalink: /kb/187/Q187774/
 	
 	=============================================================================
 	
+
+{% endraw %}

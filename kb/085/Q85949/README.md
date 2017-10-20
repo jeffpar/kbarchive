@@ -6,6 +6,8 @@ permalink: /kb/085/Q85949/
 
 ## Q85949: Windows 3.1 Notepad Can Open Any File Type
 
+{% raw %}
+
 	Article: Q85949
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/085/Q85949/
 	
 	=============================================================================
 	
+
+{% endraw %}

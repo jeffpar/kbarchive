@@ -6,6 +6,8 @@ permalink: /kb/119/Q119263/
 
 ## Q119263: File Listings for the Downloadable (BBS) MS-DOS 6.22 Step-Up
 
+{% raw %}
+
 	Article: Q119263
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -173,3 +175,5 @@ permalink: /kb/119/Q119263/
 	
 	=============================================================================
 	
+
+{% endraw %}

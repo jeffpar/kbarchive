@@ -6,6 +6,8 @@ permalink: /kb/165/Q165275/
 
 ## Q165275: TN3270 Server display types are not selected
 
+{% raw %}
+
 	Article: Q165275
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/165/Q165275/
 	
 	=============================================================================
 	
+
+{% endraw %}

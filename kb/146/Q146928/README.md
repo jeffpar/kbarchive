@@ -6,6 +6,8 @@ permalink: /kb/146/Q146928/
 
 ## Q146928: XCLN: Schedule+ Printing Is Not WYSIWIG
 
+{% raw %}
+
 	Article: Q146928
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0a,95
@@ -38,3 +40,5 @@ permalink: /kb/146/Q146928/
 	
 	=============================================================================
 	
+
+{% endraw %}

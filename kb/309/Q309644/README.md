@@ -6,6 +6,8 @@ permalink: /kb/309/Q309644/
 
 ## Q309644: The Mandatory Countdown Timer Maximum Value Has Been Increased
 
+{% raw %}
+
 	Article: Q309644
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP3
@@ -285,3 +287,5 @@ permalink: /kb/309/Q309644/
 	
 	=============================================================================
 	
+
+{% endraw %}

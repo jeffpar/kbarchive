@@ -6,6 +6,8 @@ permalink: /kb/228/Q228941/
 
 ## Q228941: MCSE Readiness Review - Exam 70-098 (Windows 98) Corrections
 
+{% raw %}
+
 	Article: Q228941
 	Product(s): Microsoft Press
 	Version(s): 
@@ -149,3 +151,5 @@ permalink: /kb/228/Q228941/
 	
 	=============================================================================
 	
+
+{% endraw %}

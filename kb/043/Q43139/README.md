@@ -6,6 +6,8 @@ permalink: /kb/043/Q43139/
 
 ## Q43139: LINK: Renaming Overlayed Executables Will Cause Problems
 
+{% raw %}
+
 	Article: Q43139
 	Product(s): See article
 	Version(s): 5.01.21
@@ -28,3 +30,5 @@ permalink: /kb/043/Q43139/
 	
 	In order to change the name of the executable without receiving this
 	error, it must be relinked and given the new name at that time.
+
+{% endraw %}

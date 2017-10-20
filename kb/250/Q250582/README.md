@@ -6,6 +6,8 @@ permalink: /kb/250/Q250582/
 
 ## Q250582: MSB Bugs: Program Runs Slowly on Macintosh Computer
 
+{% raw %}
+
 	Article: Q250582
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS|MACINTOS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/250/Q250582/
 	
 	=============================================================================
 	
+
+{% endraw %}

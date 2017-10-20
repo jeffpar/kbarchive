@@ -6,6 +6,8 @@ permalink: /kb/057/Q57430/
 
 ## Q57430: Print Screen Does Not Issue a Formfeed After Printing
 
+{% raw %}
+
 	Article: Q57430
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.0
@@ -62,3 +64,5 @@ permalink: /kb/057/Q57430/
 	
 	=============================================================================
 	
+
+{% endraw %}

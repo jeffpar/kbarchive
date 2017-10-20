@@ -6,6 +6,8 @@ permalink: /kb/103/Q103381/
 
 ## Q103381: PC Forms: Installing Forms Designer with Non-English Mail
 
+{% raw %}
+
 	Article: Q103381
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -101,3 +103,5 @@ permalink: /kb/103/Q103381/
 	
 	=============================================================================
 	
+
+{% endraw %}

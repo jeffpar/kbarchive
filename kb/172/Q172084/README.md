@@ -6,6 +6,8 @@ permalink: /kb/172/Q172084/
 
 ## Q172084: PRB: CALCULATE STD--Standard Deviation--Gives Numeric Overflow
 
+{% raw %}
+
 	Article: Q172084
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0; WINDOWS:3.0,3.0b,5.0,5.0a
@@ -140,3 +142,5 @@ permalink: /kb/172/Q172084/
 	
 	=============================================================================
 	
+
+{% endraw %}

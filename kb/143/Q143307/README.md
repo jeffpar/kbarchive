@@ -6,6 +6,8 @@ permalink: /kb/143/Q143307/
 
 ## Q143307: How to Retain the ForeColor in a Grid For a Selected Cell
 
+{% raw %}
+
 	Article: Q143307
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -81,3 +83,5 @@ permalink: /kb/143/Q143307/
 	
 	=============================================================================
 	
+
+{% endraw %}

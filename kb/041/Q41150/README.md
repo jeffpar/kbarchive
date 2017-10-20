@@ -6,6 +6,8 @@ permalink: /kb/041/Q41150/
 
 ## Q41150: SEEK Function Not Hyperlinked to SEEK Statement in QB Help
 
+{% raw %}
+
 	Article: Q41150
 	Product(s): See article
 	Version(s): 4.50
@@ -25,3 +27,5 @@ permalink: /kb/041/Q41150/
 	either the SEEK statement or the SEEK function, the help screen for
 	the SEEK statement comes up, and there is no hyperlink to the SEEK
 	function.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178312/
 
 ## Q178312: XADM: Removing the Active Server Component Fails
 
+{% raw %}
+
 	Article: Q178312
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -101,3 +103,5 @@ permalink: /kb/178/Q178312/
 	
 	=============================================================================
 	
+
+{% endraw %}

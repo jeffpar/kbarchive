@@ -6,6 +6,8 @@ permalink: /kb/060/Q60648/
 
 ## Q60648: C 6.00 STARTUP.DOC: Placing the Stack Outside of DGROUP
 
+{% raw %}
+
 	Article: Q60648
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -45,3 +47,5 @@ permalink: /kb/060/Q60648/
 	increased by the size of your stack. This is a consequence of the DOS
 	.EXE format. To reduce the size of your .EXE file, link with the
 	/EXEPACK option.
+
+{% endraw %}

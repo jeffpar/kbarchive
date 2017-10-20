@@ -6,6 +6,8 @@ permalink: /kb/119/Q119917/
 
 ## Q119917: Location of DHCP Information on Local Clients
 
+{% raw %}
+
 	Article: Q119917
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2c,2000,3.0,3.5,3.51,4.0,95
@@ -133,3 +135,5 @@ permalink: /kb/119/Q119917/
 	
 	=============================================================================
 	
+
+{% endraw %}

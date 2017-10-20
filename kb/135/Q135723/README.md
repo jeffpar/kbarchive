@@ -6,6 +6,8 @@ permalink: /kb/135/Q135723/
 
 ## Q135723: Migrating Macintosh Volumes from NetWare to Windows NT
 
+{% raw %}
+
 	Article: Q135723
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -51,3 +53,5 @@ permalink: /kb/135/Q135723/
 	
 	=============================================================================
 	
+
+{% endraw %}

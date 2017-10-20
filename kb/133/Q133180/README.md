@@ -6,6 +6,8 @@ permalink: /kb/133/Q133180/
 
 ## Q133180: Fax Solution Software for Windows NT
 
+{% raw %}
+
 	Article: Q133180
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -114,3 +116,5 @@ permalink: /kb/133/Q133180/
 	
 	=============================================================================
 	
+
+{% endraw %}

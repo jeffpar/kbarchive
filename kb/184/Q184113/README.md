@@ -6,6 +6,8 @@ permalink: /kb/184/Q184113/
 
 ## Q184113: XCON: Content Conversion Fails After Repeated Replies
 
+{% raw %}
+
 	Article: Q184113
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -62,3 +64,5 @@ permalink: /kb/184/Q184113/
 	
 	=============================================================================
 	
+
+{% endraw %}

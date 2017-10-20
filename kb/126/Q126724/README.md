@@ -6,6 +6,8 @@ permalink: /kb/126/Q126724/
 
 ## Q126724: NPMCA.SYS Causes STOP 0x0A in TCPIP.SYS
 
+{% raw %}
+
 	Article: Q126724
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -110,3 +112,5 @@ permalink: /kb/126/Q126724/
 	
 	=============================================================================
 	
+
+{% endraw %}

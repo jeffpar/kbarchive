@@ -6,6 +6,8 @@ permalink: /kb/099/Q99731/
 
 ## Q99731: Windows &amp; MS-DOS 5 Upgrade Pack May Not Upgrade MS-DOS
 
+{% raw %}
+
 	Article: Q99731
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/099/Q99731/
 	
 	=============================================================================
 	
+
+{% endraw %}

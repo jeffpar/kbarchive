@@ -6,6 +6,8 @@ permalink: /kb/172/Q172992/
 
 ## Q172992: FIX: /Og Causes C1001 While Looping
 
+{% raw %}
+
 	Article: Q172992
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -87,3 +89,5 @@ permalink: /kb/172/Q172992/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/249/Q249020/
 
 ## Q249020: XFOR: Application Converter Install Stops Looking for Notes Path
 
+{% raw %}
+
 	Article: Q249020
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -82,3 +84,5 @@ permalink: /kb/249/Q249020/
 	
 	=============================================================================
 	
+
+{% endraw %}

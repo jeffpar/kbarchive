@@ -6,6 +6,8 @@ permalink: /kb/108/Q108879/
 
 ## Q108879: PC Gen: PODIAG.EXE Reports GAL Missing on Version 2.1 PO
 
+{% raw %}
+
 	Article: Q108879
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -52,3 +54,5 @@ permalink: /kb/108/Q108879/
 	
 	=============================================================================
 	
+
+{% endraw %}

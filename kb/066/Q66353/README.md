@@ -6,6 +6,8 @@ permalink: /kb/066/Q66353/
 
 ## Q66353: Description of TicTactics in the Windows Entertainment Pack
 
+{% raw %}
+
 	Article: Q66353
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/066/Q66353/
 	
 	=============================================================================
 	
+
+{% endraw %}

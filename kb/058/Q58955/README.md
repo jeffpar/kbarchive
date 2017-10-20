@@ -6,6 +6,8 @@ permalink: /kb/058/Q58955/
 
 ## Q58955: Twice-Called String FUNCTION May Fail in QB/QBX Quick Library
 
+{% raw %}
+
 	Article: Q58955
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10
@@ -50,3 +52,5 @@ permalink: /kb/058/Q58955/
 	
 	This example prints "defZdefZ" instead of correctly printing
 	"abcZdefZ".
+
+{% endraw %}

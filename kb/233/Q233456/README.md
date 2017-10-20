@@ -6,6 +6,8 @@ permalink: /kb/233/Q233456/
 
 ## Q233456: Business Planner: Menus and Buttons Disappear from Toolbar
 
+{% raw %}
+
 	Article: Q233456
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/233/Q233456/
 	
 	=============================================================================
 	
+
+{% endraw %}

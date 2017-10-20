@@ -6,6 +6,8 @@ permalink: /kb/186/Q186762/
 
 ## Q186762: WD97: Advanced Power Management Causes Data Loss
 
+{% raw %}
+
 	Article: Q186762
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/186/Q186762/
 	
 	=============================================================================
 	
+
+{% endraw %}

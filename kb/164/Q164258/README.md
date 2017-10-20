@@ -6,6 +6,8 @@ permalink: /kb/164/Q164258/
 
 ## Q164258: DPT SCSI Controller can Loose Requests When Reset
 
+{% raw %}
+
 	Article: Q164258
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -57,3 +59,5 @@ permalink: /kb/164/Q164258/
 	
 	=============================================================================
 	
+
+{% endraw %}

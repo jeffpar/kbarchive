@@ -6,6 +6,8 @@ permalink: /kb/043/Q43219/
 
 ## Q43219: scanf, sscanf, fscanf Functions Fail When Scanning All Zeros
 
+{% raw %}
+
 	Article: Q43219
 	Product(s): See article
 	Version(s): 2.00
@@ -56,3 +58,5 @@ permalink: /kb/043/Q43219/
 	    */
 	   printf ( "a=%x b=%d\n", a, b );
 	 }
+
+{% endraw %}

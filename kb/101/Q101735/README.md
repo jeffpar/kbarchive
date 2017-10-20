@@ -6,6 +6,8 @@ permalink: /kb/101/Q101735/
 
 ## Q101735: Letter 8.5 x 11 and Note 8.5 x 11 Options in PostScript Driver
 
+{% raw %}
+
 	Article: Q101735
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/101/Q101735/
 	
 	=============================================================================
 	
+
+{% endraw %}

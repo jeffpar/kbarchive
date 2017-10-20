@@ -6,6 +6,8 @@ permalink: /kb/207/Q207655/
 
 ## Q207655: XWEB: Setting Up Web Publishing and OWA Access Through a Proxy
 
+{% raw %}
+
 	Article: Q207655
 	Product(s): Microsoft Exchange
 	Version(s): 2.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/207/Q207655/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110695/
 
 ## Q110695: Err Msg: Setup is Unable to Locate the Hard Drive...
 
+{% raw %}
+
 	Article: Q110695
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5
@@ -54,3 +56,5 @@ permalink: /kb/110/Q110695/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/189/Q189149/
 
 ## Q189149: Disk Counters on Clustered Disk Record Zero Values
 
+{% raw %}
+
 	Article: Q189149
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/189/Q189149/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246475/
 
 ## Q246475: XCLN: Storage Limit Warning Is in Mixed Languages
 
+{% raw %}
+
 	Article: Q246475
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; winnt:4.0,5.0,5.5
@@ -71,3 +73,5 @@ permalink: /kb/246/Q246475/
 	
 	=============================================================================
 	
+
+{% endraw %}

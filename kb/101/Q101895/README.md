@@ -6,6 +6,8 @@ permalink: /kb/101/Q101895/
 
 ## Q101895: Macintosh Files on MS-DOS Disks May Not Work
 
+{% raw %}
+
 	Article: Q101895
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -49,3 +51,5 @@ permalink: /kb/101/Q101895/
 	
 	=============================================================================
 	
+
+{% endraw %}

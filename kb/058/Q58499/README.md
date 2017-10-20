@@ -6,6 +6,8 @@ permalink: /kb/058/Q58499/
 
 ## Q58499: &quot;Overflow&quot; with Integer Division and MOD Operator; Workaround
 
+{% raw %}
+
 	Article: Q58499
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -32,3 +34,5 @@ permalink: /kb/058/Q58499/
 	   y# = INT(y# + .5)              ' round off the denominator
 	   PRINT FIX(x# / y#)             ' Emulate integer division
 	   PRINT x# - ( y# * FIX(x# / y#) )  ' Emulate modulo arithmetic
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172159/
 
 ## Q172159: E-mail Received in Different Font Size or Color
 
+{% raw %}
+
 	Article: Q172159
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -49,3 +51,5 @@ permalink: /kb/172/Q172159/
 	
 	=============================================================================
 	
+
+{% endraw %}

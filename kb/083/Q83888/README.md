@@ -6,6 +6,8 @@ permalink: /kb/083/Q83888/
 
 ## Q83888: XGA Driver Support in Windows 3.1
 
+{% raw %}
+
 	Article: Q83888
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1
@@ -126,3 +128,5 @@ permalink: /kb/083/Q83888/
 	
 	=============================================================================
 	
+
+{% endraw %}

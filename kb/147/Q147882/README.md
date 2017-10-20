@@ -6,6 +6,8 @@ permalink: /kb/147/Q147882/
 
 ## Q147882: HOWTO: DAO: Assign a Recordset to a Data Control in VB
 
+{% raw %}
+
 	Article: Q147882
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -152,3 +154,5 @@ permalink: /kb/147/Q147882/
 	
 	=============================================================================
 	
+
+{% endraw %}

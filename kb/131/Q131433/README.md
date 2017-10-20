@@ -6,6 +6,8 @@ permalink: /kb/131/Q131433/
 
 ## Q131433: Macintosh Encarta 1995: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q131433
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -127,3 +129,5 @@ permalink: /kb/131/Q131433/
 	
 	=============================================================================
 	
+
+{% endraw %}

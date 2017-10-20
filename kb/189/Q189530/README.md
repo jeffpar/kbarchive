@@ -6,6 +6,8 @@ permalink: /kb/189/Q189530/
 
 ## Q189530: SMS: Scheduler Never Creates Send Request
 
+{% raw %}
+
 	Article: Q189530
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -71,3 +73,5 @@ permalink: /kb/189/Q189530/
 	
 	=============================================================================
 	
+
+{% endraw %}

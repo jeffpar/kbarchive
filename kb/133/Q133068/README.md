@@ -6,6 +6,8 @@ permalink: /kb/133/Q133068/
 
 ## Q133068: BUG: Deleting a Struct Typedef Causes C1059, C1063, or C1001
 
+{% raw %}
+
 	Article: Q133068
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,4.0,4.1,4.2,7.0
@@ -112,3 +114,5 @@ permalink: /kb/133/Q133068/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128344/
 
 ## Q128344: FIX: Error C2593: 'operator +' Is Ambiguous
 
+{% raw %}
+
 	Article: Q128344
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2
@@ -152,3 +154,5 @@ permalink: /kb/128/Q128344/
 	
 	=============================================================================
 	
+
+{% endraw %}

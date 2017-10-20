@@ -6,6 +6,8 @@ permalink: /kb/260/Q260100/
 
 ## Q260100: FIX: Printform Ignores Changes in Printer.orientation
 
+{% raw %}
+
 	Article: Q260100
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0,6.0 sp1, sp2, sp3
@@ -84,3 +86,5 @@ permalink: /kb/260/Q260100/
 	
 	=============================================================================
 	
+
+{% endraw %}

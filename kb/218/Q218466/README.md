@@ -6,6 +6,8 @@ permalink: /kb/218/Q218466/
 
 ## Q218466: How to Publish Phonebooks Using Phone Book Administrator
 
+{% raw %}
+
 	Article: Q218466
 	Product(s): Internet Information Server
 	Version(s): WINDOWS:4.01,4.01a,5.0; winnt:4.0
@@ -108,3 +110,5 @@ permalink: /kb/218/Q218466/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136354/
 
 ## Q136354: Fury3: Graphics Performance Test Fails With Microcrystal 20SD
 
+{% raw %}
+
 	Article: Q136354
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/136/Q136354/
 	
 	=============================================================================
 	
+
+{% endraw %}

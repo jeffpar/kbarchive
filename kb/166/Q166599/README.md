@@ -6,6 +6,8 @@ permalink: /kb/166/Q166599/
 
 ## Q166599: XWEB: MMP files Created by MAPI and CDO
 
+{% raw %}
+
 	Article: Q166599
 	Product(s): Microsoft Exchange
 	Version(s): 3.0,5.0
@@ -104,3 +106,5 @@ permalink: /kb/166/Q166599/
 	
 	=============================================================================
 	
+
+{% endraw %}

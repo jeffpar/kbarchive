@@ -6,6 +6,8 @@ permalink: /kb/130/Q130643/
 
 ## Q130643: FIX: Closing Resource Browser System Menu Doesn't Save Changes
 
+{% raw %}
+
 	Article: Q130643
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -69,3 +71,5 @@ permalink: /kb/130/Q130643/
 	
 	=============================================================================
 	
+
+{% endraw %}

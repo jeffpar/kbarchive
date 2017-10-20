@@ -6,6 +6,8 @@ permalink: /kb/094/Q94913/
 
 ## Q94913: FIX: ML Fails When PAGE Directive Has Invalid Value
 
+{% raw %}
+
 	Article: Q94913
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.1a
@@ -85,3 +87,5 @@ permalink: /kb/094/Q94913/
 	
 	=============================================================================
 	
+
+{% endraw %}

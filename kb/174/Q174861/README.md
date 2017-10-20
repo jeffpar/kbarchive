@@ -6,6 +6,8 @@ permalink: /kb/174/Q174861/
 
 ## Q174861: XWEB: HTTP Protocol Still Functions After Disabling in Exchange
 
+{% raw %}
+
 	Article: Q174861
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -44,3 +46,5 @@ permalink: /kb/174/Q174861/
 	
 	=============================================================================
 	
+
+{% endraw %}

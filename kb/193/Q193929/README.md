@@ -6,6 +6,8 @@ permalink: /kb/193/Q193929/
 
 ## Q193929: XFOR: How to Upload LDE SQL Database to Microsoft
 
+{% raw %}
+
 	Article: Q193929
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2
@@ -70,3 +72,5 @@ permalink: /kb/193/Q193929/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172248/
 
 ## Q172248: FIX: Change Event Not Fired When Selecting an Item in DBCombo
 
+{% raw %}
+
 	Article: Q172248
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:
@@ -67,3 +69,5 @@ permalink: /kb/172/Q172248/
 	
 	=============================================================================
 	
+
+{% endraw %}

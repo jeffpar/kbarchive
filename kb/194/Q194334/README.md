@@ -6,6 +6,8 @@ permalink: /kb/194/Q194334/
 
 ## Q194334: SP4 Installation Does Not Delete Reference to Previous Hotfixes
 
+{% raw %}
+
 	Article: Q194334
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/194/Q194334/
 	
 	=============================================================================
 	
+
+{% endraw %}

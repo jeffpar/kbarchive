@@ -6,6 +6,8 @@ permalink: /kb/103/Q103323/
 
 ## Q103323: PATCH: Setupwiz.exe Updated VFP for Windows 3.0b Setup Wizard
 
+{% raw %}
+
 	Article: Q103323
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b
@@ -89,3 +91,5 @@ permalink: /kb/103/Q103323/
 	
 	=============================================================================
 	
+
+{% endraw %}

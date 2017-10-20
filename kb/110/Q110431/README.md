@@ -6,6 +6,8 @@ permalink: /kb/110/Q110431/
 
 ## Q110431: SFM: File Time and Date Stamp Change on Copy
 
+{% raw %}
+
 	Article: Q110431
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -47,3 +49,5 @@ permalink: /kb/110/Q110431/
 	
 	=============================================================================
 	
+
+{% endraw %}

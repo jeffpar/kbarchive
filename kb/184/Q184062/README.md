@@ -6,6 +6,8 @@ permalink: /kb/184/Q184062/
 
 ## Q184062: XCLN: Outlook Leaks Memory Using Visual Basic to Post to Folder
 
+{% raw %}
+
 	Article: Q184062
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/184/Q184062/
 	
 	=============================================================================
 	
+
+{% endraw %}

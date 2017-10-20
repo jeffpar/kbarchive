@@ -6,6 +6,8 @@ permalink: /kb/242/Q242478/
 
 ## Q242478: PRB: DAO Recordset RecordCount Incorrect When Based on Text File
 
+{% raw %}
+
 	Article: Q242478
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -119,3 +121,5 @@ permalink: /kb/242/Q242478/
 	
 	=============================================================================
 	
+
+{% endraw %}

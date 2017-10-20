@@ -6,6 +6,8 @@ permalink: /kb/134/Q134405/
 
 ## Q134405: PRB: WaveOutOpen()/WaveInOpen() Returns MMSYSERR_INVALPARAM
 
+{% raw %}
+
 	Article: Q134405
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1; winnt:
@@ -70,3 +72,5 @@ permalink: /kb/134/Q134405/
 	
 	=============================================================================
 	
+
+{% endraw %}

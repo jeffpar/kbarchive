@@ -6,6 +6,8 @@ permalink: /kb/083/Q83408/
 
 ## Q83408: Windows 3.0a Printer Drivers: File Sizes &amp; Supported Printers
 
+{% raw %}
+
 	Article: Q83408
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0a
@@ -568,3 +570,5 @@ permalink: /kb/083/Q83408/
 	
 	=============================================================================
 	
+
+{% endraw %}

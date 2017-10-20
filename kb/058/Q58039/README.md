@@ -6,6 +6,8 @@ permalink: /kb/058/Q58039/
 
 ## Q58039: &quot;Internal Error&quot; Using Two-Dimensional Single-Precision Array
 
+{% raw %}
+
 	Article: Q58039
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -34,3 +36,5 @@ permalink: /kb/058/Q58039/
 	option, or change the arrays to integer arrays or double-precision
 	arrays. To cause the error, the array must be single precision,
 	two-dimensional, and referenced with integer variables as shown.
+
+{% endraw %}

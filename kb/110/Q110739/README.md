@@ -6,6 +6,8 @@ permalink: /kb/110/Q110739/
 
 ## Q110739: How to Re-Create the Network Group and Its Program Icons
 
+{% raw %}
+
 	Article: Q110739
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -72,3 +74,5 @@ permalink: /kb/110/Q110739/
 	
 	=============================================================================
 	
+
+{% endraw %}

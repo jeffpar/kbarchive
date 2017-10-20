@@ -6,6 +6,8 @@ permalink: /kb/172/Q172266/
 
 ## Q172266: Microsoft FrontPage 97 Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q172266
 	Product(s): Microsoft Press
 	Version(s): 
@@ -154,3 +156,5 @@ permalink: /kb/172/Q172266/
 	
 	=============================================================================
 	
+
+{% endraw %}

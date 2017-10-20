@@ -6,6 +6,8 @@ permalink: /kb/034/Q34843/
 
 ## Q34843: INFO: The Four Classes of Device Banding
 
+{% raw %}
+
 	Article: Q34843
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -111,3 +113,5 @@ permalink: /kb/034/Q34843/
 	
 	=============================================================================
 	
+
+{% endraw %}

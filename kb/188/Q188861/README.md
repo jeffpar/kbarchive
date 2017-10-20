@@ -6,6 +6,8 @@ permalink: /kb/188/Q188861/
 
 ## Q188861: HOWTO: Use the Remote Data Control to Pass Bookmarks
 
+{% raw %}
+
 	Article: Q188861
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -83,3 +85,5 @@ permalink: /kb/188/Q188861/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/266/Q266792/
 
 ## Q266792: XCON: Post-SP3 MTA May Stop After Reporting Event ID 4283
 
+{% raw %}
+
 	Article: Q266792
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -79,3 +81,5 @@ permalink: /kb/266/Q266792/
 	
 	=============================================================================
 	
+
+{% endraw %}

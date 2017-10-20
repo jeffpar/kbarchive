@@ -6,6 +6,8 @@ permalink: /kb/145/Q145767/
 
 ## Q145767: Problems Accessing Shared CD-ROM
 
+{% raw %}
+
 	Article: Q145767
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -82,3 +84,5 @@ permalink: /kb/145/Q145767/
 	
 	=============================================================================
 	
+
+{% endraw %}

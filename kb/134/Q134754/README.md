@@ -6,6 +6,8 @@ permalink: /kb/134/Q134754/
 
 ## Q134754: PC Gen: README.TXT: Mail 3.5 Supplementary Modem Scripts
 
+{% raw %}
+
 	Article: Q134754
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -137,3 +139,5 @@ permalink: /kb/134/Q134754/
 	
 	=============================================================================
 	
+
+{% endraw %}

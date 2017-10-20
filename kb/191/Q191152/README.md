@@ -6,6 +6,8 @@ permalink: /kb/191/Q191152/
 
 ## Q191152: You Receive Error Messages When You Click Dial Properties
 
+{% raw %}
+
 	Article: Q191152
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -100,3 +102,5 @@ permalink: /kb/191/Q191152/
 	
 	=============================================================================
 	
+
+{% endraw %}

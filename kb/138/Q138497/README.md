@@ -6,6 +6,8 @@ permalink: /kb/138/Q138497/
 
 ## Q138497: How to Create a Startup Screen in Visual FoxPro
 
+{% raw %}
+
 	Article: Q138497
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 | 3.00b
@@ -91,3 +93,5 @@ permalink: /kb/138/Q138497/
 	
 	=============================================================================
 	
+
+{% endraw %}

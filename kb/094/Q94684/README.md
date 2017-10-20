@@ -6,6 +6,8 @@ permalink: /kb/094/Q94684/
 
 ## Q94684: Swap File Settings Change when Changing 32-Bit Disk Access
 
+{% raw %}
+
 	Article: Q94684
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/094/Q94684/
 	
 	=============================================================================
 	
+
+{% endraw %}

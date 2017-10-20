@@ -6,6 +6,8 @@ permalink: /kb/256/Q256226/
 
 ## Q256226: Allegiance: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q256226
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -82,3 +84,5 @@ permalink: /kb/256/Q256226/
 	
 	=============================================================================
 	
+
+{% endraw %}

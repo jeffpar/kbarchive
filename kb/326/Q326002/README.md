@@ -6,6 +6,8 @@ permalink: /kb/326/Q326002/
 
 ## Q326002: Zoo Tycoon: Game Starts with Very Few Animals and Buildings
 
+{% raw %}
+
 	Article: Q326002
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/326/Q326002/
 	
 	=============================================================================
 	
+
+{% endraw %}

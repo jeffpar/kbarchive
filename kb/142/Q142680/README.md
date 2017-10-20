@@ -6,6 +6,8 @@ permalink: /kb/142/Q142680/
 
 ## Q142680: Modification to Support Direct Host IPX Acceleration Drivers
 
+{% raw %}
+
 	Article: Q142680
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -60,3 +62,5 @@ permalink: /kb/142/Q142680/
 	
 	=============================================================================
 	
+
+{% endraw %}

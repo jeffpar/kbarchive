@@ -6,6 +6,8 @@ permalink: /kb/145/Q145717/
 
 ## Q145717: DocErr: Resource Kit Procedure to Start The LPDSVC Service
 
+{% raw %}
+
 	Article: Q145717
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -51,3 +53,5 @@ permalink: /kb/145/Q145717/
 	
 	=============================================================================
 	
+
+{% endraw %}

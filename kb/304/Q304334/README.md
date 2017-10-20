@@ -6,6 +6,8 @@ permalink: /kb/304/Q304334/
 
 ## Q304334: PRB: Users w/ Proper Permissions Cannot GET Files on FTP Server
 
+{% raw %}
+
 	Article: Q304334
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -95,3 +97,5 @@ permalink: /kb/304/Q304334/
 	
 	=============================================================================
 	
+
+{% endraw %}

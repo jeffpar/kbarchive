@@ -6,6 +6,8 @@ permalink: /kb/155/Q155779/
 
 ## Q155779: WD97: Copies Not Reset to One After Selecting Different Printer
 
+{% raw %}
+
 	Article: Q155779
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/155/Q155779/
 	
 	=============================================================================
 	
+
+{% endraw %}

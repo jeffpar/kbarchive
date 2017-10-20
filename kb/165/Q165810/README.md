@@ -6,6 +6,8 @@ permalink: /kb/165/Q165810/
 
 ## Q165810: WD97: ? E-mail Address Using Web Wizard Submit Button
 
+{% raw %}
+
 	Article: Q165810
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/165/Q165810/
 	
 	=============================================================================
 	
+
+{% endraw %}

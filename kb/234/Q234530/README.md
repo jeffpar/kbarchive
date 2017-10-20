@@ -6,6 +6,8 @@ permalink: /kb/234/Q234530/
 
 ## Q234530: Unable to Change the Specified Driver for a Network Printer
 
+{% raw %}
+
 	Article: Q234530
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/234/Q234530/
 	
 	=============================================================================
 	
+
+{% endraw %}

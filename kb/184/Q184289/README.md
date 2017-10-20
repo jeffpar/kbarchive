@@ -6,6 +6,8 @@ permalink: /kb/184/Q184289/
 
 ## Q184289: XCLN: Error Message when Opening PF Without Proper Permissions
 
+{% raw %}
+
 	Article: Q184289
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -61,3 +63,5 @@ permalink: /kb/184/Q184289/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151893/
 
 ## Q151893: DOC: CCriticalSection::Lock Doesn't Do a Timed Wait
 
+{% raw %}
+
 	Article: Q151893
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1
@@ -66,3 +68,5 @@ permalink: /kb/151/Q151893/
 	
 	=============================================================================
 	
+
+{% endraw %}

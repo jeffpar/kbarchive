@@ -6,6 +6,8 @@ permalink: /kb/073/Q73203/
 
 ## Q73203: BUG: Problems Passing Arguments to ENTRY Statement
 
+{% raw %}
+
 	Article: Q73203
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.1,5.0,5.1
@@ -100,3 +102,5 @@ permalink: /kb/073/Q73203/
 	
 	=============================================================================
 	
+
+{% endraw %}

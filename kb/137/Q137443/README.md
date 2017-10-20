@@ -6,6 +6,8 @@ permalink: /kb/137/Q137443/
 
 ## Q137443: Size and Nesting Level Limitations of Classes
 
+{% raw %}
+
 	Article: Q137443
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/137/Q137443/
 	
 	=============================================================================
 	
+
+{% endraw %}

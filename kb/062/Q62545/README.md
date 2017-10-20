@@ -6,6 +6,8 @@ permalink: /kb/062/Q62545/
 
 ## Q62545: Information on RAMDRIVE.SYS and Error Messages
 
+{% raw %}
+
 	Article: Q62545
 	Product(s): See article
 	Version(s): 6.00
@@ -174,3 +176,5 @@ permalink: /kb/062/Q62545/
 	              sector, how many sectors there are in an allocation
 	              unit, and how many root directory entries there are
 	              (including the volume label).
+
+{% endraw %}

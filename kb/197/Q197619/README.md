@@ -6,6 +6,8 @@ permalink: /kb/197/Q197619/
 
 ## Q197619: Runtime Error '800a0046' Using the Send Method of CDONTS.NewMail
 
+{% raw %}
+
 	Article: Q197619
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -84,3 +86,5 @@ permalink: /kb/197/Q197619/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/197/Q197883/
 
 ## Q197883: PRB: Run-time Error '40002' When Querying on s_GUID field in RDO
 
+{% raw %}
+
 	Article: Q197883
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -31,7 +33,7 @@ permalink: /kb/197/Q197883/
 	on the s_GUID field using the following syntax:
 	
 	     Set rdoRes = rdoConn.OpenResultset("select * from Nwind where
-	     s_guid={guid{9B83B027-E038-11D1-847E-00C04FB1784E} }", _
+	     s_guid={guid{9B83B027-E038-11D1-847E-00C04FB1784E}}", _
 	     rdOpenKeyset, rdConcurLock, rdAsyncEnable)
 	
 	The following error occurs:
@@ -88,7 +90,7 @@ permalink: /kb/197/Q197883/
 	
 	        'Change this so that it points to a valid GUID in your replicated
 	        'database.
-	        strguid = "{guid {9B83B027-E038-11D1-847E-00C04FB1784E} }"
+	        strguid = "{guid {9B83B027-E038-11D1-847E-00C04FB1784E}}"
 	
 	        'Comment this line and you will see the previously noted error.
 	        SQLSetConnectOption rdoConn.hdbc, SQL_NOSCAN, SQL_NOSCAN_ON
@@ -136,3 +138,5 @@ permalink: /kb/197/Q197883/
 	
 	=============================================================================
 	
+
+{% endraw %}

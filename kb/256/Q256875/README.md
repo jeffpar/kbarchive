@@ -6,6 +6,8 @@ permalink: /kb/256/Q256875/
 
 ## Q256875: XADM: &quot;Show Names from the&quot; List Defaults to Global Address List
 
+{% raw %}
+
 	Article: Q256875
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -46,3 +48,5 @@ permalink: /kb/256/Q256875/
 	
 	=============================================================================
 	
+
+{% endraw %}

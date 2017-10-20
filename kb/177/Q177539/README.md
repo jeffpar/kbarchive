@@ -6,6 +6,8 @@ permalink: /kb/177/Q177539/
 
 ## Q177539: Windows 95 Stops Responding Because of Land Attack
 
+{% raw %}
+
 	Article: Q177539
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -154,3 +156,5 @@ permalink: /kb/177/Q177539/
 	
 	=============================================================================
 	
+
+{% endraw %}

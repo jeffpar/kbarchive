@@ -6,6 +6,8 @@ permalink: /kb/193/Q193772/
 
 ## Q193772: HOWTO: Use the _ShellExecute Foundation Class
 
+{% raw %}
+
 	Article: Q193772
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -108,3 +110,5 @@ permalink: /kb/193/Q193772/
 	
 	=============================================================================
 	
+
+{% endraw %}

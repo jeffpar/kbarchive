@@ -6,6 +6,8 @@ permalink: /kb/192/Q192082/
 
 ## Q192082: BUG: Removing DataEnvironment in Form Load Causes Fatal Error
 
+{% raw %}
+
 	Article: Q192082
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -66,3 +68,5 @@ permalink: /kb/192/Q192082/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/252/Q252417/
 
 ## Q252417: ISM Property Pages Fail to Appear and the MMC Cannot Be Closed
 
+{% raw %}
+
 	Article: Q252417
 	Product(s): Internet Information Server
 	Version(s): 1.1,1.2,4.0
@@ -95,3 +97,5 @@ permalink: /kb/252/Q252417/
 	
 	=============================================================================
 	
+
+{% endraw %}

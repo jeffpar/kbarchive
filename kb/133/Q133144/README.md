@@ -6,6 +6,8 @@ permalink: /kb/133/Q133144/
 
 ## Q133144: How to Export Folders in Microsoft Exchange
 
+{% raw %}
+
 	Article: Q133144
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/133/Q133144/
 	
 	=============================================================================
 	
+
+{% endraw %}

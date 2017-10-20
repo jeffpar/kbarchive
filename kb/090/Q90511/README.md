@@ -6,6 +6,8 @@ permalink: /kb/090/Q90511/
 
 ## Q90511: What Is a Clean Boot for Windows for Workgroups?
 
+{% raw %}
+
 	Article: Q90511
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -196,3 +198,5 @@ permalink: /kb/090/Q90511/
 	
 	=============================================================================
 	
+
+{% endraw %}

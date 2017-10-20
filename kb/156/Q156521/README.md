@@ -6,6 +6,8 @@ permalink: /kb/156/Q156521/
 
 ## Q156521: PC NTMMTA: Error Message: Setup Has Encountered a Problem
 
+{% raw %}
+
 	Article: Q156521
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): winnt:4.0; :3.5
@@ -76,3 +78,5 @@ permalink: /kb/156/Q156521/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175051/
 
 ## Q175051: Windows 95 Roaming Profiles Do Not Work
 
+{% raw %}
+
 	Article: Q175051
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0,4.0
@@ -80,3 +82,5 @@ permalink: /kb/175/Q175051/
 	
 	=============================================================================
 	
+
+{% endraw %}

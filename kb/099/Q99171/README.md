@@ -6,6 +6,8 @@ permalink: /kb/099/Q99171/
 
 ## Q99171: PROFS: 3.0 Gateway Utility Disk &#91;3.5, 1.44 MB&#93;
 
+{% raw %}
+
 	Article: Q99171
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -80,3 +82,5 @@ permalink: /kb/099/Q99171/
 	
 	=============================================================================
 	
+
+{% endraw %}

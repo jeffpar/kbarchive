@@ -6,6 +6,8 @@ permalink: /kb/133/Q133186/
 
 ## Q133186: Removing MS Plus! Does Not Restore Existing Internet Access
 
+{% raw %}
+
 	Article: Q133186
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -54,3 +56,5 @@ permalink: /kb/133/Q133186/
 	
 	=============================================================================
 	
+
+{% endraw %}

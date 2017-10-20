@@ -6,6 +6,8 @@ permalink: /kb/198/Q198760/
 
 ## Q198760: SMS: RC Causes Win95 Client in Suspend Mode to Stop Responding
 
+{% raw %}
+
 	Article: Q198760
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -48,3 +50,5 @@ permalink: /kb/198/Q198760/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168572/
 
 ## Q168572: XADM: Can't Install Active Server Pages on Windows NT 3.51
 
+{% raw %}
+
 	Article: Q168572
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -56,3 +58,5 @@ permalink: /kb/168/Q168572/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179398/
 
 ## Q179398: HOWTO: Subclass a UserControl
 
+{% raw %}
+
 	Article: Q179398
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -330,3 +332,5 @@ permalink: /kb/179/Q179398/
 	
 	=============================================================================
 	
+
+{% endraw %}

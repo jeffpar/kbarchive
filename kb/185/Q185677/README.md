@@ -6,6 +6,8 @@ permalink: /kb/185/Q185677/
 
 ## Q185677: FIX: ATL Service with Space in Name Is Not Registered Correctly
 
+{% raw %}
+
 	Article: Q185677
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0,2.1
@@ -77,3 +79,5 @@ permalink: /kb/185/Q185677/
 	
 	=============================================================================
 	
+
+{% endraw %}

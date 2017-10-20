@@ -6,6 +6,8 @@ permalink: /kb/122/Q122584/
 
 ## Q122584: Intel TokenExpress Driver Settings
 
+{% raw %}
+
 	Article: Q122584
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/122/Q122584/
 	
 	=============================================================================
 	
+
+{% endraw %}

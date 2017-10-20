@@ -6,6 +6,8 @@ permalink: /kb/146/Q146408/
 
 ## Q146408: Chat Prompts for Password Dialing Windows NT-Based Computer
 
+{% raw %}
+
 	Article: Q146408
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11,95
@@ -57,3 +59,5 @@ permalink: /kb/146/Q146408/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/302/Q302481/
 
 ## Q302481: FIX: Persistent Storage Manager Disallows Access to Snapshots
 
+{% raw %}
+
 	Article: Q302481
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -60,3 +62,5 @@ permalink: /kb/302/Q302481/
 	
 	=============================================================================
 	
+
+{% endraw %}

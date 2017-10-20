@@ -6,6 +6,8 @@ permalink: /kb/296/Q296377/
 
 ## Q296377: SMS: Access Violation Errors During SQL Server Upgrade
 
+{% raw %}
+
 	Article: Q296377
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -72,3 +74,5 @@ permalink: /kb/296/Q296377/
 	
 	=============================================================================
 	
+
+{% endraw %}

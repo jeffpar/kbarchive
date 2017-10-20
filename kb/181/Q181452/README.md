@@ -6,6 +6,8 @@ permalink: /kb/181/Q181452/
 
 ## Q181452: XADM: How to Make Exchange Extensions Available in User Manager
 
+{% raw %}
+
 	Article: Q181452
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -48,3 +50,5 @@ permalink: /kb/181/Q181452/
 	
 	=============================================================================
 	
+
+{% endraw %}

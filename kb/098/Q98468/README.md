@@ -6,6 +6,8 @@ permalink: /kb/098/Q98468/
 
 ## Q98468: OS/2 2.0 Doesn't Recognize DoubleSpace Volumes
 
+{% raw %}
+
 	Article: Q98468
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -51,3 +53,5 @@ permalink: /kb/098/Q98468/
 	
 	=============================================================================
 	
+
+{% endraw %}

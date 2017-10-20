@@ -6,6 +6,8 @@ permalink: /kb/238/Q238401/
 
 ## Q238401: PRB: Unrecognized Database Format Error Upgrading to Access 2000
 
+{% raw %}
+
 	Article: Q238401
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.5,2.6,5.0,6.0
@@ -126,3 +128,5 @@ permalink: /kb/238/Q238401/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192523/
 
 ## Q192523: Print Screen Functionality Not Available on Terminalsrv Client
 
+{% raw %}
+
 	Article: Q192523
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -79,3 +81,5 @@ permalink: /kb/192/Q192523/
 	
 	=============================================================================
 	
+
+{% endraw %}

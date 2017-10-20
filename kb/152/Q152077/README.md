@@ -6,6 +6,8 @@ permalink: /kb/152/Q152077/
 
 ## Q152077: SMS: Network Drive No Longer Exists
 
+{% raw %}
+
 	Article: Q152077
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -83,3 +85,5 @@ permalink: /kb/152/Q152077/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153472/
 
 ## Q153472: Japanese MSN: Incorrect Access Numbers May Be Displayed
 
+{% raw %}
+
 	Article: Q153472
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/153/Q153472/
 	
 	=============================================================================
 	
+
+{% endraw %}

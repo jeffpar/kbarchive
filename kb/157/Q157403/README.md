@@ -6,6 +6,8 @@ permalink: /kb/157/Q157403/
 
 ## Q157403: WD97: Unexpected Results with &quot;Next Text Box&quot; in Headers/Footers
 
+{% raw %}
+
 	Article: Q157403
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/157/Q157403/
 	
 	=============================================================================
 	
+
+{% endraw %}

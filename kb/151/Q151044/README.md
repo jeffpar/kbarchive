@@ -6,6 +6,8 @@ permalink: /kb/151/Q151044/
 
 ## Q151044: FP: Error HTTP 404 if Page URL Contains a Space
 
+{% raw %}
+
 	Article: Q151044
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97
@@ -64,3 +66,5 @@ permalink: /kb/151/Q151044/
 	
 	=============================================================================
 	
+
+{% endraw %}

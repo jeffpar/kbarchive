@@ -6,6 +6,8 @@ permalink: /kb/086/Q86398/
 
 ## Q86398: PC OS2: Double-Click on Control Box Doesn't Close Window
 
+{% raw %}
+
 	Article: Q86398
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -44,3 +46,5 @@ permalink: /kb/086/Q86398/
 	
 	=============================================================================
 	
+
+{% endraw %}

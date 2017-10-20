@@ -6,6 +6,8 @@ permalink: /kb/172/Q172816/
 
 ## Q172816: TN3270 SSCP-LU Sessions Send x'40' Instead of Null RU
 
+{% raw %}
+
 	Article: Q172816
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -90,3 +92,5 @@ permalink: /kb/172/Q172816/
 	
 	=============================================================================
 	
+
+{% endraw %}

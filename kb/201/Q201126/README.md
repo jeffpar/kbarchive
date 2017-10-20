@@ -6,6 +6,8 @@ permalink: /kb/201/Q201126/
 
 ## Q201126: SMS: Troubleshooting Connectivity to the SMS Site Database
 
+{% raw %}
+
 	Article: Q201126
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -249,3 +251,5 @@ permalink: /kb/201/Q201126/
 	
 	=============================================================================
 	
+
+{% endraw %}

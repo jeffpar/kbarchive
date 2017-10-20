@@ -6,6 +6,8 @@ permalink: /kb/132/Q132650/
 
 ## Q132650: Cannot Remove Deeply Rooted Folder
 
+{% raw %}
+
 	Article: Q132650
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 98
@@ -67,3 +69,5 @@ permalink: /kb/132/Q132650/
 	
 	=============================================================================
 	
+
+{% endraw %}

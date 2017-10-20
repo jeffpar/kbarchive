@@ -6,6 +6,8 @@ permalink: /kb/161/Q161730/
 
 ## Q161730: BUG: Cannot Set the Selected Item for a List box in Form Init
 
+{% raw %}
+
 	Article: Q161730
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -76,3 +78,5 @@ permalink: /kb/161/Q161730/
 	
 	=============================================================================
 	
+
+{% endraw %}

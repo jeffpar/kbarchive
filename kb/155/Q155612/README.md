@@ -6,6 +6,8 @@ permalink: /kb/155/Q155612/
 
 ## Q155612: Windows NT Detects Only 16 MB RAM on ERGO Notebook
 
+{% raw %}
+
 	Article: Q155612
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/155/Q155612/
 	
 	=============================================================================
 	
+
+{% endraw %}

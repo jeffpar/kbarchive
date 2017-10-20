@@ -6,6 +6,8 @@ permalink: /kb/170/Q170823/
 
 ## Q170823: PRB: CDBException Thrown Opening Recordset on Stored Procedure
 
+{% raw %}
+
 	Article: Q170823
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0 2.1 2.2 4.0 4.0a 4.1 4.2 4.2
@@ -109,3 +111,5 @@ permalink: /kb/170/Q170823/
 	
 	=============================================================================
 	
+
+{% endraw %}

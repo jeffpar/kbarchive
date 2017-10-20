@@ -6,6 +6,8 @@ permalink: /kb/039/Q39362/
 
 ## Q39362: QuickBASIC Compile Errors Not Given in M.EXE Editor; No BC /Z
 
+{% raw %}
+
 	Article: Q39362
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.10 3.00 4.00 4.00b 4.50
@@ -42,3 +44,5 @@ permalink: /kb/039/Q39362/
 	source code in the M.EXE Editor causes BC.EXE to be invoked. If BC.EXE
 	finds errors, they are returned correctly to the M.EXE Editor and the
 	cursor is placed on the first error.
+
+{% endraw %}

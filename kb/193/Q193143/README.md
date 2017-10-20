@@ -6,6 +6,8 @@ permalink: /kb/193/Q193143/
 
 ## Q193143: BUG: DCOM Client Hangs and Then Gives Error 429
 
+{% raw %}
+
 	Article: Q193143
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -150,3 +152,5 @@ permalink: /kb/193/Q193143/
 	
 	=============================================================================
 	
+
+{% endraw %}

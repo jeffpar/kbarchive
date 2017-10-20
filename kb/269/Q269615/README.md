@@ -6,6 +6,8 @@ permalink: /kb/269/Q269615/
 
 ## Q269615: SMS: Mixed Languages in SMS 2.0 Sites That Share a Domain
 
+{% raw %}
+
 	Article: Q269615
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -75,3 +77,5 @@ permalink: /kb/269/Q269615/
 	
 	=============================================================================
 	
+
+{% endraw %}

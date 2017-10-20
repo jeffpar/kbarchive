@@ -6,6 +6,8 @@ permalink: /kb/130/Q130741/
 
 ## Q130741: Services for Macintosh and AppleTalk Do Not Detect 3COM 3C595
 
+{% raw %}
+
 	Article: Q130741
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -71,3 +73,5 @@ permalink: /kb/130/Q130741/
 	
 	=============================================================================
 	
+
+{% endraw %}

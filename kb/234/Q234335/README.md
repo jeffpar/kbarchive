@@ -6,6 +6,8 @@ permalink: /kb/234/Q234335/
 
 ## Q234335: SMS: Mouse Does Not Work During Remote Control Session
 
+{% raw %}
+
 	Article: Q234335
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -57,3 +59,5 @@ permalink: /kb/234/Q234335/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263198/
 
 ## Q263198: SMS: Err Msg: You Have Referenced the Variable DEST 9. This...
 
+{% raw %}
+
 	Article: Q263198
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/263/Q263198/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/278/Q278624/
 
 ## Q278624: How to determine if the MSN Companion unit is connected
 
+{% raw %}
+
 	Article: Q278624
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -40,3 +42,5 @@ permalink: /kb/278/Q278624/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97342/
 
 ## Q97342: Utilizing High Color Resolution Devices
 
+{% raw %}
+
 	Article: Q97342
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -54,3 +56,5 @@ permalink: /kb/097/Q97342/
 	
 	=============================================================================
 	
+
+{% endraw %}

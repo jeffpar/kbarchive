@@ -6,6 +6,8 @@ permalink: /kb/151/Q151005/
 
 ## Q151005: MAC Volume Incorrectly Removed Before Last Client Session
 
+{% raw %}
+
 	Article: Q151005
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -57,3 +59,5 @@ permalink: /kb/151/Q151005/
 	
 	=============================================================================
 	
+
+{% endraw %}

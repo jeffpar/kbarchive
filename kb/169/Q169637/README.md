@@ -6,6 +6,8 @@ permalink: /kb/169/Q169637/
 
 ## Q169637: XCON: Demand-dial Connectors using Routing and RAS
 
+{% raw %}
+
 	Article: Q169637
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -97,3 +99,5 @@ permalink: /kb/169/Q169637/
 	
 	=============================================================================
 	
+
+{% endraw %}

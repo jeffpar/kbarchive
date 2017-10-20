@@ -6,6 +6,8 @@ permalink: /kb/065/Q65360/
 
 ## Q65360: Cannot Enable A20! with Orchid 386s
 
+{% raw %}
+
 	Article: Q65360
 	Product(s): See article
 	Version(s): 3.00
@@ -23,3 +25,5 @@ permalink: /kb/065/Q65360/
 	problem should call Orchid Technology at (415) 683-0300 for an update
 	of their PAL chip. Please have the revision of the motherboard on hand
 	when calling.
+
+{% endraw %}

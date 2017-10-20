@@ -6,6 +6,8 @@ permalink: /kb/245/Q245523/
 
 ## Q245523: SMS: Backlog of .ct2 Files on Central Site in Large Hierarchy
 
+{% raw %}
+
 	Article: Q245523
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -94,3 +96,5 @@ permalink: /kb/245/Q245523/
 	
 	=============================================================================
 	
+
+{% endraw %}

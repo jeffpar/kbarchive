@@ -6,6 +6,8 @@ permalink: /kb/040/Q40774/
 
 ## Q40774: How to Pass a Far Pointer from Parent to Spawned Child in C
 
+{% raw %}
+
 	Article: Q40774
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -114,3 +116,5 @@ permalink: /kb/040/Q40774/
 	    exit(0);
 	}
 	/* end of child process */
+
+{% endraw %}

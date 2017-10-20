@@ -6,6 +6,8 @@ permalink: /kb/121/Q121419/
 
 ## Q121419: ALT+&lt;Hot Key&gt; Will Not Choose Push Button on Macintosh
 
+{% raw %}
+
 	Article: Q121419
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,2.6a
@@ -59,3 +61,5 @@ permalink: /kb/121/Q121419/
 	
 	=============================================================================
 	
+
+{% endraw %}

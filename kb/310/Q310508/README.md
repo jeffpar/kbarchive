@@ -6,6 +6,8 @@ permalink: /kb/310/Q310508/
 
 ## Q310508: SMS: Client May Not Accelerate After Uninstalling Remote Control
 
+{% raw %}
+
 	Article: Q310508
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -112,3 +114,5 @@ permalink: /kb/310/Q310508/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153178/
 
 ## Q153178: Cannot Locate The Microsoft Network Data Center
 
+{% raw %}
+
 	Article: Q153178
 	Product(s): The Microsoft Network
 	Version(s): 2.6,5.0,5.1,5.2
@@ -92,3 +94,5 @@ permalink: /kb/153/Q153178/
 	
 	=============================================================================
 	
+
+{% endraw %}

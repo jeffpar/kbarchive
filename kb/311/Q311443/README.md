@@ -6,6 +6,8 @@ permalink: /kb/311/Q311443/
 
 ## Q311443: XADM: Using Findbin.exe to Find Viruses in the MTA
 
+{% raw %}
+
 	Article: Q311443
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -101,3 +103,5 @@ permalink: /kb/311/Q311443/
 	
 	=============================================================================
 	
+
+{% endraw %}

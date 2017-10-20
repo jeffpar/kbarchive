@@ -6,6 +6,8 @@ permalink: /kb/143/Q143019/
 
 ## Q143019: PPT7: Contents of PowerPoint Viewer (32-Bit) Disks
 
+{% raw %}
+
 	Article: Q143019
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 7.0
@@ -78,3 +80,5 @@ permalink: /kb/143/Q143019/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156813/
 
 ## Q156813: HOWTO: Controlling Which Accessories Are Installed in Unattended
 
+{% raw %}
+
 	Article: Q156813
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -112,3 +114,5 @@ permalink: /kb/156/Q156813/
 	
 	=============================================================================
 	
+
+{% endraw %}

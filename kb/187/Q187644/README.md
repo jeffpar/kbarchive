@@ -6,6 +6,8 @@ permalink: /kb/187/Q187644/
 
 ## Q187644: PRB: ATL Controls Fail to Recognize Default Button on VB Form
 
+{% raw %}
+
 	Article: Q187644
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0,5.0,6.0
@@ -140,3 +142,5 @@ permalink: /kb/187/Q187644/
 	
 	=============================================================================
 	
+
+{% endraw %}

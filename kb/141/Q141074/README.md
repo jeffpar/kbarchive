@@ -6,6 +6,8 @@ permalink: /kb/141/Q141074/
 
 ## Q141074: PRB: ErrMsg: &quot;DBC... Previously Opened Non-Exclusively&quot;
 
+{% raw %}
+
 	Article: Q141074
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/141/Q141074/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136691/
 
 ## Q136691: GenMenu Differences Between FoxPro 2.x and Visual FoxPro
 
+{% raw %}
+
 	Article: Q136691
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/136/Q136691/
 	
 	=============================================================================
 	
+
+{% endraw %}

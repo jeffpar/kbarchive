@@ -6,6 +6,8 @@ permalink: /kb/123/Q123655/
 
 ## Q123655: PRB: Printing with QuickDraw GX Doesn't Work
 
+{% raw %}
+
 	Article: Q123655
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -62,3 +64,5 @@ permalink: /kb/123/Q123655/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99081/
 
 ## Q99081: DoubleSpace Err Msg: To Set Up DoubleSpace, You Must Start...
 
+{% raw %}
+
 	Article: Q99081
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -67,3 +69,5 @@ permalink: /kb/099/Q99081/
 	
 	=============================================================================
 	
+
+{% endraw %}

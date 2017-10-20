@@ -6,6 +6,8 @@ permalink: /kb/235/Q235958/
 
 ## Q235958: Print Service May Cause Incomplete Printout with LU Type 3
 
+{% raw %}
+
 	Article: Q235958
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2
@@ -90,3 +92,5 @@ permalink: /kb/235/Q235958/
 	
 	=============================================================================
 	
+
+{% endraw %}

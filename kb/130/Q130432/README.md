@@ -6,6 +6,8 @@ permalink: /kb/130/Q130432/
 
 ## Q130432: Daylight Saving Time Not Displayed Before April 6, 1987
 
+{% raw %}
+
 	Article: Q130432
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -48,3 +50,5 @@ permalink: /kb/130/Q130432/
 	
 	=============================================================================
 	
+
+{% endraw %}

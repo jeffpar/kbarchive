@@ -6,6 +6,8 @@ permalink: /kb/098/Q98462/
 
 ## Q98462: Switch Codes for &#91;TCPIP_XIF&#93; Section of PROTOCOL.INI
 
+{% raw %}
+
 	Article: Q98462
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/098/Q98462/
 	
 	=============================================================================
 	
+
+{% endraw %}

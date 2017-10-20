@@ -6,6 +6,8 @@ permalink: /kb/156/Q156806/
 
 ## Q156806: XCLN: Err Msg: Your Administrator Must Install MAPI...
 
+{% raw %}
+
 	Article: Q156806
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -63,3 +65,5 @@ permalink: /kb/156/Q156806/
 	
 	=============================================================================
 	
+
+{% endraw %}

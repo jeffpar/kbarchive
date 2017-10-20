@@ -6,6 +6,8 @@ permalink: /kb/132/Q132732/
 
 ## Q132732: General Windows 95 Setup Questions and Answers
 
+{% raw %}
+
 	Article: Q132732
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -166,3 +168,5 @@ permalink: /kb/132/Q132732/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192658/
 
 ## Q192658: SMS: Remote Cntrl May Stop Responding When Opening Applications
 
+{% raw %}
+
 	Article: Q192658
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -54,3 +56,5 @@ permalink: /kb/192/Q192658/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152389/
 
 ## Q152389: FP: Microsoft Internet Information Server Not in Server Type Lis
 
+{% raw %}
+
 	Article: Q152389
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97
@@ -69,3 +71,5 @@ permalink: /kb/152/Q152389/
 	
 	=============================================================================
 	
+
+{% endraw %}

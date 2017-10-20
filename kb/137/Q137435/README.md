@@ -6,6 +6,8 @@ permalink: /kb/137/Q137435/
 
 ## Q137435: HOWTO: Drag and Drop from a Grid to a Text Box
 
+{% raw %}
+
 	Article: Q137435
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/137/Q137435/
 	
 	=============================================================================
 	
+
+{% endraw %}

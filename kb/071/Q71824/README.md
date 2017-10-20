@@ -6,6 +6,8 @@ permalink: /kb/071/Q71824/
 
 ## Q71824: MS-DOS 5 PACKING.LST (3.5-Inch Disk Set)
 
+{% raw %}
+
 	Article: Q71824
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0
@@ -253,3 +255,5 @@ permalink: /kb/071/Q71824/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/081/Q81528/
 
 ## Q81528: FltSim: Phantom Building in Oakland Int'l Airport
 
+{% raw %}
+
 	Article: Q81528
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/081/Q81528/
 	
 	=============================================================================
 	
+
+{% endraw %}

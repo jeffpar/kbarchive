@@ -6,6 +6,8 @@ permalink: /kb/100/Q100910/
 
 ## Q100910: File Manager Modified When No Optional Utilities Installed
 
+{% raw %}
+
 	Article: Q100910
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/100/Q100910/
 	
 	=============================================================================
 	
+
+{% endraw %}

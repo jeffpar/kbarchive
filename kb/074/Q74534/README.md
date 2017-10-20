@@ -6,6 +6,8 @@ permalink: /kb/074/Q74534/
 
 ## Q74534: Everex EFAX with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q74534
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -44,3 +46,5 @@ permalink: /kb/074/Q74534/
 	
 	=============================================================================
 	
+
+{% endraw %}

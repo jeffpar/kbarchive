@@ -6,6 +6,8 @@ permalink: /kb/185/Q185668/
 
 ## Q185668: IntelliMouse TrackBall Wheel Does Not Work with Service Pack 3
 
+{% raw %}
+
 	Article: Q185668
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/185/Q185668/
 	
 	=============================================================================
 	
+
+{% endraw %}

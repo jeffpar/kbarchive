@@ -6,6 +6,8 @@ permalink: /kb/160/Q160981/
 
 ## Q160981: XADM: How to Export a Mailbox's Attributes to a Text File
 
+{% raw %}
+
 	Article: Q160981
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/160/Q160981/
 	
 	=============================================================================
 	
+
+{% endraw %}

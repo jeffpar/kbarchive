@@ -6,6 +6,8 @@ permalink: /kb/066/Q66690/
 
 ## Q66690: ALERT Function in BASIC 7.10 UI Toolbox Destroys TEXT&#36;
 
+{% raw %}
+
 	Article: Q66690
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -72,3 +74,5 @@ permalink: /kb/066/Q66690/
 	   Invoke QBX.EXE using the new UITB.QLB Quick library, as follows:
 	
 	      QBX /L UITB
+
+{% endraw %}

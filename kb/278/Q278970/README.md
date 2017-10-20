@@ -6,6 +6,8 @@ permalink: /kb/278/Q278970/
 
 ## Q278970: AoE II Expansion: Some Units or Technologies Are Not Available
 
+{% raw %}
+
 	Article: Q278970
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/278/Q278970/
 	
 	=============================================================================
 	
+
+{% endraw %}

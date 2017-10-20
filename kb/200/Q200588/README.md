@@ -6,6 +6,8 @@ permalink: /kb/200/Q200588/
 
 ## Q200588: XCON: Multiple X.400 Connectors Between Two Exchange Computers
 
+{% raw %}
+
 	Article: Q200588
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -61,3 +63,5 @@ permalink: /kb/200/Q200588/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31528/
 
 ## Q31528: MASM 5.10 EXT.DOC: FileWrite - Writes Buffer Contents to Disk
 
+{% raw %}
+
 	Article: Q31528
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -33,3 +35,5 @@ permalink: /kb/031/Q31528/
 	flagType pascal FileWrite (savename, pFile)
 	char far *savename;
 	PFILE pFile;
+
+{% endraw %}

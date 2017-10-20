@@ -6,6 +6,8 @@ permalink: /kb/181/Q181944/
 
 ## Q181944: HOWTO: Use API Functions to Retrieve System Font Information
 
+{% raw %}
+
 	Article: Q181944
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -424,3 +426,5 @@ permalink: /kb/181/Q181944/
 	
 	=============================================================================
 	
+
+{% endraw %}

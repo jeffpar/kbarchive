@@ -6,6 +6,8 @@ permalink: /kb/167/Q167368/
 
 ## Q167368: WD97: &quot;Reset My Tips&quot; Doesn't Work as Expected
 
+{% raw %}
+
 	Article: Q167368
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -80,3 +82,5 @@ permalink: /kb/167/Q167368/
 	
 	=============================================================================
 	
+
+{% endraw %}

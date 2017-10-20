@@ -6,6 +6,8 @@ permalink: /kb/317/Q317133/
 
 ## Q317133: &quot;STOP 0x0000000A&quot; Error Message in Scsiport.sys
 
+{% raw %}
+
 	Article: Q317133
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -114,3 +116,5 @@ permalink: /kb/317/Q317133/
 	
 	=============================================================================
 	
+
+{% endraw %}

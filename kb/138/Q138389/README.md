@@ -6,6 +6,8 @@ permalink: /kb/138/Q138389/
 
 ## Q138389: SNA Win 3.x Client (WNAP.EXE) Hogs CPU, Affects Some Apps
 
+{% raw %}
+
 	Article: Q138389
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -74,3 +76,5 @@ permalink: /kb/138/Q138389/
 	
 	=============================================================================
 	
+
+{% endraw %}

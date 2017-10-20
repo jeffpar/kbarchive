@@ -6,6 +6,8 @@ permalink: /kb/136/Q136889/
 
 ## Q136889: Windows 95 Backup Asks for Password
 
+{% raw %}
+
 	Article: Q136889
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -59,3 +61,5 @@ permalink: /kb/136/Q136889/
 	
 	=============================================================================
 	
+
+{% endraw %}

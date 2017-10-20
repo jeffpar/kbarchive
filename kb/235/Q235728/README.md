@@ -6,6 +6,8 @@ permalink: /kb/235/Q235728/
 
 ## Q235728: SMSINST: Edit .ini Fails on Win95/98 if Compiled w/ 32-Bit Only
 
+{% raw %}
+
 	Article: Q235728
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0; winnt:2.0
@@ -56,3 +58,5 @@ permalink: /kb/235/Q235728/
 	
 	=============================================================================
 	
+
+{% endraw %}

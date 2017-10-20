@@ -6,6 +6,8 @@ permalink: /kb/231/Q231834/
 
 ## Q231834: PRB: ADO to SQL w/ ODBC Not Supporting adAsyncFetchNonBlocking
 
+{% raw %}
+
 	Article: Q231834
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1 SP2,2.5,2.6,2.7,5.0,6.0
@@ -176,3 +178,5 @@ permalink: /kb/231/Q231834/
 	
 	=============================================================================
 	
+
+{% endraw %}

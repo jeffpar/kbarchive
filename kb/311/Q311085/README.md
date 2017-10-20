@@ -6,6 +6,8 @@ permalink: /kb/311/Q311085/
 
 ## Q311085: SMS: The Distribution Point Wizard Does Not Delete a Package
 
+{% raw %}
+
 	Article: Q311085
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -192,3 +194,5 @@ permalink: /kb/311/Q311085/
 	
 	=============================================================================
 	
+
+{% endraw %}

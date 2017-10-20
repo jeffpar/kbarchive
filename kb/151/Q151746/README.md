@@ -6,6 +6,8 @@ permalink: /kb/151/Q151746/
 
 ## Q151746: BDC Promoted to PDC Lacks License Purchase History
 
+{% raw %}
+
 	Article: Q151746
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -58,3 +60,5 @@ permalink: /kb/151/Q151746/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242459/
 
 ## Q242459: BUG: DAO Recordset Update Method Fails Silently
 
+{% raw %}
+
 	Article: Q242459
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -187,3 +189,5 @@ permalink: /kb/242/Q242459/
 	
 	=============================================================================
 	
+
+{% endraw %}

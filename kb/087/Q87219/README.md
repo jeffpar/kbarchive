@@ -6,6 +6,8 @@ permalink: /kb/087/Q87219/
 
 ## Q87219: PROFS: Gateway Processes While Running
 
+{% raw %}
+
 	Article: Q87219
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -53,3 +55,5 @@ permalink: /kb/087/Q87219/
 	
 	=============================================================================
 	
+
+{% endraw %}

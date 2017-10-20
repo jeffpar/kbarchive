@@ -6,6 +6,8 @@ permalink: /kb/143/Q143397/
 
 ## Q143397: &quot;ERRORCODE: 15&quot; When Logging on to Banyan VINES Server
 
+{% raw %}
+
 	Article: Q143397
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/143/Q143397/
 	
 	=============================================================================
 	
+
+{% endraw %}

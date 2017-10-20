@@ -6,6 +6,8 @@ permalink: /kb/192/Q192142/
 
 ## Q192142: PRB: Update After AddNew Using Oracle Driver Generates an Error
 
+{% raw %}
+
 	Article: Q192142
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,5.0
@@ -127,3 +129,5 @@ permalink: /kb/192/Q192142/
 	
 	=============================================================================
 	
+
+{% endraw %}

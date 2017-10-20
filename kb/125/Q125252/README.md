@@ -6,6 +6,8 @@ permalink: /kb/125/Q125252/
 
 ## Q125252: PC Adm: Rebuilding the Postoffice Address List
 
+{% raw %}
+
 	Article: Q125252
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1,3.0,3.2,3.5
@@ -134,3 +136,5 @@ permalink: /kb/125/Q125252/
 	
 	=============================================================================
 	
+
+{% endraw %}

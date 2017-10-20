@@ -6,6 +6,8 @@ permalink: /kb/133/Q133033/
 
 ## Q133033: FIX: Tracing Main Program After DO &#42;.PJX Causes Exception Err.
 
+{% raw %}
+
 	Article: Q133033
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -92,3 +94,5 @@ permalink: /kb/133/Q133033/
 	
 	=============================================================================
 	
+
+{% endraw %}

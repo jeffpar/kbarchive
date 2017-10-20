@@ -6,6 +6,8 @@ permalink: /kb/195/Q195140/
 
 ## Q195140: WD97: Border Lost from Linked Microsoft Excel Spreadsheet
 
+{% raw %}
+
 	Article: Q195140
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -67,3 +69,5 @@ permalink: /kb/195/Q195140/
 	
 	=============================================================================
 	
+
+{% endraw %}

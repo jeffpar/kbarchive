@@ -6,6 +6,8 @@ permalink: /kb/102/Q102619/
 
 ## Q102619: FIX: Member Conversion Function Calling Convention Incorrect
 
+{% raw %}
+
 	Article: Q102619
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5
@@ -151,3 +153,5 @@ permalink: /kb/102/Q102619/
 	
 	=============================================================================
 	
+
+{% endraw %}

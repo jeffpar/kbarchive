@@ -6,6 +6,8 @@ permalink: /kb/139/Q139972/
 
 ## Q139972: FIX: File Open Common Dialog in Win95 Returns Invalid Filename
 
+{% raw %}
+
 	Article: Q139972
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,95
@@ -130,3 +132,5 @@ permalink: /kb/139/Q139972/
 	
 	=============================================================================
 	
+
+{% endraw %}

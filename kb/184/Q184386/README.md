@@ -6,6 +6,8 @@ permalink: /kb/184/Q184386/
 
 ## Q184386: HOWTO: Using OLE Drag &amp; Drop to Move Controls on a Form
 
+{% raw %}
+
 	Article: Q184386
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -154,3 +156,5 @@ permalink: /kb/184/Q184386/
 	
 	=============================================================================
 	
+
+{% endraw %}

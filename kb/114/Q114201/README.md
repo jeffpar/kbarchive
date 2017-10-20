@@ -6,6 +6,8 @@ permalink: /kb/114/Q114201/
 
 ## Q114201: PRB: CString::ReleaseBuffer() Does Not Release Extra Memory
 
+{% raw %}
+
 	Article: Q114201
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0
@@ -113,3 +115,5 @@ permalink: /kb/114/Q114201/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/063/Q63668/
 
 ## Q63668: Superbase 4 Version 1.2 or Later Required for Windows 3.0
 
+{% raw %}
+
 	Article: Q63668
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/063/Q63668/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/082/Q82895/
 
 ## Q82895: Klotski Uses Wrong Font Under Windows 3.1
 
+{% raw %}
+
 	Article: Q82895
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/082/Q82895/
 	
 	=============================================================================
 	
+
+{% endraw %}

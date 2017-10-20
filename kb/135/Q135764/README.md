@@ -6,6 +6,8 @@ permalink: /kb/135/Q135764/
 
 ## Q135764: User Manager Account Policy Help Returns Topic Not Found
 
+{% raw %}
+
 	Article: Q135764
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/135/Q135764/
 	
 	=============================================================================
 	
+
+{% endraw %}

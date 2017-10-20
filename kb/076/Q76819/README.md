@@ -6,6 +6,8 @@ permalink: /kb/076/Q76819/
 
 ## Q76819: Installing MS-DOS 5 Upgrade on NetWare Diskless Workstation
 
+{% raw %}
+
 	Article: Q76819
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -80,3 +82,5 @@ permalink: /kb/076/Q76819/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171614/
 
 ## Q171614: Linkcfg.exe is not Writing Out Some Registry Entries for DCA ISC
 
+{% raw %}
+
 	Article: Q171614
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -73,3 +75,5 @@ permalink: /kb/171/Q171614/
 	
 	=============================================================================
 	
+
+{% endraw %}

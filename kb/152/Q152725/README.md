@@ -6,6 +6,8 @@ permalink: /kb/152/Q152725/
 
 ## Q152725: XCLN: How to Connect over the Internet to an Exchange Server
 
+{% raw %}
+
 	Article: Q152725
 	Product(s): Microsoft Exchange
 	Version(s): MS-DOS:4.0,5.0; WINDOWS:4.0,5.0
@@ -71,3 +73,5 @@ permalink: /kb/152/Q152725/
 	
 	=============================================================================
 	
+
+{% endraw %}

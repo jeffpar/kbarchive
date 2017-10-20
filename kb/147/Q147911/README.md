@@ -6,6 +6,8 @@ permalink: /kb/147/Q147911/
 
 ## Q147911: Bluescreen When Building to Novell Server on MIPS Computer
 
+{% raw %}
+
 	Article: Q147911
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -75,3 +77,5 @@ permalink: /kb/147/Q147911/
 	
 	=============================================================================
 	
+
+{% endraw %}

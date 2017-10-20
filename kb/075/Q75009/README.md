@@ -6,6 +6,8 @@ permalink: /kb/075/Q75009/
 
 ## Q75009: Using Call_Priority_VM_Event
 
+{% raw %}
+
 	Article: Q75009
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0
@@ -51,3 +53,5 @@ permalink: /kb/075/Q75009/
 	
 	=============================================================================
 	
+
+{% endraw %}

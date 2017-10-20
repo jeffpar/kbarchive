@@ -6,6 +6,8 @@ permalink: /kb/092/Q92357/
 
 ## Q92357: INFO: Using Independent (Nonstructural) Compound Index Files
 
+{% raw %}
+
 	Article: Q92357
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0,5.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/092/Q92357/
 	
 	=============================================================================
 	
+
+{% endraw %}

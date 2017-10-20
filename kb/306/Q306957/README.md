@@ -6,6 +6,8 @@ permalink: /kb/306/Q306957/
 
 ## Q306957: XADM: Mail Sent to Exchange Server with CDONTS ASP Not Delivered
 
+{% raw %}
+
 	Article: Q306957
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -94,3 +96,5 @@ permalink: /kb/306/Q306957/
 	
 	=============================================================================
 	
+
+{% endraw %}

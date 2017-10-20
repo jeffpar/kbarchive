@@ -6,6 +6,8 @@ permalink: /kb/185/Q185942/
 
 ## Q185942: XADM: Cannot Run ISINTEG -PATCH on Cluster Server Computer
 
+{% raw %}
+
 	Article: Q185942
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -74,3 +76,5 @@ permalink: /kb/185/Q185942/
 	
 	=============================================================================
 	
+
+{% endraw %}

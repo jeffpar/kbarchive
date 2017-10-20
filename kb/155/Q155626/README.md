@@ -6,6 +6,8 @@ permalink: /kb/155/Q155626/
 
 ## Q155626: SMS: Invwin32 Fails After Restarting on Windows NT Servers
 
+{% raw %}
+
 	Article: Q155626
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -125,3 +127,5 @@ permalink: /kb/155/Q155626/
 	
 	=============================================================================
 	
+
+{% endraw %}

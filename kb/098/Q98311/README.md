@@ -6,6 +6,8 @@ permalink: /kb/098/Q98311/
 
 ## Q98311: Firmware V135 Required for Gateway 2000 Handbook Computers
 
+{% raw %}
+
 	Article: Q98311
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -49,3 +51,5 @@ permalink: /kb/098/Q98311/
 	
 	=============================================================================
 	
+
+{% endraw %}

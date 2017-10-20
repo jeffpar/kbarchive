@@ -6,6 +6,8 @@ permalink: /kb/217/Q217258/
 
 ## Q217258: WD97: Graphic Colors Display Incorrectly in Word and IE 5
 
+{% raw %}
+
 	Article: Q217258
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/217/Q217258/
 	
 	=============================================================================
 	
+
+{% endraw %}

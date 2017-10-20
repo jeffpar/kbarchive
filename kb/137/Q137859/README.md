@@ -6,6 +6,8 @@ permalink: /kb/137/Q137859/
 
 ## Q137859: Security Options Not Functional in Server Tools for Windows 95
 
+{% raw %}
+
 	Article: Q137859
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.51; WINDOWS:95
@@ -50,3 +52,5 @@ permalink: /kb/137/Q137859/
 	
 	=============================================================================
 	
+
+{% endraw %}

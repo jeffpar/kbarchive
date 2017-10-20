@@ -6,6 +6,8 @@ permalink: /kb/022/Q22015/
 
 ## Q22015: SHELL &quot;PATH=&#92;...&quot; Affects Only a Local Copy of DOS
 
+{% raw %}
+
 	Article: Q22015
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -30,3 +32,5 @@ permalink: /kb/022/Q22015/
 	copy of COMMAND.COM and the DOS environment is spawned. When paths are
 	changed, only the local environment copy is changed, not the original
 	DOS environment.
+
+{% endraw %}

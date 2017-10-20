@@ -6,6 +6,8 @@ permalink: /kb/142/Q142195/
 
 ## Q142195: CONN: Menu Options Grayed Out in the CNU
 
+{% raw %}
+
 	Article: Q142195
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -66,3 +68,5 @@ permalink: /kb/142/Q142195/
 	
 	=============================================================================
 	
+
+{% endraw %}

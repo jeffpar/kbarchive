@@ -6,6 +6,8 @@ permalink: /kb/247/Q247925/
 
 ## Q247925: InstallShield Hangs When You Try to Install 32-Bit Programs
 
+{% raw %}
+
 	Article: Q247925
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -73,3 +75,5 @@ permalink: /kb/247/Q247925/
 	
 	=============================================================================
 	
+
+{% endraw %}

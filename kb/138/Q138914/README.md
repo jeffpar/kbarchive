@@ -6,6 +6,8 @@ permalink: /kb/138/Q138914/
 
 ## Q138914: FoxPro Advisor Magazine Articles July 1995
 
+{% raw %}
+
 	Article: Q138914
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 2.50x 2.60 2.60a | 2.00 2.5
@@ -193,3 +195,5 @@ permalink: /kb/138/Q138914/
 	
 	=============================================================================
 	
+
+{% endraw %}

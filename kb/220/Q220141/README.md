@@ -6,6 +6,8 @@ permalink: /kb/220/Q220141/
 
 ## Q220141: Choppy Sound In Starts Here Titles
 
+{% raw %}
+
 	Article: Q220141
 	Product(s): Microsoft Press
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/220/Q220141/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/091/Q91042/
 
 ## Q91042: PC WFW: Postoffice Administration Not Available from Windows
 
+{% raw %}
+
 	Article: Q91042
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/091/Q91042/
 	
 	=============================================================================
 	
+
+{% endraw %}

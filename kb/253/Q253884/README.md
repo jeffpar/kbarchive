@@ -6,6 +6,8 @@ permalink: /kb/253/Q253884/
 
 ## Q253884: BUG: Printing to a Non-Default Printer May Cause an Error
 
+{% raw %}
+
 	Article: Q253884
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -122,3 +124,5 @@ permalink: /kb/253/Q253884/
 	
 	=============================================================================
 	
+
+{% endraw %}

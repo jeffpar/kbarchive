@@ -6,6 +6,8 @@ permalink: /kb/029/Q29705/
 
 ## Q29705: MREADME.DOC: Using the Default Expert Mouse Menu
 
+{% raw %}
+
 	Article: Q29705
 	Product(s): See article
 	Version(s): 1.00
@@ -46,3 +48,5 @@ permalink: /kb/029/Q29705/
 	resides:
 	
 	                 default off
+
+{% endraw %}

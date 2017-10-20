@@ -6,6 +6,8 @@ permalink: /kb/121/Q121545/
 
 ## Q121545: Compaq Prosignia Hangs on GUI Portion of Setup
 
+{% raw %}
+
 	Article: Q121545
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/121/Q121545/
 	
 	=============================================================================
 	
+
+{% endraw %}

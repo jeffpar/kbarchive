@@ -6,6 +6,8 @@ permalink: /kb/123/Q123998/
 
 ## Q123998: Windows 95 Err Msg: Not Enough Storage to Complete...
 
+{% raw %}
+
 	Article: Q123998
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/123/Q123998/
 	
 	=============================================================================
 	
+
+{% endraw %}

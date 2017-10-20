@@ -6,6 +6,8 @@ permalink: /kb/132/Q132711/
 
 ## Q132711: Configuring Windows NT for WWW Clients To Browse FTP Server
 
+{% raw %}
+
 	Article: Q132711
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50,3.51
@@ -69,3 +71,5 @@ permalink: /kb/132/Q132711/
 	
 	=============================================================================
 	
+
+{% endraw %}

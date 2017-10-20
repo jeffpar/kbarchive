@@ -6,6 +6,8 @@ permalink: /kb/075/Q75670/
 
 ## Q75670: Err Msg: There Was an Error Writing to the File DOSSHELL.INI
 
+{% raw %}
+
 	Article: Q75670
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -70,3 +72,5 @@ permalink: /kb/075/Q75670/
 	
 	=============================================================================
 	
+
+{% endraw %}

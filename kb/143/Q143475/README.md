@@ -6,6 +6,8 @@ permalink: /kb/143/Q143475/
 
 ## Q143475: Windows NT System Key Permits Strong Encryption of the SAM
 
+{% raw %}
+
 	Article: Q143475
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -304,3 +306,5 @@ permalink: /kb/143/Q143475/
 	
 	=============================================================================
 	
+
+{% endraw %}

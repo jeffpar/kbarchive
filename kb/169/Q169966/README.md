@@ -6,6 +6,8 @@ permalink: /kb/169/Q169966/
 
 ## Q169966: Err Msg: Setup Did Not Find Any Hard Drives on Your Computer
 
+{% raw %}
+
 	Article: Q169966
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/169/Q169966/
 	
 	=============================================================================
 	
+
+{% endraw %}

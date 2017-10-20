@@ -6,6 +6,8 @@ permalink: /kb/197/Q197126/
 
 ## Q197126: BUG: IPF Referencing Default Property of Nonexistent Image Ctrl
 
+{% raw %}
+
 	Article: Q197126
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -96,3 +98,5 @@ permalink: /kb/197/Q197126/
 	
 	=============================================================================
 	
+
+{% endraw %}

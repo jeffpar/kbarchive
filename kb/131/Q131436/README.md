@@ -6,6 +6,8 @@ permalink: /kb/131/Q131436/
 
 ## Q131436: Mac Encarta 1995: Back List Text is Hidden
 
+{% raw %}
+
 	Article: Q131436
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition
@@ -43,3 +45,5 @@ permalink: /kb/131/Q131436/
 	
 	=============================================================================
 	
+
+{% endraw %}

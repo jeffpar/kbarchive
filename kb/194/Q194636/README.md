@@ -6,6 +6,8 @@ permalink: /kb/194/Q194636/
 
 ## Q194636: HOWTO: Manually Register a VB Remote Component Using CLIREG32
 
+{% raw %}
+
 	Article: Q194636
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -83,3 +85,5 @@ permalink: /kb/194/Q194636/
 	
 	=============================================================================
 	
+
+{% endraw %}

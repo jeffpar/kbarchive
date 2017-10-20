@@ -6,6 +6,8 @@ permalink: /kb/153/Q153788/
 
 ## Q153788: Can't Run Administrative Setup from Word, Bookshelf CD-ROM
 
+{% raw %}
+
 	Article: Q153788
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -55,3 +57,5 @@ permalink: /kb/153/Q153788/
 	
 	=============================================================================
 	
+
+{% endraw %}

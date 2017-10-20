@@ -6,6 +6,8 @@ permalink: /kb/049/Q49395/
 
 ## Q49395: Example of Passing Numerics from BASIC to MASM by Value
 
+{% raw %}
+
 	Article: Q49395
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -84,3 +86,5 @@ permalink: /kb/049/Q49395/
 	BNUMVAL.EXE produces the following output:
 	
 	   ABC
+
+{% endraw %}

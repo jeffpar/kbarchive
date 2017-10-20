@@ -6,6 +6,8 @@ permalink: /kb/177/Q177089/
 
 ## Q177089: BUG: Startup Position Changes in SDI if Form Has a Menu
 
+{% raw %}
+
 	Article: Q177089
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -90,3 +92,5 @@ permalink: /kb/177/Q177089/
 	
 	=============================================================================
 	
+
+{% endraw %}

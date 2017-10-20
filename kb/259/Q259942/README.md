@@ -6,6 +6,8 @@ permalink: /kb/259/Q259942/
 
 ## Q259942: HOWTO: Set Where .tmp Files Are Created with the VFP ODBC Driver
 
+{% raw %}
+
 	Article: Q259942
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:1.0,2.0,3.0,4.0,5.0,6.0
@@ -75,3 +77,5 @@ permalink: /kb/259/Q259942/
 	
 	=============================================================================
 	
+
+{% endraw %}

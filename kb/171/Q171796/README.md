@@ -6,6 +6,8 @@ permalink: /kb/171/Q171796/
 
 ## Q171796: FIX: Problems When Running Asynchronous Queries with RDO 2.0
 
+{% raw %}
+
 	Article: Q171796
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -52,3 +54,5 @@ permalink: /kb/171/Q171796/
 	
 	=============================================================================
 	
+
+{% endraw %}

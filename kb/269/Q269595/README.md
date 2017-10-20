@@ -6,6 +6,8 @@ permalink: /kb/269/Q269595/
 
 ## Q269595: Active Desktop Wallpaper Appears Scrambled
 
+{% raw %}
+
 	Article: Q269595
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:4.01 Service Pack 2,4.x,5,5.01,5.01 Service Pack 1,5.5; Win2000:95; Win98:5.01,
@@ -76,3 +78,5 @@ permalink: /kb/269/Q269595/
 	
 	=============================================================================
 	
+
+{% endraw %}

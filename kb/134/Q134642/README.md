@@ -6,6 +6,8 @@ permalink: /kb/134/Q134642/
 
 ## Q134642: DOC: RowSourceType Property Incomplete in Language Ref
 
+{% raw %}
+
 	Article: Q134642
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134642/
 	
 	=============================================================================
 	
+
+{% endraw %}

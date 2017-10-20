@@ -6,6 +6,8 @@ permalink: /kb/171/Q171717/
 
 ## Q171717: FP: Cannot Create Web Using .com, .dll, or .exe Extension
 
+{% raw %}
+
 	Article: Q171717
 	Product(s): Word Front Page
 	Version(s): 1.1
@@ -85,3 +87,5 @@ permalink: /kb/171/Q171717/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146021/
 
 ## Q146021: PRB: Double-Clicking a Check Box Does Not Change Its Value
 
+{% raw %}
+
 	Article: Q146021
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -82,3 +84,5 @@ permalink: /kb/146/Q146021/
 	
 	=============================================================================
 	
+
+{% endraw %}

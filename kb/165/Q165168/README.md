@@ -6,6 +6,8 @@ permalink: /kb/165/Q165168/
 
 ## Q165168: FIX: Modal Form and SET SYSMENU OFF Cause Menu to Disappear
 
+{% raw %}
+
 	Article: Q165168
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -80,3 +82,5 @@ permalink: /kb/165/Q165168/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40504/
 
 ## Q40504: Types And Variations of Charts That Can Be Produced by QC 2.00
 
+{% raw %}
+
 	Article: Q40504
 	Product(s): See article
 	Version(s): 2.00
@@ -51,3 +53,5 @@ permalink: /kb/040/Q40504/
 	6. Background, foreground colors, and fill patterns
 	
 	7. Selectable point marker characters (for line and scatter charts)
+
+{% endraw %}

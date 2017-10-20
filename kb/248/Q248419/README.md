@@ -6,6 +6,8 @@ permalink: /kb/248/Q248419/
 
 ## Q248419: Fighter Ace II: Slow Frame Rate and Low Graphic Detail in Game
 
+{% raw %}
+
 	Article: Q248419
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/248/Q248419/
 	
 	=============================================================================
 	
+
+{% endraw %}

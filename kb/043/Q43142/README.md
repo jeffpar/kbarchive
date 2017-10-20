@@ -6,6 +6,8 @@ permalink: /kb/043/Q43142/
 
 ## Q43142: QuickC: The Inline Assembler Generates 3-Byte JMP Instructions
 
+{% raw %}
+
 	Article: Q43142
 	Product(s): See article
 	Version(s): 2.00
@@ -78,3 +80,5 @@ permalink: /kb/043/Q43142/
 	6DD8:0031 E90000         JMP       _main+14 (0034)
 	7:         }
 	/* exit code here */
+
+{% endraw %}

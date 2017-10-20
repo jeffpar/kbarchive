@@ -6,6 +6,8 @@ permalink: /kb/124/Q124307/
 
 ## Q124307: Installing Windows NT on Large IDE Hard Disk Drives
 
+{% raw %}
+
 	Article: Q124307
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -139,3 +141,5 @@ permalink: /kb/124/Q124307/
 	
 	=============================================================================
 	
+
+{% endraw %}

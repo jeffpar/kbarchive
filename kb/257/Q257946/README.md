@@ -6,6 +6,8 @@ permalink: /kb/257/Q257946/
 
 ## Q257946: XGEN: GUI Hotfix Utility Switches /x /m /s /z
 
+{% raw %}
+
 	Article: Q257946
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): winnt:2.0,4.0,5.0,5.5
@@ -160,3 +162,5 @@ permalink: /kb/257/Q257946/
 	
 	=============================================================================
 	
+
+{% endraw %}

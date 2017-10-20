@@ -6,6 +6,8 @@ permalink: /kb/130/Q130133/
 
 ## Q130133: Bookshelf 1995: Picture Caption Not Copied with Picture
 
+{% raw %}
+
 	Article: Q130133
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:
@@ -81,3 +83,5 @@ permalink: /kb/130/Q130133/
 	
 	=============================================================================
 	
+
+{% endraw %}

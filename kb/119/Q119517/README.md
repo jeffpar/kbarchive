@@ -6,6 +6,8 @@ permalink: /kb/119/Q119517/
 
 ## Q119517: New Keywords Near16, Near32, Far16 and Far32 in MASM
 
+{% raw %}
+
 	Article: Q119517
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.1,6.11,6.1a
@@ -56,3 +58,5 @@ permalink: /kb/119/Q119517/
 	
 	=============================================================================
 	
+
+{% endraw %}

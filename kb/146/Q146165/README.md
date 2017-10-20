@@ -6,6 +6,8 @@ permalink: /kb/146/Q146165/
 
 ## Q146165: XFOR: No Error When IMC Starts and Configured for DNS
 
+{% raw %}
+
 	Article: Q146165
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/146/Q146165/
 	
 	=============================================================================
 	
+
+{% endraw %}

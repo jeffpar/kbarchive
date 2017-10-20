@@ -6,6 +6,8 @@ permalink: /kb/297/Q297947/
 
 ## Q297947: INFO: Use the IADsPropertyValue2 Interface to Return an IADsSecu
 
+{% raw %}
+
 	Article: Q297947
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -561,3 +563,5 @@ permalink: /kb/297/Q297947/
 	
 	=============================================================================
 	
+
+{% endraw %}

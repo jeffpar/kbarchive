@@ -6,6 +6,8 @@ permalink: /kb/124/Q124100/
 
 ## Q124100: PC Win WRmt: Upgrading Windows for Workgroups Mail
 
+{% raw %}
+
 	Article: Q124100
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -147,3 +149,5 @@ permalink: /kb/124/Q124100/
 	
 	=============================================================================
 	
+
+{% endraw %}

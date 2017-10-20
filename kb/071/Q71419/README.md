@@ -6,6 +6,8 @@ permalink: /kb/071/Q71419/
 
 ## Q71419: PC NAU StarLan Card and LAN Manager 2.0
 
+{% raw %}
+
 	Article: Q71419
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/071/Q71419/
 	
 	=============================================================================
 	
+
+{% endraw %}

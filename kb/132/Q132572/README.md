@@ -6,6 +6,8 @@ permalink: /kb/132/Q132572/
 
 ## Q132572: Media Player Error Message Seeking to End of Audio CD
 
+{% raw %}
+
 	Article: Q132572
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/132/Q132572/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/199/Q199319/
 
 ## Q199319: XADM: Extracting Public Folder Permissions Using PFADMIN
 
+{% raw %}
+
 	Article: Q199319
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -117,3 +119,5 @@ permalink: /kb/199/Q199319/
 	
 	=============================================================================
 	
+
+{% endraw %}

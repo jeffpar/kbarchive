@@ -6,6 +6,8 @@ permalink: /kb/232/Q232029/
 
 ## Q232029: XFOR: Scheduled Dirsync Retries when Import Container Missing
 
+{% raw %}
+
 	Article: Q232029
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/232/Q232029/
 	
 	=============================================================================
 	
+
+{% endraw %}

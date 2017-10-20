@@ -6,6 +6,8 @@ permalink: /kb/196/Q196607/
 
 ## Q196607: CPIC Application Produces Event 3017 - CPIC Conversation Unknown
 
+{% raw %}
+
 	Article: Q196607
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -82,3 +84,5 @@ permalink: /kb/196/Q196607/
 	
 	=============================================================================
 	
+
+{% endraw %}

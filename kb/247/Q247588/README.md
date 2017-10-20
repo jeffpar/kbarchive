@@ -6,6 +6,8 @@ permalink: /kb/247/Q247588/
 
 ## Q247588: XADM: Err Mssg 0xc002054b: The Specified Domain Does Not Exist
 
+{% raw %}
+
 	Article: Q247588
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/247/Q247588/
 	
 	=============================================================================
 	
+
+{% endraw %}

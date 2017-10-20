@@ -6,6 +6,8 @@ permalink: /kb/163/Q163705/
 
 ## Q163705: ACC97: Error &quot;Invalid DOS 8.3 Name&quot; Adding DB to SourceSafe
 
+{% raw %}
+
 	Article: Q163705
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0,97
@@ -90,3 +92,5 @@ permalink: /kb/163/Q163705/
 	
 	=============================================================================
 	
+
+{% endraw %}

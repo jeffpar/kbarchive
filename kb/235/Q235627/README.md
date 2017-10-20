@@ -6,6 +6,8 @@ permalink: /kb/235/Q235627/
 
 ## Q235627: XIMS: AUTH LOGIN Must Use Base-64-Encoded User Name and Password
 
+{% raw %}
+
 	Article: Q235627
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -113,3 +115,5 @@ permalink: /kb/235/Q235627/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110347/
 
 ## Q110347: Windows NT 4.0 Resource Kit Documentation Errors
 
+{% raw %}
+
 	Article: Q110347
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -111,3 +113,5 @@ permalink: /kb/110/Q110347/
 	
 	=============================================================================
 	
+
+{% endraw %}

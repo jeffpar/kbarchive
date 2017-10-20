@@ -6,6 +6,8 @@ permalink: /kb/163/Q163509/
 
 ## Q163509: ACC97: Object Description Property Not Saved in SourceSafe
 
+{% raw %}
+
 	Article: Q163509
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:97
@@ -97,3 +99,5 @@ permalink: /kb/163/Q163509/
 	
 	=============================================================================
 	
+
+{% endraw %}

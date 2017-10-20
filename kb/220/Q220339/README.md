@@ -6,6 +6,8 @@ permalink: /kb/220/Q220339/
 
 ## Q220339: WD97: STYLEREF Field in Header Causes Word to Stop Responding
 
+{% raw %}
+
 	Article: Q220339
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/220/Q220339/
 	
 	=============================================================================
 	
+
+{% endraw %}

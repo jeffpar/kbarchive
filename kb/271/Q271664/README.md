@@ -6,6 +6,8 @@ permalink: /kb/271/Q271664/
 
 ## Q271664: BUG: Events with Names Containing Underscore Not Received in VB
 
+{% raw %}
+
 	Article: Q271664
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -56,3 +58,5 @@ permalink: /kb/271/Q271664/
 	
 	=============================================================================
 	
+
+{% endraw %}

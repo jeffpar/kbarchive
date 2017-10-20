@@ -6,6 +6,8 @@ permalink: /kb/183/Q183103/
 
 ## Q183103: Year 2000 Fix for Halncr.dll
 
+{% raw %}
+
 	Article: Q183103
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -63,3 +65,5 @@ permalink: /kb/183/Q183103/
 	
 	=============================================================================
 	
+
+{% endraw %}

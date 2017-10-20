@@ -6,6 +6,8 @@ permalink: /kb/241/Q241110/
 
 ## Q241110: &quot;Computer Name Not Found&quot; Using Performance Monitor
 
+{% raw %}
+
 	Article: Q241110
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -127,3 +129,5 @@ permalink: /kb/241/Q241110/
 	
 	=============================================================================
 	
+
+{% endraw %}

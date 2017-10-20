@@ -6,6 +6,8 @@ permalink: /kb/068/Q68990/
 
 ## Q68990: MS-DOS Shell Spawns Two COMMAND.COMs
 
+{% raw %}
+
 	Article: Q68990
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.0,4.01,5.0
@@ -49,3 +51,5 @@ permalink: /kb/068/Q68990/
 	
 	=============================================================================
 	
+
+{% endraw %}

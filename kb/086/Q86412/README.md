@@ -6,6 +6,8 @@ permalink: /kb/086/Q86412/
 
 ## Q86412: BUG: MDI More Windows Dialog Activates Wrong Child
 
+{% raw %}
+
 	Article: Q86412
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -49,3 +51,5 @@ permalink: /kb/086/Q86412/
 	
 	=============================================================================
 	
+
+{% endraw %}

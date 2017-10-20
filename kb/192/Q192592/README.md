@@ -6,6 +6,8 @@ permalink: /kb/192/Q192592/
 
 ## Q192592: XADM: Paged Pool Memory Leak Caused by Attachment Processing
 
+{% raw %}
+
 	Article: Q192592
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -106,3 +108,5 @@ permalink: /kb/192/Q192592/
 	
 	=============================================================================
 	
+
+{% endraw %}

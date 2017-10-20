@@ -6,6 +6,8 @@ permalink: /kb/132/Q132226/
 
 ## Q132226: PRB: Clicking a Tab of Tabbed Dialog Box Doesn't Activate Page
 
+{% raw %}
+
 	Article: Q132226
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/132/Q132226/
 	
 	=============================================================================
 	
+
+{% endraw %}

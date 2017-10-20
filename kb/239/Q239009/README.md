@@ -6,6 +6,8 @@ permalink: /kb/239/Q239009/
 
 ## Q239009: XFOR: Exchange Supports Time Zones Not Declared in RFC 822
 
+{% raw %}
+
 	Article: Q239009
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -84,3 +86,5 @@ permalink: /kb/239/Q239009/
 	
 	=============================================================================
 	
+
+{% endraw %}

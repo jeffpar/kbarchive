@@ -6,6 +6,8 @@ permalink: /kb/165/Q165149/
 
 ## Q165149: TN3270E Access Violation in HonestySeatAvailable
 
+{% raw %}
+
 	Article: Q165149
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/165/Q165149/
 	
 	=============================================================================
 	
+
+{% endraw %}

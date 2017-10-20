@@ -6,6 +6,8 @@ permalink: /kb/193/Q193512/
 
 ## Q193512: PRB: Can Not Initialize the Debugging Subsystem
 
+{% raw %}
+
 	Article: Q193512
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -141,3 +143,5 @@ permalink: /kb/193/Q193512/
 	
 	=============================================================================
 	
+
+{% endraw %}

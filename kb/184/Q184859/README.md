@@ -6,6 +6,8 @@ permalink: /kb/184/Q184859/
 
 ## Q184859: German CIipbrd.exe Does Not Display Bitmap
 
+{% raw %}
+
 	Article: Q184859
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/184/Q184859/
 	
 	=============================================================================
 	
+
+{% endraw %}

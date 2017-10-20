@@ -6,6 +6,8 @@ permalink: /kb/154/Q154116/
 
 ## Q154116: HOWTO: Debug OLE Applications
 
+{% raw %}
+
 	Article: Q154116
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,2.2,4.0,4.1,4.2
@@ -322,3 +324,5 @@ permalink: /kb/154/Q154116/
 	
 	=============================================================================
 	
+
+{% endraw %}

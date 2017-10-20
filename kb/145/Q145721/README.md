@@ -6,6 +6,8 @@ permalink: /kb/145/Q145721/
 
 ## Q145721: FIX: Access Violation Error on 16 MB Windows NT System
 
+{% raw %}
+
 	Article: Q145721
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -113,3 +115,5 @@ permalink: /kb/145/Q145721/
 	
 	=============================================================================
 	
+
+{% endraw %}

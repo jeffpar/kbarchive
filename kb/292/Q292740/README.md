@@ -6,6 +6,8 @@ permalink: /kb/292/Q292740/
 
 ## Q292740: BackOffice Resource Kit, Second Edition Setup Does Not Recognize
 
+{% raw %}
+
 	Article: Q292740
 	Product(s): Microsoft Press
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/292/Q292740/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168236/
 
 ## Q168236: WD97: Outlook Address Book Not Available in Mail Merge Helper
 
+{% raw %}
+
 	Article: Q168236
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -122,3 +124,5 @@ permalink: /kb/168/Q168236/
 	
 	=============================================================================
 	
+
+{% endraw %}

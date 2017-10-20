@@ -6,6 +6,8 @@ permalink: /kb/117/Q117129/
 
 ## Q117129: Cannot Drag and Drop Icons in Program Manager
 
+{% raw %}
+
 	Article: Q117129
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -104,3 +106,5 @@ permalink: /kb/117/Q117129/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141631/
 
 ## Q141631: FIX: Mouse Clicks Continually Stack Up in the Event Queue
 
+{% raw %}
+
 	Article: Q141631
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -60,3 +62,5 @@ permalink: /kb/141/Q141631/
 	
 	=============================================================================
 	
+
+{% endraw %}

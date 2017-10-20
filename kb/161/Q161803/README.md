@@ -6,6 +6,8 @@ permalink: /kb/161/Q161803/
 
 ## Q161803: XGEN: Installation Guide Shows Incorrect SMTP Address Format
 
+{% raw %}
+
 	Article: Q161803
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -43,3 +45,5 @@ permalink: /kb/161/Q161803/
 	
 	=============================================================================
 	
+
+{% endraw %}

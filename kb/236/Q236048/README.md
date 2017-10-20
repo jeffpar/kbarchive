@@ -6,6 +6,8 @@ permalink: /kb/236/Q236048/
 
 ## Q236048: Account Creation for Secondary Site Requires Network Connection
 
+{% raw %}
+
 	Article: Q236048
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -74,3 +76,5 @@ permalink: /kb/236/Q236048/
 	
 	=============================================================================
 	
+
+{% endraw %}

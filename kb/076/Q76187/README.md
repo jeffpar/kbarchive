@@ -6,6 +6,8 @@ permalink: /kb/076/Q76187/
 
 ## Q76187: Norton Utilities Version 6.0 Updates DOSHELP.HLP File
 
+{% raw %}
+
 	Article: Q76187
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -102,3 +104,5 @@ permalink: /kb/076/Q76187/
 	
 	=============================================================================
 	
+
+{% endraw %}

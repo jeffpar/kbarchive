@@ -6,6 +6,8 @@ permalink: /kb/123/Q123463/
 
 ## Q123463: BUG: MSODISUP.386 Giving Bad Value for Link Speed Causes Hang
 
+{% raw %}
+
 	Article: Q123463
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/123/Q123463/
 	
 	=============================================================================
 	
+
+{% endraw %}

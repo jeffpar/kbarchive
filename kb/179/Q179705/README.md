@@ -6,6 +6,8 @@ permalink: /kb/179/Q179705/
 
 ## Q179705: Unable to Install Microsoft TCP/IP
 
+{% raw %}
+
 	Article: Q179705
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1,2,2.1
@@ -84,3 +86,5 @@ permalink: /kb/179/Q179705/
 	
 	=============================================================================
 	
+
+{% endraw %}

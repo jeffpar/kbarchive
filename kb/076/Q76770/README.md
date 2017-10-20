@@ -6,6 +6,8 @@ permalink: /kb/076/Q76770/
 
 ## Q76770: README.TXT: Using the Swapfile Utility
 
+{% raw %}
+
 	Article: Q76770
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -49,3 +51,5 @@ permalink: /kb/076/Q76770/
 	
 	=============================================================================
 	
+
+{% endraw %}

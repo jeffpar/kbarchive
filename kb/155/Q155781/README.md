@@ -6,6 +6,8 @@ permalink: /kb/155/Q155781/
 
 ## Q155781: PPT: How to Create a Half-Circle in PowerPoint
 
+{% raw %}
+
 	Article: Q155781
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,7.0
@@ -70,3 +72,5 @@ permalink: /kb/155/Q155781/
 	
 	=============================================================================
 	
+
+{% endraw %}

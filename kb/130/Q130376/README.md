@@ -6,6 +6,8 @@ permalink: /kb/130/Q130376/
 
 ## Q130376: Installing Windows NT On a Caching SCSI Controller
 
+{% raw %}
+
 	Article: Q130376
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/130/Q130376/
 	
 	=============================================================================
 	
+
+{% endraw %}

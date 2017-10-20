@@ -6,6 +6,8 @@ permalink: /kb/130/Q130187/
 
 ## Q130187: XCLN: Converting Recipient List to Personal Distribution List
 
+{% raw %}
+
 	Article: Q130187
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -80,3 +82,5 @@ permalink: /kb/130/Q130187/
 	
 	=============================================================================
 	
+
+{% endraw %}

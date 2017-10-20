@@ -6,6 +6,8 @@ permalink: /kb/156/Q156387/
 
 ## Q156387: XADM: JET Asserts in ISINTEG During a Check on Database
 
+{% raw %}
+
 	Article: Q156387
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/156/Q156387/
 	
 	=============================================================================
 	
+
+{% endraw %}

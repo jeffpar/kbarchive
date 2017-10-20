@@ -6,6 +6,8 @@ permalink: /kb/124/Q124399/
 
 ## Q124399: Beyond Mail Clients Unable to Log On to NetWare Post Office
 
+{% raw %}
+
 	Article: Q124399
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/124/Q124399/
 	
 	=============================================================================
 	
+
+{% endraw %}

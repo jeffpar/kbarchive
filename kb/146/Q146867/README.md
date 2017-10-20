@@ -6,6 +6,8 @@ permalink: /kb/146/Q146867/
 
 ## Q146867: Cannot Load User Profiles from Windows NT-Based Computer
 
+{% raw %}
+
 	Article: Q146867
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/146/Q146867/
 	
 	=============================================================================
 	
+
+{% endraw %}

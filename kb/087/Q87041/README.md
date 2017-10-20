@@ -6,6 +6,8 @@ permalink: /kb/087/Q87041/
 
 ## Q87041: SMTP: How to Start Up the SMTP Gateway
 
+{% raw %}
+
 	Article: Q87041
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/087/Q87041/
 	
 	=============================================================================
 	
+
+{% endraw %}

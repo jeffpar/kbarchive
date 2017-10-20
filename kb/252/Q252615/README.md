@@ -6,6 +6,8 @@ permalink: /kb/252/Q252615/
 
 ## Q252615: OLE Examples for Taking Control of Excel from Visual FoxPro
 
+{% raw %}
+
 	Article: Q252615
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -146,3 +148,5 @@ permalink: /kb/252/Q252615/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95720/
 
 ## Q95720: How to Write to Windows-Style .INI Files
 
+{% raw %}
+
 	Article: Q95720
 	Product(s): Microsoft FoxPro
 	Version(s): 2.50 2.50a 3.00
@@ -104,3 +106,5 @@ permalink: /kb/095/Q95720/
 	
 	=============================================================================
 	
+
+{% endraw %}

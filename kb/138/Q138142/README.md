@@ -6,6 +6,8 @@ permalink: /kb/138/Q138142/
 
 ## Q138142: How to Determine If a String Is UNICODE or ANSI
 
+{% raw %}
+
 	Article: Q138142
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/138/Q138142/
 	
 	=============================================================================
 	
+
+{% endraw %}

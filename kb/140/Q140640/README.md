@@ -6,6 +6,8 @@ permalink: /kb/140/Q140640/
 
 ## Q140640: BUG: GP Fault Opening a File w/ Visual Basic 3.0 &amp; Windows NT
 
+{% raw %}
+
 	Article: Q140640
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0,3.5,3.51
@@ -62,3 +64,5 @@ permalink: /kb/140/Q140640/
 	
 	=============================================================================
 	
+
+{% endraw %}

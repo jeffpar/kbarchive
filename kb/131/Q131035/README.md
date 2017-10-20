@@ -6,6 +6,8 @@ permalink: /kb/131/Q131035/
 
 ## Q131035: Updated Network Client Files Included with Windows NT 3.51
 
+{% raw %}
+
 	Article: Q131035
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2c,3.0,3.11,3.51
@@ -169,3 +171,5 @@ permalink: /kb/131/Q131035/
 	
 	=============================================================================
 	
+
+{% endraw %}

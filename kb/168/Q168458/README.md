@@ -6,6 +6,8 @@ permalink: /kb/168/Q168458/
 
 ## Q168458: XCLN: Formatting on Incoming Internet E-mail Is Wrong
 
+{% raw %}
+
 	Article: Q168458
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0;WinNT:4.0;Win95:4.0
@@ -64,3 +66,5 @@ permalink: /kb/168/Q168458/
 	
 	=============================================================================
 	
+
+{% endraw %}

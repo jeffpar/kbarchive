@@ -6,6 +6,8 @@ permalink: /kb/127/Q127068/
 
 ## Q127068: FoxPro Advisor Magazine Articles May 1994
 
+{% raw %}
+
 	Article: Q127068
 	Product(s): Microsoft FoxPro
 	Version(s): 2.60a
@@ -110,3 +112,5 @@ permalink: /kb/127/Q127068/
 	
 	=============================================================================
 	
+
+{% endraw %}

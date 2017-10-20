@@ -6,6 +6,8 @@ permalink: /kb/099/Q99393/
 
 ## Q99393: Mac Srv: Serial Number Conflicts and Routing
 
+{% raw %}
+
 	Article: Q99393
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -70,3 +72,5 @@ permalink: /kb/099/Q99393/
 	
 	=============================================================================
 	
+
+{% endraw %}

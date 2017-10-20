@@ -6,6 +6,8 @@ permalink: /kb/155/Q155402/
 
 ## Q155402: PRB: OLE Errors with the CREATEOBJECT() Function
 
+{% raw %}
+
 	Article: Q155402
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00b
@@ -95,3 +97,5 @@ permalink: /kb/155/Q155402/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160978/
 
 ## Q160978: Terminal Type Negotiation Fails w/RUMBA v3.2J TN3270 Emulator
 
+{% raw %}
+
 	Article: Q160978
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -99,3 +101,5 @@ permalink: /kb/160/Q160978/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244129/
 
 ## Q244129: XFOR: Notes Connector Rejects Incoming Msgs w/Apostrophe in SMTP
 
+{% raw %}
+
 	Article: Q244129
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -76,3 +78,5 @@ permalink: /kb/244/Q244129/
 	
 	=============================================================================
 	
+
+{% endraw %}

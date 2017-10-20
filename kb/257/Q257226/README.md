@@ -6,6 +6,8 @@ permalink: /kb/257/Q257226/
 
 ## Q257226: SMS: Year 2000 Queries Return &quot;WBEM_E_INVALID_QUERY&quot;
 
+{% raw %}
+
 	Article: Q257226
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -64,3 +66,5 @@ permalink: /kb/257/Q257226/
 	
 	=============================================================================
 	
+
+{% endraw %}

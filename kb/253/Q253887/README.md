@@ -6,6 +6,8 @@ permalink: /kb/253/Q253887/
 
 ## Q253887: XADM: ADC Does Not Match to SID History After a User Is Cloned
 
+{% raw %}
+
 	Article: Q253887
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -70,3 +72,5 @@ permalink: /kb/253/Q253887/
 	
 	=============================================================================
 	
+
+{% endraw %}

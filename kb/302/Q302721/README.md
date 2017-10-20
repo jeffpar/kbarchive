@@ -6,6 +6,8 @@ permalink: /kb/302/Q302721/
 
 ## Q302721: Reset To POP3 E-mail From A Web-based E-mail Account In MSN Expl
 
+{% raw %}
+
 	Article: Q302721
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -105,3 +107,5 @@ permalink: /kb/302/Q302721/
 	
 	=============================================================================
 	
+
+{% endraw %}

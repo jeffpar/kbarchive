@@ -6,6 +6,8 @@ permalink: /kb/113/Q113751/
 
 ## Q113751: Using 32-Bit Disk Access on WD 2540 Hard Disk Drives
 
+{% raw %}
+
 	Article: Q113751
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -234,3 +236,5 @@ permalink: /kb/113/Q113751/
 	
 	=============================================================================
 	
+
+{% endraw %}

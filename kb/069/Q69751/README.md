@@ -6,6 +6,8 @@ permalink: /kb/069/Q69751/
 
 ## Q69751: How to Make a Library File a Dependent of the Target in PWB
 
+{% raw %}
+
 	Article: Q69751
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -114,3 +116,5 @@ permalink: /kb/069/Q69751/
 	
 	=============================================================================
 	
+
+{% endraw %}

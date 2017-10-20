@@ -6,6 +6,8 @@ permalink: /kb/136/Q136708/
 
 ## Q136708: PC Cards (PCMCIA) Related Terms and Definitions
 
+{% raw %}
+
 	Article: Q136708
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -94,3 +96,5 @@ permalink: /kb/136/Q136708/
 	
 	=============================================================================
 	
+
+{% endraw %}

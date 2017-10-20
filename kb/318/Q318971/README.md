@@ -6,6 +6,8 @@ permalink: /kb/318/Q318971/
 
 ## Q318971: FIX: CTOT() Function Returns Blank Value on an XML DateTime Expr
 
+{% raw %}
+
 	Article: Q318971
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -83,3 +85,5 @@ permalink: /kb/318/Q318971/
 	
 	=============================================================================
 	
+
+{% endraw %}

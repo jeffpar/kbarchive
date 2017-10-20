@@ -6,6 +6,8 @@ permalink: /kb/114/Q114253/
 
 ## Q114253: Sample Code for Summing a Field in a Database
 
+{% raw %}
+
 	Article: Q114253
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0
@@ -141,3 +143,5 @@ permalink: /kb/114/Q114253/
 	
 	=============================================================================
 	
+
+{% endraw %}

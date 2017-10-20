@@ -6,6 +6,8 @@ permalink: /kb/104/Q104860/
 
 ## Q104860: FORTRAN PowerStation README.TXT: Installing and Using FL32
 
+{% raw %}
+
 	Article: Q104860
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -283,3 +285,5 @@ permalink: /kb/104/Q104860/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131834/
 
 ## Q131834: Baseball Daily 1995 Downloads Have Ended
 
+{% raw %}
+
 	Article: Q131834
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -54,3 +56,5 @@ permalink: /kb/131/Q131834/
 	
 	=============================================================================
 	
+
+{% endraw %}

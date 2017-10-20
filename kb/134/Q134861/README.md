@@ -6,6 +6,8 @@ permalink: /kb/134/Q134861/
 
 ## Q134861: Description of and Troubleshooting the Marlett TrueType Font
 
+{% raw %}
+
 	Article: Q134861
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/134/Q134861/
 	
 	=============================================================================
 	
+
+{% endraw %}

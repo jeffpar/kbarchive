@@ -6,6 +6,8 @@ permalink: /kb/188/Q188055/
 
 ## Q188055: SMS: How to Remove Inactive SMS Site Servers
 
+{% raw %}
+
 	Article: Q188055
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -79,3 +81,5 @@ permalink: /kb/188/Q188055/
 	
 	=============================================================================
 	
+
+{% endraw %}

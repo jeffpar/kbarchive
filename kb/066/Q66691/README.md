@@ -6,6 +6,8 @@ permalink: /kb/066/Q66691/
 
 ## Q66691: No &quot;Block IF Without END IF&quot; Using IF...THEN REM in QB/QBX.EXE
 
+{% raw %}
+
 	Article: Q66691
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10 | 7.00 7.10
@@ -67,3 +69,5 @@ permalink: /kb/066/Q66691/
 	IF a = 3 THEN
 	a = 5
 	END IF
+
+{% endraw %}

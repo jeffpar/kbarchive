@@ -6,6 +6,8 @@ permalink: /kb/264/Q264921/
 
 ## Q264921: INFO: How IIS Authenticates Browser Clients
 
+{% raw %}
+
 	Article: Q264921
 	Product(s): Internet Information Server
 	Version(s): 2.0,3.0,4.0,5,5.0
@@ -265,3 +267,5 @@ permalink: /kb/264/Q264921/
 	
 	=============================================================================
 	
+
+{% endraw %}

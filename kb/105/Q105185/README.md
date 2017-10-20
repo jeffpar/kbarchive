@@ -6,6 +6,8 @@ permalink: /kb/105/Q105185/
 
 ## Q105185: DoubleSpace Shows Wrong Drive Highlighted During Uncompress
 
+{% raw %}
+
 	Article: Q105185
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -48,3 +50,5 @@ permalink: /kb/105/Q105185/
 	
 	=============================================================================
 	
+
+{% endraw %}

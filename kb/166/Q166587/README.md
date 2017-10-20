@@ -6,6 +6,8 @@ permalink: /kb/166/Q166587/
 
 ## Q166587: XCON: High Priority Mail Sent from MS Mail Changes Priority
 
+{% raw %}
+
 	Article: Q166587
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -93,3 +95,5 @@ permalink: /kb/166/Q166587/
 	
 	=============================================================================
 	
+
+{% endraw %}

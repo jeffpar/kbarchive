@@ -6,6 +6,8 @@ permalink: /kb/124/Q124644/
 
 ## Q124644: ATI Phone Number Incorrect in README.TXT Files
 
+{% raw %}
+
 	Article: Q124644
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): '94-'95 edition,1.0; WINDOWS:1.0
@@ -61,3 +63,5 @@ permalink: /kb/124/Q124644/
 	
 	=============================================================================
 	
+
+{% endraw %}

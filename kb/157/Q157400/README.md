@@ -6,6 +6,8 @@ permalink: /kb/157/Q157400/
 
 ## Q157400: Soccer: Using the IntelliPoint Mouse with Soccer
 
+{% raw %}
+
 	Article: Q157400
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -41,3 +43,5 @@ permalink: /kb/157/Q157400/
 	
 	=============================================================================
 	
+
+{% endraw %}

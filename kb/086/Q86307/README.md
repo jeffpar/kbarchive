@@ -6,6 +6,8 @@ permalink: /kb/086/Q86307/
 
 ## Q86307: Windows Err Msg: The Version of the SETUP.INF File on Your...
 
+{% raw %}
+
 	Article: Q86307
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -65,3 +67,5 @@ permalink: /kb/086/Q86307/
 	
 	=============================================================================
 	
+
+{% endraw %}

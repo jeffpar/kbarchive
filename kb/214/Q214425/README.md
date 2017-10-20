@@ -6,6 +6,8 @@ permalink: /kb/214/Q214425/
 
 ## Q214425: SMS: NetMon Fails to Recognize HTTP Packets on Alternate Ports
 
+{% raw %}
+
 	Article: Q214425
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -107,3 +109,5 @@ permalink: /kb/214/Q214425/
 	
 	=============================================================================
 	
+
+{% endraw %}

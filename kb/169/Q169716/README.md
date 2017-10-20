@@ -6,6 +6,8 @@ permalink: /kb/169/Q169716/
 
 ## Q169716: XCON: Exchange MTA Generates Event ID 37
 
+{% raw %}
+
 	Article: Q169716
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -98,3 +100,5 @@ permalink: /kb/169/Q169716/
 	
 	=============================================================================
 	
+
+{% endraw %}

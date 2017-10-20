@@ -6,6 +6,8 @@ permalink: /kb/147/Q147387/
 
 ## Q147387: Err Msg: &quot;Invalid Property Value&quot; Modifying Role
 
+{% raw %}
+
 	Article: Q147387
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -47,3 +49,5 @@ permalink: /kb/147/Q147387/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248816/
 
 ## Q248816: Creating PDT Files for Epson Emulation Printers
 
+{% raw %}
+
 	Article: Q248816
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 U.S. SP1
@@ -168,3 +170,5 @@ permalink: /kb/248/Q248816/
 	
 	=============================================================================
 	
+
+{% endraw %}

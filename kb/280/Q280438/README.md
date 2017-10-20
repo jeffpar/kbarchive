@@ -6,6 +6,8 @@ permalink: /kb/280/Q280438/
 
 ## Q280438: MechWarrior 4: Blue Screen Error When You Remove CD-ROM
 
+{% raw %}
+
 	Article: Q280438
 	Product(s): Microsoft Home Games
 	Version(s): 4.0
@@ -229,3 +231,5 @@ permalink: /kb/280/Q280438/
 	
 	=============================================================================
 	
+
+{% endraw %}

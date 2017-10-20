@@ -6,6 +6,8 @@ permalink: /kb/189/Q189212/
 
 ## Q189212: NT Server Resource Kit: Performance Data Log (PerfLog) Status
 
+{% raw %}
+
 	Article: Q189212
 	Product(s): Microsoft Press
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/189/Q189212/
 	
 	=============================================================================
 	
+
+{% endraw %}

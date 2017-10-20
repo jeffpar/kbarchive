@@ -6,6 +6,8 @@ permalink: /kb/132/Q132678/
 
 ## Q132678: .SHD Files Not Deleted After Printing
 
+{% raw %}
+
 	Article: Q132678
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/132/Q132678/
 	
 	=============================================================================
 	
+
+{% endraw %}

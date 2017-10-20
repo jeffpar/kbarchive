@@ -6,6 +6,8 @@ permalink: /kb/120/Q120269/
 
 ## Q120269: WFWG NetBEUI Differences Running on Token Ring Network
 
+{% raw %}
+
 	Article: Q120269
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11
@@ -84,3 +86,5 @@ permalink: /kb/120/Q120269/
 	
 	=============================================================================
 	
+
+{% endraw %}

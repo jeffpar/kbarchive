@@ -6,6 +6,8 @@ permalink: /kb/256/Q256936/
 
 ## Q256936: SMS: Showgrps Tool Added to Support.exe in Service Pack 2
 
+{% raw %}
+
 	Article: Q256936
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP2
@@ -49,3 +51,5 @@ permalink: /kb/256/Q256936/
 	
 	=============================================================================
 	
+
+{% endraw %}

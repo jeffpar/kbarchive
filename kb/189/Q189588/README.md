@@ -6,6 +6,8 @@ permalink: /kb/189/Q189588/
 
 ## Q189588: SMS: SQL Transfer Manager Errors When Moving SMS Database
 
+{% raw %}
+
 	Article: Q189588
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -102,3 +104,5 @@ permalink: /kb/189/Q189588/
 	
 	=============================================================================
 	
+
+{% endraw %}

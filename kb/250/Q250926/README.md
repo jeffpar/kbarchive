@@ -6,6 +6,8 @@ permalink: /kb/250/Q250926/
 
 ## Q250926: XFOR: GroupShield Interferes with POP3/IMAP with SSL Enabled
 
+{% raw %}
+
 	Article: Q250926
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -90,3 +92,5 @@ permalink: /kb/250/Q250926/
 	
 	=============================================================================
 	
+
+{% endraw %}

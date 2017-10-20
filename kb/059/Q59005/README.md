@@ -6,6 +6,8 @@ permalink: /kb/059/Q59005/
 
 ## Q59005: Returning to QuickC from PM May Corrupt Screen
 
+{% raw %}
+
 	Article: Q59005
 	Product(s): See article
 	Version(s): m2.00 2.01
@@ -59,3 +61,5 @@ permalink: /kb/059/Q59005/
 	This problem has been reproduced on a WYSE 386 with a FastWrite VGA
 	and on a WYSE 286 with a Genoa Super VGA board. It has not been
 	reproduced on a Compaq.
+
+{% endraw %}

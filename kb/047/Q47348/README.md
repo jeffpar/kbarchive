@@ -6,6 +6,8 @@ permalink: /kb/047/Q47348/
 
 ## Q47348: Example of Passing Fixed-Length Strings from C to BASIC
 
+{% raw %}
+
 	Article: Q47348
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -95,3 +97,5 @@ permalink: /kb/047/Q47348/
 	         a[i]=64;
 	      }
 	 }
+
+{% endraw %}

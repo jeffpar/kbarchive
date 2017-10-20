@@ -6,6 +6,8 @@ permalink: /kb/130/Q130821/
 
 ## Q130821: Configuring IBM Token Ring Card to Handle Large Packets
 
+{% raw %}
+
 	Article: Q130821
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/130/Q130821/
 	
 	=============================================================================
 	
+
+{% endraw %}

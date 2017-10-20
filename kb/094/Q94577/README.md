@@ -6,6 +6,8 @@ permalink: /kb/094/Q94577/
 
 ## Q94577: Creating 32-Bit Flat Memory Model MASM Code for OS/2 2.0
 
+{% raw %}
+
 	Article: Q94577
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -119,3 +121,5 @@ permalink: /kb/094/Q94577/
 	
 	=============================================================================
 	
+
+{% endraw %}

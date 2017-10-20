@@ -6,6 +6,8 @@ permalink: /kb/164/Q164645/
 
 ## Q164645: SNACFG.EXE Cannot Add Dependent LU 6.2 on SNA 3.0
 
+{% raw %}
+
 	Article: Q164645
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/164/Q164645/
 	
 	=============================================================================
 	
+
+{% endraw %}

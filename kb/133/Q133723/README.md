@@ -6,6 +6,8 @@ permalink: /kb/133/Q133723/
 
 ## Q133723: STOP Message: 0x0000001E in TCPIP.SYS During Shutdown
 
+{% raw %}
+
 	Article: Q133723
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -61,3 +63,5 @@ permalink: /kb/133/Q133723/
 	
 	=============================================================================
 	
+
+{% endraw %}

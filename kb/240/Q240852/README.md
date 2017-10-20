@@ -6,6 +6,8 @@ permalink: /kb/240/Q240852/
 
 ## Q240852: WD97: IPF When You Click ActiveX Control in Protected Document
 
+{% raw %}
+
 	Article: Q240852
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/240/Q240852/
 	
 	=============================================================================
 	
+
+{% endraw %}

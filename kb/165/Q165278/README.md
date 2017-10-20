@@ -6,6 +6,8 @@ permalink: /kb/165/Q165278/
 
 ## Q165278: 3270/5250 Print Jobs Generate an Extra Form Feed
 
+{% raw %}
+
 	Article: Q165278
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/165/Q165278/
 	
 	=============================================================================
 	
+
+{% endraw %}

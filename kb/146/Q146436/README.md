@@ -6,6 +6,8 @@ permalink: /kb/146/Q146436/
 
 ## Q146436: XCLN: Offline Address Book Files Not Removed w/ Remove All
 
+{% raw %}
+
 	Article: Q146436
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -61,3 +63,5 @@ permalink: /kb/146/Q146436/
 	
 	=============================================================================
 	
+
+{% endraw %}

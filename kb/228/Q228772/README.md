@@ -6,6 +6,8 @@ permalink: /kb/228/Q228772/
 
 ## Q228772: Cannot Customize Microsoft Year 2000 Product Analyzer Database
 
+{% raw %}
+
 	Article: Q228772
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:95; winnt:3.51,4.0
@@ -60,3 +62,5 @@ permalink: /kb/228/Q228772/
 	
 	=============================================================================
 	
+
+{% endraw %}

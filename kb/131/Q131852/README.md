@@ -6,6 +6,8 @@ permalink: /kb/131/Q131852/
 
 ## Q131852: PC Win: Error &#91;009&#93; Mail Maximum Size Exceeded Sending to...
 
+{% raw %}
+
 	Article: Q131852
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -86,3 +88,5 @@ permalink: /kb/131/Q131852/
 	
 	=============================================================================
 	
+
+{% endraw %}

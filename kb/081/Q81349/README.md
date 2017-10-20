@@ -6,6 +6,8 @@ permalink: /kb/081/Q81349/
 
 ## Q81349: Floppy Drives with WordPerfect 5.1 and Windows
 
+{% raw %}
+
 	Article: Q81349
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -92,3 +94,5 @@ permalink: /kb/081/Q81349/
 	
 	=============================================================================
 	
+
+{% endraw %}

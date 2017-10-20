@@ -6,6 +6,8 @@ permalink: /kb/258/Q258922/
 
 ## Q258922: Description of the GEX Cheat Codes
 
+{% raw %}
+
 	Article: Q258922
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/258/Q258922/
 	
 	=============================================================================
 	
+
+{% endraw %}

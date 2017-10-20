@@ -6,6 +6,8 @@ permalink: /kb/157/Q157818/
 
 ## Q157818: Netflex-3: No Adapter Found When Installing SFM
 
+{% raw %}
+
 	Article: Q157818
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51
@@ -102,3 +104,5 @@ permalink: /kb/157/Q157818/
 	
 	=============================================================================
 	
+
+{% endraw %}

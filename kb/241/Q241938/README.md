@@ -6,6 +6,8 @@ permalink: /kb/241/Q241938/
 
 ## Q241938: XWEB: &quot;Delivery Restriction&quot; Ignored Forwarding/Replying in OWA
 
+{% raw %}
+
 	Article: Q241938
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -48,3 +50,5 @@ permalink: /kb/241/Q241938/
 	
 	=============================================================================
 	
+
+{% endraw %}

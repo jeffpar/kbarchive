@@ -6,6 +6,8 @@ permalink: /kb/155/Q155820/
 
 ## Q155820: HOWTO: Refresh an Offline View in Visual FoxPro
 
+{% raw %}
+
 	Article: Q155820
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/155/Q155820/
 	
 	=============================================================================
 	
+
+{% endraw %}

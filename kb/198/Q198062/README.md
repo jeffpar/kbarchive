@@ -6,6 +6,8 @@ permalink: /kb/198/Q198062/
 
 ## Q198062: BUG: Mouse Cursor Disappears After Typing in VB IDE
 
+{% raw %}
+
 	Article: Q198062
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -80,3 +82,5 @@ permalink: /kb/198/Q198062/
 	
 	=============================================================================
 	
+
+{% endraw %}

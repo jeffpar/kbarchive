@@ -6,6 +6,8 @@ permalink: /kb/267/Q267939/
 
 ## Q267939: HOWTO: Use FindText to Enable Searching in a Text Box
 
+{% raw %}
+
 	Article: Q267939
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -271,3 +273,5 @@ permalink: /kb/267/Q267939/
 	
 	=============================================================================
 	
+
+{% endraw %}

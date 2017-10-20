@@ -6,6 +6,8 @@ permalink: /kb/146/Q146382/
 
 ## Q146382: XCLN: Deliver New Mail Moves All Messages (Old and New)
 
+{% raw %}
+
 	Article: Q146382
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/146/Q146382/
 	
 	=============================================================================
 	
+
+{% endraw %}

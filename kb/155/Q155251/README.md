@@ -6,6 +6,8 @@ permalink: /kb/155/Q155251/
 
 ## Q155251: PPT7: Menu Items Not Available or Missing
 
+{% raw %}
+
 	Article: Q155251
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 7.0
@@ -145,3 +147,5 @@ permalink: /kb/155/Q155251/
 	
 	=============================================================================
 	
+
+{% endraw %}

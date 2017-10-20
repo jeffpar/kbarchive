@@ -6,6 +6,8 @@ permalink: /kb/040/Q40462/
 
 ## Q40462: Include in MASM Source Effects /Z
 
+{% raw %}
+
 	Article: Q40462
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -61,3 +63,5 @@ permalink: /kb/040/Q40462/
 	
 	      0 Warning Errors
 	      2 Severe  Errors
+
+{% endraw %}

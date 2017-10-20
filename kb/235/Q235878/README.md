@@ -6,6 +6,8 @@ permalink: /kb/235/Q235878/
 
 ## Q235878: OSPF Authentication by RRAS Server Does Not Work
 
+{% raw %}
+
 	Article: Q235878
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/235/Q235878/
 	
 	=============================================================================
 	
+
+{% endraw %}

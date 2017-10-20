@@ -6,6 +6,8 @@ permalink: /kb/142/Q142869/
 
 ## Q142869: Event ID 3210 and 5722 Appear When Synchronizing Entire Domain
 
+{% raw %}
+
 	Article: Q142869
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -57,3 +59,5 @@ permalink: /kb/142/Q142869/
 	
 	=============================================================================
 	
+
+{% endraw %}

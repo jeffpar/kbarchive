@@ -6,6 +6,8 @@ permalink: /kb/138/Q138767/
 
 ## Q138767: FIX: CreateRelation Method Fails with Non-UNICODE Build
 
+{% raw %}
+
 	Article: Q138767
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -235,3 +237,5 @@ permalink: /kb/138/Q138767/
 	
 	=============================================================================
 	
+
+{% endraw %}

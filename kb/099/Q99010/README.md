@@ -6,6 +6,8 @@ permalink: /kb/099/Q99010/
 
 ## Q99010: Multimedia Err Msg: This AVI File Is too Big...
 
+{% raw %}
+
 	Article: Q99010
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 1.0,2.0,2.0a,3.1,3.11
@@ -80,3 +82,5 @@ permalink: /kb/099/Q99010/
 	
 	=============================================================================
 	
+
+{% endraw %}

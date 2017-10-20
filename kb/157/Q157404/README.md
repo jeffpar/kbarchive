@@ -6,6 +6,8 @@ permalink: /kb/157/Q157404/
 
 ## Q157404: PRB: Changing Field Settings of a Table Deletes Relationships
 
+{% raw %}
+
 	Article: Q157404
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/157/Q157404/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/186/Q186919/
 
 ## Q186919: HOWTO: Manual Mode OLE Drag and Drop Mouse Pointer Changes
 
+{% raw %}
+
 	Article: Q186919
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -291,3 +293,5 @@ permalink: /kb/186/Q186919/
 	
 	=============================================================================
 	
+
+{% endraw %}

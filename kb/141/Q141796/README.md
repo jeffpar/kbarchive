@@ -6,6 +6,8 @@ permalink: /kb/141/Q141796/
 
 ## Q141796: HOWTO: Identify the Jet Database Engine Components
 
+{% raw %}
+
 	Article: Q141796
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -221,3 +223,5 @@ permalink: /kb/141/Q141796/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119663/
 
 ## Q119663: Mac Bookshelf 94, 95, 96-97: Fragmented Audio in Videos
 
+{% raw %}
+
 	Article: Q119663
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994, 1995, 96-97 editions
@@ -55,3 +57,5 @@ permalink: /kb/119/Q119663/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/243/Q243796/
 
 ## Q243796: Pswd. Required with App. Override Sec. &amp; Persistent Verification
 
+{% raw %}
+
 	Article: Q243796
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP3
@@ -73,3 +75,5 @@ permalink: /kb/243/Q243796/
 	
 	=============================================================================
 	
+
+{% endraw %}

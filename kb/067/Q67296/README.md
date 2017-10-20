@@ -6,6 +6,8 @@ permalink: /kb/067/Q67296/
 
 ## Q67296: Windows 3.0 SDL Disk Directories (5.25 Inch 1.2 MB)
 
+{% raw %}
+
 	Article: Q67296
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -159,3 +161,5 @@ permalink: /kb/067/Q67296/
 	
 	=============================================================================
 	
+
+{% endraw %}

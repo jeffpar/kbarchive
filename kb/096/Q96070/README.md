@@ -6,6 +6,8 @@ permalink: /kb/096/Q96070/
 
 ## Q96070: Golf Err Msg: &quot;Requires 1.43 MB Available Memory&quot;
 
+{% raw %}
+
 	Article: Q96070
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -94,3 +96,5 @@ permalink: /kb/096/Q96070/
 	
 	=============================================================================
 	
+
+{% endraw %}

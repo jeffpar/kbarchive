@@ -6,6 +6,8 @@ permalink: /kb/242/Q242486/
 
 ## Q242486: Slow Performance of NetWare Logon Script with GSNW
 
+{% raw %}
+
 	Article: Q242486
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4
@@ -134,3 +136,5 @@ permalink: /kb/242/Q242486/
 	
 	=============================================================================
 	
+
+{% endraw %}

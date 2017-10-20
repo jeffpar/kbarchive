@@ -6,6 +6,8 @@ permalink: /kb/169/Q169953/
 
 ## Q169953: DOC: Mastering: Sound Level in Introduction Too low
 
+{% raw %}
+
 	Article: Q169953
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -51,3 +53,5 @@ permalink: /kb/169/Q169953/
 	
 	=============================================================================
 	
+
+{% endraw %}

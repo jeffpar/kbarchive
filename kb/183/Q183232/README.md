@@ -6,6 +6,8 @@ permalink: /kb/183/Q183232/
 
 ## Q183232: Problems Using Multihoming in Windows 95
 
+{% raw %}
+
 	Article: Q183232
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -79,3 +81,5 @@ permalink: /kb/183/Q183232/
 	
 	=============================================================================
 	
+
+{% endraw %}

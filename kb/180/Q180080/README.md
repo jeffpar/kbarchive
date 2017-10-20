@@ -6,6 +6,8 @@ permalink: /kb/180/Q180080/
 
 ## Q180080: Automap: GPS Devices Are Not Detected on COM3 or COM4
 
+{% raw %}
+
 	Article: Q180080
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:5.0
@@ -46,3 +48,5 @@ permalink: /kb/180/Q180080/
 	
 	=============================================================================
 	
+
+{% endraw %}

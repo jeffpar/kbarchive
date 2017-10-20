@@ -6,6 +6,8 @@ permalink: /kb/161/Q161738/
 
 ## Q161738: BUG: Large Memo Field Forces Undesired New Report Page
 
+{% raw %}
+
 	Article: Q161738
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,6.0
@@ -130,3 +132,5 @@ permalink: /kb/161/Q161738/
 	
 	=============================================================================
 	
+
+{% endraw %}

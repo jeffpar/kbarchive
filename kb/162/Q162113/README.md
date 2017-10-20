@@ -6,6 +6,8 @@ permalink: /kb/162/Q162113/
 
 ## Q162113: PRB: Project Modification Not Reflected in Shadow Directory
 
+{% raw %}
+
 	Article: Q162113
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/162/Q162113/
 	
 	=============================================================================
 	
+
+{% endraw %}

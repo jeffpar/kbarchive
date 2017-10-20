@@ -6,6 +6,8 @@ permalink: /kb/152/Q152138/
 
 ## Q152138: Limits on Fonts Used in Arabic Windows 3.1 Edit Control
 
+{% raw %}
+
 	Article: Q152138
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -63,3 +65,5 @@ permalink: /kb/152/Q152138/
 	
 	=============================================================================
 	
+
+{% endraw %}

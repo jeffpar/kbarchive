@@ -6,6 +6,8 @@ permalink: /kb/096/Q96829/
 
 ## Q96829: Explanation of the WINA20.386 File
 
+{% raw %}
+
 	Article: Q96829
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -154,3 +156,5 @@ permalink: /kb/096/Q96829/
 	
 	=============================================================================
 	
+
+{% endraw %}

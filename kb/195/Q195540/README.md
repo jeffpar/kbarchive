@@ -6,6 +6,8 @@ permalink: /kb/195/Q195540/
 
 ## Q195540: Windows NT 4.0 Does Not Recognize ATAPI Iomega Clik 40! Drive
 
+{% raw %}
+
 	Article: Q195540
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -72,3 +74,5 @@ permalink: /kb/195/Q195540/
 	
 	=============================================================================
 	
+
+{% endraw %}

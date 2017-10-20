@@ -6,6 +6,8 @@ permalink: /kb/240/Q240699/
 
 ## Q240699: PC WSPlus: Error Message &quot;Schedule Plus Caused a GPF in Dem...
 
+{% raw %}
+
 	Article: Q240699
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): 1.0,95,98
@@ -58,3 +60,5 @@ permalink: /kb/240/Q240699/
 	
 	=============================================================================
 	
+
+{% endraw %}

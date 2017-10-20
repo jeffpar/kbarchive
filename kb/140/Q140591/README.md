@@ -6,6 +6,8 @@ permalink: /kb/140/Q140591/
 
 ## Q140591: HOWTO: Display an MFC Automation Document Automatically
 
+{% raw %}
+
 	Article: Q140591
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0,6.0
@@ -125,10 +127,10 @@ permalink: /kb/140/Q140591/
 	
 	         // Overrides
 	         // ClassWizard generated virtual function overrides
-	         // { {AFX_VIRTUAL(CMyApp)
+	         // {{AFX_VIRTUAL(CMyApp)
 	         public:
 	         virtual BOOL InitInstance();
-	         // } }AFX_VIRTUAL
+	         // }}AFX_VIRTUAL
 	
 	         // Implementation
 	         CMyTemplateServer m_server; // <== change to derived class
@@ -178,3 +180,5 @@ permalink: /kb/140/Q140591/
 	
 	=============================================================================
 	
+
+{% endraw %}

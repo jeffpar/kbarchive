@@ -6,6 +6,8 @@ permalink: /kb/195/Q195689/
 
 ## Q195689: WD97: &quot;Converter Is an Old Version&quot; Error Trying to Convert
 
+{% raw %}
+
 	Article: Q195689
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/195/Q195689/
 	
 	=============================================================================
 	
+
+{% endraw %}

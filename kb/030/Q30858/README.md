@@ -6,6 +6,8 @@ permalink: /kb/030/Q30858/
 
 ## Q30858: QuickBASIC 4.x Procedure Name Followed By Colon Not Executed
 
+{% raw %}
+
 	Article: Q30858
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -65,3 +67,5 @@ permalink: /kb/030/Q30858/
 	   SUB subtest
 	   PRINT "this is sub test"
 	   END SUB
+
+{% endraw %}

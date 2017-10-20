@@ -6,6 +6,8 @@ permalink: /kb/191/Q191967/
 
 ## Q191967: PRB: Visual FoxPro In-Process Servers Do Not Run Concurrently
 
+{% raw %}
+
 	Article: Q191967
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -113,3 +115,5 @@ permalink: /kb/191/Q191967/
 	
 	=============================================================================
 	
+
+{% endraw %}

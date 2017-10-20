@@ -6,6 +6,8 @@ permalink: /kb/134/Q134581/
 
 ## Q134581: Xtradrive 3.0 Requires SETVER Before LOADHIGH Will Work
 
+{% raw %}
+
 	Article: Q134581
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/134/Q134581/
 	
 	=============================================================================
 	
+
+{% endraw %}

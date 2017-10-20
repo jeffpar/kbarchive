@@ -6,6 +6,8 @@ permalink: /kb/224/Q224373/
 
 ## Q224373: Application Name Is Blank When Created in HTMLA
 
+{% raw %}
+
 	Article: Q224373
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -47,3 +49,5 @@ permalink: /kb/224/Q224373/
 	
 	=============================================================================
 	
+
+{% endraw %}

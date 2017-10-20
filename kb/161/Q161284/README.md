@@ -6,6 +6,8 @@ permalink: /kb/161/Q161284/
 
 ## Q161284: WD97: Word Hangs When Ungrouping 32nd Linked Text Box To Object
 
+{% raw %}
+
 	Article: Q161284
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/161/Q161284/
 	
 	=============================================================================
 	
+
+{% endraw %}

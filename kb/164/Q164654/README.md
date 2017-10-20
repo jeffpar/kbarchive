@@ -6,6 +6,8 @@ permalink: /kb/164/Q164654/
 
 ## Q164654: SMS: SystemRole May Be Either &quot;Workstation&quot; or &quot;WorkStation&quot;
 
+{% raw %}
+
 	Article: Q164654
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -62,3 +64,5 @@ permalink: /kb/164/Q164654/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132884/
 
 ## Q132884: Icons Are Not Displayed Correctly with Microsoft Plus!
 
+{% raw %}
+
 	Article: Q132884
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/132/Q132884/
 	
 	=============================================================================
 	
+
+{% endraw %}

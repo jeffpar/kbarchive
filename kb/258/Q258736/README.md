@@ -6,6 +6,8 @@ permalink: /kb/258/Q258736/
 
 ## Q258736: FIX: Multi-Threaded DLL Is Slow to Release Connection Under MTS
 
+{% raw %}
+
 	Article: Q258736
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -168,3 +170,5 @@ permalink: /kb/258/Q258736/
 	
 	=============================================================================
 	
+
+{% endraw %}

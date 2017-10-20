@@ -6,6 +6,8 @@ permalink: /kb/198/Q198751/
 
 ## Q198751: SMS: Query Statement Window Displays Maximum of 3,955 Characters
 
+{% raw %}
+
 	Article: Q198751
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -55,3 +57,5 @@ permalink: /kb/198/Q198751/
 	
 	=============================================================================
 	
+
+{% endraw %}

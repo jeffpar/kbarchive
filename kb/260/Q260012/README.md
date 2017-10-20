@@ -6,6 +6,8 @@ permalink: /kb/260/Q260012/
 
 ## Q260012: StarLancer: Cannot Change the Default Video Settings in the Game
 
+{% raw %}
+
 	Article: Q260012
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -65,3 +67,5 @@ permalink: /kb/260/Q260012/
 	
 	=============================================================================
 	
+
+{% endraw %}

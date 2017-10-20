@@ -6,6 +6,8 @@ permalink: /kb/111/Q111018/
 
 ## Q111018: Adding the Proof Menu Item to the Excel 5.0 Menu Bar
 
+{% raw %}
+
 	Article: Q111018
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/111/Q111018/
 	
 	=============================================================================
 	
+
+{% endraw %}

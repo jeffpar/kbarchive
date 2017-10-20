@@ -6,6 +6,8 @@ permalink: /kb/191/Q191924/
 
 ## Q191924: INFO: Application Wizard Basic Architecture
 
+{% raw %}
+
 	Article: Q191924
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -196,3 +198,5 @@ permalink: /kb/191/Q191924/
 	
 	=============================================================================
 	
+
+{% endraw %}

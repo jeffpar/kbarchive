@@ -6,6 +6,8 @@ permalink: /kb/259/Q259204/
 
 ## Q259204: &quot;Access Is Denied&quot; Error Message Running Winntup.exe
 
+{% raw %}
+
 	Article: Q259204
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -53,3 +55,5 @@ permalink: /kb/259/Q259204/
 	
 	=============================================================================
 	
+
+{% endraw %}

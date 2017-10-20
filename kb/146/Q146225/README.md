@@ -6,6 +6,8 @@ permalink: /kb/146/Q146225/
 
 ## Q146225: Pregnancy and Child Care: Content Specific to US Market
 
+{% raw %}
+
 	Article: Q146225
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -36,3 +38,5 @@ permalink: /kb/146/Q146225/
 	
 	=============================================================================
 	
+
+{% endraw %}

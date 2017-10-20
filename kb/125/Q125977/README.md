@@ -6,6 +6,8 @@ permalink: /kb/125/Q125977/
 
 ## Q125977: Installing Windows NT Server As a BDC Fails
 
+{% raw %}
+
 	Article: Q125977
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/125/Q125977/
 	
 	=============================================================================
 	
+
+{% endraw %}

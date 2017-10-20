@@ -6,6 +6,8 @@ permalink: /kb/131/Q131201/
 
 ## Q131201: INFO: Print Setup Options Saved with the Report
 
+{% raw %}
+
 	Article: Q131201
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/131/Q131201/
 	
 	=============================================================================
 	
+
+{% endraw %}

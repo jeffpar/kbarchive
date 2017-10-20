@@ -6,6 +6,8 @@ permalink: /kb/166/Q166312/
 
 ## Q166312: XADM: Replication or Knowledge Consistency Check Fails
 
+{% raw %}
+
 	Article: Q166312
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -70,3 +72,5 @@ permalink: /kb/166/Q166312/
 	
 	=============================================================================
 	
+
+{% endraw %}

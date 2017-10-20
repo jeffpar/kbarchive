@@ -6,6 +6,8 @@ permalink: /kb/156/Q156433/
 
 ## Q156433: User Environment Variables Cannot be Modified
 
+{% raw %}
+
 	Article: Q156433
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -69,3 +71,5 @@ permalink: /kb/156/Q156433/
 	
 	=============================================================================
 	
+
+{% endraw %}

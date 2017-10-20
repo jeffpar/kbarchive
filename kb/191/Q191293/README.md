@@ -6,6 +6,8 @@ permalink: /kb/191/Q191293/
 
 ## Q191293: SMS: PCMSVC32 Does Not Recover from a Logon Server Failure
 
+{% raw %}
+
 	Article: Q191293
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -48,3 +50,5 @@ permalink: /kb/191/Q191293/
 	
 	=============================================================================
 	
+
+{% endraw %}

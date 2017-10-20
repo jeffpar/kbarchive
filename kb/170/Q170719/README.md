@@ -6,6 +6,8 @@ permalink: /kb/170/Q170719/
 
 ## Q170719: WD97: Using SendKeys with Dialog Boxes
 
+{% raw %}
+
 	Article: Q170719
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -109,3 +111,5 @@ permalink: /kb/170/Q170719/
 	
 	=============================================================================
 	
+
+{% endraw %}

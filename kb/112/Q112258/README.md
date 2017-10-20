@@ -6,6 +6,8 @@ permalink: /kb/112/Q112258/
 
 ## Q112258: PC Win: Err Msg: There Was An Error Opening the Specified File
 
+{% raw %}
+
 	Article: Q112258
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b
@@ -39,3 +41,5 @@ permalink: /kb/112/Q112258/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239699/
 
 ## Q239699: Err Msg: Internet Explorer Cannot Open the Internet Site URL...
 
+{% raw %}
+
 	Article: Q239699
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:5,95
@@ -79,3 +81,5 @@ permalink: /kb/239/Q239699/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232044/
 
 ## Q232044: The Stats Frame in a Network Monitor Capture
 
+{% raw %}
+
 	Article: Q232044
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:3.11,95,98; winnt:3.51,4.0
@@ -88,3 +90,5 @@ permalink: /kb/232/Q232044/
 	
 	=============================================================================
 	
+
+{% endraw %}

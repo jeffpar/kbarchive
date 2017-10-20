@@ -6,6 +6,8 @@ permalink: /kb/194/Q194851/
 
 ## Q194851: PC Rmt: Textborder Is Off in Remote Client
 
+{% raw %}
+
 	Article: Q194851
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -74,3 +76,5 @@ permalink: /kb/194/Q194851/
 	
 	=============================================================================
 	
+
+{% endraw %}

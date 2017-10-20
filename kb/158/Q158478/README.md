@@ -6,6 +6,8 @@ permalink: /kb/158/Q158478/
 
 ## Q158478: WD97: Subdocuments Not Saved to Remote Server Location
 
+{% raw %}
+
 	Article: Q158478
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/158/Q158478/
 	
 	=============================================================================
 	
+
+{% endraw %}

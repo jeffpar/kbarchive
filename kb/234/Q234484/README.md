@@ -6,6 +6,8 @@ permalink: /kb/234/Q234484/
 
 ## Q234484: SMS: How to Remove and Rebuild SMS 2.0 Secondary Sites
 
+{% raw %}
+
 	Article: Q234484
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -201,3 +203,5 @@ permalink: /kb/234/Q234484/
 	
 	=============================================================================
 	
+
+{% endraw %}

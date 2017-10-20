@@ -6,6 +6,8 @@ permalink: /kb/081/Q81404/
 
 ## Q81404: Fujitsu Color Printer Drivers Available from Fujitsu
 
+{% raw %}
+
 	Article: Q81404
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -50,3 +52,5 @@ permalink: /kb/081/Q81404/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/261/Q261244/
 
 ## Q261244: XIMS: How to Hide the Default Network News Transfer Protocol Con
 
+{% raw %}
+
 	Article: Q261244
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/261/Q261244/
 	
 	=============================================================================
 	
+
+{% endraw %}

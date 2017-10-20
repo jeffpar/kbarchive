@@ -6,6 +6,8 @@ permalink: /kb/261/Q261193/
 
 ## Q261193: FIX: &quot;Report Width Is Larger Than ..&quot; w/Data Report in Landscape
 
+{% raw %}
+
 	Article: Q261193
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -212,3 +214,5 @@ permalink: /kb/261/Q261193/
 	
 	=============================================================================
 	
+
+{% endraw %}

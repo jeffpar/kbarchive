@@ -6,6 +6,8 @@ permalink: /kb/082/Q82697/
 
 ## Q82697: Novell Cannot Rename Directories with File Manager
 
+{% raw %}
+
 	Article: Q82697
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -37,3 +39,5 @@ permalink: /kb/082/Q82697/
 	
 	=============================================================================
 	
+
+{% endraw %}

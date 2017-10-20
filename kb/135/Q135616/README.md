@@ -6,6 +6,8 @@ permalink: /kb/135/Q135616/
 
 ## Q135616: How to Remove Records from a Table Without Using Delete/Pack
 
+{% raw %}
+
 	Article: Q135616
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -102,3 +104,5 @@ permalink: /kb/135/Q135616/
 	
 	=============================================================================
 	
+
+{% endraw %}

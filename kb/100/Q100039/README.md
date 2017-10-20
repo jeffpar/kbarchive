@@ -6,6 +6,8 @@ permalink: /kb/100/Q100039/
 
 ## Q100039: Mac Wkst: Reading Resources from Server
 
+{% raw %}
+
 	Article: Q100039
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -80,3 +82,5 @@ permalink: /kb/100/Q100039/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/081/Q81139/
 
 ## Q81139: SAMPLE: BkGnd.exe Demonstrates Background Processing in Windows
 
+{% raw %}
+
 	Article: Q81139
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -61,3 +63,5 @@ permalink: /kb/081/Q81139/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159601/
 
 ## Q159601: WinNT Err: Mail Could Not Be Delivered
 
+{% raw %}
+
 	Article: Q159601
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/159/Q159601/
 	
 	=============================================================================
 	
+
+{% endraw %}

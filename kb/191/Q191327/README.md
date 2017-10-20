@@ -6,6 +6,8 @@ permalink: /kb/191/Q191327/
 
 ## Q191327: FIX: Double Value Returned from DLL Gets Decimal Portion of 0
 
+{% raw %}
+
 	Article: Q191327
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -105,3 +107,5 @@ permalink: /kb/191/Q191327/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149318/
 
 ## Q149318: WINS Might Not Scavenge All Local Records
 
+{% raw %}
+
 	Article: Q149318
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -64,3 +66,5 @@ permalink: /kb/149/Q149318/
 	
 	=============================================================================
 	
+
+{% endraw %}

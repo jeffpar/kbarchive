@@ -6,6 +6,8 @@ permalink: /kb/099/Q99242/
 
 ## Q99242: Gateway 2000 Hangs When Using BRIEF with MS-DOS 5.0 or later
 
+{% raw %}
+
 	Article: Q99242
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0,6.2,6.21,6.22
@@ -62,3 +64,5 @@ permalink: /kb/099/Q99242/
 	
 	=============================================================================
 	
+
+{% endraw %}

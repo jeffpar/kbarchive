@@ -6,6 +6,8 @@ permalink: /kb/115/Q115391/
 
 ## Q115391: Upgrade from LAN Manager Release Notes - INTEROP.TXT
 
+{% raw %}
+
 	Article: Q115391
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -311,3 +313,5 @@ permalink: /kb/115/Q115391/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/231/Q231412/
 
 ## Q231412: INFO: Limitations of PVCS_SS.exe
 
+{% raw %}
+
 	Article: Q231412
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/231/Q231412/
 	
 	=============================================================================
 	
+
+{% endraw %}

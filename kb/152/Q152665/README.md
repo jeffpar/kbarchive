@@ -6,6 +6,8 @@ permalink: /kb/152/Q152665/
 
 ## Q152665: How to Immediately Disable and Log off a Domain User
 
+{% raw %}
+
 	Article: Q152665
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -52,3 +54,5 @@ permalink: /kb/152/Q152665/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191494/
 
 ## Q191494: Dial-Up Networking 1.3 Upgrade Available
 
+{% raw %}
+
 	Article: Q191494
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -82,3 +84,5 @@ permalink: /kb/191/Q191494/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131017/
 
 ## Q131017: How to Use Data Sessions in a Toolbar to Show Changes
 
+{% raw %}
+
 	Article: Q131017
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -86,3 +88,5 @@ permalink: /kb/131/Q131017/
 	
 	=============================================================================
 	
+
+{% endraw %}

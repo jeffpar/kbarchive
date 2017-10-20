@@ -6,6 +6,8 @@ permalink: /kb/115/Q115349/
 
 ## Q115349: X400: SMTP Address Dropped from To and CC Lists
 
+{% raw %}
+
 	Article: Q115349
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -58,3 +60,5 @@ permalink: /kb/115/Q115349/
 	
 	=============================================================================
 	
+
+{% endraw %}

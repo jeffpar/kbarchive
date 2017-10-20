@@ -6,6 +6,8 @@ permalink: /kb/241/Q241502/
 
 ## Q241502: XFOR: Misdirection of E-mail May Occur Under High Load
 
+{% raw %}
+
 	Article: Q241502
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -75,3 +77,5 @@ permalink: /kb/241/Q241502/
 	
 	=============================================================================
 	
+
+{% endraw %}

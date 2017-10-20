@@ -6,6 +6,8 @@ permalink: /kb/105/Q105289/
 
 ## Q105289: SMTP: Gateway Hangs Using Novell LAN Workplace for DOS
 
+{% raw %}
+
 	Article: Q105289
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -72,3 +74,5 @@ permalink: /kb/105/Q105289/
 	
 	=============================================================================
 	
+
+{% endraw %}

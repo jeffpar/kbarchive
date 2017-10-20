@@ -6,6 +6,8 @@ permalink: /kb/230/Q230013/
 
 ## Q230013: Error Message After You Install Intel Pro/100 Network Adapter
 
+{% raw %}
+
 	Article: Q230013
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -88,3 +90,5 @@ permalink: /kb/230/Q230013/
 	
 	=============================================================================
 	
+
+{% endraw %}

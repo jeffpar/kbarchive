@@ -6,6 +6,8 @@ permalink: /kb/184/Q184309/
 
 ## Q184309: How to Install IIS Without Rerunning Windows NT Setup
 
+{% raw %}
+
 	Article: Q184309
 	Product(s): Internet Information Server
 	Version(s): WINNT:2.0,3.0
@@ -72,3 +74,5 @@ permalink: /kb/184/Q184309/
 	
 	=============================================================================
 	
+
+{% endraw %}

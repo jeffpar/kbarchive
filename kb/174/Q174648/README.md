@@ -6,6 +6,8 @@ permalink: /kb/174/Q174648/
 
 ## Q174648: SMS: RSERVICE May Display Erroneous Error Messages
 
+{% raw %}
+
 	Article: Q174648
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -79,3 +81,5 @@ permalink: /kb/174/Q174648/
 	
 	=============================================================================
 	
+
+{% endraw %}

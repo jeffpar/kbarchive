@@ -6,6 +6,8 @@ permalink: /kb/237/Q237530/
 
 ## Q237530: Encarta 2000: Error Message When You Double-Click a Shortcut
 
+{% raw %}
+
 	Article: Q237530
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/237/Q237530/
 	
 	=============================================================================
 	
+
+{% endraw %}

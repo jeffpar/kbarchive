@@ -6,6 +6,8 @@ permalink: /kb/148/Q148710/
 
 ## Q148710: XCLN: Appears to Hang on Start w/ Profile Dialog Open
 
+{% raw %}
+
 	Article: Q148710
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -51,3 +53,5 @@ permalink: /kb/148/Q148710/
 	
 	=============================================================================
 	
+
+{% endraw %}

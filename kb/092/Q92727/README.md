@@ -6,6 +6,8 @@ permalink: /kb/092/Q92727/
 
 ## Q92727: Using Norton Utilities with Windows 3.1
 
+{% raw %}
+
 	Article: Q92727
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -143,3 +145,5 @@ permalink: /kb/092/Q92727/
 	
 	=============================================================================
 	
+
+{% endraw %}

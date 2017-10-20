@@ -6,6 +6,8 @@ permalink: /kb/136/Q136116/
 
 ## Q136116: SMTP: XXENC User Unknown
 
+{% raw %}
+
 	Article: Q136116
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -71,3 +73,5 @@ permalink: /kb/136/Q136116/
 	
 	=============================================================================
 	
+
+{% endraw %}

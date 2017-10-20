@@ -6,6 +6,8 @@ permalink: /kb/125/Q125478/
 
 ## Q125478: Replicating Login Scripts from Windows NT to LAN Manager
 
+{% raw %}
+
 	Article: Q125478
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -154,3 +156,5 @@ permalink: /kb/125/Q125478/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165659/
 
 ## Q165659: 3270 Applet for Windows NT Does Not Use Ctl3d32
 
+{% raw %}
+
 	Article: Q165659
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/165/Q165659/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/088/Q88458/
 
 ## Q88458: INFO: Windows TrueType Fonts Reading List
 
+{% raw %}
+
 	Article: Q88458
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -171,3 +173,5 @@ permalink: /kb/088/Q88458/
 	
 	=============================================================================
 	
+
+{% endraw %}

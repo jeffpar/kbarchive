@@ -6,6 +6,8 @@ permalink: /kb/249/Q249878/
 
 ## Q249878: XFOR: Notes Dirsync Doesn't Catch All Changes Using Mapping Rule
 
+{% raw %}
+
 	Article: Q249878
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -66,3 +68,5 @@ permalink: /kb/249/Q249878/
 	
 	=============================================================================
 	
+
+{% endraw %}

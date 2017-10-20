@@ -6,6 +6,8 @@ permalink: /kb/047/Q47931/
 
 ## Q47931: Linker Error L1063 and Linking Over 1000 Object Modules
 
+{% raw %}
+
 	Article: Q47931
 	Product(s): See article
 	Version(s): 5.01.21 5.03
@@ -52,3 +54,5 @@ permalink: /kb/047/Q47931/
 	3. Link the object files from the current working directory. If you
 	   must use different directories for your .OBJs, make the pathnames
 	   as short as possible.
+
+{% endraw %}

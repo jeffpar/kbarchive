@@ -6,6 +6,8 @@ permalink: /kb/136/Q136176/
 
 ## Q136176: PPT7: Windows 95 Taskbar Doesn't Respond During Slide Show
 
+{% raw %}
+
 	Article: Q136176
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -54,3 +56,5 @@ permalink: /kb/136/Q136176/
 	
 	=============================================================================
 	
+
+{% endraw %}

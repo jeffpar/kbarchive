@@ -6,6 +6,8 @@ permalink: /kb/250/Q250067/
 
 ## Q250067: WritePrivateProfileString() May Not Work
 
+{% raw %}
+
 	Article: Q250067
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -89,3 +91,5 @@ permalink: /kb/250/Q250067/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139995/
 
 ## Q139995: FIX: Duplicate Column Names Improperly Qualified by Wizards
 
+{% raw %}
+
 	Article: Q139995
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -267,3 +269,5 @@ permalink: /kb/139/Q139995/
 	
 	=============================================================================
 	
+
+{% endraw %}

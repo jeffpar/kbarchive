@@ -6,6 +6,8 @@ permalink: /kb/125/Q125601/
 
 ## Q125601: Err Msg: &quot;Could Not Open the Application Database&quot; as PGC Starts
 
+{% raw %}
+
 	Article: Q125601
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -47,3 +49,5 @@ permalink: /kb/125/Q125601/
 	
 	=============================================================================
 	
+
+{% endraw %}

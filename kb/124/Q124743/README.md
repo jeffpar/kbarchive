@@ -6,6 +6,8 @@ permalink: /kb/124/Q124743/
 
 ## Q124743: Cannot Manually Define Baud Rate for COM Ports
 
+{% raw %}
+
 	Article: Q124743
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/124/Q124743/
 	
 	=============================================================================
 	
+
+{% endraw %}

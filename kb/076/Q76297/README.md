@@ -6,6 +6,8 @@ permalink: /kb/076/Q76297/
 
 ## Q76297: LAN Manager/MS-DOS 5.0 Supplemental Disks README File
 
+{% raw %}
+
 	Article: Q76297
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -725,3 +727,5 @@ permalink: /kb/076/Q76297/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146933/
 
 ## Q146933: XADM: Organization Name Change Will Not be Displayed
 
+{% raw %}
+
 	Article: Q146933
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -44,3 +46,5 @@ permalink: /kb/146/Q146933/
 	
 	=============================================================================
 	
+
+{% endraw %}

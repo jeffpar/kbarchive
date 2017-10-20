@@ -6,6 +6,8 @@ permalink: /kb/189/Q189126/
 
 ## Q189126: Microsoft's Policy Regarding Missing or Invalid Passwords
 
+{% raw %}
+
 	Article: Q189126
 	Product(s): Microsoft Product Support Information
 	Version(s): 2.x,3.x,4.0,4.0a,5.0,6.0
@@ -216,3 +218,5 @@ permalink: /kb/189/Q189126/
 	
 	=============================================================================
 	
+
+{% endraw %}

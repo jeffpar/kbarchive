@@ -6,6 +6,8 @@ permalink: /kb/072/Q72163/
 
 ## Q72163: Use of Help in Windows File Manager
 
+{% raw %}
+
 	Article: Q72163
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -69,3 +71,5 @@ permalink: /kb/072/Q72163/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139056/
 
 ## Q139056: Promoting Windows NT BDC Does Not Close Client Connections
 
+{% raw %}
+
 	Article: Q139056
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -45,3 +47,5 @@ permalink: /kb/139/Q139056/
 	
 	=============================================================================
 	
+
+{% endraw %}

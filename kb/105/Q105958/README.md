@@ -6,6 +6,8 @@ permalink: /kb/105/Q105958/
 
 ## Q105958: PC Ext: Display Command Does Not Work with External 3.2
 
+{% raw %}
+
 	Article: Q105958
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -47,3 +49,5 @@ permalink: /kb/105/Q105958/
 	
 	=============================================================================
 	
+
+{% endraw %}

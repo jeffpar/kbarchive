@@ -6,6 +6,8 @@ permalink: /kb/271/Q271547/
 
 ## Q271547: XADM: Move Mailbox Utility Does Not Work with Antivirus API
 
+{% raw %}
+
 	Article: Q271547
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -121,3 +123,5 @@ permalink: /kb/271/Q271547/
 	
 	=============================================================================
 	
+
+{% endraw %}

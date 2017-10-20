@@ -6,6 +6,8 @@ permalink: /kb/106/Q106212/
 
 ## Q106212: Breaking Out of GREP May Return You to Command Prompt
 
+{% raw %}
+
 	Article: Q106212
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.1,3.5
@@ -63,3 +65,5 @@ permalink: /kb/106/Q106212/
 	
 	=============================================================================
 	
+
+{% endraw %}

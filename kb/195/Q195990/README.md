@@ -6,6 +6,8 @@ permalink: /kb/195/Q195990/
 
 ## Q195990: WD97: How to Change Table Width After Changing Margins
 
+{% raw %}
+
 	Article: Q195990
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -54,3 +56,5 @@ permalink: /kb/195/Q195990/
 	
 	=============================================================================
 	
+
+{% endraw %}

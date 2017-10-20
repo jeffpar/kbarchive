@@ -6,6 +6,8 @@ permalink: /kb/084/Q84372/
 
 ## Q84372: Failed Installation When Using Full Page Genius Video Monitor
 
+{% raw %}
+
 	Article: Q84372
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -57,3 +59,5 @@ permalink: /kb/084/Q84372/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/075/Q75392/
 
 ## Q75392: RESTORE /D Returns 'Restore File Sequence Error' Message
 
+{% raw %}
+
 	Article: Q75392
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -65,3 +67,5 @@ permalink: /kb/075/Q75392/
 	
 	=============================================================================
 	
+
+{% endraw %}

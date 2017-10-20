@@ -6,6 +6,8 @@ permalink: /kb/084/Q84589/
 
 ## Q84589: Certain Phoenix BIOS Versions Hang System with CTRL+ALT+DEL
 
+{% raw %}
+
 	Article: Q84589
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -79,3 +81,5 @@ permalink: /kb/084/Q84589/
 	
 	=============================================================================
 	
+
+{% endraw %}

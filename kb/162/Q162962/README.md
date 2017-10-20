@@ -6,6 +6,8 @@ permalink: /kb/162/Q162962/
 
 ## Q162962: ODE97: New Features in MS Office 97 Developer Edition Tools
 
+{% raw %}
+
 	Article: Q162962
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -123,3 +125,5 @@ permalink: /kb/162/Q162962/
 	
 	=============================================================================
 	
+
+{% endraw %}

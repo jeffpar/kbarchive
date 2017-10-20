@@ -6,6 +6,8 @@ permalink: /kb/078/Q78856/
 
 ## Q78856: INFO: Watch Window Displays Arrays as Pointers
 
+{% raw %}
+
 	Article: Q78856
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0
@@ -91,3 +93,5 @@ permalink: /kb/078/Q78856/
 	
 	=============================================================================
 	
+
+{% endraw %}

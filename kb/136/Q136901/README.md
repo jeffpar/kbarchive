@@ -6,6 +6,8 @@ permalink: /kb/136/Q136901/
 
 ## Q136901: How to Determine the Firing Order of Form and Object Events
 
+{% raw %}
+
 	Article: Q136901
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -93,3 +95,5 @@ permalink: /kb/136/Q136901/
 	
 	=============================================================================
 	
+
+{% endraw %}

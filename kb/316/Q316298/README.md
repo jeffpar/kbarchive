@@ -6,6 +6,8 @@ permalink: /kb/316/Q316298/
 
 ## Q316298: HOW TO: Choose a Volume Type for Your Windows NT Environment
 
+{% raw %}
+
 	Article: Q316298
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -259,3 +261,5 @@ permalink: /kb/316/Q316298/
 	
 	=============================================================================
 	
+
+{% endraw %}

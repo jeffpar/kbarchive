@@ -6,6 +6,8 @@ permalink: /kb/151/Q151700/
 
 ## Q151700: XADM: 4.0 Proxy Address Generator and Scandinavian Characters
 
+{% raw %}
+
 	Article: Q151700
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/151/Q151700/
 	
 	=============================================================================
 	
+
+{% endraw %}

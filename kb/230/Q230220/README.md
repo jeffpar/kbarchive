@@ -6,6 +6,8 @@ permalink: /kb/230/Q230220/
 
 ## Q230220: TN3270 Emulators May Fail to Reconnect After Inactivity Timeout
 
+{% raw %}
+
 	Article: Q230220
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0SP2
@@ -122,3 +124,5 @@ permalink: /kb/230/Q230220/
 	
 	=============================================================================
 	
+
+{% endraw %}

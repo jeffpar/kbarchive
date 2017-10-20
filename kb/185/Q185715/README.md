@@ -6,6 +6,8 @@ permalink: /kb/185/Q185715/
 
 ## Q185715: CPI-C Side Information Does Not Allow &quot;.&quot; (period) in TP Name
 
+{% raw %}
+
 	Article: Q185715
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -82,3 +84,5 @@ permalink: /kb/185/Q185715/
 	
 	=============================================================================
 	
+
+{% endraw %}

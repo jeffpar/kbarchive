@@ -6,6 +6,8 @@ permalink: /kb/234/Q234860/
 
 ## Q234860: Dr. Watson Does Not Run with Certain Extensible Counters
 
+{% raw %}
+
 	Article: Q234860
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/234/Q234860/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/154/Q154754/
 
 ## Q154754: STB PowerGraph Video VLB Display Adapter Not Detected
 
+{% raw %}
+
 	Article: Q154754
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -49,3 +51,5 @@ permalink: /kb/154/Q154754/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/302/Q302444/
 
 ## Q302444: Can't Add New User After Using &quot;Forgot My Password&quot; Option To Re
 
+{% raw %}
+
 	Article: Q302444
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -54,3 +56,5 @@ permalink: /kb/302/Q302444/
 	
 	=============================================================================
 	
+
+{% endraw %}

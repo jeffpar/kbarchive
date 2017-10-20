@@ -6,6 +6,8 @@ permalink: /kb/102/Q102628/
 
 ## Q102628: Microsoft OS/2 Version 1.3 Hardware Compatibility List
 
+{% raw %}
+
 	Article: Q102628
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -751,3 +753,5 @@ permalink: /kb/102/Q102628/
 	
 	=============================================================================
 	
+
+{% endraw %}

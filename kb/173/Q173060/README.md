@@ -6,6 +6,8 @@ permalink: /kb/173/Q173060/
 
 ## Q173060: Performance Monitor Counters Cause Stop or Error Messages
 
+{% raw %}
+
 	Article: Q173060
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -195,3 +197,5 @@ permalink: /kb/173/Q173060/
 	
 	=============================================================================
 	
+
+{% endraw %}

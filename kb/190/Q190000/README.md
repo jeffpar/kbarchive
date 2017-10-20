@@ -6,6 +6,8 @@ permalink: /kb/190/Q190000/
 
 ## Q190000: HOWTO: Get Started Programming with the Windows API (LONG)
 
+{% raw %}
+
 	Article: Q190000
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -484,3 +486,5 @@ permalink: /kb/190/Q190000/
 	
 	=============================================================================
 	
+
+{% endraw %}

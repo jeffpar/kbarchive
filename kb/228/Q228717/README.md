@@ -6,6 +6,8 @@ permalink: /kb/228/Q228717/
 
 ## Q228717: Document Footers Do Not Work with ASP Pages
 
+{% raw %}
+
 	Article: Q228717
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/228/Q228717/
 	
 	=============================================================================
 	
+
+{% endraw %}

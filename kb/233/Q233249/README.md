@@ -6,6 +6,8 @@ permalink: /kb/233/Q233249/
 
 ## Q233249: NET SEND &lt;MyComputer&gt; May Not Work with Disabled Network Adapter
 
+{% raw %}
+
 	Article: Q233249
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -82,3 +84,5 @@ permalink: /kb/233/Q233249/
 	
 	=============================================================================
 	
+
+{% endraw %}

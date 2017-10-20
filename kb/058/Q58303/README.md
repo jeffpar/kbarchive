@@ -6,6 +6,8 @@ permalink: /kb/058/Q58303/
 
 ## Q58303: SYSTEM.INI Setting Required for AST VGA Plus
 
+{% raw %}
+
 	Article: Q58303
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -39,3 +41,5 @@ permalink: /kb/058/Q58303/
 	
 	=============================================================================
 	
+
+{% endraw %}

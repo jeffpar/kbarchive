@@ -6,6 +6,8 @@ permalink: /kb/069/Q69046/
 
 ## Q69046: Predefined Keys Trap All SHIFT Combinations; PEEK SHIFT Status
 
+{% raw %}
+
 	Article: Q69046
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -92,3 +94,5 @@ permalink: /kb/069/Q69046/
 	For more information on this topic, query on the following words:
 	
 	   key and trap and CAPS and NUM and LOCK and user and defined
+
+{% endraw %}

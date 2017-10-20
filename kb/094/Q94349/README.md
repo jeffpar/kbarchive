@@ -6,6 +6,8 @@ permalink: /kb/094/Q94349/
 
 ## Q94349: Using FoxPro Text Merge Feature with Multiple Databases
 
+{% raw %}
+
 	Article: Q94349
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a; WINDOWS:2.5,2.5a,3.0
@@ -96,3 +98,5 @@ permalink: /kb/094/Q94349/
 	
 	=============================================================================
 	
+
+{% endraw %}

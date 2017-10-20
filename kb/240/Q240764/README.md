@@ -6,6 +6,8 @@ permalink: /kb/240/Q240764/
 
 ## Q240764: Office 2000 8 in 1, Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q240764
 	Product(s): Microsoft Press
 	Version(s): 
@@ -146,3 +148,5 @@ permalink: /kb/240/Q240764/
 	
 	=============================================================================
 	
+
+{% endraw %}

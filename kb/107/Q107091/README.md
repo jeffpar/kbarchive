@@ -6,6 +6,8 @@ permalink: /kb/107/Q107091/
 
 ## Q107091: PROFS: Duplicate Messages Delivered to PROFS Users
 
+{% raw %}
+
 	Article: Q107091
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -53,3 +55,5 @@ permalink: /kb/107/Q107091/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145941/
 
 ## Q145941: Cannot Boot to MS-DOS On a Windows NT Mirrored FAT Partition
 
+{% raw %}
+
 	Article: Q145941
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -67,3 +69,5 @@ permalink: /kb/145/Q145941/
 	
 	=============================================================================
 	
+
+{% endraw %}

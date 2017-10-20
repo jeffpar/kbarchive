@@ -6,6 +6,8 @@ permalink: /kb/168/Q168082/
 
 ## Q168082: FIX: Crash During Project Conversion If Project Has MAC Targets
 
+{% raw %}
+
 	Article: Q168082
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -59,3 +61,5 @@ permalink: /kb/168/Q168082/
 	
 	=============================================================================
 	
+
+{% endraw %}

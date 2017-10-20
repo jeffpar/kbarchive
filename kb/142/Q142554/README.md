@@ -6,6 +6,8 @@ permalink: /kb/142/Q142554/
 
 ## Q142554: How to Use the Box Method to Create a Shadow Effect
 
+{% raw %}
+
 	Article: Q142554
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -92,3 +94,5 @@ permalink: /kb/142/Q142554/
 	
 	=============================================================================
 	
+
+{% endraw %}

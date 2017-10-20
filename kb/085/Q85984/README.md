@@ -6,6 +6,8 @@ permalink: /kb/085/Q85984/
 
 ## Q85984: Epson LQ-950 Prints Jagged Characters or Vertical Lines
 
+{% raw %}
+
 	Article: Q85984
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/085/Q85984/
 	
 	=============================================================================
 	
+
+{% endraw %}

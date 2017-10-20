@@ -6,6 +6,8 @@ permalink: /kb/092/Q92609/
 
 ## Q92609: PRB: SEGMENT AT Does Not Initialize Data at Absolute Address
 
+{% raw %}
+
 	Article: Q92609
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b
@@ -89,3 +91,5 @@ permalink: /kb/092/Q92609/
 	
 	=============================================================================
 	
+
+{% endraw %}

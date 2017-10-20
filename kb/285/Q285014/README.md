@@ -6,6 +6,8 @@ permalink: /kb/285/Q285014/
 
 ## Q285014: Games Error Message: PFN_List_Corrupt or IRQL_NOT_LESS_OR_EQUAL
 
+{% raw %}
+
 	Article: Q285014
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,4.0
@@ -75,3 +77,5 @@ permalink: /kb/285/Q285014/
 	
 	=============================================================================
 	
+
+{% endraw %}

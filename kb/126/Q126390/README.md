@@ -6,6 +6,8 @@ permalink: /kb/126/Q126390/
 
 ## Q126390: Macintosh Print to Non-PostScript Printer Has Extraneous Lines
 
+{% raw %}
+
 	Article: Q126390
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -64,3 +66,5 @@ permalink: /kb/126/Q126390/
 	
 	=============================================================================
 	
+
+{% endraw %}

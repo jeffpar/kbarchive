@@ -6,6 +6,8 @@ permalink: /kb/083/Q83907/
 
 ## Q83907: Error in NETWORKS.WRI Concerning Printing Across LANtastic
 
+{% raw %}
+
 	Article: Q83907
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -84,3 +86,5 @@ permalink: /kb/083/Q83907/
 	
 	=============================================================================
 	
+
+{% endraw %}

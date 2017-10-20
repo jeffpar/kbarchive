@@ -6,6 +6,8 @@ permalink: /kb/132/Q132313/
 
 ## Q132313: Status of FoxPro &quot;Desk Accessories&quot;
 
+{% raw %}
+
 	Article: Q132313
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/132/Q132313/
 	
 	=============================================================================
 	
+
+{% endraw %}

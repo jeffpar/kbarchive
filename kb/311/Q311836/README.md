@@ -6,6 +6,8 @@ permalink: /kb/311/Q311836/
 
 ## Q311836: FIX: SQL Server Driver Fails to Connect over TCP/IP
 
+{% raw %}
+
 	Article: Q311836
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.6,2.6 SP1,2.6 sp2,2.7,2000.80.194
@@ -141,3 +143,5 @@ permalink: /kb/311/Q311836/
 	
 	=============================================================================
 	
+
+{% endraw %}

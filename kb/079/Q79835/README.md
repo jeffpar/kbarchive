@@ -6,6 +6,8 @@ permalink: /kb/079/Q79835/
 
 ## Q79835: FIX: MASM 6.0 May Generate Wrong Listing for CMPXCHG
 
+{% raw %}
+
 	Article: Q79835
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.10,6.10a
@@ -98,3 +100,5 @@ permalink: /kb/079/Q79835/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102106/
 
 ## Q102106: PROFS: Using the IBM SENDFILE Command with PROFS Gateway
 
+{% raw %}
+
 	Article: Q102106
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -52,3 +54,5 @@ permalink: /kb/102/Q102106/
 	
 	=============================================================================
 	
+
+{% endraw %}

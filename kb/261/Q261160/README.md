@@ -6,6 +6,8 @@ permalink: /kb/261/Q261160/
 
 ## Q261160: XADM: Error Message When Backing Up Exchange Server Remotely
 
+{% raw %}
+
 	Article: Q261160
 	Product(s): Microsoft Exchange
 	Version(s): 2000,5.5
@@ -96,3 +98,5 @@ permalink: /kb/261/Q261160/
 	
 	=============================================================================
 	
+
+{% endraw %}

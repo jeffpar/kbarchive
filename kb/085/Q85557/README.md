@@ -6,6 +6,8 @@ permalink: /kb/085/Q85557/
 
 ## Q85557: File Manager Shows Garbled Date for Year 2000 or Later
 
+{% raw %}
+
 	Article: Q85557
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.1,3.11
@@ -191,3 +193,5 @@ permalink: /kb/085/Q85557/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/195/Q195058/
 
 ## Q195058: Pinball Arcade: Distorted Graphics or Horizontal Lines in Game
 
+{% raw %}
+
 	Article: Q195058
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/195/Q195058/
 	
 	=============================================================================
 	
+
+{% endraw %}

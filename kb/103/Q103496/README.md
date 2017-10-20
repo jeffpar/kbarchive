@@ -6,6 +6,8 @@ permalink: /kb/103/Q103496/
 
 ## Q103496: Diamond Viper Video Card Not Supported
 
+{% raw %}
+
 	Article: Q103496
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -69,3 +71,5 @@ permalink: /kb/103/Q103496/
 	
 	=============================================================================
 	
+
+{% endraw %}

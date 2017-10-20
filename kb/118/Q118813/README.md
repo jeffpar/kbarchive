@@ -6,6 +6,8 @@ permalink: /kb/118/Q118813/
 
 ## Q118813: PC Ext: Script File Order of Precedence
 
+{% raw %}
+
 	Article: Q118813
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.5
@@ -61,3 +63,5 @@ permalink: /kb/118/Q118813/
 	
 	=============================================================================
 	
+
+{% endraw %}

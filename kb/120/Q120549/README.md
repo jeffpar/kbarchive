@@ -6,6 +6,8 @@ permalink: /kb/120/Q120549/
 
 ## Q120549: How to Start FoxPro from the Apple Menu
 
+{% raw %}
+
 	Article: Q120549
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -70,3 +72,5 @@ permalink: /kb/120/Q120549/
 	
 	=============================================================================
 	
+
+{% endraw %}

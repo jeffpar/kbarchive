@@ -6,6 +6,8 @@ permalink: /kb/132/Q132683/
 
 ## Q132683: PC WSPlus: Schdplus.exe Version 1.0.4003 Update
 
+{% raw %}
+
 	Article: Q132683
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -87,3 +89,5 @@ permalink: /kb/132/Q132683/
 	
 	=============================================================================
 	
+
+{% endraw %}

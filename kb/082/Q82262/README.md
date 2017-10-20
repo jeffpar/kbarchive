@@ -6,6 +6,8 @@ permalink: /kb/082/Q82262/
 
 ## Q82262: Windows Err Msgs: Out of Memory Errors with Lotus 1-2-3
 
+{% raw %}
+
 	Article: Q82262
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/082/Q82262/
 	
 	=============================================================================
 	
+
+{% endraw %}

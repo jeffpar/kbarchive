@@ -6,6 +6,8 @@ permalink: /kb/174/Q174758/
 
 ## Q174758: XADM: Steps Performed During Knowledge Consistency Check
 
+{% raw %}
+
 	Article: Q174758
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -93,3 +95,5 @@ permalink: /kb/174/Q174758/
 	
 	=============================================================================
 	
+
+{% endraw %}

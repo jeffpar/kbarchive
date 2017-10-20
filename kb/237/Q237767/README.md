@@ -6,6 +6,8 @@ permalink: /kb/237/Q237767/
 
 ## Q237767: XADM: Understanding Offline and Snapshot Backups
 
+{% raw %}
+
 	Article: Q237767
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -397,3 +399,5 @@ permalink: /kb/237/Q237767/
 	
 	=============================================================================
 	
+
+{% endraw %}

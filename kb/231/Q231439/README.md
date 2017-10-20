@@ -6,6 +6,8 @@ permalink: /kb/231/Q231439/
 
 ## Q231439: XADM: Error 1276 Starting Information Store
 
+{% raw %}
+
 	Article: Q231439
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -116,3 +118,5 @@ permalink: /kb/231/Q231439/
 	
 	=============================================================================
 	
+
+{% endraw %}

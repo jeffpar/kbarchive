@@ -6,6 +6,8 @@ permalink: /kb/234/Q234578/
 
 ## Q234578: Windows NT 4.0 Backported Kernel With Dynamic Pool Tag Table
 
+{% raw %}
+
 	Article: Q234578
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/234/Q234578/
 	
 	=============================================================================
 	
+
+{% endraw %}

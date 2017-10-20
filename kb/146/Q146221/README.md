@@ -6,6 +6,8 @@ permalink: /kb/146/Q146221/
 
 ## Q146221: How to Use Wildcards in a String Search Routine
 
+{% raw %}
+
 	Article: Q146221
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -84,3 +86,5 @@ permalink: /kb/146/Q146221/
 	
 	=============================================================================
 	
+
+{% endraw %}

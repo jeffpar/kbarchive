@@ -6,6 +6,8 @@ permalink: /kb/225/Q225260/
 
 ## Q225260: Problems Installing Modem Sharing Service with Two Network Cards
 
+{% raw %}
+
 	Article: Q225260
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -55,3 +57,5 @@ permalink: /kb/225/Q225260/
 	
 	=============================================================================
 	
+
+{% endraw %}

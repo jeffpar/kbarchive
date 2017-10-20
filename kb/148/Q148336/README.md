@@ -6,6 +6,8 @@ permalink: /kb/148/Q148336/
 
 ## Q148336: Memory Leak in Windows 95 Kernel Using Windows Sockets
 
+{% raw %}
+
 	Article: Q148336
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/148/Q148336/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163552/
 
 ## Q163552: HOWTO: Reduce the Size of Exe Files Built with VFP
 
+{% raw %}
+
 	Article: Q163552
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -104,3 +106,5 @@ permalink: /kb/163/Q163552/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148600/
 
 ## Q148600: Updated OS/2 Client DLL Files Not Included in Service Pack 1
 
+{% raw %}
+
 	Article: Q148600
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1
@@ -70,3 +72,5 @@ permalink: /kb/148/Q148600/
 	
 	=============================================================================
 	
+
+{% endraw %}

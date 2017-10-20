@@ -6,6 +6,8 @@ permalink: /kb/115/Q115087/
 
 ## Q115087: HOWTO: Change the Background Color of a Common Dialog
 
+{% raw %}
+
 	Article: Q115087
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,4.0
@@ -57,19 +59,19 @@ permalink: /kb/115/Q115087/
 	         CBrush m_pBkBrush;
 	
 	     // Dialog Data
-	         //{ {AFX_DATA(CMyDlg)
+	         //{{AFX_DATA(CMyDlg)
 	         enum { IDD = FILEOPENORD };
 	             // NOTE: the ClassWizard will add data members here
-	         //} }AFX_DATA
+	         //}}AFX_DATA
 	
 	     // Implementation
 	     protected:
 	         virtual void DoDataExchange(CDataExchange* pDX);  // DDX/DDV support
 	
 	         // Generated message map functions
-	         //{ {AFX_MSG(CMyDlg)
+	         //{{AFX_MSG(CMyDlg)
 	         afx_msg HBRUSH OnCtlColor(CDC* pDC, CWnd* pWnd, UINT nCtlColor);
-	         //} }AFX_MSG
+	         //}}AFX_MSG
 	         DECLARE_MESSAGE_MAP()
 	     };
 	
@@ -90,23 +92,23 @@ permalink: /kb/115/Q115087/
 	     CMyDlg::CMyDlg(CWnd* pParent /*=NULL*/)
 	         : CFileDialog(TRUE, NULL, NULL, OFN_HIDEREADONLY)
 	     {
-	         //{ {AFX_DATA_INIT(CMyDlg)
+	         //{{AFX_DATA_INIT(CMyDlg)
 	             // NOTE: the ClassWizard will add member initialization here
-	         //} }AFX_DATA_INIT
+	         //}}AFX_DATA_INIT
 	     }
 	
 	     void CMyDlg::DoDataExchange(CDataExchange* pDX)
 	     {
 	         CDialog::DoDataExchange(pDX);
-	         //{ {AFX_DATA_MAP(CMyDlg)
+	         //{{AFX_DATA_MAP(CMyDlg)
 	             // NOTE: the ClassWizard will add DDX and DDV calls here
-	         //} }AFX_DATA_MAP
+	         //}}AFX_DATA_MAP
 	     }
 	
 	     BEGIN_MESSAGE_MAP(CMyDlg, CFileDialog)
-	         //{ {AFX_MSG_MAP(CMyDlg)
+	         //{{AFX_MSG_MAP(CMyDlg)
 	         ON_WM_CTLCOLOR()
-	         //} }AFX_MSG_MAP
+	         //}}AFX_MSG_MAP
 	     END_MESSAGE_MAP()
 	
 	     ////////////////////////////////////////////////////////////////////// 
@@ -140,3 +142,5 @@ permalink: /kb/115/Q115087/
 	
 	=============================================================================
 	
+
+{% endraw %}

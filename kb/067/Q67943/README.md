@@ -6,6 +6,8 @@ permalink: /kb/067/Q67943/
 
 ## Q67943: System Doesn't Save Time and Date Changes
 
+{% raw %}
+
 	Article: Q67943
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.20,3.21,3.3,3.3a,4.0,4.01,5.0,5.0a,6.0,6.2,6.21,6.22
@@ -60,3 +62,5 @@ permalink: /kb/067/Q67943/
 	
 	=============================================================================
 	
+
+{% endraw %}

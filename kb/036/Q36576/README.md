@@ -6,6 +6,8 @@ permalink: /kb/036/Q36576/
 
 ## Q36576: CTRL+Z Embedded in Source Truncates BC.EXE Compilation
 
+{% raw %}
+
 	Article: Q36576
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -55,3 +57,5 @@ permalink: /kb/036/Q36576/
 	END
 	lab: PRINT "Test"
 	RETURN
+
+{% endraw %}

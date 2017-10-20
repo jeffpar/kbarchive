@@ -6,6 +6,8 @@ permalink: /kb/028/Q28590/
 
 ## Q28590: Microsoft Editor Fails to Find TOOLS.INI Using DOS Version 2.x
 
+{% raw %}
+
 	Article: Q28590
 	Product(s): See article
 	Version(s): 1.00
@@ -54,3 +56,5 @@ permalink: /kb/028/Q28590/
 	1. The virtual memory file, *-XXXX.VM
 	2. The history-and-state file, *.TMP
 	3. The compiler message file, *.MSG
+
+{% endraw %}

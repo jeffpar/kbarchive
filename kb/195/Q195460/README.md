@@ -6,6 +6,8 @@ permalink: /kb/195/Q195460/
 
 ## Q195460: Tutor Err Msg: Program Needs More Memory or Cannot Continue
 
+{% raw %}
+
 	Article: Q195460
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/195/Q195460/
 	
 	=============================================================================
 	
+
+{% endraw %}

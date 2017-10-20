@@ -6,6 +6,8 @@ permalink: /kb/167/Q167652/
 
 ## Q167652: New Installation of Windows NT 4.0 Results in STOP 0x00000050
 
+{% raw %}
+
 	Article: Q167652
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -70,3 +72,5 @@ permalink: /kb/167/Q167652/
 	
 	=============================================================================
 	
+
+{% endraw %}

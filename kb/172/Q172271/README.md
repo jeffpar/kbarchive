@@ -6,6 +6,8 @@ permalink: /kb/172/Q172271/
 
 ## Q172271: HOWTO: Change Case of a Control Name Within the Code Window
 
+{% raw %}
+
 	Article: Q172271
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -138,3 +140,5 @@ permalink: /kb/172/Q172271/
 	
 	=============================================================================
 	
+
+{% endraw %}

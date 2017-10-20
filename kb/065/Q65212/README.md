@@ -6,6 +6,8 @@ permalink: /kb/065/Q65212/
 
 ## Q65212: Mac Form: Form Icon Appears Garbled When Form Is Compiled
 
+{% raw %}
+
 	Article: Q65212
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -42,3 +44,5 @@ permalink: /kb/065/Q65212/
 	
 	=============================================================================
 	
+
+{% endraw %}

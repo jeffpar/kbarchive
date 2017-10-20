@@ -6,6 +6,8 @@ permalink: /kb/094/Q94171/
 
 ## Q94171: WFWG: Using Lotus Notes with Novell Connectivity
 
+{% raw %}
+
 	Article: Q94171
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -77,3 +79,5 @@ permalink: /kb/094/Q94171/
 	
 	=============================================================================
 	
+
+{% endraw %}

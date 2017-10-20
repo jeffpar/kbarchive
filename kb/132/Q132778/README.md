@@ -6,6 +6,8 @@ permalink: /kb/132/Q132778/
 
 ## Q132778: Poor Performance Accessing Network Files with Basic Redirector
 
+{% raw %}
+
 	Article: Q132778
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/132/Q132778/
 	
 	=============================================================================
 	
+
+{% endraw %}

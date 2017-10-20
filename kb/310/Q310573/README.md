@@ -6,6 +6,8 @@ permalink: /kb/310/Q310573/
 
 ## Q310573: Train Simulator: You Cannot Open the Train Simulator Manual
 
+{% raw %}
+
 	Article: Q310573
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -88,3 +90,5 @@ permalink: /kb/310/Q310573/
 	
 	=============================================================================
 	
+
+{% endraw %}

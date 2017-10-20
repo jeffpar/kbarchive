@@ -6,6 +6,8 @@ permalink: /kb/250/Q250989/
 
 ## Q250989: XADM: Installing ADC on Windows 2000 DC w/Exchange Server
 
+{% raw %}
+
 	Article: Q250989
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; winnt:5.5
@@ -90,3 +92,5 @@ permalink: /kb/250/Q250989/
 	
 	=============================================================================
 	
+
+{% endraw %}

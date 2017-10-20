@@ -6,6 +6,8 @@ permalink: /kb/086/Q86190/
 
 ## Q86190: Norton Anti-Virus 2.0 Requires Updated Driver
 
+{% raw %}
+
 	Article: Q86190
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/086/Q86190/
 	
 	=============================================================================
 	
+
+{% endraw %}

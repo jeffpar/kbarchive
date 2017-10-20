@@ -6,6 +6,8 @@ permalink: /kb/149/Q149098/
 
 ## Q149098: MSN Interactive Teen: How Much Does It Cost to Use?
 
+{% raw %}
+
 	Article: Q149098
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0; WINDOWS:95
@@ -44,3 +46,5 @@ permalink: /kb/149/Q149098/
 	
 	=============================================================================
 	
+
+{% endraw %}

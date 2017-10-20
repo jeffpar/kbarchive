@@ -6,6 +6,8 @@ permalink: /kb/168/Q168350/
 
 ## Q168350: WD97: Word for Alpha Unable to Insert DRW, CGM, DXF Graphics
 
+{% raw %}
+
 	Article: Q168350
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/168/Q168350/
 	
 	=============================================================================
 	
+
+{% endraw %}

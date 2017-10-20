@@ -6,6 +6,8 @@ permalink: /kb/078/Q78153/
 
 ## Q78153: &quot;Golden&quot; (Complete) Backup and Restore
 
+{% raw %}
+
 	Article: Q78153
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.0
@@ -81,3 +83,5 @@ permalink: /kb/078/Q78153/
 	
 	=============================================================================
 	
+
+{% endraw %}

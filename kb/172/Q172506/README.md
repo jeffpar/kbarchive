@@ -6,6 +6,8 @@ permalink: /kb/172/Q172506/
 
 ## Q172506: Step By Step Setup Cannot Find Installation Directory On Disk
 
+{% raw %}
+
 	Article: Q172506
 	Product(s): Microsoft Press
 	Version(s): 
@@ -127,3 +129,5 @@ permalink: /kb/172/Q172506/
 	
 	=============================================================================
 	
+
+{% endraw %}

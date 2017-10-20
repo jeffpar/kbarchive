@@ -6,6 +6,8 @@ permalink: /kb/180/Q180417/
 
 ## Q180417: XWEB: Error Msg: Sorry! The Microsoft Exchange Server Is Down
 
+{% raw %}
+
 	Article: Q180417
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5; winnt:5.0,5.5
@@ -204,3 +206,5 @@ permalink: /kb/180/Q180417/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104296/
 
 ## Q104296: RRAS Uses Larger MTU Than Other OSPF Routers
 
+{% raw %}
+
 	Article: Q104296
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/104/Q104296/
 	
 	=============================================================================
 	
+
+{% endraw %}

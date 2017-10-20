@@ -6,6 +6,8 @@ permalink: /kb/201/Q201135/
 
 ## Q201135: XFOR: GroupWise Notes Migrate as All Day Event to Outlook 98
 
+{% raw %}
+
 	Article: Q201135
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/201/Q201135/
 	
 	=============================================================================
 	
+
+{% endraw %}

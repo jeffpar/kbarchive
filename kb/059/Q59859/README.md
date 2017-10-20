@@ -6,6 +6,8 @@ permalink: /kb/059/Q59859/
 
 ## Q59859: Cadkey and Mouse Driver 7.00
 
+{% raw %}
+
 	Article: Q59859
 	Product(s): See article
 	Version(s): 1.00
@@ -19,3 +21,5 @@ permalink: /kb/059/Q59859/
 	
 	Microsoft has confirmed this to be a problem in Mouse Driver Version
 	7.00. This problem was corrected in Mouse Driver Version 7.04.
+
+{% endraw %}

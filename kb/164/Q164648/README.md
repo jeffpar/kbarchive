@@ -6,6 +6,8 @@ permalink: /kb/164/Q164648/
 
 ## Q164648: DLS Properties Should Require Entry for Remote Link
 
+{% raw %}
+
 	Article: Q164648
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -61,3 +63,5 @@ permalink: /kb/164/Q164648/
 	
 	=============================================================================
 	
+
+{% endraw %}

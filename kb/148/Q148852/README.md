@@ -6,6 +6,8 @@ permalink: /kb/148/Q148852/
 
 ## Q148852: PC NTMMTA: Dynamic Connections Fail with Dynadmin and Novell
 
+{% raw %}
+
 	Article: Q148852
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -69,3 +71,5 @@ permalink: /kb/148/Q148852/
 	
 	=============================================================================
 	
+
+{% endraw %}

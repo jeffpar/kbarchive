@@ -6,6 +6,8 @@ permalink: /kb/126/Q126957/
 
 ## Q126957: Composer Titles: Older Sound Blaster CSPMAN.DLL Causes Errors
 
+{% raw %}
+
 	Article: Q126957
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/126/Q126957/
 	
 	=============================================================================
 	
+
+{% endraw %}

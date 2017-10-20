@@ -6,6 +6,8 @@ permalink: /kb/125/Q125645/
 
 ## Q125645: FIX: Edit Control in Property Page Does Not Get Return Keys
 
+{% raw %}
+
 	Article: Q125645
 	Product(s): Microsoft C Compiler
 	Version(s): 2.00
@@ -97,3 +99,5 @@ permalink: /kb/125/Q125645/
 	
 	=============================================================================
 	
+
+{% endraw %}

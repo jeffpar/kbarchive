@@ -6,6 +6,8 @@ permalink: /kb/193/Q193371/
 
 ## Q193371: WINS/DHCP Admin Show Expiration Dates 2000 - 2009 with One Digit
 
+{% raw %}
+
 	Article: Q193371
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51, 4.0
@@ -100,3 +102,5 @@ permalink: /kb/193/Q193371/
 	
 	=============================================================================
 	
+
+{% endraw %}

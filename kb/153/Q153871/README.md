@@ -6,6 +6,8 @@ permalink: /kb/153/Q153871/
 
 ## Q153871: FIX: How to Install When Setup Fails on Novell
 
+{% raw %}
+
 	Article: Q153871
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -172,3 +174,5 @@ permalink: /kb/153/Q153871/
 	
 	=============================================================================
 	
+
+{% endraw %}

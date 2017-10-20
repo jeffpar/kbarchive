@@ -6,6 +6,8 @@ permalink: /kb/128/Q128728/
 
 ## Q128728: How Visual FoxPro Organizes and Accesses Wizards
 
+{% raw %}
+
 	Article: Q128728
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -82,3 +84,5 @@ permalink: /kb/128/Q128728/
 	
 	=============================================================================
 	
+
+{% endraw %}

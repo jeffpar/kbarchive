@@ -6,6 +6,8 @@ permalink: /kb/191/Q191502/
 
 ## Q191502: HOWTO: Use Component Gallery to Build an Application
 
+{% raw %}
+
 	Article: Q191502
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,6.0
@@ -224,3 +226,5 @@ permalink: /kb/191/Q191502/
 	
 	=============================================================================
 	
+
+{% endraw %}

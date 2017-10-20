@@ -6,6 +6,8 @@ permalink: /kb/189/Q189426/
 
 ## Q189426: Runtime Error 1225 When Return Value Is a Recordset
 
+{% raw %}
+
 	Article: Q189426
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -71,3 +73,5 @@ permalink: /kb/189/Q189426/
 	
 	=============================================================================
 	
+
+{% endraw %}

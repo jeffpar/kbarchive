@@ -6,6 +6,8 @@ permalink: /kb/183/Q183728/
 
 ## Q183728: BUG: &quot;Failed To Reload Project&quot; Err Opening VB Group File
 
+{% raw %}
+
 	Article: Q183728
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/183/Q183728/
 	
 	=============================================================================
 	
+
+{% endraw %}

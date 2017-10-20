@@ -6,6 +6,8 @@ permalink: /kb/114/Q114871/
 
 ## Q114871: Bookshelf: QuickShelf GP Faults with PCTools Desktop
 
+{% raw %}
+
 	Article: Q114871
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -81,3 +83,5 @@ permalink: /kb/114/Q114871/
 	
 	=============================================================================
 	
+
+{% endraw %}

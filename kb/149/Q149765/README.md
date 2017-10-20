@@ -6,6 +6,8 @@ permalink: /kb/149/Q149765/
 
 ## Q149765: BUG:Wrong Default Value in Remote Data Object MaxRows Property
 
+{% raw %}
+
 	Article: Q149765
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00 | 4.00
@@ -61,3 +63,5 @@ permalink: /kb/149/Q149765/
 	
 	=============================================================================
 	
+
+{% endraw %}

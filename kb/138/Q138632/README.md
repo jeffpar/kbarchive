@@ -6,6 +6,8 @@ permalink: /kb/138/Q138632/
 
 ## Q138632: PRB: Can't Serialize Items After CRichEditDoc::Serialize
 
+{% raw %}
+
 	Article: Q138632
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/138/Q138632/
 	
 	=============================================================================
 	
+
+{% endraw %}

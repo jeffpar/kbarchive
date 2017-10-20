@@ -6,6 +6,8 @@ permalink: /kb/133/Q133210/
 
 ## Q133210: Adding Note Information to Fax Cover Page
 
+{% raw %}
+
 	Article: Q133210
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/133/Q133210/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149062/
 
 ## Q149062: XCON: Eicon Tech. X.25 Diagnostic Commands for WinNT &amp; Exchange
 
+{% raw %}
+
 	Article: Q149062
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -189,3 +191,5 @@ permalink: /kb/149/Q149062/
 	
 	=============================================================================
 	
+
+{% endraw %}

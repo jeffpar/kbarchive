@@ -6,6 +6,8 @@ permalink: /kb/316/Q316807/
 
 ## Q316807: FIX: Fatal Error When You Select Properties from the Table Menu
 
+{% raw %}
+
 	Article: Q316807
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0,7.0
@@ -90,3 +92,5 @@ permalink: /kb/316/Q316807/
 	
 	=============================================================================
 	
+
+{% endraw %}

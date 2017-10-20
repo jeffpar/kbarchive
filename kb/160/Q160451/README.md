@@ -6,6 +6,8 @@ permalink: /kb/160/Q160451/
 
 ## Q160451: STOP: 0x00000024 in Ntfs.sys with Chkdsk /f
 
+{% raw %}
+
 	Article: Q160451
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -46,3 +48,5 @@ permalink: /kb/160/Q160451/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/060/Q60335/
 
 ## Q60335: Using Second _ellipse() Call to Erase Text Can Fail
 
+{% raw %}
+
 	Article: Q60335
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -61,3 +63,5 @@ permalink: /kb/060/Q60335/
 	
 	3. Finally, you could use _polygon() to simulate the ellipse, since
 	   _polygon() uses a scanfill, not a floodfill.
+
+{% endraw %}

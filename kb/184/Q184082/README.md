@@ -6,6 +6,8 @@ permalink: /kb/184/Q184082/
 
 ## Q184082: How to Use the Assoc Command to Change File Associations
 
+{% raw %}
+
 	Article: Q184082
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/184/Q184082/
 	
 	=============================================================================
 	
+
+{% endraw %}

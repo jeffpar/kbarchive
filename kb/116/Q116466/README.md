@@ -6,6 +6,8 @@ permalink: /kb/116/Q116466/
 
 ## Q116466: Gtwy: One Off Free Form Addressing Formats for PC Mail
 
+{% raw %}
+
 	Article: Q116466
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -155,3 +157,5 @@ permalink: /kb/116/Q116466/
 	
 	=============================================================================
 	
+
+{% endraw %}

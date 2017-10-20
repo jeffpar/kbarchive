@@ -6,6 +6,8 @@ permalink: /kb/190/Q190998/
 
 ## Q190998: DOC: Help for Dir and Files Macros Missing in Project Settings
 
+{% raw %}
+
 	Article: Q190998
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -45,3 +47,5 @@ permalink: /kb/190/Q190998/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85749/
 
 ## Q85749: WRK Translation Buffer Information Is Incorrect
 
+{% raw %}
+
 	Article: Q85749
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -105,3 +107,5 @@ permalink: /kb/085/Q85749/
 	
 	=============================================================================
 	
+
+{% endraw %}

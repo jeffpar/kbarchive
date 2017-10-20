@@ -6,6 +6,8 @@ permalink: /kb/081/Q81705/
 
 ## Q81705: Reading List for Developers of Windows-Based Applications
 
+{% raw %}
+
 	Article: Q81705
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -424,3 +426,5 @@ permalink: /kb/081/Q81705/
 	
 	=============================================================================
 	
+
+{% endraw %}

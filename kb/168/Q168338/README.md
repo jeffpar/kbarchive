@@ -6,6 +6,8 @@ permalink: /kb/168/Q168338/
 
 ## Q168338: WD97: Mouse Causes Equation Editor Toolbar to Disappear
 
+{% raw %}
+
 	Article: Q168338
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:1.0,1.1,2.0,97
@@ -94,3 +96,5 @@ permalink: /kb/168/Q168338/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153564/
 
 ## Q153564: SMS: Admin UI Fails on Exit With an Application Error
 
+{% raw %}
+
 	Article: Q153564
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -47,3 +49,5 @@ permalink: /kb/153/Q153564/
 	
 	=============================================================================
 	
+
+{% endraw %}

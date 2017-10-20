@@ -6,6 +6,8 @@ permalink: /kb/087/Q87342/
 
 ## Q87342: PRB: Small Caps Text Unchanged in Windows Help
 
+{% raw %}
+
 	Article: Q87342
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -60,3 +62,5 @@ permalink: /kb/087/Q87342/
 	
 	=============================================================================
 	
+
+{% endraw %}

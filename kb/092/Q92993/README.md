@@ -6,6 +6,8 @@ permalink: /kb/092/Q92993/
 
 ## Q92993: WFWG Resource Kit Setup and Utilities 3.5-Inch Disk
 
+{% raw %}
+
 	Article: Q92993
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -96,3 +98,5 @@ permalink: /kb/092/Q92993/
 	
 	=============================================================================
 	
+
+{% endraw %}

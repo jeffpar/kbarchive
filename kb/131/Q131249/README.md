@@ -6,6 +6,8 @@ permalink: /kb/131/Q131249/
 
 ## Q131249: Cannot Post BBS Message with Copied Attachment
 
+{% raw %}
+
 	Article: Q131249
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3
@@ -49,3 +51,5 @@ permalink: /kb/131/Q131249/
 	
 	=============================================================================
 	
+
+{% endraw %}

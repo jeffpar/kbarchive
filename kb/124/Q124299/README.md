@@ -6,6 +6,8 @@ permalink: /kb/124/Q124299/
 
 ## Q124299: SFM Does Not Detect Xircom PCMCIA Ethernet Adapter
 
+{% raw %}
+
 	Article: Q124299
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -91,3 +93,5 @@ permalink: /kb/124/Q124299/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/033/Q33301/
 
 ## Q33301: FUNCTION Procedures Cannot Be Invoked in I/O Statements
 
+{% raw %}
+
 	Article: Q33301
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -38,3 +40,5 @@ permalink: /kb/033/Q33301/
 	
 	Please note that user-defined functions defined with the DEF FN
 	statement do not have the above restrictions.
+
+{% endraw %}

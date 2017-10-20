@@ -6,6 +6,8 @@ permalink: /kb/130/Q130795/
 
 ## Q130795: Unable to Open Compressed Files &amp; Directories in Window NT 3.5
 
+{% raw %}
+
 	Article: Q130795
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -54,3 +56,5 @@ permalink: /kb/130/Q130795/
 	
 	=============================================================================
 	
+
+{% endraw %}

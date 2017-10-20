@@ -6,6 +6,8 @@ permalink: /kb/180/Q180531/
 
 ## Q180531: Error Message Removing Microsoft Exchange or Proxy Server
 
+{% raw %}
+
 	Article: Q180531
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0,4.0a
@@ -60,3 +62,5 @@ permalink: /kb/180/Q180531/
 	
 	=============================================================================
 	
+
+{% endraw %}

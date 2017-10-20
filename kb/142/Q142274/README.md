@@ -6,6 +6,8 @@ permalink: /kb/142/Q142274/
 
 ## Q142274: BUG: Assertion Failure When Handling xN_SETFOCUS in CFormView
 
+{% raw %}
+
 	Article: Q142274
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -69,3 +71,5 @@ permalink: /kb/142/Q142274/
 	
 	=============================================================================
 	
+
+{% endraw %}

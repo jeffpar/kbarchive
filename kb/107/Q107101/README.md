@@ -6,6 +6,8 @@ permalink: /kb/107/Q107101/
 
 ## Q107101: X400: Err Msg: Mailbox Can Be Mapped Once in an Address
 
+{% raw %}
+
 	Article: Q107101
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -50,3 +52,5 @@ permalink: /kb/107/Q107101/
 	
 	=============================================================================
 	
+
+{% endraw %}

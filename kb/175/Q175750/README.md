@@ -6,6 +6,8 @@ permalink: /kb/175/Q175750/
 
 ## Q175750: How to Install the Full Installation of Internet Explorer 4.0
 
+{% raw %}
+
 	Article: Q175750
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.51,4.0
@@ -86,3 +88,5 @@ permalink: /kb/175/Q175750/
 	
 	=============================================================================
 	
+
+{% endraw %}

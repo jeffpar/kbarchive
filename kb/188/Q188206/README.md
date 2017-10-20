@@ -6,6 +6,8 @@ permalink: /kb/188/Q188206/
 
 ## Q188206: &quot;Access Denied&quot; Connecting to Windows NT Server with Many Shares
 
+{% raw %}
+
 	Article: Q188206
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0,2.0,2.1,2.5
@@ -72,3 +74,5 @@ permalink: /kb/188/Q188206/
 	
 	=============================================================================
 	
+
+{% endraw %}

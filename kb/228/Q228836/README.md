@@ -6,6 +6,8 @@ permalink: /kb/228/Q228836/
 
 ## Q228836: Installing a New Certificate for Use in SSL/TLS
 
+{% raw %}
+
 	Article: Q228836
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -91,3 +93,5 @@ permalink: /kb/228/Q228836/
 	
 	=============================================================================
 	
+
+{% endraw %}

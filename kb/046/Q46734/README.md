@@ -6,6 +6,8 @@ permalink: /kb/046/Q46734/
 
 ## Q46734: Where to Find Information on Writing TSRs
 
+{% raw %}
+
 	Article: Q46734
 	Product(s): See article
 	Version(s): 5.10
@@ -28,3 +30,5 @@ permalink: /kb/046/Q46734/
 	exception handlers and hardware-interrupt service routines. If you
 	take care to write your TSR in the manner described in this reference,
 	you will minimize interactions and other problems.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/229/Q229091/
 
 ## Q229091: SMS: Remote Administrator Gets &quot;Connection Failed&quot; Error
 
+{% raw %}
+
 	Article: Q229091
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -67,3 +69,5 @@ permalink: /kb/229/Q229091/
 	
 	=============================================================================
 	
+
+{% endraw %}

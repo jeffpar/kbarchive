@@ -6,6 +6,8 @@ permalink: /kb/184/Q184794/
 
 ## Q184794: STOP 0x50 May Be Caused by PPTP Registry Entries
 
+{% raw %}
+
 	Article: Q184794
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/184/Q184794/
 	
 	=============================================================================
 	
+
+{% endraw %}

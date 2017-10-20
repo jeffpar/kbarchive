@@ -6,6 +6,8 @@ permalink: /kb/253/Q253306/
 
 ## Q253306: XCLN: cc:Mail Mailbox Receives Mail after Migration to Exchange
 
+{% raw %}
+
 	Article: Q253306
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/253/Q253306/
 	
 	=============================================================================
 	
+
+{% endraw %}

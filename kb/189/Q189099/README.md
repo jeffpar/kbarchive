@@ -6,6 +6,8 @@ permalink: /kb/189/Q189099/
 
 ## Q189099: RRAS Could Forward IP Fragments Without Filtering
 
+{% raw %}
+
 	Article: Q189099
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -97,3 +99,5 @@ permalink: /kb/189/Q189099/
 	
 	=============================================================================
 	
+
+{% endraw %}

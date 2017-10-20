@@ -6,6 +6,8 @@ permalink: /kb/110/Q110432/
 
 ## Q110432: SFM: Printing Postscript Fails, Err Msg: Invalid Access
 
+{% raw %}
+
 	Article: Q110432
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -59,3 +61,5 @@ permalink: /kb/110/Q110432/
 	
 	=============================================================================
 	
+
+{% endraw %}

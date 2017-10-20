@@ -6,6 +6,8 @@ permalink: /kb/278/Q278840/
 
 ## Q278840: MSN Companion boots to wrong page and stays there
 
+{% raw %}
+
 	Article: Q278840
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/278/Q278840/
 	
 	=============================================================================
 	
+
+{% endraw %}

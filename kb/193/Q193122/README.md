@@ -6,6 +6,8 @@ permalink: /kb/193/Q193122/
 
 ## Q193122: XFOR: 0-Byte Message or Print Spool File Causes VM2DIA to Stop
 
+{% raw %}
+
 	Article: Q193122
 	Product(s): Microsoft Exchange
 	Version(s): 3.2
@@ -166,3 +168,5 @@ permalink: /kb/193/Q193122/
 	
 	=============================================================================
 	
+
+{% endraw %}

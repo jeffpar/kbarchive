@@ -6,6 +6,8 @@ permalink: /kb/132/Q132587/
 
 ## Q132587: Verify Mode Setup Asks for Files that Are Already Present
 
+{% raw %}
+
 	Article: Q132587
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/132/Q132587/
 	
 	=============================================================================
 	
+
+{% endraw %}

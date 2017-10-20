@@ -6,6 +6,8 @@ permalink: /kb/044/Q44236/
 
 ## Q44236: Only One Video Page with Hercules SCREEN 0; HELP Correction
 
+{% raw %}
+
 	Article: Q44236
 	Product(s): See article
 	Version(s): 4.50
@@ -45,3 +47,5 @@ permalink: /kb/044/Q44236/
 	
 	   This documentation error does not occur for PCOPY HELP in QB.EXE
 	   4.50.
+
+{% endraw %}

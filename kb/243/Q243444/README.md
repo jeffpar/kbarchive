@@ -6,6 +6,8 @@ permalink: /kb/243/Q243444/
 
 ## Q243444: BUG: &lt;CSTDLIB&gt; Does Not Define the Namespace &quot;STD&quot;
 
+{% raw %}
+
 	Article: Q243444
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -107,3 +109,5 @@ permalink: /kb/243/Q243444/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/182/Q182126/
 
 ## Q182126: FP: How to Rename a FrontPage Web
 
+{% raw %}
+
 	Article: Q182126
 	Product(s): Word Front Page
 	Version(s): MACINTOSH:1.0; WINDOWS:1.1,97
@@ -66,3 +68,5 @@ permalink: /kb/182/Q182126/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142481/
 
 ## Q142481: FCSVAL32 Control-by-Control Validation in MFC
 
+{% raw %}
+
 	Article: Q142481
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -221,3 +223,5 @@ permalink: /kb/142/Q142481/
 	
 	=============================================================================
 	
+
+{% endraw %}

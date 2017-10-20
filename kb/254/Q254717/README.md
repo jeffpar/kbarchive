@@ -6,6 +6,8 @@ permalink: /kb/254/Q254717/
 
 ## Q254717: XADM: Event 1171: Exception e0010002 Has Occurred...
 
+{% raw %}
+
 	Article: Q254717
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -93,3 +95,5 @@ permalink: /kb/254/Q254717/
 	
 	=============================================================================
 	
+
+{% endraw %}

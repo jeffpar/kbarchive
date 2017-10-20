@@ -6,6 +6,8 @@ permalink: /kb/039/Q39256/
 
 ## Q39256: QuickBASIC May Not Function with 25-MHz 80387 Coprocessor
 
+{% raw %}
+
 	Article: Q39256
 	Product(s): See article
 	Version(s): 4.50
@@ -38,3 +40,5 @@ permalink: /kb/039/Q39256/
 	characters follow the "="):
 	
 	   SET NO87=
+
+{% endraw %}

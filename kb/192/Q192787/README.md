@@ -6,6 +6,8 @@ permalink: /kb/192/Q192787/
 
 ## Q192787: FIX: Modal Characteristics Gone After Selecting OS's Taskbar
 
+{% raw %}
+
 	Article: Q192787
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -71,3 +73,5 @@ permalink: /kb/192/Q192787/
 	
 	=============================================================================
 	
+
+{% endraw %}

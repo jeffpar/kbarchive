@@ -6,6 +6,8 @@ permalink: /kb/241/Q241964/
 
 ## Q241964: HOWTO: Localize a Windows 2000 Migration DLL
 
+{% raw %}
+
 	Article: Q241964
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -117,3 +119,5 @@ permalink: /kb/241/Q241964/
 	
 	=============================================================================
 	
+
+{% endraw %}

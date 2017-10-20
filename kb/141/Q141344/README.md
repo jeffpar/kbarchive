@@ -6,6 +6,8 @@ permalink: /kb/141/Q141344/
 
 ## Q141344: Network Connections Refused Over NetBT
 
+{% raw %}
+
 	Article: Q141344
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -73,3 +75,5 @@ permalink: /kb/141/Q141344/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/273/Q273606/
 
 ## Q273606: SMS Is Slow Enumerating Large Numbers of Packages
 
+{% raw %}
+
 	Article: Q273606
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -78,3 +80,5 @@ permalink: /kb/273/Q273606/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143433/
 
 ## Q143433: BUG: Setup Does Not Validate First Three Digits of CD Key
 
+{% raw %}
+
 	Article: Q143433
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2 5.0
@@ -71,3 +73,5 @@ permalink: /kb/143/Q143433/
 	
 	=============================================================================
 	
+
+{% endraw %}

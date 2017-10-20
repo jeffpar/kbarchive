@@ -6,6 +6,8 @@ permalink: /kb/066/Q66356/
 
 ## Q66356: Description of Tetris in the Windows Entertainment Pack
 
+{% raw %}
+
 	Article: Q66356
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -35,3 +37,5 @@ permalink: /kb/066/Q66356/
 	
 	=============================================================================
 	
+
+{% endraw %}

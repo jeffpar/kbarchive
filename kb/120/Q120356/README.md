@@ -6,6 +6,8 @@ permalink: /kb/120/Q120356/
 
 ## Q120356: Winstone 94 Err Msg: An Error Has Occurred in Your Program...
 
+{% raw %}
+
 	Article: Q120356
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -74,3 +76,5 @@ permalink: /kb/120/Q120356/
 	
 	=============================================================================
 	
+
+{% endraw %}

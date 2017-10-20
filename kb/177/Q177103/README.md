@@ -6,6 +6,8 @@ permalink: /kb/177/Q177103/
 
 ## Q177103: FIX: ALT+Key Combination in Property Page Causes Stack Overflow
 
+{% raw %}
+
 	Article: Q177103
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -77,3 +79,5 @@ permalink: /kb/177/Q177103/
 	
 	=============================================================================
 	
+
+{% endraw %}

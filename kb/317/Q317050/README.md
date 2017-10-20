@@ -6,6 +6,8 @@ permalink: /kb/317/Q317050/
 
 ## Q317050: Error Message: Disk I/O Error: Status = 00000001
 
+{% raw %}
+
 	Article: Q317050
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -131,3 +133,5 @@ permalink: /kb/317/Q317050/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50700/
 
 ## Q50700: C Run Time Can't Be Used in DLL Initialization with CRTLIB.DLL
 
+{% raw %}
+
 	Article: Q50700
 	Product(s): See article
 	Version(s): 5.10
@@ -46,3 +48,5 @@ permalink: /kb/050/Q50700/
 	    your code in your .EXE does not execute until after the .EXE's
 	    start-up is executed, CRTLIB.DLL will be initialized by the time
 	    you attempt to initialize your .DLL.
+
+{% endraw %}

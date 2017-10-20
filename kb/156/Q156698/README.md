@@ -6,6 +6,8 @@ permalink: /kb/156/Q156698/
 
 ## Q156698: Disabling Access to Network Resources Using System Policies
 
+{% raw %}
+
 	Article: Q156698
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/156/Q156698/
 	
 	=============================================================================
 	
+
+{% endraw %}

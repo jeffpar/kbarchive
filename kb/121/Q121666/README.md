@@ -6,6 +6,8 @@ permalink: /kb/121/Q121666/
 
 ## Q121666: CONN: Err Msg: Error &#91;20&#93; Insufficient Memory
 
+{% raw %}
+
 	Article: Q121666
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.0b
@@ -74,3 +76,5 @@ permalink: /kb/121/Q121666/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104537/
 
 ## Q104537: Program Hangs with MS-DOS 6.0 but Not Earlier Versions or 6.2
 
+{% raw %}
+
 	Article: Q104537
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -49,3 +51,5 @@ permalink: /kb/104/Q104537/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150694/
 
 ## Q150694: Gardening/Do-It- Yourself: Can't Open Read Me from Help Menu
 
+{% raw %}
+
 	Article: Q150694
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/150/Q150694/
 	
 	=============================================================================
 	
+
+{% endraw %}

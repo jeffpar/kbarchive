@@ -6,6 +6,8 @@ permalink: /kb/105/Q105123/
 
 ## Q105123: PPT: How to Modify Freeform Objects in PowerPoint
 
+{% raw %}
+
 	Article: Q105123
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:3.0,4.0; WINDOWS:3.0,4.0,7.0
@@ -96,3 +98,5 @@ permalink: /kb/105/Q105123/
 	
 	=============================================================================
 	
+
+{% endraw %}

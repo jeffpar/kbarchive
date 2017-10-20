@@ -6,6 +6,8 @@ permalink: /kb/138/Q138252/
 
 ## Q138252: PPT7: Presentation Contains Blank Boxes If Saved as 4.0
 
+{% raw %}
+
 	Article: Q138252
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -64,3 +66,5 @@ permalink: /kb/138/Q138252/
 	
 	=============================================================================
 	
+
+{% endraw %}

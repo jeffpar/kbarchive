@@ -6,6 +6,8 @@ permalink: /kb/115/Q115166/
 
 ## Q115166: PC Forms: Spell Checking Text in an E-Form
 
+{% raw %}
+
 	Article: Q115166
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2,97
@@ -108,3 +110,5 @@ permalink: /kb/115/Q115166/
 	
 	=============================================================================
 	
+
+{% endraw %}

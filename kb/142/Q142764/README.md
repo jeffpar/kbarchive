@@ -6,6 +6,8 @@ permalink: /kb/142/Q142764/
 
 ## Q142764: FIX: Edit Fields Blank When Large Fonts Selected
 
+{% raw %}
+
 	Article: Q142764
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -60,3 +62,5 @@ permalink: /kb/142/Q142764/
 	
 	=============================================================================
 	
+
+{% endraw %}

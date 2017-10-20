@@ -6,6 +6,8 @@ permalink: /kb/124/Q124173/
 
 ## Q124173: ACLCONV Not Updating Permissions for Mapped Users and Groups
 
+{% raw %}
+
 	Article: Q124173
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,3.5
@@ -78,3 +80,5 @@ permalink: /kb/124/Q124173/
 	
 	=============================================================================
 	
+
+{% endraw %}

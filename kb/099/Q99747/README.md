@@ -6,6 +6,8 @@ permalink: /kb/099/Q99747/
 
 ## Q99747: Connectivity Issues About SQL Server for LAN Manager
 
+{% raw %}
+
 	Article: Q99747
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/099/Q99747/
 	
 	=============================================================================
 	
+
+{% endraw %}

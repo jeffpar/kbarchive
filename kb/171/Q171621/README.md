@@ -6,6 +6,8 @@ permalink: /kb/171/Q171621/
 
 ## Q171621: Automatic Logon Fails using Client Access for Windows 95
 
+{% raw %}
+
 	Article: Q171621
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -151,3 +153,5 @@ permalink: /kb/171/Q171621/
 	
 	=============================================================================
 	
+
+{% endraw %}

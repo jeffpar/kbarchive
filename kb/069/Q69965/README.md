@@ -6,6 +6,8 @@ permalink: /kb/069/Q69965/
 
 ## Q69965: Automating Network Setup Video Options via SETUP.INF
 
+{% raw %}
+
 	Article: Q69965
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -130,3 +132,5 @@ permalink: /kb/069/Q69965/
 	
 	=============================================================================
 	
+
+{% endraw %}

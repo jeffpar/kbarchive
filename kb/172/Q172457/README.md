@@ -6,6 +6,8 @@ permalink: /kb/172/Q172457/
 
 ## Q172457: MSN Home Page Is Not Loaded When Starting Internet Explorer
 
+{% raw %}
+
 	Article: Q172457
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,5.0
@@ -112,3 +114,5 @@ permalink: /kb/172/Q172457/
 	
 	=============================================================================
 	
+
+{% endraw %}

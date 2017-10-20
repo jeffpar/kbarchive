@@ -6,6 +6,8 @@ permalink: /kb/264/Q264162/
 
 ## Q264162: XFOR: Internet Mail Service Won't Start on Windows 2000 Cluster
 
+{% raw %}
+
 	Article: Q264162
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -61,3 +63,5 @@ permalink: /kb/264/Q264162/
 	
 	=============================================================================
 	
+
+{% endraw %}

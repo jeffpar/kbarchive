@@ -6,6 +6,8 @@ permalink: /kb/190/Q190906/
 
 ## Q190906: BUG: DBGrid Displays Blank Rows When Modifying Column Width
 
+{% raw %}
+
 	Article: Q190906
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -86,3 +88,5 @@ permalink: /kb/190/Q190906/
 	
 	=============================================================================
 	
+
+{% endraw %}

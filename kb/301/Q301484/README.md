@@ -6,6 +6,8 @@ permalink: /kb/301/Q301484/
 
 ## Q301484: Command Prompt Returns to Prompt Without Running App or CMD
 
+{% raw %}
+
 	Article: Q301484
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -92,3 +94,5 @@ permalink: /kb/301/Q301484/
 	
 	=============================================================================
 	
+
+{% endraw %}

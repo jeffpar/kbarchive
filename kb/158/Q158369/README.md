@@ -6,6 +6,8 @@ permalink: /kb/158/Q158369/
 
 ## Q158369: How to Change the Startup Situation in Flight Simulator 95
 
+{% raw %}
+
 	Article: Q158369
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -55,3 +57,5 @@ permalink: /kb/158/Q158369/
 	
 	=============================================================================
 	
+
+{% endraw %}

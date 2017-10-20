@@ -6,6 +6,8 @@ permalink: /kb/225/Q225196/
 
 ## Q225196: XCON: MTA Generates Event ID 9318, Windows NT Error Code 1330
 
+{% raw %}
+
 	Article: Q225196
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -86,3 +88,5 @@ permalink: /kb/225/Q225196/
 	
 	=============================================================================
 	
+
+{% endraw %}

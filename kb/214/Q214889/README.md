@@ -6,6 +6,8 @@ permalink: /kb/214/Q214889/
 
 ## Q214889: SMS: Remote Chat May Not Work on Slow Link
 
+{% raw %}
+
 	Article: Q214889
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -67,3 +69,5 @@ permalink: /kb/214/Q214889/
 	
 	=============================================================================
 	
+
+{% endraw %}

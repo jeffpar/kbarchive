@@ -6,6 +6,8 @@ permalink: /kb/216/Q216540/
 
 ## Q216540: User-mode Programs Cannot Allocate Blocks of Virtual Memory
 
+{% raw %}
+
 	Article: Q216540
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/216/Q216540/
 	
 	=============================================================================
 	
+
+{% endraw %}

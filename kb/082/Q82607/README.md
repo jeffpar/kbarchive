@@ -6,6 +6,8 @@ permalink: /kb/082/Q82607/
 
 ## Q82607: Standard Mode Fails to Boot with XMS Handles of 2 or 3
 
+{% raw %}
+
 	Article: Q82607
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/082/Q82607/
 	
 	=============================================================================
 	
+
+{% endraw %}

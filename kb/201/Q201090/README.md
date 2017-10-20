@@ -6,6 +6,8 @@ permalink: /kb/201/Q201090/
 
 ## Q201090: BUG: Multi-Byte Character Strings Cause ISAPI Wizard to Fail
 
+{% raw %}
+
 	Article: Q201090
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -72,3 +74,5 @@ permalink: /kb/201/Q201090/
 	
 	=============================================================================
 	
+
+{% endraw %}

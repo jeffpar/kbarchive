@@ -6,6 +6,8 @@ permalink: /kb/148/Q148787/
 
 ## Q148787: FIX: Run Out of Memory or Assertion in GetBufferSetLength()
 
+{% raw %}
+
 	Article: Q148787
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10
@@ -113,3 +115,5 @@ permalink: /kb/148/Q148787/
 	
 	=============================================================================
 	
+
+{% endraw %}

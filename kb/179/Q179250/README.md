@@ -6,6 +6,8 @@ permalink: /kb/179/Q179250/
 
 ## Q179250: BUG: Line and Shape Controls Not Visible on UserControl
 
+{% raw %}
+
 	Article: Q179250
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -79,3 +81,5 @@ permalink: /kb/179/Q179250/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97872/
 
 ## Q97872: EMS Not Recommended with LAN Man, Windows 386 Enhanced
 
+{% raw %}
+
 	Article: Q97872
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/097/Q97872/
 	
 	=============================================================================
 	
+
+{% endraw %}

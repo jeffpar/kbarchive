@@ -6,6 +6,8 @@ permalink: /kb/152/Q152944/
 
 ## Q152944: XFOR: IMC Not Receiving Inbound Mail from UNIX Hosts
 
+{% raw %}
+
 	Article: Q152944
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/152/Q152944/
 	
 	=============================================================================
 	
+
+{% endraw %}

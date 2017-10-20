@@ -6,6 +6,8 @@ permalink: /kb/181/Q181869/
 
 ## Q181869: Desktop Folders Are Not Deleted Under Roving Profiles
 
+{% raw %}
+
 	Article: Q181869
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0,2.0,2.1,2.5
@@ -65,3 +67,5 @@ permalink: /kb/181/Q181869/
 	
 	=============================================================================
 	
+
+{% endraw %}

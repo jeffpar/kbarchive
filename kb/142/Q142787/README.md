@@ -6,6 +6,8 @@ permalink: /kb/142/Q142787/
 
 ## Q142787: FIX: C1001 on Template Class of Type Pointer to Function
 
+{% raw %}
+
 	Article: Q142787
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2s
@@ -107,3 +109,5 @@ permalink: /kb/142/Q142787/
 	
 	=============================================================================
 	
+
+{% endraw %}

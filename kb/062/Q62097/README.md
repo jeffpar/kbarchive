@@ -6,6 +6,8 @@ permalink: /kb/062/Q62097/
 
 ## Q62097: INFO: Line Continuation Evaluated Before Inline Comment
 
+{% raw %}
+
 	Article: Q62097
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/062/Q62097/
 	
 	=============================================================================
 	
+
+{% endraw %}

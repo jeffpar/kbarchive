@@ -6,6 +6,8 @@ permalink: /kb/181/Q181625/
 
 ## Q181625: Event ID 29 While Using Compaq Netelligent Token Ring Adapter
 
+{% raw %}
+
 	Article: Q181625
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/181/Q181625/
 	
 	=============================================================================
 	
+
+{% endraw %}

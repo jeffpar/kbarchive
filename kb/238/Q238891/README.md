@@ -6,6 +6,8 @@ permalink: /kb/238/Q238891/
 
 ## Q238891: SP6 Updates Windows NT Kernel to Support Future Processors
 
+{% raw %}
+
 	Article: Q238891
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/238/Q238891/
 	
 	=============================================================================
 	
+
+{% endraw %}

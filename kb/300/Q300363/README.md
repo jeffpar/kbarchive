@@ -6,6 +6,8 @@ permalink: /kb/300/Q300363/
 
 ## Q300363: INFO: Hotfixes Available for Server Appliance Kit
 
+{% raw %}
+
 	Article: Q300363
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -50,3 +52,5 @@ permalink: /kb/300/Q300363/
 	
 	=============================================================================
 	
+
+{% endraw %}

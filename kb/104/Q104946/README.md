@@ -6,6 +6,8 @@ permalink: /kb/104/Q104946/
 
 ## Q104946: Commands that Don't Automatically Mount Removable Media Disks
 
+{% raw %}
+
 	Article: Q104946
 	Product(s): Microsoft Disk Operating System
 	Version(s): 6.2,6.22
@@ -79,3 +81,5 @@ permalink: /kb/104/Q104946/
 	
 	=============================================================================
 	
+
+{% endraw %}

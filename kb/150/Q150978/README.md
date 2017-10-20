@@ -6,6 +6,8 @@ permalink: /kb/150/Q150978/
 
 ## Q150978: SFM: Optimizing Polling Rate for Macintosh Clients for PCMail
 
+{% raw %}
+
 	Article: Q150978
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -75,3 +77,5 @@ permalink: /kb/150/Q150978/
 	
 	=============================================================================
 	
+
+{% endraw %}

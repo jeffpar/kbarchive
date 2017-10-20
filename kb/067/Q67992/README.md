@@ -6,6 +6,8 @@ permalink: /kb/067/Q67992/
 
 ## Q67992: How Microsoft MS-DOS 5 Upgrade Locates DOS Subdirectory
 
+{% raw %}
+
 	Article: Q67992
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -61,3 +63,5 @@ permalink: /kb/067/Q67992/
 	
 	=============================================================================
 	
+
+{% endraw %}

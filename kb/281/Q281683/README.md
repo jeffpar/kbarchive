@@ -6,6 +6,8 @@ permalink: /kb/281/Q281683/
 
 ## Q281683: XADM: &quot;A Fatal Error (0x8004011d) Occurred&quot; Event ID 11
 
+{% raw %}
+
 	Article: Q281683
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -76,3 +78,5 @@ permalink: /kb/281/Q281683/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/044/Q44273/
 
 ## Q44273: Facts About MSHERC.COM; Why Hercules Support Must Be TSR
 
+{% raw %}
+
 	Article: Q44273
 	Product(s): See article
 	Version(s): 1.00 1.01 2.00
@@ -70,3 +72,5 @@ permalink: /kb/044/Q44273/
 	   is checked during start-up initialization. Therefore, after
 	   start-up has confirmed that no Hercules card is present, loading
 	   MSHERC.COM would not do any good.
+
+{% endraw %}

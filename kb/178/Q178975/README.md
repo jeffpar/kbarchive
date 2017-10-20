@@ -6,6 +6,8 @@ permalink: /kb/178/Q178975/
 
 ## Q178975: XADM: Remove All Does Not Remove Setup Key in Registry
 
+{% raw %}
+
 	Article: Q178975
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -69,3 +71,5 @@ permalink: /kb/178/Q178975/
 	
 	=============================================================================
 	
+
+{% endraw %}

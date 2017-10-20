@@ -6,6 +6,8 @@ permalink: /kb/183/Q183046/
 
 ## Q183046: FP97: Cannot Use Search Component With Active Server Pages
 
+{% raw %}
+
 	Article: Q183046
 	Product(s): Word Front Page
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/183/Q183046/
 	
 	=============================================================================
 	
+
+{% endraw %}

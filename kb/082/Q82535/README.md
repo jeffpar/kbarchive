@@ -6,6 +6,8 @@ permalink: /kb/082/Q82535/
 
 ## Q82535: Mismatch Between ATM and PostScript on Times
 
+{% raw %}
+
 	Article: Q82535
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/082/Q82535/
 	
 	=============================================================================
 	
+
+{% endraw %}

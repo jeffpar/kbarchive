@@ -6,6 +6,8 @@ permalink: /kb/081/Q81550/
 
 ## Q81550: PC Win: OLE Object from Excel 3.0 Creates Strange Title
 
+{% raw %}
+
 	Article: Q81550
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/081/Q81550/
 	
 	=============================================================================
 	
+
+{% endraw %}

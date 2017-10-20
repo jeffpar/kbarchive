@@ -6,6 +6,8 @@ permalink: /kb/176/Q176963/
 
 ## Q176963: &quot;Tape Drive Error Detected&quot; Error Message with Tecmar Tape Drive
 
+{% raw %}
+
 	Article: Q176963
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -69,3 +71,5 @@ permalink: /kb/176/Q176963/
 	
 	=============================================================================
 	
+
+{% endraw %}

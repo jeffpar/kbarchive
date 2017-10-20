@@ -6,6 +6,8 @@ permalink: /kb/142/Q142245/
 
 ## Q142245: PRB: Setup DDE Error When Installing Visual Basic 4.0
 
+{% raw %}
+
 	Article: Q142245
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/142/Q142245/
 	
 	=============================================================================
 	
+
+{% endraw %}

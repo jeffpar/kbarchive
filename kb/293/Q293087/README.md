@@ -6,6 +6,8 @@ permalink: /kb/293/Q293087/
 
 ## Q293087: WORD97: &quot;Formatting is too Complex&quot; Err Msg When You Run Macro
 
+{% raw %}
+
 	Article: Q293087
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -87,3 +89,5 @@ permalink: /kb/293/Q293087/
 	
 	=============================================================================
 	
+
+{% endraw %}

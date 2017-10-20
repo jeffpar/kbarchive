@@ -6,6 +6,8 @@ permalink: /kb/299/Q299348/
 
 ## Q299348: ASP Script Error w/Attempt to Access User Core Profile Attribute
 
+{% raw %}
+
 	Article: Q299348
 	Product(s): Microsoft Developer Network
 	Version(s): 1.4
@@ -63,3 +65,5 @@ permalink: /kb/299/Q299348/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134228/
 
 ## Q134228: PC DirSync: Err Msg: Fatal &#91; 7&#93; Error Renaming File
 
+{% raw %}
+
 	Article: Q134228
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2,3.2a,3.5
@@ -120,3 +122,5 @@ permalink: /kb/134/Q134228/
 	
 	=============================================================================
 	
+
+{% endraw %}

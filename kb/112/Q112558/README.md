@@ -6,6 +6,8 @@ permalink: /kb/112/Q112558/
 
 ## Q112558: PCL.SEP and SYSPRINT.SEP Incorrectly Documented
 
+{% raw %}
+
 	Article: Q112558
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -59,3 +61,5 @@ permalink: /kb/112/Q112558/
 	
 	=============================================================================
 	
+
+{% endraw %}

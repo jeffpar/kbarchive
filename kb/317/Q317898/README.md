@@ -6,6 +6,8 @@ permalink: /kb/317/Q317898/
 
 ## Q317898: Access Violation When You Use WebClasses to Replace Text
 
+{% raw %}
+
 	Article: Q317898
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -81,3 +83,5 @@ permalink: /kb/317/Q317898/
 	
 	=============================================================================
 	
+
+{% endraw %}

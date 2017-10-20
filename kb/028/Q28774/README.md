@@ -6,6 +6,8 @@ permalink: /kb/028/Q28774/
 
 ## Q28774: Building C 5.10 Combined Libraries with the LIB Utility
 
+{% raw %}
+
 	Article: Q28774
 	Product(s): See article
 	Version(s): 5.10
@@ -105,3 +107,5 @@ permalink: /kb/028/Q28774/
 	?LIBC7P.LIB-Protect mode 8087 (?==S,M,C or L)
 	
 	Operations:?libcp.lib+libh.lib+87.lib+?libfp.lib;
+
+{% endraw %}

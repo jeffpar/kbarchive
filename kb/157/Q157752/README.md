@@ -6,6 +6,8 @@ permalink: /kb/157/Q157752/
 
 ## Q157752: Remote Mail Disconnects After Downloading Headers
 
+{% raw %}
+
 	Article: Q157752
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0
@@ -45,3 +47,5 @@ permalink: /kb/157/Q157752/
 	
 	=============================================================================
 	
+
+{% endraw %}

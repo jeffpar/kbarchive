@@ -6,6 +6,8 @@ permalink: /kb/174/Q174078/
 
 ## Q174078: XADM: Tracking Log Event Numbers for Exchange 4.0
 
+{% raw %}
+
 	Article: Q174078
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -117,3 +119,5 @@ permalink: /kb/174/Q174078/
 	
 	=============================================================================
 	
+
+{% endraw %}

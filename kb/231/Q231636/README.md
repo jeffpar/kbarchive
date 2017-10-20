@@ -6,6 +6,8 @@ permalink: /kb/231/Q231636/
 
 ## Q231636: HOWTO: Controlling the Visual C++ IDE Source Code Editor Window
 
+{% raw %}
+
 	Article: Q231636
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/231/Q231636/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178414/
 
 ## Q178414: Archive Bit Is Not Reset When a File Is Renamed
 
+{% raw %}
+
 	Article: Q178414
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/178/Q178414/
 	
 	=============================================================================
 	
+
+{% endraw %}

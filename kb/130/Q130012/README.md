@@ -6,6 +6,8 @@ permalink: /kb/130/Q130012/
 
 ## Q130012: PROFS: PWASETUP Version 3.4a.041 Update
 
+{% raw %}
+
 	Article: Q130012
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4a
@@ -81,3 +83,5 @@ permalink: /kb/130/Q130012/
 	
 	=============================================================================
 	
+
+{% endraw %}

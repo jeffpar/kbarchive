@@ -6,6 +6,8 @@ permalink: /kb/195/Q195837/
 
 ## Q195837: PRB: Error Returned When Attempting to Modify JET Database
 
+{% raw %}
+
 	Article: Q195837
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/195/Q195837/
 	
 	=============================================================================
 	
+
+{% endraw %}

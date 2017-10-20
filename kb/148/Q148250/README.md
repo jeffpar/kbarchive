@@ -6,6 +6,8 @@ permalink: /kb/148/Q148250/
 
 ## Q148250: Streets 4.0: Cannot Delete the Area Map File Airports.gaz
 
+{% raw %}
+
 	Article: Q148250
 	Product(s): Microsoft Automap
 	Version(s): 4.00
@@ -113,3 +115,5 @@ permalink: /kb/148/Q148250/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138571/
 
 ## Q138571: NetBIOS Name Resolution Through DNS Fails Using TCP/IP-32
 
+{% raw %}
+
 	Article: Q138571
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.11a,3.11b
@@ -76,3 +78,5 @@ permalink: /kb/138/Q138571/
 	
 	=============================================================================
 	
+
+{% endraw %}

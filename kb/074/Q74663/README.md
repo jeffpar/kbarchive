@@ -6,6 +6,8 @@ permalink: /kb/074/Q74663/
 
 ## Q74663: FIX: ALIGN Following DUP Operator or Structure May Fail
 
+{% raw %}
+
 	Article: Q74663
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -118,3 +120,5 @@ permalink: /kb/074/Q74663/
 	
 	=============================================================================
 	
+
+{% endraw %}

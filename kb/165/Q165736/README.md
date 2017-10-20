@@ -6,6 +6,8 @@ permalink: /kb/165/Q165736/
 
 ## Q165736: German Schedule+ 7.5 Win 3.x Help File Can't Be Viewed
 
+{% raw %}
+
 	Article: Q165736
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.5
@@ -69,3 +71,5 @@ permalink: /kb/165/Q165736/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155600/
 
 ## Q155600: XFOR: Misleading Dialog During Restore Using NTBackup
 
+{% raw %}
+
 	Article: Q155600
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155600/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126279/
 
 ## Q126279: Dual PCI IDE Controllers Use IRQs 14 and 15
 
+{% raw %}
+
 	Article: Q126279
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/126/Q126279/
 	
 	=============================================================================
 	
+
+{% endraw %}

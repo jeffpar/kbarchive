@@ -6,6 +6,8 @@ permalink: /kb/226/Q226890/
 
 ## Q226890: SMS: Cannot Delete Files on a CD-ROM Drive
 
+{% raw %}
+
 	Article: Q226890
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -45,3 +47,5 @@ permalink: /kb/226/Q226890/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/122/Q122704/
 
 ## Q122704: WSS: Excel 5.0 &quot;Proof On Entry&quot; Does Not Display Check Mark
 
+{% raw %}
+
 	Article: Q122704
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/122/Q122704/
 	
 	=============================================================================
 	
+
+{% endraw %}

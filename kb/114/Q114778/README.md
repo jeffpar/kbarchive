@@ -6,6 +6,8 @@ permalink: /kb/114/Q114778/
 
 ## Q114778: Windows NT Terminal Supports XModem-1K Protocol
 
+{% raw %}
+
 	Article: Q114778
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.1,3.11
@@ -79,3 +81,5 @@ permalink: /kb/114/Q114778/
 	
 	=============================================================================
 	
+
+{% endraw %}

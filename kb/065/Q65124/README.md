@@ -6,6 +6,8 @@ permalink: /kb/065/Q65124/
 
 ## Q65124: Writing International Applications for Windows
 
+{% raw %}
+
 	Article: Q65124
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -676,3 +678,5 @@ permalink: /kb/065/Q65124/
 	
 	=============================================================================
 	
+
+{% endraw %}

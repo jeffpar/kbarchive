@@ -6,6 +6,8 @@ permalink: /kb/066/Q66842/
 
 ## Q66842: ASD: 747 Panel Displays Wrong Checklist
 
+{% raw %}
+
 	Article: Q66842
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/066/Q66842/
 	
 	=============================================================================
 	
+
+{% endraw %}

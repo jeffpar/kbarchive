@@ -6,6 +6,8 @@ permalink: /kb/097/Q97695/
 
 ## Q97695: Complete Communicator Software May Need to Be on Host Drive
 
+{% raw %}
+
 	Article: Q97695
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -110,3 +112,5 @@ permalink: /kb/097/Q97695/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180645/
 
 ## Q180645: FIX: Cannot Change Page Settings During Print Job
 
+{% raw %}
+
 	Article: Q180645
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -321,3 +323,5 @@ permalink: /kb/180/Q180645/
 	
 	=============================================================================
 	
+
+{% endraw %}

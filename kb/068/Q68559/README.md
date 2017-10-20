@@ -6,6 +6,8 @@ permalink: /kb/068/Q68559/
 
 ## Q68559: Bad Code Generated for &quot;a+b == a&quot; FP Comparison Expressions
 
+{% raw %}
+
 	Article: Q68559
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -54,3 +56,5 @@ permalink: /kb/068/Q68559/
 	Microsoft has confirmed this to be a problem with C versions 6.00 and
 	6.00a. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

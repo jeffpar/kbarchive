@@ -6,6 +6,8 @@ permalink: /kb/323/Q323301/
 
 ## Q323301: The YPCAT Command May Produce Unexpected Results
 
+{% raw %}
+
 	Article: Q323301
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0
@@ -56,3 +58,5 @@ permalink: /kb/323/Q323301/
 	
 	=============================================================================
 	
+
+{% endraw %}

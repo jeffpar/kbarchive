@@ -6,6 +6,8 @@ permalink: /kb/099/Q99860/
 
 ## Q99860: Debug Script to Test for Sound Blaster Emulation
 
+{% raw %}
+
 	Article: Q99860
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -143,3 +145,5 @@ permalink: /kb/099/Q99860/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136701/
 
 ## Q136701: Works 95: Cannot Enter CD Key During Works 4.0 Setup
 
+{% raw %}
+
 	Article: Q136701
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -140,3 +142,5 @@ permalink: /kb/136/Q136701/
 	
 	=============================================================================
 	
+
+{% endraw %}

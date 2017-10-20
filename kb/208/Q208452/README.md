@@ -6,6 +6,8 @@ permalink: /kb/208/Q208452/
 
 ## Q208452: XCLN: How to Change Outlook Calendar/Task Date to 4-Digit Date
 
+{% raw %}
+
 	Article: Q208452
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
@@ -53,3 +55,5 @@ permalink: /kb/208/Q208452/
 	
 	=============================================================================
 	
+
+{% endraw %}

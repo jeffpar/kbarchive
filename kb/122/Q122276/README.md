@@ -6,6 +6,8 @@ permalink: /kb/122/Q122276/
 
 ## Q122276: FIX: Library Version of atan2(0,0) Does Not Return 0
 
+{% raw %}
+
 	Article: Q122276
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -101,3 +103,5 @@ permalink: /kb/122/Q122276/
 	
 	=============================================================================
 	
+
+{% endraw %}

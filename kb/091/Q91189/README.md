@@ -6,6 +6,8 @@ permalink: /kb/091/Q91189/
 
 ## Q91189: File Manager: Five Extensions Maximum
 
+{% raw %}
+
 	Article: Q91189
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -36,3 +38,5 @@ permalink: /kb/091/Q91189/
 	
 	=============================================================================
 	
+
+{% endraw %}

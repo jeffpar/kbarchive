@@ -6,6 +6,8 @@ permalink: /kb/037/Q37309/
 
 ## Q37309: QB 2.x and 3.00 INT86 Requires VARPTR, but Not 4.00 INT86OLD
 
+{% raw %}
+
 	Article: Q37309
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -54,3 +56,5 @@ permalink: /kb/037/Q37309/
 	
 	   CALL INT86OLD (int_no, in_array(), out_array())
 	   CALL INT86XOLD (int_no, in_array(), out_array())
+
+{% endraw %}

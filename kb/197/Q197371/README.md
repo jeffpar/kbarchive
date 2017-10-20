@@ -6,6 +6,8 @@ permalink: /kb/197/Q197371/
 
 ## Q197371: MCM: Quantum3D Obsidian2 X-24 3D Accelerator Card Not Listed
 
+{% raw %}
+
 	Article: Q197371
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/197/Q197371/
 	
 	=============================================================================
 	
+
+{% endraw %}

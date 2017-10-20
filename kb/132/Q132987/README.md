@@ -6,6 +6,8 @@ permalink: /kb/132/Q132987/
 
 ## Q132987: Known Chat Session Issues on The Microsoft Network
 
+{% raw %}
+
 	Article: Q132987
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.05 1.2 1.3
@@ -93,3 +95,5 @@ permalink: /kb/132/Q132987/
 	
 	=============================================================================
 	
+
+{% endraw %}

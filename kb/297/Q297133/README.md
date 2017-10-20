@@ -6,6 +6,8 @@ permalink: /kb/297/Q297133/
 
 ## Q297133: PRB: UPPER Function Operates on High-ASCII Characters
 
+{% raw %}
+
 	Article: Q297133
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -103,3 +105,5 @@ permalink: /kb/297/Q297133/
 	
 	=============================================================================
 	
+
+{% endraw %}

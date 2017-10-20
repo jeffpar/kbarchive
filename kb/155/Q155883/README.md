@@ -6,6 +6,8 @@ permalink: /kb/155/Q155883/
 
 ## Q155883: NT 4.0 Breaks SNA Server 2.x Server Communication Over IP
 
+{% raw %}
+
 	Article: Q155883
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -92,3 +94,5 @@ permalink: /kb/155/Q155883/
 	
 	=============================================================================
 	
+
+{% endraw %}

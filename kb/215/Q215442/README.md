@@ -6,6 +6,8 @@ permalink: /kb/215/Q215442/
 
 ## Q215442: PRB: InteractiveChange Event of List Box Does Not Execute After
 
+{% raw %}
+
 	Article: Q215442
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -98,3 +100,5 @@ permalink: /kb/215/Q215442/
 	
 	=============================================================================
 	
+
+{% endraw %}

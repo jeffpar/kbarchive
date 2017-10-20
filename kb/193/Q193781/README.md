@@ -6,6 +6,8 @@ permalink: /kb/193/Q193781/
 
 ## Q193781: Cache Manager May Cause Data Corruption
 
+{% raw %}
+
 	Article: Q193781
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -82,3 +84,5 @@ permalink: /kb/193/Q193781/
 	
 	=============================================================================
 	
+
+{% endraw %}

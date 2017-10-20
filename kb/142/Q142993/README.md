@@ -6,6 +6,8 @@ permalink: /kb/142/Q142993/
 
 ## Q142993: Cannot Open Online Viewer Titles After Installing MSN 1.2
 
+{% raw %}
+
 	Article: Q142993
 	Product(s): The Microsoft Network
 	Version(s): 1.20
@@ -58,3 +60,5 @@ permalink: /kb/142/Q142993/
 	
 	=============================================================================
 	
+
+{% endraw %}

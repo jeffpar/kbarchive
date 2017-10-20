@@ -6,6 +6,8 @@ permalink: /kb/061/Q61827/
 
 ## Q61827: Flt Sim: Differences Between 4.00 and 3.00 Additional Maps
 
+{% raw %}
+
 	Article: Q61827
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/061/Q61827/
 	
 	=============================================================================
 	
+
+{% endraw %}

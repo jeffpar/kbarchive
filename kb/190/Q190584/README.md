@@ -6,6 +6,8 @@ permalink: /kb/190/Q190584/
 
 ## Q190584: BUG: Some Properties or Methods Not Displayed in DataReport
 
+{% raw %}
+
 	Article: Q190584
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -155,3 +157,5 @@ permalink: /kb/190/Q190584/
 	
 	=============================================================================
 	
+
+{% endraw %}

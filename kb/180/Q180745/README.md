@@ -6,6 +6,8 @@ permalink: /kb/180/Q180745/
 
 ## Q180745: BUG: Err 4408 Generates Communication Link Failure, Connection
 
+{% raw %}
+
 	Article: Q180745
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5,3.0; winnt:6.5
@@ -59,3 +61,5 @@ permalink: /kb/180/Q180745/
 	
 	=============================================================================
 	
+
+{% endraw %}

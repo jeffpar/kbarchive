@@ -6,6 +6,8 @@ permalink: /kb/271/Q271777/
 
 ## Q271777: Distributed Applications with Visual C++ 6.0 Training Kit Commen
 
+{% raw %}
+
 	Article: Q271777
 	Product(s): Microsoft Press
 	Version(s): 
@@ -199,3 +201,5 @@ permalink: /kb/271/Q271777/
 	
 	=============================================================================
 	
+
+{% endraw %}

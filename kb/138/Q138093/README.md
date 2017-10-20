@@ -6,6 +6,8 @@ permalink: /kb/138/Q138093/
 
 ## Q138093: PRB: Can't Use SET DEFAULT command to Set Default to UNC Path
 
+{% raw %}
+
 	Article: Q138093
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -131,3 +133,5 @@ permalink: /kb/138/Q138093/
 	
 	=============================================================================
 	
+
+{% endraw %}

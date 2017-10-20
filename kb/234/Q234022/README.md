@@ -6,6 +6,8 @@ permalink: /kb/234/Q234022/
 
 ## Q234022: XCLN: Configuring Exchange OWA to Use SSL
 
+{% raw %}
+
 	Article: Q234022
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -99,3 +101,5 @@ permalink: /kb/234/Q234022/
 	
 	=============================================================================
 	
+
+{% endraw %}

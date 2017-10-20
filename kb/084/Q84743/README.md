@@ -6,6 +6,8 @@ permalink: /kb/084/Q84743/
 
 ## Q84743: Adobe PostScript Language Levels and Font Types Explained
 
+{% raw %}
+
 	Article: Q84743
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -104,3 +106,5 @@ permalink: /kb/084/Q84743/
 	
 	=============================================================================
 	
+
+{% endraw %}

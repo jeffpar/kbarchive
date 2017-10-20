@@ -6,6 +6,8 @@ permalink: /kb/155/Q155117/
 
 ## Q155117: Shutdown And Power Off Does Not Appear on Shut Down Menu
 
+{% raw %}
+
 	Article: Q155117
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -46,3 +48,5 @@ permalink: /kb/155/Q155117/
 	
 	=============================================================================
 	
+
+{% endraw %}

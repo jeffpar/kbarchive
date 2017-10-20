@@ -6,6 +6,8 @@ permalink: /kb/160/Q160041/
 
 ## Q160041: HOWTO: Modify the Windows Default Cursor
 
+{% raw %}
+
 	Article: Q160041
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/160/Q160041/
 	
 	=============================================================================
 	
+
+{% endraw %}

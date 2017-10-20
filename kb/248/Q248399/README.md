@@ -6,6 +6,8 @@ permalink: /kb/248/Q248399/
 
 ## Q248399: MS00-007: Shared Workstation Setup May Permit Access to Recycle
 
+{% raw %}
+
 	Article: Q248399
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6
@@ -143,3 +145,5 @@ permalink: /kb/248/Q248399/
 	
 	=============================================================================
 	
+
+{% endraw %}

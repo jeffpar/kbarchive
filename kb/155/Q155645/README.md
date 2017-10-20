@@ -6,6 +6,8 @@ permalink: /kb/155/Q155645/
 
 ## Q155645: PRB: ActiveX Control Fails in Visual Basic but Works Fine in MFC
 
+{% raw %}
+
 	Article: Q155645
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:4.0; winnt:4.0,4.1,4.2
@@ -90,3 +92,5 @@ permalink: /kb/155/Q155645/
 	
 	=============================================================================
 	
+
+{% endraw %}

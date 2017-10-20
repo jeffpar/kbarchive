@@ -6,6 +6,8 @@ permalink: /kb/120/Q120506/
 
 ## Q120506: How Virtual Memory Works on a Power Macintosh
 
+{% raw %}
+
 	Article: Q120506
 	Product(s): Microsoft Tips for the Macintosh System
 	Version(s): 5.0,98
@@ -218,3 +220,5 @@ permalink: /kb/120/Q120506/
 	
 	=============================================================================
 	
+
+{% endraw %}

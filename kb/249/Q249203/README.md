@@ -6,6 +6,8 @@ permalink: /kb/249/Q249203/
 
 ## Q249203: Site Attachment Fails or Causes Damaged Data at the Parent Site
 
+{% raw %}
+
 	Article: Q249203
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -95,3 +97,5 @@ permalink: /kb/249/Q249203/
 	
 	=============================================================================
 	
+
+{% endraw %}

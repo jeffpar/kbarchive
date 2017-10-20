@@ -6,6 +6,8 @@ permalink: /kb/074/Q74341/
 
 ## Q74341: Creating Pen Windows Dictionaries
 
+{% raw %}
+
 	Article: Q74341
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -404,3 +406,5 @@ permalink: /kb/074/Q74341/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104425/
 
 ## Q104425: ATT: Running SMTPGET and SMTPPUT Manually
 
+{% raw %}
+
 	Article: Q104425
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/104/Q104425/
 	
 	=============================================================================
 	
+
+{% endraw %}

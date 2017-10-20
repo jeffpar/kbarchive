@@ -6,6 +6,8 @@ permalink: /kb/174/Q174372/
 
 ## Q174372: WD97: Can't Type Last Character If Last Paragraph Mark Hidden
 
+{% raw %}
+
 	Article: Q174372
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/174/Q174372/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263376/
 
 ## Q263376: SMS: Distribution Manager Deletes Entire Source in Shared Folder
 
+{% raw %}
+
 	Article: Q263376
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -75,3 +77,5 @@ permalink: /kb/263/Q263376/
 	
 	=============================================================================
 	
+
+{% endraw %}

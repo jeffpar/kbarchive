@@ -6,6 +6,8 @@ permalink: /kb/172/Q172507/
 
 ## Q172507: Resources go Offline and Online Repeatedly in Cluster Admin.
 
+{% raw %}
+
 	Article: Q172507
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -51,3 +53,5 @@ permalink: /kb/172/Q172507/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/069/Q69064/
 
 ## Q69064: BUG: Brown Screen Color May Change to Yellow After Running PWB
 
+{% raw %}
+
 	Article: Q69064
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1,2.0,2.1.49
@@ -51,3 +53,5 @@ permalink: /kb/069/Q69064/
 	
 	=============================================================================
 	
+
+{% endraw %}

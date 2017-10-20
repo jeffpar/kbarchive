@@ -6,6 +6,8 @@ permalink: /kb/314/Q314967/
 
 ## Q314967: HTTP E-mail Account Setup--MSN Explorer or Hotmail
 
+{% raw %}
+
 	Article: Q314967
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -94,3 +96,5 @@ permalink: /kb/314/Q314967/
 	
 	=============================================================================
 	
+
+{% endraw %}

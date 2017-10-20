@@ -6,6 +6,8 @@ permalink: /kb/156/Q156998/
 
 ## Q156998: XADM: To: Recipients Shown Half-size if Client is on Server
 
+{% raw %}
+
 	Article: Q156998
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -59,3 +61,5 @@ permalink: /kb/156/Q156998/
 	
 	=============================================================================
 	
+
+{% endraw %}

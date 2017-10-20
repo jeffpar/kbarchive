@@ -6,6 +6,8 @@ permalink: /kb/253/Q253151/
 
 ## Q253151: SMS: Systems Management Server 2.0 Dependency Package Contents
 
+{% raw %}
+
 	Article: Q253151
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP1
@@ -327,3 +329,5 @@ permalink: /kb/253/Q253151/
 	
 	=============================================================================
 	
+
+{% endraw %}

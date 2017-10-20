@@ -6,6 +6,8 @@ permalink: /kb/152/Q152083/
 
 ## Q152083: Replicator Service Failed Due to Improper Login Account
 
+{% raw %}
+
 	Article: Q152083
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -87,3 +89,5 @@ permalink: /kb/152/Q152083/
 	
 	=============================================================================
 	
+
+{% endraw %}

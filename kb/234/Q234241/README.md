@@ -6,6 +6,8 @@ permalink: /kb/234/Q234241/
 
 ## Q234241: XCLN: Reply To Address Differs from From in Outlook/OE
 
+{% raw %}
+
 	Article: Q234241
 	Product(s): Microsoft Exchange
 	Version(s): ; WINDOWS:4.0,5
@@ -75,3 +77,5 @@ permalink: /kb/234/Q234241/
 	
 	=============================================================================
 	
+
+{% endraw %}

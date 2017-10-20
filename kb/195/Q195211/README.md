@@ -6,6 +6,8 @@ permalink: /kb/195/Q195211/
 
 ## Q195211: Windows NT Setup Detects Partitions as Unformatted or Damaged
 
+{% raw %}
+
 	Article: Q195211
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -111,3 +113,5 @@ permalink: /kb/195/Q195211/
 	
 	=============================================================================
 	
+
+{% endraw %}

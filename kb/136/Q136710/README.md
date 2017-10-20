@@ -6,6 +6,8 @@ permalink: /kb/136/Q136710/
 
 ## Q136710: Time Zone Change During Setup May Not Allow Password Change
 
+{% raw %}
+
 	Article: Q136710
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -51,3 +53,5 @@ permalink: /kb/136/Q136710/
 	
 	=============================================================================
 	
+
+{% endraw %}

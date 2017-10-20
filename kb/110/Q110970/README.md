@@ -6,6 +6,8 @@ permalink: /kb/110/Q110970/
 
 ## Q110970: INFO: Use of the ON SHUTDOWN Command
 
+{% raw %}
+
 	Article: Q110970
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,3.0,5.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/110/Q110970/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145903/
 
 ## Q145903: XCLN: Buttons/Menus Unavailable When Opening New Mail
 
+{% raw %}
+
 	Article: Q145903
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -43,3 +45,5 @@ permalink: /kb/145/Q145903/
 	
 	=============================================================================
 	
+
+{% endraw %}

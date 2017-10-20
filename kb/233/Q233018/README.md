@@ -6,6 +6,8 @@ permalink: /kb/233/Q233018/
 
 ## Q233018: FP: Enabling Database Features Without Server Extensions
 
+{% raw %}
+
 	Article: Q233018
 	Product(s): Word Front Page
 	Version(s): 
@@ -171,3 +173,5 @@ permalink: /kb/233/Q233018/
 	
 	=============================================================================
 	
+
+{% endraw %}

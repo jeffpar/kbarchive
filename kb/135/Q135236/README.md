@@ -6,6 +6,8 @@ permalink: /kb/135/Q135236/
 
 ## Q135236: COM.CFG Does Not Shrink When Configuration Items are Removed
 
+{% raw %}
+
 	Article: Q135236
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -75,3 +77,5 @@ permalink: /kb/135/Q135236/
 	
 	=============================================================================
 	
+
+{% endraw %}

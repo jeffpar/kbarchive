@@ -6,6 +6,8 @@ permalink: /kb/159/Q159044/
 
 ## Q159044: Error Message: Schedule Plus DLL Unable to Initialize
 
+{% raw %}
+
 	Article: Q159044
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/159/Q159044/
 	
 	=============================================================================
 	
+
+{% endraw %}

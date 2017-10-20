@@ -6,6 +6,8 @@ permalink: /kb/066/Q66650/
 
 ## Q66650: INFO: Purpose of &quot;Internal Linkage&quot; &amp; &quot;No Linkage&quot; Information
 
+{% raw %}
+
 	Article: Q66650
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,2.1,4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/066/Q66650/
 	
 	=============================================================================
 	
+
+{% endraw %}

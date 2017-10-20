@@ -6,6 +6,8 @@ permalink: /kb/171/Q171480/
 
 ## Q171480: FIX: Setting SelAlignment Property Does Not Affect RichTextBox
 
+{% raw %}
+
 	Article: Q171480
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -88,3 +90,5 @@ permalink: /kb/171/Q171480/
 	
 	=============================================================================
 	
+
+{% endraw %}

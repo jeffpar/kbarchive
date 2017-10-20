@@ -6,6 +6,8 @@ permalink: /kb/136/Q136477/
 
 ## Q136477: How to Install MingLiU Fonts for BIG5 Applications
 
+{% raw %}
+
 	Article: Q136477
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/136/Q136477/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/110/Q110549/
 
 ## Q110549: Flight Simulator: Flashing Screen with Orchid Fahrenheit 1280
 
+{% raw %}
+
 	Article: Q110549
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -56,3 +58,5 @@ permalink: /kb/110/Q110549/
 	
 	=============================================================================
 	
+
+{% endraw %}

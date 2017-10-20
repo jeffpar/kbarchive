@@ -6,6 +6,8 @@ permalink: /kb/199/Q199813/
 
 ## Q199813: XFOR: CalCon Not Supported With InterOrg Public Folder Tool
 
+{% raw %}
+
 	Article: Q199813
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2,5.5 SP3
@@ -83,3 +85,5 @@ permalink: /kb/199/Q199813/
 	
 	=============================================================================
 	
+
+{% endraw %}

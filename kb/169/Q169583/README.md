@@ -6,6 +6,8 @@ permalink: /kb/169/Q169583/
 
 ## Q169583: SMS: Readme.hlp File Is Not in Systems Management Server 1.2 SP2
 
+{% raw %}
+
 	Article: Q169583
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP2
@@ -48,3 +50,5 @@ permalink: /kb/169/Q169583/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/050/Q50712/
 
 ## Q50712: DOC: Run-Time Routines Assume Direction Flag Is Clear in C
 
+{% raw %}
+
 	Article: Q50712
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS: 5.1, 6.0, 6.00a, 6.00ax, 7.0; WINDOWS: 1.0, 1.5; WINDOWS NT: 1.0, 2.0, 2.1, 4.0
@@ -59,3 +61,5 @@ permalink: /kb/050/Q50712/
 	
 	=============================================================================
 	
+
+{% endraw %}

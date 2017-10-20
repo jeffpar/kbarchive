@@ -6,6 +6,8 @@ permalink: /kb/061/Q61206/
 
 ## Q61206: C 6.00 README: PWB Build Procedure
 
+{% raw %}
+
 	Article: Q61206
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -39,3 +41,5 @@ permalink: /kb/061/Q61206/
 	
 	For more information, choose "Building and Running Programs" from the
 	Programmer's WorkBench contents screen in online help.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163559/
 
 ## Q163559: SLI Verbs Return w/ Cancelled Error Before SLI_CLOSE Completes
 
+{% raw %}
+
 	Article: Q163559
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,3.0
@@ -68,3 +70,5 @@ permalink: /kb/163/Q163559/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/273/Q273459/
 
 ## Q273459: XADM: Cannot Give &quot;Send on Behalf Of&quot; Permissions to a DL
 
+{% raw %}
+
 	Article: Q273459
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -60,3 +62,5 @@ permalink: /kb/273/Q273459/
 	
 	=============================================================================
 	
+
+{% endraw %}

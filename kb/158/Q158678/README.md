@@ -6,6 +6,8 @@ permalink: /kb/158/Q158678/
 
 ## Q158678: Cannot Use SerialKey Device After Logging on as Different User
 
+{% raw %}
+
 	Article: Q158678
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -82,3 +84,5 @@ permalink: /kb/158/Q158678/
 	
 	=============================================================================
 	
+
+{% endraw %}

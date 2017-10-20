@@ -6,6 +6,8 @@ permalink: /kb/218/Q218987/
 
 ## Q218987: XCLN: Attachment is Empty if Pasted Twice to Desktop
 
+{% raw %}
+
 	Article: Q218987
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
@@ -58,3 +60,5 @@ permalink: /kb/218/Q218987/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/106/Q106233/
 
 ## Q106233: Standard Mode Video Grabber May be Deleted from WFWG 3.11
 
+{% raw %}
+
 	Article: Q106233
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -44,3 +46,5 @@ permalink: /kb/106/Q106233/
 	
 	=============================================================================
 	
+
+{% endraw %}

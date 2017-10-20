@@ -6,6 +6,8 @@ permalink: /kb/108/Q108016/
 
 ## Q108016: AccuLogic IDE Controller Incompatible with ScanDisk
 
+{% raw %}
+
 	Article: Q108016
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -75,3 +77,5 @@ permalink: /kb/108/Q108016/
 	
 	=============================================================================
 	
+
+{% endraw %}

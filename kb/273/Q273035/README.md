@@ -6,6 +6,8 @@ permalink: /kb/273/Q273035/
 
 ## Q273035: XADM: Troubleshooting Message Stores White Paper Available
 
+{% raw %}
+
 	Article: Q273035
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -48,3 +50,5 @@ permalink: /kb/273/Q273035/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134387/
 
 ## Q134387: Cannot Boot Windows NT 3.5x From Duplexed Mirror Drive
 
+{% raw %}
+
 	Article: Q134387
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/134/Q134387/
 	
 	=============================================================================
 	
+
+{% endraw %}

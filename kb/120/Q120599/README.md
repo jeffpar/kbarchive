@@ -6,6 +6,8 @@ permalink: /kb/120/Q120599/
 
 ## Q120599: Detection of Duplicate IP Addresses by Microsoft TCP/IP
 
+{% raw %}
+
 	Article: Q120599
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.2x,3.1,3.5,4.0
@@ -203,3 +205,5 @@ permalink: /kb/120/Q120599/
 	
 	=============================================================================
 	
+
+{% endraw %}

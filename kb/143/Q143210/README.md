@@ -6,6 +6,8 @@ permalink: /kb/143/Q143210/
 
 ## Q143210: HOWTO: How to Add the Finish Button to a Wizard Property Sheet
 
+{% raw %}
+
 	Article: Q143210
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -106,3 +108,5 @@ permalink: /kb/143/Q143210/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155296/
 
 ## Q155296: Monster Truck Madness: How to Use Online Play
 
+{% raw %}
+
 	Article: Q155296
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -104,3 +106,5 @@ permalink: /kb/155/Q155296/
 	
 	=============================================================================
 	
+
+{% endraw %}

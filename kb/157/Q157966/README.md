@@ -6,6 +6,8 @@ permalink: /kb/157/Q157966/
 
 ## Q157966: XCON: Microsoft Exchange will not Allow Incoming X.25 Connection
 
+{% raw %}
+
 	Article: Q157966
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/157/Q157966/
 	
 	=============================================================================
 	
+
+{% endraw %}

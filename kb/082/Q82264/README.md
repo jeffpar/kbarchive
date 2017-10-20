@@ -6,6 +6,8 @@ permalink: /kb/082/Q82264/
 
 ## Q82264: PC Win: Err Msg: The Attached File Is Currently Open...
 
+{% raw %}
+
 	Article: Q82264
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -80,3 +82,5 @@ permalink: /kb/082/Q82264/
 	
 	=============================================================================
 	
+
+{% endraw %}

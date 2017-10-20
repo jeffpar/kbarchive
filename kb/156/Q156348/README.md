@@ -6,6 +6,8 @@ permalink: /kb/156/Q156348/
 
 ## Q156348: Memory-Related Performance Counters Show Zero Values
 
+{% raw %}
+
 	Article: Q156348
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -89,3 +91,5 @@ permalink: /kb/156/Q156348/
 	
 	=============================================================================
 	
+
+{% endraw %}

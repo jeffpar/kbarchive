@@ -6,6 +6,8 @@ permalink: /kb/134/Q134677/
 
 ## Q134677: PC Gen: 3.5 Mail for PC Networks AT&amp;T Gateway Disks &#91;3.5&#93;
 
+{% raw %}
+
 	Article: Q134677
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -183,3 +185,5 @@ permalink: /kb/134/Q134677/
 	
 	=============================================================================
 	
+
+{% endraw %}

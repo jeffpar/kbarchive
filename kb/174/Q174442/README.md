@@ -6,6 +6,8 @@ permalink: /kb/174/Q174442/
 
 ## Q174442: All Users Have the Same Screen Saver
 
+{% raw %}
+
 	Article: Q174442
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -54,3 +56,5 @@ permalink: /kb/174/Q174442/
 	
 	=============================================================================
 	
+
+{% endraw %}

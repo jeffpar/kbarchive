@@ -6,6 +6,8 @@ permalink: /kb/156/Q156629/
 
 ## Q156629: SMS: SNMP Site Property Changes Are Not Saved
 
+{% raw %}
+
 	Article: Q156629
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -58,3 +60,5 @@ permalink: /kb/156/Q156629/
 	
 	=============================================================================
 	
+
+{% endraw %}

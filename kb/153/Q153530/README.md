@@ -6,6 +6,8 @@ permalink: /kb/153/Q153530/
 
 ## Q153530: XADM: Administrator Misspelled in Warning Message
 
+{% raw %}
+
 	Article: Q153530
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -68,3 +70,5 @@ permalink: /kb/153/Q153530/
 	
 	=============================================================================
 	
+
+{% endraw %}

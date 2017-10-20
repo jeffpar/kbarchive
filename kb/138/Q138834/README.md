@@ -6,6 +6,8 @@ permalink: /kb/138/Q138834/
 
 ## Q138834: Improvements for EIS/3270 and APPC Resource Location
 
+{% raw %}
+
 	Article: Q138834
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -125,3 +127,5 @@ permalink: /kb/138/Q138834/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168931/
 
 ## Q168931: Err Msg: Setup Was Unable to Verify Your &lt;X&gt;: Drive
 
+{% raw %}
+
 	Article: Q168931
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -64,3 +66,5 @@ permalink: /kb/168/Q168931/
 	
 	=============================================================================
 	
+
+{% endraw %}

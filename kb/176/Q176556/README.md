@@ -6,6 +6,8 @@ permalink: /kb/176/Q176556/
 
 ## Q176556: ODE97: MSRDO20.DLL Can't Register Itself in the System Registry
 
+{% raw %}
+
 	Article: Q176556
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -115,3 +117,5 @@ permalink: /kb/176/Q176556/
 	
 	=============================================================================
 	
+
+{% endraw %}

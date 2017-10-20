@@ -6,6 +6,8 @@ permalink: /kb/082/Q82872/
 
 ## Q82872: Recommended WIN.INI Switch Settings for Dr. Watson 0.80
 
+{% raw %}
+
 	Article: Q82872
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -74,3 +76,5 @@ permalink: /kb/082/Q82872/
 	
 	=============================================================================
 	
+
+{% endraw %}

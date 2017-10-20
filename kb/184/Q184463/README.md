@@ -6,6 +6,8 @@ permalink: /kb/184/Q184463/
 
 ## Q184463: XFOR: Cannot Connect to Server with POP3 Client
 
+{% raw %}
+
 	Article: Q184463
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -84,3 +86,5 @@ permalink: /kb/184/Q184463/
 	
 	=============================================================================
 	
+
+{% endraw %}

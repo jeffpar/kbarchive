@@ -6,6 +6,8 @@ permalink: /kb/223/Q223125/
 
 ## Q223125: FIX: &quot;Addins VB6.EXE - Application Error&quot; in Data Project
 
+{% raw %}
+
 	Article: Q223125
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -79,3 +81,5 @@ permalink: /kb/223/Q223125/
 	
 	=============================================================================
 	
+
+{% endraw %}

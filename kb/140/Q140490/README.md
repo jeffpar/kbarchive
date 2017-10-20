@@ -6,6 +6,8 @@ permalink: /kb/140/Q140490/
 
 ## Q140490: DOCERR: Help Lists Updatable Property for DBGETPROP in Error
 
+{% raw %}
+
 	Article: Q140490
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -37,3 +39,5 @@ permalink: /kb/140/Q140490/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/088/Q88098/
 
 ## Q88098: Windows Err Msg: &quot;Offending Command&quot; on Microtek Printer
 
+{% raw %}
+
 	Article: Q88098
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -63,3 +65,5 @@ permalink: /kb/088/Q88098/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134341/
 
 ## Q134341: Err Msg: An Illegal Date Format Has Been Supplied Using NET USER
 
+{% raw %}
+
 	Article: Q134341
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51
@@ -54,3 +56,5 @@ permalink: /kb/134/Q134341/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135064/
 
 ## Q135064: XADM: Owner of a Distribution List
 
+{% raw %}
+
 	Article: Q135064
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -51,3 +53,5 @@ permalink: /kb/135/Q135064/
 	
 	=============================================================================
 	
+
+{% endraw %}

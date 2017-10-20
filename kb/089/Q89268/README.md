@@ -6,6 +6,8 @@ permalink: /kb/089/Q89268/
 
 ## Q89268: Using the BROWSE Command in FoxBASE+
 
+{% raw %}
+
 	Article: Q89268
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -41,3 +43,5 @@ permalink: /kb/089/Q89268/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256816/
 
 ## Q256816: MapPoint 2001: Error Message When You Click Shortcut in Pushpin
 
+{% raw %}
+
 	Article: Q256816
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/256/Q256816/
 	
 	=============================================================================
 	
+
+{% endraw %}

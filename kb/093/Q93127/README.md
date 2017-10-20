@@ -6,6 +6,8 @@ permalink: /kb/093/Q93127/
 
 ## Q93127: Changing from a Read-Only Password to a Full-Access Password
 
+{% raw %}
+
 	Article: Q93127
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -65,3 +67,5 @@ permalink: /kb/093/Q93127/
 	
 	=============================================================================
 	
+
+{% endraw %}

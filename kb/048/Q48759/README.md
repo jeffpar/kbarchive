@@ -6,6 +6,8 @@ permalink: /kb/048/Q48759/
 
 ## Q48759: Paine Field Runway Labled Incorrectly in Flight Simulator 4.00
 
+{% raw %}
+
 	Article: Q48759
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/048/Q48759/
 	
 	=============================================================================
 	
+
+{% endraw %}

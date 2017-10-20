@@ -6,6 +6,8 @@ permalink: /kb/235/Q235535/
 
 ## Q235535: Smsman Requires Logon Installation or Discovery to Be Enabled
 
+{% raw %}
+
 	Article: Q235535
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -105,3 +107,5 @@ permalink: /kb/235/Q235535/
 	
 	=============================================================================
 	
+
+{% endraw %}

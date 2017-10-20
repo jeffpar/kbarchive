@@ -6,6 +6,8 @@ permalink: /kb/215/Q215473/
 
 ## Q215473: XFOR: Understanding How SNADS Connector Uses LU 6.2
 
+{% raw %}
+
 	Article: Q215473
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -82,3 +84,5 @@ permalink: /kb/215/Q215473/
 	
 	=============================================================================
 	
+
+{% endraw %}

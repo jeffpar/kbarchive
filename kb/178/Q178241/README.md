@@ -6,6 +6,8 @@ permalink: /kb/178/Q178241/
 
 ## Q178241: XCLN: Adobe Acrobat PDFs Encoded in Different Formats
 
+{% raw %}
+
 	Article: Q178241
 	Product(s): Microsoft Exchange
 	Version(s): 3.1,3.11,4.0,5.0,8.0,8.01,8.02,8.03
@@ -65,3 +67,5 @@ permalink: /kb/178/Q178241/
 	
 	=============================================================================
 	
+
+{% endraw %}

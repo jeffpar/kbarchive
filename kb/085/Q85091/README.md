@@ -6,6 +6,8 @@ permalink: /kb/085/Q85091/
 
 ## Q85091: Missing Drive Letters in File Manager with Syquest Driver
 
+{% raw %}
+
 	Article: Q85091
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/085/Q85091/
 	
 	=============================================================================
 	
+
+{% endraw %}

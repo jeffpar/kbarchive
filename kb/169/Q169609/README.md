@@ -6,6 +6,8 @@ permalink: /kb/169/Q169609/
 
 ## Q169609: INFO: Digitally Sign Your Visual Basic Internet Application
 
+{% raw %}
+
 	Article: Q169609
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/169/Q169609/
 	
 	=============================================================================
 	
+
+{% endraw %}

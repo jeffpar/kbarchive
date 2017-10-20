@@ -6,6 +6,8 @@ permalink: /kb/122/Q122743/
 
 ## Q122743: PPT: How to Create Mirrored Text in PowerPoint
 
+{% raw %}
+
 	Article: Q122743
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:3.0,3.0b,4.0; WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -78,3 +80,5 @@ permalink: /kb/122/Q122743/
 	
 	=============================================================================
 	
+
+{% endraw %}

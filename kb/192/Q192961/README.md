@@ -6,6 +6,8 @@ permalink: /kb/192/Q192961/
 
 ## Q192961: PRB: SET DECIMAL Limited to Four Decimals in Currency Data
 
+{% raw %}
+
 	Article: Q192961
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -78,3 +80,5 @@ permalink: /kb/192/Q192961/
 	
 	=============================================================================
 	
+
+{% endraw %}

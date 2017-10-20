@@ -6,6 +6,8 @@ permalink: /kb/219/Q219296/
 
 ## Q219296: Services for NetWare Cannot Use Alternate Namespace File Names
 
+{% raw %}
+
 	Article: Q219296
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -71,3 +73,5 @@ permalink: /kb/219/Q219296/
 	
 	=============================================================================
 	
+
+{% endraw %}

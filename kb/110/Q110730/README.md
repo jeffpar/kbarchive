@@ -6,6 +6,8 @@ permalink: /kb/110/Q110730/
 
 ## Q110730: Flight Simulator: Radio Frequency Documentation Errors
 
+{% raw %}
+
 	Article: Q110730
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -58,3 +60,5 @@ permalink: /kb/110/Q110730/
 	
 	=============================================================================
 	
+
+{% endraw %}

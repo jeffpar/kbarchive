@@ -6,6 +6,8 @@ permalink: /kb/196/Q196665/
 
 ## Q196665: XCON: MTA Could Route Messages Through Higher Costing Routes
 
+{% raw %}
+
 	Article: Q196665
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -81,3 +83,5 @@ permalink: /kb/196/Q196665/
 	
 	=============================================================================
 	
+
+{% endraw %}

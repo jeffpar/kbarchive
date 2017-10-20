@@ -6,6 +6,8 @@ permalink: /kb/161/Q161585/
 
 ## Q161585: XADM: Cannot Get Properties on a Newly Created Folder
 
+{% raw %}
+
 	Article: Q161585
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/161/Q161585/
 	
 	=============================================================================
 	
+
+{% endraw %}

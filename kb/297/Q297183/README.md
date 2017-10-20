@@ -6,6 +6,8 @@ permalink: /kb/297/Q297183/
 
 ## Q297183: Age of Empires II Error Message: Unable to Join
 
+{% raw %}
+
 	Article: Q297183
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -54,3 +56,5 @@ permalink: /kb/297/Q297183/
 	
 	=============================================================================
 	
+
+{% endraw %}

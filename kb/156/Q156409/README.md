@@ -6,6 +6,8 @@ permalink: /kb/156/Q156409/
 
 ## Q156409: Basic Authentication Prompt Before NT Challenge/Response
 
+{% raw %}
+
 	Article: Q156409
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -56,3 +58,5 @@ permalink: /kb/156/Q156409/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/246/Q246493/
 
 ## Q246493: XWEB: How to Remove the Change Password Button in OWA
 
+{% raw %}
+
 	Article: Q246493
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -63,3 +65,5 @@ permalink: /kb/246/Q246493/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/073/Q73442/
 
 ## Q73442: Disabling or Re-Enabling Mouse in MS-DOS Shell
 
+{% raw %}
+
 	Article: Q73442
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -64,3 +66,5 @@ permalink: /kb/073/Q73442/
 	
 	=============================================================================
 	
+
+{% endraw %}

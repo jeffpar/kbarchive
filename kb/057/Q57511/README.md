@@ -6,6 +6,8 @@ permalink: /kb/057/Q57511/
 
 ## Q57511: Cannot Move Upper Left Corner in PG Chart Scatter Functions
 
+{% raw %}
+
 	Article: Q57511
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -84,3 +86,5 @@ permalink: /kb/057/Q57511/
 	
 	    exit( !_setvideomode( _DEFAULTMODE ) );
 	}
+
+{% endraw %}

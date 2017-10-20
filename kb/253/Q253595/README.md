@@ -6,6 +6,8 @@ permalink: /kb/253/Q253595/
 
 ## Q253595: HOWTO: Build Indexes with DateTime Fields and Other Data Types
 
+{% raw %}
+
 	Article: Q253595
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -143,3 +145,5 @@ permalink: /kb/253/Q253595/
 	
 	=============================================================================
 	
+
+{% endraw %}

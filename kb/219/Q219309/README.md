@@ -6,6 +6,8 @@ permalink: /kb/219/Q219309/
 
 ## Q219309: SP5ss:Clussvc: SetErrorMode is not set and we sit behind pop-ups
 
+{% raw %}
+
 	Article: Q219309
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -70,3 +72,5 @@ permalink: /kb/219/Q219309/
 	
 	=============================================================================
 	
+
+{% endraw %}

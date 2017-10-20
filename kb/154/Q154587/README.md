@@ -6,6 +6,8 @@ permalink: /kb/154/Q154587/
 
 ## Q154587: XCLN: Multiple Move Rules Duplicate Messages in a PST File
 
+{% raw %}
+
 	Article: Q154587
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -63,3 +65,5 @@ permalink: /kb/154/Q154587/
 	
 	=============================================================================
 	
+
+{% endraw %}

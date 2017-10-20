@@ -6,6 +6,8 @@ permalink: /kb/112/Q112921/
 
 ## Q112921: PC Win: Wrong Error Creating Shared Folder with Network Down
 
+{% raw %}
+
 	Article: Q112921
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -48,3 +50,5 @@ permalink: /kb/112/Q112921/
 	
 	=============================================================================
 	
+
+{% endraw %}

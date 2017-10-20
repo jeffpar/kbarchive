@@ -6,6 +6,8 @@ permalink: /kb/326/Q326649/
 
 ## Q326649: Changes in COMTI Regions (TOR or AOR) Cause Some COMTI Applicati
 
+{% raw %}
+
 	Article: Q326649
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP4
@@ -165,3 +167,5 @@ permalink: /kb/326/Q326649/
 	
 	=============================================================================
 	
+
+{% endraw %}

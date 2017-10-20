@@ -6,6 +6,8 @@ permalink: /kb/235/Q235130/
 
 ## Q235130: Quick Course in Microsoft Office 2000 Comments and Corrections
 
+{% raw %}
+
 	Article: Q235130
 	Product(s): Microsoft Press
 	Version(s): 
@@ -198,3 +200,5 @@ permalink: /kb/235/Q235130/
 	
 	=============================================================================
 	
+
+{% endraw %}

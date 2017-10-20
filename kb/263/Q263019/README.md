@@ -6,6 +6,8 @@ permalink: /kb/263/Q263019/
 
 ## Q263019: SMS Remote Control Hangs Windows 95 OEM Service Release 2
 
+{% raw %}
+
 	Article: Q263019
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:95; winnt:2.0,2.0 SP1
@@ -77,3 +79,5 @@ permalink: /kb/263/Q263019/
 	
 	=============================================================================
 	
+
+{% endraw %}

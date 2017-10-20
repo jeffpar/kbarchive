@@ -6,6 +6,8 @@ permalink: /kb/190/Q190166/
 
 ## Q190166: PRB: PDW Does Not Include .ASP and .HTM Files for Standard Setup
 
+{% raw %}
+
 	Article: Q190166
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -68,3 +70,5 @@ permalink: /kb/190/Q190166/
 	
 	=============================================================================
 	
+
+{% endraw %}

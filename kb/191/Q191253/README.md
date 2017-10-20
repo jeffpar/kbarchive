@@ -6,6 +6,8 @@ permalink: /kb/191/Q191253/
 
 ## Q191253: HOWTO: Implement Multi-user Custom Counters in DAO 3.5
 
+{% raw %}
+
 	Article: Q191253
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -273,3 +275,5 @@ permalink: /kb/191/Q191253/
 	
 	=============================================================================
 	
+
+{% endraw %}

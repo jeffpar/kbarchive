@@ -6,6 +6,8 @@ permalink: /kb/313/Q313202/
 
 ## Q313202: SSO Fails If Attach Does Not Contain LUWID or Other Subfield
 
+{% raw %}
+
 	Article: Q313202
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -131,3 +133,5 @@ permalink: /kb/313/Q313202/
 	
 	=============================================================================
 	
+
+{% endraw %}

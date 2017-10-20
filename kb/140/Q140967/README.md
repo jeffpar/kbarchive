@@ -6,6 +6,8 @@ permalink: /kb/140/Q140967/
 
 ## Q140967: Changing Password in User Manager Does Not Permit Logon
 
+{% raw %}
+
 	Article: Q140967
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -143,3 +145,5 @@ permalink: /kb/140/Q140967/
 	
 	=============================================================================
 	
+
+{% endraw %}

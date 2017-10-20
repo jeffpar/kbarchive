@@ -6,6 +6,8 @@ permalink: /kb/235/Q235559/
 
 ## Q235559: Quick Course in Microsoft Outlook 2000 Comments and Corrections
 
+{% raw %}
+
 	Article: Q235559
 	Product(s): Microsoft Press
 	Version(s): 
@@ -123,3 +125,5 @@ permalink: /kb/235/Q235559/
 	
 	=============================================================================
 	
+
+{% endraw %}

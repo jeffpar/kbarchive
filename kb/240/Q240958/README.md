@@ -6,6 +6,8 @@ permalink: /kb/240/Q240958/
 
 ## Q240958: Command Failed Error Occurs When Using SNACFG
 
+{% raw %}
+
 	Article: Q240958
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2
@@ -79,3 +81,5 @@ permalink: /kb/240/Q240958/
 	
 	=============================================================================
 	
+
+{% endraw %}

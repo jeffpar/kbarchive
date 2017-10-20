@@ -6,6 +6,8 @@ permalink: /kb/122/Q122471/
 
 ## Q122471: Encarta 1995 Err Msg: There Is Not Enough Environment Space
 
+{% raw %}
+
 	Article: Q122471
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 editions
@@ -69,3 +71,5 @@ permalink: /kb/122/Q122471/
 	
 	=============================================================================
 	
+
+{% endraw %}

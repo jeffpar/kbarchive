@@ -6,6 +6,8 @@ permalink: /kb/119/Q119920/
 
 ## Q119920: ProComm Plus 2.0 for Windows Fax Services
 
+{% raw %}
+
 	Article: Q119920
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -62,3 +64,5 @@ permalink: /kb/119/Q119920/
 	
 	=============================================================================
 	
+
+{% endraw %}

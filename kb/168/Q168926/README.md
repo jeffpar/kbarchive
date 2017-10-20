@@ -6,6 +6,8 @@ permalink: /kb/168/Q168926/
 
 ## Q168926: BUG: &quot;Error copying sample files&quot; When Copying Samples to Drive
 
+{% raw %}
+
 	Article: Q168926
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -67,3 +69,5 @@ permalink: /kb/168/Q168926/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58686/
 
 ## Q58686: C 6.00 and QuickC 2.50 Offer Additional Support for Bitfields
 
+{% raw %}
+
 	Article: Q58686
 	Product(s): See article
 	Version(s): 6.00
@@ -20,3 +22,5 @@ permalink: /kb/058/Q58686/
 	1. Bitfields can be signed as well as unsigned.
 	
 	2. Bitfields are now allowed in union declarations.
+
+{% endraw %}

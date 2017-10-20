@@ -6,6 +6,8 @@ permalink: /kb/241/Q241026/
 
 ## Q241026: NBA Inside Drive 2000: Text Appears Blocky or Distorted
 
+{% raw %}
+
 	Article: Q241026
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/241/Q241026/
 	
 	=============================================================================
 	
+
+{% endraw %}

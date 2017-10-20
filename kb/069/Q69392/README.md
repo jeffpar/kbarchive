@@ -6,6 +6,8 @@ permalink: /kb/069/Q69392/
 
 ## Q69392: Configuring GENIUS Mice for Microsoft Windows 3.0
 
+{% raw %}
+
 	Article: Q69392
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -81,3 +83,5 @@ permalink: /kb/069/Q69392/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/241/Q241424/
 
 ## Q241424: HOWTO: Export Memo Fields w/ Other Field Types to Text File
 
+{% raw %}
+
 	Article: Q241424
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -138,3 +140,5 @@ permalink: /kb/241/Q241424/
 	
 	=============================================================================
 	
+
+{% endraw %}

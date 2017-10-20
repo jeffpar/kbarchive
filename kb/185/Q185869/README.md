@@ -6,6 +6,8 @@ permalink: /kb/185/Q185869/
 
 ## Q185869: Logon Scripts Fail to Process When Using Network Client 3.0
 
+{% raw %}
+
 	Article: Q185869
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.0,3.51,4.0
@@ -75,3 +77,5 @@ permalink: /kb/185/Q185869/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157013/
 
 ## Q157013: XCON: MTA Terminates Unexpectedly with Event 3080 and 9405
 
+{% raw %}
+
 	Article: Q157013
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -101,3 +103,5 @@ permalink: /kb/157/Q157013/
 	
 	=============================================================================
 	
+
+{% endraw %}

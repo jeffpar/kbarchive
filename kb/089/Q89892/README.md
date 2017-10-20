@@ -6,6 +6,8 @@ permalink: /kb/089/Q89892/
 
 ## Q89892: Drag and Drop Fails While Playing/Recording in Quick Recorder
 
+{% raw %}
+
 	Article: Q89892
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/089/Q89892/
 	
 	=============================================================================
 	
+
+{% endraw %}

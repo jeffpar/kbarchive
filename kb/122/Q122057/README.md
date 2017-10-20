@@ -6,6 +6,8 @@ permalink: /kb/122/Q122057/
 
 ## Q122057: How to Use Remote Control with TCP/IP
 
+{% raw %}
+
 	Article: Q122057
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2,2.0
@@ -71,3 +73,5 @@ permalink: /kb/122/Q122057/
 	
 	=============================================================================
 	
+
+{% endraw %}

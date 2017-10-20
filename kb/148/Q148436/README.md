@@ -6,6 +6,8 @@ permalink: /kb/148/Q148436/
 
 ## Q148436: PRB: AppWizard Cannot Generate Resources in Sublanguages
 
+{% raw %}
+
 	Article: Q148436
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,5.0,6.0
@@ -124,3 +126,5 @@ permalink: /kb/148/Q148436/
 	
 	=============================================================================
 	
+
+{% endraw %}

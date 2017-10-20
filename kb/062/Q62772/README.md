@@ -6,6 +6,8 @@ permalink: /kb/062/Q62772/
 
 ## Q62772: OPEN New Table with PROISAM Causes &quot;Feature Unavailable&quot;
 
+{% raw %}
+
 	Article: Q62772
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -26,3 +28,5 @@ permalink: /kb/062/Q62772/
 	tables to be accessed, but does not allow dynamic allocation of
 	databases and tables. The PROISAMD TSR (or library) is required to
 	dynamically allocate databases and tables.
+
+{% endraw %}

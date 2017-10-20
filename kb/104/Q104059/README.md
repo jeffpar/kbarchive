@@ -6,6 +6,8 @@ permalink: /kb/104/Q104059/
 
 ## Q104059: PC WSPlus: Local .CAL Misplaced Moving to Empty Floppy Drive
 
+{% raw %}
+
 	Article: Q104059
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -70,3 +72,5 @@ permalink: /kb/104/Q104059/
 	
 	=============================================================================
 	
+
+{% endraw %}

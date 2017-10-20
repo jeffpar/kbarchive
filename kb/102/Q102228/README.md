@@ -6,6 +6,8 @@ permalink: /kb/102/Q102228/
 
 ## Q102228: Hardware Troubleshooting: Cold Booting Versus Warm Booting
 
+{% raw %}
+
 	Article: Q102228
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21; WINDOWS:3.0,3.0a,3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/102/Q102228/
 	
 	=============================================================================
 	
+
+{% endraw %}

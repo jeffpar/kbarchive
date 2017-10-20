@@ -6,6 +6,8 @@ permalink: /kb/187/Q187576/
 
 ## Q187576: Stop 0x0000000A May Occur in TCP/IP
 
+{% raw %}
+
 	Article: Q187576
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/187/Q187576/
 	
 	=============================================================================
 	
+
+{% endraw %}

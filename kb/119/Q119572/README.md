@@ -6,6 +6,8 @@ permalink: /kb/119/Q119572/
 
 ## Q119572: WFWG: Printer Alerts Not Received with WinPopUp
 
+{% raw %}
+
 	Article: Q119572
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -84,3 +86,5 @@ permalink: /kb/119/Q119572/
 	
 	=============================================================================
 	
+
+{% endraw %}

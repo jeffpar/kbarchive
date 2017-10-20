@@ -6,6 +6,8 @@ permalink: /kb/142/Q142054/
 
 ## Q142054: Print Job/Document Resets To Zero When It Reaches 255
 
+{% raw %}
+
 	Article: Q142054
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -54,3 +56,5 @@ permalink: /kb/142/Q142054/
 	
 	=============================================================================
 	
+
+{% endraw %}

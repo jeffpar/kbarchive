@@ -6,6 +6,8 @@ permalink: /kb/061/Q61340/
 
 ## Q61340: Watchpoints Set at Module Level Won't Break in a SUBprogram
 
+{% raw %}
+
 	Article: Q61340
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -48,3 +50,5 @@ permalink: /kb/061/Q61340/
 	module-level code. The program will break on the line "PRINT 'After
 	call'," even though the value of variable "a," was changed in the
 	SUBprogram.
+
+{% endraw %}

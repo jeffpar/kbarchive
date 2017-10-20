@@ -6,6 +6,8 @@ permalink: /kb/143/Q143282/
 
 ## Q143282: No Documents Appear in the File Open Dialog Box
 
+{% raw %}
+
 	Article: Q143282
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/143/Q143282/
 	
 	=============================================================================
 	
+
+{% endraw %}

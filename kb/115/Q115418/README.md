@@ -6,6 +6,8 @@ permalink: /kb/115/Q115418/
 
 ## Q115418: INFO: Appending from a Delimited ASCII File Using Low-Level I/O
 
+{% raw %}
+
 	Article: Q115418
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c; MS-DOS:2.5,2.5a,2.5b,2.6; WINDOWS:2.5,2.5a,2.5b,2.6,3.0,5.0,6.0
@@ -121,3 +123,5 @@ permalink: /kb/115/Q115418/
 	
 	=============================================================================
 	
+
+{% endraw %}

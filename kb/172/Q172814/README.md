@@ -6,6 +6,8 @@ permalink: /kb/172/Q172814/
 
 ## Q172814: Control Unit Image Number Not Supported on ESCON
 
+{% raw %}
+
 	Article: Q172814
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,3.0,3.0 SP1
@@ -63,3 +65,5 @@ permalink: /kb/172/Q172814/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/174/Q174042/
 
 ## Q174042: XADM: Standard Edition should not be Installed on Cluster System
 
+{% raw %}
+
 	Article: Q174042
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/174/Q174042/
 	
 	=============================================================================
 	
+
+{% endraw %}

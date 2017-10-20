@@ -6,6 +6,8 @@ permalink: /kb/128/Q128037/
 
 ## Q128037: TCP/IP-32 Waits on Synchronous NCBs
 
+{% raw %}
+
 	Article: Q128037
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11; :3.11
@@ -56,3 +58,5 @@ permalink: /kb/128/Q128037/
 	
 	=============================================================================
 	
+
+{% endraw %}

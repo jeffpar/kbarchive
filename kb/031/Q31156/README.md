@@ -6,6 +6,8 @@ permalink: /kb/031/Q31156/
 
 ## Q31156: How to Add Routines to Quick Libraries (.QLB Files)
 
+{% raw %}
+
 	Article: Q31156
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -118,3 +120,5 @@ permalink: /kb/031/Q31156/
 	   invoking QuickBASIC. In addition, the .LIB file corresponding to
 	   the .QLB file must exist or a LINK error will occur. Both the .LIB
 	   and .QLB files specified will be updated automatically.
+
+{% endraw %}

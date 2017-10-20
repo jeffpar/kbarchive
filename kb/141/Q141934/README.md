@@ -6,6 +6,8 @@ permalink: /kb/141/Q141934/
 
 ## Q141934: PRB: Can't Set Picture Object Property from Add-In
 
+{% raw %}
+
 	Article: Q141934
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -70,3 +72,5 @@ permalink: /kb/141/Q141934/
 	
 	=============================================================================
 	
+
+{% endraw %}

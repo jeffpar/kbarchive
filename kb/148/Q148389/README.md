@@ -6,6 +6,8 @@ permalink: /kb/148/Q148389/
 
 ## Q148389: XFOR: How to Backbone MSMail 3.x over Exchange
 
+{% raw %}
+
 	Article: Q148389
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -134,3 +136,5 @@ permalink: /kb/148/Q148389/
 	
 	=============================================================================
 	
+
+{% endraw %}

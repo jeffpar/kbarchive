@@ -6,6 +6,8 @@ permalink: /kb/173/Q173013/
 
 ## Q173013: WD97: Symbol in Heading Removes Heading Numbering from TOC
 
+{% raw %}
+
 	Article: Q173013
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -116,3 +118,5 @@ permalink: /kb/173/Q173013/
 	
 	=============================================================================
 	
+
+{% endraw %}

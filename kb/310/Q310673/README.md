@@ -6,6 +6,8 @@ permalink: /kb/310/Q310673/
 
 ## Q310673: &quot;Cannot Open&quot; Err Msg Opening File on Shared Folders Gateway
 
+{% raw %}
+
 	Article: Q310673
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -119,3 +121,5 @@ permalink: /kb/310/Q310673/
 	
 	=============================================================================
 	
+
+{% endraw %}

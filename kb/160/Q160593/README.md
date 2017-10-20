@@ -6,6 +6,8 @@ permalink: /kb/160/Q160593/
 
 ## Q160593: PRB: Setup from Setup Wizard May Install OCX in Wrong Folder
 
+{% raw %}
+
 	Article: Q160593
 	Product(s): Microsoft FoxPro
 	Version(s): 5.00
@@ -98,3 +100,5 @@ permalink: /kb/160/Q160593/
 	
 	=============================================================================
 	
+
+{% endraw %}

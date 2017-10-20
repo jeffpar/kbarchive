@@ -6,6 +6,8 @@ permalink: /kb/175/Q175503/
 
 ## Q175503: HOWTO: Write a Dialog-based ActiveX Control Using ATL
 
+{% raw %}
+
 	Article: Q175503
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0,2.1,3.0
@@ -186,3 +188,5 @@ permalink: /kb/175/Q175503/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170846/
 
 ## Q170846: Computer or Workgroup Name Not Set Properly Using Msbatch.inf
 
+{% raw %}
+
 	Article: Q170846
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -80,3 +82,5 @@ permalink: /kb/170/Q170846/
 	
 	=============================================================================
 	
+
+{% endraw %}

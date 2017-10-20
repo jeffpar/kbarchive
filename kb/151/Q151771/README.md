@@ -6,6 +6,8 @@ permalink: /kb/151/Q151771/
 
 ## Q151771: LICREQST.EXE Requesting a License Key from an Object
 
+{% raw %}
+
 	Article: Q151771
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.1,5.0,6.0
@@ -276,3 +278,5 @@ permalink: /kb/151/Q151771/
 	
 	=============================================================================
 	
+
+{% endraw %}

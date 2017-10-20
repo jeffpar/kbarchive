@@ -6,6 +6,8 @@ permalink: /kb/102/Q102163/
 
 ## Q102163: PRB: F5 Key Does Not Build and Run Application in One Step
 
+{% raw %}
+
 	Article: Q102163
 	Product(s): Microsoft C Compiler
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/102/Q102163/
 	
 	=============================================================================
 	
+
+{% endraw %}

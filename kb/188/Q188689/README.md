@@ -6,6 +6,8 @@ permalink: /kb/188/Q188689/
 
 ## Q188689: Converting From ASCII-EBCDIC Using CPICs CMCNVI and CMCNVO
 
+{% raw %}
+
 	Article: Q188689
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
@@ -208,3 +210,5 @@ permalink: /kb/188/Q188689/
 	
 	=============================================================================
 	
+
+{% endraw %}

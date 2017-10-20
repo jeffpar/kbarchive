@@ -6,6 +6,8 @@ permalink: /kb/168/Q168633/
 
 ## Q168633: XGEN: When Do You Need a Client Access License (CAL)?
 
+{% raw %}
+
 	Article: Q168633
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; winnt:4.0,5.0,5.5
@@ -65,3 +67,5 @@ permalink: /kb/168/Q168633/
 	
 	=============================================================================
 	
+
+{% endraw %}

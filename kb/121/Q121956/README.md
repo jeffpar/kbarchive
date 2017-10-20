@@ -6,6 +6,8 @@ permalink: /kb/121/Q121956/
 
 ## Q121956: PC Adm: Mail 3.2a Update Leaves Zero-Byte .GLB  Files
 
+{% raw %}
+
 	Article: Q121956
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2a
@@ -66,3 +68,5 @@ permalink: /kb/121/Q121956/
 	
 	=============================================================================
 	
+
+{% endraw %}

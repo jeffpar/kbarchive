@@ -6,6 +6,8 @@ permalink: /kb/230/Q230161/
 
 ## Q230161: XCLN: Incorrect Holidays Listed in Microsoft Outlook Calendar
 
+{% raw %}
+
 	Article: Q230161
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,8.03,8.04
@@ -155,3 +157,5 @@ permalink: /kb/230/Q230161/
 	
 	=============================================================================
 	
+
+{% endraw %}

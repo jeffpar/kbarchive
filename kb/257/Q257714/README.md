@@ -6,6 +6,8 @@ permalink: /kb/257/Q257714/
 
 ## Q257714: FIX: ADODC and DataEnvironment Events Only Work with ADO 2.0
 
+{% raw %}
+
 	Article: Q257714
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:2.0,2.01,2.1,2.1 SP1,2.1 SP2,2.5,6.0
@@ -201,3 +203,5 @@ permalink: /kb/257/Q257714/
 	
 	=============================================================================
 	
+
+{% endraw %}

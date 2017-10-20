@@ -6,6 +6,8 @@ permalink: /kb/172/Q172094/
 
 ## Q172094: PRB: Help Compiler Does Not Compile Word 97 RTF Files
 
+{% raw %}
+
 	Article: Q172094
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a
@@ -76,3 +78,5 @@ permalink: /kb/172/Q172094/
 	
 	=============================================================================
 	
+
+{% endraw %}

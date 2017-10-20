@@ -6,6 +6,8 @@ permalink: /kb/255/Q255542/
 
 ## Q255542: WD97: Readability Statistics Incorrect or Missing
 
+{% raw %}
+
 	Article: Q255542
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -128,3 +130,5 @@ permalink: /kb/255/Q255542/
 	
 	=============================================================================
 	
+
+{% endraw %}

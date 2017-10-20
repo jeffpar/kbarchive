@@ -6,6 +6,8 @@ permalink: /kb/090/Q90918/
 
 ## Q90918: MS-DOS Applications in Windows with Proteon Network Cards
 
+{% raw %}
+
 	Article: Q90918
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/090/Q90918/
 	
 	=============================================================================
 	
+
+{% endraw %}

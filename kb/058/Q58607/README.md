@@ -6,6 +6,8 @@ permalink: /kb/058/Q58607/
 
 ## Q58607: &quot;Selected Programs&quot; in 4.50 Online Help Have Only 1 Example
 
+{% raw %}
+
 	Article: Q58607
 	Product(s): See article
 	Version(s): 4.50
@@ -32,3 +34,5 @@ permalink: /kb/058/Q58607/
 	
 	Note: To see additional QuickBASIC code examples for these topics, see
 	the example programs shipped with QuickBASIC Version 4.50.
+
+{% endraw %}

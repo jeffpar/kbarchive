@@ -6,6 +6,8 @@ permalink: /kb/150/Q150937/
 
 ## Q150937: Visual C++ Version 4.1 Patch
 
+{% raw %}
+
 	Article: Q150937
 	Product(s): Microsoft C Compiler
 	Version(s): 4.1
@@ -202,3 +204,5 @@ permalink: /kb/150/Q150937/
 	
 	=============================================================================
 	
+
+{% endraw %}

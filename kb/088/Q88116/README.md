@@ -6,6 +6,8 @@ permalink: /kb/088/Q88116/
 
 ## Q88116: Difference Between Bitmap and Picture When Using Paste Special
 
+{% raw %}
+
 	Article: Q88116
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -122,3 +124,5 @@ permalink: /kb/088/Q88116/
 	
 	=============================================================================
 	
+
+{% endraw %}

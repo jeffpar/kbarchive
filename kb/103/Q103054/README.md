@@ -6,6 +6,8 @@ permalink: /kb/103/Q103054/
 
 ## Q103054: Spelling of Administrator Account Changes
 
+{% raw %}
+
 	Article: Q103054
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -53,3 +55,5 @@ permalink: /kb/103/Q103054/
 	
 	=============================================================================
 	
+
+{% endraw %}

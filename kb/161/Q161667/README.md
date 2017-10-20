@@ -6,6 +6,8 @@ permalink: /kb/161/Q161667/
 
 ## Q161667: WD97: Tab Spacing Incorrect in Online Layout View
 
+{% raw %}
+
 	Article: Q161667
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/161/Q161667/
 	
 	=============================================================================
 	
+
+{% endraw %}

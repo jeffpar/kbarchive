@@ -6,6 +6,8 @@ permalink: /kb/124/Q124255/
 
 ## Q124255: README.NYC for New York Scenery Add-on
 
+{% raw %}
+
 	Article: Q124255
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -353,3 +355,5 @@ permalink: /kb/124/Q124255/
 	
 	=============================================================================
 	
+
+{% endraw %}

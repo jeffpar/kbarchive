@@ -6,6 +6,8 @@ permalink: /kb/126/Q126160/
 
 ## Q126160: MS-DOS-Based Game Setup Does Not Detect WSS as Sound Blaster
 
+{% raw %}
+
 	Article: Q126160
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -77,3 +79,5 @@ permalink: /kb/126/Q126160/
 	
 	=============================================================================
 	
+
+{% endraw %}

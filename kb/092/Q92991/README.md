@@ -6,6 +6,8 @@ permalink: /kb/092/Q92991/
 
 ## Q92991: Gateway Communications Network Interface Cards with WFWG
 
+{% raw %}
+
 	Article: Q92991
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -72,3 +74,5 @@ permalink: /kb/092/Q92991/
 	
 	=============================================================================
 	
+
+{% endraw %}

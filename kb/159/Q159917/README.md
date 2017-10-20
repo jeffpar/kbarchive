@@ -6,6 +6,8 @@ permalink: /kb/159/Q159917/
 
 ## Q159917: PPT7: PowerPoint Launches In Background From Windows 3.x Program
 
+{% raw %}
+
 	Article: Q159917
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -47,3 +49,5 @@ permalink: /kb/159/Q159917/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99001/
 
 ## Q99001: Mac Gty: Additional Steps for Upgrading MCI CommGATE Gateway
 
+{% raw %}
+
 	Article: Q99001
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -65,3 +67,5 @@ permalink: /kb/099/Q99001/
 	
 	=============================================================================
 	
+
+{% endraw %}

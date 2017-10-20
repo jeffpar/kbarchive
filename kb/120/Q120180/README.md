@@ -6,6 +6,8 @@ permalink: /kb/120/Q120180/
 
 ## Q120180: Undocumented SYS(2033) Returns Microsoft &amp; System Folders
 
+{% raw %}
+
 	Article: Q120180
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -47,3 +49,5 @@ permalink: /kb/120/Q120180/
 	
 	=============================================================================
 	
+
+{% endraw %}

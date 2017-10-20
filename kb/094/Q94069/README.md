@@ -6,6 +6,8 @@ permalink: /kb/094/Q94069/
 
 ## Q94069: Microsoft TCP/IP Protocol Comparison and FAQ
 
+{% raw %}
+
 	Article: Q94069
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 2.2c,3.0,3.1,3.11,3.11b,3.5,3.51
@@ -312,3 +314,5 @@ permalink: /kb/094/Q94069/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155555/
 
 ## Q155555: SNA Server Event 686 When Using MS-DOS Client with ODI Stack
 
+{% raw %}
+
 	Article: Q155555
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -90,3 +92,5 @@ permalink: /kb/155/Q155555/
 	
 	=============================================================================
 	
+
+{% endraw %}

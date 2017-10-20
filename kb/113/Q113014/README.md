@@ -6,6 +6,8 @@ permalink: /kb/113/Q113014/
 
 ## Q113014: Bookshelf: QuickShelf/QuicKeys Misses Some Keystrokes
 
+{% raw %}
+
 	Article: Q113014
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 edition,1994 edition
@@ -47,3 +49,5 @@ permalink: /kb/113/Q113014/
 	
 	=============================================================================
 	
+
+{% endraw %}

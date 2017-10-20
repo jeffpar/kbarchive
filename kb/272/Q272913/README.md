@@ -6,6 +6,8 @@ permalink: /kb/272/Q272913/
 
 ## Q272913: CreateRemoteThread May Leak Handle in Windows NT Terminal Server
 
+{% raw %}
+
 	Article: Q272913
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6
@@ -98,3 +100,5 @@ permalink: /kb/272/Q272913/
 	
 	=============================================================================
 	
+
+{% endraw %}

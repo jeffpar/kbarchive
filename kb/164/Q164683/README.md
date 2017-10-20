@@ -6,6 +6,8 @@ permalink: /kb/164/Q164683/
 
 ## Q164683: Dial-Up Networking Prompts for Number to Dial
 
+{% raw %}
+
 	Article: Q164683
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -54,3 +56,5 @@ permalink: /kb/164/Q164683/
 	
 	=============================================================================
 	
+
+{% endraw %}

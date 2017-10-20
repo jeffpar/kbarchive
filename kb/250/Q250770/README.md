@@ -6,6 +6,8 @@ permalink: /kb/250/Q250770/
 
 ## Q250770: Problems Viewing Web Page that Starts a New Instance of Browser
 
+{% raw %}
+
 	Article: Q250770
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:5,5.01; :
@@ -47,3 +49,5 @@ permalink: /kb/250/Q250770/
 	
 	=============================================================================
 	
+
+{% endraw %}

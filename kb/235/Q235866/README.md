@@ -6,6 +6,8 @@ permalink: /kb/235/Q235866/
 
 ## Q235866: TPstart Fails to Run Applications if Path Name Contains Blanks
 
+{% raw %}
+
 	Article: Q235866
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2,3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,
@@ -60,3 +62,5 @@ permalink: /kb/235/Q235866/
 	
 	=============================================================================
 	
+
+{% endraw %}

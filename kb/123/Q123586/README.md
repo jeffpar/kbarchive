@@ -6,6 +6,8 @@ permalink: /kb/123/Q123586/
 
 ## Q123586: ADT2: Setup Wizard Cannot Create Compact and Repair Icons
 
+{% raw %}
+
 	Article: Q123586
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0
@@ -113,3 +115,5 @@ permalink: /kb/123/Q123586/
 	
 	=============================================================================
 	
+
+{% endraw %}

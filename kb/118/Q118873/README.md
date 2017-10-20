@@ -6,6 +6,8 @@ permalink: /kb/118/Q118873/
 
 ## Q118873: PRB: EndPage() Returns -1 When Banding
 
+{% raw %}
+
 	Article: Q118873
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51
@@ -69,3 +71,5 @@ permalink: /kb/118/Q118873/
 	
 	=============================================================================
 	
+
+{% endraw %}

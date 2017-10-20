@@ -6,6 +6,8 @@ permalink: /kb/177/Q177862/
 
 ## Q177862: XCON: Messages Fail Downgrade, Bounce Between X.400 Connectors
 
+{% raw %}
+
 	Article: Q177862
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0 5.5
@@ -137,3 +139,5 @@ permalink: /kb/177/Q177862/
 	
 	=============================================================================
 	
+
+{% endraw %}

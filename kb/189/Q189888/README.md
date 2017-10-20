@@ -6,6 +6,8 @@ permalink: /kb/189/Q189888/
 
 ## Q189888: PRB: Stack Size Now 256 K in Internet Information Server 4.0
 
+{% raw %}
+
 	Article: Q189888
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0,5.0
@@ -104,3 +106,5 @@ permalink: /kb/189/Q189888/
 	
 	=============================================================================
 	
+
+{% endraw %}

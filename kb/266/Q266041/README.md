@@ -6,6 +6,8 @@ permalink: /kb/266/Q266041/
 
 ## Q266041: XADM: How to Change the Exchange Server 5.5 Service Account WP
 
+{% raw %}
+
 	Article: Q266041
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -45,3 +47,5 @@ permalink: /kb/266/Q266041/
 	
 	=============================================================================
 	
+
+{% endraw %}

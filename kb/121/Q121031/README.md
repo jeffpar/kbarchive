@@ -6,6 +6,8 @@ permalink: /kb/121/Q121031/
 
 ## Q121031: Bookshelf 1994: Tables Do Not Print Properly
 
+{% raw %}
+
 	Article: Q121031
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -58,3 +60,5 @@ permalink: /kb/121/Q121031/
 	
 	=============================================================================
 	
+
+{% endraw %}

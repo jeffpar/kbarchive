@@ -6,6 +6,8 @@ permalink: /kb/105/Q105249/
 
 ## Q105249: Serial Printers May Print Garbage During Windows NT Startup
 
+{% raw %}
+
 	Article: Q105249
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.1
@@ -71,3 +73,5 @@ permalink: /kb/105/Q105249/
 	
 	=============================================================================
 	
+
+{% endraw %}

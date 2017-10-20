@@ -6,6 +6,8 @@ permalink: /kb/131/Q131289/
 
 ## Q131289: How to Add to the System Menu as Visual FoxPro Starts
 
+{% raw %}
+
 	Article: Q131289
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -78,3 +80,5 @@ permalink: /kb/131/Q131289/
 	
 	=============================================================================
 	
+
+{% endraw %}

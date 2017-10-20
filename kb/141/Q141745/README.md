@@ -6,6 +6,8 @@ permalink: /kb/141/Q141745/
 
 ## Q141745: Macintosh Wine Guide 1.0a: Files Installed During Installation
 
+{% raw %}
+
 	Article: Q141745
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0a
@@ -63,3 +65,5 @@ permalink: /kb/141/Q141745/
 	
 	=============================================================================
 	
+
+{% endraw %}

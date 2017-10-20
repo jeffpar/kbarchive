@@ -6,6 +6,8 @@ permalink: /kb/150/Q150982/
 
 ## Q150982: PPT: Problems Unpacking Presentation on a Windows 3.x Computer
 
+{% raw %}
+
 	Article: Q150982
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,7.0
@@ -100,3 +102,5 @@ permalink: /kb/150/Q150982/
 	
 	=============================================================================
 	
+
+{% endraw %}

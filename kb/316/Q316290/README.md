@@ -6,6 +6,8 @@ permalink: /kb/316/Q316290/
 
 ## Q316290: PRB: Config Err Msg When You Create Web Sites or Expand MTS
 
+{% raw %}
+
 	Article: Q316290
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -52,3 +54,5 @@ permalink: /kb/316/Q316290/
 	
 	=============================================================================
 	
+
+{% endraw %}

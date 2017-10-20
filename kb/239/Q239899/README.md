@@ -6,6 +6,8 @@ permalink: /kb/239/Q239899/
 
 ## Q239899: SMS: Administrator Console Cannot Connect After Reinstallation
 
+{% raw %}
+
 	Article: Q239899
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -106,3 +108,5 @@ permalink: /kb/239/Q239899/
 	
 	=============================================================================
 	
+
+{% endraw %}

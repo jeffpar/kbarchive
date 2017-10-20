@@ -6,6 +6,8 @@ permalink: /kb/114/Q114863/
 
 ## Q114863: How to Update Other @ ... GET Fields While in a List Box
 
+{% raw %}
+
 	Article: Q114863
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6x; MS-DOS:2.0,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0
@@ -64,3 +66,5 @@ permalink: /kb/114/Q114863/
 	
 	=============================================================================
 	
+
+{% endraw %}

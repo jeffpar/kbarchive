@@ -6,6 +6,8 @@ permalink: /kb/149/Q149156/
 
 ## Q149156: BUG: Common Blocks Cannot Be Viewed in the Watch Window
 
+{% raw %}
+
 	Article: Q149156
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -83,3 +85,5 @@ permalink: /kb/149/Q149156/
 	
 	=============================================================================
 	
+
+{% endraw %}

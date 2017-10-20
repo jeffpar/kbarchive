@@ -6,6 +6,8 @@ permalink: /kb/222/Q222522/
 
 ## Q222522: Unable to View Modem Sharing Port in Ports Tool
 
+{% raw %}
+
 	Article: Q222522
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -67,3 +69,5 @@ permalink: /kb/222/Q222522/
 	
 	=============================================================================
 	
+
+{% endraw %}

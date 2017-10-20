@@ -6,6 +6,8 @@ permalink: /kb/279/Q279409/
 
 ## Q279409: BUG: WebClass ProcessTag Event Fails to Execute
 
+{% raw %}
+
 	Article: Q279409
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,6.0 SP4
@@ -155,3 +157,5 @@ permalink: /kb/279/Q279409/
 	
 	=============================================================================
 	
+
+{% endraw %}

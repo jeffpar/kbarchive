@@ -6,6 +6,8 @@ permalink: /kb/115/Q115316/
 
 ## Q115316: Microsoft Backup for Windows Err Msg: Bad Handle...
 
+{% raw %}
+
 	Article: Q115316
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -57,3 +59,5 @@ permalink: /kb/115/Q115316/
 	
 	=============================================================================
 	
+
+{% endraw %}

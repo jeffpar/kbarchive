@@ -6,6 +6,8 @@ permalink: /kb/302/Q302515/
 
 ## Q302515: HOWTO: Find all Extended Rights for a Schema Class Object
 
+{% raw %}
+
 	Article: Q302515
 	Product(s): Microsoft C Compiler
 	Version(s): 2000,6.0
@@ -378,3 +380,5 @@ permalink: /kb/302/Q302515/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146810/
 
 ## Q146810: XADM: Dialog Box Appears When Configuring Free/Busy Connector
 
+{% raw %}
+
 	Article: Q146810
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/146/Q146810/
 	
 	=============================================================================
 	
+
+{% endraw %}

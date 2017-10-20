@@ -6,6 +6,8 @@ permalink: /kb/200/Q200793/
 
 ## Q200793: XFOR: Load Balancing Mail and Dirsync with Exchange Notes Conn.
 
+{% raw %}
+
 	Article: Q200793
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -106,3 +108,5 @@ permalink: /kb/200/Q200793/
 	
 	=============================================================================
 	
+
+{% endraw %}

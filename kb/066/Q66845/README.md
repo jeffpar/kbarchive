@@ -6,6 +6,8 @@ permalink: /kb/066/Q66845/
 
 ## Q66845: ASD: Install Error Opening FOREIGN.FS4
 
+{% raw %}
+
 	Article: Q66845
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/066/Q66845/
 	
 	=============================================================================
 	
+
+{% endraw %}

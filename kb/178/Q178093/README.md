@@ -6,6 +6,8 @@ permalink: /kb/178/Q178093/
 
 ## Q178093: XADM: Attachments with Long Names Crash SNADS or PROFS Connector
 
+{% raw %}
+
 	Article: Q178093
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -49,3 +51,5 @@ permalink: /kb/178/Q178093/
 	
 	=============================================================================
 	
+
+{% endraw %}

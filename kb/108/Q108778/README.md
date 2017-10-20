@@ -6,6 +6,8 @@ permalink: /kb/108/Q108778/
 
 ## Q108778: HP LaserJet 4 Version 3.1.26 Features and Corrections
 
+{% raw %}
+
 	Article: Q108778
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:3.1,3.11
@@ -204,3 +206,5 @@ permalink: /kb/108/Q108778/
 	
 	=============================================================================
 	
+
+{% endraw %}

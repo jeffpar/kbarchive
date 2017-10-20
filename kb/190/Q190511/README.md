@@ -6,6 +6,8 @@ permalink: /kb/190/Q190511/
 
 ## Q190511: BUG: UserControl Containing Array of Controls Leaks Memory
 
+{% raw %}
+
 	Article: Q190511
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -194,3 +196,5 @@ permalink: /kb/190/Q190511/
 	
 	=============================================================================
 	
+
+{% endraw %}

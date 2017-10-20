@@ -6,6 +6,8 @@ permalink: /kb/135/Q135679/
 
 ## Q135679: IGMP Group members Do Not Respond to IGMP Group Query Frames
 
+{% raw %}
+
 	Article: Q135679
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/135/Q135679/
 	
 	=============================================================================
 	
+
+{% endraw %}

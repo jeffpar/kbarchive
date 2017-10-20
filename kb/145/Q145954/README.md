@@ -6,6 +6,8 @@ permalink: /kb/145/Q145954/
 
 ## Q145954: HOWTO: Set Up 3270 Device Emulation To AS/400
 
+{% raw %}
+
 	Article: Q145954
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11 SP1;2.11 SP2,3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -172,3 +174,5 @@ permalink: /kb/145/Q145954/
 	
 	=============================================================================
 	
+
+{% endraw %}

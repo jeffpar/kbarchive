@@ -6,6 +6,8 @@ permalink: /kb/104/Q104982/
 
 ## Q104982: Cinemania: GP Fault When Playing Video on Orchid Fahrenheit
 
+{% raw %}
+
 	Article: Q104982
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -68,3 +70,5 @@ permalink: /kb/104/Q104982/
 	
 	=============================================================================
 	
+
+{% endraw %}

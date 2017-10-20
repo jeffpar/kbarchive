@@ -6,6 +6,8 @@ permalink: /kb/296/Q296078/
 
 ## Q296078: Application Exception in Snaservr.exe After Event 102 X'0BC6'
 
+{% raw %}
+
 	Article: Q296078
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3,4.0 SP4
@@ -162,3 +164,5 @@ permalink: /kb/296/Q296078/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104861/
 
 ## Q104861: FORTRAN PowerStation README.TXT: Linker, Library, VWB
 
+{% raw %}
+
 	Article: Q104861
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -298,3 +300,5 @@ permalink: /kb/104/Q104861/
 	
 	=============================================================================
 	
+
+{% endraw %}

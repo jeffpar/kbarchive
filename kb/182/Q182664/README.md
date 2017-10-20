@@ -6,6 +6,8 @@ permalink: /kb/182/Q182664/
 
 ## Q182664: XCON: Notes Connector Sends Incorrect Header
 
+{% raw %}
+
 	Article: Q182664
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -57,3 +59,5 @@ permalink: /kb/182/Q182664/
 	
 	=============================================================================
 	
+
+{% endraw %}

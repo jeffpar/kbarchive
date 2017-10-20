@@ -6,6 +6,8 @@ permalink: /kb/171/Q171134/
 
 ## Q171134: WD97: CALL Statement Cannot Accept Variable Argument
 
+{% raw %}
+
 	Article: Q171134
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -173,3 +175,5 @@ permalink: /kb/171/Q171134/
 	
 	=============================================================================
 	
+
+{% endraw %}

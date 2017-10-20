@@ -6,6 +6,8 @@ permalink: /kb/156/Q156281/
 
 ## Q156281: Stop 0x0000000A - Parity Error on Compaq Proliant 4000
 
+{% raw %}
+
 	Article: Q156281
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -55,3 +57,5 @@ permalink: /kb/156/Q156281/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125321/
 
 ## Q125321: Delayed Screen Repaint After Modifying Color Characteristics
 
+{% raw %}
+
 	Article: Q125321
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/125/Q125321/
 	
 	=============================================================================
 	
+
+{% endraw %}

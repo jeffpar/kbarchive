@@ -6,6 +6,8 @@ permalink: /kb/156/Q156639/
 
 ## Q156639: PRB: Using Date Function Code in @...GET Does Not Work
 
+{% raw %}
+
 	Article: Q156639
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -56,3 +58,5 @@ permalink: /kb/156/Q156639/
 	
 	=============================================================================
 	
+
+{% endraw %}

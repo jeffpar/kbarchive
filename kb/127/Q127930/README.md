@@ -6,6 +6,8 @@ permalink: /kb/127/Q127930/
 
 ## Q127930: Paint Shop Pro Screen Capture Does Not Work Correctly
 
+{% raw %}
+
 	Article: Q127930
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/127/Q127930/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172236/
 
 ## Q172236: SNABase Status Does Not Change From Stopped to Running
 
+{% raw %}
+
 	Article: Q172236
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -56,3 +58,5 @@ permalink: /kb/172/Q172236/
 	
 	=============================================================================
 	
+
+{% endraw %}

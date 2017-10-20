@@ -6,6 +6,8 @@ permalink: /kb/259/Q259702/
 
 ## Q259702: SMS: Loss of Status Messages During Software Distribution
 
+{% raw %}
+
 	Article: Q259702
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP1,2.0 SP2
@@ -75,3 +77,5 @@ permalink: /kb/259/Q259702/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161869/
 
 ## Q161869: XCLN: Exchange 16-Bit Forms Performance
 
+{% raw %}
+
 	Article: Q161869
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -62,3 +64,5 @@ permalink: /kb/161/Q161869/
 	
 	=============================================================================
 	
+
+{% endraw %}

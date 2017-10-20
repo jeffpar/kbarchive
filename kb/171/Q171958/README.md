@@ -6,6 +6,8 @@ permalink: /kb/171/Q171958/
 
 ## Q171958: ODE97: Tips for Creating and Compiling Your Windows Help File
 
+{% raw %}
+
 	Article: Q171958
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -363,3 +365,5 @@ permalink: /kb/171/Q171958/
 	
 	=============================================================================
 	
+
+{% endraw %}

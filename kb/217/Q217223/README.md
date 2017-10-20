@@ -6,6 +6,8 @@ permalink: /kb/217/Q217223/
 
 ## Q217223: XCLN: BCC Recipients not Visible in Outlook 98
 
+{% raw %}
+
 	Article: Q217223
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03; WINDOWS:
@@ -47,3 +49,5 @@ permalink: /kb/217/Q217223/
 	
 	=============================================================================
 	
+
+{% endraw %}

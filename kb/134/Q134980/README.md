@@ -6,6 +6,8 @@ permalink: /kb/134/Q134980/
 
 ## Q134980: PRB: C4251 &amp; C4275 Compiler Warnings While Compiling an AFXDLL
 
+{% raw %}
+
 	Article: Q134980
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2
@@ -109,3 +111,5 @@ permalink: /kb/134/Q134980/
 	
 	=============================================================================
 	
+
+{% endraw %}

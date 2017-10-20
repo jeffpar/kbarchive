@@ -6,6 +6,8 @@ permalink: /kb/191/Q191997/
 
 ## Q191997: BUG: BackColor/ForeColor of Grid Not Carried Over to Subclass
 
+{% raw %}
+
 	Article: Q191997
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -114,3 +116,5 @@ permalink: /kb/191/Q191997/
 	
 	=============================================================================
 	
+
+{% endraw %}

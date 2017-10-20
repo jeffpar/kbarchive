@@ -6,6 +6,8 @@ permalink: /kb/305/Q305249/
 
 ## Q305249: &quot;Error 5. Access Is Denied&quot; Error Message Connecting to MSN
 
+{% raw %}
+
 	Article: Q305249
 	Product(s): The Microsoft Network
 	Version(s): 2.0,5.1
@@ -59,3 +61,5 @@ permalink: /kb/305/Q305249/
 	
 	=============================================================================
 	
+
+{% endraw %}

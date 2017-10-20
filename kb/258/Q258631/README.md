@@ -6,6 +6,8 @@ permalink: /kb/258/Q258631/
 
 ## Q258631: SNA Print Sessions May Not Use PDT File
 
+{% raw %}
+
 	Article: Q258631
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 (all SP),4.0,4.0 SP1,4.0 SP2
@@ -69,3 +71,5 @@ permalink: /kb/258/Q258631/
 	
 	=============================================================================
 	
+
+{% endraw %}

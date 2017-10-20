@@ -6,6 +6,8 @@ permalink: /kb/123/Q123415/
 
 ## Q123415: Disk Space Value May Be Incorrect After Exiting INTERSVR
 
+{% raw %}
+
 	Article: Q123415
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0a,6.0,6.2,6.21,6.22
@@ -52,3 +54,5 @@ permalink: /kb/123/Q123415/
 	
 	=============================================================================
 	
+
+{% endraw %}

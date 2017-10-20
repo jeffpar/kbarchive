@@ -6,6 +6,8 @@ permalink: /kb/252/Q252897/
 
 ## Q252897: TAMA Does Not Run Update Script for Management Agent
 
+{% raw %}
+
 	Article: Q252897
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -64,3 +66,5 @@ permalink: /kb/252/Q252897/
 	
 	=============================================================================
 	
+
+{% endraw %}

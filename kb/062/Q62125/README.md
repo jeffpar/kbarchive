@@ -6,6 +6,8 @@ permalink: /kb/062/Q62125/
 
 ## Q62125: Mac Hyp: Microsoft Mail and SuperCard
 
+{% raw %}
+
 	Article: Q62125
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -54,3 +56,5 @@ permalink: /kb/062/Q62125/
 	
 	=============================================================================
 	
+
+{% endraw %}

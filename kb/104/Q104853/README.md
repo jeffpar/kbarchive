@@ -6,6 +6,8 @@ permalink: /kb/104/Q104853/
 
 ## Q104853: FlightSim: Gravis Mouse Stick Responds Slowly or Sticks
 
+{% raw %}
+
 	Article: Q104853
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:4.0
@@ -58,3 +60,5 @@ permalink: /kb/104/Q104853/
 	
 	=============================================================================
 	
+
+{% endraw %}

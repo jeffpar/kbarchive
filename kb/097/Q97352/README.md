@@ -6,6 +6,8 @@ permalink: /kb/097/Q97352/
 
 ## Q97352: Palette Utilization Demonstration
 
+{% raw %}
+
 	Article: Q97352
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -82,3 +84,5 @@ permalink: /kb/097/Q97352/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171545/
 
 ## Q171545: FIX: Error 438 Using CreateInterface's Optional Default Flag
 
+{% raw %}
+
 	Article: Q171545
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,97
@@ -87,3 +89,5 @@ permalink: /kb/171/Q171545/
 	
 	=============================================================================
 	
+
+{% endraw %}

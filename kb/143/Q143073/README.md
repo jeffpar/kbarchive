@@ -6,6 +6,8 @@ permalink: /kb/143/Q143073/
 
 ## Q143073: Err Msg: Microsoft Backup Has Encountered a Serious Error...
 
+{% raw %}
+
 	Article: Q143073
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -144,3 +146,5 @@ permalink: /kb/143/Q143073/
 	
 	=============================================================================
 	
+
+{% endraw %}

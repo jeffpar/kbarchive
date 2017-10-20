@@ -6,6 +6,8 @@ permalink: /kb/134/Q134402/
 
 ## Q134402: Some TSRs Moved from Autoexec.bat to Winstart.bat During Setup
 
+{% raw %}
+
 	Article: Q134402
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/134/Q134402/
 	
 	=============================================================================
 	
+
+{% endraw %}

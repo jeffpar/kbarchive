@@ -6,6 +6,8 @@ permalink: /kb/069/Q69967/
 
 ## Q69967: Automating Network Groups and Items via SETUP.INF
 
+{% raw %}
+
 	Article: Q69967
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -97,3 +99,5 @@ permalink: /kb/069/Q69967/
 	
 	=============================================================================
 	
+
+{% endraw %}

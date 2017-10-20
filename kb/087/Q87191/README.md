@@ -6,6 +6,8 @@ permalink: /kb/087/Q87191/
 
 ## Q87191: PROFS: Maximum Allowable Size of Mail Sent Through Gateway
 
+{% raw %}
+
 	Article: Q87191
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -60,3 +62,5 @@ permalink: /kb/087/Q87191/
 	
 	=============================================================================
 	
+
+{% endraw %}

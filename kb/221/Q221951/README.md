@@ -6,6 +6,8 @@ permalink: /kb/221/Q221951/
 
 ## Q221951: SMS: RAS Sender SNA Link: Error 53 During WNetAddDConnection2 ()
 
+{% raw %}
+
 	Article: Q221951
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -69,3 +71,5 @@ permalink: /kb/221/Q221951/
 	
 	=============================================================================
 	
+
+{% endraw %}

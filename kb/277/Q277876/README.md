@@ -6,6 +6,8 @@ permalink: /kb/277/Q277876/
 
 ## Q277876: Status Message 10002 on the Client When Distributing Software
 
+{% raw %}
+
 	Article: Q277876
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -89,3 +91,5 @@ permalink: /kb/277/Q277876/
 	
 	=============================================================================
 	
+
+{% endraw %}

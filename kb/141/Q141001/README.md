@@ -6,6 +6,8 @@ permalink: /kb/141/Q141001/
 
 ## Q141001: Mac Multimedia: Cannot Print Selected Text
 
+{% raw %}
+
 	Article: Q141001
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1996 edition
@@ -61,3 +63,5 @@ permalink: /kb/141/Q141001/
 	
 	=============================================================================
 	
+
+{% endraw %}

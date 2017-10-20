@@ -6,6 +6,8 @@ permalink: /kb/180/Q180352/
 
 ## Q180352: XWEB: No &quot;Send Again&quot; Option on NDR Using ASC or OWA
 
+{% raw %}
+
 	Article: Q180352
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -50,3 +52,5 @@ permalink: /kb/180/Q180352/
 	
 	=============================================================================
 	
+
+{% endraw %}

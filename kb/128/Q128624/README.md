@@ -6,6 +6,8 @@ permalink: /kb/128/Q128624/
 
 ## Q128624: How to Create and Assign User Profiles for Users in a Domain
 
+{% raw %}
+
 	Article: Q128624
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -161,3 +163,5 @@ permalink: /kb/128/Q128624/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/266/Q266209/
 
 ## Q266209: Network Time Protocols and the Timeserv.exe Utility File
 
+{% raw %}
+
 	Article: Q266209
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -131,3 +133,5 @@ permalink: /kb/266/Q266209/
 	
 	=============================================================================
 	
+
+{% endraw %}

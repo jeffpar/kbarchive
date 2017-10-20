@@ -6,6 +6,8 @@ permalink: /kb/044/Q44922/
 
 ## Q44922: Adjusting the Alignment of PostScript Output
 
+{% raw %}
+
 	Article: Q44922
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -99,3 +101,5 @@ permalink: /kb/044/Q44922/
 	
 	=============================================================================
 	
+
+{% endraw %}

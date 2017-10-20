@@ -6,6 +6,8 @@ permalink: /kb/193/Q193400/
 
 ## Q193400: BUG: Show Event in a UserControl Array Member Does Not Execute
 
+{% raw %}
+
 	Article: Q193400
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -101,3 +103,5 @@ permalink: /kb/193/Q193400/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185060/
 
 ## Q185060: WD97: ODMA: How Word 97 Works With GroupWise 5.2
 
+{% raw %}
+
 	Article: Q185060
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -237,3 +239,5 @@ permalink: /kb/185/Q185060/
 	
 	=============================================================================
 	
+
+{% endraw %}

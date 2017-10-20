@@ -6,6 +6,8 @@ permalink: /kb/089/Q89272/
 
 ## Q89272: Third-Party Products for FoxBASE+
 
+{% raw %}
+
 	Article: Q89272
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -85,3 +87,5 @@ permalink: /kb/089/Q89272/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/236/Q236416/
 
 ## Q236416: XADM: Event 114: Unable to Read Configuration File &#91;&#93;
 
+{% raw %}
+
 	Article: Q236416
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; winnt:5.5 SP2
@@ -114,3 +116,5 @@ permalink: /kb/236/Q236416/
 	
 	=============================================================================
 	
+
+{% endraw %}

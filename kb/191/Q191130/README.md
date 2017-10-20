@@ -6,6 +6,8 @@ permalink: /kb/191/Q191130/
 
 ## Q191130: INFO: Fixlist for Visual Basic 6.0 for Windows as 8/7/98
 
+{% raw %}
+
 	Article: Q191130
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -152,3 +154,5 @@ permalink: /kb/191/Q191130/
 	
 	=============================================================================
 	
+
+{% endraw %}

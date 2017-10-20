@@ -6,6 +6,8 @@ permalink: /kb/233/Q233395/
 
 ## Q233395: SNMP Access Violation After Installing Service Pack 4
 
+{% raw %}
+
 	Article: Q233395
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -64,3 +66,5 @@ permalink: /kb/233/Q233395/
 	
 	=============================================================================
 	
+
+{% endraw %}

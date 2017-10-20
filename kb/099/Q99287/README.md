@@ -6,6 +6,8 @@ permalink: /kb/099/Q99287/
 
 ## Q99287: VidCap: Double Buffering Causes Dropped Frames
 
+{% raw %}
+
 	Article: Q99287
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/099/Q99287/
 	
 	=============================================================================
 	
+
+{% endraw %}

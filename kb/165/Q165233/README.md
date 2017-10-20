@@ -6,6 +6,8 @@ permalink: /kb/165/Q165233/
 
 ## Q165233: WD97: Word Loses Center Align When Saving to HTML
 
+{% raw %}
+
 	Article: Q165233
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -80,3 +82,5 @@ permalink: /kb/165/Q165233/
 	
 	=============================================================================
 	
+
+{% endraw %}

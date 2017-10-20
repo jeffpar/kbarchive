@@ -6,6 +6,8 @@ permalink: /kb/047/Q47476/
 
 ## Q47476: WD97: How to Create Multiple References to the Same Footnote
 
+{% raw %}
+
 	Article: Q47476
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/047/Q47476/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194657/
 
 ## Q194657: XADM: Unable to Post a Reply to Exchange 5.5 Newsgroup Folder
 
+{% raw %}
+
 	Article: Q194657
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1
@@ -84,3 +86,5 @@ permalink: /kb/194/Q194657/
 	
 	=============================================================================
 	
+
+{% endraw %}

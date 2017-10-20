@@ -6,6 +6,8 @@ permalink: /kb/096/Q96718/
 
 ## Q96718: PC Win: Description and Use of Inbox Shadowing
 
+{% raw %}
+
 	Article: Q96718
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -80,3 +82,5 @@ permalink: /kb/096/Q96718/
 	
 	=============================================================================
 	
+
+{% endraw %}

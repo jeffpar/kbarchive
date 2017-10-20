@@ -6,6 +6,8 @@ permalink: /kb/143/Q143289/
 
 ## Q143289: Mac Dinosaurs: How to Turn Sound and Narration Off and On
 
+{% raw %}
+
 	Article: Q143289
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -49,3 +51,5 @@ permalink: /kb/143/Q143289/
 	
 	=============================================================================
 	
+
+{% endraw %}

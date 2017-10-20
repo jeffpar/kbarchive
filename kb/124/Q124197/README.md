@@ -6,6 +6,8 @@ permalink: /kb/124/Q124197/
 
 ## Q124197: PC OS/2:Err Msg:SYS1804: Setup Is Unable to Find File KEYBOARD
 
+{% raw %}
+
 	Article: Q124197
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -48,3 +50,5 @@ permalink: /kb/124/Q124197/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175488/
 
 ## Q175488: PRB: VB4 16-Bit Clients Cannot Early-Bind to VB5 .EXE Servers
 
+{% raw %}
+
 	Article: Q175488
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -193,3 +195,5 @@ permalink: /kb/175/Q175488/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/074/Q74199/
 
 ## Q74199: MS-DOS Shell Does Not Update the Directory Tree with CTRL+F5
 
+{% raw %}
+
 	Article: Q74199
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:
@@ -59,3 +61,5 @@ permalink: /kb/074/Q74199/
 	
 	=============================================================================
 	
+
+{% endraw %}

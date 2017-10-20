@@ -6,6 +6,8 @@ permalink: /kb/198/Q198606/
 
 ## Q198606: PRB: &quot;Update Conflict&quot; Message When Modifying SQL Server Data
 
+{% raw %}
+
 	Article: Q198606
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -263,3 +265,5 @@ permalink: /kb/198/Q198606/
 	
 	=============================================================================
 	
+
+{% endraw %}

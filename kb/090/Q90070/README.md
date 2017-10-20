@@ -6,6 +6,8 @@ permalink: /kb/090/Q90070/
 
 ## Q90070: Not All Playable File Types Have Help Pop-up Topics
 
+{% raw %}
+
 	Article: Q90070
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/090/Q90070/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118569/
 
 ## Q118569: Domain Guests Group Not Created On Upgrade
 
+{% raw %}
+
 	Article: Q118569
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -54,3 +56,5 @@ permalink: /kb/118/Q118569/
 	
 	=============================================================================
 	
+
+{% endraw %}

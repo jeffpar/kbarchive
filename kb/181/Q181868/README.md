@@ -6,6 +6,8 @@ permalink: /kb/181/Q181868/
 
 ## Q181868: Config.pol File Attributes Change After Supervisor Logs On
 
+{% raw %}
+
 	Article: Q181868
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0,2.0,2.1,2.5
@@ -61,3 +63,5 @@ permalink: /kb/181/Q181868/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117635/
 
 ## Q117635: MS-DOS 6.2 Upgrade Directory Listings for 5.25-Inch 360K Set
 
+{% raw %}
+
 	Article: Q117635
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -315,3 +317,5 @@ permalink: /kb/117/Q117635/
 	
 	=============================================================================
 	
+
+{% endraw %}

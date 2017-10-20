@@ -6,6 +6,8 @@ permalink: /kb/143/Q143269/
 
 ## Q143269: 3D Movie Maker: Windows NT 3.51 Requires Administrative Rights
 
+{% raw %}
+
 	Article: Q143269
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0; winnt:3.51
@@ -65,3 +67,5 @@ permalink: /kb/143/Q143269/
 	
 	=============================================================================
 	
+
+{% endraw %}

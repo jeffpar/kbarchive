@@ -6,6 +6,8 @@ permalink: /kb/159/Q159840/
 
 ## Q159840: Access Violation in Services.exe Clearing Event Log
 
+{% raw %}
+
 	Article: Q159840
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -69,3 +71,5 @@ permalink: /kb/159/Q159840/
 	
 	=============================================================================
 	
+
+{% endraw %}

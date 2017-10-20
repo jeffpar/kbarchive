@@ -6,6 +6,8 @@ permalink: /kb/143/Q143180/
 
 ## Q143180: IIS Common Registry Parameters
 
+{% raw %}
+
 	Article: Q143180
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0,3.0,4.0
@@ -395,3 +397,5 @@ permalink: /kb/143/Q143180/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167019/
 
 ## Q167019: New OLE Features and Enhancements in WinNT 4.0 Service Pack 2
 
+{% raw %}
+
 	Article: Q167019
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -123,3 +125,5 @@ permalink: /kb/167/Q167019/
 	
 	=============================================================================
 	
+
+{% endraw %}

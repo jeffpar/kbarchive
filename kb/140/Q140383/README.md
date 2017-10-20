@@ -6,6 +6,8 @@ permalink: /kb/140/Q140383/
 
 ## Q140383: LPR Printer Port Requires TCP/IP Address and Printer Name
 
+{% raw %}
+
 	Article: Q140383
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -61,3 +63,5 @@ permalink: /kb/140/Q140383/
 	
 	=============================================================================
 	
+
+{% endraw %}

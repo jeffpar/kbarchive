@@ -6,6 +6,8 @@ permalink: /kb/136/Q136747/
 
 ## Q136747: SU0014 Error When Detection Reaches 100 Percent Complete
 
+{% raw %}
+
 	Article: Q136747
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -74,3 +76,5 @@ permalink: /kb/136/Q136747/
 	
 	=============================================================================
 	
+
+{% endraw %}

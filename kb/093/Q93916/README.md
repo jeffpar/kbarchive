@@ -6,6 +6,8 @@ permalink: /kb/093/Q93916/
 
 ## Q93916: INFO: Calling MFC MDI Base Class Message Handlers
 
+{% raw %}
+
 	Article: Q93916
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,2.2,4.0
@@ -82,3 +84,5 @@ permalink: /kb/093/Q93916/
 	
 	=============================================================================
 	
+
+{% endraw %}

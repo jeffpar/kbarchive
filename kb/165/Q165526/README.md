@@ -6,6 +6,8 @@ permalink: /kb/165/Q165526/
 
 ## Q165526: WD97: Page Numbering Is Different in Online View
 
+{% raw %}
+
 	Article: Q165526
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -79,3 +81,5 @@ permalink: /kb/165/Q165526/
 	
 	=============================================================================
 	
+
+{% endraw %}

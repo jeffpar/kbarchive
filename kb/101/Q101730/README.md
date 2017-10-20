@@ -6,6 +6,8 @@ permalink: /kb/101/Q101730/
 
 ## Q101730: Deleting COM Ports from a Windows NT Installation
 
+{% raw %}
+
 	Article: Q101730
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -61,3 +63,5 @@ permalink: /kb/101/Q101730/
 	
 	=============================================================================
 	
+
+{% endraw %}

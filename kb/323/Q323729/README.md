@@ -6,6 +6,8 @@ permalink: /kb/323/Q323729/
 
 ## Q323729: XADM: You Cannot View or Add Organizational Forms Library
 
+{% raw %}
+
 	Article: Q323729
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -87,3 +89,5 @@ permalink: /kb/323/Q323729/
 	
 	=============================================================================
 	
+
+{% endraw %}

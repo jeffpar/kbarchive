@@ -6,6 +6,8 @@ permalink: /kb/096/Q96308/
 
 ## Q96308: Mac Srv: Force Quit of Server as Application Doesn't Work
 
+{% raw %}
+
 	Article: Q96308
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -37,3 +39,5 @@ permalink: /kb/096/Q96308/
 	
 	=============================================================================
 	
+
+{% endraw %}

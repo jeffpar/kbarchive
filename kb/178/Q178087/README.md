@@ -6,6 +6,8 @@ permalink: /kb/178/Q178087/
 
 ## Q178087: Err Msg: Unable to Logon to the Server Using Distributed...
 
+{% raw %}
+
 	Article: Q178087
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.51,4.0,4.01
@@ -140,3 +142,5 @@ permalink: /kb/178/Q178087/
 	
 	=============================================================================
 	
+
+{% endraw %}

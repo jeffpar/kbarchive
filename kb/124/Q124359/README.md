@@ -6,6 +6,8 @@ permalink: /kb/124/Q124359/
 
 ## Q124359: No Xircom Ethernet Adapter Choices Available During Setup
 
+{% raw %}
+
 	Article: Q124359
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/124/Q124359/
 	
 	=============================================================================
 	
+
+{% endraw %}

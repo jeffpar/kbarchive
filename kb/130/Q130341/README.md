@@ -6,6 +6,8 @@ permalink: /kb/130/Q130341/
 
 ## Q130341: Twilight Zone Screen Saver Causes GP Fault
 
+{% raw %}
+
 	Article: Q130341
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/130/Q130341/
 	
 	=============================================================================
 	
+
+{% endraw %}

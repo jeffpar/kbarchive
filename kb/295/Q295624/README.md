@@ -6,6 +6,8 @@ permalink: /kb/295/Q295624/
 
 ## Q295624: Stop 0x00000050/0x00000019 Printing Extended Chars to PS Printer
 
+{% raw %}
+
 	Article: Q295624
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6,4.0 SP6a
@@ -107,3 +109,5 @@ permalink: /kb/295/Q295624/
 	
 	=============================================================================
 	
+
+{% endraw %}

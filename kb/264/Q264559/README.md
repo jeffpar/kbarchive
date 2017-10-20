@@ -6,6 +6,8 @@ permalink: /kb/264/Q264559/
 
 ## Q264559: When You Try to Change Settings, Error Message Reports That the
 
+{% raw %}
+
 	Article: Q264559
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -85,3 +87,5 @@ permalink: /kb/264/Q264559/
 	
 	=============================================================================
 	
+
+{% endraw %}

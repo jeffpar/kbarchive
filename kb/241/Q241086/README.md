@@ -6,6 +6,8 @@ permalink: /kb/241/Q241086/
 
 ## Q241086: XFOR: GroupWise Dirsync Update Does Not Create Objects
 
+{% raw %}
+
 	Article: Q241086
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP3
@@ -83,3 +85,5 @@ permalink: /kb/241/Q241086/
 	
 	=============================================================================
 	
+
+{% endraw %}

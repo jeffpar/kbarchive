@@ -6,6 +6,8 @@ permalink: /kb/074/Q74527/
 
 ## Q74527: HOWTO: Designing Applications for High Screen Resolutions
 
+{% raw %}
+
 	Article: Q74527
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -89,3 +91,5 @@ permalink: /kb/074/Q74527/
 	
 	=============================================================================
 	
+
+{% endraw %}

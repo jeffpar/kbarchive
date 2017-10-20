@@ -6,6 +6,8 @@ permalink: /kb/119/Q119932/
 
 ## Q119932: Space: Stop Velocity Command Is Relative to Closest Object
 
+{% raw %}
+
 	Article: Q119932
 	Product(s): Microsoft Home Games
 	Version(s): 1.00
@@ -42,3 +44,5 @@ permalink: /kb/119/Q119932/
 	
 	=============================================================================
 	
+
+{% endraw %}

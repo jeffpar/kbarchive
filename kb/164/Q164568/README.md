@@ -6,6 +6,8 @@ permalink: /kb/164/Q164568/
 
 ## Q164568: SMS: Network Inventory Missing on Some Win95 NetWare Clients
 
+{% raw %}
+
 	Article: Q164568
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -57,3 +59,5 @@ permalink: /kb/164/Q164568/
 	
 	=============================================================================
 	
+
+{% endraw %}

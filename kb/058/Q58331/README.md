@@ -6,6 +6,8 @@ permalink: /kb/058/Q58331/
 
 ## Q58331: Contents of Windows 3.0 WININI.TXT
 
+{% raw %}
+
 	Article: Q58331
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -221,3 +223,5 @@ permalink: /kb/058/Q58331/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/141/Q141727/
 
 ## Q141727: Bookshelf Add-In for Excel Does Not Provide Description
 
+{% raw %}
+
 	Article: Q141727
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; Win95:7.0
@@ -50,3 +52,5 @@ permalink: /kb/141/Q141727/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/256/Q256171/
 
 ## Q256171: Group Policy Custom Shell Entry Overrides ICA Published Program
 
+{% raw %}
+
 	Article: Q256171
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4,4.0 SP5
@@ -53,3 +55,5 @@ permalink: /kb/256/Q256171/
 	
 	=============================================================================
 	
+
+{% endraw %}

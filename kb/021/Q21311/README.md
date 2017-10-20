@@ -6,6 +6,8 @@ permalink: /kb/021/Q21311/
 
 ## Q21311: How DEFINT, DEFSNG, DEFDBL Affect Type of DEF FN Function
 
+{% raw %}
+
 	Article: Q21311
 	Product(s): See article
 	Version(s): 5.35 5.36 6.00 6.00b 7.00 7.10 | 6.00 6.00b 7.00 7.10
@@ -40,3 +42,5 @@ permalink: /kb/021/Q21311/
 	   10 DEFINT A   ' DEFINT A does affect the DEF FN below.
 	   20 DEF FNAB=1.2
 	   30 PRINT FNAB
+
+{% endraw %}

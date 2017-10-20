@@ -6,6 +6,8 @@ permalink: /kb/164/Q164425/
 
 ## Q164425: Cannot Use Keyboard to Set Connection Time in CompuServe Mail
 
+{% raw %}
+
 	Article: Q164425
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -45,3 +47,5 @@ permalink: /kb/164/Q164425/
 	
 	=============================================================================
 	
+
+{% endraw %}

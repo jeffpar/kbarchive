@@ -6,6 +6,8 @@ permalink: /kb/246/Q246325/
 
 ## Q246325: System Administration of File and Directory Access in Interix
 
+{% raw %}
+
 	Article: Q246325
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2.1,2.2.2,2.2.3,2.2.4
@@ -59,3 +61,5 @@ permalink: /kb/246/Q246325/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198839/
 
 ## Q198839: FIX: Problems with Asynchronous Break on Multiprocessor Machines
 
+{% raw %}
+
 	Article: Q198839
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -62,3 +64,5 @@ permalink: /kb/198/Q198839/
 	
 	=============================================================================
 	
+
+{% endraw %}

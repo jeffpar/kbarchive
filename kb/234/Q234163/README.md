@@ -6,6 +6,8 @@ permalink: /kb/234/Q234163/
 
 ## Q234163: CheckPoint FireWall-1 Version 3.x and 4.0 Do Not Support PPTP Th
 
+{% raw %}
+
 	Article: Q234163
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/234/Q234163/
 	
 	=============================================================================
 	
+
+{% endraw %}

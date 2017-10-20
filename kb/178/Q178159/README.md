@@ -6,6 +6,8 @@ permalink: /kb/178/Q178159/
 
 ## Q178159: XCLN: Outlook for Windows 3.1x Fails to Import CAL Files
 
+{% raw %}
+
 	Article: Q178159
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:1.0,8.0
@@ -67,3 +69,5 @@ permalink: /kb/178/Q178159/
 	
 	=============================================================================
 	
+
+{% endraw %}

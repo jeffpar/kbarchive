@@ -6,6 +6,8 @@ permalink: /kb/245/Q245816/
 
 ## Q245816: SMS: Screen Saver Disabled After Applying the Hotfix for Q193269
 
+{% raw %}
+
 	Article: Q245816
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -244,3 +246,5 @@ permalink: /kb/245/Q245816/
 	
 	=============================================================================
 	
+
+{% endraw %}

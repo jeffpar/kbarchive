@@ -6,6 +6,8 @@ permalink: /kb/161/Q161224/
 
 ## Q161224: Error Message During Setup on DEC Ultra II Laptop
 
+{% raw %}
+
 	Article: Q161224
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -52,3 +54,5 @@ permalink: /kb/161/Q161224/
 	
 	=============================================================================
 	
+
+{% endraw %}

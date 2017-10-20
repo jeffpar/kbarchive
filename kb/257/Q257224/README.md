@@ -6,6 +6,8 @@ permalink: /kb/257/Q257224/
 
 ## Q257224: SMS: Remote Control Reinstalled During Periodic Component Verify
 
+{% raw %}
+
 	Article: Q257224
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -67,3 +69,5 @@ permalink: /kb/257/Q257224/
 	
 	=============================================================================
 	
+
+{% endraw %}

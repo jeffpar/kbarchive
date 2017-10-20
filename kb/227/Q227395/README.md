@@ -6,6 +6,8 @@ permalink: /kb/227/Q227395/
 
 ## Q227395: Incorrect Dialog Box for Changing Password on NDS Server
 
+{% raw %}
+
 	Article: Q227395
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/227/Q227395/
 	
 	=============================================================================
 	
+
+{% endraw %}

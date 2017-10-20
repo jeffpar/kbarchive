@@ -6,6 +6,8 @@ permalink: /kb/170/Q170211/
 
 ## Q170211: WD97: Bullets in Multilevel Numbering Convert to Boxes
 
+{% raw %}
+
 	Article: Q170211
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -77,3 +79,5 @@ permalink: /kb/170/Q170211/
 	
 	=============================================================================
 	
+
+{% endraw %}

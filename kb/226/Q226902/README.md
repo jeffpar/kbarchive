@@ -6,6 +6,8 @@ permalink: /kb/226/Q226902/
 
 ## Q226902: SMS: User Wizard Doesn't Delete a User Group from Another Domain
 
+{% raw %}
+
 	Article: Q226902
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -52,3 +54,5 @@ permalink: /kb/226/Q226902/
 	
 	=============================================================================
 	
+
+{% endraw %}

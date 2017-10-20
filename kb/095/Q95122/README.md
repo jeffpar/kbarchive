@@ -6,6 +6,8 @@ permalink: /kb/095/Q95122/
 
 ## Q95122: Manual Installation of Golf for Windows
 
+{% raw %}
+
 	Article: Q95122
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -165,3 +167,5 @@ permalink: /kb/095/Q95122/
 	
 	=============================================================================
 	
+
+{% endraw %}

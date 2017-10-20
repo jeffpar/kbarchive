@@ -6,6 +6,8 @@ permalink: /kb/104/Q104721/
 
 ## Q104721: Oak VGA Prostar Excelerator May Cause Distortion in Shell
 
+{% raw %}
+
 	Article: Q104721
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:5.x,6.0; WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/104/Q104721/
 	
 	=============================================================================
 	
+
+{% endraw %}

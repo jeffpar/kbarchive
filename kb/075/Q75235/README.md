@@ -6,6 +6,8 @@ permalink: /kb/075/Q75235/
 
 ## Q75235: F-15 Strike Eagle II Requires LOADFIX to Run
 
+{% raw %}
+
 	Article: Q75235
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -54,3 +56,5 @@ permalink: /kb/075/Q75235/
 	
 	=============================================================================
 	
+
+{% endraw %}

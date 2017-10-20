@@ -6,6 +6,8 @@ permalink: /kb/139/Q139695/
 
 ## Q139695: SilentRip Registry Entry within MPR for Windows NT 3.51
 
+{% raw %}
+
 	Article: Q139695
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -55,3 +57,5 @@ permalink: /kb/139/Q139695/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175119/
 
 ## Q175119: XADM: Isinteg Ignores Lack of Space and Creates Empty Log
 
+{% raw %}
+
 	Article: Q175119
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -50,3 +52,5 @@ permalink: /kb/175/Q175119/
 	
 	=============================================================================
 	
+
+{% endraw %}

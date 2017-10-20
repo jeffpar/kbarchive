@@ -6,6 +6,8 @@ permalink: /kb/240/Q240940/
 
 ## Q240940: BUG: CTime::GetCurrentTime Returns Incorrect Date for CE 2.11
 
+{% raw %}
+
 	Article: Q240940
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -101,3 +103,5 @@ permalink: /kb/240/Q240940/
 	
 	=============================================================================
 	
+
+{% endraw %}

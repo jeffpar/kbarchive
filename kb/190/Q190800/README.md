@@ -6,6 +6,8 @@ permalink: /kb/190/Q190800/
 
 ## Q190800: FIX: VC Debugger Fails for WINCE App if Total DLLs Exceed Four
 
+{% raw %}
+
 	Article: Q190800
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:5.0
@@ -75,3 +77,5 @@ permalink: /kb/190/Q190800/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/036/Q36870/
 
 ## Q36870: INFO: C2106 Error Assigning a String Literal to a char Array
 
+{% raw %}
+
 	Article: Q36870
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.5,6.0,6.0a,6.0ax; MS-DOS:7.0; winnt:1.0,2.0,2.1,4.0,5.0,6.0
@@ -145,3 +147,5 @@ permalink: /kb/036/Q36870/
 	
 	=============================================================================
 	
+
+{% endraw %}

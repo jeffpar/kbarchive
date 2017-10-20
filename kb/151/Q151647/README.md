@@ -6,6 +6,8 @@ permalink: /kb/151/Q151647/
 
 ## Q151647: Multimedia: Hourglass Icon or Program Stops Responding
 
+{% raw %}
+
 	Article: Q151647
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -134,3 +136,5 @@ permalink: /kb/151/Q151647/
 	
 	=============================================================================
 	
+
+{% endraw %}

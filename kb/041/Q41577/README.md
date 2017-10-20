@@ -6,6 +6,8 @@ permalink: /kb/041/Q41577/
 
 ## Q41577: QuickC 2.00 README.DOC: Declaring and Initializing Arrays
 
+{% raw %}
+
 	Article: Q41577
 	Product(s): See article
 	Version(s): 2.00
@@ -42,3 +44,5 @@ permalink: /kb/041/Q41577/
 	automatic arrays at warning level three. The requirement for sized
 	arrays is unique to QuickC -- unsized arrays are accepted by the
 	Microsoft C Optimizing Compiler.
+
+{% endraw %}

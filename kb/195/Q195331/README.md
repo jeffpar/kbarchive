@@ -6,6 +6,8 @@ permalink: /kb/195/Q195331/
 
 ## Q195331: WD97: General Information About Section Breaks
 
+{% raw %}
+
 	Article: Q195331
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -211,3 +213,5 @@ permalink: /kb/195/Q195331/
 	
 	=============================================================================
 	
+
+{% endraw %}

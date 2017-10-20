@@ -6,6 +6,8 @@ permalink: /kb/195/Q195655/
 
 ## Q195655: HOWTO: How to Set a Screen Saver Through a System Policy
 
+{% raw %}
+
 	Article: Q195655
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -123,3 +125,5 @@ permalink: /kb/195/Q195655/
 	
 	=============================================================================
 	
+
+{% endraw %}

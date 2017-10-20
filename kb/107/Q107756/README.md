@@ -6,6 +6,8 @@ permalink: /kb/107/Q107756/
 
 ## Q107756: PC Win: Err Msg: Mail System Error. Mail Could Not Read...
 
+{% raw %}
+
 	Article: Q107756
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b
@@ -61,3 +63,5 @@ permalink: /kb/107/Q107756/
 	
 	=============================================================================
 	
+
+{% endraw %}

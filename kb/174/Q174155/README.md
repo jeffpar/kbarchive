@@ -6,6 +6,8 @@ permalink: /kb/174/Q174155/
 
 ## Q174155: PRB: Format Function May Return Incorrect Values
 
+{% raw %}
+
 	Article: Q174155
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0
@@ -140,3 +142,5 @@ permalink: /kb/174/Q174155/
 	
 	=============================================================================
 	
+
+{% endraw %}

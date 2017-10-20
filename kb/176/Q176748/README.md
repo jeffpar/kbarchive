@@ -6,6 +6,8 @@ permalink: /kb/176/Q176748/
 
 ## Q176748: CART Precision Racing: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q176748
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -60,3 +62,5 @@ permalink: /kb/176/Q176748/
 	
 	=============================================================================
 	
+
+{% endraw %}

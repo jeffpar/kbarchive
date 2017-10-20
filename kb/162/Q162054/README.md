@@ -6,6 +6,8 @@ permalink: /kb/162/Q162054/
 
 ## Q162054: RouterMTU Registry Value Is No Longer Supported
 
+{% raw %}
+
 	Article: Q162054
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.1 3.5 3.51 4.0
@@ -62,3 +64,5 @@ permalink: /kb/162/Q162054/
 	
 	=============================================================================
 	
+
+{% endraw %}

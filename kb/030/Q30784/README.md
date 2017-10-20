@@ -6,6 +6,8 @@ permalink: /kb/030/Q30784/
 
 ## Q30784: MASM 5.10 MIXED.DOC: Converting Mixed-Language Source Files
 
+{% raw %}
+
 	Article: Q30784
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -37,3 +39,5 @@ permalink: /kb/030/Q30784/
 	                from BASIC, C, FORTRAN, or Pascal.
 	   MIXED.INC    Mixed language macros.
 	   MIXED.DOC    This file.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264298/
 
 ## Q264298: WD97: Word Not Restored/Maximized When Clicking Program Button
 
+{% raw %}
+
 	Article: Q264298
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/264/Q264298/
 	
 	=============================================================================
 	
+
+{% endraw %}

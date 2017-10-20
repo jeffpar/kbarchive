@@ -6,6 +6,8 @@ permalink: /kb/150/Q150951/
 
 ## Q150951: PRB: Setup Wizard Fails on HELO_SRV.VBP OC30.DLL Reference
 
+{% raw %}
+
 	Article: Q150951
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -79,3 +81,5 @@ permalink: /kb/150/Q150951/
 	
 	=============================================================================
 	
+
+{% endraw %}

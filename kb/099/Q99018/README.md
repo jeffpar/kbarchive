@@ -6,6 +6,8 @@ permalink: /kb/099/Q99018/
 
 ## Q99018: Clipper Err Msg with MS-DOS: Illegal Format in Loadable File
 
+{% raw %}
+
 	Article: Q99018
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -75,3 +77,5 @@ permalink: /kb/099/Q99018/
 	
 	=============================================================================
 	
+
+{% endraw %}

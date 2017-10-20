@@ -6,6 +6,8 @@ permalink: /kb/067/Q67823/
 
 ## Q67823: ASD: SHIFT+INSERT Doesn't Work on Tandy 1000 Keyboard
 
+{% raw %}
+
 	Article: Q67823
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/067/Q67823/
 	
 	=============================================================================
 	
+
+{% endraw %}

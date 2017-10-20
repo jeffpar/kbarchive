@@ -6,6 +6,8 @@ permalink: /kb/098/Q98055/
 
 ## Q98055: 3COM: Mail Is Not Sent Through Gateway
 
+{% raw %}
+
 	Article: Q98055
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -94,3 +96,5 @@ permalink: /kb/098/Q98055/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/281/Q281968/
 
 ## Q281968: &quot;No Sounds&quot; Sound Scheme May Cause STOP 0x50 Error Message
 
+{% raw %}
+
 	Article: Q281968
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -95,3 +97,5 @@ permalink: /kb/281/Q281968/
 	
 	=============================================================================
 	
+
+{% endraw %}

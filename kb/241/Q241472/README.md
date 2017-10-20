@@ -6,6 +6,8 @@ permalink: /kb/241/Q241472/
 
 ## Q241472: XADM: How to Add a Hidden Recipient to a Distribution List
 
+{% raw %}
+
 	Article: Q241472
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/241/Q241472/
 	
 	=============================================================================
 	
+
+{% endraw %}

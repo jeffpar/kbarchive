@@ -6,6 +6,8 @@ permalink: /kb/256/Q256136/
 
 ## Q256136: FP: ErrMsg: &quot;Database Results Error&quot; Updating Database Record
 
+{% raw %}
+
 	Article: Q256136
 	Product(s): Word Front Page
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/256/Q256136/
 	
 	=============================================================================
 	
+
+{% endraw %}

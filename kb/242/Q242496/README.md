@@ -6,6 +6,8 @@ permalink: /kb/242/Q242496/
 
 ## Q242496: Advertisement and Site System Status Summarizer Problems
 
+{% raw %}
+
 	Article: Q242496
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -95,3 +97,5 @@ permalink: /kb/242/Q242496/
 	
 	=============================================================================
 	
+
+{% endraw %}

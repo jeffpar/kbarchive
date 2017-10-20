@@ -6,6 +6,8 @@ permalink: /kb/280/Q280263/
 
 ## Q280263: Cannot See or Move the Detail Bar in Health Monitor
 
+{% raw %}
+
 	Article: Q280263
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -53,3 +55,5 @@ permalink: /kb/280/Q280263/
 	
 	=============================================================================
 	
+
+{% endraw %}

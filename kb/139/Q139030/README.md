@@ -6,6 +6,8 @@ permalink: /kb/139/Q139030/
 
 ## Q139030: HOWTO: Edit Resources in Executables with Visual C++
 
+{% raw %}
+
 	Article: Q139030
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,5.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/139/Q139030/
 	
 	=============================================================================
 	
+
+{% endraw %}

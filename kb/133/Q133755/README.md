@@ -6,6 +6,8 @@ permalink: /kb/133/Q133755/
 
 ## Q133755: Bookshelf '95: Problems Copying a Picture from an Article
 
+{% raw %}
+
 	Article: Q133755
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1995 edition; WINDOWS:
@@ -42,3 +44,5 @@ permalink: /kb/133/Q133755/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/226/Q226507/
 
 ## Q226507: BUG: Windows Closing an Application at Shutdown Orphans TMP File
 
+{% raw %}
+
 	Article: Q226507
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -79,3 +81,5 @@ permalink: /kb/226/Q226507/
 	
 	=============================================================================
 	
+
+{% endraw %}

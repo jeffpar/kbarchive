@@ -6,6 +6,8 @@ permalink: /kb/098/Q98905/
 
 ## Q98905: Anti-Virus for Windows Err Msg: Cannot Find CPAVDLG.DLL
 
+{% raw %}
+
 	Article: Q98905
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -47,3 +49,5 @@ permalink: /kb/098/Q98905/
 	
 	=============================================================================
 	
+
+{% endraw %}

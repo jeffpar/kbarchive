@@ -6,6 +6,8 @@ permalink: /kb/110/Q110225/
 
 ## Q110225: PC Gen: PODIAG.EXE Shows Gateways Installed on WFW PO
 
+{% raw %}
+
 	Article: Q110225
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -53,3 +55,5 @@ permalink: /kb/110/Q110225/
 	
 	=============================================================================
 	
+
+{% endraw %}

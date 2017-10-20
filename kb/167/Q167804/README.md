@@ -6,6 +6,8 @@ permalink: /kb/167/Q167804/
 
 ## Q167804: BUG: Source Profiler in Visual C++ Does Not Execute
 
+{% raw %}
+
 	Article: Q167804
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -94,3 +96,5 @@ permalink: /kb/167/Q167804/
 	
 	=============================================================================
 	
+
+{% endraw %}

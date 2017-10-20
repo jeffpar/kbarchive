@@ -6,6 +6,8 @@ permalink: /kb/192/Q192913/
 
 ## Q192913: PRB: EnableModeless Causes Events to Fire Late
 
+{% raw %}
+
 	Article: Q192913
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0,1.1,2.0,97; WINNT:5.0,6.0
@@ -164,3 +166,5 @@ permalink: /kb/192/Q192913/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167045/
 
 ## Q167045: Windows NT Does Not Boot From a Shadow Mirror Drive
 
+{% raw %}
+
 	Article: Q167045
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,3.1,3.5,3.51,4.0,4.0a
@@ -249,3 +251,5 @@ permalink: /kb/167/Q167045/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135461/
 
 ## Q135461: If Your MS-DOS or Windows NT Operating System Does Not Boot
 
+{% raw %}
+
 	Article: Q135461
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): MS-DOS:2.11,3.1,4.0,5.0,6.0,6.2,6.21,6.22; WINDOWS:3.11; winnt:3.5,3.51
@@ -103,3 +105,5 @@ permalink: /kb/135/Q135461/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172178/
 
 ## Q172178: WD97: How to Create Mutually Exclusive Check Boxes Using VBA
 
+{% raw %}
+
 	Article: Q172178
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -141,3 +143,5 @@ permalink: /kb/172/Q172178/
 	
 	=============================================================================
 	
+
+{% endraw %}

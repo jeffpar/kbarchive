@@ -6,6 +6,8 @@ permalink: /kb/124/Q124564/
 
 ## Q124564: MIDL Compiler Wraps the Operation Number After 255
 
+{% raw %}
+
 	Article: Q124564
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -53,3 +55,5 @@ permalink: /kb/124/Q124564/
 	
 	=============================================================================
 	
+
+{% endraw %}

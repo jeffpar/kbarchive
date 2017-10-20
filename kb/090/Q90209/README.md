@@ -6,6 +6,8 @@ permalink: /kb/090/Q90209/
 
 ## Q90209: After Dark 2.0 Causes System Halts
 
+{% raw %}
+
 	Article: Q90209
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -62,3 +64,5 @@ permalink: /kb/090/Q90209/
 	
 	=============================================================================
 	
+
+{% endraw %}

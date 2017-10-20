@@ -6,6 +6,8 @@ permalink: /kb/128/Q128637/
 
 ## Q128637: HOWTO: How to Draw a Gradient Background
 
+{% raw %}
+
 	Article: Q128637
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -105,3 +107,5 @@ permalink: /kb/128/Q128637/
 	
 	=============================================================================
 	
+
+{% endraw %}

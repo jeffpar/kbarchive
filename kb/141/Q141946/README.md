@@ -6,6 +6,8 @@ permalink: /kb/141/Q141946/
 
 ## Q141946: Delivery Receipt Not Available For Internet Mail
 
+{% raw %}
+
 	Article: Q141946
 	Product(s): The Microsoft Network
 	Version(s): 1.0,1.05,1.2,1.3,2.0,2.5,2.6
@@ -43,3 +45,5 @@ permalink: /kb/141/Q141946/
 	
 	=============================================================================
 	
+
+{% endraw %}

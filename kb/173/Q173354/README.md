@@ -6,6 +6,8 @@ permalink: /kb/173/Q173354/
 
 ## Q173354: XADM: Disk Space Required For Directory Upgrade From Exchange 4.
 
+{% raw %}
+
 	Article: Q173354
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -34,3 +36,5 @@ permalink: /kb/173/Q173354/
 	
 	=============================================================================
 	
+
+{% endraw %}

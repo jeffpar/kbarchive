@@ -6,6 +6,8 @@ permalink: /kb/172/Q172429/
 
 ## Q172429: Mac Bookshelf 98: System Hangs When Adjusting Slider Bar
 
+{% raw %}
+
 	Article: Q172429
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -45,3 +47,5 @@ permalink: /kb/172/Q172429/
 	
 	=============================================================================
 	
+
+{% endraw %}

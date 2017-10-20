@@ -6,6 +6,8 @@ permalink: /kb/107/Q107696/
 
 ## Q107696: Modifying COMM.DRV to Support up to Nine Ports
 
+{% raw %}
+
 	Article: Q107696
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.1
@@ -171,3 +173,5 @@ permalink: /kb/107/Q107696/
 	
 	=============================================================================
 	
+
+{% endraw %}

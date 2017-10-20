@@ -6,6 +6,8 @@ permalink: /kb/129/Q129912/
 
 ## Q129912: IBM Thinkpad 720C Large Capacity Hard Disk Support
 
+{% raw %}
+
 	Article: Q129912
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -53,3 +55,5 @@ permalink: /kb/129/Q129912/
 	
 	=============================================================================
 	
+
+{% endraw %}

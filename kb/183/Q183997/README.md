@@ -6,6 +6,8 @@ permalink: /kb/183/Q183997/
 
 ## Q183997: Outwars: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q183997
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/183/Q183997/
 	
 	=============================================================================
 	
+
+{% endraw %}

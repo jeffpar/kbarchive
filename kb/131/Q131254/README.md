@@ -6,6 +6,8 @@ permalink: /kb/131/Q131254/
 
 ## Q131254: How to Manipulate DateTime Fields in a Grid
 
+{% raw %}
+
 	Article: Q131254
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -109,3 +111,5 @@ permalink: /kb/131/Q131254/
 	
 	=============================================================================
 	
+
+{% endraw %}

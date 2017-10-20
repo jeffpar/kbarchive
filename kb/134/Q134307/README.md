@@ -6,6 +6,8 @@ permalink: /kb/134/Q134307/
 
 ## Q134307: PRB: Invalid or Missing EXE Error When Starting Visual FoxPro
 
+{% raw %}
+
 	Article: Q134307
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/134/Q134307/
 	
 	=============================================================================
 	
+
+{% endraw %}

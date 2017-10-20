@@ -6,6 +6,8 @@ permalink: /kb/149/Q149285/
 
 ## Q149285: FIX: C1001 When Initialize Array of Type Class with #include
 
+{% raw %}
+
 	Article: Q149285
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -94,3 +96,5 @@ permalink: /kb/149/Q149285/
 	
 	=============================================================================
 	
+
+{% endraw %}

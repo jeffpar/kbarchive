@@ -6,6 +6,8 @@ permalink: /kb/228/Q228920/
 
 ## Q228920: Citrix ICA Connected Client File Access is Slow the First Time
 
+{% raw %}
+
 	Article: Q228920
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -87,3 +89,5 @@ permalink: /kb/228/Q228920/
 	
 	=============================================================================
 	
+
+{% endraw %}

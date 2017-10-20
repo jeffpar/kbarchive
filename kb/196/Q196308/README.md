@@ -6,6 +6,8 @@ permalink: /kb/196/Q196308/
 
 ## Q196308: Name and Password Are Not Accepted When Opening Web
 
+{% raw %}
+
 	Article: Q196308
 	Product(s): Word Front Page
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/196/Q196308/
 	
 	=============================================================================
 	
+
+{% endraw %}

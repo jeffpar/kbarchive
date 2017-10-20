@@ -6,6 +6,8 @@ permalink: /kb/153/Q153746/
 
 ## Q153746: Mac Multimedia: Beta Version of Sound Manager Causes Problems
 
+{% raw %}
+
 	Article: Q153746
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993, 1994, 1995, 1996-1997 editions,1994 edition,1995 edition; MACINTOSH:
@@ -157,3 +159,5 @@ permalink: /kb/153/Q153746/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/192/Q192807/
 
 ## Q192807: SNABase Service Fails to Start on SNA Server
 
+{% raw %}
+
 	Article: Q192807
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0 SP3,4.0,4.0 SP1
@@ -94,3 +96,5 @@ permalink: /kb/192/Q192807/
 	
 	=============================================================================
 	
+
+{% endraw %}

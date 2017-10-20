@@ -6,6 +6,8 @@ permalink: /kb/145/Q145784/
 
 ## Q145784: XCLN: &quot;Close and Return&quot; from Word Doesn't Return to Exchange
 
+{% raw %}
+
 	Article: Q145784
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0
@@ -49,3 +51,5 @@ permalink: /kb/145/Q145784/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/216/Q216930/
 
 ## Q216930: Unable to Update Driver With Files in the Root Folder
 
+{% raw %}
+
 	Article: Q216930
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -63,3 +65,5 @@ permalink: /kb/216/Q216930/
 	
 	=============================================================================
 	
+
+{% endraw %}

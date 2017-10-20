@@ -6,6 +6,8 @@ permalink: /kb/138/Q138412/
 
 ## Q138412: FIX: AppWiz Samples Fail to Build from Command Line
 
+{% raw %}
+
 	Article: Q138412
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2
@@ -73,3 +75,5 @@ permalink: /kb/138/Q138412/
 	
 	=============================================================================
 	
+
+{% endraw %}

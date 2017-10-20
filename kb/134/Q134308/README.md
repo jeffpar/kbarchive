@@ -6,6 +6,8 @@ permalink: /kb/134/Q134308/
 
 ## Q134308: FIX: Upper Format Truncates Right/Center-Alligned Report Field
 
+{% raw %}
+
 	Article: Q134308
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -118,3 +120,5 @@ permalink: /kb/134/Q134308/
 	
 	=============================================================================
 	
+
+{% endraw %}

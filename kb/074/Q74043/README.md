@@ -6,6 +6,8 @@ permalink: /kb/074/Q74043/
 
 ## Q74043: HOWTO: Change the Color of an Edit Control
 
+{% raw %}
+
 	Article: Q74043
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -116,3 +118,5 @@ permalink: /kb/074/Q74043/
 	
 	=============================================================================
 	
+
+{% endraw %}

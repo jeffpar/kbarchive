@@ -6,6 +6,8 @@ permalink: /kb/100/Q100049/
 
 ## Q100049: HP OmniBook: Default Printer Drivers
 
+{% raw %}
+
 	Article: Q100049
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/100/Q100049/
 	
 	=============================================================================
 	
+
+{% endraw %}

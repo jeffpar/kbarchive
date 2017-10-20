@@ -6,6 +6,8 @@ permalink: /kb/262/Q262641/
 
 ## Q262641: Motocross Madness 2: Description of a Ghost Race
 
+{% raw %}
+
 	Article: Q262641
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -91,3 +93,5 @@ permalink: /kb/262/Q262641/
 	
 	=============================================================================
 	
+
+{% endraw %}

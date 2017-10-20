@@ -6,6 +6,8 @@ permalink: /kb/123/Q123316/
 
 ## Q123316: Unable to Change the Default Print Tray
 
+{% raw %}
+
 	Article: Q123316
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -106,3 +108,5 @@ permalink: /kb/123/Q123316/
 	
 	=============================================================================
 	
+
+{% endraw %}

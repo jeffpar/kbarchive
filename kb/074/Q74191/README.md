@@ -6,6 +6,8 @@ permalink: /kb/074/Q74191/
 
 ## Q74191: MS-DOS Editor Corrupts Nontext Files
 
+{% raw %}
+
 	Article: Q74191
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/074/Q74191/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/043/Q43508/
 
 ## Q43508: CodeView: View Command Fails with Underscore in Filenames
 
+{% raw %}
+
 	Article: Q43508
 	Product(s): See article
 	Version(s): 2.20   | 2.20
@@ -34,3 +36,5 @@ permalink: /kb/043/Q43508/
 	Microsoft has confirmed this to be a problem in Version 2.20. We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

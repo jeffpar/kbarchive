@@ -6,6 +6,8 @@ permalink: /kb/151/Q151215/
 
 ## Q151215: XFOR: Exchange PCMTA Writes to SENT and RECV Logs
 
+{% raw %}
+
 	Article: Q151215
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -58,3 +60,5 @@ permalink: /kb/151/Q151215/
 	
 	=============================================================================
 	
+
+{% endraw %}

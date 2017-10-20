@@ -6,6 +6,8 @@ permalink: /kb/122/Q122434/
 
 ## Q122434: Windows 95 Does Not Have Drivers for RGDI, DGIS, TIGA Adapters
 
+{% raw %}
+
 	Article: Q122434
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -45,3 +47,5 @@ permalink: /kb/122/Q122434/
 	
 	=============================================================================
 	
+
+{% endraw %}

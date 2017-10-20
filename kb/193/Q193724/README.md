@@ -6,6 +6,8 @@ permalink: /kb/193/Q193724/
 
 ## Q193724: PRB: Memory Leak Passing Arrays from VBScript to VFP
 
+{% raw %}
+
 	Article: Q193724
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -145,3 +147,5 @@ permalink: /kb/193/Q193724/
 	
 	=============================================================================
 	
+
+{% endraw %}

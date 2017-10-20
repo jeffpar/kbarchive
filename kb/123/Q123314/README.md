@@ -6,6 +6,8 @@ permalink: /kb/123/Q123314/
 
 ## Q123314: Frame Type Entries for NWLink Must Appear in Uppercase
 
+{% raw %}
+
 	Article: Q123314
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; winnt:3.5
@@ -67,3 +69,5 @@ permalink: /kb/123/Q123314/
 	
 	=============================================================================
 	
+
+{% endraw %}

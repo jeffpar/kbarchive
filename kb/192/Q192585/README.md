@@ -6,6 +6,8 @@ permalink: /kb/192/Q192585/
 
 ## Q192585: Tutor Err Msg: Skyspace Caused an Invalid Page Fault...
 
+{% raw %}
+
 	Article: Q192585
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -70,3 +72,5 @@ permalink: /kb/192/Q192585/
 	
 	=============================================================================
 	
+
+{% endraw %}

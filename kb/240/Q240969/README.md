@@ -6,6 +6,8 @@ permalink: /kb/240/Q240969/
 
 ## Q240969: NDIS May Not Return Proper Multicast Address List After a Reset
 
+{% raw %}
+
 	Article: Q240969
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4
@@ -50,3 +52,5 @@ permalink: /kb/240/Q240969/
 	
 	=============================================================================
 	
+
+{% endraw %}

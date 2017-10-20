@@ -6,6 +6,8 @@ permalink: /kb/130/Q130537/
 
 ## Q130537: Changes to the RDISK Dialog Box in Windows NT 3.51
 
+{% raw %}
+
 	Article: Q130537
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -44,3 +46,5 @@ permalink: /kb/130/Q130537/
 	
 	=============================================================================
 	
+
+{% endraw %}

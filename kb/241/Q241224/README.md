@@ -6,6 +6,8 @@ permalink: /kb/241/Q241224/
 
 ## Q241224: WD97: Word Table Embedded in Another Document Has White Line
 
+{% raw %}
+
 	Article: Q241224
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/241/Q241224/
 	
 	=============================================================================
 	
+
+{% endraw %}

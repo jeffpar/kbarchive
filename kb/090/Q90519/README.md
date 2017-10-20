@@ -6,6 +6,8 @@ permalink: /kb/090/Q90519/
 
 ## Q90519: Word Hangs When Linking Bitmap from Different Display Type
 
+{% raw %}
+
 	Article: Q90519
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -49,3 +51,5 @@ permalink: /kb/090/Q90519/
 	
 	=============================================================================
 	
+
+{% endraw %}

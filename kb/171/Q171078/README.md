@@ -6,6 +6,8 @@ permalink: /kb/171/Q171078/
 
 ## Q171078: SnaBase Fails to Start Using Novell NetWare Client
 
+{% raw %}
+
 	Article: Q171078
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -58,3 +60,5 @@ permalink: /kb/171/Q171078/
 	
 	=============================================================================
 	
+
+{% endraw %}

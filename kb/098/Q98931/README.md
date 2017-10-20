@@ -6,6 +6,8 @@ permalink: /kb/098/Q98931/
 
 ## Q98931: Description of Go Figure!
 
+{% raw %}
+
 	Article: Q98931
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/098/Q98931/
 	
 	=============================================================================
 	
+
+{% endraw %}

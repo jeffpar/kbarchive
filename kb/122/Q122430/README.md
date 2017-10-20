@@ -6,6 +6,8 @@ permalink: /kb/122/Q122430/
 
 ## Q122430: The Ultimate Haunted House 1.0: Macintosh System Requirements
 
+{% raw %}
+
 	Article: Q122430
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -72,3 +74,5 @@ permalink: /kb/122/Q122430/
 	
 	=============================================================================
 	
+
+{% endraw %}

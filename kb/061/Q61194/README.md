@@ -6,6 +6,8 @@ permalink: /kb/061/Q61194/
 
 ## Q61194: C 6.00 README: CL, LINK Environment Variables Work As Before
 
+{% raw %}
+
 	Article: Q61194
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -25,3 +27,5 @@ permalink: /kb/061/Q61194/
 	utility. Note, however, that the use of these environment variables
 	can cause unpredictable build behavior under the Programmer's
 	WorkBench (PWB).
+
+{% endraw %}

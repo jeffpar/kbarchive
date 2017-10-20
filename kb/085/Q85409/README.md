@@ -6,6 +6,8 @@ permalink: /kb/085/Q85409/
 
 ## Q85409: MS-DOS 5.0a Upgrade README.TXT: Setup Notes
 
+{% raw %}
+
 	Article: Q85409
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0a
@@ -292,3 +294,5 @@ permalink: /kb/085/Q85409/
 	
 	=============================================================================
 	
+
+{% endraw %}

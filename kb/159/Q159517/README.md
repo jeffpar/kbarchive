@@ -6,6 +6,8 @@ permalink: /kb/159/Q159517/
 
 ## Q159517: Encarta 97 Err Msg: File &lt;Filename&gt; Could Not be Opened...
 
+{% raw %}
+
 	Article: Q159517
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -84,3 +86,5 @@ permalink: /kb/159/Q159517/
 	
 	=============================================================================
 	
+
+{% endraw %}

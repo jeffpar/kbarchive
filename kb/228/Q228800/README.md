@@ -6,6 +6,8 @@ permalink: /kb/228/Q228800/
 
 ## Q228800: HOWTO: Call a Parameterized SQL Server Stored Procedure from RDO
 
+{% raw %}
+
 	Article: Q228800
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -109,3 +111,5 @@ permalink: /kb/228/Q228800/
 	
 	=============================================================================
 	
+
+{% endraw %}

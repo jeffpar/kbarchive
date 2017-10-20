@@ -6,6 +6,8 @@ permalink: /kb/171/Q171485/
 
 ## Q171485: FIX: Visual Basic 5.0 Title Bar Paints Incorrectly
 
+{% raw %}
+
 	Article: Q171485
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -91,3 +93,5 @@ permalink: /kb/171/Q171485/
 	
 	=============================================================================
 	
+
+{% endraw %}

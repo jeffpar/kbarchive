@@ -6,6 +6,8 @@ permalink: /kb/185/Q185824/
 
 ## Q185824: WD97: Selected Paragraph Marks Not Removed When Deleted
 
+{% raw %}
+
 	Article: Q185824
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/185/Q185824/
 	
 	=============================================================================
 	
+
+{% endraw %}

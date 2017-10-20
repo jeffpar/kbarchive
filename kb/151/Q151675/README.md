@@ -6,6 +6,8 @@ permalink: /kb/151/Q151675/
 
 ## Q151675: FIX: Re-throwing Exception Causes Abnormal Program Termination
 
+{% raw %}
+
 	Article: Q151675
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 4.10 4.20
@@ -98,3 +100,5 @@ permalink: /kb/151/Q151675/
 	
 	=============================================================================
 	
+
+{% endraw %}

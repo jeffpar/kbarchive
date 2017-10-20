@@ -6,6 +6,8 @@ permalink: /kb/288/Q288181/
 
 ## Q288181: FP2002: How to Create Home Page Hot Key with JavaScript
 
+{% raw %}
+
 	Article: Q288181
 	Product(s): Word Front Page
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/288/Q288181/
 	
 	=============================================================================
 	
+
+{% endraw %}

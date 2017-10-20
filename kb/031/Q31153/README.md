@@ -6,6 +6,8 @@ permalink: /kb/031/Q31153/
 
 ## Q31153: LINK Overlays Not Supported in BASIC 6.00/6.00b, or QuickBASIC
 
+{% raw %}
+
 	Article: Q31153
 	Product(s): See article
 	Version(s): 6.00 6.00b
@@ -47,3 +49,5 @@ permalink: /kb/031/Q31153/
 	
 	The CHAIN, RUN, and SHELL statements in BASIC offer capabilities that
 	are similar to code overlays, but more limited.
+
+{% endraw %}

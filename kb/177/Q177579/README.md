@@ -6,6 +6,8 @@ permalink: /kb/177/Q177579/
 
 ## Q177579: SNA Client Loses One TCP/IP Address on a Multihomed Server
 
+{% raw %}
+
 	Article: Q177579
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2,4.0
@@ -60,3 +62,5 @@ permalink: /kb/177/Q177579/
 	
 	=============================================================================
 	
+
+{% endraw %}

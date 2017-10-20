@@ -6,6 +6,8 @@ permalink: /kb/296/Q296664/
 
 ## Q296664: Microsoft Visual InterDev 6.0 Web Technologies Reference Comment
 
+{% raw %}
+
 	Article: Q296664
 	Product(s): Microsoft Press
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/296/Q296664/
 	
 	=============================================================================
 	
+
+{% endraw %}

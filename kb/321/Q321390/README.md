@@ -6,6 +6,8 @@ permalink: /kb/321/Q321390/
 
 ## Q321390: PRB:Cold Fusion Pages Set for Anon Access Prompt for Credentials
 
+{% raw %}
+
 	Article: Q321390
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -96,3 +98,5 @@ permalink: /kb/321/Q321390/
 	
 	=============================================================================
 	
+
+{% endraw %}

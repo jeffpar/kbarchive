@@ -6,6 +6,8 @@ permalink: /kb/073/Q73362/
 
 ## Q73362: Two Epson Printers Cannot Be Setup Concurrently in Windows
 
+{% raw %}
+
 	Article: Q73362
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -105,3 +107,5 @@ permalink: /kb/073/Q73362/
 	
 	=============================================================================
 	
+
+{% endraw %}

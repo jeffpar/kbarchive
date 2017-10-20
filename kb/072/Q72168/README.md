@@ -6,6 +6,8 @@ permalink: /kb/072/Q72168/
 
 ## Q72168: MS-DOS 5 README.TXT: Making Your Network Compatible
 
+{% raw %}
+
 	Article: Q72168
 	Product(s): Microsoft Disk Operating System
 	Version(s): 5.0
@@ -70,3 +72,5 @@ permalink: /kb/072/Q72168/
 	
 	=============================================================================
 	
+
+{% endraw %}

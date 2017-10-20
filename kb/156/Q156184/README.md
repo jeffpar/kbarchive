@@ -6,6 +6,8 @@ permalink: /kb/156/Q156184/
 
 ## Q156184: SMS: &quot;Please Insert Diskette&quot; Message on Clients Running Win95
 
+{% raw %}
+
 	Article: Q156184
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -59,3 +61,5 @@ permalink: /kb/156/Q156184/
 	
 	=============================================================================
 	
+
+{% endraw %}

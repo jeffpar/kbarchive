@@ -6,6 +6,8 @@ permalink: /kb/148/Q148902/
 
 ## Q148902: Bookshelf 96-97: Copy To Causes Unexpected Behavior in Office
 
+{% raw %}
+
 	Article: Q148902
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; Win95:95
@@ -84,3 +86,5 @@ permalink: /kb/148/Q148902/
 	
 	=============================================================================
 	
+
+{% endraw %}

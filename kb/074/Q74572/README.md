@@ -6,6 +6,8 @@ permalink: /kb/074/Q74572/
 
 ## Q74572: How Microsoft Windows Uses an MS-DOS Mouse Driver
 
+{% raw %}
+
 	Article: Q74572
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -50,3 +52,5 @@ permalink: /kb/074/Q74572/
 	
 	=============================================================================
 	
+
+{% endraw %}

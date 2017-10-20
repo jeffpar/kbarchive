@@ -6,6 +6,8 @@ permalink: /kb/066/Q66169/
 
 ## Q66169: Internal Compiler Error: '@(#)regMD.c:1.100', Line 3837
 
+{% raw %}
+
 	Article: Q66169
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -63,3 +65,5 @@ permalink: /kb/066/Q66169/
 	   int b;
 	   test(b);
 	}
+
+{% endraw %}

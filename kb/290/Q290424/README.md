@@ -6,6 +6,8 @@ permalink: /kb/290/Q290424/
 
 ## Q290424: Index: Application Called an Interface That was Marshalled for a
 
+{% raw %}
+
 	Article: Q290424
 	Product(s): Internet Information Server
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/290/Q290424/
 	
 	=============================================================================
 	
+
+{% endraw %}

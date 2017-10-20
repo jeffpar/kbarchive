@@ -6,6 +6,8 @@ permalink: /kb/302/Q302729/
 
 ## Q302729: &quot;We were unable to sign you in&quot; Error When Protocols Are Not Ena
 
+{% raw %}
+
 	Article: Q302729
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -73,3 +75,5 @@ permalink: /kb/302/Q302729/
 	
 	=============================================================================
 	
+
+{% endraw %}

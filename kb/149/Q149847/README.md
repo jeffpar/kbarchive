@@ -6,6 +6,8 @@ permalink: /kb/149/Q149847/
 
 ## Q149847: XADM: Isinteg Reports IPM Subtree Missing From IMC Mailbox
 
+{% raw %}
+
 	Article: Q149847
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/149/Q149847/
 	
 	=============================================================================
 	
+
+{% endraw %}

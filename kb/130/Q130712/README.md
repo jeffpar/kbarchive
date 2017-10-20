@@ -6,6 +6,8 @@ permalink: /kb/130/Q130712/
 
 ## Q130712: PRB: Win32s Errors During Visual FoxPro Installation
 
+{% raw %}
+
 	Article: Q130712
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/130/Q130712/
 	
 	=============================================================================
 	
+
+{% endraw %}

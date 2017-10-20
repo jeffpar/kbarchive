@@ -6,6 +6,8 @@ permalink: /kb/074/Q74887/
 
 ## Q74887: How to Start a Windows-Based App Directly from MS-DOS
 
+{% raw %}
+
 	Article: Q74887
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -81,3 +83,5 @@ permalink: /kb/074/Q74887/
 	
 	=============================================================================
 	
+
+{% endraw %}

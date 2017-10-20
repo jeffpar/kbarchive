@@ -6,6 +6,8 @@ permalink: /kb/321/Q321139/
 
 ## Q321139: INFO: List of Bugs Fixed in Visual SourceSafe 6.0 Service Pack 6
 
+{% raw %}
+
 	Article: Q321139
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -156,3 +158,5 @@ permalink: /kb/321/Q321139/
 	
 	=============================================================================
 	
+
+{% endraw %}

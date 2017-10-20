@@ -6,6 +6,8 @@ permalink: /kb/068/Q68659/
 
 ## Q68659: Patches for Running Utilities Under Novell NetWare
 
+{% raw %}
+
 	Article: Q68659
 	Product(s): Microsoft Programming Utilities
 	Version(s): OS/2:5.1
@@ -116,3 +118,5 @@ permalink: /kb/068/Q68659/
 	
 	=============================================================================
 	
+
+{% endraw %}

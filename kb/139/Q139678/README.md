@@ -6,6 +6,8 @@ permalink: /kb/139/Q139678/
 
 ## Q139678: APPC Problem Handling AP_PGM Security with NULL Password
 
+{% raw %}
+
 	Article: Q139678
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -63,3 +65,5 @@ permalink: /kb/139/Q139678/
 	
 	=============================================================================
 	
+
+{% endraw %}

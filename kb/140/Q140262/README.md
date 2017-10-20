@@ -6,6 +6,8 @@ permalink: /kb/140/Q140262/
 
 ## Q140262: XCLN: Err Msg:Error Prevented Processing of Received Mail
 
+{% raw %}
+
 	Article: Q140262
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/140/Q140262/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157740/
 
 ## Q157740: XCLN: Using ShivaRemote w/ Exchange (MS-DOS/LanMan TCP/IP)
 
+{% raw %}
+
 	Article: Q157740
 	Product(s): Microsoft Exchange
 	Version(s): MS-DOS:4.0,5.0
@@ -273,3 +275,5 @@ permalink: /kb/157/Q157740/
 	
 	=============================================================================
 	
+
+{% endraw %}

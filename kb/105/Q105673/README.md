@@ -6,6 +6,8 @@ permalink: /kb/105/Q105673/
 
 ## Q105673: Media Player: Err Msg: There Is an Undetectable Problem...
 
+{% raw %}
+
 	Article: Q105673
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 3.1
@@ -118,3 +120,5 @@ permalink: /kb/105/Q105673/
 	
 	=============================================================================
 	
+
+{% endraw %}

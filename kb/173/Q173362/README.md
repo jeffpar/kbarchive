@@ -6,6 +6,8 @@ permalink: /kb/173/Q173362/
 
 ## Q173362: FIX: RichTextBox SelPrint Method Does Not Print Entire Selection
 
+{% raw %}
+
 	Article: Q173362
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/173/Q173362/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103595/
 
 ## Q103595: Obtaining Subscript Info for Array Passed by Reference
 
+{% raw %}
+
 	Article: Q103595
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x,2.6x,3.0,3.0b
@@ -49,3 +51,5 @@ permalink: /kb/103/Q103595/
 	
 	=============================================================================
 	
+
+{% endraw %}

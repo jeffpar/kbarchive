@@ -6,6 +6,8 @@ permalink: /kb/104/Q104926/
 
 ## Q104926: Peachtree for Windows May Not be Able to Open a Company
 
+{% raw %}
+
 	Article: Q104926
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -57,3 +59,5 @@ permalink: /kb/104/Q104926/
 	
 	=============================================================================
 	
+
+{% endraw %}

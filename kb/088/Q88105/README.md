@@ -6,6 +6,8 @@ permalink: /kb/088/Q88105/
 
 ## Q88105: INFO: Explanation of Two-Phase Construction in MFC
 
+{% raw %}
+
 	Article: Q88105
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,5.0,6.0,7.0
@@ -73,3 +75,5 @@ permalink: /kb/088/Q88105/
 	
 	=============================================================================
 	
+
+{% endraw %}

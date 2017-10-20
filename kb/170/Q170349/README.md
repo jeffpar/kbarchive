@@ -6,6 +6,8 @@ permalink: /kb/170/Q170349/
 
 ## Q170349: Options Command on View Menu Does Not Work in Internet Explorer
 
+{% raw %}
+
 	Article: Q170349
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0
@@ -50,3 +52,5 @@ permalink: /kb/170/Q170349/
 	
 	=============================================================================
 	
+
+{% endraw %}

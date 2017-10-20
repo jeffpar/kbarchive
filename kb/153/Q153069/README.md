@@ -6,6 +6,8 @@ permalink: /kb/153/Q153069/
 
 ## Q153069: How to Contact MSN Support When You Are Unable to Connect
 
+{% raw %}
+
 	Article: Q153069
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0,2.5,2.51,2.52,2.6,5.0,5.1
@@ -98,3 +100,5 @@ permalink: /kb/153/Q153069/
 	
 	=============================================================================
 	
+
+{% endraw %}

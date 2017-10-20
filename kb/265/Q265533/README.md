@@ -6,6 +6,8 @@ permalink: /kb/265/Q265533/
 
 ## Q265533: Explanation of Chkdsk Status Codes in Cluster Log
 
+{% raw %}
+
 	Article: Q265533
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -65,3 +67,5 @@ permalink: /kb/265/Q265533/
 	
 	=============================================================================
 	
+
+{% endraw %}

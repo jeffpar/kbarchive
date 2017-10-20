@@ -6,6 +6,8 @@ permalink: /kb/134/Q134550/
 
 ## Q134550: No Sound in MS-DOS-Based Programs with Gravis Ultrasound Card
 
+{% raw %}
+
 	Article: Q134550
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/134/Q134550/
 	
 	=============================================================================
 	
+
+{% endraw %}

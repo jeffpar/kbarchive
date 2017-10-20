@@ -6,6 +6,8 @@ permalink: /kb/145/Q145798/
 
 ## Q145798: STOP Msg: Unable to Save C:&#92;TEMP&#92;FILENAME with Internet Explorer
 
+{% raw %}
+
 	Article: Q145798
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0
@@ -49,3 +51,5 @@ permalink: /kb/145/Q145798/
 	
 	=============================================================================
 	
+
+{% endraw %}

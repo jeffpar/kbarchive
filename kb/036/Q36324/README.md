@@ -6,6 +6,8 @@ permalink: /kb/036/Q36324/
 
 ## Q36324: HOWTO: Perform Background Processing Without Using Timers
 
+{% raw %}
+
 	Article: Q36324
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -97,3 +99,5 @@ permalink: /kb/036/Q36324/
 	
 	=============================================================================
 	
+
+{% endraw %}

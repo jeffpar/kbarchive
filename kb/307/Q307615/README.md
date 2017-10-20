@@ -6,6 +6,8 @@ permalink: /kb/307/Q307615/
 
 ## Q307615: FIX: Published Visual Component Manager Components Not Saved
 
+{% raw %}
+
 	Article: Q307615
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -126,3 +128,5 @@ permalink: /kb/307/Q307615/
 	
 	=============================================================================
 	
+
+{% endraw %}

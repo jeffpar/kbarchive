@@ -6,6 +6,8 @@ permalink: /kb/319/Q319000/
 
 ## Q319000: How To Import Bookmarks From Netscape To Internet Explorer 5.x
 
+{% raw %}
+
 	Article: Q319000
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/319/Q319000/
 	
 	=============================================================================
 	
+
+{% endraw %}

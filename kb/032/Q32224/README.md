@@ -6,6 +6,8 @@ permalink: /kb/032/Q32224/
 
 ## Q32224: Arg &#42;.&#42; Setfile: &quot;Bad Command or Filename&quot; Error
 
+{% raw %}
+
 	Article: Q32224
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -19,3 +21,5 @@ permalink: /kb/032/Q32224/
 	textarg SETFILE. If this utility cannot be found, you will receive a
 	message saying "Bad command or filename." ECH.EXE must be located in a
 	directory on the path.
+
+{% endraw %}

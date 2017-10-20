@@ -6,6 +6,8 @@ permalink: /kb/301/Q301332/
 
 ## Q301332: Print Jobs Continue Spooling if Host Ends Print Job w/ CHASE RU
 
+{% raw %}
+
 	Article: Q301332
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -159,3 +161,5 @@ permalink: /kb/301/Q301332/
 	
 	=============================================================================
 	
+
+{% endraw %}

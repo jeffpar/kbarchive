@@ -6,6 +6,8 @@ permalink: /kb/288/Q288407/
 
 ## Q288407: SMS: DDR Is Not Processed If a Serial Number Is Not in Sync
 
+{% raw %}
+
 	Article: Q288407
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -96,3 +98,5 @@ permalink: /kb/288/Q288407/
 	
 	=============================================================================
 	
+
+{% endraw %}

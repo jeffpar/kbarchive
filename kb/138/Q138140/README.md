@@ -6,6 +6,8 @@ permalink: /kb/138/Q138140/
 
 ## Q138140: Untrapped Errors in VB OLE DLL Can Unload the Whole Process
 
+{% raw %}
+
 	Article: Q138140
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -58,3 +60,5 @@ permalink: /kb/138/Q138140/
 	
 	=============================================================================
 	
+
+{% endraw %}

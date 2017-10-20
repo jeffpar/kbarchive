@@ -6,6 +6,8 @@ permalink: /kb/214/Q214571/
 
 ## Q214571: Duplicate Remote APPC LUs Can Be Created On A Connection
 
+{% raw %}
+
 	Article: Q214571
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1
@@ -104,3 +106,5 @@ permalink: /kb/214/Q214571/
 	
 	=============================================================================
 	
+
+{% endraw %}

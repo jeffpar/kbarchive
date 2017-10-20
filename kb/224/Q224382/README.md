@@ -6,6 +6,8 @@ permalink: /kb/224/Q224382/
 
 ## Q224382: BUG: Profiler Enabled Only Under Administrator Account in WinNT
 
+{% raw %}
+
 	Article: Q224382
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -123,3 +125,5 @@ permalink: /kb/224/Q224382/
 	
 	=============================================================================
 	
+
+{% endraw %}

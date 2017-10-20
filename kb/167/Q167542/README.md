@@ -6,6 +6,8 @@ permalink: /kb/167/Q167542/
 
 ## Q167542: PRB: Conflict with EOF and GetUserName Using #import on RDO
 
+{% raw %}
+
 	Article: Q167542
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -111,3 +113,5 @@ permalink: /kb/167/Q167542/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117743/
 
 ## Q117743: How to Move Data Between Large Overlapping Buffers
 
+{% raw %}
+
 	Article: Q117743
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -144,3 +146,5 @@ permalink: /kb/117/Q117743/
 	
 	=============================================================================
 	
+
+{% endraw %}

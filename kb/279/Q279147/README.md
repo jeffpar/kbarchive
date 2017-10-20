@@ -6,6 +6,8 @@ permalink: /kb/279/Q279147/
 
 ## Q279147: Password Reset For MSN Explorer &quot;msn.com&quot; E-mail Accounts
 
+{% raw %}
+
 	Article: Q279147
 	Product(s): The Microsoft Network
 	Version(s): 6.0
@@ -95,3 +97,5 @@ permalink: /kb/279/Q279147/
 	
 	=============================================================================
 	
+
+{% endraw %}

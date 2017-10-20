@@ -6,6 +6,8 @@ permalink: /kb/162/Q162725/
 
 ## Q162725: XCLN: &quot;Internal Error Installing Forms&quot; During Client Setup
 
+{% raw %}
+
 	Article: Q162725
 	Product(s): Microsoft Exchange
 	Version(s): Win95:4.0
@@ -60,3 +62,5 @@ permalink: /kb/162/Q162725/
 	
 	=============================================================================
 	
+
+{% endraw %}

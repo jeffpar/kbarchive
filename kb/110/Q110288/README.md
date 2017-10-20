@@ -6,6 +6,8 @@ permalink: /kb/110/Q110288/
 
 ## Q110288: Video for Windows 1.1 Disk 3: (5.25 Inch)
 
+{% raw %}
+
 	Article: Q110288
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:1.1
@@ -74,3 +76,5 @@ permalink: /kb/110/Q110288/
 	
 	=============================================================================
 	
+
+{% endraw %}

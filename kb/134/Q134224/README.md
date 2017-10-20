@@ -6,6 +6,8 @@ permalink: /kb/134/Q134224/
 
 ## Q134224: PC MMTA: Err Msg: Drive X: Is Invalid
 
+{% raw %}
+
 	Article: Q134224
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -51,3 +53,5 @@ permalink: /kb/134/Q134224/
 	
 	=============================================================================
 	
+
+{% endraw %}

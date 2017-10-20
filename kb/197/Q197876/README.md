@@ -6,6 +6,8 @@ permalink: /kb/197/Q197876/
 
 ## Q197876: Poor Performance with Access MDB Stored on Windows NT Server
 
+{% raw %}
+
 	Article: Q197876
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/197/Q197876/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171289/
 
 ## Q171289: SMS: Grey Quick Windows Viewer with Remote Control
 
+{% raw %}
+
 	Article: Q171289
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -64,3 +66,5 @@ permalink: /kb/171/Q171289/
 	
 	=============================================================================
 	
+
+{% endraw %}

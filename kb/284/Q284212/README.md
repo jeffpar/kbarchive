@@ -6,6 +6,8 @@ permalink: /kb/284/Q284212/
 
 ## Q284212: Games Err Msg: Stop: Failed - Create Sound Buffer
 
+{% raw %}
+
 	Article: Q284212
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -199,3 +201,5 @@ permalink: /kb/284/Q284212/
 	
 	=============================================================================
 	
+
+{% endraw %}

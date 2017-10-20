@@ -6,6 +6,8 @@ permalink: /kb/140/Q140532/
 
 ## Q140532: INF: How to Use SQLSetPos in Updatable Joins w/ SQL Server
 
+{% raw %}
+
 	Article: Q140532
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5; winnt:
@@ -145,3 +147,5 @@ permalink: /kb/140/Q140532/
 	
 	=============================================================================
 	
+
+{% endraw %}

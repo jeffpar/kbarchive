@@ -6,6 +6,8 @@ permalink: /kb/122/Q122368/
 
 ## Q122368: &quot;Insufficient Memory&quot; Messages Appear When You Use Word 6
 
+{% raw %}
+
 	Article: Q122368
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -46,3 +48,5 @@ permalink: /kb/122/Q122368/
 	
 	=============================================================================
 	
+
+{% endraw %}

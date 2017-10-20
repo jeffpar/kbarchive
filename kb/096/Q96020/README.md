@@ -6,6 +6,8 @@ permalink: /kb/096/Q96020/
 
 ## Q96020: VidCap  Err Msg: Can't Open Wave Input File
 
+{% raw %}
+
 	Article: Q96020
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/096/Q96020/
 	
 	=============================================================================
 	
+
+{% endraw %}

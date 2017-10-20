@@ -6,6 +6,8 @@ permalink: /kb/094/Q94673/
 
 ## Q94673: HPPCL5E: Line Art Halftone Processing Not Available at 600DPI
 
+{% raw %}
+
 	Article: Q94673
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -43,3 +45,5 @@ permalink: /kb/094/Q94673/
 	
 	=============================================================================
 	
+
+{% endraw %}

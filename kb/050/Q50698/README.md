@@ -6,6 +6,8 @@ permalink: /kb/050/Q50698/
 
 ## Q50698: CodeView 2.20 Does Not Allow Routine.Variable Specification
 
+{% raw %}
+
 	Article: Q50698
 	Product(s): See article
 	Version(s): 2.20   | 2.20
@@ -68,3 +70,5 @@ permalink: /kb/050/Q50698/
 	
 	This will display the variable in procedure second. This variable
 	cannot be displayed from the main program, however.
+
+{% endraw %}

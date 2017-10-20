@@ -6,6 +6,8 @@ permalink: /kb/221/Q221613/
 
 ## Q221613: FIX: Clicking Page Tab Executes Container Click Event
 
+{% raw %}
+
 	Article: Q221613
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -96,3 +98,5 @@ permalink: /kb/221/Q221613/
 	
 	=============================================================================
 	
+
+{% endraw %}

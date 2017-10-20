@@ -6,6 +6,8 @@ permalink: /kb/130/Q130501/
 
 ## Q130501: Using Encarta and Bookshelf Searches with Multimedia Works
 
+{% raw %}
+
 	Article: Q130501
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 edition,1994 edition,1995 edition; WINDOWS:3.0,3.0, multimedia edition,3.0a,3.0b
@@ -76,3 +78,5 @@ permalink: /kb/130/Q130501/
 	
 	=============================================================================
 	
+
+{% endraw %}

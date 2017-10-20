@@ -6,6 +6,8 @@ permalink: /kb/214/Q214589/
 
 ## Q214589: Close Combat III: Difficulty Settings Slider Balances Forces
 
+{% raw %}
+
 	Article: Q214589
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -41,3 +43,5 @@ permalink: /kb/214/Q214589/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111863/
 
 ## Q111863: BUG: Driver vs. GDI-Simulated Styled Lines Don't Match
 
+{% raw %}
+
 	Article: Q111863
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -52,3 +54,5 @@ permalink: /kb/111/Q111863/
 	
 	=============================================================================
 	
+
+{% endraw %}

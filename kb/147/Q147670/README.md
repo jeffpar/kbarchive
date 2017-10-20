@@ -6,6 +6,8 @@ permalink: /kb/147/Q147670/
 
 ## Q147670: HOWTO: Add and Register Custom OCXs with Setup Wizard
 
+{% raw %}
+
 	Article: Q147670
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -86,3 +88,5 @@ permalink: /kb/147/Q147670/
 	
 	=============================================================================
 	
+
+{% endraw %}

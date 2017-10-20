@@ -6,6 +6,8 @@ permalink: /kb/153/Q153944/
 
 ## Q153944: RAS Server Fails to Autodisconnect Inactive RAS Clients With TCP
 
+{% raw %}
+
 	Article: Q153944
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -95,3 +97,5 @@ permalink: /kb/153/Q153944/
 	
 	=============================================================================
 	
+
+{% endraw %}

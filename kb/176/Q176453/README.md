@@ -6,6 +6,8 @@ permalink: /kb/176/Q176453/
 
 ## Q176453: XCON: Problems with Attachments Using Boldon James Encoding
 
+{% raw %}
+
 	Article: Q176453
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -78,3 +80,5 @@ permalink: /kb/176/Q176453/
 	
 	=============================================================================
 	
+
+{% endraw %}

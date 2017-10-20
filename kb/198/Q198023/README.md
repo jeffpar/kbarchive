@@ -6,6 +6,8 @@ permalink: /kb/198/Q198023/
 
 ## Q198023: XWEB: OWA Does Not Include DPA as an Authentication Option
 
+{% raw %}
+
 	Article: Q198023
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -89,3 +91,5 @@ permalink: /kb/198/Q198023/
 	
 	=============================================================================
 	
+
+{% endraw %}

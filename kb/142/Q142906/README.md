@@ -6,6 +6,8 @@ permalink: /kb/142/Q142906/
 
 ## Q142906: Visual Basic FileLen Returns Zero Bytes For File Size
 
+{% raw %}
+
 	Article: Q142906
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -57,3 +59,5 @@ permalink: /kb/142/Q142906/
 	
 	=============================================================================
 	
+
+{% endraw %}

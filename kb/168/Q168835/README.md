@@ -6,6 +6,8 @@ permalink: /kb/168/Q168835/
 
 ## Q168835: HOWTO: Add Copy and Paste Functionality to Grid Control
 
+{% raw %}
+
 	Article: Q168835
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/168/Q168835/
 	
 	=============================================================================
 	
+
+{% endraw %}

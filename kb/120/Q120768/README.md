@@ -6,6 +6,8 @@ permalink: /kb/120/Q120768/
 
 ## Q120768: Disks Created by MS-DOS 6.22 Upgrade and Step-Up Setup /F
 
+{% raw %}
+
 	Article: Q120768
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -121,3 +123,5 @@ permalink: /kb/120/Q120768/
 	
 	=============================================================================
 	
+
+{% endraw %}

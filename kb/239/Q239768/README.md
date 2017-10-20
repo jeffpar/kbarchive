@@ -6,6 +6,8 @@ permalink: /kb/239/Q239768/
 
 ## Q239768: NBA/NFL 2000: Unable to Hear Sound in the Game
 
+{% raw %}
+
 	Article: Q239768
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -63,3 +65,5 @@ permalink: /kb/239/Q239768/
 	
 	=============================================================================
 	
+
+{% endraw %}

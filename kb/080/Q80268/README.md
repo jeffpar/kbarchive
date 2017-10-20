@@ -6,6 +6,8 @@ permalink: /kb/080/Q80268/
 
 ## Q80268: PC Gen: Contents of Modem Script File USRHST.MDM
 
+{% raw %}
+
 	Article: Q80268
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e
@@ -317,3 +319,5 @@ permalink: /kb/080/Q80268/
 	
 	=============================================================================
 	
+
+{% endraw %}

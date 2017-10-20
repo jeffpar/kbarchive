@@ -6,6 +6,8 @@ permalink: /kb/271/Q271463/
 
 ## Q271463: Golf 2001 Edition: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q271463
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/271/Q271463/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172512/
 
 ## Q172512: Routing and Remote Access Event ID 20100
 
+{% raw %}
+
 	Article: Q172512
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -100,3 +102,5 @@ permalink: /kb/172/Q172512/
 	
 	=============================================================================
 	
+
+{% endraw %}

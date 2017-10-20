@@ -6,6 +6,8 @@ permalink: /kb/168/Q168207/
 
 ## Q168207: PRB: Cannot Find NULL Records with Parameterized Query
 
+{% raw %}
+
 	Article: Q168207
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -100,3 +102,5 @@ permalink: /kb/168/Q168207/
 	
 	=============================================================================
 	
+
+{% endraw %}

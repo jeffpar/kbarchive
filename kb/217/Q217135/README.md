@@ -6,6 +6,8 @@ permalink: /kb/217/Q217135/
 
 ## Q217135: XWEB: Post Items in Public Folders Are Not Refreshed by Outlook
 
+{% raw %}
+
 	Article: Q217135
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -86,3 +88,5 @@ permalink: /kb/217/Q217135/
 	
 	=============================================================================
 	
+
+{% endraw %}

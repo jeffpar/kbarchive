@@ -6,6 +6,8 @@ permalink: /kb/130/Q130600/
 
 ## Q130600: PRB: dBASE Functions Give &quot;File &lt;name&gt; Does not exist&quot; Error
 
+{% raw %}
+
 	Article: Q130600
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -78,3 +80,5 @@ permalink: /kb/130/Q130600/
 	
 	=============================================================================
 	
+
+{% endraw %}

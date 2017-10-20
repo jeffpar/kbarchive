@@ -6,6 +6,8 @@ permalink: /kb/132/Q132635/
 
 ## Q132635: Cannot Open Documents with Spaces in Name by Double-Clicking
 
+{% raw %}
+
 	Article: Q132635
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -90,3 +92,5 @@ permalink: /kb/132/Q132635/
 	
 	=============================================================================
 	
+
+{% endraw %}

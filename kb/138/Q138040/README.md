@@ -6,6 +6,8 @@ permalink: /kb/138/Q138040/
 
 ## Q138040: Full Text Search Help Files Not Removed During Uninstall
 
+{% raw %}
+
 	Article: Q138040
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/138/Q138040/
 	
 	=============================================================================
 	
+
+{% endraw %}

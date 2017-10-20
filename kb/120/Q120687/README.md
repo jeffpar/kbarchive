@@ -6,6 +6,8 @@ permalink: /kb/120/Q120687/
 
 ## Q120687: Internet Basics
 
+{% raw %}
+
 	Article: Q120687
 	Product(s): Microsoft Product Support Information
 	Version(s): 
@@ -153,3 +155,5 @@ permalink: /kb/120/Q120687/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150234/
 
 ## Q150234: BUG: Sheridan Panel Doesn't Correctly Align if Visible is False
 
+{% raw %}
+
 	Article: Q150234
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -93,3 +95,5 @@ permalink: /kb/150/Q150234/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153656/
 
 ## Q153656: Shared Applications and Drive Mapping Problems
 
+{% raw %}
+
 	Article: Q153656
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1
@@ -52,3 +54,5 @@ permalink: /kb/153/Q153656/
 	
 	=============================================================================
 	
+
+{% endraw %}

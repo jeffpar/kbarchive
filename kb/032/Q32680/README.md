@@ -6,6 +6,8 @@ permalink: /kb/032/Q32680/
 
 ## Q32680: ValidateFreeSpaces(), GlobalCompact(), and Wild Pointers
 
+{% raw %}
+
 	Article: Q32680
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -84,3 +86,5 @@ permalink: /kb/032/Q32680/
 	
 	=============================================================================
 	
+
+{% endraw %}

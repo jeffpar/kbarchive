@@ -6,6 +6,8 @@ permalink: /kb/171/Q171471/
 
 ## Q171471: FIX: VB-Created Controls Fail to Print w/UserControl_Paint
 
+{% raw %}
+
 	Article: Q171471
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -101,3 +103,5 @@ permalink: /kb/171/Q171471/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/097/Q97861/
 
 ## Q97861: WD97: Page Numbering in &quot;Page of Total Pages in Section&quot; Format
 
+{% raw %}
+
 	Article: Q97861
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -150,3 +152,5 @@ permalink: /kb/097/Q97861/
 	
 	=============================================================================
 	
+
+{% endraw %}

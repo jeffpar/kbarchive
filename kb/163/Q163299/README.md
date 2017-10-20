@@ -6,6 +6,8 @@ permalink: /kb/163/Q163299/
 
 ## Q163299: WD97: Web Page Authoring Tools AutoUpdate
 
+{% raw %}
+
 	Article: Q163299
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -137,3 +139,5 @@ permalink: /kb/163/Q163299/
 	
 	=============================================================================
 	
+
+{% endraw %}

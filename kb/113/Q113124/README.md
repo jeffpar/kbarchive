@@ -6,6 +6,8 @@ permalink: /kb/113/Q113124/
 
 ## Q113124: Encarta: GP Fault When Starting
 
+{% raw %}
+
 	Article: Q113124
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1994 edition
@@ -60,3 +62,5 @@ permalink: /kb/113/Q113124/
 	
 	=============================================================================
 	
+
+{% endraw %}

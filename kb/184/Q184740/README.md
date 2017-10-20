@@ -6,6 +6,8 @@ permalink: /kb/184/Q184740/
 
 ## Q184740: HOWTO: Call Functions Using the Script Control
 
+{% raw %}
+
 	Article: Q184740
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -201,3 +203,5 @@ permalink: /kb/184/Q184740/
 	
 	=============================================================================
 	
+
+{% endraw %}

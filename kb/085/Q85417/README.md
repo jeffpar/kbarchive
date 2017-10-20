@@ -6,6 +6,8 @@ permalink: /kb/085/Q85417/
 
 ## Q85417: DEC PC 320SX with Logitech Mouse May Not Enter Enhanced Mode
 
+{% raw %}
+
 	Article: Q85417
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/085/Q85417/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/069/Q69012/
 
 ## Q69012: Use of OFFSET and SEG on Local Variables in Inline Assembly
 
+{% raw %}
+
 	Article: Q69012
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -67,3 +69,5 @@ permalink: /kb/069/Q69012/
 	      mov dx, ss
 	   }
 	}
+
+{% endraw %}

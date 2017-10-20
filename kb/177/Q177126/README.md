@@ -6,6 +6,8 @@ permalink: /kb/177/Q177126/
 
 ## Q177126: INFO: How to Specify NetWare Parameters in an Unattended Setup
 
+{% raw %}
+
 	Article: Q177126
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -94,3 +96,5 @@ permalink: /kb/177/Q177126/
 	
 	=============================================================================
 	
+
+{% endraw %}

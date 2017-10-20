@@ -6,6 +6,8 @@ permalink: /kb/158/Q158315/
 
 ## Q158315: Multiprocessor failure with Adaptec 2940
 
+{% raw %}
+
 	Article: Q158315
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -49,3 +51,5 @@ permalink: /kb/158/Q158315/
 	
 	=============================================================================
 	
+
+{% endraw %}

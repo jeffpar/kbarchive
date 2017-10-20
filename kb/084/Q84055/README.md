@@ -6,6 +6,8 @@ permalink: /kb/084/Q84055/
 
 ## Q84055: PRB: GDI Functions Do Not Affect Printer Device Context
 
+{% raw %}
+
 	Article: Q84055
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -80,3 +82,5 @@ permalink: /kb/084/Q84055/
 	
 	=============================================================================
 	
+
+{% endraw %}

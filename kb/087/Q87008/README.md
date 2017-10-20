@@ -6,6 +6,8 @@ permalink: /kb/087/Q87008/
 
 ## Q87008: PRB: Building Setup Toolkit Overwrites DIALOGS.RES File
 
+{% raw %}
+
 	Article: Q87008
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -66,3 +68,5 @@ permalink: /kb/087/Q87008/
 	
 	=============================================================================
 	
+
+{% endraw %}

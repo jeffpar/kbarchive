@@ -6,6 +6,8 @@ permalink: /kb/127/Q127768/
 
 ## Q127768: PC Gen:Creating&#92;Copying Users for Test Postoffice w/ Real Data
 
+{% raw %}
+
 	Article: Q127768
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a
@@ -96,3 +98,5 @@ permalink: /kb/127/Q127768/
 	
 	=============================================================================
 	
+
+{% endraw %}

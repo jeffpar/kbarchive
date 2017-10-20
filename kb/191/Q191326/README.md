@@ -6,6 +6,8 @@ permalink: /kb/191/Q191326/
 
 ## Q191326: PRB: JAWS Software Cannot Read Some of FoxPro Menus
 
+{% raw %}
+
 	Article: Q191326
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -107,3 +109,5 @@ permalink: /kb/191/Q191326/
 	
 	=============================================================================
 	
+
+{% endraw %}

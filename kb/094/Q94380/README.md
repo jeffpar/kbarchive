@@ -6,6 +6,8 @@ permalink: /kb/094/Q94380/
 
 ## Q94380: Troubleshooting 'Segment Load Failure' Errors
 
+{% raw %}
+
 	Article: Q94380
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/094/Q94380/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169247/
 
 ## Q169247: PPT7: Action Items/Speaker Notes Not Saved After Slide Show
 
+{% raw %}
+
 	Article: Q169247
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -54,3 +56,5 @@ permalink: /kb/169/Q169247/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/312/Q312576/
 
 ## Q312576: User Without Shutdown Privileges Can Shut Down the Computer
 
+{% raw %}
+
 	Article: Q312576
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -101,3 +103,5 @@ permalink: /kb/312/Q312576/
 	
 	=============================================================================
 	
+
+{% endraw %}

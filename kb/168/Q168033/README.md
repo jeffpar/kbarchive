@@ -6,6 +6,8 @@ permalink: /kb/168/Q168033/
 
 ## Q168033: DNS Server Fails to Start After Promoting Secondary to Primary
 
+{% raw %}
+
 	Article: Q168033
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -85,3 +87,5 @@ permalink: /kb/168/Q168033/
 	
 	=============================================================================
 	
+
+{% endraw %}

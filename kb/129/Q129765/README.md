@@ -6,6 +6,8 @@ permalink: /kb/129/Q129765/
 
 ## Q129765: ProShare 1.8 Does Not Work with Windows 95 TCP/IP
 
+{% raw %}
+
 	Article: Q129765
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/129/Q129765/
 	
 	=============================================================================
 	
+
+{% endraw %}

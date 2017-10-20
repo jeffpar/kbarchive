@@ -6,6 +6,8 @@ permalink: /kb/174/Q174029/
 
 ## Q174029: XCLN: Received Time Shows as None in Outlook Client
 
+{% raw %}
+
 	Article: Q174029
 	Product(s): Microsoft Exchange
 	Version(s): 8.01,8.02,8.03,8.04
@@ -71,3 +73,5 @@ permalink: /kb/174/Q174029/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/232/Q232130/
 
 ## Q232130: BUG: Opening Then Closing 2nd Modal Form Disables VFP Close Box
 
+{% raw %}
+
 	Article: Q232130
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0,6.0 SP3
@@ -110,3 +112,5 @@ permalink: /kb/232/Q232130/
 	
 	=============================================================================
 	
+
+{% endraw %}

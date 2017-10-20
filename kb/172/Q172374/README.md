@@ -6,6 +6,8 @@ permalink: /kb/172/Q172374/
 
 ## Q172374: INFO: Visual Basic 4.0 Book List
 
+{% raw %}
+
 	Article: Q172374
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -205,3 +207,5 @@ permalink: /kb/172/Q172374/
 	
 	=============================================================================
 	
+
+{% endraw %}

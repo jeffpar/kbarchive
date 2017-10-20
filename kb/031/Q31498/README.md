@@ -6,6 +6,8 @@ permalink: /kb/031/Q31498/
 
 ## Q31498: &quot;Unsupported Video Mode&quot; When Loading Microsoft Editor
 
+{% raw %}
+
 	Article: Q31498
 	Product(s): See article
 	Version(s): 1.00 1.02 | 1.00 1.02
@@ -29,3 +31,5 @@ permalink: /kb/031/Q31498/
 	The Microsoft Editor Version 1.02 supports the 8514/A graphics card in
 	both real and protected mode. This version is currently available with
 	FORTRAN 5.00.
+
+{% endraw %}

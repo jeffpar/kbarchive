@@ -6,6 +6,8 @@ permalink: /kb/311/Q311230/
 
 ## Q311230: PRB: Font Height Doesn't Change with a Printer Definition Table
 
+{% raw %}
+
 	Article: Q311230
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -92,3 +94,5 @@ permalink: /kb/311/Q311230/
 	
 	=============================================================================
 	
+
+{% endraw %}

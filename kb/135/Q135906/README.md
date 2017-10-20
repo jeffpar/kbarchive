@@ -6,6 +6,8 @@ permalink: /kb/135/Q135906/
 
 ## Q135906: FIX: Can't Restore Default Foxhead Icon After Set Icon Prop
 
+{% raw %}
+
 	Article: Q135906
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -160,3 +162,5 @@ permalink: /kb/135/Q135906/
 	
 	=============================================================================
 	
+
+{% endraw %}

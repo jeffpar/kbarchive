@@ -6,6 +6,8 @@ permalink: /kb/161/Q161155/
 
 ## Q161155: FP97: How to Make a Web Page Display Data from a Database
 
+{% raw %}
+
 	Article: Q161155
 	Product(s): Word Front Page
 	Version(s): 
@@ -109,3 +111,5 @@ permalink: /kb/161/Q161155/
 	
 	=============================================================================
 	
+
+{% endraw %}

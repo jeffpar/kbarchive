@@ -6,6 +6,8 @@ permalink: /kb/228/Q228934/
 
 ## Q228934: XCLN: Understanding Deleted Item Recovery
 
+{% raw %}
+
 	Article: Q228934
 	Product(s): Microsoft Exchange
 	Version(s): 8.03,8.04
@@ -133,3 +135,5 @@ permalink: /kb/228/Q228934/
 	
 	=============================================================================
 	
+
+{% endraw %}

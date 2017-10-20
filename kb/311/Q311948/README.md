@@ -6,6 +6,8 @@ permalink: /kb/311/Q311948/
 
 ## Q311948: SNA LU6.2 Resync TP Service Logs Event 131 and Fails to Start
 
+{% raw %}
+
 	Article: Q311948
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/311/Q311948/
 	
 	=============================================================================
 	
+
+{% endraw %}

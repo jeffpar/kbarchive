@@ -6,6 +6,8 @@ permalink: /kb/141/Q141358/
 
 ## Q141358: HOWTO: Use the Win32 DrawEdge API Function to Draw 3D Effects
 
+{% raw %}
+
 	Article: Q141358
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -240,3 +242,5 @@ permalink: /kb/141/Q141358/
 	
 	=============================================================================
 	
+
+{% endraw %}

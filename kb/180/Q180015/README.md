@@ -6,6 +6,8 @@ permalink: /kb/180/Q180015/
 
 ## Q180015: PRB: Stored Procedures Slower with MS Oracle ODBC Driver 2.0
 
+{% raw %}
+
 	Article: Q180015
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 5.0,Build 2.573.2927,Build 2.73.7269,Build 2.73.7283.01,Build 2.73.7283.03
@@ -105,3 +107,5 @@ permalink: /kb/180/Q180015/
 	
 	=============================================================================
 	
+
+{% endraw %}

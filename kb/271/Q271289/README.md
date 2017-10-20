@@ -6,6 +6,8 @@ permalink: /kb/271/Q271289/
 
 ## Q271289: Microsoft Reader Err Msg: You Have Reached Your Activation Limit
 
+{% raw %}
+
 	Article: Q271289
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.5
@@ -101,3 +103,5 @@ permalink: /kb/271/Q271289/
 	
 	=============================================================================
 	
+
+{% endraw %}

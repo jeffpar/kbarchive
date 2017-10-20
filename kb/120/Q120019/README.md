@@ -6,6 +6,8 @@ permalink: /kb/120/Q120019/
 
 ## Q120019: Windows NT Remote Printer Administration Limitations
 
+{% raw %}
+
 	Article: Q120019
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50 3.51
@@ -68,3 +70,5 @@ permalink: /kb/120/Q120019/
 	
 	=============================================================================
 	
+
+{% endraw %}

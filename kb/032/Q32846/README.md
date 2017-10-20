@@ -6,6 +6,8 @@ permalink: /kb/032/Q32846/
 
 ## Q32846: Switch Settings for AT&amp;T StarLAN Network Adapter
 
+{% raw %}
+
 	Article: Q32846
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.x,2.x,3.0,3.0a,3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/032/Q32846/
 	
 	=============================================================================
 	
+
+{% endraw %}

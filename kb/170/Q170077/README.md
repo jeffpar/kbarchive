@@ -6,6 +6,8 @@ permalink: /kb/170/Q170077/
 
 ## Q170077: XFOR: IMC Hangs When VRFY is Enabled and VRFY Command.
 
+{% raw %}
+
 	Article: Q170077
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -44,3 +46,5 @@ permalink: /kb/170/Q170077/
 	
 	=============================================================================
 	
+
+{% endraw %}

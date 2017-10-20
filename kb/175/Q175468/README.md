@@ -6,6 +6,8 @@ permalink: /kb/175/Q175468/
 
 ## Q175468: Effects of Machine Account Replication on a Domain
 
+{% raw %}
+
 	Article: Q175468
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -162,3 +164,5 @@ permalink: /kb/175/Q175468/
 	
 	=============================================================================
 	
+
+{% endraw %}

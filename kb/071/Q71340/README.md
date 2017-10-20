@@ -6,6 +6,8 @@ permalink: /kb/071/Q71340/
 
 ## Q71340: Mac Gty: Gateway Access Server Stops Working
 
+{% raw %}
+
 	Article: Q71340
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0,3.1
@@ -90,3 +92,5 @@ permalink: /kb/071/Q71340/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131250/
 
 ## Q131250: Clicking Top or Bottom of BBS Toolbar Causes Attachment View
 
+{% raw %}
+
 	Article: Q131250
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.05 1.2 1.3
@@ -46,3 +48,5 @@ permalink: /kb/131/Q131250/
 	
 	=============================================================================
 	
+
+{% endraw %}

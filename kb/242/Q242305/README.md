@@ -6,6 +6,8 @@ permalink: /kb/242/Q242305/
 
 ## Q242305: XADM: Exstrace.dll prompt during setup on Windows 2000 Server
 
+{% raw %}
+
 	Article: Q242305
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:2000; winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/242/Q242305/
 	
 	=============================================================================
 	
+
+{% endraw %}

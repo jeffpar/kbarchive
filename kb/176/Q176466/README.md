@@ -6,6 +6,8 @@ permalink: /kb/176/Q176466/
 
 ## Q176466: XGEN: TCP Ports and Microsoft Exchange: In-depth Discussion
 
+{% raw %}
+
 	Article: Q176466
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -300,3 +302,5 @@ permalink: /kb/176/Q176466/
 	
 	=============================================================================
 	
+
+{% endraw %}

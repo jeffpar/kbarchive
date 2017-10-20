@@ -6,6 +6,8 @@ permalink: /kb/119/Q119788/
 
 ## Q119788: Running 16-bit Applications with Long Directory Structure
 
+{% raw %}
+
 	Article: Q119788
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/119/Q119788/
 	
 	=============================================================================
 	
+
+{% endraw %}

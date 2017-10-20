@@ -6,6 +6,8 @@ permalink: /kb/268/Q268610/
 
 ## Q268610: WD97: Word Crashes When Starting Word with Hyperlink from IE
 
+{% raw %}
+
 	Article: Q268610
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/268/Q268610/
 	
 	=============================================================================
 	
+
+{% endraw %}

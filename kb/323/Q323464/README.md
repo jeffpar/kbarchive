@@ -6,6 +6,8 @@ permalink: /kb/323/Q323464/
 
 ## Q323464: Err Msg: The Invitation from 'User Name' to Use Application...
 
+{% raw %}
+
 	Article: Q323464
 	Product(s): The Microsoft Network
 	Version(s): 1,2.2
@@ -94,3 +96,5 @@ permalink: /kb/323/Q323464/
 	
 	=============================================================================
 	
+
+{% endraw %}

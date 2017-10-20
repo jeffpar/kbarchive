@@ -6,6 +6,8 @@ permalink: /kb/095/Q95787/
 
 ## Q95787: Problems Using Norton's Smartcan TSR with SHARE.EXE
 
+{% raw %}
+
 	Article: Q95787
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/095/Q95787/
 	
 	=============================================================================
 	
+
+{% endraw %}

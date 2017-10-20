@@ -6,6 +6,8 @@ permalink: /kb/057/Q57730/
 
 ## Q57730: Err Msg: &quot;No Room for System on Destination Disk&quot; with SYS
 
+{% raw %}
+
 	Article: Q57730
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -122,3 +124,5 @@ permalink: /kb/057/Q57730/
 	
 	=============================================================================
 	
+
+{% endraw %}

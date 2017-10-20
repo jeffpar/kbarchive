@@ -6,6 +6,8 @@ permalink: /kb/090/Q90036/
 
 ## Q90036: Small Text Under Picture in Quick Recorder Explained
 
+{% raw %}
+
 	Article: Q90036
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -38,3 +40,5 @@ permalink: /kb/090/Q90036/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151629/
 
 ## Q151629: INFO: TN3270 LU Assignment and the Use of Submasks
 
+{% raw %}
+
 	Article: Q151629
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,4.0
@@ -86,3 +88,5 @@ permalink: /kb/151/Q151629/
 	
 	=============================================================================
 	
+
+{% endraw %}

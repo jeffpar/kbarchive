@@ -6,6 +6,8 @@ permalink: /kb/148/Q148312/
 
 ## Q148312: No RTM Data Generated If 3270 Session Uses Exception Response
 
+{% raw %}
+
 	Article: Q148312
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -81,3 +83,5 @@ permalink: /kb/148/Q148312/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133450/
 
 ## Q133450: Commands Affected by NULL Values
 
+{% raw %}
+
 	Article: Q133450
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -89,3 +91,5 @@ permalink: /kb/133/Q133450/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153662/
 
 ## Q153662: SMS: Internet Explorer GP Faults When Being Remote Controlled
 
+{% raw %}
+
 	Article: Q153662
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -47,3 +49,5 @@ permalink: /kb/153/Q153662/
 	
 	=============================================================================
 	
+
+{% endraw %}

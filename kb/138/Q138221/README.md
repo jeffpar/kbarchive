@@ -6,6 +6,8 @@ permalink: /kb/138/Q138221/
 
 ## Q138221: Problems Creating Partitions w/ Arcinst.exe in Windows NT 3.51
 
+{% raw %}
+
 	Article: Q138221
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -94,3 +96,5 @@ permalink: /kb/138/Q138221/
 	
 	=============================================================================
 	
+
+{% endraw %}

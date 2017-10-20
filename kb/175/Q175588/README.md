@@ -6,6 +6,8 @@ permalink: /kb/175/Q175588/
 
 ## Q175588: XFOR: Microsoft Exchange DX Returns Event ID 220 or 221
 
+{% raw %}
+
 	Article: Q175588
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -56,3 +58,5 @@ permalink: /kb/175/Q175588/
 	
 	=============================================================================
 	
+
+{% endraw %}

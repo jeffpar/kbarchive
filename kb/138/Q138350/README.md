@@ -6,6 +6,8 @@ permalink: /kb/138/Q138350/
 
 ## Q138350: PPT7: &quot;Sorry, There Is No Valid Speller&quot; Error
 
+{% raw %}
+
 	Article: Q138350
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -137,3 +139,5 @@ permalink: /kb/138/Q138350/
 	
 	=============================================================================
 	
+
+{% endraw %}

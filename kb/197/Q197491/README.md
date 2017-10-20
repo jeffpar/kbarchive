@@ -6,6 +6,8 @@ permalink: /kb/197/Q197491/
 
 ## Q197491: XADM: Large NNTP Header Causes Store to Consume 100% of CPU Time
 
+{% raw %}
+
 	Article: Q197491
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -81,3 +83,5 @@ permalink: /kb/197/Q197491/
 	
 	=============================================================================
 	
+
+{% endraw %}

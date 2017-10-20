@@ -6,6 +6,8 @@ permalink: /kb/048/Q48878/
 
 ## Q48878: Mac Adm: Forwarding an Inquiry Message
 
+{% raw %}
+
 	Article: Q48878
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -44,3 +46,5 @@ permalink: /kb/048/Q48878/
 	
 	=============================================================================
 	
+
+{% endraw %}

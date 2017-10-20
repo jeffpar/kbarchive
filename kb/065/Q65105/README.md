@@ -6,6 +6,8 @@ permalink: /kb/065/Q65105/
 
 ## Q65105: How to Call VioPopUp() from a Protected Mode BASIC Program
 
+{% raw %}
+
 	Article: Q65105
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10
@@ -130,3 +132,5 @@ permalink: /kb/065/Q65105/
 	
 	ErrorCode% = VioEndPopUp% (0)        'End the pop-up and the program.
 	END
+
+{% endraw %}

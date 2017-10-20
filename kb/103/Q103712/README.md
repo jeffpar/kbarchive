@@ -6,6 +6,8 @@ permalink: /kb/103/Q103712/
 
 ## Q103712: FIX: Help, Online Books Inaccessible After Custom Install
 
+{% raw %}
+
 	Article: Q103712
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00 2.00 2.10 4.00
@@ -113,3 +115,5 @@ permalink: /kb/103/Q103712/
 	
 	=============================================================================
 	
+
+{% endraw %}

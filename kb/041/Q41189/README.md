@@ -6,6 +6,8 @@ permalink: /kb/041/Q41189/
 
 ## Q41189: Maximum Number of MS-DOS Disk Partitions and Other Drives
 
+{% raw %}
+
 	Article: Q41189
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -38,3 +40,5 @@ permalink: /kb/041/Q41189/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198129/
 
 ## Q198129: Memory Leak in Performance Monitor Virtual Bytes
 
+{% raw %}
+
 	Article: Q198129
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/198/Q198129/
 	
 	=============================================================================
 	
+
+{% endraw %}

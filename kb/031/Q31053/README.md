@@ -6,6 +6,8 @@ permalink: /kb/031/Q31053/
 
 ## Q31053: QB.EXE &quot;Path/File Access Error&quot; Running Out of File Handles
 
+{% raw %}
+
 	Article: Q31053
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -87,3 +89,5 @@ permalink: /kb/031/Q31053/
 	After running this program, you must type the CLOSE command in the
 	immediate window, or else SHELL will give you an "Illegal Function
 	Call" error.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180692/
 
 ## Q180692: Start Button Not Disabled Using Snap-in Interface
 
+{% raw %}
+
 	Article: Q180692
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -56,3 +58,5 @@ permalink: /kb/180/Q180692/
 	
 	=============================================================================
 	
+
+{% endraw %}

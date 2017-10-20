@@ -6,6 +6,8 @@ permalink: /kb/197/Q197632/
 
 ## Q197632: Registry Hive Fragmentation Leads to Excessive Size
 
+{% raw %}
+
 	Article: Q197632
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -85,3 +87,5 @@ permalink: /kb/197/Q197632/
 	
 	=============================================================================
 	
+
+{% endraw %}

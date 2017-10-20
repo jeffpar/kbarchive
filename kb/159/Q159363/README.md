@@ -6,6 +6,8 @@ permalink: /kb/159/Q159363/
 
 ## Q159363: WD97: Text in Text Box Missing, Truncated in Online Layout View
 
+{% raw %}
+
 	Article: Q159363
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/159/Q159363/
 	
 	=============================================================================
 	
+
+{% endraw %}

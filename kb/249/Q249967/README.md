@@ -6,6 +6,8 @@ permalink: /kb/249/Q249967/
 
 ## Q249967: LU1 Print Job Loses First Line When DelayPrintStart Implemented
 
+{% raw %}
+
 	Article: Q249967
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -69,3 +71,5 @@ permalink: /kb/249/Q249967/
 	
 	=============================================================================
 	
+
+{% endraw %}

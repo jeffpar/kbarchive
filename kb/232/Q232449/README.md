@@ -6,6 +6,8 @@ permalink: /kb/232/Q232449/
 
 ## Q232449: Sample ASP Code May be Used to View Unsecured Server Files
 
+{% raw %}
+
 	Article: Q232449
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -451,3 +453,5 @@ permalink: /kb/232/Q232449/
 	
 	=============================================================================
 	
+
+{% endraw %}

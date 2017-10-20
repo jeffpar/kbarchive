@@ -6,6 +6,8 @@ permalink: /kb/090/Q90680/
 
 ## Q90680: Mac Srv: Determining Who Your Network Manager Is
 
+{% raw %}
+
 	Article: Q90680
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,3.0,3.1
@@ -68,3 +70,5 @@ permalink: /kb/090/Q90680/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/222/Q222164/
 
 ## Q222164: DSMN Fails to Synchronize Passwords When History Is Turned On
 
+{% raw %}
+
 	Article: Q222164
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -105,3 +107,5 @@ permalink: /kb/222/Q222164/
 	
 	=============================================================================
 	
+
+{% endraw %}

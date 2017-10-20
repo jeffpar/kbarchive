@@ -6,6 +6,8 @@ permalink: /kb/177/Q177249/
 
 ## Q177249: ADIC Tape Drive Detected and Installed as Quantum 7000
 
+{% raw %}
+
 	Article: Q177249
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/177/Q177249/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185693/
 
 ## Q185693: XADM: Spinning Thread in Mad.exe During Routing Recalculation
 
+{% raw %}
+
 	Article: Q185693
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0 SP2,5.5,5.5 SP1
@@ -160,3 +162,5 @@ permalink: /kb/185/Q185693/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170810/
 
 ## Q170810: XADM: Service Specific Error 4021 Starting Information Store
 
+{% raw %}
+
 	Article: Q170810
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/170/Q170810/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150303/
 
 ## Q150303: XCLN: How to Back Up Profile Rules to a Different .PST
 
+{% raw %}
+
 	Article: Q150303
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -73,3 +75,5 @@ permalink: /kb/150/Q150303/
 	
 	=============================================================================
 	
+
+{% endraw %}

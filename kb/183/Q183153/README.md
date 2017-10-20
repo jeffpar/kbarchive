@@ -6,6 +6,8 @@ permalink: /kb/183/Q183153/
 
 ## Q183153: XCLN: No Close Option Available After Reading Last OWA Message
 
+{% raw %}
+
 	Article: Q183153
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -52,3 +54,5 @@ permalink: /kb/183/Q183153/
 	
 	=============================================================================
 	
+
+{% endraw %}

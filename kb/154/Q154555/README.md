@@ -6,6 +6,8 @@ permalink: /kb/154/Q154555/
 
 ## Q154555: When to Enter Dotted vs Non-Dotted Names in DNS Manager
 
+{% raw %}
+
 	Article: Q154555
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/154/Q154555/
 	
 	=============================================================================
 	
+
+{% endraw %}

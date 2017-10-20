@@ -6,6 +6,8 @@ permalink: /kb/168/Q168794/
 
 ## Q168794: Disk or File System Error Message Importing Registry File
 
+{% raw %}
+
 	Article: Q168794
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -62,3 +64,5 @@ permalink: /kb/168/Q168794/
 	
 	=============================================================================
 	
+
+{% endraw %}

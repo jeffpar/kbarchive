@@ -6,6 +6,8 @@ permalink: /kb/131/Q131325/
 
 ## Q131325: Viewing with Single Window Does Not Save Sort Order
 
+{% raw %}
+
 	Article: Q131325
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -47,3 +49,5 @@ permalink: /kb/131/Q131325/
 	
 	=============================================================================
 	
+
+{% endraw %}

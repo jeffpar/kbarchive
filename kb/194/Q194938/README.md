@@ -6,6 +6,8 @@ permalink: /kb/194/Q194938/
 
 ## Q194938: HOWTO: Monitor TCP/IP Ports in Use
 
+{% raw %}
+
 	Article: Q194938
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -110,3 +112,5 @@ permalink: /kb/194/Q194938/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153243/
 
 ## Q153243: Audit16 Stops on OS/2 Client with a System Error: 3176
 
+{% raw %}
+
 	Article: Q153243
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -56,3 +58,5 @@ permalink: /kb/153/Q153243/
 	
 	=============================================================================
 	
+
+{% endraw %}

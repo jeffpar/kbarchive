@@ -6,6 +6,8 @@ permalink: /kb/170/Q170921/
 
 ## Q170921: Scaling Windows NT Server Storage and Fault Tolerance
 
+{% raw %}
+
 	Article: Q170921
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -124,3 +126,5 @@ permalink: /kb/170/Q170921/
 	
 	=============================================================================
 	
+
+{% endraw %}

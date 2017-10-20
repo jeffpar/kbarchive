@@ -6,6 +6,8 @@ permalink: /kb/251/Q251001/
 
 ## Q251001: Default Settings May Not Propagate to Computers/Users
 
+{% raw %}
+
 	Article: Q251001
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -96,3 +98,5 @@ permalink: /kb/251/Q251001/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/150/Q150185/
 
 ## Q150185: INFO: Tab Keyword Cannot Be Used as Object Type in Visual Basic
 
+{% raw %}
+
 	Article: Q150185
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,6.0
@@ -87,3 +89,5 @@ permalink: /kb/150/Q150185/
 	
 	=============================================================================
 	
+
+{% endraw %}

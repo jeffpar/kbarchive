@@ -6,6 +6,8 @@ permalink: /kb/166/Q166402/
 
 ## Q166402: XCON: MTA Terminates Unexpectedly With 2110 and 9405 Event IDs
 
+{% raw %}
+
 	Article: Q166402
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -96,3 +98,5 @@ permalink: /kb/166/Q166402/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41583/
 
 ## Q41583: LINK Options Can Be Specified in AUTOEXEC.BAT with SET LINK=
 
+{% raw %}
+
 	Article: Q41583
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -36,3 +38,5 @@ permalink: /kb/041/Q41583/
 	This information applies to Microsoft QuickBASIC Versions 2.00, 2.01,
 	3.00, 4.00, 4.00b, and 4.50, Microsoft BASIC Compiler Versions 6.00
 	and 6.00b, and Microsoft BASIC PDS Version 7.00.
+
+{% endraw %}

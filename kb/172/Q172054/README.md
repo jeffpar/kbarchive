@@ -6,6 +6,8 @@ permalink: /kb/172/Q172054/
 
 ## Q172054: 3270 Script File Won't Work With Japanese Host Code Page
 
+{% raw %}
+
 	Article: Q172054
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -57,3 +59,5 @@ permalink: /kb/172/Q172054/
 	
 	=============================================================================
 	
+
+{% endraw %}

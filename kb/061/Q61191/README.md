@@ -6,6 +6,8 @@ permalink: /kb/061/Q61191/
 
 ## Q61191: C 6.00 README: Hexadecimal Constants in Strings
 
+{% raw %}
+
 	Article: Q61191
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -56,3 +58,5 @@ permalink: /kb/061/Q61191/
 	requires that you pad out the digits with zeros on the left if
 	necessary. However, even older, non-ANSI compilers will support this
 	solution if portability is a concern.
+
+{% endraw %}

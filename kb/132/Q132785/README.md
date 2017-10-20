@@ -6,6 +6,8 @@ permalink: /kb/132/Q132785/
 
 ## Q132785: Cannot Start Windows 95 from NetWare Server with RPL
 
+{% raw %}
+
 	Article: Q132785
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/132/Q132785/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164144/
 
 ## Q164144: Perl Engine Does Not Allow Spaces in Directory or Script Name
 
+{% raw %}
+
 	Article: Q164144
 	Product(s): Internet Information Server
 	Version(s): 2.00
@@ -53,3 +55,5 @@ permalink: /kb/164/Q164144/
 	
 	=============================================================================
 	
+
+{% endraw %}

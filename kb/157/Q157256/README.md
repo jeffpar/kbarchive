@@ -6,6 +6,8 @@ permalink: /kb/157/Q157256/
 
 ## Q157256: DOCERR:  DEBUG and SET DEBUG Incorrect in Help
 
+{% raw %}
+
 	Article: Q157256
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -55,3 +57,5 @@ permalink: /kb/157/Q157256/
 	
 	=============================================================================
 	
+
+{% endraw %}

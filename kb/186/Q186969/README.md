@@ -6,6 +6,8 @@ permalink: /kb/186/Q186969/
 
 ## Q186969: WD97: ConfirmConversions Doesn't Work with OpenDataSource
 
+{% raw %}
+
 	Article: Q186969
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -68,3 +70,5 @@ permalink: /kb/186/Q186969/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/119/Q119375/
 
 ## Q119375: Shiva Remote 3.1.0 and TCP/IP-32
 
+{% raw %}
+
 	Article: Q119375
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 1.00
@@ -54,3 +56,5 @@ permalink: /kb/119/Q119375/
 	
 	=============================================================================
 	
+
+{% endraw %}

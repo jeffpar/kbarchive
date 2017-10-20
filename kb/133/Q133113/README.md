@@ -6,6 +6,8 @@ permalink: /kb/133/Q133113/
 
 ## Q133113: Systems Management Server Site Control File Methodology
 
+{% raw %}
+
 	Article: Q133113
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -117,3 +119,5 @@ permalink: /kb/133/Q133113/
 	
 	=============================================================================
 	
+
+{% endraw %}

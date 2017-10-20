@@ -6,6 +6,8 @@ permalink: /kb/299/Q299866/
 
 ## Q299866: Pages Always Show the Sign-out Logo After User Signs Out
 
+{% raw %}
+
 	Article: Q299866
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -55,3 +57,5 @@ permalink: /kb/299/Q299866/
 	
 	=============================================================================
 	
+
+{% endraw %}

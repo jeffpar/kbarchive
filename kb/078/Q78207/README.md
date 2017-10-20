@@ -6,6 +6,8 @@ permalink: /kb/078/Q78207/
 
 ## Q78207: Coda Music Software's Finale 2.0 and Windows
 
+{% raw %}
+
 	Article: Q78207
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1; :1.0
@@ -56,3 +58,5 @@ permalink: /kb/078/Q78207/
 	
 	=============================================================================
 	
+
+{% endraw %}

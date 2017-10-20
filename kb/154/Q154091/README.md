@@ -6,6 +6,8 @@ permalink: /kb/154/Q154091/
 
 ## Q154091: Windows 95 Dial-Up Networking 1.3 Upgrade Release Notes
 
+{% raw %}
+
 	Article: Q154091
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -42,3 +44,5 @@ permalink: /kb/154/Q154091/
 	
 	=============================================================================
 	
+
+{% endraw %}

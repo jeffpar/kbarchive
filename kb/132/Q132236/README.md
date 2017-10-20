@@ -6,6 +6,8 @@ permalink: /kb/132/Q132236/
 
 ## Q132236: BUG: SQLStatistics Always Reports Indexes as Ascending
 
+{% raw %}
+
 	Article: Q132236
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.0
@@ -61,3 +63,5 @@ permalink: /kb/132/Q132236/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103555/
 
 ## Q103555: Defrag Treats Lost Clusters as Unmovable Blocks
 
+{% raw %}
+
 	Article: Q103555
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -35,3 +37,5 @@ permalink: /kb/103/Q103555/
 	
 	=============================================================================
 	
+
+{% endraw %}

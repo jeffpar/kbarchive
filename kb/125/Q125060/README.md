@@ -6,6 +6,8 @@ permalink: /kb/125/Q125060/
 
 ## Q125060: Using Novell's ODINSUP and VLM with Network Client 3.0
 
+{% raw %}
+
 	Article: Q125060
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 4.0
@@ -198,3 +200,5 @@ permalink: /kb/125/Q125060/
 	
 	=============================================================================
 	
+
+{% endraw %}

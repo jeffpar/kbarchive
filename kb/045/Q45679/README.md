@@ -6,6 +6,8 @@ permalink: /kb/045/Q45679/
 
 ## Q45679: &quot;DPATH&quot; Utility Causes ILINK Error and R6005 Error
 
+{% raw %}
+
 	Article: Q45679
 	Product(s): See article
 	Version(s): 2.00
@@ -36,3 +38,5 @@ permalink: /kb/045/Q45679/
 	
 	Only the OS/2 applications that are written to take advantage of dpath
 	will use the data path specified.
+
+{% endraw %}

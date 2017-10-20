@@ -6,6 +6,8 @@ permalink: /kb/150/Q150526/
 
 ## Q150526: PGC Allows a User to Log On to a Different Domain
 
+{% raw %}
+
 	Article: Q150526
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -44,3 +46,5 @@ permalink: /kb/150/Q150526/
 	
 	=============================================================================
 	
+
+{% endraw %}

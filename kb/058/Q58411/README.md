@@ -6,6 +6,8 @@ permalink: /kb/058/Q58411/
 
 ## Q58411: C Char Parameters Passed from BASIC as 2-Byte Parameters
 
+{% raw %}
+
 	Article: Q58411
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -65,3 +67,5 @@ permalink: /kb/058/Q58411/
 	When compiled and run, TESTB.EXE displays the following:
 	
 	   A B
+
+{% endraw %}

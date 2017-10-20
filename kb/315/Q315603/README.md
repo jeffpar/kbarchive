@@ -6,6 +6,8 @@ permalink: /kb/315/Q315603/
 
 ## Q315603: HOW TO: Create a Class Derived from CControlBar and Its SubClass
 
+{% raw %}
+
 	Article: Q315603
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -97,3 +99,5 @@ permalink: /kb/315/Q315603/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/124/Q124427/
 
 ## Q124427: Hcopy Does Not Preserve Hidden Attributes on Files
 
+{% raw %}
+
 	Article: Q124427
 	Product(s): Microsoft Windows NT
 	Version(s): 1.0,3.1,3.5
@@ -62,3 +64,5 @@ permalink: /kb/124/Q124427/
 	
 	=============================================================================
 	
+
+{% endraw %}

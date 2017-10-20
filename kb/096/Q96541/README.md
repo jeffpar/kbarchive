@@ -6,6 +6,8 @@ permalink: /kb/096/Q96541/
 
 ## Q96541: Setup Leaves Windows .INI Files in Root of the Novell Server
 
+{% raw %}
+
 	Article: Q96541
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -119,3 +121,5 @@ permalink: /kb/096/Q96541/
 	
 	=============================================================================
 	
+
+{% endraw %}

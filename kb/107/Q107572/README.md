@@ -6,6 +6,8 @@ permalink: /kb/107/Q107572/
 
 ## Q107572: WFWG 3.11 Err Msg: Error 2138: The Workstation Service...
 
+{% raw %}
+
 	Article: Q107572
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -64,3 +66,5 @@ permalink: /kb/107/Q107572/
 	
 	=============================================================================
 	
+
+{% endraw %}

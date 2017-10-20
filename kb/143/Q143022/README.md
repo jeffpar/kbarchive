@@ -6,6 +6,8 @@ permalink: /kb/143/Q143022/
 
 ## Q143022: Setting the Default Fill Color for All New Drawn Objects
 
+{% raw %}
+
 	Article: Q143022
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:4.0,4.0a,4.0c,7.0
@@ -113,3 +115,5 @@ permalink: /kb/143/Q143022/
 	
 	=============================================================================
 	
+
+{% endraw %}

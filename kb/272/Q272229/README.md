@@ -6,6 +6,8 @@ permalink: /kb/272/Q272229/
 
 ## Q272229: Computer Hangs with a Forerunner PCI ATM Network Adapter
 
+{% raw %}
+
 	Article: Q272229
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -58,3 +60,5 @@ permalink: /kb/272/Q272229/
 	
 	=============================================================================
 	
+
+{% endraw %}

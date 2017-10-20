@@ -6,6 +6,8 @@ permalink: /kb/096/Q96851/
 
 ## Q96851: MS-DOS 6.0 Configuration Questions and Answers
 
+{% raw %}
+
 	Article: Q96851
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -71,3 +73,5 @@ permalink: /kb/096/Q96851/
 	
 	=============================================================================
 	
+
+{% endraw %}

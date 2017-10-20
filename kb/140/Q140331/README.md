@@ -6,6 +6,8 @@ permalink: /kb/140/Q140331/
 
 ## Q140331: FAX: Send Fax Macro No Longer Works with 32-bit Office products
 
+{% raw %}
+
 	Article: Q140331
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0a; Win95:; :
@@ -77,3 +79,5 @@ permalink: /kb/140/Q140331/
 	
 	=============================================================================
 	
+
+{% endraw %}

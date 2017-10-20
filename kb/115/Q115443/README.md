@@ -6,6 +6,8 @@ permalink: /kb/115/Q115443/
 
 ## Q115443: X400: OSIWare Bodypart Contain
 
+{% raw %}
+
 	Article: Q115443
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -52,3 +54,5 @@ permalink: /kb/115/Q115443/
 	
 	=============================================================================
 	
+
+{% endraw %}

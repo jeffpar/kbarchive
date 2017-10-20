@@ -6,6 +6,8 @@ permalink: /kb/086/Q86383/
 
 ## Q86383: PC WSPlus: Importing Long Appointments Hides Buttons
 
+{% raw %}
+
 	Article: Q86383
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -55,3 +57,5 @@ permalink: /kb/086/Q86383/
 	
 	=============================================================================
 	
+
+{% endraw %}

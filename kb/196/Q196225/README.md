@@ -6,6 +6,8 @@ permalink: /kb/196/Q196225/
 
 ## Q196225: SMS: SMS 2.0 Remote Control Registry Keys and Client Settings
 
+{% raw %}
+
 	Article: Q196225
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -94,3 +96,5 @@ permalink: /kb/196/Q196225/
 	
 	=============================================================================
 	
+
+{% endraw %}

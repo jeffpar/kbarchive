@@ -6,6 +6,8 @@ permalink: /kb/138/Q138743/
 
 ## Q138743: Free Disk Space Reported Incorrectly with Norton Utilities 95
 
+{% raw %}
+
 	Article: Q138743
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -63,3 +65,5 @@ permalink: /kb/138/Q138743/
 	
 	=============================================================================
 	
+
+{% endraw %}

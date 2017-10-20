@@ -6,6 +6,8 @@ permalink: /kb/320/Q320403/
 
 ## Q320403: Building Enterprise Active Directory Services: Notes from the Fi
 
+{% raw %}
+
 	Article: Q320403
 	Product(s): Microsoft Press
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/320/Q320403/
 	
 	=============================================================================
 	
+
+{% endraw %}

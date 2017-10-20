@@ -6,6 +6,8 @@ permalink: /kb/108/Q108744/
 
 ## Q108744: Writer: Borders Print Incorrectly with ATI Mach32
 
+{% raw %}
+
 	Article: Q108744
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -58,3 +60,5 @@ permalink: /kb/108/Q108744/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165676/
 
 ## Q165676: WD97: Missing Menu Items When WordMail Document Opened in Word
 
+{% raw %}
+
 	Article: Q165676
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -100,3 +102,5 @@ permalink: /kb/165/Q165676/
 	
 	=============================================================================
 	
+
+{% endraw %}

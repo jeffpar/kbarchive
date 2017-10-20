@@ -6,6 +6,8 @@ permalink: /kb/029/Q29825/
 
 ## Q29825: Structure Packing: /Zp4 or #pragma pack(4), and /Zp2
 
+{% raw %}
+
 	Article: Q29825
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -48,3 +50,5 @@ permalink: /kb/029/Q29825/
 	use the /Zp or /Zp1 compiler options, or #pragma pack(1), and pad your
 	struct with an appropriate number of dummy char or array of char
 	members.
+
+{% endraw %}

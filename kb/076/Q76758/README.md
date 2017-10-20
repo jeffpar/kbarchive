@@ -6,6 +6,8 @@ permalink: /kb/076/Q76758/
 
 ## Q76758: Free Disk Space Required for Windows Resource Kit
 
+{% raw %}
+
 	Article: Q76758
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/076/Q76758/
 	
 	=============================================================================
 	
+
+{% endraw %}

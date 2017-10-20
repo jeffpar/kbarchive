@@ -6,6 +6,8 @@ permalink: /kb/199/Q199156/
 
 ## Q199156: PRB: DAO Field Object Assignment Slows as Field Count Increases
 
+{% raw %}
+
 	Article: Q199156
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -194,3 +196,5 @@ permalink: /kb/199/Q199156/
 	
 	=============================================================================
 	
+
+{% endraw %}

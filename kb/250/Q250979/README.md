@@ -6,6 +6,8 @@ permalink: /kb/250/Q250979/
 
 ## Q250979: Contents of Internet Information Server 5.0 Release Notes
 
+{% raw %}
+
 	Article: Q250979
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -433,3 +435,5 @@ permalink: /kb/250/Q250979/
 	
 	=============================================================================
 	
+
+{% endraw %}

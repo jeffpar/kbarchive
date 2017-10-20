@@ -6,6 +6,8 @@ permalink: /kb/242/Q242599/
 
 ## Q242599: XADM: Can't Uninstall Exchange Server Without Access to DC
 
+{% raw %}
+
 	Article: Q242599
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -80,3 +82,5 @@ permalink: /kb/242/Q242599/
 	
 	=============================================================================
 	
+
+{% endraw %}

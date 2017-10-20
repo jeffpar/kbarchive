@@ -6,6 +6,8 @@ permalink: /kb/108/Q108421/
 
 ## Q108421: WFWG 3.11 Err Msg: Error 1: An Internal Error Occurred
 
+{% raw %}
+
 	Article: Q108421
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/108/Q108421/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/214/Q214406/
 
 ## Q214406: CICS ABEND ATCV When Using Two Phase Commit and CICS Remote Envi
 
+{% raw %}
+
 	Article: Q214406
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,1.0 SP1
@@ -114,3 +116,5 @@ permalink: /kb/214/Q214406/
 	
 	=============================================================================
 	
+
+{% endraw %}

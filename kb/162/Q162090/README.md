@@ -6,6 +6,8 @@ permalink: /kb/162/Q162090/
 
 ## Q162090: PPT: Sample Code to Reset Action Settings
 
+{% raw %}
+
 	Article: Q162090
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:98; WINDOWS:97
@@ -155,3 +157,5 @@ permalink: /kb/162/Q162090/
 	
 	=============================================================================
 	
+
+{% endraw %}

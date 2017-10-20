@@ -6,6 +6,8 @@ permalink: /kb/028/Q28035/
 
 ## Q28035: &quot;String Space Corrupt&quot; After CLEARing a Watch String
 
+{% raw %}
+
 	Article: Q28035
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -25,3 +27,5 @@ permalink: /kb/028/Q28035/
 	6.00b for MS-DOS (buglist6.00, buglist6.00b). This problem was
 	corrected in QuickBASIC Version 4.50 and in Microsoft BASIC
 	Professional Development System (PDS) Version 7.00 (fixlist7.00).
+
+{% endraw %}

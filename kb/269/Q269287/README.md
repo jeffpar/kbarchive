@@ -6,6 +6,8 @@ permalink: /kb/269/Q269287/
 
 ## Q269287: MCSE Readiness Review 70-028: Administering SQL Server 7.0 Comme
 
+{% raw %}
+
 	Article: Q269287
 	Product(s): Microsoft Press
 	Version(s): 
@@ -62,3 +64,5 @@ permalink: /kb/269/Q269287/
 	
 	=============================================================================
 	
+
+{% endraw %}

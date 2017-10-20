@@ -6,6 +6,8 @@ permalink: /kb/103/Q103846/
 
 ## Q103846: PC WSPlus: Appending Archive Information to an Existing File
 
+{% raw %}
+
 	Article: Q103846
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -36,3 +38,5 @@ permalink: /kb/103/Q103846/
 	
 	=============================================================================
 	
+
+{% endraw %}

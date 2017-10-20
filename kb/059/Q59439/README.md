@@ -6,6 +6,8 @@ permalink: /kb/059/Q59439/
 
 ## Q59439: C4071 Can Be Caused by Missing &quot;void&quot; in Function Prototype
 
+{% raw %}
+
 	Article: Q59439
 	Product(s): See article
 	Version(s): 5.00 5.10 6.00 | 5.00 5.10 6.00
@@ -40,3 +42,5 @@ permalink: /kb/059/Q59439/
 	{
 	  printf("Hello\n");
 	}
+
+{% endraw %}

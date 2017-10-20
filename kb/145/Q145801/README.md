@@ -6,6 +6,8 @@ permalink: /kb/145/Q145801/
 
 ## Q145801: Pregnancy and Child Care: Problems Connecting to WWW Sites
 
+{% raw %}
+
 	Article: Q145801
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -48,3 +50,5 @@ permalink: /kb/145/Q145801/
 	
 	=============================================================================
 	
+
+{% endraw %}

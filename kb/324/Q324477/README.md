@@ -6,6 +6,8 @@ permalink: /kb/324/Q324477/
 
 ## Q324477: Dungeon Siege 1.0: Dungeon Siege Update
 
+{% raw %}
+
 	Article: Q324477
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -153,3 +155,5 @@ permalink: /kb/324/Q324477/
 	
 	=============================================================================
 	
+
+{% endraw %}

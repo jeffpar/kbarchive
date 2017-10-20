@@ -6,6 +6,8 @@ permalink: /kb/177/Q177650/
 
 ## Q177650: Remote Shutdown Fails If User Is Logged On Without Rights
 
+{% raw %}
+
 	Article: Q177650
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -68,3 +70,5 @@ permalink: /kb/177/Q177650/
 	
 	=============================================================================
 	
+
+{% endraw %}

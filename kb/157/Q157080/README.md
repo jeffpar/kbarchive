@@ -6,6 +6,8 @@ permalink: /kb/157/Q157080/
 
 ## Q157080: XADM: Microsoft Sponsored Exchange NNTP Newsgroups
 
+{% raw %}
+
 	Article: Q157080
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -80,3 +82,5 @@ permalink: /kb/157/Q157080/
 	
 	=============================================================================
 	
+
+{% endraw %}

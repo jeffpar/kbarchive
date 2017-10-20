@@ -6,6 +6,8 @@ permalink: /kb/197/Q197258/
 
 ## Q197258: XFOR: cc:Mail Dirsync Fails When PO Contain Extended Characters
 
+{% raw %}
+
 	Article: Q197258
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -59,3 +61,5 @@ permalink: /kb/197/Q197258/
 	
 	=============================================================================
 	
+
+{% endraw %}

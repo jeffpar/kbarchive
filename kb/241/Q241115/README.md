@@ -6,6 +6,8 @@ permalink: /kb/241/Q241115/
 
 ## Q241115: DHCP Client Sends NetBIOS Name Instead of Host Name
 
+{% raw %}
+
 	Article: Q241115
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -51,3 +53,5 @@ permalink: /kb/241/Q241115/
 	
 	=============================================================================
 	
+
+{% endraw %}

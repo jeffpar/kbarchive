@@ -6,6 +6,8 @@ permalink: /kb/241/Q241732/
 
 ## Q241732: Error Message Is Displayed in Terminal Server Audit Log
 
+{% raw %}
+
 	Article: Q241732
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4
@@ -60,3 +62,5 @@ permalink: /kb/241/Q241732/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/201/Q201339/
 
 ## Q201339: Unable to Multilink Using Third-Party Authentication Schemes
 
+{% raw %}
+
 	Article: Q201339
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/201/Q201339/
 	
 	=============================================================================
 	
+
+{% endraw %}

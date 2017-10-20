@@ -6,6 +6,8 @@ permalink: /kb/199/Q199329/
 
 ## Q199329: SMS: &quot;Machine Merge Failed&quot;  when Attempting to Merge History
 
+{% raw %}
+
 	Article: Q199329
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -57,3 +59,5 @@ permalink: /kb/199/Q199329/
 	
 	=============================================================================
 	
+
+{% endraw %}

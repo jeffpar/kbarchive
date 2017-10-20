@@ -6,6 +6,8 @@ permalink: /kb/080/Q80946/
 
 ## Q80946: RoEdit.exe Implements Read-Only Edit Control in Windows
 
+{% raw %}
+
 	Article: Q80946
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -122,3 +124,5 @@ permalink: /kb/080/Q80946/
 	
 	=============================================================================
 	
+
+{% endraw %}

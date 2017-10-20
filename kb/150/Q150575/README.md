@@ -6,6 +6,8 @@ permalink: /kb/150/Q150575/
 
 ## Q150575: HOWTO: Set Up a TCP/IP Peer-to-Peer Network Connection
 
+{% raw %}
+
 	Article: Q150575
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -235,3 +237,5 @@ permalink: /kb/150/Q150575/
 	
 	=============================================================================
 	
+
+{% endraw %}

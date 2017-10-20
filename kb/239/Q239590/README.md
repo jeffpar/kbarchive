@@ -6,6 +6,8 @@ permalink: /kb/239/Q239590/
 
 ## Q239590: SMS: SMSCliToknAcct Connection Attempts to Mapped Drives in Path
 
+{% raw %}
+
 	Article: Q239590
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -111,3 +113,5 @@ permalink: /kb/239/Q239590/
 	
 	=============================================================================
 	
+
+{% endraw %}

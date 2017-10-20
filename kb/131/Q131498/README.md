@@ -6,6 +6,8 @@ permalink: /kb/131/Q131498/
 
 ## Q131498: DLL with PROGRAM Statement Fails to Load
 
+{% raw %}
+
 	Article: Q131498
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.1
@@ -87,3 +89,5 @@ permalink: /kb/131/Q131498/
 	
 	=============================================================================
 	
+
+{% endraw %}

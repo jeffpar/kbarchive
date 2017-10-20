@@ -6,6 +6,8 @@ permalink: /kb/038/Q38669/
 
 ## Q38669: Mac DOS: Incompatible with Phoenix BIOS Ver. 2.72 or Earlier
 
+{% raw %}
+
 	Article: Q38669
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.37,2.0,3.0
@@ -41,3 +43,5 @@ permalink: /kb/038/Q38669/
 	
 	=============================================================================
 	
+
+{% endraw %}

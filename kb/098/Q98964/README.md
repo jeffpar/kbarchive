@@ -6,6 +6,8 @@ permalink: /kb/098/Q98964/
 
 ## Q98964: Mac RSC: Common Problems and Solutions with Remote Server
 
+{% raw %}
+
 	Article: Q98964
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -121,3 +123,5 @@ permalink: /kb/098/Q98964/
 	
 	=============================================================================
 	
+
+{% endraw %}

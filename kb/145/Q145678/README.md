@@ -6,6 +6,8 @@ permalink: /kb/145/Q145678/
 
 ## Q145678: PRB: WIDTH # Statement Raises Error in Visual Basic 4.0
 
+{% raw %}
+
 	Article: Q145678
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/145/Q145678/
 	
 	=============================================================================
 	
+
+{% endraw %}

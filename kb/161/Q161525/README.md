@@ -6,6 +6,8 @@ permalink: /kb/161/Q161525/
 
 ## Q161525: WD97: Can't Distinguish AutoSummary Text from Highlighted Text
 
+{% raw %}
+
 	Article: Q161525
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/161/Q161525/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172817/
 
 ## Q172817: SNATRACE Unable to Purge Trace Files on Remote System
 
+{% raw %}
+
 	Article: Q172817
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -62,3 +64,5 @@ permalink: /kb/172/Q172817/
 	
 	=============================================================================
 	
+
+{% endraw %}

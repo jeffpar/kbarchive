@@ -6,6 +6,8 @@ permalink: /kb/151/Q151211/
 
 ## Q151211: Nested Batch Files in Logon Script Hangs at Execution
 
+{% raw %}
+
 	Article: Q151211
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51 WFW:3.11 Win95
@@ -86,3 +88,5 @@ permalink: /kb/151/Q151211/
 	
 	=============================================================================
 	
+
+{% endraw %}

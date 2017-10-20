@@ -6,6 +6,8 @@ permalink: /kb/031/Q31537/
 
 ## Q31537: MASM 5.10 EXT.DOC: CopyLine - Copies Lines from File to File
 
+{% raw %}
+
 	Article: Q31537
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -35,3 +37,5 @@ permalink: /kb/031/Q31537/
 	void pascal CopyLine (pFileSrc, pFileDst, yStart, yEnd, yDst)
 	PFILE pFileSrc, pFileDst;
 	LINE yStart, yEnd, yDst;
+
+{% endraw %}

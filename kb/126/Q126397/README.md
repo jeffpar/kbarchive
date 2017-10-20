@@ -6,6 +6,8 @@ permalink: /kb/126/Q126397/
 
 ## Q126397: SNA Server Installation Guidelines (DC or Member Server)
 
+{% raw %}
+
 	Article: Q126397
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0,4.0 SP1
@@ -76,3 +78,5 @@ permalink: /kb/126/Q126397/
 	
 	=============================================================================
 	
+
+{% endraw %}

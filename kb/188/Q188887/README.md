@@ -6,6 +6,8 @@ permalink: /kb/188/Q188887/
 
 ## Q188887: HOWTO: How to Display Print Preview in a Top-Level Form
 
+{% raw %}
+
 	Article: Q188887
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -141,3 +143,5 @@ permalink: /kb/188/Q188887/
 	
 	=============================================================================
 	
+
+{% endraw %}

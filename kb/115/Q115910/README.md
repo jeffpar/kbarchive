@@ -6,6 +6,8 @@ permalink: /kb/115/Q115910/
 
 ## Q115910: Moving Windows TrueType Fonts to Another Directory
 
+{% raw %}
+
 	Article: Q115910
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -94,3 +96,5 @@ permalink: /kb/115/Q115910/
 	
 	=============================================================================
 	
+
+{% endraw %}

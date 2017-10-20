@@ -6,6 +6,8 @@ permalink: /kb/186/Q186009/
 
 ## Q186009: PRB: Errors Starting the Coverage Profiler
 
+{% raw %}
+
 	Article: Q186009
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -157,3 +159,5 @@ permalink: /kb/186/Q186009/
 	
 	=============================================================================
 	
+
+{% endraw %}

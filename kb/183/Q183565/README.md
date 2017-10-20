@@ -6,6 +6,8 @@ permalink: /kb/183/Q183565/
 
 ## Q183565: Underlyingvalue Property Incorrect for Certain Characters
 
+{% raw %}
+
 	Article: Q183565
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -61,3 +63,5 @@ permalink: /kb/183/Q183565/
 	
 	=============================================================================
 	
+
+{% endraw %}

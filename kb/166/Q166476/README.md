@@ -6,6 +6,8 @@ permalink: /kb/166/Q166476/
 
 ## Q166476: Can't Index Embedded Objects in PowerPoint Slideshow
 
+{% raw %}
+
 	Article: Q166476
 	Product(s): Internet Information Server
 	Version(s): 1.1
@@ -78,3 +80,5 @@ permalink: /kb/166/Q166476/
 	
 	=============================================================================
 	
+
+{% endraw %}

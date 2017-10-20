@@ -6,6 +6,8 @@ permalink: /kb/082/Q82175/
 
 ## Q82175: Applications Appearing in Windows 3.1 APPS.HLP (D-M)
 
+{% raw %}
+
 	Article: Q82175
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -133,3 +135,5 @@ permalink: /kb/082/Q82175/
 	
 	=============================================================================
 	
+
+{% endraw %}

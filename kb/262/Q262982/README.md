@@ -6,6 +6,8 @@ permalink: /kb/262/Q262982/
 
 ## Q262982: XCON: In Multiple Domain Setups NDRs All Originate from 1 Domain
 
+{% raw %}
+
 	Article: Q262982
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -60,3 +62,5 @@ permalink: /kb/262/Q262982/
 	
 	=============================================================================
 	
+
+{% endraw %}

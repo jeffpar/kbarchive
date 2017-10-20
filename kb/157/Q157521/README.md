@@ -6,6 +6,8 @@ permalink: /kb/157/Q157521/
 
 ## Q157521: WD97: Agenda Wizard Table Cells Misaligned
 
+{% raw %}
+
 	Article: Q157521
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/157/Q157521/
 	
 	=============================================================================
 	
+
+{% endraw %}

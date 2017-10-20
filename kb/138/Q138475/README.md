@@ -6,6 +6,8 @@ permalink: /kb/138/Q138475/
 
 ## Q138475: HOWTO: Set Up Multiple Check Outs on a Project Basis
 
+{% raw %}
+
 	Article: Q138475
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/138/Q138475/
 	
 	=============================================================================
 	
+
+{% endraw %}

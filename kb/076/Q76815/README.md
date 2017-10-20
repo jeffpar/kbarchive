@@ -6,6 +6,8 @@ permalink: /kb/076/Q76815/
 
 ## Q76815: No Multimedia Features in Real Mode with Multimedia Windows
 
+{% raw %}
+
 	Article: Q76815
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -35,3 +37,5 @@ permalink: /kb/076/Q76815/
 	
 	=============================================================================
 	
+
+{% endraw %}

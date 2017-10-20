@@ -6,6 +6,8 @@ permalink: /kb/145/Q145873/
 
 ## Q145873: Copying/Pasting Appointment Inherits New Appt. Time
 
+{% raw %}
+
 	Article: Q145873
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0
@@ -46,3 +48,5 @@ permalink: /kb/145/Q145873/
 	
 	=============================================================================
 	
+
+{% endraw %}

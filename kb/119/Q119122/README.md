@@ -6,6 +6,8 @@ permalink: /kb/119/Q119122/
 
 ## Q119122: WD97: Changing the Calendar Wizard Document Formatting
 
+{% raw %}
+
 	Article: Q119122
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -149,3 +151,5 @@ permalink: /kb/119/Q119122/
 	
 	=============================================================================
 	
+
+{% endraw %}

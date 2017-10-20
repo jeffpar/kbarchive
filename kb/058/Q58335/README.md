@@ -6,6 +6,8 @@ permalink: /kb/058/Q58335/
 
 ## Q58335: Windows 3.0 WIN.INI &#91;fonts&#93; Section
 
+{% raw %}
+
 	Article: Q58335
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -55,3 +57,5 @@ permalink: /kb/058/Q58335/
 	
 	=============================================================================
 	
+
+{% endraw %}

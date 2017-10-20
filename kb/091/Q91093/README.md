@@ -6,6 +6,8 @@ permalink: /kb/091/Q91093/
 
 ## Q91093: Quattro Pro 4.0 and NetWare Printing under WFWG
 
+{% raw %}
+
 	Article: Q91093
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -41,3 +43,5 @@ permalink: /kb/091/Q91093/
 	
 	=============================================================================
 	
+
+{% endraw %}

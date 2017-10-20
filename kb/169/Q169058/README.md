@@ -6,6 +6,8 @@ permalink: /kb/169/Q169058/
 
 ## Q169058: OFF97: IPF in Module KERNEL32.DLL Saving File with Long Name
 
+{% raw %}
+
 	Article: Q169058
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/169/Q169058/
 	
 	=============================================================================
 	
+
+{% endraw %}

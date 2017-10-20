@@ -6,6 +6,8 @@ permalink: /kb/257/Q257618/
 
 ## Q257618: XCON: Exchange Server IMC, Internet Mail Service Build Numbers
 
+{% raw %}
+
 	Article: Q257618
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -82,3 +84,5 @@ permalink: /kb/257/Q257618/
 	
 	=============================================================================
 	
+
+{% endraw %}

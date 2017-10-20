@@ -6,6 +6,8 @@ permalink: /kb/165/Q165113/
 
 ## Q165113: XCLN: Deliver Now from Client Counts Every Message
 
+{% raw %}
+
 	Article: Q165113
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -114,3 +116,5 @@ permalink: /kb/165/Q165113/
 	
 	=============================================================================
 	
+
+{% endraw %}

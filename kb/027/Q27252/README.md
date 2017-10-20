@@ -6,6 +6,8 @@ permalink: /kb/027/Q27252/
 
 ## Q27252: QuickBASIC Versions 3.00, 4.00, 4.50 Patch for IBM PCjr
 
+{% raw %}
+
 	Article: Q27252
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -46,3 +48,5 @@ permalink: /kb/027/Q27252/
 	on the PCjr, not by Microsoft. Microsoft gives the above references to
 	individuals in need of the patch, but in no way supports or guarantees
 	the patch.
+
+{% endraw %}

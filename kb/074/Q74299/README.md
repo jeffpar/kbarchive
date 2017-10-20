@@ -6,6 +6,8 @@ permalink: /kb/074/Q74299/
 
 ## Q74299: INFO: Calculating The Logical Height and Point Size of a Font
 
+{% raw %}
+
 	Article: Q74299
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -100,3 +102,5 @@ permalink: /kb/074/Q74299/
 	
 	=============================================================================
 	
+
+{% endraw %}

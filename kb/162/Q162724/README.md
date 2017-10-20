@@ -6,6 +6,8 @@ permalink: /kb/162/Q162724/
 
 ## Q162724: Golf 3.0: &quot;Illegal Player&quot; Listed as a Player Name
 
+{% raw %}
+
 	Article: Q162724
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:3.0
@@ -69,3 +71,5 @@ permalink: /kb/162/Q162724/
 	
 	=============================================================================
 	
+
+{% endraw %}

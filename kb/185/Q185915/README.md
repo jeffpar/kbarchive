@@ -6,6 +6,8 @@ permalink: /kb/185/Q185915/
 
 ## Q185915: SMS: Background Bitmaps Slow WinNT Remote Control Performance
 
+{% raw %}
+
 	Article: Q185915
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -62,3 +64,5 @@ permalink: /kb/185/Q185915/
 	
 	=============================================================================
 	
+
+{% endraw %}

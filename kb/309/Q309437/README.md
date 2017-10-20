@@ -6,6 +6,8 @@ permalink: /kb/309/Q309437/
 
 ## Q309437: SMS: Clients Do Not Work on Windows NT 4.0 Terminal Server
 
+{% raw %}
+
 	Article: Q309437
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -207,3 +209,5 @@ permalink: /kb/309/Q309437/
 	
 	=============================================================================
 	
+
+{% endraw %}

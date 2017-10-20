@@ -6,6 +6,8 @@ permalink: /kb/156/Q156760/
 
 ## Q156760: STL Sample for deque::front and deque::back Functions
 
+{% raw %}
+
 	Article: Q156760
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -165,3 +167,5 @@ permalink: /kb/156/Q156760/
 	
 	=============================================================================
 	
+
+{% endraw %}

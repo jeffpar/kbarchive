@@ -6,6 +6,8 @@ permalink: /kb/149/Q149144/
 
 ## Q149144: BUG: Space or Tab Preceding !MS&#36;NOFREEFORM in Free-Form Source
 
+{% raw %}
+
 	Article: Q149144
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -64,3 +66,5 @@ permalink: /kb/149/Q149144/
 	
 	=============================================================================
 	
+
+{% endraw %}

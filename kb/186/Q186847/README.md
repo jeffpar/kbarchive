@@ -6,6 +6,8 @@ permalink: /kb/186/Q186847/
 
 ## Q186847: WD97: Unicode Characters Converted Incorrectly
 
+{% raw %}
+
 	Article: Q186847
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -89,3 +91,5 @@ permalink: /kb/186/Q186847/
 	
 	=============================================================================
 	
+
+{% endraw %}

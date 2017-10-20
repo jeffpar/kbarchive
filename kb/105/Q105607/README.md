@@ -6,6 +6,8 @@ permalink: /kb/105/Q105607/
 
 ## Q105607: Files Located in 1MSDOS62.EXE and 2MSDOS62.EXE
 
+{% raw %}
+
 	Article: Q105607
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -112,3 +114,5 @@ permalink: /kb/105/Q105607/
 	
 	=============================================================================
 	
+
+{% endraw %}

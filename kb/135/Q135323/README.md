@@ -6,6 +6,8 @@ permalink: /kb/135/Q135323/
 
 ## Q135323: PPT7: Computer Appears to Hang if You Post Message to Exchange
 
+{% raw %}
+
 	Article: Q135323
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -54,3 +56,5 @@ permalink: /kb/135/Q135323/
 	
 	=============================================================================
 	
+
+{% endraw %}

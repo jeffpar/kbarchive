@@ -6,6 +6,8 @@ permalink: /kb/291/Q291832/
 
 ## Q291832: Customers Do Not Receive E-mail From MSN.com Or Hotmail.com Doma
 
+{% raw %}
+
 	Article: Q291832
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/291/Q291832/
 	
 	=============================================================================
 	
+
+{% endraw %}

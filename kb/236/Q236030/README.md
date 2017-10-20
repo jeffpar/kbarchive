@@ -6,6 +6,8 @@ permalink: /kb/236/Q236030/
 
 ## Q236030: PCI Video Adapter May Not Function on Secondary PCI Bus
 
+{% raw %}
+
 	Article: Q236030
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:2000; winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/236/Q236030/
 	
 	=============================================================================
 	
+
+{% endraw %}

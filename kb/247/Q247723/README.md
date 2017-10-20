@@ -6,6 +6,8 @@ permalink: /kb/247/Q247723/
 
 ## Q247723: BUG: VBCE Control Manager Only Recognizes First Control in DLL
 
+{% raw %}
+
 	Article: Q247723
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0,2.11,6.0
@@ -106,3 +108,5 @@ permalink: /kb/247/Q247723/
 	
 	=============================================================================
 	
+
+{% endraw %}

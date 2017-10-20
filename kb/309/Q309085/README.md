@@ -6,6 +6,8 @@ permalink: /kb/309/Q309085/
 
 ## Q309085: InetInfo AV When Using OLE DB Provider and Linked Server
 
+{% raw %}
+
 	Article: Q309085
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/309/Q309085/
 	
 	=============================================================================
 	
+
+{% endraw %}

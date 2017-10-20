@@ -6,6 +6,8 @@ permalink: /kb/172/Q172003/
 
 ## Q172003: Macintosh Change Password Fails on Down Trusted Domain PDC
 
+{% raw %}
+
 	Article: Q172003
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -90,3 +92,5 @@ permalink: /kb/172/Q172003/
 	
 	=============================================================================
 	
+
+{% endraw %}

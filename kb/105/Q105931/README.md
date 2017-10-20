@@ -6,6 +6,8 @@ permalink: /kb/105/Q105931/
 
 ## Q105931: PC WRmt: Problems with Extended Characters
 
+{% raw %}
+
 	Article: Q105931
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -43,3 +45,5 @@ permalink: /kb/105/Q105931/
 	
 	=============================================================================
 	
+
+{% endraw %}

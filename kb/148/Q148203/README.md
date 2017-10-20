@@ -6,6 +6,8 @@ permalink: /kb/148/Q148203/
 
 ## Q148203: BUG: Passing LOC() Intrinsic Result to C Function Fails
 
+{% raw %}
+
 	Article: Q148203
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -107,3 +109,5 @@ permalink: /kb/148/Q148203/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/138/Q138498/
 
 ## Q138498: How to Use Additem and AddListItem and How They Are Different
 
+{% raw %}
+
 	Article: Q138498
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -173,3 +175,5 @@ permalink: /kb/138/Q138498/
 	
 	=============================================================================
 	
+
+{% endraw %}

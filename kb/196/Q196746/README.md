@@ -6,6 +6,8 @@ permalink: /kb/196/Q196746/
 
 ## Q196746: Dr. Watson Error Occurs Starting Virtual Globe 99
 
+{% raw %}
+
 	Article: Q196746
 	Product(s): Microsoft Windows NT
 	Version(s): Windows:1.0; WinNT:4.0
@@ -86,3 +88,5 @@ permalink: /kb/196/Q196746/
 	
 	=============================================================================
 	
+
+{% endraw %}

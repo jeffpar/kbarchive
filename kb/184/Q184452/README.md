@@ -6,6 +6,8 @@ permalink: /kb/184/Q184452/
 
 ## Q184452: IE Training Kit: Chapter 10 Lab Files Not On CD-ROM
 
+{% raw %}
+
 	Article: Q184452
 	Product(s): Microsoft Press
 	Version(s): 
@@ -113,3 +115,5 @@ permalink: /kb/184/Q184452/
 	
 	=============================================================================
 	
+
+{% endraw %}

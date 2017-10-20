@@ -6,6 +6,8 @@ permalink: /kb/035/Q35499/
 
 ## Q35499: Expand.exe Expands the Size of a Dialog Box
 
+{% raw %}
+
 	Article: Q35499
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -88,3 +90,5 @@ permalink: /kb/035/Q35499/
 	
 	=============================================================================
 	
+
+{% endraw %}

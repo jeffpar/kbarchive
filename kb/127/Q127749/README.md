@@ -6,6 +6,8 @@ permalink: /kb/127/Q127749/
 
 ## Q127749: MSB Solar: Sounds Echo with Mitsumi CD in Windows NT 3.5
 
+{% raw %}
+
 	Article: Q127749
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/127/Q127749/
 	
 	=============================================================================
 	
+
+{% endraw %}

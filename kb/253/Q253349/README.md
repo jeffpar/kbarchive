@@ -6,6 +6,8 @@ permalink: /kb/253/Q253349/
 
 ## Q253349: XCON: Response Files from GroupWise Are Put in Badfiles Folder
 
+{% raw %}
+
 	Article: Q253349
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/253/Q253349/
 	
 	=============================================================================
 	
+
+{% endraw %}

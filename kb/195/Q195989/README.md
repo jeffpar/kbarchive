@@ -6,6 +6,8 @@ permalink: /kb/195/Q195989/
 
 ## Q195989: WD97: How to Create Envelopes Using Mail Merge
 
+{% raw %}
+
 	Article: Q195989
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -228,3 +230,5 @@ permalink: /kb/195/Q195989/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167619/
 
 ## Q167619: WD97: Web Address Is Cut Off in Web Toolbar
 
+{% raw %}
+
 	Article: Q167619
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/167/Q167619/
 	
 	=============================================================================
 	
+
+{% endraw %}

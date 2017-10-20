@@ -6,6 +6,8 @@ permalink: /kb/148/Q148968/
 
 ## Q148968: Compaq Proliant May Save Corrupted Memory.dmp When Crashing
 
+{% raw %}
+
 	Article: Q148968
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -76,3 +78,5 @@ permalink: /kb/148/Q148968/
 	
 	=============================================================================
 	
+
+{% endraw %}

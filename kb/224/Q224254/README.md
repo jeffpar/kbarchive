@@ -6,6 +6,8 @@ permalink: /kb/224/Q224254/
 
 ## Q224254: S&amp;T 2000: &quot;Construction Out of Date&quot; Message Remains on Screen
 
+{% raw %}
+
 	Article: Q224254
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -63,3 +65,5 @@ permalink: /kb/224/Q224254/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163330/
 
 ## Q163330: XCLN: Using Open Transport 1.1.2 and MacPPP for the Mac Client
 
+{% raw %}
+
 	Article: Q163330
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0,8.1,8.2; WINDOWS:4.0,5.0
@@ -269,3 +271,5 @@ permalink: /kb/163/Q163330/
 	
 	=============================================================================
 	
+
+{% endraw %}

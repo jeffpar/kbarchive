@@ -6,6 +6,8 @@ permalink: /kb/148/Q148254/
 
 ## Q148254: Art Gallery: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148254
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.00
@@ -59,3 +61,5 @@ permalink: /kb/148/Q148254/
 	
 	=============================================================================
 	
+
+{% endraw %}

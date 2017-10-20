@@ -6,6 +6,8 @@ permalink: /kb/169/Q169298/
 
 ## Q169298: Canceling Routing and RAS Install Does Not Restore Oemnsvra.inf
 
+{% raw %}
+
 	Article: Q169298
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/169/Q169298/
 	
 	=============================================================================
 	
+
+{% endraw %}

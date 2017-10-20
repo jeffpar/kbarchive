@@ -6,6 +6,8 @@ permalink: /kb/191/Q191868/
 
 ## Q191868: Runtime Error 1205; CedarBank VBClient in DCOM Environment
 
+{% raw %}
+
 	Article: Q191868
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -91,3 +93,5 @@ permalink: /kb/191/Q191868/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185773/
 
 ## Q185773: NTFS Corruption on Drives &gt; 4 GB Using ExtendOEMPartition
 
+{% raw %}
+
 	Article: Q185773
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -246,3 +248,5 @@ permalink: /kb/185/Q185773/
 	
 	=============================================================================
 	
+
+{% endraw %}

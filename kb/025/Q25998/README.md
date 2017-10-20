@@ -6,6 +6,8 @@ permalink: /kb/025/Q25998/
 
 ## Q25998: &quot;Duplicate Definition&quot; with Same Name of SUBprogram, Variable
 
+{% raw %}
+
 	Article: Q25998
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -35,3 +37,5 @@ permalink: /kb/025/Q25998/
 	SUB abc STATIC
 	PRINT "hello"
 	END SUB
+
+{% endraw %}

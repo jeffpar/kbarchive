@@ -6,6 +6,8 @@ permalink: /kb/147/Q147148/
 
 ## Q147148: XCLN: Missing Inbox, Outbox, and Sent Items Folder in Exchange
 
+{% raw %}
+
 	Article: Q147148
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -60,3 +62,5 @@ permalink: /kb/147/Q147148/
 	
 	=============================================================================
 	
+
+{% endraw %}

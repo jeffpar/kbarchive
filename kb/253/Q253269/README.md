@@ -6,6 +6,8 @@ permalink: /kb/253/Q253269/
 
 ## Q253269: PRB: Access Denied When You Try to Debug a WebClass Application
 
+{% raw %}
+
 	Article: Q253269
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -50,3 +52,5 @@ permalink: /kb/253/Q253269/
 	
 	=============================================================================
 	
+
+{% endraw %}

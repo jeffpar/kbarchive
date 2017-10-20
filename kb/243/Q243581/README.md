@@ -6,6 +6,8 @@ permalink: /kb/243/Q243581/
 
 ## Q243581: XADM: Information Store Uses Large Amount of Processor Time
 
+{% raw %}
+
 	Article: Q243581
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -96,3 +98,5 @@ permalink: /kb/243/Q243581/
 	
 	=============================================================================
 	
+
+{% endraw %}

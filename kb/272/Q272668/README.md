@@ -6,6 +6,8 @@ permalink: /kb/272/Q272668/
 
 ## Q272668: Golf 2001: Game Does Not Start
 
+{% raw %}
+
 	Article: Q272668
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -77,3 +79,5 @@ permalink: /kb/272/Q272668/
 	
 	=============================================================================
 	
+
+{% endraw %}

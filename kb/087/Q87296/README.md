@@ -6,6 +6,8 @@ permalink: /kb/087/Q87296/
 
 ## Q87296: Microsoft Write: Incorrect Page Breaks on Panasonic Printer
 
+{% raw %}
+
 	Article: Q87296
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -56,3 +58,5 @@ permalink: /kb/087/Q87296/
 	
 	=============================================================================
 	
+
+{% endraw %}

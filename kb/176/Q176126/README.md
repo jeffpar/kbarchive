@@ -6,6 +6,8 @@ permalink: /kb/176/Q176126/
 
 ## Q176126: XCON: No NDR When You Send Message to Invalid OR Address
 
+{% raw %}
+
 	Article: Q176126
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -74,3 +76,5 @@ permalink: /kb/176/Q176126/
 	
 	=============================================================================
 	
+
+{% endraw %}

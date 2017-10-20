@@ -6,6 +6,8 @@ permalink: /kb/131/Q131520/
 
 ## Q131520: Err Msg &quot;The Mailbox Name or Password Is Incorrect&quot; in Mail
 
+{% raw %}
+
 	Article: Q131520
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/131/Q131520/
 	
 	=============================================================================
 	
+
+{% endraw %}

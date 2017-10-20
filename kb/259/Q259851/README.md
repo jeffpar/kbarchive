@@ -6,6 +6,8 @@ permalink: /kb/259/Q259851/
 
 ## Q259851: XADM: Ramifications of Running ESEUTIL /P or EDBUTIL /D /R
 
+{% raw %}
+
 	Article: Q259851
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -172,3 +174,5 @@ permalink: /kb/259/Q259851/
 	
 	=============================================================================
 	
+
+{% endraw %}

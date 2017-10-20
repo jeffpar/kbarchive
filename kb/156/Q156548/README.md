@@ -6,6 +6,8 @@ permalink: /kb/156/Q156548/
 
 ## Q156548: HOWTO: Use the Object Property to Reference Methods/Properties
 
+{% raw %}
+
 	Article: Q156548
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/156/Q156548/
 	
 	=============================================================================
 	
+
+{% endraw %}

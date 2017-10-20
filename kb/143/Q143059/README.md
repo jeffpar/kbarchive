@@ -6,6 +6,8 @@ permalink: /kb/143/Q143059/
 
 ## Q143059: Network Client 3.0 Removes Most Recent Persistent Connection
 
+{% raw %}
+
 	Article: Q143059
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -47,3 +49,5 @@ permalink: /kb/143/Q143059/
 	
 	=============================================================================
 	
+
+{% endraw %}

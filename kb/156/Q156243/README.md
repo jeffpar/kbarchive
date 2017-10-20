@@ -6,6 +6,8 @@ permalink: /kb/156/Q156243/
 
 ## Q156243: PRB: Closing SDI Form with Menu Causes Objects to Shift Upward
 
+{% raw %}
+
 	Article: Q156243
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -121,3 +123,5 @@ permalink: /kb/156/Q156243/
 	
 	=============================================================================
 	
+
+{% endraw %}

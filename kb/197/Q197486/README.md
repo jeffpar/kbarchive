@@ -6,6 +6,8 @@ permalink: /kb/197/Q197486/
 
 ## Q197486: PRB: Open Fails w/ Error #75 on Windows95 Read-Only Shared File
 
+{% raw %}
+
 	Article: Q197486
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -171,3 +173,5 @@ permalink: /kb/197/Q197486/
 	
 	=============================================================================
 	
+
+{% endraw %}

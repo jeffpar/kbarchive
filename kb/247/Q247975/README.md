@@ -6,6 +6,8 @@ permalink: /kb/247/Q247975/
 
 ## Q247975: Strong Passwords May Contain Parts of the Full Name
 
+{% raw %}
+
 	Article: Q247975
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -81,3 +83,5 @@ permalink: /kb/247/Q247975/
 	
 	=============================================================================
 	
+
+{% endraw %}

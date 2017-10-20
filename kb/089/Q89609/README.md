@@ -6,6 +6,8 @@ permalink: /kb/089/Q89609/
 
 ## Q89609: Application Execution Error with AMI BIOS Fast A20
 
+{% raw %}
+
 	Article: Q89609
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -63,3 +65,5 @@ permalink: /kb/089/Q89609/
 	
 	=============================================================================
 	
+
+{% endraw %}

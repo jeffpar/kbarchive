@@ -6,6 +6,8 @@ permalink: /kb/159/Q159021/
 
 ## Q159021: NBA Full Court Press: Player Stats Not Displayed
 
+{% raw %}
+
 	Article: Q159021
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -75,3 +77,5 @@ permalink: /kb/159/Q159021/
 	
 	=============================================================================
 	
+
+{% endraw %}

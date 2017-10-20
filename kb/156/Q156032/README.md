@@ -6,6 +6,8 @@ permalink: /kb/156/Q156032/
 
 ## Q156032: PRB: Position of @...SAYs Incorrect When Printing in Raw Mode
 
+{% raw %}
+
 	Article: Q156032
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6a,3.0,3.0b
@@ -140,3 +142,5 @@ permalink: /kb/156/Q156032/
 	
 	=============================================================================
 	
+
+{% endraw %}

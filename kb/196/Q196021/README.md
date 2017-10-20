@@ -6,6 +6,8 @@ permalink: /kb/196/Q196021/
 
 ## Q196021: Windows NT 4.0 SP4 Does Not Update MTS Files
 
+{% raw %}
+
 	Article: Q196021
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP4
@@ -118,3 +120,5 @@ permalink: /kb/196/Q196021/
 	
 	=============================================================================
 	
+
+{% endraw %}

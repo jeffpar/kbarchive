@@ -6,6 +6,8 @@ permalink: /kb/200/Q200430/
 
 ## Q200430: SMS: Explanations of Remote Control Screen Acceleration
 
+{% raw %}
+
 	Article: Q200430
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -120,3 +122,5 @@ permalink: /kb/200/Q200430/
 	
 	=============================================================================
 	
+
+{% endraw %}

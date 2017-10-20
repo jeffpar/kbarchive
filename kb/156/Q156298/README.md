@@ -6,6 +6,8 @@ permalink: /kb/156/Q156298/
 
 ## Q156298: FIX: Error on Disconnecting from ODBC Desktop Drivers
 
+{% raw %}
+
 	Article: Q156298
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 3.4
@@ -54,3 +56,5 @@ permalink: /kb/156/Q156298/
 	
 	=============================================================================
 	
+
+{% endraw %}

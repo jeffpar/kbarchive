@@ -6,6 +6,8 @@ permalink: /kb/157/Q157930/
 
 ## Q157930: Multiple DNS Server Addresses Not Assigned Properly with DHCP
 
+{% raw %}
+
 	Article: Q157930
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/157/Q157930/
 	
 	=============================================================================
 	
+
+{% endraw %}

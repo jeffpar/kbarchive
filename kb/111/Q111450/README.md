@@ -6,6 +6,8 @@ permalink: /kb/111/Q111450/
 
 ## Q111450: Two Token Ring Adapters Forces Source Routing on Both Adapters
 
+{% raw %}
+
 	Article: Q111450
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -48,3 +50,5 @@ permalink: /kb/111/Q111450/
 	
 	=============================================================================
 	
+
+{% endraw %}

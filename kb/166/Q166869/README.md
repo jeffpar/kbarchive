@@ -6,6 +6,8 @@ permalink: /kb/166/Q166869/
 
 ## Q166869: XADM: EDBUTIL Uses Exchange Bin Directory for Tempdfrg.edb
 
+{% raw %}
+
 	Article: Q166869
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -59,3 +61,5 @@ permalink: /kb/166/Q166869/
 	
 	=============================================================================
 	
+
+{% endraw %}

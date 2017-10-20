@@ -6,6 +6,8 @@ permalink: /kb/243/Q243981/
 
 ## Q243981: FS 2000: Troubleshooting Joystick Problems (Part 1)
 
+{% raw %}
+
 	Article: Q243981
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -479,3 +481,5 @@ permalink: /kb/243/Q243981/
 	
 	=============================================================================
 	
+
+{% endraw %}

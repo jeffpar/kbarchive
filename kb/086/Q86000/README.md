@@ -6,6 +6,8 @@ permalink: /kb/086/Q86000/
 
 ## Q86000: PC Win: Err Msg: Are You Sure You Want to Remove...
 
+{% raw %}
+
 	Article: Q86000
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -51,3 +53,5 @@ permalink: /kb/086/Q86000/
 	
 	=============================================================================
 	
+
+{% endraw %}

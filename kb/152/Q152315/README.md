@@ -6,6 +6,8 @@ permalink: /kb/152/Q152315/
 
 ## Q152315: PRB: When to Call AfxDaoTerm() in an Automation Server
 
+{% raw %}
+
 	Article: Q152315
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS NT: 4.0 4.1 4.2 4.2b 5.0
@@ -94,3 +96,5 @@ permalink: /kb/152/Q152315/
 	
 	=============================================================================
 	
+
+{% endraw %}

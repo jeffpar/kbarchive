@@ -6,6 +6,8 @@ permalink: /kb/156/Q156385/
 
 ## Q156385: SMS: INVMAC Errors During Initial SMS Inventory
 
+{% raw %}
+
 	Article: Q156385
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -99,3 +101,5 @@ permalink: /kb/156/Q156385/
 	
 	=============================================================================
 	
+
+{% endraw %}

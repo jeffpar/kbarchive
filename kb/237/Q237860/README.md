@@ -6,6 +6,8 @@ permalink: /kb/237/Q237860/
 
 ## Q237860: Search Function on Electronic Version of Book May Fail
 
+{% raw %}
+
 	Article: Q237860
 	Product(s): Microsoft Press
 	Version(s): 
@@ -123,3 +125,5 @@ permalink: /kb/237/Q237860/
 	
 	=============================================================================
 	
+
+{% endraw %}

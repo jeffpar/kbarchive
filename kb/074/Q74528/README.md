@@ -6,6 +6,8 @@ permalink: /kb/074/Q74528/
 
 ## Q74528: INFO: &quot;Power-Friendly&quot; Applications
 
+{% raw %}
+
 	Article: Q74528
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -76,3 +78,5 @@ permalink: /kb/074/Q74528/
 	
 	=============================================================================
 	
+
+{% endraw %}

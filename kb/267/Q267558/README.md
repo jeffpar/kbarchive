@@ -6,6 +6,8 @@ permalink: /kb/267/Q267558/
 
 ## Q267558: SMS: CAPs &amp; DPs Generate Critical Errors on Novell Servers
 
+{% raw %}
+
 	Article: Q267558
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -136,3 +138,5 @@ permalink: /kb/267/Q267558/
 	
 	=============================================================================
 	
+
+{% endraw %}

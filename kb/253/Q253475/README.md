@@ -6,6 +6,8 @@ permalink: /kb/253/Q253475/
 
 ## Q253475: SMCLIENT.EXE: Doesn't Logon to Server
 
+{% raw %}
+
 	Article: Q253475
 	Product(s): Microsoft Press
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/253/Q253475/
 	
 	=============================================================================
 	
+
+{% endraw %}

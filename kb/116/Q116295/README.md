@@ -6,6 +6,8 @@ permalink: /kb/116/Q116295/
 
 ## Q116295: Bookshelf: Pagebreak Inserted When QuickShelf Button Pressed
 
+{% raw %}
+
 	Article: Q116295
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition; WINDOWS:6.0,6.0a,6.0c
@@ -79,3 +81,5 @@ permalink: /kb/116/Q116295/
 	
 	=============================================================================
 	
+
+{% endraw %}

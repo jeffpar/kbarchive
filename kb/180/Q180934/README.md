@@ -6,6 +6,8 @@ permalink: /kb/180/Q180934/
 
 ## Q180934: Windows 3.X Client Environment Variable BackupRemote Is Invalid
 
+{% raw %}
+
 	Article: Q180934
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -42,3 +44,5 @@ permalink: /kb/180/Q180934/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191925/
 
 ## Q191925: Automatic Logon Fails Using 5250 Applet
 
+{% raw %}
+
 	Article: Q191925
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -91,3 +93,5 @@ permalink: /kb/191/Q191925/
 	
 	=============================================================================
 	
+
+{% endraw %}

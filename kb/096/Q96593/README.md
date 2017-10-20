@@ -6,6 +6,8 @@ permalink: /kb/096/Q96593/
 
 ## Q96593: Why DoubleSpace Leaves 2 Megabytes Free on the Host Drive
 
+{% raw %}
+
 	Article: Q96593
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -69,3 +71,5 @@ permalink: /kb/096/Q96593/
 	
 	=============================================================================
 	
+
+{% endraw %}

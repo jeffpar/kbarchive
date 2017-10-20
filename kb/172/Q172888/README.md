@@ -6,6 +6,8 @@ permalink: /kb/172/Q172888/
 
 ## Q172888: PRB: ComCtl32.ocx - The Dependency File is Out of Date
 
+{% raw %}
+
 	Article: Q172888
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -78,3 +80,5 @@ permalink: /kb/172/Q172888/
 	
 	=============================================================================
 	
+
+{% endraw %}

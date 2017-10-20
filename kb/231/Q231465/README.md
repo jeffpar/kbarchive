@@ -6,6 +6,8 @@ permalink: /kb/231/Q231465/
 
 ## Q231465: BUG: WM_MOUSEWHEEL Message Ignored Adding UserControl to Form
 
+{% raw %}
+
 	Article: Q231465
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -160,3 +162,5 @@ permalink: /kb/231/Q231465/
 	
 	=============================================================================
 	
+
+{% endraw %}

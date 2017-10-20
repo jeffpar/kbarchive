@@ -6,6 +6,8 @@ permalink: /kb/165/Q165165/
 
 ## Q165165: Sync Point Applications Now Supported on Windows NT &amp; Windows 95
 
+{% raw %}
+
 	Article: Q165165
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -55,3 +57,5 @@ permalink: /kb/165/Q165165/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178146/
 
 ## Q178146: Access Violation After Shutting Down Server Processes
 
+{% raw %}
+
 	Article: Q178146
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0
@@ -68,3 +70,5 @@ permalink: /kb/178/Q178146/
 	
 	=============================================================================
 	
+
+{% endraw %}

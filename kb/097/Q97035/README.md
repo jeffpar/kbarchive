@@ -6,6 +6,8 @@ permalink: /kb/097/Q97035/
 
 ## Q97035: 4DOS and NDOS are not Fully Compatible with MemMaker
 
+{% raw %}
+
 	Article: Q97035
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -58,3 +60,5 @@ permalink: /kb/097/Q97035/
 	
 	=============================================================================
 	
+
+{% endraw %}

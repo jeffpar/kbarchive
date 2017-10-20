@@ -6,6 +6,8 @@ permalink: /kb/090/Q90784/
 
 ## Q90784: Err Msg: Invalid Device Request Reading Drive...
 
+{% raw %}
+
 	Article: Q90784
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -75,3 +77,5 @@ permalink: /kb/090/Q90784/
 	
 	=============================================================================
 	
+
+{% endraw %}

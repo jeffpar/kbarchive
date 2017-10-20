@@ -6,6 +6,8 @@ permalink: /kb/317/Q317941/
 
 ## Q317941: PRB: FrontPage Web Projects Are Only Partially Under Source Code
 
+{% raw %}
+
 	Article: Q317941
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -119,3 +121,5 @@ permalink: /kb/317/Q317941/
 	
 	=============================================================================
 	
+
+{% endraw %}

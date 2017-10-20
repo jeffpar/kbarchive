@@ -6,6 +6,8 @@ permalink: /kb/030/Q30386/
 
 ## Q30386: .DATA Directive Causes _DATA Segment Not to Align Paragraph
 
+{% raw %}
+
 	Article: Q30386
 	Product(s): See article
 	Version(s): 5.10
@@ -37,3 +39,5 @@ permalink: /kb/030/Q30386/
 	first segment in DGROUP, actually starts at DGROUP:0006. Therefore,
 	the offset of t2 could evaluate to _DATA:0100h. This is equivalent to
 	DGROUP:0106h.
+
+{% endraw %}

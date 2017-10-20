@@ -6,6 +6,8 @@ permalink: /kb/198/Q198604/
 
 ## Q198604: Cannot Change the Default MSN E-mail Program to Outlook 98
 
+{% raw %}
+
 	Article: Q198604
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -65,3 +67,5 @@ permalink: /kb/198/Q198604/
 	
 	=============================================================================
 	
+
+{% endraw %}

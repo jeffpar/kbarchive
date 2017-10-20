@@ -6,6 +6,8 @@ permalink: /kb/236/Q236168/
 
 ## Q236168: XADM: Administrator Able to Change Mailbox Permissions
 
+{% raw %}
+
 	Article: Q236168
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -51,3 +53,5 @@ permalink: /kb/236/Q236168/
 	
 	=============================================================================
 	
+
+{% endraw %}

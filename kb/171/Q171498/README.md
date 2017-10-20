@@ -6,6 +6,8 @@ permalink: /kb/171/Q171498/
 
 ## Q171498: FIX: Screen Turns Black When Compiling
 
+{% raw %}
+
 	Article: Q171498
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -74,3 +76,5 @@ permalink: /kb/171/Q171498/
 	
 	=============================================================================
 	
+
+{% endraw %}

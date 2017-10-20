@@ -6,6 +6,8 @@ permalink: /kb/289/Q289813/
 
 ## Q289813: Mapping Server Displays Incorrect Special Group Error Message
 
+{% raw %}
+
 	Article: Q289813
 	Product(s): Microsoft Windows NT
 	Version(s): 2.0
@@ -59,3 +61,5 @@ permalink: /kb/289/Q289813/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118872/
 
 ## Q118872: Manual Install Instructions for Viewer 2.0
 
+{% raw %}
+
 	Article: Q118872
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 
@@ -363,3 +365,5 @@ permalink: /kb/118/Q118872/
 	
 	=============================================================================
 	
+
+{% endraw %}

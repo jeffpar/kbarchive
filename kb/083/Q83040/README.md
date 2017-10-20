@@ -6,6 +6,8 @@ permalink: /kb/083/Q83040/
 
 ## Q83040: Visual Basic Scroll Thumb Alignment Problem in Windows 3.1
 
+{% raw %}
+
 	Article: Q83040
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -34,3 +36,5 @@ permalink: /kb/083/Q83040/
 	
 	=============================================================================
 	
+
+{% endraw %}

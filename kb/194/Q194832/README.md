@@ -6,6 +6,8 @@ permalink: /kb/194/Q194832/
 
 ## Q194832: FIX: Memo Has Characters Added to Value in Locals/Watch Window
 
+{% raw %}
+
 	Article: Q194832
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -78,3 +80,5 @@ permalink: /kb/194/Q194832/
 	
 	=============================================================================
 	
+
+{% endraw %}

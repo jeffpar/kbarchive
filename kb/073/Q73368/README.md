@@ -6,6 +6,8 @@ permalink: /kb/073/Q73368/
 
 ## Q73368: BUG: H2INC 1.0 Does Not Support _syscall or _stdcall
 
+{% raw %}
+
 	Article: Q73368
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0,6.0a,6.0b
@@ -67,3 +69,5 @@ permalink: /kb/073/Q73368/
 	
 	=============================================================================
 	
+
+{% endraw %}

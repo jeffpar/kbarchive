@@ -6,6 +6,8 @@ permalink: /kb/183/Q183676/
 
 ## Q183676: Window Position of Windisk.exe Causes Access Violation
 
+{% raw %}
+
 	Article: Q183676
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/183/Q183676/
 	
 	=============================================================================
 	
+
+{% endraw %}

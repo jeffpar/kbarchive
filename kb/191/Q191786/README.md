@@ -6,6 +6,8 @@ permalink: /kb/191/Q191786/
 
 ## Q191786: BUG: VisData Error &quot;Importing/exporting Table Names with Spaces&quot;
 
+{% raw %}
+
 	Article: Q191786
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -148,3 +150,5 @@ permalink: /kb/191/Q191786/
 	
 	=============================================================================
 	
+
+{% endraw %}

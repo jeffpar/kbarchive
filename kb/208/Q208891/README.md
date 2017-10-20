@@ -6,6 +6,8 @@ permalink: /kb/208/Q208891/
 
 ## Q208891: MSN Connection Manager Disconnects Modem.
 
+{% raw %}
+
 	Article: Q208891
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,95,98,98 Second Edition
@@ -51,3 +53,5 @@ permalink: /kb/208/Q208891/
 	
 	=============================================================================
 	
+
+{% endraw %}

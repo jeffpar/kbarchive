@@ -6,6 +6,8 @@ permalink: /kb/216/Q216076/
 
 ## Q216076: XADM: Information Store Folders May Become Slow and Unresponsive
 
+{% raw %}
+
 	Article: Q216076
 	Product(s): Microsoft Exchange
 	Version(s): 1.0,1.21,4.0,5.0,5.5
@@ -355,3 +357,5 @@ permalink: /kb/216/Q216076/
 	
 	=============================================================================
 	
+
+{% endraw %}

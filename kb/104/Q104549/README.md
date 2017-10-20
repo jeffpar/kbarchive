@@ -6,6 +6,8 @@ permalink: /kb/104/Q104549/
 
 ## Q104549: Cannot Restore Backup After Upgrading to U.S. Service Pack 2
 
+{% raw %}
+
 	Article: Q104549
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -64,3 +66,5 @@ permalink: /kb/104/Q104549/
 	
 	=============================================================================
 	
+
+{% endraw %}

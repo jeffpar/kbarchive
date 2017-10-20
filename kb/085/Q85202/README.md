@@ -6,6 +6,8 @@ permalink: /kb/085/Q85202/
 
 ## Q85202: INFO: Technical Details of TrueType Fonts
 
+{% raw %}
+
 	Article: Q85202
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:
@@ -52,3 +54,5 @@ permalink: /kb/085/Q85202/
 	
 	=============================================================================
 	
+
+{% endraw %}

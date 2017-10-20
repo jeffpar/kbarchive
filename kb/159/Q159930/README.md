@@ -6,6 +6,8 @@ permalink: /kb/159/Q159930/
 
 ## Q159930: Event ID 534 In The Security Log
 
+{% raw %}
+
 	Article: Q159930
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -57,3 +59,5 @@ permalink: /kb/159/Q159930/
 	
 	=============================================================================
 	
+
+{% endraw %}

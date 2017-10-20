@@ -6,6 +6,8 @@ permalink: /kb/280/Q280048/
 
 ## Q280048: Delete Option Is Unavailable When Trying to Remove Admin Web Sit
 
+{% raw %}
+
 	Article: Q280048
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -80,3 +82,5 @@ permalink: /kb/280/Q280048/
 	
 	=============================================================================
 	
+
+{% endraw %}

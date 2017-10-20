@@ -6,6 +6,8 @@ permalink: /kb/318/Q318968/
 
 ## Q318968: How To Add A MSN News Server To Outlook Express
 
+{% raw %}
+
 	Article: Q318968
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/318/Q318968/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95790/
 
 ## Q95790: WFWG Err Msg: &quot;Mail Could Not Connect to Your Mail Server&quot;
 
+{% raw %}
+
 	Article: Q95790
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -158,3 +160,5 @@ permalink: /kb/095/Q95790/
 	
 	=============================================================================
 	
+
+{% endraw %}

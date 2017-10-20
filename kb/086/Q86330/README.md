@@ -6,6 +6,8 @@ permalink: /kb/086/Q86330/
 
 ## Q86330: PC Win: Cannot Forward or Reply on Return Receipts
 
+{% raw %}
+
 	Article: Q86330
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -44,3 +46,5 @@ permalink: /kb/086/Q86330/
 	
 	=============================================================================
 	
+
+{% endraw %}

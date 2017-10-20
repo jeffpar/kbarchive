@@ -6,6 +6,8 @@ permalink: /kb/260/Q260731/
 
 ## Q260731: Windows NT Option Pack Document Incorrectly Lists SMTP Version
 
+{% raw %}
+
 	Article: Q260731
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:
@@ -53,3 +55,5 @@ permalink: /kb/260/Q260731/
 	
 	=============================================================================
 	
+
+{% endraw %}

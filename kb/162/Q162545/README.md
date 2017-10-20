@@ -6,6 +6,8 @@ permalink: /kb/162/Q162545/
 
 ## Q162545: WD97: Launching Word Corrupts Tseng Labs ET6000 Video
 
+{% raw %}
+
 	Article: Q162545
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -84,3 +86,5 @@ permalink: /kb/162/Q162545/
 	
 	=============================================================================
 	
+
+{% endraw %}

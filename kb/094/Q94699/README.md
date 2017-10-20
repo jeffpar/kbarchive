@@ -6,6 +6,8 @@ permalink: /kb/094/Q94699/
 
 ## Q94699: WinLogin Err Msg: Out of Memory
 
+{% raw %}
+
 	Article: Q94699
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -56,3 +58,5 @@ permalink: /kb/094/Q94699/
 	
 	=============================================================================
 	
+
+{% endraw %}

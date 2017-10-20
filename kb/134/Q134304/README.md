@@ -6,6 +6,8 @@ permalink: /kb/134/Q134304/
 
 ## Q134304: Troubleshooting Browsing with Client for Microsoft Networks
 
+{% raw %}
+
 	Article: Q134304
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -200,3 +202,5 @@ permalink: /kb/134/Q134304/
 	
 	=============================================================================
 	
+
+{% endraw %}

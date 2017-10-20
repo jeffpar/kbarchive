@@ -6,6 +6,8 @@ permalink: /kb/168/Q168724/
 
 ## Q168724: SMS: List of Tools Available on the SMS 1.2 Compact Disc
 
+{% raw %}
+
 	Article: Q168724
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -488,3 +490,5 @@ permalink: /kb/168/Q168724/
 	
 	=============================================================================
 	
+
+{% endraw %}

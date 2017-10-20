@@ -6,6 +6,8 @@ permalink: /kb/176/Q176181/
 
 ## Q176181: XCON: NDRs Dropped on Message to Recipient w/ Multiple DDAs
 
+{% raw %}
+
 	Article: Q176181
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -63,3 +65,5 @@ permalink: /kb/176/Q176181/
 	
 	=============================================================================
 	
+
+{% endraw %}

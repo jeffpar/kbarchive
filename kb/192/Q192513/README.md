@@ -6,6 +6,8 @@ permalink: /kb/192/Q192513/
 
 ## Q192513: XADM: Slow Backup Performance with Single-Processor Servers
 
+{% raw %}
+
 	Article: Q192513
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -63,3 +65,5 @@ permalink: /kb/192/Q192513/
 	
 	=============================================================================
 	
+
+{% endraw %}

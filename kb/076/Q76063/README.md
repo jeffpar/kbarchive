@@ -6,6 +6,8 @@ permalink: /kb/076/Q76063/
 
 ## Q76063: PC Win: User Deletion Problem in TO: Header Line
 
+{% raw %}
+
 	Article: Q76063
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.0b
@@ -58,3 +60,5 @@ permalink: /kb/076/Q76063/
 	
 	=============================================================================
 	
+
+{% endraw %}

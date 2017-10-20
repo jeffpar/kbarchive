@@ -6,6 +6,8 @@ permalink: /kb/154/Q154478/
 
 ## Q154478: XCLN: Attaching Digitally Signed Messages to an Eform
 
+{% raw %}
+
 	Article: Q154478
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -71,3 +73,5 @@ permalink: /kb/154/Q154478/
 	
 	=============================================================================
 	
+
+{% endraw %}

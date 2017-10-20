@@ -6,6 +6,8 @@ permalink: /kb/172/Q172328/
 
 ## Q172328: WD97: Mail Merge with Merged Cells in Data Table Hangs Word
 
+{% raw %}
+
 	Article: Q172328
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -94,3 +96,5 @@ permalink: /kb/172/Q172328/
 	
 	=============================================================================
 	
+
+{% endraw %}

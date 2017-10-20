@@ -6,6 +6,8 @@ permalink: /kb/197/Q197511/
 
 ## Q197511: UDP Broadcast Issues with Service Pack 4
 
+{% raw %}
+
 	Article: Q197511
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/197/Q197511/
 	
 	=============================================================================
 	
+
+{% endraw %}

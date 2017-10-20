@@ -6,6 +6,8 @@ permalink: /kb/083/Q83959/
 
 ## Q83959: Misleading Error Message from Embedded Sound Object
 
+{% raw %}
+
 	Article: Q83959
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -53,3 +55,5 @@ permalink: /kb/083/Q83959/
 	
 	=============================================================================
 	
+
+{% endraw %}

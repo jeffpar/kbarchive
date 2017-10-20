@@ -6,6 +6,8 @@ permalink: /kb/194/Q194749/
 
 ## Q194749: SP4 Periodic Disk Access Interferes with Power Management
 
+{% raw %}
+
 	Article: Q194749
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -90,3 +92,5 @@ permalink: /kb/194/Q194749/
 	
 	=============================================================================
 	
+
+{% endraw %}

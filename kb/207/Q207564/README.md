@@ -6,6 +6,8 @@ permalink: /kb/207/Q207564/
 
 ## Q207564: DOC: VBCE Error &quot;The Declare statement is incorrectly formatted&quot;
 
+{% raw %}
+
 	Article: Q207564
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0
@@ -63,3 +65,5 @@ permalink: /kb/207/Q207564/
 	
 	=============================================================================
 	
+
+{% endraw %}

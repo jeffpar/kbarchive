@@ -6,6 +6,8 @@ permalink: /kb/028/Q28591/
 
 ## Q28591: BC.EXE &quot;Argument-Count Mismatch&quot; Compiling Underscore in CALL
 
+{% raw %}
+
 	Article: Q28591
 	Product(s): See article
 	Version(s): 4.00 4.00b
@@ -53,3 +55,5 @@ permalink: /kb/028/Q28591/
 	
 	   SUB a (x)
 	   END SUB
+
+{% endraw %}

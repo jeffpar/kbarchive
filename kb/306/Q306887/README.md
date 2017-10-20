@@ -6,6 +6,8 @@ permalink: /kb/306/Q306887/
 
 ## Q306887: Perfproc.dll Logs Event 2002 Errors in Win 2K Application Log
 
+{% raw %}
+
 	Article: Q306887
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,2000 SP2
@@ -103,3 +105,5 @@ permalink: /kb/306/Q306887/
 	
 	=============================================================================
 	
+
+{% endraw %}

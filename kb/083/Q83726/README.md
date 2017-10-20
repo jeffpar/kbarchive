@@ -6,6 +6,8 @@ permalink: /kb/083/Q83726/
 
 ## Q83726: INT 12h and Windows Enhanced Mode
 
+{% raw %}
+
 	Article: Q83726
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0
@@ -62,3 +64,5 @@ permalink: /kb/083/Q83726/
 	
 	=============================================================================
 	
+
+{% endraw %}

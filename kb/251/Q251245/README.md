@@ -6,6 +6,8 @@ permalink: /kb/251/Q251245/
 
 ## Q251245: &quot;Invalid Name&quot; Error Message When You Log On to MMS with Compass
 
+{% raw %}
+
 	Article: Q251245
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -257,3 +259,5 @@ permalink: /kb/251/Q251245/
 	
 	=============================================================================
 	
+
+{% endraw %}

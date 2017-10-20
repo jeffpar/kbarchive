@@ -6,6 +6,8 @@ permalink: /kb/109/Q109998/
 
 ## Q109998: FIX: Divide by Zero Run-Time Error Not Produced
 
+{% raw %}
+
 	Article: Q109998
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -76,3 +78,5 @@ permalink: /kb/109/Q109998/
 	
 	=============================================================================
 	
+
+{% endraw %}

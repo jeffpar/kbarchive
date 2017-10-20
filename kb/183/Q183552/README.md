@@ -6,6 +6,8 @@ permalink: /kb/183/Q183552/
 
 ## Q183552: SNA DDM Service Terminates; Type Mismatch Errors
 
+{% raw %}
+
 	Article: Q183552
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -59,3 +61,5 @@ permalink: /kb/183/Q183552/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/067/Q67584/
 
 ## Q67584: Active Code Page Versus Selected Code Page
 
+{% raw %}
+
 	Article: Q67584
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:3.x,4.x,5.x,6.0,6.2,6.21,6.22
@@ -111,3 +113,5 @@ permalink: /kb/067/Q67584/
 	
 	=============================================================================
 	
+
+{% endraw %}

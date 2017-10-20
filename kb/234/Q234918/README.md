@@ -6,6 +6,8 @@ permalink: /kb/234/Q234918/
 
 ## Q234918: XADM: No Access to Diagnostics Logging Tab on Server Properties
 
+{% raw %}
+
 	Article: Q234918
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -74,3 +76,5 @@ permalink: /kb/234/Q234918/
 	
 	=============================================================================
 	
+
+{% endraw %}

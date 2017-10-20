@@ -6,6 +6,8 @@ permalink: /kb/111/Q111857/
 
 ## Q111857: SMTP: Missing Attachment Name in Client when Using PMDF Mailer
 
+{% raw %}
+
 	Article: Q111857
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/111/Q111857/
 	
 	=============================================================================
 	
+
+{% endraw %}

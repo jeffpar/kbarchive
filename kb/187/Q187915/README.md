@@ -6,6 +6,8 @@ permalink: /kb/187/Q187915/
 
 ## Q187915: XCON: MTA Routes Mail to EDK Connector when Other Route Exists
 
+{% raw %}
+
 	Article: Q187915
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -78,3 +80,5 @@ permalink: /kb/187/Q187915/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/113/Q113170/
 
 ## Q113170: CG: Refreshing ClipArt Gallery Thumbnail Images
 
+{% raw %}
+
 	Article: Q113170
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 1.0,1.1,2.0,2.0a,3.0; WINDOWS:3.0,4.0,7.0,97
@@ -109,3 +111,5 @@ permalink: /kb/113/Q113170/
 	
 	=============================================================================
 	
+
+{% endraw %}

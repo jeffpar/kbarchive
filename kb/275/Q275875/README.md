@@ -6,6 +6,8 @@ permalink: /kb/275/Q275875/
 
 ## Q275875: Combat Flight Simulator 2: Unable to Drop Bombs or Fire Rockets
 
+{% raw %}
+
 	Article: Q275875
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -55,3 +57,5 @@ permalink: /kb/275/Q275875/
 	
 	=============================================================================
 	
+
+{% endraw %}

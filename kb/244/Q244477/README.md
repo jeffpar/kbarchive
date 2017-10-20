@@ -6,6 +6,8 @@ permalink: /kb/244/Q244477/
 
 ## Q244477: How to Determine Max String Size  in COMTI at Runtime
 
+{% raw %}
+
 	Article: Q244477
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0 SP1,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -426,3 +428,5 @@ permalink: /kb/244/Q244477/
 	
 	=============================================================================
 	
+
+{% endraw %}

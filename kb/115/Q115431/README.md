@@ -6,6 +6,8 @@ permalink: /kb/115/Q115431/
 
 ## Q115431: Turkish Characters in Directory Name Hangs Windows NT
 
+{% raw %}
+
 	Article: Q115431
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -47,3 +49,5 @@ permalink: /kb/115/Q115431/
 	
 	=============================================================================
 	
+
+{% endraw %}

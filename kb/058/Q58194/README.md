@@ -6,6 +6,8 @@ permalink: /kb/058/Q58194/
 
 ## Q58194: How to Write Your Own &#95;&#95;chkstk Routine
 
+{% raw %}
+
 	Article: Q58194
 	Product(s): See article
 	Version(s): 5.10
@@ -113,3 +115,5 @@ permalink: /kb/058/Q58194/
 	This information is correct for Microsoft C Versions 5.10 and earlier.
 	It is also correct for QuickC Versions 2.00 and earlier, as well as
 	QuickAssembler Version 2.01.
+
+{% endraw %}

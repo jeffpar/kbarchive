@@ -6,6 +6,8 @@ permalink: /kb/139/Q139471/
 
 ## Q139471: Unable to Change Domain Name of Windows NT BDC
 
+{% raw %}
+
 	Article: Q139471
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -52,3 +54,5 @@ permalink: /kb/139/Q139471/
 	
 	=============================================================================
 	
+
+{% endraw %}

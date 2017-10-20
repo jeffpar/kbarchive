@@ -6,6 +6,8 @@ permalink: /kb/049/Q49285/
 
 ## Q49285: Losing Data When Mouse and Data Transfer Are Involved
 
+{% raw %}
+
 	Article: Q49285
 	Product(s): See article
 	Version(s): 6.00 6.11 6.14 6.24 6.24b
@@ -27,3 +29,5 @@ permalink: /kb/049/Q49285/
 	COM2: so that it can take advantage of the higher priority interrupt.
 	The phenomenon is inherent with interrupt handling and established
 	priorities.
+
+{% endraw %}

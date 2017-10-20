@@ -6,6 +6,8 @@ permalink: /kb/202/Q202063/
 
 ## Q202063: SMS: Forced Disconnect Not Available on NW Distribution Servers
 
+{% raw %}
+
 	Article: Q202063
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -76,3 +78,5 @@ permalink: /kb/202/Q202063/
 	
 	=============================================================================
 	
+
+{% endraw %}

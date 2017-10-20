@@ -6,6 +6,8 @@ permalink: /kb/235/Q235044/
 
 ## Q235044: Quick Course in Microsoft PowerPoint 2000 Comments and Correctio
 
+{% raw %}
+
 	Article: Q235044
 	Product(s): Microsoft Press
 	Version(s): 
@@ -148,3 +150,5 @@ permalink: /kb/235/Q235044/
 	
 	=============================================================================
 	
+
+{% endraw %}

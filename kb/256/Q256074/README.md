@@ -6,6 +6,8 @@ permalink: /kb/256/Q256074/
 
 ## Q256074: Crystal Reports Selection Formula Reappears After Being Deleted
 
+{% raw %}
+
 	Article: Q256074
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -59,3 +61,5 @@ permalink: /kb/256/Q256074/
 	
 	=============================================================================
 	
+
+{% endraw %}

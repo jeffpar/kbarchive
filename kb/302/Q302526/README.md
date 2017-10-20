@@ -6,6 +6,8 @@ permalink: /kb/302/Q302526/
 
 ## Q302526: Removing A User
 
+{% raw %}
+
 	Article: Q302526
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -57,3 +59,5 @@ permalink: /kb/302/Q302526/
 	
 	=============================================================================
 	
+
+{% endraw %}

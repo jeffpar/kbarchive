@@ -6,6 +6,8 @@ permalink: /kb/288/Q288420/
 
 ## Q288420: XADM: How to Re-create a Directory Object for a System Folder
 
+{% raw %}
+
 	Article: Q288420
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -148,3 +150,5 @@ permalink: /kb/288/Q288420/
 	
 	=============================================================================
 	
+
+{% endraw %}

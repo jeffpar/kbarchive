@@ -6,6 +6,8 @@ permalink: /kb/197/Q197561/
 
 ## Q197561: Pinball Arcade: Tables Included in Pinball Arcade
 
+{% raw %}
+
 	Article: Q197561
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -54,3 +56,5 @@ permalink: /kb/197/Q197561/
 	
 	=============================================================================
 	
+
+{% endraw %}

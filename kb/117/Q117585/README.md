@@ -6,6 +6,8 @@ permalink: /kb/117/Q117585/
 
 ## Q117585: Using Supra Fax Modem V.32bis 144i with Windows NT RAS
 
+{% raw %}
+
 	Article: Q117585
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/117/Q117585/
 	
 	=============================================================================
 	
+
+{% endraw %}

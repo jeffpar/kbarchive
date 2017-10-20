@@ -6,6 +6,8 @@ permalink: /kb/159/Q159450/
 
 ## Q159450: Second Recursive Query Sent from DNS Server Is Broken
 
+{% raw %}
+
 	Article: Q159450
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/159/Q159450/
 	
 	=============================================================================
 	
+
+{% endraw %}

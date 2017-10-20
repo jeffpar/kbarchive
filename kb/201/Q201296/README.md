@@ -6,6 +6,8 @@ permalink: /kb/201/Q201296/
 
 ## Q201296: XFOR: Requirements: Microsoft Importer for Lotus Notes
 
+{% raw %}
+
 	Article: Q201296
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; winnt:4.0,5.0,5.5
@@ -79,3 +81,5 @@ permalink: /kb/201/Q201296/
 	
 	=============================================================================
 	
+
+{% endraw %}

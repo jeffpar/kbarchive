@@ -6,6 +6,8 @@ permalink: /kb/318/Q318852/
 
 ## Q318852: Asheron's Call: Err Msg: The Character May Be Out of Date...
 
+{% raw %}
+
 	Article: Q318852
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -73,3 +75,5 @@ permalink: /kb/318/Q318852/
 	
 	=============================================================================
 	
+
+{% endraw %}

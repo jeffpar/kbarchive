@@ -6,6 +6,8 @@ permalink: /kb/238/Q238145/
 
 ## Q238145: How to Monitor Bandwidth Throttling
 
+{% raw %}
+
 	Article: Q238145
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -80,3 +82,5 @@ permalink: /kb/238/Q238145/
 	
 	=============================================================================
 	
+
+{% endraw %}

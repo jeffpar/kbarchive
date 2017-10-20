@@ -6,6 +6,8 @@ permalink: /kb/253/Q253171/
 
 ## Q253171: HOWTO: Create a Most Recently Used (MRU) File List in VB
 
+{% raw %}
+
 	Article: Q253171
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -260,3 +262,5 @@ permalink: /kb/253/Q253171/
 	
 	=============================================================================
 	
+
+{% endraw %}

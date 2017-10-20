@@ -6,6 +6,8 @@ permalink: /kb/214/Q214587/
 
 ## Q214587: Close Combat III: Game Quits When You Move Pointer Over Unit
 
+{% raw %}
+
 	Article: Q214587
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -45,3 +47,5 @@ permalink: /kb/214/Q214587/
 	
 	=============================================================================
 	
+
+{% endraw %}

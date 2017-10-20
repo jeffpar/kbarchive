@@ -6,6 +6,8 @@ permalink: /kb/171/Q171554/
 
 ## Q171554: INFO: Visual Basic 5.0 Fixes in Visual Studio 97 Service Pack 2
 
+{% raw %}
+
 	Article: Q171554
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0,97sp2
@@ -256,3 +258,5 @@ permalink: /kb/171/Q171554/
 	
 	=============================================================================
 	
+
+{% endraw %}

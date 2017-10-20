@@ -6,6 +6,8 @@ permalink: /kb/148/Q148826/
 
 ## Q148826: Error Message: Error State Machines Not Started
 
+{% raw %}
+
 	Article: Q148826
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5
@@ -74,3 +76,5 @@ permalink: /kb/148/Q148826/
 	
 	=============================================================================
 	
+
+{% endraw %}

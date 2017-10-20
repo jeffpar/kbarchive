@@ -6,6 +6,8 @@ permalink: /kb/240/Q240745/
 
 ## Q240745: XCLN: Event Script Cancelled After Exceeding 900-second Limit
 
+{% raw %}
+
 	Article: Q240745
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -46,3 +48,5 @@ permalink: /kb/240/Q240745/
 	
 	=============================================================================
 	
+
+{% endraw %}

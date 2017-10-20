@@ -6,6 +6,8 @@ permalink: /kb/138/Q138241/
 
 ## Q138241: PCM Reports Failed Job As Complete
 
+{% raw %}
+
 	Article: Q138241
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -50,3 +52,5 @@ permalink: /kb/138/Q138241/
 	
 	=============================================================================
 	
+
+{% endraw %}

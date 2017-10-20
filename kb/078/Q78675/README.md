@@ -6,6 +6,8 @@ permalink: /kb/078/Q78675/
 
 ## Q78675: Upgrade 5.0a Setup Automatically Updates DMDRVR.BIN/SSTOR.SYS
 
+{% raw %}
+
 	Article: Q78675
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0a
@@ -67,3 +69,5 @@ permalink: /kb/078/Q78675/
 	
 	=============================================================================
 	
+
+{% endraw %}

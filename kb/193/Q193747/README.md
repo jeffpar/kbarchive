@@ -6,6 +6,8 @@ permalink: /kb/193/Q193747/
 
 ## Q193747: SMS: File Token Generator - Filetokn.exe
 
+{% raw %}
+
 	Article: Q193747
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -72,3 +74,5 @@ permalink: /kb/193/Q193747/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/313/Q313137/
 
 ## Q313137: COMTI/OTMA Error When App. Returns Unbounded Recordset
 
+{% raw %}
+
 	Article: Q313137
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -124,3 +126,5 @@ permalink: /kb/313/Q313137/
 	
 	=============================================================================
 	
+
+{% endraw %}

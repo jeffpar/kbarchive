@@ -6,6 +6,8 @@ permalink: /kb/138/Q138085/
 
 ## Q138085: Appends Fail on Sony SDT 5000 DAT Drive
 
+{% raw %}
+
 	Article: Q138085
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -61,3 +63,5 @@ permalink: /kb/138/Q138085/
 	
 	=============================================================================
 	
+
+{% endraw %}

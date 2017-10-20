@@ -6,6 +6,8 @@ permalink: /kb/129/Q129307/
 
 ## Q129307: PRB: Project Manager Can't Be Docked at Bottom of Desktop
 
+{% raw %}
+
 	Article: Q129307
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -68,3 +70,5 @@ permalink: /kb/129/Q129307/
 	
 	=============================================================================
 	
+
+{% endraw %}

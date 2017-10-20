@@ -6,6 +6,8 @@ permalink: /kb/253/Q253619/
 
 ## Q253619: XCON: MTA Logs Event 3150 Receiving Invalid Message
 
+{% raw %}
+
 	Article: Q253619
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -88,3 +90,5 @@ permalink: /kb/253/Q253619/
 	
 	=============================================================================
 	
+
+{% endraw %}

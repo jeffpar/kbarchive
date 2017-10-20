@@ -6,6 +6,8 @@ permalink: /kb/059/Q59728/
 
 ## Q59728: QB 4.50 Learning to Use Correction; MBF Used Prior to QB 4.00
 
+{% raw %}
+
 	Article: Q59728
 	Product(s): See article
 	Version(s): 4.50
@@ -25,3 +27,5 @@ permalink: /kb/059/Q59728/
 	QuickBASIC prior to 4.00, except for QB87.EXE in QuickBASIC Version
 	3.00, which uses IEEE floating-point format. QB.EXE in QuickBASIC 3.00
 	uses MBF.
+
+{% endraw %}

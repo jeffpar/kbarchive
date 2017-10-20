@@ -6,6 +6,8 @@ permalink: /kb/179/Q179310/
 
 ## Q179310: WD97: Word May Error/Quit During Grammar Check of Long Sentence
 
+{% raw %}
+
 	Article: Q179310
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -88,3 +90,5 @@ permalink: /kb/179/Q179310/
 	
 	=============================================================================
 	
+
+{% endraw %}

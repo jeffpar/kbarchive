@@ -6,6 +6,8 @@ permalink: /kb/186/Q186362/
 
 ## Q186362: CC: A Bridge Too Far Err Msg: Cannot Locate a Necessary Folder
 
+{% raw %}
+
 	Article: Q186362
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -65,3 +67,5 @@ permalink: /kb/186/Q186362/
 	
 	=============================================================================
 	
+
+{% endraw %}

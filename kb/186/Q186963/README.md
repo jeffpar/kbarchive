@@ -6,6 +6,8 @@ permalink: /kb/186/Q186963/
 
 ## Q186963: Incorrect Dimensions in Executive Form with Mannesmann Driver
 
+{% raw %}
+
 	Article: Q186963
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -66,3 +68,5 @@ permalink: /kb/186/Q186963/
 	
 	=============================================================================
 	
+
+{% endraw %}

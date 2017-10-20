@@ -6,6 +6,8 @@ permalink: /kb/158/Q158230/
 
 ## Q158230: BUG: Changes in an ISAM Table Not Seen by DAO
 
+{% raw %}
+
 	Article: Q158230
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2
@@ -56,3 +58,5 @@ permalink: /kb/158/Q158230/
 	
 	=============================================================================
 	
+
+{% endraw %}

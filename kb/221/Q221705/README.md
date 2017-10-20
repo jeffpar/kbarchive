@@ -6,6 +6,8 @@ permalink: /kb/221/Q221705/
 
 ## Q221705: FIX: FFCs - _URLComboBox in _internet.vcx Large Drop-Down Issue
 
+{% raw %}
+
 	Article: Q221705
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -88,3 +90,5 @@ permalink: /kb/221/Q221705/
 	
 	=============================================================================
 	
+
+{% endraw %}

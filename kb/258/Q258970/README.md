@@ -6,6 +6,8 @@ permalink: /kb/258/Q258970/
 
 ## Q258970: List of Bugs Fixed in Terminal Server Edition Service Pack 6
 
+{% raw %}
+
 	Article: Q258970
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6
@@ -205,3 +207,5 @@ permalink: /kb/258/Q258970/
 	
 	=============================================================================
 	
+
+{% endraw %}

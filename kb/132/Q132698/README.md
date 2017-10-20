@@ -6,6 +6,8 @@ permalink: /kb/132/Q132698/
 
 ## Q132698: Make Wallpaper Doesn't Function: Saved with 0 Byte File Size
 
+{% raw %}
+
 	Article: Q132698
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/132/Q132698/
 	
 	=============================================================================
 	
+
+{% endraw %}

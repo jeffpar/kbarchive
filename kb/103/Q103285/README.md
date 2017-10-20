@@ -6,6 +6,8 @@ permalink: /kb/103/Q103285/
 
 ## Q103285: Contents of Windows NT SETUP.TXT, Part 2
 
+{% raw %}
+
 	Article: Q103285
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -397,3 +399,5 @@ permalink: /kb/103/Q103285/
 	
 	=============================================================================
 	
+
+{% endraw %}

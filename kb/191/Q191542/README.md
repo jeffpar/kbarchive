@@ -6,6 +6,8 @@ permalink: /kb/191/Q191542/
 
 ## Q191542: Urban Assault: Squadron Manager Window Returns to Original Size
 
+{% raw %}
+
 	Article: Q191542
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -50,3 +52,5 @@ permalink: /kb/191/Q191542/
 	
 	=============================================================================
 	
+
+{% endraw %}

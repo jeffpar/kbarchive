@@ -6,6 +6,8 @@ permalink: /kb/238/Q238251/
 
 ## Q238251: How to Install Windows Messaging After Removing Outlook 2000
 
+{% raw %}
+
 	Article: Q238251
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -75,3 +77,5 @@ permalink: /kb/238/Q238251/
 	
 	=============================================================================
 	
+
+{% endraw %}

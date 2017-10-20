@@ -6,6 +6,8 @@ permalink: /kb/132/Q132661/
 
 ## Q132661: Some Multimedia Titles Do Not Work on HP Vectra Communication
 
+{% raw %}
+
 	Article: Q132661
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -80,3 +82,5 @@ permalink: /kb/132/Q132661/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/069/Q69652/
 
 ## Q69652: How to Reset the High Scores in Tetris of the WEP
 
+{% raw %}
+
 	Article: Q69652
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -32,3 +34,5 @@ permalink: /kb/069/Q69652/
 	
 	=============================================================================
 	
+
+{% endraw %}

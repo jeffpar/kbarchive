@@ -6,6 +6,8 @@ permalink: /kb/172/Q172382/
 
 ## Q172382: WD97: No Results When Faxing by Using Outlook Distribution List
 
+{% raw %}
+
 	Article: Q172382
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -159,3 +161,5 @@ permalink: /kb/172/Q172382/
 	
 	=============================================================================
 	
+
+{% endraw %}

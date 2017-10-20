@@ -6,6 +6,8 @@ permalink: /kb/238/Q238244/
 
 ## Q238244: Partition Utilities Do Not Recognize Hard Drive Partitions
 
+{% raw %}
+
 	Article: Q238244
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -89,3 +91,5 @@ permalink: /kb/238/Q238244/
 	
 	=============================================================================
 	
+
+{% endraw %}

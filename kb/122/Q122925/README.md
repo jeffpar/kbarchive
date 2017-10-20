@@ -6,6 +6,8 @@ permalink: /kb/122/Q122925/
 
 ## Q122925: Upgrading From Workstation to Server Limited to 10 Connections
 
+{% raw %}
+
 	Article: Q122925
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/122/Q122925/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/126/Q126880/
 
 ## Q126880: Baseball 1995: Online Tips (BS95TBLS.TXT)
 
+{% raw %}
+
 	Article: Q126880
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -207,3 +209,5 @@ permalink: /kb/126/Q126880/
 	
 	=============================================================================
 	
+
+{% endraw %}

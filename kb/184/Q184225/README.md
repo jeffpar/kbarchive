@@ -6,6 +6,8 @@ permalink: /kb/184/Q184225/
 
 ## Q184225: XADM: Cannot Specify Destination Server Name
 
+{% raw %}
+
 	Article: Q184225
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -60,3 +62,5 @@ permalink: /kb/184/Q184225/
 	
 	=============================================================================
 	
+
+{% endraw %}

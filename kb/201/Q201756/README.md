@@ -6,6 +6,8 @@ permalink: /kb/201/Q201756/
 
 ## Q201756: FP: How to Insert Java Applet into FrontPage Editor
 
+{% raw %}
+
 	Article: Q201756
 	Product(s): Word Front Page
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/201/Q201756/
 	
 	=============================================================================
 	
+
+{% endraw %}

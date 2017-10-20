@@ -6,6 +6,8 @@ permalink: /kb/175/Q175442/
 
 ## Q175442: The Internet Connection Wizard May Not Work When Installing MSN
 
+{% raw %}
+
 	Article: Q175442
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -62,3 +64,5 @@ permalink: /kb/175/Q175442/
 	
 	=============================================================================
 	
+
+{% endraw %}

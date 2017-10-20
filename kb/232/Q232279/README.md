@@ -6,6 +6,8 @@ permalink: /kb/232/Q232279/
 
 ## Q232279: XFOR: Internet Mail Service Stops with Event IDs 4102 and 4182
 
+{% raw %}
+
 	Article: Q232279
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -105,3 +107,5 @@ permalink: /kb/232/Q232279/
 	
 	=============================================================================
 	
+
+{% endraw %}

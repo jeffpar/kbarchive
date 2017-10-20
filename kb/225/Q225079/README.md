@@ -6,6 +6,8 @@ permalink: /kb/225/Q225079/
 
 ## Q225079: WD97: Special Characters Lost Changing Font in WordPerfect File
 
+{% raw %}
+
 	Article: Q225079
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -102,3 +104,5 @@ permalink: /kb/225/Q225079/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94764/
 
 ## Q94764: Video: No Frames Captured with New Media Graphics Cards
 
+{% raw %}
+
 	Article: Q94764
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -113,3 +115,5 @@ permalink: /kb/094/Q94764/
 	
 	=============================================================================
 	
+
+{% endraw %}

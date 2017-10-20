@@ -6,6 +6,8 @@ permalink: /kb/195/Q195328/
 
 ## Q195328: WD97: Mail Merge Main Document Restored to Normal Word Document
 
+{% raw %}
+
 	Article: Q195328
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -76,3 +78,5 @@ permalink: /kb/195/Q195328/
 	
 	=============================================================================
 	
+
+{% endraw %}

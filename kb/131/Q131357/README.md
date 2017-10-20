@@ -6,6 +6,8 @@ permalink: /kb/131/Q131357/
 
 ## Q131357: How to Reference Objects in the Container Hierarchy
 
+{% raw %}
+
 	Article: Q131357
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -143,3 +145,5 @@ permalink: /kb/131/Q131357/
 	
 	=============================================================================
 	
+
+{% endraw %}

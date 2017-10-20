@@ -6,6 +6,8 @@ permalink: /kb/217/Q217048/
 
 ## Q217048: Lmsdk/Netwksta: Programmatically Log Off Domain from Win95/98
 
+{% raw %}
+
 	Article: Q217048
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98
@@ -82,3 +84,5 @@ permalink: /kb/217/Q217048/
 	
 	=============================================================================
 	
+
+{% endraw %}

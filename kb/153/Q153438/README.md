@@ -6,6 +6,8 @@ permalink: /kb/153/Q153438/
 
 ## Q153438: Microsoft Phone Does Not Translate Letters to Numbers
 
+{% raw %}
+
 	Article: Q153438
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -57,3 +59,5 @@ permalink: /kb/153/Q153438/
 	
 	=============================================================================
 	
+
+{% endraw %}

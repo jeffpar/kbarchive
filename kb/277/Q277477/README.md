@@ -6,6 +6,8 @@ permalink: /kb/277/Q277477/
 
 ## Q277477: FP: Sample DHTML to Compare Two Passwords
 
+{% raw %}
+
 	Article: Q277477
 	Product(s): Word Front Page
 	Version(s): 
@@ -159,3 +161,5 @@ permalink: /kb/277/Q277477/
 	
 	=============================================================================
 	
+
+{% endraw %}

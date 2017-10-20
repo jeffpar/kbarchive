@@ -6,6 +6,8 @@ permalink: /kb/089/Q89233/
 
 ## Q89233: Novell Login Script, Mapping Drives, and Pathing with Windows
 
+{% raw %}
+
 	Article: Q89233
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.x,2.03,2.1,2.11,3.0,3.0a,3.1,3.11
@@ -118,3 +120,5 @@ permalink: /kb/089/Q89233/
 	
 	=============================================================================
 	
+
+{% endraw %}

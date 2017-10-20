@@ -6,6 +6,8 @@ permalink: /kb/117/Q117258/
 
 ## Q117258: SFM Converts Macintosh HFS Filenames to NTFS Unicode
 
+{% raw %}
+
 	Article: Q117258
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -85,3 +87,5 @@ permalink: /kb/117/Q117258/
 	
 	=============================================================================
 	
+
+{% endraw %}

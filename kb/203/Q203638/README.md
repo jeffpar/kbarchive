@@ -6,6 +6,8 @@ permalink: /kb/203/Q203638/
 
 ## Q203638: HOWTO: Return Information About SQL Server Linked Servers
 
+{% raw %}
+
 	Article: Q203638
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:2.5,3.0,3.0b,5.0,5.0a,6.0; winnt:7.0
@@ -290,3 +292,5 @@ permalink: /kb/203/Q203638/
 	
 	=============================================================================
 	
+
+{% endraw %}

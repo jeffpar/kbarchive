@@ -6,6 +6,8 @@ permalink: /kb/171/Q171474/
 
 ## Q171474: FIX: Path Problems Using Project on Network Server
 
+{% raw %}
+
 	Article: Q171474
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -106,3 +108,5 @@ permalink: /kb/171/Q171474/
 	
 	=============================================================================
 	
+
+{% endraw %}

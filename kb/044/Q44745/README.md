@@ -6,6 +6,8 @@ permalink: /kb/044/Q44745/
 
 ## Q44745: /AT Tiny Model and Quick Assembler
 
+{% raw %}
+
 	Article: Q44745
 	Product(s): See article
 	Version(s): 2.01
@@ -41,3 +43,5 @@ permalink: /kb/044/Q44745/
 	the Quick Assembler portion of this package. The possibility of
 	embedding this support within Quick C is under review and will be
 	considered for inclusion in a future release.
+
+{% endraw %}

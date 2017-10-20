@@ -6,6 +6,8 @@ permalink: /kb/185/Q185346/
 
 ## Q185346: SMS: Logon Script Takes a Long Time over RAS or Slow Connection
 
+{% raw %}
+
 	Article: Q185346
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -175,3 +177,5 @@ permalink: /kb/185/Q185346/
 	
 	=============================================================================
 	
+
+{% endraw %}

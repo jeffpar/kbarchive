@@ -6,6 +6,8 @@ permalink: /kb/133/Q133130/
 
 ## Q133130: Multiple Master Fonts Not Printed Correctly
 
+{% raw %}
+
 	Article: Q133130
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -71,3 +73,5 @@ permalink: /kb/133/Q133130/
 	
 	=============================================================================
 	
+
+{% endraw %}

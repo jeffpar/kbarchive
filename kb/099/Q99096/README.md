@@ -6,6 +6,8 @@ permalink: /kb/099/Q99096/
 
 ## Q99096: ERR: Variable &quot;XXXXXXXXXXX&quot; Not Found
 
+{% raw %}
+
 	Article: Q99096
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -39,3 +41,5 @@ permalink: /kb/099/Q99096/
 	
 	=============================================================================
 	
+
+{% endraw %}

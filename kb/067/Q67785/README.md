@@ -6,6 +6,8 @@ permalink: /kb/067/Q67785/
 
 ## Q67785: Bit Operations on Char May Produce Unexpected Results
 
+{% raw %}
+
 	Article: Q67785
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -97,3 +99,5 @@ permalink: /kb/067/Q67785/
 	Microsoft has confirmed this to be a problem in the Microsoft C
 	Compiler versions 6.00 and 6.00a. We are researching this problem and
 	will post new information here as it becomes available.
+
+{% endraw %}

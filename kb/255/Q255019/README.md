@@ -6,6 +6,8 @@ permalink: /kb/255/Q255019/
 
 ## Q255019: XCON: MIXER Maps SMTP Addr. Even w. Global Address List Entry
 
+{% raw %}
+
 	Article: Q255019
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -90,3 +92,5 @@ permalink: /kb/255/Q255019/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190447/
 
 ## Q190447: FIX: RDO BatchUpdate Causes Visual Basic 5.0 to Crash
 
+{% raw %}
+
 	Article: Q190447
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -192,3 +194,5 @@ permalink: /kb/190/Q190447/
 	
 	=============================================================================
 	
+
+{% endraw %}

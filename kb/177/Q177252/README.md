@@ -6,6 +6,8 @@ permalink: /kb/177/Q177252/
 
 ## Q177252: Flight Simulator: No Instructor or Voices in Lesson or Adventure
 
+{% raw %}
+
 	Article: Q177252
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -174,3 +176,5 @@ permalink: /kb/177/Q177252/
 	
 	=============================================================================
 	
+
+{% endraw %}

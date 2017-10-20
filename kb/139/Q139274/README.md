@@ -6,6 +6,8 @@ permalink: /kb/139/Q139274/
 
 ## Q139274: Updated System Environment Variables Result in STOP 0x0000021a
 
+{% raw %}
+
 	Article: Q139274
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -70,3 +72,5 @@ permalink: /kb/139/Q139274/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151371/
 
 ## Q151371: Thinkpad 760 Requires Updated Video Driver
 
+{% raw %}
+
 	Article: Q151371
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -58,3 +60,5 @@ permalink: /kb/151/Q151371/
 	
 	=============================================================================
 	
+
+{% endraw %}

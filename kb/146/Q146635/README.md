@@ -6,6 +6,8 @@ permalink: /kb/146/Q146635/
 
 ## Q146635: Recursive File Collection When SMS Performs Inventory
 
+{% raw %}
+
 	Article: Q146635
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:1.1
@@ -65,3 +67,5 @@ permalink: /kb/146/Q146635/
 	
 	=============================================================================
 	
+
+{% endraw %}

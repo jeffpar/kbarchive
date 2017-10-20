@@ -6,6 +6,8 @@ permalink: /kb/074/Q74172/
 
 ## Q74172: Beep in PWB 1.0 and 1.1 Cannot Be Controlled By User
 
+{% raw %}
+
 	Article: Q74172
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -38,3 +40,5 @@ permalink: /kb/074/Q74172/
 	
 	=============================================================================
 	
+
+{% endraw %}

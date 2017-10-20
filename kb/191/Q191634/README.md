@@ -6,6 +6,8 @@ permalink: /kb/191/Q191634/
 
 ## Q191634: Group Policies Cause Excessive &#92;PIPE&#92;samr Connections on PDC
 
+{% raw %}
+
 	Article: Q191634
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -79,3 +81,5 @@ permalink: /kb/191/Q191634/
 	
 	=============================================================================
 	
+
+{% endraw %}

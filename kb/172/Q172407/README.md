@@ -6,6 +6,8 @@ permalink: /kb/172/Q172407/
 
 ## Q172407: Administrative Wizards Show Computer Accounts As Users
 
+{% raw %}
+
 	Article: Q172407
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/172/Q172407/
 	
 	=============================================================================
 	
+
+{% endraw %}

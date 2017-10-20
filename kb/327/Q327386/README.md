@@ -6,6 +6,8 @@ permalink: /kb/327/Q327386/
 
 ## Q327386: A &quot;Stop 0x0000001E&quot; Error May Occur in Win32k.sys with SAP
 
+{% raw %}
+
 	Article: Q327386
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6
@@ -97,3 +99,5 @@ permalink: /kb/327/Q327386/
 	
 	=============================================================================
 	
+
+{% endraw %}

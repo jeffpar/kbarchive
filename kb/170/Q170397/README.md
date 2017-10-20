@@ -6,6 +6,8 @@ permalink: /kb/170/Q170397/
 
 ## Q170397: STOP: 0XC0000143 Missing System File. Display_Driver.dll Is...
 
+{% raw %}
+
 	Article: Q170397
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -109,3 +111,5 @@ permalink: /kb/170/Q170397/
 	
 	=============================================================================
 	
+
+{% endraw %}

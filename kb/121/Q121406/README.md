@@ -6,6 +6,8 @@ permalink: /kb/121/Q121406/
 
 ## Q121406: Err Msg: The Process Cannot Switch to the Startup Current...
 
+{% raw %}
+
 	Article: Q121406
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/121/Q121406/
 	
 	=============================================================================
 	
+
+{% endraw %}

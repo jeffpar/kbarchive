@@ -6,6 +6,8 @@ permalink: /kb/042/Q42848/
 
 ## Q42848: TURTLE.C, MENU.C, TOOLS.C Not Stand-Alone Programs in QuickC
 
+{% raw %}
+
 	Article: Q42848
 	Product(s): See article
 	Version(s): 2.00
@@ -30,3 +32,5 @@ permalink: /kb/042/Q42848/
 	list to the corresponding NMAKE file (GRDEMO.MAK, LIFE.MAK, or
 	CHRTDEMO.MAK). Outside the environment, you only need to type NMAKE
 	followed by the desired NMAKE file name.
+
+{% endraw %}

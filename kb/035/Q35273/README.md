@@ -6,6 +6,8 @@ permalink: /kb/035/Q35273/
 
 ## Q35273: Sample Program That Makes OS/2 Call to DosQCurDisk Function
 
+{% raw %}
+
 	Article: Q35273
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -34,3 +36,5 @@ permalink: /kb/035/Q35273/
 	    print "Logical Drive Map; ";LogicalDriveMap
 	end if
 	end
+
+{% endraw %}

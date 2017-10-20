@@ -6,6 +6,8 @@ permalink: /kb/275/Q275928/
 
 ## Q275928: XFOR: Msgs Sent Via cc:Mail Connector Are in White Txt on Blue
 
+{% raw %}
+
 	Article: Q275928
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -49,3 +51,5 @@ permalink: /kb/275/Q275928/
 	
 	=============================================================================
 	
+
+{% endraw %}

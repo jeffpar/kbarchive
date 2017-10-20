@@ -6,6 +6,8 @@ permalink: /kb/139/Q139675/
 
 ## Q139675: TN3270: Limiting Users by Port Value
 
+{% raw %}
+
 	Article: Q139675
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1,2.11 SP2
@@ -112,3 +114,5 @@ permalink: /kb/139/Q139675/
 	
 	=============================================================================
 	
+
+{% endraw %}

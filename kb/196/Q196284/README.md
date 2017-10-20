@@ -6,6 +6,8 @@ permalink: /kb/196/Q196284/
 
 ## Q196284: Controlling Default Behavior for Roaming User Profiles
 
+{% raw %}
+
 	Article: Q196284
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -108,3 +110,5 @@ permalink: /kb/196/Q196284/
 	
 	=============================================================================
 	
+
+{% endraw %}

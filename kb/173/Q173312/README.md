@@ -6,6 +6,8 @@ permalink: /kb/173/Q173312/
 
 ## Q173312: DEC Pathworks 32 7.0 May Cause Windows NT 4.0 to Hang
 
+{% raw %}
+
 	Article: Q173312
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -50,3 +52,5 @@ permalink: /kb/173/Q173312/
 	
 	=============================================================================
 	
+
+{% endraw %}

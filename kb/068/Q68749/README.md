@@ -6,6 +6,8 @@ permalink: /kb/068/Q68749/
 
 ## Q68749: Windows Err Msg: Protected Mode Violation (LeadingTech 6000sx)
 
+{% raw %}
+
 	Article: Q68749
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -69,3 +71,5 @@ permalink: /kb/068/Q68749/
 	
 	=============================================================================
 	
+
+{% endraw %}

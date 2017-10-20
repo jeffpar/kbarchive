@@ -6,6 +6,8 @@ permalink: /kb/273/Q273604/
 
 ## Q273604: Golf 2001: Description of the Automatic Save Game Feature
 
+{% raw %}
+
 	Article: Q273604
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -66,3 +68,5 @@ permalink: /kb/273/Q273604/
 	
 	=============================================================================
 	
+
+{% endraw %}

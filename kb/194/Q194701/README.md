@@ -6,6 +6,8 @@ permalink: /kb/194/Q194701/
 
 ## Q194701: Age of Empires: &quot;Out of Sync&quot; Error Message In Multiplayer Game
 
+{% raw %}
+
 	Article: Q194701
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -200,3 +202,5 @@ permalink: /kb/194/Q194701/
 	
 	=============================================================================
 	
+
+{% endraw %}

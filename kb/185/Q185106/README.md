@@ -6,6 +6,8 @@ permalink: /kb/185/Q185106/
 
 ## Q185106: XFOR: LinkAge 3.2 Missing Domain Names In Exchange Notes DXA
 
+{% raw %}
+
 	Article: Q185106
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -63,3 +65,5 @@ permalink: /kb/185/Q185106/
 	
 	=============================================================================
 	
+
+{% endraw %}

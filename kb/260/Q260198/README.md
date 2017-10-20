@@ -6,6 +6,8 @@ permalink: /kb/260/Q260198/
 
 ## Q260198: XCLN: NDR in Outlook 97 and Outlook 98 Using Reply to All Option
 
+{% raw %}
+
 	Article: Q260198
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -151,3 +153,5 @@ permalink: /kb/260/Q260198/
 	
 	=============================================================================
 	
+
+{% endraw %}

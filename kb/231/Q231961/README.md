@@ -6,6 +6,8 @@ permalink: /kb/231/Q231961/
 
 ## Q231961: PRB:Set Breakpoint Menu Item in Modify Memo Shows Up at Run Time
 
+{% raw %}
+
 	Article: Q231961
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -70,3 +72,5 @@ permalink: /kb/231/Q231961/
 	
 	=============================================================================
 	
+
+{% endraw %}

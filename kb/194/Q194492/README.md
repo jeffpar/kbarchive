@@ -6,6 +6,8 @@ permalink: /kb/194/Q194492/
 
 ## Q194492: WD97: Hidden Text Appearing in File Saved as Text Only
 
+{% raw %}
+
 	Article: Q194492
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -59,3 +61,5 @@ permalink: /kb/194/Q194492/
 	
 	=============================================================================
 	
+
+{% endraw %}

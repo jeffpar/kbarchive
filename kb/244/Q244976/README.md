@@ -6,6 +6,8 @@ permalink: /kb/244/Q244976/
 
 ## Q244976: XADM: Event ID 1197 and 1005 When Starting the Information Store
 
+{% raw %}
+
 	Article: Q244976
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -110,3 +112,5 @@ permalink: /kb/244/Q244976/
 	
 	=============================================================================
 	
+
+{% endraw %}

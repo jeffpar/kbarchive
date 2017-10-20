@@ -6,6 +6,8 @@ permalink: /kb/301/Q301482/
 
 ## Q301482: Connection Error: e12
 
+{% raw %}
+
 	Article: Q301482
 	Product(s): The Microsoft Network
 	Version(s): 2.0
@@ -46,3 +48,5 @@ permalink: /kb/301/Q301482/
 	
 	=============================================================================
 	
+
+{% endraw %}

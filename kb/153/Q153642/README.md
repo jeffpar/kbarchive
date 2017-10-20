@@ -6,6 +6,8 @@ permalink: /kb/153/Q153642/
 
 ## Q153642: Program Group Control (PGC) Unable to Open Application Database
 
+{% raw %}
+
 	Article: Q153642
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -49,3 +51,5 @@ permalink: /kb/153/Q153642/
 	
 	=============================================================================
 	
+
+{% endraw %}

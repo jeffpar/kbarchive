@@ -6,6 +6,8 @@ permalink: /kb/181/Q181079/
 
 ## Q181079: WD97: What to Do If You Have a Macro Virus
 
+{% raw %}
+
 	Article: Q181079
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -264,3 +266,5 @@ permalink: /kb/181/Q181079/
 	
 	=============================================================================
 	
+
+{% endraw %}

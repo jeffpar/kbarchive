@@ -6,6 +6,8 @@ permalink: /kb/217/Q217002/
 
 ## Q217002: MSCS: Problems with Spooler Resource
 
+{% raw %}
+
 	Article: Q217002
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -69,3 +71,5 @@ permalink: /kb/217/Q217002/
 	
 	=============================================================================
 	
+
+{% endraw %}

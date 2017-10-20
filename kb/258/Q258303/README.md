@@ -6,6 +6,8 @@ permalink: /kb/258/Q258303/
 
 ## Q258303: XFOR: Notes Migrated Mailboxes Not Backed Up w. BackupExec 7.3
 
+{% raw %}
+
 	Article: Q258303
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -94,3 +96,5 @@ permalink: /kb/258/Q258303/
 	
 	=============================================================================
 	
+
+{% endraw %}

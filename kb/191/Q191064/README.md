@@ -6,6 +6,8 @@ permalink: /kb/191/Q191064/
 
 ## Q191064: Error Messages When Running TCP/IP-Based Utilities or Programs
 
+{% raw %}
+
 	Article: Q191064
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -107,3 +109,5 @@ permalink: /kb/191/Q191064/
 	
 	=============================================================================
 	
+
+{% endraw %}

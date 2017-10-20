@@ -6,6 +6,8 @@ permalink: /kb/155/Q155524/
 
 ## Q155524: SMS 1.1 Client Program Group Always Pops Up in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q155524
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -45,3 +47,5 @@ permalink: /kb/155/Q155524/
 	
 	=============================================================================
 	
+
+{% endraw %}

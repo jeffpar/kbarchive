@@ -6,6 +6,8 @@ permalink: /kb/190/Q190966/
 
 ## Q190966: BUG: IntelliSense Limitations with Templates
 
+{% raw %}
+
 	Article: Q190966
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -196,3 +198,5 @@ permalink: /kb/190/Q190966/
 	
 	=============================================================================
 	
+
+{% endraw %}

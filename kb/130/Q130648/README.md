@@ -6,6 +6,8 @@ permalink: /kb/130/Q130648/
 
 ## Q130648: Explorapedia People: .WAV Files for Testing Included on CD
 
+{% raw %}
+
 	Article: Q130648
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/130/Q130648/
 	
 	=============================================================================
 	
+
+{% endraw %}

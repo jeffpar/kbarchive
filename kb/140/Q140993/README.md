@@ -6,6 +6,8 @@ permalink: /kb/140/Q140993/
 
 ## Q140993: PPT7: Invalid Data Error Clicking &quot;Send to Genigraphics&quot;
 
+{% raw %}
+
 	Article: Q140993
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -91,3 +93,5 @@ permalink: /kb/140/Q140993/
 	
 	=============================================================================
 	
+
+{% endraw %}

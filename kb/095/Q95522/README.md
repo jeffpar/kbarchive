@@ -6,6 +6,8 @@ permalink: /kb/095/Q95522/
 
 ## Q95522: PC MAPI: Simple MAPI Version 3.2.0.4081 Update
 
+{% raw %}
+
 	Article: Q95522
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b,3.2
@@ -308,3 +310,5 @@ permalink: /kb/095/Q95522/
 	
 	=============================================================================
 	
+
+{% endraw %}

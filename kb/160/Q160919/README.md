@@ -6,6 +6,8 @@ permalink: /kb/160/Q160919/
 
 ## Q160919: PRB: Cannot Call Suspend with the On Shutdown Command
 
+{% raw %}
+
 	Article: Q160919
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/160/Q160919/
 	
 	=============================================================================
 	
+
+{% endraw %}

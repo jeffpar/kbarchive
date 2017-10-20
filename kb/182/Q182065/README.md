@@ -6,6 +6,8 @@ permalink: /kb/182/Q182065/
 
 ## Q182065: SNA Client Traps When MMC Snap-in Is Chosen During Installation
 
+{% raw %}
+
 	Article: Q182065
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -60,3 +62,5 @@ permalink: /kb/182/Q182065/
 	
 	=============================================================================
 	
+
+{% endraw %}

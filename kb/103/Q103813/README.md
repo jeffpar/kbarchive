@@ -6,6 +6,8 @@ permalink: /kb/103/Q103813/
 
 ## Q103813: PC Win: Mail Displays Mailbox Name in To: Field
 
+{% raw %}
+
 	Article: Q103813
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2; :1.0b
@@ -58,3 +60,5 @@ permalink: /kb/103/Q103813/
 	
 	=============================================================================
 	
+
+{% endraw %}

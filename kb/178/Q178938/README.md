@@ -6,6 +6,8 @@ permalink: /kb/178/Q178938/
 
 ## Q178938: FS98/2000: Description of the Ambiguity Indicator
 
+{% raw %}
+
 	Article: Q178938
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -61,3 +63,5 @@ permalink: /kb/178/Q178938/
 	
 	=============================================================================
 	
+
+{% endraw %}

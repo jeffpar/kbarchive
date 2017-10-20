@@ -6,6 +6,8 @@ permalink: /kb/307/Q307461/
 
 ## Q307461: When Typing E-mail And Answering An MSN Messenger Instant Messag
 
+{% raw %}
+
 	Article: Q307461
 	Product(s): The Microsoft Network
 	Version(s): 6.0,6.1
@@ -64,3 +66,5 @@ permalink: /kb/307/Q307461/
 	
 	=============================================================================
 	
+
+{% endraw %}

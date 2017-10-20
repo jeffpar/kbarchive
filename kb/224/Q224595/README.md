@@ -6,6 +6,8 @@ permalink: /kb/224/Q224595/
 
 ## Q224595: DCOM Client Cannot Establish CIS Session Using TCP/IP Address
 
+{% raw %}
+
 	Article: Q224595
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/224/Q224595/
 	
 	=============================================================================
 	
+
+{% endraw %}

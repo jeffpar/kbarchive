@@ -6,6 +6,8 @@ permalink: /kb/281/Q281913/
 
 ## Q281913: BUG: Referencing Type Libraries May Render Platform Dependent
 
+{% raw %}
+
 	Article: Q281913
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -142,3 +144,5 @@ permalink: /kb/281/Q281913/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136908/
 
 ## Q136908: FLTSIM 5.1: Problems Creating and Using a System Startup Disk
 
+{% raw %}
+
 	Article: Q136908
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.1
@@ -193,3 +195,5 @@ permalink: /kb/136/Q136908/
 	
 	=============================================================================
 	
+
+{% endraw %}

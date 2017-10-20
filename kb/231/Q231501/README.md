@@ -6,6 +6,8 @@ permalink: /kb/231/Q231501/
 
 ## Q231501: MapPoint 2000: Cannot Find Address Located on Numbered Street
 
+{% raw %}
+
 	Article: Q231501
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -75,3 +77,5 @@ permalink: /kb/231/Q231501/
 	
 	=============================================================================
 	
+
+{% endraw %}

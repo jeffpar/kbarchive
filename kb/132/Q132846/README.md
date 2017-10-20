@@ -6,6 +6,8 @@ permalink: /kb/132/Q132846/
 
 ## Q132846: Rodney's Funscreen Does Not Install Properly in Windows 95
 
+{% raw %}
+
 	Article: Q132846
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -78,3 +80,5 @@ permalink: /kb/132/Q132846/
 	
 	=============================================================================
 	
+
+{% endraw %}

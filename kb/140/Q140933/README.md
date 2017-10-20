@@ -6,6 +6,8 @@ permalink: /kb/140/Q140933/
 
 ## Q140933: XFOR: SMTP Proxy Address Generated Incorrectly
 
+{% raw %}
+
 	Article: Q140933
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -83,3 +85,5 @@ permalink: /kb/140/Q140933/
 	
 	=============================================================================
 	
+
+{% endraw %}

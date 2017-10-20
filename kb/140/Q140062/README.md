@@ -6,6 +6,8 @@ permalink: /kb/140/Q140062/
 
 ## Q140062: FindFirstFile Returns Error: The Network Name Was Deleted
 
+{% raw %}
+
 	Article: Q140062
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/140/Q140062/
 	
 	=============================================================================
 	
+
+{% endraw %}

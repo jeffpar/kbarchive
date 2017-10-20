@@ -6,6 +6,8 @@ permalink: /kb/216/Q216869/
 
 ## Q216869: FIX: Crash When Editing Code with Parameter Information Visible
 
+{% raw %}
+
 	Article: Q216869
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -78,3 +80,5 @@ permalink: /kb/216/Q216869/
 	
 	=============================================================================
 	
+
+{% endraw %}

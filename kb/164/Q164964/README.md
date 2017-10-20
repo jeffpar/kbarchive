@@ -6,6 +6,8 @@ permalink: /kb/164/Q164964/
 
 ## Q164964: Font Size Changes on Subsequent Print Jobs
 
+{% raw %}
+
 	Article: Q164964
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/164/Q164964/
 	
 	=============================================================================
 	
+
+{% endraw %}

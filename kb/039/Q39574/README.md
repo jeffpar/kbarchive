@@ -6,6 +6,8 @@ permalink: /kb/039/Q39574/
 
 ## Q39574: Use a Colon when Assigning a Macro to a Keystroke
 
+{% raw %}
+
 	Article: Q39574
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -22,3 +24,5 @@ permalink: /kb/039/Q39574/
 	The correct example should contain a colon as follows:
 	
 	   Header:ALT+H
+
+{% endraw %}

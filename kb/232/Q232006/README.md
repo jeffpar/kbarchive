@@ -6,6 +6,8 @@ permalink: /kb/232/Q232006/
 
 ## Q232006: XADM: How to Delete a Confidential Message From Exchange Server
 
+{% raw %}
+
 	Article: Q232006
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -124,3 +126,5 @@ permalink: /kb/232/Q232006/
 	
 	=============================================================================
 	
+
+{% endraw %}

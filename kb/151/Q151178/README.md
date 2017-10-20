@@ -6,6 +6,8 @@ permalink: /kb/151/Q151178/
 
 ## Q151178: User Restrictions Under File Manager and Print Manager
 
+{% raw %}
+
 	Article: Q151178
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51
@@ -94,3 +96,5 @@ permalink: /kb/151/Q151178/
 	
 	=============================================================================
 	
+
+{% endraw %}

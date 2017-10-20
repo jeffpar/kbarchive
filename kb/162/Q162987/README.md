@@ -6,6 +6,8 @@ permalink: /kb/162/Q162987/
 
 ## Q162987: WD97: Supported Non-Word File Formats
 
+{% raw %}
+
 	Article: Q162987
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -347,3 +349,5 @@ permalink: /kb/162/Q162987/
 	
 	=============================================================================
 	
+
+{% endraw %}

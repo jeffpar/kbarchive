@@ -6,6 +6,8 @@ permalink: /kb/134/Q134346/
 
 ## Q134346: Remoteboot Workstation Cannot Reconnect After Net 808 Errors
 
+{% raw %}
+
 	Article: Q134346
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2c,3.5
@@ -119,3 +121,5 @@ permalink: /kb/134/Q134346/
 	
 	=============================================================================
 	
+
+{% endraw %}

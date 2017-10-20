@@ -6,6 +6,8 @@ permalink: /kb/185/Q185628/
 
 ## Q185628: PRB: REPORT FORM TO PRINT Results in Incorrect Data
 
+{% raw %}
+
 	Article: Q185628
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a
@@ -288,3 +290,5 @@ permalink: /kb/185/Q185628/
 	
 	=============================================================================
 	
+
+{% endraw %}

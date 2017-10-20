@@ -6,6 +6,8 @@ permalink: /kb/129/Q129115/
 
 ## Q129115: PRLNTSS.SYS Error After Applying Compaq SSD
 
+{% raw %}
+
 	Article: Q129115
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -53,3 +55,5 @@ permalink: /kb/129/Q129115/
 	
 	=============================================================================
 	
+
+{% endraw %}

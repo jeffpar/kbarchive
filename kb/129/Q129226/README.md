@@ -6,6 +6,8 @@ permalink: /kb/129/Q129226/
 
 ## Q129226: PRB: Controls Not Correctly Updated in a Grid
 
+{% raw %}
+
 	Article: Q129226
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -110,3 +112,5 @@ permalink: /kb/129/Q129226/
 	
 	=============================================================================
 	
+
+{% endraw %}

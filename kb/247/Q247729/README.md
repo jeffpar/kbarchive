@@ -6,6 +6,8 @@ permalink: /kb/247/Q247729/
 
 ## Q247729: XCLN: Error Message: The Command You Specified Could Not Be...
 
+{% raw %}
+
 	Article: Q247729
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -82,3 +84,5 @@ permalink: /kb/247/Q247729/
 	
 	=============================================================================
 	
+
+{% endraw %}

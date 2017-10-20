@@ -6,6 +6,8 @@ permalink: /kb/077/Q77243/
 
 ## Q77243: BUG: LinkTimeOut of -1 Waits Only 6553.5 Secs Before Time Out
 
+{% raw %}
+
 	Article: Q77243
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.0,2.0
@@ -69,3 +71,5 @@ permalink: /kb/077/Q77243/
 	
 	=============================================================================
 	
+
+{% endraw %}

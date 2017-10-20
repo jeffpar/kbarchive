@@ -6,6 +6,8 @@ permalink: /kb/058/Q58522/
 
 ## Q58522: Err Msg: C1064 Too Many _text Segments
 
+{% raw %}
+
 	Article: Q58522
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -76,3 +78,5 @@ permalink: /kb/058/Q58522/
 	manual. The alloc_test pragma is detailed on Page 159. The error
 	message (C1064) is documented in the "Microsoft C for MS-DOS and OS/2
 	Operating Systems: Version 5.1 Update" on Page 59.
+
+{% endraw %}

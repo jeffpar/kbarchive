@@ -6,6 +6,8 @@ permalink: /kb/149/Q149157/
 
 ## Q149157: BUG: Some Compiler and Debugger REAL Arithmetic Results Differ
 
+{% raw %}
+
 	Article: Q149157
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -91,3 +93,5 @@ permalink: /kb/149/Q149157/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/303/Q303029/
 
 ## Q303029: Combat Flight Simulator 2: Cannot Control Rudder or Throttle
 
+{% raw %}
+
 	Article: Q303029
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -292,3 +294,5 @@ permalink: /kb/303/Q303029/
 	
 	=============================================================================
 	
+
+{% endraw %}

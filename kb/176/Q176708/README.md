@@ -6,6 +6,8 @@ permalink: /kb/176/Q176708/
 
 ## Q176708: XCON: Memory Leak in Microsoft Exchange Message Transfer Agent
 
+{% raw %}
+
 	Article: Q176708
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -55,3 +57,5 @@ permalink: /kb/176/Q176708/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/318/Q318996/
 
 ## Q318996: How To Delete Internet Cookies In Internet Explorer 5.x For The
 
+{% raw %}
+
 	Article: Q318996
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/318/Q318996/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140276/
 
 ## Q140276: Microsoft Plus! Screen Saver &quot;Hot Corners&quot; Do Not Work
 
+{% raw %}
+
 	Article: Q140276
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -57,3 +59,5 @@ permalink: /kb/140/Q140276/
 	
 	=============================================================================
 	
+
+{% endraw %}

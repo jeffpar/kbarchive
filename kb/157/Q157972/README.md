@@ -6,6 +6,8 @@ permalink: /kb/157/Q157972/
 
 ## Q157972: STL Sample for the basic_string::append Functions
 
+{% raw %}
+
 	Article: Q157972
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -169,3 +171,5 @@ permalink: /kb/157/Q157972/
 	
 	=============================================================================
 	
+
+{% endraw %}

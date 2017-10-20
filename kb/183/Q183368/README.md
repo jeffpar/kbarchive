@@ -6,6 +6,8 @@ permalink: /kb/183/Q183368/
 
 ## Q183368: Requirements to Browse Network with Dial-Up Networking
 
+{% raw %}
+
 	Article: Q183368
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -86,3 +88,5 @@ permalink: /kb/183/Q183368/
 	
 	=============================================================================
 	
+
+{% endraw %}

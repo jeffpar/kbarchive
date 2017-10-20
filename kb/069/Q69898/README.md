@@ -6,6 +6,8 @@ permalink: /kb/069/Q69898/
 
 ## Q69898: Overcoming &quot;C4071 No Function Prototype Given&quot; Warning
 
+{% raw %}
+
 	Article: Q69898
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -74,3 +76,5 @@ permalink: /kb/069/Q69898/
 	
 	=============================================================================
 	
+
+{% endraw %}

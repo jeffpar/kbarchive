@@ -6,6 +6,8 @@ permalink: /kb/114/Q114030/
 
 ## Q114030: PC WRmt: AT&amp;T Credit Card Calling Modem Script
 
+{% raw %}
+
 	Article: Q114030
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -153,3 +155,5 @@ permalink: /kb/114/Q114030/
 	
 	=============================================================================
 	
+
+{% endraw %}

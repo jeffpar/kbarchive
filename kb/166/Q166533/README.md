@@ -6,6 +6,8 @@ permalink: /kb/166/Q166533/
 
 ## Q166533: XFOR: Message Body Corruption Due to Ambiguous Codepage
 
+{% raw %}
+
 	Article: Q166533
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -47,3 +49,5 @@ permalink: /kb/166/Q166533/
 	
 	=============================================================================
 	
+
+{% endraw %}

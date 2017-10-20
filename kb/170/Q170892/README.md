@@ -6,6 +6,8 @@ permalink: /kb/170/Q170892/
 
 ## Q170892: WD97: Document Must Be Open to Change Properties by Macro
 
+{% raw %}
+
 	Article: Q170892
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -136,3 +138,5 @@ permalink: /kb/170/Q170892/
 	
 	=============================================================================
 	
+
+{% endraw %}

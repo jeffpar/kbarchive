@@ -6,6 +6,8 @@ permalink: /kb/185/Q185765/
 
 ## Q185765: HP LaserJet 4Si Driver Unprintable Region is Incorrect
 
+{% raw %}
+
 	Article: Q185765
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/185/Q185765/
 	
 	=============================================================================
 	
+
+{% endraw %}

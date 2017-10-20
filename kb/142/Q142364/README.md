@@ -6,6 +6,8 @@ permalink: /kb/142/Q142364/
 
 ## Q142364: How to Obtain an IDF File Editor for Custom MIDI Instruments
 
+{% raw %}
+
 	Article: Q142364
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -53,3 +55,5 @@ permalink: /kb/142/Q142364/
 	
 	=============================================================================
 	
+
+{% endraw %}

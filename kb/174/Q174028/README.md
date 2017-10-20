@@ -6,6 +6,8 @@ permalink: /kb/174/Q174028/
 
 ## Q174028: XWEB: Date Fields in OWA Meetings and Appointments Do Not Align
 
+{% raw %}
+
 	Article: Q174028
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -45,3 +47,5 @@ permalink: /kb/174/Q174028/
 	
 	=============================================================================
 	
+
+{% endraw %}

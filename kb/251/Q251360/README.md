@@ -6,6 +6,8 @@ permalink: /kb/251/Q251360/
 
 ## Q251360: XFOR: No cc:Mail 8.5 Import and Export w. Connector for cc:Mail
 
+{% raw %}
+
 	Article: Q251360
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -91,3 +93,5 @@ permalink: /kb/251/Q251360/
 	
 	=============================================================================
 	
+
+{% endraw %}

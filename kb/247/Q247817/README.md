@@ -6,6 +6,8 @@ permalink: /kb/247/Q247817/
 
 ## Q247817: WLBS Display Command Produces Inaccurate Event Logs
 
+{% raw %}
+
 	Article: Q247817
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/247/Q247817/
 	
 	=============================================================================
 	
+
+{% endraw %}

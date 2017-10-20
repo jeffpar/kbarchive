@@ -6,6 +6,8 @@ permalink: /kb/047/Q47741/
 
 ## Q47741: Closing stdprn and stdaux May Not Increase Available Handles
 
+{% raw %}
+
 	Article: Q47741
 	Product(s): See article
 	Version(s): 5.10
@@ -99,3 +101,5 @@ permalink: /kb/047/Q47741/
 	When you close handles 3 and 4, they are closed for C but not for DOS.
 	Therefore, you can open exactly as many handles as DOS normally
 	allows.
+
+{% endraw %}

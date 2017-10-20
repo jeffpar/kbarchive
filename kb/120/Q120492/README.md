@@ -6,6 +6,8 @@ permalink: /kb/120/Q120492/
 
 ## Q120492: Periodic Polling Causes Problems with Removable Media
 
+{% raw %}
+
 	Article: Q120492
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10
@@ -74,3 +76,5 @@ permalink: /kb/120/Q120492/
 	
 	=============================================================================
 	
+
+{% endraw %}

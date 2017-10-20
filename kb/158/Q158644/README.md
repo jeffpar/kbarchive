@@ -6,6 +6,8 @@ permalink: /kb/158/Q158644/
 
 ## Q158644: SMS: Windows NT 4.0 Upgrade Job Repeats Continually
 
+{% raw %}
+
 	Article: Q158644
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -63,3 +65,5 @@ permalink: /kb/158/Q158644/
 	
 	=============================================================================
 	
+
+{% endraw %}

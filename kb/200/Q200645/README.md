@@ -6,6 +6,8 @@ permalink: /kb/200/Q200645/
 
 ## Q200645: SMS: Dumpsend.exe: Display Send Request for SMS 2.0
 
+{% raw %}
+
 	Article: Q200645
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -137,3 +139,5 @@ permalink: /kb/200/Q200645/
 	
 	=============================================================================
 	
+
+{% endraw %}

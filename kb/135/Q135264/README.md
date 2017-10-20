@@ -6,6 +6,8 @@ permalink: /kb/135/Q135264/
 
 ## Q135264: PPT7: Genigraphics Wizard Replaces Genigraphics Driver
 
+{% raw %}
+
 	Article: Q135264
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -47,3 +49,5 @@ permalink: /kb/135/Q135264/
 	
 	=============================================================================
 	
+
+{% endraw %}

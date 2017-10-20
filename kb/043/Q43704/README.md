@@ -6,6 +6,8 @@ permalink: /kb/043/Q43704/
 
 ## Q43704: C 5.10 Won't Compile QuickC 2.00 GRDEMO.C and TURTLE.C
 
+{% raw %}
+
 	Article: Q43704
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -29,3 +31,5 @@ permalink: /kb/043/Q43704/
 	as such are not guaranteed to compile with the C 5.10 optimizing
 	compiler. C 5.10 compiles its own demonstration programs without
 	difficulty.
+
+{% endraw %}

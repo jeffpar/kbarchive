@@ -6,6 +6,8 @@ permalink: /kb/065/Q65616/
 
 ## Q65616: Windows 3.0 Disk Directories (5.25 Inch, 360K)
 
+{% raw %}
+
 	Article: Q65616
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0
@@ -476,3 +478,5 @@ permalink: /kb/065/Q65616/
 	
 	=============================================================================
 	
+
+{% endraw %}

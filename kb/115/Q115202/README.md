@@ -6,6 +6,8 @@ permalink: /kb/115/Q115202/
 
 ## Q115202: Backup for Windows Err Msg: This Backup Set Was Created...
 
+{% raw %}
+
 	Article: Q115202
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2
@@ -53,3 +55,5 @@ permalink: /kb/115/Q115202/
 	
 	=============================================================================
 	
+
+{% endraw %}

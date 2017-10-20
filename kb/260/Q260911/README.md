@@ -6,6 +6,8 @@ permalink: /kb/260/Q260911/
 
 ## Q260911: AoE II: Unable to Connect by Using Direct Cable Connection
 
+{% raw %}
+
 	Article: Q260911
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2.0
@@ -155,3 +157,5 @@ permalink: /kb/260/Q260911/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130276/
 
 ## Q130276: FIX: C2065 Error on Functions Returns Template Class By Value
 
+{% raw %}
+
 	Article: Q130276
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -101,3 +103,5 @@ permalink: /kb/130/Q130276/
 	
 	=============================================================================
 	
+
+{% endraw %}

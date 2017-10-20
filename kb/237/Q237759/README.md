@@ -6,6 +6,8 @@ permalink: /kb/237/Q237759/
 
 ## Q237759: Avoiding Client Lockouts When Using Client Connection Accounts
 
+{% raw %}
+
 	Article: Q237759
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -230,3 +232,5 @@ permalink: /kb/237/Q237759/
 	
 	=============================================================================
 	
+
+{% endraw %}

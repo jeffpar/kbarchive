@@ -6,6 +6,8 @@ permalink: /kb/097/Q97504/
 
 ## Q97504: MS-DOS: No Interactive Boot Option for the AUTOEXEC.BAT File
 
+{% raw %}
+
 	Article: Q97504
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -56,3 +58,5 @@ permalink: /kb/097/Q97504/
 	
 	=============================================================================
 	
+
+{% endraw %}

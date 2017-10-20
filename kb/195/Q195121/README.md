@@ -6,6 +6,8 @@ permalink: /kb/195/Q195121/
 
 ## Q195121: SNA Server Fails With Access Violation in S1pnsuns()
 
+{% raw %}
+
 	Article: Q195121
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -122,3 +124,5 @@ permalink: /kb/195/Q195121/
 	
 	=============================================================================
 	
+
+{% endraw %}

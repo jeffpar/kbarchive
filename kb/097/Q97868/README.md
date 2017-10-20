@@ -6,6 +6,8 @@ permalink: /kb/097/Q97868/
 
 ## Q97868: Uninstall Doesn't Run If It Finds DoubleSpace Files
 
+{% raw %}
+
 	Article: Q97868
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -88,3 +90,5 @@ permalink: /kb/097/Q97868/
 	
 	=============================================================================
 	
+
+{% endraw %}

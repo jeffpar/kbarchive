@@ -6,6 +6,8 @@ permalink: /kb/135/Q135317/
 
 ## Q135317: Application Exception in SNA Server 802.2 Link Service
 
+{% raw %}
+
 	Article: Q135317
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11
@@ -65,3 +67,5 @@ permalink: /kb/135/Q135317/
 	
 	=============================================================================
 	
+
+{% endraw %}

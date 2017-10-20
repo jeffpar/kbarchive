@@ -6,6 +6,8 @@ permalink: /kb/034/Q34251/
 
 ## Q34251: C.TMP Files in Current Directory
 
+{% raw %}
+
 	Article: Q34251
 	Product(s): See article
 	Version(s): 1.00
@@ -33,3 +35,5 @@ permalink: /kb/034/Q34251/
 	When using M on DOS Versions 2.x, change the tag field of the TOOLS.INI
 	from [M] to [C] and set the INIT environment variable to the directory
 	that contains TOOLS.INI.
+
+{% endraw %}

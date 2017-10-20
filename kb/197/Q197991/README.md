@@ -6,6 +6,8 @@ permalink: /kb/197/Q197991/
 
 ## Q197991: How to Configure WLBS Using Multiple Network Interface Cards
 
+{% raw %}
+
 	Article: Q197991
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -152,3 +154,5 @@ permalink: /kb/197/Q197991/
 	
 	=============================================================================
 	
+
+{% endraw %}

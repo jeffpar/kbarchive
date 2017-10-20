@@ -6,6 +6,8 @@ permalink: /kb/162/Q162156/
 
 ## Q162156: Encarta 97: Problems Starting Web Browser From Encarta
 
+{% raw %}
+
 	Article: Q162156
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997
@@ -199,3 +201,5 @@ permalink: /kb/162/Q162156/
 	
 	=============================================================================
 	
+
+{% endraw %}

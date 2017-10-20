@@ -6,6 +6,8 @@ permalink: /kb/298/Q298985/
 
 ## Q298985: AUTOMAP: &quot;Unable to Get Directions&quot; Err Msg Creating Route
 
+{% raw %}
+
 	Article: Q298985
 	Product(s): Microsoft Automap
 	Version(s): 1.0
@@ -76,3 +78,5 @@ permalink: /kb/298/Q298985/
 	
 	=============================================================================
 	
+
+{% endraw %}

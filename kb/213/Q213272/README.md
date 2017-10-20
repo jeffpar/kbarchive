@@ -6,6 +6,8 @@ permalink: /kb/213/Q213272/
 
 ## Q213272: SMS: Class Rights in User Manager Are Not Added to Groups
 
+{% raw %}
+
 	Article: Q213272
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -51,3 +53,5 @@ permalink: /kb/213/Q213272/
 	
 	=============================================================================
 	
+
+{% endraw %}

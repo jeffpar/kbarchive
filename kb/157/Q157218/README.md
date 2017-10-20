@@ -6,6 +6,8 @@ permalink: /kb/157/Q157218/
 
 ## Q157218: Possible Data Corruption w/ SNA Windows 95 Client Using TCP/IP
 
+{% raw %}
+
 	Article: Q157218
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -75,3 +77,5 @@ permalink: /kb/157/Q157218/
 	
 	=============================================================================
 	
+
+{% endraw %}

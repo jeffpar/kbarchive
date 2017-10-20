@@ -6,6 +6,8 @@ permalink: /kb/145/Q145044/
 
 ## Q145044: WD97: Document Corrupt After Editing Word 2.0 Document
 
+{% raw %}
+
 	Article: Q145044
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -93,3 +95,5 @@ permalink: /kb/145/Q145044/
 	
 	=============================================================================
 	
+
+{% endraw %}

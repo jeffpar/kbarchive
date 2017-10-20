@@ -6,6 +6,8 @@ permalink: /kb/108/Q108738/
 
 ## Q108738: Browsing Non-Networked Computers Over RAS
 
+{% raw %}
+
 	Article: Q108738
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,3.1,4.0
@@ -73,3 +75,5 @@ permalink: /kb/108/Q108738/
 	
 	=============================================================================
 	
+
+{% endraw %}

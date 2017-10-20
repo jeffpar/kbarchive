@@ -6,6 +6,8 @@ permalink: /kb/073/Q73600/
 
 ## Q73600: Adaptec ACB-2372 Controller Board and Expanded Memory
 
+{% raw %}
+
 	Article: Q73600
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22; WINDOWS:3.0,3.0a,3.1,3.11
@@ -77,3 +79,5 @@ permalink: /kb/073/Q73600/
 	
 	=============================================================================
 	
+
+{% endraw %}

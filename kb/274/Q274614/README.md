@@ -6,6 +6,8 @@ permalink: /kb/274/Q274614/
 
 ## Q274614: CFS2: Invalid Page Fault or Fatal Exception in Terrain.dll
 
+{% raw %}
+
 	Article: Q274614
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/274/Q274614/
 	
 	=============================================================================
 	
+
+{% endraw %}

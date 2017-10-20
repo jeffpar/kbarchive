@@ -6,6 +6,8 @@ permalink: /kb/155/Q155644/
 
 ## Q155644: Available Resources for Windows NT 4.0 Deployment
 
+{% raw %}
+
 	Article: Q155644
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/155/Q155644/
 	
 	=============================================================================
 	
+
+{% endraw %}

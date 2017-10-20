@@ -6,6 +6,8 @@ permalink: /kb/272/Q272228/
 
 ## Q272228: SSL Connections Delayed During Initial Connection to Web Server
 
+{% raw %}
+
 	Article: Q272228
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -89,3 +91,5 @@ permalink: /kb/272/Q272228/
 	
 	=============================================================================
 	
+
+{% endraw %}

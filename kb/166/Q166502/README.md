@@ -6,6 +6,8 @@ permalink: /kb/166/Q166502/
 
 ## Q166502: Win95 Workgroup Name Overwrites Static Computername in WINS DB
 
+{% raw %}
+
 	Article: Q166502
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0;Win95
@@ -78,3 +80,5 @@ permalink: /kb/166/Q166502/
 	
 	=============================================================================
 	
+
+{% endraw %}

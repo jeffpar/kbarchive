@@ -6,6 +6,8 @@ permalink: /kb/051/Q51463/
 
 ## Q51463: PPT: How to Copy Slides Between PowerPoint Presentations
 
+{% raw %}
+
 	Article: Q51463
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:2.0,2.01,3.0,4.0; WINDOWS:3.0,4.0,7.0
@@ -61,3 +63,5 @@ permalink: /kb/051/Q51463/
 	
 	=============================================================================
 	
+
+{% endraw %}

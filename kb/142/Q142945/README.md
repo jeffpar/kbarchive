@@ -6,6 +6,8 @@ permalink: /kb/142/Q142945/
 
 ## Q142945: Problems Installing SRAM or Flash Memory Cards in Windows 95
 
+{% raw %}
+
 	Article: Q142945
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -85,3 +87,5 @@ permalink: /kb/142/Q142945/
 	
 	=============================================================================
 	
+
+{% endraw %}

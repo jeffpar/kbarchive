@@ -6,6 +6,8 @@ permalink: /kb/188/Q188272/
 
 ## Q188272: SBS IMC 4106 Event: The Parameter is Incorrect
 
+{% raw %}
+
 	Article: Q188272
 	Product(s): Microsoft Exchange
 	Version(s): 4.5,5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/188/Q188272/
 	
 	=============================================================================
 	
+
+{% endraw %}

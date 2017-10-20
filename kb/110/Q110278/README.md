@@ -6,6 +6,8 @@ permalink: /kb/110/Q110278/
 
 ## Q110278: WD97: WordPerfect Key Strokes Defined
 
+{% raw %}
+
 	Article: Q110278
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -130,3 +132,5 @@ permalink: /kb/110/Q110278/
 	
 	=============================================================================
 	
+
+{% endraw %}

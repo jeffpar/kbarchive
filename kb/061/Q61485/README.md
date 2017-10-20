@@ -6,6 +6,8 @@ permalink: /kb/061/Q61485/
 
 ## Q61485: Maximum Number of ISAM Files Open at Once in BASIC 7.00/7.10
 
+{% raw %}
+
 	Article: Q61485
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.10
@@ -76,3 +78,5 @@ permalink: /kb/061/Q61485/
 	This information is taken from page 388 of the "Microsoft BASIC 7.0:
 	Programmer's Guide" for versions 7.00 and 7.10 (Chapter 10, "Database
 	Programming with ISAM").
+
+{% endraw %}

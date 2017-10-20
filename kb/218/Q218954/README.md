@@ -6,6 +6,8 @@ permalink: /kb/218/Q218954/
 
 ## Q218954: Expedia Err Msg: No Matching Places Were Found
 
+{% raw %}
+
 	Article: Q218954
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -101,3 +103,5 @@ permalink: /kb/218/Q218954/
 	
 	=============================================================================
 	
+
+{% endraw %}

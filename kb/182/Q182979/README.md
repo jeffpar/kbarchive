@@ -6,6 +6,8 @@ permalink: /kb/182/Q182979/
 
 ## Q182979: XADM: Function and Effects of the DS/IS Consistency Adjuster
 
+{% raw %}
+
 	Article: Q182979
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -92,3 +94,5 @@ permalink: /kb/182/Q182979/
 	
 	=============================================================================
 	
+
+{% endraw %}

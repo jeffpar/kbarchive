@@ -6,6 +6,8 @@ permalink: /kb/163/Q163658/
 
 ## Q163658: WD97: TOC Doesn't Display Bullets or Paragraph Numbering
 
+{% raw %}
+
 	Article: Q163658
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -140,3 +142,5 @@ permalink: /kb/163/Q163658/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/314/Q314888/
 
 ## Q314888: FIX: OLE DB Provider Improperly Enumerates DBSCHEMA_TABLES
 
+{% raw %}
+
 	Article: Q314888
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -114,3 +116,5 @@ permalink: /kb/314/Q314888/
 	
 	=============================================================================
 	
+
+{% endraw %}

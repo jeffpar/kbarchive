@@ -6,6 +6,8 @@ permalink: /kb/266/Q266742/
 
 ## Q266742: XCON: MTA Logs 9405 Exception Error When Starting on Cluster
 
+{% raw %}
+
 	Article: Q266742
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -75,3 +77,5 @@ permalink: /kb/266/Q266742/
 	
 	=============================================================================
 	
+
+{% endraw %}

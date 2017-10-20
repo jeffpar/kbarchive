@@ -6,6 +6,8 @@ permalink: /kb/050/Q50703/
 
 ## Q50703: C and Pascal Mixed Language: Declare C Libraries First
 
+{% raw %}
+
 	Article: Q50703
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -40,3 +42,5 @@ permalink: /kb/050/Q50703/
 	receiving two copies of routine A, which causes the error. By linking
 	the C library first, only the one object module (with both A and B)
 	will be found, and the symbol will not be multiply defined.
+
+{% endraw %}

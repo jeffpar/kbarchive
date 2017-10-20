@@ -6,6 +6,8 @@ permalink: /kb/232/Q232668/
 
 ## Q232668: SNA Clients Experience Slow Response Time with Terminal Server
 
+{% raw %}
+
 	Article: Q232668
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1,4.0SP2
@@ -75,3 +77,5 @@ permalink: /kb/232/Q232668/
 	
 	=============================================================================
 	
+
+{% endraw %}

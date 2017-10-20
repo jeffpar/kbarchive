@@ -6,6 +6,8 @@ permalink: /kb/075/Q75602/
 
 ## Q75602: Initializing an Array of Structures in C
 
+{% raw %}
+
 	Article: Q75602
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -53,8 +55,8 @@ permalink: /kb/075/Q75602/
 	                              {15,  16,  17} };
 	
 	                          /*  alpha     beta     */ 
-	  struct ttype rgttype[2] = { { {1},   {2,3,4} }, \ 
-	                              { {5},   {6,7,8} }  };
+	  struct ttype rgttype[2] = { {{1},   {2,3,4}}, \ 
+	                              {{5},   {6,7,8}}  };
 	
 	MORE INFORMATION
 	================
@@ -70,3 +72,5 @@ permalink: /kb/075/Q75602/
 	
 	=============================================================================
 	
+
+{% endraw %}

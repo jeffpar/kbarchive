@@ -6,6 +6,8 @@ permalink: /kb/224/Q224190/
 
 ## Q224190: ASP May Leak Memory in Response.CacheControl Method
 
+{% raw %}
+
 	Article: Q224190
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -85,3 +87,5 @@ permalink: /kb/224/Q224190/
 	
 	=============================================================================
 	
+
+{% endraw %}

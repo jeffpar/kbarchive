@@ -6,6 +6,8 @@ permalink: /kb/312/Q312023/
 
 ## Q312023: UuidCreateSequential() Is Not Exported in Rpcrt4.dll from SP6a
 
+{% raw %}
+
 	Article: Q312023
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -93,3 +95,5 @@ permalink: /kb/312/Q312023/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/265/Q265733/
 
 ## Q265733: XADM: How to Disable Public Folder Conflict Message Notification
 
+{% raw %}
+
 	Article: Q265733
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -127,3 +129,5 @@ permalink: /kb/265/Q265733/
 	
 	=============================================================================
 	
+
+{% endraw %}

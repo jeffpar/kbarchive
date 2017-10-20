@@ -6,6 +6,8 @@ permalink: /kb/149/Q149274/
 
 ## Q149274: FIX: SSTab Is Locked When on Modal Form Shown at Load Time
 
+{% raw %}
+
 	Article: Q149274
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -112,3 +114,5 @@ permalink: /kb/149/Q149274/
 	
 	=============================================================================
 	
+
+{% endraw %}

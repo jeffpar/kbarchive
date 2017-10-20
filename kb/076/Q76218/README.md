@@ -6,6 +6,8 @@ permalink: /kb/076/Q76218/
 
 ## Q76218: SWAPFILE.EXE May Not Recognize Logical Drives in Windows
 
+{% raw %}
+
 	Article: Q76218
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -76,3 +78,5 @@ permalink: /kb/076/Q76218/
 	
 	=============================================================================
 	
+
+{% endraw %}

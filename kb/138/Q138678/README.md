@@ -6,6 +6,8 @@ permalink: /kb/138/Q138678/
 
 ## Q138678: HOWTO: Add &amp; Remove Network Connections in Visual FoxPro
 
+{% raw %}
+
 	Article: Q138678
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -146,3 +148,5 @@ permalink: /kb/138/Q138678/
 	
 	=============================================================================
 	
+
+{% endraw %}

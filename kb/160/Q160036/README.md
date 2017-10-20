@@ -6,6 +6,8 @@ permalink: /kb/160/Q160036/
 
 ## Q160036: %OS_VERSION in NetWare Logon Script Returns Incorrect Version
 
+{% raw %}
+
 	Article: Q160036
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2,2.1
@@ -75,3 +77,5 @@ permalink: /kb/160/Q160036/
 	
 	=============================================================================
 	
+
+{% endraw %}

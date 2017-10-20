@@ -6,6 +6,8 @@ permalink: /kb/109/Q109486/
 
 ## Q109486: BUG: Oracle Driver Fails to Find Delimited Identifiers
 
+{% raw %}
+
 	Article: Q109486
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -76,3 +78,5 @@ permalink: /kb/109/Q109486/
 	
 	=============================================================================
 	
+
+{% endraw %}

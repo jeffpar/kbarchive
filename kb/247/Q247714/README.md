@@ -6,6 +6,8 @@ permalink: /kb/247/Q247714/
 
 ## Q247714: Using PUT Command for a Long File Name Causes &quot;HTTP 404&quot; Error
 
+{% raw %}
+
 	Article: Q247714
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -52,3 +54,5 @@ permalink: /kb/247/Q247714/
 	
 	=============================================================================
 	
+
+{% endraw %}

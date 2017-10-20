@@ -6,6 +6,8 @@ permalink: /kb/133/Q133164/
 
 ## Q133164: HOWTO: Define Multiple-Line Grid Headers
 
+{% raw %}
+
 	Article: Q133164
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/133/Q133164/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/244/Q244432/
 
 ## Q244432: Designing Relational Database Systems Comments and Corrections
 
+{% raw %}
+
 	Article: Q244432
 	Product(s): Microsoft Press
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/244/Q244432/
 	
 	=============================================================================
 	
+
+{% endraw %}

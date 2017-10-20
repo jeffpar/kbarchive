@@ -6,6 +6,8 @@ permalink: /kb/068/Q68167/
 
 ## Q68167: Saving Memory with TSRs and Windows 3.0
 
+{% raw %}
+
 	Article: Q68167
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a
@@ -54,3 +56,5 @@ permalink: /kb/068/Q68167/
 	
 	=============================================================================
 	
+
+{% endraw %}

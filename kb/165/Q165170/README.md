@@ -6,6 +6,8 @@ permalink: /kb/165/Q165170/
 
 ## Q165170: HOWTO: Determine the TCP/IP Address
 
+{% raw %}
+
 	Article: Q165170
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/165/Q165170/
 	
 	=============================================================================
 	
+
+{% endraw %}

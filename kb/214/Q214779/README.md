@@ -6,6 +6,8 @@ permalink: /kb/214/Q214779/
 
 ## Q214779: BUG: Uninstallation of Visual Basic 5 .0 Removes Shared VBA File
 
+{% raw %}
+
 	Article: Q214779
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -64,3 +66,5 @@ permalink: /kb/214/Q214779/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/200/Q200785/
 
 ## Q200785: SMS: Site System Connection Accounts
 
+{% raw %}
+
 	Article: Q200785
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -56,3 +58,5 @@ permalink: /kb/200/Q200785/
 	
 	=============================================================================
 	
+
+{% endraw %}

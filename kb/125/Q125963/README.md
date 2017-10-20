@@ -6,6 +6,8 @@ permalink: /kb/125/Q125963/
 
 ## Q125963: IPCONFIG Shows Leftover DHCP Parameters On Non-DHCP Clients
 
+{% raw %}
+
 	Article: Q125963
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/125/Q125963/
 	
 	=============================================================================
 	
+
+{% endraw %}

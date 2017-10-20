@@ -6,6 +6,8 @@ permalink: /kb/257/Q257876/
 
 ## Q257876: HOWTO: Allow Printing from an Exchange Event Script
 
+{% raw %}
+
 	Article: Q257876
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -132,3 +134,5 @@ permalink: /kb/257/Q257876/
 	
 	=============================================================================
 	
+
+{% endraw %}

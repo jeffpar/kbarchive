@@ -6,6 +6,8 @@ permalink: /kb/238/Q238345/
 
 ## Q238345: FIX: Visual SourceSafe OLE Automation Returns Out of Memory
 
+{% raw %}
+
 	Article: Q238345
 	Product(s): Microsoft SourceSafe
 	Version(s): 5.0,6.0
@@ -112,3 +114,5 @@ permalink: /kb/238/Q238345/
 	
 	=============================================================================
 	
+
+{% endraw %}

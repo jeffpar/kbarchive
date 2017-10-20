@@ -6,6 +6,8 @@ permalink: /kb/151/Q151822/
 
 ## Q151822: PRB: Visigenic Oracle Driver Case-Sensitive w/ Catalog API
 
+{% raw %}
+
 	Article: Q151822
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/151/Q151822/
 	
 	=============================================================================
 	
+
+{% endraw %}

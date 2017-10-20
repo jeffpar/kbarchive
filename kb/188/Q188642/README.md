@@ -6,6 +6,8 @@ permalink: /kb/188/Q188642/
 
 ## Q188642: XADM: Monitoring Client Actions from the Administration Program
 
+{% raw %}
+
 	Article: Q188642
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -84,3 +86,5 @@ permalink: /kb/188/Q188642/
 	
 	=============================================================================
 	
+
+{% endraw %}

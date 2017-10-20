@@ -6,6 +6,8 @@ permalink: /kb/121/Q121270/
 
 ## Q121270: WGAO Error 2116: The Device or Directory Does Not Exist
 
+{% raw %}
+
 	Article: Q121270
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): MS-DOS:3.11
@@ -48,3 +50,5 @@ permalink: /kb/121/Q121270/
 	
 	=============================================================================
 	
+
+{% endraw %}

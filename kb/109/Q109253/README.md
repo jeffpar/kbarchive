@@ -6,6 +6,8 @@ permalink: /kb/109/Q109253/
 
 ## Q109253: CONN: Gateway Configuration Must Be Updated During Install
 
+{% raw %}
+
 	Article: Q109253
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2
@@ -44,3 +46,5 @@ permalink: /kb/109/Q109253/
 	
 	=============================================================================
 	
+
+{% endraw %}

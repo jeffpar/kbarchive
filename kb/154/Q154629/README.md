@@ -6,6 +6,8 @@ permalink: /kb/154/Q154629/
 
 ## Q154629: Automating Remote RAS Logons Using PAD.INF Scripts
 
+{% raw %}
+
 	Article: Q154629
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.0,1.1,1.1a,2.1,2.1a,2.2,2.2a,2.2b,2.2c,3.1,3.5,3.51,4.0
@@ -452,3 +454,5 @@ permalink: /kb/154/Q154629/
 	
 	=============================================================================
 	
+
+{% endraw %}

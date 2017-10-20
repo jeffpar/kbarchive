@@ -6,6 +6,8 @@ permalink: /kb/116/Q116155/
 
 ## Q116155: Sharp Fax Machines Incompatible with Class 2 Fax Modems
 
+{% raw %}
+
 	Article: Q116155
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -35,3 +37,5 @@ permalink: /kb/116/Q116155/
 	
 	=============================================================================
 	
+
+{% endraw %}

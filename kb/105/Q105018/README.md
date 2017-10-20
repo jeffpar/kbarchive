@@ -6,6 +6,8 @@ permalink: /kb/105/Q105018/
 
 ## Q105018: X400: Err Msg: Could Not Activate Local TSAP from TTXT.EXE
 
+{% raw %}
+
 	Article: Q105018
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -81,3 +83,5 @@ permalink: /kb/105/Q105018/
 	
 	=============================================================================
 	
+
+{% endraw %}

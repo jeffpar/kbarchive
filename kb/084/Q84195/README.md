@@ -6,6 +6,8 @@ permalink: /kb/084/Q84195/
 
 ## Q84195: Hardware Options When Installing Windows 3.1
 
+{% raw %}
+
 	Article: Q84195
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -221,3 +223,5 @@ permalink: /kb/084/Q84195/
 	
 	=============================================================================
 	
+
+{% endraw %}

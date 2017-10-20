@@ -6,6 +6,8 @@ permalink: /kb/074/Q74391/
 
 ## Q74391: HDRSTORE May Restore Previous DOS Files into the DOS Directory
 
+{% raw %}
+
 	Article: Q74391
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -52,3 +54,5 @@ permalink: /kb/074/Q74391/
 	
 	=============================================================================
 	
+
+{% endraw %}

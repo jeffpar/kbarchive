@@ -6,6 +6,8 @@ permalink: /kb/248/Q248722/
 
 ## Q248722: Plus! for Kids: Cannot Log On When You Upgrade to Windows 2000
 
+{% raw %}
+
 	Article: Q248722
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/248/Q248722/
 	
 	=============================================================================
 	
+
+{% endraw %}

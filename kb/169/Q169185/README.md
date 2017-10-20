@@ -6,6 +6,8 @@ permalink: /kb/169/Q169185/
 
 ## Q169185: Monster Truck Madness Trial Version Is Available
 
+{% raw %}
+
 	Article: Q169185
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -52,3 +54,5 @@ permalink: /kb/169/Q169185/
 	
 	=============================================================================
 	
+
+{% endraw %}

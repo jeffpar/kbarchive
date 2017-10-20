@@ -6,6 +6,8 @@ permalink: /kb/121/Q121273/
 
 ## Q121273: Pressing ENTER After DRVSPACE /DELETE Doesn't Delete Files
 
+{% raw %}
+
 	Article: Q121273
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -60,3 +62,5 @@ permalink: /kb/121/Q121273/
 	
 	=============================================================================
 	
+
+{% endraw %}

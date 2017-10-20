@@ -6,6 +6,8 @@ permalink: /kb/142/Q142162/
 
 ## Q142162: Read-Only Directory Attributes on HP LM/X Computer
 
+{% raw %}
+
 	Article: Q142162
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -55,3 +57,5 @@ permalink: /kb/142/Q142162/
 	
 	=============================================================================
 	
+
+{% endraw %}

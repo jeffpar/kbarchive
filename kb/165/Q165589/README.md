@@ -6,6 +6,8 @@ permalink: /kb/165/Q165589/
 
 ## Q165589: SMS: &quot;Unable To Locate &lt;machine name&gt;&quot; w/Remote Control in WAN
 
+{% raw %}
+
 	Article: Q165589
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -91,3 +93,5 @@ permalink: /kb/165/Q165589/
 	
 	=============================================================================
 	
+
+{% endraw %}

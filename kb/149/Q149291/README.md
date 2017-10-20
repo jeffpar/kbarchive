@@ -6,6 +6,8 @@ permalink: /kb/149/Q149291/
 
 ## Q149291: XCLN: No Button to Remove Members from PDL
 
+{% raw %}
+
 	Article: Q149291
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -45,3 +47,5 @@ permalink: /kb/149/Q149291/
 	
 	=============================================================================
 	
+
+{% endraw %}

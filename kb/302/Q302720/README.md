@@ -6,6 +6,8 @@ permalink: /kb/302/Q302720/
 
 ## Q302720: Primary Account Cannot Be Deleted When Child Accounts Are Presen
 
+{% raw %}
+
 	Article: Q302720
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -74,3 +76,5 @@ permalink: /kb/302/Q302720/
 	
 	=============================================================================
 	
+
+{% endraw %}

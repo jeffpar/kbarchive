@@ -6,6 +6,8 @@ permalink: /kb/131/Q131188/
 
 ## Q131188: Sony IDE CD-ROM Drive and 32-Bit Disk Access
 
+{% raw %}
+
 	Article: Q131188
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -87,3 +89,5 @@ permalink: /kb/131/Q131188/
 	
 	=============================================================================
 	
+
+{% endraw %}

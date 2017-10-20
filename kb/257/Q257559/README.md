@@ -6,6 +6,8 @@ permalink: /kb/257/Q257559/
 
 ## Q257559: Windows 2000 Professional Resource Kit Comments and Corrections
 
+{% raw %}
+
 	Article: Q257559
 	Product(s): Microsoft Press
 	Version(s): 
@@ -221,3 +223,5 @@ permalink: /kb/257/Q257559/
 	
 	=============================================================================
 	
+
+{% endraw %}

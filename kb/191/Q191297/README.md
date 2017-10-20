@@ -6,6 +6,8 @@ permalink: /kb/191/Q191297/
 
 ## Q191297: SMS: SMSEXEC May Dr Watson If a Distribution Server Is Inactive
 
+{% raw %}
+
 	Article: Q191297
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -48,3 +50,5 @@ permalink: /kb/191/Q191297/
 	
 	=============================================================================
 	
+
+{% endraw %}

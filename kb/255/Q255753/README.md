@@ -6,6 +6,8 @@ permalink: /kb/255/Q255753/
 
 ## Q255753: XFOR: How to Determine If SSL Works on the Internet Mail Service
 
+{% raw %}
+
 	Article: Q255753
 	Product(s): Microsoft Exchange
 	Version(s): 5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/255/Q255753/
 	
 	=============================================================================
 	
+
+{% endraw %}

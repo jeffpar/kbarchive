@@ -6,6 +6,8 @@ permalink: /kb/128/Q128957/
 
 ## Q128957: Optional Components Unavailable When User Profiles Are Enabled
 
+{% raw %}
+
 	Article: Q128957
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -88,3 +90,5 @@ permalink: /kb/128/Q128957/
 	
 	=============================================================================
 	
+
+{% endraw %}

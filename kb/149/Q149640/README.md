@@ -6,6 +6,8 @@ permalink: /kb/149/Q149640/
 
 ## Q149640: XCLN: Private Sensitivity Ignored When Using WordMail
 
+{% raw %}
+
 	Article: Q149640
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -52,3 +54,5 @@ permalink: /kb/149/Q149640/
 	
 	=============================================================================
 	
+
+{% endraw %}

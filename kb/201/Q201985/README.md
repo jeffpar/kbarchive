@@ -6,6 +6,8 @@ permalink: /kb/201/Q201985/
 
 ## Q201985: SMS: Unattended Windows NT Upgrades Need Network Card Settings
 
+{% raw %}
+
 	Article: Q201985
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2,1.2 SP1,1.2 SP2,1.2 SP3,1.2 SP4,2.0,2.0 SP1,2.0 SP2
@@ -61,3 +63,5 @@ permalink: /kb/201/Q201985/
 	
 	=============================================================================
 	
+
+{% endraw %}

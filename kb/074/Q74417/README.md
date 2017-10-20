@@ -6,6 +6,8 @@ permalink: /kb/074/Q74417/
 
 ## Q74417: Logimenu or Click Do Not Work with MS-DOS 5.0 or 6.0 Shell
 
+{% raw %}
+
 	Article: Q74417
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0,5.0a,6.0
@@ -55,3 +57,5 @@ permalink: /kb/074/Q74417/
 	
 	=============================================================================
 	
+
+{% endraw %}

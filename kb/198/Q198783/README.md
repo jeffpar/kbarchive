@@ -6,6 +6,8 @@ permalink: /kb/198/Q198783/
 
 ## Q198783: XCON: Receipt Behavior with Message Journaling
 
+{% raw %}
+
 	Article: Q198783
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -50,3 +52,5 @@ permalink: /kb/198/Q198783/
 	
 	=============================================================================
 	
+
+{% endraw %}

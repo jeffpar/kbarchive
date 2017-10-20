@@ -6,6 +6,8 @@ permalink: /kb/096/Q96976/
 
 ## Q96976: LAYOUTS.WRI from Windows Resource Kit Version 3.1 E-K
 
+{% raw %}
+
 	Article: Q96976
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -265,3 +267,5 @@ permalink: /kb/096/Q96976/
 	
 	=============================================================================
 	
+
+{% endraw %}

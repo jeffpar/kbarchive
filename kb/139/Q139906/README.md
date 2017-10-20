@@ -6,6 +6,8 @@ permalink: /kb/139/Q139906/
 
 ## Q139906: GetVersionExA Error in SMS 1.1 Network Monitor for WFW
 
+{% raw %}
+
 	Article: Q139906
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -60,3 +62,5 @@ permalink: /kb/139/Q139906/
 	
 	=============================================================================
 	
+
+{% endraw %}

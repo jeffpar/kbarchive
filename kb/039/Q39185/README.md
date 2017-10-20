@@ -6,6 +6,8 @@ permalink: /kb/039/Q39185/
 
 ## Q39185: BC.EXE &quot;Variable Name Not Unique&quot; Using Period in Identifier
 
+{% raw %}
+
 	Article: Q39185
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -38,3 +40,5 @@ permalink: /kb/039/Q39185/
 	   DIM cur.pos AS INTEGER
 	   DIM cur(1,1) AS INTEGER
 	                   ^Variable Name Not Unique
+
+{% endraw %}

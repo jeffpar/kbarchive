@@ -6,6 +6,8 @@ permalink: /kb/112/Q112837/
 
 ## Q112837: PRB: &quot;SQL Column '&lt;Memvar&gt;' Not Found&quot; and Empty RQBE Window
 
+{% raw %}
+
 	Article: Q112837
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b; MS-DOS:2.0,2.5,2.5a,2.5b; WINDOWS:2.5,2.5a,2.5b,3.0
@@ -96,3 +98,5 @@ permalink: /kb/112/Q112837/
 	
 	=============================================================================
 	
+
+{% endraw %}

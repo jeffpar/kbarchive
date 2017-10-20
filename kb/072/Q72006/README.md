@@ -6,6 +6,8 @@ permalink: /kb/072/Q72006/
 
 ## Q72006: AST Premium 286 Does Not Require Selection During Setup
 
+{% raw %}
+
 	Article: Q72006
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -38,3 +40,5 @@ permalink: /kb/072/Q72006/
 	
 	=============================================================================
 	
+
+{% endraw %}

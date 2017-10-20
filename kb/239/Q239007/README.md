@@ -6,6 +6,8 @@ permalink: /kb/239/Q239007/
 
 ## Q239007: XCON: User Name Mapping Issues When Implementing MTA MIXER
 
+{% raw %}
+
 	Article: Q239007
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -103,3 +105,5 @@ permalink: /kb/239/Q239007/
 	
 	=============================================================================
 	
+
+{% endraw %}

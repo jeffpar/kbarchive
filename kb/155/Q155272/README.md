@@ -6,6 +6,8 @@ permalink: /kb/155/Q155272/
 
 ## Q155272: Cogent eMaster 110 Network Card Detected as DEC 21140
 
+{% raw %}
+
 	Article: Q155272
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -72,3 +74,5 @@ permalink: /kb/155/Q155272/
 	
 	=============================================================================
 	
+
+{% endraw %}

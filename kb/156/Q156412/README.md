@@ -6,6 +6,8 @@ permalink: /kb/156/Q156412/
 
 ## Q156412: Index Server Will Not Index Virtual Directories
 
+{% raw %}
+
 	Article: Q156412
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0; :
@@ -71,3 +73,5 @@ permalink: /kb/156/Q156412/
 	
 	=============================================================================
 	
+
+{% endraw %}

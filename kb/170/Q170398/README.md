@@ -6,6 +6,8 @@ permalink: /kb/170/Q170398/
 
 ## Q170398: XADM: Error Applying Service Pack
 
+{% raw %}
+
 	Article: Q170398
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -56,3 +58,5 @@ permalink: /kb/170/Q170398/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85181/
 
 ## Q85181: Central Point Backup Version 7.2 May Remap Keys in Windows 3.1
 
+{% raw %}
+
 	Article: Q85181
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/085/Q85181/
 	
 	=============================================================================
 	
+
+{% endraw %}

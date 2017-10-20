@@ -6,6 +6,8 @@ permalink: /kb/195/Q195227/
 
 ## Q195227: SP4 Security Configuration Manager Available for Download
 
+{% raw %}
+
 	Article: Q195227
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/195/Q195227/
 	
 	=============================================================================
 	
+
+{% endraw %}

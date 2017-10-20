@@ -6,6 +6,8 @@ permalink: /kb/136/Q136922/
 
 ## Q136922: PRB: Cannot Print Grid Lines
 
+{% raw %}
+
 	Article: Q136922
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -39,3 +41,5 @@ permalink: /kb/136/Q136922/
 	
 	=============================================================================
 	
+
+{% endraw %}

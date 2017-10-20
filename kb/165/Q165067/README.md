@@ -6,6 +6,8 @@ permalink: /kb/165/Q165067/
 
 ## Q165067: FIX: Memory Leak Using CLEAR ALL on Subclass with Array
 
+{% raw %}
+
 	Article: Q165067
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -96,3 +98,5 @@ permalink: /kb/165/Q165067/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/152/Q152914/
 
 ## Q152914: XCON: MTA Terminates Unexpectedly with Event ID 2050
 
+{% raw %}
+
 	Article: Q152914
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/152/Q152914/
 	
 	=============================================================================
 	
+
+{% endraw %}

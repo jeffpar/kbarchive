@@ -6,6 +6,8 @@ permalink: /kb/045/Q45707/
 
 ## Q45707: Problem Debugging StartSession from a Child Process
 
+{% raw %}
+
 	Article: Q45707
 	Product(s): See article
 	Version(s): 2.30
@@ -123,3 +125,5 @@ permalink: /kb/045/Q45707/
 	{
 	  VioWrtTTY ("In test session", 15, 0);
 	}
+
+{% endraw %}

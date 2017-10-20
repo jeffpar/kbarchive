@@ -6,6 +6,8 @@ permalink: /kb/128/Q128095/
 
 ## Q128095: SMS Setup Does Not Update PlatformFlags Table in the Database
 
+{% raw %}
+
 	Article: Q128095
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -42,3 +44,5 @@ permalink: /kb/128/Q128095/
 	
 	=============================================================================
 	
+
+{% endraw %}

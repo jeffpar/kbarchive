@@ -6,6 +6,8 @@ permalink: /kb/099/Q99336/
 
 ## Q99336: PRB: Combined Windows 3.0 and 3.1 Applications
 
+{% raw %}
+
 	Article: Q99336
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0
@@ -105,3 +107,5 @@ permalink: /kb/099/Q99336/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156831/
 
 ## Q156831: Full Court Press: How to Shoot from the Free Throw Line
 
+{% raw %}
+
 	Article: Q156831
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -46,3 +48,5 @@ permalink: /kb/156/Q156831/
 	
 	=============================================================================
 	
+
+{% endraw %}

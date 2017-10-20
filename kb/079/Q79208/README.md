@@ -6,6 +6,8 @@ permalink: /kb/079/Q79208/
 
 ## Q79208: FIX: Incorrect CV Info for Local Structure in MASM 6.0
 
+{% raw %}
+
 	Article: Q79208
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -100,3 +102,5 @@ permalink: /kb/079/Q79208/
 	
 	=============================================================================
 	
+
+{% endraw %}

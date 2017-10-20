@@ -6,6 +6,8 @@ permalink: /kb/316/Q316647/
 
 ## Q316647: PRB: Merge Module (.msm) Files Not Updated by VFP 7.0 SP1
 
+{% raw %}
+
 	Article: Q316647
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0,7.0 SP1
@@ -74,3 +76,5 @@ permalink: /kb/316/Q316647/
 	
 	=============================================================================
 	
+
+{% endraw %}

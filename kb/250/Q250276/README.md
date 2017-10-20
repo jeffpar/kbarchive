@@ -6,6 +6,8 @@ permalink: /kb/250/Q250276/
 
 ## Q250276: HOWTO: Do Right-to-Left and Left-to-Right Mirroring in Win2000
 
+{% raw %}
+
 	Article: Q250276
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -59,3 +61,5 @@ permalink: /kb/250/Q250276/
 	
 	=============================================================================
 	
+
+{% endraw %}

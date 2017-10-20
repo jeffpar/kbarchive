@@ -6,6 +6,8 @@ permalink: /kb/057/Q57638/
 
 ## Q57638: Capturing 320 x 200 MS-DOS Apps in Low Memory
 
+{% raw %}
+
 	Article: Q57638
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -39,3 +41,5 @@ permalink: /kb/057/Q57638/
 	
 	=============================================================================
 	
+
+{% endraw %}

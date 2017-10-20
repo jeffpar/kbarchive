@@ -6,6 +6,8 @@ permalink: /kb/176/Q176212/
 
 ## Q176212: Service Pack 3 May Render Office Application Fonts Too Large
 
+{% raw %}
+
 	Article: Q176212
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0;Win95
@@ -81,3 +83,5 @@ permalink: /kb/176/Q176212/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/032/Q32242/
 
 ## Q32242: The extmake Compile Switch Is Case Sensitive
 
+{% raw %}
+
 	Article: Q32242
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -31,3 +33,5 @@ permalink: /kb/032/Q32242/
 	   c   cl /c /Zep /D LINT_ARGS %s
 	
 	The second command line will be used when compiling a C program.
+
+{% endraw %}

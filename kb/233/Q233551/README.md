@@ -6,6 +6,8 @@ permalink: /kb/233/Q233551/
 
 ## Q233551: Runtime Error 1226 Occurs When Using Diagnostic Playback
 
+{% raw %}
+
 	Article: Q233551
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0SP2
@@ -72,3 +74,5 @@ permalink: /kb/233/Q233551/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/167/Q167966/
 
 ## Q167966: FIX: C2248: Statics in Friends, No Access to Protected Members
 
+{% raw %}
+
 	Article: Q167966
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/167/Q167966/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99494/
 
 ## Q99494: Err Msg Starting Windows: Access to Specified Device, Path...
 
+{% raw %}
+
 	Article: Q99494
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -72,3 +74,5 @@ permalink: /kb/099/Q99494/
 	
 	=============================================================================
 	
+
+{% endraw %}

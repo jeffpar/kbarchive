@@ -6,6 +6,8 @@ permalink: /kb/192/Q192951/
 
 ## Q192951: HOWTO: Install an ActiveX Control for Design-Time Use
 
+{% raw %}
+
 	Article: Q192951
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -63,3 +65,5 @@ permalink: /kb/192/Q192951/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223176/
 
 ## Q223176: Manual Installation of Compression Filter Fails
 
+{% raw %}
+
 	Article: Q223176
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -43,3 +45,5 @@ permalink: /kb/223/Q223176/
 	
 	=============================================================================
 	
+
+{% endraw %}

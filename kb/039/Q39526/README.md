@@ -6,6 +6,8 @@ permalink: /kb/039/Q39526/
 
 ## Q39526: How to Share a Structure Between C and Assembler Modules
 
+{% raw %}
+
 	Article: Q39526
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,6.0,6.0a,6.0b
@@ -102,3 +104,5 @@ permalink: /kb/039/Q39526/
 	
 	=============================================================================
 	
+
+{% endraw %}

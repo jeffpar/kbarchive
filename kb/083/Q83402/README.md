@@ -6,6 +6,8 @@ permalink: /kb/083/Q83402/
 
 ## Q83402: Removing Wingdings Font Disables Flying Windows Screen
 
+{% raw %}
+
 	Article: Q83402
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/083/Q83402/
 	
 	=============================================================================
 	
+
+{% endraw %}

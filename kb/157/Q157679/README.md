@@ -6,6 +6,8 @@ permalink: /kb/157/Q157679/
 
 ## Q157679: SMS: Logon Servers Inventoried Under Wrong Domain
 
+{% raw %}
+
 	Article: Q157679
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -53,3 +55,5 @@ permalink: /kb/157/Q157679/
 	
 	=============================================================================
 	
+
+{% endraw %}

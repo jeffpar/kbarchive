@@ -6,6 +6,8 @@ permalink: /kb/111/Q111572/
 
 ## Q111572: Basic Redir Repeatedly Prompts for User Name &amp; Password
 
+{% raw %}
+
 	Article: Q111572
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -68,3 +70,5 @@ permalink: /kb/111/Q111572/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181929/
 
 ## Q181929: SMSINST: Repackage Does Not Use Variables in .ini File Edits
 
+{% raw %}
+
 	Article: Q181929
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0; winnt:1.1,1.2
@@ -80,3 +82,5 @@ permalink: /kb/181/Q181929/
 	
 	=============================================================================
 	
+
+{% endraw %}

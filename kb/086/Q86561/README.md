@@ -6,6 +6,8 @@ permalink: /kb/086/Q86561/
 
 ## Q86561: Windows Screen Saver Password May Not Be Recognized
 
+{% raw %}
+
 	Article: Q86561
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/086/Q86561/
 	
 	=============================================================================
 	
+
+{% endraw %}

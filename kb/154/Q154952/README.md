@@ -6,6 +6,8 @@ permalink: /kb/154/Q154952/
 
 ## Q154952: Remote Admin Can Access a File for Which Everyone Has No Access
 
+{% raw %}
+
 	Article: Q154952
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,3.51
@@ -70,3 +72,5 @@ permalink: /kb/154/Q154952/
 	
 	=============================================================================
 	
+
+{% endraw %}

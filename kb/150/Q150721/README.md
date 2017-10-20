@@ -6,6 +6,8 @@ permalink: /kb/150/Q150721/
 
 ## Q150721: Bookshelf 96-97 Error when Opening Guide from Bookshelf Folder
 
+{% raw %}
+
 	Article: Q150721
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1996-1997
@@ -54,3 +56,5 @@ permalink: /kb/150/Q150721/
 	
 	=============================================================================
 	
+
+{% endraw %}

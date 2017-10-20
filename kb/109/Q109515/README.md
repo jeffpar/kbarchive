@@ -6,6 +6,8 @@ permalink: /kb/109/Q109515/
 
 ## Q109515: Repeating Window Displays with Microsoft 256-Color SVGA Driver
 
+{% raw %}
+
 	Article: Q109515
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/109/Q109515/
 	
 	=============================================================================
 	
+
+{% endraw %}

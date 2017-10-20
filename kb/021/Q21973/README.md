@@ -6,6 +6,8 @@ permalink: /kb/021/Q21973/
 
 ## Q21973: CTRL+BREAK Doesn't Break Program on Tandy 1000; Use CTRL+HOLD
 
+{% raw %}
+
 	Article: Q21973
 	Product(s): See article
 	Version(s): 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -25,3 +27,5 @@ permalink: /kb/021/Q21973/
 	MS-DOS, to QB.EXE in Microsoft BASIC Compiler Versions 6.00 and 6.00b
 	for MS-DOS, and to QBX.EXE in Microsoft BASIC PDS Version 7.00 for
 	MS-DOS.
+
+{% endraw %}

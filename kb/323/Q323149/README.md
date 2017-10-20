@@ -6,6 +6,8 @@ permalink: /kb/323/Q323149/
 
 ## Q323149: Migrating to MSN Broadband using Macintosh OS 9.2 to OS X
 
+{% raw %}
+
 	Article: Q323149
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -217,3 +219,5 @@ permalink: /kb/323/Q323149/
 	
 	=============================================================================
 	
+
+{% endraw %}

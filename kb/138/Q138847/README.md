@@ -6,6 +6,8 @@ permalink: /kb/138/Q138847/
 
 ## Q138847: BUG: C2572 When Define Function Pointer w/ Default Argument
 
+{% raw %}
+
 	Article: Q138847
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -71,3 +73,5 @@ permalink: /kb/138/Q138847/
 	
 	=============================================================================
 	
+
+{% endraw %}

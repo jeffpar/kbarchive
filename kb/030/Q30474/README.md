@@ -6,6 +6,8 @@ permalink: /kb/030/Q30474/
 
 ## Q30474: BRIEF TOOLS.INI File Assigns Two Commands to F5 in M.EXE
 
+{% raw %}
+
 	Article: Q30474
 	Product(s): See article
 	Version(s): 1.00    | 1.00
@@ -52,3 +54,5 @@ permalink: /kb/030/Q30474/
 	   ;
 	   ;
 	   ; BRIEF is a trademark of UnderWare, INC.
+
+{% endraw %}

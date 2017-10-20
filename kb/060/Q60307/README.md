@@ -6,6 +6,8 @@ permalink: /kb/060/Q60307/
 
 ## Q60307: MASM 5.1 Setup Shows Blank Display on LCD/Mono Monitor
 
+{% raw %}
+
 	Article: Q60307
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:5.1
@@ -51,3 +53,5 @@ permalink: /kb/060/Q60307/
 	
 	=============================================================================
 	
+
+{% endraw %}

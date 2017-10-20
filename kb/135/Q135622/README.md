@@ -6,6 +6,8 @@ permalink: /kb/135/Q135622/
 
 ## Q135622: DOC: Extra Characters After Printing String Comparision
 
+{% raw %}
+
 	Article: Q135622
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -39,3 +41,5 @@ permalink: /kb/135/Q135622/
 	
 	=============================================================================
 	
+
+{% endraw %}

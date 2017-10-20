@@ -6,6 +6,8 @@ permalink: /kb/173/Q173174/
 
 ## Q173174: Activating SNA DLC 802.2 Local SAP 0xC4 Fails with Error #0235
 
+{% raw %}
+
 	Article: Q173174
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 (all SP),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -99,3 +101,5 @@ permalink: /kb/173/Q173174/
 	
 	=============================================================================
 	
+
+{% endraw %}

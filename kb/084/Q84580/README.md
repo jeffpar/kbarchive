@@ -6,6 +6,8 @@ permalink: /kb/084/Q84580/
 
 ## Q84580: Wingz Version 1.0 Prints Fonts at Reduced Size
 
+{% raw %}
+
 	Article: Q84580
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/084/Q84580/
 	
 	=============================================================================
 	
+
+{% endraw %}

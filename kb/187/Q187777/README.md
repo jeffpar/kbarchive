@@ -6,6 +6,8 @@ permalink: /kb/187/Q187777/
 
 ## Q187777: FP: Illegal Comments Removed from HTML Markup Bot
 
+{% raw %}
+
 	Article: Q187777
 	Product(s): Word Front Page
 	Version(s): 1.0
@@ -68,3 +70,5 @@ permalink: /kb/187/Q187777/
 	
 	=============================================================================
 	
+
+{% endraw %}

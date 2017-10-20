@@ -6,6 +6,8 @@ permalink: /kb/260/Q260227/
 
 ## Q260227: BUG: &quot;File is in use&quot; Error with Only One User
 
+{% raw %}
+
 	Article: Q260227
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0
@@ -127,3 +129,5 @@ permalink: /kb/260/Q260227/
 	
 	=============================================================================
 	
+
+{% endraw %}

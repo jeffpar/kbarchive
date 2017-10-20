@@ -6,6 +6,8 @@ permalink: /kb/168/Q168451/
 
 ## Q168451: Cached IP Address Never Expires for SNMP Trap Destination
 
+{% raw %}
+
 	Article: Q168451
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.5,3.51,4.0
@@ -62,3 +64,5 @@ permalink: /kb/168/Q168451/
 	
 	=============================================================================
 	
+
+{% endraw %}

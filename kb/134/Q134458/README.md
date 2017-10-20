@@ -6,6 +6,8 @@ permalink: /kb/134/Q134458/
 
 ## Q134458: What's New in PowerPoint for Windows 95: Working with Slides
 
+{% raw %}
+
 	Article: Q134458
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -77,3 +79,5 @@ permalink: /kb/134/Q134458/
 	
 	=============================================================================
 	
+
+{% endraw %}

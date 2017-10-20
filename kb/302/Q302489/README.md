@@ -6,6 +6,8 @@ permalink: /kb/302/Q302489/
 
 ## Q302489: MechWarrior: Error 0036: Old File Not Found
 
+{% raw %}
+
 	Article: Q302489
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -259,3 +261,5 @@ permalink: /kb/302/Q302489/
 	
 	=============================================================================
 	
+
+{% endraw %}

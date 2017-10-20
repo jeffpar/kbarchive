@@ -6,6 +6,8 @@ permalink: /kb/130/Q130828/
 
 ## Q130828: Program Manager Window Moves Upward on Screen
 
+{% raw %}
+
 	Article: Q130828
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95 4.00
@@ -64,3 +66,5 @@ permalink: /kb/130/Q130828/
 	
 	=============================================================================
 	
+
+{% endraw %}

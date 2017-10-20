@@ -6,6 +6,8 @@ permalink: /kb/126/Q126876/
 
 ## Q126876: Baseball 1995: BS95READ.TXT Contents (Part 1 of 3)
 
+{% raw %}
+
 	Article: Q126876
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -276,3 +278,5 @@ permalink: /kb/126/Q126876/
 	
 	=============================================================================
 	
+
+{% endraw %}

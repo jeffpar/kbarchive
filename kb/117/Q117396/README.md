@@ -6,6 +6,8 @@ permalink: /kb/117/Q117396/
 
 ## Q117396: Printing Options for Client Service for NetWare
 
+{% raw %}
+
 	Article: Q117396
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -57,3 +59,5 @@ permalink: /kb/117/Q117396/
 	
 	=============================================================================
 	
+
+{% endraw %}

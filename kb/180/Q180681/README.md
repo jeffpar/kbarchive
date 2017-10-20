@@ -6,6 +6,8 @@ permalink: /kb/180/Q180681/
 
 ## Q180681: BUG: HRESULT 8000ffff When Creating Instance of COMTI Component
 
+{% raw %}
+
 	Article: Q180681
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0
@@ -69,3 +71,5 @@ permalink: /kb/180/Q180681/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/179/Q179442/
 
 ## Q179442: How to Configure a Firewall for Domains and Trusts
 
+{% raw %}
+
 	Article: Q179442
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -118,3 +120,5 @@ permalink: /kb/179/Q179442/
 	
 	=============================================================================
 	
+
+{% endraw %}

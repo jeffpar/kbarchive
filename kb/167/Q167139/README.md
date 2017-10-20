@@ -6,6 +6,8 @@ permalink: /kb/167/Q167139/
 
 ## Q167139: XFOR: MSMI Reports Errors 2563 and 2450
 
+{% raw %}
+
 	Article: Q167139
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -75,3 +77,5 @@ permalink: /kb/167/Q167139/
 	
 	=============================================================================
 	
+
+{% endraw %}

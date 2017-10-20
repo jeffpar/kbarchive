@@ -6,6 +6,8 @@ permalink: /kb/045/Q45538/
 
 ## Q45538: fcvt() Incorrectly Prototyped in QuickC Advisor
 
+{% raw %}
+
 	Article: Q45538
 	Product(s): See article
 	Version(s): 2.00
@@ -24,3 +26,5 @@ permalink: /kb/045/Q45538/
 	
 	The second parameter is documented as being "inc count"; it should be
 	"int count".
+
+{% endraw %}

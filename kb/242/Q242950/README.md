@@ -6,6 +6,8 @@ permalink: /kb/242/Q242950/
 
 ## Q242950: Registry Settings Are Not Migrated During Upgrade
 
+{% raw %}
+
 	Article: Q242950
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; Win2000:95
@@ -102,3 +104,5 @@ permalink: /kb/242/Q242950/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159514/
 
 ## Q159514: Encarta 97: Error Messages When Launching Collages
 
+{% raw %}
+
 	Article: Q159514
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:95
@@ -112,3 +114,5 @@ permalink: /kb/159/Q159514/
 	
 	=============================================================================
 	
+
+{% endraw %}

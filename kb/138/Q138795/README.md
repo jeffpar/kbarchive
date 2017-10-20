@@ -6,6 +6,8 @@ permalink: /kb/138/Q138795/
 
 ## Q138795: Damaged Monotype Sorts Font Causes Display Problems
 
+{% raw %}
+
 	Article: Q138795
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): WINDOWS:95
@@ -70,3 +72,5 @@ permalink: /kb/138/Q138795/
 	
 	=============================================================================
 	
+
+{% endraw %}

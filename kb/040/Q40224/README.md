@@ -6,6 +6,8 @@ permalink: /kb/040/Q40224/
 
 ## Q40224: Rare Problem with /Exepack Linker Option Can Hang QuickC
 
+{% raw %}
+
 	Article: Q40224
 	Product(s): See article
 	Version(s): 2.00
@@ -34,3 +36,5 @@ permalink: /kb/040/Q40224/
 	Microsoft has confirmed this to be a problem in Version 2.00. We are
 	researching this problem and will post new information as it becomes
 	available.
+
+{% endraw %}

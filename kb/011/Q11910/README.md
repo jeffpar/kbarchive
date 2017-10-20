@@ -6,6 +6,8 @@ permalink: /kb/011/Q11910/
 
 ## Q11910: PRB: SIZE Operator Value
 
+{% raw %}
+
 	Article: Q11910
 	Product(s): Microsoft Macro Assembler
 	Version(s): 4.0,5.0,5.1,6.0
@@ -58,3 +60,5 @@ permalink: /kb/011/Q11910/
 	
 	=============================================================================
 	
+
+{% endraw %}

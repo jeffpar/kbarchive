@@ -6,6 +6,8 @@ permalink: /kb/085/Q85676/
 
 ## Q85676: Windows Help and Help Compiler Capacity Limits
 
+{% raw %}
+
 	Article: Q85676
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -66,3 +68,5 @@ permalink: /kb/085/Q85676/
 	
 	=============================================================================
 	
+
+{% endraw %}

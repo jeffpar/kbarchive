@@ -6,6 +6,8 @@ permalink: /kb/108/Q108443/
 
 ## Q108443: Writer/Artist 1: Document Prints Strangely
 
+{% raw %}
+
 	Article: Q108443
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -71,3 +73,5 @@ permalink: /kb/108/Q108443/
 	
 	=============================================================================
 	
+
+{% endraw %}

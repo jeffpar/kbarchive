@@ -6,6 +6,8 @@ permalink: /kb/166/Q166072/
 
 ## Q166072: Unable to Install the Barr X.25 Link Service
 
+{% raw %}
+
 	Article: Q166072
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/166/Q166072/
 	
 	=============================================================================
 	
+
+{% endraw %}

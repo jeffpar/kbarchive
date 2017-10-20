@@ -6,6 +6,8 @@ permalink: /kb/158/Q158800/
 
 ## Q158800: PRB: Duplicate Entries While Browsing in Class Browser
 
+{% raw %}
+
 	Article: Q158800
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -57,3 +59,5 @@ permalink: /kb/158/Q158800/
 	
 	=============================================================================
 	
+
+{% endraw %}

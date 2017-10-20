@@ -6,6 +6,8 @@ permalink: /kb/076/Q76803/
 
 ## Q76803: Novell Causes &quot;Cannot Load COMMAND.COM&quot; After Upgrading MS-DOS
 
+{% raw %}
+
 	Article: Q76803
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -105,3 +107,5 @@ permalink: /kb/076/Q76803/
 	
 	=============================================================================
 	
+
+{% endraw %}

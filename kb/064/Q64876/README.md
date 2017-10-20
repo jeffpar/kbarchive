@@ -6,6 +6,8 @@ permalink: /kb/064/Q64876/
 
 ## Q64876: &quot;Insufficient EMS to Load Overlays&quot; at Run Time in 7.00, 7.10
 
+{% raw %}
+
 	Article: Q64876
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -84,3 +86,5 @@ permalink: /kb/064/Q64876/
 	
 	See also the section "Linking with Overlays" on Pages 612-614 in the
 	"Microsoft BASIC 7.0: Programmer's Guide" for versions 7.00 and 7.10.
+
+{% endraw %}

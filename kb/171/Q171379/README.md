@@ -6,6 +6,8 @@ permalink: /kb/171/Q171379/
 
 ## Q171379: HOWTO: Use the Proxy Property in the Internet Transfer Control
 
+{% raw %}
+
 	Article: Q171379
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -142,3 +144,5 @@ permalink: /kb/171/Q171379/
 	
 	=============================================================================
 	
+
+{% endraw %}

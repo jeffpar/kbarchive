@@ -6,6 +6,8 @@ permalink: /kb/143/Q143100/
 
 ## Q143100: FP: Using a Folder (Directory) Other Than Content
 
+{% raw %}
+
 	Article: Q143100
 	Product(s): Word Front Page
 	Version(s): 1.0,1.1
@@ -86,3 +88,5 @@ permalink: /kb/143/Q143100/
 	
 	=============================================================================
 	
+
+{% endraw %}

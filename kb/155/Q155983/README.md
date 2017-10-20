@@ -6,6 +6,8 @@ permalink: /kb/155/Q155983/
 
 ## Q155983: WD97: InsertBreak Statement Inserts a Carriage Return
 
+{% raw %}
+
 	Article: Q155983
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -78,3 +80,5 @@ permalink: /kb/155/Q155983/
 	
 	=============================================================================
 	
+
+{% endraw %}

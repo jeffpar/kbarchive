@@ -6,6 +6,8 @@ permalink: /kb/180/Q180401/
 
 ## Q180401: XADM: Directory Replication After Site Address Is Changed
 
+{% raw %}
+
 	Article: Q180401
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -81,3 +83,5 @@ permalink: /kb/180/Q180401/
 	
 	=============================================================================
 	
+
+{% endraw %}

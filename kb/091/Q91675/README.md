@@ -6,6 +6,8 @@ permalink: /kb/091/Q91675/
 
 ## Q91675: Inactive DOS Window After Exiting Non-Windows Application
 
+{% raw %}
+
 	Article: Q91675
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -46,3 +48,5 @@ permalink: /kb/091/Q91675/
 	
 	=============================================================================
 	
+
+{% endraw %}

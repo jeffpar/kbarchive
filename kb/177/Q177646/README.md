@@ -6,6 +6,8 @@ permalink: /kb/177/Q177646/
 
 ## Q177646: Stop 0x0000000A with IOMEGA JAZ Drive
 
+{% raw %}
+
 	Article: Q177646
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -65,3 +67,5 @@ permalink: /kb/177/Q177646/
 	
 	=============================================================================
 	
+
+{% endraw %}

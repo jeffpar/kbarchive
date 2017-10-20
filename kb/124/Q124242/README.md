@@ -6,6 +6,8 @@ permalink: /kb/124/Q124242/
 
 ## Q124242: Forced Disconnect for Macintosh Users Not Working
 
+{% raw %}
+
 	Article: Q124242
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -79,3 +81,5 @@ permalink: /kb/124/Q124242/
 	
 	=============================================================================
 	
+
+{% endraw %}

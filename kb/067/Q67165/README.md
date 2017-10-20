@@ -6,6 +6,8 @@ permalink: /kb/067/Q67165/
 
 ## Q67165: AllocCStoDSAlias Function Not Documented &amp; Not Supported
 
+{% raw %}
+
 	Article: Q67165
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0
@@ -40,3 +42,5 @@ permalink: /kb/067/Q67165/
 	
 	=============================================================================
 	
+
+{% endraw %}

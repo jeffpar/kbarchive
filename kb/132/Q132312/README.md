@@ -6,6 +6,8 @@ permalink: /kb/132/Q132312/
 
 ## Q132312: PRB: Can't Find Grid Property to Specify Record for Top Row
 
+{% raw %}
+
 	Article: Q132312
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/132/Q132312/
 	
 	=============================================================================
 	
+
+{% endraw %}

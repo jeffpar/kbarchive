@@ -6,6 +6,8 @@ permalink: /kb/112/Q112595/
 
 ## Q112595: Service Control Manager Event 7024 (2550)
 
+{% raw %}
+
 	Article: Q112595
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:3.1,3.5,3.51,4.0; :3.1
@@ -92,3 +94,5 @@ permalink: /kb/112/Q112595/
 	
 	=============================================================================
 	
+
+{% endraw %}

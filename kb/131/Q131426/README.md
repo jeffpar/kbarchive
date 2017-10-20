@@ -6,6 +6,8 @@ permalink: /kb/131/Q131426/
 
 ## Q131426: How to Access Physical Memory in 16-bit Windows-Based Apps
 
+{% raw %}
+
 	Article: Q131426
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -402,3 +404,5 @@ permalink: /kb/131/Q131426/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133492/
 
 ## Q133492: Dual Channel PCI SCSI Adapters
 
+{% raw %}
+
 	Article: Q133492
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/133/Q133492/
 	
 	=============================================================================
 	
+
+{% endraw %}

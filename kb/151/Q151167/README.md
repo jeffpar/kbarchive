@@ -6,6 +6,8 @@ permalink: /kb/151/Q151167/
 
 ## Q151167: BUG: LNK2001 Error for Static Member in Class Template
 
+{% raw %}
+
 	Article: Q151167
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.0,2.1,2.2,4.0,4.1,4.2,5.0
@@ -85,3 +87,5 @@ permalink: /kb/151/Q151167/
 	
 	=============================================================================
 	
+
+{% endraw %}

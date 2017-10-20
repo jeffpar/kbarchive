@@ -6,6 +6,8 @@ permalink: /kb/159/Q159596/
 
 ## Q159596: Enabling The Prompt for Multiple Profiles in Windows Messaging
 
+{% raw %}
+
 	Article: Q159596
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/159/Q159596/
 	
 	=============================================================================
 	
+
+{% endraw %}

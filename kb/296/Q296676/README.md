@@ -6,6 +6,8 @@ permalink: /kb/296/Q296676/
 
 ## Q296676: FIX: Unreadable Characters Displayed in Reindexing Information
 
+{% raw %}
+
 	Article: Q296676
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,5.0,6.0
@@ -67,3 +69,5 @@ permalink: /kb/296/Q296676/
 	
 	=============================================================================
 	
+
+{% endraw %}

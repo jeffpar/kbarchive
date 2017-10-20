@@ -6,6 +6,8 @@ permalink: /kb/095/Q95112/
 
 ## Q95112: NIC at I/O Port of 0360h May Prevent Local Printing
 
+{% raw %}
+
 	Article: Q95112
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/095/Q95112/
 	
 	=============================================================================
 	
+
+{% endraw %}

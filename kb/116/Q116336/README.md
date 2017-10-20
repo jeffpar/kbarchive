@@ -6,6 +6,8 @@ permalink: /kb/116/Q116336/
 
 ## Q116336: README.TXT: Microsoft MS-DOS 6.22 Upgrade (Part 3 of 3)
 
+{% raw %}
+
 	Article: Q116336
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -674,3 +676,5 @@ permalink: /kb/116/Q116336/
 	
 	=============================================================================
 	
+
+{% endraw %}

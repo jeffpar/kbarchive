@@ -6,6 +6,8 @@ permalink: /kb/227/Q227203/
 
 ## Q227203: Baseball 2000: Setup Hangs Before Installation Is Complete
 
+{% raw %}
+
 	Article: Q227203
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -79,3 +81,5 @@ permalink: /kb/227/Q227203/
 	
 	=============================================================================
 	
+
+{% endraw %}

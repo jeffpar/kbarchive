@@ -6,6 +6,8 @@ permalink: /kb/011/Q11876/
 
 ## Q11876: C 5.00/5.10 Give &quot;Constant Too Large&quot; with Decimal Initializer
 
+{% raw %}
+
 	Article: Q11876
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 | 5.10
@@ -57,3 +59,5 @@ permalink: /kb/011/Q11876/
 	Beginning with C version 6.00, long constants can be initialized to
 	decimal values larger than MAX_LONG (as per the ANSI draft standard),
 	so this is no longer a problem at compilation time.
+
+{% endraw %}

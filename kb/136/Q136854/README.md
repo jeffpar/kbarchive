@@ -6,6 +6,8 @@ permalink: /kb/136/Q136854/
 
 ## Q136854: No Limit to Number of Files in Project Manager
 
+{% raw %}
+
 	Article: Q136854
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -34,3 +36,5 @@ permalink: /kb/136/Q136854/
 	
 	=============================================================================
 	
+
+{% endraw %}

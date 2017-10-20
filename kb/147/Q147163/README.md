@@ -6,6 +6,8 @@ permalink: /kb/147/Q147163/
 
 ## Q147163: Err Msg: Launching Regedit Failed: Error Code 00000002
 
+{% raw %}
+
 	Article: Q147163
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -61,3 +63,5 @@ permalink: /kb/147/Q147163/
 	
 	=============================================================================
 	
+
+{% endraw %}

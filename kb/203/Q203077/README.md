@@ -6,6 +6,8 @@ permalink: /kb/203/Q203077/
 
 ## Q203077: BUG: Duplicating Sockets Is Invalid Over IPX/SPX in Windows 9x
 
+{% raw %}
+
 	Article: Q203077
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95,98
@@ -56,3 +58,5 @@ permalink: /kb/203/Q203077/
 	
 	=============================================================================
 	
+
+{% endraw %}

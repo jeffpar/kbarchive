@@ -6,6 +6,8 @@ permalink: /kb/119/Q119208/
 
 ## Q119208: AWFAX: CAS Modem Receives Fax with Jagged Print
 
+{% raw %}
+
 	Article: Q119208
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -48,3 +50,5 @@ permalink: /kb/119/Q119208/
 	
 	=============================================================================
 	
+
+{% endraw %}

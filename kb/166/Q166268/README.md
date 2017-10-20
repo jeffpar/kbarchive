@@ -6,6 +6,8 @@ permalink: /kb/166/Q166268/
 
 ## Q166268: Win3x Client Takes 20 Seconds to Display Logon Dialog Box
 
+{% raw %}
+
 	Article: Q166268
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -70,3 +72,5 @@ permalink: /kb/166/Q166268/
 	
 	=============================================================================
 	
+
+{% endraw %}

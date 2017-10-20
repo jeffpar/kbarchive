@@ -6,6 +6,8 @@ permalink: /kb/183/Q183693/
 
 ## Q183693: Cannot Choose Custom Forms on HP III and HP 4 Family Printers
 
+{% raw %}
+
 	Article: Q183693
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -91,3 +93,5 @@ permalink: /kb/183/Q183693/
 	
 	=============================================================================
 	
+
+{% endraw %}

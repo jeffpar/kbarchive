@@ -6,6 +6,8 @@ permalink: /kb/082/Q82258/
 
 ## Q82258: Page Color Turns Black in PageMaker 4.0
 
+{% raw %}
+
 	Article: Q82258
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 3.1,3.11
@@ -68,3 +70,5 @@ permalink: /kb/082/Q82258/
 	
 	=============================================================================
 	
+
+{% endraw %}

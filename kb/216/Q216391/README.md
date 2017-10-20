@@ -6,6 +6,8 @@ permalink: /kb/216/Q216391/
 
 ## Q216391: BUG: VSS History Not Updated for Modified Word Documents
 
+{% raw %}
+
 	Article: Q216391
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:2000,6.0,97
@@ -106,3 +108,5 @@ permalink: /kb/216/Q216391/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86277/
 
 ## Q86277: Testing the MIDI Mapper to Determine If It's Being Bypassed
 
+{% raw %}
+
 	Article: Q86277
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11; :1.0
@@ -85,3 +87,5 @@ permalink: /kb/086/Q86277/
 	
 	=============================================================================
 	
+
+{% endraw %}

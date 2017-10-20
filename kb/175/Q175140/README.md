@@ -6,6 +6,8 @@ permalink: /kb/175/Q175140/
 
 ## Q175140: Bookshelf/Dictionary: Application Key Does Not Function
 
+{% raw %}
+
 	Article: Q175140
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -60,3 +62,5 @@ permalink: /kb/175/Q175140/
 	
 	=============================================================================
 	
+
+{% endraw %}

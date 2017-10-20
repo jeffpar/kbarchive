@@ -6,6 +6,8 @@ permalink: /kb/086/Q86442/
 
 ## Q86442: Remote Access Service Problems Connecting Mouse Cable
 
+{% raw %}
+
 	Article: Q86442
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/086/Q86442/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274464/
 
 ## Q274464: Outlook Express Shortcut Target URL Invalid After MSN Explorer I
 
+{% raw %}
+
 	Article: Q274464
 	Product(s): The Microsoft Network
 	Version(s): 2.6,6.0
@@ -70,3 +72,5 @@ permalink: /kb/274/Q274464/
 	
 	=============================================================================
 	
+
+{% endraw %}

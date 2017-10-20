@@ -6,6 +6,8 @@ permalink: /kb/262/Q262017/
 
 ## Q262017: Memory Leak in TN3270 Service When Printing Through TN Emulator
 
+{% raw %}
+
 	Article: Q262017
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -62,3 +64,5 @@ permalink: /kb/262/Q262017/
 	
 	=============================================================================
 	
+
+{% endraw %}

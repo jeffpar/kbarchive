@@ -6,6 +6,8 @@ permalink: /kb/261/Q261264/
 
 ## Q261264: Application Program Manager May Generate Exception Error Msgs
 
+{% raw %}
+
 	Article: Q261264
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -58,3 +60,5 @@ permalink: /kb/261/Q261264/
 	
 	=============================================================================
 	
+
+{% endraw %}

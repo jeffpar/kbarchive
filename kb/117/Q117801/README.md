@@ -6,6 +6,8 @@ permalink: /kb/117/Q117801/
 
 ## Q117801: Mac Srv Wkst: Client and Server Must Both Be Same Language
 
+{% raw %}
+
 	Article: Q117801
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,3.0,3.1
@@ -49,3 +51,5 @@ permalink: /kb/117/Q117801/
 	
 	=============================================================================
 	
+
+{% endraw %}

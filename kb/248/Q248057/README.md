@@ -6,6 +6,8 @@ permalink: /kb/248/Q248057/
 
 ## Q248057: How to Remove and Reinstall the Workstation Service
 
+{% raw %}
+
 	Article: Q248057
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -146,3 +148,5 @@ permalink: /kb/248/Q248057/
 	
 	=============================================================================
 	
+
+{% endraw %}

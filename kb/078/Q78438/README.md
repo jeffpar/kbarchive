@@ -6,6 +6,8 @@ permalink: /kb/078/Q78438/
 
 ## Q78438: Newer Epson Computers Use A20 Handler 1 with HIMEM.SYS
 
+{% raw %}
+
 	Article: Q78438
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -64,3 +66,5 @@ permalink: /kb/078/Q78438/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/175/Q175135/
 
 ## Q175135: Unable to View NetWare Print Queues
 
+{% raw %}
+
 	Article: Q175135
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0
@@ -76,3 +78,5 @@ permalink: /kb/175/Q175135/
 	
 	=============================================================================
 	
+
+{% endraw %}

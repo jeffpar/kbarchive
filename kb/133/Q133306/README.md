@@ -6,6 +6,8 @@ permalink: /kb/133/Q133306/
 
 ## Q133306: Maximum Disk Space of 1.99 GB Displayed for NetWare Volume
 
+{% raw %}
+
 	Article: Q133306
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -54,3 +56,5 @@ permalink: /kb/133/Q133306/
 	
 	=============================================================================
 	
+
+{% endraw %}

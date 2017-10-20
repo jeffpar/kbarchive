@@ -6,6 +6,8 @@ permalink: /kb/195/Q195733/
 
 ## Q195733: Denial of Service in Applications Using RPC over Named Pipes
 
+{% raw %}
+
 	Article: Q195733
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -118,3 +120,5 @@ permalink: /kb/195/Q195733/
 	
 	=============================================================================
 	
+
+{% endraw %}

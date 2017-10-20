@@ -6,6 +6,8 @@ permalink: /kb/149/Q149827/
 
 ## Q149827: Explorapedia Nature: How to Run Setup
 
+{% raw %}
+
 	Article: Q149827
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.2
@@ -102,3 +104,5 @@ permalink: /kb/149/Q149827/
 	
 	=============================================================================
 	
+
+{% endraw %}

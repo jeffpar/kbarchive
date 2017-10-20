@@ -6,6 +6,8 @@ permalink: /kb/222/Q222104/
 
 ## Q222104: PRB: &quot;Optional feature not implemented&quot; or &quot;#name&quot; in SQL Srv 7
 
+{% raw %}
+
 	Article: Q222104
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5,3.0,3.5,3.6; winnt:7.0
@@ -93,3 +95,5 @@ permalink: /kb/222/Q222104/
 	
 	=============================================================================
 	
+
+{% endraw %}

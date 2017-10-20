@@ -6,6 +6,8 @@ permalink: /kb/066/Q66143/
 
 ## Q66143: Windows Entertainment Pack Err: Setup Needs Disk #1
 
+{% raw %}
+
 	Article: Q66143
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -35,3 +37,5 @@ permalink: /kb/066/Q66143/
 	
 	=============================================================================
 	
+
+{% endraw %}

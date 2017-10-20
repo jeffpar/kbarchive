@@ -6,6 +6,8 @@ permalink: /kb/142/Q142170/
 
 ## Q142170: PRPFONT - How to Set CPropertySheet Fonts
 
+{% raw %}
+
 	Article: Q142170
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -78,3 +80,5 @@ permalink: /kb/142/Q142170/
 	
 	=============================================================================
 	
+
+{% endraw %}

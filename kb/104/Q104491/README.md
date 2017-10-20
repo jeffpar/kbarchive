@@ -6,6 +6,8 @@ permalink: /kb/104/Q104491/
 
 ## Q104491: Windows NT Does Not Support TAR or COMPRESS for FTP Transfers
 
+{% raw %}
+
 	Article: Q104491
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -52,3 +54,5 @@ permalink: /kb/104/Q104491/
 	
 	=============================================================================
 	
+
+{% endraw %}

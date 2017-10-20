@@ -6,6 +6,8 @@ permalink: /kb/168/Q168012/
 
 ## Q168012: FIX: Incorrect Code Generated When Using Floating-Point and /Og
 
+{% raw %}
+
 	Article: Q168012
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -77,3 +79,5 @@ permalink: /kb/168/Q168012/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171599/
 
 ## Q171599: WD97: Some AutoComplete Tips Do Not Show
 
+{% raw %}
+
 	Article: Q171599
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -106,3 +108,5 @@ permalink: /kb/171/Q171599/
 	
 	=============================================================================
 	
+
+{% endraw %}

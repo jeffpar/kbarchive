@@ -6,6 +6,8 @@ permalink: /kb/123/Q123083/
 
 ## Q123083: Client Hangs Accessing Remote Downlevel LAN Manager Server
 
+{% raw %}
+
 	Article: Q123083
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/123/Q123083/
 	
 	=============================================================================
 	
+
+{% endraw %}

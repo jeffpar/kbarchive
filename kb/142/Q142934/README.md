@@ -6,6 +6,8 @@ permalink: /kb/142/Q142934/
 
 ## Q142934: Problems Using Two Identical Modems in Windows 95
 
+{% raw %}
+
 	Article: Q142934
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -89,3 +91,5 @@ permalink: /kb/142/Q142934/
 	
 	=============================================================================
 	
+
+{% endraw %}

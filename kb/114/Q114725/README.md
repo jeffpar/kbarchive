@@ -6,6 +6,8 @@ permalink: /kb/114/Q114725/
 
 ## Q114725: Incorrect Right Margin with COM10 Center-Fed Envelope
 
+{% raw %}
+
 	Article: Q114725
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -60,3 +62,5 @@ permalink: /kb/114/Q114725/
 	
 	=============================================================================
 	
+
+{% endraw %}

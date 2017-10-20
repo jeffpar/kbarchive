@@ -6,6 +6,8 @@ permalink: /kb/239/Q239536/
 
 ## Q239536: How to Load Printer Drivers from Trusted Source Only
 
+{% raw %}
+
 	Article: Q239536
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -99,3 +101,5 @@ permalink: /kb/239/Q239536/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/322/Q322971/
 
 ## Q322971: XIMS: Internet Mail Service Counters Don't Work in TS Session
 
+{% raw %}
+
 	Article: Q322971
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -62,3 +64,5 @@ permalink: /kb/322/Q322971/
 	
 	=============================================================================
 	
+
+{% endraw %}

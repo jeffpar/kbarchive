@@ -6,6 +6,8 @@ permalink: /kb/181/Q181365/
 
 ## Q181365: WD97: Pleading Wizard Font Point Size Is Too Small or Too Large
 
+{% raw %}
+
 	Article: Q181365
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/181/Q181365/
 	
 	=============================================================================
 	
+
+{% endraw %}

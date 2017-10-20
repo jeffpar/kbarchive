@@ -6,6 +6,8 @@ permalink: /kb/179/Q179110/
 
 ## Q179110: XCLN: Macintosh Client Flashes Splash Screen Without Starting
 
+{% raw %}
+
 	Article: Q179110
 	Product(s): Microsoft Exchange
 	Version(s): MACINTOSH:8.0; WINDOWS:4.0,5.0
@@ -54,3 +56,5 @@ permalink: /kb/179/Q179110/
 	
 	=============================================================================
 	
+
+{% endraw %}

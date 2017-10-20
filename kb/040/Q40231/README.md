@@ -6,6 +6,8 @@ permalink: /kb/040/Q40231/
 
 ## Q40231: Error in Run-Time Library Examples for Font Functions
 
+{% raw %}
+
 	Article: Q40231
 	Product(s): See article
 	Version(s): 2.00
@@ -28,3 +30,5 @@ permalink: /kb/040/Q40231/
 	
 	    _registerfonts, _setfonts, _outgtxt,
 	    _unregisterfonts, _getfontinfo, _gettextextent.
+
+{% endraw %}

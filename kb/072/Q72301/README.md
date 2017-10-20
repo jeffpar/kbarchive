@@ -6,6 +6,8 @@ permalink: /kb/072/Q72301/
 
 ## Q72301: Creating Wallpaper with Windows 3.0 Paintbrush
 
+{% raw %}
+
 	Article: Q72301
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -63,3 +65,5 @@ permalink: /kb/072/Q72301/
 	
 	=============================================================================
 	
+
+{% endraw %}

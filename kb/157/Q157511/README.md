@@ -6,6 +6,8 @@ permalink: /kb/157/Q157511/
 
 ## Q157511: Setup Detects NCR 53c810 PCI SCSI Adapter as Symbios c810
 
+{% raw %}
+
 	Article: Q157511
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -47,3 +49,5 @@ permalink: /kb/157/Q157511/
 	
 	=============================================================================
 	
+
+{% endraw %}

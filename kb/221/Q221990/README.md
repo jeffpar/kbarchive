@@ -6,6 +6,8 @@ permalink: /kb/221/Q221990/
 
 ## Q221990: PRB: Can't Add Windows Common Controls or Common Dialog Control
 
+{% raw %}
+
 	Article: Q221990
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -96,3 +98,5 @@ permalink: /kb/221/Q221990/
 	
 	=============================================================================
 	
+
+{% endraw %}

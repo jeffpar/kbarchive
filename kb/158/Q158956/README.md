@@ -6,6 +6,8 @@ permalink: /kb/158/Q158956/
 
 ## Q158956: XGEN: Cannot Update When Only Exchange Administrator Installed
 
+{% raw %}
+
 	Article: Q158956
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/158/Q158956/
 	
 	=============================================================================
 	
+
+{% endraw %}

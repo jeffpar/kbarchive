@@ -6,6 +6,8 @@ permalink: /kb/103/Q103436/
 
 ## Q103436: Small Computer System Interface (SCSI) Bus Configuration
 
+{% raw %}
+
 	Article: Q103436
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -97,3 +99,5 @@ permalink: /kb/103/Q103436/
 	
 	=============================================================================
 	
+
+{% endraw %}

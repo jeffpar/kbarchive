@@ -6,6 +6,8 @@ permalink: /kb/199/Q199695/
 
 ## Q199695: XCLN: Outlook &amp; Exchange Downloads Outdated GAL from MSMail
 
+{% raw %}
+
 	Article: Q199695
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2.x,3.2,3.2a,3.5,4.0,5.0; :8.0,8.01,8.02,8.03
@@ -102,3 +104,5 @@ permalink: /kb/199/Q199695/
 	
 	=============================================================================
 	
+
+{% endraw %}

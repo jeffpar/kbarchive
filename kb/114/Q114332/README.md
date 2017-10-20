@@ -6,6 +6,8 @@ permalink: /kb/114/Q114332/
 
 ## Q114332: BUG: L2029 Error Truncates Debug Information
 
+{% raw %}
+
 	Article: Q114332
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:5.5,5.6
@@ -68,3 +70,5 @@ permalink: /kb/114/Q114332/
 	
 	=============================================================================
 	
+
+{% endraw %}

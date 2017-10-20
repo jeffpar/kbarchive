@@ -6,6 +6,8 @@ permalink: /kb/172/Q172914/
 
 ## Q172914: CPIC App Traps on SNA Windows 95 Client Running on Windows NT
 
+{% raw %}
+
 	Article: Q172914
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -67,3 +69,5 @@ permalink: /kb/172/Q172914/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172299/
 
 ## Q172299: Snacfg.exe &quot;USER /INSERT&quot; Fails Adding Additional LU
 
+{% raw %}
+
 	Article: Q172299
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0,3.0 SP1
@@ -71,3 +73,5 @@ permalink: /kb/172/Q172299/
 	
 	=============================================================================
 	
+
+{% endraw %}

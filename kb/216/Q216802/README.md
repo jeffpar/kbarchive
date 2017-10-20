@@ -6,6 +6,8 @@ permalink: /kb/216/Q216802/
 
 ## Q216802: Internet Services Manager Fails to Show Installed Proxy Services
 
+{% raw %}
+
 	Article: Q216802
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0a
@@ -140,3 +142,5 @@ permalink: /kb/216/Q216802/
 	
 	=============================================================================
 	
+
+{% endraw %}

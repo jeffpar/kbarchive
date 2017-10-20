@@ -6,6 +6,8 @@ permalink: /kb/167/Q167028/
 
 ## Q167028: XCLN: Err Msg: The Properties for This Item Are Not Available
 
+{% raw %}
+
 	Article: Q167028
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -62,3 +64,5 @@ permalink: /kb/167/Q167028/
 	
 	=============================================================================
 	
+
+{% endraw %}

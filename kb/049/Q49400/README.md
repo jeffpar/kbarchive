@@ -6,6 +6,8 @@ permalink: /kb/049/Q49400/
 
 ## Q49400: Example of Passing Two-Dimensional Fixed-String Array to MASM
 
+{% raw %}
+
 	Article: Q49400
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -90,3 +92,5 @@ permalink: /kb/049/Q49400/
 	     String 21
 	     String 22
 	     String 23
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185088/
 
 ## Q185088: Web Links on Favorites Menu Connect You to Random Web Pages
 
+{% raw %}
+
 	Article: Q185088
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5
@@ -64,3 +66,5 @@ permalink: /kb/185/Q185088/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149259/
 
 ## Q149259: FIX: Class Not Registered Error When Starting Class Browser
 
+{% raw %}
+
 	Article: Q149259
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -108,3 +110,5 @@ permalink: /kb/149/Q149259/
 	
 	=============================================================================
 	
+
+{% endraw %}

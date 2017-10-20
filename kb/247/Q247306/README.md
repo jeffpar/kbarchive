@@ -6,6 +6,8 @@ permalink: /kb/247/Q247306/
 
 ## Q247306: SMS: SMS 2.0 SP1 ICP1 Client Hotfix Bundle
 
+{% raw %}
+
 	Article: Q247306
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1
@@ -414,3 +416,5 @@ permalink: /kb/247/Q247306/
 	
 	=============================================================================
 	
+
+{% endraw %}

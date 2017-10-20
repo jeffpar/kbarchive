@@ -6,6 +6,8 @@ permalink: /kb/039/Q39580/
 
 ## Q39580: QuickBASIC SETUP Only Works from Logical Disk Drive A or B
 
+{% raw %}
+
 	Article: Q39580
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -34,3 +36,5 @@ permalink: /kb/039/Q39580/
 	
 	Versions of QuickBASIC earlier than Version 4.00 do not have a SETUP
 	program.
+
+{% endraw %}

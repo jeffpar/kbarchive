@@ -6,6 +6,8 @@ permalink: /kb/153/Q153500/
 
 ## Q153500: HOWTO: Recover Disk Space in Visual SourceSafe
 
+{% raw %}
+
 	Article: Q153500
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,5.0,6.0
@@ -91,3 +93,5 @@ permalink: /kb/153/Q153500/
 	
 	=============================================================================
 	
+
+{% endraw %}

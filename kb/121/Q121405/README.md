@@ -6,6 +6,8 @@ permalink: /kb/121/Q121405/
 
 ## Q121405: Cardfile Font Setting Is Not Saved
 
+{% raw %}
+
 	Article: Q121405
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/121/Q121405/
 	
 	=============================================================================
 	
+
+{% endraw %}

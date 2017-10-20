@@ -6,6 +6,8 @@ permalink: /kb/136/Q136813/
 
 ## Q136813: PPP.LOG File Not Created Or Has File Size of 0
 
+{% raw %}
+
 	Article: Q136813
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -61,3 +63,5 @@ permalink: /kb/136/Q136813/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/127/Q127865/
 
 ## Q127865: Snow/White Noise with Mach 32 at 1024x768 - 65536 colors
 
+{% raw %}
+
 	Article: Q127865
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/127/Q127865/
 	
 	=============================================================================
 	
+
+{% endraw %}

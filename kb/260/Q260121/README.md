@@ -6,6 +6,8 @@ permalink: /kb/260/Q260121/
 
 ## Q260121: PC NTMMTA: Setup Does Not Work on Windows 2000
 
+{% raw %}
+
 	Article: Q260121
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5; WINDOWS:2000,3.x
@@ -97,3 +99,5 @@ permalink: /kb/260/Q260121/
 	
 	=============================================================================
 	
+
+{% endraw %}

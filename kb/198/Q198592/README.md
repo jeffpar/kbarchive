@@ -6,6 +6,8 @@ permalink: /kb/198/Q198592/
 
 ## Q198592: WD97: Blank Page Printed with Different Even and Odd Headers
 
+{% raw %}
+
 	Article: Q198592
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -49,3 +51,5 @@ permalink: /kb/198/Q198592/
 	
 	=============================================================================
 	
+
+{% endraw %}

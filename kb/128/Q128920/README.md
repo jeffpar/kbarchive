@@ -6,6 +6,8 @@ permalink: /kb/128/Q128920/
 
 ## Q128920: Setup Hangs on First Boot Configuring Plug and Play Devices
 
+{% raw %}
+
 	Article: Q128920
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -101,3 +103,5 @@ permalink: /kb/128/Q128920/
 	
 	=============================================================================
 	
+
+{% endraw %}

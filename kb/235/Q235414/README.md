@@ -6,6 +6,8 @@ permalink: /kb/235/Q235414/
 
 ## Q235414: PRB: ParentControls Property May Not Work with Some Containers
 
+{% raw %}
+
 	Article: Q235414
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -115,3 +117,5 @@ permalink: /kb/235/Q235414/
 	
 	=============================================================================
 	
+
+{% endraw %}

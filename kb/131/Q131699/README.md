@@ -6,6 +6,8 @@ permalink: /kb/131/Q131699/
 
 ## Q131699: Sample SMSVIEW Reports and Queries Not Included in SMS
 
+{% raw %}
+
 	Article: Q131699
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -39,3 +41,5 @@ permalink: /kb/131/Q131699/
 	
 	=============================================================================
 	
+
+{% endraw %}

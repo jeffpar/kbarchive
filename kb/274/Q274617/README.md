@@ -6,6 +6,8 @@ permalink: /kb/274/Q274617/
 
 ## Q274617: XCLN: Opening Many Contacts Folders in One Outlook Address Book
 
+{% raw %}
+
 	Article: Q274617
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -68,3 +70,5 @@ permalink: /kb/274/Q274617/
 	
 	=============================================================================
 	
+
+{% endraw %}

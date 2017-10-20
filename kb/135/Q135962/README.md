@@ -6,6 +6,8 @@ permalink: /kb/135/Q135962/
 
 ## Q135962: Disk Tools Run by System Agent Pause for User Input
 
+{% raw %}
+
 	Article: Q135962
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -206,3 +208,5 @@ permalink: /kb/135/Q135962/
 	
 	=============================================================================
 	
+
+{% endraw %}

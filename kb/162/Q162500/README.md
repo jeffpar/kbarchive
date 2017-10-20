@@ -6,6 +6,8 @@ permalink: /kb/162/Q162500/
 
 ## Q162500: Invalid Page Fault Opening File in Microsoft Paint
 
+{% raw %}
+
 	Article: Q162500
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95,97; winnt:4.0
@@ -149,3 +151,5 @@ permalink: /kb/162/Q162500/
 	
 	=============================================================================
 	
+
+{% endraw %}

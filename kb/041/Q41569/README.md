@@ -6,6 +6,8 @@ permalink: /kb/041/Q41569/
 
 ## Q41569: QuickC 2.00 README.DOC: Example Program PARRAY.C
 
+{% raw %}
+
 	Article: Q41569
 	Product(s): See article
 	Version(s): 2.00
@@ -29,3 +31,5 @@ permalink: /kb/041/Q41569/
 	
 	The PARRAY.C program in on-line help already contains the correction,
 	but you may want to correct the printed listing, also.
+
+{% endraw %}

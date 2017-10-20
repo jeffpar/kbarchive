@@ -6,6 +6,8 @@ permalink: /kb/249/Q249733/
 
 ## Q249733: XCLN: .xnk Shortcuts Not Working in Outlook 2000 Folder
 
+{% raw %}
+
 	Article: Q249733
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -92,3 +94,5 @@ permalink: /kb/249/Q249733/
 	
 	=============================================================================
 	
+
+{% endraw %}

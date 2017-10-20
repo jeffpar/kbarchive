@@ -6,6 +6,8 @@ permalink: /kb/250/Q250834/
 
 ## Q250834: INFO: Create File List of Project at a Particular Time or Label
 
+{% raw %}
+
 	Article: Q250834
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -60,3 +62,5 @@ permalink: /kb/250/Q250834/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/109/Q109492/
 
 ## Q109492: Installing MSDLC on Windows for Workgroups Version 3.11
 
+{% raw %}
+
 	Article: Q109492
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -60,3 +62,5 @@ permalink: /kb/109/Q109492/
 	
 	=============================================================================
 	
+
+{% endraw %}

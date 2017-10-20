@@ -6,6 +6,8 @@ permalink: /kb/244/Q244145/
 
 ## Q244145: READFILESCATTER Operation Not Supported by CDFS File System
 
+{% raw %}
+
 	Article: Q244145
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/244/Q244145/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/314/Q314254/
 
 ## Q314254: Flight Simulator 2002: Game Starts Only in Safe Mode
 
+{% raw %}
+
 	Article: Q314254
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -164,3 +166,5 @@ permalink: /kb/314/Q314254/
 	
 	=============================================================================
 	
+
+{% endraw %}

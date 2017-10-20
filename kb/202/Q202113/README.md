@@ -6,6 +6,8 @@ permalink: /kb/202/Q202113/
 
 ## Q202113: XCON: Connectors in Standard &amp; Enterprise Exchange Server 5.5
 
+{% raw %}
+
 	Article: Q202113
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -49,3 +51,5 @@ permalink: /kb/202/Q202113/
 	
 	=============================================================================
 	
+
+{% endraw %}

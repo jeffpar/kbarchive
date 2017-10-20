@@ -6,6 +6,8 @@ permalink: /kb/269/Q269285/
 
 ## Q269285: FTP Server Fails to Open Data Connection
 
+{% raw %}
+
 	Article: Q269285
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -63,3 +65,5 @@ permalink: /kb/269/Q269285/
 	
 	=============================================================================
 	
+
+{% endraw %}

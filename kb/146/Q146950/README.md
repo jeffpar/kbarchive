@@ -6,6 +6,8 @@ permalink: /kb/146/Q146950/
 
 ## Q146950: XFOR: No NDR When IMCDATA/OUT Directory Is Deleted
 
+{% raw %}
+
 	Article: Q146950
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -58,3 +60,5 @@ permalink: /kb/146/Q146950/
 	
 	=============================================================================
 	
+
+{% endraw %}

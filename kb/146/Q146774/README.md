@@ -6,6 +6,8 @@ permalink: /kb/146/Q146774/
 
 ## Q146774: XCLN: New Profile &amp; SCD File Resets Default Access Permission
 
+{% raw %}
+
 	Article: Q146774
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0a,95
@@ -44,3 +46,5 @@ permalink: /kb/146/Q146774/
 	
 	=============================================================================
 	
+
+{% endraw %}

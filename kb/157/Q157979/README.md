@@ -6,6 +6,8 @@ permalink: /kb/157/Q157979/
 
 ## Q157979: NT/RDR: &quot;Access Denied&quot; with Windows NT 4.0 Ntbackup
 
+{% raw %}
+
 	Article: Q157979
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/157/Q157979/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161727/
 
 ## Q161727: PRB: SCC API Error &quot;Project Created&quot; Occurs When Opening a PJX
 
+{% raw %}
+
 	Article: Q161727
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -111,3 +113,5 @@ permalink: /kb/161/Q161727/
 	
 	=============================================================================
 	
+
+{% endraw %}

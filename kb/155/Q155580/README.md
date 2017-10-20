@@ -6,6 +6,8 @@ permalink: /kb/155/Q155580/
 
 ## Q155580: Second PC-Card Hard Disk on Fourth IDE Channel Not Configured
 
+{% raw %}
+
 	Article: Q155580
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/155/Q155580/
 	
 	=============================================================================
 	
+
+{% endraw %}

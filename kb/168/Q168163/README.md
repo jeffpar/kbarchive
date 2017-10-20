@@ -6,6 +6,8 @@ permalink: /kb/168/Q168163/
 
 ## Q168163: FIX: Memory Leak When Calling UserConnection Query Event
 
+{% raw %}
+
 	Article: Q168163
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 97
@@ -48,3 +50,5 @@ permalink: /kb/168/Q168163/
 	
 	=============================================================================
 	
+
+{% endraw %}

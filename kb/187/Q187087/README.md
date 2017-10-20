@@ -6,6 +6,8 @@ permalink: /kb/187/Q187087/
 
 ## Q187087: Hardware Encryption Devices Incompatible with Terminal Server
 
+{% raw %}
+
 	Article: Q187087
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:4.0
@@ -44,3 +46,5 @@ permalink: /kb/187/Q187087/
 	
 	=============================================================================
 	
+
+{% endraw %}

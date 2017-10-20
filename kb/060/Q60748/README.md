@@ -6,6 +6,8 @@ permalink: /kb/060/Q60748/
 
 ## Q60748: With Invalid COMSPEC, Invoking MS-DOS Shell Hangs Machine
 
+{% raw %}
+
 	Article: Q60748
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.2,3.0,3.11,3.12,3.14,3.5,4.0,4.01,4.05,4.1
@@ -61,3 +63,5 @@ permalink: /kb/060/Q60748/
 	
 	=============================================================================
 	
+
+{% endraw %}

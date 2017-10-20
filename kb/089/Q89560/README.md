@@ -6,6 +6,8 @@ permalink: /kb/089/Q89560/
 
 ## Q89560: Creating Dynamic Code Segments Using PrestoChangoSelector
 
+{% raw %}
+
 	Article: Q89560
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -92,3 +94,5 @@ permalink: /kb/089/Q89560/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/258/Q258404/
 
 ## Q258404: Baseball 2001: Colors on the Screen Appear Blotchy or Distorted
 
+{% raw %}
+
 	Article: Q258404
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -66,3 +68,5 @@ permalink: /kb/258/Q258404/
 	
 	=============================================================================
 	
+
+{% endraw %}

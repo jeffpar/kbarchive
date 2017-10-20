@@ -6,6 +6,8 @@ permalink: /kb/154/Q154128/
 
 ## Q154128: XCLN: Long Filenames Converted to 8.3 Format
 
+{% raw %}
+
 	Article: Q154128
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -56,3 +58,5 @@ permalink: /kb/154/Q154128/
 	
 	=============================================================================
 	
+
+{% endraw %}

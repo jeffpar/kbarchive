@@ -6,6 +6,8 @@ permalink: /kb/066/Q66784/
 
 ## Q66784: Nesting for-loops Too Deep Gives C1026: Parser Stack OverFlow
 
+{% raw %}
+
 	Article: Q66784
 	Product(s): See article
 	Version(s): 5.10 6.00 6.00a | 5.10 6.00 6.00a
@@ -28,3 +30,5 @@ permalink: /kb/066/Q66784/
 	Microsoft has confirmed this to be a problem in C versions 5.10, 6.00,
 	and 6.00a. We are researching this problem and will post new
 	information here as it becomes available.
+
+{% endraw %}

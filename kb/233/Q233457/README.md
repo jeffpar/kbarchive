@@ -6,6 +6,8 @@ permalink: /kb/233/Q233457/
 
 ## Q233457: Business Planner: Problems When You Print Selected Rows of Table
 
+{% raw %}
+
 	Article: Q233457
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -64,3 +66,5 @@ permalink: /kb/233/Q233457/
 	
 	=============================================================================
 	
+
+{% endraw %}

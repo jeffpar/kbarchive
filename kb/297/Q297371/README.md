@@ -6,6 +6,8 @@ permalink: /kb/297/Q297371/
 
 ## Q297371: Unexpected High Memory Usage When You Use Index Server
 
+{% raw %}
+
 	Article: Q297371
 	Product(s): Internet Information Server
 	Version(s): 2.0
@@ -63,3 +65,5 @@ permalink: /kb/297/Q297371/
 	
 	=============================================================================
 	
+
+{% endraw %}

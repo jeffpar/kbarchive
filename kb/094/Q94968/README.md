@@ -6,6 +6,8 @@ permalink: /kb/094/Q94968/
 
 ## Q94968: 3COM: Gateway Won't Run -- Validate GATEWAY.INI Entries
 
+{% raw %}
+
 	Article: Q94968
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 1.0
@@ -104,3 +106,5 @@ permalink: /kb/094/Q94968/
 	
 	=============================================================================
 	
+
+{% endraw %}

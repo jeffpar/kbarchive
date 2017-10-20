@@ -6,6 +6,8 @@ permalink: /kb/111/Q111065/
 
 ## Q111065: Flight Simulator: No Sound in Some New York Add-On Situations
 
+{% raw %}
+
 	Article: Q111065
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -54,3 +56,5 @@ permalink: /kb/111/Q111065/
 	
 	=============================================================================
 	
+
+{% endraw %}

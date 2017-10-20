@@ -6,6 +6,8 @@ permalink: /kb/159/Q159346/
 
 ## Q159346: Msbatch.inf Parameters: Inserting IPX/SPX Options
 
+{% raw %}
+
 	Article: Q159346
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -110,3 +112,5 @@ permalink: /kb/159/Q159346/
 	
 	=============================================================================
 	
+
+{% endraw %}

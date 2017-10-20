@@ -6,6 +6,8 @@ permalink: /kb/123/Q123166/
 
 ## Q123166: Time and Date Stamp of Word 6.0 Document Updated
 
+{% raw %}
+
 	Article: Q123166
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,6.0,6.0.1,6.0.1a
@@ -56,3 +58,5 @@ permalink: /kb/123/Q123166/
 	
 	=============================================================================
 	
+
+{% endraw %}

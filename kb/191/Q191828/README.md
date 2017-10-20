@@ -6,6 +6,8 @@ permalink: /kb/191/Q191828/
 
 ## Q191828: Account Lockouts and 5711 Events on the PDC
 
+{% raw %}
+
 	Article: Q191828
 	Product(s): Microsoft Windows NT
 	Version(s): NT:4.0; winnt:1.2,4.0
@@ -175,3 +177,5 @@ permalink: /kb/191/Q191828/
 	
 	=============================================================================
 	
+
+{% endraw %}

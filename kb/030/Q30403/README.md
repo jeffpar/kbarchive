@@ -6,6 +6,8 @@ permalink: /kb/030/Q30403/
 
 ## Q30403: BC.EXE Subprogram Error Occurs in ERROR GOTO in SELECT CASE
 
+{% raw %}
+
 	Article: Q30403
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/030/Q30403/
 	
 	       0 Warning Error(s)
 	       1 Severe  Error(s)
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96152/
 
 ## Q96152: Setup Adds MS-DOS Directory to Every PATH Statement
 
+{% raw %}
+
 	Article: Q96152
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -56,3 +58,5 @@ permalink: /kb/096/Q96152/
 	
 	=============================================================================
 	
+
+{% endraw %}

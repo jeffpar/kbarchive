@@ -6,6 +6,8 @@ permalink: /kb/093/Q93654/
 
 ## Q93654: Using the &#91;common&#93; Section with Multiple Configurations
 
+{% raw %}
+
 	Article: Q93654
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -45,3 +47,5 @@ permalink: /kb/093/Q93654/
 	
 	=============================================================================
 	
+
+{% endraw %}

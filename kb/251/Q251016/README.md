@@ -6,6 +6,8 @@ permalink: /kb/251/Q251016/
 
 ## Q251016: XCON: Events 290 and 270 Logged From Public Folder Permissions
 
+{% raw %}
+
 	Article: Q251016
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -131,3 +133,5 @@ permalink: /kb/251/Q251016/
 	
 	=============================================================================
 	
+
+{% endraw %}

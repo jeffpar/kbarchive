@@ -6,6 +6,8 @@ permalink: /kb/129/Q129817/
 
 ## Q129817: Creating Personal Distribution Lists in Microsoft Exchange
 
+{% raw %}
+
 	Article: Q129817
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -67,3 +69,5 @@ permalink: /kb/129/Q129817/
 	
 	=============================================================================
 	
+
+{% endraw %}

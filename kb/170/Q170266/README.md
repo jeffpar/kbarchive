@@ -6,6 +6,8 @@ permalink: /kb/170/Q170266/
 
 ## Q170266: WD97: Extended Characters Fax Incorrectly Using Fax Wizard
 
+{% raw %}
+
 	Article: Q170266
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -137,3 +139,5 @@ permalink: /kb/170/Q170266/
 	
 	=============================================================================
 	
+
+{% endraw %}

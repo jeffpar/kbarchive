@@ -6,6 +6,8 @@ permalink: /kb/131/Q131582/
 
 ## Q131582: ThinkPad with PCMCIA Adapter Hangs in Protected Mode
 
+{% raw %}
+
 	Article: Q131582
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -114,3 +116,5 @@ permalink: /kb/131/Q131582/
 	
 	=============================================================================
 	
+
+{% endraw %}

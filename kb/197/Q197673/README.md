@@ -6,6 +6,8 @@ permalink: /kb/197/Q197673/
 
 ## Q197673: WD97: Wrong Description for AutoScroll
 
+{% raw %}
+
 	Article: Q197673
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/197/Q197673/
 	
 	=============================================================================
 	
+
+{% endraw %}

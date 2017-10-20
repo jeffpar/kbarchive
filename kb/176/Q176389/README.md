@@ -6,6 +6,8 @@ permalink: /kb/176/Q176389/
 
 ## Q176389: PPT7: Embed TrueType Fonts in PowerPoint Windows Metafiles
 
+{% raw %}
+
 	Article: Q176389
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -53,3 +55,5 @@ permalink: /kb/176/Q176389/
 	
 	=============================================================================
 	
+
+{% endraw %}

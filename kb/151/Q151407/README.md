@@ -6,6 +6,8 @@ permalink: /kb/151/Q151407/
 
 ## Q151407: PRB: DAO 3.0 Must Be Used in Primary Thread
 
+{% raw %}
+
 	Article: Q151407
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -75,3 +77,5 @@ permalink: /kb/151/Q151407/
 	
 	=============================================================================
 	
+
+{% endraw %}

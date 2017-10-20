@@ -6,6 +6,8 @@ permalink: /kb/159/Q159231/
 
 ## Q159231: WD97: Command to Display Version Number of Word
 
+{% raw %}
+
 	Article: Q159231
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -74,3 +76,5 @@ permalink: /kb/159/Q159231/
 	
 	=============================================================================
 	
+
+{% endraw %}

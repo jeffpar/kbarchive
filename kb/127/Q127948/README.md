@@ -6,6 +6,8 @@ permalink: /kb/127/Q127948/
 
 ## Q127948: Saving More Than 10 Most Recently Used Network Connections
 
+{% raw %}
+
 	Article: Q127948
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/127/Q127948/
 	
 	=============================================================================
 	
+
+{% endraw %}

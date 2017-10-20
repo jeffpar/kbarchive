@@ -6,6 +6,8 @@ permalink: /kb/038/Q38218/
 
 ## Q38218: Why pointer1++ = pointer2 Is Illegal
 
+{% raw %}
+
 	Article: Q38218
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -69,3 +71,5 @@ permalink: /kb/038/Q38218/
 	                        in the current data segment
 	                        for small or medium memory models */
 	*ptr1++ = 'a';
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164615/
 
 ## Q164615: FIX: New Record Not Inserted to End of Recordset
 
+{% raw %}
+
 	Article: Q164615
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0
@@ -69,3 +71,5 @@ permalink: /kb/164/Q164615/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/047/Q47823/
 
 ## Q47823: Flight Simulator: Definition of Dihedral
 
+{% raw %}
+
 	Article: Q47823
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -27,3 +29,5 @@ permalink: /kb/047/Q47823/
 	
 	=============================================================================
 	
+
+{% endraw %}

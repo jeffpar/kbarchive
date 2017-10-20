@@ -6,6 +6,8 @@ permalink: /kb/122/Q122383/
 
 ## Q122383: Problems Running SMS w/Non-English Versions of Windows NT
 
+{% raw %}
+
 	Article: Q122383
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -58,3 +60,5 @@ permalink: /kb/122/Q122383/
 	
 	=============================================================================
 	
+
+{% endraw %}

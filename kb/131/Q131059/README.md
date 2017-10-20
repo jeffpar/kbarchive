@@ -6,6 +6,8 @@ permalink: /kb/131/Q131059/
 
 ## Q131059: Security Log Close Handles Don't Match Open Handles
 
+{% raw %}
+
 	Article: Q131059
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -58,3 +60,5 @@ permalink: /kb/131/Q131059/
 	
 	=============================================================================
 	
+
+{% endraw %}

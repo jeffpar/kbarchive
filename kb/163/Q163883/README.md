@@ -6,6 +6,8 @@ permalink: /kb/163/Q163883/
 
 ## Q163883: NetBT (tag=Nbt8) Corrupts Pool with WinNT 4.0 SP2 Installed
 
+{% raw %}
+
 	Article: Q163883
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/163/Q163883/
 	
 	=============================================================================
 	
+
+{% endraw %}

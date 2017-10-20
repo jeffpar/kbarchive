@@ -6,6 +6,8 @@ permalink: /kb/151/Q151879/
 
 ## Q151879: Cisco Internet Junction Software Is an IPX-to-IP Gateway
 
+{% raw %}
+
 	Article: Q151879
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -113,3 +115,5 @@ permalink: /kb/151/Q151879/
 	
 	=============================================================================
 	
+
+{% endraw %}

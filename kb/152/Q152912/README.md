@@ -6,6 +6,8 @@ permalink: /kb/152/Q152912/
 
 ## Q152912: XCLN: Delete Rule on Public Folder Treated as Error
 
+{% raw %}
+
 	Article: Q152912
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -72,3 +74,5 @@ permalink: /kb/152/Q152912/
 	
 	=============================================================================
 	
+
+{% endraw %}

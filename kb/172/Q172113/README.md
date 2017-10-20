@@ -6,6 +6,8 @@ permalink: /kb/172/Q172113/
 
 ## Q172113: Bookshelf Intro: Refresh Button Returns You to Opening Screen
 
+{% raw %}
+
 	Article: Q172113
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -57,3 +59,5 @@ permalink: /kb/172/Q172113/
 	
 	=============================================================================
 	
+
+{% endraw %}

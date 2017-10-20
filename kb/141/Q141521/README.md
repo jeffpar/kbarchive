@@ -6,6 +6,8 @@ permalink: /kb/141/Q141521/
 
 ## Q141521: Encarta Encyclopedia Mindmaze: Sound On Versus Sound Off
 
+{% raw %}
+
 	Article: Q141521
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :1996 edition
@@ -56,3 +58,5 @@ permalink: /kb/141/Q141521/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183097/
 
 ## Q183097: Event Log May Not Grow to Configured Size
 
+{% raw %}
+
 	Article: Q183097
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -62,3 +64,5 @@ permalink: /kb/183/Q183097/
 	
 	=============================================================================
 	
+
+{% endraw %}

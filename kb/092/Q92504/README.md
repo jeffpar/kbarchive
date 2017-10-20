@@ -6,6 +6,8 @@ permalink: /kb/092/Q92504/
 
 ## Q92504: Required BIOS Revisions for STB Video Adapters
 
+{% raw %}
+
 	Article: Q92504
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -135,3 +137,5 @@ permalink: /kb/092/Q92504/
 	
 	=============================================================================
 	
+
+{% endraw %}

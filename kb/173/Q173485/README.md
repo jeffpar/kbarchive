@@ -6,6 +6,8 @@ permalink: /kb/173/Q173485/
 
 ## Q173485: Drive Not Displayed in My Computer After Adding New Hard Disk
 
+{% raw %}
+
 	Article: Q173485
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/173/Q173485/
 	
 	=============================================================================
 	
+
+{% endraw %}

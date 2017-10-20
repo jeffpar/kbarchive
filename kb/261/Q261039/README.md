@@ -6,6 +6,8 @@ permalink: /kb/261/Q261039/
 
 ## Q261039: Motocross Madness 2: Text in Game Flickers or Does Not Appear
 
+{% raw %}
+
 	Article: Q261039
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -68,3 +70,5 @@ permalink: /kb/261/Q261039/
 	
 	=============================================================================
 	
+
+{% endraw %}

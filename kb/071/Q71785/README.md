@@ -6,6 +6,8 @@ permalink: /kb/071/Q71785/
 
 ## Q71785: Qualitas 386-to-the-Max Does Not Support Standard Mode
 
+{% raw %}
+
 	Article: Q71785
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -48,3 +50,5 @@ permalink: /kb/071/Q71785/
 	
 	=============================================================================
 	
+
+{% endraw %}

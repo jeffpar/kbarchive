@@ -6,6 +6,8 @@ permalink: /kb/303/Q303811/
 
 ## Q303811: DNS Server Routes Queries to Root Name Servers and Forwarders
 
+{% raw %}
+
 	Article: Q303811
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -71,3 +73,5 @@ permalink: /kb/303/Q303811/
 	
 	=============================================================================
 	
+
+{% endraw %}

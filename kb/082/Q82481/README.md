@@ -6,6 +6,8 @@ permalink: /kb/082/Q82481/
 
 ## Q82481: Error: Unable to Retain Printer Codes
 
+{% raw %}
+
 	Article: Q82481
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/082/Q82481/
 	
 	=============================================================================
 	
+
+{% endraw %}

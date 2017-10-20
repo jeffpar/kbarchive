@@ -6,6 +6,8 @@ permalink: /kb/193/Q193785/
 
 ## Q193785: Naming FPNW Server Same as PDC
 
+{% raw %}
+
 	Article: Q193785
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -44,3 +46,5 @@ permalink: /kb/193/Q193785/
 	
 	=============================================================================
 	
+
+{% endraw %}

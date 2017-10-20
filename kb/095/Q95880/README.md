@@ -6,6 +6,8 @@ permalink: /kb/095/Q95880/
 
 ## Q95880: Banyan VINES Pop-Up Application Does Not Function with WFWG
 
+{% raw %}
+
 	Article: Q95880
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -59,3 +61,5 @@ permalink: /kb/095/Q95880/
 	
 	=============================================================================
 	
+
+{% endraw %}

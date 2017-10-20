@@ -6,6 +6,8 @@ permalink: /kb/146/Q146219/
 
 ## Q146219: HOWTO: Register an ActiveX Control (.ocx) Manually
 
+{% raw %}
+
 	Article: Q146219
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -83,3 +85,5 @@ permalink: /kb/146/Q146219/
 	
 	=============================================================================
 	
+
+{% endraw %}

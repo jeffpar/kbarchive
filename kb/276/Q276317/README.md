@@ -6,6 +6,8 @@ permalink: /kb/276/Q276317/
 
 ## Q276317: Microsoft Classic Board Games: Background Music Is Not Played
 
+{% raw %}
+
 	Article: Q276317
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -50,3 +52,5 @@ permalink: /kb/276/Q276317/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/117/Q117629/
 
 ## Q117629: HP Jet Direct Card Not Recognized by DLC
 
+{% raw %}
+
 	Article: Q117629
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -118,3 +120,5 @@ permalink: /kb/117/Q117629/
 	
 	=============================================================================
 	
+
+{% endraw %}

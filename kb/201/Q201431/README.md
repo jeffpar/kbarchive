@@ -6,6 +6,8 @@ permalink: /kb/201/Q201431/
 
 ## Q201431: HOWTO: Write Automation for Visual SourceSafe 5.0/6.0
 
+{% raw %}
+
 	Article: Q201431
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0; winnt:6.0
@@ -204,3 +206,5 @@ permalink: /kb/201/Q201431/
 	
 	=============================================================================
 	
+
+{% endraw %}

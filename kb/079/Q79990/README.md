@@ -6,6 +6,8 @@ permalink: /kb/079/Q79990/
 
 ## Q79990: Idlewild Does Not Work with FAXit for Windows
 
+{% raw %}
+
 	Article: Q79990
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -56,3 +58,5 @@ permalink: /kb/079/Q79990/
 	
 	=============================================================================
 	
+
+{% endraw %}

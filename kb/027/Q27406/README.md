@@ -6,6 +6,8 @@ permalink: /kb/027/Q27406/
 
 ## Q27406: LINE (0,0)-(12231,12230) Causes Line Coordinates to Overflow
 
+{% raw %}
+
 	Article: Q27406
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -33,3 +35,5 @@ permalink: /kb/027/Q27406/
 	   line (0,0)-(12230, 12230)
 	   line (0,0)-(12231, 12231)
 	   line (0,0)-(12231, 12230)
+
+{% endraw %}

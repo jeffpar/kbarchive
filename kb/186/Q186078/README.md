@@ -6,6 +6,8 @@ permalink: /kb/186/Q186078/
 
 ## Q186078: Name Resolution May Fail If NetBios Name Has ASCII Character
 
+{% raw %}
+
 	Article: Q186078
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -97,3 +99,5 @@ permalink: /kb/186/Q186078/
 	
 	=============================================================================
 	
+
+{% endraw %}

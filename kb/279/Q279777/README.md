@@ -6,6 +6,8 @@ permalink: /kb/279/Q279777/
 
 ## Q279777: BUG: FOR EACH Reference Fails To Release Automation Server
 
+{% raw %}
+
 	Article: Q279777
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0,5.0a,6.0
@@ -107,3 +109,5 @@ permalink: /kb/279/Q279777/
 	
 	=============================================================================
 	
+
+{% endraw %}

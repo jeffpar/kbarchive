@@ -6,6 +6,8 @@ permalink: /kb/162/Q162368/
 
 ## Q162368: PRB: Error Message &quot;&lt;library&gt;.vcx Is Not an Object File&quot;
 
+{% raw %}
+
 	Article: Q162368
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,6.0
@@ -82,3 +84,5 @@ permalink: /kb/162/Q162368/
 	
 	=============================================================================
 	
+
+{% endraw %}

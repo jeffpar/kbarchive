@@ -6,6 +6,8 @@ permalink: /kb/307/Q307934/
 
 ## Q307934: Locking Down WebDAV via ACL Still Allows PUT &amp; DELETE Requests
 
+{% raw %}
+
 	Article: Q307934
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -111,3 +113,5 @@ permalink: /kb/307/Q307934/
 	
 	=============================================================================
 	
+
+{% endraw %}

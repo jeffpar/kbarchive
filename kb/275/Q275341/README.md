@@ -6,6 +6,8 @@ permalink: /kb/275/Q275341/
 
 ## Q275341: XFOR: Lotus Notes Migration Fails with Event ID 181 and 10052
 
+{% raw %}
+
 	Article: Q275341
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -86,3 +88,5 @@ permalink: /kb/275/Q275341/
 	
 	=============================================================================
 	
+
+{% endraw %}

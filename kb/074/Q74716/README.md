@@ -6,6 +6,8 @@ permalink: /kb/074/Q74716/
 
 ## Q74716: Windows 3.0 File Manager Print Command Can Only Print Text
 
+{% raw %}
+
 	Article: Q74716
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -63,3 +65,5 @@ permalink: /kb/074/Q74716/
 	
 	=============================================================================
 	
+
+{% endraw %}

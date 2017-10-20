@@ -6,6 +6,8 @@ permalink: /kb/272/Q272321/
 
 ## Q272321: Windows 2000 Network Infrastructure Administration Training Kit
 
+{% raw %}
+
 	Article: Q272321
 	Product(s): Microsoft Press
 	Version(s): 
@@ -451,3 +453,5 @@ permalink: /kb/272/Q272321/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177958/
 
 ## Q177958: XADM: BCC Recipient Becomes TO Recipient
 
+{% raw %}
+
 	Article: Q177958
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -63,3 +65,5 @@ permalink: /kb/177/Q177958/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173893/
 
 ## Q173893: XCLN: Pronto 97 IMAP Client can't use Mailbox Name Over 23 Chars
 
+{% raw %}
+
 	Article: Q173893
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -38,3 +40,5 @@ permalink: /kb/173/Q173893/
 	
 	=============================================================================
 	
+
+{% endraw %}

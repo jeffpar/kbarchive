@@ -6,6 +6,8 @@ permalink: /kb/214/Q214756/
 
 ## Q214756: &quot;Path Not Found&quot; When Connecting to a Novell NetWare Server
 
+{% raw %}
+
 	Article: Q214756
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -90,3 +92,5 @@ permalink: /kb/214/Q214756/
 	
 	=============================================================================
 	
+
+{% endraw %}

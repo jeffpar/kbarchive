@@ -6,6 +6,8 @@ permalink: /kb/066/Q66847/
 
 ## Q66847: ASD: Cannot Alter Existing Flight Simulator Scenery
 
+{% raw %}
+
 	Article: Q66847
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -34,3 +36,5 @@ permalink: /kb/066/Q66847/
 	
 	=============================================================================
 	
+
+{% endraw %}

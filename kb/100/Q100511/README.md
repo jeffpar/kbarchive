@@ -6,6 +6,8 @@ permalink: /kb/100/Q100511/
 
 ## Q100511: PC DB: Assigning Owners to Files in NetWare 2.x and 3.x
 
+{% raw %}
+
 	Article: Q100511
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -76,3 +78,5 @@ permalink: /kb/100/Q100511/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/058/Q58282/
 
 ## Q58282: Some Mice Not Supported in Windows 3.0, 3.1
 
+{% raw %}
+
 	Article: Q58282
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -38,3 +40,5 @@ permalink: /kb/058/Q58282/
 	
 	=============================================================================
 	
+
+{% endraw %}

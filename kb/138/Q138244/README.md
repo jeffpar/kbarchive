@@ -6,6 +6,8 @@ permalink: /kb/138/Q138244/
 
 ## Q138244: Printing Fails with &quot;RPC Procedure Call Failed&quot;
 
+{% raw %}
+
 	Article: Q138244
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -59,3 +61,5 @@ permalink: /kb/138/Q138244/
 	
 	=============================================================================
 	
+
+{% endraw %}

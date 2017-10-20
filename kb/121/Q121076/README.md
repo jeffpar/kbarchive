@@ -6,6 +6,8 @@ permalink: /kb/121/Q121076/
 
 ## Q121076: Video for Windows DK Setup Script Function VflatdPresent
 
+{% raw %}
+
 	Article: Q121076
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1; :1.1,1.1d,1.1e
@@ -43,3 +45,5 @@ permalink: /kb/121/Q121076/
 	
 	=============================================================================
 	
+
+{% endraw %}

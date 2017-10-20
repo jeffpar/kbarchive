@@ -6,6 +6,8 @@ permalink: /kb/088/Q88457/
 
 ## Q88457: Choosing Golf Help in Post Shot Selection with DTK BIOS Hangs
 
+{% raw %}
+
 	Article: Q88457
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -27,3 +29,5 @@ permalink: /kb/088/Q88457/
 	
 	=============================================================================
 	
+
+{% endraw %}

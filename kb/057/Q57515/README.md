@@ -6,6 +6,8 @@ permalink: /kb/057/Q57515/
 
 ## Q57515: &quot;No Symbolic Information&quot; Using Older CodeView with BASIC PDS
 
+{% raw %}
+
 	Article: Q57515
 	Product(s): See article
 	Version(s): 7.00
@@ -23,3 +25,5 @@ permalink: /kb/057/Q57515/
 	
 	This information applies to the Microsoft BASIC PDS Version 7.00 for
 	MS-DOS and MS OS/2.
+
+{% endraw %}

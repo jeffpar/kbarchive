@@ -6,6 +6,8 @@ permalink: /kb/244/Q244791/
 
 ## Q244791: BUG: MSDN Library Subset Problem on Windows 2000
 
+{% raw %}
+
 	Article: Q244791
 	Product(s): Microsoft Developer Network
 	Version(s): WINDOWS:
@@ -90,3 +92,5 @@ permalink: /kb/244/Q244791/
 	
 	=============================================================================
 	
+
+{% endraw %}

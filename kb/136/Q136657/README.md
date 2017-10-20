@@ -6,6 +6,8 @@ permalink: /kb/136/Q136657/
 
 ## Q136657: Obtaining Files for Installing the SNA Win95 Client
 
+{% raw %}
+
 	Article: Q136657
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,3.0
@@ -242,3 +244,5 @@ permalink: /kb/136/Q136657/
 	
 	=============================================================================
 	
+
+{% endraw %}

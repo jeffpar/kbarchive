@@ -6,6 +6,8 @@ permalink: /kb/098/Q98485/
 
 ## Q98485: Using Windows and MS-DOS 5 Upgrade After Installing MS-DOS 6.x
 
+{% raw %}
+
 	Article: Q98485
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): ; MS-DOS:6.0,6.2,6.21
@@ -72,3 +74,5 @@ permalink: /kb/098/Q98485/
 	
 	=============================================================================
 	
+
+{% endraw %}

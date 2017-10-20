@@ -6,6 +6,8 @@ permalink: /kb/034/Q34575/
 
 ## Q34575: MASM 5.10 MACRO.DOC: Character and Cursor Control
 
+{% raw %}
+
 	Article: Q34575
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -120,3 +122,5 @@ permalink: /kb/034/Q34575/
 	Arguments:      None
 	Return:         None
 	Registers used: AX, BX, CX, and DX
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/237/Q237608/
 
 ## Q237608: Using a Default Terminal Server Profile When User Profile Is Set
 
+{% raw %}
+
 	Article: Q237608
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/237/Q237608/
 	
 	=============================================================================
 	
+
+{% endraw %}

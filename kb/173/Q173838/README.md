@@ -6,6 +6,8 @@ permalink: /kb/173/Q173838/
 
 ## Q173838: Windows NT 4.0 Evaluation Edition Incompatible With FAT32
 
+{% raw %}
+
 	Article: Q173838
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0; :
@@ -68,3 +70,5 @@ permalink: /kb/173/Q173838/
 	
 	=============================================================================
 	
+
+{% endraw %}

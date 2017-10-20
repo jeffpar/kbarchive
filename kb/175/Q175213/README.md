@@ -6,6 +6,8 @@ permalink: /kb/175/Q175213/
 
 ## Q175213: DIAL.EXE: Dial Control Sample
 
+{% raw %}
+
 	Article: Q175213
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -68,3 +70,5 @@ permalink: /kb/175/Q175213/
 	
 	=============================================================================
 	
+
+{% endraw %}

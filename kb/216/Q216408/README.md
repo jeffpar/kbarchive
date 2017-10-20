@@ -6,6 +6,8 @@ permalink: /kb/216/Q216408/
 
 ## Q216408: PRB: Slow Performance In VFP ODBC Driver with SET DELETED ON
 
+{% raw %}
+
 	Article: Q216408
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,2.6,5.0,6.0
@@ -111,3 +113,5 @@ permalink: /kb/216/Q216408/
 	
 	=============================================================================
 	
+
+{% endraw %}

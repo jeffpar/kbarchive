@@ -6,6 +6,8 @@ permalink: /kb/080/Q80900/
 
 ## Q80900: Windows 3.1 Application Compatibility (part 5 of 7)
 
+{% raw %}
+
 	Article: Q80900
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -279,3 +281,5 @@ permalink: /kb/080/Q80900/
 	
 	=============================================================================
 	
+
+{% endraw %}

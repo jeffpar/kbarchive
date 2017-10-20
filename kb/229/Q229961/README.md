@@ -6,6 +6,8 @@ permalink: /kb/229/Q229961/
 
 ## Q229961: XFOR:Applying Restrictive Address Space on Internet Mail Service
 
+{% raw %}
+
 	Article: Q229961
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -80,3 +82,5 @@ permalink: /kb/229/Q229961/
 	
 	=============================================================================
 	
+
+{% endraw %}

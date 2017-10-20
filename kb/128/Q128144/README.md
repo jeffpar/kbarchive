@@ -6,6 +6,8 @@ permalink: /kb/128/Q128144/
 
 ## Q128144: SMS Package Number is &lt;null&gt;
 
+{% raw %}
+
 	Article: Q128144
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0
@@ -44,3 +46,5 @@ permalink: /kb/128/Q128144/
 	
 	=============================================================================
 	
+
+{% endraw %}

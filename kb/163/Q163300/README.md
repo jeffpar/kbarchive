@@ -6,6 +6,8 @@ permalink: /kb/163/Q163300/
 
 ## Q163300: WD97: Differences Between Word and FrontPage for Web Authoring
 
+{% raw %}
+
 	Article: Q163300
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/163/Q163300/
 	
 	=============================================================================
 	
+
+{% endraw %}

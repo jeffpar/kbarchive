@@ -6,6 +6,8 @@ permalink: /kb/042/Q42453/
 
 ## Q42453: Clarification of fcvt() Function
 
+{% raw %}
+
 	Article: Q42453
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -54,3 +56,5 @@ permalink: /kb/042/Q42453/
 	
 	   This is the only "special" case. Eight zeros are returned so that
 	   error checking can be performed easily.
+
+{% endraw %}

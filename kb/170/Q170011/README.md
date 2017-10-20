@@ -6,6 +6,8 @@ permalink: /kb/170/Q170011/
 
 ## Q170011: XFOR: cc:Mail Files Accessed by cc:Mail Connector
 
+{% raw %}
+
 	Article: Q170011
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -83,3 +85,5 @@ permalink: /kb/170/Q170011/
 	
 	=============================================================================
 	
+
+{% endraw %}

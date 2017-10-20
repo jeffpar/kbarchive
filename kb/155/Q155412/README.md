@@ -6,6 +6,8 @@ permalink: /kb/155/Q155412/
 
 ## Q155412: DBWEB: How to Install dbWeb 1.0 with Microsoft IIS
 
+{% raw %}
+
 	Article: Q155412
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:1.0; winnt:1.0
@@ -145,3 +147,5 @@ permalink: /kb/155/Q155412/
 	
 	=============================================================================
 	
+
+{% endraw %}

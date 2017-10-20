@@ -6,6 +6,8 @@ permalink: /kb/257/Q257578/
 
 ## Q257578: XCON: Internet Mail Doesn't Respond if Recipient Has No Address
 
+{% raw %}
+
 	Article: Q257578
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -79,3 +81,5 @@ permalink: /kb/257/Q257578/
 	
 	=============================================================================
 	
+
+{% endraw %}

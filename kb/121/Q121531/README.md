@@ -6,6 +6,8 @@ permalink: /kb/121/Q121531/
 
 ## Q121531: Windows NT Separator Pages May Print an Incorrect Date
 
+{% raw %}
+
 	Article: Q121531
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -61,3 +63,5 @@ permalink: /kb/121/Q121531/
 	
 	=============================================================================
 	
+
+{% endraw %}

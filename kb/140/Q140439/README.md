@@ -6,6 +6,8 @@ permalink: /kb/140/Q140439/
 
 ## Q140439: FIX: Namespace Scoped Classes Don't Show Up in ClassView
 
+{% raw %}
+
 	Article: Q140439
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2
@@ -60,3 +62,5 @@ permalink: /kb/140/Q140439/
 	
 	=============================================================================
 	
+
+{% endraw %}

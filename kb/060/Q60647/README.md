@@ -6,6 +6,8 @@ permalink: /kb/060/Q60647/
 
 ## Q60647: C 6.00 STARTUP.DOC: C Run-time Library Startup Sources
 
+{% raw %}
+
 	Article: Q60647
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -124,3 +126,5 @@ permalink: /kb/060/Q60647/
 	
 	  README.DOC: Information about \startup directory structure and
 	              contents
+
+{% endraw %}

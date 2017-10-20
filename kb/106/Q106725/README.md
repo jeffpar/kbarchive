@@ -6,6 +6,8 @@ permalink: /kb/106/Q106725/
 
 ## Q106725: FIX: Alternate Return Compiled with /Ox Can GPF at Run Time
 
+{% raw %}
+
 	Article: Q106725
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0
@@ -82,3 +84,5 @@ permalink: /kb/106/Q106725/
 	
 	=============================================================================
 	
+
+{% endraw %}

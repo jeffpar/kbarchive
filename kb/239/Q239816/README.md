@@ -6,6 +6,8 @@ permalink: /kb/239/Q239816/
 
 ## Q239816: XIMS: Internet Mail Service Crashes with a Particular Message
 
+{% raw %}
+
 	Article: Q239816
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2
@@ -74,3 +76,5 @@ permalink: /kb/239/Q239816/
 	
 	=============================================================================
 	
+
+{% endraw %}

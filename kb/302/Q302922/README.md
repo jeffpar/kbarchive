@@ -6,6 +6,8 @@ permalink: /kb/302/Q302922/
 
 ## Q302922: Running MSN Explorer With Beta Version Of Internet Explorer 5.0
 
+{% raw %}
+
 	Article: Q302922
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -50,3 +52,5 @@ permalink: /kb/302/Q302922/
 	
 	=============================================================================
 	
+
+{% endraw %}

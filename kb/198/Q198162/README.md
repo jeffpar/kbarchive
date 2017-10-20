@@ -6,6 +6,8 @@ permalink: /kb/198/Q198162/
 
 ## Q198162: Combat Flight Simulator: Color Palette or Textures Are Distorted
 
+{% raw %}
+
 	Article: Q198162
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -105,3 +107,5 @@ permalink: /kb/198/Q198162/
 	
 	=============================================================================
 	
+
+{% endraw %}

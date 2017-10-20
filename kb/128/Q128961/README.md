@@ -6,6 +6,8 @@ permalink: /kb/128/Q128961/
 
 ## Q128961: XCLN: Err Msg: Windows Sockets Error: Failed in Connect
 
+{% raw %}
+
 	Article: Q128961
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -101,3 +103,5 @@ permalink: /kb/128/Q128961/
 	
 	=============================================================================
 	
+
+{% endraw %}

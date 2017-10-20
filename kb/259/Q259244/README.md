@@ -6,6 +6,8 @@ permalink: /kb/259/Q259244/
 
 ## Q259244: BUG: Internal Compiler Error C1001 When You Call &#95;&#95;assume()
 
+{% raw %}
+
 	Article: Q259244
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -109,3 +111,5 @@ permalink: /kb/259/Q259244/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/160/Q160534/
 
 ## Q160534: XCON: Size Limits May Cause Message Looping
 
+{% raw %}
+
 	Article: Q160534
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/160/Q160534/
 	
 	=============================================================================
 	
+
+{% endraw %}

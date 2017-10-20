@@ -6,6 +6,8 @@ permalink: /kb/164/Q164828/
 
 ## Q164828: PPT7: Hang, Error Using PowerPoint Write-Up Command w/ Word 97
 
+{% raw %}
+
 	Article: Q164828
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0,7.0a,97
@@ -75,3 +77,5 @@ permalink: /kb/164/Q164828/
 	
 	=============================================================================
 	
+
+{% endraw %}

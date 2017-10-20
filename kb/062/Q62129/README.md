@@ -6,6 +6,8 @@ permalink: /kb/062/Q62129/
 
 ## Q62129: Mac Hyp: Returning Message Field Contents
 
+{% raw %}
+
 	Article: Q62129
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -53,3 +55,5 @@ permalink: /kb/062/Q62129/
 	
 	=============================================================================
 	
+
+{% endraw %}

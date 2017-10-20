@@ -6,6 +6,8 @@ permalink: /kb/124/Q124067/
 
 ## Q124067: STOP Message 0x0000000A in AFD.SYS when Opening Sockets
 
+{% raw %}
+
 	Article: Q124067
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -120,3 +122,5 @@ permalink: /kb/124/Q124067/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/164/Q164100/
 
 ## Q164100: Cannot Insert File w/ Link Attachment To Original File Option
 
+{% raw %}
+
 	Article: Q164100
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -69,3 +71,5 @@ permalink: /kb/164/Q164100/
 	
 	=============================================================================
 	
+
+{% endraw %}

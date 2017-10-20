@@ -6,6 +6,8 @@ permalink: /kb/249/Q249871/
 
 ## Q249871: BUG: Errors when Switching to a New MSDN Library Collection
 
+{% raw %}
+
 	Article: Q249871
 	Product(s): Microsoft Developer Network
 	Version(s): WINDOWS:6.0
@@ -157,3 +159,5 @@ permalink: /kb/249/Q249871/
 	
 	=============================================================================
 	
+
+{% endraw %}

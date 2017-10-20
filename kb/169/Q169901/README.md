@@ -6,6 +6,8 @@ permalink: /kb/169/Q169901/
 
 ## Q169901: Perfmon: Processor Spikes on Multiprocessor Computer
 
+{% raw %}
+
 	Article: Q169901
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -71,3 +73,5 @@ permalink: /kb/169/Q169901/
 	
 	=============================================================================
 	
+
+{% endraw %}

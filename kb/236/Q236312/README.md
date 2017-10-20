@@ -6,6 +6,8 @@ permalink: /kb/236/Q236312/
 
 ## Q236312: HOWTO: Disable the Default Pop-up Menu for CHtmlView
 
+{% raw %}
+
 	Article: Q236312
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -671,3 +673,5 @@ permalink: /kb/236/Q236312/
 	
 	=============================================================================
 	
+
+{% endraw %}

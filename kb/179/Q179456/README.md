@@ -6,6 +6,8 @@ permalink: /kb/179/Q179456/
 
 ## Q179456: Extensible Counters in Performance Monitor
 
+{% raw %}
+
 	Article: Q179456
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -83,3 +85,5 @@ permalink: /kb/179/Q179456/
 	
 	=============================================================================
 	
+
+{% endraw %}

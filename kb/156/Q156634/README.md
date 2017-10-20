@@ -6,6 +6,8 @@ permalink: /kb/156/Q156634/
 
 ## Q156634: Writer 2: Drop Caps Disappear When Posted
 
+{% raw %}
+
 	Article: Q156634
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -42,3 +44,5 @@ permalink: /kb/156/Q156634/
 	
 	=============================================================================
 	
+
+{% endraw %}

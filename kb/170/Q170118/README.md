@@ -6,6 +6,8 @@ permalink: /kb/170/Q170118/
 
 ## Q170118: PRB: &quot;Couldn't Find Installable ISAM&quot; with Excel 97 Data
 
+{% raw %}
+
 	Article: Q170118
 	Product(s): Microsoft C Compiler
 	Version(s): 2000,5.0,6.0
@@ -64,3 +66,5 @@ permalink: /kb/170/Q170118/
 	
 	=============================================================================
 	
+
+{% endraw %}

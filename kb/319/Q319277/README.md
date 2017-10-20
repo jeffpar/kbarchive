@@ -6,6 +6,8 @@ permalink: /kb/319/Q319277/
 
 ## Q319277: FIX: IMPORT from Excel File causes Error
 
+{% raw %}
+
 	Article: Q319277
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -125,3 +127,5 @@ permalink: /kb/319/Q319277/
 	
 	=============================================================================
 	
+
+{% endraw %}

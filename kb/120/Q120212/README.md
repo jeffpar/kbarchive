@@ -6,6 +6,8 @@ permalink: /kb/120/Q120212/
 
 ## Q120212: Stars May Look Gray or Black Against Earth's Atmosphere
 
+{% raw %}
+
 	Article: Q120212
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:1.0
@@ -49,3 +51,5 @@ permalink: /kb/120/Q120212/
 	
 	=============================================================================
 	
+
+{% endraw %}

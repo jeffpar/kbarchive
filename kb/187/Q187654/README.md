@@ -6,6 +6,8 @@ permalink: /kb/187/Q187654/
 
 ## Q187654: HOWTO: Create a MAPI-Aware UserControl
 
+{% raw %}
+
 	Article: Q187654
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -142,3 +144,5 @@ permalink: /kb/187/Q187654/
 	
 	=============================================================================
 	
+
+{% endraw %}

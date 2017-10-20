@@ -6,6 +6,8 @@ permalink: /kb/157/Q157190/
 
 ## Q157190: DOCERR: MousePointer Topic Missing Setting 99 (Custom)
 
+{% raw %}
+
 	Article: Q157190
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -50,3 +52,5 @@ permalink: /kb/157/Q157190/
 	
 	=============================================================================
 	
+
+{% endraw %}

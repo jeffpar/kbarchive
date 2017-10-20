@@ -6,6 +6,8 @@ permalink: /kb/299/Q299853/
 
 ## Q299853: HOWTO: Modify the Default Web Browser and E-mail Client
 
+{% raw %}
+
 	Article: Q299853
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -216,3 +218,5 @@ permalink: /kb/299/Q299853/
 	
 	=============================================================================
 	
+
+{% endraw %}

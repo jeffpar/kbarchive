@@ -6,6 +6,8 @@ permalink: /kb/158/Q158854/
 
 ## Q158854: WD97: Compile Error If VB Code Doesn't Find Comments
 
+{% raw %}
+
 	Article: Q158854
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -101,3 +103,5 @@ permalink: /kb/158/Q158854/
 	
 	=============================================================================
 	
+
+{% endraw %}

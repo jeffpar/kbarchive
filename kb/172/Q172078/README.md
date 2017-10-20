@@ -6,6 +6,8 @@ permalink: /kb/172/Q172078/
 
 ## Q172078: HOWTO: Enable Autorun for Applications Distributed on CD-ROM
 
+{% raw %}
+
 	Article: Q172078
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/172/Q172078/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190141/
 
 ## Q190141: IIS Administrator Service Fails to Stop
 
+{% raw %}
+
 	Article: Q190141
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/190/Q190141/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171214/
 
 ## Q171214: XFOR: NDR When Replying to a Lotus cc:Mail Reply Message
 
+{% raw %}
+
 	Article: Q171214
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -96,3 +98,5 @@ permalink: /kb/171/Q171214/
 	
 	=============================================================================
 	
+
+{% endraw %}

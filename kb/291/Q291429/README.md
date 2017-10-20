@@ -6,6 +6,8 @@ permalink: /kb/291/Q291429/
 
 ## Q291429: Err Msg: Stop 0x0000003f NO_more_system_PTES
 
+{% raw %}
+
 	Article: Q291429
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -73,3 +75,5 @@ permalink: /kb/291/Q291429/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/223/Q223128/
 
 ## Q223128: FIX: Problems Saving Visual Basic Form to Visual SourceSafe
 
+{% raw %}
+
 	Article: Q223128
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -86,3 +88,5 @@ permalink: /kb/223/Q223128/
 	
 	=============================================================================
 	
+
+{% endraw %}

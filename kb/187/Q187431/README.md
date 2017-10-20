@@ -6,6 +6,8 @@ permalink: /kb/187/Q187431/
 
 ## Q187431: TSAdmin Does Not List Servers Correctly
 
+{% raw %}
+
 	Article: Q187431
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -50,3 +52,5 @@ permalink: /kb/187/Q187431/
 	
 	=============================================================================
 	
+
+{% endraw %}

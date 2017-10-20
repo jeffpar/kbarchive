@@ -6,6 +6,8 @@ permalink: /kb/131/Q131354/
 
 ## Q131354: Cannot Connect to NWServer
 
+{% raw %}
+
 	Article: Q131354
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/131/Q131354/
 	
 	=============================================================================
 	
+
+{% endraw %}

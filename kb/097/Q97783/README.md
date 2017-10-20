@@ -6,6 +6,8 @@ permalink: /kb/097/Q97783/
 
 ## Q97783: Graphics in Musical Instruments Print Low Resolution
 
+{% raw %}
+
 	Article: Q97783
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/097/Q97783/
 	
 	=============================================================================
 	
+
+{% endraw %}

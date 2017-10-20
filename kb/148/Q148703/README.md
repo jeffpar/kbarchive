@@ -6,6 +6,8 @@ permalink: /kb/148/Q148703/
 
 ## Q148703: FIX: CWnd::SubclassDlgItem Returns FALSE for OLE Controls
 
+{% raw %}
+
 	Article: Q148703
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0
@@ -109,3 +111,5 @@ permalink: /kb/148/Q148703/
 	
 	=============================================================================
 	
+
+{% endraw %}

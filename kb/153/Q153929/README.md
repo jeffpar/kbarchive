@@ -6,6 +6,8 @@ permalink: /kb/153/Q153929/
 
 ## Q153929: HOWTO: Use Color Dialog from COMDLG32.DLL in VB and Access
 
+{% raw %}
+
 	Article: Q153929
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -130,3 +132,5 @@ permalink: /kb/153/Q153929/
 	
 	=============================================================================
 	
+
+{% endraw %}

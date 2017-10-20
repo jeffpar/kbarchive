@@ -6,6 +6,8 @@ permalink: /kb/263/Q263387/
 
 ## Q263387: SMS: &quot;Run Once For Every User Who Logs On&quot; Makes Ad Run Twice
 
+{% raw %}
+
 	Article: Q263387
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -74,3 +76,5 @@ permalink: /kb/263/Q263387/
 	
 	=============================================================================
 	
+
+{% endraw %}

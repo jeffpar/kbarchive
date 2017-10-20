@@ -6,6 +6,8 @@ permalink: /kb/031/Q31509/
 
 ## Q31509: More Than 15 Files Open at Once in DOS Versions 3.30 and Later
 
+{% raw %}
+
 	Article: Q31509
 	Product(s): See article
 	Version(s): m4.00 4.00b 4.50
@@ -82,3 +84,5 @@ permalink: /kb/031/Q31509/
 	  PRINT I%
 	NEXT
 	END
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129228/
 
 ## Q129228: PRB: &quot;Syntax Error&quot; When Using the GETDIR() Function
 
+{% raw %}
+
 	Article: Q129228
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -57,3 +59,5 @@ permalink: /kb/129/Q129228/
 	
 	=============================================================================
 	
+
+{% endraw %}

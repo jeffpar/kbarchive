@@ -6,6 +6,8 @@ permalink: /kb/112/Q112203/
 
 ## Q112203: PC DOS: How to Create Subfolders in the MS-DOS Client
 
+{% raw %}
+
 	Article: Q112203
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -45,3 +47,5 @@ permalink: /kb/112/Q112203/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/280/Q280334/
 
 ## Q280334: Problems Creating New File or Folder While Using NoDrives Policy
 
+{% raw %}
+
 	Article: Q280334
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -93,3 +95,5 @@ permalink: /kb/280/Q280334/
 	
 	=============================================================================
 	
+
+{% endraw %}

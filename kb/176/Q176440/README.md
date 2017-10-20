@@ -6,6 +6,8 @@ permalink: /kb/176/Q176440/
 
 ## Q176440: XCON: Exchange Server MTA Blocked by Very Large Message
 
+{% raw %}
+
 	Article: Q176440
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -68,3 +70,5 @@ permalink: /kb/176/Q176440/
 	
 	=============================================================================
 	
+
+{% endraw %}

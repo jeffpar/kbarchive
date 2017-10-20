@@ -6,6 +6,8 @@ permalink: /kb/155/Q155681/
 
 ## Q155681: Troubleshooting Display Problems in Windows NT 4.0
 
+{% raw %}
+
 	Article: Q155681
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -198,3 +200,5 @@ permalink: /kb/155/Q155681/
 	
 	=============================================================================
 	
+
+{% endraw %}

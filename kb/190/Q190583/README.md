@@ -6,6 +6,8 @@ permalink: /kb/190/Q190583/
 
 ## Q190583: BUG: No Data Source Name Generates Run-Time Error Using RDC
 
+{% raw %}
+
 	Article: Q190583
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/190/Q190583/
 	
 	=============================================================================
 	
+
+{% endraw %}

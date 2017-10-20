@@ -6,6 +6,8 @@ permalink: /kb/141/Q141844/
 
 ## Q141844: How to Change the Current Network Configuration
 
+{% raw %}
+
 	Article: Q141844
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -90,3 +92,5 @@ permalink: /kb/141/Q141844/
 	
 	=============================================================================
 	
+
+{% endraw %}

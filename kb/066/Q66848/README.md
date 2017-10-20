@@ -6,6 +6,8 @@ permalink: /kb/066/Q66848/
 
 ## Q66848: ASD: Items Saved in the CONFIG.AD1 File
 
+{% raw %}
+
 	Article: Q66848
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -74,3 +76,5 @@ permalink: /kb/066/Q66848/
 	
 	=============================================================================
 	
+
+{% endraw %}

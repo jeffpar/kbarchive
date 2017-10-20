@@ -6,6 +6,8 @@ permalink: /kb/126/Q126580/
 
 ## Q126580: SMS Windows 95 Client UNC Connections Not Dropped
 
+{% raw %}
+
 	Article: Q126580
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -43,3 +45,5 @@ permalink: /kb/126/Q126580/
 	
 	=============================================================================
 	
+
+{% endraw %}

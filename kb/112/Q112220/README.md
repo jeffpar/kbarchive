@@ -6,6 +6,8 @@ permalink: /kb/112/Q112220/
 
 ## Q112220: PRB: System Resources Not Released While in FoxPro
 
+{% raw %}
+
 	Article: Q112220
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,3.0
@@ -60,3 +62,5 @@ permalink: /kb/112/Q112220/
 	
 	=============================================================================
 	
+
+{% endraw %}

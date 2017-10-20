@@ -6,6 +6,8 @@ permalink: /kb/186/Q186431/
 
 ## Q186431: HOWTO: Bring an Application Window to the Top with Focus
 
+{% raw %}
+
 	Article: Q186431
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -118,3 +120,5 @@ permalink: /kb/186/Q186431/
 	
 	=============================================================================
 	
+
+{% endraw %}

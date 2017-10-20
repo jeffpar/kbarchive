@@ -6,6 +6,8 @@ permalink: /kb/256/Q256963/
 
 ## Q256963: Lockouts/Security Issues if Site Code Conflicts with Domain Name
 
+{% raw %}
+
 	Article: Q256963
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -62,3 +64,5 @@ permalink: /kb/256/Q256963/
 	
 	=============================================================================
 	
+
+{% endraw %}

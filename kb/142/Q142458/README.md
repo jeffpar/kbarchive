@@ -6,6 +6,8 @@ permalink: /kb/142/Q142458/
 
 ## Q142458: X.400: How to Test TP4 Connection Before X.400 Installation
 
+{% raw %}
+
 	Article: Q142458
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -154,3 +156,5 @@ permalink: /kb/142/Q142458/
 	
 	=============================================================================
 	
+
+{% endraw %}

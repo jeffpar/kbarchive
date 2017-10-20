@@ -6,6 +6,8 @@ permalink: /kb/165/Q165940/
 
 ## Q165940: Dynamic Updates for Adding LUs to Pools Is Broken
 
+{% raw %}
+
 	Article: Q165940
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/165/Q165940/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137320/
 
 ## Q137320: MS Select: Bad/Missing Sector Error When Duplicating Disks
 
+{% raw %}
+
 	Article: Q137320
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/137/Q137320/
 	
 	=============================================================================
 	
+
+{% endraw %}

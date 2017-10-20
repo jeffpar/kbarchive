@@ -6,6 +6,8 @@ permalink: /kb/132/Q132797/
 
 ## Q132797: Minimize Button in MS PowerPoint Viewer Closes PowerPoint
 
+{% raw %}
+
 	Article: Q132797
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -51,3 +53,5 @@ permalink: /kb/132/Q132797/
 	
 	=============================================================================
 	
+
+{% endraw %}

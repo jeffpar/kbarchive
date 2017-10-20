@@ -6,6 +6,8 @@ permalink: /kb/131/Q131960/
 
 ## Q131960: Aztech Sound Galaxy Basic 16 Sound Card Detected Incorrectly
 
+{% raw %}
+
 	Article: Q131960
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -72,3 +74,5 @@ permalink: /kb/131/Q131960/
 	
 	=============================================================================
 	
+
+{% endraw %}

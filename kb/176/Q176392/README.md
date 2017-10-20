@@ -6,6 +6,8 @@ permalink: /kb/176/Q176392/
 
 ## Q176392: FIX: Can't Assign an Object to an ActiveX Tag Property
 
+{% raw %}
+
 	Article: Q176392
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -175,3 +177,5 @@ permalink: /kb/176/Q176392/
 	
 	=============================================================================
 	
+
+{% endraw %}

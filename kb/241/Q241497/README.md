@@ -6,6 +6,8 @@ permalink: /kb/241/Q241497/
 
 ## Q241497: BackOffice Server Intranet Publishing Kit Does Not Install Corre
 
+{% raw %}
+
 	Article: Q241497
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.5
@@ -104,3 +106,5 @@ permalink: /kb/241/Q241497/
 	
 	=============================================================================
 	
+
+{% endraw %}

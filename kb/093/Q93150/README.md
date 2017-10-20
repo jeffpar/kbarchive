@@ -6,6 +6,8 @@ permalink: /kb/093/Q93150/
 
 ## Q93150: HP Draftmaster Prints to Left Side of Page Only
 
+{% raw %}
+
 	Article: Q93150
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/093/Q93150/
 	
 	=============================================================================
 	
+
+{% endraw %}

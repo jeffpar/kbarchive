@@ -6,6 +6,8 @@ permalink: /kb/027/Q27476/
 
 ## Q27476: Guidelines for Interfacing FORTRAN with Compiled BASIC
 
+{% raw %}
+
 	Article: Q27476
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -37,3 +39,5 @@ permalink: /kb/027/Q27476/
 	   with QuickBASIC Version 4.00. Microsoft FORTRAN Version 4.10 is
 	   needed to correctly interface with QuickBASIC Versions 4.00b and
 	   4.50 or BASIC Compiler Versions 6.00 and 6.00b programs.
+
+{% endraw %}

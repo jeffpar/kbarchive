@@ -6,6 +6,8 @@ permalink: /kb/244/Q244140/
 
 ## Q244140: BUG: Visual Basic Application Using HtmlHelp API Crashes
 
+{% raw %}
+
 	Article: Q244140
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -97,3 +99,5 @@ permalink: /kb/244/Q244140/
 	
 	=============================================================================
 	
+
+{% endraw %}

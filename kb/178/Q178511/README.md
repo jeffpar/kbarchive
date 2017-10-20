@@ -6,6 +6,8 @@ permalink: /kb/178/Q178511/
 
 ## Q178511: XWEB: Err Msg: Failed to Connect to Microsoft Exchange Server
 
+{% raw %}
+
 	Article: Q178511
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -83,3 +85,5 @@ permalink: /kb/178/Q178511/
 	
 	=============================================================================
 	
+
+{% endraw %}

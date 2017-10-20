@@ -6,6 +6,8 @@ permalink: /kb/189/Q189632/
 
 ## Q189632: BUG: Error in CoolBar Event Can Cause Hanging or Exception
 
+{% raw %}
+
 	Article: Q189632
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -102,3 +104,5 @@ permalink: /kb/189/Q189632/
 	
 	=============================================================================
 	
+
+{% endraw %}

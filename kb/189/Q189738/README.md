@@ -6,6 +6,8 @@ permalink: /kb/189/Q189738/
 
 ## Q189738: HOWTO: Run Setup1.vbp in the Design Environment
 
+{% raw %}
+
 	Article: Q189738
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -139,3 +141,5 @@ permalink: /kb/189/Q189738/
 	
 	=============================================================================
 	
+
+{% endraw %}

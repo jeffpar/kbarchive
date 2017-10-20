@@ -6,6 +6,8 @@ permalink: /kb/288/Q288301/
 
 ## Q288301: Server Drops All Connections, System Logs Multiple Event 2000
 
+{% raw %}
+
 	Article: Q288301
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/288/Q288301/
 	
 	=============================================================================
 	
+
+{% endraw %}

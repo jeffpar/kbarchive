@@ -6,6 +6,8 @@ permalink: /kb/193/Q193842/
 
 ## Q193842: XFOR: DXA Does Not Handle Long MAC Mail Addresses Properly
 
+{% raw %}
+
 	Article: Q193842
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -85,3 +87,5 @@ permalink: /kb/193/Q193842/
 	
 	=============================================================================
 	
+
+{% endraw %}

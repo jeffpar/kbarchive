@@ -6,6 +6,8 @@ permalink: /kb/122/Q122399/
 
 ## Q122399: Enabling Help Desk Options for MS-DOS Clients
 
+{% raw %}
+
 	Article: Q122399
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -95,3 +97,5 @@ permalink: /kb/122/Q122399/
 	
 	=============================================================================
 	
+
+{% endraw %}

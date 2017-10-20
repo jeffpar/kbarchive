@@ -6,6 +6,8 @@ permalink: /kb/245/Q245678/
 
 ## Q245678: Winsock Call Fails When You Have No Local Administrator Rights
 
+{% raw %}
+
 	Article: Q245678
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP6
@@ -86,3 +88,5 @@ permalink: /kb/245/Q245678/
 	
 	=============================================================================
 	
+
+{% endraw %}

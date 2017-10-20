@@ -6,6 +6,8 @@ permalink: /kb/263/Q263047/
 
 ## Q263047: Games: How to Troubleshoot Sound Related Issues
 
+{% raw %}
+
 	Article: Q263047
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -270,3 +272,5 @@ permalink: /kb/263/Q263047/
 	
 	=============================================================================
 	
+
+{% endraw %}

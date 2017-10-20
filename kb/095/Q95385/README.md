@@ -6,6 +6,8 @@ permalink: /kb/095/Q95385/
 
 ## Q95385: QMS PS PostScript Printer Driver Version 2.43.04
 
+{% raw %}
+
 	Article: Q95385
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -82,3 +84,5 @@ permalink: /kb/095/Q95385/
 	
 	=============================================================================
 	
+
+{% endraw %}

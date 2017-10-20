@@ -6,6 +6,8 @@ permalink: /kb/182/Q182420/
 
 ## Q182420: SMS: Site Code Should Not Be a WinNT Reserved Word
 
+{% raw %}
+
 	Article: Q182420
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.0,1.1,1.2,2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -110,3 +112,5 @@ permalink: /kb/182/Q182420/
 	
 	=============================================================================
 	
+
+{% endraw %}

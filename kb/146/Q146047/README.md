@@ -6,6 +6,8 @@ permalink: /kb/146/Q146047/
 
 ## Q146047: How to Display a '&amp;' Character in a Schedule+ Tab Title
 
+{% raw %}
+
 	Article: Q146047
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -55,3 +57,5 @@ permalink: /kb/146/Q146047/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187506/
 
 ## Q187506: List of NTFS Permissions Required for IIS Site to Work
 
+{% raw %}
+
 	Article: Q187506
 	Product(s): Internet Information Server
 	Version(s): 3.0,4.0,5.0
@@ -147,3 +149,5 @@ permalink: /kb/187/Q187506/
 	
 	=============================================================================
 	
+
+{% endraw %}

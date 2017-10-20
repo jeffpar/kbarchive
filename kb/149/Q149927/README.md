@@ -6,6 +6,8 @@ permalink: /kb/149/Q149927/
 
 ## Q149927: FTedit.exe: What You Can and Can't Use It For
 
+{% raw %}
+
 	Article: Q149927
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -123,3 +125,5 @@ permalink: /kb/149/Q149927/
 	
 	=============================================================================
 	
+
+{% endraw %}

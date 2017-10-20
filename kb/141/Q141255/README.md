@@ -6,6 +6,8 @@ permalink: /kb/141/Q141255/
 
 ## Q141255: Help Menu Items Unavailable in Full Screen Mode
 
+{% raw %}
+
 	Article: Q141255
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/141/Q141255/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147618/
 
 ## Q147618: XGEN: Cannot Get Free/Busy for Server Group on Another PO
 
+{% raw %}
+
 	Article: Q147618
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:7.0
@@ -54,3 +56,5 @@ permalink: /kb/147/Q147618/
 	
 	=============================================================================
 	
+
+{% endraw %}

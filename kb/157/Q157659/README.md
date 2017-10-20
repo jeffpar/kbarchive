@@ -6,6 +6,8 @@ permalink: /kb/157/Q157659/
 
 ## Q157659: SMS: Remote Control Doesn't Connect to 16-Bit SMS Clients
 
+{% raw %}
+
 	Article: Q157659
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -61,3 +63,5 @@ permalink: /kb/157/Q157659/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/131/Q131792/
 
 ## Q131792: PRB: OnClose() Is Called When Closing Print Preview Dialog Box
 
+{% raw %}
+
 	Article: Q131792
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -105,3 +107,5 @@ permalink: /kb/131/Q131792/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94214/
 
 ## Q94214: No Detection of Parallel Device Contention in Windows 3.1
 
+{% raw %}
+
 	Article: Q94214
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -42,3 +44,5 @@ permalink: /kb/094/Q94214/
 	
 	=============================================================================
 	
+
+{% endraw %}

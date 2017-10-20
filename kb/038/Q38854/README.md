@@ -6,6 +6,8 @@ permalink: /kb/038/Q38854/
 
 ## Q38854: Use of RMFIXUP.OBJ
 
+{% raw %}
+
 	Article: Q38854
 	Product(s): See article
 	Version(s): 2.00
@@ -22,3 +24,5 @@ permalink: /kb/038/Q38854/
 	
 	Note: Once this file has been linked in, the program can no longer be
 	run on a machine without a coprocessor.
+
+{% endraw %}

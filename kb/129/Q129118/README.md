@@ -6,6 +6,8 @@ permalink: /kb/129/Q129118/
 
 ## Q129118: FoxPro Obtains Exclusive Open on Shared Database
 
+{% raw %}
+
 	Article: Q129118
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -54,3 +56,5 @@ permalink: /kb/129/Q129118/
 	
 	=============================================================================
 	
+
+{% endraw %}

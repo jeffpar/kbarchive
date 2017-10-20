@@ -6,6 +6,8 @@ permalink: /kb/141/Q141558/
 
 ## Q141558: FIX: WindowType Changed at Run Time Can't Be Changed Back
 
+{% raw %}
+
 	Article: Q141558
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -87,3 +89,5 @@ permalink: /kb/141/Q141558/
 	
 	=============================================================================
 	
+
+{% endraw %}

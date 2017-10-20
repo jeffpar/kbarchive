@@ -6,6 +6,8 @@ permalink: /kb/249/Q249810/
 
 ## Q249810: XADM: Plain Text Message Becomes RTF upon Autoforward
 
+{% raw %}
+
 	Article: Q249810
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -72,3 +74,5 @@ permalink: /kb/249/Q249810/
 	
 	=============================================================================
 	
+
+{% endraw %}

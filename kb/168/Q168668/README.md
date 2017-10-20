@@ -6,6 +6,8 @@ permalink: /kb/168/Q168668/
 
 ## Q168668: SNA 3.0 Service Pack 2 Readme.txt File
 
+{% raw %}
+
 	Article: Q168668
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP2
@@ -190,3 +192,5 @@ permalink: /kb/168/Q168668/
 	
 	=============================================================================
 	
+
+{% endraw %}

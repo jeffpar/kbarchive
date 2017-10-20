@@ -6,6 +6,8 @@ permalink: /kb/085/Q85387/
 
 ## Q85387: Limitations in Windows File Association Capabilities
 
+{% raw %}
+
 	Article: Q85387
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/085/Q85387/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/035/Q35539/
 
 ## Q35539: Libraries Created by IMPLIB Are Different than those from LIB
 
+{% raw %}
+
 	Article: Q35539
 	Product(s): See article
 	Version(s): 5.10
@@ -29,3 +31,5 @@ permalink: /kb/035/Q35539/
 	IMPLIB. You cannot combine IMPLIB and LIB libraries. To see what
 	modules are in an IMPLIB library, use the type command to display the
 	.LIB file; it is a text file.
+
+{% endraw %}

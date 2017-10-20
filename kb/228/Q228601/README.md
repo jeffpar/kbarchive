@@ -6,6 +6,8 @@ permalink: /kb/228/Q228601/
 
 ## Q228601: XFOR:How to Exchange Templates between Exchange Server &amp; MS Mail
 
+{% raw %}
+
 	Article: Q228601
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -77,3 +79,5 @@ permalink: /kb/228/Q228601/
 	
 	=============================================================================
 	
+
+{% endraw %}

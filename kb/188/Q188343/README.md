@@ -6,6 +6,8 @@ permalink: /kb/188/Q188343/
 
 ## Q188343: ISAPI Filter Not Receiving SF_NOTIFY_SEND_RAW_DATA with Proxy
 
+{% raw %}
+
 	Article: Q188343
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -128,3 +130,5 @@ permalink: /kb/188/Q188343/
 	
 	=============================================================================
 	
+
+{% endraw %}

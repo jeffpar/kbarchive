@@ -6,6 +6,8 @@ permalink: /kb/223/Q223275/
 
 ## Q223275: Computer Hangs Due to Large System Environment Variable Values
 
+{% raw %}
+
 	Article: Q223275
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -96,3 +98,5 @@ permalink: /kb/223/Q223275/
 	
 	=============================================================================
 	
+
+{% endraw %}

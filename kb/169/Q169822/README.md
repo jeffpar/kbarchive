@@ -6,6 +6,8 @@ permalink: /kb/169/Q169822/
 
 ## Q169822: DSMN RAS Dial-in Properties Deletes NetWare Compatibility
 
+{% raw %}
+
 	Article: Q169822
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -76,3 +78,5 @@ permalink: /kb/169/Q169822/
 	
 	=============================================================================
 	
+
+{% endraw %}

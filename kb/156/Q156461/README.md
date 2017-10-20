@@ -6,6 +6,8 @@ permalink: /kb/156/Q156461/
 
 ## Q156461: Writer 2: Gaps Between Pages on Printed Banners
 
+{% raw %}
+
 	Article: Q156461
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -45,3 +47,5 @@ permalink: /kb/156/Q156461/
 	
 	=============================================================================
 	
+
+{% endraw %}

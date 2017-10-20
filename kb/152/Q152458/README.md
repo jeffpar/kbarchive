@@ -6,6 +6,8 @@ permalink: /kb/152/Q152458/
 
 ## Q152458: XADM: Mailbox Resources Reporting Usage Not Seen by Client
 
+{% raw %}
+
 	Article: Q152458
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -158,3 +160,5 @@ permalink: /kb/152/Q152458/
 	
 	=============================================================================
 	
+
+{% endraw %}

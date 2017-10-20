@@ -6,6 +6,8 @@ permalink: /kb/286/Q286157/
 
 ## Q286157: Blank Page May Be Printed at the Start of Host Print Jobs
 
+{% raw %}
+
 	Article: Q286157
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3,4.0 SP4
@@ -117,3 +119,5 @@ permalink: /kb/286/Q286157/
 	
 	=============================================================================
 	
+
+{% endraw %}

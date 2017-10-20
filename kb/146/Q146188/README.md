@@ -6,6 +6,8 @@ permalink: /kb/146/Q146188/
 
 ## Q146188: XCLN: Use Network Security Option Not Working as Expected
 
+{% raw %}
+
 	Article: Q146188
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/146/Q146188/
 	
 	=============================================================================
 	
+
+{% endraw %}

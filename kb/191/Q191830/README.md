@@ -6,6 +6,8 @@ permalink: /kb/191/Q191830/
 
 ## Q191830: Memory Leak Due to Repeated Logon/Logoff May Corrupt Profiles
 
+{% raw %}
+
 	Article: Q191830
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP3
@@ -71,3 +73,5 @@ permalink: /kb/191/Q191830/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132808/
 
 ## Q132808: Error Message Attempting to Add Users in Network Dialog Box.
 
+{% raw %}
+
 	Article: Q132808
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/132/Q132808/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/035/Q35295/
 
 ## Q35295: Getting the Address of a Function with FP_SEG and FP_OFF
 
+{% raw %}
+
 	Article: Q35295
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 5.10 | 5.10
@@ -41,3 +43,5 @@ permalink: /kb/035/Q35295/
 	
 	int foo()
 	    {}
+
+{% endraw %}

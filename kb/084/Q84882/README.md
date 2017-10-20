@@ -6,6 +6,8 @@ permalink: /kb/084/Q84882/
 
 ## Q84882: Windows Err Msg: Cannot Find File -EMBEDDI.BMP
 
+{% raw %}
+
 	Article: Q84882
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -69,3 +71,5 @@ permalink: /kb/084/Q84882/
 	
 	=============================================================================
 	
+
+{% endraw %}

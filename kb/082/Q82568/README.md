@@ -6,6 +6,8 @@ permalink: /kb/082/Q82568/
 
 ## Q82568: Desktop Can't Print from Directory with an Extension
 
+{% raw %}
+
 	Article: Q82568
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -40,3 +42,5 @@ permalink: /kb/082/Q82568/
 	
 	=============================================================================
 	
+
+{% endraw %}

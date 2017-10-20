@@ -6,6 +6,8 @@ permalink: /kb/156/Q156833/
 
 ## Q156833: STOP 0X7B Inaccessible Boot Device When Starting Windows NT
 
+{% raw %}
+
 	Article: Q156833
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/156/Q156833/
 	
 	=============================================================================
 	
+
+{% endraw %}

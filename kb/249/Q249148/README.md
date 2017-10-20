@@ -6,6 +6,8 @@ permalink: /kb/249/Q249148/
 
 ## Q249148: XADM: Handles Leak During Online Backup
 
+{% raw %}
+
 	Article: Q249148
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -100,3 +102,5 @@ permalink: /kb/249/Q249148/
 	
 	=============================================================================
 	
+
+{% endraw %}

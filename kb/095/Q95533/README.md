@@ -6,6 +6,8 @@ permalink: /kb/095/Q95533/
 
 ## Q95533: Largest Possible DoubleSpace Drive Is 512 MB
 
+{% raw %}
+
 	Article: Q95533
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:95
@@ -93,3 +95,5 @@ permalink: /kb/095/Q95533/
 	
 	=============================================================================
 	
+
+{% endraw %}

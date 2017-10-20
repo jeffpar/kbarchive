@@ -6,6 +6,8 @@ permalink: /kb/155/Q155161/
 
 ## Q155161: XCLN: ErrMsg: &quot;Setup Is Unable to Open the Data File...&quot;
 
+{% raw %}
+
 	Article: Q155161
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -75,3 +77,5 @@ permalink: /kb/155/Q155161/
 	
 	=============================================================================
 	
+
+{% endraw %}

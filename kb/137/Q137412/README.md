@@ -6,6 +6,8 @@ permalink: /kb/137/Q137412/
 
 ## Q137412: PRB: Fields Can Be Removed from Field Name List
 
+{% raw %}
+
 	Article: Q137412
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -66,3 +68,5 @@ permalink: /kb/137/Q137412/
 	
 	=============================================================================
 	
+
+{% endraw %}

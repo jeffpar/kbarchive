@@ -6,6 +6,8 @@ permalink: /kb/181/Q181390/
 
 ## Q181390: PRB: Grid with Focus Ignores Alias of Second Form
 
+{% raw %}
+
 	Article: Q181390
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -87,3 +89,5 @@ permalink: /kb/181/Q181390/
 	
 	=============================================================================
 	
+
+{% endraw %}

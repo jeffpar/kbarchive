@@ -6,6 +6,8 @@ permalink: /kb/074/Q74679/
 
 ## Q74679: Windows-Based 3270 Emulators
 
+{% raw %}
+
 	Article: Q74679
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -86,3 +88,5 @@ permalink: /kb/074/Q74679/
 	
 	=============================================================================
 	
+
+{% endraw %}

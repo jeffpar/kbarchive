@@ -6,6 +6,8 @@ permalink: /kb/087/Q87349/
 
 ## Q87349: BUG: Color PostScript Drivers Report Incorrect Data
 
+{% raw %}
+
 	Article: Q87349
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/087/Q87349/
 	
 	=============================================================================
 	
+
+{% endraw %}

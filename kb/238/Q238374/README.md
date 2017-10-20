@@ -6,6 +6,8 @@ permalink: /kb/238/Q238374/
 
 ## Q238374: How to Produce a List of Users and Their Last Password Change
 
+{% raw %}
+
 	Article: Q238374
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -156,3 +158,5 @@ permalink: /kb/238/Q238374/
 	
 	=============================================================================
 	
+
+{% endraw %}

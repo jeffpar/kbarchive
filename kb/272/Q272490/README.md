@@ -6,6 +6,8 @@ permalink: /kb/272/Q272490/
 
 ## Q272490: BUG: Error &quot;Cannot Save an Uninitialized Class&quot; on VB Component
 
+{% raw %}
+
 	Article: Q272490
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -154,3 +156,5 @@ permalink: /kb/272/Q272490/
 	
 	=============================================================================
 	
+
+{% endraw %}

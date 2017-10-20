@@ -6,6 +6,8 @@ permalink: /kb/181/Q181816/
 
 ## Q181816: WD97: How to Store and Retrieve Variables in Documents
 
+{% raw %}
+
 	Article: Q181816
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -198,3 +200,5 @@ permalink: /kb/181/Q181816/
 	
 	=============================================================================
 	
+
+{% endraw %}

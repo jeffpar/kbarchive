@@ -6,6 +6,8 @@ permalink: /kb/166/Q166480/
 
 ## Q166480: INFO: Active Template Library (ATL) Frequently Asked Questions
 
+{% raw %}
+
 	Article: Q166480
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,3.0
@@ -425,3 +427,5 @@ permalink: /kb/166/Q166480/
 	
 	=============================================================================
 	
+
+{% endraw %}

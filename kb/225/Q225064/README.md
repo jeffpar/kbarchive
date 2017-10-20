@@ -6,6 +6,8 @@ permalink: /kb/225/Q225064/
 
 ## Q225064: SMS: INVMAC Software Inventory Performance Decreases Over Time
 
+{% raw %}
+
 	Article: Q225064
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -104,3 +106,5 @@ permalink: /kb/225/Q225064/
 	
 	=============================================================================
 	
+
+{% endraw %}

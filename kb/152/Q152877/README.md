@@ -6,6 +6,8 @@ permalink: /kb/152/Q152877/
 
 ## Q152877: XCON: Unexpected event ID's 1004, 1008, 1277, and 1198
 
+{% raw %}
+
 	Article: Q152877
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -85,3 +87,5 @@ permalink: /kb/152/Q152877/
 	
 	=============================================================================
 	
+
+{% endraw %}

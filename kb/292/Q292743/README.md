@@ -6,6 +6,8 @@ permalink: /kb/292/Q292743/
 
 ## Q292743: Error Message: ERROR_PPP_TIMEOUT
 
+{% raw %}
+
 	Article: Q292743
 	Product(s): The Microsoft Network
 	Version(s): 6.0
@@ -106,3 +108,5 @@ permalink: /kb/292/Q292743/
 	
 	=============================================================================
 	
+
+{% endraw %}

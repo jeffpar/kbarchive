@@ -6,6 +6,8 @@ permalink: /kb/027/Q27906/
 
 ## Q27906: CALLing Pascal and FORTRAN Modules in QuickBASIC Programs
 
+{% raw %}
+
 	Article: Q27906
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -41,3 +43,5 @@ permalink: /kb/027/Q27906/
 	is similar for FORTRAN I/O, which also requires near buffer space, and
 	which can be provided by the same means as the Pascal near malloc
 	space.
+
+{% endraw %}

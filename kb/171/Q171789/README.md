@@ -6,6 +6,8 @@ permalink: /kb/171/Q171789/
 
 ## Q171789: PTR Record for DNS Server Is Not Automatically Created
 
+{% raw %}
+
 	Article: Q171789
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -107,3 +109,5 @@ permalink: /kb/171/Q171789/
 	
 	=============================================================================
 	
+
+{% endraw %}

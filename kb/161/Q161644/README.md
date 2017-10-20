@@ -6,6 +6,8 @@ permalink: /kb/161/Q161644/
 
 ## Q161644: STOP 0x0000000A Sfmsrv.sys When Copying File to Mac Volume
 
+{% raw %}
+
 	Article: Q161644
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -85,3 +87,5 @@ permalink: /kb/161/Q161644/
 	
 	=============================================================================
 	
+
+{% endraw %}

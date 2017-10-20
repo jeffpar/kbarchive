@@ -6,6 +6,8 @@ permalink: /kb/323/Q323942/
 
 ## Q323942: Asheron's Call: Err Msg: You Do Not Have the Current Version...
 
+{% raw %}
+
 	Article: Q323942
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -76,3 +78,5 @@ permalink: /kb/323/Q323942/
 	
 	=============================================================================
 	
+
+{% endraw %}

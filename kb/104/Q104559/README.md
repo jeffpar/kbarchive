@@ -6,6 +6,8 @@ permalink: /kb/104/Q104559/
 
 ## Q104559: Attachmate Extra Card not Supported in Windows NT
 
+{% raw %}
+
 	Article: Q104559
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -70,3 +72,5 @@ permalink: /kb/104/Q104559/
 	
 	=============================================================================
 	
+
+{% endraw %}

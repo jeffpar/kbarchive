@@ -6,6 +6,8 @@ permalink: /kb/031/Q31547/
 
 ## Q31547: Environment Variables Used by the Microsoft Editor
 
+{% raw %}
+
 	Article: Q31547
 	Product(s): See article
 	Version(s): 1.00
@@ -32,3 +34,5 @@ permalink: /kb/031/Q31547/
 	   Also, if the TMP environment variable ends with a semicolon, the
 	temporary files (i.e., swapping files) will not be created. The editor
 	will try to use the semicolon in the name of the file that is created.
+
+{% endraw %}

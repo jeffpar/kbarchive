@@ -6,6 +6,8 @@ permalink: /kb/249/Q249137/
 
 ## Q249137: SMS: Invalid Results Are Received When Querying a Component
 
+{% raw %}
+
 	Article: Q249137
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP1,2.0 SP2
@@ -69,3 +71,5 @@ permalink: /kb/249/Q249137/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/118/Q118397/
 
 ## Q118397: BUG: SETWINDOWCONFIG Returns an Invalid Configuration
 
+{% raw %}
+
 	Article: Q118397
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,4.0
@@ -99,3 +101,5 @@ permalink: /kb/118/Q118397/
 	
 	=============================================================================
 	
+
+{% endraw %}

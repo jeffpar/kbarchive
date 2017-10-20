@@ -6,6 +6,8 @@ permalink: /kb/266/Q266671/
 
 ## Q266671: XADM: Exmerge Won't Work on Windows 2000 Terminal Server Comp.
 
+{% raw %}
+
 	Article: Q266671
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -58,3 +60,5 @@ permalink: /kb/266/Q266671/
 	
 	=============================================================================
 	
+
+{% endraw %}

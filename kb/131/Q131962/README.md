@@ -6,6 +6,8 @@ permalink: /kb/131/Q131962/
 
 ## Q131962: XCON: X25CallFacilities and X25CallUserData in Registry
 
+{% raw %}
+
 	Article: Q131962
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -59,3 +61,5 @@ permalink: /kb/131/Q131962/
 	
 	=============================================================================
 	
+
+{% endraw %}

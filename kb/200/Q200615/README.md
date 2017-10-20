@@ -6,6 +6,8 @@ permalink: /kb/200/Q200615/
 
 ## Q200615: SMS: Setup Does Not Install SQL Server 7.0 Unattended
 
+{% raw %}
+
 	Article: Q200615
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -59,3 +61,5 @@ permalink: /kb/200/Q200615/
 	
 	=============================================================================
 	
+
+{% endraw %}

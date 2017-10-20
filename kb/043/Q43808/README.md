@@ -6,6 +6,8 @@ permalink: /kb/043/Q43808/
 
 ## Q43808: C: srand() Sample Program Does Not Print Out the Array Values
 
+{% raw %}
+
 	Article: Q43808
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -73,3 +75,5 @@ permalink: /kb/043/Q43808/
 	       ranvals[x] = rand();
 	       printf("Iteration %d, ranvals[%d] =%d\n",x+1, x, ranvals[x]);
 	       }
+
+{% endraw %}

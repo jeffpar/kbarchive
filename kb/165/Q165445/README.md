@@ -6,6 +6,8 @@ permalink: /kb/165/Q165445/
 
 ## Q165445: XCON: How to Configure TP4 Protocol over Routers
 
+{% raw %}
+
 	Article: Q165445
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -81,3 +83,5 @@ permalink: /kb/165/Q165445/
 	
 	=============================================================================
 	
+
+{% endraw %}

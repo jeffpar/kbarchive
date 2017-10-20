@@ -6,6 +6,8 @@ permalink: /kb/023/Q23739/
 
 ## Q23739: INFO: Specify Compiler Options Before Source Filename
 
+{% raw %}
+
 	Article: Q23739
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -56,3 +58,5 @@ permalink: /kb/023/Q23739/
 	
 	=============================================================================
 	
+
+{% endraw %}

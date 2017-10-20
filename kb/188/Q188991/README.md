@@ -6,6 +6,8 @@ permalink: /kb/188/Q188991/
 
 ## Q188991: 5250 Print Session May Be Hung in Stuck State, Show Spooling
 
+{% raw %}
+
 	Article: Q188991
 	Product(s): Microsoft SNA Server
 	Version(s): 3.0,3.0SP1,3.0SP2,3.0SP3,4.0,4.0SP1
@@ -74,3 +76,5 @@ permalink: /kb/188/Q188991/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/187/Q187147/
 
 ## Q187147: OLE/DCOM: Client Cannot Create a Server Instance
 
+{% raw %}
+
 	Article: Q187147
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -45,3 +47,5 @@ permalink: /kb/187/Q187147/
 	
 	=============================================================================
 	
+
+{% endraw %}

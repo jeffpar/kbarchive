@@ -6,6 +6,8 @@ permalink: /kb/092/Q92634/
 
 ## Q92634: Invalid Err Msg in Print Manager w/14-Character Machine Name
 
+{% raw %}
+
 	Article: Q92634
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.1,3.11
@@ -66,3 +68,5 @@ permalink: /kb/092/Q92634/
 	
 	=============================================================================
 	
+
+{% endraw %}

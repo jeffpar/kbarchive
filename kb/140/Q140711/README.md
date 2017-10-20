@@ -6,6 +6,8 @@ permalink: /kb/140/Q140711/
 
 ## Q140711: Error Messages Indicate Modem When Connected to MSN Using LAN
 
+{% raw %}
+
 	Article: Q140711
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5,2.51,2.52,2.6,95,98,98 Second Edition
@@ -51,3 +53,5 @@ permalink: /kb/140/Q140711/
 	
 	=============================================================================
 	
+
+{% endraw %}

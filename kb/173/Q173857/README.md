@@ -6,6 +6,8 @@ permalink: /kb/173/Q173857/
 
 ## Q173857: Using Microsoft Windows 95 Drivers for Point and Print on WinNT
 
+{% raw %}
+
 	Article: Q173857
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0:Win95
@@ -103,3 +105,5 @@ permalink: /kb/173/Q173857/
 	
 	=============================================================================
 	
+
+{% endraw %}

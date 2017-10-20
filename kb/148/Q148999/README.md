@@ -6,6 +6,8 @@ permalink: /kb/148/Q148999/
 
 ## Q148999: BUG: ON ERROR Not Called When Update Conflict Occurs in Grid
 
+{% raw %}
+
 	Article: Q148999
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS: 3.0,3.0b,5.0,5.0a,6.0
@@ -101,3 +103,5 @@ permalink: /kb/148/Q148999/
 	
 	=============================================================================
 	
+
+{% endraw %}

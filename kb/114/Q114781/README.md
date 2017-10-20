@@ -6,6 +6,8 @@ permalink: /kb/114/Q114781/
 
 ## Q114781: Rushmore Requires Open Indexes in Order to Operate
 
+{% raw %}
+
 	Article: Q114781
 	Product(s): Microsoft FoxPro
 	Version(s): 2.0,2.5,2.5a,2.5b,2.5c,2.6a,3.0
@@ -88,3 +90,5 @@ permalink: /kb/114/Q114781/
 	
 	=============================================================================
 	
+
+{% endraw %}

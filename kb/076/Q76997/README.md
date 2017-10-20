@@ -6,6 +6,8 @@ permalink: /kb/076/Q76997/
 
 ## Q76997: Turbo Debugger 2.0 and Later with MS-DOS 5.0
 
+{% raw %}
+
 	Article: Q76997
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -50,3 +52,5 @@ permalink: /kb/076/Q76997/
 	
 	=============================================================================
 	
+
+{% endraw %}

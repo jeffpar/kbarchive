@@ -6,6 +6,8 @@ permalink: /kb/237/Q237803/
 
 ## Q237803: XCLN: Updated Version of the IExpress Deployment Kit Available
 
+{% raw %}
+
 	Article: Q237803
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -93,3 +95,5 @@ permalink: /kb/237/Q237803/
 	
 	=============================================================================
 	
+
+{% endraw %}

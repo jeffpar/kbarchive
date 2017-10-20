@@ -6,6 +6,8 @@ permalink: /kb/082/Q82273/
 
 ## Q82273: AST 386 FastBoard May Cause EMM386 Error
 
+{% raw %}
+
 	Article: Q82273
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -63,3 +65,5 @@ permalink: /kb/082/Q82273/
 	
 	=============================================================================
 	
+
+{% endraw %}

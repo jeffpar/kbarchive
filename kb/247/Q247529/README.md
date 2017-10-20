@@ -6,6 +6,8 @@ permalink: /kb/247/Q247529/
 
 ## Q247529: HOWTO: Associate a Custom Icon with a File Extension
 
+{% raw %}
+
 	Article: Q247529
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -186,3 +188,5 @@ permalink: /kb/247/Q247529/
 	
 	=============================================================================
 	
+
+{% endraw %}

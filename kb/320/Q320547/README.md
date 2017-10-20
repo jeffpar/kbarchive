@@ -6,6 +6,8 @@ permalink: /kb/320/Q320547/
 
 ## Q320547: HIS2000: Data Queue Control Hangs When Connection Is Lost
 
+{% raw %}
+
 	Article: Q320547
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -88,3 +90,5 @@ permalink: /kb/320/Q320547/
 	
 	=============================================================================
 	
+
+{% endraw %}

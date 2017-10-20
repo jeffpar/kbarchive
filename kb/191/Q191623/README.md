@@ -6,6 +6,8 @@ permalink: /kb/191/Q191623/
 
 ## Q191623: HOWTO: Distribute VFP COM Components used with MTS
 
+{% raw %}
+
 	Article: Q191623
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -72,3 +74,5 @@ permalink: /kb/191/Q191623/
 	
 	=============================================================================
 	
+
+{% endraw %}

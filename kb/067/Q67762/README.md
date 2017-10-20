@@ -6,6 +6,8 @@ permalink: /kb/067/Q67762/
 
 ## Q67762: Invalid Switch and Extensions in Brief Emulation
 
+{% raw %}
+
 	Article: Q67762
 	Product(s): See article
 	Version(s): 1.02   | 1.02
@@ -40,3 +42,5 @@ permalink: /kb/067/Q67762/
 	
 	Microsoft NMake [Make Utility]
 	=============================================================================
+
+{% endraw %}

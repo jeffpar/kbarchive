@@ -6,6 +6,8 @@ permalink: /kb/105/Q105166/
 
 ## Q105166: PC Ext: MinKDiskFull &amp; MinKDiskNotFull Not Written to Log File
 
+{% raw %}
+
 	Article: Q105166
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -44,3 +46,5 @@ permalink: /kb/105/Q105166/
 	
 	=============================================================================
 	
+
+{% endraw %}

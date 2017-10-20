@@ -6,6 +6,8 @@ permalink: /kb/068/Q68917/
 
 ## Q68917: ASD: Some Aircraft Features Cannot Be Modified
 
+{% raw %}
+
 	Article: Q68917
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -33,3 +35,5 @@ permalink: /kb/068/Q68917/
 	
 	=============================================================================
 	
+
+{% endraw %}

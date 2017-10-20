@@ -6,6 +6,8 @@ permalink: /kb/130/Q130545/
 
 ## Q130545: Description of New Integer Data Type
 
+{% raw %}
+
 	Article: Q130545
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -95,3 +97,5 @@ permalink: /kb/130/Q130545/
 	
 	=============================================================================
 	
+
+{% endraw %}

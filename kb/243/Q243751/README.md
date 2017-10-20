@@ -6,6 +6,8 @@ permalink: /kb/243/Q243751/
 
 ## Q243751: HOWTO: Add Command Handlers for MRU Menu Items in MFC App
 
+{% raw %}
+
 	Article: Q243751
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -122,3 +124,5 @@ permalink: /kb/243/Q243751/
 	
 	=============================================================================
 	
+
+{% endraw %}

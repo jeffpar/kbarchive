@@ -6,6 +6,8 @@ permalink: /kb/190/Q190728/
 
 ## Q190728: XADM: FDoMaintenance Halted Due to Error 0xfffffc15
 
+{% raw %}
+
 	Article: Q190728
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/190/Q190728/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/147/Q147121/
 
 ## Q147121: XADM: Cannot Incremental Restore Until Full Backup Is Restored
 
+{% raw %}
+
 	Article: Q147121
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -70,3 +72,5 @@ permalink: /kb/147/Q147121/
 	
 	=============================================================================
 	
+
+{% endraw %}

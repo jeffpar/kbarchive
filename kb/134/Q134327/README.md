@@ -6,6 +6,8 @@ permalink: /kb/134/Q134327/
 
 ## Q134327: Program Group Control Tasks During Startup
 
+{% raw %}
+
 	Article: Q134327
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -68,3 +70,5 @@ permalink: /kb/134/Q134327/
 	
 	=============================================================================
 	
+
+{% endraw %}

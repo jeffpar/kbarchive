@@ -6,6 +6,8 @@ permalink: /kb/136/Q136271/
 
 ## Q136271: Windows 95 Does Not Detect AMI Fast SCSI II Controller
 
+{% raw %}
+
 	Article: Q136271
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -56,3 +58,5 @@ permalink: /kb/136/Q136271/
 	
 	=============================================================================
 	
+
+{% endraw %}

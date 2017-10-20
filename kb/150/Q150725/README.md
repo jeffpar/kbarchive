@@ -6,6 +6,8 @@ permalink: /kb/150/Q150725/
 
 ## Q150725: Cannot Run MSN Without Modem if You Do Not Sign Up on Computer
 
+{% raw %}
+
 	Article: Q150725
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -40,3 +42,5 @@ permalink: /kb/150/Q150725/
 	
 	=============================================================================
 	
+
+{% endraw %}

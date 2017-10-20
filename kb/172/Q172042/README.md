@@ -6,6 +6,8 @@ permalink: /kb/172/Q172042/
 
 ## Q172042: WD97: Document Text Extends into Margin, Overlaps, or Gaps
 
+{% raw %}
+
 	Article: Q172042
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -75,3 +77,5 @@ permalink: /kb/172/Q172042/
 	
 	=============================================================================
 	
+
+{% endraw %}

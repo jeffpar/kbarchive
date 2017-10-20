@@ -6,6 +6,8 @@ permalink: /kb/134/Q134323/
 
 ## Q134323: Setting SMS Shared Application's Default Working Directory
 
+{% raw %}
+
 	Article: Q134323
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -47,3 +49,5 @@ permalink: /kb/134/Q134323/
 	
 	=============================================================================
 	
+
+{% endraw %}

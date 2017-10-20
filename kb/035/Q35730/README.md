@@ -6,6 +6,8 @@ permalink: /kb/035/Q35730/
 
 ## Q35730: Incorrect Function Declaration
 
+{% raw %}
+
 	Article: Q35730
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -36,3 +38,5 @@ permalink: /kb/035/Q35730/
 	properly:
 	
 	function Fact (n : integer) : integer  [C]; extern;
+
+{% endraw %}

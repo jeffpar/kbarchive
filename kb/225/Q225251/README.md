@@ -6,6 +6,8 @@ permalink: /kb/225/Q225251/
 
 ## Q225251: MS-DOS Application May Cause STOP: 0x0000001E
 
+{% raw %}
+
 	Article: Q225251
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -88,3 +90,5 @@ permalink: /kb/225/Q225251/
 	
 	=============================================================================
 	
+
+{% endraw %}

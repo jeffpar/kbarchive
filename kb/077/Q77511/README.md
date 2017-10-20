@@ -6,6 +6,8 @@ permalink: /kb/077/Q77511/
 
 ## Q77511: Printing from Paintbrush with DeskJet 500 Scalable Font Driver
 
+{% raw %}
+
 	Article: Q77511
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -47,3 +49,5 @@ permalink: /kb/077/Q77511/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157834/
 
 ## Q157834: WD97: Applying Bullets and Numbers Removes Indents
 
+{% raw %}
+
 	Article: Q157834
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -62,3 +64,5 @@ permalink: /kb/157/Q157834/
 	
 	=============================================================================
 	
+
+{% endraw %}

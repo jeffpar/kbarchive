@@ -6,6 +6,8 @@ permalink: /kb/071/Q71979/
 
 ## Q71979: DOCERR: MASM 6.0 Makefile SNAP.MAK Gives U1073 NMAKE Errors
 
+{% raw %}
+
 	Article: Q71979
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -56,3 +58,5 @@ permalink: /kb/071/Q71979/
 	
 	=============================================================================
 	
+
+{% endraw %}

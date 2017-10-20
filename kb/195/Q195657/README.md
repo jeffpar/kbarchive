@@ -6,6 +6,8 @@ permalink: /kb/195/Q195657/
 
 ## Q195657: PRB: Type Conversion Functions Can Return Unexpected Results
 
+{% raw %}
+
 	Article: Q195657
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -150,3 +152,5 @@ permalink: /kb/195/Q195657/
 	
 	=============================================================================
 	
+
+{% endraw %}

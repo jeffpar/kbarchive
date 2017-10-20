@@ -6,6 +6,8 @@ permalink: /kb/271/Q271211/
 
 ## Q271211: Deleted Users Repeatedly Processed
 
+{% raw %}
+
 	Article: Q271211
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2
@@ -89,3 +91,5 @@ permalink: /kb/271/Q271211/
 	
 	=============================================================================
 	
+
+{% endraw %}

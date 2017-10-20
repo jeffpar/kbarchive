@@ -6,6 +6,8 @@ permalink: /kb/051/Q51761/
 
 ## Q51761: Flight Simulator 4.00: Heading Drifts to the Left
 
+{% raw %}
+
 	Article: Q51761
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/051/Q51761/
 	
 	=============================================================================
 	
+
+{% endraw %}

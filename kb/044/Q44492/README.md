@@ -6,6 +6,8 @@ permalink: /kb/044/Q44492/
 
 ## Q44492: Mandelbrot Example Needs to Change &quot;LogicY&quot; to a SINGLE
 
+{% raw %}
+
 	Article: Q44492
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -36,3 +38,5 @@ permalink: /kb/044/Q44492/
 	Knowledge Base:
 	
 	   PMAP and MAP and WINDOW and INTEGER
+
+{% endraw %}

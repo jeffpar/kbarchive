@@ -6,6 +6,8 @@ permalink: /kb/158/Q158960/
 
 ## Q158960: Files Installed by DirectX 2.0a
 
+{% raw %}
+
 	Article: Q158960
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0,1.0a,3.0
@@ -89,3 +91,5 @@ permalink: /kb/158/Q158960/
 	
 	=============================================================================
 	
+
+{% endraw %}

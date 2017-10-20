@@ -6,6 +6,8 @@ permalink: /kb/305/Q305582/
 
 ## Q305582: Age of Empires II: Game Does Not Start as Expected
 
+{% raw %}
+
 	Article: Q305582
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -96,3 +98,5 @@ permalink: /kb/305/Q305582/
 	
 	=============================================================================
 	
+
+{% endraw %}

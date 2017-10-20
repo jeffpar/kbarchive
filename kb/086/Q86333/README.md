@@ -6,6 +6,8 @@ permalink: /kb/086/Q86333/
 
 ## Q86333: Odvhlb.exe Demos Owner-Draw Variable-Height List Box
 
+{% raw %}
+
 	Article: Q86333
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/086/Q86333/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245141/
 
 ## Q245141: Error Initializing When Starting Access 97 Using Terminal Server
 
+{% raw %}
+
 	Article: Q245141
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -53,3 +55,5 @@ permalink: /kb/245/Q245141/
 	
 	=============================================================================
 	
+
+{% endraw %}

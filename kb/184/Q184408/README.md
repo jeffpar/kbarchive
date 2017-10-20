@@ -6,6 +6,8 @@ permalink: /kb/184/Q184408/
 
 ## Q184408: How to Replace In-Use Windows NT System Files
 
+{% raw %}
+
 	Article: Q184408
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -67,3 +69,5 @@ permalink: /kb/184/Q184408/
 	
 	=============================================================================
 	
+
+{% endraw %}

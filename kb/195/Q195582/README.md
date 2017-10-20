@@ -6,6 +6,8 @@ permalink: /kb/195/Q195582/
 
 ## Q195582: FPNW Leaks Memory in BindLibGetInfo
 
+{% raw %}
+
 	Article: Q195582
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/195/Q195582/
 	
 	=============================================================================
 	
+
+{% endraw %}

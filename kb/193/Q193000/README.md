@@ -6,6 +6,8 @@ permalink: /kb/193/Q193000/
 
 ## Q193000: PRB: Compiling a VB Project Generates &quot;Fatal Error C1083&quot;
 
+{% raw %}
+
 	Article: Q193000
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -80,3 +82,5 @@ permalink: /kb/193/Q193000/
 	
 	=============================================================================
 	
+
+{% endraw %}

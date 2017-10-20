@@ -6,6 +6,8 @@ permalink: /kb/248/Q248194/
 
 ## Q248194: BUG: get_Version Returns S_OK Even if the Version Does Not Exist
 
+{% raw %}
+
 	Article: Q248194
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -166,3 +168,5 @@ permalink: /kb/248/Q248194/
 	
 	=============================================================================
 	
+
+{% endraw %}

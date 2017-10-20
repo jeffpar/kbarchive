@@ -6,6 +6,8 @@ permalink: /kb/071/Q71128/
 
 ## Q71128: Windows 3.0a Disk Directories (3.5 Inch)
 
+{% raw %}
+
 	Article: Q71128
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0a
@@ -383,3 +385,5 @@ permalink: /kb/071/Q71128/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132373/
 
 ## Q132373: Writer: Adjust Margins to Fix Truncated Borders
 
+{% raw %}
+
 	Article: Q132373
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -97,3 +99,5 @@ permalink: /kb/132/Q132373/
 	
 	=============================================================================
 	
+
+{% endraw %}

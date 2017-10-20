@@ -6,6 +6,8 @@ permalink: /kb/198/Q198900/
 
 ## Q198900: SMS: Access Violation Opening Script from Newer Version
 
+{% raw %}
+
 	Article: Q198900
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0; winnt:1.2,2.0
@@ -74,3 +76,5 @@ permalink: /kb/198/Q198900/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64102/
 
 ## Q64102: BASIC 7.0 Documentation Correction for Compiling OS/2 Programs
 
+{% raw %}
+
 	Article: Q64102
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -26,3 +28,5 @@ permalink: /kb/064/Q64102/
 	
 	   For protected-mode programs, make sure to specify the /LP option
 	   to compile with BC.EXE.
+
+{% endraw %}

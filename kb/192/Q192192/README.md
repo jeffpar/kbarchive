@@ -6,6 +6,8 @@ permalink: /kb/192/Q192192/
 
 ## Q192192: XADM: Setup Fails with &quot;Self Registration.Cdonts.dll Failed&quot; Err
 
+{% raw %}
+
 	Article: Q192192
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -65,3 +67,5 @@ permalink: /kb/192/Q192192/
 	
 	=============================================================================
 	
+
+{% endraw %}

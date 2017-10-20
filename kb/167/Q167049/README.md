@@ -6,6 +6,8 @@ permalink: /kb/167/Q167049/
 
 ## Q167049: DHCP May Not Assign a Default Gateway to Windows NT Clients
 
+{% raw %}
+
 	Article: Q167049
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -71,3 +73,5 @@ permalink: /kb/167/Q167049/
 	
 	=============================================================================
 	
+
+{% endraw %}

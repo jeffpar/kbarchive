@@ -6,6 +6,8 @@ permalink: /kb/133/Q133349/
 
 ## Q133349: How to Set Up a Floppy-Disk-Boot Server-Based Installation
 
+{% raw %}
+
 	Article: Q133349
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -155,3 +157,5 @@ permalink: /kb/133/Q133349/
 	
 	=============================================================================
 	
+
+{% endraw %}

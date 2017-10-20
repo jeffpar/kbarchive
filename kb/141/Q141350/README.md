@@ -6,6 +6,8 @@ permalink: /kb/141/Q141350/
 
 ## Q141350: .inf File Install Fails with Error: &quot;A device attached to...&quot;
 
+{% raw %}
+
 	Article: Q141350
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -58,3 +60,5 @@ permalink: /kb/141/Q141350/
 	
 	=============================================================================
 	
+
+{% endraw %}

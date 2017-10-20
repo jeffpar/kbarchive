@@ -6,6 +6,8 @@ permalink: /kb/298/Q298648/
 
 ## Q298648: CRTPKG Fails If Package Collection Includes Special Characters
 
+{% raw %}
+
 	Article: Q298648
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -114,3 +116,5 @@ permalink: /kb/298/Q298648/
 	
 	=============================================================================
 	
+
+{% endraw %}

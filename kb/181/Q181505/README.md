@@ -6,6 +6,8 @@ permalink: /kb/181/Q181505/
 
 ## Q181505: PRB: ATL COM AppWizard Doesn't Offer MFC Support for .EXE
 
+{% raw %}
+
 	Article: Q181505
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0
@@ -117,3 +119,5 @@ permalink: /kb/181/Q181505/
 	
 	=============================================================================
 	
+
+{% endraw %}

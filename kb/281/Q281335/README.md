@@ -6,6 +6,8 @@ permalink: /kb/281/Q281335/
 
 ## Q281335: How to Isolate DLL into a Separate Process Using Component Srvcs
 
+{% raw %}
+
 	Article: Q281335
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -140,3 +142,5 @@ permalink: /kb/281/Q281335/
 	
 	=============================================================================
 	
+
+{% endraw %}

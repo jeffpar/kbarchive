@@ -6,6 +6,8 @@ permalink: /kb/086/Q86492/
 
 ## Q86492: Terminal Translates Letters into Numbers When Auto Dialing
 
+{% raw %}
+
 	Article: Q86492
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -90,3 +92,5 @@ permalink: /kb/086/Q86492/
 	
 	=============================================================================
 	
+
+{% endraw %}

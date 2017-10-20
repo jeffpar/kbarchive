@@ -6,6 +6,8 @@ permalink: /kb/158/Q158058/
 
 ## Q158058: MSNDS Client Does Not Prompt to Log On
 
+{% raw %}
+
 	Article: Q158058
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/158/Q158058/
 	
 	=============================================================================
 	
+
+{% endraw %}

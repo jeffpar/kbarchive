@@ -6,6 +6,8 @@ permalink: /kb/154/Q154981/
 
 ## Q154981: PRB: AppleScript: &quot;Results&quot; are Not Implemented
 
+{% raw %}
+
 	Article: Q154981
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -82,3 +84,5 @@ permalink: /kb/154/Q154981/
 	
 	=============================================================================
 	
+
+{% endraw %}

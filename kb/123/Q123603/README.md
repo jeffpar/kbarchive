@@ -6,6 +6,8 @@ permalink: /kb/123/Q123603/
 
 ## Q123603: DOC: Smart Pointers Example Is Incorrect
 
+{% raw %}
+
 	Article: Q123603
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0,2.1,4.0,4.1,5.0
@@ -107,3 +109,5 @@ permalink: /kb/123/Q123603/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86084/
 
 ## Q86084: PC WSPlus: Postoffices Missing in ADMINSCH
 
+{% raw %}
+
 	Article: Q86084
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -41,3 +43,5 @@ permalink: /kb/086/Q86084/
 	
 	=============================================================================
 	
+
+{% endraw %}

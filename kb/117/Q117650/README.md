@@ -6,6 +6,8 @@ permalink: /kb/117/Q117650/
 
 ## Q117650: PC Win: MOVEUSER.EXE Causes Invalid MMF After Password Reset
 
+{% raw %}
+
 	Article: Q117650
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -70,3 +72,5 @@ permalink: /kb/117/Q117650/
 	
 	=============================================================================
 	
+
+{% endraw %}

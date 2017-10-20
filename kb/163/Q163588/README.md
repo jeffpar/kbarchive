@@ -6,6 +6,8 @@ permalink: /kb/163/Q163588/
 
 ## Q163588: FP97: SQL Query Missing, Deleted When Running IDC Wizard
 
+{% raw %}
+
 	Article: Q163588
 	Product(s): Word Front Page
 	Version(s): 
@@ -98,3 +100,5 @@ permalink: /kb/163/Q163588/
 	
 	=============================================================================
 	
+
+{% endraw %}

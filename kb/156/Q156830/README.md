@@ -6,6 +6,8 @@ permalink: /kb/156/Q156830/
 
 ## Q156830: Soccer: The F.Y.R.O. Macedonia Flag Is Incorrect
 
+{% raw %}
+
 	Article: Q156830
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -44,3 +46,5 @@ permalink: /kb/156/Q156830/
 	
 	=============================================================================
 	
+
+{% endraw %}

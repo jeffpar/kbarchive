@@ -6,6 +6,8 @@ permalink: /kb/282/Q282184/
 
 ## Q282184: XADM: Heuristic Changes in Address Book Views in Service Pack 4
 
+{% raw %}
+
 	Article: Q282184
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -82,3 +84,5 @@ permalink: /kb/282/Q282184/
 	
 	=============================================================================
 	
+
+{% endraw %}

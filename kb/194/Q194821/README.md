@@ -6,6 +6,8 @@ permalink: /kb/194/Q194821/
 
 ## Q194821: Combat Flight Simulator: Computer Hangs When Aircraft Crashes
 
+{% raw %}
+
 	Article: Q194821
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -64,3 +66,5 @@ permalink: /kb/194/Q194821/
 	
 	=============================================================================
 	
+
+{% endraw %}

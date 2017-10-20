@@ -6,6 +6,8 @@ permalink: /kb/122/Q122794/
 
 ## Q122794: FTP Command ! Does Not Work with TCP/IP-32
 
+{% raw %}
+
 	Article: Q122794
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; winnt:3.5; :3.11
@@ -60,3 +62,5 @@ permalink: /kb/122/Q122794/
 	
 	=============================================================================
 	
+
+{% endraw %}

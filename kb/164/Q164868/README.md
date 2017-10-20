@@ -6,6 +6,8 @@ permalink: /kb/164/Q164868/
 
 ## Q164868: FIX: Maximizing and Restoring Print Preview Disables Menu Bars
 
+{% raw %}
+
 	Article: Q164868
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0 5.0a
@@ -77,3 +79,5 @@ permalink: /kb/164/Q164868/
 	
 	=============================================================================
 	
+
+{% endraw %}

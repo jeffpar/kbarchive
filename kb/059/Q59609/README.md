@@ -6,6 +6,8 @@ permalink: /kb/059/Q59609/
 
 ## Q59609: NEC Silentwriter 2 260 and 290
 
+{% raw %}
+
 	Article: Q59609
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/059/Q59609/
 	
 	=============================================================================
 	
+
+{% endraw %}

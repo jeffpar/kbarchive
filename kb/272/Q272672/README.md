@@ -6,6 +6,8 @@ permalink: /kb/272/Q272672/
 
 ## Q272672: XIMS: Internet Mail Service Does Not Generate NDR Message
 
+{% raw %}
+
 	Article: Q272672
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -169,3 +171,5 @@ permalink: /kb/272/Q272672/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148956/
 
 ## Q148956: Removing SNA Server Removes Installed Transaction Programs
 
+{% raw %}
+
 	Article: Q148956
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1,2.11 SP2
@@ -67,3 +69,5 @@ permalink: /kb/148/Q148956/
 	
 	=============================================================================
 	
+
+{% endraw %}

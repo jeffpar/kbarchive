@@ -6,6 +6,8 @@ permalink: /kb/032/Q32764/
 
 ## Q32764: Segments of Type COMMON Are Incorrectly Overlapped
 
+{% raw %}
+
 	Article: Q32764
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -19,3 +21,5 @@ permalink: /kb/032/Q32764/
 	   Microsoft has confirmed this to be a problem in Version 5.10. We
 	are researching this problem and will post new information as it
 	becomes available.
+
+{% endraw %}

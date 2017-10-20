@@ -6,6 +6,8 @@ permalink: /kb/041/Q41395/
 
 ## Q41395: COLOR &quot;Illegal Function Call&quot; in SCREEN 2; Use PALETTE on EGA
 
+{% raw %}
+
 	Article: Q41395
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -46,3 +48,5 @@ permalink: /kb/041/Q41395/
 	PALETTE 0, 5  ' Background set to Magenta (color number=5)
 	PALETTE 1, 2  ' Foreground set to Green (color number=2)
 	PRINT "This prints in the foreground color"
+
+{% endraw %}

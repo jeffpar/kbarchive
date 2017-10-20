@@ -6,6 +6,8 @@ permalink: /kb/236/Q236059/
 
 ## Q236059: Memory Leak in Rdpdd.dll
 
+{% raw %}
+
 	Article: Q236059
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -61,3 +63,5 @@ permalink: /kb/236/Q236059/
 	
 	=============================================================================
 	
+
+{% endraw %}

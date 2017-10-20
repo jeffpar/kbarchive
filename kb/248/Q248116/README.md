@@ -6,6 +6,8 @@ permalink: /kb/248/Q248116/
 
 ## Q248116: HOWTO: Use the Session Class to Provide a Private Data Session
 
+{% raw %}
+
 	Article: Q248116
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0,6.0 SP3
@@ -103,3 +105,5 @@ permalink: /kb/248/Q248116/
 	
 	=============================================================================
 	
+
+{% endraw %}

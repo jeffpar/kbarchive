@@ -6,6 +6,8 @@ permalink: /kb/236/Q236387/
 
 ## Q236387: Unable to Start Windows Explorer After Applying Service Pack 5
 
+{% raw %}
+
 	Article: Q236387
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/236/Q236387/
 	
 	=============================================================================
 	
+
+{% endraw %}

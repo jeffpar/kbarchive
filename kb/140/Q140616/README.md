@@ -6,6 +6,8 @@ permalink: /kb/140/Q140616/
 
 ## Q140616: MFCDISP: Replacing MFC IDispatch Implementation
 
+{% raw %}
+
 	Article: Q140616
 	Product(s): Microsoft C Compiler
 	Version(s): 3.51,4.0,5.0,6.0
@@ -174,14 +176,14 @@ permalink: /kb/140/Q140616/
 	           properties:
 	              // NOTE - ClassWizard will maintain property information here.
 	              //    Use extreme caution when editing this section.
-	              //{ {AFX_ODL_PROP(CTestDoc)
-	              //} }AFX_ODL_PROP
+	              //{{AFX_ODL_PROP(CTestDoc)
+	              //}}AFX_ODL_PROP
 	
 	           methods:
 	              // NOTE - ClassWizard will maintain method information here.
 	              //    Use extreme caution when editing this section.
-	              //{ {AFX_ODL_METHOD(CTestDoc)
-	              //} }AFX_ODL_METHOD
+	              //{{AFX_ODL_METHOD(CTestDoc)
+	              //}}AFX_ODL_METHOD
 	
 	        };
 	     */ 
@@ -190,7 +192,7 @@ permalink: /kb/140/Q140616/
 	        {
 	           [default] interface ITest;
 	        };
-	        //{ {AFX_APPEND_ODL} }
+	        //{{AFX_APPEND_ODL}}
 	     };
 	
 	  A coclass must be provided if the object is a top-level object (that is, if
@@ -487,3 +489,5 @@ permalink: /kb/140/Q140616/
 	
 	=============================================================================
 	
+
+{% endraw %}

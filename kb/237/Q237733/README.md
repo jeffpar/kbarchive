@@ -6,6 +6,8 @@ permalink: /kb/237/Q237733/
 
 ## Q237733: NFL Fever 2000: Player Appears Twice in Global Substitutions
 
+{% raw %}
+
 	Article: Q237733
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -71,3 +73,5 @@ permalink: /kb/237/Q237733/
 	
 	=============================================================================
 	
+
+{% endraw %}

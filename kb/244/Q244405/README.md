@@ -6,6 +6,8 @@ permalink: /kb/244/Q244405/
 
 ## Q244405: SMS: Distribution Manager May Not Remove Compressed Package
 
+{% raw %}
+
 	Article: Q244405
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -111,3 +113,5 @@ permalink: /kb/244/Q244405/
 	
 	=============================================================================
 	
+
+{% endraw %}

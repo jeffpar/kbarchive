@@ -6,6 +6,8 @@ permalink: /kb/069/Q69162/
 
 ## Q69162: VAL Function Returns &quot;Type Mismatch&quot; for Some Invalid Numbers
 
+{% raw %}
+
 	Article: Q69162
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -86,3 +88,5 @@ permalink: /kb/069/Q69162/
 	error, query on the following words:
 	
 	   BASIC and VAL and type and mismatch
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239863/
 
 ## Q239863: NFL Fever 2000: Cannot Select Resolution Higher Than 640 x 480
 
+{% raw %}
+
 	Article: Q239863
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -52,3 +54,5 @@ permalink: /kb/239/Q239863/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/041/Q41203/
 
 ## Q41203: getch() Misbehaves on Keyboard Inputs ALT+Q, ALT+R
 
+{% raw %}
+
 	Article: Q41203
 	Product(s): See article
 	Version(s): 5.10
@@ -87,3 +89,5 @@ permalink: /kb/041/Q41203/
 	        }
 	    }  while (ch != 27) ;   /* exit loop on ESC key */
 	}
+
+{% endraw %}

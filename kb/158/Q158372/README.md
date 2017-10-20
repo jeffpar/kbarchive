@@ -6,6 +6,8 @@ permalink: /kb/158/Q158372/
 
 ## Q158372: Black Screen During Windows NT 4.0 Upgrade on DEC
 
+{% raw %}
+
 	Article: Q158372
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -51,3 +53,5 @@ permalink: /kb/158/Q158372/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/201/Q201199/
 
 ## Q201199: XADM: Event Viewer ID 13005 from Information Store
 
+{% raw %}
+
 	Article: Q201199
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -107,3 +109,5 @@ permalink: /kb/201/Q201199/
 	
 	=============================================================================
 	
+
+{% endraw %}

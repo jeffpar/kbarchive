@@ -6,6 +6,8 @@ permalink: /kb/193/Q193628/
 
 ## Q193628: FIX: APPEND FROM with Certain File Types Crashes VFP
 
+{% raw %}
+
 	Article: Q193628
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -184,3 +186,5 @@ permalink: /kb/193/Q193628/
 	
 	=============================================================================
 	
+
+{% endraw %}

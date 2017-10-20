@@ -6,6 +6,8 @@ permalink: /kb/222/Q222090/
 
 ## Q222090: How to Use Document Footers in IIS 5.0
 
+{% raw %}
+
 	Article: Q222090
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -63,3 +65,5 @@ permalink: /kb/222/Q222090/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134375/
 
 ## Q134375: Changing Password Clears the Remember My Password Check Box
 
+{% raw %}
+
 	Article: Q134375
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -58,3 +60,5 @@ permalink: /kb/134/Q134375/
 	
 	=============================================================================
 	
+
+{% endraw %}

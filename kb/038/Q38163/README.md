@@ -6,6 +6,8 @@ permalink: /kb/038/Q38163/
 
 ## Q38163: /DOSSEG Link Switch Fails to Make CodeView .exe
 
+{% raw %}
+
 	Article: Q38163
 	Product(s): See article
 	Version(s): 2.20 2.30
@@ -61,3 +63,5 @@ permalink: /kb/038/Q38163/
 	        ret
 	_getdsq ENDP
 	        END
+
+{% endraw %}

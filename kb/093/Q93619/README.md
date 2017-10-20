@@ -6,6 +6,8 @@ permalink: /kb/093/Q93619/
 
 ## Q93619: PRB: Blank Box Where Graph Should Be in RQBE Output
 
+{% raw %}
+
 	Article: Q93619
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5x,2.6x,3.0
@@ -59,3 +61,5 @@ permalink: /kb/093/Q93619/
 	
 	=============================================================================
 	
+
+{% endraw %}

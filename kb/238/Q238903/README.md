@@ -6,6 +6,8 @@ permalink: /kb/238/Q238903/
 
 ## Q238903: COBOL Wizard Specifies Variable as the Return Value
 
+{% raw %}
+
 	Article: Q238903
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3
@@ -77,3 +79,5 @@ permalink: /kb/238/Q238903/
 	
 	=============================================================================
 	
+
+{% endraw %}

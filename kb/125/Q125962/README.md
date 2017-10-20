@@ -6,6 +6,8 @@ permalink: /kb/125/Q125962/
 
 ## Q125962: TCP/IP-32 Using DHCP: Can't Override Default Gateway
 
+{% raw %}
+
 	Article: Q125962
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 3.11,3.11a,3.11b
@@ -67,3 +69,5 @@ permalink: /kb/125/Q125962/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/172/Q172188/
 
 ## Q172188: WD97: Semitransparent Inline Graphics Display Incorrectly
 
+{% raw %}
+
 	Article: Q172188
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -131,3 +133,5 @@ permalink: /kb/172/Q172188/
 	
 	=============================================================================
 	
+
+{% endraw %}

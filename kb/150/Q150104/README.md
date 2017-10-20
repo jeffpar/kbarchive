@@ -6,6 +6,8 @@ permalink: /kb/150/Q150104/
 
 ## Q150104: Removing Entry from Directory Replication Configuration Fails
 
+{% raw %}
+
 	Article: Q150104
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -57,3 +59,5 @@ permalink: /kb/150/Q150104/
 	
 	=============================================================================
 	
+
+{% endraw %}

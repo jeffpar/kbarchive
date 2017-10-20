@@ -6,6 +6,8 @@ permalink: /kb/210/Q210375/
 
 ## Q210375: SMS: Only a Single Site Code Is Displayed Under Collections
 
+{% raw %}
+
 	Article: Q210375
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -45,3 +47,5 @@ permalink: /kb/210/Q210375/
 	
 	=============================================================================
 	
+
+{% endraw %}

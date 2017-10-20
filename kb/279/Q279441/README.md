@@ -6,6 +6,8 @@ permalink: /kb/279/Q279441/
 
 ## Q279441: Hardware Inventory Is Rejected If Variable Ends with Backslash
 
+{% raw %}
+
 	Article: Q279441
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -100,3 +102,5 @@ permalink: /kb/279/Q279441/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/281/Q281776/
 
 ## Q281776: FIX: SET COLLATE TO &quot;General&quot; Causes Problem with SQL SELECT
 
+{% raw %}
+
 	Article: Q281776
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -83,3 +85,5 @@ permalink: /kb/281/Q281776/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159305/
 
 ## Q159305: XFOR: MSMI Terminates Unexpectedly with Event ID 2335 and 2560
 
+{% raw %}
+
 	Article: Q159305
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -179,3 +181,5 @@ permalink: /kb/159/Q159305/
 	
 	=============================================================================
 	
+
+{% endraw %}

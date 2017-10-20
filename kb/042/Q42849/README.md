@@ -6,6 +6,8 @@ permalink: /kb/042/Q42849/
 
 ## Q42849: Unimplemented Switch /BI with QuickC 2.00 Linker
 
+{% raw %}
+
 	Article: Q42849
 	Product(s): See article
 	Version(s): 4.06
@@ -24,3 +26,5 @@ permalink: /kb/042/Q42849/
 	in the following error:
 	
 	    fatal error L1002: BINARY : unrecognized option name
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137428/
 
 ## Q137428: Not Enough Memory on 4-MB System When Setup Is Started Again
 
+{% raw %}
+
 	Article: Q137428
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/137/Q137428/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/107/Q107158/
 
 ## Q107158: MS-DOS Stacker Conversion CONVERT.BAT and GETPATH.BAT Files
 
+{% raw %}
+
 	Article: Q107158
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2
@@ -330,3 +332,5 @@ permalink: /kb/107/Q107158/
 	
 	=============================================================================
 	
+
+{% endraw %}

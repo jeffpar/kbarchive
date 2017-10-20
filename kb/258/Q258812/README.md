@@ -6,6 +6,8 @@ permalink: /kb/258/Q258812/
 
 ## Q258812: Small Business Solutions for Microsoft Windows 2000 Professional
 
+{% raw %}
+
 	Article: Q258812
 	Product(s): Microsoft Press
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/258/Q258812/
 	
 	=============================================================================
 	
+
+{% endraw %}

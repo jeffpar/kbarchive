@@ -6,6 +6,8 @@ permalink: /kb/076/Q76873/
 
 ## Q76873: Detailed Multimedia PC Specification
 
+{% raw %}
+
 	Article: Q76873
 	Product(s): Miscellaneous Windows Products
 	Version(s): 1.0,3.1,3.11
@@ -181,3 +183,5 @@ permalink: /kb/076/Q76873/
 	
 	=============================================================================
 	
+
+{% endraw %}

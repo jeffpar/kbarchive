@@ -6,6 +6,8 @@ permalink: /kb/251/Q251240/
 
 ## Q251240: Midtown/Motocross Madness: Game Hangs or Pointer Flickers
 
+{% raw %}
+
 	Article: Q251240
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -66,3 +68,5 @@ permalink: /kb/251/Q251240/
 	
 	=============================================================================
 	
+
+{% endraw %}

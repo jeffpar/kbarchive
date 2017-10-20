@@ -6,6 +6,8 @@ permalink: /kb/251/Q251227/
 
 ## Q251227: Interpretation of Polaris ESCON Channel Adapter Error Messages
 
+{% raw %}
+
 	Article: Q251227
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 (all versions),3.0 (all SP),4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -329,3 +331,5 @@ permalink: /kb/251/Q251227/
 	
 	=============================================================================
 	
+
+{% endraw %}

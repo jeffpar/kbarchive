@@ -6,6 +6,8 @@ permalink: /kb/260/Q260556/
 
 ## Q260556: Can't Associate NT Accounts with Exchange Mailboxes with LDAP MA
 
+{% raw %}
+
 	Article: Q260556
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -57,3 +59,5 @@ permalink: /kb/260/Q260556/
 	
 	=============================================================================
 	
+
+{% endraw %}

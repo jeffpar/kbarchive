@@ -6,6 +6,8 @@ permalink: /kb/172/Q172242/
 
 ## Q172242: Err Msg: Guide.exe Caused an Invalid Page Fault in Module...
 
+{% raw %}
+
 	Article: Q172242
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.0
@@ -66,3 +68,5 @@ permalink: /kb/172/Q172242/
 	
 	=============================================================================
 	
+
+{% endraw %}

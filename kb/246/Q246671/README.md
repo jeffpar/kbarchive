@@ -6,6 +6,8 @@ permalink: /kb/246/Q246671/
 
 ## Q246671: MapPoint: Helpful Web Sites for Creating Maps
 
+{% raw %}
+
 	Article: Q246671
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/246/Q246671/
 	
 	=============================================================================
 	
+
+{% endraw %}

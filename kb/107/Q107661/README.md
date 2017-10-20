@@ -6,6 +6,8 @@ permalink: /kb/107/Q107661/
 
 ## Q107661: Writer: HP LaserJet 4si MX Prints Banners Incorrectly
 
+{% raw %}
+
 	Article: Q107661
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a,2.0
@@ -103,3 +105,5 @@ permalink: /kb/107/Q107661/
 	
 	=============================================================================
 	
+
+{% endraw %}

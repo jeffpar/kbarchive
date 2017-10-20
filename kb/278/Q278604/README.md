@@ -6,6 +6,8 @@ permalink: /kb/278/Q278604/
 
 ## Q278604: &quot;HTTP 500.100&quot; Error When You Try to Access a Provider
 
+{% raw %}
+
 	Article: Q278604
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -158,3 +160,5 @@ permalink: /kb/278/Q278604/
 	
 	=============================================================================
 	
+
+{% endraw %}

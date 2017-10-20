@@ -6,6 +6,8 @@ permalink: /kb/151/Q151493/
 
 ## Q151493: ThinkPad 760 Audio Requires IBM ESS Audio Driver
 
+{% raw %}
+
 	Article: Q151493
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -66,3 +68,5 @@ permalink: /kb/151/Q151493/
 	
 	=============================================================================
 	
+
+{% endraw %}

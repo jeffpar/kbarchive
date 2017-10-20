@@ -6,6 +6,8 @@ permalink: /kb/191/Q191913/
 
 ## Q191913: XCLN: Can't Send Internet/SMTP Mail with MS Mail Postoffice
 
+{% raw %}
+
 	Article: Q191913
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0; :8.0,8.01,8.02,8.03
@@ -76,3 +78,5 @@ permalink: /kb/191/Q191913/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139103/
 
 ## Q139103: Replication to Import Computers in a WAN Environment
 
+{% raw %}
+
 	Article: Q139103
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -73,3 +75,5 @@ permalink: /kb/139/Q139103/
 	
 	=============================================================================
 	
+
+{% endraw %}

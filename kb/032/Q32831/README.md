@@ -6,6 +6,8 @@ permalink: /kb/032/Q32831/
 
 ## Q32831: Link Error 4051
 
+{% raw %}
+
 	Article: Q32831
 	Product(s): See article
 	Version(s): 3.60 3.61 3.64 3.65 5.01.20 5.01.21
@@ -40,3 +42,5 @@ permalink: /kb/032/Q32831/
 	   FORTRAN defaults to the co-processor library (e.g. LLIBFOR7.LIB).
 	   C and Pascal default to the emulator math library (e.g. SLIBCE.LIB
 	   and LIBPASE.LIB)
+
+{% endraw %}

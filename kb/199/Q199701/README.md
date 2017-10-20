@@ -6,6 +6,8 @@ permalink: /kb/199/Q199701/
 
 ## Q199701: Encarta 99 Err Msg: A Printer Error Has Occured
 
+{% raw %}
+
 	Article: Q199701
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -78,3 +80,5 @@ permalink: /kb/199/Q199701/
 	
 	=============================================================================
 	
+
+{% endraw %}

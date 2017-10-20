@@ -6,6 +6,8 @@ permalink: /kb/154/Q154702/
 
 ## Q154702: Cannot Start Directory Service Manager for NetWare (DSMN)
 
+{% raw %}
+
 	Article: Q154702
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -55,3 +57,5 @@ permalink: /kb/154/Q154702/
 	
 	=============================================================================
 	
+
+{% endraw %}

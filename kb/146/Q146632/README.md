@@ -6,6 +6,8 @@ permalink: /kb/146/Q146632/
 
 ## Q146632: Vsndsys.386 Error with Reveal SC400 Revision R Sound Card
 
+{% raw %}
+
 	Article: Q146632
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -110,3 +112,5 @@ permalink: /kb/146/Q146632/
 	
 	=============================================================================
 	
+
+{% endraw %}

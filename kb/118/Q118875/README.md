@@ -6,6 +6,8 @@ permalink: /kb/118/Q118875/
 
 ## Q118875: FIX: ClassWizard &quot;Bind&quot;, &quot;Update Columns&quot; Buttons Disabled
 
+{% raw %}
+
 	Article: Q118875
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,2.0,4.0,4.1,4.2
@@ -84,3 +86,5 @@ permalink: /kb/118/Q118875/
 	
 	=============================================================================
 	
+
+{% endraw %}

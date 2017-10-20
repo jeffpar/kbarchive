@@ -6,6 +6,8 @@ permalink: /kb/169/Q169965/
 
 ## Q169965: Toshiba 500CS 500CDT, or 730 Computer Hangs on First Reboot
 
+{% raw %}
+
 	Article: Q169965
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -71,3 +73,5 @@ permalink: /kb/169/Q169965/
 	
 	=============================================================================
 	
+
+{% endraw %}

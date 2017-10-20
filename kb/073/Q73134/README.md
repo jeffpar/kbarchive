@@ -6,6 +6,8 @@ permalink: /kb/073/Q73134/
 
 ## Q73134: WRK Fish Screen Saver Requires Standard or Enhanced Mode
 
+{% raw %}
+
 	Article: Q73134
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -51,3 +53,5 @@ permalink: /kb/073/Q73134/
 	
 	=============================================================================
 	
+
+{% endraw %}

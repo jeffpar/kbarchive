@@ -6,6 +6,8 @@ permalink: /kb/180/Q180379/
 
 ## Q180379: FP97: How to Insert a PowerPoint Presentation into a Web Page
 
+{% raw %}
+
 	Article: Q180379
 	Product(s): Word Front Page
 	Version(s): 
@@ -108,3 +110,5 @@ permalink: /kb/180/Q180379/
 	
 	=============================================================================
 	
+
+{% endraw %}

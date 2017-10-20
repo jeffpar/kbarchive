@@ -6,6 +6,8 @@ permalink: /kb/111/Q111888/
 
 ## Q111888: FIX: Inserts May Fail and Updates May Not Be Seen
 
+{% raw %}
+
 	Article: Q111888
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -156,3 +158,5 @@ permalink: /kb/111/Q111888/
 	
 	=============================================================================
 	
+
+{% endraw %}

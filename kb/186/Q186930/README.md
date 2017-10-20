@@ -6,6 +6,8 @@ permalink: /kb/186/Q186930/
 
 ## Q186930: XFOR: Cannot Log On After Upgrading to Microsoft Chat 2.1
 
+{% raw %}
+
 	Article: Q186930
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2.1,5.5
@@ -57,3 +59,5 @@ permalink: /kb/186/Q186930/
 	
 	=============================================================================
 	
+
+{% endraw %}

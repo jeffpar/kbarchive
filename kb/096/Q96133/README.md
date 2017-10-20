@@ -6,6 +6,8 @@ permalink: /kb/096/Q96133/
 
 ## Q96133: DoubleSpace Err Msg: 'Your Computer Might Be Running...'
 
+{% raw %}
+
 	Article: Q96133
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -51,3 +53,5 @@ permalink: /kb/096/Q96133/
 	
 	=============================================================================
 	
+
+{% endraw %}

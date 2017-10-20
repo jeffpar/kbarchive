@@ -6,6 +6,8 @@ permalink: /kb/162/Q162251/
 
 ## Q162251: PRB: Closing a Top-Level Form Hangs Visual FoxPro
 
+{% raw %}
+
 	Article: Q162251
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -127,3 +129,5 @@ permalink: /kb/162/Q162251/
 	
 	=============================================================================
 	
+
+{% endraw %}

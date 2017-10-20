@@ -6,6 +6,8 @@ permalink: /kb/107/Q107094/
 
 ## Q107094: PROFS: Transferring Reader Files with CMS Transfer
 
+{% raw %}
+
 	Article: Q107094
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.2,3.3,3.4
@@ -37,3 +39,5 @@ permalink: /kb/107/Q107094/
 	
 	=============================================================================
 	
+
+{% endraw %}

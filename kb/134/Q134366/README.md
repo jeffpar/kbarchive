@@ -6,6 +6,8 @@ permalink: /kb/134/Q134366/
 
 ## Q134366: FIX:GENDBC Error: Command contains unrecognized phrase/keyword
 
+{% raw %}
+
 	Article: Q134366
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -130,3 +132,5 @@ permalink: /kb/134/Q134366/
 	
 	=============================================================================
 	
+
+{% endraw %}

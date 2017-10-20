@@ -6,6 +6,8 @@ permalink: /kb/097/Q97897/
 
 ## Q97897: PC WRmt: Null Modem Script Displays Phone Number
 
+{% raw %}
+
 	Article: Q97897
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -45,3 +47,5 @@ permalink: /kb/097/Q97897/
 	
 	=============================================================================
 	
+
+{% endraw %}

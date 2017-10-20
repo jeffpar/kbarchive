@@ -6,6 +6,8 @@ permalink: /kb/143/Q143042/
 
 ## Q143042: PRB: Version Compatibility of OLE Servers
 
+{% raw %}
+
 	Article: Q143042
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0;
@@ -146,3 +148,5 @@ permalink: /kb/143/Q143042/
 	
 	=============================================================================
 	
+
+{% endraw %}

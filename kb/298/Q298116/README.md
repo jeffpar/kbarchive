@@ -6,6 +6,8 @@ permalink: /kb/298/Q298116/
 
 ## Q298116: DellNet By MSN Customer Using Connection From Discontinued DellN
 
+{% raw %}
+
 	Article: Q298116
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -104,3 +106,5 @@ permalink: /kb/298/Q298116/
 	
 	=============================================================================
 	
+
+{% endraw %}

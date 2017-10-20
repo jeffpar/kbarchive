@@ -6,6 +6,8 @@ permalink: /kb/216/Q216412/
 
 ## Q216412: BUG: Duplicate HotKey on Project Information Dialog Servers Tab
 
+{% raw %}
+
 	Article: Q216412
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -50,3 +52,5 @@ permalink: /kb/216/Q216412/
 	
 	=============================================================================
 	
+
+{% endraw %}

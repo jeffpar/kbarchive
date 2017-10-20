@@ -6,6 +6,8 @@ permalink: /kb/110/Q110546/
 
 ## Q110546: Lear Instrument Panel Obscures Messages
 
+{% raw %}
+
 	Article: Q110546
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -50,3 +52,5 @@ permalink: /kb/110/Q110546/
 	
 	=============================================================================
 	
+
+{% endraw %}

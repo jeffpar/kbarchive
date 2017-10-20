@@ -6,6 +6,8 @@ permalink: /kb/141/Q141243/
 
 ## Q141243: SMS WinNT Client Install Fails If Path Contains Trailing Space
 
+{% raw %}
+
 	Article: Q141243
 	Product(s): Microsoft Windows NT
 	Version(s): 1.1
@@ -50,3 +52,5 @@ permalink: /kb/141/Q141243/
 	
 	=============================================================================
 	
+
+{% endraw %}

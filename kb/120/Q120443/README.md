@@ -6,6 +6,8 @@ permalink: /kb/120/Q120443/
 
 ## Q120443: BUG: SET SYSMENU TO _MWINDOW Doesn't Disable Window Menu
 
+{% raw %}
+
 	Article: Q120443
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5x,2.6a,3.0b
@@ -72,3 +74,5 @@ permalink: /kb/120/Q120443/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/267/Q267238/
 
 ## Q267238: XADM: Directory Service Does Not Start After Restore Operation
 
+{% raw %}
+
 	Article: Q267238
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -57,3 +59,5 @@ permalink: /kb/267/Q267238/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98355/
 
 ## Q98355: How to Update a Master File from a Transaction File
 
+{% raw %}
+
 	Article: Q98355
 	Product(s): Microsoft FoxPro
 	Version(s): 2.00 2.50 2.50a | 2.50 2.50a 3.0
@@ -85,3 +87,5 @@ permalink: /kb/098/Q98355/
 	
 	=============================================================================
 	
+
+{% endraw %}

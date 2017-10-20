@@ -6,6 +6,8 @@ permalink: /kb/156/Q156247/
 
 ## Q156247: Hellbender: How to Play a One Player Network Game
 
+{% raw %}
+
 	Article: Q156247
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -58,3 +60,5 @@ permalink: /kb/156/Q156247/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66949/
 
 ## Q66949: INFO: Windows Metafile Functions &amp; Aldus Placeable Metafiles
 
+{% raw %}
+
 	Article: Q66949
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -121,3 +123,5 @@ permalink: /kb/066/Q66949/
 	
 	=============================================================================
 	
+
+{% endraw %}

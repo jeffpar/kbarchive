@@ -6,6 +6,8 @@ permalink: /kb/150/Q150310/
 
 ## Q150310: Bookshelf 96: Lost Network Connection Causes Error
 
+{% raw %}
+
 	Article: Q150310
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -50,3 +52,5 @@ permalink: /kb/150/Q150310/
 	
 	=============================================================================
 	
+
+{% endraw %}

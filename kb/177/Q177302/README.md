@@ -6,6 +6,8 @@ permalink: /kb/177/Q177302/
 
 ## Q177302: HOWTO: Troubleshooting Memory Errors Under OS 8
 
+{% raw %}
+
 	Article: Q177302
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -131,3 +133,5 @@ permalink: /kb/177/Q177302/
 	
 	=============================================================================
 	
+
+{% endraw %}

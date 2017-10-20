@@ -6,6 +6,8 @@ permalink: /kb/249/Q249167/
 
 ## Q249167: BUG: SNAOLEDB Does Not Support Pessimistic Locking
 
+{% raw %}
+
 	Article: Q249167
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2,4.0 SP3
@@ -100,3 +102,5 @@ permalink: /kb/249/Q249167/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263372/
 
 ## Q263372: SMS: Advertisements Can Run Multiple Times
 
+{% raw %}
+
 	Article: Q263372
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1,2.0 SP2
@@ -47,3 +49,5 @@ permalink: /kb/263/Q263372/
 	
 	=============================================================================
 	
+
+{% endraw %}

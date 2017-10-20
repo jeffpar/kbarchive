@@ -6,6 +6,8 @@ permalink: /kb/083/Q83942/
 
 ## Q83942: Memory Limitation with QEMM and Windows 3.1 Standard Mode
 
+{% raw %}
+
 	Article: Q83942
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/083/Q83942/
 	
 	=============================================================================
 	
+
+{% endraw %}

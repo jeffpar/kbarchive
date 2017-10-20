@@ -6,6 +6,8 @@ permalink: /kb/178/Q178413/
 
 ## Q178413: Windows NT System May Hang When Running a Filter Driver
 
+{% raw %}
+
 	Article: Q178413
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -64,3 +66,5 @@ permalink: /kb/178/Q178413/
 	
 	=============================================================================
 	
+
+{% endraw %}

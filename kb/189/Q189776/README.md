@@ -6,6 +6,8 @@ permalink: /kb/189/Q189776/
 
 ## Q189776: BUG: Beautify &quot;Data type mismatch&quot; w/ SET UDFPARM TO REFERENCE
 
+{% raw %}
+
 	Article: Q189776
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -75,3 +77,5 @@ permalink: /kb/189/Q189776/
 	
 	=============================================================================
 	
+
+{% endraw %}

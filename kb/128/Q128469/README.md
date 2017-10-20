@@ -6,6 +6,8 @@ permalink: /kb/128/Q128469/
 
 ## Q128469: PROFS: Err Msg: PWAMROUT Novalue Error in Line 222
 
+{% raw %}
+
 	Article: Q128469
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.4a
@@ -89,3 +91,5 @@ permalink: /kb/128/Q128469/
 	
 	=============================================================================
 	
+
+{% endraw %}

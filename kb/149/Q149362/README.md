@@ -6,6 +6,8 @@ permalink: /kb/149/Q149362/
 
 ## Q149362: XADM: Using Local Groups to Assign Permissions in Exchange
 
+{% raw %}
+
 	Article: Q149362
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/149/Q149362/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139838/
 
 ## Q139838: STOP A in AFD.SYS When Polling Sockets
 
+{% raw %}
+
 	Article: Q139838
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -60,3 +62,5 @@ permalink: /kb/139/Q139838/
 	
 	=============================================================================
 	
+
+{% endraw %}

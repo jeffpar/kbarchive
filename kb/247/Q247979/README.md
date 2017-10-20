@@ -6,6 +6,8 @@ permalink: /kb/247/Q247979/
 
 ## Q247979: PRB: Error 429 Using MSDN File System Object Programming Example
 
+{% raw %}
+
 	Article: Q247979
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -117,3 +119,5 @@ permalink: /kb/247/Q247979/
 	
 	=============================================================================
 	
+
+{% endraw %}

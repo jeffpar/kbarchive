@@ -6,6 +6,8 @@ permalink: /kb/150/Q150172/
 
 ## Q150172: FPNW Will Not Create File Larger Than 2.14GB
 
+{% raw %}
+
 	Article: Q150172
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -50,3 +52,5 @@ permalink: /kb/150/Q150172/
 	
 	=============================================================================
 	
+
+{% endraw %}

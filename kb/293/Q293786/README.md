@@ -6,6 +6,8 @@ permalink: /kb/293/Q293786/
 
 ## Q293786: BUG: GPF in DAO After You Install SQL Server Client
 
+{% raw %}
+
 	Article: Q293786
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0,7.0
@@ -93,3 +95,5 @@ permalink: /kb/293/Q293786/
 	
 	=============================================================================
 	
+
+{% endraw %}

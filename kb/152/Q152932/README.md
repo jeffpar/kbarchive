@@ -6,6 +6,8 @@ permalink: /kb/152/Q152932/
 
 ## Q152932: XCON: X.400 Connector Uses Session Selector on X.400 Connections
 
+{% raw %}
+
 	Article: Q152932
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -123,3 +125,5 @@ permalink: /kb/152/Q152932/
 	
 	=============================================================================
 	
+
+{% endraw %}

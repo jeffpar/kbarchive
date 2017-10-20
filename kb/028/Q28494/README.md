@@ -6,6 +6,8 @@ permalink: /kb/028/Q28494/
 
 ## Q28494: NEC Multispeed Laptop Continues to Access Drive
 
+{% raw %}
+
 	Article: Q28494
 	Product(s): See article
 	Version(s): 6.0 6.02 6.10 1.0
@@ -19,3 +21,5 @@ permalink: /kb/028/Q28494/
 	   NEC produced a patch INIT059.COM or ROM upgrade that resolves the
 	problem.
 	   Please contact NEC's technical support at (800) 632-7368.
+
+{% endraw %}

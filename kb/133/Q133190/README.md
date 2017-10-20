@@ -6,6 +6,8 @@ permalink: /kb/133/Q133190/
 
 ## Q133190: Cannot Upgrade to MS Client for NetWare When Running User.com
 
+{% raw %}
+
 	Article: Q133190
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -69,3 +71,5 @@ permalink: /kb/133/Q133190/
 	
 	=============================================================================
 	
+
+{% endraw %}

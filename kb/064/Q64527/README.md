@@ -6,6 +6,8 @@ permalink: /kb/064/Q64527/
 
 ## Q64527: Creating Printer Drivers for Windows 3.0
 
+{% raw %}
+
 	Article: Q64527
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/064/Q64527/
 	
 	=============================================================================
 	
+
+{% endraw %}

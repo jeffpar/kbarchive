@@ -6,6 +6,8 @@ permalink: /kb/186/Q186613/
 
 ## Q186613: Using the Start Command with Long File Names
 
+{% raw %}
+
 	Article: Q186613
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/186/Q186613/
 	
 	=============================================================================
 	
+
+{% endraw %}

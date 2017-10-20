@@ -6,6 +6,8 @@ permalink: /kb/149/Q149463/
 
 ## Q149463: FIX: RichTextBox Appears Even If Visible Property Is False
 
+{% raw %}
+
 	Article: Q149463
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -91,3 +93,5 @@ permalink: /kb/149/Q149463/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/245/Q245781/
 
 ## Q245781: BUG: DEFINE WINDOW in Load Event Does Not Appear
 
+{% raw %}
+
 	Article: Q245781
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -102,3 +104,5 @@ permalink: /kb/245/Q245781/
 	
 	=============================================================================
 	
+
+{% endraw %}

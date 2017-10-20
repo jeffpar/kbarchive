@@ -6,6 +6,8 @@ permalink: /kb/084/Q84856/
 
 ## Q84856: Write Err Msg: GP Fault in Module KRNL386.EXE at 0001:4629
 
+{% raw %}
+
 	Article: Q84856
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/084/Q84856/
 	
 	=============================================================================
 	
+
+{% endraw %}

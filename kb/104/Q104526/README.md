@@ -6,6 +6,8 @@ permalink: /kb/104/Q104526/
 
 ## Q104526: Unable to Print After Installing Phone Net PC
 
+{% raw %}
+
 	Article: Q104526
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -79,3 +81,5 @@ permalink: /kb/104/Q104526/
 	
 	=============================================================================
 	
+
+{% endraw %}

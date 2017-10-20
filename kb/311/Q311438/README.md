@@ -6,6 +6,8 @@ permalink: /kb/311/Q311438/
 
 ## Q311438: SNA Applications &quot;Hang&quot; with Event 556
 
+{% raw %}
+
 	Article: Q311438
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0
@@ -136,3 +138,5 @@ permalink: /kb/311/Q311438/
 	
 	=============================================================================
 	
+
+{% endraw %}

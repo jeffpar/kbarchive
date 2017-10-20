@@ -6,6 +6,8 @@ permalink: /kb/155/Q155057/
 
 ## Q155057: ScanLogicalLocksByName Supported in FPNW with Service Pack 5
 
+{% raw %}
+
 	Article: Q155057
 	Product(s): Microsoft Programming Utilities
 	Version(s): 3.51
@@ -53,3 +55,5 @@ permalink: /kb/155/Q155057/
 	
 	=============================================================================
 	
+
+{% endraw %}

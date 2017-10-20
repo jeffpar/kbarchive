@@ -6,6 +6,8 @@ permalink: /kb/118/Q118653/
 
 ## Q118653: NET Commands Available in Microsoft Network Clients
 
+{% raw %}
+
 	Article: Q118653
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2,3.1,3.11
@@ -112,3 +114,5 @@ permalink: /kb/118/Q118653/
 	
 	=============================================================================
 	
+
+{% endraw %}

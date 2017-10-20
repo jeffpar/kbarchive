@@ -6,6 +6,8 @@ permalink: /kb/147/Q147866/
 
 ## Q147866: Dial-Up Networking Refers to ISDN Adapter as a Modem
 
+{% raw %}
+
 	Article: Q147866
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -41,3 +43,5 @@ permalink: /kb/147/Q147866/
 	
 	=============================================================================
 	
+
+{% endraw %}

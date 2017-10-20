@@ -6,6 +6,8 @@ permalink: /kb/155/Q155621/
 
 ## Q155621: Comparison of Windows 95 and Windows NT Workstation 4.0
 
+{% raw %}
+
 	Article: Q155621
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:; winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/155/Q155621/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/180/Q180633/
 
 ## Q180633: BUG: ScrollBar Slider Does Not Stop at the Cursor
 
+{% raw %}
+
 	Article: Q180633
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -73,3 +75,5 @@ permalink: /kb/180/Q180633/
 	
 	=============================================================================
 	
+
+{% endraw %}

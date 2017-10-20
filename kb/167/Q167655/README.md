@@ -6,6 +6,8 @@ permalink: /kb/167/Q167655/
 
 ## Q167655: WD97: Frequently Asked Questions About the Grammar Checker
 
+{% raw %}
+
 	Article: Q167655
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -415,3 +417,5 @@ permalink: /kb/167/Q167655/
 	
 	=============================================================================
 	
+
+{% endraw %}

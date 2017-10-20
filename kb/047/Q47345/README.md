@@ -6,6 +6,8 @@ permalink: /kb/047/Q47345/
 
 ## Q47345: Mac Form: HyperCard Needs 1000K RAM with Mail Form Designer
 
+{% raw %}
+
 	Article: Q47345
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,2.0a,2.0b,3.0
@@ -50,3 +52,5 @@ permalink: /kb/047/Q47345/
 	
 	=============================================================================
 	
+
+{% endraw %}

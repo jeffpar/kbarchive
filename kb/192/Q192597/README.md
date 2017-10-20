@@ -6,6 +6,8 @@ permalink: /kb/192/Q192597/
 
 ## Q192597: Official Microsoft Bookshelf Internet Directory: Support Options
 
+{% raw %}
+
 	Article: Q192597
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/192/Q192597/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/125/Q125668/
 
 ## Q125668: Creating the SMS Administrator Log File UI.LOG
 
+{% raw %}
+
 	Article: Q125668
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -73,3 +75,5 @@ permalink: /kb/125/Q125668/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/040/Q40786/
 
 ## Q40786: C Compiler Error: (compiler file '@(#)code.c1.46, line 393)
 
+{% raw %}
+
 	Article: Q40786
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -35,3 +37,5 @@ permalink: /kb/040/Q40786/
 	
 	    *ptr[i]++ = buff[k++];
 	}
+
+{% endraw %}

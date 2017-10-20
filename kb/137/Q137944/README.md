@@ -6,6 +6,8 @@ permalink: /kb/137/Q137944/
 
 ## Q137944: HOWTO: How to Create a Remote Connection or View Programmaticall
 
+{% raw %}
+
 	Article: Q137944
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0
@@ -70,3 +72,5 @@ permalink: /kb/137/Q137944/
 	
 	=============================================================================
 	
+
+{% endraw %}

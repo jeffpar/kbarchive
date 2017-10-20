@@ -6,6 +6,8 @@ permalink: /kb/127/Q127912/
 
 ## Q127912: Writer/Artist: Paint Bucket Does Not Fill
 
+{% raw %}
+
 	Article: Q127912
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -124,3 +126,5 @@ permalink: /kb/127/Q127912/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/271/Q271968/
 
 ## Q271968: XCON: Dr. Watson Message Occurs When Attempting to Start MTA
 
+{% raw %}
+
 	Article: Q271968
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -57,3 +59,5 @@ permalink: /kb/271/Q271968/
 	
 	=============================================================================
 	
+
+{% endraw %}

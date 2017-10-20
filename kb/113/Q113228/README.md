@@ -6,6 +6,8 @@ permalink: /kb/113/Q113228/
 
 ## Q113228: Windows 3.1 Disk 2 Directory Listing (3.5 Inch 1.44 MB)
 
+{% raw %}
+
 	Article: Q113228
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -175,3 +177,5 @@ permalink: /kb/113/Q113228/
 	
 	=============================================================================
 	
+
+{% endraw %}

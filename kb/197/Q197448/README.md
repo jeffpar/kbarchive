@@ -6,6 +6,8 @@ permalink: /kb/197/Q197448/
 
 ## Q197448: FIX: CRecordset &quot;String Cannot Be Converted to Number&quot; Error
 
+{% raw %}
+
 	Article: Q197448
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0,3.5,3.51,3.6,5.0,6.0
@@ -71,19 +73,19 @@ permalink: /kb/197/Q197448/
 	     // BEFORE
 	     void CMyRecordsSet::DoFieldExchange(CFieldExchange* pFX)
 	     {
-	        //{ {AFX_FIELD_MAP(CTestRecords)
+	        //{{AFX_FIELD_MAP(CTestRecords)
 	        pFX->SetFieldType(CFieldExchange::outputColumn);
 	        RFX_Text(pFX, _T("[UNITS]"), m_UNITS);
-	        //} }AFX_FIELD_MAP
+	        //}}AFX_FIELD_MAP
 	     }
 	
 	     // AFTER
 	     void CMyRecordsSet::DoFieldExchange(CFieldExchange* pFX)
 	     {
-	        //{ {AFX_FIELD_MAP(CTestRecords)
+	        //{{AFX_FIELD_MAP(CTestRecords)
 	        pFX->SetFieldType(CFieldExchange::outputColumn);
 	        RFX_Text(pFX, _T("[UNITS]"), m_UNITS, 1024);
-	        //} }AFX_FIELD_MAP
+	        //}}AFX_FIELD_MAP
 	     }
 	
 	STATUS
@@ -129,3 +131,5 @@ permalink: /kb/197/Q197448/
 	
 	=============================================================================
 	
+
+{% endraw %}

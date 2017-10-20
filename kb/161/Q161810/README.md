@@ -6,6 +6,8 @@ permalink: /kb/161/Q161810/
 
 ## Q161810: WD97: Font MRU List Not Retained After You Quit Word
 
+{% raw %}
+
 	Article: Q161810
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -66,3 +68,5 @@ permalink: /kb/161/Q161810/
 	
 	=============================================================================
 	
+
+{% endraw %}

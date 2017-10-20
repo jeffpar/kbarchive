@@ -6,6 +6,8 @@ permalink: /kb/163/Q163480/
 
 ## Q163480: MSB: Err Msg: &quot;Wave Error&quot; When Starting Program
 
+{% raw %}
+
 	Article: Q163480
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0; WINDOWS:1.0
@@ -80,3 +82,5 @@ permalink: /kb/163/Q163480/
 	
 	=============================================================================
 	
+
+{% endraw %}

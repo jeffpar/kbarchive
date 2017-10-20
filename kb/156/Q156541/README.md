@@ -6,6 +6,8 @@ permalink: /kb/156/Q156541/
 
 ## Q156541: SMS: Message to Restart Not Seen By User After Upgrade
 
+{% raw %}
+
 	Article: Q156541
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -51,3 +53,5 @@ permalink: /kb/156/Q156541/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98708/
 
 ## Q98708: Linked Microsoft Excel Graphs Resized in PowerPoint
 
+{% raw %}
+
 	Article: Q98708
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,5.0,7.0
@@ -86,3 +88,5 @@ permalink: /kb/098/Q98708/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/057/Q57795/
 
 ## Q57795: FORTRAN READ Statement Hangs in OS/2 If Called from BASIC
 
+{% raw %}
+
 	Article: Q57795
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -61,3 +63,5 @@ permalink: /kb/057/Q57795/
 	
 	   Calling FORTRAN
 	   Please enter i
+
+{% endraw %}

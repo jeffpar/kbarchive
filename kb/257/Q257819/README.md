@@ -6,6 +6,8 @@ permalink: /kb/257/Q257819/
 
 ## Q257819: HOWTO: Use ADO with Excel Data from Visual Basic or VBA
 
+{% raw %}
+
 	Article: Q257819
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.1,2.1 SP1,2.1 SP2,2.5,2000,6.0,6.0 SP3
@@ -693,3 +695,5 @@ permalink: /kb/257/Q257819/
 	
 	=============================================================================
 	
+
+{% endraw %}

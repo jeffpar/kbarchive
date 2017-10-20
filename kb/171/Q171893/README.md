@@ -6,6 +6,8 @@ permalink: /kb/171/Q171893/
 
 ## Q171893: NT Client Setup Fails to Properly Install SNANLS Support
 
+{% raw %}
+
 	Article: Q171893
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1
@@ -49,3 +51,5 @@ permalink: /kb/171/Q171893/
 	
 	=============================================================================
 	
+
+{% endraw %}

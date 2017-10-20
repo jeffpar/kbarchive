@@ -6,6 +6,8 @@ permalink: /kb/182/Q182966/
 
 ## Q182966: XADM: Exchange 5.0 SP2 Upgrade Fails with No Mapping Error
 
+{% raw %}
+
 	Article: Q182966
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -52,3 +54,5 @@ permalink: /kb/182/Q182966/
 	
 	=============================================================================
 	
+
+{% endraw %}

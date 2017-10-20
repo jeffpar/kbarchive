@@ -6,6 +6,8 @@ permalink: /kb/198/Q198920/
 
 ## Q198920: XWEB: OWA Is Not Designed for Use with Exchange Server 4.0
 
+{% raw %}
+
 	Article: Q198920
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5; winnt:4.0,5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/198/Q198920/
 	
 	=============================================================================
 	
+
+{% endraw %}

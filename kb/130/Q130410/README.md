@@ -6,6 +6,8 @@ permalink: /kb/130/Q130410/
 
 ## Q130410: BUG: ALTER TABLE Command Changes Field Type to Picture
 
+{% raw %}
+
 	Article: Q130410
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -91,3 +93,5 @@ permalink: /kb/130/Q130410/
 	
 	=============================================================================
 	
+
+{% endraw %}

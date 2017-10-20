@@ -6,6 +6,8 @@ permalink: /kb/224/Q224418/
 
 ## Q224418: Active Server Pages Appear Blank in the Web Browser
 
+{% raw %}
+
 	Article: Q224418
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -80,3 +82,5 @@ permalink: /kb/224/Q224418/
 	
 	=============================================================================
 	
+
+{% endraw %}

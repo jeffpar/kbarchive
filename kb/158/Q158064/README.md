@@ -6,6 +6,8 @@ permalink: /kb/158/Q158064/
 
 ## Q158064: PRB: &quot;VFP500.dll Is Invalid or Damaged&quot; Error in VFP 5.0
 
+{% raw %}
+
 	Article: Q158064
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,6.0
@@ -100,3 +102,5 @@ permalink: /kb/158/Q158064/
 	
 	=============================================================================
 	
+
+{% endraw %}

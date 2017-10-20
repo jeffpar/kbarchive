@@ -6,6 +6,8 @@ permalink: /kb/193/Q193745/
 
 ## Q193745: XFOR: Dates Appear Incorrectly After cc:Mail Migration
 
+{% raw %}
+
 	Article: Q193745
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -98,3 +100,5 @@ permalink: /kb/193/Q193745/
 	
 	=============================================================================
 	
+
+{% endraw %}

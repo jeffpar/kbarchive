@@ -6,6 +6,8 @@ permalink: /kb/085/Q85548/
 
 ## Q85548: Sound Blaster Configuration Changes with ATI Stereo FX Board
 
+{% raw %}
+
 	Article: Q85548
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -62,3 +64,5 @@ permalink: /kb/085/Q85548/
 	
 	=============================================================================
 	
+
+{% endraw %}

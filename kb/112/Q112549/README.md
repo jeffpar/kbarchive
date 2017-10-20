@@ -6,6 +6,8 @@ permalink: /kb/112/Q112549/
 
 ## Q112549: Two PDCs in One Domain
 
+{% raw %}
+
 	Article: Q112549
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,4.0
@@ -82,3 +84,5 @@ permalink: /kb/112/Q112549/
 	
 	=============================================================================
 	
+
+{% endraw %}

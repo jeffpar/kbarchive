@@ -6,6 +6,8 @@ permalink: /kb/252/Q252699/
 
 ## Q252699: BUG: Access ODBC Driver Cannot Insert Dates Prior to the Year 17
 
+{% raw %}
+
 	Article: Q252699
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.1,2.5,2.6,4.0
@@ -164,3 +166,5 @@ permalink: /kb/252/Q252699/
 	
 	=============================================================================
 	
+
+{% endraw %}

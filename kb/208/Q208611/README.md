@@ -6,6 +6,8 @@ permalink: /kb/208/Q208611/
 
 ## Q208611: Urban Assault: Error Message While Installing Movie Player
 
+{% raw %}
+
 	Article: Q208611
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -123,3 +125,5 @@ permalink: /kb/208/Q208611/
 	
 	=============================================================================
 	
+
+{% endraw %}

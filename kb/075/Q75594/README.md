@@ -6,6 +6,8 @@ permalink: /kb/075/Q75594/
 
 ## Q75594: PCX Image in Paintbrush Has Different Colors
 
+{% raw %}
+
 	Article: Q75594
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -66,3 +68,5 @@ permalink: /kb/075/Q75594/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120752/
 
 ## Q120752: How to Diagnose Event ID 4320 or 4319
 
+{% raw %}
+
 	Article: Q120752
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -89,3 +91,5 @@ permalink: /kb/120/Q120752/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/130/Q130395/
 
 ## Q130395: Cannot Access Shared Fax with WFW 3.11 or Windows 95
 
+{% raw %}
+
 	Article: Q130395
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -55,3 +57,5 @@ permalink: /kb/130/Q130395/
 	
 	=============================================================================
 	
+
+{% endraw %}

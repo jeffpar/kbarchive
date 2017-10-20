@@ -6,6 +6,8 @@ permalink: /kb/077/Q77066/
 
 ## Q77066: PRB: Problems with Dr. Watson or with the Packager
 
+{% raw %}
+
 	Article: Q77066
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -46,3 +48,5 @@ permalink: /kb/077/Q77066/
 	
 	=============================================================================
 	
+
+{% endraw %}

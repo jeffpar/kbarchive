@@ -6,6 +6,8 @@ permalink: /kb/166/Q166586/
 
 ## Q166586: XCON: Incoming Attachments Lost from Wang X.400 Connector
 
+{% raw %}
+
 	Article: Q166586
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0 SP1
@@ -74,3 +76,5 @@ permalink: /kb/166/Q166586/
 	
 	=============================================================================
 	
+
+{% endraw %}

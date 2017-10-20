@@ -6,6 +6,8 @@ permalink: /kb/238/Q238042/
 
 ## Q238042: Research Organizer: Program Is Listed Twice in Control Panel
 
+{% raw %}
+
 	Article: Q238042
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:; :
@@ -62,3 +64,5 @@ permalink: /kb/238/Q238042/
 	
 	=============================================================================
 	
+
+{% endraw %}

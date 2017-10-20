@@ -6,6 +6,8 @@ permalink: /kb/100/Q100943/
 
 ## Q100943: Modifying WIN.INI to Print to the Same File Each Time
 
+{% raw %}
+
 	Article: Q100943
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/100/Q100943/
 	
 	=============================================================================
 	
+
+{% endraw %}

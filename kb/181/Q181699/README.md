@@ -6,6 +6,8 @@ permalink: /kb/181/Q181699/
 
 ## Q181699: WD97: Index Updates Incorrectly with Modified Page Numbering
 
+{% raw %}
+
 	Article: Q181699
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -142,3 +144,5 @@ permalink: /kb/181/Q181699/
 	
 	=============================================================================
 	
+
+{% endraw %}

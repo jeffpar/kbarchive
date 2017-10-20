@@ -6,6 +6,8 @@ permalink: /kb/101/Q101463/
 
 ## Q101463: Missing Scroll Bar in MS-DOS Help and MS-DOS Editor
 
+{% raw %}
+
 	Article: Q101463
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:
@@ -44,3 +46,5 @@ permalink: /kb/101/Q101463/
 	
 	=============================================================================
 	
+
+{% endraw %}

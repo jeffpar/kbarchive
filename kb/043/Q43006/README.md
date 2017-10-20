@@ -6,6 +6,8 @@ permalink: /kb/043/Q43006/
 
 ## Q43006: A C Extension to Select an Arbitrary Number of Lines of Text
 
+{% raw %}
+
 	Article: Q43006
 	Product(s): See article
 	Version(s): 1.00
@@ -86,3 +88,5 @@ permalink: /kb/043/Q43006/
 	     SetKey("SELECT","ALT+B");
 	     return TRUE;
 	}
+
+{% endraw %}

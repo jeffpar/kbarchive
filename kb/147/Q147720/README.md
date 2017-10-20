@@ -6,6 +6,8 @@ permalink: /kb/147/Q147720/
 
 ## Q147720: Non-critical Error Attempting To Install TCP/IP After RAS
 
+{% raw %}
+
 	Article: Q147720
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -78,3 +80,5 @@ permalink: /kb/147/Q147720/
 	
 	=============================================================================
 	
+
+{% endraw %}

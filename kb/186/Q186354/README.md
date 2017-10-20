@@ -6,6 +6,8 @@ permalink: /kb/186/Q186354/
 
 ## Q186354: Scheduled Fax with Attached File Is Not Sent
 
+{% raw %}
+
 	Article: Q186354
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 2.0
@@ -45,3 +47,5 @@ permalink: /kb/186/Q186354/
 	
 	=============================================================================
 	
+
+{% endraw %}

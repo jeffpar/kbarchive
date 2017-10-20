@@ -6,6 +6,8 @@ permalink: /kb/089/Q89566/
 
 ## Q89566: PRB: Common Dialog Box Hook Function Cannot Access Variables
 
+{% raw %}
+
 	Article: Q89566
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -57,3 +59,5 @@ permalink: /kb/089/Q89566/
 	
 	=============================================================================
 	
+
+{% endraw %}

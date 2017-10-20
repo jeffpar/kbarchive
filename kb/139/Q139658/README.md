@@ -6,6 +6,8 @@ permalink: /kb/139/Q139658/
 
 ## Q139658: Writer/Artist: ErrMsg: Could Not Create The File Named...
 
+{% raw %}
+
 	Article: Q139658
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -78,3 +80,5 @@ permalink: /kb/139/Q139658/
 	
 	=============================================================================
 	
+
+{% endraw %}

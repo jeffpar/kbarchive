@@ -6,6 +6,8 @@ permalink: /kb/185/Q185085/
 
 ## Q185085: FIX: Modal Form and Form with Treeview Causes Memory Error
 
+{% raw %}
+
 	Article: Q185085
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -129,3 +131,5 @@ permalink: /kb/185/Q185085/
 	
 	=============================================================================
 	
+
+{% endraw %}

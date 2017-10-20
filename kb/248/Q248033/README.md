@@ -6,6 +6,8 @@ permalink: /kb/248/Q248033/
 
 ## Q248033: Typical Causes and Resolution of the &quot;HTTP 404 - File Not Found&quot;
 
+{% raw %}
+
 	Article: Q248033
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,2.0,3.0,4.0,5.0
@@ -112,3 +114,5 @@ permalink: /kb/248/Q248033/
 	
 	=============================================================================
 	
+
+{% endraw %}

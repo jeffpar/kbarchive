@@ -6,6 +6,8 @@ permalink: /kb/131/Q131096/
 
 ## Q131096: Workgroup Name and Domain Name Same for Browsing
 
+{% raw %}
+
 	Article: Q131096
 	Product(s): Microsoft Windows NT
 	Version(s): 3.11,3.5
@@ -51,3 +53,5 @@ permalink: /kb/131/Q131096/
 	
 	=============================================================================
 	
+
+{% endraw %}

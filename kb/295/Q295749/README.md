@@ -6,6 +6,8 @@ permalink: /kb/295/Q295749/
 
 ## Q295749: XFOR: Internet Mail Service Set to Route Inbound Tries Outbound
 
+{% raw %}
+
 	Article: Q295749
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -48,3 +50,5 @@ permalink: /kb/295/Q295749/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/219/Q219313/
 
 ## Q219313: Hyperterminal: Microsoft BBS profile still carries the 206 area
 
+{% raw %}
+
 	Article: Q219313
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -62,3 +64,5 @@ permalink: /kb/219/Q219313/
 	
 	=============================================================================
 	
+
+{% endraw %}

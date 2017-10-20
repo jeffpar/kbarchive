@@ -6,6 +6,8 @@ permalink: /kb/197/Q197289/
 
 ## Q197289: XFOR: Internet Mail Service May Not Save Turfed Messages
 
+{% raw %}
+
 	Article: Q197289
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -98,3 +100,5 @@ permalink: /kb/197/Q197289/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177591/
 
 ## Q177591: Service Pack Version Truncated in About Box
 
+{% raw %}
+
 	Article: Q177591
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -70,3 +72,5 @@ permalink: /kb/177/Q177591/
 	
 	=============================================================================
 	
+
+{% endraw %}

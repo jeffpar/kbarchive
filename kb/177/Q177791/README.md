@@ -6,6 +6,8 @@ permalink: /kb/177/Q177791/
 
 ## Q177791: INFO: DBCS Enabled/Localized FoxPro Products in Far East Region
 
+{% raw %}
+
 	Article: Q177791
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0
@@ -89,3 +91,5 @@ permalink: /kb/177/Q177791/
 	
 	=============================================================================
 	
+
+{% endraw %}

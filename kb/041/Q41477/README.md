@@ -6,6 +6,8 @@ permalink: /kb/041/Q41477/
 
 ## Q41477: QuickC 2.00 README.DOC: Using Another Editor
 
+{% raw %}
+
 	Article: Q41477
 	Product(s): See article
 	Version(s): 2.00
@@ -63,3 +65,5 @@ permalink: /kb/041/Q41477/
 	Set the Arguments command line to:
 	
 	   /e "Arg \"$LINE\" Mark" $FILE
+
+{% endraw %}

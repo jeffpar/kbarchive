@@ -6,6 +6,8 @@ permalink: /kb/251/Q251066/
 
 ## Q251066: HOWTO: Determine If a Computer Is a Microsoft Terminal Server
 
+{% raw %}
+
 	Article: Q251066
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -167,3 +169,5 @@ permalink: /kb/251/Q251066/
 	
 	=============================================================================
 	
+
+{% endraw %}

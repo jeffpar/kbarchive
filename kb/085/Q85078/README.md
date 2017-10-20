@@ -6,6 +6,8 @@ permalink: /kb/085/Q85078/
 
 ## Q85078: Windows: Sleep Mode and 32-Bit Disk Access
 
+{% raw %}
+
 	Article: Q85078
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -55,3 +57,5 @@ permalink: /kb/085/Q85078/
 	
 	=============================================================================
 	
+
+{% endraw %}

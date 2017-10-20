@@ -6,6 +6,8 @@ permalink: /kb/155/Q155923/
 
 ## Q155923: Opening My Computer Is Slow with Multiple-Disk CD-ROM Changer
 
+{% raw %}
+
 	Article: Q155923
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -52,3 +54,5 @@ permalink: /kb/155/Q155923/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/085/Q85614/
 
 ## Q85614: FAX: Primary Causes of Mail Failures to Fax Machines
 
+{% raw %}
+
 	Article: Q85614
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -43,3 +45,5 @@ permalink: /kb/085/Q85614/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/153/Q153628/
 
 ## Q153628: PRB: Exclamation Mark in Folder Name Causes Genmenu Error
 
+{% raw %}
+
 	Article: Q153628
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -85,3 +87,5 @@ permalink: /kb/153/Q153628/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191902/
 
 ## Q191902: PRB: Errors Using Setup Wizard on Novell Network
 
+{% raw %}
+
 	Article: Q191902
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -71,3 +73,5 @@ permalink: /kb/191/Q191902/
 	
 	=============================================================================
 	
+
+{% endraw %}

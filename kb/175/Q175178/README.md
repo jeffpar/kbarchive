@@ -6,6 +6,8 @@ permalink: /kb/175/Q175178/
 
 ## Q175178: Bookshelf: Images Are Printed Incorrectly on Dot-Matrix Printers
 
+{% raw %}
+
 	Article: Q175178
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -70,3 +72,5 @@ permalink: /kb/175/Q175178/
 	
 	=============================================================================
 	
+
+{% endraw %}

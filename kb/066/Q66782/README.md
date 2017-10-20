@@ -6,6 +6,8 @@ permalink: /kb/066/Q66782/
 
 ## Q66782: Fastcalls (/Gr) Incompatible with Disabled MS Extensions (/Za)
 
+{% raw %}
+
 	Article: Q66782
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -32,3 +34,5 @@ permalink: /kb/066/Q66782/
 	Microsoft has confirmed this to be a problem in C versions 6.00 and
 	6.00a. We are researching this problem and will post new information
 	here as it becomes available.
+
+{% endraw %}

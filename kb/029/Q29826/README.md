@@ -6,6 +6,8 @@ permalink: /kb/029/Q29826/
 
 ## Q29826: C 5.10 MTDYNA.DOC File: Single-Thread Dynamic-Link Libraries
 
+{% raw %}
+
 	Article: Q29826
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -63,3 +65,5 @@ permalink: /kb/029/Q29826/
 	linked with LLIBCDLL.LIB only. Multi-thread .EXE's built with
 	LLIBCMT.LIB, or multi-thread DLL's that dynamically link to CRTLIB.DLL
 	use emulator math only, and will use a coprocessor if it is present.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/132/Q132811/
 
 ## Q132811: Unable to Run Kurzweil Voice Version 1.0
 
+{% raw %}
+
 	Article: Q132811
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -57,3 +59,5 @@ permalink: /kb/132/Q132811/
 	
 	=============================================================================
 	
+
+{% endraw %}

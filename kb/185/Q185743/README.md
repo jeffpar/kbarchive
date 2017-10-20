@@ -6,6 +6,8 @@ permalink: /kb/185/Q185743/
 
 ## Q185743: Performance Monitor Errors When Running on SNA Server 4.0
 
+{% raw %}
+
 	Article: Q185743
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0
@@ -70,3 +72,5 @@ permalink: /kb/185/Q185743/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143186/
 
 ## Q143186: XADM: PerfMon Limited to 53 MTA Instances
 
+{% raw %}
+
 	Article: Q143186
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -75,3 +77,5 @@ permalink: /kb/143/Q143186/
 	
 	=============================================================================
 	
+
+{% endraw %}

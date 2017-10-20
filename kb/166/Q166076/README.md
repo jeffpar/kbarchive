@@ -6,6 +6,8 @@ permalink: /kb/166/Q166076/
 
 ## Q166076: New Event IDs for SNA Server Print Service
 
+{% raw %}
+
 	Article: Q166076
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/166/Q166076/
 	
 	=============================================================================
 	
+
+{% endraw %}

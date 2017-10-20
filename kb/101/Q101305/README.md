@@ -6,6 +6,8 @@ permalink: /kb/101/Q101305/
 
 ## Q101305: SETUP /E Err Msg: Setup Cannot Find Your MS-DOS Directory...
 
+{% raw %}
+
 	Article: Q101305
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -65,3 +67,5 @@ permalink: /kb/101/Q101305/
 	
 	=============================================================================
 	
+
+{% endraw %}

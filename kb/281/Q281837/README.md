@@ -6,6 +6,8 @@ permalink: /kb/281/Q281837/
 
 ## Q281837: INFO: COM EXE Servers Run in SYSTEM Context When Called from IIS
 
+{% raw %}
+
 	Article: Q281837
 	Product(s): Internet Information Server
 	Version(s): 4.0,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP7
@@ -99,3 +101,5 @@ permalink: /kb/281/Q281837/
 	
 	=============================================================================
 	
+
+{% endraw %}

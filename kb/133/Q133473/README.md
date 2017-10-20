@@ -6,6 +6,8 @@ permalink: /kb/133/Q133473/
 
 ## Q133473: NWCONV.EXE Hangs Converting a Non-Default Group w/ &gt; 30 Members
 
+{% raw %}
+
 	Article: Q133473
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -53,3 +55,5 @@ permalink: /kb/133/Q133473/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135217/
 
 ## Q135217: Problems with Hardware Cursor on Compaq LTE Elite
 
+{% raw %}
+
 	Article: Q135217
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/135/Q135217/
 	
 	=============================================================================
 	
+
+{% endraw %}

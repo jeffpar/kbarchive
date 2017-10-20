@@ -6,6 +6,8 @@ permalink: /kb/115/Q115929/
 
 ## Q115929: Enabling PPP Logging in Windows NT
 
+{% raw %}
+
 	Article: Q115929
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,3.51,4.0
@@ -88,3 +90,5 @@ permalink: /kb/115/Q115929/
 	
 	=============================================================================
 	
+
+{% endraw %}

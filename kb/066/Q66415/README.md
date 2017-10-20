@@ -6,6 +6,8 @@ permalink: /kb/066/Q66415/
 
 ## Q66415: Installing the Driver for Pacific Data 25inOne! Font Cartridge
 
+{% raw %}
+
 	Article: Q66415
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -108,3 +110,5 @@ permalink: /kb/066/Q66415/
 	
 	=============================================================================
 	
+
+{% endraw %}

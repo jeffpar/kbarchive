@@ -6,6 +6,8 @@ permalink: /kb/240/Q240869/
 
 ## Q240869: BUG: C2667 and C2668 on Partial Ordering of Function Templates
 
+{% raw %}
+
 	Article: Q240869
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/240/Q240869/
 	
 	=============================================================================
 	
+
+{% endraw %}

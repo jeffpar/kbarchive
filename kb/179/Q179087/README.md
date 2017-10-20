@@ -6,6 +6,8 @@ permalink: /kb/179/Q179087/
 
 ## Q179087: WD97: Selected Word Not Checked for Spelling First
 
+{% raw %}
+
 	Article: Q179087
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -88,3 +90,5 @@ permalink: /kb/179/Q179087/
 	
 	=============================================================================
 	
+
+{% endraw %}

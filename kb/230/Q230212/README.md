@@ -6,6 +6,8 @@ permalink: /kb/230/Q230212/
 
 ## Q230212: How to Determine Which Y2K Patch Is Installed
 
+{% raw %}
+
 	Article: Q230212
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/230/Q230212/
 	
 	=============================================================================
 	
+
+{% endraw %}

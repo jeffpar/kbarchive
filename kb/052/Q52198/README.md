@@ -6,6 +6,8 @@ permalink: /kb/052/Q52198/
 
 ## Q52198: Optimization Can Cause Integer Division to Always Return 1
 
+{% raw %}
+
 	Article: Q52198
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -69,3 +71,5 @@ permalink: /kb/052/Q52198/
 	    printf("Failed, d is %d, should be 4!\n", d) ;
 	
 	}
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99377/
 
 ## Q99377: Flight Simulator: ILS Seems Oversensitive
 
+{% raw %}
+
 	Article: Q99377
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:3.0,4.0; MS-DOS:3.0,4.0,5.0
@@ -92,3 +94,5 @@ permalink: /kb/099/Q99377/
 	
 	=============================================================================
 	
+
+{% endraw %}

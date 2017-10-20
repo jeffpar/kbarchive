@@ -6,6 +6,8 @@ permalink: /kb/168/Q168387/
 
 ## Q168387: FIX: Exported Makefile May Be Useless if Custom Build Uses &quot;CD&quot;
 
+{% raw %}
+
 	Article: Q168387
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -60,3 +62,5 @@ permalink: /kb/168/Q168387/
 	
 	=============================================================================
 	
+
+{% endraw %}

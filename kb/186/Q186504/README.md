@@ -6,6 +6,8 @@ permalink: /kb/186/Q186504/
 
 ## Q186504: Terminal Server Commands: CHANGE
 
+{% raw %}
+
 	Article: Q186504
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -206,3 +208,5 @@ permalink: /kb/186/Q186504/
 	
 	=============================================================================
 	
+
+{% endraw %}

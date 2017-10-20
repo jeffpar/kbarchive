@@ -6,6 +6,8 @@ permalink: /kb/242/Q242490/
 
 ## Q242490: DistMgr Package Removal Does Not Work If Package Share Not Empty
 
+{% raw %}
+
 	Article: Q242490
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -80,3 +82,5 @@ permalink: /kb/242/Q242490/
 	
 	=============================================================================
 	
+
+{% endraw %}

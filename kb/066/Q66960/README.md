@@ -6,6 +6,8 @@ permalink: /kb/066/Q66960/
 
 ## Q66960: Solitaire Card Backs Display Animated Effects in Windows
 
+{% raw %}
+
 	Article: Q66960
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/066/Q66960/
 	
 	=============================================================================
 	
+
+{% endraw %}

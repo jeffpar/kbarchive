@@ -6,6 +6,8 @@ permalink: /kb/232/Q232471/
 
 ## Q232471: XFOR: Notes to Exchange Replication Displays Inconsistent Times
 
+{% raw %}
+
 	Article: Q232471
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/232/Q232471/
 	
 	=============================================================================
 	
+
+{% endraw %}

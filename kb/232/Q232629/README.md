@@ -6,6 +6,8 @@ permalink: /kb/232/Q232629/
 
 ## Q232629: Errors Occur When the MTS Identity Is Not Set to Default User
 
+{% raw %}
+
 	Article: Q232629
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -106,3 +108,5 @@ permalink: /kb/232/Q232629/
 	
 	=============================================================================
 	
+
+{% endraw %}

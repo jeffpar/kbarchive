@@ -6,6 +6,8 @@ permalink: /kb/183/Q183375/
 
 ## Q183375: Windows NT Server Enterprise Technologies Training Corrections
 
+{% raw %}
+
 	Article: Q183375
 	Product(s): Microsoft Press
 	Version(s): 
@@ -664,3 +666,5 @@ permalink: /kb/183/Q183375/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163153/
 
 ## Q163153: WD97: &quot;Suggest&quot; Button Missing from Spelling Checker
 
+{% raw %}
+
 	Article: Q163153
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -90,3 +92,5 @@ permalink: /kb/163/Q163153/
 	
 	=============================================================================
 	
+
+{% endraw %}

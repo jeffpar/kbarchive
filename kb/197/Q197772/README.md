@@ -6,6 +6,8 @@ permalink: /kb/197/Q197772/
 
 ## Q197772: PRB: Error Renaming LFN After Creating at CMD Prompt or Notepad
 
+{% raw %}
+
 	Article: Q197772
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -43,3 +45,5 @@ permalink: /kb/197/Q197772/
 	
 	=============================================================================
 	
+
+{% endraw %}

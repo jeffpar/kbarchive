@@ -6,6 +6,8 @@ permalink: /kb/047/Q47235/
 
 ## Q47235: Scaling Values for PG Charts Do Not Work Correctly
 
+{% raw %}
+
 	Article: Q47235
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -139,3 +141,5 @@ permalink: /kb/047/Q47235/
 	
 	         return(0);
 	         }
+
+{% endraw %}

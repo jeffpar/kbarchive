@@ -6,6 +6,8 @@ permalink: /kb/195/Q195261/
 
 ## Q195261: BUG: Operating System Regional Settings Affect VFP COM Objects
 
+{% raw %}
+
 	Article: Q195261
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -225,3 +227,5 @@ permalink: /kb/195/Q195261/
 	
 	=============================================================================
 	
+
+{% endraw %}

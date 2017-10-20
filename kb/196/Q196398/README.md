@@ -6,6 +6,8 @@ permalink: /kb/196/Q196398/
 
 ## Q196398: XADM: Cannot Open Directory Object on Remote Server
 
+{% raw %}
+
 	Article: Q196398
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -90,3 +92,5 @@ permalink: /kb/196/Q196398/
 	
 	=============================================================================
 	
+
+{% endraw %}

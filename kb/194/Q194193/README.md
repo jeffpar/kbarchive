@@ -6,6 +6,8 @@ permalink: /kb/194/Q194193/
 
 ## Q194193: STOP 0xA in Sfmatalk.sys When Copying Files on an SFM Volume
 
+{% raw %}
+
 	Article: Q194193
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -63,3 +65,5 @@ permalink: /kb/194/Q194193/
 	
 	=============================================================================
 	
+
+{% endraw %}

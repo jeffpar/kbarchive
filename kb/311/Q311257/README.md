@@ -6,6 +6,8 @@ permalink: /kb/311/Q311257/
 
 ## Q311257: SMS: Resources Not Discovered if Anonymous Connections Off
 
+{% raw %}
+
 	Article: Q311257
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -102,3 +104,5 @@ permalink: /kb/311/Q311257/
 	
 	=============================================================================
 	
+
+{% endraw %}

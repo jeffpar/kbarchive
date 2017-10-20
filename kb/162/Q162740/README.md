@@ -6,6 +6,8 @@ permalink: /kb/162/Q162740/
 
 ## Q162740: Using Motorola Premier 33.6 Modem with MSN
 
+{% raw %}
+
 	Article: Q162740
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,2.0,2.5
@@ -55,3 +57,5 @@ permalink: /kb/162/Q162740/
 	
 	=============================================================================
 	
+
+{% endraw %}

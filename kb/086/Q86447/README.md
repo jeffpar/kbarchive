@@ -6,6 +6,8 @@ permalink: /kb/086/Q86447/
 
 ## Q86447: Printer Drivers Do Not Support Bidirectional Printing
 
+{% raw %}
+
 	Article: Q86447
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/086/Q86447/
 	
 	=============================================================================
 	
+
+{% endraw %}

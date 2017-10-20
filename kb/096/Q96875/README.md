@@ -6,6 +6,8 @@ permalink: /kb/096/Q96875/
 
 ## Q96875: Backup Not Compatible with Norton Backup Sets
 
+{% raw %}
+
 	Article: Q96875
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0
@@ -50,3 +52,5 @@ permalink: /kb/096/Q96875/
 	
 	=============================================================================
 	
+
+{% endraw %}

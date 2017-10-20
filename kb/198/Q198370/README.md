@@ -6,6 +6,8 @@ permalink: /kb/198/Q198370/
 
 ## Q198370: WD97: Find/Replace with Wildcard Finds All Punctuation
 
+{% raw %}
+
 	Article: Q198370
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -111,3 +113,5 @@ permalink: /kb/198/Q198370/
 	
 	=============================================================================
 	
+
+{% endraw %}

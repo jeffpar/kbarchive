@@ -6,6 +6,8 @@ permalink: /kb/174/Q174602/
 
 ## Q174602: Computer Hangs Using Panasonic &quot;Big 5&quot; CD-ROM Drive
 
+{% raw %}
+
 	Article: Q174602
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/174/Q174602/
 	
 	=============================================================================
 	
+
+{% endraw %}

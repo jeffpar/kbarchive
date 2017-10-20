@@ -6,6 +6,8 @@ permalink: /kb/074/Q74472/
 
 ## Q74472: Initializing Virtual Devices and Hooking Interrupts
 
+{% raw %}
+
 	Article: Q74472
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -42,3 +44,5 @@ permalink: /kb/074/Q74472/
 	
 	=============================================================================
 	
+
+{% endraw %}

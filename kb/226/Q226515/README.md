@@ -6,6 +6,8 @@ permalink: /kb/226/Q226515/
 
 ## Q226515: XADM: Size of Public Folders Cannot Be Limited
 
+{% raw %}
+
 	Article: Q226515
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -37,3 +39,5 @@ permalink: /kb/226/Q226515/
 	
 	=============================================================================
 	
+
+{% endraw %}

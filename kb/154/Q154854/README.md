@@ -6,6 +6,8 @@ permalink: /kb/154/Q154854/
 
 ## Q154854: Trap 0xA in AtalkBPFreeBlock
 
+{% raw %}
+
 	Article: Q154854
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -70,3 +72,5 @@ permalink: /kb/154/Q154854/
 	
 	=============================================================================
 	
+
+{% endraw %}

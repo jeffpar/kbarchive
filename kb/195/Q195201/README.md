@@ -6,6 +6,8 @@ permalink: /kb/195/Q195201/
 
 ## Q195201: XFOR: 5.0 and 5.5 Internet Mail Services Do Not Do AUTH NTLM
 
+{% raw %}
+
 	Article: Q195201
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -96,3 +98,5 @@ permalink: /kb/195/Q195201/
 	
 	=============================================================================
 	
+
+{% endraw %}

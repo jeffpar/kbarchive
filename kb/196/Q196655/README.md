@@ -6,6 +6,8 @@ permalink: /kb/196/Q196655/
 
 ## Q196655: How to Set Up File Auditing on Cluster Disk
 
+{% raw %}
+
 	Article: Q196655
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -64,3 +66,5 @@ permalink: /kb/196/Q196655/
 	
 	=============================================================================
 	
+
+{% endraw %}

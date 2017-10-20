@@ -6,6 +6,8 @@ permalink: /kb/142/Q142825/
 
 ## Q142825: BUG: Can't Change Dir or Run EXE Files on FPNW-shared CD-ROM
 
+{% raw %}
+
 	Article: Q142825
 	Product(s): Microsoft Programming Utilities
 	Version(s): 3.51
@@ -75,3 +77,5 @@ permalink: /kb/142/Q142825/
 	
 	=============================================================================
 	
+
+{% endraw %}

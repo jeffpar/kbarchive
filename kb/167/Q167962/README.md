@@ -6,6 +6,8 @@ permalink: /kb/167/Q167962/
 
 ## Q167962: WD97: Drawing Object/AutoShape Fill Pattern Appears as Shading
 
+{% raw %}
+
 	Article: Q167962
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/167/Q167962/
 	
 	=============================================================================
 	
+
+{% endraw %}

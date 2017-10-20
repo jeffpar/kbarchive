@@ -6,6 +6,8 @@ permalink: /kb/306/Q306958/
 
 ## Q306958: XCON: MTA Stops with Large IMCData Archive Folders
 
+{% raw %}
+
 	Article: Q306958
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -61,3 +63,5 @@ permalink: /kb/306/Q306958/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247637/
 
 ## Q247637: FS2000: Distant Textures Seem to Shimmer or Flicker
 
+{% raw %}
+
 	Article: Q247637
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -83,3 +85,5 @@ permalink: /kb/247/Q247637/
 	
 	=============================================================================
 	
+
+{% endraw %}

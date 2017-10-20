@@ -6,6 +6,8 @@ permalink: /kb/084/Q84160/
 
 ## Q84160: Help Screen Replaced When QuicKeys Is Activated
 
+{% raw %}
+
 	Article: Q84160
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1991 edition,1992 edition,1992 editions
@@ -64,3 +66,5 @@ permalink: /kb/084/Q84160/
 	
 	=============================================================================
 	
+
+{% endraw %}

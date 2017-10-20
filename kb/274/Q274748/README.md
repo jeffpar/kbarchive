@@ -6,6 +6,8 @@ permalink: /kb/274/Q274748/
 
 ## Q274748: CFS2: Tarmac and Textures Are Not Displayed Correctly
 
+{% raw %}
+
 	Article: Q274748
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -64,3 +66,5 @@ permalink: /kb/274/Q274748/
 	
 	=============================================================================
 	
+
+{% endraw %}

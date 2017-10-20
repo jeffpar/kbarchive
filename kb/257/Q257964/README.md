@@ -6,6 +6,8 @@ permalink: /kb/257/Q257964/
 
 ## Q257964: Cannot Change Input Locale to Australia or NZ on WTS Client
 
+{% raw %}
+
 	Article: Q257964
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -78,3 +80,5 @@ permalink: /kb/257/Q257964/
 	
 	=============================================================================
 	
+
+{% endraw %}

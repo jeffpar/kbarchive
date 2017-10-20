@@ -6,6 +6,8 @@ permalink: /kb/222/Q222625/
 
 ## Q222625: How to Close the MSN Quick View
 
+{% raw %}
+
 	Article: Q222625
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.52,2.6
@@ -56,3 +58,5 @@ permalink: /kb/222/Q222625/
 	
 	=============================================================================
 	
+
+{% endraw %}

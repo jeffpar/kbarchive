@@ -6,6 +6,8 @@ permalink: /kb/108/Q108491/
 
 ## Q108491: Writer 1: Upside Down Pages Not Dithered
 
+{% raw %}
+
 	Article: Q108491
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a
@@ -50,3 +52,5 @@ permalink: /kb/108/Q108491/
 	
 	=============================================================================
 	
+
+{% endraw %}

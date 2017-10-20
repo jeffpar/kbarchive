@@ -6,6 +6,8 @@ permalink: /kb/071/Q71505/
 
 ## Q71505: WIN.INI Settings for the NEC Graphics Engine
 
+{% raw %}
+
 	Article: Q71505
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -50,3 +52,5 @@ permalink: /kb/071/Q71505/
 	
 	=============================================================================
 	
+
+{% endraw %}

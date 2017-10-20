@@ -6,6 +6,8 @@ permalink: /kb/082/Q82033/
 
 ## Q82033: Tiny Printout from Windows 3.0 Paintbrush
 
+{% raw %}
+
 	Article: Q82033
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -89,3 +91,5 @@ permalink: /kb/082/Q82033/
 	
 	=============================================================================
 	
+
+{% endraw %}

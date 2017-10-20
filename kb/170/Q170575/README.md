@@ -6,6 +6,8 @@ permalink: /kb/170/Q170575/
 
 ## Q170575: MDG: Help, About Shows &quot;Microsoft Mail for Windows 95&quot;
 
+{% raw %}
+
 	Article: Q170575
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -51,3 +53,5 @@ permalink: /kb/170/Q170575/
 	
 	=============================================================================
 	
+
+{% endraw %}

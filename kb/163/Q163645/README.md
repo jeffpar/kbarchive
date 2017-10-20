@@ -6,6 +6,8 @@ permalink: /kb/163/Q163645/
 
 ## Q163645: PC 97 Hardware Design Guide Corrections and Comments
 
+{% raw %}
+
 	Article: Q163645
 	Product(s): Microsoft Press
 	Version(s): 
@@ -128,3 +130,5 @@ permalink: /kb/163/Q163645/
 	
 	=============================================================================
 	
+
+{% endraw %}

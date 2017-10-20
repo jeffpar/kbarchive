@@ -6,6 +6,8 @@ permalink: /kb/150/Q150291/
 
 ## Q150291: BUG: Empty File Name in PrivateProfile APIs Returns True
 
+{% raw %}
+
 	Article: Q150291
 	Product(s): Microsoft C Compiler
 	Version(s): 4.00 | 4.00
@@ -58,3 +60,5 @@ permalink: /kb/150/Q150291/
 	
 	=============================================================================
 	
+
+{% endraw %}

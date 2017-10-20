@@ -6,6 +6,8 @@ permalink: /kb/069/Q69453/
 
 ## Q69453: InBoard 386, Adaptec Controller and Expanded Memory
 
+{% raw %}
+
 	Article: Q69453
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 3.0,3.0a
@@ -72,3 +74,5 @@ permalink: /kb/069/Q69453/
 	
 	=============================================================================
 	
+
+{% endraw %}

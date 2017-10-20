@@ -6,6 +6,8 @@ permalink: /kb/303/Q303202/
 
 ## Q303202: ASPs Are Not Being Checked for Valid Values in Windows 2000
 
+{% raw %}
+
 	Article: Q303202
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -53,3 +55,5 @@ permalink: /kb/303/Q303202/
 	
 	=============================================================================
 	
+
+{% endraw %}

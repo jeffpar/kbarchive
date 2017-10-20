@@ -6,6 +6,8 @@ permalink: /kb/154/Q154652/
 
 ## Q154652: FIX: Timer Callbacks Not Called in MFC 4.2 Applications
 
+{% raw %}
+
 	Article: Q154652
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.0,4.1,4.2
@@ -105,3 +107,5 @@ permalink: /kb/154/Q154652/
 	
 	=============================================================================
 	
+
+{% endraw %}

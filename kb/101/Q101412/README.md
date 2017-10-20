@@ -6,6 +6,8 @@ permalink: /kb/101/Q101412/
 
 ## Q101412: Scenes 1.0: How to Uninstall Scenes
 
+{% raw %}
+
 	Article: Q101412
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -78,3 +80,5 @@ permalink: /kb/101/Q101412/
 	
 	=============================================================================
 	
+
+{% endraw %}

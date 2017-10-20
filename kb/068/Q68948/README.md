@@ -6,6 +6,8 @@ permalink: /kb/068/Q68948/
 
 ## Q68948: PPT: Importing Word for Windows Document into PowerPoint
 
+{% raw %}
+
 	Article: Q68948
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:2.0,3.0,4.0,4.0a,4.0c,7.0
@@ -112,3 +114,5 @@ permalink: /kb/068/Q68948/
 	
 	=============================================================================
 	
+
+{% endraw %}

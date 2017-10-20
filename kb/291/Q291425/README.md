@@ -6,6 +6,8 @@ permalink: /kb/291/Q291425/
 
 ## Q291425: Cannot Use Local Profile When Logging Onto the Domain on Windows
 
+{% raw %}
+
 	Article: Q291425
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/291/Q291425/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/140/Q140301/
 
 ## Q140301: How to Change the Hostname on SQL Server
 
+{% raw %}
+
 	Article: Q140301
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,6.0
@@ -77,3 +79,5 @@ permalink: /kb/140/Q140301/
 	
 	=============================================================================
 	
+
+{% endraw %}

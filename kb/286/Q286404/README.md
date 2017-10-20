@@ -6,6 +6,8 @@ permalink: /kb/286/Q286404/
 
 ## Q286404: HOWTO: Add HTML Help to a Visual Basic 6.0 Application Wizard Ap
 
+{% raw %}
+
 	Article: Q286404
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 1.2,1.21,1.22,1.3,1.31,1.32,6.0
@@ -131,3 +133,5 @@ permalink: /kb/286/Q286404/
 	
 	=============================================================================
 	
+
+{% endraw %}

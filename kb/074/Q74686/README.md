@@ -6,6 +6,8 @@ permalink: /kb/074/Q74686/
 
 ## Q74686: TBM12.COM Is Not Reported Properly by MEM /C
 
+{% raw %}
+
 	Article: Q74686
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -93,3 +95,5 @@ permalink: /kb/074/Q74686/
 	
 	=============================================================================
 	
+
+{% endraw %}

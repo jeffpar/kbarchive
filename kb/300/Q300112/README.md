@@ -6,6 +6,8 @@ permalink: /kb/300/Q300112/
 
 ## Q300112: Using the Error Property of the Passport Manager Object
 
+{% raw %}
+
 	Article: Q300112
 	Product(s): Microsoft Developer Network
 	Version(s): 1.3,1.4
@@ -54,3 +56,5 @@ permalink: /kb/300/Q300112/
 	
 	=============================================================================
 	
+
+{% endraw %}

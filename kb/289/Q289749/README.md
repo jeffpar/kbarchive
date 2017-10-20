@@ -6,6 +6,8 @@ permalink: /kb/289/Q289749/
 
 ## Q289749: Certificate Revocation Lists (CRL) and IIS 5.0: Common Questions
 
+{% raw %}
+
 	Article: Q289749
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -147,3 +149,5 @@ permalink: /kb/289/Q289749/
 	
 	=============================================================================
 	
+
+{% endraw %}

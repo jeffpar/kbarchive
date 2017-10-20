@@ -6,6 +6,8 @@ permalink: /kb/087/Q87388/
 
 ## Q87388: PC DB: How to Tell If a CONTROL.GLB File Is Corrupted
 
+{% raw %}
+
 	Article: Q87388
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1e,3.0,3.2
@@ -52,3 +54,5 @@ permalink: /kb/087/Q87388/
 	
 	=============================================================================
 	
+
+{% endraw %}

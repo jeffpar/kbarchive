@@ -6,6 +6,8 @@ permalink: /kb/247/Q247923/
 
 ## Q247923: SMS: Windows 95 Client Produces GPF When Remotely Administered
 
+{% raw %}
+
 	Article: Q247923
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -60,3 +62,5 @@ permalink: /kb/247/Q247923/
 	
 	=============================================================================
 	
+
+{% endraw %}

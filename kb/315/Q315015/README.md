@@ -6,6 +6,8 @@ permalink: /kb/315/Q315015/
 
 ## Q315015: Nddeagent.exe May Experience an Access Violation
 
+{% raw %}
+
 	Article: Q315015
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/315/Q315015/
 	
 	=============================================================================
 	
+
+{% endraw %}

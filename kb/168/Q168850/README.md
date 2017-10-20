@@ -6,6 +6,8 @@ permalink: /kb/168/Q168850/
 
 ## Q168850: BUG: MDIChild Form Not Brought to Front with Show Method
 
+{% raw %}
+
 	Article: Q168850
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -89,3 +91,5 @@ permalink: /kb/168/Q168850/
 	
 	=============================================================================
 	
+
+{% endraw %}

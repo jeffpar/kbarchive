@@ -6,6 +6,8 @@ permalink: /kb/169/Q169318/
 
 ## Q169318: Golf 3.0: Theme Pack Available for Download
 
+{% raw %}
+
 	Article: Q169318
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:3.0
@@ -60,3 +62,5 @@ permalink: /kb/169/Q169318/
 	
 	=============================================================================
 	
+
+{% endraw %}

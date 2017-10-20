@@ -6,6 +6,8 @@ permalink: /kb/048/Q48000/
 
 ## Q48000: CVP Restart Command (Dialog Version) Doesn't Properly Set argc
 
+{% raw %}
+
 	Article: Q48000
 	Product(s): See article
 	Version(s): 2.20 2.30 | 2.20 2.30
@@ -38,3 +40,5 @@ permalink: /kb/048/Q48000/
 	Microsoft has confirmed this to be a problem with CodeView Versions
 	2.20 and 2.30. We are researching this problem and will post new
 	information as it becomes available.
+
+{% endraw %}

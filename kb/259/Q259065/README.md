@@ -6,6 +6,8 @@ permalink: /kb/259/Q259065/
 
 ## Q259065: XFOR: Lotus Notes SMTP Users Receive .unk Files
 
+{% raw %}
+
 	Article: Q259065
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -78,3 +80,5 @@ permalink: /kb/259/Q259065/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146676/
 
 ## Q146676: XFOR: Exchange 4.0 DXA Appends 001 Only When Needed
 
+{% raw %}
+
 	Article: Q146676
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -127,3 +129,5 @@ permalink: /kb/146/Q146676/
 	
 	=============================================================================
 	
+
+{% endraw %}

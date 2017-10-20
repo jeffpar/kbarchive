@@ -6,6 +6,8 @@ permalink: /kb/169/Q169224/
 
 ## Q169224: Mastering: Palette Problems with 256 Color Depth
 
+{% raw %}
+
 	Article: Q169224
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -73,3 +75,5 @@ permalink: /kb/169/Q169224/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/071/Q71690/
 
 ## Q71690: Number of Files in Shared Windows Directory
 
+{% raw %}
+
 	Article: Q71690
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -60,3 +62,5 @@ permalink: /kb/071/Q71690/
 	
 	=============================================================================
 	
+
+{% endraw %}

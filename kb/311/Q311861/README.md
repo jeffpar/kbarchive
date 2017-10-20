@@ -6,6 +6,8 @@ permalink: /kb/311/Q311861/
 
 ## Q311861: IIS: Error Message When You Try to Open the ISM Locally
 
+{% raw %}
+
 	Article: Q311861
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -108,3 +110,5 @@ permalink: /kb/311/Q311861/
 	
 	=============================================================================
 	
+
+{% endraw %}

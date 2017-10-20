@@ -6,6 +6,8 @@ permalink: /kb/198/Q198485/
 
 ## Q198485: HOWTO: SQL Server 7 Distributed Query Using ATL OLEDB Consumer
 
+{% raw %}
+
 	Article: Q198485
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0,7.0
@@ -166,3 +168,5 @@ permalink: /kb/198/Q198485/
 	
 	=============================================================================
 	
+
+{% endraw %}

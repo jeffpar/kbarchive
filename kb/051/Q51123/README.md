@@ -6,6 +6,8 @@ permalink: /kb/051/Q51123/
 
 ## Q51123: Time and Date Are Written When File Is Flushed
 
+{% raw %}
+
 	Article: Q51123
 	Product(s): See article
 	Version(s): 5.10
@@ -54,3 +56,5 @@ permalink: /kb/051/Q51123/
 	  _dos_setftime( fileno( fp ), 0x12c1, 0x5000)  //  10:00  6-1-89
 	  fclose(fp);
 	}
+
+{% endraw %}

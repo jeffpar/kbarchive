@@ -6,6 +6,8 @@ permalink: /kb/162/Q162147/
 
 ## Q162147: TN3270 Server Loses Client Session
 
+{% raw %}
+
 	Article: Q162147
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -187,3 +189,5 @@ permalink: /kb/162/Q162147/
 	
 	=============================================================================
 	
+
+{% endraw %}

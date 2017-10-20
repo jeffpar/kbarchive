@@ -6,6 +6,8 @@ permalink: /kb/163/Q163323/
 
 ## Q163323: XCON: Mtacheck.log
 
+{% raw %}
+
 	Article: Q163323
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -118,3 +120,5 @@ permalink: /kb/163/Q163323/
 	
 	=============================================================================
 	
+
+{% endraw %}

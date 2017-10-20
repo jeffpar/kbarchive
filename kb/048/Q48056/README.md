@@ -6,6 +6,8 @@ permalink: /kb/048/Q48056/
 
 ## Q48056: L2029: &quot;Unresolved Externals&quot;; FORTRAN Variable Name Limit
 
+{% raw %}
+
 	Article: Q48056
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -63,3 +65,5 @@ permalink: /kb/048/Q48056/
 	   character limit or $NOTRUNCATE can be used to force 31 character
 	   variable names. $TRUNCATE is the default for FORTRAN Version 4.10,
 	   and $NOTRUNCATE is the default for FORTRAN Version 5.00.
+
+{% endraw %}

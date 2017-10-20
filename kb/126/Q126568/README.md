@@ -6,6 +6,8 @@ permalink: /kb/126/Q126568/
 
 ## Q126568: Automap Road Atlas: GP Fault in Module HP500C.DRV
 
+{% raw %}
+
 	Article: Q126568
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -97,3 +99,5 @@ permalink: /kb/126/Q126568/
 	
 	=============================================================================
 	
+
+{% endraw %}

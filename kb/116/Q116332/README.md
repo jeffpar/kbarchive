@@ -6,6 +6,8 @@ permalink: /kb/116/Q116332/
 
 ## Q116332: PRB: Floats May Be Rounded Up Using ODBC SQL Server Driver
 
+{% raw %}
+
 	Article: Q116332
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0
@@ -125,3 +127,5 @@ permalink: /kb/116/Q116332/
 	
 	=============================================================================
 	
+
+{% endraw %}

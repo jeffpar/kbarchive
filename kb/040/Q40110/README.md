@@ -6,6 +6,8 @@ permalink: /kb/040/Q40110/
 
 ## Q40110: Copying Text from Display Window to Dialog Window
 
+{% raw %}
+
 	Article: Q40110
 	Product(s): See article
 	Version(s): 2.20   | 2.20
@@ -40,3 +42,5 @@ permalink: /kb/040/Q40110/
 	
 	The workaround is not to use the SHIFT key in conjunction with the
 	INSERT key. INSERT alone works correctly.
+
+{% endraw %}

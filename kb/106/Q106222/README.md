@@ -6,6 +6,8 @@ permalink: /kb/106/Q106222/
 
 ## Q106222: CSD00.059 Allows Remoteboot to Work with MS-DOS 6.0, 6.2
 
+{% raw %}
+
 	Article: Q106222
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -44,3 +46,5 @@ permalink: /kb/106/Q106222/
 	
 	=============================================================================
 	
+
+{% endraw %}

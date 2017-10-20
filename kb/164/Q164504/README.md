@@ -6,6 +6,8 @@ permalink: /kb/164/Q164504/
 
 ## Q164504: System Requirements for MS Office 97 Developer Edition
 
+{% raw %}
+
 	Article: Q164504
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/164/Q164504/
 	
 	=============================================================================
 	
+
+{% endraw %}

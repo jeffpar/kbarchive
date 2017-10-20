@@ -6,6 +6,8 @@ permalink: /kb/183/Q183563/
 
 ## Q183563: Error Msg: &quot;Invalid Bookmark&quot; Accessing Mainframe Files
 
+{% raw %}
+
 	Article: Q183563
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -53,3 +55,5 @@ permalink: /kb/183/Q183563/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156716/
 
 ## Q156716: XCON: Foreign MTA Rejects X.400 Messages
 
+{% raw %}
+
 	Article: Q156716
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/156/Q156716/
 	
 	=============================================================================
 	
+
+{% endraw %}

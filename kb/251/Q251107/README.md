@@ -6,6 +6,8 @@ permalink: /kb/251/Q251107/
 
 ## Q251107: XCON: MTA Can Now Set Reply To Address for the X.400 Connector
 
+{% raw %}
+
 	Article: Q251107
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -129,3 +131,5 @@ permalink: /kb/251/Q251107/
 	
 	=============================================================================
 	
+
+{% endraw %}

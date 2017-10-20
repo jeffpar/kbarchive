@@ -6,6 +6,8 @@ permalink: /kb/171/Q171901/
 
 ## Q171901: SMS: SNMP Filter Event Source Values Cannot Be Removed
 
+{% raw %}
+
 	Article: Q171901
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -51,3 +53,5 @@ permalink: /kb/171/Q171901/
 	
 	=============================================================================
 	
+
+{% endraw %}

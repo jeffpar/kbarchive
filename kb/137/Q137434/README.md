@@ -6,6 +6,8 @@ permalink: /kb/137/Q137434/
 
 ## Q137434: Mandatory User Profiles: Random Default Printers Selected
 
+{% raw %}
+
 	Article: Q137434
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51
@@ -86,3 +88,5 @@ permalink: /kb/137/Q137434/
 	
 	=============================================================================
 	
+
+{% endraw %}

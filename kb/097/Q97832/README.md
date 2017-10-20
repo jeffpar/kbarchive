@@ -6,6 +6,8 @@ permalink: /kb/097/Q97832/
 
 ## Q97832: Microsoft Systems Journal: May 1993
 
+{% raw %}
+
 	Article: Q97832
 	Product(s): Miscrosoft Systems Journal
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/097/Q97832/
 	
 	=============================================================================
 	
+
+{% endraw %}

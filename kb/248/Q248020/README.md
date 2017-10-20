@@ -6,6 +6,8 @@ permalink: /kb/248/Q248020/
 
 ## Q248020: IIS 5.0: Err Msg &quot;HTTP/1.1 407 Proxy Authentication Required&quot;
 
+{% raw %}
+
 	Article: Q248020
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -70,3 +72,5 @@ permalink: /kb/248/Q248020/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/039/Q39181/
 
 ## Q39181: Pascal Version of CodeView Version 2.20
 
+{% raw %}
+
 	Article: Q39181
 	Product(s): See article
 	Version(s): 2.20   | 2.20
@@ -30,3 +32,5 @@ permalink: /kb/039/Q39181/
 	CodeView and pull down the Languages menu. If it lists Pascal in the
 	menu, you are using the Pascal version that is compatible with all of
 	the Microsoft languages.
+
+{% endraw %}

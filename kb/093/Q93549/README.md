@@ -6,6 +6,8 @@ permalink: /kb/093/Q93549/
 
 ## Q93549: Pro Audio Spectrum 16 Settings and Features
 
+{% raw %}
+
 	Article: Q93549
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -155,3 +157,5 @@ permalink: /kb/093/Q93549/
 	
 	=============================================================================
 	
+
+{% endraw %}

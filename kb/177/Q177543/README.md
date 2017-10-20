@@ -6,6 +6,8 @@ permalink: /kb/177/Q177543/
 
 ## Q177543: XFOR: Internet Mail Service Provides Maximum Logging at Medium
 
+{% raw %}
+
 	Article: Q177543
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -52,3 +54,5 @@ permalink: /kb/177/Q177543/
 	
 	=============================================================================
 	
+
+{% endraw %}

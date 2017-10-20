@@ -6,6 +6,8 @@ permalink: /kb/034/Q34981/
 
 ## Q34981: &quot;Expected End of Statement,&quot; Line Label with Leading Numeric
 
+{% raw %}
+
 	Article: Q34981
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -39,3 +41,5 @@ permalink: /kb/034/Q34981/
 	GOTO 2line
 	2line:
 	        PRINT "goodbye"
+
+{% endraw %}

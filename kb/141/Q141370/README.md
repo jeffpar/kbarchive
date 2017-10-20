@@ -6,6 +6,8 @@ permalink: /kb/141/Q141370/
 
 ## Q141370: Installing MS Plus! After MSN 1.2 or 1.3 Overwrites Msnver.txt
 
+{% raw %}
+
 	Article: Q141370
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3,95
@@ -60,3 +62,5 @@ permalink: /kb/141/Q141370/
 	
 	=============================================================================
 	
+
+{% endraw %}

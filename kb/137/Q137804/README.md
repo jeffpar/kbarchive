@@ -6,6 +6,8 @@ permalink: /kb/137/Q137804/
 
 ## Q137804: SNA Server DFT Link Service Outage 0x11 (DSR Failure)
 
+{% raw %}
+
 	Article: Q137804
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -63,3 +65,5 @@ permalink: /kb/137/Q137804/
 	
 	=============================================================================
 	
+
+{% endraw %}

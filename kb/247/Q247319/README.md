@@ -6,6 +6,8 @@ permalink: /kb/247/Q247319/
 
 ## Q247319: PRB: PUBLIC Variables Not Released from InProcess Servers in ASP
 
+{% raw %}
+
 	Article: Q247319
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -158,3 +160,5 @@ permalink: /kb/247/Q247319/
 	
 	=============================================================================
 	
+
+{% endraw %}

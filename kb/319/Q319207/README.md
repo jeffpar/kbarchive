@@ -6,6 +6,8 @@ permalink: /kb/319/Q319207/
 
 ## Q319207: SMS: Retrying a Package Update May Create Many Jobs
 
+{% raw %}
+
 	Article: Q319207
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -199,3 +201,5 @@ permalink: /kb/319/Q319207/
 	
 	=============================================================================
 	
+
+{% endraw %}

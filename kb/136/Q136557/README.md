@@ -6,6 +6,8 @@ permalink: /kb/136/Q136557/
 
 ## Q136557: BUG: SHOW WINDOW &lt;name&gt; REFRESH in BROWSE VALID Does Not Work
 
+{% raw %}
+
 	Article: Q136557
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -92,3 +94,5 @@ permalink: /kb/136/Q136557/
 	
 	=============================================================================
 	
+
+{% endraw %}

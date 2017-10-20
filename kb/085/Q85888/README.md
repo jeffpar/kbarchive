@@ -6,6 +6,8 @@ permalink: /kb/085/Q85888/
 
 ## Q85888: How to Display Your Personal Calendar at Windows Startup
 
+{% raw %}
+
 	Article: Q85888
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -70,3 +72,5 @@ permalink: /kb/085/Q85888/
 	
 	=============================================================================
 	
+
+{% endraw %}

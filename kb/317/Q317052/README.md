@@ -6,6 +6,8 @@ permalink: /kb/317/Q317052/
 
 ## Q317052: HOW TO: Undo Changes Made by the IIS Lockdown Wizard
 
+{% raw %}
+
 	Article: Q317052
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -100,3 +102,5 @@ permalink: /kb/317/Q317052/
 	
 	=============================================================================
 	
+
+{% endraw %}

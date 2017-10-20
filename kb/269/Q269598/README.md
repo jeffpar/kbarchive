@@ -6,6 +6,8 @@ permalink: /kb/269/Q269598/
 
 ## Q269598: Windows NT MA Running in Creator Mode Generates Error 1314
 
+{% raw %}
+
 	Article: Q269598
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1
@@ -72,3 +74,5 @@ permalink: /kb/269/Q269598/
 	
 	=============================================================================
 	
+
+{% endraw %}

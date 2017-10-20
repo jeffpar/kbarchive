@@ -6,6 +6,8 @@ permalink: /kb/177/Q177359/
 
 ## Q177359: PRB: Data Control Does Not Work on MDI Forms
 
+{% raw %}
+
 	Article: Q177359
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -85,3 +87,5 @@ permalink: /kb/177/Q177359/
 	
 	=============================================================================
 	
+
+{% endraw %}

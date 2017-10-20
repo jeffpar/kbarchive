@@ -6,6 +6,8 @@ permalink: /kb/171/Q171933/
 
 ## Q171933: SNA Server 3.0 Appears to Ignore APPC Mode Priority Setting
 
+{% raw %}
+
 	Article: Q171933
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -61,3 +63,5 @@ permalink: /kb/171/Q171933/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139185/
 
 ## Q139185: DOCERR: Incorrect Syntax in SET KEY Command Example in Help
 
+{% raw %}
+
 	Article: Q139185
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -62,3 +64,5 @@ permalink: /kb/139/Q139185/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235777/
 
 ## Q235777: SMS: SMSAPM32 Perform Slow Link Detect All Mandatory Assignment
 
+{% raw %}
+
 	Article: Q235777
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -78,3 +80,5 @@ permalink: /kb/235/Q235777/
 	
 	=============================================================================
 	
+
+{% endraw %}

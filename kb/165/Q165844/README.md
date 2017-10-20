@@ -6,6 +6,8 @@ permalink: /kb/165/Q165844/
 
 ## Q165844: Default Code Page Should Be 930 (Extend Katakana), Not 290
 
+{% raw %}
+
 	Article: Q165844
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 J
@@ -56,3 +58,5 @@ permalink: /kb/165/Q165844/
 	
 	=============================================================================
 	
+
+{% endraw %}

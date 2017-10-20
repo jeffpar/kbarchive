@@ -6,6 +6,8 @@ permalink: /kb/117/Q117933/
 
 ## Q117933: Encarta: White Line Prints Across Graphics on LaserWriter
 
+{% raw %}
+
 	Article: Q117933
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -50,3 +52,5 @@ permalink: /kb/117/Q117933/
 	
 	=============================================================================
 	
+
+{% endraw %}

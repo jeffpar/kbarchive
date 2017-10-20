@@ -6,6 +6,8 @@ permalink: /kb/189/Q189926/
 
 ## Q189926: BUG: Large Toolbar Icons Cause Problems in Customize Dialog Box
 
+{% raw %}
+
 	Article: Q189926
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -60,3 +62,5 @@ permalink: /kb/189/Q189926/
 	
 	=============================================================================
 	
+
+{% endraw %}

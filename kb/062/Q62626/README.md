@@ -6,6 +6,8 @@ permalink: /kb/062/Q62626/
 
 ## Q62626: Passing a Pointer to a Structure from C to Assembly
 
+{% raw %}
+
 	Article: Q62626
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1,5.1a,6.0,6.0a,6.0b
@@ -112,3 +114,5 @@ permalink: /kb/062/Q62626/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149201/
 
 ## Q149201: XCLN: '!' at End of URL Not Incorporated into Shortcut
 
+{% raw %}
+
 	Article: Q149201
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -48,3 +50,5 @@ permalink: /kb/149/Q149201/
 	
 	=============================================================================
 	
+
+{% endraw %}

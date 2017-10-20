@@ -6,6 +6,8 @@ permalink: /kb/250/Q250461/
 
 ## Q250461: BUG: WSALookupServiceNext Returns Incomplete Data
 
+{% raw %}
+
 	Article: Q250461
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -144,3 +146,5 @@ permalink: /kb/250/Q250461/
 	
 	=============================================================================
 	
+
+{% endraw %}

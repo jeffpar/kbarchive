@@ -6,6 +6,8 @@ permalink: /kb/121/Q121851/
 
 ## Q121851: Windows NT 3.5 Drivers for Compaq Devices
 
+{% raw %}
+
 	Article: Q121851
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -58,3 +60,5 @@ permalink: /kb/121/Q121851/
 	
 	=============================================================================
 	
+
+{% endraw %}

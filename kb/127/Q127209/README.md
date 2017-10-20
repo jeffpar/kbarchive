@@ -6,6 +6,8 @@ permalink: /kb/127/Q127209/
 
 ## Q127209: Orchid Vidiola Capture Card Causes Setup to Hang
 
+{% raw %}
+
 	Article: Q127209
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -50,3 +52,5 @@ permalink: /kb/127/Q127209/
 	
 	=============================================================================
 	
+
+{% endraw %}

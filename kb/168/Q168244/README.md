@@ -6,6 +6,8 @@ permalink: /kb/168/Q168244/
 
 ## Q168244: XCLN: &quot;Locate Link Browser&quot; Displayed When You Click URLs
 
+{% raw %}
+
 	Article: Q168244
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -59,3 +61,5 @@ permalink: /kb/168/Q168244/
 	
 	=============================================================================
 	
+
+{% endraw %}

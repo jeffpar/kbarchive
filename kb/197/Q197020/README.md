@@ -6,6 +6,8 @@ permalink: /kb/197/Q197020/
 
 ## Q197020: WD97: How to Replace Smart Quotes with Straight Quotes
 
+{% raw %}
+
 	Article: Q197020
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -97,3 +99,5 @@ permalink: /kb/197/Q197020/
 	
 	=============================================================================
 	
+
+{% endraw %}

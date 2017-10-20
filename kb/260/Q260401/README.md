@@ -6,6 +6,8 @@ permalink: /kb/260/Q260401/
 
 ## Q260401: XADM: Install Doesn't Work on Stand-Alone Windows 2000 Server
 
+{% raw %}
+
 	Article: Q260401
 	Product(s): Microsoft Exchange
 	Version(s): 2000,5.5
@@ -87,3 +89,5 @@ permalink: /kb/260/Q260401/
 	
 	=============================================================================
 	
+
+{% endraw %}

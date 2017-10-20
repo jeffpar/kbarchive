@@ -6,6 +6,8 @@ permalink: /kb/272/Q272539/
 
 ## Q272539: Encarta 2001: Program Does Not Respond When You Click Web Links
 
+{% raw %}
+
 	Article: Q272539
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/272/Q272539/
 	
 	=============================================================================
 	
+
+{% endraw %}

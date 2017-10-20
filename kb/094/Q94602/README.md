@@ -6,6 +6,8 @@ permalink: /kb/094/Q94602/
 
 ## Q94602: PRB: How to Work Around WMFDCODE 64K Limitation
 
+{% raw %}
+
 	Article: Q94602
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -65,3 +67,5 @@ permalink: /kb/094/Q94602/
 	
 	=============================================================================
 	
+
+{% endraw %}

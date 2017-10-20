@@ -6,6 +6,8 @@ permalink: /kb/143/Q143084/
 
 ## Q143084: FIX: Problems with Using the MFC DAO Classes in a .DLL or .OCX
 
+{% raw %}
+
 	Article: Q143084
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -124,3 +126,5 @@ permalink: /kb/143/Q143084/
 	
 	=============================================================================
 	
+
+{% endraw %}

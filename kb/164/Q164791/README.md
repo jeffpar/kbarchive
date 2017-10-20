@@ -6,6 +6,8 @@ permalink: /kb/164/Q164791/
 
 ## Q164791: SMS: PCM Does Not Disconnect from NetWare Distribution Server
 
+{% raw %}
+
 	Article: Q164791
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -61,3 +63,5 @@ permalink: /kb/164/Q164791/
 	
 	=============================================================================
 	
+
+{% endraw %}

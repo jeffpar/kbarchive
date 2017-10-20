@@ -6,6 +6,8 @@ permalink: /kb/122/Q122488/
 
 ## Q122488: PRB: How to Use Automation Error Code &amp; Help from Visual Basic
 
+{% raw %}
+
 	Article: Q122488
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0,1.5,3.0; winnt:2.0
@@ -114,3 +116,5 @@ permalink: /kb/122/Q122488/
 	
 	=============================================================================
 	
+
+{% endraw %}

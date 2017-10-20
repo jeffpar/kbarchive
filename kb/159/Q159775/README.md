@@ -6,6 +6,8 @@ permalink: /kb/159/Q159775/
 
 ## Q159775: PRB: General Protection Fault Occurs On VSS Launch
 
+{% raw %}
+
 	Article: Q159775
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:4.0,4.0a,5.0.,6.0
@@ -111,3 +113,5 @@ permalink: /kb/159/Q159775/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103845/
 
 ## Q103845: PC WSPlus: Completed Tasks Are Deleted in Schedule+ Calendar
 
+{% raw %}
+
 	Article: Q103845
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -47,3 +49,5 @@ permalink: /kb/103/Q103845/
 	
 	=============================================================================
 	
+
+{% endraw %}

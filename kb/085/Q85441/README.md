@@ -6,6 +6,8 @@ permalink: /kb/085/Q85441/
 
 ## Q85441: Windows Setup Err Msg: Sector Not Found Reading Drive X
 
+{% raw %}
+
 	Article: Q85441
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:6.0,6.2,6.21; WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/085/Q85441/
 	
 	=============================================================================
 	
+
+{% endraw %}

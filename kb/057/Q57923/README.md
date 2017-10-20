@@ -6,6 +6,8 @@ permalink: /kb/057/Q57923/
 
 ## Q57923: QuickC 2.00 Routines Using malloc() Fail in QB Quick Library
 
+{% raw %}
+
 	Article: Q57923
 	Product(s): See article
 	Version(s): 4.50
@@ -88,3 +90,5 @@ permalink: /kb/057/Q57923/
 	follows:
 	
 	   LINK /Q /NOE setmem.c,,,bqlb45.lib;
+
+{% endraw %}

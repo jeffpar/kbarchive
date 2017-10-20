@@ -6,6 +6,8 @@ permalink: /kb/162/Q162892/
 
 ## Q162892: Problems Adding Second Drive to Dual Channel EIDE/PCI
 
+{% raw %}
+
 	Article: Q162892
 	Product(s): Microsoft Windows NT
 	Version(s): WINNT:3.51
@@ -68,3 +70,5 @@ permalink: /kb/162/Q162892/
 	
 	=============================================================================
 	
+
+{% endraw %}

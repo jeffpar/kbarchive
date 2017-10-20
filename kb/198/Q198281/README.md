@@ -6,6 +6,8 @@ permalink: /kb/198/Q198281/
 
 ## Q198281: XCLN: Using Electronic Forms Designer with Outlook 98
 
+{% raw %}
+
 	Article: Q198281
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:95,98; winnt:5.5 SP1
@@ -54,3 +56,5 @@ permalink: /kb/198/Q198281/
 	
 	=============================================================================
 	
+
+{% endraw %}

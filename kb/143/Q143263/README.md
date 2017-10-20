@@ -6,6 +6,8 @@ permalink: /kb/143/Q143263/
 
 ## Q143263: HOWTO: Use an RDO Prepared Statement to Find a Single Record
 
+{% raw %}
+
 	Article: Q143263
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -106,3 +108,5 @@ permalink: /kb/143/Q143263/
 	
 	=============================================================================
 	
+
+{% endraw %}

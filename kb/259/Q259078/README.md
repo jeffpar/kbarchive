@@ -6,6 +6,8 @@ permalink: /kb/259/Q259078/
 
 ## Q259078: INFO: Logo FAQ: 2-Tier Client/Server App Desktop or Server Logo?
 
+{% raw %}
+
 	Article: Q259078
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -85,3 +87,5 @@ permalink: /kb/259/Q259078/
 	
 	=============================================================================
 	
+
+{% endraw %}

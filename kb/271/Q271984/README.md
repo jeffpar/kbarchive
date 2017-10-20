@@ -6,6 +6,8 @@ permalink: /kb/271/Q271984/
 
 ## Q271984: XADM: Event ID 1101 Error 0x8004010f with Background Processing
 
+{% raw %}
+
 	Article: Q271984
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -74,3 +76,5 @@ permalink: /kb/271/Q271984/
 	
 	=============================================================================
 	
+
+{% endraw %}

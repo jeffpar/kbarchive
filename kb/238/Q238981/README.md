@@ -6,6 +6,8 @@ permalink: /kb/238/Q238981/
 
 ## Q238981: HOWTO: Passing Optional Parameters When Calling a Function
 
+{% raw %}
+
 	Article: Q238981
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:97; Win95:7.0; winnt:4.0,5.0,6.0
@@ -54,3 +56,5 @@ permalink: /kb/238/Q238981/
 	
 	=============================================================================
 	
+
+{% endraw %}

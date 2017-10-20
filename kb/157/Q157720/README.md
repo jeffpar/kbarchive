@@ -6,6 +6,8 @@ permalink: /kb/157/Q157720/
 
 ## Q157720: INFO: VSS 5.0 Readme: Sec. 1, Software Installation Information
 
+{% raw %}
+
 	Article: Q157720
 	Product(s): Microsoft SourceSafe
 	Version(s): Win3.x:5.0
@@ -314,3 +316,5 @@ permalink: /kb/157/Q157720/
 	
 	=============================================================================
 	
+
+{% endraw %}

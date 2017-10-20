@@ -6,6 +6,8 @@ permalink: /kb/168/Q168198/
 
 ## Q168198: WD97: Troubleshooting Invalid Page Faults in Word 97
 
+{% raw %}
+
 	Article: Q168198
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -1213,3 +1215,5 @@ permalink: /kb/168/Q168198/
 	
 	=============================================================================
 	
+
+{% endraw %}

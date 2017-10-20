@@ -6,6 +6,8 @@ permalink: /kb/099/Q99725/
 
 ## Q99725: PC DB: Checking for Ownerless Files in NetWare
 
+{% raw %}
+
 	Article: Q99725
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0,3.2
@@ -98,3 +100,5 @@ permalink: /kb/099/Q99725/
 	
 	=============================================================================
 	
+
+{% endraw %}

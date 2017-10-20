@@ -6,6 +6,8 @@ permalink: /kb/188/Q188544/
 
 ## Q188544: BUG: Transparent Windowless UserControl Cannot Be Dragged
 
+{% raw %}
+
 	Article: Q188544
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -79,3 +81,5 @@ permalink: /kb/188/Q188544/
 	
 	=============================================================================
 	
+
+{% endraw %}

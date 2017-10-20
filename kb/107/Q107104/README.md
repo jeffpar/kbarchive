@@ -6,6 +6,8 @@ permalink: /kb/107/Q107104/
 
 ## Q107104: X400: How to Add Route Table Expression
 
+{% raw %}
+
 	Article: Q107104
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -37,3 +39,5 @@ permalink: /kb/107/Q107104/
 	
 	=============================================================================
 	
+
+{% endraw %}

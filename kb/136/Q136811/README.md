@@ -6,6 +6,8 @@ permalink: /kb/136/Q136811/
 
 ## Q136811: Word Setup Text is Garbled Under Windows 95 Remote Control
 
+{% raw %}
+
 	Article: Q136811
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -45,3 +47,5 @@ permalink: /kb/136/Q136811/
 	
 	=============================================================================
 	
+
+{% endraw %}

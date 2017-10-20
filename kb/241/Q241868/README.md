@@ -6,6 +6,8 @@ permalink: /kb/241/Q241868/
 
 ## Q241868: XADM: How to Apply Mailbox Message Size Limits to Mailboxes
 
+{% raw %}
+
 	Article: Q241868
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -67,3 +69,5 @@ permalink: /kb/241/Q241868/
 	
 	=============================================================================
 	
+
+{% endraw %}

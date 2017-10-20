@@ -6,6 +6,8 @@ permalink: /kb/170/Q170395/
 
 ## Q170395: MTG: MTA Fails with Error Code 914:ce on NetWare 4.11
 
+{% raw %}
+
 	Article: Q170395
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -58,3 +60,5 @@ permalink: /kb/170/Q170395/
 	
 	=============================================================================
 	
+
+{% endraw %}

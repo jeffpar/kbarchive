@@ -6,6 +6,8 @@ permalink: /kb/141/Q141987/
 
 ## Q141987: PRB: Values Are Not Updated in Each Column When Changing Rows
 
+{% raw %}
+
 	Article: Q141987
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -91,3 +93,5 @@ permalink: /kb/141/Q141987/
 	
 	=============================================================================
 	
+
+{% endraw %}

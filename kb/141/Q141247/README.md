@@ -6,6 +6,8 @@ permalink: /kb/141/Q141247/
 
 ## Q141247: PPT7: PowerPoint Encountered an Error That It Could Not Correct
 
+{% raw %}
+
 	Article: Q141247
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:7.0
@@ -141,3 +143,5 @@ permalink: /kb/141/Q141247/
 	
 	=============================================================================
 	
+
+{% endraw %}

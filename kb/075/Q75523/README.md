@@ -6,6 +6,8 @@ permalink: /kb/075/Q75523/
 
 ## Q75523: Norton Desktop and Novell NetWare Require 9/20/90 or Later
 
+{% raw %}
+
 	Article: Q75523
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -53,3 +55,5 @@ permalink: /kb/075/Q75523/
 	
 	=============================================================================
 	
+
+{% endraw %}

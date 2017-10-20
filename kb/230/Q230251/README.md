@@ -6,6 +6,8 @@ permalink: /kb/230/Q230251/
 
 ## Q230251: XFOR: Exchange Notes Connector Installation Failure, LMEISTAT
 
+{% raw %}
+
 	Article: Q230251
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -90,3 +92,5 @@ permalink: /kb/230/Q230251/
 	
 	=============================================================================
 	
+
+{% endraw %}

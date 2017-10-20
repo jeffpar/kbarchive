@@ -6,6 +6,8 @@ permalink: /kb/274/Q274435/
 
 ## Q274435: Cannot Use Logon Hours with Windows 2000 Professional
 
+{% raw %}
+
 	Article: Q274435
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,2000 SP1,4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4,4.0 SP5,4.0 SP6,4.0 SP6a
@@ -47,3 +49,5 @@ permalink: /kb/274/Q274435/
 	
 	=============================================================================
 	
+
+{% endraw %}

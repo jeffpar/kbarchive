@@ -6,6 +6,8 @@ permalink: /kb/158/Q158351/
 
 ## Q158351: Mac Multimedia: Network Connection May Cause Problems
 
+{% raw %}
+
 	Article: Q158351
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0,1.0a,2.0; :1.0,1993, 1994, 1995, 1996-1997 editions,1994 edition,1995 edi
@@ -80,3 +82,5 @@ permalink: /kb/158/Q158351/
 	
 	=============================================================================
 	
+
+{% endraw %}

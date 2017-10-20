@@ -6,6 +6,8 @@ permalink: /kb/190/Q190257/
 
 ## Q190257: PRB: Component Gallery ListView Column Widths are Not Saved
 
+{% raw %}
+
 	Article: Q190257
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -59,3 +61,5 @@ permalink: /kb/190/Q190257/
 	
 	=============================================================================
 	
+
+{% endraw %}

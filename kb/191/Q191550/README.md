@@ -6,6 +6,8 @@ permalink: /kb/191/Q191550/
 
 ## Q191550: BUG: DateTimePicker Won't Scroll Full Text in Visible Combo Area
 
+{% raw %}
+
 	Article: Q191550
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -85,3 +87,5 @@ permalink: /kb/191/Q191550/
 	
 	=============================================================================
 	
+
+{% endraw %}

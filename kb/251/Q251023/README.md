@@ -6,6 +6,8 @@ permalink: /kb/251/Q251023/
 
 ## Q251023: BUG: CComVariant::operator=(BSTR) Does Not Copy Embedded NULL
 
+{% raw %}
+
 	Article: Q251023
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:2.0,2.1,3.0
@@ -71,3 +73,5 @@ permalink: /kb/251/Q251023/
 	
 	=============================================================================
 	
+
+{% endraw %}

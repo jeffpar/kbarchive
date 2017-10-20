@@ -6,6 +6,8 @@ permalink: /kb/175/Q175917/
 
 ## Q175917: How to Correct a Damaged TCP/IP Protocol
 
+{% raw %}
+
 	Article: Q175917
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,5.0
@@ -82,3 +84,5 @@ permalink: /kb/175/Q175917/
 	
 	=============================================================================
 	
+
+{% endraw %}

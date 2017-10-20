@@ -6,6 +6,8 @@ permalink: /kb/291/Q291811/
 
 ## Q291811: Game Stops Responding if USB, AGP Card Use Same Port
 
+{% raw %}
+
 	Article: Q291811
 	Product(s): Microsoft Home Games
 	Version(s): 1.0,2.0
@@ -114,3 +116,5 @@ permalink: /kb/291/Q291811/
 	
 	=============================================================================
 	
+
+{% endraw %}

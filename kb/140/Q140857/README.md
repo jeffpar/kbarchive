@@ -6,6 +6,8 @@ permalink: /kb/140/Q140857/
 
 ## Q140857: Golf: MSN Starts When You Launch PlayerNet
 
+{% raw %}
+
 	Article: Q140857
 	Product(s): Microsoft Home Games
 	Version(s): 2.0
@@ -46,3 +48,5 @@ permalink: /kb/140/Q140857/
 	
 	=============================================================================
 	
+
+{% endraw %}

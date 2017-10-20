@@ -6,6 +6,8 @@ permalink: /kb/276/Q276200/
 
 ## Q276200: BUG: ADO Application May Hang When Using OLE DB Provider for DB2
 
+{% raw %}
+
 	Article: Q276200
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP2,4.0 SP3
@@ -91,3 +93,5 @@ permalink: /kb/276/Q276200/
 	
 	=============================================================================
 	
+
+{% endraw %}

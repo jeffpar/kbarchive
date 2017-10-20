@@ -6,6 +6,8 @@ permalink: /kb/061/Q61607/
 
 ## Q61607: PWB Error U1355: Bad Command or File Name
 
+{% raw %}
+
 	Article: Q61607
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -50,3 +52,5 @@ permalink: /kb/061/Q61607/
 	
 	=============================================================================
 	
+
+{% endraw %}

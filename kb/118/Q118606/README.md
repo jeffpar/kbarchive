@@ -6,6 +6,8 @@ permalink: /kb/118/Q118606/
 
 ## Q118606: PPT: GP Fault in HPPCL5E2.DLL When Printing
 
+{% raw %}
+
 	Article: Q118606
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -87,3 +89,5 @@ permalink: /kb/118/Q118606/
 	
 	=============================================================================
 	
+
+{% endraw %}

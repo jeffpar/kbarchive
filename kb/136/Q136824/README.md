@@ -6,6 +6,8 @@ permalink: /kb/136/Q136824/
 
 ## Q136824: BBS Window Does Not Close After Disconnect
 
+{% raw %}
+
 	Article: Q136824
 	Product(s): The Microsoft Network
 	Version(s): 1.00 1.05 1.2 1.3
@@ -50,3 +52,5 @@ permalink: /kb/136/Q136824/
 	
 	=============================================================================
 	
+
+{% endraw %}

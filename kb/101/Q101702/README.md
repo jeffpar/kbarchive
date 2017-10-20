@@ -6,6 +6,8 @@ permalink: /kb/101/Q101702/
 
 ## Q101702: Problems Booting from Shadow Set Secondary Member
 
+{% raw %}
+
 	Article: Q101702
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -41,3 +43,5 @@ permalink: /kb/101/Q101702/
 	
 	=============================================================================
 	
+
+{% endraw %}

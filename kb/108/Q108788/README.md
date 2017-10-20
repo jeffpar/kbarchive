@@ -6,6 +6,8 @@ permalink: /kb/108/Q108788/
 
 ## Q108788: How to Return to MS-DOS After Installing PC DOS 6.1
 
+{% raw %}
+
 	Article: Q108788
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.2,6.22
@@ -172,3 +174,5 @@ permalink: /kb/108/Q108788/
 	
 	=============================================================================
 	
+
+{% endraw %}

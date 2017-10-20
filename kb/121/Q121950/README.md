@@ -6,6 +6,8 @@ permalink: /kb/121/Q121950/
 
 ## Q121950: HOWTO: Detect an Empty CRecordset Object
 
+{% raw %}
+
 	Article: Q121950
 	Product(s): Microsoft C Compiler
 	Version(s): 1.5,1.51,4.0,4.1,4.2,5.0,6.0
@@ -50,3 +52,5 @@ permalink: /kb/121/Q121950/
 	
 	=============================================================================
 	
+
+{% endraw %}

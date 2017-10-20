@@ -6,6 +6,8 @@ permalink: /kb/159/Q159203/
 
 ## Q159203: PRB: Unattended Install Prompts for New IP if Zero Is in Address
 
+{% raw %}
+
 	Article: Q159203
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -82,3 +84,5 @@ permalink: /kb/159/Q159203/
 	
 	=============================================================================
 	
+
+{% endraw %}

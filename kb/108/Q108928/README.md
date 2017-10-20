@@ -6,6 +6,8 @@ permalink: /kb/108/Q108928/
 
 ## Q108928: Setting Baud Rates in Windows 3.1
 
+{% raw %}
+
 	Article: Q108928
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -90,3 +92,5 @@ permalink: /kb/108/Q108928/
 	
 	=============================================================================
 	
+
+{% endraw %}

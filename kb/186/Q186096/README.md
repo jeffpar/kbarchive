@@ -6,6 +6,8 @@ permalink: /kb/186/Q186096/
 
 ## Q186096: XADM: Eseutil.exe Does Not Fix Records with Missing Long Values
 
+{% raw %}
+
 	Article: Q186096
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -56,3 +58,5 @@ permalink: /kb/186/Q186096/
 	
 	=============================================================================
 	
+
+{% endraw %}

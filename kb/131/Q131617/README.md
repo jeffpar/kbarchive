@@ -6,6 +6,8 @@ permalink: /kb/131/Q131617/
 
 ## Q131617: Tape Device Times Out on a Northwest Micro Pentium Computer
 
+{% raw %}
+
 	Article: Q131617
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/131/Q131617/
 	
 	=============================================================================
 	
+
+{% endraw %}

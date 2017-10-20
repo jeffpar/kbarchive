@@ -6,6 +6,8 @@ permalink: /kb/242/Q242841/
 
 ## Q242841: FS2000: Cannot Install on Beta Release of Windows 2000
 
+{% raw %}
+
 	Article: Q242841
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:2000
@@ -71,3 +73,5 @@ permalink: /kb/242/Q242841/
 	
 	=============================================================================
 	
+
+{% endraw %}

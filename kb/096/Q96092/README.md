@@ -6,6 +6,8 @@ permalink: /kb/096/Q96092/
 
 ## Q96092: WFWG: Printing with Banyan VINES Connectivity
 
+{% raw %}
+
 	Article: Q96092
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -87,3 +89,5 @@ permalink: /kb/096/Q96092/
 	
 	=============================================================================
 	
+
+{% endraw %}

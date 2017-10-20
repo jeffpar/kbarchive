@@ -6,6 +6,8 @@ permalink: /kb/316/Q316917/
 
 ## Q316917: Microsoft Windows XP Professional Resource Kit Documentation Com
 
+{% raw %}
+
 	Article: Q316917
 	Product(s): Microsoft Press
 	Version(s): 
@@ -151,3 +153,5 @@ permalink: /kb/316/Q316917/
 	
 	=============================================================================
 	
+
+{% endraw %}

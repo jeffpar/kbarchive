@@ -6,6 +6,8 @@ permalink: /kb/201/Q201820/
 
 ## Q201820: SMS: Remote Control Displays Wrong Mouse Pointer
 
+{% raw %}
+
 	Article: Q201820
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -53,3 +55,5 @@ permalink: /kb/201/Q201820/
 	
 	=============================================================================
 	
+
+{% endraw %}

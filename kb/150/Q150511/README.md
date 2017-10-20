@@ -6,6 +6,8 @@ permalink: /kb/150/Q150511/
 
 ## Q150511: Preventing SNA Server Keepalives on Idle LAN Connections
 
+{% raw %}
+
 	Article: Q150511
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -211,3 +213,5 @@ permalink: /kb/150/Q150511/
 	
 	=============================================================================
 	
+
+{% endraw %}

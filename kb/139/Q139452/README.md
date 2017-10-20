@@ -6,6 +6,8 @@ permalink: /kb/139/Q139452/
 
 ## Q139452: Computer BIOS and Windows NT Daylight Savings Time Settings
 
+{% raw %}
+
 	Article: Q139452
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -62,3 +64,5 @@ permalink: /kb/139/Q139452/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/066/Q66053/
 
 ## Q66053: fputs() Fails with R6003 When Writing to STDAUX
 
+{% raw %}
+
 	Article: Q66053
 	Product(s): See article
 	Version(s): 6.00 6.00a
@@ -46,3 +48,5 @@ permalink: /kb/066/Q66053/
 	   setvbuf(stdaux, NULL, _IONBF, 0);
 	   fputs("hello world\n", stdaux);
 	}
+
+{% endraw %}

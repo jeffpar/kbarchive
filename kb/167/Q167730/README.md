@@ -6,6 +6,8 @@ permalink: /kb/167/Q167730/
 
 ## Q167730: BUG: Wrong Member Name in C2039 Error Message
 
+{% raw %}
+
 	Article: Q167730
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -65,3 +67,5 @@ permalink: /kb/167/Q167730/
 	
 	=============================================================================
 	
+
+{% endraw %}

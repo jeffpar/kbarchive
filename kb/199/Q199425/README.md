@@ -6,6 +6,8 @@ permalink: /kb/199/Q199425/
 
 ## Q199425: XADM: Exchange 5.5 Setup Does Not Work During Address Generation
 
+{% raw %}
+
 	Article: Q199425
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -108,3 +110,5 @@ permalink: /kb/199/Q199425/
 	
 	=============================================================================
 	
+
+{% endraw %}

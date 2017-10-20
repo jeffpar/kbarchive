@@ -6,6 +6,8 @@ permalink: /kb/259/Q259241/
 
 ## Q259241: Nbtstat and Nbt Performance Counters May Not Work
 
+{% raw %}
+
 	Article: Q259241
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -117,3 +119,5 @@ permalink: /kb/259/Q259241/
 	
 	=============================================================================
 	
+
+{% endraw %}

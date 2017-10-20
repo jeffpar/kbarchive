@@ -6,6 +6,8 @@ permalink: /kb/269/Q269202/
 
 ## Q269202: Join Not Working on First Run of Management Agent
 
+{% raw %}
+
 	Article: Q269202
 	Product(s): Microsoft Windows NT
 	Version(s): 2.1,2.2
@@ -60,3 +62,5 @@ permalink: /kb/269/Q269202/
 	
 	=============================================================================
 	
+
+{% endraw %}

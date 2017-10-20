@@ -6,6 +6,8 @@ permalink: /kb/071/Q71975/
 
 ## Q71975: DOCERR: QuickHelp Searches C:&#92;QH, DPATH, PATH, BOOKSHELF
 
+{% raw %}
+
 	Article: Q71975
 	Product(s): Microsoft Programming Utilities
 	Version(s): 1.7,1.83
@@ -44,3 +46,5 @@ permalink: /kb/071/Q71975/
 	
 	=============================================================================
 	
+
+{% endraw %}

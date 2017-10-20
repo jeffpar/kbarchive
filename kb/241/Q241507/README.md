@@ -6,6 +6,8 @@ permalink: /kb/241/Q241507/
 
 ## Q241507: Ftp.exe Does Not Pass the ACCT Parameter from a Script
 
+{% raw %}
+
 	Article: Q241507
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/241/Q241507/
 	
 	=============================================================================
 	
+
+{% endraw %}

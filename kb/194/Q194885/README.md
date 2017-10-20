@@ -6,6 +6,8 @@ permalink: /kb/194/Q194885/
 
 ## Q194885: PRB: Hiding and Showing Forms in Modal Formset Only Works Once
 
+{% raw %}
+
 	Article: Q194885
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -140,3 +142,5 @@ permalink: /kb/194/Q194885/
 	
 	=============================================================================
 	
+
+{% endraw %}

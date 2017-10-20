@@ -6,6 +6,8 @@ permalink: /kb/149/Q149141/
 
 ## Q149141: BUG: Hanging Indents Not Preserved in Developer Studio Editor
 
+{% raw %}
+
 	Article: Q149141
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -59,3 +61,5 @@ permalink: /kb/149/Q149141/
 	
 	=============================================================================
 	
+
+{% endraw %}

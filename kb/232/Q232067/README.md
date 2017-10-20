@@ -6,6 +6,8 @@ permalink: /kb/232/Q232067/
 
 ## Q232067: Content Ratings in MMC Incorrectly Interprets Dates
 
+{% raw %}
+
 	Article: Q232067
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/232/Q232067/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156618/
 
 ## Q156618: STL Sample for the count Function
 
+{% raw %}
+
 	Article: Q156618
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -157,3 +159,5 @@ permalink: /kb/156/Q156618/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/063/Q63065/
 
 ## Q63065: Flight Simulator: Aspect Ratio Equations
 
+{% raw %}
+
 	Article: Q63065
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -54,3 +56,5 @@ permalink: /kb/063/Q63065/
 	
 	=============================================================================
 	
+
+{% endraw %}

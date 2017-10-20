@@ -6,6 +6,8 @@ permalink: /kb/235/Q235177/
 
 ## Q235177: Windows NT or 2000 Clients Do Not Start Client Components
 
+{% raw %}
+
 	Article: Q235177
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -66,3 +68,5 @@ permalink: /kb/235/Q235177/
 	
 	=============================================================================
 	
+
+{% endraw %}

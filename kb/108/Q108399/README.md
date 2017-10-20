@@ -6,6 +6,8 @@ permalink: /kb/108/Q108399/
 
 ## Q108399: Art Gallery: Animation Appears To Have Already Been Played
 
+{% raw %}
+
 	Article: Q108399
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -45,3 +47,5 @@ permalink: /kb/108/Q108399/
 	
 	=============================================================================
 	
+
+{% endraw %}

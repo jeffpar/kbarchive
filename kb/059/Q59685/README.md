@@ -6,6 +6,8 @@ permalink: /kb/059/Q59685/
 
 ## Q59685: CTRL+ESC Not Working with Hotkeys in Windows 3.0
 
+{% raw %}
+
 	Article: Q59685
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -46,3 +48,5 @@ permalink: /kb/059/Q59685/
 	
 	=============================================================================
 	
+
+{% endraw %}

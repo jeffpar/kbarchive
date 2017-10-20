@@ -6,6 +6,8 @@ permalink: /kb/128/Q128232/
 
 ## Q128232: PRB: Viewer Compiler Error 1661 w/ Identical Baggage Filenames
 
+{% raw %}
+
 	Article: Q128232
 	Product(s): Miscellaneous Software Development Kits
 	Version(s): 2.0,2.0a
@@ -72,3 +74,5 @@ permalink: /kb/128/Q128232/
 	
 	=============================================================================
 	
+
+{% endraw %}

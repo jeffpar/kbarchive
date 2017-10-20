@@ -6,6 +6,8 @@ permalink: /kb/160/Q160014/
 
 ## Q160014: Stop 7F - F Fault on the Intel P6 Processor
 
+{% raw %}
+
 	Article: Q160014
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -57,3 +59,5 @@ permalink: /kb/160/Q160014/
 	
 	=============================================================================
 	
+
+{% endraw %}

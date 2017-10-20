@@ -6,6 +6,8 @@ permalink: /kb/135/Q135115/
 
 ## Q135115: PRB: VAL() Does Not Return Error When Number Is Out of Range
 
+{% raw %}
+
 	Article: Q135115
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/135/Q135115/
 	
 	=============================================================================
 	
+
+{% endraw %}

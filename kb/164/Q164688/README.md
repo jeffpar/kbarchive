@@ -6,6 +6,8 @@ permalink: /kb/164/Q164688/
 
 ## Q164688: WD97: Background Image Reference Changed Saving As HTML
 
+{% raw %}
+
 	Article: Q164688
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -85,3 +87,5 @@ permalink: /kb/164/Q164688/
 	
 	=============================================================================
 	
+
+{% endraw %}

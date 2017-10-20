@@ -6,6 +6,8 @@ permalink: /kb/154/Q154907/
 
 ## Q154907: How to Enable or Disable Quick View
 
+{% raw %}
+
 	Article: Q154907
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 4.0 95
@@ -65,3 +67,5 @@ permalink: /kb/154/Q154907/
 	
 	=============================================================================
 	
+
+{% endraw %}

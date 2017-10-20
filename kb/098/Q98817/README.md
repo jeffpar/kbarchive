@@ -6,6 +6,8 @@ permalink: /kb/098/Q98817/
 
 ## Q98817: MHS: 3.0 Gateway Disk &#91;3.5, 720K&#93;
 
+{% raw %}
+
 	Article: Q98817
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -49,3 +51,5 @@ permalink: /kb/098/Q98817/
 	
 	=============================================================================
 	
+
+{% endraw %}

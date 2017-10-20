@@ -6,6 +6,8 @@ permalink: /kb/196/Q196117/
 
 ## Q196117: Files Are Replicated Even When No Sync Appears in Status
 
+{% raw %}
+
 	Article: Q196117
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/196/Q196117/
 	
 	=============================================================================
 	
+
+{% endraw %}

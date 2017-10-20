@@ -6,6 +6,8 @@ permalink: /kb/187/Q187246/
 
 ## Q187246: XFOR: Internet Mail Service Produces Dr. Watson
 
+{% raw %}
+
 	Article: Q187246
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -72,3 +74,5 @@ permalink: /kb/187/Q187246/
 	
 	=============================================================================
 	
+
+{% endraw %}

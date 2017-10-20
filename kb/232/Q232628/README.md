@@ -6,6 +6,8 @@ permalink: /kb/232/Q232628/
 
 ## Q232628: Err Msg: The Service Profile Is Damaged. Re-install the...
 
+{% raw %}
+
 	Article: Q232628
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.51,2.52,2.6,5.0,5.4
@@ -183,3 +185,5 @@ permalink: /kb/232/Q232628/
 	
 	=============================================================================
 	
+
+{% endraw %}

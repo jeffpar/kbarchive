@@ -6,6 +6,8 @@ permalink: /kb/180/Q180918/
 
 ## Q180918: SMSINST: Guidelines for Using SMS Installer
 
+{% raw %}
+
 	Article: Q180918
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0,2.0
@@ -89,3 +91,5 @@ permalink: /kb/180/Q180918/
 	
 	=============================================================================
 	
+
+{% endraw %}

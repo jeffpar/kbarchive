@@ -6,6 +6,8 @@ permalink: /kb/253/Q253684/
 
 ## Q253684: Using the RichTextBox ActiveX Control in VFP
 
+{% raw %}
+
 	Article: Q253684
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -112,3 +114,5 @@ permalink: /kb/253/Q253684/
 	
 	=============================================================================
 	
+
+{% endraw %}

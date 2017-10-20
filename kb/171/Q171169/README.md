@@ -6,6 +6,8 @@ permalink: /kb/171/Q171169/
 
 ## Q171169: XADM: Address Book Views in Exchange Server 4.0 Servers
 
+{% raw %}
+
 	Article: Q171169
 	Product(s): Microsoft Exchange
 	Version(s): Windows:4.0,5.0
@@ -57,3 +59,5 @@ permalink: /kb/171/Q171169/
 	
 	=============================================================================
 	
+
+{% endraw %}

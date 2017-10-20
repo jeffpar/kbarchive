@@ -6,6 +6,8 @@ permalink: /kb/089/Q89903/
 
 ## Q89903: Quick Recorder Does Not Save Alternate File Extensions
 
+{% raw %}
+
 	Article: Q89903
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -36,3 +38,5 @@ permalink: /kb/089/Q89903/
 	
 	=============================================================================
 	
+
+{% endraw %}

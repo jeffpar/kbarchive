@@ -6,6 +6,8 @@ permalink: /kb/162/Q162682/
 
 ## Q162682: PRB: Visual FoxPro Form Is Inaccessible with Foundation READ
 
+{% raw %}
+
 	Article: Q162682
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,6.0
@@ -155,3 +157,5 @@ permalink: /kb/162/Q162682/
 	
 	=============================================================================
 	
+
+{% endraw %}

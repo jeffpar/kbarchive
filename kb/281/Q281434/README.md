@@ -6,6 +6,8 @@ permalink: /kb/281/Q281434/
 
 ## Q281434: How to Isolate a DLL Into a Separate Process Using MTS
 
+{% raw %}
+
 	Article: Q281434
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -129,3 +131,5 @@ permalink: /kb/281/Q281434/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/080/Q80751/
 
 ## Q80751: MS-DOS EXPAND.EXE Functionality
 
+{% raw %}
+
 	Article: Q80751
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -138,3 +140,5 @@ permalink: /kb/080/Q80751/
 	
 	=============================================================================
 	
+
+{% endraw %}

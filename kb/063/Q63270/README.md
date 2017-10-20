@@ -6,6 +6,8 @@ permalink: /kb/063/Q63270/
 
 ## Q63270: QB &amp; QBX Insert Default REM &#36;STATIC Before a SUB or FUNCTION
 
+{% raw %}
+
 	Article: Q63270
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -107,3 +109,5 @@ permalink: /kb/063/Q63270/
 	automatically inserts before the first SUB or FUNCTION can be ignored.
 	It won't affect the arrays dimensioned in the SUB or FUNCTION. You do
 	not need to compensate for it or program around it.
+
+{% endraw %}

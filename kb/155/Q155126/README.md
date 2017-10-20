@@ -6,6 +6,8 @@ permalink: /kb/155/Q155126/
 
 ## Q155126: Error Message: Unable to Connect to all of the Roots...
 
+{% raw %}
+
 	Article: Q155126
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -55,3 +57,5 @@ permalink: /kb/155/Q155126/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/142/Q142042/
 
 ## Q142042: Description of TCP/IP Node-Type Settings in Windows 95/98
 
+{% raw %}
+
 	Article: Q142042
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95
@@ -79,3 +81,5 @@ permalink: /kb/142/Q142042/
 	
 	=============================================================================
 	
+
+{% endraw %}

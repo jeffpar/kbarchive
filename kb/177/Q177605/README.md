@@ -6,6 +6,8 @@ permalink: /kb/177/Q177605/
 
 ## Q177605: MSB Dinos: Sound Distorted or Fuzzy when Ms. Frizzle Is Talking
 
+{% raw %}
+
 	Article: Q177605
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -84,3 +86,5 @@ permalink: /kb/177/Q177605/
 	
 	=============================================================================
 	
+
+{% endraw %}

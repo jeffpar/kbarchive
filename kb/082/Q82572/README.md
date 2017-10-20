@@ -6,6 +6,8 @@ permalink: /kb/082/Q82572/
 
 ## Q82572: Brief Should Be Run Full Screen or in a Full Window
 
+{% raw %}
+
 	Article: Q82572
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -48,3 +50,5 @@ permalink: /kb/082/Q82572/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/060/Q60028/
 
 ## Q60028: PRB: rename() Function May Fail Unexpectedly
 
+{% raw %}
+
 	Article: Q60028
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -123,3 +125,5 @@ permalink: /kb/060/Q60028/
 	
 	=============================================================================
 	
+
+{% endraw %}

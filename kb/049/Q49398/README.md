@@ -6,6 +6,8 @@ permalink: /kb/049/Q49398/
 
 ## Q49398: Example of Passing BASIC Two-Dimensional Integer Array to MASM
 
+{% raw %}
+
 	Article: Q49398
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -94,3 +96,5 @@ permalink: /kb/049/Q49398/
 	   21
 	   22
 	   23
+
+{% endraw %}

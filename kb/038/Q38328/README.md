@@ -6,6 +6,8 @@ permalink: /kb/038/Q38328/
 
 ## Q38328: C 5.10 Doesn't Implement Multibyte Integer Character Constants
 
+{% raw %}
+
 	Article: Q38328
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -31,3 +33,5 @@ permalink: /kb/038/Q38328/
 	implement multi-character integer character constants.  Note that
 	page 29 of the draft standard says that such constructions are
 	"implementation-defined."
+
+{% endraw %}

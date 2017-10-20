@@ -6,6 +6,8 @@ permalink: /kb/259/Q259654/
 
 ## Q259654: XCLN: Outlook 2000 Constantly Prompts Regarding Offline Rules
 
+{% raw %}
+
 	Article: Q259654
 	Product(s): Microsoft Exchange
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/259/Q259654/
 	
 	=============================================================================
 	
+
+{% endraw %}

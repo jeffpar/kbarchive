@@ -6,6 +6,8 @@ permalink: /kb/202/Q202006/
 
 ## Q202006: SMS: Delete Special Uses Many Locks
 
+{% raw %}
+
 	Article: Q202006
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -67,3 +69,5 @@ permalink: /kb/202/Q202006/
 	
 	=============================================================================
 	
+
+{% endraw %}

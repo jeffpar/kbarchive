@@ -6,6 +6,8 @@ permalink: /kb/146/Q146791/
 
 ## Q146791: XFOR: IMC Cannot Receive Message with Missing Folder
 
+{% raw %}
+
 	Article: Q146791
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -70,3 +72,5 @@ permalink: /kb/146/Q146791/
 	
 	=============================================================================
 	
+
+{% endraw %}

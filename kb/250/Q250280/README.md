@@ -6,6 +6,8 @@ permalink: /kb/250/Q250280/
 
 ## Q250280: INFO: How to Determine if IMM is Enabled on Windows 2000
 
+{% raw %}
+
 	Article: Q250280
 	Product(s): Microsoft Windows NT
 	Version(s): 2000
@@ -50,3 +52,5 @@ permalink: /kb/250/Q250280/
 	
 	=============================================================================
 	
+
+{% endraw %}

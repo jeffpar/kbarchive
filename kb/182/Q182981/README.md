@@ -6,6 +6,8 @@ permalink: /kb/182/Q182981/
 
 ## Q182981: XADM: Performance Optimizer Settings for Small Business Server
 
+{% raw %}
+
 	Article: Q182981
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,4.0a,4.5
@@ -59,3 +61,5 @@ permalink: /kb/182/Q182981/
 	
 	=============================================================================
 	
+
+{% endraw %}

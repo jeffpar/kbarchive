@@ -6,6 +6,8 @@ permalink: /kb/180/Q180113/
 
 ## Q180113: Problems Printing to German FPNW from NetWare Clients
 
+{% raw %}
+
 	Article: Q180113
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -144,3 +146,5 @@ permalink: /kb/180/Q180113/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/063/Q63008/
 
 ## Q63008: DEFINT A:DEFLNG B Before SUB Gives &quot;Cannot Precede SUB&quot; in QB
 
+{% raw %}
+
 	Article: Q63008
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -56,3 +58,5 @@ permalink: /kb/063/Q63008/
 	Note that if you load a program resembling this into the QB.EXE or
 	QBX.EXE editor, the editor will automatically put each DEFtype
 	statements on its own line and remove the colon.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/170/Q170347/
 
 ## Q170347: Oops Error Message When Attempting an FTP MGET
 
+{% raw %}
+
 	Article: Q170347
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -56,3 +58,5 @@ permalink: /kb/170/Q170347/
 	
 	=============================================================================
 	
+
+{% endraw %}

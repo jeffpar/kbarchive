@@ -6,6 +6,8 @@ permalink: /kb/115/Q115331/
 
 ## Q115331: BUG: Page Eject Before/After Doesn't Work w/ Command Window
 
+{% raw %}
+
 	Article: Q115331
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -63,3 +65,5 @@ permalink: /kb/115/Q115331/
 	
 	=============================================================================
 	
+
+{% endraw %}

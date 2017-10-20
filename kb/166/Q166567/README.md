@@ -6,6 +6,8 @@ permalink: /kb/166/Q166567/
 
 ## Q166567: XCON: How to Enable Lowest Cost Routes Only
 
+{% raw %}
+
 	Article: Q166567
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -78,3 +80,5 @@ permalink: /kb/166/Q166567/
 	
 	=============================================================================
 	
+
+{% endraw %}

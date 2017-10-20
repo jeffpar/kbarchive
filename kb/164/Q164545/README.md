@@ -6,6 +6,8 @@ permalink: /kb/164/Q164545/
 
 ## Q164545: ErrMsg: The Directory Name Is Invalid
 
+{% raw %}
+
 	Article: Q164545
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -85,3 +87,5 @@ permalink: /kb/164/Q164545/
 	
 	=============================================================================
 	
+
+{% endraw %}

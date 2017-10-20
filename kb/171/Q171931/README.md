@@ -6,6 +6,8 @@ permalink: /kb/171/Q171931/
 
 ## Q171931: Microsoft Press CD-ROM and Floppy Disk Replacement Policy
 
+{% raw %}
+
 	Article: Q171931
 	Product(s): Microsoft Press
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/171/Q171931/
 	
 	=============================================================================
 	
+
+{% endraw %}

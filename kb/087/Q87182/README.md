@@ -6,6 +6,8 @@ permalink: /kb/087/Q87182/
 
 ## Q87182: PROFS: What to Do with Files in the ERR Directory
 
+{% raw %}
+
 	Article: Q87182
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -60,3 +62,5 @@ permalink: /kb/087/Q87182/
 	
 	=============================================================================
 	
+
+{% endraw %}

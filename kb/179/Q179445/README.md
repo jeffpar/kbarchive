@@ -6,6 +6,8 @@ permalink: /kb/179/Q179445/
 
 ## Q179445: Random Access Violations in Mprouter.exe
 
+{% raw %}
+
 	Article: Q179445
 	Product(s): Microsoft Windows NT
 	Version(s): Win4.0
@@ -56,3 +58,5 @@ permalink: /kb/179/Q179445/
 	
 	=============================================================================
 	
+
+{% endraw %}

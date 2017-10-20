@@ -6,6 +6,8 @@ permalink: /kb/150/Q150504/
 
 ## Q150504: INVDOS Will Not Detect Software On Compressed Drives
 
+{% raw %}
+
 	Article: Q150504
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1
@@ -47,3 +49,5 @@ permalink: /kb/150/Q150504/
 	
 	=============================================================================
 	
+
+{% endraw %}

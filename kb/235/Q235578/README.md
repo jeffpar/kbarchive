@@ -6,6 +6,8 @@ permalink: /kb/235/Q235578/
 
 ## Q235578: You Can Now to Add Static IP Addresses to the SNA Service Table
 
+{% raw %}
+
 	Article: Q235578
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0SP1,4.0SP2
@@ -84,3 +86,5 @@ permalink: /kb/235/Q235578/
 	
 	=============================================================================
 	
+
+{% endraw %}

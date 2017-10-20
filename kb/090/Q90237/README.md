@@ -6,6 +6,8 @@ permalink: /kb/090/Q90237/
 
 ## Q90237: After Dark AD-DOS Can Cause Suspended Print Jobs
 
+{% raw %}
+
 	Article: Q90237
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -65,3 +67,5 @@ permalink: /kb/090/Q90237/
 	
 	=============================================================================
 	
+
+{% endraw %}

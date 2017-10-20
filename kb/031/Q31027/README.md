@@ -6,6 +6,8 @@ permalink: /kb/031/Q31027/
 
 ## Q31027: Windows 3.0 Video Setup for Compaq Deskpro 286
 
+{% raw %}
+
 	Article: Q31027
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:1.x,2.x,3.0,3.0a
@@ -42,3 +44,5 @@ permalink: /kb/031/Q31027/
 	
 	=============================================================================
 	
+
+{% endraw %}

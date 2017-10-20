@@ -6,6 +6,8 @@ permalink: /kb/249/Q249797/
 
 ## Q249797: XCLN: Client Folder View Doesn't Display Bcc Address Properties
 
+{% raw %}
+
 	Article: Q249797
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -50,3 +52,5 @@ permalink: /kb/249/Q249797/
 	
 	=============================================================================
 	
+
+{% endraw %}

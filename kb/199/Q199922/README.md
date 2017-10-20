@@ -6,6 +6,8 @@ permalink: /kb/199/Q199922/
 
 ## Q199922: SMS: Disabling Remote Control Security Munger on NT Clients
 
+{% raw %}
+
 	Article: Q199922
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -82,3 +84,5 @@ permalink: /kb/199/Q199922/
 	
 	=============================================================================
 	
+
+{% endraw %}

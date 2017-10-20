@@ -6,6 +6,8 @@ permalink: /kb/041/Q41671/
 
 ## Q41671: QuickC 2.00 README.DOC: Warning Message C4407
 
+{% raw %}
+
 	Article: Q41671
 	Product(s): See article
 	Version(s): 2.00
@@ -21,3 +23,5 @@ permalink: /kb/041/Q41671/
 	
 	Warning C4407 (operand size conflict) has been changed from level 1 to
 	level 2.
+
+{% endraw %}

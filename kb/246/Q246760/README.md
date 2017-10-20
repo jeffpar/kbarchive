@@ -6,6 +6,8 @@ permalink: /kb/246/Q246760/
 
 ## Q246760: Connection to Internet Sporadic Using Cable Modem
 
+{% raw %}
+
 	Article: Q246760
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:2.0,4.0
@@ -53,3 +55,5 @@ permalink: /kb/246/Q246760/
 	
 	=============================================================================
 	
+
+{% endraw %}

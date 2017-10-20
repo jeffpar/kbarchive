@@ -6,6 +6,8 @@ permalink: /kb/119/Q119597/
 
 ## Q119597: Incorrect Top Margin with Citizen Dot-Matrix Printers
 
+{% raw %}
+
 	Article: Q119597
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): Win2000:95
@@ -65,3 +67,5 @@ permalink: /kb/119/Q119597/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83771/
 
 ## Q83771: Missing .WPD File Causes Incorrect Tray and Size
 
+{% raw %}
+
 	Article: Q83771
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -55,3 +57,5 @@ permalink: /kb/083/Q83771/
 	
 	=============================================================================
 	
+
+{% endraw %}

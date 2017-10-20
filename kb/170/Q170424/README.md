@@ -6,6 +6,8 @@ permalink: /kb/170/Q170424/
 
 ## Q170424: Enhancements to DLSSTAT for 802.2 Distributed Links
 
+{% raw %}
+
 	Article: Q170424
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 SP1,2.11 SP2,3.0,3.0 SP1
@@ -92,3 +94,5 @@ permalink: /kb/170/Q170424/
 	
 	=============================================================================
 	
+
+{% endraw %}

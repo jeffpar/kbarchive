@@ -6,6 +6,8 @@ permalink: /kb/299/Q299690/
 
 ## Q299690: Train Simulator: Known Video Issues
 
+{% raw %}
+
 	Article: Q299690
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -448,3 +450,5 @@ permalink: /kb/299/Q299690/
 	
 	=============================================================================
 	
+
+{% endraw %}

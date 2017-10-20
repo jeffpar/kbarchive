@@ -6,6 +6,8 @@ permalink: /kb/128/Q128514/
 
 ## Q128514: How to Place Fields an Equal Distance Apart on a Form
 
+{% raw %}
+
 	Article: Q128514
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -53,3 +55,5 @@ permalink: /kb/128/Q128514/
 	
 	=============================================================================
 	
+
+{% endraw %}

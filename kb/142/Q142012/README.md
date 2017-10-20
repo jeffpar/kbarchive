@@ -6,6 +6,8 @@ permalink: /kb/142/Q142012/
 
 ## Q142012: Error Starting Smtpsrv in NT 3.51 Resource Kit
 
+{% raw %}
+
 	Article: Q142012
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -79,3 +81,5 @@ permalink: /kb/142/Q142012/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/065/Q65306/
 
 ## Q65306: toupper() Gives C4135 Warning
 
+{% raw %}
+
 	Article: Q65306
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -28,3 +30,5 @@ permalink: /kb/065/Q65306/
 	the standard:
 	
 	   int toupper (int)
+
+{% endraw %}

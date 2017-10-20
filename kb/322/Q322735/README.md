@@ -6,6 +6,8 @@ permalink: /kb/322/Q322735/
 
 ## Q322735: Issues with CRON When You Upgrade Interix 2.2 to SFU 3.0
 
+{% raw %}
+
 	Article: Q322735
 	Product(s): Microsoft Windows NT
 	Version(s): 2.2.1,2.2.2,2.2.3,2.2.4,2.2.4.03,2.2.4.08,2.2.5,3.0
@@ -81,3 +83,5 @@ permalink: /kb/322/Q322735/
 	
 	=============================================================================
 	
+
+{% endraw %}

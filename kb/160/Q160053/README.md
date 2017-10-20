@@ -6,6 +6,8 @@ permalink: /kb/160/Q160053/
 
 ## Q160053: XCLN: Mobile Users of Exchange on Win3.1 Using One Configuration
 
+{% raw %}
+
 	Article: Q160053
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -214,3 +216,5 @@ permalink: /kb/160/Q160053/
 	
 	=============================================================================
 	
+
+{% endraw %}

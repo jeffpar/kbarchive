@@ -6,6 +6,8 @@ permalink: /kb/237/Q237195/
 
 ## Q237195: WD97: Cannot Find/Replace Text with Paragraph Format in Table
 
+{% raw %}
+
 	Article: Q237195
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -65,3 +67,5 @@ permalink: /kb/237/Q237195/
 	
 	=============================================================================
 	
+
+{% endraw %}

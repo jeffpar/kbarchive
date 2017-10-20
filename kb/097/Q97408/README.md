@@ -6,6 +6,8 @@ permalink: /kb/097/Q97408/
 
 ## Q97408: DDEEXEC Demonstrates DDE Execute Strings
 
+{% raw %}
+
 	Article: Q97408
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -90,3 +92,5 @@ permalink: /kb/097/Q97408/
 	
 	=============================================================================
 	
+
+{% endraw %}

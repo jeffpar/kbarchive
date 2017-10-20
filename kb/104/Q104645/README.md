@@ -6,6 +6,8 @@ permalink: /kb/104/Q104645/
 
 ## Q104645: INFO: Passing a long from C to MASM by Value &amp; Returning a long
 
+{% raw %}
+
 	Article: Q104645
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,2.0,4.0,5.0,6.0
@@ -140,3 +142,5 @@ permalink: /kb/104/Q104645/
 	
 	=============================================================================
 	
+
+{% endraw %}

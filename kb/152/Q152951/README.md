@@ -6,6 +6,8 @@ permalink: /kb/152/Q152951/
 
 ## Q152951: XCON: MTA Heap Corruption With Misconfigured TP4/TCP Connection
 
+{% raw %}
+
 	Article: Q152951
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/152/Q152951/
 	
 	=============================================================================
 	
+
+{% endraw %}

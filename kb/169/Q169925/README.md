@@ -6,6 +6,8 @@ permalink: /kb/169/Q169925/
 
 ## Q169925: Cannot Delete, Rename, or Move 386spart.par File
 
+{% raw %}
+
 	Article: Q169925
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -142,3 +144,5 @@ permalink: /kb/169/Q169925/
 	
 	=============================================================================
 	
+
+{% endraw %}

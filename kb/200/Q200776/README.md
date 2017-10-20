@@ -6,6 +6,8 @@ permalink: /kb/200/Q200776/
 
 ## Q200776: OS/2 DHCP Clients Fail to Get Name Resolution or Communicate
 
+{% raw %}
+
 	Article: Q200776
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -55,3 +57,5 @@ permalink: /kb/200/Q200776/
 	
 	=============================================================================
 	
+
+{% endraw %}

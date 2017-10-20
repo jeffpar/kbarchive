@@ -6,6 +6,8 @@ permalink: /kb/151/Q151992/
 
 ## Q151992: XADM: Simultaneous Move User Operations Freeze
 
+{% raw %}
+
 	Article: Q151992
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0
@@ -75,3 +77,5 @@ permalink: /kb/151/Q151992/
 	
 	=============================================================================
 	
+
+{% endraw %}

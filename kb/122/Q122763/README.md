@@ -6,6 +6,8 @@ permalink: /kb/122/Q122763/
 
 ## Q122763: PC Win: Structure of the Address Book
 
+{% raw %}
+
 	Article: Q122763
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -66,3 +68,5 @@ permalink: /kb/122/Q122763/
 	
 	=============================================================================
 	
+
+{% endraw %}

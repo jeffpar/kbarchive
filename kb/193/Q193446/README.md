@@ -6,6 +6,8 @@ permalink: /kb/193/Q193446/
 
 ## Q193446: Virtual Globe: Administrator Rights Needed on NT-Based Computer
 
+{% raw %}
+
 	Article: Q193446
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -65,3 +67,5 @@ permalink: /kb/193/Q193446/
 	
 	=============================================================================
 	
+
+{% endraw %}

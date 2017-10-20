@@ -6,6 +6,8 @@ permalink: /kb/237/Q237791/
 
 ## Q237791: Unable to View Some Network Shared Folders
 
+{% raw %}
+
 	Article: Q237791
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:2000
@@ -71,3 +73,5 @@ permalink: /kb/237/Q237791/
 	
 	=============================================================================
 	
+
+{% endraw %}

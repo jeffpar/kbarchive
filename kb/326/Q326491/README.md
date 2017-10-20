@@ -6,6 +6,8 @@ permalink: /kb/326/Q326491/
 
 ## Q326491: Microsoft Windows XP Power ToolKit Comments and Corrections
 
+{% raw %}
+
 	Article: Q326491
 	Product(s): Microsoft Press
 	Version(s): 
@@ -50,3 +52,5 @@ permalink: /kb/326/Q326491/
 	
 	=============================================================================
 	
+
+{% endraw %}

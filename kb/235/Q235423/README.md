@@ -6,6 +6,8 @@ permalink: /kb/235/Q235423/
 
 ## Q235423: Cannot Open Config File if CPI-C Symbolic Name Has Invalid LU
 
+{% raw %}
+
 	Article: Q235423
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0SP1,3.0SP2,3.0SP3,3.0SP4,4.0,4.0SP1,4.0SP2
@@ -91,3 +93,5 @@ permalink: /kb/235/Q235423/
 	
 	=============================================================================
 	
+
+{% endraw %}

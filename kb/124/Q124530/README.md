@@ -6,6 +6,8 @@ permalink: /kb/124/Q124530/
 
 ## Q124530: INFO: Visual SourceSafe Project Oriented Version Control
 
+{% raw %}
+
 	Article: Q124530
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -95,3 +97,5 @@ permalink: /kb/124/Q124530/
 	
 	=============================================================================
 	
+
+{% endraw %}

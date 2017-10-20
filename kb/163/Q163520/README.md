@@ -6,6 +6,8 @@ permalink: /kb/163/Q163520/
 
 ## Q163520: Real-Mode Windows 95 Error Connecting to Windows NT
 
+{% raw %}
+
 	Article: Q163520
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:3.5 3.51 4.0
@@ -72,3 +74,5 @@ permalink: /kb/163/Q163520/
 	
 	=============================================================================
 	
+
+{% endraw %}

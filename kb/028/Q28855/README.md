@@ -6,6 +6,8 @@ permalink: /kb/028/Q28855/
 
 ## Q28855: CINT and Integer Assignments Round x.5 to Nearest Even Integer
 
+{% raw %}
+
 	Article: Q28855
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -99,3 +101,5 @@ permalink: /kb/028/Q28855/
 	CINT (1.5) =           2        |         2
 	CINT (2.0) =           2        |         2
 	CINT (2.5) =           2        |         3
+
+{% endraw %}

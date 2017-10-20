@@ -6,6 +6,8 @@ permalink: /kb/033/Q33137/
 
 ## Q33137: Linker Module-Definition Files for MS OS/2 or Windows
 
+{% raw %}
+
 	Article: Q33137
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -32,3 +34,5 @@ permalink: /kb/033/Q33137/
 	search for a separate article with the following words:
 	
 	   Windows and SDK and BASIC and compiler
+
+{% endraw %}

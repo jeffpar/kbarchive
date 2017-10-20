@@ -6,6 +6,8 @@ permalink: /kb/177/Q177375/
 
 ## Q177375: XFOR: Exchange SP1 Embedded Messages Appear as Raw MIME
 
+{% raw %}
+
 	Article: Q177375
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -111,3 +113,5 @@ permalink: /kb/177/Q177375/
 	
 	=============================================================================
 	
+
+{% endraw %}

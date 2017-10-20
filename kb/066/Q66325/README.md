@@ -6,6 +6,8 @@ permalink: /kb/066/Q66325/
 
 ## Q66325: Windows Productivity Pack README.DOC
 
+{% raw %}
+
 	Article: Q66325
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -167,3 +169,5 @@ permalink: /kb/066/Q66325/
 	
 	=============================================================================
 	
+
+{% endraw %}

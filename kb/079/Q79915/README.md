@@ -6,6 +6,8 @@ permalink: /kb/079/Q79915/
 
 ## Q79915: TriPeaks Shows No Icon When Minimized
 
+{% raw %}
+
 	Article: Q79915
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -48,3 +50,5 @@ permalink: /kb/079/Q79915/
 	
 	=============================================================================
 	
+
+{% endraw %}

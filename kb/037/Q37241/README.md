@@ -6,6 +6,8 @@ permalink: /kb/037/Q37241/
 
 ## Q37241: Older Versions of FDISK Do Not Remove Non-DOS Partitions
 
+{% raw %}
+
 	Article: Q37241
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:2.x,3.x,4.x,5.0,6.0,6.2,6.21,6.22
@@ -63,3 +65,5 @@ permalink: /kb/037/Q37241/
 	
 	=============================================================================
 	
+
+{% endraw %}

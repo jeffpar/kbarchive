@@ -6,6 +6,8 @@ permalink: /kb/226/Q226477/
 
 ## Q226477: LineGatherDigits May Cause Memory Leak in Tapisrv.exe
 
+{% raw %}
+
 	Article: Q226477
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/226/Q226477/
 	
 	=============================================================================
 	
+
+{% endraw %}

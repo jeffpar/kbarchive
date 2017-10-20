@@ -6,6 +6,8 @@ permalink: /kb/047/Q47748/
 
 ## Q47748: &quot;File Does Not Exist&quot; Error in OS/2 DOS Box with Existing File
 
+{% raw %}
+
 	Article: Q47748
 	Product(s): See article
 	Version(s): 1.01 2.00 2.01
@@ -35,3 +37,5 @@ permalink: /kb/047/Q47748/
 	actually being used by another application. Saving the file in Word
 	releases Word's hold on the file, since it then becomes a part of the
 	letter.
+
+{% endraw %}

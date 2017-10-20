@@ -6,6 +6,8 @@ permalink: /kb/264/Q264286/
 
 ## Q264286: PC DirSync: Exch. Postoffice Not in MS Mail Global Address List
 
+{% raw %}
+
 	Article: Q264286
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:3.2,3.2a,3.5; winnt:5.5,5.5 SP1,5.5 SP2,5.5 SP3
@@ -94,3 +96,5 @@ permalink: /kb/264/Q264286/
 	
 	=============================================================================
 	
+
+{% endraw %}

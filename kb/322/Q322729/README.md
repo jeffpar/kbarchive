@@ -6,6 +6,8 @@ permalink: /kb/322/Q322729/
 
 ## Q322729: XADM: -1018 and -1022 Errors on Dell PowerEdge Servers
 
+{% raw %}
+
 	Article: Q322729
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -86,3 +88,5 @@ permalink: /kb/322/Q322729/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/046/Q46738/
 
 ## Q46738: Mixed-Model Programming and long int Helper Library Routines
 
+{% raw %}
+
 	Article: Q46738
 	Product(s): See article
 	Version(s): 5.10
@@ -104,3 +106,5 @@ permalink: /kb/046/Q46738/
 	appropriate routines even if you're in a memory model that wouldn't
 	normally use them (in this case, you wouldn't normally generate a call
 	to __aNFalshl in small model).
+
+{% endraw %}

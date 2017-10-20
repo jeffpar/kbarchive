@@ -6,6 +6,8 @@ permalink: /kb/178/Q178760/
 
 ## Q178760: HOWTO: Alter the Properties of a View at Run Time
 
+{% raw %}
+
 	Article: Q178760
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -151,3 +153,5 @@ permalink: /kb/178/Q178760/
 	
 	=============================================================================
 	
+
+{% endraw %}

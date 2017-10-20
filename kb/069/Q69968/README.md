@@ -6,6 +6,8 @@ permalink: /kb/069/Q69968/
 
 ## Q69968: Automating Network Pointing Devices via SETUP.INF
 
+{% raw %}
+
 	Article: Q69968
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -102,3 +104,5 @@ permalink: /kb/069/Q69968/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/059/Q59254/
 
 ## Q59254: NMAKE 1.01 Does Not Properly Expand Wildcard Arguments
 
+{% raw %}
+
 	Article: Q59254
 	Product(s): See article
 	Version(s): 1.01   | 1.01
@@ -31,3 +33,5 @@ permalink: /kb/059/Q59254/
 	b.exe; it would merely build only the first target in the list.
 	
 	NMAKE versions 1.00 and 1.10 do not exhibit this behavior.
+
+{% endraw %}

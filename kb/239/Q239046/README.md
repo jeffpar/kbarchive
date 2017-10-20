@@ -6,6 +6,8 @@ permalink: /kb/239/Q239046/
 
 ## Q239046: Error Connecting to &lt;Server&gt;, Unexpected Error 0x800740002 ...
 
+{% raw %}
+
 	Article: Q239046
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -69,3 +71,5 @@ permalink: /kb/239/Q239046/
 	
 	=============================================================================
 	
+
+{% endraw %}

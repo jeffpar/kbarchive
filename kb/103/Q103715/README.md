@@ -6,6 +6,8 @@ permalink: /kb/103/Q103715/
 
 ## Q103715: FIX: Caret Moves from Memory Window When Modifications Made
 
+{% raw %}
+
 	Article: Q103715
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -73,3 +75,5 @@ permalink: /kb/103/Q103715/
 	
 	=============================================================================
 	
+
+{% endraw %}

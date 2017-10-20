@@ -6,6 +6,8 @@ permalink: /kb/192/Q192443/
 
 ## Q192443: PRB: Error 438 Using TabOrder Sample Add-in
 
+{% raw %}
+
 	Article: Q192443
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -158,3 +160,5 @@ permalink: /kb/192/Q192443/
 	
 	=============================================================================
 	
+
+{% endraw %}

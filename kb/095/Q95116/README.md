@@ -6,6 +6,8 @@ permalink: /kb/095/Q95116/
 
 ## Q95116: WFWG: System Hangs with Novell NetWare and Token Ring
 
+{% raw %}
+
 	Article: Q95116
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -93,3 +95,5 @@ permalink: /kb/095/Q95116/
 	
 	=============================================================================
 	
+
+{% endraw %}

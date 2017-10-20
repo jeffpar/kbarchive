@@ -6,6 +6,8 @@ permalink: /kb/174/Q174037/
 
 ## Q174037: XFOR: OLE Objects Larger Than 1 MB Not Migrated into Exchange
 
+{% raw %}
+
 	Article: Q174037
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -59,3 +61,5 @@ permalink: /kb/174/Q174037/
 	
 	=============================================================================
 	
+
+{% endraw %}

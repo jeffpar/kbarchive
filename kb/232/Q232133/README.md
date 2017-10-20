@@ -6,6 +6,8 @@ permalink: /kb/232/Q232133/
 
 ## Q232133: STOP 0x1E or STOP 0xA with More Than 200 Ports in RRAS
 
+{% raw %}
+
 	Article: Q232133
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4
@@ -82,3 +84,5 @@ permalink: /kb/232/Q232133/
 	
 	=============================================================================
 	
+
+{% endraw %}

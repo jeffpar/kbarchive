@@ -6,6 +6,8 @@ permalink: /kb/235/Q235253/
 
 ## Q235253: MOD2000: Configure Files &amp; Projects for VBE/VSS Integration
 
+{% raw %}
+
 	Article: Q235253
 	Product(s): Microsoft SourceSafe
 	Version(s): ; WINDOWS:6.0
@@ -166,3 +168,5 @@ permalink: /kb/235/Q235253/
 	
 	=============================================================================
 	
+
+{% endraw %}

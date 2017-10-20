@@ -6,6 +6,8 @@ permalink: /kb/161/Q161334/
 
 ## Q161334: Guide To Windows NT 4.0 Profiles and Policies (Part 1 of 6)
 
+{% raw %}
+
 	Article: Q161334
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 4.0
@@ -659,3 +661,5 @@ permalink: /kb/161/Q161334/
 	
 	=============================================================================
 	
+
+{% endraw %}

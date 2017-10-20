@@ -6,6 +6,8 @@ permalink: /kb/022/Q22343/
 
 ## Q22343: PRB: Does Not Support Logical Operations on FORTRAN Strings
 
+{% raw %}
+
 	Article: Q22343
 	Product(s): Microsoft Programming Utilities
 	Version(s): 2.2,3.0,3.11,3.12,3.14,3.5
@@ -45,3 +47,5 @@ permalink: /kb/022/Q22343/
 	
 	=============================================================================
 	
+
+{% endraw %}

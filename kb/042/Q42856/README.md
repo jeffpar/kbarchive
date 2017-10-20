@@ -6,6 +6,8 @@ permalink: /kb/042/Q42856/
 
 ## Q42856: BC.EXE &quot;Line Too long&quot; with ASCII 128 and Fast Load Format
 
+{% raw %}
+
 	Article: Q42856
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -59,3 +61,5 @@ permalink: /kb/042/Q42856/
 	   END
 	
 	Additional reference word: B_BasicCom
+
+{% endraw %}

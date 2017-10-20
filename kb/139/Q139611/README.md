@@ -6,6 +6,8 @@ permalink: /kb/139/Q139611/
 
 ## Q139611: Using Network Client Administrator Files From Hard drive
 
+{% raw %}
+
 	Article: Q139611
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0,3.11,3.11a,3.11b,3.5,3.51
@@ -54,3 +56,5 @@ permalink: /kb/139/Q139611/
 	
 	=============================================================================
 	
+
+{% endraw %}

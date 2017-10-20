@@ -6,6 +6,8 @@ permalink: /kb/136/Q136985/
 
 ## Q136985: Bookshelf 95(32-Bit): Anthem Doesn't Play, Causes Error Msg.
 
+{% raw %}
+
 	Article: Q136985
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/136/Q136985/
 	
 	=============================================================================
 	
+
+{% endraw %}

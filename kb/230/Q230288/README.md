@@ -6,6 +6,8 @@ permalink: /kb/230/Q230288/
 
 ## Q230288: XFOR: NDR from IMS Has Incorrect 3-Byte Reason Code
 
+{% raw %}
+
 	Article: Q230288
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -76,3 +78,5 @@ permalink: /kb/230/Q230288/
 	
 	=============================================================================
 	
+
+{% endraw %}

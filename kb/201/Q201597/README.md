@@ -6,6 +6,8 @@ permalink: /kb/201/Q201597/
 
 ## Q201597: PRB: PrivateProfile Problems, in 4.0b Macintosh Cross-Compiler
 
+{% raw %}
+
 	Article: Q201597
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:4.0,4.0b; winnt:4.0,4.0a,4.1
@@ -107,3 +109,5 @@ permalink: /kb/201/Q201597/
 	
 	=============================================================================
 	
+
+{% endraw %}

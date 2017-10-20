@@ -6,6 +6,8 @@ permalink: /kb/194/Q194298/
 
 ## Q194298: INFO: Changes in MFC Between Visual C++ 5.0 and 6.0
 
+{% raw %}
+
 	Article: Q194298
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -474,3 +476,5 @@ permalink: /kb/194/Q194298/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/181/Q181036/
 
 ## Q181036: INFO: Suitable Applications for Exchange Server Event Scripting
 
+{% raw %}
+
 	Article: Q181036
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -87,3 +89,5 @@ permalink: /kb/181/Q181036/
 	
 	=============================================================================
 	
+
+{% endraw %}

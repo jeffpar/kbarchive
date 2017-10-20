@@ -6,6 +6,8 @@ permalink: /kb/244/Q244185/
 
 ## Q244185: PRB: Cannot Use FileCopy() to Copy a File to a Printer
 
+{% raw %}
+
 	Article: Q244185
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -97,3 +99,5 @@ permalink: /kb/244/Q244185/
 	
 	=============================================================================
 	
+
+{% endraw %}

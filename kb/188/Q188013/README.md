@@ -6,6 +6,8 @@ permalink: /kb/188/Q188013/
 
 ## Q188013: XFOR: Application Error With Multipart/Alternative Message
 
+{% raw %}
+
 	Article: Q188013
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -62,3 +64,5 @@ permalink: /kb/188/Q188013/
 	
 	=============================================================================
 	
+
+{% endraw %}

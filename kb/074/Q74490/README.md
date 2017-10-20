@@ -6,6 +6,8 @@ permalink: /kb/074/Q74490/
 
 ## Q74490: PRB: Application Not Recognized as Compatible with Windows 3.x
 
+{% raw %}
+
 	Article: Q74490
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -83,3 +85,5 @@ permalink: /kb/074/Q74490/
 	
 	=============================================================================
 	
+
+{% endraw %}

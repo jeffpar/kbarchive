@@ -6,6 +6,8 @@ permalink: /kb/289/Q289897/
 
 ## Q289897: XADM: Mailbox Manager System Cleanup Folder Is Absent on Client
 
+{% raw %}
+
 	Article: Q289897
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.5,5.5 SP3
@@ -46,3 +48,5 @@ permalink: /kb/289/Q289897/
 	
 	=============================================================================
 	
+
+{% endraw %}

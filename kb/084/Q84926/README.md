@@ -6,6 +6,8 @@ permalink: /kb/084/Q84926/
 
 ## Q84926: PRB: Loading Metafile Causes &quot;Cannot Convert Picture&quot; Error
 
+{% raw %}
+
 	Article: Q84926
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -70,3 +72,5 @@ permalink: /kb/084/Q84926/
 	
 	=============================================================================
 	
+
+{% endraw %}

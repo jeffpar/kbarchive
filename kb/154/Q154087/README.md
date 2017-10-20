@@ -6,6 +6,8 @@ permalink: /kb/154/Q154087/
 
 ## Q154087: Access Violation in Lsass.exe Due to Incorrect Buffer Size
 
+{% raw %}
+
 	Article: Q154087
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP3
@@ -91,3 +93,5 @@ permalink: /kb/154/Q154087/
 	
 	=============================================================================
 	
+
+{% endraw %}

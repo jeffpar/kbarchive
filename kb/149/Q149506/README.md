@@ -6,6 +6,8 @@ permalink: /kb/149/Q149506/
 
 ## Q149506: BUG: /4fps1 and /Ox Compiler Options with Complex Calculations
 
+{% raw %}
+
 	Article: Q149506
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -81,3 +83,5 @@ permalink: /kb/149/Q149506/
 	
 	=============================================================================
 	
+
+{% endraw %}

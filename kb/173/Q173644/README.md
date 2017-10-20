@@ -6,6 +6,8 @@ permalink: /kb/173/Q173644/
 
 ## Q173644: Err Msg: Error 645 Received When Connecting to MSN
 
+{% raw %}
+
 	Article: Q173644
 	Product(s): The Microsoft Network
 	Version(s): 2.5,2.6,5.0,5.1,5.2,5.3
@@ -120,3 +122,5 @@ permalink: /kb/173/Q173644/
 	
 	=============================================================================
 	
+
+{% endraw %}

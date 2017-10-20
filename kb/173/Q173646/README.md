@@ -6,6 +6,8 @@ permalink: /kb/173/Q173646/
 
 ## Q173646: HOWTO: Use a Custom Jet Profile to Alter Data Access Behavior
 
+{% raw %}
+
 	Article: Q173646
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0,7.0,97
@@ -297,3 +299,5 @@ permalink: /kb/173/Q173646/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/135/Q135131/
 
 ## Q135131: Cannot Minimize PowerPoint 4.0 Viewer
 
+{% raw %}
+
 	Article: Q135131
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -52,3 +54,5 @@ permalink: /kb/135/Q135131/
 	
 	=============================================================================
 	
+
+{% endraw %}

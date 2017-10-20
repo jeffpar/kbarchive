@@ -6,6 +6,8 @@ permalink: /kb/195/Q195518/
 
 ## Q195518: FS98 Err Msg: Fltsim98 Caused an Invalid Page Fault in Main.dll
 
+{% raw %}
+
 	Article: Q195518
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -104,3 +106,5 @@ permalink: /kb/195/Q195518/
 	
 	=============================================================================
 	
+
+{% endraw %}

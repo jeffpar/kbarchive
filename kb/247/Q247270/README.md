@@ -6,6 +6,8 @@ permalink: /kb/247/Q247270/
 
 ## Q247270: Recycle Bin Displays Incorrect Size for Disks Larger Than 4GB
 
+{% raw %}
+
 	Article: Q247270
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/247/Q247270/
 	
 	=============================================================================
 	
+
+{% endraw %}

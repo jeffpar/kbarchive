@@ -6,6 +6,8 @@ permalink: /kb/088/Q88514/
 
 ## Q88514: Swing Stalls When Sounds Play in Golf
 
+{% raw %}
+
 	Article: Q88514
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -36,3 +38,5 @@ permalink: /kb/088/Q88514/
 	
 	=============================================================================
 	
+
+{% endraw %}

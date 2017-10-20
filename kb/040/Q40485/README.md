@@ -6,6 +6,8 @@ permalink: /kb/040/Q40485/
 
 ## Q40485: Error L2025: Symbol Defined More than Once
 
+{% raw %}
+
 	Article: Q40485
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -90,3 +92,5 @@ permalink: /kb/040/Q40485/
 	information, query on the following words in this KnowledgeBase:
 	
 	   L2029 unresolved externals
+
+{% endraw %}

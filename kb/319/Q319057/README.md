@@ -6,6 +6,8 @@ permalink: /kb/319/Q319057/
 
 ## Q319057: How To Subscribe To A Favorite Web Page Using Macintosh Internet
 
+{% raw %}
+
 	Article: Q319057
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -117,3 +119,5 @@ permalink: /kb/319/Q319057/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/073/Q73450/
 
 ## Q73450: SETVER.EXE Immunized with Central Point Anti-Virus Causes Hang
 
+{% raw %}
+
 	Article: Q73450
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -54,3 +56,5 @@ permalink: /kb/073/Q73450/
 	
 	=============================================================================
 	
+
+{% endraw %}

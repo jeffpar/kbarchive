@@ -6,6 +6,8 @@ permalink: /kb/148/Q148340/
 
 ## Q148340: Bookshelf 95: Minimum System Requirements
 
+{% raw %}
+
 	Article: Q148340
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/148/Q148340/
 	
 	=============================================================================
 	
+
+{% endraw %}

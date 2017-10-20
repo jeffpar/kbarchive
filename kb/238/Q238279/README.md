@@ -6,6 +6,8 @@ permalink: /kb/238/Q238279/
 
 ## Q238279: PRB: Refresh Method Causes Syntax and Method Refresh Errors
 
+{% raw %}
+
 	Article: Q238279
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1,2.1 (GA),2.1 SP1,2.1 SP2,2.5,2.6,6.0
@@ -118,3 +120,5 @@ permalink: /kb/238/Q238279/
 	
 	=============================================================================
 	
+
+{% endraw %}

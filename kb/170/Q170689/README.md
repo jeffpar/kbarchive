@@ -6,6 +6,8 @@ permalink: /kb/170/Q170689/
 
 ## Q170689: Help Author Kit Incompatible With Microsoft Word 97
 
+{% raw %}
+
 	Article: Q170689
 	Product(s): Microsoft Press
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/170/Q170689/
 	
 	=============================================================================
 	
+
+{% endraw %}

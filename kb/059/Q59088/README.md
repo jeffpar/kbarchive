@@ -6,6 +6,8 @@ permalink: /kb/059/Q59088/
 
 ## Q59088: _setactivepage() and _setvisualpage() May Corrupt Display
 
+{% raw %}
+
 	Article: Q59088
 	Product(s): See article
 	Version(s): 2.00
@@ -66,3 +68,5 @@ permalink: /kb/059/Q59088/
 	   blocks.
 	
 	6. Toggle F4 to restore the source window and refresh the screen.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158645/
 
 ## Q158645: SMS: Memory Reported Incorrectly When Using DOS4GW
 
+{% raw %}
+
 	Article: Q158645
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -44,3 +46,5 @@ permalink: /kb/158/Q158645/
 	
 	=============================================================================
 	
+
+{% endraw %}

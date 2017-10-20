@@ -6,6 +6,8 @@ permalink: /kb/161/Q161936/
 
 ## Q161936: XCON: Wrong Mapping of Msg Priority Between MSMAIL and Exchange
 
+{% raw %}
+
 	Article: Q161936
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/161/Q161936/
 	
 	=============================================================================
 	
+
+{% endraw %}

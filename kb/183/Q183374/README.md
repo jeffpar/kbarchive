@@ -6,6 +6,8 @@ permalink: /kb/183/Q183374/
 
 ## Q183374: Visual InterDev Evaluation Edition Will Expire On 5/31/98
 
+{% raw %}
+
 	Article: Q183374
 	Product(s): Microsoft Press
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/183/Q183374/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156714/
 
 ## Q156714: XFOR: Dir-Sync Requestor Updates Not Being Updated Properly
 
+{% raw %}
+
 	Article: Q156714
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -66,3 +68,5 @@ permalink: /kb/156/Q156714/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129647/
 
 ## Q129647: Using ROLLBACK and END TRANSACTION in Nested Transactions
 
+{% raw %}
+
 	Article: Q129647
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -126,3 +128,5 @@ permalink: /kb/129/Q129647/
 	
 	=============================================================================
 	
+
+{% endraw %}

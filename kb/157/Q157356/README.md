@@ -6,6 +6,8 @@ permalink: /kb/157/Q157356/
 
 ## Q157356: WD97: Online Layout View Does Not Show Negative Indent
 
+{% raw %}
+
 	Article: Q157356
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -61,3 +63,5 @@ permalink: /kb/157/Q157356/
 	
 	=============================================================================
 	
+
+{% endraw %}

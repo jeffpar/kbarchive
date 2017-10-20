@@ -6,6 +6,8 @@ permalink: /kb/171/Q171835/
 
 ## Q171835: FIX: Crash When Viewing Data Tips on ParamArray
 
+{% raw %}
+
 	Article: Q171835
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -123,3 +125,5 @@ permalink: /kb/171/Q171835/
 	
 	=============================================================================
 	
+
+{% endraw %}

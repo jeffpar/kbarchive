@@ -6,6 +6,8 @@ permalink: /kb/096/Q96669/
 
 ## Q96669: How to Re-Create a Default FAST.INI for Font Assistant
 
+{% raw %}
+
 	Article: Q96669
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/096/Q96669/
 	
 	=============================================================================
 	
+
+{% endraw %}

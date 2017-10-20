@@ -6,6 +6,8 @@ permalink: /kb/124/Q124381/
 
 ## Q124381: WIN.INI Not Found by SETLS from DOS on LAN Manager Clients
 
+{% raw %}
+
 	Article: Q124381
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -70,3 +72,5 @@ permalink: /kb/124/Q124381/
 	
 	=============================================================================
 	
+
+{% endraw %}

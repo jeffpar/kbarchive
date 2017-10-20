@@ -6,6 +6,8 @@ permalink: /kb/179/Q179917/
 
 ## Q179917: Save and Save As Options Dimmed on File Menu of 5250 Applet
 
+{% raw %}
+
 	Article: Q179917
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0,4.0 SP1
@@ -52,3 +54,5 @@ permalink: /kb/179/Q179917/
 	
 	=============================================================================
 	
+
+{% endraw %}

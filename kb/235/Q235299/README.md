@@ -6,6 +6,8 @@ permalink: /kb/235/Q235299/
 
 ## Q235299: BUG: Parameterized Queries that Are Not Prepared Fail to Execute
 
+{% raw %}
+
 	Article: Q235299
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0 SP2
@@ -64,3 +66,5 @@ permalink: /kb/235/Q235299/
 	
 	=============================================================================
 	
+
+{% endraw %}

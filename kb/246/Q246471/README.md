@@ -6,6 +6,8 @@ permalink: /kb/246/Q246471/
 
 ## Q246471: XFOR: GWise Proxy Macro on Exchange Server CD Doesn't Work w/ 5x
 
+{% raw %}
+
 	Article: Q246471
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -65,3 +67,5 @@ permalink: /kb/246/Q246471/
 	
 	=============================================================================
 	
+
+{% endraw %}

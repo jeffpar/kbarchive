@@ -6,6 +6,8 @@ permalink: /kb/154/Q154703/
 
 ## Q154703: XFOR: IMC Ignores RAS Prefix and Suffix
 
+{% raw %}
+
 	Article: Q154703
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/154/Q154703/
 	
 	=============================================================================
 	
+
+{% endraw %}

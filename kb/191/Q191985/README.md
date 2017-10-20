@@ -6,6 +6,8 @@ permalink: /kb/191/Q191985/
 
 ## Q191985: How to Configure DNS for Terminal Server Browsing
 
+{% raw %}
+
 	Article: Q191985
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -103,3 +105,5 @@ permalink: /kb/191/Q191985/
 	
 	=============================================================================
 	
+
+{% endraw %}

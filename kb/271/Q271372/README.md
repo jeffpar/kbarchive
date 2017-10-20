@@ -6,6 +6,8 @@ permalink: /kb/271/Q271372/
 
 ## Q271372: XCLN: Rules to Move Messages to Public Folders Are Client-Only
 
+{% raw %}
+
 	Article: Q271372
 	Product(s): Microsoft Exchange
 	Version(s): 9.0
@@ -114,3 +116,5 @@ permalink: /kb/271/Q271372/
 	
 	=============================================================================
 	
+
+{% endraw %}

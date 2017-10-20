@@ -6,6 +6,8 @@ permalink: /kb/071/Q71410/
 
 ## Q71410: Mac Hyp: Setting Automatic Addition of Names to Address Book
 
+{% raw %}
+
 	Article: Q71410
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0
@@ -49,3 +51,5 @@ permalink: /kb/071/Q71410/
 	
 	=============================================================================
 	
+
+{% endraw %}

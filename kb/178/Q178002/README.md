@@ -6,6 +6,8 @@ permalink: /kb/178/Q178002/
 
 ## Q178002: How to Report Unsolicited E-mail Messages to MSN Member Services
 
+{% raw %}
+
 	Article: Q178002
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,2.51,2.52,2.6,5.0
@@ -53,3 +55,5 @@ permalink: /kb/178/Q178002/
 	
 	=============================================================================
 	
+
+{% endraw %}

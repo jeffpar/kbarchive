@@ -6,6 +6,8 @@ permalink: /kb/241/Q241241/
 
 ## Q241241: INF: Using DTS With Custom ATL OLE-DB Providers
 
+{% raw %}
+
 	Article: Q241241
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0,7.0
@@ -160,3 +162,5 @@ permalink: /kb/241/Q241241/
 	
 	=============================================================================
 	
+
+{% endraw %}

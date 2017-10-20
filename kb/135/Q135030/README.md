@@ -6,6 +6,8 @@ permalink: /kb/135/Q135030/
 
 ## Q135030: X400: How to Create a LoopBack Message
 
+{% raw %}
+
 	Article: Q135030
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0,3.2
@@ -118,3 +120,5 @@ permalink: /kb/135/Q135030/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/203/Q203745/
 
 ## Q203745: DHCP Reconcile Does Not Recover Reservations Outside Scopes
 
+{% raw %}
+
 	Article: Q203745
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/203/Q203745/
 	
 	=============================================================================
 	
+
+{% endraw %}

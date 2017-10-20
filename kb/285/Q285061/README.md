@@ -6,6 +6,8 @@ permalink: /kb/285/Q285061/
 
 ## Q285061: Flight Simulator 2000: How to Configure CH Products Yoke/Pedals
 
+{% raw %}
+
 	Article: Q285061
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -228,3 +230,5 @@ permalink: /kb/285/Q285061/
 	
 	=============================================================================
 	
+
+{% endraw %}

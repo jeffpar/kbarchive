@@ -6,6 +6,8 @@ permalink: /kb/066/Q66081/
 
 ## Q66081: Using the OptiStar WORM Drive Software with Windows 3.0
 
+{% raw %}
+
 	Article: Q66081
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -45,3 +47,5 @@ permalink: /kb/066/Q66081/
 	
 	=============================================================================
 	
+
+{% endraw %}

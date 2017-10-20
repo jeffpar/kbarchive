@@ -6,6 +6,8 @@ permalink: /kb/149/Q149273/
 
 ## Q149273: BUG: Form Key Events Fire Twice with Some Controls
 
+{% raw %}
+
 	Article: Q149273
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/149/Q149273/
 	
 	=============================================================================
 	
+
+{% endraw %}

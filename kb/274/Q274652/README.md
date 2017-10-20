@@ -6,6 +6,8 @@ permalink: /kb/274/Q274652/
 
 ## Q274652: MGS: Game Commands Do Not Function as Expected
 
+{% raw %}
+
 	Article: Q274652
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -52,3 +54,5 @@ permalink: /kb/274/Q274652/
 	
 	=============================================================================
 	
+
+{% endraw %}

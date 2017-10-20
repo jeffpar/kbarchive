@@ -6,6 +6,8 @@ permalink: /kb/252/Q252756/
 
 ## Q252756: PRB: Changing DataGrid Layout Causes DataGrid to Display Empty
 
+{% raw %}
+
 	Article: Q252756
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1 SP2,2.5,2.6,6.0
@@ -81,3 +83,5 @@ permalink: /kb/252/Q252756/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/069/Q69065/
 
 ## Q69065: Sequential Mode Not Available in CodeView Version 3.00
 
+{% raw %}
+
 	Article: Q69065
 	Product(s): See article
 	Version(s): 3.00 3.01 3.11  | 3.00 3.01 3.11
@@ -52,3 +54,5 @@ permalink: /kb/069/Q69065/
 	In the example above, output is redirected to the file OUTFILE.TXT.
 	This command is helpful in keeping a permanent record of a CodeView
 	session.
+
+{% endraw %}

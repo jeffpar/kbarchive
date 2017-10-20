@@ -6,6 +6,8 @@ permalink: /kb/189/Q189326/
 
 ## Q189326: XADM: Verifying Basic IMAP Connectivity Using Telnet
 
+{% raw %}
+
 	Article: Q189326
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -102,3 +104,5 @@ permalink: /kb/189/Q189326/
 	
 	=============================================================================
 	
+
+{% endraw %}

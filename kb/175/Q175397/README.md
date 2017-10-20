@@ -6,6 +6,8 @@ permalink: /kb/175/Q175397/
 
 ## Q175397: Shared Folders Gateway Should Check If Path Uses Long Filenames
 
+{% raw %}
+
 	Article: Q175397
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2
@@ -131,3 +133,5 @@ permalink: /kb/175/Q175397/
 	
 	=============================================================================
 	
+
+{% endraw %}

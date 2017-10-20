@@ -6,6 +6,8 @@ permalink: /kb/047/Q47257/
 
 ## Q47257: FltSim: Using the Weather Generator
 
+{% raw %}
+
 	Article: Q47257
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -42,3 +44,5 @@ permalink: /kb/047/Q47257/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/235/Q235811/
 
 ## Q235811: Using the SMS Windows NT Client Software Installation Account
 
+{% raw %}
+
 	Article: Q235811
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -99,3 +101,5 @@ permalink: /kb/235/Q235811/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/208/Q208237/
 
 ## Q208237: Troubleshooting Event ID 5711 Recorded on the PDC
 
+{% raw %}
+
 	Article: Q208237
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -156,3 +158,5 @@ permalink: /kb/208/Q208237/
 	
 	=============================================================================
 	
+
+{% endraw %}

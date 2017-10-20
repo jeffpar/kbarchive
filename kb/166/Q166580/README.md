@@ -6,6 +6,8 @@ permalink: /kb/166/Q166580/
 
 ## Q166580: XFOR: MIME and UUENCODED Messages Cause Store Conversion Error
 
+{% raw %}
+
 	Article: Q166580
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -60,3 +62,5 @@ permalink: /kb/166/Q166580/
 	
 	=============================================================================
 	
+
+{% endraw %}

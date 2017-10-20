@@ -6,6 +6,8 @@ permalink: /kb/171/Q171139/
 
 ## Q171139: Err. Msg.: Line 41 Object Not Support this Property or Method
 
+{% raw %}
+
 	Article: Q171139
 	Product(s): Internet Information Server
 	Version(s): winnt:1.0,3.0
@@ -63,3 +65,5 @@ permalink: /kb/171/Q171139/
 	
 	=============================================================================
 	
+
+{% endraw %}

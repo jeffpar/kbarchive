@@ -6,6 +6,8 @@ permalink: /kb/058/Q58816/
 
 ## Q58816: BASIC PDS 7.10 Does Not Support ILINK.EXE Incremental Linker
 
+{% raw %}
+
 	Article: Q58816
 	Product(s): See article
 	Version(s): 7.00 7.10 | 7.00 7.10
@@ -38,3 +40,5 @@ permalink: /kb/058/Q58816/
 	ILINK.EXE is shipped with and supported by Microsoft C Version 5.10,
 	QuickC Versions 2.00 and 2.01, and Microsoft Macro Assembler Version
 	5.10.
+
+{% endraw %}

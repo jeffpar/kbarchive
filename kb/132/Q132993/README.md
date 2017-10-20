@@ -6,6 +6,8 @@ permalink: /kb/132/Q132993/
 
 ## Q132993: Windows 95 File System Questions and Answers
 
+{% raw %}
+
 	Article: Q132993
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -147,3 +149,5 @@ permalink: /kb/132/Q132993/
 	
 	=============================================================================
 	
+
+{% endraw %}

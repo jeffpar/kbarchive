@@ -6,6 +6,8 @@ permalink: /kb/122/Q122714/
 
 ## Q122714: ADT: Data Outline Control Events Not Triggered
 
+{% raw %}
+
 	Article: Q122714
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): WINDOWS:2.0,7.0
@@ -91,3 +93,5 @@ permalink: /kb/122/Q122714/
 	
 	=============================================================================
 	
+
+{% endraw %}

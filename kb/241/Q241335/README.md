@@ -6,6 +6,8 @@ permalink: /kb/241/Q241335/
 
 ## Q241335: FtpBrowseShowLongDate Only Operates at Master Property Level
 
+{% raw %}
+
 	Article: Q241335
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -84,3 +86,5 @@ permalink: /kb/241/Q241335/
 	
 	=============================================================================
 	
+
+{% endraw %}

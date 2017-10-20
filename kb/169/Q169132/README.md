@@ -6,6 +6,8 @@ permalink: /kb/169/Q169132/
 
 ## Q169132: Print Server Application Exception in S3POHPOP
 
+{% raw %}
+
 	Article: Q169132
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1
@@ -127,3 +129,5 @@ permalink: /kb/169/Q169132/
 	
 	=============================================================================
 	
+
+{% endraw %}

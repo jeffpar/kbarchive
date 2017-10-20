@@ -6,6 +6,8 @@ permalink: /kb/050/Q50943/
 
 ## Q50943: Using CALL INTERRUPT to Get Current SCREEN Video Mode
 
+{% raw %}
+
 	Article: Q50943
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -66,3 +68,5 @@ permalink: /kb/050/Q50943/
 	as follows:
 	
 	   QBX SCRMODE /L
+
+{% endraw %}

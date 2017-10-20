@@ -6,6 +6,8 @@ permalink: /kb/289/Q289120/
 
 ## Q289120: XCLN: Exchange Server Performance Problems Caused by Clients
 
+{% raw %}
+
 	Article: Q289120
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -104,3 +106,5 @@ permalink: /kb/289/Q289120/
 	
 	=============================================================================
 	
+
+{% endraw %}

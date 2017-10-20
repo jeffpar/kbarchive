@@ -6,6 +6,8 @@ permalink: /kb/116/Q116357/
 
 ## Q116357: Windows 95 Err Msg: Access Pack Error. Could Not Initialize...
 
+{% raw %}
+
 	Article: Q116357
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/116/Q116357/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/312/Q312148/
 
 ## Q312148: POSIX Utilities Do Not Work If Source Path Folders Contain Space
 
+{% raw %}
+
 	Article: Q312148
 	Product(s): Microsoft Press
 	Version(s): 
@@ -59,3 +61,5 @@ permalink: /kb/312/Q312148/
 	
 	=============================================================================
 	
+
+{% endraw %}

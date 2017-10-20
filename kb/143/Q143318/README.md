@@ -6,6 +6,8 @@ permalink: /kb/143/Q143318/
 
 ## Q143318: Unconf: Haunted House and RAM Doubler Issues
 
+{% raw %}
+
 	Article: Q143318
 	Product(s): Microsoft Home Games
 	Version(s): MACINTOSH:1.0
@@ -72,3 +74,5 @@ permalink: /kb/143/Q143318/
 	
 	=============================================================================
 	
+
+{% endraw %}

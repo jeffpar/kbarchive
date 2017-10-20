@@ -6,6 +6,8 @@ permalink: /kb/218/Q218187/
 
 ## Q218187: XADM: Error 8004010f-0501-8004010f When Moving Mailbox
 
+{% raw %}
+
 	Article: Q218187
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5,5.5 SP1,5.5 SP2
@@ -82,3 +84,5 @@ permalink: /kb/218/Q218187/
 	
 	=============================================================================
 	
+
+{% endraw %}

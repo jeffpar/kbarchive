@@ -6,6 +6,8 @@ permalink: /kb/150/Q150145/
 
 ## Q150145: PRB: FOR3852 Error in Consecutive Arithmetic Operations
 
+{% raw %}
+
 	Article: Q150145
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/150/Q150145/
 	
 	=============================================================================
 	
+
+{% endraw %}

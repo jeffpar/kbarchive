@@ -6,6 +6,8 @@ permalink: /kb/175/Q175964/
 
 ## Q175964: XCON: MTA Stops Processing Messages and Generates Event ID 210
 
+{% raw %}
+
 	Article: Q175964
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0
@@ -72,3 +74,5 @@ permalink: /kb/175/Q175964/
 	
 	=============================================================================
 	
+
+{% endraw %}

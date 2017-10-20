@@ -6,6 +6,8 @@ permalink: /kb/216/Q216803/
 
 ## Q216803: IIS Hidden Static Files Return HTTP 404 or Access Denied Errors
 
+{% raw %}
+
 	Article: Q216803
 	Product(s): Internet Information Server
 	Version(s): winnt:3.0,4.0,5.0
@@ -56,3 +58,5 @@ permalink: /kb/216/Q216803/
 	
 	=============================================================================
 	
+
+{% endraw %}

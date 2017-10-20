@@ -6,6 +6,8 @@ permalink: /kb/136/Q136150/
 
 ## Q136150: Srv Event 2000 with Status Code C000023A
 
+{% raw %}
+
 	Article: Q136150
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -101,3 +103,5 @@ permalink: /kb/136/Q136150/
 	
 	=============================================================================
 	
+
+{% endraw %}

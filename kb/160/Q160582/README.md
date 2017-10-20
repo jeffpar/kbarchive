@@ -6,6 +6,8 @@ permalink: /kb/160/Q160582/
 
 ## Q160582: Too Many Connected Users Err. Msg. When Use SSL and IE 3.0
 
+{% raw %}
+
 	Article: Q160582
 	Product(s): Internet Information Server
 	Version(s): Winnt:1.0,2.0
@@ -77,3 +79,5 @@ permalink: /kb/160/Q160582/
 	
 	=============================================================================
 	
+
+{% endraw %}

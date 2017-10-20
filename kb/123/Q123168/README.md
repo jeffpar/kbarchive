@@ -6,6 +6,8 @@ permalink: /kb/123/Q123168/
 
 ## Q123168: RAS Error 652 with US-Robotics 14400 Sportster
 
+{% raw %}
+
 	Article: Q123168
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -60,3 +62,5 @@ permalink: /kb/123/Q123168/
 	
 	=============================================================================
 	
+
+{% endraw %}

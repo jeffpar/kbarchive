@@ -6,6 +6,8 @@ permalink: /kb/152/Q152685/
 
 ## Q152685: XCLN: Signing and Sealing Messages When Offline
 
+{% raw %}
+
 	Article: Q152685
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -44,3 +46,5 @@ permalink: /kb/152/Q152685/
 	
 	=============================================================================
 	
+
+{% endraw %}

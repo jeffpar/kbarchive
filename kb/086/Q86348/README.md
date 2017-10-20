@@ -6,6 +6,8 @@ permalink: /kb/086/Q86348/
 
 ## Q86348: Hyundai 386/D CAPS LOCK May Not Work in Windows
 
+{% raw %}
+
 	Article: Q86348
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/086/Q86348/
 	
 	=============================================================================
 	
+
+{% endraw %}

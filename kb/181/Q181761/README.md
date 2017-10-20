@@ -6,6 +6,8 @@ permalink: /kb/181/Q181761/
 
 ## Q181761: SMS: Cannot Specify an Inventory Scan Interval for SKIPINV
 
+{% raw %}
+
 	Article: Q181761
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.1,1.2
@@ -75,3 +77,5 @@ permalink: /kb/181/Q181761/
 	
 	=============================================================================
 	
+
+{% endraw %}

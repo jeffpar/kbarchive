@@ -6,6 +6,8 @@ permalink: /kb/214/Q214493/
 
 ## Q214493: FIX: Project Differences Report for Identical Files
 
+{% raw %}
+
 	Article: Q214493
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:6.0
@@ -150,3 +152,5 @@ permalink: /kb/214/Q214493/
 	
 	=============================================================================
 	
+
+{% endraw %}

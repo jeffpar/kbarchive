@@ -6,6 +6,8 @@ permalink: /kb/179/Q179308/
 
 ## Q179308: XADM: How To Verify Exchange Online Backups
 
+{% raw %}
+
 	Article: Q179308
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -62,3 +64,5 @@ permalink: /kb/179/Q179308/
 	
 	=============================================================================
 	
+
+{% endraw %}

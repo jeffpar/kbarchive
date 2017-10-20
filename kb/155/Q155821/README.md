@@ -6,6 +6,8 @@ permalink: /kb/155/Q155821/
 
 ## Q155821: BUG: &quot;Feature Not Available&quot; Printing to File with GX Printer
 
+{% raw %}
+
 	Article: Q155821
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b
@@ -85,3 +87,5 @@ permalink: /kb/155/Q155821/
 	
 	=============================================================================
 	
+
+{% endraw %}

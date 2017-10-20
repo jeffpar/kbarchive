@@ -6,6 +6,8 @@ permalink: /kb/140/Q140949/
 
 ## Q140949: XCLN: Faxing ASCII Messages Fails Due to Corrupted Phone #
 
+{% raw %}
+
 	Article: Q140949
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/140/Q140949/
 	
 	=============================================================================
 	
+
+{% endraw %}

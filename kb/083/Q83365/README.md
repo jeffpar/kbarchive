@@ -6,6 +6,8 @@ permalink: /kb/083/Q83365/
 
 ## Q83365: PvtDlg.exe Demonstrates Using Private Dialog-Box Class
 
+{% raw %}
+
 	Article: Q83365
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.0,3.1
@@ -74,3 +76,5 @@ permalink: /kb/083/Q83365/
 	
 	=============================================================================
 	
+
+{% endraw %}

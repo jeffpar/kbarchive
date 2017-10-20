@@ -6,6 +6,8 @@ permalink: /kb/115/Q115353/
 
 ## Q115353: X400: Setting Include Special Attachment Removes WINMAIL.DAT
 
+{% raw %}
+
 	Article: Q115353
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -36,3 +38,5 @@ permalink: /kb/115/Q115353/
 	
 	=============================================================================
 	
+
+{% endraw %}

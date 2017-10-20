@@ -6,6 +6,8 @@ permalink: /kb/319/Q319167/
 
 ## Q319167: SMS: Custom Hardware Inventory .mif Files Are Placed in Badmifs
 
+{% raw %}
+
 	Article: Q319167
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -93,3 +95,5 @@ permalink: /kb/319/Q319167/
 	
 	=============================================================================
 	
+
+{% endraw %}

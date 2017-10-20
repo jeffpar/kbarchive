@@ -6,6 +6,8 @@ permalink: /kb/128/Q128148/
 
 ## Q128148: PRB: Procedure Entry Point FDIV Not Located in MSVCRT20.DLL
 
+{% raw %}
+
 	Article: Q128148
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:2.1
@@ -71,3 +73,5 @@ permalink: /kb/128/Q128148/
 	
 	=============================================================================
 	
+
+{% endraw %}

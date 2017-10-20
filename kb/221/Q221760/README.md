@@ -6,6 +6,8 @@ permalink: /kb/221/Q221760/
 
 ## Q221760: XCLN: Error Message Attempting to Sign or Encrypt an E-Mail Mess
 
+{% raw %}
+
 	Article: Q221760
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -58,3 +60,5 @@ permalink: /kb/221/Q221760/
 	
 	=============================================================================
 	
+
+{% endraw %}

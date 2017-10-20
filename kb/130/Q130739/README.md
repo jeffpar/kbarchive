@@ -6,6 +6,8 @@ permalink: /kb/130/Q130739/
 
 ## Q130739: Print Jobs From Pagemaker for Macintosh Fail
 
+{% raw %}
+
 	Article: Q130739
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -71,3 +73,5 @@ permalink: /kb/130/Q130739/
 	
 	=============================================================================
 	
+
+{% endraw %}

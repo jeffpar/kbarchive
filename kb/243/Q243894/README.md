@@ -6,6 +6,8 @@ permalink: /kb/243/Q243894/
 
 ## Q243894: XFOR: Exchange Server 4.0, 5.0, 5.5 Do Not Support 8-Bit Mime
 
+{% raw %}
+
 	Article: Q243894
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -46,3 +48,5 @@ permalink: /kb/243/Q243894/
 	
 	=============================================================================
 	
+
+{% endraw %}

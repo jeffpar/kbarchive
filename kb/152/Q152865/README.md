@@ -6,6 +6,8 @@ permalink: /kb/152/Q152865/
 
 ## Q152865: XCLN: Last Update Time Not Saved Using Remote Mail
 
+{% raw %}
+
 	Article: Q152865
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -52,3 +54,5 @@ permalink: /kb/152/Q152865/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/161/Q161001/
 
 ## Q161001: WD97: Document Macro Shortcut Key Assignments Won't Print
 
+{% raw %}
+
 	Article: Q161001
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -146,3 +148,5 @@ permalink: /kb/161/Q161001/
 	
 	=============================================================================
 	
+
+{% endraw %}

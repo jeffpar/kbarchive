@@ -6,6 +6,8 @@ permalink: /kb/112/Q112039/
 
 ## Q112039: X400: How the Gateway Handles Non X.400 To/Cc Addresses
 
+{% raw %}
+
 	Article: Q112039
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0,3.2
@@ -44,3 +46,5 @@ permalink: /kb/112/Q112039/
 	
 	=============================================================================
 	
+
+{% endraw %}

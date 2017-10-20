@@ -6,6 +6,8 @@ permalink: /kb/216/Q216831/
 
 ## Q216831: How to Read and Analyze a Client Certificate
 
+{% raw %}
+
 	Article: Q216831
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -165,3 +167,5 @@ permalink: /kb/216/Q216831/
 	
 	=============================================================================
 	
+
+{% endraw %}

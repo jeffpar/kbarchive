@@ -6,6 +6,8 @@ permalink: /kb/176/Q176634/
 
 ## Q176634: BUG:Line/Circle Methods Don't Print as Transparent onWin95/98/Me
 
+{% raw %}
+
 	Article: Q176634
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.0,5.0,6.0
@@ -113,3 +115,5 @@ permalink: /kb/176/Q176634/
 	
 	=============================================================================
 	
+
+{% endraw %}

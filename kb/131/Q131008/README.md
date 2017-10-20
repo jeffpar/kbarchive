@@ -6,6 +6,8 @@ permalink: /kb/131/Q131008/
 
 ## Q131008: How to Use Logevent.exe to Log Events From a Batch File
 
+{% raw %}
+
 	Article: Q131008
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0
@@ -177,3 +179,5 @@ permalink: /kb/131/Q131008/
 	
 	=============================================================================
 	
+
+{% endraw %}

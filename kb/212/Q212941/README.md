@@ -6,6 +6,8 @@ permalink: /kb/212/Q212941/
 
 ## Q212941: SMS: How to Perform a Search and Replace by Using SMS Installer
 
+{% raw %}
+
 	Article: Q212941
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -111,3 +113,5 @@ permalink: /kb/212/Q212941/
 	
 	=============================================================================
 	
+
+{% endraw %}

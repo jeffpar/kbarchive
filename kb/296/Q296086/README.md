@@ -6,6 +6,8 @@ permalink: /kb/296/Q296086/
 
 ## Q296086: XCON: Error Message: The Service Did Not Respond to the Start...
 
+{% raw %}
+
 	Article: Q296086
 	Product(s): Internet Information Server
 	Version(s): 3.0,3.5,4.0
@@ -92,3 +94,5 @@ permalink: /kb/296/Q296086/
 	
 	=============================================================================
 	
+
+{% endraw %}

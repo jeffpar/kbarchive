@@ -6,6 +6,8 @@ permalink: /kb/258/Q258769/
 
 ## Q258769: XCLN: Outlook 2000 Err. Mssg.: &quot;Error While Archiving Folder...&quot;
 
+{% raw %}
+
 	Article: Q258769
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000
@@ -80,3 +82,5 @@ permalink: /kb/258/Q258769/
 	
 	=============================================================================
 	
+
+{% endraw %}

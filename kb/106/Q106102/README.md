@@ -6,6 +6,8 @@ permalink: /kb/106/Q106102/
 
 ## Q106102: Environment Vars in Logon Scripts on a Non-Windows NT Client
 
+{% raw %}
+
 	Article: Q106102
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -80,3 +82,5 @@ permalink: /kb/106/Q106102/
 	
 	=============================================================================
 	
+
+{% endraw %}

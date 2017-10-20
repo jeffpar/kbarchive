@@ -6,6 +6,8 @@ permalink: /kb/124/Q124866/
 
 ## Q124866: Ultimate Frank Lloyd Wright: Manual Installation Instructions
 
+{% raw %}
+
 	Article: Q124866
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -86,3 +88,5 @@ permalink: /kb/124/Q124866/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/163/Q163264/
 
 ## Q163264: APPC Password Substitution Fails Intermittently
 
+{% raw %}
+
 	Article: Q163264
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11,2.11 SP1
@@ -67,3 +69,5 @@ permalink: /kb/163/Q163264/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/012/Q12012/
 
 ## Q12012: Getting to the Mouse from a Real-Mode C Program
 
+{% raw %}
+
 	Article: Q12012
 	Product(s): See article
 	Version(s): 3.00 4.00 5.00 6.00 6.00a
@@ -72,3 +74,5 @@ permalink: /kb/012/Q12012/
 	           }
 	       }
 	}
+
+{% endraw %}

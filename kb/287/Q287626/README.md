@@ -6,6 +6,8 @@ permalink: /kb/287/Q287626/
 
 ## Q287626: License Metering Client Tries to Log On to Server Multiple Times
 
+{% raw %}
+
 	Article: Q287626
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -150,3 +152,5 @@ permalink: /kb/287/Q287626/
 	
 	=============================================================================
 	
+
+{% endraw %}

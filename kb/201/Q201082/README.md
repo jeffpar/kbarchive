@@ -6,6 +6,8 @@ permalink: /kb/201/Q201082/
 
 ## Q201082: FIX: No Warning When Control Path Doesn't Return a Value
 
+{% raw %}
+
 	Article: Q201082
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -64,3 +66,5 @@ permalink: /kb/201/Q201082/
 	
 	=============================================================================
 	
+
+{% endraw %}

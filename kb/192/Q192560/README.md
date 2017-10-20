@@ -6,6 +6,8 @@ permalink: /kb/192/Q192560/
 
 ## Q192560: HOWTO: Add ATL Control Containment Support to Any Window
 
+{% raw %}
+
 	Article: Q192560
 	Product(s): Microsoft C Compiler
 	Version(s): 3.0,6.0
@@ -107,3 +109,5 @@ permalink: /kb/192/Q192560/
 	
 	=============================================================================
 	
+
+{% endraw %}

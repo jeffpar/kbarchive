@@ -6,6 +6,8 @@ permalink: /kb/172/Q172213/
 
 ## Q172213: MS SQL Server Training Corrections and Comments
 
+{% raw %}
+
 	Article: Q172213
 	Product(s): Microsoft Press
 	Version(s): 
@@ -175,3 +177,5 @@ permalink: /kb/172/Q172213/
 	
 	=============================================================================
 	
+
+{% endraw %}

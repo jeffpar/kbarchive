@@ -6,6 +6,8 @@ permalink: /kb/257/Q257182/
 
 ## Q257182: SMS: Remote Tools Window Displays Incorrect Port Number
 
+{% raw %}
+
 	Article: Q257182
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0 SP2
@@ -64,3 +66,5 @@ permalink: /kb/257/Q257182/
 	
 	=============================================================================
 	
+
+{% endraw %}

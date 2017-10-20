@@ -6,6 +6,8 @@ permalink: /kb/195/Q195486/
 
 ## Q195486: WD97: Changing One Caption Label Changes All Matching Captions
 
+{% raw %}
+
 	Article: Q195486
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -82,3 +84,5 @@ permalink: /kb/195/Q195486/
 	
 	=============================================================================
 	
+
+{% endraw %}

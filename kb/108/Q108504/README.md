@@ -6,6 +6,8 @@ permalink: /kb/108/Q108504/
 
 ## Q108504: SFM: Some Files Get Wrong Icon in Finder
 
+{% raw %}
+
 	Article: Q108504
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -57,3 +59,5 @@ permalink: /kb/108/Q108504/
 	
 	=============================================================================
 	
+
+{% endraw %}

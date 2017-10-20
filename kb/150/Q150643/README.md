@@ -6,6 +6,8 @@ permalink: /kb/150/Q150643/
 
 ## Q150643: PRB: Setting Wrong System Date Causes Lost Project History
 
+{% raw %}
+
 	Article: Q150643
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0,6.0
@@ -93,3 +95,5 @@ permalink: /kb/150/Q150643/
 	
 	=============================================================================
 	
+
+{% endraw %}

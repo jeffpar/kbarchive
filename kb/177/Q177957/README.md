@@ -6,6 +6,8 @@ permalink: /kb/177/Q177957/
 
 ## Q177957: XFOR: Messages with Non-ANSI Characters Arrive with Garbage
 
+{% raw %}
+
 	Article: Q177957
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -63,3 +65,5 @@ permalink: /kb/177/Q177957/
 	
 	=============================================================================
 	
+
+{% endraw %}

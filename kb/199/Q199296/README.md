@@ -6,6 +6,8 @@ permalink: /kb/199/Q199296/
 
 ## Q199296: XCLN: Outlook 97 Error: &quot;Failed to Perform Client Side Action&quot;
 
+{% raw %}
+
 	Article: Q199296
 	Product(s): Microsoft Exchange
 	Version(s): 8.0,8.01,8.02,8.03
@@ -62,3 +64,5 @@ permalink: /kb/199/Q199296/
 	
 	=============================================================================
 	
+
+{% endraw %}

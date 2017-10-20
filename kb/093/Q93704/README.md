@@ -6,6 +6,8 @@ permalink: /kb/093/Q93704/
 
 ## Q93704: Xircom Adapter Unable to Connect in Enhanced Mode
 
+{% raw %}
+
 	Article: Q93704
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -60,3 +62,5 @@ permalink: /kb/093/Q93704/
 	
 	=============================================================================
 	
+
+{% endraw %}

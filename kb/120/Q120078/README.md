@@ -6,6 +6,8 @@ permalink: /kb/120/Q120078/
 
 ## Q120078: Cannot Connect to WGPO with Full-Access Password
 
+{% raw %}
+
 	Article: Q120078
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.11
@@ -63,3 +65,5 @@ permalink: /kb/120/Q120078/
 	
 	=============================================================================
 	
+
+{% endraw %}

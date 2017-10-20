@@ -6,6 +6,8 @@ permalink: /kb/278/Q278205/
 
 ## Q278205: SMS: Keyboard Problems with IntelliPoint Mouse Driver 3.1 or 3.2
 
+{% raw %}
+
 	Article: Q278205
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0 SP2
@@ -69,3 +71,5 @@ permalink: /kb/278/Q278205/
 	
 	=============================================================================
 	
+
+{% endraw %}

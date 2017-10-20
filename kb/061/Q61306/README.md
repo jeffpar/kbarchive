@@ -6,6 +6,8 @@ permalink: /kb/061/Q61306/
 
 ## Q61306: PRB: Browse Options Unavailable Under Strange Circumstances
 
+{% raw %}
+
 	Article: Q61306
 	Product(s): Microsoft Programming Utilities
 	Version(s): MS-DOS:1.0,1.1; OS/2:1.0,1.1
@@ -77,3 +79,5 @@ permalink: /kb/061/Q61306/
 	
 	=============================================================================
 	
+
+{% endraw %}

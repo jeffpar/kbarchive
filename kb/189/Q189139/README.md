@@ -6,6 +6,8 @@ permalink: /kb/189/Q189139/
 
 ## Q189139: INFO: x86 DEMO7 Sample and Configuration Information
 
+{% raw %}
+
 	Article: Q189139
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:
@@ -356,3 +358,5 @@ permalink: /kb/189/Q189139/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/064/Q64819/
 
 ## Q64819: Windows Can't Install on NCR 486-25 with Internal Cache
 
+{% raw %}
+
 	Article: Q64819
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -49,3 +51,5 @@ permalink: /kb/064/Q64819/
 	
 	=============================================================================
 	
+
+{% endraw %}

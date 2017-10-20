@@ -6,6 +6,8 @@ permalink: /kb/068/Q68562/
 
 ## Q68562: .MODEL Directive Forces DOSSEG Segment Ordering in MASM
 
+{% raw %}
+
 	Article: Q68562
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.0,5.1,5.1a,6.0,6.0a,6.0b,6.11
@@ -94,3 +96,5 @@ permalink: /kb/068/Q68562/
 	
 	=============================================================================
 	
+
+{% endraw %}

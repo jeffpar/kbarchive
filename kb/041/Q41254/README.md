@@ -6,6 +6,8 @@ permalink: /kb/041/Q41254/
 
 ## Q41254: Error in &quot;C For Yourself,&quot; Page 294
 
+{% raw %}
+
 	Article: Q41254
 	Product(s): See article
 	Version(s): 2.00
@@ -25,3 +27,5 @@ permalink: /kb/041/Q41254/
 	The line should appear as follows:
 	
 	   while ( c != 'Q' )
+
+{% endraw %}

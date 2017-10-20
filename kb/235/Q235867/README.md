@@ -6,6 +6,8 @@ permalink: /kb/235/Q235867/
 
 ## Q235867: XFOR: GroupWise Meeting Request Causes Notes Connector to Stop
 
+{% raw %}
+
 	Article: Q235867
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP2
@@ -56,3 +58,5 @@ permalink: /kb/235/Q235867/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/031/Q31045/
 
 ## Q31045: 123.MNU Worked on Floppy But Not on Hard Drive
 
+{% raw %}
+
 	Article: Q31045
 	Product(s): See article
 	Version(s): 1.00
@@ -20,3 +22,5 @@ permalink: /kb/031/Q31045/
 	
 	Change the interrupt setting to 2 on the bus card to resolve this
 	problem.
+
+{% endraw %}

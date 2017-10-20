@@ -6,6 +6,8 @@ permalink: /kb/226/Q226865/
 
 ## Q226865: SMS: Ping Tool Button Is Not Available in Remote Control Session
 
+{% raw %}
+
 	Article: Q226865
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -58,3 +60,5 @@ permalink: /kb/226/Q226865/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120064/
 
 ## Q120064: BUG: Error A2005 Generated Due to Conflict with Global Label
 
+{% raw %}
+
 	Article: Q120064
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.1,6.11
@@ -81,3 +83,5 @@ permalink: /kb/120/Q120064/
 	
 	=============================================================================
 	
+
+{% endraw %}

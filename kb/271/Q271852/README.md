@@ -6,6 +6,8 @@ permalink: /kb/271/Q271852/
 
 ## Q271852: BUG: MS Oracle ODBC Driver Truncates Spaces in Column Name
 
+{% raw %}
+
 	Article: Q271852
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): 2.5,2.6,2.7,Build 2.573.2927,Build 2.573.3513,Build 2.573.3711,Build 2.573.4202,Build
@@ -102,3 +104,5 @@ permalink: /kb/271/Q271852/
 	
 	=============================================================================
 	
+
+{% endraw %}

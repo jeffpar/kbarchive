@@ -6,6 +6,8 @@ permalink: /kb/232/Q232177/
 
 ## Q232177: Assigning an Existing Server Certificate to a Web Site
 
+{% raw %}
+
 	Article: Q232177
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -70,3 +72,5 @@ permalink: /kb/232/Q232177/
 	
 	=============================================================================
 	
+
+{% endraw %}

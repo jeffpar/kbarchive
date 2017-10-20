@@ -6,6 +6,8 @@ permalink: /kb/108/Q108733/
 
 ## Q108733: X400: Setting Up the Gateway as a EiconCard Server
 
+{% raw %}
+
 	Article: Q108733
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -89,3 +91,5 @@ permalink: /kb/108/Q108733/
 	
 	=============================================================================
 	
+
+{% endraw %}

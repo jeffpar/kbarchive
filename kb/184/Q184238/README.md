@@ -6,6 +6,8 @@ permalink: /kb/184/Q184238/
 
 ## Q184238: INFO: LNK4108: /ALIGN Specified Without /DRIVER or /VXD;
 
+{% raw %}
+
 	Article: Q184238
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0sp3
@@ -58,3 +60,5 @@ permalink: /kb/184/Q184238/
 	
 	=============================================================================
 	
+
+{% endraw %}

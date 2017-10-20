@@ -6,6 +6,8 @@ permalink: /kb/075/Q75128/
 
 ## Q75128: SMARTDrive, AST RAMpage, and REMM.SYS
 
+{% raw %}
+
 	Article: Q75128
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0,6.2,6.21,6.22
@@ -46,3 +48,5 @@ permalink: /kb/075/Q75128/
 	
 	=============================================================================
 	
+
+{% endraw %}

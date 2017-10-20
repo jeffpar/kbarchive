@@ -6,6 +6,8 @@ permalink: /kb/169/Q169535/
 
 ## Q169535: INFO: Cannot Set EOL Option from the Visual SourceSafe GUI
 
+{% raw %}
+
 	Article: Q169535
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -50,3 +52,5 @@ permalink: /kb/169/Q169535/
 	
 	=============================================================================
 	
+
+{% endraw %}

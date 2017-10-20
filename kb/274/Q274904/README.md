@@ -6,6 +6,8 @@ permalink: /kb/274/Q274904/
 
 ## Q274904: CFS2: Stops Responding or Quits Unexpectedly
 
+{% raw %}
+
 	Article: Q274904
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -51,3 +53,5 @@ permalink: /kb/274/Q274904/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/279/Q279453/
 
 ## Q279453: MSN Companion cannot browse to www.hotmail.com
 
+{% raw %}
+
 	Article: Q279453
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -48,3 +50,5 @@ permalink: /kb/279/Q279453/
 	
 	=============================================================================
 	
+
+{% endraw %}

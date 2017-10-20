@@ -6,6 +6,8 @@ permalink: /kb/117/Q117766/
 
 ## Q117766: Playing Compressed Audio on a Audio Plus Sound Card
 
+{% raw %}
+
 	Article: Q117766
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,2.0; :1.0,1993 edition,1994 edition,1995 edition
@@ -127,3 +129,5 @@ permalink: /kb/117/Q117766/
 	
 	=============================================================================
 	
+
+{% endraw %}

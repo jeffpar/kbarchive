@@ -6,6 +6,8 @@ permalink: /kb/134/Q134707/
 
 ## Q134707: BUG: Unbinding Grid with SetAll Method Still Displays Data
 
+{% raw %}
+
 	Article: Q134707
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -103,3 +105,5 @@ permalink: /kb/134/Q134707/
 	
 	=============================================================================
 	
+
+{% endraw %}

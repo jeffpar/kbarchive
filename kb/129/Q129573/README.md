@@ -6,6 +6,8 @@ permalink: /kb/129/Q129573/
 
 ## Q129573: Alternative to Using the _CUROBJ Variable with Forms
 
+{% raw %}
+
 	Article: Q129573
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00
@@ -106,3 +108,5 @@ permalink: /kb/129/Q129573/
 	
 	=============================================================================
 	
+
+{% endraw %}

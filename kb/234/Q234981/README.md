@@ -6,6 +6,8 @@ permalink: /kb/234/Q234981/
 
 ## Q234981: Access Violation in Win32k.sys Leading to STOP 0x0000001e
 
+{% raw %}
+
 	Article: Q234981
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -88,3 +90,5 @@ permalink: /kb/234/Q234981/
 	
 	=============================================================================
 	
+
+{% endraw %}

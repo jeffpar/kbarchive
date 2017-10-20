@@ -6,6 +6,8 @@ permalink: /kb/085/Q85600/
 
 ## Q85600: Scando Version 2.0 Requires Real Mode Windows
 
+{% raw %}
+
 	Article: Q85600
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -49,3 +51,5 @@ permalink: /kb/085/Q85600/
 	
 	=============================================================================
 	
+
+{% endraw %}

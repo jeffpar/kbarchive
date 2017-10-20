@@ -6,6 +6,8 @@ permalink: /kb/070/Q70766/
 
 ## Q70766: Using Intercon Gold Card with Windows 3.0
 
+{% raw %}
+
 	Article: Q70766
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -52,3 +54,5 @@ permalink: /kb/070/Q70766/
 	
 	=============================================================================
 	
+
+{% endraw %}

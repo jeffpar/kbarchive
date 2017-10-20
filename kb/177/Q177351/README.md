@@ -6,6 +6,8 @@ permalink: /kb/177/Q177351/
 
 ## Q177351: BUG: 16-bit Executable Resources Gets Corrupted
 
+{% raw %}
+
 	Article: Q177351
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0,4.1,4.2,5.0,6.0
@@ -88,3 +90,5 @@ permalink: /kb/177/Q177351/
 	
 	=============================================================================
 	
+
+{% endraw %}

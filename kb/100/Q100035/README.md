@@ -6,6 +6,8 @@ permalink: /kb/100/Q100035/
 
 ## Q100035: Mac Srv: Name of Mail Server Does Not Appear in Chooser
 
+{% raw %}
+
 	Article: Q100035
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:2.0,3.0,3.1
@@ -55,3 +57,5 @@ permalink: /kb/100/Q100035/
 	
 	=============================================================================
 	
+
+{% endraw %}

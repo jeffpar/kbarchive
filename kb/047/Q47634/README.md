@@ -6,6 +6,8 @@ permalink: /kb/047/Q47634/
 
 ## Q47634: How to Reboot Your Machine within a Pure C Application
 
+{% raw %}
+
 	Article: Q47634
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -45,3 +47,5 @@ permalink: /kb/047/Q47634/
 	
 	  (*reboot)() ;                       /* reboot your machine           */
 	}
+
+{% endraw %}

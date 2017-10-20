@@ -6,6 +6,8 @@ permalink: /kb/074/Q74682/
 
 ## Q74682: MS-DOS Shell Will Not Save Temporary Files to Floppy Disk
 
+{% raw %}
+
 	Article: Q74682
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -43,3 +45,5 @@ permalink: /kb/074/Q74682/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/250/Q250984/
 
 ## Q250984: MSB Bugs: Error Message When You Click &quot;Run Demo&quot;
 
+{% raw %}
+
 	Article: Q250984
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS|MACINTOS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/250/Q250984/
 	
 	=============================================================================
 	
+
+{% endraw %}

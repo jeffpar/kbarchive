@@ -6,6 +6,8 @@ permalink: /kb/142/Q142494/
 
 ## Q142494: Microsoft Systems Journal: January 1996
 
+{% raw %}
+
 	Article: Q142494
 	Product(s): Miscrosoft Systems Journal
 	Version(s): for January 1996
@@ -147,3 +149,5 @@ permalink: /kb/142/Q142494/
 	
 	=============================================================================
 	
+
+{% endraw %}

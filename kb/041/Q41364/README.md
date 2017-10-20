@@ -6,6 +6,8 @@ permalink: /kb/041/Q41364/
 
 ## Q41364: QuickC 2.00 README.DOC: Using QuickC on a Floppy System
 
+{% raw %}
+
 	Article: Q41364
 	Product(s): See article
 	Version(s): 2.00
@@ -49,3 +51,5 @@ permalink: /kb/041/Q41364/
 	Make the B drive the default. This is by no means the only setup. It
 	helps to minimize the swaps but may not be practical for large
 	programs.
+
+{% endraw %}

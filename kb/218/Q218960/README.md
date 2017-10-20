@@ -6,6 +6,8 @@ permalink: /kb/218/Q218960/
 
 ## Q218960: XFOR: InterOrg International Version Doesn't Replicate PF
 
+{% raw %}
+
 	Article: Q218960
 	Product(s): Microsoft Exchange
 	Version(s): 5.5 SP2
@@ -83,3 +85,5 @@ permalink: /kb/218/Q218960/
 	
 	=============================================================================
 	
+
+{% endraw %}

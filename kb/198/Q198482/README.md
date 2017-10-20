@@ -6,6 +6,8 @@ permalink: /kb/198/Q198482/
 
 ## Q198482: XWEB: Next/Previous Button Confused in Message with PF Link
 
+{% raw %}
+
 	Article: Q198482
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0,5.5
@@ -57,3 +59,5 @@ permalink: /kb/198/Q198482/
 	
 	=============================================================================
 	
+
+{% endraw %}

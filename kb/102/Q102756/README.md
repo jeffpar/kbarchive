@@ -6,6 +6,8 @@ permalink: /kb/102/Q102756/
 
 ## Q102756: PC Forms: Deleted Form Does Not Appear in Wastebasket
 
+{% raw %}
+
 	Article: Q102756
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:1.0,3.0,3.2
@@ -51,3 +53,5 @@ permalink: /kb/102/Q102756/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/099/Q99357/
 
 ## Q99357: Hardware Interrupt Priorities--Background and Usage
 
+{% raw %}
+
 	Article: Q99357
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/099/Q99357/
 	
 	=============================================================================
 	
+
+{% endraw %}

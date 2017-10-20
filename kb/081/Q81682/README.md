@@ -6,6 +6,8 @@ permalink: /kb/081/Q81682/
 
 ## Q81682: Windows 3.1 Setup Replaces _DEFAULT.PIF and DOSPRMPT.PIF
 
+{% raw %}
+
 	Article: Q81682
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -37,3 +39,5 @@ permalink: /kb/081/Q81682/
 	
 	=============================================================================
 	
+
+{% endraw %}

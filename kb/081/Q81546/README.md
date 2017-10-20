@@ -6,6 +6,8 @@ permalink: /kb/081/Q81546/
 
 ## Q81546: PRB: Segment Was Discardable Under 3.0 Notification
 
+{% raw %}
+
 	Article: Q81546
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -56,3 +58,5 @@ permalink: /kb/081/Q81546/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/134/Q134878/
 
 ## Q134878: BUG: Error: &quot;An errror occurred reading the index file&quot;
 
+{% raw %}
+
 	Article: Q134878
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -82,3 +84,5 @@ permalink: /kb/134/Q134878/
 	
 	=============================================================================
 	
+
+{% endraw %}

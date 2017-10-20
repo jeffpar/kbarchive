@@ -6,6 +6,8 @@ permalink: /kb/117/Q117929/
 
 ## Q117929: ALT, SHIFT Keys Stick or System Beeps w/Access Utility Enabled
 
+{% raw %}
+
 	Article: Q117929
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -73,3 +75,5 @@ permalink: /kb/117/Q117929/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/114/Q114684/
 
 ## Q114684: SFM Err Msg: A Device Attached to the System is Not...
 
+{% raw %}
+
 	Article: Q114684
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -59,3 +61,5 @@ permalink: /kb/114/Q114684/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/146/Q146490/
 
 ## Q146490: Unable to Install New Fonts from the Windows 95 Fonts Folder
 
+{% raw %}
+
 	Article: Q146490
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:4.0
@@ -92,3 +94,5 @@ permalink: /kb/146/Q146490/
 	
 	=============================================================================
 	
+
+{% endraw %}

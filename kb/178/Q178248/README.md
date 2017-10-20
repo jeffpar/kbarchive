@@ -6,6 +6,8 @@ permalink: /kb/178/Q178248/
 
 ## Q178248: Access Violation in SNAPRINT.EXE When Link Outage Occurs
 
+{% raw %}
+
 	Article: Q178248
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0 SP1,3.0 SP2
@@ -50,3 +52,5 @@ permalink: /kb/178/Q178248/
 	
 	=============================================================================
 	
+
+{% endraw %}

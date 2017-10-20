@@ -6,6 +6,8 @@ permalink: /kb/301/Q301237/
 
 ## Q301237: HOWTO: Create a Visual Basic Project Template For Creating IIS C
 
+{% raw %}
+
 	Article: Q301237
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0,6.0
@@ -99,3 +101,5 @@ permalink: /kb/301/Q301237/
 	
 	=============================================================================
 	
+
+{% endraw %}

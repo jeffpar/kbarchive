@@ -6,6 +6,8 @@ permalink: /kb/142/Q142511/
 
 ## Q142511: Explorapedia People: Err Msg: Not Enough Memory to Perform
 
+{% raw %}
+
 	Article: Q142511
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -51,3 +53,5 @@ permalink: /kb/142/Q142511/
 	
 	=============================================================================
 	
+
+{% endraw %}

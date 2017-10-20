@@ -6,6 +6,8 @@ permalink: /kb/182/Q182084/
 
 ## Q182084: XGEN: CDO's GetNext with Custom Property Fails at 17th Time
 
+{% raw %}
+
 	Article: Q182084
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -62,3 +64,5 @@ permalink: /kb/182/Q182084/
 	
 	=============================================================================
 	
+
+{% endraw %}

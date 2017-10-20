@@ -6,6 +6,8 @@ permalink: /kb/191/Q191304/
 
 ## Q191304: SMS: INVMAC Fails to Complete Inventory
 
+{% raw %}
+
 	Article: Q191304
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2
@@ -58,3 +60,5 @@ permalink: /kb/191/Q191304/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/086/Q86002/
 
 ## Q86002: PC Win: Tile Command with Windows 3.0 Tiles Vertically
 
+{% raw %}
+
 	Article: Q86002
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -45,3 +47,5 @@ permalink: /kb/086/Q86002/
 	
 	=============================================================================
 	
+
+{% endraw %}

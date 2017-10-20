@@ -6,6 +6,8 @@ permalink: /kb/103/Q103952/
 
 ## Q103952: Basic Network Architecture Terms
 
+{% raw %}
+
 	Article: Q103952
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 
@@ -121,3 +123,5 @@ permalink: /kb/103/Q103952/
 	
 	=============================================================================
 	
+
+{% endraw %}

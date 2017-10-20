@@ -6,6 +6,8 @@ permalink: /kb/162/Q162211/
 
 ## Q162211: &quot;Fatal Exception 0E&quot; May Occur During Critical Suspend
 
+{% raw %}
+
 	Article: Q162211
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 1.0
@@ -64,3 +66,5 @@ permalink: /kb/162/Q162211/
 	
 	=============================================================================
 	
+
+{% endraw %}

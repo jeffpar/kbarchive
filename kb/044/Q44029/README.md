@@ -6,6 +6,8 @@ permalink: /kb/044/Q44029/
 
 ## Q44029: Mac DOS: Network Devices Not Listed with PC AppleShare
 
+{% raw %}
+
 	Article: Q44029
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 1.37
@@ -52,3 +54,5 @@ permalink: /kb/044/Q44029/
 	
 	=============================================================================
 	
+
+{% endraw %}

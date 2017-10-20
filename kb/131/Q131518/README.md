@@ -6,6 +6,8 @@ permalink: /kb/131/Q131518/
 
 ## Q131518: PC WSPlus: Can Not Print from Note Section of Archived Files
 
+{% raw %}
+
 	Article: Q131518
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0
@@ -56,3 +58,5 @@ permalink: /kb/131/Q131518/
 	
 	=============================================================================
 	
+
+{% endraw %}

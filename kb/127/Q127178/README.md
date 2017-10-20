@@ -6,6 +6,8 @@ permalink: /kb/127/Q127178/
 
 ## Q127178: Cannot Open Chat History File While in Chat Session
 
+{% raw %}
+
 	Article: Q127178
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.0,1.05,1.2,1.3,2.0,2.5
@@ -52,3 +54,5 @@ permalink: /kb/127/Q127178/
 	
 	=============================================================================
 	
+
+{% endraw %}

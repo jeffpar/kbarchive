@@ -6,6 +6,8 @@ permalink: /kb/175/Q175536/
 
 ## Q175536: Mac MSB Ocean: Err Msg: The CD Was Ejected While It Was in Used
 
+{% raw %}
+
 	Article: Q175536
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0
@@ -84,3 +86,5 @@ permalink: /kb/175/Q175536/
 	
 	=============================================================================
 	
+
+{% endraw %}

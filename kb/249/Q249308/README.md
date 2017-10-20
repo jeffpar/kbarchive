@@ -6,6 +6,8 @@ permalink: /kb/249/Q249308/
 
 ## Q249308: Inside ATL Comments and Corrections
 
+{% raw %}
+
 	Article: Q249308
 	Product(s): Microsoft Press
 	Version(s): 
@@ -65,3 +67,5 @@ permalink: /kb/249/Q249308/
 	
 	=============================================================================
 	
+
+{% endraw %}

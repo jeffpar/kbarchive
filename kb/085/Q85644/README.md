@@ -6,6 +6,8 @@ permalink: /kb/085/Q85644/
 
 ## Q85644: Troubleshooting CD-ROM Problems in Windows 3.1 Enhanced Mode
 
+{% raw %}
+
 	Article: Q85644
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -122,3 +124,5 @@ permalink: /kb/085/Q85644/
 	
 	=============================================================================
 	
+
+{% endraw %}

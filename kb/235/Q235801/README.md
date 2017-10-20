@@ -6,6 +6,8 @@ permalink: /kb/235/Q235801/
 
 ## Q235801: SMS: ODPSYS Refreshes Every 60 Minutes Regardless of Interval
 
+{% raw %}
+
 	Article: Q235801
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,2.0
@@ -53,3 +55,5 @@ permalink: /kb/235/Q235801/
 	
 	=============================================================================
 	
+
+{% endraw %}

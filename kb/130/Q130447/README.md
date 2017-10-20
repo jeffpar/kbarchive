@@ -6,6 +6,8 @@ permalink: /kb/130/Q130447/
 
 ## Q130447: FAX: Err Msg: &quot;Failure to Submit Fax!&quot; on Every Faxout Cycle
 
+{% raw %}
+
 	Article: Q130447
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -73,3 +75,5 @@ permalink: /kb/130/Q130447/
 	
 	=============================================================================
 	
+
+{% endraw %}

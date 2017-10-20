@@ -6,6 +6,8 @@ permalink: /kb/193/Q193505/
 
 ## Q193505: Event 2048 When Trying to Connect from French Client Workstation
 
+{% raw %}
+
 	Article: Q193505
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -87,3 +89,5 @@ permalink: /kb/193/Q193505/
 	
 	=============================================================================
 	
+
+{% endraw %}

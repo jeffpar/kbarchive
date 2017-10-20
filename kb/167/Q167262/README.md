@@ -6,6 +6,8 @@ permalink: /kb/167/Q167262/
 
 ## Q167262: PRB: Unable to Open User Login File
 
+{% raw %}
+
 	Article: Q167262
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0 4.0a 5.0
@@ -81,3 +83,5 @@ permalink: /kb/167/Q167262/
 	
 	=============================================================================
 	
+
+{% endraw %}

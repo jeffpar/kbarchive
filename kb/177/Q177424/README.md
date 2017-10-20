@@ -6,6 +6,8 @@ permalink: /kb/177/Q177424/
 
 ## Q177424: HOWTO: Convert Multiple Projects in Visual C++ 5.0 and 6.0
 
+{% raw %}
+
 	Article: Q177424
 	Product(s): Microsoft C Compiler
 	Version(s): WINNT:5.0, 6.0
@@ -71,3 +73,5 @@ permalink: /kb/177/Q177424/
 	
 	=============================================================================
 	
+
+{% endraw %}

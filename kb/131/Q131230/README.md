@@ -6,6 +6,8 @@ permalink: /kb/131/Q131230/
 
 ## Q131230: NT and WfWG Clients Get Diff. Results Accessing Share w/o Perm.
 
+{% raw %}
+
 	Article: Q131230
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50
@@ -64,3 +66,5 @@ permalink: /kb/131/Q131230/
 	
 	=============================================================================
 	
+
+{% endraw %}

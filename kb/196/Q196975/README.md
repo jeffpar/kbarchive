@@ -6,6 +6,8 @@ permalink: /kb/196/Q196975/
 
 ## Q196975: CRC Error Messages on Multiple-Processor Computers
 
+{% raw %}
+
 	Article: Q196975
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -97,3 +99,5 @@ permalink: /kb/196/Q196975/
 	
 	=============================================================================
 	
+
+{% endraw %}

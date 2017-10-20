@@ -6,6 +6,8 @@ permalink: /kb/268/Q268817/
 
 ## Q268817: Deadlock in Redirector Delays Opening a File on the Network
 
+{% raw %}
+
 	Article: Q268817
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -101,3 +103,5 @@ permalink: /kb/268/Q268817/
 	
 	=============================================================================
 	
+
+{% endraw %}

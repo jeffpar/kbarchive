@@ -6,6 +6,8 @@ permalink: /kb/280/Q280321/
 
 ## Q280321: LDAP Program May Generate Access Violation Under Stress
 
+{% raw %}
+
 	Article: Q280321
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -79,3 +81,5 @@ permalink: /kb/280/Q280321/
 	
 	=============================================================================
 	
+
+{% endraw %}

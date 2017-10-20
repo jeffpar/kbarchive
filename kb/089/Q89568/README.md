@@ -6,6 +6,8 @@ permalink: /kb/089/Q89568/
 
 ## Q89568: Additional Documentation for GetDOSEnvironment()
 
+{% raw %}
+
 	Article: Q89568
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -39,3 +41,5 @@ permalink: /kb/089/Q89568/
 	
 	=============================================================================
 	
+
+{% endraw %}

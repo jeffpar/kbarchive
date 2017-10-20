@@ -6,6 +6,8 @@ permalink: /kb/181/Q181175/
 
 ## Q181175: WD97: How to Insert a Slashed Zero (0 Overlaid with a /)
 
+{% raw %}
+
 	Article: Q181175
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -136,3 +138,5 @@ permalink: /kb/181/Q181175/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151725/
 
 ## Q151725: FP: How to Import Web Content from a Server w/o FP Extensions
 
+{% raw %}
+
 	Article: Q151725
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97
@@ -181,3 +183,5 @@ permalink: /kb/151/Q151725/
 	
 	=============================================================================
 	
+
+{% endraw %}

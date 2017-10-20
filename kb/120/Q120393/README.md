@@ -6,6 +6,8 @@ permalink: /kb/120/Q120393/
 
 ## Q120393: Mac DOS: Err Msg: System Has Closed... Application Unknown...
 
+{% raw %}
+
 	Article: Q120393
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 3.0
@@ -53,3 +55,5 @@ permalink: /kb/120/Q120393/
 	
 	=============================================================================
 	
+
+{% endraw %}

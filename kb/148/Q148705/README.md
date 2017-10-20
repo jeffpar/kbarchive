@@ -6,6 +6,8 @@ permalink: /kb/148/Q148705/
 
 ## Q148705: PC DirSync ErrMsg: NSDA -x Terminated Abnormally w/ Exit Code
 
+{% raw %}
+
 	Article: Q148705
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -230,3 +232,5 @@ permalink: /kb/148/Q148705/
 	
 	=============================================================================
 	
+
+{% endraw %}

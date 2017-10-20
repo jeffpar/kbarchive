@@ -6,6 +6,8 @@ permalink: /kb/059/Q59070/
 
 ## Q59070: INFO: Buffer Size for fcvt() and ecvt() Is 349 Bytes
 
+{% raw %}
+
 	Article: Q59070
 	Product(s): Microsoft C Compiler
 	Version(s): MS-DOS:5.1,6.0,6.00a,6.00ax,7.0; OS/2:5.1,6.0,6.00a; WINDOWS:1.0,1.5; WINDOWS NT:1.0,2.
@@ -45,3 +47,5 @@ permalink: /kb/059/Q59070/
 	
 	=============================================================================
 	
+
+{% endraw %}

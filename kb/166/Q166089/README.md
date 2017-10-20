@@ -6,6 +6,8 @@ permalink: /kb/166/Q166089/
 
 ## Q166089: Event ID 7020: Circular Dependency Afd Service Depends on...
 
+{% raw %}
+
 	Article: Q166089
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -77,3 +79,5 @@ permalink: /kb/166/Q166089/
 	
 	=============================================================================
 	
+
+{% endraw %}

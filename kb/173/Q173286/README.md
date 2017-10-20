@@ -6,6 +6,8 @@ permalink: /kb/173/Q173286/
 
 ## Q173286: WD97: Clipart Images Display Incorrect Format Picture Options
 
+{% raw %}
+
 	Article: Q173286
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -53,3 +55,5 @@ permalink: /kb/173/Q173286/
 	
 	=============================================================================
 	
+
+{% endraw %}

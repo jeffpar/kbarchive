@@ -6,6 +6,8 @@ permalink: /kb/091/Q91041/
 
 ## Q91041: PC WFW: Moving a Windows for Workgroups Postoffice
 
+{% raw %}
+
 	Article: Q91041
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -64,3 +66,5 @@ permalink: /kb/091/Q91041/
 	
 	=============================================================================
 	
+
+{% endraw %}

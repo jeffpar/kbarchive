@@ -6,6 +6,8 @@ permalink: /kb/199/Q199032/
 
 ## Q199032: EVG99: &quot;Error Reading CD-ROM&quot; When You Zoom In or Out on the Map
 
+{% raw %}
+
 	Article: Q199032
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/199/Q199032/
 	
 	=============================================================================
 	
+
+{% endraw %}

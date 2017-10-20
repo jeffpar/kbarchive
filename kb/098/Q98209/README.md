@@ -6,6 +6,8 @@ permalink: /kb/098/Q98209/
 
 ## Q98209: FFAPI: Message Body Begins with a Blank Line (CRLF)
 
+{% raw %}
+
 	Article: Q98209
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 2.1,3.0
@@ -50,3 +52,5 @@ permalink: /kb/098/Q98209/
 	
 	=============================================================================
 	
+
+{% endraw %}

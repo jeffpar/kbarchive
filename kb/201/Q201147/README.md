@@ -6,6 +6,8 @@ permalink: /kb/201/Q201147/
 
 ## Q201147: XFOR: Group Wise Router Takes Three Minutes to Stop
 
+{% raw %}
+
 	Article: Q201147
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -67,3 +69,5 @@ permalink: /kb/201/Q201147/
 	
 	=============================================================================
 	
+
+{% endraw %}

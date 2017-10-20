@@ -6,6 +6,8 @@ permalink: /kb/151/Q151621/
 
 ## Q151621: Default Case of Image Map Is Case Sensitive in IIS
 
+{% raw %}
+
 	Article: Q151621
 	Product(s): Internet Information Server
 	Version(s): 1.0,2.0
@@ -69,3 +71,5 @@ permalink: /kb/151/Q151621/
 	
 	=============================================================================
 	
+
+{% endraw %}

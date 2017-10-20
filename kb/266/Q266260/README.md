@@ -6,6 +6,8 @@ permalink: /kb/266/Q266260/
 
 ## Q266260: XADM: Rules That Use an SMTP Address Do Not Run
 
+{% raw %}
+
 	Article: Q266260
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -72,3 +74,5 @@ permalink: /kb/266/Q266260/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/139/Q139618/
 
 ## Q139618: Err Msg: &quot;Cannot Access Printer&quot; and &quot;Cannot Print&quot;
 
+{% raw %}
+
 	Article: Q139618
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -71,3 +73,5 @@ permalink: /kb/139/Q139618/
 	
 	=============================================================================
 	
+
+{% endraw %}

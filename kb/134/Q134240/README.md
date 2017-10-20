@@ -6,6 +6,8 @@ permalink: /kb/134/Q134240/
 
 ## Q134240: Running the MS-DOS-Based Portion of a Windows-Based Program
 
+{% raw %}
+
 	Article: Q134240
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -71,3 +73,5 @@ permalink: /kb/134/Q134240/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/276/Q276531/
 
 ## Q276531: Mobile Client Computer Is Assigned to Every Site It Visits
 
+{% raw %}
+
 	Article: Q276531
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -61,3 +63,5 @@ permalink: /kb/276/Q276531/
 	
 	=============================================================================
 	
+
+{% endraw %}

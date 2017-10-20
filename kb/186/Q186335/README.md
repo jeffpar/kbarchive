@@ -6,6 +6,8 @@ permalink: /kb/186/Q186335/
 
 ## Q186335: WinNT 4.0 Remote Troubleshooting and Diagnostics White Paper
 
+{% raw %}
+
 	Article: Q186335
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -58,3 +60,5 @@ permalink: /kb/186/Q186335/
 	
 	=============================================================================
 	
+
+{% endraw %}

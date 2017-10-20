@@ -6,6 +6,8 @@ permalink: /kb/163/Q163285/
 
 ## Q163285: FTP Service Does Not Pick Up Port Change
 
+{% raw %}
+
 	Article: Q163285
 	Product(s): Internet Information Server
 	Version(s): Winnt:1.0,2.0
@@ -59,3 +61,5 @@ permalink: /kb/163/Q163285/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/128/Q128805/
 
 ## Q128805: FIX: Explicit Call to Virtual Destructor Corrupts Stack
 
+{% raw %}
+
 	Article: Q128805
 	Product(s): Microsoft C Compiler
 	Version(s): 1.00 2.00 2.10
@@ -146,3 +148,5 @@ permalink: /kb/128/Q128805/
 	
 	=============================================================================
 	
+
+{% endraw %}

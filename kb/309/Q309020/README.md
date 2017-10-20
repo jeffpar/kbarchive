@@ -6,6 +6,8 @@ permalink: /kb/309/Q309020/
 
 ## Q309020: CONVERT Verb Fails With SV_G on HIS 2000 End-User Client
 
+{% raw %}
+
 	Article: Q309020
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -61,3 +63,5 @@ permalink: /kb/309/Q309020/
 	
 	=============================================================================
 	
+
+{% endraw %}

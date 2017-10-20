@@ -6,6 +6,8 @@ permalink: /kb/116/Q116039/
 
 ## Q116039: Results of Double-Clicking FoxPro Files in Finder
 
+{% raw %}
+
 	Article: Q116039
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -76,3 +78,5 @@ permalink: /kb/116/Q116039/
 	
 	=============================================================================
 	
+
+{% endraw %}

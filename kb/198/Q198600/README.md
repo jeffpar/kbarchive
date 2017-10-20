@@ -6,6 +6,8 @@ permalink: /kb/198/Q198600/
 
 ## Q198600: INFO: Differences Between DCOM95 and DCOM98
 
+{% raw %}
+
 	Article: Q198600
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -109,3 +111,5 @@ permalink: /kb/198/Q198600/
 	
 	=============================================================================
 	
+
+{% endraw %}

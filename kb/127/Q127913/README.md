@@ -6,6 +6,8 @@ permalink: /kb/127/Q127913/
 
 ## Q127913: Artist: Saved Documents Are Black with ATI Mach 64
 
+{% raw %}
+
 	Article: Q127913
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.00 1.10 1.10a
@@ -102,3 +104,5 @@ permalink: /kb/127/Q127913/
 	
 	=============================================================================
 	
+
+{% endraw %}

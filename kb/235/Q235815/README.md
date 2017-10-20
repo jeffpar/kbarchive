@@ -6,6 +6,8 @@ permalink: /kb/235/Q235815/
 
 ## Q235815: SMS: How To Resend Assigned Programs
 
+{% raw %}
+
 	Article: Q235815
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -55,3 +57,5 @@ permalink: /kb/235/Q235815/
 	
 	=============================================================================
 	
+
+{% endraw %}

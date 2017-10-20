@@ -6,6 +6,8 @@ permalink: /kb/068/Q68367/
 
 ## Q68367: PWB Build Switch Reference Available as an Application Note
 
+{% raw %}
+
 	Article: Q68367
 	Product(s): See article
 	Version(s): 1.00 1.10 | 1.00 1.10
@@ -52,3 +54,5 @@ permalink: /kb/068/Q68367/
 	from the Compile or LINK Options dialog boxes, the correct build
 	switches are automatically modified to contain the desired
 	information.
+
+{% endraw %}

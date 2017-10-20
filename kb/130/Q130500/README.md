@@ -6,6 +6,8 @@ permalink: /kb/130/Q130500/
 
 ## Q130500: How to Change the Default Font of the Class Browser
 
+{% raw %}
+
 	Article: Q130500
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -110,3 +112,5 @@ permalink: /kb/130/Q130500/
 	
 	=============================================================================
 	
+
+{% endraw %}

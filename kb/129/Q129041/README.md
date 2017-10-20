@@ -6,6 +6,8 @@ permalink: /kb/129/Q129041/
 
 ## Q129041: Word for Windows NT Prints Slowly When Project 4.0 is Running
 
+{% raw %}
+
 	Article: Q129041
 	Product(s): Microsoft Windows NT
 	Version(s): 3.10 3.50
@@ -60,3 +62,5 @@ permalink: /kb/129/Q129041/
 	
 	=============================================================================
 	
+
+{% endraw %}

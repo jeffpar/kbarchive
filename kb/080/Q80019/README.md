@@ -6,6 +6,8 @@ permalink: /kb/080/Q80019/
 
 ## Q80019: Mac AL: Acquiring the AppleLink Gateway
 
+{% raw %}
+
 	Article: Q80019
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -55,3 +57,5 @@ permalink: /kb/080/Q80019/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/165/Q165689/
 
 ## Q165689: INFO: Visual C++ 5.0 Readme, Enterprise Edition Issues
 
+{% raw %}
+
 	Article: Q165689
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0
@@ -89,3 +91,5 @@ permalink: /kb/165/Q165689/
 	
 	=============================================================================
 	
+
+{% endraw %}

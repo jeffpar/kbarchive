@@ -6,6 +6,8 @@ permalink: /kb/193/Q193883/
 
 ## Q193883: WD97: Cannot Replace Character Formatting With Nothing in SR-2
 
+{% raw %}
+
 	Article: Q193883
 	Product(s): Word 97 for Windows
 	Version(s): Service Release 2
@@ -59,3 +61,5 @@ permalink: /kb/193/Q193883/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/137/Q137790/
 
 ## Q137790: Backslash Characters Used in MIFGEN Do Not Appear in Inventory
 
+{% raw %}
+
 	Article: Q137790
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -45,3 +47,5 @@ permalink: /kb/137/Q137790/
 	
 	=============================================================================
 	
+
+{% endraw %}

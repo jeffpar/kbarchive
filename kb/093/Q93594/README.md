@@ -6,6 +6,8 @@ permalink: /kb/093/Q93594/
 
 ## Q93594: BUG: No Warning Moving Segment Register to Extended Reg.
 
+{% raw %}
+
 	Article: Q93594
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1a,6.0,6.0a,6.0b,6.1,6.11,6.1a
@@ -70,3 +72,5 @@ permalink: /kb/093/Q93594/
 	
 	=============================================================================
 	
+
+{% endraw %}

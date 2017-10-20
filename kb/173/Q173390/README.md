@@ -6,6 +6,8 @@ permalink: /kb/173/Q173390/
 
 ## Q173390: DOC: Status Property of RdoResultset/RdoColumn is Read-Only
 
+{% raw %}
+
 	Article: Q173390
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -59,3 +61,5 @@ permalink: /kb/173/Q173390/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173151/
 
 ## Q173151: MDG: MS Mail to NGW Conversion Utility Written by Novell
 
+{% raw %}
+
 	Article: Q173151
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.5
@@ -51,3 +53,5 @@ permalink: /kb/173/Q173151/
 	
 	=============================================================================
 	
+
+{% endraw %}

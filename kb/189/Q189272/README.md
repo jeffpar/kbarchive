@@ -6,6 +6,8 @@ permalink: /kb/189/Q189272/
 
 ## Q189272: Upload Folders with Write and Execute Access Are Vulnerable
 
+{% raw %}
+
 	Article: Q189272
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -83,3 +85,5 @@ permalink: /kb/189/Q189272/
 	
 	=============================================================================
 	
+
+{% endraw %}

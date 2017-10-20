@@ -6,6 +6,8 @@ permalink: /kb/150/Q150961/
 
 ## Q150961: FIX: Error Accessing Source Code Control System
 
+{% raw %}
+
 	Article: Q150961
 	Product(s): Microsoft SourceSafe
 	Version(s): 4.0
@@ -87,3 +89,5 @@ permalink: /kb/150/Q150961/
 	
 	=============================================================================
 	
+
+{% endraw %}

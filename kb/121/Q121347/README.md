@@ -6,6 +6,8 @@ permalink: /kb/121/Q121347/
 
 ## Q121347: FIX: Unable to Set Breakpoint on Label in Constructor
 
+{% raw %}
+
 	Article: Q121347
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:1.0
@@ -104,3 +106,5 @@ permalink: /kb/121/Q121347/
 	
 	=============================================================================
 	
+
+{% endraw %}

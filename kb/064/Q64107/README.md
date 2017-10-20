@@ -6,6 +6,8 @@ permalink: /kb/064/Q64107/
 
 ## Q64107: Sample Assembly Function Returning Double to BASIC
 
+{% raw %}
+
 	Article: Q64107
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -88,3 +90,5 @@ permalink: /kb/064/Q64107/
 	
 	   6765.89
 	   6765.89
+
+{% endraw %}

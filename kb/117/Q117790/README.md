@@ -6,6 +6,8 @@ permalink: /kb/117/Q117790/
 
 ## Q117790: Chooser Fails on Macintosh SE Running System 7.1
 
+{% raw %}
+
 	Article: Q117790
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -59,3 +61,5 @@ permalink: /kb/117/Q117790/
 	
 	=============================================================================
 	
+
+{% endraw %}

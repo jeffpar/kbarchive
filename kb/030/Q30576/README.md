@@ -6,6 +6,8 @@ permalink: /kb/030/Q30576/
 
 ## Q30576: Fix-Up Overflow Caused By Extrn Statements and .Fardata
 
+{% raw %}
+
 	Article: Q30576
 	Product(s): Microsoft Macro Assembler
 	Version(s): 5.1
@@ -82,3 +84,5 @@ permalink: /kb/030/Q30576/
 	
 	=============================================================================
 	
+
+{% endraw %}

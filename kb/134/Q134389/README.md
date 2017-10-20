@@ -6,6 +6,8 @@ permalink: /kb/134/Q134389/
 
 ## Q134389: Setup Cannot Find Previous Version of Windows NT
 
+{% raw %}
+
 	Article: Q134389
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/134/Q134389/
 	
 	=============================================================================
 	
+
+{% endraw %}

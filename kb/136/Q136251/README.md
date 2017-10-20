@@ -6,6 +6,8 @@ permalink: /kb/136/Q136251/
 
 ## Q136251: System Log Event 5705 with &gt; 500 Security Object Changes
 
+{% raw %}
+
 	Article: Q136251
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5,4.0 SP5
@@ -82,3 +84,5 @@ permalink: /kb/136/Q136251/
 	
 	=============================================================================
 	
+
+{% endraw %}

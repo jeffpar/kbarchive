@@ -6,6 +6,8 @@ permalink: /kb/170/Q170223/
 
 ## Q170223: FIX: Creating a New File DSN Causes a Refresh Problem on Deskto
 
+{% raw %}
+
 	Article: Q170223
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/170/Q170223/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/151/Q151467/
 
 ## Q151467: Mastering Visual Basic: Setup Does Not Complete
 
+{% raw %}
+
 	Article: Q151467
 	Product(s): Microsoft Mastering Series
 	Version(s): 1.0
@@ -50,3 +52,5 @@ permalink: /kb/151/Q151467/
 	
 	=============================================================================
 	
+
+{% endraw %}

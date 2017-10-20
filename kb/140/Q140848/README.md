@@ -6,6 +6,8 @@ permalink: /kb/140/Q140848/
 
 ## Q140848: How to Convert Object Color Values to RGB Equivalents
 
+{% raw %}
+
 	Article: Q140848
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -151,3 +153,5 @@ permalink: /kb/140/Q140848/
 	
 	=============================================================================
 	
+
+{% endraw %}

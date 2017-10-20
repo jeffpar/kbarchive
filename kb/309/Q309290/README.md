@@ -6,6 +6,8 @@ permalink: /kb/309/Q309290/
 
 ## Q309290: Package Creation Errors Cause SQL Errors
 
+{% raw %}
+
 	Article: Q309290
 	Product(s): Microsoft SNA Server
 	Version(s): 
@@ -118,3 +120,5 @@ permalink: /kb/309/Q309290/
 	
 	=============================================================================
 	
+
+{% endraw %}

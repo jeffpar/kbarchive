@@ -6,6 +6,8 @@ permalink: /kb/233/Q233177/
 
 ## Q233177: Enable Point to Point IP and IP Packet Size Options Missing
 
+{% raw %}
+
 	Article: Q233177
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -65,3 +67,5 @@ permalink: /kb/233/Q233177/
 	
 	=============================================================================
 	
+
+{% endraw %}

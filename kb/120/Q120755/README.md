@@ -6,6 +6,8 @@ permalink: /kb/120/Q120755/
 
 ## Q120755: WINS Manager Sorts Database and Static Mappings Incorrectly
 
+{% raw %}
+
 	Article: Q120755
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/120/Q120755/
 	
 	=============================================================================
 	
+
+{% endraw %}

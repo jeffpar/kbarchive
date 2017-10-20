@@ -6,6 +6,8 @@ permalink: /kb/265/Q265511/
 
 ## Q265511: XCLN: Paged Pool Memory Leak Caused by Attachment Processing
 
+{% raw %}
+
 	Article: Q265511
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; winnt:5.5 SP3
@@ -61,3 +63,5 @@ permalink: /kb/265/Q265511/
 	
 	=============================================================================
 	
+
+{% endraw %}

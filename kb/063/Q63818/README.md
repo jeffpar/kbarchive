@@ -6,6 +6,8 @@ permalink: /kb/063/Q63818/
 
 ## Q63818: Using NMAKE to Compile FORTRAN Programs in M Editor in OS/2
 
+{% raw %}
+
 	Article: Q63818
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 5.0,5.1
@@ -98,3 +100,5 @@ permalink: /kb/063/Q63818/
 	
 	=============================================================================
 	
+
+{% endraw %}

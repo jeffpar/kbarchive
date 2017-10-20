@@ -6,6 +6,8 @@ permalink: /kb/191/Q191053/
 
 ## Q191053: Error Appears Behind C2 Security Config Tool Splash Screen
 
+{% raw %}
+
 	Article: Q191053
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -60,3 +62,5 @@ permalink: /kb/191/Q191053/
 	
 	=============================================================================
 	
+
+{% endraw %}

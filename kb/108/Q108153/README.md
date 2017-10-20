@@ -6,6 +6,8 @@ permalink: /kb/108/Q108153/
 
 ## Q108153: WFWG Err Msg: No Domain Server Was Available to Validate...
 
+{% raw %}
+
 	Article: Q108153
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -73,3 +75,5 @@ permalink: /kb/108/Q108153/
 	
 	=============================================================================
 	
+
+{% endraw %}

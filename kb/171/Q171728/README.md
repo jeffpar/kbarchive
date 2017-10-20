@@ -6,6 +6,8 @@ permalink: /kb/171/Q171728/
 
 ## Q171728: PRB: Text Property of Grid Is Reset When Used on SSTab Control
 
+{% raw %}
+
 	Article: Q171728
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -109,3 +111,5 @@ permalink: /kb/171/Q171728/
 	
 	=============================================================================
 	
+
+{% endraw %}

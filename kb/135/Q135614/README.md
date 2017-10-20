@@ -6,6 +6,8 @@ permalink: /kb/135/Q135614/
 
 ## Q135614: FIX: GET Field Default Sizes on the Desktop Are Too Small
 
+{% raw %}
+
 	Article: Q135614
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -84,3 +86,5 @@ permalink: /kb/135/Q135614/
 	
 	=============================================================================
 	
+
+{% endraw %}

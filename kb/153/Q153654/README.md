@@ -6,6 +6,8 @@ permalink: /kb/153/Q153654/
 
 ## Q153654: SMS Leaks SQL Connections
 
+{% raw %}
+
 	Article: Q153654
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -43,3 +45,5 @@ permalink: /kb/153/Q153654/
 	
 	=============================================================================
 	
+
+{% endraw %}

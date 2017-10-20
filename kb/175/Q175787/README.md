@@ -6,6 +6,8 @@ permalink: /kb/175/Q175787/
 
 ## Q175787: Stop 0x7F Caused by DigiBoard Driver
 
+{% raw %}
+
 	Article: Q175787
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -55,3 +57,5 @@ permalink: /kb/175/Q175787/
 	
 	=============================================================================
 	
+
+{% endraw %}

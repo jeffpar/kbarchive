@@ -6,6 +6,8 @@ permalink: /kb/125/Q125043/
 
 ## Q125043: DCA DFT Link Service Fails (Event ID 252)
 
+{% raw %}
+
 	Article: Q125043
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1
@@ -72,3 +74,5 @@ permalink: /kb/125/Q125043/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158719/
 
 ## Q158719: How to Use Inetsvcs.adm File with System Policy Editor
 
+{% raw %}
+
 	Article: Q158719
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -105,3 +107,5 @@ permalink: /kb/158/Q158719/
 	
 	=============================================================================
 	
+
+{% endraw %}

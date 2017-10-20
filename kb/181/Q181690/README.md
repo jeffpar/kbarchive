@@ -6,6 +6,8 @@ permalink: /kb/181/Q181690/
 
 ## Q181690: XCLN: Contact Fax Number May Fail with +1 Prefix
 
+{% raw %}
+
 	Article: Q181690
 	Product(s): Microsoft Exchange
 	Version(s): 5.5,8.0,8.01,8.02,8.03
@@ -78,3 +80,5 @@ permalink: /kb/181/Q181690/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156613/
 
 ## Q156613: Writer 2: &quot;The Printer Could Not Be Found&quot; Error Message
 
+{% raw %}
+
 	Article: Q156613
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:2.0
@@ -75,3 +77,5 @@ permalink: /kb/156/Q156613/
 	
 	=============================================================================
 	
+
+{% endraw %}

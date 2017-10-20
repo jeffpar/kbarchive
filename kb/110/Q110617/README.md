@@ -6,6 +6,8 @@ permalink: /kb/110/Q110617/
 
 ## Q110617: Flight Simulator: Altitude Appears to Drop 200+ Feet
 
+{% raw %}
+
 	Article: Q110617
 	Product(s): Microsoft Home Games
 	Version(s): MS-DOS:5.0
@@ -64,3 +66,5 @@ permalink: /kb/110/Q110617/
 	
 	=============================================================================
 	
+
+{% endraw %}

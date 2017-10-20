@@ -6,6 +6,8 @@ permalink: /kb/155/Q155693/
 
 ## Q155693: Calling Card Does Not Work During MSN Signup
 
+{% raw %}
+
 	Article: Q155693
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6
@@ -42,3 +44,5 @@ permalink: /kb/155/Q155693/
 	
 	=============================================================================
 	
+
+{% endraw %}

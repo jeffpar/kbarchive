@@ -6,6 +6,8 @@ permalink: /kb/101/Q101285/
 
 ## Q101285: WFWG Err Msg: STOP! You Must Type a Full Path Including...
 
+{% raw %}
+
 	Article: Q101285
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/101/Q101285/
 	
 	=============================================================================
 	
+
+{% endraw %}

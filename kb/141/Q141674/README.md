@@ -6,6 +6,8 @@ permalink: /kb/141/Q141674/
 
 ## Q141674: PC WSPlus: Err Msg: Cannot Access Your Server
 
+{% raw %}
+
 	Article: Q141674
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -89,3 +91,5 @@ permalink: /kb/141/Q141674/
 	
 	=============================================================================
 	
+
+{% endraw %}

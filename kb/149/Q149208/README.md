@@ -6,6 +6,8 @@ permalink: /kb/149/Q149208/
 
 ## Q149208: Large File Transfers Fail w/MS-DOS Router and IBM PC Support
 
+{% raw %}
+
 	Article: Q149208
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11,2.11 SP1
@@ -67,3 +69,5 @@ permalink: /kb/149/Q149208/
 	
 	=============================================================================
 	
+
+{% endraw %}

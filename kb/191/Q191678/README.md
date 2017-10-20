@@ -6,6 +6,8 @@ permalink: /kb/191/Q191678/
 
 ## Q191678: MCM: Game Screen Appears Distorted or Scrambled
 
+{% raw %}
+
 	Article: Q191678
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/191/Q191678/
 	
 	=============================================================================
 	
+
+{% endraw %}

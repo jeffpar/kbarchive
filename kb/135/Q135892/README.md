@@ -6,6 +6,8 @@ permalink: /kb/135/Q135892/
 
 ## Q135892: Windows 95 CD-ROM Exchange.txt File
 
+{% raw %}
+
 	Article: Q135892
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -204,3 +206,5 @@ permalink: /kb/135/Q135892/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/191/Q191905/
 
 ## Q191905: Y2K: Key Dirsync Logs Display Incorrect Date after 1999
 
+{% raw %}
+
 	Article: Q191905
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -117,3 +119,5 @@ permalink: /kb/191/Q191905/
 	
 	=============================================================================
 	
+
+{% endraw %}

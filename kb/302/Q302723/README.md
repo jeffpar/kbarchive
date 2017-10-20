@@ -6,6 +6,8 @@ permalink: /kb/302/Q302723/
 
 ## Q302723: If No Internet Connection Is Configured In MSN Explorer 6.1, App
 
+{% raw %}
+
 	Article: Q302723
 	Product(s): The Microsoft Network
 	Version(s): 6.1
@@ -110,3 +112,5 @@ permalink: /kb/302/Q302723/
 	
 	=============================================================================
 	
+
+{% endraw %}

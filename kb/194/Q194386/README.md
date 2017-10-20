@@ -6,6 +6,8 @@ permalink: /kb/194/Q194386/
 
 ## Q194386: X400: Can't Send Messages to MTA with Checkpoint Size Set to 10
 
+{% raw %}
+
 	Article: Q194386
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -79,3 +81,5 @@ permalink: /kb/194/Q194386/
 	
 	=============================================================================
 	
+
+{% endraw %}

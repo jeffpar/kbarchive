@@ -6,6 +6,8 @@ permalink: /kb/306/Q306368/
 
 ## Q306368: HOWTO: Use RAPI to Add Keys and Values to the Remote Registry
 
+{% raw %}
+
 	Article: Q306368
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.11,3.0,6.0
@@ -241,3 +243,5 @@ permalink: /kb/306/Q306368/
 	
 	=============================================================================
 	
+
+{% endraw %}

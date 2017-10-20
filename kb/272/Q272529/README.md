@@ -6,6 +6,8 @@ permalink: /kb/272/Q272529/
 
 ## Q272529: How to frame a picture on the MSN Companion
 
+{% raw %}
+
 	Article: Q272529
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -70,3 +72,5 @@ permalink: /kb/272/Q272529/
 	
 	=============================================================================
 	
+
+{% endraw %}

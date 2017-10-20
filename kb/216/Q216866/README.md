@@ -6,6 +6,8 @@ permalink: /kb/216/Q216866/
 
 ## Q216866: WD97: Summary Information Under Properties Is Not Encrypted
 
+{% raw %}
+
 	Article: Q216866
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -111,3 +113,5 @@ permalink: /kb/216/Q216866/
 	
 	=============================================================================
 	
+
+{% endraw %}

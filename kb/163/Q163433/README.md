@@ -6,6 +6,8 @@ permalink: /kb/163/Q163433/
 
 ## Q163433: Kids Plus!: Uninstalling Protect It!
 
+{% raw %}
+
 	Article: Q163433
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -112,3 +114,5 @@ permalink: /kb/163/Q163433/
 	
 	=============================================================================
 	
+
+{% endraw %}

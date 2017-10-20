@@ -6,6 +6,8 @@ permalink: /kb/220/Q220835/
 
 ## Q220835: HOWTO: Change the Code Page of Project Files
 
+{% raw %}
+
 	Article: Q220835
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -171,3 +173,5 @@ permalink: /kb/220/Q220835/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/169/Q169762/
 
 ## Q169762: XADM: Import Fails with Event ID 13 and ID 235
 
+{% raw %}
+
 	Article: Q169762
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -72,3 +74,5 @@ permalink: /kb/169/Q169762/
 	
 	=============================================================================
 	
+
+{% endraw %}

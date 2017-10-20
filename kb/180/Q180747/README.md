@@ -6,6 +6,8 @@ permalink: /kb/180/Q180747/
 
 ## Q180747: FIX: Focus Does Not Return to an MDI Parent Form
 
+{% raw %}
+
 	Article: Q180747
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -105,3 +107,5 @@ permalink: /kb/180/Q180747/
 	
 	=============================================================================
 	
+
+{% endraw %}

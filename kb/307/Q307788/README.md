@@ -6,6 +6,8 @@ permalink: /kb/307/Q307788/
 
 ## Q307788: PRB: FTP Logs Show 550 Error Message w/Connection over UNC Share
 
+{% raw %}
+
 	Article: Q307788
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -56,3 +58,5 @@ permalink: /kb/307/Q307788/
 	
 	=============================================================================
 	
+
+{% endraw %}

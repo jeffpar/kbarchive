@@ -6,6 +6,8 @@ permalink: /kb/059/Q59090/
 
 ## Q59090: Flight Simulator: EGA Mode on Toshiba T3200
 
+{% raw %}
+
 	Article: Q59090
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -40,3 +42,5 @@ permalink: /kb/059/Q59090/
 	
 	=============================================================================
 	
+
+{% endraw %}

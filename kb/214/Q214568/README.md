@@ -6,6 +6,8 @@ permalink: /kb/214/Q214568/
 
 ## Q214568: Suppressing the &quot;Domain Controller Cannot Be Reached&quot; Message
 
+{% raw %}
+
 	Article: Q214568
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/214/Q214568/
 	
 	=============================================================================
 	
+
+{% endraw %}

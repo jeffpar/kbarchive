@@ -6,6 +6,8 @@ permalink: /kb/231/Q231915/
 
 ## Q231915: XFOR: T-shooting Data Migration with Notes Application Connector
 
+{% raw %}
+
 	Article: Q231915
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -105,3 +107,5 @@ permalink: /kb/231/Q231915/
 	
 	=============================================================================
 	
+
+{% endraw %}

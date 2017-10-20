@@ -6,6 +6,8 @@ permalink: /kb/142/Q142583/
 
 ## Q142583: 3D Movie Maker: Inserted Sound Doesn't Play
 
+{% raw %}
+
 	Article: Q142583
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/142/Q142583/
 	
 	=============================================================================
 	
+
+{% endraw %}

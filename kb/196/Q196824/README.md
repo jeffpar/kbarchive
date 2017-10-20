@@ -6,6 +6,8 @@ permalink: /kb/196/Q196824/
 
 ## Q196824: SMS: SQL Server 7.0 Not Recommended or Supported with SMS 1.2
 
+{% raw %}
+
 	Article: Q196824
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.2,4.5,7.0
@@ -45,3 +47,5 @@ permalink: /kb/196/Q196824/
 	
 	=============================================================================
 	
+
+{% endraw %}

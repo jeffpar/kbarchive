@@ -6,6 +6,8 @@ permalink: /kb/072/Q72705/
 
 ## Q72705: DOCERR: ENDM Can't Be Used to Return Value from Macro Function
 
+{% raw %}
+
 	Article: Q72705
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -36,3 +38,5 @@ permalink: /kb/072/Q72705/
 	
 	=============================================================================
 	
+
+{% endraw %}

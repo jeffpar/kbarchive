@@ -6,6 +6,8 @@ permalink: /kb/177/Q177757/
 
 ## Q177757: Dr. Watson Does Not Report Service Pack Number
 
+{% raw %}
+
 	Article: Q177757
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -61,3 +63,5 @@ permalink: /kb/177/Q177757/
 	
 	=============================================================================
 	
+
+{% endraw %}

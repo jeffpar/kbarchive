@@ -6,6 +6,8 @@ permalink: /kb/174/Q174966/
 
 ## Q174966: PRB: DDE With Word 97 Returns 'Ambiguous Name Detected: TmpDDE'
 
+{% raw %}
+
 	Article: Q174966
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,2.5a,2.5b,2.6,2.6a,3.0,3.0b,5.0,5.0a,6.0,97
@@ -114,3 +116,5 @@ permalink: /kb/174/Q174966/
 	
 	=============================================================================
 	
+
+{% endraw %}

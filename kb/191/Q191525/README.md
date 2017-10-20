@@ -6,6 +6,8 @@ permalink: /kb/191/Q191525/
 
 ## Q191525: FIX: OpenTables of Cursor Object May Fail with Locate Dialog
 
+{% raw %}
+
 	Article: Q191525
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -97,3 +99,5 @@ permalink: /kb/191/Q191525/
 	
 	=============================================================================
 	
+
+{% endraw %}

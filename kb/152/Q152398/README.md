@@ -6,6 +6,8 @@ permalink: /kb/152/Q152398/
 
 ## Q152398: Login.exe Now Sets Primary Server After Successful Login
 
+{% raw %}
+
 	Article: Q152398
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51
@@ -66,3 +68,5 @@ permalink: /kb/152/Q152398/
 	
 	=============================================================================
 	
+
+{% endraw %}

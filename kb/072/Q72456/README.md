@@ -6,6 +6,8 @@ permalink: /kb/072/Q72456/
 
 ## Q72456: Problem Exiting Windows Setup Using Keyboard
 
+{% raw %}
+
 	Article: Q72456
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -49,3 +51,5 @@ permalink: /kb/072/Q72456/
 	
 	=============================================================================
 	
+
+{% endraw %}

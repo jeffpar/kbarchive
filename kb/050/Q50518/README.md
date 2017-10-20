@@ -6,6 +6,8 @@ permalink: /kb/050/Q50518/
 
 ## Q50518: BX Register Is Popped Twice for a C Interrupt Function
 
+{% raw %}
+
 	Article: Q50518
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -56,3 +58,5 @@ permalink: /kb/050/Q50518/
 	
 	This ensures that the state of the registers are saved and then
 	restored in the Interrupt Service Routine.
+
+{% endraw %}

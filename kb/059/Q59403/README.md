@@ -6,6 +6,8 @@ permalink: /kb/059/Q59403/
 
 ## Q59403: BASIC &amp;num Constant Defaults to &amp;Onum (Octal), Not &amp;Hnum (Hex)
 
+{% raw %}
+
 	Article: Q59403
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -74,3 +76,5 @@ permalink: /kb/059/Q59403/
 	
 	If you want a hexadecimal number, the & (ampersand sign) must be
 	followed with H, as in line 60 above.
+
+{% endraw %}

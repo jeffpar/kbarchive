@@ -6,6 +6,8 @@ permalink: /kb/119/Q119754/
 
 ## Q119754: ADT/ODE: Compile Error When Running ADT or ODE Application
 
+{% raw %}
+
 	Article: Q119754
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 2.0 7.0 97
@@ -153,3 +155,5 @@ permalink: /kb/119/Q119754/
 	
 	=============================================================================
 	
+
+{% endraw %}

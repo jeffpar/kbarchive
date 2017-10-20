@@ -6,6 +6,8 @@ permalink: /kb/166/Q166558/
 
 ## Q166558: XFOR: Inbound Internet Message May Cause Access Violation
 
+{% raw %}
+
 	Article: Q166558
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0
@@ -77,3 +79,5 @@ permalink: /kb/166/Q166558/
 	
 	=============================================================================
 	
+
+{% endraw %}

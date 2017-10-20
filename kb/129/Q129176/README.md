@@ -6,6 +6,8 @@ permalink: /kb/129/Q129176/
 
 ## Q129176: Demonstration Mode Conflicts with Media Vision
 
+{% raw %}
+
 	Article: Q129176
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,1.0a
@@ -57,3 +59,5 @@ permalink: /kb/129/Q129176/
 	
 	=============================================================================
 	
+
+{% endraw %}

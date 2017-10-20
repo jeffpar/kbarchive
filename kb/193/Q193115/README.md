@@ -6,6 +6,8 @@ permalink: /kb/193/Q193115/
 
 ## Q193115: CG3: ClipGallery Opens Slowly After Installing Office SR-2 Patch
 
+{% raw %}
+
 	Article: Q193115
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): WINDOWS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/193/Q193115/
 	
 	=============================================================================
 	
+
+{% endraw %}

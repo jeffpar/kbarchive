@@ -6,6 +6,8 @@ permalink: /kb/140/Q140858/
 
 ## Q140858: PRB: _CRTDBG_MAP_ALLOC Does Not Work as Documented
 
+{% raw %}
+
 	Article: Q140858
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS NT:4.0,4.1,5.0;
@@ -113,3 +115,5 @@ permalink: /kb/140/Q140858/
 	
 	=============================================================================
 	
+
+{% endraw %}

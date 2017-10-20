@@ -6,6 +6,8 @@ permalink: /kb/175/Q175443/
 
 ## Q175443: FIX: Application Error When Binding Dynamically-Created Control
 
+{% raw %}
+
 	Article: Q175443
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -131,3 +133,5 @@ permalink: /kb/175/Q175443/
 	
 	=============================================================================
 	
+
+{% endraw %}

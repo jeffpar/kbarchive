@@ -6,6 +6,8 @@ permalink: /kb/137/Q137297/
 
 ## Q137297: NetWare Clients Not Receiving Shared Network Distribution
 
+{% raw %}
+
 	Article: Q137297
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -54,3 +56,5 @@ permalink: /kb/137/Q137297/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234049/
 
 ## Q234049: Logon Script Does Not Work Due to Net.bat File in Netlogon Share
 
+{% raw %}
+
 	Article: Q234049
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -62,3 +64,5 @@ permalink: /kb/234/Q234049/
 	
 	=============================================================================
 	
+
+{% endraw %}

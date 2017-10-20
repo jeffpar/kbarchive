@@ -6,6 +6,8 @@ permalink: /kb/049/Q49847/
 
 ## Q49847: Using TREE and XCOPY on Subdirectories in MS-DOS
 
+{% raw %}
+
 	Article: Q49847
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:4.x,5.x,6.0,6.2,6.21,6.22
@@ -49,3 +51,5 @@ permalink: /kb/049/Q49847/
 	
 	=============================================================================
 	
+
+{% endraw %}

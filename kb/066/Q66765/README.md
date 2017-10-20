@@ -6,6 +6,8 @@ permalink: /kb/066/Q66765/
 
 ## Q66765: ASD: SHIFT+BACKSPACE Does Not Engage Thrust Reversers
 
+{% raw %}
+
 	Article: Q66765
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -29,3 +31,5 @@ permalink: /kb/066/Q66765/
 	
 	=============================================================================
 	
+
+{% endraw %}

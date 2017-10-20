@@ -6,6 +6,8 @@ permalink: /kb/257/Q257765/
 
 ## Q257765: SNA DDM Service Fails with an Access Violation Error
 
+{% raw %}
+
 	Article: Q257765
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -123,3 +125,5 @@ permalink: /kb/257/Q257765/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/259/Q259529/
 
 ## Q259529: INFO: How Visual Basic Classes Map to COM
 
+{% raw %}
+
 	Article: Q259529
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -78,3 +80,5 @@ permalink: /kb/259/Q259529/
 	
 	=============================================================================
 	
+
+{% endraw %}

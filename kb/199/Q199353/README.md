@@ -6,6 +6,8 @@ permalink: /kb/199/Q199353/
 
 ## Q199353: XFOR: Behavior of an Updated Invitation to Notes from Outlook
 
+{% raw %}
+
 	Article: Q199353
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -56,3 +58,5 @@ permalink: /kb/199/Q199353/
 	
 	=============================================================================
 	
+
+{% endraw %}

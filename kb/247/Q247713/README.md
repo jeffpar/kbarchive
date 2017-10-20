@@ -6,6 +6,8 @@ permalink: /kb/247/Q247713/
 
 ## Q247713: BUG: ClassView Doesn't Show All Methods for an Interface
 
+{% raw %}
+
 	Article: Q247713
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -146,3 +148,5 @@ permalink: /kb/247/Q247713/
 	
 	=============================================================================
 	
+
+{% endraw %}

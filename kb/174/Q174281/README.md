@@ -6,6 +6,8 @@ permalink: /kb/174/Q174281/
 
 ## Q174281: WinNT Computers with ZAK Tools Have a Blank Desktop
 
+{% raw %}
+
 	Article: Q174281
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:3.51,4.0;Win95
@@ -86,3 +88,5 @@ permalink: /kb/174/Q174281/
 	
 	=============================================================================
 	
+
+{% endraw %}

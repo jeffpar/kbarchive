@@ -6,6 +6,8 @@ permalink: /kb/243/Q243848/
 
 ## Q243848: Windows NT Server 4.0 Terminal Server Restarts Unexpectedly
 
+{% raw %}
+
 	Article: Q243848
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -71,3 +73,5 @@ permalink: /kb/243/Q243848/
 	
 	=============================================================================
 	
+
+{% endraw %}

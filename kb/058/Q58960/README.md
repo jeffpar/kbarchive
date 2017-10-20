@@ -6,6 +6,8 @@ permalink: /kb/058/Q58960/
 
 ## Q58960: Size and Memory Limits in QBX.EXE in BASIC PDS 7.00
 
+{% raw %}
+
 	Article: Q58960
 	Product(s): See article
 	Version(s): 7.00
@@ -98,3 +100,5 @@ permalink: /kb/058/Q58960/
 	Number of lines in Immediate window    10                0
 	Characters in View window on one line  255               0
 	Length of COMMAND$ string              124 characters    0
+
+{% endraw %}

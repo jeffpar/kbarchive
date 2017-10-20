@@ -6,6 +6,8 @@ permalink: /kb/150/Q150133/
 
 ## Q150133: BUG: WRITE Fails with Preconnected Unit=5 in Console Program
 
+{% raw %}
+
 	Article: Q150133
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,4.0
@@ -89,3 +91,5 @@ permalink: /kb/150/Q150133/
 	
 	=============================================================================
 	
+
+{% endraw %}

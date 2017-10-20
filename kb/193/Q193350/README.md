@@ -6,6 +6,8 @@ permalink: /kb/193/Q193350/
 
 ## Q193350: Virtual Globe Err Msg: Unable to Locate Favorites Folder...
 
+{% raw %}
+
 	Article: Q193350
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -59,3 +61,5 @@ permalink: /kb/193/Q193350/
 	
 	=============================================================================
 	
+
+{% endraw %}

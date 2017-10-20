@@ -6,6 +6,8 @@ permalink: /kb/042/Q42858/
 
 ## Q42858: OPEN &quot;A:NUL&quot; Activates Device Specified; &quot;A:&#92;DEV&#92;NUL&quot; Doesn't
 
+{% raw %}
+
 	Article: Q42858
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -36,3 +38,5 @@ permalink: /kb/042/Q42858/
 	statements result in a "Disk not ready" error message from either a
 	compiled program or one run under the QBX.EXE environment. The error
 	can still be trapped using normal BASIC error handling, however.
+
+{% endraw %}

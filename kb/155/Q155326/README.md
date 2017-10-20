@@ -6,6 +6,8 @@ permalink: /kb/155/Q155326/
 
 ## Q155326: Windows 95 Defrag.exe Command-Line Parameters
 
+{% raw %}
+
 	Article: Q155326
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -75,3 +77,5 @@ permalink: /kb/155/Q155326/
 	
 	=============================================================================
 	
+
+{% endraw %}

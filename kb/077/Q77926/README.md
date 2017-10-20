@@ -6,6 +6,8 @@ permalink: /kb/077/Q77926/
 
 ## Q77926: PC DB: Description of Mail Database Subdirectories
 
+{% raw %}
+
 	Article: Q77926
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1x,3.0,3.2
@@ -273,3 +275,5 @@ permalink: /kb/077/Q77926/
 	
 	=============================================================================
 	
+
+{% endraw %}

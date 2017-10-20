@@ -6,6 +6,8 @@ permalink: /kb/228/Q228947/
 
 ## Q228947: Midtown Madness: Snow Textures, Cloud Shadows Appear Triangular
 
+{% raw %}
+
 	Article: Q228947
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -82,3 +84,5 @@ permalink: /kb/228/Q228947/
 	
 	=============================================================================
 	
+
+{% endraw %}

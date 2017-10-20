@@ -6,6 +6,8 @@ permalink: /kb/141/Q141141/
 
 ## Q141141: Visual FoxPro 3.0 Book List
 
+{% raw %}
+
 	Article: Q141141
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b
@@ -179,3 +181,5 @@ permalink: /kb/141/Q141141/
 	
 	=============================================================================
 	
+
+{% endraw %}

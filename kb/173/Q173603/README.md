@@ -6,6 +6,8 @@ permalink: /kb/173/Q173603/
 
 ## Q173603: WD97: &quot;Word Cannot Save or Create This File&quot; Error Quitting Word
 
+{% raw %}
+
 	Article: Q173603
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -208,3 +210,5 @@ permalink: /kb/173/Q173603/
 	
 	=============================================================================
 	
+
+{% endraw %}

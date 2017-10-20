@@ -6,6 +6,8 @@ permalink: /kb/155/Q155100/
 
 ## Q155100: Error Message Trying to Run King's Quest 7 in Windows NT
 
+{% raw %}
+
 	Article: Q155100
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -61,3 +63,5 @@ permalink: /kb/155/Q155100/
 	
 	=============================================================================
 	
+
+{% endraw %}

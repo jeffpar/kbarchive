@@ -6,6 +6,8 @@ permalink: /kb/242/Q242192/
 
 ## Q242192: BUG: uncaught_exception() Always Returns False
 
+{% raw %}
+
 	Article: Q242192
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -52,3 +54,5 @@ permalink: /kb/242/Q242192/
 	
 	=============================================================================
 	
+
+{% endraw %}

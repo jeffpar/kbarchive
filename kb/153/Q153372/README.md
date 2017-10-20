@@ -6,6 +6,8 @@ permalink: /kb/153/Q153372/
 
 ## Q153372: Using Numeric Keys with Numlock On in Chat
 
+{% raw %}
+
 	Article: Q153372
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -42,3 +44,5 @@ permalink: /kb/153/Q153372/
 	
 	=============================================================================
 	
+
+{% endraw %}

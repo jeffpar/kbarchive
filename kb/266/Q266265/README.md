@@ -6,6 +6,8 @@ permalink: /kb/266/Q266265/
 
 ## Q266265: HOWTO: Implement MatchedWithList Validation Check in ComboBox
 
+{% raw %}
+
 	Article: Q266265
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -129,3 +131,5 @@ permalink: /kb/266/Q266265/
 	
 	=============================================================================
 	
+
+{% endraw %}

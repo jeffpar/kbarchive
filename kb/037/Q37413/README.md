@@ -6,6 +6,8 @@ permalink: /kb/037/Q37413/
 
 ## Q37413: EXE2BIN Cannot Convert QuickBASIC .EXE Files to .COM Files
 
+{% raw %}
+
 	Article: Q37413
 	Product(s): See article
 	Version(s): 1.00 1.01 1.02 2.00 2.01 3.00 4.00 4.00b 4.50
@@ -43,3 +45,5 @@ permalink: /kb/037/Q37413/
 	'Give the MS-DOS command: EXE2BIN X.EXE X.COM
 	'The "file cannot be converted" message results.
 	PRINT "TEST"
+
+{% endraw %}

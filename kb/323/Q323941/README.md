@@ -6,6 +6,8 @@ permalink: /kb/323/Q323941/
 
 ## Q323941: Zoo Tycoon Err Msg: Cannot Locate File Ws2_32.dll or Ws2help.dll
 
+{% raw %}
+
 	Article: Q323941
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -110,3 +112,5 @@ permalink: /kb/323/Q323941/
 	
 	=============================================================================
 	
+
+{% endraw %}

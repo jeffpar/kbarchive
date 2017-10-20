@@ -6,6 +6,8 @@ permalink: /kb/121/Q121518/
 
 ## Q121518: Confusing Definition in User Manager for Domains Help
 
+{% raw %}
+
 	Article: Q121518
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/121/Q121518/
 	
 	=============================================================================
 	
+
+{% endraw %}

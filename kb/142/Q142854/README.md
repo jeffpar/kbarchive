@@ -6,6 +6,8 @@ permalink: /kb/142/Q142854/
 
 ## Q142854: Err Msg: &quot;HTTP/1.0 501 Not Supported&quot; on ODBC Query
 
+{% raw %}
+
 	Article: Q142854
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -62,3 +64,5 @@ permalink: /kb/142/Q142854/
 	
 	=============================================================================
 	
+
+{% endraw %}

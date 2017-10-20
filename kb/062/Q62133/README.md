@@ -6,6 +6,8 @@ permalink: /kb/062/Q62133/
 
 ## Q62133: Mac Hyp: Getting the Message Name from the Message Type
 
+{% raw %}
+
 	Article: Q62133
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -46,3 +48,5 @@ permalink: /kb/062/Q62133/
 	
 	=============================================================================
 	
+
+{% endraw %}

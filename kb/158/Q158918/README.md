@@ -6,6 +6,8 @@ permalink: /kb/158/Q158918/
 
 ## Q158918: WD97: How to Insert a Caption Next to an Equation or Object
 
+{% raw %}
+
 	Article: Q158918
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -290,3 +292,5 @@ permalink: /kb/158/Q158918/
 	
 	=============================================================================
 	
+
+{% endraw %}

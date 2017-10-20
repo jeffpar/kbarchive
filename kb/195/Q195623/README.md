@@ -6,6 +6,8 @@ permalink: /kb/195/Q195623/
 
 ## Q195623: FIX: Index Corruption When Table is Used in Read-Only Mode
 
+{% raw %}
+
 	Article: Q195623
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a,6.0
@@ -283,3 +285,5 @@ permalink: /kb/195/Q195623/
 	
 	=============================================================================
 	
+
+{% endraw %}

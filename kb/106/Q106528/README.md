@@ -6,6 +6,8 @@ permalink: /kb/106/Q106528/
 
 ## Q106528: BUG: Error in WINTEE.PIF Causes &quot;Start-Up Directory Not Found&quot;
 
+{% raw %}
+
 	Article: Q106528
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 1.0,1.0a
@@ -75,3 +77,5 @@ permalink: /kb/106/Q106528/
 	
 	=============================================================================
 	
+
+{% endraw %}

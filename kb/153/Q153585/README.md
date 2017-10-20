@@ -6,6 +6,8 @@ permalink: /kb/153/Q153585/
 
 ## Q153585: SMS: Program Group Not Deleted From Windows NT Client
 
+{% raw %}
+
 	Article: Q153585
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1
@@ -58,3 +60,5 @@ permalink: /kb/153/Q153585/
 	
 	=============================================================================
 	
+
+{% endraw %}

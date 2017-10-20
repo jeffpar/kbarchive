@@ -6,6 +6,8 @@ permalink: /kb/249/Q249046/
 
 ## Q249046: XADM: Exchange Setup Doesn't Work; Error 0xC002041D
 
+{% raw %}
+
 	Article: Q249046
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:2000; winnt:5.5
@@ -74,3 +76,5 @@ permalink: /kb/249/Q249046/
 	
 	=============================================================================
 	
+
+{% endraw %}

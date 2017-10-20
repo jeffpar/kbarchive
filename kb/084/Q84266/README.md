@@ -6,6 +6,8 @@ permalink: /kb/084/Q84266/
 
 ## Q84266: Err Msg: This DLL Can Only Be Used with ToolBook Evaluation...
 
+{% raw %}
+
 	Article: Q84266
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0,1.0a; WINDOWS:3.x
@@ -50,3 +52,5 @@ permalink: /kb/084/Q84266/
 	
 	=============================================================================
 	
+
+{% endraw %}

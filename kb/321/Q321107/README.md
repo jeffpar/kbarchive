@@ -6,6 +6,8 @@ permalink: /kb/321/Q321107/
 
 ## Q321107: INFO: Visual SourceSafe Integration Is Not Available
 
+{% raw %}
+
 	Article: Q321107
 	Product(s): Microsoft SourceSafe
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/321/Q321107/
 	
 	=============================================================================
 	
+
+{% endraw %}

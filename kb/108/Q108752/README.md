@@ -6,6 +6,8 @@ permalink: /kb/108/Q108752/
 
 ## Q108752: VSafe Message: You Must Load VSafe Before Starting Windows
 
+{% raw %}
+
 	Article: Q108752
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22; WINDOWS:3.1,3.11
@@ -51,3 +53,5 @@ permalink: /kb/108/Q108752/
 	
 	=============================================================================
 	
+
+{% endraw %}

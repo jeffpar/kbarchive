@@ -6,6 +6,8 @@ permalink: /kb/183/Q183350/
 
 ## Q183350: XCON: Inserted Bitmap Image Appears As Attached .Att File
 
+{% raw %}
+
 	Article: Q183350
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -97,3 +99,5 @@ permalink: /kb/183/Q183350/
 	
 	=============================================================================
 	
+
+{% endraw %}

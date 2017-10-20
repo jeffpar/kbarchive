@@ -6,6 +6,8 @@ permalink: /kb/059/Q59924/
 
 ## Q59924: Mac Hyp: Displaying Mail's Message Center Window
 
+{% raw %}
+
 	Article: Q59924
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0,3.0
@@ -74,3 +76,5 @@ permalink: /kb/059/Q59924/
 	
 	=============================================================================
 	
+
+{% endraw %}

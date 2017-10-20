@@ -6,6 +6,8 @@ permalink: /kb/069/Q69109/
 
 ## Q69109: &quot;Illegal Function Call&quot; Selecting Menu Item Using UI Toolbox
 
+{% raw %}
+
 	Article: Q69109
 	Product(s): See article
 	Version(s): 7.00 7.10
@@ -177,3 +179,5 @@ permalink: /kb/069/Q69109/
 	7. Type:
 	
 	      LINK /Q UITBEFR.LIB, UITBEFR.QLB,, QBXQLB.LIB;
+
+{% endraw %}

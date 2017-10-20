@@ -6,6 +6,8 @@ permalink: /kb/197/Q197790/
 
 ## Q197790: Bookshelf 99: Error Message When You Resize Program Window
 
+{% raw %}
+
 	Article: Q197790
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/197/Q197790/
 	
 	=============================================================================
 	
+
+{% endraw %}

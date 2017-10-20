@@ -6,6 +6,8 @@ permalink: /kb/031/Q31563/
 
 ## Q31563: Linking FORTRAN and C, &quot;L2044 _FF_MsgBanner Multiply Defined&quot;
 
+{% raw %}
+
 	Article: Q31563
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -26,3 +28,5 @@ permalink: /kb/031/Q31563/
 	change the error message received. When the FORTRAN library is first,
 	the error may be "Floating Point Not Loaded." When the C library is
 	first, the error will be "Symbol Multiply Defined."
+
+{% endraw %}

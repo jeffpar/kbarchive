@@ -6,6 +6,8 @@ permalink: /kb/074/Q74576/
 
 ## Q74576: Communication Between EMM386.EXE and Windows
 
+{% raw %}
+
 	Article: Q74576
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -72,3 +74,5 @@ permalink: /kb/074/Q74576/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/248/Q248831/
 
 ## Q248831: BUG: Incorrect Symbols for Kerberos DLLs on Windows 2000
 
+{% raw %}
+
 	Article: Q248831
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:
@@ -78,3 +80,5 @@ permalink: /kb/248/Q248831/
 	
 	=============================================================================
 	
+
+{% endraw %}

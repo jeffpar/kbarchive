@@ -6,6 +6,8 @@ permalink: /kb/257/Q257780/
 
 ## Q257780: FIX:Unrecognized Database Format, Data Control or Data Form Wiz
 
+{% raw %}
+
 	Article: Q257780
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -150,3 +152,5 @@ permalink: /kb/257/Q257780/
 	
 	=============================================================================
 	
+
+{% endraw %}

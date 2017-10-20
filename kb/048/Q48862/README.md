@@ -6,6 +6,8 @@ permalink: /kb/048/Q48862/
 
 ## Q48862: Incrementally Updating Libraries with NMAKE
 
+{% raw %}
+
 	Article: Q48862
 	Product(s): See article
 	Version(s): 1.00 1.01 1.10 1.11 1.12 | 1.11 1.12
@@ -54,3 +56,5 @@ permalink: /kb/048/Q48862/
 	
 	   lib foo.lib -+ foo1.OBJ;
 	   lib foo.lib -+ foo3.OBJ;
+
+{% endraw %}

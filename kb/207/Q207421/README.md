@@ -6,6 +6,8 @@ permalink: /kb/207/Q207421/
 
 ## Q207421: SMS: Advertisements Cannot Be Deleted with Just Delete Right
 
+{% raw %}
+
 	Article: Q207421
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -49,3 +51,5 @@ permalink: /kb/207/Q207421/
 	
 	=============================================================================
 	
+
+{% endraw %}

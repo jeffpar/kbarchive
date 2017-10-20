@@ -6,6 +6,8 @@ permalink: /kb/050/Q50896/
 
 ## Q50896: If WIDTH 80,60 in SCREEN 12 Then PALETTE Can Give Wrong Color
 
+{% raw %}
+
 	Article: Q50896
 	Product(s): See article
 	Version(s): 4.50
@@ -43,3 +45,5 @@ permalink: /kb/050/Q50896/
 	   FOR X = 1 TO 16
 	       LINE (X * 10, 0)-(X * 10 + 20, 350), X, BF
 	   NEXT
+
+{% endraw %}

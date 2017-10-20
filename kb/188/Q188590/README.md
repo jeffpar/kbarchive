@@ -6,6 +6,8 @@ permalink: /kb/188/Q188590/
 
 ## Q188590: XADM: Unable to view Public Folders After Restore
 
+{% raw %}
+
 	Article: Q188590
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5
@@ -55,3 +57,5 @@ permalink: /kb/188/Q188590/
 	
 	=============================================================================
 	
+
+{% endraw %}

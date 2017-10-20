@@ -6,6 +6,8 @@ permalink: /kb/176/Q176001/
 
 ## Q176001: XFOR: Accessing the Contents Table of Non-Replicated PF Fails
 
+{% raw %}
+
 	Article: Q176001
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -79,3 +81,5 @@ permalink: /kb/176/Q176001/
 	
 	=============================================================================
 	
+
+{% endraw %}

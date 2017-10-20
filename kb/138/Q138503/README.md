@@ -6,6 +6,8 @@ permalink: /kb/138/Q138503/
 
 ## Q138503: PRB: Visual FoxPro Help Jumps to Wrong Topic
 
+{% raw %}
+
 	Article: Q138503
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -52,3 +54,5 @@ permalink: /kb/138/Q138503/
 	
 	=============================================================================
 	
+
+{% endraw %}

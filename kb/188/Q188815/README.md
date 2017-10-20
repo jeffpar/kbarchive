@@ -6,6 +6,8 @@ permalink: /kb/188/Q188815/
 
 ## Q188815: Notes Connector Error Msg: Unable to Find Path to Server
 
+{% raw %}
+
 	Article: Q188815
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -84,3 +86,5 @@ permalink: /kb/188/Q188815/
 	
 	=============================================================================
 	
+
+{% endraw %}

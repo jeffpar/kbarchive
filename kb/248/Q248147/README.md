@@ -6,6 +6,8 @@ permalink: /kb/248/Q248147/
 
 ## Q248147: PRB: Cannot Cycle Through Pageframe Controls with Tab Key
 
+{% raw %}
+
 	Article: Q248147
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -68,3 +70,5 @@ permalink: /kb/248/Q248147/
 	
 	=============================================================================
 	
+
+{% endraw %}

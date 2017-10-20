@@ -6,6 +6,8 @@ permalink: /kb/149/Q149860/
 
 ## Q149860: Older Version of CTL3D.DLL Causes &quot;Not Enough Memory&quot; Message
 
+{% raw %}
+
 	Article: Q149860
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51
@@ -48,3 +50,5 @@ permalink: /kb/149/Q149860/
 	
 	=============================================================================
 	
+
+{% endraw %}

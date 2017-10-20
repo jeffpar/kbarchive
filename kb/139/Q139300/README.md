@@ -6,6 +6,8 @@ permalink: /kb/139/Q139300/
 
 ## Q139300: SNA Remote Access Service Client May Not See Remote Network
 
+{% raw %}
+
 	Article: Q139300
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.1,2.11
@@ -123,3 +125,5 @@ permalink: /kb/139/Q139300/
 	
 	=============================================================================
 	
+
+{% endraw %}

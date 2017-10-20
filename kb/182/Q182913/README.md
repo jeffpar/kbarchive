@@ -6,6 +6,8 @@ permalink: /kb/182/Q182913/
 
 ## Q182913: SNA Server is Working Although SNA Manager Shows &quot;Offline&quot;
 
+{% raw %}
+
 	Article: Q182913
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,4.0
@@ -100,3 +102,5 @@ permalink: /kb/182/Q182913/
 	
 	=============================================================================
 	
+
+{% endraw %}

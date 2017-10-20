@@ -6,6 +6,8 @@ permalink: /kb/257/Q257834/
 
 ## Q257834: CardBus Functionality in Windows 95
 
+{% raw %}
+
 	Article: Q257834
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -47,3 +49,5 @@ permalink: /kb/257/Q257834/
 	
 	=============================================================================
 	
+
+{% endraw %}

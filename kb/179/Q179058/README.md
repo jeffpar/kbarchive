@@ -6,6 +6,8 @@ permalink: /kb/179/Q179058/
 
 ## Q179058: XADM: Store on Alpha Fails When POP3 User Retrieves Attachment
 
+{% raw %}
+
 	Article: Q179058
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0,5.5
@@ -111,3 +113,5 @@ permalink: /kb/179/Q179058/
 	
 	=============================================================================
 	
+
+{% endraw %}

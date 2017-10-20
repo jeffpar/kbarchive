@@ -6,6 +6,8 @@ permalink: /kb/197/Q197817/
 
 ## Q197817: IIS4.0 Logs Incorrect Value for Time Taken in W3C Extended Log
 
+{% raw %}
+
 	Article: Q197817
 	Product(s): Internet Information Server
 	Version(s): WINNT:4.0
@@ -130,3 +132,5 @@ permalink: /kb/197/Q197817/
 	
 	=============================================================================
 	
+
+{% endraw %}

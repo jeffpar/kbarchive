@@ -6,6 +6,8 @@ permalink: /kb/166/Q166470/
 
 ## Q166470: PRB: LINK Fatal Error LNK1104 Cannot Open File
 
+{% raw %}
+
 	Article: Q166470
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0;
@@ -116,3 +118,5 @@ permalink: /kb/166/Q166470/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148953/
 
 ## Q148953: IIS Fails to Connect to Sybase Server
 
+{% raw %}
+
 	Article: Q148953
 	Product(s): Internet Information Server
 	Version(s): 1.0
@@ -59,3 +61,5 @@ permalink: /kb/148/Q148953/
 	
 	=============================================================================
 	
+
+{% endraw %}

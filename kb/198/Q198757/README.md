@@ -6,6 +6,8 @@ permalink: /kb/198/Q198757/
 
 ## Q198757: DNS Events 5501, 5000, and 9999 Fill Up the Event Log
 
+{% raw %}
+
 	Article: Q198757
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -140,3 +142,5 @@ permalink: /kb/198/Q198757/
 	
 	=============================================================================
 	
+
+{% endraw %}

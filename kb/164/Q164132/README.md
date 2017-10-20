@@ -6,6 +6,8 @@ permalink: /kb/164/Q164132/
 
 ## Q164132: SideWinder Pro 3D Joystick Not Recognized with PAS 16 Sound Card
 
+{% raw %}
+
 	Article: Q164132
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/164/Q164132/
 	
 	=============================================================================
 	
+
+{% endraw %}

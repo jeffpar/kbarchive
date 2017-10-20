@@ -6,6 +6,8 @@ permalink: /kb/173/Q173132/
 
 ## Q173132: Replacing Missing Control Panel Icons
 
+{% raw %}
+
 	Article: Q173132
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -146,3 +148,5 @@ permalink: /kb/173/Q173132/
 	
 	=============================================================================
 	
+
+{% endraw %}

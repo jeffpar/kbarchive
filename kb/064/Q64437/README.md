@@ -6,6 +6,8 @@ permalink: /kb/064/Q64437/
 
 ## Q64437: A.P.T. Omits /NOI Requirement for Linking with C Run-Time DLL
 
+{% raw %}
+
 	Article: Q64437
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -33,3 +35,5 @@ permalink: /kb/064/Q64437/
 	
 	If you build from within the Programmer's WorkBench (PWB), the /NOI is
 	inserted automatically and everything works correctly.
+
+{% endraw %}

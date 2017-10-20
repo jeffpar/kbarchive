@@ -6,6 +6,8 @@ permalink: /kb/243/Q243045/
 
 ## Q243045: XIMS: Internet Mail Service Reroutes Message Even Though the
 
+{% raw %}
+
 	Article: Q243045
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -123,3 +125,5 @@ permalink: /kb/243/Q243045/
 	
 	=============================================================================
 	
+
+{% endraw %}

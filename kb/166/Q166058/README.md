@@ -6,6 +6,8 @@ permalink: /kb/166/Q166058/
 
 ## Q166058: WD97: Open for Editing from Word Viewer Creates Instance of Word
 
+{% raw %}
+
 	Article: Q166058
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:
@@ -68,3 +70,5 @@ permalink: /kb/166/Q166058/
 	
 	=============================================================================
 	
+
+{% endraw %}

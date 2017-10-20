@@ -6,6 +6,8 @@ permalink: /kb/071/Q71609/
 
 ## Q71609: Errors Caused by Cross-Linked Files or Lost Clusters
 
+{% raw %}
+
 	Article: Q71609
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): MS-DOS:3.x,4.x,5.0,6.0; WINDOWS:3.0,3.0a,3.1,3.11
@@ -145,3 +147,5 @@ permalink: /kb/071/Q71609/
 	
 	=============================================================================
 	
+
+{% endraw %}

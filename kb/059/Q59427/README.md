@@ -6,6 +6,8 @@ permalink: /kb/059/Q59427/
 
 ## Q59427: BC.EXE &quot;Internal Error Near x&quot; Using Static Long Integer Array
 
+{% raw %}
+
 	Article: Q59427
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -52,3 +54,5 @@ permalink: /kb/059/Q59427/
 	'Subtraction and division cause error, not addition or multiplication:
 	B& = A&(i%, 1 - i%) + A&(i%, i%)   'Remove this line to prevent error
 	'B& = A&(i%, 0 + 1 - i%) + A&(i%, i%) 'Equivalent line works correctly
+
+{% endraw %}

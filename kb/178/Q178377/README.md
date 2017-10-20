@@ -6,6 +6,8 @@ permalink: /kb/178/Q178377/
 
 ## Q178377: How to Use MSN to Automatically Configure Outlook Express
 
+{% raw %}
+
 	Article: Q178377
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:2.5,4.0
@@ -59,3 +61,5 @@ permalink: /kb/178/Q178377/
 	
 	=============================================================================
 	
+
+{% endraw %}

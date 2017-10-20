@@ -6,6 +6,8 @@ permalink: /kb/249/Q249829/
 
 ## Q249829: Add Custom Properties to an ATL OLE DB Provider
 
+{% raw %}
+
 	Article: Q249829
 	Product(s): Microsoft C Compiler
 	Version(s): 6.0
@@ -162,3 +164,5 @@ permalink: /kb/249/Q249829/
 	
 	=============================================================================
 	
+
+{% endraw %}

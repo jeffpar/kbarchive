@@ -6,6 +6,8 @@ permalink: /kb/149/Q149606/
 
 ## Q149606: Fatal Exception 0E in VNETBIOS Using NetWare Login Script
 
+{% raw %}
+
 	Article: Q149606
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -60,3 +62,5 @@ permalink: /kb/149/Q149606/
 	
 	=============================================================================
 	
+
+{% endraw %}

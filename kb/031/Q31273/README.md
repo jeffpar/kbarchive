@@ -6,6 +6,8 @@ permalink: /kb/031/Q31273/
 
 ## Q31273: INPUT X% Statement Gives No &quot;Type Mismatch&quot; for d, e, !, or #
 
+{% raw %}
+
 	Article: Q31273
 	Product(s): See article
 	Version(s): 3.00 4.00 4.00b 4.50
@@ -54,3 +56,5 @@ permalink: /kb/031/Q31273/
 	END
 	
 	Additional reference words: B_GWBasicI B_BasicCom
+
+{% endraw %}

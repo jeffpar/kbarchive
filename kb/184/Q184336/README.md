@@ -6,6 +6,8 @@ permalink: /kb/184/Q184336/
 
 ## Q184336: XCLN: Message Format Unavailable After Outlook 98 Is Installed
 
+{% raw %}
+
 	Article: Q184336
 	Product(s): Microsoft Exchange
 	Version(s): 98
@@ -83,3 +85,5 @@ permalink: /kb/184/Q184336/
 	
 	=============================================================================
 	
+
+{% endraw %}

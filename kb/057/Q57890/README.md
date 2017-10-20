@@ -6,6 +6,8 @@ permalink: /kb/057/Q57890/
 
 ## Q57890: Overhead for /V and /W Event Trapping Is Reduced in BASIC 7.00
 
+{% raw %}
+
 	Article: Q57890
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 | 6.00 6.00b 7.00
@@ -35,3 +37,5 @@ permalink: /kb/057/Q57890/
 	4.00, 4.00b, and 4.50 and in Microsoft BASIC Compiler 6.00 and 6.00b,
 	this call occupies 5 bytes. In BASIC 7.00, this has been reduced to 3
 	bytes per call.
+
+{% endraw %}

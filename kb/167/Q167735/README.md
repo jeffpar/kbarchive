@@ -6,6 +6,8 @@ permalink: /kb/167/Q167735/
 
 ## Q167735: FIX: Setting Printer to Item in the Printers Collection Fails
 
+{% raw %}
+
 	Article: Q167735
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -109,3 +111,5 @@ permalink: /kb/167/Q167735/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/162/Q162579/
 
 ## Q162579: WD97: Linked Picture Doesn't Preserve Scaling Properties
 
+{% raw %}
+
 	Article: Q162579
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -163,3 +165,5 @@ permalink: /kb/162/Q162579/
 	
 	=============================================================================
 	
+
+{% endraw %}

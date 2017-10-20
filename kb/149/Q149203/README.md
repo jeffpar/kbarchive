@@ -6,6 +6,8 @@ permalink: /kb/149/Q149203/
 
 ## Q149203: XFOR: Preventing Winmail.dat From Being Sent Over IMC
 
+{% raw %}
+
 	Article: Q149203
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,8.0,8.01; winnt:4.0
@@ -162,3 +164,5 @@ permalink: /kb/149/Q149203/
 	
 	=============================================================================
 	
+
+{% endraw %}

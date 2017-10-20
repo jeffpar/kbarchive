@@ -6,6 +6,8 @@ permalink: /kb/045/Q45169/
 
 ## Q45169: PCOPY Causes Screen Snow on Some CGA Video Cards
 
+{% raw %}
+
 	Article: Q45169
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -32,3 +34,5 @@ permalink: /kb/045/Q45169/
 	PRINT "Watch the snow"
 	PCOPY 0, 1
 	SCREEN 0, , 1, 1
+
+{% endraw %}

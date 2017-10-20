@@ -6,6 +6,8 @@ permalink: /kb/030/Q30455/
 
 ## Q30455: Why QB/QBX Editor Options Might Revert to Default; QB.INI File
 
+{% raw %}
+
 	Article: Q30455
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -74,3 +76,5 @@ permalink: /kb/030/Q30455/
 	Drive C:
 	
 	   PATH C:\QB.450
+
+{% endraw %}

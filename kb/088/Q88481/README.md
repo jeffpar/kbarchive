@@ -6,6 +6,8 @@ permalink: /kb/088/Q88481/
 
 ## Q88481: Customizing Sounds in Golf for Windows
 
+{% raw %}
+
 	Article: Q88481
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -28,3 +30,5 @@ permalink: /kb/088/Q88481/
 	
 	=============================================================================
 	
+
+{% endraw %}

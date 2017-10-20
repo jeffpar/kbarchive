@@ -6,6 +6,8 @@ permalink: /kb/105/Q105542/
 
 ## Q105542: Mac Srv: Users Missing After Upgrading to System 7
 
+{% raw %}
+
 	Article: Q105542
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.0,3.1
@@ -73,3 +75,5 @@ permalink: /kb/105/Q105542/
 	
 	=============================================================================
 	
+
+{% endraw %}

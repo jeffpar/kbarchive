@@ -6,6 +6,8 @@ permalink: /kb/244/Q244542/
 
 ## Q244542: Doc Err: Host Account Manager Cannot Change Windows NT Password
 
+{% raw %}
+
 	Article: Q244542
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3
@@ -88,3 +90,5 @@ permalink: /kb/244/Q244542/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/263/Q263841/
 
 ## Q263841: PC DB: NDR When Sending from Microsoft Mail to Exchange Server
 
+{% raw %}
+
 	Article: Q263841
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:; winnt:4.0,5.0,5.5
@@ -59,3 +61,5 @@ permalink: /kb/263/Q263841/
 	
 	=============================================================================
 	
+
+{% endraw %}

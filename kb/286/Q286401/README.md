@@ -6,6 +6,8 @@ permalink: /kb/286/Q286401/
 
 ## Q286401: UNCAuthenticationPassThrough Support Limitation in IIS 5.0
 
+{% raw %}
+
 	Article: Q286401
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -54,3 +56,5 @@ permalink: /kb/286/Q286401/
 	
 	=============================================================================
 	
+
+{% endraw %}

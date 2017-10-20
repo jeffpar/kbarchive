@@ -6,6 +6,8 @@ permalink: /kb/240/Q240145/
 
 ## Q240145: XADM: Determining Which Transaction Logs Can Be Safely Removed
 
+{% raw %}
+
 	Article: Q240145
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -155,3 +157,5 @@ permalink: /kb/240/Q240145/
 	
 	=============================================================================
 	
+
+{% endraw %}

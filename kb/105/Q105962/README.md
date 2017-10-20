@@ -6,6 +6,8 @@ permalink: /kb/105/Q105962/
 
 ## Q105962: PC MAPI: C Equivalent to MAPI APPEXEC.TXT in MS Visual Basic
 
+{% raw %}
+
 	Article: Q105962
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0b,3.2
@@ -119,3 +121,5 @@ permalink: /kb/105/Q105962/
 	
 	=============================================================================
 	
+
+{% endraw %}

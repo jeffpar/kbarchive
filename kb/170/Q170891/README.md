@@ -6,6 +6,8 @@ permalink: /kb/170/Q170891/
 
 ## Q170891: WD97: Macro to Count Sections in a Document
 
+{% raw %}
+
 	Article: Q170891
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -96,3 +98,5 @@ permalink: /kb/170/Q170891/
 	
 	=============================================================================
 	
+
+{% endraw %}

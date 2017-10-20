@@ -6,6 +6,8 @@ permalink: /kb/035/Q35285/
 
 ## Q35285: Monochrome Display Adapter Normal Text Example
 
+{% raw %}
+
 	Article: Q35285
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -36,3 +38,5 @@ permalink: /kb/035/Q35285/
 	 _settextcolor(oldcolor);
 	 _setbkcolor(oldbkcolor);
 	}
+
+{% endraw %}

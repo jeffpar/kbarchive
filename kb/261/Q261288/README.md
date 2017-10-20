@@ -6,6 +6,8 @@ permalink: /kb/261/Q261288/
 
 ## Q261288: XGEN: DAPI Error Codes for Exchange Server 5.5 (Part 2 of 2)
 
+{% raw %}
+
 	Article: Q261288
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0,5.5; winnt:5.5; :2.1
@@ -608,3 +610,5 @@ permalink: /kb/261/Q261288/
 	
 	=============================================================================
 	
+
+{% endraw %}

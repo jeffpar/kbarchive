@@ -6,6 +6,8 @@ permalink: /kb/088/Q88888/
 
 ## Q88888: SET SCOREBOARD and SET STATUS Commands in FoxBASE+
 
+{% raw %}
+
 	Article: Q88888
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:1.21,2.1
@@ -42,3 +44,5 @@ permalink: /kb/088/Q88888/
 	
 	=============================================================================
 	
+
+{% endraw %}

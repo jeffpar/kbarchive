@@ -6,6 +6,8 @@ permalink: /kb/121/Q121543/
 
 ## Q121543: Setting Up for Remote Debugging
 
+{% raw %}
+
 	Article: Q121543
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51
@@ -248,3 +250,5 @@ permalink: /kb/121/Q121543/
 	
 	=============================================================================
 	
+
+{% endraw %}

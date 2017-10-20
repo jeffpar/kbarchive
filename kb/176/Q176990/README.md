@@ -6,6 +6,8 @@ permalink: /kb/176/Q176990/
 
 ## Q176990: SMSINST: Installer Does Not Install Printers
 
+{% raw %}
+
 	Article: Q176990
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:1.0
@@ -67,3 +69,5 @@ permalink: /kb/176/Q176990/
 	
 	=============================================================================
 	
+
+{% endraw %}

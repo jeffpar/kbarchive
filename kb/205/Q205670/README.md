@@ -6,6 +6,8 @@ permalink: /kb/205/Q205670/
 
 ## Q205670: HOWTO: Get Access to an ActiveX Control from its Property Page
 
+{% raw %}
+
 	Article: Q205670
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -205,3 +207,5 @@ permalink: /kb/205/Q205670/
 	
 	=============================================================================
 	
+
+{% endraw %}

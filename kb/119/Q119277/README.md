@@ -6,6 +6,8 @@ permalink: /kb/119/Q119277/
 
 ## Q119277: Err Msg: &quot;Access denied&quot; Running MS-Mail SMTP Gateway in VDM
 
+{% raw %}
+
 	Article: Q119277
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -54,3 +56,5 @@ permalink: /kb/119/Q119277/
 	
 	=============================================================================
 	
+
+{% endraw %}

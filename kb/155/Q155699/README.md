@@ -6,6 +6,8 @@ permalink: /kb/155/Q155699/
 
 ## Q155699: Display Type Dialog Box Does Not Detect DAC Type
 
+{% raw %}
+
 	Article: Q155699
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -48,3 +50,5 @@ permalink: /kb/155/Q155699/
 	
 	=============================================================================
 	
+
+{% endraw %}

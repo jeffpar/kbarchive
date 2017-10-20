@@ -6,6 +6,8 @@ permalink: /kb/212/Q212905/
 
 ## Q212905: SMS: Configuring and Suppressing SMS 2.0 Client Agent Messages
 
+{% raw %}
+
 	Article: Q212905
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -111,3 +113,5 @@ permalink: /kb/212/Q212905/
 	
 	=============================================================================
 	
+
+{% endraw %}

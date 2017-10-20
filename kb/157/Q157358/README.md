@@ -6,6 +6,8 @@ permalink: /kb/157/Q157358/
 
 ## Q157358: XCON: Per-Domain-Bilateral-Info and Third Party Systems
 
+{% raw %}
+
 	Article: Q157358
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/157/Q157358/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242231/
 
 ## Q242231: PRB: The Mouse Pointer Cannot Be Changed in a SnapIn Project
 
+{% raw %}
+
 	Article: Q242231
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:1.1,1.2,6.0
@@ -64,3 +66,5 @@ permalink: /kb/242/Q242231/
 	
 	=============================================================================
 	
+
+{% endraw %}

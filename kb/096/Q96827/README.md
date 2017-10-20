@@ -6,6 +6,8 @@ permalink: /kb/096/Q96827/
 
 ## Q96827: VSAFE Err Msg: &quot;...Is Trying to Modify System Memory&quot;
 
+{% raw %}
+
 	Article: Q96827
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -55,3 +57,5 @@ permalink: /kb/096/Q96827/
 	
 	=============================================================================
 	
+
+{% endraw %}

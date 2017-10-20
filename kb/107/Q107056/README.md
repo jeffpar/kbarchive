@@ -6,6 +6,8 @@ permalink: /kb/107/Q107056/
 
 ## Q107056: File Server Hangs Network After Accessing Shared CD-ROM
 
+{% raw %}
+
 	Article: Q107056
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -79,3 +81,5 @@ permalink: /kb/107/Q107056/
 	
 	=============================================================================
 	
+
+{% endraw %}

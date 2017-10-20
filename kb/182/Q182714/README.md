@@ -6,6 +6,8 @@ permalink: /kb/182/Q182714/
 
 ## Q182714: StartDoc and OpenPrinter Fail to Return Correct Error Codes
 
+{% raw %}
+
 	Article: Q182714
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0,3.0 SP1,3.0 SP2,4.0
@@ -70,3 +72,5 @@ permalink: /kb/182/Q182714/
 	
 	=============================================================================
 	
+
+{% endraw %}

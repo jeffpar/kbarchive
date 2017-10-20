@@ -6,6 +6,8 @@ permalink: /kb/140/Q140823/
 
 ## Q140823: MS-DOS Client Setup Fails with Error CSU7520
 
+{% raw %}
+
 	Article: Q140823
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -68,3 +70,5 @@ permalink: /kb/140/Q140823/
 	
 	=============================================================================
 	
+
+{% endraw %}

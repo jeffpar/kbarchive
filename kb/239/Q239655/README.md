@@ -6,6 +6,8 @@ permalink: /kb/239/Q239655/
 
 ## Q239655: Event ID 4224 Jet Errors in WINS
 
+{% raw %}
+
 	Article: Q239655
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -98,3 +100,5 @@ permalink: /kb/239/Q239655/
 	
 	=============================================================================
 	
+
+{% endraw %}

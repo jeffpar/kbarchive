@@ -6,6 +6,8 @@ permalink: /kb/257/Q257928/
 
 ## Q257928: How to Manually Remove the Cluster Service
 
+{% raw %}
+
 	Article: Q257928
 	Product(s): Microsoft Windows NT
 	Version(s): 2000,4.0
@@ -129,3 +131,5 @@ permalink: /kb/257/Q257928/
 	
 	=============================================================================
 	
+
+{% endraw %}

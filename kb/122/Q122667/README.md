@@ -6,6 +6,8 @@ permalink: /kb/122/Q122667/
 
 ## Q122667: Writer: Card Borders Print Solid Green on HP DeskJet
 
+{% raw %}
+
 	Article: Q122667
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a
@@ -50,3 +52,5 @@ permalink: /kb/122/Q122667/
 	
 	=============================================================================
 	
+
+{% endraw %}

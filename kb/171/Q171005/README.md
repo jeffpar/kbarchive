@@ -6,6 +6,8 @@ permalink: /kb/171/Q171005/
 
 ## Q171005: SMS: Site Config Manager Service Locks Trusted Service Account
 
+{% raw %}
+
 	Article: Q171005
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -87,3 +89,5 @@ permalink: /kb/171/Q171005/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/111/Q111536/
 
 ## Q111536: PC Gen: Microsoft Mail and Virus Security
 
+{% raw %}
+
 	Article: Q111536
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.0a,3.0b,3.2
@@ -125,3 +127,5 @@ permalink: /kb/111/Q111536/
 	
 	=============================================================================
 	
+
+{% endraw %}

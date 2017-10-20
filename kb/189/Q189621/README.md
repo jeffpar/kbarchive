@@ -6,6 +6,8 @@ permalink: /kb/189/Q189621/
 
 ## Q189621: Print Server Overrides Paper Source Parameters When Using HPT
 
+{% raw %}
+
 	Article: Q189621
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:4.0,4.0 SP1
@@ -121,3 +123,5 @@ permalink: /kb/189/Q189621/
 	
 	=============================================================================
 	
+
+{% endraw %}

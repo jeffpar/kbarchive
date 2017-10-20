@@ -6,6 +6,8 @@ permalink: /kb/150/Q150731/
 
 ## Q150731: Deleting Single Entries From Static Multihomed Box Fails w/ Sp4
 
+{% raw %}
+
 	Article: Q150731
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -54,3 +56,5 @@ permalink: /kb/150/Q150731/
 	
 	=============================================================================
 	
+
+{% endraw %}

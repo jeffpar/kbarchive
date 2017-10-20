@@ -6,6 +6,8 @@ permalink: /kb/154/Q154963/
 
 ## Q154963: DosSetSigHandler API Not Behaving as Expected in OS/2 Subsystem
 
+{% raw %}
+
 	Article: Q154963
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -63,3 +65,5 @@ permalink: /kb/154/Q154963/
 	
 	=============================================================================
 	
+
+{% endraw %}

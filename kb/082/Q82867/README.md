@@ -6,6 +6,8 @@ permalink: /kb/082/Q82867/
 
 ## Q82867: Simulated Italic Fonts Are Spaced Apart in Persuasion
 
+{% raw %}
+
 	Article: Q82867
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -58,3 +60,5 @@ permalink: /kb/082/Q82867/
 	
 	=============================================================================
 	
+
+{% endraw %}

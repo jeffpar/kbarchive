@@ -6,6 +6,8 @@ permalink: /kb/096/Q96454/
 
 ## Q96454: PC WFW: Installing Extensions for Workgroups
 
+{% raw %}
+
 	Article: Q96454
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.1
@@ -150,3 +152,5 @@ permalink: /kb/096/Q96454/
 	
 	=============================================================================
 	
+
+{% endraw %}

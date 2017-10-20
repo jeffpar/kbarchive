@@ -6,6 +6,8 @@ permalink: /kb/149/Q149743/
 
 ## Q149743: BUG: Error When Data Control Is Set to a Wrong Text Database
 
+{% raw %}
+
 	Article: Q149743
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -72,3 +74,5 @@ permalink: /kb/149/Q149743/
 	
 	=============================================================================
 	
+
+{% endraw %}

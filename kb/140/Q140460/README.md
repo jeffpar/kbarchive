@@ -6,6 +6,8 @@ permalink: /kb/140/Q140460/
 
 ## Q140460: Dial-Up Networking Does Not Obtain an IP Address
 
+{% raw %}
+
 	Article: Q140460
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -84,3 +86,5 @@ permalink: /kb/140/Q140460/
 	
 	=============================================================================
 	
+
+{% endraw %}

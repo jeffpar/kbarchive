@@ -6,6 +6,8 @@ permalink: /kb/163/Q163023/
 
 ## Q163023: FIX: VFP 3 Form or Class Modified in VFP 5 Loses Method Code
 
+{% raw %}
+
 	Article: Q163023
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0
@@ -154,3 +156,5 @@ permalink: /kb/163/Q163023/
 	
 	=============================================================================
 	
+
+{% endraw %}

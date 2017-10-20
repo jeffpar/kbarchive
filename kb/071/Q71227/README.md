@@ -6,6 +6,8 @@ permalink: /kb/071/Q71227/
 
 ## Q71227: INFO: Inverting Color Inverts Palette Index, Not RGB Value
 
+{% raw %}
+
 	Article: Q71227
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1,95; winnt:3.5,3.51,4.0
@@ -99,3 +101,5 @@ permalink: /kb/071/Q71227/
 	
 	=============================================================================
 	
+
+{% endraw %}

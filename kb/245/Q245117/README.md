@@ -6,6 +6,8 @@ permalink: /kb/245/Q245117/
 
 ## Q245117: Administrative Shares Do Not Appear on Server.
 
+{% raw %}
+
 	Article: Q245117
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -73,3 +75,5 @@ permalink: /kb/245/Q245117/
 	
 	=============================================================================
 	
+
+{% endraw %}

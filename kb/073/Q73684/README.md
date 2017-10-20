@@ -6,6 +6,8 @@ permalink: /kb/073/Q73684/
 
 ## Q73684: FIX: MASM 6.0 May Initialize Every 256th Data Symbol
 
+{% raw %}
+
 	Article: Q73684
 	Product(s): Microsoft Macro Assembler
 	Version(s): MS-DOS:6.0
@@ -84,3 +86,5 @@ permalink: /kb/073/Q73684/
 	
 	=============================================================================
 	
+
+{% endraw %}

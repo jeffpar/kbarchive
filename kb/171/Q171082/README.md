@@ -6,6 +6,8 @@ permalink: /kb/171/Q171082/
 
 ## Q171082: BUG: SQLTables w/ Table Type of 'VIEW' Return 'SYS' and 'SYSTEM'
 
+{% raw %}
+
 	Article: Q171082
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:1.0,2.5,3.0
@@ -53,3 +55,5 @@ permalink: /kb/171/Q171082/
 	
 	=============================================================================
 	
+
+{% endraw %}

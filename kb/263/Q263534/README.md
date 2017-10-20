@@ -6,6 +6,8 @@ permalink: /kb/263/Q263534/
 
 ## Q263534: XGEN: Err. Mssg. When Using the Global Address List Modify Tool
 
+{% raw %}
+
 	Article: Q263534
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -72,3 +74,5 @@ permalink: /kb/263/Q263534/
 	
 	=============================================================================
 	
+
+{% endraw %}

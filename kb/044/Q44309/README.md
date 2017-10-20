@@ -6,6 +6,8 @@ permalink: /kb/044/Q44309/
 
 ## Q44309: DATA Column in BC /A Assembly .LST Listing Is DGROUP Data
 
+{% raw %}
+
 	Article: Q44309
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -65,3 +67,5 @@ permalink: /kb/044/Q44309/
 	The last entry in the "Data" column shows that a total of 20 bytes (6
 	+ 2 + 4 + 8 = 20) have been allocated in near data. Note the value is
 	shown as a hexadecimal number (0014 hex = 20 decimal).
+
+{% endraw %}

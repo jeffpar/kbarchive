@@ -6,6 +6,8 @@ permalink: /kb/174/Q174819/
 
 ## Q174819: XWEB: Microsoft Exchange Active Server Components Templates
 
+{% raw %}
+
 	Article: Q174819
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.0
@@ -42,3 +44,5 @@ permalink: /kb/174/Q174819/
 	
 	=============================================================================
 	
+
+{% endraw %}

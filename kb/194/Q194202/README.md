@@ -6,6 +6,8 @@ permalink: /kb/194/Q194202/
 
 ## Q194202: PRB: Datatype Error Accessing Property With _Access Method
 
+{% raw %}
+
 	Article: Q194202
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -107,3 +109,5 @@ permalink: /kb/194/Q194202/
 	
 	=============================================================================
 	
+
+{% endraw %}

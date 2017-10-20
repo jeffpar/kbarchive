@@ -6,6 +6,8 @@ permalink: /kb/134/Q134630/
 
 ## Q134630: Numbers Incorrect if Disconnected During Phone Book Transfer
 
+{% raw %}
+
 	Article: Q134630
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.2,1.3
@@ -64,3 +66,5 @@ permalink: /kb/134/Q134630/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/159/Q159909/
 
 ## Q159909: STOP 0x0000000A May Occur on Multiprocessor Systems
 
+{% raw %}
+
 	Article: Q159909
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -76,3 +78,5 @@ permalink: /kb/159/Q159909/
 	
 	=============================================================================
 	
+
+{% endraw %}

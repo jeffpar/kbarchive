@@ -6,6 +6,8 @@ permalink: /kb/150/Q150233/
 
 ## Q150233: FIX: TopMost Window Does Not Stay on Top in Design Environment
 
+{% raw %}
+
 	Article: Q150233
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/150/Q150233/
 	
 	=============================================================================
 	
+
+{% endraw %}

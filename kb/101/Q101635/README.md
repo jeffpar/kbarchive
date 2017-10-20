@@ -6,6 +6,8 @@ permalink: /kb/101/Q101635/
 
 ## Q101635: Explorer Cannot Enumerate Path Longer than 260 Characters
 
+{% raw %}
+
 	Article: Q101635
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.5,3.51,4.0
@@ -42,3 +44,5 @@ permalink: /kb/101/Q101635/
 	
 	=============================================================================
 	
+
+{% endraw %}

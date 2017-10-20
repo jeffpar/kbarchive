@@ -6,6 +6,8 @@ permalink: /kb/125/Q125379/
 
 ## Q125379: 1995 Windows Encarta: Media Gallery Truncates Drop-Down Menu
 
+{% raw %}
+
 	Article: Q125379
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1995 edition; WINDOWS:3.1x
@@ -62,3 +64,5 @@ permalink: /kb/125/Q125379/
 	
 	=============================================================================
 	
+
+{% endraw %}

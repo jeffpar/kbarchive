@@ -6,6 +6,8 @@ permalink: /kb/128/Q128898/
 
 ## Q128898: Missing Network Software Components in Control Panel
 
+{% raw %}
+
 	Article: Q128898
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -82,3 +84,5 @@ permalink: /kb/128/Q128898/
 	
 	=============================================================================
 	
+
+{% endraw %}

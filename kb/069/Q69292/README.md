@@ -6,6 +6,8 @@ permalink: /kb/069/Q69292/
 
 ## Q69292: PRB: Video Driver GP-Faults When Handling Large Bitmaps
 
+{% raw %}
+
 	Article: Q69292
 	Product(s): Microsoft Windows Device Driver Kit
 	Version(s): 3.0,3.1
@@ -67,3 +69,5 @@ permalink: /kb/069/Q69292/
 	
 	=============================================================================
 	
+
+{% endraw %}

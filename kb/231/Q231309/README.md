@@ -6,6 +6,8 @@ permalink: /kb/231/Q231309/
 
 ## Q231309: WD97: Bullets Change When Pasting Text to Another Document
 
+{% raw %}
+
 	Article: Q231309
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -70,3 +72,5 @@ permalink: /kb/231/Q231309/
 	
 	=============================================================================
 	
+
+{% endraw %}

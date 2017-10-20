@@ -6,6 +6,8 @@ permalink: /kb/115/Q115491/
 
 ## Q115491: SMTP: Err Msg: Error Bind (110) Smtp_listen System Error
 
+{% raw %}
+
 	Article: Q115491
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -96,3 +98,5 @@ permalink: /kb/115/Q115491/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/242/Q242595/
 
 ## Q242595: English Locale Appears when Japanese Language Pack Installed
 
+{% raw %}
+
 	Article: Q242595
 	Product(s): Internet Information Server
 	Version(s): winnt:5.0
@@ -53,3 +55,5 @@ permalink: /kb/242/Q242595/
 	
 	=============================================================================
 	
+
+{% endraw %}

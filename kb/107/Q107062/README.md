@@ -6,6 +6,8 @@ permalink: /kb/107/Q107062/
 
 ## Q107062: PC WRmt: Microsoft Mail and SHARE.EXE
 
+{% raw %}
+
 	Article: Q107062
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -59,3 +61,5 @@ permalink: /kb/107/Q107062/
 	
 	=============================================================================
 	
+
+{% endraw %}

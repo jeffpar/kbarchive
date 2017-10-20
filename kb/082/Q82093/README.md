@@ -6,6 +6,8 @@ permalink: /kb/082/Q82093/
 
 ## Q82093: HP DeskJet 500C Memory and Hard Disk Requirements
 
+{% raw %}
+
 	Article: Q82093
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a
@@ -80,3 +82,5 @@ permalink: /kb/082/Q82093/
 	
 	=============================================================================
 	
+
+{% endraw %}

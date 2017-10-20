@@ -6,6 +6,8 @@ permalink: /kb/313/Q313724/
 
 ## Q313724: Dial-up Networking Version 1.3 Is Required When Upgrading From M
 
+{% raw %}
+
 	Article: Q313724
 	Product(s): The Microsoft Network
 	Version(s): 2.6
@@ -49,3 +51,5 @@ permalink: /kb/313/Q313724/
 	
 	=============================================================================
 	
+
+{% endraw %}

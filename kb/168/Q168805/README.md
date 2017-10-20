@@ -6,6 +6,8 @@ permalink: /kb/168/Q168805/
 
 ## Q168805: WD97: Creating Large Numbers of Styles Creates Huge Scratch File
 
+{% raw %}
+
 	Article: Q168805
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -71,3 +73,5 @@ permalink: /kb/168/Q168805/
 	
 	=============================================================================
 	
+
+{% endraw %}

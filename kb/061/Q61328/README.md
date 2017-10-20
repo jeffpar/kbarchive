@@ -6,6 +6,8 @@ permalink: /kb/061/Q61328/
 
 ## Q61328: Why C 6.00 Doesn't Contain DOS Versions of C2L and C3L
 
+{% raw %}
+
 	Article: Q61328
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -29,3 +31,5 @@ permalink: /kb/061/Q61328/
 	the number of symbols in your module, reduce the size of the module,
 	or switch to the OS/2 operating system where there are alternate
 	second and third pass compilers to handle this situation.
+
+{% endraw %}

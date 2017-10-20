@@ -6,6 +6,8 @@ permalink: /kb/186/Q186575/
 
 ## Q186575: NetWare User Access for Terminal Server
 
+{% raw %}
+
 	Article: Q186575
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -43,3 +45,5 @@ permalink: /kb/186/Q186575/
 	
 	=============================================================================
 	
+
+{% endraw %}

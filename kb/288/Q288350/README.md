@@ -6,6 +6,8 @@ permalink: /kb/288/Q288350/
 
 ## Q288350: FTP Failed Login and Bye Command Cause Dr. Watson in Inetinfo
 
+{% raw %}
+
 	Article: Q288350
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -65,3 +67,5 @@ permalink: /kb/288/Q288350/
 	
 	=============================================================================
 	
+
+{% endraw %}

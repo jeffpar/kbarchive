@@ -6,6 +6,8 @@ permalink: /kb/065/Q65309/
 
 ## Q65309: In-Line Assembler Locks Up C 6.00
 
+{% raw %}
+
 	Article: Q65309
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -53,3 +55,5 @@ permalink: /kb/065/Q65309/
 	Microsoft has confirmed this to be a problem in C version 6.00. We are
 	researching this problem and will post new information here as it
 	becomes available.
+
+{% endraw %}

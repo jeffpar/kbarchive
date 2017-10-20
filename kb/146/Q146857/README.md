@@ -6,6 +6,8 @@ permalink: /kb/146/Q146857/
 
 ## Q146857: XCLN: Moving Shared Folders Changes Ownership and Permissions
 
+{% raw %}
+
 	Article: Q146857
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0,5.0
@@ -61,3 +63,5 @@ permalink: /kb/146/Q146857/
 	
 	=============================================================================
 	
+
+{% endraw %}

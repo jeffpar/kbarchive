@@ -6,6 +6,8 @@ permalink: /kb/258/Q258591/
 
 ## Q258591: Baseball 2001: How to Troubleshoot Video Problems
 
+{% raw %}
+
 	Article: Q258591
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -171,3 +173,5 @@ permalink: /kb/258/Q258591/
 	
 	=============================================================================
 	
+
+{% endraw %}

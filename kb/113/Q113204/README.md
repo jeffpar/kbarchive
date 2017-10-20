@@ -6,6 +6,8 @@ permalink: /kb/113/Q113204/
 
 ## Q113204: Scenes 1.0: Unrecognized Error. Please Reinstall Scenes
 
+{% raw %}
+
 	Article: Q113204
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -74,3 +76,5 @@ permalink: /kb/113/Q113204/
 	
 	=============================================================================
 	
+
+{% endraw %}

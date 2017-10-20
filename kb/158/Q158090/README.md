@@ -6,6 +6,8 @@ permalink: /kb/158/Q158090/
 
 ## Q158090: Setup Runs Slowly; Virus Extension Loaded
 
+{% raw %}
+
 	Article: Q158090
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1997 edition; MACINTOSH:
@@ -60,3 +62,5 @@ permalink: /kb/158/Q158090/
 	
 	=============================================================================
 	
+
+{% endraw %}

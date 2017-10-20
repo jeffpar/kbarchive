@@ -6,6 +6,8 @@ permalink: /kb/225/Q225242/
 
 ## Q225242: MDAC Folder Is Not Included in Windows NT Service Pack 5
 
+{% raw %}
+
 	Article: Q225242
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -44,3 +46,5 @@ permalink: /kb/225/Q225242/
 	
 	=============================================================================
 	
+
+{% endraw %}

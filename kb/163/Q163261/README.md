@@ -6,6 +6,8 @@ permalink: /kb/163/Q163261/
 
 ## Q163261: DEC ALPHA WinNT 4.0 Servers w/ SP2 Fail to Lease DHCP Addresses
 
+{% raw %}
+
 	Article: Q163261
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -75,3 +77,5 @@ permalink: /kb/163/Q163261/
 	
 	=============================================================================
 	
+
+{% endraw %}

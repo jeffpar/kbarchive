@@ -6,6 +6,8 @@ permalink: /kb/221/Q221715/
 
 ## Q221715: FIX: Class Browser HTML Export Code Gives Invalid HTML 3.2 Code
 
+{% raw %}
+
 	Article: Q221715
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:6.0
@@ -69,3 +71,5 @@ permalink: /kb/221/Q221715/
 	
 	=============================================================================
 	
+
+{% endraw %}

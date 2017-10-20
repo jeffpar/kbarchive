@@ -6,6 +6,8 @@ permalink: /kb/138/Q138779/
 
 ## Q138779: HOWTO: Make a Lookup Combo Box in a Grid
 
+{% raw %}
+
 	Article: Q138779
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -150,3 +152,5 @@ permalink: /kb/138/Q138779/
 	
 	=============================================================================
 	
+
+{% endraw %}

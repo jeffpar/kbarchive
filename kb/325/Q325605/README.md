@@ -6,6 +6,8 @@ permalink: /kb/325/Q325605/
 
 ## Q325605: Microsoft Office XP Plain &amp; Simple Comments and Corrections
 
+{% raw %}
+
 	Article: Q325605
 	Product(s): Microsoft Press
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/325/Q325605/
 	
 	=============================================================================
 	
+
+{% endraw %}

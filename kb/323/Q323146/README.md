@@ -6,6 +6,8 @@ permalink: /kb/323/Q323146/
 
 ## Q323146: SMS: Status Messages Are Not Processed
 
+{% raw %}
+
 	Article: Q323146
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0
@@ -70,3 +72,5 @@ permalink: /kb/323/Q323146/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/136/Q136071/
 
 ## Q136071: DOC: ON ERROR Not Invoked when Error Occurs in Error Event
 
+{% raw %}
+
 	Article: Q136071
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a
@@ -84,3 +86,5 @@ permalink: /kb/136/Q136071/
 	
 	=============================================================================
 	
+
+{% endraw %}

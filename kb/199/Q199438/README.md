@@ -6,6 +6,8 @@ permalink: /kb/199/Q199438/
 
 ## Q199438: WD97: Cannot Add Vertical Bar Tab from Ruler
 
+{% raw %}
+
 	Article: Q199438
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -48,3 +50,5 @@ permalink: /kb/199/Q199438/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/104/Q104393/
 
 ## Q104393: How to Get Control Dimensions from VBGetControlProperty
 
+{% raw %}
+
 	Article: Q104393
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,3.0
@@ -60,3 +62,5 @@ permalink: /kb/104/Q104393/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/274/Q274892/
 
 ## Q274892: CFS2: HUD Displays Throttle Control For Number One Engine Only
 
+{% raw %}
+
 	Article: Q274892
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -43,3 +45,5 @@ permalink: /kb/274/Q274892/
 	
 	=============================================================================
 	
+
+{% endraw %}

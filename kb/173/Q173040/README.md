@@ -6,6 +6,8 @@ permalink: /kb/173/Q173040/
 
 ## Q173040: Event 1003, 1008, 1017, 7023 After DHCP Service Installation
 
+{% raw %}
+
 	Article: Q173040
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -84,3 +86,5 @@ permalink: /kb/173/Q173040/
 	
 	=============================================================================
 	
+
+{% endraw %}

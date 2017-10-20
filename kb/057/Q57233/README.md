@@ -6,6 +6,8 @@ permalink: /kb/057/Q57233/
 
 ## Q57233: C 5.1 Run-Time Reference Example for atan2() Is Missing &quot;)&quot;
 
+{% raw %}
+
 	Article: Q57233
 	Product(s): See article
 	Version(s): 5.10    | 5.10
@@ -19,3 +21,5 @@ permalink: /kb/057/Q57233/
 	line should read as follows:
 	
 	   printf("%.7f\n",atan2(-1.0,1.0));
+
+{% endraw %}

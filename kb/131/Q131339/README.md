@@ -6,6 +6,8 @@ permalink: /kb/131/Q131339/
 
 ## Q131339: STOP Msg: 0x0000000A or 0X0000001E Dis/Reconnecting to WfWG Svr
 
+{% raw %}
+
 	Article: Q131339
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -68,3 +70,5 @@ permalink: /kb/131/Q131339/
 	
 	=============================================================================
 	
+
+{% endraw %}

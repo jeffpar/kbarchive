@@ -6,6 +6,8 @@ permalink: /kb/157/Q157016/
 
 ## Q157016: XCLN: Saving an Encrypted Message to the IS Can Delete Content
 
+{% raw %}
+
 	Article: Q157016
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:4.0
@@ -63,3 +65,5 @@ permalink: /kb/157/Q157016/
 	
 	=============================================================================
 	
+
+{% endraw %}

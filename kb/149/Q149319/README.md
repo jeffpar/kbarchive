@@ -6,6 +6,8 @@ permalink: /kb/149/Q149319/
 
 ## Q149319: FIX: String/Currency Conversion Broken with Sci. Notation
 
+{% raw %}
+
 	Article: Q149319
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -81,3 +83,5 @@ permalink: /kb/149/Q149319/
 	
 	=============================================================================
 	
+
+{% endraw %}

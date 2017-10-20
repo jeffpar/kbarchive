@@ -6,6 +6,8 @@ permalink: /kb/154/Q154948/
 
 ## Q154948: S3.sys Driver Does Not Work with Dell Optiplex
 
+{% raw %}
+
 	Article: Q154948
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -48,3 +50,5 @@ permalink: /kb/154/Q154948/
 	
 	=============================================================================
 	
+
+{% endraw %}

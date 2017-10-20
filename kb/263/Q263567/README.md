@@ -6,6 +6,8 @@ permalink: /kb/263/Q263567/
 
 ## Q263567: XCON: MTA Stops Responding and Cannot Be Stopped
 
+{% raw %}
+
 	Article: Q263567
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -66,3 +68,5 @@ permalink: /kb/263/Q263567/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/072/Q72698/
 
 ## Q72698: Using Full Segment Directives with MASM 6.0 HELLO.ASM
 
+{% raw %}
+
 	Article: Q72698
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b
@@ -127,3 +129,5 @@ permalink: /kb/072/Q72698/
 	
 	=============================================================================
 	
+
+{% endraw %}

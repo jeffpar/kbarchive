@@ -6,6 +6,8 @@ permalink: /kb/247/Q247803/
 
 ## Q247803: EST2000: Problems Printing Driving Directions with Strip Maps
 
+{% raw %}
+
 	Article: Q247803
 	Product(s): Microsoft Automap
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/247/Q247803/
 	
 	=============================================================================
 	
+
+{% endraw %}

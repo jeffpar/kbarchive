@@ -6,6 +6,8 @@ permalink: /kb/274/Q274365/
 
 ## Q274365: MSN Companion Time Zone Settings
 
+{% raw %}
+
 	Article: Q274365
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -58,3 +60,5 @@ permalink: /kb/274/Q274365/
 	
 	=============================================================================
 	
+
+{% endraw %}

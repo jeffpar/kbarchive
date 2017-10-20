@@ -6,6 +6,8 @@ permalink: /kb/172/Q172962/
 
 ## Q172962: WD97: Parentheses Do Not Appear in Result of Form Field Number
 
+{% raw %}
+
 	Article: Q172962
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -86,3 +88,5 @@ permalink: /kb/172/Q172962/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/239/Q239136/
 
 ## Q239136: SMS: Repairing RC Agent Overwrites Custom Viewers List
 
+{% raw %}
+
 	Article: Q239136
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -83,3 +85,5 @@ permalink: /kb/239/Q239136/
 	
 	=============================================================================
 	
+
+{% endraw %}

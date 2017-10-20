@@ -6,6 +6,8 @@ permalink: /kb/254/Q254638/
 
 ## Q254638: XADM: How to Add Permissions to Orphaned Public Folders
 
+{% raw %}
+
 	Article: Q254638
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -70,3 +72,5 @@ permalink: /kb/254/Q254638/
 	
 	=============================================================================
 	
+
+{% endraw %}

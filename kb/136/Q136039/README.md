@@ -6,6 +6,8 @@ permalink: /kb/136/Q136039/
 
 ## Q136039: Installing Windows NT on a Hard Disk Configured with EZ-Drive
 
+{% raw %}
+
 	Article: Q136039
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51
@@ -74,3 +76,5 @@ permalink: /kb/136/Q136039/
 	
 	=============================================================================
 	
+
+{% endraw %}

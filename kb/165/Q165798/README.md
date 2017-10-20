@@ -6,6 +6,8 @@ permalink: /kb/165/Q165798/
 
 ## Q165798: Insert Range of LUs Does Not Work If LUs Are Selected in Manager
 
+{% raw %}
+
 	Article: Q165798
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -58,3 +60,5 @@ permalink: /kb/165/Q165798/
 	
 	=============================================================================
 	
+
+{% endraw %}

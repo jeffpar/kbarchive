@@ -6,6 +6,8 @@ permalink: /kb/147/Q147668/
 
 ## Q147668: PRB: Len and LenB May Differ on Size of User-Defined Types
 
+{% raw %}
+
 	Article: Q147668
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -91,3 +93,5 @@ permalink: /kb/147/Q147668/
 	
 	=============================================================================
 	
+
+{% endraw %}

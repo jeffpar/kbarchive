@@ -6,6 +6,8 @@ permalink: /kb/193/Q193870/
 
 ## Q193870: FIX: New Version of RDO 2.0 Breaks VB5 UserConnection Designer
 
+{% raw %}
+
 	Article: Q193870
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0
@@ -64,3 +66,5 @@ permalink: /kb/193/Q193870/
 	
 	=============================================================================
 	
+
+{% endraw %}

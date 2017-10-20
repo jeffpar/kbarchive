@@ -6,6 +6,8 @@ permalink: /kb/098/Q98932/
 
 ## Q98932: Description of Life Genesis
 
+{% raw %}
+
 	Article: Q98932
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -76,3 +78,5 @@ permalink: /kb/098/Q98932/
 	
 	=============================================================================
 	
+
+{% endraw %}

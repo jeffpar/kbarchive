@@ -6,6 +6,8 @@ permalink: /kb/154/Q154945/
 
 ## Q154945: FlushFileBuffers Not Committing Filesize Properly in NT3.51 SP4
 
+{% raw %}
+
 	Article: Q154945
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -59,3 +61,5 @@ permalink: /kb/154/Q154945/
 	
 	=============================================================================
 	
+
+{% endraw %}

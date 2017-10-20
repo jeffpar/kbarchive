@@ -6,6 +6,8 @@ permalink: /kb/223/Q223064/
 
 ## Q223064: FIX: Filter Changes on DataSource Cause DataGrid to be Incorrect
 
+{% raw %}
+
 	Article: Q223064
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -144,3 +146,5 @@ permalink: /kb/223/Q223064/
 	
 	=============================================================================
 	
+
+{% endraw %}

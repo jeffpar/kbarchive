@@ -6,6 +6,8 @@ permalink: /kb/176/Q176925/
 
 ## Q176925: Multimedia Err Msg: Cannot Load Msreftl.dll
 
+{% raw %}
+
 	Article: Q176925
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -65,3 +67,5 @@ permalink: /kb/176/Q176925/
 	
 	=============================================================================
 	
+
+{% endraw %}

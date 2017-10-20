@@ -6,6 +6,8 @@ permalink: /kb/128/Q128590/
 
 ## Q128590: How to Size, Minimize, or Define a READ Form Window
 
+{% raw %}
+
 	Article: Q128590
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -77,3 +79,5 @@ permalink: /kb/128/Q128590/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/103/Q103591/
 
 ## Q103591: How to Use _GetNewItemId() API Function
 
+{% raw %}
+
 	Article: Q103591
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0; :2.5
@@ -42,3 +44,5 @@ permalink: /kb/103/Q103591/
 	
 	=============================================================================
 	
+
+{% endraw %}

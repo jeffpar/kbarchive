@@ -6,6 +6,8 @@ permalink: /kb/120/Q120738/
 
 ## Q120738: &quot;Routine Not Found&quot; Message Box While Viewing Help File
 
+{% raw %}
+
 	Article: Q120738
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5
@@ -56,3 +58,5 @@ permalink: /kb/120/Q120738/
 	
 	=============================================================================
 	
+
+{% endraw %}

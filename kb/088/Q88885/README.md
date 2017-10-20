@@ -6,6 +6,8 @@ permalink: /kb/088/Q88885/
 
 ## Q88885: INFO: Using the IIF Function in FoxBASE+ or FoxPro
 
+{% raw %}
+
 	Article: Q88885
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:1.0,1.01,1.02,1.21,2.0,2.1,2.5x,2.6x; WINDOWS:2.5x,2.6x,3.0,5.0,6.0
@@ -68,3 +70,5 @@ permalink: /kb/088/Q88885/
 	
 	=============================================================================
 	
+
+{% endraw %}

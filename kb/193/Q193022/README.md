@@ -6,6 +6,8 @@ permalink: /kb/193/Q193022/
 
 ## Q193022: HOWTO: Set ActiveX Procedure and User Interface Defaults
 
+{% raw %}
+
 	Article: Q193022
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -129,3 +131,5 @@ permalink: /kb/193/Q193022/
 	
 	=============================================================================
 	
+
+{% endraw %}

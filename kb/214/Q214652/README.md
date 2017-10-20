@@ -6,6 +6,8 @@ permalink: /kb/214/Q214652/
 
 ## Q214652: WD97: No Macro Warning Opening File Attached to Template
 
+{% raw %}
+
 	Article: Q214652
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -93,3 +95,5 @@ permalink: /kb/214/Q214652/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178536/
 
 ## Q178536: FS98: Horizon Appears Gray or Distorted
 
+{% raw %}
+
 	Article: Q178536
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:
@@ -55,3 +57,5 @@ permalink: /kb/178/Q178536/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/083/Q83737/
 
 ## Q83737: Wyse 386/SX 3016 Beeps Erratically in 386 Enhanced Mode
 
+{% raw %}
+
 	Article: Q83737
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -84,3 +86,5 @@ permalink: /kb/083/Q83737/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/194/Q194076/
 
 ## Q194076: XWEB: OWA Client Cannot Access Folders with Affinity
 
+{% raw %}
+
 	Article: Q194076
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -47,3 +49,5 @@ permalink: /kb/194/Q194076/
 	
 	=============================================================================
 	
+
+{% endraw %}

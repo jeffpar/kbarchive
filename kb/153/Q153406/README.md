@@ -6,6 +6,8 @@ permalink: /kb/153/Q153406/
 
 ## Q153406: SMS: Client Icons Do Not Deinstall
 
+{% raw %}
+
 	Article: Q153406
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -50,3 +52,5 @@ permalink: /kb/153/Q153406/
 	
 	=============================================================================
 	
+
+{% endraw %}

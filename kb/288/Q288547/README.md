@@ -6,6 +6,8 @@ permalink: /kb/288/Q288547/
 
 ## Q288547: SMS: WMI Returns Win32_Share Instances Indefinitely
 
+{% raw %}
+
 	Article: Q288547
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.1,1.5,2.0
@@ -83,3 +85,5 @@ permalink: /kb/288/Q288547/
 	
 	=============================================================================
 	
+
+{% endraw %}

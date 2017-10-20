@@ -6,6 +6,8 @@ permalink: /kb/173/Q173098/
 
 ## Q173098: MDG: System 8 for Macintosh breaks MacMail for PC Networks
 
+{% raw %}
+
 	Article: Q173098
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.5
@@ -51,3 +53,5 @@ permalink: /kb/173/Q173098/
 	
 	=============================================================================
 	
+
+{% endraw %}

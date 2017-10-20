@@ -6,6 +6,8 @@ permalink: /kb/240/Q240783/
 
 ## Q240783: SMS Installer Does Not Repackage Large MULTI-SZ Registry Values
 
+{% raw %}
+
 	Article: Q240783
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0
@@ -96,3 +98,5 @@ permalink: /kb/240/Q240783/
 	
 	=============================================================================
 	
+
+{% endraw %}

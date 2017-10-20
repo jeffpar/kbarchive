@@ -6,6 +6,8 @@ permalink: /kb/119/Q119497/
 
 ## Q119497: Boot Partition Created During Setup Limited to 4 Gigabytes
 
+{% raw %}
+
 	Article: Q119497
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51 4.0
@@ -88,3 +90,5 @@ permalink: /kb/119/Q119497/
 	
 	=============================================================================
 	
+
+{% endraw %}

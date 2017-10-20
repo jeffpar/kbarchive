@@ -6,6 +6,8 @@ permalink: /kb/313/Q313954/
 
 ## Q313954: Streets &amp; Trips 2001: Pushpin Is Not Displayed After Placement
 
+{% raw %}
+
 	Article: Q313954
 	Product(s): Microsoft Automap
 	Version(s): 
@@ -76,3 +78,5 @@ permalink: /kb/313/Q313954/
 	
 	=============================================================================
 	
+
+{% endraw %}

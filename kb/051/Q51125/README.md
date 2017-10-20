@@ -6,6 +6,8 @@ permalink: /kb/051/Q51125/
 
 ## Q51125: &quot;C For Yourself&quot; Documentation Error -- Long Double
 
+{% raw %}
+
 	Article: Q51125
 	Product(s): See article
 	Version(s): 2.00 2.01
@@ -20,3 +22,5 @@ permalink: /kb/051/Q51125/
 	A long double has 15 digits of precision and is the same as a double
 	in the current implementation. The same error occurs on the following
 	page (Page 49) under Table 4.1.
+
+{% endraw %}

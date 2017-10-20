@@ -6,6 +6,8 @@ permalink: /kb/080/Q80784/
 
 ## Q80784: DOC: Suggested Changes to the DEVCAPS2 Sample App
 
+{% raw %}
+
 	Article: Q80784
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -87,3 +89,5 @@ permalink: /kb/080/Q80784/
 	
 	=============================================================================
 	
+
+{% endraw %}

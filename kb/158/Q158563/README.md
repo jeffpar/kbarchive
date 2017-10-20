@@ -6,6 +6,8 @@ permalink: /kb/158/Q158563/
 
 ## Q158563: Cannot Open HKEY_DYN_DATA Key with Regedit.exe
 
+{% raw %}
+
 	Article: Q158563
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/158/Q158563/
 	
 	=============================================================================
 	
+
+{% endraw %}

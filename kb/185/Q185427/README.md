@@ -6,6 +6,8 @@ permalink: /kb/185/Q185427/
 
 ## Q185427: WD97: Top of Text Truncated with Contemporary Report Template
 
+{% raw %}
+
 	Article: Q185427
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -88,3 +90,5 @@ permalink: /kb/185/Q185427/
 	
 	=============================================================================
 	
+
+{% endraw %}

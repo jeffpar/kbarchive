@@ -6,6 +6,8 @@ permalink: /kb/067/Q67006/
 
 ## Q67006: C1001: Internal Compiler Error: regMD.c:1.110, line 1017
 
+{% raw %}
+
 	Article: Q67006
 	Product(s): See article
 	Version(s): 6.00 6.00a | 6.00 6.00a
@@ -57,3 +59,5 @@ permalink: /kb/067/Q67006/
 	   rct.y1 = (long) max(bound->y0, bound->y1);
 	   return(&rct);
 	}
+
+{% endraw %}

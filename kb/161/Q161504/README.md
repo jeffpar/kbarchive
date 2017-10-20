@@ -6,6 +6,8 @@ permalink: /kb/161/Q161504/
 
 ## Q161504: PRB: &quot;Error Reading Drive&quot; with Windows NT 3.5 as Server
 
+{% raw %}
+
 	Article: Q161504
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.5
@@ -49,3 +51,5 @@ permalink: /kb/161/Q161504/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/157/Q157547/
 
 ## Q157547: WD97: Extra Images Created After Using Web Page Wizard
 
+{% raw %}
+
 	Article: Q157547
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -57,3 +59,5 @@ permalink: /kb/157/Q157547/
 	
 	=============================================================================
 	
+
+{% endraw %}

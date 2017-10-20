@@ -6,6 +6,8 @@ permalink: /kb/092/Q92348/
 
 ## Q92348: SET CONFIRM Setting in FoxBASE+
 
+{% raw %}
+
 	Article: Q92348
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MS-DOS:2.1
@@ -43,3 +45,5 @@ permalink: /kb/092/Q92348/
 	
 	=============================================================================
 	
+
+{% endraw %}

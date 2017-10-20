@@ -6,6 +6,8 @@ permalink: /kb/124/Q124624/
 
 ## Q124624: Text Missing in Complete Baseball and Complete Basketball
 
+{% raw %}
+
 	Article: Q124624
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): '94-'95 edition,1994 edition
@@ -57,3 +59,5 @@ permalink: /kb/124/Q124624/
 	
 	=============================================================================
 	
+
+{% endraw %}

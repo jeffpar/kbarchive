@@ -6,6 +6,8 @@ permalink: /kb/253/Q253518/
 
 ## Q253518: Time Stamp on Files on Windows NT 3.51 Server Is Changed
 
+{% raw %}
+
 	Article: Q253518
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -75,3 +77,5 @@ permalink: /kb/253/Q253518/
 	
 	=============================================================================
 	
+
+{% endraw %}

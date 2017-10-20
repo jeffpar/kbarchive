@@ -6,6 +6,8 @@ permalink: /kb/185/Q185787/
 
 ## Q185787: STOP 0x0000002E on Alpha with ISA Sound Card
 
+{% raw %}
+
 	Article: Q185787
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -67,3 +69,5 @@ permalink: /kb/185/Q185787/
 	
 	=============================================================================
 	
+
+{% endraw %}

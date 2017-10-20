@@ -6,6 +6,8 @@ permalink: /kb/157/Q157478/
 
 ## Q157478: WD97: What's New in Word 97
 
+{% raw %}
+
 	Article: Q157478
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -704,3 +706,5 @@ permalink: /kb/157/Q157478/
 	
 	=============================================================================
 	
+
+{% endraw %}

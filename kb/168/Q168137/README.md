@@ -6,6 +6,8 @@ permalink: /kb/168/Q168137/
 
 ## Q168137: XCON: Exchange to MCI and Sprint Interoperability
 
+{% raw %}
+
 	Article: Q168137
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -61,3 +63,5 @@ permalink: /kb/168/Q168137/
 	
 	=============================================================================
 	
+
+{% endraw %}

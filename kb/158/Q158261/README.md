@@ -6,6 +6,8 @@ permalink: /kb/158/Q158261/
 
 ## Q158261: Msbatch.inf Parameters: Cannot Set Maximum Recycle Bin Size
 
+{% raw %}
+
 	Article: Q158261
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -50,3 +52,5 @@ permalink: /kb/158/Q158261/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155934/
 
 ## Q155934: INFO: OLE Automation Manager &amp; RacMan
 
+{% raw %}
+
 	Article: Q155934
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/155/Q155934/
 	
 	=============================================================================
 	
+
+{% endraw %}

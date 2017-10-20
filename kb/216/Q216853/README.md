@@ -6,6 +6,8 @@ permalink: /kb/216/Q216853/
 
 ## Q216853: FIX: Application Error When Calling Documents.Open
 
+{% raw %}
+
 	Article: Q216853
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -101,3 +103,5 @@ permalink: /kb/216/Q216853/
 	
 	=============================================================================
 	
+
+{% endraw %}

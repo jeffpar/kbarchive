@@ -6,6 +6,8 @@ permalink: /kb/173/Q173377/
 
 ## Q173377: WD97: Style Changes Not Retained with HTML Styles
 
+{% raw %}
+
 	Article: Q173377
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -124,3 +126,5 @@ permalink: /kb/173/Q173377/
 	
 	=============================================================================
 	
+
+{% endraw %}

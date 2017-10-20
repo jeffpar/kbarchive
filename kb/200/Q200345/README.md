@@ -6,6 +6,8 @@ permalink: /kb/200/Q200345/
 
 ## Q200345: SMS 2.0 Searches the Entire Drive for Files Collected
 
+{% raw %}
+
 	Article: Q200345
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -63,3 +65,5 @@ permalink: /kb/200/Q200345/
 	
 	=============================================================================
 	
+
+{% endraw %}

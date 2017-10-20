@@ -6,6 +6,8 @@ permalink: /kb/102/Q102748/
 
 ## Q102748: X400: Err Msg: ERROR 3 (Layer): Open Failed
 
+{% raw %}
+
 	Article: Q102748
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -68,3 +70,5 @@ permalink: /kb/102/Q102748/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/320/Q320118/
 
 ## Q320118: FIX: Error Occurs Using the Open Parenthesis Calling VSS Method
 
+{% raw %}
+
 	Article: Q320118
 	Product(s): Microsoft FoxPro
 	Version(s): 7.0
@@ -80,3 +82,5 @@ permalink: /kb/320/Q320118/
 	
 	=============================================================================
 	
+
+{% endraw %}

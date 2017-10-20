@@ -6,6 +6,8 @@ permalink: /kb/135/Q135225/
 
 ## Q135225: Setting Up Gateway 2000 Aztec Sound Card with Windows 95
 
+{% raw %}
+
 	Article: Q135225
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -60,3 +62,5 @@ permalink: /kb/135/Q135225/
 	
 	=============================================================================
 	
+
+{% endraw %}

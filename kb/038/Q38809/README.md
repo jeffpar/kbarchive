@@ -6,6 +6,8 @@ permalink: /kb/038/Q38809/
 
 ## Q38809: Error L1085 Cannot Open Temporary File
 
+{% raw %}
+
 	Article: Q38809
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.10
@@ -36,3 +38,5 @@ permalink: /kb/038/Q38809/
 	This error can be caused by insufficient file handles. Resident
 	software (TSR) can use up some handles, or can cause other kinds of
 	interference that can cause this error.
+
+{% endraw %}

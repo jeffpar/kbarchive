@@ -6,6 +6,8 @@ permalink: /kb/120/Q120511/
 
 ## Q120511: PRB: Error: &quot;Invalid cursor name&quot; &amp; &quot;No cursor name available&quot;
 
+{% raw %}
+
 	Article: Q120511
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -95,3 +97,5 @@ permalink: /kb/120/Q120511/
 	
 	=============================================================================
 	
+
+{% endraw %}

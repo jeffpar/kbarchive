@@ -6,6 +6,8 @@ permalink: /kb/081/Q81334/
 
 ## Q81334: KBHook2.exe Demonstrates Using a WH_KEYBOARD Hook
 
+{% raw %}
+
 	Article: Q81334
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): 3.1
@@ -75,3 +77,5 @@ permalink: /kb/081/Q81334/
 	
 	=============================================================================
 	
+
+{% endraw %}

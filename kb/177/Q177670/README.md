@@ -6,6 +6,8 @@ permalink: /kb/177/Q177670/
 
 ## Q177670: RRAS Does Not Enforce Strong Encryption for DUN Clients
 
+{% raw %}
+
 	Article: Q177670
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -97,3 +99,5 @@ permalink: /kb/177/Q177670/
 	
 	=============================================================================
 	
+
+{% endraw %}

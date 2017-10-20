@@ -6,6 +6,8 @@ permalink: /kb/176/Q176887/
 
 ## Q176887: FIX: Running VFP Exe as Post-Setup Executable Hangs the Process
 
+{% raw %}
+
 	Article: Q176887
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:5.0,5.0a
@@ -98,3 +100,5 @@ permalink: /kb/176/Q176887/
 	
 	=============================================================================
 	
+
+{% endraw %}

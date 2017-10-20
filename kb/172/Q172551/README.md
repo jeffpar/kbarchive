@@ -6,6 +6,8 @@ permalink: /kb/172/Q172551/
 
 ## Q172551: PRB: CInternetSession::OpenURL() Fails with File Protocol
 
+{% raw %}
+
 	Article: Q172551
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0,6.0
@@ -150,3 +152,5 @@ permalink: /kb/172/Q172551/
 	
 	=============================================================================
 	
+
+{% endraw %}

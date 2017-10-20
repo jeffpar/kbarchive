@@ -6,6 +6,8 @@ permalink: /kb/177/Q177948/
 
 ## Q177948: Bookshelf 98: Horizontal Scroll Bar Is Not Provided
 
+{% raw %}
+
 	Article: Q177948
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -62,3 +64,5 @@ permalink: /kb/177/Q177948/
 	
 	=============================================================================
 	
+
+{% endraw %}

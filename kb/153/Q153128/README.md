@@ -6,6 +6,8 @@ permalink: /kb/153/Q153128/
 
 ## Q153128: Event IDs 9 and 11: SCSI Controller/Device Errors
 
+{% raw %}
+
 	Article: Q153128
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5,3.51,4.0
@@ -96,3 +98,5 @@ permalink: /kb/153/Q153128/
 	
 	=============================================================================
 	
+
+{% endraw %}

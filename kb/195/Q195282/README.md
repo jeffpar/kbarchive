@@ -6,6 +6,8 @@ permalink: /kb/195/Q195282/
 
 ## Q195282: Windows 98 Step by Step Comments and Corrections
 
+{% raw %}
+
 	Article: Q195282
 	Product(s): Microsoft Press
 	Version(s): 
@@ -107,3 +109,5 @@ permalink: /kb/195/Q195282/
 	
 	=============================================================================
 	
+
+{% endraw %}

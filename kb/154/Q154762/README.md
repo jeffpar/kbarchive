@@ -6,6 +6,8 @@ permalink: /kb/154/Q154762/
 
 ## Q154762: How to Remove Jet&lt;n&gt;.log Files Created by DSMN
 
+{% raw %}
+
 	Article: Q154762
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0
@@ -52,3 +54,5 @@ permalink: /kb/154/Q154762/
 	
 	=============================================================================
 	
+
+{% endraw %}

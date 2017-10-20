@@ -6,6 +6,8 @@ permalink: /kb/216/Q216720/
 
 ## Q216720: FIX: Bitwise OR for Bool&amp; Types Causes Error When Optimized
 
+{% raw %}
+
 	Article: Q216720
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -89,3 +91,5 @@ permalink: /kb/216/Q216720/
 	
 	=============================================================================
 	
+
+{% endraw %}

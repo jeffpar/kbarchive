@@ -6,6 +6,8 @@ permalink: /kb/272/Q272919/
 
 ## Q272919: How to add, rename, or delete Favorites in MSN Companion
 
+{% raw %}
+
 	Article: Q272919
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -57,3 +59,5 @@ permalink: /kb/272/Q272919/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/183/Q183573/
 
 ## Q183573: Report.ASP Fails with SNA 4.0 OLE DB Off-line Demo Script
 
+{% raw %}
+
 	Article: Q183573
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:1.0,4.0
@@ -61,3 +63,5 @@ permalink: /kb/183/Q183573/
 	
 	=============================================================================
 	
+
+{% endraw %}

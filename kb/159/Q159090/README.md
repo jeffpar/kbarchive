@@ -6,6 +6,8 @@ permalink: /kb/159/Q159090/
 
 ## Q159090: Delphi 2.00 and 2.01 Users Encounter Error 998
 
+{% raw %}
+
 	Article: Q159090
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -57,3 +59,5 @@ permalink: /kb/159/Q159090/
 	
 	=============================================================================
 	
+
+{% endraw %}

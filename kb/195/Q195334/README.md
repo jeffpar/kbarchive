@@ -6,6 +6,8 @@ permalink: /kb/195/Q195334/
 
 ## Q195334: Shutdown of TS from Client Session w/o Reboot Results in Reboot
 
+{% raw %}
+
 	Article: Q195334
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -50,3 +52,5 @@ permalink: /kb/195/Q195334/
 	
 	=============================================================================
 	
+
+{% endraw %}

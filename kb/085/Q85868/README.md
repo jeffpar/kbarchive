@@ -6,6 +6,8 @@ permalink: /kb/085/Q85868/
 
 ## Q85868: Banyan Message Causes MS-DOS-Based Application to Minimize
 
+{% raw %}
+
 	Article: Q85868
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -61,3 +63,5 @@ permalink: /kb/085/Q85868/
 	
 	=============================================================================
 	
+
+{% endraw %}

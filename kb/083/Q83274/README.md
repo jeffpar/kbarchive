@@ -6,6 +6,8 @@ permalink: /kb/083/Q83274/
 
 ## Q83274: Minesweeper Cannot Be Played Without a Mouse
 
+{% raw %}
+
 	Article: Q83274
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -45,3 +47,5 @@ permalink: /kb/083/Q83274/
 	
 	=============================================================================
 	
+
+{% endraw %}

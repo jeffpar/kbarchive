@@ -6,6 +6,8 @@ permalink: /kb/159/Q159087/
 
 ## Q159087: SMS Does Not Identify Pentium Pro (P6) Processor Speeds
 
+{% raw %}
+
 	Article: Q159087
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2
@@ -82,3 +84,5 @@ permalink: /kb/159/Q159087/
 	
 	=============================================================================
 	
+
+{% endraw %}

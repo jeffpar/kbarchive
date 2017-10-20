@@ -6,6 +6,8 @@ permalink: /kb/092/Q92406/
 
 ## Q92406: Intel EtherExpress 16 Specifications
 
+{% raw %}
+
 	Article: Q92406
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -156,3 +158,5 @@ permalink: /kb/092/Q92406/
 	
 	=============================================================================
 	
+
+{% endraw %}

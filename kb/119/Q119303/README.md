@@ -6,6 +6,8 @@ permalink: /kb/119/Q119303/
 
 ## Q119303: X400: Err Msg: ERROR 3 (RTS): RTS Open Refused...
 
+{% raw %}
+
 	Article: Q119303
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.2
@@ -74,3 +76,5 @@ permalink: /kb/119/Q119303/
 	
 	=============================================================================
 	
+
+{% endraw %}

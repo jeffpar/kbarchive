@@ -6,6 +6,8 @@ permalink: /kb/172/Q172849/
 
 ## Q172849: PRB: TRANSFORM() Does not Format a Calculated Field Properly
 
+{% raw %}
+
 	Article: Q172849
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.6a,3.0b,5.0,5.0a,6.0
@@ -134,3 +136,5 @@ permalink: /kb/172/Q172849/
 	
 	=============================================================================
 	
+
+{% endraw %}

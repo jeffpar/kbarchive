@@ -6,6 +6,8 @@ permalink: /kb/086/Q86944/
 
 ## Q86944: 3COM: Which PC Mail Files Are Accessed by the Gateway
 
+{% raw %}
+
 	Article: Q86944
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -70,3 +72,5 @@ permalink: /kb/086/Q86944/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/304/Q304742/
 
 ## Q304742: Event ID: 6008 After Remote Shutdown with an Active Screensaver
 
+{% raw %}
+
 	Article: Q304742
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0,4.0 SP6a
@@ -94,3 +96,5 @@ permalink: /kb/304/Q304742/
 	
 	=============================================================================
 	
+
+{% endraw %}

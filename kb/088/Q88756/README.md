@@ -6,6 +6,8 @@ permalink: /kb/088/Q88756/
 
 ## Q88756: Embedded Paintbrush Object Disappears in Write
 
+{% raw %}
+
 	Article: Q88756
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -61,3 +63,5 @@ permalink: /kb/088/Q88756/
 	
 	=============================================================================
 	
+
+{% endraw %}

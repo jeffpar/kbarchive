@@ -6,6 +6,8 @@ permalink: /kb/176/Q176129/
 
 ## Q176129: XCON: Cannot Reply to Messages from User with Dual DDA Address
 
+{% raw %}
+
 	Article: Q176129
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -67,3 +69,5 @@ permalink: /kb/176/Q176129/
 	
 	=============================================================================
 	
+
+{% endraw %}

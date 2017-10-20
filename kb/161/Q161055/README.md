@@ -6,6 +6,8 @@ permalink: /kb/161/Q161055/
 
 ## Q161055: FIX: Property Sheet Changes Causes Illegal Operation Error
 
+{% raw %}
+
 	Article: Q161055
 	Product(s): Microsoft FoxPro
 	Version(s): 5.0
@@ -76,3 +78,5 @@ permalink: /kb/161/Q161055/
 	
 	=============================================================================
 	
+
+{% endraw %}

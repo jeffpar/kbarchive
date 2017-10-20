@@ -6,6 +6,8 @@ permalink: /kb/151/Q151635/
 
 ## Q151635: Using SET ANSI &amp; SET EXACT with String Comparison Operator &quot;=&quot;
 
+{% raw %}
+
 	Article: Q151635
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.0,2.5,2.5a,2.5b,2.6,2.6a; WINDOWS:3.0,3.0b
@@ -154,3 +156,5 @@ permalink: /kb/151/Q151635/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/214/Q214495/
 
 ## Q214495: UNIX Primary Domain Name Server Zone Transfer Does Not Complete
 
+{% raw %}
+
 	Article: Q214495
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -100,3 +102,5 @@ permalink: /kb/214/Q214495/
 	
 	=============================================================================
 	
+
+{% endraw %}

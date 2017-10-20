@@ -6,6 +6,8 @@ permalink: /kb/096/Q96283/
 
 ## Q96283: Guidelines for Running FoxBASE+/Mac on a Network
 
+{% raw %}
+
 	Article: Q96283
 	Product(s): Microsoft Fox Miscellaneous Products
 	Version(s): MACINTOSH:2.01
@@ -60,3 +62,5 @@ permalink: /kb/096/Q96283/
 	
 	=============================================================================
 	
+
+{% endraw %}

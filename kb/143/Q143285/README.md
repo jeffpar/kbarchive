@@ -6,6 +6,8 @@ permalink: /kb/143/Q143285/
 
 ## Q143285: How to Use Format and InputMask to Format Data
 
+{% raw %}
+
 	Article: Q143285
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b
@@ -89,3 +91,5 @@ permalink: /kb/143/Q143285/
 	
 	=============================================================================
 	
+
+{% endraw %}

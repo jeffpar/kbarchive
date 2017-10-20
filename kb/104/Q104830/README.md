@@ -6,6 +6,8 @@ permalink: /kb/104/Q104830/
 
 ## Q104830: Cinemania: Demo Won't Run with Dell S3 Video Driver
 
+{% raw %}
+
 	Article: Q104830
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -68,3 +70,5 @@ permalink: /kb/104/Q104830/
 	
 	=============================================================================
 	
+
+{% endraw %}

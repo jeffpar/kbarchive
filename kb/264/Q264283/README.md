@@ -6,6 +6,8 @@ permalink: /kb/264/Q264283/
 
 ## Q264283: PC Adm: Error Message: Recipients Mail Address Is Incorrect...
 
+{% raw %}
+
 	Article: Q264283
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2,3.2a,3.5
@@ -83,3 +85,5 @@ permalink: /kb/264/Q264283/
 	
 	=============================================================================
 	
+
+{% endraw %}

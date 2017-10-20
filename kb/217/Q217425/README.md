@@ -6,6 +6,8 @@ permalink: /kb/217/Q217425/
 
 ## Q217425: A Simple ASP Example Using Posting Acceptor
 
+{% raw %}
+
 	Article: Q217425
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -118,3 +120,5 @@ permalink: /kb/217/Q217425/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149436/
 
 ## Q149436: Err Msg When Adding Remoteboot Workstations to Windows NT
 
+{% raw %}
+
 	Article: Q149436
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -127,3 +129,5 @@ permalink: /kb/149/Q149436/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/098/Q98332/
 
 ## Q98332: PC Gen: Supplementary Modem Scripts &#91;3.5, 720K; 5.25, 1.2 MB&#93;
 
+{% raw %}
+
 	Article: Q98332
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -139,3 +141,5 @@ permalink: /kb/098/Q98332/
 	
 	=============================================================================
 	
+
+{% endraw %}

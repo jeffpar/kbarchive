@@ -6,6 +6,8 @@ permalink: /kb/163/Q163930/
 
 ## Q163930: FIX: Canceling Out of Builder Can Cause VFP to Shut Down
 
+{% raw %}
+
 	Article: Q163930
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:3.0b; WINDOWS:3.0,3.0b
@@ -90,3 +92,5 @@ permalink: /kb/163/Q163930/
 	
 	=============================================================================
 	
+
+{% endraw %}

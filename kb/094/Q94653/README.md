@@ -6,6 +6,8 @@ permalink: /kb/094/Q94653/
 
 ## Q94653: Using FC.EXE to Verify CD-ROM File System Drivers
 
+{% raw %}
+
 	Article: Q94653
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1.0
@@ -73,3 +75,5 @@ permalink: /kb/094/Q94653/
 	
 	=============================================================================
 	
+
+{% endraw %}

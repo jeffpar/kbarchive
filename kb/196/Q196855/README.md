@@ -6,6 +6,8 @@ permalink: /kb/196/Q196855/
 
 ## Q196855: WD97: How to Extend Form Field Underlines to a Fixed Point
 
+{% raw %}
+
 	Article: Q196855
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -135,3 +137,5 @@ permalink: /kb/196/Q196855/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/143/Q143104/
 
 ## Q143104: FP: Browsing Web Returns List of Files Instead of Home Page
 
+{% raw %}
+
 	Article: Q143104
 	Product(s): Word Front Page
 	Version(s): windows:1.0,1.1,97
@@ -74,3 +76,5 @@ permalink: /kb/143/Q143104/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177699/
 
 ## Q177699: HOWTO: Use NT Simple TCP/IP Services for Winsock Testing
 
+{% raw %}
+
 	Article: Q177699
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0; winnt:3.51,4.0
@@ -221,3 +223,5 @@ permalink: /kb/177/Q177699/
 	
 	=============================================================================
 	
+
+{% endraw %}

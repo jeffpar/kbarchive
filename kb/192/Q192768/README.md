@@ -6,6 +6,8 @@ permalink: /kb/192/Q192768/
 
 ## Q192768: FIX: Ambiguous Date/Datetime Constant Error
 
+{% raw %}
+
 	Article: Q192768
 	Product(s): Microsoft FoxPro
 	Version(s): 6.0
@@ -91,3 +93,5 @@ permalink: /kb/192/Q192768/
 	
 	=============================================================================
 	
+
+{% endraw %}

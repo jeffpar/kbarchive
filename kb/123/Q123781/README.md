@@ -6,6 +6,8 @@ permalink: /kb/123/Q123781/
 
 ## Q123781: BUG: Additional DLLs Invalid in Debug Project Settings
 
+{% raw %}
+
 	Article: Q123781
 	Product(s): Microsoft C Compiler
 	Version(s): MACINTOSH:2.0
@@ -51,3 +53,5 @@ permalink: /kb/123/Q123781/
 	
 	=============================================================================
 	
+
+{% endraw %}

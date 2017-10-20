@@ -6,6 +6,8 @@ permalink: /kb/253/Q253448/
 
 ## Q253448: Allegiance: Old Key Assignments Remain in Effect After Update
 
+{% raw %}
+
 	Article: Q253448
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -53,3 +55,5 @@ permalink: /kb/253/Q253448/
 	
 	=============================================================================
 	
+
+{% endraw %}

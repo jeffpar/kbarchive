@@ -6,6 +6,8 @@ permalink: /kb/252/Q252831/
 
 ## Q252831: SMSINST: Iterative Use Of Get Temporary Filename Can Cause Error
 
+{% raw %}
+
 	Article: Q252831
 	Product(s): Microsoft Systems Management Server
 	Version(s): WINDOWS:2.0
@@ -67,3 +69,5 @@ permalink: /kb/252/Q252831/
 	
 	=============================================================================
 	
+
+{% endraw %}

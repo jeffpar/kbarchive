@@ -6,6 +6,8 @@ permalink: /kb/051/Q51434/
 
 ## Q51434: HOWTO: Calculate Available File Handles at Run Time
 
+{% raw %}
+
 	Article: Q51434
 	Product(s): Microsoft C Compiler
 	Version(s): MS- DOS:6.0,6.00a,6.00ax,7.0;OS/2:6.0,6.00a;WIN3X:1.0,1.5;WINNT:1.0,2.0;
@@ -131,3 +133,5 @@ permalink: /kb/051/Q51434/
 	
 	=============================================================================
 	
+
+{% endraw %}

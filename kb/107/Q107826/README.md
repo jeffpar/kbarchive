@@ -6,6 +6,8 @@ permalink: /kb/107/Q107826/
 
 ## Q107826: PRB: COMMAND+W and CTRL+W Do Not Close All Windows
 
+{% raw %}
+
 	Article: Q107826
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,3.0b
@@ -61,3 +63,5 @@ permalink: /kb/107/Q107826/
 	
 	=============================================================================
 	
+
+{% endraw %}

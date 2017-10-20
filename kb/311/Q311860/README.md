@@ -6,6 +6,8 @@ permalink: /kb/311/Q311860/
 
 ## Q311860: The HP NTLock Services Do Not Start After Installing the SRP
 
+{% raw %}
+
 	Article: Q311860
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0 SP6a
@@ -104,3 +106,5 @@ permalink: /kb/311/Q311860/
 	
 	=============================================================================
 	
+
+{% endraw %}

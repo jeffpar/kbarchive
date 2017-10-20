@@ -6,6 +6,8 @@ permalink: /kb/236/Q236460/
 
 ## Q236460: DNS Service Does Not Start and Event IDs May Be Displayed
 
+{% raw %}
+
 	Article: Q236460
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -102,3 +104,5 @@ permalink: /kb/236/Q236460/
 	
 	=============================================================================
 	
+
+{% endraw %}

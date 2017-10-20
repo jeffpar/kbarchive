@@ -6,6 +6,8 @@ permalink: /kb/134/Q134847/
 
 ## Q134847: Cannot Access MS Mail 3.2 from Delrina WinFax Pro 4.0
 
+{% raw %}
+
 	Article: Q134847
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -64,3 +66,5 @@ permalink: /kb/134/Q134847/
 	
 	=============================================================================
 	
+
+{% endraw %}

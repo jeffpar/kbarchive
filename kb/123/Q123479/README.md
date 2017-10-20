@@ -6,6 +6,8 @@ permalink: /kb/123/Q123479/
 
 ## Q123479: Password Change to NT Server Returns &quot;Password...too short..&quot;
 
+{% raw %}
+
 	Article: Q123479
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:95; winnt:3.5,3.51,4.0
@@ -93,3 +95,5 @@ permalink: /kb/123/Q123479/
 	
 	=============================================================================
 	
+
+{% endraw %}

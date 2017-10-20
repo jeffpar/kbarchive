@@ -6,6 +6,8 @@ permalink: /kb/099/Q99734/
 
 ## Q99734: System Apple Loses Colors When Musical Instruments Is Running
 
+{% raw %}
+
 	Article: Q99734
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -42,3 +44,5 @@ permalink: /kb/099/Q99734/
 	
 	=============================================================================
 	
+
+{% endraw %}

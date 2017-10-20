@@ -6,6 +6,8 @@ permalink: /kb/120/Q120727/
 
 ## Q120727: Err Msg: DRVSPACE.SYS Is Not the Same Internal Revision as...
 
+{% raw %}
+
 	Article: Q120727
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.22
@@ -63,3 +65,5 @@ permalink: /kb/120/Q120727/
 	
 	=============================================================================
 	
+
+{% endraw %}

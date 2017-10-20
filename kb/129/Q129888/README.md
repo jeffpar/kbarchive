@@ -6,6 +6,8 @@ permalink: /kb/129/Q129888/
 
 ## Q129888: How to Customize the Setup Wizard in Visual Basic Version 4.0
 
+{% raw %}
+
 	Article: Q129888
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 4.00
@@ -90,3 +92,5 @@ permalink: /kb/129/Q129888/
 	
 	=============================================================================
 	
+
+{% endraw %}

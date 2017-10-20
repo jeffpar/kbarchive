@@ -6,6 +6,8 @@ permalink: /kb/098/Q98585/
 
 ## Q98585: Spooling Print Jobs from MS-DOS-Based Applications in Windows
 
+{% raw %}
+
 	Article: Q98585
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:
@@ -83,3 +85,5 @@ permalink: /kb/098/Q98585/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/275/Q275577/
 
 ## Q275577: BUG: Parameter Placeholders with Visual FoxPro (VFP) ODBC Driver
 
+{% raw %}
+
 	Article: Q275577
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,4.0,5.0,6.0
@@ -250,3 +252,5 @@ permalink: /kb/275/Q275577/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/129/Q129204/
 
 ## Q129204: Windows NT 3.51 Books Online Icon Missing
 
+{% raw %}
+
 	Article: Q129204
 	Product(s): Microsoft Windows NT
 	Version(s): 
@@ -53,3 +55,5 @@ permalink: /kb/129/Q129204/
 	
 	=============================================================================
 	
+
+{% endraw %}

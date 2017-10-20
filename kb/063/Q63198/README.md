@@ -6,6 +6,8 @@ permalink: /kb/063/Q63198/
 
 ## Q63198: Main Module Must Be First BASIC File in Program List for PWB
 
+{% raw %}
+
 	Article: Q63198
 	Product(s): See article
 	Version(s): 7.10   | 7.10
@@ -56,3 +58,5 @@ permalink: /kb/063/Q63198/
 	   WINDOW.BAS
 	   UIASM.OBJ
 	   QBX.LIB
+
+{% endraw %}

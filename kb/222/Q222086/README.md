@@ -6,6 +6,8 @@ permalink: /kb/222/Q222086/
 
 ## Q222086: Gateway Services for NetWare (GSNW) Gateway Shares Shown as Dele
 
+{% raw %}
+
 	Article: Q222086
 	Product(s): Microsoft Windows NT
 	Version(s): WINDOWS:2000; winnt:3.51,4.0
@@ -103,3 +105,5 @@ permalink: /kb/222/Q222086/
 	
 	=============================================================================
 	
+
+{% endraw %}

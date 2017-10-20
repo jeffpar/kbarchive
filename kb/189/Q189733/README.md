@@ -6,6 +6,8 @@ permalink: /kb/189/Q189733/
 
 ## Q189733: BUG: Setting Windowless ListBox ListIndex Fires Click Event
 
+{% raw %}
+
 	Article: Q189733
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -142,3 +144,5 @@ permalink: /kb/189/Q189733/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/149/Q149155/
 
 ## Q149155: BUG: Assertion Failure with ERR= and END= in READ Statement
 
+{% raw %}
+
 	Article: Q149155
 	Product(s): Microsoft Fortran Compiler
 	Version(s): 4.0
@@ -69,3 +71,5 @@ permalink: /kb/149/Q149155/
 	
 	=============================================================================
 	
+
+{% endraw %}

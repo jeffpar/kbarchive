@@ -6,6 +6,8 @@ permalink: /kb/102/Q102662/
 
 ## Q102662: 16-Bit Applications Often Cause Random and Diverse Messages
 
+{% raw %}
+
 	Article: Q102662
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 4.0
@@ -47,3 +49,5 @@ permalink: /kb/102/Q102662/
 	
 	=============================================================================
 	
+
+{% endraw %}

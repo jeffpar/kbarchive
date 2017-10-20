@@ -6,6 +6,8 @@ permalink: /kb/122/Q122268/
 
 ## Q122268: FIX: CTRL+Z Terminates File Load in Development Environment
 
+{% raw %}
+
 	Article: Q122268
 	Product(s): Microsoft C Compiler
 	Version(s): 2.0
@@ -56,3 +58,5 @@ permalink: /kb/122/Q122268/
 	
 	=============================================================================
 	
+
+{% endraw %}

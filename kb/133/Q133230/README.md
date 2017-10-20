@@ -6,6 +6,8 @@ permalink: /kb/133/Q133230/
 
 ## Q133230: Bookshelf: Changing the Order of Quickshelf Buttons
 
+{% raw %}
+
 	Article: Q133230
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1995 edition; WINDOWS:
@@ -128,3 +130,5 @@ permalink: /kb/133/Q133230/
 	
 	=============================================================================
 	
+
+{% endraw %}

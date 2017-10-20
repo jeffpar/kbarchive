@@ -6,6 +6,8 @@ permalink: /kb/123/Q123611/
 
 ## Q123611: SCSIPORT.PDR Installed on All Computers During Setup
 
+{% raw %}
+
 	Article: Q123611
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -46,3 +48,5 @@ permalink: /kb/123/Q123611/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/094/Q94408/
 
 ## Q94408: FIX: A2138 Error--Structure Member Span-Dependent Equate
 
+{% raw %}
+
 	Article: Q94408
 	Product(s): Microsoft Macro Assembler
 	Version(s): 6.0,6.0a,6.0b,6.1,6.1a
@@ -94,3 +96,5 @@ permalink: /kb/094/Q94408/
 	
 	=============================================================================
 	
+
+{% endraw %}

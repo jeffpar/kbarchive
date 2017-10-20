@@ -6,6 +6,8 @@ permalink: /kb/192/Q192490/
 
 ## Q192490: SMS: Ping Test on Windows NT Clients May Require Credentials
 
+{% raw %}
+
 	Article: Q192490
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -47,3 +49,5 @@ permalink: /kb/192/Q192490/
 	
 	=============================================================================
 	
+
+{% endraw %}

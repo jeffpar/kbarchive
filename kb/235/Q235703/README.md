@@ -6,6 +6,8 @@ permalink: /kb/235/Q235703/
 
 ## Q235703: NetWare Migration Tool May Not Migrate Long File Name Permission
 
+{% raw %}
+
 	Article: Q235703
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -109,3 +111,5 @@ permalink: /kb/235/Q235703/
 	
 	=============================================================================
 	
+
+{% endraw %}

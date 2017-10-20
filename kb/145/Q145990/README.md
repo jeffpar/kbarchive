@@ -6,6 +6,8 @@ permalink: /kb/145/Q145990/
 
 ## Q145990: Windows 95 Update Information Tool (Qfecheck.exe)
 
+{% raw %}
+
 	Article: Q145990
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -85,3 +87,5 @@ permalink: /kb/145/Q145990/
 	
 	=============================================================================
 	
+
+{% endraw %}

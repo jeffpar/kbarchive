@@ -6,6 +6,8 @@ permalink: /kb/158/Q158047/
 
 ## Q158047: XFOR: Microsoft Mail Connector Error: Service Specific Error 3
 
+{% raw %}
+
 	Article: Q158047
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -64,3 +66,5 @@ permalink: /kb/158/Q158047/
 	
 	=============================================================================
 	
+
+{% endraw %}

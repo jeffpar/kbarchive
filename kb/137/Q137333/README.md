@@ -6,6 +6,8 @@ permalink: /kb/137/Q137333/
 
 ## Q137333: DOC: How to Use the PX_Blob Function
 
+{% raw %}
+
 	Article: Q137333
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,4.0,4.1
@@ -270,3 +272,5 @@ permalink: /kb/137/Q137333/
 	
 	=============================================================================
 	
+
+{% endraw %}

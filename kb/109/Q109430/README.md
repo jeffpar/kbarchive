@@ -6,6 +6,8 @@ permalink: /kb/109/Q109430/
 
 ## Q109430: FILE:Fw0969.exe Coordinates Menus &amp; Screens w/ Foundation READs
 
+{% raw %}
+
 	Article: Q109430
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5,2.5a,2.5b
@@ -887,3 +889,5 @@ permalink: /kb/109/Q109430/
 	
 	=============================================================================
 	
+
+{% endraw %}

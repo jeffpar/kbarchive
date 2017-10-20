@@ -6,6 +6,8 @@ permalink: /kb/082/Q82768/
 
 ## Q82768: Using Windows 3.1 with Toshiba T2200SX and Trackball Mouse
 
+{% raw %}
+
 	Article: Q82768
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -44,3 +46,5 @@ permalink: /kb/082/Q82768/
 	
 	=============================================================================
 	
+
+{% endraw %}

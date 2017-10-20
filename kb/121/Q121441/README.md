@@ -6,6 +6,8 @@ permalink: /kb/121/Q121441/
 
 ## Q121441: Code Sample to Find Application Path Using File Extension
 
+{% raw %}
+
 	Article: Q121441
 	Product(s): Microsoft FoxPro
 	Version(s): 2.5x 2.60 2.60a 3.00
@@ -81,3 +83,5 @@ permalink: /kb/121/Q121441/
 	
 	=============================================================================
 	
+
+{% endraw %}

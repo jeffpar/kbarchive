@@ -6,6 +6,8 @@ permalink: /kb/128/Q128360/
 
 ## Q128360: Mac Wkst: Installing the Workstation from a Network Share
 
+{% raw %}
+
 	Article: Q128360
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): WINDOWS:3.1
@@ -54,3 +56,5 @@ permalink: /kb/128/Q128360/
 	
 	=============================================================================
 	
+
+{% endraw %}

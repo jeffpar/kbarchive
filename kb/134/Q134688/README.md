@@ -6,6 +6,8 @@ permalink: /kb/134/Q134688/
 
 ## Q134688: SNA Server Does Not Allow Configuration of LU Address 255
 
+{% raw %}
+
 	Article: Q134688
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.0,2.1,2.11
@@ -69,3 +71,5 @@ permalink: /kb/134/Q134688/
 	
 	=============================================================================
 	
+
+{% endraw %}

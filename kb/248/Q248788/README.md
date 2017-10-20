@@ -6,6 +6,8 @@ permalink: /kb/248/Q248788/
 
 ## Q248788: Files to Patch FoxPro 2.6 to FoxPro 2.6a
 
+{% raw %}
+
 	Article: Q248788
 	Product(s): Microsoft FoxPro
 	Version(s): MS-DOS:2.6; WINDOWS:2.6
@@ -206,3 +208,5 @@ permalink: /kb/248/Q248788/
 	
 	=============================================================================
 	
+
+{% endraw %}

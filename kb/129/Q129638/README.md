@@ -6,6 +6,8 @@ permalink: /kb/129/Q129638/
 
 ## Q129638: PRB: Visible Controls on MDIChild Report as Invisible
 
+{% raw %}
+
 	Article: Q129638
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0
@@ -91,3 +93,5 @@ permalink: /kb/129/Q129638/
 	
 	=============================================================================
 	
+
+{% endraw %}

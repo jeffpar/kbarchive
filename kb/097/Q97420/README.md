@@ -6,6 +6,8 @@ permalink: /kb/097/Q97420/
 
 ## Q97420: MS-DOS 6 Upgrade Setup Err Msg: Current Drive Must Be Set to A
 
+{% raw %}
+
 	Article: Q97420
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -74,3 +76,5 @@ permalink: /kb/097/Q97420/
 	
 	=============================================================================
 	
+
+{% endraw %}

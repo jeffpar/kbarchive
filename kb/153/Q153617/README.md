@@ -6,6 +6,8 @@ permalink: /kb/153/Q153617/
 
 ## Q153617: Chgpass.exe May Cause Message &quot;Error Getting PDC Name&quot;
 
+{% raw %}
+
 	Article: Q153617
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51,4.0
@@ -150,3 +152,5 @@ permalink: /kb/153/Q153617/
 	
 	=============================================================================
 	
+
+{% endraw %}

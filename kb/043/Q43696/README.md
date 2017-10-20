@@ -6,6 +6,8 @@ permalink: /kb/043/Q43696/
 
 ## Q43696: Problem of a Line Disappearing in QB.EXE Version 4.50 Editor
 
+{% raw %}
+
 	Article: Q43696
 	Product(s): See article
 	Version(s): 4.50
@@ -71,3 +73,5 @@ permalink: /kb/043/Q43696/
 	You can make the PRINT statement reappear by pressing the SPACEBAR
 	where the PRINT statement used to be or by pressing F4 (view output
 	screen) twice.
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247517/
 
 ## Q247517: Asheron's Call Err Msg: Failed to Execute
 
+{% raw %}
+
 	Article: Q247517
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -61,3 +63,5 @@ permalink: /kb/247/Q247517/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/148/Q148417/
 
 ## Q148417: FP: How to Set Up a Form to Post Results by E-mail
 
+{% raw %}
+
 	Article: Q148417
 	Product(s): Word Front Page
 	Version(s): ; MACINTOSH:1.0; WINDOWS:1.0,1.1
@@ -81,3 +83,5 @@ permalink: /kb/148/Q148417/
 	
 	=============================================================================
 	
+
+{% endraw %}

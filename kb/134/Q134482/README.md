@@ -6,6 +6,8 @@ permalink: /kb/134/Q134482/
 
 ## Q134482: After Running Setup Uninstall, Directories Not Deleted
 
+{% raw %}
+
 	Article: Q134482
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -43,3 +45,5 @@ permalink: /kb/134/Q134482/
 	
 	=============================================================================
 	
+
+{% endraw %}

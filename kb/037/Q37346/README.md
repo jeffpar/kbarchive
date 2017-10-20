@@ -6,6 +6,8 @@ permalink: /kb/037/Q37346/
 
 ## Q37346: RUN &quot;PROG.EXE&quot; Fails in QB.EXE Editor; Use RUN &quot;PROG&quot; Instead
 
+{% raw %}
+
 	Article: Q37346
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -70,3 +72,5 @@ permalink: /kb/037/Q37346/
 	3. In QuickBASIC Versions 2.00, 2.01, and 3.00, the QB.EXE editor
 	   successfully executes RUN "WORD.COM" and removes QuickBASIC from
 	   memory.
+
+{% endraw %}

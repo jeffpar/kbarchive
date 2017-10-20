@@ -6,6 +6,8 @@ permalink: /kb/219/Q219380/
 
 ## Q219380: SP4 RAS Server Hangs Up When RAS Client Tries to Connect
 
+{% raw %}
+
 	Article: Q219380
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP4
@@ -75,3 +77,5 @@ permalink: /kb/219/Q219380/
 	
 	=============================================================================
 	
+
+{% endraw %}

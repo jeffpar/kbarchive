@@ -6,6 +6,8 @@ permalink: /kb/216/Q216918/
 
 ## Q216918: Err Msg: Combat Flight Simulator Requires a Higher Refresh Rate
 
+{% raw %}
+
 	Article: Q216918
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -91,3 +93,5 @@ permalink: /kb/216/Q216918/
 	
 	=============================================================================
 	
+
+{% endraw %}

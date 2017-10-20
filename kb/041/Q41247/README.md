@@ -6,6 +6,8 @@ permalink: /kb/041/Q41247/
 
 ## Q41247: Use Huge Pointers If Object Is Larger Than 64K Boundary
 
+{% raw %}
+
 	Article: Q41247
 	Product(s): See article
 	Version(s): 5.10
@@ -60,3 +62,5 @@ permalink: /kb/041/Q41247/
 	compile with the /AH option. It is recommended to use the huge keyword
 	rather than /AH because it allows you to control when huge arithmetic
 	is performed -- if you use /AH, then ALL pointers are huge.
+
+{% endraw %}

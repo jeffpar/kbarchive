@@ -6,6 +6,8 @@ permalink: /kb/190/Q190235/
 
 ## Q190235: WD97:Run Time Error 4366 Using Application.Run Command
 
+{% raw %}
+
 	Article: Q190235
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -129,3 +131,5 @@ permalink: /kb/190/Q190235/
 	
 	=============================================================================
 	
+
+{% endraw %}

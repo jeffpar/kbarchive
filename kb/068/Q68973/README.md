@@ -6,6 +6,8 @@ permalink: /kb/068/Q68973/
 
 ## Q68973: Mac Hyp: HyperCard 2.0 Compatibility
 
+{% raw %}
+
 	Article: Q68973
 	Product(s): Microsoft Mail For Appletalk Networks
 	Version(s): 2.0
@@ -52,3 +54,5 @@ permalink: /kb/068/Q68973/
 	
 	=============================================================================
 	
+
+{% endraw %}

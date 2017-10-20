@@ -6,6 +6,8 @@ permalink: /kb/174/Q174050/
 
 ## Q174050: HOWTO: Determine File Type from Registered CLSID
 
+{% raw %}
+
 	Article: Q174050
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 
@@ -153,3 +155,5 @@ permalink: /kb/174/Q174050/
 	
 	=============================================================================
 	
+
+{% endraw %}

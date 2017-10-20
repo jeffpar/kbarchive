@@ -6,6 +6,8 @@ permalink: /kb/164/Q164556/
 
 ## Q164556: WD97: Two Similar Macro Errors Occur for Same Line of Macro Code
 
+{% raw %}
+
 	Article: Q164556
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -100,3 +102,5 @@ permalink: /kb/164/Q164556/
 	
 	=============================================================================
 	
+
+{% endraw %}

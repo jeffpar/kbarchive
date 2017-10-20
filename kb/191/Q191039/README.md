@@ -6,6 +6,8 @@ permalink: /kb/191/Q191039/
 
 ## Q191039: HOWTO: Build an Internet Information Server Application
 
+{% raw %}
+
 	Article: Q191039
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0
@@ -161,3 +163,5 @@ permalink: /kb/191/Q191039/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/178/Q178876/
 
 ## Q178876: Age of Empires Err Msg: Invalid Page Fault in Kernel32.dll
 
+{% raw %}
+
 	Article: Q178876
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -191,3 +193,5 @@ permalink: /kb/178/Q178876/
 	
 	=============================================================================
 	
+
+{% endraw %}

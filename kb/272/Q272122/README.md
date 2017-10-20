@@ -6,6 +6,8 @@ permalink: /kb/272/Q272122/
 
 ## Q272122: Error Message: &quot;Username not found&quot; when trying to logon on fro
 
+{% raw %}
+
 	Article: Q272122
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -63,3 +65,5 @@ permalink: /kb/272/Q272122/
 	
 	=============================================================================
 	
+
+{% endraw %}

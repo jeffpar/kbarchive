@@ -6,6 +6,8 @@ permalink: /kb/118/Q118595/
 
 ## Q118595: SMTP: Gateway Tries to UUDECODE Text That is not UUENCODED
 
+{% raw %}
+
 	Article: Q118595
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -59,3 +61,5 @@ permalink: /kb/118/Q118595/
 	
 	=============================================================================
 	
+
+{% endraw %}

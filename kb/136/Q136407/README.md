@@ -6,6 +6,8 @@ permalink: /kb/136/Q136407/
 
 ## Q136407: Accton MPX EN1652 Network Adapter Not Detected
 
+{% raw %}
+
 	Article: Q136407
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -78,3 +80,5 @@ permalink: /kb/136/Q136407/
 	
 	=============================================================================
 	
+
+{% endraw %}

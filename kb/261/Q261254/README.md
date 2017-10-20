@@ -6,6 +6,8 @@ permalink: /kb/261/Q261254/
 
 ## Q261254: SMS: APM Enters Endless Loop on Windows NT 3.51 Clients
 
+{% raw %}
+
 	Article: Q261254
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -72,3 +74,5 @@ permalink: /kb/261/Q261254/
 	
 	=============================================================================
 	
+
+{% endraw %}

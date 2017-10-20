@@ -6,6 +6,8 @@ permalink: /kb/169/Q169326/
 
 ## Q169326: Does InterNIC Think Your DNS Servers Are Working?
 
+{% raw %}
+
 	Article: Q169326
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -267,3 +269,5 @@ permalink: /kb/169/Q169326/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/065/Q65103/
 
 ## Q65103: OS/2 BASIC Program to Get Machine Configuration; DosDevConfig
 
+{% raw %}
+
 	Article: Q65103
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00 7.10
@@ -116,3 +118,5 @@ permalink: /kb/065/Q65103/
 	END IF
 	
 	END
+
+{% endraw %}

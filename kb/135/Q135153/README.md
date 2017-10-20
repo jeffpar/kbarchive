@@ -6,6 +6,8 @@ permalink: /kb/135/Q135153/
 
 ## Q135153: Cannot Access Macintosh Files on Windows NT Server
 
+{% raw %}
+
 	Article: Q135153
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -77,3 +79,5 @@ permalink: /kb/135/Q135153/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/028/Q28442/
 
 ## Q28442: OS/2 Protected Mode Restrictions for BASIC Compiler 6.00/6.00b
 
+{% raw %}
+
 	Article: Q28442
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -51,3 +53,5 @@ permalink: /kb/028/Q28442/
 	    true: if a program in protected mode is using the communications
 	    port (COM1 or COM2), then you cannot use that port in real mode at
 	    the same time.
+
+{% endraw %}

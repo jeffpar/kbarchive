@@ -6,6 +6,8 @@ permalink: /kb/107/Q107174/
 
 ## Q107174: PRB: Not Enough Space for Environment
 
+{% raw %}
+
 	Article: Q107174
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -92,3 +94,5 @@ permalink: /kb/107/Q107174/
 	
 	=============================================================================
 	
+
+{% endraw %}

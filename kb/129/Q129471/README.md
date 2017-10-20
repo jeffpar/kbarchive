@@ -6,6 +6,8 @@ permalink: /kb/129/Q129471/
 
 ## Q129471: HOWTO: SubClass the MDIClient by Using MFC
 
+{% raw %}
+
 	Article: Q129471
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0,1.5,1.51,1.52,2.0,2.1,4.0,4.1,4.2,5.0,6.0
@@ -129,3 +131,5 @@ permalink: /kb/129/Q129471/
 	
 	=============================================================================
 	
+
+{% endraw %}

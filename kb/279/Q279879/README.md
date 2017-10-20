@@ -6,6 +6,8 @@ permalink: /kb/279/Q279879/
 
 ## Q279879: Problems with Processing of Asynchronous CNOS and DISPLAY Verbs
 
+{% raw %}
+
 	Article: Q279879
 	Product(s): Microsoft SNA Server
 	Version(s): 4.0 SP3,4.0 SP4
@@ -88,3 +90,5 @@ permalink: /kb/279/Q279879/
 	
 	=============================================================================
 	
+
+{% endraw %}

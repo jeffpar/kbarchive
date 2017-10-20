@@ -6,6 +6,8 @@ permalink: /kb/192/Q192550/
 
 ## Q192550: BUG: VBCE: Control Manager Does Not Properly Uninstall Control
 
+{% raw %}
+
 	Article: Q192550
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 3.0
@@ -59,3 +61,5 @@ permalink: /kb/192/Q192550/
 	
 	=============================================================================
 	
+
+{% endraw %}

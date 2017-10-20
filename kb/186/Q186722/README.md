@@ -6,6 +6,8 @@ permalink: /kb/186/Q186722/
 
 ## Q186722: HOWTO: Programmatically Install a True Type Font
 
+{% raw %}
+
 	Article: Q186722
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -191,3 +193,5 @@ permalink: /kb/186/Q186722/
 	
 	=============================================================================
 	
+
+{% endraw %}

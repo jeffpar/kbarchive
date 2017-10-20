@@ -6,6 +6,8 @@ permalink: /kb/196/Q196197/
 
 ## Q196197: PRB: Getting a File From Project Label Using OLE Automation
 
+{% raw %}
+
 	Article: Q196197
 	Product(s): Microsoft SourceSafe
 	Version(s): WINDOWS:5.0,6.0
@@ -117,3 +119,5 @@ permalink: /kb/196/Q196197/
 	
 	=============================================================================
 	
+
+{% endraw %}

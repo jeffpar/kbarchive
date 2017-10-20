@@ -6,6 +6,8 @@ permalink: /kb/150/Q150329/
 
 ## Q150329: Personal Folders (.pst) File Not Automatically Reduced in Size
 
+{% raw %}
+
 	Article: Q150329
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/150/Q150329/
 	
 	=============================================================================
 	
+
+{% endraw %}

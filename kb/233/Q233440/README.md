@@ -6,6 +6,8 @@ permalink: /kb/233/Q233440/
 
 ## Q233440: MSBP: Complete Text of Article Not Displayed in Text Only Mode
 
+{% raw %}
+
 	Article: Q233440
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -47,3 +49,5 @@ permalink: /kb/233/Q233440/
 	
 	=============================================================================
 	
+
+{% endraw %}

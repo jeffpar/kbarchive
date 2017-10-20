@@ -6,6 +6,8 @@ permalink: /kb/161/Q161944/
 
 ## Q161944: XCLN: Outlook Users Can't Access/Update Public Free/Busy Data
 
+{% raw %}
+
 	Article: Q161944
 	Product(s): Microsoft Exchange
 	Version(s): 4.0
@@ -63,3 +65,5 @@ permalink: /kb/161/Q161944/
 	
 	=============================================================================
 	
+
+{% endraw %}

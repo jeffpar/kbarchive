@@ -6,6 +6,8 @@ permalink: /kb/117/Q117844/
 
 ## Q117844: PC Win: Missing Message Text When Sending to a Large Group
 
+{% raw %}
+
 	Article: Q117844
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0,3.2
@@ -88,3 +90,5 @@ permalink: /kb/117/Q117844/
 	
 	=============================================================================
 	
+
+{% endraw %}

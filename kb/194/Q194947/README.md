@@ -6,6 +6,8 @@ permalink: /kb/194/Q194947/
 
 ## Q194947: XADM: Recovering Advanced Security Key for a Mailbox
 
+{% raw %}
+
 	Article: Q194947
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:4.0,5.0,5.5
@@ -51,3 +53,5 @@ permalink: /kb/194/Q194947/
 	
 	=============================================================================
 	
+
+{% endraw %}

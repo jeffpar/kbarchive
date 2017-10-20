@@ -6,6 +6,8 @@ permalink: /kb/274/Q274884/
 
 ## Q274884: CFS2: Cannot Host a Multiplayer Game on Zone.com
 
+{% raw %}
+
 	Article: Q274884
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -58,3 +60,5 @@ permalink: /kb/274/Q274884/
 	
 	=============================================================================
 	
+
+{% endraw %}

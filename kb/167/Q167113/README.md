@@ -6,6 +6,8 @@ permalink: /kb/167/Q167113/
 
 ## Q167113: FIX: C2734, C2166: Caused by Template Function with const ref
 
+{% raw %}
+
 	Article: Q167113
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,4.2b,5.0
@@ -93,3 +95,5 @@ permalink: /kb/167/Q167113/
 	
 	=============================================================================
 	
+
+{% endraw %}

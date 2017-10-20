@@ -6,6 +6,8 @@ permalink: /kb/093/Q93648/
 
 ## Q93648: FIX: Program Hangs at Startup When 109 Segments in Application
 
+{% raw %}
+
 	Article: Q93648
 	Product(s): Microsoft Programming Utilities
 	Version(s): 5.1,5.13,5.15
@@ -59,3 +61,5 @@ permalink: /kb/093/Q93648/
 	
 	=============================================================================
 	
+
+{% endraw %}

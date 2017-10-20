@@ -6,6 +6,8 @@ permalink: /kb/135/Q135629/
 
 ## Q135629: HOWTO: Use the Find &amp; Search Options on a Form Wizard Form
 
+{% raw %}
+
 	Article: Q135629
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b,5.0,5.0a,6.0
@@ -54,3 +56,5 @@ permalink: /kb/135/Q135629/
 	
 	=============================================================================
 	
+
+{% endraw %}

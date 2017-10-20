@@ -6,6 +6,8 @@ permalink: /kb/109/Q109785/
 
 ## Q109785: Command Line NTBACKUP /B Omits Registry Files
 
+{% raw %}
+
 	Article: Q109785
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -62,3 +64,5 @@ permalink: /kb/109/Q109785/
 	
 	=============================================================================
 	
+
+{% endraw %}

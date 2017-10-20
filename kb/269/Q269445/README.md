@@ -6,6 +6,8 @@ permalink: /kb/269/Q269445/
 
 ## Q269445: FIX: Unloading Form from Control Array Event Causes Error
 
+{% raw %}
+
 	Article: Q269445
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 6.0 SP4
@@ -254,3 +256,5 @@ permalink: /kb/269/Q269445/
 	
 	=============================================================================
 	
+
+{% endraw %}

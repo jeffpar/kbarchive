@@ -6,6 +6,8 @@ permalink: /kb/158/Q158987/
 
 ## Q158987: 32-bit NetWare Client for Windows NT Locks Services Database
 
+{% raw %}
+
 	Article: Q158987
 	Product(s): Microsoft Windows NT
 	Version(s): 3.5 3.51 4.0
@@ -77,3 +79,5 @@ permalink: /kb/158/Q158987/
 	
 	=============================================================================
 	
+
+{% endraw %}

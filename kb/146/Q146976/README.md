@@ -6,6 +6,8 @@ permalink: /kb/146/Q146976/
 
 ## Q146976: XCLN: Deleted Appointments are Downloaded to Intellilink
 
+{% raw %}
+
 	Article: Q146976
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -56,3 +58,5 @@ permalink: /kb/146/Q146976/
 	
 	=============================================================================
 	
+
+{% endraw %}

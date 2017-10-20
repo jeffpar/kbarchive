@@ -6,6 +6,8 @@ permalink: /kb/087/Q87989/
 
 ## Q87989: CAPS LOCK Key Problem on Packard Bell Legend 416 SX / 720 SX
 
+{% raw %}
+
 	Article: Q87989
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.0,3.0a,3.1,3.11
@@ -52,3 +54,5 @@ permalink: /kb/087/Q87989/
 	
 	=============================================================================
 	
+
+{% endraw %}

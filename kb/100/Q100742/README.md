@@ -6,6 +6,8 @@ permalink: /kb/100/Q100742/
 
 ## Q100742: Problems Running MSAV While MIDI File Is Playing
 
+{% raw %}
+
 	Article: Q100742
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -48,3 +50,5 @@ permalink: /kb/100/Q100742/
 	
 	=============================================================================
 	
+
+{% endraw %}

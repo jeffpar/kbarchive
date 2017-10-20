@@ -6,6 +6,8 @@ permalink: /kb/272/Q272559/
 
 ## Q272559: XADM: Information Store Crashes When You Save a Complex View
 
+{% raw %}
+
 	Article: Q272559
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -76,3 +78,5 @@ permalink: /kb/272/Q272559/
 	
 	=============================================================================
 	
+
+{% endraw %}

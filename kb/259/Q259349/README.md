@@ -6,6 +6,8 @@ permalink: /kb/259/Q259349/
 
 ## Q259349: IIS Binds To All Available IP Addresses When It Starts
 
+{% raw %}
+
 	Article: Q259349
 	Product(s): Internet Information Server
 	Version(s): 5.0
@@ -65,3 +67,5 @@ permalink: /kb/259/Q259349/
 	
 	=============================================================================
 	
+
+{% endraw %}

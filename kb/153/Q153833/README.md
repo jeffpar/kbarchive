@@ -6,6 +6,8 @@ permalink: /kb/153/Q153833/
 
 ## Q153833: PPT: How to Resize the AutoLayout Placeholders
 
+{% raw %}
+
 	Article: Q153833
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:4.0; WINDOWS:4.0,4.0a,4.0c,7.0
@@ -69,3 +71,5 @@ permalink: /kb/153/Q153833/
 	
 	=============================================================================
 	
+
+{% endraw %}

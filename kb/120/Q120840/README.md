@@ -6,6 +6,8 @@ permalink: /kb/120/Q120840/
 
 ## Q120840: PRB: Setup Does Not Detect Existing FoxPro Installation
 
+{% raw %}
+
 	Article: Q120840
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.6a,3.0b
@@ -55,3 +57,5 @@ permalink: /kb/120/Q120840/
 	
 	=============================================================================
 	
+
+{% endraw %}

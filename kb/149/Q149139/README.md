@@ -6,6 +6,8 @@ permalink: /kb/149/Q149139/
 
 ## Q149139: FIX: Visual C++ Breaks ODBC CLongBinary w/ GlobalReAll Misuse
 
+{% raw %}
+
 	Article: Q149139
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0
@@ -78,3 +80,5 @@ permalink: /kb/149/Q149139/
 	
 	=============================================================================
 	
+
+{% endraw %}

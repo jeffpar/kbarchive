@@ -6,6 +6,8 @@ permalink: /kb/164/Q164911/
 
 ## Q164911: Improve SNA Manager Handling of Host Security Domain Deletion
 
+{% raw %}
+
 	Article: Q164911
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -75,3 +77,5 @@ permalink: /kb/164/Q164911/
 	
 	=============================================================================
 	
+
+{% endraw %}

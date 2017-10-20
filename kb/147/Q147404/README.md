@@ -6,6 +6,8 @@ permalink: /kb/147/Q147404/
 
 ## Q147404: Err Msg: &lt;Program&gt; Setup Was Not Completed Successfully
 
+{% raw %}
+
 	Article: Q147404
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,4.5a,95
@@ -129,3 +131,5 @@ permalink: /kb/147/Q147404/
 	
 	=============================================================================
 	
+
+{% endraw %}

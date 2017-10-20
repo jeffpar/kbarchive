@@ -6,6 +6,8 @@ permalink: /kb/130/Q130363/
 
 ## Q130363: Stack Overflow Playing Movie Clips in THE ANIMALS!
 
+{% raw %}
+
 	Article: Q130363
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/130/Q130363/
 	
 	=============================================================================
 	
+
+{% endraw %}

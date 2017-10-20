@@ -6,6 +6,8 @@ permalink: /kb/194/Q194396/
 
 ## Q194396: MDM.EXE - DLL Initialization Failed Error
 
+{% raw %}
+
 	Article: Q194396
 	Product(s): Internet Information Server
 	Version(s): 4.0
@@ -149,3 +151,5 @@ permalink: /kb/194/Q194396/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/095/Q95975/
 
 ## Q95975: PC DB: Rebuilding Group Folders Changes Folder Type
 
+{% raw %}
+
 	Article: Q95975
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:2.1,3.0
@@ -93,3 +95,5 @@ permalink: /kb/095/Q95975/
 	
 	=============================================================================
 	
+
+{% endraw %}

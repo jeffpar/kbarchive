@@ -6,6 +6,8 @@ permalink: /kb/200/Q200644/
 
 ## Q200644: SMS: SMS 2.0 NDS Support Requires Recent IntranetWare Client
 
+{% raw %}
+
 	Article: Q200644
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -68,3 +70,5 @@ permalink: /kb/200/Q200644/
 	
 	=============================================================================
 	
+
+{% endraw %}

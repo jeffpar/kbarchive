@@ -6,6 +6,8 @@ permalink: /kb/150/Q150436/
 
 ## Q150436: Windows 95 Service Pack 1 CD-ROM Directory Listing (1 of 5)
 
+{% raw %}
+
 	Article: Q150436
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -348,3 +350,5 @@ permalink: /kb/150/Q150436/
 	
 	=============================================================================
 	
+
+{% endraw %}

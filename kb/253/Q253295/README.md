@@ -6,6 +6,8 @@ permalink: /kb/253/Q253295/
 
 ## Q253295: FIX: Loading/Unloading Form w/MSHFlexGrid Causes Resource Leak
 
+{% raw %}
+
 	Article: Q253295
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0,97
@@ -93,3 +95,5 @@ permalink: /kb/253/Q253295/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/158/Q158577/
 
 ## Q158577: STL Sample for the set::max_size Function
 
+{% raw %}
+
 	Article: Q158577
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:4.2,5.0,6.0
@@ -125,3 +127,5 @@ permalink: /kb/158/Q158577/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/272/Q272658/
 
 ## Q272658: MSN Companion Member Name and Password Confirmation
 
+{% raw %}
+
 	Article: Q272658
 	Product(s): The Microsoft Network
 	Version(s): 1.0,2.0
@@ -55,3 +57,5 @@ permalink: /kb/272/Q272658/
 	
 	=============================================================================
 	
+
+{% endraw %}

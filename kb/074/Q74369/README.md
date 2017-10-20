@@ -6,6 +6,8 @@ permalink: /kb/074/Q74369/
 
 ## Q74369: Compuadd Mouse Driver for MS-DOS 5.0 Shell
 
+{% raw %}
+
 	Article: Q74369
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -47,3 +49,5 @@ permalink: /kb/074/Q74369/
 	
 	=============================================================================
 	
+
+{% endraw %}

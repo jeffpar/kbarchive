@@ -6,6 +6,8 @@ permalink: /kb/140/Q140551/
 
 ## Q140551: NetDDE Requires Username/Password When Connecting to WinNT
 
+{% raw %}
+
 	Article: Q140551
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51 4.0 95
@@ -57,3 +59,5 @@ permalink: /kb/140/Q140551/
 	
 	=============================================================================
 	
+
+{% endraw %}

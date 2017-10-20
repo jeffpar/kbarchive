@@ -6,6 +6,8 @@ permalink: /kb/163/Q163170/
 
 ## Q163170: Kids Plus!: PolEdit and Protect It! Interfere with Start Menu
 
+{% raw %}
+
 	Article: Q163170
 	Product(s): Microsoft Home Kids Products
 	Version(s): 1.0
@@ -45,3 +47,5 @@ permalink: /kb/163/Q163170/
 	
 	=============================================================================
 	
+
+{% endraw %}

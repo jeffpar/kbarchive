@@ -6,6 +6,8 @@ permalink: /kb/200/Q200890/
 
 ## Q200890: SNMP Security Extended by Service Pack 4
 
+{% raw %}
+
 	Article: Q200890
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -71,3 +73,5 @@ permalink: /kb/200/Q200890/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/044/Q44477/
 
 ## Q44477: Use /ND Instead of #pragma data_seg
 
+{% raw %}
+
 	Article: Q44477
 	Product(s): See article
 	Version(s): 5.10   | 5.10
@@ -41,3 +43,5 @@ permalink: /kb/044/Q44477/
 	Note that the use of pragma data_seg by itself does not cause
 	subsequent functions to load DS. You must also compile with /Au or use
 	the _loadds keyword.
+
+{% endraw %}

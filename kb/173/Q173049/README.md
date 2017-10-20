@@ -6,6 +6,8 @@ permalink: /kb/173/Q173049/
 
 ## Q173049: PRB: &quot;Locate&quot; Dialog Appears When Running Setup Wizard
 
+{% raw %}
+
 	Article: Q173049
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0
@@ -110,3 +112,5 @@ permalink: /kb/173/Q173049/
 	
 	=============================================================================
 	
+
+{% endraw %}

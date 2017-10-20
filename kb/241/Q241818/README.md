@@ -6,6 +6,8 @@ permalink: /kb/241/Q241818/
 
 ## Q241818: PRB: Calculated Field Contents Cannot be Modified by ADO
 
+{% raw %}
+
 	Article: Q241818
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.01,2.1,2.1 SP1,2.1 SP2,2.5,2.6,5.0,6.0,6.5 Service Pack 4 and later,7.0
@@ -131,3 +133,5 @@ permalink: /kb/241/Q241818/
 	
 	=============================================================================
 	
+
+{% endraw %}

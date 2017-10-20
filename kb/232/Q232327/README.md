@@ -6,6 +6,8 @@ permalink: /kb/232/Q232327/
 
 ## Q232327: Microsoft Office 2000 Resource Kit Comments and Corrections
 
+{% raw %}
+
 	Article: Q232327
 	Product(s): Microsoft Press
 	Version(s): WINDOWS:2000
@@ -70,3 +72,5 @@ permalink: /kb/232/Q232327/
 	
 	=============================================================================
 	
+
+{% endraw %}

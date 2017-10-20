@@ -6,6 +6,8 @@ permalink: /kb/262/Q262533/
 
 ## Q262533: StarLancer: Game Sounds Are Played After Game Quits Unexpectedly
 
+{% raw %}
+
 	Article: Q262533
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -106,3 +108,5 @@ permalink: /kb/262/Q262533/
 	
 	=============================================================================
 	
+
+{% endraw %}

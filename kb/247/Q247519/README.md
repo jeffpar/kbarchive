@@ -6,6 +6,8 @@ permalink: /kb/247/Q247519/
 
 ## Q247519: Asheron's Call: Game Does Not Start When You Click Play
 
+{% raw %}
+
 	Article: Q247519
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -123,3 +125,5 @@ permalink: /kb/247/Q247519/
 	
 	=============================================================================
 	
+
+{% endraw %}

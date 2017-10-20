@@ -6,6 +6,8 @@ permalink: /kb/157/Q157617/
 
 ## Q157617: BUG: SQLStatistics Does Not Return Unique Index Information
 
+{% raw %}
+
 	Article: Q157617
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5,2.65; winnt:6.5
@@ -64,3 +66,5 @@ permalink: /kb/157/Q157617/
 	
 	=============================================================================
 	
+
+{% endraw %}

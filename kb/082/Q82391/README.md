@@ -6,6 +6,8 @@ permalink: /kb/082/Q82391/
 
 ## Q82391: Windows Hangs with Kurta Mouse Driver
 
+{% raw %}
+
 	Article: Q82391
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -54,3 +56,5 @@ permalink: /kb/082/Q82391/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/185/Q185190/
 
 ## Q185190: WD97: Find/Replace Macros Cannot Find Wingdings Characters
 
+{% raw %}
+
 	Article: Q185190
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -197,3 +199,5 @@ permalink: /kb/185/Q185190/
 	
 	=============================================================================
 	
+
+{% endraw %}

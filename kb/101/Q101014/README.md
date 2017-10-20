@@ -6,6 +6,8 @@ permalink: /kb/101/Q101014/
 
 ## Q101014: PRB: Error Decompressing &lt;Filename&gt;/File Copy Operation Failed
 
+{% raw %}
+
 	Article: Q101014
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0
@@ -75,3 +77,5 @@ permalink: /kb/101/Q101014/
 	
 	=============================================================================
 	
+
+{% endraw %}

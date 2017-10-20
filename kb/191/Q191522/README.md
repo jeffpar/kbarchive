@@ -6,6 +6,8 @@ permalink: /kb/191/Q191522/
 
 ## Q191522: FIX: TABLEUPDATE() Fails in Remote View With Empty Memo Field
 
+{% raw %}
+
 	Article: Q191522
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:2.5,3.0,5.0
@@ -203,3 +205,5 @@ permalink: /kb/191/Q191522/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/247/Q247572/
 
 ## Q247572: Problems with AddSystem and Addsytemgui SMS Resource Kit Tools
 
+{% raw %}
+
 	Article: Q247572
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0,2.0 SP1
@@ -98,3 +100,5 @@ permalink: /kb/247/Q247572/
 	
 	=============================================================================
 	
+
+{% endraw %}

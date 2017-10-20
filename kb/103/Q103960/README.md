@@ -6,6 +6,8 @@ permalink: /kb/103/Q103960/
 
 ## Q103960: PC Ext: Err Msg: Error 021: Message Was Not Delivered...
 
+{% raw %}
+
 	Article: Q103960
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0,3.2
@@ -98,3 +100,5 @@ permalink: /kb/103/Q103960/
 	
 	=============================================================================
 	
+
+{% endraw %}

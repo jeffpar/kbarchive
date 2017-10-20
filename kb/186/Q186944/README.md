@@ -6,6 +6,8 @@ permalink: /kb/186/Q186944/
 
 ## Q186944: XWEB: Some Messages Sent From Contact List Are Undeliverable
 
+{% raw %}
+
 	Article: Q186944
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.5
@@ -62,3 +64,5 @@ permalink: /kb/186/Q186944/
 	
 	=============================================================================
 	
+
+{% endraw %}

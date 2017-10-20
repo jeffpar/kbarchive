@@ -6,6 +6,8 @@ permalink: /kb/077/Q77620/
 
 ## Q77620: WD97: Cannot Insert Nested Formula with Insert Field Command
 
+{% raw %}
+
 	Article: Q77620
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -128,3 +130,5 @@ permalink: /kb/077/Q77620/
 	
 	=============================================================================
 	
+
+{% endraw %}

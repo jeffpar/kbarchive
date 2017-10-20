@@ -6,6 +6,8 @@ permalink: /kb/158/Q158864/
 
 ## Q158864: How to Obtain Systems Management Server 1.2 Service Pack 4
 
+{% raw %}
+
 	Article: Q158864
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP4
@@ -109,3 +111,5 @@ permalink: /kb/158/Q158864/
 	
 	=============================================================================
 	
+
+{% endraw %}

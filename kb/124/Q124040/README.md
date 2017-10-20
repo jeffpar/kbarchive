@@ -6,6 +6,8 @@ permalink: /kb/124/Q124040/
 
 ## Q124040: PC Win: Converting Dates Changes Message Update
 
+{% raw %}
+
 	Article: Q124040
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b,3.2
@@ -87,3 +89,5 @@ permalink: /kb/124/Q124040/
 	
 	=============================================================================
 	
+
+{% endraw %}

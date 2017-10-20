@@ -6,6 +6,8 @@ permalink: /kb/235/Q235761/
 
 ## Q235761: SMS: Foreign Package Information Not Available to Child Sites
 
+{% raw %}
+
 	Article: Q235761
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -57,3 +59,5 @@ permalink: /kb/235/Q235761/
 	
 	=============================================================================
 	
+
+{% endraw %}

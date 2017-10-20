@@ -6,6 +6,8 @@ permalink: /kb/175/Q175952/
 
 ## Q175952: NETSTAT Displays a LISTENING Port with IP Address 0.0.0.0
 
+{% raw %}
+
 	Article: Q175952
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -56,3 +58,5 @@ permalink: /kb/175/Q175952/
 	
 	=============================================================================
 	
+
+{% endraw %}

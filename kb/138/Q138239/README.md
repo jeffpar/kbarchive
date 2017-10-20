@@ -6,6 +6,8 @@ permalink: /kb/138/Q138239/
 
 ## Q138239: Characters Missing in Quick Window Viewer During Remote Control
 
+{% raw %}
+
 	Article: Q138239
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.0,1.1,1.2
@@ -46,3 +48,5 @@ permalink: /kb/138/Q138239/
 	
 	=============================================================================
 	
+
+{% endraw %}

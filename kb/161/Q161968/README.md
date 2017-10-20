@@ -6,6 +6,8 @@ permalink: /kb/161/Q161968/
 
 ## Q161968: NetBT Tears Down TCP Session with Many Concurrent File Transfers
 
+{% raw %}
+
 	Article: Q161968
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:3.51,4.0
@@ -90,3 +92,5 @@ permalink: /kb/161/Q161968/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/196/Q196538/
 
 ## Q196538: Euro Currency Not Available in Windows NT WTS Character Sets
 
+{% raw %}
+
 	Article: Q196538
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -74,3 +76,5 @@ permalink: /kb/196/Q196538/
 	
 	=============================================================================
 	
+
+{% endraw %}

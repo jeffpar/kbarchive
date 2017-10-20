@@ -6,6 +6,8 @@ permalink: /kb/176/Q176507/
 
 ## Q176507: Unattended Installation of MSCS Service
 
+{% raw %}
+
 	Article: Q176507
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -153,3 +155,5 @@ permalink: /kb/176/Q176507/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/155/Q155921/
 
 ## Q155921: User Profile Editor Does Not Show Unlocked Program Groups
 
+{% raw %}
+
 	Article: Q155921
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -75,3 +77,5 @@ permalink: /kb/155/Q155921/
 	
 	=============================================================================
 	
+
+{% endraw %}

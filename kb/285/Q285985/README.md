@@ -6,6 +6,8 @@ permalink: /kb/285/Q285985/
 
 ## Q285985: New Variant of File Fragment Reading via .HTR Vulnerability
 
+{% raw %}
+
 	Article: Q285985
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -161,3 +163,5 @@ permalink: /kb/285/Q285985/
 	
 	=============================================================================
 	
+
+{% endraw %}

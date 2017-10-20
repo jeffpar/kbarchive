@@ -6,6 +6,8 @@ permalink: /kb/178/Q178226/
 
 ## Q178226: FS98: Error Message: Invalid Page Fault In Module Fltsim98.exe
 
+{% raw %}
+
 	Article: Q178226
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -101,3 +103,5 @@ permalink: /kb/178/Q178226/
 	
 	=============================================================================
 	
+
+{% endraw %}

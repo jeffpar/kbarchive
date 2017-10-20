@@ -6,6 +6,8 @@ permalink: /kb/103/Q103489/
 
 ## Q103489: Logon Hours Rights Are Checked Only During Actual Logon Time
 
+{% raw %}
+
 	Article: Q103489
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1
@@ -40,3 +42,5 @@ permalink: /kb/103/Q103489/
 	
 	=============================================================================
 	
+
+{% endraw %}

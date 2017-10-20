@@ -6,6 +6,8 @@ permalink: /kb/206/Q206039/
 
 ## Q206039: WD97: FaxWorks Stops Responding When Faxing with a Cover Sheet
 
+{% raw %}
+
 	Article: Q206039
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -69,3 +71,5 @@ permalink: /kb/206/Q206039/
 	
 	=============================================================================
 	
+
+{% endraw %}

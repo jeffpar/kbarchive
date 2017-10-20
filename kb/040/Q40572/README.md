@@ -6,6 +6,8 @@ permalink: /kb/040/Q40572/
 
 ## Q40572: Versions of MASM Prior to 6.0 Do Not Support Flat Model
 
+{% raw %}
+
 	Article: Q40572
 	Product(s): Microsoft Macro Assembler
 	Version(s): 4.0,5.0,5.1
@@ -41,3 +43,5 @@ permalink: /kb/040/Q40572/
 	
 	=============================================================================
 	
+
+{% endraw %}

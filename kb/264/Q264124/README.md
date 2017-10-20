@@ -6,6 +6,8 @@ permalink: /kb/264/Q264124/
 
 ## Q264124: XADM: How to Use Userdump to Monitor Information Store
 
+{% raw %}
+
 	Article: Q264124
 	Product(s): Microsoft Exchange
 	Version(s): 4.0,5.0,5.5
@@ -163,3 +165,5 @@ permalink: /kb/264/Q264124/
 	
 	=============================================================================
 	
+
+{% endraw %}

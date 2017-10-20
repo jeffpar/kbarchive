@@ -6,6 +6,8 @@ permalink: /kb/141/Q141877/
 
 ## Q141877: What Is Visual FoxPro 3.0a?
 
+{% raw %}
+
 	Article: Q141877
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0a
@@ -37,3 +39,5 @@ permalink: /kb/141/Q141877/
 	
 	=============================================================================
 	
+
+{% endraw %}

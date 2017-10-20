@@ -6,6 +6,8 @@ permalink: /kb/036/Q36910/
 
 ## Q36910: TI 855 Prints Garbage if Switch 4 Is Not Off
 
+{% raw %}
+
 	Article: Q36910
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:2.x,3.0,3.0a,3.1,3.11
@@ -59,3 +61,5 @@ permalink: /kb/036/Q36910/
 	
 	=============================================================================
 	
+
+{% endraw %}

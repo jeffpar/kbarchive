@@ -6,6 +6,8 @@ permalink: /kb/030/Q30515/
 
 ## Q30515: /I Linker Option Should Read /INF
 
+{% raw %}
+
 	Article: Q30515
 	Product(s): See article
 	Version(s): 3.61 3.65
@@ -21,3 +23,5 @@ permalink: /kb/030/Q30515/
 	an unrecognized option.
 	
 	The correct shortened name for /INFORMATION is /INF.
+
+{% endraw %}

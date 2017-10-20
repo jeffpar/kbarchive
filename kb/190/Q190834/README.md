@@ -6,6 +6,8 @@ permalink: /kb/190/Q190834/
 
 ## Q190834: SCSI Adapter Is No Longer Visible from SCSI Adapters Utility
 
+{% raw %}
+
 	Article: Q190834
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -86,3 +88,5 @@ permalink: /kb/190/Q190834/
 	
 	=============================================================================
 	
+
+{% endraw %}

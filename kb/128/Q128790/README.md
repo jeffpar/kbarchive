@@ -6,6 +6,8 @@ permalink: /kb/128/Q128790/
 
 ## Q128790: PRB: The SPAWN.C Sample Fails as a C++ Application
 
+{% raw %}
+
 	Article: Q128790
 	Product(s): Microsoft C Compiler
 	Version(s): 1.0 1.5 1.51 2.0 2.1 4.0 4.1
@@ -150,3 +152,5 @@ permalink: /kb/128/Q128790/
 	
 	=============================================================================
 	
+
+{% endraw %}

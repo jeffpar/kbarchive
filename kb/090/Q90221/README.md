@@ -6,6 +6,8 @@ permalink: /kb/090/Q90221/
 
 ## Q90221: Cannot Preview Font in Chat
 
+{% raw %}
+
 	Article: Q90221
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1
@@ -36,3 +38,5 @@ permalink: /kb/090/Q90221/
 	
 	=============================================================================
 	
+
+{% endraw %}

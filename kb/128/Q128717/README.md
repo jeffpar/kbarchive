@@ -6,6 +6,8 @@ permalink: /kb/128/Q128717/
 
 ## Q128717: MHS: Err Msg: Inpost: General File I/O Error
 
+{% raw %}
+
 	Article: Q128717
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -56,3 +58,5 @@ permalink: /kb/128/Q128717/
 	
 	=============================================================================
 	
+
+{% endraw %}

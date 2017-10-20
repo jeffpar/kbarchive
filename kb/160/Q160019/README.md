@@ -6,6 +6,8 @@ permalink: /kb/160/Q160019/
 
 ## Q160019: XCOPY Fails with InocuLAN Virus Software Installed
 
+{% raw %}
+
 	Article: Q160019
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1 3.5 3.51
@@ -77,3 +79,5 @@ permalink: /kb/160/Q160019/
 	
 	=============================================================================
 	
+
+{% endraw %}

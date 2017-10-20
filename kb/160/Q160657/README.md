@@ -6,6 +6,8 @@ permalink: /kb/160/Q160657/
 
 ## Q160657: 16-bit Version of Visual Basic 4 May Hang Windows NT 4.0
 
+{% raw %}
+
 	Article: Q160657
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -55,3 +57,5 @@ permalink: /kb/160/Q160657/
 	
 	=============================================================================
 	
+
+{% endraw %}

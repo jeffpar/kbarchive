@@ -6,6 +6,8 @@ permalink: /kb/052/Q52093/
 
 ## Q52093: BASIC 7.00 Example to Find All Available Disk Drives
 
+{% raw %}
+
 	Article: Q52093
 	Product(s): See article
 	Version(s): 7.00   | 7.00
@@ -72,3 +74,5 @@ permalink: /kb/052/Q52093/
 	
 	DriveError: IsDrive% = FALSE   'CHDRIVE was unsuccessful.
 	            RESUME NEXT        'Resume at the IF statement.
+
+{% endraw %}

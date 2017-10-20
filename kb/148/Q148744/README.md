@@ -6,6 +6,8 @@ permalink: /kb/148/Q148744/
 
 ## Q148744: Return of Arcade: How to Create Desktop Icons
 
+{% raw %}
+
 	Article: Q148744
 	Product(s): Microsoft Home Games
 	Version(s): WINDOWS:1.0
@@ -70,3 +72,5 @@ permalink: /kb/148/Q148744/
 	
 	=============================================================================
 	
+
+{% endraw %}

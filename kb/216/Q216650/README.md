@@ -6,6 +6,8 @@ permalink: /kb/216/Q216650/
 
 ## Q216650: SMS: Distributing Windows NT 4.0 Service Pack 4
 
+{% raw %}
+
 	Article: Q216650
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:2.0
@@ -58,3 +60,5 @@ permalink: /kb/216/Q216650/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/171/Q171385/
 
 ## Q171385: INFO: Article List for Troubleshooting Registry in Windows 95
 
+{% raw %}
+
 	Article: Q171385
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0,6.0
@@ -58,3 +60,5 @@ permalink: /kb/171/Q171385/
 	
 	=============================================================================
 	
+
+{% endraw %}

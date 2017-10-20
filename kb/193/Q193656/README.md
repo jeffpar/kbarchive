@@ -6,6 +6,8 @@ permalink: /kb/193/Q193656/
 
 ## Q193656: &quot;The File Format Is Invalid&quot; Playing Large AVI File
 
+{% raw %}
+
 	Article: Q193656
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -63,3 +65,5 @@ permalink: /kb/193/Q193656/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/145/Q145891/
 
 ## Q145891: PRB: Combo Box Moves Record Pointer When No Selection Was Made
 
+{% raw %}
+
 	Article: Q145891
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -129,3 +131,5 @@ permalink: /kb/145/Q145891/
 	
 	=============================================================================
 	
+
+{% endraw %}

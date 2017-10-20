@@ -6,6 +6,8 @@ permalink: /kb/163/Q163370/
 
 ## Q163370: PRB: #File Error# During Dump of Heap Objects
 
+{% raw %}
+
 	Article: Q163370
 	Product(s): Microsoft C Compiler
 	Version(s): 4.0 4.1 4.2 5.0
@@ -114,3 +116,5 @@ permalink: /kb/163/Q163370/
 	
 	=============================================================================
 	
+
+{% endraw %}

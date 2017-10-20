@@ -6,6 +6,8 @@ permalink: /kb/066/Q66291/
 
 ## Q66291: Flight Simulator: Aircraft &amp; Scenery Designer Features
 
+{% raw %}
+
 	Article: Q66291
 	Product(s): Microsoft Home Games
 	Version(s): 
@@ -89,3 +91,5 @@ permalink: /kb/066/Q66291/
 	
 	=============================================================================
 	
+
+{% endraw %}

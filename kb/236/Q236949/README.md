@@ -6,6 +6,8 @@ permalink: /kb/236/Q236949/
 
 ## Q236949: Improper Shutdown Occurrence Is Reported in the Event Viewer Sys
 
+{% raw %}
+
 	Article: Q236949
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0 SP4,4.0 SP5
@@ -131,3 +133,5 @@ permalink: /kb/236/Q236949/
 	
 	=============================================================================
 	
+
+{% endraw %}

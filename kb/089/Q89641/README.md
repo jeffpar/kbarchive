@@ -6,6 +6,8 @@ permalink: /kb/089/Q89641/
 
 ## Q89641: BUG: Complex Clipping Region Might Cause UAE/GP Fault
 
+{% raw %}
+
 	Article: Q89641
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -138,3 +140,5 @@ permalink: /kb/089/Q89641/
 	
 	=============================================================================
 	
+
+{% endraw %}

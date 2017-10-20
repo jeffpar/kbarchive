@@ -6,6 +6,8 @@ permalink: /kb/197/Q197582/
 
 ## Q197582: FIX: FlexGrid SelChange Occurs for Every Selected Row or Column
 
+{% raw %}
+
 	Article: Q197582
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:6.0
@@ -105,3 +107,5 @@ permalink: /kb/197/Q197582/
 	
 	=============================================================================
 	
+
+{% endraw %}

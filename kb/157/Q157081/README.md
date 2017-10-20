@@ -6,6 +6,8 @@ permalink: /kb/157/Q157081/
 
 ## Q157081: XCLN: Error Messages When Compiling or Loading Forms
 
+{% raw %}
+
 	Article: Q157081
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.5
@@ -87,3 +89,5 @@ permalink: /kb/157/Q157081/
 	
 	=============================================================================
 	
+
+{% endraw %}

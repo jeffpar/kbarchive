@@ -6,6 +6,8 @@ permalink: /kb/141/Q141592/
 
 ## Q141592: Event ID: 56 with Distributed Link Services to AS/400
 
+{% raw %}
+
 	Article: Q141592
 	Product(s): Microsoft SNA Server
 	Version(s): 2.0,2.1,2.11,2.11 SP1,3.0,3.0 SP1,3.0 SP2,3.0 SP3,3.0 SP4,4.0,4.0 SP1,4.0 SP2,4.0 SP3,
@@ -76,3 +78,5 @@ permalink: /kb/141/Q141592/
 	
 	=============================================================================
 	
+
+{% endraw %}

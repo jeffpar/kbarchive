@@ -6,6 +6,8 @@ permalink: /kb/150/Q150073/
 
 ## Q150073: How to Query FoxPro Data on the Web Using ODBC
 
+{% raw %}
+
 	Article: Q150073
 	Product(s): Microsoft FoxPro
 	Version(s): 1.0
@@ -179,3 +181,5 @@ permalink: /kb/150/Q150073/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/177/Q177779/
 
 ## Q177779: XADM: Error Message in Store.exe on Messages Sent from PROFS
 
+{% raw %}
+
 	Article: Q177779
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -55,3 +57,5 @@ permalink: /kb/177/Q177779/
 	
 	=============================================================================
 	
+
+{% endraw %}

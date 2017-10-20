@@ -6,6 +6,8 @@ permalink: /kb/132/Q132189/
 
 ## Q132189: PPT: How to Determine and/or Change the Bullet Style
 
+{% raw %}
+
 	Article: Q132189
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): MACINTOSH:3.0,3.0b,4.0; WINDOWS:3.0,4.0,4.0a,4.0c,7.0
@@ -86,3 +88,5 @@ permalink: /kb/132/Q132189/
 	
 	=============================================================================
 	
+
+{% endraw %}

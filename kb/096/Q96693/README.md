@@ -6,6 +6,8 @@ permalink: /kb/096/Q96693/
 
 ## Q96693: PC Win: Name Finder Doesn't Find Correct Names
 
+{% raw %}
+
 	Article: Q96693
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0b
@@ -46,3 +48,5 @@ permalink: /kb/096/Q96693/
 	
 	=============================================================================
 	
+
+{% endraw %}

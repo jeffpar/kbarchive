@@ -6,6 +6,8 @@ permalink: /kb/321/Q321485/
 
 ## Q321485: How to Verify VSS User Name and Password from a Command Prompt
 
+{% raw %}
+
 	Article: Q321485
 	Product(s): Microsoft SourceSafe
 	Version(s): 6.0
@@ -119,3 +121,5 @@ permalink: /kb/321/Q321485/
 	
 	=============================================================================
 	
+
+{% endraw %}

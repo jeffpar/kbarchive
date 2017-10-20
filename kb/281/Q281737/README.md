@@ -6,6 +6,8 @@ permalink: /kb/281/Q281737/
 
 ## Q281737: Error Message When Opening Rascfg.dll During DUN Installation
 
+{% raw %}
+
 	Article: Q281737
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -82,3 +84,5 @@ permalink: /kb/281/Q281737/
 	
 	=============================================================================
 	
+
+{% endraw %}

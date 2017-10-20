@@ -6,6 +6,8 @@ permalink: /kb/138/Q138404/
 
 ## Q138404: How To Use License Manager on a Windows NT Workstation
 
+{% raw %}
+
 	Article: Q138404
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -46,3 +48,5 @@ permalink: /kb/138/Q138404/
 	
 	=============================================================================
 	
+
+{% endraw %}

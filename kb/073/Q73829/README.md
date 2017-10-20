@@ -6,6 +6,8 @@ permalink: /kb/073/Q73829/
 
 ## Q73829: Windows/386 2.1x Compatibility with MS-DOS 5.0 or Later
 
+{% raw %}
+
 	Article: Q73829
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x,6.0
@@ -58,3 +60,5 @@ permalink: /kb/073/Q73829/
 	
 	=============================================================================
 	
+
+{% endraw %}

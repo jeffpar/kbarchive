@@ -6,6 +6,8 @@ permalink: /kb/118/Q118562/
 
 ## Q118562: SMTP: Cannot Export Address List Using ODI Drivers
 
+{% raw %}
+
 	Article: Q118562
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:2.1,3.0
@@ -93,3 +95,5 @@ permalink: /kb/118/Q118562/
 	
 	=============================================================================
 	
+
+{% endraw %}

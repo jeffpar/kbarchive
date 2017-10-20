@@ -6,6 +6,8 @@ permalink: /kb/108/Q108442/
 
 ## Q108442: Mac Art Gallery/Wine Guide: Right Side of Image Is Cropped
 
+{% raw %}
+
 	Article: Q108442
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:1.0
@@ -53,3 +55,5 @@ permalink: /kb/108/Q108442/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/102/Q102914/
 
 ## Q102914: Scenes 1.0: Quick Start Doesn't Function with Screen Wrap
 
+{% raw %}
+
 	Article: Q102914
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0,9.0
@@ -48,3 +50,5 @@ permalink: /kb/102/Q102914/
 	
 	=============================================================================
 	
+
+{% endraw %}

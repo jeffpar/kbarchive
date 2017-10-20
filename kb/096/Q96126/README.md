@@ -6,6 +6,8 @@ permalink: /kb/096/Q96126/
 
 ## Q96126: SMTP: Error in Documentation for -BR Parameter
 
+{% raw %}
+
 	Article: Q96126
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -46,3 +48,5 @@ permalink: /kb/096/Q96126/
 	
 	=============================================================================
 	
+
+{% endraw %}

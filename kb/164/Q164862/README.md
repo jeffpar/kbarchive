@@ -6,6 +6,8 @@ permalink: /kb/164/Q164862/
 
 ## Q164862: XCON: MTA Raises Exception Error on X.25 Connections
 
+{% raw %}
+
 	Article: Q164862
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -60,3 +62,5 @@ permalink: /kb/164/Q164862/
 	
 	=============================================================================
 	
+
+{% endraw %}

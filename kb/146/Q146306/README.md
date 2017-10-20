@@ -6,6 +6,8 @@ permalink: /kb/146/Q146306/
 
 ## Q146306: XADM: Exchange Server Backup &amp; Restore Procedures
 
+{% raw %}
+
 	Article: Q146306
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -125,3 +127,5 @@ permalink: /kb/146/Q146306/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/038/Q38294/
 
 ## Q38294: Overwriting End of HALLOC Causes Crash at Termination
 
+{% raw %}
+
 	Article: Q38294
 	Product(s): See article
 	Version(s): 5.00 5.10 | 5.00 5.10
@@ -25,3 +27,5 @@ permalink: /kb/038/Q38294/
 	
 	This error can also conceivably be caused by overwriting blocks of
 	memory allocated by other functions such as malloc, _nmalloc, and _fmalloc.
+
+{% endraw %}

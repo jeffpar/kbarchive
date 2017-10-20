@@ -6,6 +6,8 @@ permalink: /kb/196/Q196355/
 
 ## Q196355: Sscntrl.sys May Cause a Fatal Crash
 
+{% raw %}
+
 	Article: Q196355
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -62,3 +64,5 @@ permalink: /kb/196/Q196355/
 	
 	=============================================================================
 	
+
+{% endraw %}

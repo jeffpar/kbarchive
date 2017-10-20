@@ -6,6 +6,8 @@ permalink: /kb/244/Q244519/
 
 ## Q244519: XADM: How to Restore Multiple X.400 Addresses
 
+{% raw %}
+
 	Article: Q244519
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -81,3 +83,5 @@ permalink: /kb/244/Q244519/
 	
 	=============================================================================
 	
+
+{% endraw %}

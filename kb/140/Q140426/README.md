@@ -6,6 +6,8 @@ permalink: /kb/140/Q140426/
 
 ## Q140426: STOP 0x0000000A Using HP 10/100 J2577a EISA LAN Adapter
 
+{% raw %}
+
 	Article: Q140426
 	Product(s): Microsoft Windows NT
 	Version(s): 3.51
@@ -58,3 +60,5 @@ permalink: /kb/140/Q140426/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/270/Q270854/
 
 ## Q270854: How to Install Microsoft Reader in Safe Mode
 
+{% raw %}
+
 	Article: Q270854
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 
@@ -80,3 +82,5 @@ permalink: /kb/270/Q270854/
 	
 	=============================================================================
 	
+
+{% endraw %}

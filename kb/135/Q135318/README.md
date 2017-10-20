@@ -6,6 +6,8 @@ permalink: /kb/135/Q135318/
 
 ## Q135318: How to Setup IBM CA/400 to Work Over the SNA 2.11 Win 3.x Client
 
+{% raw %}
+
 	Article: Q135318
 	Product(s): Microsoft SNA Server
 	Version(s): 2.11,3.0,4.0
@@ -177,3 +179,5 @@ permalink: /kb/135/Q135318/
 	
 	=============================================================================
 	
+
+{% endraw %}

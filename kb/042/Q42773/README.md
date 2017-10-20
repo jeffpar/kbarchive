@@ -6,6 +6,8 @@ permalink: /kb/042/Q42773/
 
 ## Q42773: Opening a C File When Disk Is Write Protected
 
+{% raw %}
+
 	Article: Q42773
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -121,3 +123,5 @@ permalink: /kb/042/Q42773/
 	program. Please refer to Page 351 of the "Microsoft C for the MS-DOS
 	Operating System: Run-Time Library Reference" for Version 5.10 for
 	more specific information regarding the _hardretn() function.
+
+{% endraw %}

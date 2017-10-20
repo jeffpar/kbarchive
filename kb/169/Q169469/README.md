@@ -6,6 +6,8 @@ permalink: /kb/169/Q169469/
 
 ## Q169469: BUG: SQLState S1000 with SQL_AUTOCOMMIT_OFF/SQLTransact
 
+{% raw %}
+
 	Article: Q169469
 	Product(s): Open Database Connectivity (ODBC)
 	Version(s): WINDOWS:2.5,3.0,7.0,97
@@ -68,3 +70,5 @@ permalink: /kb/169/Q169469/
 	
 	=============================================================================
 	
+
+{% endraw %}

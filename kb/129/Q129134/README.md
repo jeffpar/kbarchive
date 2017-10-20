@@ -6,6 +6,8 @@ permalink: /kb/129/Q129134/
 
 ## Q129134: XCLN: Cursor Position May Be Incorrect When Deleting Text
 
+{% raw %}
+
 	Article: Q129134
 	Product(s): Microsoft Exchange
 	Version(s): 4.0 5.0
@@ -44,3 +46,5 @@ permalink: /kb/129/Q129134/
 	
 	=============================================================================
 	
+
+{% endraw %}

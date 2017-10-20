@@ -6,6 +6,8 @@ permalink: /kb/318/Q318479/
 
 ## Q318479: SMS: Err Msg: Cannot Start SMS_Key_Creation_Service, Error...
 
+{% raw %}
+
 	Article: Q318479
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3
@@ -72,3 +74,5 @@ permalink: /kb/318/Q318479/
 	
 	=============================================================================
 	
+
+{% endraw %}

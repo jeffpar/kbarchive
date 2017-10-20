@@ -6,6 +6,8 @@ permalink: /kb/159/Q159091/
 
 ## Q159091: German Time Zone Results in Incorrect Log Times
 
+{% raw %}
+
 	Article: Q159091
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -49,3 +51,5 @@ permalink: /kb/159/Q159091/
 	
 	=============================================================================
 	
+
+{% endraw %}

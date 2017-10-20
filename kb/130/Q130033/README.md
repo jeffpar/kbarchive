@@ -6,6 +6,8 @@ permalink: /kb/130/Q130033/
 
 ## Q130033: XFOR: README: Host Migration
 
+{% raw %}
+
 	Article: Q130033
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -256,3 +258,5 @@ permalink: /kb/130/Q130033/
 	
 	=============================================================================
 	
+
+{% endraw %}

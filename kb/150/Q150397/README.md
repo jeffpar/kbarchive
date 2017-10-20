@@ -6,6 +6,8 @@ permalink: /kb/150/Q150397/
 
 ## Q150397: Error Message: This Path Does Not Exist
 
+{% raw %}
+
 	Article: Q150397
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -80,3 +82,5 @@ permalink: /kb/150/Q150397/
 	
 	=============================================================================
 	
+
+{% endraw %}

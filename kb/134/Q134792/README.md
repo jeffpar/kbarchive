@@ -6,6 +6,8 @@ permalink: /kb/134/Q134792/
 
 ## Q134792: FIX: Pointer in Drop-Down Combo Box Not at the Beginning
 
+{% raw %}
+
 	Article: Q134792
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0,3.0b
@@ -97,3 +99,5 @@ permalink: /kb/134/Q134792/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/120/Q120530/
 
 ## Q120530: How to Obtain Printer Drivers from Hewlett-Packard
 
+{% raw %}
+
 	Article: Q120530
 	Product(s): Microsoft Windows Printing Issues
 	Version(s): 
@@ -63,3 +65,5 @@ permalink: /kb/120/Q120530/
 	
 	=============================================================================
 	
+
+{% endraw %}

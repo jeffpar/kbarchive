@@ -6,6 +6,8 @@ permalink: /kb/082/Q82789/
 
 ## Q82789: Using SYSTEM.INI's COMMDRV30 Switch
 
+{% raw %}
+
 	Article: Q82789
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -64,3 +66,5 @@ permalink: /kb/082/Q82789/
 	
 	=============================================================================
 	
+
+{% endraw %}

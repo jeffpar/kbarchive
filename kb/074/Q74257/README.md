@@ -6,6 +6,8 @@ permalink: /kb/074/Q74257/
 
 ## Q74257: Shortcut Key Incorrectly Displayed in MS-DOS Shell
 
+{% raw %}
+
 	Article: Q74257
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.0
@@ -40,3 +42,5 @@ permalink: /kb/074/Q74257/
 	
 	=============================================================================
 	
+
+{% endraw %}

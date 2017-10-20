@@ -6,6 +6,8 @@ permalink: /kb/112/Q112858/
 
 ## Q112858: RAM Drive Icon in Anti-Virus Is Incorrect with DoubleSpace
 
+{% raw %}
+
 	Article: Q112858
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -56,3 +58,5 @@ permalink: /kb/112/Q112858/
 	
 	=============================================================================
 	
+
+{% endraw %}

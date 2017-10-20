@@ -6,6 +6,8 @@ permalink: /kb/179/Q179984/
 
 ## Q179984: Bookshelf 98 Err Msg: Install Aborted! Internal Error
 
+{% raw %}
+
 	Article: Q179984
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:
@@ -81,3 +83,5 @@ permalink: /kb/179/Q179984/
 	
 	=============================================================================
 	
+
+{% endraw %}

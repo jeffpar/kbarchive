@@ -6,6 +6,8 @@ permalink: /kb/139/Q139146/
 
 ## Q139146: Bookshelf: Cannot Integrate 32-bit Versions with Word 6.0
 
+{% raw %}
+
 	Article: Q139146
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:6.0
@@ -67,3 +69,5 @@ permalink: /kb/139/Q139146/
 	
 	=============================================================================
 	
+
+{% endraw %}

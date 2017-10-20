@@ -6,6 +6,8 @@ permalink: /kb/247/Q247042/
 
 ## Q247042: SNA Windows NT Client Fails on Windows 2000 Terminal Server
 
+{% raw %}
+
 	Article: Q247042
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:2.11 (all versions),3.0 (all SP),4.0,4.0 SP1,4.0 SP2
@@ -75,3 +77,5 @@ permalink: /kb/247/Q247042/
 	
 	=============================================================================
 	
+
+{% endraw %}

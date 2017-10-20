@@ -6,6 +6,8 @@ permalink: /kb/137/Q137046/
 
 ## Q137046: SMTP: Where to find Microsoft TCP/IP for the SMTP Gateway
 
+{% raw %}
+
 	Article: Q137046
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): MS-DOS:3.0
@@ -54,3 +56,5 @@ permalink: /kb/137/Q137046/
 	
 	=============================================================================
 	
+
+{% endraw %}

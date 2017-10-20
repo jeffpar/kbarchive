@@ -6,6 +6,8 @@ permalink: /kb/060/Q60488/
 
 ## Q60488: Apparent Failure of _memavl() Caused by printf() Allocation
 
+{% raw %}
+
 	Article: Q60488
 	Product(s): See article
 	Version(s): 6.00   | 6.00
@@ -42,3 +44,5 @@ permalink: /kb/060/Q60488/
 	   if ((ptr=(char *)malloc(mavl))==NULL)
 	     printf("Not as much memory available as we thought!");
 	}
+
+{% endraw %}

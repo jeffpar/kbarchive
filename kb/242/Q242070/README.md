@@ -6,6 +6,8 @@ permalink: /kb/242/Q242070/
 
 ## Q242070: Cannot Demote a Backup Domain Controller to Member Server
 
+{% raw %}
+
 	Article: Q242070
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -77,3 +79,5 @@ permalink: /kb/242/Q242070/
 	
 	=============================================================================
 	
+
+{% endraw %}

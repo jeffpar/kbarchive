@@ -6,6 +6,8 @@ permalink: /kb/124/Q124506/
 
 ## Q124506: Explorapedia: Banded Output Using Hewlett Packard DeskJet
 
+{% raw %}
+
 	Article: Q124506
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0
@@ -40,3 +42,5 @@ permalink: /kb/124/Q124506/
 	
 	=============================================================================
 	
+
+{% endraw %}

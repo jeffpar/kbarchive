@@ -6,6 +6,8 @@ permalink: /kb/087/Q87135/
 
 ## Q87135: Large Drive Translation Under Microsoft OS/2 1.3
 
+{% raw %}
+
 	Article: Q87135
 	Product(s): Microsoft LAN Manager
 	Version(s): 
@@ -182,3 +184,5 @@ permalink: /kb/087/Q87135/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/264/Q264809/
 
 ## Q264809: Keeping Users from Accessing a Server over the Network While You
 
+{% raw %}
+
 	Article: Q264809
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -57,3 +59,5 @@ permalink: /kb/264/Q264809/
 	
 	=============================================================================
 	
+
+{% endraw %}

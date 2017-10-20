@@ -6,6 +6,8 @@ permalink: /kb/185/Q185196/
 
 ## Q185196: WD97: Sample Macro to Print All Open Documents
 
+{% raw %}
+
 	Article: Q185196
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -104,3 +106,5 @@ permalink: /kb/185/Q185196/
 	
 	=============================================================================
 	
+
+{% endraw %}

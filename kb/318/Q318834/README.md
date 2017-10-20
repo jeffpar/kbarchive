@@ -6,6 +6,8 @@ permalink: /kb/318/Q318834/
 
 ## Q318834: SMS Package Source Versions May Be Reported Incorrectly
 
+{% raw %}
+
 	Article: Q318834
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2,2.0 SP3,2.0 SP4
@@ -160,3 +162,5 @@ permalink: /kb/318/Q318834/
 	
 	=============================================================================
 	
+
+{% endraw %}

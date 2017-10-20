@@ -6,6 +6,8 @@ permalink: /kb/258/Q258951/
 
 ## Q258951: XADM: Space Not Gained After Changing Deleted Items Retention
 
+{% raw %}
+
 	Article: Q258951
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -79,3 +81,5 @@ permalink: /kb/258/Q258951/
 	
 	=============================================================================
 	
+
+{% endraw %}

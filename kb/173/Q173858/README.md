@@ -6,6 +6,8 @@ permalink: /kb/173/Q173858/
 
 ## Q173858: To Complete the Install You Need to Re-boot...
 
+{% raw %}
+
 	Article: Q173858
 	Product(s): The Microsoft Network
 	Version(s): WINDOWS:1.3,2.0,2.5,2.51,2.52,2.6,95
@@ -108,3 +110,5 @@ permalink: /kb/173/Q173858/
 	
 	=============================================================================
 	
+
+{% endraw %}

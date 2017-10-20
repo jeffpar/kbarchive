@@ -6,6 +6,8 @@ permalink: /kb/119/Q119045/
 
 ## Q119045: PC Mac: Err Msg: This Message is Corrupt and Cannot Be...
 
+{% raw %}
+
 	Article: Q119045
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -50,3 +52,5 @@ permalink: /kb/119/Q119045/
 	
 	=============================================================================
 	
+
+{% endraw %}

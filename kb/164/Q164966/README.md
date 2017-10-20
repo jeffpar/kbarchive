@@ -6,6 +6,8 @@ permalink: /kb/164/Q164966/
 
 ## Q164966: Print Session Status Remains &quot;Spooling&quot;
 
+{% raw %}
+
 	Article: Q164966
 	Product(s): Microsoft SNA Server
 	Version(s): WINDOWS:3.0
@@ -63,3 +65,5 @@ permalink: /kb/164/Q164966/
 	
 	=============================================================================
 	
+
+{% endraw %}

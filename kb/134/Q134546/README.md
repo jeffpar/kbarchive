@@ -6,6 +6,8 @@ permalink: /kb/134/Q134546/
 
 ## Q134546: Erratic Mouse Behavior in Programs in Full-Screen Text Mode
 
+{% raw %}
+
 	Article: Q134546
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -53,3 +55,5 @@ permalink: /kb/134/Q134546/
 	
 	=============================================================================
 	
+
+{% endraw %}

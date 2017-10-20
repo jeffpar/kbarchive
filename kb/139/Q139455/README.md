@@ -6,6 +6,8 @@ permalink: /kb/139/Q139455/
 
 ## Q139455: Obtaining the Designed For Microsoft Windows 95 Catalog
 
+{% raw %}
+
 	Article: Q139455
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -65,3 +67,5 @@ permalink: /kb/139/Q139455/
 	
 	=============================================================================
 	
+
+{% endraw %}

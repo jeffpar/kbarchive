@@ -6,6 +6,8 @@ permalink: /kb/154/Q154757/
 
 ## Q154757: HOWTO: Determine if RDO Restartable Property is Set to False
 
+{% raw %}
+
 	Article: Q154757
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:4.0,5.0,6.0
@@ -69,3 +71,5 @@ permalink: /kb/154/Q154757/
 	
 	=============================================================================
 	
+
+{% endraw %}

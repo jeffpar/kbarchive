@@ -6,6 +6,8 @@ permalink: /kb/124/Q124001/
 
 ## Q124001: After Upgrade from WFWG, Different Network Adapter Listed
 
+{% raw %}
+
 	Article: Q124001
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -58,3 +60,5 @@ permalink: /kb/124/Q124001/
 	
 	=============================================================================
 	
+
+{% endraw %}

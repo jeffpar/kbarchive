@@ -6,6 +6,8 @@ permalink: /kb/098/Q98564/
 
 ## Q98564: Troubleshooting Sound Support for MS-DOS Games in WSS 1.0a
 
+{% raw %}
+
 	Article: Q98564
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -81,3 +83,5 @@ permalink: /kb/098/Q98564/
 	
 	=============================================================================
 	
+
+{% endraw %}

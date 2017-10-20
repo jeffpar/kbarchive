@@ -6,6 +6,8 @@ permalink: /kb/239/Q239881/
 
 ## Q239881: FIX: RResourceView Displays Resource IDs by their Values
 
+{% raw %}
+
 	Article: Q239881
 	Product(s): Microsoft C Compiler
 	Version(s): 5.0,6.0
@@ -299,3 +301,5 @@ permalink: /kb/239/Q239881/
 	
 	=============================================================================
 	
+
+{% endraw %}

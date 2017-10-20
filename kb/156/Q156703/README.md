@@ -6,6 +6,8 @@ permalink: /kb/156/Q156703/
 
 ## Q156703: XADM: Space Character not Supported for SMTP Custom Recipients
 
+{% raw %}
+
 	Article: Q156703
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0
@@ -56,3 +58,5 @@ permalink: /kb/156/Q156703/
 	
 	=============================================================================
 	
+
+{% endraw %}

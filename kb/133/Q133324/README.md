@@ -6,6 +6,8 @@ permalink: /kb/133/Q133324/
 
 ## Q133324: PRB: Potential Limit of 64 Different .OCX Files per Process
 
+{% raw %}
+
 	Article: Q133324
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -102,3 +104,5 @@ permalink: /kb/133/Q133324/
 	
 	=============================================================================
 	
+
+{% endraw %}

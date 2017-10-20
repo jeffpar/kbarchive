@@ -6,6 +6,8 @@ permalink: /kb/191/Q191774/
 
 ## Q191774: How to Obtain Dmacheck.exe for Windows NT
 
+{% raw %}
+
 	Article: Q191774
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -110,3 +112,5 @@ permalink: /kb/191/Q191774/
 	
 	=============================================================================
 	
+
+{% endraw %}

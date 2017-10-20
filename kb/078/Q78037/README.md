@@ -6,6 +6,8 @@ permalink: /kb/078/Q78037/
 
 ## Q78037: Setup Does Not Show a Sound Driver Option
 
+{% raw %}
+
 	Article: Q78037
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): 1.0
@@ -45,3 +47,5 @@ permalink: /kb/078/Q78037/
 	
 	=============================================================================
 	
+
+{% endraw %}

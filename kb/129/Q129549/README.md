@@ -6,6 +6,8 @@ permalink: /kb/129/Q129549/
 
 ## Q129549: Cannot View Correct Event Details with Non-Administrative Rights
 
+{% raw %}
+
 	Article: Q129549
 	Product(s): Microsoft Windows NT
 	Version(s): 3.1,3.11,3.5
@@ -62,3 +64,5 @@ permalink: /kb/129/Q129549/
 	
 	=============================================================================
 	
+
+{% endraw %}

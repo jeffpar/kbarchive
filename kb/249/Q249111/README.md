@@ -6,6 +6,8 @@ permalink: /kb/249/Q249111/
 
 ## Q249111: XFOR: Exchange Connector for Lotus cc:Mail Not Supporting Korean
 
+{% raw %}
+
 	Article: Q249111
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5
@@ -63,3 +65,5 @@ permalink: /kb/249/Q249111/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96211/
 
 ## Q96211: Encarta Hangs with Orchid Farenheit Card in 800 x 800 Mode
 
+{% raw %}
+
 	Article: Q96211
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1993 editions
@@ -49,3 +51,5 @@ permalink: /kb/096/Q96211/
 	
 	=============================================================================
 	
+
+{% endraw %}

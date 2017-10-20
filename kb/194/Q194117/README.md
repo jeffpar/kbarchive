@@ -6,6 +6,8 @@ permalink: /kb/194/Q194117/
 
 ## Q194117: XADM: Error: Move Server Wizard Requires Service Pack 1
 
+{% raw %}
+
 	Article: Q194117
 	Product(s): Microsoft Exchange
 	Version(s): WinNT:5.5
@@ -61,3 +63,5 @@ permalink: /kb/194/Q194117/
 	
 	=============================================================================
 	
+
+{% endraw %}

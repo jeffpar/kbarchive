@@ -6,6 +6,8 @@ permalink: /kb/113/Q113454/
 
 ## Q113454: FFAPI: Multiple File Transfer with AppPut, RmtPut -W Option
 
+{% raw %}
+
 	Article: Q113454
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -71,3 +73,5 @@ permalink: /kb/113/Q113454/
 	
 	=============================================================================
 	
+
+{% endraw %}

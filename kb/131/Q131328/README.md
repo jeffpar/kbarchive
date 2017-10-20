@@ -6,6 +6,8 @@ permalink: /kb/131/Q131328/
 
 ## Q131328: PC WFW: Files Are Not Interchangeable with Mail for Windows
 
+{% raw %}
+
 	Article: Q131328
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -115,3 +117,5 @@ permalink: /kb/131/Q131328/
 	
 	=============================================================================
 	
+
+{% endraw %}

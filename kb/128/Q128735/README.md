@@ -6,6 +6,8 @@ permalink: /kb/128/Q128735/
 
 ## Q128735: Microcom DeskPorte FAST EP 28.8 Not Compatible With ES Model
 
+{% raw %}
+
 	Article: Q128735
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): WINDOWS:3.11; winnt:3.5
@@ -137,3 +139,5 @@ permalink: /kb/128/Q128735/
 	
 	=============================================================================
 	
+
+{% endraw %}

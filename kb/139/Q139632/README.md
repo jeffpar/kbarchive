@@ -6,6 +6,8 @@ permalink: /kb/139/Q139632/
 
 ## Q139632: Error 1057 Appears Using INSTSRV In Windows NT Resource Kit
 
+{% raw %}
+
 	Article: Q139632
 	Product(s): Microsoft Windows NT
 	Version(s): 3.50 3.51
@@ -75,3 +77,5 @@ permalink: /kb/139/Q139632/
 	
 	=============================================================================
 	
+
+{% endraw %}

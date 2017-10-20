@@ -6,6 +6,8 @@ permalink: /kb/305/Q305628/
 
 ## Q305628: PRB: Error &quot;Class Definition MAPI.SESSION is not found&quot;
 
+{% raw %}
+
 	Article: Q305628
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0,3.0b,5.0,5.0a,6.0,7.0
@@ -85,3 +87,5 @@ permalink: /kb/305/Q305628/
 	
 	=============================================================================
 	
+
+{% endraw %}

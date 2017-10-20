@@ -6,6 +6,8 @@ permalink: /kb/043/Q43062/
 
 ## Q43062: Incorrect Code Generated with Conditional Operator
 
+{% raw %}
+
 	Article: Q43062
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -34,3 +36,5 @@ permalink: /kb/043/Q43062/
 	        ptr = ((ptr == end)? str: ptr++);
 	
 	}
+
+{% endraw %}

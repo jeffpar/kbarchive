@@ -6,6 +6,8 @@ permalink: /kb/159/Q159440/
 
 ## Q159440: FP: Early Versions of Web Publishing Wizard Damage Extensions
 
+{% raw %}
+
 	Article: Q159440
 	Product(s): Word Front Page
 	Version(s): windows:1.1,97
@@ -123,3 +125,5 @@ permalink: /kb/159/Q159440/
 	
 	=============================================================================
 	
+
+{% endraw %}

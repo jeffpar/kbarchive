@@ -6,6 +6,8 @@ permalink: /kb/147/Q147262/
 
 ## Q147262: Goal Buttons Turn Black w/ SHIFT+Click Twice
 
+{% raw %}
+
 	Article: Q147262
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:7.0; Win95:7.0
@@ -42,3 +44,5 @@ permalink: /kb/147/Q147262/
 	
 	=============================================================================
 	
+
+{% endraw %}

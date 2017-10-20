@@ -6,6 +6,8 @@ permalink: /kb/218/Q218829/
 
 ## Q218829: FIX: CComEnumImpl&lt;&gt;::Skip() Doesn't Handle Overflow Correctly
 
+{% raw %}
+
 	Article: Q218829
 	Product(s): Microsoft C Compiler
 	Version(s): WINDOWS:3.0
@@ -78,3 +80,5 @@ permalink: /kb/218/Q218829/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/198/Q198300/
 
 ## Q198300: PRB: Invalid Use of NULL Assigning Text Fields Value
 
+{% raw %}
+
 	Article: Q198300
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): WINDOWS:5.0,6.0
@@ -162,3 +164,5 @@ permalink: /kb/198/Q198300/
 	
 	=============================================================================
 	
+
+{% endraw %}

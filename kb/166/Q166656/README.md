@@ -6,6 +6,8 @@ permalink: /kb/166/Q166656/
 
 ## Q166656: Shared Directories Not Accessible with Windows NT 4.0
 
+{% raw %}
+
 	Article: Q166656
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -60,3 +62,5 @@ permalink: /kb/166/Q166656/
 	
 	=============================================================================
 	
+
+{% endraw %}

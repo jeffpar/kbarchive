@@ -6,6 +6,8 @@ permalink: /kb/117/Q117817/
 
 ## Q117817: Mac Cinemania 94: Cast Lists Look Misaligned on Small Monitor
 
+{% raw %}
+
 	Article: Q117817
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition
@@ -41,3 +43,5 @@ permalink: /kb/117/Q117817/
 	
 	=============================================================================
 	
+
+{% endraw %}

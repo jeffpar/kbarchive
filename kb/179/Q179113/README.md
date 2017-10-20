@@ -6,6 +6,8 @@ permalink: /kb/179/Q179113/
 
 ## Q179113: How to Download and Install DirectX
 
+{% raw %}
+
 	Article: Q179113
 	Product(s): Microsoft Home Games
 	Version(s): 4.0
@@ -107,3 +109,5 @@ permalink: /kb/179/Q179113/
 	
 	=============================================================================
 	
+
+{% endraw %}

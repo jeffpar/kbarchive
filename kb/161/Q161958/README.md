@@ -6,6 +6,8 @@ permalink: /kb/161/Q161958/
 
 ## Q161958: WD97: Run-Time Error '424' Attempting to Ungroup Shape Objects
 
+{% raw %}
+
 	Article: Q161958
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -147,3 +149,5 @@ permalink: /kb/161/Q161958/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/133/Q133016/
 
 ## Q133016: PRB: Dynamically Changing Buffering Mode Doesn't Work
 
+{% raw %}
+
 	Article: Q133016
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0
@@ -126,3 +128,5 @@ permalink: /kb/133/Q133016/
 	
 	=============================================================================
 	
+
+{% endraw %}

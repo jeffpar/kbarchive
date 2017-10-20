@@ -6,6 +6,8 @@ permalink: /kb/188/Q188817/
 
 ## Q188817: HOWTO: VC++ MFC Client for the ComCallingJava Sample
 
+{% raw %}
+
 	Article: Q188817
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:5.0
@@ -74,12 +76,12 @@ permalink: /kb/188/Q188817/
 	        //(33B0ECE2-E706-11CF-A0C2-00AA00A71DD8)
 	        static const CLSID GCDclsid =
 	           { 0x33B0ECE2, 0xE706, 0x11CF, { 0xa0, 0xC2, 0x0, 0xaa, 0x0, 0xa7,
-	             0x1d, 0xd8 } };
+	             0x1d, 0xd8 }};
 	
 	        // (33B0ECE1-E706-11cf-A0C2-00AA00A71DD8)
 	        static const CLSID IGCDclsid =
 	        { 0x33B0ECE1, 0xE706, 0x11CF, { 0xa0, 0xC2, 0x0, 0xaa, 0x0, 0xa7,
-	          0x1d, 0xd8 } };
+	          0x1d, 0xd8 }};
 	
 	        void CComjavaView::OnLButtonDown(UINT nFlags, CPoint point)
 	        {
@@ -118,3 +120,5 @@ permalink: /kb/188/Q188817/
 	
 	=============================================================================
 	
+
+{% endraw %}

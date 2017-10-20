@@ -6,6 +6,8 @@ permalink: /kb/154/Q154648/
 
 ## Q154648: FIX: Toolbars Broken in ENROLL Tutorial Samples
 
+{% raw %}
+
 	Article: Q154648
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -109,3 +111,5 @@ permalink: /kb/154/Q154648/
 	
 	=============================================================================
 	
+
+{% endraw %}

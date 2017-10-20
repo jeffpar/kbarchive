@@ -6,6 +6,8 @@ permalink: /kb/127/Q127799/
 
 ## Q127799: Files Not Deleted, Changes Not Occurring After You Run Setup
 
+{% raw %}
+
 	Article: Q127799
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): 1994 edition,1994-1995 edition,1995 edition
@@ -135,3 +137,5 @@ permalink: /kb/127/Q127799/
 	
 	=============================================================================
 	
+
+{% endraw %}

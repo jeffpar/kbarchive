@@ -6,6 +6,8 @@ permalink: /kb/179/Q179265/
 
 ## Q179265: XADM: Event 7011 Occurs When Shutting Down Exchange Server
 
+{% raw %}
+
 	Article: Q179265
 	Product(s): Microsoft Exchange
 	Version(s): WINDOWS:5.0
@@ -60,3 +62,5 @@ permalink: /kb/179/Q179265/
 	
 	=============================================================================
 	
+
+{% endraw %}

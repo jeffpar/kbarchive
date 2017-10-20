@@ -6,6 +6,8 @@ permalink: /kb/286/Q286507/
 
 ## Q286507: XGEN: CDO Returns Substring Search Instead of Prefix
 
+{% raw %}
+
 	Article: Q286507
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -131,3 +133,5 @@ permalink: /kb/286/Q286507/
 	
 	=============================================================================
 	
+
+{% endraw %}

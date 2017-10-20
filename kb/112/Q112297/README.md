@@ -6,6 +6,8 @@ permalink: /kb/112/Q112297/
 
 ## Q112297: INFO: User-Defined CRT Function Generates Warning or Errors
 
+{% raw %}
+
 	Article: Q112297
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:1.0,2.0,2.1,4.0,5.0,6.0
@@ -261,3 +263,5 @@ permalink: /kb/112/Q112297/
 	
 	=============================================================================
 	
+
+{% endraw %}

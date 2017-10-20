@@ -6,6 +6,8 @@ permalink: /kb/140/Q140652/
 
 ## Q140652: HOWTO: Capture Input in a Combo Box
 
+{% raw %}
+
 	Article: Q140652
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -112,3 +114,5 @@ permalink: /kb/140/Q140652/
 	
 	=============================================================================
 	
+
+{% endraw %}

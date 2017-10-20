@@ -6,6 +6,8 @@ permalink: /kb/040/Q40190/
 
 ## Q40190: Same Access Speed for Static, Dynamic Arrays If Debug Is On
 
+{% raw %}
+
 	Article: Q40190
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -72,3 +74,5 @@ permalink: /kb/040/Q40190/
 	   ar2(1) = ar2(1) + ar2(0)
 	NEXT
 	PRINT TIMER - s#; " seconds elapsed FOR DYNAMIC"
+
+{% endraw %}

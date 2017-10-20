@@ -6,6 +6,8 @@ permalink: /kb/145/Q145975/
 
 ## Q145975: XADM: Knowledge of Other Servers in Site Not Instantaneous
 
+{% raw %}
+
 	Article: Q145975
 	Product(s): Microsoft Exchange
 	Version(s): winnt:4.0,5.0,5.5
@@ -50,3 +52,5 @@ permalink: /kb/145/Q145975/
 	
 	=============================================================================
 	
+
+{% endraw %}

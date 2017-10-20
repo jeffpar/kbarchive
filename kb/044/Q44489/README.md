@@ -6,6 +6,8 @@ permalink: /kb/044/Q44489/
 
 ## Q44489: QB.EXE /NOHI Option Uses Color Instead of High-Intensity White
 
+{% raw %}
+
 	Article: Q44489
 	Product(s): See article
 	Version(s): 4.50
@@ -43,3 +45,5 @@ permalink: /kb/044/Q44489/
 	   Gray                  Background of pull-down menus
 	
 	   Black                 Background of selected menu item
+
+{% endraw %}

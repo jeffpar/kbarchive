@@ -6,6 +6,8 @@ permalink: /kb/035/Q35904/
 
 ## Q35904: How to Call OS/2 Function DosAllocHugeSeg and DosGetHugeShift
 
+{% raw %}
+
 	Article: Q35904
 	Product(s): See article
 	Version(s): 6.00 6.00b 7.00
@@ -87,3 +89,5 @@ permalink: /kb/035/Q35904/
 	END IF
 	
 	end
+
+{% endraw %}

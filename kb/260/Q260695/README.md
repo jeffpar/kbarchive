@@ -6,6 +6,8 @@ permalink: /kb/260/Q260695/
 
 ## Q260695: XADM: Third-Party Backup Program May Stop Working After Fix
 
+{% raw %}
+
 	Article: Q260695
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.5 SP3
@@ -71,3 +73,5 @@ permalink: /kb/260/Q260695/
 	
 	=============================================================================
 	
+
+{% endraw %}

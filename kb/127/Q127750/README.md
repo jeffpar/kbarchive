@@ -6,6 +6,8 @@ permalink: /kb/127/Q127750/
 
 ## Q127750: Writer/Artist: Sticker Rolls Are Missing
 
+{% raw %}
+
 	Article: Q127750
 	Product(s): Microsoft Home Kids Products
 	Version(s): MACINTOSH:1.0,1.1,1.1a; WINDOWS:1.0,1.1,1.1a
@@ -126,3 +128,5 @@ permalink: /kb/127/Q127750/
 	
 	=============================================================================
 	
+
+{% endraw %}

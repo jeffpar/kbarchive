@@ -6,6 +6,8 @@ permalink: /kb/047/Q47021/
 
 ## Q47021: VRES Video Modes Have 30 Lines Using Graphics Text Functions
 
+{% raw %}
+
 	Article: Q47021
 	Product(s): See article
 	Version(s): 5.00 5.10
@@ -38,3 +40,5 @@ permalink: /kb/047/Q47021/
 	information concerning changing from the default font size, see the
 	interrupt 10, function 11 entries in "IBM ROM BIOS," a Microsoft Press
 	book by Ray Duncan.
+
+{% endraw %}

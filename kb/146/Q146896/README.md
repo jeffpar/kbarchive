@@ -6,6 +6,8 @@ permalink: /kb/146/Q146896/
 
 ## Q146896: WD97: Word Ignores First Record in Excel Data Source
 
+{% raw %}
+
 	Article: Q146896
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -87,3 +89,5 @@ permalink: /kb/146/Q146896/
 	
 	=============================================================================
 	
+
+{% endraw %}

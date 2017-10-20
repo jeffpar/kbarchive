@@ -6,6 +6,8 @@ permalink: /kb/164/Q164182/
 
 ## Q164182: Index Server: Error: 0x2AF9 Occurred While Running Webhits.exe
 
+{% raw %}
+
 	Article: Q164182
 	Product(s): Internet Information Server
 	Version(s): WINNT: 1.1
@@ -50,3 +52,5 @@ permalink: /kb/164/Q164182/
 	
 	=============================================================================
 	
+
+{% endraw %}

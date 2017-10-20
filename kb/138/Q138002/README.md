@@ -6,6 +6,8 @@ permalink: /kb/138/Q138002/
 
 ## Q138002: PC WSPlus: Complete List of SCHDPLUS.INI Settings
 
+{% raw %}
+
 	Article: Q138002
 	Product(s): Microsoft Schedule+ for Windows
 	Version(s): WINDOWS:1.0,1.0a
@@ -454,3 +456,5 @@ permalink: /kb/138/Q138002/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/173/Q173823/
 
 ## Q173823: HOWTO: Aggregate a COM Object with ATL
 
+{% raw %}
+
 	Article: Q173823
 	Product(s): Microsoft C Compiler
 	Version(s): 2.1,3.0,5.0,6.0
@@ -137,3 +139,5 @@ permalink: /kb/173/Q173823/
 	
 	=============================================================================
 	
+
+{% endraw %}

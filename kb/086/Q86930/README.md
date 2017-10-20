@@ -6,6 +6,8 @@ permalink: /kb/086/Q86930/
 
 ## Q86930: 3COM: What Must Be Done Before Installing the 3Com Gateway
 
+{% raw %}
+
 	Article: Q86930
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): 3.0
@@ -69,3 +71,5 @@ permalink: /kb/086/Q86930/
 	
 	=============================================================================
 	
+
+{% endraw %}

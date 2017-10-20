@@ -6,6 +6,8 @@ permalink: /kb/219/Q219299/
 
 ## Q219299: Hotfix Data Written After Unsuccessful Non-Cached Read
 
+{% raw %}
+
 	Article: Q219299
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0,4.0 SP1,4.0 SP2,4.0 SP3,4.0 SP4
@@ -68,3 +70,5 @@ permalink: /kb/219/Q219299/
 	
 	=============================================================================
 	
+
+{% endraw %}

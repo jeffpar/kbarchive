@@ -6,6 +6,8 @@ permalink: /kb/173/Q173146/
 
 ## Q173146: WD97: Run from Network Install for Web Authoring AutoUpdate
 
+{% raw %}
+
 	Article: Q173146
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -99,3 +101,5 @@ permalink: /kb/173/Q173146/
 	
 	=============================================================================
 	
+
+{% endraw %}

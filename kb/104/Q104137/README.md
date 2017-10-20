@@ -6,6 +6,8 @@ permalink: /kb/104/Q104137/
 
 ## Q104137: BUG: Iconic MDI Application Titles Do Not Update Properly
 
+{% raw %}
+
 	Article: Q104137
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:
@@ -56,3 +58,5 @@ permalink: /kb/104/Q104137/
 	
 	=============================================================================
 	
+
+{% endraw %}

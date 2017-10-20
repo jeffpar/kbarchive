@@ -6,6 +6,8 @@ permalink: /kb/099/Q99108/
 
 ## Q99108: Windows for Workgroups Mail Issues
 
+{% raw %}
+
 	Article: Q99108
 	Product(s): Microsoft Windows 3.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -531,3 +533,5 @@ permalink: /kb/099/Q99108/
 	
 	=============================================================================
 	
+
+{% endraw %}

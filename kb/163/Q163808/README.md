@@ -6,6 +6,8 @@ permalink: /kb/163/Q163808/
 
 ## Q163808: WD97: Picture Is Pasted as Float Over Text, Not as Inline
 
+{% raw %}
+
 	Article: Q163808
 	Product(s): Word 97 for Windows
 	Version(s): 
@@ -132,3 +134,5 @@ permalink: /kb/163/Q163808/
 	
 	=============================================================================
 	
+
+{% endraw %}

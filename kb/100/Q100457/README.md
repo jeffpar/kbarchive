@@ -6,6 +6,8 @@ permalink: /kb/100/Q100457/
 
 ## Q100457: PC WRmt: Priority Message Designation
 
+{% raw %}
+
 	Article: Q100457
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.2
@@ -58,3 +60,5 @@ permalink: /kb/100/Q100457/
 	
 	=============================================================================
 	
+
+{% endraw %}

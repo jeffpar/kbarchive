@@ -6,6 +6,8 @@ permalink: /kb/194/Q194031/
 
 ## Q194031: XCON: MTA Queues Backup After MTA Logs 1133 State Check Warning
 
+{% raw %}
+
 	Article: Q194031
 	Product(s): Microsoft Exchange
 	Version(s): 5.5
@@ -105,3 +107,5 @@ permalink: /kb/194/Q194031/
 	
 	=============================================================================
 	
+
+{% endraw %}

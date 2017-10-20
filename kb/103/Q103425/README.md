@@ -6,6 +6,8 @@ permalink: /kb/103/Q103425/
 
 ## Q103425: TrueType Equivalents of Common ATM Fonts
 
+{% raw %}
+
 	Article: Q103425
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:3.1,3.11
@@ -77,3 +79,5 @@ permalink: /kb/103/Q103425/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/190/Q190573/
 
 ## Q190573: Jetpack/WINADMIN Create Maintenance Files in System32
 
+{% raw %}
+
 	Article: Q190573
 	Product(s): Microsoft Windows NT
 	Version(s): WinNT:4.0
@@ -118,3 +120,5 @@ permalink: /kb/190/Q190573/
 	
 	=============================================================================
 	
+
+{% endraw %}

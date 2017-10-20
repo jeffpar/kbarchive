@@ -6,6 +6,8 @@ permalink: /kb/162/Q162176/
 
 ## Q162176: Thumbnail Image Doesn't Appear on Expected Gallery Page
 
+{% raw %}
+
 	Article: Q162176
 	Product(s): Microsoft PowerPoint for Windows
 	Version(s): 3.0; WINDOWS:97
@@ -73,3 +75,5 @@ permalink: /kb/162/Q162176/
 	
 	=============================================================================
 	
+
+{% endraw %}

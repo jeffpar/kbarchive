@@ -6,6 +6,8 @@ permalink: /kb/201/Q201421/
 
 ## Q201421: XCLN: Migrated Calendar Information Message
 
+{% raw %}
+
 	Article: Q201421
 	Product(s): Microsoft Exchange
 	Version(s): winnt:5.0,5.5
@@ -138,3 +140,5 @@ permalink: /kb/201/Q201421/
 	
 	=============================================================================
 	
+
+{% endraw %}

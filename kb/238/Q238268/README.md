@@ -6,6 +6,8 @@ permalink: /kb/238/Q238268/
 
 ## Q238268: FIPS-Compliant Browser and Web Server For Windows NT 4.0
 
+{% raw %}
+
 	Article: Q238268
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -109,3 +111,5 @@ permalink: /kb/238/Q238268/
 	
 	=============================================================================
 	
+
+{% endraw %}

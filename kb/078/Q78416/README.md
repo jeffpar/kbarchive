@@ -6,6 +6,8 @@ permalink: /kb/078/Q78416/
 
 ## Q78416: UNDELETE and Filename Containing a Dollar Sign (&#36;)
 
+{% raw %}
+
 	Article: Q78416
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:5.x
@@ -56,3 +58,5 @@ permalink: /kb/078/Q78416/
 	
 	=============================================================================
 	
+
+{% endraw %}

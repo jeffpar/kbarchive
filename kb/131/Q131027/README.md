@@ -6,6 +6,8 @@ permalink: /kb/131/Q131027/
 
 ## Q131027: HOWTO: Encapsulate Data in the Form Builder
 
+{% raw %}
+
 	Article: Q131027
 	Product(s): Microsoft FoxPro
 	Version(s): 
@@ -350,3 +352,5 @@ permalink: /kb/131/Q131027/
 	
 	=============================================================================
 	
+
+{% endraw %}

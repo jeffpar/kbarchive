@@ -6,6 +6,8 @@ permalink: /kb/167/Q167848/
 
 ## Q167848: FIX: Context Sensitive Help Problems in OLE Common Dialogs
 
+{% raw %}
+
 	Article: Q167848
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,4.2b,5.0,6.0
@@ -91,3 +93,5 @@ permalink: /kb/167/Q167848/
 	
 	=============================================================================
 	
+
+{% endraw %}

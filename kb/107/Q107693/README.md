@@ -6,6 +6,8 @@ permalink: /kb/107/Q107693/
 
 ## Q107693: HOWTO: How to Detect Mouse and Mouse Port
 
+{% raw %}
+
 	Article: Q107693
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.1
@@ -112,3 +114,5 @@ permalink: /kb/107/Q107693/
 	
 	=============================================================================
 	
+
+{% endraw %}

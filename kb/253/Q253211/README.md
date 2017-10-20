@@ -6,6 +6,8 @@ permalink: /kb/253/Q253211/
 
 ## Q253211: PRB: Large Recordsets Cause Problems When Scrolling Grids
 
+{% raw %}
+
 	Article: Q253211
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.1 SP2,2.5,2.6,6.0
@@ -138,3 +140,5 @@ permalink: /kb/253/Q253211/
 	
 	=============================================================================
 	
+
+{% endraw %}

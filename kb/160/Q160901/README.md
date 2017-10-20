@@ -6,6 +6,8 @@ permalink: /kb/160/Q160901/
 
 ## Q160901: SMS: Delete Special Doesn't Remove Entries from Machine Groups
 
+{% raw %}
+
 	Article: Q160901
 	Product(s): Microsoft Systems Management Server
 	Version(s): winnt:1.1,1.2
@@ -65,3 +67,5 @@ permalink: /kb/160/Q160901/
 	
 	=============================================================================
 	
+
+{% endraw %}

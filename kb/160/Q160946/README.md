@@ -6,6 +6,8 @@ permalink: /kb/160/Q160946/
 
 ## Q160946: Setup Hangs During First Reboot with Compaq NetFlex Driver
 
+{% raw %}
+
 	Article: Q160946
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): WINDOWS:95
@@ -65,3 +67,5 @@ permalink: /kb/160/Q160946/
 	
 	=============================================================================
 	
+
+{% endraw %}

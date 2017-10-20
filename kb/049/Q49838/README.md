@@ -6,6 +6,8 @@ permalink: /kb/049/Q49838/
 
 ## Q49838: PRB: GlobalUnlock() Can Cause Fatal Exit 0x02F0
 
+{% raw %}
+
 	Article: Q49838
 	Product(s): Microsoft Windows Software Development Kit
 	Version(s): WINDOWS:3.0,3.1
@@ -47,3 +49,5 @@ permalink: /kb/049/Q49838/
 	
 	=============================================================================
 	
+
+{% endraw %}

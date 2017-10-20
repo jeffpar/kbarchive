@@ -6,6 +6,8 @@ permalink: /kb/047/Q47772/
 
 ## Q47772: ECH.EXE Utility Is Used Internally by the Microsoft Editor
 
+{% raw %}
+
 	Article: Q47772
 	Product(s): See article
 	Version(s): 1.00   | 1.00
@@ -28,3 +30,5 @@ permalink: /kb/047/Q47772/
 	
 	M 1.02 does not use this external file. The utility has been
 	incorporated into the editor.
+
+{% endraw %}

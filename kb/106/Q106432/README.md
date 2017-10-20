@@ -6,6 +6,8 @@ permalink: /kb/106/Q106432/
 
 ## Q106432: MEM Reports Incorrect Value for Used Extended (XMS) Memory
 
+{% raw %}
+
 	Article: Q106432
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.21,6.22
@@ -49,3 +51,5 @@ permalink: /kb/106/Q106432/
 	
 	=============================================================================
 	
+
+{% endraw %}

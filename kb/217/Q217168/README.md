@@ -6,6 +6,8 @@ permalink: /kb/217/Q217168/
 
 ## Q217168: FIX: Application Crashes When Run in Debugger
 
+{% raw %}
+
 	Article: Q217168
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:6.0
@@ -84,3 +86,5 @@ permalink: /kb/217/Q217168/
 	
 	=============================================================================
 	
+
+{% endraw %}

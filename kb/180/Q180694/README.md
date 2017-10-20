@@ -6,6 +6,8 @@ permalink: /kb/180/Q180694/
 
 ## Q180694: SMS: Chkdsk Runs Every Time the System Is Restarted Post-SP3
 
+{% raw %}
+
 	Article: Q180694
 	Product(s): Microsoft Systems Management Server
 	Version(s): 1.2 SP3,2.0
@@ -115,3 +117,5 @@ permalink: /kb/180/Q180694/
 	
 	=============================================================================
 	
+
+{% endraw %}

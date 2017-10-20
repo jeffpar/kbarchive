@@ -6,6 +6,8 @@ permalink: /kb/216/Q216829/
 
 ## Q216829: How to Write a Client Authentication Certificate to a File
 
+{% raw %}
+
 	Article: Q216829
 	Product(s): Internet Information Server
 	Version(s): winnt:4.0
@@ -121,3 +123,5 @@ permalink: /kb/216/Q216829/
 	
 	=============================================================================
 	
+
+{% endraw %}

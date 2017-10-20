@@ -6,6 +6,8 @@ permalink: /kb/162/Q162768/
 
 ## Q162768: Cannot Access Data Disk in CD Drive When CD Player is Running
 
+{% raw %}
+
 	Article: Q162768
 	Product(s): Microsoft Windows NT
 	Version(s): 4.0
@@ -68,3 +70,5 @@ permalink: /kb/162/Q162768/
 	
 	=============================================================================
 	
+
+{% endraw %}

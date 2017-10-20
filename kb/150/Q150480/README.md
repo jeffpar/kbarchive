@@ -6,6 +6,8 @@ permalink: /kb/150/Q150480/
 
 ## Q150480: Mac Music Central: Sounds Play Poorly on 5200, 5215 Computers
 
+{% raw %}
+
 	Article: Q150480
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): MACINTOSH:
@@ -70,3 +72,5 @@ permalink: /kb/150/Q150480/
 	
 	=============================================================================
 	
+
+{% endraw %}

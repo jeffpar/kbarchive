@@ -6,6 +6,8 @@ permalink: /kb/183/Q183494/
 
 ## Q183494: XCON: Store Access Violates After Upgrade to Exchange 5.0 SP 2
 
+{% raw %}
+
 	Article: Q183494
 	Product(s): Microsoft Exchange
 	Version(s): 5.0
@@ -64,3 +66,5 @@ permalink: /kb/183/Q183494/
 	
 	=============================================================================
 	
+
+{% endraw %}

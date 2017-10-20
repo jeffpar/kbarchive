@@ -6,6 +6,8 @@ permalink: /kb/258/Q258041/
 
 ## Q258041: Access Violation in Routemon When You Run &quot;SHOW OSPF&quot;
 
+{% raw %}
+
 	Article: Q258041
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -96,3 +98,5 @@ permalink: /kb/258/Q258041/
 	
 	=============================================================================
 	
+
+{% endraw %}

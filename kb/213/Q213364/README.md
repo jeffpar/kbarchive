@@ -6,6 +6,8 @@ permalink: /kb/213/Q213364/
 
 ## Q213364: HOWTO: Retrieve an ADOMD Cellset as an ADODB Recordset
 
+{% raw %}
+
 	Article: Q213364
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 2.0,2.01,2.1,2.1 SP1,2.1 SP2,2.5,2.6,6.0
@@ -160,3 +162,5 @@ permalink: /kb/213/Q213364/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/096/Q96495/
 
 ## Q96495: Games Configuration Program Saves Previous Settings
 
+{% raw %}
+
 	Article: Q96495
 	Product(s): Miscellaneous Windows Products
 	Version(s): 
@@ -57,3 +59,5 @@ permalink: /kb/096/Q96495/
 	
 	=============================================================================
 	
+
+{% endraw %}

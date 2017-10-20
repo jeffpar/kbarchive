@@ -6,6 +6,8 @@ permalink: /kb/169/Q169048/
 
 ## Q169048: Full Court Press: New Season Game Patches Are Available
 
+{% raw %}
+
 	Article: Q169048
 	Product(s): Microsoft Home Games
 	Version(s): 1.0
@@ -78,3 +80,5 @@ permalink: /kb/169/Q169048/
 	
 	=============================================================================
 	
+
+{% endraw %}

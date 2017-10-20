@@ -6,6 +6,8 @@ permalink: /kb/098/Q98736/
 
 ## Q98736: Cannot Access Hard Drive After Installing DoubleSpace on PS/1
 
+{% raw %}
+
 	Article: Q98736
 	Product(s): Microsoft Disk Operating System
 	Version(s): MS-DOS:6.0,6.2,6.22
@@ -159,3 +161,5 @@ permalink: /kb/098/Q98736/
 	
 	=============================================================================
 	
+
+{% endraw %}

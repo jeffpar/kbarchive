@@ -6,6 +6,8 @@ permalink: /kb/163/Q163183/
 
 ## Q163183: ODE97: Supporting Files for ActiveX Controls in ODE
 
+{% raw %}
+
 	Article: Q163183
 	Product(s): Microsoft Access Distribution Kit
 	Version(s): 
@@ -103,3 +105,5 @@ permalink: /kb/163/Q163183/
 	
 	=============================================================================
 	
+
+{% endraw %}

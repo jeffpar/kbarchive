@@ -6,6 +6,8 @@ permalink: /kb/148/Q148942/
 
 ## Q148942: How to Capture Network Traffic with Network Monitor
 
+{% raw %}
+
 	Article: Q148942
 	Product(s): Windows for Workgroups and Windows NT Networking Issues
 	Version(s): 1.0,2.1,2.11,2.x,2000,3.1,3.11,3.11a,3.11b,3.5,3.51,4.0
@@ -280,3 +282,5 @@ permalink: /kb/148/Q148942/
 	
 	=============================================================================
 	
+
+{% endraw %}

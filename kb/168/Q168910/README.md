@@ -6,6 +6,8 @@ permalink: /kb/168/Q168910/
 
 ## Q168910: WD97: Word Hangs Saving Document with WordArt to RTF
 
+{% raw %}
+
 	Article: Q168910
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -91,3 +93,5 @@ permalink: /kb/168/Q168910/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/156/Q156810/
 
 ## Q156810: INFO: STL Sample for Members of the numeric_limits Class
 
+{% raw %}
+
 	Article: Q156810
 	Product(s): Microsoft C Compiler
 	Version(s): 4.2,5.0,6.0
@@ -293,3 +295,5 @@ permalink: /kb/156/Q156810/
 	
 	=============================================================================
 	
+
+{% endraw %}

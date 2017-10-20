@@ -6,6 +6,8 @@ permalink: /kb/289/Q289112/
 
 ## Q289112: HOWTO: Initialize COM Apartment in an ISAPI Extension or Filter
 
+{% raw %}
+
 	Article: Q289112
 	Product(s): Internet Information Server
 	Version(s): 4.0,5.0
@@ -88,3 +90,5 @@ permalink: /kb/289/Q289112/
 	
 	=============================================================================
 	
+
+{% endraw %}

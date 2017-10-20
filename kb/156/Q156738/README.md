@@ -6,6 +6,8 @@ permalink: /kb/156/Q156738/
 
 ## Q156738: PRB: Copy, Paste Shortcuts Work Only When Edit Menu Present
 
+{% raw %}
+
 	Article: Q156738
 	Product(s): Microsoft FoxPro
 	Version(s): 3.00 3.00b 5.00
@@ -81,3 +83,5 @@ permalink: /kb/156/Q156738/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/234/Q234760/
 
 ## Q234760: Cannot Telnet into a Sun Solaris or HP-UX Server
 
+{% raw %}
+
 	Article: Q234760
 	Product(s): Microsoft Windows NT
 	Version(s): winnt:4.0
@@ -61,3 +63,5 @@ permalink: /kb/234/Q234760/
 	
 	=============================================================================
 	
+
+{% endraw %}

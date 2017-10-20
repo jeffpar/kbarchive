@@ -6,6 +6,8 @@ permalink: /kb/196/Q196187/
 
 ## Q196187: XADM: Cannot View Recipients in the Global Address List
 
+{% raw %}
+
 	Article: Q196187
 	Product(s): Microsoft Exchange
 	Version(s): WINNT:5.5
@@ -69,3 +71,5 @@ permalink: /kb/196/Q196187/
 	
 	=============================================================================
 	
+
+{% endraw %}

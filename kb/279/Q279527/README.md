@@ -6,6 +6,8 @@ permalink: /kb/279/Q279527/
 
 ## Q279527: MSN Companion setup dbconn2 err msg: &quot;...problem with the regist
 
+{% raw %}
+
 	Article: Q279527
 	Product(s): The Microsoft Network
 	Version(s): 1.0
@@ -54,3 +56,5 @@ permalink: /kb/279/Q279527/
 	
 	=============================================================================
 	
+
+{% endraw %}

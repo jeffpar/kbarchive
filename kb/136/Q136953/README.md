@@ -6,6 +6,8 @@ permalink: /kb/136/Q136953/
 
 ## Q136953: Cannot Print PostScript with NT Gateway Services for NetWare
 
+{% raw %}
+
 	Article: Q136953
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 
@@ -47,3 +49,5 @@ permalink: /kb/136/Q136953/
 	
 	=============================================================================
 	
+
+{% endraw %}

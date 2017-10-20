@@ -6,6 +6,8 @@ permalink: /kb/135/Q135151/
 
 ## Q135151: PCMCIA Devices Not Activated When Resuming Dell Latitude XP
 
+{% raw %}
+
 	Article: Q135151
 	Product(s): Microsoft Windows 95.x Retail Product
 	Version(s): 95
@@ -53,3 +55,5 @@ permalink: /kb/135/Q135151/
 	
 	=============================================================================
 	
+
+{% endraw %}

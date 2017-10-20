@@ -6,6 +6,8 @@ permalink: /kb/126/Q126234/
 
 ## Q126234: Cannot Save or Print Buildings in Modeling Wright
 
+{% raw %}
+
 	Article: Q126234
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -53,3 +55,5 @@ permalink: /kb/126/Q126234/
 	
 	=============================================================================
 	
+
+{% endraw %}

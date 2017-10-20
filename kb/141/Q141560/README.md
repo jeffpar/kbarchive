@@ -6,6 +6,8 @@ permalink: /kb/141/Q141560/
 
 ## Q141560: Writer/Artist: UNCONF: Screen Colors Change After Printing
 
+{% raw %}
+
 	Article: Q141560
 	Product(s): Microsoft Home Kids Products
 	Version(s): WINDOWS:1.0,1.1,1.1a,1.1b
@@ -86,3 +88,5 @@ permalink: /kb/141/Q141560/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/168/Q168155/
 
 ## Q168155: FIX: Crash When Resizing Column of Split DBGrid
 
+{% raw %}
+
 	Article: Q168155
 	Product(s): Microsoft Visual Basic for Windows
 	Version(s): 5.0 97
@@ -101,3 +103,5 @@ permalink: /kb/168/Q168155/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/193/Q193001/
 
 ## Q193001: Encarta Virtual Globe 99: Cannot Disable Sounds in Game
 
+{% raw %}
+
 	Article: Q193001
 	Product(s): Microsoft Home Multimedia Titles
 	Version(s): WINDOWS:1.0
@@ -48,3 +50,5 @@ permalink: /kb/193/Q193001/
 	
 	=============================================================================
 	
+
+{% endraw %}

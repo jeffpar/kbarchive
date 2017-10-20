@@ -6,6 +6,8 @@ permalink: /kb/264/Q264976/
 
 ## Q264976: Client Computer Is Slow to Respond After Running Boot32wn.exe
 
+{% raw %}
+
 	Article: Q264976
 	Product(s): Microsoft Systems Management Server
 	Version(s): 2.0,2.0 SP1,2.0 SP2
@@ -173,3 +175,5 @@ permalink: /kb/264/Q264976/
 	
 	=============================================================================
 	
+
+{% endraw %}

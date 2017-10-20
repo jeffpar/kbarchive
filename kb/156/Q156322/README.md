@@ -6,6 +6,8 @@ permalink: /kb/156/Q156322/
 
 ## Q156322: FIX: RETURN TO Procedurename Command Doesn't Work in Forms
 
+{% raw %}
+
 	Article: Q156322
 	Product(s): Microsoft FoxPro
 	Version(s): 3.0 5.0
@@ -107,3 +109,5 @@ permalink: /kb/156/Q156322/
 	
 	=============================================================================
 	
+
+{% endraw %}

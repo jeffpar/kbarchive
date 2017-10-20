@@ -6,6 +6,8 @@ permalink: /kb/265/Q265024/
 
 ## Q265024: WD97: Blank Page Printed Inserting Odd /Even Page Section Break
 
+{% raw %}
+
 	Article: Q265024
 	Product(s): Word 97 for Windows
 	Version(s): WINDOWS:97
@@ -117,3 +119,5 @@ permalink: /kb/265/Q265024/
 	
 	=============================================================================
 	
+
+{% endraw %}

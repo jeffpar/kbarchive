@@ -6,6 +6,8 @@ permalink: /kb/061/Q61336/
 
 ## Q61336: Explanation of Compiler Workspace and What Affects It
 
+{% raw %}
+
 	Article: Q61336
 	Product(s): See article
 	Version(s): 4.00 4.00b 4.50
@@ -92,3 +94,5 @@ permalink: /kb/061/Q61336/
 	3. Decrease the size of SUB, FUNCTION, and variable names. This will
 	   make the code less readable, but again can be used when compiler
 	   workspace is at a premium.
+
+{% endraw %}

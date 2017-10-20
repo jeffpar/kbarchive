@@ -6,6 +6,8 @@ permalink: /kb/091/Q91043/
 
 ## Q91043: PC WFW: Notes Field Text Gets Cut Off
 
+{% raw %}
+
 	Article: Q91043
 	Product(s): Microsoft Mail For PC Networks
 	Version(s): WINDOWS:3.0
@@ -47,3 +49,5 @@ permalink: /kb/091/Q91043/
 	
 	=============================================================================
 	
+
+{% endraw %}

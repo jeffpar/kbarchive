@@ -6,6 +6,8 @@ permalink: /kb/038/Q38654/
 
 ## Q38654: Problem with Mouse and PS/2 Model 70A21
 
+{% raw %}
+
 	Article: Q38654
 	Product(s): See article
 	Version(s): 1.00
@@ -23,3 +25,5 @@ permalink: /kb/038/Q38654/
 	
 	There is a patch that will correct this problem. Contact Microsoft
 	Product Support Services at (206) 454-2030 for this patch.
+
+{% endraw %}

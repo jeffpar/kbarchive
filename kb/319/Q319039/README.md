@@ -6,6 +6,8 @@ permalink: /kb/319/Q319039/
 
 ## Q319039: How To Manage Identities In Outlook Express 5.0.4 For Macintosh
 
+{% raw %}
+
 	Article: Q319039
 	Product(s): The Microsoft Network
 	Version(s): 
@@ -72,3 +74,5 @@ permalink: /kb/319/Q319039/
 	
 	=============================================================================
 	
+
+{% endraw %}

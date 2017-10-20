@@ -6,6 +6,8 @@ permalink: /kb/184/Q184525/
 
 ## Q184525: HOWTO: Use API Functions to Set and Check File Attributes
 
+{% raw %}
+
 	Article: Q184525
 	Product(s): Microsoft FoxPro
 	Version(s): WINDOWS:3.0b,5.0,5.0a
@@ -141,3 +143,5 @@ permalink: /kb/184/Q184525/
 	
 	=============================================================================
 	
+
+{% endraw %}

@@ -6,6 +6,8 @@ permalink: /kb/323/Q323722/
 
 ## Q323722: User Name Mapping Does Not Seem to Work and Event ID 1003 Occurs
 
+{% raw %}
+
 	Article: Q323722
 	Product(s): Microsoft Windows NT
 	Version(s): 3.0
@@ -111,3 +113,5 @@ permalink: /kb/323/Q323722/
 	
 	=============================================================================
 	
+
+{% endraw %}

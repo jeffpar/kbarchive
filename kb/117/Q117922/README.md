@@ -6,6 +6,8 @@ permalink: /kb/117/Q117922/
 
 ## Q117922: BUG: CONTROL+C, CONTROL+X, &amp; CONTROL+V Don't Always Work
 
+{% raw %}
+
 	Article: Q117922
 	Product(s): Microsoft FoxPro
 	Version(s): MACINTOSH:2.5b,2.5c,3.0b
@@ -80,3 +82,5 @@ permalink: /kb/117/Q117922/
 	
 	=============================================================================
 	
+
+{% endraw %}

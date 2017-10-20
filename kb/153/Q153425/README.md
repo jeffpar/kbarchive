@@ -6,6 +6,8 @@ permalink: /kb/153/Q153425/
 
 ## Q153425: FIX: IDE Crashes Undoing Sizing in Dialog Editor
 
+{% raw %}
+
 	Article: Q153425
 	Product(s): Microsoft C Compiler
 	Version(s): winnt:
@@ -61,3 +63,5 @@ permalink: /kb/153/Q153425/
 	
 	=============================================================================
 	
+
+{% endraw %}
